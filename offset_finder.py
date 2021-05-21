@@ -1,7 +1,7 @@
 """
 @Author https://github.com/DougTheDruid
 @Source https://github.com/DougTheDruid/SoT-Python-Offset-Finder
-For community support, please join our Discord: https://discord.gg/2rRvQjhg7n
+For community support, please contact me on Discord: DougTheDruid#2784
 """
 
 import json
@@ -36,7 +36,7 @@ def get_offset(file_name, title, memory_object):
 
 if __name__ == '__main__':
     """
-    We build a dictionary which containts all offset data 
+    We build a dictionary which containts all offset data
     """
     
     output = {
