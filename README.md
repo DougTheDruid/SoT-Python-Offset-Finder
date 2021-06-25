@@ -4,7 +4,7 @@ memory offsets to pull data from memory. The memory offsets are stored within th
 their respective parent objects. So instead of hard-coding them or trying to build them outselves, we 
 utilize this helper program to build the file for us, given we have an up-to-date SDK dump for the game.
 This program simply offers a more simple structure to keep our hack working as expected. If you need 
-assistance with the code, please reach out at the below discord community server.
+assistance with the code, **please contact me on Discord: DougTheDruid#2784**
 
 ## How to Use
 Clone this repo, then within the folder created, load in the current SoT SDK into an "SDK" folder if it is not
@@ -25,3 +25,4 @@ Note: The above files are "C++" versions of the SDK dump, this offset finder uti
 to organize the data in a clean fashion. I personally am able to create full SDK dumps for the moment, 
 and will try to update the major three as I have time. For logic to parse C++ SDK dumps, look at the history of this
 repo.
+
