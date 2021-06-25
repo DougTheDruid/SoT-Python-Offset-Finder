@@ -7,9 +7,9 @@ This program simply offers a more simple structure to keep our hack working as e
 assistance with the code, please reach out at the below discord community server.
 
 ## How to Use
-Clone this repo, then within the folder created, load in the current SoT SDK into an "SDK" folder,
-ensure the `offset_finder.py` global variables are pointing to the correct paths (at the top of the file),
-and simply "run" the offset finder script.
+Clone this repo, then within the folder created, load in the current SoT SDK into an "SDK" folder if it is not
+up to date,  ensure the `offset_finder.py` global variables are pointing to the correct paths (at the top 
+of the file), and simply "run" the offset finder script.
 
 As you develop your version of the framework further, you can update the dictionary being built in this
 file to automatically pull the offsets you are utilizing. You will primarily utilize the three SDK files 
@@ -21,5 +21,4 @@ https://github.com/pubgsdk/SoT-SDK
 
 https://github.com/MadCatzAno/Sot-SDK
 
-I am currently investigating how to create a dump of my own, so it can be maintained with the rest of these
-repositories. If you may be able to help, please contact me on Discord: DougTheDruid#2784
+I personally am able to create full SDK dumps for the moment, and will try to update the major three as I have time.
