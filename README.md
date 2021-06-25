@@ -21,4 +21,7 @@ https://github.com/pubgsdk/SoT-SDK
 
 https://github.com/MadCatzAno/Sot-SDK
 
-I personally am able to create full SDK dumps for the moment, and will try to update the major three as I have time.
+Note: The above files are "C++" versions of the SDK dump, this offset finder utilizes a slightly modified JSON SDK dump
+to organize the data in a clean fashion. I personally am able to create full SDK dumps for the moment, 
+and will try to update the major three as I have time. For logic to parse C++ SDK dumps, look at the history of this
+repo.
