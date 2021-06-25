@@ -17,6 +17,7 @@ highlighted in the global variables.
 
 ## Where to get the latest SDK dump
 I have personally used two external providers to get the latest SDK dump:
+
 https://github.com/pubgsdk/SoT-SDK
 
 https://github.com/MadCatzAno/Sot-SDK
