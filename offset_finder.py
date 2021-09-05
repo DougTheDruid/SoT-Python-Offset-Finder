@@ -42,6 +42,10 @@ def get_offset(file_name, title, memory_object):
                 if re.search(f"\s{memory_object};", line):
                     offset = line.split("// ")[1].split("(")[0]
                     return int(offset, 0)
+            if past_header and line == '\n': # reached end of property list
+                raise ValueError(f"Unable to find property {memory_object} in {title[3:]}. Check your property name is correct.")
+
+        raise ValueError(f'Unable to find header {title} in {file_name}. Check your header line is correct.')
 
 
 if __name__ == '__main__':
