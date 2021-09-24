@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -32,7 +32,7 @@ struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishEscapingFunc_Params
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnBattleWhilstReelingFunc
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnBattleWhilstReelingFunc_Params
 {
-	struct FEventFishingReelingWhileBattlingStateChange EventFishingReelingWhileBattlingStateChange;               // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventFishingReelingWhileBattlingStateChange EventFishingReelingWhileBattlingStateChange;               // 0x0000(0x0001)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishCaughtFunc
@@ -53,19 +53,19 @@ struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishBiteFunc_Params
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnCastRodFunc
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnCastRodFunc_Params
 {
-	struct FEventSetFishingAnimationState              EventSetFishingAnimationState;                             // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+	struct FEventSetFishingAnimationState              EventSetFishingAnimationState;                             // 0x0000(0x0001)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnStowFunc
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnStowFunc_Params
 {
-	struct FEventStartStow                             EventStartStow;                                            // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventStartStow                             EventStartStow;                                            // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnWieldFunc
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnWieldFunc_Params
 {
-	struct FEventObjectWielded                         EventObjectWielded;                                        // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventObjectWielded                         EventObjectWielded;                                        // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.ResetPromptState
@@ -81,13 +81,13 @@ struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_Evaluate_Params
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.RegisterCharacterEvents_Implementable
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_RegisterCharacterEvents_Implementable_Params
 {
-	struct FObjectMessagingDispatcherHandle            CharacterDispatcher;                                       // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FObjectMessagingDispatcherHandle            CharacterDispatcher;                                       // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.UnregisterCharacterEvents_Implementable
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_UnregisterCharacterEvents_Implementable_Params
 {
-	struct FObjectMessagingDispatcherHandle            CharacterDispatcher;                                       // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FObjectMessagingDispatcherHandle            CharacterDispatcher;                                       // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.PostInitialize
@@ -103,61 +103,61 @@ struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_UnregisterOtherEvents_Implem
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnWield
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnWield_Params
 {
-	struct FEventObjectWielded                         Event;                                                     // (Parm)
+	struct FEventObjectWielded                         Event;                                                     // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishTired
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishTired_Params
 {
-	struct FEventFishingFishBecameTired                Event;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FEventFishingFishBecameTired                Event;                                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnCastRod
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnCastRod_Params
 {
-	struct FEventSetFishingAnimationState              Event;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FEventSetFishingAnimationState              Event;                                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishCaught
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishCaught_Params
 {
-	struct FEventFishingFishCaught                     Event;                                                     // (Parm)
+	struct FEventFishingFishCaught                     Event;                                                     // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishBite
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishBite_Params
 {
-	struct FEventFishingFishStartedBattling            Event;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FEventFishingFishStartedBattling            Event;                                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnBattleWhilstReeling
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnBattleWhilstReeling_Params
 {
-	struct FEventFishingReelingWhileBattlingStateChange Event;                                                     // (Parm)
+	struct FEventFishingReelingWhileBattlingStateChange Event;                                                     // 0x0000(0x0001)  (Parm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnStow
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnStow_Params
 {
-	struct FEventStartStow                             Event;                                                     // (Parm)
+	struct FEventStartStow                             Event;                                                     // 0x0000(0x0018)  (Parm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishEscaping
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishEscaping_Params
 {
-	struct FEventFishingFishEscaping                   Event;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FEventFishingFishEscaping                   Event;                                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnTakeControl
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnTakeControl_Params
 {
-	struct FEventPlayerTakenControlOfControllable      NewParam;                                                  // (Parm)
+	struct FEventPlayerTakenControlOfControllable      NewParam;                                                  // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.ExecuteUbergraph_BP_Prompt_MaidenVoyage_FishingRodTutorial
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_ExecuteUbergraph_BP_Prompt_MaidenVoyage_FishingRodTutorial_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UNotificationInputId : public UObject
 {
 public:
-	unsigned char                                      UnknownData_V32J[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_GC8G[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -45,7 +45,7 @@ public:
 class UCompositeInputHandler : public UObject
 {
 public:
-	unsigned char                                      UnknownData_WW09[0xB0];                                    // 0x0028(0x00B0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AEN5[0xB0];                                    // 0x0028(0x00B0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -68,7 +68,7 @@ public:
 class UAnalogInputId : public UObject
 {
 public:
-	unsigned char                                      UnknownData_FSQC[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_D8SB[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -90,7 +90,7 @@ class UInputBinder : public UObject
 {
 public:
 	class UInputComponent*                             InputComponent;                                            // 0x0028(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_KIT6[0x58];                                    // 0x0030(0x0058) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WT0B[0x58];                                    // 0x0030(0x0058) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -177,7 +177,7 @@ public:
 class UCompositeInputDelegatorTestsCallbackHelper : public UObject
 {
 public:
-	unsigned char                                      UnknownData_K3PJ[0x50];                                    // 0x0028(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PH8F[0x50];                                    // 0x0028(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -202,7 +202,7 @@ public:
 class UMockDerivedCompositeInputHandler : public UCompositeInputHandler
 {
 public:
-	unsigned char                                      UnknownData_DT1T[0x8];                                     // 0x00D8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FBJE[0x8];                                     // 0x00D8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -244,7 +244,7 @@ public:
 class AMockInputHandlerCharacter : public ACharacter
 {
 public:
-	unsigned char                                      UnknownData_C0BJ[0x8];                                     // 0x05D8(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_QE0U[0x8];                                     // 0x05D8(0x0008) Fix Super Size
 
 
 	static UClass* StaticClass()
@@ -286,7 +286,7 @@ public:
 class UNamedNotificationInputComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_GCLN[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_U34O[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FNotificationInputDisplayName>       NotificationInputDisplayNames;                             // 0x00D0(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance, Protected)
 
 

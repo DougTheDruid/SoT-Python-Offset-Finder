@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -44,7 +44,7 @@ public:
 class UOcclusionService : public UObject
 {
 public:
-	unsigned char                                      UnknownData_8U3J[0x68];                                    // 0x0028(0x0068) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6HOG[0x68];                                    // 0x0028(0x0068) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -282,8 +282,10 @@ void URandomClueChoiceSelectionStrategy::BeforeDelete()
 
 }
 
-// Function LostShipmentsClueFramework.ClueDestinationDescriptor.OnRep_DestinationInfo
-// (Native, Public)
+// Function:
+//		Offset -> 0x01311950
+//		Name   -> Function LostShipmentsClueFramework.ClueDestinationDescriptor.OnRep_DestinationInfo
+//		Flags  -> (Native, Public)
 void UClueDestinationDescriptor::OnRep_DestinationInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueFramework.ClueDestinationDescriptor.OnRep_DestinationInfo");
@@ -323,16 +325,18 @@ void UClueDescriptor::BeforeDelete()
 
 }
 
-// Function LostShipmentsClueFramework.ClueConnectionBlueprintFunctionLibrary.CreateCluePointingToSite
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x013115B0
+//		Name   -> Function LostShipmentsClueFramework.ClueConnectionBlueprintFunctionLibrary.CreateCluePointingToSite
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UClueConnectionConfig*   ConnectionConfiguration        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Difficulty                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UClass*>          AllowedClueTypes               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
-// class UTaleQuestSelectorService* SelectorService                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 SourceLocation                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// struct FClueSite               TargetSite                     (ConstParm, Parm, OutParm, ReferenceParm)
-// class UClueDescriptor*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClueConnectionConfig*                       ConnectionConfiguration                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Difficulty                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<class UClass*>                              AllowedClueTypes                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
+//		class UTaleQuestSelectorService*                   SelectorService                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     SourceLocation                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FClueSite                                   TargetSite                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+//		class UClueDescriptor*                             ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UClueDescriptor* UClueConnectionBlueprintFunctionLibrary::STATIC_CreateCluePointingToSite(class UClueConnectionConfig* ConnectionConfiguration, int Difficulty, TArray<class UClass*> AllowedClueTypes, class UTaleQuestSelectorService* SelectorService, const struct FVector& SourceLocation, const struct FClueSite& TargetSite)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueFramework.ClueConnectionBlueprintFunctionLibrary.CreateCluePointingToSite");
@@ -462,12 +466,14 @@ void UClueFactory::BeforeDelete()
 	DELE_PTR_FULL(Config);
 }
 
-// Function LostShipmentsClueFramework.ClueLifetimeBlueprintFunctionLibrary.GiveClueToParticipant
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01311860
+//		Name   -> Function LostShipmentsClueFramework.ClueLifetimeBlueprintFunctionLibrary.GiveClueToParticipant
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  Participant                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClueDescriptor*         Clue                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  ClueSite                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class AActor*                                      Participant                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClueDescriptor*                             Clue                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      ClueSite                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 void UClueLifetimeBlueprintFunctionLibrary::STATIC_GiveClueToParticipant(class AActor* Participant, class UClueDescriptor* Clue, class UClass* ClueSite)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueFramework.ClueLifetimeBlueprintFunctionLibrary.GiveClueToParticipant");
@@ -600,10 +606,12 @@ void UTaleQuestChooseLandOrSeaStep::BeforeDelete()
 	DELE_PTR_FULL(SeaClueSiteTypes);
 }
 
-// Function LostShipmentsClueFramework.TaleQuestClueSiteService.GetClueSites
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x013117C0
+//		Name   -> Function LostShipmentsClueFramework.TaleQuestClueSiteService.GetClueSites
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TArray<struct FClueSite>       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		TArray<struct FClueSite>                           ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<struct FClueSite> UTaleQuestClueSiteService::GetClueSites()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueFramework.TaleQuestClueSiteService.GetClueSites");
@@ -833,16 +841,14 @@ void UTaleQuestSelectClueSiteForLootStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(SelectionStrategy, UTaleQuestArrayEntrySelectionStrategy);
-	READ_PTR_FULL(ClueSiteLootRestrictions, UClueSiteLootRestrictionsDataAsset);
+	READ_PTR_FULL(StepDesc, UTaleQuestSelectClueSiteForLootStepDesc);
 }
 
 void UTaleQuestSelectClueSiteForLootStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(SelectionStrategy);
-	DELE_PTR_FULL(ClueSiteLootRestrictions);
+	DELE_PTR_FULL(StepDesc);
 }
 
 void UTaleQuestSelectClueSiteForLootStepDesc::AfterRead()

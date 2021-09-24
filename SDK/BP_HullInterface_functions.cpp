@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,14 +18,16 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_HullInterface.BP_HullInterface_C.Apply Hit
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_HullInterface.BP_HullInterface_C.Apply Hit
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                 HitPosition                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 HitNormal                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          HitStrength                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Has_Decal                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UDecalComponent*         Decal                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     HitPosition                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     HitNormal                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              HitStrength                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Has_Decal                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UDecalComponent*                             Decal                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_HullInterface_C::Apply_Hit(const struct FVector& HitPosition, const struct FVector& HitNormal, float HitStrength, bool Has_Decal, class UDecalComponent** Decal)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullInterface.BP_HullInterface_C.Apply Hit");

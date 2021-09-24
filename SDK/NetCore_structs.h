@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -40,8 +40,11 @@ enum class NetCore_ERareNetworkEventType : uint8_t
 	ERareNetworkEventType__WritePropertyHandle = 15,
 	ERareNetworkEventType__PushBunch = 16,
 	ERareNetworkEventType__PopBunch = 17,
-	ERareNetworkEventType__Max     = 18,
-	ERareNetworkEventType__ERareNetworkEventType_MAX = 19,
+	ERareNetworkEventType__StartActorScope = 18,
+	ERareNetworkEventType__StopActorScope = 19,
+	ERareNetworkEventType__DelayedSend = 20,
+	ERareNetworkEventType__Max     = 21,
+	ERareNetworkEventType__ERareNetworkEventType_MAX = 22,
 
 };
 

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -94,12 +94,14 @@ void UShantyPuzzleInterface::BeforeDelete()
 
 }
 
-// Function ShantyPuzzle.ShantyPuzzleComponent.OnEndOverlap
-// (Final, Native, Public)
+// Function:
+//		Offset -> 0x03A3D700
+//		Name   -> Function ShantyPuzzle.ShantyPuzzleComponent.OnEndOverlap
+//		Flags  -> (Final, Native, Public)
 // Parameters:
-// class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*     InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            InOtherBodyIndex               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                InOtherBodyIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UShantyPuzzleComponent::OnEndOverlap(class AActor* InActor, class UPrimitiveComponent* InComponent, int InOtherBodyIndex)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShantyPuzzle.ShantyPuzzleComponent.OnEndOverlap");
@@ -118,14 +120,16 @@ void UShantyPuzzleComponent::OnEndOverlap(class AActor* InActor, class UPrimitiv
 }
 
 
-// Function ShantyPuzzle.ShantyPuzzleComponent.OnBeginOverlap
-// (Final, Native, Public, HasOutParms)
+// Function:
+//		Offset -> 0x03A3D530
+//		Name   -> Function ShantyPuzzle.ShantyPuzzleComponent.OnBeginOverlap
+//		Flags  -> (Final, Native, Public, HasOutParms)
 // Parameters:
-// class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*     InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            InOtherBodyIndex               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           bFromSweep                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                InOtherBodyIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               bFromSweep                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FHitResult                                  SweepResult                                                (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 void UShantyPuzzleComponent::OnBeginOverlap(class AActor* InActor, class UPrimitiveComponent* InComponent, int InOtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShantyPuzzle.ShantyPuzzleComponent.OnBeginOverlap");

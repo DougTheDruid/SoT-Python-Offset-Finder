@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,11 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.SwapMysteriousStrangerToTutorialModeOnClient
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.SwapMysteriousStrangerToTutorialModeOnClient
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void UBP_Component_Tutorial2019_C::SwapMysteriousStrangerToTutorialModeOnClient()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.SwapMysteriousStrangerToTutorialModeOnClient");
@@ -34,8 +37,11 @@ void UBP_Component_Tutorial2019_C::SwapMysteriousStrangerToTutorialModeOnClient(
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TeleportPlayerToOnboardingSpawnPoint
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TeleportPlayerToOnboardingSpawnPoint
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void UBP_Component_Tutorial2019_C::TeleportPlayerToOnboardingSpawnPoint()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TeleportPlayerToOnboardingSpawnPoint");
@@ -50,10 +56,12 @@ void UBP_Component_Tutorial2019_C::TeleportPlayerToOnboardingSpawnPoint()
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.GetPlayerController
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.GetPlayerController
+//		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AAthenaPlayerController* Player_Controller              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AAthenaPlayerController*                     Player_Controller                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Component_Tutorial2019_C::GetPlayerController(class AAthenaPlayerController** Player_Controller)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.GetPlayerController");
@@ -71,11 +79,13 @@ void UBP_Component_Tutorial2019_C::GetPlayerController(class AAthenaPlayerContro
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ConvertActorIdsToActors
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ConvertActorIdsToActors
+//		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<TAssetPtr<class AActor>> ActorRefs                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class AActor*>          OutActors                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<TAssetPtr<class AActor>>                    ActorRefs                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<class AActor*>                              OutActors                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UBP_Component_Tutorial2019_C::ConvertActorIdsToActors(TArray<TAssetPtr<class AActor>>* ActorRefs, TArray<class AActor*>* OutActors)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ConvertActorIdsToActors");
@@ -95,8 +105,11 @@ void UBP_Component_Tutorial2019_C::ConvertActorIdsToActors(TArray<TAssetPtr<clas
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Debug_SearchForMissingGoldHoarders
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Debug_SearchForMissingGoldHoarders
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void UBP_Component_Tutorial2019_C::Debug_SearchForMissingGoldHoarders()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Debug_SearchForMissingGoldHoarders");
@@ -111,8 +124,11 @@ void UBP_Component_Tutorial2019_C::Debug_SearchForMissingGoldHoarders()
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.PopulateGoldHoarderLocationsFromGoldHoarders
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.PopulateGoldHoarderLocationsFromGoldHoarders
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void UBP_Component_Tutorial2019_C::PopulateGoldHoarderLocationsFromGoldHoarders()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.PopulateGoldHoarderLocationsFromGoldHoarders");
@@ -127,10 +143,12 @@ void UBP_Component_Tutorial2019_C::PopulateGoldHoarderLocationsFromGoldHoarders(
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceCreatedAndPopulated
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceCreatedAndPopulated
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FVector>         InputPin                       (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FVector>                             InputPin                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UBP_Component_Tutorial2019_C::EnsurePurchaseVoyageSequenceCreatedAndPopulated(TArray<struct FVector>* InputPin)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceCreatedAndPopulated");
@@ -148,10 +166,12 @@ void UBP_Component_Tutorial2019_C::EnsurePurchaseVoyageSequenceCreatedAndPopulat
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceObjectCreated
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceObjectCreated
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UBP_Prompt_CTPurchaseVoyageSequence_C* PromptObject                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UBP_Prompt_CTPurchaseVoyageSequence_C*       PromptObject                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Component_Tutorial2019_C::EnsurePurchaseVoyageSequenceObjectCreated(class UBP_Prompt_CTPurchaseVoyageSequence_C** PromptObject)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceObjectCreated");
@@ -169,8 +189,10 @@ void UBP_Component_Tutorial2019_C::EnsurePurchaseVoyageSequenceObjectCreated(cla
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.OnRep_GoldHoarderLocations
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.OnRep_GoldHoarderLocations
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::OnRep_GoldHoarderLocations()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.OnRep_GoldHoarderLocations");
@@ -185,8 +207,10 @@ void UBP_Component_Tutorial2019_C::OnRep_GoldHoarderLocations()
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TrySetUpCoordinator
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TrySetUpCoordinator
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::TrySetUpCoordinator()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TrySetUpCoordinator");
@@ -201,8 +225,10 @@ void UBP_Component_Tutorial2019_C::TrySetUpCoordinator()
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnClient
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnClient
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::ReceiveTutorial2019BeginPlayOnClient()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnClient");
@@ -217,8 +243,10 @@ void UBP_Component_Tutorial2019_C::ReceiveTutorial2019BeginPlayOnClient()
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnServer
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnServer
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::ReceiveTutorial2019BeginPlayOnServer()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnServer");
@@ -233,8 +261,10 @@ void UBP_Component_Tutorial2019_C::ReceiveTutorial2019BeginPlayOnServer()
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ForceDisableComponent_Blueprint
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ForceDisableComponent_Blueprint
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::ForceDisableComponent_Blueprint()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ForceDisableComponent_Blueprint");
@@ -249,12 +279,14 @@ void UBP_Component_Tutorial2019_C::ForceDisableComponent_Blueprint()
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Set Prompts Visibility
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Set Prompts Visibility
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           IsHidden                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReEvaluate                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Delay_In_Seconds               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               IsHidden                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReEvaluate                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Delay_In_Seconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Component_Tutorial2019_C::Set_Prompts_Visibility(bool IsHidden, bool ReEvaluate, float Delay_In_Seconds)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Set Prompts Visibility");
@@ -272,10 +304,12 @@ void UBP_Component_Tutorial2019_C::Set_Prompts_Visibility(bool IsHidden, bool Re
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ControllerOnEndPlay
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ControllerOnEndPlay
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<Engine_EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Component_Tutorial2019_C::ControllerOnEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ControllerOnEndPlay");
@@ -291,10 +325,12 @@ void UBP_Component_Tutorial2019_C::ControllerOnEndPlay(TEnumAsByte<Engine_EEndPl
 }
 
 
-// Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ExecuteUbergraph_BP_Component_Tutorial2019
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ExecuteUbergraph_BP_Component_Tutorial2019
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Component_Tutorial2019_C::ExecuteUbergraph_BP_Component_Tutorial2019(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ExecuteUbergraph_BP_Component_Tutorial2019");

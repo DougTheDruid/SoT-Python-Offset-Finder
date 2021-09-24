@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -68,11 +68,13 @@ void UGameServiceLifecycleInterface::BeforeDelete()
 
 }
 
-// Function GameService.GameServiceMapFunctions.UnregisterService
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FAA4C0
+//		Name   -> Function GameService.GameServiceMapFunctions.UnregisterService
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FGameServiceMap         ServiceMap                     (Parm, OutParm, ReferenceParm)
-// class UObject*                 Service                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FGameServiceMap                             ServiceMap                                                 (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     Service                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UGameServiceMapFunctions::STATIC_UnregisterService(struct FGameServiceMap* ServiceMap, class UObject* Service)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceMapFunctions.UnregisterService");
@@ -92,12 +94,14 @@ void UGameServiceMapFunctions::STATIC_UnregisterService(struct FGameServiceMap* 
 }
 
 
-// Function GameService.GameServiceMapFunctions.RegisterService
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FAA270
+//		Name   -> Function GameService.GameServiceMapFunctions.RegisterService
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FGameServiceMap         ServiceMap                     (Parm, OutParm, ReferenceParm)
-// class UObject*                 Service                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  Class                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		struct FGameServiceMap                             ServiceMap                                                 (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     Service                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      Class                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 void UGameServiceMapFunctions::STATIC_RegisterService(struct FGameServiceMap* ServiceMap, class UObject* Service, class UClass* Class)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceMapFunctions.RegisterService");
@@ -118,12 +122,14 @@ void UGameServiceMapFunctions::STATIC_RegisterService(struct FGameServiceMap* Se
 }
 
 
-// Function GameService.GameServiceMapFunctions.GetService
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FAA030
+//		Name   -> Function GameService.GameServiceMapFunctions.GetService
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FGameServiceMap         ServiceMap                     (Parm, OutParm, ReferenceParm)
-// class UClass*                  Class                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class UObject*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FGameServiceMap                             ServiceMap                                                 (Parm, OutParm, ReferenceParm)
+//		class UClass*                                      Class                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UObject*                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UObject* UGameServiceMapFunctions::STATIC_GetService(struct FGameServiceMap* ServiceMap, class UClass* Class)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceMapFunctions.GetService");
@@ -145,11 +151,13 @@ class UObject* UGameServiceMapFunctions::STATIC_GetService(struct FGameServiceMa
 }
 
 
-// Function GameService.GameServiceMapFunctions.GetNumServices
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA9E50
+//		Name   -> Function GameService.GameServiceMapFunctions.GetNumServices
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FGameServiceMap         ServiceMap                     (Parm, OutParm, ReferenceParm)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FGameServiceMap                             ServiceMap                                                 (Parm, OutParm, ReferenceParm)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UGameServiceMapFunctions::STATIC_GetNumServices(struct FGameServiceMap* ServiceMap)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceMapFunctions.GetNumServices");
@@ -182,10 +190,12 @@ void UGameServiceMapFunctions::BeforeDelete()
 
 }
 
-// Function GameService.GameServiceProviderInterface.UnregisterService
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FAA430
+//		Name   -> Function GameService.GameServiceProviderInterface.UnregisterService
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 Service                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     Service                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UGameServiceProviderInterface::UnregisterService(class UObject* Service)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceProviderInterface.UnregisterService");
@@ -202,11 +212,13 @@ void UGameServiceProviderInterface::UnregisterService(class UObject* Service)
 }
 
 
-// Function GameService.GameServiceProviderInterface.RegisterService
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FAA1B0
+//		Name   -> Function GameService.GameServiceProviderInterface.RegisterService
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 Service                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  Class                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UObject*                                     Service                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      Class                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 void UGameServiceProviderInterface::RegisterService(class UObject* Service, class UClass* Class)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceProviderInterface.RegisterService");
@@ -224,11 +236,13 @@ void UGameServiceProviderInterface::RegisterService(class UObject* Service, clas
 }
 
 
-// Function GameService.GameServiceProviderInterface.GetService
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA9F90
+//		Name   -> Function GameService.GameServiceProviderInterface.GetService
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  Class                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class UObject*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      Class                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UObject*                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UObject* UGameServiceProviderInterface::GetService(class UClass* Class)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceProviderInterface.GetService");

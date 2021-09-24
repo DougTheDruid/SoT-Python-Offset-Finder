@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -46,7 +46,7 @@ class UGlitterBeardFinaleCoordinatorComponent : public UActorComponent
 public:
 	class UWwiseEvent*                                 AudioEventToSynchronise;                                   // 0x00C8(0x0008) (Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFinaleReplicationState                     ReplicationState;                                          // 0x00D0(0x0010) (Net, RepNotify)
-	unsigned char                                      UnknownData_78W8[0x80];                                    // 0x00E0(0x0080) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8DZK[0x80];                                    // 0x00E0(0x0080) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -89,11 +89,11 @@ class UGlitterBeardLanternSoundEffect : public UEffectBlendObjectBase
 {
 public:
 	float                                              TriggerThreshold;                                          // 0x0038(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_5TYG[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_U5PZ[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UWwiseObjectPoolWrapper*                     WWisePool;                                                 // 0x0040(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWwiseEvent*                                 WwiseEvent;                                                // 0x0048(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FWwiseEmitter                               Emitter;                                                   // 0x0050(0x0020) (Transient)
-	unsigned char                                      UnknownData_A0TS[0x10];                                    // 0x0070(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Z22T[0x10];                                    // 0x0070(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -135,7 +135,7 @@ public:
 class UGlitterBeardTelemetryComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_71AY[0x48];                                    // 0x00C8(0x0048) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0DJ0[0x48];                                    // 0x00C8(0x0048) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -176,11 +176,11 @@ public:
 class AGlitterBeardTree : public AActor
 {
 public:
-	unsigned char                                      UnknownData_UC7N[0x28];                                    // 0x03D0(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SXZ8[0x28];                                    // 0x03D0(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UActionRulesComponent*                       ActionRulesComponent;                                      // 0x03F8(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UActionRulesInteractableComponent*           InteractableComponent;                                     // 0x0400(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              LanternLightDelay;                                         // 0x0408(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_VI4R[0x4];                                     // 0x040C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_BPDZ[0x4];                                     // 0x040C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UGlitterBeardUnlockVFXCoordinatorComponent*  UnlockVFXCoordinatorComponent;                             // 0x0410(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UGlitterBeardTelemetryComponent*             TelemetryComponent;                                        // 0x0418(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UClass*                                      VocalShanty;                                               // 0x0420(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash)
@@ -190,10 +190,10 @@ public:
 	class UGlitterBeardFinaleCoordinatorComponent*     FinaleCoordinator;                                         // 0x0438(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class ULandmarkReactionTriggerComponent*           LandmarkReactionTrigger;                                   // 0x0440(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              DistanceFromTreeToPauseAISpawn;                            // 0x0448(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_EJ1B[0x22C];                                   // 0x044C(0x022C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_8BDZ[0x22C];                                   // 0x044C(0x022C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class ASlidingDoor*                                HideoutDoor;                                               // 0x0678(0x0008) (Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	struct FWwiseEmitter                               SoundEmitter;                                              // 0x0680(0x0020) (Protected)
-	unsigned char                                      UnknownData_4MYB[0x30];                                    // 0x06A0(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_VWTY[0x30];                                    // 0x06A0(0x0030) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -220,9 +220,9 @@ class UGlitterBeardTreeVisualFeedbackComponent : public UActorComponent
 {
 public:
 	TArray<struct FVisualFeedbackList>                 FeedbackActions;                                           // 0x00C8(0x0010) (Edit, ZeroConstructor, ContainsInstancedReference)
-	unsigned char                                      UnknownData_JPMG[0x10];                                    // 0x00D8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_2CVR[0x10];                                    // 0x00D8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<TEnumAsByte<GlitterBeard_EGlitterbeardVFXState>> CurrentStates;                                             // 0x00E8(0x0010) (Net, ZeroConstructor, RepNotify)
-	unsigned char                                      UnknownData_BY9I[0x20];                                    // 0x00F8(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0FZ2[0x20];                                    // 0x00F8(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -247,7 +247,7 @@ public:
 	struct FActorComponentSelector                     TreeActor;                                                 // 0x00C8(0x0010) (Edit, ContainsInstancedReference, Protected)
 	class UMaterialInstanceDynamic*                    TreeMaterialInstanceDynamic;                               // 0x00D8(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              TreeBlendTime;                                             // 0x00E0(0x0004) (Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_VE6N[0xC];                                     // 0x00E4(0x000C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PK0Y[0xC];                                     // 0x00E4(0x000C) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

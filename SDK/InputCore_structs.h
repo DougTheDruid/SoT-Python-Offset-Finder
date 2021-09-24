@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -76,7 +76,7 @@ enum class InputCore_EControllerHand : uint8_t
 struct FKey
 {
 	struct FName                                       KeyName;                                                   // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_XWNT[0x18];                                    // 0x0008(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_L1ZV[0x18];                                    // 0x0008(0x0018) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

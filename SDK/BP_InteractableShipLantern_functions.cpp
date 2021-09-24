@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_InteractableShipLantern_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.UserConstructionScript");
@@ -34,8 +36,10 @@ void ABP_InteractableShipLantern_C::UserConstructionScript()
 }
 
 
-// Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_InteractableShipLantern_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ReceiveBeginPlay");
@@ -50,8 +54,10 @@ void ABP_InteractableShipLantern_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.LightStateChanged
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.LightStateChanged
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_InteractableShipLantern_C::LightStateChanged()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.LightStateChanged");
@@ -66,10 +72,12 @@ void ABP_InteractableShipLantern_C::LightStateChanged()
 }
 
 
-// Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ExecuteUbergraph_BP_InteractableShipLantern
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ExecuteUbergraph_BP_InteractableShipLantern
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_InteractableShipLantern_C::ExecuteUbergraph_BP_InteractableShipLantern(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_InteractableShipLantern.BP_InteractableShipLantern_C.ExecuteUbergraph_BP_InteractableShipLantern");

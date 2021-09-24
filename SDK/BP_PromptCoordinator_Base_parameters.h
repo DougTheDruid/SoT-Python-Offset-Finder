@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,9 +22,9 @@ namespace CG
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.IsCharacterInsideRadius
 struct UBP_PromptCoordinator_Base_C_IsCharacterInsideRadius_Params
 {
-	struct FVector                                     Center;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               Result;                                                    // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                     Center;                                                    // 0x0000(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                              Radius;                                                    // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               Result;                                                    // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UninitializeImplementable
@@ -35,7 +35,7 @@ struct UBP_PromptCoordinator_Base_C_UninitializeImplementable_Params
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetHUDObjectMessageDispatcher
 struct UBP_PromptCoordinator_Base_C_GetHUDObjectMessageDispatcher_Params
 {
-	struct FObjectMessagingDispatcherHandle            HUD_Dispatcher;                                            // (Parm, OutParm)
+	struct FObjectMessagingDispatcherHandle            HUD_Dispatcher;                                            // 0x0000(0x0008)  (Parm, OutParm)
 };
 
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Complete
@@ -56,13 +56,13 @@ struct UBP_PromptCoordinator_Base_C_PostInitialize_Params
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.InitializeAndStart
 struct UBP_PromptCoordinator_Base_C_InitializeAndStart_Params
 {
-	class AAthenaPlayerController*                     PlayerController;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AAthenaPlayerController*                     PlayerController;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetCharacterObjectMessageDispatcher
 struct UBP_PromptCoordinator_Base_C_GetCharacterObjectMessageDispatcher_Params
 {
-	struct FObjectMessagingDispatcherHandle            Player_Dispatcher;                                         // (Parm, OutParm)
+	struct FObjectMessagingDispatcherHandle            Player_Dispatcher;                                         // 0x0000(0x0008)  (Parm, OutParm)
 };
 
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Evaluate
@@ -73,7 +73,7 @@ struct UBP_PromptCoordinator_Base_C_Evaluate_Params
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetControllerObjectMessageDispatcher
 struct UBP_PromptCoordinator_Base_C_GetControllerObjectMessageDispatcher_Params
 {
-	struct FObjectMessagingDispatcherHandle            Player_Dispatcher;                                         // (Parm, OutParm)
+	struct FObjectMessagingDispatcherHandle            Player_Dispatcher;                                         // 0x0000(0x0008)  (Parm, OutParm)
 };
 
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Start
@@ -84,7 +84,7 @@ struct UBP_PromptCoordinator_Base_C_Start_Params
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.ExecuteUbergraph_BP_PromptCoordinator_Base
 struct UBP_PromptCoordinator_Base_C_ExecuteUbergraph_BP_PromptCoordinator_Base_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.OnComplete__DelegateSignature

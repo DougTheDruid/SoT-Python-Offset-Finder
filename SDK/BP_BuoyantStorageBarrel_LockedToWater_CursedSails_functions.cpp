@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.GetPxActorCapacityForPhysXAggregate
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.GetPxActorCapacityForPhysXAggregate
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// unsigned char                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		unsigned char                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 unsigned char ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C::GetPxActorCapacityForPhysXAggregate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.GetPxActorCapacityForPhysXAggregate");
@@ -38,8 +40,10 @@ unsigned char ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C::GetPxActorCa
 }
 
 
-// Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.UserConstructionScript");

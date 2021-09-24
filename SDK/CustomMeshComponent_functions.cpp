@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -26,11 +26,13 @@ void FCustomMeshTriangle::BeforeDelete()
 {
 }
 
-// Function CustomMeshComponent.CustomMeshComponent.SetCustomMeshTriangles
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F9AF0
+//		Name   -> Function CustomMeshComponent.CustomMeshComponent.SetCustomMeshTriangles
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TArray<struct FCustomMeshTriangle> Triangles                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		TArray<struct FCustomMeshTriangle>                 Triangles                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCustomMeshComponent::SetCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomMeshComponent.CustomMeshComponent.SetCustomMeshTriangles");
@@ -49,8 +51,10 @@ bool UCustomMeshComponent::SetCustomMeshTriangles(TArray<struct FCustomMeshTrian
 }
 
 
-// Function CustomMeshComponent.CustomMeshComponent.ClearCustomMeshTriangles
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F9AD0
+//		Name   -> Function CustomMeshComponent.CustomMeshComponent.ClearCustomMeshTriangles
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCustomMeshComponent::ClearCustomMeshTriangles()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomMeshComponent.CustomMeshComponent.ClearCustomMeshTriangles");
@@ -66,10 +70,12 @@ void UCustomMeshComponent::ClearCustomMeshTriangles()
 }
 
 
-// Function CustomMeshComponent.CustomMeshComponent.AddCustomMeshTriangles
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F9A20
+//		Name   -> Function CustomMeshComponent.CustomMeshComponent.AddCustomMeshTriangles
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TArray<struct FCustomMeshTriangle> Triangles                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FCustomMeshTriangle>                 Triangles                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UCustomMeshComponent::AddCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomMeshComponent.CustomMeshComponent.AddCustomMeshTriangles");

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,14 +18,16 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-void FMaterialVisualisation::AfterRead()
+void FParticleVisualisation::AfterRead()
 {
-	READ_PTR_FULL(DynamicMaterial, UMaterialInstanceDynamic);
+	READ_PTR_FULL(PutOutParticles, UParticleSystem);
+	READ_PTR_FULL(ParticleSystem, UParticleSystemComponent);
 }
 
-void FMaterialVisualisation::BeforeDelete()
+void FParticleVisualisation::BeforeDelete()
 {
-	DELE_PTR_FULL(DynamicMaterial);
+	DELE_PTR_FULL(PutOutParticles);
+	DELE_PTR_FULL(ParticleSystem);
 }
 
 void FLightVisualisation::AfterRead()
@@ -36,6 +38,16 @@ void FLightVisualisation::AfterRead()
 void FLightVisualisation::BeforeDelete()
 {
 	DELE_PTR_FULL(Light);
+}
+
+void FMaterialVisualisation::AfterRead()
+{
+	READ_PTR_FULL(DynamicMaterial, UMaterialInstanceDynamic);
+}
+
+void FMaterialVisualisation::BeforeDelete()
+{
+	DELE_PTR_FULL(DynamicMaterial);
 }
 
 void FEmissaryCompanyCosmetics::AfterRead()
@@ -566,18 +578,6 @@ void FVoteRemovedNetworkEvent::BeforeDelete()
 
 }
 
-void FParticleVisualisation::AfterRead()
-{
-	READ_PTR_FULL(PutOutParticles, UParticleSystem);
-	READ_PTR_FULL(ParticleSystem, UParticleSystemComponent);
-}
-
-void FParticleVisualisation::BeforeDelete()
-{
-	DELE_PTR_FULL(PutOutParticles);
-	DELE_PTR_FULL(ParticleSystem);
-}
-
 void UEmissaryActionRewardBoostComponent::AfterRead()
 {
 	UActorComponent::AfterRead();
@@ -590,10 +590,12 @@ void UEmissaryActionRewardBoostComponent::BeforeDelete()
 
 }
 
-// Function EmissaryLevel.EmissaryActiveTableVisualiserComponent.OnControllerEndPlay
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03A234D0
+//		Name   -> Function EmissaryLevel.EmissaryActiveTableVisualiserComponent.OnControllerEndPlay
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// TEnumAsByte<Engine_EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UEmissaryActiveTableVisualiserComponent::OnControllerEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryActiveTableVisualiserComponent.OnControllerEndPlay");
@@ -728,8 +730,10 @@ void UEmissaryMaxRankQuestProvider::BeforeDelete()
 	DELE_PTR_FULL(Company);
 }
 
-// Function EmissaryLevel.EmissaryParticipantComponent.OnRep_EmissaryLevel
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03A23600
+//		Name   -> Function EmissaryLevel.EmissaryParticipantComponent.OnRep_EmissaryLevel
+//		Flags  -> (Final, Native, Private)
 void UEmissaryParticipantComponent::OnRep_EmissaryLevel()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryParticipantComponent.OnRep_EmissaryLevel");
@@ -745,10 +749,12 @@ void UEmissaryParticipantComponent::OnRep_EmissaryLevel()
 }
 
 
-// Function EmissaryLevel.EmissaryParticipantComponent.OnRep_AffiliatedCompany
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x03A23550
+//		Name   -> Function EmissaryLevel.EmissaryParticipantComponent.OnRep_AffiliatedCompany
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// struct FName                   PreviousId                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       PreviousId                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UEmissaryParticipantComponent::OnRep_AffiliatedCompany(const struct FName& PreviousId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryParticipantComponent.OnRep_AffiliatedCompany");
@@ -815,8 +821,10 @@ void UEmissaryRewardSettingsAsset::BeforeDelete()
 	DELE_PTR_FULL(CampaignSettings);
 }
 
-// Function EmissaryLevel.EmissaryShipAffiliationTrackerComponent.OnRep_EmissaryCount
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03A235E0
+//		Name   -> Function EmissaryLevel.EmissaryShipAffiliationTrackerComponent.OnRep_EmissaryCount
+//		Flags  -> (Final, Native, Private)
 void UEmissaryShipAffiliationTrackerComponent::OnRep_EmissaryCount()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryShipAffiliationTrackerComponent.OnRep_EmissaryCount");
@@ -848,8 +856,10 @@ void UEmissaryShipAffiliationTrackerComponent::BeforeDelete()
 	DELE_PTR_FULL(LoadedEmissaryRepresentationMesh);
 }
 
-// Function EmissaryLevel.EmissaryVoyageInlineVoteConsumerBase.OnRep_Votes
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03A23620
+//		Name   -> Function EmissaryLevel.EmissaryVoyageInlineVoteConsumerBase.OnRep_Votes
+//		Flags  -> (Final, Native, Private)
 void UEmissaryVoyageInlineVoteConsumerBase::OnRep_Votes()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryVoyageInlineVoteConsumerBase.OnRep_Votes");
@@ -946,6 +956,18 @@ void UStopEmissaryVoyageInlineVoteValidator::AfterRead()
 void UStopEmissaryVoyageInlineVoteValidator::BeforeDelete()
 {
 	UEmissaryVoyageVoteValidatorBase::BeforeDelete();
+
+}
+
+void UIsAnEmissaryStatCondition::AfterRead()
+{
+	UTargetedStatCondition::AfterRead();
+
+}
+
+void UIsAnEmissaryStatCondition::BeforeDelete()
+{
+	UTargetedStatCondition::BeforeDelete();
 
 }
 

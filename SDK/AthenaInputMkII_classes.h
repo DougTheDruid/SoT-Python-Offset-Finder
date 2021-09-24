@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UAthenaCharacterBaseMovementComponent : public UInputComponent
 {
 public:
-	unsigned char                                      UnknownData_D50T[0x128];                                   // 0x0150(0x0128) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B043[0x128];                                   // 0x0150(0x0128) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -45,7 +45,7 @@ public:
 class UAthenaCharacterBaseMovementComponentWithInterference : public UAthenaCharacterBaseMovementComponent
 {
 public:
-	unsigned char                                      UnknownData_7VJC[0x8];                                     // 0x0278(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_T2CM[0x8];                                     // 0x0278(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -66,7 +66,7 @@ public:
 class UMovementInterferenceComponent : public UInputComponent
 {
 public:
-	unsigned char                                      UnknownData_JFYZ[0x20];                                    // 0x0150(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZS7H[0x20];                                    // 0x0150(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

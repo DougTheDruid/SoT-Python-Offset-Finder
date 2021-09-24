@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -38,8 +38,10 @@ void UKnockbackInterface::BeforeDelete()
 
 }
 
-// Function KnockbackFramework.KnockbackColliderComponent.OnRep_SolidState
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0379EC40
+//		Name   -> Function KnockbackFramework.KnockbackColliderComponent.OnRep_SolidState
+//		Flags  -> (Final, Native, Private)
 void UKnockbackColliderComponent::OnRep_SolidState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function KnockbackFramework.KnockbackColliderComponent.OnRep_SolidState");

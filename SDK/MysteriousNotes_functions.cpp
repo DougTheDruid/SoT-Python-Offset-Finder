@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -159,6 +159,14 @@ void FEventMysteriousNoteSettingsLoaded::AfterRead()
 }
 
 void FEventMysteriousNoteSettingsLoaded::BeforeDelete()
+{
+}
+
+void FEventMysteriousNoteCustomContentUpdate::AfterRead()
+{
+}
+
+void FEventMysteriousNoteCustomContentUpdate::BeforeDelete()
 {
 }
 
@@ -346,10 +354,12 @@ void UPlayerMysteriousNoteInterface::BeforeDelete()
 
 }
 
-// Function MysteriousNotes.PlayerMysteriousNoteComponent.TriggerNotesReceivedPopup
-// (RequiredAPI, Net, NetReliable, Native, Event, Public, NetClient)
+// Function:
+//		Offset -> 0x039F2770
+//		Name   -> Function MysteriousNotes.PlayerMysteriousNoteComponent.TriggerNotesReceivedPopup
+//		Flags  -> (RequiredAPI, Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
-// bool                           InCinematicSkipped             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               InCinematicSkipped                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UPlayerMysteriousNoteComponent::TriggerNotesReceivedPopup(bool InCinematicSkipped)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.PlayerMysteriousNoteComponent.TriggerNotesReceivedPopup");
@@ -366,11 +376,13 @@ void UPlayerMysteriousNoteComponent::TriggerNotesReceivedPopup(bool InCinematicS
 }
 
 
-// Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_NoteCompletionStepReceived
-// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
+// Function:
+//		Offset -> 0x039F2670
+//		Name   -> Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_NoteCompletionStepReceived
+//		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
-// class APlayerController*       InPlayerController             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FName                   InCompletionID                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class APlayerController*                           InPlayerController                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       InCompletionID                                             (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UPlayerMysteriousNoteComponent::Server_NoteCompletionStepReceived(class APlayerController* InPlayerController, const struct FName& InCompletionID)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_NoteCompletionStepReceived");
@@ -388,11 +400,13 @@ void UPlayerMysteriousNoteComponent::Server_NoteCompletionStepReceived(class APl
 }
 
 
-// Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsRead
-// (Net, NetReliable, Native, Event, Protected, NetServer, HasDefaults, NetValidate)
+// Function:
+//		Offset -> 0x039F2570
+//		Name   -> Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsRead
+//		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, HasDefaults, NetValidate)
 // Parameters:
-// class APlayerController*       InPlayerController             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGuid                   NoteId                         (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class APlayerController*                           InPlayerController                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FGuid                                       NoteId                                                     (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UPlayerMysteriousNoteComponent::Server_MarkNoteAsRead(class APlayerController* InPlayerController, const struct FGuid& NoteId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsRead");
@@ -410,11 +424,13 @@ void UPlayerMysteriousNoteComponent::Server_MarkNoteAsRead(class APlayerControll
 }
 
 
-// Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsDeleted
-// (Net, NetReliable, Native, Event, Protected, NetServer, HasDefaults, NetValidate)
+// Function:
+//		Offset -> 0x039F2470
+//		Name   -> Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsDeleted
+//		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, HasDefaults, NetValidate)
 // Parameters:
-// class APlayerController*       InPlayerController             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGuid                   NoteId                         (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class APlayerController*                           InPlayerController                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FGuid                                       NoteId                                                     (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UPlayerMysteriousNoteComponent::Server_MarkNoteAsDeleted(class APlayerController* InPlayerController, const struct FGuid& NoteId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.PlayerMysteriousNoteComponent.Server_MarkNoteAsDeleted");
@@ -432,8 +448,10 @@ void UPlayerMysteriousNoteComponent::Server_MarkNoteAsDeleted(class APlayerContr
 }
 
 
-// Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_NoteData
-// (Final, RequiredAPI, Native, Private)
+// Function:
+//		Offset -> 0x039F2330
+//		Name   -> Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_NoteData
+//		Flags  -> (Final, RequiredAPI, Native, Private)
 void UPlayerMysteriousNoteComponent::OnRep_NoteData()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_NoteData");
@@ -449,8 +467,10 @@ void UPlayerMysteriousNoteComponent::OnRep_NoteData()
 }
 
 
-// Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_BeenPossessed
-// (Final, RequiredAPI, Native, Private)
+// Function:
+//		Offset -> 0x039F2310
+//		Name   -> Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_BeenPossessed
+//		Flags  -> (Final, RequiredAPI, Native, Private)
 void UPlayerMysteriousNoteComponent::OnRep_BeenPossessed()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.PlayerMysteriousNoteComponent.OnRep_BeenPossessed");
@@ -466,13 +486,37 @@ void UPlayerMysteriousNoteComponent::OnRep_BeenPossessed()
 }
 
 
-// Function MysteriousNotes.PlayerMysteriousNoteComponent.AddFakeNote
-// (RequiredAPI, Net, NetReliable, Native, Event, Public, NetClient)
+// Function:
+//		Offset -> 0x039F2270
+//		Name   -> Function MysteriousNotes.PlayerMysteriousNoteComponent.CustomServerUpdateDetailNotes
+//		Flags  -> (RequiredAPI, Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
-// struct FString                 NoteType                       (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FString                 NoteTitle                      (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FString                 NoteBody                       (Parm, ZeroConstructor, HasGetValueTypeHash)
-// TArray<struct FString>         CompletionStrings              (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FNotesRemoteServiceNoteDetailModel>  InNotes                                                    (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+void UPlayerMysteriousNoteComponent::CustomServerUpdateDetailNotes(TArray<struct FNotesRemoteServiceNoteDetailModel> InNotes)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.PlayerMysteriousNoteComponent.CustomServerUpdateDetailNotes");
+
+	UPlayerMysteriousNoteComponent_CustomServerUpdateDetailNotes_Params params;
+	params.InNotes = InNotes;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x039F2090
+//		Name   -> Function MysteriousNotes.PlayerMysteriousNoteComponent.AddFakeNote
+//		Flags  -> (RequiredAPI, Net, NetReliable, Native, Event, Public, NetClient)
+// Parameters:
+//		struct FString                                     NoteType                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     NoteTitle                                                  (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     NoteBody                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		TArray<struct FString>                             CompletionStrings                                          (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 void UPlayerMysteriousNoteComponent::AddFakeNote(const struct FString& NoteType, const struct FString& NoteTitle, const struct FString& NoteBody, TArray<struct FString> CompletionStrings)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.PlayerMysteriousNoteComponent.AddFakeNote");
@@ -504,12 +548,14 @@ void UPlayerMysteriousNoteComponent::BeforeDelete()
 
 }
 
-// Function MysteriousNotes.WieldableMysteriousNote.OnTextCanvasUpdate
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x039F2370
+//		Name   -> Function MysteriousNotes.WieldableMysteriousNote.OnTextCanvasUpdate
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class UCanvas*                 Canvas                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Width                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Height                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCanvas*                                     Canvas                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Height                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AWieldableMysteriousNote::OnTextCanvasUpdate(class UCanvas* Canvas, int Width, int Height)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.WieldableMysteriousNote.OnTextCanvasUpdate");
@@ -528,8 +574,10 @@ void AWieldableMysteriousNote::OnTextCanvasUpdate(class UCanvas* Canvas, int Wid
 }
 
 
-// Function MysteriousNotes.WieldableMysteriousNote.OnRep_NoteLayout
-// (Final, RequiredAPI, Native, Private)
+// Function:
+//		Offset -> 0x039F2350
+//		Name   -> Function MysteriousNotes.WieldableMysteriousNote.OnRep_NoteLayout
+//		Flags  -> (Final, RequiredAPI, Native, Private)
 void AWieldableMysteriousNote::OnRep_NoteLayout()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MysteriousNotes.WieldableMysteriousNote.OnRep_NoteLayout");

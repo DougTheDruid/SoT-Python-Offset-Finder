@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.AnimNotify_OutOfComplete
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.AnimNotify_OutOfComplete
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Anim_ReviveGhost_C::AnimNotify_OutOfComplete()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.AnimNotify_OutOfComplete");
@@ -34,10 +36,12 @@ void UBP_Anim_ReviveGhost_C::AnimNotify_OutOfComplete()
 }
 
 
-// Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.ExecuteUbergraph_BP_Anim_ReviveGhost
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.ExecuteUbergraph_BP_Anim_ReviveGhost
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Anim_ReviveGhost_C::ExecuteUbergraph_BP_Anim_ReviveGhost(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_ReviveGhost.BP_Anim_ReviveGhost_C.ExecuteUbergraph_BP_Anim_ReviveGhost");

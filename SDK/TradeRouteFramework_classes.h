@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -25,7 +25,7 @@ class UTradeRouteDifficultyBand : public UObject
 {
 public:
 	int                                                MinimumRank;                                               // 0x0028(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_3VVZ[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZSWP[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -42,16 +42,16 @@ public:
 };
 
 // Class TradeRouteFramework.TradeRouteData
-// 0x00A0 (FullSize[0x00C8] - InheritedSize[0x0028])
+// 0x0098 (FullSize[0x00C0] - InheritedSize[0x0028])
 class UTradeRouteData : public UDataAsset
 {
 public:
 	struct FIslandSelectionType                        StartIsland;                                               // 0x0028(0x0008) (Edit, DisableEditOnInstance)
 	struct FIslandSelectionType                        EndIsland;                                                 // 0x0030(0x0008) (Edit, DisableEditOnInstance)
-	struct FPlayerStat                                 RouteCompletionStat;                                       // 0x0038(0x000C) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	TEnumAsByte<TradeRouteFramework_ETradeRouteMapOrientation> MapOrientation;                                            // 0x0044(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_IWEL[0x3];                                     // 0x0045(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FTradeRouteMapData                          TradeRouteMapData;                                         // 0x0048(0x0080) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	struct FPlayerStat                                 RouteCompletionStat;                                       // 0x0038(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	TEnumAsByte<TradeRouteFramework_ETradeRouteMapOrientation> MapOrientation;                                            // 0x003C(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_MH40[0x3];                                     // 0x003D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FTradeRouteMapData                          TradeRouteMapData;                                         // 0x0040(0x0080) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 
 
 	static UClass* StaticClass()
@@ -68,11 +68,11 @@ public:
 };
 
 // Class TradeRouteFramework.TaleQuestGetProjectionPointOnTradeRouteStep
-// 0x0038 (FullSize[0x00C0] - InheritedSize[0x0088])
+// 0x0038 (FullSize[0x00C8] - InheritedSize[0x0090])
 class UTaleQuestGetProjectionPointOnTradeRouteStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_UFFM[0x38];                                    // 0x0088(0x0038) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SHRC[0x38];                                    // 0x0090(0x0038) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -89,15 +89,15 @@ public:
 };
 
 // Class TradeRouteFramework.TaleQuestGetProjectionPointOnTradeRouteStepDesc
-// 0x0038 (FullSize[0x0068] - InheritedSize[0x0030])
+// 0x0038 (FullSize[0x00B8] - InheritedSize[0x0080])
 class UTaleQuestGetProjectionPointOnTradeRouteStepDesc : public UTaleQuestStepDesc
 {
 public:
-	float                                              ProjectionProportion;                                      // 0x0030(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_XPFR[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FQuestVariableVector                        SourcePoint;                                               // 0x0038(0x0010) (Edit)
-	struct FQuestVariableTradeRouteData                TradeRouteData;                                            // 0x0048(0x0010) (Edit)
-	struct FQuestVariableVector                        ProjectedPoint;                                            // 0x0058(0x0010) (Edit)
+	float                                              ProjectionProportion;                                      // 0x0080(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_6XLU[0x4];                                     // 0x0084(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FQuestVariableVector                        SourcePoint;                                               // 0x0088(0x0010) (Edit)
+	struct FQuestVariableTradeRouteData                TradeRouteData;                                            // 0x0098(0x0010) (Edit)
+	struct FQuestVariableVector                        ProjectedPoint;                                            // 0x00A8(0x0010) (Edit)
 
 
 	static UClass* StaticClass()
@@ -114,12 +114,12 @@ public:
 };
 
 // Class TradeRouteFramework.TaleQuestSelectTradeRouteStep
-// 0x0020 (FullSize[0x00A8] - InheritedSize[0x0088])
+// 0x0020 (FullSize[0x00B0] - InheritedSize[0x0090])
 class UTaleQuestSelectTradeRouteStep : public UTaleQuestStep
 {
 public:
-	class UTaleQuestSelectTradeRouteStepDesc*          Desc;                                                      // 0x0088(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_PVO1[0x18];                                    // 0x0090(0x0018) MISSED OFFSET (PADDING)
+	class UTaleQuestSelectTradeRouteStepDesc*          Desc;                                                      // 0x0090(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_7SJM[0x18];                                    // 0x0098(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -136,16 +136,16 @@ public:
 };
 
 // Class TradeRouteFramework.TaleQuestSelectTradeRouteStepDesc
-// 0x0048 (FullSize[0x0078] - InheritedSize[0x0030])
+// 0x0048 (FullSize[0x00C8] - InheritedSize[0x0080])
 class UTaleQuestSelectTradeRouteStepDesc : public UTaleQuestStepDesc
 {
 public:
-	int                                                NumSelectFromClosestIslands;                               // 0x0030(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_DUGH[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FQuestVariableVector                        SelectionOriginPointVar;                                   // 0x0038(0x0010) (Edit)
-	struct FQuestVariableInt                           TradeRouteDifficulty;                                      // 0x0048(0x0010) (Edit)
-	struct FQuestVariableTradeRouteData                TradeRoute;                                                // 0x0058(0x0010) (Edit)
-	struct FQuestVariableTaleResourceHandle            AllocatedTradeRouteHandleVar;                              // 0x0068(0x0010) (Edit)
+	int                                                NumSelectFromClosestIslands;                               // 0x0080(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_I5TD[0x4];                                     // 0x0084(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FQuestVariableVector                        SelectionOriginPointVar;                                   // 0x0088(0x0010) (Edit)
+	struct FQuestVariableInt                           TradeRouteDifficulty;                                      // 0x0098(0x0010) (Edit)
+	struct FQuestVariableTradeRouteData                TradeRoute;                                                // 0x00A8(0x0010) (Edit)
+	struct FQuestVariableTaleResourceHandle            AllocatedTradeRouteHandleVar;                              // 0x00B8(0x0010) (Edit)
 
 
 	static UClass* StaticClass()

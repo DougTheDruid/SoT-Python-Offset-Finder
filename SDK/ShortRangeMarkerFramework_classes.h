@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class AShortRangeMarker : public AActor
 {
 public:
-	unsigned char                                      UnknownData_FIKT[0x10];                                    // 0x03D0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_J91I[0x10];                                    // 0x03D0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class UMaterialInstanceDynamic*>            DynamicMaterials;                                          // 0x03E0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient)
 	float                                              LifetimerTimer;                                            // 0x03F0(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              FadeTimer;                                                 // 0x03F4(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
@@ -95,7 +95,7 @@ class UShortRangeMarkerDataAsset : public UDataAsset
 public:
 	class UActorSpawnData*                             RewardMarker;                                              // 0x0028(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              RewardMarkerHeight;                                        // 0x0030(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_0HPR[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_DQY1[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

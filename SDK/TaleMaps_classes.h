@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -20,12 +20,12 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Class TaleMaps.AddMarkToTornMapStep
-// 0x0028 (FullSize[0x00B0] - InheritedSize[0x0088])
+// 0x0028 (FullSize[0x00B8] - InheritedSize[0x0090])
 class UAddMarkToTornMapStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_FEUQ[0x20];                                    // 0x0088(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UClass*                                      MapMark;                                                   // 0x00A8(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_WGIO[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class UClass*                                      MapMark;                                                   // 0x00B0(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()
@@ -42,12 +42,12 @@ public:
 };
 
 // Class TaleMaps.AddMarkToTornMapStepDescBase
-// 0x0020 (FullSize[0x0050] - InheritedSize[0x0030])
+// 0x0020 (FullSize[0x00A0] - InheritedSize[0x0080])
 class UAddMarkToTornMapStepDescBase : public UTaleQuestStepDesc
 {
 public:
-	struct FQuestVariableGuid                          MapId;                                                     // 0x0030(0x0010) (Edit)
-	struct FTaleQuestVariableMapMarkType               MapMark;                                                   // 0x0040(0x0010) (Edit)
+	struct FQuestVariableGuid                          MapId;                                                     // 0x0080(0x0010) (Edit)
+	struct FTaleQuestVariableMapMarkType               MapMark;                                                   // 0x0090(0x0010) (Edit)
 
 
 	static UClass* StaticClass()
@@ -64,11 +64,11 @@ public:
 };
 
 // Class TaleMaps.AddMarkToTornMapAtLocationStepDesc
-// 0x0010 (FullSize[0x0060] - InheritedSize[0x0050])
+// 0x0010 (FullSize[0x00B0] - InheritedSize[0x00A0])
 class UAddMarkToTornMapAtLocationStepDesc : public UAddMarkToTornMapStepDescBase
 {
 public:
-	struct FQuestVariableVector                        MarkLocation;                                              // 0x0050(0x0010) (Edit)
+	struct FQuestVariableVector                        MarkLocation;                                              // 0x00A0(0x0010) (Edit)
 
 
 	static UClass* StaticClass()
@@ -85,11 +85,11 @@ public:
 };
 
 // Class TaleMaps.AddMarkToTornMapAtActorLocationStepDesc
-// 0x0010 (FullSize[0x0060] - InheritedSize[0x0050])
+// 0x0010 (FullSize[0x00B0] - InheritedSize[0x00A0])
 class UAddMarkToTornMapAtActorLocationStepDesc : public UAddMarkToTornMapStepDescBase
 {
 public:
-	struct FQuestVariableActor                         MarkLocation;                                              // 0x0050(0x0010) (Edit)
+	struct FQuestVariableActor                         MarkLocation;                                              // 0x00A0(0x0010) (Edit)
 
 
 	static UClass* StaticClass()
@@ -106,11 +106,11 @@ public:
 };
 
 // Class TaleMaps.GetNumberOfCollectedTornMapPiecesStep
-// 0x0020 (FullSize[0x00A8] - InheritedSize[0x0088])
+// 0x0020 (FullSize[0x00B0] - InheritedSize[0x0090])
 class UGetNumberOfCollectedTornMapPiecesStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_SO4G[0x20];                                    // 0x0088(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EKN1[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -127,12 +127,12 @@ public:
 };
 
 // Class TaleMaps.GetNumberOfCollectedTornMapPiecesStepDesc
-// 0x0020 (FullSize[0x0050] - InheritedSize[0x0030])
+// 0x0020 (FullSize[0x00A0] - InheritedSize[0x0080])
 class UGetNumberOfCollectedTornMapPiecesStepDesc : public UTaleQuestStepDesc
 {
 public:
-	struct FQuestVariableGuid                          MapId;                                                     // 0x0030(0x0010) (Edit)
-	struct FQuestVariableInt                           NumPieces;                                                 // 0x0040(0x0010) (Edit)
+	struct FQuestVariableGuid                          MapId;                                                     // 0x0080(0x0010) (Edit)
+	struct FQuestVariableInt                           NumPieces;                                                 // 0x0090(0x0010) (Edit)
 
 
 	static UClass* StaticClass()
@@ -175,7 +175,7 @@ class URegionIslandFilteredSelectionStrategy : public URegionIslandSelectionStra
 public:
 	TArray<TEnumAsByte<Athena_EIslandType>>            IslandTypes;                                               // 0x0028(0x0010) (Edit, ZeroConstructor)
 	bool                                               UseMaxDistance;                                            // 0x0038(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_5NKO[0x3];                                     // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MV26[0x3];                                     // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              MaxDistanceFromStartingIsland;                             // 0x003C(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
@@ -213,13 +213,13 @@ public:
 };
 
 // Class TaleMaps.SelectIslandsFromRegionStep
-// 0x0040 (FullSize[0x00C8] - InheritedSize[0x0088])
+// 0x0040 (FullSize[0x00D0] - InheritedSize[0x0090])
 class USelectIslandsFromRegionStep : public UTaleQuestStep
 {
 public:
-	class URegionMapDataAsset*                         RegionData;                                                // 0x0088(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class URegionIslandSelectionStrategyBase*          SelectionStrategy;                                         // 0x0090(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_N9KN[0x30];                                    // 0x0098(0x0030) MISSED OFFSET (PADDING)
+	class URegionMapDataAsset*                         RegionData;                                                // 0x0090(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class URegionIslandSelectionStrategyBase*          SelectionStrategy;                                         // 0x0098(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_2KP1[0x30];                                    // 0x00A0(0x0030) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -236,17 +236,17 @@ public:
 };
 
 // Class TaleMaps.SelectIslandsFromRegionStepDesc
-// 0x0050 (FullSize[0x0080] - InheritedSize[0x0030])
+// 0x0050 (FullSize[0x00D0] - InheritedSize[0x0080])
 class USelectIslandsFromRegionStepDesc : public UTaleQuestStepDesc
 {
 public:
-	struct FQuestVariableDataAsset                     Region;                                                    // 0x0030(0x0010) (Edit)
-	struct FQuestVariableInt                           NumIslands;                                                // 0x0040(0x0010) (Edit)
-	struct FQuestVariableInt                           MaxDifferentIslands;                                       // 0x0050(0x0010) (Edit)
-	struct FQuestVariableNameArray                     SelectedIslands;                                           // 0x0060(0x0010) (Edit)
-	class URegionIslandSelectionStrategyBase*          SelectionStrategy;                                         // 0x0070(0x0008) (Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int                                                DefaultNumIslands;                                         // 0x0078(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                DefaultMaxDifferentIslands;                                // 0x007C(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FQuestVariableDataAsset                     Region;                                                    // 0x0080(0x0010) (Edit)
+	struct FQuestVariableInt                           NumIslands;                                                // 0x0090(0x0010) (Edit)
+	struct FQuestVariableInt                           MaxDifferentIslands;                                       // 0x00A0(0x0010) (Edit)
+	struct FQuestVariableNameArray                     SelectedIslands;                                           // 0x00B0(0x0010) (Edit)
+	class URegionIslandSelectionStrategyBase*          SelectionStrategy;                                         // 0x00C0(0x0008) (Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int                                                DefaultNumIslands;                                         // 0x00C8(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                DefaultMaxDifferentIslands;                                // 0x00CC(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()
@@ -263,11 +263,11 @@ public:
 };
 
 // Class TaleMaps.TaleQuestAddLocationMapStep
-// 0x0048 (FullSize[0x00D0] - InheritedSize[0x0088])
+// 0x0048 (FullSize[0x00D8] - InheritedSize[0x0090])
 class UTaleQuestAddLocationMapStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_XFWN[0x48];                                    // 0x0088(0x0048) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_39TN[0x48];                                    // 0x0090(0x0048) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -284,11 +284,11 @@ public:
 };
 
 // Class TaleMaps.TaleQuestAddTornMapStep
-// 0x0040 (FullSize[0x00C8] - InheritedSize[0x0088])
+// 0x0040 (FullSize[0x00D0] - InheritedSize[0x0090])
 class UTaleQuestAddTornMapStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_43BG[0x40];                                    // 0x0088(0x0040) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KS5Z[0x40];                                    // 0x0090(0x0040) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -305,12 +305,12 @@ public:
 };
 
 // Class TaleMaps.TaleQuestAddTradeRouteMapStep
-// 0x0038 (FullSize[0x00C0] - InheritedSize[0x0088])
+// 0x0038 (FullSize[0x00C8] - InheritedSize[0x0090])
 class UTaleQuestAddTradeRouteMapStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_4NO7[0x30];                                    // 0x0088(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UClueSiteTypeToMapMarkIdDataAsset*           ClueSiteToMarkMap;                                         // 0x00B8(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_S057[0x30];                                    // 0x0090(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class UClueSiteTypeToMapMarkIdDataAsset*           ClueSiteToMarkMap;                                         // 0x00C0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()
@@ -327,11 +327,11 @@ public:
 };
 
 // Class TaleMaps.TaleQuestLocationMapChestFoundStep
-// 0x0008 (FullSize[0x0090] - InheritedSize[0x0088])
+// 0x0008 (FullSize[0x0098] - InheritedSize[0x0090])
 class UTaleQuestLocationMapChestFoundStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_0VG6[0x8];                                     // 0x0088(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_W6EA[0x8];                                     // 0x0090(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -348,7 +348,7 @@ public:
 };
 
 // Class TaleMaps.TaleQuestMapStepDescBase
-// 0x0000 (FullSize[0x0030] - InheritedSize[0x0030])
+// 0x0000 (FullSize[0x0080] - InheritedSize[0x0080])
 class UTaleQuestMapStepDescBase : public UTaleQuestStepDesc
 {
 public:
@@ -368,15 +368,15 @@ public:
 };
 
 // Class TaleMaps.TaleQuestAddLocationMapStepDesc
-// 0x0048 (FullSize[0x0078] - InheritedSize[0x0030])
+// 0x0048 (FullSize[0x00C8] - InheritedSize[0x0080])
 class UTaleQuestAddLocationMapStepDesc : public UTaleQuestMapStepDescBase
 {
 public:
-	struct FName                                       MapId;                                                     // 0x0030(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FQuestVariableInt                           NumberOfChests;                                            // 0x0038(0x0010) (Edit)
-	struct FQuestVariableDataAsset                     RegionMapData;                                             // 0x0048(0x0010) (Edit)
-	struct FQuestVariableDataAsset                     VaultData;                                                 // 0x0058(0x0010) (Edit)
-	struct FQuestVariableDataAsset                     MapParams;                                                 // 0x0068(0x0010) (Edit)
+	struct FName                                       MapId;                                                     // 0x0080(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FQuestVariableInt                           NumberOfChests;                                            // 0x0088(0x0010) (Edit)
+	struct FQuestVariableDataAsset                     RegionMapData;                                             // 0x0098(0x0010) (Edit)
+	struct FQuestVariableDataAsset                     VaultData;                                                 // 0x00A8(0x0010) (Edit)
+	struct FQuestVariableDataAsset                     MapParams;                                                 // 0x00B8(0x0010) (Edit)
 
 
 	static UClass* StaticClass()
@@ -393,14 +393,14 @@ public:
 };
 
 // Class TaleMaps.TaleQuestAddTornMapStepDesc
-// 0x0040 (FullSize[0x0070] - InheritedSize[0x0030])
+// 0x0040 (FullSize[0x00C0] - InheritedSize[0x0080])
 class UTaleQuestAddTornMapStepDesc : public UTaleQuestMapStepDescBase
 {
 public:
-	struct FQuestVariableName                          IslandName;                                                // 0x0030(0x0010) (Edit)
-	struct FQuestVariableInt                           NumberOfPieces;                                            // 0x0040(0x0010) (Edit)
-	struct FQuestVariableDataAsset                     MapParams;                                                 // 0x0050(0x0010) (Edit)
-	struct FQuestVariableGuid                          MapId;                                                     // 0x0060(0x0010) (Edit)
+	struct FQuestVariableName                          IslandName;                                                // 0x0080(0x0010) (Edit)
+	struct FQuestVariableInt                           NumberOfPieces;                                            // 0x0090(0x0010) (Edit)
+	struct FQuestVariableDataAsset                     MapParams;                                                 // 0x00A0(0x0010) (Edit)
+	struct FQuestVariableGuid                          MapId;                                                     // 0x00B0(0x0010) (Edit)
 
 
 	static UClass* StaticClass()
@@ -417,14 +417,14 @@ public:
 };
 
 // Class TaleMaps.TaleQuestAddTradeRouteMapStepDesc
-// 0x0038 (FullSize[0x0068] - InheritedSize[0x0030])
+// 0x0038 (FullSize[0x00B8] - InheritedSize[0x0080])
 class UTaleQuestAddTradeRouteMapStepDesc : public UTaleQuestMapStepDescBase
 {
 public:
-	struct FQuestVariableDataAsset                     TradeRouteData;                                            // 0x0030(0x0010) (Edit)
-	struct FQuestVariableText                          VesselName;                                                // 0x0040(0x0010) (Edit)
-	struct FQuestVariableGuid                          MapId;                                                     // 0x0050(0x0010) (Edit)
-	class UClueSiteTypeToMapMarkIdDataAsset*           ClueSiteToMapMarkIdMap;                                    // 0x0060(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FQuestVariableDataAsset                     TradeRouteData;                                            // 0x0080(0x0010) (Edit)
+	struct FQuestVariableText                          VesselName;                                                // 0x0090(0x0010) (Edit)
+	struct FQuestVariableGuid                          MapId;                                                     // 0x00A0(0x0010) (Edit)
+	class UClueSiteTypeToMapMarkIdDataAsset*           ClueSiteToMapMarkIdMap;                                    // 0x00B0(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()
@@ -441,11 +441,11 @@ public:
 };
 
 // Class TaleMaps.TaleQuestLocationMapChestFoundStepDesc
-// 0x0008 (FullSize[0x0038] - InheritedSize[0x0030])
+// 0x0008 (FullSize[0x0088] - InheritedSize[0x0080])
 class UTaleQuestLocationMapChestFoundStepDesc : public UTaleQuestMapStepDescBase
 {
 public:
-	struct FName                                       MapId;                                                     // 0x0030(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FName                                       MapId;                                                     // 0x0080(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()

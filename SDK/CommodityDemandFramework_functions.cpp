@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -144,8 +144,10 @@ void UCommodityDemandServiceInterface::BeforeDelete()
 
 }
 
-// Function CommodityDemandFramework.CommodityDemandService.OnRep_ActiveCommodityDemands
-// (Final, RequiredAPI, Native, Private)
+// Function:
+//		Offset -> 0x039D6940
+//		Name   -> Function CommodityDemandFramework.CommodityDemandService.OnRep_ActiveCommodityDemands
+//		Flags  -> (Final, RequiredAPI, Native, Private)
 void ACommodityDemandService::OnRep_ActiveCommodityDemands()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CommodityDemandFramework.CommodityDemandService.OnRep_ActiveCommodityDemands");

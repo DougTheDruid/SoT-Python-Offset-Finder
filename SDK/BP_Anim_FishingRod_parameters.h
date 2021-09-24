@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -192,7 +192,7 @@ struct UBP_Anim_FishingRod_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Anim
 // Function BP_Anim_FishingRod.BP_Anim_FishingRod_C.ExecuteUbergraph_BP_Anim_FishingRod
 struct UBP_Anim_FishingRod_C_ExecuteUbergraph_BP_Anim_FishingRod_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

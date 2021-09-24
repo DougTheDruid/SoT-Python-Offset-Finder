@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShroudBreakerObjectEmitterComponent
-// (Event, Protected, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShroudBreakerObjectEmitterComponent
+//		Flags  -> (Event, Protected, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWwiseEmitterComponent*  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UWwiseEmitterComponent*                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 class UWwiseEmitterComponent* ABP_Shroudbreaker_OnShip_C::GetShroudBreakerObjectEmitterComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShroudBreakerObjectEmitterComponent");
@@ -38,10 +40,12 @@ class UWwiseEmitterComponent* ABP_Shroudbreaker_OnShip_C::GetShroudBreakerObject
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShipHullAudio
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShipHullAudio
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AShipHullAudio*          ShipHullAudioRef               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AShipHullAudio*                              ShipHullAudioRef                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Shroudbreaker_OnShip_C::GetShipHullAudio(class AShipHullAudio** ShipHullAudioRef)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShipHullAudio");
@@ -59,8 +63,10 @@ void ABP_Shroudbreaker_OnShip_C::GetShipHullAudio(class AShipHullAudio** ShipHul
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerDeactivate
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerDeactivate
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::OnRep_ShroudBreakerDeactivate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerDeactivate");
@@ -75,8 +81,11 @@ void ABP_Shroudbreaker_OnShip_C::OnRep_ShroudBreakerDeactivate()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerEffectsActive
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerEffectsActive
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_Shroudbreaker_OnShip_C::OnRep_ShroudBreakerEffectsActive()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerEffectsActive");
@@ -91,8 +100,10 @@ void ABP_Shroudbreaker_OnShip_C::OnRep_ShroudBreakerEffectsActive()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_MusicZoneActive
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_MusicZoneActive
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::OnRep_MusicZoneActive()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_MusicZoneActive");
@@ -107,11 +118,13 @@ void ABP_Shroudbreaker_OnShip_C::OnRep_MusicZoneActive()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UnregisterShipEvent
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UnregisterShipEvent
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle Dispatcher                     (Parm, OutParm, ReferenceParm)
-// struct FObjectMessagingHandle  Handle                         (Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingDispatcherHandle            Dispatcher                                                 (Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingHandle                      Handle                                                     (Parm, OutParm, ReferenceParm)
 void ABP_Shroudbreaker_OnShip_C::UnregisterShipEvent(struct FObjectMessagingDispatcherHandle* Dispatcher, struct FObjectMessagingHandle* Handle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UnregisterShipEvent");
@@ -131,11 +144,13 @@ void ABP_Shroudbreaker_OnShip_C::UnregisterShipEvent(struct FObjectMessagingDisp
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetObjMsgDispatcher
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetObjMsgDispatcher
+//		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle Dispatcher                     (Parm, OutParm)
-// bool                           Success                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FObjectMessagingDispatcherHandle            Dispatcher                                                 (Parm, OutParm)
+//		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Shroudbreaker_OnShip_C::GetObjMsgDispatcher(struct FObjectMessagingDispatcherHandle* Dispatcher, bool* Success)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetObjMsgDispatcher");
@@ -155,8 +170,10 @@ void ABP_Shroudbreaker_OnShip_C::GetObjMsgDispatcher(struct FObjectMessagingDisp
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UserConstructionScript");
@@ -171,8 +188,10 @@ void ABP_Shroudbreaker_OnShip_C::UserConstructionScript()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveBeginPlay");
@@ -187,10 +206,12 @@ void ABP_Shroudbreaker_OnShip_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveEndPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveEndPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<Engine_EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Shroudbreaker_OnShip_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveEndPlay");
@@ -206,10 +227,12 @@ void ABP_Shroudbreaker_OnShip_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReaso
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerActivated
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerActivated
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FShroudBreakerActivatedEvent Ev                             (Parm)
+//		struct FShroudBreakerActivatedEvent                Ev                                                         (Parm)
 void ABP_Shroudbreaker_OnShip_C::OnShroudbreakerActivated(const struct FShroudBreakerActivatedEvent& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerActivated");
@@ -225,10 +248,12 @@ void ABP_Shroudbreaker_OnShip_C::OnShroudbreakerActivated(const struct FShroudBr
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerDeactivated
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerDeactivated
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FShroudBreakerDeactivatedEvent Ev                             (Parm)
+//		struct FShroudBreakerDeactivatedEvent              Ev                                                         (Parm)
 void ABP_Shroudbreaker_OnShip_C::OnShroudbreakerDeactivated(const struct FShroudBreakerDeactivatedEvent& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerDeactivated");
@@ -244,10 +269,12 @@ void ABP_Shroudbreaker_OnShip_C::OnShroudbreakerDeactivated(const struct FShroud
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShipDestroyed
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShipDestroyed
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventShipDestroyed     Ev                             (Parm)
+//		struct FEventShipDestroyed                         Ev                                                         (Parm)
 void ABP_Shroudbreaker_OnShip_C::OnShipDestroyed(const struct FEventShipDestroyed& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShipDestroyed");
@@ -263,10 +290,12 @@ void ABP_Shroudbreaker_OnShip_C::OnShipDestroyed(const struct FEventShipDestroye
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnActivateEffects
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnActivateEffects
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FShroudBreakerActivateEffectsEvent Ev                             (Parm)
+//		struct FShroudBreakerActivateEffectsEvent          Ev                                                         (Parm)
 void ABP_Shroudbreaker_OnShip_C::OnActivateEffects(const struct FShroudBreakerActivateEffectsEvent& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnActivateEffects");
@@ -282,10 +311,12 @@ void ABP_Shroudbreaker_OnShip_C::OnActivateEffects(const struct FShroudBreakerAc
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnDeactivateEffects
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnDeactivateEffects
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FShroudBreakerDeactivateEffectsEvent Ev                             (Parm)
+//		struct FShroudBreakerDeactivateEffectsEvent        Ev                                                         (Parm)
 void ABP_Shroudbreaker_OnShip_C::OnDeactivateEffects(const struct FShroudBreakerDeactivateEffectsEvent& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnDeactivateEffects");
@@ -301,10 +332,12 @@ void ABP_Shroudbreaker_OnShip_C::OnDeactivateEffects(const struct FShroudBreaker
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerEnteredTP
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerEnteredTP
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventPlayerEnteredIslandVicinity Ev                             (Parm)
+//		struct FEventPlayerEnteredIslandVicinity           Ev                                                         (Parm)
 void ABP_Shroudbreaker_OnShip_C::PlayerEnteredTP(const struct FEventPlayerEnteredIslandVicinity& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerEnteredTP");
@@ -320,10 +353,12 @@ void ABP_Shroudbreaker_OnShip_C::PlayerEnteredTP(const struct FEventPlayerEntere
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerLeftTP
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerLeftTP
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventPlayerLeftIslandVicinity Ev                             (Parm)
+//		struct FEventPlayerLeftIslandVicinity              Ev                                                         (Parm)
 void ABP_Shroudbreaker_OnShip_C::PlayerLeftTP(const struct FEventPlayerLeftIslandVicinity& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerLeftTP");
@@ -339,8 +374,10 @@ void ABP_Shroudbreaker_OnShip_C::PlayerLeftTP(const struct FEventPlayerLeftIslan
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRepFunctionDeactivateShroudBreaker
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRepFunctionDeactivateShroudBreaker
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::OnRepFunctionDeactivateShroudBreaker()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRepFunctionDeactivateShroudBreaker");
@@ -355,8 +392,10 @@ void ABP_Shroudbreaker_OnShip_C::OnRepFunctionDeactivateShroudBreaker()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudBreakerActivationStateChange
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudBreakerActivationStateChange
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::OnShroudBreakerActivationStateChange()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudBreakerActivationStateChange");
@@ -371,8 +410,10 @@ void ABP_Shroudbreaker_OnShip_C::OnShroudBreakerActivationStateChange()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 4 Activation
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 4 Activation
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::Stage_4_Activation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 4 Activation");
@@ -387,8 +428,10 @@ void ABP_Shroudbreaker_OnShip_C::Stage_4_Activation()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 3 Activation
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 3 Activation
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::Stage_3_Activation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 3 Activation");
@@ -403,8 +446,10 @@ void ABP_Shroudbreaker_OnShip_C::Stage_3_Activation()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 2 Activation
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 2 Activation
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::Stage_2_Activation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage 2 Activation");
@@ -419,8 +464,10 @@ void ABP_Shroudbreaker_OnShip_C::Stage_2_Activation()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage1Activation
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage1Activation
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::Stage1Activation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Stage1Activation");
@@ -435,8 +482,10 @@ void ABP_Shroudbreaker_OnShip_C::Stage1Activation()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivate All VFX and SFX
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivate All VFX and SFX
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::Deactivate_All_VFX_and_SFX()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivate All VFX and SFX");
@@ -451,8 +500,10 @@ void ABP_Shroudbreaker_OnShip_C::Deactivate_All_VFX_and_SFX()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 4
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 4
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::Deactivation_Stage_4()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 4");
@@ -467,8 +518,10 @@ void ABP_Shroudbreaker_OnShip_C::Deactivation_Stage_4()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 3
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 3
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::Deactivation_Stage_3()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 3");
@@ -483,8 +536,10 @@ void ABP_Shroudbreaker_OnShip_C::Deactivation_Stage_3()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 2
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 2
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::Deactivation_Stage_2()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 2");
@@ -499,8 +554,10 @@ void ABP_Shroudbreaker_OnShip_C::Deactivation_Stage_2()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 1
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 1
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Shroudbreaker_OnShip_C::Deactivation_Stage_1()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.Deactivation Stage 1");
@@ -515,10 +572,12 @@ void ABP_Shroudbreaker_OnShip_C::Deactivation_Stage_1()
 }
 
 
-// Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ExecuteUbergraph_BP_Shroudbreaker_OnShip
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ExecuteUbergraph_BP_Shroudbreaker_OnShip
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Shroudbreaker_OnShip_C::ExecuteUbergraph_BP_Shroudbreaker_OnShip(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ExecuteUbergraph_BP_Shroudbreaker_OnShip");

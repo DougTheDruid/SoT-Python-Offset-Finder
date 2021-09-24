@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// DelegateFunction SafeZoneReservationFramework.SafeZoneComponent.SafeZoneIsEmpty__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> DelegateFunction SafeZoneReservationFramework.SafeZoneComponent.SafeZoneIsEmpty__DelegateSignature
+//		Flags  -> (MulticastDelegate, Public, Delegate)
 void USafeZoneComponent::SafeZoneIsEmpty__DelegateSignature()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("DelegateFunction SafeZoneReservationFramework.SafeZoneComponent.SafeZoneIsEmpty__DelegateSignature");
@@ -34,8 +36,10 @@ void USafeZoneComponent::SafeZoneIsEmpty__DelegateSignature()
 }
 
 
-// Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_UpdateCollisionProfile
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03ED31D0
+//		Name   -> Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_UpdateCollisionProfile
+//		Flags  -> (Final, Native, Private)
 void USafeZoneComponent::OnRep_UpdateCollisionProfile()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_UpdateCollisionProfile");
@@ -51,8 +55,10 @@ void USafeZoneComponent::OnRep_UpdateCollisionProfile()
 }
 
 
-// Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_EmptyStateChanged
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03ED31B0
+//		Name   -> Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_EmptyStateChanged
+//		Flags  -> (Final, Native, Private)
 void USafeZoneComponent::OnRep_EmptyStateChanged()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SafeZoneReservationFramework.SafeZoneComponent.OnRep_EmptyStateChanged");
@@ -68,8 +74,10 @@ void USafeZoneComponent::OnRep_EmptyStateChanged()
 }
 
 
-// Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateSafeZone
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03ED3190
+//		Name   -> Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateSafeZone
+//		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 void USafeZoneComponent::DeactivateSafeZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateSafeZone");
@@ -85,8 +93,10 @@ void USafeZoneComponent::DeactivateSafeZone()
 }
 
 
-// Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateCollider
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03ED3170
+//		Name   -> Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateCollider
+//		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 void USafeZoneComponent::DeactivateCollider()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SafeZoneReservationFramework.SafeZoneComponent.DeactivateCollider");
@@ -102,8 +112,10 @@ void USafeZoneComponent::DeactivateCollider()
 }
 
 
-// Function SafeZoneReservationFramework.SafeZoneComponent.ActivateSafeZone
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03ED3150
+//		Name   -> Function SafeZoneReservationFramework.SafeZoneComponent.ActivateSafeZone
+//		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 void USafeZoneComponent::ActivateSafeZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SafeZoneReservationFramework.SafeZoneComponent.ActivateSafeZone");

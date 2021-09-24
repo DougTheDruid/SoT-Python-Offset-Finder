@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -32,43 +32,43 @@ struct ABP_PiratePreview_C_ReceiveBeginPlay_Params
 // Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy_Event
 struct ABP_PiratePreview_C_PreviewBusy_Event_Params
 {
-	struct FPiratePreviewBusyEvent                     Data;                                                      // (Parm)
+	struct FPiratePreviewBusyEvent                     Data;                                                      // 0x0000(0x0001)  (Parm)
 };
 
 // Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady_Event
 struct ABP_PiratePreview_C_PreviewReady_Event_Params
 {
-	struct FPiratePreviewReadyEvent                    Data;                                                      // (Parm)
+	struct FPiratePreviewReadyEvent                    Data;                                                      // 0x0000(0x0098)  (Parm)
 };
 
 // Function BP_PiratePreview.BP_PiratePreview_C.ReceiveEndPlay
 struct ABP_PiratePreview_C_ReceiveEndPlay_Params
 {
-	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_PiratePreview.BP_PiratePreview_C.ExecuteUbergraph_BP_PiratePreview
 struct ABP_PiratePreview_C_ExecuteUbergraph_BP_PiratePreview_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_PiratePreview.BP_PiratePreview_C.PreviewShutdown__DelegateSignature
 struct ABP_PiratePreview_C_PreviewShutdown__DelegateSignature_Params
 {
-	struct FPiratePreviewShutdownEvent                 Data;                                                      // (Parm)
+	struct FPiratePreviewShutdownEvent                 Data;                                                      // 0x0000(0x0001)  (Parm)
 };
 
 // Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady__DelegateSignature
 struct ABP_PiratePreview_C_PreviewReady__DelegateSignature_Params
 {
-	struct FPiratePreviewReadyEvent                    Data;                                                      // (Parm)
+	struct FPiratePreviewReadyEvent                    Data;                                                      // 0x0000(0x0098)  (Parm)
 };
 
 // Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy__DelegateSignature
 struct ABP_PiratePreview_C_PreviewBusy__DelegateSignature_Params
 {
-	struct FPiratePreviewBusyEvent                     Data;                                                      // (Parm)
+	struct FPiratePreviewBusyEvent                     Data;                                                      // 0x0000(0x0001)  (Parm)
 };
 
 }

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -68,7 +68,7 @@ class ULevelSequencePlayer : public UMovieSceneSequencePlayer
 {
 public:
 	class AActor*                                      SpawnablesParent;                                          // 0x0600(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_2W5Q[0x38];                                    // 0x0608(0x0038) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UA0D[0x38];                                    // 0x0608(0x0038) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -111,7 +111,7 @@ class ULevelSequenceBurnInOptions : public UObject
 {
 public:
 	bool                                               bUseBurnIn;                                                // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_EHG0[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ZJLP[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FStringClassReference                       BurnInClass;                                               // 0x0030(0x0010) (Edit, ZeroConstructor)
 	class ULevelSequenceBurnInInitSettings*            Settings;                                                  // 0x0040(0x0008) (Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
@@ -134,9 +134,9 @@ public:
 class ALevelSequenceActor : public AActor
 {
 public:
-	unsigned char                                      UnknownData_U6BA[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ERG4[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	bool                                               bAutoPlay;                                                 // 0x03D8(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_1DZ2[0x7];                                     // 0x03D9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_FD3A[0x7];                                     // 0x03D9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FMovieSceneSequencePlaybackSettings         PlaybackSettings;                                          // 0x03E0(0x0028) (Edit, BlueprintVisible, BlueprintReadOnly)
 	class ULevelSequencePlayer*                        SequencePlayer;                                            // 0x0408(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStringAssetReference                       LevelSequence;                                             // 0x0410(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)

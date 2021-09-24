@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -19,43 +19,62 @@ namespace CG
 // Parameters
 //---------------------------------------------------------------------------
 
+// Function Tales.TaleQuestStep.Signal
+struct UTaleQuestStep_Signal_Params
+{
+};
+
+// Function Tales.TaleQuestMapService.UpdateMerchantMap
+struct UTaleQuestMapService_UpdateMerchantMap_Params
+{
+	struct FName                                       MapId;                                                     // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                Index;                                                     // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTaleQuestDeliverableItem                   Deliverable;                                               // 0x0010(0x0040)  (Parm)
+};
+
+// Function Tales.TaleQuestMapService.AdvanceRiddleMap
+struct UTaleQuestMapService_AdvanceRiddleMap_Params
+{
+	struct FName                                       MapId;                                                     // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
 // Function Tales.TaleQuestCargoRunContractsService.GetContract
 struct UTaleQuestCargoRunContractsService_GetContract_Params
 {
-	struct FGuid                                       Guid;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	class UTaleQuestCargoRunContract*                  ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                       Guid;                                                      // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UTaleQuestCargoRunContract*                  ReturnValue;                                               // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Tales.TaleQuestCargoRunContractsService.AddContract
 struct UTaleQuestCargoRunContractsService_AddContract_Params
 {
-	TArray<class UClass*>                              InItems;                                                   // (Parm, ZeroConstructor, UObjectWrapper)
-	class AActor*                                      InCollectFromNPC;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                      InDeliverToNPC;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                InTimeLimitInMinutes;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	TArray<class UClass*>                              InItems;                                                   // 0x0000(0x0010)  (Parm, ZeroConstructor, UObjectWrapper)
+	class AActor*                                      InCollectFromNPC;                                          // 0x0010(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      InDeliverToNPC;                                            // 0x0018(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                InTimeLimitInMinutes;                                      // 0x0020(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                       ReturnValue;                                               // 0x0024(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function Tales.TaleQuestMerchantContractsService.GetContract
 struct UTaleQuestMerchantContractsService_GetContract_Params
 {
-	struct FGuid                                       Guid;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	class UTaleQuestMerchantContract*                  ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                       Guid;                                                      // 0x0000(0x0010)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UTaleQuestMerchantContract*                  ReturnValue;                                               // 0x0010(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Tales.TaleQuestMerchantContractsService.AddContract
 struct UTaleQuestMerchantContractsService_AddContract_Params
 {
-	TArray<struct FTaleQuestDeliveryRequest>           Requests;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	struct FName                                       InDeliveryDestination;                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                              InTimeLimit;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	TArray<struct FTaleQuestDeliveryRequest>           Requests;                                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FName                                       InDeliveryDestination;                                     // 0x0010(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              InTimeLimit;                                               // 0x0018(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                       ReturnValue;                                               // 0x001C(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.SetDebugVoyageSeed
 struct UTaleQuestSelectorServiceBlueprintFunctionLibrary_SetDebugVoyageSeed_Params
 {
-	int                                                Seed;                                                      // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                Seed;                                                      // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.ResetVoyageDebugSeed
@@ -66,15 +85,15 @@ struct UTaleQuestSelectorServiceBlueprintFunctionLibrary_ResetVoyageDebugSeed_Pa
 // Function Tales.CutsceneResponsesTaleService.TrackResponseCoordinator
 struct UCutsceneResponsesTaleService_TrackResponseCoordinator_Params
 {
-	class UCutsceneResponseCoordinator*                Coordinator;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCutsceneResponseCoordinator*                Coordinator;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Tales.CutsceneResponsesTaleService.StartCutsceneResponseSheet
 struct UCutsceneResponsesTaleService_StartCutsceneResponseSheet_Params
 {
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                      ResponseSheetClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	class UCutsceneResponseSheet*                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      TargetActor;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                      ResponseSheetClass;                                        // 0x0018(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	class UCutsceneResponseSheet*                      ReturnValue;                                               // 0x0020(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Tales.CutsceneResponsesTaleService.ClearAllActiveResponseSheets
@@ -85,29 +104,15 @@ struct UCutsceneResponsesTaleService_ClearAllActiveResponseSheets_Params
 // Function Tales.CutsceneResponsesTaleService.AddResponseSheetRelevantActor
 struct UCutsceneResponsesTaleService_AddResponseSheetRelevantActor_Params
 {
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      Actor;                                                     // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Tales.TaleQuestSelectorService.GetRandomIntegerInRange
 struct UTaleQuestSelectorService_GetRandomIntegerInRange_Params
 {
-	int                                                Minimum;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                Maximum;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function Tales.TaleQuestMapService.UpdateMerchantMap
-struct UTaleQuestMapService_UpdateMerchantMap_Params
-{
-	struct FName                                       MapId;                                                     // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                Index;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTaleQuestDeliverableItem                   Deliverable;                                               // (Parm)
-};
-
-// Function Tales.TaleQuestMapService.AdvanceRiddleMap
-struct UTaleQuestMapService_AdvanceRiddleMap_Params
-{
-	struct FName                                       MapId;                                                     // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                Minimum;                                                   // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                Maximum;                                                   // 0x0004(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                ReturnValue;                                               // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

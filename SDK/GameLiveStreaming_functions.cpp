@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -26,8 +26,10 @@ void FBlueprintLiveStreamInfo::BeforeDelete()
 {
 }
 
-// Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StopBroadcastingGame
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0221E0F0
+//		Name   -> Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StopBroadcastingGame
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 void UGameLiveStreamingFunctionLibrary::STATIC_StopBroadcastingGame()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StopBroadcastingGame");
@@ -43,18 +45,20 @@ void UGameLiveStreamingFunctionLibrary::STATIC_StopBroadcastingGame()
 }
 
 
-// Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartBroadcastingGame
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0221DE60
+//		Name   -> Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartBroadcastingGame
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int                            FrameRate                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          ScreenScaling                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           bEnableWebCam                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int                            DesiredWebCamWidth             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            DesiredWebCamHeight            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           bMirrorWebCamImage             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           bCaptureAudioFromComputer      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           bCaptureAudioFromMicrophone    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           bDrawSimpleWebCamVideo         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                FrameRate                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ScreenScaling                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               bEnableWebCam                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                DesiredWebCamWidth                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                DesiredWebCamHeight                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               bMirrorWebCamImage                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               bCaptureAudioFromComputer                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               bCaptureAudioFromMicrophone                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               bDrawSimpleWebCamVideo                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UGameLiveStreamingFunctionLibrary::STATIC_StartBroadcastingGame(int FrameRate, float ScreenScaling, bool bEnableWebCam, int DesiredWebCamWidth, int DesiredWebCamHeight, bool bMirrorWebCamImage, bool bCaptureAudioFromComputer, bool bCaptureAudioFromMicrophone, bool bDrawSimpleWebCamVideo)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartBroadcastingGame");
@@ -79,10 +83,12 @@ void UGameLiveStreamingFunctionLibrary::STATIC_StartBroadcastingGame(int FrameRa
 }
 
 
-// Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsBroadcastingGame
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0221DD90
+//		Name   -> Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsBroadcastingGame
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UGameLiveStreamingFunctionLibrary::STATIC_IsBroadcastingGame()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsBroadcastingGame");
@@ -112,11 +118,13 @@ void UGameLiveStreamingFunctionLibrary::BeforeDelete()
 
 }
 
-// Function GameLiveStreaming.QueryLiveStreamsCallbackProxy.QueryLiveStreams
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0221DDC0
+//		Name   -> Function GameLiveStreaming.QueryLiveStreamsCallbackProxy.QueryLiveStreams
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 GameName                       (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UQueryLiveStreamsCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     GameName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UQueryLiveStreamsCallbackProxy*              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UQueryLiveStreamsCallbackProxy* UQueryLiveStreamsCallbackProxy::STATIC_QueryLiveStreams(const struct FString& GameName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.QueryLiveStreamsCallbackProxy.QueryLiveStreams");

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -58,11 +58,13 @@ void FTutorialShowTutorialLegendaryTavernStrangerEvent::BeforeDelete()
 {
 }
 
-// Function Tutorial.CompanyTutorialVoyageProgress.IsSameVoyage
-// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03C3F160
+//		Name   -> Function Tutorial.CompanyTutorialVoyageProgress.IsSameVoyage
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FText                   VoyageName                     (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FText                                       VoyageName                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCompanyTutorialVoyageProgress::IsSameVoyage(const struct FText& VoyageName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.CompanyTutorialVoyageProgress.IsSameVoyage");
@@ -81,11 +83,13 @@ bool UCompanyTutorialVoyageProgress::IsSameVoyage(const struct FText& VoyageName
 }
 
 
-// Function Tutorial.CompanyTutorialVoyageProgress.AssignVoyage
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03C3EF00
+//		Name   -> Function Tutorial.CompanyTutorialVoyageProgress.AssignVoyage
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  VoyageProposalDescClass        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class UClass*                  TaleRankDescClass              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UClass*                                      VoyageProposalDescClass                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UClass*                                      TaleRankDescClass                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 void UCompanyTutorialVoyageProgress::AssignVoyage(class UClass* VoyageProposalDescClass, class UClass* TaleRankDescClass)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.CompanyTutorialVoyageProgress.AssignVoyage");
@@ -143,8 +147,10 @@ void UOnboardingStatusInterface::BeforeDelete()
 
 }
 
-// Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnServer
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnServer
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UTutorial2019Component::ReceiveTutorial2019BeginPlayOnServer()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnServer");
@@ -159,8 +165,10 @@ void UTutorial2019Component::ReceiveTutorial2019BeginPlayOnServer()
 }
 
 
-// Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnClient
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnClient
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UTutorial2019Component::ReceiveTutorial2019BeginPlayOnClient()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnClient");
@@ -175,10 +183,12 @@ void UTutorial2019Component::ReceiveTutorial2019BeginPlayOnClient()
 }
 
 
-// Function Tutorial.Tutorial2019Component.OnRep_IsEnabledByServer
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03C3F220
+//		Name   -> Function Tutorial.Tutorial2019Component.OnRep_IsEnabledByServer
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// bool                           OldIsEnabled                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               OldIsEnabled                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UTutorial2019Component::OnRep_IsEnabledByServer(bool OldIsEnabled)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.OnRep_IsEnabledByServer");
@@ -195,8 +205,10 @@ void UTutorial2019Component::OnRep_IsEnabledByServer(bool OldIsEnabled)
 }
 
 
-// Function Tutorial.Tutorial2019Component.ForceDisableComponent_Blueprint
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function Tutorial.Tutorial2019Component.ForceDisableComponent_Blueprint
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UTutorial2019Component::ForceDisableComponent_Blueprint()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.ForceDisableComponent_Blueprint");
@@ -211,8 +223,10 @@ void UTutorial2019Component::ForceDisableComponent_Blueprint()
 }
 
 
-// Function Tutorial.Tutorial2019Component.BeginOnServer
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03C3EFC0
+//		Name   -> Function Tutorial.Tutorial2019Component.BeginOnServer
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UTutorial2019Component::BeginOnServer()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.BeginOnServer");
@@ -254,11 +268,13 @@ void UTutorial2019ContextualDelegatingComponent::BeforeDelete()
 	DELE_PTR_FULL(ContextualTutorialComponent);
 }
 
-// Function Tutorial.Tutorial2019FunctionLibrary.GetNearestOnboardingSpawnPoint
-// (Final, BlueprintAuthorityOnly, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03C3F090
+//		Name   -> Function Tutorial.Tutorial2019FunctionLibrary.GetNearestOnboardingSpawnPoint
+//		Flags  -> (Final, BlueprintAuthorityOnly, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  CharacterToTeleport            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTeleportLocation       ReturnValue                    (Parm, OutParm, ReturnParm, ContainsInstancedReference)
+//		class AActor*                                      CharacterToTeleport                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FTeleportLocation                           ReturnValue                                                (Parm, OutParm, ReturnParm, ContainsInstancedReference)
 struct FTeleportLocation UTutorial2019FunctionLibrary::STATIC_GetNearestOnboardingSpawnPoint(class AActor* CharacterToTeleport)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019FunctionLibrary.GetNearestOnboardingSpawnPoint");
@@ -289,11 +305,13 @@ void UTutorial2019FunctionLibrary::BeforeDelete()
 
 }
 
-// Function Tutorial.TutorialHelpersBlueprintLibrary.FirePromptCompleted
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03C3EFE0
+//		Name   -> Function Tutorial.TutorialHelpersBlueprintLibrary.FirePromptCompleted
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  AccessKey                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      AccessKey                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UTutorialHelpersBlueprintLibrary::STATIC_FirePromptCompleted(class UClass* AccessKey, class UObject* WorldContextObject)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.TutorialHelpersBlueprintLibrary.FirePromptCompleted");
@@ -323,8 +341,10 @@ void UTutorialHelpersBlueprintLibrary::BeforeDelete()
 
 }
 
-// Function Tutorial.TutorialManager.OnRep_SelectedTutorialClass
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03C3F2B0
+//		Name   -> Function Tutorial.TutorialManager.OnRep_SelectedTutorialClass
+//		Flags  -> (Final, Native, Private)
 void UTutorialManager::OnRep_SelectedTutorialClass()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.TutorialManager.OnRep_SelectedTutorialClass");
@@ -388,10 +408,12 @@ void UBeachNPCSpawnFlowStarter::BeforeDelete()
 
 }
 
-// Function Tutorial.CompanyOnboardingStarter.HasPrerequisites
-// (Native, Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x03C3F130
+//		Name   -> Function Tutorial.CompanyOnboardingStarter.HasPrerequisites
+//		Flags  -> (Native, Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCompanyOnboardingStarter::HasPrerequisites()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.CompanyOnboardingStarter.HasPrerequisites");

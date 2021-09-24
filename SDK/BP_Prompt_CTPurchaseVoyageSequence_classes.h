@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -30,7 +30,7 @@ public:
 	TArray<class AOverlapTriggerActor*>                GoldHoarderOverlapActors;                                  // 0x0128(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 	TArray<class AOverlapTriggerActor*>                OutpostOverlapActors;                                      // 0x0138(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 	float                                              OutpostRadiusReduction;                                    // 0x0148(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_ZK2A[0x4];                                     // 0x014C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_IAWN[0x4];                                     // 0x014C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FPrioritisedPromptWithHandle                Prompt_GoToVendors;                                        // 0x0150(0x0068) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FPrioritisedPromptWithHandle                Prompt_GoToGoldhoarders;                                   // 0x01B8(0x0068) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FPrioritisedPromptWithHandle                Prompt_GoToOrderOfSouls;                                   // 0x0220(0x0068) (Edit, BlueprintVisible, DisableEditOnInstance)
@@ -54,7 +54,7 @@ public:
 	bool                                               State_OnShip;                                              // 0x06B4(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               State_IsHidden;                                            // 0x06B5(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               State_IsTutorialForceDisabled;                             // 0x06B6(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_VQIY[0x1];                                     // 0x06B7(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SBY6[0x1];                                     // 0x06B7(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UBP_CT_TutorialProgress_C*                   CompanyTutorialProgress;                                   // 0x06B8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FObjectMessagingHandle                      Handle_CompanyRankPurchased;                               // 0x06C0(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 

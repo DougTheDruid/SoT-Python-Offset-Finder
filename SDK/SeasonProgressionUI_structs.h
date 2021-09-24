@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -54,6 +54,24 @@ enum class SeasonProgressionUI_ESeasonStyleModifiers : uint8_t
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct SeasonProgressionUI.SeasonIconPopupAsset
+// 0x0068
+struct FSeasonIconPopupAsset
+{
+	struct FStringAssetReference                       GlowIcon;                                                  // 0x0000(0x0010) (Edit, ZeroConstructor)
+	struct FStringAssetReference                       Icon;                                                      // 0x0010(0x0010) (Edit, ZeroConstructor)
+	struct FString                                     ToastSfxEventName;                                         // 0x0020(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ToastEventName;                                            // 0x0030(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ToastSwitchName;                                           // 0x0040(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ToastSwitchValue;                                          // 0x0050(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
+	float                                              ToastHoldDuration;                                         // 0x0060(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_BE6Z[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
 // ScriptStruct SeasonProgressionUI.SeasonGoalPopupAsset
 // 0x0080
 struct FSeasonGoalPopupAsset
@@ -67,51 +85,7 @@ struct FSeasonGoalPopupAsset
 	struct FString                                     ToastSwitchName;                                           // 0x0058(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     ToastSwitchValue;                                          // 0x0068(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
 	float                                              ToastHoldDuration;                                         // 0x0078(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_TJ0B[0x4];                                     // 0x007C(0x0004) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct SeasonProgressionUI.SeasonIconPopupAsset
-// 0x0068
-struct FSeasonIconPopupAsset
-{
-	struct FStringAssetReference                       GlowIcon;                                                  // 0x0000(0x0010) (Edit, ZeroConstructor)
-	struct FStringAssetReference                       Icon;                                                      // 0x0010(0x0010) (Edit, ZeroConstructor)
-	struct FString                                     ToastSfxEventName;                                         // 0x0020(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ToastEventName;                                            // 0x0030(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ToastSwitchName;                                           // 0x0040(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ToastSwitchValue;                                          // 0x0050(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
-	float                                              ToastHoldDuration;                                         // 0x0060(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_BP5X[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct SeasonProgressionUI.SeasonProgressionUIEventTypeTelemetryFragment
-// 0x0018
-struct FSeasonProgressionUIEventTypeTelemetryFragment
-{
-	struct FString                                     EventName;                                                 // 0x0000(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	int                                                NumReceivedEvents;                                         // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_D4OM[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct SeasonProgressionUI.SeasonProgressionUITelemetryFragment
-// 0x0018
-struct FSeasonProgressionUITelemetryFragment
-{
-	TArray<struct FSeasonProgressionUIEventTypeTelemetryFragment> ReceivedEventsData;                                        // 0x0000(0x0010) (ZeroConstructor)
-	int                                                TotalNumReceivedEvents;                                    // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_R3ZV[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B92V[0x4];                                     // 0x007C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -123,7 +97,7 @@ struct FSeasonProgressionUITelemetryFragment
 struct FNavigationDesc
 {
 	TEnumAsByte<SeasonProgressionUI_ENavigationAction> Action;                                                    // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_45YJ[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_M65H[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGuid                                       Id;                                                        // 0x0004(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	void AfterRead();
@@ -136,8 +110,34 @@ struct FNavigationDesc
 struct FEnableMoreButtonEvent
 {
 	TEnumAsByte<SeasonProgressionUI_EMoreButtonSource> MoreButtonSource;                                          // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_I520[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_85CL[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FNavigationDesc                             Navigation;                                                // 0x0004(0x0014)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct SeasonProgressionUI.SeasonProgressionUIEventTypeTelemetryFragment
+// 0x0018
+struct FSeasonProgressionUIEventTypeTelemetryFragment
+{
+	struct FString                                     EventName;                                                 // 0x0000(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	int                                                NumReceivedEvents;                                         // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_A8OY[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct SeasonProgressionUI.SeasonProgressionUITelemetryFragment
+// 0x0018
+struct FSeasonProgressionUITelemetryFragment
+{
+	TArray<struct FSeasonProgressionUIEventTypeTelemetryFragment> ReceivedEventsData;                                        // 0x0000(0x0010) (ZeroConstructor)
+	int                                                TotalNumReceivedEvents;                                    // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_1FIL[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -155,7 +155,7 @@ struct FSeasonNotificationContent
 	struct FString                                     SwitchName;                                                // 0x0040(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     SwitchValue;                                               // 0x0050(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	float                                              ToastHoldDuration;                                         // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_HZ9B[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ILDG[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -171,7 +171,7 @@ struct FDeedProgressDesc
 	struct FNavigationDesc                             NavigationDesc;                                            // 0x0020(0x0014)
 	int                                                ProgressValue;                                             // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                Threshold;                                                 // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_3IN5[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_N3HT[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGenericPopupAudioDescriptor                Audio;                                                     // 0x0040(0x0040)
 
 	void AfterRead();
@@ -192,12 +192,23 @@ struct FSeasonsChatNotification
 
 };
 
+// ScriptStruct SeasonProgressionUI.SeasonsDataRefreshEvent
+// 0x0001
+struct FSeasonsDataRefreshEvent
+{
+	unsigned char                                      UnknownData_YJ2L[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
 // ScriptStruct SeasonProgressionUI.OpenSeasonsMenuEvent
 // 0x0014
 struct FOpenSeasonsMenuEvent
 {
 	TEnumAsByte<SeasonProgressionUI_ENavigationAction> NavigationAction;                                          // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_96O1[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ZB35[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGuid                                       Id;                                                        // 0x0004(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	void AfterRead();
@@ -261,7 +272,7 @@ struct FSeasonsPopupEvent
 	int                                                Rank;                                                      // 0x0080(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FNavigationDesc                             NavigationDesc;                                            // 0x0084(0x0014)
 	float                                              HoldDuration;                                              // 0x0098(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_6ZP7[0x4];                                     // 0x009C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6ZWV[0x4];                                     // 0x009C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

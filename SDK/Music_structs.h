@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -37,7 +37,7 @@ enum class Music_EAISpawnerMusicZoneState : uint8_t
 // 0x0010
 struct FMusicZoneDestroyedEvent
 {
-	unsigned char                                      UnknownData_63ZF[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_VYSD[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -48,7 +48,7 @@ struct FMusicZoneDestroyedEvent
 // 0x0010
 struct FMusicZoneSpawnedEvent
 {
-	unsigned char                                      UnknownData_441E[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IXAF[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

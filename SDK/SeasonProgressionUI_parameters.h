@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -27,7 +27,7 @@ struct USeasonProgressionUIComponent_OnHUDDestroyed_Params
 // Function SeasonProgressionUI.SeasonProgressionUICompositeInputHandler.OnMenuButtonPressed
 struct USeasonProgressionUICompositeInputHandler_OnMenuButtonPressed_Params
 {
-	TEnumAsByte<AthenaInput_EInputHandlerResult>       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<AthenaInput_EInputHandlerResult>       ReturnValue;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

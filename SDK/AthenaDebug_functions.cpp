@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -94,8 +94,10 @@ void UDrawDebugServiceInterface::BeforeDelete()
 
 }
 
-// Function AthenaDebug.DrawDebugService.OnRep_PersistentShapeChanged
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x032A7FA0
+//		Name   -> Function AthenaDebug.DrawDebugService.OnRep_PersistentShapeChanged
+//		Flags  -> (Final, Native, Private)
 void ADrawDebugService::OnRep_PersistentShapeChanged()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaDebug.DrawDebugService.OnRep_PersistentShapeChanged");
@@ -111,8 +113,10 @@ void ADrawDebugService::OnRep_PersistentShapeChanged()
 }
 
 
-// Function AthenaDebug.DrawDebugService.OnRep_IsDrawDebugActiveChanged
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x032A7F80
+//		Name   -> Function AthenaDebug.DrawDebugService.OnRep_IsDrawDebugActiveChanged
+//		Flags  -> (Final, Native, Private)
 void ADrawDebugService::OnRep_IsDrawDebugActiveChanged()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaDebug.DrawDebugService.OnRep_IsDrawDebugActiveChanged");
@@ -128,10 +132,12 @@ void ADrawDebugService::OnRep_IsDrawDebugActiveChanged()
 }
 
 
-// Function AthenaDebug.DrawDebugService.Multicast_ClearGroup
-// (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+// Function:
+//		Offset -> 0x032A7F00
+//		Name   -> Function AthenaDebug.DrawDebugService.Multicast_ClearGroup
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 // Parameters:
-// struct FName                   GroupName                      (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       GroupName                                                  (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ADrawDebugService::Multicast_ClearGroup(const struct FName& GroupName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaDebug.DrawDebugService.Multicast_ClearGroup");
@@ -148,10 +154,12 @@ void ADrawDebugService::Multicast_ClearGroup(const struct FName& GroupName)
 }
 
 
-// Function AthenaDebug.DrawDebugService.Multicast_AddStrings
-// (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+// Function:
+//		Offset -> 0x032A7E20
+//		Name   -> Function AthenaDebug.DrawDebugService.Multicast_AddStrings
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 // Parameters:
-// TArray<struct FDrawDebugItemString> Strings                        (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FDrawDebugItemString>                Strings                                                    (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 void ADrawDebugService::Multicast_AddStrings(TArray<struct FDrawDebugItemString> Strings)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaDebug.DrawDebugService.Multicast_AddStrings");
@@ -168,10 +176,12 @@ void ADrawDebugService::Multicast_AddStrings(TArray<struct FDrawDebugItemString>
 }
 
 
-// Function AthenaDebug.DrawDebugService.Multicast_AddSpheres
-// (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+// Function:
+//		Offset -> 0x032A7D80
+//		Name   -> Function AthenaDebug.DrawDebugService.Multicast_AddSpheres
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 // Parameters:
-// TArray<struct FDrawDebugItemSphere> Spheres                        (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FDrawDebugItemSphere>                Spheres                                                    (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 void ADrawDebugService::Multicast_AddSpheres(TArray<struct FDrawDebugItemSphere> Spheres)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaDebug.DrawDebugService.Multicast_AddSpheres");
@@ -188,10 +198,12 @@ void ADrawDebugService::Multicast_AddSpheres(TArray<struct FDrawDebugItemSphere>
 }
 
 
-// Function AthenaDebug.DrawDebugService.Multicast_AddSectors
-// (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+// Function:
+//		Offset -> 0x032A7CE0
+//		Name   -> Function AthenaDebug.DrawDebugService.Multicast_AddSectors
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 // Parameters:
-// TArray<struct FDrawDebugItemSector> Sectors                        (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FDrawDebugItemSector>                Sectors                                                    (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 void ADrawDebugService::Multicast_AddSectors(TArray<struct FDrawDebugItemSector> Sectors)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaDebug.DrawDebugService.Multicast_AddSectors");
@@ -208,10 +220,12 @@ void ADrawDebugService::Multicast_AddSectors(TArray<struct FDrawDebugItemSector>
 }
 
 
-// Function AthenaDebug.DrawDebugService.Multicast_AddLines
-// (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+// Function:
+//		Offset -> 0x032A7C40
+//		Name   -> Function AthenaDebug.DrawDebugService.Multicast_AddLines
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 // Parameters:
-// TArray<struct FDrawDebugItemLine> Lines                          (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FDrawDebugItemLine>                  Lines                                                      (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 void ADrawDebugService::Multicast_AddLines(TArray<struct FDrawDebugItemLine> Lines)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaDebug.DrawDebugService.Multicast_AddLines");
@@ -228,10 +242,12 @@ void ADrawDebugService::Multicast_AddLines(TArray<struct FDrawDebugItemLine> Lin
 }
 
 
-// Function AthenaDebug.DrawDebugService.Multicast_AddCapsules
-// (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+// Function:
+//		Offset -> 0x032A7BA0
+//		Name   -> Function AthenaDebug.DrawDebugService.Multicast_AddCapsules
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 // Parameters:
-// TArray<struct FDrawDebugItemCapsule> Capsules                       (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FDrawDebugItemCapsule>               Capsules                                                   (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 void ADrawDebugService::Multicast_AddCapsules(TArray<struct FDrawDebugItemCapsule> Capsules)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaDebug.DrawDebugService.Multicast_AddCapsules");
@@ -248,10 +264,12 @@ void ADrawDebugService::Multicast_AddCapsules(TArray<struct FDrawDebugItemCapsul
 }
 
 
-// Function AthenaDebug.DrawDebugService.Multicast_AddBoxes
-// (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+// Function:
+//		Offset -> 0x032A7B00
+//		Name   -> Function AthenaDebug.DrawDebugService.Multicast_AddBoxes
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 // Parameters:
-// TArray<struct FDrawDebugItemBox> Boxes                          (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FDrawDebugItemBox>                   Boxes                                                      (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 void ADrawDebugService::Multicast_AddBoxes(TArray<struct FDrawDebugItemBox> Boxes)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaDebug.DrawDebugService.Multicast_AddBoxes");

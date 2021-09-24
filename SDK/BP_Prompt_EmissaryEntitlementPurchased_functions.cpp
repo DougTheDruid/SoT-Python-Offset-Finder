@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.OnEmissaryEntitlementPurchasedFunc
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.OnEmissaryEntitlementPurchasedFunc
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEmissaryEntitlementPurchasedEvent NewParam                       (Parm)
+//		struct FEmissaryEntitlementPurchasedEvent          NewParam                                                   (Parm)
 void UBP_Prompt_EmissaryEntitlementPurchased_C::OnEmissaryEntitlementPurchasedFunc(const struct FEmissaryEntitlementPurchasedEvent& NewParam)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.OnEmissaryEntitlementPurchasedFunc");
@@ -37,10 +39,12 @@ void UBP_Prompt_EmissaryEntitlementPurchased_C::OnEmissaryEntitlementPurchasedFu
 }
 
 
-// Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.EmissaryEntitlementPurchased
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.EmissaryEntitlementPurchased
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEmissaryEntitlementPurchasedEvent NewParam                       (Parm)
+//		struct FEmissaryEntitlementPurchasedEvent          NewParam                                                   (Parm)
 void UBP_Prompt_EmissaryEntitlementPurchased_C::EmissaryEntitlementPurchased(const struct FEmissaryEntitlementPurchasedEvent& NewParam)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.EmissaryEntitlementPurchased");
@@ -56,8 +60,10 @@ void UBP_Prompt_EmissaryEntitlementPurchased_C::EmissaryEntitlementPurchased(con
 }
 
 
-// Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.Evaluate
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.Evaluate
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_EmissaryEntitlementPurchased_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.Evaluate");
@@ -72,8 +78,10 @@ void UBP_Prompt_EmissaryEntitlementPurchased_C::Evaluate()
 }
 
 
-// Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.RegisterOtherEvents_Implementable
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.RegisterOtherEvents_Implementable
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_EmissaryEntitlementPurchased_C::RegisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.RegisterOtherEvents_Implementable");
@@ -88,8 +96,10 @@ void UBP_Prompt_EmissaryEntitlementPurchased_C::RegisterOtherEvents_Implementabl
 }
 
 
-// Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.UnregisterOtherEvents_Implementable
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.UnregisterOtherEvents_Implementable
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_EmissaryEntitlementPurchased_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.UnregisterOtherEvents_Implementable");
@@ -104,10 +114,12 @@ void UBP_Prompt_EmissaryEntitlementPurchased_C::UnregisterOtherEvents_Implementa
 }
 
 
-// Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.ExecuteUbergraph_BP_Prompt_EmissaryEntitlementPurchased
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.ExecuteUbergraph_BP_Prompt_EmissaryEntitlementPurchased
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Prompt_EmissaryEntitlementPurchased_C::ExecuteUbergraph_BP_Prompt_EmissaryEntitlementPurchased(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.ExecuteUbergraph_BP_Prompt_EmissaryEntitlementPurchased");

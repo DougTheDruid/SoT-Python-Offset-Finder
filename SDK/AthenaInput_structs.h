@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -38,7 +38,7 @@ struct FNotificationInputDisplayName
 {
 	class UClass*                                      InputID;                                                   // 0x0000(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	struct FText                                       Name;                                                      // 0x0008(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_OPTB[0x20];                                    // 0x0008(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_UNDD[0x20];                                    // 0x0008(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 
 	void AfterRead();
 	void BeforeDelete();
@@ -50,7 +50,7 @@ struct FNotificationInputDisplayName
 struct FIdleTimeTracker
 {
 	struct FTimespan                                   InactivityThreshold;                                       // 0x0000(0x0008) (Edit, ZeroConstructor)
-	unsigned char                                      UnknownData_1FJM[0x30];                                    // 0x0008(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QE0D[0x30];                                    // 0x0008(0x0030) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -62,7 +62,7 @@ struct FIdleTimeTracker
 struct FPrioritizedCompositeInputHandler
 {
 	class UCompositeInputHandler*                      InputHandler;                                              // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_PXWN[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QNAY[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -74,7 +74,7 @@ struct FPrioritizedCompositeInputHandler
 struct FCompositeInputDelegator
 {
 	TArray<struct FPrioritizedCompositeInputHandler>   PrioritizedCompositeInputHandlers;                         // 0x0000(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData_VFY6[0x50];                                    // 0x0010(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_2NT8[0x50];                                    // 0x0010(0x0050) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

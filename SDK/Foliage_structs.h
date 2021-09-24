@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -74,7 +74,7 @@ struct FFoliageTypeObject
 	class UObject*                                     FoliageTypeObject;                                         // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFoliageType_InstancedStaticMesh*            TypeInstance;                                              // 0x0008(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               bIsAsset;                                                  // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_IIDB[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_3TQB[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      Type;                                                      // 0x0018(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -87,14 +87,14 @@ struct FFoliageTypeObject
 struct FProceduralFoliageInstance
 {
 	struct FVector                                     Location;                                                  // 0x0000(0x000C) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_OLDB[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_RD7V[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FQuat                                       Rotation;                                                  // 0x0010(0x0010) (IsPlainOldData, NoDestructor)
 	struct FVector                                     Normal;                                                    // 0x0020(0x000C) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                              Age;                                                       // 0x002C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              Scale;                                                     // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_WXZP[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_71ZQ[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UFoliageType_InstancedStaticMesh*            Type;                                                      // 0x0038(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_2M7C[0x20];                                    // 0x0040(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_917I[0x20];                                    // 0x0040(0x0020) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -105,7 +105,7 @@ struct FProceduralFoliageInstance
 // 0x0001
 struct FConsoleCommands
 {
-	unsigned char                                      UnknownData_9YYQ[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_P8Z1[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

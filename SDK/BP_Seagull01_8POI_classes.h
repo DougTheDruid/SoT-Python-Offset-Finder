@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Seagull01_8POI.BP_Seagull01_8POI_C
-// 0x0050 (FullSize[0x0478] - InheritedSize[0x0428])
+// 0x0058 (FullSize[0x0480] - InheritedSize[0x0428])
 class ABP_Seagull01_8POI_C : public ASeagulls
 {
 public:
@@ -32,9 +32,10 @@ public:
 	class UMaterialInterface*                          seagulls_MI;                                               // 0x0450(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UMaterialInstanceDynamic*                    seagulls_MT;                                               // 0x0458(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                              FadeTime;                                                  // 0x0460(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_8IR0[0x4];                                     // 0x0464(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_TWSE[0x4];                                     // 0x0464(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UMaterialInterface*                          seagulls_MI_LOD;                                           // 0x0468(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UMaterialInstanceDynamic*                    seagulls_MT_LOD;                                           // 0x0470(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UWwiseEvent*                                 WwiseEvent;                                                // 0x0478(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 
 	static UClass* StaticClass()

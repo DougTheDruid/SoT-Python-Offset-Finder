@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UMigrationControlChannel : public UChannel
 {
 public:
-	unsigned char                                      UnknownData_CUI2[0x48];                                    // 0x0068(0x0048) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Y6VT[0x48];                                    // 0x0068(0x0048) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -227,7 +227,7 @@ class AServerMigrationSerialisationDetailsTestsActorWithNetActorPtr : public AAc
 {
 public:
 	struct FNetActorPtr                                ActorPtr;                                                  // 0x03D0(0x0014)
-	unsigned char                                      UnknownData_75DP[0x4];                                     // 0x03E4(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3T4K[0x4];                                     // 0x03E4(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -333,7 +333,7 @@ public:
 class AServerMigrationSerialisationDetailsTestsMigrationActorCallsOrderingTestActor : public AActor
 {
 public:
-	unsigned char                                      UnknownData_TQQP[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UDAC[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -396,7 +396,7 @@ class AServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor : p
 {
 public:
 	struct FServerMigrationCustomMigrationSerialisationStruct TestStruct;                                                // 0x03D0(0x0004)
-	unsigned char                                      UnknownData_UT47[0x4];                                     // 0x03D4(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_TZBZ[0x4];                                     // 0x03D4(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -439,7 +439,7 @@ class AServerMigrationSerialisationDetailsTestsMigrationReferenceActor : public 
 {
 public:
 	class AActor*                                      ActorReferenceWithMigrationMarkup;                         // 0x03D0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_1SEO[0x8];                                     // 0x03D8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RS8B[0x8];                                     // 0x03D8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -462,10 +462,10 @@ class UServerMigrationSerialisationDetailsTestsPropertyMarkup : public UObject
 public:
 	int                                                Int32NoMarkup;                                             // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               BoolWithMigrationMarkup;                                   // 0x002C(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_91TI[0x3];                                     // 0x002D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_BIEU[0x3];                                     // 0x002D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     StringWithSaveGameMarkup;                                  // 0x0030(0x0010) (ZeroConstructor, SaveGame, HasGetValueTypeHash)
 	float                                              FloatWithMigrationAndReplicationMarkup;                    // 0x0040(0x0004) (Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_1TEV[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ODHF[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -508,7 +508,7 @@ class UServerMigrationSerialisationDetailsTestsUStructProperty : public UObject
 {
 public:
 	struct FServerMigrationSerialisationDetailsTestsUStruct SubStructWithMigrationMarkup;                              // 0x0028(0x000C)
-	unsigned char                                      UnknownData_VTYZ[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EOXE[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -530,12 +530,12 @@ class UServerMigrationSettings : public UObject
 {
 public:
 	int                                                MaxSimultaneousMigrations;                                 // 0x0028(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_TEK8[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_BRPR[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     TransportImplementation;                                   // 0x0030(0x0010) (Edit, ZeroConstructor, Config, HasGetValueTypeHash)
 	int                                                ServerDefaultListenPort;                                   // 0x0040(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                ServerListenPortRangeSize;                                 // 0x0044(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                AutomationServerDefaultListenPort;                         // 0x0048(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_H76K[0x4];                                     // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9PCD[0x4];                                     // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     InstanceImplementation;                                    // 0x0050(0x0010) (Edit, ZeroConstructor, Config, HasGetValueTypeHash)
 	float                                              MigrationConnectionTimeoutSeconds;                         // 0x0060(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              WaitForClientActorRemappingTimeoutLength;                  // 0x0064(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

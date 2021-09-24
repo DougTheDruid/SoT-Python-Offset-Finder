@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function Describables.DescribableComponent.SetTooltipActive
-// (Final, RequiredAPI, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x012EC740
+//		Name   -> Function Describables.DescribableComponent.SetTooltipActive
+//		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           IsActive                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               IsActive                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UDescribableComponent::SetTooltipActive(bool IsActive)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Describables.DescribableComponent.SetTooltipActive");
@@ -38,8 +40,10 @@ void UDescribableComponent::SetTooltipActive(bool IsActive)
 }
 
 
-// Function Describables.DescribableComponent.OnRep_TooltipActive
-// (Final, RequiredAPI, Native, Private)
+// Function:
+//		Offset -> 0x012EC720
+//		Name   -> Function Describables.DescribableComponent.OnRep_TooltipActive
+//		Flags  -> (Final, RequiredAPI, Native, Private)
 void UDescribableComponent::OnRep_TooltipActive()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Describables.DescribableComponent.OnRep_TooltipActive");

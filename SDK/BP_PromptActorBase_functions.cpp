@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializePrompt
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializePrompt
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UBP_PromptCoordinator_Base_C* PromptCoordinator              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UBP_PromptCoordinator_Base_C*                PromptCoordinator                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActorBase_C::UninitializePrompt(class UBP_PromptCoordinator_Base_C* PromptCoordinator)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializePrompt");
@@ -37,8 +39,11 @@ void ABP_PromptActorBase_C::UninitializePrompt(class UBP_PromptCoordinator_Base_
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializeAllPrompts
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializeAllPrompts
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_PromptActorBase_C::UninitializeAllPrompts()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializeAllPrompts");
@@ -53,10 +58,12 @@ void ABP_PromptActorBase_C::UninitializeAllPrompts()
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.CheckAllPromptsComplete
-// (Private, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.CheckAllPromptsComplete
+//		Flags  -> (Private, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                           AllCompleted                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               AllCompleted                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActorBase_C::CheckAllPromptsComplete(bool* AllCompleted)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.CheckAllPromptsComplete");
@@ -74,8 +81,10 @@ void ABP_PromptActorBase_C::CheckAllPromptsComplete(bool* AllCompleted)
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.Complete
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.Complete
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActorBase_C::Complete()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.Complete");
@@ -90,10 +99,12 @@ void ABP_PromptActorBase_C::Complete()
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.GetMyClass
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.GetMyClass
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UClass*                  Class                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UClass*                                      Class                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActorBase_C::GetMyClass(class UClass** Class)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.GetMyClass");
@@ -111,10 +122,12 @@ void ABP_PromptActorBase_C::GetMyClass(class UClass** Class)
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.GetAthenaPlayerController
-// (Protected, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.GetAthenaPlayerController
+//		Flags  -> (Protected, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AAthenaPlayerController* AthenaPlayerController         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AAthenaPlayerController*                     AthenaPlayerController                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActorBase_C::GetAthenaPlayerController(class AAthenaPlayerController** AthenaPlayerController)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.GetAthenaPlayerController");
@@ -132,8 +145,10 @@ void ABP_PromptActorBase_C::GetAthenaPlayerController(class AAthenaPlayerControl
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActorBase_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.UserConstructionScript");
@@ -148,10 +163,12 @@ void ABP_PromptActorBase_C::UserConstructionScript()
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.Add Prompt Coordinator
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.Add Prompt Coordinator
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UBP_PromptCoordinator_Base_C* Prompt_Coordinator             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UBP_PromptCoordinator_Base_C*                Prompt_Coordinator                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActorBase_C::Add_Prompt_Coordinator(class UBP_PromptCoordinator_Base_C* Prompt_Coordinator)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.Add Prompt Coordinator");
@@ -167,8 +184,10 @@ void ABP_PromptActorBase_C::Add_Prompt_Coordinator(class UBP_PromptCoordinator_B
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.On Prompt Complete
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.On Prompt Complete
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_PromptActorBase_C::On_Prompt_Complete()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.On Prompt Complete");
@@ -183,10 +202,12 @@ void ABP_PromptActorBase_C::On_Prompt_Complete()
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.ReceiveEndPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.ReceiveEndPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<Engine_EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActorBase_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.ReceiveEndPlay");
@@ -202,10 +223,12 @@ void ABP_PromptActorBase_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> En
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.ExecuteUbergraph_BP_PromptActorBase
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.ExecuteUbergraph_BP_PromptActorBase
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActorBase_C::ExecuteUbergraph_BP_PromptActorBase(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.ExecuteUbergraph_BP_PromptActorBase");
@@ -221,8 +244,10 @@ void ABP_PromptActorBase_C::ExecuteUbergraph_BP_PromptActorBase(int EntryPoint)
 }
 
 
-// Function BP_PromptActorBase.BP_PromptActorBase_C.OnComplete__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.OnComplete__DelegateSignature
+//		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActorBase_C::OnComplete__DelegateSignature()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.OnComplete__DelegateSignature");

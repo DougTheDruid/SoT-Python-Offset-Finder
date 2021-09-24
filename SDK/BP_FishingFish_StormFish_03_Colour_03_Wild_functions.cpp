@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_FishingFish_StormFish_03_Colour_03_Wild.BP_FishingFish_StormFish_03_Colour_03_Wild_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_FishingFish_StormFish_03_Colour_03_Wild.BP_FishingFish_StormFish_03_Colour_03_Wild_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_FishingFish_StormFish_03_Colour_03_Wild_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FishingFish_StormFish_03_Colour_03_Wild.BP_FishingFish_StormFish_03_Colour_03_Wild_C.UserConstructionScript");

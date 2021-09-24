@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -27,13 +27,13 @@ struct UFlammableComponent_OnRep_OnFire_Params
 // Function Fire.FlammableComponent.Multicast_NotifyExtinguished_RPC
 struct UFlammableComponent_Multicast_NotifyExtinguished_RPC_Params
 {
-	struct FVector                                     InExtinguishLocationWS;                                    // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+	struct FVector                                     InExtinguishLocationWS;                                    // 0x0000(0x000C)  (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 };
 
 // Function Fire.FlammableComponent.IsOnFire
 struct UFlammableComponent_IsOnFire_Params
 {
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	bool                                               ReturnValue;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function Fire.FlammableComponent.IncrementFireSource
@@ -59,7 +59,7 @@ struct UFlammableInterface_DecrementFireSource_Params
 // Function Fire.FirePropagationInterface.SetAllCellsState
 struct UFirePropagationInterface_SetAllCellsState_Params
 {
-	TEnumAsByte<Fire_EFireCellState>                   State;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<Fire_EFireCellState>                   State;                                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Fire.ShipFirePropagationComponent.OnRep_CellData

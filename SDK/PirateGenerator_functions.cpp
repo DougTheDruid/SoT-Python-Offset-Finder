@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -338,11 +338,13 @@ void FClothingItem::BeforeDelete()
 {
 }
 
-// Function PirateGenerator.AnimationSwitchDataAsset.GetAnimSetIdForDesc
-// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01471440
+//		Name   -> Function PirateGenerator.AnimationSwitchDataAsset.GetAnimSetIdForDesc
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FPirateDescription      Desc                           (ConstParm, Parm, OutParm, ReferenceParm)
-// class UClass*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		struct FPirateDescription                          Desc                                                       (ConstParm, Parm, OutParm, ReferenceParm)
+//		class UClass*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 class UClass* UAnimationSwitchDataAsset::GetAnimSetIdForDesc(const struct FPirateDescription& Desc)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.AnimationSwitchDataAsset.GetAnimSetIdForDesc");
@@ -373,11 +375,13 @@ void UAnimationSwitchDataAsset::BeforeDelete()
 
 }
 
-// Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMeshAsync
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x0146FD50
+//		Name   -> Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMeshAsync
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UCharacterMeshBakeSpecification* CharacterMeshSpecification     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FScriptDelegate         AsyncResult                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+//		class UCharacterMeshBakeSpecification*             CharacterMeshSpecification                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FScriptDelegate                             AsyncResult                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 void UCharacterMeshBakeFunctionLibrary::STATIC_BakeCharacterMeshAsync(class UCharacterMeshBakeSpecification* CharacterMeshSpecification, const struct FScriptDelegate& AsyncResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMeshAsync");
@@ -395,11 +399,13 @@ void UCharacterMeshBakeFunctionLibrary::STATIC_BakeCharacterMeshAsync(class UCha
 }
 
 
-// Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMesh
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0146FCD0
+//		Name   -> Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMesh
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCharacterMeshBakeSpecification* CharacterMeshSpecification     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletalMesh*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCharacterMeshBakeSpecification*             CharacterMeshSpecification                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USkeletalMesh*                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class USkeletalMesh* UCharacterMeshBakeFunctionLibrary::STATIC_BakeCharacterMesh(class UCharacterMeshBakeSpecification* CharacterMeshSpecification)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMesh");
@@ -418,10 +424,12 @@ class USkeletalMesh* UCharacterMeshBakeFunctionLibrary::STATIC_BakeCharacterMesh
 }
 
 
-// DelegateFunction PirateGenerator.CharacterMeshBakeFunctionLibrary.AsyncBakeResultDynamic__DelegateSignature
-// (Public, Delegate)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> DelegateFunction PirateGenerator.CharacterMeshBakeFunctionLibrary.AsyncBakeResultDynamic__DelegateSignature
+//		Flags  -> (Public, Delegate)
 // Parameters:
-// class USkeletalMesh*           Mesh                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USkeletalMesh*                               Mesh                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCharacterMeshBakeFunctionLibrary::AsyncBakeResultDynamic__DelegateSignature(class USkeletalMesh* Mesh)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("DelegateFunction PirateGenerator.CharacterMeshBakeFunctionLibrary.AsyncBakeResultDynamic__DelegateSignature");
@@ -437,11 +445,13 @@ void UCharacterMeshBakeFunctionLibrary::AsyncBakeResultDynamic__DelegateSignatur
 }
 
 
-// Function PirateGenerator.CharacterMeshBakeFunctionLibrary.AppendCharacterBlendShapes
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x0146FB30
+//		Name   -> Function PirateGenerator.CharacterMeshBakeFunctionLibrary.AppendCharacterBlendShapes
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UCharacterMeshBakeSpecification* CharacterMeshSpecification     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FIPGBlendShape>  BlendShapes                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class UCharacterMeshBakeSpecification*             CharacterMeshSpecification                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FIPGBlendShape>                      BlendShapes                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UCharacterMeshBakeFunctionLibrary::STATIC_AppendCharacterBlendShapes(class UCharacterMeshBakeSpecification* CharacterMeshSpecification, TArray<struct FIPGBlendShape> BlendShapes)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeFunctionLibrary.AppendCharacterBlendShapes");
@@ -501,10 +511,12 @@ void UCharacterMeshBakeSpecification::BeforeDelete()
 	DELE_PTR_FULL(SourceSkeletons);
 }
 
-// Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.MakeCharacterMeshSpecification
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01472360
+//		Name   -> Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.MakeCharacterMeshSpecification
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCharacterMeshBakeSpecification* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCharacterMeshBakeSpecification*             ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UCharacterMeshBakeSpecification* UCharacterMeshBakeTestFunctionLibrary::STATIC_MakeCharacterMeshSpecification()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.MakeCharacterMeshSpecification");
@@ -522,14 +534,16 @@ class UCharacterMeshBakeSpecification* UCharacterMeshBakeTestFunctionLibrary::ST
 }
 
 
-// Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BlendMeshWithMeshPatchAssets
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01470060
+//		Name   -> Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BlendMeshWithMeshPatchAssets
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class USkeletalMesh*           BaseMesh                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          BaseMeshWeight                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMeshPatchAsset*> MeshPatchAssets                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<float>                  MeshPatchAssetWeights          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class USkeletalMesh*           TargetMesh                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USkeletalMesh*                               BaseMesh                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              BaseMeshWeight                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<class UMeshPatchAsset*>                     MeshPatchAssets                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<float>                                      MeshPatchAssetWeights                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class USkeletalMesh*                               TargetMesh                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCharacterMeshBakeTestFunctionLibrary::STATIC_BlendMeshWithMeshPatchAssets(class USkeletalMesh* BaseMesh, float BaseMeshWeight, TArray<class UMeshPatchAsset*> MeshPatchAssets, TArray<float> MeshPatchAssetWeights, class USkeletalMesh** TargetMesh)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BlendMeshWithMeshPatchAssets");
@@ -552,11 +566,13 @@ void UCharacterMeshBakeTestFunctionLibrary::STATIC_BlendMeshWithMeshPatchAssets(
 }
 
 
-// Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BakeCharacterMeshFromClassDefault
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0146FE40
+//		Name   -> Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BakeCharacterMeshFromClassDefault
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  CharacterMeshBakeSpecificationClass (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class USkeletalMesh*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      CharacterMeshBakeSpecificationClass                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class USkeletalMesh*                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class USkeletalMesh* UCharacterMeshBakeTestFunctionLibrary::STATIC_BakeCharacterMeshFromClassDefault(class UClass* CharacterMeshBakeSpecificationClass)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BakeCharacterMeshFromClassDefault");
@@ -575,12 +591,14 @@ class USkeletalMesh* UCharacterMeshBakeTestFunctionLibrary::STATIC_BakeCharacter
 }
 
 
-// Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.AreMeshesEquivalentByMeshPatchCriteria
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0146FC10
+//		Name   -> Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.AreMeshesEquivalentByMeshPatchCriteria
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class USkeletalMesh*           MeshA                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletalMesh*           MeshB                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class USkeletalMesh*                               MeshA                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USkeletalMesh*                               MeshB                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCharacterMeshBakeTestFunctionLibrary::STATIC_AreMeshesEquivalentByMeshPatchCriteria(class USkeletalMesh* MeshA, class USkeletalMesh* MeshB)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.AreMeshesEquivalentByMeshPatchCriteria");
@@ -624,12 +642,14 @@ void UColorTexture::BeforeDelete()
 
 }
 
-// Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetPathFromMeshPathAndTypeName
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471920
+//		Name   -> Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetPathFromMeshPathAndTypeName
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 MeshPath                       (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FString                 TypeName                       (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+//		struct FString                                     MeshPath                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     TypeName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 struct FString UFileAccessFunctionLibrary::STATIC_GetMeshPatchAssetPathFromMeshPathAndTypeName(const struct FString& MeshPath, const struct FString& TypeName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetPathFromMeshPathAndTypeName");
@@ -649,12 +669,14 @@ struct FString UFileAccessFunctionLibrary::STATIC_GetMeshPatchAssetPathFromMeshP
 }
 
 
-// Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetForMeshFromTypeName
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471840
+//		Name   -> Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetForMeshFromTypeName
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class USkeletalMesh*           Mesh                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 TypeName                       (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UMeshPatchAsset*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USkeletalMesh*                               Mesh                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     TypeName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UMeshPatchAsset*                             ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UMeshPatchAsset* UFileAccessFunctionLibrary::STATIC_GetMeshPatchAssetForMeshFromTypeName(class USkeletalMesh* Mesh, const struct FString& TypeName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetForMeshFromTypeName");
@@ -698,14 +720,16 @@ void UMaterialReferencesDataAsset::BeforeDelete()
 
 }
 
-// Function PirateGenerator.PirateBodyShapeFunctionLibrary.GetHighestWeighted
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471620
+//		Name   -> Function PirateGenerator.PirateBodyShapeFunctionLibrary.GetHighestWeighted
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// float                          BaseMeshBlendWeight            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FString>         BodyShapeBlendNames            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<float>                  BodyShapeBlendWeights          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// float                          Threshold                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+//		float                                              BaseMeshBlendWeight                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FString>                             BodyShapeBlendNames                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<float>                                      BodyShapeBlendWeights                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		float                                              Threshold                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 struct FString UPirateBodyShapeFunctionLibrary::STATIC_GetHighestWeighted(float BaseMeshBlendWeight, TArray<struct FString> BodyShapeBlendNames, TArray<float> BodyShapeBlendWeights, float Threshold)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateBodyShapeFunctionLibrary.GetHighestWeighted");
@@ -727,15 +751,17 @@ struct FString UPirateBodyShapeFunctionLibrary::STATIC_GetHighestWeighted(float 
 }
 
 
-// Function PirateGenerator.PirateBodyShapeFunctionLibrary.FindBodyBlendsFromBodyShapeWheelRadialCoordinate
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01470520
+//		Name   -> Function PirateGenerator.PirateBodyShapeFunctionLibrary.FindBodyBlendsFromBodyShapeWheelRadialCoordinate
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<PirateGenerator_EIPGGender> Gender                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRadialCoordinate       BodyShapeWheelRadialCoordinate (ConstParm, Parm, OutParm, ReferenceParm)
-// float                          BaseMeshBlendWeight            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FString>         BodyShapeBlendNames            (Parm, OutParm, ZeroConstructor)
-// TArray<float>                  BodyShapeBlendWeights          (Parm, OutParm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<PirateGenerator_EIPGGender>            Gender                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FRadialCoordinate                           BodyShapeWheelRadialCoordinate                             (ConstParm, Parm, OutParm, ReferenceParm)
+//		float                                              BaseMeshBlendWeight                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FString>                             BodyShapeBlendNames                                        (Parm, OutParm, ZeroConstructor)
+//		TArray<float>                                      BodyShapeBlendWeights                                      (Parm, OutParm, ZeroConstructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UPirateBodyShapeFunctionLibrary::STATIC_FindBodyBlendsFromBodyShapeWheelRadialCoordinate(TEnumAsByte<PirateGenerator_EIPGGender> Gender, const struct FRadialCoordinate& BodyShapeWheelRadialCoordinate, float* BaseMeshBlendWeight, TArray<struct FString>* BodyShapeBlendNames, TArray<float>* BodyShapeBlendWeights)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateBodyShapeFunctionLibrary.FindBodyBlendsFromBodyShapeWheelRadialCoordinate");
@@ -762,11 +788,13 @@ bool UPirateBodyShapeFunctionLibrary::STATIC_FindBodyBlendsFromBodyShapeWheelRad
 }
 
 
-// Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertToRadialCoordinate
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x014704A0
+//		Name   -> Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertToRadialCoordinate
+//		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector2D               UV                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FRadialCoordinate       ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FVector2D                                   UV                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FRadialCoordinate                           ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FRadialCoordinate UPirateBodyShapeFunctionLibrary::STATIC_ConvertToRadialCoordinate(const struct FVector2D& UV)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertToRadialCoordinate");
@@ -785,11 +813,13 @@ struct FRadialCoordinate UPirateBodyShapeFunctionLibrary::STATIC_ConvertToRadial
 }
 
 
-// Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertFromRadialCoordinate
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x01470410
+//		Name   -> Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertFromRadialCoordinate
+//		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FRadialCoordinate       Coord                          (Parm)
-// struct FVector2D               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FRadialCoordinate                           Coord                                                      (Parm)
+//		struct FVector2D                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector2D UPirateBodyShapeFunctionLibrary::STATIC_ConvertFromRadialCoordinate(const struct FRadialCoordinate& Coord)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertFromRadialCoordinate");
@@ -832,12 +862,14 @@ void UPirateGeneratorMaterials::BeforeDelete()
 
 }
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.SavePirateDescription
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01472D40
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.SavePirateDescription
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FString                 RelativePath                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FPirateDescription      InDesc                         (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FString                                     RelativePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FPirateDescription                          InDesc                                                     (ConstParm, Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UPirateGeneratorFunctionLibrary::STATIC_SavePirateDescription(const struct FString& RelativePath, const struct FPirateDescription& InDesc)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.SavePirateDescription");
@@ -857,11 +889,13 @@ bool UPirateGeneratorFunctionLibrary::STATIC_SavePirateDescription(const struct 
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.RandomBodyShape
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x01472CB0
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.RandomBodyShape
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int                            Seed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRadialCoordinate       ReturnValue                    (Parm, OutParm, ReturnParm)
+//		int                                                Seed                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FRadialCoordinate                           ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FRadialCoordinate UPirateGeneratorFunctionLibrary::STATIC_RandomBodyShape(int Seed)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.RandomBodyShape");
@@ -880,12 +914,14 @@ struct FRadialCoordinate UPirateGeneratorFunctionLibrary::STATIC_RandomBodyShape
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.LoadPirateDescription
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01472210
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.LoadPirateDescription
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FString                 RelativePath                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FPirateDescription      OutDesc                        (Parm, OutParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FString                                     RelativePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FPirateDescription                          OutDesc                                                    (Parm, OutParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UPirateGeneratorFunctionLibrary::STATIC_LoadPirateDescription(const struct FString& RelativePath, struct FPirateDescription* OutDesc)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.LoadPirateDescription");
@@ -907,13 +943,15 @@ bool UPirateGeneratorFunctionLibrary::STATIC_LoadPirateDescription(const struct 
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.K2_BakeFromDescriptionGameThread
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471FE0
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.K2_BakeFromDescriptionGameThread
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FPirateDescription      Desc                           (ConstParm, Parm, OutParm, ReferenceParm)
-// TEnumAsByte<PirateGenerator_EPirateBakeFlags> Flags                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletalMesh*           OutMesh                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPirateDescription      OutDesc                        (Parm, OutParm)
+//		struct FPirateDescription                          Desc                                                       (ConstParm, Parm, OutParm, ReferenceParm)
+//		TEnumAsByte<PirateGenerator_EPirateBakeFlags>      Flags                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USkeletalMesh*                               OutMesh                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FPirateDescription                          OutDesc                                                    (Parm, OutParm)
 void UPirateGeneratorFunctionLibrary::STATIC_K2_BakeFromDescriptionGameThread(const struct FPirateDescription& Desc, TEnumAsByte<PirateGenerator_EPirateBakeFlags> Flags, class USkeletalMesh** OutMesh, struct FPirateDescription* OutDesc)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.K2_BakeFromDescriptionGameThread");
@@ -936,10 +974,12 @@ void UPirateGeneratorFunctionLibrary::STATIC_K2_BakeFromDescriptionGameThread(co
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.IPGLatestVersion
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x01471FB0
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.IPGLatestVersion
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UPirateGeneratorFunctionLibrary::STATIC_IPGLatestVersion()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.IPGLatestVersion");
@@ -957,12 +997,14 @@ int UPirateGeneratorFunctionLibrary::STATIC_IPGLatestVersion()
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.GetSeedFromString
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x01471EB0
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GetSeedFromString
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FString                 RefName                        (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FString                 Str                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     RefName                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     Str                                                        (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UPirateGeneratorFunctionLibrary::STATIC_GetSeedFromString(const struct FString& RefName, const struct FString& Str)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GetSeedFromString");
@@ -982,11 +1024,13 @@ int UPirateGeneratorFunctionLibrary::STATIC_GetSeedFromString(const struct FStri
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllTextureReferences
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471030
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllTextureReferences
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class USkeletalMesh*           Mesh                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FPirateGeneratorTextureReference> OutReferences                  (Parm, OutParm, ZeroConstructor)
+//		class USkeletalMesh*                               Mesh                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FPirateGeneratorTextureReference>    OutReferences                                              (Parm, OutParm, ZeroConstructor)
 void UPirateGeneratorFunctionLibrary::STATIC_GetAllTextureReferences(class USkeletalMesh* Mesh, TArray<struct FPirateGeneratorTextureReference>* OutReferences)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllTextureReferences");
@@ -1006,10 +1050,12 @@ void UPirateGeneratorFunctionLibrary::STATIC_GetAllTextureReferences(class USkel
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllDescriptions
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01470F20
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllDescriptions
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TArray<struct FString>         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		TArray<struct FString>                             ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<struct FString> UPirateGeneratorFunctionLibrary::STATIC_GetAllDescriptions()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllDescriptions");
@@ -1027,19 +1073,21 @@ TArray<struct FString> UPirateGeneratorFunctionLibrary::STATIC_GetAllDescription
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirateWithVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01470B10
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirateWithVersion
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int                            Seed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Version                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           bOverrideBodyShape             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FRadialCoordinate       BodyShapeOverride              (Parm)
-// TEnumAsByte<PirateGenerator_EIPGGender> SpecificGender                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<PirateGenerator_EIPGEthnicity> SpecificEthnicity              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FIPGDynamicSlider> DynamicSliders                 (Parm, ZeroConstructor)
-// TArray<struct FName>           TextureReferences              (Parm, ZeroConstructor)
-// TArray<struct FIPGScalarParameter> ScalarParameters               (Parm, ZeroConstructor)
-// struct FPirateDescription      ReturnValue                    (Parm, OutParm, ReturnParm)
+//		int                                                Seed                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Version                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               bOverrideBodyShape                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FRadialCoordinate                           BodyShapeOverride                                          (Parm)
+//		TEnumAsByte<PirateGenerator_EIPGGender>            SpecificGender                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<PirateGenerator_EIPGEthnicity>         SpecificEthnicity                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FIPGDynamicSlider>                   DynamicSliders                                             (Parm, ZeroConstructor)
+//		TArray<struct FName>                               TextureReferences                                          (Parm, ZeroConstructor)
+//		TArray<struct FIPGScalarParameter>                 ScalarParameters                                           (Parm, ZeroConstructor)
+//		struct FPirateDescription                          ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FPirateDescription UPirateGeneratorFunctionLibrary::STATIC_GenerateRandomPirateWithVersion(int Seed, int Version, bool bOverrideBodyShape, const struct FRadialCoordinate& BodyShapeOverride, TEnumAsByte<PirateGenerator_EIPGGender> SpecificGender, TEnumAsByte<PirateGenerator_EIPGEthnicity> SpecificEthnicity, TArray<struct FIPGDynamicSlider> DynamicSliders, TArray<struct FName> TextureReferences, TArray<struct FIPGScalarParameter> ScalarParameters)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirateWithVersion");
@@ -1066,18 +1114,20 @@ struct FPirateDescription UPirateGeneratorFunctionLibrary::STATIC_GenerateRandom
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirate
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01470740
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirate
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int                            Seed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           bOverrideBodyShape             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FRadialCoordinate       BodyShapeOverride              (Parm)
-// TEnumAsByte<PirateGenerator_EIPGGender> SpecificGender                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<PirateGenerator_EIPGEthnicity> SpecificEthnicity              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FIPGDynamicSlider> DynamicSliders                 (Parm, ZeroConstructor)
-// TArray<struct FName>           TextureReferences              (Parm, ZeroConstructor)
-// TArray<struct FIPGScalarParameter> ScalarParameters               (Parm, ZeroConstructor)
-// struct FPirateDescription      ReturnValue                    (Parm, OutParm, ReturnParm)
+//		int                                                Seed                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               bOverrideBodyShape                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FRadialCoordinate                           BodyShapeOverride                                          (Parm)
+//		TEnumAsByte<PirateGenerator_EIPGGender>            SpecificGender                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<PirateGenerator_EIPGEthnicity>         SpecificEthnicity                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FIPGDynamicSlider>                   DynamicSliders                                             (Parm, ZeroConstructor)
+//		TArray<struct FName>                               TextureReferences                                          (Parm, ZeroConstructor)
+//		TArray<struct FIPGScalarParameter>                 ScalarParameters                                           (Parm, ZeroConstructor)
+//		struct FPirateDescription                          ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FPirateDescription UPirateGeneratorFunctionLibrary::STATIC_GenerateRandomPirate(int Seed, bool bOverrideBodyShape, const struct FRadialCoordinate& BodyShapeOverride, TEnumAsByte<PirateGenerator_EIPGGender> SpecificGender, TEnumAsByte<PirateGenerator_EIPGEthnicity> SpecificEthnicity, TArray<struct FIPGDynamicSlider> DynamicSliders, TArray<struct FName> TextureReferences, TArray<struct FIPGScalarParameter> ScalarParameters)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirate");
@@ -1103,12 +1153,14 @@ struct FPirateDescription UPirateGeneratorFunctionLibrary::STATIC_GenerateRandom
 }
 
 
-// Function PirateGenerator.PirateGeneratorFunctionLibrary.BakeFromDescriptionAsync
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x0146FEC0
+//		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.BakeFromDescriptionAsync
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FPirateDescription      Desc                           (ConstParm, Parm, OutParm, ReferenceParm)
-// TEnumAsByte<PirateGenerator_EPirateBakeFlags> Flags                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FScriptDelegate         AsyncResult                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+//		struct FPirateDescription                          Desc                                                       (ConstParm, Parm, OutParm, ReferenceParm)
+//		TEnumAsByte<PirateGenerator_EPirateBakeFlags>      Flags                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FScriptDelegate                             AsyncResult                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 void UPirateGeneratorFunctionLibrary::STATIC_BakeFromDescriptionAsync(const struct FPirateDescription& Desc, TEnumAsByte<PirateGenerator_EPirateBakeFlags> Flags, const struct FScriptDelegate& AsyncResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.BakeFromDescriptionAsync");
@@ -1151,16 +1203,18 @@ void UPirateGeneratorSettings::BeforeDelete()
 
 }
 
-// Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateSkeletonBlendsInCharacterMeshBakeSpecification
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01472A10
+//		Name   -> Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateSkeletonBlendsInCharacterMeshBakeSpecification
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UCharacterMeshBakeSpecification* CharacterMeshBakeSpecification (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletalMesh*           MeshWithBaseSkeleton           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletonsDataAsset*     SkeletonsDataAsset             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 MeshTypeSkeletonFileFormat     (Parm, ZeroConstructor, HasGetValueTypeHash)
-// float                          BaseMeshBlendWeight            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FString>         BodyShapeBlendNames            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<float>                  BodyShapeBlendWeights          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class UCharacterMeshBakeSpecification*             CharacterMeshBakeSpecification                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USkeletalMesh*                               MeshWithBaseSkeleton                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USkeletonsDataAsset*                         SkeletonsDataAsset                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     MeshTypeSkeletonFileFormat                                 (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		float                                              BaseMeshBlendWeight                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FString>                             BodyShapeBlendNames                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<float>                                      BodyShapeBlendWeights                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UPreparePirateMeshBakeTestFunctionLibrary::STATIC_PopulateSkeletonBlendsInCharacterMeshBakeSpecification(class UCharacterMeshBakeSpecification* CharacterMeshBakeSpecification, class USkeletalMesh* MeshWithBaseSkeleton, class USkeletonsDataAsset* SkeletonsDataAsset, const struct FString& MeshTypeSkeletonFileFormat, float BaseMeshBlendWeight, TArray<struct FString> BodyShapeBlendNames, TArray<float> BodyShapeBlendWeights)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateSkeletonBlendsInCharacterMeshBakeSpecification");
@@ -1183,14 +1237,16 @@ void UPreparePirateMeshBakeTestFunctionLibrary::STATIC_PopulateSkeletonBlendsInC
 }
 
 
-// Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateBlendedSubMeshesInCharacterMeshBakeSpecification
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x014727E0
+//		Name   -> Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateBlendedSubMeshesInCharacterMeshBakeSpecification
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UCharacterMeshBakeSpecification* CharacterMeshBakeSpecification (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class USkeletalMesh*>   SubMeshes                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// float                          BaseMeshBlendWeight            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FString>         BodyShapeBlendNames            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<float>                  BodyShapeBlendWeights          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class UCharacterMeshBakeSpecification*             CharacterMeshBakeSpecification                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<class USkeletalMesh*>                       SubMeshes                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		float                                              BaseMeshBlendWeight                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FString>                             BodyShapeBlendNames                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<float>                                      BodyShapeBlendWeights                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UPreparePirateMeshBakeTestFunctionLibrary::STATIC_PopulateBlendedSubMeshesInCharacterMeshBakeSpecification(class UCharacterMeshBakeSpecification* CharacterMeshBakeSpecification, TArray<class USkeletalMesh*> SubMeshes, float BaseMeshBlendWeight, TArray<struct FString> BodyShapeBlendNames, TArray<float> BodyShapeBlendWeights)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateBlendedSubMeshesInCharacterMeshBakeSpecification");
@@ -1331,11 +1387,13 @@ void UWardrobeDataAsset::BeforeDelete()
 
 }
 
-// Function PirateGenerator.WardrobeOutfitDataAsset.GetBiasForCategory
-// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x01471540
+//		Name   -> Function PirateGenerator.WardrobeOutfitDataAsset.GetBiasForCategory
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FName                   Name                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       Name                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UWardrobeOutfitDataAsset::GetBiasForCategory(const struct FName& Name)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeOutfitDataAsset.GetBiasForCategory");
@@ -1366,14 +1424,16 @@ void UWardrobeOutfitDataAsset::BeforeDelete()
 
 }
 
-// Function PirateGenerator.WardrobeFunctionLibrary.PickOutfitAsync
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x014725D0
+//		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.PickOutfitAsync
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TArray<struct FName>           ClothingItemNames              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FName>           Tags                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<PirateGenerator_EIPGGender> Gender                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FScriptDelegate         AsyncResult                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+//		TArray<struct FName>                               ClothingItemNames                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FName>                               Tags                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TEnumAsByte<PirateGenerator_EIPGPirateType>        PirateType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<PirateGenerator_EIPGGender>            Gender                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FScriptDelegate                             AsyncResult                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 void UWardrobeFunctionLibrary::STATIC_PickOutfitAsync(TArray<struct FName> ClothingItemNames, TArray<struct FName> Tags, TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType, TEnumAsByte<PirateGenerator_EIPGGender> Gender, const struct FScriptDelegate& AsyncResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.PickOutfitAsync");
@@ -1394,15 +1454,17 @@ void UWardrobeFunctionLibrary::STATIC_PickOutfitAsync(TArray<struct FName> Cloth
 }
 
 
-// Function PirateGenerator.WardrobeFunctionLibrary.PickOutfit
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01472390
+//		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.PickOutfit
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TArray<struct FName>           ClothingItemNames              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FName>           Tags                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<PirateGenerator_EIPGGender> Gender                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWardrobeOutfitResult   Result                         (Parm, OutParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		TArray<struct FName>                               ClothingItemNames                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FName>                               Tags                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TEnumAsByte<PirateGenerator_EIPGPirateType>        PirateType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<PirateGenerator_EIPGGender>            Gender                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWardrobeOutfitResult                       Result                                                     (Parm, OutParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWardrobeFunctionLibrary::STATIC_PickOutfit(TArray<struct FName> ClothingItemNames, TArray<struct FName> Tags, TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType, TEnumAsByte<PirateGenerator_EIPGGender> Gender, struct FWardrobeOutfitResult* Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.PickOutfit");
@@ -1427,13 +1489,15 @@ bool UWardrobeFunctionLibrary::STATIC_PickOutfit(TArray<struct FName> ClothingIt
 }
 
 
-// Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItemsWithBias
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471D00
+//		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItemsWithBias
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// int                            Seed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FName>           InputItems                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FWardrobeOutfitCategoryBias> BiasPerCategory                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FName>           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		int                                                Seed                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FName>                               InputItems                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FWardrobeOutfitCategoryBias>         BiasPerCategory                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FName>                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomWardrobeItemsWithBias(int Seed, TArray<struct FName> InputItems, TArray<struct FWardrobeOutfitCategoryBias> BiasPerCategory)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItemsWithBias");
@@ -1454,12 +1518,14 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomWardrobeItemsWith
 }
 
 
-// Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItems
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471BC0
+//		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItems
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// int                            Seed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FName>           InputItems                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FName>           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		int                                                Seed                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FName>                               InputItems                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FName>                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomWardrobeItems(int Seed, TArray<struct FName> InputItems)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItems");
@@ -1479,13 +1545,15 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomWardrobeItems(int
 }
 
 
-// Function PirateGenerator.WardrobeFunctionLibrary.GetRandomOutfit
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471A70
+//		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetRandomOutfit
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWardrobeOutfitDataAsset* Outfit                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Seed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<PirateGenerator_EIPGGender> Gender                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FName>           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		class UWardrobeOutfitDataAsset*                    Outfit                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Seed                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<PirateGenerator_EIPGGender>            Gender                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FName>                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomOutfit(class UWardrobeOutfitDataAsset* Outfit, int Seed, TEnumAsByte<PirateGenerator_EIPGGender> Gender)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetRandomOutfit");
@@ -1506,10 +1574,12 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomOutfit(class UWar
 }
 
 
-// Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeTypes
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x014713A0
+//		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeTypes
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TArray<struct FName>           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		TArray<struct FName>                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeTypes()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeTypes");
@@ -1527,13 +1597,15 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeTypes()
 }
 
 
-// Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItemsForType
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471230
+//		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItemsForType
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 TypeName                       (Parm, ZeroConstructor, HasGetValueTypeHash)
-// TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           bWithExclusions                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<struct FName>           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		struct FString                                     TypeName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		TEnumAsByte<PirateGenerator_EIPGPirateType>        PirateType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               bWithExclusions                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TArray<struct FName>                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeItemsForType(const struct FString& TypeName, TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType, bool bWithExclusions)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItemsForType");
@@ -1554,11 +1626,13 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeItemsForType
 }
 
 
-// Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItems
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01471150
+//		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItems
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FName>           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		TEnumAsByte<PirateGenerator_EIPGPirateType>        PirateType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FName>                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeItems(TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItems");
@@ -1577,14 +1651,16 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeItems(TEnumA
 }
 
 
-// Function PirateGenerator.WardrobeFunctionLibrary.CanLoadOutfit
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x01470250
+//		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.CanLoadOutfit
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// TArray<struct FName>           ClothingItemNames              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FName>           Tags                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<PirateGenerator_EIPGGender> Gender                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		TArray<struct FName>                               ClothingItemNames                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FName>                               Tags                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TEnumAsByte<PirateGenerator_EIPGPirateType>        PirateType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<PirateGenerator_EIPGGender>            Gender                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWardrobeFunctionLibrary::STATIC_CanLoadOutfit(TArray<struct FName> ClothingItemNames, TArray<struct FName> Tags, TEnumAsByte<PirateGenerator_EIPGPirateType> PirateType, TEnumAsByte<PirateGenerator_EIPGGender> Gender)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.CanLoadOutfit");
@@ -1606,11 +1682,13 @@ bool UWardrobeFunctionLibrary::STATIC_CanLoadOutfit(TArray<struct FName> Clothin
 }
 
 
-// DelegateFunction PirateGenerator.WardrobeFunctionLibrary.AsyncOutfitResultDynamic__DelegateSignature
-// (Public, Delegate, HasOutParms)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> DelegateFunction PirateGenerator.WardrobeFunctionLibrary.AsyncOutfitResultDynamic__DelegateSignature
+//		Flags  -> (Public, Delegate, HasOutParms)
 // Parameters:
-// bool                           Success                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class USkeletalMesh*>   Meshes                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		bool                                               Success                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TArray<class USkeletalMesh*>                       Meshes                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UWardrobeFunctionLibrary::AsyncOutfitResultDynamic__DelegateSignature(bool Success, TArray<class USkeletalMesh*> Meshes)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("DelegateFunction PirateGenerator.WardrobeFunctionLibrary.AsyncOutfitResultDynamic__DelegateSignature");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -44,9 +44,9 @@ public:
 class UHarbourComponent : public USceneComponent
 {
 public:
-	unsigned char                                      UnknownData_BWH9[0x8];                                     // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_UBIE[0x8];                                     // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              HarbourRadiusInCentimetres;                                // 0x02B8(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_MHRA[0x24];                                    // 0x02BC(0x0024) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_I01X[0x24];                                    // 0x02BC(0x0024) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -87,7 +87,7 @@ public:
 class UHarbourService : public UObject
 {
 public:
-	unsigned char                                      UnknownData_8TEH[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_TF0H[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UPlayfabPartyVoiceChannel : public UVoiceChannel
 {
 public:
-	unsigned char                                      UnknownData_OCG7[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QWND[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

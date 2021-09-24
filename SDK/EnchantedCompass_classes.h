@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -27,7 +27,7 @@ public:
 	TArray<struct FVector>                             Locations;                                                 // 0x0850(0x0010) (Edit, Net, ZeroConstructor, Transient, EditConst)
 	TArray<struct FGuid>                               LocationIds;                                               // 0x0860(0x0010) (ZeroConstructor, Transient)
 	class UInventoryItemComponent*                     InventoryItem;                                             // 0x0870(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_I5VL[0x8];                                     // 0x0878(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ERLY[0x8];                                     // 0x0878(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -67,11 +67,11 @@ public:
 };
 
 // Class EnchantedCompass.TaleQuestMultiTargetCompassAddTrackedLocationStep
-// 0x0008 (FullSize[0x0090] - InheritedSize[0x0088])
+// 0x0008 (FullSize[0x0098] - InheritedSize[0x0090])
 class UTaleQuestMultiTargetCompassAddTrackedLocationStep : public UTaleQuestStep
 {
 public:
-	class UTaleQuestMultiTargetCompassAddTrackedLocationStepDesc* Desc;                                                      // 0x0088(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTaleQuestMultiTargetCompassAddTrackedLocationStepDesc* Desc;                                                      // 0x0090(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()
@@ -88,12 +88,12 @@ public:
 };
 
 // Class EnchantedCompass.TaleQuestMultiTargetCompassAddTrackedLocationStepDesc
-// 0x0020 (FullSize[0x0050] - InheritedSize[0x0030])
+// 0x0020 (FullSize[0x00A0] - InheritedSize[0x0080])
 class UTaleQuestMultiTargetCompassAddTrackedLocationStepDesc : public UTaleQuestStepDesc
 {
 public:
-	struct FQuestVariableVector                        Location;                                                  // 0x0030(0x0010)
-	struct FQuestVariableGuid                          TargetID;                                                  // 0x0040(0x0010)
+	struct FQuestVariableVector                        Location;                                                  // 0x0080(0x0010)
+	struct FQuestVariableGuid                          TargetID;                                                  // 0x0090(0x0010)
 
 
 	static UClass* StaticClass()
@@ -110,11 +110,11 @@ public:
 };
 
 // Class EnchantedCompass.TaleQuestMultiTargetCompassRemoveTrackedLocationStep
-// 0x0010 (FullSize[0x0098] - InheritedSize[0x0088])
+// 0x0010 (FullSize[0x00A0] - InheritedSize[0x0090])
 class UTaleQuestMultiTargetCompassRemoveTrackedLocationStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_E3XP[0x10];                                    // 0x0088(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IMHR[0x10];                                    // 0x0090(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -131,11 +131,11 @@ public:
 };
 
 // Class EnchantedCompass.TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc
-// 0x0010 (FullSize[0x0040] - InheritedSize[0x0030])
+// 0x0010 (FullSize[0x0090] - InheritedSize[0x0080])
 class UTaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc : public UTaleQuestStepDesc
 {
 public:
-	struct FQuestVariableGuid                          TargetID;                                                  // 0x0030(0x0010) (Edit, DisableEditOnInstance)
+	struct FQuestVariableGuid                          TargetID;                                                  // 0x0080(0x0010) (Edit, DisableEditOnInstance)
 
 
 	static UClass* StaticClass()
@@ -156,7 +156,7 @@ public:
 class UTaleQuestMultiTargetCompassService : public UTaleQuestToolService
 {
 public:
-	unsigned char                                      UnknownData_2ACK[0x20];                                    // 0x0120(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0MJK[0x20];                                    // 0x0120(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -194,11 +194,11 @@ public:
 };
 
 // Class EnchantedCompass.TaleQuestSetCompassTargetToTargetStep
-// 0x0028 (FullSize[0x00B0] - InheritedSize[0x0088])
+// 0x0020 (FullSize[0x00B0] - InheritedSize[0x0090])
 class UTaleQuestSetCompassTargetToTargetStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_3OCW[0x28];                                    // 0x0088(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WVY9[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -215,12 +215,12 @@ public:
 };
 
 // Class EnchantedCompass.TaleQuestSetCompassTargetBaseStepDesc
-// 0x0008 (FullSize[0x0038] - InheritedSize[0x0030])
+// 0x0008 (FullSize[0x0088] - InheritedSize[0x0080])
 class UTaleQuestSetCompassTargetBaseStepDesc : public UTaleQuestStepDesc
 {
 public:
-	TEnumAsByte<EnchantedCompass_ETargetUpdateReason>  TargetUpdateReason;                                        // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_HNSJ[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
+	TEnumAsByte<EnchantedCompass_ETargetUpdateReason>  TargetUpdateReason;                                        // 0x0080(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_6F2P[0x7];                                     // 0x0081(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -237,11 +237,11 @@ public:
 };
 
 // Class EnchantedCompass.TaleQuestSetCompassTargetToActorStepDesc
-// 0x0010 (FullSize[0x0048] - InheritedSize[0x0038])
+// 0x0010 (FullSize[0x0098] - InheritedSize[0x0088])
 class UTaleQuestSetCompassTargetToActorStepDesc : public UTaleQuestSetCompassTargetBaseStepDesc
 {
 public:
-	struct FQuestVariableActor                         TargetActor;                                               // 0x0038(0x0010) (Edit)
+	struct FQuestVariableActor                         TargetActor;                                               // 0x0088(0x0010) (Edit)
 
 
 	static UClass* StaticClass()
@@ -258,11 +258,11 @@ public:
 };
 
 // Class EnchantedCompass.TaleQuestSetCompassTargetToPointStepDesc
-// 0x0010 (FullSize[0x0048] - InheritedSize[0x0038])
+// 0x0010 (FullSize[0x0098] - InheritedSize[0x0088])
 class UTaleQuestSetCompassTargetToPointStepDesc : public UTaleQuestSetCompassTargetBaseStepDesc
 {
 public:
-	struct FQuestVariableOrientedPoint                 TargetPoint;                                               // 0x0038(0x0010) (Edit)
+	struct FQuestVariableOrientedPoint                 TargetPoint;                                               // 0x0088(0x0010) (Edit)
 
 
 	static UClass* StaticClass()

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -20,10 +20,12 @@ namespace CG
 
 void FWaterSlideParams::AfterRead()
 {
+	READ_PTR_FULL(PlayerSplashingVFXOverride, UParticleSystem);
 }
 
 void FWaterSlideParams::BeforeDelete()
 {
+	DELE_PTR_FULL(PlayerSplashingVFXOverride);
 }
 
 void FWaterSlideActionStateConstructionInfo::AfterRead()
@@ -81,11 +83,13 @@ void FOnEndWaterSlideActionStateEvent::BeforeDelete()
 void FOnStartWaterSlideActionStateEvent::AfterRead()
 {
 	READ_PTR_FULL(WaterSlideStart, UWwiseEvent);
+	READ_PTR_FULL(WaterSlideVfxOverride, UParticleSystem);
 }
 
 void FOnStartWaterSlideActionStateEvent::BeforeDelete()
 {
 	DELE_PTR_FULL(WaterSlideStart);
+	DELE_PTR_FULL(WaterSlideVfxOverride);
 }
 
 void FOnExitedWaterSlideEvent::AfterRead()
@@ -108,10 +112,12 @@ void UWaterSlideParamsDataAsset::BeforeDelete()
 
 }
 
-// Function WaterSlide.WaterSlide.SetEntranceCollisionComponent
-// (Final, Native, Protected, BlueprintCallable)
+// Function:
+//		Offset -> 0x03F0B5E0
+//		Name   -> Function WaterSlide.WaterSlide.SetEntranceCollisionComponent
+//		Flags  -> (Final, Native, Protected, BlueprintCallable)
 // Parameters:
-// class UPrimitiveComponent*     InEntranceCollisionComponent   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         InEntranceCollisionComponent                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AWaterSlide::SetEntranceCollisionComponent(class UPrimitiveComponent* InEntranceCollisionComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WaterSlide.WaterSlide.SetEntranceCollisionComponent");
@@ -128,14 +134,16 @@ void AWaterSlide::SetEntranceCollisionComponent(class UPrimitiveComponent* InEnt
 }
 
 
-// Function WaterSlide.WaterSlide.ComponentBeginOverlapCallBack
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x03F0B410
+//		Name   -> Function WaterSlide.WaterSlide.ComponentBeginOverlapCallBack
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// class AActor*                  InOtherActor                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*     InOtherComp                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            InOtherBodyIndex               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           InFromSweep                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult              InSweepResult                  (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		class AActor*                                      InOtherActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         InOtherComp                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                InOtherBodyIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               InFromSweep                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FHitResult                                  InSweepResult                                              (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 void AWaterSlide::ComponentBeginOverlapCallBack(class AActor* InOtherActor, class UPrimitiveComponent* InOtherComp, int InOtherBodyIndex, bool InFromSweep, const struct FHitResult& InSweepResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WaterSlide.WaterSlide.ComponentBeginOverlapCallBack");

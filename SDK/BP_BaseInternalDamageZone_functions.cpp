@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,11 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.OnRepairMounted
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.OnRepairMounted
+//		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_BaseInternalDamageZone_C::OnRepairMounted()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.OnRepairMounted");
@@ -34,12 +37,14 @@ void ABP_BaseInternalDamageZone_C::OnRepairMounted()
 }
 
 
-// Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.GetRepairMountLocation
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.GetRepairMountLocation
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class USceneComponent*         MountLocation                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FName                   MountSocket                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class USceneComponent*                             MountLocation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FName                                       MountSocket                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool ABP_BaseInternalDamageZone_C::GetRepairMountLocation(class USceneComponent** MountLocation, struct FName* MountSocket)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.GetRepairMountLocation");
@@ -61,12 +66,14 @@ bool ABP_BaseInternalDamageZone_C::GetRepairMountLocation(class USceneComponent*
 }
 
 
-// Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ShouldDrawTooltipInWorldSpace
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ShouldDrawTooltipInWorldSpace
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  InInteractor                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 DesiredTooltipWorldPosition    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      InInteractor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     DesiredTooltipWorldPosition                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool ABP_BaseInternalDamageZone_C::ShouldDrawTooltipInWorldSpace(class AActor* InInteractor, struct FVector* DesiredTooltipWorldPosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ShouldDrawTooltipInWorldSpace");
@@ -87,8 +94,10 @@ bool ABP_BaseInternalDamageZone_C::ShouldDrawTooltipInWorldSpace(class AActor* I
 }
 
 
-// Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_BaseInternalDamageZone_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.UserConstructionScript");
@@ -103,10 +112,12 @@ void ABP_BaseInternalDamageZone_C::UserConstructionScript()
 }
 
 
-// Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ReceiveEndPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ReceiveEndPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<Engine_EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_BaseInternalDamageZone_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ReceiveEndPlay");
@@ -122,10 +133,12 @@ void ABP_BaseInternalDamageZone_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayRea
 }
 
 
-// Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ExecuteUbergraph_BP_BaseInternalDamageZone
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ExecuteUbergraph_BP_BaseInternalDamageZone
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_BaseInternalDamageZone_C::ExecuteUbergraph_BP_BaseInternalDamageZone(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ExecuteUbergraph_BP_BaseInternalDamageZone");

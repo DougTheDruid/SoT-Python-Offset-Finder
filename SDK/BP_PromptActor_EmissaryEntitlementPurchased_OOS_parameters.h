@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -27,7 +27,7 @@ struct ABP_PromptActor_EmissaryEntitlementPurchased_OOS_C_UserConstructionScript
 // Function BP_PromptActor_EmissaryEntitlementPurchased_OOS.BP_PromptActor_EmissaryEntitlementPurchased_OOS_C.ReceiveEndPlay
 struct ABP_PromptActor_EmissaryEntitlementPurchased_OOS_C_ReceiveEndPlay_Params
 {
-	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_PromptActor_EmissaryEntitlementPurchased_OOS.BP_PromptActor_EmissaryEntitlementPurchased_OOS_C.ReceiveBeginPlay
@@ -38,7 +38,7 @@ struct ABP_PromptActor_EmissaryEntitlementPurchased_OOS_C_ReceiveBeginPlay_Param
 // Function BP_PromptActor_EmissaryEntitlementPurchased_OOS.BP_PromptActor_EmissaryEntitlementPurchased_OOS_C.ExecuteUbergraph_BP_PromptActor_EmissaryEntitlementPurchased_OOS
 struct ABP_PromptActor_EmissaryEntitlementPurchased_OOS_C_ExecuteUbergraph_BP_PromptActor_EmissaryEntitlementPurchased_OOS_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

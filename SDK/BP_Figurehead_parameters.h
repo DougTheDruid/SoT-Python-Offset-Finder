@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Figurehead.BP_Figurehead_C.GetVFXComponent
 struct ABP_Figurehead_C_GetVFXComponent_Params
 {
-	class UParticleSystemComponent*                    ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	class UParticleSystemComponent*                    ReturnValue;                                               // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Figurehead.BP_Figurehead_C.GetMeshComponent
 struct ABP_Figurehead_C_GetMeshComponent_Params
 {
-	class UStaticMeshComponent*                        ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	class UStaticMeshComponent*                        ReturnValue;                                               // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Figurehead.BP_Figurehead_C.UserConstructionScript

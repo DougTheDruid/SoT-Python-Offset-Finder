@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -34,10 +34,12 @@ void FCoherentUIGTViewInfo::BeforeDelete()
 {
 }
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F8470
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 // Parameters:
-// class UStructProperty*         Arg                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UStructProperty*                             Arg                                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromStruct(class UStructProperty* Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct");
@@ -54,10 +56,12 @@ void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromStruct(class UStructPro
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F8370
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 // Parameters:
-// class UObject*                 Model                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     Model                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromObject(class UObject* Model)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject");
@@ -74,11 +78,13 @@ void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromObject(class UObject* M
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F80A0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 // Parameters:
-// struct FString                 Name                           (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UCoherentUIGTJSEvent*    EventData                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Name                                                       (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        EventData                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBaseComponent::TriggerJSEvent(const struct FString& Name, class UCoherentUIGTJSEvent* EventData)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent");
@@ -96,8 +102,10 @@ void UCoherentUIGTBaseComponent::TriggerJSEvent(const struct FString& Name, clas
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SynchronizeModels
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F8040
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SynchronizeModels
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 void UCoherentUIGTBaseComponent::SynchronizeModels()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SynchronizeModels");
@@ -113,10 +121,12 @@ void UCoherentUIGTBaseComponent::SynchronizeModels()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.ShowPaintRects
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7F20
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.ShowPaintRects
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           show                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               show                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UCoherentUIGTBaseComponent::ShowPaintRects(bool show)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.ShowPaintRects");
@@ -133,10 +143,12 @@ void UCoherentUIGTBaseComponent::ShowPaintRects(bool show)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetClickThroughAlphaThreshold
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7960
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetClickThroughAlphaThreshold
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          Threshold                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Threshold                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBaseComponent::SetClickThroughAlphaThreshold(float Threshold)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetClickThroughAlphaThreshold");
@@ -153,11 +165,13 @@ void UCoherentUIGTBaseComponent::SetClickThroughAlphaThreshold(float Threshold)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Resize
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F78A0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Resize
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// int                            Width                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Height                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Width                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Height                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBaseComponent::Resize(int Width, int Height)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Resize");
@@ -175,8 +189,10 @@ void UCoherentUIGTBaseComponent::Resize(int Width, int Height)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Reload
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7860
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Reload
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCoherentUIGTBaseComponent::Reload()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Reload");
@@ -192,8 +208,10 @@ void UCoherentUIGTBaseComponent::Reload()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Redraw
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F7820
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Redraw
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 void UCoherentUIGTBaseComponent::Redraw()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Redraw");
@@ -209,10 +227,12 @@ void UCoherentUIGTBaseComponent::Redraw()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Load
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7490
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Load
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 path                           (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     path                                                       (Parm, ZeroConstructor, HasGetValueTypeHash)
 void UCoherentUIGTBaseComponent::Load(const struct FString& path)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Load");
@@ -229,10 +249,12 @@ void UCoherentUIGTBaseComponent::Load(const struct FString& path)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsTransparent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F7430
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsTransparent
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTBaseComponent::IsTransparent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsTransparent");
@@ -250,10 +272,12 @@ bool UCoherentUIGTBaseComponent::IsTransparent()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyToCreateView
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F73D0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyToCreateView
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTBaseComponent::IsReadyToCreateView()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyToCreateView");
@@ -271,10 +295,12 @@ bool UCoherentUIGTBaseComponent::IsReadyToCreateView()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyForBindings
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F7370
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyForBindings
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTBaseComponent::IsReadyForBindings()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyForBindings");
@@ -292,10 +318,12 @@ bool UCoherentUIGTBaseComponent::IsReadyForBindings()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsDocumentReady
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F72E0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsDocumentReady
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTBaseComponent::IsDocumentReady()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsDocumentReady");
@@ -313,10 +341,12 @@ bool UCoherentUIGTBaseComponent::IsDocumentReady()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.HasRequestedView
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F70D0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.HasRequestedView
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTBaseComponent::HasRequestedView()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.HasRequestedView");
@@ -334,10 +364,12 @@ bool UCoherentUIGTBaseComponent::HasRequestedView()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.GetClickThroughAlphaThreshold
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F6E00
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.GetClickThroughAlphaThreshold
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UCoherentUIGTBaseComponent::GetClickThroughAlphaThreshold()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.GetClickThroughAlphaThreshold");
@@ -355,8 +387,10 @@ float UCoherentUIGTBaseComponent::GetClickThroughAlphaThreshold()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EndDebugFrameSave
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6D30
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EndDebugFrameSave
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCoherentUIGTBaseComponent::EndDebugFrameSave()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EndDebugFrameSave");
@@ -372,10 +406,12 @@ void UCoherentUIGTBaseComponent::EndDebugFrameSave()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EnableDelayedUpdate
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6CA0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EnableDelayedUpdate
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               bEnabled                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UCoherentUIGTBaseComponent::EnableDelayedUpdate(bool bEnabled)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EnableDelayedUpdate");
@@ -392,8 +428,10 @@ void UCoherentUIGTBaseComponent::EnableDelayedUpdate(bool bEnabled)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.DebugSaveNextFrame
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6C60
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.DebugSaveNextFrame
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCoherentUIGTBaseComponent::DebugSaveNextFrame()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.DebugSaveNextFrame");
@@ -409,10 +447,12 @@ void UCoherentUIGTBaseComponent::DebugSaveNextFrame()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6B80
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UCoherentUIGTJSEvent* UCoherentUIGTBaseComponent::CreateJSEvent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent");
@@ -430,11 +470,13 @@ class UCoherentUIGTJSEvent* UCoherentUIGTBaseComponent::CreateJSEvent()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F68D0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 Name                           (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UStructProperty*         Arg                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Name                                                       (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UStructProperty*                             Arg                                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBaseComponent::CreateDataModelFromStruct(const struct FString& Name, class UStructProperty* Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct");
@@ -452,11 +494,13 @@ void UCoherentUIGTBaseComponent::CreateDataModelFromStruct(const struct FString&
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6710
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 Name                           (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UObject*                 Model                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Name                                                       (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UObject*                                     Model                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBaseComponent::CreateDataModelFromObject(const struct FString& Name, class UObject* Model)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject");
@@ -474,8 +518,10 @@ void UCoherentUIGTBaseComponent::CreateDataModelFromObject(const struct FString&
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.BeginDebugFrameSave
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F66D0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.BeginDebugFrameSave
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCoherentUIGTBaseComponent::BeginDebugFrameSave()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.BeginDebugFrameSave");
@@ -517,13 +563,15 @@ void UCoherentUIGTComponent::BeforeDelete()
 
 }
 
-// Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F75D0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTBaseComponent* BaseComponent                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 Name                           (Parm, ZeroConstructor, HasGetValueTypeHash)
-// int                            Width                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Height                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTBaseComponent*                  BaseComponent                                              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Name                                                       (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		int                                                Width                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Height                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTLiveView::OnLiveViewSizeRequest(class UCoherentUIGTBaseComponent* BaseComponent, const struct FString& Name, int* Width, int* Height)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest");
@@ -596,10 +644,12 @@ void ACoherentUIGTSystem::BeforeDelete()
 
 }
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6500
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FText                   Text                           (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FText                                       Text                                                       (ConstParm, Parm, OutParm, ReferenceParm)
 void UCoherentUIGTJSEvent::AddText(const struct FText& Text)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText");
@@ -616,10 +666,12 @@ void UCoherentUIGTJSEvent::AddText(const struct FText& Text)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6440
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UStructProperty*         Arg                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UStructProperty*                             Arg                                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTJSEvent::AddStructArg(class UStructProperty* Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg");
@@ -636,10 +688,12 @@ void UCoherentUIGTJSEvent::AddStructArg(class UStructProperty* Arg)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddString
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F62C0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddString
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 Str                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     Str                                                        (Parm, ZeroConstructor, HasGetValueTypeHash)
 void UCoherentUIGTJSEvent::AddString(const struct FString& Str)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddString");
@@ -656,10 +710,12 @@ void UCoherentUIGTJSEvent::AddString(const struct FString& Str)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6170
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 Object                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTJSEvent::AddObject(class UObject* Object)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject");
@@ -676,10 +732,12 @@ void UCoherentUIGTJSEvent::AddObject(class UObject* Object)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddName
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6030
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddName
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FName                   Name                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       Name                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTJSEvent::AddName(const struct FName& Name)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddName");
@@ -696,10 +754,12 @@ void UCoherentUIGTJSEvent::AddName(const struct FName& Name)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddInt32
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F5FB0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddInt32
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            integer                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                integer                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTJSEvent::AddInt32(int integer)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddInt32");
@@ -716,10 +776,12 @@ void UCoherentUIGTJSEvent::AddInt32(int integer)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddFloat
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F5E80
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddFloat
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          fl                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              fl                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTJSEvent::AddFloat(float fl)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddFloat");
@@ -736,10 +798,12 @@ void UCoherentUIGTJSEvent::AddFloat(float fl)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddByte
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F5D40
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddByte
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// unsigned char                  byte                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		unsigned char                                      byte                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTJSEvent::AddByte(unsigned char byte)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddByte");
@@ -756,10 +820,12 @@ void UCoherentUIGTJSEvent::AddByte(unsigned char byte)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddBool
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F5C00
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddBool
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           B                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               B                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UCoherentUIGTJSEvent::AddBool(bool B)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddBool");
@@ -776,10 +842,12 @@ void UCoherentUIGTJSEvent::AddBool(bool B)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F58C0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TArray<int>                    Array                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<int>                                        Array                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UCoherentUIGTJSEvent::AddArray(TArray<int> Array)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray");
@@ -808,11 +876,13 @@ void UCoherentUIGTJSEvent::BeforeDelete()
 
 }
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7760
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                 Object                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTJSPayload::ReadObject(int Index, class UObject* Object)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject");
@@ -830,11 +900,13 @@ void UCoherentUIGTJSPayload::ReadObject(int Index, class UObject* Object)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetString
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6FE0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetString
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+//		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 struct FString UCoherentUIGTJSPayload::GetString(int Index)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetString");
@@ -853,11 +925,13 @@ struct FString UCoherentUIGTJSPayload::GetString(int Index)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetNumber
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6F20
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetNumber
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UCoherentUIGTJSPayload::GetNumber(int Index)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetNumber");
@@ -876,11 +950,13 @@ float UCoherentUIGTJSPayload::GetNumber(int Index)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetInt32
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6E90
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetInt32
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UCoherentUIGTJSPayload::GetInt32(int Index)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetInt32");
@@ -899,11 +975,13 @@ int UCoherentUIGTJSPayload::GetInt32(int Index)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetBool
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6D70
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetBool
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTJSPayload::GetBool(int Index)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetBool");
@@ -962,12 +1040,14 @@ void UCoherentUIGTHUD::BeforeDelete()
 	DELE_PTR_FULL(HUDMaterialInstance);
 }
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.TriggerJSEvent
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F8180
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.TriggerJSEvent
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTBaseComponent* Component                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 EventName                      (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTBaseComponent*                  Component                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     EventName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_TriggerJSEvent(class UCoherentUIGTBaseComponent* Component, const struct FString& EventName, class UCoherentUIGTJSEvent* JSEvent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.TriggerJSEvent");
@@ -986,11 +1066,13 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_TriggerJSEvent(class UCoheren
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.SetupLoadingScreen
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7C70
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.SetupLoadingScreen
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FCoherentUIGTLoadingScreenSettings Settings                       (ConstParm, Parm, OutParm, ReferenceParm)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FCoherentUIGTLoadingScreenSettings          Settings                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_SetupLoadingScreen(class UObject* WorldContextObject, const struct FCoherentUIGTLoadingScreenSettings& Settings)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.SetupLoadingScreen");
@@ -1008,11 +1090,13 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_SetupLoadingScreen(class UObj
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.CreateJSEvent
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6BB0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.CreateJSEvent
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCoherentUIGTJSEvent*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UCoherentUIGTJSEvent* UCoherentUIGTBlueprintFunctionLibrary::STATIC_CreateJSEvent(class UObject* WorldContextObject)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.CreateJSEvent");
@@ -1031,11 +1115,13 @@ class UCoherentUIGTJSEvent* UCoherentUIGTBlueprintFunctionLibrary::STATIC_Create
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddStructArg
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6360
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddStructArg
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UStructProperty*         Arg                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UStructProperty*                             Arg                                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddStructArg(class UCoherentUIGTJSEvent* JSEvent, class UStructProperty* Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddStructArg");
@@ -1053,11 +1139,13 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddStructArg(class UCoherentU
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddString
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F61F0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddString
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 Arg                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Arg                                                        (Parm, ZeroConstructor, HasGetValueTypeHash)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddString(class UCoherentUIGTJSEvent* JSEvent, const struct FString& Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddString");
@@ -1075,11 +1163,13 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddString(class UCoherentUIGT
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddObject
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F60C0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddObject
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                 Arg                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     Arg                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddObject(class UCoherentUIGTJSEvent* JSEvent, class UObject* Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddObject");
@@ -1097,11 +1187,13 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddObject(class UCoherentUIGT
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddInt32
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F5F00
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddInt32
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Arg                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Arg                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddInt32(class UCoherentUIGTJSEvent* JSEvent, int Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddInt32");
@@ -1119,11 +1211,13 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddInt32(class UCoherentUIGTJ
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddFloat
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F5DC0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddFloat
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          Arg                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Arg                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddFloat(class UCoherentUIGTJSEvent* JSEvent, float Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddFloat");
@@ -1141,11 +1235,13 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddFloat(class UCoherentUIGTJ
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddByte
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F5C90
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddByte
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// unsigned char                  Arg                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		unsigned char                                      Arg                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddByte(class UCoherentUIGTJSEvent* JSEvent, unsigned char Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddByte");
@@ -1163,11 +1259,13 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddByte(class UCoherentUIGTJS
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddBool
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F5B40
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddBool
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           Arg                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               Arg                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddBool(class UCoherentUIGTJSEvent* JSEvent, bool Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddBool");
@@ -1185,11 +1283,13 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddBool(class UCoherentUIGTJS
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddArrayOfStructs
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F59B0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddArrayOfStructs
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<int>                    Arg                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<int>                                        Arg                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddArrayOfStructs(class UCoherentUIGTJSEvent* JSEvent, TArray<int> Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddArrayOfStructs");
@@ -1207,12 +1307,14 @@ void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddArrayOfStructs(class UCohe
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddArray
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F5790
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddArray
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    JSEvent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<int>                    Arg                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// int                            ArrayType                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        JSEvent                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<int>                                        Arg                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		int                                                ArrayType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTBlueprintFunctionLibrary::STATIC_AddArray(class UCoherentUIGTJSEvent* JSEvent, TArray<int> Arg, int ArrayType)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBlueprintFunctionLibrary.AddArray");
@@ -1243,14 +1345,16 @@ void UCoherentUIGTBlueprintFunctionLibrary::BeforeDelete()
 
 }
 
-// Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView
-// (Final, RequiredAPI, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7D50
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView
+//		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 PageUrl                        (Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                           bIsTransparent                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          ClickThroughAlphaThreshold     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          AnimationFrameDefer            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           bDelayedUpdate                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FString                                     PageUrl                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		bool                                               bIsTransparent                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              ClickThroughAlphaThreshold                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              AnimationFrameDefer                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               bDelayedUpdate                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ACoherentUIGTGameHUD::SetupUIGTView(const struct FString& PageUrl, bool bIsTransparent, float ClickThroughAlphaThreshold, float AnimationFrameDefer, bool bDelayedUpdate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView");
@@ -1271,10 +1375,12 @@ void ACoherentUIGTGameHUD::SetupUIGTView(const struct FString& PageUrl, bool bIs
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTGameHUD.HasSetupUIGTView
-// (Final, RequiredAPI, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7130
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTGameHUD.HasSetupUIGTView
+//		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool ACoherentUIGTGameHUD::HasSetupUIGTView()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTGameHUD.HasSetupUIGTView");
@@ -1306,8 +1412,10 @@ void ACoherentUIGTGameHUD::BeforeDelete()
 	DELE_PTR_FULL(CoherentUIGTHUD);
 }
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F8080
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void ACoherentUIGTInputActor::ToggleCoherentUIGTInputFocus()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus");
@@ -1323,10 +1431,12 @@ void ACoherentUIGTInputActor::ToggleCoherentUIGTInputFocus()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetLineTraceMode
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7BF0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetLineTraceMode
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<CoherentUIGTPlugin_EGTInputWidgetLineTraceMode> Mode                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<CoherentUIGTPlugin_EGTInputWidgetLineTraceMode> Mode                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ACoherentUIGTInputActor::SetLineTraceMode(TEnumAsByte<CoherentUIGTPlugin_EGTInputWidgetLineTraceMode> Mode)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetLineTraceMode");
@@ -1343,10 +1453,12 @@ void ACoherentUIGTInputActor::SetLineTraceMode(TEnumAsByte<CoherentUIGTPlugin_EG
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetInputPropagationBehaviour
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7B70
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetInputPropagationBehaviour
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<CoherentUIGTPlugin_ECoherentUIGTInputPropagationBehaviour> Propagation                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<CoherentUIGTPlugin_ECoherentUIGTInputPropagationBehaviour> Propagation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ACoherentUIGTInputActor::SetInputPropagationBehaviour(TEnumAsByte<CoherentUIGTPlugin_ECoherentUIGTInputPropagationBehaviour> Propagation)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetInputPropagationBehaviour");
@@ -1363,10 +1475,12 @@ void ACoherentUIGTInputActor::SetInputPropagationBehaviour(TEnumAsByte<CoherentU
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7AF0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTBaseComponent* NewFocusedView                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTBaseComponent*                  NewFocusedView                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ACoherentUIGTInputActor::SetCoherentUIGTViewFocus(class UCoherentUIGTBaseComponent* NewFocusedView)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus");
@@ -1383,10 +1497,12 @@ void ACoherentUIGTInputActor::SetCoherentUIGTViewFocus(class UCoherentUIGTBaseCo
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTInputFocus
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7A60
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTInputFocus
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           FocusUI                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               FocusUI                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ACoherentUIGTInputActor::SetCoherentUIGTInputFocus(bool FocusUI)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTInputFocus");
@@ -1403,10 +1519,12 @@ void ACoherentUIGTInputActor::SetCoherentUIGTInputFocus(bool FocusUI)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F7340
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool ACoherentUIGTInputActor::IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED");
@@ -1424,10 +1542,12 @@ bool ACoherentUIGTInputActor::IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATE
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsCoherentUIGTFocused
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F72B0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsCoherentUIGTFocused
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool ACoherentUIGTInputActor::IsCoherentUIGTFocused()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsCoherentUIGTFocused");
@@ -1445,13 +1565,15 @@ bool ACoherentUIGTInputActor::IsCoherentUIGTFocused()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.Initialize
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7160
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.Initialize
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<Engine_ECollisionChannel> CollisionChannel               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<Engine_ETextureAddress> AddressMode                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<CoherentUIGTPlugin_EGTInputWidgetRaycastQuality> RaycastQuality                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            UVChannel                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Engine_ECollisionChannel>              CollisionChannel                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Engine_ETextureAddress>                AddressMode                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<CoherentUIGTPlugin_EGTInputWidgetRaycastQuality> RaycastQuality                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                UVChannel                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ACoherentUIGTInputActor::Initialize(TEnumAsByte<Engine_ECollisionChannel> CollisionChannel, TEnumAsByte<Engine_ETextureAddress> AddressMode, TEnumAsByte<CoherentUIGTPlugin_EGTInputWidgetRaycastQuality> RaycastQuality, int UVChannel)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.Initialize");
@@ -1471,10 +1593,12 @@ void ACoherentUIGTInputActor::Initialize(TEnumAsByte<Engine_ECollisionChannel> C
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.GetInputPropagationBehaviour
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F6E60
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.GetInputPropagationBehaviour
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TEnumAsByte<CoherentUIGTPlugin_ECoherentUIGTInputPropagationBehaviour> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<CoherentUIGTPlugin_ECoherentUIGTInputPropagationBehaviour> ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<CoherentUIGTPlugin_ECoherentUIGTInputPropagationBehaviour> ACoherentUIGTInputActor::GetInputPropagationBehaviour()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.GetInputPropagationBehaviour");
@@ -1492,10 +1616,12 @@ TEnumAsByte<CoherentUIGTPlugin_ECoherentUIGTInputPropagationBehaviour> ACoherent
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.AlwaysAcceptMouseInput
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6640
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.AlwaysAcceptMouseInput
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           bAccept                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               bAccept                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ACoherentUIGTInputActor::AlwaysAcceptMouseInput(bool bAccept)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.AlwaysAcceptMouseInput");
@@ -1512,10 +1638,12 @@ void ACoherentUIGTInputActor::AlwaysAcceptMouseInput(bool bAccept)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTInputActor.AllowJoystickInputWhileUIGTIsFocused_DEPRECATED
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F65B0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTInputActor.AllowJoystickInputWhileUIGTIsFocused_DEPRECATED
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           bAllow                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               bAllow                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ACoherentUIGTInputActor::AllowJoystickInputWhileUIGTIsFocused_DEPRECATED(bool bAllow)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.AllowJoystickInputWhileUIGTIsFocused_DEPRECATED");
@@ -1556,10 +1684,12 @@ void UCoherentUIGTSettings::BeforeDelete()
 
 }
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F8560
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 // Parameters:
-// class UStructProperty*         Arg                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UStructProperty*                             Arg                                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTWidget::UpdateWholeDataModelFromStruct(class UStructProperty* Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct");
@@ -1576,10 +1706,12 @@ void UCoherentUIGTWidget::UpdateWholeDataModelFromStruct(class UStructProperty* 
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F83F0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 // Parameters:
-// class UObject*                 Model                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     Model                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTWidget::UpdateWholeDataModelFromObject(class UObject* Model)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject");
@@ -1596,11 +1728,13 @@ void UCoherentUIGTWidget::UpdateWholeDataModelFromObject(class UObject* Model)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F8290
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 // Parameters:
-// struct FString                 Name                           (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UCoherentUIGTJSEvent*    EventData                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Name                                                       (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        EventData                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTWidget::TriggerJSEvent(const struct FString& Name, class UCoherentUIGTJSEvent* EventData)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent");
@@ -1618,8 +1752,10 @@ void UCoherentUIGTWidget::TriggerJSEvent(const struct FString& Name, class UCohe
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.SynchronizeModels
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F8060
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.SynchronizeModels
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 void UCoherentUIGTWidget::SynchronizeModels()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SynchronizeModels");
@@ -1635,10 +1771,12 @@ void UCoherentUIGTWidget::SynchronizeModels()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.ShowPaintRects
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7FB0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.ShowPaintRects
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           show                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               show                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UCoherentUIGTWidget::ShowPaintRects(bool show)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.ShowPaintRects");
@@ -1655,10 +1793,12 @@ void UCoherentUIGTWidget::ShowPaintRects(bool show)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetClickThroughAlphaThreshold
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F79E0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.SetClickThroughAlphaThreshold
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          Threshold                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Threshold                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTWidget::SetClickThroughAlphaThreshold(float Threshold)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetClickThroughAlphaThreshold");
@@ -1675,8 +1815,10 @@ void UCoherentUIGTWidget::SetClickThroughAlphaThreshold(float Threshold)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.Reload
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7880
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.Reload
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCoherentUIGTWidget::Reload()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.Reload");
@@ -1692,8 +1834,10 @@ void UCoherentUIGTWidget::Reload()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.Redraw
-// (Final, Native, Public, BlueprintCallable, Const)
+// Function:
+//		Offset -> 0x044F7840
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.Redraw
+//		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 void UCoherentUIGTWidget::Redraw()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.Redraw");
@@ -1709,10 +1853,12 @@ void UCoherentUIGTWidget::Redraw()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.Load
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F7530
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.Load
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 path                           (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     path                                                       (Parm, ZeroConstructor, HasGetValueTypeHash)
 void UCoherentUIGTWidget::Load(const struct FString& path)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.Load");
@@ -1729,10 +1875,12 @@ void UCoherentUIGTWidget::Load(const struct FString& path)
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.IsTransparent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F7460
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.IsTransparent
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTWidget::IsTransparent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.IsTransparent");
@@ -1750,10 +1898,12 @@ bool UCoherentUIGTWidget::IsTransparent()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyToCreateView
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F7400
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyToCreateView
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTWidget::IsReadyToCreateView()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyToCreateView");
@@ -1771,10 +1921,12 @@ bool UCoherentUIGTWidget::IsReadyToCreateView()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyForBindings
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F73A0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyForBindings
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTWidget::IsReadyForBindings()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyForBindings");
@@ -1792,10 +1944,12 @@ bool UCoherentUIGTWidget::IsReadyForBindings()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.IsDocumentReady
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F7310
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.IsDocumentReady
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTWidget::IsDocumentReady()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.IsDocumentReady");
@@ -1813,10 +1967,12 @@ bool UCoherentUIGTWidget::IsDocumentReady()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.HasRequestedView
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F7100
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.HasRequestedView
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCoherentUIGTWidget::HasRequestedView()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.HasRequestedView");
@@ -1834,10 +1990,12 @@ bool UCoherentUIGTWidget::HasRequestedView()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F6FB0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UTextureRenderTarget2D*  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UTextureRenderTarget2D*                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UTextureRenderTarget2D* UCoherentUIGTWidget::GetRenderTexture()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture");
@@ -1855,10 +2013,12 @@ class UTextureRenderTarget2D* UCoherentUIGTWidget::GetRenderTexture()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.GetClickThroughAlphaThreshold
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044F6E30
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.GetClickThroughAlphaThreshold
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UCoherentUIGTWidget::GetClickThroughAlphaThreshold()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.GetClickThroughAlphaThreshold");
@@ -1876,8 +2036,10 @@ float UCoherentUIGTWidget::GetClickThroughAlphaThreshold()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.EndDebugFrameSave
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6D50
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.EndDebugFrameSave
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCoherentUIGTWidget::EndDebugFrameSave()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.EndDebugFrameSave");
@@ -1893,8 +2055,10 @@ void UCoherentUIGTWidget::EndDebugFrameSave()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.DebugSaveNextFrame
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6C80
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.DebugSaveNextFrame
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCoherentUIGTWidget::DebugSaveNextFrame()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.DebugSaveNextFrame");
@@ -1910,10 +2074,12 @@ void UCoherentUIGTWidget::DebugSaveNextFrame()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6C30
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UCoherentUIGTJSEvent*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCoherentUIGTJSEvent*                        ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UCoherentUIGTJSEvent* UCoherentUIGTWidget::CreateJSEvent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent");
@@ -1931,11 +2097,13 @@ class UCoherentUIGTJSEvent* UCoherentUIGTWidget::CreateJSEvent()
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F6A20
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 Name                           (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UStructProperty*         Arg                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Name                                                       (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UStructProperty*                             Arg                                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTWidget::CreateDataModelFromStruct(const struct FString& Name, class UStructProperty* Arg)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct");
@@ -1953,11 +2121,13 @@ void UCoherentUIGTWidget::CreateDataModelFromStruct(const struct FString& Name, 
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F67F0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 Name                           (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UObject*                 Model                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Name                                                       (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UObject*                                     Model                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCoherentUIGTWidget::CreateDataModelFromObject(const struct FString& Name, class UObject* Model)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject");
@@ -1975,8 +2145,10 @@ void UCoherentUIGTWidget::CreateDataModelFromObject(const struct FString& Name, 
 }
 
 
-// Function CoherentUIGTPlugin.CoherentUIGTWidget.BeginDebugFrameSave
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044F66F0
+//		Name   -> Function CoherentUIGTPlugin.CoherentUIGTWidget.BeginDebugFrameSave
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCoherentUIGTWidget::BeginDebugFrameSave()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.BeginDebugFrameSave");

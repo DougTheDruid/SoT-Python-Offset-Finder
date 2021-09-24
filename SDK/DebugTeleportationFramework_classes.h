@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -84,7 +84,7 @@ public:
 class ADebugTeleportationDestinationService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_T76G[0x18];                                    // 0x03D0(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_EJIN[0x18];                                    // 0x03D0(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FDebugTeleportDestinationEntry>      DebugTeleportationRegistry;                                // 0x03E8(0x0010) (Net, ZeroConstructor)
 
 

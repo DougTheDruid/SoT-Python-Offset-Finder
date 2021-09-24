@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.UserConstructionScript");
@@ -34,8 +36,10 @@ void ABP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C::UserConstructionScrip
 }
 
 
-// Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.ReceiveBeginPlay");
@@ -50,10 +54,12 @@ void ABP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.ReceiveEndPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.ReceiveEndPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<Engine_EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.ReceiveEndPlay");
@@ -69,10 +75,12 @@ void ABP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C::ReceiveEndPlay(TEnumA
 }
 
 
-// Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.ExecuteUbergraph_BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.ExecuteUbergraph_BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C::ExecuteUbergraph_BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA.BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C.ExecuteUbergraph_BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,12 +24,12 @@ namespace CG
 class AEmoteCard : public AActor
 {
 public:
-	unsigned char                                      UnknownData_ET9V[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MVEF[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UMaterialInstanceDynamic*                    DynamicCardSelectionMaterialInstance;                      // 0x03D8(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                        MeshComponent;                                             // 0x03E0(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       RandomCardParameterName;                                   // 0x03E8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FInt32Range                                 RandomCardParameterRange;                                  // 0x03F0(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_NIBH[0x110];                                   // 0x0400(0x0110) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3AAJ[0x110];                                   // 0x0400(0x0110) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -50,7 +50,7 @@ public:
 class AEmoteCoin : public AActor
 {
 public:
-	unsigned char                                      UnknownData_6D0Q[0x118];                                   // 0x03D0(0x0118) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3NGX[0x118];                                   // 0x03D0(0x0118) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -61,6 +61,71 @@ public:
 
 
 
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// Class EmotingFramework.EmotePropData
+// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+class UEmotePropData : public UDataAsset
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = UObject::FindClass("Class EmotingFramework.EmotePropData");
+		return ptr;
+	}
+
+
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// Class EmotingFramework.EmotePropDiceData
+// 0x0008 (FullSize[0x0030] - InheritedSize[0x0028])
+class UEmotePropDiceData : public UEmotePropData
+{
+public:
+	TEnumAsByte<EmotingFramework_EDiceType>            DiceType;                                                  // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_ALUN[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = UObject::FindClass("Class EmotingFramework.EmotePropDiceData");
+		return ptr;
+	}
+
+
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// Class EmotingFramework.EmoteDice
+// 0x0118 (FullSize[0x04E8] - InheritedSize[0x03D0])
+class AEmoteDice : public AActor
+{
+public:
+	unsigned char                                      UnknownData_JF37[0x118];                                   // 0x03D0(0x0118) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = UObject::FindClass("Class EmotingFramework.EmoteDice");
+		return ptr;
+	}
+
+
+
+	void SetDiceMesh(TEnumAsByte<EmotingFramework_EDiceType> DiceType);
+	void RollDice(int RollNumber, TEnumAsByte<EmotingFramework_EDiceType> DiceType);
 	void AfterRead();
 	void BeforeDelete();
 
@@ -93,7 +158,7 @@ class UEmoteSettings : public UDeveloperSettings
 {
 public:
 	int                                                Pages;                                                     // 0x0038(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ILXR[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EQ0P[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

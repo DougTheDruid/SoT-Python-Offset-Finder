@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,7 +22,7 @@ namespace CG
 // Function BP_Prompt_TunnelOfTheDamned_BootyWillBeLost.BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C.On Crew Entered Radius
 struct UBP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C_On_Crew_Entered_Radius_Params
 {
-	struct FCrewEnteredTunnelOfTheDamnedPortalProximityEvent Event;                                                     // (Parm)
+	struct FCrewEnteredTunnelOfTheDamnedPortalProximityEvent Event;                                                     // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_TunnelOfTheDamned_BootyWillBeLost.BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C.Evaluate
@@ -43,13 +43,13 @@ struct UBP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C_UnregisterOtherEvents_Impl
 // Function BP_Prompt_TunnelOfTheDamned_BootyWillBeLost.BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C.Crew Entered Tunnel of The Damned Portal Proximity
 struct UBP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C_Crew_Entered_Tunnel_of_The_Damned_Portal_Proximity_Params
 {
-	struct FCrewEnteredTunnelOfTheDamnedPortalProximityEvent Event;                                                     // (Parm)
+	struct FCrewEnteredTunnelOfTheDamnedPortalProximityEvent Event;                                                     // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_TunnelOfTheDamned_BootyWillBeLost.BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C.ExecuteUbergraph_BP_Prompt_TunnelOfTheDamned_BootyWillBeLost
 struct UBP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C_ExecuteUbergraph_BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

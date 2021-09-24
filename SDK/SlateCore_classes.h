@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UFontBulkData : public UObject
 {
 public:
-	unsigned char                                      UnknownData_CENW[0x98];                                    // 0x0028(0x0098) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QC0E[0x98];                                    // 0x0028(0x0098) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -105,7 +105,7 @@ public:
 class USlateWidgetStyleContainerBase : public UObject
 {
 public:
-	unsigned char                                      UnknownData_3C7X[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_R1A4[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

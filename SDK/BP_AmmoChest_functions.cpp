@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_AmmoChest.BP_AmmoChest_C.GetObjectDisplayName
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.GetObjectDisplayName
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FText                                       ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FText ABP_AmmoChest_C::GetObjectDisplayName()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.GetObjectDisplayName");
@@ -38,12 +40,14 @@ struct FText ABP_AmmoChest_C::GetObjectDisplayName()
 }
 
 
-// Function BP_AmmoChest.BP_AmmoChest_C.GetClosestInteractionPoint
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.GetClosestInteractionPoint
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                 ReferencePosition              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          OutInteractionPointRadius      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReferencePosition                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              OutInteractionPointRadius                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector ABP_AmmoChest_C::GetClosestInteractionPoint(const struct FVector& ReferencePosition, float* OutInteractionPointRadius)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.GetClosestInteractionPoint");
@@ -64,8 +68,10 @@ struct FVector ABP_AmmoChest_C::GetClosestInteractionPoint(const struct FVector&
 }
 
 
-// Function BP_AmmoChest.BP_AmmoChest_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_AmmoChest_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.UserConstructionScript");
@@ -80,8 +86,10 @@ void ABP_AmmoChest_C::UserConstructionScript()
 }
 
 
-// Function BP_AmmoChest.BP_AmmoChest_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_AmmoChest_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.ReceiveBeginPlay");
@@ -96,10 +104,12 @@ void ABP_AmmoChest_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Client
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Client
+//		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
-// class AActor*                  InInteractor                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AActor*                                      InInteractor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_AmmoChest_C::Blueprint_OnInteract_Client(class AActor* InInteractor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Client");
@@ -115,10 +125,12 @@ void ABP_AmmoChest_C::Blueprint_OnInteract_Client(class AActor* InInteractor)
 }
 
 
-// Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Server
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Server
+//		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
-// class AActor*                  InInteractor                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AActor*                                      InInteractor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_AmmoChest_C::Blueprint_OnInteract_Server(class AActor* InInteractor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Server");
@@ -134,10 +146,12 @@ void ABP_AmmoChest_C::Blueprint_OnInteract_Server(class AActor* InInteractor)
 }
 
 
-// Function BP_AmmoChest.BP_AmmoChest_C.ExecuteUbergraph_BP_AmmoChest
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.ExecuteUbergraph_BP_AmmoChest
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_AmmoChest_C::ExecuteUbergraph_BP_AmmoChest(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.ExecuteUbergraph_BP_AmmoChest");

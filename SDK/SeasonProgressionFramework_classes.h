@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -44,9 +44,9 @@ public:
 class USeasonProgressionExclusionComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_WA2V[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9U2R[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	bool                                               ShouldBeExcludedFromSeasonProgessionValue;                 // 0x00D0(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_7SMB[0x7];                                     // 0x00D1(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UXJQ[0x7];                                     // 0x00D1(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

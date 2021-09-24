@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -30,10 +30,12 @@ void UOcclusionInterface::BeforeDelete()
 
 }
 
-// Function Occlusion.OcclusionService.OnPrimaryActorEndPlay
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0329A0E0
+//		Name   -> Function Occlusion.OcclusionService.OnPrimaryActorEndPlay
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UOcclusionService::OnPrimaryActorEndPlay(class AActor* InActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Occlusion.OcclusionService.OnPrimaryActorEndPlay");
@@ -50,10 +52,12 @@ void UOcclusionService::OnPrimaryActorEndPlay(class AActor* InActor)
 }
 
 
-// Function Occlusion.OcclusionService.OnIgnoredActorEndPlay
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0329A060
+//		Name   -> Function Occlusion.OcclusionService.OnIgnoredActorEndPlay
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UOcclusionService::OnIgnoredActorEndPlay(class AActor* InActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Occlusion.OcclusionService.OnIgnoredActorEndPlay");

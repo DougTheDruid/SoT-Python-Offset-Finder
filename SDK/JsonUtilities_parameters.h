@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,17 +22,17 @@ namespace CG
 // Function JsonUtilities.JsonUtilitiesBlueprintHelperLibrary.UStructToJsonObjectString
 struct UJsonUtilitiesBlueprintHelperLibrary_UStructToJsonObjectString_Params
 {
-	struct FGenericStruct                              Struct;                                                    // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-	struct FString                                     OutJsonString;                                             // (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGenericStruct                              Struct;                                                    // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+	struct FString                                     OutJsonString;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                               ReturnValue;                                               // 0x0018(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function JsonUtilities.JsonUtilitiesBlueprintHelperLibrary.JsonObjectStringToUStruct
 struct UJsonUtilitiesBlueprintHelperLibrary_JsonObjectStringToUStruct_Params
 {
-	struct FString                                     InJsonString;                                              // (Parm, ZeroConstructor, HasGetValueTypeHash)
-	struct FGenericStruct                              Struct;                                                    // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FString                                     InJsonString;                                              // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash)
+	struct FGenericStruct                              Struct;                                                    // 0x0010(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+	bool                                               ReturnValue;                                               // 0x0014(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 }

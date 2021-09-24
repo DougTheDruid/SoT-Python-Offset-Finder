@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -103,7 +103,7 @@ public:
 class UMockWindService : public UObject
 {
 public:
-	unsigned char                                      UnknownData_7136[0x18];                                    // 0x0028(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_90C9[0x18];                                    // 0x0028(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -124,7 +124,7 @@ public:
 class UTestWindInterface : public UObject
 {
 public:
-	unsigned char                                      UnknownData_OQ1D[0x30];                                    // 0x0028(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_RZ6S[0x30];                                    // 0x0028(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	unsigned char                                      WindZones[0x10];                                           // 0x0028(0x0010) UNKNOWN PROPERTY: ArrayProperty Wind.TestWindInterface.WindZones
 
 
@@ -146,7 +146,7 @@ public:
 class UTestWindZone : public UObject
 {
 public:
-	unsigned char                                      UnknownData_L0QE[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6CB9[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -189,12 +189,12 @@ public:
 class AWindService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_F56B[0x10];                                    // 0x03D0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_33QE[0x10];                                    // 0x03D0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class AWindDirectionalSource*                      GlobalWindSource;                                          // 0x03E0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_MJQ1[0x10];                                    // 0x03E8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_V5OS[0x10];                                    // 0x03E8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              CurrentWindAngle;                                          // 0x03F8(0x0004) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	float                                              CurrentWindMagnitude;                                      // 0x03FC(0x0004) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_MHUX[0xE0];                                    // 0x0400(0x00E0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7ZVR[0xE0];                                    // 0x0400(0x00E0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	unsigned char                                      WindZones[0x10];                                           // 0x0400(0x0010) UNKNOWN PROPERTY: ArrayProperty Wind.WindService.WindZones
 
 
@@ -219,7 +219,7 @@ public:
 class ADebugWindService : public AWindService
 {
 public:
-	unsigned char                                      UnknownData_PXBX[0x10];                                    // 0x04F0(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_D2HW[0x10];                                    // 0x04F0(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -261,10 +261,10 @@ public:
 class UWindZoneComponent : public USceneComponent
 {
 public:
-	unsigned char                                      UnknownData_36DL[0x8];                                     // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_M6GX[0x8];                                     // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FWindTurbulenceParameters                   TurbulenceParams;                                          // 0x02B8(0x0070) (Edit, BlueprintVisible)
 	struct FWindZoneParams                             WindZoneParams;                                            // 0x0328(0x0010) (Edit, BlueprintVisible)
-	unsigned char                                      UnknownData_OL56[0x8];                                     // 0x0338(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4CRF[0x8];                                     // 0x0338(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

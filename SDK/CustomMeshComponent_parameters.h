@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,8 +22,8 @@ namespace CG
 // Function CustomMeshComponent.CustomMeshComponent.SetCustomMeshTriangles
 struct UCustomMeshComponent_SetCustomMeshTriangles_Params
 {
-	TArray<struct FCustomMeshTriangle>                 Triangles;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	TArray<struct FCustomMeshTriangle>                 Triangles;                                                 // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	bool                                               ReturnValue;                                               // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function CustomMeshComponent.CustomMeshComponent.ClearCustomMeshTriangles
@@ -34,7 +34,7 @@ struct UCustomMeshComponent_ClearCustomMeshTriangles_Params
 // Function CustomMeshComponent.CustomMeshComponent.AddCustomMeshTriangles
 struct UCustomMeshComponent_AddCustomMeshTriangles_Params
 {
-	TArray<struct FCustomMeshTriangle>                 Triangles;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FCustomMeshTriangle>                 Triangles;                                                 // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 }

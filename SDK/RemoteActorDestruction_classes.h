@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -46,7 +46,7 @@ public:
 class ARemoteActorDestructionService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_DSLK[0x18];                                    // 0x03D0(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QFLD[0x18];                                    // 0x03D0(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

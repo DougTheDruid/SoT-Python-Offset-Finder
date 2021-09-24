@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -27,9 +27,9 @@ struct AMapTable_C_UpdateBlurEffect_Params
 // Function MapTable.MapTable_C.GetClosestInteractionPoint
 struct AMapTable_C_GetClosestInteractionPoint_Params
 {
-	struct FVector                                     ReferencePosition;                                         // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-	float                                              OutInteractionPointRadius;                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FVector                                     ReferencePosition;                                         // 0x0000(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+	float                                              OutInteractionPointRadius;                                 // 0x000C(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                     ReturnValue;                                               // 0x0010(0x000C)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function MapTable.MapTable_C.UserConstructionScript
@@ -50,21 +50,21 @@ struct AMapTable_C_SetEffectActiveWhenClose_Params
 // Function MapTable.MapTable_C.OnMapActivate
 struct AMapTable_C_OnMapActivate_Params
 {
-	bool                                               IsMapActive;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	class UTextureRenderTarget2D*                      Texture;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               IsMapActive;                                               // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UTextureRenderTarget2D*                      Texture;                                                   // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function MapTable.MapTable_C.OnMapMove
 struct AMapTable_C_OnMapMove_Params
 {
-	struct FVector2D                                   CentreLocation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector2D                                   ZoomLevel;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector2D                                   CentreLocation;                                            // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector2D                                   ZoomLevel;                                                 // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function MapTable.MapTable_C.ExecuteUbergraph_MapTable
 struct AMapTable_C_ExecuteUbergraph_MapTable_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

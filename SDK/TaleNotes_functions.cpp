@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,12 +18,14 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function TaleNotes.TaleNote.OnTextCanvasUpdate
-// (Final, Native, Protected)
+// Function:
+//		Offset -> 0x03F00DA0
+//		Name   -> Function TaleNotes.TaleNote.OnTextCanvasUpdate
+//		Flags  -> (Final, Native, Protected)
 // Parameters:
-// class UCanvas*                 InCanvas                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            InWidth                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            InHeight                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCanvas*                                     InCanvas                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                InWidth                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                InHeight                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ATaleNote::OnTextCanvasUpdate(class UCanvas* InCanvas, int InWidth, int InHeight)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function TaleNotes.TaleNote.OnTextCanvasUpdate");

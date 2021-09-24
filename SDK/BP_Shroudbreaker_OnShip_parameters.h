@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShroudBreakerObjectEmitterComponent
 struct ABP_Shroudbreaker_OnShip_C_GetShroudBreakerObjectEmitterComponent_Params
 {
-	class UWwiseEmitterComponent*                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	class UWwiseEmitterComponent*                      ReturnValue;                                               // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetShipHullAudio
 struct ABP_Shroudbreaker_OnShip_C_GetShipHullAudio_Params
 {
-	class AShipHullAudio*                              ShipHullAudioRef;                                          // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AShipHullAudio*                              ShipHullAudioRef;                                          // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRep_ShroudBreakerDeactivate
@@ -49,15 +49,15 @@ struct ABP_Shroudbreaker_OnShip_C_OnRep_MusicZoneActive_Params
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UnregisterShipEvent
 struct ABP_Shroudbreaker_OnShip_C_UnregisterShipEvent_Params
 {
-	struct FObjectMessagingDispatcherHandle            Dispatcher;                                                // (Parm, OutParm, ReferenceParm)
-	struct FObjectMessagingHandle                      Handle;                                                    // (Parm, OutParm, ReferenceParm)
+	struct FObjectMessagingDispatcherHandle            Dispatcher;                                                // 0x0000(0x0008)  (Parm, OutParm, ReferenceParm)
+	struct FObjectMessagingHandle                      Handle;                                                    // 0x0008(0x0048)  (Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.GetObjMsgDispatcher
 struct ABP_Shroudbreaker_OnShip_C_GetObjMsgDispatcher_Params
 {
-	struct FObjectMessagingDispatcherHandle            Dispatcher;                                                // (Parm, OutParm)
-	bool                                               Success;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FObjectMessagingDispatcherHandle            Dispatcher;                                                // 0x0000(0x0008)  (Parm, OutParm)
+	bool                                               Success;                                                   // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.UserConstructionScript
@@ -73,49 +73,49 @@ struct ABP_Shroudbreaker_OnShip_C_ReceiveBeginPlay_Params
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ReceiveEndPlay
 struct ABP_Shroudbreaker_OnShip_C_ReceiveEndPlay_Params
 {
-	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerActivated
 struct ABP_Shroudbreaker_OnShip_C_OnShroudbreakerActivated_Params
 {
-	struct FShroudBreakerActivatedEvent                Ev;                                                        // (Parm)
+	struct FShroudBreakerActivatedEvent                Ev;                                                        // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShroudbreakerDeactivated
 struct ABP_Shroudbreaker_OnShip_C_OnShroudbreakerDeactivated_Params
 {
-	struct FShroudBreakerDeactivatedEvent              Ev;                                                        // (Parm)
+	struct FShroudBreakerDeactivatedEvent              Ev;                                                        // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnShipDestroyed
 struct ABP_Shroudbreaker_OnShip_C_OnShipDestroyed_Params
 {
-	struct FEventShipDestroyed                         Ev;                                                        // (Parm)
+	struct FEventShipDestroyed                         Ev;                                                        // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnActivateEffects
 struct ABP_Shroudbreaker_OnShip_C_OnActivateEffects_Params
 {
-	struct FShroudBreakerActivateEffectsEvent          Ev;                                                        // (Parm)
+	struct FShroudBreakerActivateEffectsEvent          Ev;                                                        // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnDeactivateEffects
 struct ABP_Shroudbreaker_OnShip_C_OnDeactivateEffects_Params
 {
-	struct FShroudBreakerDeactivateEffectsEvent        Ev;                                                        // (Parm)
+	struct FShroudBreakerDeactivateEffectsEvent        Ev;                                                        // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerEnteredTP
 struct ABP_Shroudbreaker_OnShip_C_PlayerEnteredTP_Params
 {
-	struct FEventPlayerEnteredIslandVicinity           Ev;                                                        // (Parm)
+	struct FEventPlayerEnteredIslandVicinity           Ev;                                                        // 0x0000(0x0020)  (Parm)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.PlayerLeftTP
 struct ABP_Shroudbreaker_OnShip_C_PlayerLeftTP_Params
 {
-	struct FEventPlayerLeftIslandVicinity              Ev;                                                        // (Parm)
+	struct FEventPlayerLeftIslandVicinity              Ev;                                                        // 0x0000(0x0020)  (Parm)
 };
 
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.OnRepFunctionDeactivateShroudBreaker
@@ -176,7 +176,7 @@ struct ABP_Shroudbreaker_OnShip_C_Deactivation_Stage_1_Params
 // Function BP_Shroudbreaker_OnShip.BP_Shroudbreaker_OnShip_C.ExecuteUbergraph_BP_Shroudbreaker_OnShip
 struct ABP_Shroudbreaker_OnShip_C_ExecuteUbergraph_BP_Shroudbreaker_OnShip_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

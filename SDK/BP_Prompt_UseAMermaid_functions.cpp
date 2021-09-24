@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.ResetState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.ResetState
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_UseAMermaid_C::ResetState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.ResetState");
@@ -34,10 +36,12 @@ void UBP_Prompt_UseAMermaid_C::ResetState()
 }
 
 
-// Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.EvaluatePromptDisplayState
-// (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.EvaluatePromptDisplayState
+//		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPromptEvaluation       ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FPromptEvaluation                           ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FPromptEvaluation UBP_Prompt_UseAMermaid_C::EvaluatePromptDisplayState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.EvaluatePromptDisplayState");
@@ -54,8 +58,10 @@ struct FPromptEvaluation UBP_Prompt_UseAMermaid_C::EvaluatePromptDisplayState()
 }
 
 
-// Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.PostInitialize
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.PostInitialize
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_UseAMermaid_C::PostInitialize()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.PostInitialize");
@@ -70,10 +76,12 @@ void UBP_Prompt_UseAMermaid_C::PostInitialize()
 }
 
 
-// Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.Prompt_MermaidActivatedLocally
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.Prompt_MermaidActivatedLocally
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FMermaidActivatedLocally Ev                             (Parm)
+//		struct FMermaidActivatedLocally                    Ev                                                         (Parm)
 void UBP_Prompt_UseAMermaid_C::Prompt_MermaidActivatedLocally(const struct FMermaidActivatedLocally& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.Prompt_MermaidActivatedLocally");
@@ -89,10 +97,12 @@ void UBP_Prompt_UseAMermaid_C::Prompt_MermaidActivatedLocally(const struct FMerm
 }
 
 
-// Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.Prompt_MermaidDeactivatedLocally
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.Prompt_MermaidDeactivatedLocally
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FMermaidDeactivatedLocally Ev                             (Parm)
+//		struct FMermaidDeactivatedLocally                  Ev                                                         (Parm)
 void UBP_Prompt_UseAMermaid_C::Prompt_MermaidDeactivatedLocally(const struct FMermaidDeactivatedLocally& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.Prompt_MermaidDeactivatedLocally");
@@ -108,10 +118,12 @@ void UBP_Prompt_UseAMermaid_C::Prompt_MermaidDeactivatedLocally(const struct FMe
 }
 
 
-// Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.Prompt_MermaidUsed
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.Prompt_MermaidUsed
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FMermaidUsedEvent       Ev                             (Parm)
+//		struct FMermaidUsedEvent                           Ev                                                         (Parm)
 void UBP_Prompt_UseAMermaid_C::Prompt_MermaidUsed(const struct FMermaidUsedEvent& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.Prompt_MermaidUsed");
@@ -127,8 +139,10 @@ void UBP_Prompt_UseAMermaid_C::Prompt_MermaidUsed(const struct FMermaidUsedEvent
 }
 
 
-// Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.UnregisterOtherEvents_Implementable
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.UnregisterOtherEvents_Implementable
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_UseAMermaid_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.UnregisterOtherEvents_Implementable");
@@ -143,10 +157,12 @@ void UBP_Prompt_UseAMermaid_C::UnregisterOtherEvents_Implementable()
 }
 
 
-// Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.RegisterCharacterEvents_Implementable
-// (Event, Public, HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.RegisterCharacterEvents_Implementable
+//		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle CharacterDispatcher            (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingDispatcherHandle            CharacterDispatcher                                        (ConstParm, Parm, OutParm, ReferenceParm)
 void UBP_Prompt_UseAMermaid_C::RegisterCharacterEvents_Implementable(const struct FObjectMessagingDispatcherHandle& CharacterDispatcher)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.RegisterCharacterEvents_Implementable");
@@ -162,10 +178,12 @@ void UBP_Prompt_UseAMermaid_C::RegisterCharacterEvents_Implementable(const struc
 }
 
 
-// Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.ExecuteUbergraph_BP_Prompt_UseAMermaid
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.ExecuteUbergraph_BP_Prompt_UseAMermaid
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Prompt_UseAMermaid_C::ExecuteUbergraph_BP_Prompt_UseAMermaid(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_UseAMermaid.BP_Prompt_UseAMermaid_C.ExecuteUbergraph_BP_Prompt_UseAMermaid");

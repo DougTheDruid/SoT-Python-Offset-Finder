@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -40,8 +40,10 @@ void AAsymmetricClientObject::BeforeDelete()
 	DELE_PTR_FULL(SpawnDependentTrackedOwnerComponent);
 }
 
-// Function AsymmetricClientServerObjectsFramework.AsymmetricObjectServerManager.OnRep_AsymmetricObjectAsset
-// (Final, RequiredAPI, Native, Private)
+// Function:
+//		Offset -> 0x0025EDA0
+//		Name   -> Function AsymmetricClientServerObjectsFramework.AsymmetricObjectServerManager.OnRep_AsymmetricObjectAsset
+//		Flags  -> (Final, RequiredAPI, Native, Private)
 void AAsymmetricObjectServerManager::OnRep_AsymmetricObjectAsset()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AsymmetricClientServerObjectsFramework.AsymmetricObjectServerManager.OnRep_AsymmetricObjectAsset");

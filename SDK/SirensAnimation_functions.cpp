@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -62,8 +62,10 @@ void USirenAnimationData::BeforeDelete()
 
 }
 
-// Function SirensAnimation.SirenAnimationInstance.ClearActiveAttack
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0147B340
+//		Name   -> Function SirensAnimation.SirenAnimationInstance.ClearActiveAttack
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void USirenAnimationInstance::ClearActiveAttack()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SirensAnimation.SirenAnimationInstance.ClearActiveAttack");
@@ -79,8 +81,10 @@ void USirenAnimationInstance::ClearActiveAttack()
 }
 
 
-// Function SirensAnimation.SirenAnimationInstance.BeginNewAttack
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0147B320
+//		Name   -> Function SirensAnimation.SirenAnimationInstance.BeginNewAttack
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void USirenAnimationInstance::BeginNewAttack()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SirensAnimation.SirenAnimationInstance.BeginNewAttack");

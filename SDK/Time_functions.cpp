@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -58,10 +58,12 @@ void FEventSetDateTime::BeforeDelete()
 {
 }
 
-// Function Time.TimeInterface.GetTime
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03086A60
+//		Name   -> Function Time.TimeInterface.GetTime
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FGameTime               ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FGameTime                                   ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FGameTime UTimeInterface::GetTime()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeInterface.GetTime");
@@ -79,10 +81,12 @@ struct FGameTime UTimeInterface::GetTime()
 }
 
 
-// Function Time.TimeInterface.GetSmoothRealWorldTime
-// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03086A20
+//		Name   -> Function Time.TimeInterface.GetSmoothRealWorldTime
+//		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FDateTime               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		struct FDateTime                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 struct FDateTime UTimeInterface::GetSmoothRealWorldTime()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeInterface.GetSmoothRealWorldTime");
@@ -100,10 +104,12 @@ struct FDateTime UTimeInterface::GetSmoothRealWorldTime()
 }
 
 
-// Function Time.TimeInterface.GetPreciseRealWorldTime
-// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x030869E0
+//		Name   -> Function Time.TimeInterface.GetPreciseRealWorldTime
+//		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FDateTime               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		struct FDateTime                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 struct FDateTime UTimeInterface::GetPreciseRealWorldTime()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeInterface.GetPreciseRealWorldTime");
@@ -121,11 +127,13 @@ struct FDateTime UTimeInterface::GetPreciseRealWorldTime()
 }
 
 
-// Function Time.TimeInterface.ConvertRealWorldTimeToGameWorldTime
-// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03086740
+//		Name   -> Function Time.TimeInterface.ConvertRealWorldTimeToGameWorldTime
+//		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FDateTime               RealWorldTime                  (ConstParm, Parm, ZeroConstructor)
-// struct FGameTime               ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FDateTime                                   RealWorldTime                                              (ConstParm, Parm, ZeroConstructor)
+//		struct FGameTime                                   ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FGameTime UTimeInterface::ConvertRealWorldTimeToGameWorldTime(const struct FDateTime& RealWorldTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeInterface.ConvertRealWorldTimeToGameWorldTime");
@@ -144,11 +152,13 @@ struct FGameTime UTimeInterface::ConvertRealWorldTimeToGameWorldTime(const struc
 }
 
 
-// Function Time.TimeInterface.ConvertGameWorldTimeToRealWorldTime
-// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x030866A0
+//		Name   -> Function Time.TimeInterface.ConvertGameWorldTimeToRealWorldTime
+//		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FGameTime               GameWorldTime                  (ConstParm, Parm)
-// struct FDateTime               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		struct FGameTime                                   GameWorldTime                                              (ConstParm, Parm)
+//		struct FDateTime                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 struct FDateTime UTimeInterface::ConvertGameWorldTimeToRealWorldTime(const struct FGameTime& GameWorldTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeInterface.ConvertGameWorldTimeToRealWorldTime");
@@ -179,10 +189,12 @@ void UTimeInterface::BeforeDelete()
 
 }
 
-// Function Time.CustomizableTimeInterface.SetTimeScalar
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03087390
+//		Name   -> Function Time.CustomizableTimeInterface.SetTimeScalar
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// int                            RequestedTimeScalar            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                RequestedTimeScalar                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCustomizableTimeInterface::SetTimeScalar(int RequestedTimeScalar)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.CustomizableTimeInterface.SetTimeScalar");
@@ -199,10 +211,12 @@ void UCustomizableTimeInterface::SetTimeScalar(int RequestedTimeScalar)
 }
 
 
-// Function Time.CustomizableTimeInterface.SetSunset
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03087290
+//		Name   -> Function Time.CustomizableTimeInterface.SetSunset
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// float                          SunsetHours                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              SunsetHours                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCustomizableTimeInterface::SetSunset(float SunsetHours)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.CustomizableTimeInterface.SetSunset");
@@ -219,10 +233,12 @@ void UCustomizableTimeInterface::SetSunset(float SunsetHours)
 }
 
 
-// Function Time.CustomizableTimeInterface.SetSunrise
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03087190
+//		Name   -> Function Time.CustomizableTimeInterface.SetSunrise
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// float                          SunriseHours                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              SunriseHours                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UCustomizableTimeInterface::SetSunrise(float SunriseHours)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.CustomizableTimeInterface.SetSunrise");
@@ -239,10 +255,12 @@ void UCustomizableTimeInterface::SetSunrise(float SunriseHours)
 }
 
 
-// Function Time.CustomizableTimeInterface.SetGameWorldTime
-// (Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03087050
+//		Name   -> Function Time.CustomizableTimeInterface.SetGameWorldTime
+//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FGameTime               RequestedTime                  (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FGameTime                                   RequestedTime                                              (ConstParm, Parm, OutParm, ReferenceParm)
 void UCustomizableTimeInterface::SetGameWorldTime(const struct FGameTime& RequestedTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.CustomizableTimeInterface.SetGameWorldTime");
@@ -259,10 +277,12 @@ void UCustomizableTimeInterface::SetGameWorldTime(const struct FGameTime& Reques
 }
 
 
-// Function Time.CustomizableTimeInterface.GetTimeScalar
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03086AA0
+//		Name   -> Function Time.CustomizableTimeInterface.GetTimeScalar
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UCustomizableTimeInterface::GetTimeScalar()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.CustomizableTimeInterface.GetTimeScalar");
@@ -280,10 +300,12 @@ int UCustomizableTimeInterface::GetTimeScalar()
 }
 
 
-// Function Time.CustomizableTimeInterface.EnableQueryServiceTime
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x030868C0
+//		Name   -> Function Time.CustomizableTimeInterface.EnableQueryServiceTime
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           Enable                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Enable                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UCustomizableTimeInterface::EnableQueryServiceTime(bool Enable)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.CustomizableTimeInterface.EnableQueryServiceTime");
@@ -312,10 +334,12 @@ void UCustomizableTimeInterface::BeforeDelete()
 
 }
 
-// Function Time.DebugTimeInterface.SetTimeScalar
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03087410
+//		Name   -> Function Time.DebugTimeInterface.SetTimeScalar
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// int                            RequestedTimeScalar            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                RequestedTimeScalar                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UDebugTimeInterface::SetTimeScalar(int RequestedTimeScalar)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.DebugTimeInterface.SetTimeScalar");
@@ -332,10 +356,12 @@ void UDebugTimeInterface::SetTimeScalar(int RequestedTimeScalar)
 }
 
 
-// Function Time.DebugTimeInterface.SetSunset
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03087310
+//		Name   -> Function Time.DebugTimeInterface.SetSunset
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// float                          SunsetHours                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              SunsetHours                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UDebugTimeInterface::SetSunset(float SunsetHours)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.DebugTimeInterface.SetSunset");
@@ -352,10 +378,12 @@ void UDebugTimeInterface::SetSunset(float SunsetHours)
 }
 
 
-// Function Time.DebugTimeInterface.SetSunrise
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03087210
+//		Name   -> Function Time.DebugTimeInterface.SetSunrise
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// float                          SunriseHours                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              SunriseHours                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UDebugTimeInterface::SetSunrise(float SunriseHours)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.DebugTimeInterface.SetSunrise");
@@ -372,10 +400,12 @@ void UDebugTimeInterface::SetSunrise(float SunriseHours)
 }
 
 
-// Function Time.DebugTimeInterface.SetGameWorldTime
-// (Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x030870F0
+//		Name   -> Function Time.DebugTimeInterface.SetGameWorldTime
+//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FGameTime               RequestedTime                  (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FGameTime                                   RequestedTime                                              (ConstParm, Parm, OutParm, ReferenceParm)
 void UDebugTimeInterface::SetGameWorldTime(const struct FGameTime& RequestedTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.DebugTimeInterface.SetGameWorldTime");
@@ -392,10 +422,12 @@ void UDebugTimeInterface::SetGameWorldTime(const struct FGameTime& RequestedTime
 }
 
 
-// Function Time.DebugTimeInterface.GetTimeScalar
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03086AD0
+//		Name   -> Function Time.DebugTimeInterface.GetTimeScalar
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UDebugTimeInterface::GetTimeScalar()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.DebugTimeInterface.GetTimeScalar");
@@ -413,10 +445,12 @@ int UDebugTimeInterface::GetTimeScalar()
 }
 
 
-// Function Time.DebugTimeInterface.EnableQueryServiceTime
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03086950
+//		Name   -> Function Time.DebugTimeInterface.EnableQueryServiceTime
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           Enable                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Enable                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UDebugTimeInterface::EnableQueryServiceTime(bool Enable)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.DebugTimeInterface.EnableQueryServiceTime");
@@ -457,11 +491,13 @@ void ULocationProviderInterface::BeforeDelete()
 
 }
 
-// Function Time.TimeBlueprintLibrary.MakeReplicatedDateTimeFromDateTime
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03086D80
+//		Name   -> Function Time.TimeBlueprintLibrary.MakeReplicatedDateTimeFromDateTime
+//		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FDateTime               InDateTime                     (Parm, ZeroConstructor)
-// struct FReplicatedDateTime     ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FDateTime                                   InDateTime                                                 (Parm, ZeroConstructor)
+//		struct FReplicatedDateTime                         ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FReplicatedDateTime UTimeBlueprintLibrary::STATIC_MakeReplicatedDateTimeFromDateTime(const struct FDateTime& InDateTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeBlueprintLibrary.MakeReplicatedDateTimeFromDateTime");
@@ -480,11 +516,13 @@ struct FReplicatedDateTime UTimeBlueprintLibrary::STATIC_MakeReplicatedDateTimeF
 }
 
 
-// Function Time.TimeBlueprintLibrary.MakeDateTimeFromReplicatedDateTime
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03086CF0
+//		Name   -> Function Time.TimeBlueprintLibrary.MakeDateTimeFromReplicatedDateTime
+//		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FReplicatedDateTime     InDateTime                     (Parm)
-// struct FDateTime               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		struct FReplicatedDateTime                         InDateTime                                                 (Parm)
+//		struct FDateTime                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 struct FDateTime UTimeBlueprintLibrary::STATIC_MakeDateTimeFromReplicatedDateTime(const struct FReplicatedDateTime& InDateTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeBlueprintLibrary.MakeDateTimeFromReplicatedDateTime");
@@ -503,17 +541,19 @@ struct FDateTime UTimeBlueprintLibrary::STATIC_MakeDateTimeFromReplicatedDateTim
 }
 
 
-// Function Time.TimeBlueprintLibrary.MakeDateTimeFromRaw
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03086B00
+//		Name   -> Function Time.TimeBlueprintLibrary.MakeDateTimeFromRaw
+//		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int                            Year                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Month                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Day                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Hour                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Minute                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Second                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Millisecond                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FDateTime               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		int                                                Year                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Month                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Day                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Hour                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Minute                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Second                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Millisecond                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FDateTime                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 struct FDateTime UTimeBlueprintLibrary::STATIC_MakeDateTimeFromRaw(int Year, int Month, int Day, int Hour, int Minute, int Second, int Millisecond)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeBlueprintLibrary.MakeDateTimeFromRaw");
@@ -538,13 +578,15 @@ struct FDateTime UTimeBlueprintLibrary::STATIC_MakeDateTimeFromRaw(int Year, int
 }
 
 
-// Function Time.TimeBlueprintLibrary.DateTimesWithinTolerance
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x030867D0
+//		Name   -> Function Time.TimeBlueprintLibrary.DateTimesWithinTolerance
+//		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FDateTime               FirstDateTime                  (Parm, ZeroConstructor)
-// struct FDateTime               SecondDateTime                 (Parm, ZeroConstructor)
-// struct FTimespan               Tolerance                      (Parm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FDateTime                                   FirstDateTime                                              (Parm, ZeroConstructor)
+//		struct FDateTime                                   SecondDateTime                                             (Parm, ZeroConstructor)
+//		struct FTimespan                                   Tolerance                                                  (Parm, ZeroConstructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UTimeBlueprintLibrary::STATIC_DateTimesWithinTolerance(const struct FDateTime& FirstDateTime, const struct FDateTime& SecondDateTime, const struct FTimespan& Tolerance)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeBlueprintLibrary.DateTimesWithinTolerance");
@@ -589,8 +631,10 @@ void UTimeFormatterInterface::BeforeDelete()
 
 }
 
-// Function Time.TimeService.OnRep_ReplicatedServerTime
-// (Final, Native, Protected)
+// Function:
+//		Offset -> 0x03087030
+//		Name   -> Function Time.TimeService.OnRep_ReplicatedServerTime
+//		Flags  -> (Final, Native, Protected)
 void ATimeService::OnRep_ReplicatedServerTime()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeService.OnRep_ReplicatedServerTime");
@@ -606,10 +650,12 @@ void ATimeService::OnRep_ReplicatedServerTime()
 }
 
 
-// Function Time.TimeService.MulticastOnServiceTimeChangedRPC
-// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Function:
+//		Offset -> 0x03086E00
+//		Name   -> Function Time.TimeService.MulticastOnServiceTimeChangedRPC
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
-// int64_t                        ServiceTimeInTicks             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int64_t                                            ServiceTimeInTicks                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ATimeService::MulticastOnServiceTimeChangedRPC(int64_t ServiceTimeInTicks)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.TimeService.MulticastOnServiceTimeChangedRPC");
@@ -638,11 +684,13 @@ void ATimeService::BeforeDelete()
 
 }
 
-// Function Time.DebugTimeService.MulticastOnTimeScalarOffsetRPC
-// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Function:
+//		Offset -> 0x03086F60
+//		Name   -> Function Time.DebugTimeService.MulticastOnTimeScalarOffsetRPC
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
-// int                            Scalar                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64_t                        Offset                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Scalar                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int64_t                                            Offset                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ADebugTimeService::MulticastOnTimeScalarOffsetRPC(int Scalar, int64_t Offset)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.DebugTimeService.MulticastOnTimeScalarOffsetRPC");
@@ -672,11 +720,13 @@ void ADebugTimeService::BeforeDelete()
 
 }
 
-// Function Time.CustomizableTimeService.MulticastOnTimeScalarOffsetRPC
-// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Function:
+//		Offset -> 0x03086E90
+//		Name   -> Function Time.CustomizableTimeService.MulticastOnTimeScalarOffsetRPC
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
-// int                            Scalar                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64_t                        Offset                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Scalar                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int64_t                                            Offset                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ACustomizableTimeService::MulticastOnTimeScalarOffsetRPC(int Scalar, int64_t Offset)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Time.CustomizableTimeService.MulticastOnTimeScalarOffsetRPC");

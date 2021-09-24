@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.GetPxActorCapacityForPhysXAggregate
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.GetPxActorCapacityForPhysXAggregate
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// unsigned char                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		unsigned char                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 unsigned char ABP_LargeShipTemplate_C::GetPxActorCapacityForPhysXAggregate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.GetPxActorCapacityForPhysXAggregate");
@@ -38,14 +40,16 @@ unsigned char ABP_LargeShipTemplate_C::GetPxActorCapacityForPhysXAggregate()
 }
 
 
-// Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.SetupMastControls
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.SetupMastControls
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UChildActorComponent*    LeftHoist                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UChildActorComponent*    RightHoist                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UChildActorComponent*    LeftAngle                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UChildActorComponent*    RightAngle                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FName                   RiggingGroupName               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UChildActorComponent*                        LeftHoist                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UChildActorComponent*                        RightHoist                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UChildActorComponent*                        LeftAngle                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UChildActorComponent*                        RightAngle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FName                                       RiggingGroupName                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_LargeShipTemplate_C::SetupMastControls(class UChildActorComponent* LeftHoist, class UChildActorComponent* RightHoist, class UChildActorComponent* LeftAngle, class UChildActorComponent* RightAngle, const struct FName& RiggingGroupName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.SetupMastControls");
@@ -65,8 +69,11 @@ void ABP_LargeShipTemplate_C::SetupMastControls(class UChildActorComponent* Left
 }
 
 
-// Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_LargeShipTemplate_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.UserConstructionScript");

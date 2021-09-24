@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -74,8 +74,10 @@ void UOceanCrawlerAnimationData::BeforeDelete()
 
 }
 
-// Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.ClearActiveAttack
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0136DCF0
+//		Name   -> Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.ClearActiveAttack
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UOceanCrawlerAnimationInstance::ClearActiveAttack()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.ClearActiveAttack");
@@ -91,8 +93,10 @@ void UOceanCrawlerAnimationInstance::ClearActiveAttack()
 }
 
 
-// Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.BeginNewAttack
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0136DCD0
+//		Name   -> Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.BeginNewAttack
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UOceanCrawlerAnimationInstance::BeginNewAttack()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.BeginNewAttack");

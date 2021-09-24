@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,11 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Sail.BP_Sail_C.Debug
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Sail.BP_Sail_C.Debug
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_Sail_C::Debug()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Sail.BP_Sail_C.Debug");
@@ -34,11 +37,13 @@ void ABP_Sail_C::Debug()
 }
 
 
-// Function BP_Sail.BP_Sail_C.Initialise
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Sail.BP_Sail_C.Initialise
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           IsMainSail                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          SailForceScalar                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               IsMainSail                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              SailForceScalar                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Sail_C::Initialise(bool IsMainSail, float SailForceScalar)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Sail.BP_Sail_C.Initialise");
@@ -55,8 +60,10 @@ void ABP_Sail_C::Initialise(bool IsMainSail, float SailForceScalar)
 }
 
 
-// Function BP_Sail.BP_Sail_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Sail.BP_Sail_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Sail_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Sail.BP_Sail_C.UserConstructionScript");

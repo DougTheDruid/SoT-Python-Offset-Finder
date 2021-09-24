@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -218,6 +218,18 @@ void UActivateableSurfaceMaterialStatusZoneInterface::BeforeDelete()
 
 }
 
+void UAppliedStatusToSelfStatCondition::AfterRead()
+{
+	UTargetedStatCondition::AfterRead();
+
+}
+
+void UAppliedStatusToSelfStatCondition::BeforeDelete()
+{
+	UTargetedStatCondition::BeforeDelete();
+
+}
+
 void UBuffReceiverInterface::AfterRead()
 {
 	UInterface::AfterRead();
@@ -254,11 +266,13 @@ void UDebugMenuStatusDataAsset::BeforeDelete()
 
 }
 
-// Function StatusEffects.StatusEffectOverlapZone.OnStatusDelayEnd
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0322A060
+//		Name   -> Function StatusEffects.StatusEffectOverlapZone.OnStatusDelayEnd
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// int                            InStatusIndex                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                  ActorRef                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                InStatusIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      ActorRef                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AStatusEffectOverlapZone::OnStatusDelayEnd(int InStatusIndex, class AActor* ActorRef)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.StatusEffectOverlapZone.OnStatusDelayEnd");
@@ -290,8 +304,10 @@ void AStatusEffectOverlapZone::BeforeDelete()
 	DELE_PTR_FULL(CollisionMesh);
 }
 
-// Function StatusEffects.DebugStatusEffectOverlapZoneVisualizerComponent.OnRep_SetDebugDrawColour
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0322A040
+//		Name   -> Function StatusEffects.DebugStatusEffectOverlapZoneVisualizerComponent.OnRep_SetDebugDrawColour
+//		Flags  -> (Final, Native, Private)
 void UDebugStatusEffectOverlapZoneVisualizerComponent::OnRep_SetDebugDrawColour()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.DebugStatusEffectOverlapZoneVisualizerComponent.OnRep_SetDebugDrawColour");
@@ -307,8 +323,10 @@ void UDebugStatusEffectOverlapZoneVisualizerComponent::OnRep_SetDebugDrawColour(
 }
 
 
-// Function StatusEffects.DebugStatusEffectOverlapZoneVisualizerComponent.OnRep_DebugBoxDimensions
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0322A020
+//		Name   -> Function StatusEffects.DebugStatusEffectOverlapZoneVisualizerComponent.OnRep_DebugBoxDimensions
+//		Flags  -> (Final, Native, Private)
 void UDebugStatusEffectOverlapZoneVisualizerComponent::OnRep_DebugBoxDimensions()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.DebugStatusEffectOverlapZoneVisualizerComponent.OnRep_DebugBoxDimensions");
@@ -422,10 +440,12 @@ void UStatusRecipientResponseList::BeforeDelete()
 
 }
 
-// Function StatusEffects.LightWeightStatusEffectManagerComponent.OnRep_ActiveEffects
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x03229EC0
+//		Name   -> Function StatusEffects.LightWeightStatusEffectManagerComponent.OnRep_ActiveEffects
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// TArray<struct FActiveStatusEffect> OldEffects                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FActiveStatusEffect>                 OldEffects                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void ULightWeightStatusEffectManagerComponent::OnRep_ActiveEffects(TArray<struct FActiveStatusEffect> OldEffects)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.LightWeightStatusEffectManagerComponent.OnRep_ActiveEffects");
@@ -442,11 +462,13 @@ void ULightWeightStatusEffectManagerComponent::OnRep_ActiveEffects(TArray<struct
 }
 
 
-// Function StatusEffects.LightWeightStatusEffectManagerComponent.MultiCast_ApplyOneShotStatus
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Function:
+//		Offset -> 0x03229A10
+//		Name   -> Function StatusEffects.LightWeightStatusEffectManagerComponent.MultiCast_ApplyOneShotStatus
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
 // Parameters:
-// TArray<struct FActiveStatusEffect> AddedEffects                   (ConstParm, Parm, ZeroConstructor, ReferenceParm)
-// TArray<struct FActiveStatusEffect> RemovedEffects                 (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FActiveStatusEffect>                 AddedEffects                                               (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FActiveStatusEffect>                 RemovedEffects                                             (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 void ULightWeightStatusEffectManagerComponent::MultiCast_ApplyOneShotStatus(TArray<struct FActiveStatusEffect> AddedEffects, TArray<struct FActiveStatusEffect> RemovedEffects)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.LightWeightStatusEffectManagerComponent.MultiCast_ApplyOneShotStatus");
@@ -560,11 +582,13 @@ void UStatusApplicationMonitorComponent::BeforeDelete()
 	DELE_PTR_FULL(StatusApplicationTrigger);
 }
 
-// Function StatusEffects.StatusEffectHelperFunctionLibrary.ApplyOneShotStatus
-// (Final, BlueprintAuthorityOnly, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03229940
+//		Name   -> Function StatusEffects.StatusEffectHelperFunctionLibrary.ApplyOneShotStatus
+//		Flags  -> (Final, BlueprintAuthorityOnly, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class AActor*                  Recipient                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FStatus                 Status                         (ConstParm, Parm, OutParm, ReferenceParm)
+//		class AActor*                                      Recipient                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FStatus                                     Status                                                     (ConstParm, Parm, OutParm, ReferenceParm)
 void UStatusEffectHelperFunctionLibrary::STATIC_ApplyOneShotStatus(class AActor* Recipient, const struct FStatus& Status)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.StatusEffectHelperFunctionLibrary.ApplyOneShotStatus");
@@ -606,10 +630,12 @@ void UStatusEffectTicketDispenserInterface::BeforeDelete()
 
 }
 
-// Function StatusEffects.StatusEffectManagerComponent.OnRep_ActiveEffects
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x03229F70
+//		Name   -> Function StatusEffects.StatusEffectManagerComponent.OnRep_ActiveEffects
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// TArray<struct FActiveStatusEffect> OldEffects                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FActiveStatusEffect>                 OldEffects                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UStatusEffectManagerComponent::OnRep_ActiveEffects(TArray<struct FActiveStatusEffect> OldEffects)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.StatusEffectManagerComponent.OnRep_ActiveEffects");
@@ -626,11 +652,13 @@ void UStatusEffectManagerComponent::OnRep_ActiveEffects(TArray<struct FActiveSta
 }
 
 
-// Function StatusEffects.StatusEffectManagerComponent.MultiCast_ApplyOneShotStatus
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Function:
+//		Offset -> 0x03229B00
+//		Name   -> Function StatusEffects.StatusEffectManagerComponent.MultiCast_ApplyOneShotStatus
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
 // Parameters:
-// TArray<struct FActiveStatusEffect> AddedEffects                   (ConstParm, Parm, ZeroConstructor, ReferenceParm)
-// TArray<struct FActiveStatusEffect> RemovedEffects                 (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FActiveStatusEffect>                 AddedEffects                                               (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FActiveStatusEffect>                 RemovedEffects                                             (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 void UStatusEffectManagerComponent::MultiCast_ApplyOneShotStatus(TArray<struct FActiveStatusEffect> AddedEffects, TArray<struct FActiveStatusEffect> RemovedEffects)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.StatusEffectManagerComponent.MultiCast_ApplyOneShotStatus");
@@ -698,10 +726,12 @@ void UStatusEffectsSettings::BeforeDelete()
 
 }
 
-// Function StatusEffects.StatusEffectVolumeComponent.UnaffectActor
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0322A120
+//		Name   -> Function StatusEffects.StatusEffectVolumeComponent.UnaffectActor
+//		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UStatusEffectVolumeComponent::UnaffectActor(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.StatusEffectVolumeComponent.UnaffectActor");
@@ -718,12 +748,14 @@ void UStatusEffectVolumeComponent::UnaffectActor(class AActor* Actor)
 }
 
 
-// Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentEndOverlap
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03229DC0
+//		Name   -> Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentEndOverlap
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      OtherActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         OtherComp                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                OtherBodyIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UStatusEffectVolumeComponent::OnParentComponentEndOverlap(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentEndOverlap");
@@ -742,14 +774,16 @@ void UStatusEffectVolumeComponent::OnParentComponentEndOverlap(class AActor* Oth
 }
 
 
-// Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentBeginOverlap
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x03229BF0
+//		Name   -> Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentBeginOverlap
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           bFromSweep                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		class AActor*                                      OtherActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         OtherComp                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                OtherBodyIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               bFromSweep                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FHitResult                                  SweepResult                                                (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 void UStatusEffectVolumeComponent::OnParentComponentBeginOverlap(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.StatusEffectVolumeComponent.OnParentComponentBeginOverlap");
@@ -770,10 +804,12 @@ void UStatusEffectVolumeComponent::OnParentComponentBeginOverlap(class AActor* O
 }
 
 
-// Function StatusEffects.StatusEffectVolumeComponent.AffectActor
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x032298C0
+//		Name   -> Function StatusEffects.StatusEffectVolumeComponent.AffectActor
+//		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UStatusEffectVolumeComponent::AffectActor(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function StatusEffects.StatusEffectVolumeComponent.AffectActor");

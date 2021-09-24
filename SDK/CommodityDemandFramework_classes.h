@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -41,21 +41,17 @@ public:
 };
 
 // Class CommodityDemandFramework.CommodityDemandFrameworkSettings
-// 0x00A0 (FullSize[0x00D8] - InheritedSize[0x0038])
+// 0x0030 (FullSize[0x0068] - InheritedSize[0x0038])
 class UCommodityDemandFrameworkSettings : public UDeveloperSettings
 {
 public:
 	float                                              DemandRefreshFrequencyInSeconds;                           // 0x0038(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       DemandCollectionId;                                        // 0x003C(0x0008) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_0O6V[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FText                                       EmissaryLockedCommodityOfferDescription;                   // 0x0048(0x0018) ELEMENT_SIZE_MISMATCH (Edit, Config)
-	unsigned char                                      UnknownData_JWNE[0x20];                                    // 0x0044(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	struct FText                                       OutOfStockLockedCommodityOfferDescription;                 // 0x0080(0x0018) ELEMENT_SIZE_MISMATCH (Edit, Config)
-	unsigned char                                      UnknownData_X5YV[0x20];                                    // 0x0080(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	int                                                CommodityPurchaseLockoutInGameDays;                        // 0x00B8(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                InGameHourWhenCommoditiesRestock;                          // 0x00BC(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameTime                                   CommodityRedemptionTimeOutPeriodInDays;                    // 0x00C0(0x0008) (Edit, Config)
-	struct FStringAssetReference                       NPCListAsset;                                              // 0x00C8(0x0010) (Edit, ZeroConstructor, Config)
+	int                                                CommodityPurchaseLockoutInGameDays;                        // 0x0044(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                InGameHourWhenCommoditiesRestock;                          // 0x0048(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_SS05[0x4];                                     // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FGameTime                                   CommodityRedemptionTimeOutPeriodInDays;                    // 0x0050(0x0008) (Edit, Config)
+	struct FStringAssetReference                       NPCListAsset;                                              // 0x0058(0x0010) (Edit, ZeroConstructor, Config)
 
 
 	static UClass* StaticClass()
@@ -96,7 +92,7 @@ public:
 class ACommodityDemandService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_BALA[0x20];                                    // 0x03D0(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_AKUY[0x20];                                    // 0x03D0(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FActiveNPCDemands                           ActiveCommodityDemands;                                    // 0x03F0(0x0020) (Net, RepNotify)
 
 
@@ -182,7 +178,7 @@ class UCommodityItemDesc : public UBootyItemDesc
 public:
 	struct FCommoditySelectionType                     CommodityType;                                             // 0x0130(0x0008) (Edit, DisableEditOnInstance)
 	TEnumAsByte<CommodityDemandFramework_ECommodityDemand> CommodityDemand;                                           // 0x0138(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_O4C4[0x7];                                     // 0x0139(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Z87Y[0x7];                                     // 0x0139(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -203,7 +199,7 @@ public:
 class UCommodityPurchaseTrackingComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_0A62[0x80];                                    // 0x00C8(0x0080) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QOZ7[0x80];                                    // 0x00C8(0x0080) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -244,7 +240,7 @@ public:
 class UCommodityRedemptionComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_8YE4[0x80];                                    // 0x00C8(0x0080) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SZAM[0x80];                                    // 0x00C8(0x0080) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class AActor*>                              PendingRedemptions;                                        // 0x0148(0x0010) (ZeroConstructor)
 
 
@@ -286,7 +282,7 @@ public:
 class UCommoditySourceComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_SRJF[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_11JU[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FName                                       NPCIdentifier;                                             // 0x00D0(0x0008) (Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
@@ -371,7 +367,7 @@ public:
 class UCrateFillerComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_MBET[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JF3M[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -413,7 +409,7 @@ class UIsWieldedCommodityItemInDemandStatCondition : public UTargetedStatConditi
 {
 public:
 	TEnumAsByte<CommodityDemandFramework_ECommodityDemand> CommodityDemand;                                           // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_CQK1[0x1F];                                    // 0x0031(0x001F) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EKLK[0x1F];                                    // 0x0031(0x001F) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -435,7 +431,7 @@ class UWasWieldedCommodityItemBoughtAtDemandStatCondition : public UTargetedStat
 {
 public:
 	TEnumAsByte<CommodityDemandFramework_ECommodityDemand> CommodityDemand;                                           // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_EVI7[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_02X8[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

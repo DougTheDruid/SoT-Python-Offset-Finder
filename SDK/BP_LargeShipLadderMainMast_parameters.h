@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,21 +22,21 @@ namespace CG
 // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.GetDockableInfo
 struct ABP_LargeShipLadderMainMast_C_GetDockableInfo_Params
 {
-	struct FDockableInfo                               ReturnValue;                                               // (Parm, OutParm, ReturnParm)
+	struct FDockableInfo                               ReturnValue;                                               // 0x0000(0x0018)  (Parm, OutParm, ReturnParm)
 };
 
 // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.Setup Spline
 struct ABP_LargeShipLadderMainMast_C_Setup_Spline_Params
 {
-	class USplineComponent*                            Spline;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	TArray<struct FVector>                             Positions;                                                 // (Parm, OutParm, ZeroConstructor, ReferenceParm)
+	class USplineComponent*                            Spline;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TArray<struct FVector>                             Positions;                                                 // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.CanInteract
 struct ABP_LargeShipLadderMainMast_C_CanInteract_Params
 {
-	class AActor*                                      InInteractor;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	class AActor*                                      InInteractor;                                              // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               ReturnValue;                                               // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_LargeShipLadderMainMast.BP_LargeShipLadderMainMast_C.UserConstructionScript

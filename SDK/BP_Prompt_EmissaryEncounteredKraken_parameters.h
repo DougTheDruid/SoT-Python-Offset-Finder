@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Prompt_EmissaryEncounteredKraken.BP_Prompt_EmissaryEncounteredKraken_C.OnEmissaryEncounteredKraken
 struct UBP_Prompt_EmissaryEncounteredKraken_C_OnEmissaryEncounteredKraken_Params
 {
-	struct FEmissaryEncounteredKrakenEvent             NewParam;                                                  // (Parm)
+	struct FEmissaryEncounteredKrakenEvent             NewParam;                                                  // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryEncounteredKraken.BP_Prompt_EmissaryEncounteredKraken_C.EmissaryEncounteredKraken
 struct UBP_Prompt_EmissaryEncounteredKraken_C_EmissaryEncounteredKraken_Params
 {
-	struct FEmissaryEncounteredKrakenEvent             NewParam;                                                  // (Parm)
+	struct FEmissaryEncounteredKrakenEvent             NewParam;                                                  // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryEncounteredKraken.BP_Prompt_EmissaryEncounteredKraken_C.Evaluate
@@ -49,7 +49,7 @@ struct UBP_Prompt_EmissaryEncounteredKraken_C_UnregisterOtherEvents_Implementabl
 // Function BP_Prompt_EmissaryEncounteredKraken.BP_Prompt_EmissaryEncounteredKraken_C.ExecuteUbergraph_BP_Prompt_EmissaryEncounteredKraken
 struct UBP_Prompt_EmissaryEncounteredKraken_C_ExecuteUbergraph_BP_Prompt_EmissaryEncounteredKraken_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -26,12 +26,12 @@ class UAthenaCheatManager : public UCheatManager
 public:
 	class ACinematicCameraController*                  CinematicCameraController;                                 // 0x0078(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                      CinematicCameraControllerClass;                            // 0x0080(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GH07[0x28];                                    // 0x0088(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PSIP[0x28];                                    // 0x0088(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FWorldMarkerDesc>                    CreatedWorldMarkers;                                       // 0x00B0(0x0010) (ZeroConstructor, Transient)
 	class UGameEventSchedulerSettingsAsset*            DebugSchedulerSettings;                                    // 0x00C0(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AServerPerformanceReplicator*                ServerPerformanceReplicator;                               // 0x00C8(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TeleportToDigsiteHeightOffset;                             // 0x00D0(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_S084[0x4C];                                    // 0x00D4(0x004C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_OD6W[0x4C];                                    // 0x00D4(0x004C) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -125,6 +125,7 @@ public:
 	void TeleportActorToIsland(const struct FString& ActorIdString, const struct FString& IslandName);
 	void TeleportActorToDigSite(const struct FString& ActorIdString);
 	void TeleportActorToActorWithOffset(const struct FString& ActorIdString, const struct FString& DestinationActorIdString, float OffsetX, float OffsetY, float OffsetZ);
+	void SuperShovel();
 	void SuperSailor();
 	void StoreWieldedItemInBootyStorageInCurrentIsland();
 	void StoreWieldedItemInBootyStorage(const struct FString& IslandName);
@@ -183,6 +184,7 @@ public:
 	void SpawnGeyserAtLocation(float LocationX, float LocationY, float LocationZ, float Dormancy);
 	void SpawnFogAtPlayerPosition();
 	void SpawnFishAtPlayerLocation(const struct FString& InBaitType);
+	void SpawnFirework(const struct FString& FireworkItemString);
 	void SpawnCursedCannonball(const struct FString& CannonballTypeString);
 	void SpawnCollectorsChestOfType(struct FString* ChestTypeString);
 	void SpawnCargoRunCrate(const struct FString& SpawnCargoRunCrateString);
@@ -457,6 +459,7 @@ public:
 	void ForceNPCOnSurfaceLocation(int LoctationIndex, int LoctationPointIndex);
 	void ForceNPCOnShipIsCurrentlyInDanger(bool IsCurrentlyInDanger);
 	void ForceMigrationServiceHeartBeat();
+	void ForceGarbageCollect();
 	void ForceEmoteWithDescription(const struct FName& EmoteIdentifier, const struct FString& DisplayName, const struct FString& AudioDescription);
 	void ForceEmote(const struct FName& EmoteIdentifier);
 	void ForceCloseShop();
@@ -593,8 +596,6 @@ public:
 	void BuryItem(const struct FString& NameOfItemToBury);
 	void BreakLeg();
 	void BlockMigrationForPlayer(bool Enabled);
-	void ApplyVenomWithParams(float InitialDamage, float DamagePerSecond, float DamageOverTimeDuration);
-	void ApplyVenom();
 	void ApplyStatusToPlayer(const struct FString& StatusIdentifier, float Duration);
 	void ApplyDamageToAllDamageZones(float Damage);
 	void ApplyCursedCannonballStatusToShip(const struct FString& CannonballTypeString);

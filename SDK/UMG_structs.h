@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -127,7 +127,7 @@ struct FPropertyPathSegment
 {
 	struct FName                                       Name;                                                      // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                ArrayIndex;                                                // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_YOOJ[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_QAWR[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UStruct*                                     Struct;                                                    // 0x0010(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UField*                                      Field;                                                     // 0x0018(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -151,7 +151,7 @@ struct FDynamicPropertyPath
 // 0x00E8
 struct FEventReply
 {
-	unsigned char                                      UnknownData_JGRG[0xE8];                                    // 0x0000(0x00E8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_U1MK[0xE8];                                    // 0x0000(0x00E8) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -188,7 +188,7 @@ struct FNamedSlotBinding
 // 0x0030
 struct FPaintContext
 {
-	unsigned char                                      UnknownData_V5NW[0x30];                                    // 0x0000(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7D9J[0x30];                                    // 0x0000(0x0030) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -214,7 +214,7 @@ struct FSlateChildSize
 {
 	float                                              Value;                                                     // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<UMG_ESlateSizeRule>                    SizeRule;                                                  // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_DDX1[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3KDH[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -229,7 +229,7 @@ struct FWidgetAnimationBinding
 	struct FName                                       SlotWidgetName;                                            // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                       AnimationGuid;                                             // 0x0010(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               bIsRootWidget;                                             // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_HOO0[0x3];                                     // 0x0021(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4K2R[0x3];                                     // 0x0021(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -245,7 +245,7 @@ struct FDelegateRuntimeBinding
 	struct FName                                       FunctionName;                                              // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDynamicPropertyPath                        SourcePath;                                                // 0x0020(0x0010)
 	TEnumAsByte<UMG_EBindingKind>                      Kind;                                                      // 0x0030(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_O61O[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_55U8[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -257,9 +257,9 @@ struct FDelegateRuntimeBinding
 struct FWidgetNavigationData
 {
 	TEnumAsByte<SlateCore_EUINavigationRule>           Rule;                                                      // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ROUS[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_QVJ3[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FName                                       WidgetToFocus;                                             // 0x0004(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_TYMV[0x8];                                     // 0x000C(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5TX7[0x8];                                     // 0x000C(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

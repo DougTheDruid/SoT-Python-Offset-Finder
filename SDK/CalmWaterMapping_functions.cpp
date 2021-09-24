@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,11 +18,13 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function CalmWaterMapping.CalmWaterMappingInterface.GetDampeningFactor
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x030D80A0
+//		Name   -> Function CalmWaterMapping.CalmWaterMappingInterface.GetDampeningFactor
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector2D               InPosition                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector2D                                   InPosition                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UCalmWaterMappingInterface::GetDampeningFactor(const struct FVector2D& InPosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CalmWaterMapping.CalmWaterMappingInterface.GetDampeningFactor");
@@ -41,11 +43,13 @@ float UCalmWaterMappingInterface::GetDampeningFactor(const struct FVector2D& InP
 }
 
 
-// Function CalmWaterMapping.CalmWaterMappingInterface.GetChoppinessFactor
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x030D8000
+//		Name   -> Function CalmWaterMapping.CalmWaterMappingInterface.GetChoppinessFactor
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector2D               InPosition                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector2D                                   InPosition                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UCalmWaterMappingInterface::GetChoppinessFactor(const struct FVector2D& InPosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CalmWaterMapping.CalmWaterMappingInterface.GetChoppinessFactor");
@@ -88,10 +92,12 @@ void AAthenaCalmWaterZone::BeforeDelete()
 
 }
 
-// Function CalmWaterMapping.CalmWaterMappingService.GetMaxWindSpeed
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x030D8140
+//		Name   -> Function CalmWaterMapping.CalmWaterMappingService.GetMaxWindSpeed
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UCalmWaterMappingService::STATIC_GetMaxWindSpeed()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CalmWaterMapping.CalmWaterMappingService.GetMaxWindSpeed");

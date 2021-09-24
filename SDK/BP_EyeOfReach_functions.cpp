@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.determine sfx relationship
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.determine sfx relationship
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<RareAudio_EEmitterRelationship> Relationship                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_EyeOfReach_C::determine_sfx_relationship(TEnumAsByte<RareAudio_EEmitterRelationship>* Relationship)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.determine sfx relationship");
@@ -39,8 +41,11 @@ void ABP_EyeOfReach_C::determine_sfx_relationship(TEnumAsByte<RareAudio_EEmitter
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.DoFireEffect
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.DoFireEffect
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_EyeOfReach_C::DoFireEffect()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.DoFireEffect");
@@ -55,8 +60,10 @@ void ABP_EyeOfReach_C::DoFireEffect()
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_EyeOfReach_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.UserConstructionScript");
@@ -71,8 +78,10 @@ void ABP_EyeOfReach_C::UserConstructionScript()
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.OnWeaponFired
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.OnWeaponFired
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_EyeOfReach_C::OnWeaponFired()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.OnWeaponFired");
@@ -87,8 +96,10 @@ void ABP_EyeOfReach_C::OnWeaponFired()
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOn
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOn
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_EyeOfReach_C::ScopeOn()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOn");
@@ -103,8 +114,10 @@ void ABP_EyeOfReach_C::ScopeOn()
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOff
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOff
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_EyeOfReach_C::ScopeOff()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOff");
@@ -119,10 +132,12 @@ void ABP_EyeOfReach_C::ScopeOff()
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeTick
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeTick
+//		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
-// float                          DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              DeltaSeconds                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_EyeOfReach_C::ScopeTick(float DeltaSeconds)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeTick");
@@ -138,8 +153,10 @@ void ABP_EyeOfReach_C::ScopeTick(float DeltaSeconds)
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOffImmediate
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOffImmediate
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_EyeOfReach_C::ScopeOffImmediate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOffImmediate");
@@ -154,8 +171,10 @@ void ABP_EyeOfReach_C::ScopeOffImmediate()
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.GlintOn
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.GlintOn
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_EyeOfReach_C::GlintOn()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.GlintOn");
@@ -170,8 +189,10 @@ void ABP_EyeOfReach_C::GlintOn()
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.GlintOff
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.GlintOff
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_EyeOfReach_C::GlintOff()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.GlintOff");
@@ -186,10 +207,12 @@ void ABP_EyeOfReach_C::GlintOff()
 }
 
 
-// Function BP_EyeOfReach.BP_EyeOfReach_C.ExecuteUbergraph_BP_EyeOfReach
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_EyeOfReach.BP_EyeOfReach_C.ExecuteUbergraph_BP_EyeOfReach
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_EyeOfReach_C::ExecuteUbergraph_BP_EyeOfReach(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_EyeOfReach.BP_EyeOfReach_C.ExecuteUbergraph_BP_EyeOfReach");

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -66,10 +66,12 @@ void UOceanCrawlerAudioParamsDataAsset::BeforeDelete()
 	DELE_PTR_FULL(WwiseObjectPoolWrapper);
 }
 
-// Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayBuffAudio
-// (Final, Net, Native, Event, NetMulticast, Private)
+// Function:
+//		Offset -> 0x01368200
+//		Name   -> Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayBuffAudio
+//		Flags  -> (Final, Net, Native, Event, NetMulticast, Private)
 // Parameters:
-// struct FEventOceanCrawlerAIBuffAudioRequest InRequest                      (ConstParm, Parm, ReferenceParm)
+//		struct FEventOceanCrawlerAIBuffAudioRequest        InRequest                                                  (ConstParm, Parm, ReferenceParm)
 void UOceanCrawlerAudioBroadcaster::Multicast_PlayBuffAudio(const struct FEventOceanCrawlerAIBuffAudioRequest& InRequest)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayBuffAudio");
@@ -86,11 +88,13 @@ void UOceanCrawlerAudioBroadcaster::Multicast_PlayBuffAudio(const struct FEventO
 }
 
 
-// Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayAudio
-// (Final, Net, Native, Event, NetMulticast, Private)
+// Function:
+//		Offset -> 0x01368140
+//		Name   -> Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayAudio
+//		Flags  -> (Final, Net, Native, Event, NetMulticast, Private)
 // Parameters:
-// TEnumAsByte<AthenaAI_EOceanCrawlerAbilityAudioKey> InAudioKey                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          InAudioDelay                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<AthenaAI_EOceanCrawlerAbilityAudioKey> InAudioKey                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              InAudioDelay                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UOceanCrawlerAudioBroadcaster::Multicast_PlayAudio(TEnumAsByte<AthenaAI_EOceanCrawlerAbilityAudioKey> InAudioKey, float InAudioDelay)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayAudio");

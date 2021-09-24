@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -19,13 +19,60 @@ namespace CG
 // Script Structs
 //---------------------------------------------------------------------------
 
-// ScriptStruct CustomServerObjectMessaging.GameServerGlobalCustomServerEvent
-// 0x0028
-struct FGameServerGlobalCustomServerEvent
+// ScriptStruct CustomServerObjectMessaging.CustomServerEvent
+// 0x0018
+struct FCustomServerEvent
 {
-	struct FString                                     EventID;                                                   // 0x0000(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ServerId;                                                  // 0x0010(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FDateTime                                   ServerTimeUTC;                                             // 0x0020(0x0008) (ZeroConstructor)
+	unsigned char                                      UnknownData_A0L2[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FName                                       EventID;                                                   // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                                   ServerTimeUTC;                                             // 0x0010(0x0008) (ZeroConstructor)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct CustomServerObjectMessaging.EntityCustomServerEvent
+// 0x0008 (0x0020 - 0x0018)
+struct FEntityCustomServerEvent : public FCustomServerEvent
+{
+	int                                                EntityNetId;                                               // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_YSCL[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct CustomServerObjectMessaging.GlobalCustomServerEvent
+// 0x0000 (0x0018 - 0x0018)
+struct FGlobalCustomServerEvent : public FCustomServerEvent
+{
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct CustomServerObjectMessaging.OnCannonBallHitShipCustomServerEvent
+// 0x0018 (0x0030 - 0x0018)
+struct FOnCannonBallHitShipCustomServerEvent : public FGlobalCustomServerEvent
+{
+	struct FString                                     CannonBallType;                                            // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	int                                                ShipId;                                                    // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_GLBV[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct CustomServerObjectMessaging.PlayerCharacterEnteredShipCustomServerEvent
+// 0x0008 (0x0020 - 0x0018)
+struct FPlayerCharacterEnteredShipCustomServerEvent : public FGlobalCustomServerEvent
+{
+	int                                                UserId;                                                    // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                ShipId;                                                    // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -33,10 +80,10 @@ struct FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.WatercraftSpawnCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FWatercraftSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FWatercraftSpawnCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     WatercraftId;                                              // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     WatercraftId;                                              // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -44,10 +91,10 @@ struct FWatercraftSpawnCustomServerEvent : public FGameServerGlobalCustomServerE
 };
 
 // ScriptStruct CustomServerObjectMessaging.WatercraftDespawnCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FWatercraftDespawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FWatercraftDespawnCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     WatercraftId;                                              // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     WatercraftId;                                              // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -55,8 +102,8 @@ struct FWatercraftDespawnCustomServerEvent : public FGameServerGlobalCustomServe
 };
 
 // ScriptStruct CustomServerObjectMessaging.TreasureSpawnedCustomServerEvent
-// 0x0000 (0x0028 - 0x0028)
-struct FTreasureSpawnedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0000 (0x0018 - 0x0018)
+struct FTreasureSpawnedCustomServerEvent : public FGlobalCustomServerEvent
 {
 
 	void AfterRead();
@@ -65,14 +112,14 @@ struct FTreasureSpawnedCustomServerEvent : public FGameServerGlobalCustomServerE
 };
 
 // ScriptStruct CustomServerObjectMessaging.TreasureSoldCustomServerEvent
-// 0x0050 (0x0078 - 0x0028)
-struct FTreasureSoldCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0050 (0x0068 - 0x0018)
+struct FTreasureSoldCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     CrewId;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     TreasureType;                                              // 0x0048(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     VendorId;                                                  // 0x0058(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     CompanyId;                                                 // 0x0068(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     CrewId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     TreasureType;                                              // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     VendorId;                                                  // 0x0048(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     CompanyId;                                                 // 0x0058(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -80,10 +127,10 @@ struct FTreasureSoldCustomServerEvent : public FGameServerGlobalCustomServerEven
 };
 
 // ScriptStruct CustomServerObjectMessaging.TreasurePickedUpCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FTreasurePickedUpCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FTreasurePickedUpCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -91,11 +138,11 @@ struct FTreasurePickedUpCustomServerEvent : public FGameServerGlobalCustomServer
 };
 
 // ScriptStruct CustomServerObjectMessaging.TreasureFoundCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FTreasureFoundCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FTreasureFoundCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     TreasureType;                                              // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     TreasureType;                                              // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -103,13 +150,13 @@ struct FTreasureFoundCustomServerEvent : public FGameServerGlobalCustomServerEve
 };
 
 // ScriptStruct CustomServerObjectMessaging.TreasureDroppedCustomServerEvent
-// 0x0030 (0x0058 - 0x0028)
-struct FTreasureDroppedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0030 (0x0048 - 0x0018)
+struct FTreasureDroppedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     TreasureType;                                              // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FVector                                     Position;                                                  // 0x0048(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_8EQZ[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (PADDING)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     TreasureType;                                              // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FVector                                     Position;                                                  // 0x0038(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_OANH[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -117,10 +164,10 @@ struct FTreasureDroppedCustomServerEvent : public FGameServerGlobalCustomServerE
 };
 
 // ScriptStruct CustomServerObjectMessaging.ShovelCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FShovelCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FShovelCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -128,11 +175,11 @@ struct FShovelCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.ShipSpawnedCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FShipSpawnedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FShipSpawnedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ShipType;                                                  // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipType;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -140,11 +187,11 @@ struct FShipSpawnedCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.ShipRepairCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FShipRepairCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FShipRepairCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ShipId;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -152,10 +199,10 @@ struct FShipRepairCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.ShipOnFireEndCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FShipOnFireEndCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FShipOnFireEndCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -163,11 +210,11 @@ struct FShipOnFireEndCustomServerEvent : public FGameServerGlobalCustomServerEve
 };
 
 // ScriptStruct CustomServerObjectMessaging.ShipMastCollapseStateCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FShipMastCollapseStateCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FShipMastCollapseStateCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     MastId;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     MastId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -175,10 +222,10 @@ struct FShipMastCollapseStateCustomServerEvent : public FGameServerGlobalCustomS
 };
 
 // ScriptStruct CustomServerObjectMessaging.ShipDestroyedCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FShipDestroyedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FShipDestroyedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -186,10 +233,10 @@ struct FShipDestroyedCustomServerEvent : public FGameServerGlobalCustomServerEve
 };
 
 // ScriptStruct CustomServerObjectMessaging.ShipDamagedCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FShipDamagedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FShipDamagedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -197,10 +244,10 @@ struct FShipDamagedCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.ProjectileWeaponFiredCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FProjectileWeaponFiredCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FProjectileWeaponFiredCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -208,11 +255,11 @@ struct FProjectileWeaponFiredCustomServerEvent : public FGameServerGlobalCustomS
 };
 
 // ScriptStruct CustomServerObjectMessaging.ProjectileHitCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FProjectileHitCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FProjectileHitCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     ProjectileType;                                            // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     RecipientId;                                               // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ProjectileType;                                            // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     RecipientId;                                               // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -220,11 +267,11 @@ struct FProjectileHitCustomServerEvent : public FGameServerGlobalCustomServerEve
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerStatusEffectActivatedCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FPlayerStatusEffectActivatedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FPlayerStatusEffectActivatedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     Effect;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     Effect;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -232,11 +279,11 @@ struct FPlayerStatusEffectActivatedCustomServerEvent : public FGameServerGlobalC
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerStatusEffectDeactivatedCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FPlayerStatusEffectDeactivatedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FPlayerStatusEffectDeactivatedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     Effect;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     Effect;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -244,10 +291,10 @@ struct FPlayerStatusEffectDeactivatedCustomServerEvent : public FGameServerGloba
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerSpawnCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerSpawnCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -255,11 +302,11 @@ struct FPlayerSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerSetFootLocationCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FPlayerSetFootLocationCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FPlayerSetFootLocationCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     Location;                                                  // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     Location;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -267,10 +314,10 @@ struct FPlayerSetFootLocationCustomServerEvent : public FGameServerGlobalCustomS
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerRevivalCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerRevivalCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerRevivalCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -278,8 +325,8 @@ struct FPlayerRevivalCustomServerEvent : public FGameServerGlobalCustomServerEve
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerRequiresMermaidCustomServerEvent
-// 0x0000 (0x0028 - 0x0028)
-struct FPlayerRequiresMermaidCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0000 (0x0018 - 0x0018)
+struct FPlayerRequiresMermaidCustomServerEvent : public FGlobalCustomServerEvent
 {
 
 	void AfterRead();
@@ -288,10 +335,10 @@ struct FPlayerRequiresMermaidCustomServerEvent : public FGameServerGlobalCustomS
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerRadialChatCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerRadialChatCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerRadialChatCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -299,10 +346,10 @@ struct FPlayerRadialChatCustomServerEvent : public FGameServerGlobalCustomServer
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerObjectUsageStartCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerObjectUsageStartCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerObjectUsageStartCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -310,8 +357,8 @@ struct FPlayerObjectUsageStartCustomServerEvent : public FGameServerGlobalCustom
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerLeftGhostShipCustomServerEvent
-// 0x0000 (0x0028 - 0x0028)
-struct FPlayerLeftGhostShipCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0000 (0x0018 - 0x0018)
+struct FPlayerLeftGhostShipCustomServerEvent : public FGlobalCustomServerEvent
 {
 
 	void AfterRead();
@@ -320,10 +367,10 @@ struct FPlayerLeftGhostShipCustomServerEvent : public FGameServerGlobalCustomSer
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerKillAICustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerKillAICustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerKillAICustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -331,10 +378,10 @@ struct FPlayerKillAICustomServerEvent : public FGameServerGlobalCustomServerEven
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerItemUsageEndCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerItemUsageEndCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerItemUsageEndCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -342,10 +389,10 @@ struct FPlayerItemUsageEndCustomServerEvent : public FGameServerGlobalCustomServ
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerItemRetrievalFromContainerCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerItemRetrievalFromContainerCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerItemRetrievalFromContainerCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -353,10 +400,10 @@ struct FPlayerItemRetrievalFromContainerCustomServerEvent : public FGameServerGl
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerItemEquipCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerItemEquipCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerItemEquipCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -364,10 +411,10 @@ struct FPlayerItemEquipCustomServerEvent : public FGameServerGlobalCustomServerE
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerItemAddToContainerCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerItemAddToContainerCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerItemAddToContainerCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -375,10 +422,10 @@ struct FPlayerItemAddToContainerCustomServerEvent : public FGameServerGlobalCust
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerInReviveableStateCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerInReviveableStateCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerInReviveableStateCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -386,10 +433,10 @@ struct FPlayerInReviveableStateCustomServerEvent : public FGameServerGlobalCusto
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerHeartbeatCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerHeartbeatCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerHeartbeatCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -397,10 +444,10 @@ struct FPlayerHeartbeatCustomServerEvent : public FGameServerGlobalCustomServerE
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerHealthChangeCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerHealthChangeCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerHealthChangeCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -408,10 +455,10 @@ struct FPlayerHealthChangeCustomServerEvent : public FGameServerGlobalCustomServ
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerGameFishingCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerGameFishingCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerGameFishingCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -419,8 +466,8 @@ struct FPlayerGameFishingCustomServerEvent : public FGameServerGlobalCustomServe
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerEncounterStartCustomServerEvent
-// 0x0000 (0x0028 - 0x0028)
-struct FPlayerEncounterStartCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0000 (0x0018 - 0x0018)
+struct FPlayerEncounterStartCustomServerEvent : public FGlobalCustomServerEvent
 {
 
 	void AfterRead();
@@ -429,8 +476,8 @@ struct FPlayerEncounterStartCustomServerEvent : public FGameServerGlobalCustomSe
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerEncounterEndCustomServerEvent
-// 0x0000 (0x0028 - 0x0028)
-struct FPlayerEncounterEndCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0000 (0x0018 - 0x0018)
+struct FPlayerEncounterEndCustomServerEvent : public FGlobalCustomServerEvent
 {
 
 	void AfterRead();
@@ -439,11 +486,11 @@ struct FPlayerEncounterEndCustomServerEvent : public FGameServerGlobalCustomServ
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerEmoteCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FPlayerEmoteCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FPlayerEmoteCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     Emote;                                                     // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     Emote;                                                     // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -451,10 +498,10 @@ struct FPlayerEmoteCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerDeathCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerDeathCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerDeathCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -462,11 +509,11 @@ struct FPlayerDeathCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerChangedShipLoadoutCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FPlayerChangedShipLoadoutCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FPlayerChangedShipLoadoutCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ShipId;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -474,10 +521,10 @@ struct FPlayerChangedShipLoadoutCustomServerEvent : public FGameServerGlobalCust
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerChangedLoadoutCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerChangedLoadoutCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerChangedLoadoutCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -485,11 +532,11 @@ struct FPlayerChangedLoadoutCustomServerEvent : public FGameServerGlobalCustomSe
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerCapstanUsageStartCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FPlayerCapstanUsageStartCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FPlayerCapstanUsageStartCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ShipId;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -497,11 +544,11 @@ struct FPlayerCapstanUsageStartCustomServerEvent : public FGameServerGlobalCusto
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerCapstanUsageEndCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FPlayerCapstanUsageEndCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FPlayerCapstanUsageEndCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ShipId;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -509,10 +556,10 @@ struct FPlayerCapstanUsageEndCustomServerEvent : public FGameServerGlobalCustomS
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerBucketScoopCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerBucketScoopCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerBucketScoopCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -520,10 +567,10 @@ struct FPlayerBucketScoopCustomServerEvent : public FGameServerGlobalCustomServe
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerBucketEmptyCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FPlayerBucketEmptyCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FPlayerBucketEmptyCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -531,11 +578,11 @@ struct FPlayerBucketEmptyCustomServerEvent : public FGameServerGlobalCustomServe
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerActionCannonCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FPlayerActionCannonCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FPlayerActionCannonCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ShipId;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ShipId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -543,11 +590,11 @@ struct FPlayerActionCannonCustomServerEvent : public FGameServerGlobalCustomServ
 };
 
 // ScriptStruct CustomServerObjectMessaging.PlayerActionCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FPlayerActionCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FPlayerActionCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     Action;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     Action;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -555,10 +602,10 @@ struct FPlayerActionCustomServerEvent : public FGameServerGlobalCustomServerEven
 };
 
 // ScriptStruct CustomServerObjectMessaging.MermaidUsedCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FMermaidUsedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FMermaidUsedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -566,11 +613,11 @@ struct FMermaidUsedCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.MermaidSpawnedCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FMermaidSpawnedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FMermaidSpawnedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FVector                                     Position;                                                  // 0x0028(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_8S8V[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
+	struct FVector                                     Position;                                                  // 0x0018(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_V7F3[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -578,10 +625,10 @@ struct FMermaidSpawnedCustomServerEvent : public FGameServerGlobalCustomServerEv
 };
 
 // ScriptStruct CustomServerObjectMessaging.MeleeWeaponAttackCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FMeleeWeaponAttackCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FMeleeWeaponAttackCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -589,8 +636,8 @@ struct FMeleeWeaponAttackCustomServerEvent : public FGameServerGlobalCustomServe
 };
 
 // ScriptStruct CustomServerObjectMessaging.LevelLoadCompletedCustomServerEvent
-// 0x0000 (0x0028 - 0x0028)
-struct FLevelLoadCompletedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0000 (0x0018 - 0x0018)
+struct FLevelLoadCompletedCustomServerEvent : public FGlobalCustomServerEvent
 {
 
 	void AfterRead();
@@ -599,11 +646,11 @@ struct FLevelLoadCompletedCustomServerEvent : public FGameServerGlobalCustomServ
 };
 
 // ScriptStruct CustomServerObjectMessaging.KrakenTentacleDestroyedCustomServerEvent
-// 0x0008 (0x0030 - 0x0028)
-struct FKrakenTentacleDestroyedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0008 (0x0020 - 0x0018)
+struct FKrakenTentacleDestroyedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	int                                                TentacleRemaining;                                         // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_W9JB[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
+	int                                                TentacleRemaining;                                         // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_DU2G[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -611,11 +658,11 @@ struct FKrakenTentacleDestroyedCustomServerEvent : public FGameServerGlobalCusto
 };
 
 // ScriptStruct CustomServerObjectMessaging.KrakenSpawnCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FKrakenSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FKrakenSpawnCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FVector                                     Position;                                                  // 0x0028(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_QBQY[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
+	struct FVector                                     Position;                                                  // 0x0018(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_1ARF[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -623,11 +670,11 @@ struct FKrakenSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.ItemSpawnCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FItemSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FItemSpawnCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     ItemId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     ItemType;                                                  // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ItemId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     ItemType;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -635,8 +682,8 @@ struct FItemSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.FortWaveCompletedCustomServerEvent
-// 0x0000 (0x0028 - 0x0028)
-struct FFortWaveCompletedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0000 (0x0018 - 0x0018)
+struct FFortWaveCompletedCustomServerEvent : public FGlobalCustomServerEvent
 {
 
 	void AfterRead();
@@ -645,10 +692,10 @@ struct FFortWaveCompletedCustomServerEvent : public FGameServerGlobalCustomServe
 };
 
 // ScriptStruct CustomServerObjectMessaging.FortKeyUsedCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FFortKeyUsedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FFortKeyUsedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -656,11 +703,11 @@ struct FFortKeyUsedCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.CustomTriggerOverlapCustomServerEvent
-// 0x0008 (0x0030 - 0x0028)
-struct FCustomTriggerOverlapCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0008 (0x0020 - 0x0018)
+struct FCustomTriggerOverlapCustomServerEvent : public FGlobalCustomServerEvent
 {
-	int                                                TriggerNetId;                                              // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                OtherNetId;                                                // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                TriggerNetId;                                              // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                OtherNetId;                                                // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -668,10 +715,10 @@ struct FCustomTriggerOverlapCustomServerEvent : public FGameServerGlobalCustomSe
 };
 
 // ScriptStruct CustomServerObjectMessaging.CrewSessionLeaveCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FCrewSessionLeaveCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FCrewSessionLeaveCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     CrewId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     CrewId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -679,10 +726,10 @@ struct FCrewSessionLeaveCustomServerEvent : public FGameServerGlobalCustomServer
 };
 
 // ScriptStruct CustomServerObjectMessaging.CrewPlayerLeftCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FCrewPlayerLeftCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FCrewPlayerLeftCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     CrewId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     CrewId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -690,11 +737,11 @@ struct FCrewPlayerLeftCustomServerEvent : public FGameServerGlobalCustomServerEv
 };
 
 // ScriptStruct CustomServerObjectMessaging.CookStartCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FCookStartCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FCookStartCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     FoodType;                                                  // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     FoodType;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -702,12 +749,12 @@ struct FCookStartCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.CookEndCustomServerEvent
-// 0x0030 (0x0058 - 0x0028)
-struct FCookEndCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0030 (0x0048 - 0x0018)
+struct FCookEndCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     UserId;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     FoodType;                                                  // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     CookedState;                                               // 0x0048(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     FoodType;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     CookedState;                                               // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -715,11 +762,11 @@ struct FCookEndCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.AISpawnCustomServerEvent
-// 0x0020 (0x0048 - 0x0028)
-struct FAISpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0020 (0x0038 - 0x0018)
+struct FAISpawnCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     AIId;                                                      // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	struct FString                                     AIType;                                                    // 0x0038(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     AIId;                                                      // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     AIType;                                                    // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -727,10 +774,10 @@ struct FAISpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.AIShipSpawnCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FAIShipSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FAIShipSpawnCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     AIShipId;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     AIShipId;                                                  // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -738,10 +785,10 @@ struct FAIShipSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
 };
 
 // ScriptStruct CustomServerObjectMessaging.AIShipDespawnCustomServerEvent
-// 0x0010 (0x0038 - 0x0028)
-struct FAIShipDespawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0010 (0x0028 - 0x0018)
+struct FAIShipDespawnCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     AIShipId;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     AIShipId;                                                  // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -749,12 +796,12 @@ struct FAIShipDespawnCustomServerEvent : public FGameServerGlobalCustomServerEve
 };
 
 // ScriptStruct CustomServerObjectMessaging.AIShipDamagedCustomServerEvent
-// 0x0018 (0x0040 - 0x0028)
-struct FAIShipDamagedCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0018 (0x0030 - 0x0018)
+struct FAIShipDamagedCustomServerEvent : public FGlobalCustomServerEvent
 {
-	struct FString                                     AIShipId;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	float                                              AIShipWaterLevel;                                          // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_JDYK[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+	struct FString                                     AIShipId;                                                  // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	float                                              AIShipWaterLevel;                                          // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_GTPZ[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -762,8 +809,8 @@ struct FAIShipDamagedCustomServerEvent : public FGameServerGlobalCustomServerEve
 };
 
 // ScriptStruct CustomServerObjectMessaging.TinySharkSpawnCustomServerEvent
-// 0x0000 (0x0028 - 0x0028)
-struct FTinySharkSpawnCustomServerEvent : public FGameServerGlobalCustomServerEvent
+// 0x0000 (0x0018 - 0x0018)
+struct FTinySharkSpawnCustomServerEvent : public FGlobalCustomServerEvent
 {
 
 	void AfterRead();

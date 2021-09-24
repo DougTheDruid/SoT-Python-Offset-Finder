@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActor_EmissaryEncounteredAIShip_GH_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.UserConstructionScript");
@@ -34,8 +36,10 @@ void ABP_PromptActor_EmissaryEncounteredAIShip_GH_C::UserConstructionScript()
 }
 
 
-// Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_PromptActor_EmissaryEncounteredAIShip_GH_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.ReceiveBeginPlay");
@@ -50,10 +54,12 @@ void ABP_PromptActor_EmissaryEncounteredAIShip_GH_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.ReceiveEndPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.ReceiveEndPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<Engine_EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActor_EmissaryEncounteredAIShip_GH_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.ReceiveEndPlay");
@@ -69,10 +75,12 @@ void ABP_PromptActor_EmissaryEncounteredAIShip_GH_C::ReceiveEndPlay(TEnumAsByte<
 }
 
 
-// Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.ExecuteUbergraph_BP_PromptActor_EmissaryEncounteredAIShip_GH
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.ExecuteUbergraph_BP_PromptActor_EmissaryEncounteredAIShip_GH
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PromptActor_EmissaryEncounteredAIShip_GH_C::ExecuteUbergraph_BP_PromptActor_EmissaryEncounteredAIShip_GH(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryEncounteredAIShip_GH.BP_PromptActor_EmissaryEncounteredAIShip_GH_C.ExecuteUbergraph_BP_PromptActor_EmissaryEncounteredAIShip_GH");

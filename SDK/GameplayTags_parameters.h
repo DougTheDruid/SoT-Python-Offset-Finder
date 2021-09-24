@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,130 +22,130 @@ namespace CG
 // Function GameplayTags.GameplayTagAssetInterface.HasMatchingGameplayTag
 struct UGameplayTagAssetInterface_HasMatchingGameplayTag_Params
 {
-	struct FGameplayTag                                TagToCheck;                                                // (Parm)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTag                                TagToCheck;                                                // 0x0000(0x0008)  (Parm)
+	bool                                               ReturnValue;                                               // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.GameplayTagAssetInterface.HasAnyMatchingGameplayTags
 struct UGameplayTagAssetInterface_HasAnyMatchingGameplayTags_Params
 {
-	struct FGameplayTagContainer                       TagContainer;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               bCountEmptyAsMatch;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTagContainer                       TagContainer;                                              // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                               bCountEmptyAsMatch;                                        // 0x0028(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               ReturnValue;                                               // 0x0029(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.GameplayTagAssetInterface.HasAllMatchingGameplayTags
 struct UGameplayTagAssetInterface_HasAllMatchingGameplayTags_Params
 {
-	struct FGameplayTagContainer                       TagContainer;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               bCountEmptyAsMatch;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTagContainer                       TagContainer;                                              // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                               bCountEmptyAsMatch;                                        // 0x0028(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               ReturnValue;                                               // 0x0029(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.GameplayTagAssetInterface.GetOwnedGameplayTags
 struct UGameplayTagAssetInterface_GetOwnedGameplayTags_Params
 {
-	struct FGameplayTagContainer                       TagContainer;                                              // (Parm, OutParm)
+	struct FGameplayTagContainer                       TagContainer;                                              // 0x0000(0x0028)  (Parm, OutParm)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.MakeLiteralGameplayTag
 struct UBlueprintGameplayTagLibrary_MakeLiteralGameplayTag_Params
 {
-	struct FGameplayTag                                Value;                                                     // (Parm)
-	struct FGameplayTag                                ReturnValue;                                               // (Parm, OutParm, ReturnParm)
+	struct FGameplayTag                                Value;                                                     // 0x0000(0x0008)  (Parm)
+	struct FGameplayTag                                ReturnValue;                                               // 0x0008(0x0008)  (Parm, OutParm, ReturnParm)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagQuery
 struct UBlueprintGameplayTagLibrary_MakeGameplayTagQuery_Params
 {
-	struct FGameplayTagQuery                           TagQuery;                                                  // (Parm)
-	struct FGameplayTagQuery                           ReturnValue;                                               // (Parm, OutParm, ReturnParm)
+	struct FGameplayTagQuery                           TagQuery;                                                  // 0x0000(0x0048)  (Parm)
+	struct FGameplayTagQuery                           ReturnValue;                                               // 0x0048(0x0048)  (Parm, OutParm, ReturnParm)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.HasAllMatchingGameplayTags
 struct UBlueprintGameplayTagLibrary_HasAllMatchingGameplayTags_Params
 {
-	struct FGameplayTagContainer                       OtherContainer;                                            // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               bCountEmptyAsMatch;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTagContainer                       OtherContainer;                                            // 0x0010(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                               bCountEmptyAsMatch;                                        // 0x0038(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               ReturnValue;                                               // 0x0039(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.GetNumGameplayTagsInContainer
 struct UBlueprintGameplayTagLibrary_GetNumGameplayTagsInContainer_Params
 {
-	struct FGameplayTagContainer                       TagContainer;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                       TagContainer;                                              // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	int                                                ReturnValue;                                               // 0x0028(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.DoGameplayTagsMatch
 struct UBlueprintGameplayTagLibrary_DoGameplayTagsMatch_Params
 {
-	struct FGameplayTag                                TagOne;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                                TagTwo;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    TagOneMatchType;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    TagTwoMatchType;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTag                                TagOne;                                                    // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                                TagTwo;                                                    // 0x0008(0x0008)  (ConstParm, Parm, OutParm, ReferenceParm)
+	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    TagOneMatchType;                                           // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    TagTwoMatchType;                                           // 0x0011(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               ReturnValue;                                               // 0x0012(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.DoesTagAssetInterfaceHaveTag
 struct UBlueprintGameplayTagLibrary_DoesTagAssetInterfaceHaveTag_Params
 {
-	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    ContainerTagsMatchType;                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                                Tag;                                                       // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    TagMatchType;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    ContainerTagsMatchType;                                    // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                                Tag;                                                       // 0x0014(0x0008)  (ConstParm, Parm, OutParm, ReferenceParm)
+	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    TagMatchType;                                              // 0x001C(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               ReturnValue;                                               // 0x001D(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchTagQuery
 struct UBlueprintGameplayTagLibrary_DoesContainerMatchTagQuery_Params
 {
-	struct FGameplayTagContainer                       TagContainer;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTagQuery                           TagQuery;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTagContainer                       TagContainer;                                              // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTagQuery                           TagQuery;                                                  // 0x0028(0x0048)  (ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                               ReturnValue;                                               // 0x0070(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchAnyTagsInContainer
 struct UBlueprintGameplayTagLibrary_DoesContainerMatchAnyTagsInContainer_Params
 {
-	struct FGameplayTagContainer                       TagContainer;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTagContainer                       OtherContainer;                                            // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               bCountEmptyAsMatch;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTagContainer                       TagContainer;                                              // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                       OtherContainer;                                            // 0x0028(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                               bCountEmptyAsMatch;                                        // 0x0050(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               ReturnValue;                                               // 0x0051(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchAllTagsInContainer
 struct UBlueprintGameplayTagLibrary_DoesContainerMatchAllTagsInContainer_Params
 {
-	struct FGameplayTagContainer                       TagContainer;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTagContainer                       OtherContainer;                                            // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               bCountEmptyAsMatch;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTagContainer                       TagContainer;                                              // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                       OtherContainer;                                            // 0x0028(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                               bCountEmptyAsMatch;                                        // 0x0050(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               ReturnValue;                                               // 0x0051(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerHaveTag
 struct UBlueprintGameplayTagLibrary_DoesContainerHaveTag_Params
 {
-	struct FGameplayTagContainer                       TagContainer;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    ContainerTagsMatchType;                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                                Tag;                                                       // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    TagMatchType;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTagContainer                       TagContainer;                                              // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    ContainerTagsMatchType;                                    // 0x0028(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                                Tag;                                                       // 0x002C(0x0008)  (ConstParm, Parm, OutParm, ReferenceParm)
+	TEnumAsByte<GameplayTags_EGameplayTagMatchType>    TagMatchType;                                              // 0x0034(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               ReturnValue;                                               // 0x0035(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.BlueprintGameplayTagLibrary.AppendGameplayTagContainers
 struct UBlueprintGameplayTagLibrary_AppendGameplayTagContainers_Params
 {
-	struct FGameplayTagContainer                       InTagContainer;                                            // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTagContainer                       InOutTagContainer;                                         // (Parm, OutParm, ReferenceParm)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FGameplayTagContainer                       InTagContainer;                                            // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                       InOutTagContainer;                                         // 0x0028(0x0028)  (Parm, OutParm, ReferenceParm)
+	bool                                               ReturnValue;                                               // 0x0050(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayTags.GameplayTagsManager.RequestGameplayTag
 struct UGameplayTagsManager_RequestGameplayTag_Params
 {
-	struct FName                                       TagName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               ErrorIfNotFound;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FGameplayTag                                ReturnValue;                                               // (Parm, OutParm, ReturnParm)
+	struct FName                                       TagName;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               ErrorIfNotFound;                                           // 0x0008(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FGameplayTag                                ReturnValue;                                               // 0x000C(0x0008)  (Parm, OutParm, ReturnParm)
 };
 
 }

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.OnEmissarySunk
 struct UBP_Prompt_EmissarySunk_C_OnEmissarySunk_Params
 {
-	struct FEmissarySunkNetworkEvent                   NewParam;                                                  // (Parm)
+	struct FEmissarySunkNetworkEvent                   NewParam;                                                  // 0x0000(0x0020)  (Parm)
 };
 
 // Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.EmissarySunk
 struct UBP_Prompt_EmissarySunk_C_EmissarySunk_Params
 {
-	struct FEmissarySunkNetworkEvent                   NewParam;                                                  // (Parm)
+	struct FEmissarySunkNetworkEvent                   NewParam;                                                  // 0x0000(0x0020)  (Parm)
 };
 
 // Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.Evaluate
@@ -49,7 +49,7 @@ struct UBP_Prompt_EmissarySunk_C_UnregisterOtherEvents_Implementable_Params
 // Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.ExecuteUbergraph_BP_Prompt_EmissarySunk
 struct UBP_Prompt_EmissarySunk_C_ExecuteUbergraph_BP_Prompt_EmissarySunk_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

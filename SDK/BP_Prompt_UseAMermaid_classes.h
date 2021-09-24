@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -26,15 +26,15 @@ class UBP_Prompt_UseAMermaid_C : public UBP_PromptCoordinator_Base_C
 public:
 	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0118(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
 	bool                                               State_IsThereAMermaid;                                     // 0x0120(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_BF04[0x7];                                     // 0x0121(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9KV2[0x7];                                     // 0x0121(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FObjectMessagingHandle                      Handle_OnMermaidActivatedLocally;                          // 0x0128(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FObjectMessagingHandle                      Handle_OnMermaidDeactivatedLocally;                        // 0x0170(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FObjectMessagingHandle                      Handle_OnMermaidUsed;                                      // 0x01B8(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                               State_MermaidUsed;                                         // 0x0200(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_5O2D[0x7];                                     // 0x0201(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_IHDP[0x7];                                     // 0x0201(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FPrioritisedPromptWithHandle                Prompt_UseMermaid;                                         // 0x0208(0x0068) (Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                               State_ShowPrompt;                                          // 0x0270(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_98OK[0x3];                                     // 0x0271(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9Q46[0x3];                                     // 0x0271(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              PromptDisplayDuration;                                     // 0x0274(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                              PromptHideDuration;                                        // 0x0278(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

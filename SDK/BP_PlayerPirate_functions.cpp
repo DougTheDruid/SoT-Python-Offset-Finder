@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.GetPxActorCapacityForPhysXAggregate
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.GetPxActorCapacityForPhysXAggregate
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// unsigned char                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		unsigned char                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 unsigned char ABP_PlayerPirate_C::GetPxActorCapacityForPhysXAggregate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.GetPxActorCapacityForPhysXAggregate");
@@ -38,10 +40,12 @@ unsigned char ABP_PlayerPirate_C::GetPxActorCapacityForPhysXAggregate()
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.TattoGlowDynamicMaterials
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.TattoGlowDynamicMaterials
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMeshComponent*          Mesh                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UMeshComponent*                              Mesh                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::TattoGlowDynamicMaterials(class UMeshComponent* Mesh)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.TattoGlowDynamicMaterials");
@@ -57,10 +61,12 @@ void ABP_PlayerPirate_C::TattoGlowDynamicMaterials(class UMeshComponent* Mesh)
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.GetMouthPosition
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.GetMouthPosition
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector ABP_PlayerPirate_C::GetMouthPosition()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.GetMouthPosition");
@@ -77,8 +83,10 @@ struct FVector ABP_PlayerPirate_C::GetMouthPosition()
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_PlayerPirate_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.UserConstructionScript");
@@ -93,10 +101,12 @@ void ABP_PlayerPirate_C::UserConstructionScript()
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.Update Athena Character
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.Update Athena Character
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AAthenaCharacter*        AthenaCharacter                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AAthenaCharacter*                            AthenaCharacter                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::Update_Athena_Character(class AAthenaCharacter* AthenaCharacter)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.Update Athena Character");
@@ -112,10 +122,12 @@ void ABP_PlayerPirate_C::Update_Athena_Character(class AAthenaCharacter* AthenaC
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.CapstanRotationSpeed
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.CapstanRotationSpeed
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          RotationSpeed                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              RotationSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::CapstanRotationSpeed(float RotationSpeed)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.CapstanRotationSpeed");
@@ -131,10 +143,12 @@ void ABP_PlayerPirate_C::CapstanRotationSpeed(float RotationSpeed)
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.DockingInterface
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.DockingInterface
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FBP_Docking             Docking                        (Parm)
+//		struct FBP_Docking                                 Docking                                                    (Parm)
 void ABP_PlayerPirate_C::DockingInterface(const struct FBP_Docking& Docking)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.DockingInterface");
@@ -150,13 +164,15 @@ void ABP_PlayerPirate_C::DockingInterface(const struct FBP_Docking& Docking)
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.CapstanForce
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.CapstanForce
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          IndividualForce                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTransform              LH_IK                          (Parm, IsPlainOldData, NoDestructor)
-// struct FTransform              RH_IK                          (Parm, IsPlainOldData, NoDestructor)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              IndividualForce                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  LH_IK                                                      (Parm, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  RH_IK                                                      (Parm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::CapstanForce(float IndividualForce, const struct FTransform& LH_IK, const struct FTransform& RH_IK, class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.CapstanForce");
@@ -175,11 +191,13 @@ void ABP_PlayerPirate_C::CapstanForce(float IndividualForce, const struct FTrans
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Update Transform
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Update Transform
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTransform              TransformUpdate                (Parm, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  TransformUpdate                                            (Parm, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::IK_Limb_Update_Transform(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, const struct FTransform& TransformUpdate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Update Transform");
@@ -196,12 +214,14 @@ void ABP_PlayerPirate_C::IK_Limb_Update_Transform(TEnumAsByte<EIKLimbName_EIKLim
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Blend Timing
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Blend Timing
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          BlendIn                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          BlendOut                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              BlendIn                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              BlendOut                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::IK_Limb_Blend_Timing(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, float BlendIn, float BlendOut)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Blend Timing");
@@ -219,12 +239,14 @@ void ABP_PlayerPirate_C::IK_Limb_Blend_Timing(TEnumAsByte<EIKLimbName_EIKLimbNam
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Update Strength
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Update Strength
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          LocationStrength               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          RotationStrength               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              LocationStrength                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              RotationStrength                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::IK_Limb_Update_Strength(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, float LocationStrength, float RotationStrength)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Update Strength");
@@ -242,12 +264,14 @@ void ABP_PlayerPirate_C::IK_Limb_Update_Strength(TEnumAsByte<EIKLimbName_EIKLimb
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Active
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Active
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Active                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<Animation_ELimbIKSpace> CoordinateSpace                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Active                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Animation_ELimbIKSpace>                CoordinateSpace                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::IK_Limb_Active(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, bool Active, TEnumAsByte<Animation_ELimbIKSpace> CoordinateSpace)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Active");
@@ -265,12 +289,14 @@ void ABP_PlayerPirate_C::IK_Limb_Active(TEnumAsByte<EIKLimbName_EIKLimbName> Lim
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Stretch
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Stretch
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          ArmStretch                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          SpineStretch                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          LegStretch                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              ArmStretch                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              SpineStretch                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              LegStretch                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::IK_Limb_Stretch(float ArmStretch, float SpineStretch, float LegStretch)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.IK Limb Stretch");
@@ -288,8 +314,10 @@ void ABP_PlayerPirate_C::IK_Limb_Stretch(float ArmStretch, float SpineStretch, f
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_PlayerPirate_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.ReceiveBeginPlay");
@@ -304,8 +332,10 @@ void ABP_PlayerPirate_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.TriggerTattooGlow
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.TriggerTattooGlow
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_PlayerPirate_C::TriggerTattooGlow()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.TriggerTattooGlow");
@@ -320,12 +350,14 @@ void ABP_PlayerPirate_C::TriggerTattooGlow()
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.ScaleMesh
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.ScaleMesh
+//		Flags  -> (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                 Scale                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UPrimitiveComponent*     FirstPersonMesh                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UPrimitiveComponent*     ThirdPersonMesh                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     Scale                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UPrimitiveComponent*                         FirstPersonMesh                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UPrimitiveComponent*                         ThirdPersonMesh                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::ScaleMesh(const struct FVector& Scale, class UPrimitiveComponent* FirstPersonMesh, class UPrimitiveComponent* ThirdPersonMesh)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.ScaleMesh");
@@ -343,8 +375,10 @@ void ABP_PlayerPirate_C::ScaleMesh(const struct FVector& Scale, class UPrimitive
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.SkipToNextMesh
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.SkipToNextMesh
+//		Flags  -> (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 void ABP_PlayerPirate_C::SkipToNextMesh()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.SkipToNextMesh");
@@ -359,17 +393,19 @@ void ABP_PlayerPirate_C::SkipToNextMesh()
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.SetWieldedItemMesh
-// (Net, NetReliable, NetMulticast, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.SetWieldedItemMesh
+//		Flags  -> (Net, NetReliable, NetMulticast, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AWieldableItem*          Wieldable_Item_Ref             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UStaticMesh*             StaticMesh                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USkeletalMesh*           SkeletalMesh                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           WieldItem                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class UStaticMesh*>     StaticMeshArray                (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class USkeletalMesh*>   SkeletalMeshArray              (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// struct FVector                 ItemScale                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           UseItemScale                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AWieldableItem*                              Wieldable_Item_Ref                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UStaticMesh*                                 StaticMesh                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class USkeletalMesh*                               SkeletalMesh                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               WieldItem                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TArray<class UStaticMesh*>                         StaticMeshArray                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<class USkeletalMesh*>                       SkeletalMeshArray                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		struct FVector                                     ItemScale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               UseItemScale                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::SetWieldedItemMesh(class AWieldableItem* Wieldable_Item_Ref, class UStaticMesh* StaticMesh, class USkeletalMesh* SkeletalMesh, bool WieldItem, TArray<class UStaticMesh*>* StaticMeshArray, TArray<class USkeletalMesh*>* SkeletalMeshArray, const struct FVector& ItemScale, bool UseItemScale)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.SetWieldedItemMesh");
@@ -395,10 +431,12 @@ void ABP_PlayerPirate_C::SetWieldedItemMesh(class AWieldableItem* Wieldable_Item
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.IncreaseWieldedObjectScale
-// (Net, NetServer, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.IncreaseWieldedObjectScale
+//		Flags  -> (Net, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                 ItemScaleIncrement             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ItemScaleIncrement                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::IncreaseWieldedObjectScale(const struct FVector& ItemScaleIncrement)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.IncreaseWieldedObjectScale");
@@ -414,10 +452,12 @@ void ABP_PlayerPirate_C::IncreaseWieldedObjectScale(const struct FVector& ItemSc
 }
 
 
-// Function BP_PlayerPirate.BP_PlayerPirate_C.ExecuteUbergraph_BP_PlayerPirate
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PlayerPirate.BP_PlayerPirate_C.ExecuteUbergraph_BP_PlayerPirate
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PlayerPirate_C::ExecuteUbergraph_BP_PlayerPirate(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate.BP_PlayerPirate_C.ExecuteUbergraph_BP_PlayerPirate");
@@ -437,7 +477,6 @@ void ABP_PlayerPirate_C::AfterRead()
 {
 	AAthenaPlayerCharacter::AfterRead();
 
-	READ_PTR_FULL(VenomableComponent, UVenomableComponent);
 	READ_PTR_FULL(ChainLightningReceiver, UChainLightningReceiverComponent);
 	READ_PTR_FULL(StatusApplicationMonitor, UStatusApplicationMonitorComponent);
 	READ_PTR_FULL(ReviveComponent, UReviveComponent);
@@ -462,7 +501,6 @@ void ABP_PlayerPirate_C::BeforeDelete()
 {
 	AAthenaPlayerCharacter::BeforeDelete();
 
-	DELE_PTR_FULL(VenomableComponent);
 	DELE_PTR_FULL(ChainLightningReceiver);
 	DELE_PTR_FULL(StatusApplicationMonitor);
 	DELE_PTR_FULL(ReviveComponent);

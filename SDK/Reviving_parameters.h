@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -32,7 +32,7 @@ struct UDeathSelfInteractionComponent_OnRep_HasGivenUp_Params
 // Function Reviving.ReviveComponent.OnRep_ReviveState
 struct UReviveComponent_OnRep_ReviveState_Params
 {
-	TEnumAsByte<Reviving_EReviveState>                 PreviousReviveState;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<Reviving_EReviveState>                 PreviousReviveState;                                       // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Reviving.ReviveComponent.HandleOwningCharacterEndPlay

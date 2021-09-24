@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -32,7 +32,7 @@ struct ABP_Harpoon_C_ReceiveBeginPlay_Params
 // Function BP_Harpoon.BP_Harpoon_C.ExecuteUbergraph_BP_Harpoon
 struct ABP_Harpoon_C_ExecuteUbergraph_BP_Harpoon_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

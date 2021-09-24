@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -38,10 +38,12 @@ void FEventInteractionBlockingStateChanged::BeforeDelete()
 {
 }
 
-// Function Interaction.InteractableComponent.SetBoxOrigin
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D48E0
+//		Name   -> Function Interaction.InteractableComponent.SetBoxOrigin
+//		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector                 IntBoxOrigin                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     IntBoxOrigin                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UInteractableComponent::SetBoxOrigin(const struct FVector& IntBoxOrigin)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.SetBoxOrigin");
@@ -58,10 +60,12 @@ void UInteractableComponent::SetBoxOrigin(const struct FVector& IntBoxOrigin)
 }
 
 
-// Function Interaction.InteractableComponent.SetBoxExtent
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D4850
+//		Name   -> Function Interaction.InteractableComponent.SetBoxExtent
+//		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector                 InBoxExtent                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     InBoxExtent                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UInteractableComponent::SetBoxExtent(const struct FVector& InBoxExtent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.SetBoxExtent");
@@ -78,10 +82,12 @@ void UInteractableComponent::SetBoxExtent(const struct FVector& InBoxExtent)
 }
 
 
-// Function Interaction.InteractableComponent.GetInteractableArea
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D44D0
+//		Name   -> Function Interaction.InteractableComponent.GetInteractableArea
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UInteractableArea*       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UInteractableArea*                           ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UInteractableArea* UInteractableComponent::GetInteractableArea()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetInteractableArea");
@@ -99,10 +105,12 @@ class UInteractableArea* UInteractableComponent::GetInteractableArea()
 }
 
 
-// Function Interaction.InteractableComponent.GetBoxWorldOrigin
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4320
+//		Name   -> Function Interaction.InteractableComponent.GetBoxWorldOrigin
+//		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector UInteractableComponent::GetBoxWorldOrigin()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetBoxWorldOrigin");
@@ -120,10 +128,12 @@ struct FVector UInteractableComponent::GetBoxWorldOrigin()
 }
 
 
-// Function Interaction.InteractableComponent.GetBoxSphereRadius
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D42F0
+//		Name   -> Function Interaction.InteractableComponent.GetBoxSphereRadius
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UInteractableComponent::GetBoxSphereRadius()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetBoxSphereRadius");
@@ -141,10 +151,12 @@ float UInteractableComponent::GetBoxSphereRadius()
 }
 
 
-// Function Interaction.InteractableComponent.GetBoxOrigin
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D42B0
+//		Name   -> Function Interaction.InteractableComponent.GetBoxOrigin
+//		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 ReturnValue                    (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor)
 struct FVector UInteractableComponent::GetBoxOrigin()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetBoxOrigin");
@@ -162,10 +174,12 @@ struct FVector UInteractableComponent::GetBoxOrigin()
 }
 
 
-// Function Interaction.InteractableComponent.GetBoxExtent
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4270
+//		Name   -> Function Interaction.InteractableComponent.GetBoxExtent
+//		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 ReturnValue                    (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor)
 struct FVector UInteractableComponent::GetBoxExtent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetBoxExtent");
@@ -209,11 +223,13 @@ void UInteractionValidatorSetterInterface::BeforeDelete()
 
 }
 
-// Function Interaction.CharacterInteractionComponent.IsInteractionValid
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D46A0
+//		Name   -> Function Interaction.CharacterInteractionComponent.IsInteractionValid
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 InInteractable                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UObject*                                     InInteractable                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCharacterInteractionComponent::IsInteractionValid(class UObject* InInteractable)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.CharacterInteractionComponent.IsInteractionValid");
@@ -232,8 +248,10 @@ bool UCharacterInteractionComponent::IsInteractionValid(class UObject* InInterac
 }
 
 
-// Function Interaction.CharacterInteractionComponent.InvalidateOptimalObject
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D4650
+//		Name   -> Function Interaction.CharacterInteractionComponent.InvalidateOptimalObject
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCharacterInteractionComponent::InvalidateOptimalObject()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.CharacterInteractionComponent.InvalidateOptimalObject");
@@ -249,10 +267,12 @@ void UCharacterInteractionComponent::InvalidateOptimalObject()
 }
 
 
-// Function Interaction.CharacterInteractionComponent.GetOptimalFocusObject
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4530
+//		Name   -> Function Interaction.CharacterInteractionComponent.GetOptimalFocusObject
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UInteractableArea*       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UInteractableArea*                           ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UInteractableArea* UCharacterInteractionComponent::GetOptimalFocusObject()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.CharacterInteractionComponent.GetOptimalFocusObject");
@@ -270,8 +290,10 @@ class UInteractableArea* UCharacterInteractionComponent::GetOptimalFocusObject()
 }
 
 
-// Function Interaction.CharacterInteractionComponent.ClearAllPolicies
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D4020
+//		Name   -> Function Interaction.CharacterInteractionComponent.ClearAllPolicies
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCharacterInteractionComponent::ClearAllPolicies()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.CharacterInteractionComponent.ClearAllPolicies");
@@ -313,10 +335,12 @@ void UGroupedInteractableAreaComponent::BeforeDelete()
 
 }
 
-// Function Interaction.InteractableArea.SetParent
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D4AD0
+//		Name   -> Function Interaction.InteractableArea.SetParent
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  InParent                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InParent                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UInteractableArea::SetParent(class AActor* InParent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.SetParent");
@@ -333,10 +357,12 @@ void UInteractableArea::SetParent(class AActor* InParent)
 }
 
 
-// Function Interaction.InteractableArea.SetInteractable
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D4970
+//		Name   -> Function Interaction.InteractableArea.SetInteractable
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 InInteractable                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     InInteractable                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UInteractableArea::SetInteractable(class UObject* InInteractable)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.SetInteractable");
@@ -353,10 +379,12 @@ void UInteractableArea::SetInteractable(class UObject* InInteractable)
 }
 
 
-// Function Interaction.InteractableArea.SetAreaName
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D47C0
+//		Name   -> Function Interaction.InteractableArea.SetAreaName
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FName                   InName                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       InName                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UInteractableArea::SetAreaName(const struct FName& InName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.SetAreaName");
@@ -373,10 +401,12 @@ void UInteractableArea::SetAreaName(const struct FName& InName)
 }
 
 
-// Function Interaction.InteractableArea.SetAreaBounds
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D4730
+//		Name   -> Function Interaction.InteractableArea.SetAreaBounds
+//		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FBoxSphereBounds        InBounds                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FBoxSphereBounds                            InBounds                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UInteractableArea::SetAreaBounds(const struct FBoxSphereBounds& InBounds)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.SetAreaBounds");
@@ -393,10 +423,12 @@ void UInteractableArea::SetAreaBounds(const struct FBoxSphereBounds& InBounds)
 }
 
 
-// Function Interaction.InteractableArea.GetParent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4560
+//		Name   -> Function Interaction.InteractableArea.GetParent
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class AActor*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class AActor* UInteractableArea::GetParent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetParent");
@@ -414,10 +446,12 @@ class AActor* UInteractableArea::GetParent()
 }
 
 
-// Function Interaction.InteractableArea.GetInteractable
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D44A0
+//		Name   -> Function Interaction.InteractableArea.GetInteractable
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UObject*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UObject* UInteractableArea::GetInteractable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetInteractable");
@@ -435,10 +469,12 @@ class UObject* UInteractableArea::GetInteractable()
 }
 
 
-// Function Interaction.InteractableArea.GetAreaName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4230
+//		Name   -> Function Interaction.InteractableArea.GetAreaName
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 struct FName UInteractableArea::GetAreaName()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetAreaName");
@@ -456,10 +492,12 @@ struct FName UInteractableArea::GetAreaName()
 }
 
 
-// Function Interaction.InteractableArea.GetAreaLocation
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D41F0
+//		Name   -> Function Interaction.InteractableArea.GetAreaLocation
+//		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector UInteractableArea::GetAreaLocation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetAreaLocation");
@@ -477,10 +515,12 @@ struct FVector UInteractableArea::GetAreaLocation()
 }
 
 
-// Function Interaction.InteractableArea.GetAreaBounds
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D41B0
+//		Name   -> Function Interaction.InteractableArea.GetAreaBounds
+//		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FBoxSphereBounds        ReturnValue                    (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FBoxSphereBounds                            ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor)
 struct FBoxSphereBounds UInteractableArea::GetAreaBounds()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetAreaBounds");
@@ -514,12 +554,14 @@ void UInteractableArea::BeforeDelete()
 	DELE_PTR_FULL(Parent);
 }
 
-// Function Interaction.InteractableInterface.ShouldDrawTooltipInWorldSpace
-// (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x032D4B50
+//		Name   -> Function Interaction.InteractableInterface.ShouldDrawTooltipInWorldSpace
+//		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  InInteractor                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 DesiredTooltipWorldPosition    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      InInteractor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     DesiredTooltipWorldPosition                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UInteractableInterface::ShouldDrawTooltipInWorldSpace(class AActor* InInteractor, struct FVector* DesiredTooltipWorldPosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.ShouldDrawTooltipInWorldSpace");
@@ -541,10 +583,12 @@ bool UInteractableInterface::ShouldDrawTooltipInWorldSpace(class AActor* InInter
 }
 
 
-// Function Interaction.InteractableInterface.IsInteractableDisabled
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4670
+//		Name   -> Function Interaction.InteractableInterface.IsInteractableDisabled
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UInteractableInterface::IsInteractableDisabled()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.IsInteractableDisabled");
@@ -562,11 +606,13 @@ bool UInteractableInterface::IsInteractableDisabled()
 }
 
 
-// Function Interaction.InteractableInterface.Interact
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x032D4590
+//		Name   -> Function Interaction.InteractableInterface.Interact
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  InInteractor                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  NotificationInputId            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class AActor*                                      InInteractor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      NotificationInputId                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 void UInteractableInterface::Interact(class AActor* InInteractor, class UClass* NotificationInputId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.Interact");
@@ -584,10 +630,12 @@ void UInteractableInterface::Interact(class AActor* InInteractor, class UClass* 
 }
 
 
-// Function Interaction.InteractableInterface.GetInteractionState
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4500
+//		Name   -> Function Interaction.InteractableInterface.GetInteractionState
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// TEnumAsByte<Athena_EInteractableState> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Athena_EInteractableState>             ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<Athena_EInteractableState> UInteractableInterface::GetInteractionState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetInteractionState");
@@ -605,10 +653,12 @@ TEnumAsByte<Athena_EInteractableState> UInteractableInterface::GetInteractionSta
 }
 
 
-// Function Interaction.InteractableInterface.GetFrontFacingVector
-// (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4460
+//		Name   -> Function Interaction.InteractableInterface.GetFrontFacingVector
+//		Flags  -> (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector UInteractableInterface::GetFrontFacingVector()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetFrontFacingVector");
@@ -626,12 +676,14 @@ struct FVector UInteractableInterface::GetFrontFacingVector()
 }
 
 
-// Function Interaction.InteractableInterface.GetClosestInteractionPoint
-// (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x032D4360
+//		Name   -> Function Interaction.InteractableInterface.GetClosestInteractionPoint
+//		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                 ReferencePosition              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          OutInteractionPointRadius      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReferencePosition                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              OutInteractionPointRadius                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector UInteractableInterface::GetClosestInteractionPoint(const struct FVector& ReferencePosition, float* OutInteractionPointRadius)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetClosestInteractionPoint");
@@ -653,10 +705,12 @@ struct FVector UInteractableInterface::GetClosestInteractionPoint(const struct F
 }
 
 
-// Function Interaction.InteractableInterface.GetActorsToIgnoreDuringOcclusionChecker
-// (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4100
+//		Name   -> Function Interaction.InteractableInterface.GetActorsToIgnoreDuringOcclusionChecker
+//		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// TArray<class AActor*>          ActorsToIgnore                 (Parm, OutParm, ZeroConstructor)
+//		TArray<class AActor*>                              ActorsToIgnore                                             (Parm, OutParm, ZeroConstructor)
 void UInteractableInterface::GetActorsToIgnoreDuringOcclusionChecker(TArray<class AActor*>* ActorsToIgnore)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetActorsToIgnoreDuringOcclusionChecker");
@@ -675,10 +729,12 @@ void UInteractableInterface::GetActorsToIgnoreDuringOcclusionChecker(TArray<clas
 }
 
 
-// Function Interaction.InteractableInterface.GetActionRulesComponent
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D40D0
+//		Name   -> Function Interaction.InteractableInterface.GetActionRulesComponent
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class UActionRulesComponent*   ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UActionRulesComponent*                       ReturnValue                                                (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UActionRulesComponent* UInteractableInterface::GetActionRulesComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetActionRulesComponent");
@@ -696,10 +752,12 @@ class UActionRulesComponent* UInteractableInterface::GetActionRulesComponent()
 }
 
 
-// Function Interaction.InteractableInterface.DoesRequireNotSwimming
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D40A0
+//		Name   -> Function Interaction.InteractableInterface.DoesRequireNotSwimming
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UInteractableInterface::DoesRequireNotSwimming()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.DoesRequireNotSwimming");
@@ -717,10 +775,12 @@ bool UInteractableInterface::DoesRequireNotSwimming()
 }
 
 
-// Function Interaction.InteractableInterface.DoesRequireNotBeingAirborne
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4070
+//		Name   -> Function Interaction.InteractableInterface.DoesRequireNotBeingAirborne
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UInteractableInterface::DoesRequireNotBeingAirborne()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.DoesRequireNotBeingAirborne");
@@ -738,10 +798,12 @@ bool UInteractableInterface::DoesRequireNotBeingAirborne()
 }
 
 
-// Function Interaction.InteractableInterface.DoesRequireFacingFront
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x032D4040
+//		Name   -> Function Interaction.InteractableInterface.DoesRequireFacingFront
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UInteractableInterface::DoesRequireFacingFront()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.DoesRequireFacingFront");
@@ -759,12 +821,14 @@ bool UInteractableInterface::DoesRequireFacingFront()
 }
 
 
-// Function Interaction.InteractableInterface.CanInteractWithNotificationInputId
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x032D3F50
+//		Name   -> Function Interaction.InteractableInterface.CanInteractWithNotificationInputId
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  InInteractor                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  NotificationInputId            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      InInteractor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      NotificationInputId                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UInteractableInterface::CanInteractWithNotificationInputId(class AActor* InInteractor, class UClass* NotificationInputId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.CanInteractWithNotificationInputId");
@@ -784,11 +848,13 @@ bool UInteractableInterface::CanInteractWithNotificationInputId(class AActor* In
 }
 
 
-// Function Interaction.InteractableInterface.CanInteract
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x032D3EB0
+//		Name   -> Function Interaction.InteractableInterface.CanInteract
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  InInteractor                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      InInteractor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UInteractableInterface::CanInteract(class AActor* InInteractor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.CanInteract");
@@ -819,11 +885,13 @@ void UInteractableInterface::BeforeDelete()
 
 }
 
-// Function Interaction.InteractableBlueprintFunctionLibrary.SetInteractionState
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x032D49F0
+//		Name   -> Function Interaction.InteractableBlueprintFunctionLibrary.SetInteractionState
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  InteractableActor              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<Athena_EInteractableState> NewInteractableState           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InteractableActor                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Athena_EInteractableState>             NewInteractableState                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UInteractableBlueprintFunctionLibrary::STATIC_SetInteractionState(class AActor* InteractableActor, TEnumAsByte<Athena_EInteractableState> NewInteractableState)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableBlueprintFunctionLibrary.SetInteractionState");

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -1086,10 +1086,12 @@ void UPetIdleMovementInterface::BeforeDelete()
 
 }
 
-// Function Pets.PetAIController.OnPerceptionUpdated
-// (Native, Public)
+// Function:
+//		Offset -> 0x03B00790
+//		Name   -> Function Pets.PetAIController.OnPerceptionUpdated
+//		Flags  -> (Native, Public)
 // Parameters:
-// TArray<class AActor*>          ChangedPerceivedActors         (Parm, ZeroConstructor)
+//		TArray<class AActor*>                              ChangedPerceivedActors                                     (Parm, ZeroConstructor)
 void APetAIController::OnPerceptionUpdated(TArray<class AActor*> ChangedPerceivedActors)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetAIController.OnPerceptionUpdated");
@@ -1106,10 +1108,12 @@ void APetAIController::OnPerceptionUpdated(TArray<class AActor*> ChangedPerceive
 }
 
 
-// Function Pets.PetAIController.GetAthenaAICharPathFollowingComp
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03B00680
+//		Name   -> Function Pets.PetAIController.GetAthenaAICharPathFollowingComp
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UAthenaAICharacterPathFollowingComponent* ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAthenaAICharacterPathFollowingComponent*    ReturnValue                                                (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UAthenaAICharacterPathFollowingComponent* APetAIController::GetAthenaAICharPathFollowingComp()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetAIController.GetAthenaAICharPathFollowingComp");
@@ -1207,8 +1211,10 @@ void UPetFeedingDataAsset::BeforeDelete()
 
 }
 
-// Function Pets.PetHangoutSpotComponent.OnRep_IsOwnerSinking
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03B00950
+//		Name   -> Function Pets.PetHangoutSpotComponent.OnRep_IsOwnerSinking
+//		Flags  -> (Final, Native, Private)
 void UPetHangoutSpotComponent::OnRep_IsOwnerSinking()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetHangoutSpotComponent.OnRep_IsOwnerSinking");
@@ -1290,8 +1296,10 @@ void UPetOwnerInterface::BeforeDelete()
 
 }
 
-// Function Pets.PetOwnerComponent.Server_RequestDismissal
-// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+// Function:
+//		Offset -> 0x03B00B60
+//		Name   -> Function Pets.PetOwnerComponent.Server_RequestDismissal
+//		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 void UPetOwnerComponent::Server_RequestDismissal()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetOwnerComponent.Server_RequestDismissal");
@@ -1389,10 +1397,12 @@ void UPetsServiceParamsDataAsset::BeforeDelete()
 
 }
 
-// Function Pets.PetsService.RemovePetFromActor
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03B00AD0
+//		Name   -> Function Pets.PetsService.RemovePetFromActor
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  InOwner                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InOwner                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UPetsService::RemovePetFromActor(class AActor* InOwner)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetsService.RemovePetFromActor");
@@ -1409,13 +1419,15 @@ void UPetsService::RemovePetFromActor(class AActor* InOwner)
 }
 
 
-// Function Pets.PetsService.AddPetForActorAndWield
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03B004E0
+//		Name   -> Function Pets.PetsService.AddPetForActorAndWield
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  InPetType                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// struct FPetCustomisation       InCustomisation                (ConstParm, Parm)
-// class AActor*                  InOwner                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           IsWielded                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UClass*                                      InPetType                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		struct FPetCustomisation                           InCustomisation                                            (ConstParm, Parm)
+//		class AActor*                                      InOwner                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               IsWielded                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UPetsService::AddPetForActorAndWield(class UClass* InPetType, const struct FPetCustomisation& InCustomisation, class AActor* InOwner, bool IsWielded)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetsService.AddPetForActorAndWield");
@@ -1435,12 +1447,14 @@ void UPetsService::AddPetForActorAndWield(class UClass* InPetType, const struct 
 }
 
 
-// Function Pets.PetsService.AddPetForActor
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03B003A0
+//		Name   -> Function Pets.PetsService.AddPetForActor
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  InPetType                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// struct FPetCustomisation       InCustomisation                (ConstParm, Parm)
-// class AActor*                  InOwner                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      InPetType                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		struct FPetCustomisation                           InCustomisation                                            (ConstParm, Parm)
+//		class AActor*                                      InOwner                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UPetsService::AddPetForActor(class UClass* InPetType, const struct FPetCustomisation& InCustomisation, class AActor* InOwner)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetsService.AddPetForActor");
@@ -1511,8 +1525,10 @@ void UReactStateMappingsDataAsset::BeforeDelete()
 
 }
 
-// Function Pets.WieldablePet.OnRep_HungerReactAnimationState
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03B00910
+//		Name   -> Function Pets.WieldablePet.OnRep_HungerReactAnimationState
+//		Flags  -> (Final, Native, Private)
 void AWieldablePet::OnRep_HungerReactAnimationState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.WieldablePet.OnRep_HungerReactAnimationState");
@@ -1528,10 +1544,12 @@ void AWieldablePet::OnRep_HungerReactAnimationState()
 }
 
 
-// Function Pets.WieldablePet.OnRep_DropRequest
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03B00890
+//		Name   -> Function Pets.WieldablePet.OnRep_DropRequest
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// TEnumAsByte<Pets_EWieldablePetDropRequestReason> PriorDropRequest               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Pets_EWieldablePetDropRequestReason>   PriorDropRequest                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AWieldablePet::OnRep_DropRequest(TEnumAsByte<Pets_EWieldablePetDropRequestReason> PriorDropRequest)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.WieldablePet.OnRep_DropRequest");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyExistingActors
 struct URemoteActorDestructionInterface_DestroyExistingActors_Params
 {
-	TArray<class UClass*>                              ClassesToDestroy;                                          // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
+	TArray<class UClass*>                              ClassesToDestroy;                                          // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
 };
 
 // Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyActor
 struct URemoteActorDestructionInterface_DestroyActor_Params
 {
-	struct FDestroyActorData                           DestroyActorData;                                          // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+	struct FDestroyActorData                           DestroyActorData;                                          // 0x0000(0x0004)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 };
 
 }

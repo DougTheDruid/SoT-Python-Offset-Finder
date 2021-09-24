@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.AnimNotify_ExitedFire
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.AnimNotify_ExitedFire
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Anim_FlintlockPistol_C::AnimNotify_ExitedFire()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.AnimNotify_ExitedFire");
@@ -34,11 +36,13 @@ void UBP_Anim_FlintlockPistol_C::AnimNotify_ExitedFire()
 }
 
 
-// Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.OnOneShotUseTriggered
-// (Event, Public, HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.OnOneShotUseTriggered
+//		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// class UClass*                  InputID                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FWieldableItemActionVisuals ActionVisuals                  (ConstParm, Parm, OutParm, ReferenceParm)
+//		class UClass*                                      InputID                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FWieldableItemActionVisuals                 ActionVisuals                                              (ConstParm, Parm, OutParm, ReferenceParm)
 void UBP_Anim_FlintlockPistol_C::OnOneShotUseTriggered(class UClass* InputID, const struct FWieldableItemActionVisuals& ActionVisuals)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.OnOneShotUseTriggered");
@@ -55,11 +59,13 @@ void UBP_Anim_FlintlockPistol_C::OnOneShotUseTriggered(class UClass* InputID, co
 }
 
 
-// Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.OnUseStarted
-// (Event, Public, HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.OnUseStarted
+//		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// class UClass*                  InputID                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FWieldableItemActionVisuals ActionVisuals                  (ConstParm, Parm, OutParm, ReferenceParm)
+//		class UClass*                                      InputID                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FWieldableItemActionVisuals                 ActionVisuals                                              (ConstParm, Parm, OutParm, ReferenceParm)
 void UBP_Anim_FlintlockPistol_C::OnUseStarted(class UClass* InputID, const struct FWieldableItemActionVisuals& ActionVisuals)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.OnUseStarted");
@@ -76,8 +82,10 @@ void UBP_Anim_FlintlockPistol_C::OnUseStarted(class UClass* InputID, const struc
 }
 
 
-// Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.BlueprintInitializeAnimation
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.BlueprintInitializeAnimation
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Anim_FlintlockPistol_C::BlueprintInitializeAnimation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.BlueprintInitializeAnimation");
@@ -92,10 +100,12 @@ void UBP_Anim_FlintlockPistol_C::BlueprintInitializeAnimation()
 }
 
 
-// Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.ReloadEventDelegate
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.ReloadEventDelegate
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventProjectileWeaponReload Event                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FEventProjectileWeaponReload                Event                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Anim_FlintlockPistol_C::ReloadEventDelegate(const struct FEventProjectileWeaponReload& Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.ReloadEventDelegate");
@@ -111,8 +121,10 @@ void UBP_Anim_FlintlockPistol_C::ReloadEventDelegate(const struct FEventProjecti
 }
 
 
-// Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.BlueprintUninitializeAnimation
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.BlueprintUninitializeAnimation
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Anim_FlintlockPistol_C::BlueprintUninitializeAnimation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.BlueprintUninitializeAnimation");
@@ -127,8 +139,10 @@ void UBP_Anim_FlintlockPistol_C::BlueprintUninitializeAnimation()
 }
 
 
-// Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.AnimNotify_ResetReload
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.AnimNotify_ResetReload
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Anim_FlintlockPistol_C::AnimNotify_ResetReload()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.AnimNotify_ResetReload");
@@ -143,10 +157,12 @@ void UBP_Anim_FlintlockPistol_C::AnimNotify_ResetReload()
 }
 
 
-// Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.ExecuteUbergraph_BP_Anim_FlintlockPistol
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.ExecuteUbergraph_BP_Anim_FlintlockPistol
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Anim_FlintlockPistol_C::ExecuteUbergraph_BP_Anim_FlintlockPistol(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.ExecuteUbergraph_BP_Anim_FlintlockPistol");

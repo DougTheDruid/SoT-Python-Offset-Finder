@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -252,8 +252,10 @@ void UReviveSettings::BeforeDelete()
 
 }
 
-// Function Reviving.DeathSelfInteractionComponent.SetGiveUpAvaliable
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0338DE60
+//		Name   -> Function Reviving.DeathSelfInteractionComponent.SetGiveUpAvaliable
+//		Flags  -> (Final, Native, Private)
 void UDeathSelfInteractionComponent::SetGiveUpAvaliable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Reviving.DeathSelfInteractionComponent.SetGiveUpAvaliable");
@@ -269,8 +271,10 @@ void UDeathSelfInteractionComponent::SetGiveUpAvaliable()
 }
 
 
-// Function Reviving.DeathSelfInteractionComponent.OnRep_HasGivenUp
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0338DDC0
+//		Name   -> Function Reviving.DeathSelfInteractionComponent.OnRep_HasGivenUp
+//		Flags  -> (Final, Native, Private)
 void UDeathSelfInteractionComponent::OnRep_HasGivenUp()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Reviving.DeathSelfInteractionComponent.OnRep_HasGivenUp");
@@ -384,10 +388,12 @@ void UReviveInterface::BeforeDelete()
 
 }
 
-// Function Reviving.ReviveComponent.OnRep_ReviveState
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0338DDE0
+//		Name   -> Function Reviving.ReviveComponent.OnRep_ReviveState
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// TEnumAsByte<Reviving_EReviveState> PreviousReviveState            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Reviving_EReviveState>                 PreviousReviveState                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UReviveComponent::OnRep_ReviveState(TEnumAsByte<Reviving_EReviveState> PreviousReviveState)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Reviving.ReviveComponent.OnRep_ReviveState");
@@ -404,8 +410,10 @@ void UReviveComponent::OnRep_ReviveState(TEnumAsByte<Reviving_EReviveState> Prev
 }
 
 
-// Function Reviving.ReviveComponent.HandleOwningCharacterEndPlay
-// (Final, Native, Public)
+// Function:
+//		Offset -> 0x0338DDA0
+//		Name   -> Function Reviving.ReviveComponent.HandleOwningCharacterEndPlay
+//		Flags  -> (Final, Native, Public)
 void UReviveComponent::HandleOwningCharacterEndPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Reviving.ReviveComponent.HandleOwningCharacterEndPlay");

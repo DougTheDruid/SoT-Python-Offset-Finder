@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,9 +24,9 @@ namespace CG
 class UFlammableComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_DR83[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MZT3[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	bool                                               OnFire;                                                    // 0x00D8(0x0001) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor)
-	unsigned char                                      UnknownData_3XI8[0x7];                                     // 0x00D9(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WREB[0x7];                                     // 0x00D9(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -52,11 +52,11 @@ public:
 class UActorFlammableComponent : public UFlammableComponent
 {
 public:
-	unsigned char                                      UnknownData_9ZE4[0x18];                                    // 0x00E0(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_E05T[0x18];                                    // 0x00E0(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UParticleSystem*                             FireVFX;                                                   // 0x00F8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UParticleSystem*                             SteamVFX;                                                  // 0x0100(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              FireVFXIntensity;                                          // 0x0108(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_VAJN[0x4];                                     // 0x010C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_G5QI[0x4];                                     // 0x010C(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -202,7 +202,7 @@ class UTimedFlammableComponent : public UFlammableComponent
 public:
 	bool                                               UseExtinguishTimer;                                        // 0x00E0(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               AllowFireToBeReplenishedBeforeExtinguishTimerExpired;      // 0x00E1(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_ODIK[0x2];                                     // 0x00E2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_XRRR[0x2];                                     // 0x00E2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              TimeInSecondsUntilFireExtinguished;                        // 0x00E4(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
@@ -348,7 +348,7 @@ class UFireCellStateTimingParamsDataAsset : public UDataAsset
 {
 public:
 	struct FFireCellStateTimingParams                  TimingParams;                                              // 0x0028(0x0094) (Edit)
-	unsigned char                                      UnknownData_CS0I[0x4];                                     // 0x00BC(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_18KX[0x4];                                     // 0x00BC(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -372,7 +372,7 @@ public:
 	struct FFireCellAudioParams                        FireAudioParams;                                           // 0x0028(0x0040) (Transient, Protected)
 	class AActor*                                      OwningActor;                                               // 0x0068(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFirePropagator*                             FirePropagator;                                            // 0x0070(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_4RH2[0x58];                                    // 0x0078(0x0058) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4XL4[0x58];                                    // 0x0078(0x0058) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -467,10 +467,10 @@ public:
 	TArray<struct FFireParticleSpawnData>              ParticleSpawnLODSettings;                                  // 0x0170(0x0010) (ZeroConstructor, Protected)
 	TArray<struct FFireGridLowDetailRelativeSpawnDesc> ExteriorSmokeVFXSpawnDescs;                                // 0x0180(0x0010) (ZeroConstructor, Protected)
 	TArray<struct FFireDefaultVFXSpawnData>            VFXToSpawn;                                                // 0x0190(0x0010) (ZeroConstructor, Transient, Protected)
-	unsigned char                                      UnknownData_1P3B[0x8];                                     // 0x01A0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_J9Q4[0x8];                                     // 0x01A0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FFireParticleSpawnList>              InterleavedSpawnLists;                                     // 0x01A8(0x0010) (ZeroConstructor)
 	class UFirePropagator*                             Propagator;                                                // 0x01B8(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_4O8K[0x50];                                    // 0x01C0(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_R7HA[0x50];                                    // 0x01C0(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -491,11 +491,11 @@ public:
 class UFirePropagator : public UObject
 {
 public:
-	unsigned char                                      UnknownData_4UGY[0x90];                                    // 0x0028(0x0090) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_3PXM[0x90];                                    // 0x0028(0x0090) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UFireCellStateTimingParamsDataAsset*         CellStateTimingParams;                                     // 0x00B8(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_URAM[0x4];                                     // 0x00C0(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JPQ9[0x4];                                     // 0x00C0(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              WaterHeightOffsetToFloodCells;                             // 0x00C4(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_D1OI[0x58];                                    // 0x00C8(0x0058) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZF4Y[0x58];                                    // 0x00C8(0x0058) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -516,9 +516,9 @@ public:
 class UMastFlammableComponent : public UActorFlammableComponent
 {
 public:
-	unsigned char                                      UnknownData_6T5G[0x8];                                     // 0x0110(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_BQRK[0x8];                                     // 0x0110(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FVector                                     FireGridLocation;                                          // 0x0118(0x000C) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_M4F7[0x14];                                    // 0x0124(0x0014) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SOHS[0x14];                                    // 0x0124(0x0014) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -561,7 +561,7 @@ class UShipFireLightParamsDataAsset : public UDataAsset
 {
 public:
 	struct FShipFireLightParams                        Params;                                                    // 0x0028(0x0014) (Edit)
-	unsigned char                                      UnknownData_WAJA[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_S3N3[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -582,17 +582,17 @@ public:
 class UShipFirePropagationComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_XM28[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_LC6G[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FName                                       FeatureToggleName;                                         // 0x00D0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                      ShipSize;                                                  // 0x00D8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	float                                              CellSize;                                                  // 0x00E0(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FIntVector                                  GridDimensions;                                            // 0x00E4(0x000C) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FVector                                     GridOffset;                                                // 0x00F0(0x000C) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_YW82[0x4];                                     // 0x00FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_6SRC[0x4];                                     // 0x00FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UFirePropagator*                             Propagator;                                                // 0x0100(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UShipFireDamageParamsDataAsset*              FireDamageDataAsset;                                       // 0x0108(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFireCellDesc>                       FireCellDescs;                                             // 0x0110(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	unsigned char                                      UnknownData_ZR67[0x10];                                    // 0x0120(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_APLA[0x10];                                    // 0x0120(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FStatus                                     BurnStatus;                                                // 0x0130(0x0018) (Edit, DisableEditOnInstance)
 	class UFireGridVFXManager*                         VFXManager;                                                // 0x0148(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFireGridVfxSpawnSettings                   VfxSpawnSettings;                                          // 0x0150(0x0058) (Edit, DisableEditOnInstance)
@@ -602,7 +602,7 @@ public:
 	struct FReplicatedFireCellCharringData             ReplicatedCellCharringData;                                // 0x03D0(0x0018) (Net, Transient, RepNotify)
 	class UFireGridAudioManager*                       FireAudioManager;                                          // 0x03E8(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFireCellAudioParams                        FireAudioParams;                                           // 0x03F0(0x0040) (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_KVA0[0x58];                                    // 0x0430(0x0058) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_GXWN[0x58];                                    // 0x0430(0x0058) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

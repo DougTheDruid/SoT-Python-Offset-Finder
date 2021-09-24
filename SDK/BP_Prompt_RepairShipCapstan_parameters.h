@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -37,31 +37,31 @@ struct UBP_Prompt_RepairShipCapstan_C_Evaluate_Params
 // Function BP_Prompt_RepairShipCapstan.BP_Prompt_RepairShipCapstan_C.RegisterCharacterEvents_Implementable
 struct UBP_Prompt_RepairShipCapstan_C_RegisterCharacterEvents_Implementable_Params
 {
-	struct FObjectMessagingDispatcherHandle            CharacterDispatcher;                                       // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FObjectMessagingDispatcherHandle            CharacterDispatcher;                                       // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_RepairShipCapstan.BP_Prompt_RepairShipCapstan_C.OnCurrentShipChanged
 struct UBP_Prompt_RepairShipCapstan_C_OnCurrentShipChanged_Params
 {
-	struct FEventCurrentShipChanged                    Event;                                                     // (Parm)
+	struct FEventCurrentShipChanged                    Event;                                                     // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_RepairShipCapstan.BP_Prompt_RepairShipCapstan_C.OnShipDamaged
 struct UBP_Prompt_RepairShipCapstan_C_OnShipDamaged_Params
 {
-	struct FEventCapstanDamageLevelChanged             Event;                                                     // (Parm)
+	struct FEventCapstanDamageLevelChanged             Event;                                                     // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Prompt_RepairShipCapstan.BP_Prompt_RepairShipCapstan_C.UnregisterCharacterEvents_Implementable
 struct UBP_Prompt_RepairShipCapstan_C_UnregisterCharacterEvents_Implementable_Params
 {
-	struct FObjectMessagingDispatcherHandle            CharacterDispatcher;                                       // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FObjectMessagingDispatcherHandle            CharacterDispatcher;                                       // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_RepairShipCapstan.BP_Prompt_RepairShipCapstan_C.ExecuteUbergraph_BP_Prompt_RepairShipCapstan
 struct UBP_Prompt_RepairShipCapstan_C_ExecuteUbergraph_BP_Prompt_RepairShipCapstan_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

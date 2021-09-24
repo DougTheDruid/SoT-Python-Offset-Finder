@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -35,7 +35,7 @@ struct FIncomingMigrationPreventionZone
 // 0x0001
 struct FServerMigrationSetupCompleteEvent
 {
-	unsigned char                                      UnknownData_UQHM[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KOMM[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -46,7 +46,7 @@ struct FServerMigrationSetupCompleteEvent
 // 0x0001
 struct FServerMigrationSetupRequestEvent
 {
-	unsigned char                                      UnknownData_FM02[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_51SL[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -57,7 +57,7 @@ struct FServerMigrationSetupRequestEvent
 // 0x0090
 struct FServerMigrationReadyToTransferActors
 {
-	unsigned char                                      UnknownData_7MVF[0x90];                                    // 0x0000(0x0090) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_VBPB[0x90];                                    // 0x0000(0x0090) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -78,7 +78,7 @@ struct FPrepareForWorldSwitchRpc : public FBoxedRpc
 // 0x0020
 struct FServerMigrationAboutToStartEvent
 {
-	unsigned char                                      UnknownData_ENE2[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PYK8[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -89,7 +89,7 @@ struct FServerMigrationAboutToStartEvent
 // 0x0008
 struct FServerMigrationConfigChangedEvent
 {
-	unsigned char                                      UnknownData_2W74[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_F0K2[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -100,7 +100,7 @@ struct FServerMigrationConfigChangedEvent
 // 0x0010
 struct FServerMigrationAbortEvent
 {
-	unsigned char                                      UnknownData_MBXT[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RT10[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -111,7 +111,7 @@ struct FServerMigrationAbortEvent
 // 0x0001
 struct FServerMigrationCompleteEvent
 {
-	unsigned char                                      UnknownData_N0AI[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_GPPL[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -128,12 +128,12 @@ struct FServerMigrationHeartbeatEvent
 	struct FString                                     MigrationEndpoint;                                         // 0x0030(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	TArray<struct FServerMigrationCrewMigrationStatus> CrewsMigrationStatus;                                      // 0x0040(0x0010) (ZeroConstructor)
 	int                                                SequenceId;                                                // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_G6AU[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_GEYR[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FTimespan                                   ServerUptime;                                              // 0x0058(0x0008) (ZeroConstructor)
 	struct FTimespan                                   ExpectedServerLifetime;                                    // 0x0060(0x0008) (ZeroConstructor)
 	struct FTimespan                                   MessageInterval;                                           // 0x0068(0x0008) (ZeroConstructor)
 	bool                                               ContestMatchmaking;                                        // 0x0070(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_TUD3[0x7];                                     // 0x0071(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RBPC[0x7];                                     // 0x0071(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

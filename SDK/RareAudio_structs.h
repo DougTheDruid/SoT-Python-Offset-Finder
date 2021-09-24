@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -37,7 +37,7 @@ enum class RareAudio_EEmitterRelationship : uint8_t
 // 0x0020
 struct FWwiseEmitter
 {
-	unsigned char                                      UnknownData_4BEC[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ODYT[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -66,7 +66,7 @@ struct FWwiseEmitterCreationParams
 	float                                              RTPCValue;                                                 // 0x0010(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       SwitchGroup;                                               // 0x0014(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       SwitchValue;                                               // 0x001C(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_9SEY[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_85HR[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -79,7 +79,7 @@ struct FStaticMeshWwiseEmitterData
 {
 	class UWwiseObjectPoolWrapper*                     Pool;                                                      // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                     LocalOriginOffset;                                         // 0x0008(0x000C) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_I8A7[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_VFJW[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class UWwiseEvent*>                         StartEvents;                                               // 0x0018(0x0010) (Edit, ZeroConstructor)
 	TArray<class UWwiseEvent*>                         StopEvents;                                                // 0x0028(0x0010) (Edit, ZeroConstructor)
 
@@ -106,7 +106,7 @@ struct FStaticMeshComponentAudioAssociation
 {
 	struct FStaticMeshWwiseEmitterData                 PlaybackData;                                              // 0x0000(0x0038) (Edit)
 	struct FVector                                     EmitterPositionRelativeToComponentOrigin;                  // 0x0038(0x000C) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_94S2[0x24];                                    // 0x0044(0x0024) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0YPH[0x24];                                    // 0x0044(0x0024) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

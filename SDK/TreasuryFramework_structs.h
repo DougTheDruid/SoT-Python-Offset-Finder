@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -18,6 +18,15 @@ namespace CG
 //---------------------------------------------------------------------------
 // Enums
 //---------------------------------------------------------------------------
+
+// Enum TreasuryFramework.ETreasuryWaveType
+enum class TreasuryFramework_ETreasuryWaveType : uint8_t
+{
+	ETreasuryWaveType__Regular     = 0,
+	ETreasuryWaveType__FinalWave   = 1,
+	ETreasuryWaveType__ETreasuryWaveType_MAX = 2,
+
+};
 
 // Enum TreasuryFramework.ETreasuryVaultDoorState
 enum class TreasuryFramework_ETreasuryVaultDoorState : uint8_t
@@ -79,13 +88,13 @@ enum class TreasuryFramework_ETreasuryState : uint8_t
 struct FTreasuryWaveEncounter
 {
 	TEnumAsByte<TreasuryFramework_ETreasuryEncounterType> EncounterType;                                             // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_JXV2[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_QT1T[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class ASpawnAIWaveMechanismAction*                 SpawnerMechanism;                                          // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                      MechanismTrigger;                                          // 0x0010(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTreasuryWaveDataAsset*                      Waves;                                                     // 0x0018(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTreasuryWaveDataAsset*                      FinalWaves;                                                // 0x0020(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               NeedsRoomFlooded;                                          // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_8IKZ[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_HX7M[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -96,7 +105,29 @@ struct FTreasuryWaveEncounter
 // 0x0018
 struct FTreasuryWaveTracker
 {
-	unsigned char                                      UnknownData_3V89[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UIN8[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct TreasuryFramework.EventTreasuryRoomInactive
+// 0x0001
+struct FEventTreasuryRoomInactive
+{
+	unsigned char                                      UnknownData_CXVG[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct TreasuryFramework.EventTreasuryRoomActive
+// 0x0001
+struct FEventTreasuryRoomActive
+{
+	unsigned char                                      UnknownData_57W3[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

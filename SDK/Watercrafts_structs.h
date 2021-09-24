@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -83,7 +83,7 @@ struct FScrapeableDamageSpeedEntry
 	class UClass*                                      SpeedBand;                                                 // 0x0000(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UForceFeedbackEffect*                        ForceFeedbackEffect;                                       // 0x0008(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                DamageAmount;                                              // 0x0010(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_E76A[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QWVR[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -96,7 +96,7 @@ struct FWatercraftRolloverCorrector
 {
 	float                                              RollThresholdToConsiderRolledOver;                         // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TorqueScalar;                                              // 0x0004(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_LJWG[0x4];                                     // 0x0008(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_F63S[0x4];                                     // 0x0008(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -109,7 +109,7 @@ struct FRowboatDamageEffectData
 {
 	class UMaterialInstanceDynamic*                    DynamicMaterialInstance;                                   // 0x0000(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              FadeInDuration;                                            // 0x0008(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_M65J[0xC];                                     // 0x000C(0x000C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JAEV[0xC];                                     // 0x000C(0x000C) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -158,7 +158,7 @@ struct FOarParams
 struct FOar
 {
 	struct FOarParams                                  OarParams;                                                 // 0x0000(0x0038) (Protected)
-	unsigned char                                      UnknownData_LQ76[0x28];                                    // 0x0038(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_W0GI[0x28];                                    // 0x0038(0x0028) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -169,7 +169,7 @@ struct FOar
 // 0x0001
 struct FEventOarStrokeEnded
 {
-	unsigned char                                      UnknownData_B1JS[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BK1B[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -180,7 +180,7 @@ struct FEventOarStrokeEnded
 // 0x0001
 struct FEventRowboatExitedWater
 {
-	unsigned char                                      UnknownData_S9X1[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_68A5[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -191,7 +191,7 @@ struct FEventRowboatExitedWater
 // 0x0001
 struct FEventRowboatEnteredWater
 {
-	unsigned char                                      UnknownData_0RKU[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4VLK[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -204,7 +204,7 @@ struct FRowboatMountStateTelemetryEvent
 {
 	struct FGuid                                       WatercraftId;                                              // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Watercrafts_ERowboatActionTelemetry>   ActionName;                                                // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_MVYT[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6JSB[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -218,7 +218,7 @@ struct FWatercraftDespawnTelemetryEvent
 	struct FGuid                                       WatercraftId;                                              // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                     Location;                                                  // 0x0010(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Watercrafts_EWatercraftDespawnReason>  DespawnReason;                                             // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ZLWF[0x3];                                     // 0x001D(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_S35L[0x3];                                     // 0x001D(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -32,13 +32,13 @@ struct ABP_PromptActor_UseMermaid_C_ReceiveBeginPlay_Params
 // Function BP_PromptActor_UseMermaid.BP_PromptActor_UseMermaid_C.ReceiveEndPlay
 struct ABP_PromptActor_UseMermaid_C_ReceiveEndPlay_Params
 {
-	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_PromptActor_UseMermaid.BP_PromptActor_UseMermaid_C.ExecuteUbergraph_BP_PromptActor_UseMermaid
 struct ABP_PromptActor_UseMermaid_C_ExecuteUbergraph_BP_PromptActor_UseMermaid_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

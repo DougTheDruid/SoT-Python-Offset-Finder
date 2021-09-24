@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,7 +22,7 @@ namespace CG
 // Function BP_EyeOfReach.BP_EyeOfReach_C.determine sfx relationship
 struct ABP_EyeOfReach_C_determine_sfx_relationship_Params
 {
-	TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship;                                              // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship;                                              // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_EyeOfReach.BP_EyeOfReach_C.DoFireEffect
@@ -53,7 +53,7 @@ struct ABP_EyeOfReach_C_ScopeOff_Params
 // Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeTick
 struct ABP_EyeOfReach_C_ScopeTick_Params
 {
-	float                                              DeltaSeconds;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                              DeltaSeconds;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_EyeOfReach.BP_EyeOfReach_C.ScopeOffImmediate
@@ -74,7 +74,7 @@ struct ABP_EyeOfReach_C_GlintOff_Params
 // Function BP_EyeOfReach.BP_EyeOfReach_C.ExecuteUbergraph_BP_EyeOfReach
 struct ABP_EyeOfReach_C_ExecuteUbergraph_BP_EyeOfReach_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

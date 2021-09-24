@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -48,7 +48,7 @@ class ABarrelsOfPlentySpawnProxy : public AActor
 {
 public:
 	class AShip*                                       Ship;                                                      // 0x03D0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_D04K[0x18];                                    // 0x03D8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_DX19[0x18];                                    // 0x03D8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class USceneComponent*                             SceneComponent;                                            // 0x03F0(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
@@ -66,11 +66,11 @@ public:
 };
 
 // Class BarrelsOfPlenty.SpawnBarrelsOfPlentyStep
-// 0x0008 (FullSize[0x0090] - InheritedSize[0x0088])
+// 0x0008 (FullSize[0x0098] - InheritedSize[0x0090])
 class USpawnBarrelsOfPlentyStep : public UTaleQuestStep
 {
 public:
-	class USpawnBarrelsOfPlentyStepDesc*               Desc;                                                      // 0x0088(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USpawnBarrelsOfPlentyStepDesc*               Desc;                                                      // 0x0090(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()
@@ -87,11 +87,11 @@ public:
 };
 
 // Class BarrelsOfPlenty.SpawnBarrelsOfPlentyStepDesc
-// 0x0010 (FullSize[0x0040] - InheritedSize[0x0030])
+// 0x0010 (FullSize[0x0090] - InheritedSize[0x0080])
 class USpawnBarrelsOfPlentyStepDesc : public UTaleQuestStepDesc
 {
 public:
-	struct FQuestVariableVector                        LocatorVar;                                                // 0x0030(0x0010) (Edit)
+	struct FQuestVariableVector                        LocatorVar;                                                // 0x0080(0x0010) (Edit)
 
 
 	static UClass* StaticClass()

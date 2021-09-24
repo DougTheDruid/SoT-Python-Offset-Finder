@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -27,13 +27,13 @@ struct ABP_ItemPreview_Lighting_C_UserConstructionScript_Params
 // Function BP_ItemPreview_Lighting.BP_ItemPreview_Lighting_C.PreviewReady__DelegateSignature
 struct ABP_ItemPreview_Lighting_C_PreviewReady__DelegateSignature_Params
 {
-	struct FPiratePreviewReadyEvent                    Data;                                                      // (Parm)
+	struct FPiratePreviewReadyEvent                    Data;                                                      // 0x0000(0x0098)  (Parm)
 };
 
 // Function BP_ItemPreview_Lighting.BP_ItemPreview_Lighting_C.PreviewBusy__DelegateSignature
 struct ABP_ItemPreview_Lighting_C_PreviewBusy__DelegateSignature_Params
 {
-	struct FPiratePreviewBusyEvent                     Data;                                                      // (Parm)
+	struct FPiratePreviewBusyEvent                     Data;                                                      // 0x0000(0x0001)  (Parm)
 };
 
 }

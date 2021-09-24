@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,19 +22,19 @@ namespace CG
 // Function ShipDamage.DamageablePartsInterface.UnregisterDamageablePart
 struct UDamageablePartsInterface_UnregisterDamageablePart_Params
 {
-	class AActor*                                      DamageableActor;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      DamageableActor;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function ShipDamage.DamageablePartsInterface.RegisterDamageablePart
 struct UDamageablePartsInterface_RegisterDamageablePart_Params
 {
-	class AActor*                                      DamageableActor;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      DamageableActor;                                           // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function ShipDamage.DamageablePartsInterface.GetDamageableParts
 struct UDamageablePartsInterface_GetDamageableParts_Params
 {
-	TArray<class AActor*>                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm)
+	TArray<class AActor*>                              ReturnValue;                                               // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 }

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,7 +22,7 @@ namespace CG
 // Function EmissaryLevel.EmissaryActiveTableVisualiserComponent.OnControllerEndPlay
 struct UEmissaryActiveTableVisualiserComponent_OnControllerEndPlay_Params
 {
-	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function EmissaryLevel.EmissaryParticipantComponent.OnRep_EmissaryLevel
@@ -33,7 +33,7 @@ struct UEmissaryParticipantComponent_OnRep_EmissaryLevel_Params
 // Function EmissaryLevel.EmissaryParticipantComponent.OnRep_AffiliatedCompany
 struct UEmissaryParticipantComponent_OnRep_AffiliatedCompany_Params
 {
-	struct FName                                       PreviousId;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FName                                       PreviousId;                                                // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function EmissaryLevel.EmissaryShipAffiliationTrackerComponent.OnRep_EmissaryCount

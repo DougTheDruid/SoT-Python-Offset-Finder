@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.OnEmissaryEntitlementPurchasedFunc
 struct UBP_Prompt_EmissaryEntitlementPurchased_C_OnEmissaryEntitlementPurchasedFunc_Params
 {
-	struct FEmissaryEntitlementPurchasedEvent          NewParam;                                                  // (Parm)
+	struct FEmissaryEntitlementPurchasedEvent          NewParam;                                                  // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.EmissaryEntitlementPurchased
 struct UBP_Prompt_EmissaryEntitlementPurchased_C_EmissaryEntitlementPurchased_Params
 {
-	struct FEmissaryEntitlementPurchasedEvent          NewParam;                                                  // (Parm)
+	struct FEmissaryEntitlementPurchasedEvent          NewParam;                                                  // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.Evaluate
@@ -49,7 +49,7 @@ struct UBP_Prompt_EmissaryEntitlementPurchased_C_UnregisterOtherEvents_Implement
 // Function BP_Prompt_EmissaryEntitlementPurchased.BP_Prompt_EmissaryEntitlementPurchased_C.ExecuteUbergraph_BP_Prompt_EmissaryEntitlementPurchased
 struct UBP_Prompt_EmissaryEntitlementPurchased_C_ExecuteUbergraph_BP_Prompt_EmissaryEntitlementPurchased_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

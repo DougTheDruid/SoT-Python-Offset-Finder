@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -84,12 +84,12 @@ public:
 class UCrewOwnershipTrackingComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_8I43[0x18];                                    // 0x00C8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_WIZ1[0x18];                                    // 0x00C8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGuid                                       SpawningCrewId;                                            // 0x00E0(0x0010) (Net, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FGuid                                       CurrentOwnedByCrewId;                                      // 0x00F0(0x0010) (Net, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FOwnerListEntry                             PreviousOwnedByCrewIdList;                                 // 0x0100(0x0010) (Net)
 	TMap<struct FName, struct FOwnerListEntry>         CustomTrackingMap;                                         // 0x0110(0x0050) (ZeroConstructor)
-	unsigned char                                      UnknownData_JB61[0x10];                                    // 0x0160(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Q8DP[0x10];                                    // 0x0160(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

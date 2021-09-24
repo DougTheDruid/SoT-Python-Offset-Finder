@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -39,6 +39,14 @@ void FServerCrewResponseModel::AfterRead()
 }
 
 void FServerCrewResponseModel::BeforeDelete()
+{
+}
+
+void FOptionalPlayModeModel::AfterRead()
+{
+}
+
+void FOptionalPlayModeModel::BeforeDelete()
 {
 }
 

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -158,10 +158,12 @@ void UControllableOarsInterface::BeforeDelete()
 
 }
 
-// Function Watercrafts.FakeShip.OnAttachedItemEndPlay
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03800D00
+//		Name   -> Function Watercrafts.FakeShip.OnAttachedItemEndPlay
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AFakeShip::OnAttachedItemEndPlay(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.FakeShip.OnAttachedItemEndPlay");
@@ -202,10 +204,12 @@ void UWatercraftTrackerInterface::BeforeDelete()
 
 }
 
-// Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnRep_CurrentWatercraft
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03800E00
+//		Name   -> Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnRep_CurrentWatercraft
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class AActor*                  PreviousWatercraft             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      PreviousWatercraft                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UItemProxyWatercraftTrackerComponent::OnRep_CurrentWatercraft(class AActor* PreviousWatercraft)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnRep_CurrentWatercraft");
@@ -222,10 +226,12 @@ void UItemProxyWatercraftTrackerComponent::OnRep_CurrentWatercraft(class AActor*
 }
 
 
-// Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnCurrentWatercraftDestroyed
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03800D80
+//		Name   -> Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnCurrentWatercraftDestroyed
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class AActor*                  DestroyedWatercraft            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      DestroyedWatercraft                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UItemProxyWatercraftTrackerComponent::OnCurrentWatercraftDestroyed(class AActor* DestroyedWatercraft)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnCurrentWatercraftDestroyed");
@@ -484,10 +490,12 @@ void UScrapeableComponent::BeforeDelete()
 	DELE_PTR_FULL(ScrapeDamagerType);
 }
 
-// Function Watercrafts.Watercraft.OnRigidBodyWake
-// (Final, Native, Protected)
+// Function:
+//		Offset -> 0x03801020
+//		Name   -> Function Watercrafts.Watercraft.OnRigidBodyWake
+//		Flags  -> (Final, Native, Protected)
 // Parameters:
-// struct FName                   InBoneName                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       InBoneName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AWatercraft::OnRigidBodyWake(const struct FName& InBoneName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.Watercraft.OnRigidBodyWake");
@@ -504,10 +512,12 @@ void AWatercraft::OnRigidBodyWake(const struct FName& InBoneName)
 }
 
 
-// Function Watercrafts.Watercraft.OnRigidBodySleep
-// (Final, Native, Protected)
+// Function:
+//		Offset -> 0x03800FA0
+//		Name   -> Function Watercrafts.Watercraft.OnRigidBodySleep
+//		Flags  -> (Final, Native, Protected)
 // Parameters:
-// struct FName                   InBoneName                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       InBoneName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AWatercraft::OnRigidBodySleep(const struct FName& InBoneName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.Watercraft.OnRigidBodySleep");
@@ -554,10 +564,12 @@ void AWatercraft::BeforeDelete()
 	DELE_PTR_FULL(SpeedToChoppinessScalarCurve);
 }
 
-// Function Watercrafts.Rowboat.SetAlwaysEnabledInteractables
-// (Final, Native, Protected, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03801220
+//		Name   -> Function Watercrafts.Rowboat.SetAlwaysEnabledInteractables
+//		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable)
 // Parameters:
-// TArray<class UChildActorComponent*> InAlwaysEnabledInteractables   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
+//		TArray<class UChildActorComponent*>                InAlwaysEnabledInteractables                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 void ARowboat::SetAlwaysEnabledInteractables(TArray<class UChildActorComponent*> InAlwaysEnabledInteractables)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.Rowboat.SetAlwaysEnabledInteractables");
@@ -574,8 +586,10 @@ void ARowboat::SetAlwaysEnabledInteractables(TArray<class UChildActorComponent*>
 }
 
 
-// Function Watercrafts.Rowboat.OnRep_IsSinking
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03800E80
+//		Name   -> Function Watercrafts.Rowboat.OnRep_IsSinking
+//		Flags  -> (Final, Native, Private)
 void ARowboat::OnRep_IsSinking()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.Rowboat.OnRep_IsSinking");
@@ -709,14 +723,16 @@ void AStorageSeat::BeforeDelete()
 	DELE_PTR_FULL(StorageContainerComponent);
 }
 
-// Function Watercrafts.WatercraftBlueprintFunctionLibrary.SpawnWatercraft
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x038012D0
+//		Name   -> Function Watercrafts.WatercraftBlueprintFunctionLibrary.SpawnWatercraft
+//		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  WatercraftClass                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 Location                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FRotator                Rotation                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class AWatercraft*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      WatercraftClass                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     Location                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FRotator                                    Rotation                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AWatercraft*                                 ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class AWatercraft* UWatercraftBlueprintFunctionLibrary::STATIC_SpawnWatercraft(class UObject* WorldContextObject, class UClass* WatercraftClass, const struct FVector& Location, const struct FRotator& Rotation)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.WatercraftBlueprintFunctionLibrary.SpawnWatercraft");
@@ -786,10 +802,12 @@ void UWatercraftSpawnData::BeforeDelete()
 
 }
 
-// Function Watercrafts.WatercraftTrackerComponent.OnWatercraftDestroyed
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x038010A0
+//		Name   -> Function Watercrafts.WatercraftTrackerComponent.OnWatercraftDestroyed
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class AActor*                  WatercraftActor                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      WatercraftActor                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWatercraftTrackerComponent::OnWatercraftDestroyed(class AActor* WatercraftActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.WatercraftTrackerComponent.OnWatercraftDestroyed");

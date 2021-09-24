@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -40,7 +40,7 @@ struct FServerSettings
 	bool                                               FailToConnectToServer;                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               RefuseMigrationStart;                                      // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               DisconnectServerConnectionDuringMigration;                 // 0x0002(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_NUPF[0x1];                                     // 0x0003(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ATX6[0x1];                                     // 0x0003(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	int                                                RefuseIncomingClientConnections;                           // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -64,7 +64,7 @@ struct FClientSettings
 // 0x0004
 struct FServerMigrationCustomMigrationSerialisationStruct
 {
-	unsigned char                                      UnknownData_3H74[0x4];                                     // 0x0000(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UFLS[0x4];                                     // 0x0000(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -79,7 +79,7 @@ struct FServerMigrationSerialisationDetailsTestsUStruct
 	uint16_t                                           UInt16WithMigrationMarkup;                                 // 0x0004(0x0002) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint16_t                                           UInt16WithNotReplicatedMarkup;                             // 0x0006(0x0002) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	uint16_t                                           UInt16WithMigrationAndNotReplicatedMarkup;                 // 0x0008(0x0002) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_7FCI[0x2];                                     // 0x000A(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ICU8[0x2];                                     // 0x000A(0x0002) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

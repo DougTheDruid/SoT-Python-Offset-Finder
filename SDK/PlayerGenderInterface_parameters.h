@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,7 +22,7 @@ namespace CG
 // Function PlayerGenderInterface.PlayerGenderInterface_C.CheckIsFemale
 struct UPlayerGenderInterface_C_CheckIsFemale_Params
 {
-	bool                                               IsFemale;                                                  // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               IsFemale;                                                  // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

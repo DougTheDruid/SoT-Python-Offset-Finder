@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,11 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function MapTable.MapTable_C.UpdateBlurEffect
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function MapTable.MapTable_C.UpdateBlurEffect
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void AMapTable_C::UpdateBlurEffect()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MapTable.MapTable_C.UpdateBlurEffect");
@@ -34,12 +37,14 @@ void AMapTable_C::UpdateBlurEffect()
 }
 
 
-// Function MapTable.MapTable_C.GetClosestInteractionPoint
-// (HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function MapTable.MapTable_C.GetClosestInteractionPoint
+//		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                 ReferencePosition              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          OutInteractionPointRadius      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReferencePosition                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              OutInteractionPointRadius                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector AMapTable_C::GetClosestInteractionPoint(const struct FVector& ReferencePosition, float* OutInteractionPointRadius)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MapTable.MapTable_C.GetClosestInteractionPoint");
@@ -60,8 +65,11 @@ struct FVector AMapTable_C::GetClosestInteractionPoint(const struct FVector& Ref
 }
 
 
-// Function MapTable.MapTable_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function MapTable.MapTable_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void AMapTable_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MapTable.MapTable_C.UserConstructionScript");
@@ -76,8 +84,10 @@ void AMapTable_C::UserConstructionScript()
 }
 
 
-// Function MapTable.MapTable_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function MapTable.MapTable_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void AMapTable_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MapTable.MapTable_C.ReceiveBeginPlay");
@@ -92,8 +102,10 @@ void AMapTable_C::ReceiveBeginPlay()
 }
 
 
-// Function MapTable.MapTable_C.SetEffectActiveWhenClose
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function MapTable.MapTable_C.SetEffectActiveWhenClose
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void AMapTable_C::SetEffectActiveWhenClose()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MapTable.MapTable_C.SetEffectActiveWhenClose");
@@ -108,11 +120,13 @@ void AMapTable_C::SetEffectActiveWhenClose()
 }
 
 
-// Function MapTable.MapTable_C.OnMapActivate
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function MapTable.MapTable_C.OnMapActivate
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                           IsMapActive                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UTextureRenderTarget2D*  Texture                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               IsMapActive                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UTextureRenderTarget2D*                      Texture                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void AMapTable_C::OnMapActivate(bool IsMapActive, class UTextureRenderTarget2D* Texture)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MapTable.MapTable_C.OnMapActivate");
@@ -129,11 +143,13 @@ void AMapTable_C::OnMapActivate(bool IsMapActive, class UTextureRenderTarget2D* 
 }
 
 
-// Function MapTable.MapTable_C.OnMapMove
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function MapTable.MapTable_C.OnMapMove
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FVector2D               CentreLocation                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector2D               ZoomLevel                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector2D                                   CentreLocation                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector2D                                   ZoomLevel                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void AMapTable_C::OnMapMove(const struct FVector2D& CentreLocation, const struct FVector2D& ZoomLevel)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MapTable.MapTable_C.OnMapMove");
@@ -150,10 +166,12 @@ void AMapTable_C::OnMapMove(const struct FVector2D& CentreLocation, const struct
 }
 
 
-// Function MapTable.MapTable_C.ExecuteUbergraph_MapTable
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function MapTable.MapTable_C.ExecuteUbergraph_MapTable
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void AMapTable_C::ExecuteUbergraph_MapTable(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MapTable.MapTable_C.ExecuteUbergraph_MapTable");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,8 +24,8 @@ namespace CG
 class UCustomMeshComponent : public UMeshComponent
 {
 public:
-	unsigned char                                      UnknownData_68OX[0x8];                                     // 0x0598(0x0008) Fix Super Size
-	unsigned char                                      UnknownData_747T[0x10];                                    // 0x05A0(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_N5BC[0x8];                                     // 0x0598(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_SBYC[0x10];                                    // 0x05A0(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

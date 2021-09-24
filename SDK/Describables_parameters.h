@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,7 +22,7 @@ namespace CG
 // Function Describables.DescribableComponent.SetTooltipActive
 struct UDescribableComponent_SetTooltipActive_Params
 {
-	bool                                               IsActive;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               IsActive;                                                  // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function Describables.DescribableComponent.OnRep_TooltipActive

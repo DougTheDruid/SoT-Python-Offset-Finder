@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Prompt_EmissarySecuredLootOnShip.BP_Prompt_EmissarySecuredLootOnShip_C.OnEmissarySecuredLootOnShip
 struct UBP_Prompt_EmissarySecuredLootOnShip_C_OnEmissarySecuredLootOnShip_Params
 {
-	struct FEmissarySecuredLootOnShipNetworkEvent      NewParam;                                                  // (Parm)
+	struct FEmissarySecuredLootOnShipNetworkEvent      NewParam;                                                  // 0x0000(0x0018)  (Parm)
 };
 
 // Function BP_Prompt_EmissarySecuredLootOnShip.BP_Prompt_EmissarySecuredLootOnShip_C.EmissarySecuredLootOnShip
 struct UBP_Prompt_EmissarySecuredLootOnShip_C_EmissarySecuredLootOnShip_Params
 {
-	struct FEmissarySecuredLootOnShipNetworkEvent      NewParam;                                                  // (Parm)
+	struct FEmissarySecuredLootOnShipNetworkEvent      NewParam;                                                  // 0x0000(0x0018)  (Parm)
 };
 
 // Function BP_Prompt_EmissarySecuredLootOnShip.BP_Prompt_EmissarySecuredLootOnShip_C.Evaluate
@@ -49,7 +49,7 @@ struct UBP_Prompt_EmissarySecuredLootOnShip_C_UnregisterOtherEvents_Implementabl
 // Function BP_Prompt_EmissarySecuredLootOnShip.BP_Prompt_EmissarySecuredLootOnShip_C.ExecuteUbergraph_BP_Prompt_EmissarySecuredLootOnShip
 struct UBP_Prompt_EmissarySecuredLootOnShip_C_ExecuteUbergraph_BP_Prompt_EmissarySecuredLootOnShip_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

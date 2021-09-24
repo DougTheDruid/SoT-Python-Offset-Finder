@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,11 +18,13 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.seagull_Fade
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.seagull_Fade
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMaterialInstance*       Seagull_Material               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UMaterialInstance*       Seagull_MT_LOD                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UMaterialInstance*                           Seagull_Material                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UMaterialInstance*                           Seagull_MT_LOD                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Seagull01_8POI_C::seagull_Fade(class UMaterialInstance* Seagull_Material, class UMaterialInstance* Seagull_MT_LOD)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.seagull_Fade");
@@ -39,8 +41,11 @@ void ABP_Seagull01_8POI_C::seagull_Fade(class UMaterialInstance* Seagull_Materia
 }
 
 
-// Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_Seagull01_8POI_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.UserConstructionScript");
@@ -55,8 +60,10 @@ void ABP_Seagull01_8POI_C::UserConstructionScript()
 }
 
 
-// Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_Seagull01_8POI_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ReceiveBeginPlay");
@@ -71,8 +78,10 @@ void ABP_Seagull01_8POI_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeIn
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeIn
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Seagull01_8POI_C::FadeIn()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeIn");
@@ -87,8 +96,10 @@ void ABP_Seagull01_8POI_C::FadeIn()
 }
 
 
-// Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeOut
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeOut
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Seagull01_8POI_C::FadeOut()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeOut");
@@ -103,10 +114,12 @@ void ABP_Seagull01_8POI_C::FadeOut()
 }
 
 
-// Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ExecuteUbergraph_BP_Seagull01_8POI
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ExecuteUbergraph_BP_Seagull01_8POI
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Seagull01_8POI_C::ExecuteUbergraph_BP_Seagull01_8POI(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ExecuteUbergraph_BP_Seagull01_8POI");
@@ -134,6 +147,7 @@ void ABP_Seagull01_8POI_C::AfterRead()
 	READ_PTR_FULL(seagulls_MT, UMaterialInstanceDynamic);
 	READ_PTR_FULL(seagulls_MI_LOD, UMaterialInterface);
 	READ_PTR_FULL(seagulls_MT_LOD, UMaterialInstanceDynamic);
+	READ_PTR_FULL(WwiseEvent, UWwiseEvent);
 }
 
 void ABP_Seagull01_8POI_C::BeforeDelete()
@@ -148,6 +162,7 @@ void ABP_Seagull01_8POI_C::BeforeDelete()
 	DELE_PTR_FULL(seagulls_MT);
 	DELE_PTR_FULL(seagulls_MI_LOD);
 	DELE_PTR_FULL(seagulls_MT_LOD);
+	DELE_PTR_FULL(WwiseEvent);
 }
 
 }

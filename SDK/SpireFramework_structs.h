@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -33,6 +33,20 @@ enum class SpireFramework_EDirectionOfMovement : uint8_t
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct SpireFramework.SpireInfo
+// 0x0008
+struct FSpireInfo
+{
+	int                                                LevelId;                                                   // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               ShouldBeLoaded;                                            // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               ShouldBeVisible;                                           // 0x0005(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_2D16[0x2];                                     // 0x0006(0x0002) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
 // ScriptStruct SpireFramework.ServerSpireInfo
 // 0x0068
 struct FServerSpireInfo
@@ -41,20 +55,6 @@ struct FServerSpireInfo
 	struct FVector                                     Location;                                                  // 0x0004(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	class AActor*                                      SpireActor;                                                // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<struct FString, struct FName>                 InstancedLevelPaths;                                       // 0x0018(0x0050) (ZeroConstructor)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct SpireFramework.SpireInfo
-// 0x0008
-struct FSpireInfo
-{
-	int                                                LevelId;                                                   // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               ShouldBeLoaded;                                            // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               ShouldBeVisible;                                           // 0x0005(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_Y3JP[0x2];                                     // 0x0006(0x0002) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

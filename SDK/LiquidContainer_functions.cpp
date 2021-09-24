@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -26,10 +26,12 @@ void FLiquidTypeParams::BeforeDelete()
 {
 }
 
-// Function LiquidContainer.LiquidContainerInterface.SetLiquidLevel
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03EC0330
+//		Name   -> Function LiquidContainer.LiquidContainerInterface.SetLiquidLevel
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// float                          Level                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Level                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULiquidContainerInterface::SetLiquidLevel(float Level)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.SetLiquidLevel");
@@ -46,10 +48,12 @@ void ULiquidContainerInterface::SetLiquidLevel(float Level)
 }
 
 
-// Function LiquidContainer.LiquidContainerInterface.GetWantedLiquidLevel
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03EC0300
+//		Name   -> Function LiquidContainer.LiquidContainerInterface.GetWantedLiquidLevel
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULiquidContainerInterface::GetWantedLiquidLevel()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.GetWantedLiquidLevel");
@@ -67,10 +71,12 @@ float ULiquidContainerInterface::GetWantedLiquidLevel()
 }
 
 
-// Function LiquidContainer.LiquidContainerInterface.GetMaxLiquidCollectionAmount
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03EC02D0
+//		Name   -> Function LiquidContainer.LiquidContainerInterface.GetMaxLiquidCollectionAmount
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULiquidContainerInterface::GetMaxLiquidCollectionAmount()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.GetMaxLiquidCollectionAmount");
@@ -88,10 +94,12 @@ float ULiquidContainerInterface::GetMaxLiquidCollectionAmount()
 }
 
 
-// Function LiquidContainer.LiquidContainerInterface.GetLiquidLevel
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03EC0270
+//		Name   -> Function LiquidContainer.LiquidContainerInterface.GetLiquidLevel
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULiquidContainerInterface::GetLiquidLevel()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.GetLiquidLevel");
@@ -109,11 +117,13 @@ float ULiquidContainerInterface::GetLiquidLevel()
 }
 
 
-// Function LiquidContainer.LiquidContainerInterface.CollectLiquidAmount
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03EC0160
+//		Name   -> Function LiquidContainer.LiquidContainerInterface.CollectLiquidAmount
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// float                          DesiredAmount                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              DesiredAmount                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULiquidContainerInterface::CollectLiquidAmount(float DesiredAmount)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.CollectLiquidAmount");
@@ -144,10 +154,12 @@ void ULiquidContainerInterface::BeforeDelete()
 
 }
 
-// Function LiquidContainer.LiquidContainerComponent.SetLiquidType
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03EC0430
+//		Name   -> Function LiquidContainer.LiquidContainerComponent.SetLiquidType
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<LiquidContainer_ELiquidType> LiquidType                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<LiquidContainer_ELiquidType>           LiquidType                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULiquidContainerComponent::SetLiquidType(TEnumAsByte<LiquidContainer_ELiquidType> LiquidType)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerComponent.SetLiquidType");
@@ -164,10 +176,12 @@ void ULiquidContainerComponent::SetLiquidType(TEnumAsByte<LiquidContainer_ELiqui
 }
 
 
-// Function LiquidContainer.LiquidContainerComponent.SetLiquidLevel
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03EC03B0
+//		Name   -> Function LiquidContainer.LiquidContainerComponent.SetLiquidLevel
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          Level                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Level                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULiquidContainerComponent::SetLiquidLevel(float Level)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerComponent.SetLiquidLevel");
@@ -184,10 +198,12 @@ void ULiquidContainerComponent::SetLiquidLevel(float Level)
 }
 
 
-// Function LiquidContainer.LiquidContainerComponent.GetLiquidLevel
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03EC02A0
+//		Name   -> Function LiquidContainer.LiquidContainerComponent.GetLiquidLevel
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULiquidContainerComponent::GetLiquidLevel()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerComponent.GetLiquidLevel");
@@ -205,10 +221,12 @@ float ULiquidContainerComponent::GetLiquidLevel()
 }
 
 
-// Function LiquidContainer.LiquidContainerComponent.CollectLiquidMaterials
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03EC01F0
+//		Name   -> Function LiquidContainer.LiquidContainerComponent.CollectLiquidMaterials
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UMeshComponent*          MeshComponent                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UMeshComponent*                              MeshComponent                                              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULiquidContainerComponent::CollectLiquidMaterials(class UMeshComponent* MeshComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerComponent.CollectLiquidMaterials");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UCharacterAnimationInstance : public UAnimInstance
 {
 public:
-	unsigned char                                      UnknownData_WXUK[0x10];                                    // 0x0440(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_0QM9[0x10];                                    // 0x0440(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FCharacterAnimationIKUpdateParams           IKLeftHandUpdateParams;                                    // 0x0450(0x0040) (BlueprintVisible, BlueprintReadOnly, Protected)
 	struct FCharacterAnimationIKUpdateParams           IKRightHandUpdateParams;                                   // 0x0490(0x0040) (BlueprintVisible, BlueprintReadOnly, Protected)
 	struct FName                                       RightHandIKSocketName;                                     // 0x04D0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
@@ -217,7 +217,7 @@ public:
 class UAnimationDataStore : public UObject
 {
 public:
-	unsigned char                                      UnknownData_397B[0x18];                                    // 0x0028(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_5G4J[0x18];                                    // 0x0028(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FAnimationDataStoreEntry>            Data;                                                      // 0x0040(0x0010) (Edit, ZeroConstructor, EditConst)
 	TArray<struct FAnimationDataStoreLoadingEntry>     LoadingData;                                               // 0x0050(0x0010) (ZeroConstructor)
 
@@ -304,9 +304,9 @@ public:
 class UAnimationDataStoreComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_CLPR[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_57OS[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UAnimationDataStoreWeakReferenceAsset*       AnimationDataStoreWeakReferences;                          // 0x00D0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_EU03[0xB8];                                    // 0x00D8(0x00B8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9917[0xB8];                                    // 0x00D8(0x00B8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -430,7 +430,7 @@ class UAnimNotify_DestroyCosmeticItem : public UAnimNotify
 {
 public:
 	TEnumAsByte<Athena_EWieldAnimationLocation>        DestroyLocation;                                           // 0x0038(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GWH3[0x7];                                     // 0x0039(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BHL9[0x7];                                     // 0x0039(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -452,10 +452,10 @@ class UAnimNotify_PlayAnimationForCosmetic : public UAnimNotify
 {
 public:
 	TEnumAsByte<Athena_EWieldAnimationLocation>        CosmeticLocation;                                          // 0x0038(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_B4ET[0x7];                                     // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_8YDI[0x7];                                     // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UAnimSequenceBase*                           CosmeticItemAnimation;                                     // 0x0040(0x0008) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               Looping;                                                   // 0x0048(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_9Y3P[0x7];                                     // 0x0049(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WKKG[0x7];                                     // 0x0049(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -503,7 +503,7 @@ public:
 	bool                                               RenderShadowWhenHidden;                                    // 0x003B(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               UpdateForRole;                                             // 0x003C(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Engine_ENetRole>                       UpdateRole;                                                // 0x003D(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_VY7T[0x2];                                     // 0x003E(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_2JPH[0x2];                                     // 0x003E(0x0002) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -525,7 +525,7 @@ class UAnimNotify_SetLookAtEnabled : public UAnimNotify
 {
 public:
 	bool                                               Enabled;                                                   // 0x0038(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_V3XR[0x7];                                     // 0x0039(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_CBT3[0x7];                                     // 0x0039(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -548,12 +548,12 @@ class UAnimNotify_SpawnCosmeticItem : public UAnimNotify
 public:
 	class UClass*                                      ItemSpawnClass;                                            // 0x0038(0x0008) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	TEnumAsByte<Athena_EWieldAnimationLocation>        SpawnLocation;                                             // 0x0040(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_RHPE[0x7];                                     // 0x0041(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_E1D5[0x7];                                     // 0x0041(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UCosmeticItemAnimationSetDataAsset*          CosmeticItemAnimationDataSet;                              // 0x0048(0x0008) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               SpawnHidden;                                               // 0x0050(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               SpawnForRole;                                              // 0x0051(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Engine_ENetRole>                       SpawnRole;                                                 // 0x0052(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_VAWS[0x5];                                     // 0x0053(0x0005) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_U8D8[0x5];                                     // 0x0053(0x0005) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -597,7 +597,7 @@ class UAnimNotify_SwitchCosmeticItemAttachment : public UAnimNotify
 public:
 	TEnumAsByte<Athena_EWieldAnimationLocation>        PreviousLocation;                                          // 0x0038(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<Athena_EWieldAnimationLocation>        NewLocation;                                               // 0x0039(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_22XU[0x6];                                     // 0x003A(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WVBP[0x6];                                     // 0x003A(0x0006) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -620,7 +620,7 @@ class UAnimNotify_ToggleIK : public UAnimNotify
 public:
 	TArray<TEnumAsByte<Animation_ECharacterIKLimb>>    IKLimbsToAdjust;                                           // 0x0038(0x0010) (Edit, BlueprintReadOnly, ZeroConstructor)
 	bool                                               Enabled;                                                   // 0x0048(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_TRDH[0x7];                                     // 0x0049(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RM07[0x7];                                     // 0x0049(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -643,7 +643,7 @@ class UAnimNotifyCondition_FeatureConfigValidation : public UAnimNotifyCondition
 public:
 	struct FName                                       Feature;                                                   // 0x0028(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               TriggerWhenDisabled;                                       // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_UU43[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_DAN3[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -666,7 +666,7 @@ class UAnimNotifyState_PropagateCurveValuesToMaterials : public UAnimNotifyState
 public:
 	TArray<struct FCurveUpdateValues>                  CurveValues;                                               // 0x0028(0x0010) (Edit, BlueprintReadOnly, ZeroConstructor)
 	bool                                               DoNotPropagteCurveValues;                                  // 0x0038(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_JFQ9[0x17];                                    // 0x0039(0x0017) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_DWJS[0x17];                                    // 0x0039(0x0017) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -749,13 +749,13 @@ class UAnimNotifyState_SpawnCosmeticItem : public UAnimNotifyState
 public:
 	class UClass*                                      CosmeticItemToSpawn;                                       // 0x0028(0x0008) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	TEnumAsByte<Athena_EWieldAnimationLocation>        SpawnLocation;                                             // 0x0030(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_Q4YR[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_OI4V[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UCosmeticItemAnimationSetDataAsset*          CosmeticItemAnimationDataSet;                              // 0x0038(0x0008) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               SpawnHidden;                                               // 0x0040(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               DestroyOnEnd;                                              // 0x0041(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               OverrideDestroyLocation;                                   // 0x0042(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Athena_EWieldAnimationLocation>        DestroyLocation;                                           // 0x0043(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_05LS[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KICP[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -817,7 +817,7 @@ class UPreviewCharacterAnimationInstance : public UCharacterAnimationInstance
 {
 public:
 	class UAnimMontage*                                ActiveMontage;                                             // 0x0660(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_IL5M[0x78];                                    // 0x0668(0x0078) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SSDB[0x78];                                    // 0x0668(0x0078) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -858,9 +858,9 @@ public:
 class ACosmeticItemActor : public AActor
 {
 public:
-	unsigned char                                      UnknownData_LYDK[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_YZZ6[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class USkeletalMeshComponent*                      MeshComponent;                                             // 0x03D8(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_I24Q[0xA0];                                    // 0x03E0(0x00A0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5528[0xA0];                                    // 0x03E0(0x00A0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -901,7 +901,7 @@ public:
 class UCosmeticItemAnimationComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_73CQ[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_N9P5[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TMap<class USkeletalMeshComponent*, struct FCosmeticItems> CosmeticItems;                                             // 0x00D0(0x0050) (ZeroConstructor)
 	class UCosmeticItemAnimationDataAsset*             DataAsset;                                                 // 0x0120(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -967,10 +967,10 @@ public:
 class UCosmeticItemAnimationInstance : public UAnimInstance
 {
 public:
-	unsigned char                                      UnknownData_I115[0x8];                                     // 0x0440(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_V21Y[0x8];                                     // 0x0440(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UCosmeticItemAnimationSetDataAsset*          AnimationDataSet;                                          // 0x0448(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                                ActiveMontage;                                             // 0x0450(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_93KT[0x98];                                    // 0x0458(0x0098) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5YY3[0x98];                                    // 0x0458(0x0098) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1093,9 +1093,9 @@ public:
 class UCustomAnimationMontageComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_A8G6[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_J8DP[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FCustomAnimationMontageComponentReplicatedData ReplicatedData;                                            // 0x00D0(0x000C) (Net, RepNotify)
-	unsigned char                                      UnknownData_0QDH[0x5C];                                    // 0x00DC(0x005C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B9NY[0x5C];                                    // 0x00DC(0x005C) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1119,11 +1119,11 @@ class UCustomAnimationMontageDefinitionDataAsset : public UDataAsset
 public:
 	struct FName                                       MontageId;                                                 // 0x0028(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<Animation_ECustomAnimationMontageType> MontageType;                                               // 0x0030(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GLJ8[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_OP9M[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UAnimMontage*                                MontageData;                                               // 0x0038(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FCustomAnimationMontageStagedLoopingData    LoopingData;                                               // 0x0040(0x0028) (Edit, DisableEditOnInstance)
 	bool                                               Interrupts;                                                // 0x0068(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_UKGD[0x7];                                     // 0x0069(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_G9Z5[0x7];                                     // 0x0069(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1181,74 +1181,6 @@ public:
 
 };
 
-// Class Animation.DockableInterface
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class UDockableInterface : public UInterface
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = UObject::FindClass("Class Animation.DockableInterface");
-		return ptr;
-	}
-
-
-
-	void HandleDestroy();
-	struct FDockableInfo GetDockableInfo();
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// Class Animation.DockerBlueprintFunctions
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class UDockerBlueprintFunctions : public UBlueprintFunctionLibrary
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = UObject::FindClass("Class Animation.DockerBlueprintFunctions");
-		return ptr;
-	}
-
-
-
-	void STATIC_UpdateDock(struct FDocker* Docker, float DeltaTime);
-	void STATIC_StartDockingWithActor(struct FDocker* Docker, class AActor* Owner, class AActor* Target, float DockDuration, float DelayAfterDocking);
-	bool STATIC_IsFullyDocked(struct FDocker* Docker);
-	bool STATIC_IsDocking(struct FDocker* Docker);
-	struct FVector STATIC_GetTargetLocalOffset(const struct FDocker& Docker);
-	void STATIC_EndDock(struct FDocker* Docker);
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// Class Animation.DockerInterface
-// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
-class UDockerInterface : public UInterface
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = UObject::FindClass("Class Animation.DockerInterface");
-		return ptr;
-	}
-
-
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
 // Class Animation.DockingAnimationInterface
 // 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
 class UDockingAnimationInterface : public UInterface
@@ -1259,6 +1191,26 @@ public:
 	static UClass* StaticClass()
 	{
 		static UClass* ptr = UObject::FindClass("Class Animation.DockingAnimationInterface");
+		return ptr;
+	}
+
+
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// Class Animation.EmotePropDataInterface
+// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+class UEmotePropDataInterface : public UInterface
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = UObject::FindClass("Class Animation.EmotePropDataInterface");
 		return ptr;
 	}
 
@@ -1403,9 +1355,9 @@ public:
 	float                                              ReplicatedAnimationProgression;                            // 0x00D4(0x0004) (Edit, Net, ZeroConstructor, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	int                                                ReplicatedPlayingAnimationIndex;                           // 0x00D8(0x0004) (Edit, Net, ZeroConstructor, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	float                                              ReplicatedPlayRate;                                        // 0x00DC(0x0004) (Edit, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_1MMY[0x8];                                     // 0x00E0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_W75M[0x8];                                     // 0x00E0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UAnimInstance*                               AnimInstance;                                              // 0x00E8(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_UE27[0x20];                                    // 0x00F0(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3XLV[0x20];                                    // 0x00F0(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1489,7 +1441,7 @@ public:
 class UTransformBlendCurveComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_94M5[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PY4X[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FTransformBlendCurve                        Curve;                                                     // 0x00D0(0x0500) (Edit)
 
 
@@ -1533,7 +1485,7 @@ class UWaitForAnimationStateEntryProxy : public UObject
 {
 public:
 	struct FScriptMulticastDelegate                    OnReachedState;                                            // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_L3XZ[0x18];                                    // 0x0038(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_U1NW[0x18];                                    // 0x0038(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1558,7 +1510,7 @@ class UWaitForAnimationStateExitProxy : public UObject
 {
 public:
 	struct FScriptMulticastDelegate                    OnStateExit;                                               // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_ROV9[0x10];                                    // 0x0038(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_P8I9[0x10];                                    // 0x0038(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1606,7 +1558,7 @@ class UWeightedAnimSequenceLoadOnDemand : public UObject
 public:
 	class UAnimSequence*                               FallBackAnimation;                                         // 0x0028(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FWeightedAnimationData>              WeightedAnimationList;                                     // 0x0030(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData_WKEH[0xE0];                                    // 0x0040(0x00E0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SERQ[0xE0];                                    // 0x0040(0x00E0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1619,6 +1571,28 @@ public:
 
 	void Initialise(class UWeightedAnimationLoadOnDemandDataAsset* InAnimationData);
 	class UWeightedAnimSequenceLoadOnDemand* STATIC_CreateNewWeightedAnimSequenceLoadOnDemand();
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// Class Animation.DockableInterface
+// 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+class UDockableInterface : public UInterface
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = UObject::FindClass("Class Animation.DockableInterface");
+		return ptr;
+	}
+
+
+
+	void HandleDestroy();
+	struct FDockableInfo GetDockableInfo();
 	void AfterRead();
 	void BeforeDelete();
 

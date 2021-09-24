@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -104,10 +104,12 @@ void UAudioHardwareDeviceService::BeforeDelete()
 
 }
 
-// Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.SetHitchThreshold
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EE37C0
+//		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.SetHitchThreshold
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int                            InThreshold                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                InThreshold                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UHitchDiagnosisBlueprintFunctionLibrary::STATIC_SetHitchThreshold(int InThreshold)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.SetHitchThreshold");
@@ -124,10 +126,12 @@ void UHitchDiagnosisBlueprintFunctionLibrary::STATIC_SetHitchThreshold(int InThr
 }
 
 
-// Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchNameThisFrame
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02EE3720
+//		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchNameThisFrame
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+//		struct FString                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 struct FString UHitchDiagnosisBlueprintFunctionLibrary::STATIC_GetMaxHitchNameThisFrame()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchNameThisFrame");
@@ -145,10 +149,12 @@ struct FString UHitchDiagnosisBlueprintFunctionLibrary::STATIC_GetMaxHitchNameTh
 }
 
 
-// Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchLengthThisFrameMs
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02EE36F0
+//		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchLengthThisFrameMs
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UHitchDiagnosisBlueprintFunctionLibrary::STATIC_GetMaxHitchLengthThisFrameMs()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchLengthThisFrameMs");
@@ -166,8 +172,10 @@ int UHitchDiagnosisBlueprintFunctionLibrary::STATIC_GetMaxHitchLengthThisFrameMs
 }
 
 
-// Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DumpThisFramesHitchesToLog
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EE32D0
+//		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DumpThisFramesHitchesToLog
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 void UHitchDiagnosisBlueprintFunctionLibrary::STATIC_DumpThisFramesHitchesToLog()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DumpThisFramesHitchesToLog");
@@ -183,10 +191,12 @@ void UHitchDiagnosisBlueprintFunctionLibrary::STATIC_DumpThisFramesHitchesToLog(
 }
 
 
-// Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DidHitchOccurThisFrame
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02EE32A0
+//		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DidHitchOccurThisFrame
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UHitchDiagnosisBlueprintFunctionLibrary::STATIC_DidHitchOccurThisFrame()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DidHitchOccurThisFrame");
@@ -240,8 +250,10 @@ void ARareHUD::BeforeDelete()
 
 }
 
-// Function RareEngine.StallDetector.Deactivate
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EE3280
+//		Name   -> Function RareEngine.StallDetector.Deactivate
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UStallDetector::Deactivate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StallDetector.Deactivate");
@@ -257,12 +269,14 @@ void UStallDetector::Deactivate()
 }
 
 
-// Function RareEngine.StallDetector.CreateStallDetector
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EE31B0
+//		Name   -> Function RareEngine.StallDetector.CreateStallDetector
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// float                          Delay                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           CreateActive                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UStallDetector*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Delay                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               CreateActive                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UStallDetector*                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UStallDetector* UStallDetector::STATIC_CreateStallDetector(float Delay, bool CreateActive)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StallDetector.CreateStallDetector");
@@ -282,8 +296,10 @@ class UStallDetector* UStallDetector::STATIC_CreateStallDetector(float Delay, bo
 }
 
 
-// Function RareEngine.StallDetector.Activate
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EE3190
+//		Name   -> Function RareEngine.StallDetector.Activate
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UStallDetector::Activate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StallDetector.Activate");
@@ -311,13 +327,15 @@ void UStallDetector::BeforeDelete()
 
 }
 
-// Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshComponents
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EE34F0
+//		Name   -> Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshComponents
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UStaticMesh*>     MeshFilter                     (ConstParm, Parm, ZeroConstructor)
-// TArray<struct FStaticMeshComponentList> OutComponentLists              (Parm, OutParm, ZeroConstructor, ContainsInstancedReference)
-// class ULevel*                  RestrictToLevel                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<class UStaticMesh*>                         MeshFilter                                                 (ConstParm, Parm, ZeroConstructor)
+//		TArray<struct FStaticMeshComponentList>            OutComponentLists                                          (Parm, OutParm, ZeroConstructor, ContainsInstancedReference)
+//		class ULevel*                                      RestrictToLevel                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UStaticMeshActorBlueprintLibrary::STATIC_FindAllStaticMeshComponents(class UObject* WorldContextObject, TArray<class UStaticMesh*> MeshFilter, TArray<struct FStaticMeshComponentList>* OutComponentLists, class ULevel* RestrictToLevel)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshComponents");
@@ -339,13 +357,15 @@ void UStaticMeshActorBlueprintLibrary::STATIC_FindAllStaticMeshComponents(class 
 }
 
 
-// Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshActors
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EE32F0
+//		Name   -> Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshActors
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UStaticMesh*>     MeshFilter                     (ConstParm, Parm, ZeroConstructor)
-// TArray<struct FStaticMeshActorList> OutActorLists                  (Parm, OutParm, ZeroConstructor)
-// class ULevel*                  RestrictToLevel                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<class UStaticMesh*>                         MeshFilter                                                 (ConstParm, Parm, ZeroConstructor)
+//		TArray<struct FStaticMeshActorList>                OutActorLists                                              (Parm, OutParm, ZeroConstructor)
+//		class ULevel*                                      RestrictToLevel                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UStaticMeshActorBlueprintLibrary::STATIC_FindAllStaticMeshActors(class UObject* WorldContextObject, TArray<class UStaticMesh*> MeshFilter, TArray<struct FStaticMeshActorList>* OutActorLists, class ULevel* RestrictToLevel)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshActors");

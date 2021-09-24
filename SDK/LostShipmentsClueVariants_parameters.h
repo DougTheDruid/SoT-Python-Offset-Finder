@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -37,8 +37,8 @@ struct AClueSiteCircleMapWieldable_OnRep_MapRadialIconData_Params
 // Function LostShipmentsClueVariants.ClueVariantsBlueprintFunctionLibrary.GiveClueDescriptorToItem
 struct UClueVariantsBlueprintFunctionLibrary_GiveClueDescriptorToItem_Params
 {
-	class AItemInfo*                                   ItemInfo;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClueDescriptor*                             Clue;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AItemInfo*                                   ItemInfo;                                                  // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClueDescriptor*                             Clue;                                                      // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function LostShipmentsClueVariants.CompositeClueDestinationDescriptor.OnRep_DestinationInfo
@@ -49,31 +49,31 @@ struct UCompositeClueDestinationDescriptor_OnRep_DestinationInfo_Params
 // Function LostShipmentsClueVariants.GooseChaseClueBlueprintFunctionLibrary.CreateEndOfGooseChaseClue
 struct UGooseChaseClueBlueprintFunctionLibrary_CreateEndOfGooseChaseClue_Params
 {
-	class UClueDescriptor*                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClueDescriptor*                             ReturnValue;                                               // 0x0000(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function LostShipmentsClueVariants.ShipwreckClueBlueprintFunctionLibrary.CreateCluePointingToShipwreck
 struct UShipwreckClueBlueprintFunctionLibrary_CreateCluePointingToShipwreck_Params
 {
-	class UClueConnectionConfig*                       ConnectionConfiguration;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                Difficulty;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UClass*>                              AllowedClueTypes;                                          // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
-	class UTaleQuestSelectorService*                   SelectorService;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                     SourceLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-	class AShipwreck*                                  Shipwreck;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClueDescriptor*                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClueConnectionConfig*                       ConnectionConfiguration;                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                Difficulty;                                                // 0x0008(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UClass*>                              AllowedClueTypes;                                          // 0x0010(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
+	class UTaleQuestSelectorService*                   SelectorService;                                           // 0x0020(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                     SourceLocation;                                            // 0x0028(0x000C)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+	class AShipwreck*                                  Shipwreck;                                                 // 0x0038(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClueDescriptor*                             ReturnValue;                                               // 0x0040(0x0008)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function LostShipmentsClueVariants.TaleQuestClueInventoryService.SetClueTitleText
 struct UTaleQuestClueInventoryService_SetClueTitleText_Params
 {
-	struct FText                                       InTitleText;                                               // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FText                                       InTitleText;                                               // 0x0000(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function LostShipmentsClueVariants.TaleQuestClueInventoryService.GetCollectedClueCount
 struct UTaleQuestClueInventoryService_GetCollectedClueCount_Params
 {
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                ReturnValue;                                               // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

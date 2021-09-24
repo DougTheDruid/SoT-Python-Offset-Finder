@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,11 +18,13 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetCompanyTutorials
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetCompanyTutorials
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FName                   CompanyName                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class UBP_CT_VoyageProgress_C*> CompanyTutorials               (Parm, OutParm, ZeroConstructor)
+//		struct FName                                       CompanyName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TArray<class UBP_CT_VoyageProgress_C*>             CompanyTutorials                                           (Parm, OutParm, ZeroConstructor)
 void UBP_CT_TutorialProgress_C::GetCompanyTutorials(const struct FName& CompanyName, TArray<class UBP_CT_VoyageProgress_C*>* CompanyTutorials)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetCompanyTutorials");
@@ -41,10 +43,12 @@ void UBP_CT_TutorialProgress_C::GetCompanyTutorials(const struct FName& CompanyN
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetOrderOfSoulsTutorials
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetOrderOfSoulsTutorials
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<class UBP_CT_VoyageProgress_C*> Result                         (Parm, OutParm, ZeroConstructor)
+//		TArray<class UBP_CT_VoyageProgress_C*>             Result                                                     (Parm, OutParm, ZeroConstructor)
 void UBP_CT_TutorialProgress_C::GetOrderOfSoulsTutorials(TArray<class UBP_CT_VoyageProgress_C*>* Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetOrderOfSoulsTutorials");
@@ -62,10 +66,12 @@ void UBP_CT_TutorialProgress_C::GetOrderOfSoulsTutorials(TArray<class UBP_CT_Voy
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetMerchantAllianceTutorials
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetMerchantAllianceTutorials
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<class UBP_CT_VoyageProgress_C*> Result                         (Parm, OutParm, ZeroConstructor)
+//		TArray<class UBP_CT_VoyageProgress_C*>             Result                                                     (Parm, OutParm, ZeroConstructor)
 void UBP_CT_TutorialProgress_C::GetMerchantAllianceTutorials(TArray<class UBP_CT_VoyageProgress_C*>* Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetMerchantAllianceTutorials");
@@ -83,10 +89,12 @@ void UBP_CT_TutorialProgress_C::GetMerchantAllianceTutorials(TArray<class UBP_CT
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetGoldhoarderTutorials
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetGoldhoarderTutorials
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<class UBP_CT_VoyageProgress_C*> Result                         (Parm, OutParm, ZeroConstructor)
+//		TArray<class UBP_CT_VoyageProgress_C*>             Result                                                     (Parm, OutParm, ZeroConstructor)
 void UBP_CT_TutorialProgress_C::GetGoldhoarderTutorials(TArray<class UBP_CT_VoyageProgress_C*>* Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetGoldhoarderTutorials");
@@ -104,11 +112,13 @@ void UBP_CT_TutorialProgress_C::GetGoldhoarderTutorials(TArray<class UBP_CT_Voya
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.AreAllTutorialsOnState
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.AreAllTutorialsOnState
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> QueryVoyageState               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Result                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> QueryVoyageState                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CT_TutorialProgress_C::AreAllTutorialsOnState(TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> QueryVoyageState, bool* Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.AreAllTutorialsOnState");
@@ -127,11 +137,13 @@ void UBP_CT_TutorialProgress_C::AreAllTutorialsOnState(TEnumAsByte<TutorialVoyag
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.IsAnyTutorialOnState
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.IsAnyTutorialOnState
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> QueryVoyageState               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Result                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> QueryVoyageState                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CT_TutorialProgress_C::IsAnyTutorialOnState(TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> QueryVoyageState, bool* Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.IsAnyTutorialOnState");
@@ -150,11 +162,13 @@ void UBP_CT_TutorialProgress_C::IsAnyTutorialOnState(TEnumAsByte<TutorialVoyageI
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.FindTutorialProgressObject
-// (Private, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.FindTutorialProgressObject
+//		Flags  -> (Private, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// struct FText                   VoyageName                     (Parm)
-// class UBP_CT_VoyageProgress_C* Voyage                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FText                                       VoyageName                                                 (Parm)
+//		class UBP_CT_VoyageProgress_C*                     Voyage                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CT_TutorialProgress_C::FindTutorialProgressObject(const struct FText& VoyageName, class UBP_CT_VoyageProgress_C** Voyage)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.FindTutorialProgressObject");
@@ -173,14 +187,16 @@ void UBP_CT_TutorialProgress_C::FindTutorialProgressObject(const struct FText& V
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.CreateTutorialProgressTracker
-// (Private, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.CreateTutorialProgressTracker
+//		Flags  -> (Private, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass*                  VoyageProposalDesc             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UClass*                  TaleRankDesc                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UClass*                  ExclusionRank                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Disable                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UBP_CT_VoyageProgress_C* Result                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UClass*                                      VoyageProposalDesc                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UClass*                                      TaleRankDesc                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UClass*                                      ExclusionRank                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Disable                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UBP_CT_VoyageProgress_C*                     Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CT_TutorialProgress_C::CreateTutorialProgressTracker(class UClass* VoyageProposalDesc, class UClass* TaleRankDesc, class UClass* ExclusionRank, bool Disable, class UBP_CT_VoyageProgress_C** Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.CreateTutorialProgressTracker");
@@ -202,8 +218,10 @@ void UBP_CT_TutorialProgress_C::CreateTutorialProgressTracker(class UClass* Voya
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Start
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Start
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_CT_TutorialProgress_C::Start()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Start");
@@ -218,11 +236,13 @@ void UBP_CT_TutorialProgress_C::Start()
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Change Voyage Progress
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Change Voyage Progress
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FText                   VoyageName                     (Parm)
-// TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> New_Progress_State             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FText                                       VoyageName                                                 (Parm)
+//		TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> New_Progress_State                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CT_TutorialProgress_C::Change_Voyage_Progress(const struct FText& VoyageName, TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> New_Progress_State)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Change Voyage Progress");
@@ -239,10 +259,12 @@ void UBP_CT_TutorialProgress_C::Change_Voyage_Progress(const struct FText& Voyag
 }
 
 
-// Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.ExecuteUbergraph_BP_CT_TutorialProgress
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.ExecuteUbergraph_BP_CT_TutorialProgress
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CT_TutorialProgress_C::ExecuteUbergraph_BP_CT_TutorialProgress(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.ExecuteUbergraph_BP_CT_TutorialProgress");

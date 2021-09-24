@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -194,8 +194,10 @@ void UClueDestinationContainerInterface::BeforeDelete()
 
 }
 
-// Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentTitleText
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x013476F0
+//		Name   -> Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentTitleText
+//		Flags  -> (Final, Native, Private)
 void UAbandonedNoteClueDestinationContainerComponent::OnRep_CurrentTitleText()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentTitleText");
@@ -211,8 +213,10 @@ void UAbandonedNoteClueDestinationContainerComponent::OnRep_CurrentTitleText()
 }
 
 
-// Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentClueDestination
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x013476D0
+//		Name   -> Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentClueDestination
+//		Flags  -> (Final, Native, Private)
 void UAbandonedNoteClueDestinationContainerComponent::OnRep_CurrentClueDestination()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentClueDestination");
@@ -432,8 +436,10 @@ void UCircleMapClueDestinationContainerComponent::BeforeDelete()
 	DELE_PTR_FULL(DebugCrossId);
 }
 
-// Function LostShipmentsClueVariants.ClueSiteCircleMapWieldable.OnRep_MapRadialIconData
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x01347730
+//		Name   -> Function LostShipmentsClueVariants.ClueSiteCircleMapWieldable.OnRep_MapRadialIconData
+//		Flags  -> (Final, Native, Private)
 void AClueSiteCircleMapWieldable::OnRep_MapRadialIconData()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.ClueSiteCircleMapWieldable.OnRep_MapRadialIconData");
@@ -461,11 +467,13 @@ void AClueSiteCircleMapWieldable::BeforeDelete()
 
 }
 
-// Function LostShipmentsClueVariants.ClueVariantsBlueprintFunctionLibrary.GiveClueDescriptorToItem
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01347620
+//		Name   -> Function LostShipmentsClueVariants.ClueVariantsBlueprintFunctionLibrary.GiveClueDescriptorToItem
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class AItemInfo*               ItemInfo                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClueDescriptor*         Clue                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AItemInfo*                                   ItemInfo                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClueDescriptor*                             Clue                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UClueVariantsBlueprintFunctionLibrary::STATIC_GiveClueDescriptorToItem(class AItemInfo* ItemInfo, class UClueDescriptor* Clue)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.ClueVariantsBlueprintFunctionLibrary.GiveClueDescriptorToItem");
@@ -495,8 +503,10 @@ void UClueVariantsBlueprintFunctionLibrary::BeforeDelete()
 
 }
 
-// Function LostShipmentsClueVariants.CompositeClueDestinationDescriptor.OnRep_DestinationInfo
-// (Native, Public)
+// Function:
+//		Offset -> 0x01347710
+//		Name   -> Function LostShipmentsClueVariants.CompositeClueDestinationDescriptor.OnRep_DestinationInfo
+//		Flags  -> (Native, Public)
 void UCompositeClueDestinationDescriptor::OnRep_DestinationInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.CompositeClueDestinationDescriptor.OnRep_DestinationInfo");
@@ -600,10 +610,12 @@ void UFloatingMessageInABottleSeaClueCreator::BeforeDelete()
 
 }
 
-// Function LostShipmentsClueVariants.GooseChaseClueBlueprintFunctionLibrary.CreateEndOfGooseChaseClue
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x013475C0
+//		Name   -> Function LostShipmentsClueVariants.GooseChaseClueBlueprintFunctionLibrary.CreateEndOfGooseChaseClue
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UClueDescriptor*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClueDescriptor*                             ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UClueDescriptor* UGooseChaseClueBlueprintFunctionLibrary::STATIC_CreateEndOfGooseChaseClue()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.GooseChaseClueBlueprintFunctionLibrary.CreateEndOfGooseChaseClue");
@@ -831,16 +843,18 @@ void USeaLocationByGridSquareClueDestinationDescriptor::BeforeDelete()
 
 }
 
-// Function LostShipmentsClueVariants.ShipwreckClueBlueprintFunctionLibrary.CreateCluePointingToShipwreck
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x013473C0
+//		Name   -> Function LostShipmentsClueVariants.ShipwreckClueBlueprintFunctionLibrary.CreateCluePointingToShipwreck
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UClueConnectionConfig*   ConnectionConfiguration        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            Difficulty                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UClass*>          AllowedClueTypes               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
-// class UTaleQuestSelectorService* SelectorService                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 SourceLocation                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// class AShipwreck*              Shipwreck                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClueDescriptor*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClueConnectionConfig*                       ConnectionConfiguration                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Difficulty                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<class UClass*>                              AllowedClueTypes                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
+//		class UTaleQuestSelectorService*                   SelectorService                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     SourceLocation                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class AShipwreck*                                  Shipwreck                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClueDescriptor*                             ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UClueDescriptor* UShipwreckClueBlueprintFunctionLibrary::STATIC_CreateCluePointingToShipwreck(class UClueConnectionConfig* ConnectionConfiguration, int Difficulty, TArray<class UClass*> AllowedClueTypes, class UTaleQuestSelectorService* SelectorService, const struct FVector& SourceLocation, class AShipwreck* Shipwreck)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.ShipwreckClueBlueprintFunctionLibrary.CreateCluePointingToShipwreck");
@@ -912,10 +926,12 @@ void UShipwreckClueSiteType::BeforeDelete()
 
 }
 
-// Function LostShipmentsClueVariants.TaleQuestClueInventoryService.SetClueTitleText
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x01347750
+//		Name   -> Function LostShipmentsClueVariants.TaleQuestClueInventoryService.SetClueTitleText
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FText                   InTitleText                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FText                                       InTitleText                                                (ConstParm, Parm, OutParm, ReferenceParm)
 void UTaleQuestClueInventoryService::SetClueTitleText(const struct FText& InTitleText)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.TaleQuestClueInventoryService.SetClueTitleText");
@@ -932,10 +948,12 @@ void UTaleQuestClueInventoryService::SetClueTitleText(const struct FText& InTitl
 }
 
 
-// Function LostShipmentsClueVariants.TaleQuestClueInventoryService.GetCollectedClueCount
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x013475F0
+//		Name   -> Function LostShipmentsClueVariants.TaleQuestClueInventoryService.GetCollectedClueCount
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UTaleQuestClueInventoryService::GetCollectedClueCount()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.TaleQuestClueInventoryService.GetCollectedClueCount");

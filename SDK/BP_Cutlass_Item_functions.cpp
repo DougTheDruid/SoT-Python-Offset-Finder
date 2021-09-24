@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,11 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Cutlass_Item.BP_Cutlass_Item_C.DoBlockEffect
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Cutlass_Item.BP_Cutlass_Item_C.DoBlockEffect
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_Cutlass_Item_C::DoBlockEffect()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Cutlass_Item.BP_Cutlass_Item_C.DoBlockEffect");
@@ -34,8 +37,10 @@ void ABP_Cutlass_Item_C::DoBlockEffect()
 }
 
 
-// Function BP_Cutlass_Item.BP_Cutlass_Item_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Cutlass_Item.BP_Cutlass_Item_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Cutlass_Item_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Cutlass_Item.BP_Cutlass_Item_C.UserConstructionScript");
@@ -50,10 +55,12 @@ void ABP_Cutlass_Item_C::UserConstructionScript()
 }
 
 
-// Function BP_Cutlass_Item.BP_Cutlass_Item_C.OnBlockedAttack
-// (Event, Protected, HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Cutlass_Item.BP_Cutlass_Item_C.OnBlockedAttack
+//		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FEventBlocked           Event                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FEventBlocked                               Event                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void ABP_Cutlass_Item_C::OnBlockedAttack(const struct FEventBlocked& Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Cutlass_Item.BP_Cutlass_Item_C.OnBlockedAttack");
@@ -69,10 +76,12 @@ void ABP_Cutlass_Item_C::OnBlockedAttack(const struct FEventBlocked& Event)
 }
 
 
-// Function BP_Cutlass_Item.BP_Cutlass_Item_C.ExecuteUbergraph_BP_Cutlass_Item
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Cutlass_Item.BP_Cutlass_Item_C.ExecuteUbergraph_BP_Cutlass_Item
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Cutlass_Item_C::ExecuteUbergraph_BP_Cutlass_Item(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Cutlass_Item.BP_Cutlass_Item_C.ExecuteUbergraph_BP_Cutlass_Item");

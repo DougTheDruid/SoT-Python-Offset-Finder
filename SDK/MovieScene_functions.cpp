@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -142,19 +142,19 @@ void FMovieSceneSequenceTransform::BeforeDelete()
 {
 }
 
-void FMovieSceneTrackCompilationParams::AfterRead()
-{
-}
-
-void FMovieSceneTrackCompilationParams::BeforeDelete()
-{
-}
-
 void FMovieSceneGenerationLedger::AfterRead()
 {
 }
 
 void FMovieSceneGenerationLedger::BeforeDelete()
+{
+}
+
+void FMovieSceneTrackCompilationParams::AfterRead()
+{
+}
+
+void FMovieSceneTrackCompilationParams::BeforeDelete()
 {
 }
 
@@ -448,8 +448,10 @@ void UMovieSceneFolder::BeforeDelete()
 
 }
 
-// Function MovieScene.MovieSceneSequencePlayer.Stop
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E36910
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.Stop
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::Stop()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.Stop");
@@ -465,8 +467,10 @@ void UMovieSceneSequencePlayer::Stop()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E368F0
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::StartPlayingNextTick()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick");
@@ -482,10 +486,12 @@ void UMovieSceneSequencePlayer::StartPlayingNextTick()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.SetPlayRate
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E36730
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlayRate
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          PlayRate                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              PlayRate                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetPlayRate");
@@ -502,11 +508,13 @@ void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E36830
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          NewStartTime                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          NewEndTime                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              NewStartTime                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              NewEndTime                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UMovieSceneSequencePlayer::SetPlaybackRange(float NewStartTime, float NewEndTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange");
@@ -524,10 +532,12 @@ void UMovieSceneSequencePlayer::SetPlaybackRange(float NewStartTime, float NewEn
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E367B0
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          NewPlaybackPosition            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              NewPlaybackPosition                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition");
@@ -544,8 +554,10 @@ void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.PlayReverse
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E36710
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayReverse
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::PlayReverse()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.PlayReverse");
@@ -561,10 +573,12 @@ void UMovieSceneSequencePlayer::PlayReverse()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.PlayLooping
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E36690
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayLooping
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            NumLoops                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                NumLoops                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.PlayLooping");
@@ -581,8 +595,10 @@ void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.Play
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E36670
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.Play
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::Play()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.Play");
@@ -598,8 +614,10 @@ void UMovieSceneSequencePlayer::Play()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.Pause
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E36650
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.Pause
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::Pause()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.Pause");
@@ -615,10 +633,12 @@ void UMovieSceneSequencePlayer::Pause()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.IsPlaying
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01E36620
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.IsPlaying
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMovieSceneSequencePlayer::IsPlaying()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.IsPlaying");
@@ -636,10 +656,12 @@ bool UMovieSceneSequencePlayer::IsPlaying()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.GetPlayRate
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01E36580
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlayRate
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UMovieSceneSequencePlayer::GetPlayRate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlayRate");
@@ -657,10 +679,12 @@ float UMovieSceneSequencePlayer::GetPlayRate()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01E36600
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UMovieSceneSequencePlayer::GetPlaybackStart()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart");
@@ -678,10 +702,12 @@ float UMovieSceneSequencePlayer::GetPlaybackStart()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01E365D0
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UMovieSceneSequencePlayer::GetPlaybackPosition()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition");
@@ -699,10 +725,12 @@ float UMovieSceneSequencePlayer::GetPlaybackPosition()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01E365B0
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UMovieSceneSequencePlayer::GetPlaybackEnd()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd");
@@ -720,10 +748,12 @@ float UMovieSceneSequencePlayer::GetPlaybackEnd()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.GetLength
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01E36550
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetLength
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UMovieSceneSequencePlayer::GetLength()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetLength");
@@ -741,8 +771,10 @@ float UMovieSceneSequencePlayer::GetLength()
 }
 
 
-// Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x01E36530
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::ChangePlaybackDirection()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection");

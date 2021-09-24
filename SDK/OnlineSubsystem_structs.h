@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -139,7 +139,7 @@ struct FAchievementUpdatedEvent
 	struct FString                                     AchievementId;                                             // 0x0000(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	uint32_t                                           Progress;                                                  // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               Successful;                                                // 0x0014(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_JZGQ[0x3];                                     // 0x0015(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SRG9[0x3];                                     // 0x0015(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     Reason;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     Platform;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
@@ -158,7 +158,7 @@ struct FOnlineStoreCatalogItem
 	struct FString                                     FormattedPrice;                                            // 0x0030(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     FormattedBasePrice;                                        // 0x0040(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	bool                                               IsOnSale;                                                  // 0x0050(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_IL42[0x7];                                     // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_O4IZ[0x7];                                     // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FDateTime                                   SaleEndDate;                                               // 0x0058(0x0008) (ZeroConstructor)
 	struct FString                                     ImageUri;                                                  // 0x0060(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     CurrencyCode;                                              // 0x0070(0x0010) (ZeroConstructor, HasGetValueTypeHash)
@@ -175,7 +175,7 @@ struct FInAppPurchaseProductRequest
 {
 	struct FString                                     ProductIdentifier;                                         // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                               bIsConsumable;                                             // 0x0010(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_3NJ2[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_XYYF[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -106,13 +106,15 @@ void ULevelSequenceSubtitlesInterface::BeforeDelete()
 
 }
 
-// Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02184D90
+//		Name   -> Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ULevelSequence*          LevelSequence                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMovieSceneSequencePlaybackSettings Settings                       (Parm)
-// class ULevelSequencePlayer*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class ULevelSequence*                              LevelSequence                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FMovieSceneSequencePlaybackSettings         Settings                                                   (Parm)
+//		class ULevelSequencePlayer*                        ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer");
@@ -173,11 +175,13 @@ void ULevelSequenceBurnInOptions::BeforeDelete()
 	DELE_PTR_FULL(Settings);
 }
 
-// Function LevelSequence.LevelSequenceActor.SetSequence
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x021853B0
+//		Name   -> Function LevelSequence.LevelSequenceActor.SetSequence
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class ULevelSequence*          InSequence                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           LoadSequence                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class ULevelSequence*                              InSequence                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               LoadSequence                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence, bool LoadSequence)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetSequence");
@@ -195,12 +199,14 @@ void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence, bool Loa
 }
 
 
-// Function LevelSequence.LevelSequenceActor.SetBinding
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x021851C0
+//		Name   -> Function LevelSequence.LevelSequenceActor.SetBinding
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FMovieSceneObjectBindingPtr Binding                        (Parm)
-// TArray<class AActor*>          Actors                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                           bAllowBindingsFromAsset        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FMovieSceneObjectBindingPtr                 Binding                                                    (Parm)
+//		TArray<class AActor*>                              Actors                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		bool                                               bAllowBindingsFromAsset                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingPtr& Binding, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetBinding");
@@ -219,8 +225,10 @@ void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingPtr& B
 }
 
 
-// Function LevelSequence.LevelSequenceActor.ResetBindings
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02185170
+//		Name   -> Function LevelSequence.LevelSequenceActor.ResetBindings
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void ALevelSequenceActor::ResetBindings()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBindings");
@@ -236,10 +244,12 @@ void ALevelSequenceActor::ResetBindings()
 }
 
 
-// Function LevelSequence.LevelSequenceActor.ResetBinding
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x021850B0
+//		Name   -> Function LevelSequence.LevelSequenceActor.ResetBinding
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FMovieSceneObjectBindingPtr Binding                        (Parm)
+//		struct FMovieSceneObjectBindingPtr                 Binding                                                    (Parm)
 void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingPtr& Binding)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBinding");
@@ -256,11 +266,13 @@ void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingPtr&
 }
 
 
-// Function LevelSequence.LevelSequenceActor.RemoveBinding
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02184FB0
+//		Name   -> Function LevelSequence.LevelSequenceActor.RemoveBinding
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FMovieSceneObjectBindingPtr Binding                        (Parm)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FMovieSceneObjectBindingPtr                 Binding                                                    (Parm)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingPtr& Binding, class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.RemoveBinding");
@@ -278,11 +290,13 @@ void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingPtr
 }
 
 
-// Function LevelSequence.LevelSequenceActor.GetSequence
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02184EF0
+//		Name   -> Function LevelSequence.LevelSequenceActor.GetSequence
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           Load                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class ULevelSequence*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               Load                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class ULevelSequence*                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class ULevelSequence* ALevelSequenceActor::GetSequence(bool Load)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.GetSequence");
@@ -301,12 +315,14 @@ class ULevelSequence* ALevelSequenceActor::GetSequence(bool Load)
 }
 
 
-// Function LevelSequence.LevelSequenceActor.AddBinding
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02184C50
+//		Name   -> Function LevelSequence.LevelSequenceActor.AddBinding
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FMovieSceneObjectBindingPtr Binding                        (Parm)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           bAllowBindingsFromAsset        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FMovieSceneObjectBindingPtr                 Binding                                                    (Parm)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               bAllowBindingsFromAsset                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingPtr& Binding, class AActor* Actor, bool bAllowBindingsFromAsset)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.AddBinding");
@@ -347,10 +363,12 @@ void ALevelSequenceActor::BeforeDelete()
 	DELE_PTR_FULL(BurnInInstance);
 }
 
-// Function LevelSequence.LevelSequenceBurnIn.SetSettings
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function LevelSequence.LevelSequenceBurnIn.SetSettings
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// class UObject*                 InSettings                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     InSettings                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.SetSettings");
@@ -366,10 +384,12 @@ void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 }
 
 
-// Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass
-// (Native, Event, Public, BlueprintEvent, Const)
+// Function:
+//		Offset -> 0x02184F90
+//		Name   -> Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass
+//		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 // Parameters:
-// class UClass*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UClass*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 class UClass* ULevelSequenceBurnIn::GetSettingsClass()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass");

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -144,8 +144,10 @@ void UAnimNotifyState_WwiseSound::BeforeDelete()
 	DELE_PTR_FULL(WwiseEventEnd);
 }
 
-// Function RareAudio.AudioEventToComponentMap.ClearMappings
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04464340
+//		Name   -> Function RareAudio.AudioEventToComponentMap.ClearMappings
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void AAudioEventToComponentMap::ClearMappings()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMap.ClearMappings");
@@ -161,13 +163,15 @@ void AAudioEventToComponentMap::ClearMappings()
 }
 
 
-// Function RareAudio.AudioEventToComponentMap.AddMappingWithSingleEmitterComponent
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044640A0
+//		Name   -> Function RareAudio.AudioEventToComponentMap.AddMappingWithSingleEmitterComponent
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UWwiseEvent*             PlayEvent                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseEvent*             StopEvent                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseEmitterComponent*  WwiseEmitterComponent          (Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseObjectPoolWrapper* WwiseEmitterPool               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 PlayEvent                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 StopEvent                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEmitterComponent*                      WwiseEmitterComponent                                      (Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseObjectPoolWrapper*                     WwiseEmitterPool                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AAudioEventToComponentMap::AddMappingWithSingleEmitterComponent(class UWwiseEvent* PlayEvent, class UWwiseEvent* StopEvent, class UWwiseEmitterComponent** WwiseEmitterComponent, class UWwiseObjectPoolWrapper* WwiseEmitterPool)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMap.AddMappingWithSingleEmitterComponent");
@@ -189,13 +193,15 @@ void AAudioEventToComponentMap::AddMappingWithSingleEmitterComponent(class UWwis
 }
 
 
-// Function RareAudio.AudioEventToComponentMap.AddMapping
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04463D60
+//		Name   -> Function RareAudio.AudioEventToComponentMap.AddMapping
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UWwiseEvent*             PlayEvent                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseEvent*             StopEvent                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UWwiseEmitterComponent*> WwiseEmitterComponents         (Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
-// class UWwiseObjectPoolWrapper* WwiseEmitterPool               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 PlayEvent                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 StopEvent                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<class UWwiseEmitterComponent*>              WwiseEmitterComponents                                     (Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
+//		class UWwiseObjectPoolWrapper*                     WwiseEmitterPool                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AAudioEventToComponentMap::AddMapping(class UWwiseEvent* PlayEvent, class UWwiseEvent* StopEvent, TArray<class UWwiseEmitterComponent*>* WwiseEmitterComponents, class UWwiseObjectPoolWrapper* WwiseEmitterPool)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMap.AddMapping");
@@ -231,8 +237,10 @@ void AAudioEventToComponentMap::BeforeDelete()
 	DELE_PTR_FULL(AudioEventToComponentMapComponent);
 }
 
-// Function RareAudio.AudioEventToComponentMapComponent.ClearMappings
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04464360
+//		Name   -> Function RareAudio.AudioEventToComponentMapComponent.ClearMappings
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UAudioEventToComponentMapComponent::ClearMappings()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMapComponent.ClearMappings");
@@ -248,13 +256,15 @@ void UAudioEventToComponentMapComponent::ClearMappings()
 }
 
 
-// Function RareAudio.AudioEventToComponentMapComponent.AddMappingWithSingleEmitterComponent
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044641F0
+//		Name   -> Function RareAudio.AudioEventToComponentMapComponent.AddMappingWithSingleEmitterComponent
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UWwiseEvent*             PlayEvent                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseEvent*             StopEvent                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseEmitterComponent*  WwiseEmitterComponent          (Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseObjectPoolWrapper* WwiseEmitterPool               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 PlayEvent                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 StopEvent                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEmitterComponent*                      WwiseEmitterComponent                                      (Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseObjectPoolWrapper*                     WwiseEmitterPool                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UAudioEventToComponentMapComponent::AddMappingWithSingleEmitterComponent(class UWwiseEvent* PlayEvent, class UWwiseEvent* StopEvent, class UWwiseEmitterComponent** WwiseEmitterComponent, class UWwiseObjectPoolWrapper* WwiseEmitterPool)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMapComponent.AddMappingWithSingleEmitterComponent");
@@ -276,13 +286,15 @@ void UAudioEventToComponentMapComponent::AddMappingWithSingleEmitterComponent(cl
 }
 
 
-// Function RareAudio.AudioEventToComponentMapComponent.AddMapping
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04463F00
+//		Name   -> Function RareAudio.AudioEventToComponentMapComponent.AddMapping
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UWwiseEvent*             PlayEvent                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseEvent*             StopEvent                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UWwiseEmitterComponent*> WwiseEmitterComponents         (Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
-// class UWwiseObjectPoolWrapper* WwiseEmitterPool               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 PlayEvent                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 StopEvent                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<class UWwiseEmitterComponent*>              WwiseEmitterComponents                                     (Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
+//		class UWwiseObjectPoolWrapper*                     WwiseEmitterPool                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UAudioEventToComponentMapComponent::AddMapping(class UWwiseEvent* PlayEvent, class UWwiseEvent* StopEvent, TArray<class UWwiseEmitterComponent*>* WwiseEmitterComponents, class UWwiseObjectPoolWrapper* WwiseEmitterPool)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMapComponent.AddMapping");
@@ -316,11 +328,13 @@ void UAudioEventToComponentMapComponent::BeforeDelete()
 
 }
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseStopGlobalEvent
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04467320
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseStopGlobalEvent
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWwiseEvent*             Event                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          FadeTime                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 Event                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              FadeTime                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWwiseEmitterBlueprintLibrary::STATIC_WwiseStopGlobalEvent(class UWwiseEvent* Event, float FadeTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseStopGlobalEvent");
@@ -338,11 +352,13 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseStopGlobalEvent(class UWwiseEven
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetState
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04467270
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetState
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// struct FName                   StateGroup                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FName                   StateValue                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       StateGroup                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       StateValue                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWwiseEmitterBlueprintLibrary::STATIC_WwiseSetState(const struct FName& StateGroup, const struct FName& StateValue)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetState");
@@ -360,11 +376,13 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseSetState(const struct FName& Sta
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetGlobalRTPC
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044671B0
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetGlobalRTPC
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// struct FName                   RTPCName                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          RTPCValue                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       RTPCName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              RTPCValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWwiseEmitterBlueprintLibrary::STATIC_WwiseSetGlobalRTPC(const struct FName& RTPCName, float RTPCValue)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetGlobalRTPC");
@@ -382,14 +400,16 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseSetGlobalRTPC(const struct FName
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostOneShotOnOwner
-// (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x04467010
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostOneShotOnOwner
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UObject*                 Owner                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseObjectPoolWrapper* EmitterPool                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWwiseEmitterCreationParams CreationParams                 (Parm)
-// struct FVector                 Offset                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<RareAudio_EEmitterRelationship> Relationship                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     Owner                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseObjectPoolWrapper*                     EmitterPool                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWwiseEmitterCreationParams                 CreationParams                                             (Parm)
+//		struct FVector                                     Offset                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWwiseEmitterBlueprintLibrary::STATIC_WwisePostOneShotOnOwner(class UObject* Owner, class UWwiseObjectPoolWrapper* EmitterPool, const struct FWwiseEmitterCreationParams& CreationParams, const struct FVector& Offset, TEnumAsByte<RareAudio_EEmitterRelationship> Relationship)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostOneShotOnOwner");
@@ -410,11 +430,13 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwisePostOneShotOnOwner(class UObject
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostGlobalEvent
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04466F90
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostGlobalEvent
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWwiseEvent*             Event                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 Event                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UWwiseEmitterBlueprintLibrary::STATIC_WwisePostGlobalEvent(class UWwiseEvent* Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostGlobalEvent");
@@ -433,16 +455,18 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwisePostGlobalEvent(class UWwiseEvent
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostEventAtLocation
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x04466D80
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostEventAtLocation
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (Parm, OutParm)
-// class UWwiseEvent*             Event                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 Location                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 Front                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UWwiseObjectPoolWrapper* EmitterPool                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<RareAudio_EEmitterRelationship> Relationship                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWwiseEmitter                               Emitter                                                    (Parm, OutParm)
+//		class UWwiseEvent*                                 Event                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     Location                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     Front                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UWwiseObjectPoolWrapper*                     EmitterPool                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UWwiseEmitterBlueprintLibrary::STATIC_WwisePostEventAtLocation(struct FWwiseEmitter* Emitter, class UWwiseEvent* Event, const struct FVector& Location, const struct FVector& Front, class UWwiseObjectPoolWrapper* EmitterPool, TEnumAsByte<RareAudio_EEmitterRelationship> Relationship)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostEventAtLocation");
@@ -468,11 +492,13 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwisePostEventAtLocation(struct FWwise
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseIsGlobalEvent
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04466D00
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseIsGlobalEvent
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWwiseEvent*             Event                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UWwiseEvent*                                 Event                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseIsGlobalEvent(class UWwiseEvent* Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseIsGlobalEvent");
@@ -491,12 +517,14 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseIsGlobalEvent(class UWwiseEvent*
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerInfo
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04466B90
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerInfo
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseListenerInfo      InfoOut                        (Parm, OutParm)
-// int                            Viewport                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseListenerInfo                          InfoOut                                                    (Parm, OutParm)
+//		int                                                Viewport                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetListenerInfo(struct FWwiseListenerInfo* InfoOut, int Viewport)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerInfo");
@@ -518,17 +546,19 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetListenerInfo(struct FWwiseLis
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerEmitter
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x04466930
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerEmitter
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (Parm, OutParm)
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            ListenerIndex                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 Offset                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           bFollowOrientaion              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UWwiseObjectPoolWrapper* EmitterPool                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (Parm, OutParm)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ListenerIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     Offset                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               bFollowOrientaion                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UWwiseObjectPoolWrapper*                     EmitterPool                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetListenerEmitter(struct FWwiseEmitter* Emitter, class UObject* WorldContextObject, int ListenerIndex, const struct FName& Name, const struct FVector& Offset, bool bFollowOrientaion, class UWwiseObjectPoolWrapper* EmitterPool)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerEmitter");
@@ -555,12 +585,14 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetListenerEmitter(struct FWwise
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetGlobalRTPC
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04466850
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetGlobalRTPC
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FName                   RTPCName                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          RTPCValue                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FName                                       RTPCName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              RTPCValue                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetGlobalRTPC(const struct FName& RTPCName, float* RTPCValue)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetGlobalRTPC");
@@ -582,14 +614,16 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetGlobalRTPC(const struct FName
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterWaitToComplete
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044666B0
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterWaitToComplete
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// int                            PlayId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLatentActionInfo       LatentInfo                     (Parm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		int                                                PlayId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLatentActionInfo                           LatentInfo                                                 (Parm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterWaitToComplete(const struct FWwiseEmitter& Emitter, int PlayId, class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterWaitToComplete");
@@ -611,13 +645,15 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterWaitToComplete(const stru
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterStop
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04466550
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterStop
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// int                            PlayId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          FadeTime                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		int                                                PlayId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              FadeTime                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterStop(const struct FWwiseEmitter& Emitter, int PlayId, float FadeTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterStop");
@@ -638,13 +674,15 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterStop(const struct FWwiseE
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetSwitch
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044663F0
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetSwitch
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FName                   SwitchGroup                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FName                   Value                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FName                                       SwitchGroup                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetSwitch(const struct FWwiseEmitter& Emitter, const struct FName& SwitchGroup, const struct FName& Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetSwitch");
@@ -665,13 +703,15 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetSwitch(const struct FW
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPCOnAll
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044662C0
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPCOnAll
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TArray<struct FWwiseEmitter>   Emitters                       (ConstParm, Parm, ZeroConstructor)
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		TArray<struct FWwiseEmitter>                       Emitters                                                   (ConstParm, Parm, ZeroConstructor)
+//		struct FName                                       Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetRTPCOnAll(TArray<struct FWwiseEmitter> Emitters, const struct FName& Name, float Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPCOnAll");
@@ -692,13 +732,15 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetRTPCOnAll(TArray<struc
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPC
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04466160
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPC
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FName                                       Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetRTPC(const struct FWwiseEmitter& Emitter, const struct FName& Name, float Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPC");
@@ -719,12 +761,14 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetRTPC(const struct FWwi
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetParams
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04466040
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetParams
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FWwiseEmitterParams     Params                         (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FWwiseEmitterParams                         Params                                                     (ConstParm, Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetParams(const struct FWwiseEmitter& Emitter, const struct FWwiseEmitterParams& Params)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetParams");
@@ -744,12 +788,14 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetParams(const struct FW
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetLocation
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x04465F20
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetLocation
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FVector                 Location                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetLocation(const struct FWwiseEmitter& Emitter, const struct FVector& Location)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetLocation");
@@ -769,15 +815,17 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetLocation(const struct 
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEventOnAll
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04465D30
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEventOnAll
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TArray<struct FWwiseEmitter>   Emitters                       (ConstParm, Parm, ZeroConstructor)
-// class UWwiseEvent*             WwiseEvent                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<RareAudio_EEmitterRelationship> Relationship                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// struct FName                   SourcePath                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// struct FName                   SourceObj                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// TArray<int>                    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		TArray<struct FWwiseEmitter>                       Emitters                                                   (ConstParm, Parm, ZeroConstructor)
+//		class UWwiseEvent*                                 WwiseEvent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		struct FName                                       SourcePath                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		struct FName                                       SourceObj                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		TArray<int>                                        ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<int> UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterPostEventOnAll(TArray<struct FWwiseEmitter> Emitters, class UWwiseEvent* WwiseEvent, TEnumAsByte<RareAudio_EEmitterRelationship> Relationship, const struct FName& SourcePath, const struct FName& SourceObj)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEventOnAll");
@@ -800,15 +848,17 @@ TArray<int> UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterPostEventOnAll(TAr
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEvent
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04465B70
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEvent
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// class UWwiseEvent*             WwiseEvent                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<RareAudio_EEmitterRelationship> Relationship                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// struct FName                   SourcePath                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// struct FName                   SourceObj                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		class UWwiseEvent*                                 WwiseEvent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		struct FName                                       SourcePath                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		struct FName                                       SourceObj                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterPostEvent(const struct FWwiseEmitter& Emitter, class UWwiseEvent* WwiseEvent, TEnumAsByte<RareAudio_EEmitterRelationship> Relationship, const struct FName& SourcePath, const struct FName& SourceObj)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEvent");
@@ -831,11 +881,13 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterPostEvent(const struct FWw
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsValid
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04465AB0
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsValid
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterIsValid(const struct FWwiseEmitter& Emitter)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsValid");
@@ -854,12 +906,14 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterIsValid(const struct FWwi
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsPlaying
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044659A0
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsPlaying
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// class UWwiseEvent*             Event                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		class UWwiseEvent*                                 Event                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterIsPlaying(const struct FWwiseEmitter& Emitter, class UWwiseEvent* Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsPlaying");
@@ -879,13 +933,15 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterIsPlaying(const struct FW
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterGetRTPC
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04465830
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterGetRTPC
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          Value                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FName                                       Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Value                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterGetRTPC(const struct FWwiseEmitter& Emitter, const struct FName& Name, float* Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterGetRTPC");
@@ -908,10 +964,12 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterGetRTPC(const struct FWwi
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterDestroy
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04465780
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterDestroy
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (Parm, OutParm, ReferenceParm)
+//		struct FWwiseEmitter                               Emitter                                                    (Parm, OutParm, ReferenceParm)
 void UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterDestroy(struct FWwiseEmitter* Emitter)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterDestroy");
@@ -930,13 +988,15 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterDestroy(struct FWwiseEmit
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPCOnAll
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04465620
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPCOnAll
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TArray<class UWwiseEmitterComponent*> EmitterComponents              (ConstParm, Parm, ZeroConstructor, ContainsInstancedReference)
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		TArray<class UWwiseEmitterComponent*>              EmitterComponents                                          (ConstParm, Parm, ZeroConstructor, ContainsInstancedReference)
+//		struct FName                                       Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentSetRTPCOnAll(TArray<class UWwiseEmitterComponent*> EmitterComponents, const struct FName& Name, float Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPCOnAll");
@@ -957,13 +1017,15 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentSetRTPCOnAll(TAr
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPC
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04465520
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPC
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWwiseEmitterComponent*  EmitterComponent               (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UWwiseEmitterComponent*                      EmitterComponent                                           (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentSetRTPC(class UWwiseEmitterComponent* EmitterComponent, const struct FName& Name, float Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPC");
@@ -984,15 +1046,17 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentSetRTPC(class UW
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEventOnAll
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x044652F0
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEventOnAll
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TArray<class UWwiseEmitterComponent*> EmitterComponents              (ConstParm, Parm, ZeroConstructor, ContainsInstancedReference)
-// class UWwiseEvent*             WwiseEvent                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<RareAudio_EEmitterRelationship> Relationship                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// struct FName                   SourcePath                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// struct FName                   SourceObj                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// TArray<int>                    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		TArray<class UWwiseEmitterComponent*>              EmitterComponents                                          (ConstParm, Parm, ZeroConstructor, ContainsInstancedReference)
+//		class UWwiseEvent*                                 WwiseEvent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		struct FName                                       SourcePath                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		struct FName                                       SourceObj                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		TArray<int>                                        ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<int> UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentPostEventOnAll(TArray<class UWwiseEmitterComponent*> EmitterComponents, class UWwiseEvent* WwiseEvent, TEnumAsByte<RareAudio_EEmitterRelationship> Relationship, const struct FName& SourcePath, const struct FName& SourceObj)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEventOnAll");
@@ -1015,15 +1079,17 @@ TArray<int> UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentPostEvent
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEvent
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x04465170
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEvent
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWwiseEmitterComponent*  EmitterComponent               (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseEvent*             WwiseEvent                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<RareAudio_EEmitterRelationship> Relationship                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// struct FName                   SourcePath                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// struct FName                   SourceObj                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEmitterComponent*                      EmitterComponent                                           (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseEvent*                                 WwiseEvent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		struct FName                                       SourcePath                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		struct FName                                       SourceObj                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentPostEvent(class UWwiseEmitterComponent* EmitterComponent, class UWwiseEvent* WwiseEvent, TEnumAsByte<RareAudio_EEmitterRelationship> Relationship, const struct FName& SourcePath, const struct FName& SourceObj)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEvent");
@@ -1046,15 +1112,17 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentPostEvent(class U
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateEmitter
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x04464FB0
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateEmitter
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (Parm, OutParm)
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                 Owner                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// class UWwiseObjectPoolWrapper* EmitterPool                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// struct FVector                 Offset                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               Emitter                                                    (Parm, OutParm)
+//		struct FName                                       Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     Owner                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		class UWwiseObjectPoolWrapper*                     EmitterPool                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		struct FVector                                     Offset                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseCreateEmitter(struct FWwiseEmitter* Emitter, const struct FName& Name, class UObject* Owner, class UWwiseObjectPoolWrapper* EmitterPool, const struct FVector& Offset)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateEmitter");
@@ -1079,17 +1147,19 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseCreateEmitter(struct FWwiseEmitt
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateDetachedEmitter
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x04464D30
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateDetachedEmitter
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           Emitter                        (Parm, OutParm)
-// struct FName                   Name                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWwiseObjectPoolWrapper* EmitterPool                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 Location                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FWwiseEmitterCreationParams CreationParams                 (Parm)
-// TEnumAsByte<RareAudio_EEmitterRelationship> Relationship                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 Forward                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWwiseEmitter                               Emitter                                                    (Parm, OutParm)
+//		struct FName                                       Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWwiseObjectPoolWrapper*                     EmitterPool                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     Location                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitterCreationParams                 CreationParams                                             (Parm)
+//		TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     Forward                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int UWwiseEmitterBlueprintLibrary::STATIC_WwiseCreateDetachedEmitter(struct FWwiseEmitter* Emitter, const struct FName& Name, class UWwiseObjectPoolWrapper* EmitterPool, const struct FVector& Location, const struct FWwiseEmitterCreationParams& CreationParams, TEnumAsByte<RareAudio_EEmitterRelationship> Relationship, const struct FVector& Forward)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateDetachedEmitter");
@@ -1116,15 +1186,17 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwiseCreateDetachedEmitter(struct FWwi
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.SeekOnEvent
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x04464B60
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.SeekOnEvent
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           WwiseEmitter                   (ConstParm, Parm, OutParm, ReferenceParm)
-// class UWwiseEvent*             in_eventID                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            in_iPosition                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           in_bSeekToNearestMarker        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int                            in_PlayingID                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               WwiseEmitter                                               (ConstParm, Parm, OutParm, ReferenceParm)
+//		class UWwiseEvent*                                 in_eventID                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                in_iPosition                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               in_bSeekToNearestMarker                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                in_PlayingID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_SeekOnEvent(const struct FWwiseEmitter& WwiseEmitter, class UWwiseEvent* in_eventID, int in_iPosition, bool in_bSeekToNearestMarker, int in_PlayingID)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.SeekOnEvent");
@@ -1147,13 +1219,15 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_SeekOnEvent(const struct FWwiseEmitte
 }
 
 
-// Function RareAudio.WwiseEmitterBlueprintLibrary.GetPlaybackPosition
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x044648B0
+//		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.GetPlaybackPosition
+//		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           WwiseEmitter                   (ConstParm, Parm, OutParm, ReferenceParm)
-// int                            in_PlayingID                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            PlaybackPositionInMs           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               WwiseEmitter                                               (ConstParm, Parm, OutParm, ReferenceParm)
+//		int                                                in_PlayingID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                PlaybackPositionInMs                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterBlueprintLibrary::STATIC_GetPlaybackPosition(const struct FWwiseEmitter& WwiseEmitter, int in_PlayingID, int* PlaybackPositionInMs)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.GetPlaybackPosition");
@@ -1188,13 +1262,15 @@ void UWwiseEmitterBlueprintLibrary::BeforeDelete()
 
 }
 
-// Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetNamedEmitter
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x04464750
+//		Name   -> Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetNamedEmitter
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FWwiseEmitter           OutEmitter                     (Parm, OutParm)
-// struct FName                   InNameOfEmitterToRetrieve      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                  InActorToFindEmitterOn         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               OutEmitter                                                 (Parm, OutParm)
+//		struct FName                                       InNameOfEmitterToRetrieve                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InActorToFindEmitterOn                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetNamedEmitter(struct FWwiseEmitter* OutEmitter, const struct FName& InNameOfEmitterToRetrieve, class AActor* InActorToFindEmitterOn)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetNamedEmitter");
@@ -1217,14 +1293,16 @@ bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetNamedEmitter(struct FWwis
 }
 
 
-// Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestNEmitters
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x044644F0
+//		Name   -> Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestNEmitters
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// TArray<struct FWwiseEmitter>   OutEmitters                    (Parm, OutParm, ZeroConstructor)
-// struct FVector                 InFromPosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// int                            InNumEmittersToFind            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// class AActor*                  InActorToFindClosestEmitterOn  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		TArray<struct FWwiseEmitter>                       OutEmitters                                                (Parm, OutParm, ZeroConstructor)
+//		struct FVector                                     InFromPosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		int                                                InNumEmittersToFind                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		class AActor*                                      InActorToFindClosestEmitterOn                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetClosestNEmitters(TArray<struct FWwiseEmitter>* OutEmitters, const struct FVector& InFromPosition, int InNumEmittersToFind, class AActor* InActorToFindClosestEmitterOn)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestNEmitters");
@@ -1248,13 +1326,15 @@ bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetClosestNEmitters(TArray<s
 }
 
 
-// Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestEmitter
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x04464380
+//		Name   -> Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestEmitter
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FWwiseEmitter           OutEmitter                     (Parm, OutParm)
-// struct FVector                 InFromPosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// class AActor*                  InActorToFindClosestEmitterOn  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWwiseEmitter                               OutEmitter                                                 (Parm, OutParm)
+//		struct FVector                                     InFromPosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      InActorToFindClosestEmitterOn                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetClosestEmitter(struct FWwiseEmitter* OutEmitter, const struct FVector& InFromPosition, class AActor* InActorToFindClosestEmitterOn)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestEmitter");
@@ -1313,10 +1393,12 @@ void AAudioIslandStaticMeshAssociatorBase::BeforeDelete()
 
 }
 
-// Function RareAudio.AudioPortalComponent.SetParentShip
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0446E240
+//		Name   -> Function RareAudio.AudioPortalComponent.SetParentShip
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  ParentShip                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      ParentShip                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UAudioPortalComponent::SetParentShip(class AActor* ParentShip)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalComponent.SetParentShip");
@@ -1349,10 +1431,12 @@ void UAudioPortalComponent::BeforeDelete()
 	DELE_PTR_FULL(AudioOutsideSpace);
 }
 
-// Function RareAudio.AudioPortalInterface.UnregisterPortal
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0446E2D0
+//		Name   -> Function RareAudio.AudioPortalInterface.UnregisterPortal
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class UAudioPortalComponent*   AudioPortal                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAudioPortalComponent*                       AudioPortal                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UAudioPortalInterface::UnregisterPortal(class UAudioPortalComponent* AudioPortal)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalInterface.UnregisterPortal");
@@ -1369,11 +1453,13 @@ void UAudioPortalInterface::UnregisterPortal(class UAudioPortalComponent* AudioP
 }
 
 
-// Function RareAudio.AudioPortalInterface.RegisterPortal
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0446E180
+//		Name   -> Function RareAudio.AudioPortalInterface.RegisterPortal
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class UAudioPortalComponent*   AudioPortal                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                  OwningActor                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAudioPortalComponent*                       AudioPortal                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      OwningActor                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UAudioPortalInterface::RegisterPortal(class UAudioPortalComponent* AudioPortal, class AActor* OwningActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalInterface.RegisterPortal");
@@ -1391,12 +1477,14 @@ void UAudioPortalInterface::RegisterPortal(class UAudioPortalComponent* AudioPor
 }
 
 
-// Function RareAudio.AudioPortalInterface.GetAllRegisteredPortalsInSpecificSpace
-// (Native, Public)
+// Function:
+//		Offset -> 0x0446DD50
+//		Name   -> Function RareAudio.AudioPortalInterface.GetAllRegisteredPortalsInSpecificSpace
+//		Flags  -> (Native, Public)
 // Parameters:
-// class UAudioSpaceDataAsset*    AudioSpace                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                  OwningActor                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<TWeakObjectPtr<class UAudioPortalComponent>> ReturnValue                    (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, UObjectWrapper)
+//		class UAudioSpaceDataAsset*                        AudioSpace                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      OwningActor                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<TWeakObjectPtr<class UAudioPortalComponent>> ReturnValue                                                (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, UObjectWrapper)
 TArray<TWeakObjectPtr<class UAudioPortalComponent>> UAudioPortalInterface::GetAllRegisteredPortalsInSpecificSpace(class UAudioSpaceDataAsset* AudioSpace, class AActor* OwningActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalInterface.GetAllRegisteredPortalsInSpecificSpace");
@@ -1416,10 +1504,12 @@ TArray<TWeakObjectPtr<class UAudioPortalComponent>> UAudioPortalInterface::GetAl
 }
 
 
-// Function RareAudio.AudioPortalInterface.GetAllRegisteredPortals
-// (Native, Public, Const)
+// Function:
+//		Offset -> 0x0446DCF0
+//		Name   -> Function RareAudio.AudioPortalInterface.GetAllRegisteredPortals
+//		Flags  -> (Native, Public, Const)
 // Parameters:
-// TArray<TWeakObjectPtr<class UAudioPortalComponent>> ReturnValue                    (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, UObjectWrapper)
+//		TArray<TWeakObjectPtr<class UAudioPortalComponent>> ReturnValue                                                (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, UObjectWrapper)
 TArray<TWeakObjectPtr<class UAudioPortalComponent>> UAudioPortalInterface::GetAllRegisteredPortals()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalInterface.GetAllRegisteredPortals");
@@ -1461,12 +1551,14 @@ void UAudioPortalService::BeforeDelete()
 
 }
 
-// Function RareAudio.AudioSpaceComponent.OnOverlapEnd
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0446E060
+//		Name   -> Function RareAudio.AudioSpaceComponent.OnOverlapEnd
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      OtherActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         OtherComp                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                OtherBodyIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UAudioSpaceComponent::OnOverlapEnd(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioSpaceComponent.OnOverlapEnd");
@@ -1485,14 +1577,16 @@ void UAudioSpaceComponent::OnOverlapEnd(class AActor* OtherActor, class UPrimiti
 }
 
 
-// Function RareAudio.AudioSpaceComponent.OnOverlapBegin
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x0446DE90
+//		Name   -> Function RareAudio.AudioSpaceComponent.OnOverlapBegin
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           FromSweep                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		class AActor*                                      OtherActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         OtherComp                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                OtherBodyIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               FromSweep                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FHitResult                                  SweepResult                                                (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 void UAudioSpaceComponent::OnOverlapBegin(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool FromSweep, const struct FHitResult& SweepResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioSpaceComponent.OnOverlapBegin");
@@ -1527,10 +1621,12 @@ void UAudioSpaceComponent::BeforeDelete()
 	DELE_PTR_FULL(AudioSpace);
 }
 
-// Function RareAudio.AudioSpaceDataAsset.GetRtpcName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x0446DE70
+//		Name   -> Function RareAudio.AudioSpaceDataAsset.GetRtpcName
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 struct FName UAudioSpaceDataAsset::GetRtpcName()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioSpaceDataAsset.GetRtpcName");
@@ -1564,10 +1660,12 @@ void UAudioSpaceDataAsset::BeforeDelete()
 	DELE_PTR_FULL(AmbienceToStop);
 }
 
-// Function RareAudio.AudioSpaceTrackerComponent.GetCurrentSpace
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0446DE40
+//		Name   -> Function RareAudio.AudioSpaceTrackerComponent.GetCurrentSpace
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UAudioSpaceDataAsset*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAudioSpaceDataAsset*                        ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UAudioSpaceDataAsset* UAudioSpaceTrackerComponent::GetCurrentSpace()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioSpaceTrackerComponent.GetCurrentSpace");
@@ -1621,8 +1719,10 @@ void UStaticMeshAudioDataAsset::BeforeDelete()
 
 }
 
-// Function RareAudio.StaticMeshAudioEmittersComponent.PopulateInstanceAssociations
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0446E160
+//		Name   -> Function RareAudio.StaticMeshAudioEmittersComponent.PopulateInstanceAssociations
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UStaticMeshAudioEmittersComponent::PopulateInstanceAssociations()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.StaticMeshAudioEmittersComponent.PopulateInstanceAssociations");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -19,10 +19,21 @@ namespace CG
 // Parameters
 //---------------------------------------------------------------------------
 
+// Function TreasuryFramework.ShimmerActor.OnDeactivateShimmer
+struct AShimmerActor_OnDeactivateShimmer_Params
+{
+};
+
+// Function TreasuryFramework.ShimmerActor.OnActivateShimmer
+struct AShimmerActor_OnActivateShimmer_Params
+{
+};
+
 // Function TreasuryFramework.TreasuryRoom.OnWaveStart
 struct ATreasuryRoom_OnWaveStart_Params
 {
-	TEnumAsByte<TreasuryFramework_ETreasuryEncounterType> EncounterType;                                             // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<TreasuryFramework_ETreasuryEncounterType> EncounterType;                                             // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<TreasuryFramework_ETreasuryWaveType>   WaveType;                                                  // 0x0001(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function TreasuryFramework.TreasuryRoom.OnWaveFinished
@@ -33,7 +44,7 @@ struct ATreasuryRoom_OnWaveFinished_Params
 // Function TreasuryFramework.TreasuryRoom.OnWaveComplete
 struct ATreasuryRoom_OnWaveComplete_Params
 {
-	TEnumAsByte<TreasuryFramework_ETreasuryEncounterType> EncounterType;                                             // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<TreasuryFramework_ETreasuryEncounterType> EncounterType;                                             // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function TreasuryFramework.TreasuryRoom.OnVaultOpen
@@ -49,8 +60,8 @@ struct ATreasuryRoom_OnVaultClosed_Params
 // Function TreasuryFramework.TreasuryRoom.OnTreasuryStateChange
 struct ATreasuryRoom_OnTreasuryStateChange_Params
 {
-	TEnumAsByte<TreasuryFramework_ETreasuryState>      PrevState;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TEnumAsByte<TreasuryFramework_ETreasuryState>      NewState;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<TreasuryFramework_ETreasuryState>      PrevState;                                                 // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<TreasuryFramework_ETreasuryState>      NewState;                                                  // 0x0001(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function TreasuryFramework.TreasuryRoom.OnTreasuryDeactivate
@@ -80,6 +91,23 @@ struct ATreasuryRoom_OnRoomStarted_Params
 
 // Function TreasuryFramework.TreasuryRoom.OnRaisedWater
 struct ATreasuryRoom_OnRaisedWater_Params
+{
+};
+
+// Function TreasuryFramework.TreasuryRoom.OnLeaveRoom
+struct ATreasuryRoom_OnLeaveRoom_Params
+{
+	class AActor*                                      OtherActor;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function TreasuryFramework.TreasuryRoom.OnEnterRoom
+struct ATreasuryRoom_OnEnterRoom_Params
+{
+	class AActor*                                      OtherActor;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function TreasuryFramework.TreasuryRoom.OnEncounterParamsSetup
+struct ATreasuryRoom_OnEncounterParamsSetup_Params
 {
 };
 

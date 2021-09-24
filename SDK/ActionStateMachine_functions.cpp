@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -368,13 +368,15 @@ void UTestActionStateId2::BeforeDelete()
 
 }
 
-// Function ActionStateMachine.ActionStateMachineComponent.Server_RequestActionWithMessageForCurrentState
-// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
+// Function:
+//		Offset -> 0x0315FE30
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Server_RequestActionWithMessageForCurrentState
+//		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
-// struct FActionStateChangeRequestId InEpochId                      (ConstParm, Parm)
-// struct FActionStateChangeRequestId InRequestId                    (ConstParm, Parm)
-// struct FSerialisedActionStateInfo InSerialisedActionStateConstructionInfo (ConstParm, Parm, ReferenceParm)
-// struct FSerialisedActionStateMessage InSerialisedPreviousStateMessage (ConstParm, Parm, ReferenceParm)
+//		struct FActionStateChangeRequestId                 InEpochId                                                  (ConstParm, Parm)
+//		struct FActionStateChangeRequestId                 InRequestId                                                (ConstParm, Parm)
+//		struct FSerialisedActionStateInfo                  InSerialisedActionStateConstructionInfo                    (ConstParm, Parm, ReferenceParm)
+//		struct FSerialisedActionStateMessage               InSerialisedPreviousStateMessage                           (ConstParm, Parm, ReferenceParm)
 void UActionStateMachineComponent::Server_RequestActionWithMessageForCurrentState(const struct FActionStateChangeRequestId& InEpochId, const struct FActionStateChangeRequestId& InRequestId, const struct FSerialisedActionStateInfo& InSerialisedActionStateConstructionInfo, const struct FSerialisedActionStateMessage& InSerialisedPreviousStateMessage)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Server_RequestActionWithMessageForCurrentState");
@@ -394,13 +396,15 @@ void UActionStateMachineComponent::Server_RequestActionWithMessageForCurrentStat
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponent.Server_RequestAction
-// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
+// Function:
+//		Offset -> 0x0315FC60
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Server_RequestAction
+//		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
-// struct FActionStateChangeRequestId InEpochId                      (ConstParm, Parm)
-// struct FActionStateChangeRequestId InRequestId                    (ConstParm, Parm)
-// struct FSerialisedActionStateInfo InSerialisedActionStateConstructionInfo (ConstParm, Parm, ReferenceParm)
-// TEnumAsByte<ActionStateMachine_EActionPredictionType> ClientPredicted                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FActionStateChangeRequestId                 InEpochId                                                  (ConstParm, Parm)
+//		struct FActionStateChangeRequestId                 InRequestId                                                (ConstParm, Parm)
+//		struct FSerialisedActionStateInfo                  InSerialisedActionStateConstructionInfo                    (ConstParm, Parm, ReferenceParm)
+//		TEnumAsByte<ActionStateMachine_EActionPredictionType> ClientPredicted                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UActionStateMachineComponent::Server_RequestAction(const struct FActionStateChangeRequestId& InEpochId, const struct FActionStateChangeRequestId& InRequestId, const struct FSerialisedActionStateInfo& InSerialisedActionStateConstructionInfo, TEnumAsByte<ActionStateMachine_EActionPredictionType> ClientPredicted)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Server_RequestAction");
@@ -420,8 +424,10 @@ void UActionStateMachineComponent::Server_RequestAction(const struct FActionStat
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponent.PostNetInit
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315F830
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.PostNetInit
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UActionStateMachineComponent::PostNetInit()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.PostNetInit");
@@ -437,8 +443,10 @@ void UActionStateMachineComponent::PostNetInit()
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponent.OnNetOwnershipChanged
-// (Final, Native, Protected)
+// Function:
+//		Offset -> 0x0315F810
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.OnNetOwnershipChanged
+//		Flags  -> (Final, Native, Protected)
 void UActionStateMachineComponent::OnNetOwnershipChanged()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.OnNetOwnershipChanged");
@@ -454,11 +462,13 @@ void UActionStateMachineComponent::OnNetOwnershipChanged()
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushSerialisableData
-// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Function:
+//		Offset -> 0x0315F710
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushSerialisableData
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
-// struct FActionStateChangeRequestId InEpochId                      (ConstParm, Parm)
-// struct FSerialisedActionStateInfo InSerialisedActionStateSerialisationStateInfo (ConstParm, Parm, ReferenceParm)
+//		struct FActionStateChangeRequestId                 InEpochId                                                  (ConstParm, Parm)
+//		struct FSerialisedActionStateInfo                  InSerialisedActionStateSerialisationStateInfo              (ConstParm, Parm, ReferenceParm)
 void UActionStateMachineComponent::Multicast_PushSerialisableData(const struct FActionStateChangeRequestId& InEpochId, const struct FSerialisedActionStateInfo& InSerialisedActionStateSerialisationStateInfo)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushSerialisableData");
@@ -476,11 +486,13 @@ void UActionStateMachineComponent::Multicast_PushSerialisableData(const struct F
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushActionFromRequest
-// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Function:
+//		Offset -> 0x0315F610
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushActionFromRequest
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
-// struct FActionStateChangeRequestId InEpochId                      (ConstParm, Parm)
-// struct FSerialisedActionStateInfo InSerialisedActionStateConstructionInfo (ConstParm, Parm, ReferenceParm)
+//		struct FActionStateChangeRequestId                 InEpochId                                                  (ConstParm, Parm)
+//		struct FSerialisedActionStateInfo                  InSerialisedActionStateConstructionInfo                    (ConstParm, Parm, ReferenceParm)
 void UActionStateMachineComponent::Multicast_PushActionFromRequest(const struct FActionStateChangeRequestId& InEpochId, const struct FSerialisedActionStateInfo& InSerialisedActionStateConstructionInfo)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushActionFromRequest");
@@ -498,11 +510,13 @@ void UActionStateMachineComponent::Multicast_PushActionFromRequest(const struct 
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushAction
-// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Function:
+//		Offset -> 0x0315F510
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushAction
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
-// struct FActionStateChangeRequestId InEpochId                      (ConstParm, Parm)
-// struct FSerialisedActionStateInfo InSerialisedActionStateConstructionInfo (ConstParm, Parm, ReferenceParm)
+//		struct FActionStateChangeRequestId                 InEpochId                                                  (ConstParm, Parm)
+//		struct FSerialisedActionStateInfo                  InSerialisedActionStateConstructionInfo                    (ConstParm, Parm, ReferenceParm)
 void UActionStateMachineComponent::Multicast_PushAction(const struct FActionStateChangeRequestId& InEpochId, const struct FSerialisedActionStateInfo& InSerialisedActionStateConstructionInfo)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushAction");
@@ -520,8 +534,10 @@ void UActionStateMachineComponent::Multicast_PushAction(const struct FActionStat
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponent.End
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315EBC0
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.End
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UActionStateMachineComponent::End()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.End");
@@ -537,10 +553,12 @@ void UActionStateMachineComponent::End()
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponent.Client_ResetStateMachine
-// (Net, NetReliable, Native, Event, Protected, NetClient)
+// Function:
+//		Offset -> 0x0315E520
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Client_ResetStateMachine
+//		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 // Parameters:
-// struct FResetStateMachineRpc   Rpc                            (ConstParm, Parm)
+//		struct FResetStateMachineRpc                       Rpc                                                        (ConstParm, Parm)
 void UActionStateMachineComponent::Client_ResetStateMachine(const struct FResetStateMachineRpc& Rpc)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Client_ResetStateMachine");
@@ -557,12 +575,14 @@ void UActionStateMachineComponent::Client_ResetStateMachine(const struct FResetS
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponent.Client_CorrectAction
-// (Net, NetReliable, Native, Event, Protected, NetClient)
+// Function:
+//		Offset -> 0x0315E3C0
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Client_CorrectAction
+//		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 // Parameters:
-// struct FActionStateChangeRequestId InEpochId                      (ConstParm, Parm)
-// struct FActionStateChangeRequestId InRequestId                    (ConstParm, Parm)
-// struct FSerialisedActionStateInfo InSerialisedActionStateConstructionInfo (ConstParm, Parm, ReferenceParm)
+//		struct FActionStateChangeRequestId                 InEpochId                                                  (ConstParm, Parm)
+//		struct FActionStateChangeRequestId                 InRequestId                                                (ConstParm, Parm)
+//		struct FSerialisedActionStateInfo                  InSerialisedActionStateConstructionInfo                    (ConstParm, Parm, ReferenceParm)
 void UActionStateMachineComponent::Client_CorrectAction(const struct FActionStateChangeRequestId& InEpochId, const struct FActionStateChangeRequestId& InRequestId, const struct FSerialisedActionStateInfo& InSerialisedActionStateConstructionInfo)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Client_CorrectAction");
@@ -593,18 +613,6 @@ void UActionStateMachineComponent::BeforeDelete()
 
 }
 
-void UTestActionStateMachineComponent::AfterRead()
-{
-	UActionStateMachineComponent::AfterRead();
-
-}
-
-void UTestActionStateMachineComponent::BeforeDelete()
-{
-	UActionStateMachineComponent::BeforeDelete();
-
-}
-
 void UCustomClientValidityCheckCallback::AfterRead()
 {
 	UObject::AfterRead();
@@ -617,12 +625,14 @@ void UCustomClientValidityCheckCallback::BeforeDelete()
 
 }
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPassesExceptForId
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031602D0
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPassesExceptForId
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  StateId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      StateId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThatAlwaysPassesExceptForId(class UActionStateMachineComponent* InComponent, class UClass* StateId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPassesExceptForId");
@@ -642,11 +652,13 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThat
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPasses
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03160250
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPasses
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThatAlwaysPasses(class UActionStateMachineComponent* InComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPasses");
@@ -665,11 +677,13 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThat
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysFails
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031601D0
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysFails
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThatAlwaysFails(class UActionStateMachineComponent* InComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysFails");
@@ -688,11 +702,13 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThat
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactoryChangeToNullOnUpdate
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03160150
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactoryChangeToNullOnUpdate
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateFactoryChangeToNullOnUpdate(class UActionStateMachineComponent* InComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactoryChangeToNullOnUpdate");
@@ -711,11 +727,13 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateFactoryChange
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactory
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031600D0
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactory
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateFactory(class UActionStateMachineComponent* InComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactory");
@@ -734,12 +752,14 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateFactory(class
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetCustomClientValidationTestStateFactory
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03160010
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetCustomClientValidationTestStateFactory
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCustomClientValidityCheckCallback* InCallback                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCustomClientValidityCheckCallback*          InCallback                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_SetCustomClientValidationTestStateFactory(class UActionStateMachineComponent* InComponent, class UCustomClientValidityCheckCallback* InCallback)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetCustomClientValidationTestStateFactory");
@@ -759,14 +779,16 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetCustomClientValidation
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestUnpredictedTestActionStateWithIdOnTrack
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315FB30
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestUnpredictedTestActionStateWithIdOnTrack
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  ClientStateId                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class UClass*                  ServerStateId                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      ClientStateId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UClass*                                      ServerStateId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_RequestUnpredictedTestActionStateWithIdOnTrack(class UActionStateMachineComponent* InComponent, TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId, class UClass* ClientStateId, class UClass* ServerStateId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestUnpredictedTestActionStateWithIdOnTrack");
@@ -788,13 +810,15 @@ bool UActionStateMachineComponentTestFunctions::STATIC_RequestUnpredictedTestAct
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestTestActionStateWithIdOnTrack
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315FA40
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestTestActionStateWithIdOnTrack
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  StateId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      StateId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_RequestTestActionStateWithIdOnTrack(class UActionStateMachineComponent* InComponent, TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId, class UClass* StateId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestTestActionStateWithIdOnTrack");
@@ -815,12 +839,14 @@ bool UActionStateMachineComponentTestFunctions::STATIC_RequestTestActionStateWit
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestNullActionStateOnTrack
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315F980
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestNullActionStateOnTrack
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_RequestNullActionStateOnTrack(class UActionStateMachineComponent* InComponent, TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestNullActionStateOnTrack");
@@ -840,13 +866,15 @@ bool UActionStateMachineComponentTestFunctions::STATIC_RequestNullActionStateOnT
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.PushTestActionStateSerialisableDataOnTrack
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315F850
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.PushTestActionStateSerialisableDataOnTrack
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  StateId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// int                            DataValue                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      StateId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		int                                                DataValue                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UActionStateMachineComponentTestFunctions::STATIC_PushTestActionStateSerialisableDataOnTrack(class UActionStateMachineComponent* InComponent, TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId, class UClass* StateId, int DataValue)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.PushTestActionStateSerialisableDataOnTrack");
@@ -866,13 +894,15 @@ void UActionStateMachineComponentTestFunctions::STATIC_PushTestActionStateSerial
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.IsActionStateTypeActiveOnTrack
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0315F370
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.IsActionStateTypeActiveOnTrack
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  StateId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      StateId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_IsActionStateTypeActiveOnTrack(class UActionStateMachineComponent* InComponent, TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId, class UClass* StateId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.IsActionStateTypeActiveOnTrack");
@@ -893,12 +923,14 @@ bool UActionStateMachineComponentTestFunctions::STATIC_IsActionStateTypeActiveOn
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTypeOfActionStateActiveOnTrack
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0315F150
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTypeOfActionStateActiveOnTrack
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 class UClass* UActionStateMachineComponentTestFunctions::STATIC_GetTypeOfActionStateActiveOnTrack(class UActionStateMachineComponent* InComponent, TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTypeOfActionStateActiveOnTrack");
@@ -918,13 +950,15 @@ class UClass* UActionStateMachineComponentTestFunctions::STATIC_GetTypeOfActionS
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTestActionStateSerialisableDataOnTrack
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315EDC0
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTestActionStateSerialisableDataOnTrack
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UActionStateMachineComponent* InComponent                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTestActionStateSerialisableData Data                           (Parm, OutParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UActionStateMachineComponent*                InComponent                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FTestActionStateSerialisableData            Data                                                       (Parm, OutParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UActionStateMachineComponentTestFunctions::STATIC_GetTestActionStateSerialisableDataOnTrack(class UActionStateMachineComponent* InComponent, TEnumAsByte<ActionStateMachine_EActionStateMachineTrackId> TrackId, struct FTestActionStateSerialisableData* Data)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTestActionStateSerialisableDataOnTrack");
@@ -947,10 +981,12 @@ bool UActionStateMachineComponentTestFunctions::STATIC_GetTestActionStateSeriali
 }
 
 
-// Function ActionStateMachine.ActionStateMachineComponentTestFunctions.CreateCustomClientValidityCheckCallback
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315E6E0
+//		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.CreateCustomClientValidityCheckCallback
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCustomClientValidityCheckCallback* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCustomClientValidityCheckCallback*          ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UCustomClientValidityCheckCallback* UActionStateMachineComponentTestFunctions::STATIC_CreateCustomClientValidityCheckCallback()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.CreateCustomClientValidityCheckCallback");
@@ -1004,13 +1040,15 @@ void UActionStatePriorityTableData::BeforeDelete()
 
 }
 
-// Function ActionStateMachine.ActionStatePriorityTableUtility.GetPriority
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0315EBE0
+//		Name   -> Function ActionStateMachine.ActionStatePriorityTableUtility.GetPriority
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FActionStatePriorityTable PriorityTable                  (Parm, OutParm, ReferenceParm)
-// class UClass*                  InStateA                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class UClass*                  InStateB                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// TEnumAsByte<ActionStateMachine_EActionStatePriority> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FActionStatePriorityTable                   PriorityTable                                              (Parm, OutParm, ReferenceParm)
+//		class UClass*                                      InStateA                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UClass*                                      InStateB                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		TEnumAsByte<ActionStateMachine_EActionStatePriority> ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<ActionStateMachine_EActionStatePriority> UActionStatePriorityTableUtility::STATIC_GetPriority(struct FActionStatePriorityTable* PriorityTable, class UClass* InStateA, class UClass* InStateB)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStatePriorityTableUtility.GetPriority");
@@ -1033,11 +1071,13 @@ TEnumAsByte<ActionStateMachine_EActionStatePriority> UActionStatePriorityTableUt
 }
 
 
-// Function ActionStateMachine.ActionStatePriorityTableUtility.CreatePriorityTable
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0315E710
+//		Name   -> Function ActionStateMachine.ActionStatePriorityTableUtility.CreatePriorityTable
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UActionStatePriorityTableData* Data                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FActionStatePriorityTable ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class UActionStatePriorityTableData*               Data                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FActionStatePriorityTable                   ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FActionStatePriorityTable UActionStatePriorityTableUtility::STATIC_CreatePriorityTable(class UActionStatePriorityTableData* Data)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStatePriorityTableUtility.CreatePriorityTable");
@@ -1068,25 +1108,13 @@ void UActionStatePriorityTableUtility::BeforeDelete()
 
 }
 
-void ARemoteValidationFailActionStateActor::AfterRead()
-{
-	AActor::AfterRead();
-
-	READ_PTR_FULL(ActionStateMachineComponent, UActionStateMachineComponent);
-}
-
-void ARemoteValidationFailActionStateActor::BeforeDelete()
-{
-	AActor::BeforeDelete();
-
-	DELE_PTR_FULL(ActionStateMachineComponent);
-}
-
-// Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.IsValid
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0315F460
+//		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.IsValid
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FSerialisedActionStateInfo TestStruct                     (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FSerialisedActionStateInfo                  TestStruct                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_IsValid(const struct FSerialisedActionStateInfo& TestStruct)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.IsValid");
@@ -1105,11 +1133,13 @@ bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_IsValid(const s
 }
 
 
-// Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfoWithInner
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0315F2C0
+//		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfoWithInner
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FSerialisedActionStateInfo TestStruct                     (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FSerialisedActionStateInfo                  TestStruct                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_HasTestConstructionInfoWithInner(const struct FSerialisedActionStateInfo& TestStruct)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfoWithInner");
@@ -1128,11 +1158,13 @@ bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_HasTestConstruc
 }
 
 
-// Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfo
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0315F210
+//		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfo
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FSerialisedActionStateInfo TestStruct                     (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FSerialisedActionStateInfo                  TestStruct                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_HasTestConstructionInfo(const struct FSerialisedActionStateInfo& TestStruct)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfo");
@@ -1151,11 +1183,13 @@ bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_HasTestConstruc
 }
 
 
-// Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfoWithInner
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0315F000
+//		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfoWithInner
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FSerialisedActionStateInfo TestStruct                     (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FTestActionStateConstructionInfoWithInner ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FSerialisedActionStateInfo                  TestStruct                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FTestActionStateConstructionInfoWithInner   ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FTestActionStateConstructionInfoWithInner USerialisedActionStateConstructionInfoTestFunctions::STATIC_GetTestConstructionInfoWithInner(const struct FSerialisedActionStateInfo& TestStruct)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfoWithInner");
@@ -1174,11 +1208,13 @@ struct FTestActionStateConstructionInfoWithInner USerialisedActionStateConstruct
 }
 
 
-// Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfo
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x0315EF10
+//		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfo
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FSerialisedActionStateInfo TestStruct                     (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FTestActionStateConstructionInfo ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FSerialisedActionStateInfo                  TestStruct                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FTestActionStateConstructionInfo            ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FTestActionStateConstructionInfo USerialisedActionStateConstructionInfoTestFunctions::STATIC_GetTestConstructionInfo(const struct FSerialisedActionStateInfo& TestStruct)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfo");
@@ -1197,12 +1233,14 @@ struct FTestActionStateConstructionInfo USerialisedActionStateConstructionInfoTe
 }
 
 
-// Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestSerialisableData
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315EAC0
+//		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestSerialisableData
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  Id                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// int                            IntProp                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSerialisedActionStateInfo ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class UClass*                                      Id                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		int                                                IntProp                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FSerialisedActionStateInfo                  ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunctions::STATIC_CreateTestSerialisableData(class UClass* Id, int IntProp)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestSerialisableData");
@@ -1222,14 +1260,16 @@ struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunc
 }
 
 
-// Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfoWithInner
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315E920
+//		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfoWithInner
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  Id                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// float                          FloatProp                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           BoolProp                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FString                 StringProp                     (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FSerialisedActionStateInfo ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class UClass*                                      Id                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		float                                              FloatProp                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               BoolProp                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FString                                     StringProp                                                 (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FSerialisedActionStateInfo                  ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunctions::STATIC_CreateTestConstructionInfoWithInner(class UClass* Id, float FloatProp, bool BoolProp, const struct FString& StringProp)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfoWithInner");
@@ -1251,12 +1291,14 @@ struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunc
 }
 
 
-// Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfo
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x0315E820
+//		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfo
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  Id                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// int                            IntProp                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSerialisedActionStateInfo ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class UClass*                                      Id                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		int                                                IntProp                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FSerialisedActionStateInfo                  ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunctions::STATIC_CreateTestConstructionInfo(class UClass* Id, int IntProp)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfo");
@@ -1286,20 +1328,6 @@ void USerialisedActionStateConstructionInfoTestFunctions::BeforeDelete()
 {
 	UBlueprintFunctionLibrary::BeforeDelete();
 
-}
-
-void ATestObjectWithActionStateMachine::AfterRead()
-{
-	AActor::AfterRead();
-
-	READ_PTR_FULL(ActionStateMachineComponent, UTestActionStateMachineComponent);
-}
-
-void ATestObjectWithActionStateMachine::BeforeDelete()
-{
-	AActor::BeforeDelete();
-
-	DELE_PTR_FULL(ActionStateMachineComponent);
 }
 
 }

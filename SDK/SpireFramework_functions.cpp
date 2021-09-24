@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,6 +18,14 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
+void FSpireInfo::AfterRead()
+{
+}
+
+void FSpireInfo::BeforeDelete()
+{
+}
+
 void FServerSpireInfo::AfterRead()
 {
 	READ_PTR_FULL(SpireActor, AActor);
@@ -26,14 +34,6 @@ void FServerSpireInfo::AfterRead()
 void FServerSpireInfo::BeforeDelete()
 {
 	DELE_PTR_FULL(SpireActor);
-}
-
-void FSpireInfo::AfterRead()
-{
-}
-
-void FSpireInfo::BeforeDelete()
-{
 }
 
 void FSpireEntry::AfterRead()
@@ -68,10 +68,12 @@ void UHeightTriggerableAudioComponentParams::BeforeDelete()
 	DELE_PTR_FULL(LoweringStop);
 }
 
-// Function SpireFramework.HeightTriggerableEffectsComponent.SetMovementDirection
-// (Final, RequiredAPI, BlueprintCosmetic, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03B54C80
+//		Name   -> Function SpireFramework.HeightTriggerableEffectsComponent.SetMovementDirection
+//		Flags  -> (Final, RequiredAPI, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<SpireFramework_EDirectionOfMovement> InMovement                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<SpireFramework_EDirectionOfMovement>   InMovement                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UHeightTriggerableEffectsComponent::SetMovementDirection(TEnumAsByte<SpireFramework_EDirectionOfMovement> InMovement)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SpireFramework.HeightTriggerableEffectsComponent.SetMovementDirection");
@@ -132,20 +134,22 @@ void USpireServiceParams::AfterRead()
 {
 	UDataAsset::AfterRead();
 
-	READ_PTR_FULL(LowerFakeSpire, UActorSpawnData);
+	READ_PTR_FULL(OnCancelFakeSpire, UActorSpawnData);
 }
 
 void USpireServiceParams::BeforeDelete()
 {
 	UDataAsset::BeforeDelete();
 
-	DELE_PTR_FULL(LowerFakeSpire);
+	DELE_PTR_FULL(OnCancelFakeSpire);
 }
 
-// Function SpireFramework.SpireService.OnRep_SpireLevels
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x03B54B50
+//		Name   -> Function SpireFramework.SpireService.OnRep_SpireLevels
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// TArray<struct FSpireInfo>      InPreviousSpireLevels          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FSpireInfo>                          InPreviousSpireLevels                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void ASpireService::OnRep_SpireLevels(TArray<struct FSpireInfo> InPreviousSpireLevels)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SpireFramework.SpireService.OnRep_SpireLevels");
@@ -226,10 +230,12 @@ void UTaleLoadSpireStep::BeforeDelete()
 
 }
 
-// Function SpireFramework.TaleSpireService.RegisterResetMechanismInterface
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03B54C00
+//		Name   -> Function SpireFramework.TaleSpireService.RegisterResetMechanismInterface
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  InMechanismResetInterface      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InMechanismResetInterface                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UTaleSpireService::RegisterResetMechanismInterface(class AActor* InMechanismResetInterface)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SpireFramework.TaleSpireService.RegisterResetMechanismInterface");
@@ -243,6 +249,29 @@ void UTaleSpireService::RegisterResetMechanismInterface(class AActor* InMechanis
 	UObject::ProcessEvent(fn, &params);
 	fn->FunctionFlags = flags;
 
+}
+
+
+// Function:
+//		Offset -> 0x03B54B20
+//		Name   -> Function SpireFramework.TaleSpireService.IsSpireVisible
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+bool UTaleSpireService::IsSpireVisible()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function SpireFramework.TaleSpireService.IsSpireVisible");
+
+	UTaleSpireService_IsSpireVisible_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
 }
 
 
@@ -336,14 +365,12 @@ void UTaleReleaseSpireStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(StepDesc, UTaleReleaseSpireStepDesc);
 }
 
 void UTaleReleaseSpireStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(StepDesc);
 }
 
 void UTaleReleaseSpireStepDesc::AfterRead()

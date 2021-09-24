@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -40,10 +40,10 @@ struct FEventRepairableObjectRepairEndedEvent
 {
 	class UObject*                                     Repairable;                                                // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                     Position;                                                  // 0x0008(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_3KU3[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_5IPZ[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class AActor*                                      RepairerActor;                                             // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              RepairPercentage;                                          // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_HCSH[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_GSG9[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -54,7 +54,7 @@ struct FEventRepairableObjectRepairEndedEvent
 // 0x0001
 struct FEventRepairableObjectDestroyed
 {
-	unsigned char                                      UnknownData_GNUN[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_XKVP[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

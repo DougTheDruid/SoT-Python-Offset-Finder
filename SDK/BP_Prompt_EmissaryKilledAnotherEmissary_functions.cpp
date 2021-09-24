@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.OnEmissaryKilledAnotherEmissary
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.OnEmissaryKilledAnotherEmissary
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEmissaryKilledAnotherEmissaryNetworkEvent NewParam                       (Parm)
+//		struct FEmissaryKilledAnotherEmissaryNetworkEvent  NewParam                                                   (Parm)
 void UBP_Prompt_EmissaryKilledAnotherEmissary_C::OnEmissaryKilledAnotherEmissary(const struct FEmissaryKilledAnotherEmissaryNetworkEvent& NewParam)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.OnEmissaryKilledAnotherEmissary");
@@ -37,10 +39,12 @@ void UBP_Prompt_EmissaryKilledAnotherEmissary_C::OnEmissaryKilledAnotherEmissary
 }
 
 
-// Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.EmissaryKilledAnotherEmisary
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.EmissaryKilledAnotherEmisary
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEmissaryKilledAnotherEmissaryNetworkEvent NewParam                       (Parm)
+//		struct FEmissaryKilledAnotherEmissaryNetworkEvent  NewParam                                                   (Parm)
 void UBP_Prompt_EmissaryKilledAnotherEmissary_C::EmissaryKilledAnotherEmisary(const struct FEmissaryKilledAnotherEmissaryNetworkEvent& NewParam)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.EmissaryKilledAnotherEmisary");
@@ -56,8 +60,10 @@ void UBP_Prompt_EmissaryKilledAnotherEmissary_C::EmissaryKilledAnotherEmisary(co
 }
 
 
-// Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.Evaluate
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.Evaluate
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_EmissaryKilledAnotherEmissary_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.Evaluate");
@@ -72,8 +78,10 @@ void UBP_Prompt_EmissaryKilledAnotherEmissary_C::Evaluate()
 }
 
 
-// Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.RegisterOtherEvents_Implementable
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.RegisterOtherEvents_Implementable
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_EmissaryKilledAnotherEmissary_C::RegisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.RegisterOtherEvents_Implementable");
@@ -88,8 +96,10 @@ void UBP_Prompt_EmissaryKilledAnotherEmissary_C::RegisterOtherEvents_Implementab
 }
 
 
-// Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.UnregisterOtherEvents_Implementable
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.UnregisterOtherEvents_Implementable
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_EmissaryKilledAnotherEmissary_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.UnregisterOtherEvents_Implementable");
@@ -104,10 +114,12 @@ void UBP_Prompt_EmissaryKilledAnotherEmissary_C::UnregisterOtherEvents_Implement
 }
 
 
-// Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.ExecuteUbergraph_BP_Prompt_EmissaryKilledAnotherEmissary
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.ExecuteUbergraph_BP_Prompt_EmissaryKilledAnotherEmissary
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Prompt_EmissaryKilledAnotherEmissary_C::ExecuteUbergraph_BP_Prompt_EmissaryKilledAnotherEmissary(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.ExecuteUbergraph_BP_Prompt_EmissaryKilledAnotherEmissary");

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.OnEmissarySunk
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.OnEmissarySunk
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEmissarySunkNetworkEvent NewParam                       (Parm)
+//		struct FEmissarySunkNetworkEvent                   NewParam                                                   (Parm)
 void UBP_Prompt_EmissarySunk_C::OnEmissarySunk(const struct FEmissarySunkNetworkEvent& NewParam)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.OnEmissarySunk");
@@ -37,10 +39,12 @@ void UBP_Prompt_EmissarySunk_C::OnEmissarySunk(const struct FEmissarySunkNetwork
 }
 
 
-// Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.EmissarySunk
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.EmissarySunk
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEmissarySunkNetworkEvent NewParam                       (Parm)
+//		struct FEmissarySunkNetworkEvent                   NewParam                                                   (Parm)
 void UBP_Prompt_EmissarySunk_C::EmissarySunk(const struct FEmissarySunkNetworkEvent& NewParam)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.EmissarySunk");
@@ -56,8 +60,10 @@ void UBP_Prompt_EmissarySunk_C::EmissarySunk(const struct FEmissarySunkNetworkEv
 }
 
 
-// Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.Evaluate
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.Evaluate
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_EmissarySunk_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.Evaluate");
@@ -72,8 +78,10 @@ void UBP_Prompt_EmissarySunk_C::Evaluate()
 }
 
 
-// Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.RegisterOtherEvents_Implementable
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.RegisterOtherEvents_Implementable
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_EmissarySunk_C::RegisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.RegisterOtherEvents_Implementable");
@@ -88,8 +96,10 @@ void UBP_Prompt_EmissarySunk_C::RegisterOtherEvents_Implementable()
 }
 
 
-// Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.UnregisterOtherEvents_Implementable
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.UnregisterOtherEvents_Implementable
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_EmissarySunk_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.UnregisterOtherEvents_Implementable");
@@ -104,10 +114,12 @@ void UBP_Prompt_EmissarySunk_C::UnregisterOtherEvents_Implementable()
 }
 
 
-// Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.ExecuteUbergraph_BP_Prompt_EmissarySunk
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.ExecuteUbergraph_BP_Prompt_EmissarySunk
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Prompt_EmissarySunk_C::ExecuteUbergraph_BP_Prompt_EmissarySunk(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissarySunk.BP_Prompt_EmissarySunk_C.ExecuteUbergraph_BP_Prompt_EmissarySunk");

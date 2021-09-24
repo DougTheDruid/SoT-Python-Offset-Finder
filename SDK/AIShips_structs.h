@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -103,10 +103,10 @@ enum class AIShips_EAIShipDestructionReason : uint8_t
 struct FAIShipBattleParams
 {
 	struct FText                                       Name;                                                      // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_IAHH[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_841R[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FVector2D                                   Location;                                                  // 0x0038(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                              Radius;                                                    // 0x0040(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_H66J[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_U2W3[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -119,32 +119,7 @@ struct FTrackingNoiseGenerator
 {
 	class UCurveFloat*                                 ParallelOffsetCurve;                                       // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              OscillationTime;                                           // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_597Z[0xC];                                     // 0x000C(0x000C) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct AIShips.ShipTypeAIShipEncounterParams
-// 0x0010
-struct FShipTypeAIShipEncounterParams
-{
-	class UClass*                                      ShipSize;                                                  // 0x0000(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	class UAIShipEncounterParamsDataAsset*             Params;                                                    // 0x0008(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct AIShips.AIShipEncounterParams
-// 0x0018
-struct FAIShipEncounterParams
-{
-	float                                              MinEngagedDistanceFromPlayers;                             // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_0G4S[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	TArray<struct FShipTypeAIShipEncounterParams>      ShipTypeParams;                                            // 0x0008(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	unsigned char                                      UnknownData_4TIE[0xC];                                     // 0x000C(0x000C) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -181,7 +156,7 @@ struct FAIShipEncounterParamsSpawnerData
 	class UAISpawner*                                  Spawner;                                                   // 0x0000(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       SpawnLocationType;                                         // 0x0008(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_EAIShipPlayerTrackerType>      ShipPlayerTrackerType;                                     // 0x0010(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_RSWM[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ZKYT[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FName                                       CaptainName;                                               // 0x0014(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               CanRepairDamage;                                           // 0x001C(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               CanUseCannons;                                             // 0x001D(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -199,10 +174,10 @@ struct FAIShipContextDescDamageParams
 {
 	float                                              OverrideRainFillRate;                                      // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               OverrideRepairTime;                                        // 0x0004(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_XY14[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JE4Q[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              RepairTimeMultiplier;                                      // 0x0008(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               OverrideLeakAmounts;                                       // 0x000C(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_86YW[0x3];                                     // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_O06C[0x3];                                     // 0x000D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              LeakAmountMultiplier;                                      // 0x0010(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -216,7 +191,7 @@ struct FAIShipCrewAmmoType
 {
 	TEnumAsByte<AIShips_ECannonballIconType>           IconType;                                                  // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int8_t                                             IconIndex;                                                 // 0x0001(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_81ZV[0x6];                                     // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_I1CR[0x6];                                     // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FStringAssetReference                       AmmoType;                                                  // 0x0008(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 
 	void AfterRead();
@@ -229,11 +204,11 @@ struct FAIShipCrewAmmoType
 struct FAIShipCrewFormType
 {
 	TEnumAsByte<AIShips_ESkellyFormIconType>           IconType;                                                  // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_33BD[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ERJY[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FColor                                      IconColour;                                                // 0x0004(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	int8_t                                             IconIndex;                                                 // 0x0008(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int8_t                                             CaptainIconIndex;                                          // 0x0009(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_IZ57[0x6];                                     // 0x000A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_UM4L[0x6];                                     // 0x000A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FStringAssetReference                       Form;                                                      // 0x0010(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 
 	void AfterRead();
@@ -262,7 +237,7 @@ struct FWeightedSpawnOffset
 	float                                              MinSpawnDistance;                                          // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              MaxSpawnDistance;                                          // 0x0004(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              Weight;                                                    // 0x0008(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_HB79[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SG6N[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FWeightedProbabilityRangeOfRanges           SpawnRotations;                                            // 0x0010(0x0030) (Edit, DisableEditOnInstance)
 
 	void AfterRead();
@@ -277,9 +252,9 @@ struct FWeightedSpawnDirection
 	float                                              DirectionAngle;                                            // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              DirectionWidth;                                            // 0x0004(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              Weight;                                                    // 0x0008(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_8Z2H[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_6AUX[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FWeightedSpawnOffset>                SpawnOffsets;                                              // 0x0010(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	unsigned char                                      UnknownData_7NHM[0x90];                                    // 0x0020(0x0090) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UOKI[0x90];                                    // 0x0020(0x0090) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -291,7 +266,19 @@ struct FWeightedSpawnDirection
 struct FRelativeSpawnLocationGeneratorParams
 {
 	TArray<struct FWeightedSpawnDirection>             SpawnDirections;                                           // 0x0000(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	unsigned char                                      UnknownData_W3CH[0x90];                                    // 0x0010(0x0090) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3FGZ[0x90];                                    // 0x0010(0x0090) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct AIShips.ShipTypeAIShipEncounterParams
+// 0x0010
+struct FShipTypeAIShipEncounterParams
+{
+	class UClass*                                      ShipSize;                                                  // 0x0000(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	class UAIShipEncounterParamsDataAsset*             Params;                                                    // 0x0008(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -316,7 +303,7 @@ struct FAIShipSizeLimit
 {
 	class UClass*                                      ShipSize;                                                  // 0x0000(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	int                                                MaxInstances;                                              // 0x0008(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_JDWQ[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_O6ZQ[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -340,7 +327,7 @@ struct FAIShipWeightedSize
 {
 	struct FName                                       Feature;                                                   // 0x0000(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                Weight;                                                    // 0x0008(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_J1RM[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_XTYR[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      ShipSize;                                                  // 0x0010(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -390,7 +377,7 @@ struct FAIShipEncounterBattleGenerationParams
 	struct FWeightedProbabilityRange                   NumberOfWaves;                                             // 0x0008(0x0020) (Edit, DisableEditOnInstance)
 	struct FInt32Range                                 MinMaxNumberOfShips;                                       // 0x0028(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	int                                                MinNumberOfShipsInFinalWave;                               // 0x0038(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_I3ZG[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PJQY[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FAIShipSizeLimit>                    ShipSizeLimits;                                            // 0x0040(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	TArray<struct FAIShipEncounterWaveDesc>            WaveConfigurations;                                        // 0x0050(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 
@@ -405,7 +392,7 @@ struct FFeatureLockedAIShipEncounterBattleGenerationParams
 {
 	struct FName                                       Feature;                                                   // 0x0000(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FAIShipEncounterBattleGenerationParams      Params;                                                    // 0x0008(0x0060) (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_GNQB[0x10];                                    // 0x0068(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JWAH[0x10];                                    // 0x0068(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -417,7 +404,7 @@ struct FFeatureLockedAIShipEncounterBattleGenerationParams
 struct FAIShipBattleEncounterDescGenerationParams
 {
 	bool                                               EnableHardShip;                                            // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_W7XE[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_M1EN[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FFeatureLockedAIShipEncounterBattleGenerationParams> BattleGenerationParams;                                    // 0x0008(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	TArray<struct FAIShipEncounterBattleDesc>          BattleDescs;                                               // 0x0018(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 
@@ -443,7 +430,7 @@ struct FAIShipSkeletonSkillsetOverride
 struct FWeightedAIShipCrewAmmoType
 {
 	int                                                Weight;                                                    // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_LJBA[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_0CW8[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FAIShipCrewAmmoType                         Params;                                                    // 0x0008(0x0018) (Edit, DisableEditOnInstance)
 
 	void AfterRead();
@@ -457,12 +444,12 @@ struct FAIShipGenerationParams
 {
 	TEnumAsByte<AIShips_EAIShipEncounterType>          EncounterType;                                             // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_EAIShipType>                   ShipType;                                                  // 0x0001(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_NV1R[0x6];                                     // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_U63F[0x6];                                     // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UAthenaAIShipControllerParamsDataAsset*      ShipControllerParams;                                      // 0x0008(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FAIShipSkeletonSkillsetOverride>     SkillsetOverrides;                                         // 0x0010(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	TArray<struct FWeightedAIShipCrewAmmoType>         SkeletonAmmoTypeOverrides;                                 // 0x0020(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	struct FAIShipContextDescDamageParams              DamageParams;                                              // 0x0030(0x0014) (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_1LG7[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PRHO[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -488,7 +475,7 @@ struct FAIShipContextDescGenerationShipSpecificParams
 struct FWeightedAIShipCrewFormType
 {
 	int                                                Weight;                                                    // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_X2LZ[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SW5N[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FAIShipCrewFormType                         Params;                                                    // 0x0008(0x0020) (Edit, DisableEditOnInstance)
 
 	void AfterRead();
@@ -525,6 +512,19 @@ struct FAIShipContextDescGenerationParams
 
 };
 
+// ScriptStruct AIShips.AIShipEncounterParams
+// 0x0018
+struct FAIShipEncounterParams
+{
+	float                                              MinEngagedDistanceFromPlayers;                             // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_65EO[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	TArray<struct FShipTypeAIShipEncounterParams>      ShipTypeParams;                                            // 0x0008(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
 // ScriptStruct AIShips.AIShipEncounterWave
 // 0x0010
 struct FAIShipEncounterWave
@@ -541,12 +541,12 @@ struct FAIShipEncounterWave
 struct FCursedSailsBattleParams
 {
 	struct FText                                       Name;                                                      // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_25WA[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_IX0I[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       SkellyCrewName;                                            // 0x0038(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_CRC5[0x20];                                    // 0x0038(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	TEnumAsByte<AIShips_ECannonballIconType>           CannonballType;                                            // 0x0070(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_IUQO[0x20];                                    // 0x0038(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	TEnumAsByte<AIShips_ECannonballIconType>           CannonBallType;                                            // 0x0070(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_ESkellyFormIconType>           SkellyType;                                                // 0x0071(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_T5H1[0x6];                                     // 0x0072(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7ILC[0x6];                                     // 0x0072(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UAIShipEncounterDesc*                        EncounterDescription;                                      // 0x0078(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -560,7 +560,7 @@ struct FAIShipDespawnedEvent
 {
 	class AActor*                                      Ship;                                                      // 0x0000(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_EAIShipDestructionReason>      ShipDestructionReason;                                     // 0x0008(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_5ZR1[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_CY96[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -576,7 +576,7 @@ struct FAIShipSpawnedEvent
 	struct FGuid                                       SpawningEventId;                                           // 0x0018(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FGuid                                       SpawnConfigId;                                             // 0x0028(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	int                                                Wave;                                                      // 0x0038(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_L8NK[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_65AH[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -610,7 +610,7 @@ struct FAIShipEncounterCompleteNetEvent : public FBoxedRpc
 	int                                                BattleIdx;                                                 // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_ECannonballIconType>           CannonballIconType;                                        // 0x0014(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_ESkellyFormIconType>           SkellyFormIconType;                                        // 0x0015(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_P1FN[0x2];                                     // 0x0016(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5F0R[0x2];                                     // 0x0016(0x0002) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -625,7 +625,7 @@ struct FAIShipEncounterRevealNetEvent : public FBoxedRpc
 	int                                                SkellyCrewIdx;                                             // 0x0014(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_ECannonballIconType>           CannonballIconType;                                        // 0x0018(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_ESkellyFormIconType>           SkellyFormIconType;                                        // 0x0019(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_31C8[0x6];                                     // 0x001A(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PE5H[0x6];                                     // 0x001A(0x0006) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -637,13 +637,13 @@ struct FAIShipEncounterRevealNetEvent : public FBoxedRpc
 struct FAIShipEncounterNotification
 {
 	struct FText                                       BattleName;                                                // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH
-	unsigned char                                      UnknownData_MJ6R[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_W8B5[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FName                                       SeaName;                                                   // 0x0038(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FText                                       SkellyCrewName;                                            // 0x0040(0x0018) ELEMENT_SIZE_MISMATCH
-	unsigned char                                      UnknownData_3KPO[0x20];                                    // 0x0040(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	TEnumAsByte<AIShips_ECannonballIconType>           CannonballType;                                            // 0x0078(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_XQY3[0x20];                                    // 0x0040(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	TEnumAsByte<AIShips_ECannonballIconType>           CannonBallType;                                            // 0x0078(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_ESkellyFormIconType>           SkellyType;                                                // 0x0079(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_T37V[0x6];                                     // 0x007A(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_XWWU[0x6];                                     // 0x007A(0x0006) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -667,7 +667,7 @@ struct FAIShipEncounterZoneEnteredNetworkEvent : public FNetworkEventStruct
 	int                                                RemainingAIShips;                                          // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                TotalAIShips;                                              // 0x0014(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                TotalAIShipsInFinalWave;                                   // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_PU3L[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_I4AB[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -704,11 +704,11 @@ struct FAIShipDamagedTelemetryEvent
 {
 	struct FString                                     DamageType;                                                // 0x0000(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash)
 	struct FVector                                     DamageLocation;                                            // 0x0010(0x000C) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_JQV6[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PTKP[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     DamagedShipPart;                                           // 0x0020(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash)
 	int                                                DamageLevel;                                               // 0x0030(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                       AttackId;                                                  // 0x0034(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_15RG[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9DS3[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -721,7 +721,7 @@ struct FAIShipDespawnTelemetryEvent
 {
 	struct FString                                     AIShipId;                                                  // 0x0000(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash)
 	TEnumAsByte<AIShips_EAIShipDestructionReason>      AIShipDestructionReason;                                   // 0x0010(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_6ZVT[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6HUS[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -739,7 +739,7 @@ struct FAIShipSpawnTelemetryEvent
 	struct FGuid                                       SpawnConfigId;                                             // 0x0040(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FString                                     AIShipSize;                                                // 0x0050(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash)
 	int                                                AIShipWaveIndex;                                           // 0x0060(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_R95U[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LHGB[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

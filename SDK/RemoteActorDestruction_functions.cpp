@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -34,10 +34,12 @@ void FDestroyAllExistingActorsByClassData::BeforeDelete()
 {
 }
 
-// Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyExistingActors
-// (Native, Public, HasOutParms)
+// Function:
+//		Offset -> 0x03ECF560
+//		Name   -> Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyExistingActors
+//		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
-// TArray<class UClass*>          ClassesToDestroy               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
+//		TArray<class UClass*>                              ClassesToDestroy                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, UObjectWrapper)
 void URemoteActorDestructionInterface::DestroyExistingActors(TArray<class UClass*> ClassesToDestroy)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyExistingActors");
@@ -54,10 +56,12 @@ void URemoteActorDestructionInterface::DestroyExistingActors(TArray<class UClass
 }
 
 
-// Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyActor
-// (Native, Public, HasOutParms)
+// Function:
+//		Offset -> 0x03ECF4D0
+//		Name   -> Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyActor
+//		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
-// struct FDestroyActorData       DestroyActorData               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FDestroyActorData                           DestroyActorData                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void URemoteActorDestructionInterface::DestroyActor(const struct FDestroyActorData& DestroyActorData)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyActor");

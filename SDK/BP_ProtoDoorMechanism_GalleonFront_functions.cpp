@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_ProtoDoorMechanism_GalleonFront_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.UserConstructionScript");
@@ -34,8 +36,10 @@ void ABP_ProtoDoorMechanism_GalleonFront_C::UserConstructionScript()
 }
 
 
-// Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_ProtoDoorMechanism_GalleonFront_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.ReceiveBeginPlay");
@@ -50,8 +54,10 @@ void ABP_ProtoDoorMechanism_GalleonFront_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.Blueprint_OnStarted
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.Blueprint_OnStarted
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_ProtoDoorMechanism_GalleonFront_C::Blueprint_OnStarted()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.Blueprint_OnStarted");
@@ -66,8 +72,10 @@ void ABP_ProtoDoorMechanism_GalleonFront_C::Blueprint_OnStarted()
 }
 
 
-// Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.Blueprint_OnStopped
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.Blueprint_OnStopped
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_ProtoDoorMechanism_GalleonFront_C::Blueprint_OnStopped()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.Blueprint_OnStopped");
@@ -82,14 +90,16 @@ void ABP_ProtoDoorMechanism_GalleonFront_C::Blueprint_OnStopped()
 }
 
 
-// Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.BndEvt__ClosedVolume_K2Node_ComponentBoundEvent_39_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.BndEvt__ClosedVolume_K2Node_ComponentBoundEvent_39_ComponentBeginOverlapSignature__DelegateSignature
+//		Flags  -> (HasOutParms, BlueprintEvent)
 // Parameters:
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           bFromSweep                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		class AActor*                                      OtherActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UPrimitiveComponent*                         OtherComp                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                OtherBodyIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               bFromSweep                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FHitResult                                  SweepResult                                                (ConstParm, Parm, OutParm, ReferenceParm)
 void ABP_ProtoDoorMechanism_GalleonFront_C::BndEvt__ClosedVolume_K2Node_ComponentBoundEvent_39_ComponentBeginOverlapSignature__DelegateSignature(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.BndEvt__ClosedVolume_K2Node_ComponentBoundEvent_39_ComponentBeginOverlapSignature__DelegateSignature");
@@ -109,14 +119,16 @@ void ABP_ProtoDoorMechanism_GalleonFront_C::BndEvt__ClosedVolume_K2Node_Componen
 }
 
 
-// Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.BndEvt__OpenVolume_K2Node_ComponentBoundEvent_50_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.BndEvt__OpenVolume_K2Node_ComponentBoundEvent_50_ComponentBeginOverlapSignature__DelegateSignature
+//		Flags  -> (HasOutParms, BlueprintEvent)
 // Parameters:
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           bFromSweep                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		class AActor*                                      OtherActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UPrimitiveComponent*                         OtherComp                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                OtherBodyIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               bFromSweep                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FHitResult                                  SweepResult                                                (ConstParm, Parm, OutParm, ReferenceParm)
 void ABP_ProtoDoorMechanism_GalleonFront_C::BndEvt__OpenVolume_K2Node_ComponentBoundEvent_50_ComponentBeginOverlapSignature__DelegateSignature(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.BndEvt__OpenVolume_K2Node_ComponentBoundEvent_50_ComponentBeginOverlapSignature__DelegateSignature");
@@ -136,10 +148,12 @@ void ABP_ProtoDoorMechanism_GalleonFront_C::BndEvt__OpenVolume_K2Node_ComponentB
 }
 
 
-// Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.ExecuteUbergraph_BP_ProtoDoorMechanism_GalleonFront
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.ExecuteUbergraph_BP_ProtoDoorMechanism_GalleonFront
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_ProtoDoorMechanism_GalleonFront_C::ExecuteUbergraph_BP_ProtoDoorMechanism_GalleonFront(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ProtoDoorMechanism_GalleonFront.BP_ProtoDoorMechanism_GalleonFront_C.ExecuteUbergraph_BP_ProtoDoorMechanism_GalleonFront");

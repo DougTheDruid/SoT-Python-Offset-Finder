@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_LargeShipLadder.BP_LargeShipLadder_C.GetDockableInfo
-// (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LargeShipLadder.BP_LargeShipLadder_C.GetDockableInfo
+//		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDockableInfo           ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FDockableInfo                               ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FDockableInfo ABP_LargeShipLadder_C::GetDockableInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipLadder.BP_LargeShipLadder_C.GetDockableInfo");
@@ -38,11 +40,13 @@ struct FDockableInfo ABP_LargeShipLadder_C::GetDockableInfo()
 }
 
 
-// Function BP_LargeShipLadder.BP_LargeShipLadder_C.Setup Spline
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LargeShipLadder.BP_LargeShipLadder_C.Setup Spline
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USplineComponent*        Spline                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<struct FVector>         Positions                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class USplineComponent*                            Spline                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TArray<struct FVector>                             Positions                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
 void ABP_LargeShipLadder_C::Setup_Spline(class USplineComponent* Spline, TArray<struct FVector>* Positions)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipLadder.BP_LargeShipLadder_C.Setup Spline");
@@ -61,11 +65,13 @@ void ABP_LargeShipLadder_C::Setup_Spline(class USplineComponent* Spline, TArray<
 }
 
 
-// Function BP_LargeShipLadder.BP_LargeShipLadder_C.CanInteract
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LargeShipLadder.BP_LargeShipLadder_C.CanInteract
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  InInteractor                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      InInteractor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool ABP_LargeShipLadder_C::CanInteract(class AActor* InInteractor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipLadder.BP_LargeShipLadder_C.CanInteract");
@@ -83,8 +89,10 @@ bool ABP_LargeShipLadder_C::CanInteract(class AActor* InInteractor)
 }
 
 
-// Function BP_LargeShipLadder.BP_LargeShipLadder_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LargeShipLadder.BP_LargeShipLadder_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_LargeShipLadder_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipLadder.BP_LargeShipLadder_C.UserConstructionScript");

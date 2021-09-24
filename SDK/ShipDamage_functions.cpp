@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -92,10 +92,12 @@ void FAppliedDamageToShipEvent::BeforeDelete()
 	DELE_PTR_FULL(Ship);
 }
 
-// Function ShipDamage.DamageablePartsInterface.UnregisterDamageablePart
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x0399CF90
+//		Name   -> Function ShipDamage.DamageablePartsInterface.UnregisterDamageablePart
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  DamageableActor                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      DamageableActor                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UDamageablePartsInterface::UnregisterDamageablePart(class AActor* DamageableActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShipDamage.DamageablePartsInterface.UnregisterDamageablePart");
@@ -112,10 +114,12 @@ void UDamageablePartsInterface::UnregisterDamageablePart(class AActor* Damageabl
 }
 
 
-// Function ShipDamage.DamageablePartsInterface.RegisterDamageablePart
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x0399CF00
+//		Name   -> Function ShipDamage.DamageablePartsInterface.RegisterDamageablePart
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                  DamageableActor                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      DamageableActor                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UDamageablePartsInterface::RegisterDamageablePart(class AActor* DamageableActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShipDamage.DamageablePartsInterface.RegisterDamageablePart");
@@ -132,10 +136,12 @@ void UDamageablePartsInterface::RegisterDamageablePart(class AActor* DamageableA
 }
 
 
-// Function ShipDamage.DamageablePartsInterface.GetDamageableParts
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x0399CE60
+//		Name   -> Function ShipDamage.DamageablePartsInterface.GetDamageableParts
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class AActor*>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		TArray<class AActor*>                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<class AActor*> UDamageablePartsInterface::GetDamageableParts()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShipDamage.DamageablePartsInterface.GetDamageableParts");

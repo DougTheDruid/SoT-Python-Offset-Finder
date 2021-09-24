@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.OnEmissaryEncounteredSkellyFort
 struct UBP_Prompt_EmissaryEncounteredSkellyFort_C_OnEmissaryEncounteredSkellyFort_Params
 {
-	struct FEmissaryEncounteredSkellyFortNetworkEvent  NewParam;                                                  // (Parm)
+	struct FEmissaryEncounteredSkellyFortNetworkEvent  NewParam;                                                  // 0x0000(0x0018)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.EmissaryEncounteredSkellyFort
 struct UBP_Prompt_EmissaryEncounteredSkellyFort_C_EmissaryEncounteredSkellyFort_Params
 {
-	struct FEmissaryEncounteredSkellyFortNetworkEvent  NewParam;                                                  // (Parm)
+	struct FEmissaryEncounteredSkellyFortNetworkEvent  NewParam;                                                  // 0x0000(0x0018)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.Evaluate
@@ -49,7 +49,7 @@ struct UBP_Prompt_EmissaryEncounteredSkellyFort_C_UnregisterOtherEvents_Implemen
 // Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.ExecuteUbergraph_BP_Prompt_EmissaryEncounteredSkellyFort
 struct UBP_Prompt_EmissaryEncounteredSkellyFort_C_ExecuteUbergraph_BP_Prompt_EmissaryEncounteredSkellyFort_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

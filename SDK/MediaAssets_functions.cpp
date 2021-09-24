@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function MediaAssets.MediaPlayer.SupportsSeeking
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB6210
+//		Name   -> Function MediaAssets.MediaPlayer.SupportsSeeking
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::SupportsSeeking()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsSeeking");
@@ -39,10 +41,12 @@ bool UMediaPlayer::SupportsSeeking()
 }
 
 
-// Function MediaAssets.MediaPlayer.SupportsScrubbing
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB61E0
+//		Name   -> Function MediaAssets.MediaPlayer.SupportsScrubbing
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::SupportsScrubbing()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsScrubbing");
@@ -60,12 +64,14 @@ bool UMediaPlayer::SupportsScrubbing()
 }
 
 
-// Function MediaAssets.MediaPlayer.SupportsRate
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB6110
+//		Name   -> Function MediaAssets.MediaPlayer.SupportsRate
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          Rate                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           Unthinned                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		float                                              Rate                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               Unthinned                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsRate");
@@ -85,11 +91,13 @@ bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 }
 
 
-// Function MediaAssets.MediaPlayer.SetRate
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB6080
+//		Name   -> Function MediaAssets.MediaPlayer.SetRate
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          Rate                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		float                                              Rate                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::SetRate(float Rate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetRate");
@@ -108,11 +116,13 @@ bool UMediaPlayer::SetRate(float Rate)
 }
 
 
-// Function MediaAssets.MediaPlayer.SetLooping
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB5EF0
+//		Name   -> Function MediaAssets.MediaPlayer.SetLooping
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           InLooping                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               InLooping                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::SetLooping(bool InLooping)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetLooping");
@@ -131,11 +141,13 @@ bool UMediaPlayer::SetLooping(bool InLooping)
 }
 
 
-// Function MediaAssets.MediaPlayer.Seek
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB5E50
+//		Name   -> Function MediaAssets.MediaPlayer.Seek
+//		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FTimespan               InTime                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FTimespan                                   InTime                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::Seek(const struct FTimespan& InTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Seek");
@@ -154,10 +166,12 @@ bool UMediaPlayer::Seek(const struct FTimespan& InTime)
 }
 
 
-// Function MediaAssets.MediaPlayer.Rewind
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB5E20
+//		Name   -> Function MediaAssets.MediaPlayer.Rewind
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::Rewind()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Rewind");
@@ -175,10 +189,12 @@ bool UMediaPlayer::Rewind()
 }
 
 
-// Function MediaAssets.MediaPlayer.Play
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB5DF0
+//		Name   -> Function MediaAssets.MediaPlayer.Play
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::Play()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Play");
@@ -196,10 +212,12 @@ bool UMediaPlayer::Play()
 }
 
 
-// Function MediaAssets.MediaPlayer.Pause
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB5DC0
+//		Name   -> Function MediaAssets.MediaPlayer.Pause
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::Pause()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Pause");
@@ -217,11 +235,13 @@ bool UMediaPlayer::Pause()
 }
 
 
-// Function MediaAssets.MediaPlayer.OpenUrl
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB5D10
+//		Name   -> Function MediaAssets.MediaPlayer.OpenUrl
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 NewUrl                         (Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FString                                     NewUrl                                                     (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::OpenUrl(const struct FString& NewUrl)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenUrl");
@@ -240,10 +260,12 @@ bool UMediaPlayer::OpenUrl(const struct FString& NewUrl)
 }
 
 
-// Function MediaAssets.MediaPlayer.IsStopped
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5CE0
+//		Name   -> Function MediaAssets.MediaPlayer.IsStopped
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::IsStopped()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsStopped");
@@ -261,10 +283,12 @@ bool UMediaPlayer::IsStopped()
 }
 
 
-// Function MediaAssets.MediaPlayer.IsPlaying
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5CB0
+//		Name   -> Function MediaAssets.MediaPlayer.IsPlaying
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::IsPlaying()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPlaying");
@@ -282,10 +306,12 @@ bool UMediaPlayer::IsPlaying()
 }
 
 
-// Function MediaAssets.MediaPlayer.IsPaused
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5C80
+//		Name   -> Function MediaAssets.MediaPlayer.IsPaused
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::IsPaused()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPaused");
@@ -303,10 +329,12 @@ bool UMediaPlayer::IsPaused()
 }
 
 
-// Function MediaAssets.MediaPlayer.IsLooping
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5C50
+//		Name   -> Function MediaAssets.MediaPlayer.IsLooping
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::IsLooping()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsLooping");
@@ -324,10 +352,12 @@ bool UMediaPlayer::IsLooping()
 }
 
 
-// Function MediaAssets.MediaPlayer.GetUrl
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5C10
+//		Name   -> Function MediaAssets.MediaPlayer.GetUrl
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+//		struct FString                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 struct FString UMediaPlayer::GetUrl()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetUrl");
@@ -345,10 +375,12 @@ struct FString UMediaPlayer::GetUrl()
 }
 
 
-// Function MediaAssets.MediaPlayer.GetTime
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5BD0
+//		Name   -> Function MediaAssets.MediaPlayer.GetTime
+//		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FTimespan               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		struct FTimespan                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 struct FTimespan UMediaPlayer::GetTime()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTime");
@@ -366,10 +398,12 @@ struct FTimespan UMediaPlayer::GetTime()
 }
 
 
-// Function MediaAssets.MediaPlayer.GetRate
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5BA0
+//		Name   -> Function MediaAssets.MediaPlayer.GetRate
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UMediaPlayer::GetRate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetRate");
@@ -387,10 +421,12 @@ float UMediaPlayer::GetRate()
 }
 
 
-// Function MediaAssets.MediaPlayer.GetDuration
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5B60
+//		Name   -> Function MediaAssets.MediaPlayer.GetDuration
+//		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FTimespan               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+//		struct FTimespan                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm)
 struct FTimespan UMediaPlayer::GetDuration()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetDuration");
@@ -408,8 +444,10 @@ struct FTimespan UMediaPlayer::GetDuration()
 }
 
 
-// Function MediaAssets.MediaPlayer.Close
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB5B40
+//		Name   -> Function MediaAssets.MediaPlayer.Close
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMediaPlayer::Close()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Close");
@@ -425,10 +463,12 @@ void UMediaPlayer::Close()
 }
 
 
-// Function MediaAssets.MediaPlayer.CanPlay
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5B10
+//		Name   -> Function MediaAssets.MediaPlayer.CanPlay
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::CanPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPlay");
@@ -446,10 +486,12 @@ bool UMediaPlayer::CanPlay()
 }
 
 
-// Function MediaAssets.MediaPlayer.CanPause
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02EB5AE0
+//		Name   -> Function MediaAssets.MediaPlayer.CanPause
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMediaPlayer::CanPause()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPause");
@@ -479,10 +521,12 @@ void UMediaPlayer::BeforeDelete()
 
 }
 
-// Function MediaAssets.MediaSoundWave.SetMediaPlayer
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB5F80
+//		Name   -> Function MediaAssets.MediaSoundWave.SetMediaPlayer
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UMediaPlayer*            InMediaPlayer                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UMediaPlayer*                                InMediaPlayer                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UMediaSoundWave::SetMediaPlayer(class UMediaPlayer* InMediaPlayer)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundWave.SetMediaPlayer");
@@ -513,10 +557,12 @@ void UMediaSoundWave::BeforeDelete()
 	DELE_PTR_FULL(MediaPlayer);
 }
 
-// Function MediaAssets.MediaTexture.SetMediaPlayer
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02EB6000
+//		Name   -> Function MediaAssets.MediaTexture.SetMediaPlayer
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UMediaPlayer*            InMediaPlayer                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UMediaPlayer*                                InMediaPlayer                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UMediaTexture::SetMediaPlayer(class UMediaPlayer* InMediaPlayer)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.SetMediaPlayer");

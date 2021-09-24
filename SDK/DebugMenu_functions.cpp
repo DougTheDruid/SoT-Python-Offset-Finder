@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -39,6 +39,14 @@ void FDebugMenuUserItem::AfterRead()
 }
 
 void FDebugMenuUserItem::BeforeDelete()
+{
+}
+
+void FDebugErrorHappeningEvent::AfterRead()
+{
+}
+
+void FDebugErrorHappeningEvent::BeforeDelete()
 {
 }
 
@@ -112,11 +120,13 @@ void UDebugMenuComponentMock::BeforeDelete()
 
 }
 
-// Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuReady
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03077E90
+//		Name   -> Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuReady
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UDebugMenuTestFunctions::STATIC_IsDebugMenuReady(class UObject* WorldContextObject)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuReady");
@@ -135,11 +145,13 @@ bool UDebugMenuTestFunctions::STATIC_IsDebugMenuReady(class UObject* WorldContex
 }
 
 
-// Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuOpen
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03077E10
+//		Name   -> Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuOpen
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UDebugMenuTestFunctions::STATIC_IsDebugMenuOpen(class UObject* WorldContextObject)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuOpen");
@@ -158,10 +170,12 @@ bool UDebugMenuTestFunctions::STATIC_IsDebugMenuOpen(class UObject* WorldContext
 }
 
 
-// Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuAvailable
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03077DE0
+//		Name   -> Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuAvailable
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UDebugMenuTestFunctions::STATIC_IsDebugMenuAvailable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function DebugMenu.DebugMenuTestFunctions.IsDebugMenuAvailable");
@@ -179,10 +193,12 @@ bool UDebugMenuTestFunctions::STATIC_IsDebugMenuAvailable()
 }
 
 
-// Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboBetaKeyboard
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03077D50
+//		Name   -> Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboBetaKeyboard
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FKey                    ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FKey                                        ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FKey UDebugMenuTestFunctions::STATIC_GetDebugMenuToggleKeyComboBetaKeyboard()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboBetaKeyboard");
@@ -200,10 +216,12 @@ struct FKey UDebugMenuTestFunctions::STATIC_GetDebugMenuToggleKeyComboBetaKeyboa
 }
 
 
-// Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboAlphaKeyboard
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03077CC0
+//		Name   -> Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboAlphaKeyboard
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FKey                    ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FKey                                        ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FKey UDebugMenuTestFunctions::STATIC_GetDebugMenuToggleKeyComboAlphaKeyboard()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleKeyComboAlphaKeyboard");
@@ -221,10 +239,12 @@ struct FKey UDebugMenuTestFunctions::STATIC_GetDebugMenuToggleKeyComboAlphaKeybo
 }
 
 
-// Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboBetaGamepad
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03077C30
+//		Name   -> Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboBetaGamepad
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FKey                    ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FKey                                        ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FKey UDebugMenuTestFunctions::STATIC_GetDebugMenuToggleButtonComboBetaGamepad()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboBetaGamepad");
@@ -242,10 +262,12 @@ struct FKey UDebugMenuTestFunctions::STATIC_GetDebugMenuToggleButtonComboBetaGam
 }
 
 
-// Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboAlphaGamepad
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03077BA0
+//		Name   -> Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboAlphaGamepad
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FKey                    ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FKey                                        ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FKey UDebugMenuTestFunctions::STATIC_GetDebugMenuToggleButtonComboAlphaGamepad()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function DebugMenu.DebugMenuTestFunctions.GetDebugMenuToggleButtonComboAlphaGamepad");

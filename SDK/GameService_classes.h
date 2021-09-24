@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class AServiceProviderGameState : public AGameState
 {
 public:
-	unsigned char                                      UnknownData_OKB8[0x120];                                   // 0x0428(0x0120) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_HPYS[0x120];                                   // 0x0428(0x0120) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

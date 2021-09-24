@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_FlintlockPistol.BP_FlintlockPistol_C.SetScopeEffectOn
 struct ABP_FlintlockPistol_C_SetScopeEffectOn_Params
 {
-	bool                                               IsOn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               IsOn;                                                      // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_FlintlockPistol.BP_FlintlockPistol_C.determine sfx relationship
 struct ABP_FlintlockPistol_C_determine_sfx_relationship_Params
 {
-	TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship;                                              // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship;                                              // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_FlintlockPistol.BP_FlintlockPistol_C.DoFireEffect
@@ -59,7 +59,7 @@ struct ABP_FlintlockPistol_C_RadialBlurOff_Params
 // Function BP_FlintlockPistol.BP_FlintlockPistol_C.ExecuteUbergraph_BP_FlintlockPistol
 struct ABP_FlintlockPistol_C_ExecuteUbergraph_BP_FlintlockPistol_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

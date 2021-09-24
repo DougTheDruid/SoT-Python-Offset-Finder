@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -46,14 +46,14 @@ class UWwiseEvent : public UObject
 public:
 	class UWwiseBank*                                  RequiredBank;                                              // 0x0028(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash)
 	bool                                               WaitForBankToLoad;                                         // 0x0030(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_M450[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JX8I[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	uint32_t                                           WwiseId;                                                   // 0x0034(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash)
 	float                                              DurationMin;                                               // 0x0038(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash)
 	float                                              DurationMax;                                               // 0x003C(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash)
 	float                                              MaxAttenuation;                                            // 0x0040(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash)
 	TEnumAsByte<WwiseAudio_EWwiseEventDurationType>    DurationType;                                              // 0x0044(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash)
 	bool                                               CookedIsStopEvent;                                         // 0x0045(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_7FHP[0xA];                                     // 0x0046(0x000A) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0T10[0xA];                                     // 0x0046(0x000A) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -100,7 +100,7 @@ public:
 class UMovieSceneAkAudioRTPCSection : public UMovieSceneSection
 {
 public:
-	unsigned char                                      UnknownData_T612[0x8];                                     // 0x0098(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_T3J0[0x8];                                     // 0x0098(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     Name;                                                      // 0x00A0(0x0010) (Edit, ZeroConstructor, Protected, HasGetValueTypeHash)
 	struct FRichCurve                                  FloatCurve;                                                // 0x00B0(0x0078) (Protected)
 
@@ -125,7 +125,7 @@ class UMovieSceneAkTrack : public UMovieSceneTrack
 public:
 	TArray<class UMovieSceneSection*>                  Sections;                                                  // 0x0088(0x0010) (ExportObject, ZeroConstructor, ContainsInstancedReference, Protected)
 	unsigned char                                      bIsAMasterTrack : 1;                                       // 0x0098(0x0001) BIT_FIELD (NoDestructor, Protected)
-	unsigned char                                      UnknownData_Q87P[0x7];                                     // 0x0099(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BSJA[0x7];                                     // 0x0099(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -186,9 +186,9 @@ public:
 class UWwiseAudioSettings : public UObject
 {
 public:
-	unsigned char                                      UnknownData_7IXK[0xC0];                                    // 0x0028(0x00C0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_76VR[0xC0];                                    // 0x0028(0x00C0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FWwiseAudioReverbPresets                    ReverbPresetSettings;                                      // 0x00E8(0x0064) (Edit, Config)
-	unsigned char                                      UnknownData_WYF8[0x4];                                     // 0x014C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_YGIP[0x4];                                     // 0x014C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FWwiseBinkSettings                          BinkSettings;                                              // 0x0150(0x0038) (Edit, Config)
 	TArray<struct FStringAssetReference>               PersistentSoundBanks;                                      // 0x0188(0x0010) (Edit, ZeroConstructor, Config)
 	struct FStringAssetReference                       InitBank;                                                  // 0x0198(0x0010) (Edit, ZeroConstructor, Config)
@@ -206,12 +206,12 @@ public:
 	struct FWwiseNetworkRelationship                   NetworkRelationship;                                       // 0x0258(0x0018) (Edit, Config)
 	struct FWwiseAudioGameStateSettings                AudioStateSettings;                                        // 0x0270(0x00A0) (Edit, Config)
 	uint32_t                                           WaapiInterpreterPort;                                      // 0x0310(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_0KJB[0x4];                                     // 0x0314(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_RY9Z[0x4];                                     // 0x0314(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UWwiseEvent*                                 PauseEventStartInstance;                                   // 0x0318(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWwiseEvent*                                 PauseEventReleaseInstance;                                 // 0x0320(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWwiseEvent*                                 StopAllEventInstance;                                      // 0x0328(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWwiseObjectPoolWrapper*                     AnimNotifyPoolInstance;                                    // 0x0330(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_NU14[0x50];                                    // 0x0338(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_0B5W[0x50];                                    // 0x0338(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class UWwiseEvent*>                         EventsToPlayOnFrontendStartInstance;                       // 0x0388(0x0010) (ZeroConstructor, Transient)
 	TArray<class UWwiseEvent*>                         EventsToPlayOnFrontendEndInstance;                         // 0x0398(0x0010) (ZeroConstructor, Transient)
 	TArray<class UWwiseEvent*>                         EventsToPlayOnStartEngagementInstance;                     // 0x03A8(0x0010) (ZeroConstructor, Transient)
@@ -242,7 +242,7 @@ class UWwiseBank : public UObject
 public:
 	struct FString                                     path;                                                      // 0x0028(0x0010) (Edit, ZeroConstructor, EditConst, AssetRegistrySearchable, HasGetValueTypeHash)
 	uint32_t                                           WwiseId;                                                   // 0x0038(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_34LC[0x2C];                                    // 0x003C(0x002C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LXNZ[0x2C];                                    // 0x003C(0x002C) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -283,7 +283,7 @@ public:
 class UWwiseDebugManager : public UObject
 {
 public:
-	unsigned char                                      UnknownData_HD2E[0x60];                                    // 0x0028(0x0060) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SECQ[0x60];                                    // 0x0028(0x0060) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -324,7 +324,7 @@ public:
 class UWwiseEmitterManager : public UObject
 {
 public:
-	unsigned char                                      UnknownData_S0PU[0x20];                                    // 0x0028(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_G5XV[0x20];                                    // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -414,7 +414,7 @@ public:
 class UWwiseInputManager : public UObject
 {
 public:
-	unsigned char                                      UnknownData_ZLA7[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_A6YY[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -435,7 +435,7 @@ public:
 class UWwiseMediaManager : public UObject
 {
 public:
-	unsigned char                                      UnknownData_LK3V[0x50];                                    // 0x0028(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EAL7[0x50];                                    // 0x0028(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -477,7 +477,7 @@ public:
 class UWwisePoolManager : public UObject
 {
 public:
-	unsigned char                                      UnknownData_L9YB[0xD0];                                    // 0x0028(0x00D0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_N19V[0xD0];                                    // 0x0028(0x00D0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -498,7 +498,7 @@ public:
 class UWwiseSoundFrameManager : public UObject
 {
 public:
-	unsigned char                                      UnknownData_FQ7B[0x20];                                    // 0x0028(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EYAO[0x20];                                    // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -44,7 +44,7 @@ public:
 class UNetworkRegionService : public UObject
 {
 public:
-	unsigned char                                      UnknownData_UDLP[0x90];                                    // 0x0028(0x0090) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9492[0x90];                                    // 0x0028(0x0090) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class APlayerController*>                   PlayersThatNeedToBeTicked;                                 // 0x00B8(0x0010) (ZeroConstructor)
 
 
@@ -68,7 +68,7 @@ class ARegionAssetCacheActor : public AActor
 public:
 	TArray<struct FRegionAssetsList>                   RegionData;                                                // 0x03D0(0x0010) (Edit, ZeroConstructor, Config)
 	TArray<class UObject*>                             LoadedAssets;                                              // 0x03E0(0x0010) (ZeroConstructor, Transient)
-	unsigned char                                      UnknownData_YLTT[0x20];                                    // 0x03F0(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6THU[0x20];                                    // 0x03F0(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

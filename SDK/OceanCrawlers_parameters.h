@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,14 +22,14 @@ namespace CG
 // Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayBuffAudio
 struct UOceanCrawlerAudioBroadcaster_Multicast_PlayBuffAudio_Params
 {
-	struct FEventOceanCrawlerAIBuffAudioRequest        InRequest;                                                 // (ConstParm, Parm, ReferenceParm)
+	struct FEventOceanCrawlerAIBuffAudioRequest        InRequest;                                                 // 0x0000(0x0001)  (ConstParm, Parm, ReferenceParm)
 };
 
 // Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayAudio
 struct UOceanCrawlerAudioBroadcaster_Multicast_PlayAudio_Params
 {
-	TEnumAsByte<AthenaAI_EOceanCrawlerAbilityAudioKey> InAudioKey;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                              InAudioDelay;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<AthenaAI_EOceanCrawlerAbilityAudioKey> InAudioKey;                                                // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              InAudioDelay;                                              // 0x0004(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

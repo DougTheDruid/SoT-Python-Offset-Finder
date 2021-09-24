@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -136,8 +136,10 @@ void UBurrowEruptDamagerType::BeforeDelete()
 
 }
 
-// Function AthenaAIAbilities.BurrowHealVFXComponent.OnRep_IsVFXActive
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03D9D110
+//		Name   -> Function AthenaAIAbilities.BurrowHealVFXComponent.OnRep_IsVFXActive
+//		Flags  -> (Final, Native, Private)
 void UBurrowHealVFXComponent::OnRep_IsVFXActive()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAIAbilities.BurrowHealVFXComponent.OnRep_IsVFXActive");
@@ -255,8 +257,10 @@ void UElectricShieldBuffInterface::BeforeDelete()
 
 }
 
-// Function AthenaAIAbilities.ElectricShieldBuffComponent.OnRep_IsShieldActive
-// (Final, Native, Public)
+// Function:
+//		Offset -> 0x03D9D0F0
+//		Name   -> Function AthenaAIAbilities.ElectricShieldBuffComponent.OnRep_IsShieldActive
+//		Flags  -> (Final, Native, Public)
 void UElectricShieldBuffComponent::OnRep_IsShieldActive()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAIAbilities.ElectricShieldBuffComponent.OnRep_IsShieldActive");
@@ -272,8 +276,10 @@ void UElectricShieldBuffComponent::OnRep_IsShieldActive()
 }
 
 
-// Function AthenaAIAbilities.ElectricShieldBuffComponent.DeactivateShield
-// (Native, Public)
+// Function:
+//		Offset -> 0x03D9D0C0
+//		Name   -> Function AthenaAIAbilities.ElectricShieldBuffComponent.DeactivateShield
+//		Flags  -> (Native, Public)
 void UElectricShieldBuffComponent::DeactivateShield()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAIAbilities.ElectricShieldBuffComponent.DeactivateShield");

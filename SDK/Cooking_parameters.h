@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,7 +22,7 @@ namespace CG
 // Function Cooking.CookerComponent.OnRep_CookingState
 struct UCookerComponent_OnRep_CookingState_Params
 {
-	struct FCookingClientRepresentation                OldRepresentation;                                         // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FCookingClientRepresentation                OldRepresentation;                                         // 0x0000(0x0068)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 }

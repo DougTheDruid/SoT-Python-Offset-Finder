@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Prompt_EmissaryEncounteredAIShip.BP_Prompt_EmissaryEncounteredAIShip_C.OnEmissaryEncounteredAIShip
 struct UBP_Prompt_EmissaryEncounteredAIShip_C_OnEmissaryEncounteredAIShip_Params
 {
-	struct FEmissaryEncounteredAIShipEvent             NewParam;                                                  // (Parm)
+	struct FEmissaryEncounteredAIShipEvent             NewParam;                                                  // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryEncounteredAIShip.BP_Prompt_EmissaryEncounteredAIShip_C.EmissaryEncounteredAIShip
 struct UBP_Prompt_EmissaryEncounteredAIShip_C_EmissaryEncounteredAIShip_Params
 {
-	struct FEmissaryEncounteredAIShipEvent             NewParam;                                                  // (Parm)
+	struct FEmissaryEncounteredAIShipEvent             NewParam;                                                  // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryEncounteredAIShip.BP_Prompt_EmissaryEncounteredAIShip_C.Evaluate
@@ -49,7 +49,7 @@ struct UBP_Prompt_EmissaryEncounteredAIShip_C_UnregisterOtherEvents_Implementabl
 // Function BP_Prompt_EmissaryEncounteredAIShip.BP_Prompt_EmissaryEncounteredAIShip_C.ExecuteUbergraph_BP_Prompt_EmissaryEncounteredAIShip
 struct UBP_Prompt_EmissaryEncounteredAIShip_C_ExecuteUbergraph_BP_Prompt_EmissaryEncounteredAIShip_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

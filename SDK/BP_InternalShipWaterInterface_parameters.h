@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,29 +22,29 @@ namespace CG
 // Function BP_InternalShipWaterInterface.BP_InternalShipWaterInterface_C.GetLineIntersectionFromPlane
 struct UBP_InternalShipWaterInterface_C_GetLineIntersectionFromPlane_Params
 {
-	struct FVector                                     LineStart;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                     LineEnd;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               Intersect;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                     IntersectionPoint;                                         // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                     LineStart;                                                 // 0x0000(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                     LineEnd;                                                   // 0x000C(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               Intersect;                                                 // 0x0018(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                     IntersectionPoint;                                         // 0x001C(0x000C)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_InternalShipWaterInterface.BP_InternalShipWaterInterface_C.GetDistanceFromPlane
 struct UBP_InternalShipWaterInterface_C_GetDistanceFromPlane_Params
 {
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                              Distance;                                                  // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                     Location;                                                  // 0x0000(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                              Distance;                                                  // 0x000C(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_InternalShipWaterInterface.BP_InternalShipWaterInterface_C.GetWaterLevel
 struct UBP_InternalShipWaterInterface_C_GetWaterLevel_Params
 {
-	float                                              WaterLevel;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                              WaterLevel;                                                // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_InternalShipWaterInterface.BP_InternalShipWaterInterface_C.AddWater
 struct UBP_InternalShipWaterInterface_C_AddWater_Params
 {
-	float                                              Water_Amount;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                              Water_Amount;                                              // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

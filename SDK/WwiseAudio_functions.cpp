@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -71,14 +71,6 @@ void FWwiseBinkSettings::AfterRead()
 }
 
 void FWwiseBinkSettings::BeforeDelete()
-{
-}
-
-void FWwiseAudioReverbPresets::AfterRead()
-{
-}
-
-void FWwiseAudioReverbPresets::BeforeDelete()
 {
 }
 
@@ -186,6 +178,14 @@ void FMovieSceneAkAudioRTPCSectionData::BeforeDelete()
 {
 }
 
+void FWwiseAudioReverbPresets::AfterRead()
+{
+}
+
+void FWwiseAudioReverbPresets::BeforeDelete()
+{
+}
+
 void UAnimNotifyWwiseEmitterComponentRetrievalInterface::AfterRead()
 {
 	UInterface::AfterRead();
@@ -198,13 +198,15 @@ void UAnimNotifyWwiseEmitterComponentRetrievalInterface::BeforeDelete()
 
 }
 
-// Function WwiseAudio.WwiseEvent.IsAudible
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x04464A20
+//		Name   -> Function WwiseAudio.WwiseEvent.IsAudible
+//		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SoundPosition                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// struct FVector                 ListenerPos                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          AttenuationScaler              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     SoundPosition                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ListenerPos                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              AttenuationScaler                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWwiseEvent::IsAudible(const struct FVector& SoundPosition, const struct FVector& ListenerPos, float AttenuationScaler)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.IsAudible");
@@ -225,10 +227,12 @@ bool UWwiseEvent::IsAudible(const struct FVector& SoundPosition, const struct FV
 }
 
 
-// Function WwiseAudio.WwiseEvent.GetMaxAttenuation
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x04464720
+//		Name   -> Function WwiseAudio.WwiseEvent.GetMaxAttenuation
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UWwiseEvent::GetMaxAttenuation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.GetMaxAttenuation");
@@ -246,10 +250,12 @@ float UWwiseEvent::GetMaxAttenuation()
 }
 
 
-// Function WwiseAudio.WwiseEvent.GetDurationType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044646E0
+//		Name   -> Function WwiseAudio.WwiseEvent.GetDurationType
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TEnumAsByte<WwiseAudio_EWwiseEventDurationType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<WwiseAudio_EWwiseEventDurationType>    ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<WwiseAudio_EWwiseEventDurationType> UWwiseEvent::GetDurationType()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.GetDurationType");
@@ -267,10 +273,12 @@ TEnumAsByte<WwiseAudio_EWwiseEventDurationType> UWwiseEvent::GetDurationType()
 }
 
 
-// Function WwiseAudio.WwiseEvent.GetDurationMin
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x044646B0
+//		Name   -> Function WwiseAudio.WwiseEvent.GetDurationMin
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UWwiseEvent::GetDurationMin()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.GetDurationMin");
@@ -288,10 +296,12 @@ float UWwiseEvent::GetDurationMin()
 }
 
 
-// Function WwiseAudio.WwiseEvent.GetDurationMax
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x04464680
+//		Name   -> Function WwiseAudio.WwiseEvent.GetDurationMax
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UWwiseEvent::GetDurationMax()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.GetDurationMax");

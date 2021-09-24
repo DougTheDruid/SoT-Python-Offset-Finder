@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -82,7 +82,7 @@ struct FRotationUpdateResult
 // 0x0018
 struct FTimedBuffer
 {
-	unsigned char                                      UnknownData_TVL6[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6S29[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -93,7 +93,7 @@ struct FTimedBuffer
 // 0x0020
 struct FWeightedProbabilityRange
 {
-	unsigned char                                      UnknownData_60RX[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_DZCU[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	uint32_t                                           Min;                                                       // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint32_t                                           Max;                                                       // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<float>                                      Weights;                                                   // 0x0010(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
@@ -145,7 +145,7 @@ struct FFixedStepInterpCurveVector2D
 	TArray<struct FFixedStepInterpCurvePointVector2D>  Points;                                                    // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	float                                              StepTime;                                                  // 0x0010(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               IsLooped;                                                  // 0x0014(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_UXSF[0x3];                                     // 0x0015(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_VRRW[0x3];                                     // 0x0015(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -172,7 +172,7 @@ struct FSpatialOffset
 {
 	float                                              OffsetValue;                                               // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<Maths_ESpatialOffsetMethod>            OffsetMethod;                                              // 0x0004(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_SVFM[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_1DT4[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

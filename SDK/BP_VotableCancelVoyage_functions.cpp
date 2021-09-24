@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.PlayShowTokenAnimation
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.PlayShowTokenAnimation
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*     Token                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UPrimitiveComponent*                         Token                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_VotableCancelVoyage_C::PlayShowTokenAnimation(class UPrimitiveComponent* Token)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.PlayShowTokenAnimation");
@@ -37,10 +39,12 @@ void ABP_VotableCancelVoyage_C::PlayShowTokenAnimation(class UPrimitiveComponent
 }
 
 
-// Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.Is Session Locked
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.Is Session Locked
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                           IsLocked                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               IsLocked                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_VotableCancelVoyage_C::Is_Session_Locked(bool* IsLocked)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.Is Session Locked");
@@ -58,10 +62,12 @@ void ABP_VotableCancelVoyage_C::Is_Session_Locked(bool* IsLocked)
 }
 
 
-// Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.GetObjectDisplayName
-// (HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.GetObjectDisplayName
+//		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FText                                       ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FText ABP_VotableCancelVoyage_C::GetObjectDisplayName()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.GetObjectDisplayName");
@@ -78,8 +84,11 @@ struct FText ABP_VotableCancelVoyage_C::GetObjectDisplayName()
 }
 
 
-// Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_VotableCancelVoyage_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.UserConstructionScript");
@@ -94,8 +103,10 @@ void ABP_VotableCancelVoyage_C::UserConstructionScript()
 }
 
 
-// Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_VotableCancelVoyage_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.ReceiveBeginPlay");
@@ -110,8 +121,10 @@ void ABP_VotableCancelVoyage_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.OnVoteAdded
-// (Event, Public, HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.OnVoteAdded
+//		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 void ABP_VotableCancelVoyage_C::OnVoteAdded()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.OnVoteAdded");
@@ -126,8 +139,10 @@ void ABP_VotableCancelVoyage_C::OnVoteAdded()
 }
 
 
-// Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.OnVoteRemoved
-// (Event, Public, HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.OnVoteRemoved
+//		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 void ABP_VotableCancelVoyage_C::OnVoteRemoved()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.OnVoteRemoved");
@@ -142,10 +157,12 @@ void ABP_VotableCancelVoyage_C::OnVoteRemoved()
 }
 
 
-// Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.ExecuteUbergraph_BP_VotableCancelVoyage
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.ExecuteUbergraph_BP_VotableCancelVoyage
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_VotableCancelVoyage_C::ExecuteUbergraph_BP_VotableCancelVoyage(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelVoyage.BP_VotableCancelVoyage_C.ExecuteUbergraph_BP_VotableCancelVoyage");

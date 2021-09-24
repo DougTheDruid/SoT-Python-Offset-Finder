@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -34,26 +34,6 @@ void FTrackingNoiseGenerator::AfterRead()
 void FTrackingNoiseGenerator::BeforeDelete()
 {
 	DELE_PTR_FULL(ParallelOffsetCurve);
-}
-
-void FShipTypeAIShipEncounterParams::AfterRead()
-{
-	READ_PTR_FULL(ShipSize, UClass);
-	READ_PTR_FULL(Params, UAIShipEncounterParamsDataAsset);
-}
-
-void FShipTypeAIShipEncounterParams::BeforeDelete()
-{
-	DELE_PTR_FULL(ShipSize);
-	DELE_PTR_FULL(Params);
-}
-
-void FAIShipEncounterParams::AfterRead()
-{
-}
-
-void FAIShipEncounterParams::BeforeDelete()
-{
 }
 
 void FShipMovementParams::AfterRead()
@@ -128,6 +108,18 @@ void FRelativeSpawnLocationGeneratorParams::AfterRead()
 
 void FRelativeSpawnLocationGeneratorParams::BeforeDelete()
 {
+}
+
+void FShipTypeAIShipEncounterParams::AfterRead()
+{
+	READ_PTR_FULL(ShipSize, UClass);
+	READ_PTR_FULL(Params, UAIShipEncounterParamsDataAsset);
+}
+
+void FShipTypeAIShipEncounterParams::BeforeDelete()
+{
+	DELE_PTR_FULL(ShipSize);
+	DELE_PTR_FULL(Params);
 }
 
 void FAIShipCaptainParams::AfterRead()
@@ -279,6 +271,14 @@ void FAIShipContextDescGenerationParams::AfterRead()
 }
 
 void FAIShipContextDescGenerationParams::BeforeDelete()
+{
+}
+
+void FAIShipEncounterParams::AfterRead()
+{
+}
+
+void FAIShipEncounterParams::BeforeDelete()
 {
 }
 
@@ -592,11 +592,13 @@ void UAIShipServiceDataAsset::BeforeDelete()
 	DELE_PTR_FULL(RewardMarkerParams);
 }
 
-// Function AIShips.AIShipDebugFunctionLibrary.RequestAIShipForCrew
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x03D1DE20
+//		Name   -> Function AIShips.AIShipDebugFunctionLibrary.RequestAIShipForCrew
+//		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGuid                   CrewId                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FGuid                                       CrewId                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UAIShipDebugFunctionLibrary::STATIC_RequestAIShipForCrew(class UObject* WorldContextObject, const struct FGuid& CrewId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AIShips.AIShipDebugFunctionLibrary.RequestAIShipForCrew");
@@ -614,12 +616,14 @@ void UAIShipDebugFunctionLibrary::STATIC_RequestAIShipForCrew(class UObject* Wor
 }
 
 
-// Function AIShips.AIShipDebugFunctionLibrary.GenerateAIShipBattleDesc
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03D1DCD0
+//		Name   -> Function AIShips.AIShipDebugFunctionLibrary.GenerateAIShipBattleDesc
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAIShipServiceDataAsset* ServiceParams                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAIShipEncounterBattleDesc ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAIShipServiceDataAsset*                     ServiceParams                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FAIShipEncounterBattleDesc                  ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FAIShipEncounterBattleDesc UAIShipDebugFunctionLibrary::STATIC_GenerateAIShipBattleDesc(class UObject* WorldContextObject, class UAIShipServiceDataAsset* ServiceParams)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AIShips.AIShipDebugFunctionLibrary.GenerateAIShipBattleDesc");
@@ -713,11 +717,13 @@ void UAIShipTelemetryComponent::BeforeDelete()
 
 }
 
-// Function AIShips.AthenaAIShipController.ApplyControllerParams
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03D1DC00
+//		Name   -> Function AIShips.AthenaAIShipController.ApplyControllerParams
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class UAthenaAIControllerParamsDataAsset* ParamsAsset                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APawn*                   InPawn                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAthenaAIControllerParamsDataAsset*          ParamsAsset                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class APawn*                                       InPawn                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void AAthenaAIShipController::ApplyControllerParams(class UAthenaAIControllerParamsDataAsset* ParamsAsset, class APawn* InPawn)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AIShips.AthenaAIShipController.ApplyControllerParams");
@@ -849,10 +855,12 @@ void UBTTask_SailShipToLocation::BeforeDelete()
 
 }
 
-// Function AIShips.CursedCrewCustomisationInterface.SetCursedCrewCustomisationProperties
-// (Native, Event, Public, HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x03D1DEE0
+//		Name   -> Function AIShips.CursedCrewCustomisationInterface.SetCursedCrewCustomisationProperties
+//		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FAIShipSailData         SailData                       (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FAIShipSailData                             SailData                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 void UCursedCrewCustomisationInterface::SetCursedCrewCustomisationProperties(const struct FAIShipSailData& SailData)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AIShips.CursedCrewCustomisationInterface.SetCursedCrewCustomisationProperties");

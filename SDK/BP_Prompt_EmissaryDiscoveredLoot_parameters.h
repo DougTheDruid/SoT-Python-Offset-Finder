@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Prompt_EmissaryDiscoveredLoot.BP_Prompt_EmissaryDiscoveredLoot_C.OnEmissaryDiscoveredLoot
 struct UBP_Prompt_EmissaryDiscoveredLoot_C_OnEmissaryDiscoveredLoot_Params
 {
-	struct FEmissaryDiscoveredLootNetworkEvent         NewParam;                                                  // (Parm)
+	struct FEmissaryDiscoveredLootNetworkEvent         NewParam;                                                  // 0x0000(0x0018)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryDiscoveredLoot.BP_Prompt_EmissaryDiscoveredLoot_C.EmissaryDiscoveredLoot
 struct UBP_Prompt_EmissaryDiscoveredLoot_C_EmissaryDiscoveredLoot_Params
 {
-	struct FEmissaryDiscoveredLootNetworkEvent         NewParam;                                                  // (Parm)
+	struct FEmissaryDiscoveredLootNetworkEvent         NewParam;                                                  // 0x0000(0x0018)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryDiscoveredLoot.BP_Prompt_EmissaryDiscoveredLoot_C.Evaluate
@@ -49,7 +49,7 @@ struct UBP_Prompt_EmissaryDiscoveredLoot_C_UnregisterOtherEvents_Implementable_P
 // Function BP_Prompt_EmissaryDiscoveredLoot.BP_Prompt_EmissaryDiscoveredLoot_C.ExecuteUbergraph_BP_Prompt_EmissaryDiscoveredLoot
 struct UBP_Prompt_EmissaryDiscoveredLoot_C_ExecuteUbergraph_BP_Prompt_EmissaryDiscoveredLoot_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

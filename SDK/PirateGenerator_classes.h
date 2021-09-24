@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -25,7 +25,7 @@ class UAnimationSwitchDataAsset : public UDataAsset
 {
 public:
 	float                                              Threshold;                                                 // 0x0028(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_BPP0[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_POAI[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FAnimationSwitchEntry>               Entries;                                                   // 0x0030(0x0010) (Edit, ZeroConstructor)
 
 
@@ -72,7 +72,7 @@ public:
 class USkeletonsDataAsset : public UDataAsset
 {
 public:
-	unsigned char                                      UnknownData_AZXB[0x50];                                    // 0x0028(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WWXT[0x50];                                    // 0x0028(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -94,7 +94,7 @@ class UCharacterMeshBakeSpecification : public UObject
 {
 public:
 	bool                                               StripTopLOD;                                               // 0x0028(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_Z13K[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_5B1Z[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class USkeletalMesh*                               CharacterMesh;                                             // 0x0030(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMesh*                               BaseMeshReferenceSkeleton;                                 // 0x0038(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletonsDataAsset*                         SourceSkeletons;                                           // 0x0040(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -343,9 +343,9 @@ public:
 class UTextureSwitch : public UTextureProxy
 {
 public:
-	unsigned char                                      UnknownData_VB0W[0x80];                                    // 0x0140(0x0080) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_DT3F[0x80];                                    // 0x0140(0x0080) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	bool                                               bDuplicated;                                               // 0x01C0(0x0001) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected)
-	unsigned char                                      UnknownData_HUMQ[0x7];                                     // 0x01C1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_09QU[0x7];                                     // 0x01C1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FTextureSwitchParameters                    DefaultParameters;                                         // 0x01C8(0x0058) (Edit, BlueprintVisible, BlueprintReadOnly)
 
 
@@ -370,7 +370,7 @@ public:
 	struct FName                                       HashSource;                                                // 0x0220(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              FallbackProbability;                                       // 0x0228(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       FallbackReferenceName;                                     // 0x022C(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_C32K[0x4];                                     // 0x0234(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MW8N[0x4];                                     // 0x0234(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FStringAssetReference                       FallbackTexture;                                           // 0x0238(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	TArray<struct FTextureSwitchSeedEntry>             Entries;                                                   // 0x0248(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 
@@ -521,7 +521,7 @@ public:
 class UWardrobeDataAsset : public UDataAsset
 {
 public:
-	unsigned char                                      UnknownData_MJXU[0xA0];                                    // 0x0028(0x00A0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9N48[0xA0];                                    // 0x0028(0x00A0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class UWardrobeExcludeDataAsset*>           ExcludeDataAssets;                                         // 0x00C8(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	TArray<struct FMeshPatchEntry>                     AssetMap;                                                  // 0x00D8(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 

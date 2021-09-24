@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.GetNumExternalHits
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.GetNumExternalHits
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            NumExternalHits                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                NumExternalHits                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_DamageZoneInterface_C::GetNumExternalHits(int* NumExternalHits)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.GetNumExternalHits");
@@ -39,8 +41,10 @@ void UBP_DamageZoneInterface_C::GetNumExternalHits(int* NumExternalHits)
 }
 
 
-// Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.ClearDecalFlags
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.ClearDecalFlags
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_DamageZoneInterface_C::ClearDecalFlags()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.ClearDecalFlags");
@@ -55,10 +59,12 @@ void UBP_DamageZoneInterface_C::ClearDecalFlags()
 }
 
 
-// Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.AddExternalHit
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.AddExternalHit
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHullDamageHit          Hit_Data                       (Parm)
+//		struct FHullDamageHit                              Hit_Data                                                   (Parm)
 void UBP_DamageZoneInterface_C::AddExternalHit(const struct FHullDamageHit& Hit_Data)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.AddExternalHit");

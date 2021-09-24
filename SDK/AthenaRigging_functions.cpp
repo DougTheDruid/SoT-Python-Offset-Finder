@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -154,10 +154,12 @@ void FRopeCatenaryLengthPair::BeforeDelete()
 {
 }
 
-// Function AthenaRigging.InstancedRopeComponent.SetUnderwater
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x038260E0
+//		Name   -> Function AthenaRigging.InstancedRopeComponent.SetUnderwater
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           Underwater                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Underwater                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UInstancedRopeComponent::SetUnderwater(bool Underwater)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.InstancedRopeComponent.SetUnderwater");
@@ -174,10 +176,12 @@ void UInstancedRopeComponent::SetUnderwater(bool Underwater)
 }
 
 
-// Function AthenaRigging.InstancedRopeComponent.SetRopes
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03825FB0
+//		Name   -> Function AthenaRigging.InstancedRopeComponent.SetRopes
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TArray<struct FInstancedRopeParams> InRopes                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<struct FInstancedRopeParams>                InRopes                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UInstancedRopeComponent::SetRopes(TArray<struct FInstancedRopeParams> InRopes)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.InstancedRopeComponent.SetRopes");
@@ -236,10 +240,12 @@ void ARiggingSystem::BeforeDelete()
 	DELE_PTR_FULL(InstancedRopes);
 }
 
-// Function AthenaRigging.RiggingSystemComponent.SetSocketLookupSource
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03826060
+//		Name   -> Function AthenaRigging.RiggingSystemComponent.SetSocketLookupSource
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  InSocketSource                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InSocketSource                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void URiggingSystemComponent::SetSocketLookupSource(class AActor* InSocketSource)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.RiggingSystemComponent.SetSocketLookupSource");
@@ -256,12 +262,14 @@ void URiggingSystemComponent::SetSocketLookupSource(class AActor* InSocketSource
 }
 
 
-// Function AthenaRigging.RiggingSystemComponent.ConvertLineToRopeIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03825D90
+//		Name   -> Function AthenaRigging.RiggingSystemComponent.ConvertLineToRopeIndex
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FName                   InLineGroupName                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            InLineOffset                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       InLineGroupName                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                InLineOffset                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 int URiggingSystemComponent::ConvertLineToRopeIndex(const struct FName& InLineGroupName, int InLineOffset)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.RiggingSystemComponent.ConvertLineToRopeIndex");
@@ -307,10 +315,12 @@ void URopeCatenaryRenderComponent::BeforeDelete()
 
 }
 
-// Function AthenaRigging.RopeInterface.SetRopeUVOffset
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x03825F30
+//		Name   -> Function AthenaRigging.RopeInterface.SetRopeUVOffset
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          InUVOffset                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              InUVOffset                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void URopeInterface::SetRopeUVOffset(float InUVOffset)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.RopeInterface.SetRopeUVOffset");
@@ -327,11 +337,13 @@ void URopeInterface::SetRopeUVOffset(float InUVOffset)
 }
 
 
-// Function AthenaRigging.RopeInterface.SetRopeEndpoints
-// (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x03825E50
+//		Name   -> Function AthenaRigging.RopeInterface.SetRopeEndpoints
+//		Flags  -> (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                 InWorldSpaceStart              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 InWorldSpaceEnd                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     InWorldSpaceStart                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     InWorldSpaceEnd                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void URopeInterface::SetRopeEndpoints(const struct FVector& InWorldSpaceStart, const struct FVector& InWorldSpaceEnd)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.RopeInterface.SetRopeEndpoints");

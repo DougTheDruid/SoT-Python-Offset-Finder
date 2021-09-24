@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -152,24 +152,6 @@ void FCustomAnimationMontageDefinitionEntry::BeforeDelete()
 {
 }
 
-void FDockableInfo::AfterRead()
-{
-	READ_PTR_FULL(SceneComponent, USceneComponent);
-}
-
-void FDockableInfo::BeforeDelete()
-{
-	DELE_PTR_FULL(SceneComponent);
-}
-
-void FDocker::AfterRead()
-{
-}
-
-void FDocker::BeforeDelete()
-{
-}
-
 void FActorVelocityData::AfterRead()
 {
 }
@@ -192,6 +174,16 @@ void FWeightedAnimationData::AfterRead()
 
 void FWeightedAnimationData::BeforeDelete()
 {
+}
+
+void FDockableInfo::AfterRead()
+{
+	READ_PTR_FULL(SceneComponent, USceneComponent);
+}
+
+void FDockableInfo::BeforeDelete()
+{
+	DELE_PTR_FULL(SceneComponent);
 }
 
 void FHitReactionAnimationData::AfterRead()
@@ -234,14 +226,6 @@ void FEventCosmeticItemSpawned::BeforeDelete()
 {
 	DELE_PTR_FULL(Owner);
 	DELE_PTR_FULL(CosmeticData);
-}
-
-void FEventDockableObjectDestroyed::AfterRead()
-{
-}
-
-void FEventDockableObjectDestroyed::BeforeDelete()
-{
 }
 
 void FEventAnimationHappyReact::AfterRead()
@@ -392,6 +376,14 @@ void FWeightedAnimationTimeoutSelector::BeforeDelete()
 {
 }
 
+void FDocker::AfterRead()
+{
+}
+
+void FDocker::BeforeDelete()
+{
+}
+
 void UCharacterAnimationInstance::AfterRead()
 {
 	UAnimInstance::AfterRead();
@@ -452,13 +444,15 @@ void UAnimationDataConsumerInterface::BeforeDelete()
 
 }
 
-// Function Animation.AnimationDataFunctionLib.UnwrapAnimDataEntryStruct
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA3EA0
+//		Name   -> Function Animation.AnimationDataFunctionLib.UnwrapAnimDataEntryStruct
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FAnimDataEntryStructWrapper Wrapper                        (ConstParm, Parm, OutParm, ReferenceParm)
-// class UScriptStruct*           DestinationStruct              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGenericStruct          Value                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FAnimDataEntryStructWrapper                 Wrapper                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		class UScriptStruct*                               DestinationStruct                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FGenericStruct                              Value                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UAnimationDataFunctionLib::STATIC_UnwrapAnimDataEntryStruct(const struct FAnimDataEntryStructWrapper& Wrapper, class UScriptStruct* DestinationStruct, struct FGenericStruct* Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.AnimationDataFunctionLib.UnwrapAnimDataEntryStruct");
@@ -481,11 +475,13 @@ bool UAnimationDataFunctionLib::STATIC_UnwrapAnimDataEntryStruct(const struct FA
 }
 
 
-// Function Animation.AnimationDataFunctionLib.MakeAnimationData
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA2D30
+//		Name   -> Function Animation.AnimationDataFunctionLib.MakeAnimationData
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UClass*                  Class                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class UAnimationData*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      Class                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UAnimationData*                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UAnimationData* UAnimationDataFunctionLib::STATIC_MakeAnimationData(class UClass* Class)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.AnimationDataFunctionLib.MakeAnimationData");
@@ -504,12 +500,14 @@ class UAnimationData* UAnimationDataFunctionLib::STATIC_MakeAnimationData(class 
 }
 
 
-// Function Animation.AnimationDataFunctionLib.GetAnimDataEntryStructAsStructWrapper
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA23A0
+//		Name   -> Function Animation.AnimationDataFunctionLib.GetAnimDataEntryStructAsStructWrapper
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UAnimationData*          AnimationDataObject            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UScriptStruct*           TheClass                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAnimDataEntryStructWrapper ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class UAnimationData*                              AnimationDataObject                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UScriptStruct*                               TheClass                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FAnimDataEntryStructWrapper                 ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FAnimDataEntryStructWrapper UAnimationDataFunctionLib::STATIC_GetAnimDataEntryStructAsStructWrapper(class UAnimationData* AnimationDataObject, class UScriptStruct* TheClass)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.AnimationDataFunctionLib.GetAnimDataEntryStructAsStructWrapper");
@@ -529,10 +527,12 @@ struct FAnimDataEntryStructWrapper UAnimationDataFunctionLib::STATIC_GetAnimData
 }
 
 
-// Function Animation.AnimationDataFunctionLib.CheckAnimDataClassTypeForDuplicateAnimDataEntryStructs
-// (Final, Native, Static, Public)
+// Function:
+//		Offset -> 0x02FA1FE0
+//		Name   -> Function Animation.AnimationDataFunctionLib.CheckAnimDataClassTypeForDuplicateAnimDataEntryStructs
+//		Flags  -> (Final, Native, Static, Public)
 // Parameters:
-// class UClass*                  InClass                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UClass*                                      InClass                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 void UAnimationDataFunctionLib::STATIC_CheckAnimDataClassTypeForDuplicateAnimDataEntryStructs(class UClass* InClass)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.AnimationDataFunctionLib.CheckAnimDataClassTypeForDuplicateAnimDataEntryStructs");
@@ -609,11 +609,13 @@ void UAnimationDataStore::BeforeDelete()
 
 }
 
-// Function Animation.AnimationDataStoreAsset.LookupAnimationData
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA2CA0
+//		Name   -> Function Animation.AnimationDataStoreAsset.LookupAnimationData
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UClass*                  AnimDataId                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class UAnimationData*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      AnimDataId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UAnimationData*                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UAnimationData* UAnimationDataStoreAsset::LookupAnimationData(class UClass* AnimDataId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.AnimationDataStoreAsset.LookupAnimationData");
@@ -632,11 +634,13 @@ class UAnimationData* UAnimationDataStoreAsset::LookupAnimationData(class UClass
 }
 
 
-// Function Animation.AnimationDataStoreAsset.GetAnimationDataClass
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA24B0
+//		Name   -> Function Animation.AnimationDataStoreAsset.GetAnimationDataClass
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FAnimationDataStoreAssetEntry Entry                          (Parm, OutParm, ReferenceParm)
-// class UClass*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		struct FAnimationDataStoreAssetEntry               Entry                                                      (Parm, OutParm, ReferenceParm)
+//		class UClass*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 class UClass* UAnimationDataStoreAsset::STATIC_GetAnimationDataClass(struct FAnimationDataStoreAssetEntry* Entry)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.AnimationDataStoreAsset.GetAnimationDataClass");
@@ -707,11 +711,13 @@ void UAnimationDataStoreComponent::BeforeDelete()
 	DELE_PTR_FULL(AnimationDataStoreWeakReferences);
 }
 
-// Function Animation.AnimationDataStoreInterface.GetAnimationDataForId
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x02FA2550
+//		Name   -> Function Animation.AnimationDataStoreInterface.GetAnimationDataForId
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UClass*                  AnimDataId                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class UAnimationData*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      AnimDataId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UAnimationData*                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UAnimationData* UAnimationDataStoreInterface::GetAnimationDataForId(class UClass* AnimDataId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.AnimationDataStoreInterface.GetAnimationDataForId");
@@ -1060,15 +1066,17 @@ void UCosmeticItemAnimationInterface::BeforeDelete()
 
 }
 
-// Function Animation.CosmeticItemAnimationComponent.SpawnCosmeticItem
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA3AE0
+//		Name   -> Function Animation.CosmeticItemAnimationComponent.SpawnCosmeticItem
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class USkeletalMeshComponent*  MeshComponent                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                  ObjectToSpawn                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<Athena_EWieldAnimationLocation> SpawnLocation                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCosmeticItemAnimationSetDataAsset* CosmeticData                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           SpawnHidden                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class USkeletalMeshComponent*                      MeshComponent                                              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      ObjectToSpawn                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Athena_EWieldAnimationLocation>        SpawnLocation                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCosmeticItemAnimationSetDataAsset*          CosmeticData                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               SpawnHidden                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UCosmeticItemAnimationComponent::SpawnCosmeticItem(class USkeletalMeshComponent* MeshComponent, class UClass* ObjectToSpawn, TEnumAsByte<Athena_EWieldAnimationLocation> SpawnLocation, class UCosmeticItemAnimationSetDataAsset* CosmeticData, bool SpawnHidden)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.CosmeticItemAnimationComponent.SpawnCosmeticItem");
@@ -1091,8 +1099,10 @@ bool UCosmeticItemAnimationComponent::SpawnCosmeticItem(class USkeletalMeshCompo
 }
 
 
-// Function Animation.CosmeticItemAnimationComponent.DestroyAllCosmeticItems
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA22B0
+//		Name   -> Function Animation.CosmeticItemAnimationComponent.DestroyAllCosmeticItems
+//		Flags  -> (Native, Public, BlueprintCallable)
 void UCosmeticItemAnimationComponent::DestroyAllCosmeticItems()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.CosmeticItemAnimationComponent.DestroyAllCosmeticItems");
@@ -1222,10 +1232,12 @@ void UCustomAnimationMontageInterface::BeforeDelete()
 
 }
 
-// Function Animation.CustomAnimationMontageComponent.OnRep_ReplicatedData
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x02FA2F30
+//		Name   -> Function Animation.CustomAnimationMontageComponent.OnRep_ReplicatedData
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// struct FCustomAnimationMontageComponentReplicatedData PriorData                      (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FCustomAnimationMontageComponentReplicatedData PriorData                                                  (ConstParm, Parm, OutParm, ReferenceParm)
 void UCustomAnimationMontageComponent::OnRep_ReplicatedData(const struct FCustomAnimationMontageComponentReplicatedData& PriorData)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.CustomAnimationMontageComponent.OnRep_ReplicatedData");
@@ -1292,229 +1304,6 @@ void UCustomAnimationMontageIdListingDataAsset::BeforeDelete()
 
 }
 
-// Function Animation.DockableInterface.HandleDestroy
-// (Native, Public)
-void UDockableInterface::HandleDestroy()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockableInterface.HandleDestroy");
-
-	UDockableInterface_HandleDestroy_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function Animation.DockableInterface.GetDockableInfo
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FDockableInfo           ReturnValue                    (Parm, OutParm, ReturnParm, ContainsInstancedReference)
-struct FDockableInfo UDockableInterface::GetDockableInfo()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockableInterface.GetDockableInfo");
-
-	UDockableInterface_GetDockableInfo_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-void UDockableInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UDockableInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-// Function Animation.DockerBlueprintFunctions.UpdateDock
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// struct FDocker                 Docker                         (Parm, OutParm, ReferenceParm)
-// float                          DeltaTime                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UDockerBlueprintFunctions::STATIC_UpdateDock(struct FDocker* Docker, float DeltaTime)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockerBlueprintFunctions.UpdateDock");
-
-	UDockerBlueprintFunctions_UpdateDock_Params params;
-	params.DeltaTime = DeltaTime;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-	if (Docker != nullptr)
-		*Docker = params.Docker;
-
-}
-
-
-// Function Animation.DockerBlueprintFunctions.StartDockingWithActor
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// struct FDocker                 Docker                         (Parm, OutParm, ReferenceParm)
-// class AActor*                  Owner                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                  Target                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          DockDuration                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          DelayAfterDocking              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UDockerBlueprintFunctions::STATIC_StartDockingWithActor(struct FDocker* Docker, class AActor* Owner, class AActor* Target, float DockDuration, float DelayAfterDocking)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockerBlueprintFunctions.StartDockingWithActor");
-
-	UDockerBlueprintFunctions_StartDockingWithActor_Params params;
-	params.Owner = Owner;
-	params.Target = Target;
-	params.DockDuration = DockDuration;
-	params.DelayAfterDocking = DelayAfterDocking;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-	if (Docker != nullptr)
-		*Docker = params.Docker;
-
-}
-
-
-// Function Animation.DockerBlueprintFunctions.IsFullyDocked
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
-// Parameters:
-// struct FDocker                 Docker                         (Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-bool UDockerBlueprintFunctions::STATIC_IsFullyDocked(struct FDocker* Docker)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockerBlueprintFunctions.IsFullyDocked");
-
-	UDockerBlueprintFunctions_IsFullyDocked_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-	if (Docker != nullptr)
-		*Docker = params.Docker;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function Animation.DockerBlueprintFunctions.IsDocking
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
-// Parameters:
-// struct FDocker                 Docker                         (Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-bool UDockerBlueprintFunctions::STATIC_IsDocking(struct FDocker* Docker)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockerBlueprintFunctions.IsDocking");
-
-	UDockerBlueprintFunctions_IsDocking_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-	if (Docker != nullptr)
-		*Docker = params.Docker;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function Animation.DockerBlueprintFunctions.GetTargetLocalOffset
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
-// Parameters:
-// struct FDocker                 Docker                         (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-struct FVector UDockerBlueprintFunctions::STATIC_GetTargetLocalOffset(const struct FDocker& Docker)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockerBlueprintFunctions.GetTargetLocalOffset");
-
-	UDockerBlueprintFunctions_GetTargetLocalOffset_Params params;
-	params.Docker = Docker;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function Animation.DockerBlueprintFunctions.EndDock
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// struct FDocker                 Docker                         (Parm, OutParm, ReferenceParm)
-void UDockerBlueprintFunctions::STATIC_EndDock(struct FDocker* Docker)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockerBlueprintFunctions.EndDock");
-
-	UDockerBlueprintFunctions_EndDock_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-	if (Docker != nullptr)
-		*Docker = params.Docker;
-
-}
-
-
-void UDockerBlueprintFunctions::AfterRead()
-{
-	UBlueprintFunctionLibrary::AfterRead();
-
-}
-
-void UDockerBlueprintFunctions::BeforeDelete()
-{
-	UBlueprintFunctionLibrary::BeforeDelete();
-
-}
-
-void UDockerInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UDockerInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
 void UDockingAnimationInterface::AfterRead()
 {
 	UInterface::AfterRead();
@@ -1522,6 +1311,18 @@ void UDockingAnimationInterface::AfterRead()
 }
 
 void UDockingAnimationInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UEmotePropDataInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UEmotePropDataInterface::BeforeDelete()
 {
 	UInterface::BeforeDelete();
 
@@ -1539,11 +1340,13 @@ void UIndexedPlayableMontagesInterface::BeforeDelete()
 
 }
 
-// Function Animation.LimbIKFunctionLibrary.SetTranslationStrength
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA39E0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetTranslationStrength
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// float                          InRotationStrength             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		float                                              InRotationStrength                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULimbIKFunctionLibrary::STATIC_SetTranslationStrength(struct FLimbIK* LimbIK, float InRotationStrength)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetTranslationStrength");
@@ -1563,11 +1366,13 @@ void ULimbIKFunctionLibrary::STATIC_SetTranslationStrength(struct FLimbIK* LimbI
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.SetTransform
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA3870
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetTransform
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// struct FTransform              InTransform                    (ConstParm, Parm, IsPlainOldData, NoDestructor)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		struct FTransform                                  InTransform                                                (ConstParm, Parm, IsPlainOldData, NoDestructor)
 void ULimbIKFunctionLibrary::STATIC_SetTransform(struct FLimbIK* LimbIK, const struct FTransform& InTransform)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetTransform");
@@ -1587,11 +1392,13 @@ void ULimbIKFunctionLibrary::STATIC_SetTransform(struct FLimbIK* LimbIK, const s
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.SetRotationStrength
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA3770
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetRotationStrength
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// float                          InRotationStrength             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		float                                              InRotationStrength                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULimbIKFunctionLibrary::STATIC_SetRotationStrength(struct FLimbIK* LimbIK, float InRotationStrength)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetRotationStrength");
@@ -1611,11 +1418,13 @@ void ULimbIKFunctionLibrary::STATIC_SetRotationStrength(struct FLimbIK* LimbIK, 
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.SetParentBone
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA3660
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetParentBone
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// struct FName                   Bone                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		struct FName                                       Bone                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULimbIKFunctionLibrary::STATIC_SetParentBone(struct FLimbIK* LimbIK, const struct FName& Bone)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetParentBone");
@@ -1635,11 +1444,13 @@ void ULimbIKFunctionLibrary::STATIC_SetParentBone(struct FLimbIK* LimbIK, const 
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.SetIKSpace
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA3560
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetIKSpace
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// TEnumAsByte<Animation_ELimbIKSpace> IKSpace                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		TEnumAsByte<Animation_ELimbIKSpace>                IKSpace                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULimbIKFunctionLibrary::STATIC_SetIKSpace(struct FLimbIK* LimbIK, TEnumAsByte<Animation_ELimbIKSpace> IKSpace)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetIKSpace");
@@ -1659,13 +1470,15 @@ void ULimbIKFunctionLibrary::STATIC_SetIKSpace(struct FLimbIK* LimbIK, TEnumAsBy
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.SetEnabled
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA33D0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetEnabled
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// bool                           Enabled                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<Animation_ELimbIKSpace> IKSpace                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FName                   ParentBone                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		bool                                               Enabled                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Animation_ELimbIKSpace>                IKSpace                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       ParentBone                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULimbIKFunctionLibrary::STATIC_SetEnabled(struct FLimbIK* LimbIK, bool Enabled, TEnumAsByte<Animation_ELimbIKSpace> IKSpace, const struct FName& ParentBone)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetEnabled");
@@ -1687,11 +1500,13 @@ void ULimbIKFunctionLibrary::STATIC_SetEnabled(struct FLimbIK* LimbIK, bool Enab
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.SetBlendOutSpeed
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA32D0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetBlendOutSpeed
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// float                          BlendOutSpeed                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		float                                              BlendOutSpeed                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULimbIKFunctionLibrary::STATIC_SetBlendOutSpeed(struct FLimbIK* LimbIK, float BlendOutSpeed)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetBlendOutSpeed");
@@ -1711,11 +1526,13 @@ void ULimbIKFunctionLibrary::STATIC_SetBlendOutSpeed(struct FLimbIK* LimbIK, flo
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.SetBlendInSpeed
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA31D0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetBlendInSpeed
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// float                          BlendInSpeed                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		float                                              BlendInSpeed                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULimbIKFunctionLibrary::STATIC_SetBlendInSpeed(struct FLimbIK* LimbIK, float BlendInSpeed)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetBlendInSpeed");
@@ -1735,11 +1552,13 @@ void ULimbIKFunctionLibrary::STATIC_SetBlendInSpeed(struct FLimbIK* LimbIK, floa
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.SetAnimationOverride
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA30D0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetAnimationOverride
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// bool                           AnimationOverride              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		bool                                               AnimationOverride                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ULimbIKFunctionLibrary::STATIC_SetAnimationOverride(struct FLimbIK* LimbIK, bool AnimationOverride)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetAnimationOverride");
@@ -1759,11 +1578,13 @@ void ULimbIKFunctionLibrary::STATIC_SetAnimationOverride(struct FLimbIK* LimbIK,
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.SetAlphaTarget
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA2FD0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.SetAlphaTarget
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// float                          AlphaTarget                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		float                                              AlphaTarget                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void ULimbIKFunctionLibrary::STATIC_SetAlphaTarget(struct FLimbIK* LimbIK, float AlphaTarget)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.SetAlphaTarget");
@@ -1783,11 +1604,13 @@ void ULimbIKFunctionLibrary::STATIC_SetAlphaTarget(struct FLimbIK* LimbIK, float
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.IsEnabled
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA2BE0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.IsEnabled
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool ULimbIKFunctionLibrary::STATIC_IsEnabled(struct FLimbIK* LimbIK)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.IsEnabled");
@@ -1808,11 +1631,13 @@ bool ULimbIKFunctionLibrary::STATIC_IsEnabled(struct FLimbIK* LimbIK)
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.GetTranslationStrength
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA2AA0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.GetTranslationStrength
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULimbIKFunctionLibrary::STATIC_GetTranslationStrength(struct FLimbIK* LimbIK)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.GetTranslationStrength");
@@ -1833,11 +1658,13 @@ float ULimbIKFunctionLibrary::STATIC_GetTranslationStrength(struct FLimbIK* Limb
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.GetTransform
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA29C0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.GetTransform
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// struct FTransform              ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		struct FTransform                                  ReturnValue                                                (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor)
 struct FTransform ULimbIKFunctionLibrary::STATIC_GetTransform(struct FLimbIK* LimbIK)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.GetTransform");
@@ -1858,11 +1685,13 @@ struct FTransform ULimbIKFunctionLibrary::STATIC_GetTransform(struct FLimbIK* Li
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.GetRotationStrength
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA2900
+//		Name   -> Function Animation.LimbIKFunctionLibrary.GetRotationStrength
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULimbIKFunctionLibrary::STATIC_GetRotationStrength(struct FLimbIK* LimbIK)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.GetRotationStrength");
@@ -1883,11 +1712,13 @@ float ULimbIKFunctionLibrary::STATIC_GetRotationStrength(struct FLimbIK* LimbIK)
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.GetParentBone
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA2830
+//		Name   -> Function Animation.LimbIKFunctionLibrary.GetParentBone
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// struct FName                   ReturnValue                    (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		struct FName                                       ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 struct FName ULimbIKFunctionLibrary::STATIC_GetParentBone(struct FLimbIK* LimbIK)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.GetParentBone");
@@ -1908,11 +1739,13 @@ struct FName ULimbIKFunctionLibrary::STATIC_GetParentBone(struct FLimbIK* LimbIK
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.GetIKSpace
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA2770
+//		Name   -> Function Animation.LimbIKFunctionLibrary.GetIKSpace
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// TEnumAsByte<Animation_ELimbIKSpace> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		TEnumAsByte<Animation_ELimbIKSpace>                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<Animation_ELimbIKSpace> ULimbIKFunctionLibrary::STATIC_GetIKSpace(struct FLimbIK* LimbIK)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.GetIKSpace");
@@ -1933,11 +1766,13 @@ TEnumAsByte<Animation_ELimbIKSpace> ULimbIKFunctionLibrary::STATIC_GetIKSpace(st
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.GetCurrentAlpha
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA26B0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.GetCurrentAlpha
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULimbIKFunctionLibrary::STATIC_GetCurrentAlpha(struct FLimbIK* LimbIK)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.GetCurrentAlpha");
@@ -1958,11 +1793,13 @@ float ULimbIKFunctionLibrary::STATIC_GetCurrentAlpha(struct FLimbIK* LimbIK)
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.GetAnimationOverride
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA25F0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.GetAnimationOverride
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool ULimbIKFunctionLibrary::STATIC_GetAnimationOverride(struct FLimbIK* LimbIK)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.GetAnimationOverride");
@@ -1983,11 +1820,13 @@ bool ULimbIKFunctionLibrary::STATIC_GetAnimationOverride(struct FLimbIK* LimbIK)
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.GetAlphaTarget
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA22E0
+//		Name   -> Function Animation.LimbIKFunctionLibrary.GetAlphaTarget
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FLimbIK                 LimbIK                         (Parm, OutParm, ReferenceParm)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FLimbIK                                     LimbIK                                                     (Parm, OutParm, ReferenceParm)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULimbIKFunctionLibrary::STATIC_GetAlphaTarget(struct FLimbIK* LimbIK)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.GetAlphaTarget");
@@ -2008,11 +1847,13 @@ float ULimbIKFunctionLibrary::STATIC_GetAlphaTarget(struct FLimbIK* LimbIK)
 }
 
 
-// Function Animation.LimbIKFunctionLibrary.ConvertBoolToAlpha
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA2050
+//		Name   -> Function Animation.LimbIKFunctionLibrary.ConvertBoolToAlpha
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// bool                           InBool                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               InBool                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULimbIKFunctionLibrary::STATIC_ConvertBoolToAlpha(bool InBool)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LimbIKFunctionLibrary.ConvertBoolToAlpha");
@@ -2055,13 +1896,15 @@ void ULoadableAnimationsInterface::BeforeDelete()
 
 }
 
-// Function Animation.LocomotionFunctionLib.UpdateControllerSpineRotation
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA4360
+//		Name   -> Function Animation.LocomotionFunctionLib.UpdateControllerSpineRotation
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FRotator                CharacterRotation              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          AngleSpeedMax                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          AngleSpeedMin                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FRotator                                    CharacterRotation                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              AngleSpeedMax                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              AngleSpeedMin                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULocomotionFunctionLib::STATIC_UpdateControllerSpineRotation(const struct FRotator& CharacterRotation, float AngleSpeedMax, float AngleSpeedMin)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LocomotionFunctionLib.UpdateControllerSpineRotation");
@@ -2082,17 +1925,19 @@ float ULocomotionFunctionLib::STATIC_UpdateControllerSpineRotation(const struct 
 }
 
 
-// Function Animation.LocomotionFunctionLib.UpdateCharacterSpeed
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA4130
+//		Name   -> Function Animation.LocomotionFunctionLib.UpdateCharacterSpeed
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FVector                 Velocity                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          CurrentMaxWalkSpeed            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          WantedMovementSpeed            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          BaseMaxWalkSpeed               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          SpeedBlendValue                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           IsSwimming                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          DeadZone                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FActorVelocityData      ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FVector                                     Velocity                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              CurrentMaxWalkSpeed                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              WantedMovementSpeed                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              BaseMaxWalkSpeed                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              SpeedBlendValue                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               IsSwimming                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              DeadZone                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FActorVelocityData                          ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FActorVelocityData ULocomotionFunctionLib::STATIC_UpdateCharacterSpeed(const struct FVector& Velocity, float CurrentMaxWalkSpeed, float WantedMovementSpeed, float BaseMaxWalkSpeed, float SpeedBlendValue, bool IsSwimming, float DeadZone)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LocomotionFunctionLib.UpdateCharacterSpeed");
@@ -2117,14 +1962,16 @@ struct FActorVelocityData ULocomotionFunctionLib::STATIC_UpdateCharacterSpeed(co
 }
 
 
-// Function Animation.LocomotionFunctionLib.UpdateCalculateRateAndCurrentYaw
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA3FD0
+//		Name   -> Function Animation.LocomotionFunctionLib.UpdateCalculateRateAndCurrentYaw
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FRotator                CharacterRotation              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          LargeRate                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          CurrentCharacterYaw            (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          DeltaSeconds                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FRotator                                    CharacterRotation                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              LargeRate                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              CurrentCharacterYaw                                        (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              DeltaSeconds                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float ULocomotionFunctionLib::STATIC_UpdateCalculateRateAndCurrentYaw(const struct FRotator& CharacterRotation, float LargeRate, float* CurrentCharacterYaw, float DeltaSeconds)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.LocomotionFunctionLib.UpdateCalculateRateAndCurrentYaw");
@@ -2172,8 +2019,10 @@ void UNetworkSyncedAnimationInstanceInterface::BeforeDelete()
 
 }
 
-// Function Animation.NetworkSyncedAnimationComponent.OnRep_PlayingAnimationIndex
-// (Final, Native, Protected)
+// Function:
+//		Offset -> 0x02FA2F10
+//		Name   -> Function Animation.NetworkSyncedAnimationComponent.OnRep_PlayingAnimationIndex
+//		Flags  -> (Final, Native, Protected)
 void UNetworkSyncedAnimationComponent::OnRep_PlayingAnimationIndex()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.NetworkSyncedAnimationComponent.OnRep_PlayingAnimationIndex");
@@ -2189,8 +2038,10 @@ void UNetworkSyncedAnimationComponent::OnRep_PlayingAnimationIndex()
 }
 
 
-// Function Animation.NetworkSyncedAnimationComponent.OnRep_AnimationProgression
-// (Final, Native, Protected)
+// Function:
+//		Offset -> 0x02FA2EF0
+//		Name   -> Function Animation.NetworkSyncedAnimationComponent.OnRep_AnimationProgression
+//		Flags  -> (Final, Native, Protected)
 void UNetworkSyncedAnimationComponent::OnRep_AnimationProgression()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.NetworkSyncedAnimationComponent.OnRep_AnimationProgression");
@@ -2268,17 +2119,19 @@ void UTransformBlendCurveComponent::BeforeDelete()
 
 }
 
-// Function Animation.TurningFunctionLib.TurningUpdate
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x02FA3C70
+//		Name   -> Function Animation.TurningFunctionLib.TurningUpdate
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// float                          DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           CharacterMoving                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           DeadZone                       (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          TurnRate                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          DelayedCounter                 (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          CounterMax                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           TurningLeft                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		float                                              DeltaSeconds                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               CharacterMoving                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               DeadZone                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              TurnRate                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              DelayedCounter                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              CounterMax                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               TurningLeft                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UTurningFunctionLib::STATIC_TurningUpdate(float DeltaSeconds, bool CharacterMoving, bool* DeadZone, float TurnRate, float* DelayedCounter, float CounterMax, bool* TurningLeft)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.TurningFunctionLib.TurningUpdate");
@@ -2319,10 +2172,12 @@ void UTurningFunctionLib::BeforeDelete()
 
 }
 
-// Function Animation.WaitForAnimationStateEntryProxy.OnEnteredState
-// (Final, Native, Public)
+// Function:
+//		Offset -> 0x02FA2DF0
+//		Name   -> Function Animation.WaitForAnimationStateEntryProxy.OnEnteredState
+//		Flags  -> (Final, Native, Public)
 // Parameters:
-// struct FName                   path                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       path                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaitForAnimationStateEntryProxy::OnEnteredState(const struct FName& path)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.WaitForAnimationStateEntryProxy.OnEnteredState");
@@ -2339,8 +2194,10 @@ void UWaitForAnimationStateEntryProxy::OnEnteredState(const struct FName& path)
 }
 
 
-// Function Animation.WaitForAnimationStateEntryProxy.OnAnimationUpdated
-// (Final, Native, Public)
+// Function:
+//		Offset -> 0x02FA2DB0
+//		Name   -> Function Animation.WaitForAnimationStateEntryProxy.OnAnimationUpdated
+//		Flags  -> (Final, Native, Public)
 void UWaitForAnimationStateEntryProxy::OnAnimationUpdated()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.WaitForAnimationStateEntryProxy.OnAnimationUpdated");
@@ -2356,12 +2213,14 @@ void UWaitForAnimationStateEntryProxy::OnAnimationUpdated()
 }
 
 
-// Function Animation.WaitForAnimationStateEntryProxy.CreateProxy
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA2110
+//		Name   -> Function Animation.WaitForAnimationStateEntryProxy.CreateProxy
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UAnimInstance*           AnimInstance                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FName                   TargetPath                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWaitForAnimationStateEntryProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAnimInstance*                               AnimInstance                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       TargetPath                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWaitForAnimationStateEntryProxy*            ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UWaitForAnimationStateEntryProxy* UWaitForAnimationStateEntryProxy::STATIC_CreateProxy(class UAnimInstance* AnimInstance, const struct FName& TargetPath)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.WaitForAnimationStateEntryProxy.CreateProxy");
@@ -2393,10 +2252,12 @@ void UWaitForAnimationStateEntryProxy::BeforeDelete()
 
 }
 
-// Function Animation.WaitForAnimationStateExitProxy.OnExitState
-// (Final, Native, Public)
+// Function:
+//		Offset -> 0x02FA2E70
+//		Name   -> Function Animation.WaitForAnimationStateExitProxy.OnExitState
+//		Flags  -> (Final, Native, Public)
 // Parameters:
-// struct FName                   path                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       path                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaitForAnimationStateExitProxy::OnExitState(const struct FName& path)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.WaitForAnimationStateExitProxy.OnExitState");
@@ -2413,8 +2274,10 @@ void UWaitForAnimationStateExitProxy::OnExitState(const struct FName& path)
 }
 
 
-// Function Animation.WaitForAnimationStateExitProxy.OnAnimationUpdated
-// (Final, Native, Public)
+// Function:
+//		Offset -> 0x02FA2DD0
+//		Name   -> Function Animation.WaitForAnimationStateExitProxy.OnAnimationUpdated
+//		Flags  -> (Final, Native, Public)
 void UWaitForAnimationStateExitProxy::OnAnimationUpdated()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.WaitForAnimationStateExitProxy.OnAnimationUpdated");
@@ -2430,12 +2293,14 @@ void UWaitForAnimationStateExitProxy::OnAnimationUpdated()
 }
 
 
-// Function Animation.WaitForAnimationStateExitProxy.CreateProxy
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA21E0
+//		Name   -> Function Animation.WaitForAnimationStateExitProxy.CreateProxy
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UAnimInstance*           AnimInstance                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FName                   TargetPath                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWaitForAnimationStateExitProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAnimInstance*                               AnimInstance                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       TargetPath                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWaitForAnimationStateExitProxy*             ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UWaitForAnimationStateExitProxy* UWaitForAnimationStateExitProxy::STATIC_CreateProxy(class UAnimInstance* AnimInstance, const struct FName& TargetPath)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.WaitForAnimationStateExitProxy.CreateProxy");
@@ -2481,10 +2346,12 @@ void UWeightedAnimationLoadOnDemandDataAsset::BeforeDelete()
 	DELE_PTR_FULL(FallBackAnimation);
 }
 
-// Function Animation.WeightedAnimSequenceLoadOnDemand.Initialise
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA2B60
+//		Name   -> Function Animation.WeightedAnimSequenceLoadOnDemand.Initialise
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UWeightedAnimationLoadOnDemandDataAsset* InAnimationData                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWeightedAnimationLoadOnDemandDataAsset*     InAnimationData                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWeightedAnimSequenceLoadOnDemand::Initialise(class UWeightedAnimationLoadOnDemandDataAsset* InAnimationData)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.WeightedAnimSequenceLoadOnDemand.Initialise");
@@ -2501,10 +2368,12 @@ void UWeightedAnimSequenceLoadOnDemand::Initialise(class UWeightedAnimationLoadO
 }
 
 
-// Function Animation.WeightedAnimSequenceLoadOnDemand.CreateNewWeightedAnimSequenceLoadOnDemand
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02FA20E0
+//		Name   -> Function Animation.WeightedAnimSequenceLoadOnDemand.CreateNewWeightedAnimSequenceLoadOnDemand
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWeightedAnimSequenceLoadOnDemand* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UWeightedAnimSequenceLoadOnDemand*           ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UWeightedAnimSequenceLoadOnDemand* UWeightedAnimSequenceLoadOnDemand::STATIC_CreateNewWeightedAnimSequenceLoadOnDemand()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.WeightedAnimSequenceLoadOnDemand.CreateNewWeightedAnimSequenceLoadOnDemand");
@@ -2534,6 +2403,60 @@ void UWeightedAnimSequenceLoadOnDemand::BeforeDelete()
 	UObject::BeforeDelete();
 
 	DELE_PTR_FULL(FallBackAnimation);
+}
+
+// Function:
+//		Offset -> 0x0330A6A0
+//		Name   -> Function Animation.DockableInterface.HandleDestroy
+//		Flags  -> (Native, Public)
+void UDockableInterface::HandleDestroy()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockableInterface.HandleDestroy");
+
+	UDockableInterface_HandleDestroy_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x0330A5A0
+//		Name   -> Function Animation.DockableInterface.GetDockableInfo
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+//		struct FDockableInfo                               ReturnValue                                                (Parm, OutParm, ReturnParm, ContainsInstancedReference)
+struct FDockableInfo UDockableInterface::GetDockableInfo()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Animation.DockableInterface.GetDockableInfo");
+
+	UDockableInterface_GetDockableInfo_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+void UDockableInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UDockableInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
 }
 
 }

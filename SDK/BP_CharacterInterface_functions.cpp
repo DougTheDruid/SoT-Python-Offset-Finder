@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,12 +18,14 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Stretch
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Stretch
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          ArmStretch                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          SpineStretch                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          LegStretch                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              ArmStretch                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              SpineStretch                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              LegStretch                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CharacterInterface_C::IK_Limb_Stretch(float ArmStretch, float SpineStretch, float LegStretch)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Stretch");
@@ -41,12 +43,14 @@ void UBP_CharacterInterface_C::IK_Limb_Stretch(float ArmStretch, float SpineStre
 }
 
 
-// Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Active
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Active
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Active                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<Animation_ELimbIKSpace> CoordinateSpace                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Active                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Animation_ELimbIKSpace>                CoordinateSpace                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CharacterInterface_C::IK_Limb_Active(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, bool Active, TEnumAsByte<Animation_ELimbIKSpace> CoordinateSpace)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Active");
@@ -64,12 +68,14 @@ void UBP_CharacterInterface_C::IK_Limb_Active(TEnumAsByte<EIKLimbName_EIKLimbNam
 }
 
 
-// Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Update Strength
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Update Strength
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          LocationStrength               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          RotationStrength               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              LocationStrength                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              RotationStrength                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CharacterInterface_C::IK_Limb_Update_Strength(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, float LocationStrength, float RotationStrength)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Update Strength");
@@ -87,12 +93,14 @@ void UBP_CharacterInterface_C::IK_Limb_Update_Strength(TEnumAsByte<EIKLimbName_E
 }
 
 
-// Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Blend Timing
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Blend Timing
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          BlendIn                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          BlendOut                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              BlendIn                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              BlendOut                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CharacterInterface_C::IK_Limb_Blend_Timing(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, float BlendIn, float BlendOut)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Blend Timing");
@@ -110,11 +118,13 @@ void UBP_CharacterInterface_C::IK_Limb_Blend_Timing(TEnumAsByte<EIKLimbName_EIKL
 }
 
 
-// Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Update Transform
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Update Transform
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTransform              TransformUpdate                (Parm, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  TransformUpdate                                            (Parm, IsPlainOldData, NoDestructor)
 void UBP_CharacterInterface_C::IK_Limb_Update_Transform(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, const struct FTransform& TransformUpdate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CharacterInterface.BP_CharacterInterface_C.IK Limb Update Transform");
@@ -131,13 +141,15 @@ void UBP_CharacterInterface_C::IK_Limb_Update_Transform(TEnumAsByte<EIKLimbName_
 }
 
 
-// Function BP_CharacterInterface.BP_CharacterInterface_C.CapstanForce
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CharacterInterface.BP_CharacterInterface_C.CapstanForce
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          IndividualForce                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTransform              LH_IK                          (Parm, IsPlainOldData, NoDestructor)
-// struct FTransform              RH_IK                          (Parm, IsPlainOldData, NoDestructor)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              IndividualForce                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  LH_IK                                                      (Parm, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  RH_IK                                                      (Parm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CharacterInterface_C::CapstanForce(float IndividualForce, const struct FTransform& LH_IK, const struct FTransform& RH_IK, class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CharacterInterface.BP_CharacterInterface_C.CapstanForce");
@@ -156,10 +168,12 @@ void UBP_CharacterInterface_C::CapstanForce(float IndividualForce, const struct 
 }
 
 
-// Function BP_CharacterInterface.BP_CharacterInterface_C.DockingInterface
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CharacterInterface.BP_CharacterInterface_C.DockingInterface
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FBP_Docking             Docking                        (Parm)
+//		struct FBP_Docking                                 Docking                                                    (Parm)
 void UBP_CharacterInterface_C::DockingInterface(const struct FBP_Docking& Docking)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CharacterInterface.BP_CharacterInterface_C.DockingInterface");
@@ -175,10 +189,12 @@ void UBP_CharacterInterface_C::DockingInterface(const struct FBP_Docking& Dockin
 }
 
 
-// Function BP_CharacterInterface.BP_CharacterInterface_C.CapstanRotationSpeed
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CharacterInterface.BP_CharacterInterface_C.CapstanRotationSpeed
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          RotationSpeed                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              RotationSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CharacterInterface_C::CapstanRotationSpeed(float RotationSpeed)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CharacterInterface.BP_CharacterInterface_C.CapstanRotationSpeed");
@@ -194,10 +210,12 @@ void UBP_CharacterInterface_C::CapstanRotationSpeed(float RotationSpeed)
 }
 
 
-// Function BP_CharacterInterface.BP_CharacterInterface_C.Update Athena Character
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_CharacterInterface.BP_CharacterInterface_C.Update Athena Character
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AAthenaCharacter*        AthenaCharacter                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AAthenaCharacter*                            AthenaCharacter                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_CharacterInterface_C::Update_Athena_Character(class AAthenaCharacter* AthenaCharacter)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CharacterInterface.BP_CharacterInterface_C.Update Athena Character");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -32,7 +32,7 @@ struct UBP_Prompt_MaidenVoyage_RowboatTutorial_C_OnLeaveRowboatFunc_Params
 // Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnSitInRowboatFunc
 struct UBP_Prompt_MaidenVoyage_RowboatTutorial_C_OnSitInRowboatFunc_Params
 {
-	struct FEventPlayerTakenControlOfControllable      EventPlayerTakenControlOfControllable;                     // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventPlayerTakenControlOfControllable      EventPlayerTakenControlOfControllable;                     // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.ResetState
@@ -58,25 +58,25 @@ struct UBP_Prompt_MaidenVoyage_RowboatTutorial_C_UnregisterOtherEvents_Implement
 // Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnSitInRowboat
 struct UBP_Prompt_MaidenVoyage_RowboatTutorial_C_OnSitInRowboat_Params
 {
-	struct FEventPlayerTakenControlOfControllable      Event;                                                     // (Parm)
+	struct FEventPlayerTakenControlOfControllable      Event;                                                     // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnLeaveRowboat
 struct UBP_Prompt_MaidenVoyage_RowboatTutorial_C_OnLeaveRowboat_Params
 {
-	struct FEventPlayerReliquishedControlOfControllable Event;                                                     // (Parm)
+	struct FEventPlayerReliquishedControlOfControllable Event;                                                     // 0x0000(0x0008)  (Parm)
 };
 
 // Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnStrokeEnded
 struct UBP_Prompt_MaidenVoyage_RowboatTutorial_C_OnStrokeEnded_Params
 {
-	struct FEventOarStrokeEnded                        Event;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FEventOarStrokeEnded                        Event;                                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.ExecuteUbergraph_BP_Prompt_MaidenVoyage_RowboatTutorial
 struct UBP_Prompt_MaidenVoyage_RowboatTutorial_C_ExecuteUbergraph_BP_Prompt_MaidenVoyage_RowboatTutorial_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

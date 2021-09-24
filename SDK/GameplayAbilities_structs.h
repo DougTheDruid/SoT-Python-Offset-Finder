@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -299,7 +299,7 @@ enum class GameplayAbilities_EGameplayCuePayloadType : uint8_t
 // 0x0020
 struct FGameplayEffectContextHandle
 {
-	unsigned char                                      UnknownData_RO82[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AH0I[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -327,7 +327,7 @@ struct FGameplayCueParameters
 // 0x0010
 struct FGameplayAbilityTargetDataHandle
 {
-	unsigned char                                      UnknownData_UWAO[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_X6Z6[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -338,7 +338,7 @@ struct FGameplayAbilityTargetDataHandle
 // 0x0020
 struct FGameplayEffectSpecHandle
 {
-	unsigned char                                      UnknownData_3B3T[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_CCYG[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -349,13 +349,13 @@ struct FGameplayEffectSpecHandle
 // 0x0028
 struct FGameplayTargetDataFilter
 {
-	unsigned char                                      UnknownData_EGUR[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_TJ6C[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class AActor*                                      SelfActor;                                                 // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<GameplayAbilities_ETargetDataFilterSelf> SelfFilter;                                                // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_20LZ[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PCU1[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      RequiredActorClass;                                        // 0x0018(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, UObjectWrapper, HasGetValueTypeHash)
 	bool                                               bReverseFilter;                                            // 0x0020(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	unsigned char                                      UnknownData_03OL[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SFOV[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -366,7 +366,7 @@ struct FGameplayTargetDataFilter
 // 0x0018
 struct FGameplayTargetDataFilterHandle
 {
-	unsigned char                                      UnknownData_GJ8T[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BRYL[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -399,9 +399,9 @@ struct FActiveGameplayEffectHandle
 // 0x0070
 struct FGameplayAbilityTargetingLocationInfo
 {
-	unsigned char                                      UnknownData_QKW9[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_J05Q[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TEnumAsByte<GameplayAbilities_EGameplayAbilityTargetingLocationType> LocationType;                                              // 0x0010(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_1NYW[0xF];                                     // 0x0011(0x000F) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_Z158[0xF];                                     // 0x0011(0x000F) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FTransform                                  LiteralTransform;                                          // 0x0020(0x0030) (BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	class AActor*                                      SourceActor;                                               // 0x0050(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UMeshComponent*                              SourceComponent;                                           // 0x0058(0x0008) (BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -419,26 +419,6 @@ struct FGameplayTagRequirements
 {
 	struct FGameplayTagContainer                       RequireTags;                                               // 0x0000(0x0028) (Edit, BlueprintVisible)
 	struct FGameplayTagContainer                       IgnoreTags;                                                // 0x0028(0x0028) (Edit, BlueprintVisible)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayEventData
-// 0x00A0
-struct FGameplayEventData
-{
-	struct FGameplayTag                                EventTag;                                                  // 0x0000(0x0008) (Edit, BlueprintVisible)
-	class AActor*                                      Instigator;                                                // 0x0008(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                      Target;                                                    // 0x0010(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                     OptionalObject;                                            // 0x0018(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                     OptionalObject2;                                           // 0x0020(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle                ContextHandle;                                             // 0x0028(0x0020) (Edit, BlueprintVisible)
-	struct FGameplayTagContainer                       InstigatorTags;                                            // 0x0048(0x0028) (Edit, BlueprintVisible)
-	struct FGameplayTagContainer                       TargetTags;                                                // 0x0070(0x0028) (Edit, BlueprintVisible)
-	float                                              EventMagnitude;                                            // 0x0098(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_NT2P[0x4];                                     // 0x009C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -475,10 +455,10 @@ struct FGameplayAbilitySpecDef
 	int                                                Level;                                                     // 0x0008(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	int                                                InputID;                                                   // 0x000C(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<GameplayAbilities_EGameplayEffectGrantedAbilityRemovePolicy> RemovalPolicy;                                             // 0x0010(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_KPAV[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_5T0K[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UObject*                                     SourceObject;                                              // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilitySpecHandle                  AssignedHandle;                                            // 0x0020(0x0004)
-	unsigned char                                      UnknownData_FNJK[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_TJ0Z[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -519,7 +499,7 @@ struct FGameplayEffectAttributeCaptureDefinition
 	struct FGameplayAttribute                          AttributeToCapture;                                        // 0x0000(0x0008) (Edit, DisableEditOnInstance)
 	TEnumAsByte<GameplayAbilities_EGameplayEffectAttributeCaptureSource> AttributeSource;                                           // 0x0008(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               bSnapshot;                                                 // 0x0009(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_5F8E[0x6];                                     // 0x000A(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_L278[0x6];                                     // 0x000A(0x0006) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -531,9 +511,9 @@ struct FGameplayEffectAttributeCaptureDefinition
 struct FScalableFloat
 {
 	float                                              Value;                                                     // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_JUAU[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_P8UK[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FCurveTableRowHandle                        Curve;                                                     // 0x0008(0x0010) (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_AF0X[0x8];                                     // 0x0018(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_G27M[0x8];                                     // 0x0018(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -550,7 +530,7 @@ struct FAttributeBasedFloat
 	struct FGameplayEffectAttributeCaptureDefinition   BackingAttribute;                                          // 0x0060(0x0010) (Edit, DisableEditOnInstance)
 	struct FCurveTableRowHandle                        AttributeCurve;                                            // 0x0070(0x0010) (Edit, DisableEditOnInstance)
 	TEnumAsByte<GameplayAbilities_EAttributeBasedFloatCalculationType> AttributeCalculationType;                                  // 0x0080(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_AJVA[0x7];                                     // 0x0081(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_F6WA[0x7];                                     // 0x0081(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGameplayTagContainer                       SourceTagFilter;                                           // 0x0088(0x0028) (Edit, DisableEditOnInstance)
 	struct FGameplayTagContainer                       TargetTagFilter;                                           // 0x00B0(0x0028) (Edit, DisableEditOnInstance)
 
@@ -578,7 +558,7 @@ struct FCustomCalculationBasedFloat
 struct FGameplayEffectModifierMagnitude
 {
 	TEnumAsByte<GameplayAbilities_EGameplayEffectMagnitudeCalculation> MagnitudeCalculationType;                                  // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_PAVW[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_GQH9[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FScalableFloat                              ScalableFloatMagnitude;                                    // 0x0008(0x0020) (Edit, DisableEditOnInstance, Protected)
 	struct FAttributeBasedFloat                        AttributeBasedMagnitude;                                   // 0x0028(0x00D8) (Edit, DisableEditOnInstance, Protected)
 	struct FCustomCalculationBasedFloat                CustomMagnitude;                                           // 0x0100(0x0068) (Edit, DisableEditOnInstance, Protected)
@@ -595,7 +575,7 @@ struct FGameplayEffectExecutionScopedModifierInfo
 {
 	struct FGameplayEffectAttributeCaptureDefinition   CapturedAttribute;                                         // 0x0000(0x0010) (Edit, DisableEditOnInstance, EditConst)
 	TEnumAsByte<GameplayAbilities_EGameplayModOp>      ModifierOp;                                                // 0x0010(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_50GA[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_WNG7[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGameplayEffectModifierMagnitude            ModifierMagnitude;                                         // 0x0018(0x0170) (Edit, DisableEditOnInstance)
 	struct FGameplayTagRequirements                    SourceTags;                                                // 0x0188(0x0050) (Edit, DisableEditOnInstance)
 	struct FGameplayTagRequirements                    TargetTags;                                                // 0x01D8(0x0050) (Edit, DisableEditOnInstance)
@@ -625,7 +605,7 @@ struct FGameplayModifierInfo
 {
 	struct FGameplayAttribute                          Attribute;                                                 // 0x0000(0x0008) (Edit, DisableEditOnInstance)
 	TEnumAsByte<GameplayAbilities_EGameplayModOp>      ModifierOp;                                                // 0x0008(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_667Z[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_Y8VA[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FScalableFloat                              Magnitude;                                                 // 0x0010(0x0020)
 	struct FGameplayEffectModifierMagnitude            ModifierMagnitude;                                         // 0x0030(0x0170) (Edit, DisableEditOnInstance)
 	struct FGameplayTagRequirements                    SourceTags;                                                // 0x01A0(0x0050) (Edit, DisableEditOnInstance)
@@ -642,11 +622,24 @@ struct FPredictionKey
 {
 	int16_t                                            Current;                                                   // 0x0000(0x0002) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int16_t                                            Base;                                                      // 0x0002(0x0002) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_XWHS[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_YYB0[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UPackageMap*                                 PredictiveConnection;                                      // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	bool                                               bIsStale;                                                  // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor)
 	bool                                               bIsServerInitiated;                                        // 0x0011(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_0O5V[0x6];                                     // 0x0012(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_M01M[0x6];                                     // 0x0012(0x0006) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.AbilityTriggerData
+// 0x000C
+struct FAbilityTriggerData
+{
+	struct FGameplayTag                                TriggerTag;                                                // 0x0000(0x0008) (Edit)
+	TEnumAsByte<GameplayAbilities_EGameplayAbilityTriggerSource> TriggerSource;                                             // 0x0008(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_680V[0x3];                                     // 0x0009(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -657,7 +650,7 @@ struct FPredictionKey
 // 0x0038
 struct FGameplayAbilityActorInfo
 {
-	unsigned char                                      UnknownData_SGNL[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_TT1O[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TWeakObjectPtr<class AActor>                       OwnerActor;                                                // 0x0008(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
 	TWeakObjectPtr<class AActor>                       AvatarActor;                                               // 0x0010(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
 	TWeakObjectPtr<class APlayerController>            PlayerController;                                          // 0x0018(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
@@ -699,7 +692,7 @@ struct FGameplayEffectModifiedAttribute
 {
 	struct FGameplayAttribute                          Attribute;                                                 // 0x0000(0x0008)
 	float                                              TotalMagnitude;                                            // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_1WSB[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5HKI[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -716,310 +709,7 @@ struct FGameplayEffectSpecForRPC
 	struct FGameplayTagContainer                       AggregatedSourceTags;                                      // 0x0038(0x0028)
 	struct FGameplayTagContainer                       AggregatedTargetTags;                                      // 0x0060(0x0028)
 	float                                              Level;                                                     // 0x0088(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_XQDQ[0x4];                                     // 0x008C(0x0004) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.ActiveGameplayCue
-// 0x0028 (0x0030 - 0x0008)
-struct FActiveGameplayCue : public FFastArraySerializerItem
-{
-	struct FGameplayTag                                GameplayCueTag;                                            // 0x0008(0x0008)
-	struct FPredictionKey                              PredictionKey;                                             // 0x0010(0x0018)
-	bool                                               bPredictivelyRemoved;                                      // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor)
-	unsigned char                                      UnknownData_5FR8[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.ActiveGameplayCueContainer
-// 0x0018 (0x00C0 - 0x00A8)
-struct FActiveGameplayCueContainer : public FFastArraySerializer
-{
-	TArray<struct FActiveGameplayCue>                  GameplayCues;                                              // 0x00A8(0x0010) (ZeroConstructor)
-	class UAbilitySystemComponent*                     Owner;                                                     // 0x00B8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.AbilityTriggerData
-// 0x000C
-struct FAbilityTriggerData
-{
-	struct FGameplayTag                                TriggerTag;                                                // 0x0000(0x0008) (Edit)
-	TEnumAsByte<GameplayAbilities_EGameplayAbilityTriggerSource> TriggerSource;                                             // 0x0008(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_Z44Z[0x3];                                     // 0x0009(0x0003) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayAbilityActivationInfo
-// 0x0020
-struct FGameplayAbilityActivationInfo
-{
-	TEnumAsByte<GameplayAbilities_EGameplayAbilityActivationMode> ActivationMode;                                            // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               bCanBeEndedByOtherInstance;                                // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_R19N[0x6];                                     // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FPredictionKey                              PredictionKeyWhenActivated;                                // 0x0008(0x0018)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayAbilitySpec
-// 0x0070 (0x0078 - 0x0008)
-struct FGameplayAbilitySpec : public FFastArraySerializerItem
-{
-	struct FGameplayAbilitySpecHandle                  Handle;                                                    // 0x0008(0x0004)
-	unsigned char                                      UnknownData_ZVUZ[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UGameplayAbility*                            Ability;                                                   // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                Level;                                                     // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                InputID;                                                   // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                     SourceObject;                                              // 0x0020(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               InputPressed;                                              // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor)
-	unsigned char                                      ActiveCount;                                               // 0x0029(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	bool                                               RemoveAfterActivation;                                     // 0x002A(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor)
-	unsigned char                                      UnknownData_CJQ5[0x5];                                     // 0x002B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FGameplayAbilityActivationInfo              ActivationInfo;                                            // 0x0030(0x0020) (RepSkip)
-	TArray<class UGameplayAbility*>                    NonReplicatedInstances;                                    // 0x0050(0x0010) (ZeroConstructor, RepSkip)
-	TArray<class UGameplayAbility*>                    ReplicatedInstances;                                       // 0x0060(0x0010) (ZeroConstructor)
-	struct FActiveGameplayEffectHandle                 GameplayEffectHandle;                                      // 0x0070(0x0004) (RepSkip)
-	bool                                               PendingRemove;                                             // 0x0074(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor)
-	unsigned char                                      UnknownData_FQEA[0x3];                                     // 0x0075(0x0003) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayAbilitySpecContainer
-// 0x0018 (0x00C0 - 0x00A8)
-struct FGameplayAbilitySpecContainer : public FFastArraySerializer
-{
-	TArray<struct FGameplayAbilitySpec>                Items;                                                     // 0x00A8(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData_X71X[0x8];                                     // 0x00B8(0x0008) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.TagContainerAggregator
-// 0x00A8
-struct FTagContainerAggregator
-{
-	struct FGameplayTagContainer                       CapturedActorTags;                                         // 0x0000(0x0028)
-	struct FGameplayTagContainer                       CapturedSpecTags;                                          // 0x0028(0x0028)
-	struct FGameplayTagContainer                       ScopedTags;                                                // 0x0050(0x0028)
-	unsigned char                                      UnknownData_O4W1[0x30];                                    // 0x0078(0x0030) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayAbilityLocalAnimMontage
-// 0x0030
-struct FGameplayAbilityLocalAnimMontage
-{
-	class UAnimMontage*                                AnimMontage;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               PlayBit;                                                   // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_HUTW[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FPredictionKey                              PredictionKey;                                             // 0x0010(0x0018)
-	class UGameplayAbility*                            AnimatingAbility;                                          // 0x0028(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayAbilityRepAnimMontage
-// 0x0030
-struct FGameplayAbilityRepAnimMontage
-{
-	class UAnimMontage*                                AnimMontage;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                              PlayRate;                                                  // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                              Position;                                                  // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                              BlendTime;                                                 // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      NextSectionID;                                             // 0x0014(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      IsStopped : 1;                                             // 0x0015(0x0001) BIT_FIELD (NoDestructor)
-	unsigned char                                      ForcePlayBit : 1;                                          // 0x0015(0x0001) BIT_FIELD (NoDestructor)
-	unsigned char                                      UnknownData_LZ1B[0x2];                                     // 0x0016(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FPredictionKey                              PredictionKey;                                             // 0x0018(0x0018)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayEffectAttributeCaptureSpec
-// 0x0028
-struct FGameplayEffectAttributeCaptureSpec
-{
-	struct FGameplayEffectAttributeCaptureDefinition   BackingDefinition;                                         // 0x0000(0x0010)
-	unsigned char                                      UnknownData_00TG[0x18];                                    // 0x0010(0x0018) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayEffectAttributeCaptureSpecContainer
-// 0x0028
-struct FGameplayEffectAttributeCaptureSpecContainer
-{
-	TArray<struct FGameplayEffectAttributeCaptureSpec> SourceAttributes;                                          // 0x0000(0x0010) (ZeroConstructor)
-	TArray<struct FGameplayEffectAttributeCaptureSpec> TargetAttributes;                                          // 0x0010(0x0010) (ZeroConstructor)
-	bool                                               bHasNonSnapshottedAttributes;                              // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_7W2Y[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayCuePendingExecute
-// 0x0148
-struct FGameplayCuePendingExecute
-{
-	struct FGameplayTag                                GameplayCueTag;                                            // 0x0000(0x0008)
-	struct FPredictionKey                              PredictionKey;                                             // 0x0008(0x0018)
-	TEnumAsByte<GameplayAbilities_EGameplayCuePayloadType> PayloadType;                                               // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_CSWT[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UAbilitySystemComponent*                     OwningComponent;                                           // 0x0028(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectSpecForRPC                   FromSpec;                                                  // 0x0030(0x0090)
-	struct FGameplayCueParameters                      CueParameters;                                             // 0x00C0(0x0088)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayCueNotifyData
-// 0x0028
-struct FGameplayCueNotifyData
-{
-	struct FGameplayTag                                GameplayCueTag;                                            // 0x0000(0x0008) (Edit)
-	struct FStringAssetReference                       GameplayCueNotifyObj;                                      // 0x0008(0x0010) (Edit, ZeroConstructor)
-	class UClass*                                      LoadedGameplayCueClass;                                    // 0x0018(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_SLH1[0x8];                                     // 0x0020(0x0008) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayEffectCustomExecutionParameters
-// 0x0088
-struct FGameplayEffectCustomExecutionParameters
-{
-	unsigned char                                      UnknownData_22AE[0x88];                                    // 0x0000(0x0088) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayModifierEvaluatedData
-// 0x0018
-struct FGameplayModifierEvaluatedData
-{
-	struct FGameplayAttribute                          Attribute;                                                 // 0x0000(0x0008)
-	TEnumAsByte<GameplayAbilities_EGameplayModOp>      ModifierOp;                                                // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ST9A[0x3];                                     // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              Magnitude;                                                 // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle                 Handle;                                                    // 0x0010(0x0004)
-	bool                                               IsValid;                                                   // 0x0014(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_3VM6[0x3];                                     // 0x0015(0x0003) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayEffectCustomExecutionOutput
-// 0x0018
-struct FGameplayEffectCustomExecutionOutput
-{
-	TArray<struct FGameplayModifierEvaluatedData>      OutputModifiers;                                           // 0x0000(0x0010) (ZeroConstructor)
-	unsigned char                                      bTriggerConditionalGameplayEffects : 1;                    // 0x0010(0x0001) BIT_FIELD (NoDestructor)
-	unsigned char                                      bHandledStackCountManually : 1;                            // 0x0010(0x0001) BIT_FIELD (NoDestructor)
-	unsigned char                                      bHandledGameplayCuesManually : 1;                          // 0x0010(0x0001) BIT_FIELD (NoDestructor)
-	unsigned char                                      UnknownData_X8VP[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.GameplayEffectSpec
-// 0x02A0
-struct FGameplayEffectSpec
-{
-	class UGameplayEffect*                             Def;                                                       // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FGameplayEffectModifiedAttribute>    ModifiedAttributes;                                        // 0x0008(0x0010) (ZeroConstructor)
-	struct FGameplayEffectAttributeCaptureSpecContainer CapturedRelevantAttributes;                                // 0x0018(0x0028) (RepSkip)
-	unsigned char                                      UnknownData_TVSH[0x10];                                    // 0x0040(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              Duration;                                                  // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                              Period;                                                    // 0x0054(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                              ChanceToApplyToTarget;                                     // 0x0058(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_LVDS[0x4];                                     // 0x005C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FTagContainerAggregator                     CapturedSourceTags;                                        // 0x0060(0x00A8) (RepSkip)
-	struct FTagContainerAggregator                     CapturedTargetTags;                                        // 0x0108(0x00A8) (RepSkip)
-	struct FGameplayTagContainer                       DynamicGrantedTags;                                        // 0x01B0(0x0028)
-	struct FGameplayTagContainer                       DynamicAssetTags;                                          // 0x01D8(0x0028)
-	TArray<struct FModifierSpec>                       Modifiers;                                                 // 0x0200(0x0010) (ZeroConstructor)
-	int                                                StackCount;                                                // 0x0210(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      bCompletedSourceAttributeCapture : 1;                      // 0x0214(0x0001) BIT_FIELD (RepSkip, NoDestructor)
-	unsigned char                                      bCompletedTargetAttributeCapture : 1;                      // 0x0214(0x0001) BIT_FIELD (RepSkip, NoDestructor)
-	unsigned char                                      bDurationLocked : 1;                                       // 0x0214(0x0001) BIT_FIELD (RepSkip, NoDestructor)
-	unsigned char                                      UnknownData_TI5F[0x3];                                     // 0x0215(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	TArray<struct FGameplayAbilitySpecDef>             GrantedAbilitySpecs;                                       // 0x0218(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData_M4IB[0x50];                                    // 0x0228(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FGameplayEffectContextHandle                EffectContext;                                             // 0x0278(0x0020)
-	float                                              Level;                                                     // 0x0298(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_G4YV[0x4];                                     // 0x029C(0x0004) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.ActiveGameplayEffect
-// 0x02F8 (0x0300 - 0x0008)
-struct FActiveGameplayEffect : public FFastArraySerializerItem
-{
-	unsigned char                                      UnknownData_QXA1[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FGameplayEffectSpec                         Spec;                                                      // 0x0010(0x02A0)
-	struct FPredictionKey                              PredictionKey;                                             // 0x02B0(0x0018)
-	float                                              StartServerWorldTime;                                      // 0x02C8(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                              CachedStartServerWorldTime;                                // 0x02CC(0x0004) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	float                                              StartWorldTime;                                            // 0x02D0(0x0004) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	bool                                               bIsInhibited;                                              // 0x02D4(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_WS22[0x2B];                                    // 0x02D5(0x002B) MISSED OFFSET (PADDING)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct GameplayAbilities.ActiveGameplayEffectsContainer
-// 0x02C0 (0x0368 - 0x00A8)
-struct FActiveGameplayEffectsContainer : public FFastArraySerializer
-{
-	unsigned char                                      UnknownData_VOIE[0x20];                                    // 0x00A8(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	TArray<struct FActiveGameplayEffect>               GameplayEffects_Internal;                                  // 0x00C8(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData_56DT[0x290];                                   // 0x00D8(0x0290) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6QTA[0x4];                                     // 0x008C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -1042,8 +732,318 @@ struct FWorldReticleParameters
 struct FGameplayAbilityBindInfo
 {
 	TEnumAsByte<GameplayAbilities_EGameplayAbilityInputBinds> Command;                                                   // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_A1VE[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_032V[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      GameplayAbilityClass;                                      // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayCuePendingExecute
+// 0x0148
+struct FGameplayCuePendingExecute
+{
+	struct FGameplayTag                                GameplayCueTag;                                            // 0x0000(0x0008)
+	struct FPredictionKey                              PredictionKey;                                             // 0x0008(0x0018)
+	TEnumAsByte<GameplayAbilities_EGameplayCuePayloadType> PayloadType;                                               // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_U4I5[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class UAbilitySystemComponent*                     OwningComponent;                                           // 0x0028(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectSpecForRPC                   FromSpec;                                                  // 0x0030(0x0090)
+	struct FGameplayCueParameters                      CueParameters;                                             // 0x00C0(0x0088)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayEventData
+// 0x00A0
+struct FGameplayEventData
+{
+	struct FGameplayTag                                EventTag;                                                  // 0x0000(0x0008) (Edit, BlueprintVisible)
+	class AActor*                                      Instigator;                                                // 0x0008(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      Target;                                                    // 0x0010(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                     OptionalObject;                                            // 0x0018(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                     OptionalObject2;                                           // 0x0020(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectContextHandle                ContextHandle;                                             // 0x0028(0x0020) (Edit, BlueprintVisible)
+	struct FGameplayTagContainer                       InstigatorTags;                                            // 0x0048(0x0028) (Edit, BlueprintVisible)
+	struct FGameplayTagContainer                       TargetTags;                                                // 0x0070(0x0028) (Edit, BlueprintVisible)
+	float                                              EventMagnitude;                                            // 0x0098(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_SDSV[0x4];                                     // 0x009C(0x0004) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayAbilityActivationInfo
+// 0x0020
+struct FGameplayAbilityActivationInfo
+{
+	TEnumAsByte<GameplayAbilities_EGameplayAbilityActivationMode> ActivationMode;                                            // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               bCanBeEndedByOtherInstance;                                // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_AI5L[0x6];                                     // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FPredictionKey                              PredictionKeyWhenActivated;                                // 0x0008(0x0018)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayAbilityRepAnimMontage
+// 0x0030
+struct FGameplayAbilityRepAnimMontage
+{
+	class UAnimMontage*                                AnimMontage;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              PlayRate;                                                  // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              Position;                                                  // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              BlendTime;                                                 // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      NextSectionID;                                             // 0x0014(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      IsStopped : 1;                                             // 0x0015(0x0001) BIT_FIELD (NoDestructor)
+	unsigned char                                      ForcePlayBit : 1;                                          // 0x0015(0x0001) BIT_FIELD (NoDestructor)
+	unsigned char                                      UnknownData_N8WL[0x2];                                     // 0x0016(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FPredictionKey                              PredictionKey;                                             // 0x0018(0x0018)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayAbilityLocalAnimMontage
+// 0x0030
+struct FGameplayAbilityLocalAnimMontage
+{
+	class UAnimMontage*                                AnimMontage;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               PlayBit;                                                   // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_N3MI[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FPredictionKey                              PredictionKey;                                             // 0x0010(0x0018)
+	class UGameplayAbility*                            AnimatingAbility;                                          // 0x0028(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.ActiveGameplayCue
+// 0x0028 (0x0030 - 0x0008)
+struct FActiveGameplayCue : public FFastArraySerializerItem
+{
+	struct FGameplayTag                                GameplayCueTag;                                            // 0x0008(0x0008)
+	struct FPredictionKey                              PredictionKey;                                             // 0x0010(0x0018)
+	bool                                               bPredictivelyRemoved;                                      // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor)
+	unsigned char                                      UnknownData_LMPH[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayAbilitySpec
+// 0x0070 (0x0078 - 0x0008)
+struct FGameplayAbilitySpec : public FFastArraySerializerItem
+{
+	struct FGameplayAbilitySpecHandle                  Handle;                                                    // 0x0008(0x0004)
+	unsigned char                                      UnknownData_3LJJ[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class UGameplayAbility*                            Ability;                                                   // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                Level;                                                     // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                InputID;                                                   // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                     SourceObject;                                              // 0x0020(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               InputPressed;                                              // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor)
+	unsigned char                                      ActiveCount;                                               // 0x0029(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	bool                                               RemoveAfterActivation;                                     // 0x002A(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor)
+	unsigned char                                      UnknownData_3ZZL[0x5];                                     // 0x002B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FGameplayAbilityActivationInfo              ActivationInfo;                                            // 0x0030(0x0020) (RepSkip)
+	TArray<class UGameplayAbility*>                    NonReplicatedInstances;                                    // 0x0050(0x0010) (ZeroConstructor, RepSkip)
+	TArray<class UGameplayAbility*>                    ReplicatedInstances;                                       // 0x0060(0x0010) (ZeroConstructor)
+	struct FActiveGameplayEffectHandle                 GameplayEffectHandle;                                      // 0x0070(0x0004) (RepSkip)
+	bool                                               PendingRemove;                                             // 0x0074(0x0001) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor)
+	unsigned char                                      UnknownData_NFM0[0x3];                                     // 0x0075(0x0003) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayAbilitySpecContainer
+// 0x0018 (0x00C0 - 0x00A8)
+struct FGameplayAbilitySpecContainer : public FFastArraySerializer
+{
+	TArray<struct FGameplayAbilitySpec>                Items;                                                     // 0x00A8(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData_PSO0[0x8];                                     // 0x00B8(0x0008) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayEffectAttributeCaptureSpec
+// 0x0028
+struct FGameplayEffectAttributeCaptureSpec
+{
+	struct FGameplayEffectAttributeCaptureDefinition   BackingDefinition;                                         // 0x0000(0x0010)
+	unsigned char                                      UnknownData_BS1H[0x18];                                    // 0x0010(0x0018) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayEffectAttributeCaptureSpecContainer
+// 0x0028
+struct FGameplayEffectAttributeCaptureSpecContainer
+{
+	TArray<struct FGameplayEffectAttributeCaptureSpec> SourceAttributes;                                          // 0x0000(0x0010) (ZeroConstructor)
+	TArray<struct FGameplayEffectAttributeCaptureSpec> TargetAttributes;                                          // 0x0010(0x0010) (ZeroConstructor)
+	bool                                               bHasNonSnapshottedAttributes;                              // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_W6K7[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.TagContainerAggregator
+// 0x00A8
+struct FTagContainerAggregator
+{
+	struct FGameplayTagContainer                       CapturedActorTags;                                         // 0x0000(0x0028)
+	struct FGameplayTagContainer                       CapturedSpecTags;                                          // 0x0028(0x0028)
+	struct FGameplayTagContainer                       ScopedTags;                                                // 0x0050(0x0028)
+	unsigned char                                      UnknownData_54WX[0x30];                                    // 0x0078(0x0030) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.ActiveGameplayCueContainer
+// 0x0018 (0x00C0 - 0x00A8)
+struct FActiveGameplayCueContainer : public FFastArraySerializer
+{
+	TArray<struct FActiveGameplayCue>                  GameplayCues;                                              // 0x00A8(0x0010) (ZeroConstructor)
+	class UAbilitySystemComponent*                     Owner;                                                     // 0x00B8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayEffectSpec
+// 0x02A0
+struct FGameplayEffectSpec
+{
+	class UGameplayEffect*                             Def;                                                       // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FGameplayEffectModifiedAttribute>    ModifiedAttributes;                                        // 0x0008(0x0010) (ZeroConstructor)
+	struct FGameplayEffectAttributeCaptureSpecContainer CapturedRelevantAttributes;                                // 0x0018(0x0028) (RepSkip)
+	unsigned char                                      UnknownData_CKZC[0x10];                                    // 0x0040(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              Duration;                                                  // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              Period;                                                    // 0x0054(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              ChanceToApplyToTarget;                                     // 0x0058(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_7CZ6[0x4];                                     // 0x005C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FTagContainerAggregator                     CapturedSourceTags;                                        // 0x0060(0x00A8) (RepSkip)
+	struct FTagContainerAggregator                     CapturedTargetTags;                                        // 0x0108(0x00A8) (RepSkip)
+	struct FGameplayTagContainer                       DynamicGrantedTags;                                        // 0x01B0(0x0028)
+	struct FGameplayTagContainer                       DynamicAssetTags;                                          // 0x01D8(0x0028)
+	TArray<struct FModifierSpec>                       Modifiers;                                                 // 0x0200(0x0010) (ZeroConstructor)
+	int                                                StackCount;                                                // 0x0210(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      bCompletedSourceAttributeCapture : 1;                      // 0x0214(0x0001) BIT_FIELD (RepSkip, NoDestructor)
+	unsigned char                                      bCompletedTargetAttributeCapture : 1;                      // 0x0214(0x0001) BIT_FIELD (RepSkip, NoDestructor)
+	unsigned char                                      bDurationLocked : 1;                                       // 0x0214(0x0001) BIT_FIELD (RepSkip, NoDestructor)
+	unsigned char                                      UnknownData_Z6Q7[0x3];                                     // 0x0215(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	TArray<struct FGameplayAbilitySpecDef>             GrantedAbilitySpecs;                                       // 0x0218(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData_11F3[0x50];                                    // 0x0228(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FGameplayEffectContextHandle                EffectContext;                                             // 0x0278(0x0020)
+	float                                              Level;                                                     // 0x0298(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_KMO8[0x4];                                     // 0x029C(0x0004) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.ActiveGameplayEffect
+// 0x02F8 (0x0300 - 0x0008)
+struct FActiveGameplayEffect : public FFastArraySerializerItem
+{
+	unsigned char                                      UnknownData_0P2I[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FGameplayEffectSpec                         Spec;                                                      // 0x0010(0x02A0)
+	struct FPredictionKey                              PredictionKey;                                             // 0x02B0(0x0018)
+	float                                              StartServerWorldTime;                                      // 0x02C8(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              CachedStartServerWorldTime;                                // 0x02CC(0x0004) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	float                                              StartWorldTime;                                            // 0x02D0(0x0004) (ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	bool                                               bIsInhibited;                                              // 0x02D4(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_XJX9[0x2B];                                    // 0x02D5(0x002B) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.ActiveGameplayEffectsContainer
+// 0x02C0 (0x0368 - 0x00A8)
+struct FActiveGameplayEffectsContainer : public FFastArraySerializer
+{
+	unsigned char                                      UnknownData_WEQS[0x20];                                    // 0x00A8(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	TArray<struct FActiveGameplayEffect>               GameplayEffects_Internal;                                  // 0x00C8(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData_VQPO[0x290];                                   // 0x00D8(0x0290) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayCueNotifyData
+// 0x0028
+struct FGameplayCueNotifyData
+{
+	struct FGameplayTag                                GameplayCueTag;                                            // 0x0000(0x0008) (Edit)
+	struct FStringAssetReference                       GameplayCueNotifyObj;                                      // 0x0008(0x0010) (Edit, ZeroConstructor)
+	class UClass*                                      LoadedGameplayCueClass;                                    // 0x0018(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_J1GR[0x8];                                     // 0x0020(0x0008) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayEffectCustomExecutionParameters
+// 0x0088
+struct FGameplayEffectCustomExecutionParameters
+{
+	unsigned char                                      UnknownData_RLVJ[0x88];                                    // 0x0000(0x0088) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayModifierEvaluatedData
+// 0x0018
+struct FGameplayModifierEvaluatedData
+{
+	struct FGameplayAttribute                          Attribute;                                                 // 0x0000(0x0008)
+	TEnumAsByte<GameplayAbilities_EGameplayModOp>      ModifierOp;                                                // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_9R7O[0x3];                                     // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              Magnitude;                                                 // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle                 Handle;                                                    // 0x0010(0x0004)
+	bool                                               IsValid;                                                   // 0x0014(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_BDPS[0x3];                                     // 0x0015(0x0003) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct GameplayAbilities.GameplayEffectCustomExecutionOutput
+// 0x0018
+struct FGameplayEffectCustomExecutionOutput
+{
+	TArray<struct FGameplayModifierEvaluatedData>      OutputModifiers;                                           // 0x0000(0x0010) (ZeroConstructor)
+	unsigned char                                      bTriggerConditionalGameplayEffects : 1;                    // 0x0010(0x0001) BIT_FIELD (NoDestructor)
+	unsigned char                                      bHandledStackCountManually : 1;                            // 0x0010(0x0001) BIT_FIELD (NoDestructor)
+	unsigned char                                      bHandledGameplayCuesManually : 1;                          // 0x0010(0x0001) BIT_FIELD (NoDestructor)
+	unsigned char                                      UnknownData_VT3M[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -1081,10 +1081,10 @@ struct FAttributeMetaData : public FTableRowBase
 	float                                              BaseValue;                                                 // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              MinValue;                                                  // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              MaxValue;                                                  // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_UDPR[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_4IYV[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     DerivedAttributeInfo;                                      // 0x0010(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	bool                                               bCanStack;                                                 // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_U6VJ[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SLMR[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -1095,7 +1095,7 @@ struct FAttributeMetaData : public FTableRowBase
 // 0x0010
 struct FGlobalCurveDataOverride
 {
-	unsigned char                                      UnknownData_B13G[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7V93[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -1106,16 +1106,16 @@ struct FGlobalCurveDataOverride
 // 0x0060
 struct FGameplayEffectContext
 {
-	unsigned char                                      UnknownData_ARRF[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_4FBK[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TWeakObjectPtr<class AActor>                       Instigator;                                                // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper)
 	TWeakObjectPtr<class AActor>                       EffectCauser;                                              // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper)
 	TWeakObjectPtr<class UObject>                      SourceObject;                                              // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper)
 	TWeakObjectPtr<class UAbilitySystemComponent>      InstigatorAbilitySystemComponent;                          // 0x0020(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, Protected, UObjectWrapper)
 	TArray<TWeakObjectPtr<class AActor>>               Actors;                                                    // 0x0028(0x0010) (ZeroConstructor, Protected, UObjectWrapper)
-	unsigned char                                      UnknownData_6NRR[0x18];                                    // 0x0038(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_NWFA[0x18];                                    // 0x0038(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FVector                                     WorldOrigin;                                               // 0x0050(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
 	bool                                               bHasWorldOrigin;                                           // 0x005C(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
-	unsigned char                                      UnknownData_ZGF7[0x3];                                     // 0x005D(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_XA2J[0x3];                                     // 0x005D(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -1126,7 +1126,7 @@ struct FGameplayEffectContext
 // 0x0008
 struct FGameplayAbilityTargetData
 {
-	unsigned char                                      UnknownData_OG7Q[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RH1G[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -1148,7 +1148,7 @@ struct FGameplayAbilityTargetData_SingleTargetHit : public FGameplayAbilityTarge
 // 0x0088 (0x0090 - 0x0008)
 struct FGameplayAbilityTargetData_ActorArray : public FGameplayAbilityTargetData
 {
-	unsigned char                                      UnknownData_HMZ1[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7QN7[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGameplayAbilityTargetingLocationInfo       SourceLocation;                                            // 0x0010(0x0070) (Edit, BlueprintVisible, ContainsInstancedReference)
 	TArray<TWeakObjectPtr<class AActor>>               TargetActorArray;                                          // 0x0080(0x0010) (Edit, ZeroConstructor, UObjectWrapper)
 
@@ -1161,7 +1161,7 @@ struct FGameplayAbilityTargetData_ActorArray : public FGameplayAbilityTargetData
 // 0x00E8 (0x00F0 - 0x0008)
 struct FGameplayAbilityTargetData_LocationInfo : public FGameplayAbilityTargetData
 {
-	unsigned char                                      UnknownData_V8LI[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PG0H[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGameplayAbilityTargetingLocationInfo       SourceLocation;                                            // 0x0010(0x0070) (Edit, BlueprintVisible, ContainsInstancedReference)
 	struct FGameplayAbilityTargetingLocationInfo       TargetLocation;                                            // 0x0080(0x0070) (Edit, BlueprintVisible, ContainsInstancedReference)
 
@@ -1186,7 +1186,7 @@ struct FGameplayAbilitySpecHandleAndPredictionKey
 // 0x0050
 struct FActiveGameplayEffectQuery
 {
-	unsigned char                                      UnknownData_VVMI[0x50];                                    // 0x0000(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9T0M[0x50];                                    // 0x0000(0x0050) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -1197,14 +1197,14 @@ struct FActiveGameplayEffectQuery
 // 0x00D0
 struct FGameplayEffectQuery
 {
-	unsigned char                                      UnknownData_F8DS[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_Y4N5[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FScriptDelegate                             CustomMatchDelegate_BP;                                    // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor)
 	struct FGameplayTagQuery                           OwningTagQuery;                                            // 0x0018(0x0048) (Edit, BlueprintVisible)
 	struct FGameplayTagQuery                           EffectTagQuery;                                            // 0x0060(0x0048) (Edit, BlueprintVisible)
 	struct FGameplayAttribute                          ModifyingAttribute;                                        // 0x00A8(0x0008) (Edit, BlueprintVisible)
 	class UObject*                                     EffectSource;                                              // 0x00B0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UGameplayEffect*                             EffectDefinition;                                          // 0x00B8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_H2SH[0x10];                                    // 0x00C0(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_DJY2[0x10];                                    // 0x00C0(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

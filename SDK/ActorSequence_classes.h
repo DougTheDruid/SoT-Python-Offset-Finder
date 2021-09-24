@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -50,7 +50,7 @@ public:
 	class UActorSequence*                              Sequence;                                                  // 0x00F0(0x0008) (Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, PersistentInstance, HasGetValueTypeHash)
 	class UActorSequencePlayer*                        SequencePlayer;                                            // 0x00F8(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	bool                                               bAutoPlay;                                                 // 0x0100(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
-	unsigned char                                      UnknownData_RYZF[0x7];                                     // 0x0101(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NUA3[0x7];                                     // 0x0101(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

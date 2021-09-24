@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -54,15 +54,15 @@ public:
 	float                                              ViewportHeight;                                            // 0x0030(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              FooterHeight;                                              // 0x0034(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               DrawSpinnerText;                                           // 0x0038(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_80DJ[0x7];                                     // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MSVL[0x7];                                     // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FStringAssetReference                       PlaceholderSpinnerTexture;                                 // 0x0040(0x0010) (Edit, ZeroConstructor)
 	struct FLinearColor                                BackgroundColour;                                          // 0x0050(0x0010) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FSlateLoadingScreenImageParams              PrimaryImage;                                              // 0x0060(0x0020) (Edit)
 	TArray<struct FSlateLoadingScreenImageParams>      CyclingImages;                                             // 0x0080(0x0010) (Edit, ZeroConstructor)
 	int                                                MaxNumImagesPerLoad;                                       // 0x0090(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_8QVQ[0x4];                                     // 0x0094(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_WKCL[0x4];                                     // 0x0094(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FText                                       SpinnerText;                                               // 0x0098(0x0018) ELEMENT_SIZE_MISMATCH (Edit)
-	unsigned char                                      UnknownData_FSQ8[0x20];                                    // 0x0094(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_CJ8L[0x20];                                    // 0x0094(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FSlateColor                                 SpinnerTextColour;                                         // 0x00D0(0x0030) (Edit)
 	struct FSlateFontInfo                              SpinnerTextFont;                                           // 0x0100(0x0040) (Edit)
 	float                                              SpinnerSize;                                               // 0x0140(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,11 +76,11 @@ public:
 	int                                                NumTipsPerImage;                                           // 0x0184(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateFontInfo                              LoadingTipFont;                                            // 0x0188(0x0040) (Edit)
 	float                                              LoadingTipFontLineHeightPercentage;                        // 0x01C8(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_RHV0[0x4];                                     // 0x01CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_URU1[0x4];                                     // 0x01CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FText>                               LoadingScreenTips;                                         // 0x01D0(0x0010) (Edit, ZeroConstructor)
 	struct FSlateColor                                 LoadingScreenTipColour;                                    // 0x01E0(0x0030) (Edit)
 	bool                                               AllowSyncronousAssetLoad;                                  // 0x0210(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_GADM[0x7];                                     // 0x0211(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ETV6[0x7];                                     // 0x0211(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

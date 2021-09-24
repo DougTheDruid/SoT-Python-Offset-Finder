@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceLocation
-// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03505100
+//		Name   -> Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceLocation
+//		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector UVoiceChatEmitterInterface::GetVoiceLocation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceLocation");
@@ -39,10 +41,12 @@ struct FVector UVoiceChatEmitterInterface::GetVoiceLocation()
 }
 
 
-// Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAudioEmitterProxy
-// (Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03505030
+//		Name   -> Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAudioEmitterProxy
+//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           EmitterProxy                   (Parm, OutParm)
+//		struct FWwiseEmitter                               EmitterProxy                                               (Parm, OutParm)
 void UVoiceChatEmitterInterface::GetVoiceAudioEmitterProxy(struct FWwiseEmitter* EmitterProxy)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAudioEmitterProxy");
@@ -61,10 +65,12 @@ void UVoiceChatEmitterInterface::GetVoiceAudioEmitterProxy(struct FWwiseEmitter*
 }
 
 
-// Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAttenuationScaler
-// (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03504F80
+//		Name   -> Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAttenuationScaler
+//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UVoiceChatEmitterInterface::GetVoiceAttenuationScaler()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAttenuationScaler");

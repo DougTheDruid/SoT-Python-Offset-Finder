@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -184,7 +184,7 @@ public:
 class ASirenController : public AAthenaSwimmingAIController
 {
 public:
-	unsigned char                                      UnknownData_LCFK[0x8];                                     // 0x09D0(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WDN2[0x8];                                     // 0x09D0(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

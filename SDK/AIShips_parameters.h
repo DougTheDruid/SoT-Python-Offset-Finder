@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,29 +22,29 @@ namespace CG
 // Function AIShips.AIShipDebugFunctionLibrary.RequestAIShipForCrew
 struct UAIShipDebugFunctionLibrary_RequestAIShipForCrew_Params
 {
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                       CrewId;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UObject*                                     WorldContextObject;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                       CrewId;                                                    // 0x0008(0x0010)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function AIShips.AIShipDebugFunctionLibrary.GenerateAIShipBattleDesc
 struct UAIShipDebugFunctionLibrary_GenerateAIShipBattleDesc_Params
 {
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAIShipServiceDataAsset*                     ServiceParams;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAIShipEncounterBattleDesc                  ReturnValue;                                               // (Parm, OutParm, ReturnParm)
+	class UObject*                                     WorldContextObject;                                        // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAIShipServiceDataAsset*                     ServiceParams;                                             // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAIShipEncounterBattleDesc                  ReturnValue;                                               // 0x0010(0x0010)  (Parm, OutParm, ReturnParm)
 };
 
 // Function AIShips.AthenaAIShipController.ApplyControllerParams
 struct AAthenaAIShipController_ApplyControllerParams_Params
 {
-	class UAthenaAIControllerParamsDataAsset*          ParamsAsset;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                       InPawn;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaAIControllerParamsDataAsset*          ParamsAsset;                                               // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                       InPawn;                                                    // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function AIShips.CursedCrewCustomisationInterface.SetCursedCrewCustomisationProperties
 struct UCursedCrewCustomisationInterface_SetCursedCrewCustomisationProperties_Params
 {
-	struct FAIShipSailData                             SailData;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAIShipSailData                             SailData;                                                  // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 }

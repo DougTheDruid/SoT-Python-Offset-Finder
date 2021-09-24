@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,7 +22,7 @@ namespace CG
 // Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.GetNumExternalHits
 struct UBP_DamageZoneInterface_C_GetNumExternalHits_Params
 {
-	int                                                NumExternalHits;                                           // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                NumExternalHits;                                           // 0x0000(0x0004)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.ClearDecalFlags
@@ -33,7 +33,7 @@ struct UBP_DamageZoneInterface_C_ClearDecalFlags_Params
 // Function BP_DamageZoneInterface.BP_DamageZoneInterface_C.AddExternalHit
 struct UBP_DamageZoneInterface_C_AddExternalHit_Params
 {
-	struct FHullDamageHit                              Hit_Data;                                                  // (Parm)
+	struct FHullDamageHit                              Hit_Data;                                                  // 0x0000(0x0024)  (Parm)
 };
 
 }

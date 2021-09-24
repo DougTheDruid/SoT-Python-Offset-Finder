@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -1464,7 +1464,7 @@ public:
 	struct FAnimNode_Root                              AnimGraphNode_StateResult_BD7FCA1943B1B53356A01CA7A8BAB77C; // 0x2C798(0x0048)
 	struct FAnimNode_StateMachine                      AnimGraphNode_StateMachine_F9A5E2954CED94FA8C4B59901BE894C7; // 0x2C7E0(0x00A8)
 	struct FAnimNode_SaveCachedPose                    AnimGraphNode_SaveCachedPose_D79EC9D7421EE8BDF7789D992B0574EE; // 0x2C888(0x0090)
-	unsigned char                                      UnknownData_CV5N[0x8];                                     // 0x2C918(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_32S7[0x8];                                     // 0x2C918(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FAnimNode_HIKReach                          AnimGraphNode_HIKReach_DE09ADBD4272DC777CFA29A1B0E60886;   // 0x2C920(0x0080)
 	struct FAnimNode_HIKReach                          AnimGraphNode_HIKReach_A83B3ECC4A34B33E5333F5B8D44195E6;   // 0x2C9A0(0x0080)
 	struct FAnimNode_HIKSetProperty                    AnimGraphNode_HIKSetProperty_93FD3C0740FF162CBB752893D880041B; // 0x2CA20(0x0050)
@@ -1511,7 +1511,7 @@ public:
 	struct FAnimNode_ConvertComponentToLocalSpace      AnimGraphNode_ComponentToLocalSpace_6C6A09E040A24ED2724E2289A0D66BCC; // 0x2DBA8(0x0048)
 	struct FAnimNode_ConvertLocalToComponentSpace      AnimGraphNode_LocalToComponentSpace_05828FFE453331F2CC1F7C81EDF0C42D; // 0x2DBF0(0x0048)
 	struct FAnimNode_HIKSolve                          AnimGraphNode_HIKSolve_69E5C4DB44FFDF67C317A5BCFBFA2E43;   // 0x2DC38(0x0080)
-	unsigned char                                      UnknownData_VEY8[0x8];                                     // 0x2DCB8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_6QKO[0x8];                                     // 0x2DCB8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FAnimNode_HIKReach                          AnimGraphNode_HIKReach_C1BA7BEC4491249922BC7795320449A1;   // 0x2DCC0(0x0080)
 	struct FAnimNode_HIKSetProperty                    AnimGraphNode_HIKSetProperty_8EA088684402258C5F1CFBBE38A3A091; // 0x2DD40(0x0050)
 	struct FAnimNode_HIKSetProperty                    AnimGraphNode_HIKSetProperty_4D10A79144DD277B869C70A220997E61; // 0x2DD90(0x0050)
@@ -1630,7 +1630,7 @@ public:
 	struct FBP_LadderTransitions                       LadderMastAnimations;                                      // 0x302B0(0x0020) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FBP_LadderTransitions                       LadderShipSideAnimations;                                  // 0x302D0(0x0020) (Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                              LadderSlideTriggerSpeed;                                   // 0x302F0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_PAF4[0x4];                                     // 0x302F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_FY8P[0x4];                                     // 0x302F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FBP_StairsLocomotion                        StairLocomotionAnimations;                                 // 0x302F8(0x0020) (Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UAnimSequence*>                       SwimIdles;                                                 // 0x30318(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UAnimSequence*>                       WheelIdles;                                                // 0x30328(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -1638,7 +1638,7 @@ public:
 	TArray<class UAnimSequence*>                       RightWheelFingerIdles;                                     // 0x30348(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	struct FAthenaAnimationMapTable                    MapTableAnims;                                             // 0x30358(0x0030) (Edit, BlueprintVisible, DisableEditOnInstance)
 	int                                                MapTableVariant;                                           // 0x30388(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_1HH2[0x4];                                     // 0x3038C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_3EMJ[0x4];                                     // 0x3038C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UBlendSpace1D*                               UnderwaterTreadwater;                                      // 0x30390(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                              IntoCombatStanceBlendTime;                                 // 0x30398(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                              StandardLocomotionBlendTime;                               // 0x3039C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -1647,15 +1647,15 @@ public:
 	int                                                CannonVariant;                                             // 0x303D8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FRandomStream                               IdlesRandomStream;                                         // 0x303DC(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                               AnimAllocationComplete;                                    // 0x303E4(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_MQXE[0x3];                                     // 0x303E5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_K9MD[0x3];                                     // 0x303E5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UAnimSequence*                               UnEquipAnimToPlay;                                         // 0x303E8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               UseBackAdditive;                                           // 0x303F0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               RowboatCanTransition;                                      // 0x303F1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_J094[0x2];                                     // 0x303F2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_XL43[0x2];                                     // 0x303F2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              RowboatTransitionTimes;                                    // 0x303F4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UAnimSequence*                               ClamberOffTop;                                             // 0x303F8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	int                                                HarpoonVariant;                                            // 0x30400(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_ZGB0[0x4];                                     // 0x30404(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_RU0E[0x4];                                     // 0x30404(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UAnimSequence*                               SwimIdleDefault;                                           // 0x30408(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UAnimSequence*                               LeftHandGrab;                                              // 0x30410(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UAnimSequence*                               RightHandGrab;                                             // 0x30418(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)

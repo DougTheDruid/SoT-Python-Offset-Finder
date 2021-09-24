@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -174,10 +174,12 @@ void UCookerInterface::BeforeDelete()
 
 }
 
-// Function Cooking.CookerComponent.OnRep_CookingState
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x0342E2C0
+//		Name   -> Function Cooking.CookerComponent.OnRep_CookingState
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// struct FCookingClientRepresentation OldRepresentation              (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FCookingClientRepresentation                OldRepresentation                                          (ConstParm, Parm, OutParm, ReferenceParm)
 void UCookerComponent::OnRep_CookingState(const struct FCookingClientRepresentation& OldRepresentation)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Cooking.CookerComponent.OnRep_CookingState");

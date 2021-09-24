@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_SailAnim.BP_SailAnim_C.Set Billow Animation Rate
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_SailAnim.BP_SailAnim_C.Set Billow Animation Rate
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_SailAnim_C::Set_Billow_Animation_Rate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SailAnim.BP_SailAnim_C.Set Billow Animation Rate");
@@ -34,11 +36,13 @@ void UBP_SailAnim_C::Set_Billow_Animation_Rate()
 }
 
 
-// Function BP_SailAnim.BP_SailAnim_C.InitialiseSail
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_SailAnim.BP_SailAnim_C.InitialiseSail
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          PlayRateMultiplier             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           MainSail                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              PlayRateMultiplier                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               MainSail                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_SailAnim_C::InitialiseSail(float PlayRateMultiplier, bool MainSail)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SailAnim.BP_SailAnim_C.InitialiseSail");
@@ -55,10 +59,12 @@ void UBP_SailAnim_C::InitialiseSail(float PlayRateMultiplier, bool MainSail)
 }
 
 
-// Function BP_SailAnim.BP_SailAnim_C.ExecuteUbergraph_BP_SailAnim
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_SailAnim.BP_SailAnim_C.ExecuteUbergraph_BP_SailAnim
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_SailAnim_C::ExecuteUbergraph_BP_SailAnim(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SailAnim.BP_SailAnim_C.ExecuteUbergraph_BP_SailAnim");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,14 +22,14 @@ namespace CG
 // Function Music.MusicZoneInterface.CanPlayForPlayer
 struct UMusicZoneInterface_CanPlayForPlayer_Params
 {
-	class AActor*                                      Player;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	class AActor*                                      Player;                                                    // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               ReturnValue;                                               // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function Music.MusicZoneComponent.GetEmitter
 struct UMusicZoneComponent_GetEmitter_Params
 {
-	struct FWwiseEmitter                               ReturnValue;                                               // (Parm, OutParm, ReturnParm)
+	struct FWwiseEmitter                               ReturnValue;                                               // 0x0000(0x0020)  (Parm, OutParm, ReturnParm)
 };
 
 // Function Music.MusicZoneComponent.DisableZone
@@ -45,7 +45,7 @@ struct UMusicZoneComponent_Client_StopMusicAndDisableZone_Params
 // Function Music.MusicZoneComponent.Client_PlayOneShot
 struct UMusicZoneComponent_Client_PlayOneShot_Params
 {
-	int                                                Index;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                Index;                                                     // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Music.MusicZoneComponent.ActivateZone

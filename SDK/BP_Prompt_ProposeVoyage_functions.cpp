@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.PostInitialize
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.PostInitialize
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_ProposeVoyage_C::PostInitialize()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.PostInitialize");
@@ -34,10 +36,12 @@ void UBP_Prompt_ProposeVoyage_C::PostInitialize()
 }
 
 
-// Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Prompt_OfferPurchased
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Prompt_OfferPurchased
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FOfferPurchasedEvent    Ev                             (Parm)
+//		struct FOfferPurchasedEvent                        Ev                                                         (Parm)
 void UBP_Prompt_ProposeVoyage_C::Prompt_OfferPurchased(const struct FOfferPurchasedEvent& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Prompt_OfferPurchased");
@@ -53,8 +57,10 @@ void UBP_Prompt_ProposeVoyage_C::Prompt_OfferPurchased(const struct FOfferPurcha
 }
 
 
-// Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.UnregisterOtherEvents_Implementable
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.UnregisterOtherEvents_Implementable
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_ProposeVoyage_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.UnregisterOtherEvents_Implementable");
@@ -69,8 +75,10 @@ void UBP_Prompt_ProposeVoyage_C::UnregisterOtherEvents_Implementable()
 }
 
 
-// Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Evaluate
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Evaluate
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_ProposeVoyage_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Evaluate");
@@ -85,10 +93,12 @@ void UBP_Prompt_ProposeVoyage_C::Evaluate()
 }
 
 
-// Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.ExecuteUbergraph_BP_Prompt_ProposeVoyage
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.ExecuteUbergraph_BP_Prompt_ProposeVoyage
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Prompt_ProposeVoyage_C::ExecuteUbergraph_BP_Prompt_ProposeVoyage(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.ExecuteUbergraph_BP_Prompt_ProposeVoyage");

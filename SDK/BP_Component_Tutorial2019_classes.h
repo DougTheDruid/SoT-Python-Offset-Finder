@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -31,7 +31,7 @@ public:
 	TArray<TAssetPtr<class AActor>>                    NPCBlacklist;                                              // 0x0108(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<struct FName>                               OutpostNames;                                              // 0x0118(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                               GoldHoarderOnRepPrerequiste;                               // 0x0128(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_DOQB[0x7];                                     // 0x0129(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_X6EY[0x7];                                     // 0x0129(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FObjectMessagingHandle                      Handle_PlayerFinishedSpawning;                             // 0x0130(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 
 

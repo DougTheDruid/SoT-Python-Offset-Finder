@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnStrokeEndedFunc
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnStrokeEndedFunc
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnStrokeEndedFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnStrokeEndedFunc");
@@ -34,8 +36,10 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnStrokeEndedFunc()
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnLeaveRowboatFunc
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnLeaveRowboatFunc
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnLeaveRowboatFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnLeaveRowboatFunc");
@@ -50,10 +54,12 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnLeaveRowboatFunc()
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnSitInRowboatFunc
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnSitInRowboatFunc
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventPlayerTakenControlOfControllable EventPlayerTakenControlOfControllable (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FEventPlayerTakenControlOfControllable      EventPlayerTakenControlOfControllable                      (ConstParm, Parm, OutParm, ReferenceParm)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnSitInRowboatFunc(const struct FEventPlayerTakenControlOfControllable& EventPlayerTakenControlOfControllable)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnSitInRowboatFunc");
@@ -69,8 +75,10 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnSitInRowboatFunc(const struct 
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.ResetState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.ResetState
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::ResetState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.ResetState");
@@ -85,8 +93,10 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::ResetState()
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.PostInitialize
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.PostInitialize
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::PostInitialize()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.PostInitialize");
@@ -101,8 +111,10 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::PostInitialize()
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.Evaluate
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.Evaluate
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.Evaluate");
@@ -117,8 +129,10 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::Evaluate()
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.UnregisterOtherEvents_Implementable
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.UnregisterOtherEvents_Implementable
+//		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.UnregisterOtherEvents_Implementable");
@@ -133,10 +147,12 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::UnregisterOtherEvents_Implementa
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnSitInRowboat
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnSitInRowboat
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventPlayerTakenControlOfControllable Event                          (Parm)
+//		struct FEventPlayerTakenControlOfControllable      Event                                                      (Parm)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnSitInRowboat(const struct FEventPlayerTakenControlOfControllable& Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnSitInRowboat");
@@ -152,10 +168,12 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnSitInRowboat(const struct FEve
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnLeaveRowboat
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnLeaveRowboat
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventPlayerReliquishedControlOfControllable Event                          (Parm)
+//		struct FEventPlayerReliquishedControlOfControllable Event                                                      (Parm)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnLeaveRowboat(const struct FEventPlayerReliquishedControlOfControllable& Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnLeaveRowboat");
@@ -171,10 +189,12 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnLeaveRowboat(const struct FEve
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnStrokeEnded
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnStrokeEnded
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventOarStrokeEnded    Event                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FEventOarStrokeEnded                        Event                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnStrokeEnded(const struct FEventOarStrokeEnded& Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.OnStrokeEnded");
@@ -190,10 +210,12 @@ void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::OnStrokeEnded(const struct FEven
 }
 
 
-// Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.ExecuteUbergraph_BP_Prompt_MaidenVoyage_RowboatTutorial
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.ExecuteUbergraph_BP_Prompt_MaidenVoyage_RowboatTutorial
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_Prompt_MaidenVoyage_RowboatTutorial_C::ExecuteUbergraph_BP_Prompt_MaidenVoyage_RowboatTutorial(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_RowboatTutorial.BP_Prompt_MaidenVoyage_RowboatTutorial_C.ExecuteUbergraph_BP_Prompt_MaidenVoyage_RowboatTutorial");

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,791 +18,851 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-void FGameServerGlobalCustomServerEvent::AfterRead()
+void FCustomServerEvent::AfterRead()
 {
 }
 
-void FGameServerGlobalCustomServerEvent::BeforeDelete()
+void FCustomServerEvent::BeforeDelete()
 {
+}
+
+void FEntityCustomServerEvent::AfterRead()
+{
+	FCustomServerEvent::AfterRead();
+
+}
+
+void FEntityCustomServerEvent::BeforeDelete()
+{
+	FCustomServerEvent::BeforeDelete();
+
+}
+
+void FGlobalCustomServerEvent::AfterRead()
+{
+	FCustomServerEvent::AfterRead();
+
+}
+
+void FGlobalCustomServerEvent::BeforeDelete()
+{
+	FCustomServerEvent::BeforeDelete();
+
+}
+
+void FOnCannonBallHitShipCustomServerEvent::AfterRead()
+{
+	FGlobalCustomServerEvent::AfterRead();
+
+}
+
+void FOnCannonBallHitShipCustomServerEvent::BeforeDelete()
+{
+	FGlobalCustomServerEvent::BeforeDelete();
+
+}
+
+void FPlayerCharacterEnteredShipCustomServerEvent::AfterRead()
+{
+	FGlobalCustomServerEvent::AfterRead();
+
+}
+
+void FPlayerCharacterEnteredShipCustomServerEvent::BeforeDelete()
+{
+	FGlobalCustomServerEvent::BeforeDelete();
+
 }
 
 void FWatercraftSpawnCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FWatercraftSpawnCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FWatercraftDespawnCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FWatercraftDespawnCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FTreasureSpawnedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FTreasureSpawnedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FTreasureSoldCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FTreasureSoldCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FTreasurePickedUpCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FTreasurePickedUpCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FTreasureFoundCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FTreasureFoundCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FTreasureDroppedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FTreasureDroppedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FShovelCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FShovelCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FShipSpawnedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FShipSpawnedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FShipRepairCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FShipRepairCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FShipOnFireEndCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FShipOnFireEndCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FShipMastCollapseStateCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FShipMastCollapseStateCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FShipDestroyedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FShipDestroyedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FShipDamagedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FShipDamagedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FProjectileWeaponFiredCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FProjectileWeaponFiredCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FProjectileHitCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FProjectileHitCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerStatusEffectActivatedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerStatusEffectActivatedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerStatusEffectDeactivatedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerStatusEffectDeactivatedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerSpawnCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerSpawnCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerSetFootLocationCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerSetFootLocationCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerRevivalCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerRevivalCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerRequiresMermaidCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerRequiresMermaidCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerRadialChatCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerRadialChatCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerObjectUsageStartCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerObjectUsageStartCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerLeftGhostShipCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerLeftGhostShipCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerKillAICustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerKillAICustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerItemUsageEndCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerItemUsageEndCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerItemRetrievalFromContainerCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerItemRetrievalFromContainerCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerItemEquipCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerItemEquipCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerItemAddToContainerCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerItemAddToContainerCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerInReviveableStateCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerInReviveableStateCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerHeartbeatCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerHeartbeatCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerHealthChangeCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerHealthChangeCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerGameFishingCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerGameFishingCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerEncounterStartCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerEncounterStartCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerEncounterEndCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerEncounterEndCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerEmoteCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerEmoteCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerDeathCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerDeathCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerChangedShipLoadoutCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerChangedShipLoadoutCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerChangedLoadoutCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerChangedLoadoutCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerCapstanUsageStartCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerCapstanUsageStartCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerCapstanUsageEndCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerCapstanUsageEndCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerBucketScoopCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerBucketScoopCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerBucketEmptyCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerBucketEmptyCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerActionCannonCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerActionCannonCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FPlayerActionCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FPlayerActionCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FMermaidUsedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FMermaidUsedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FMermaidSpawnedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FMermaidSpawnedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FMeleeWeaponAttackCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FMeleeWeaponAttackCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FLevelLoadCompletedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FLevelLoadCompletedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FKrakenTentacleDestroyedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FKrakenTentacleDestroyedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FKrakenSpawnCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FKrakenSpawnCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FItemSpawnCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FItemSpawnCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FFortWaveCompletedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FFortWaveCompletedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FFortKeyUsedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FFortKeyUsedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FCustomTriggerOverlapCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FCustomTriggerOverlapCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FCrewSessionLeaveCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FCrewSessionLeaveCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FCrewPlayerLeftCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FCrewPlayerLeftCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FCookStartCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FCookStartCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FCookEndCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FCookEndCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FAISpawnCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FAISpawnCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FAIShipSpawnCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FAIShipSpawnCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FAIShipDespawnCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FAIShipDespawnCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FAIShipDamagedCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FAIShipDamagedCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
 
 }
 
 void FTinySharkSpawnCustomServerEvent::AfterRead()
 {
-	FGameServerGlobalCustomServerEvent::AfterRead();
+	FGlobalCustomServerEvent::AfterRead();
 
 }
 
 void FTinySharkSpawnCustomServerEvent::BeforeDelete()
 {
-	FGameServerGlobalCustomServerEvent::BeforeDelete();
+	FGlobalCustomServerEvent::BeforeDelete();
+
+}
+
+void UCustomServerDispatcherProviderInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UCustomServerDispatcherProviderInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
 
 }
 

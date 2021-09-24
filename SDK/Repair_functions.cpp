@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -50,8 +50,10 @@ void URepairTypeId::BeforeDelete()
 
 }
 
-// Function Repair.RepairableInterface.HandleDestroy
-// (Native, Public)
+// Function:
+//		Offset -> 0x037A1620
+//		Name   -> Function Repair.RepairableInterface.HandleDestroy
+//		Flags  -> (Native, Public)
 void URepairableInterface::HandleDestroy()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairableInterface.HandleDestroy");
@@ -67,10 +69,12 @@ void URepairableInterface::HandleDestroy()
 }
 
 
-// Function Repair.RepairableInterface.GetRepairType
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x037A1570
+//		Name   -> Function Repair.RepairableInterface.GetRepairType
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UClass*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UClass*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 class UClass* URepairableInterface::GetRepairType()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairableInterface.GetRepairType");
@@ -88,10 +92,12 @@ class UClass* URepairableInterface::GetRepairType()
 }
 
 
-// Function Repair.RepairableInterface.GetRepairTime
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x037A1540
+//		Name   -> Function Repair.RepairableInterface.GetRepairTime
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float URepairableInterface::GetRepairTime()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairableInterface.GetRepairTime");
@@ -109,10 +115,12 @@ float URepairableInterface::GetRepairTime()
 }
 
 
-// Function Repair.RepairableInterface.GetRepairableState
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x037A15F0
+//		Name   -> Function Repair.RepairableInterface.GetRepairableState
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TEnumAsByte<Repair_ERepairableState> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Repair_ERepairableState>               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<Repair_ERepairableState> URepairableInterface::GetRepairableState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairableInterface.GetRepairableState");
@@ -142,10 +150,12 @@ void URepairableInterface::BeforeDelete()
 
 }
 
-// Function Repair.RepairingInterface.GetRepairType
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x037A15B0
+//		Name   -> Function Repair.RepairingInterface.GetRepairType
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		class UClass*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 class UClass* URepairingInterface::GetRepairType()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairingInterface.GetRepairType");

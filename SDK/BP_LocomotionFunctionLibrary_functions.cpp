@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,16 +18,18 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.DriveValueToClampByDelta
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.DriveValueToClampByDelta
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Value                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          Min                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Max                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Delta                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Hit_Min                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Hit_Max                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Value                                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              Min                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Max                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Delta                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Hit_Min                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Hit_Max                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_DriveValueToClampByDelta(float* Value, float Min, float Max, float Delta, class UObject* __WorldContext, bool* Hit_Min, bool* Hit_Max)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.DriveValueToClampByDelta");
@@ -53,14 +55,16 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_DriveValueToClampByDelta(float* Val
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.FindSailControlHandIKPositionFromAnimation
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.FindSailControlHandIKPositionFromAnimation
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                 Animation_Hand_IK_Location     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 LowerRopeLocation              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 UpperRopeLocation              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 Location_On_Rope               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     Animation_Hand_IK_Location                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     LowerRopeLocation                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     UpperRopeLocation                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     Location_On_Rope                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_FindSailControlHandIKPositionFromAnimation(const struct FVector& Animation_Hand_IK_Location, const struct FVector& LowerRopeLocation, const struct FVector& UpperRopeLocation, class UObject* __WorldContext, struct FVector* Location_On_Rope)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.FindSailControlHandIKPositionFromAnimation");
@@ -82,13 +86,15 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_FindSailControlHandIKPositionFromAn
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDrivenBlendSpace
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDrivenBlendSpace
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UBlendSpace*>     TargetArrayBlendspace          (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UBlendSpace*>     LoadedArrayDataBlendspace      (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class UBlendSpace*             FallbackBlendspace             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TArray<class UBlendSpace*>                         TargetArrayBlendspace                                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<class UBlendSpace*>                         LoadedArrayDataBlendspace                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class UBlendSpace*                                 FallbackBlendspace                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDrivenBlendSpace(TArray<class UBlendSpace*>* TargetArrayBlendspace, TArray<class UBlendSpace*>* LoadedArrayDataBlendspace, class UBlendSpace* FallbackBlendspace, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDrivenBlendSpace");
@@ -110,13 +116,15 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDrivenBlendSpac
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven1DBlendSpace
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven1DBlendSpace
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UBlendSpace1D*>   TargetArray_1D                 (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UBlendSpace1D*>   LoadedArrayData_1D             (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class UBlendSpace1D*           FallbackBlendspace1D           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TArray<class UBlendSpace1D*>                       TargetArray_1D                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<class UBlendSpace1D*>                       LoadedArrayData_1D                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class UBlendSpace1D*                               FallbackBlendspace1D                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDriven1DBlendSpace(TArray<class UBlendSpace1D*>* TargetArray_1D, TArray<class UBlendSpace1D*>* LoadedArrayData_1D, class UBlendSpace1D* FallbackBlendspace1D, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven1DBlendSpace");
@@ -138,13 +146,15 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDriven1DBlendSp
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UAnimSequence*>   TargetArray                    (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UAnimSequence*>   LoadedArrayData                (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class UAnimSequence*           FallBackAnimation              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TArray<class UAnimSequence*>                       TargetArray                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<class UAnimSequence*>                       LoadedArrayData                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class UAnimSequence*                               FallBackAnimation                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDriven(TArray<class UAnimSequence*>* TargetArray, TArray<class UAnimSequence*>* LoadedArrayData, class UAnimSequence* FallBackAnimation, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven");
@@ -166,19 +176,21 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDriven(TArray<c
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update IK Limb Controls
-// (Static, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update IK Limb Controls
+//		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USkeletalMeshComponent*  SkeletalMeshComponent          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<EIKLimbName_EIKLimbName> Limb_ID                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Active                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<Animation_ELimbIKSpace> Coordinate_Space               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Translation_Strength           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Rotation_Strength              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTransform              Transform                      (Parm, IsPlainOldData, NoDestructor)
-// float                          BlendIn                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          BlendOut                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class USkeletalMeshComponent*                      SkeletalMeshComponent                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               Limb_ID                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Active                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Animation_ELimbIKSpace>                Coordinate_Space                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Translation_Strength                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Rotation_Strength                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  Transform                                                  (Parm, IsPlainOldData, NoDestructor)
+//		float                                              BlendIn                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              BlendOut                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Update_IK_Limb_Controls(class USkeletalMeshComponent* SkeletalMeshComponent, TEnumAsByte<EIKLimbName_EIKLimbName> Limb_ID, bool Active, TEnumAsByte<Animation_ELimbIKSpace> Coordinate_Space, float Translation_Strength, float Rotation_Strength, const struct FTransform& Transform, float BlendIn, float BlendOut, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update IK Limb Controls");
@@ -203,12 +215,14 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_IK_Limb_Controls(class USkel
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Integer
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Integer
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            Value                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// int                            Decrement                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                Value                                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		int                                                Decrement                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Decrement_Integer(int* Value, int Decrement, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Integer");
@@ -228,12 +242,14 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Decrement_Integer(int* Value, int D
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Integer
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Integer
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            integer                        (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// int                            Increment                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                integer                                                    (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		int                                                Increment                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Increment_Integer(int* integer, int Increment, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Integer");
@@ -253,14 +269,16 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Increment_Integer(int* integer, int
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Calculate Turn Times
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Calculate Turn Times
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           TurnLeft                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          CurrentControllerYaw           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          PreviousControllerYaw          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// struct FBP_Turning             Turning                        (Parm, OutParm, ReferenceParm)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               TurnLeft                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              CurrentControllerYaw                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              PreviousControllerYaw                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FBP_Turning                                 Turning                                                    (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Calculate_Turn_Times(bool TurnLeft, float CurrentControllerYaw, float* PreviousControllerYaw, struct FBP_Turning* Turning, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Calculate Turn Times");
@@ -283,15 +301,17 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Calculate_Turn_Times(bool TurnLeft,
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.InRangeAndRate
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.InRangeAndRate
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           InZone                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Min                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Max                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FBP_Turning             Turning                        (Parm, OutParm, ReferenceParm)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               InZone                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Min                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Max                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FBP_Turning                                 Turning                                                    (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UBP_LocomotionFunctionLibrary_C::STATIC_InRangeAndRate(bool InZone, float Min, float Max, struct FBP_Turning* Turning, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.InRangeAndRate");
@@ -315,12 +335,14 @@ bool UBP_LocomotionFunctionLibrary_C::STATIC_InRangeAndRate(bool InZone, float M
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Turn State Change Check
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Turn State Change Check
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FBP_Turning             Turning                        (Parm, OutParm, ReferenceParm)
-// bool                           InZone                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FBP_Turning                                 Turning                                                    (Parm, OutParm, ReferenceParm)
+//		bool                                               InZone                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Turn_State_Change_Check(struct FBP_Turning* Turning, bool InZone, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Turn State Change Check");
@@ -340,14 +362,16 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Turn_State_Change_Check(struct FBP_
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Not In Range
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Not In Range
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Min                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Max                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Min                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Max                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UBP_LocomotionFunctionLibrary_C::STATIC_Not_In_Range(float Value, float Min, float Max, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Not In Range");
@@ -368,11 +392,13 @@ bool UBP_LocomotionFunctionLibrary_C::STATIC_Not_In_Range(float Value, float Min
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn State
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn State
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FBP_Turning             Turning                        (Parm, OutParm, ReferenceParm)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FBP_Turning                                 Turning                                                    (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Turn_State(struct FBP_Turning* Turning, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn State");
@@ -391,16 +417,18 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Turn_State(struct 
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn Time
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn Time
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           TurningLeft                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          CurrentTurnAngle               (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          Reset_Angle                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Previous_Controller_Yaw        (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          Current_Controller_Yaw         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Animation_Time                 (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               TurningLeft                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              CurrentTurnAngle                                           (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              Reset_Angle                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Previous_Controller_Yaw                                    (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              Current_Controller_Yaw                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Animation_Time                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Turn_Time(bool TurningLeft, float* CurrentTurnAngle, float Reset_Angle, float* Previous_Controller_Yaw, float Current_Controller_Yaw, float* Animation_Time, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn Time");
@@ -426,17 +454,19 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Turn_Time(bool Tur
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.JumpingLogic
-// (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.JumpingLogic
+//		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ACharacter*              PlayerCharacter                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          MovementSpeed                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          FrameDelta                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          JumpImpactTimerMax             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// TEnumAsByte<EJumping_EJumping> JumpingState                   (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          PreImpactTime                  (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          JumpImpactTimer                (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class ACharacter*                                  PlayerCharacter                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              MovementSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              FrameDelta                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              JumpImpactTimerMax                                         (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EJumping_EJumping>                     JumpingState                                               (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              PreImpactTime                                              (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              JumpImpactTimer                                            (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_JumpingLogic(class ACharacter* PlayerCharacter, float MovementSpeed, float FrameDelta, float* JumpImpactTimerMax, TEnumAsByte<EJumping_EJumping>* JumpingState, float* PreImpactTime, float* JumpImpactTimer, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.JumpingLogic");
@@ -464,17 +494,19 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_JumpingLogic(class ACharacter* Play
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Ik Blending
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Ik Blending
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          BlendCounter                   (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// bool                           IKON                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Translation_Strength           (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          Rotation_Strength              (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// TEnumAsByte<Engine_EEasingFunc> EaseingType                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          BlendMax                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          FrameDeltaTime                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              BlendCounter                                               (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		bool                                               IKON                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Translation_Strength                                       (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              Rotation_Strength                                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Engine_EEasingFunc>                    EaseingType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              BlendMax                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              FrameDeltaTime                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Ik_Blending(float* BlendCounter, bool IKON, float* Translation_Strength, float* Rotation_Strength, TEnumAsByte<Engine_EEasingFunc> EaseingType, float BlendMax, float FrameDeltaTime, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Ik Blending");
@@ -501,15 +533,17 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Ik_Blending(float* BlendCounter, bo
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Counter
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Counter
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Counter                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          CounterMax                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          DeltaTime                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Hit_Max_Count                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          IncrementedCounter             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Counter                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              CounterMax                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              DeltaTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Hit_Max_Count                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              IncrementedCounter                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Increment_Counter(float Counter, float CounterMax, float DeltaTime, class UObject* __WorldContext, bool* Hit_Max_Count, float* IncrementedCounter)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Counter");
@@ -533,15 +567,17 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Increment_Counter(float Counter, fl
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Counter
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Counter
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Counter                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          CounterMin                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          DeltaTime                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Hit_Min_Count                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          DecrementedCounter             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Counter                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              CounterMin                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              DeltaTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Hit_Min_Count                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              DecrementedCounter                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Decrement_Counter(float Counter, float CounterMin, float DeltaTime, class UObject* __WorldContext, bool* Hit_Min_Count, float* DecrementedCounter)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Counter");
@@ -565,14 +601,16 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Decrement_Counter(float Counter, fl
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Out Over Time
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Out Over Time
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          CurrentTime                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          MaxTime                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<Engine_EEasingFunc> EasingType                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Return_Val___0_1               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              CurrentTime                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              MaxTime                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Engine_EEasingFunc>                    EasingType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Return_Val___0_1                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Out_Over_Time(float CurrentTime, float MaxTime, TEnumAsByte<Engine_EEasingFunc> EasingType, class UObject* __WorldContext, float* Return_Val___0_1)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Out Over Time");
@@ -594,14 +632,16 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Out_Over_Time(float CurrentTime, fl
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Times
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Times
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           TurningLeft                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Current_Controller_Yaw         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Previous_Controller_Yaw        (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// struct FBP_Turning             Turning                        (Parm, OutParm, ReferenceParm)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               TurningLeft                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Current_Controller_Yaw                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Previous_Controller_Yaw                                    (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FBP_Turning                                 Turning                                                    (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Times(bool TurningLeft, float Current_Controller_Yaw, float* Previous_Controller_Yaw, struct FBP_Turning* Turning, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Times");
@@ -624,15 +664,17 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Times(bool Turning
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Turn Animations
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Turn Animations
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           TurningLeft                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          CurrentYaw                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          PreviousYaw                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          FrameDeltaTime                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FBP_Turning             Turning                        (Parm, OutParm, ReferenceParm)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               TurningLeft                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              CurrentYaw                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              PreviousYaw                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              FrameDeltaTime                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FBP_Turning                                 Turning                                                    (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Turn_Animations(bool TurningLeft, float CurrentYaw, float PreviousYaw, float FrameDeltaTime, struct FBP_Turning* Turning, class UObject* __WorldContext)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Turn Animations");
@@ -655,13 +697,15 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Turn_Animations(bool Turning
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Fix Yaw Wraparound
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Fix Yaw Wraparound
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          CurrentYaw                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          PreviousYaw                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          NewPreviousYaw                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              CurrentYaw                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              PreviousYaw                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              NewPreviousYaw                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Fix_Yaw_Wraparound(float CurrentYaw, float PreviousYaw, class UObject* __WorldContext, float* NewPreviousYaw)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Fix Yaw Wraparound");
@@ -682,13 +726,15 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Fix_Yaw_Wraparound(float CurrentYaw
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ReflexAngleCheck
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ReflexAngleCheck
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          Direction_A                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Direction_B                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           ReflexAngle                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Direction_A                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Direction_B                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ReflexAngle                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_ReflexAngleCheck(float Direction_A, float Direction_B, class UObject* __WorldContext, bool* ReflexAngle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ReflexAngleCheck");
@@ -709,13 +755,15 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ReflexAngleCheck(float Direction_A,
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ControllerRotation
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ControllerRotation
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ACharacter*              Character                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Pitch                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Yaw                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class ACharacter*                                  Character                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Pitch                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Yaw                                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_ControllerRotation(class ACharacter* Character, class UObject* __WorldContext, float* Pitch, float* Yaw)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ControllerRotation");
@@ -737,13 +785,15 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ControllerRotation(class ACharacter
 }
 
 
-// Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Character Speed
-// (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Character Speed
+//		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ACharacter*              Character                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 Velocity                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Speed                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class ACharacter*                                  Character                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UObject*                                     __WorldContext                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     Velocity                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Speed                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_LocomotionFunctionLibrary_C::STATIC_Character_Speed(class ACharacter* Character, class UObject* __WorldContext, struct FVector* Velocity, float* Speed)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Character Speed");

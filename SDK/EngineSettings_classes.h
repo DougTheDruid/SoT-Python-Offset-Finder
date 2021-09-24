@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -25,7 +25,7 @@ class UConsoleSettings : public UObject
 {
 public:
 	int                                                MaxScrollbackSize;                                         // 0x0028(0x0004) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_IPAA[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ERSC[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FAutoCompleteCommand>                ManualAutoCompleteList;                                    // 0x0030(0x0010) (Edit, ZeroConstructor, Config)
 	TArray<struct FString>                             AutoCompleteMapPaths;                                      // 0x0040(0x0010) (Edit, ZeroConstructor, Config)
 
@@ -54,7 +54,7 @@ public:
 	bool                                               bUseSplitscreen;                                           // 0x0058(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor)
 	TEnumAsByte<EngineSettings_ETwoPlayerSplitScreenType> TwoPlayerSplitscreenLayout;                                // 0x0059(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<EngineSettings_EThreePlayerSplitScreenType> ThreePlayerSplitscreenLayout;                              // 0x005A(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_A9U7[0x5];                                     // 0x005B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_KIZA[0x5];                                     // 0x005B(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FStringClassReference                       GameInstanceClass;                                         // 0x0060(0x0010) (Edit, ZeroConstructor, Config, NoClear)
 	struct FString                                     GameDefaultMap;                                            // 0x0070(0x0010) (Edit, ZeroConstructor, Config, HasGetValueTypeHash)
 	struct FString                                     ServerDefaultMap;                                          // 0x0080(0x0010) (Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash)
@@ -85,14 +85,14 @@ public:
 	int                                                TotalNetBandwidth;                                         // 0x0030(0x0004) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                BadPingThreshold;                                          // 0x0034(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	unsigned char                                      bIsStandbyCheckingEnabled : 1;                             // 0x0038(0x0001) BIT_FIELD (Edit, Config, NoDestructor)
-	unsigned char                                      UnknownData_E533[0x3];                                     // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_82GU[0x3];                                     // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              StandbyRxCheatTime;                                        // 0x003C(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              StandbyTxCheatTime;                                        // 0x0040(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              PercentMissingForRxStandby;                                // 0x0044(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              PercentMissingForTxStandby;                                // 0x0048(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              PercentForBadPing;                                         // 0x004C(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              JoinInProgressStandbyWaitTime;                             // 0x0050(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_64K7[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NHQ5[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -116,7 +116,7 @@ public:
 	int                                                MaxSpectators;                                             // 0x0028(0x0004) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                MaxPlayers;                                                // 0x002C(0x0004) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	unsigned char                                      bRequiresPushToTalk : 1;                                   // 0x0030(0x0001) BIT_FIELD (Edit, Config, GlobalConfig, NoDestructor)
-	unsigned char                                      UnknownData_2EHH[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BV6R[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -169,7 +169,7 @@ public:
 	struct FString                                     ProjectVersion;                                            // 0x00B8(0x0010) (Edit, ZeroConstructor, Config, HasGetValueTypeHash)
 	struct FString                                     SupportContact;                                            // 0x00C8(0x0010) (Edit, ZeroConstructor, Config, HasGetValueTypeHash)
 	struct FText                                       ProjectDisplayedTitle;                                     // 0x00D8(0x0018) ELEMENT_SIZE_MISMATCH (Edit, Config)
-	unsigned char                                      UnknownData_LANV[0x20];                                    // 0x00D8(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_4MNU[0x20];                                    // 0x00D8(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 
 
 	static UClass* StaticClass()
@@ -191,7 +191,7 @@ class UHudSettings : public UObject
 {
 public:
 	unsigned char                                      bShowHUD : 1;                                              // 0x0028(0x0001) BIT_FIELD (Edit, Config, NoDestructor)
-	unsigned char                                      UnknownData_5EU7[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_E8GP[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FName>                               DebugDisplay;                                              // 0x0030(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
 
 

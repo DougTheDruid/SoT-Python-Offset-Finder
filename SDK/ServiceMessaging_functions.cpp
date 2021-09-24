@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -66,11 +66,13 @@ void UServiceMessagingInterface::BeforeDelete()
 
 }
 
-// Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcherFromActor
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03005310
+//		Name   -> Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcherFromActor
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 Object                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FObjectMessagingDispatcherHandle ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FObjectMessagingDispatcherHandle            ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FObjectMessagingDispatcherHandle UServiceMessagingFunctions::STATIC_GetServiceMessagingDispatcherFromActor(class UObject* Object)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcherFromActor");
@@ -89,10 +91,12 @@ struct FObjectMessagingDispatcherHandle UServiceMessagingFunctions::STATIC_GetSe
 }
 
 
-// Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcher
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03005270
+//		Name   -> Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcher
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FObjectMessagingDispatcherHandle            ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FObjectMessagingDispatcherHandle UServiceMessagingFunctions::STATIC_GetServiceMessagingDispatcher()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcher");
@@ -122,10 +126,12 @@ void UServiceMessagingFunctions::BeforeDelete()
 
 }
 
-// Function ServiceMessaging.ServiceMessagingListenerTestObject.TestFunctionWithMessage
-// (Final, Native, Public, HasOutParms)
+// Function:
+//		Offset -> 0x030053A0
+//		Name   -> Function ServiceMessaging.ServiceMessagingListenerTestObject.TestFunctionWithMessage
+//		Flags  -> (Final, Native, Public, HasOutParms)
 // Parameters:
-// struct FServiceMessagingTestMessage InMessage                      (Parm, OutParm)
+//		struct FServiceMessagingTestMessage                InMessage                                                  (Parm, OutParm)
 void UServiceMessagingListenerTestObject::TestFunctionWithMessage(struct FServiceMessagingTestMessage* InMessage)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ServiceMessaging.ServiceMessagingListenerTestObject.TestFunctionWithMessage");

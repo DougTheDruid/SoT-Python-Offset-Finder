@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,14 +22,14 @@ namespace CG
 // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
 struct UTurnBasedMatchInterface_OnMatchReceivedTurn_Params
 {
-	struct FString                                     Match;                                                     // (Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                               bDidBecomeActive;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FString                                     Match;                                                     // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                               bDidBecomeActive;                                          // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
 struct UTurnBasedMatchInterface_OnMatchEnded_Params
 {
-	struct FString                                     Match;                                                     // (Parm, ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     Match;                                                     // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 
 }

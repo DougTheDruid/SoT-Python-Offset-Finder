@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -66,10 +66,12 @@ void FWindDirectionChanged::BeforeDelete()
 {
 }
 
-// Function Wind.WindZoneInterface.GetWindZoneParams
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD570
+//		Name   -> Function Wind.WindZoneInterface.GetWindZoneParams
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// struct FWindZoneParams         ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FWindZoneParams                             ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FWindZoneParams UWindZoneInterface::GetWindZoneParams()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindZoneInterface.GetWindZoneParams");
@@ -87,10 +89,12 @@ struct FWindZoneParams UWindZoneInterface::GetWindZoneParams()
 }
 
 
-// Function Wind.WindZoneInterface.GetWindZoneLocation
-// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CD530
+//		Name   -> Function Wind.WindZoneInterface.GetWindZoneLocation
+//		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector2D               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector2D                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector2D UWindZoneInterface::GetWindZoneLocation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindZoneInterface.GetWindZoneLocation");
@@ -108,11 +112,13 @@ struct FVector2D UWindZoneInterface::GetWindZoneLocation()
 }
 
 
-// Function Wind.WindZoneInterface.GetTurbulence
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CCF50
+//		Name   -> Function Wind.WindZoneInterface.GetTurbulence
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 Location                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// struct FWindZoneTurbulence     ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FWindZoneTurbulence                         ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FWindZoneTurbulence UWindZoneInterface::GetTurbulence(const struct FVector& Location)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindZoneInterface.GetTurbulence");
@@ -143,8 +149,10 @@ void UWindZoneInterface::BeforeDelete()
 
 }
 
-// Function Wind.WindInterface.UnregisterWindZone
-// (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CDA40
+//		Name   -> Function Wind.WindInterface.UnregisterWindZone
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 void UWindInterface::UnregisterWindZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.UnregisterWindZone");
@@ -160,10 +168,12 @@ void UWindInterface::UnregisterWindZone()
 }
 
 
-// Function Wind.WindInterface.TriggerChange
-// (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD9B0
+//		Name   -> Function Wind.WindInterface.TriggerChange
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           ChangeInstantly                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               ChangeInstantly                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UWindInterface::TriggerChange(bool ChangeInstantly)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.TriggerChange");
@@ -180,10 +190,12 @@ void UWindInterface::TriggerChange(bool ChangeInstantly)
 }
 
 
-// Function Wind.WindInterface.SetParams
-// (BlueprintAuthorityOnly, Native, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD910
+//		Name   -> Function Wind.WindInterface.SetParams
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWindServiceParams      Params                         (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FWindServiceParams                          Params                                                     (ConstParm, Parm, OutParm, ReferenceParm)
 void UWindInterface::SetParams(const struct FWindServiceParams& Params)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetParams");
@@ -200,10 +212,12 @@ void UWindInterface::SetParams(const struct FWindServiceParams& Params)
 }
 
 
-// Function Wind.WindInterface.SetGlobalWindVector
-// (BlueprintAuthorityOnly, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD880
+//		Name   -> Function Wind.WindInterface.SetGlobalWindVector
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector                 InWindVector                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     InWindVector                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UWindInterface::SetGlobalWindVector(const struct FVector& InWindVector)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetGlobalWindVector");
@@ -220,10 +234,12 @@ void UWindInterface::SetGlobalWindVector(const struct FVector& InWindVector)
 }
 
 
-// Function Wind.WindInterface.SetGlobalWindMagnitude
-// (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD800
+//		Name   -> Function Wind.WindInterface.SetGlobalWindMagnitude
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          InWindMagnitude                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              InWindMagnitude                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWindInterface::SetGlobalWindMagnitude(float InWindMagnitude)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetGlobalWindMagnitude");
@@ -240,10 +256,12 @@ void UWindInterface::SetGlobalWindMagnitude(float InWindMagnitude)
 }
 
 
-// Function Wind.WindInterface.SetGlobalWindDirection
-// (BlueprintAuthorityOnly, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD770
+//		Name   -> Function Wind.WindInterface.SetGlobalWindDirection
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector                 InWindDirection                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     InWindDirection                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UWindInterface::SetGlobalWindDirection(const struct FVector& InWindDirection)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetGlobalWindDirection");
@@ -260,10 +278,12 @@ void UWindInterface::SetGlobalWindDirection(const struct FVector& InWindDirectio
 }
 
 
-// Function Wind.WindInterface.SetGlobalWindAngle
-// (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD6F0
+//		Name   -> Function Wind.WindInterface.SetGlobalWindAngle
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          InAngle                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              InAngle                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWindInterface::SetGlobalWindAngle(float InAngle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetGlobalWindAngle");
@@ -280,8 +300,10 @@ void UWindInterface::SetGlobalWindAngle(float InAngle)
 }
 
 
-// Function Wind.WindInterface.RegisterWindZone
-// (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD5E0
+//		Name   -> Function Wind.WindInterface.RegisterWindZone
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 void UWindInterface::RegisterWindZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.RegisterWindZone");
@@ -297,10 +319,12 @@ void UWindInterface::RegisterWindZone()
 }
 
 
-// Function Wind.WindInterface.GetWindZoneAtLocation
-// (BlueprintAuthorityOnly, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CD480
+//		Name   -> Function Wind.WindInterface.GetWindZoneAtLocation
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UWindInterface::GetWindZoneAtLocation(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindZoneAtLocation");
@@ -317,11 +341,13 @@ void UWindInterface::GetWindZoneAtLocation(const struct FVector& SamplePosition)
 }
 
 
-// Function Wind.WindInterface.GetWindVector
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CD3D0
+//		Name   -> Function Wind.WindInterface.GetWindVector
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector UWindInterface::GetWindVector(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindVector");
@@ -340,11 +366,13 @@ struct FVector UWindInterface::GetWindVector(const struct FVector& SamplePositio
 }
 
 
-// Function Wind.WindInterface.GetWindMagnitude
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CD2E0
+//		Name   -> Function Wind.WindInterface.GetWindMagnitude
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UWindInterface::GetWindMagnitude(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindMagnitude");
@@ -363,11 +391,13 @@ float UWindInterface::GetWindMagnitude(const struct FVector& SamplePosition)
 }
 
 
-// Function Wind.WindInterface.GetWindDirection
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CD230
+//		Name   -> Function Wind.WindInterface.GetWindDirection
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector UWindInterface::GetWindDirection(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindDirection");
@@ -386,11 +416,13 @@ struct FVector UWindInterface::GetWindDirection(const struct FVector& SamplePosi
 }
 
 
-// Function Wind.WindInterface.GetWindAngle
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CD0B0
+//		Name   -> Function Wind.WindInterface.GetWindAngle
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UWindInterface::GetWindAngle(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindAngle");
@@ -409,11 +441,13 @@ float UWindInterface::GetWindAngle(const struct FVector& SamplePosition)
 }
 
 
-// Function Wind.WindInterface.GetTurbulenceForTrees
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CD000
+//		Name   -> Function Wind.WindInterface.GetTurbulenceForTrees
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// struct FWindZoneTurbulence     ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FWindZoneTurbulence                         ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FWindZoneTurbulence UWindInterface::GetTurbulenceForTrees(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetTurbulenceForTrees");
@@ -432,11 +466,13 @@ struct FWindZoneTurbulence UWindInterface::GetTurbulenceForTrees(const struct FV
 }
 
 
-// Function Wind.WindInterface.GetTurbulence
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CCEA0
+//		Name   -> Function Wind.WindInterface.GetTurbulence
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// struct FWindZoneTurbulence     ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FWindZoneTurbulence                         ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FWindZoneTurbulence UWindInterface::GetTurbulence(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetTurbulence");
@@ -455,10 +491,12 @@ struct FWindZoneTurbulence UWindInterface::GetTurbulence(const struct FVector& S
 }
 
 
-// Function Wind.WindInterface.GetMaxWindMagnitude
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CCE70
+//		Name   -> Function Wind.WindInterface.GetMaxWindMagnitude
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UWindInterface::GetMaxWindMagnitude()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetMaxWindMagnitude");
@@ -536,10 +574,12 @@ void UTestWindZone::BeforeDelete()
 
 }
 
-// Function Wind.WindFunctions.SetDefaultWindBlowingNorth
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD680
+//		Name   -> Function Wind.WindFunctions.SetDefaultWindBlowingNorth
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWindFunctions::STATIC_SetDefaultWindBlowingNorth(class UObject* WorldContextObject)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindFunctions.SetDefaultWindBlowingNorth");
@@ -556,12 +596,14 @@ void UWindFunctions::STATIC_SetDefaultWindBlowingNorth(class UObject* WorldConte
 }
 
 
-// Function Wind.WindFunctions.GetWindAtLocation
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x031CD150
+//		Name   -> Function Wind.WindFunctions.GetWindAtLocation
+//		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 WorldPosition                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     WorldPosition                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector UWindFunctions::STATIC_GetWindAtLocation(class UObject* WorldContextObject, const struct FVector& WorldPosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindFunctions.GetWindAtLocation");
@@ -593,8 +635,10 @@ void UWindFunctions::BeforeDelete()
 
 }
 
-// Function Wind.WindService.OnRep_WindMagnitude
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x031CD5C0
+//		Name   -> Function Wind.WindService.OnRep_WindMagnitude
+//		Flags  -> (Final, Native, Private)
 void AWindService::OnRep_WindMagnitude()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindService.OnRep_WindMagnitude");
@@ -610,8 +654,10 @@ void AWindService::OnRep_WindMagnitude()
 }
 
 
-// Function Wind.WindService.OnRep_WindAngle
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x031CD5A0
+//		Name   -> Function Wind.WindService.OnRep_WindAngle
+//		Flags  -> (Final, Native, Private)
 void AWindService::OnRep_WindAngle()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindService.OnRep_WindAngle");
@@ -627,10 +673,12 @@ void AWindService::OnRep_WindAngle()
 }
 
 
-// Function Wind.WindService.GetWindParams
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031CD380
+//		Name   -> Function Wind.WindService.GetWindParams
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FWindServiceParams      ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FWindServiceParams                          ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FWindServiceParams AWindService::GetWindParams()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindService.GetWindParams");
@@ -674,12 +722,14 @@ void ADebugWindService::BeforeDelete()
 
 }
 
-// Function Wind.WindServiceParamsFunctionLibrary.AreWindServiceParamsEqual
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x031CCD70
+//		Name   -> Function Wind.WindServiceParamsFunctionLibrary.AreWindServiceParamsEqual
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FWindServiceParams      Params1                        (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FWindServiceParams      Params2                        (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FWindServiceParams                          Params1                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FWindServiceParams                          Params2                                                    (ConstParm, Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWindServiceParamsFunctionLibrary::STATIC_AreWindServiceParamsEqual(const struct FWindServiceParams& Params1, const struct FWindServiceParams& Params2)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindServiceParamsFunctionLibrary.AreWindServiceParamsEqual");

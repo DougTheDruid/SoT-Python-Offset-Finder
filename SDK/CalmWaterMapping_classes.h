@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -46,7 +46,7 @@ public:
 class AAthenaCalmWaterZone : public ACalmWaterZone
 {
 public:
-	unsigned char                                      UnknownData_CWCX[0x20];                                    // 0x03D8(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MN6K[0x20];                                    // 0x03D8(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -67,7 +67,7 @@ public:
 class UCalmWaterMappingService : public UObject
 {
 public:
-	unsigned char                                      UnknownData_N1UF[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_VKI7[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

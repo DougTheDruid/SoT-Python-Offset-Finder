@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -47,15 +47,15 @@ public:
 	struct FCollisionProfileName                       SolidCollisionProfile;                                     // 0x05B8(0x0008) (Edit)
 	struct FCollisionProfileName                       KnockbackTraceProfile;                                     // 0x05C0(0x0008) (Edit)
 	TEnumAsByte<KnockbackFramework_EKnockbackType>     KnockbackType;                                             // 0x05C8(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_T1TA[0x3];                                     // 0x05C9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_K8Q7[0x3];                                     // 0x05C9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FKnockBackInfo                              KnockbackParams;                                           // 0x05CC(0x0050) (Edit)
 	TWeakObjectPtr<class AActor>                       ActorToTarget;                                             // 0x061C(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
-	unsigned char                                      UnknownData_Z15U[0x4];                                     // 0x0624(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_6A9J[0x4];                                     // 0x0624(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      KnockbackDamageType;                                       // 0x0628(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	float                                              KnockbackInterval;                                         // 0x0630(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_MYSG[0x4];                                     // 0x0634(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MRQK[0x4];                                     // 0x0634(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TEnumAsByte<KnockbackFramework_ESolidState>        SolidState;                                                // 0x0638(0x0001) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_21CA[0x7];                                     // 0x0639(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_J7YM[0x7];                                     // 0x0639(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.PlayShowTokenAnimation
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.PlayShowTokenAnimation
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*     Token                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UPrimitiveComponent*                         Token                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_VotableVoyageProposal_C::PlayShowTokenAnimation(class UPrimitiveComponent* Token)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.PlayShowTokenAnimation");
@@ -37,10 +39,12 @@ void ABP_VotableVoyageProposal_C::PlayShowTokenAnimation(class UPrimitiveCompone
 }
 
 
-// Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.Is Session Locked
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.Is Session Locked
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                           IsLocked                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               IsLocked                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_VotableVoyageProposal_C::Is_Session_Locked(bool* IsLocked)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.Is Session Locked");
@@ -58,8 +62,11 @@ void ABP_VotableVoyageProposal_C::Is_Session_Locked(bool* IsLocked)
 }
 
 
-// Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_VotableVoyageProposal_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.UserConstructionScript");
@@ -74,8 +81,10 @@ void ABP_VotableVoyageProposal_C::UserConstructionScript()
 }
 
 
-// Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_VotableVoyageProposal_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.ReceiveBeginPlay");
@@ -90,8 +99,10 @@ void ABP_VotableVoyageProposal_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.OnVoteAdded
-// (Event, Public, HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.OnVoteAdded
+//		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 void ABP_VotableVoyageProposal_C::OnVoteAdded()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.OnVoteAdded");
@@ -106,8 +117,10 @@ void ABP_VotableVoyageProposal_C::OnVoteAdded()
 }
 
 
-// Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.OnVoteRemoved
-// (Event, Public, HasOutParms, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.OnVoteRemoved
+//		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 void ABP_VotableVoyageProposal_C::OnVoteRemoved()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.OnVoteRemoved");
@@ -122,10 +135,12 @@ void ABP_VotableVoyageProposal_C::OnVoteRemoved()
 }
 
 
-// Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.ExecuteUbergraph_BP_VotableVoyageProposal
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.ExecuteUbergraph_BP_VotableVoyageProposal
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_VotableVoyageProposal_C::ExecuteUbergraph_BP_VotableVoyageProposal(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableVoyageProposal.BP_VotableVoyageProposal_C.ExecuteUbergraph_BP_VotableVoyageProposal");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Seagulls_Barrels.BP_Seagulls_Barrels_C
-// 0x0000 (FullSize[0x0478] - InheritedSize[0x0478])
+// 0x0000 (FullSize[0x0480] - InheritedSize[0x0480])
 class ABP_Seagulls_Barrels_C : public ABP_Seagull01_8POI_C
 {
 public:

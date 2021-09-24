@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -43,13 +43,13 @@ public:
 	struct FObjectMessagingHandle                      ShipDestroyedHandle;                                       // 0x05E0(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	class AActor*                                      ParentShipActor;                                           // 0x0628(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               MusicZoneActive;                                           // 0x0630(0x0001) (Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	unsigned char                                      UnknownData_VOGJ[0x3];                                     // 0x0631(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9YZ5[0x3];                                     // 0x0631(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              GemEmissiveOn;                                             // 0x0634(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UMaterialInstanceDynamic*                    Shroudbreaker_Material;                                    // 0x0638(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                              GemEmissiveOff;                                            // 0x0640(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               ShroudBreakerEffectsActive;                                // 0x0644(0x0001) (Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 	bool                                               ShroudBreakerDeactivate;                                   // 0x0645(0x0001) (Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	unsigned char                                      UnknownData_S9LH[0x2];                                     // 0x0646(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_Q4NR[0x2];                                     // 0x0646(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FObjectMessagingHandle                      PlayerEnteredIslandVincityEventHandle;                     // 0x0648(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FObjectMessagingHandle                      PlayerLeftIslandVincityEventHandle;                        // 0x0690(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<TAssetPtr<class AProgressShipSpawnLocation>> ShipProgressSpawnLoactionsAssetID;                         // 0x06D8(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)

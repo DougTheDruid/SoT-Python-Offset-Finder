@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -20,12 +20,12 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_AthenaGameState.BP_AthenaGameState_C
-// 0x0010 (FullSize[0x0A88] - InheritedSize[0x0A78])
+// 0x0010 (FullSize[0x0A90] - InheritedSize[0x0A80])
 class ABP_AthenaGameState_C : public AAthenaGameState
 {
 public:
-	class UWorldMarkerRoutingComponent*                WorldMarkerRouting;                                        // 0x0A78(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
-	class USceneComponent*                             DefaultSceneRoot;                                          // 0x0A80(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	class UWorldMarkerRoutingComponent*                WorldMarkerRouting;                                        // 0x0A80(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	class USceneComponent*                             DefaultSceneRoot;                                          // 0x0A88(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
 
 
 	static UClass* StaticClass()

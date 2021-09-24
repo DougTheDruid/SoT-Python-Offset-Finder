@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -332,8 +332,10 @@ void FPlayerFireGridTickParams::BeforeDelete()
 	DELE_PTR_FULL(PlayerShipSize);
 }
 
-// Function Fire.FlammableComponent.OnRep_OnFire
-// (Final, Native, Protected)
+// Function:
+//		Offset -> 0x03345900
+//		Name   -> Function Fire.FlammableComponent.OnRep_OnFire
+//		Flags  -> (Final, Native, Protected)
 void UFlammableComponent::OnRep_OnFire()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.FlammableComponent.OnRep_OnFire");
@@ -349,10 +351,12 @@ void UFlammableComponent::OnRep_OnFire()
 }
 
 
-// Function Fire.FlammableComponent.Multicast_NotifyExtinguished_RPC
-// (Net, Native, Event, NetMulticast, Protected, HasDefaults)
+// Function:
+//		Offset -> 0x03345880
+//		Name   -> Function Fire.FlammableComponent.Multicast_NotifyExtinguished_RPC
+//		Flags  -> (Net, Native, Event, NetMulticast, Protected, HasDefaults)
 // Parameters:
-// struct FVector                 InExtinguishLocationWS         (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     InExtinguishLocationWS                                     (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UFlammableComponent::Multicast_NotifyExtinguished_RPC(const struct FVector& InExtinguishLocationWS)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.FlammableComponent.Multicast_NotifyExtinguished_RPC");
@@ -369,10 +373,12 @@ void UFlammableComponent::Multicast_NotifyExtinguished_RPC(const struct FVector&
 }
 
 
-// Function Fire.FlammableComponent.IsOnFire
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03345840
+//		Name   -> Function Fire.FlammableComponent.IsOnFire
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UFlammableComponent::IsOnFire()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.FlammableComponent.IsOnFire");
@@ -390,8 +396,10 @@ bool UFlammableComponent::IsOnFire()
 }
 
 
-// Function Fire.FlammableComponent.IncrementFireSource
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03345810
+//		Name   -> Function Fire.FlammableComponent.IncrementFireSource
+//		Flags  -> (Native, Public, BlueprintCallable)
 void UFlammableComponent::IncrementFireSource()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.FlammableComponent.IncrementFireSource");
@@ -407,8 +415,10 @@ void UFlammableComponent::IncrementFireSource()
 }
 
 
-// Function Fire.FlammableComponent.DecrementFireSource
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x033457C0
+//		Name   -> Function Fire.FlammableComponent.DecrementFireSource
+//		Flags  -> (Native, Public, BlueprintCallable)
 void UFlammableComponent::DecrementFireSource()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.FlammableComponent.DecrementFireSource");
@@ -500,8 +510,10 @@ void UFireStatus::BeforeDelete()
 
 }
 
-// Function Fire.FlammableInterface.IncrementFireSource
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x033457F0
+//		Name   -> Function Fire.FlammableInterface.IncrementFireSource
+//		Flags  -> (Native, Public, BlueprintCallable)
 void UFlammableInterface::IncrementFireSource()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.FlammableInterface.IncrementFireSource");
@@ -517,8 +529,10 @@ void UFlammableInterface::IncrementFireSource()
 }
 
 
-// Function Fire.FlammableInterface.DecrementFireSource
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x033457A0
+//		Name   -> Function Fire.FlammableInterface.DecrementFireSource
+//		Flags  -> (Native, Public, BlueprintCallable)
 void UFlammableInterface::DecrementFireSource()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.FlammableInterface.DecrementFireSource");
@@ -618,10 +632,12 @@ void UFireGridCellSelectionParamsDataAsset::BeforeDelete()
 
 }
 
-// Function Fire.FirePropagationInterface.SetAllCellsState
-// (BlueprintAuthorityOnly, Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x037D01A0
+//		Name   -> Function Fire.FirePropagationInterface.SetAllCellsState
+//		Flags  -> (BlueprintAuthorityOnly, Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<Fire_EFireCellState> State                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Fire_EFireCellState>                   State                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UFirePropagationInterface::SetAllCellsState(TEnumAsByte<Fire_EFireCellState> State)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.FirePropagationInterface.SetAllCellsState");
@@ -796,8 +812,10 @@ void UShipFireLightParamsDataAsset::BeforeDelete()
 
 }
 
-// Function Fire.ShipFirePropagationComponent.OnRep_CellData
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x037D0180
+//		Name   -> Function Fire.ShipFirePropagationComponent.OnRep_CellData
+//		Flags  -> (Final, Native, Private)
 void UShipFirePropagationComponent::OnRep_CellData()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.ShipFirePropagationComponent.OnRep_CellData");
@@ -813,8 +831,10 @@ void UShipFirePropagationComponent::OnRep_CellData()
 }
 
 
-// Function Fire.ShipFirePropagationComponent.OnRep_CellCharringData
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x037D0160
+//		Name   -> Function Fire.ShipFirePropagationComponent.OnRep_CellCharringData
+//		Flags  -> (Final, Native, Private)
 void UShipFirePropagationComponent::OnRep_CellCharringData()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Fire.ShipFirePropagationComponent.OnRep_CellCharringData");

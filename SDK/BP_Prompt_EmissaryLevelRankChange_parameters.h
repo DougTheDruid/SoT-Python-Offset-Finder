@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Prompt_EmissaryLevelRankChange.BP_Prompt_EmissaryLevelRankChange_C.OnEmissaryLevelRankChange
 struct UBP_Prompt_EmissaryLevelRankChange_C_OnEmissaryLevelRankChange_Params
 {
-	struct FEmissaryLevel_FEmissaryLevelRankChange     NewParam;                                                  // (Parm)
+	struct FEmissaryLevel_FEmissaryLevelRankChange     NewParam;                                                  // 0x0000(0x000C)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryLevelRankChange.BP_Prompt_EmissaryLevelRankChange_C.EmissaryLevelRankChange
 struct UBP_Prompt_EmissaryLevelRankChange_C_EmissaryLevelRankChange_Params
 {
-	struct FEmissaryLevel_FEmissaryLevelRankChange     NewParam;                                                  // (Parm)
+	struct FEmissaryLevel_FEmissaryLevelRankChange     NewParam;                                                  // 0x0000(0x000C)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryLevelRankChange.BP_Prompt_EmissaryLevelRankChange_C.Evaluate
@@ -49,7 +49,7 @@ struct UBP_Prompt_EmissaryLevelRankChange_C_UnregisterOtherEvents_Implementable_
 // Function BP_Prompt_EmissaryLevelRankChange.BP_Prompt_EmissaryLevelRankChange_C.ExecuteUbergraph_BP_Prompt_EmissaryLevelRankChange
 struct UBP_Prompt_EmissaryLevelRankChange_C_ExecuteUbergraph_BP_Prompt_EmissaryLevelRankChange_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

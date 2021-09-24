@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.OnEmissaryKilledAnotherEmissary
 struct UBP_Prompt_EmissaryKilledAnotherEmissary_C_OnEmissaryKilledAnotherEmissary_Params
 {
-	struct FEmissaryKilledAnotherEmissaryNetworkEvent  NewParam;                                                  // (Parm)
+	struct FEmissaryKilledAnotherEmissaryNetworkEvent  NewParam;                                                  // 0x0000(0x0020)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.EmissaryKilledAnotherEmisary
 struct UBP_Prompt_EmissaryKilledAnotherEmissary_C_EmissaryKilledAnotherEmisary_Params
 {
-	struct FEmissaryKilledAnotherEmissaryNetworkEvent  NewParam;                                                  // (Parm)
+	struct FEmissaryKilledAnotherEmissaryNetworkEvent  NewParam;                                                  // 0x0000(0x0020)  (Parm)
 };
 
 // Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.Evaluate
@@ -49,7 +49,7 @@ struct UBP_Prompt_EmissaryKilledAnotherEmissary_C_UnregisterOtherEvents_Implemen
 // Function BP_Prompt_EmissaryKilledAnotherEmissary.BP_Prompt_EmissaryKilledAnotherEmissary_C.ExecuteUbergraph_BP_Prompt_EmissaryKilledAnotherEmissary
 struct UBP_Prompt_EmissaryKilledAnotherEmissary_C_ExecuteUbergraph_BP_Prompt_EmissaryKilledAnotherEmissary_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

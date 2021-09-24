@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -32,10 +32,12 @@ void AMultiTargetEnchantedCompass::BeforeDelete()
 	DELE_PTR_FULL(InventoryItem);
 }
 
-// Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.GetFloatMax
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03DC7F60
+//		Name   -> Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.GetFloatMax
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// float                          ReturnValue                    (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float APrototypeMultiTargetEnchantedCompass::GetFloatMax()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.GetFloatMax");
@@ -53,11 +55,13 @@ float APrototypeMultiTargetEnchantedCompass::GetFloatMax()
 }
 
 
-// Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.CalculateDesiredYaw
-// (Event, Public, HasOutParms, HasDefaults, BlueprintEvent, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.CalculateDesiredYaw
+//		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent, Const)
 // Parameters:
-// struct FRotator                CompassRotation                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FRotator                                    CompassRotation                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float APrototypeMultiTargetEnchantedCompass::CalculateDesiredYaw(const struct FRotator& CompassRotation)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.CalculateDesiredYaw");
@@ -75,10 +79,12 @@ float APrototypeMultiTargetEnchantedCompass::CalculateDesiredYaw(const struct FR
 }
 
 
-// Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.BP_GetTargetLocations
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Function:
+//		Offset -> 0x03DC7EB0
+//		Name   -> Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.BP_GetTargetLocations
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// TArray<struct FVector>         ReturnValue                    (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm)
+//		TArray<struct FVector>                             ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm)
 TArray<struct FVector> APrototypeMultiTargetEnchantedCompass::BP_GetTargetLocations()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.BP_GetTargetLocations");

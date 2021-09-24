@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,27 +22,27 @@ namespace CG
 // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPurchaseable
 struct UBP_CT_VoyageProgress_C_IsPurchaseable_Params
 {
-	bool                                               Result;                                                    // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               Result;                                                    // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.SetProgress
 struct UBP_CT_VoyageProgress_C_SetProgress_Params
 {
-	TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> NewProgress;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> NewProgress;                                               // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsCurrently
 struct UBP_CT_VoyageProgress_C_IsCurrently_Params
 {
-	TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> ProgressState;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               Result;                                                    // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> ProgressState;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               Result;                                                    // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPast
 struct UBP_CT_VoyageProgress_C_IsPast_Params
 {
-	TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> ProgressState;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               Result;                                                    // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TEnumAsByte<TutorialVoyageInternalState_ETutorialVoyageInternalState> ProgressState;                                             // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               Result;                                                    // 0x0001(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.PopulateExistingState
@@ -53,13 +53,13 @@ struct UBP_CT_VoyageProgress_C_PopulateExistingState_Params
 // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.Initialise
 struct UBP_CT_VoyageProgress_C_Initialise_Params
 {
-	bool                                               Disabled;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               Disabled;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.ExecuteUbergraph_BP_CT_VoyageProgress
 struct UBP_CT_VoyageProgress_C_ExecuteUbergraph_BP_CT_VoyageProgress_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

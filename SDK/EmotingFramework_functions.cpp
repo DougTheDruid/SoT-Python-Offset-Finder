@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -28,10 +28,12 @@ void FEmoteId::BeforeDelete()
 
 void FEmoteData::AfterRead()
 {
+	READ_PTR_FULL(EmotePropDataAsset, UEmotePropData);
 }
 
 void FEmoteData::BeforeDelete()
 {
+	DELE_PTR_FULL(EmotePropDataAsset);
 }
 
 void FEventEmoteEndRequested::AfterRead()
@@ -105,6 +107,86 @@ void AEmoteCoin::AfterRead()
 }
 
 void AEmoteCoin::BeforeDelete()
+{
+	AActor::BeforeDelete();
+
+}
+
+void UEmotePropData::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+}
+
+void UEmotePropData::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+}
+
+void UEmotePropDiceData::AfterRead()
+{
+	UEmotePropData::AfterRead();
+
+}
+
+void UEmotePropDiceData::BeforeDelete()
+{
+	UEmotePropData::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function EmotingFramework.EmoteDice.SetDiceMesh
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+//		TEnumAsByte<EmotingFramework_EDiceType>            DiceType                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AEmoteDice::SetDiceMesh(TEnumAsByte<EmotingFramework_EDiceType> DiceType)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function EmotingFramework.EmoteDice.SetDiceMesh");
+
+	AEmoteDice_SetDiceMesh_Params params;
+	params.DiceType = DiceType;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function EmotingFramework.EmoteDice.RollDice
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+//		int                                                RollNumber                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<EmotingFramework_EDiceType>            DiceType                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AEmoteDice::RollDice(int RollNumber, TEnumAsByte<EmotingFramework_EDiceType> DiceType)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function EmotingFramework.EmoteDice.RollDice");
+
+	AEmoteDice_RollDice_Params params;
+	params.RollNumber = RollNumber;
+	params.DiceType = DiceType;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void AEmoteDice::AfterRead()
+{
+	AActor::AfterRead();
+
+}
+
+void AEmoteDice::BeforeDelete()
 {
 	AActor::BeforeDelete();
 

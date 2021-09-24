@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -58,9 +58,9 @@ public:
 class ACustomDeathService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_TT8G[0x38];                                    // 0x03D0(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9KN7[0x38];                                    // 0x03D0(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class APlayerStart*>                        CustomPlayerStarts;                                        // 0x0408(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData_OEE5[0x50];                                    // 0x0418(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EH7R[0x50];                                    // 0x0418(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

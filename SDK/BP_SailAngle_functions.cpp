@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_SailAngle.BP_SailAngle_C.GetDockableInfo
-// (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_SailAngle.BP_SailAngle_C.GetDockableInfo
+//		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDockableInfo           ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FDockableInfo                               ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FDockableInfo ABP_SailAngle_C::GetDockableInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SailAngle.BP_SailAngle_C.GetDockableInfo");
@@ -38,8 +40,11 @@ struct FDockableInfo ABP_SailAngle_C::GetDockableInfo()
 }
 
 
-// Function BP_SailAngle.BP_SailAngle_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_SailAngle.BP_SailAngle_C.UserConstructionScript
+//		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_SailAngle_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SailAngle.BP_SailAngle_C.UserConstructionScript");

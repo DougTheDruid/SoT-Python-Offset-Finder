@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,12 +18,14 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.IsCharacterInsideRadius
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.IsCharacterInsideRadius
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 Center                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Radius                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Result                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     Center                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Radius                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_PromptCoordinator_Base_C::IsCharacterInsideRadius(const struct FVector& Center, float Radius, bool* Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.IsCharacterInsideRadius");
@@ -43,8 +45,10 @@ void UBP_PromptCoordinator_Base_C::IsCharacterInsideRadius(const struct FVector&
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UninitializeImplementable
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UninitializeImplementable
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_Base_C::UninitializeImplementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UninitializeImplementable");
@@ -59,10 +63,12 @@ void UBP_PromptCoordinator_Base_C::UninitializeImplementable()
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetHUDObjectMessageDispatcher
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetHUDObjectMessageDispatcher
+//		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle HUD_Dispatcher                 (Parm, OutParm)
+//		struct FObjectMessagingDispatcherHandle            HUD_Dispatcher                                             (Parm, OutParm)
 void UBP_PromptCoordinator_Base_C::GetHUDObjectMessageDispatcher(struct FObjectMessagingDispatcherHandle* HUD_Dispatcher)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetHUDObjectMessageDispatcher");
@@ -80,8 +86,10 @@ void UBP_PromptCoordinator_Base_C::GetHUDObjectMessageDispatcher(struct FObjectM
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Complete
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Complete
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_Base_C::Complete()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Complete");
@@ -96,8 +104,10 @@ void UBP_PromptCoordinator_Base_C::Complete()
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UnregisterHandles
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UnregisterHandles
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_Base_C::UnregisterHandles()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.UnregisterHandles");
@@ -112,8 +122,10 @@ void UBP_PromptCoordinator_Base_C::UnregisterHandles()
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.PostInitialize
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.PostInitialize
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_Base_C::PostInitialize()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.PostInitialize");
@@ -128,10 +140,12 @@ void UBP_PromptCoordinator_Base_C::PostInitialize()
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.InitializeAndStart
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.InitializeAndStart
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AAthenaPlayerController* PlayerController               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AAthenaPlayerController*                     PlayerController                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_PromptCoordinator_Base_C::InitializeAndStart(class AAthenaPlayerController* PlayerController)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.InitializeAndStart");
@@ -147,10 +161,12 @@ void UBP_PromptCoordinator_Base_C::InitializeAndStart(class AAthenaPlayerControl
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetCharacterObjectMessageDispatcher
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetCharacterObjectMessageDispatcher
+//		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle Player_Dispatcher              (Parm, OutParm)
+//		struct FObjectMessagingDispatcherHandle            Player_Dispatcher                                          (Parm, OutParm)
 void UBP_PromptCoordinator_Base_C::GetCharacterObjectMessageDispatcher(struct FObjectMessagingDispatcherHandle* Player_Dispatcher)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetCharacterObjectMessageDispatcher");
@@ -168,8 +184,10 @@ void UBP_PromptCoordinator_Base_C::GetCharacterObjectMessageDispatcher(struct FO
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Evaluate
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Evaluate
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_Base_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Evaluate");
@@ -184,10 +202,12 @@ void UBP_PromptCoordinator_Base_C::Evaluate()
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetControllerObjectMessageDispatcher
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetControllerObjectMessageDispatcher
+//		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle Player_Dispatcher              (Parm, OutParm)
+//		struct FObjectMessagingDispatcherHandle            Player_Dispatcher                                          (Parm, OutParm)
 void UBP_PromptCoordinator_Base_C::GetControllerObjectMessageDispatcher(struct FObjectMessagingDispatcherHandle* Player_Dispatcher)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.GetControllerObjectMessageDispatcher");
@@ -205,8 +225,10 @@ void UBP_PromptCoordinator_Base_C::GetControllerObjectMessageDispatcher(struct F
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Start
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Start
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_Base_C::Start()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.Start");
@@ -221,10 +243,12 @@ void UBP_PromptCoordinator_Base_C::Start()
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.ExecuteUbergraph_BP_PromptCoordinator_Base
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.ExecuteUbergraph_BP_PromptCoordinator_Base
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_PromptCoordinator_Base_C::ExecuteUbergraph_BP_PromptCoordinator_Base(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.ExecuteUbergraph_BP_PromptCoordinator_Base");
@@ -240,8 +264,10 @@ void UBP_PromptCoordinator_Base_C::ExecuteUbergraph_BP_PromptCoordinator_Base(in
 }
 
 
-// Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.OnComplete__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.OnComplete__DelegateSignature
+//		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_Base_C::OnComplete__DelegateSignature()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_Base.BP_PromptCoordinator_Base_C.OnComplete__DelegateSignature");

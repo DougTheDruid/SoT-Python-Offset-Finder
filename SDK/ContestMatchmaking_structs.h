@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -27,7 +27,7 @@ struct FServerCrewModel
 	struct FUniqueNetIdRepl                            UserId;                                                    // 0x0010(0x0018)
 	struct FGuid                                       ServerId;                                                  // 0x0028(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	int                                                SessionType;                                               // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_10HJ[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_OEX4[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FVector2D>                           Positions;                                                 // 0x0040(0x0010) (ZeroConstructor)
 	TArray<uint32_t>                                   Resources;                                                 // 0x0050(0x0010) (ZeroConstructor)
 
@@ -45,7 +45,7 @@ struct FContestMatchmakingServerRequestModel
 	struct FString                                     PrivateServerId;                                           // 0x0020(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     ServerLocation;                                            // 0x0030(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	uint32_t                                           FeatureHash;                                               // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ENGV[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_DBPD[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FString>                             PlayModeTags;                                              // 0x0048(0x0010) (ZeroConstructor)
 	TArray<struct FString>                             PlayModeStates;                                            // 0x0058(0x0010) (ZeroConstructor)
 	TArray<struct FServerCrewModel>                    Crews;                                                     // 0x0068(0x0010) (ZeroConstructor)
@@ -57,13 +57,25 @@ struct FContestMatchmakingServerRequestModel
 };
 
 // ScriptStruct ContestMatchmaking.ServerCrewResponseModel
-// 0x0028
+// 0x0078
 struct FServerCrewResponseModel
 {
 	TArray<struct FServerCrewModel>                    Crews;                                                     // 0x0000(0x0010) (ZeroConstructor)
-	struct FTimespan                                   RetryAfter;                                                // 0x0010(0x0008) (ZeroConstructor)
-	struct FTimespan                                   MigrationThreshold;                                        // 0x0018(0x0008) (ZeroConstructor)
-	struct FTimespan                                   ExpireAfter;                                               // 0x0020(0x0008) (ZeroConstructor)
+	TMap<struct FString, struct FString>               OptionalPlayModeInfo;                                      // 0x0010(0x0050) (ZeroConstructor)
+	struct FTimespan                                   RetryAfter;                                                // 0x0060(0x0008) (ZeroConstructor)
+	struct FTimespan                                   MigrationThreshold;                                        // 0x0068(0x0008) (ZeroConstructor)
+	struct FTimespan                                   ExpireAfter;                                               // 0x0070(0x0008) (ZeroConstructor)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct ContestMatchmaking.OptionalPlayModeModel
+// 0x0050
+struct FOptionalPlayModeModel
+{
+	TMap<struct FString, struct FString>               OptionalPlayModeMap;                                       // 0x0000(0x0050) (ZeroConstructor)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -104,7 +116,7 @@ struct FServerCrewRequestModel
 	struct FString                                     PrivateServerId;                                           // 0x0020(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     ServerLocation;                                            // 0x0030(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	uint32_t                                           FeatureHash;                                               // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_XWQR[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_M0YB[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FString>                             PlayModeTags;                                              // 0x0048(0x0010) (ZeroConstructor)
 	struct FString                                     PlayModeState;                                             // 0x0058(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	int                                                CrewCount;                                                 // 0x0068(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

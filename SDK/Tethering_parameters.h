@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,13 +22,13 @@ namespace CG
 // Function Tethering.DynamicCordRenderComponent.SetCordEndPointB
 struct UDynamicCordRenderComponent_SetCordEndPointB_Params
 {
-	class USceneComponent*                             EndPointB;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                             EndPointB;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Tethering.DynamicCordRenderComponent.SetCordEndPointA
 struct UDynamicCordRenderComponent_SetCordEndPointA_Params
 {
-	class USceneComponent*                             EndPointA;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                             EndPointA;                                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

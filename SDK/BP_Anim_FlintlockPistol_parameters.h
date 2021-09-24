@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -27,15 +27,15 @@ struct UBP_Anim_FlintlockPistol_C_AnimNotify_ExitedFire_Params
 // Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.OnOneShotUseTriggered
 struct UBP_Anim_FlintlockPistol_C_OnOneShotUseTriggered_Params
 {
-	class UClass*                                      InputID;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FWieldableItemActionVisuals                 ActionVisuals;                                             // (ConstParm, Parm, OutParm, ReferenceParm)
+	class UClass*                                      InputID;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FWieldableItemActionVisuals                 ActionVisuals;                                             // 0x0008(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.OnUseStarted
 struct UBP_Anim_FlintlockPistol_C_OnUseStarted_Params
 {
-	class UClass*                                      InputID;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FWieldableItemActionVisuals                 ActionVisuals;                                             // (ConstParm, Parm, OutParm, ReferenceParm)
+	class UClass*                                      InputID;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FWieldableItemActionVisuals                 ActionVisuals;                                             // 0x0008(0x0018)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.BlueprintInitializeAnimation
@@ -46,7 +46,7 @@ struct UBP_Anim_FlintlockPistol_C_BlueprintInitializeAnimation_Params
 // Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.ReloadEventDelegate
 struct UBP_Anim_FlintlockPistol_C_ReloadEventDelegate_Params
 {
-	struct FEventProjectileWeaponReload                Event;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FEventProjectileWeaponReload                Event;                                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.BlueprintUninitializeAnimation
@@ -62,7 +62,7 @@ struct UBP_Anim_FlintlockPistol_C_AnimNotify_ResetReload_Params
 // Function BP_Anim_FlintlockPistol.BP_Anim_FlintlockPistol_C.ExecuteUbergraph_BP_Anim_FlintlockPistol
 struct UBP_Anim_FlintlockPistol_C_ExecuteUbergraph_BP_Anim_FlintlockPistol_Params
 {
-	int                                                EntryPoint;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                EntryPoint;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

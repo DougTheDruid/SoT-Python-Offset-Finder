@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function PlayerGenderInterface.PlayerGenderInterface_C.CheckIsFemale
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function PlayerGenderInterface.PlayerGenderInterface_C.CheckIsFemale
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           IsFemale                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               IsFemale                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UPlayerGenderInterface_C::CheckIsFemale(bool* IsFemale)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PlayerGenderInterface.PlayerGenderInterface_C.CheckIsFemale");

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Figurehead.BP_Figurehead_C.GetVFXComponent
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Figurehead.BP_Figurehead_C.GetVFXComponent
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class UParticleSystemComponent* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UParticleSystemComponent*                    ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 class UParticleSystemComponent* ABP_Figurehead_C::GetVFXComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Figurehead.BP_Figurehead_C.GetVFXComponent");
@@ -38,10 +40,12 @@ class UParticleSystemComponent* ABP_Figurehead_C::GetVFXComponent()
 }
 
 
-// Function BP_Figurehead.BP_Figurehead_C.GetMeshComponent
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Figurehead.BP_Figurehead_C.GetMeshComponent
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class UStaticMeshComponent*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class UStaticMeshComponent*                        ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 class UStaticMeshComponent* ABP_Figurehead_C::GetMeshComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Figurehead.BP_Figurehead_C.GetMeshComponent");
@@ -58,8 +62,10 @@ class UStaticMeshComponent* ABP_Figurehead_C::GetMeshComponent()
 }
 
 
-// Function BP_Figurehead.BP_Figurehead_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Figurehead.BP_Figurehead_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Figurehead_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Figurehead.BP_Figurehead_C.UserConstructionScript");

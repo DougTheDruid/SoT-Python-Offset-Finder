@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_DamageZone.BP_DamageZone_C.GetNumExternalHits
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.GetNumExternalHits
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int                            NumExternalHits                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                NumExternalHits                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_DamageZone_C::GetNumExternalHits(int* NumExternalHits)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.GetNumExternalHits");
@@ -39,8 +41,10 @@ void ABP_DamageZone_C::GetNumExternalHits(int* NumExternalHits)
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.OnRep_Rep_ExternalHitList
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.OnRep_Rep_ExternalHitList
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_DamageZone_C::OnRep_Rep_ExternalHitList()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.OnRep_Rep_ExternalHitList");
@@ -55,10 +59,12 @@ void ABP_DamageZone_C::OnRep_Rep_ExternalHitList()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.GetOrCreateDecalMID
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.GetOrCreateDecalMID
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMaterialInstanceDynamic* DecalMID                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UMaterialInstanceDynamic*                    DecalMID                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_DamageZone_C::GetOrCreateDecalMID(class UMaterialInstanceDynamic** DecalMID)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.GetOrCreateDecalMID");
@@ -76,8 +82,11 @@ void ABP_DamageZone_C::GetOrCreateDecalMID(class UMaterialInstanceDynamic** Deca
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.Initialise
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.Initialise
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_DamageZone_C::Initialise()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.Initialise");
@@ -92,8 +101,11 @@ void ABP_DamageZone_C::Initialise()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.Update External Hits
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.Update External Hits
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_DamageZone_C::Update_External_Hits()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.Update External Hits");
@@ -108,8 +120,11 @@ void ABP_DamageZone_C::Update_External_Hits()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.Clear Decal Flags
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.Clear Decal Flags
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_DamageZone_C::Clear_Decal_Flags()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.Clear Decal Flags");
@@ -124,10 +139,12 @@ void ABP_DamageZone_C::Clear_Decal_Flags()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.Add Deferred Decal
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.Add Deferred Decal
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UDecalComponent*         Decal                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class UDecalComponent*                             Decal                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_DamageZone_C::Add_Deferred_Decal(class UDecalComponent* Decal)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.Add Deferred Decal");
@@ -143,10 +160,12 @@ void ABP_DamageZone_C::Add_Deferred_Decal(class UDecalComponent* Decal)
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.KillDeferredDecal
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.KillDeferredDecal
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UDecalComponent*         Decal                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class UDecalComponent*                             Decal                                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void ABP_DamageZone_C::KillDeferredDecal(class UDecalComponent** Decal)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.KillDeferredDecal");
@@ -164,8 +183,11 @@ void ABP_DamageZone_C::KillDeferredDecal(class UDecalComponent** Decal)
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.RemoveDeferredDecals
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.RemoveDeferredDecals
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_DamageZone_C::RemoveDeferredDecals()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.RemoveDeferredDecals");
@@ -180,10 +202,12 @@ void ABP_DamageZone_C::RemoveDeferredDecals()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.Set Repair Visibility
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.Set Repair Visibility
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           Visible                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Visible                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_DamageZone_C::Set_Repair_Visibility(bool Visible)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.Set Repair Visibility");
@@ -199,10 +223,12 @@ void ABP_DamageZone_C::Set_Repair_Visibility(bool Visible)
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.Add External Hit
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.Add External Hit
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHullDamageHit          HitData                        (Parm)
+//		struct FHullDamageHit                              HitData                                                    (Parm)
 void ABP_DamageZone_C::Add_External_Hit(const struct FHullDamageHit& HitData)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.Add External Hit");
@@ -218,8 +244,11 @@ void ABP_DamageZone_C::Add_External_Hit(const struct FHullDamageHit& HitData)
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.CollectTaggedComponents
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.CollectTaggedComponents
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_DamageZone_C::CollectTaggedComponents()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.CollectTaggedComponents");
@@ -234,8 +263,10 @@ void ABP_DamageZone_C::CollectTaggedComponents()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_DamageZone_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.UserConstructionScript");
@@ -250,10 +281,12 @@ void ABP_DamageZone_C::UserConstructionScript()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.AddExternalHit
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.AddExternalHit
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHullDamageHit          Hit_Data                       (Parm)
+//		struct FHullDamageHit                              Hit_Data                                                   (Parm)
 void ABP_DamageZone_C::AddExternalHit(const struct FHullDamageHit& Hit_Data)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.AddExternalHit");
@@ -269,8 +302,10 @@ void ABP_DamageZone_C::AddExternalHit(const struct FHullDamageHit& Hit_Data)
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.ClearDecalFlags
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.ClearDecalFlags
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void ABP_DamageZone_C::ClearDecalFlags()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.ClearDecalFlags");
@@ -285,10 +320,12 @@ void ABP_DamageZone_C::ClearDecalFlags()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.OnRepairableStateUpdate
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.OnRepairableStateUpdate
+//		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<Repair_ERepairableState> InRepairableState              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Repair_ERepairableState>               InRepairableState                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_DamageZone_C::OnRepairableStateUpdate(TEnumAsByte<Repair_ERepairableState> InRepairableState)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.OnRepairableStateUpdate");
@@ -304,8 +341,10 @@ void ABP_DamageZone_C::OnRepairableStateUpdate(TEnumAsByte<Repair_ERepairableSta
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.OnInitialise
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.OnInitialise
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_DamageZone_C::OnInitialise()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.OnInitialise");
@@ -320,8 +359,10 @@ void ABP_DamageZone_C::OnInitialise()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.OnDecalMaterialUpdatedToRepaired
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.OnDecalMaterialUpdatedToRepaired
+//		Flags  -> (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 void ABP_DamageZone_C::OnDecalMaterialUpdatedToRepaired()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.OnDecalMaterialUpdatedToRepaired");
@@ -336,10 +377,12 @@ void ABP_DamageZone_C::OnDecalMaterialUpdatedToRepaired()
 }
 
 
-// Function BP_DamageZone.BP_DamageZone_C.ExecuteUbergraph_BP_DamageZone
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_DamageZone.BP_DamageZone_C.ExecuteUbergraph_BP_DamageZone
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_DamageZone_C::ExecuteUbergraph_BP_DamageZone(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DamageZone.BP_DamageZone_C.ExecuteUbergraph_BP_DamageZone");

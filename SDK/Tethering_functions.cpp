@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -52,10 +52,12 @@ void UCordRenderComponent::BeforeDelete()
 
 }
 
-// Function Tethering.DynamicCordRenderComponent.SetCordEndPointB
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03682B70
+//		Name   -> Function Tethering.DynamicCordRenderComponent.SetCordEndPointB
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class USceneComponent*         EndPointB                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USceneComponent*                             EndPointB                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UDynamicCordRenderComponent::SetCordEndPointB(class USceneComponent* EndPointB)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tethering.DynamicCordRenderComponent.SetCordEndPointB");
@@ -72,10 +74,12 @@ void UDynamicCordRenderComponent::SetCordEndPointB(class USceneComponent* EndPoi
 }
 
 
-// Function Tethering.DynamicCordRenderComponent.SetCordEndPointA
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03682AF0
+//		Name   -> Function Tethering.DynamicCordRenderComponent.SetCordEndPointA
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class USceneComponent*         EndPointA                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class USceneComponent*                             EndPointA                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UDynamicCordRenderComponent::SetCordEndPointA(class USceneComponent* EndPointA)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tethering.DynamicCordRenderComponent.SetCordEndPointA");

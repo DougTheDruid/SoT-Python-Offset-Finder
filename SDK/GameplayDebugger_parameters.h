@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,8 +22,8 @@ namespace CG
 // Function GameplayDebugger.GameplayDebuggingComponent.ServerReplicateData
 struct UGameplayDebuggingComponent_ServerReplicateData_Params
 {
-	uint32_t                                           InMessage;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint32_t                                           DataView;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint32_t                                           InMessage;                                                 // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint32_t                                           DataView;                                                  // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function GameplayDebugger.GameplayDebuggingComponent.ServerDiscardNavmeshData
@@ -34,7 +34,7 @@ struct UGameplayDebuggingComponent_ServerDiscardNavmeshData_Params
 // Function GameplayDebugger.GameplayDebuggingComponent.ServerCollectNavmeshData
 struct UGameplayDebuggingComponent_ServerCollectNavmeshData_Params
 {
-	struct FVector_NetQuantize10                       TargetLocation;                                            // (Parm)
+	struct FVector_NetQuantize10                       TargetLocation;                                            // 0x0000(0x000C)  (Parm)
 };
 
 // Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateNavmesh
@@ -65,21 +65,21 @@ struct UGameplayDebuggingComponent_OnCycleDetailsView_Params
 // Function GameplayDebugger.GameplayDebuggingComponent.ClientEnableTargetSelection
 struct UGameplayDebuggingComponent_ClientEnableTargetSelection_Params
 {
-	bool                                               bEnable;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               bEnable;                                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function GameplayDebugger.GameplayDebuggingReplicator.ServerSetActorToDebug
 struct AGameplayDebuggingReplicator_ServerSetActorToDebug_Params
 {
-	class AActor*                                      InActor;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      InActor;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function GameplayDebugger.GameplayDebuggingReplicator.ServerReplicateMessage
 struct AGameplayDebuggingReplicator_ServerReplicateMessage_Params
 {
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint32_t                                           InMessage;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint32_t                                           DataView;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      Actor;                                                     // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint32_t                                           InMessage;                                                 // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint32_t                                           DataView;                                                  // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function GameplayDebugger.GameplayDebuggingReplicator.OnRep_AutoActivate
@@ -90,16 +90,16 @@ struct AGameplayDebuggingReplicator_OnRep_AutoActivate_Params
 // Function GameplayDebugger.GameplayDebuggingReplicator.ClientReplicateMessage
 struct AGameplayDebuggingReplicator_ClientReplicateMessage_Params
 {
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint32_t                                           InMessage;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint32_t                                           DataView;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      Actor;                                                     // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint32_t                                           InMessage;                                                 // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint32_t                                           DataView;                                                  // 0x000C(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function GameplayDebugger.GameplayDebuggingReplicator.ClientEnableTargetSelection
 struct AGameplayDebuggingReplicator_ClientEnableTargetSelection_Params
 {
-	bool                                               bEnable;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	class APlayerController*                           Context;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               bEnable;                                                   // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class APlayerController*                           Context;                                                   // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function GameplayDebugger.GameplayDebuggingReplicator.ClientAutoActivate

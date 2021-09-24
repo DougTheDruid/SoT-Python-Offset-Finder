@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -32,43 +32,43 @@ struct ADrawDebugService_OnRep_IsDrawDebugActiveChanged_Params
 // Function AthenaDebug.DrawDebugService.Multicast_ClearGroup
 struct ADrawDebugService_Multicast_ClearGroup_Params
 {
-	struct FName                                       GroupName;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FName                                       GroupName;                                                 // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function AthenaDebug.DrawDebugService.Multicast_AddStrings
 struct ADrawDebugService_Multicast_AddStrings_Params
 {
-	TArray<struct FDrawDebugItemString>                Strings;                                                   // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+	TArray<struct FDrawDebugItemString>                Strings;                                                   // 0x0000(0x0010)  (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 };
 
 // Function AthenaDebug.DrawDebugService.Multicast_AddSpheres
 struct ADrawDebugService_Multicast_AddSpheres_Params
 {
-	TArray<struct FDrawDebugItemSphere>                Spheres;                                                   // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+	TArray<struct FDrawDebugItemSphere>                Spheres;                                                   // 0x0000(0x0010)  (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 };
 
 // Function AthenaDebug.DrawDebugService.Multicast_AddSectors
 struct ADrawDebugService_Multicast_AddSectors_Params
 {
-	TArray<struct FDrawDebugItemSector>                Sectors;                                                   // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+	TArray<struct FDrawDebugItemSector>                Sectors;                                                   // 0x0000(0x0010)  (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 };
 
 // Function AthenaDebug.DrawDebugService.Multicast_AddLines
 struct ADrawDebugService_Multicast_AddLines_Params
 {
-	TArray<struct FDrawDebugItemLine>                  Lines;                                                     // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+	TArray<struct FDrawDebugItemLine>                  Lines;                                                     // 0x0000(0x0010)  (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 };
 
 // Function AthenaDebug.DrawDebugService.Multicast_AddCapsules
 struct ADrawDebugService_Multicast_AddCapsules_Params
 {
-	TArray<struct FDrawDebugItemCapsule>               Capsules;                                                  // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+	TArray<struct FDrawDebugItemCapsule>               Capsules;                                                  // 0x0000(0x0010)  (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 };
 
 // Function AthenaDebug.DrawDebugService.Multicast_AddBoxes
 struct ADrawDebugService_Multicast_AddBoxes_Params
 {
-	TArray<struct FDrawDebugItemBox>                   Boxes;                                                     // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
+	TArray<struct FDrawDebugItemBox>                   Boxes;                                                     // 0x0000(0x0010)  (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 };
 
 }

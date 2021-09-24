@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -49,10 +49,10 @@ public:
 	struct FObjectMessagingHandle                      Handle_ReelingWhileBattling;                               // 0x04B0(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FObjectMessagingHandle                      Handle_StowRod;                                            // 0x04F8(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                               FishStartedBattling;                                       // 0x0540(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_6VQ5[0x7];                                     // 0x0541(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_C2TY[0x7];                                     // 0x0541(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FObjectMessagingHandle                      Handle_FishEscaped;                                        // 0x0548(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                               State_Completed;                                           // 0x0590(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_T9EU[0x7];                                     // 0x0591(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_X4B7[0x7];                                     // 0x0591(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FObjectMessagingHandle                      Handle_PlayerDeath;                                        // 0x0598(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FObjectMessagingHandle                      Handle_DockToObject;                                       // 0x05E0(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 

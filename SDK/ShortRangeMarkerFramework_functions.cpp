@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function ShortRangeMarkerFramework.ShortRangeMarker.Multicast_OnCleanUp
-// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Function:
+//		Offset -> 0x03511920
+//		Name   -> Function ShortRangeMarkerFramework.ShortRangeMarker.Multicast_OnCleanUp
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 void AShortRangeMarker::Multicast_OnCleanUp()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShortRangeMarkerFramework.ShortRangeMarker.Multicast_OnCleanUp");
@@ -59,12 +61,14 @@ void UShortRangeMarkerInterface::BeforeDelete()
 
 }
 
-// Function ShortRangeMarkerFramework.ShortRangeMarkerBlueprintFunctionLibrary.RegisterActorsWithShortRangeMarker
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03511940
+//		Name   -> Function ShortRangeMarkerFramework.ShortRangeMarkerBlueprintFunctionLibrary.RegisterActorsWithShortRangeMarker
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                  InMarker                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class AActor*>          InActors                       (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InMarker                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<class AActor*>                              InActors                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UShortRangeMarkerBlueprintFunctionLibrary::STATIC_RegisterActorsWithShortRangeMarker(class UObject* WorldContextObject, class AActor* InMarker, TArray<class AActor*>* InActors)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShortRangeMarkerFramework.ShortRangeMarkerBlueprintFunctionLibrary.RegisterActorsWithShortRangeMarker");

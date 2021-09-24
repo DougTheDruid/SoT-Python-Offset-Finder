@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -112,10 +112,12 @@ void UGlitterBeardEntitlementDesc::BeforeDelete()
 
 }
 
-// Function GlitterBeard.GlitterBeardFinaleCoordinatorComponent.OnRep_ReplicationState
-// (Final, RequiredAPI, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x03A4DCF0
+//		Name   -> Function GlitterBeard.GlitterBeardFinaleCoordinatorComponent.OnRep_ReplicationState
+//		Flags  -> (Final, RequiredAPI, Native, Private, HasOutParms)
 // Parameters:
-// struct FFinaleReplicationState OldState                       (ConstParm, Parm, OutParm, ReferenceParm)
+//		struct FFinaleReplicationState                     OldState                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 void UGlitterBeardFinaleCoordinatorComponent::OnRep_ReplicationState(const struct FFinaleReplicationState& OldState)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardFinaleCoordinatorComponent.OnRep_ReplicationState");
@@ -212,8 +214,10 @@ void UGlitterBeardTrustedTreeInterface::BeforeDelete()
 
 }
 
-// Function GlitterBeard.GlitterBeardTree.StopVocals
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03A4DE30
+//		Name   -> Function GlitterBeard.GlitterBeardTree.StopVocals
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void AGlitterBeardTree::StopVocals()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.StopVocals");
@@ -229,10 +233,12 @@ void AGlitterBeardTree::StopVocals()
 }
 
 
-// Function GlitterBeard.GlitterBeardTree.StopReaction
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x03A4DDF0
+//		Name   -> Function GlitterBeard.GlitterBeardTree.StopReaction
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool AGlitterBeardTree::StopReaction()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.StopReaction");
@@ -250,8 +256,10 @@ bool AGlitterBeardTree::StopReaction()
 }
 
 
-// Function GlitterBeard.GlitterBeardTree.StartVocals
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03A4DDD0
+//		Name   -> Function GlitterBeard.GlitterBeardTree.StartVocals
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void AGlitterBeardTree::StartVocals()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.StartVocals");
@@ -267,10 +275,12 @@ void AGlitterBeardTree::StartVocals()
 }
 
 
-// Function GlitterBeard.GlitterBeardTree.StartReaction
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x03A4DD90
+//		Name   -> Function GlitterBeard.GlitterBeardTree.StartReaction
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool AGlitterBeardTree::StartReaction()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.StartReaction");
@@ -288,8 +298,10 @@ bool AGlitterBeardTree::StartReaction()
 }
 
 
-// Function GlitterBeard.GlitterBeardTree.Reset_Impl
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function GlitterBeard.GlitterBeardTree.Reset_Impl
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void AGlitterBeardTree::Reset_Impl()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.Reset_Impl");
@@ -334,10 +346,12 @@ void AGlitterBeardTree::BeforeDelete()
 	DELE_PTR_FULL(HideoutDoor);
 }
 
-// Function GlitterBeard.GlitterBeardTreeVisualFeedbackComponent.OnRep_NextStateEvent
-// (Final, RequiredAPI, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x03A4DC40
+//		Name   -> Function GlitterBeard.GlitterBeardTreeVisualFeedbackComponent.OnRep_NextStateEvent
+//		Flags  -> (Final, RequiredAPI, Native, Private, HasOutParms)
 // Parameters:
-// TArray<TEnumAsByte<GlitterBeard_EGlitterbeardVFXState>> OldStates                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<TEnumAsByte<GlitterBeard_EGlitterbeardVFXState>> OldStates                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 void UGlitterBeardTreeVisualFeedbackComponent::OnRep_NextStateEvent(TArray<TEnumAsByte<GlitterBeard_EGlitterbeardVFXState>> OldStates)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTreeVisualFeedbackComponent.OnRep_NextStateEvent");

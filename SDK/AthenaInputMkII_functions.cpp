@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -42,10 +42,12 @@ void UAthenaCharacterBaseMovementComponentWithInterference::BeforeDelete()
 
 }
 
-// Function AthenaInputMkII.MovementInterferenceComponent.OnMoveRightInput
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0328B570
+//		Name   -> Function AthenaInputMkII.MovementInterferenceComponent.OnMoveRightInput
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// float                          Value                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UMovementInterferenceComponent::OnMoveRightInput(float Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaInputMkII.MovementInterferenceComponent.OnMoveRightInput");
@@ -62,10 +64,12 @@ void UMovementInterferenceComponent::OnMoveRightInput(float Value)
 }
 
 
-// Function AthenaInputMkII.MovementInterferenceComponent.OnMoveForwardInput
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x0328B4F0
+//		Name   -> Function AthenaInputMkII.MovementInterferenceComponent.OnMoveForwardInput
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// float                          Value                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UMovementInterferenceComponent::OnMoveForwardInput(float Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaInputMkII.MovementInterferenceComponent.OnMoveForwardInput");

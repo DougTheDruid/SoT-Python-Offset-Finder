@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -64,7 +64,7 @@ public:
 class ATestActionStateCreatorDefinition : public AActionStateCreatorDefinition
 {
 public:
-	unsigned char                                      UnknownData_4NB9[0x18];                                    // 0x03D0(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_045O[0x18];                                    // 0x03D0(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -185,9 +185,9 @@ public:
 class UActionStateMachineComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_2NCQ[0x18];                                    // 0x00C8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_1KGA[0x18];                                    // 0x00C8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FScriptMulticastDelegate                    OnActionChangedOnTrack;                                    // 0x00E0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_IWLE[0x768];                                   // 0x00F0(0x0768) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QP3M[0x768];                                   // 0x00F0(0x0768) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -213,34 +213,13 @@ public:
 
 };
 
-// Class ActionStateMachine.TestActionStateMachineComponent
-// 0x0018 (FullSize[0x0870] - InheritedSize[0x0858])
-class UTestActionStateMachineComponent : public UActionStateMachineComponent
-{
-public:
-	unsigned char                                      UnknownData_YA8K[0x18];                                    // 0x0858(0x0018) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = UObject::FindClass("Class ActionStateMachine.TestActionStateMachineComponent");
-		return ptr;
-	}
-
-
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
 // Class ActionStateMachine.CustomClientValidityCheckCallback
 // 0x0008 (FullSize[0x0030] - InheritedSize[0x0028])
 class UCustomClientValidityCheckCallback : public UObject
 {
 public:
 	bool                                               ShouldPassClientValidation;                                // 0x0028(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_L5UZ[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_CRU1[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -354,27 +333,6 @@ public:
 
 };
 
-// Class ActionStateMachine.RemoteValidationFailActionStateActor
-// 0x0008 (FullSize[0x03D8] - InheritedSize[0x03D0])
-class ARemoteValidationFailActionStateActor : public AActor
-{
-public:
-	class UActionStateMachineComponent*                ActionStateMachineComponent;                               // 0x03D0(0x0008) (BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = UObject::FindClass("Class ActionStateMachine.RemoteValidationFailActionStateActor");
-		return ptr;
-	}
-
-
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
 // Class ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions
 // 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
 class USerialisedActionStateConstructionInfoTestFunctions : public UBlueprintFunctionLibrary
@@ -398,28 +356,6 @@ public:
 	struct FSerialisedActionStateInfo STATIC_CreateTestSerialisableData(class UClass* Id, int IntProp);
 	struct FSerialisedActionStateInfo STATIC_CreateTestConstructionInfoWithInner(class UClass* Id, float FloatProp, bool BoolProp, const struct FString& StringProp);
 	struct FSerialisedActionStateInfo STATIC_CreateTestConstructionInfo(class UClass* Id, int IntProp);
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// Class ActionStateMachine.TestObjectWithActionStateMachine
-// 0x0018 (FullSize[0x03E8] - InheritedSize[0x03D0])
-class ATestObjectWithActionStateMachine : public AActor
-{
-public:
-	class UTestActionStateMachineComponent*            ActionStateMachineComponent;                               // 0x03D0(0x0008) (BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_LD9Q[0x10];                                    // 0x03D8(0x0010) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = UObject::FindClass("Class ActionStateMachine.TestObjectWithActionStateMachine");
-		return ptr;
-	}
-
-
-
 	void AfterRead();
 	void BeforeDelete();
 

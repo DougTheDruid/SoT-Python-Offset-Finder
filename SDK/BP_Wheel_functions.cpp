@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_Wheel.BP_Wheel_C.GetDockableInfo
-// (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.GetDockableInfo
+//		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDockableInfo           ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FDockableInfo                               ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FDockableInfo ABP_Wheel_C::GetDockableInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.GetDockableInfo");
@@ -38,12 +40,14 @@ struct FDockableInfo ABP_Wheel_C::GetDockableInfo()
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.GetClosestInteractionPoint
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.GetClosestInteractionPoint
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                 ReferencePosition              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          OutInteractionPointRadius      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReferencePosition                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              OutInteractionPointRadius                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector ABP_Wheel_C::GetClosestInteractionPoint(const struct FVector& ReferencePosition, float* OutInteractionPointRadius)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.GetClosestInteractionPoint");
@@ -64,10 +68,12 @@ struct FVector ABP_Wheel_C::GetClosestInteractionPoint(const struct FVector& Ref
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.GetWheelMesh
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.GetWheelMesh
+//		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class USkeletalMeshComponent*  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class USkeletalMeshComponent*                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 class USkeletalMeshComponent* ABP_Wheel_C::GetWheelMesh()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.GetWheelMesh");
@@ -84,8 +90,10 @@ class USkeletalMeshComponent* ABP_Wheel_C::GetWheelMesh()
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Wheel_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.UserConstructionScript");
@@ -100,14 +108,16 @@ void ABP_Wheel_C::UserConstructionScript()
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.Receive Animation State
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.Receive Animation State
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRotator                WheelRotation                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          WheelAnimationTime             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<EWheel_EWheel>     EWheel                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Direction                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          WheelRate                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FRotator                                    WheelRotation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              WheelAnimationTime                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EWheel_EWheel>                         EWheel                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Direction                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              WheelRate                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::Receive_Animation_State(const struct FRotator& WheelRotation, float WheelAnimationTime, TEnumAsByte<EWheel_EWheel> EWheel, float Direction, float WheelRate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.Receive Animation State");
@@ -127,10 +137,12 @@ void ABP_Wheel_C::Receive_Animation_State(const struct FRotator& WheelRotation, 
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.StickInput
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.StickInput
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          StickInputX                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              StickInputX                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::StickInput(float StickInputX)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.StickInput");
@@ -146,10 +158,12 @@ void ABP_Wheel_C::StickInput(float StickInputX)
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.Update Athena Character
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.Update Athena Character
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AAthenaCharacter*        AthenaCharacter                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AAthenaCharacter*                            AthenaCharacter                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::Update_Athena_Character(class AAthenaCharacter* AthenaCharacter)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.Update Athena Character");
@@ -165,10 +179,12 @@ void ABP_Wheel_C::Update_Athena_Character(class AAthenaCharacter* AthenaCharacte
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.CapstanRotationSpeed
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.CapstanRotationSpeed
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          RotationSpeed                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              RotationSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::CapstanRotationSpeed(float RotationSpeed)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.CapstanRotationSpeed");
@@ -184,10 +200,12 @@ void ABP_Wheel_C::CapstanRotationSpeed(float RotationSpeed)
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.DockingInterface
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.DockingInterface
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FBP_Docking             Docking                        (Parm)
+//		struct FBP_Docking                                 Docking                                                    (Parm)
 void ABP_Wheel_C::DockingInterface(const struct FBP_Docking& Docking)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.DockingInterface");
@@ -203,13 +221,15 @@ void ABP_Wheel_C::DockingInterface(const struct FBP_Docking& Docking)
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.CapstanForce
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.CapstanForce
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          IndividualForce                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTransform              LH_IK                          (Parm, IsPlainOldData, NoDestructor)
-// struct FTransform              RH_IK                          (Parm, IsPlainOldData, NoDestructor)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              IndividualForce                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  LH_IK                                                      (Parm, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  RH_IK                                                      (Parm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::CapstanForce(float IndividualForce, const struct FTransform& LH_IK, const struct FTransform& RH_IK, class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.CapstanForce");
@@ -228,11 +248,13 @@ void ABP_Wheel_C::CapstanForce(float IndividualForce, const struct FTransform& L
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.IK Limb Update Transform
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.IK Limb Update Transform
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTransform              TransformUpdate                (Parm, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FTransform                                  TransformUpdate                                            (Parm, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::IK_Limb_Update_Transform(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, const struct FTransform& TransformUpdate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.IK Limb Update Transform");
@@ -249,12 +271,14 @@ void ABP_Wheel_C::IK_Limb_Update_Transform(TEnumAsByte<EIKLimbName_EIKLimbName> 
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.IK Limb Blend Timing
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.IK Limb Blend Timing
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          BlendIn                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          BlendOut                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              BlendIn                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              BlendOut                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::IK_Limb_Blend_Timing(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, float BlendIn, float BlendOut)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.IK Limb Blend Timing");
@@ -272,12 +296,14 @@ void ABP_Wheel_C::IK_Limb_Blend_Timing(TEnumAsByte<EIKLimbName_EIKLimbName> Limb
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.IK Limb Update Strength
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.IK Limb Update Strength
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          LocationStrength               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          RotationStrength               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              LocationStrength                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              RotationStrength                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::IK_Limb_Update_Strength(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, float LocationStrength, float RotationStrength)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.IK Limb Update Strength");
@@ -295,12 +321,14 @@ void ABP_Wheel_C::IK_Limb_Update_Strength(TEnumAsByte<EIKLimbName_EIKLimbName> L
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.IK Limb Active
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.IK Limb Active
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EIKLimbName_EIKLimbName> LimbId                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                           Active                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<Animation_ELimbIKSpace> CoordinateSpace                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EIKLimbName_EIKLimbName>               LimbId                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               Active                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Animation_ELimbIKSpace>                CoordinateSpace                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::IK_Limb_Active(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, bool Active, TEnumAsByte<Animation_ELimbIKSpace> CoordinateSpace)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.IK Limb Active");
@@ -318,12 +346,14 @@ void ABP_Wheel_C::IK_Limb_Active(TEnumAsByte<EIKLimbName_EIKLimbName> LimbId, bo
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.IK Limb Stretch
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.IK Limb Stretch
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          ArmStretch                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          SpineStretch                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          LegStretch                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              ArmStretch                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              SpineStretch                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              LegStretch                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::IK_Limb_Stretch(float ArmStretch, float SpineStretch, float LegStretch)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.IK Limb Stretch");
@@ -341,10 +371,12 @@ void ABP_Wheel_C::IK_Limb_Stretch(float ArmStretch, float SpineStretch, float Le
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.RequestStateChange
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.RequestStateChange
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// class AActor*                  Controller                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AActor*                                      Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::RequestStateChange(class AActor* Controller)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.RequestStateChange");
@@ -360,10 +392,12 @@ void ABP_Wheel_C::RequestStateChange(class AActor* Controller)
 }
 
 
-// Function BP_Wheel.BP_Wheel_C.ExecuteUbergraph_BP_Wheel
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_Wheel.BP_Wheel_C.ExecuteUbergraph_BP_Wheel
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_Wheel_C::ExecuteUbergraph_BP_Wheel(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Wheel.BP_Wheel_C.ExecuteUbergraph_BP_Wheel");

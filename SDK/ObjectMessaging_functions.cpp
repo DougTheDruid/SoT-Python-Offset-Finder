@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -88,11 +88,13 @@ void UObjectMessagingInterface::BeforeDelete()
 
 }
 
-// Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEventsForObject
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F65B90
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEventsForObject
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingObjectScoper ObjectScoper                   (Parm, OutParm, ReferenceParm)
-// class UObject*                 EventSource                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FObjectMessagingObjectScoper                ObjectScoper                                               (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     EventSource                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UObjectMessagingFunctions::STATIC_UnregisterEventsForObject(struct FObjectMessagingObjectScoper* ObjectScoper, class UObject* EventSource)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEventsForObject");
@@ -112,10 +114,12 @@ void UObjectMessagingFunctions::STATIC_UnregisterEventsForObject(struct FObjectM
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEvents
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F65AA0
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEvents
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingObjectScoper ObjectScoper                   (Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingObjectScoper                ObjectScoper                                               (Parm, OutParm, ReferenceParm)
 void UObjectMessagingFunctions::STATIC_UnregisterEvents(struct FObjectMessagingObjectScoper* ObjectScoper)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEvents");
@@ -134,11 +138,13 @@ void UObjectMessagingFunctions::STATIC_UnregisterEvents(struct FObjectMessagingO
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEventFromHandle
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F65990
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEventFromHandle
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle Dispatcher                     (Parm, OutParm, ReferenceParm)
-// struct FObjectMessagingHandle  Handle                         (Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingDispatcherHandle            Dispatcher                                                 (Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingHandle                      Handle                                                     (Parm, OutParm, ReferenceParm)
 void UObjectMessagingFunctions::STATIC_UnregisterEventFromHandle(struct FObjectMessagingDispatcherHandle* Dispatcher, struct FObjectMessagingHandle* Handle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEventFromHandle");
@@ -159,11 +165,13 @@ void UObjectMessagingFunctions::STATIC_UnregisterEventFromHandle(struct FObjectM
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEvent
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F658A0
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEvent
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingDispatcher Dispatcher                     (Parm, OutParm, ReferenceParm)
-// struct FObjectMessagingHandle  Handle                         (Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingDispatcher                  Dispatcher                                                 (Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingHandle                      Handle                                                     (Parm, OutParm, ReferenceParm)
 void UObjectMessagingFunctions::STATIC_UnregisterEvent(struct FObjectMessagingDispatcher* Dispatcher, struct FObjectMessagingHandle* Handle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.UnregisterEvent");
@@ -184,14 +192,16 @@ void UObjectMessagingFunctions::STATIC_UnregisterEvent(struct FObjectMessagingDi
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.RegisterEventWithObjectScoper
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F65690
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.RegisterEventWithObjectScoper
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class UObject*                 EventSource                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FObjectMessagingObjectScoper ObjectScoper                   (Parm, OutParm, ReferenceParm)
-// class UObject*                 FunctionOwner                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 FunctionName                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UStruct*                 EventType                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     EventSource                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FObjectMessagingObjectScoper                ObjectScoper                                               (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     FunctionOwner                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     FunctionName                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UStruct*                                     EventType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UObjectMessagingFunctions::STATIC_RegisterEventWithObjectScoper(class UObject* EventSource, struct FObjectMessagingObjectScoper* ObjectScoper, class UObject* FunctionOwner, const struct FString& FunctionName, class UStruct* EventType)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.RegisterEventWithObjectScoper");
@@ -214,14 +224,16 @@ void UObjectMessagingFunctions::STATIC_RegisterEventWithObjectScoper(class UObje
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.RegisterEventFromHandle
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F654A0
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.RegisterEventFromHandle
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle MessageDispatcher              (Parm, OutParm, ReferenceParm)
-// struct FObjectMessagingHandle  Handle                         (Parm, OutParm, ReferenceParm)
-// class UObject*                 FunctionOwner                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 FunctionName                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UStruct*                 EventType                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FObjectMessagingDispatcherHandle            MessageDispatcher                                          (Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingHandle                      Handle                                                     (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     FunctionOwner                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     FunctionName                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UStruct*                                     EventType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UObjectMessagingFunctions::STATIC_RegisterEventFromHandle(struct FObjectMessagingDispatcherHandle* MessageDispatcher, struct FObjectMessagingHandle* Handle, class UObject* FunctionOwner, const struct FString& FunctionName, class UStruct* EventType)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.RegisterEventFromHandle");
@@ -245,14 +257,16 @@ void UObjectMessagingFunctions::STATIC_RegisterEventFromHandle(struct FObjectMes
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.RegisterEvent
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F652D0
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.RegisterEvent
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingDispatcher MessageDispatcher              (Parm, OutParm, ReferenceParm)
-// struct FObjectMessagingHandle  Handle                         (Parm, OutParm, ReferenceParm)
-// class UObject*                 FunctionOwner                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 FunctionName                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UStruct*                 EventType                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FObjectMessagingDispatcher                  MessageDispatcher                                          (Parm, OutParm, ReferenceParm)
+//		struct FObjectMessagingHandle                      Handle                                                     (Parm, OutParm, ReferenceParm)
+//		class UObject*                                     FunctionOwner                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     FunctionName                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		class UStruct*                                     EventType                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UObjectMessagingFunctions::STATIC_RegisterEvent(struct FObjectMessagingDispatcher* MessageDispatcher, struct FObjectMessagingHandle* Handle, class UObject* FunctionOwner, const struct FString& FunctionName, class UStruct* EventType)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.RegisterEvent");
@@ -276,11 +290,13 @@ void UObjectMessagingFunctions::STATIC_RegisterEvent(struct FObjectMessagingDisp
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.IsObjectMessagingDispatcherValid
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F65240
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.IsObjectMessagingDispatcherValid
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle Handle                         (Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FObjectMessagingDispatcherHandle            Handle                                                     (Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UObjectMessagingFunctions::STATIC_IsObjectMessagingDispatcherValid(struct FObjectMessagingDispatcherHandle* Handle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.IsObjectMessagingDispatcherValid");
@@ -301,11 +317,13 @@ bool UObjectMessagingFunctions::STATIC_IsObjectMessagingDispatcherValid(struct F
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.IsHandleRegistered
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F65190
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.IsHandleRegistered
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingHandle  Handle                         (Parm, OutParm, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FObjectMessagingHandle                      Handle                                                     (Parm, OutParm, ReferenceParm)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UObjectMessagingFunctions::STATIC_IsHandleRegistered(struct FObjectMessagingHandle* Handle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.IsHandleRegistered");
@@ -326,11 +344,13 @@ bool UObjectMessagingFunctions::STATIC_IsHandleRegistered(struct FObjectMessagin
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.GetObjectMessagingDispatcherFromActor
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F65100
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.GetObjectMessagingDispatcherFromActor
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                 Object                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FObjectMessagingDispatcherHandle ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FObjectMessagingDispatcherHandle            ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FObjectMessagingDispatcherHandle UObjectMessagingFunctions::STATIC_GetObjectMessagingDispatcherFromActor(class UObject* Object)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.GetObjectMessagingDispatcherFromActor");
@@ -349,10 +369,12 @@ struct FObjectMessagingDispatcherHandle UObjectMessagingFunctions::STATIC_GetObj
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.GetObjectMessagingDispatcher
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F65060
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.GetObjectMessagingDispatcher
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FObjectMessagingDispatcherHandle            ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FObjectMessagingDispatcherHandle UObjectMessagingFunctions::STATIC_GetObjectMessagingDispatcher()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.GetObjectMessagingDispatcher");
@@ -370,14 +392,16 @@ struct FObjectMessagingDispatcherHandle UObjectMessagingFunctions::STATIC_GetObj
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.FireEventWithDataFromHandle
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F64E90
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.FireEventWithDataFromHandle
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingDispatcherHandle MessageDispatcher              (Parm, OutParm, ReferenceParm)
-// class UStruct*                 EventDataStruct                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 Scope                          (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FString                 ScopeId                        (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FGenericStruct          Value                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FObjectMessagingDispatcherHandle            MessageDispatcher                                          (Parm, OutParm, ReferenceParm)
+//		class UStruct*                                     EventDataStruct                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Scope                                                      (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     ScopeId                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FGenericStruct                              Value                                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UObjectMessagingFunctions::STATIC_FireEventWithDataFromHandle(struct FObjectMessagingDispatcherHandle* MessageDispatcher, class UStruct* EventDataStruct, const struct FString& Scope, const struct FString& ScopeId, struct FGenericStruct* Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.FireEventWithDataFromHandle");
@@ -401,14 +425,16 @@ void UObjectMessagingFunctions::STATIC_FireEventWithDataFromHandle(struct FObjec
 }
 
 
-// Function ObjectMessaging.ObjectMessagingFunctions.FireEventWithData
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x02F64CE0
+//		Name   -> Function ObjectMessaging.ObjectMessagingFunctions.FireEventWithData
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FObjectMessagingDispatcher MessageDispatcher              (Parm, OutParm, ReferenceParm)
-// class UStruct*                 EventDataStruct                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FString                 Scope                          (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FString                 ScopeId                        (Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FGenericStruct          Value                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FObjectMessagingDispatcher                  MessageDispatcher                                          (Parm, OutParm, ReferenceParm)
+//		class UStruct*                                     EventDataStruct                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FString                                     Scope                                                      (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     ScopeId                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FGenericStruct                              Value                                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 void UObjectMessagingFunctions::STATIC_FireEventWithData(struct FObjectMessagingDispatcher* MessageDispatcher, class UStruct* EventDataStruct, const struct FString& Scope, const struct FString& ScopeId, struct FGenericStruct* Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ObjectMessaging.ObjectMessagingFunctions.FireEventWithData");

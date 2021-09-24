@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,8 +18,10 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_PiratePreview.BP_PiratePreview_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PiratePreview.BP_PiratePreview_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_PiratePreview_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PiratePreview.BP_PiratePreview_C.UserConstructionScript");
@@ -34,8 +36,10 @@ void ABP_PiratePreview_C::UserConstructionScript()
 }
 
 
-// Function BP_PiratePreview.BP_PiratePreview_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PiratePreview.BP_PiratePreview_C.ReceiveBeginPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_PiratePreview_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PiratePreview.BP_PiratePreview_C.ReceiveBeginPlay");
@@ -50,10 +54,12 @@ void ABP_PiratePreview_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy_Event
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy_Event
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPiratePreviewBusyEvent Data                           (Parm)
+//		struct FPiratePreviewBusyEvent                     Data                                                       (Parm)
 void ABP_PiratePreview_C::PreviewBusy_Event(const struct FPiratePreviewBusyEvent& Data)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy_Event");
@@ -69,10 +75,12 @@ void ABP_PiratePreview_C::PreviewBusy_Event(const struct FPiratePreviewBusyEvent
 }
 
 
-// Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady_Event
-// (BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady_Event
+//		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPiratePreviewReadyEvent Data                           (Parm)
+//		struct FPiratePreviewReadyEvent                    Data                                                       (Parm)
 void ABP_PiratePreview_C::PreviewReady_Event(const struct FPiratePreviewReadyEvent& Data)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady_Event");
@@ -88,10 +96,12 @@ void ABP_PiratePreview_C::PreviewReady_Event(const struct FPiratePreviewReadyEve
 }
 
 
-// Function BP_PiratePreview.BP_PiratePreview_C.ReceiveEndPlay
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PiratePreview.BP_PiratePreview_C.ReceiveEndPlay
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<Engine_EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<Engine_EEndPlayReason>                 EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PiratePreview_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayReason)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PiratePreview.BP_PiratePreview_C.ReceiveEndPlay");
@@ -107,10 +117,12 @@ void ABP_PiratePreview_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndP
 }
 
 
-// Function BP_PiratePreview.BP_PiratePreview_C.ExecuteUbergraph_BP_PiratePreview
-// (HasDefaults)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PiratePreview.BP_PiratePreview_C.ExecuteUbergraph_BP_PiratePreview
+//		Flags  -> (HasDefaults)
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_PiratePreview_C::ExecuteUbergraph_BP_PiratePreview(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PiratePreview.BP_PiratePreview_C.ExecuteUbergraph_BP_PiratePreview");
@@ -126,10 +138,12 @@ void ABP_PiratePreview_C::ExecuteUbergraph_BP_PiratePreview(int EntryPoint)
 }
 
 
-// Function BP_PiratePreview.BP_PiratePreview_C.PreviewShutdown__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PiratePreview.BP_PiratePreview_C.PreviewShutdown__DelegateSignature
+//		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPiratePreviewShutdownEvent Data                           (Parm)
+//		struct FPiratePreviewShutdownEvent                 Data                                                       (Parm)
 void ABP_PiratePreview_C::PreviewShutdown__DelegateSignature(const struct FPiratePreviewShutdownEvent& Data)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PiratePreview.BP_PiratePreview_C.PreviewShutdown__DelegateSignature");
@@ -145,10 +159,12 @@ void ABP_PiratePreview_C::PreviewShutdown__DelegateSignature(const struct FPirat
 }
 
 
-// Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady__DelegateSignature
+//		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPiratePreviewReadyEvent Data                           (Parm)
+//		struct FPiratePreviewReadyEvent                    Data                                                       (Parm)
 void ABP_PiratePreview_C::PreviewReady__DelegateSignature(const struct FPiratePreviewReadyEvent& Data)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PiratePreview.BP_PiratePreview_C.PreviewReady__DelegateSignature");
@@ -164,10 +180,12 @@ void ABP_PiratePreview_C::PreviewReady__DelegateSignature(const struct FPiratePr
 }
 
 
-// Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy__DelegateSignature
+//		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPiratePreviewBusyEvent Data                           (Parm)
+//		struct FPiratePreviewBusyEvent                     Data                                                       (Parm)
 void ABP_PiratePreview_C::PreviewBusy__DelegateSignature(const struct FPiratePreviewBusyEvent& Data)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PiratePreview.BP_PiratePreview_C.PreviewBusy__DelegateSignature");

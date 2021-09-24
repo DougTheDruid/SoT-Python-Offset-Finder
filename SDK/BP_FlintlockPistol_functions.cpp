@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_FlintlockPistol.BP_FlintlockPistol_C.SetScopeEffectOn
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_FlintlockPistol.BP_FlintlockPistol_C.SetScopeEffectOn
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                           IsOn                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		bool                                               IsOn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_FlintlockPistol_C::SetScopeEffectOn(bool IsOn)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FlintlockPistol.BP_FlintlockPistol_C.SetScopeEffectOn");
@@ -37,10 +39,12 @@ void ABP_FlintlockPistol_C::SetScopeEffectOn(bool IsOn)
 }
 
 
-// Function BP_FlintlockPistol.BP_FlintlockPistol_C.determine sfx relationship
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_FlintlockPistol.BP_FlintlockPistol_C.determine sfx relationship
+//		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<RareAudio_EEmitterRelationship> Relationship                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<RareAudio_EEmitterRelationship>        Relationship                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_FlintlockPistol_C::determine_sfx_relationship(TEnumAsByte<RareAudio_EEmitterRelationship>* Relationship)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FlintlockPistol.BP_FlintlockPistol_C.determine sfx relationship");
@@ -58,8 +62,11 @@ void ABP_FlintlockPistol_C::determine_sfx_relationship(TEnumAsByte<RareAudio_EEm
 }
 
 
-// Function BP_FlintlockPistol.BP_FlintlockPistol_C.DoFireEffect
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_FlintlockPistol.BP_FlintlockPistol_C.DoFireEffect
+//		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
 void ABP_FlintlockPistol_C::DoFireEffect()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FlintlockPistol.BP_FlintlockPistol_C.DoFireEffect");
@@ -74,8 +81,10 @@ void ABP_FlintlockPistol_C::DoFireEffect()
 }
 
 
-// Function BP_FlintlockPistol.BP_FlintlockPistol_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_FlintlockPistol.BP_FlintlockPistol_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_FlintlockPistol_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FlintlockPistol.BP_FlintlockPistol_C.UserConstructionScript");
@@ -90,8 +99,10 @@ void ABP_FlintlockPistol_C::UserConstructionScript()
 }
 
 
-// Function BP_FlintlockPistol.BP_FlintlockPistol_C.OnWeaponFired
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_FlintlockPistol.BP_FlintlockPistol_C.OnWeaponFired
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_FlintlockPistol_C::OnWeaponFired()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FlintlockPistol.BP_FlintlockPistol_C.OnWeaponFired");
@@ -106,8 +117,10 @@ void ABP_FlintlockPistol_C::OnWeaponFired()
 }
 
 
-// Function BP_FlintlockPistol.BP_FlintlockPistol_C.RadialBlurOn
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_FlintlockPistol.BP_FlintlockPistol_C.RadialBlurOn
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_FlintlockPistol_C::RadialBlurOn()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FlintlockPistol.BP_FlintlockPistol_C.RadialBlurOn");
@@ -122,8 +135,10 @@ void ABP_FlintlockPistol_C::RadialBlurOn()
 }
 
 
-// Function BP_FlintlockPistol.BP_FlintlockPistol_C.RadialBlurOff
-// (Event, Protected, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_FlintlockPistol.BP_FlintlockPistol_C.RadialBlurOff
+//		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_FlintlockPistol_C::RadialBlurOff()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FlintlockPistol.BP_FlintlockPistol_C.RadialBlurOff");
@@ -138,10 +153,12 @@ void ABP_FlintlockPistol_C::RadialBlurOff()
 }
 
 
-// Function BP_FlintlockPistol.BP_FlintlockPistol_C.ExecuteUbergraph_BP_FlintlockPistol
-// ()
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_FlintlockPistol.BP_FlintlockPistol_C.ExecuteUbergraph_BP_FlintlockPistol
+//		Flags  -> ()
 // Parameters:
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		int                                                EntryPoint                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void ABP_FlintlockPistol_C::ExecuteUbergraph_BP_FlintlockPistol(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FlintlockPistol.BP_FlintlockPistol_C.ExecuteUbergraph_BP_FlintlockPistol");

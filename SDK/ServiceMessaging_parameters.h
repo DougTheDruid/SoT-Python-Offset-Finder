@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,20 +22,20 @@ namespace CG
 // Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcherFromActor
 struct UServiceMessagingFunctions_GetServiceMessagingDispatcherFromActor_Params
 {
-	class UObject*                                     Object;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FObjectMessagingDispatcherHandle            ReturnValue;                                               // (Parm, OutParm, ReturnParm)
+	class UObject*                                     Object;                                                    // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FObjectMessagingDispatcherHandle            ReturnValue;                                               // 0x0008(0x0008)  (Parm, OutParm, ReturnParm)
 };
 
 // Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcher
 struct UServiceMessagingFunctions_GetServiceMessagingDispatcher_Params
 {
-	struct FObjectMessagingDispatcherHandle            ReturnValue;                                               // (Parm, OutParm, ReturnParm)
+	struct FObjectMessagingDispatcherHandle            ReturnValue;                                               // 0x0010(0x0008)  (Parm, OutParm, ReturnParm)
 };
 
 // Function ServiceMessaging.ServiceMessagingListenerTestObject.TestFunctionWithMessage
 struct UServiceMessagingListenerTestObject_TestFunctionWithMessage_Params
 {
-	struct FServiceMessagingTestMessage                InMessage;                                                 // (Parm, OutParm)
+	struct FServiceMessagingTestMessage                InMessage;                                                 // 0x0000(0x0004)  (Parm, OutParm)
 };
 
 }

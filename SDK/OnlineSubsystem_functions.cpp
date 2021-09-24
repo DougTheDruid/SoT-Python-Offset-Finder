@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -100,11 +100,13 @@ void UNamedInterfaces::BeforeDelete()
 
 }
 
-// Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FString                 Match                          (Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                           bDidBecomeActive               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FString                                     Match                                                      (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		bool                                               bDidBecomeActive                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UTurnBasedMatchInterface::OnMatchReceivedTurn(const struct FString& Match, bool bDidBecomeActive)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn");
@@ -121,10 +123,12 @@ void UTurnBasedMatchInterface::OnMatchReceivedTurn(const struct FString& Match, 
 }
 
 
-// Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
-// (Event, Public, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
+//		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FString                 Match                          (Parm, ZeroConstructor, HasGetValueTypeHash)
+//		struct FString                                     Match                                                      (Parm, ZeroConstructor, HasGetValueTypeHash)
 void UTurnBasedMatchInterface::OnMatchEnded(const struct FString& Match)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded");

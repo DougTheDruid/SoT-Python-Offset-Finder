@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,14 +18,16 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_WheelInterface.BP_WheelInterface_C.Receive Animation State
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_WheelInterface.BP_WheelInterface_C.Receive Animation State
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRotator                WheelRotation                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          WheelAnimationTime             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TEnumAsByte<EWheel_EWheel>     EWheel                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Direction                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          WheelRate                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FRotator                                    WheelRotation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              WheelAnimationTime                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		TEnumAsByte<EWheel_EWheel>                         EWheel                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Direction                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              WheelRate                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_WheelInterface_C::Receive_Animation_State(const struct FRotator& WheelRotation, float WheelAnimationTime, TEnumAsByte<EWheel_EWheel> EWheel, float Direction, float WheelRate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_WheelInterface.BP_WheelInterface_C.Receive Animation State");

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -86,7 +86,7 @@ struct FSessionTemplate
 {
 	struct FString                                     TemplateName;                                              // 0x0000(0x0010) (ZeroConstructor, Protected, HasGetValueTypeHash)
 	TEnumAsByte<Sessions_ECrewSessionType>             SessionType;                                               // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_939K[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_B3VF[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	int                                                MaxPlayers;                                                // 0x0014(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -101,7 +101,7 @@ struct FCrewSessionTemplate : public FSessionTemplate
 	struct FString                                     MatchmakingHopper;                                         // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	class UClass*                                      ShipSize;                                                  // 0x0028(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	int                                                MaxMatchmakingPlayers;                                     // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_U2O7[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9WOR[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -112,7 +112,7 @@ struct FCrewSessionTemplate : public FSessionTemplate
 // 0x0001
 struct FSessionLostEvent
 {
-	unsigned char                                      UnknownData_C7M7[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JQPT[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -123,7 +123,7 @@ struct FSessionLostEvent
 // 0x0020
 struct FSessionDetailsChangedEvent
 {
-	unsigned char                                      UnknownData_QGOL[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_48ZP[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -148,7 +148,7 @@ struct FCrewSessionOperationFailedTelemetryEvent
 	struct FString                                     ErrorMessage;                                              // 0x0000(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	int                                                OperationTypeCode;                                         // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               WasCancelled;                                              // 0x0014(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_CU9B[0x3];                                     // 0x0015(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7ZFJ[0x3];                                     // 0x0015(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -173,7 +173,7 @@ struct FCrewSessionMemberTelemetry
 	struct FString                                     UserId;                                                    // 0x0000(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     StatusString;                                              // 0x0010(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	bool                                               IsSessionHost;                                             // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_AK5O[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_POU6[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -211,7 +211,7 @@ struct FCrewSessionMatchmakingFollowedTelemetryEvent : public FCrewSessionBaseSe
 {
 	struct FGuid                                       NewCrewId;                                                 // 0x0050(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	int                                                ResultCode;                                                // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_5SH8[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_KEL3[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     Message;                                                   // 0x0068(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -225,7 +225,7 @@ struct FCrewSessionMatchmakingEndedTelemetryEvent : public FCrewSessionBaseSessi
 {
 	struct FGuid                                       NewCrewId;                                                 // 0x0050(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	int                                                ResultCode;                                                // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ACZL[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_VGOG[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     Message;                                                   // 0x0068(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -240,7 +240,7 @@ struct FCrewSessionMatchmakingStartedTelemetryEvent : public FCrewSessionBaseTel
 	float                                              TimeoutSeconds;                                            // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               PreserveSession;                                           // 0x0014(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               ResubmitTicket;                                            // 0x0015(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_XST5[0x2];                                     // 0x0016(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B27V[0x2];                                     // 0x0016(0x0002) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -267,7 +267,7 @@ struct FCrewSessionQoSMeasurementTelemetry
 	int                                                NumFailedPings;                                            // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<Sessions_ECrewSessionQoSServerResolveResult> ResolveResult;                                             // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               LocationWasConsidered;                                     // 0x001D(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_LOVA[0x2];                                     // 0x001E(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SPXH[0x2];                                     // 0x001E(0x0002) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

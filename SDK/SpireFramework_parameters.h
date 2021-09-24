@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -22,19 +22,25 @@ namespace CG
 // Function SpireFramework.HeightTriggerableEffectsComponent.SetMovementDirection
 struct UHeightTriggerableEffectsComponent_SetMovementDirection_Params
 {
-	TEnumAsByte<SpireFramework_EDirectionOfMovement>   InMovement;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<SpireFramework_EDirectionOfMovement>   InMovement;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function SpireFramework.SpireService.OnRep_SpireLevels
 struct ASpireService_OnRep_SpireLevels_Params
 {
-	TArray<struct FSpireInfo>                          InPreviousSpireLevels;                                     // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FSpireInfo>                          InPreviousSpireLevels;                                     // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function SpireFramework.TaleSpireService.RegisterResetMechanismInterface
 struct UTaleSpireService_RegisterResetMechanismInterface_Params
 {
-	class AActor*                                      InMechanismResetInterface;                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                      InMechanismResetInterface;                                 // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function SpireFramework.TaleSpireService.IsSpireVisible
+struct UTaleSpireService_IsSpireVisible_Params
+{
+	bool                                               ReturnValue;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 }

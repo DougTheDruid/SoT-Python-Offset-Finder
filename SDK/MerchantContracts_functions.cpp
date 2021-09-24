@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -66,11 +66,13 @@ void FPlayerMerchantContract::BeforeDelete()
 {
 }
 
-// Function MerchantContracts.MerchantContractsBlueprintLibrary.GetDateFromTimeLimit
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x039CB050
+//		Name   -> Function MerchantContracts.MerchantContractsBlueprintLibrary.GetDateFromTimeLimit
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// float                          TimeLimit                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
+//		float                                              TimeLimit                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FText                                       ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FText UMerchantContractsBlueprintLibrary::STATIC_GetDateFromTimeLimit(float TimeLimit)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MerchantContracts.MerchantContractsBlueprintLibrary.GetDateFromTimeLimit");

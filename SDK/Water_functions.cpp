@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -48,6 +48,14 @@ void FSplashProbe::BeforeDelete()
 	DELE_PTR_FULL(CurrentlyPlayingVFX);
 }
 
+void FBuoyancyDragSample::AfterRead()
+{
+}
+
+void FBuoyancyDragSample::BeforeDelete()
+{
+}
+
 void FBuoyancyVolumeSample::AfterRead()
 {
 	READ_PTR_FULL(DistUnderwaterVSBuoyancyForce, UCurveFloat);
@@ -62,14 +70,6 @@ void FBuoyancyVolumeSample::BeforeDelete()
 	DELE_PTR_FULL(DistUnderwaterVSBuoyancyForceSecondary);
 	DELE_PTR_FULL(DistUnderwaterVSBuoyancyForceTertiary);
 	DELE_PTR_FULL(FakeZOffsetGeneratorCurve);
-}
-
-void FBuoyancyDragSample::AfterRead()
-{
-}
-
-void FBuoyancyDragSample::BeforeDelete()
-{
 }
 
 void FWaterBuoyancy::AfterRead()
@@ -212,10 +212,12 @@ void AAthenaWaterEmissionVolume::BeforeDelete()
 
 }
 
-// Function Water.FFTWaterInterface.SetExtendedPlaneComponent
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112F30
+//		Name   -> Function Water.FFTWaterInterface.SetExtendedPlaneComponent
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class UFFTWaterExtendedPlaneComponent* InFFTWaterComponent            (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UFFTWaterExtendedPlaneComponent*             InFFTWaterComponent                                        (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UFFTWaterInterface::SetExtendedPlaneComponent(class UFFTWaterExtendedPlaneComponent* InFFTWaterComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.SetExtendedPlaneComponent");
@@ -232,10 +234,12 @@ void UFFTWaterInterface::SetExtendedPlaneComponent(class UFFTWaterExtendedPlaneC
 }
 
 
-// Function Water.FFTWaterInterface.SetComponent
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112EA0
+//		Name   -> Function Water.FFTWaterInterface.SetComponent
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class UFFTWaterComponent*      InFFTWaterComponent            (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UFFTWaterComponent*                          InFFTWaterComponent                                        (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UFFTWaterInterface::SetComponent(class UFFTWaterComponent* InFFTWaterComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.SetComponent");
@@ -252,10 +256,12 @@ void UFFTWaterInterface::SetComponent(class UFFTWaterComponent* InFFTWaterCompon
 }
 
 
-// Function Water.FFTWaterInterface.SetActor
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112A70
+//		Name   -> Function Water.FFTWaterInterface.SetActor
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// class AAthenaFFTWater*         InFFTWaterActor                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AAthenaFFTWater*                             InFFTWaterActor                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UFFTWaterInterface::SetActor(class AAthenaFFTWater* InFFTWaterActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.SetActor");
@@ -272,10 +278,12 @@ void UFFTWaterInterface::SetActor(class AAthenaFFTWater* InFFTWaterActor)
 }
 
 
-// Function Water.FFTWaterInterface.GetExtendedPlaneComponent
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03111900
+//		Name   -> Function Water.FFTWaterInterface.GetExtendedPlaneComponent
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UFFTWaterExtendedPlaneComponent* ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UFFTWaterExtendedPlaneComponent*             ReturnValue                                                (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UFFTWaterExtendedPlaneComponent* UFFTWaterInterface::GetExtendedPlaneComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.GetExtendedPlaneComponent");
@@ -293,10 +301,12 @@ class UFFTWaterExtendedPlaneComponent* UFFTWaterInterface::GetExtendedPlaneCompo
 }
 
 
-// Function Water.FFTWaterInterface.GetComponent
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031118D0
+//		Name   -> Function Water.FFTWaterInterface.GetComponent
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UFFTWaterComponent*      ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UFFTWaterComponent*                          ReturnValue                                                (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UFFTWaterComponent* UFFTWaterInterface::GetComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.GetComponent");
@@ -314,10 +324,12 @@ class UFFTWaterComponent* UFFTWaterInterface::GetComponent()
 }
 
 
-// Function Water.FFTWaterInterface.GetActor
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03111750
+//		Name   -> Function Water.FFTWaterInterface.GetActor
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class AAthenaFFTWater*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AAthenaFFTWater*                             ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class AAthenaFFTWater* UFFTWaterInterface::GetActor()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.GetActor");
@@ -359,10 +371,12 @@ void UWaterProperties::BeforeDelete()
 
 }
 
-// Function Water.WaterInterface.IsReadyToBeQueried
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03112520
+//		Name   -> Function Water.WaterInterface.IsReadyToBeQueried
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWaterInterface::IsReadyToBeQueried()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.IsReadyToBeQueried");
@@ -380,16 +394,18 @@ bool UWaterInterface::IsReadyToBeQueried()
 }
 
 
-// Function Water.WaterInterface.GetWaterInformationWithScaledChoppyness
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03112280
+//		Name   -> Function Water.WaterInterface.GetWaterInformationWithScaledChoppyness
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          Height                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D               ApproxVelocity                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 Normal                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class AActor*                  Actor                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          ChoppynessScalar               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<Water_EWaterQueryResult> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              Height                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector2D                                   ApproxVelocity                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     Normal                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ChoppynessScalar                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Water_EWaterQueryResult>               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformationWithScaledChoppyness(const struct FVector& SamplePosition, float* Height, struct FVector2D* ApproxVelocity, struct FVector* Normal, class AActor* Actor, float ChoppynessScalar)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterInformationWithScaledChoppyness");
@@ -417,15 +433,17 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformationWithSca
 }
 
 
-// Function Water.WaterInterface.GetWaterInformationBatched
-// (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03112020
+//		Name   -> Function Water.WaterInterface.GetWaterInformationBatched
+//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TArray<struct FVector2D>       SamplePositions                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<float>                  Heights                        (Parm, OutParm, ZeroConstructor)
-// TArray<struct FVector2D>       ApproxVelocities               (Parm, OutParm, ZeroConstructor)
-// TArray<struct FVector>         Normals                        (Parm, OutParm, ZeroConstructor)
-// class AActor*                  Actor                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<Water_EWaterQueryResult> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FVector2D>                           SamplePositions                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		TArray<float>                                      Heights                                                    (Parm, OutParm, ZeroConstructor)
+//		TArray<struct FVector2D>                           ApproxVelocities                                           (Parm, OutParm, ZeroConstructor)
+//		TArray<struct FVector>                             Normals                                                    (Parm, OutParm, ZeroConstructor)
+//		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Water_EWaterQueryResult>               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformationBatched(TArray<struct FVector2D> SamplePositions, TArray<float>* Heights, TArray<struct FVector2D>* ApproxVelocities, TArray<struct FVector>* Normals, class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterInformationBatched");
@@ -452,15 +470,17 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformationBatched
 }
 
 
-// Function Water.WaterInterface.GetWaterInformation
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03111E20
+//		Name   -> Function Water.WaterInterface.GetWaterInformation
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// float                          Height                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D               ApproxVelocity                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                 Normal                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class AActor*                  Actor                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<Water_EWaterQueryResult> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              Height                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector2D                                   ApproxVelocity                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     Normal                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Water_EWaterQueryResult>               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformation(const struct FVector& SamplePosition, float* Height, struct FVector2D* ApproxVelocity, struct FVector* Normal, class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterInformation");
@@ -487,15 +507,17 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformation(const 
 }
 
 
-// Function Water.WaterInterface.GetWaterHeightWithScaledChoppyness
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03111C40
+//		Name   -> Function Water.WaterInterface.GetWaterHeightWithScaledChoppyness
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// class AActor*                  Actor                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           Interpolate                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Height                         (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          ChoppynessScalar               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<Water_EWaterQueryResult> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               Interpolate                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Height                                                     (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ChoppynessScalar                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Water_EWaterQueryResult>               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterHeightWithScaledChoppyness(const struct FVector& SamplePosition, class AActor* Actor, bool Interpolate, float* Height, float ChoppynessScalar)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterHeightWithScaledChoppyness");
@@ -520,14 +542,16 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterHeightWithScaledCh
 }
 
 
-// Function Water.WaterInterface.GetWaterHeight
-// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03111AC0
+//		Name   -> Function Water.WaterInterface.GetWaterHeight
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FVector                 SamplePosition                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-// class AActor*                  Actor                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           Interpolate                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                          Height                         (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<Water_EWaterQueryResult> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     SamplePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               Interpolate                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              Height                                                     (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Water_EWaterQueryResult>               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterHeight(const struct FVector& SamplePosition, class AActor* Actor, bool Interpolate, float* Height)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterHeight");
@@ -551,11 +575,13 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterHeight(const struc
 }
 
 
-// Function Water.WaterInterface.GetActorWaterPlane
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03111820
+//		Name   -> Function Water.WaterInterface.GetActorWaterPlane
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class AActor*                  Actor                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWaterSimPlane          ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterSimPlane                              ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FWaterSimPlane UWaterInterface::GetActorWaterPlane(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetActorWaterPlane");
@@ -574,11 +600,13 @@ struct FWaterSimPlane UWaterInterface::GetActorWaterPlane(class AActor* Actor)
 }
 
 
-// Function Water.WaterInterface.GetActorWaterInformation
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03111780
+//		Name   -> Function Water.WaterInterface.GetActorWaterInformation
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class AActor*                  Actor                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWaterInformation       ReturnValue                    (Parm, OutParm, ReturnParm)
+//		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterInformation                           ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FWaterInformation UWaterInterface::GetActorWaterInformation(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetActorWaterInformation");
@@ -609,8 +637,10 @@ void UWaterInterface::BeforeDelete()
 
 }
 
-// Function Water.FFTWaterService.OnRep_FFTWaterComponent
-// (Final, Native, Public)
+// Function:
+//		Offset -> 0x03112A50
+//		Name   -> Function Water.FFTWaterService.OnRep_FFTWaterComponent
+//		Flags  -> (Final, Native, Public)
 void AFFTWaterService::OnRep_FFTWaterComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterService.OnRep_FFTWaterComponent");
@@ -626,8 +656,10 @@ void AFFTWaterService::OnRep_FFTWaterComponent()
 }
 
 
-// Function Water.FFTWaterService.OnRep_ExtendedPlaneComponent
-// (Final, Native, Public)
+// Function:
+//		Offset -> 0x03112A30
+//		Name   -> Function Water.FFTWaterService.OnRep_ExtendedPlaneComponent
+//		Flags  -> (Final, Native, Public)
 void AFFTWaterService::OnRep_ExtendedPlaneComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterService.OnRep_ExtendedPlaneComponent");
@@ -655,10 +687,12 @@ void AFFTWaterService::BeforeDelete()
 
 }
 
-// Function Water.FlatWaterPlaneComponent.OnActorLeaveWaterPlane
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031126E0
+//		Name   -> Function Water.FlatWaterPlaneComponent.OnActorLeaveWaterPlane
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UFlatWaterPlaneComponent::OnActorLeaveWaterPlane(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FlatWaterPlaneComponent.OnActorLeaveWaterPlane");
@@ -675,10 +709,12 @@ void UFlatWaterPlaneComponent::OnActorLeaveWaterPlane(class AActor* Actor)
 }
 
 
-// Function Water.FlatWaterPlaneComponent.OnActorEnterWaterPlane
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112660
+//		Name   -> Function Water.FlatWaterPlaneComponent.OnActorEnterWaterPlane
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UFlatWaterPlaneComponent::OnActorEnterWaterPlane(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FlatWaterPlaneComponent.OnActorEnterWaterPlane");
@@ -695,11 +731,13 @@ void UFlatWaterPlaneComponent::OnActorEnterWaterPlane(class AActor* Actor)
 }
 
 
-// Function Water.FlatWaterPlaneComponent.ConvertToWaterSpace
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x03111600
+//		Name   -> Function Water.FlatWaterPlaneComponent.ConvertToWaterSpace
+//		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector                 WorldSpacePosition             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector2D               ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		struct FVector                                     WorldSpacePosition                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector2D                                   ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector2D UFlatWaterPlaneComponent::ConvertToWaterSpace(const struct FVector& WorldSpacePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FlatWaterPlaneComponent.ConvertToWaterSpace");
@@ -834,15 +872,17 @@ void UUndergroundSeaWaterId::BeforeDelete()
 
 }
 
-// Function Water.WaterBuoyancyFunctionLibrary.TickBuoyancy
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x031138A0
+//		Name   -> Function Water.WaterBuoyancyFunctionLibrary.TickBuoyancy
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class AActor*                  InOwner                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWaterBuoyancy          InWaterBuoyancy                (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// float                          InDeltaTime                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          InChoppinessScalar             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          FakeZOffsetGeneratorScalar     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InOwner                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterBuoyancy                              InWaterBuoyancy                                            (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		float                                              InDeltaTime                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              InChoppinessScalar                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              FakeZOffsetGeneratorScalar                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 float UWaterBuoyancyFunctionLibrary::STATIC_TickBuoyancy(class AActor* InOwner, struct FWaterBuoyancy* InWaterBuoyancy, float InDeltaTime, float InChoppinessScalar, float FakeZOffsetGeneratorScalar)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancyFunctionLibrary.TickBuoyancy");
@@ -867,11 +907,13 @@ float UWaterBuoyancyFunctionLibrary::STATIC_TickBuoyancy(class AActor* InOwner, 
 }
 
 
-// Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancySamplesZOffsetSymmetricalAroundXAxis
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112D80
+//		Name   -> Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancySamplesZOffsetSymmetricalAroundXAxis
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWaterBuoyancy          InWaterBuoyancy                (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// float                          ZOffset                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterBuoyancy                              InWaterBuoyancy                                            (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		float                                              ZOffset                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancySamplesZOffsetSymmetricalAroundXAxis(struct FWaterBuoyancy* InWaterBuoyancy, float ZOffset)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancySamplesZOffsetSymmetricalAroundXAxis");
@@ -891,11 +933,13 @@ void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancySamplesZOffsetSymmetricalA
 }
 
 
-// Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlendDebugOverride
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112C60
+//		Name   -> Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlendDebugOverride
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWaterBuoyancy          InWaterBuoyancy                (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// float                          UnaryBlendOverride             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterBuoyancy                              InWaterBuoyancy                                            (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		float                                              UnaryBlendOverride                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancyProbeCurveBlendDebugOverride(struct FWaterBuoyancy* InWaterBuoyancy, float UnaryBlendOverride)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlendDebugOverride");
@@ -915,12 +959,14 @@ void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancyProbeCurveBlendDebugOverri
 }
 
 
-// Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlend
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112B00
+//		Name   -> Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlend
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// struct FWaterBuoyancy          InWaterBuoyancy                (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// float                          Blend                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TEnumAsByte<Maths_EBuoyancyBlend> BlendType                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterBuoyancy                              InWaterBuoyancy                                            (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		float                                              Blend                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<Maths_EBuoyancyBlend>                  BlendType                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancyProbeCurveBlend(struct FWaterBuoyancy* InWaterBuoyancy, float Blend, TEnumAsByte<Maths_EBuoyancyBlend> BlendType)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlend");
@@ -953,13 +999,15 @@ void UWaterBuoyancyFunctionLibrary::BeforeDelete()
 
 }
 
-// Function Water.WaterBuoyancySampleMovementFunctionLibrary.TickLocalSampleMovement
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03113A90
+//		Name   -> Function Water.WaterBuoyancySampleMovementFunctionLibrary.TickLocalSampleMovement
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWaterBuoyancy          InWaterBuoyancy                (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// struct FBuoyancySampleMovement InSampleMovement               (Parm, OutParm)
-// float                          DeltaTime                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterBuoyancy                              InWaterBuoyancy                                            (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		struct FBuoyancySampleMovement                     InSampleMovement                                           (Parm, OutParm)
+//		float                                              DeltaTime                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_TickLocalSampleMovement(class AActor* InActor, struct FWaterBuoyancy* InWaterBuoyancy, struct FBuoyancySampleMovement* InSampleMovement, float DeltaTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancySampleMovementFunctionLibrary.TickLocalSampleMovement");
@@ -982,12 +1030,14 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_TickLocalSampleMovement
 }
 
 
-// Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByRandomConfigurationIndex
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x031136C0
+//		Name   -> Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByRandomConfigurationIndex
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWaterBuoyancy          InWaterBuoyancy                (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// struct FBuoyancySampleMovement InSampleMovement               (Parm, OutParm)
+//		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterBuoyancy                              InWaterBuoyancy                                            (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		struct FBuoyancySampleMovement                     InSampleMovement                                           (Parm, OutParm)
 void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSamplesLocallyByRandomConfigurationIndex(class AActor* InActor, struct FWaterBuoyancy* InWaterBuoyancy, struct FBuoyancySampleMovement* InSampleMovement)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByRandomConfigurationIndex");
@@ -1009,13 +1059,15 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSample
 }
 
 
-// Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByConfigurationIndex
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x031134A0
+//		Name   -> Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByConfigurationIndex
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWaterBuoyancy          InWaterBuoyancy                (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// struct FBuoyancySampleMovement InSampleMovement               (Parm, OutParm)
-// int                            ConfigurationIndex             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterBuoyancy                              InWaterBuoyancy                                            (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		struct FBuoyancySampleMovement                     InSampleMovement                                           (Parm, OutParm)
+//		int                                                ConfigurationIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSamplesLocallyByConfigurationIndex(class AActor* InActor, struct FWaterBuoyancy* InWaterBuoyancy, struct FBuoyancySampleMovement* InSampleMovement, int ConfigurationIndex)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByConfigurationIndex");
@@ -1038,18 +1090,20 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSample
 }
 
 
-// Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocally
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03113100
+//		Name   -> Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocally
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWaterBuoyancy          InWaterBuoyancy                (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// struct FBuoyancySampleMovement InSampleMovement               (Parm, OutParm)
-// class UCurveVector*            InCenterOfMassOffsetCurve      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FBuoyancySampleMovementConfigurationEntry> NewSampleData                  (Parm, OutParm, ZeroConstructor)
-// float                          BuoyancyScalarAtNewPosition    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCurveFloat*             BuoyancyScalarCurve            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCurveFloat*             ProbeMovementCurve             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                          MoveTime                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterBuoyancy                              InWaterBuoyancy                                            (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		struct FBuoyancySampleMovement                     InSampleMovement                                           (Parm, OutParm)
+//		class UCurveVector*                                InCenterOfMassOffsetCurve                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FBuoyancySampleMovementConfigurationEntry> NewSampleData                                              (Parm, OutParm, ZeroConstructor)
+//		float                                              BuoyancyScalarAtNewPosition                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCurveFloat*                                 BuoyancyScalarCurve                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UCurveFloat*                                 ProbeMovementCurve                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              MoveTime                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSamplesLocally(class AActor* InActor, struct FWaterBuoyancy* InWaterBuoyancy, struct FBuoyancySampleMovement* InSampleMovement, class UCurveVector* InCenterOfMassOffsetCurve, TArray<struct FBuoyancySampleMovementConfigurationEntry>* NewSampleData, float BuoyancyScalarAtNewPosition, class UCurveFloat* BuoyancyScalarCurve, class UCurveFloat* ProbeMovementCurve, float MoveTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocally");
@@ -1126,10 +1180,12 @@ void UWaterPlaneInterface::BeforeDelete()
 
 }
 
-// Function Water.WaterInteractionComponent.LeaveWaterPlane
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031125D0
+//		Name   -> Function Water.WaterInteractionComponent.LeaveWaterPlane
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UBaseWaterComponent*     WaterComponent                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UBaseWaterComponent*                         WaterComponent                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterInteractionComponent::LeaveWaterPlane(class UBaseWaterComponent* WaterComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.LeaveWaterPlane");
@@ -1146,8 +1202,10 @@ void UWaterInteractionComponent::LeaveWaterPlane(class UBaseWaterComponent* Wate
 }
 
 
-// Function Water.WaterInteractionComponent.LeaveWaterExclusionZone
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031125B0
+//		Name   -> Function Water.WaterInteractionComponent.LeaveWaterExclusionZone
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UWaterInteractionComponent::LeaveWaterExclusionZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.LeaveWaterExclusionZone");
@@ -1163,10 +1221,12 @@ void UWaterInteractionComponent::LeaveWaterExclusionZone()
 }
 
 
-// Function Water.WaterInteractionComponent.IsUsingWaterExcludedZone
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112580
+//		Name   -> Function Water.WaterInteractionComponent.IsUsingWaterExcludedZone
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWaterInteractionComponent::IsUsingWaterExcludedZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.IsUsingWaterExcludedZone");
@@ -1184,10 +1244,12 @@ bool UWaterInteractionComponent::IsUsingWaterExcludedZone()
 }
 
 
-// Function Water.WaterInteractionComponent.IsUsingNonDefaultWaterPlane
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112550
+//		Name   -> Function Water.WaterInteractionComponent.IsUsingNonDefaultWaterPlane
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWaterInteractionComponent::IsUsingNonDefaultWaterPlane()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.IsUsingNonDefaultWaterPlane");
@@ -1205,10 +1267,12 @@ bool UWaterInteractionComponent::IsUsingNonDefaultWaterPlane()
 }
 
 
-// Function Water.WaterInteractionComponent.IsInWaterExcludedZone
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x031124F0
+//		Name   -> Function Water.WaterInteractionComponent.IsInWaterExcludedZone
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UWaterInteractionComponent::IsInWaterExcludedZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.IsInWaterExcludedZone");
@@ -1226,10 +1290,12 @@ bool UWaterInteractionComponent::IsInWaterExcludedZone()
 }
 
 
-// Function Water.WaterInteractionComponent.GetWaterPlaneComponent
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031124C0
+//		Name   -> Function Water.WaterInteractionComponent.GetWaterPlaneComponent
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UBaseWaterComponent*     ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UBaseWaterComponent*                         ReturnValue                                                (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 class UBaseWaterComponent* UWaterInteractionComponent::GetWaterPlaneComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.GetWaterPlaneComponent");
@@ -1247,10 +1313,12 @@ class UBaseWaterComponent* UWaterInteractionComponent::GetWaterPlaneComponent()
 }
 
 
-// Function Water.WaterInteractionComponent.GetNumberOfWaterPlanes
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function:
+//		Offset -> 0x03111930
+//		Name   -> Function Water.WaterInteractionComponent.GetNumberOfWaterPlanes
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// unsigned char                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		unsigned char                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 unsigned char UWaterInteractionComponent::GetNumberOfWaterPlanes()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.GetNumberOfWaterPlanes");
@@ -1268,10 +1336,12 @@ unsigned char UWaterInteractionComponent::GetNumberOfWaterPlanes()
 }
 
 
-// Function Water.WaterInteractionComponent.EnterWaterPlane
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031116C0
+//		Name   -> Function Water.WaterInteractionComponent.EnterWaterPlane
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UBaseWaterComponent*     WaterComponent                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UBaseWaterComponent*                         WaterComponent                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterInteractionComponent::EnterWaterPlane(class UBaseWaterComponent* WaterComponent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.EnterWaterPlane");
@@ -1288,8 +1358,10 @@ void UWaterInteractionComponent::EnterWaterPlane(class UBaseWaterComponent* Wate
 }
 
 
-// Function Water.WaterInteractionComponent.EnterWaterExclusionZone
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x031116A0
+//		Name   -> Function Water.WaterInteractionComponent.EnterWaterExclusionZone
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UWaterInteractionComponent::EnterWaterExclusionZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.EnterWaterExclusionZone");
@@ -1317,12 +1389,14 @@ void UWaterInteractionComponent::BeforeDelete()
 
 }
 
-// Function Water.WaterPlaneExclusionComponent.OnOverlapEnd
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x03112930
+//		Name   -> Function Water.WaterPlaneExclusionComponent.OnOverlapEnd
+//		Flags  -> (Final, Native, Private)
 // Parameters:
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      OtherActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         OtherComp                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                OtherBodyIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterPlaneExclusionComponent::OnOverlapEnd(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterPlaneExclusionComponent.OnOverlapEnd");
@@ -1341,14 +1415,16 @@ void UWaterPlaneExclusionComponent::OnOverlapEnd(class AActor* OtherActor, class
 }
 
 
-// Function Water.WaterPlaneExclusionComponent.OnOverlapBegin
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x03112760
+//		Name   -> Function Water.WaterPlaneExclusionComponent.OnOverlapBegin
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           FromSweep                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+//		class AActor*                                      OtherActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UPrimitiveComponent*                         OtherComp                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                OtherBodyIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               FromSweep                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FHitResult                                  SweepResult                                                (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 void UWaterPlaneExclusionComponent::OnOverlapBegin(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool FromSweep, const struct FHitResult& SweepResult)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterPlaneExclusionComponent.OnOverlapBegin");
@@ -1393,12 +1469,14 @@ void UWaterPlaneRetrievalProviderInterface::BeforeDelete()
 
 }
 
-// Function Water.WaterSplashProbeFunctionLibrary.TickProbes
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03113E20
+//		Name   -> Function Water.WaterSplashProbeFunctionLibrary.TickProbes
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class AActor*                  InOwner                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FWaterSplashProbe> InSplashProbes                 (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// float                          InDeltaTime                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InOwner                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FWaterSplashProbe>                   InSplashProbes                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		float                                              InDeltaTime                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterSplashProbeFunctionLibrary::STATIC_TickProbes(class AActor* InOwner, TArray<struct FWaterSplashProbe>* InSplashProbes, float InDeltaTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSplashProbeFunctionLibrary.TickProbes");
@@ -1419,12 +1497,14 @@ void UWaterSplashProbeFunctionLibrary::STATIC_TickProbes(class AActor* InOwner, 
 }
 
 
-// Function Water.WaterSplashProbeFunctionLibrary.TickProbe
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03113CB0
+//		Name   -> Function Water.WaterSplashProbeFunctionLibrary.TickProbe
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// class AActor*                  InOwner                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWaterSplashProbe       InSplashProbe                  (Parm, OutParm, ReferenceParm)
-// float                          InDeltaTime                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      InOwner                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWaterSplashProbe                           InSplashProbe                                              (Parm, OutParm, ReferenceParm)
+//		float                                              InDeltaTime                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterSplashProbeFunctionLibrary::STATIC_TickProbe(class AActor* InOwner, struct FWaterSplashProbe* InSplashProbe, float InDeltaTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSplashProbeFunctionLibrary.TickProbe");
@@ -1445,11 +1525,13 @@ void UWaterSplashProbeFunctionLibrary::STATIC_TickProbe(class AActor* InOwner, s
 }
 
 
-// Function Water.WaterSplashProbeFunctionLibrary.SetSamplingTime
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function:
+//		Offset -> 0x03112FC0
+//		Name   -> Function Water.WaterSplashProbeFunctionLibrary.SetSamplingTime
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TArray<struct FWaterSplashProbe> InSplashProbes                 (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// float                          SamplingTime                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TArray<struct FWaterSplashProbe>                   InSplashProbes                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		float                                              SamplingTime                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UWaterSplashProbeFunctionLibrary::STATIC_SetSamplingTime(TArray<struct FWaterSplashProbe>* InSplashProbes, float SamplingTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSplashProbeFunctionLibrary.SetSamplingTime");
@@ -1469,12 +1551,14 @@ void UWaterSplashProbeFunctionLibrary::STATIC_SetSamplingTime(TArray<struct FWat
 }
 
 
-// Function Water.WaterSplashProbeFunctionLibrary.GetRelativeWaterHeightChangeSpd
-// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Function:
+//		Offset -> 0x03111960
+//		Name   -> Function Water.WaterSplashProbeFunctionLibrary.GetRelativeWaterHeightChangeSpd
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
-// TArray<struct FWaterSplashProbe> InSplashProbes                 (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// int                            ProbeIndex                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		TArray<struct FWaterSplashProbe>                   InSplashProbes                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+//		int                                                ProbeIndex                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 struct FVector UWaterSplashProbeFunctionLibrary::STATIC_GetRelativeWaterHeightChangeSpd(TArray<struct FWaterSplashProbe>* InSplashProbes, int ProbeIndex)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSplashProbeFunctionLibrary.GetRelativeWaterHeightChangeSpd");
@@ -1508,10 +1592,12 @@ void UWaterSplashProbeFunctionLibrary::BeforeDelete()
 
 }
 
-// Function Water.WaterSpoutVFXComponent.AddSplashVFXSpawnerWithLocation
-// (Final, Native, Private, HasOutParms)
+// Function:
+//		Offset -> 0x031114F0
+//		Name   -> Function Water.WaterSpoutVFXComponent.AddSplashVFXSpawnerWithLocation
+//		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
-// struct FWaterSpout             WaterSplashLocator             (Parm, OutParm, ContainsInstancedReference)
+//		struct FWaterSpout                                 WaterSplashLocator                                         (Parm, OutParm, ContainsInstancedReference)
 void UWaterSpoutVFXComponent::AddSplashVFXSpawnerWithLocation(struct FWaterSpout* WaterSplashLocator)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSpoutVFXComponent.AddSplashVFXSpawnerWithLocation");
@@ -1530,8 +1616,10 @@ void UWaterSpoutVFXComponent::AddSplashVFXSpawnerWithLocation(struct FWaterSpout
 }
 
 
-// Function Water.WaterSpoutVFXComponent.ActivateSplashVFXWithDelay
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x031114D0
+//		Name   -> Function Water.WaterSpoutVFXComponent.ActivateSplashVFXWithDelay
+//		Flags  -> (Final, Native, Private)
 void UWaterSpoutVFXComponent::ActivateSplashVFXWithDelay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSpoutVFXComponent.ActivateSplashVFXWithDelay");

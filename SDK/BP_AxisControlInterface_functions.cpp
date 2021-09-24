@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -18,10 +18,12 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-// Function BP_AxisControlInterface.BP_AxisControlInterface_C.StickInput
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function:
+//		Offset -> 0x01637030
+//		Name   -> Function BP_AxisControlInterface.BP_AxisControlInterface_C.StickInput
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                          StickInputX                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		float                                              StickInputX                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 void UBP_AxisControlInterface_C::StickInput(float StickInputX)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AxisControlInterface.BP_AxisControlInterface_C.StickInput");

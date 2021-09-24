@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -44,7 +44,7 @@ public:
 class ADrawDebugService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_LJFR[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_YJEB[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FDrawDebugItemMessage>               MessagesReplicated;                                        // 0x03D8(0x0010) (Net, ZeroConstructor)
 	TArray<struct FDrawDebugItemSphere>                SpheresReplicated;                                         // 0x03E8(0x0010) (Net, ZeroConstructor, RepNotify)
 	TArray<struct FDrawDebugItemBox>                   BoxesReplicated;                                           // 0x03F8(0x0010) (Net, ZeroConstructor, RepNotify)
@@ -53,7 +53,7 @@ public:
 	TArray<struct FDrawDebugItemSector>                SectorsReplicated;                                         // 0x0428(0x0010) (Net, ZeroConstructor, RepNotify)
 	TArray<struct FDrawDebugItemString>                StringsReplicated;                                         // 0x0438(0x0010) (Net, ZeroConstructor, RepNotify)
 	bool                                               IsDrawDebugActive;                                         // 0x0448(0x0001) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor)
-	unsigned char                                      UnknownData_CWEG[0x7F];                                    // 0x0449(0x007F) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QSSK[0x7F];                                    // 0x0449(0x007F) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -127,7 +127,7 @@ public:
 	TArray<struct FString>                             OutputRingBuffer;                                          // 0x03D0(0x0010) (Net, ZeroConstructor)
 	int                                                AddAt;                                                     // 0x03E0(0x0004) (Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       Id;                                                        // 0x03E4(0x0008) (Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_7NUL[0xC];                                     // 0x03EC(0x000C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UZGT[0xC];                                     // 0x03EC(0x000C) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -168,7 +168,7 @@ public:
 class UVideprinterService : public UObject
 {
 public:
-	unsigned char                                      UnknownData_GO4C[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_N3FQ[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class AVideprinter*>                        Videprinters;                                              // 0x0030(0x0010) (ZeroConstructor)
 
 

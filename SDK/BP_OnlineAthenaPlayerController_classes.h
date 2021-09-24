@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -20,11 +20,11 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_OnlineAthenaPlayerController.BP_OnlineAthenaPlayerController_C
-// 0x0008 (FullSize[0x1528] - InheritedSize[0x1520])
+// 0x0008 (FullSize[0x1540] - InheritedSize[0x1538])
 class ABP_OnlineAthenaPlayerController_C : public AOnlineAthenaPlayerController
 {
 public:
-	class UBP_Component_Tutorial2019_C*                VisitShopkeepersTutorialComponent;                         // 0x1520(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	class UBP_Component_Tutorial2019_C*                VisitShopkeepersTutorialComponent;                         // 0x1538(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
 
 
 	static UClass* StaticClass()

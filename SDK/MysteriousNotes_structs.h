@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -41,7 +41,7 @@ struct FWieldableMysteriousNoteLayoutItem
 	struct FTreasureMapWidgetText                      NoteTitleWidgetText;                                       // 0x0058(0x0020) (Edit, DisableEditOnInstance)
 	struct FTreasureMapWidgetText                      NoteBodyWidgetText;                                        // 0x0078(0x0020) (Edit, DisableEditOnInstance)
 	float                                              NoteWidth;                                                 // 0x0098(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_3CEM[0x4];                                     // 0x009C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Z08B[0x4];                                     // 0x009C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -55,7 +55,7 @@ struct FMysteriousNoteInfo
 	struct FGuid                                       NoteId;                                                    // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               NoteRead;                                                  // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               ShowNoteAnimation;                                         // 0x0011(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_51G5[0x2];                                     // 0x0012(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5JXP[0x2];                                     // 0x0012(0x0002) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -67,7 +67,7 @@ struct FMysteriousNoteInfo
 struct FClientNoteData
 {
 	bool                                               NotifyArrival;                                             // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_6VJP[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_X8AZ[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FMysteriousNoteInfo>                 PendingNotes;                                              // 0x0008(0x0010) (ZeroConstructor)
 
 	void AfterRead();
@@ -90,7 +90,7 @@ struct FMysteriousNotesCompletionEventsModelEntry
 // 0x0001
 struct FEventListenForCinematicEndEvent
 {
-	unsigned char                                      UnknownData_OXK6[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_F5VX[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -103,7 +103,7 @@ struct FEventTriggerMysteriousNotesPopup
 {
 	class APlayerController*                           PlayerController;                                          // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               CinematicSkipped;                                          // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_VEWV[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AQE8[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -150,7 +150,7 @@ struct FEventNoteCompletionStep
 // 0x0001
 struct FEventNotesUpdated
 {
-	unsigned char                                      UnknownData_ZTIA[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LJKV[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -195,7 +195,7 @@ struct FEventPlayerControllerPossessed
 // 0x0010
 struct FEventMysteriousNoteContentUpdated
 {
-	unsigned char                                      UnknownData_894R[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6T1Q[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -206,7 +206,18 @@ struct FEventMysteriousNoteContentUpdated
 // 0x0001
 struct FEventMysteriousNoteSettingsLoaded
 {
-	unsigned char                                      UnknownData_O9CN[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_OTWN[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct MysteriousNotes.EventMysteriousNoteCustomContentUpdate
+// 0x0001
+struct FEventMysteriousNoteCustomContentUpdate
+{
+	unsigned char                                      UnknownData_I7WF[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -217,7 +228,7 @@ struct FEventMysteriousNoteSettingsLoaded
 // 0x0010
 struct FEventMysteriousNoteRemoved
 {
-	unsigned char                                      UnknownData_R5OD[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_99CQ[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -280,7 +291,7 @@ struct FPlayerMysteriousNoteItem
 	struct FString                                     LocalisedTitle;                                            // 0x0010(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     LocalisedBody;                                             // 0x0020(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     NoteType;                                                  // 0x0030(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_KUJA[0x8];                                     // 0x0040(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_VXQB[0x8];                                     // 0x0040(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

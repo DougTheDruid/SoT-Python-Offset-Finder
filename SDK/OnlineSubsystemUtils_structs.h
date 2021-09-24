@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.2.1.1
+// Name: SoT, Version: 2.3.0
 
 
 /*!!DEFINE!!*/
@@ -75,7 +75,7 @@ struct FPlayerReservation
 	struct FUniqueNetIdRepl                            UniqueId;                                                  // 0x0000(0x0018) (Transient)
 	struct FString                                     ValidationStr;                                             // 0x0018(0x0010) (ZeroConstructor, Transient, HasGetValueTypeHash)
 	float                                              ElapsedTime;                                               // 0x0028(0x0004) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_OSTC[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_TSPS[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -87,7 +87,7 @@ struct FPlayerReservation
 struct FPartyReservation
 {
 	int                                                TeamNum;                                                   // 0x0000(0x0004) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_XLFN[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PZU2[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FUniqueNetIdRepl                            PartyLeader;                                               // 0x0008(0x0018) (Transient)
 	TArray<struct FPlayerReservation>                  PartyMembers;                                              // 0x0020(0x0010) (ZeroConstructor, Transient)
 
@@ -100,7 +100,7 @@ struct FPartyReservation
 // 0x00E0
 struct FBlueprintSessionResult
 {
-	unsigned char                                      UnknownData_TWV5[0xE0];                                    // 0x0000(0x00E0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9SPT[0xE0];                                    // 0x0000(0x00E0) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

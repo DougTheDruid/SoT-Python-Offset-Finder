@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.2.1.1
+﻿// Name: SoT, Version: 2.3.0
 
 #include "../pch.h"
 
@@ -34,11 +34,13 @@ void FMusicZoneSpawnedEvent::BeforeDelete()
 {
 }
 
-// Function Music.MusicZoneInterface.CanPlayForPlayer
-// (RequiredAPI, Native, Event, Public, BlueprintEvent, Const)
+// Function:
+//		Offset -> 0x036BAC80
+//		Name   -> Function Music.MusicZoneInterface.CanPlayForPlayer
+//		Flags  -> (RequiredAPI, Native, Event, Public, BlueprintEvent, Const)
 // Parameters:
-// class AActor*                  Player                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+//		class AActor*                                      Player                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 bool UMusicZoneInterface::CanPlayForPlayer(class AActor* Player)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneInterface.CanPlayForPlayer");
@@ -69,10 +71,12 @@ void UMusicZoneInterface::BeforeDelete()
 
 }
 
-// Function Music.MusicZoneComponent.GetEmitter
-// (Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x036BADE0
+//		Name   -> Function Music.MusicZoneComponent.GetEmitter
+//		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
-// struct FWwiseEmitter           ReturnValue                    (Parm, OutParm, ReturnParm)
+//		struct FWwiseEmitter                               ReturnValue                                                (Parm, OutParm, ReturnParm)
 struct FWwiseEmitter UMusicZoneComponent::GetEmitter()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.GetEmitter");
@@ -90,8 +94,10 @@ struct FWwiseEmitter UMusicZoneComponent::GetEmitter()
 }
 
 
-// Function Music.MusicZoneComponent.DisableZone
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x036BADC0
+//		Name   -> Function Music.MusicZoneComponent.DisableZone
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMusicZoneComponent::DisableZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.DisableZone");
@@ -107,8 +113,10 @@ void UMusicZoneComponent::DisableZone()
 }
 
 
-// Function Music.MusicZoneComponent.Client_StopMusicAndDisableZone
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Function:
+//		Offset -> 0x036BADA0
+//		Name   -> Function Music.MusicZoneComponent.Client_StopMusicAndDisableZone
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
 void UMusicZoneComponent::Client_StopMusicAndDisableZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.Client_StopMusicAndDisableZone");
@@ -124,10 +132,12 @@ void UMusicZoneComponent::Client_StopMusicAndDisableZone()
 }
 
 
-// Function Music.MusicZoneComponent.Client_PlayOneShot
-// (Net, NetReliable, Native, Event, NetMulticast, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x036BAD20
+//		Name   -> Function Music.MusicZoneComponent.Client_PlayOneShot
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public, BlueprintCallable)
 // Parameters:
-// int                            Index                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Index                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 void UMusicZoneComponent::Client_PlayOneShot(int Index)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.Client_PlayOneShot");
@@ -144,8 +154,10 @@ void UMusicZoneComponent::Client_PlayOneShot(int Index)
 }
 
 
-// Function Music.MusicZoneComponent.ActivateZone
-// (Final, Native, Public, BlueprintCallable)
+// Function:
+//		Offset -> 0x036BAC60
+//		Name   -> Function Music.MusicZoneComponent.ActivateZone
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMusicZoneComponent::ActivateZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.ActivateZone");
@@ -179,8 +191,10 @@ void UMusicZoneComponent::BeforeDelete()
 	DELE_PTR_FULL(EmitterPool);
 }
 
-// Function Music.AISpawnerMusicZoneComponent.OnRep_SpawnerState
-// (Final, Native, Private)
+// Function:
+//		Offset -> 0x036BAE60
+//		Name   -> Function Music.AISpawnerMusicZoneComponent.OnRep_SpawnerState
+//		Flags  -> (Final, Native, Private)
 void UAISpawnerMusicZoneComponent::OnRep_SpawnerState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.AISpawnerMusicZoneComponent.OnRep_SpawnerState");
