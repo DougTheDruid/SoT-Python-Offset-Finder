@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -86,7 +86,7 @@ public:
 class UServiceMessagingListenerTestObject : public UObject
 {
 public:
-	unsigned char                                      UnknownData_2ELK[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_REME[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

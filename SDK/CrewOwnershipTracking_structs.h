@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -50,7 +50,7 @@ struct FCrewTrackedItemOwnershipChanged
 	struct FGuid                                       CrewId;                                                    // 0x0008(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FGuid                                       PreviousCrewId;                                            // 0x0018(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               IsFirstTimeOwnedByThisCrew;                                // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_8CR6[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_S4EF[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

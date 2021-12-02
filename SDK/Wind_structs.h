@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -27,7 +27,7 @@ struct FWindZoneParams
 	float                                              InnerRadius;                                               // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TurbulenceScalar;                                          // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               WindOnlyAffectsTrees;                                      // 0x000C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_C814[0x3];                                     // 0x000D(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_CYDH[0x3];                                     // 0x000D(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -82,7 +82,7 @@ struct FWindTurbulenceParameters
 // 0x0001
 struct FWindMagnitudeChanged
 {
-	unsigned char                                      UnknownData_TN9Q[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BTNT[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -93,7 +93,7 @@ struct FWindMagnitudeChanged
 // 0x0001
 struct FWindDirectionChanged
 {
-	unsigned char                                      UnknownData_1TWQ[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_HRJ6[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

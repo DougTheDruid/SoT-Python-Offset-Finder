@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -39,7 +39,7 @@ enum class Reviving_EReviveState : uint8_t
 struct FModeSpecificReviveSettings
 {
 	TEnumAsByte<AthenaEngine_EPlayMode>                AssociatedPlaymode;                                        // 0x0000(0x0001) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_B018[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_W0RY[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              DeathCameraBlackFadeDelay;                                 // 0x0004(0x0004) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              DeathCameraBlackFadeDuration;                              // 0x0008(0x0004) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              DeathCameraBlackFadeEventClientTimeout;                    // 0x000C(0x0004) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,7 +61,7 @@ struct FModeSpecificReviveSettings
 struct FReviveEffectsValues
 {
 	class UMaterialInstanceDynamic*                    AstralCordPostProcessMID;                                  // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_8R1F[0x18];                                    // 0x0008(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8J9Z[0x18];                                    // 0x0008(0x0018) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -72,7 +72,7 @@ struct FReviveEffectsValues
 // 0x0001
 struct FPlayerInReviveableStateTelemetryEvent
 {
-	unsigned char                                      UnknownData_G0XV[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_M2KK[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -115,7 +115,7 @@ struct FEventRevivableRepresentationSpawnCompleted
 // 0x0001
 struct FEventRevivableRepresentationSpawnStarted
 {
-	unsigned char                                      UnknownData_XJLU[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_E6WQ[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -130,7 +130,7 @@ struct FReviveableActionStateConstructionInfo : public FActorActionStateConstruc
 	struct FDamageInstance                             DamageInstance;                                            // 0x0038(0x0028)
 	TEnumAsByte<Athena_ECharacterDeathType>            CharacterDeathType;                                        // 0x0060(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<Athena_ECharacterType>                 CharacterType;                                             // 0x0061(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_NHJ2[0x6];                                     // 0x0062(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_C2XD[0x6];                                     // 0x0062(0x0006) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -164,7 +164,7 @@ struct FRevivedActionStateParams
 // 0x0001
 struct FReviveableActionStateStarted
 {
-	unsigned char                                      UnknownData_59DN[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KHMF[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -186,7 +186,7 @@ struct FEventCharacterDiedDuringReviving
 // 0x0001
 struct FEventRevivePlayerActionStateLeft
 {
-	unsigned char                                      UnknownData_YZM4[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_STFQ[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -197,7 +197,7 @@ struct FEventRevivePlayerActionStateLeft
 // 0x0001
 struct FEventRevivePlayerActionStateEntered
 {
-	unsigned char                                      UnknownData_3LKQ[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8O8N[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -208,7 +208,7 @@ struct FEventRevivePlayerActionStateEntered
 // 0x0001
 struct FEventCharacterFullyRevived
 {
-	unsigned char                                      UnknownData_O1CZ[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_A9L9[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -219,7 +219,7 @@ struct FEventCharacterFullyRevived
 // 0x0001
 struct FReviveEndedEarlyEvent
 {
-	unsigned char                                      UnknownData_P8C1[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_A0AU[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -230,7 +230,7 @@ struct FReviveEndedEarlyEvent
 // 0x0001
 struct FEventRevivableRepresentationReturnedToBody
 {
-	unsigned char                                      UnknownData_HK06[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QSOL[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -241,7 +241,7 @@ struct FEventRevivableRepresentationReturnedToBody
 // 0x0001
 struct FSuccessfulReviveEvent
 {
-	unsigned char                                      UnknownData_CO61[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8HWH[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -252,7 +252,7 @@ struct FSuccessfulReviveEvent
 // 0x0001
 struct FBeingRevivedStoppedEvent
 {
-	unsigned char                                      UnknownData_8OGZ[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8FY5[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -263,7 +263,7 @@ struct FBeingRevivedStoppedEvent
 // 0x0001
 struct FBeingRevivedStartedEvent
 {
-	unsigned char                                      UnknownData_ZLO3[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MPTK[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -274,7 +274,7 @@ struct FBeingRevivedStartedEvent
 // 0x0001
 struct FRevivableCharacterGhostlyBodyEvaporateStarted
 {
-	unsigned char                                      UnknownData_N5ZG[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_J2JX[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -285,7 +285,7 @@ struct FRevivableCharacterGhostlyBodyEvaporateStarted
 // 0x0001
 struct FRevivingWindowEnd
 {
-	unsigned char                                      UnknownData_I9WP[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UHVK[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -298,7 +298,7 @@ struct FRevivingWindowStart
 {
 	struct FDamageInstance                             DamageInstance;                                            // 0x0000(0x0028)
 	TEnumAsByte<Athena_ECharacterDeathType>            CharacterDeathType;                                        // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_RFJ7[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_NFK8[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class ACharacter*                                  RevivableCharacter;                                        // 0x0030(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();

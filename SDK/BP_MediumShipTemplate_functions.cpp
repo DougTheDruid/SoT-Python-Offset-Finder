@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0.Brig
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShipTemplate.BP_MediumShipTemplate_C.GetPxActorCapacityForPhysXAggregate
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -28,7 +28,7 @@ unsigned char ABP_MediumShipTemplate_C::GetPxActorCapacityForPhysXAggregate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShipTemplate.BP_MediumShipTemplate_C.GetPxActorCapacityForPhysXAggregate");
 
-	ABP_MediumShipTemplate_C_GetPxActorCapacityForPhysXAggregate_Params params;
+	ABP_MediumShipTemplate_C_GetPxActorCapacityForPhysXAggregate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,7 +41,7 @@ unsigned char ABP_MediumShipTemplate_C::GetPxActorCapacityForPhysXAggregate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShipTemplate.BP_MediumShipTemplate_C.SetupMastControls
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -54,7 +54,7 @@ void ABP_MediumShipTemplate_C::SetupMastControls(class UChildActorComponent* Lef
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShipTemplate.BP_MediumShipTemplate_C.SetupMastControls");
 
-	ABP_MediumShipTemplate_C_SetupMastControls_Params params;
+	ABP_MediumShipTemplate_C_SetupMastControls_Params params {};
 	params.LeftHoist = LeftHoist;
 	params.RightHoist = RightHoist;
 	params.LeftAngle = LeftAngle;
@@ -70,7 +70,7 @@ void ABP_MediumShipTemplate_C::SetupMastControls(class UChildActorComponent* Lef
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShipTemplate.BP_MediumShipTemplate_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -78,7 +78,7 @@ void ABP_MediumShipTemplate_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShipTemplate.BP_MediumShipTemplate_C.UserConstructionScript");
 
-	ABP_MediumShipTemplate_C_UserConstructionScript_Params params;
+	ABP_MediumShipTemplate_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -92,6 +92,23 @@ void ABP_MediumShipTemplate_C::AfterRead()
 {
 	AShip::AfterRead();
 
+	READ_PTR_FULL(Rat3, UStaticMeshComponent);
+	READ_PTR_FULL(Rat2, UStaticMeshComponent);
+	READ_PTR_FULL(Rat1, UStaticMeshComponent);
+	READ_PTR_FULL(BP_BedComponent, UBP_BedComponent_C);
+	READ_PTR_FULL(RatManager, URatManagerComponent);
+	READ_PTR_FULL(Seat_Port_Rear_3, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Starboard_Rear_3, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_MapTable_3, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_MapTable, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Barrel_Front, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Bed_End, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Starboard_Front, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Port_Front, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Starboard_Mid, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Port_Mid, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Starboard_Rear, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Port_Rear, UBP_SeatComponent_C);
 	READ_PTR_FULL(AIRegion, UAIRegionComponent);
 	READ_PTR_FULL(NamedPoints, UNamedPointsComponent);
 	READ_PTR_FULL(shp_mid_ladder_gap_hits_01_a, UStaticMeshComponent);
@@ -178,6 +195,23 @@ void ABP_MediumShipTemplate_C::BeforeDelete()
 {
 	AShip::BeforeDelete();
 
+	DELE_PTR_FULL(Rat3);
+	DELE_PTR_FULL(Rat2);
+	DELE_PTR_FULL(Rat1);
+	DELE_PTR_FULL(BP_BedComponent);
+	DELE_PTR_FULL(RatManager);
+	DELE_PTR_FULL(Seat_Port_Rear_3);
+	DELE_PTR_FULL(Seat_Starboard_Rear_3);
+	DELE_PTR_FULL(Seat_MapTable_3);
+	DELE_PTR_FULL(Seat_MapTable);
+	DELE_PTR_FULL(Seat_Barrel_Front);
+	DELE_PTR_FULL(Seat_Bed_End);
+	DELE_PTR_FULL(Seat_Starboard_Front);
+	DELE_PTR_FULL(Seat_Port_Front);
+	DELE_PTR_FULL(Seat_Starboard_Mid);
+	DELE_PTR_FULL(Seat_Port_Mid);
+	DELE_PTR_FULL(Seat_Starboard_Rear);
+	DELE_PTR_FULL(Seat_Port_Rear);
 	DELE_PTR_FULL(AIRegion);
 	DELE_PTR_FULL(NamedPoints);
 	DELE_PTR_FULL(shp_mid_ladder_gap_hits_01_a);

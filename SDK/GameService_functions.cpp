@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -69,7 +69,7 @@ void UGameServiceLifecycleInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02FAA4C0
+//		Offset -> 0x02FF1CE0
 //		Name   -> Function GameService.GameServiceMapFunctions.UnregisterService
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -79,7 +79,7 @@ void UGameServiceMapFunctions::STATIC_UnregisterService(struct FGameServiceMap* 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceMapFunctions.UnregisterService");
 
-	UGameServiceMapFunctions_UnregisterService_Params params;
+	UGameServiceMapFunctions_UnregisterService_Params params {};
 	params.Service = Service;
 
 	auto flags = fn->FunctionFlags;
@@ -95,7 +95,7 @@ void UGameServiceMapFunctions::STATIC_UnregisterService(struct FGameServiceMap* 
 
 
 // Function:
-//		Offset -> 0x02FAA270
+//		Offset -> 0x02FF1A90
 //		Name   -> Function GameService.GameServiceMapFunctions.RegisterService
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -106,7 +106,7 @@ void UGameServiceMapFunctions::STATIC_RegisterService(struct FGameServiceMap* Se
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceMapFunctions.RegisterService");
 
-	UGameServiceMapFunctions_RegisterService_Params params;
+	UGameServiceMapFunctions_RegisterService_Params params {};
 	params.Service = Service;
 	params.Class = Class;
 
@@ -123,7 +123,7 @@ void UGameServiceMapFunctions::STATIC_RegisterService(struct FGameServiceMap* Se
 
 
 // Function:
-//		Offset -> 0x02FAA030
+//		Offset -> 0x02FF1850
 //		Name   -> Function GameService.GameServiceMapFunctions.GetService
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -134,7 +134,7 @@ class UObject* UGameServiceMapFunctions::STATIC_GetService(struct FGameServiceMa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceMapFunctions.GetService");
 
-	UGameServiceMapFunctions_GetService_Params params;
+	UGameServiceMapFunctions_GetService_Params params {};
 	params.Class = Class;
 
 	auto flags = fn->FunctionFlags;
@@ -152,7 +152,7 @@ class UObject* UGameServiceMapFunctions::STATIC_GetService(struct FGameServiceMa
 
 
 // Function:
-//		Offset -> 0x02FA9E50
+//		Offset -> 0x02FF1670
 //		Name   -> Function GameService.GameServiceMapFunctions.GetNumServices
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -162,7 +162,7 @@ int UGameServiceMapFunctions::STATIC_GetNumServices(struct FGameServiceMap* Serv
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceMapFunctions.GetNumServices");
 
-	UGameServiceMapFunctions_GetNumServices_Params params;
+	UGameServiceMapFunctions_GetNumServices_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -191,7 +191,7 @@ void UGameServiceMapFunctions::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02FAA430
+//		Offset -> 0x02FF1C50
 //		Name   -> Function GameService.GameServiceProviderInterface.UnregisterService
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -200,7 +200,7 @@ void UGameServiceProviderInterface::UnregisterService(class UObject* Service)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceProviderInterface.UnregisterService");
 
-	UGameServiceProviderInterface_UnregisterService_Params params;
+	UGameServiceProviderInterface_UnregisterService_Params params {};
 	params.Service = Service;
 
 	auto flags = fn->FunctionFlags;
@@ -213,7 +213,7 @@ void UGameServiceProviderInterface::UnregisterService(class UObject* Service)
 
 
 // Function:
-//		Offset -> 0x02FAA1B0
+//		Offset -> 0x02FF19D0
 //		Name   -> Function GameService.GameServiceProviderInterface.RegisterService
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -223,7 +223,7 @@ void UGameServiceProviderInterface::RegisterService(class UObject* Service, clas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceProviderInterface.RegisterService");
 
-	UGameServiceProviderInterface_RegisterService_Params params;
+	UGameServiceProviderInterface_RegisterService_Params params {};
 	params.Service = Service;
 	params.Class = Class;
 
@@ -237,7 +237,7 @@ void UGameServiceProviderInterface::RegisterService(class UObject* Service, clas
 
 
 // Function:
-//		Offset -> 0x02FA9F90
+//		Offset -> 0x02FF17B0
 //		Name   -> Function GameService.GameServiceProviderInterface.GetService
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -247,7 +247,7 @@ class UObject* UGameServiceProviderInterface::GetService(class UClass* Class)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameService.GameServiceProviderInterface.GetService");
 
-	UGameServiceProviderInterface_GetService_Params params;
+	UGameServiceProviderInterface_GetService_Params params {};
 	params.Class = Class;
 
 	auto flags = fn->FunctionFlags;

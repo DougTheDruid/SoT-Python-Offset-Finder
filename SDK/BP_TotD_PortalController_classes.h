@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -33,7 +33,7 @@ public:
 	float                                              Timeline_0_LightScale_E720F06846CDD3DCC686A1B40E94C68C;    // 0x03F4(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                              Timeline_0_PortalOpen_E720F06846CDD3DCC686A1B40E94C68C;    // 0x03F8(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Engine_ETimelineDirection>             Timeline_0__Direction_E720F06846CDD3DCC686A1B40E94C68C;    // 0x03FC(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_5P58[0x3];                                     // 0x03FD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_KA8P[0x3];                                     // 0x03FD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UTimelineComponent*                          Timeline_1;                                                // 0x0400(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	TArray<class UMaterialInstanceDynamic*>            DynamicMaterials;                                          // 0x0408(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UPointLightComponent*>                Lights;                                                    // 0x0418(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)

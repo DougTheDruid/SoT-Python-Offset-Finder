@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -18,12 +18,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Parameters
 //---------------------------------------------------------------------------
-
-// Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.CheckIsFemale
-struct UBP_Humanoid_FirstPerson_C_CheckIsFemale_Params
-{
-	bool                                               IsFemale;                                                  // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
 
 // Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.SetInitialAthenaCharacterAndAnimSet
 struct UBP_Humanoid_FirstPerson_C_SetInitialAthenaCharacterAndAnimSet_Params
@@ -1263,6 +1257,21 @@ struct UBP_Humanoid_FirstPerson_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP
 {
 };
 
+// Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_70C54FD64BB0DD82BC0CC99889325949
+struct UBP_Humanoid_FirstPerson_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_70C54FD64BB0DD82BC0CC99889325949_Params
+{
+};
+
+// Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_846FF90B4A0F18F55E7E31A68895B9F5
+struct UBP_Humanoid_FirstPerson_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_846FF90B4A0F18F55E7E31A68895B9F5_Params
+{
+};
+
+// Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_608C07234F8E1FCED779268B41711B0D
+struct UBP_Humanoid_FirstPerson_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_608C07234F8E1FCED779268B41711B0D_Params
+{
+};
+
 // Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_B4CBBAA8421AA606252F6EB7274B3319
 struct UBP_Humanoid_FirstPerson_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_B4CBBAA8421AA606252F6EB7274B3319_Params
 {
@@ -1310,6 +1319,11 @@ struct UBP_Humanoid_FirstPerson_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP
 
 // Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_C36AE9194BC2DF68BAC7CA884F969522
 struct UBP_Humanoid_FirstPerson_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_C36AE9194BC2DF68BAC7CA884F969522_Params
+{
+};
+
+// Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_77F090FC4BCD975A4411CFB15CAFEC2D
+struct UBP_Humanoid_FirstPerson_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Humanoid_FirstPerson_AnimGraphNode_TransitionResult_77F090FC4BCD975A4411CFB15CAFEC2D_Params
 {
 };
 
@@ -1786,6 +1800,12 @@ struct UBP_Humanoid_FirstPerson_C_IK_Limb_Stretch_Params
 	float                                              ArmStretch;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                              SpineStretch;                                              // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                              LegStretch;                                                // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.OnStartedUndocking
+struct UBP_Humanoid_FirstPerson_C_OnStartedUndocking_Params
+{
+	struct FStartedUndockingFromControllableObjectEvent Event;                                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Humanoid_FirstPerson.BP_Humanoid_FirstPerson_C.OnUndockedFromObject

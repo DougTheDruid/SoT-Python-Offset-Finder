@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview.BP_ItemPreview_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_ItemPreview_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.UserConstructionScript");
 
-	ABP_ItemPreview_C_UserConstructionScript_Params params;
+	ABP_ItemPreview_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void ABP_ItemPreview_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview.BP_ItemPreview_C.ReceiveEndPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -46,7 +46,7 @@ void ABP_ItemPreview_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPla
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.ReceiveEndPlay");
 
-	ABP_ItemPreview_C_ReceiveEndPlay_Params params;
+	ABP_ItemPreview_C_ReceiveEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -58,14 +58,14 @@ void ABP_ItemPreview_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPla
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview.BP_ItemPreview_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_ItemPreview_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.ReceiveBeginPlay");
 
-	ABP_ItemPreview_C_ReceiveBeginPlay_Params params;
+	ABP_ItemPreview_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -76,7 +76,7 @@ void ABP_ItemPreview_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview.BP_ItemPreview_C.ExecuteUbergraph_BP_ItemPreview
 //		Flags  -> ()
 // Parameters:
@@ -85,7 +85,7 @@ void ABP_ItemPreview_C::ExecuteUbergraph_BP_ItemPreview(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.ExecuteUbergraph_BP_ItemPreview");
 
-	ABP_ItemPreview_C_ExecuteUbergraph_BP_ItemPreview_Params params;
+	ABP_ItemPreview_C_ExecuteUbergraph_BP_ItemPreview_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;
@@ -97,7 +97,7 @@ void ABP_ItemPreview_C::ExecuteUbergraph_BP_ItemPreview(int EntryPoint)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview.BP_ItemPreview_C.PreviewShutdown__DelegateSignature
 //		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -106,7 +106,7 @@ void ABP_ItemPreview_C::PreviewShutdown__DelegateSignature(const struct FPirateP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.PreviewShutdown__DelegateSignature");
 
-	ABP_ItemPreview_C_PreviewShutdown__DelegateSignature_Params params;
+	ABP_ItemPreview_C_PreviewShutdown__DelegateSignature_Params params {};
 	params.Data = Data;
 
 	auto flags = fn->FunctionFlags;
@@ -118,7 +118,7 @@ void ABP_ItemPreview_C::PreviewShutdown__DelegateSignature(const struct FPirateP
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview.BP_ItemPreview_C.PreviewReady__DelegateSignature
 //		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -127,7 +127,7 @@ void ABP_ItemPreview_C::PreviewReady__DelegateSignature(const struct FPiratePrev
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.PreviewReady__DelegateSignature");
 
-	ABP_ItemPreview_C_PreviewReady__DelegateSignature_Params params;
+	ABP_ItemPreview_C_PreviewReady__DelegateSignature_Params params {};
 	params.Data = Data;
 
 	auto flags = fn->FunctionFlags;
@@ -139,7 +139,7 @@ void ABP_ItemPreview_C::PreviewReady__DelegateSignature(const struct FPiratePrev
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview.BP_ItemPreview_C.PreviewBusy__DelegateSignature
 //		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -148,7 +148,7 @@ void ABP_ItemPreview_C::PreviewBusy__DelegateSignature(const struct FPiratePrevi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.PreviewBusy__DelegateSignature");
 
-	ABP_ItemPreview_C_PreviewBusy__DelegateSignature_Params params;
+	ABP_ItemPreview_C_PreviewBusy__DelegateSignature_Params params {};
 	params.Data = Data;
 
 	auto flags = fn->FunctionFlags;

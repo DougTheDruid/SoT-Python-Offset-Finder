@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x03505100
+//		Offset -> 0x033D3CF0
 //		Name   -> Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceLocation
 //		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -28,7 +28,7 @@ struct FVector UVoiceChatEmitterInterface::GetVoiceLocation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceLocation");
 
-	UVoiceChatEmitterInterface_GetVoiceLocation_Params params;
+	UVoiceChatEmitterInterface_GetVoiceLocation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -42,7 +42,7 @@ struct FVector UVoiceChatEmitterInterface::GetVoiceLocation()
 
 
 // Function:
-//		Offset -> 0x03505030
+//		Offset -> 0x033D3C20
 //		Name   -> Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAudioEmitterProxy
 //		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -51,7 +51,7 @@ void UVoiceChatEmitterInterface::GetVoiceAudioEmitterProxy(struct FWwiseEmitter*
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAudioEmitterProxy");
 
-	UVoiceChatEmitterInterface_GetVoiceAudioEmitterProxy_Params params;
+	UVoiceChatEmitterInterface_GetVoiceAudioEmitterProxy_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -66,7 +66,7 @@ void UVoiceChatEmitterInterface::GetVoiceAudioEmitterProxy(struct FWwiseEmitter*
 
 
 // Function:
-//		Offset -> 0x03504F80
+//		Offset -> 0x033D3B70
 //		Name   -> Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAttenuationScaler
 //		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -75,7 +75,7 @@ float UVoiceChatEmitterInterface::GetVoiceAttenuationScaler()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PositionalVoice.VoiceChatEmitterInterface.GetVoiceAttenuationScaler");
 
-	UVoiceChatEmitterInterface_GetVoiceAttenuationScaler_Params params;
+	UVoiceChatEmitterInterface_GetVoiceAttenuationScaler_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

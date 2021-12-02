@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -39,7 +39,7 @@ void FEventInteractionBlockingStateChanged::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x032D48E0
+//		Offset -> 0x033531B0
 //		Name   -> Function Interaction.InteractableComponent.SetBoxOrigin
 //		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -48,7 +48,7 @@ void UInteractableComponent::SetBoxOrigin(const struct FVector& IntBoxOrigin)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.SetBoxOrigin");
 
-	UInteractableComponent_SetBoxOrigin_Params params;
+	UInteractableComponent_SetBoxOrigin_Params params {};
 	params.IntBoxOrigin = IntBoxOrigin;
 
 	auto flags = fn->FunctionFlags;
@@ -61,7 +61,7 @@ void UInteractableComponent::SetBoxOrigin(const struct FVector& IntBoxOrigin)
 
 
 // Function:
-//		Offset -> 0x032D4850
+//		Offset -> 0x03353120
 //		Name   -> Function Interaction.InteractableComponent.SetBoxExtent
 //		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -70,7 +70,7 @@ void UInteractableComponent::SetBoxExtent(const struct FVector& InBoxExtent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.SetBoxExtent");
 
-	UInteractableComponent_SetBoxExtent_Params params;
+	UInteractableComponent_SetBoxExtent_Params params {};
 	params.InBoxExtent = InBoxExtent;
 
 	auto flags = fn->FunctionFlags;
@@ -83,7 +83,7 @@ void UInteractableComponent::SetBoxExtent(const struct FVector& InBoxExtent)
 
 
 // Function:
-//		Offset -> 0x032D44D0
+//		Offset -> 0x03352DA0
 //		Name   -> Function Interaction.InteractableComponent.GetInteractableArea
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -92,7 +92,7 @@ class UInteractableArea* UInteractableComponent::GetInteractableArea()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetInteractableArea");
 
-	UInteractableComponent_GetInteractableArea_Params params;
+	UInteractableComponent_GetInteractableArea_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -106,7 +106,7 @@ class UInteractableArea* UInteractableComponent::GetInteractableArea()
 
 
 // Function:
-//		Offset -> 0x032D4320
+//		Offset -> 0x03352BF0
 //		Name   -> Function Interaction.InteractableComponent.GetBoxWorldOrigin
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -115,7 +115,7 @@ struct FVector UInteractableComponent::GetBoxWorldOrigin()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetBoxWorldOrigin");
 
-	UInteractableComponent_GetBoxWorldOrigin_Params params;
+	UInteractableComponent_GetBoxWorldOrigin_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -129,7 +129,7 @@ struct FVector UInteractableComponent::GetBoxWorldOrigin()
 
 
 // Function:
-//		Offset -> 0x032D42F0
+//		Offset -> 0x03352BC0
 //		Name   -> Function Interaction.InteractableComponent.GetBoxSphereRadius
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -138,7 +138,7 @@ float UInteractableComponent::GetBoxSphereRadius()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetBoxSphereRadius");
 
-	UInteractableComponent_GetBoxSphereRadius_Params params;
+	UInteractableComponent_GetBoxSphereRadius_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -152,7 +152,7 @@ float UInteractableComponent::GetBoxSphereRadius()
 
 
 // Function:
-//		Offset -> 0x032D42B0
+//		Offset -> 0x03352B80
 //		Name   -> Function Interaction.InteractableComponent.GetBoxOrigin
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -161,7 +161,7 @@ struct FVector UInteractableComponent::GetBoxOrigin()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetBoxOrigin");
 
-	UInteractableComponent_GetBoxOrigin_Params params;
+	UInteractableComponent_GetBoxOrigin_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -175,7 +175,7 @@ struct FVector UInteractableComponent::GetBoxOrigin()
 
 
 // Function:
-//		Offset -> 0x032D4270
+//		Offset -> 0x03352B40
 //		Name   -> Function Interaction.InteractableComponent.GetBoxExtent
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -184,7 +184,7 @@ struct FVector UInteractableComponent::GetBoxExtent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableComponent.GetBoxExtent");
 
-	UInteractableComponent_GetBoxExtent_Params params;
+	UInteractableComponent_GetBoxExtent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -224,7 +224,7 @@ void UInteractionValidatorSetterInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x032D46A0
+//		Offset -> 0x03352F70
 //		Name   -> Function Interaction.CharacterInteractionComponent.IsInteractionValid
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -234,7 +234,7 @@ bool UCharacterInteractionComponent::IsInteractionValid(class UObject* InInterac
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.CharacterInteractionComponent.IsInteractionValid");
 
-	UCharacterInteractionComponent_IsInteractionValid_Params params;
+	UCharacterInteractionComponent_IsInteractionValid_Params params {};
 	params.InInteractable = InInteractable;
 
 	auto flags = fn->FunctionFlags;
@@ -249,14 +249,14 @@ bool UCharacterInteractionComponent::IsInteractionValid(class UObject* InInterac
 
 
 // Function:
-//		Offset -> 0x032D4650
+//		Offset -> 0x03352F20
 //		Name   -> Function Interaction.CharacterInteractionComponent.InvalidateOptimalObject
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCharacterInteractionComponent::InvalidateOptimalObject()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.CharacterInteractionComponent.InvalidateOptimalObject");
 
-	UCharacterInteractionComponent_InvalidateOptimalObject_Params params;
+	UCharacterInteractionComponent_InvalidateOptimalObject_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -268,7 +268,7 @@ void UCharacterInteractionComponent::InvalidateOptimalObject()
 
 
 // Function:
-//		Offset -> 0x032D4530
+//		Offset -> 0x03352E00
 //		Name   -> Function Interaction.CharacterInteractionComponent.GetOptimalFocusObject
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -277,7 +277,7 @@ class UInteractableArea* UCharacterInteractionComponent::GetOptimalFocusObject()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.CharacterInteractionComponent.GetOptimalFocusObject");
 
-	UCharacterInteractionComponent_GetOptimalFocusObject_Params params;
+	UCharacterInteractionComponent_GetOptimalFocusObject_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -291,14 +291,14 @@ class UInteractableArea* UCharacterInteractionComponent::GetOptimalFocusObject()
 
 
 // Function:
-//		Offset -> 0x032D4020
+//		Offset -> 0x033528F0
 //		Name   -> Function Interaction.CharacterInteractionComponent.ClearAllPolicies
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCharacterInteractionComponent::ClearAllPolicies()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.CharacterInteractionComponent.ClearAllPolicies");
 
-	UCharacterInteractionComponent_ClearAllPolicies_Params params;
+	UCharacterInteractionComponent_ClearAllPolicies_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -336,7 +336,7 @@ void UGroupedInteractableAreaComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x032D4AD0
+//		Offset -> 0x033533A0
 //		Name   -> Function Interaction.InteractableArea.SetParent
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -345,7 +345,7 @@ void UInteractableArea::SetParent(class AActor* InParent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.SetParent");
 
-	UInteractableArea_SetParent_Params params;
+	UInteractableArea_SetParent_Params params {};
 	params.InParent = InParent;
 
 	auto flags = fn->FunctionFlags;
@@ -358,7 +358,7 @@ void UInteractableArea::SetParent(class AActor* InParent)
 
 
 // Function:
-//		Offset -> 0x032D4970
+//		Offset -> 0x03353240
 //		Name   -> Function Interaction.InteractableArea.SetInteractable
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -367,7 +367,7 @@ void UInteractableArea::SetInteractable(class UObject* InInteractable)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.SetInteractable");
 
-	UInteractableArea_SetInteractable_Params params;
+	UInteractableArea_SetInteractable_Params params {};
 	params.InInteractable = InInteractable;
 
 	auto flags = fn->FunctionFlags;
@@ -380,7 +380,7 @@ void UInteractableArea::SetInteractable(class UObject* InInteractable)
 
 
 // Function:
-//		Offset -> 0x032D47C0
+//		Offset -> 0x03353090
 //		Name   -> Function Interaction.InteractableArea.SetAreaName
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -389,7 +389,7 @@ void UInteractableArea::SetAreaName(const struct FName& InName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.SetAreaName");
 
-	UInteractableArea_SetAreaName_Params params;
+	UInteractableArea_SetAreaName_Params params {};
 	params.InName = InName;
 
 	auto flags = fn->FunctionFlags;
@@ -402,7 +402,7 @@ void UInteractableArea::SetAreaName(const struct FName& InName)
 
 
 // Function:
-//		Offset -> 0x032D4730
+//		Offset -> 0x03353000
 //		Name   -> Function Interaction.InteractableArea.SetAreaBounds
 //		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -411,7 +411,7 @@ void UInteractableArea::SetAreaBounds(const struct FBoxSphereBounds& InBounds)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.SetAreaBounds");
 
-	UInteractableArea_SetAreaBounds_Params params;
+	UInteractableArea_SetAreaBounds_Params params {};
 	params.InBounds = InBounds;
 
 	auto flags = fn->FunctionFlags;
@@ -424,7 +424,7 @@ void UInteractableArea::SetAreaBounds(const struct FBoxSphereBounds& InBounds)
 
 
 // Function:
-//		Offset -> 0x032D4560
+//		Offset -> 0x03352E30
 //		Name   -> Function Interaction.InteractableArea.GetParent
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -433,7 +433,7 @@ class AActor* UInteractableArea::GetParent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetParent");
 
-	UInteractableArea_GetParent_Params params;
+	UInteractableArea_GetParent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -447,7 +447,7 @@ class AActor* UInteractableArea::GetParent()
 
 
 // Function:
-//		Offset -> 0x032D44A0
+//		Offset -> 0x03352D70
 //		Name   -> Function Interaction.InteractableArea.GetInteractable
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -456,7 +456,7 @@ class UObject* UInteractableArea::GetInteractable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetInteractable");
 
-	UInteractableArea_GetInteractable_Params params;
+	UInteractableArea_GetInteractable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -470,7 +470,7 @@ class UObject* UInteractableArea::GetInteractable()
 
 
 // Function:
-//		Offset -> 0x032D4230
+//		Offset -> 0x03352B00
 //		Name   -> Function Interaction.InteractableArea.GetAreaName
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -479,7 +479,7 @@ struct FName UInteractableArea::GetAreaName()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetAreaName");
 
-	UInteractableArea_GetAreaName_Params params;
+	UInteractableArea_GetAreaName_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -493,7 +493,7 @@ struct FName UInteractableArea::GetAreaName()
 
 
 // Function:
-//		Offset -> 0x032D41F0
+//		Offset -> 0x03352AC0
 //		Name   -> Function Interaction.InteractableArea.GetAreaLocation
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -502,7 +502,7 @@ struct FVector UInteractableArea::GetAreaLocation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetAreaLocation");
 
-	UInteractableArea_GetAreaLocation_Params params;
+	UInteractableArea_GetAreaLocation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -516,7 +516,7 @@ struct FVector UInteractableArea::GetAreaLocation()
 
 
 // Function:
-//		Offset -> 0x032D41B0
+//		Offset -> 0x03352A80
 //		Name   -> Function Interaction.InteractableArea.GetAreaBounds
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -525,7 +525,7 @@ struct FBoxSphereBounds UInteractableArea::GetAreaBounds()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableArea.GetAreaBounds");
 
-	UInteractableArea_GetAreaBounds_Params params;
+	UInteractableArea_GetAreaBounds_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -555,7 +555,7 @@ void UInteractableArea::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x032D4B50
+//		Offset -> 0x03353420
 //		Name   -> Function Interaction.InteractableInterface.ShouldDrawTooltipInWorldSpace
 //		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -566,7 +566,7 @@ bool UInteractableInterface::ShouldDrawTooltipInWorldSpace(class AActor* InInter
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.ShouldDrawTooltipInWorldSpace");
 
-	UInteractableInterface_ShouldDrawTooltipInWorldSpace_Params params;
+	UInteractableInterface_ShouldDrawTooltipInWorldSpace_Params params {};
 	params.InInteractor = InInteractor;
 
 	auto flags = fn->FunctionFlags;
@@ -584,7 +584,7 @@ bool UInteractableInterface::ShouldDrawTooltipInWorldSpace(class AActor* InInter
 
 
 // Function:
-//		Offset -> 0x032D4670
+//		Offset -> 0x03352F40
 //		Name   -> Function Interaction.InteractableInterface.IsInteractableDisabled
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -593,7 +593,7 @@ bool UInteractableInterface::IsInteractableDisabled()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.IsInteractableDisabled");
 
-	UInteractableInterface_IsInteractableDisabled_Params params;
+	UInteractableInterface_IsInteractableDisabled_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -607,7 +607,7 @@ bool UInteractableInterface::IsInteractableDisabled()
 
 
 // Function:
-//		Offset -> 0x032D4590
+//		Offset -> 0x03352E60
 //		Name   -> Function Interaction.InteractableInterface.Interact
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -617,7 +617,7 @@ void UInteractableInterface::Interact(class AActor* InInteractor, class UClass* 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.Interact");
 
-	UInteractableInterface_Interact_Params params;
+	UInteractableInterface_Interact_Params params {};
 	params.InInteractor = InInteractor;
 	params.NotificationInputId = NotificationInputId;
 
@@ -631,7 +631,7 @@ void UInteractableInterface::Interact(class AActor* InInteractor, class UClass* 
 
 
 // Function:
-//		Offset -> 0x032D4500
+//		Offset -> 0x03352DD0
 //		Name   -> Function Interaction.InteractableInterface.GetInteractionState
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -640,7 +640,7 @@ TEnumAsByte<Athena_EInteractableState> UInteractableInterface::GetInteractionSta
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetInteractionState");
 
-	UInteractableInterface_GetInteractionState_Params params;
+	UInteractableInterface_GetInteractionState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -654,7 +654,7 @@ TEnumAsByte<Athena_EInteractableState> UInteractableInterface::GetInteractionSta
 
 
 // Function:
-//		Offset -> 0x032D4460
+//		Offset -> 0x03352D30
 //		Name   -> Function Interaction.InteractableInterface.GetFrontFacingVector
 //		Flags  -> (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -663,7 +663,7 @@ struct FVector UInteractableInterface::GetFrontFacingVector()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetFrontFacingVector");
 
-	UInteractableInterface_GetFrontFacingVector_Params params;
+	UInteractableInterface_GetFrontFacingVector_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -677,7 +677,7 @@ struct FVector UInteractableInterface::GetFrontFacingVector()
 
 
 // Function:
-//		Offset -> 0x032D4360
+//		Offset -> 0x03352C30
 //		Name   -> Function Interaction.InteractableInterface.GetClosestInteractionPoint
 //		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -688,7 +688,7 @@ struct FVector UInteractableInterface::GetClosestInteractionPoint(const struct F
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetClosestInteractionPoint");
 
-	UInteractableInterface_GetClosestInteractionPoint_Params params;
+	UInteractableInterface_GetClosestInteractionPoint_Params params {};
 	params.ReferencePosition = ReferencePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -706,7 +706,7 @@ struct FVector UInteractableInterface::GetClosestInteractionPoint(const struct F
 
 
 // Function:
-//		Offset -> 0x032D4100
+//		Offset -> 0x033529D0
 //		Name   -> Function Interaction.InteractableInterface.GetActorsToIgnoreDuringOcclusionChecker
 //		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -715,7 +715,7 @@ void UInteractableInterface::GetActorsToIgnoreDuringOcclusionChecker(TArray<clas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetActorsToIgnoreDuringOcclusionChecker");
 
-	UInteractableInterface_GetActorsToIgnoreDuringOcclusionChecker_Params params;
+	UInteractableInterface_GetActorsToIgnoreDuringOcclusionChecker_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -730,7 +730,7 @@ void UInteractableInterface::GetActorsToIgnoreDuringOcclusionChecker(TArray<clas
 
 
 // Function:
-//		Offset -> 0x032D40D0
+//		Offset -> 0x033529A0
 //		Name   -> Function Interaction.InteractableInterface.GetActionRulesComponent
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -739,7 +739,7 @@ class UActionRulesComponent* UInteractableInterface::GetActionRulesComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.GetActionRulesComponent");
 
-	UInteractableInterface_GetActionRulesComponent_Params params;
+	UInteractableInterface_GetActionRulesComponent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -753,7 +753,7 @@ class UActionRulesComponent* UInteractableInterface::GetActionRulesComponent()
 
 
 // Function:
-//		Offset -> 0x032D40A0
+//		Offset -> 0x03352970
 //		Name   -> Function Interaction.InteractableInterface.DoesRequireNotSwimming
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -762,7 +762,7 @@ bool UInteractableInterface::DoesRequireNotSwimming()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.DoesRequireNotSwimming");
 
-	UInteractableInterface_DoesRequireNotSwimming_Params params;
+	UInteractableInterface_DoesRequireNotSwimming_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -776,7 +776,7 @@ bool UInteractableInterface::DoesRequireNotSwimming()
 
 
 // Function:
-//		Offset -> 0x032D4070
+//		Offset -> 0x03352940
 //		Name   -> Function Interaction.InteractableInterface.DoesRequireNotBeingAirborne
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -785,7 +785,7 @@ bool UInteractableInterface::DoesRequireNotBeingAirborne()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.DoesRequireNotBeingAirborne");
 
-	UInteractableInterface_DoesRequireNotBeingAirborne_Params params;
+	UInteractableInterface_DoesRequireNotBeingAirborne_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -799,7 +799,7 @@ bool UInteractableInterface::DoesRequireNotBeingAirborne()
 
 
 // Function:
-//		Offset -> 0x032D4040
+//		Offset -> 0x03352910
 //		Name   -> Function Interaction.InteractableInterface.DoesRequireFacingFront
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -808,7 +808,7 @@ bool UInteractableInterface::DoesRequireFacingFront()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.DoesRequireFacingFront");
 
-	UInteractableInterface_DoesRequireFacingFront_Params params;
+	UInteractableInterface_DoesRequireFacingFront_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -822,7 +822,7 @@ bool UInteractableInterface::DoesRequireFacingFront()
 
 
 // Function:
-//		Offset -> 0x032D3F50
+//		Offset -> 0x03352820
 //		Name   -> Function Interaction.InteractableInterface.CanInteractWithNotificationInputId
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -833,7 +833,7 @@ bool UInteractableInterface::CanInteractWithNotificationInputId(class AActor* In
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.CanInteractWithNotificationInputId");
 
-	UInteractableInterface_CanInteractWithNotificationInputId_Params params;
+	UInteractableInterface_CanInteractWithNotificationInputId_Params params {};
 	params.InInteractor = InInteractor;
 	params.NotificationInputId = NotificationInputId;
 
@@ -849,7 +849,7 @@ bool UInteractableInterface::CanInteractWithNotificationInputId(class AActor* In
 
 
 // Function:
-//		Offset -> 0x032D3EB0
+//		Offset -> 0x03352780
 //		Name   -> Function Interaction.InteractableInterface.CanInteract
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -859,7 +859,7 @@ bool UInteractableInterface::CanInteract(class AActor* InInteractor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableInterface.CanInteract");
 
-	UInteractableInterface_CanInteract_Params params;
+	UInteractableInterface_CanInteract_Params params {};
 	params.InInteractor = InInteractor;
 
 	auto flags = fn->FunctionFlags;
@@ -886,7 +886,7 @@ void UInteractableInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x032D49F0
+//		Offset -> 0x033532C0
 //		Name   -> Function Interaction.InteractableBlueprintFunctionLibrary.SetInteractionState
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -896,7 +896,7 @@ void UInteractableBlueprintFunctionLibrary::STATIC_SetInteractionState(class AAc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interaction.InteractableBlueprintFunctionLibrary.SetInteractionState");
 
-	UInteractableBlueprintFunctionLibrary_SetInteractionState_Params params;
+	UInteractableBlueprintFunctionLibrary_SetInteractionState_Params params {};
 	params.InteractableActor = InteractableActor;
 	params.NewInteractableState = NewInteractableState;
 

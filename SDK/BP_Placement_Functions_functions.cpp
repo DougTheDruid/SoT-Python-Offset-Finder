@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.GenerateRadialXYPositionsAroundPoint
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -32,7 +32,7 @@ void UBP_Placement_Functions_C::STATIC_GenerateRadialXYPositionsAroundPoint(cons
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.GenerateRadialXYPositionsAroundPoint");
 
-	UBP_Placement_Functions_C_GenerateRadialXYPositionsAroundPoint_Params params;
+	UBP_Placement_Functions_C_GenerateRadialXYPositionsAroundPoint_Params params {};
 	params.Centre = Centre;
 	params.Radius = Radius;
 	params.Segments = Segments;
@@ -50,7 +50,7 @@ void UBP_Placement_Functions_C::STATIC_GenerateRadialXYPositionsAroundPoint(cons
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Get First Valid Hit
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -62,7 +62,7 @@ void UBP_Placement_Functions_C::STATIC_Get_First_Valid_Hit(TArray<struct FHitRes
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Get First Valid Hit");
 
-	UBP_Placement_Functions_C_Get_First_Valid_Hit_Params params;
+	UBP_Placement_Functions_C_Get_First_Valid_Hit_Params params {};
 	params.__WorldContext = __WorldContext;
 
 	auto flags = fn->FunctionFlags;
@@ -81,7 +81,7 @@ void UBP_Placement_Functions_C::STATIC_Get_First_Valid_Hit(TArray<struct FHitRes
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Generate Random Rotated Box Raycast
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -96,7 +96,7 @@ void UBP_Placement_Functions_C::STATIC_Generate_Random_Rotated_Box_Raycast(struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Generate Random Rotated Box Raycast");
 
-	UBP_Placement_Functions_C_Generate_Random_Rotated_Box_Raycast_Params params;
+	UBP_Placement_Functions_C_Generate_Random_Rotated_Box_Raycast_Params params {};
 	params.Centre = Centre;
 	params.Extent = Extent;
 	params.Rotation = Rotation;
@@ -118,7 +118,7 @@ void UBP_Placement_Functions_C::STATIC_Generate_Random_Rotated_Box_Raycast(struc
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Detonate Charge
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -134,7 +134,7 @@ void UBP_Placement_Functions_C::STATIC_Detonate_Charge(class AActor* Spawn, cons
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Detonate Charge");
 
-	UBP_Placement_Functions_C_Detonate_Charge_Params params;
+	UBP_Placement_Functions_C_Detonate_Charge_Params params {};
 	params.Spawn = Spawn;
 	params.Position = Position;
 	params.Radius = Radius;
@@ -156,7 +156,7 @@ void UBP_Placement_Functions_C::STATIC_Detonate_Charge(class AActor* Spawn, cons
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Does A Delete B
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -168,7 +168,7 @@ void UBP_Placement_Functions_C::STATIC_Does_A_Delete_B(const struct FString& A_S
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Does A Delete B");
 
-	UBP_Placement_Functions_C_Does_A_Delete_B_Params params;
+	UBP_Placement_Functions_C_Does_A_Delete_B_Params params {};
 	params.A_String = A_String;
 	params.B_String = B_String;
 	params.__WorldContext = __WorldContext;
@@ -185,7 +185,7 @@ void UBP_Placement_Functions_C::STATIC_Does_A_Delete_B(const struct FString& A_S
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Get Actor Placement Asset Type
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -197,7 +197,7 @@ void UBP_Placement_Functions_C::STATIC_Get_Actor_Placement_Asset_Type(class AAct
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Get Actor Placement Asset Type");
 
-	UBP_Placement_Functions_C_Get_Actor_Placement_Asset_Type_Params params;
+	UBP_Placement_Functions_C_Get_Actor_Placement_Asset_Type_Params params {};
 	params.Input_Actor = Input_Actor;
 	params.__WorldContext = __WorldContext;
 
@@ -215,7 +215,7 @@ void UBP_Placement_Functions_C::STATIC_Get_Actor_Placement_Asset_Type(class AAct
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Check Actor Overlap
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -227,7 +227,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Actor_Overlap(class AActor* Input_A
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Check Actor Overlap");
 
-	UBP_Placement_Functions_C_Check_Actor_Overlap_Params params;
+	UBP_Placement_Functions_C_Check_Actor_Overlap_Params params {};
 	params.Input_Actor = Input_Actor;
 	params.__WorldContext = __WorldContext;
 
@@ -245,7 +245,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Actor_Overlap(class AActor* Input_A
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Get Mesh Instance Transform
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -259,7 +259,7 @@ void UBP_Placement_Functions_C::STATIC_Get_Mesh_Instance_Transform(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Get Mesh Instance Transform");
 
-	UBP_Placement_Functions_C_Get_Mesh_Instance_Transform_Params params;
+	UBP_Placement_Functions_C_Get_Mesh_Instance_Transform_Params params {};
 	params.Selected_Mesh = Selected_Mesh;
 	params.Location = Location;
 	params.Normal = Normal;
@@ -279,7 +279,7 @@ void UBP_Placement_Functions_C::STATIC_Get_Mesh_Instance_Transform(const struct 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Normalise Mesh Probabilities
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -290,7 +290,7 @@ void UBP_Placement_Functions_C::STATIC_Normalise_Mesh_Probabilities(TArray<struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Normalise Mesh Probabilities");
 
-	UBP_Placement_Functions_C_Normalise_Mesh_Probabilities_Params params;
+	UBP_Placement_Functions_C_Normalise_Mesh_Probabilities_Params params {};
 	params.__WorldContext = __WorldContext;
 
 	auto flags = fn->FunctionFlags;
@@ -307,7 +307,7 @@ void UBP_Placement_Functions_C::STATIC_Normalise_Mesh_Probabilities(TArray<struc
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Set Mesh
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -330,7 +330,7 @@ void UBP_Placement_Functions_C::STATIC_Set_Mesh(TArray<struct FPlacementGardenSe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Set Mesh");
 
-	UBP_Placement_Functions_C_Set_Mesh_Params params;
+	UBP_Placement_Functions_C_Set_Mesh_Params params {};
 	params.Generator_Radius = Generator_Radius;
 	params.Spawn_Clustering = Spawn_Clustering;
 	params.Spawn_Radius_Multiplier = Spawn_Radius_Multiplier;
@@ -367,7 +367,7 @@ void UBP_Placement_Functions_C::STATIC_Set_Mesh(TArray<struct FPlacementGardenSe
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Set Charge
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -389,7 +389,7 @@ void UBP_Placement_Functions_C::STATIC_Set_Charge(TArray<struct FPlacementBombCh
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Set Charge");
 
-	UBP_Placement_Functions_C_Set_Charge_Params params;
+	UBP_Placement_Functions_C_Set_Charge_Params params {};
 	params.Generator_Radius = Generator_Radius;
 	params.Spawn_Clustering = Spawn_Clustering;
 	params.Box_Distribution = Box_Distribution;
@@ -424,7 +424,7 @@ void UBP_Placement_Functions_C::STATIC_Set_Charge(TArray<struct FPlacementBombCh
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Check Surface Materials
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -436,7 +436,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Surface_Materials(TArray<class UObj
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Check Surface Materials");
 
-	UBP_Placement_Functions_C_Check_Surface_Materials_Params params;
+	UBP_Placement_Functions_C_Check_Surface_Materials_Params params {};
 	params.Placement_Material = Placement_Material;
 	params.__WorldContext = __WorldContext;
 
@@ -454,7 +454,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Surface_Materials(TArray<class UObj
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Check Slope
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -466,7 +466,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Slope(const struct FVector& Normal,
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Check Slope");
 
-	UBP_Placement_Functions_C_Check_Slope_Params params;
+	UBP_Placement_Functions_C_Check_Slope_Params params {};
 	params.Normal = Normal;
 	params.Slope_Range = Slope_Range;
 	params.__WorldContext = __WorldContext;
@@ -483,7 +483,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Slope(const struct FVector& Normal,
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Check Height
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -495,7 +495,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Height(const struct FVector& Positi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Check Height");
 
-	UBP_Placement_Functions_C_Check_Height_Params params;
+	UBP_Placement_Functions_C_Check_Height_Params params {};
 	params.Position = Position;
 	params.Height_Range = Height_Range;
 	params.__WorldContext = __WorldContext;
@@ -512,7 +512,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Height(const struct FVector& Positi
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Check Radius Overlap
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -526,7 +526,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Radius_Overlap(const struct FVector
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Check Radius Overlap");
 
-	UBP_Placement_Functions_C_Check_Radius_Overlap_Params params;
+	UBP_Placement_Functions_C_Check_Radius_Overlap_Params params {};
 	params.Position = Position;
 	params.Radius = Radius;
 	params.Radius_Overlap = Radius_Overlap;
@@ -546,7 +546,7 @@ void UBP_Placement_Functions_C::STATIC_Check_Radius_Overlap(const struct FVector
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Set Spawn Properties
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -559,7 +559,7 @@ void UBP_Placement_Functions_C::STATIC_Set_Spawn_Properties(class UObject* Objec
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Set Spawn Properties");
 
-	UBP_Placement_Functions_C_Set_Spawn_Properties_Params params;
+	UBP_Placement_Functions_C_Set_Spawn_Properties_Params params {};
 	params.Object = Object;
 	params.Seed = Seed;
 	params.Radius = Radius;
@@ -577,7 +577,7 @@ void UBP_Placement_Functions_C::STATIC_Set_Spawn_Properties(class UObject* Objec
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Generate Random Box Raycast
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -591,7 +591,7 @@ void UBP_Placement_Functions_C::STATIC_Generate_Random_Box_Raycast(struct FRando
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Generate Random Box Raycast");
 
-	UBP_Placement_Functions_C_Generate_Random_Box_Raycast_Params params;
+	UBP_Placement_Functions_C_Generate_Random_Box_Raycast_Params params {};
 	params.Centre = Centre;
 	params.Extent = Extent;
 	params.__WorldContext = __WorldContext;
@@ -612,7 +612,7 @@ void UBP_Placement_Functions_C::STATIC_Generate_Random_Box_Raycast(struct FRando
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Get Box Sample Count
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -624,7 +624,7 @@ void UBP_Placement_Functions_C::STATIC_Get_Box_Sample_Count(class AActor* Actor,
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Get Box Sample Count");
 
-	UBP_Placement_Functions_C_Get_Box_Sample_Count_Params params;
+	UBP_Placement_Functions_C_Get_Box_Sample_Count_Params params {};
 	params.Actor = Actor;
 	params.Seed_Density = Seed_Density;
 	params.__WorldContext = __WorldContext;
@@ -641,7 +641,7 @@ void UBP_Placement_Functions_C::STATIC_Get_Box_Sample_Count(class AActor* Actor,
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Generate Random Radial Raycast
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -658,7 +658,7 @@ void UBP_Placement_Functions_C::STATIC_Generate_Random_Radial_Raycast(struct FRa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Generate Random Radial Raycast");
 
-	UBP_Placement_Functions_C_Generate_Random_Radial_Raycast_Params params;
+	UBP_Placement_Functions_C_Generate_Random_Radial_Raycast_Params params {};
 	params.Radius = Radius;
 	params.Centre = Centre;
 	params.Spawn_Clustering = Spawn_Clustering;
@@ -682,7 +682,7 @@ void UBP_Placement_Functions_C::STATIC_Generate_Random_Radial_Raycast(struct FRa
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Calculate Index from Probabilities
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -694,7 +694,7 @@ void UBP_Placement_Functions_C::STATIC_Calculate_Index_from_Probabilities(float 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Calculate Index from Probabilities");
 
-	UBP_Placement_Functions_C_Calculate_Index_from_Probabilities_Params params;
+	UBP_Placement_Functions_C_Calculate_Index_from_Probabilities_Params params {};
 	params.Random_Float = Random_Float;
 	params.__WorldContext = __WorldContext;
 
@@ -712,7 +712,7 @@ void UBP_Placement_Functions_C::STATIC_Calculate_Index_from_Probabilities(float 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Get Radial Sample Count
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -724,7 +724,7 @@ void UBP_Placement_Functions_C::STATIC_Get_Radial_Sample_Count(float Radius, flo
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Get Radial Sample Count");
 
-	UBP_Placement_Functions_C_Get_Radial_Sample_Count_Params params;
+	UBP_Placement_Functions_C_Get_Radial_Sample_Count_Params params {};
 	params.Radius = Radius;
 	params.Spawn_Sample_Density = Spawn_Sample_Density;
 	params.__WorldContext = __WorldContext;
@@ -741,7 +741,7 @@ void UBP_Placement_Functions_C::STATIC_Get_Radial_Sample_Count(float Radius, flo
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_Functions.BP_Placement_Functions_C.Normalise Charge Probabilities
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -752,7 +752,7 @@ void UBP_Placement_Functions_C::STATIC_Normalise_Charge_Probabilities(TArray<str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_Functions.BP_Placement_Functions_C.Normalise Charge Probabilities");
 
-	UBP_Placement_Functions_C_Normalise_Charge_Probabilities_Params params;
+	UBP_Placement_Functions_C_Normalise_Charge_Probabilities_Params params {};
 	params.__WorldContext = __WorldContext;
 
 	auto flags = fn->FunctionFlags;

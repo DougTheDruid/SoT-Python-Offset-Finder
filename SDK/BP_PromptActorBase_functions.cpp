@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializePrompt
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -28,7 +28,7 @@ void ABP_PromptActorBase_C::UninitializePrompt(class UBP_PromptCoordinator_Base_
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializePrompt");
 
-	ABP_PromptActorBase_C_UninitializePrompt_Params params;
+	ABP_PromptActorBase_C_UninitializePrompt_Params params {};
 	params.PromptCoordinator = PromptCoordinator;
 
 	auto flags = fn->FunctionFlags;
@@ -40,7 +40,7 @@ void ABP_PromptActorBase_C::UninitializePrompt(class UBP_PromptCoordinator_Base_
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializeAllPrompts
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -48,7 +48,7 @@ void ABP_PromptActorBase_C::UninitializeAllPrompts()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.UninitializeAllPrompts");
 
-	ABP_PromptActorBase_C_UninitializeAllPrompts_Params params;
+	ABP_PromptActorBase_C_UninitializeAllPrompts_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -59,7 +59,7 @@ void ABP_PromptActorBase_C::UninitializeAllPrompts()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.CheckAllPromptsComplete
 //		Flags  -> (Private, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -68,7 +68,7 @@ void ABP_PromptActorBase_C::CheckAllPromptsComplete(bool* AllCompleted)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.CheckAllPromptsComplete");
 
-	ABP_PromptActorBase_C_CheckAllPromptsComplete_Params params;
+	ABP_PromptActorBase_C_CheckAllPromptsComplete_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -82,14 +82,14 @@ void ABP_PromptActorBase_C::CheckAllPromptsComplete(bool* AllCompleted)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.Complete
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActorBase_C::Complete()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.Complete");
 
-	ABP_PromptActorBase_C_Complete_Params params;
+	ABP_PromptActorBase_C_Complete_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -100,7 +100,7 @@ void ABP_PromptActorBase_C::Complete()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.GetMyClass
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -109,7 +109,7 @@ void ABP_PromptActorBase_C::GetMyClass(class UClass** Class)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.GetMyClass");
 
-	ABP_PromptActorBase_C_GetMyClass_Params params;
+	ABP_PromptActorBase_C_GetMyClass_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -123,7 +123,7 @@ void ABP_PromptActorBase_C::GetMyClass(class UClass** Class)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.GetAthenaPlayerController
 //		Flags  -> (Protected, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -132,7 +132,7 @@ void ABP_PromptActorBase_C::GetAthenaPlayerController(class AAthenaPlayerControl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.GetAthenaPlayerController");
 
-	ABP_PromptActorBase_C_GetAthenaPlayerController_Params params;
+	ABP_PromptActorBase_C_GetAthenaPlayerController_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -146,14 +146,14 @@ void ABP_PromptActorBase_C::GetAthenaPlayerController(class AAthenaPlayerControl
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActorBase_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.UserConstructionScript");
 
-	ABP_PromptActorBase_C_UserConstructionScript_Params params;
+	ABP_PromptActorBase_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -164,7 +164,7 @@ void ABP_PromptActorBase_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.Add Prompt Coordinator
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -173,7 +173,7 @@ void ABP_PromptActorBase_C::Add_Prompt_Coordinator(class UBP_PromptCoordinator_B
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.Add Prompt Coordinator");
 
-	ABP_PromptActorBase_C_Add_Prompt_Coordinator_Params params;
+	ABP_PromptActorBase_C_Add_Prompt_Coordinator_Params params {};
 	params.Prompt_Coordinator = Prompt_Coordinator;
 
 	auto flags = fn->FunctionFlags;
@@ -185,14 +185,14 @@ void ABP_PromptActorBase_C::Add_Prompt_Coordinator(class UBP_PromptCoordinator_B
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.On Prompt Complete
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_PromptActorBase_C::On_Prompt_Complete()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.On Prompt Complete");
 
-	ABP_PromptActorBase_C_On_Prompt_Complete_Params params;
+	ABP_PromptActorBase_C_On_Prompt_Complete_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -203,7 +203,7 @@ void ABP_PromptActorBase_C::On_Prompt_Complete()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.ReceiveEndPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -212,7 +212,7 @@ void ABP_PromptActorBase_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> En
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.ReceiveEndPlay");
 
-	ABP_PromptActorBase_C_ReceiveEndPlay_Params params;
+	ABP_PromptActorBase_C_ReceiveEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -224,7 +224,7 @@ void ABP_PromptActorBase_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> En
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.ExecuteUbergraph_BP_PromptActorBase
 //		Flags  -> ()
 // Parameters:
@@ -233,7 +233,7 @@ void ABP_PromptActorBase_C::ExecuteUbergraph_BP_PromptActorBase(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.ExecuteUbergraph_BP_PromptActorBase");
 
-	ABP_PromptActorBase_C_ExecuteUbergraph_BP_PromptActorBase_Params params;
+	ABP_PromptActorBase_C_ExecuteUbergraph_BP_PromptActorBase_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;
@@ -245,14 +245,14 @@ void ABP_PromptActorBase_C::ExecuteUbergraph_BP_PromptActorBase(int EntryPoint)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActorBase.BP_PromptActorBase_C.OnComplete__DelegateSignature
 //		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActorBase_C::OnComplete__DelegateSignature()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActorBase.BP_PromptActorBase_C.OnComplete__DelegateSignature");
 
-	ABP_PromptActorBase_C_OnComplete__DelegateSignature_Params params;
+	ABP_PromptActorBase_C_OnComplete__DelegateSignature_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

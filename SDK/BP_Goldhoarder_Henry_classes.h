@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0.Brig
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Goldhoarder_Henry.BP_Goldhoarder_Henry_C
-// 0x0000 (FullSize[0x05E0] - InheritedSize[0x05E0])
+// 0x0000 (FullSize[0x0630] - InheritedSize[0x0630])
 class ABP_Goldhoarder_Henry_C : public ABP_Goldhoarder_C
 {
 public:

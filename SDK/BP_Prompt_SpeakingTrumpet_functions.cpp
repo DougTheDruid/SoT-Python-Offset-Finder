@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,16 +19,16 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.OnWieldFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-//		struct FEventObjectWielded                         EventObjectWielded                                         (ConstParm, Parm, OutParm, ReferenceParm)
-void UBP_Prompt_SpeakingTrumpet_C::OnWieldFunc(const struct FEventObjectWielded& EventObjectWielded)
+//		struct FAthena_FEventObjectWielded                 EventObjectWielded                                         (ConstParm, Parm, OutParm, ReferenceParm)
+void UBP_Prompt_SpeakingTrumpet_C::OnWieldFunc(const struct FAthena_FEventObjectWielded& EventObjectWielded)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.OnWieldFunc");
 
-	UBP_Prompt_SpeakingTrumpet_C_OnWieldFunc_Params params;
+	UBP_Prompt_SpeakingTrumpet_C_OnWieldFunc_Params params {};
 	params.EventObjectWielded = EventObjectWielded;
 
 	auto flags = fn->FunctionFlags;
@@ -40,7 +40,7 @@ void UBP_Prompt_SpeakingTrumpet_C::OnWieldFunc(const struct FEventObjectWielded&
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.RegisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -49,7 +49,7 @@ void UBP_Prompt_SpeakingTrumpet_C::RegisterCharacterEvents_Implementable(const s
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.RegisterCharacterEvents_Implementable");
 
-	UBP_Prompt_SpeakingTrumpet_C_RegisterCharacterEvents_Implementable_Params params;
+	UBP_Prompt_SpeakingTrumpet_C_RegisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -61,7 +61,7 @@ void UBP_Prompt_SpeakingTrumpet_C::RegisterCharacterEvents_Implementable(const s
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.UnregisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -70,7 +70,7 @@ void UBP_Prompt_SpeakingTrumpet_C::UnregisterCharacterEvents_Implementable(const
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.UnregisterCharacterEvents_Implementable");
 
-	UBP_Prompt_SpeakingTrumpet_C_UnregisterCharacterEvents_Implementable_Params params;
+	UBP_Prompt_SpeakingTrumpet_C_UnregisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -82,14 +82,14 @@ void UBP_Prompt_SpeakingTrumpet_C::UnregisterCharacterEvents_Implementable(const
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.Evaluate
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_SpeakingTrumpet_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.Evaluate");
 
-	UBP_Prompt_SpeakingTrumpet_C_Evaluate_Params params;
+	UBP_Prompt_SpeakingTrumpet_C_Evaluate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -100,16 +100,16 @@ void UBP_Prompt_SpeakingTrumpet_C::Evaluate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.OnWieldEvent
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-//		struct FEventObjectWielded                         OnWieldEvent                                               (Parm)
-void UBP_Prompt_SpeakingTrumpet_C::OnWieldEvent(const struct FEventObjectWielded& OnWieldEvent)
+//		struct FAthena_FEventObjectWielded                 OnWieldEvent                                               (Parm)
+void UBP_Prompt_SpeakingTrumpet_C::OnWieldEvent(const struct FAthena_FEventObjectWielded& OnWieldEvent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.OnWieldEvent");
 
-	UBP_Prompt_SpeakingTrumpet_C_OnWieldEvent_Params params;
+	UBP_Prompt_SpeakingTrumpet_C_OnWieldEvent_Params params {};
 	params.OnWieldEvent = OnWieldEvent;
 
 	auto flags = fn->FunctionFlags;
@@ -121,7 +121,7 @@ void UBP_Prompt_SpeakingTrumpet_C::OnWieldEvent(const struct FEventObjectWielded
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.ExecuteUbergraph_BP_Prompt_SpeakingTrumpet
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -130,7 +130,7 @@ void UBP_Prompt_SpeakingTrumpet_C::ExecuteUbergraph_BP_Prompt_SpeakingTrumpet(in
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.ExecuteUbergraph_BP_Prompt_SpeakingTrumpet");
 
-	UBP_Prompt_SpeakingTrumpet_C_ExecuteUbergraph_BP_Prompt_SpeakingTrumpet_Params params;
+	UBP_Prompt_SpeakingTrumpet_C_ExecuteUbergraph_BP_Prompt_SpeakingTrumpet_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

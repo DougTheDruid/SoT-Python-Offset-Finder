@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -70,7 +70,7 @@ struct FSeasonReward
 // 0x0001
 struct FSeasonServiceDataUpdatedEvent
 {
-	unsigned char                                      UnknownData_GC74[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WLC0[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -83,7 +83,7 @@ struct FSeasonRewardEarnedEvent
 {
 	struct FGuid                                       SeasonId;                                                  // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               MultipleRewards;                                           // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_IBUL[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_YIPA[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FSeasonReward>                       Rewards;                                                   // 0x0018(0x0010) (ZeroConstructor)
 
 	void AfterRead();
@@ -102,7 +102,7 @@ struct FLevelCompletionEvent
 	int                                                TimeSpentInTier;                                           // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               TierCompleted;                                             // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               SeasonCompleted;                                           // 0x0021(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_FJA9[0x2];                                     // 0x0022(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NPN4[0x2];                                     // 0x0022(0x0002) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -132,7 +132,7 @@ struct FSeasonGoalCompletionEvent
 	struct FGuid                                       SeasonId;                                                  // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FGuid                                       GoalId;                                                    // 0x0010(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<SeasonProgressionFramework_ESeasonGoalType> GoalType;                                                  // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_D2U6[0x3];                                     // 0x0021(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7TLW[0x3];                                     // 0x0021(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGuid                                       GoalGroupId;                                               // 0x0024(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	void AfterRead();
@@ -150,7 +150,7 @@ struct FSeasonGoalProgressionEvent
 	struct FGuid                                       SeasonId;                                                  // 0x000C(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FGuid                                       GoalId;                                                    // 0x001C(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<SeasonProgressionFramework_ESeasonGoalType> GoalType;                                                  // 0x002C(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_NRXB[0x3];                                     // 0x002D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_M7VL[0x3];                                     // 0x002D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGuid                                       GoalGroupId;                                               // 0x0030(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	void AfterRead();
@@ -159,13 +159,16 @@ struct FSeasonGoalProgressionEvent
 };
 
 // ScriptStruct SeasonProgressionFramework.TrackedObjectiveCompletionMessage
-// 0x00D8
+// 0x00E0
 struct FTrackedObjectiveCompletionMessage
 {
 	struct FGuid                                       ObjectiveId;                                               // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FPirateIdentity                             PirateIdentity;                                            // 0x0010(0x0078)
 	struct FPlayerBaseTelemetryFragment                PlayerInfo;                                                // 0x0088(0x0048)
-	double                                             CreatedAt;                                                 // 0x00D0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<AthenaEngine_EPlayMode>                Playmode;                                                  // 0x00D0(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<AthenaEngine_EPlayModeVariant>         PlayModeVariant;                                           // 0x00D1(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_LI36[0x6];                                     // 0x00D2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	double                                             CreatedAt;                                                 // 0x00D8(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -179,8 +182,10 @@ struct FTrackedObjectiveProgressUpdateMessage
 	struct FGuid                                       ObjectiveId;                                               // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FPirateIdentity                             PirateIdentity;                                            // 0x0010(0x0078)
 	struct FPlayerBaseTelemetryFragment                PlayerInfo;                                                // 0x0088(0x0048)
-	int                                                Value;                                                     // 0x00D0(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_2YOA[0x4];                                     // 0x00D4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	TEnumAsByte<AthenaEngine_EPlayMode>                Playmode;                                                  // 0x00D0(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<AthenaEngine_EPlayModeVariant>         PlayModeVariant;                                           // 0x00D1(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_PT2R[0x2];                                     // 0x00D2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	int                                                Value;                                                     // 0x00D4(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                             CreatedAt;                                                 // 0x00D8(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -192,7 +197,7 @@ struct FTrackedObjectiveProgressUpdateMessage
 // 0x0018
 struct FTrackedObjectiveEvent
 {
-	unsigned char                                      UnknownData_5MB8[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_XEJG[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

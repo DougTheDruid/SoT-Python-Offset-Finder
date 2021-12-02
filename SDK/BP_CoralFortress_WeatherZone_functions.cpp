@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.IsLocalPlayer
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -29,7 +29,7 @@ void ABP_CoralFortress_WeatherZone_C::IsLocalPlayer(class AActor* Actor, bool* R
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.IsLocalPlayer");
 
-	ABP_CoralFortress_WeatherZone_C_IsLocalPlayer_Params params;
+	ABP_CoralFortress_WeatherZone_C_IsLocalPlayer_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -44,7 +44,7 @@ void ABP_CoralFortress_WeatherZone_C::IsLocalPlayer(class AActor* Actor, bool* R
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.OnRep_Opacity
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -52,7 +52,7 @@ void ABP_CoralFortress_WeatherZone_C::OnRep_Opacity()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.OnRep_Opacity");
 
-	ABP_CoralFortress_WeatherZone_C_OnRep_Opacity_Params params;
+	ABP_CoralFortress_WeatherZone_C_OnRep_Opacity_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -63,7 +63,7 @@ void ABP_CoralFortress_WeatherZone_C::OnRep_Opacity()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.CreateDynamicMaterialAtSlot0
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -73,7 +73,7 @@ void ABP_CoralFortress_WeatherZone_C::CreateDynamicMaterialAtSlot0(class UPrimit
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.CreateDynamicMaterialAtSlot0");
 
-	ABP_CoralFortress_WeatherZone_C_CreateDynamicMaterialAtSlot0_Params params;
+	ABP_CoralFortress_WeatherZone_C_CreateDynamicMaterialAtSlot0_Params params {};
 	params.Primitive = Primitive;
 
 	auto flags = fn->FunctionFlags;
@@ -88,7 +88,7 @@ void ABP_CoralFortress_WeatherZone_C::CreateDynamicMaterialAtSlot0(class UPrimit
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -96,7 +96,7 @@ void ABP_CoralFortress_WeatherZone_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.UserConstructionScript");
 
-	ABP_CoralFortress_WeatherZone_C_UserConstructionScript_Params params;
+	ABP_CoralFortress_WeatherZone_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -107,14 +107,14 @@ void ABP_CoralFortress_WeatherZone_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.RainBlend__FinishedFunc
 //		Flags  -> (BlueprintEvent)
 void ABP_CoralFortress_WeatherZone_C::RainBlend__FinishedFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.RainBlend__FinishedFunc");
 
-	ABP_CoralFortress_WeatherZone_C_RainBlend__FinishedFunc_Params params;
+	ABP_CoralFortress_WeatherZone_C_RainBlend__FinishedFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -125,14 +125,14 @@ void ABP_CoralFortress_WeatherZone_C::RainBlend__FinishedFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.RainBlend__UpdateFunc
 //		Flags  -> (BlueprintEvent)
 void ABP_CoralFortress_WeatherZone_C::RainBlend__UpdateFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.RainBlend__UpdateFunc");
 
-	ABP_CoralFortress_WeatherZone_C_RainBlend__UpdateFunc_Params params;
+	ABP_CoralFortress_WeatherZone_C_RainBlend__UpdateFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -143,14 +143,14 @@ void ABP_CoralFortress_WeatherZone_C::RainBlend__UpdateFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_CoralFortress_WeatherZone_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.ReceiveBeginPlay");
 
-	ABP_CoralFortress_WeatherZone_C_ReceiveBeginPlay_Params params;
+	ABP_CoralFortress_WeatherZone_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -161,14 +161,14 @@ void ABP_CoralFortress_WeatherZone_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.StartRainBlend
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_CoralFortress_WeatherZone_C::StartRainBlend()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.StartRainBlend");
 
-	ABP_CoralFortress_WeatherZone_C_StartRainBlend_Params params;
+	ABP_CoralFortress_WeatherZone_C_StartRainBlend_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -179,7 +179,7 @@ void ABP_CoralFortress_WeatherZone_C::StartRainBlend()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.ReceiveEndPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -188,7 +188,7 @@ void ABP_CoralFortress_WeatherZone_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlay
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.ReceiveEndPlay");
 
-	ABP_CoralFortress_WeatherZone_C_ReceiveEndPlay_Params params;
+	ABP_CoralFortress_WeatherZone_C_ReceiveEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -200,14 +200,14 @@ void ABP_CoralFortress_WeatherZone_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlay
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.StopRainBlend
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_CoralFortress_WeatherZone_C::StopRainBlend()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.StopRainBlend");
 
-	ABP_CoralFortress_WeatherZone_C_StopRainBlend_Params params;
+	ABP_CoralFortress_WeatherZone_C_StopRainBlend_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -218,7 +218,7 @@ void ABP_CoralFortress_WeatherZone_C::StopRainBlend()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.BndEvt__Capsule_K2Node_ComponentBoundEvent_438_ComponentBeginOverlapSignature__DelegateSignature
 //		Flags  -> (HasOutParms, BlueprintEvent)
 // Parameters:
@@ -231,7 +231,7 @@ void ABP_CoralFortress_WeatherZone_C::BndEvt__Capsule_K2Node_ComponentBoundEvent
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.BndEvt__Capsule_K2Node_ComponentBoundEvent_438_ComponentBeginOverlapSignature__DelegateSignature");
 
-	ABP_CoralFortress_WeatherZone_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_438_ComponentBeginOverlapSignature__DelegateSignature_Params params;
+	ABP_CoralFortress_WeatherZone_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_438_ComponentBeginOverlapSignature__DelegateSignature_Params params {};
 	params.OtherActor = OtherActor;
 	params.OtherComp = OtherComp;
 	params.OtherBodyIndex = OtherBodyIndex;
@@ -247,7 +247,7 @@ void ABP_CoralFortress_WeatherZone_C::BndEvt__Capsule_K2Node_ComponentBoundEvent
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.BndEvt__Capsule_K2Node_ComponentBoundEvent_441_ComponentEndOverlapSignature__DelegateSignature
 //		Flags  -> (BlueprintEvent)
 // Parameters:
@@ -258,7 +258,7 @@ void ABP_CoralFortress_WeatherZone_C::BndEvt__Capsule_K2Node_ComponentBoundEvent
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.BndEvt__Capsule_K2Node_ComponentBoundEvent_441_ComponentEndOverlapSignature__DelegateSignature");
 
-	ABP_CoralFortress_WeatherZone_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_441_ComponentEndOverlapSignature__DelegateSignature_Params params;
+	ABP_CoralFortress_WeatherZone_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_441_ComponentEndOverlapSignature__DelegateSignature_Params params {};
 	params.OtherActor = OtherActor;
 	params.OtherComp = OtherComp;
 	params.OtherBodyIndex = OtherBodyIndex;
@@ -272,7 +272,7 @@ void ABP_CoralFortress_WeatherZone_C::BndEvt__Capsule_K2Node_ComponentBoundEvent
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.ExecuteUbergraph_BP_CoralFortress_WeatherZone
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -281,7 +281,7 @@ void ABP_CoralFortress_WeatherZone_C::ExecuteUbergraph_BP_CoralFortress_WeatherZ
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CoralFortress_WeatherZone.BP_CoralFortress_WeatherZone_C.ExecuteUbergraph_BP_CoralFortress_WeatherZone");
 
-	ABP_CoralFortress_WeatherZone_C_ExecuteUbergraph_BP_CoralFortress_WeatherZone_Params params;
+	ABP_CoralFortress_WeatherZone_C_ExecuteUbergraph_BP_CoralFortress_WeatherZone_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

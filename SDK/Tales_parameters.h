@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -22,20 +22,6 @@ namespace CG
 // Function Tales.TaleQuestStep.Signal
 struct UTaleQuestStep_Signal_Params
 {
-};
-
-// Function Tales.TaleQuestMapService.UpdateMerchantMap
-struct UTaleQuestMapService_UpdateMerchantMap_Params
-{
-	struct FName                                       MapId;                                                     // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                Index;                                                     // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTaleQuestDeliverableItem                   Deliverable;                                               // 0x0010(0x0040)  (Parm)
-};
-
-// Function Tales.TaleQuestMapService.AdvanceRiddleMap
-struct UTaleQuestMapService_AdvanceRiddleMap_Params
-{
-	struct FName                                       MapId;                                                     // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Tales.TaleQuestCargoRunContractsService.GetContract
@@ -113,6 +99,20 @@ struct UTaleQuestSelectorService_GetRandomIntegerInRange_Params
 	int                                                Minimum;                                                   // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                Maximum;                                                   // 0x0004(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                ReturnValue;                                               // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function Tales.TaleQuestMapService.UpdateMerchantMap
+struct UTaleQuestMapService_UpdateMerchantMap_Params
+{
+	struct FName                                       MapId;                                                     // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int                                                Index;                                                     // 0x0008(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTaleQuestDeliverableItem                   Deliverable;                                               // 0x0010(0x0040)  (Parm)
+};
+
+// Function Tales.TaleQuestMapService.AdvanceRiddleMap
+struct UTaleQuestMapService_AdvanceRiddleMap_Params
+{
+	struct FName                                       MapId;                                                     // 0x0000(0x0008)  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

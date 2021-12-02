@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -71,6 +71,14 @@ void FWwiseBinkSettings::AfterRead()
 }
 
 void FWwiseBinkSettings::BeforeDelete()
+{
+}
+
+void FWwiseAudioReverbPresets::AfterRead()
+{
+}
+
+void FWwiseAudioReverbPresets::BeforeDelete()
 {
 }
 
@@ -178,14 +186,6 @@ void FMovieSceneAkAudioRTPCSectionData::BeforeDelete()
 {
 }
 
-void FWwiseAudioReverbPresets::AfterRead()
-{
-}
-
-void FWwiseAudioReverbPresets::BeforeDelete()
-{
-}
-
 void UAnimNotifyWwiseEmitterComponentRetrievalInterface::AfterRead()
 {
 	UInterface::AfterRead();
@@ -199,7 +199,7 @@ void UAnimNotifyWwiseEmitterComponentRetrievalInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x04464A20
+//		Offset -> 0x04588060
 //		Name   -> Function WwiseAudio.WwiseEvent.IsAudible
 //		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -211,7 +211,7 @@ bool UWwiseEvent::IsAudible(const struct FVector& SoundPosition, const struct FV
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.IsAudible");
 
-	UWwiseEvent_IsAudible_Params params;
+	UWwiseEvent_IsAudible_Params params {};
 	params.SoundPosition = SoundPosition;
 	params.ListenerPos = ListenerPos;
 	params.AttenuationScaler = AttenuationScaler;
@@ -228,7 +228,7 @@ bool UWwiseEvent::IsAudible(const struct FVector& SoundPosition, const struct FV
 
 
 // Function:
-//		Offset -> 0x04464720
+//		Offset -> 0x04587D60
 //		Name   -> Function WwiseAudio.WwiseEvent.GetMaxAttenuation
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -237,7 +237,7 @@ float UWwiseEvent::GetMaxAttenuation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.GetMaxAttenuation");
 
-	UWwiseEvent_GetMaxAttenuation_Params params;
+	UWwiseEvent_GetMaxAttenuation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -251,7 +251,7 @@ float UWwiseEvent::GetMaxAttenuation()
 
 
 // Function:
-//		Offset -> 0x044646E0
+//		Offset -> 0x04587D20
 //		Name   -> Function WwiseAudio.WwiseEvent.GetDurationType
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -260,7 +260,7 @@ TEnumAsByte<WwiseAudio_EWwiseEventDurationType> UWwiseEvent::GetDurationType()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.GetDurationType");
 
-	UWwiseEvent_GetDurationType_Params params;
+	UWwiseEvent_GetDurationType_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -274,7 +274,7 @@ TEnumAsByte<WwiseAudio_EWwiseEventDurationType> UWwiseEvent::GetDurationType()
 
 
 // Function:
-//		Offset -> 0x044646B0
+//		Offset -> 0x04587CF0
 //		Name   -> Function WwiseAudio.WwiseEvent.GetDurationMin
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -283,7 +283,7 @@ float UWwiseEvent::GetDurationMin()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.GetDurationMin");
 
-	UWwiseEvent_GetDurationMin_Params params;
+	UWwiseEvent_GetDurationMin_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -297,7 +297,7 @@ float UWwiseEvent::GetDurationMin()
 
 
 // Function:
-//		Offset -> 0x04464680
+//		Offset -> 0x04587CC0
 //		Name   -> Function WwiseAudio.WwiseEvent.GetDurationMax
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -306,7 +306,7 @@ float UWwiseEvent::GetDurationMax()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WwiseAudio.WwiseEvent.GetDurationMax");
 
-	UWwiseEvent_GetDurationMax_Params params;
+	UWwiseEvent_GetDurationMax_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

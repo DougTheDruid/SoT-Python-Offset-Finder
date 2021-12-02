@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -90,14 +90,6 @@ void FDestroyCustomPlayerStartData::BeforeDelete()
 {
 }
 
-void FKillCrewData::AfterRead()
-{
-}
-
-void FKillCrewData::BeforeDelete()
-{
-}
-
 void FCustomPlayerStartConfigData::AfterRead()
 {
 }
@@ -106,8 +98,16 @@ void FCustomPlayerStartConfigData::BeforeDelete()
 {
 }
 
+void FKillCrewData::AfterRead()
+{
+}
+
+void FKillCrewData::BeforeDelete()
+{
+}
+
 // Function:
-//		Offset -> 0x03F18330
+//		Offset -> 0x03E869E0
 //		Name   -> Function CustomDeath.CustomDeathInterface.SetShouldUseRevivalFlow
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -116,7 +116,7 @@ void UCustomDeathInterface::SetShouldUseRevivalFlow(const struct FSetShouldUseRe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.SetShouldUseRevivalFlow");
 
-	UCustomDeathInterface_SetShouldUseRevivalFlow_Params params;
+	UCustomDeathInterface_SetShouldUseRevivalFlow_Params params {};
 	params.SetShouldUseRevivalFlowData = SetShouldUseRevivalFlowData;
 
 	auto flags = fn->FunctionFlags;
@@ -129,7 +129,7 @@ void UCustomDeathInterface::SetShouldUseRevivalFlow(const struct FSetShouldUseRe
 
 
 // Function:
-//		Offset -> 0x03F182A0
+//		Offset -> 0x03E86950
 //		Name   -> Function CustomDeath.CustomDeathInterface.SetShouldSkipFerryOfTheDamned
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -138,7 +138,7 @@ void UCustomDeathInterface::SetShouldSkipFerryOfTheDamned(const struct FSetShoul
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.SetShouldSkipFerryOfTheDamned");
 
-	UCustomDeathInterface_SetShouldSkipFerryOfTheDamned_Params params;
+	UCustomDeathInterface_SetShouldSkipFerryOfTheDamned_Params params {};
 	params.SetShouldSkipFerryOfTheDamnedData = SetShouldSkipFerryOfTheDamnedData;
 
 	auto flags = fn->FunctionFlags;
@@ -151,7 +151,7 @@ void UCustomDeathInterface::SetShouldSkipFerryOfTheDamned(const struct FSetShoul
 
 
 // Function:
-//		Offset -> 0x03F18210
+//		Offset -> 0x03E868C0
 //		Name   -> Function CustomDeath.CustomDeathInterface.SetGameModeDeathPenaltyRespawnTimer
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -160,7 +160,7 @@ void UCustomDeathInterface::SetGameModeDeathPenaltyRespawnTimer(const struct FGa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.SetGameModeDeathPenaltyRespawnTimer");
 
-	UCustomDeathInterface_SetGameModeDeathPenaltyRespawnTimer_Params params;
+	UCustomDeathInterface_SetGameModeDeathPenaltyRespawnTimer_Params params {};
 	params.GameModeDeathPenaltyRespawnTimerData = GameModeDeathPenaltyRespawnTimerData;
 
 	auto flags = fn->FunctionFlags;
@@ -173,7 +173,7 @@ void UCustomDeathInterface::SetGameModeDeathPenaltyRespawnTimer(const struct FGa
 
 
 // Function:
-//		Offset -> 0x03F18170
+//		Offset -> 0x03E86820
 //		Name   -> Function CustomDeath.CustomDeathInterface.SetCustomPlayerStart
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -183,7 +183,7 @@ bool UCustomDeathInterface::SetCustomPlayerStart(const struct FSetCustomPlayerSt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.SetCustomPlayerStart");
 
-	UCustomDeathInterface_SetCustomPlayerStart_Params params;
+	UCustomDeathInterface_SetCustomPlayerStart_Params params {};
 	params.SetCustomPlayerStartData = SetCustomPlayerStartData;
 
 	auto flags = fn->FunctionFlags;
@@ -198,7 +198,7 @@ bool UCustomDeathInterface::SetCustomPlayerStart(const struct FSetCustomPlayerSt
 
 
 // Function:
-//		Offset -> 0x03F18070
+//		Offset -> 0x03E86720
 //		Name   -> Function CustomDeath.CustomDeathInterface.SetCustomConfigForPlayer
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -208,7 +208,7 @@ void UCustomDeathInterface::SetCustomConfigForPlayer(int PlayerId, const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.SetCustomConfigForPlayer");
 
-	UCustomDeathInterface_SetCustomConfigForPlayer_Params params;
+	UCustomDeathInterface_SetCustomConfigForPlayer_Params params {};
 	params.PlayerId = PlayerId;
 	params.CustomDeathConfiguration = CustomDeathConfiguration;
 
@@ -222,7 +222,7 @@ void UCustomDeathInterface::SetCustomConfigForPlayer(int PlayerId, const struct 
 
 
 // Function:
-//		Offset -> 0x03F17FE0
+//		Offset -> 0x03E86690
 //		Name   -> Function CustomDeath.CustomDeathInterface.ResetCustomConfigForPlayer
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -231,7 +231,7 @@ void UCustomDeathInterface::ResetCustomConfigForPlayer(const struct FResetCustom
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.ResetCustomConfigForPlayer");
 
-	UCustomDeathInterface_ResetCustomConfigForPlayer_Params params;
+	UCustomDeathInterface_ResetCustomConfigForPlayer_Params params {};
 	params.ResetCustomConfigForPlayerData = ResetCustomConfigForPlayerData;
 
 	auto flags = fn->FunctionFlags;
@@ -244,7 +244,7 @@ void UCustomDeathInterface::ResetCustomConfigForPlayer(const struct FResetCustom
 
 
 // Function:
-//		Offset -> 0x03F17F50
+//		Offset -> 0x03E86600
 //		Name   -> Function CustomDeath.CustomDeathInterface.KillPlayer
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -253,7 +253,7 @@ void UCustomDeathInterface::KillPlayer(const struct FKillPlayerData& KillPlayerD
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.KillPlayer");
 
-	UCustomDeathInterface_KillPlayer_Params params;
+	UCustomDeathInterface_KillPlayer_Params params {};
 	params.KillPlayerData = KillPlayerData;
 
 	auto flags = fn->FunctionFlags;
@@ -266,7 +266,7 @@ void UCustomDeathInterface::KillPlayer(const struct FKillPlayerData& KillPlayerD
 
 
 // Function:
-//		Offset -> 0x03F17EB0
+//		Offset -> 0x03E86560
 //		Name   -> Function CustomDeath.CustomDeathInterface.KillCrew
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -275,7 +275,7 @@ void UCustomDeathInterface::KillCrew(const struct FKillCrewData& KillCrewData)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.KillCrew");
 
-	UCustomDeathInterface_KillCrew_Params params;
+	UCustomDeathInterface_KillCrew_Params params {};
 	params.KillCrewData = KillCrewData;
 
 	auto flags = fn->FunctionFlags;
@@ -288,7 +288,7 @@ void UCustomDeathInterface::KillCrew(const struct FKillCrewData& KillCrewData)
 
 
 // Function:
-//		Offset -> 0x03F17DE0
+//		Offset -> 0x03E86490
 //		Name   -> Function CustomDeath.CustomDeathInterface.GetShouldUseRevivalFlow
 //		Flags  -> (Native, Public)
 // Parameters:
@@ -299,7 +299,7 @@ bool UCustomDeathInterface::GetShouldUseRevivalFlow(int PlayerId, bool bDefaultV
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.GetShouldUseRevivalFlow");
 
-	UCustomDeathInterface_GetShouldUseRevivalFlow_Params params;
+	UCustomDeathInterface_GetShouldUseRevivalFlow_Params params {};
 	params.PlayerId = PlayerId;
 	params.bDefaultValue = bDefaultValue;
 
@@ -315,7 +315,7 @@ bool UCustomDeathInterface::GetShouldUseRevivalFlow(int PlayerId, bool bDefaultV
 
 
 // Function:
-//		Offset -> 0x03F17D40
+//		Offset -> 0x03E863F0
 //		Name   -> Function CustomDeath.CustomDeathInterface.GetShouldSkipFerryOfTheDamned
 //		Flags  -> (Native, Public)
 // Parameters:
@@ -325,7 +325,7 @@ bool UCustomDeathInterface::GetShouldSkipFerryOfTheDamned(int PlayerId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.GetShouldSkipFerryOfTheDamned");
 
-	UCustomDeathInterface_GetShouldSkipFerryOfTheDamned_Params params;
+	UCustomDeathInterface_GetShouldSkipFerryOfTheDamned_Params params {};
 	params.PlayerId = PlayerId;
 
 	auto flags = fn->FunctionFlags;
@@ -340,7 +340,7 @@ bool UCustomDeathInterface::GetShouldSkipFerryOfTheDamned(int PlayerId)
 
 
 // Function:
-//		Offset -> 0x03F17CA0
+//		Offset -> 0x03E86350
 //		Name   -> Function CustomDeath.CustomDeathInterface.GetCustomPlayerStart
 //		Flags  -> (Native, Public)
 // Parameters:
@@ -350,7 +350,7 @@ class APlayerStart* UCustomDeathInterface::GetCustomPlayerStart(int PlayerId)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.GetCustomPlayerStart");
 
-	UCustomDeathInterface_GetCustomPlayerStart_Params params;
+	UCustomDeathInterface_GetCustomPlayerStart_Params params {};
 	params.PlayerId = PlayerId;
 
 	auto flags = fn->FunctionFlags;
@@ -365,7 +365,7 @@ class APlayerStart* UCustomDeathInterface::GetCustomPlayerStart(int PlayerId)
 
 
 // Function:
-//		Offset -> 0x03F17C10
+//		Offset -> 0x03E862C0
 //		Name   -> Function CustomDeath.CustomDeathInterface.ForcePlayerRespawn
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -374,7 +374,7 @@ void UCustomDeathInterface::ForcePlayerRespawn(const struct FForcePlayerRespawnD
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.ForcePlayerRespawn");
 
-	UCustomDeathInterface_ForcePlayerRespawn_Params params;
+	UCustomDeathInterface_ForcePlayerRespawn_Params params {};
 	params.ForcePlayerRespawnData = ForcePlayerRespawnData;
 
 	auto flags = fn->FunctionFlags;
@@ -387,7 +387,7 @@ void UCustomDeathInterface::ForcePlayerRespawn(const struct FForcePlayerRespawnD
 
 
 // Function:
-//		Offset -> 0x03F17B50
+//		Offset -> 0x03E86200
 //		Name   -> Function CustomDeath.CustomDeathInterface.DestroyCustomPlayerStart
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -397,7 +397,7 @@ int UCustomDeathInterface::DestroyCustomPlayerStart(const struct FDestroyCustomP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.DestroyCustomPlayerStart");
 
-	UCustomDeathInterface_DestroyCustomPlayerStart_Params params;
+	UCustomDeathInterface_DestroyCustomPlayerStart_Params params {};
 	params.DestroyCustomPlayerStartData = DestroyCustomPlayerStartData;
 
 	auto flags = fn->FunctionFlags;
@@ -412,7 +412,7 @@ int UCustomDeathInterface::DestroyCustomPlayerStart(const struct FDestroyCustomP
 
 
 // Function:
-//		Offset -> 0x03F17A90
+//		Offset -> 0x03E86140
 //		Name   -> Function CustomDeath.CustomDeathInterface.CreateNewCustomPlayerStart
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -422,7 +422,7 @@ class APlayerStart* UCustomDeathInterface::CreateNewCustomPlayerStart(const stru
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomDeath.CustomDeathInterface.CreateNewCustomPlayerStart");
 
-	UCustomDeathInterface_CreateNewCustomPlayerStart_Params params;
+	UCustomDeathInterface_CreateNewCustomPlayerStart_Params params {};
 	params.CustomPlayerStartConfigData = CustomPlayerStartConfigData;
 
 	auto flags = fn->FunctionFlags;

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_gmp_compass_wth_01_a_Wieldable.BP_gmp_compass_wth_01_a_Wieldable_C
-// 0x0000 (FullSize[0x0858] - InheritedSize[0x0858])
+// 0x0000 (FullSize[0x0878] - InheritedSize[0x0878])
 class ABP_gmp_compass_wth_01_a_Wieldable_C : public ABP_Compass_C
 {
 public:

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -24,28 +24,28 @@ namespace CG
 class ATestLevelScriptActor : public ALevelScriptActor
 {
 public:
-	unsigned char                                      UnknownData_DNY4[0x8];                                     // 0x03D8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_H7O9[0x8];                                     // 0x03D8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TEnumAsByte<StudiosAutomation_ETestCategory>       Category;                                                  // 0x03E0(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<StudiosAutomation_ETestArea>           Area;                                                      // 0x03E1(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               VisualTest;                                                // 0x03E2(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               RunInEditor;                                               // 0x03E3(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               RunOnServer;                                               // 0x03E4(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               RequiresServices;                                          // 0x03E5(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_UE0Y[0x2];                                     // 0x03E6(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7E3C[0x2];                                     // 0x03E6(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FTestLevelMetadataEntry>             AdditionalMetadata;                                        // 0x03E8(0x0010) (Edit, ZeroConstructor, AdvancedDisplay)
 	TEnumAsByte<StudiosAutomation_EPerformanceCaptureType> CaptureType;                                               // 0x03F8(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<StudiosAutomation_ETestAutomationPlayModeOverride> PlayModeOverride;                                          // 0x03F9(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_VSMG[0x2];                                     // 0x03FA(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9IJ4[0x2];                                     // 0x03FA(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              TestTimeout;                                               // 0x03FC(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TestPausedTimeout;                                         // 0x0400(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_V85L[0x4];                                     // 0x0404(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_OUS3[0x4];                                     // 0x0404(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FString>                             VerboseLogCategories;                                      // 0x0408(0x0010) (Edit, ZeroConstructor)
 	TArray<int>                                        ClientsRunning;                                            // 0x0418(0x0010) (Net, ZeroConstructor)
 	TArray<int>                                        ClientIds;                                                 // 0x0428(0x0010) (Net, ZeroConstructor)
 	TArray<struct FClientPawnDetails>                  ClientPawns;                                               // 0x0438(0x0010) (Net, ZeroConstructor)
 	TArray<class AActor*>                              SpawnedActors;                                             // 0x0448(0x0010) (Net, ZeroConstructor)
 	int                                                NextSpawnedActorIndex;                                     // 0x0458(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_T7VD[0x3C];                                    // 0x045C(0x003C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_YU49[0x3C];                                    // 0x045C(0x003C) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -189,7 +189,7 @@ public:
 class UAutomationLatentActionCallback : public UObject
 {
 public:
-	unsigned char                                      UnknownData_8DE2[0x38];                                    // 0x0028(0x0038) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_21OM[0x38];                                    // 0x0028(0x0038) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -392,7 +392,7 @@ public:
 class UTestablePlayerControllerComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_VQQ5[0x20];                                    // 0x00C8(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BNML[0x20];                                    // 0x00C8(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -421,6 +421,50 @@ public:
 	static UClass* StaticClass()
 	{
 		static UClass* ptr = UObject::FindClass("Class StudiosAutomation.TestAbstractActor");
+		return ptr;
+	}
+
+
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// Class StudiosAutomation.TestSettings
+// 0x0000 (FullSize[0x0038] - InheritedSize[0x0038])
+class UTestSettings : public UDeveloperSettings
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = UObject::FindClass("Class StudiosAutomation.TestSettings");
+		return ptr;
+	}
+
+
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// Class StudiosAutomation.TextureAuditorSettings
+// 0x0050 (FullSize[0x0088] - InheritedSize[0x0038])
+class UTextureAuditorSettings : public UTestSettings
+{
+public:
+	TArray<struct FStringAssetReference>               SpecificTexturesToNotAudit;                                // 0x0038(0x0010) (Edit, ZeroConstructor, Config)
+	TArray<struct FDirectoryPath>                      TextureDirectoriesToNotAudit;                              // 0x0048(0x0010) (Edit, ZeroConstructor, Config)
+	struct FTextureAuditorProperties                   DefaultTextureProperties;                                  // 0x0058(0x0020) (Edit, Config)
+	TArray<struct FTextureAuditorGroupProperties>      PerTextureGroupPropertiesOverrides;                        // 0x0078(0x0010) (Edit, ZeroConstructor, Config)
+
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = UObject::FindClass("Class StudiosAutomation.TextureAuditorSettings");
 		return ptr;
 	}
 

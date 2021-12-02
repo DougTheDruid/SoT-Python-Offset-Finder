@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -25,7 +25,7 @@ class URepairTypeId : public UObject
 {
 public:
 	struct FText                                       DisplayName;                                               // 0x0028(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_AB4G[0x20];                                    // 0x0028(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_PPQE[0x20];                                    // 0x0028(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 
 
 	static UClass* StaticClass()
@@ -57,6 +57,7 @@ public:
 
 
 	void HandleDestroy();
+	float GetUndoRepairTime(class AActor* Interactor);
 	class UClass* GetRepairType();
 	float GetRepairTime();
 	TEnumAsByte<Repair_ERepairableState> GetRepairableState();

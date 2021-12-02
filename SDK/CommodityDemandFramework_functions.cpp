@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -145,14 +145,14 @@ void UCommodityDemandServiceInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x039D6940
+//		Offset -> 0x03636540
 //		Name   -> Function CommodityDemandFramework.CommodityDemandService.OnRep_ActiveCommodityDemands
 //		Flags  -> (Final, RequiredAPI, Native, Private)
 void ACommodityDemandService::OnRep_ActiveCommodityDemands()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CommodityDemandFramework.CommodityDemandService.OnRep_ActiveCommodityDemands");
 
-	ACommodityDemandService_OnRep_ActiveCommodityDemands_Params params;
+	ACommodityDemandService_OnRep_ActiveCommodityDemands_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -354,6 +354,18 @@ void UIsWieldedCommodityItemInDemandStatCondition::AfterRead()
 void UIsWieldedCommodityItemInDemandStatCondition::BeforeDelete()
 {
 	UTargetedStatCondition::BeforeDelete();
+
+}
+
+void USpecificItemsCrateFillerComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+}
+
+void USpecificItemsCrateFillerComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
 
 }
 

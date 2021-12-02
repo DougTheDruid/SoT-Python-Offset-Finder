@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UBP_Anim_Merchant_C : public UBP_Anim_NPC_C
 {
 public:
-	unsigned char                                      UnknownData_FETQ[0x3];                                     // 0x1CDD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_E73R[0x3];                                     // 0x1CDD(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x1CE0(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
 
 

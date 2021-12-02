@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -213,7 +213,7 @@ void AAthenaWaterEmissionVolume::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03112F30
+//		Offset -> 0x03220EE0
 //		Name   -> Function Water.FFTWaterInterface.SetExtendedPlaneComponent
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -222,7 +222,7 @@ void UFFTWaterInterface::SetExtendedPlaneComponent(class UFFTWaterExtendedPlaneC
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.SetExtendedPlaneComponent");
 
-	UFFTWaterInterface_SetExtendedPlaneComponent_Params params;
+	UFFTWaterInterface_SetExtendedPlaneComponent_Params params {};
 	params.InFFTWaterComponent = InFFTWaterComponent;
 
 	auto flags = fn->FunctionFlags;
@@ -235,7 +235,7 @@ void UFFTWaterInterface::SetExtendedPlaneComponent(class UFFTWaterExtendedPlaneC
 
 
 // Function:
-//		Offset -> 0x03112EA0
+//		Offset -> 0x03220E50
 //		Name   -> Function Water.FFTWaterInterface.SetComponent
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -244,7 +244,7 @@ void UFFTWaterInterface::SetComponent(class UFFTWaterComponent* InFFTWaterCompon
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.SetComponent");
 
-	UFFTWaterInterface_SetComponent_Params params;
+	UFFTWaterInterface_SetComponent_Params params {};
 	params.InFFTWaterComponent = InFFTWaterComponent;
 
 	auto flags = fn->FunctionFlags;
@@ -257,7 +257,7 @@ void UFFTWaterInterface::SetComponent(class UFFTWaterComponent* InFFTWaterCompon
 
 
 // Function:
-//		Offset -> 0x03112A70
+//		Offset -> 0x03220A20
 //		Name   -> Function Water.FFTWaterInterface.SetActor
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -266,7 +266,7 @@ void UFFTWaterInterface::SetActor(class AAthenaFFTWater* InFFTWaterActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.SetActor");
 
-	UFFTWaterInterface_SetActor_Params params;
+	UFFTWaterInterface_SetActor_Params params {};
 	params.InFFTWaterActor = InFFTWaterActor;
 
 	auto flags = fn->FunctionFlags;
@@ -279,7 +279,7 @@ void UFFTWaterInterface::SetActor(class AAthenaFFTWater* InFFTWaterActor)
 
 
 // Function:
-//		Offset -> 0x03111900
+//		Offset -> 0x0321F8B0
 //		Name   -> Function Water.FFTWaterInterface.GetExtendedPlaneComponent
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -288,7 +288,7 @@ class UFFTWaterExtendedPlaneComponent* UFFTWaterInterface::GetExtendedPlaneCompo
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.GetExtendedPlaneComponent");
 
-	UFFTWaterInterface_GetExtendedPlaneComponent_Params params;
+	UFFTWaterInterface_GetExtendedPlaneComponent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -302,7 +302,7 @@ class UFFTWaterExtendedPlaneComponent* UFFTWaterInterface::GetExtendedPlaneCompo
 
 
 // Function:
-//		Offset -> 0x031118D0
+//		Offset -> 0x0321F880
 //		Name   -> Function Water.FFTWaterInterface.GetComponent
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -311,7 +311,7 @@ class UFFTWaterComponent* UFFTWaterInterface::GetComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.GetComponent");
 
-	UFFTWaterInterface_GetComponent_Params params;
+	UFFTWaterInterface_GetComponent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -325,7 +325,7 @@ class UFFTWaterComponent* UFFTWaterInterface::GetComponent()
 
 
 // Function:
-//		Offset -> 0x03111750
+//		Offset -> 0x0321F700
 //		Name   -> Function Water.FFTWaterInterface.GetActor
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -334,7 +334,7 @@ class AAthenaFFTWater* UFFTWaterInterface::GetActor()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterInterface.GetActor");
 
-	UFFTWaterInterface_GetActor_Params params;
+	UFFTWaterInterface_GetActor_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -372,7 +372,7 @@ void UWaterProperties::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03112520
+//		Offset -> 0x032204D0
 //		Name   -> Function Water.WaterInterface.IsReadyToBeQueried
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -381,7 +381,7 @@ bool UWaterInterface::IsReadyToBeQueried()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.IsReadyToBeQueried");
 
-	UWaterInterface_IsReadyToBeQueried_Params params;
+	UWaterInterface_IsReadyToBeQueried_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -395,7 +395,7 @@ bool UWaterInterface::IsReadyToBeQueried()
 
 
 // Function:
-//		Offset -> 0x03112280
+//		Offset -> 0x03220230
 //		Name   -> Function Water.WaterInterface.GetWaterInformationWithScaledChoppyness
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -410,7 +410,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformationWithSca
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterInformationWithScaledChoppyness");
 
-	UWaterInterface_GetWaterInformationWithScaledChoppyness_Params params;
+	UWaterInterface_GetWaterInformationWithScaledChoppyness_Params params {};
 	params.SamplePosition = SamplePosition;
 	params.Actor = Actor;
 	params.ChoppynessScalar = ChoppynessScalar;
@@ -434,7 +434,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformationWithSca
 
 
 // Function:
-//		Offset -> 0x03112020
+//		Offset -> 0x0321FFD0
 //		Name   -> Function Water.WaterInterface.GetWaterInformationBatched
 //		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -448,7 +448,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformationBatched
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterInformationBatched");
 
-	UWaterInterface_GetWaterInformationBatched_Params params;
+	UWaterInterface_GetWaterInformationBatched_Params params {};
 	params.SamplePositions = SamplePositions;
 	params.Actor = Actor;
 
@@ -471,7 +471,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformationBatched
 
 
 // Function:
-//		Offset -> 0x03111E20
+//		Offset -> 0x0321FDD0
 //		Name   -> Function Water.WaterInterface.GetWaterInformation
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -485,7 +485,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformation(const 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterInformation");
 
-	UWaterInterface_GetWaterInformation_Params params;
+	UWaterInterface_GetWaterInformation_Params params {};
 	params.SamplePosition = SamplePosition;
 	params.Actor = Actor;
 
@@ -508,7 +508,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterInformation(const 
 
 
 // Function:
-//		Offset -> 0x03111C40
+//		Offset -> 0x0321FBF0
 //		Name   -> Function Water.WaterInterface.GetWaterHeightWithScaledChoppyness
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -522,7 +522,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterHeightWithScaledCh
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterHeightWithScaledChoppyness");
 
-	UWaterInterface_GetWaterHeightWithScaledChoppyness_Params params;
+	UWaterInterface_GetWaterHeightWithScaledChoppyness_Params params {};
 	params.SamplePosition = SamplePosition;
 	params.Actor = Actor;
 	params.Interpolate = Interpolate;
@@ -543,7 +543,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterHeightWithScaledCh
 
 
 // Function:
-//		Offset -> 0x03111AC0
+//		Offset -> 0x0321FA70
 //		Name   -> Function Water.WaterInterface.GetWaterHeight
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -556,7 +556,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterHeight(const struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetWaterHeight");
 
-	UWaterInterface_GetWaterHeight_Params params;
+	UWaterInterface_GetWaterHeight_Params params {};
 	params.SamplePosition = SamplePosition;
 	params.Actor = Actor;
 	params.Interpolate = Interpolate;
@@ -576,7 +576,7 @@ TEnumAsByte<Water_EWaterQueryResult> UWaterInterface::GetWaterHeight(const struc
 
 
 // Function:
-//		Offset -> 0x03111820
+//		Offset -> 0x0321F7D0
 //		Name   -> Function Water.WaterInterface.GetActorWaterPlane
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -586,7 +586,7 @@ struct FWaterSimPlane UWaterInterface::GetActorWaterPlane(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetActorWaterPlane");
 
-	UWaterInterface_GetActorWaterPlane_Params params;
+	UWaterInterface_GetActorWaterPlane_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -601,7 +601,7 @@ struct FWaterSimPlane UWaterInterface::GetActorWaterPlane(class AActor* Actor)
 
 
 // Function:
-//		Offset -> 0x03111780
+//		Offset -> 0x0321F730
 //		Name   -> Function Water.WaterInterface.GetActorWaterInformation
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -611,7 +611,7 @@ struct FWaterInformation UWaterInterface::GetActorWaterInformation(class AActor*
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInterface.GetActorWaterInformation");
 
-	UWaterInterface_GetActorWaterInformation_Params params;
+	UWaterInterface_GetActorWaterInformation_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -638,14 +638,14 @@ void UWaterInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03112A50
+//		Offset -> 0x03220A00
 //		Name   -> Function Water.FFTWaterService.OnRep_FFTWaterComponent
 //		Flags  -> (Final, Native, Public)
 void AFFTWaterService::OnRep_FFTWaterComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterService.OnRep_FFTWaterComponent");
 
-	AFFTWaterService_OnRep_FFTWaterComponent_Params params;
+	AFFTWaterService_OnRep_FFTWaterComponent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -657,14 +657,14 @@ void AFFTWaterService::OnRep_FFTWaterComponent()
 
 
 // Function:
-//		Offset -> 0x03112A30
+//		Offset -> 0x032209E0
 //		Name   -> Function Water.FFTWaterService.OnRep_ExtendedPlaneComponent
 //		Flags  -> (Final, Native, Public)
 void AFFTWaterService::OnRep_ExtendedPlaneComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FFTWaterService.OnRep_ExtendedPlaneComponent");
 
-	AFFTWaterService_OnRep_ExtendedPlaneComponent_Params params;
+	AFFTWaterService_OnRep_ExtendedPlaneComponent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -688,7 +688,7 @@ void AFFTWaterService::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031126E0
+//		Offset -> 0x03220690
 //		Name   -> Function Water.FlatWaterPlaneComponent.OnActorLeaveWaterPlane
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -697,7 +697,7 @@ void UFlatWaterPlaneComponent::OnActorLeaveWaterPlane(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FlatWaterPlaneComponent.OnActorLeaveWaterPlane");
 
-	UFlatWaterPlaneComponent_OnActorLeaveWaterPlane_Params params;
+	UFlatWaterPlaneComponent_OnActorLeaveWaterPlane_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -710,7 +710,7 @@ void UFlatWaterPlaneComponent::OnActorLeaveWaterPlane(class AActor* Actor)
 
 
 // Function:
-//		Offset -> 0x03112660
+//		Offset -> 0x03220610
 //		Name   -> Function Water.FlatWaterPlaneComponent.OnActorEnterWaterPlane
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -719,7 +719,7 @@ void UFlatWaterPlaneComponent::OnActorEnterWaterPlane(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FlatWaterPlaneComponent.OnActorEnterWaterPlane");
 
-	UFlatWaterPlaneComponent_OnActorEnterWaterPlane_Params params;
+	UFlatWaterPlaneComponent_OnActorEnterWaterPlane_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -732,7 +732,7 @@ void UFlatWaterPlaneComponent::OnActorEnterWaterPlane(class AActor* Actor)
 
 
 // Function:
-//		Offset -> 0x03111600
+//		Offset -> 0x0321F5B0
 //		Name   -> Function Water.FlatWaterPlaneComponent.ConvertToWaterSpace
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -742,7 +742,7 @@ struct FVector2D UFlatWaterPlaneComponent::ConvertToWaterSpace(const struct FVec
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.FlatWaterPlaneComponent.ConvertToWaterSpace");
 
-	UFlatWaterPlaneComponent_ConvertToWaterSpace_Params params;
+	UFlatWaterPlaneComponent_ConvertToWaterSpace_Params params {};
 	params.WorldSpacePosition = WorldSpacePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -873,7 +873,7 @@ void UUndergroundSeaWaterId::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031138A0
+//		Offset -> 0x03221850
 //		Name   -> Function Water.WaterBuoyancyFunctionLibrary.TickBuoyancy
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -887,7 +887,7 @@ float UWaterBuoyancyFunctionLibrary::STATIC_TickBuoyancy(class AActor* InOwner, 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancyFunctionLibrary.TickBuoyancy");
 
-	UWaterBuoyancyFunctionLibrary_TickBuoyancy_Params params;
+	UWaterBuoyancyFunctionLibrary_TickBuoyancy_Params params {};
 	params.InOwner = InOwner;
 	params.InDeltaTime = InDeltaTime;
 	params.InChoppinessScalar = InChoppinessScalar;
@@ -908,7 +908,7 @@ float UWaterBuoyancyFunctionLibrary::STATIC_TickBuoyancy(class AActor* InOwner, 
 
 
 // Function:
-//		Offset -> 0x03112D80
+//		Offset -> 0x03220D30
 //		Name   -> Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancySamplesZOffsetSymmetricalAroundXAxis
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -918,7 +918,7 @@ void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancySamplesZOffsetSymmetricalA
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancySamplesZOffsetSymmetricalAroundXAxis");
 
-	UWaterBuoyancyFunctionLibrary_SetBuoyancySamplesZOffsetSymmetricalAroundXAxis_Params params;
+	UWaterBuoyancyFunctionLibrary_SetBuoyancySamplesZOffsetSymmetricalAroundXAxis_Params params {};
 	params.ZOffset = ZOffset;
 
 	auto flags = fn->FunctionFlags;
@@ -934,7 +934,7 @@ void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancySamplesZOffsetSymmetricalA
 
 
 // Function:
-//		Offset -> 0x03112C60
+//		Offset -> 0x03220C10
 //		Name   -> Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlendDebugOverride
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -944,7 +944,7 @@ void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancyProbeCurveBlendDebugOverri
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlendDebugOverride");
 
-	UWaterBuoyancyFunctionLibrary_SetBuoyancyProbeCurveBlendDebugOverride_Params params;
+	UWaterBuoyancyFunctionLibrary_SetBuoyancyProbeCurveBlendDebugOverride_Params params {};
 	params.UnaryBlendOverride = UnaryBlendOverride;
 
 	auto flags = fn->FunctionFlags;
@@ -960,7 +960,7 @@ void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancyProbeCurveBlendDebugOverri
 
 
 // Function:
-//		Offset -> 0x03112B00
+//		Offset -> 0x03220AB0
 //		Name   -> Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlend
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -971,7 +971,7 @@ void UWaterBuoyancyFunctionLibrary::STATIC_SetBuoyancyProbeCurveBlend(struct FWa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancyFunctionLibrary.SetBuoyancyProbeCurveBlend");
 
-	UWaterBuoyancyFunctionLibrary_SetBuoyancyProbeCurveBlend_Params params;
+	UWaterBuoyancyFunctionLibrary_SetBuoyancyProbeCurveBlend_Params params {};
 	params.Blend = Blend;
 	params.BlendType = BlendType;
 
@@ -1000,7 +1000,7 @@ void UWaterBuoyancyFunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03113A90
+//		Offset -> 0x03221A40
 //		Name   -> Function Water.WaterBuoyancySampleMovementFunctionLibrary.TickLocalSampleMovement
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1012,7 +1012,7 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_TickLocalSampleMovement
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancySampleMovementFunctionLibrary.TickLocalSampleMovement");
 
-	UWaterBuoyancySampleMovementFunctionLibrary_TickLocalSampleMovement_Params params;
+	UWaterBuoyancySampleMovementFunctionLibrary_TickLocalSampleMovement_Params params {};
 	params.InActor = InActor;
 	params.DeltaTime = DeltaTime;
 
@@ -1031,7 +1031,7 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_TickLocalSampleMovement
 
 
 // Function:
-//		Offset -> 0x031136C0
+//		Offset -> 0x03221670
 //		Name   -> Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByRandomConfigurationIndex
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1042,7 +1042,7 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSample
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByRandomConfigurationIndex");
 
-	UWaterBuoyancySampleMovementFunctionLibrary_StartMovingVolumeSamplesLocallyByRandomConfigurationIndex_Params params;
+	UWaterBuoyancySampleMovementFunctionLibrary_StartMovingVolumeSamplesLocallyByRandomConfigurationIndex_Params params {};
 	params.InActor = InActor;
 
 	auto flags = fn->FunctionFlags;
@@ -1060,7 +1060,7 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSample
 
 
 // Function:
-//		Offset -> 0x031134A0
+//		Offset -> 0x03221450
 //		Name   -> Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByConfigurationIndex
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1072,7 +1072,7 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSample
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocallyByConfigurationIndex");
 
-	UWaterBuoyancySampleMovementFunctionLibrary_StartMovingVolumeSamplesLocallyByConfigurationIndex_Params params;
+	UWaterBuoyancySampleMovementFunctionLibrary_StartMovingVolumeSamplesLocallyByConfigurationIndex_Params params {};
 	params.InActor = InActor;
 	params.ConfigurationIndex = ConfigurationIndex;
 
@@ -1091,7 +1091,7 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSample
 
 
 // Function:
-//		Offset -> 0x03113100
+//		Offset -> 0x032210B0
 //		Name   -> Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocally
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1108,7 +1108,7 @@ void UWaterBuoyancySampleMovementFunctionLibrary::STATIC_StartMovingVolumeSample
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterBuoyancySampleMovementFunctionLibrary.StartMovingVolumeSamplesLocally");
 
-	UWaterBuoyancySampleMovementFunctionLibrary_StartMovingVolumeSamplesLocally_Params params;
+	UWaterBuoyancySampleMovementFunctionLibrary_StartMovingVolumeSamplesLocally_Params params {};
 	params.InActor = InActor;
 	params.InCenterOfMassOffsetCurve = InCenterOfMassOffsetCurve;
 	params.BuoyancyScalarAtNewPosition = BuoyancyScalarAtNewPosition;
@@ -1181,7 +1181,7 @@ void UWaterPlaneInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031125D0
+//		Offset -> 0x03220580
 //		Name   -> Function Water.WaterInteractionComponent.LeaveWaterPlane
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1190,7 +1190,7 @@ void UWaterInteractionComponent::LeaveWaterPlane(class UBaseWaterComponent* Wate
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.LeaveWaterPlane");
 
-	UWaterInteractionComponent_LeaveWaterPlane_Params params;
+	UWaterInteractionComponent_LeaveWaterPlane_Params params {};
 	params.WaterComponent = WaterComponent;
 
 	auto flags = fn->FunctionFlags;
@@ -1203,14 +1203,14 @@ void UWaterInteractionComponent::LeaveWaterPlane(class UBaseWaterComponent* Wate
 
 
 // Function:
-//		Offset -> 0x031125B0
+//		Offset -> 0x03220560
 //		Name   -> Function Water.WaterInteractionComponent.LeaveWaterExclusionZone
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UWaterInteractionComponent::LeaveWaterExclusionZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.LeaveWaterExclusionZone");
 
-	UWaterInteractionComponent_LeaveWaterExclusionZone_Params params;
+	UWaterInteractionComponent_LeaveWaterExclusionZone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1222,7 +1222,7 @@ void UWaterInteractionComponent::LeaveWaterExclusionZone()
 
 
 // Function:
-//		Offset -> 0x03112580
+//		Offset -> 0x03220530
 //		Name   -> Function Water.WaterInteractionComponent.IsUsingWaterExcludedZone
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1231,7 +1231,7 @@ bool UWaterInteractionComponent::IsUsingWaterExcludedZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.IsUsingWaterExcludedZone");
 
-	UWaterInteractionComponent_IsUsingWaterExcludedZone_Params params;
+	UWaterInteractionComponent_IsUsingWaterExcludedZone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1245,7 +1245,7 @@ bool UWaterInteractionComponent::IsUsingWaterExcludedZone()
 
 
 // Function:
-//		Offset -> 0x03112550
+//		Offset -> 0x03220500
 //		Name   -> Function Water.WaterInteractionComponent.IsUsingNonDefaultWaterPlane
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1254,7 +1254,7 @@ bool UWaterInteractionComponent::IsUsingNonDefaultWaterPlane()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.IsUsingNonDefaultWaterPlane");
 
-	UWaterInteractionComponent_IsUsingNonDefaultWaterPlane_Params params;
+	UWaterInteractionComponent_IsUsingNonDefaultWaterPlane_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1268,7 +1268,7 @@ bool UWaterInteractionComponent::IsUsingNonDefaultWaterPlane()
 
 
 // Function:
-//		Offset -> 0x031124F0
+//		Offset -> 0x032204A0
 //		Name   -> Function Water.WaterInteractionComponent.IsInWaterExcludedZone
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -1277,7 +1277,7 @@ bool UWaterInteractionComponent::IsInWaterExcludedZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.IsInWaterExcludedZone");
 
-	UWaterInteractionComponent_IsInWaterExcludedZone_Params params;
+	UWaterInteractionComponent_IsInWaterExcludedZone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1291,7 +1291,7 @@ bool UWaterInteractionComponent::IsInWaterExcludedZone()
 
 
 // Function:
-//		Offset -> 0x031124C0
+//		Offset -> 0x03220470
 //		Name   -> Function Water.WaterInteractionComponent.GetWaterPlaneComponent
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1300,7 +1300,7 @@ class UBaseWaterComponent* UWaterInteractionComponent::GetWaterPlaneComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.GetWaterPlaneComponent");
 
-	UWaterInteractionComponent_GetWaterPlaneComponent_Params params;
+	UWaterInteractionComponent_GetWaterPlaneComponent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1314,7 +1314,7 @@ class UBaseWaterComponent* UWaterInteractionComponent::GetWaterPlaneComponent()
 
 
 // Function:
-//		Offset -> 0x03111930
+//		Offset -> 0x0321F8E0
 //		Name   -> Function Water.WaterInteractionComponent.GetNumberOfWaterPlanes
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -1323,7 +1323,7 @@ unsigned char UWaterInteractionComponent::GetNumberOfWaterPlanes()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.GetNumberOfWaterPlanes");
 
-	UWaterInteractionComponent_GetNumberOfWaterPlanes_Params params;
+	UWaterInteractionComponent_GetNumberOfWaterPlanes_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1337,7 +1337,7 @@ unsigned char UWaterInteractionComponent::GetNumberOfWaterPlanes()
 
 
 // Function:
-//		Offset -> 0x031116C0
+//		Offset -> 0x0321F670
 //		Name   -> Function Water.WaterInteractionComponent.EnterWaterPlane
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1346,7 +1346,7 @@ void UWaterInteractionComponent::EnterWaterPlane(class UBaseWaterComponent* Wate
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.EnterWaterPlane");
 
-	UWaterInteractionComponent_EnterWaterPlane_Params params;
+	UWaterInteractionComponent_EnterWaterPlane_Params params {};
 	params.WaterComponent = WaterComponent;
 
 	auto flags = fn->FunctionFlags;
@@ -1359,14 +1359,14 @@ void UWaterInteractionComponent::EnterWaterPlane(class UBaseWaterComponent* Wate
 
 
 // Function:
-//		Offset -> 0x031116A0
+//		Offset -> 0x0321F650
 //		Name   -> Function Water.WaterInteractionComponent.EnterWaterExclusionZone
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UWaterInteractionComponent::EnterWaterExclusionZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterInteractionComponent.EnterWaterExclusionZone");
 
-	UWaterInteractionComponent_EnterWaterExclusionZone_Params params;
+	UWaterInteractionComponent_EnterWaterExclusionZone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1390,7 +1390,7 @@ void UWaterInteractionComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03112930
+//		Offset -> 0x032208E0
 //		Name   -> Function Water.WaterPlaneExclusionComponent.OnOverlapEnd
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -1401,7 +1401,7 @@ void UWaterPlaneExclusionComponent::OnOverlapEnd(class AActor* OtherActor, class
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterPlaneExclusionComponent.OnOverlapEnd");
 
-	UWaterPlaneExclusionComponent_OnOverlapEnd_Params params;
+	UWaterPlaneExclusionComponent_OnOverlapEnd_Params params {};
 	params.OtherActor = OtherActor;
 	params.OtherComp = OtherComp;
 	params.OtherBodyIndex = OtherBodyIndex;
@@ -1416,7 +1416,7 @@ void UWaterPlaneExclusionComponent::OnOverlapEnd(class AActor* OtherActor, class
 
 
 // Function:
-//		Offset -> 0x03112760
+//		Offset -> 0x03220710
 //		Name   -> Function Water.WaterPlaneExclusionComponent.OnOverlapBegin
 //		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
@@ -1429,7 +1429,7 @@ void UWaterPlaneExclusionComponent::OnOverlapBegin(class AActor* OtherActor, cla
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterPlaneExclusionComponent.OnOverlapBegin");
 
-	UWaterPlaneExclusionComponent_OnOverlapBegin_Params params;
+	UWaterPlaneExclusionComponent_OnOverlapBegin_Params params {};
 	params.OtherActor = OtherActor;
 	params.OtherComp = OtherComp;
 	params.OtherBodyIndex = OtherBodyIndex;
@@ -1470,7 +1470,7 @@ void UWaterPlaneRetrievalProviderInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03113E20
+//		Offset -> 0x03221DD0
 //		Name   -> Function Water.WaterSplashProbeFunctionLibrary.TickProbes
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1481,7 +1481,7 @@ void UWaterSplashProbeFunctionLibrary::STATIC_TickProbes(class AActor* InOwner, 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSplashProbeFunctionLibrary.TickProbes");
 
-	UWaterSplashProbeFunctionLibrary_TickProbes_Params params;
+	UWaterSplashProbeFunctionLibrary_TickProbes_Params params {};
 	params.InOwner = InOwner;
 	params.InDeltaTime = InDeltaTime;
 
@@ -1498,7 +1498,7 @@ void UWaterSplashProbeFunctionLibrary::STATIC_TickProbes(class AActor* InOwner, 
 
 
 // Function:
-//		Offset -> 0x03113CB0
+//		Offset -> 0x03221C60
 //		Name   -> Function Water.WaterSplashProbeFunctionLibrary.TickProbe
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1509,7 +1509,7 @@ void UWaterSplashProbeFunctionLibrary::STATIC_TickProbe(class AActor* InOwner, s
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSplashProbeFunctionLibrary.TickProbe");
 
-	UWaterSplashProbeFunctionLibrary_TickProbe_Params params;
+	UWaterSplashProbeFunctionLibrary_TickProbe_Params params {};
 	params.InOwner = InOwner;
 	params.InDeltaTime = InDeltaTime;
 
@@ -1526,7 +1526,7 @@ void UWaterSplashProbeFunctionLibrary::STATIC_TickProbe(class AActor* InOwner, s
 
 
 // Function:
-//		Offset -> 0x03112FC0
+//		Offset -> 0x03220F70
 //		Name   -> Function Water.WaterSplashProbeFunctionLibrary.SetSamplingTime
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1536,7 +1536,7 @@ void UWaterSplashProbeFunctionLibrary::STATIC_SetSamplingTime(TArray<struct FWat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSplashProbeFunctionLibrary.SetSamplingTime");
 
-	UWaterSplashProbeFunctionLibrary_SetSamplingTime_Params params;
+	UWaterSplashProbeFunctionLibrary_SetSamplingTime_Params params {};
 	params.SamplingTime = SamplingTime;
 
 	auto flags = fn->FunctionFlags;
@@ -1552,7 +1552,7 @@ void UWaterSplashProbeFunctionLibrary::STATIC_SetSamplingTime(TArray<struct FWat
 
 
 // Function:
-//		Offset -> 0x03111960
+//		Offset -> 0x0321F910
 //		Name   -> Function Water.WaterSplashProbeFunctionLibrary.GetRelativeWaterHeightChangeSpd
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1563,7 +1563,7 @@ struct FVector UWaterSplashProbeFunctionLibrary::STATIC_GetRelativeWaterHeightCh
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSplashProbeFunctionLibrary.GetRelativeWaterHeightChangeSpd");
 
-	UWaterSplashProbeFunctionLibrary_GetRelativeWaterHeightChangeSpd_Params params;
+	UWaterSplashProbeFunctionLibrary_GetRelativeWaterHeightChangeSpd_Params params {};
 	params.ProbeIndex = ProbeIndex;
 
 	auto flags = fn->FunctionFlags;
@@ -1593,7 +1593,7 @@ void UWaterSplashProbeFunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031114F0
+//		Offset -> 0x0321F4A0
 //		Name   -> Function Water.WaterSpoutVFXComponent.AddSplashVFXSpawnerWithLocation
 //		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
@@ -1602,7 +1602,7 @@ void UWaterSpoutVFXComponent::AddSplashVFXSpawnerWithLocation(struct FWaterSpout
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSpoutVFXComponent.AddSplashVFXSpawnerWithLocation");
 
-	UWaterSpoutVFXComponent_AddSplashVFXSpawnerWithLocation_Params params;
+	UWaterSpoutVFXComponent_AddSplashVFXSpawnerWithLocation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1617,14 +1617,14 @@ void UWaterSpoutVFXComponent::AddSplashVFXSpawnerWithLocation(struct FWaterSpout
 
 
 // Function:
-//		Offset -> 0x031114D0
+//		Offset -> 0x0321F480
 //		Name   -> Function Water.WaterSpoutVFXComponent.ActivateSplashVFXWithDelay
 //		Flags  -> (Final, Native, Private)
 void UWaterSpoutVFXComponent::ActivateSplashVFXWithDelay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Water.WaterSpoutVFXComponent.ActivateSplashVFXWithDelay");
 
-	UWaterSpoutVFXComponent_ActivateSplashVFXWithDelay_Params params;
+	UWaterSpoutVFXComponent_ActivateSplashVFXWithDelay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,15 +19,15 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
-//		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShowAppropriateMerchantPrompt
+//		Offset -> 0x016629C0
+//		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShowAppropriateSignpostPrompt
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-void UBP_Prompt_CTPurchaseVoyageSequence_C::ShowAppropriateMerchantPrompt()
+void UBP_Prompt_CTPurchaseVoyageSequence_C::ShowAppropriateSignpostPrompt()
 {
-	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShowAppropriateMerchantPrompt");
+	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShowAppropriateSignpostPrompt");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_ShowAppropriateMerchantPrompt_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_ShowAppropriateSignpostPrompt_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,7 +38,26 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ShowAppropriateMerchantPrompt()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
+//		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShowAppropriateMerchantPrompt
+//		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+void UBP_Prompt_CTPurchaseVoyageSequence_C::ShowAppropriateMerchantPrompt()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShowAppropriateMerchantPrompt");
+
+	UBP_Prompt_CTPurchaseVoyageSequence_C_ShowAppropriateMerchantPrompt_Params params {};
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetIsHidden
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -47,7 +66,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetIsHidden(bool NewHidden)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetIsHidden");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_SetIsHidden_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_SetIsHidden_Params params {};
 	params.NewHidden = NewHidden;
 
 	auto flags = fn->FunctionFlags;
@@ -59,7 +78,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetIsHidden(bool NewHidden)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerLeftGoldhoarderRadiusFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -68,7 +87,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerLeftGoldhoarderRadiusFunc(clas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerLeftGoldhoarderRadiusFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerLeftGoldhoarderRadiusFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerLeftGoldhoarderRadiusFunc_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -80,7 +99,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerLeftGoldhoarderRadiusFunc(clas
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerEnteredGoldhoarderRadiusFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -89,7 +108,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerEnteredGoldhoarderRadiusFunc(c
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerEnteredGoldhoarderRadiusFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerEnteredGoldhoarderRadiusFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerEnteredGoldhoarderRadiusFunc_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -101,7 +120,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerEnteredGoldhoarderRadiusFunc(c
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerLeftOutpostRadiusFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -110,7 +129,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerLeftOutpostRadiusFunc(class AA
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerLeftOutpostRadiusFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerLeftOutpostRadiusFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerLeftOutpostRadiusFunc_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -122,7 +141,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerLeftOutpostRadiusFunc(class AA
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerEnteredOutpostRadiusFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -131,7 +150,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerEnteredOutpostRadiusFunc(class
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerEnteredOutpostRadiusFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerEnteredOutpostRadiusFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerEnteredOutpostRadiusFunc_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -143,7 +162,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerEnteredOutpostRadiusFunc(class
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnCompanyRankPurchasedFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -152,7 +171,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnCompanyRankPurchasedFunc(const str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnCompanyRankPurchasedFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnCompanyRankPurchasedFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnCompanyRankPurchasedFunc_Params params {};
 	params.InputPin = InputPin;
 
 	auto flags = fn->FunctionFlags;
@@ -164,7 +183,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnCompanyRankPurchasedFunc(const str
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerWithdrewVoyageFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -173,7 +192,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerWithdrewVoyageFunc(const str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerWithdrewVoyageFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerWithdrewVoyageFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerWithdrewVoyageFunc_Params params {};
 	params.EventPlayerWithdrewVoyage = EventPlayerWithdrewVoyage;
 
 	auto flags = fn->FunctionFlags;
@@ -185,7 +204,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerWithdrewVoyageFunc(const str
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageDiscardFromInventoryFunc
 //		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -194,7 +213,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageDiscardFromInventoryFunc(con
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageDiscardFromInventoryFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageDiscardFromInventoryFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageDiscardFromInventoryFunc_Params params {};
 	params.VoyageProposalDiscardEvent = VoyageProposalDiscardEvent;
 
 	auto flags = fn->FunctionFlags;
@@ -206,7 +225,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageDiscardFromInventoryFunc(con
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerProposedVoyageFunc
 //		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -215,7 +234,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerProposedVoyageFunc(const str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerProposedVoyageFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerProposedVoyageFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerProposedVoyageFunc_Params params {};
 	params.VoyageProposalSelectedEvent = VoyageProposalSelectedEvent;
 
 	auto flags = fn->FunctionFlags;
@@ -227,16 +246,16 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerProposedVoyageFunc(const str
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnOfferPurchasedFunc
 //		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-//		struct FOfferPurchasedEvent                        OfferPurchasedEvent                                        (ConstParm, Parm, OutParm, ReferenceParm)
-void UBP_Prompt_CTPurchaseVoyageSequence_C::OnOfferPurchasedFunc(const struct FOfferPurchasedEvent& OfferPurchasedEvent)
+//		struct FAthena_FOfferPurchasedEvent                OfferPurchasedEvent                                        (ConstParm, Parm, OutParm, ReferenceParm)
+void UBP_Prompt_CTPurchaseVoyageSequence_C::OnOfferPurchasedFunc(const struct FAthena_FOfferPurchasedEvent& OfferPurchasedEvent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnOfferPurchasedFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnOfferPurchasedFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnOfferPurchasedFunc_Params params {};
 	params.OfferPurchasedEvent = OfferPurchasedEvent;
 
 	auto flags = fn->FunctionFlags;
@@ -248,7 +267,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnOfferPurchasedFunc(const struct FO
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerCancelledVoyageFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -257,7 +276,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerCancelledVoyageFunc(const st
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerCancelledVoyageFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerCancelledVoyageFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerCancelledVoyageFunc_Params params {};
 	params.VoyageCancelled = VoyageCancelled;
 
 	auto flags = fn->FunctionFlags;
@@ -269,14 +288,14 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerCancelledVoyageFunc(const st
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerExitedShipFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerExitedShipFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerExitedShipFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerExitedShipFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerExitedShipFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -287,7 +306,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerExitedShipFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnSomethingEnteredShipFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -296,7 +315,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnSomethingEnteredShipFunc(const str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnSomethingEnteredShipFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnSomethingEnteredShipFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnSomethingEnteredShipFunc_Params params {};
 	params.EventEnteredShip = EventEnteredShip;
 
 	auto flags = fn->FunctionFlags;
@@ -308,7 +327,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnSomethingEnteredShipFunc(const str
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageCompletedFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -317,7 +336,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageCompletedFunc(const struct F
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageCompletedFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageCompletedFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageCompletedFunc_Params params {};
 	params.VoyageComplete = VoyageComplete;
 
 	auto flags = fn->FunctionFlags;
@@ -329,7 +348,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageCompletedFunc(const struct F
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageBegunFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -338,7 +357,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageBegunFunc(const struct FVoya
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageBegunFunc");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageBegunFunc_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageBegunFunc_Params params {};
 	params.VoyageBegun = VoyageBegun;
 
 	auto flags = fn->FunctionFlags;
@@ -350,7 +369,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageBegunFunc(const struct FVoya
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.IsNearAnyShopkeeper
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -359,7 +378,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::IsNearAnyShopkeeper(bool* Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.IsNearAnyShopkeeper");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_IsNearAnyShopkeeper_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_IsNearAnyShopkeeper_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -373,7 +392,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::IsNearAnyShopkeeper(bool* Result)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.AreTutorialsForceDisabled
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -382,7 +401,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::AreTutorialsForceDisabled(bool* Resu
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.AreTutorialsForceDisabled");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_AreTutorialsForceDisabled_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_AreTutorialsForceDisabled_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -396,7 +415,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::AreTutorialsForceDisabled(bool* Resu
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.IsCurrentlyControlledCharacter
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -406,7 +425,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::IsCurrentlyControlledCharacter(class
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.IsCurrentlyControlledCharacter");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_IsCurrentlyControlledCharacter_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_IsCurrentlyControlledCharacter_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -421,7 +440,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::IsCurrentlyControlledCharacter(class
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShouldShowMerchantAllianceCompanyPrompts
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -430,7 +449,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ShouldShowMerchantAllianceCompanyPro
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShouldShowMerchantAllianceCompanyPrompts");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_ShouldShowMerchantAllianceCompanyPrompts_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_ShouldShowMerchantAllianceCompanyPrompts_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -444,7 +463,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ShouldShowMerchantAllianceCompanyPro
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShouldShowOrderOfSoulsCompanyPrompts
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -453,7 +472,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ShouldShowOrderOfSoulsCompanyPrompts
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShouldShowOrderOfSoulsCompanyPrompts");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_ShouldShowOrderOfSoulsCompanyPrompts_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_ShouldShowOrderOfSoulsCompanyPrompts_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -467,7 +486,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ShouldShowOrderOfSoulsCompanyPrompts
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ClearAllOutpostOverlapActors
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -475,7 +494,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ClearAllOutpostOverlapActors()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ClearAllOutpostOverlapActors");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_ClearAllOutpostOverlapActors_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_ClearAllOutpostOverlapActors_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -486,7 +505,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ClearAllOutpostOverlapActors()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShouldShowGoldHoarderCompanyPrompts
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -495,7 +514,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ShouldShowGoldHoarderCompanyPrompts(
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShouldShowGoldHoarderCompanyPrompts");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_ShouldShowGoldHoarderCompanyPrompts_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_ShouldShowGoldHoarderCompanyPrompts_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -509,7 +528,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ShouldShowGoldHoarderCompanyPrompts(
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ClearAllGoldHoarderOverlapActors
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -517,7 +536,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ClearAllGoldHoarderOverlapActors()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ClearAllGoldHoarderOverlapActors");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_ClearAllGoldHoarderOverlapActors_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_ClearAllGoldHoarderOverlapActors_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -528,7 +547,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ClearAllGoldHoarderOverlapActors()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetGoldHoardersLocations
 //		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -537,7 +556,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetGoldHoardersLocations(TArray<stru
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetGoldHoardersLocations");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_SetGoldHoardersLocations_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_SetGoldHoardersLocations_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -551,14 +570,14 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetGoldHoardersLocations(TArray<stru
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.Evaluate
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_CTPurchaseVoyageSequence_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.Evaluate");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_Evaluate_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_Evaluate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -569,14 +588,14 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::Evaluate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.Complete
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_CTPurchaseVoyageSequence_C::Complete()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.Complete");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_Complete_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_Complete_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -587,7 +606,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::Complete()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetOutposts
 //		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -596,7 +615,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetOutposts(TArray<struct FName>* Ou
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetOutposts");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_SetOutposts_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_SetOutposts_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -610,14 +629,14 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetOutposts(TArray<struct FName>* Ou
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.UninitializeImplementable
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_CTPurchaseVoyageSequence_C::UninitializeImplementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.UninitializeImplementable");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_UninitializeImplementable_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_UninitializeImplementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -628,14 +647,14 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::UninitializeImplementable()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PostInitialize
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_CTPurchaseVoyageSequence_C::PostInitialize()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PostInitialize");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_PostInitialize_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_PostInitialize_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -646,7 +665,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PostInitialize()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetOrderOfSoulsLocations
 //		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -655,7 +674,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetOrderOfSoulsLocations(TArray<stru
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetOrderOfSoulsLocations");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_SetOrderOfSoulsLocations_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_SetOrderOfSoulsLocations_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -669,7 +688,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetOrderOfSoulsLocations(TArray<stru
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetMerchantAllianceLocations
 //		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -678,7 +697,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetMerchantAllianceLocations(TArray<
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.SetMerchantAllianceLocations");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_SetMerchantAllianceLocations_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_SetMerchantAllianceLocations_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -692,7 +711,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::SetMerchantAllianceLocations(TArray<
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.RegisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -701,7 +720,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::RegisterCharacterEvents_Implementabl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.RegisterCharacterEvents_Implementable");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_RegisterCharacterEvents_Implementable_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_RegisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -713,7 +732,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::RegisterCharacterEvents_Implementabl
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.UnregisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -722,7 +741,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::UnregisterCharacterEvents_Implementa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.UnregisterCharacterEvents_Implementable");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_UnregisterCharacterEvents_Implementable_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_UnregisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -734,14 +753,14 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::UnregisterCharacterEvents_Implementa
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.UnregisterOtherEvents_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_CTPurchaseVoyageSequence_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.UnregisterOtherEvents_Implementable");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_UnregisterOtherEvents_Implementable_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_UnregisterOtherEvents_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -752,14 +771,14 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::UnregisterOtherEvents_Implementable(
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.RegisterOtherEvents_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_CTPurchaseVoyageSequence_C::RegisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.RegisterOtherEvents_Implementable");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_RegisterOtherEvents_Implementable_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_RegisterOtherEvents_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -770,14 +789,14 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::RegisterOtherEvents_Implementable()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ForceDisableTutorials
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_CTPurchaseVoyageSequence_C::ForceDisableTutorials()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ForceDisableTutorials");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_ForceDisableTutorials_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_ForceDisableTutorials_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -788,14 +807,14 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ForceDisableTutorials()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.Unregister HUD Events
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_CTPurchaseVoyageSequence_C::Unregister_HUD_Events()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.Unregister HUD Events");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_Unregister_HUD_Events_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_Unregister_HUD_Events_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -806,16 +825,16 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::Unregister_HUD_Events()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnOfferPurchased
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-//		struct FOfferPurchasedEvent                        Event                                                      (Parm)
-void UBP_Prompt_CTPurchaseVoyageSequence_C::OnOfferPurchased(const struct FOfferPurchasedEvent& Event)
+//		struct FAthena_FOfferPurchasedEvent                Event                                                      (Parm)
+void UBP_Prompt_CTPurchaseVoyageSequence_C::OnOfferPurchased(const struct FAthena_FOfferPurchasedEvent& Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnOfferPurchased");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnOfferPurchased_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnOfferPurchased_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -827,7 +846,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnOfferPurchased(const struct FOffer
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerProposedVoyage
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -836,7 +855,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerProposedVoyage(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerProposedVoyage");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerProposedVoyage_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerProposedVoyage_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -848,7 +867,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerProposedVoyage(const struct 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageDiscardFromInventory
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -857,7 +876,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageDiscardFromInventory(const s
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageDiscardFromInventory");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageDiscardFromInventory_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageDiscardFromInventory_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -869,7 +888,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageDiscardFromInventory(const s
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageBegun
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -878,7 +897,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageBegun(const struct FVoyageBe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageBegun");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageBegun_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageBegun_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -890,7 +909,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageBegun(const struct FVoyageBe
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageCompleted
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -899,7 +918,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageCompleted(const struct FVoya
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnVoyageCompleted");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageCompleted_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnVoyageCompleted_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -911,7 +930,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnVoyageCompleted(const struct FVoya
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnSomethingEnteredShip
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -920,7 +939,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnSomethingEnteredShip(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnSomethingEnteredShip");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnSomethingEnteredShip_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnSomethingEnteredShip_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -932,7 +951,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnSomethingEnteredShip(const struct 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerExitedShip
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -941,7 +960,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerExitedShip(const struct FEve
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerExitedShip");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerExitedShip_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerExitedShip_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -953,7 +972,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerExitedShip(const struct FEve
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerLeftOutpostRadius
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -962,7 +981,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerLeftOutpostRadius(class AActor
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerLeftOutpostRadius");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerLeftOutpostRadius_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerLeftOutpostRadius_Params params {};
 	params.ActorInZone = ActorInZone;
 
 	auto flags = fn->FunctionFlags;
@@ -974,7 +993,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerLeftOutpostRadius(class AActor
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerEnteredOutpostRadius
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -983,7 +1002,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerEnteredOutpostRadius(class AAc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerEnteredOutpostRadius");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerEnteredOutpostRadius_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerEnteredOutpostRadius_Params params {};
 	params.ActorInZone = ActorInZone;
 
 	auto flags = fn->FunctionFlags;
@@ -995,7 +1014,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerEnteredOutpostRadius(class AAc
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerLeftGoldhoarderRadius
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1004,7 +1023,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerLeftGoldhoarderRadius(class AA
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerLeftGoldhoarderRadius");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerLeftGoldhoarderRadius_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerLeftGoldhoarderRadius_Params params {};
 	params.ActorInZone = ActorInZone;
 
 	auto flags = fn->FunctionFlags;
@@ -1016,7 +1035,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerLeftGoldhoarderRadius(class AA
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerEnteredGoldhoarderRadius
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1025,7 +1044,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerEnteredGoldhoarderRadius(class
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.PlayerEnteredGoldhoarderRadius");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerEnteredGoldhoarderRadius_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_PlayerEnteredGoldhoarderRadius_Params params {};
 	params.ActorInZone = ActorInZone;
 
 	auto flags = fn->FunctionFlags;
@@ -1037,7 +1056,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::PlayerEnteredGoldhoarderRadius(class
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerWithdrewVoyage
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1046,7 +1065,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerWithdrewVoyage(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerWithdrewVoyage");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerWithdrewVoyage_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerWithdrewVoyage_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -1058,7 +1077,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerWithdrewVoyage(const struct 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerCancelledVoyage
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1067,7 +1086,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerCancelledVoyage(const struct
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerCancelledVoyage");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerCancelledVoyage_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerCancelledVoyage_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -1079,7 +1098,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnPlayerCancelledVoyage(const struct
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnCompanyRankPurchased
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1088,7 +1107,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnCompanyRankPurchased(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnCompanyRankPurchased");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnCompanyRankPurchased_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnCompanyRankPurchased_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -1100,7 +1119,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnCompanyRankPurchased(const struct 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnEndPlay_HUD
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1109,7 +1128,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnEndPlay_HUD(TEnumAsByte<Engine_EEn
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnEndPlay_HUD");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_OnEndPlay_HUD_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_OnEndPlay_HUD_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -1121,7 +1140,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::OnEndPlay_HUD(TEnumAsByte<Engine_EEn
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ExecuteUbergraph_BP_Prompt_CTPurchaseVoyageSequence
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -1130,7 +1149,7 @@ void UBP_Prompt_CTPurchaseVoyageSequence_C::ExecuteUbergraph_BP_Prompt_CTPurchas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ExecuteUbergraph_BP_Prompt_CTPurchaseVoyageSequence");
 
-	UBP_Prompt_CTPurchaseVoyageSequence_C_ExecuteUbergraph_BP_Prompt_CTPurchaseVoyageSequence_Params params;
+	UBP_Prompt_CTPurchaseVoyageSequence_C_ExecuteUbergraph_BP_Prompt_CTPurchaseVoyageSequence_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

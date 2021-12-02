@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -27,7 +27,7 @@ struct FContextualTutorialPromptDesc
 	class UClass*                                      AccessKey;                                                 // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	struct FName                                       FeatureName;                                               // 0x0010(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                MustBeUnderCount;                                          // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_C51V[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_C8Y7[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -39,7 +39,7 @@ struct FContextualTutorialPromptDesc
 struct FBeachNPCSpawnFlowNetworkEvent : public FNetworkEventStruct
 {
 	bool                                               HasTaleCheckpointVoyage;                                   // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_77J4[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Y5WA[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -54,7 +54,7 @@ struct FTutorialStepEndedTelemetryEvent
 	struct FString                                     StepName;                                                  // 0x0010(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	bool                                               StepCompleted;                                             // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               IsFinalStep;                                               // 0x0021(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_MUY6[0x6];                                     // 0x0022(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UPCA[0x6];                                     // 0x0022(0x0006) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -65,7 +65,7 @@ struct FTutorialStepEndedTelemetryEvent
 // 0x0001
 struct FTutorialShowTutorialLegendaryTavernStrangerEvent
 {
-	unsigned char                                      UnknownData_7QPD[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_YMZI[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

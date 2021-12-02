@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -31,7 +31,7 @@ void UOcclusionInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0329A0E0
+//		Offset -> 0x033188F0
 //		Name   -> Function Occlusion.OcclusionService.OnPrimaryActorEndPlay
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -40,7 +40,7 @@ void UOcclusionService::OnPrimaryActorEndPlay(class AActor* InActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Occlusion.OcclusionService.OnPrimaryActorEndPlay");
 
-	UOcclusionService_OnPrimaryActorEndPlay_Params params;
+	UOcclusionService_OnPrimaryActorEndPlay_Params params {};
 	params.InActor = InActor;
 
 	auto flags = fn->FunctionFlags;
@@ -53,7 +53,7 @@ void UOcclusionService::OnPrimaryActorEndPlay(class AActor* InActor)
 
 
 // Function:
-//		Offset -> 0x0329A060
+//		Offset -> 0x03318870
 //		Name   -> Function Occlusion.OcclusionService.OnIgnoredActorEndPlay
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -62,7 +62,7 @@ void UOcclusionService::OnIgnoredActorEndPlay(class AActor* InActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Occlusion.OcclusionService.OnIgnoredActorEndPlay");
 
-	UOcclusionService_OnIgnoredActorEndPlay_Params params;
+	UOcclusionService_OnIgnoredActorEndPlay_Params params {};
 	params.InActor = InActor;
 
 	auto flags = fn->FunctionFlags;

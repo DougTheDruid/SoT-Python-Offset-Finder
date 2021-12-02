@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -54,13 +54,13 @@ public:
 	struct FActorComponentSelector                     EmitterOwner;                                              // 0x00D0(0x0010) (Edit, DisableEditOnInstance, ContainsInstancedReference)
 	struct FVector                                     EmitterOffset;                                             // 0x00E0(0x000C) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               UseParentEmitter;                                          // 0x00EC(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_VKVA[0x3];                                     // 0x00ED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_VKZG[0x3];                                     // 0x00ED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              RisingAudioTriggerValue;                                   // 0x00F0(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_5P0W[0x4];                                     // 0x00F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_8UIT[0x4];                                     // 0x00F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      CameraShake;                                               // 0x00F8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	float                                              ShakeInnerRadius;                                          // 0x0100(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              ShakeOuterRadius;                                          // 0x0104(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_WT1F[0x50];                                    // 0x0108(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3AWR[0x50];                                    // 0x0108(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -82,7 +82,7 @@ public:
 class ASpireResource : public AActor
 {
 public:
-	unsigned char                                      UnknownData_NQRV[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SM8M[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -144,11 +144,11 @@ public:
 class ASpireService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_O77U[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_94NR[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class USpireServiceParams*                         Params;                                                    // 0x03D8(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FServerSpireInfo>                    ServerOnlySpireInfo;                                       // 0x03E0(0x0010) (ZeroConstructor, Transient)
 	TArray<struct FSpireInfo>                          SpireLevels;                                               // 0x03F0(0x0010) (Net, ZeroConstructor, RepNotify)
-	unsigned char                                      UnknownData_DWK2[0x68];                                    // 0x0400(0x0068) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_CHA7[0x68];                                    // 0x0400(0x0068) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -254,9 +254,9 @@ public:
 class UTaleSpireService : public UTaleQuestService
 {
 public:
-	unsigned char                                      UnknownData_HM2Z[0x8];                                     // 0x0060(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MAUN[0x8];                                     // 0x0060(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FScriptMulticastDelegate                    SpireMadeVisible;                                          // 0x0068(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_H0GV[0x30];                                    // 0x0078(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_TZIQ[0x30];                                    // 0x0078(0x0030) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -360,7 +360,7 @@ class UTaleRegisterSpireStep : public UTaleQuestStep
 {
 public:
 	class UTaleRegisterSpireStepDesc*                  StepDesc;                                                  // 0x0090(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_2IJ5[0x8];                                     // 0x0098(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LJMO[0x8];                                     // 0x0098(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -405,7 +405,7 @@ public:
 class UTaleReleaseSpireStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_Z2F4[0x8];                                     // 0x0090(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MRDK[0x8];                                     // 0x0090(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -487,7 +487,7 @@ public:
 class UTaleWaitForSpireToLoadStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_3OPJ[0x50];                                    // 0x0090(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RJGD[0x50];                                    // 0x0090(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

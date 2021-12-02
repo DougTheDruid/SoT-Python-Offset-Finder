@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0.Brig
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -31,7 +31,7 @@ public:
 	float                                              FadeIn_GhostBloom_8A3F310E4DA80126C74D32B4D69B71D3;        // 0x0420(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                              FadeIn_GhostOpacity_8A3F310E4DA80126C74D32B4D69B71D3;      // 0x0424(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Engine_ETimelineDirection>             FadeIn__Direction_8A3F310E4DA80126C74D32B4D69B71D3;        // 0x0428(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_531V[0x7];                                     // 0x0429(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_M4Z5[0x7];                                     // 0x0429(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UTimelineComponent*                          FadeIn;                                                    // 0x0430(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	TArray<class UMaterialInstanceDynamic*>            DynamicMaterials;                                          // 0x0438(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 

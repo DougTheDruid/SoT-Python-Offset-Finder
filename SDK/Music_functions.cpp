@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -35,7 +35,7 @@ void FMusicZoneSpawnedEvent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x036BAC80
+//		Offset -> 0x036A53C0
 //		Name   -> Function Music.MusicZoneInterface.CanPlayForPlayer
 //		Flags  -> (RequiredAPI, Native, Event, Public, BlueprintEvent, Const)
 // Parameters:
@@ -45,7 +45,7 @@ bool UMusicZoneInterface::CanPlayForPlayer(class AActor* Player)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneInterface.CanPlayForPlayer");
 
-	UMusicZoneInterface_CanPlayForPlayer_Params params;
+	UMusicZoneInterface_CanPlayForPlayer_Params params {};
 	params.Player = Player;
 
 	auto flags = fn->FunctionFlags;
@@ -72,7 +72,7 @@ void UMusicZoneInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x036BADE0
+//		Offset -> 0x036A5520
 //		Name   -> Function Music.MusicZoneComponent.GetEmitter
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -81,7 +81,7 @@ struct FWwiseEmitter UMusicZoneComponent::GetEmitter()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.GetEmitter");
 
-	UMusicZoneComponent_GetEmitter_Params params;
+	UMusicZoneComponent_GetEmitter_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -95,14 +95,14 @@ struct FWwiseEmitter UMusicZoneComponent::GetEmitter()
 
 
 // Function:
-//		Offset -> 0x036BADC0
+//		Offset -> 0x036A5500
 //		Name   -> Function Music.MusicZoneComponent.DisableZone
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMusicZoneComponent::DisableZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.DisableZone");
 
-	UMusicZoneComponent_DisableZone_Params params;
+	UMusicZoneComponent_DisableZone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -114,14 +114,14 @@ void UMusicZoneComponent::DisableZone()
 
 
 // Function:
-//		Offset -> 0x036BADA0
+//		Offset -> 0x036A54E0
 //		Name   -> Function Music.MusicZoneComponent.Client_StopMusicAndDisableZone
 //		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
 void UMusicZoneComponent::Client_StopMusicAndDisableZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.Client_StopMusicAndDisableZone");
 
-	UMusicZoneComponent_Client_StopMusicAndDisableZone_Params params;
+	UMusicZoneComponent_Client_StopMusicAndDisableZone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -133,7 +133,7 @@ void UMusicZoneComponent::Client_StopMusicAndDisableZone()
 
 
 // Function:
-//		Offset -> 0x036BAD20
+//		Offset -> 0x036A5460
 //		Name   -> Function Music.MusicZoneComponent.Client_PlayOneShot
 //		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public, BlueprintCallable)
 // Parameters:
@@ -142,7 +142,7 @@ void UMusicZoneComponent::Client_PlayOneShot(int Index)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.Client_PlayOneShot");
 
-	UMusicZoneComponent_Client_PlayOneShot_Params params;
+	UMusicZoneComponent_Client_PlayOneShot_Params params {};
 	params.Index = Index;
 
 	auto flags = fn->FunctionFlags;
@@ -155,14 +155,14 @@ void UMusicZoneComponent::Client_PlayOneShot(int Index)
 
 
 // Function:
-//		Offset -> 0x036BAC60
+//		Offset -> 0x036A53A0
 //		Name   -> Function Music.MusicZoneComponent.ActivateZone
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMusicZoneComponent::ActivateZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.MusicZoneComponent.ActivateZone");
 
-	UMusicZoneComponent_ActivateZone_Params params;
+	UMusicZoneComponent_ActivateZone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -192,14 +192,14 @@ void UMusicZoneComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x036BAE60
+//		Offset -> 0x036A55A0
 //		Name   -> Function Music.AISpawnerMusicZoneComponent.OnRep_SpawnerState
 //		Flags  -> (Final, Native, Private)
 void UAISpawnerMusicZoneComponent::OnRep_SpawnerState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Music.AISpawnerMusicZoneComponent.OnRep_SpawnerState");
 
-	UAISpawnerMusicZoneComponent_OnRep_SpawnerState_Params params;
+	UAISpawnerMusicZoneComponent_OnRep_SpawnerState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

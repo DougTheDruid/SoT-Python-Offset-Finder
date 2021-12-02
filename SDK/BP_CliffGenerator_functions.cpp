@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CliffGenerator.BP_CliffGenerator_C.Draw_Debug_Numbers
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -32,7 +32,7 @@ void ABP_CliffGenerator_C::Draw_Debug_Numbers(int CurrentIndex, int NextIndex, c
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CliffGenerator.BP_CliffGenerator_C.Draw_Debug_Numbers");
 
-	ABP_CliffGenerator_C_Draw_Debug_Numbers_Params params;
+	ABP_CliffGenerator_C_Draw_Debug_Numbers_Params params {};
 	params.CurrentIndex = CurrentIndex;
 	params.NextIndex = NextIndex;
 	params.StartLocation = StartLocation;
@@ -48,7 +48,7 @@ void ABP_CliffGenerator_C::Draw_Debug_Numbers(int CurrentIndex, int NextIndex, c
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CliffGenerator.BP_CliffGenerator_C.Deform_Terrain
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -56,7 +56,7 @@ void ABP_CliffGenerator_C::Deform_Terrain()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CliffGenerator.BP_CliffGenerator_C.Deform_Terrain");
 
-	ABP_CliffGenerator_C_Deform_Terrain_Params params;
+	ABP_CliffGenerator_C_Deform_Terrain_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -67,7 +67,7 @@ void ABP_CliffGenerator_C::Deform_Terrain()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CliffGenerator.BP_CliffGenerator_C.Build_Element
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -77,7 +77,7 @@ void ABP_CliffGenerator_C::Build_Element(int Index, class UStaticMesh* ElementMe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CliffGenerator.BP_CliffGenerator_C.Build_Element");
 
-	ABP_CliffGenerator_C_Build_Element_Params params;
+	ABP_CliffGenerator_C_Build_Element_Params params {};
 	params.Index = Index;
 	params.ElementMesh = ElementMesh;
 
@@ -90,7 +90,7 @@ void ABP_CliffGenerator_C::Build_Element(int Index, class UStaticMesh* ElementMe
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CliffGenerator.BP_CliffGenerator_C.UserConstructionScript
 //		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -98,7 +98,7 @@ void ABP_CliffGenerator_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CliffGenerator.BP_CliffGenerator_C.UserConstructionScript");
 
-	ABP_CliffGenerator_C_UserConstructionScript_Params params;
+	ABP_CliffGenerator_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

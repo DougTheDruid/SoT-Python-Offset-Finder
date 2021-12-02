@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -63,7 +63,7 @@ void UFoliageInstancedStaticMeshComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01DAA630
+//		Offset -> 0x01DE0990
 //		Name   -> Function Foliage.FoliageStatistics.FoliageOverlappingSphereCount
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -76,7 +76,7 @@ int UFoliageStatistics::STATIC_FoliageOverlappingSphereCount(class UObject* Worl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Foliage.FoliageStatistics.FoliageOverlappingSphereCount");
 
-	UFoliageStatistics_FoliageOverlappingSphereCount_Params params;
+	UFoliageStatistics_FoliageOverlappingSphereCount_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.StaticMesh = StaticMesh;
 	params.CenterPosition = CenterPosition;
@@ -94,7 +94,7 @@ int UFoliageStatistics::STATIC_FoliageOverlappingSphereCount(class UObject* Worl
 
 
 // Function:
-//		Offset -> 0x01DAA510
+//		Offset -> 0x01DE0870
 //		Name   -> Function Foliage.FoliageStatistics.FoliageOverlappingBoxCount
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -106,7 +106,7 @@ int UFoliageStatistics::STATIC_FoliageOverlappingBoxCount(class UObject* WorldCo
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Foliage.FoliageStatistics.FoliageOverlappingBoxCount");
 
-	UFoliageStatistics_FoliageOverlappingBoxCount_Params params;
+	UFoliageStatistics_FoliageOverlappingBoxCount_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.StaticMesh = StaticMesh;
 	params.Box = Box;
@@ -175,7 +175,7 @@ void AInstancedFoliageActor::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01DAA340
+//		Offset -> 0x01DE06A0
 //		Name   -> Function Foliage.InteractiveFoliageActor.CapsuleTouched
 //		Flags  -> (Final, Native, Protected, HasOutParms)
 // Parameters:
@@ -188,7 +188,7 @@ void AInteractiveFoliageActor::CapsuleTouched(class AActor* Other, class UPrimit
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Foliage.InteractiveFoliageActor.CapsuleTouched");
 
-	AInteractiveFoliageActor_CapsuleTouched_Params params;
+	AInteractiveFoliageActor_CapsuleTouched_Params params {};
 	params.Other = Other;
 	params.OtherComp = OtherComp;
 	params.OtherBodyIndex = OtherBodyIndex;
@@ -261,7 +261,7 @@ void UProceduralFoliageComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01DAA780
+//		Offset -> 0x01DE0AE0
 //		Name   -> Function Foliage.ProceduralFoliageSpawner.Simulate
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -270,7 +270,7 @@ void UProceduralFoliageSpawner::Simulate(int NumSteps)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Foliage.ProceduralFoliageSpawner.Simulate");
 
-	UProceduralFoliageSpawner_Simulate_Params params;
+	UProceduralFoliageSpawner_Simulate_Params params {};
 	params.NumSteps = NumSteps;
 
 	auto flags = fn->FunctionFlags;

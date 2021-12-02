@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_wpn_cutlass_par_01_a_v03_Wieldable.BP_wpn_cutlass_par_01_a_v03_Wieldable_C
-// 0x0000 (FullSize[0x0A68] - InheritedSize[0x0A68])
+// 0x0000 (FullSize[0x0A88] - InheritedSize[0x0A88])
 class ABP_wpn_cutlass_par_01_a_v03_Wieldable_C : public ABP_Cutlass_Item_C
 {
 public:

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -17,6 +17,16 @@ namespace CG
 //---------------------------------------------------------------------------
 // Functions
 //---------------------------------------------------------------------------
+
+void FEventExplosionIgnitedActor::AfterRead()
+{
+	READ_PTR_FULL(IgnitedActor, AActor);
+}
+
+void FEventExplosionIgnitedActor::BeforeDelete()
+{
+	DELE_PTR_FULL(IgnitedActor);
+}
 
 void FEventOnExploded::AfterRead()
 {

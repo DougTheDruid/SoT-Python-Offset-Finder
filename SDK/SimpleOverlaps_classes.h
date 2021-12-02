@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -44,7 +44,7 @@ public:
 class USimpleOverlapComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_5QR5[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BT4J[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

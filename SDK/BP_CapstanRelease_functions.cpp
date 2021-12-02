@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CapstanRelease.BP_CapstanRelease_C.GetClosestInteractionPoint
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -30,7 +30,7 @@ struct FVector ABP_CapstanRelease_C::GetClosestInteractionPoint(const struct FVe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CapstanRelease.BP_CapstanRelease_C.GetClosestInteractionPoint");
 
-	ABP_CapstanRelease_C_GetClosestInteractionPoint_Params params;
+	ABP_CapstanRelease_C_GetClosestInteractionPoint_Params params {};
 	params.ReferencePosition = ReferencePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -47,14 +47,14 @@ struct FVector ABP_CapstanRelease_C::GetClosestInteractionPoint(const struct FVe
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CapstanRelease.BP_CapstanRelease_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_CapstanRelease_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CapstanRelease.BP_CapstanRelease_C.UserConstructionScript");
 
-	ABP_CapstanRelease_C_UserConstructionScript_Params params;
+	ABP_CapstanRelease_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

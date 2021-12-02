@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -23,7 +23,7 @@ namespace CG
 // 0x0018
 struct FCustomServerEvent
 {
-	unsigned char                                      UnknownData_A0L2[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_LHHI[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FName                                       EventID;                                                   // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDateTime                                   ServerTimeUTC;                                             // 0x0010(0x0008) (ZeroConstructor)
 
@@ -37,7 +37,7 @@ struct FCustomServerEvent
 struct FEntityCustomServerEvent : public FCustomServerEvent
 {
 	int                                                EntityNetId;                                               // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_YSCL[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AN2D[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -60,7 +60,7 @@ struct FOnCannonBallHitShipCustomServerEvent : public FGlobalCustomServerEvent
 {
 	struct FString                                     CannonBallType;                                            // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	int                                                ShipId;                                                    // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GLBV[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_R4YK[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -156,7 +156,7 @@ struct FTreasureDroppedCustomServerEvent : public FGlobalCustomServerEvent
 	struct FString                                     UserId;                                                    // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     TreasureType;                                              // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FVector                                     Position;                                                  // 0x0038(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_OANH[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_15HD[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -617,7 +617,7 @@ struct FMermaidUsedCustomServerEvent : public FGlobalCustomServerEvent
 struct FMermaidSpawnedCustomServerEvent : public FGlobalCustomServerEvent
 {
 	struct FVector                                     Position;                                                  // 0x0018(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_V7F3[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EURT[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -650,7 +650,7 @@ struct FLevelLoadCompletedCustomServerEvent : public FGlobalCustomServerEvent
 struct FKrakenTentacleDestroyedCustomServerEvent : public FGlobalCustomServerEvent
 {
 	int                                                TentacleRemaining;                                         // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_DU2G[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_TRB4[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -662,7 +662,7 @@ struct FKrakenTentacleDestroyedCustomServerEvent : public FGlobalCustomServerEve
 struct FKrakenSpawnCustomServerEvent : public FGlobalCustomServerEvent
 {
 	struct FVector                                     Position;                                                  // 0x0018(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_1ARF[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_G0B4[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -801,7 +801,7 @@ struct FAIShipDamagedCustomServerEvent : public FGlobalCustomServerEvent
 {
 	struct FString                                     AIShipId;                                                  // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	float                                              AIShipWaterLevel;                                          // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GTPZ[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_N15R[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -18,6 +18,11 @@ namespace CG
 //---------------------------------------------------------------------------
 // Parameters
 //---------------------------------------------------------------------------
+
+// Function BP_WaterBarrel.BP_WaterBarrel_C.UserConstructionScript
+struct ABP_WaterBarrel_C_UserConstructionScript_Params
+{
+};
 
 }
 

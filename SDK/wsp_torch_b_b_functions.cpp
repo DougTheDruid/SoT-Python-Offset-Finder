@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function wsp_torch_b_b.wsp_torch_b_b_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void Awsp_torch_b_b_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function wsp_torch_b_b.wsp_torch_b_b_C.UserConstructionScript");
 
-	Awsp_torch_b_b_C_UserConstructionScript_Params params;
+	Awsp_torch_b_b_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void Awsp_torch_b_b_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function wsp_torch_b_b.wsp_torch_b_b_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void Awsp_torch_b_b_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function wsp_torch_b_b.wsp_torch_b_b_C.ReceiveBeginPlay");
 
-	Awsp_torch_b_b_C_ReceiveBeginPlay_Params params;
+	Awsp_torch_b_b_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void Awsp_torch_b_b_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function wsp_torch_b_b.wsp_torch_b_b_C.ExecuteUbergraph_wsp_torch_b_b
 //		Flags  -> ()
 // Parameters:
@@ -64,7 +64,7 @@ void Awsp_torch_b_b_C::ExecuteUbergraph_wsp_torch_b_b(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function wsp_torch_b_b.wsp_torch_b_b_C.ExecuteUbergraph_wsp_torch_b_b");
 
-	Awsp_torch_b_b_C_ExecuteUbergraph_wsp_torch_b_b_Params params;
+	Awsp_torch_b_b_C_ExecuteUbergraph_wsp_torch_b_b_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

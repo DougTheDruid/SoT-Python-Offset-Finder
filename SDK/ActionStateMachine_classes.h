@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -64,7 +64,7 @@ public:
 class ATestActionStateCreatorDefinition : public AActionStateCreatorDefinition
 {
 public:
-	unsigned char                                      UnknownData_045O[0x18];                                    // 0x03D0(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_T1MI[0x18];                                    // 0x03D0(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -185,9 +185,9 @@ public:
 class UActionStateMachineComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_1KGA[0x18];                                    // 0x00C8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_F2UW[0x18];                                    // 0x00C8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FScriptMulticastDelegate                    OnActionChangedOnTrack;                                    // 0x00E0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_QP3M[0x768];                                   // 0x00F0(0x0768) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_2RZJ[0x768];                                   // 0x00F0(0x0768) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -219,7 +219,7 @@ class UCustomClientValidityCheckCallback : public UObject
 {
 public:
 	bool                                               ShouldPassClientValidation;                                // 0x0028(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_CRU1[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MIEA[0x7];                                     // 0x0029(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

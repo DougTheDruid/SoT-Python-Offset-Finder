@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -29,7 +29,7 @@ struct FDebugMenuDataAssetEntry
 	bool                                               CloseMenuWhenExecuted;                                     // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               AvailableInShippingBuilds;                                 // 0x0031(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               AddToCommonlyUsedMenu;                                     // 0x0032(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_CVAN[0x5];                                     // 0x0033(0x0005) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_2KLL[0x5];                                     // 0x0033(0x0005) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -45,7 +45,7 @@ struct FDebugMenuButtonShortcut
 	TArray<struct FKey>                                Buttons;                                                   // 0x0020(0x0010) (Edit, ZeroConstructor)
 	float                                              RequiredHoldTime;                                          // 0x0030(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               AvailableInShippingBuilds;                                 // 0x0034(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_MCY3[0xB];                                     // 0x0035(0x000B) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_CZAL[0xB];                                     // 0x0035(0x000B) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -68,7 +68,7 @@ struct FDebugMenuUserItem
 // 0x0001
 struct FDebugErrorHappeningEvent
 {
-	unsigned char                                      UnknownData_BHA7[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_OIEL[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -31,12 +31,12 @@ public:
 	struct FObjectMessagingHandle                      WieldableItemEquipEvent;                                   // 0x0178(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FPrioritisedPromptWithHandle                Prompt;                                                    // 0x01C0(0x0068) (Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                               WieldingTrumpet;                                           // 0x0228(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_MZJE[0x7];                                     // 0x0229(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_U8AW[0x7];                                     // 0x0229(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FObjectMessagingHandle                      WieldableItemStow;                                         // 0x0230(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
 	class UClass*                                      In;                                                        // 0x0278(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               UsingSecondaryInput;                                       // 0x0280(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               StatCompleted;                                             // 0x0281(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_WP6Q[0x6];                                     // 0x0282(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_5LTK[0x6];                                     // 0x0282(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FObjectMessagingDispatcherHandle            CharacterDispatcher;                                       // 0x0288(0x0008) (Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                               HasShown;                                                  // 0x0290(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -49,11 +49,11 @@ public:
 
 
 
-	void OnWieldFunc(const struct FEventObjectWielded& EventObjectWielded);
+	void OnWieldFunc(const struct FAthena_FEventObjectWielded& EventObjectWielded);
 	void RegisterCharacterEvents_Implementable(const struct FObjectMessagingDispatcherHandle& CharacterDispatcher);
 	void UnregisterCharacterEvents_Implementable(const struct FObjectMessagingDispatcherHandle& CharacterDispatcher);
 	void Evaluate();
-	void OnWieldEvent(const struct FEventObjectWielded& OnWieldEvent);
+	void OnWieldEvent(const struct FAthena_FEventObjectWielded& OnWieldEvent);
 	void ExecuteUbergraph_BP_Prompt_SpeakingTrumpet(int EntryPoint);
 	void AfterRead();
 	void BeforeDelete();

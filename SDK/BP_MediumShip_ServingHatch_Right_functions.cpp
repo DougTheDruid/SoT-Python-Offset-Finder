@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0.Brig
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.GetClosestInteractionPoint
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -30,7 +30,7 @@ struct FVector ABP_MediumShip_ServingHatch_Right_C::GetClosestInteractionPoint(c
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.GetClosestInteractionPoint");
 
-	ABP_MediumShip_ServingHatch_Right_C_GetClosestInteractionPoint_Params params;
+	ABP_MediumShip_ServingHatch_Right_C_GetClosestInteractionPoint_Params params {};
 	params.ReferencePosition = ReferencePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -47,14 +47,14 @@ struct FVector ABP_MediumShip_ServingHatch_Right_C::GetClosestInteractionPoint(c
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_MediumShip_ServingHatch_Right_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.UserConstructionScript");
 
-	ABP_MediumShip_ServingHatch_Right_C_UserConstructionScript_Params params;
+	ABP_MediumShip_ServingHatch_Right_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -65,14 +65,14 @@ void ABP_MediumShip_ServingHatch_Right_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.OnAnimationStarted
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_MediumShip_ServingHatch_Right_C::OnAnimationStarted()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.OnAnimationStarted");
 
-	ABP_MediumShip_ServingHatch_Right_C_OnAnimationStarted_Params params;
+	ABP_MediumShip_ServingHatch_Right_C_OnAnimationStarted_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -83,14 +83,14 @@ void ABP_MediumShip_ServingHatch_Right_C::OnAnimationStarted()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.OnAnimationCompleted
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_MediumShip_ServingHatch_Right_C::OnAnimationCompleted()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.OnAnimationCompleted");
 
-	ABP_MediumShip_ServingHatch_Right_C_OnAnimationCompleted_Params params;
+	ABP_MediumShip_ServingHatch_Right_C_OnAnimationCompleted_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -101,7 +101,7 @@ void ABP_MediumShip_ServingHatch_Right_C::OnAnimationCompleted()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.ExecuteUbergraph_BP_MediumShip_ServingHatch_Right
 //		Flags  -> ()
 // Parameters:
@@ -110,7 +110,7 @@ void ABP_MediumShip_ServingHatch_Right_C::ExecuteUbergraph_BP_MediumShip_Serving
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShip_ServingHatch_Right.BP_MediumShip_ServingHatch_Right_C.ExecuteUbergraph_BP_MediumShip_ServingHatch_Right");
 
-	ABP_MediumShip_ServingHatch_Right_C_ExecuteUbergraph_BP_MediumShip_ServingHatch_Right_Params params;
+	ABP_MediumShip_ServingHatch_Right_C_ExecuteUbergraph_BP_MediumShip_ServingHatch_Right_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

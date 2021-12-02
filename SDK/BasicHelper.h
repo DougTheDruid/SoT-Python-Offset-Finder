@@ -1,7 +1,7 @@
 ﻿#pragma once
 #pragma warning(disable: 4267)
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 #include <vector>
 #include <locale>
@@ -133,7 +133,7 @@ public:
 	int Flags;
 	int32_t ClusterIndex;
 	int32_t SerialNumber;
-	unsigned char pad_QERH8Y8O9U[0x04];
+	unsigned char pad_60U39TI7J3[0x04];
 	enum class ObjectFlags : int32_t
 	{
 		None = 0,
@@ -851,7 +851,7 @@ struct FStructBaseChain
 {
 	class FStructBaseChain** StructBaseChainArray;
 	int32_t NumStructBasesInChainMinusOne;
-	unsigned char pad_UJJ0NZ1DOZ[0x04];
+	unsigned char pad_C2DG15ETSY[0x04];
 };
 
 template<typename Key, typename Value>

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0.Brig
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Campaign005_CursedSails_ShopkeeperTrevor_PreCursedSails.BP_Campaign005_CursedSails_ShopkeeperTrevor_PreCursedSails_C
-// 0x0000 (FullSize[0x05D8] - InheritedSize[0x05D8])
+// 0x0000 (FullSize[0x0628] - InheritedSize[0x0628])
 class ABP_Campaign005_CursedSails_ShopkeeperTrevor_PreCursedSails_C : public ABP_Shopkeeper_C
 {
 public:

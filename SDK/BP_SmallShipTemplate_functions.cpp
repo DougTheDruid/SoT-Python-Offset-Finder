@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShipTemplate.BP_SmallShipTemplate_C.GetPxActorCapacityForPhysXAggregate
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -28,7 +28,7 @@ unsigned char ABP_SmallShipTemplate_C::GetPxActorCapacityForPhysXAggregate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShipTemplate.BP_SmallShipTemplate_C.GetPxActorCapacityForPhysXAggregate");
 
-	ABP_SmallShipTemplate_C_GetPxActorCapacityForPhysXAggregate_Params params;
+	ABP_SmallShipTemplate_C_GetPxActorCapacityForPhysXAggregate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,7 +41,7 @@ unsigned char ABP_SmallShipTemplate_C::GetPxActorCapacityForPhysXAggregate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShipTemplate.BP_SmallShipTemplate_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -49,7 +49,7 @@ void ABP_SmallShipTemplate_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShipTemplate.BP_SmallShipTemplate_C.UserConstructionScript");
 
-	ABP_SmallShipTemplate_C_UserConstructionScript_Params params;
+	ABP_SmallShipTemplate_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -63,6 +63,24 @@ void ABP_SmallShipTemplate_C::AfterRead()
 {
 	AShip::AfterRead();
 
+	READ_PTR_FULL(BP_BedComponent, UBP_BedComponent_C);
+	READ_PTR_FULL(Rat3, UStaticMeshComponent);
+	READ_PTR_FULL(Rat2, UStaticMeshComponent);
+	READ_PTR_FULL(Rat1, UStaticMeshComponent);
+	READ_PTR_FULL(RatManager, URatManagerComponent);
+	READ_PTR_FULL(Seat_MapTable_3, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_MapTable_2, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Barrel_Top, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Front_Starboard, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Front_Port, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Side_Starboard, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Side_Port, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Bottom_Barrel, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Bottom_Port, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Bottom_Starboard, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Top_Rear_3, UBP_SeatComponent_C);
+	READ_PTR_FULL(Arrow, UArrowComponent);
+	READ_PTR_FULL(Seat_Top_Rear_2, UBP_SeatComponent_C);
 	READ_PTR_FULL(AIRegion, UAIRegionComponent);
 	READ_PTR_FULL(NamedPoints, UNamedPointsComponent);
 	READ_PTR_FULL(shp_small_ladder_gap_hits_01_a, UStaticMeshComponent);
@@ -135,6 +153,24 @@ void ABP_SmallShipTemplate_C::BeforeDelete()
 {
 	AShip::BeforeDelete();
 
+	DELE_PTR_FULL(BP_BedComponent);
+	DELE_PTR_FULL(Rat3);
+	DELE_PTR_FULL(Rat2);
+	DELE_PTR_FULL(Rat1);
+	DELE_PTR_FULL(RatManager);
+	DELE_PTR_FULL(Seat_MapTable_3);
+	DELE_PTR_FULL(Seat_MapTable_2);
+	DELE_PTR_FULL(Seat_Barrel_Top);
+	DELE_PTR_FULL(Seat_Front_Starboard);
+	DELE_PTR_FULL(Seat_Front_Port);
+	DELE_PTR_FULL(Seat_Side_Starboard);
+	DELE_PTR_FULL(Seat_Side_Port);
+	DELE_PTR_FULL(Seat_Bottom_Barrel);
+	DELE_PTR_FULL(Seat_Bottom_Port);
+	DELE_PTR_FULL(Seat_Bottom_Starboard);
+	DELE_PTR_FULL(Seat_Top_Rear_3);
+	DELE_PTR_FULL(Arrow);
+	DELE_PTR_FULL(Seat_Top_Rear_2);
 	DELE_PTR_FULL(AIRegion);
 	DELE_PTR_FULL(NamedPoints);
 	DELE_PTR_FULL(shp_small_ladder_gap_hits_01_a);

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UEmissaryActionRewardBoostComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_1WMR[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KYS0[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -47,11 +47,11 @@ class UEmissaryActiveTableVisualiserComponent : public UActorComponent
 public:
 	class UClass*                                      TargetCompany;                                             // 0x00C8(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	TArray<struct FMaterialVisualisation>              MaterialChanges;                                           // 0x00D0(0x0010) (Edit, ZeroConstructor, ContainsInstancedReference)
-	unsigned char                                      UnknownData_DT55[0x10];                                    // 0x00E0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ZVUN[0x10];                                    // 0x00E0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FLightVisualisation>                 LightChanges;                                              // 0x00F0(0x0010) (Edit, ZeroConstructor, ContainsInstancedReference)
-	unsigned char                                      UnknownData_4OYV[0x10];                                    // 0x0100(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7YW6[0x10];                                    // 0x0100(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FParticleVisualisation>              ParticleChanges;                                           // 0x0110(0x0010) (Edit, ZeroConstructor, ContainsInstancedReference)
-	unsigned char                                      UnknownData_MLGK[0x38];                                    // 0x0120(0x0038) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4A71[0x38];                                    // 0x0120(0x0038) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -109,11 +109,11 @@ public:
 };
 
 // Class EmissaryLevel.EmissaryFlotsamItemInfo
-// 0x0018 (FullSize[0x0728] - InheritedSize[0x0710])
+// 0x0018 (FullSize[0x0720] - InheritedSize[0x0708])
 class AEmissaryFlotsamItemInfo : public ABootyItemInfo
 {
 public:
-	struct FCompanySpecificBootyReward                 HandInOwnFlotsamReward;                                    // 0x0710(0x0018) (Edit, DisableEditOnInstance)
+	struct FCompanySpecificBootyReward                 HandInOwnFlotsamReward;                                    // 0x0708(0x0018) (Edit, DisableEditOnInstance)
 
 
 	static UClass* StaticClass()
@@ -130,12 +130,12 @@ public:
 };
 
 // Class EmissaryLevel.EmissaryFlotsamItemSpawnComponent
-// 0x0088 (FullSize[0x04F0] - InheritedSize[0x0468])
+// 0x0088 (FullSize[0x0520] - InheritedSize[0x0498])
 class UEmissaryFlotsamItemSpawnComponent : public UItemSpawnComponent
 {
 public:
-	unsigned char                                      UnknownData_IBBM[0x8];                                     // 0x0468(0x0008) Fix Super Size
-	unsigned char                                      UnknownData_MTCS[0x80];                                    // 0x0470(0x0080) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WYSX[0x8];                                     // 0x0498(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_J9F0[0x80];                                    // 0x04A0(0x0080) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -156,10 +156,10 @@ public:
 class UEmissaryFlotsamTooltipCustomizerComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_JL35[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_6ERV[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	bool                                               CheckForDelivery;                                          // 0x00D8(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               CheckForPickup;                                            // 0x00D9(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_KIXS[0x16];                                    // 0x00DA(0x0016) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FIDK[0x16];                                    // 0x00DA(0x0016) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -184,7 +184,7 @@ public:
 	struct FEmissaryPointBoostMultipliers              BoostMultiplers;                                           // 0x0038(0x0008) (Edit, DisableEditOnInstance)
 	struct FEmissaryFlagMeshReferences                 DefaultEmissaryFlagAssetReferences;                        // 0x0040(0x0020) (Edit, DisableEditOnInstance)
 	uint32_t                                           NumberOfCustomisedShipPartsToGainBoost;                    // 0x0060(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_HVBG[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B3SU[0x4];                                     // 0x0064(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -205,10 +205,10 @@ public:
 class AEmissaryLevelService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_VILK[0xA0];                                    // 0x03D0(0x00A0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_WX2P[0xA0];                                    // 0x03D0(0x00A0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UEmissaryLevelSettingsAsset*                 Settings;                                                  // 0x0470(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UEmissaryRewardSettingsAsset*                RewardSettings;                                            // 0x0478(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_O4QP[0x238];                                   // 0x0480(0x0238) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_HLPM[0x238];                                   // 0x0480(0x0238) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -231,11 +231,11 @@ class UEmissaryMaxRankQuestProvider : public UActorComponent
 public:
 	class UClass*                                      MaxRankQuestNotificationID;                                // 0x00C8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	TEnumAsByte<Athena_EActionDisplayPriority>         MaxRankQuestToolTipPriority;                               // 0x00D0(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GBYF[0x7];                                     // 0x00D1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_WG5U[0x7];                                     // 0x00D1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FText                                       StartMaxRankQuestToolTipText;                              // 0x00D8(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_OLOM[0x20];                                    // 0x00D1(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_PS3K[0x20];                                    // 0x00D1(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       CannotStartMaxRankQuestToolTipText;                        // 0x0110(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_HU9O[0x20];                                    // 0x0110(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_UTSV[0x20];                                    // 0x0110(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FStringAssetReference                       QuestDesc;                                                 // 0x0148(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	class UClass*                                      Company;                                                   // 0x0158(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
@@ -258,15 +258,15 @@ public:
 class UEmissaryParticipantComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_AWPY[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_VQMO[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	int                                                EmissaryLevel;                                             // 0x00D0(0x0004) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              EmissaryLevelProgress;                                     // 0x00D4(0x0004) (Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	struct FName                                       AffiliatedCompany;                                         // 0x00D8(0x0008) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash)
 	bool                                               IsAtMaxRank;                                               // 0x00E0(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
 	bool                                               IsEmissaryMaxRankQuestBeenActivatedThisSession;            // 0x00E1(0x0001) (Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
-	unsigned char                                      UnknownData_61SH[0x6];                                     // 0x00E2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_1LCE[0x6];                                     // 0x00E2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FMysteriousNotesCompletionEventsModelEntry> NoteCompletionIdents;                                      // 0x00E8(0x0010) (Edit, ZeroConstructor, Protected)
-	unsigned char                                      UnknownData_3K9K[0x10];                                    // 0x00F8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SOOU[0x10];                                    // 0x00F8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FName                                       VotedCompany;                                              // 0x0108(0x0008) (Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
@@ -333,7 +333,7 @@ class UEmissaryRewardSettingsAsset : public UDataAsset
 public:
 	TArray<struct FEmissaryRewardEntry>                EmissaryRewardData;                                        // 0x0028(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	float                                              PlayerKilledExpiryTime;                                    // 0x0038(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_DO5R[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_H6M9[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UEmissaryRewardCampaignSettingsAsset*        CampaignSettings;                                          // 0x0040(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
@@ -356,14 +356,14 @@ class UEmissaryShipAffiliationTrackerComponent : public USceneComponent
 {
 public:
 	int                                                EmissaryCount;                                             // 0x02B0(0x0004) (Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_711K[0x4];                                     // 0x02B4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JCGV[0x4];                                     // 0x02B4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      TrackedCompany;                                            // 0x02B8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	TAssetPtr<class UClass>                            EmissaryRepresentationMesh;                                // 0x02C0(0x001C) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_SCTG[0x4];                                     // 0x02C0(0x0004) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_1DT3[0x4];                                     // 0x02C0(0x0004) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	TArray<struct FTransform>                          EmissaryRepresentationTransforms;                          // 0x02E0(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UStaticMeshComponent*>                EmissaryRepresentationMeshes;                              // 0x02F0(0x0010) (ExportObject, ZeroConstructor, Transient, ContainsInstancedReference)
 	class UClass*                                      LoadedEmissaryRepresentationMesh;                          // 0x0300(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_M5VY[0x18];                                    // 0x0308(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WR2U[0x18];                                    // 0x0308(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -386,16 +386,16 @@ class UEmissaryVoyageInlineVoteConsumerBase : public UVoteConsumerInlineBase
 {
 public:
 	class UEmissaryVoyageVoteValidatorBase*            Validator;                                                 // 0x0030(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_OKS6[0x48];                                    // 0x0038(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_YUBQ[0x48];                                    // 0x0038(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FText                                       VoyageCinematicHeader;                                     // 0x0080(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance, Protected)
-	unsigned char                                      UnknownData_JY6D[0x20];                                    // 0x0038(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_UBSU[0x20];                                    // 0x0038(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FName                                       VoyageCinematicTag;                                        // 0x00B8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_IG23[0x20];                                    // 0x00C0(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JD47[0x20];                                    // 0x00C0(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FCrewMemberVotes>                    Votes;                                                     // 0x00E0(0x0010) (Net, ZeroConstructor, RepNotify)
 	class UBoxedRpcDispatcherComponent*                RpcDispatcher;                                             // 0x00F0(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_Y3ZR[0x20];                                    // 0x00F8(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_Z1DQ[0x20];                                    // 0x00F8(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class AActor*                                      OwningActor;                                               // 0x0118(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_30GP[0x8];                                     // 0x0120(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_HUEB[0x8];                                     // 0x0120(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -418,20 +418,20 @@ class UStartEmissaryVoyageInlineVoteConsumer : public UEmissaryVoyageInlineVoteC
 {
 public:
 	struct FText                                       EmissaryVotingCastVote;                                    // 0x0128(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_584T[0x20];                                    // 0x0128(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_UW95[0x20];                                    // 0x0128(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingCantVote;                                    // 0x0160(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_JL7H[0x20];                                    // 0x0160(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_DHY0[0x20];                                    // 0x0160(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingCantVoteReasonCrewShipOutsideRange;          // 0x0198(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_CJA6[0x20];                                    // 0x0198(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_1WE7[0x20];                                    // 0x0198(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingCantVoteReasonNoEmissaryEntitlement;         // 0x01D0(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_N44H[0x20];                                    // 0x01D0(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_RVI9[0x20];                                    // 0x01D0(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingCantVoteReasonHasActiveVoteForDifferentCompany; // 0x0208(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_4U8U[0x20];                                    // 0x0208(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_7RB7[0x20];                                    // 0x0208(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingRemoveVote;                                  // 0x0240(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_5QDS[0x20];                                    // 0x0240(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_HB12[0x20];                                    // 0x0240(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingCantRemoveVote;                              // 0x0278(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_Z412[0x20];                                    // 0x0278(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	unsigned char                                      UnknownData_L1NP[0x18];                                    // 0x02B0(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_840J[0x20];                                    // 0x0278(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_P1L6[0x18];                                    // 0x02B0(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -453,18 +453,18 @@ class UStopEmissaryVoyageInlineVoteConsumer : public UEmissaryVoyageInlineVoteCo
 {
 public:
 	struct FText                                       EmissaryVotingCastVote;                                    // 0x0128(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_1VBU[0x20];                                    // 0x0128(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_T55V[0x20];                                    // 0x0128(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingCantVote;                                    // 0x0160(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_IPSI[0x20];                                    // 0x0160(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_VI7L[0x20];                                    // 0x0160(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingCantVoteReasonCrewShipOutsideRange;          // 0x0198(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_QO06[0x20];                                    // 0x0198(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_WFAT[0x20];                                    // 0x0198(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingCantVoteReasonActiveForDifferentCompany;     // 0x01D0(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_7A30[0x20];                                    // 0x01D0(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_P6U0[0x20];                                    // 0x01D0(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingRemoveVote;                                  // 0x0208(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_LZYA[0x20];                                    // 0x0208(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_2I99[0x20];                                    // 0x0208(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       EmissaryVotingCantRemoveVote;                              // 0x0240(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_GSBZ[0x20];                                    // 0x0240(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	unsigned char                                      UnknownData_03GQ[0x18];                                    // 0x0278(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0JAS[0x20];                                    // 0x0240(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_4H6J[0x18];                                    // 0x0278(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -487,7 +487,7 @@ class UEmissaryVoyageVoteValidatorBase : public UVoteValidatorInlineBase
 public:
 	class UClass*                                      TargetCompany;                                             // 0x0030(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UClass*                                      RequiredEntitlement;                                       // 0x0038(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_B0XF[0x60];                                    // 0x0040(0x0060) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ZXOY[0x60];                                    // 0x0040(0x0060) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UEmissaryVoyageInlineVoteConsumerBase*       Consumer;                                                  // 0x00A0(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 
 
@@ -571,7 +571,7 @@ class UIsEmissaryStatCondition : public UStatCondition
 public:
 	class UClass*                                      RequiredEmissaryCompany;                                   // 0x0028(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	bool                                               RequiresMaxEmissaryLevel;                                  // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_Z9LZ[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JAQG[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

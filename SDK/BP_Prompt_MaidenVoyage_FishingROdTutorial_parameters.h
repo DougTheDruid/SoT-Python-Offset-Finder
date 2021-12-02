@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -65,7 +65,7 @@ struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnStowFunc_Params
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnWieldFunc
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnWieldFunc_Params
 {
-	struct FEventObjectWielded                         EventObjectWielded;                                        // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAthena_FEventObjectWielded                 EventObjectWielded;                                        // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.ResetPromptState
@@ -103,7 +103,7 @@ struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_UnregisterOtherEvents_Implem
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnWield
 struct UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnWield_Params
 {
-	struct FEventObjectWielded                         Event;                                                     // 0x0000(0x0010)  (Parm)
+	struct FAthena_FEventObjectWielded                 Event;                                                     // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishTired

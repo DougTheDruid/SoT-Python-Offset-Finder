@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0.Brig
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShipStorageBarrel_Grog.BP_MediumShipStorageBarrel_Grog_C.GetClosestInteractionPoint
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -30,7 +30,7 @@ struct FVector ABP_MediumShipStorageBarrel_Grog_C::GetClosestInteractionPoint(co
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShipStorageBarrel_Grog.BP_MediumShipStorageBarrel_Grog_C.GetClosestInteractionPoint");
 
-	ABP_MediumShipStorageBarrel_Grog_C_GetClosestInteractionPoint_Params params;
+	ABP_MediumShipStorageBarrel_Grog_C_GetClosestInteractionPoint_Params params {};
 	params.ReferencePosition = ReferencePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -47,7 +47,7 @@ struct FVector ABP_MediumShipStorageBarrel_Grog_C::GetClosestInteractionPoint(co
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShipStorageBarrel_Grog.BP_MediumShipStorageBarrel_Grog_C.ShouldDrawTooltipInWorldSpace
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -58,7 +58,7 @@ bool ABP_MediumShipStorageBarrel_Grog_C::ShouldDrawTooltipInWorldSpace(class AAc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShipStorageBarrel_Grog.BP_MediumShipStorageBarrel_Grog_C.ShouldDrawTooltipInWorldSpace");
 
-	ABP_MediumShipStorageBarrel_Grog_C_ShouldDrawTooltipInWorldSpace_Params params;
+	ABP_MediumShipStorageBarrel_Grog_C_ShouldDrawTooltipInWorldSpace_Params params {};
 	params.InInteractor = InInteractor;
 
 	auto flags = fn->FunctionFlags;
@@ -75,14 +75,14 @@ bool ABP_MediumShipStorageBarrel_Grog_C::ShouldDrawTooltipInWorldSpace(class AAc
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumShipStorageBarrel_Grog.BP_MediumShipStorageBarrel_Grog_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_MediumShipStorageBarrel_Grog_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumShipStorageBarrel_Grog.BP_MediumShipStorageBarrel_Grog_C.UserConstructionScript");
 
-	ABP_MediumShipStorageBarrel_Grog_C_UserConstructionScript_Params params;
+	ABP_MediumShipStorageBarrel_Grog_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

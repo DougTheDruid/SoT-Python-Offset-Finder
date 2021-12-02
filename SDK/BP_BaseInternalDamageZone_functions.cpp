@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.OnRepairMounted
 //		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_BaseInternalDamageZone_C::OnRepairMounted()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.OnRepairMounted");
 
-	ABP_BaseInternalDamageZone_C_OnRepairMounted_Params params;
+	ABP_BaseInternalDamageZone_C_OnRepairMounted_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,7 +38,7 @@ void ABP_BaseInternalDamageZone_C::OnRepairMounted()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.GetRepairMountLocation
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -49,7 +49,7 @@ bool ABP_BaseInternalDamageZone_C::GetRepairMountLocation(class USceneComponent*
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.GetRepairMountLocation");
 
-	ABP_BaseInternalDamageZone_C_GetRepairMountLocation_Params params;
+	ABP_BaseInternalDamageZone_C_GetRepairMountLocation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -67,7 +67,7 @@ bool ABP_BaseInternalDamageZone_C::GetRepairMountLocation(class USceneComponent*
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ShouldDrawTooltipInWorldSpace
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -78,7 +78,7 @@ bool ABP_BaseInternalDamageZone_C::ShouldDrawTooltipInWorldSpace(class AActor* I
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ShouldDrawTooltipInWorldSpace");
 
-	ABP_BaseInternalDamageZone_C_ShouldDrawTooltipInWorldSpace_Params params;
+	ABP_BaseInternalDamageZone_C_ShouldDrawTooltipInWorldSpace_Params params {};
 	params.InInteractor = InInteractor;
 
 	auto flags = fn->FunctionFlags;
@@ -95,14 +95,14 @@ bool ABP_BaseInternalDamageZone_C::ShouldDrawTooltipInWorldSpace(class AActor* I
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_BaseInternalDamageZone_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.UserConstructionScript");
 
-	ABP_BaseInternalDamageZone_C_UserConstructionScript_Params params;
+	ABP_BaseInternalDamageZone_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -113,7 +113,7 @@ void ABP_BaseInternalDamageZone_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ReceiveEndPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -122,7 +122,7 @@ void ABP_BaseInternalDamageZone_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayRea
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ReceiveEndPlay");
 
-	ABP_BaseInternalDamageZone_C_ReceiveEndPlay_Params params;
+	ABP_BaseInternalDamageZone_C_ReceiveEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -134,7 +134,7 @@ void ABP_BaseInternalDamageZone_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayRea
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ExecuteUbergraph_BP_BaseInternalDamageZone
 //		Flags  -> ()
 // Parameters:
@@ -143,7 +143,7 @@ void ABP_BaseInternalDamageZone_C::ExecuteUbergraph_BP_BaseInternalDamageZone(in
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BaseInternalDamageZone.BP_BaseInternalDamageZone_C.ExecuteUbergraph_BP_BaseInternalDamageZone");
 
-	ABP_BaseInternalDamageZone_C_ExecuteUbergraph_BP_BaseInternalDamageZone_Params params;
+	ABP_BaseInternalDamageZone_C_ExecuteUbergraph_BP_BaseInternalDamageZone_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

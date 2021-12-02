@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.OnEmissaryEncounteredSkellyFort
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -28,7 +28,7 @@ void UBP_Prompt_EmissaryEncounteredSkellyFort_C::OnEmissaryEncounteredSkellyFort
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.OnEmissaryEncounteredSkellyFort");
 
-	UBP_Prompt_EmissaryEncounteredSkellyFort_C_OnEmissaryEncounteredSkellyFort_Params params;
+	UBP_Prompt_EmissaryEncounteredSkellyFort_C_OnEmissaryEncounteredSkellyFort_Params params {};
 	params.NewParam = NewParam;
 
 	auto flags = fn->FunctionFlags;
@@ -40,7 +40,7 @@ void UBP_Prompt_EmissaryEncounteredSkellyFort_C::OnEmissaryEncounteredSkellyFort
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.EmissaryEncounteredSkellyFort
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -49,7 +49,7 @@ void UBP_Prompt_EmissaryEncounteredSkellyFort_C::EmissaryEncounteredSkellyFort(c
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.EmissaryEncounteredSkellyFort");
 
-	UBP_Prompt_EmissaryEncounteredSkellyFort_C_EmissaryEncounteredSkellyFort_Params params;
+	UBP_Prompt_EmissaryEncounteredSkellyFort_C_EmissaryEncounteredSkellyFort_Params params {};
 	params.NewParam = NewParam;
 
 	auto flags = fn->FunctionFlags;
@@ -61,14 +61,14 @@ void UBP_Prompt_EmissaryEncounteredSkellyFort_C::EmissaryEncounteredSkellyFort(c
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.Evaluate
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_EmissaryEncounteredSkellyFort_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.Evaluate");
 
-	UBP_Prompt_EmissaryEncounteredSkellyFort_C_Evaluate_Params params;
+	UBP_Prompt_EmissaryEncounteredSkellyFort_C_Evaluate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -79,14 +79,14 @@ void UBP_Prompt_EmissaryEncounteredSkellyFort_C::Evaluate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.RegisterOtherEvents_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_EmissaryEncounteredSkellyFort_C::RegisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.RegisterOtherEvents_Implementable");
 
-	UBP_Prompt_EmissaryEncounteredSkellyFort_C_RegisterOtherEvents_Implementable_Params params;
+	UBP_Prompt_EmissaryEncounteredSkellyFort_C_RegisterOtherEvents_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -97,14 +97,14 @@ void UBP_Prompt_EmissaryEncounteredSkellyFort_C::RegisterOtherEvents_Implementab
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.UnregisterOtherEvents_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_EmissaryEncounteredSkellyFort_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.UnregisterOtherEvents_Implementable");
 
-	UBP_Prompt_EmissaryEncounteredSkellyFort_C_UnregisterOtherEvents_Implementable_Params params;
+	UBP_Prompt_EmissaryEncounteredSkellyFort_C_UnregisterOtherEvents_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -115,7 +115,7 @@ void UBP_Prompt_EmissaryEncounteredSkellyFort_C::UnregisterOtherEvents_Implement
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.ExecuteUbergraph_BP_Prompt_EmissaryEncounteredSkellyFort
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -124,7 +124,7 @@ void UBP_Prompt_EmissaryEncounteredSkellyFort_C::ExecuteUbergraph_BP_Prompt_Emis
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_EmissaryEncounteredSkellyFort.BP_Prompt_EmissaryEncounteredSkellyFort_C.ExecuteUbergraph_BP_Prompt_EmissaryEncounteredSkellyFort");
 
-	UBP_Prompt_EmissaryEncounteredSkellyFort_C_ExecuteUbergraph_BP_Prompt_EmissaryEncounteredSkellyFort_Params params;
+	UBP_Prompt_EmissaryEncounteredSkellyFort_C_ExecuteUbergraph_BP_Prompt_EmissaryEncounteredSkellyFort_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

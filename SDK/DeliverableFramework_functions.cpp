@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -42,6 +42,18 @@ void UDeliverableInterface::BeforeDelete()
 
 }
 
+void UDeliverableRedirectionInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UDeliverableRedirectionInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
 void UDeliverableComponent::AfterRead()
 {
 	UActorComponent::AfterRead();
@@ -54,6 +66,94 @@ void UDeliverableComponent::BeforeDelete()
 	UActorComponent::BeforeDelete();
 
 	DELE_PTR_FULL(DeliveryRequirementsAsset);
+}
+
+void UDeliverableRedirectionComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+	READ_PTR_FULL(Context, UDeliverableRedirectionContextBase);
+}
+
+void UDeliverableRedirectionComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+	DELE_PTR_FULL(Context);
+}
+
+void UDeliverableRedirectionContextBase::AfterRead()
+{
+	UObject::AfterRead();
+
+}
+
+void UDeliverableRedirectionContextBase::BeforeDelete()
+{
+	UObject::BeforeDelete();
+
+}
+
+void UDeliverableRedirectionNoContext::AfterRead()
+{
+	UDeliverableRedirectionContextBase::AfterRead();
+
+}
+
+void UDeliverableRedirectionNoContext::BeforeDelete()
+{
+	UDeliverableRedirectionContextBase::BeforeDelete();
+
+}
+
+void UDeliverableRedirectionCompositeContext::AfterRead()
+{
+	UDeliverableRedirectionContextBase::AfterRead();
+
+}
+
+void UDeliverableRedirectionCompositeContext::BeforeDelete()
+{
+	UDeliverableRedirectionContextBase::BeforeDelete();
+
+}
+
+void UDeliverableRedirectionDestinationDescriptorBase::AfterRead()
+{
+	UObject::AfterRead();
+
+}
+
+void UDeliverableRedirectionDestinationDescriptorBase::BeforeDelete()
+{
+	UObject::BeforeDelete();
+
+}
+
+void UDeliverableRedirectionContextHandlerBase::AfterRead()
+{
+	UObject::AfterRead();
+
+	READ_PTR_FULL(DestinationDescriptor, UDeliverableRedirectionDestinationDescriptorBase);
+}
+
+void UDeliverableRedirectionContextHandlerBase::BeforeDelete()
+{
+	UObject::BeforeDelete();
+
+	DELE_PTR_FULL(DestinationDescriptor);
+}
+
+void UDeliverableRedirectionLiteralDestinationDescriptor::AfterRead()
+{
+	UDeliverableRedirectionDestinationDescriptorBase::AfterRead();
+
+}
+
+void UDeliverableRedirectionLiteralDestinationDescriptor::BeforeDelete()
+{
+	UDeliverableRedirectionDestinationDescriptorBase::BeforeDelete();
+
 }
 
 void UDeliverableRequirementsDataAsset::AfterRead()

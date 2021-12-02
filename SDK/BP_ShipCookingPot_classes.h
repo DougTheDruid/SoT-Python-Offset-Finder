@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,11 +20,12 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_ShipCookingPot.BP_ShipCookingPot_C
-// 0x0008 (FullSize[0x05E0] - InheritedSize[0x05D8])
+// 0x0010 (FullSize[0x05E8] - InheritedSize[0x05D8])
 class ABP_ShipCookingPot_C : public ABP_CookingPotBase_C
 {
 public:
-	class UCookerIgnitionComponent*                    CookerIgnition;                                            // 0x05D8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	class UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x05D8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	class UCookerIgnitionComponent*                    CookerIgnition;                                            // 0x05E0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
 
 
 	static UClass* StaticClass()

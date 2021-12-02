@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.GetPxActorCapacityForPhysXAggregate
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -28,7 +28,7 @@ unsigned char ABP_LargeShipTemplate_C::GetPxActorCapacityForPhysXAggregate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.GetPxActorCapacityForPhysXAggregate");
 
-	ABP_LargeShipTemplate_C_GetPxActorCapacityForPhysXAggregate_Params params;
+	ABP_LargeShipTemplate_C_GetPxActorCapacityForPhysXAggregate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,7 +41,7 @@ unsigned char ABP_LargeShipTemplate_C::GetPxActorCapacityForPhysXAggregate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.SetupMastControls
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -54,7 +54,7 @@ void ABP_LargeShipTemplate_C::SetupMastControls(class UChildActorComponent* Left
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.SetupMastControls");
 
-	ABP_LargeShipTemplate_C_SetupMastControls_Params params;
+	ABP_LargeShipTemplate_C_SetupMastControls_Params params {};
 	params.LeftHoist = LeftHoist;
 	params.RightHoist = RightHoist;
 	params.LeftAngle = LeftAngle;
@@ -70,7 +70,7 @@ void ABP_LargeShipTemplate_C::SetupMastControls(class UChildActorComponent* Left
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -78,7 +78,7 @@ void ABP_LargeShipTemplate_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipTemplate.BP_LargeShipTemplate_C.UserConstructionScript");
 
-	ABP_LargeShipTemplate_C_UserConstructionScript_Params params;
+	ABP_LargeShipTemplate_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -92,6 +92,28 @@ void ABP_LargeShipTemplate_C::AfterRead()
 {
 	AShip::AfterRead();
 
+	READ_PTR_FULL(Rat3, UStaticMeshComponent);
+	READ_PTR_FULL(Rat2, UStaticMeshComponent);
+	READ_PTR_FULL(Rat1, UStaticMeshComponent);
+	READ_PTR_FULL(BP_BedComponent, UBP_BedComponent_C);
+	READ_PTR_FULL(RatManager, URatManagerComponent);
+	READ_PTR_FULL(Seat_BottomDeckBarrel_5, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_BottomDeckBarrel_4, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_BottomDeckBarrel_3, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Cabin_Chest, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Platform_Starboard, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Platform_Port, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Bannister_Bow_3, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Bannister_Bow, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_BottomDeckBarrel, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_MapTable_Cooking, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_MapTable, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Balcony_Rear_Starboard, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Balcony_Rear_Port, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Plank_Port, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Hatch_2, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Plank_Starboard, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_CaptainsChair, UBP_SeatComponent_C);
 	READ_PTR_FULL(AIRegion, UAIRegionComponent);
 	READ_PTR_FULL(NamedPoints, UNamedPointsComponent);
 	READ_PTR_FULL(BP_ShipStorageBarrelTwo6, UChildActorComponent);
@@ -204,6 +226,28 @@ void ABP_LargeShipTemplate_C::BeforeDelete()
 {
 	AShip::BeforeDelete();
 
+	DELE_PTR_FULL(Rat3);
+	DELE_PTR_FULL(Rat2);
+	DELE_PTR_FULL(Rat1);
+	DELE_PTR_FULL(BP_BedComponent);
+	DELE_PTR_FULL(RatManager);
+	DELE_PTR_FULL(Seat_BottomDeckBarrel_5);
+	DELE_PTR_FULL(Seat_BottomDeckBarrel_4);
+	DELE_PTR_FULL(Seat_BottomDeckBarrel_3);
+	DELE_PTR_FULL(Seat_Cabin_Chest);
+	DELE_PTR_FULL(Seat_Platform_Starboard);
+	DELE_PTR_FULL(Seat_Platform_Port);
+	DELE_PTR_FULL(Seat_Bannister_Bow_3);
+	DELE_PTR_FULL(Seat_Bannister_Bow);
+	DELE_PTR_FULL(Seat_BottomDeckBarrel);
+	DELE_PTR_FULL(Seat_MapTable_Cooking);
+	DELE_PTR_FULL(Seat_MapTable);
+	DELE_PTR_FULL(Seat_Balcony_Rear_Starboard);
+	DELE_PTR_FULL(Seat_Balcony_Rear_Port);
+	DELE_PTR_FULL(Seat_Plank_Port);
+	DELE_PTR_FULL(Seat_Hatch_2);
+	DELE_PTR_FULL(Seat_Plank_Starboard);
+	DELE_PTR_FULL(Seat_CaptainsChair);
 	DELE_PTR_FULL(AIRegion);
 	DELE_PTR_FULL(NamedPoints);
 	DELE_PTR_FULL(BP_ShipStorageBarrelTwo6);

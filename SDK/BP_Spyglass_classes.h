@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,11 +20,11 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Spyglass.BP_Spyglass_C
-// 0x0008 (FullSize[0x0870] - InheritedSize[0x0868])
+// 0x0008 (FullSize[0x0890] - InheritedSize[0x0888])
 class ABP_Spyglass_C : public ASpyglass
 {
 public:
-	unsigned char                                      UnknownData_OFCD[0x8];                                     // 0x0868(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_RGF5[0x8];                                     // 0x0888(0x0008) Fix Super Size
 
 
 	static UClass* StaticClass()

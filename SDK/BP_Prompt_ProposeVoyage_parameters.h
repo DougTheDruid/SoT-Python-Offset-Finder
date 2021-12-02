@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -27,7 +27,7 @@ struct UBP_Prompt_ProposeVoyage_C_PostInitialize_Params
 // Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Prompt_OfferPurchased
 struct UBP_Prompt_ProposeVoyage_C_Prompt_OfferPurchased_Params
 {
-	struct FOfferPurchasedEvent                        Ev;                                                        // 0x0000(0x01E8)  (Parm)
+	struct FAthena_FOfferPurchasedEvent                Ev;                                                        // 0x0000(0x01E8)  (Parm)
 };
 
 // Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.UnregisterOtherEvents_Implementable

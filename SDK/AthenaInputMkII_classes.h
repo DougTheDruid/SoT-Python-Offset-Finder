@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UAthenaCharacterBaseMovementComponent : public UInputComponent
 {
 public:
-	unsigned char                                      UnknownData_B043[0x128];                                   // 0x0150(0x0128) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_S0JR[0x128];                                   // 0x0150(0x0128) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -45,7 +45,7 @@ public:
 class UAthenaCharacterBaseMovementComponentWithInterference : public UAthenaCharacterBaseMovementComponent
 {
 public:
-	unsigned char                                      UnknownData_T2CM[0x8];                                     // 0x0278(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0MEV[0x8];                                     // 0x0278(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -62,11 +62,11 @@ public:
 };
 
 // Class AthenaInputMkII.MovementInterferenceComponent
-// 0x0020 (FullSize[0x0170] - InheritedSize[0x0150])
+// 0x0070 (FullSize[0x01C0] - InheritedSize[0x0150])
 class UMovementInterferenceComponent : public UInputComponent
 {
 public:
-	unsigned char                                      UnknownData_ZS7H[0x20];                                    // 0x0150(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_O6U1[0x70];                                    // 0x0150(0x0070) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -77,8 +77,6 @@ public:
 
 
 
-	void OnMoveRightInput(float Value);
-	void OnMoveForwardInput(float Value);
 	void AfterRead();
 	void BeforeDelete();
 

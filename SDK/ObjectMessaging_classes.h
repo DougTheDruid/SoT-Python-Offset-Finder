@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -44,7 +44,7 @@ public:
 class UObjectMessagingDispatcherComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_EOMP[0xA8];                                    // 0x00C8(0x00A8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RK61[0xA8];                                    // 0x00C8(0x00A8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

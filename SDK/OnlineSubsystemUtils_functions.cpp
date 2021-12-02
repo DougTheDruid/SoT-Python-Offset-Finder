@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -43,7 +43,7 @@ void FBlueprintSessionResult::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02212F60
+//		Offset -> 0x02249C60
 //		Name   -> Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -56,7 +56,7 @@ void UAchievementBlueprintLibrary::STATIC_GetCachedAchievementProgress(class UOb
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress");
 
-	UAchievementBlueprintLibrary_GetCachedAchievementProgress_Params params;
+	UAchievementBlueprintLibrary_GetCachedAchievementProgress_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.AchievementId = AchievementId;
@@ -76,7 +76,7 @@ void UAchievementBlueprintLibrary::STATIC_GetCachedAchievementProgress(class UOb
 
 
 // Function:
-//		Offset -> 0x02212C80
+//		Offset -> 0x02249980
 //		Name   -> Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementDescription
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -92,7 +92,7 @@ void UAchievementBlueprintLibrary::STATIC_GetCachedAchievementDescription(class 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementDescription");
 
-	UAchievementBlueprintLibrary_GetCachedAchievementDescription_Params params;
+	UAchievementBlueprintLibrary_GetCachedAchievementDescription_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.AchievementId = AchievementId;
@@ -130,7 +130,7 @@ void UAchievementBlueprintLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02212070
+//		Offset -> 0x02248D70
 //		Name   -> Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -141,7 +141,7 @@ class UInAppPurchaseCallbackProxy* UInAppPurchaseCallbackProxy::STATIC_CreatePro
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase");
 
-	UInAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase_Params params;
+	UInAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase_Params params {};
 	params.PlayerController = PlayerController;
 	params.ProductRequest = ProductRequest;
 
@@ -169,7 +169,7 @@ void UInAppPurchaseCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02212160
+//		Offset -> 0x02248E60
 //		Name   -> Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -180,7 +180,7 @@ class UInAppPurchaseQueryCallbackProxy* UInAppPurchaseQueryCallbackProxy::STATIC
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery");
 
-	UInAppPurchaseQueryCallbackProxy_CreateProxyObjectForInAppPurchaseQuery_Params params;
+	UInAppPurchaseQueryCallbackProxy_CreateProxyObjectForInAppPurchaseQuery_Params params {};
 	params.PlayerController = PlayerController;
 	params.ProductIdentifiers = ProductIdentifiers;
 
@@ -208,7 +208,7 @@ void UInAppPurchaseQueryCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02212290
+//		Offset -> 0x02248F90
 //		Name   -> Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -218,7 +218,7 @@ class UInAppPurchaseRestoreCallbackProxy* UInAppPurchaseRestoreCallbackProxy::ST
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore");
 
-	UInAppPurchaseRestoreCallbackProxy_CreateProxyObjectForInAppPurchaseRestore_Params params;
+	UInAppPurchaseRestoreCallbackProxy_CreateProxyObjectForInAppPurchaseRestore_Params params {};
 	params.PlayerController = PlayerController;
 
 	auto flags = fn->FunctionFlags;
@@ -269,7 +269,7 @@ void UIpNetDriver::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02214410
+//		Offset -> 0x0224B110
 //		Name   -> Function OnlineSubsystemUtils.LeaderboardBlueprintLibrary.WriteLeaderboardInteger
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -281,7 +281,7 @@ bool ULeaderboardBlueprintLibrary::STATIC_WriteLeaderboardInteger(class APlayerC
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LeaderboardBlueprintLibrary.WriteLeaderboardInteger");
 
-	ULeaderboardBlueprintLibrary_WriteLeaderboardInteger_Params params;
+	ULeaderboardBlueprintLibrary_WriteLeaderboardInteger_Params params {};
 	params.PlayerController = PlayerController;
 	params.StatName = StatName;
 	params.StatValue = StatValue;
@@ -310,7 +310,7 @@ void ULeaderboardBlueprintLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02211FB0
+//		Offset -> 0x02248CB0
 //		Name   -> Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -321,7 +321,7 @@ class ULeaderboardFlushCallbackProxy* ULeaderboardFlushCallbackProxy::STATIC_Cre
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush");
 
-	ULeaderboardFlushCallbackProxy_CreateProxyObjectForFlush_Params params;
+	ULeaderboardFlushCallbackProxy_CreateProxyObjectForFlush_Params params {};
 	params.PlayerController = PlayerController;
 	params.SessionName = SessionName;
 
@@ -349,7 +349,7 @@ void ULeaderboardFlushCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02212310
+//		Offset -> 0x02249010
 //		Name   -> Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -360,7 +360,7 @@ class ULeaderboardQueryCallbackProxy* ULeaderboardQueryCallbackProxy::STATIC_Cre
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery");
 
-	ULeaderboardQueryCallbackProxy_CreateProxyObjectForIntQuery_Params params;
+	ULeaderboardQueryCallbackProxy_CreateProxyObjectForIntQuery_Params params {};
 	params.PlayerController = PlayerController;
 	params.StatName = StatName;
 
@@ -388,7 +388,7 @@ void ULeaderboardQueryCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02213AE0
+//		Offset -> 0x0224A7E0
 //		Name   -> Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -399,7 +399,7 @@ class ULogoutCallbackProxy* ULogoutCallbackProxy::STATIC_Logout(class UObject* W
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout");
 
-	ULogoutCallbackProxy_Logout_Params params;
+	ULogoutCallbackProxy_Logout_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 
@@ -441,14 +441,14 @@ void AOnlineBeacon::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02211DA0
+//		Offset -> 0x02248AA0
 //		Name   -> Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
 //		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetClient)
 void AOnlineBeaconClient::ClientOnConnected()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected");
 
-	AOnlineBeaconClient_ClientOnConnected_Params params;
+	AOnlineBeaconClient_ClientOnConnected_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -488,7 +488,7 @@ void UPartyBeaconState::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02214090
+//		Offset -> 0x0224AD90
 //		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest
 //		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
@@ -498,7 +498,7 @@ void APartyBeaconClient::ServerUpdateReservationRequest(const struct FString& Se
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest");
 
-	APartyBeaconClient_ServerUpdateReservationRequest_Params params;
+	APartyBeaconClient_ServerUpdateReservationRequest_Params params {};
 	params.SessionId = SessionId;
 	params.ReservationUpdate = ReservationUpdate;
 
@@ -512,7 +512,7 @@ void APartyBeaconClient::ServerUpdateReservationRequest(const struct FString& Se
 
 
 // Function:
-//		Offset -> 0x02213F50
+//		Offset -> 0x0224AC50
 //		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest
 //		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
@@ -522,7 +522,7 @@ void APartyBeaconClient::ServerReservationRequest(const struct FString& SessionI
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest");
 
-	APartyBeaconClient_ServerReservationRequest_Params params;
+	APartyBeaconClient_ServerReservationRequest_Params params {};
 	params.SessionId = SessionId;
 	params.Reservation = Reservation;
 
@@ -536,7 +536,7 @@ void APartyBeaconClient::ServerReservationRequest(const struct FString& SessionI
 
 
 // Function:
-//		Offset -> 0x02213E30
+//		Offset -> 0x0224AB30
 //		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest
 //		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
@@ -545,7 +545,7 @@ void APartyBeaconClient::ServerCancelReservationRequest(const struct FUniqueNetI
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest");
 
-	APartyBeaconClient_ServerCancelReservationRequest_Params params;
+	APartyBeaconClient_ServerCancelReservationRequest_Params params {};
 	params.PartyLeader = PartyLeader;
 
 	auto flags = fn->FunctionFlags;
@@ -558,7 +558,7 @@ void APartyBeaconClient::ServerCancelReservationRequest(const struct FUniqueNetI
 
 
 // Function:
-//		Offset -> 0x02211E60
+//		Offset -> 0x02248B60
 //		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
@@ -567,7 +567,7 @@ void APartyBeaconClient::ClientSendReservationUpdates(int NumRemainingReservatio
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates");
 
-	APartyBeaconClient_ClientSendReservationUpdates_Params params;
+	APartyBeaconClient_ClientSendReservationUpdates_Params params {};
 	params.NumRemainingReservations = NumRemainingReservations;
 
 	auto flags = fn->FunctionFlags;
@@ -580,7 +580,7 @@ void APartyBeaconClient::ClientSendReservationUpdates(int NumRemainingReservatio
 
 
 // Function:
-//		Offset -> 0x02211DE0
+//		Offset -> 0x02248AE0
 //		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
@@ -589,7 +589,7 @@ void APartyBeaconClient::ClientReservationResponse(TEnumAsByte<OnlineSubsystemUt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse");
 
-	APartyBeaconClient_ClientReservationResponse_Params params;
+	APartyBeaconClient_ClientReservationResponse_Params params {};
 	params.ReservationResponse = ReservationResponse;
 
 	auto flags = fn->FunctionFlags;
@@ -614,14 +614,14 @@ void APartyBeaconClient::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02213F00
+//		Offset -> 0x0224AC00
 //		Name   -> Function OnlineSubsystemUtils.TestBeaconClient.ServerPong
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 void ATestBeaconClient::ServerPong()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.TestBeaconClient.ServerPong");
 
-	ATestBeaconClient_ServerPong_Params params;
+	ATestBeaconClient_ServerPong_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -633,14 +633,14 @@ void ATestBeaconClient::ServerPong()
 
 
 // Function:
-//		Offset -> 0x02211DC0
+//		Offset -> 0x02248AC0
 //		Name   -> Function OnlineSubsystemUtils.TestBeaconClient.ClientPing
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 void ATestBeaconClient::ClientPing()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.TestBeaconClient.ClientPing");
 
-	ATestBeaconClient_ClientPing_Params params;
+	ATestBeaconClient_ClientPing_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -716,14 +716,14 @@ void ATestBeaconHost::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02211C00
+//		Offset -> 0x02248900
 //		Name   -> Function OnlineSubsystemUtils.OnlineBlueprintCallProxyBase.Activate
 //		Flags  -> (Native, Public, BlueprintCallable)
 void UOnlineBlueprintCallProxyBase::Activate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.OnlineBlueprintCallProxyBase.Activate");
 
-	UOnlineBlueprintCallProxyBase_Activate_Params params;
+	UOnlineBlueprintCallProxyBase_Activate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -747,7 +747,7 @@ void UOnlineBlueprintCallProxyBase::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02211CE0
+//		Offset -> 0x022489E0
 //		Name   -> Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -758,7 +758,7 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::STATIC_Cac
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements");
 
-	UAchievementQueryCallbackProxy_CacheAchievements_Params params;
+	UAchievementQueryCallbackProxy_CacheAchievements_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 
@@ -774,7 +774,7 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::STATIC_Cac
 
 
 // Function:
-//		Offset -> 0x02211C20
+//		Offset -> 0x02248920
 //		Name   -> Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -785,7 +785,7 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::STATIC_Cac
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions");
 
-	UAchievementQueryCallbackProxy_CacheAchievementDescriptions_Params params;
+	UAchievementQueryCallbackProxy_CacheAchievementDescriptions_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 
@@ -813,7 +813,7 @@ void UAchievementQueryCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02214290
+//		Offset -> 0x0224AF90
 //		Name   -> Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -827,7 +827,7 @@ class UAchievementWriteCallbackProxy* UAchievementWriteCallbackProxy::STATIC_Wri
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress");
 
-	UAchievementWriteCallbackProxy_WriteAchievementProgress_Params params;
+	UAchievementWriteCallbackProxy_WriteAchievementProgress_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.AchievementName = AchievementName;
@@ -858,7 +858,7 @@ void UAchievementWriteCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02211EF0
+//		Offset -> 0x02248BF0
 //		Name   -> Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -869,7 +869,7 @@ class UConnectionCallbackProxy* UConnectionCallbackProxy::STATIC_ConnectToServic
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService");
 
-	UConnectionCallbackProxy_ConnectToService_Params params;
+	UConnectionCallbackProxy_ConnectToService_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 
@@ -897,7 +897,7 @@ void UConnectionCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x022123D0
+//		Offset -> 0x022490D0
 //		Name   -> Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -910,7 +910,7 @@ class UCreateSessionCallbackProxy* UCreateSessionCallbackProxy::STATIC_CreateSes
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession");
 
-	UCreateSessionCallbackProxy_CreateSession_Params params;
+	UCreateSessionCallbackProxy_CreateSession_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.PublicConnections = PublicConnections;
@@ -940,7 +940,7 @@ void UCreateSessionCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02212500
+//		Offset -> 0x02249200
 //		Name   -> Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -951,7 +951,7 @@ class UDestroySessionCallbackProxy* UDestroySessionCallbackProxy::STATIC_Destroy
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession");
 
-	UDestroySessionCallbackProxy_DestroySession_Params params;
+	UDestroySessionCallbackProxy_DestroySession_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 
@@ -979,7 +979,7 @@ void UDestroySessionCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x022125C0
+//		Offset -> 0x022492C0
 //		Name   -> Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -993,7 +993,7 @@ class UEndMatchCallbackProxy* UEndMatchCallbackProxy::STATIC_EndMatch(class UObj
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch");
 
-	UEndMatchCallbackProxy_EndMatch_Params params;
+	UEndMatchCallbackProxy_EndMatch_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.MatchID = MatchID;
@@ -1024,7 +1024,7 @@ void UEndMatchCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x022127C0
+//		Offset -> 0x022494C0
 //		Name   -> Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1036,7 +1036,7 @@ class UEndTurnCallbackProxy* UEndTurnCallbackProxy::STATIC_EndTurn(class UObject
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn");
 
-	UEndTurnCallbackProxy_EndTurn_Params params;
+	UEndTurnCallbackProxy_EndTurn_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.MatchID = MatchID;
@@ -1065,7 +1065,7 @@ void UEndTurnCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02213860
+//		Offset -> 0x0224A560
 //		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1075,7 +1075,7 @@ struct FString UFindSessionsCallbackProxy::STATIC_GetServerName(const struct FBl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName");
 
-	UFindSessionsCallbackProxy_GetServerName_Params params;
+	UFindSessionsCallbackProxy_GetServerName_Params params {};
 	params.Result = Result;
 
 	auto flags = fn->FunctionFlags;
@@ -1090,7 +1090,7 @@ struct FString UFindSessionsCallbackProxy::STATIC_GetServerName(const struct FBl
 
 
 // Function:
-//		Offset -> 0x022135C0
+//		Offset -> 0x0224A2C0
 //		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1100,7 +1100,7 @@ int UFindSessionsCallbackProxy::STATIC_GetPingInMs(const struct FBlueprintSessio
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs");
 
-	UFindSessionsCallbackProxy_GetPingInMs_Params params;
+	UFindSessionsCallbackProxy_GetPingInMs_Params params {};
 	params.Result = Result;
 
 	auto flags = fn->FunctionFlags;
@@ -1115,7 +1115,7 @@ int UFindSessionsCallbackProxy::STATIC_GetPingInMs(const struct FBlueprintSessio
 
 
 // Function:
-//		Offset -> 0x02213360
+//		Offset -> 0x0224A060
 //		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1125,7 +1125,7 @@ int UFindSessionsCallbackProxy::STATIC_GetMaxPlayers(const struct FBlueprintSess
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers");
 
-	UFindSessionsCallbackProxy_GetMaxPlayers_Params params;
+	UFindSessionsCallbackProxy_GetMaxPlayers_Params params {};
 	params.Result = Result;
 
 	auto flags = fn->FunctionFlags;
@@ -1140,7 +1140,7 @@ int UFindSessionsCallbackProxy::STATIC_GetMaxPlayers(const struct FBlueprintSess
 
 
 // Function:
-//		Offset -> 0x02213100
+//		Offset -> 0x02249E00
 //		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1150,7 +1150,7 @@ int UFindSessionsCallbackProxy::STATIC_GetCurrentPlayers(const struct FBlueprint
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers");
 
-	UFindSessionsCallbackProxy_GetCurrentPlayers_Params params;
+	UFindSessionsCallbackProxy_GetCurrentPlayers_Params params {};
 	params.Result = Result;
 
 	auto flags = fn->FunctionFlags;
@@ -1165,7 +1165,7 @@ int UFindSessionsCallbackProxy::STATIC_GetCurrentPlayers(const struct FBlueprint
 
 
 // Function:
-//		Offset -> 0x02212940
+//		Offset -> 0x02249640
 //		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1178,7 +1178,7 @@ class UFindSessionsCallbackProxy* UFindSessionsCallbackProxy::STATIC_FindSession
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions");
 
-	UFindSessionsCallbackProxy_FindSessions_Params params;
+	UFindSessionsCallbackProxy_FindSessions_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.MaxResults = MaxResults;
@@ -1208,7 +1208,7 @@ void UFindSessionsCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02212A70
+//		Offset -> 0x02249770
 //		Name   -> Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1223,7 +1223,7 @@ class UFindTurnBasedMatchCallbackProxy* UFindTurnBasedMatchCallbackProxy::STATIC
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch");
 
-	UFindTurnBasedMatchCallbackProxy_FindTurnBasedMatch_Params params;
+	UFindTurnBasedMatchCallbackProxy_FindTurnBasedMatch_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.MinPlayers = MinPlayers;
@@ -1255,7 +1255,7 @@ void UFindTurnBasedMatchCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02213980
+//		Offset -> 0x0224A680
 //		Name   -> Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1267,7 +1267,7 @@ class UJoinSessionCallbackProxy* UJoinSessionCallbackProxy::STATIC_JoinSession(c
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession");
 
-	UJoinSessionCallbackProxy_JoinSession_Params params;
+	UJoinSessionCallbackProxy_JoinSession_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.SearchResult = SearchResult;
@@ -1296,7 +1296,7 @@ void UJoinSessionCallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02213BA0
+//		Offset -> 0x0224A8A0
 //		Name   -> Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1310,7 +1310,7 @@ class UQuitMatchCallbackProxy* UQuitMatchCallbackProxy::STATIC_QuitMatch(class U
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch");
 
-	UQuitMatchCallbackProxy_QuitMatch_Params params;
+	UQuitMatchCallbackProxy_QuitMatch_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.MatchID = MatchID;
@@ -1353,7 +1353,7 @@ void UOnlineSessionClient::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x022141D0
+//		Offset -> 0x0224AED0
 //		Name   -> Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1364,7 +1364,7 @@ class UShowLoginUICallbackProxy* UShowLoginUICallbackProxy::STATIC_ShowExternalL
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI");
 
-	UShowLoginUICallbackProxy_ShowExternalLoginUI_Params params;
+	UShowLoginUICallbackProxy_ShowExternalLoginUI_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.InPlayerController = InPlayerController;
 
@@ -1392,7 +1392,7 @@ void UShowLoginUICallbackProxy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02213D40
+//		Offset -> 0x0224AA40
 //		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.RegisterTurnBasedMatchInterfaceObject
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1403,7 +1403,7 @@ void UTurnBasedBlueprintLibrary::STATIC_RegisterTurnBasedMatchInterfaceObject(cl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.RegisterTurnBasedMatchInterfaceObject");
 
-	UTurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject_Params params;
+	UTurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.Object = Object;
@@ -1418,7 +1418,7 @@ void UTurnBasedBlueprintLibrary::STATIC_RegisterTurnBasedMatchInterfaceObject(cl
 
 
 // Function:
-//		Offset -> 0x022136A0
+//		Offset -> 0x0224A3A0
 //		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetPlayerDisplayName
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1431,7 +1431,7 @@ void UTurnBasedBlueprintLibrary::STATIC_GetPlayerDisplayName(class UObject* Worl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetPlayerDisplayName");
 
-	UTurnBasedBlueprintLibrary_GetPlayerDisplayName_Params params;
+	UTurnBasedBlueprintLibrary_GetPlayerDisplayName_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.MatchID = MatchID;
@@ -1450,7 +1450,7 @@ void UTurnBasedBlueprintLibrary::STATIC_GetPlayerDisplayName(class UObject* Worl
 
 
 // Function:
-//		Offset -> 0x02213440
+//		Offset -> 0x0224A140
 //		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetMyPlayerIndex
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1462,7 +1462,7 @@ void UTurnBasedBlueprintLibrary::STATIC_GetMyPlayerIndex(class UObject* WorldCon
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetMyPlayerIndex");
 
-	UTurnBasedBlueprintLibrary_GetMyPlayerIndex_Params params;
+	UTurnBasedBlueprintLibrary_GetMyPlayerIndex_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.MatchID = MatchID;
@@ -1480,7 +1480,7 @@ void UTurnBasedBlueprintLibrary::STATIC_GetMyPlayerIndex(class UObject* WorldCon
 
 
 // Function:
-//		Offset -> 0x022131E0
+//		Offset -> 0x02249EE0
 //		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetIsMyTurn
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1492,7 +1492,7 @@ void UTurnBasedBlueprintLibrary::STATIC_GetIsMyTurn(class UObject* WorldContextO
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetIsMyTurn");
 
-	UTurnBasedBlueprintLibrary_GetIsMyTurn_Params params;
+	UTurnBasedBlueprintLibrary_GetIsMyTurn_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.PlayerController = PlayerController;
 	params.MatchID = MatchID;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -41,14 +41,14 @@ void AAsymmetricClientObject::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0025EDA0
+//		Offset -> 0x0026C3A0
 //		Name   -> Function AsymmetricClientServerObjectsFramework.AsymmetricObjectServerManager.OnRep_AsymmetricObjectAsset
 //		Flags  -> (Final, RequiredAPI, Native, Private)
 void AAsymmetricObjectServerManager::OnRep_AsymmetricObjectAsset()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AsymmetricClientServerObjectsFramework.AsymmetricObjectServerManager.OnRep_AsymmetricObjectAsset");
 
-	AAsymmetricObjectServerManager_OnRep_AsymmetricObjectAsset_Params params;
+	AAsymmetricObjectServerManager_OnRep_AsymmetricObjectAsset_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

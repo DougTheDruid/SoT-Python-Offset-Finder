@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -304,6 +304,11 @@ struct UAthenaCheatManager_ToggleAttributeOverride_Params
 {
 };
 
+// Function AthenaCheat.AthenaCheatManager.TestForceArchiveAsyncPoolCanaryCrash
+struct UAthenaCheatManager_TestForceArchiveAsyncPoolCanaryCrash_Params
+{
+};
+
 // Function AthenaCheat.AthenaCheatManager.TestCrashDumpCreationOnRunnableThread
 struct UAthenaCheatManager_TestCrashDumpCreationOnRunnableThread_Params
 {
@@ -456,6 +461,12 @@ struct UAthenaCheatManager_TeleportActorToTeleportLocationActor_Params
 	struct FString                                     TeleportLocationActorIdString;                             // 0x0010(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 
+// Function AthenaCheat.AthenaCheatManager.TeleportActorToPlayerBuriedDigSite
+struct UAthenaCheatManager_TeleportActorToPlayerBuriedDigSite_Params
+{
+	struct FString                                     ActorIdString;                                             // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+
 // Function AthenaCheat.AthenaCheatManager.TeleportActorToLocation
 struct UAthenaCheatManager_TeleportActorToLocation_Params
 {
@@ -477,6 +488,7 @@ struct UAthenaCheatManager_TeleportActorToIsland_Params
 struct UAthenaCheatManager_TeleportActorToDigSite_Params
 {
 	struct FString                                     ActorIdString;                                             // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                               WasBuriedByPlayer;                                         // 0x0010(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function AthenaCheat.AthenaCheatManager.TeleportActorToActorWithOffset
@@ -859,6 +871,12 @@ struct UAthenaCheatManager_SpawnFirework_Params
 struct UAthenaCheatManager_SpawnCursedCannonball_Params
 {
 	struct FString                                     CannonballTypeString;                                      // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+
+// Function AthenaCheat.AthenaCheatManager.SpawnContextualPrompt
+struct UAthenaCheatManager_SpawnContextualPrompt_Params
+{
+	struct FString                                     PromptAccessKey;                                           // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 
 // Function AthenaCheat.AthenaCheatManager.SpawnCollectorsChestOfType
@@ -1285,6 +1303,12 @@ struct UAthenaCheatManager_SetPlayerVisibleToAI_Params
 {
 };
 
+// Function AthenaCheat.AthenaCheatManager.SetPlayerMaxTicks
+struct UAthenaCheatManager_SetPlayerMaxTicks_Params
+{
+	int                                                InMaxTicksPerFrame;                                        // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
 // Function AthenaCheat.AthenaCheatManager.SetPlayerInvisibleToAI
 struct UAthenaCheatManager_SetPlayerInvisibleToAI_Params
 {
@@ -1346,6 +1370,18 @@ struct UAthenaCheatManager_SetMastsFullyDamaged_Params
 struct UAthenaCheatManager_SetKnockbackDisabled_Params
 {
 	bool                                               Disabled;                                                  // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function AthenaCheat.AthenaCheatManager.SetIsTinSession
+struct UAthenaCheatManager_SetIsTinSession_Params
+{
+	bool                                               InIsCaptainedSession;                                      // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function AthenaCheat.AthenaCheatManager.SetIsTinOwner
+struct UAthenaCheatManager_SetIsTinOwner_Params
+{
+	bool                                               InIsCaptain;                                               // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function AthenaCheat.AthenaCheatManager.SetIdleDisconnectEnabled
@@ -1592,6 +1628,11 @@ struct UAthenaCheatManager_SchedulerInitAggroGhostShip_Params
 struct UAthenaCheatManager_SchedulerAdvance_Params
 {
 	float                                              Time;                                                      // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function AthenaCheat.AthenaCheatManager.SaveMyShip
+struct UAthenaCheatManager_SaveMyShip_Params
+{
 };
 
 // Function AthenaCheat.AthenaCheatManager.SailShip
@@ -1996,6 +2037,11 @@ struct UAthenaCheatManager_LocallyDisableTutorial_Params
 {
 };
 
+// Function AthenaCheat.AthenaCheatManager.LoadMyShip
+struct UAthenaCheatManager_LoadMyShip_Params
+{
+};
+
 // Function AthenaCheat.AthenaCheatManager.LightLocalBraziers
 struct UAthenaCheatManager_LightLocalBraziers_Params
 {
@@ -2233,6 +2279,80 @@ struct UAthenaCheatManager_IgniteClosestShip_Params
 
 // Function AthenaCheat.AthenaCheatManager.IgniteAllShipFires
 struct UAthenaCheatManager_IgniteAllShipFires_Params
+{
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsToggleOnScreenStatus
+struct UAthenaCheatManager_HitRegSnapshotsToggleOnScreenStatus_Params
+{
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsSetDisplaySnapshots
+struct UAthenaCheatManager_HitRegSnapshotsSetDisplaySnapshots_Params
+{
+	bool                                               ShowSnapshots;                                             // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               AffectAllSnapshots;                                        // 0x0001(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               LocalClientOnly;                                           // 0x0002(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsSetDisplayServerData
+struct UAthenaCheatManager_HitRegSnapshotsSetDisplayServerData_Params
+{
+	bool                                               ShowServerData;                                            // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               AffectAllSnapshots;                                        // 0x0001(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               LocalClientOnly;                                           // 0x0002(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsSetDisplayDetailedExplanations
+struct UAthenaCheatManager_HitRegSnapshotsSetDisplayDetailedExplanations_Params
+{
+	bool                                               ShowExplanations;                                          // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               AffectAllSnapshots;                                        // 0x0001(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               LocalClientOnly;                                           // 0x0002(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsSetDisplayAttackingClientData
+struct UAthenaCheatManager_HitRegSnapshotsSetDisplayAttackingClientData_Params
+{
+	bool                                               ShowClientData;                                            // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               AffectAllSnapshots;                                        // 0x0001(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               LocalClientOnly;                                           // 0x0002(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsSetDisagreementModeToComponents
+struct UAthenaCheatManager_HitRegSnapshotsSetDisagreementModeToComponents_Params
+{
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsSetDisagreementModeToAllShots
+struct UAthenaCheatManager_HitRegSnapshotsSetDisagreementModeToAllShots_Params
+{
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsSetDisagreementModeToActors
+struct UAthenaCheatManager_HitRegSnapshotsSetDisagreementModeToActors_Params
+{
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsResetVisibilitySettingsToDefault
+struct UAthenaCheatManager_HitRegSnapshotsResetVisibilitySettingsToDefault_Params
+{
+	bool                                               AffectAllSnapshots;                                        // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               LocalClientOnly;                                           // 0x0001(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsEnableSystem
+struct UAthenaCheatManager_HitRegSnapshotsEnableSystem_Params
+{
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsDisableSystem
+struct UAthenaCheatManager_HitRegSnapshotsDisableSystem_Params
+{
+};
+
+// Function AthenaCheat.AthenaCheatManager.HitRegSnapshotsDestroyAll
+struct UAthenaCheatManager_HitRegSnapshotsDestroyAll_Params
 {
 };
 

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_ShadowAIFormComponent.BP_ShadowAIFormComponent_C
-// 0x0000 (FullSize[0x0260] - InheritedSize[0x0260])
+// 0x0000 (FullSize[0x0268] - InheritedSize[0x0268])
 class UBP_ShadowAIFormComponent_C : public UShadowAIFormComponent
 {
 public:

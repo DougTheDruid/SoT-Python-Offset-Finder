@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetCompanyTutorials
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -29,7 +29,7 @@ void UBP_CT_TutorialProgress_C::GetCompanyTutorials(const struct FName& CompanyN
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetCompanyTutorials");
 
-	UBP_CT_TutorialProgress_C_GetCompanyTutorials_Params params;
+	UBP_CT_TutorialProgress_C_GetCompanyTutorials_Params params {};
 	params.CompanyName = CompanyName;
 
 	auto flags = fn->FunctionFlags;
@@ -44,7 +44,7 @@ void UBP_CT_TutorialProgress_C::GetCompanyTutorials(const struct FName& CompanyN
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetOrderOfSoulsTutorials
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -53,7 +53,7 @@ void UBP_CT_TutorialProgress_C::GetOrderOfSoulsTutorials(TArray<class UBP_CT_Voy
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetOrderOfSoulsTutorials");
 
-	UBP_CT_TutorialProgress_C_GetOrderOfSoulsTutorials_Params params;
+	UBP_CT_TutorialProgress_C_GetOrderOfSoulsTutorials_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -67,7 +67,7 @@ void UBP_CT_TutorialProgress_C::GetOrderOfSoulsTutorials(TArray<class UBP_CT_Voy
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetMerchantAllianceTutorials
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -76,7 +76,7 @@ void UBP_CT_TutorialProgress_C::GetMerchantAllianceTutorials(TArray<class UBP_CT
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetMerchantAllianceTutorials");
 
-	UBP_CT_TutorialProgress_C_GetMerchantAllianceTutorials_Params params;
+	UBP_CT_TutorialProgress_C_GetMerchantAllianceTutorials_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -90,7 +90,7 @@ void UBP_CT_TutorialProgress_C::GetMerchantAllianceTutorials(TArray<class UBP_CT
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetGoldhoarderTutorials
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -99,7 +99,7 @@ void UBP_CT_TutorialProgress_C::GetGoldhoarderTutorials(TArray<class UBP_CT_Voya
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.GetGoldhoarderTutorials");
 
-	UBP_CT_TutorialProgress_C_GetGoldhoarderTutorials_Params params;
+	UBP_CT_TutorialProgress_C_GetGoldhoarderTutorials_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -113,7 +113,7 @@ void UBP_CT_TutorialProgress_C::GetGoldhoarderTutorials(TArray<class UBP_CT_Voya
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.AreAllTutorialsOnState
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -123,7 +123,7 @@ void UBP_CT_TutorialProgress_C::AreAllTutorialsOnState(TEnumAsByte<TutorialVoyag
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.AreAllTutorialsOnState");
 
-	UBP_CT_TutorialProgress_C_AreAllTutorialsOnState_Params params;
+	UBP_CT_TutorialProgress_C_AreAllTutorialsOnState_Params params {};
 	params.QueryVoyageState = QueryVoyageState;
 
 	auto flags = fn->FunctionFlags;
@@ -138,7 +138,7 @@ void UBP_CT_TutorialProgress_C::AreAllTutorialsOnState(TEnumAsByte<TutorialVoyag
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.IsAnyTutorialOnState
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -148,7 +148,7 @@ void UBP_CT_TutorialProgress_C::IsAnyTutorialOnState(TEnumAsByte<TutorialVoyageI
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.IsAnyTutorialOnState");
 
-	UBP_CT_TutorialProgress_C_IsAnyTutorialOnState_Params params;
+	UBP_CT_TutorialProgress_C_IsAnyTutorialOnState_Params params {};
 	params.QueryVoyageState = QueryVoyageState;
 
 	auto flags = fn->FunctionFlags;
@@ -163,7 +163,7 @@ void UBP_CT_TutorialProgress_C::IsAnyTutorialOnState(TEnumAsByte<TutorialVoyageI
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.FindTutorialProgressObject
 //		Flags  -> (Private, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -173,7 +173,7 @@ void UBP_CT_TutorialProgress_C::FindTutorialProgressObject(const struct FText& V
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.FindTutorialProgressObject");
 
-	UBP_CT_TutorialProgress_C_FindTutorialProgressObject_Params params;
+	UBP_CT_TutorialProgress_C_FindTutorialProgressObject_Params params {};
 	params.VoyageName = VoyageName;
 
 	auto flags = fn->FunctionFlags;
@@ -188,7 +188,7 @@ void UBP_CT_TutorialProgress_C::FindTutorialProgressObject(const struct FText& V
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.CreateTutorialProgressTracker
 //		Flags  -> (Private, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -201,7 +201,7 @@ void UBP_CT_TutorialProgress_C::CreateTutorialProgressTracker(class UClass* Voya
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.CreateTutorialProgressTracker");
 
-	UBP_CT_TutorialProgress_C_CreateTutorialProgressTracker_Params params;
+	UBP_CT_TutorialProgress_C_CreateTutorialProgressTracker_Params params {};
 	params.VoyageProposalDesc = VoyageProposalDesc;
 	params.TaleRankDesc = TaleRankDesc;
 	params.ExclusionRank = ExclusionRank;
@@ -219,14 +219,14 @@ void UBP_CT_TutorialProgress_C::CreateTutorialProgressTracker(class UClass* Voya
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Start
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_CT_TutorialProgress_C::Start()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Start");
 
-	UBP_CT_TutorialProgress_C_Start_Params params;
+	UBP_CT_TutorialProgress_C_Start_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -237,7 +237,7 @@ void UBP_CT_TutorialProgress_C::Start()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Change Voyage Progress
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -247,7 +247,7 @@ void UBP_CT_TutorialProgress_C::Change_Voyage_Progress(const struct FText& Voyag
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.Change Voyage Progress");
 
-	UBP_CT_TutorialProgress_C_Change_Voyage_Progress_Params params;
+	UBP_CT_TutorialProgress_C_Change_Voyage_Progress_Params params {};
 	params.VoyageName = VoyageName;
 	params.New_Progress_State = New_Progress_State;
 
@@ -260,7 +260,7 @@ void UBP_CT_TutorialProgress_C::Change_Voyage_Progress(const struct FText& Voyag
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.ExecuteUbergraph_BP_CT_TutorialProgress
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -269,7 +269,7 @@ void UBP_CT_TutorialProgress_C::ExecuteUbergraph_BP_CT_TutorialProgress(int Entr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_TutorialProgress.BP_CT_TutorialProgress_C.ExecuteUbergraph_BP_CT_TutorialProgress");
 
-	UBP_CT_TutorialProgress_C_ExecuteUbergraph_BP_CT_TutorialProgress_Params params;
+	UBP_CT_TutorialProgress_C_ExecuteUbergraph_BP_CT_TutorialProgress_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

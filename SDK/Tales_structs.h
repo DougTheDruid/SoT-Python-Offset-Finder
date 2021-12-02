@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -65,49 +65,6 @@ struct FQuestVariableAny : public FQuestVariable
 
 };
 
-// ScriptStruct Tales.QuestVariableBountyTargetArray
-// 0x0000 (0x0010 - 0x0010)
-struct FQuestVariableBountyTargetArray : public FQuestVariable
-{
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct Tales.TaleQuestDeliverableItem
-// 0x0040
-struct FTaleQuestDeliverableItem
-{
-	struct FText                                       Name;                                                      // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH (Edit, BlueprintVisible)
-	unsigned char                                      UnknownData_TJAR[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	class UTexture*                                    Icon;                                                      // 0x0038(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct Tales.QuestVariableMerchantItemArray
-// 0x0000 (0x0010 - 0x0010)
-struct FQuestVariableMerchantItemArray : public FQuestVariable
-{
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct Tales.QuestVariableMerchantItem
-// 0x0000 (0x0010 - 0x0010)
-struct FQuestVariableMerchantItem : public FQuestVariable
-{
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
 // ScriptStruct Tales.IslandTypeWeights
 // 0x0014
 struct FIslandTypeWeights
@@ -127,7 +84,7 @@ struct FIslandTypeWeights
 // 0x0001
 struct FSplineFootprintPathTool
 {
-	unsigned char                                      UnknownData_M2MD[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5P2Q[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -139,7 +96,7 @@ struct FSplineFootprintPathTool
 struct FTaleQuestCargoRunContractItem
 {
 	class UClass*                                      ItemToCollect;                                             // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_HDA1[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EMHU[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -151,7 +108,7 @@ struct FTaleQuestCargoRunContractItem
 struct FTaleQuestDeliveryRequest
 {
 	int                                                Id;                                                        // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_J0WZ[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_F2KG[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FMerchantContractItemDesc                   Item;                                                      // 0x0008(0x0028) (Edit, BlueprintVisible)
 	int                                                NumToDeliver;                                              // 0x0030(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                NumToAllocate;                                             // 0x0034(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -166,7 +123,7 @@ struct FTaleQuestDeliveryRequest
 struct FTrackedActorData
 {
 	class AActor*                                      Actor;                                                     // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_1YCA[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_2ALE[0x8];                                     // 0x0008(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -179,8 +136,8 @@ struct FCriticalActorDelegateData
 {
 	class AActor*                                      CriticalActor;                                             // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FText                                       FailureMessage;                                            // 0x0008(0x0018) ELEMENT_SIZE_MISMATCH
-	unsigned char                                      UnknownData_IJQA[0x20];                                    // 0x0008(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	unsigned char                                      UnknownData_A0IP[0x8];                                     // 0x0040(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KEV1[0x20];                                    // 0x0008(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_SGD6[0x8];                                     // 0x0040(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -193,7 +150,7 @@ struct FPhasedActor
 {
 	class AActor*                                      MapActor;                                                  // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                      Actor;                                                     // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_8EAC[0x10];                                    // 0x0010(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BGZ5[0x10];                                    // 0x0010(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -207,7 +164,7 @@ struct FPhasedItem
 	class AItemProxy*                                  ItemProxy;                                                 // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AItemInfo*                                   ItemInfo;                                                  // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               Tracked;                                                   // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_E9TZ[0x17];                                    // 0x0011(0x0017) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PUK0[0x17];                                    // 0x0011(0x0017) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -215,16 +172,17 @@ struct FPhasedItem
 };
 
 // ScriptStruct Tales.SnapshottedActorData
-// 0x0060
+// 0x0068
 struct FSnapshottedActorData
 {
 	unsigned char                                      Instagator[0x10];                                          // 0x0000(0x0010) UNKNOWN PROPERTY: InterfaceProperty Tales.SnapshottedActorData.Instagator
 	struct FGuid                                       SnapshotID;                                                // 0x0010(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               ActorWasCritical;                                          // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               ActorWasTracked;                                           // 0x0021(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_9J6X[0x6];                                     // 0x0022(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_BZTC[0x6];                                     // 0x0022(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FText                                       FailureMessage;                                            // 0x0028(0x0018) ELEMENT_SIZE_MISMATCH
-	unsigned char                                      UnknownData_LW20[0x20];                                    // 0x0022(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_D9SX[0x20];                                    // 0x0022(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	class AItemInfo*                                   StoredItemInfo;                                            // 0x0060(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -303,6 +261,49 @@ struct FQuestVariablePrioritisedPrompt : public FQuestVariable
 
 };
 
+// ScriptStruct Tales.QuestVariableBountyTargetArray
+// 0x0000 (0x0010 - 0x0010)
+struct FQuestVariableBountyTargetArray : public FQuestVariable
+{
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct Tales.TaleQuestDeliverableItem
+// 0x0040
+struct FTaleQuestDeliverableItem
+{
+	struct FText                                       Name;                                                      // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH (Edit, BlueprintVisible)
+	unsigned char                                      UnknownData_F6VN[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	class UTexture*                                    Icon;                                                      // 0x0038(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct Tales.QuestVariableMerchantItemArray
+// 0x0000 (0x0010 - 0x0010)
+struct FQuestVariableMerchantItemArray : public FQuestVariable
+{
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct Tales.QuestVariableMerchantItem
+// 0x0000 (0x0010 - 0x0010)
+struct FQuestVariableMerchantItem : public FQuestVariable
+{
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
 // ScriptStruct Tales.TaleActorSpawnParameters
 // 0x0003
 struct FTaleActorSpawnParameters
@@ -316,19 +317,6 @@ struct FTaleActorSpawnParameters
 
 };
 
-// ScriptStruct Tales.StepBountyTargetDesc
-// 0x0040
-struct FStepBountyTargetDesc
-{
-	struct FText                                       Name;                                                      // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH (Edit, BlueprintVisible)
-	unsigned char                                      UnknownData_OV26[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	class UTexture*                                    Portrait;                                                  // 0x0038(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
 // ScriptStruct Tales.TaleQuestDesc
 // 0x0058 (0x0080 - 0x0028)
 struct FTaleQuestDesc : public FQuestDesc
@@ -336,11 +324,11 @@ struct FTaleQuestDesc : public FQuestDesc
 	class UTaleQuestStepDesc*                          Root;                                                      // 0x0028(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                     Definition;                                                // 0x0030(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FText                                       TaleFailMessage;                                           // 0x0038(0x0018) ELEMENT_SIZE_MISMATCH
-	unsigned char                                      UnknownData_DK9O[0x20];                                    // 0x0038(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_NABL[0x20];                                    // 0x0038(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FName                                       TaleFailBannerTag;                                         // 0x0070(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               ShouldFireStartTallTaleTrackedObjective;                   // 0x0078(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               Development;                                               // 0x0079(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_8AS7[0x6];                                     // 0x007A(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZGQ7[0x6];                                     // 0x007A(0x0006) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -364,7 +352,7 @@ struct FTaleQuestToggledDefinition
 struct FCriticalActorWrapper
 {
 	class AActor*                                      CriticalActor;                                             // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_9Y7Z[0x38];                                    // 0x0008(0x0038) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_E36M[0x38];                                    // 0x0008(0x0038) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -405,7 +393,7 @@ struct FQuestVariableClassArray : public FQuestVariable
 // 0x0020
 struct FParticpantToolGroup
 {
-	unsigned char                                      UnknownData_YTH4[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B6O9[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -457,7 +445,7 @@ struct FActorSpawnedAutomationEvent
 // 0x0001
 struct FEventSpawnedTallTaleQuestItem
 {
-	unsigned char                                      UnknownData_ZKWR[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_HG3L[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -475,12 +463,23 @@ struct FTaleQuestSelectorServiceSeedSetTelemetryEvent
 
 };
 
+// ScriptStruct Tales.PlaySequencerAutomationEvent
+// 0x0018
+struct FPlaySequencerAutomationEvent
+{
+	unsigned char                                      UnknownData_JMF6[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
 // ScriptStruct Tales.StepMerchantItemDesc
 // 0x0040
 struct FStepMerchantItemDesc
 {
 	struct FText                                       Name;                                                      // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH (Edit, BlueprintVisible)
-	unsigned char                                      UnknownData_Y4C5[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_91EW[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	class UTexture*                                    Icon;                                                      // 0x0038(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -534,6 +533,19 @@ struct FTaleQuestContextInvalidTelemetryEvent
 {
 	struct FName                                       StepType;                                                  // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       Tale;                                                      // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct Tales.StepBountyTargetDesc
+// 0x0040
+struct FStepBountyTargetDesc
+{
+	struct FText                                       Name;                                                      // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH (Edit, BlueprintVisible)
+	unsigned char                                      UnknownData_GBBR[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	class UTexture*                                    Portrait;                                                  // 0x0038(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();

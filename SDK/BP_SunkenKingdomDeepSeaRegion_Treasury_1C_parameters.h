@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -18,11 +18,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Parameters
 //---------------------------------------------------------------------------
-
-// Function BP_SunkenKingdomDeepSeaRegion_Treasury_1C.BP_SunkenKingdomDeepSeaRegion_Treasury_1C_C.UserConstructionScript
-struct ABP_SunkenKingdomDeepSeaRegion_Treasury_1C_C_UserConstructionScript_Params
-{
-};
 
 }
 

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -33,7 +33,7 @@ public:
 	class USceneComponent*                             SharedRoot;                                                // 0x04A8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
 	float                                              FadeCurve_Opacity_D7ECDDBE4184BCE83B3BD58190CD98C7;        // 0x04B0(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Engine_ETimelineDirection>             FadeCurve__Direction_D7ECDDBE4184BCE83B3BD58190CD98C7;     // 0x04B4(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_0YML[0x3];                                     // 0x04B5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_QN8R[0x3];                                     // 0x04B5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UTimelineComponent*                          FadeCurve;                                                 // 0x04B8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               ShimmerIsVisible;                                          // 0x04C0(0x0001) (Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 

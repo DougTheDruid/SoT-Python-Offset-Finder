@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -78,7 +78,7 @@ enum class Animation_ECustomAnimationMontageType : uint8_t
 // 0x0060
 struct FLimbIK
 {
-	unsigned char                                      UnknownData_SMNB[0x60];                                    // 0x0000(0x0060) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_83UB[0x60];                                    // 0x0000(0x0060) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -93,12 +93,12 @@ struct FCharacterAnimationIKUpdateParams
 	float                                              TranslationStrength;                                       // 0x0004(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              RotationStrength;                                          // 0x0008(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                     Location;                                                  // 0x000C(0x000C) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_24F8[0x8];                                     // 0x0018(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7VYE[0x8];                                     // 0x0018(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FQuat                                       Orientation;                                               // 0x0020(0x0010) (BlueprintVisible, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Engine_EHIKEffectorSpace>              EffectorSpace;                                             // 0x0030(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_Z3OC[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_HRKO[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FName                                       ParentBone;                                                // 0x0034(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_D9TX[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EA3A[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -109,7 +109,7 @@ struct FCharacterAnimationIKUpdateParams
 // 0x0018
 struct FAnimDataEntryStructWrapper
 {
-	unsigned char                                      UnknownData_1IBX[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3V43[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -133,7 +133,7 @@ struct FAnimationDataStoreEntry
 // 0x0040
 struct FAnimationDataStoreLoadingEntry
 {
-	unsigned char                                      UnknownData_I4XZ[0x38];                                    // 0x0000(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MTOJ[0x38];                                    // 0x0000(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      AnimDataId;                                                // 0x0038(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -160,7 +160,7 @@ struct FAnimationDataStoreAssetWeakReferenceEntry
 {
 	class UClass*                                      AnimDataId;                                                // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	TAssetPtr<class UClass>                            AnimData;                                                  // 0x0008(0x001C) ELEMENT_SIZE_MISMATCH (Edit, UObjectWrapper, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_FO1Z[0x4];                                     // 0x0008(0x0004) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_0RSW[0x4];                                     // 0x0008(0x0004) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 
 	void AfterRead();
 	void BeforeDelete();
@@ -259,7 +259,7 @@ struct FActorVelocityData
 	struct FVector                                     ActorsVelocityVector;                                      // 0x0000(0x000C) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                              ActorSpeed;                                                // 0x000C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               IsCharacterMoving;                                         // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_LYNK[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_56PL[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              WantedMovementSpeed;                                       // 0x0014(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -272,18 +272,18 @@ struct FActorVelocityData
 struct FTransformBlendCurve
 {
 	bool                                               UseLocationCurve;                                          // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_E4MB[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_NKHY[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FRuntimeVectorCurve                         LocationCurve;                                             // 0x0008(0x0170) (Edit)
 	bool                                               UseRotationCurve;                                          // 0x0178(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_JI4X[0x7];                                     // 0x0179(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_3XOA[0x7];                                     // 0x0179(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FRuntimeVectorCurve                         RotationCurve;                                             // 0x0180(0x0170) (Edit)
 	bool                                               UseScaleCurve;                                             // 0x02F0(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_ZEVZ[0x7];                                     // 0x02F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_IT57[0x7];                                     // 0x02F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FRuntimeVectorCurve                         ScaleCurve;                                                // 0x02F8(0x0170) (Edit)
-	unsigned char                                      UnknownData_VEXJ[0x8];                                     // 0x0468(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JVUW[0x8];                                     // 0x0468(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FTransform                                  SourceTransform;                                           // 0x0470(0x0030) (Edit, IsPlainOldData, NoDestructor)
 	struct FTransform                                  TargetTransform;                                           // 0x04A0(0x0030) (Edit, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_WFRO[0x30];                                    // 0x04D0(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RONV[0x30];                                    // 0x04D0(0x0030) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -296,7 +296,7 @@ struct FWeightedAnimationData
 {
 	struct FStringAssetReference                       Animation;                                                 // 0x0000(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	float                                              Weighting;                                                 // 0x0010(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_WZ22[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MGAV[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -310,7 +310,7 @@ struct FDockableInfo
 	struct FName                                       SocketName;                                                // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                             SceneComponent;                                            // 0x0008(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<Athena_EDockableSocketOverlapUpdates>  ShouldOverlapsUpdateOnParentUpdate;                        // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_XRC7[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RP00[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -366,7 +366,7 @@ struct FEventCosmeticItemSpawned
 // 0x0001
 struct FEventAnimationHappyReact
 {
-	unsigned char                                      UnknownData_CNCM[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_X7MT[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -377,7 +377,7 @@ struct FEventAnimationHappyReact
 // 0x0001
 struct FEventHitReactAnimationFinished
 {
-	unsigned char                                      UnknownData_3RXK[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_GM6Q[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -391,7 +391,7 @@ struct FEventHitReactAnimationRequested
 	struct FVector                                     HitNormal;                                                 // 0x0000(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                     HitVelocity;                                               // 0x000C(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<Athena_ECharacterHitReactionAnimType>  ReactionAnimType;                                          // 0x0018(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_YID2[0x3];                                     // 0x0019(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EOCS[0x3];                                     // 0x0019(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -406,7 +406,7 @@ struct FHitReactionAnimationState
 	float                                              AdditiveBlend;                                             // 0x0004(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<Athena_ECharacterHitReactionAnimType>  ReactType;                                                 // 0x0008(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               ActivateNewHitReact;                                       // 0x0009(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_7NPV[0x1E];                                    // 0x000A(0x001E) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RKZ9[0x1E];                                    // 0x000A(0x001E) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -430,11 +430,11 @@ struct FAnimationLookAtParams
 // 0x0098
 struct FAnimationLookAt
 {
-	unsigned char                                      UnknownData_H3UK[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_H4UI[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FAnimationLookAtParams                      Params;                                                    // 0x0008(0x000C) (Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FVector                                     LookAtTarget;                                              // 0x0014(0x000C) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               IKLookAtActive;                                            // 0x0020(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_VLJ5[0x77];                                    // 0x0021(0x0077) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_22F6[0x77];                                    // 0x0021(0x0077) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -445,7 +445,7 @@ struct FAnimationLookAt
 // 0x0001
 struct FEventAnimationLookAtUpdated
 {
-	unsigned char                                      UnknownData_8ZZB[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_TQJI[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -470,14 +470,14 @@ struct FIKLookAtParams
 struct FAnimNode_WeightedLoadOnDemandSquencePlayer : public FAnimNode_AssetPlayerBase
 {
 	float                                              PlayRate;                                                  // 0x0040(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_G3K3[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_P3IA[0x4];                                     // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UWeightedAnimSequenceLoadOnDemand*           WeightedAnimSequenceLoadOnDemand;                          // 0x0048(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                GroupIndex;                                                // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<Engine_EAnimGroupRole>                 GroupRole;                                                 // 0x0054(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ZQHY[0x3];                                     // 0x0055(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_6JOB[0x3];                                     // 0x0055(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UAnimSequence*                               CurrentSequence;                                           // 0x0058(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequence*                               NextSequence;                                              // 0x0060(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_DSP5[0x8];                                     // 0x0068(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7SI1[0x8];                                     // 0x0068(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -488,7 +488,7 @@ struct FAnimNode_WeightedLoadOnDemandSquencePlayer : public FAnimNode_AssetPlaye
 // 0x000C
 struct FEventCustomAnimationMontageExitRequested
 {
-	unsigned char                                      UnknownData_MDGW[0xC];                                     // 0x0000(0x000C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AAVI[0xC];                                     // 0x0000(0x000C) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -499,7 +499,7 @@ struct FEventCustomAnimationMontageExitRequested
 // 0x0008
 struct FEventCustomAnimationMontageRequested
 {
-	unsigned char                                      UnknownData_FUTE[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_D1E4[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -513,7 +513,7 @@ struct FCustomAnimationMontageStateMachine
 	class UCustomAnimationMontageDefinitionDataAsset*  ActiveState;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCustomAnimationMontageDefinitionDataAsset*  PendingState;                                              // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                                ActiveMontage;                                             // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_YTWP[0xC0];                                    // 0x0018(0x00C0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZUPM[0xC0];                                    // 0x0018(0x00C0) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -569,7 +569,7 @@ struct FWeightedAnimationTimeoutSelector
 // 0x0050
 struct FDocker
 {
-	unsigned char                                      UnknownData_2XZM[0x50];                                    // 0x0000(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RV9L[0x50];                                    // 0x0000(0x0050) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

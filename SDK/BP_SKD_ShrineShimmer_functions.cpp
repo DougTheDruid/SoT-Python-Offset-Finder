@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.OnRep_ShimmerIsVisible
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_SKD_ShrineShimmer_C::OnRep_ShimmerIsVisible()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.OnRep_ShimmerIsVisible");
 
-	ABP_SKD_ShrineShimmer_C_OnRep_ShimmerIsVisible_Params params;
+	ABP_SKD_ShrineShimmer_C_OnRep_ShimmerIsVisible_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void ABP_SKD_ShrineShimmer_C::OnRep_ShimmerIsVisible()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_SKD_ShrineShimmer_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.UserConstructionScript");
 
-	ABP_SKD_ShrineShimmer_C_UserConstructionScript_Params params;
+	ABP_SKD_ShrineShimmer_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,14 +55,14 @@ void ABP_SKD_ShrineShimmer_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.FadeCurve__FinishedFunc
 //		Flags  -> (BlueprintEvent)
 void ABP_SKD_ShrineShimmer_C::FadeCurve__FinishedFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.FadeCurve__FinishedFunc");
 
-	ABP_SKD_ShrineShimmer_C_FadeCurve__FinishedFunc_Params params;
+	ABP_SKD_ShrineShimmer_C_FadeCurve__FinishedFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -73,14 +73,14 @@ void ABP_SKD_ShrineShimmer_C::FadeCurve__FinishedFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.FadeCurve__UpdateFunc
 //		Flags  -> (BlueprintEvent)
 void ABP_SKD_ShrineShimmer_C::FadeCurve__UpdateFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.FadeCurve__UpdateFunc");
 
-	ABP_SKD_ShrineShimmer_C_FadeCurve__UpdateFunc_Params params;
+	ABP_SKD_ShrineShimmer_C_FadeCurve__UpdateFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -91,14 +91,14 @@ void ABP_SKD_ShrineShimmer_C::FadeCurve__UpdateFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.OnActivateShimmer
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_SKD_ShrineShimmer_C::OnActivateShimmer()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.OnActivateShimmer");
 
-	ABP_SKD_ShrineShimmer_C_OnActivateShimmer_Params params;
+	ABP_SKD_ShrineShimmer_C_OnActivateShimmer_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -109,14 +109,14 @@ void ABP_SKD_ShrineShimmer_C::OnActivateShimmer()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.OnDeactivateShimmer
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_SKD_ShrineShimmer_C::OnDeactivateShimmer()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.OnDeactivateShimmer");
 
-	ABP_SKD_ShrineShimmer_C_OnDeactivateShimmer_Params params;
+	ABP_SKD_ShrineShimmer_C_OnDeactivateShimmer_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -127,14 +127,14 @@ void ABP_SKD_ShrineShimmer_C::OnDeactivateShimmer()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.Shimmer_FadeIn
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_SKD_ShrineShimmer_C::Shimmer_FadeIn()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.Shimmer_FadeIn");
 
-	ABP_SKD_ShrineShimmer_C_Shimmer_FadeIn_Params params;
+	ABP_SKD_ShrineShimmer_C_Shimmer_FadeIn_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -145,14 +145,14 @@ void ABP_SKD_ShrineShimmer_C::Shimmer_FadeIn()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.Shimmer_FadeOut
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_SKD_ShrineShimmer_C::Shimmer_FadeOut()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.Shimmer_FadeOut");
 
-	ABP_SKD_ShrineShimmer_C_Shimmer_FadeOut_Params params;
+	ABP_SKD_ShrineShimmer_C_Shimmer_FadeOut_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -163,7 +163,7 @@ void ABP_SKD_ShrineShimmer_C::Shimmer_FadeOut()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.ExecuteUbergraph_BP_SKD_ShrineShimmer
 //		Flags  -> ()
 // Parameters:
@@ -172,7 +172,7 @@ void ABP_SKD_ShrineShimmer_C::ExecuteUbergraph_BP_SKD_ShrineShimmer(int EntryPoi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SKD_ShrineShimmer.BP_SKD_ShrineShimmer_C.ExecuteUbergraph_BP_SKD_ShrineShimmer");
 
-	ABP_SKD_ShrineShimmer_C_ExecuteUbergraph_BP_SKD_ShrineShimmer_Params params;
+	ABP_SKD_ShrineShimmer_C_ExecuteUbergraph_BP_SKD_ShrineShimmer_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

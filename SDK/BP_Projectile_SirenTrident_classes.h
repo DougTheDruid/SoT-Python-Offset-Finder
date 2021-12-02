@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0.Brig
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Projectile_SirenTrident.BP_Projectile_SirenTrident_C
-// 0x0000 (FullSize[0x0810] - InheritedSize[0x0810])
+// 0x0000 (FullSize[0x0830] - InheritedSize[0x0830])
 class ABP_Projectile_SirenTrident_C : public ABP_AIProjectile_SirenTrident_C
 {
 public:

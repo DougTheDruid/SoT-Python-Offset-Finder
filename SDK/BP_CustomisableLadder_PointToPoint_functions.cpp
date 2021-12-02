@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder_PointToPoint.BP_CustomisableLadder_PointToPoint_C.Orientate Ladder
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -29,7 +29,7 @@ void ABP_CustomisableLadder_PointToPoint_C::Orientate_Ladder(const struct FVecto
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder_PointToPoint.BP_CustomisableLadder_PointToPoint_C.Orientate Ladder");
 
-	ABP_CustomisableLadder_PointToPoint_C_Orientate_Ladder_Params params;
+	ABP_CustomisableLadder_PointToPoint_C_Orientate_Ladder_Params params {};
 	params.Point_A = Point_A;
 	params.Point_B = Point_B;
 
@@ -42,7 +42,7 @@ void ABP_CustomisableLadder_PointToPoint_C::Orientate_Ladder(const struct FVecto
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder_PointToPoint.BP_CustomisableLadder_PointToPoint_C.UserConstructionScript
 //		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -50,7 +50,7 @@ void ABP_CustomisableLadder_PointToPoint_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder_PointToPoint.BP_CustomisableLadder_PointToPoint_C.UserConstructionScript");
 
-	ABP_CustomisableLadder_PointToPoint_C_UserConstructionScript_Params params;
+	ABP_CustomisableLadder_PointToPoint_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -61,14 +61,14 @@ void ABP_CustomisableLadder_PointToPoint_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder_PointToPoint.BP_CustomisableLadder_PointToPoint_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_CustomisableLadder_PointToPoint_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder_PointToPoint.BP_CustomisableLadder_PointToPoint_C.ReceiveBeginPlay");
 
-	ABP_CustomisableLadder_PointToPoint_C_ReceiveBeginPlay_Params params;
+	ABP_CustomisableLadder_PointToPoint_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -79,7 +79,7 @@ void ABP_CustomisableLadder_PointToPoint_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder_PointToPoint.BP_CustomisableLadder_PointToPoint_C.ExecuteUbergraph_BP_CustomisableLadder_PointToPoint
 //		Flags  -> ()
 // Parameters:
@@ -88,7 +88,7 @@ void ABP_CustomisableLadder_PointToPoint_C::ExecuteUbergraph_BP_CustomisableLadd
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder_PointToPoint.BP_CustomisableLadder_PointToPoint_C.ExecuteUbergraph_BP_CustomisableLadder_PointToPoint");
 
-	ABP_CustomisableLadder_PointToPoint_C_ExecuteUbergraph_BP_CustomisableLadder_PointToPoint_Params params;
+	ABP_CustomisableLadder_PointToPoint_C_ExecuteUbergraph_BP_CustomisableLadder_PointToPoint_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

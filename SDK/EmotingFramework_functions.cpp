@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -84,6 +84,42 @@ void FEventEmoteRequested::BeforeDelete()
 {
 }
 
+void FEmoteDiceOutcomeTelemetryEvent::AfterRead()
+{
+}
+
+void FEmoteDiceOutcomeTelemetryEvent::BeforeDelete()
+{
+}
+
+void FEventDisableLookAtEmoteCamera::AfterRead()
+{
+}
+
+void FEventDisableLookAtEmoteCamera::BeforeDelete()
+{
+}
+
+void FEventEnableLookAtEmoteCamera::AfterRead()
+{
+}
+
+void FEventEnableLookAtEmoteCamera::BeforeDelete()
+{
+}
+
+void UEmoteCameraInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UEmoteCameraInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
 void AEmoteCard::AfterRead()
 {
 	AActor::AfterRead();
@@ -137,7 +173,7 @@ void UEmotePropDiceData::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function EmotingFramework.EmoteDice.SetDiceMesh
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -146,7 +182,7 @@ void AEmoteDice::SetDiceMesh(TEnumAsByte<EmotingFramework_EDiceType> DiceType)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmotingFramework.EmoteDice.SetDiceMesh");
 
-	AEmoteDice_SetDiceMesh_Params params;
+	AEmoteDice_SetDiceMesh_Params params {};
 	params.DiceType = DiceType;
 
 	auto flags = fn->FunctionFlags;
@@ -158,9 +194,35 @@ void AEmoteDice::SetDiceMesh(TEnumAsByte<EmotingFramework_EDiceType> DiceType)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x032FC4B0
+//		Name   -> Function EmotingFramework.EmoteDice.SendTelemetryData
+//		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+//		struct FTransform                                  OrientationUsed                                            (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
+//		int                                                RollNumber                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		TEnumAsByte<EmotingFramework_EDiceType>            DiceType                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AEmoteDice::SendTelemetryData(const struct FTransform& OrientationUsed, int RollNumber, TEnumAsByte<EmotingFramework_EDiceType> DiceType)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function EmotingFramework.EmoteDice.SendTelemetryData");
+
+	AEmoteDice_SendTelemetryData_Params params {};
+	params.OrientationUsed = OrientationUsed;
+	params.RollNumber = RollNumber;
+	params.DiceType = DiceType;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x032FC3E0
 //		Name   -> Function EmotingFramework.EmoteDice.RollDice
-//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+//		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 //		int                                                RollNumber                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 //		TEnumAsByte<EmotingFramework_EDiceType>            DiceType                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -168,11 +230,12 @@ void AEmoteDice::RollDice(int RollNumber, TEnumAsByte<EmotingFramework_EDiceType
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmotingFramework.EmoteDice.RollDice");
 
-	AEmoteDice_RollDice_Params params;
+	AEmoteDice_RollDice_Params params {};
 	params.RollNumber = RollNumber;
 	params.DiceType = DiceType;
 
 	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
 
 	UObject::ProcessEvent(fn, &params);
 	fn->FunctionFlags = flags;
@@ -213,6 +276,42 @@ void UEmoteSettings::AfterRead()
 void UEmoteSettings::BeforeDelete()
 {
 	UDeveloperSettings::BeforeDelete();
+
+}
+
+void UEmoteZoomInAnalogInputId::AfterRead()
+{
+	UAnalogInputId::AfterRead();
+
+}
+
+void UEmoteZoomInAnalogInputId::BeforeDelete()
+{
+	UAnalogInputId::BeforeDelete();
+
+}
+
+void UEmoteZoomMouseAnalogInputId::AfterRead()
+{
+	UAnalogInputId::AfterRead();
+
+}
+
+void UEmoteZoomMouseAnalogInputId::BeforeDelete()
+{
+	UAnalogInputId::BeforeDelete();
+
+}
+
+void UEmoteZoomOutAnalogInputId::AfterRead()
+{
+	UAnalogInputId::AfterRead();
+
+}
+
+void UEmoteZoomOutAnalogInputId::BeforeDelete()
+{
+	UAnalogInputId::BeforeDelete();
 
 }
 

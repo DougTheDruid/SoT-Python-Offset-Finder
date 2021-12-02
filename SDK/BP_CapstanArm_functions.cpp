@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CapstanArm.BP_CapstanArm_C.GetLookAtPosBasisSpace
 //		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -28,7 +28,7 @@ struct FVector ABP_CapstanArm_C::GetLookAtPosBasisSpace()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CapstanArm.BP_CapstanArm_C.GetLookAtPosBasisSpace");
 
-	ABP_CapstanArm_C_GetLookAtPosBasisSpace_Params params;
+	ABP_CapstanArm_C_GetLookAtPosBasisSpace_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,7 +41,7 @@ struct FVector ABP_CapstanArm_C::GetLookAtPosBasisSpace()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CapstanArm.BP_CapstanArm_C.GetFrontFacingVector
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -50,7 +50,7 @@ struct FVector ABP_CapstanArm_C::GetFrontFacingVector()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CapstanArm.BP_CapstanArm_C.GetFrontFacingVector");
 
-	ABP_CapstanArm_C_GetFrontFacingVector_Params params;
+	ABP_CapstanArm_C_GetFrontFacingVector_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -63,7 +63,7 @@ struct FVector ABP_CapstanArm_C::GetFrontFacingVector()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CapstanArm.BP_CapstanArm_C.DoesRequireFacingFront
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -72,7 +72,7 @@ bool ABP_CapstanArm_C::DoesRequireFacingFront()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CapstanArm.BP_CapstanArm_C.DoesRequireFacingFront");
 
-	ABP_CapstanArm_C_DoesRequireFacingFront_Params params;
+	ABP_CapstanArm_C_DoesRequireFacingFront_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -85,7 +85,7 @@ bool ABP_CapstanArm_C::DoesRequireFacingFront()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CapstanArm.BP_CapstanArm_C.GetDockableInfo
 //		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -94,7 +94,7 @@ struct FDockableInfo ABP_CapstanArm_C::GetDockableInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CapstanArm.BP_CapstanArm_C.GetDockableInfo");
 
-	ABP_CapstanArm_C_GetDockableInfo_Params params;
+	ABP_CapstanArm_C_GetDockableInfo_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -107,7 +107,7 @@ struct FDockableInfo ABP_CapstanArm_C::GetDockableInfo()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CapstanArm.BP_CapstanArm_C.GetClosestInteractionPoint
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -118,7 +118,7 @@ struct FVector ABP_CapstanArm_C::GetClosestInteractionPoint(const struct FVector
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CapstanArm.BP_CapstanArm_C.GetClosestInteractionPoint");
 
-	ABP_CapstanArm_C_GetClosestInteractionPoint_Params params;
+	ABP_CapstanArm_C_GetClosestInteractionPoint_Params params {};
 	params.ReferencePosition = ReferencePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -135,7 +135,7 @@ struct FVector ABP_CapstanArm_C::GetClosestInteractionPoint(const struct FVector
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CapstanArm.BP_CapstanArm_C.GetLookAtPos
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -144,7 +144,7 @@ struct FVector ABP_CapstanArm_C::GetLookAtPos()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CapstanArm.BP_CapstanArm_C.GetLookAtPos");
 
-	ABP_CapstanArm_C_GetLookAtPos_Params params;
+	ABP_CapstanArm_C_GetLookAtPos_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -157,14 +157,14 @@ struct FVector ABP_CapstanArm_C::GetLookAtPos()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CapstanArm.BP_CapstanArm_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_CapstanArm_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CapstanArm.BP_CapstanArm_C.UserConstructionScript");
 
-	ABP_CapstanArm_C_UserConstructionScript_Params params;
+	ABP_CapstanArm_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

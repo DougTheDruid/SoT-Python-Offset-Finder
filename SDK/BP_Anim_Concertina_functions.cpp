@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Concertina.BP_Anim_Concertina_C.OnUseStarted
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -29,7 +29,7 @@ void UBP_Anim_Concertina_C::OnUseStarted(class UClass* InputID, const struct FWi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Concertina.BP_Anim_Concertina_C.OnUseStarted");
 
-	UBP_Anim_Concertina_C_OnUseStarted_Params params;
+	UBP_Anim_Concertina_C_OnUseStarted_Params params {};
 	params.InputID = InputID;
 	params.ActionVisuals = ActionVisuals;
 
@@ -42,7 +42,7 @@ void UBP_Anim_Concertina_C::OnUseStarted(class UClass* InputID, const struct FWi
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Concertina.BP_Anim_Concertina_C.OnUseStopped
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -51,7 +51,7 @@ void UBP_Anim_Concertina_C::OnUseStopped(class UClass* InputID)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Concertina.BP_Anim_Concertina_C.OnUseStopped");
 
-	UBP_Anim_Concertina_C_OnUseStopped_Params params;
+	UBP_Anim_Concertina_C_OnUseStopped_Params params {};
 	params.InputID = InputID;
 
 	auto flags = fn->FunctionFlags;
@@ -63,7 +63,7 @@ void UBP_Anim_Concertina_C::OnUseStopped(class UClass* InputID)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Concertina.BP_Anim_Concertina_C.ExecuteUbergraph_BP_Anim_Concertina
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -72,7 +72,7 @@ void UBP_Anim_Concertina_C::ExecuteUbergraph_BP_Anim_Concertina(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Concertina.BP_Anim_Concertina_C.ExecuteUbergraph_BP_Anim_Concertina");
 
-	UBP_Anim_Concertina_C_ExecuteUbergraph_BP_Anim_Concertina_Params params;
+	UBP_Anim_Concertina_C_ExecuteUbergraph_BP_Anim_Concertina_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

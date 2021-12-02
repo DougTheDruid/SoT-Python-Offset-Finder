@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -22,7 +22,7 @@ namespace CG
 // Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.OnWieldFunc
 struct UBP_Prompt_SpeakingTrumpet_C_OnWieldFunc_Params
 {
-	struct FEventObjectWielded                         EventObjectWielded;                                        // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAthena_FEventObjectWielded                 EventObjectWielded;                                        // 0x0000(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.RegisterCharacterEvents_Implementable
@@ -45,7 +45,7 @@ struct UBP_Prompt_SpeakingTrumpet_C_Evaluate_Params
 // Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.OnWieldEvent
 struct UBP_Prompt_SpeakingTrumpet_C_OnWieldEvent_Params
 {
-	struct FEventObjectWielded                         OnWieldEvent;                                              // 0x0000(0x0010)  (Parm)
+	struct FAthena_FEventObjectWielded                 OnWieldEvent;                                              // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_Prompt_SpeakingTrumpet.BP_Prompt_SpeakingTrumpet_C.ExecuteUbergraph_BP_Prompt_SpeakingTrumpet

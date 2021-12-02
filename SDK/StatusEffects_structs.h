@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -51,7 +51,7 @@ struct FStatus
 {
 	TArray<class UClass*>                              Type;                                                      // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor, UObjectWrapper)
 	struct FStatusDescriptor                           Descriptor;                                                // 0x0010(0x0004) (Edit, BlueprintVisible)
-	unsigned char                                      UnknownData_61ST[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_W44S[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -76,7 +76,7 @@ struct FDelayedStatusEffect
 {
 	struct FStatus                                     StatusEffect;                                              // 0x0000(0x0018) (Edit)
 	float                                              InEffectTime;                                              // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ZJ7Z[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PO7E[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -101,11 +101,11 @@ struct FActiveStatusEffect
 {
 	TArray<class UClass*>                              SourceStatus;                                              // 0x0000(0x0010) (ZeroConstructor, UObjectWrapper)
 	struct FStatusDescriptor                           Descriptor;                                                // 0x0010(0x0004)
-	unsigned char                                      UnknownData_U51P[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_8OOH[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class UStatusResponse*>                     ResponseTemplates;                                         // 0x0018(0x0010) (ZeroConstructor)
 	TArray<class UStatusResponse*>                     InstancedResponses;                                        // 0x0028(0x0010) (ZeroConstructor, RepSkip)
 	bool                                               ResponsesAreActive;                                        // 0x0038(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_SMAR[0x17];                                    // 0x0039(0x0017) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3HUZ[0x17];                                    // 0x0039(0x0017) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -113,11 +113,12 @@ struct FActiveStatusEffect
 };
 
 // ScriptStruct StatusEffects.EventAppliedStatusToTargets
-// 0x0020
+// 0x0028
 struct FEventAppliedStatusToTargets
 {
 	TArray<class UClass*>                              StatusApplied;                                             // 0x0000(0x0010) (ZeroConstructor, UObjectWrapper)
 	TArray<class AActor*>                              Targets;                                                   // 0x0010(0x0010) (ZeroConstructor)
+	class AActor*                                      StatusSource;                                              // 0x0020(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -264,7 +265,7 @@ struct FEventStatusScreenEffectStarted
 // 0x0001
 struct FEventExitedSurfaceMaterialStatusZone
 {
-	unsigned char                                      UnknownData_2ZEC[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LYJN[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

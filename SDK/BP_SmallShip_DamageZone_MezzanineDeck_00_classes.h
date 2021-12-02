@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_SmallShip_DamageZone_MezzanineDeck_00.BP_SmallShip_DamageZone_MezzanineDeck_00_C
-// 0x0000 (FullSize[0x07D0] - InheritedSize[0x07D0])
+// 0x0000 (FullSize[0x0858] - InheritedSize[0x0858])
 class ABP_SmallShip_DamageZone_MezzanineDeck_00_C : public ABP_BaseInternalDamageZone_C
 {
 public:

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -53,12 +53,12 @@ public:
 	struct FName                                       LiquidMaterialParameterName;                               // 0x00D0(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FLiquidTypeParams>                   LiquidTypeParams;                                          // 0x00D8(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	float                                              StartingLiquidLevelNormalised;                             // 0x00E8(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_S9IK[0x4];                                     // 0x00EC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ZWUH[0x4];                                     // 0x00EC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UCurveFloat*                                 TransitionCurve;                                           // 0x00F0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TransitionSpeedDecrease;                                   // 0x00F8(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TransitionSpeedIncrease;                                   // 0x00FC(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>            LiquidMaterials;                                           // 0x0100(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData_JLOH[0x18];                                    // 0x0110(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EGIQ[0x18];                                    // 0x0110(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -103,7 +103,7 @@ public:
 class ULiquidContainerService : public UInteractableService
 {
 public:
-	unsigned char                                      UnknownData_9CKW[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MWQE[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

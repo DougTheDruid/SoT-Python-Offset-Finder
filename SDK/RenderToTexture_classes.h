@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -52,7 +52,7 @@ public:
 	TWeakObjectPtr<class UWorld>                       ParentWorld;                                               // 0x0040(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper)
 	TWeakObjectPtr<class AActor>                       SpawnedActor;                                              // 0x0048(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper)
 	class UTextureRenderTarget2D*                      RenderTarget;                                              // 0x0050(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_62Y0[0x50];                                    // 0x0058(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_C5ON[0x50];                                    // 0x0058(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

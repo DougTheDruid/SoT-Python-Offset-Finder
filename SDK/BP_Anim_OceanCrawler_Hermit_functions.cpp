@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_OceanCrawler_Hermit.BP_Anim_OceanCrawler_Hermit_C.AnimNotify_NewAttack
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Anim_OceanCrawler_Hermit_C::AnimNotify_NewAttack()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_OceanCrawler_Hermit.BP_Anim_OceanCrawler_Hermit_C.AnimNotify_NewAttack");
 
-	UBP_Anim_OceanCrawler_Hermit_C_AnimNotify_NewAttack_Params params;
+	UBP_Anim_OceanCrawler_Hermit_C_AnimNotify_NewAttack_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void UBP_Anim_OceanCrawler_Hermit_C::AnimNotify_NewAttack()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_OceanCrawler_Hermit.BP_Anim_OceanCrawler_Hermit_C.AnimNotify_AttackCompleted
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Anim_OceanCrawler_Hermit_C::AnimNotify_AttackCompleted()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_OceanCrawler_Hermit.BP_Anim_OceanCrawler_Hermit_C.AnimNotify_AttackCompleted");
 
-	UBP_Anim_OceanCrawler_Hermit_C_AnimNotify_AttackCompleted_Params params;
+	UBP_Anim_OceanCrawler_Hermit_C_AnimNotify_AttackCompleted_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,14 +55,14 @@ void UBP_Anim_OceanCrawler_Hermit_C::AnimNotify_AttackCompleted()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_OceanCrawler_Hermit.BP_Anim_OceanCrawler_Hermit_C.AnimNotify_StartingHitReact
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Anim_OceanCrawler_Hermit_C::AnimNotify_StartingHitReact()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_OceanCrawler_Hermit.BP_Anim_OceanCrawler_Hermit_C.AnimNotify_StartingHitReact");
 
-	UBP_Anim_OceanCrawler_Hermit_C_AnimNotify_StartingHitReact_Params params;
+	UBP_Anim_OceanCrawler_Hermit_C_AnimNotify_StartingHitReact_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -73,7 +73,7 @@ void UBP_Anim_OceanCrawler_Hermit_C::AnimNotify_StartingHitReact()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_OceanCrawler_Hermit.BP_Anim_OceanCrawler_Hermit_C.ExecuteUbergraph_BP_Anim_OceanCrawler_Hermit
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -82,7 +82,7 @@ void UBP_Anim_OceanCrawler_Hermit_C::ExecuteUbergraph_BP_Anim_OceanCrawler_Hermi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_OceanCrawler_Hermit.BP_Anim_OceanCrawler_Hermit_C.ExecuteUbergraph_BP_Anim_OceanCrawler_Hermit");
 
-	UBP_Anim_OceanCrawler_Hermit_C_ExecuteUbergraph_BP_Anim_OceanCrawler_Hermit_Params params;
+	UBP_Anim_OceanCrawler_Hermit_C_ExecuteUbergraph_BP_Anim_OceanCrawler_Hermit_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

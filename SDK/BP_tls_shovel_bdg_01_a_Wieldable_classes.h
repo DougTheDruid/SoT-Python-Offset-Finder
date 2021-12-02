@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_tls_shovel_bdg_01_a_Wieldable.BP_tls_shovel_bdg_01_a_Wieldable_C
-// 0x0000 (FullSize[0x0848] - InheritedSize[0x0848])
+// 0x0000 (FullSize[0x0868] - InheritedSize[0x0868])
 class ABP_tls_shovel_bdg_01_a_Wieldable_C : public ABP_Shovel_C
 {
 public:

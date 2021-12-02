@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -64,9 +64,9 @@ public:
 class UAreaOfEffectHealAIAbility : public UAthenaAIAbility
 {
 public:
-	unsigned char                                      UnknownData_VFFL[0x10];                                    // 0x0078(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_BT28[0x10];                                    // 0x0078(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class AActor*                                      HealAreaOfEffectActor;                                     // 0x0088(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_CF13[0x10];                                    // 0x0090(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_DO1A[0x10];                                    // 0x0090(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -175,10 +175,10 @@ public:
 	class UParticleSystem*                             VFXAsset;                                                  // 0x00C8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       VfxSocketName;                                             // 0x00D0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              VFXDuration;                                               // 0x00D8(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GI0C[0x4];                                     // 0x00DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7A7G[0x4];                                     // 0x00DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UParticleSystemComponent*                    SpawnedVFXSystem;                                          // 0x00E0(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               IsVFXActive;                                               // 0x00E8(0x0001) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor)
-	unsigned char                                      UnknownData_ZNRG[0x2F];                                    // 0x00E9(0x002F) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_45T3[0x2F];                                    // 0x00E9(0x002F) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -342,15 +342,15 @@ public:
 class UElectricShieldBuffComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_ZACQ[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_OQO3[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UParticleSystem*                             ShieldVFXAsset;                                            // 0x00D0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       VfxSocketName;                                             // 0x00D8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWwiseEvent*                                 StartAudioLoopEvent;                                       // 0x00E0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWwiseEvent*                                 StopAudioLoopEvent;                                        // 0x00E8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               IsShieldActive;                                            // 0x00F0(0x0001) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor)
-	unsigned char                                      UnknownData_SBKV[0x7];                                     // 0x00F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_M26B[0x7];                                     // 0x00F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UParticleSystemComponent*                    ShieldEffectComponent;                                     // 0x00F8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_O48T[0xB8];                                    // 0x0100(0x00B8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LXY2[0xB8];                                    // 0x0100(0x00B8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -413,7 +413,7 @@ public:
 class UMeleeAIAbility : public UAthenaAIAbility
 {
 public:
-	unsigned char                                      UnknownData_DCWF[0x8];                                     // 0x0078(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LBI7[0x8];                                     // 0x0078(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -576,10 +576,10 @@ class UBullRushAIAbilityParams : public UMeleeChargeAIAbilityParams
 {
 public:
 	float                                              StaticCollisionWarmup;                                     // 0x00E0(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_OLPI[0x4];                                     // 0x00E4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_9LNQ[0x4];                                     // 0x00E4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class UEnvQuery*>                           ValidatorEQSystems;                                        // 0x00E8(0x0010) (Edit, ZeroConstructor)
 	float                                              TimeBetweenCanExecuteChecks;                               // 0x00F8(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_X9F8[0x4];                                     // 0x00FC(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8GM6[0x4];                                     // 0x00FC(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -601,7 +601,7 @@ class UBullRushAIAbility : public UMeleeChargeAIAbility
 {
 public:
 	class UWorld*                                      CachedWorld;                                               // 0x0098(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_H7C9[0x18];                                    // 0x00A0(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5DRR[0x18];                                    // 0x00A0(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -682,7 +682,7 @@ public:
 class USporeExposureComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_HW1A[0x38];                                    // 0x00C8(0x0038) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_XNJZ[0x38];                                    // 0x00C8(0x0038) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -724,7 +724,7 @@ class UStatusResponseActivateElectricShield : public UStatusResponse
 {
 public:
 	float                                              Duration;                                                  // 0x0030(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_8D4X[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_1LHP[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class AAthenaFFTWater : public AFFTWater
 {
 public:
-	unsigned char                                      UnknownData_C16O[0x28];                                    // 0x0418(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Q0GR[0x28];                                    // 0x0418(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -65,7 +65,7 @@ public:
 class AAthenaWaterEmissionVolume : public AWaterEmissionVolume
 {
 public:
-	unsigned char                                      UnknownData_M5WU[0x8];                                     // 0x03D8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NAVI[0x8];                                     // 0x03D8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -161,11 +161,11 @@ public:
 class AFFTWaterService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_GETW[0x10];                                    // 0x03D0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_WVTN[0x10];                                    // 0x03D0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TWeakObjectPtr<class AAthenaFFTWater>              FFTWaterActor;                                             // 0x03E0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
 	TWeakObjectPtr<class UFFTWaterComponent>           FFTWaterComponent;                                         // 0x03E8(0x0008) (ExportObject, Net, ZeroConstructor, InstancedReference, IsPlainOldData, RepNotify, NoDestructor, UObjectWrapper)
 	TWeakObjectPtr<class UFFTWaterExtendedPlaneComponent> ExtendedPlaneComponent;                                    // 0x03F0(0x0008) (ExportObject, Net, ZeroConstructor, InstancedReference, IsPlainOldData, RepNotify, NoDestructor, UObjectWrapper)
-	unsigned char                                      UnknownData_LRFT[0x50];                                    // 0x03F8(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JLLK[0x50];                                    // 0x03F8(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	double                                             ReplicatedServerCreationTime;                              // 0x0448(0x0008) (Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
@@ -189,8 +189,8 @@ public:
 class UFlatWaterPlaneComponent : public UBaseWaterComponent
 {
 public:
-	unsigned char                                      UnknownData_BPOX[0x8];                                     // 0x0598(0x0008) Fix Super Size
-	unsigned char                                      UnknownData_IHD1[0x10];                                    // 0x05A0(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_T2WD[0x8];                                     // 0x0598(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_N3BB[0x10];                                    // 0x05A0(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -214,7 +214,7 @@ public:
 class UMockWaterInterface : public UObject
 {
 public:
-	unsigned char                                      UnknownData_MRR5[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7HSE[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -337,7 +337,7 @@ public:
 class USplashProbeVFXComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_6UMP[0x28];                                    // 0x00C8(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_08NY[0x28];                                    // 0x00C8(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class USplashProbeDataAsset*                       Probes;                                                    // 0x00F0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USplashProbeDataAsset*                       ProbesInstance;                                            // 0x00F8(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FActorComponentSelector                     AttachProbesToOwner;                                       // 0x0100(0x0010) (Edit, DisableEditOnInstance, ContainsInstancedReference)
@@ -430,7 +430,7 @@ public:
 class UWaterEmissionVolumeService : public UObject
 {
 public:
-	unsigned char                                      UnknownData_HOCF[0x20];                                    // 0x0028(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_P1F9[0x20];                                    // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -491,8 +491,8 @@ public:
 class UWaterInteractionComponent : public UBoxComponent
 {
 public:
-	unsigned char                                      UnknownData_3LK0[0x8];                                     // 0x05B8(0x0008) Fix Super Size
-	unsigned char                                      UnknownData_GGLV[0x20];                                    // 0x05C0(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_34WQ[0x8];                                     // 0x05B8(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_YH4R[0x20];                                    // 0x05C0(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -591,7 +591,7 @@ class UWaterSpoutVFXComponent : public UActorComponent
 public:
 	TArray<struct FWaterSpout>                         WaterSpouts;                                               // 0x00C8(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	struct FVector                                     SplashEffectPointBottomZ;                                  // 0x00D8(0x000C) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_ZV71[0x4];                                     // 0x00E4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_CQVT[0x4];                                     // 0x00E4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UObject*                                     SpoutParticleSystem;                                       // 0x00E8(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                     SplashParticleSystem;                                      // 0x00F0(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              WaterSplashDelayMin;                                       // 0x00F8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -599,13 +599,13 @@ public:
 	float                                              SplashEffectVFXOffset;                                     // 0x0100(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              SplashSweepRadius;                                         // 0x0104(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               ShouldSpawnKillPlaneAtSplash;                              // 0x0108(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_MELA[0x7];                                     // 0x0109(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_F15R[0x7];                                     // 0x0109(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UStaticMesh*                                 SplashKillPlaneMesh;                                       // 0x0110(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                     SplashKillPlaneScale;                                      // 0x0118(0x000C) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_A9B1[0x4];                                     // 0x0124(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_4KA6[0x4];                                     // 0x0124(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UStaticMeshComponent*                        SplashKillPlane;                                           // 0x0128(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FWaterSpout>                         ActiveWaterSpouts;                                         // 0x0130(0x0010) (ZeroConstructor, ContainsInstancedReference)
-	unsigned char                                      UnknownData_19Q4[0x18];                                    // 0x0140(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_XJAF[0x18];                                    // 0x0140(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

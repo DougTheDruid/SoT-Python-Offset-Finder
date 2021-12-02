@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x02EB6210
+//		Offset -> 0x02EFB750
 //		Name   -> Function MediaAssets.MediaPlayer.SupportsSeeking
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -28,7 +28,7 @@ bool UMediaPlayer::SupportsSeeking()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsSeeking");
 
-	UMediaPlayer_SupportsSeeking_Params params;
+	UMediaPlayer_SupportsSeeking_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -42,7 +42,7 @@ bool UMediaPlayer::SupportsSeeking()
 
 
 // Function:
-//		Offset -> 0x02EB61E0
+//		Offset -> 0x02EFB720
 //		Name   -> Function MediaAssets.MediaPlayer.SupportsScrubbing
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -51,7 +51,7 @@ bool UMediaPlayer::SupportsScrubbing()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsScrubbing");
 
-	UMediaPlayer_SupportsScrubbing_Params params;
+	UMediaPlayer_SupportsScrubbing_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -65,7 +65,7 @@ bool UMediaPlayer::SupportsScrubbing()
 
 
 // Function:
-//		Offset -> 0x02EB6110
+//		Offset -> 0x02EFB650
 //		Name   -> Function MediaAssets.MediaPlayer.SupportsRate
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -76,7 +76,7 @@ bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsRate");
 
-	UMediaPlayer_SupportsRate_Params params;
+	UMediaPlayer_SupportsRate_Params params {};
 	params.Rate = Rate;
 	params.Unthinned = Unthinned;
 
@@ -92,7 +92,7 @@ bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 
 
 // Function:
-//		Offset -> 0x02EB6080
+//		Offset -> 0x02EFB5C0
 //		Name   -> Function MediaAssets.MediaPlayer.SetRate
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -102,7 +102,7 @@ bool UMediaPlayer::SetRate(float Rate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetRate");
 
-	UMediaPlayer_SetRate_Params params;
+	UMediaPlayer_SetRate_Params params {};
 	params.Rate = Rate;
 
 	auto flags = fn->FunctionFlags;
@@ -117,7 +117,7 @@ bool UMediaPlayer::SetRate(float Rate)
 
 
 // Function:
-//		Offset -> 0x02EB5EF0
+//		Offset -> 0x02EFB430
 //		Name   -> Function MediaAssets.MediaPlayer.SetLooping
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -127,7 +127,7 @@ bool UMediaPlayer::SetLooping(bool InLooping)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetLooping");
 
-	UMediaPlayer_SetLooping_Params params;
+	UMediaPlayer_SetLooping_Params params {};
 	params.InLooping = InLooping;
 
 	auto flags = fn->FunctionFlags;
@@ -142,7 +142,7 @@ bool UMediaPlayer::SetLooping(bool InLooping)
 
 
 // Function:
-//		Offset -> 0x02EB5E50
+//		Offset -> 0x02EFB390
 //		Name   -> Function MediaAssets.MediaPlayer.Seek
 //		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -152,7 +152,7 @@ bool UMediaPlayer::Seek(const struct FTimespan& InTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Seek");
 
-	UMediaPlayer_Seek_Params params;
+	UMediaPlayer_Seek_Params params {};
 	params.InTime = InTime;
 
 	auto flags = fn->FunctionFlags;
@@ -167,7 +167,7 @@ bool UMediaPlayer::Seek(const struct FTimespan& InTime)
 
 
 // Function:
-//		Offset -> 0x02EB5E20
+//		Offset -> 0x02EFB360
 //		Name   -> Function MediaAssets.MediaPlayer.Rewind
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -176,7 +176,7 @@ bool UMediaPlayer::Rewind()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Rewind");
 
-	UMediaPlayer_Rewind_Params params;
+	UMediaPlayer_Rewind_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -190,7 +190,7 @@ bool UMediaPlayer::Rewind()
 
 
 // Function:
-//		Offset -> 0x02EB5DF0
+//		Offset -> 0x02EFB330
 //		Name   -> Function MediaAssets.MediaPlayer.Play
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -199,7 +199,7 @@ bool UMediaPlayer::Play()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Play");
 
-	UMediaPlayer_Play_Params params;
+	UMediaPlayer_Play_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -213,7 +213,7 @@ bool UMediaPlayer::Play()
 
 
 // Function:
-//		Offset -> 0x02EB5DC0
+//		Offset -> 0x02EFB300
 //		Name   -> Function MediaAssets.MediaPlayer.Pause
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -222,7 +222,7 @@ bool UMediaPlayer::Pause()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Pause");
 
-	UMediaPlayer_Pause_Params params;
+	UMediaPlayer_Pause_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -236,7 +236,7 @@ bool UMediaPlayer::Pause()
 
 
 // Function:
-//		Offset -> 0x02EB5D10
+//		Offset -> 0x02EFB250
 //		Name   -> Function MediaAssets.MediaPlayer.OpenUrl
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -246,7 +246,7 @@ bool UMediaPlayer::OpenUrl(const struct FString& NewUrl)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenUrl");
 
-	UMediaPlayer_OpenUrl_Params params;
+	UMediaPlayer_OpenUrl_Params params {};
 	params.NewUrl = NewUrl;
 
 	auto flags = fn->FunctionFlags;
@@ -261,7 +261,7 @@ bool UMediaPlayer::OpenUrl(const struct FString& NewUrl)
 
 
 // Function:
-//		Offset -> 0x02EB5CE0
+//		Offset -> 0x02EFB220
 //		Name   -> Function MediaAssets.MediaPlayer.IsStopped
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -270,7 +270,7 @@ bool UMediaPlayer::IsStopped()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsStopped");
 
-	UMediaPlayer_IsStopped_Params params;
+	UMediaPlayer_IsStopped_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -284,7 +284,7 @@ bool UMediaPlayer::IsStopped()
 
 
 // Function:
-//		Offset -> 0x02EB5CB0
+//		Offset -> 0x02EFB1F0
 //		Name   -> Function MediaAssets.MediaPlayer.IsPlaying
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -293,7 +293,7 @@ bool UMediaPlayer::IsPlaying()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPlaying");
 
-	UMediaPlayer_IsPlaying_Params params;
+	UMediaPlayer_IsPlaying_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -307,7 +307,7 @@ bool UMediaPlayer::IsPlaying()
 
 
 // Function:
-//		Offset -> 0x02EB5C80
+//		Offset -> 0x02EFB1C0
 //		Name   -> Function MediaAssets.MediaPlayer.IsPaused
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -316,7 +316,7 @@ bool UMediaPlayer::IsPaused()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPaused");
 
-	UMediaPlayer_IsPaused_Params params;
+	UMediaPlayer_IsPaused_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -330,7 +330,7 @@ bool UMediaPlayer::IsPaused()
 
 
 // Function:
-//		Offset -> 0x02EB5C50
+//		Offset -> 0x02EFB190
 //		Name   -> Function MediaAssets.MediaPlayer.IsLooping
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -339,7 +339,7 @@ bool UMediaPlayer::IsLooping()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsLooping");
 
-	UMediaPlayer_IsLooping_Params params;
+	UMediaPlayer_IsLooping_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -353,7 +353,7 @@ bool UMediaPlayer::IsLooping()
 
 
 // Function:
-//		Offset -> 0x02EB5C10
+//		Offset -> 0x02EFB150
 //		Name   -> Function MediaAssets.MediaPlayer.GetUrl
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -362,7 +362,7 @@ struct FString UMediaPlayer::GetUrl()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetUrl");
 
-	UMediaPlayer_GetUrl_Params params;
+	UMediaPlayer_GetUrl_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -376,7 +376,7 @@ struct FString UMediaPlayer::GetUrl()
 
 
 // Function:
-//		Offset -> 0x02EB5BD0
+//		Offset -> 0x02EFB110
 //		Name   -> Function MediaAssets.MediaPlayer.GetTime
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -385,7 +385,7 @@ struct FTimespan UMediaPlayer::GetTime()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTime");
 
-	UMediaPlayer_GetTime_Params params;
+	UMediaPlayer_GetTime_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -399,7 +399,7 @@ struct FTimespan UMediaPlayer::GetTime()
 
 
 // Function:
-//		Offset -> 0x02EB5BA0
+//		Offset -> 0x02EFB0E0
 //		Name   -> Function MediaAssets.MediaPlayer.GetRate
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -408,7 +408,7 @@ float UMediaPlayer::GetRate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetRate");
 
-	UMediaPlayer_GetRate_Params params;
+	UMediaPlayer_GetRate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -422,7 +422,7 @@ float UMediaPlayer::GetRate()
 
 
 // Function:
-//		Offset -> 0x02EB5B60
+//		Offset -> 0x02EFB0A0
 //		Name   -> Function MediaAssets.MediaPlayer.GetDuration
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -431,7 +431,7 @@ struct FTimespan UMediaPlayer::GetDuration()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetDuration");
 
-	UMediaPlayer_GetDuration_Params params;
+	UMediaPlayer_GetDuration_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -445,14 +445,14 @@ struct FTimespan UMediaPlayer::GetDuration()
 
 
 // Function:
-//		Offset -> 0x02EB5B40
+//		Offset -> 0x02EFB080
 //		Name   -> Function MediaAssets.MediaPlayer.Close
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMediaPlayer::Close()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Close");
 
-	UMediaPlayer_Close_Params params;
+	UMediaPlayer_Close_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -464,7 +464,7 @@ void UMediaPlayer::Close()
 
 
 // Function:
-//		Offset -> 0x02EB5B10
+//		Offset -> 0x02EFB050
 //		Name   -> Function MediaAssets.MediaPlayer.CanPlay
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -473,7 +473,7 @@ bool UMediaPlayer::CanPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPlay");
 
-	UMediaPlayer_CanPlay_Params params;
+	UMediaPlayer_CanPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -487,7 +487,7 @@ bool UMediaPlayer::CanPlay()
 
 
 // Function:
-//		Offset -> 0x02EB5AE0
+//		Offset -> 0x02EFB020
 //		Name   -> Function MediaAssets.MediaPlayer.CanPause
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -496,7 +496,7 @@ bool UMediaPlayer::CanPause()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPause");
 
-	UMediaPlayer_CanPause_Params params;
+	UMediaPlayer_CanPause_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -522,7 +522,7 @@ void UMediaPlayer::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02EB5F80
+//		Offset -> 0x02EFB4C0
 //		Name   -> Function MediaAssets.MediaSoundWave.SetMediaPlayer
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -531,7 +531,7 @@ void UMediaSoundWave::SetMediaPlayer(class UMediaPlayer* InMediaPlayer)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundWave.SetMediaPlayer");
 
-	UMediaSoundWave_SetMediaPlayer_Params params;
+	UMediaSoundWave_SetMediaPlayer_Params params {};
 	params.InMediaPlayer = InMediaPlayer;
 
 	auto flags = fn->FunctionFlags;
@@ -558,7 +558,7 @@ void UMediaSoundWave::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02EB6000
+//		Offset -> 0x02EFB540
 //		Name   -> Function MediaAssets.MediaTexture.SetMediaPlayer
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -567,7 +567,7 @@ void UMediaTexture::SetMediaPlayer(class UMediaPlayer* InMediaPlayer)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.SetMediaPlayer");
 
-	UMediaTexture_SetMediaPlayer_Params params;
+	UMediaTexture_SetMediaPlayer_Params params {};
 	params.InMediaPlayer = InMediaPlayer;
 
 	auto flags = fn->FunctionFlags;

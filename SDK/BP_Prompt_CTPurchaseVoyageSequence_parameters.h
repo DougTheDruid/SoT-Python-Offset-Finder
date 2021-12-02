@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -18,6 +18,11 @@ namespace CG
 //---------------------------------------------------------------------------
 // Parameters
 //---------------------------------------------------------------------------
+
+// Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShowAppropriateSignpostPrompt
+struct UBP_Prompt_CTPurchaseVoyageSequence_C_ShowAppropriateSignpostPrompt_Params
+{
+};
 
 // Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.ShowAppropriateMerchantPrompt
 struct UBP_Prompt_CTPurchaseVoyageSequence_C_ShowAppropriateMerchantPrompt_Params
@@ -81,7 +86,7 @@ struct UBP_Prompt_CTPurchaseVoyageSequence_C_OnPlayerProposedVoyageFunc_Params
 // Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnOfferPurchasedFunc
 struct UBP_Prompt_CTPurchaseVoyageSequence_C_OnOfferPurchasedFunc_Params
 {
-	struct FOfferPurchasedEvent                        OfferPurchasedEvent;                                       // 0x0000(0x01E8)  (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAthena_FOfferPurchasedEvent                OfferPurchasedEvent;                                       // 0x0000(0x01E8)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerCancelledVoyageFunc
@@ -239,7 +244,7 @@ struct UBP_Prompt_CTPurchaseVoyageSequence_C_Unregister_HUD_Events_Params
 // Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnOfferPurchased
 struct UBP_Prompt_CTPurchaseVoyageSequence_C_OnOfferPurchased_Params
 {
-	struct FOfferPurchasedEvent                        Event;                                                     // 0x0000(0x01E8)  (Parm)
+	struct FAthena_FOfferPurchasedEvent                Event;                                                     // 0x0000(0x01E8)  (Parm)
 };
 
 // Function BP_Prompt_CTPurchaseVoyageSequence.BP_Prompt_CTPurchaseVoyageSequence_C.OnPlayerProposedVoyage

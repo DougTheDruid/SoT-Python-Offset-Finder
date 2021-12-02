@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -115,7 +115,7 @@ void ULevelCapture::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02194320
+//		Offset -> 0x021CABA0
 //		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureFrameNumber
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -124,7 +124,7 @@ int UMovieSceneCaptureEnvironment::STATIC_GetCaptureFrameNumber()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureFrameNumber");
 
-	UMovieSceneCaptureEnvironment_GetCaptureFrameNumber_Params params;
+	UMovieSceneCaptureEnvironment_GetCaptureFrameNumber_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -138,7 +138,7 @@ int UMovieSceneCaptureEnvironment::STATIC_GetCaptureFrameNumber()
 
 
 // Function:
-//		Offset -> 0x021942F0
+//		Offset -> 0x021CAB70
 //		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureElapsedTime
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -147,7 +147,7 @@ float UMovieSceneCaptureEnvironment::STATIC_GetCaptureElapsedTime()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureElapsedTime");
 
-	UMovieSceneCaptureEnvironment_GetCaptureElapsedTime_Params params;
+	UMovieSceneCaptureEnvironment_GetCaptureElapsedTime_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

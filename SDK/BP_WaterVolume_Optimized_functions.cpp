@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.CollectRippleGenerators
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_WaterVolume_Optimized_C::CollectRippleGenerators()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.CollectRippleGenerators");
 
-	ABP_WaterVolume_Optimized_C_CollectRippleGenerators_Params params;
+	ABP_WaterVolume_Optimized_C_CollectRippleGenerators_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,14 +38,14 @@ void ABP_WaterVolume_Optimized_C::CollectRippleGenerators()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_WaterVolume_Optimized_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.UserConstructionScript");
 
-	ABP_WaterVolume_Optimized_C_UserConstructionScript_Params params;
+	ABP_WaterVolume_Optimized_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -56,14 +56,14 @@ void ABP_WaterVolume_Optimized_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_WaterVolume_Optimized_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.ReceiveBeginPlay");
 
-	ABP_WaterVolume_Optimized_C_ReceiveBeginPlay_Params params;
+	ABP_WaterVolume_Optimized_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -74,7 +74,7 @@ void ABP_WaterVolume_Optimized_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.ReceiveActorBeginOverlap
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -83,7 +83,7 @@ void ABP_WaterVolume_Optimized_C::ReceiveActorBeginOverlap(class AActor* OtherAc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.ReceiveActorBeginOverlap");
 
-	ABP_WaterVolume_Optimized_C_ReceiveActorBeginOverlap_Params params;
+	ABP_WaterVolume_Optimized_C_ReceiveActorBeginOverlap_Params params {};
 	params.OtherActor = OtherActor;
 
 	auto flags = fn->FunctionFlags;
@@ -95,7 +95,7 @@ void ABP_WaterVolume_Optimized_C::ReceiveActorBeginOverlap(class AActor* OtherAc
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.ReceiveActorEndOverlap
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -104,7 +104,7 @@ void ABP_WaterVolume_Optimized_C::ReceiveActorEndOverlap(class AActor* OtherActo
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.ReceiveActorEndOverlap");
 
-	ABP_WaterVolume_Optimized_C_ReceiveActorEndOverlap_Params params;
+	ABP_WaterVolume_Optimized_C_ReceiveActorEndOverlap_Params params {};
 	params.OtherActor = OtherActor;
 
 	auto flags = fn->FunctionFlags;
@@ -116,7 +116,7 @@ void ABP_WaterVolume_Optimized_C::ReceiveActorEndOverlap(class AActor* OtherActo
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.ExecuteUbergraph_BP_WaterVolume_Optimized
 //		Flags  -> ()
 // Parameters:
@@ -125,7 +125,7 @@ void ABP_WaterVolume_Optimized_C::ExecuteUbergraph_BP_WaterVolume_Optimized(int 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_WaterVolume_Optimized.BP_WaterVolume_Optimized_C.ExecuteUbergraph_BP_WaterVolume_Optimized");
 
-	ABP_WaterVolume_Optimized_C_ExecuteUbergraph_BP_WaterVolume_Optimized_Params params;
+	ABP_WaterVolume_Optimized_C_ExecuteUbergraph_BP_WaterVolume_Optimized_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

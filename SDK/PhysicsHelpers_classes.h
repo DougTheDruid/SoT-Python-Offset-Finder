@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -44,7 +44,7 @@ public:
 class UMockPostPhysicsTickerComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_A14W[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RBOP[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

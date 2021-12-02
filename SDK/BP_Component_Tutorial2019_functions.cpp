@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.SwapMysteriousStrangerToTutorialModeOnClient
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void UBP_Component_Tutorial2019_C::SwapMysteriousStrangerToTutorialModeOnClient(
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.SwapMysteriousStrangerToTutorialModeOnClient");
 
-	UBP_Component_Tutorial2019_C_SwapMysteriousStrangerToTutorialModeOnClient_Params params;
+	UBP_Component_Tutorial2019_C_SwapMysteriousStrangerToTutorialModeOnClient_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,7 +38,7 @@ void UBP_Component_Tutorial2019_C::SwapMysteriousStrangerToTutorialModeOnClient(
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TeleportPlayerToOnboardingSpawnPoint
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -46,7 +46,7 @@ void UBP_Component_Tutorial2019_C::TeleportPlayerToOnboardingSpawnPoint()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TeleportPlayerToOnboardingSpawnPoint");
 
-	UBP_Component_Tutorial2019_C_TeleportPlayerToOnboardingSpawnPoint_Params params;
+	UBP_Component_Tutorial2019_C_TeleportPlayerToOnboardingSpawnPoint_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -57,7 +57,7 @@ void UBP_Component_Tutorial2019_C::TeleportPlayerToOnboardingSpawnPoint()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.GetPlayerController
 //		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -66,7 +66,7 @@ void UBP_Component_Tutorial2019_C::GetPlayerController(class AAthenaPlayerContro
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.GetPlayerController");
 
-	UBP_Component_Tutorial2019_C_GetPlayerController_Params params;
+	UBP_Component_Tutorial2019_C_GetPlayerController_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -80,7 +80,7 @@ void UBP_Component_Tutorial2019_C::GetPlayerController(class AAthenaPlayerContro
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ConvertActorIdsToActors
 //		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -90,7 +90,7 @@ void UBP_Component_Tutorial2019_C::ConvertActorIdsToActors(TArray<TAssetPtr<clas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ConvertActorIdsToActors");
 
-	UBP_Component_Tutorial2019_C_ConvertActorIdsToActors_Params params;
+	UBP_Component_Tutorial2019_C_ConvertActorIdsToActors_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -106,7 +106,7 @@ void UBP_Component_Tutorial2019_C::ConvertActorIdsToActors(TArray<TAssetPtr<clas
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Debug_SearchForMissingGoldHoarders
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -114,7 +114,7 @@ void UBP_Component_Tutorial2019_C::Debug_SearchForMissingGoldHoarders()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Debug_SearchForMissingGoldHoarders");
 
-	UBP_Component_Tutorial2019_C_Debug_SearchForMissingGoldHoarders_Params params;
+	UBP_Component_Tutorial2019_C_Debug_SearchForMissingGoldHoarders_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -125,7 +125,7 @@ void UBP_Component_Tutorial2019_C::Debug_SearchForMissingGoldHoarders()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.PopulateGoldHoarderLocationsFromGoldHoarders
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -133,7 +133,7 @@ void UBP_Component_Tutorial2019_C::PopulateGoldHoarderLocationsFromGoldHoarders(
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.PopulateGoldHoarderLocationsFromGoldHoarders");
 
-	UBP_Component_Tutorial2019_C_PopulateGoldHoarderLocationsFromGoldHoarders_Params params;
+	UBP_Component_Tutorial2019_C_PopulateGoldHoarderLocationsFromGoldHoarders_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -144,7 +144,7 @@ void UBP_Component_Tutorial2019_C::PopulateGoldHoarderLocationsFromGoldHoarders(
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceCreatedAndPopulated
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -153,7 +153,7 @@ void UBP_Component_Tutorial2019_C::EnsurePurchaseVoyageSequenceCreatedAndPopulat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceCreatedAndPopulated");
 
-	UBP_Component_Tutorial2019_C_EnsurePurchaseVoyageSequenceCreatedAndPopulated_Params params;
+	UBP_Component_Tutorial2019_C_EnsurePurchaseVoyageSequenceCreatedAndPopulated_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -167,7 +167,7 @@ void UBP_Component_Tutorial2019_C::EnsurePurchaseVoyageSequenceCreatedAndPopulat
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceObjectCreated
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -176,7 +176,7 @@ void UBP_Component_Tutorial2019_C::EnsurePurchaseVoyageSequenceObjectCreated(cla
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.EnsurePurchaseVoyageSequenceObjectCreated");
 
-	UBP_Component_Tutorial2019_C_EnsurePurchaseVoyageSequenceObjectCreated_Params params;
+	UBP_Component_Tutorial2019_C_EnsurePurchaseVoyageSequenceObjectCreated_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -190,14 +190,14 @@ void UBP_Component_Tutorial2019_C::EnsurePurchaseVoyageSequenceObjectCreated(cla
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.OnRep_GoldHoarderLocations
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::OnRep_GoldHoarderLocations()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.OnRep_GoldHoarderLocations");
 
-	UBP_Component_Tutorial2019_C_OnRep_GoldHoarderLocations_Params params;
+	UBP_Component_Tutorial2019_C_OnRep_GoldHoarderLocations_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -208,14 +208,14 @@ void UBP_Component_Tutorial2019_C::OnRep_GoldHoarderLocations()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TrySetUpCoordinator
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::TrySetUpCoordinator()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.TrySetUpCoordinator");
 
-	UBP_Component_Tutorial2019_C_TrySetUpCoordinator_Params params;
+	UBP_Component_Tutorial2019_C_TrySetUpCoordinator_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -226,14 +226,14 @@ void UBP_Component_Tutorial2019_C::TrySetUpCoordinator()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnClient
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::ReceiveTutorial2019BeginPlayOnClient()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnClient");
 
-	UBP_Component_Tutorial2019_C_ReceiveTutorial2019BeginPlayOnClient_Params params;
+	UBP_Component_Tutorial2019_C_ReceiveTutorial2019BeginPlayOnClient_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -244,14 +244,14 @@ void UBP_Component_Tutorial2019_C::ReceiveTutorial2019BeginPlayOnClient()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnServer
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::ReceiveTutorial2019BeginPlayOnServer()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ReceiveTutorial2019BeginPlayOnServer");
 
-	UBP_Component_Tutorial2019_C_ReceiveTutorial2019BeginPlayOnServer_Params params;
+	UBP_Component_Tutorial2019_C_ReceiveTutorial2019BeginPlayOnServer_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -262,14 +262,14 @@ void UBP_Component_Tutorial2019_C::ReceiveTutorial2019BeginPlayOnServer()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ForceDisableComponent_Blueprint
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Component_Tutorial2019_C::ForceDisableComponent_Blueprint()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ForceDisableComponent_Blueprint");
 
-	UBP_Component_Tutorial2019_C_ForceDisableComponent_Blueprint_Params params;
+	UBP_Component_Tutorial2019_C_ForceDisableComponent_Blueprint_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -280,7 +280,7 @@ void UBP_Component_Tutorial2019_C::ForceDisableComponent_Blueprint()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Set Prompts Visibility
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -291,7 +291,7 @@ void UBP_Component_Tutorial2019_C::Set_Prompts_Visibility(bool IsHidden, bool Re
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.Set Prompts Visibility");
 
-	UBP_Component_Tutorial2019_C_Set_Prompts_Visibility_Params params;
+	UBP_Component_Tutorial2019_C_Set_Prompts_Visibility_Params params {};
 	params.IsHidden = IsHidden;
 	params.ReEvaluate = ReEvaluate;
 	params.Delay_In_Seconds = Delay_In_Seconds;
@@ -305,7 +305,7 @@ void UBP_Component_Tutorial2019_C::Set_Prompts_Visibility(bool IsHidden, bool Re
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ControllerOnEndPlay
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -314,7 +314,7 @@ void UBP_Component_Tutorial2019_C::ControllerOnEndPlay(TEnumAsByte<Engine_EEndPl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ControllerOnEndPlay");
 
-	UBP_Component_Tutorial2019_C_ControllerOnEndPlay_Params params;
+	UBP_Component_Tutorial2019_C_ControllerOnEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -326,7 +326,7 @@ void UBP_Component_Tutorial2019_C::ControllerOnEndPlay(TEnumAsByte<Engine_EEndPl
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ExecuteUbergraph_BP_Component_Tutorial2019
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -335,7 +335,7 @@ void UBP_Component_Tutorial2019_C::ExecuteUbergraph_BP_Component_Tutorial2019(in
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Component_Tutorial2019.BP_Component_Tutorial2019_C.ExecuteUbergraph_BP_Component_Tutorial2019");
 
-	UBP_Component_Tutorial2019_C_ExecuteUbergraph_BP_Component_Tutorial2019_Params params;
+	UBP_Component_Tutorial2019_C_ExecuteUbergraph_BP_Component_Tutorial2019_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -69,7 +69,7 @@ void UHeightTriggerableAudioComponentParams::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B54C80
+//		Offset -> 0x03AA5CA0
 //		Name   -> Function SpireFramework.HeightTriggerableEffectsComponent.SetMovementDirection
 //		Flags  -> (Final, RequiredAPI, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
@@ -78,7 +78,7 @@ void UHeightTriggerableEffectsComponent::SetMovementDirection(TEnumAsByte<SpireF
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SpireFramework.HeightTriggerableEffectsComponent.SetMovementDirection");
 
-	UHeightTriggerableEffectsComponent_SetMovementDirection_Params params;
+	UHeightTriggerableEffectsComponent_SetMovementDirection_Params params {};
 	params.InMovement = InMovement;
 
 	auto flags = fn->FunctionFlags;
@@ -145,7 +145,7 @@ void USpireServiceParams::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B54B50
+//		Offset -> 0x03AA5B70
 //		Name   -> Function SpireFramework.SpireService.OnRep_SpireLevels
 //		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
@@ -154,7 +154,7 @@ void ASpireService::OnRep_SpireLevels(TArray<struct FSpireInfo> InPreviousSpireL
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SpireFramework.SpireService.OnRep_SpireLevels");
 
-	ASpireService_OnRep_SpireLevels_Params params;
+	ASpireService_OnRep_SpireLevels_Params params {};
 	params.InPreviousSpireLevels = InPreviousSpireLevels;
 
 	auto flags = fn->FunctionFlags;
@@ -231,7 +231,7 @@ void UTaleLoadSpireStep::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B54C00
+//		Offset -> 0x03AA5C20
 //		Name   -> Function SpireFramework.TaleSpireService.RegisterResetMechanismInterface
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -240,7 +240,7 @@ void UTaleSpireService::RegisterResetMechanismInterface(class AActor* InMechanis
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SpireFramework.TaleSpireService.RegisterResetMechanismInterface");
 
-	UTaleSpireService_RegisterResetMechanismInterface_Params params;
+	UTaleSpireService_RegisterResetMechanismInterface_Params params {};
 	params.InMechanismResetInterface = InMechanismResetInterface;
 
 	auto flags = fn->FunctionFlags;
@@ -253,7 +253,7 @@ void UTaleSpireService::RegisterResetMechanismInterface(class AActor* InMechanis
 
 
 // Function:
-//		Offset -> 0x03B54B20
+//		Offset -> 0x03AA5B40
 //		Name   -> Function SpireFramework.TaleSpireService.IsSpireVisible
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -262,7 +262,7 @@ bool UTaleSpireService::IsSpireVisible()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SpireFramework.TaleSpireService.IsSpireVisible");
 
-	UTaleSpireService_IsSpireVisible_Params params;
+	UTaleSpireService_IsSpireVisible_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

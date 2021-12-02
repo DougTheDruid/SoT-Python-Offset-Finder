@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -41,50 +41,6 @@ void UAthenaCharacterBaseMovementComponentWithInterference::BeforeDelete()
 	UAthenaCharacterBaseMovementComponent::BeforeDelete();
 
 }
-
-// Function:
-//		Offset -> 0x0328B570
-//		Name   -> Function AthenaInputMkII.MovementInterferenceComponent.OnMoveRightInput
-//		Flags  -> (Final, Native, Private)
-// Parameters:
-//		float                                              Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UMovementInterferenceComponent::OnMoveRightInput(float Value)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaInputMkII.MovementInterferenceComponent.OnMoveRightInput");
-
-	UMovementInterferenceComponent_OnMoveRightInput_Params params;
-	params.Value = Value;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0328B4F0
-//		Name   -> Function AthenaInputMkII.MovementInterferenceComponent.OnMoveForwardInput
-//		Flags  -> (Final, Native, Private)
-// Parameters:
-//		float                                              Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UMovementInterferenceComponent::OnMoveForwardInput(float Value)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaInputMkII.MovementInterferenceComponent.OnMoveForwardInput");
-
-	UMovementInterferenceComponent_OnMoveForwardInput_Params params;
-	params.Value = Value;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
 
 void UMovementInterferenceComponent::AfterRead()
 {

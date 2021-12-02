@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -59,7 +59,7 @@ void FTutorialShowTutorialLegendaryTavernStrangerEvent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03C3F160
+//		Offset -> 0x03B90B10
 //		Name   -> Function Tutorial.CompanyTutorialVoyageProgress.IsSameVoyage
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -69,7 +69,7 @@ bool UCompanyTutorialVoyageProgress::IsSameVoyage(const struct FText& VoyageName
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.CompanyTutorialVoyageProgress.IsSameVoyage");
 
-	UCompanyTutorialVoyageProgress_IsSameVoyage_Params params;
+	UCompanyTutorialVoyageProgress_IsSameVoyage_Params params {};
 	params.VoyageName = VoyageName;
 
 	auto flags = fn->FunctionFlags;
@@ -84,7 +84,7 @@ bool UCompanyTutorialVoyageProgress::IsSameVoyage(const struct FText& VoyageName
 
 
 // Function:
-//		Offset -> 0x03C3EF00
+//		Offset -> 0x03B908B0
 //		Name   -> Function Tutorial.CompanyTutorialVoyageProgress.AssignVoyage
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -94,7 +94,7 @@ void UCompanyTutorialVoyageProgress::AssignVoyage(class UClass* VoyageProposalDe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.CompanyTutorialVoyageProgress.AssignVoyage");
 
-	UCompanyTutorialVoyageProgress_AssignVoyage_Params params;
+	UCompanyTutorialVoyageProgress_AssignVoyage_Params params {};
 	params.VoyageProposalDescClass = VoyageProposalDescClass;
 	params.TaleRankDescClass = TaleRankDescClass;
 
@@ -148,14 +148,14 @@ void UOnboardingStatusInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnServer
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UTutorial2019Component::ReceiveTutorial2019BeginPlayOnServer()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnServer");
 
-	UTutorial2019Component_ReceiveTutorial2019BeginPlayOnServer_Params params;
+	UTutorial2019Component_ReceiveTutorial2019BeginPlayOnServer_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -166,14 +166,14 @@ void UTutorial2019Component::ReceiveTutorial2019BeginPlayOnServer()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnClient
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UTutorial2019Component::ReceiveTutorial2019BeginPlayOnClient()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.ReceiveTutorial2019BeginPlayOnClient");
 
-	UTutorial2019Component_ReceiveTutorial2019BeginPlayOnClient_Params params;
+	UTutorial2019Component_ReceiveTutorial2019BeginPlayOnClient_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -184,7 +184,7 @@ void UTutorial2019Component::ReceiveTutorial2019BeginPlayOnClient()
 
 
 // Function:
-//		Offset -> 0x03C3F220
+//		Offset -> 0x03B90BD0
 //		Name   -> Function Tutorial.Tutorial2019Component.OnRep_IsEnabledByServer
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -193,7 +193,7 @@ void UTutorial2019Component::OnRep_IsEnabledByServer(bool OldIsEnabled)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.OnRep_IsEnabledByServer");
 
-	UTutorial2019Component_OnRep_IsEnabledByServer_Params params;
+	UTutorial2019Component_OnRep_IsEnabledByServer_Params params {};
 	params.OldIsEnabled = OldIsEnabled;
 
 	auto flags = fn->FunctionFlags;
@@ -206,14 +206,14 @@ void UTutorial2019Component::OnRep_IsEnabledByServer(bool OldIsEnabled)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function Tutorial.Tutorial2019Component.ForceDisableComponent_Blueprint
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UTutorial2019Component::ForceDisableComponent_Blueprint()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.ForceDisableComponent_Blueprint");
 
-	UTutorial2019Component_ForceDisableComponent_Blueprint_Params params;
+	UTutorial2019Component_ForceDisableComponent_Blueprint_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -224,14 +224,14 @@ void UTutorial2019Component::ForceDisableComponent_Blueprint()
 
 
 // Function:
-//		Offset -> 0x03C3EFC0
+//		Offset -> 0x03B90970
 //		Name   -> Function Tutorial.Tutorial2019Component.BeginOnServer
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UTutorial2019Component::BeginOnServer()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019Component.BeginOnServer");
 
-	UTutorial2019Component_BeginOnServer_Params params;
+	UTutorial2019Component_BeginOnServer_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -269,7 +269,7 @@ void UTutorial2019ContextualDelegatingComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03C3F090
+//		Offset -> 0x03B90A40
 //		Name   -> Function Tutorial.Tutorial2019FunctionLibrary.GetNearestOnboardingSpawnPoint
 //		Flags  -> (Final, BlueprintAuthorityOnly, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -279,7 +279,7 @@ struct FTeleportLocation UTutorial2019FunctionLibrary::STATIC_GetNearestOnboardi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.Tutorial2019FunctionLibrary.GetNearestOnboardingSpawnPoint");
 
-	UTutorial2019FunctionLibrary_GetNearestOnboardingSpawnPoint_Params params;
+	UTutorial2019FunctionLibrary_GetNearestOnboardingSpawnPoint_Params params {};
 	params.CharacterToTeleport = CharacterToTeleport;
 
 	auto flags = fn->FunctionFlags;
@@ -306,7 +306,7 @@ void UTutorial2019FunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03C3EFE0
+//		Offset -> 0x03B90990
 //		Name   -> Function Tutorial.TutorialHelpersBlueprintLibrary.FirePromptCompleted
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -316,7 +316,7 @@ void UTutorialHelpersBlueprintLibrary::STATIC_FirePromptCompleted(class UClass* 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.TutorialHelpersBlueprintLibrary.FirePromptCompleted");
 
-	UTutorialHelpersBlueprintLibrary_FirePromptCompleted_Params params;
+	UTutorialHelpersBlueprintLibrary_FirePromptCompleted_Params params {};
 	params.AccessKey = AccessKey;
 	params.WorldContextObject = WorldContextObject;
 
@@ -342,14 +342,14 @@ void UTutorialHelpersBlueprintLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03C3F2B0
+//		Offset -> 0x03B90C60
 //		Name   -> Function Tutorial.TutorialManager.OnRep_SelectedTutorialClass
 //		Flags  -> (Final, Native, Private)
 void UTutorialManager::OnRep_SelectedTutorialClass()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.TutorialManager.OnRep_SelectedTutorialClass");
 
-	UTutorialManager_OnRep_SelectedTutorialClass_Params params;
+	UTutorialManager_OnRep_SelectedTutorialClass_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -409,7 +409,7 @@ void UBeachNPCSpawnFlowStarter::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03C3F130
+//		Offset -> 0x03B90AE0
 //		Name   -> Function Tutorial.CompanyOnboardingStarter.HasPrerequisites
 //		Flags  -> (Native, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -418,7 +418,7 @@ bool UCompanyOnboardingStarter::HasPrerequisites()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tutorial.CompanyOnboardingStarter.HasPrerequisites");
 
-	UCompanyOnboardingStarter_HasPrerequisites_Params params;
+	UCompanyOnboardingStarter_HasPrerequisites_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

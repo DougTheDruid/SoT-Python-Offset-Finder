@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_audio_wpn_shop_wsp.BP_audio_wpn_shop_wsp_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_audio_wpn_shop_wsp_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_audio_wpn_shop_wsp.BP_audio_wpn_shop_wsp_C.UserConstructionScript");
 
-	ABP_audio_wpn_shop_wsp_C_UserConstructionScript_Params params;
+	ABP_audio_wpn_shop_wsp_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void ABP_audio_wpn_shop_wsp_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_audio_wpn_shop_wsp.BP_audio_wpn_shop_wsp_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_audio_wpn_shop_wsp_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_audio_wpn_shop_wsp.BP_audio_wpn_shop_wsp_C.ReceiveBeginPlay");
 
-	ABP_audio_wpn_shop_wsp_C_ReceiveBeginPlay_Params params;
+	ABP_audio_wpn_shop_wsp_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void ABP_audio_wpn_shop_wsp_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_audio_wpn_shop_wsp.BP_audio_wpn_shop_wsp_C.ExecuteUbergraph_BP_audio_wpn_shop_wsp
 //		Flags  -> ()
 // Parameters:
@@ -64,7 +64,7 @@ void ABP_audio_wpn_shop_wsp_C::ExecuteUbergraph_BP_audio_wpn_shop_wsp(int EntryP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_audio_wpn_shop_wsp.BP_audio_wpn_shop_wsp_C.ExecuteUbergraph_BP_audio_wpn_shop_wsp");
 
-	ABP_audio_wpn_shop_wsp_C_ExecuteUbergraph_BP_audio_wpn_shop_wsp_Params params;
+	ABP_audio_wpn_shop_wsp_C_ExecuteUbergraph_BP_audio_wpn_shop_wsp_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

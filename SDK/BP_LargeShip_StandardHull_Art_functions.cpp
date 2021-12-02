@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShip_StandardHull_Art.BP_LargeShip_StandardHull_Art_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_LargeShip_StandardHull_Art_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShip_StandardHull_Art.BP_LargeShip_StandardHull_Art_C.UserConstructionScript");
 
-	ABP_LargeShip_StandardHull_Art_C_UserConstructionScript_Params params;
+	ABP_LargeShip_StandardHull_Art_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -40,6 +40,7 @@ void ABP_LargeShip_StandardHull_Art_C::AfterRead()
 {
 	AActor::AfterRead();
 
+	READ_PTR_FULL(HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent, UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent);
 	READ_PTR_FULL(shp_hatch_01_a, UStaticMeshComponent);
 	READ_PTR_FULL(FirePostProcess, UPostProcessComponent);
 	READ_PTR_FULL(Fire_PP_Volume, UBoxComponent);
@@ -139,6 +140,7 @@ void ABP_LargeShip_StandardHull_Art_C::BeforeDelete()
 {
 	AActor::BeforeDelete();
 
+	DELE_PTR_FULL(HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent);
 	DELE_PTR_FULL(shp_hatch_01_a);
 	DELE_PTR_FULL(FirePostProcess);
 	DELE_PTR_FULL(Fire_PP_Volume);

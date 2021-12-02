@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,18 +20,17 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Blunderbuss.BP_Blunderbuss_C
-// 0x0034 (FullSize[0x0A60] - InheritedSize[0x0A2C])
+// 0x0030 (FullSize[0x0A80] - InheritedSize[0x0A50])
 class ABP_Blunderbuss_C : public AProjectileWeapon
 {
 public:
-	unsigned char                                      UnknownData_MSJ1[0x4];                                     // 0x0A2C(0x0004) Fix Super Size
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0A30(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-	class UPostProcessComponent*                       PostProcess;                                               // 0x0A38(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
-	TEnumAsByte<RareAudio_EEmitterRelationship>        sfx_relationship;                                          // 0x0A40(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_343K[0x7];                                     // 0x0A41(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UMaterialInstanceDynamic*                    DynamicMaterial;                                           // 0x0A48(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class UObject*                                     FiringVFX3rdPerson;                                        // 0x0A50(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class UWwiseEvent*                                 Blunderbuss_Firing_sfx_3rd_person;                         // 0x0A58(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0A50(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
+	class UPostProcessComponent*                       PostProcess;                                               // 0x0A58(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	TEnumAsByte<RareAudio_EEmitterRelationship>        sfx_relationship;                                          // 0x0A60(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_PVE3[0x7];                                     // 0x0A61(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class UMaterialInstanceDynamic*                    DynamicMaterial;                                           // 0x0A68(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UObject*                                     FiringVFX3rdPerson;                                        // 0x0A70(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UWwiseEvent*                                 Blunderbuss_Firing_sfx_3rd_person;                         // 0x0A78(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 
 	static UClass* StaticClass()

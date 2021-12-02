@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -20,14 +20,16 @@ namespace CG
 
 void FPlayerEnteredWorldLocationNotificationEvent::AfterRead()
 {
+	READ_PTR_FULL(AudioOverride, UPopUpAudioDesc);
 }
 
 void FPlayerEnteredWorldLocationNotificationEvent::BeforeDelete()
 {
+	DELE_PTR_FULL(AudioOverride);
 }
 
 // Function:
-//		Offset -> 0x03F0E930
+//		Offset -> 0x03E7CFE0
 //		Name   -> Function WorldLocationPopUpFramework.WorldLocationPopUpComponent.OnOverlapEnd
 //		Flags  -> (Final, Native, Protected)
 // Parameters:
@@ -38,7 +40,7 @@ void UWorldLocationPopUpComponent::OnOverlapEnd(class AActor* OtherActor, class 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WorldLocationPopUpFramework.WorldLocationPopUpComponent.OnOverlapEnd");
 
-	UWorldLocationPopUpComponent_OnOverlapEnd_Params params;
+	UWorldLocationPopUpComponent_OnOverlapEnd_Params params {};
 	params.OtherActor = OtherActor;
 	params.OtherComp = OtherComp;
 	params.OtherBodyIndex = OtherBodyIndex;
@@ -53,7 +55,7 @@ void UWorldLocationPopUpComponent::OnOverlapEnd(class AActor* OtherActor, class 
 
 
 // Function:
-//		Offset -> 0x03F0E760
+//		Offset -> 0x03E7CE10
 //		Name   -> Function WorldLocationPopUpFramework.WorldLocationPopUpComponent.OnOverlapBegin
 //		Flags  -> (Final, Native, Protected, HasOutParms)
 // Parameters:
@@ -66,7 +68,7 @@ void UWorldLocationPopUpComponent::OnOverlapBegin(class AActor* OtherActor, clas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WorldLocationPopUpFramework.WorldLocationPopUpComponent.OnOverlapBegin");
 
-	UWorldLocationPopUpComponent_OnOverlapBegin_Params params;
+	UWorldLocationPopUpComponent_OnOverlapBegin_Params params {};
 	params.OtherActor = OtherActor;
 	params.OtherComp = OtherComp;
 	params.OtherBodyIndex = OtherBodyIndex;
@@ -102,11 +104,37 @@ void UWorldLocationPopUpDataAsset::AfterRead()
 {
 	UDataAsset::AfterRead();
 
+	READ_PTR_FULL(AudioOverride, UPopUpAudioDesc);
 }
 
 void UWorldLocationPopUpDataAsset::BeforeDelete()
 {
 	UDataAsset::BeforeDelete();
+
+	DELE_PTR_FULL(AudioOverride);
+}
+
+void UWorldLocationVisitorInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UWorldLocationVisitorInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UWorldLocationVisitorComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+}
+
+void UWorldLocationVisitorComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
 
 }
 

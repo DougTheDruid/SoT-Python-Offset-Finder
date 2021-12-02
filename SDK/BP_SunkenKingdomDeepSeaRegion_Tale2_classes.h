@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,11 +20,10 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_SunkenKingdomDeepSeaRegion_Tale2.BP_SunkenKingdomDeepSeaRegion_Tale2_C
-// 0x0008 (FullSize[0x0428] - InheritedSize[0x0420])
-class ABP_SunkenKingdomDeepSeaRegion_Tale2_C : public ADeepSeaRegion
+// 0x0000 (FullSize[0x0450] - InheritedSize[0x0450])
+class ABP_SunkenKingdomDeepSeaRegion_Tale2_C : public ABP_DeepSeaRegion_C
 {
 public:
-	class UCapsuleComponent*                           Capsule;                                                   // 0x0420(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
 
 
 	static UClass* StaticClass()
@@ -35,7 +34,6 @@ public:
 
 
 
-	void UserConstructionScript();
 	void AfterRead();
 	void BeforeDelete();
 

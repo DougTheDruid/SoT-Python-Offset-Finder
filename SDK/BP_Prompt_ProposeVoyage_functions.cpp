@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.PostInitialize
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_ProposeVoyage_C::PostInitialize()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.PostInitialize");
 
-	UBP_Prompt_ProposeVoyage_C_PostInitialize_Params params;
+	UBP_Prompt_ProposeVoyage_C_PostInitialize_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,16 +37,16 @@ void UBP_Prompt_ProposeVoyage_C::PostInitialize()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Prompt_OfferPurchased
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-//		struct FOfferPurchasedEvent                        Ev                                                         (Parm)
-void UBP_Prompt_ProposeVoyage_C::Prompt_OfferPurchased(const struct FOfferPurchasedEvent& Ev)
+//		struct FAthena_FOfferPurchasedEvent                Ev                                                         (Parm)
+void UBP_Prompt_ProposeVoyage_C::Prompt_OfferPurchased(const struct FAthena_FOfferPurchasedEvent& Ev)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Prompt_OfferPurchased");
 
-	UBP_Prompt_ProposeVoyage_C_Prompt_OfferPurchased_Params params;
+	UBP_Prompt_ProposeVoyage_C_Prompt_OfferPurchased_Params params {};
 	params.Ev = Ev;
 
 	auto flags = fn->FunctionFlags;
@@ -58,14 +58,14 @@ void UBP_Prompt_ProposeVoyage_C::Prompt_OfferPurchased(const struct FOfferPurcha
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.UnregisterOtherEvents_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_ProposeVoyage_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.UnregisterOtherEvents_Implementable");
 
-	UBP_Prompt_ProposeVoyage_C_UnregisterOtherEvents_Implementable_Params params;
+	UBP_Prompt_ProposeVoyage_C_UnregisterOtherEvents_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -76,14 +76,14 @@ void UBP_Prompt_ProposeVoyage_C::UnregisterOtherEvents_Implementable()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Evaluate
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_ProposeVoyage_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.Evaluate");
 
-	UBP_Prompt_ProposeVoyage_C_Evaluate_Params params;
+	UBP_Prompt_ProposeVoyage_C_Evaluate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -94,7 +94,7 @@ void UBP_Prompt_ProposeVoyage_C::Evaluate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.ExecuteUbergraph_BP_Prompt_ProposeVoyage
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -103,7 +103,7 @@ void UBP_Prompt_ProposeVoyage_C::ExecuteUbergraph_BP_Prompt_ProposeVoyage(int En
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_ProposeVoyage.BP_Prompt_ProposeVoyage_C.ExecuteUbergraph_BP_Prompt_ProposeVoyage");
 
-	UBP_Prompt_ProposeVoyage_C_ExecuteUbergraph_BP_Prompt_ProposeVoyage_Params params;
+	UBP_Prompt_ProposeVoyage_C_ExecuteUbergraph_BP_Prompt_ProposeVoyage_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -132,9 +132,9 @@ class UWieldableMysteriousNoteLayout : public UDataAsset
 {
 public:
 	struct FText                                       DefaultTitle;                                              // 0x0028(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_XDYZ[0x20];                                    // 0x0028(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_SAZF[0x20];                                    // 0x0028(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       DefaultBody;                                               // 0x0060(0x0018) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnInstance)
-	unsigned char                                      UnknownData_ATTY[0x20];                                    // 0x0060(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_HH7L[0x20];                                    // 0x0060(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FWieldableMysteriousNoteLayoutItem          DefaultNoteLayoutItem;                                     // 0x0098(0x00A0) (Edit, DisableEditOnInstance)
 	TArray<struct FWieldableMysteriousNoteLayoutItem>  NoteLayoutItems;                                           // 0x0138(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 
@@ -179,11 +179,11 @@ public:
 class AMysteriousNotesService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_31IU[0x28];                                    // 0x03D0(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_O516[0x28];                                    // 0x03D0(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UMysteriousNoteSettings*                     CachedNoteSettings;                                        // 0x03F8(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UWieldableMysteriousNoteDataAsset*           WieldableNoteDataAsset;                                    // 0x0400(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UMysteriousNotesCompletionEventsModelDataAsset* CompletionEventsModelData;                                 // 0x0408(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_7TAE[0x88];                                    // 0x0410(0x0088) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9LD8[0x88];                                    // 0x0410(0x0088) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -224,11 +224,11 @@ public:
 class UPlayerMysteriousNoteComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_490L[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_L0DX[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FClientNoteData                             NoteData;                                                  // 0x00D0(0x0018) (Net, RepNotify, Protected)
 	bool                                               BeenPossessed;                                             // 0x00E8(0x0001) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected)
 	bool                                               CinematicPlayed;                                           // 0x00E9(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
-	unsigned char                                      UnknownData_FBQY[0x14E];                                   // 0x00EA(0x014E) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NHVB[0x14E];                                   // 0x00EA(0x014E) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -253,21 +253,21 @@ public:
 };
 
 // Class MysteriousNotes.WieldableMysteriousNote
-// 0x01B0 (FullSize[0x0920] - InheritedSize[0x0770])
+// 0x01B0 (FullSize[0x0940] - InheritedSize[0x0790])
 class AWieldableMysteriousNote : public ASkeletalMeshWieldableItem
 {
 public:
-	unsigned char                                      UnknownData_AQ59[0x10];                                    // 0x0770(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UMaybeCompressedCanvasRenderTarget2D*        RenderTarget;                                              // 0x0780(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	class UWieldableMysteriousNoteLayout*              NoteLayout;                                                // 0x0788(0x0008) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash)
-	int                                                CanvasWidth;                                               // 0x0790(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	int                                                CanvasHeight;                                              // 0x0794(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	float                                              FontScale;                                                 // 0x0798(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ME37[0x54];                                    // 0x079C(0x0054) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UNamedNotificationInputComponent*            NamedNotificationInputComponent;                           // 0x07F0(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUsableWieldableComponent*                   UsableWieldableComponent;                                  // 0x07F8(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UInventoryItemComponent*                     InventoryItemComponent;                                    // 0x0800(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_9NS7[0x118];                                   // 0x0808(0x0118) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZZIL[0x10];                                    // 0x0790(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class UMaybeCompressedCanvasRenderTarget2D*        RenderTarget;                                              // 0x07A0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
+	class UWieldableMysteriousNoteLayout*              NoteLayout;                                                // 0x07A8(0x0008) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash)
+	int                                                CanvasWidth;                                               // 0x07B0(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
+	int                                                CanvasHeight;                                              // 0x07B4(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
+	float                                              FontScale;                                                 // 0x07B8(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_JNFP[0x54];                                    // 0x07BC(0x0054) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class UNamedNotificationInputComponent*            NamedNotificationInputComponent;                           // 0x0810(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUsableWieldableComponent*                   UsableWieldableComponent;                                  // 0x0818(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UInventoryItemComponent*                     InventoryItemComponent;                                    // 0x0820(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_MGOX[0x118];                                   // 0x0828(0x0118) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

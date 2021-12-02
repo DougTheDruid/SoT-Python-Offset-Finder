@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -38,6 +38,42 @@ void FEventRepairableObjectDestroyed::BeforeDelete()
 {
 }
 
+void FEventPlayerUndoRepairEnd::AfterRead()
+{
+}
+
+void FEventPlayerUndoRepairEnd::BeforeDelete()
+{
+}
+
+void FEventPlayerUndoRepairCompleted::AfterRead()
+{
+}
+
+void FEventPlayerUndoRepairCompleted::BeforeDelete()
+{
+}
+
+void FEventPlayerUndoRepairStart::AfterRead()
+{
+}
+
+void FEventPlayerUndoRepairStart::BeforeDelete()
+{
+}
+
+void FShipPartDamagePersistenceModel::AfterRead()
+{
+	FPersistenceModel::AfterRead();
+
+}
+
+void FShipPartDamagePersistenceModel::BeforeDelete()
+{
+	FPersistenceModel::BeforeDelete();
+
+}
+
 void URepairTypeId::AfterRead()
 {
 	UObject::AfterRead();
@@ -51,14 +87,14 @@ void URepairTypeId::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x037A1620
+//		Offset -> 0x033D8080
 //		Name   -> Function Repair.RepairableInterface.HandleDestroy
 //		Flags  -> (Native, Public)
 void URepairableInterface::HandleDestroy()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairableInterface.HandleDestroy");
 
-	URepairableInterface_HandleDestroy_Params params;
+	URepairableInterface_HandleDestroy_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -70,7 +106,32 @@ void URepairableInterface::HandleDestroy()
 
 
 // Function:
-//		Offset -> 0x037A1570
+//		Offset -> 0x033D7FE0
+//		Name   -> Function Repair.RepairableInterface.GetUndoRepairTime
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		class AActor*                                      Interactor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+float URepairableInterface::GetUndoRepairTime(class AActor* Interactor)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairableInterface.GetUndoRepairTime");
+
+	URepairableInterface_GetUndoRepairTime_Params params {};
+	params.Interactor = Interactor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x033D7F30
 //		Name   -> Function Repair.RepairableInterface.GetRepairType
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -79,7 +140,7 @@ class UClass* URepairableInterface::GetRepairType()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairableInterface.GetRepairType");
 
-	URepairableInterface_GetRepairType_Params params;
+	URepairableInterface_GetRepairType_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -93,7 +154,7 @@ class UClass* URepairableInterface::GetRepairType()
 
 
 // Function:
-//		Offset -> 0x037A1540
+//		Offset -> 0x033D7F00
 //		Name   -> Function Repair.RepairableInterface.GetRepairTime
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -102,7 +163,7 @@ float URepairableInterface::GetRepairTime()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairableInterface.GetRepairTime");
 
-	URepairableInterface_GetRepairTime_Params params;
+	URepairableInterface_GetRepairTime_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -116,7 +177,7 @@ float URepairableInterface::GetRepairTime()
 
 
 // Function:
-//		Offset -> 0x037A15F0
+//		Offset -> 0x033D7FB0
 //		Name   -> Function Repair.RepairableInterface.GetRepairableState
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -125,7 +186,7 @@ TEnumAsByte<Repair_ERepairableState> URepairableInterface::GetRepairableState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairableInterface.GetRepairableState");
 
-	URepairableInterface_GetRepairableState_Params params;
+	URepairableInterface_GetRepairableState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -151,7 +212,7 @@ void URepairableInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x037A15B0
+//		Offset -> 0x033D7F70
 //		Name   -> Function Repair.RepairingInterface.GetRepairType
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -160,7 +221,7 @@ class UClass* URepairingInterface::GetRepairType()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Repair.RepairingInterface.GetRepairType");
 
-	URepairingInterface_GetRepairType_Params params;
+	URepairingInterface_GetRepairType_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

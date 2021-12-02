@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview_Lighting.BP_ItemPreview_Lighting_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_ItemPreview_Lighting_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview_Lighting.BP_ItemPreview_Lighting_C.UserConstructionScript");
 
-	ABP_ItemPreview_Lighting_C_UserConstructionScript_Params params;
+	ABP_ItemPreview_Lighting_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void ABP_ItemPreview_Lighting_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview_Lighting.BP_ItemPreview_Lighting_C.PreviewReady__DelegateSignature
 //		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -46,7 +46,7 @@ void ABP_ItemPreview_Lighting_C::PreviewReady__DelegateSignature(const struct FP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview_Lighting.BP_ItemPreview_Lighting_C.PreviewReady__DelegateSignature");
 
-	ABP_ItemPreview_Lighting_C_PreviewReady__DelegateSignature_Params params;
+	ABP_ItemPreview_Lighting_C_PreviewReady__DelegateSignature_Params params {};
 	params.Data = Data;
 
 	auto flags = fn->FunctionFlags;
@@ -58,7 +58,7 @@ void ABP_ItemPreview_Lighting_C::PreviewReady__DelegateSignature(const struct FP
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ItemPreview_Lighting.BP_ItemPreview_Lighting_C.PreviewBusy__DelegateSignature
 //		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -67,7 +67,7 @@ void ABP_ItemPreview_Lighting_C::PreviewBusy__DelegateSignature(const struct FPi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ItemPreview_Lighting.BP_ItemPreview_Lighting_C.PreviewBusy__DelegateSignature");
 
-	ABP_ItemPreview_Lighting_C_PreviewBusy__DelegateSignature_Params params;
+	ABP_ItemPreview_Lighting_C_PreviewBusy__DelegateSignature_Params params {};
 	params.Data = Data;
 
 	auto flags = fn->FunctionFlags;

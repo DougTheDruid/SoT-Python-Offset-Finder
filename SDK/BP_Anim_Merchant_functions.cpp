@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Merchant.BP_Anim_Merchant_C.AnimNotify_NPCItemAnimation
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Anim_Merchant_C::AnimNotify_NPCItemAnimation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Merchant.BP_Anim_Merchant_C.AnimNotify_NPCItemAnimation");
 
-	UBP_Anim_Merchant_C_AnimNotify_NPCItemAnimation_Params params;
+	UBP_Anim_Merchant_C_AnimNotify_NPCItemAnimation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void UBP_Anim_Merchant_C::AnimNotify_NPCItemAnimation()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Merchant.BP_Anim_Merchant_C.ExecuteUbergraph_BP_Anim_Merchant
 //		Flags  -> ()
 // Parameters:
@@ -46,7 +46,7 @@ void UBP_Anim_Merchant_C::ExecuteUbergraph_BP_Anim_Merchant(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Merchant.BP_Anim_Merchant_C.ExecuteUbergraph_BP_Anim_Merchant");
 
-	UBP_Anim_Merchant_C_ExecuteUbergraph_BP_Anim_Merchant_Params params;
+	UBP_Anim_Merchant_C_ExecuteUbergraph_BP_Anim_Merchant_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

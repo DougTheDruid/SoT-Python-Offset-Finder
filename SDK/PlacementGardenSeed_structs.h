@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -31,7 +31,7 @@ struct FPlacementGardenSeed
 	float                                              SpawnWeight_19_0B05BBF2449133E0187C478432462F27;           // 0x0024(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector2D                                   ScaleRange_24_38A1B6C243AC344CC43846AE7098057E;            // 0x0028(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               AlignToSurface_26_C7572FE34B448D93F9CCFA9294397210;        // 0x0030(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_RAEY[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_W43L[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              SinkDepth_30_33CCF791430745D7F68E33949E9163CB;             // 0x0034(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<E_Placement_MeshType_E_Placement_MeshType> AssetType_33_8B357E8349F31326A0229881975B1ADF;             // 0x0038(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               CollideWithPlayer_35_697A910F4984B3701F758BAEA60D8CF3;     // 0x0039(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)

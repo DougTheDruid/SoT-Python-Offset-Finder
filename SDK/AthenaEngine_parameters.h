@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -18,6 +18,13 @@ namespace CG
 //---------------------------------------------------------------------------
 // Parameters
 //---------------------------------------------------------------------------
+
+// Function AthenaEngine.ForceFeedbackCondition.CanPlayForceFeedback
+struct UForceFeedbackCondition_CanPlayForceFeedback_Params
+{
+	class AActor*                                      InOwner;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                               ReturnValue;                                               // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+};
 
 // Function AthenaEngine.BoxedRpcDispatcherComponent.Server_SendRpc
 struct UBoxedRpcDispatcherComponent_Server_SendRpc_Params
@@ -47,13 +54,6 @@ struct UDynamicColourPointLightComponent_DeactivateLight_Params
 struct UDynamicColourPointLightComponent_ActivateLight_Params
 {
 	bool                                               Blend;                                                     // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// Function AthenaEngine.ForceFeedbackCondition.CanPlayForceFeedback
-struct UForceFeedbackCondition_CanPlayForceFeedback_Params
-{
-	class AActor*                                      InOwner;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               ReturnValue;                                               // 0x0008(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
 
 // Function AthenaEngine.PlayModeHelpers.SetPlayModeVariantOverride

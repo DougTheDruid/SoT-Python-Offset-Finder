@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActor_EmissaryEncounteredSkellyFort_AF.BP_PromptActor_EmissaryEncounteredSkellyFort_AF_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryEncounteredSkellyFort_AF.BP_PromptActor_EmissaryEncounteredSkellyFort_AF_C.UserConstructionScript");
 
-	ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C_UserConstructionScript_Params params;
+	ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C::UserConstructionScript(
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActor_EmissaryEncounteredSkellyFort_AF.BP_PromptActor_EmissaryEncounteredSkellyFort_AF_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryEncounteredSkellyFort_AF.BP_PromptActor_EmissaryEncounteredSkellyFort_AF_C.ReceiveBeginPlay");
 
-	ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C_ReceiveBeginPlay_Params params;
+	ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActor_EmissaryEncounteredSkellyFort_AF.BP_PromptActor_EmissaryEncounteredSkellyFort_AF_C.ReceiveEndPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -64,7 +64,7 @@ void ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C::ReceiveEndPlay(TEnumAsB
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryEncounteredSkellyFort_AF.BP_PromptActor_EmissaryEncounteredSkellyFort_AF_C.ReceiveEndPlay");
 
-	ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C_ReceiveEndPlay_Params params;
+	ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C_ReceiveEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -76,7 +76,7 @@ void ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C::ReceiveEndPlay(TEnumAsB
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActor_EmissaryEncounteredSkellyFort_AF.BP_PromptActor_EmissaryEncounteredSkellyFort_AF_C.ExecuteUbergraph_BP_PromptActor_EmissaryEncounteredSkellyFort_AF
 //		Flags  -> ()
 // Parameters:
@@ -85,7 +85,7 @@ void ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C::ExecuteUbergraph_BP_Pro
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_EmissaryEncounteredSkellyFort_AF.BP_PromptActor_EmissaryEncounteredSkellyFort_AF_C.ExecuteUbergraph_BP_PromptActor_EmissaryEncounteredSkellyFort_AF");
 
-	ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C_ExecuteUbergraph_BP_PromptActor_EmissaryEncounteredSkellyFort_AF_Params params;
+	ABP_PromptActor_EmissaryEncounteredSkellyFort_AF_C_ExecuteUbergraph_BP_PromptActor_EmissaryEncounteredSkellyFort_AF_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

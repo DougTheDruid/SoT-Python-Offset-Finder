@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0.Brig
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function bld_beacon_01_b_fire.bld_beacon_01_b_fire_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void Abld_beacon_01_b_fire_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function bld_beacon_01_b_fire.bld_beacon_01_b_fire_C.UserConstructionScript");
 
-	Abld_beacon_01_b_fire_C_UserConstructionScript_Params params;
+	Abld_beacon_01_b_fire_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void Abld_beacon_01_b_fire_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function bld_beacon_01_b_fire.bld_beacon_01_b_fire_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void Abld_beacon_01_b_fire_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function bld_beacon_01_b_fire.bld_beacon_01_b_fire_C.ReceiveBeginPlay");
 
-	Abld_beacon_01_b_fire_C_ReceiveBeginPlay_Params params;
+	Abld_beacon_01_b_fire_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void Abld_beacon_01_b_fire_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function bld_beacon_01_b_fire.bld_beacon_01_b_fire_C.ExecuteUbergraph_bld_beacon_01_b_fire
 //		Flags  -> ()
 // Parameters:
@@ -64,7 +64,7 @@ void Abld_beacon_01_b_fire_C::ExecuteUbergraph_bld_beacon_01_b_fire(int EntryPoi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function bld_beacon_01_b_fire.bld_beacon_01_b_fire_C.ExecuteUbergraph_bld_beacon_01_b_fire");
 
-	Abld_beacon_01_b_fire_C_ExecuteUbergraph_bld_beacon_01_b_fire_Params params;
+	Abld_beacon_01_b_fire_C_ExecuteUbergraph_bld_beacon_01_b_fire_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

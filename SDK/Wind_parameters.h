@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -77,6 +77,12 @@ struct UWindInterface_SetGlobalWindDirection_Params
 struct UWindInterface_SetGlobalWindAngle_Params
 {
 	float                                              InAngle;                                                   // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function Wind.WindInterface.SetCustomMode
+struct UWindInterface_SetCustomMode_Params
+{
+	bool                                               InCustomMode;                                              // 0x0000(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function Wind.WindInterface.RegisterWindZone

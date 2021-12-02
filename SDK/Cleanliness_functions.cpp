@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -59,14 +59,14 @@ void UCleanlinessTransferInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03745B10
+//		Offset -> 0x037740E0
 //		Name   -> Function Cleanliness.CleanlinessComponent.OnRep_CleanlinessInfo
 //		Flags  -> (Final, Native, Private)
 void UCleanlinessComponent::OnRep_CleanlinessInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Cleanliness.CleanlinessComponent.OnRep_CleanlinessInfo");
 
-	UCleanlinessComponent_OnRep_CleanlinessInfo_Params params;
+	UCleanlinessComponent_OnRep_CleanlinessInfo_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

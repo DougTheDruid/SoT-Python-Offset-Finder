@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -27,7 +27,7 @@ void FGDTCustomViewNames::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03EBB9E0
+//		Offset -> 0x03E26630
 //		Name   -> Function GameplayDebugger.GameplayDebuggingComponent.ServerReplicateData
 //		Flags  -> (Final, Exec, Native, Public)
 // Parameters:
@@ -37,7 +37,7 @@ void UGameplayDebuggingComponent::ServerReplicateData(uint32_t InMessage, uint32
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingComponent.ServerReplicateData");
 
-	UGameplayDebuggingComponent_ServerReplicateData_Params params;
+	UGameplayDebuggingComponent_ServerReplicateData_Params params {};
 	params.InMessage = InMessage;
 	params.DataView = DataView;
 
@@ -51,14 +51,14 @@ void UGameplayDebuggingComponent::ServerReplicateData(uint32_t InMessage, uint32
 
 
 // Function:
-//		Offset -> 0x03EBB990
+//		Offset -> 0x03E265E0
 //		Name   -> Function GameplayDebugger.GameplayDebuggingComponent.ServerDiscardNavmeshData
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 void UGameplayDebuggingComponent::ServerDiscardNavmeshData()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingComponent.ServerDiscardNavmeshData");
 
-	UGameplayDebuggingComponent_ServerDiscardNavmeshData_Params params;
+	UGameplayDebuggingComponent_ServerDiscardNavmeshData_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -70,7 +70,7 @@ void UGameplayDebuggingComponent::ServerDiscardNavmeshData()
 
 
 // Function:
-//		Offset -> 0x03EBB8C0
+//		Offset -> 0x03E26510
 //		Name   -> Function GameplayDebugger.GameplayDebuggingComponent.ServerCollectNavmeshData
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
@@ -79,7 +79,7 @@ void UGameplayDebuggingComponent::ServerCollectNavmeshData(const struct FVector_
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingComponent.ServerCollectNavmeshData");
 
-	UGameplayDebuggingComponent_ServerCollectNavmeshData_Params params;
+	UGameplayDebuggingComponent_ServerCollectNavmeshData_Params params {};
 	params.TargetLocation = TargetLocation;
 
 	auto flags = fn->FunctionFlags;
@@ -92,14 +92,14 @@ void UGameplayDebuggingComponent::ServerCollectNavmeshData(const struct FVector_
 
 
 // Function:
-//		Offset -> 0x03EBB8A0
+//		Offset -> 0x03E264F0
 //		Name   -> Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateNavmesh
 //		Flags  -> (Native, Public)
 void UGameplayDebuggingComponent::OnRep_UpdateNavmesh()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateNavmesh");
 
-	UGameplayDebuggingComponent_OnRep_UpdateNavmesh_Params params;
+	UGameplayDebuggingComponent_OnRep_UpdateNavmesh_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -111,14 +111,14 @@ void UGameplayDebuggingComponent::OnRep_UpdateNavmesh()
 
 
 // Function:
-//		Offset -> 0x03EBB880
+//		Offset -> 0x03E264D0
 //		Name   -> Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateEQS
 //		Flags  -> (Native, Public)
 void UGameplayDebuggingComponent::OnRep_UpdateEQS()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateEQS");
 
-	UGameplayDebuggingComponent_OnRep_UpdateEQS_Params params;
+	UGameplayDebuggingComponent_OnRep_UpdateEQS_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -130,14 +130,14 @@ void UGameplayDebuggingComponent::OnRep_UpdateEQS()
 
 
 // Function:
-//		Offset -> 0x03EBB860
+//		Offset -> 0x03E264B0
 //		Name   -> Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateBlackboard
 //		Flags  -> (Native, Public)
 void UGameplayDebuggingComponent::OnRep_UpdateBlackboard()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingComponent.OnRep_UpdateBlackboard");
 
-	UGameplayDebuggingComponent_OnRep_UpdateBlackboard_Params params;
+	UGameplayDebuggingComponent_OnRep_UpdateBlackboard_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -149,14 +149,14 @@ void UGameplayDebuggingComponent::OnRep_UpdateBlackboard()
 
 
 // Function:
-//		Offset -> 0x03EBB840
+//		Offset -> 0x03E26490
 //		Name   -> Function GameplayDebugger.GameplayDebuggingComponent.OnRep_PathCorridorData
 //		Flags  -> (Native, Public)
 void UGameplayDebuggingComponent::OnRep_PathCorridorData()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingComponent.OnRep_PathCorridorData");
 
-	UGameplayDebuggingComponent_OnRep_PathCorridorData_Params params;
+	UGameplayDebuggingComponent_OnRep_PathCorridorData_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -168,14 +168,14 @@ void UGameplayDebuggingComponent::OnRep_PathCorridorData()
 
 
 // Function:
-//		Offset -> 0x03EBB800
+//		Offset -> 0x03E26450
 //		Name   -> Function GameplayDebugger.GameplayDebuggingComponent.OnCycleDetailsView
 //		Flags  -> (Native, Public)
 void UGameplayDebuggingComponent::OnCycleDetailsView()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingComponent.OnCycleDetailsView");
 
-	UGameplayDebuggingComponent_OnCycleDetailsView_Params params;
+	UGameplayDebuggingComponent_OnCycleDetailsView_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -187,7 +187,7 @@ void UGameplayDebuggingComponent::OnCycleDetailsView()
 
 
 // Function:
-//		Offset -> 0x03EBB610
+//		Offset -> 0x03E26260
 //		Name   -> Function GameplayDebugger.GameplayDebuggingComponent.ClientEnableTargetSelection
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
 // Parameters:
@@ -196,7 +196,7 @@ void UGameplayDebuggingComponent::ClientEnableTargetSelection(bool bEnable)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingComponent.ClientEnableTargetSelection");
 
-	UGameplayDebuggingComponent_ClientEnableTargetSelection_Params params;
+	UGameplayDebuggingComponent_ClientEnableTargetSelection_Params params {};
 	params.bEnable = bEnable;
 
 	auto flags = fn->FunctionFlags;
@@ -283,7 +283,7 @@ void AGaneplayDebuggerProxyHUD::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03EBBBD0
+//		Offset -> 0x03E26820
 //		Name   -> Function GameplayDebugger.GameplayDebuggingReplicator.ServerSetActorToDebug
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
@@ -292,7 +292,7 @@ void AGameplayDebuggingReplicator::ServerSetActorToDebug(class AActor* InActor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingReplicator.ServerSetActorToDebug");
 
-	AGameplayDebuggingReplicator_ServerSetActorToDebug_Params params;
+	AGameplayDebuggingReplicator_ServerSetActorToDebug_Params params {};
 	params.InActor = InActor;
 
 	auto flags = fn->FunctionFlags;
@@ -305,7 +305,7 @@ void AGameplayDebuggingReplicator::ServerSetActorToDebug(class AActor* InActor)
 
 
 // Function:
-//		Offset -> 0x03EBBAA0
+//		Offset -> 0x03E266F0
 //		Name   -> Function GameplayDebugger.GameplayDebuggingReplicator.ServerReplicateMessage
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
@@ -316,7 +316,7 @@ void AGameplayDebuggingReplicator::ServerReplicateMessage(class AActor* Actor, u
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingReplicator.ServerReplicateMessage");
 
-	AGameplayDebuggingReplicator_ServerReplicateMessage_Params params;
+	AGameplayDebuggingReplicator_ServerReplicateMessage_Params params {};
 	params.Actor = Actor;
 	params.InMessage = InMessage;
 	params.DataView = DataView;
@@ -331,14 +331,14 @@ void AGameplayDebuggingReplicator::ServerReplicateMessage(class AActor* Actor, u
 
 
 // Function:
-//		Offset -> 0x03EBB820
+//		Offset -> 0x03E26470
 //		Name   -> Function GameplayDebugger.GameplayDebuggingReplicator.OnRep_AutoActivate
 //		Flags  -> (Native, Public)
 void AGameplayDebuggingReplicator::OnRep_AutoActivate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingReplicator.OnRep_AutoActivate");
 
-	AGameplayDebuggingReplicator_OnRep_AutoActivate_Params params;
+	AGameplayDebuggingReplicator_OnRep_AutoActivate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -350,7 +350,7 @@ void AGameplayDebuggingReplicator::OnRep_AutoActivate()
 
 
 // Function:
-//		Offset -> 0x03EBB6D0
+//		Offset -> 0x03E26320
 //		Name   -> Function GameplayDebugger.GameplayDebuggingReplicator.ClientReplicateMessage
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
 // Parameters:
@@ -361,7 +361,7 @@ void AGameplayDebuggingReplicator::ClientReplicateMessage(class AActor* Actor, u
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingReplicator.ClientReplicateMessage");
 
-	AGameplayDebuggingReplicator_ClientReplicateMessage_Params params;
+	AGameplayDebuggingReplicator_ClientReplicateMessage_Params params {};
 	params.Actor = Actor;
 	params.InMessage = InMessage;
 	params.DataView = DataView;
@@ -376,7 +376,7 @@ void AGameplayDebuggingReplicator::ClientReplicateMessage(class AActor* Actor, u
 
 
 // Function:
-//		Offset -> 0x03EBB510
+//		Offset -> 0x03E26160
 //		Name   -> Function GameplayDebugger.GameplayDebuggingReplicator.ClientEnableTargetSelection
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
 // Parameters:
@@ -386,7 +386,7 @@ void AGameplayDebuggingReplicator::ClientEnableTargetSelection(bool bEnable, cla
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingReplicator.ClientEnableTargetSelection");
 
-	AGameplayDebuggingReplicator_ClientEnableTargetSelection_Params params;
+	AGameplayDebuggingReplicator_ClientEnableTargetSelection_Params params {};
 	params.bEnable = bEnable;
 	params.Context = Context;
 
@@ -400,14 +400,14 @@ void AGameplayDebuggingReplicator::ClientEnableTargetSelection(bool bEnable, cla
 
 
 // Function:
-//		Offset -> 0x03EBB4F0
+//		Offset -> 0x03E26140
 //		Name   -> Function GameplayDebugger.GameplayDebuggingReplicator.ClientAutoActivate
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 void AGameplayDebuggingReplicator::ClientAutoActivate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayDebugger.GameplayDebuggingReplicator.ClientAutoActivate");
 
-	AGameplayDebuggingReplicator_ClientAutoActivate_Params params;
+	AGameplayDebuggingReplicator_ClientAutoActivate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

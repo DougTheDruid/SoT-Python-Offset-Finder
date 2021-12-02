@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullInterface.BP_HullInterface_C.Apply Hit
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -32,7 +32,7 @@ void UBP_HullInterface_C::Apply_Hit(const struct FVector& HitPosition, const str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullInterface.BP_HullInterface_C.Apply Hit");
 
-	UBP_HullInterface_C_Apply_Hit_Params params;
+	UBP_HullInterface_C_Apply_Hit_Params params {};
 	params.HitPosition = HitPosition;
 	params.HitNormal = HitNormal;
 	params.HitStrength = HitStrength;

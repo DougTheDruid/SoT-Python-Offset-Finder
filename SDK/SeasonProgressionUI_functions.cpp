@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -18,14 +18,6 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
-void FSeasonIconPopupAsset::AfterRead()
-{
-}
-
-void FSeasonIconPopupAsset::BeforeDelete()
-{
-}
-
 void FSeasonGoalPopupAsset::AfterRead()
 {
 }
@@ -34,19 +26,11 @@ void FSeasonGoalPopupAsset::BeforeDelete()
 {
 }
 
-void FNavigationDesc::AfterRead()
+void FSeasonIconPopupAsset::AfterRead()
 {
 }
 
-void FNavigationDesc::BeforeDelete()
-{
-}
-
-void FEnableMoreButtonEvent::AfterRead()
-{
-}
-
-void FEnableMoreButtonEvent::BeforeDelete()
+void FSeasonIconPopupAsset::BeforeDelete()
 {
 }
 
@@ -63,6 +47,22 @@ void FSeasonProgressionUITelemetryFragment::AfterRead()
 }
 
 void FSeasonProgressionUITelemetryFragment::BeforeDelete()
+{
+}
+
+void FNavigationDesc::AfterRead()
+{
+}
+
+void FNavigationDesc::BeforeDelete()
+{
+}
+
+void FEnableMoreButtonEvent::AfterRead()
+{
+}
+
+void FEnableMoreButtonEvent::BeforeDelete()
 {
 }
 
@@ -199,14 +199,14 @@ void USeasonProgressionUITelemetryInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B47A70
+//		Offset -> 0x03A98AF0
 //		Name   -> Function SeasonProgressionUI.SeasonProgressionUIComponent.OnHUDDestroyed
 //		Flags  -> (Final, Native, Private)
 void USeasonProgressionUIComponent::OnHUDDestroyed()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SeasonProgressionUI.SeasonProgressionUIComponent.OnHUDDestroyed");
 
-	USeasonProgressionUIComponent_OnHUDDestroyed_Params params;
+	USeasonProgressionUIComponent_OnHUDDestroyed_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -221,62 +221,11 @@ void USeasonProgressionUIComponent::AfterRead()
 {
 	UActorComponent::AfterRead();
 
-	READ_PTR_FULL(InputBinder, USeasonProgressionUIInputBinder);
-	READ_PTR_FULL(InputHandler, USeasonProgressionUICompositeInputHandler);
 }
 
 void USeasonProgressionUIComponent::BeforeDelete()
 {
 	UActorComponent::BeforeDelete();
-
-	DELE_PTR_FULL(InputBinder);
-	DELE_PTR_FULL(InputHandler);
-}
-
-// Function:
-//		Offset -> 0x03B47A90
-//		Name   -> Function SeasonProgressionUI.SeasonProgressionUICompositeInputHandler.OnMenuButtonPressed
-//		Flags  -> (Final, Native, Private)
-// Parameters:
-//		TEnumAsByte<AthenaInput_EInputHandlerResult>       ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-TEnumAsByte<AthenaInput_EInputHandlerResult> USeasonProgressionUICompositeInputHandler::OnMenuButtonPressed()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function SeasonProgressionUI.SeasonProgressionUICompositeInputHandler.OnMenuButtonPressed");
-
-	USeasonProgressionUICompositeInputHandler_OnMenuButtonPressed_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-void USeasonProgressionUICompositeInputHandler::AfterRead()
-{
-	UCompositeInputHandler::AfterRead();
-
-}
-
-void USeasonProgressionUICompositeInputHandler::BeforeDelete()
-{
-	UCompositeInputHandler::BeforeDelete();
-
-}
-
-void USeasonProgressionUIInputBinder::AfterRead()
-{
-	UInputBinder::AfterRead();
-
-}
-
-void USeasonProgressionUIInputBinder::BeforeDelete()
-{
-	UInputBinder::BeforeDelete();
 
 }
 

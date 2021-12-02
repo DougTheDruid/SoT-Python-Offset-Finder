@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -67,7 +67,7 @@ void UOceanCrawlerAudioParamsDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01368200
+//		Offset -> 0x01390EB0
 //		Name   -> Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayBuffAudio
 //		Flags  -> (Final, Net, Native, Event, NetMulticast, Private)
 // Parameters:
@@ -76,7 +76,7 @@ void UOceanCrawlerAudioBroadcaster::Multicast_PlayBuffAudio(const struct FEventO
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayBuffAudio");
 
-	UOceanCrawlerAudioBroadcaster_Multicast_PlayBuffAudio_Params params;
+	UOceanCrawlerAudioBroadcaster_Multicast_PlayBuffAudio_Params params {};
 	params.InRequest = InRequest;
 
 	auto flags = fn->FunctionFlags;
@@ -89,7 +89,7 @@ void UOceanCrawlerAudioBroadcaster::Multicast_PlayBuffAudio(const struct FEventO
 
 
 // Function:
-//		Offset -> 0x01368140
+//		Offset -> 0x01390DF0
 //		Name   -> Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayAudio
 //		Flags  -> (Final, Net, Native, Event, NetMulticast, Private)
 // Parameters:
@@ -99,7 +99,7 @@ void UOceanCrawlerAudioBroadcaster::Multicast_PlayAudio(TEnumAsByte<AthenaAI_EOc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OceanCrawlers.OceanCrawlerAudioBroadcaster.Multicast_PlayAudio");
 
-	UOceanCrawlerAudioBroadcaster_Multicast_PlayAudio_Params params;
+	UOceanCrawlerAudioBroadcaster_Multicast_PlayAudio_Params params {};
 	params.InAudioKey = InAudioKey;
 	params.InAudioDelay = InAudioDelay;
 

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Set Colour on All Materials
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -29,7 +29,7 @@ void ABP_LargeShipNetProxy_C::Set_Colour_on_All_Materials(const struct FName& Va
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Set Colour on All Materials");
 
-	ABP_LargeShipNetProxy_C_Set_Colour_on_All_Materials_Params params;
+	ABP_LargeShipNetProxy_C_Set_Colour_on_All_Materials_Params params {};
 	params.Variable_Name = Variable_Name;
 	params.Value = Value;
 
@@ -42,7 +42,7 @@ void ABP_LargeShipNetProxy_C::Set_Colour_on_All_Materials(const struct FName& Va
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Set Value on All Materials
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -52,7 +52,7 @@ void ABP_LargeShipNetProxy_C::Set_Value_on_All_Materials(const struct FName& Var
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Set Value on All Materials");
 
-	ABP_LargeShipNetProxy_C_Set_Value_on_All_Materials_Params params;
+	ABP_LargeShipNetProxy_C_Set_Value_on_All_Materials_Params params {};
 	params.Variable_Name = Variable_Name;
 	params.Value = Value;
 
@@ -65,7 +65,7 @@ void ABP_LargeShipNetProxy_C::Set_Value_on_All_Materials(const struct FName& Var
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Apply Bits to Lanterns
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -74,7 +74,7 @@ void ABP_LargeShipNetProxy_C::Apply_Bits_to_Lanterns(int Lantern_Bits)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Apply Bits to Lanterns");
 
-	ABP_LargeShipNetProxy_C_Apply_Bits_to_Lanterns_Params params;
+	ABP_LargeShipNetProxy_C_Apply_Bits_to_Lanterns_Params params {};
 	params.Lantern_Bits = Lantern_Bits;
 
 	auto flags = fn->FunctionFlags;
@@ -86,7 +86,7 @@ void ABP_LargeShipNetProxy_C::Apply_Bits_to_Lanterns(int Lantern_Bits)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Create Dynamic Materials
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -94,7 +94,7 @@ void ABP_LargeShipNetProxy_C::Create_Dynamic_Materials()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.Create Dynamic Materials");
 
-	ABP_LargeShipNetProxy_C_Create_Dynamic_Materials_Params params;
+	ABP_LargeShipNetProxy_C_Create_Dynamic_Materials_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -105,14 +105,14 @@ void ABP_LargeShipNetProxy_C::Create_Dynamic_Materials()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_LargeShipNetProxy_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.UserConstructionScript");
 
-	ABP_LargeShipNetProxy_C_UserConstructionScript_Params params;
+	ABP_LargeShipNetProxy_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -123,14 +123,14 @@ void ABP_LargeShipNetProxy_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_LargeShipNetProxy_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.ReceiveBeginPlay");
 
-	ABP_LargeShipNetProxy_C_ReceiveBeginPlay_Params params;
+	ABP_LargeShipNetProxy_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -141,7 +141,7 @@ void ABP_LargeShipNetProxy_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.OnLanternStateChanged
 //		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -150,7 +150,7 @@ void ABP_LargeShipNetProxy_C::OnLanternStateChanged(int LanternStateBits)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.OnLanternStateChanged");
 
-	ABP_LargeShipNetProxy_C_OnLanternStateChanged_Params params;
+	ABP_LargeShipNetProxy_C_OnLanternStateChanged_Params params {};
 	params.LanternStateBits = LanternStateBits;
 
 	auto flags = fn->FunctionFlags;
@@ -162,7 +162,7 @@ void ABP_LargeShipNetProxy_C::OnLanternStateChanged(int LanternStateBits)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.OnEmissaryActiveStateChanged
 //		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -171,7 +171,7 @@ void ABP_LargeShipNetProxy_C::OnEmissaryActiveStateChanged(bool InNewEmissaryAct
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.OnEmissaryActiveStateChanged");
 
-	ABP_LargeShipNetProxy_C_OnEmissaryActiveStateChanged_Params params;
+	ABP_LargeShipNetProxy_C_OnEmissaryActiveStateChanged_Params params {};
 	params.InNewEmissaryActiveState = InNewEmissaryActiveState;
 
 	auto flags = fn->FunctionFlags;
@@ -183,7 +183,7 @@ void ABP_LargeShipNetProxy_C::OnEmissaryActiveStateChanged(bool InNewEmissaryAct
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.ExecuteUbergraph_BP_LargeShipNetProxy
 //		Flags  -> ()
 // Parameters:
@@ -192,7 +192,7 @@ void ABP_LargeShipNetProxy_C::ExecuteUbergraph_BP_LargeShipNetProxy(int EntryPoi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShipNetProxy.BP_LargeShipNetProxy_C.ExecuteUbergraph_BP_LargeShipNetProxy");
 
-	ABP_LargeShipNetProxy_C_ExecuteUbergraph_BP_LargeShipNetProxy_Params params;
+	ABP_LargeShipNetProxy_C_ExecuteUbergraph_BP_LargeShipNetProxy_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

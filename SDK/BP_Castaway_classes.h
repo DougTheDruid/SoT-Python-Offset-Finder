@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,14 +20,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Castaway.BP_Castaway_C
-// 0x0028 (FullSize[0x05F8] - InheritedSize[0x05D0])
+// 0x0028 (FullSize[0x0648] - InheritedSize[0x0620])
 class ABP_Castaway_C : public ABP_Orderofsouls_TallTales_C
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x05D0(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-	class UActorPhasingComponent*                      ActorPhasing;                                              // 0x05D8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
-	class UAnimNotifyWwiseEmitterComponent*            AnimNotifyWwiseEmitter_1;                                  // 0x05E0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
-	TArray<class UWwiseEvent*>                         AudioEvents;                                               // 0x05E8(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0620(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
+	class UActorPhasingComponent*                      ActorPhasing;                                              // 0x0628(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	class UAnimNotifyWwiseEmitterComponent*            AnimNotifyWwiseEmitter_1;                                  // 0x0630(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	TArray<class UWwiseEvent*>                         AudioEvents;                                               // 0x0638(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 
 	static UClass* StaticClass()

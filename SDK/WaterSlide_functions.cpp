@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -113,7 +113,7 @@ void UWaterSlideParamsDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03F0B5E0
+//		Offset -> 0x03E790A0
 //		Name   -> Function WaterSlide.WaterSlide.SetEntranceCollisionComponent
 //		Flags  -> (Final, Native, Protected, BlueprintCallable)
 // Parameters:
@@ -122,7 +122,7 @@ void AWaterSlide::SetEntranceCollisionComponent(class UPrimitiveComponent* InEnt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WaterSlide.WaterSlide.SetEntranceCollisionComponent");
 
-	AWaterSlide_SetEntranceCollisionComponent_Params params;
+	AWaterSlide_SetEntranceCollisionComponent_Params params {};
 	params.InEntranceCollisionComponent = InEntranceCollisionComponent;
 
 	auto flags = fn->FunctionFlags;
@@ -135,7 +135,7 @@ void AWaterSlide::SetEntranceCollisionComponent(class UPrimitiveComponent* InEnt
 
 
 // Function:
-//		Offset -> 0x03F0B410
+//		Offset -> 0x03E78ED0
 //		Name   -> Function WaterSlide.WaterSlide.ComponentBeginOverlapCallBack
 //		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
@@ -148,7 +148,7 @@ void AWaterSlide::ComponentBeginOverlapCallBack(class AActor* InOtherActor, clas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WaterSlide.WaterSlide.ComponentBeginOverlapCallBack");
 
-	AWaterSlide_ComponentBeginOverlapCallBack_Params params;
+	AWaterSlide_ComponentBeginOverlapCallBack_Params params {};
 	params.InOtherActor = InOtherActor;
 	params.InOtherComp = InOtherComp;
 	params.InOtherBodyIndex = InOtherBodyIndex;

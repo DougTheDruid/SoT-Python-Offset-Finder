@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -165,12 +165,12 @@ public:
 class ATimeService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_69E1[0x38];                                    // 0x03D0(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SH4K[0x38];                                    // 0x03D0(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FTimespan                                   GameWorldTimeOffset;                                       // 0x0408(0x0008) (Edit, ZeroConstructor, Config, DisableEditOnInstance, Protected)
-	unsigned char                                      UnknownData_BP8N[0x4];                                     // 0x0410(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PKC6[0x4];                                     // 0x0410(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	uint32_t                                           TimeScalar;                                                // 0x0414(0x0004) (Edit, Net, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	uint32_t                                           NumberOfDaysInEachGameMonth;                               // 0x0418(0x0004) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_YPHN[0x4];                                     // 0x041C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_XKG1[0x4];                                     // 0x041C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	double                                             ServiceTimeQueryRapidFrequencyOffsetMax;                   // 0x0420(0x0008) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              ServiceTimeQueryRapidFrequencyInSeconds;                   // 0x0428(0x0004) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              ServiceTimeQueryFrequencyInSeconds;                        // 0x042C(0x0004) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
@@ -183,9 +183,9 @@ public:
 	float                                              MinLocalTimeUpdateAdjustPercentageToSpeedUp;               // 0x0448(0x0004) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              MaxLocalTimeUpdateAdjustPercentageToSpeedUp;               // 0x044C(0x0004) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	uint32_t                                           MaxNumReplicatedTimeEntriesToAverage;                      // 0x0450(0x0004) (Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_K6V4[0x4C];                                    // 0x0454(0x004C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_V7CU[0x4C];                                    // 0x0454(0x004C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FReplicatedAuthoritativeTime                ReplicatedServerTime;                                      // 0x04A0(0x0010) (BlueprintVisible, BlueprintReadOnly, Net, RepNotify)
-	unsigned char                                      UnknownData_XDFC[0x30];                                    // 0x04B0(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_S433[0x30];                                    // 0x04B0(0x0030) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -208,7 +208,7 @@ public:
 class ADebugTimeService : public ATimeService
 {
 public:
-	unsigned char                                      UnknownData_0QFT[0x8];                                     // 0x04E0(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_462C[0x8];                                     // 0x04E0(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -230,7 +230,7 @@ public:
 class ACustomizableTimeService : public ADebugTimeService
 {
 public:
-	unsigned char                                      UnknownData_7FYC[0x8];                                     // 0x04E8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_O89A[0x8];                                     // 0x04E8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

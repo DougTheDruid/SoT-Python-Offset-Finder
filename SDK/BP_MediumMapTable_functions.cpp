@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0.Brig
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumMapTable.BP_MediumMapTable_C.UpdateBlurEffect
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_MediumMapTable_C::UpdateBlurEffect()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumMapTable.BP_MediumMapTable_C.UpdateBlurEffect");
 
-	ABP_MediumMapTable_C_UpdateBlurEffect_Params params;
+	ABP_MediumMapTable_C_UpdateBlurEffect_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,7 +38,7 @@ void ABP_MediumMapTable_C::UpdateBlurEffect()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumMapTable.BP_MediumMapTable_C.GetClosestInteractionPoint
 //		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -49,7 +49,7 @@ struct FVector ABP_MediumMapTable_C::GetClosestInteractionPoint(const struct FVe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumMapTable.BP_MediumMapTable_C.GetClosestInteractionPoint");
 
-	ABP_MediumMapTable_C_GetClosestInteractionPoint_Params params;
+	ABP_MediumMapTable_C_GetClosestInteractionPoint_Params params {};
 	params.ReferencePosition = ReferencePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -66,7 +66,7 @@ struct FVector ABP_MediumMapTable_C::GetClosestInteractionPoint(const struct FVe
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumMapTable.BP_MediumMapTable_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -74,7 +74,7 @@ void ABP_MediumMapTable_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumMapTable.BP_MediumMapTable_C.UserConstructionScript");
 
-	ABP_MediumMapTable_C_UserConstructionScript_Params params;
+	ABP_MediumMapTable_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -85,14 +85,14 @@ void ABP_MediumMapTable_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumMapTable.BP_MediumMapTable_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_MediumMapTable_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumMapTable.BP_MediumMapTable_C.ReceiveBeginPlay");
 
-	ABP_MediumMapTable_C_ReceiveBeginPlay_Params params;
+	ABP_MediumMapTable_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -103,14 +103,14 @@ void ABP_MediumMapTable_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumMapTable.BP_MediumMapTable_C.SetEffectActiveWhenClose
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_MediumMapTable_C::SetEffectActiveWhenClose()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumMapTable.BP_MediumMapTable_C.SetEffectActiveWhenClose");
 
-	ABP_MediumMapTable_C_SetEffectActiveWhenClose_Params params;
+	ABP_MediumMapTable_C_SetEffectActiveWhenClose_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -121,7 +121,7 @@ void ABP_MediumMapTable_C::SetEffectActiveWhenClose()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumMapTable.BP_MediumMapTable_C.OnMapActivate
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -131,7 +131,7 @@ void ABP_MediumMapTable_C::OnMapActivate(bool IsMapActive, class UTextureRenderT
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumMapTable.BP_MediumMapTable_C.OnMapActivate");
 
-	ABP_MediumMapTable_C_OnMapActivate_Params params;
+	ABP_MediumMapTable_C_OnMapActivate_Params params {};
 	params.IsMapActive = IsMapActive;
 	params.Texture = Texture;
 
@@ -144,7 +144,7 @@ void ABP_MediumMapTable_C::OnMapActivate(bool IsMapActive, class UTextureRenderT
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumMapTable.BP_MediumMapTable_C.OnMapMove
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -154,7 +154,7 @@ void ABP_MediumMapTable_C::OnMapMove(const struct FVector2D& CentreLocation, con
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumMapTable.BP_MediumMapTable_C.OnMapMove");
 
-	ABP_MediumMapTable_C_OnMapMove_Params params;
+	ABP_MediumMapTable_C_OnMapMove_Params params {};
 	params.CentreLocation = CentreLocation;
 	params.ZoomLevel = ZoomLevel;
 
@@ -167,7 +167,7 @@ void ABP_MediumMapTable_C::OnMapMove(const struct FVector2D& CentreLocation, con
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MediumMapTable.BP_MediumMapTable_C.ExecuteUbergraph_BP_MediumMapTable
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -176,7 +176,7 @@ void ABP_MediumMapTable_C::ExecuteUbergraph_BP_MediumMapTable(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MediumMapTable.BP_MediumMapTable_C.ExecuteUbergraph_BP_MediumMapTable");
 
-	ABP_MediumMapTable_C_ExecuteUbergraph_BP_MediumMapTable_Params params;
+	ABP_MediumMapTable_C_ExecuteUbergraph_BP_MediumMapTable_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;
@@ -191,6 +191,7 @@ void ABP_MediumMapTable_C::AfterRead()
 {
 	AMapTable::AfterRead();
 
+	READ_PTR_FULL(HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent, UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent);
 	READ_PTR_FULL(NavBlocker, UBoxComponent);
 	READ_PTR_FULL(ControlPoint_4, UChildActorComponent);
 	READ_PTR_FULL(ControlPoint_3, UChildActorComponent);
@@ -205,6 +206,7 @@ void ABP_MediumMapTable_C::BeforeDelete()
 {
 	AMapTable::BeforeDelete();
 
+	DELE_PTR_FULL(HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent);
 	DELE_PTR_FULL(NavBlocker);
 	DELE_PTR_FULL(ControlPoint_4);
 	DELE_PTR_FULL(ControlPoint_3);

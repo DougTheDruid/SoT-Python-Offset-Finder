@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShip_StandardHull_Art_Doors.BP_LargeShip_StandardHull_Art_Doors_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_LargeShip_StandardHull_Art_Doors_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShip_StandardHull_Art_Doors.BP_LargeShip_StandardHull_Art_Doors_C.UserConstructionScript");
 
-	ABP_LargeShip_StandardHull_Art_Doors_C_UserConstructionScript_Params params;
+	ABP_LargeShip_StandardHull_Art_Doors_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void ABP_LargeShip_StandardHull_Art_Doors_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShip_StandardHull_Art_Doors.BP_LargeShip_StandardHull_Art_Doors_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_LargeShip_StandardHull_Art_Doors_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShip_StandardHull_Art_Doors.BP_LargeShip_StandardHull_Art_Doors_C.ReceiveBeginPlay");
 
-	ABP_LargeShip_StandardHull_Art_Doors_C_ReceiveBeginPlay_Params params;
+	ABP_LargeShip_StandardHull_Art_Doors_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void ABP_LargeShip_StandardHull_Art_Doors_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShip_StandardHull_Art_Doors.BP_LargeShip_StandardHull_Art_Doors_C.ExecuteUbergraph_BP_LargeShip_StandardHull_Art_Doors
 //		Flags  -> ()
 // Parameters:
@@ -64,7 +64,7 @@ void ABP_LargeShip_StandardHull_Art_Doors_C::ExecuteUbergraph_BP_LargeShip_Stand
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShip_StandardHull_Art_Doors.BP_LargeShip_StandardHull_Art_Doors_C.ExecuteUbergraph_BP_LargeShip_StandardHull_Art_Doors");
 
-	ABP_LargeShip_StandardHull_Art_Doors_C_ExecuteUbergraph_BP_LargeShip_StandardHull_Art_Doors_Params params;
+	ABP_LargeShip_StandardHull_Art_Doors_C_ExecuteUbergraph_BP_LargeShip_StandardHull_Art_Doors_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

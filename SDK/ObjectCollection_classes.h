@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -44,7 +44,7 @@ public:
 class UTestCollector : public UObject
 {
 public:
-	unsigned char                                      UnknownData_GUHJ[0x60];                                    // 0x0028(0x0060) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_C6M6[0x60];                                    // 0x0028(0x0060) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -65,7 +65,7 @@ public:
 class UTestObjectForCollection : public UObject
 {
 public:
-	unsigned char                                      UnknownData_MLYL[0x48];                                    // 0x0028(0x0048) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_2E2P[0x48];                                    // 0x0028(0x0048) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

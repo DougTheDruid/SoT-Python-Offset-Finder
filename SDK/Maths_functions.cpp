@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -103,7 +103,7 @@ void FSpatialOffset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F55580
+//		Offset -> 0x02F9BE70
 //		Name   -> Function Maths.AngleMaths.CalculateEulerAngle
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -114,7 +114,7 @@ float UAngleMaths::STATIC_CalculateEulerAngle(float FromAngle, float ToAngle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.AngleMaths.CalculateEulerAngle");
 
-	UAngleMaths_CalculateEulerAngle_Params params;
+	UAngleMaths_CalculateEulerAngle_Params params {};
 	params.FromAngle = FromAngle;
 	params.ToAngle = ToAngle;
 
@@ -130,7 +130,7 @@ float UAngleMaths::STATIC_CalculateEulerAngle(float FromAngle, float ToAngle)
 
 
 // Function:
-//		Offset -> 0x02F54F40
+//		Offset -> 0x02F9B830
 //		Name   -> Function Maths.AngleMaths.AngleMoveTowardsMod180
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -142,7 +142,7 @@ float UAngleMaths::STATIC_AngleMoveTowardsMod180(float Angle, float TargetAngle,
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.AngleMaths.AngleMoveTowardsMod180");
 
-	UAngleMaths_AngleMoveTowardsMod180_Params params;
+	UAngleMaths_AngleMoveTowardsMod180_Params params {};
 	params.Angle = Angle;
 	params.TargetAngle = TargetAngle;
 	params.Rate = Rate;
@@ -159,7 +159,7 @@ float UAngleMaths::STATIC_AngleMoveTowardsMod180(float Angle, float TargetAngle,
 
 
 // Function:
-//		Offset -> 0x02F54EC0
+//		Offset -> 0x02F9B7B0
 //		Name   -> Function Maths.AngleMaths.AngleMod360
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -169,7 +169,7 @@ float UAngleMaths::STATIC_AngleMod360(float Angle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.AngleMaths.AngleMod360");
 
-	UAngleMaths_AngleMod360_Params params;
+	UAngleMaths_AngleMod360_Params params {};
 	params.Angle = Angle;
 
 	auto flags = fn->FunctionFlags;
@@ -184,7 +184,7 @@ float UAngleMaths::STATIC_AngleMod360(float Angle)
 
 
 // Function:
-//		Offset -> 0x02F54E40
+//		Offset -> 0x02F9B730
 //		Name   -> Function Maths.AngleMaths.AngleMod180
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -194,7 +194,7 @@ float UAngleMaths::STATIC_AngleMod180(float Angle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.AngleMaths.AngleMod180");
 
-	UAngleMaths_AngleMod180_Params params;
+	UAngleMaths_AngleMod180_Params params {};
 	params.Angle = Angle;
 
 	auto flags = fn->FunctionFlags;
@@ -209,7 +209,7 @@ float UAngleMaths::STATIC_AngleMod180(float Angle)
 
 
 // Function:
-//		Offset -> 0x02F54D30
+//		Offset -> 0x02F9B620
 //		Name   -> Function Maths.AngleMaths.AngleLerpShortest
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -221,7 +221,7 @@ float UAngleMaths::STATIC_AngleLerpShortest(float Start, float End, float Amount
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.AngleMaths.AngleLerpShortest");
 
-	UAngleMaths_AngleLerpShortest_Params params;
+	UAngleMaths_AngleLerpShortest_Params params {};
 	params.Start = Start;
 	params.End = End;
 	params.Amount = Amount;
@@ -250,7 +250,7 @@ void UAngleMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F559A0
+//		Offset -> 0x02F9C290
 //		Name   -> Function Maths.BuoyancyMaths.CalculateMagnitude
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -262,7 +262,7 @@ float UBuoyancyMaths::STATIC_CalculateMagnitude(float InSubmersedVolume, float I
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.BuoyancyMaths.CalculateMagnitude");
 
-	UBuoyancyMaths_CalculateMagnitude_Params params;
+	UBuoyancyMaths_CalculateMagnitude_Params params {};
 	params.InSubmersedVolume = InSubmersedVolume;
 	params.InFluidDensity = InFluidDensity;
 	params.InGravity = InGravity;
@@ -279,7 +279,7 @@ float UBuoyancyMaths::STATIC_CalculateMagnitude(float InSubmersedVolume, float I
 
 
 // Function:
-//		Offset -> 0x02F553D0
+//		Offset -> 0x02F9BCC0
 //		Name   -> Function Maths.BuoyancyMaths.CalcBlendedProbeCurveBuoyancy
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -294,7 +294,7 @@ float UBuoyancyMaths::STATIC_CalcBlendedProbeCurveBuoyancy(class UCurveFloat* Pr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.BuoyancyMaths.CalcBlendedProbeCurveBuoyancy");
 
-	UBuoyancyMaths_CalcBlendedProbeCurveBuoyancy_Params params;
+	UBuoyancyMaths_CalcBlendedProbeCurveBuoyancy_Params params {};
 	params.PrimaryBuoyancyCurve = PrimaryBuoyancyCurve;
 	params.SecondaryBuoyancyCurve = SecondaryBuoyancyCurve;
 	params.TertiaryBuoyancyCurve = TertiaryBuoyancyCurve;
@@ -326,7 +326,7 @@ void UBuoyancyMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F55C00
+//		Offset -> 0x02F9C4F0
 //		Name   -> Function Maths.CircleMaths.ConvertAngleToCircleSectorIndex
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -338,7 +338,7 @@ int UCircleMaths::STATIC_ConvertAngleToCircleSectorIndex(float AngleInDegrees, i
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.CircleMaths.ConvertAngleToCircleSectorIndex");
 
-	UCircleMaths_ConvertAngleToCircleSectorIndex_Params params;
+	UCircleMaths_ConvertAngleToCircleSectorIndex_Params params {};
 	params.AngleInDegrees = AngleInDegrees;
 	params.NumberOfSectors = NumberOfSectors;
 	params.IgnoredFraction = IgnoredFraction;
@@ -355,7 +355,7 @@ int UCircleMaths::STATIC_ConvertAngleToCircleSectorIndex(float AngleInDegrees, i
 
 
 // Function:
-//		Offset -> 0x02F55180
+//		Offset -> 0x02F9BA70
 //		Name   -> Function Maths.CircleMaths.Area
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -365,7 +365,7 @@ float UCircleMaths::STATIC_Area(float InRadius)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.CircleMaths.Area");
 
-	UCircleMaths_Area_Params params;
+	UCircleMaths_Area_Params params {};
 	params.InRadius = InRadius;
 
 	auto flags = fn->FunctionFlags;
@@ -392,7 +392,7 @@ void UCircleMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F57030
+//		Offset -> 0x02F9D920
 //		Name   -> Function Maths.CurveMaths.GetDistanceSquaredToCurve
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -403,7 +403,7 @@ float UCurveMaths::STATIC_GetDistanceSquaredToCurve(const struct FVector& WorldS
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.CurveMaths.GetDistanceSquaredToCurve");
 
-	UCurveMaths_GetDistanceSquaredToCurve_Params params;
+	UCurveMaths_GetDistanceSquaredToCurve_Params params {};
 	params.WorldSpacePos = WorldSpacePos;
 	params.Spline = Spline;
 
@@ -419,7 +419,7 @@ float UCurveMaths::STATIC_GetDistanceSquaredToCurve(const struct FVector& WorldS
 
 
 // Function:
-//		Offset -> 0x02F56EA0
+//		Offset -> 0x02F9D790
 //		Name   -> Function Maths.CurveMaths.GetClosestTimeOnCurve
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -430,7 +430,7 @@ float UCurveMaths::STATIC_GetClosestTimeOnCurve(const struct FVector& WorldSpace
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.CurveMaths.GetClosestTimeOnCurve");
 
-	UCurveMaths_GetClosestTimeOnCurve_Params params;
+	UCurveMaths_GetClosestTimeOnCurve_Params params {};
 	params.WorldSpacePos = WorldSpacePos;
 	params.Spline = Spline;
 
@@ -446,7 +446,7 @@ float UCurveMaths::STATIC_GetClosestTimeOnCurve(const struct FVector& WorldSpace
 
 
 // Function:
-//		Offset -> 0x02F56DC0
+//		Offset -> 0x02F9D6B0
 //		Name   -> Function Maths.CurveMaths.GetClosestPositionOnCurve
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -457,7 +457,7 @@ struct FVector UCurveMaths::STATIC_GetClosestPositionOnCurve(const struct FVecto
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.CurveMaths.GetClosestPositionOnCurve");
 
-	UCurveMaths_GetClosestPositionOnCurve_Params params;
+	UCurveMaths_GetClosestPositionOnCurve_Params params {};
 	params.WorldSpacePos = WorldSpacePos;
 	params.Spline = Spline;
 
@@ -473,7 +473,7 @@ struct FVector UCurveMaths::STATIC_GetClosestPositionOnCurve(const struct FVecto
 
 
 // Function:
-//		Offset -> 0x02F56CF0
+//		Offset -> 0x02F9D5E0
 //		Name   -> Function Maths.CurveMaths.GetClosestPointOnCurve
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -484,7 +484,7 @@ float UCurveMaths::STATIC_GetClosestPointOnCurve(const struct FVector& WorldSpac
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.CurveMaths.GetClosestPointOnCurve");
 
-	UCurveMaths_GetClosestPointOnCurve_Params params;
+	UCurveMaths_GetClosestPointOnCurve_Params params {};
 	params.WorldSpacePos = WorldSpacePos;
 	params.Spline = Spline;
 
@@ -500,7 +500,7 @@ float UCurveMaths::STATIC_GetClosestPointOnCurve(const struct FVector& WorldSpac
 
 
 // Function:
-//		Offset -> 0x02F56C60
+//		Offset -> 0x02F9D550
 //		Name   -> Function Maths.CurveMaths.GetCentre
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -510,7 +510,7 @@ struct FVector UCurveMaths::STATIC_GetCentre(class USplineComponent* Spline)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.CurveMaths.GetCentre");
 
-	UCurveMaths_GetCentre_Params params;
+	UCurveMaths_GetCentre_Params params {};
 	params.Spline = Spline;
 
 	auto flags = fn->FunctionFlags;
@@ -537,7 +537,7 @@ void UCurveMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F58D90
+//		Offset -> 0x02F9F680
 //		Name   -> Function Maths.Density.Water
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -546,7 +546,7 @@ float UDensity::STATIC_Water()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.Density.Water");
 
-	UDensity_Water_Params params;
+	UDensity_Water_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -560,7 +560,7 @@ float UDensity::STATIC_Water()
 
 
 // Function:
-//		Offset -> 0x02F587A0
+//		Offset -> 0x02F9F090
 //		Name   -> Function Maths.Density.SeaWater
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -569,7 +569,7 @@ float UDensity::STATIC_SeaWater()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.Density.SeaWater");
 
-	UDensity_SeaWater_Params params;
+	UDensity_SeaWater_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -583,7 +583,7 @@ float UDensity::STATIC_SeaWater()
 
 
 // Function:
-//		Offset -> 0x02F58210
+//		Offset -> 0x02F9EB00
 //		Name   -> Function Maths.Density.Min
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -592,7 +592,7 @@ float UDensity::STATIC_Min()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.Density.Min");
 
-	UDensity_Min_Params params;
+	UDensity_Min_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -606,7 +606,7 @@ float UDensity::STATIC_Min()
 
 
 // Function:
-//		Offset -> 0x02F581B0
+//		Offset -> 0x02F9EAA0
 //		Name   -> Function Maths.Density.Max
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -615,7 +615,7 @@ float UDensity::STATIC_Max()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.Density.Max");
 
-	UDensity_Max_Params params;
+	UDensity_Max_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -629,7 +629,7 @@ float UDensity::STATIC_Max()
 
 
 // Function:
-//		Offset -> 0x02F578D0
+//		Offset -> 0x02F9E1C0
 //		Name   -> Function Maths.Density.IsValid
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -639,7 +639,7 @@ bool UDensity::STATIC_IsValid(float InValue)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.Density.IsValid");
 
-	UDensity_IsValid_Params params;
+	UDensity_IsValid_Params params {};
 	params.InValue = InValue;
 
 	auto flags = fn->FunctionFlags;
@@ -654,7 +654,7 @@ bool UDensity::STATIC_IsValid(float InValue)
 
 
 // Function:
-//		Offset -> 0x02F54D00
+//		Offset -> 0x02F9B5F0
 //		Name   -> Function Maths.Density.Air
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -663,7 +663,7 @@ float UDensity::STATIC_Air()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.Density.Air");
 
-	UDensity_Air_Params params;
+	UDensity_Air_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -689,7 +689,7 @@ void UDensity::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F587D0
+//		Offset -> 0x02F9F0C0
 //		Name   -> Function Maths.DragCoefficients.Sphere
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -698,7 +698,7 @@ float UDragCoefficients::STATIC_Sphere()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.DragCoefficients.Sphere");
 
-	UDragCoefficients_Sphere_Params params;
+	UDragCoefficients_Sphere_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -712,7 +712,7 @@ float UDragCoefficients::STATIC_Sphere()
 
 
 // Function:
-//		Offset -> 0x02F583F0
+//		Offset -> 0x02F9ECE0
 //		Name   -> Function Maths.DragCoefficients.PlanePerpendicularToFlow
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -721,7 +721,7 @@ float UDragCoefficients::STATIC_PlanePerpendicularToFlow()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.DragCoefficients.PlanePerpendicularToFlow");
 
-	UDragCoefficients_PlanePerpendicularToFlow_Params params;
+	UDragCoefficients_PlanePerpendicularToFlow_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -735,7 +735,7 @@ float UDragCoefficients::STATIC_PlanePerpendicularToFlow()
 
 
 // Function:
-//		Offset -> 0x02F583C0
+//		Offset -> 0x02F9ECB0
 //		Name   -> Function Maths.DragCoefficients.PlaneParallelToFlow
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -744,7 +744,7 @@ float UDragCoefficients::STATIC_PlaneParallelToFlow()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.DragCoefficients.PlaneParallelToFlow");
 
-	UDragCoefficients_PlaneParallelToFlow_Params params;
+	UDragCoefficients_PlaneParallelToFlow_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -758,7 +758,7 @@ float UDragCoefficients::STATIC_PlaneParallelToFlow()
 
 
 // Function:
-//		Offset -> 0x02F58240
+//		Offset -> 0x02F9EB30
 //		Name   -> Function Maths.DragCoefficients.Min
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -767,7 +767,7 @@ float UDragCoefficients::STATIC_Min()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.DragCoefficients.Min");
 
-	UDragCoefficients_Min_Params params;
+	UDragCoefficients_Min_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -781,7 +781,7 @@ float UDragCoefficients::STATIC_Min()
 
 
 // Function:
-//		Offset -> 0x02F581E0
+//		Offset -> 0x02F9EAD0
 //		Name   -> Function Maths.DragCoefficients.Max
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -790,7 +790,7 @@ float UDragCoefficients::STATIC_Max()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.DragCoefficients.Max");
 
-	UDragCoefficients_Max_Params params;
+	UDragCoefficients_Max_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -804,7 +804,7 @@ float UDragCoefficients::STATIC_Max()
 
 
 // Function:
-//		Offset -> 0x02F57950
+//		Offset -> 0x02F9E240
 //		Name   -> Function Maths.DragCoefficients.IsValid
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -814,7 +814,7 @@ bool UDragCoefficients::STATIC_IsValid(float Value)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.DragCoefficients.IsValid");
 
-	UDragCoefficients_IsValid_Params params;
+	UDragCoefficients_IsValid_Params params {};
 	params.Value = Value;
 
 	auto flags = fn->FunctionFlags;
@@ -829,7 +829,7 @@ bool UDragCoefficients::STATIC_IsValid(float Value)
 
 
 // Function:
-//		Offset -> 0x02F55EA0
+//		Offset -> 0x02F9C790
 //		Name   -> Function Maths.DragCoefficients.Cube
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -838,7 +838,7 @@ float UDragCoefficients::STATIC_Cube()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.DragCoefficients.Cube");
 
-	UDragCoefficients_Cube_Params params;
+	UDragCoefficients_Cube_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -864,7 +864,7 @@ void UDragCoefficients::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F55AB0
+//		Offset -> 0x02F9C3A0
 //		Name   -> Function Maths.DragMaths.CalculateMagnitude
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -877,7 +877,7 @@ float UDragMaths::STATIC_CalculateMagnitude(float InSurfaceArea, float InSpeedRe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.DragMaths.CalculateMagnitude");
 
-	UDragMaths_CalculateMagnitude_Params params;
+	UDragMaths_CalculateMagnitude_Params params {};
 	params.InSurfaceArea = InSurfaceArea;
 	params.InSpeedReltaiveToFluid = InSpeedReltaiveToFluid;
 	params.InDragCoefficient = InDragCoefficient;
@@ -907,7 +907,7 @@ void UDragMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F58F90
+//		Offset -> 0x02F9F880
 //		Name   -> Function Maths.FloatMaths.WrapToRange
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -919,7 +919,7 @@ float UFloatMaths::STATIC_WrapToRange(float Input, float LowerLimit, float Upper
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.FloatMaths.WrapToRange");
 
-	UFloatMaths_WrapToRange_Params params;
+	UFloatMaths_WrapToRange_Params params {};
 	params.Input = Input;
 	params.LowerLimit = LowerLimit;
 	params.UpperLimit = UpperLimit;
@@ -936,7 +936,7 @@ float UFloatMaths::STATIC_WrapToRange(float Input, float LowerLimit, float Upper
 
 
 // Function:
-//		Offset -> 0x02F58ED0
+//		Offset -> 0x02F9F7C0
 //		Name   -> Function Maths.FloatMaths.WrapToPositiveRange
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -947,7 +947,7 @@ float UFloatMaths::STATIC_WrapToPositiveRange(float Input, float UpperLimit)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.FloatMaths.WrapToPositiveRange");
 
-	UFloatMaths_WrapToPositiveRange_Params params;
+	UFloatMaths_WrapToPositiveRange_Params params {};
 	params.Input = Input;
 	params.UpperLimit = UpperLimit;
 
@@ -963,7 +963,7 @@ float UFloatMaths::STATIC_WrapToPositiveRange(float Input, float UpperLimit)
 
 
 // Function:
-//		Offset -> 0x02F58DC0
+//		Offset -> 0x02F9F6B0
 //		Name   -> Function Maths.FloatMaths.WrapAroundPivot
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -975,7 +975,7 @@ float UFloatMaths::STATIC_WrapAroundPivot(float Input, float Pivot, float Range)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.FloatMaths.WrapAroundPivot");
 
-	UFloatMaths_WrapAroundPivot_Params params;
+	UFloatMaths_WrapAroundPivot_Params params {};
 	params.Input = Input;
 	params.Pivot = Pivot;
 	params.Range = Range;
@@ -992,7 +992,7 @@ float UFloatMaths::STATIC_WrapAroundPivot(float Input, float Pivot, float Range)
 
 
 // Function:
-//		Offset -> 0x02F58270
+//		Offset -> 0x02F9EB60
 //		Name   -> Function Maths.FloatMaths.MoveTowards
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1005,7 +1005,7 @@ float UFloatMaths::STATIC_MoveTowards(float From, float To, float Speed, float T
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.FloatMaths.MoveTowards");
 
-	UFloatMaths_MoveTowards_Params params;
+	UFloatMaths_MoveTowards_Params params {};
 	params.From = From;
 	params.To = To;
 	params.Speed = Speed;
@@ -1023,7 +1023,7 @@ float UFloatMaths::STATIC_MoveTowards(float From, float To, float Speed, float T
 
 
 // Function:
-//		Offset -> 0x02F57FE0
+//		Offset -> 0x02F9E8D0
 //		Name   -> Function Maths.FloatMaths.Map
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1038,7 +1038,7 @@ float UFloatMaths::STATIC_Map(float ValueToMapFrom, float FromRangeStart, float 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.FloatMaths.Map");
 
-	UFloatMaths_Map_Params params;
+	UFloatMaths_Map_Params params {};
 	params.ValueToMapFrom = ValueToMapFrom;
 	params.FromRangeStart = FromRangeStart;
 	params.FromRangeEnd = FromRangeEnd;
@@ -1058,7 +1058,7 @@ float UFloatMaths::STATIC_Map(float ValueToMapFrom, float FromRangeStart, float 
 
 
 // Function:
-//		Offset -> 0x02F57460
+//		Offset -> 0x02F9DD50
 //		Name   -> Function Maths.FloatMaths.IncrementCounter
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1070,7 +1070,7 @@ bool UFloatMaths::STATIC_IncrementCounter(float* Counter, float Delta, float Cou
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.FloatMaths.IncrementCounter");
 
-	UFloatMaths_IncrementCounter_Params params;
+	UFloatMaths_IncrementCounter_Params params {};
 	params.Delta = Delta;
 	params.CounterMax = CounterMax;
 
@@ -1089,7 +1089,7 @@ bool UFloatMaths::STATIC_IncrementCounter(float* Counter, float Delta, float Cou
 
 
 // Function:
-//		Offset -> 0x02F571D0
+//		Offset -> 0x02F9DAC0
 //		Name   -> Function Maths.FloatMaths.GetShortestSignedDistanceBetweenPointsInWrappedRange
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1102,7 +1102,7 @@ float UFloatMaths::STATIC_GetShortestSignedDistanceBetweenPointsInWrappedRange(f
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.FloatMaths.GetShortestSignedDistanceBetweenPointsInWrappedRange");
 
-	UFloatMaths_GetShortestSignedDistanceBetweenPointsInWrappedRange_Params params;
+	UFloatMaths_GetShortestSignedDistanceBetweenPointsInWrappedRange_Params params {};
 	params.FromValue = FromValue;
 	params.ToValue = ToValue;
 	params.LowerLimit = LowerLimit;
@@ -1120,7 +1120,7 @@ float UFloatMaths::STATIC_GetShortestSignedDistanceBetweenPointsInWrappedRange(f
 
 
 // Function:
-//		Offset -> 0x02F56590
+//		Offset -> 0x02F9CE80
 //		Name   -> Function Maths.FloatMaths.FindMidpointInWrappedRange
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1133,7 +1133,7 @@ float UFloatMaths::STATIC_FindMidpointInWrappedRange(float Value1, float Value2,
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.FloatMaths.FindMidpointInWrappedRange");
 
-	UFloatMaths_FindMidpointInWrappedRange_Params params;
+	UFloatMaths_FindMidpointInWrappedRange_Params params {};
 	params.Value1 = Value1;
 	params.Value2 = Value2;
 	params.LowerLimit = LowerLimit;
@@ -1151,7 +1151,7 @@ float UFloatMaths::STATIC_FindMidpointInWrappedRange(float Value1, float Value2,
 
 
 // Function:
-//		Offset -> 0x02F552C0
+//		Offset -> 0x02F9BBB0
 //		Name   -> Function Maths.FloatMaths.Bound
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1163,7 +1163,7 @@ float UFloatMaths::STATIC_Bound(float ValueToBound, float Bound1, float Bound2)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.FloatMaths.Bound");
 
-	UFloatMaths_Bound_Params params;
+	UFloatMaths_Bound_Params params {};
 	params.ValueToBound = ValueToBound;
 	params.Bound1 = Bound1;
 	params.Bound2 = Bound2;
@@ -1192,7 +1192,7 @@ void UFloatMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F55FC0
+//		Offset -> 0x02F9C8B0
 //		Name   -> Function Maths.Gravity.Earth
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1201,7 +1201,7 @@ float UGravity::STATIC_Earth()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.Gravity.Earth");
 
-	UGravity_Earth_Params params;
+	UGravity_Earth_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1227,7 +1227,7 @@ void UGravity::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F57100
+//		Offset -> 0x02F9D9F0
 //		Name   -> Function Maths.OrientedPointBlueprintFunctionLibrary.GetPointAsTransform
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1237,7 +1237,7 @@ struct FTransform UOrientedPointBlueprintFunctionLibrary::STATIC_GetPointAsTrans
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.OrientedPointBlueprintFunctionLibrary.GetPointAsTransform");
 
-	UOrientedPointBlueprintFunctionLibrary_GetPointAsTransform_Params params;
+	UOrientedPointBlueprintFunctionLibrary_GetPointAsTransform_Params params {};
 	params.Point = Point;
 
 	auto flags = fn->FunctionFlags;
@@ -1264,7 +1264,7 @@ void UOrientedPointBlueprintFunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F56A20
+//		Offset -> 0x02F9D310
 //		Name   -> Function Maths.PoissonDiscSampling.GeneratePoissonDiscDistributionAcrossPlane
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1279,7 +1279,7 @@ TArray<struct FVector> UPoissonDiscSampling::STATIC_GeneratePoissonDiscDistribut
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.PoissonDiscSampling.GeneratePoissonDiscDistributionAcrossPlane");
 
-	UPoissonDiscSampling_GeneratePoissonDiscDistributionAcrossPlane_Params params;
+	UPoissonDiscSampling_GeneratePoissonDiscDistributionAcrossPlane_Params params {};
 	params.InCenter = InCenter;
 	params.InOrientation = InOrientation;
 	params.InWidth = InWidth;
@@ -1311,7 +1311,7 @@ void UPoissonDiscSampling::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F58420
+//		Offset -> 0x02F9ED10
 //		Name   -> Function Maths.ProjectileMaths.PredictProjectileFlightTime
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1324,7 +1324,7 @@ float UProjectileMaths::STATIC_PredictProjectileFlightTime(float Speed, float Gr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.ProjectileMaths.PredictProjectileFlightTime");
 
-	UProjectileMaths_PredictProjectileFlightTime_Params params;
+	UProjectileMaths_PredictProjectileFlightTime_Params params {};
 	params.Speed = Speed;
 	params.Gravity = Gravity;
 	params.Pitch = Pitch;
@@ -1342,7 +1342,7 @@ float UProjectileMaths::STATIC_PredictProjectileFlightTime(float Speed, float Gr
 
 
 // Function:
-//		Offset -> 0x02F566E0
+//		Offset -> 0x02F9CFD0
 //		Name   -> Function Maths.ProjectileMaths.FindProjectileSpeedModifierToHitTarget
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1356,7 +1356,7 @@ float UProjectileMaths::STATIC_FindProjectileSpeedModifierToHitTarget(const stru
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.ProjectileMaths.FindProjectileSpeedModifierToHitTarget");
 
-	UProjectileMaths_FindProjectileSpeedModifierToHitTarget_Params params;
+	UProjectileMaths_FindProjectileSpeedModifierToHitTarget_Params params {};
 	params.From = From;
 	params.Target = Target;
 	params.Pitch = Pitch;
@@ -1375,7 +1375,7 @@ float UProjectileMaths::STATIC_FindProjectileSpeedModifierToHitTarget(const stru
 
 
 // Function:
-//		Offset -> 0x02F55FF0
+//		Offset -> 0x02F9C8E0
 //		Name   -> Function Maths.ProjectileMaths.FindAimDirectionToHitTarget
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1390,7 +1390,7 @@ bool UProjectileMaths::STATIC_FindAimDirectionToHitTarget(struct FRotator* OutAi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.ProjectileMaths.FindAimDirectionToHitTarget");
 
-	UProjectileMaths_FindAimDirectionToHitTarget_Params params;
+	UProjectileMaths_FindAimDirectionToHitTarget_Params params {};
 	params.From = From;
 	params.Target = Target;
 	params.ProjectileSpeed = ProjectileSpeed;
@@ -1412,7 +1412,7 @@ bool UProjectileMaths::STATIC_FindAimDirectionToHitTarget(struct FRotator* OutAi
 
 
 // Function:
-//		Offset -> 0x02F55700
+//		Offset -> 0x02F9BFF0
 //		Name   -> Function Maths.ProjectileMaths.CalculateLaunchVelocity
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1429,7 +1429,7 @@ bool UProjectileMaths::STATIC_CalculateLaunchVelocity(struct FVector* OutLaunchV
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.ProjectileMaths.CalculateLaunchVelocity");
 
-	UProjectileMaths_CalculateLaunchVelocity_Params params;
+	UProjectileMaths_CalculateLaunchVelocity_Params params {};
 	params.From = From;
 	params.Target = Target;
 	params.TargetVelocity = TargetVelocity;
@@ -1466,7 +1466,7 @@ void UProjectileMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F58880
+//		Offset -> 0x02F9F170
 //		Name   -> Function Maths.RotationMaths.TransformAroundArbitraryPivot
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1479,7 +1479,7 @@ struct FTransform URotationMaths::STATIC_TransformAroundArbitraryPivot(const str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.RotationMaths.TransformAroundArbitraryPivot");
 
-	URotationMaths_TransformAroundArbitraryPivot_Params params;
+	URotationMaths_TransformAroundArbitraryPivot_Params params {};
 	params.TargetTransform = TargetTransform;
 	params.BaseTransform = BaseTransform;
 	params.TransformToApply = TransformToApply;
@@ -1497,7 +1497,7 @@ struct FTransform URotationMaths::STATIC_TransformAroundArbitraryPivot(const str
 
 
 // Function:
-//		Offset -> 0x02F58700
+//		Offset -> 0x02F9EFF0
 //		Name   -> Function Maths.RotationMaths.RotatorToQuat
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1507,7 +1507,7 @@ struct FQuat URotationMaths::STATIC_RotatorToQuat(const struct FRotator& Rotatio
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.RotationMaths.RotatorToQuat");
 
-	URotationMaths_RotatorToQuat_Params params;
+	URotationMaths_RotatorToQuat_Params params {};
 	params.Rotation = Rotation;
 
 	auto flags = fn->FunctionFlags;
@@ -1522,7 +1522,7 @@ struct FQuat URotationMaths::STATIC_RotatorToQuat(const struct FRotator& Rotatio
 
 
 // Function:
-//		Offset -> 0x02F58570
+//		Offset -> 0x02F9EE60
 //		Name   -> Function Maths.RotationMaths.RotateDirectionInterpConstantTo
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1535,7 +1535,7 @@ struct FVector URotationMaths::STATIC_RotateDirectionInterpConstantTo(const stru
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.RotationMaths.RotateDirectionInterpConstantTo");
 
-	URotationMaths_RotateDirectionInterpConstantTo_Params params;
+	URotationMaths_RotateDirectionInterpConstantTo_Params params {};
 	params.CurrentDirectionNormalised = CurrentDirectionNormalised;
 	params.TargetDirectionNormalised = TargetDirectionNormalised;
 	params.DeltaTime = DeltaTime;
@@ -1553,7 +1553,7 @@ struct FVector URotationMaths::STATIC_RotateDirectionInterpConstantTo(const stru
 
 
 // Function:
-//		Offset -> 0x02F568A0
+//		Offset -> 0x02F9D190
 //		Name   -> Function Maths.RotationMaths.FindRotationAxisAndRadAngleBetweenVectors
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1565,7 +1565,7 @@ void URotationMaths::STATIC_FindRotationAxisAndRadAngleBetweenVectors(const stru
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.RotationMaths.FindRotationAxisAndRadAngleBetweenVectors");
 
-	URotationMaths_FindRotationAxisAndRadAngleBetweenVectors_Params params;
+	URotationMaths_FindRotationAxisAndRadAngleBetweenVectors_Params params {};
 	params.FromVectorNormalised = FromVectorNormalised;
 	params.ToVectorNormalised = ToVectorNormalised;
 
@@ -1584,7 +1584,7 @@ void URotationMaths::STATIC_FindRotationAxisAndRadAngleBetweenVectors(const stru
 
 
 // Function:
-//		Offset -> 0x02F55050
+//		Offset -> 0x02F9B940
 //		Name   -> Function Maths.RotationMaths.AreRotatorsTheSameRotation
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1596,7 +1596,7 @@ bool URotationMaths::STATIC_AreRotatorsTheSameRotation(const struct FRotator& Ro
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.RotationMaths.AreRotatorsTheSameRotation");
 
-	URotationMaths_AreRotatorsTheSameRotation_Params params;
+	URotationMaths_AreRotatorsTheSameRotation_Params params {};
 	params.Rotator1 = Rotator1;
 	params.Rotator2 = Rotator2;
 	params.ErrorTolerance = ErrorTolerance;
@@ -1613,7 +1613,7 @@ bool URotationMaths::STATIC_AreRotatorsTheSameRotation(const struct FRotator& Ro
 
 
 // Function:
-//		Offset -> 0x02F54B60
+//		Offset -> 0x02F9B450
 //		Name   -> Function Maths.RotationMaths.AdvanceRotationBySpinAndTiltSynced
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1626,7 +1626,7 @@ struct FRotationUpdateResult URotationMaths::STATIC_AdvanceRotationBySpinAndTilt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.RotationMaths.AdvanceRotationBySpinAndTiltSynced");
 
-	URotationMaths_AdvanceRotationBySpinAndTiltSynced_Params params;
+	URotationMaths_AdvanceRotationBySpinAndTiltSynced_Params params {};
 	params.StartRotation = StartRotation;
 	params.TargetRotation = TargetRotation;
 	params.RotationRateDegrees = RotationRateDegrees;
@@ -1656,7 +1656,7 @@ void URotationMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F57800
+//		Offset -> 0x02F9E0F0
 //		Name   -> Function Maths.ShapeMathsBlueprintLibrary.IsPointOnOrWithinABox
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1667,7 +1667,7 @@ bool UShapeMathsBlueprintLibrary::STATIC_IsPointOnOrWithinABox(class UBoxCompone
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.ShapeMathsBlueprintLibrary.IsPointOnOrWithinABox");
 
-	UShapeMathsBlueprintLibrary_IsPointOnOrWithinABox_Params params;
+	UShapeMathsBlueprintLibrary_IsPointOnOrWithinABox_Params params {};
 	params.BoxComponent = BoxComponent;
 	params.WorldSpaceReferencePoint = WorldSpaceReferencePoint;
 
@@ -1683,7 +1683,7 @@ bool UShapeMathsBlueprintLibrary::STATIC_IsPointOnOrWithinABox(class UBoxCompone
 
 
 // Function:
-//		Offset -> 0x02F564B0
+//		Offset -> 0x02F9CDA0
 //		Name   -> Function Maths.ShapeMathsBlueprintLibrary.FindClosestPointWithinASphere
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1694,7 +1694,7 @@ struct FVector UShapeMathsBlueprintLibrary::STATIC_FindClosestPointWithinASphere
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.ShapeMathsBlueprintLibrary.FindClosestPointWithinASphere");
 
-	UShapeMathsBlueprintLibrary_FindClosestPointWithinASphere_Params params;
+	UShapeMathsBlueprintLibrary_FindClosestPointWithinASphere_Params params {};
 	params.SphereComponent = SphereComponent;
 	params.WorldSpaceReferencePoint = WorldSpaceReferencePoint;
 
@@ -1710,7 +1710,7 @@ struct FVector UShapeMathsBlueprintLibrary::STATIC_FindClosestPointWithinASphere
 
 
 // Function:
-//		Offset -> 0x02F563D0
+//		Offset -> 0x02F9CCC0
 //		Name   -> Function Maths.ShapeMathsBlueprintLibrary.FindClosestPointWithinACylinder
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1721,7 +1721,7 @@ struct FVector UShapeMathsBlueprintLibrary::STATIC_FindClosestPointWithinACylind
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.ShapeMathsBlueprintLibrary.FindClosestPointWithinACylinder");
 
-	UShapeMathsBlueprintLibrary_FindClosestPointWithinACylinder_Params params;
+	UShapeMathsBlueprintLibrary_FindClosestPointWithinACylinder_Params params {};
 	params.CylinderComponent = CylinderComponent;
 	params.WorldSpaceReferencePoint = WorldSpaceReferencePoint;
 
@@ -1737,7 +1737,7 @@ struct FVector UShapeMathsBlueprintLibrary::STATIC_FindClosestPointWithinACylind
 
 
 // Function:
-//		Offset -> 0x02F562F0
+//		Offset -> 0x02F9CBE0
 //		Name   -> Function Maths.ShapeMathsBlueprintLibrary.FindClosestPointWithinACapsule
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1748,7 +1748,7 @@ struct FVector UShapeMathsBlueprintLibrary::STATIC_FindClosestPointWithinACapsul
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.ShapeMathsBlueprintLibrary.FindClosestPointWithinACapsule");
 
-	UShapeMathsBlueprintLibrary_FindClosestPointWithinACapsule_Params params;
+	UShapeMathsBlueprintLibrary_FindClosestPointWithinACapsule_Params params {};
 	params.CapsuleComponent = CapsuleComponent;
 	params.WorldSpaceReferencePoint = WorldSpaceReferencePoint;
 
@@ -1764,7 +1764,7 @@ struct FVector UShapeMathsBlueprintLibrary::STATIC_FindClosestPointWithinACapsul
 
 
 // Function:
-//		Offset -> 0x02F56210
+//		Offset -> 0x02F9CB00
 //		Name   -> Function Maths.ShapeMathsBlueprintLibrary.FindClosestPointWithinABox
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1775,7 +1775,7 @@ struct FVector UShapeMathsBlueprintLibrary::STATIC_FindClosestPointWithinABox(cl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.ShapeMathsBlueprintLibrary.FindClosestPointWithinABox");
 
-	UShapeMathsBlueprintLibrary_FindClosestPointWithinABox_Params params;
+	UShapeMathsBlueprintLibrary_FindClosestPointWithinABox_Params params {};
 	params.BoxComponent = BoxComponent;
 	params.WorldSpaceReferencePoint = WorldSpaceReferencePoint;
 
@@ -1803,7 +1803,7 @@ void UShapeMathsBlueprintLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F58D10
+//		Offset -> 0x02F9F600
 //		Name   -> Function Maths.SphereMaths.VolumeFromRadius
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1813,7 +1813,7 @@ float USphereMaths::STATIC_VolumeFromRadius(float InRadius)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.SphereMaths.VolumeFromRadius");
 
-	USphereMaths_VolumeFromRadius_Params params;
+	USphereMaths_VolumeFromRadius_Params params {};
 	params.InRadius = InRadius;
 
 	auto flags = fn->FunctionFlags;
@@ -1828,7 +1828,7 @@ float USphereMaths::STATIC_VolumeFromRadius(float InRadius)
 
 
 // Function:
-//		Offset -> 0x02F58800
+//		Offset -> 0x02F9F0F0
 //		Name   -> Function Maths.SphereMaths.SurfaceAreaFromRadius
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1838,7 +1838,7 @@ float USphereMaths::STATIC_SurfaceAreaFromRadius(float InRadius)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.SphereMaths.SurfaceAreaFromRadius");
 
-	USphereMaths_SurfaceAreaFromRadius_Params params;
+	USphereMaths_SurfaceAreaFromRadius_Params params {};
 	params.InRadius = InRadius;
 
 	auto flags = fn->FunctionFlags;
@@ -1865,7 +1865,7 @@ void USphereMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F58C50
+//		Offset -> 0x02F9F540
 //		Name   -> Function Maths.SphericalCapMaths.Volume
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1876,7 +1876,7 @@ float USphericalCapMaths::STATIC_Volume(float InRadius, float InHeight)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.SphericalCapMaths.Volume");
 
-	USphericalCapMaths_Volume_Params params;
+	USphericalCapMaths_Volume_Params params {};
 	params.InRadius = InRadius;
 	params.InHeight = InHeight;
 
@@ -1892,7 +1892,7 @@ float USphericalCapMaths::STATIC_Volume(float InRadius, float InHeight)
 
 
 // Function:
-//		Offset -> 0x02F55640
+//		Offset -> 0x02F9BF30
 //		Name   -> Function Maths.SphericalCapMaths.CalculateGeometricCentroidOffsetRelativeToBoundingSphereCentroid
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1903,7 +1903,7 @@ float USphericalCapMaths::STATIC_CalculateGeometricCentroidOffsetRelativeToBound
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.SphericalCapMaths.CalculateGeometricCentroidOffsetRelativeToBoundingSphereCentroid");
 
-	USphericalCapMaths_CalculateGeometricCentroidOffsetRelativeToBoundingSphereCentroid_Params params;
+	USphericalCapMaths_CalculateGeometricCentroidOffsetRelativeToBoundingSphereCentroid_Params params {};
 	params.InRadius = InRadius;
 	params.InHeight = InHeight;
 
@@ -1919,7 +1919,7 @@ float USphericalCapMaths::STATIC_CalculateGeometricCentroidOffsetRelativeToBound
 
 
 // Function:
-//		Offset -> 0x02F55200
+//		Offset -> 0x02F9BAF0
 //		Name   -> Function Maths.SphericalCapMaths.BaseRadius
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1930,7 +1930,7 @@ float USphericalCapMaths::STATIC_BaseRadius(float InRadius, float InHeight)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.SphericalCapMaths.BaseRadius");
 
-	USphericalCapMaths_BaseRadius_Params params;
+	USphericalCapMaths_BaseRadius_Params params {};
 	params.InRadius = InRadius;
 	params.InHeight = InHeight;
 
@@ -1970,7 +1970,7 @@ void UStatisticsMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F58B20
+//		Offset -> 0x02F9F410
 //		Name   -> Function Maths.TimedBufferFunctionLibrary.UpdateInterval
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1981,7 +1981,7 @@ void UTimedBufferFunctionLibrary::STATIC_UpdateInterval(struct FTimedBuffer* Tim
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.TimedBufferFunctionLibrary.UpdateInterval");
 
-	UTimedBufferFunctionLibrary_UpdateInterval_Params params;
+	UTimedBufferFunctionLibrary_UpdateInterval_Params params {};
 	params.DeltaTime = DeltaTime;
 	params.Value = Value;
 
@@ -1998,7 +1998,7 @@ void UTimedBufferFunctionLibrary::STATIC_UpdateInterval(struct FTimedBuffer* Tim
 
 
 // Function:
-//		Offset -> 0x02F57320
+//		Offset -> 0x02F9DC10
 //		Name   -> Function Maths.TimedBufferFunctionLibrary.GetValueRange
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -2010,7 +2010,7 @@ bool UTimedBufferFunctionLibrary::STATIC_GetValueRange(struct FTimedBuffer* Time
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.TimedBufferFunctionLibrary.GetValueRange");
 
-	UTimedBufferFunctionLibrary_GetValueRange_Params params;
+	UTimedBufferFunctionLibrary_GetValueRange_Params params {};
 	params.MinWindowLength = MinWindowLength;
 
 	auto flags = fn->FunctionFlags;
@@ -2030,7 +2030,7 @@ bool UTimedBufferFunctionLibrary::STATIC_GetValueRange(struct FTimedBuffer* Time
 
 
 // Function:
-//		Offset -> 0x02F55D00
+//		Offset -> 0x02F9C5F0
 //		Name   -> Function Maths.TimedBufferFunctionLibrary.CreateTimedBuffer
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -2040,7 +2040,7 @@ struct FTimedBuffer UTimedBufferFunctionLibrary::STATIC_CreateTimedBuffer(float 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.TimedBufferFunctionLibrary.CreateTimedBuffer");
 
-	UTimedBufferFunctionLibrary_CreateTimedBuffer_Params params;
+	UTimedBufferFunctionLibrary_CreateTimedBuffer_Params params {};
 	params.WindowLength = WindowLength;
 
 	auto flags = fn->FunctionFlags;
@@ -2067,7 +2067,7 @@ void UTimedBufferFunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F56F70
+//		Offset -> 0x02F9D860
 //		Name   -> Function Maths.TimeMaths.GetDifference
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -2078,7 +2078,7 @@ struct FTimespan UTimeMaths::STATIC_GetDifference(const struct FDateTime& A, con
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.TimeMaths.GetDifference");
 
-	UTimeMaths_GetDifference_Params params;
+	UTimeMaths_GetDifference_Params params {};
 	params.A = A;
 	params.B = B;
 
@@ -2106,7 +2106,7 @@ void UTimeMaths::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F57E20
+//		Offset -> 0x02F9E710
 //		Name   -> Function Maths.VectorMaths.LineIntersectsSphere
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -2120,7 +2120,7 @@ bool UVectorMaths::STATIC_LineIntersectsSphere(const struct FVector& LineStart, 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.VectorMaths.LineIntersectsSphere");
 
-	UVectorMaths_LineIntersectsSphere_Params params;
+	UVectorMaths_LineIntersectsSphere_Params params {};
 	params.LineStart = LineStart;
 	params.LineDir = LineDir;
 	params.SphereCentre = SphereCentre;
@@ -2141,7 +2141,7 @@ bool UVectorMaths::STATIC_LineIntersectsSphere(const struct FVector& LineStart, 
 
 
 // Function:
-//		Offset -> 0x02F57BC0
+//		Offset -> 0x02F9E4B0
 //		Name   -> Function Maths.VectorMaths.LineIntersectsCircleWithExitPoint
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -2158,7 +2158,7 @@ bool UVectorMaths::STATIC_LineIntersectsCircleWithExitPoint(const struct FVector
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.VectorMaths.LineIntersectsCircleWithExitPoint");
 
-	UVectorMaths_LineIntersectsCircleWithExitPoint_Params params;
+	UVectorMaths_LineIntersectsCircleWithExitPoint_Params params {};
 	params.LineOrigin = LineOrigin;
 	params.LineDir = LineDir;
 	params.CircleOrigin = CircleOrigin;
@@ -2185,7 +2185,7 @@ bool UVectorMaths::STATIC_LineIntersectsCircleWithExitPoint(const struct FVector
 
 
 // Function:
-//		Offset -> 0x02F579D0
+//		Offset -> 0x02F9E2C0
 //		Name   -> Function Maths.VectorMaths.LineIntersectsCircle
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -2200,7 +2200,7 @@ bool UVectorMaths::STATIC_LineIntersectsCircle(const struct FVector2D& LineOrigi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.VectorMaths.LineIntersectsCircle");
 
-	UVectorMaths_LineIntersectsCircle_Params params;
+	UVectorMaths_LineIntersectsCircle_Params params {};
 	params.LineOrigin = LineOrigin;
 	params.LineDir = LineDir;
 	params.CircleOrigin = CircleOrigin;
@@ -2223,7 +2223,7 @@ bool UVectorMaths::STATIC_LineIntersectsCircle(const struct FVector2D& LineOrigi
 
 
 // Function:
-//		Offset -> 0x02F57570
+//		Offset -> 0x02F9DE60
 //		Name   -> Function Maths.VectorMaths.IntersectLineSegmentWithPlane
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -2239,7 +2239,7 @@ TEnumAsByte<Maths_EPlaneLineIntersectionType> UVectorMaths::STATIC_IntersectLine
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.VectorMaths.IntersectLineSegmentWithPlane");
 
-	UVectorMaths_IntersectLineSegmentWithPlane_Params params;
+	UVectorMaths_IntersectLineSegmentWithPlane_Params params {};
 	params.LineStart = LineStart;
 	params.LineEnd = LineEnd;
 	params.PlanePos = PlanePos;
@@ -2263,7 +2263,7 @@ TEnumAsByte<Maths_EPlaneLineIntersectionType> UVectorMaths::STATIC_IntersectLine
 
 
 // Function:
-//		Offset -> 0x02F55ED0
+//		Offset -> 0x02F9C7C0
 //		Name   -> Function Maths.VectorMaths.Distance
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -2274,7 +2274,7 @@ float UVectorMaths::STATIC_Distance(const struct FVector& A, const struct FVecto
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.VectorMaths.Distance");
 
-	UVectorMaths_Distance_Params params;
+	UVectorMaths_Distance_Params params {};
 	params.A = A;
 	params.B = B;
 
@@ -2290,7 +2290,7 @@ float UVectorMaths::STATIC_Distance(const struct FVector& A, const struct FVecto
 
 
 // Function:
-//		Offset -> 0x02F55DF0
+//		Offset -> 0x02F9C6E0
 //		Name   -> Function Maths.VectorMaths.Cross_Vector2DVector2D
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -2301,7 +2301,7 @@ float UVectorMaths::STATIC_Cross_Vector2DVector2D(const struct FVector2D& A, con
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Maths.VectorMaths.Cross_Vector2DVector2D");
 
-	UVectorMaths_Cross_Vector2DVector2D_Params params;
+	UVectorMaths_Cross_Vector2DVector2D_Params params {};
 	params.A = A;
 	params.B = B;
 

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -25,52 +25,6 @@ void FQuestVariableAny::AfterRead()
 }
 
 void FQuestVariableAny::BeforeDelete()
-{
-	FQuestVariable::BeforeDelete();
-
-}
-
-void FQuestVariableBountyTargetArray::AfterRead()
-{
-	FQuestVariable::AfterRead();
-
-}
-
-void FQuestVariableBountyTargetArray::BeforeDelete()
-{
-	FQuestVariable::BeforeDelete();
-
-}
-
-void FTaleQuestDeliverableItem::AfterRead()
-{
-	READ_PTR_FULL(Icon, UTexture);
-}
-
-void FTaleQuestDeliverableItem::BeforeDelete()
-{
-	DELE_PTR_FULL(Icon);
-}
-
-void FQuestVariableMerchantItemArray::AfterRead()
-{
-	FQuestVariable::AfterRead();
-
-}
-
-void FQuestVariableMerchantItemArray::BeforeDelete()
-{
-	FQuestVariable::BeforeDelete();
-
-}
-
-void FQuestVariableMerchantItem::AfterRead()
-{
-	FQuestVariable::AfterRead();
-
-}
-
-void FQuestVariableMerchantItem::BeforeDelete()
 {
 	FQuestVariable::BeforeDelete();
 
@@ -156,10 +110,12 @@ void FPhasedItem::BeforeDelete()
 
 void FSnapshottedActorData::AfterRead()
 {
+	READ_PTR_FULL(StoredItemInfo, AItemInfo);
 }
 
 void FSnapshottedActorData::BeforeDelete()
 {
+	DELE_PTR_FULL(StoredItemInfo);
 }
 
 void FMigrationActionPair::AfterRead()
@@ -244,22 +200,58 @@ void FQuestVariablePrioritisedPrompt::BeforeDelete()
 
 }
 
+void FQuestVariableBountyTargetArray::AfterRead()
+{
+	FQuestVariable::AfterRead();
+
+}
+
+void FQuestVariableBountyTargetArray::BeforeDelete()
+{
+	FQuestVariable::BeforeDelete();
+
+}
+
+void FTaleQuestDeliverableItem::AfterRead()
+{
+	READ_PTR_FULL(Icon, UTexture);
+}
+
+void FTaleQuestDeliverableItem::BeforeDelete()
+{
+	DELE_PTR_FULL(Icon);
+}
+
+void FQuestVariableMerchantItemArray::AfterRead()
+{
+	FQuestVariable::AfterRead();
+
+}
+
+void FQuestVariableMerchantItemArray::BeforeDelete()
+{
+	FQuestVariable::BeforeDelete();
+
+}
+
+void FQuestVariableMerchantItem::AfterRead()
+{
+	FQuestVariable::AfterRead();
+
+}
+
+void FQuestVariableMerchantItem::BeforeDelete()
+{
+	FQuestVariable::BeforeDelete();
+
+}
+
 void FTaleActorSpawnParameters::AfterRead()
 {
 }
 
 void FTaleActorSpawnParameters::BeforeDelete()
 {
-}
-
-void FStepBountyTargetDesc::AfterRead()
-{
-	READ_PTR_FULL(Portrait, UTexture);
-}
-
-void FStepBountyTargetDesc::BeforeDelete()
-{
-	DELE_PTR_FULL(Portrait);
 }
 
 void FTaleQuestDesc::AfterRead()
@@ -402,6 +394,14 @@ void FTaleQuestSelectorServiceSeedSetTelemetryEvent::BeforeDelete()
 {
 }
 
+void FPlaySequencerAutomationEvent::AfterRead()
+{
+}
+
+void FPlaySequencerAutomationEvent::BeforeDelete()
+{
+}
+
 void FStepMerchantItemDesc::AfterRead()
 {
 	READ_PTR_FULL(Icon, UTexture);
@@ -468,15 +468,25 @@ void FTaleQuestContextInvalidTelemetryEvent::BeforeDelete()
 {
 }
 
+void FStepBountyTargetDesc::AfterRead()
+{
+	READ_PTR_FULL(Portrait, UTexture);
+}
+
+void FStepBountyTargetDesc::BeforeDelete()
+{
+	DELE_PTR_FULL(Portrait);
+}
+
 // Function:
-//		Offset -> 0x040C99C0
+//		Offset -> 0x0375D400
 //		Name   -> Function Tales.TaleQuestStep.Signal
 //		Flags  -> (Final, Native, Public)
 void UTaleQuestStep::Signal()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestStep.Signal");
 
-	UTaleQuestStep_Signal_Params params;
+	UTaleQuestStep_Signal_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -577,374 +587,6 @@ void UTaleQuestFramedStepDesc::BeforeDelete()
 	UTaleQuestStepDesc::BeforeDelete();
 
 	DELE_PTR_FULL(Variables);
-}
-
-void UTaleQuestSelectShipwreckLocationFromValidCandidatesStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(SelectionStrategy, UTaleQuestArrayEntrySelectionStrategy);
-	READ_PTR_FULL(CachedSelectorService, UTaleQuestSelectorService);
-}
-
-void UTaleQuestSelectShipwreckLocationFromValidCandidatesStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(SelectionStrategy);
-	DELE_PTR_FULL(CachedSelectorService);
-}
-
-void UTaleQuestSelectShipwreckLocationFromValidCandidatesStepDesc::AfterRead()
-{
-	UTaleQuestStepDesc::AfterRead();
-
-	READ_PTR_FULL(SelectionStrategy, UTaleQuestArrayEntrySelectionStrategy);
-}
-
-void UTaleQuestSelectShipwreckLocationFromValidCandidatesStepDesc::BeforeDelete()
-{
-	UTaleQuestStepDesc::BeforeDelete();
-
-	DELE_PTR_FULL(SelectionStrategy);
-}
-
-void UTaleQuestAddBountyMapStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(Desc, UTaleQuestAddBountyMapStepDesc);
-}
-
-void UTaleQuestAddBountyMapStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(Desc);
-}
-
-void UTaleQuestAddBountyMapStepDesc::AfterRead()
-{
-	UTaleQuestStepDesc::AfterRead();
-
-	READ_PTR_FULL(CustomLayout, UBountyMapLayout);
-	READ_PTR_FULL(OverrideTreasureMapItemDesc, UClass);
-}
-
-void UTaleQuestAddBountyMapStepDesc::BeforeDelete()
-{
-	UTaleQuestStepDesc::BeforeDelete();
-
-	DELE_PTR_FULL(CustomLayout);
-	DELE_PTR_FULL(OverrideTreasureMapItemDesc);
-}
-
-void UTaleQuestAddCargoRunMapStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(Desc, UTaleQuestAddCargoRunMapStepDesc);
-}
-
-void UTaleQuestAddCargoRunMapStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(Desc);
-}
-
-void UTaleQuestAddCircleMapStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(Desc, UTaleQuestAddCircleMapStepDesc);
-}
-
-void UTaleQuestAddCircleMapStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(Desc);
-}
-
-void UTaleQuestAddMerchantMapStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(Desc, UTaleQuestAddMerchantMapStepDesc);
-}
-
-void UTaleQuestAddMerchantMapStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(Desc);
-}
-
-void UTaleQuestAddRiddleMapStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(Desc, UTaleQuestAddRiddleMapBaseStepDesc);
-}
-
-void UTaleQuestAddRiddleMapStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(Desc);
-}
-
-void UTaleQuestAddXMarksMapStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(Desc, UTaleQuestAddXMarksMapStepDesc);
-}
-
-void UTaleQuestAddXMarksMapStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(Desc);
-}
-
-void UTaleQuestAdvanceRiddleMapStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(Desc, UTaleQuestAdvanceRiddleMapStepDesc);
-}
-
-void UTaleQuestAdvanceRiddleMapStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(Desc);
-}
-
-// Function:
-//		Offset -> 0x03EFCE60
-//		Name   -> Function Tales.TaleQuestMapService.UpdateMerchantMap
-//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-//		struct FName                                       MapId                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		struct FTaleQuestDeliverableItem                   Deliverable                                                (Parm)
-void UTaleQuestMapService::UpdateMerchantMap(const struct FName& MapId, int Index, const struct FTaleQuestDeliverableItem& Deliverable)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestMapService.UpdateMerchantMap");
-
-	UTaleQuestMapService_UpdateMerchantMap_Params params;
-	params.MapId = MapId;
-	params.Index = Index;
-	params.Deliverable = Deliverable;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03EFCDD0
-//		Name   -> Function Tales.TaleQuestMapService.AdvanceRiddleMap
-//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-//		struct FName                                       MapId                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UTaleQuestMapService::AdvanceRiddleMap(const struct FName& MapId)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestMapService.AdvanceRiddleMap");
-
-	UTaleQuestMapService_AdvanceRiddleMap_Params params;
-	params.MapId = MapId;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void UTaleQuestMapService::AfterRead()
-{
-	UTaleQuestService::AfterRead();
-
-}
-
-void UTaleQuestMapService::BeforeDelete()
-{
-	UTaleQuestService::BeforeDelete();
-
-}
-
-void UTaleQuestMapServiceDesc::AfterRead()
-{
-	UTaleQuestServiceDesc::AfterRead();
-
-}
-
-void UTaleQuestMapServiceDesc::BeforeDelete()
-{
-	UTaleQuestServiceDesc::BeforeDelete();
-
-}
-
-void UTaleQuestAddCargoRunMapStepDesc::AfterRead()
-{
-	UTaleQuestMapStepDescBase::AfterRead();
-
-	READ_PTR_FULL(Layout, UCargoRunMapLayout);
-}
-
-void UTaleQuestAddCargoRunMapStepDesc::BeforeDelete()
-{
-	UTaleQuestMapStepDescBase::BeforeDelete();
-
-	DELE_PTR_FULL(Layout);
-}
-
-void UTaleQuestAddCircleMapStepDesc::AfterRead()
-{
-	UTaleQuestMapStepDescBase::AfterRead();
-
-}
-
-void UTaleQuestAddCircleMapStepDesc::BeforeDelete()
-{
-	UTaleQuestMapStepDescBase::BeforeDelete();
-
-}
-
-void UTaleQuestAddMerchantMapStepDesc::AfterRead()
-{
-	UTaleQuestMapStepDescBase::AfterRead();
-
-	READ_PTR_FULL(Layout, UMerchantMapLayout);
-}
-
-void UTaleQuestAddMerchantMapStepDesc::BeforeDelete()
-{
-	UTaleQuestMapStepDescBase::BeforeDelete();
-
-	DELE_PTR_FULL(Layout);
-}
-
-void UTaleQuestAddRiddleMapBaseStepDesc::AfterRead()
-{
-	UTaleQuestMapStepDescBase::AfterRead();
-
-}
-
-void UTaleQuestAddRiddleMapBaseStepDesc::BeforeDelete()
-{
-	UTaleQuestMapStepDescBase::BeforeDelete();
-
-}
-
-void UTaleQuestAddRiddleMapStepDesc::AfterRead()
-{
-	UTaleQuestAddRiddleMapBaseStepDesc::AfterRead();
-
-}
-
-void UTaleQuestAddRiddleMapStepDesc::BeforeDelete()
-{
-	UTaleQuestAddRiddleMapBaseStepDesc::BeforeDelete();
-
-}
-
-void UTaleQuestAddRiddleMapUsingVariableStepDesc::AfterRead()
-{
-	UTaleQuestAddRiddleMapBaseStepDesc::AfterRead();
-
-}
-
-void UTaleQuestAddRiddleMapUsingVariableStepDesc::BeforeDelete()
-{
-	UTaleQuestAddRiddleMapBaseStepDesc::BeforeDelete();
-
-}
-
-void UTaleQuestAddXMarksMapStepDesc::AfterRead()
-{
-	UTaleQuestMapStepDescBase::AfterRead();
-
-}
-
-void UTaleQuestAddXMarksMapStepDesc::BeforeDelete()
-{
-	UTaleQuestMapStepDescBase::BeforeDelete();
-
-}
-
-void UTaleQuestAdvanceRiddleMapStepDesc::AfterRead()
-{
-	UTaleQuestMapStepDescBase::AfterRead();
-
-}
-
-void UTaleQuestAdvanceRiddleMapStepDesc::BeforeDelete()
-{
-	UTaleQuestMapStepDescBase::BeforeDelete();
-
-}
-
-void UTaleQuestRemoveMapStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(StepDesc, UTaleQuestRemoveMapStepDesc);
-}
-
-void UTaleQuestRemoveMapStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(StepDesc);
-}
-
-void UTaleQuestRemoveMapStepDesc::AfterRead()
-{
-	UTaleQuestMapStepDescBase::AfterRead();
-
-}
-
-void UTaleQuestRemoveMapStepDesc::BeforeDelete()
-{
-	UTaleQuestMapStepDescBase::BeforeDelete();
-
-}
-
-void UTaleQuestUpdateMerchantMapStep::AfterRead()
-{
-	UTaleQuestStep::AfterRead();
-
-	READ_PTR_FULL(Desc, UTaleQuestUpdateMerchantMapStepDesc);
-}
-
-void UTaleQuestUpdateMerchantMapStep::BeforeDelete()
-{
-	UTaleQuestStep::BeforeDelete();
-
-	DELE_PTR_FULL(Desc);
-}
-
-void UTaleQuestUpdateMerchantMapStepDesc::AfterRead()
-{
-	UTaleQuestMapStepDescBase::AfterRead();
-
-}
-
-void UTaleQuestUpdateMerchantMapStepDesc::BeforeDelete()
-{
-	UTaleQuestMapStepDescBase::BeforeDelete();
-
 }
 
 void UContendedResourceServiceInterface::AfterRead()
@@ -1098,7 +740,7 @@ void UTaleQuestCargoRunContract::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x040C96F0
+//		Offset -> 0x0375D130
 //		Name   -> Function Tales.TaleQuestCargoRunContractsService.GetContract
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1108,7 +750,7 @@ class UTaleQuestCargoRunContract* UTaleQuestCargoRunContractsService::GetContrac
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestCargoRunContractsService.GetContract");
 
-	UTaleQuestCargoRunContractsService_GetContract_Params params;
+	UTaleQuestCargoRunContractsService_GetContract_Params params {};
 	params.Guid = Guid;
 
 	auto flags = fn->FunctionFlags;
@@ -1123,7 +765,7 @@ class UTaleQuestCargoRunContract* UTaleQuestCargoRunContractsService::GetContrac
 
 
 // Function:
-//		Offset -> 0x040C92F0
+//		Offset -> 0x0375CD30
 //		Name   -> Function Tales.TaleQuestCargoRunContractsService.AddContract
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1136,7 +778,7 @@ struct FGuid UTaleQuestCargoRunContractsService::AddContract(TArray<class UClass
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestCargoRunContractsService.AddContract");
 
-	UTaleQuestCargoRunContractsService_AddContract_Params params;
+	UTaleQuestCargoRunContractsService_AddContract_Params params {};
 	params.InItems = InItems;
 	params.InCollectFromNPC = InCollectFromNPC;
 	params.InDeliverToNPC = InDeliverToNPC;
@@ -1178,7 +820,7 @@ void UTaleQuestMerchantContract::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x040C9790
+//		Offset -> 0x0375D1D0
 //		Name   -> Function Tales.TaleQuestMerchantContractsService.GetContract
 //		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1188,7 +830,7 @@ class UTaleQuestMerchantContract* UTaleQuestMerchantContractsService::GetContrac
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestMerchantContractsService.GetContract");
 
-	UTaleQuestMerchantContractsService_GetContract_Params params;
+	UTaleQuestMerchantContractsService_GetContract_Params params {};
 	params.Guid = Guid;
 
 	auto flags = fn->FunctionFlags;
@@ -1203,7 +845,7 @@ class UTaleQuestMerchantContract* UTaleQuestMerchantContractsService::GetContrac
 
 
 // Function:
-//		Offset -> 0x040C94B0
+//		Offset -> 0x0375CEF0
 //		Name   -> Function Tales.TaleQuestMerchantContractsService.AddContract
 //		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1215,7 +857,7 @@ struct FGuid UTaleQuestMerchantContractsService::AddContract(TArray<struct FTale
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestMerchantContractsService.AddContract");
 
-	UTaleQuestMerchantContractsService_AddContract_Params params;
+	UTaleQuestMerchantContractsService_AddContract_Params params {};
 	params.Requests = Requests;
 	params.InDeliveryDestination = InDeliveryDestination;
 	params.InTimeLimit = InTimeLimit;
@@ -1243,8 +885,20 @@ void UTaleQuestMerchantContractsService::BeforeDelete()
 
 }
 
+void UTaleQuestImportFrame::AfterRead()
+{
+	UTaleQuestRootFrame::AfterRead();
+
+}
+
+void UTaleQuestImportFrame::BeforeDelete()
+{
+	UTaleQuestRootFrame::BeforeDelete();
+
+}
+
 // Function:
-//		Offset -> 0x040C9950
+//		Offset -> 0x0375D390
 //		Name   -> Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.SetDebugVoyageSeed
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1253,7 +907,7 @@ void UTaleQuestSelectorServiceBlueprintFunctionLibrary::STATIC_SetDebugVoyageSee
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.SetDebugVoyageSeed");
 
-	UTaleQuestSelectorServiceBlueprintFunctionLibrary_SetDebugVoyageSeed_Params params;
+	UTaleQuestSelectorServiceBlueprintFunctionLibrary_SetDebugVoyageSeed_Params params {};
 	params.Seed = Seed;
 
 	auto flags = fn->FunctionFlags;
@@ -1266,14 +920,14 @@ void UTaleQuestSelectorServiceBlueprintFunctionLibrary::STATIC_SetDebugVoyageSee
 
 
 // Function:
-//		Offset -> 0x040C9930
+//		Offset -> 0x0375D370
 //		Name   -> Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.ResetVoyageDebugSeed
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 void UTaleQuestSelectorServiceBlueprintFunctionLibrary::STATIC_ResetVoyageDebugSeed()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestSelectorServiceBlueprintFunctionLibrary.ResetVoyageDebugSeed");
 
-	UTaleQuestSelectorServiceBlueprintFunctionLibrary_ResetVoyageDebugSeed_Params params;
+	UTaleQuestSelectorServiceBlueprintFunctionLibrary_ResetVoyageDebugSeed_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1297,7 +951,7 @@ void UTaleQuestSelectorServiceBlueprintFunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x040C9B00
+//		Offset -> 0x0375D540
 //		Name   -> Function Tales.CutsceneResponsesTaleService.TrackResponseCoordinator
 //		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1306,7 +960,7 @@ void UCutsceneResponsesTaleService::TrackResponseCoordinator(class UCutsceneResp
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.CutsceneResponsesTaleService.TrackResponseCoordinator");
 
-	UCutsceneResponsesTaleService_TrackResponseCoordinator_Params params;
+	UCutsceneResponsesTaleService_TrackResponseCoordinator_Params params {};
 	params.Coordinator = Coordinator;
 
 	auto flags = fn->FunctionFlags;
@@ -1319,7 +973,7 @@ void UCutsceneResponsesTaleService::TrackResponseCoordinator(class UCutsceneResp
 
 
 // Function:
-//		Offset -> 0x040C99E0
+//		Offset -> 0x0375D420
 //		Name   -> Function Tales.CutsceneResponsesTaleService.StartCutsceneResponseSheet
 //		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1330,7 +984,7 @@ class UCutsceneResponseSheet* UCutsceneResponsesTaleService::StartCutsceneRespon
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.CutsceneResponsesTaleService.StartCutsceneResponseSheet");
 
-	UCutsceneResponsesTaleService_StartCutsceneResponseSheet_Params params;
+	UCutsceneResponsesTaleService_StartCutsceneResponseSheet_Params params {};
 	params.TargetActor = TargetActor;
 	params.ResponseSheetClass = ResponseSheetClass;
 
@@ -1346,14 +1000,14 @@ class UCutsceneResponseSheet* UCutsceneResponsesTaleService::StartCutsceneRespon
 
 
 // Function:
-//		Offset -> 0x040C96D0
+//		Offset -> 0x0375D110
 //		Name   -> Function Tales.CutsceneResponsesTaleService.ClearAllActiveResponseSheets
 //		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 void UCutsceneResponsesTaleService::ClearAllActiveResponseSheets()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.CutsceneResponsesTaleService.ClearAllActiveResponseSheets");
 
-	UCutsceneResponsesTaleService_ClearAllActiveResponseSheets_Params params;
+	UCutsceneResponsesTaleService_ClearAllActiveResponseSheets_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1365,7 +1019,7 @@ void UCutsceneResponsesTaleService::ClearAllActiveResponseSheets()
 
 
 // Function:
-//		Offset -> 0x040C9650
+//		Offset -> 0x0375D090
 //		Name   -> Function Tales.CutsceneResponsesTaleService.AddResponseSheetRelevantActor
 //		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1374,7 +1028,7 @@ void UCutsceneResponsesTaleService::AddResponseSheetRelevantActor(class AActor* 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.CutsceneResponsesTaleService.AddResponseSheetRelevantActor");
 
-	UCutsceneResponsesTaleService_AddResponseSheetRelevantActor_Params params;
+	UCutsceneResponsesTaleService_AddResponseSheetRelevantActor_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -1467,7 +1121,7 @@ void UTaleQuestFlameOfFateService::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x040C9830
+//		Offset -> 0x0375D270
 //		Name   -> Function Tales.TaleQuestSelectorService.GetRandomIntegerInRange
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1478,7 +1132,7 @@ int UTaleQuestSelectorService::GetRandomIntegerInRange(int Minimum, int Maximum)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestSelectorService.GetRandomIntegerInRange");
 
-	UTaleQuestSelectorService_GetRandomIntegerInRange_Params params;
+	UTaleQuestSelectorService_GetRandomIntegerInRange_Params params {};
 	params.Minimum = Minimum;
 	params.Maximum = Maximum;
 
@@ -1647,6 +1301,18 @@ void UAddGameEventExclusionZoneStep::BeforeDelete()
 	DELE_PTR_FULL(Desc);
 }
 
+void UCallObjectFunctionStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+}
+
+void UCallObjectFunctionStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+}
+
 void UDebugTaleAddInstancedLevelStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
@@ -1677,14 +1343,12 @@ void UDestroySpawnedActorStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(Desc, UDestroySpawnedActorStepDesc);
 }
 
 void UDestroySpawnedActorStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(Desc);
 }
 
 void UDoEQSQueryStep::AfterRead()
@@ -1707,42 +1371,36 @@ void UFindNamedPointStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(StepDesc, UFindNamedPointStepDesc);
 }
 
 void UFindNamedPointStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(StepDesc);
 }
 
 void UFindNamedPointAsVectorStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(StepDesc, UFindNamedPointAsVectorStepDesc);
 }
 
 void UFindNamedPointAsVectorStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(StepDesc);
 }
 
 void UFindNamedPointAsTransformStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(StepDesc, UFindNamedPointAsTransformStepDesc);
 }
 
 void UFindNamedPointAsTransformStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(StepDesc);
 }
 
 void UGenerateDigLocationInRadiusStep::AfterRead()
@@ -1773,14 +1431,12 @@ void UInvokeDamageStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(StepDesc, UInvokeDamageDesc);
 }
 
 void UInvokeDamageStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(StepDesc);
 }
 
 void ULinkEQSContextWithVariableStep::AfterRead()
@@ -1865,14 +1521,12 @@ void UProvokeHitReactionStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(StepDesc, UProvokeHitReactionDesc);
 }
 
 void UProvokeHitReactionStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(StepDesc);
 }
 
 void URemoveGameEventExclusionZoneStep::AfterRead()
@@ -1969,14 +1623,12 @@ void UTaleQuestClearTaleProposalsStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(Desc, UTaleQuestClearTaleProposalsStepDesc);
 }
 
 void UTaleQuestClearTaleProposalsStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(Desc);
 }
 
 void UTaleQuestEmissaryCompanyActionRewardBoostStep::AfterRead()
@@ -2009,42 +1661,36 @@ void UTaleQuestPermanentPromptStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(Desc, UTaleQuestPermanentPromptStepDesc);
 }
 
 void UTaleQuestPermanentPromptStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(Desc);
 }
 
 void UTaleQuestSelectEntryFromArrayStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(SelectionStrategy, UTaleQuestArrayEntrySelectionStrategy);
 }
 
 void UTaleQuestSelectEntryFromArrayStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(SelectionStrategy);
 }
 
 void UTaleQuestUpdateCheckpointStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(Desc, UTaleQuestUpdateCheckpointStepDesc);
 }
 
 void UTaleQuestUpdateCheckpointStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(Desc);
 }
 
 void UTaleQuestWaitForHandInStep::AfterRead()
@@ -2097,6 +1743,20 @@ void UAddGameEventExclusionZoneStepDesc::BeforeDelete()
 {
 	UTaleQuestStepDesc::BeforeDelete();
 
+}
+
+void UCallObjectFunctionStepDesc::AfterRead()
+{
+	UTaleQuestStepDesc::AfterRead();
+
+	READ_PTR_FULL(Target, UObject);
+}
+
+void UCallObjectFunctionStepDesc::BeforeDelete()
+{
+	UTaleQuestStepDesc::BeforeDelete();
+
+	DELE_PTR_FULL(Target);
 }
 
 void UDestroySpawnedActorStepDesc::AfterRead()
@@ -2532,6 +2192,358 @@ void UWaitForItemPickupStepDesc::AfterRead()
 void UWaitForItemPickupStepDesc::BeforeDelete()
 {
 	UTaleQuestStepDesc::BeforeDelete();
+
+}
+
+void UTaleQuestSelectShipwreckLocationFromValidCandidatesStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+	READ_PTR_FULL(CachedSelectorService, UTaleQuestSelectorService);
+}
+
+void UTaleQuestSelectShipwreckLocationFromValidCandidatesStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+	DELE_PTR_FULL(CachedSelectorService);
+}
+
+void UTaleQuestSelectShipwreckLocationFromValidCandidatesStepDesc::AfterRead()
+{
+	UTaleQuestStepDesc::AfterRead();
+
+	READ_PTR_FULL(SelectionStrategy, UTaleQuestArrayEntrySelectionStrategy);
+}
+
+void UTaleQuestSelectShipwreckLocationFromValidCandidatesStepDesc::BeforeDelete()
+{
+	UTaleQuestStepDesc::BeforeDelete();
+
+	DELE_PTR_FULL(SelectionStrategy);
+}
+
+void UTaleQuestAddBountyMapStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+}
+
+void UTaleQuestAddBountyMapStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+}
+
+void UTaleQuestAddBountyMapStepDesc::AfterRead()
+{
+	UTaleQuestStepDesc::AfterRead();
+
+	READ_PTR_FULL(CustomLayout, UBountyMapLayout);
+	READ_PTR_FULL(OverrideTreasureMapItemDesc, UClass);
+}
+
+void UTaleQuestAddBountyMapStepDesc::BeforeDelete()
+{
+	UTaleQuestStepDesc::BeforeDelete();
+
+	DELE_PTR_FULL(CustomLayout);
+	DELE_PTR_FULL(OverrideTreasureMapItemDesc);
+}
+
+void UTaleQuestAddCargoRunMapStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+}
+
+void UTaleQuestAddCargoRunMapStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+}
+
+void UTaleQuestAddCircleMapStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+}
+
+void UTaleQuestAddCircleMapStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+}
+
+void UTaleQuestAddMerchantMapStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+}
+
+void UTaleQuestAddMerchantMapStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+}
+
+void UTaleQuestAddRiddleMapStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+}
+
+void UTaleQuestAddRiddleMapStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+}
+
+void UTaleQuestAddXMarksMapStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+}
+
+void UTaleQuestAddXMarksMapStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+}
+
+void UTaleQuestAdvanceRiddleMapStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+}
+
+void UTaleQuestAdvanceRiddleMapStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x03E6A8C0
+//		Name   -> Function Tales.TaleQuestMapService.UpdateMerchantMap
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+//		struct FName                                       MapId                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FTaleQuestDeliverableItem                   Deliverable                                                (Parm)
+void UTaleQuestMapService::UpdateMerchantMap(const struct FName& MapId, int Index, const struct FTaleQuestDeliverableItem& Deliverable)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestMapService.UpdateMerchantMap");
+
+	UTaleQuestMapService_UpdateMerchantMap_Params params {};
+	params.MapId = MapId;
+	params.Index = Index;
+	params.Deliverable = Deliverable;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03E6A830
+//		Name   -> Function Tales.TaleQuestMapService.AdvanceRiddleMap
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+//		struct FName                                       MapId                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void UTaleQuestMapService::AdvanceRiddleMap(const struct FName& MapId)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Tales.TaleQuestMapService.AdvanceRiddleMap");
+
+	UTaleQuestMapService_AdvanceRiddleMap_Params params {};
+	params.MapId = MapId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void UTaleQuestMapService::AfterRead()
+{
+	UTaleQuestService::AfterRead();
+
+}
+
+void UTaleQuestMapService::BeforeDelete()
+{
+	UTaleQuestService::BeforeDelete();
+
+}
+
+void UTaleQuestMapServiceDesc::AfterRead()
+{
+	UTaleQuestServiceDesc::AfterRead();
+
+}
+
+void UTaleQuestMapServiceDesc::BeforeDelete()
+{
+	UTaleQuestServiceDesc::BeforeDelete();
+
+}
+
+void UTaleQuestAddCargoRunMapStepDesc::AfterRead()
+{
+	UTaleQuestMapStepDescBase::AfterRead();
+
+	READ_PTR_FULL(Layout, UCargoRunMapLayout);
+}
+
+void UTaleQuestAddCargoRunMapStepDesc::BeforeDelete()
+{
+	UTaleQuestMapStepDescBase::BeforeDelete();
+
+	DELE_PTR_FULL(Layout);
+}
+
+void UTaleQuestAddCircleMapStepDesc::AfterRead()
+{
+	UTaleQuestMapStepDescBase::AfterRead();
+
+}
+
+void UTaleQuestAddCircleMapStepDesc::BeforeDelete()
+{
+	UTaleQuestMapStepDescBase::BeforeDelete();
+
+}
+
+void UTaleQuestAddMerchantMapStepDesc::AfterRead()
+{
+	UTaleQuestMapStepDescBase::AfterRead();
+
+	READ_PTR_FULL(Layout, UMerchantMapLayout);
+}
+
+void UTaleQuestAddMerchantMapStepDesc::BeforeDelete()
+{
+	UTaleQuestMapStepDescBase::BeforeDelete();
+
+	DELE_PTR_FULL(Layout);
+}
+
+void UTaleQuestAddRiddleMapBaseStepDesc::AfterRead()
+{
+	UTaleQuestMapStepDescBase::AfterRead();
+
+}
+
+void UTaleQuestAddRiddleMapBaseStepDesc::BeforeDelete()
+{
+	UTaleQuestMapStepDescBase::BeforeDelete();
+
+}
+
+void UTaleQuestAddRiddleMapStepDesc::AfterRead()
+{
+	UTaleQuestAddRiddleMapBaseStepDesc::AfterRead();
+
+}
+
+void UTaleQuestAddRiddleMapStepDesc::BeforeDelete()
+{
+	UTaleQuestAddRiddleMapBaseStepDesc::BeforeDelete();
+
+}
+
+void UTaleQuestAddRiddleMapUsingVariableStepDesc::AfterRead()
+{
+	UTaleQuestAddRiddleMapBaseStepDesc::AfterRead();
+
+}
+
+void UTaleQuestAddRiddleMapUsingVariableStepDesc::BeforeDelete()
+{
+	UTaleQuestAddRiddleMapBaseStepDesc::BeforeDelete();
+
+}
+
+void UTaleQuestAddXMarksMapStepDesc::AfterRead()
+{
+	UTaleQuestMapStepDescBase::AfterRead();
+
+}
+
+void UTaleQuestAddXMarksMapStepDesc::BeforeDelete()
+{
+	UTaleQuestMapStepDescBase::BeforeDelete();
+
+}
+
+void UTaleQuestAdvanceRiddleMapStepDesc::AfterRead()
+{
+	UTaleQuestMapStepDescBase::AfterRead();
+
+}
+
+void UTaleQuestAdvanceRiddleMapStepDesc::BeforeDelete()
+{
+	UTaleQuestMapStepDescBase::BeforeDelete();
+
+}
+
+void UTaleQuestRemoveMapStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+	READ_PTR_FULL(StepDesc, UTaleQuestRemoveMapStepDesc);
+}
+
+void UTaleQuestRemoveMapStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+	DELE_PTR_FULL(StepDesc);
+}
+
+void UTaleQuestRemoveMapStepDesc::AfterRead()
+{
+	UTaleQuestMapStepDescBase::AfterRead();
+
+}
+
+void UTaleQuestRemoveMapStepDesc::BeforeDelete()
+{
+	UTaleQuestMapStepDescBase::BeforeDelete();
+
+}
+
+void UTaleQuestUpdateMerchantMapStep::AfterRead()
+{
+	UTaleQuestStep::AfterRead();
+
+	READ_PTR_FULL(Desc, UTaleQuestUpdateMerchantMapStepDesc);
+}
+
+void UTaleQuestUpdateMerchantMapStep::BeforeDelete()
+{
+	UTaleQuestStep::BeforeDelete();
+
+	DELE_PTR_FULL(Desc);
+}
+
+void UTaleQuestUpdateMerchantMapStepDesc::AfterRead()
+{
+	UTaleQuestMapStepDescBase::AfterRead();
+
+}
+
+void UTaleQuestUpdateMerchantMapStepDesc::BeforeDelete()
+{
+	UTaleQuestMapStepDescBase::BeforeDelete();
 
 }
 

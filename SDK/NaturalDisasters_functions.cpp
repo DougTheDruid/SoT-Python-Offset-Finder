@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -134,6 +134,14 @@ void FVolcanoTargetCoolDown::BeforeDelete()
 	DELE_PTR_FULL(Target);
 }
 
+void FEventVolcanoStateChanged::AfterRead()
+{
+}
+
+void FEventVolcanoStateChanged::BeforeDelete()
+{
+}
+
 void UAshenLordAshCloudSetupDataAsset::AfterRead()
 {
 	UDataAsset::AfterRead();
@@ -151,14 +159,14 @@ void UAshenLordAshCloudSetupDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function NaturalDisasters.AshenLordAshCloud.UpdatePostSettingsBP
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void AAshenLordAshCloud::UpdatePostSettingsBP()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.AshenLordAshCloud.UpdatePostSettingsBP");
 
-	AAshenLordAshCloud_UpdatePostSettingsBP_Params params;
+	AAshenLordAshCloud_UpdatePostSettingsBP_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -169,7 +177,7 @@ void AAshenLordAshCloud::UpdatePostSettingsBP()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function NaturalDisasters.AshenLordAshCloud.SetDissipationDensityBP
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -178,7 +186,7 @@ void AAshenLordAshCloud::SetDissipationDensityBP(float CloudDensity)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.AshenLordAshCloud.SetDissipationDensityBP");
 
-	AAshenLordAshCloud_SetDissipationDensityBP_Params params;
+	AAshenLordAshCloud_SetDissipationDensityBP_Params params {};
 	params.CloudDensity = CloudDensity;
 
 	auto flags = fn->FunctionFlags;
@@ -190,14 +198,14 @@ void AAshenLordAshCloud::SetDissipationDensityBP(float CloudDensity)
 
 
 // Function:
-//		Offset -> 0x03A7C270
+//		Offset -> 0x0398AEB0
 //		Name   -> Function NaturalDisasters.AshenLordAshCloud.OnRep_StateChanged
 //		Flags  -> (Final, Native, Private)
 void AAshenLordAshCloud::OnRep_StateChanged()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.AshenLordAshCloud.OnRep_StateChanged");
 
-	AAshenLordAshCloud_OnRep_StateChanged_Params params;
+	AAshenLordAshCloud_OnRep_StateChanged_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -225,7 +233,7 @@ void AAshenLordAshCloud::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7B9C0
+//		Offset -> 0x0398A600
 //		Name   -> Function NaturalDisasters.AshenLordVolcano.Multicast_FireProjectile
 //		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private, HasDefaults)
 // Parameters:
@@ -237,7 +245,7 @@ void AAshenLordVolcano::Multicast_FireProjectile(int WeightedVolcanoProjectileIn
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.AshenLordVolcano.Multicast_FireProjectile");
 
-	AAshenLordVolcano_Multicast_FireProjectile_Params params;
+	AAshenLordVolcano_Multicast_FireProjectile_Params params {};
 	params.WeightedVolcanoProjectileIndex = WeightedVolcanoProjectileIndex;
 	params.AuthoritySpawnLocation = AuthoritySpawnLocation;
 	params.LaunchVelocity = LaunchVelocity;
@@ -293,14 +301,14 @@ void UAshenLordVolcanoSetupDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7C190
+//		Offset -> 0x0398ADD0
 //		Name   -> Function NaturalDisasters.AshenLordWorldEndCloud.OnRep_CloudStateChange
 //		Flags  -> (Final, Native, Public)
 void AAshenLordWorldEndCloud::OnRep_CloudStateChange()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.AshenLordWorldEndCloud.OnRep_CloudStateChange");
 
-	AAshenLordWorldEndCloud_OnRep_CloudStateChange_Params params;
+	AAshenLordWorldEndCloud_OnRep_CloudStateChange_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -312,7 +320,7 @@ void AAshenLordWorldEndCloud::OnRep_CloudStateChange()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function NaturalDisasters.AshenLordWorldEndCloud.AnimateCloud
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -321,7 +329,7 @@ void AAshenLordWorldEndCloud::AnimateCloud(float AdjustedLifetime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.AshenLordWorldEndCloud.AnimateCloud");
 
-	AAshenLordWorldEndCloud_AnimateCloud_Params params;
+	AAshenLordWorldEndCloud_AnimateCloud_Params params {};
 	params.AdjustedLifetime = AdjustedLifetime;
 
 	auto flags = fn->FunctionFlags;
@@ -345,14 +353,14 @@ void AAshenLordWorldEndCloud::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7C230
+//		Offset -> 0x0398AE70
 //		Name   -> Function NaturalDisasters.Geyser.OnRep_GeyserState
 //		Flags  -> (Final, Native, Private)
 void AGeyser::OnRep_GeyserState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.Geyser.OnRep_GeyserState");
 
-	AGeyser_OnRep_GeyserState_Params params;
+	AGeyser_OnRep_GeyserState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -364,14 +372,14 @@ void AGeyser::OnRep_GeyserState()
 
 
 // Function:
-//		Offset -> 0x03A7BBE0
+//		Offset -> 0x0398A820
 //		Name   -> Function NaturalDisasters.Geyser.Multicast_TriggerExplosion
 //		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 void AGeyser::Multicast_TriggerExplosion()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.Geyser.Multicast_TriggerExplosion");
 
-	AGeyser_Multicast_TriggerExplosion_Params params;
+	AGeyser_Multicast_TriggerExplosion_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -415,7 +423,7 @@ void AGeyser::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7BCA0
+//		Offset -> 0x0398A8E0
 //		Name   -> Function NaturalDisasters.DisableGeyserMechanismAction.OnActionStateChanged
 //		Flags  -> (Native, Public)
 // Parameters:
@@ -426,7 +434,7 @@ void ADisableGeyserMechanismAction::OnActionStateChanged(TEnumAsByte<Athena_EMec
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.DisableGeyserMechanismAction.OnActionStateChanged");
 
-	ADisableGeyserMechanismAction_OnActionStateChanged_Params params;
+	ADisableGeyserMechanismAction_OnActionStateChanged_Params params {};
 	params.PreviousState = PreviousState;
 	params.NewState = NewState;
 	params.InInstigator = InInstigator;
@@ -441,14 +449,14 @@ void ADisableGeyserMechanismAction::OnActionStateChanged(TEnumAsByte<Athena_EMec
 
 
 // Function:
-//		Offset -> 0x03A7BC00
+//		Offset -> 0x0398A840
 //		Name   -> Function NaturalDisasters.DisableGeyserMechanismAction.OnActionReset
 //		Flags  -> (Native, Public)
 void ADisableGeyserMechanismAction::OnActionReset()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.DisableGeyserMechanismAction.OnActionReset");
 
-	ADisableGeyserMechanismAction_OnActionReset_Params params;
+	ADisableGeyserMechanismAction_OnActionReset_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -486,7 +494,7 @@ void UEarthquakeSetupDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7C1B0
+//		Offset -> 0x0398ADF0
 //		Name   -> Function NaturalDisasters.Earthquake.OnRep_EarthquakeState
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -495,7 +503,7 @@ void AEarthquake::OnRep_EarthquakeState(TEnumAsByte<NaturalDisasters_EEarthquake
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.Earthquake.OnRep_EarthquakeState");
 
-	AEarthquake_OnRep_EarthquakeState_Params params;
+	AEarthquake_OnRep_EarthquakeState_Params params {};
 	params.OldEarthquakeState = OldEarthquakeState;
 
 	auto flags = fn->FunctionFlags;
@@ -540,7 +548,7 @@ void AEarthquake::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7BF40
+//		Offset -> 0x0398AB80
 //		Name   -> Function NaturalDisasters.MechanismGeyser.OnMechanismActionStateChanged
 //		Flags  -> (Final, Native, Public)
 // Parameters:
@@ -551,7 +559,7 @@ void AMechanismGeyser::OnMechanismActionStateChanged(TEnumAsByte<Athena_EMechani
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.MechanismGeyser.OnMechanismActionStateChanged");
 
-	AMechanismGeyser_OnMechanismActionStateChanged_Params params;
+	AMechanismGeyser_OnMechanismActionStateChanged_Params params {};
 	params.PreviousState = PreviousState;
 	params.NewState = NewState;
 	params.InInstigator = InInstigator;
@@ -566,14 +574,14 @@ void AMechanismGeyser::OnMechanismActionStateChanged(TEnumAsByte<Athena_EMechani
 
 
 // Function:
-//		Offset -> 0x03A7BEA0
+//		Offset -> 0x0398AAE0
 //		Name   -> Function NaturalDisasters.MechanismGeyser.OnMechanismActionReset
 //		Flags  -> (Final, Native, Private)
 void AMechanismGeyser::OnMechanismActionReset()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.MechanismGeyser.OnMechanismActionReset");
 
-	AMechanismGeyser_OnMechanismActionReset_Params params;
+	AMechanismGeyser_OnMechanismActionReset_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -641,7 +649,7 @@ void AGeyserManager::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7BE10
+//		Offset -> 0x0398AA50
 //		Name   -> Function NaturalDisasters.GeyserItemSpawnComponent.OnGeyserSpawned
 //		Flags  -> (Final, Native, Private, HasOutParms, HasDefaults)
 // Parameters:
@@ -650,7 +658,7 @@ void UGeyserItemSpawnComponent::OnGeyserSpawned(const struct FVector& GeyserSpaw
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.GeyserItemSpawnComponent.OnGeyserSpawned");
 
-	UGeyserItemSpawnComponent_OnGeyserSpawned_Params params;
+	UGeyserItemSpawnComponent_OnGeyserSpawned_Params params {};
 	params.GeyserSpawnLocation = GeyserSpawnLocation;
 
 	auto flags = fn->FunctionFlags;
@@ -699,7 +707,7 @@ void ULavaStatus::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7C0E0
+//		Offset -> 0x0398AD20
 //		Name   -> Function NaturalDisasters.LavaZone.OnRep_ActorsInZone
 //		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
@@ -708,7 +716,7 @@ void ALavaZone::OnRep_ActorsInZone(TArray<class AActor*> PreviousActors)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.LavaZone.OnRep_ActorsInZone");
 
-	ALavaZone_OnRep_ActorsInZone_Params params;
+	ALavaZone_OnRep_ActorsInZone_Params params {};
 	params.PreviousActors = PreviousActors;
 
 	auto flags = fn->FunctionFlags;
@@ -721,14 +729,14 @@ void ALavaZone::OnRep_ActorsInZone(TArray<class AActor*> PreviousActors)
 
 
 // Function:
-//		Offset -> 0x03A7C0C0
+//		Offset -> 0x0398AD00
 //		Name   -> Function NaturalDisasters.LavaZone.OnRep_Active
 //		Flags  -> (Final, Native, Private)
 void ALavaZone::OnRep_Active()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.LavaZone.OnRep_Active");
 
-	ALavaZone_OnRep_Active_Params params;
+	ALavaZone_OnRep_Active_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -753,6 +761,42 @@ void ALavaZone::BeforeDelete()
 	DELE_PTR_FULL(LavaMaterial);
 }
 
+void UVolcanoInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UVolcanoInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UVolcanoServiceInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UVolcanoServiceInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void USeatStat_IslandVolcanoActive::AfterRead()
+{
+	USeatStat::AfterRead();
+
+}
+
+void USeatStat_IslandVolcanoActive::BeforeDelete()
+{
+	USeatStat::BeforeDelete();
+
+}
+
 void USuperheatedWaterSetupDataAsset::AfterRead()
 {
 	UDataAsset::AfterRead();
@@ -766,14 +810,14 @@ void USuperheatedWaterSetupDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7C250
+//		Offset -> 0x0398AE90
 //		Name   -> Function NaturalDisasters.SuperheatedWater.OnRep_PlayersInZone
 //		Flags  -> (Final, Native, Private)
 void ASuperheatedWater::OnRep_PlayersInZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.SuperheatedWater.OnRep_PlayersInZone");
 
-	ASuperheatedWater_OnRep_PlayersInZone_Params params;
+	ASuperheatedWater_OnRep_PlayersInZone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -801,7 +845,7 @@ void ASuperheatedWater::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A7C290
+//		Offset -> 0x0398AED0
 //		Name   -> Function NaturalDisasters.Volcano.OnRep_VolcanoState
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -810,7 +854,7 @@ void AVolcano::OnRep_VolcanoState(const struct FVolcanoStateData& OldVolcanoStat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.Volcano.OnRep_VolcanoState");
 
-	AVolcano_OnRep_VolcanoState_Params params;
+	AVolcano_OnRep_VolcanoState_Params params {};
 	params.OldVolcanoState = OldVolcanoState;
 
 	auto flags = fn->FunctionFlags;
@@ -823,7 +867,7 @@ void AVolcano::OnRep_VolcanoState(const struct FVolcanoStateData& OldVolcanoStat
 
 
 // Function:
-//		Offset -> 0x03A7BB00
+//		Offset -> 0x0398A740
 //		Name   -> Function NaturalDisasters.Volcano.Multicast_FireProjectile
 //		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private, HasDefaults)
 // Parameters:
@@ -833,7 +877,7 @@ void AVolcano::Multicast_FireProjectile(const struct FVector& AuthoritySpawnLoca
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function NaturalDisasters.Volcano.Multicast_FireProjectile");
 
-	AVolcano_Multicast_FireProjectile_Params params;
+	AVolcano_Multicast_FireProjectile_Params params {};
 	params.AuthoritySpawnLocation = AuthoritySpawnLocation;
 	params.VolcanoProjectileDataArray = VolcanoProjectileDataArray;
 
@@ -886,6 +930,18 @@ void AVolcano::BeforeDelete()
 	DELE_PTR_FULL(EruptingAudioPlayEvent);
 	DELE_PTR_FULL(EruptingAudioStopEvent);
 	DELE_PTR_FULL(InstantKillZone);
+}
+
+void UVolcanoService::AfterRead()
+{
+	UObject::AfterRead();
+
+}
+
+void UVolcanoService::BeforeDelete()
+{
+	UObject::BeforeDelete();
+
 }
 
 }

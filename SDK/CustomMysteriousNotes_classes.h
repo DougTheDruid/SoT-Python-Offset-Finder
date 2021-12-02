@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -44,7 +44,7 @@ public:
 class ACustomMysteriousNotesService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_BK9D[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_L2TZ[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TMap<int, struct FCustomPlayerNoteList>            CustomMysteriousNotes;                                     // 0x03D8(0x0050) (ZeroConstructor, Protected)
 
 

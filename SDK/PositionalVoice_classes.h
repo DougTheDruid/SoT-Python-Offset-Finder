@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -67,14 +67,14 @@ public:
 class UVoiceChatRenderer : public UObject
 {
 public:
-	unsigned char                                      UnknownData_12W1[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_4CO0[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UWwiseEvent*                                 AttenuatedVoiceEvent;                                      // 0x0038(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWwiseEvent*                                 AttenuatedAndSpatialisedVoiceEvent;                        // 0x0040(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWwiseEvent*                                 UnattenuatedVoiceEvent;                                    // 0x0048(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                PreBufferInMilliseconds;                                   // 0x0050(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                ChatRoutingListenerIndex;                                  // 0x0054(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              EmitterHoldInSeconds;                                      // 0x0058(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_744W[0x124];                                   // 0x005C(0x0124) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0TB1[0x124];                                   // 0x005C(0x0124) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

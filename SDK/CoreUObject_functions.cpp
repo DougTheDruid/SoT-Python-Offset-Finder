@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -422,7 +422,7 @@ bool UObject::IsA(UClass* cmp) const
 }
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function CoreUObject.Object.ExecuteUbergraph
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -431,7 +431,7 @@ void UObject::ExecuteUbergraph(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CoreUObject.Object.ExecuteUbergraph");
 
-	UObject_ExecuteUbergraph_Params params;
+	UObject_ExecuteUbergraph_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

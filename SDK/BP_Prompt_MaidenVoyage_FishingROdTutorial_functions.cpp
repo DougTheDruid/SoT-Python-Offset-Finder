@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.FullStateReset
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::FullStateReset()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.FullStateReset");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_FullStateReset_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_FullStateReset_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::FullStateReset()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishEscapingFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishEscapingFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishEscapingFunc");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishEscapingFunc_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishEscapingFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishEscapingFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnBattleWhilstReelingFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -64,7 +64,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnBattleWhilstReelingFunc(con
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnBattleWhilstReelingFunc");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnBattleWhilstReelingFunc_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnBattleWhilstReelingFunc_Params params {};
 	params.EventFishingReelingWhileBattlingStateChange = EventFishingReelingWhileBattlingStateChange;
 
 	auto flags = fn->FunctionFlags;
@@ -76,14 +76,14 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnBattleWhilstReelingFunc(con
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishCaughtFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishCaughtFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishCaughtFunc");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishCaughtFunc_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishCaughtFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -94,14 +94,14 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishCaughtFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishTiredFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishTiredFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishTiredFunc");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishTiredFunc_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishTiredFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -112,14 +112,14 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishTiredFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishBiteFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishBiteFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishBiteFunc");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishBiteFunc_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishBiteFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -130,7 +130,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishBiteFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnCastRodFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -139,7 +139,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnCastRodFunc(const struct FE
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnCastRodFunc");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnCastRodFunc_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnCastRodFunc_Params params {};
 	params.EventSetFishingAnimationState = EventSetFishingAnimationState;
 
 	auto flags = fn->FunctionFlags;
@@ -151,7 +151,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnCastRodFunc(const struct FE
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnStowFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -160,7 +160,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnStowFunc(const struct FEven
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnStowFunc");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnStowFunc_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnStowFunc_Params params {};
 	params.EventStartStow = EventStartStow;
 
 	auto flags = fn->FunctionFlags;
@@ -172,16 +172,16 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnStowFunc(const struct FEven
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnWieldFunc
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-//		struct FEventObjectWielded                         EventObjectWielded                                         (ConstParm, Parm, OutParm, ReferenceParm)
-void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnWieldFunc(const struct FEventObjectWielded& EventObjectWielded)
+//		struct FAthena_FEventObjectWielded                 EventObjectWielded                                         (ConstParm, Parm, OutParm, ReferenceParm)
+void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnWieldFunc(const struct FAthena_FEventObjectWielded& EventObjectWielded)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnWieldFunc");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnWieldFunc_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnWieldFunc_Params params {};
 	params.EventObjectWielded = EventObjectWielded;
 
 	auto flags = fn->FunctionFlags;
@@ -193,14 +193,14 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnWieldFunc(const struct FEve
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.ResetPromptState
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::ResetPromptState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.ResetPromptState");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_ResetPromptState_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_ResetPromptState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -211,14 +211,14 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::ResetPromptState()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.Evaluate
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.Evaluate");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_Evaluate_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_Evaluate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -229,7 +229,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::Evaluate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.RegisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -238,7 +238,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::RegisterCharacterEvents_Imple
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.RegisterCharacterEvents_Implementable");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_RegisterCharacterEvents_Implementable_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_RegisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -250,7 +250,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::RegisterCharacterEvents_Imple
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.UnregisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -259,7 +259,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::UnregisterCharacterEvents_Imp
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.UnregisterCharacterEvents_Implementable");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_UnregisterCharacterEvents_Implementable_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_UnregisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -271,14 +271,14 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::UnregisterCharacterEvents_Imp
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.PostInitialize
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::PostInitialize()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.PostInitialize");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_PostInitialize_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_PostInitialize_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -289,14 +289,14 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::PostInitialize()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.UnregisterOtherEvents_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.UnregisterOtherEvents_Implementable");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_UnregisterOtherEvents_Implementable_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_UnregisterOtherEvents_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -307,16 +307,16 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::UnregisterOtherEvents_Impleme
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnWield
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-//		struct FEventObjectWielded                         Event                                                      (Parm)
-void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnWield(const struct FEventObjectWielded& Event)
+//		struct FAthena_FEventObjectWielded                 Event                                                      (Parm)
+void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnWield(const struct FAthena_FEventObjectWielded& Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnWield");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnWield_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnWield_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -328,7 +328,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnWield(const struct FEventOb
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishTired
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -337,7 +337,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishTired(const struct FEve
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishTired");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishTired_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishTired_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -349,7 +349,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishTired(const struct FEve
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnCastRod
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -358,7 +358,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnCastRod(const struct FEvent
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnCastRod");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnCastRod_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnCastRod_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -370,7 +370,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnCastRod(const struct FEvent
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishCaught
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -379,7 +379,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishCaught(const struct FEv
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishCaught");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishCaught_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishCaught_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -391,7 +391,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishCaught(const struct FEv
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishBite
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -400,7 +400,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishBite(const struct FEven
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishBite");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishBite_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishBite_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -412,7 +412,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishBite(const struct FEven
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnBattleWhilstReeling
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -421,7 +421,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnBattleWhilstReeling(const s
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnBattleWhilstReeling");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnBattleWhilstReeling_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnBattleWhilstReeling_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -433,7 +433,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnBattleWhilstReeling(const s
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnStow
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -442,7 +442,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnStow(const struct FEventSta
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnStow");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnStow_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnStow_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -454,7 +454,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnStow(const struct FEventSta
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishEscaping
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -463,7 +463,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishEscaping(const struct F
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnFishEscaping");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishEscaping_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnFishEscaping_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -475,7 +475,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnFishEscaping(const struct F
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnTakeControl
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -484,7 +484,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnTakeControl(const struct FE
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.OnTakeControl");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnTakeControl_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_OnTakeControl_Params params {};
 	params.NewParam = NewParam;
 
 	auto flags = fn->FunctionFlags;
@@ -496,7 +496,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::OnTakeControl(const struct FE
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.ExecuteUbergraph_BP_Prompt_MaidenVoyage_FishingRodTutorial
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -505,7 +505,7 @@ void UBP_Prompt_MaidenVoyage_FishingRodTutorial_C::ExecuteUbergraph_BP_Prompt_Ma
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_MaidenVoyage_FishingROdTutorial.BP_Prompt_MaidenVoyage_FishingRodTutorial_C.ExecuteUbergraph_BP_Prompt_MaidenVoyage_FishingRodTutorial");
 
-	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_ExecuteUbergraph_BP_Prompt_MaidenVoyage_FishingRodTutorial_Params params;
+	UBP_Prompt_MaidenVoyage_FishingRodTutorial_C_ExecuteUbergraph_BP_Prompt_MaidenVoyage_FishingRodTutorial_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

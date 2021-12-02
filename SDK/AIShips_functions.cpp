@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -593,7 +593,7 @@ void UAIShipServiceDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03D1DE20
+//		Offset -> 0x03C74BA0
 //		Name   -> Function AIShips.AIShipDebugFunctionLibrary.RequestAIShipForCrew
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -603,7 +603,7 @@ void UAIShipDebugFunctionLibrary::STATIC_RequestAIShipForCrew(class UObject* Wor
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AIShips.AIShipDebugFunctionLibrary.RequestAIShipForCrew");
 
-	UAIShipDebugFunctionLibrary_RequestAIShipForCrew_Params params;
+	UAIShipDebugFunctionLibrary_RequestAIShipForCrew_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.CrewId = CrewId;
 
@@ -617,7 +617,7 @@ void UAIShipDebugFunctionLibrary::STATIC_RequestAIShipForCrew(class UObject* Wor
 
 
 // Function:
-//		Offset -> 0x03D1DCD0
+//		Offset -> 0x03C74A50
 //		Name   -> Function AIShips.AIShipDebugFunctionLibrary.GenerateAIShipBattleDesc
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -628,7 +628,7 @@ struct FAIShipEncounterBattleDesc UAIShipDebugFunctionLibrary::STATIC_GenerateAI
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AIShips.AIShipDebugFunctionLibrary.GenerateAIShipBattleDesc");
 
-	UAIShipDebugFunctionLibrary_GenerateAIShipBattleDesc_Params params;
+	UAIShipDebugFunctionLibrary_GenerateAIShipBattleDesc_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.ServiceParams = ServiceParams;
 
@@ -718,7 +718,7 @@ void UAIShipTelemetryComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03D1DC00
+//		Offset -> 0x03C74980
 //		Name   -> Function AIShips.AthenaAIShipController.ApplyControllerParams
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -728,7 +728,7 @@ void AAthenaAIShipController::ApplyControllerParams(class UAthenaAIControllerPar
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AIShips.AthenaAIShipController.ApplyControllerParams");
 
-	AAthenaAIShipController_ApplyControllerParams_Params params;
+	AAthenaAIShipController_ApplyControllerParams_Params params {};
 	params.ParamsAsset = ParamsAsset;
 	params.InPawn = InPawn;
 
@@ -856,7 +856,7 @@ void UBTTask_SailShipToLocation::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03D1DEE0
+//		Offset -> 0x03C74C60
 //		Name   -> Function AIShips.CursedCrewCustomisationInterface.SetCursedCrewCustomisationProperties
 //		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -865,7 +865,7 @@ void UCursedCrewCustomisationInterface::SetCursedCrewCustomisationProperties(con
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AIShips.CursedCrewCustomisationInterface.SetCursedCrewCustomisationProperties");
 
-	UCursedCrewCustomisationInterface_SetCursedCrewCustomisationProperties_Params params;
+	UCursedCrewCustomisationInterface_SetCursedCrewCustomisationProperties_Params params {};
 	params.SailData = SailData;
 
 	auto flags = fn->FunctionFlags;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -39,14 +39,14 @@ void UGameplayTaskOwnerInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02066060
+//		Offset -> 0x0209C8E0
 //		Name   -> Function GameplayTasks.GameplayTask.ReadyForActivation
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UGameplayTask::ReadyForActivation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask.ReadyForActivation");
 
-	UGameplayTask_ReadyForActivation_Params params;
+	UGameplayTask_ReadyForActivation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -58,14 +58,14 @@ void UGameplayTask::ReadyForActivation()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
 //		Flags  -> (MulticastDelegate, Public, Delegate)
 void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature");
 
-	UGameplayTask_GenericGameplayTaskDelegate__DelegateSignature_Params params;
+	UGameplayTask_GenericGameplayTaskDelegate__DelegateSignature_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -76,14 +76,14 @@ void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 
 
 // Function:
-//		Offset -> 0x02065CF0
+//		Offset -> 0x0209C570
 //		Name   -> Function GameplayTasks.GameplayTask.EndTask
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UGameplayTask::EndTask()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask.EndTask");
 
-	UGameplayTask_EndTask_Params params;
+	UGameplayTask_EndTask_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -107,7 +107,7 @@ void UGameplayTask::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02066080
+//		Offset -> 0x0209C900
 //		Name   -> Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -120,7 +120,7 @@ class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::STATIC_SpawnActor(cons
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor");
 
-	UGameplayTask_SpawnActor_SpawnActor_Params params;
+	UGameplayTask_SpawnActor_SpawnActor_Params params {};
 	params.SpawnLocation = SpawnLocation;
 	params.SpawnRotation = SpawnRotation;
 	params.Class = Class;
@@ -138,7 +138,7 @@ class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::STATIC_SpawnActor(cons
 
 
 // Function:
-//		Offset -> 0x02065D10
+//		Offset -> 0x0209C590
 //		Name   -> Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -148,7 +148,7 @@ void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextOb
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor");
 
-	UGameplayTask_SpawnActor_FinishSpawningActor_Params params;
+	UGameplayTask_SpawnActor_FinishSpawningActor_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.SpawnedActor = SpawnedActor;
 
@@ -162,7 +162,7 @@ void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextOb
 
 
 // Function:
-//		Offset -> 0x02065C10
+//		Offset -> 0x0209C490
 //		Name   -> Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor
 //		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -173,7 +173,7 @@ bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObj
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor");
 
-	UGameplayTask_SpawnActor_BeginSpawningActor_Params params;
+	UGameplayTask_SpawnActor_BeginSpawningActor_Params params {};
 	params.WorldContextObject = WorldContextObject;
 
 	auto flags = fn->FunctionFlags;
@@ -205,7 +205,7 @@ void UGameplayTask_SpawnActor::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02066230
+//		Offset -> 0x0209CAB0
 //		Name   -> Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -215,7 +215,7 @@ class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::STATIC_TaskWaitDelay(flo
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay");
 
-	UGameplayTask_WaitDelay_TaskWaitDelay_Params params;
+	UGameplayTask_WaitDelay_TaskWaitDelay_Params params {};
 	params.Time = Time;
 
 	auto flags = fn->FunctionFlags;
@@ -230,14 +230,14 @@ class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::STATIC_TaskWaitDelay(flo
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature
 //		Flags  -> (MulticastDelegate, Public, Delegate)
 void UGameplayTask_WaitDelay::TaskDelayDelegate__DelegateSignature()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature");
 
-	UGameplayTask_WaitDelay_TaskDelayDelegate__DelegateSignature_Params params;
+	UGameplayTask_WaitDelay_TaskDelayDelegate__DelegateSignature_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -272,14 +272,14 @@ void UGameplayTaskResource::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02066040
+//		Offset -> 0x0209C8C0
 //		Name   -> Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks
 //		Flags  -> (Final, Native, Public)
 void UGameplayTasksComponent::OnRep_SimulatedTasks()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks");
 
-	UGameplayTasksComponent_OnRep_SimulatedTasks_Params params;
+	UGameplayTasksComponent_OnRep_SimulatedTasks_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -291,7 +291,7 @@ void UGameplayTasksComponent::OnRep_SimulatedTasks()
 
 
 // Function:
-//		Offset -> 0x02065DE0
+//		Offset -> 0x0209C660
 //		Name   -> Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -304,7 +304,7 @@ TEnumAsByte<GameplayTasks_EGameplayTaskRunResult> UGameplayTasksComponent::STATI
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask");
 
-	UGameplayTasksComponent_K2_RunGameplayTask_Params params;
+	UGameplayTasksComponent_K2_RunGameplayTask_Params params {};
 	params.Task = Task;
 	params.Priority = Priority;
 	params.AdditionalRequiredResources = AdditionalRequiredResources;

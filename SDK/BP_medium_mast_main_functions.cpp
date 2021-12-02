@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0.Brig
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_medium_mast_main.BP_medium_mast_main_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_medium_mast_main_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_medium_mast_main.BP_medium_mast_main_C.UserConstructionScript");
 
-	ABP_medium_mast_main_C_UserConstructionScript_Params params;
+	ABP_medium_mast_main_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void ABP_medium_mast_main_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_medium_mast_main.BP_medium_mast_main_C.OnMastDescLoaded
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -46,7 +46,7 @@ void ABP_medium_mast_main_C::OnMastDescLoaded(class UMastDescAsset* MastDesc)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_medium_mast_main.BP_medium_mast_main_C.OnMastDescLoaded");
 
-	ABP_medium_mast_main_C_OnMastDescLoaded_Params params;
+	ABP_medium_mast_main_C_OnMastDescLoaded_Params params {};
 	params.MastDesc = MastDesc;
 
 	auto flags = fn->FunctionFlags;
@@ -58,7 +58,7 @@ void ABP_medium_mast_main_C::OnMastDescLoaded(class UMastDescAsset* MastDesc)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_medium_mast_main.BP_medium_mast_main_C.ExecuteUbergraph_BP_medium_mast_main
 //		Flags  -> ()
 // Parameters:
@@ -67,7 +67,7 @@ void ABP_medium_mast_main_C::ExecuteUbergraph_BP_medium_mast_main(int EntryPoint
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_medium_mast_main.BP_medium_mast_main_C.ExecuteUbergraph_BP_medium_mast_main");
 
-	ABP_medium_mast_main_C_ExecuteUbergraph_BP_medium_mast_main_Params params;
+	ABP_medium_mast_main_C_ExecuteUbergraph_BP_medium_mast_main_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

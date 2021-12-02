@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.DriveValueToClampByDelta
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -34,7 +34,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_DriveValueToClampByDelta(float* Val
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.DriveValueToClampByDelta");
 
-	UBP_LocomotionFunctionLibrary_C_DriveValueToClampByDelta_Params params;
+	UBP_LocomotionFunctionLibrary_C_DriveValueToClampByDelta_Params params {};
 	params.Min = Min;
 	params.Max = Max;
 	params.Delta = Delta;
@@ -56,7 +56,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_DriveValueToClampByDelta(float* Val
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.FindSailControlHandIKPositionFromAnimation
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -69,7 +69,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_FindSailControlHandIKPositionFromAn
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.FindSailControlHandIKPositionFromAnimation");
 
-	UBP_LocomotionFunctionLibrary_C_FindSailControlHandIKPositionFromAnimation_Params params;
+	UBP_LocomotionFunctionLibrary_C_FindSailControlHandIKPositionFromAnimation_Params params {};
 	params.Animation_Hand_IK_Location = Animation_Hand_IK_Location;
 	params.LowerRopeLocation = LowerRopeLocation;
 	params.UpperRopeLocation = UpperRopeLocation;
@@ -87,7 +87,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_FindSailControlHandIKPositionFromAn
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDrivenBlendSpace
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -99,7 +99,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDrivenBlendSpac
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDrivenBlendSpace");
 
-	UBP_LocomotionFunctionLibrary_C_ArrayLoadingFromDataDrivenBlendSpace_Params params;
+	UBP_LocomotionFunctionLibrary_C_ArrayLoadingFromDataDrivenBlendSpace_Params params {};
 	params.FallbackBlendspace = FallbackBlendspace;
 	params.__WorldContext = __WorldContext;
 
@@ -117,7 +117,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDrivenBlendSpac
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven1DBlendSpace
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -129,7 +129,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDriven1DBlendSp
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven1DBlendSpace");
 
-	UBP_LocomotionFunctionLibrary_C_ArrayLoadingFromDataDriven1DBlendSpace_Params params;
+	UBP_LocomotionFunctionLibrary_C_ArrayLoadingFromDataDriven1DBlendSpace_Params params {};
 	params.FallbackBlendspace1D = FallbackBlendspace1D;
 	params.__WorldContext = __WorldContext;
 
@@ -147,7 +147,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDriven1DBlendSp
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -159,7 +159,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDriven(TArray<c
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ArrayLoadingFromDataDriven");
 
-	UBP_LocomotionFunctionLibrary_C_ArrayLoadingFromDataDriven_Params params;
+	UBP_LocomotionFunctionLibrary_C_ArrayLoadingFromDataDriven_Params params {};
 	params.FallBackAnimation = FallBackAnimation;
 	params.__WorldContext = __WorldContext;
 
@@ -177,7 +177,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ArrayLoadingFromDataDriven(TArray<c
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update IK Limb Controls
 //		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -195,7 +195,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_IK_Limb_Controls(class USkel
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update IK Limb Controls");
 
-	UBP_LocomotionFunctionLibrary_C_Update_IK_Limb_Controls_Params params;
+	UBP_LocomotionFunctionLibrary_C_Update_IK_Limb_Controls_Params params {};
 	params.SkeletalMeshComponent = SkeletalMeshComponent;
 	params.Limb_ID = Limb_ID;
 	params.Active = Active;
@@ -216,7 +216,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_IK_Limb_Controls(class USkel
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Integer
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -227,7 +227,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Decrement_Integer(int* Value, int D
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Integer");
 
-	UBP_LocomotionFunctionLibrary_C_Decrement_Integer_Params params;
+	UBP_LocomotionFunctionLibrary_C_Decrement_Integer_Params params {};
 	params.Decrement = Decrement;
 	params.__WorldContext = __WorldContext;
 
@@ -243,7 +243,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Decrement_Integer(int* Value, int D
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Integer
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -254,7 +254,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Increment_Integer(int* integer, int
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Integer");
 
-	UBP_LocomotionFunctionLibrary_C_Increment_Integer_Params params;
+	UBP_LocomotionFunctionLibrary_C_Increment_Integer_Params params {};
 	params.Increment = Increment;
 	params.__WorldContext = __WorldContext;
 
@@ -270,7 +270,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Increment_Integer(int* integer, int
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Calculate Turn Times
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -283,7 +283,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Calculate_Turn_Times(bool TurnLeft,
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Calculate Turn Times");
 
-	UBP_LocomotionFunctionLibrary_C_Calculate_Turn_Times_Params params;
+	UBP_LocomotionFunctionLibrary_C_Calculate_Turn_Times_Params params {};
 	params.TurnLeft = TurnLeft;
 	params.CurrentControllerYaw = CurrentControllerYaw;
 	params.__WorldContext = __WorldContext;
@@ -302,7 +302,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Calculate_Turn_Times(bool TurnLeft,
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.InRangeAndRate
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -316,7 +316,7 @@ bool UBP_LocomotionFunctionLibrary_C::STATIC_InRangeAndRate(bool InZone, float M
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.InRangeAndRate");
 
-	UBP_LocomotionFunctionLibrary_C_InRangeAndRate_Params params;
+	UBP_LocomotionFunctionLibrary_C_InRangeAndRate_Params params {};
 	params.InZone = InZone;
 	params.Min = Min;
 	params.Max = Max;
@@ -336,7 +336,7 @@ bool UBP_LocomotionFunctionLibrary_C::STATIC_InRangeAndRate(bool InZone, float M
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Turn State Change Check
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -347,7 +347,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Turn_State_Change_Check(struct FBP_
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Turn State Change Check");
 
-	UBP_LocomotionFunctionLibrary_C_Turn_State_Change_Check_Params params;
+	UBP_LocomotionFunctionLibrary_C_Turn_State_Change_Check_Params params {};
 	params.InZone = InZone;
 	params.__WorldContext = __WorldContext;
 
@@ -363,7 +363,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Turn_State_Change_Check(struct FBP_
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Not In Range
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -376,7 +376,7 @@ bool UBP_LocomotionFunctionLibrary_C::STATIC_Not_In_Range(float Value, float Min
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Not In Range");
 
-	UBP_LocomotionFunctionLibrary_C_Not_In_Range_Params params;
+	UBP_LocomotionFunctionLibrary_C_Not_In_Range_Params params {};
 	params.Value = Value;
 	params.Min = Min;
 	params.Max = Max;
@@ -393,7 +393,7 @@ bool UBP_LocomotionFunctionLibrary_C::STATIC_Not_In_Range(float Value, float Min
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn State
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -403,7 +403,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Turn_State(struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn State");
 
-	UBP_LocomotionFunctionLibrary_C_Update_Animation_Turn_State_Params params;
+	UBP_LocomotionFunctionLibrary_C_Update_Animation_Turn_State_Params params {};
 	params.__WorldContext = __WorldContext;
 
 	auto flags = fn->FunctionFlags;
@@ -418,7 +418,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Turn_State(struct 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn Time
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -433,7 +433,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Turn_Time(bool Tur
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Turn Time");
 
-	UBP_LocomotionFunctionLibrary_C_Update_Animation_Turn_Time_Params params;
+	UBP_LocomotionFunctionLibrary_C_Update_Animation_Turn_Time_Params params {};
 	params.TurningLeft = TurningLeft;
 	params.Reset_Angle = Reset_Angle;
 	params.Current_Controller_Yaw = Current_Controller_Yaw;
@@ -455,7 +455,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Turn_Time(bool Tur
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.JumpingLogic
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -471,7 +471,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_JumpingLogic(class ACharacter* Play
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.JumpingLogic");
 
-	UBP_LocomotionFunctionLibrary_C_JumpingLogic_Params params;
+	UBP_LocomotionFunctionLibrary_C_JumpingLogic_Params params {};
 	params.PlayerCharacter = PlayerCharacter;
 	params.MovementSpeed = MovementSpeed;
 	params.FrameDelta = FrameDelta;
@@ -495,7 +495,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_JumpingLogic(class ACharacter* Play
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Ik Blending
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -511,7 +511,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Ik_Blending(float* BlendCounter, bo
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Ik Blending");
 
-	UBP_LocomotionFunctionLibrary_C_Ik_Blending_Params params;
+	UBP_LocomotionFunctionLibrary_C_Ik_Blending_Params params {};
 	params.IKON = IKON;
 	params.EaseingType = EaseingType;
 	params.BlendMax = BlendMax;
@@ -534,7 +534,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Ik_Blending(float* BlendCounter, bo
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Counter
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -548,7 +548,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Increment_Counter(float Counter, fl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Increment Counter");
 
-	UBP_LocomotionFunctionLibrary_C_Increment_Counter_Params params;
+	UBP_LocomotionFunctionLibrary_C_Increment_Counter_Params params {};
 	params.Counter = Counter;
 	params.CounterMax = CounterMax;
 	params.DeltaTime = DeltaTime;
@@ -568,7 +568,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Increment_Counter(float Counter, fl
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Counter
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -582,7 +582,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Decrement_Counter(float Counter, fl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Decrement Counter");
 
-	UBP_LocomotionFunctionLibrary_C_Decrement_Counter_Params params;
+	UBP_LocomotionFunctionLibrary_C_Decrement_Counter_Params params {};
 	params.Counter = Counter;
 	params.CounterMin = CounterMin;
 	params.DeltaTime = DeltaTime;
@@ -602,7 +602,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Decrement_Counter(float Counter, fl
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Out Over Time
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -615,7 +615,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Out_Over_Time(float CurrentTime, fl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Out Over Time");
 
-	UBP_LocomotionFunctionLibrary_C_Out_Over_Time_Params params;
+	UBP_LocomotionFunctionLibrary_C_Out_Over_Time_Params params {};
 	params.CurrentTime = CurrentTime;
 	params.MaxTime = MaxTime;
 	params.EasingType = EasingType;
@@ -633,7 +633,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Out_Over_Time(float CurrentTime, fl
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Times
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -646,7 +646,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Times(bool Turning
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Animation Times");
 
-	UBP_LocomotionFunctionLibrary_C_Update_Animation_Times_Params params;
+	UBP_LocomotionFunctionLibrary_C_Update_Animation_Times_Params params {};
 	params.TurningLeft = TurningLeft;
 	params.Current_Controller_Yaw = Current_Controller_Yaw;
 	params.__WorldContext = __WorldContext;
@@ -665,7 +665,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Animation_Times(bool Turning
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Turn Animations
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -679,7 +679,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Turn_Animations(bool Turning
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Update Turn Animations");
 
-	UBP_LocomotionFunctionLibrary_C_Update_Turn_Animations_Params params;
+	UBP_LocomotionFunctionLibrary_C_Update_Turn_Animations_Params params {};
 	params.TurningLeft = TurningLeft;
 	params.CurrentYaw = CurrentYaw;
 	params.PreviousYaw = PreviousYaw;
@@ -698,7 +698,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Update_Turn_Animations(bool Turning
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Fix Yaw Wraparound
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -710,7 +710,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Fix_Yaw_Wraparound(float CurrentYaw
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Fix Yaw Wraparound");
 
-	UBP_LocomotionFunctionLibrary_C_Fix_Yaw_Wraparound_Params params;
+	UBP_LocomotionFunctionLibrary_C_Fix_Yaw_Wraparound_Params params {};
 	params.CurrentYaw = CurrentYaw;
 	params.PreviousYaw = PreviousYaw;
 	params.__WorldContext = __WorldContext;
@@ -727,7 +727,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Fix_Yaw_Wraparound(float CurrentYaw
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ReflexAngleCheck
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -739,7 +739,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ReflexAngleCheck(float Direction_A,
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ReflexAngleCheck");
 
-	UBP_LocomotionFunctionLibrary_C_ReflexAngleCheck_Params params;
+	UBP_LocomotionFunctionLibrary_C_ReflexAngleCheck_Params params {};
 	params.Direction_A = Direction_A;
 	params.Direction_B = Direction_B;
 	params.__WorldContext = __WorldContext;
@@ -756,7 +756,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ReflexAngleCheck(float Direction_A,
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ControllerRotation
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -768,7 +768,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ControllerRotation(class ACharacter
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.ControllerRotation");
 
-	UBP_LocomotionFunctionLibrary_C_ControllerRotation_Params params;
+	UBP_LocomotionFunctionLibrary_C_ControllerRotation_Params params {};
 	params.Character = Character;
 	params.__WorldContext = __WorldContext;
 
@@ -786,7 +786,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_ControllerRotation(class ACharacter
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Character Speed
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -798,7 +798,7 @@ void UBP_LocomotionFunctionLibrary_C::STATIC_Character_Speed(class ACharacter* C
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LocomotionFunctionLibrary.BP_LocomotionFunctionLibrary_C.Character Speed");
 
-	UBP_LocomotionFunctionLibrary_C_Character_Speed_Params params;
+	UBP_LocomotionFunctionLibrary_C_Character_Speed_Params params {};
 	params.Character = Character;
 	params.__WorldContext = __WorldContext;
 

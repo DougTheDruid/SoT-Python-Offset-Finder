@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -36,7 +36,7 @@ public:
 	struct FAnimNode_HIKSetProperty                    AnimGraphNode_HIKSetProperty_BEECCB534C1C37B25FA9F3B1DA7BA34B; // 0x09B8(0x0050)
 	struct FAnimNode_HIKSetProperty                    AnimGraphNode_HIKSetProperty_89BFB8CF43DAFE0C5F6E379691867FAE; // 0x0A08(0x0050)
 	struct FAnimNode_HIKSetProperty                    AnimGraphNode_HIKSetProperty_E9BD0B194F77290025D9BAA7D3051978; // 0x0A58(0x0050)
-	unsigned char                                      UnknownData_WIG6[0x8];                                     // 0x0AA8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_XEOJ[0x8];                                     // 0x0AA8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FAnimNode_HIKReach                          AnimGraphNode_HIKReach_E9C975504F43E2B8701B799CD8F3259F;   // 0x0AB0(0x0080)
 	struct FAnimNode_HIKSetProperty                    AnimGraphNode_HIKSetProperty_9F8942EA45E1E98E4C4523A5BC630E7D; // 0x0B30(0x0050)
 	struct FAnimNode_HIKSetProperty                    AnimGraphNode_HIKSetProperty_CB2992764499584AF2206682F31C72BF; // 0x0B80(0x0050)

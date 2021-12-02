@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.StartOpeningSteps
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_AnimatedStepsComponent_C::StartOpeningSteps()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.StartOpeningSteps");
 
-	UBP_AnimatedStepsComponent_C_StartOpeningSteps_Params params;
+	UBP_AnimatedStepsComponent_C_StartOpeningSteps_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void UBP_AnimatedStepsComponent_C::StartOpeningSteps()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.SetAllStepsZs
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -47,7 +47,7 @@ void UBP_AnimatedStepsComponent_C::SetAllStepsZs(TArray<float>* TargetZOffsets, 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.SetAllStepsZs");
 
-	UBP_AnimatedStepsComponent_C_SetAllStepsZs_Params params;
+	UBP_AnimatedStepsComponent_C_SetAllStepsZs_Params params {};
 	params.OpeningOrClosing = OpeningOrClosing;
 
 	auto flags = fn->FunctionFlags;
@@ -62,7 +62,7 @@ void UBP_AnimatedStepsComponent_C::SetAllStepsZs(TArray<float>* TargetZOffsets, 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.UpdateStep
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -75,7 +75,7 @@ void UBP_AnimatedStepsComponent_C::UpdateStep(int BoneIndex, float TargetZ, floa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.UpdateStep");
 
-	UBP_AnimatedStepsComponent_C_UpdateStep_Params params;
+	UBP_AnimatedStepsComponent_C_UpdateStep_Params params {};
 	params.BoneIndex = BoneIndex;
 	params.TargetZ = TargetZ;
 	params.MovementDelay = MovementDelay;
@@ -91,7 +91,7 @@ void UBP_AnimatedStepsComponent_C::UpdateStep(int BoneIndex, float TargetZ, floa
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.ReceiveTick
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -100,7 +100,7 @@ void UBP_AnimatedStepsComponent_C::ReceiveTick(float DeltaSeconds)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.ReceiveTick");
 
-	UBP_AnimatedStepsComponent_C_ReceiveTick_Params params;
+	UBP_AnimatedStepsComponent_C_ReceiveTick_Params params {};
 	params.DeltaSeconds = DeltaSeconds;
 
 	auto flags = fn->FunctionFlags;
@@ -112,14 +112,14 @@ void UBP_AnimatedStepsComponent_C::ReceiveTick(float DeltaSeconds)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.StartOpening
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_AnimatedStepsComponent_C::StartOpening()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.StartOpening");
 
-	UBP_AnimatedStepsComponent_C_StartOpening_Params params;
+	UBP_AnimatedStepsComponent_C_StartOpening_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -130,14 +130,14 @@ void UBP_AnimatedStepsComponent_C::StartOpening()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.OpenImmediate
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void UBP_AnimatedStepsComponent_C::OpenImmediate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.OpenImmediate");
 
-	UBP_AnimatedStepsComponent_C_OpenImmediate_Params params;
+	UBP_AnimatedStepsComponent_C_OpenImmediate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -148,14 +148,14 @@ void UBP_AnimatedStepsComponent_C::OpenImmediate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.Close
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void UBP_AnimatedStepsComponent_C::Close()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.Close");
 
-	UBP_AnimatedStepsComponent_C_Close_Params params;
+	UBP_AnimatedStepsComponent_C_Close_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -166,7 +166,7 @@ void UBP_AnimatedStepsComponent_C::Close()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.ExecuteUbergraph_BP_AnimatedStepsComponent
 //		Flags  -> ()
 // Parameters:
@@ -175,7 +175,7 @@ void UBP_AnimatedStepsComponent_C::ExecuteUbergraph_BP_AnimatedStepsComponent(in
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AnimatedStepsComponent.BP_AnimatedStepsComponent_C.ExecuteUbergraph_BP_AnimatedStepsComponent");
 
-	UBP_AnimatedStepsComponent_C_ExecuteUbergraph_BP_AnimatedStepsComponent_Params params;
+	UBP_AnimatedStepsComponent_C_ExecuteUbergraph_BP_AnimatedStepsComponent_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

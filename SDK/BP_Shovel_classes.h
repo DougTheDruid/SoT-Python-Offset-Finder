@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,11 +20,11 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Shovel.BP_Shovel_C
-// 0x0008 (FullSize[0x0848] - InheritedSize[0x0840])
+// 0x0008 (FullSize[0x0868] - InheritedSize[0x0860])
 class ABP_Shovel_C : public AShovel
 {
 public:
-	class UUsableWieldableComponent*                   UsableWieldable;                                           // 0x0840(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	class UUsableWieldableComponent*                   UsableWieldable;                                           // 0x0860(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
 
 
 	static UClass* StaticClass()

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.SetParameters
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -32,7 +32,7 @@ void ABP_TotD_PortalController_C::SetParameters(float PortalOpen, float LightSca
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.SetParameters");
 
-	ABP_TotD_PortalController_C_SetParameters_Params params;
+	ABP_TotD_PortalController_C_SetParameters_Params params {};
 	params.PortalOpen = PortalOpen;
 	params.LightScale = LightScale;
 	params.CrackVisibility = CrackVisibility;
@@ -48,7 +48,7 @@ void ABP_TotD_PortalController_C::SetParameters(float PortalOpen, float LightSca
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.SetPortalPositionAndOrientation
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -56,7 +56,7 @@ void ABP_TotD_PortalController_C::SetPortalPositionAndOrientation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.SetPortalPositionAndOrientation");
 
-	ABP_TotD_PortalController_C_SetPortalPositionAndOrientation_Params params;
+	ABP_TotD_PortalController_C_SetPortalPositionAndOrientation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -67,7 +67,7 @@ void ABP_TotD_PortalController_C::SetPortalPositionAndOrientation()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.CollectMaterialsAndLights
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -75,7 +75,7 @@ void ABP_TotD_PortalController_C::CollectMaterialsAndLights()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.CollectMaterialsAndLights");
 
-	ABP_TotD_PortalController_C_CollectMaterialsAndLights_Params params;
+	ABP_TotD_PortalController_C_CollectMaterialsAndLights_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -86,14 +86,14 @@ void ABP_TotD_PortalController_C::CollectMaterialsAndLights()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_TotD_PortalController_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.UserConstructionScript");
 
-	ABP_TotD_PortalController_C_UserConstructionScript_Params params;
+	ABP_TotD_PortalController_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -104,14 +104,14 @@ void ABP_TotD_PortalController_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.Timeline_0__FinishedFunc
 //		Flags  -> (BlueprintEvent)
 void ABP_TotD_PortalController_C::Timeline_0__FinishedFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.Timeline_0__FinishedFunc");
 
-	ABP_TotD_PortalController_C_Timeline_0__FinishedFunc_Params params;
+	ABP_TotD_PortalController_C_Timeline_0__FinishedFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -122,14 +122,14 @@ void ABP_TotD_PortalController_C::Timeline_0__FinishedFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.Timeline_0__UpdateFunc
 //		Flags  -> (BlueprintEvent)
 void ABP_TotD_PortalController_C::Timeline_0__UpdateFunc()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.Timeline_0__UpdateFunc");
 
-	ABP_TotD_PortalController_C_Timeline_0__UpdateFunc_Params params;
+	ABP_TotD_PortalController_C_Timeline_0__UpdateFunc_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -140,14 +140,14 @@ void ABP_TotD_PortalController_C::Timeline_0__UpdateFunc()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_TotD_PortalController_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.ReceiveBeginPlay");
 
-	ABP_TotD_PortalController_C_ReceiveBeginPlay_Params params;
+	ABP_TotD_PortalController_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -158,7 +158,7 @@ void ABP_TotD_PortalController_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.ReceiveTick
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -167,7 +167,7 @@ void ABP_TotD_PortalController_C::ReceiveTick(float DeltaSeconds)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.ReceiveTick");
 
-	ABP_TotD_PortalController_C_ReceiveTick_Params params;
+	ABP_TotD_PortalController_C_ReceiveTick_Params params {};
 	params.DeltaSeconds = DeltaSeconds;
 
 	auto flags = fn->FunctionFlags;
@@ -179,14 +179,14 @@ void ABP_TotD_PortalController_C::ReceiveTick(float DeltaSeconds)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.OpenPortal
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_TotD_PortalController_C::OpenPortal()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.OpenPortal");
 
-	ABP_TotD_PortalController_C_OpenPortal_Params params;
+	ABP_TotD_PortalController_C_OpenPortal_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -197,7 +197,7 @@ void ABP_TotD_PortalController_C::OpenPortal()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_TotD_PortalController.BP_TotD_PortalController_C.ExecuteUbergraph_BP_TotD_PortalController
 //		Flags  -> ()
 // Parameters:
@@ -206,7 +206,7 @@ void ABP_TotD_PortalController_C::ExecuteUbergraph_BP_TotD_PortalController(int 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_TotD_PortalController.BP_TotD_PortalController_C.ExecuteUbergraph_BP_TotD_PortalController");
 
-	ABP_TotD_PortalController_C_ExecuteUbergraph_BP_TotD_PortalController_Params params;
+	ABP_TotD_PortalController_C_ExecuteUbergraph_BP_TotD_PortalController_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

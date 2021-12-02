@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -105,7 +105,7 @@ void UAudioHardwareDeviceService::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02EE37C0
+//		Offset -> 0x02F28D00
 //		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.SetHitchThreshold
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -114,7 +114,7 @@ void UHitchDiagnosisBlueprintFunctionLibrary::STATIC_SetHitchThreshold(int InThr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.SetHitchThreshold");
 
-	UHitchDiagnosisBlueprintFunctionLibrary_SetHitchThreshold_Params params;
+	UHitchDiagnosisBlueprintFunctionLibrary_SetHitchThreshold_Params params {};
 	params.InThreshold = InThreshold;
 
 	auto flags = fn->FunctionFlags;
@@ -127,7 +127,7 @@ void UHitchDiagnosisBlueprintFunctionLibrary::STATIC_SetHitchThreshold(int InThr
 
 
 // Function:
-//		Offset -> 0x02EE3720
+//		Offset -> 0x02F28C60
 //		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchNameThisFrame
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -136,7 +136,7 @@ struct FString UHitchDiagnosisBlueprintFunctionLibrary::STATIC_GetMaxHitchNameTh
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchNameThisFrame");
 
-	UHitchDiagnosisBlueprintFunctionLibrary_GetMaxHitchNameThisFrame_Params params;
+	UHitchDiagnosisBlueprintFunctionLibrary_GetMaxHitchNameThisFrame_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -150,7 +150,7 @@ struct FString UHitchDiagnosisBlueprintFunctionLibrary::STATIC_GetMaxHitchNameTh
 
 
 // Function:
-//		Offset -> 0x02EE36F0
+//		Offset -> 0x02F28C30
 //		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchLengthThisFrameMs
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -159,7 +159,7 @@ int UHitchDiagnosisBlueprintFunctionLibrary::STATIC_GetMaxHitchLengthThisFrameMs
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.GetMaxHitchLengthThisFrameMs");
 
-	UHitchDiagnosisBlueprintFunctionLibrary_GetMaxHitchLengthThisFrameMs_Params params;
+	UHitchDiagnosisBlueprintFunctionLibrary_GetMaxHitchLengthThisFrameMs_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -173,14 +173,14 @@ int UHitchDiagnosisBlueprintFunctionLibrary::STATIC_GetMaxHitchLengthThisFrameMs
 
 
 // Function:
-//		Offset -> 0x02EE32D0
+//		Offset -> 0x02F28810
 //		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DumpThisFramesHitchesToLog
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 void UHitchDiagnosisBlueprintFunctionLibrary::STATIC_DumpThisFramesHitchesToLog()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DumpThisFramesHitchesToLog");
 
-	UHitchDiagnosisBlueprintFunctionLibrary_DumpThisFramesHitchesToLog_Params params;
+	UHitchDiagnosisBlueprintFunctionLibrary_DumpThisFramesHitchesToLog_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -192,7 +192,7 @@ void UHitchDiagnosisBlueprintFunctionLibrary::STATIC_DumpThisFramesHitchesToLog(
 
 
 // Function:
-//		Offset -> 0x02EE32A0
+//		Offset -> 0x02F287E0
 //		Name   -> Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DidHitchOccurThisFrame
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -201,7 +201,7 @@ bool UHitchDiagnosisBlueprintFunctionLibrary::STATIC_DidHitchOccurThisFrame()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.HitchDiagnosisBlueprintFunctionLibrary.DidHitchOccurThisFrame");
 
-	UHitchDiagnosisBlueprintFunctionLibrary_DidHitchOccurThisFrame_Params params;
+	UHitchDiagnosisBlueprintFunctionLibrary_DidHitchOccurThisFrame_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -251,14 +251,14 @@ void ARareHUD::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02EE3280
+//		Offset -> 0x02F287C0
 //		Name   -> Function RareEngine.StallDetector.Deactivate
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UStallDetector::Deactivate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StallDetector.Deactivate");
 
-	UStallDetector_Deactivate_Params params;
+	UStallDetector_Deactivate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -270,7 +270,7 @@ void UStallDetector::Deactivate()
 
 
 // Function:
-//		Offset -> 0x02EE31B0
+//		Offset -> 0x02F286F0
 //		Name   -> Function RareEngine.StallDetector.CreateStallDetector
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -281,7 +281,7 @@ class UStallDetector* UStallDetector::STATIC_CreateStallDetector(float Delay, bo
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StallDetector.CreateStallDetector");
 
-	UStallDetector_CreateStallDetector_Params params;
+	UStallDetector_CreateStallDetector_Params params {};
 	params.Delay = Delay;
 	params.CreateActive = CreateActive;
 
@@ -297,14 +297,14 @@ class UStallDetector* UStallDetector::STATIC_CreateStallDetector(float Delay, bo
 
 
 // Function:
-//		Offset -> 0x02EE3190
+//		Offset -> 0x02F286D0
 //		Name   -> Function RareEngine.StallDetector.Activate
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UStallDetector::Activate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StallDetector.Activate");
 
-	UStallDetector_Activate_Params params;
+	UStallDetector_Activate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -328,7 +328,7 @@ void UStallDetector::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02EE34F0
+//		Offset -> 0x02F28A30
 //		Name   -> Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshComponents
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -340,7 +340,7 @@ void UStaticMeshActorBlueprintLibrary::STATIC_FindAllStaticMeshComponents(class 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshComponents");
 
-	UStaticMeshActorBlueprintLibrary_FindAllStaticMeshComponents_Params params;
+	UStaticMeshActorBlueprintLibrary_FindAllStaticMeshComponents_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.MeshFilter = MeshFilter;
 	params.RestrictToLevel = RestrictToLevel;
@@ -358,7 +358,7 @@ void UStaticMeshActorBlueprintLibrary::STATIC_FindAllStaticMeshComponents(class 
 
 
 // Function:
-//		Offset -> 0x02EE32F0
+//		Offset -> 0x02F28830
 //		Name   -> Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshActors
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -370,7 +370,7 @@ void UStaticMeshActorBlueprintLibrary::STATIC_FindAllStaticMeshActors(class UObj
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareEngine.StaticMeshActorBlueprintLibrary.FindAllStaticMeshActors");
 
-	UStaticMeshActorBlueprintLibrary_FindAllStaticMeshActors_Params params;
+	UStaticMeshActorBlueprintLibrary_FindAllStaticMeshActors_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.MeshFilter = MeshFilter;
 	params.RestrictToLevel = RestrictToLevel;

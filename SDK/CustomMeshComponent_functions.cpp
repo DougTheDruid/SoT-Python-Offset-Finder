@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -27,7 +27,7 @@ void FCustomMeshTriangle::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x044F9AF0
+//		Offset -> 0x0461EDC0
 //		Name   -> Function CustomMeshComponent.CustomMeshComponent.SetCustomMeshTriangles
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -37,7 +37,7 @@ bool UCustomMeshComponent::SetCustomMeshTriangles(TArray<struct FCustomMeshTrian
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomMeshComponent.CustomMeshComponent.SetCustomMeshTriangles");
 
-	UCustomMeshComponent_SetCustomMeshTriangles_Params params;
+	UCustomMeshComponent_SetCustomMeshTriangles_Params params {};
 	params.Triangles = Triangles;
 
 	auto flags = fn->FunctionFlags;
@@ -52,14 +52,14 @@ bool UCustomMeshComponent::SetCustomMeshTriangles(TArray<struct FCustomMeshTrian
 
 
 // Function:
-//		Offset -> 0x044F9AD0
+//		Offset -> 0x0461EDA0
 //		Name   -> Function CustomMeshComponent.CustomMeshComponent.ClearCustomMeshTriangles
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UCustomMeshComponent::ClearCustomMeshTriangles()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomMeshComponent.CustomMeshComponent.ClearCustomMeshTriangles");
 
-	UCustomMeshComponent_ClearCustomMeshTriangles_Params params;
+	UCustomMeshComponent_ClearCustomMeshTriangles_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -71,7 +71,7 @@ void UCustomMeshComponent::ClearCustomMeshTriangles()
 
 
 // Function:
-//		Offset -> 0x044F9A20
+//		Offset -> 0x0461ECF0
 //		Name   -> Function CustomMeshComponent.CustomMeshComponent.AddCustomMeshTriangles
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -80,7 +80,7 @@ void UCustomMeshComponent::AddCustomMeshTriangles(TArray<struct FCustomMeshTrian
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CustomMeshComponent.CustomMeshComponent.AddCustomMeshTriangles");
 
-	UCustomMeshComponent_AddCustomMeshTriangles_Params params;
+	UCustomMeshComponent_AddCustomMeshTriangles_Params params {};
 	params.Triangles = Triangles;
 
 	auto flags = fn->FunctionFlags;

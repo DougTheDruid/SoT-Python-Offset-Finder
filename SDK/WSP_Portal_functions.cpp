@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function WSP_Portal.WSP_Portal_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void AWSP_Portal_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function WSP_Portal.WSP_Portal_C.UserConstructionScript");
 
-	AWSP_Portal_C_UserConstructionScript_Params params;
+	AWSP_Portal_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

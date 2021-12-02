@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPurchaseable
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -28,7 +28,7 @@ void UBP_CT_VoyageProgress_C::IsPurchaseable(bool* Result)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPurchaseable");
 
-	UBP_CT_VoyageProgress_C_IsPurchaseable_Params params;
+	UBP_CT_VoyageProgress_C_IsPurchaseable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -42,7 +42,7 @@ void UBP_CT_VoyageProgress_C::IsPurchaseable(bool* Result)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.SetProgress
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -51,7 +51,7 @@ void UBP_CT_VoyageProgress_C::SetProgress(TEnumAsByte<TutorialVoyageInternalStat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.SetProgress");
 
-	UBP_CT_VoyageProgress_C_SetProgress_Params params;
+	UBP_CT_VoyageProgress_C_SetProgress_Params params {};
 	params.NewProgress = NewProgress;
 
 	auto flags = fn->FunctionFlags;
@@ -63,7 +63,7 @@ void UBP_CT_VoyageProgress_C::SetProgress(TEnumAsByte<TutorialVoyageInternalStat
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsCurrently
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -73,7 +73,7 @@ void UBP_CT_VoyageProgress_C::IsCurrently(TEnumAsByte<TutorialVoyageInternalStat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsCurrently");
 
-	UBP_CT_VoyageProgress_C_IsCurrently_Params params;
+	UBP_CT_VoyageProgress_C_IsCurrently_Params params {};
 	params.ProgressState = ProgressState;
 
 	auto flags = fn->FunctionFlags;
@@ -88,7 +88,7 @@ void UBP_CT_VoyageProgress_C::IsCurrently(TEnumAsByte<TutorialVoyageInternalStat
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPast
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -98,7 +98,7 @@ void UBP_CT_VoyageProgress_C::IsPast(TEnumAsByte<TutorialVoyageInternalState_ETu
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.IsPast");
 
-	UBP_CT_VoyageProgress_C_IsPast_Params params;
+	UBP_CT_VoyageProgress_C_IsPast_Params params {};
 	params.ProgressState = ProgressState;
 
 	auto flags = fn->FunctionFlags;
@@ -113,7 +113,7 @@ void UBP_CT_VoyageProgress_C::IsPast(TEnumAsByte<TutorialVoyageInternalState_ETu
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.PopulateExistingState
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -121,7 +121,7 @@ void UBP_CT_VoyageProgress_C::PopulateExistingState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.PopulateExistingState");
 
-	UBP_CT_VoyageProgress_C_PopulateExistingState_Params params;
+	UBP_CT_VoyageProgress_C_PopulateExistingState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -132,7 +132,7 @@ void UBP_CT_VoyageProgress_C::PopulateExistingState()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.Initialise
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -141,7 +141,7 @@ void UBP_CT_VoyageProgress_C::Initialise(bool Disabled)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.Initialise");
 
-	UBP_CT_VoyageProgress_C_Initialise_Params params;
+	UBP_CT_VoyageProgress_C_Initialise_Params params {};
 	params.Disabled = Disabled;
 
 	auto flags = fn->FunctionFlags;
@@ -153,7 +153,7 @@ void UBP_CT_VoyageProgress_C::Initialise(bool Disabled)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.ExecuteUbergraph_BP_CT_VoyageProgress
 //		Flags  -> ()
 // Parameters:
@@ -162,7 +162,7 @@ void UBP_CT_VoyageProgress_C::ExecuteUbergraph_BP_CT_VoyageProgress(int EntryPoi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CT_VoyageProgress.BP_CT_VoyageProgress_C.ExecuteUbergraph_BP_CT_VoyageProgress");
 
-	UBP_CT_VoyageProgress_C_ExecuteUbergraph_BP_CT_VoyageProgress_Params params;
+	UBP_CT_VoyageProgress_C_ExecuteUbergraph_BP_CT_VoyageProgress_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -38,7 +38,7 @@ enum class NetworkRegions_ENetworkRegion : uint8_t
 struct FRegionAssetsList
 {
 	TEnumAsByte<NetworkRegions_ENetworkRegion>         Region;                                                    // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GPDI[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_G7HK[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FStringAssetReference>               CachedAssetsForRegion;                                     // 0x0008(0x0010) (ZeroConstructor)
 
 	void AfterRead();

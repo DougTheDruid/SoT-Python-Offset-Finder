@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -180,11 +180,11 @@ public:
 };
 
 // Class Siren.SirenController
-// 0x0008 (FullSize[0x09D8] - InheritedSize[0x09D0])
+// 0x0008 (FullSize[0x09E0] - InheritedSize[0x09D8])
 class ASirenController : public AAthenaSwimmingAIController
 {
 public:
-	unsigned char                                      UnknownData_WDN2[0x8];                                     // 0x09D0(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_A9G1[0x8];                                     // 0x09D8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // AnimBlueprintGeneratedClass BP_Anim_PetMonkey.BP_Anim_PetMonkey_C
-// 0x4401 (FullSize[0x4CD1] - InheritedSize[0x08D0])
+// 0x4411 (FullSize[0x4CE1] - InheritedSize[0x08D0])
 class UBP_Anim_PetMonkey_C : public UWieldablePetAnimationInstance
 {
 public:
@@ -209,9 +209,9 @@ public:
 	struct FAnimNode_ConvertComponentToLocalSpace      AnimGraphNode_ComponentToLocalSpace_AA3629F84E6F8810D32D918AA8CC9358; // 0x4990(0x0048)
 	struct FAnimNode_ConvertLocalToComponentSpace      AnimGraphNode_LocalToComponentSpace_7D11EC6A493A4814B509ABA2BC456414; // 0x49D8(0x0048)
 	struct FAnimNode_LookAt                            AnimGraphNode_LookAt_5762229E421479A72A95AFAD857A33C3;     // 0x4A20(0x00C0)
-	struct FPetAnimationDataBeingHeld                  PetHeldAnimations;                                         // 0x4AE0(0x0150) (Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FPetAnimationDataRoaming                    PetRoamingAnimations;                                      // 0x4C30(0x00A0) (Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                               ReactActive;                                               // 0x4CD0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPetAnimationDataBeingHeld                  PetHeldAnimations;                                         // 0x4AE0(0x0160) (Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPetAnimationDataRoaming                    PetRoamingAnimations;                                      // 0x4C40(0x00A0) (Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                               ReactActive;                                               // 0x4CE0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 
 	static UClass* StaticClass()

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_onboarding_intro_tavern_table.BP_onboarding_intro_tavern_table_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_onboarding_intro_tavern_table_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_onboarding_intro_tavern_table.BP_onboarding_intro_tavern_table_C.UserConstructionScript");
 
-	ABP_onboarding_intro_tavern_table_C_UserConstructionScript_Params params;
+	ABP_onboarding_intro_tavern_table_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,10 +41,7 @@ void ABP_onboarding_intro_tavern_table_C::AfterRead()
 	AActor::AfterRead();
 
 	READ_PTR_FULL(Candle_VFX, UParticleSystemComponent);
-	READ_PTR_FULL(Stool_3, UStaticMeshComponent);
 	READ_PTR_FULL(OnboardingIntroLocation, UOnboardingIntroLocationComponent);
-	READ_PTR_FULL(Stool_2, UStaticMeshComponent);
-	READ_PTR_FULL(Stool_1, UStaticMeshComponent);
 	READ_PTR_FULL(Table, UStaticMeshComponent);
 	READ_PTR_FULL(Tankard_2, UStaticMeshComponent);
 	READ_PTR_FULL(Plate_2, UStaticMeshComponent);
@@ -61,10 +58,7 @@ void ABP_onboarding_intro_tavern_table_C::BeforeDelete()
 	AActor::BeforeDelete();
 
 	DELE_PTR_FULL(Candle_VFX);
-	DELE_PTR_FULL(Stool_3);
 	DELE_PTR_FULL(OnboardingIntroLocation);
-	DELE_PTR_FULL(Stool_2);
-	DELE_PTR_FULL(Stool_1);
 	DELE_PTR_FULL(Table);
 	DELE_PTR_FULL(Tankard_2);
 	DELE_PTR_FULL(Plate_2);

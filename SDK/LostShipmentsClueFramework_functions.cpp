@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -283,14 +283,14 @@ void URandomClueChoiceSelectionStrategy::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01311950
+//		Offset -> 0x0133A970
 //		Name   -> Function LostShipmentsClueFramework.ClueDestinationDescriptor.OnRep_DestinationInfo
 //		Flags  -> (Native, Public)
 void UClueDestinationDescriptor::OnRep_DestinationInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueFramework.ClueDestinationDescriptor.OnRep_DestinationInfo");
 
-	UClueDestinationDescriptor_OnRep_DestinationInfo_Params params;
+	UClueDestinationDescriptor_OnRep_DestinationInfo_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -326,7 +326,7 @@ void UClueDescriptor::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x013115B0
+//		Offset -> 0x0133A5D0
 //		Name   -> Function LostShipmentsClueFramework.ClueConnectionBlueprintFunctionLibrary.CreateCluePointingToSite
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -341,7 +341,7 @@ class UClueDescriptor* UClueConnectionBlueprintFunctionLibrary::STATIC_CreateClu
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueFramework.ClueConnectionBlueprintFunctionLibrary.CreateCluePointingToSite");
 
-	UClueConnectionBlueprintFunctionLibrary_CreateCluePointingToSite_Params params;
+	UClueConnectionBlueprintFunctionLibrary_CreateCluePointingToSite_Params params {};
 	params.ConnectionConfiguration = ConnectionConfiguration;
 	params.Difficulty = Difficulty;
 	params.AllowedClueTypes = AllowedClueTypes;
@@ -467,7 +467,7 @@ void UClueFactory::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01311860
+//		Offset -> 0x0133A880
 //		Name   -> Function LostShipmentsClueFramework.ClueLifetimeBlueprintFunctionLibrary.GiveClueToParticipant
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -478,7 +478,7 @@ void UClueLifetimeBlueprintFunctionLibrary::STATIC_GiveClueToParticipant(class A
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueFramework.ClueLifetimeBlueprintFunctionLibrary.GiveClueToParticipant");
 
-	UClueLifetimeBlueprintFunctionLibrary_GiveClueToParticipant_Params params;
+	UClueLifetimeBlueprintFunctionLibrary_GiveClueToParticipant_Params params {};
 	params.Participant = Participant;
 	params.Clue = Clue;
 	params.ClueSite = ClueSite;
@@ -607,7 +607,7 @@ void UTaleQuestChooseLandOrSeaStep::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x013117C0
+//		Offset -> 0x0133A7E0
 //		Name   -> Function LostShipmentsClueFramework.TaleQuestClueSiteService.GetClueSites
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -616,7 +616,7 @@ TArray<struct FClueSite> UTaleQuestClueSiteService::GetClueSites()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueFramework.TaleQuestClueSiteService.GetClueSites");
 
-	UTaleQuestClueSiteService_GetClueSites_Params params;
+	UTaleQuestClueSiteService_GetClueSites_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -673,14 +673,12 @@ void UTaleQuestGenerateCluePointingToSiteStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(ConnectionConfiguration, UClueConnectionConfig);
 }
 
 void UTaleQuestGenerateCluePointingToSiteStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(ConnectionConfiguration);
 }
 
 void UTaleQuestGenerateCluePointingToSiteStepDesc::AfterRead()
@@ -701,14 +699,12 @@ void UTaleQuestGenerateClueSiteAtSeaLocationStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(ClueConfig, UClueFactoryConfig);
 }
 
 void UTaleQuestGenerateClueSiteAtSeaLocationStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(ClueConfig);
 }
 
 void UTaleQuestGenerateClueSiteAtSeaLocationStepDesc::AfterRead()
@@ -729,14 +725,12 @@ void UTaleQuestGenerateClueSiteOnIslandStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(ClueConfig, UClueFactoryConfig);
 }
 
 void UTaleQuestGenerateClueSiteOnIslandStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(ClueConfig);
 }
 
 void UTaleQuestGenerateClueSiteOnIslandStepDesc::AfterRead()
@@ -757,14 +751,12 @@ void UTaleQuestGenerateDebrisTypeForVoyageRankStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(DebrisForRankDescAsset, UDebrisForVoyageRankDescAsset);
 }
 
 void UTaleQuestGenerateDebrisTypeForVoyageRankStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(DebrisForRankDescAsset);
 }
 
 void UTaleQuestGenerateDebrisTypeForVoyageRankStepDesc::AfterRead()
@@ -785,14 +777,12 @@ void UTaleQuestGenerateLootDescForVoyageRankStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(LootForRankDescAsset, ULootForVoyageRankDescAsset);
 }
 
 void UTaleQuestGenerateLootDescForVoyageRankStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(LootForRankDescAsset);
 }
 
 void UTaleQuestGenerateLootDescForVoyageRankStepDesc::AfterRead()
@@ -813,14 +803,12 @@ void UTaleQuestIsClueOfTypeStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(ClueSiteTypeToMatchAgainst, UClass);
 }
 
 void UTaleQuestIsClueOfTypeStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(ClueSiteTypeToMatchAgainst);
 }
 
 void UTaleQuestIsClueOfTypeStepDesc::AfterRead()

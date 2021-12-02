@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -65,7 +65,7 @@ class URegisterServerMigrationPointOfInterestComponent : public UActorComponent
 {
 public:
 	float                                              MigrationRadius;                                           // 0x00C8(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_O1PK[0x1C];                                    // 0x00CC(0x001C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MUFF[0x1C];                                    // 0x00CC(0x001C) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

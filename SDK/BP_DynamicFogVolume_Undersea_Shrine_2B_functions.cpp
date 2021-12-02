@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -20,13 +20,13 @@ namespace CG
 
 void ABP_DynamicFogVolume_Undersea_Shrine_2B_C::AfterRead()
 {
-	ABP_DynamicFogVolume_Undersea_C::AfterRead();
+	ABP_FogVolume_Undersea_C::AfterRead();
 
 }
 
 void ABP_DynamicFogVolume_Undersea_Shrine_2B_C::BeforeDelete()
 {
-	ABP_DynamicFogVolume_Undersea_C::BeforeDelete();
+	ABP_FogVolume_Undersea_C::BeforeDelete();
 
 }
 

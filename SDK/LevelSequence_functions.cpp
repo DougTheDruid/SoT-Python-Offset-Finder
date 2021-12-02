@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -107,7 +107,7 @@ void ULevelSequenceSubtitlesInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02184D90
+//		Offset -> 0x021BB610
 //		Name   -> Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -119,7 +119,7 @@ class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlay
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer");
 
-	ULevelSequencePlayer_CreateLevelSequencePlayer_Params params;
+	ULevelSequencePlayer_CreateLevelSequencePlayer_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.LevelSequence = LevelSequence;
 	params.Settings = Settings;
@@ -176,7 +176,7 @@ void ULevelSequenceBurnInOptions::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x021853B0
+//		Offset -> 0x021BBC30
 //		Name   -> Function LevelSequence.LevelSequenceActor.SetSequence
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -186,7 +186,7 @@ void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence, bool Loa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetSequence");
 
-	ALevelSequenceActor_SetSequence_Params params;
+	ALevelSequenceActor_SetSequence_Params params {};
 	params.InSequence = InSequence;
 	params.LoadSequence = LoadSequence;
 
@@ -200,7 +200,7 @@ void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence, bool Loa
 
 
 // Function:
-//		Offset -> 0x021851C0
+//		Offset -> 0x021BBA40
 //		Name   -> Function LevelSequence.LevelSequenceActor.SetBinding
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -211,7 +211,7 @@ void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingPtr& B
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetBinding");
 
-	ALevelSequenceActor_SetBinding_Params params;
+	ALevelSequenceActor_SetBinding_Params params {};
 	params.Binding = Binding;
 	params.Actors = Actors;
 	params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
@@ -226,14 +226,14 @@ void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingPtr& B
 
 
 // Function:
-//		Offset -> 0x02185170
+//		Offset -> 0x021BB9F0
 //		Name   -> Function LevelSequence.LevelSequenceActor.ResetBindings
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void ALevelSequenceActor::ResetBindings()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBindings");
 
-	ALevelSequenceActor_ResetBindings_Params params;
+	ALevelSequenceActor_ResetBindings_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -245,7 +245,7 @@ void ALevelSequenceActor::ResetBindings()
 
 
 // Function:
-//		Offset -> 0x021850B0
+//		Offset -> 0x021BB930
 //		Name   -> Function LevelSequence.LevelSequenceActor.ResetBinding
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -254,7 +254,7 @@ void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingPtr&
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBinding");
 
-	ALevelSequenceActor_ResetBinding_Params params;
+	ALevelSequenceActor_ResetBinding_Params params {};
 	params.Binding = Binding;
 
 	auto flags = fn->FunctionFlags;
@@ -267,7 +267,7 @@ void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingPtr&
 
 
 // Function:
-//		Offset -> 0x02184FB0
+//		Offset -> 0x021BB830
 //		Name   -> Function LevelSequence.LevelSequenceActor.RemoveBinding
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -277,7 +277,7 @@ void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingPtr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.RemoveBinding");
 
-	ALevelSequenceActor_RemoveBinding_Params params;
+	ALevelSequenceActor_RemoveBinding_Params params {};
 	params.Binding = Binding;
 	params.Actor = Actor;
 
@@ -291,7 +291,7 @@ void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingPtr
 
 
 // Function:
-//		Offset -> 0x02184EF0
+//		Offset -> 0x021BB770
 //		Name   -> Function LevelSequence.LevelSequenceActor.GetSequence
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -301,7 +301,7 @@ class ULevelSequence* ALevelSequenceActor::GetSequence(bool Load)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.GetSequence");
 
-	ALevelSequenceActor_GetSequence_Params params;
+	ALevelSequenceActor_GetSequence_Params params {};
 	params.Load = Load;
 
 	auto flags = fn->FunctionFlags;
@@ -316,7 +316,7 @@ class ULevelSequence* ALevelSequenceActor::GetSequence(bool Load)
 
 
 // Function:
-//		Offset -> 0x02184C50
+//		Offset -> 0x021BB4D0
 //		Name   -> Function LevelSequence.LevelSequenceActor.AddBinding
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -327,7 +327,7 @@ void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingPtr& B
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.AddBinding");
 
-	ALevelSequenceActor_AddBinding_Params params;
+	ALevelSequenceActor_AddBinding_Params params {};
 	params.Binding = Binding;
 	params.Actor = Actor;
 	params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
@@ -364,7 +364,7 @@ void ALevelSequenceActor::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function LevelSequence.LevelSequenceBurnIn.SetSettings
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -373,7 +373,7 @@ void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.SetSettings");
 
-	ULevelSequenceBurnIn_SetSettings_Params params;
+	ULevelSequenceBurnIn_SetSettings_Params params {};
 	params.InSettings = InSettings;
 
 	auto flags = fn->FunctionFlags;
@@ -385,7 +385,7 @@ void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 
 
 // Function:
-//		Offset -> 0x02184F90
+//		Offset -> 0x021BB810
 //		Name   -> Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass
 //		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 // Parameters:
@@ -394,7 +394,7 @@ class UClass* ULevelSequenceBurnIn::GetSettingsClass()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass");
 
-	ULevelSequenceBurnIn_GetSettingsClass_Params params;
+	ULevelSequenceBurnIn_GetSettingsClass_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

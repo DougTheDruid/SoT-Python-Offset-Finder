@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -29,7 +29,7 @@ public:
 	bool                                               ShowMermaidPrompt;                                         // 0x0121(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               HasUsedStatue;                                             // 0x0122(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               HasRetrievedLoot;                                          // 0x0123(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_K07C[0x4];                                     // 0x0124(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_K6H1[0x4];                                     // 0x0124(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FPrioritisedPromptWithHandle                MermaidPrompt;                                             // 0x0128(0x0068) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FPrioritisedPromptWithHandle                LootPrompt;                                                // 0x0190(0x0068) (Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FObjectMessagingHandle                      CrewStorageChangedHandle;                                  // 0x01F8(0x0048) (Edit, BlueprintVisible, DisableEditOnInstance)
@@ -59,7 +59,7 @@ public:
 	void Reset();
 	void OnCrewStorageUpdateFunc(const struct FEventOnCrewStorageUpdate& Event);
 	void OnCrewStorageFullFunc(const struct FEventOnCrewStorageFull& Event);
-	void OnWieldedFunc(const struct FEventObjectWielded& Object);
+	void OnWieldedFunc(const struct FAthena_FEventObjectWielded& Object);
 	void PostInitialize();
 	void RegisterCharacterEvents_Implementable(const struct FObjectMessagingDispatcherHandle& CharacterDispatcher);
 	void Evaluate();
@@ -69,7 +69,7 @@ public:
 	void ResetLootPrompt();
 	void ResetMermaidPrompt();
 	void OnStowed(const struct FEventObjectStowed& Event);
-	void OnWielded(const struct FEventObjectWielded& Object);
+	void OnWielded(const struct FAthena_FEventObjectWielded& Object);
 	void OnCrewStorageChange_Event(const struct FEventOnCrewStorageFull& Event);
 	void OnCrewStorageFull_Event(const struct FEventOnCrewStorageUpdate& Event);
 	void OnItemsRetrieved_Event(const struct FEventItemsRetrieved& Event);

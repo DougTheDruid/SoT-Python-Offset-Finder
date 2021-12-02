@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,10 +20,11 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_ShipPetChest.BP_ShipPetChest_C
-// 0x0000 (FullSize[0x0518] - InheritedSize[0x0518])
+// 0x0008 (FullSize[0x0520] - InheritedSize[0x0518])
 class ABP_ShipPetChest_C : public APossessionsChest
 {
 public:
+	class UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x0518(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
 
 
 	static UClass* StaticClass()
@@ -34,6 +35,7 @@ public:
 
 
 
+	void UserConstructionScript();
 	void AfterRead();
 	void BeforeDelete();
 

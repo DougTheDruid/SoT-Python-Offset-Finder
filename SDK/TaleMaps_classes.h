@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UAddMarkToTornMapStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_WGIO[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SC95[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      MapMark;                                                   // 0x00B0(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
 
@@ -110,7 +110,7 @@ public:
 class UGetNumberOfCollectedTornMapPiecesStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_EKN1[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_YZIM[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -175,7 +175,7 @@ class URegionIslandFilteredSelectionStrategy : public URegionIslandSelectionStra
 public:
 	TArray<TEnumAsByte<Athena_EIslandType>>            IslandTypes;                                               // 0x0028(0x0010) (Edit, ZeroConstructor)
 	bool                                               UseMaxDistance;                                            // 0x0038(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_MV26[0x3];                                     // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_TSBP[0x3];                                     // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              MaxDistanceFromStartingIsland;                             // 0x003C(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
@@ -219,7 +219,7 @@ class USelectIslandsFromRegionStep : public UTaleQuestStep
 public:
 	class URegionMapDataAsset*                         RegionData;                                                // 0x0090(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URegionIslandSelectionStrategyBase*          SelectionStrategy;                                         // 0x0098(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_2KP1[0x30];                                    // 0x00A0(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9JXA[0x30];                                    // 0x00A0(0x0030) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -263,11 +263,11 @@ public:
 };
 
 // Class TaleMaps.TaleQuestAddLocationMapStep
-// 0x0048 (FullSize[0x00D8] - InheritedSize[0x0090])
+// 0x0040 (FullSize[0x00D0] - InheritedSize[0x0090])
 class UTaleQuestAddLocationMapStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_39TN[0x48];                                    // 0x0090(0x0048) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MNKC[0x40];                                    // 0x0090(0x0040) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -288,7 +288,7 @@ public:
 class UTaleQuestAddTornMapStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_KS5Z[0x40];                                    // 0x0090(0x0040) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3695[0x40];                                    // 0x0090(0x0040) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -305,12 +305,11 @@ public:
 };
 
 // Class TaleMaps.TaleQuestAddTradeRouteMapStep
-// 0x0038 (FullSize[0x00C8] - InheritedSize[0x0090])
+// 0x0030 (FullSize[0x00C0] - InheritedSize[0x0090])
 class UTaleQuestAddTradeRouteMapStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_S057[0x30];                                    // 0x0090(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UClueSiteTypeToMapMarkIdDataAsset*           ClueSiteToMarkMap;                                         // 0x00C0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_S3JX[0x30];                                    // 0x0090(0x0030) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -331,7 +330,7 @@ public:
 class UTaleQuestLocationMapChestFoundStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_W6EA[0x8];                                     // 0x0090(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NE1V[0x8];                                     // 0x0090(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

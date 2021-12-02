@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Contract.BP_Anim_Contract_C.OnUseStarted
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -29,7 +29,7 @@ void UBP_Anim_Contract_C::OnUseStarted(class UClass* InputID, const struct FWiel
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Contract.BP_Anim_Contract_C.OnUseStarted");
 
-	UBP_Anim_Contract_C_OnUseStarted_Params params;
+	UBP_Anim_Contract_C_OnUseStarted_Params params {};
 	params.InputID = InputID;
 	params.ActionVisuals = ActionVisuals;
 
@@ -42,7 +42,7 @@ void UBP_Anim_Contract_C::OnUseStarted(class UClass* InputID, const struct FWiel
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Contract.BP_Anim_Contract_C.OnUseStopped
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -51,7 +51,7 @@ void UBP_Anim_Contract_C::OnUseStopped(class UClass* InputID)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Contract.BP_Anim_Contract_C.OnUseStopped");
 
-	UBP_Anim_Contract_C_OnUseStopped_Params params;
+	UBP_Anim_Contract_C_OnUseStopped_Params params {};
 	params.InputID = InputID;
 
 	auto flags = fn->FunctionFlags;
@@ -63,7 +63,7 @@ void UBP_Anim_Contract_C::OnUseStopped(class UClass* InputID)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Contract.BP_Anim_Contract_C.ExecuteUbergraph_BP_Anim_Contract
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -72,7 +72,7 @@ void UBP_Anim_Contract_C::ExecuteUbergraph_BP_Anim_Contract(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Contract.BP_Anim_Contract_C.ExecuteUbergraph_BP_Anim_Contract");
 
-	UBP_Anim_Contract_C_ExecuteUbergraph_BP_Anim_Contract_Params params;
+	UBP_Anim_Contract_C_ExecuteUbergraph_BP_Anim_Contract_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_FishCreature.BP_FishCreature_C.ConfigureMaterialInstance
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_FishCreature_C::ConfigureMaterialInstance()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FishCreature.BP_FishCreature_C.ConfigureMaterialInstance");
 
-	ABP_FishCreature_C_ConfigureMaterialInstance_Params params;
+	ABP_FishCreature_C_ConfigureMaterialInstance_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,7 +38,7 @@ void ABP_FishCreature_C::ConfigureMaterialInstance()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_FishCreature.BP_FishCreature_C.CreateCreature
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -46,7 +46,7 @@ void ABP_FishCreature_C::CreateCreature()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FishCreature.BP_FishCreature_C.CreateCreature");
 
-	ABP_FishCreature_C_CreateCreature_Params params;
+	ABP_FishCreature_C_CreateCreature_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -57,14 +57,14 @@ void ABP_FishCreature_C::CreateCreature()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_FishCreature.BP_FishCreature_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_FishCreature_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_FishCreature.BP_FishCreature_C.UserConstructionScript");
 
-	ABP_FishCreature_C_UserConstructionScript_Params params;
+	ABP_FishCreature_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

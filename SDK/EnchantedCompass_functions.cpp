@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -18,11 +18,36 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
+void FCompassTargetSet::AfterRead()
+{
+}
+
+void FCompassTargetSet::BeforeDelete()
+{
+}
+
+void UEnchantedCompassProximityAnnouncementComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+	READ_PTR_FULL(StartAnnouncingEvent, UWwiseEvent);
+	READ_PTR_FULL(StopAnnouncingEvent, UWwiseEvent);
+}
+
+void UEnchantedCompassProximityAnnouncementComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+	DELE_PTR_FULL(StartAnnouncingEvent);
+	DELE_PTR_FULL(StopAnnouncingEvent);
+}
+
 void AMultiTargetEnchantedCompass::AfterRead()
 {
 	ACompass::AfterRead();
 
 	READ_PTR_FULL(InventoryItem, UInventoryItemComponent);
+	READ_PTR_FULL(ProximityAnnouncementComponent, UEnchantedCompassProximityAnnouncementComponent);
 }
 
 void AMultiTargetEnchantedCompass::BeforeDelete()
@@ -30,10 +55,11 @@ void AMultiTargetEnchantedCompass::BeforeDelete()
 	ACompass::BeforeDelete();
 
 	DELE_PTR_FULL(InventoryItem);
+	DELE_PTR_FULL(ProximityAnnouncementComponent);
 }
 
 // Function:
-//		Offset -> 0x03DC7F60
+//		Offset -> 0x03D26CE0
 //		Name   -> Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.GetFloatMax
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -42,7 +68,7 @@ float APrototypeMultiTargetEnchantedCompass::GetFloatMax()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.GetFloatMax");
 
-	APrototypeMultiTargetEnchantedCompass_GetFloatMax_Params params;
+	APrototypeMultiTargetEnchantedCompass_GetFloatMax_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -56,7 +82,7 @@ float APrototypeMultiTargetEnchantedCompass::GetFloatMax()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.CalculateDesiredYaw
 //		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent, Const)
 // Parameters:
@@ -66,7 +92,7 @@ float APrototypeMultiTargetEnchantedCompass::CalculateDesiredYaw(const struct FR
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.CalculateDesiredYaw");
 
-	APrototypeMultiTargetEnchantedCompass_CalculateDesiredYaw_Params params;
+	APrototypeMultiTargetEnchantedCompass_CalculateDesiredYaw_Params params {};
 	params.CompassRotation = CompassRotation;
 
 	auto flags = fn->FunctionFlags;
@@ -80,7 +106,7 @@ float APrototypeMultiTargetEnchantedCompass::CalculateDesiredYaw(const struct FR
 
 
 // Function:
-//		Offset -> 0x03DC7EB0
+//		Offset -> 0x03D26C30
 //		Name   -> Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.BP_GetTargetLocations
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -89,7 +115,7 @@ TArray<struct FVector> APrototypeMultiTargetEnchantedCompass::BP_GetTargetLocati
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EnchantedCompass.PrototypeMultiTargetEnchantedCompass.BP_GetTargetLocations");
 
-	APrototypeMultiTargetEnchantedCompass_BP_GetTargetLocations_Params params;
+	APrototypeMultiTargetEnchantedCompass_BP_GetTargetLocations_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

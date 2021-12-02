@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Speaking_Trumpet.BP_Speaking_Trumpet_C
-// 0x0000 (FullSize[0x07B0] - InheritedSize[0x07B0])
+// 0x0000 (FullSize[0x07D0] - InheritedSize[0x07D0])
 class ABP_Speaking_Trumpet_C : public ASpeakingTrumpet
 {
 public:

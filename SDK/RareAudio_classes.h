@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UWwiseEmitterComponent : public USceneComponent
 {
 public:
-	unsigned char                                      UnknownData_GFJM[0x8];                                     // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_QLMQ[0x8];                                     // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FWwiseEmitter                               Emitter;                                                   // 0x02B8(0x0020) (BlueprintVisible, BlueprintReadOnly)
 	class UWwiseObjectPoolWrapper*                     WwiseObjectPoolWrapper;                                    // 0x02D8(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -69,9 +69,10 @@ class UAnimNotify_WwiseSound : public UAnimNotify
 public:
 	class UWwiseEvent*                                 WwiseEvent;                                                // 0x0038(0x0008) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               OwnedByWorld;                                              // 0x0040(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_GSS8[0x7];                                     // 0x0041(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	TEnumAsByte<WwiseAudio_EAnimNotify_WwiseSound_PerspectiveRestriction> PerspectiveRestriction;                                    // 0x0041(0x0001) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_FW2Z[0x6];                                     // 0x0042(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UWwiseObjectPoolWrapper*                     OwnedByWorldWisePoolToUse;                                 // 0x0048(0x0008) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_B3Y2[0x20];                                    // 0x0050(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AU1Z[0x20];                                    // 0x0050(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -116,7 +117,7 @@ class UAnimNotifyState_WwiseSound : public UAnimNotifyState
 public:
 	class UWwiseEvent*                                 WwiseEvent;                                                // 0x0028(0x0008) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWwiseEvent*                                 WwiseEventEnd;                                             // 0x0030(0x0008) (Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_6JPJ[0x50];                                    // 0x0038(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QWXA[0x50];                                    // 0x0038(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -255,18 +256,17 @@ public:
 };
 
 // Class RareAudio.WwiseObjectPoolWrapper
-// 0x0058 (FullSize[0x0080] - InheritedSize[0x0028])
+// 0x0050 (FullSize[0x0078] - InheritedSize[0x0028])
 class UWwiseObjectPoolWrapper : public UObject
 {
 public:
 	struct FName                                       PoolName;                                                  // 0x0028(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                MaxResources;                                              // 0x0030(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int                                                MaxProxies;                                                // 0x0034(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                               DisableOcclusion;                                          // 0x0038(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                               DisableReverb;                                             // 0x0039(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_JE2N[0x6];                                     // 0x003A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FWwiseNativeEmitterPoolDensityParams        PoolDensityParams;                                         // 0x0040(0x0028) (Edit, BlueprintVisible, BlueprintReadOnly)
-	unsigned char                                      UnknownData_5ZMY[0x18];                                    // 0x0068(0x0018) MISSED OFFSET (PADDING)
+	bool                                               DisableOcclusion;                                          // 0x0034(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                               DisableReverb;                                             // 0x0035(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_KOPC[0x2];                                     // 0x0036(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FWwiseNativeEmitterPoolDensityParams        PoolDensityParams;                                         // 0x0038(0x0028) (Edit, BlueprintVisible, BlueprintReadOnly)
+	unsigned char                                      UnknownData_99ZO[0x18];                                    // 0x0060(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -313,7 +313,7 @@ public:
 	float                                              InsideRtpcUpdateDistance;                                  // 0x02C4(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              OutsideRtpcUpdateDistance;                                 // 0x02C8(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               TrackAttachmentToActor;                                    // 0x02CC(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_DHM7[0x13];                                    // 0x02CD(0x0013) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_YLFM[0x13];                                    // 0x02CD(0x0013) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -359,7 +359,7 @@ public:
 class UAudioPortalService : public UObject
 {
 public:
-	unsigned char                                      UnknownData_2D72[0xB0];                                    // 0x0028(0x00B0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_W4GF[0xB0];                                    // 0x0028(0x00B0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -381,7 +381,7 @@ class UAudioSpaceComponent : public UStaticMeshComponent
 {
 public:
 	class UAudioSpaceDataAsset*                        AudioSpace;                                                // 0x05F0(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_LNDS[0x8];                                     // 0x05F8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8ESO[0x8];                                     // 0x05F8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -450,7 +450,7 @@ public:
 class URareAudioHardwareDeviceService : public UAudioHardwareDeviceService
 {
 public:
-	unsigned char                                      UnknownData_Q999[0x10];                                    // 0x0040(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_HJCZ[0x10];                                    // 0x0040(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -515,7 +515,7 @@ class UTritonAcousticMap : public UObject
 {
 public:
 	struct FString                                     TritonMapFilename;                                         // 0x0028(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_QZEK[0x28];                                    // 0x0038(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JYJV[0x28];                                    // 0x0038(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -538,7 +538,7 @@ class UTritonComponent : public USceneComponent
 public:
 	class UTritonAcousticMap*                          TritonMapAsset;                                            // 0x02B0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TritonEffectRadius;                                        // 0x02B8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_TYL4[0x4];                                     // 0x02BC(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_M07S[0x4];                                     // 0x02BC(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -559,11 +559,11 @@ public:
 class UTritonService : public UObject
 {
 public:
-	unsigned char                                      UnknownData_0OQ8[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7U2F[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class UTritonComponent*>                    RegisteredTritonComponents;                                // 0x0038(0x0010) (ExportObject, ZeroConstructor, Transient, ContainsInstancedReference)
-	unsigned char                                      UnknownData_GT7D[0xA8];                                    // 0x0048(0x00A8) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SU02[0xA8];                                    // 0x0048(0x00A8) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UTritonComponent*                            CachedListenerInfo;                                        // 0x00F0(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_NLGC[0x38];                                    // 0x00F8(0x0038) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_OWPN[0x38];                                    // 0x00F8(0x0038) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

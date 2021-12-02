@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Orderofsouls_MadameOlwen.BP_Orderofsouls_MadameOlwen_C
-// 0x0000 (FullSize[0x05D8] - InheritedSize[0x05D8])
+// 0x0000 (FullSize[0x0628] - InheritedSize[0x0628])
 class ABP_Orderofsouls_MadameOlwen_C : public ABP_Orderofsouls_C
 {
 public:

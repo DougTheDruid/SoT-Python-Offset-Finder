@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -253,14 +253,14 @@ void UReviveSettings::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0338DE60
+//		Offset -> 0x03415900
 //		Name   -> Function Reviving.DeathSelfInteractionComponent.SetGiveUpAvaliable
 //		Flags  -> (Final, Native, Private)
 void UDeathSelfInteractionComponent::SetGiveUpAvaliable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Reviving.DeathSelfInteractionComponent.SetGiveUpAvaliable");
 
-	UDeathSelfInteractionComponent_SetGiveUpAvaliable_Params params;
+	UDeathSelfInteractionComponent_SetGiveUpAvaliable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -272,14 +272,14 @@ void UDeathSelfInteractionComponent::SetGiveUpAvaliable()
 
 
 // Function:
-//		Offset -> 0x0338DDC0
+//		Offset -> 0x03415860
 //		Name   -> Function Reviving.DeathSelfInteractionComponent.OnRep_HasGivenUp
 //		Flags  -> (Final, Native, Private)
 void UDeathSelfInteractionComponent::OnRep_HasGivenUp()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Reviving.DeathSelfInteractionComponent.OnRep_HasGivenUp");
 
-	UDeathSelfInteractionComponent_OnRep_HasGivenUp_Params params;
+	UDeathSelfInteractionComponent_OnRep_HasGivenUp_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -389,7 +389,7 @@ void UReviveInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0338DDE0
+//		Offset -> 0x03415880
 //		Name   -> Function Reviving.ReviveComponent.OnRep_ReviveState
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -398,7 +398,7 @@ void UReviveComponent::OnRep_ReviveState(TEnumAsByte<Reviving_EReviveState> Prev
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Reviving.ReviveComponent.OnRep_ReviveState");
 
-	UReviveComponent_OnRep_ReviveState_Params params;
+	UReviveComponent_OnRep_ReviveState_Params params {};
 	params.PreviousReviveState = PreviousReviveState;
 
 	auto flags = fn->FunctionFlags;
@@ -411,14 +411,14 @@ void UReviveComponent::OnRep_ReviveState(TEnumAsByte<Reviving_EReviveState> Prev
 
 
 // Function:
-//		Offset -> 0x0338DDA0
+//		Offset -> 0x03415840
 //		Name   -> Function Reviving.ReviveComponent.HandleOwningCharacterEndPlay
 //		Flags  -> (Final, Native, Public)
 void UReviveComponent::HandleOwningCharacterEndPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Reviving.ReviveComponent.HandleOwningCharacterEndPlay");
 
-	UReviveComponent_HandleOwningCharacterEndPlay_Params params;
+	UReviveComponent_HandleOwningCharacterEndPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

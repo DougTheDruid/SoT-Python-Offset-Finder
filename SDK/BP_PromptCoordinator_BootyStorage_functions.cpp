@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnBootyRetrieveActorDespawned
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_BootyStorage_C::OnBootyRetrieveActorDespawned()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnBootyRetrieveActorDespawned");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnBootyRetrieveActorDespawned_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnBootyRetrieveActorDespawned_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnBootyRetrieveActorDespawned()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnStowedFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -46,7 +46,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnStowedFunc(const struct FEventObjec
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnStowedFunc");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnStowedFunc_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnStowedFunc_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -58,14 +58,14 @@ void UBP_PromptCoordinator_BootyStorage_C::OnStowedFunc(const struct FEventObjec
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnBootyRetrieveActorSpawned
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_BootyStorage_C::OnBootyRetrieveActorSpawned()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnBootyRetrieveActorSpawned");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnBootyRetrieveActorSpawned_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnBootyRetrieveActorSpawned_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -76,7 +76,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnBootyRetrieveActorSpawned()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.CrewHasLootToRetrieve
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -85,7 +85,7 @@ void UBP_PromptCoordinator_BootyStorage_C::CrewHasLootToRetrieve(bool* HasTreasu
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.CrewHasLootToRetrieve");
 
-	UBP_PromptCoordinator_BootyStorage_C_CrewHasLootToRetrieve_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_CrewHasLootToRetrieve_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -99,7 +99,7 @@ void UBP_PromptCoordinator_BootyStorage_C::CrewHasLootToRetrieve(bool* HasTreasu
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.IsInSunkenKingdom
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -108,7 +108,7 @@ void UBP_PromptCoordinator_BootyStorage_C::IsInSunkenKingdom(bool* InSunkenKingd
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.IsInSunkenKingdom");
 
-	UBP_PromptCoordinator_BootyStorage_C_IsInSunkenKingdom_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_IsInSunkenKingdom_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -122,14 +122,14 @@ void UBP_PromptCoordinator_BootyStorage_C::IsInSunkenKingdom(bool* InSunkenKingd
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.Reset
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_BootyStorage_C::Reset()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.Reset");
 
-	UBP_PromptCoordinator_BootyStorage_C_Reset_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_Reset_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -140,7 +140,7 @@ void UBP_PromptCoordinator_BootyStorage_C::Reset()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageUpdateFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -149,7 +149,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnCrewStorageUpdateFunc(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageUpdateFunc");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageUpdateFunc_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageUpdateFunc_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -161,7 +161,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnCrewStorageUpdateFunc(const struct 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageFullFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -170,7 +170,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnCrewStorageFullFunc(const struct FE
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageFullFunc");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageFullFunc_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageFullFunc_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -182,16 +182,16 @@ void UBP_PromptCoordinator_BootyStorage_C::OnCrewStorageFullFunc(const struct FE
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnWieldedFunc
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-//		struct FEventObjectWielded                         Object                                                     (Parm)
-void UBP_PromptCoordinator_BootyStorage_C::OnWieldedFunc(const struct FEventObjectWielded& Object)
+//		struct FAthena_FEventObjectWielded                 Object                                                     (Parm)
+void UBP_PromptCoordinator_BootyStorage_C::OnWieldedFunc(const struct FAthena_FEventObjectWielded& Object)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnWieldedFunc");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnWieldedFunc_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnWieldedFunc_Params params {};
 	params.Object = Object;
 
 	auto flags = fn->FunctionFlags;
@@ -203,14 +203,14 @@ void UBP_PromptCoordinator_BootyStorage_C::OnWieldedFunc(const struct FEventObje
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.PostInitialize
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_BootyStorage_C::PostInitialize()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.PostInitialize");
 
-	UBP_PromptCoordinator_BootyStorage_C_PostInitialize_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_PostInitialize_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -221,7 +221,7 @@ void UBP_PromptCoordinator_BootyStorage_C::PostInitialize()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.RegisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -230,7 +230,7 @@ void UBP_PromptCoordinator_BootyStorage_C::RegisterCharacterEvents_Implementable
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.RegisterCharacterEvents_Implementable");
 
-	UBP_PromptCoordinator_BootyStorage_C_RegisterCharacterEvents_Implementable_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_RegisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -242,14 +242,14 @@ void UBP_PromptCoordinator_BootyStorage_C::RegisterCharacterEvents_Implementable
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.Evaluate
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_BootyStorage_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.Evaluate");
 
-	UBP_PromptCoordinator_BootyStorage_C_Evaluate_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_Evaluate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -260,7 +260,7 @@ void UBP_PromptCoordinator_BootyStorage_C::Evaluate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.UnregisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -269,7 +269,7 @@ void UBP_PromptCoordinator_BootyStorage_C::UnregisterCharacterEvents_Implementab
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.UnregisterCharacterEvents_Implementable");
 
-	UBP_PromptCoordinator_BootyStorage_C_UnregisterCharacterEvents_Implementable_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_UnregisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -281,14 +281,14 @@ void UBP_PromptCoordinator_BootyStorage_C::UnregisterCharacterEvents_Implementab
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.Uninitialize_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_PromptCoordinator_BootyStorage_C::Uninitialize_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.Uninitialize_Implementable");
 
-	UBP_PromptCoordinator_BootyStorage_C_Uninitialize_Implementable_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_Uninitialize_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -299,14 +299,14 @@ void UBP_PromptCoordinator_BootyStorage_C::Uninitialize_Implementable()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.SetPromptComplete
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_BootyStorage_C::SetPromptComplete()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.SetPromptComplete");
 
-	UBP_PromptCoordinator_BootyStorage_C_SetPromptComplete_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_SetPromptComplete_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -317,14 +317,14 @@ void UBP_PromptCoordinator_BootyStorage_C::SetPromptComplete()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.ResetLootPrompt
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_BootyStorage_C::ResetLootPrompt()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.ResetLootPrompt");
 
-	UBP_PromptCoordinator_BootyStorage_C_ResetLootPrompt_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_ResetLootPrompt_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -335,14 +335,14 @@ void UBP_PromptCoordinator_BootyStorage_C::ResetLootPrompt()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.ResetMermaidPrompt
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_PromptCoordinator_BootyStorage_C::ResetMermaidPrompt()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.ResetMermaidPrompt");
 
-	UBP_PromptCoordinator_BootyStorage_C_ResetMermaidPrompt_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_ResetMermaidPrompt_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -353,7 +353,7 @@ void UBP_PromptCoordinator_BootyStorage_C::ResetMermaidPrompt()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnStowed
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -362,7 +362,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnStowed(const struct FEventObjectSto
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnStowed");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnStowed_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnStowed_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -374,16 +374,16 @@ void UBP_PromptCoordinator_BootyStorage_C::OnStowed(const struct FEventObjectSto
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnWielded
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
-//		struct FEventObjectWielded                         Object                                                     (Parm)
-void UBP_PromptCoordinator_BootyStorage_C::OnWielded(const struct FEventObjectWielded& Object)
+//		struct FAthena_FEventObjectWielded                 Object                                                     (Parm)
+void UBP_PromptCoordinator_BootyStorage_C::OnWielded(const struct FAthena_FEventObjectWielded& Object)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnWielded");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnWielded_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnWielded_Params params {};
 	params.Object = Object;
 
 	auto flags = fn->FunctionFlags;
@@ -395,7 +395,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnWielded(const struct FEventObjectWi
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageChange_Event
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -404,7 +404,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnCrewStorageChange_Event(const struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageChange_Event");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageChange_Event_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageChange_Event_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -416,7 +416,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnCrewStorageChange_Event(const struc
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageFull_Event
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -425,7 +425,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnCrewStorageFull_Event(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageFull_Event");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageFull_Event_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageFull_Event_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -437,7 +437,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnCrewStorageFull_Event(const struct 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnItemsRetrieved_Event
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -446,7 +446,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnItemsRetrieved_Event(const struct F
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnItemsRetrieved_Event");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnItemsRetrieved_Event_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnItemsRetrieved_Event_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -458,7 +458,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnItemsRetrieved_Event(const struct F
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnBootyActorDespawned_Event
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -467,7 +467,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnBootyActorDespawned_Event(const str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnBootyActorDespawned_Event");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnBootyActorDespawned_Event_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnBootyActorDespawned_Event_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -479,7 +479,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnBootyActorDespawned_Event(const str
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnBootyActorSpawned_Event
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -488,7 +488,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnBootyActorSpawned_Event(const struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnBootyActorSpawned_Event");
 
-	UBP_PromptCoordinator_BootyStorage_C_OnBootyActorSpawned_Event_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_OnBootyActorSpawned_Event_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -500,7 +500,7 @@ void UBP_PromptCoordinator_BootyStorage_C::OnBootyActorSpawned_Event(const struc
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.ExecuteUbergraph_BP_PromptCoordinator_BootyStorage
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -509,7 +509,7 @@ void UBP_PromptCoordinator_BootyStorage_C::ExecuteUbergraph_BP_PromptCoordinator
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.ExecuteUbergraph_BP_PromptCoordinator_BootyStorage");
 
-	UBP_PromptCoordinator_BootyStorage_C_ExecuteUbergraph_BP_PromptCoordinator_BootyStorage_Params params;
+	UBP_PromptCoordinator_BootyStorage_C_ExecuteUbergraph_BP_PromptCoordinator_BootyStorage_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

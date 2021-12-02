@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function bp_light_volume_sphere_large_a.bp_light_volume_sphere_large_a_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void Abp_light_volume_sphere_large_a_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function bp_light_volume_sphere_large_a.bp_light_volume_sphere_large_a_C.UserConstructionScript");
 
-	Abp_light_volume_sphere_large_a_C_UserConstructionScript_Params params;
+	Abp_light_volume_sphere_large_a_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

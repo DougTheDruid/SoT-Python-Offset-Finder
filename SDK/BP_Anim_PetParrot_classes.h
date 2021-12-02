@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // AnimBlueprintGeneratedClass BP_Anim_PetParrot.BP_Anim_PetParrot_C
-// 0x4888 (FullSize[0x5158] - InheritedSize[0x08D0])
+// 0x4898 (FullSize[0x5168] - InheritedSize[0x08D0])
 class UBP_Anim_PetParrot_C : public UWieldablePetAnimationInstance
 {
 public:
@@ -224,8 +224,8 @@ public:
 	struct FAnimNode_ConvertComponentToLocalSpace      AnimGraphNode_ComponentToLocalSpace_E0E254734C2A00A8D9A8CA867319C113; // 0x4E18(0x0048)
 	struct FAnimNode_ConvertLocalToComponentSpace      AnimGraphNode_LocalToComponentSpace_A367591D450BE747E74B30B8A52EDB2E; // 0x4E60(0x0048)
 	struct FAnimNode_LookAt                            AnimGraphNode_LookAt_59F8102F4DE642B2D238E9B964E5BF59;     // 0x4EA8(0x00C0)
-	struct FPetAnimationDataBeingHeld                  PetHeldAnimations;                                         // 0x4F68(0x0150) (Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FPetAnimationDataRoaming                    PetRoamingAnimations;                                      // 0x50B8(0x00A0) (Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPetAnimationDataBeingHeld                  PetHeldAnimations;                                         // 0x4F68(0x0160) (Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPetAnimationDataRoaming                    PetRoamingAnimations;                                      // 0x50C8(0x00A0) (Edit, BlueprintVisible, DisableEditOnInstance)
 
 
 	static UClass* StaticClass()

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.GetDockableInfo
 //		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -28,7 +28,7 @@ struct FDockableInfo ABP_CustomisableLadder_C::GetDockableInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.GetDockableInfo");
 
-	ABP_CustomisableLadder_C_GetDockableInfo_Params params;
+	ABP_CustomisableLadder_C_GetDockableInfo_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,7 +41,7 @@ struct FDockableInfo ABP_CustomisableLadder_C::GetDockableInfo()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.Construct Ladder
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -49,7 +49,7 @@ void ABP_CustomisableLadder_C::Construct_Ladder()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.Construct Ladder");
 
-	ABP_CustomisableLadder_C_Construct_Ladder_Params params;
+	ABP_CustomisableLadder_C_Construct_Ladder_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -60,7 +60,7 @@ void ABP_CustomisableLadder_C::Construct_Ladder()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.Get Total Height Before Cap
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -69,7 +69,7 @@ void ABP_CustomisableLadder_C::Get_Total_Height_Before_Cap(float* Height)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.Get Total Height Before Cap");
 
-	ABP_CustomisableLadder_C_Get_Total_Height_Before_Cap_Params params;
+	ABP_CustomisableLadder_C_Get_Total_Height_Before_Cap_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -83,7 +83,7 @@ void ABP_CustomisableLadder_C::Get_Total_Height_Before_Cap(float* Height)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.Get Steps
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -92,7 +92,7 @@ void ABP_CustomisableLadder_C::Get_Steps(int* Num_Steps)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.Get Steps");
 
-	ABP_CustomisableLadder_C_Get_Steps_Params params;
+	ABP_CustomisableLadder_C_Get_Steps_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -106,7 +106,7 @@ void ABP_CustomisableLadder_C::Get_Steps(int* Num_Steps)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.GetBottomLadderRungTransform
 //		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -115,7 +115,7 @@ struct FTransform ABP_CustomisableLadder_C::GetBottomLadderRungTransform()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.GetBottomLadderRungTransform");
 
-	ABP_CustomisableLadder_C_GetBottomLadderRungTransform_Params params;
+	ABP_CustomisableLadder_C_GetBottomLadderRungTransform_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -128,7 +128,7 @@ struct FTransform ABP_CustomisableLadder_C::GetBottomLadderRungTransform()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.GetTopLadderRungTransform
 //		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -137,7 +137,7 @@ struct FTransform ABP_CustomisableLadder_C::GetTopLadderRungTransform()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.GetTopLadderRungTransform");
 
-	ABP_CustomisableLadder_C_GetTopLadderRungTransform_Params params;
+	ABP_CustomisableLadder_C_GetTopLadderRungTransform_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -150,7 +150,7 @@ struct FTransform ABP_CustomisableLadder_C::GetTopLadderRungTransform()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.Get World Loc at Height Along Z
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -160,7 +160,7 @@ void ABP_CustomisableLadder_C::Get_World_Loc_at_Height_Along_Z(float Relative_Z,
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.Get World Loc at Height Along Z");
 
-	ABP_CustomisableLadder_C_Get_World_Loc_at_Height_Along_Z_Params params;
+	ABP_CustomisableLadder_C_Get_World_Loc_at_Height_Along_Z_Params params {};
 	params.Relative_Z = Relative_Z;
 
 	auto flags = fn->FunctionFlags;
@@ -175,7 +175,7 @@ void ABP_CustomisableLadder_C::Get_World_Loc_at_Height_Along_Z(float Relative_Z,
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.SetupSpline
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -185,7 +185,7 @@ void ABP_CustomisableLadder_C::SetupSpline(class USplineComponent* Spline_Compon
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.SetupSpline");
 
-	ABP_CustomisableLadder_C_SetupSpline_Params params;
+	ABP_CustomisableLadder_C_SetupSpline_Params params {};
 	params.Spline_Component = Spline_Component;
 
 	auto flags = fn->FunctionFlags;
@@ -200,14 +200,14 @@ void ABP_CustomisableLadder_C::SetupSpline(class USplineComponent* Spline_Compon
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_CustomisableLadder_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.UserConstructionScript");
 
-	ABP_CustomisableLadder_C_UserConstructionScript_Params params;
+	ABP_CustomisableLadder_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -218,14 +218,14 @@ void ABP_CustomisableLadder_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_CustomisableLadder_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.ReceiveBeginPlay");
 
-	ABP_CustomisableLadder_C_ReceiveBeginPlay_Params params;
+	ABP_CustomisableLadder_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -236,7 +236,7 @@ void ABP_CustomisableLadder_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_CustomisableLadder.BP_CustomisableLadder_C.ExecuteUbergraph_BP_CustomisableLadder
 //		Flags  -> ()
 // Parameters:
@@ -245,7 +245,7 @@ void ABP_CustomisableLadder_C::ExecuteUbergraph_BP_CustomisableLadder(int EntryP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_CustomisableLadder.BP_CustomisableLadder_C.ExecuteUbergraph_BP_CustomisableLadder");
 
-	ABP_CustomisableLadder_C_ExecuteUbergraph_BP_CustomisableLadder_Params params;
+	ABP_CustomisableLadder_C_ExecuteUbergraph_BP_CustomisableLadder_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

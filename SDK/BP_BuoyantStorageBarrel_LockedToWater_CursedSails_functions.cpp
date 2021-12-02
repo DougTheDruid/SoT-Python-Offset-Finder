@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.GetPxActorCapacityForPhysXAggregate
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -28,7 +28,7 @@ unsigned char ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C::GetPxActorCa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.GetPxActorCapacityForPhysXAggregate");
 
-	ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C_GetPxActorCapacityForPhysXAggregate_Params params;
+	ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C_GetPxActorCapacityForPhysXAggregate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,14 +41,14 @@ unsigned char ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C::GetPxActorCa
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_BuoyantStorageBarrel_LockedToWater_CursedSails.BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C.UserConstructionScript");
 
-	ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C_UserConstructionScript_Params params;
+	ABP_BuoyantStorageBarrel_LockedToWater_CursedSails_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

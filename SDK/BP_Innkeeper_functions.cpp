@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Innkeeper.BP_Innkeeper_C.GetClosestInteractionPoint
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -30,7 +30,7 @@ struct FVector ABP_Innkeeper_C::GetClosestInteractionPoint(const struct FVector&
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Innkeeper.BP_Innkeeper_C.GetClosestInteractionPoint");
 
-	ABP_Innkeeper_C_GetClosestInteractionPoint_Params params;
+	ABP_Innkeeper_C_GetClosestInteractionPoint_Params params {};
 	params.ReferencePosition = ReferencePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -47,14 +47,14 @@ struct FVector ABP_Innkeeper_C::GetClosestInteractionPoint(const struct FVector&
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Innkeeper.BP_Innkeeper_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Innkeeper_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Innkeeper.BP_Innkeeper_C.UserConstructionScript");
 
-	ABP_Innkeeper_C_UserConstructionScript_Params params;
+	ABP_Innkeeper_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -65,14 +65,14 @@ void ABP_Innkeeper_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Innkeeper.BP_Innkeeper_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_Innkeeper_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Innkeeper.BP_Innkeeper_C.ReceiveBeginPlay");
 
-	ABP_Innkeeper_C_ReceiveBeginPlay_Params params;
+	ABP_Innkeeper_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -83,7 +83,7 @@ void ABP_Innkeeper_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Innkeeper.BP_Innkeeper_C.ReceiveEndPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -92,7 +92,7 @@ void ABP_Innkeeper_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayR
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Innkeeper.BP_Innkeeper_C.ReceiveEndPlay");
 
-	ABP_Innkeeper_C_ReceiveEndPlay_Params params;
+	ABP_Innkeeper_C_ReceiveEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -104,7 +104,7 @@ void ABP_Innkeeper_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlayR
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Innkeeper.BP_Innkeeper_C.ExecuteUbergraph_BP_Innkeeper
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -113,7 +113,7 @@ void ABP_Innkeeper_C::ExecuteUbergraph_BP_Innkeeper(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Innkeeper.BP_Innkeeper_C.ExecuteUbergraph_BP_Innkeeper");
 
-	ABP_Innkeeper_C_ExecuteUbergraph_BP_Innkeeper_Params params;
+	ABP_Innkeeper_C_ExecuteUbergraph_BP_Innkeeper_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.DisplayAllCharacterSockets
 //		Flags  -> (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -30,7 +30,7 @@ void UBP_MathAndTrigAnimation_C::STATIC_DisplayAllCharacterSockets(class AAthena
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.DisplayAllCharacterSockets");
 
-	UBP_MathAndTrigAnimation_C_DisplayAllCharacterSockets_Params params;
+	UBP_MathAndTrigAnimation_C_DisplayAllCharacterSockets_Params params {};
 	params.Athena_Character = Athena_Character;
 	params.Size = Size;
 	params.__WorldContext = __WorldContext;
@@ -44,7 +44,7 @@ void UBP_MathAndTrigAnimation_C::STATIC_DisplayAllCharacterSockets(class AAthena
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.DecrementFloat
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -55,7 +55,7 @@ void UBP_MathAndTrigAnimation_C::STATIC_DecrementFloat(float* Float, float Decre
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.DecrementFloat");
 
-	UBP_MathAndTrigAnimation_C_DecrementFloat_Params params;
+	UBP_MathAndTrigAnimation_C_DecrementFloat_Params params {};
 	params.DecrementValue = DecrementValue;
 	params.__WorldContext = __WorldContext;
 
@@ -71,7 +71,7 @@ void UBP_MathAndTrigAnimation_C::STATIC_DecrementFloat(float* Float, float Decre
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.Increment Float
 //		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -82,7 +82,7 @@ void UBP_MathAndTrigAnimation_C::STATIC_Increment_Float(float* Float, float Ince
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.Increment Float");
 
-	UBP_MathAndTrigAnimation_C_Increment_Float_Params params;
+	UBP_MathAndTrigAnimation_C_Increment_Float_Params params {};
 	params.Incement_Value = Incement_Value;
 	params.__WorldContext = __WorldContext;
 
@@ -98,7 +98,7 @@ void UBP_MathAndTrigAnimation_C::STATIC_Increment_Float(float* Float, float Ince
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.Apply Relative Transform
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -110,7 +110,7 @@ void UBP_MathAndTrigAnimation_C::STATIC_Apply_Relative_Transform(const struct FT
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.Apply Relative Transform");
 
-	UBP_MathAndTrigAnimation_C_Apply_Relative_Transform_Params params;
+	UBP_MathAndTrigAnimation_C_Apply_Relative_Transform_Params params {};
 	params.RelativeTransform = RelativeTransform;
 	params.BaseTransform = BaseTransform;
 	params.__WorldContext = __WorldContext;
@@ -127,7 +127,7 @@ void UBP_MathAndTrigAnimation_C::STATIC_Apply_Relative_Transform(const struct FT
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.Calculate Relative Transform
 //		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -139,7 +139,7 @@ void UBP_MathAndTrigAnimation_C::STATIC_Calculate_Relative_Transform(const struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_MathAndTrigAnimation.BP_MathAndTrigAnimation_C.Calculate Relative Transform");
 
-	UBP_MathAndTrigAnimation_C_Calculate_Relative_Transform_Params params;
+	UBP_MathAndTrigAnimation_C_Calculate_Relative_Transform_Params params {};
 	params.RelativeObjectsWorldTransform = RelativeObjectsWorldTransform;
 	params.BaseObjectsWorldTransform = BaseObjectsWorldTransform;
 	params.__WorldContext = __WorldContext;

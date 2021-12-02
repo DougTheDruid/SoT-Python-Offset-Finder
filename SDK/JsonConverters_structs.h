@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -23,7 +23,7 @@ namespace CG
 // 0x0060
 struct FFastJsonDocumentWrapper
 {
-	unsigned char                                      UnknownData_CRON[0x60];                                    // 0x0000(0x0060) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7OC5[0x60];                                    // 0x0000(0x0060) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

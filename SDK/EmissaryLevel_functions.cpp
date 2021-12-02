@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -591,7 +591,7 @@ void UEmissaryActionRewardBoostComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A234D0
+//		Offset -> 0x03FB1980
 //		Name   -> Function EmissaryLevel.EmissaryActiveTableVisualiserComponent.OnControllerEndPlay
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -600,7 +600,7 @@ void UEmissaryActiveTableVisualiserComponent::OnControllerEndPlay(TEnumAsByte<En
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryActiveTableVisualiserComponent.OnControllerEndPlay");
 
-	UEmissaryActiveTableVisualiserComponent_OnControllerEndPlay_Params params;
+	UEmissaryActiveTableVisualiserComponent_OnControllerEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -731,14 +731,14 @@ void UEmissaryMaxRankQuestProvider::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A23600
+//		Offset -> 0x03FB1AB0
 //		Name   -> Function EmissaryLevel.EmissaryParticipantComponent.OnRep_EmissaryLevel
 //		Flags  -> (Final, Native, Private)
 void UEmissaryParticipantComponent::OnRep_EmissaryLevel()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryParticipantComponent.OnRep_EmissaryLevel");
 
-	UEmissaryParticipantComponent_OnRep_EmissaryLevel_Params params;
+	UEmissaryParticipantComponent_OnRep_EmissaryLevel_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -750,7 +750,7 @@ void UEmissaryParticipantComponent::OnRep_EmissaryLevel()
 
 
 // Function:
-//		Offset -> 0x03A23550
+//		Offset -> 0x03FB1A00
 //		Name   -> Function EmissaryLevel.EmissaryParticipantComponent.OnRep_AffiliatedCompany
 //		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
@@ -759,7 +759,7 @@ void UEmissaryParticipantComponent::OnRep_AffiliatedCompany(const struct FName& 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryParticipantComponent.OnRep_AffiliatedCompany");
 
-	UEmissaryParticipantComponent_OnRep_AffiliatedCompany_Params params;
+	UEmissaryParticipantComponent_OnRep_AffiliatedCompany_Params params {};
 	params.PreviousId = PreviousId;
 
 	auto flags = fn->FunctionFlags;
@@ -822,14 +822,14 @@ void UEmissaryRewardSettingsAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A235E0
+//		Offset -> 0x03FB1A90
 //		Name   -> Function EmissaryLevel.EmissaryShipAffiliationTrackerComponent.OnRep_EmissaryCount
 //		Flags  -> (Final, Native, Private)
 void UEmissaryShipAffiliationTrackerComponent::OnRep_EmissaryCount()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryShipAffiliationTrackerComponent.OnRep_EmissaryCount");
 
-	UEmissaryShipAffiliationTrackerComponent_OnRep_EmissaryCount_Params params;
+	UEmissaryShipAffiliationTrackerComponent_OnRep_EmissaryCount_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -857,14 +857,14 @@ void UEmissaryShipAffiliationTrackerComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A23620
+//		Offset -> 0x03FB1AD0
 //		Name   -> Function EmissaryLevel.EmissaryVoyageInlineVoteConsumerBase.OnRep_Votes
 //		Flags  -> (Final, Native, Private)
 void UEmissaryVoyageInlineVoteConsumerBase::OnRep_Votes()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function EmissaryLevel.EmissaryVoyageInlineVoteConsumerBase.OnRep_Votes");
 
-	UEmissaryVoyageInlineVoteConsumerBase_OnRep_Votes_Params params;
+	UEmissaryVoyageInlineVoteConsumerBase_OnRep_Votes_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

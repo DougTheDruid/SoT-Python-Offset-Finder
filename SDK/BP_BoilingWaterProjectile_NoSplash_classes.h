@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_BoilingWaterProjectile_NoSplash.BP_BoilingWaterProjectile_NoSplash_C
-// 0x0000 (FullSize[0x0710] - InheritedSize[0x0710])
+// 0x0000 (FullSize[0x0728] - InheritedSize[0x0728])
 class ABP_BoilingWaterProjectile_NoSplash_C : public ABP_BoilingWaterProjectile_C
 {
 public:

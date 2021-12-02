@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -122,13 +122,13 @@ void FCrewSessionMatchmakingFollowedTelemetryEvent::BeforeDelete()
 
 void FCrewSessionMatchmakingEndedTelemetryEvent::AfterRead()
 {
-	FCrewSessionBaseSessionTelemetryEvent::AfterRead();
+	FCrewSessionBaseTelemetryEvent::AfterRead();
 
 }
 
 void FCrewSessionMatchmakingEndedTelemetryEvent::BeforeDelete()
 {
-	FCrewSessionBaseSessionTelemetryEvent::BeforeDelete();
+	FCrewSessionBaseTelemetryEvent::BeforeDelete();
 
 }
 

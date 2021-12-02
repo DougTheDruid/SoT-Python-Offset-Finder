@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -19,15 +19,45 @@ namespace CG
 // Classes
 //---------------------------------------------------------------------------
 
+// Class EnchantedCompass.EnchantedCompassProximityAnnouncementComponent
+// 0x0128 (FullSize[0x01F0] - InheritedSize[0x00C8])
+class UEnchantedCompassProximityAnnouncementComponent : public UActorComponent
+{
+public:
+	class UWwiseEvent*                                 StartAnnouncingEvent;                                      // 0x00C8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWwiseEvent*                                 StopAnnouncingEvent;                                       // 0x00D0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              MaxFrequencyDistanceSquared;                               // 0x00D8(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_06CK[0x4];                                     // 0x00DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      WielderOrientation[0x10];                                  // 0x00DC(0x0010) UNKNOWN PROPERTY: InterfaceProperty EnchantedCompass.EnchantedCompassProximityAnnouncementComponent.WielderOrientation
+	unsigned char                                      WielderWwiseEmitterInterface[0x10];                        // 0x00F0(0x0010) UNKNOWN PROPERTY: InterfaceProperty EnchantedCompass.EnchantedCompassProximityAnnouncementComponent.WielderWwiseEmitterInterface
+	unsigned char                                      OwnerWieldableInterface[0x10];                             // 0x0100(0x0010) UNKNOWN PROPERTY: InterfaceProperty EnchantedCompass.EnchantedCompassProximityAnnouncementComponent.OwnerWieldableInterface
+	unsigned char                                      ObjectMessagingDispatcher[0x10];                           // 0x0110(0x0010) UNKNOWN PROPERTY: InterfaceProperty EnchantedCompass.EnchantedCompassProximityAnnouncementComponent.ObjectMessagingDispatcher
+	bool                                               IsSettingEnabled;                                          // 0x0120(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_5WWM[0xCF];                                    // 0x0121(0x00CF) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = UObject::FindClass("Class EnchantedCompass.EnchantedCompassProximityAnnouncementComponent");
+		return ptr;
+	}
+
+
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
 // Class EnchantedCompass.MultiTargetEnchantedCompass
-// 0x0030 (FullSize[0x0880] - InheritedSize[0x0850])
+// 0x0030 (FullSize[0x08A0] - InheritedSize[0x0870])
 class AMultiTargetEnchantedCompass : public ACompass
 {
 public:
-	TArray<struct FVector>                             Locations;                                                 // 0x0850(0x0010) (Edit, Net, ZeroConstructor, Transient, EditConst)
-	TArray<struct FGuid>                               LocationIds;                                               // 0x0860(0x0010) (ZeroConstructor, Transient)
-	class UInventoryItemComponent*                     InventoryItem;                                             // 0x0870(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ERLY[0x8];                                     // 0x0878(0x0008) MISSED OFFSET (PADDING)
+	TArray<struct FVector>                             Locations;                                                 // 0x0870(0x0010) (Edit, Net, ZeroConstructor, Transient, EditConst)
+	TArray<struct FGuid>                               LocationIds;                                               // 0x0880(0x0010) (ZeroConstructor, Transient)
+	class UInventoryItemComponent*                     InventoryItem;                                             // 0x0890(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UEnchantedCompassProximityAnnouncementComponent* ProximityAnnouncementComponent;                            // 0x0898(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()
@@ -44,7 +74,7 @@ public:
 };
 
 // Class EnchantedCompass.PrototypeMultiTargetEnchantedCompass
-// 0x0000 (FullSize[0x0880] - InheritedSize[0x0880])
+// 0x0000 (FullSize[0x08A0] - InheritedSize[0x08A0])
 class APrototypeMultiTargetEnchantedCompass : public AMultiTargetEnchantedCompass
 {
 public:
@@ -114,7 +144,7 @@ public:
 class UTaleQuestMultiTargetCompassRemoveTrackedLocationStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_IMHR[0x10];                                    // 0x0090(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6MYV[0x10];                                    // 0x0090(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -156,7 +186,7 @@ public:
 class UTaleQuestMultiTargetCompassService : public UTaleQuestToolService
 {
 public:
-	unsigned char                                      UnknownData_0MJK[0x20];                                    // 0x0120(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3DR8[0x20];                                    // 0x0120(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -198,7 +228,7 @@ public:
 class UTaleQuestSetCompassTargetToTargetStep : public UTaleQuestStep
 {
 public:
-	unsigned char                                      UnknownData_WVY9[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SGKQ[0x20];                                    // 0x0090(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -220,7 +250,7 @@ class UTaleQuestSetCompassTargetBaseStepDesc : public UTaleQuestStepDesc
 {
 public:
 	TEnumAsByte<EnchantedCompass_ETargetUpdateReason>  TargetUpdateReason;                                        // 0x0080(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_6F2P[0x7];                                     // 0x0081(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_77T7[0x7];                                     // 0x0081(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

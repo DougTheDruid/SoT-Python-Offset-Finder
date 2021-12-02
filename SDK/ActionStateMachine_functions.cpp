@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -369,7 +369,7 @@ void UTestActionStateId2::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0315FE30
+//		Offset -> 0x031697A0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Server_RequestActionWithMessageForCurrentState
 //		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
@@ -381,7 +381,7 @@ void UActionStateMachineComponent::Server_RequestActionWithMessageForCurrentStat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Server_RequestActionWithMessageForCurrentState");
 
-	UActionStateMachineComponent_Server_RequestActionWithMessageForCurrentState_Params params;
+	UActionStateMachineComponent_Server_RequestActionWithMessageForCurrentState_Params params {};
 	params.InEpochId = InEpochId;
 	params.InRequestId = InRequestId;
 	params.InSerialisedActionStateConstructionInfo = InSerialisedActionStateConstructionInfo;
@@ -397,7 +397,7 @@ void UActionStateMachineComponent::Server_RequestActionWithMessageForCurrentStat
 
 
 // Function:
-//		Offset -> 0x0315FC60
+//		Offset -> 0x031695D0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Server_RequestAction
 //		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
@@ -409,7 +409,7 @@ void UActionStateMachineComponent::Server_RequestAction(const struct FActionStat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Server_RequestAction");
 
-	UActionStateMachineComponent_Server_RequestAction_Params params;
+	UActionStateMachineComponent_Server_RequestAction_Params params {};
 	params.InEpochId = InEpochId;
 	params.InRequestId = InRequestId;
 	params.InSerialisedActionStateConstructionInfo = InSerialisedActionStateConstructionInfo;
@@ -425,14 +425,14 @@ void UActionStateMachineComponent::Server_RequestAction(const struct FActionStat
 
 
 // Function:
-//		Offset -> 0x0315F830
+//		Offset -> 0x031691A0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.PostNetInit
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UActionStateMachineComponent::PostNetInit()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.PostNetInit");
 
-	UActionStateMachineComponent_PostNetInit_Params params;
+	UActionStateMachineComponent_PostNetInit_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -444,14 +444,14 @@ void UActionStateMachineComponent::PostNetInit()
 
 
 // Function:
-//		Offset -> 0x0315F810
+//		Offset -> 0x03169180
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.OnNetOwnershipChanged
 //		Flags  -> (Final, Native, Protected)
 void UActionStateMachineComponent::OnNetOwnershipChanged()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.OnNetOwnershipChanged");
 
-	UActionStateMachineComponent_OnNetOwnershipChanged_Params params;
+	UActionStateMachineComponent_OnNetOwnershipChanged_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -463,7 +463,7 @@ void UActionStateMachineComponent::OnNetOwnershipChanged()
 
 
 // Function:
-//		Offset -> 0x0315F710
+//		Offset -> 0x03169080
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushSerialisableData
 //		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
@@ -473,7 +473,7 @@ void UActionStateMachineComponent::Multicast_PushSerialisableData(const struct F
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushSerialisableData");
 
-	UActionStateMachineComponent_Multicast_PushSerialisableData_Params params;
+	UActionStateMachineComponent_Multicast_PushSerialisableData_Params params {};
 	params.InEpochId = InEpochId;
 	params.InSerialisedActionStateSerialisationStateInfo = InSerialisedActionStateSerialisationStateInfo;
 
@@ -487,7 +487,7 @@ void UActionStateMachineComponent::Multicast_PushSerialisableData(const struct F
 
 
 // Function:
-//		Offset -> 0x0315F610
+//		Offset -> 0x03168F80
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushActionFromRequest
 //		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
@@ -497,7 +497,7 @@ void UActionStateMachineComponent::Multicast_PushActionFromRequest(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushActionFromRequest");
 
-	UActionStateMachineComponent_Multicast_PushActionFromRequest_Params params;
+	UActionStateMachineComponent_Multicast_PushActionFromRequest_Params params {};
 	params.InEpochId = InEpochId;
 	params.InSerialisedActionStateConstructionInfo = InSerialisedActionStateConstructionInfo;
 
@@ -511,7 +511,7 @@ void UActionStateMachineComponent::Multicast_PushActionFromRequest(const struct 
 
 
 // Function:
-//		Offset -> 0x0315F510
+//		Offset -> 0x03168E80
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushAction
 //		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
@@ -521,7 +521,7 @@ void UActionStateMachineComponent::Multicast_PushAction(const struct FActionStat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Multicast_PushAction");
 
-	UActionStateMachineComponent_Multicast_PushAction_Params params;
+	UActionStateMachineComponent_Multicast_PushAction_Params params {};
 	params.InEpochId = InEpochId;
 	params.InSerialisedActionStateConstructionInfo = InSerialisedActionStateConstructionInfo;
 
@@ -535,14 +535,14 @@ void UActionStateMachineComponent::Multicast_PushAction(const struct FActionStat
 
 
 // Function:
-//		Offset -> 0x0315EBC0
+//		Offset -> 0x03168530
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.End
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UActionStateMachineComponent::End()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.End");
 
-	UActionStateMachineComponent_End_Params params;
+	UActionStateMachineComponent_End_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -554,7 +554,7 @@ void UActionStateMachineComponent::End()
 
 
 // Function:
-//		Offset -> 0x0315E520
+//		Offset -> 0x03167E90
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Client_ResetStateMachine
 //		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 // Parameters:
@@ -563,7 +563,7 @@ void UActionStateMachineComponent::Client_ResetStateMachine(const struct FResetS
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Client_ResetStateMachine");
 
-	UActionStateMachineComponent_Client_ResetStateMachine_Params params;
+	UActionStateMachineComponent_Client_ResetStateMachine_Params params {};
 	params.Rpc = Rpc;
 
 	auto flags = fn->FunctionFlags;
@@ -576,7 +576,7 @@ void UActionStateMachineComponent::Client_ResetStateMachine(const struct FResetS
 
 
 // Function:
-//		Offset -> 0x0315E3C0
+//		Offset -> 0x03167D30
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponent.Client_CorrectAction
 //		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 // Parameters:
@@ -587,7 +587,7 @@ void UActionStateMachineComponent::Client_CorrectAction(const struct FActionStat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponent.Client_CorrectAction");
 
-	UActionStateMachineComponent_Client_CorrectAction_Params params;
+	UActionStateMachineComponent_Client_CorrectAction_Params params {};
 	params.InEpochId = InEpochId;
 	params.InRequestId = InRequestId;
 	params.InSerialisedActionStateConstructionInfo = InSerialisedActionStateConstructionInfo;
@@ -626,7 +626,7 @@ void UCustomClientValidityCheckCallback::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031602D0
+//		Offset -> 0x03169C40
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPassesExceptForId
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -637,7 +637,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPassesExceptForId");
 
-	UActionStateMachineComponentTestFunctions_SetTestStateValidatorThatAlwaysPassesExceptForId_Params params;
+	UActionStateMachineComponentTestFunctions_SetTestStateValidatorThatAlwaysPassesExceptForId_Params params {};
 	params.InComponent = InComponent;
 	params.StateId = StateId;
 
@@ -653,7 +653,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThat
 
 
 // Function:
-//		Offset -> 0x03160250
+//		Offset -> 0x03169BC0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPasses
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -663,7 +663,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysPasses");
 
-	UActionStateMachineComponentTestFunctions_SetTestStateValidatorThatAlwaysPasses_Params params;
+	UActionStateMachineComponentTestFunctions_SetTestStateValidatorThatAlwaysPasses_Params params {};
 	params.InComponent = InComponent;
 
 	auto flags = fn->FunctionFlags;
@@ -678,7 +678,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThat
 
 
 // Function:
-//		Offset -> 0x031601D0
+//		Offset -> 0x03169B40
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysFails
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -688,7 +688,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateValidatorThatAlwaysFails");
 
-	UActionStateMachineComponentTestFunctions_SetTestStateValidatorThatAlwaysFails_Params params;
+	UActionStateMachineComponentTestFunctions_SetTestStateValidatorThatAlwaysFails_Params params {};
 	params.InComponent = InComponent;
 
 	auto flags = fn->FunctionFlags;
@@ -703,7 +703,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateValidatorThat
 
 
 // Function:
-//		Offset -> 0x03160150
+//		Offset -> 0x03169AC0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactoryChangeToNullOnUpdate
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -713,7 +713,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateFactoryChange
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactoryChangeToNullOnUpdate");
 
-	UActionStateMachineComponentTestFunctions_SetTestStateFactoryChangeToNullOnUpdate_Params params;
+	UActionStateMachineComponentTestFunctions_SetTestStateFactoryChangeToNullOnUpdate_Params params {};
 	params.InComponent = InComponent;
 
 	auto flags = fn->FunctionFlags;
@@ -728,7 +728,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateFactoryChange
 
 
 // Function:
-//		Offset -> 0x031600D0
+//		Offset -> 0x03169A40
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactory
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -738,7 +738,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateFactory(class
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetTestStateFactory");
 
-	UActionStateMachineComponentTestFunctions_SetTestStateFactory_Params params;
+	UActionStateMachineComponentTestFunctions_SetTestStateFactory_Params params {};
 	params.InComponent = InComponent;
 
 	auto flags = fn->FunctionFlags;
@@ -753,7 +753,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetTestStateFactory(class
 
 
 // Function:
-//		Offset -> 0x03160010
+//		Offset -> 0x03169980
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetCustomClientValidationTestStateFactory
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -764,7 +764,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetCustomClientValidation
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.SetCustomClientValidationTestStateFactory");
 
-	UActionStateMachineComponentTestFunctions_SetCustomClientValidationTestStateFactory_Params params;
+	UActionStateMachineComponentTestFunctions_SetCustomClientValidationTestStateFactory_Params params {};
 	params.InComponent = InComponent;
 	params.InCallback = InCallback;
 
@@ -780,7 +780,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_SetCustomClientValidation
 
 
 // Function:
-//		Offset -> 0x0315FB30
+//		Offset -> 0x031694A0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestUnpredictedTestActionStateWithIdOnTrack
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -793,7 +793,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_RequestUnpredictedTestAct
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestUnpredictedTestActionStateWithIdOnTrack");
 
-	UActionStateMachineComponentTestFunctions_RequestUnpredictedTestActionStateWithIdOnTrack_Params params;
+	UActionStateMachineComponentTestFunctions_RequestUnpredictedTestActionStateWithIdOnTrack_Params params {};
 	params.InComponent = InComponent;
 	params.TrackId = TrackId;
 	params.ClientStateId = ClientStateId;
@@ -811,7 +811,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_RequestUnpredictedTestAct
 
 
 // Function:
-//		Offset -> 0x0315FA40
+//		Offset -> 0x031693B0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestTestActionStateWithIdOnTrack
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -823,7 +823,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_RequestTestActionStateWit
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestTestActionStateWithIdOnTrack");
 
-	UActionStateMachineComponentTestFunctions_RequestTestActionStateWithIdOnTrack_Params params;
+	UActionStateMachineComponentTestFunctions_RequestTestActionStateWithIdOnTrack_Params params {};
 	params.InComponent = InComponent;
 	params.TrackId = TrackId;
 	params.StateId = StateId;
@@ -840,7 +840,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_RequestTestActionStateWit
 
 
 // Function:
-//		Offset -> 0x0315F980
+//		Offset -> 0x031692F0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestNullActionStateOnTrack
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -851,7 +851,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_RequestNullActionStateOnT
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.RequestNullActionStateOnTrack");
 
-	UActionStateMachineComponentTestFunctions_RequestNullActionStateOnTrack_Params params;
+	UActionStateMachineComponentTestFunctions_RequestNullActionStateOnTrack_Params params {};
 	params.InComponent = InComponent;
 	params.TrackId = TrackId;
 
@@ -867,7 +867,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_RequestNullActionStateOnT
 
 
 // Function:
-//		Offset -> 0x0315F850
+//		Offset -> 0x031691C0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.PushTestActionStateSerialisableDataOnTrack
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -879,7 +879,7 @@ void UActionStateMachineComponentTestFunctions::STATIC_PushTestActionStateSerial
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.PushTestActionStateSerialisableDataOnTrack");
 
-	UActionStateMachineComponentTestFunctions_PushTestActionStateSerialisableDataOnTrack_Params params;
+	UActionStateMachineComponentTestFunctions_PushTestActionStateSerialisableDataOnTrack_Params params {};
 	params.InComponent = InComponent;
 	params.TrackId = TrackId;
 	params.StateId = StateId;
@@ -895,7 +895,7 @@ void UActionStateMachineComponentTestFunctions::STATIC_PushTestActionStateSerial
 
 
 // Function:
-//		Offset -> 0x0315F370
+//		Offset -> 0x03168CE0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.IsActionStateTypeActiveOnTrack
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -907,7 +907,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_IsActionStateTypeActiveOn
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.IsActionStateTypeActiveOnTrack");
 
-	UActionStateMachineComponentTestFunctions_IsActionStateTypeActiveOnTrack_Params params;
+	UActionStateMachineComponentTestFunctions_IsActionStateTypeActiveOnTrack_Params params {};
 	params.InComponent = InComponent;
 	params.TrackId = TrackId;
 	params.StateId = StateId;
@@ -924,7 +924,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_IsActionStateTypeActiveOn
 
 
 // Function:
-//		Offset -> 0x0315F150
+//		Offset -> 0x03168AC0
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTypeOfActionStateActiveOnTrack
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -935,7 +935,7 @@ class UClass* UActionStateMachineComponentTestFunctions::STATIC_GetTypeOfActionS
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTypeOfActionStateActiveOnTrack");
 
-	UActionStateMachineComponentTestFunctions_GetTypeOfActionStateActiveOnTrack_Params params;
+	UActionStateMachineComponentTestFunctions_GetTypeOfActionStateActiveOnTrack_Params params {};
 	params.InComponent = InComponent;
 	params.TrackId = TrackId;
 
@@ -951,7 +951,7 @@ class UClass* UActionStateMachineComponentTestFunctions::STATIC_GetTypeOfActionS
 
 
 // Function:
-//		Offset -> 0x0315EDC0
+//		Offset -> 0x03168730
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTestActionStateSerialisableDataOnTrack
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -963,7 +963,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_GetTestActionStateSeriali
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.GetTestActionStateSerialisableDataOnTrack");
 
-	UActionStateMachineComponentTestFunctions_GetTestActionStateSerialisableDataOnTrack_Params params;
+	UActionStateMachineComponentTestFunctions_GetTestActionStateSerialisableDataOnTrack_Params params {};
 	params.InComponent = InComponent;
 	params.TrackId = TrackId;
 
@@ -982,7 +982,7 @@ bool UActionStateMachineComponentTestFunctions::STATIC_GetTestActionStateSeriali
 
 
 // Function:
-//		Offset -> 0x0315E6E0
+//		Offset -> 0x03168050
 //		Name   -> Function ActionStateMachine.ActionStateMachineComponentTestFunctions.CreateCustomClientValidityCheckCallback
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -991,7 +991,7 @@ class UCustomClientValidityCheckCallback* UActionStateMachineComponentTestFuncti
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStateMachineComponentTestFunctions.CreateCustomClientValidityCheckCallback");
 
-	UActionStateMachineComponentTestFunctions_CreateCustomClientValidityCheckCallback_Params params;
+	UActionStateMachineComponentTestFunctions_CreateCustomClientValidityCheckCallback_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1041,7 +1041,7 @@ void UActionStatePriorityTableData::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0315EBE0
+//		Offset -> 0x03168550
 //		Name   -> Function ActionStateMachine.ActionStatePriorityTableUtility.GetPriority
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1053,7 +1053,7 @@ TEnumAsByte<ActionStateMachine_EActionStatePriority> UActionStatePriorityTableUt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStatePriorityTableUtility.GetPriority");
 
-	UActionStatePriorityTableUtility_GetPriority_Params params;
+	UActionStatePriorityTableUtility_GetPriority_Params params {};
 	params.InStateA = InStateA;
 	params.InStateB = InStateB;
 
@@ -1072,7 +1072,7 @@ TEnumAsByte<ActionStateMachine_EActionStatePriority> UActionStatePriorityTableUt
 
 
 // Function:
-//		Offset -> 0x0315E710
+//		Offset -> 0x03168080
 //		Name   -> Function ActionStateMachine.ActionStatePriorityTableUtility.CreatePriorityTable
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1082,7 +1082,7 @@ struct FActionStatePriorityTable UActionStatePriorityTableUtility::STATIC_Create
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.ActionStatePriorityTableUtility.CreatePriorityTable");
 
-	UActionStatePriorityTableUtility_CreatePriorityTable_Params params;
+	UActionStatePriorityTableUtility_CreatePriorityTable_Params params {};
 	params.Data = Data;
 
 	auto flags = fn->FunctionFlags;
@@ -1109,7 +1109,7 @@ void UActionStatePriorityTableUtility::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0315F460
+//		Offset -> 0x03168DD0
 //		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.IsValid
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1119,7 +1119,7 @@ bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_IsValid(const s
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.IsValid");
 
-	USerialisedActionStateConstructionInfoTestFunctions_IsValid_Params params;
+	USerialisedActionStateConstructionInfoTestFunctions_IsValid_Params params {};
 	params.TestStruct = TestStruct;
 
 	auto flags = fn->FunctionFlags;
@@ -1134,7 +1134,7 @@ bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_IsValid(const s
 
 
 // Function:
-//		Offset -> 0x0315F2C0
+//		Offset -> 0x03168C30
 //		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfoWithInner
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1144,7 +1144,7 @@ bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_HasTestConstruc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfoWithInner");
 
-	USerialisedActionStateConstructionInfoTestFunctions_HasTestConstructionInfoWithInner_Params params;
+	USerialisedActionStateConstructionInfoTestFunctions_HasTestConstructionInfoWithInner_Params params {};
 	params.TestStruct = TestStruct;
 
 	auto flags = fn->FunctionFlags;
@@ -1159,7 +1159,7 @@ bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_HasTestConstruc
 
 
 // Function:
-//		Offset -> 0x0315F210
+//		Offset -> 0x03168B80
 //		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfo
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1169,7 +1169,7 @@ bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_HasTestConstruc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.HasTestConstructionInfo");
 
-	USerialisedActionStateConstructionInfoTestFunctions_HasTestConstructionInfo_Params params;
+	USerialisedActionStateConstructionInfoTestFunctions_HasTestConstructionInfo_Params params {};
 	params.TestStruct = TestStruct;
 
 	auto flags = fn->FunctionFlags;
@@ -1184,7 +1184,7 @@ bool USerialisedActionStateConstructionInfoTestFunctions::STATIC_HasTestConstruc
 
 
 // Function:
-//		Offset -> 0x0315F000
+//		Offset -> 0x03168970
 //		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfoWithInner
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1194,7 +1194,7 @@ struct FTestActionStateConstructionInfoWithInner USerialisedActionStateConstruct
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfoWithInner");
 
-	USerialisedActionStateConstructionInfoTestFunctions_GetTestConstructionInfoWithInner_Params params;
+	USerialisedActionStateConstructionInfoTestFunctions_GetTestConstructionInfoWithInner_Params params {};
 	params.TestStruct = TestStruct;
 
 	auto flags = fn->FunctionFlags;
@@ -1209,7 +1209,7 @@ struct FTestActionStateConstructionInfoWithInner USerialisedActionStateConstruct
 
 
 // Function:
-//		Offset -> 0x0315EF10
+//		Offset -> 0x03168880
 //		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfo
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1219,7 +1219,7 @@ struct FTestActionStateConstructionInfo USerialisedActionStateConstructionInfoTe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.GetTestConstructionInfo");
 
-	USerialisedActionStateConstructionInfoTestFunctions_GetTestConstructionInfo_Params params;
+	USerialisedActionStateConstructionInfoTestFunctions_GetTestConstructionInfo_Params params {};
 	params.TestStruct = TestStruct;
 
 	auto flags = fn->FunctionFlags;
@@ -1234,7 +1234,7 @@ struct FTestActionStateConstructionInfo USerialisedActionStateConstructionInfoTe
 
 
 // Function:
-//		Offset -> 0x0315EAC0
+//		Offset -> 0x03168430
 //		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestSerialisableData
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1245,7 +1245,7 @@ struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestSerialisableData");
 
-	USerialisedActionStateConstructionInfoTestFunctions_CreateTestSerialisableData_Params params;
+	USerialisedActionStateConstructionInfoTestFunctions_CreateTestSerialisableData_Params params {};
 	params.Id = Id;
 	params.IntProp = IntProp;
 
@@ -1261,7 +1261,7 @@ struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunc
 
 
 // Function:
-//		Offset -> 0x0315E920
+//		Offset -> 0x03168290
 //		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfoWithInner
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1274,7 +1274,7 @@ struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfoWithInner");
 
-	USerialisedActionStateConstructionInfoTestFunctions_CreateTestConstructionInfoWithInner_Params params;
+	USerialisedActionStateConstructionInfoTestFunctions_CreateTestConstructionInfoWithInner_Params params {};
 	params.Id = Id;
 	params.FloatProp = FloatProp;
 	params.BoolProp = BoolProp;
@@ -1292,7 +1292,7 @@ struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunc
 
 
 // Function:
-//		Offset -> 0x0315E820
+//		Offset -> 0x03168190
 //		Name   -> Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfo
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1303,7 +1303,7 @@ struct FSerialisedActionStateInfo USerialisedActionStateConstructionInfoTestFunc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ActionStateMachine.SerialisedActionStateConstructionInfoTestFunctions.CreateTestConstructionInfo");
 
-	USerialisedActionStateConstructionInfoTestFunctions_CreateTestConstructionInfo_Params params;
+	USerialisedActionStateConstructionInfoTestFunctions_CreateTestConstructionInfo_Params params {};
 	params.Id = Id;
 	params.IntProp = IntProp;
 

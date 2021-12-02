@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Shipwright.BP_Shipwright_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Shipwright_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shipwright.BP_Shipwright_C.UserConstructionScript");
 
-	ABP_Shipwright_C_UserConstructionScript_Params params;
+	ABP_Shipwright_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void ABP_Shipwright_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Shipwright.BP_Shipwright_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_Shipwright_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shipwright.BP_Shipwright_C.ReceiveBeginPlay");
 
-	ABP_Shipwright_C_ReceiveBeginPlay_Params params;
+	ABP_Shipwright_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void ABP_Shipwright_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Shipwright.BP_Shipwright_C.ReceiveEndPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -64,7 +64,7 @@ void ABP_Shipwright_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlay
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shipwright.BP_Shipwright_C.ReceiveEndPlay");
 
-	ABP_Shipwright_C_ReceiveEndPlay_Params params;
+	ABP_Shipwright_C_ReceiveEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -76,7 +76,7 @@ void ABP_Shipwright_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndPlayReason> EndPlay
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Shipwright.BP_Shipwright_C.ExecuteUbergraph_BP_Shipwright
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -85,7 +85,7 @@ void ABP_Shipwright_C::ExecuteUbergraph_BP_Shipwright(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Shipwright.BP_Shipwright_C.ExecuteUbergraph_BP_Shipwright");
 
-	ABP_Shipwright_C_ExecuteUbergraph_BP_Shipwright_Params params;
+	ABP_Shipwright_C_ExecuteUbergraph_BP_Shipwright_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x03511920
+//		Offset -> 0x035C3500
 //		Name   -> Function ShortRangeMarkerFramework.ShortRangeMarker.Multicast_OnCleanUp
 //		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 void AShortRangeMarker::Multicast_OnCleanUp()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShortRangeMarkerFramework.ShortRangeMarker.Multicast_OnCleanUp");
 
-	AShortRangeMarker_Multicast_OnCleanUp_Params params;
+	AShortRangeMarker_Multicast_OnCleanUp_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -62,7 +62,7 @@ void UShortRangeMarkerInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03511940
+//		Offset -> 0x035C3520
 //		Name   -> Function ShortRangeMarkerFramework.ShortRangeMarkerBlueprintFunctionLibrary.RegisterActorsWithShortRangeMarker
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -73,7 +73,7 @@ void UShortRangeMarkerBlueprintFunctionLibrary::STATIC_RegisterActorsWithShortRa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShortRangeMarkerFramework.ShortRangeMarkerBlueprintFunctionLibrary.RegisterActorsWithShortRangeMarker");
 
-	UShortRangeMarkerBlueprintFunctionLibrary_RegisterActorsWithShortRangeMarker_Params params;
+	UShortRangeMarkerBlueprintFunctionLibrary_RegisterActorsWithShortRangeMarker_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.InMarker = InMarker;
 

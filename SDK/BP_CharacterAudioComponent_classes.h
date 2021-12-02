@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_CharacterAudioComponent.BP_CharacterAudioComponent_C
-// 0x0000 (FullSize[0x11B0] - InheritedSize[0x11B0])
+// 0x0000 (FullSize[0x1290] - InheritedSize[0x1290])
 class UBP_CharacterAudioComponent_C : public UCharacterAudioComponent
 {
 public:

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -27,7 +27,7 @@ public:
 	struct FString                                     DiscoveryServiceUrl;                                       // 0x0028(0x0010) (Edit, ZeroConstructor, Config, HasGetValueTypeHash)
 	TEnumAsByte<ServiceHttp_EServiceHttpMetricsLevel>  ServerMetricsLevel;                                        // 0x0038(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<ServiceHttp_EServiceHttpMetricsLevel>  ClientMetricsLevel;                                        // 0x0039(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_WSTT[0x6];                                     // 0x003A(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_P77X[0x6];                                     // 0x003A(0x0006) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -36,7 +36,7 @@ struct ABP_SmallShipNetProxy_C_Set_Value_on_All_Materials_Params
 // Function BP_SmallShipNetProxy.BP_SmallShipNetProxy_C.Apply Bits to Lanterns
 struct ABP_SmallShipNetProxy_C_Apply_Bits_to_Lanterns_Params
 {
-	int                                                Bits;                                                      // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int                                                bits;                                                      // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_SmallShipNetProxy.BP_SmallShipNetProxy_C.Create Dynamic Materials

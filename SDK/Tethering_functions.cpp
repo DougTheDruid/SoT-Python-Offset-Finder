@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -53,7 +53,7 @@ void UCordRenderComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03682B70
+//		Offset -> 0x0354ED80
 //		Name   -> Function Tethering.DynamicCordRenderComponent.SetCordEndPointB
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -62,7 +62,7 @@ void UDynamicCordRenderComponent::SetCordEndPointB(class USceneComponent* EndPoi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tethering.DynamicCordRenderComponent.SetCordEndPointB");
 
-	UDynamicCordRenderComponent_SetCordEndPointB_Params params;
+	UDynamicCordRenderComponent_SetCordEndPointB_Params params {};
 	params.EndPointB = EndPointB;
 
 	auto flags = fn->FunctionFlags;
@@ -75,7 +75,7 @@ void UDynamicCordRenderComponent::SetCordEndPointB(class USceneComponent* EndPoi
 
 
 // Function:
-//		Offset -> 0x03682AF0
+//		Offset -> 0x0354ED00
 //		Name   -> Function Tethering.DynamicCordRenderComponent.SetCordEndPointA
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -84,7 +84,7 @@ void UDynamicCordRenderComponent::SetCordEndPointA(class USceneComponent* EndPoi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Tethering.DynamicCordRenderComponent.SetCordEndPointA");
 
-	UDynamicCordRenderComponent_SetCordEndPointA_Params params;
+	UDynamicCordRenderComponent_SetCordEndPointA_Params params {};
 	params.EndPointA = EndPointA;
 
 	auto flags = fn->FunctionFlags;

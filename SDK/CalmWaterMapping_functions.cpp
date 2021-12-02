@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x030D80A0
+//		Offset -> 0x031E6050
 //		Name   -> Function CalmWaterMapping.CalmWaterMappingInterface.GetDampeningFactor
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -29,7 +29,7 @@ float UCalmWaterMappingInterface::GetDampeningFactor(const struct FVector2D& InP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CalmWaterMapping.CalmWaterMappingInterface.GetDampeningFactor");
 
-	UCalmWaterMappingInterface_GetDampeningFactor_Params params;
+	UCalmWaterMappingInterface_GetDampeningFactor_Params params {};
 	params.InPosition = InPosition;
 
 	auto flags = fn->FunctionFlags;
@@ -44,7 +44,7 @@ float UCalmWaterMappingInterface::GetDampeningFactor(const struct FVector2D& InP
 
 
 // Function:
-//		Offset -> 0x030D8000
+//		Offset -> 0x031E5FB0
 //		Name   -> Function CalmWaterMapping.CalmWaterMappingInterface.GetChoppinessFactor
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -54,7 +54,7 @@ float UCalmWaterMappingInterface::GetChoppinessFactor(const struct FVector2D& In
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CalmWaterMapping.CalmWaterMappingInterface.GetChoppinessFactor");
 
-	UCalmWaterMappingInterface_GetChoppinessFactor_Params params;
+	UCalmWaterMappingInterface_GetChoppinessFactor_Params params {};
 	params.InPosition = InPosition;
 
 	auto flags = fn->FunctionFlags;
@@ -93,7 +93,7 @@ void AAthenaCalmWaterZone::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x030D8140
+//		Offset -> 0x031E60F0
 //		Name   -> Function CalmWaterMapping.CalmWaterMappingService.GetMaxWindSpeed
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -102,7 +102,7 @@ float UCalmWaterMappingService::STATIC_GetMaxWindSpeed()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function CalmWaterMapping.CalmWaterMappingService.GetMaxWindSpeed");
 
-	UCalmWaterMappingService_GetMaxWindSpeed_Params params;
+	UCalmWaterMappingService_GetMaxWindSpeed_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

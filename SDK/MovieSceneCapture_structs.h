@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -64,15 +64,15 @@ struct FMovieSceneCaptureSettings
 {
 	struct FDirectoryPath                              OutputDirectory;                                           // 0x0000(0x0010) (Edit, Config)
 	bool                                               bCreateTemporaryCopiesOfLevels;                            // 0x0010(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay)
-	unsigned char                                      UnknownData_9WVW[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_3FSF[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClass*                                      GameModeOverride;                                          // 0x0018(0x0008) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash)
 	struct FString                                     OutputFormat;                                              // 0x0020(0x0010) (Edit, ZeroConstructor, Config, HasGetValueTypeHash)
 	bool                                               bOverwriteExisting;                                        // 0x0030(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay)
 	bool                                               bUseRelativeFrameNumbers;                                  // 0x0031(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay)
-	unsigned char                                      UnknownData_WQ0M[0x2];                                     // 0x0032(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ZN51[0x2];                                     // 0x0032(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	int                                                HandleFrames;                                              // 0x0034(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	unsigned char                                      ZeroPadFrameNumbers;                                       // 0x0038(0x0001) (ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_CGU7[0x3];                                     // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_DKGU[0x3];                                     // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	int                                                FrameRate;                                                 // 0x003C(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FCaptureResolution                          Resolution;                                                // 0x0040(0x0008) (Edit, Config)
 	bool                                               bEnableTextureStreaming;                                   // 0x0048(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay)
@@ -82,7 +82,7 @@ struct FMovieSceneCaptureSettings
 	bool                                               bAllowTurning;                                             // 0x004C(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay)
 	bool                                               bShowPlayer;                                               // 0x004D(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay)
 	bool                                               bShowHUD;                                                  // 0x004E(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay)
-	unsigned char                                      UnknownData_1K4H[0x1];                                     // 0x004F(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_DE8H[0x1];                                     // 0x004F(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

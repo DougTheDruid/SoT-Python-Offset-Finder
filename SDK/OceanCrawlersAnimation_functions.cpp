@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -75,14 +75,14 @@ void UOceanCrawlerAnimationData::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0136DCF0
+//		Offset -> 0x013969A0
 //		Name   -> Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.ClearActiveAttack
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UOceanCrawlerAnimationInstance::ClearActiveAttack()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.ClearActiveAttack");
 
-	UOceanCrawlerAnimationInstance_ClearActiveAttack_Params params;
+	UOceanCrawlerAnimationInstance_ClearActiveAttack_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -94,14 +94,14 @@ void UOceanCrawlerAnimationInstance::ClearActiveAttack()
 
 
 // Function:
-//		Offset -> 0x0136DCD0
+//		Offset -> 0x01396980
 //		Name   -> Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.BeginNewAttack
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UOceanCrawlerAnimationInstance::BeginNewAttack()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function OceanCrawlersAnimation.OceanCrawlerAnimationInstance.BeginNewAttack");
 
-	UOceanCrawlerAnimationInstance_BeginNewAttack_Params params;
+	UOceanCrawlerAnimationInstance_BeginNewAttack_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

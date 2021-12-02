@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function bsp_sea_rock_cluster_g.bsp_sea_rock_cluster_g_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void Absp_sea_rock_cluster_g_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function bsp_sea_rock_cluster_g.bsp_sea_rock_cluster_g_C.UserConstructionScript");
 
-	Absp_sea_rock_cluster_g_C_UserConstructionScript_Params params;
+	Absp_sea_rock_cluster_g_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

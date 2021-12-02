@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function wsp_beach_rocks_11.wsp_beach_rocks_10_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void Awsp_beach_rocks_10_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function wsp_beach_rocks_11.wsp_beach_rocks_10_C.UserConstructionScript");
 
-	Awsp_beach_rocks_10_C_UserConstructionScript_Params params;
+	Awsp_beach_rocks_10_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

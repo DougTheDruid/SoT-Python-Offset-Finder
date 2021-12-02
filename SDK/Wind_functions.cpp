@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -67,7 +67,7 @@ void FWindDirectionChanged::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031CD570
+//		Offset -> 0x03246320
 //		Name   -> Function Wind.WindZoneInterface.GetWindZoneParams
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -76,7 +76,7 @@ struct FWindZoneParams UWindZoneInterface::GetWindZoneParams()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindZoneInterface.GetWindZoneParams");
 
-	UWindZoneInterface_GetWindZoneParams_Params params;
+	UWindZoneInterface_GetWindZoneParams_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -90,7 +90,7 @@ struct FWindZoneParams UWindZoneInterface::GetWindZoneParams()
 
 
 // Function:
-//		Offset -> 0x031CD530
+//		Offset -> 0x032462E0
 //		Name   -> Function Wind.WindZoneInterface.GetWindZoneLocation
 //		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -99,7 +99,7 @@ struct FVector2D UWindZoneInterface::GetWindZoneLocation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindZoneInterface.GetWindZoneLocation");
 
-	UWindZoneInterface_GetWindZoneLocation_Params params;
+	UWindZoneInterface_GetWindZoneLocation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -113,7 +113,7 @@ struct FVector2D UWindZoneInterface::GetWindZoneLocation()
 
 
 // Function:
-//		Offset -> 0x031CCF50
+//		Offset -> 0x03245D00
 //		Name   -> Function Wind.WindZoneInterface.GetTurbulence
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -123,7 +123,7 @@ struct FWindZoneTurbulence UWindZoneInterface::GetTurbulence(const struct FVecto
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindZoneInterface.GetTurbulence");
 
-	UWindZoneInterface_GetTurbulence_Params params;
+	UWindZoneInterface_GetTurbulence_Params params {};
 	params.Location = Location;
 
 	auto flags = fn->FunctionFlags;
@@ -150,14 +150,14 @@ void UWindZoneInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031CDA40
+//		Offset -> 0x03246880
 //		Name   -> Function Wind.WindInterface.UnregisterWindZone
 //		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 void UWindInterface::UnregisterWindZone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.UnregisterWindZone");
 
-	UWindInterface_UnregisterWindZone_Params params;
+	UWindInterface_UnregisterWindZone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -169,7 +169,7 @@ void UWindInterface::UnregisterWindZone()
 
 
 // Function:
-//		Offset -> 0x031CD9B0
+//		Offset -> 0x032467F0
 //		Name   -> Function Wind.WindInterface.TriggerChange
 //		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
@@ -178,7 +178,7 @@ void UWindInterface::TriggerChange(bool ChangeInstantly)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.TriggerChange");
 
-	UWindInterface_TriggerChange_Params params;
+	UWindInterface_TriggerChange_Params params {};
 	params.ChangeInstantly = ChangeInstantly;
 
 	auto flags = fn->FunctionFlags;
@@ -191,7 +191,7 @@ void UWindInterface::TriggerChange(bool ChangeInstantly)
 
 
 // Function:
-//		Offset -> 0x031CD910
+//		Offset -> 0x03246750
 //		Name   -> Function Wind.WindInterface.SetParams
 //		Flags  -> (BlueprintAuthorityOnly, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -200,7 +200,7 @@ void UWindInterface::SetParams(const struct FWindServiceParams& Params)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetParams");
 
-	UWindInterface_SetParams_Params params;
+	UWindInterface_SetParams_Params params {};
 	params.Params = Params;
 
 	auto flags = fn->FunctionFlags;
@@ -213,7 +213,7 @@ void UWindInterface::SetParams(const struct FWindServiceParams& Params)
 
 
 // Function:
-//		Offset -> 0x031CD880
+//		Offset -> 0x032466C0
 //		Name   -> Function Wind.WindInterface.SetGlobalWindVector
 //		Flags  -> (BlueprintAuthorityOnly, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -222,7 +222,7 @@ void UWindInterface::SetGlobalWindVector(const struct FVector& InWindVector)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetGlobalWindVector");
 
-	UWindInterface_SetGlobalWindVector_Params params;
+	UWindInterface_SetGlobalWindVector_Params params {};
 	params.InWindVector = InWindVector;
 
 	auto flags = fn->FunctionFlags;
@@ -235,7 +235,7 @@ void UWindInterface::SetGlobalWindVector(const struct FVector& InWindVector)
 
 
 // Function:
-//		Offset -> 0x031CD800
+//		Offset -> 0x03246640
 //		Name   -> Function Wind.WindInterface.SetGlobalWindMagnitude
 //		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
@@ -244,7 +244,7 @@ void UWindInterface::SetGlobalWindMagnitude(float InWindMagnitude)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetGlobalWindMagnitude");
 
-	UWindInterface_SetGlobalWindMagnitude_Params params;
+	UWindInterface_SetGlobalWindMagnitude_Params params {};
 	params.InWindMagnitude = InWindMagnitude;
 
 	auto flags = fn->FunctionFlags;
@@ -257,7 +257,7 @@ void UWindInterface::SetGlobalWindMagnitude(float InWindMagnitude)
 
 
 // Function:
-//		Offset -> 0x031CD770
+//		Offset -> 0x032465B0
 //		Name   -> Function Wind.WindInterface.SetGlobalWindDirection
 //		Flags  -> (BlueprintAuthorityOnly, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -266,7 +266,7 @@ void UWindInterface::SetGlobalWindDirection(const struct FVector& InWindDirectio
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetGlobalWindDirection");
 
-	UWindInterface_SetGlobalWindDirection_Params params;
+	UWindInterface_SetGlobalWindDirection_Params params {};
 	params.InWindDirection = InWindDirection;
 
 	auto flags = fn->FunctionFlags;
@@ -279,7 +279,7 @@ void UWindInterface::SetGlobalWindDirection(const struct FVector& InWindDirectio
 
 
 // Function:
-//		Offset -> 0x031CD6F0
+//		Offset -> 0x03246530
 //		Name   -> Function Wind.WindInterface.SetGlobalWindAngle
 //		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 // Parameters:
@@ -288,7 +288,7 @@ void UWindInterface::SetGlobalWindAngle(float InAngle)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetGlobalWindAngle");
 
-	UWindInterface_SetGlobalWindAngle_Params params;
+	UWindInterface_SetGlobalWindAngle_Params params {};
 	params.InAngle = InAngle;
 
 	auto flags = fn->FunctionFlags;
@@ -301,14 +301,17 @@ void UWindInterface::SetGlobalWindAngle(float InAngle)
 
 
 // Function:
-//		Offset -> 0x031CD5E0
-//		Name   -> Function Wind.WindInterface.RegisterWindZone
+//		Offset -> 0x03246430
+//		Name   -> Function Wind.WindInterface.SetCustomMode
 //		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
-void UWindInterface::RegisterWindZone()
+// Parameters:
+//		bool                                               InCustomMode                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+void UWindInterface::SetCustomMode(bool InCustomMode)
 {
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.RegisterWindZone");
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.SetCustomMode");
 
-	UWindInterface_RegisterWindZone_Params params;
+	UWindInterface_SetCustomMode_Params params {};
+	params.InCustomMode = InCustomMode;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -320,7 +323,26 @@ void UWindInterface::RegisterWindZone()
 
 
 // Function:
-//		Offset -> 0x031CD480
+//		Offset -> 0x03246390
+//		Name   -> Function Wind.WindInterface.RegisterWindZone
+//		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+void UWindInterface::RegisterWindZone()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.RegisterWindZone");
+
+	UWindInterface_RegisterWindZone_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03246230
 //		Name   -> Function Wind.WindInterface.GetWindZoneAtLocation
 //		Flags  -> (BlueprintAuthorityOnly, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -329,7 +351,7 @@ void UWindInterface::GetWindZoneAtLocation(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindZoneAtLocation");
 
-	UWindInterface_GetWindZoneAtLocation_Params params;
+	UWindInterface_GetWindZoneAtLocation_Params params {};
 	params.SamplePosition = SamplePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -342,7 +364,7 @@ void UWindInterface::GetWindZoneAtLocation(const struct FVector& SamplePosition)
 
 
 // Function:
-//		Offset -> 0x031CD3D0
+//		Offset -> 0x03246180
 //		Name   -> Function Wind.WindInterface.GetWindVector
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -352,7 +374,7 @@ struct FVector UWindInterface::GetWindVector(const struct FVector& SamplePositio
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindVector");
 
-	UWindInterface_GetWindVector_Params params;
+	UWindInterface_GetWindVector_Params params {};
 	params.SamplePosition = SamplePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -367,7 +389,7 @@ struct FVector UWindInterface::GetWindVector(const struct FVector& SamplePositio
 
 
 // Function:
-//		Offset -> 0x031CD2E0
+//		Offset -> 0x03246090
 //		Name   -> Function Wind.WindInterface.GetWindMagnitude
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -377,7 +399,7 @@ float UWindInterface::GetWindMagnitude(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindMagnitude");
 
-	UWindInterface_GetWindMagnitude_Params params;
+	UWindInterface_GetWindMagnitude_Params params {};
 	params.SamplePosition = SamplePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -392,7 +414,7 @@ float UWindInterface::GetWindMagnitude(const struct FVector& SamplePosition)
 
 
 // Function:
-//		Offset -> 0x031CD230
+//		Offset -> 0x03245FE0
 //		Name   -> Function Wind.WindInterface.GetWindDirection
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -402,7 +424,7 @@ struct FVector UWindInterface::GetWindDirection(const struct FVector& SamplePosi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindDirection");
 
-	UWindInterface_GetWindDirection_Params params;
+	UWindInterface_GetWindDirection_Params params {};
 	params.SamplePosition = SamplePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -417,7 +439,7 @@ struct FVector UWindInterface::GetWindDirection(const struct FVector& SamplePosi
 
 
 // Function:
-//		Offset -> 0x031CD0B0
+//		Offset -> 0x03245E60
 //		Name   -> Function Wind.WindInterface.GetWindAngle
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -427,7 +449,7 @@ float UWindInterface::GetWindAngle(const struct FVector& SamplePosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetWindAngle");
 
-	UWindInterface_GetWindAngle_Params params;
+	UWindInterface_GetWindAngle_Params params {};
 	params.SamplePosition = SamplePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -442,7 +464,7 @@ float UWindInterface::GetWindAngle(const struct FVector& SamplePosition)
 
 
 // Function:
-//		Offset -> 0x031CD000
+//		Offset -> 0x03245DB0
 //		Name   -> Function Wind.WindInterface.GetTurbulenceForTrees
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -452,7 +474,7 @@ struct FWindZoneTurbulence UWindInterface::GetTurbulenceForTrees(const struct FV
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetTurbulenceForTrees");
 
-	UWindInterface_GetTurbulenceForTrees_Params params;
+	UWindInterface_GetTurbulenceForTrees_Params params {};
 	params.SamplePosition = SamplePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -467,7 +489,7 @@ struct FWindZoneTurbulence UWindInterface::GetTurbulenceForTrees(const struct FV
 
 
 // Function:
-//		Offset -> 0x031CCEA0
+//		Offset -> 0x03245C50
 //		Name   -> Function Wind.WindInterface.GetTurbulence
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -477,7 +499,7 @@ struct FWindZoneTurbulence UWindInterface::GetTurbulence(const struct FVector& S
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetTurbulence");
 
-	UWindInterface_GetTurbulence_Params params;
+	UWindInterface_GetTurbulence_Params params {};
 	params.SamplePosition = SamplePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -492,7 +514,7 @@ struct FWindZoneTurbulence UWindInterface::GetTurbulence(const struct FVector& S
 
 
 // Function:
-//		Offset -> 0x031CCE70
+//		Offset -> 0x03245C20
 //		Name   -> Function Wind.WindInterface.GetMaxWindMagnitude
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -501,7 +523,7 @@ float UWindInterface::GetMaxWindMagnitude()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindInterface.GetMaxWindMagnitude");
 
-	UWindInterface_GetMaxWindMagnitude_Params params;
+	UWindInterface_GetMaxWindMagnitude_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -575,7 +597,7 @@ void UTestWindZone::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031CD680
+//		Offset -> 0x032464C0
 //		Name   -> Function Wind.WindFunctions.SetDefaultWindBlowingNorth
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -584,7 +606,7 @@ void UWindFunctions::STATIC_SetDefaultWindBlowingNorth(class UObject* WorldConte
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindFunctions.SetDefaultWindBlowingNorth");
 
-	UWindFunctions_SetDefaultWindBlowingNorth_Params params;
+	UWindFunctions_SetDefaultWindBlowingNorth_Params params {};
 	params.WorldContextObject = WorldContextObject;
 
 	auto flags = fn->FunctionFlags;
@@ -597,7 +619,7 @@ void UWindFunctions::STATIC_SetDefaultWindBlowingNorth(class UObject* WorldConte
 
 
 // Function:
-//		Offset -> 0x031CD150
+//		Offset -> 0x03245F00
 //		Name   -> Function Wind.WindFunctions.GetWindAtLocation
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -608,7 +630,7 @@ struct FVector UWindFunctions::STATIC_GetWindAtLocation(class UObject* WorldCont
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindFunctions.GetWindAtLocation");
 
-	UWindFunctions_GetWindAtLocation_Params params;
+	UWindFunctions_GetWindAtLocation_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.WorldPosition = WorldPosition;
 
@@ -636,14 +658,14 @@ void UWindFunctions::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031CD5C0
+//		Offset -> 0x03246370
 //		Name   -> Function Wind.WindService.OnRep_WindMagnitude
 //		Flags  -> (Final, Native, Private)
 void AWindService::OnRep_WindMagnitude()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindService.OnRep_WindMagnitude");
 
-	AWindService_OnRep_WindMagnitude_Params params;
+	AWindService_OnRep_WindMagnitude_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -655,14 +677,14 @@ void AWindService::OnRep_WindMagnitude()
 
 
 // Function:
-//		Offset -> 0x031CD5A0
+//		Offset -> 0x03246350
 //		Name   -> Function Wind.WindService.OnRep_WindAngle
 //		Flags  -> (Final, Native, Private)
 void AWindService::OnRep_WindAngle()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindService.OnRep_WindAngle");
 
-	AWindService_OnRep_WindAngle_Params params;
+	AWindService_OnRep_WindAngle_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -674,7 +696,7 @@ void AWindService::OnRep_WindAngle()
 
 
 // Function:
-//		Offset -> 0x031CD380
+//		Offset -> 0x03246130
 //		Name   -> Function Wind.WindService.GetWindParams
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -683,7 +705,7 @@ struct FWindServiceParams AWindService::GetWindParams()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindService.GetWindParams");
 
-	AWindService_GetWindParams_Params params;
+	AWindService_GetWindParams_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -723,7 +745,7 @@ void ADebugWindService::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x031CCD70
+//		Offset -> 0x03245B20
 //		Name   -> Function Wind.WindServiceParamsFunctionLibrary.AreWindServiceParamsEqual
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -734,7 +756,7 @@ bool UWindServiceParamsFunctionLibrary::STATIC_AreWindServiceParamsEqual(const s
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Wind.WindServiceParamsFunctionLibrary.AreWindServiceParamsEqual");
 
-	UWindServiceParamsFunctionLibrary_AreWindServiceParamsEqual_Params params;
+	UWindServiceParamsFunctionLibrary_AreWindServiceParamsEqual_Params params {};
 	params.Params1 = Params1;
 	params.Params2 = Params2;
 

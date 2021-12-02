@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -67,7 +67,7 @@ void UServiceMessagingInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03005310
+//		Offset -> 0x0304CAC0
 //		Name   -> Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcherFromActor
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -77,7 +77,7 @@ struct FObjectMessagingDispatcherHandle UServiceMessagingFunctions::STATIC_GetSe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcherFromActor");
 
-	UServiceMessagingFunctions_GetServiceMessagingDispatcherFromActor_Params params;
+	UServiceMessagingFunctions_GetServiceMessagingDispatcherFromActor_Params params {};
 	params.Object = Object;
 
 	auto flags = fn->FunctionFlags;
@@ -92,7 +92,7 @@ struct FObjectMessagingDispatcherHandle UServiceMessagingFunctions::STATIC_GetSe
 
 
 // Function:
-//		Offset -> 0x03005270
+//		Offset -> 0x0304CA20
 //		Name   -> Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcher
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -101,7 +101,7 @@ struct FObjectMessagingDispatcherHandle UServiceMessagingFunctions::STATIC_GetSe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ServiceMessaging.ServiceMessagingFunctions.GetServiceMessagingDispatcher");
 
-	UServiceMessagingFunctions_GetServiceMessagingDispatcher_Params params;
+	UServiceMessagingFunctions_GetServiceMessagingDispatcher_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -127,7 +127,7 @@ void UServiceMessagingFunctions::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x030053A0
+//		Offset -> 0x0304CB50
 //		Name   -> Function ServiceMessaging.ServiceMessagingListenerTestObject.TestFunctionWithMessage
 //		Flags  -> (Final, Native, Public, HasOutParms)
 // Parameters:
@@ -136,7 +136,7 @@ void UServiceMessagingListenerTestObject::TestFunctionWithMessage(struct FServic
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ServiceMessaging.ServiceMessagingListenerTestObject.TestFunctionWithMessage");
 
-	UServiceMessagingListenerTestObject_TestFunctionWithMessage_Params params;
+	UServiceMessagingListenerTestObject_TestFunctionWithMessage_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

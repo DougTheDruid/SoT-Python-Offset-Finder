@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.CreateComponentList
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_Placement_HeightDrop_C::CreateComponentList()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.CreateComponentList");
 
-	ABP_Placement_HeightDrop_C_CreateComponentList_Params params;
+	ABP_Placement_HeightDrop_C_CreateComponentList_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,7 +38,7 @@ void ABP_Placement_HeightDrop_C::CreateComponentList()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.CreateParentBounds
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -46,7 +46,7 @@ void ABP_Placement_HeightDrop_C::CreateParentBounds()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.CreateParentBounds");
 
-	ABP_Placement_HeightDrop_C_CreateParentBounds_Params params;
+	ABP_Placement_HeightDrop_C_CreateParentBounds_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -57,7 +57,7 @@ void ABP_Placement_HeightDrop_C::CreateParentBounds()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.CheckMobilityState
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -65,7 +65,7 @@ void ABP_Placement_HeightDrop_C::CheckMobilityState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.CheckMobilityState");
 
-	ABP_Placement_HeightDrop_C_CheckMobilityState_Params params;
+	ABP_Placement_HeightDrop_C_CheckMobilityState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -76,7 +76,7 @@ void ABP_Placement_HeightDrop_C::CheckMobilityState()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.Get Valid Collision
 //		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -90,7 +90,7 @@ void ABP_Placement_HeightDrop_C::Get_Valid_Collision(TArray<struct FHitResult>* 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.Get Valid Collision");
 
-	ABP_Placement_HeightDrop_C_Get_Valid_Collision_Params params;
+	ABP_Placement_HeightDrop_C_Get_Valid_Collision_Params params {};
 	params.Hit_Success = Hit_Success;
 	params.Current_Component = Current_Component;
 
@@ -112,7 +112,7 @@ void ABP_Placement_HeightDrop_C::Get_Valid_Collision(TArray<struct FHitResult>* 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.Drop Components
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -120,7 +120,7 @@ void ABP_Placement_HeightDrop_C::Drop_Components()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.Drop Components");
 
-	ABP_Placement_HeightDrop_C_Drop_Components_Params params;
+	ABP_Placement_HeightDrop_C_Drop_Components_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -131,14 +131,14 @@ void ABP_Placement_HeightDrop_C::Drop_Components()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Placement_HeightDrop_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Placement_HeightDrop.BP_Placement_HeightDrop_C.UserConstructionScript");
 
-	ABP_Placement_HeightDrop_C_UserConstructionScript_Params params;
+	ABP_Placement_HeightDrop_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

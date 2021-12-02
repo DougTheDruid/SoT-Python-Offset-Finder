@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.seagull_Fade
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -29,7 +29,7 @@ void ABP_Seagull01_8POI_C::seagull_Fade(class UMaterialInstance* Seagull_Materia
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.seagull_Fade");
 
-	ABP_Seagull01_8POI_C_seagull_Fade_Params params;
+	ABP_Seagull01_8POI_C_seagull_Fade_Params params {};
 	params.Seagull_Material = Seagull_Material;
 	params.Seagull_MT_LOD = Seagull_MT_LOD;
 
@@ -42,7 +42,7 @@ void ABP_Seagull01_8POI_C::seagull_Fade(class UMaterialInstance* Seagull_Materia
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -50,7 +50,7 @@ void ABP_Seagull01_8POI_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.UserConstructionScript");
 
-	ABP_Seagull01_8POI_C_UserConstructionScript_Params params;
+	ABP_Seagull01_8POI_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -61,14 +61,14 @@ void ABP_Seagull01_8POI_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_Seagull01_8POI_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ReceiveBeginPlay");
 
-	ABP_Seagull01_8POI_C_ReceiveBeginPlay_Params params;
+	ABP_Seagull01_8POI_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -79,14 +79,14 @@ void ABP_Seagull01_8POI_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeIn
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Seagull01_8POI_C::FadeIn()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeIn");
 
-	ABP_Seagull01_8POI_C_FadeIn_Params params;
+	ABP_Seagull01_8POI_C_FadeIn_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -97,14 +97,14 @@ void ABP_Seagull01_8POI_C::FadeIn()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeOut
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Seagull01_8POI_C::FadeOut()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.FadeOut");
 
-	ABP_Seagull01_8POI_C_FadeOut_Params params;
+	ABP_Seagull01_8POI_C_FadeOut_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -115,7 +115,7 @@ void ABP_Seagull01_8POI_C::FadeOut()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ExecuteUbergraph_BP_Seagull01_8POI
 //		Flags  -> ()
 // Parameters:
@@ -124,7 +124,7 @@ void ABP_Seagull01_8POI_C::ExecuteUbergraph_BP_Seagull01_8POI(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Seagull01_8POI.BP_Seagull01_8POI_C.ExecuteUbergraph_BP_Seagull01_8POI");
 
-	ABP_Seagull01_8POI_C_ExecuteUbergraph_BP_Seagull01_8POI_Params params;
+	ABP_Seagull01_8POI_C_ExecuteUbergraph_BP_Seagull01_8POI_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

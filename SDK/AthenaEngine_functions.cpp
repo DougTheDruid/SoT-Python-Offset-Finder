@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -130,6 +130,43 @@ void FEventMeshAssigned::BeforeDelete()
 {
 }
 
+// Function:
+//		Offset -> 0x02F63630
+//		Name   -> Function AthenaEngine.ForceFeedbackCondition.CanPlayForceFeedback
+//		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
+// Parameters:
+//		class AActor*                                      InOwner                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+bool UForceFeedbackCondition::CanPlayForceFeedback(class AActor* InOwner)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.ForceFeedbackCondition.CanPlayForceFeedback");
+
+	UForceFeedbackCondition_CanPlayForceFeedback_Params params {};
+	params.InOwner = InOwner;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+void UForceFeedbackCondition::AfterRead()
+{
+	UObject::AfterRead();
+
+}
+
+void UForceFeedbackCondition::BeforeDelete()
+{
+	UObject::BeforeDelete();
+
+}
+
 void UAthenaEngineInterface::AfterRead()
 {
 	UInterface::AfterRead();
@@ -155,7 +192,7 @@ void UBoxedRpcDispatcherInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F1E690
+//		Offset -> 0x02F63B30
 //		Name   -> Function AthenaEngine.BoxedRpcDispatcherComponent.Server_SendRpc
 //		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
@@ -164,7 +201,7 @@ void UBoxedRpcDispatcherComponent::Server_SendRpc(const struct FSerialisedRpc& E
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.BoxedRpcDispatcherComponent.Server_SendRpc");
 
-	UBoxedRpcDispatcherComponent_Server_SendRpc_Params params;
+	UBoxedRpcDispatcherComponent_Server_SendRpc_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -177,7 +214,7 @@ void UBoxedRpcDispatcherComponent::Server_SendRpc(const struct FSerialisedRpc& E
 
 
 // Function:
-//		Offset -> 0x02F1E560
+//		Offset -> 0x02F63A00
 //		Name   -> Function AthenaEngine.BoxedRpcDispatcherComponent.NetMulticastExcludeServer_SendRpc
 //		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Protected)
 // Parameters:
@@ -186,7 +223,7 @@ void UBoxedRpcDispatcherComponent::NetMulticastExcludeServer_SendRpc(const struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.BoxedRpcDispatcherComponent.NetMulticastExcludeServer_SendRpc");
 
-	UBoxedRpcDispatcherComponent_NetMulticastExcludeServer_SendRpc_Params params;
+	UBoxedRpcDispatcherComponent_NetMulticastExcludeServer_SendRpc_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -199,7 +236,7 @@ void UBoxedRpcDispatcherComponent::NetMulticastExcludeServer_SendRpc(const struc
 
 
 // Function:
-//		Offset -> 0x02F1E270
+//		Offset -> 0x02F63710
 //		Name   -> Function AthenaEngine.BoxedRpcDispatcherComponent.Client_SendRpc
 //		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 // Parameters:
@@ -208,7 +245,7 @@ void UBoxedRpcDispatcherComponent::Client_SendRpc(const struct FSerialisedRpc& E
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.BoxedRpcDispatcherComponent.Client_SendRpc");
 
-	UBoxedRpcDispatcherComponent_Client_SendRpc_Params params;
+	UBoxedRpcDispatcherComponent_Client_SendRpc_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -233,7 +270,7 @@ void UBoxedRpcDispatcherComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F1E310
+//		Offset -> 0x02F637B0
 //		Name   -> Function AthenaEngine.DynamicColourPointLightComponent.DeactivateLight
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -242,7 +279,7 @@ void UDynamicColourPointLightComponent::DeactivateLight(bool Blend)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.DynamicColourPointLightComponent.DeactivateLight");
 
-	UDynamicColourPointLightComponent_DeactivateLight_Params params;
+	UDynamicColourPointLightComponent_DeactivateLight_Params params {};
 	params.Blend = Blend;
 
 	auto flags = fn->FunctionFlags;
@@ -255,7 +292,7 @@ void UDynamicColourPointLightComponent::DeactivateLight(bool Blend)
 
 
 // Function:
-//		Offset -> 0x02F1E0D0
+//		Offset -> 0x02F63570
 //		Name   -> Function AthenaEngine.DynamicColourPointLightComponent.ActivateLight
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -264,7 +301,7 @@ void UDynamicColourPointLightComponent::ActivateLight(bool Blend)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.DynamicColourPointLightComponent.ActivateLight");
 
-	UDynamicColourPointLightComponent_ActivateLight_Params params;
+	UDynamicColourPointLightComponent_ActivateLight_Params params {};
 	params.Blend = Blend;
 
 	auto flags = fn->FunctionFlags;
@@ -295,43 +332,6 @@ void UEmptyObject::AfterRead()
 }
 
 void UEmptyObject::BeforeDelete()
-{
-	UObject::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x02F1E190
-//		Name   -> Function AthenaEngine.ForceFeedbackCondition.CanPlayForceFeedback
-//		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
-// Parameters:
-//		class AActor*                                      InOwner                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-bool UForceFeedbackCondition::CanPlayForceFeedback(class AActor* InOwner)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.ForceFeedbackCondition.CanPlayForceFeedback");
-
-	UForceFeedbackCondition_CanPlayForceFeedback_Params params;
-	params.InOwner = InOwner;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-void UForceFeedbackCondition::AfterRead()
-{
-	UObject::AfterRead();
-
-}
-
-void UForceFeedbackCondition::BeforeDelete()
 {
 	UObject::BeforeDelete();
 
@@ -374,7 +374,7 @@ void UOnlinePlayerPermissionsRetrieverInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F1E7C0
+//		Offset -> 0x02F63C60
 //		Name   -> Function AthenaEngine.PlayModeHelpers.SetPlayModeVariantOverride
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -383,7 +383,7 @@ void UPlayModeHelpers::STATIC_SetPlayModeVariantOverride(TEnumAsByte<AthenaEngin
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.PlayModeHelpers.SetPlayModeVariantOverride");
 
-	UPlayModeHelpers_SetPlayModeVariantOverride_Params params;
+	UPlayModeHelpers_SetPlayModeVariantOverride_Params params {};
 	params.NewPlayModeVariantOverride = NewPlayModeVariantOverride;
 
 	auto flags = fn->FunctionFlags;
@@ -396,7 +396,7 @@ void UPlayModeHelpers::STATIC_SetPlayModeVariantOverride(TEnumAsByte<AthenaEngin
 
 
 // Function:
-//		Offset -> 0x02F1E750
+//		Offset -> 0x02F63BF0
 //		Name   -> Function AthenaEngine.PlayModeHelpers.SetPlayModeOverride
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -405,7 +405,7 @@ void UPlayModeHelpers::STATIC_SetPlayModeOverride(TEnumAsByte<AthenaEngine_EPlay
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.PlayModeHelpers.SetPlayModeOverride");
 
-	UPlayModeHelpers_SetPlayModeOverride_Params params;
+	UPlayModeHelpers_SetPlayModeOverride_Params params {};
 	params.NewPlayModeOverride = NewPlayModeOverride;
 
 	auto flags = fn->FunctionFlags;
@@ -418,7 +418,7 @@ void UPlayModeHelpers::STATIC_SetPlayModeOverride(TEnumAsByte<AthenaEngine_EPlay
 
 
 // Function:
-//		Offset -> 0x02F1E420
+//		Offset -> 0x02F638C0
 //		Name   -> Function AthenaEngine.PlayModeHelpers.GetPlayModeVariant
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -428,7 +428,7 @@ TEnumAsByte<AthenaEngine_EPlayModeVariant> UPlayModeHelpers::STATIC_GetPlayModeV
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.PlayModeHelpers.GetPlayModeVariant");
 
-	UPlayModeHelpers_GetPlayModeVariant_Params params;
+	UPlayModeHelpers_GetPlayModeVariant_Params params {};
 	params.WorldContext = WorldContext;
 
 	auto flags = fn->FunctionFlags;
@@ -443,7 +443,7 @@ TEnumAsByte<AthenaEngine_EPlayModeVariant> UPlayModeHelpers::STATIC_GetPlayModeV
 
 
 // Function:
-//		Offset -> 0x02F1E3A0
+//		Offset -> 0x02F63840
 //		Name   -> Function AthenaEngine.PlayModeHelpers.GetPlayMode
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -453,7 +453,7 @@ TEnumAsByte<AthenaEngine_EPlayMode> UPlayModeHelpers::STATIC_GetPlayMode(class U
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.PlayModeHelpers.GetPlayMode");
 
-	UPlayModeHelpers_GetPlayMode_Params params;
+	UPlayModeHelpers_GetPlayMode_Params params {};
 	params.WorldContext = WorldContext;
 
 	auto flags = fn->FunctionFlags;
@@ -468,14 +468,14 @@ TEnumAsByte<AthenaEngine_EPlayMode> UPlayModeHelpers::STATIC_GetPlayMode(class U
 
 
 // Function:
-//		Offset -> 0x02F1E250
+//		Offset -> 0x02F636F0
 //		Name   -> Function AthenaEngine.PlayModeHelpers.ClearPlayModeVariantOverride
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 void UPlayModeHelpers::STATIC_ClearPlayModeVariantOverride()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.PlayModeHelpers.ClearPlayModeVariantOverride");
 
-	UPlayModeHelpers_ClearPlayModeVariantOverride_Params params;
+	UPlayModeHelpers_ClearPlayModeVariantOverride_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -487,14 +487,14 @@ void UPlayModeHelpers::STATIC_ClearPlayModeVariantOverride()
 
 
 // Function:
-//		Offset -> 0x02F1E230
+//		Offset -> 0x02F636D0
 //		Name   -> Function AthenaEngine.PlayModeHelpers.ClearPlayModeOverride
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 void UPlayModeHelpers::STATIC_ClearPlayModeOverride()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.PlayModeHelpers.ClearPlayModeOverride");
 
-	UPlayModeHelpers_ClearPlayModeOverride_Params params;
+	UPlayModeHelpers_ClearPlayModeOverride_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -584,14 +584,14 @@ void UResourceProviderInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F1E860
+//		Offset -> 0x02F63D00
 //		Name   -> Function AthenaEngine.RotateMeshToActorComponent.SnapMeshToLookAtActor
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void URotateMeshToActorComponent::SnapMeshToLookAtActor()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.RotateMeshToActorComponent.SnapMeshToLookAtActor");
 
-	URotateMeshToActorComponent_SnapMeshToLookAtActor_Params params;
+	URotateMeshToActorComponent_SnapMeshToLookAtActor_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -603,7 +603,7 @@ void URotateMeshToActorComponent::SnapMeshToLookAtActor()
 
 
 // Function:
-//		Offset -> 0x02F1E4A0
+//		Offset -> 0x02F63940
 //		Name   -> Function AthenaEngine.RotateMeshToActorComponent.Initialise
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -613,7 +613,7 @@ void URotateMeshToActorComponent::Initialise(class UMeshComponent* InMeshToRotat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaEngine.RotateMeshToActorComponent.Initialise");
 
-	URotateMeshToActorComponent_Initialise_Params params;
+	URotateMeshToActorComponent_Initialise_Params params {};
 	params.InMeshToRotate = InMeshToRotate;
 	params.InActorToRotateTo = InActorToRotateTo;
 

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,18 +20,20 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Class AthenaCheat.AthenaCheatManager
-// 0x00A8 (FullSize[0x0120] - InheritedSize[0x0078])
+// 0x00B8 (FullSize[0x0130] - InheritedSize[0x0078])
 class UAthenaCheatManager : public UCheatManager
 {
 public:
 	class ACinematicCameraController*                  CinematicCameraController;                                 // 0x0078(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                      CinematicCameraControllerClass;                            // 0x0080(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_PSIP[0x28];                                    // 0x0088(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_8EF7[0x28];                                    // 0x0088(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FWorldMarkerDesc>                    CreatedWorldMarkers;                                       // 0x00B0(0x0010) (ZeroConstructor, Transient)
 	class UGameEventSchedulerSettingsAsset*            DebugSchedulerSettings;                                    // 0x00C0(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AServerPerformanceReplicator*                ServerPerformanceReplicator;                               // 0x00C8(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TeleportToDigsiteHeightOffset;                             // 0x00D0(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_OD6W[0x4C];                                    // 0x00D4(0x004C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UYIR[0x24];                                    // 0x00D4(0x0024) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FShipCustomizationPersistenceModel          ShipCustomizationModel;                                    // 0x00F8(0x0010) (Transient)
+	unsigned char                                      UnknownData_PKYZ[0x28];                                    // 0x0108(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -95,6 +97,7 @@ public:
 	void ToggleContestScoreDebug();
 	void ToggleCinematicCamera();
 	void ToggleAttributeOverride();
+	void TestForceArchiveAsyncPoolCanaryCrash();
 	void TestCrashDumpCreationOnRunnableThread();
 	void TestCrashDumpCreationOnMainThread();
 	void TeleportToShip();
@@ -121,9 +124,10 @@ public:
 	void TeleportAllCrewsToCrewSpawnLocations();
 	void TeleportActorToTrackedActorType(const struct FString& ActorIdString, int DestinationActorType);
 	void TeleportActorToTeleportLocationActor(const struct FString& ControllerActorIdString, const struct FString& TeleportLocationActorIdString);
+	void TeleportActorToPlayerBuriedDigSite(const struct FString& ActorIdString);
 	void TeleportActorToLocation(const struct FString& ActorIdString, float LocationX, float LocationY, float LocationZ, float Yaw);
 	void TeleportActorToIsland(const struct FString& ActorIdString, const struct FString& IslandName);
-	void TeleportActorToDigSite(const struct FString& ActorIdString);
+	void TeleportActorToDigSite(const struct FString& ActorIdString, bool WasBuriedByPlayer);
 	void TeleportActorToActorWithOffset(const struct FString& ActorIdString, const struct FString& DestinationActorIdString, float OffsetX, float OffsetY, float OffsetZ);
 	void SuperShovel();
 	void SuperSailor();
@@ -186,6 +190,7 @@ public:
 	void SpawnFishAtPlayerLocation(const struct FString& InBaitType);
 	void SpawnFirework(const struct FString& FireworkItemString);
 	void SpawnCursedCannonball(const struct FString& CannonballTypeString);
+	void SpawnContextualPrompt(const struct FString& PromptAccessKey);
 	void SpawnCollectorsChestOfType(struct FString* ChestTypeString);
 	void SpawnCargoRunCrate(const struct FString& SpawnCargoRunCrateString);
 	void SpawnCabinDoorInFrontOfPlayer(float Distance);
@@ -261,6 +266,7 @@ public:
 	void SetPreventLeakingOnAllShips();
 	void SetPreventLeakingOnAllDamageZones(bool PreventLeaking);
 	void SetPlayerVisibleToAI();
+	void SetPlayerMaxTicks(int InMaxTicksPerFrame);
 	void SetPlayerInvisibleToAI();
 	void SetPhotoMode(bool Enabled);
 	void SetPetMovementTimeWindow(float TimeWindow);
@@ -272,6 +278,8 @@ public:
 	void SetMastsFullyRepaired();
 	void SetMastsFullyDamaged();
 	void SetKnockbackDisabled(bool Disabled);
+	void SetIsTinSession(bool InIsCaptainedSession);
+	void SetIsTinOwner(bool InIsCaptain);
 	void SetIdleDisconnectEnabled(bool Enabled);
 	void SetHealthInfoReplicateOverride(bool bActive);
 	void SetGrogSecondary(bool InValue);
@@ -315,6 +323,7 @@ public:
 	void SchedulerInitAIShipAggro();
 	void SchedulerInitAggroGhostShip();
 	void SchedulerAdvance(float Time);
+	void SaveMyShip();
 	void SailShip();
 	void SailAllShips();
 	void RewindPhysicsSceneBy(float SecondsToRewindBy);
@@ -391,6 +400,7 @@ public:
 	void LockTradeRouteSelectionToSpecificRouteForCrew(const struct FGuid& CrewId, const struct FString& RouteReferencePath);
 	void LocallyUnBreakLeg();
 	void LocallyDisableTutorial();
+	void LoadMyShip();
 	void LightLocalBraziers();
 	void LightBraziersInRadius(float Radius);
 	void LeaveAlliance(const struct FString& CrewId);
@@ -435,6 +445,18 @@ public:
 	void IgniteLocalPlayer();
 	void IgniteClosestShip();
 	void IgniteAllShipFires();
+	void HitRegSnapshotsToggleOnScreenStatus();
+	void HitRegSnapshotsSetDisplaySnapshots(bool ShowSnapshots, bool AffectAllSnapshots, bool LocalClientOnly);
+	void HitRegSnapshotsSetDisplayServerData(bool ShowServerData, bool AffectAllSnapshots, bool LocalClientOnly);
+	void HitRegSnapshotsSetDisplayDetailedExplanations(bool ShowExplanations, bool AffectAllSnapshots, bool LocalClientOnly);
+	void HitRegSnapshotsSetDisplayAttackingClientData(bool ShowClientData, bool AffectAllSnapshots, bool LocalClientOnly);
+	void HitRegSnapshotsSetDisagreementModeToComponents();
+	void HitRegSnapshotsSetDisagreementModeToAllShots();
+	void HitRegSnapshotsSetDisagreementModeToActors();
+	void HitRegSnapshotsResetVisibilitySettingsToDefault(bool AffectAllSnapshots, bool LocalClientOnly);
+	void HitRegSnapshotsEnableSystem();
+	void HitRegSnapshotsDisableSystem();
+	void HitRegSnapshotsDestroyAll();
 	void HideTaleDebug();
 	void HideEmissaryVoteIndicators();
 	void HideAllRomeBeacons();

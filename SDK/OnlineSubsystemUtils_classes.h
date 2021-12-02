@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -48,7 +48,7 @@ class UInAppPurchaseCallbackProxy : public UObject
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_6L47[0x40];                                    // 0x0048(0x0040) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WKFQ[0x40];                                    // 0x0048(0x0040) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -72,7 +72,7 @@ class UInAppPurchaseQueryCallbackProxy : public UObject
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_FXVG[0x50];                                    // 0x0048(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FPEB[0x50];                                    // 0x0048(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -96,7 +96,7 @@ class UInAppPurchaseRestoreCallbackProxy : public UObject
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_UG0R[0x50];                                    // 0x0048(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_N1VF[0x50];                                    // 0x0048(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -118,7 +118,7 @@ public:
 class UIpConnection : public UNetConnection
 {
 public:
-	unsigned char                                      UnknownData_L7RG[0x50];                                    // 0x34588(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ACDS[0x50];                                    // 0x34588(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -141,9 +141,9 @@ class UIpNetDriver : public UNetDriver
 public:
 	unsigned char                                      LogPortUnreach : 1;                                        // 0x0478(0x0001) BIT_FIELD (Config, NoDestructor)
 	unsigned char                                      AllowPlayerPortUnreach : 1;                                // 0x0478(0x0001) BIT_FIELD (Config, NoDestructor)
-	unsigned char                                      UnknownData_NY8W[0x3];                                     // 0x0479(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_8X1V[0x3];                                     // 0x0479(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	uint32_t                                           MaxPortCountToTry;                                         // 0x047C(0x0004) (ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_7HQ3[0x48];                                    // 0x0480(0x0048) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_X6FA[0x48];                                    // 0x0480(0x0048) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -187,7 +187,7 @@ class ULeaderboardFlushCallbackProxy : public UObject
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_RFUT[0x18];                                    // 0x0048(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SHT5[0x18];                                    // 0x0048(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -211,7 +211,7 @@ class ULeaderboardQueryCallbackProxy : public UObject
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_ZGEP[0x48];                                    // 0x0048(0x0048) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6MAF[0x48];                                    // 0x0048(0x0048) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -235,7 +235,7 @@ class ULogoutCallbackProxy : public UBlueprintAsyncActionBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_CUNA[0x18];                                    // 0x0048(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FDWF[0x18];                                    // 0x0048(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -257,11 +257,11 @@ public:
 class AOnlineBeacon : public AActor
 {
 public:
-	unsigned char                                      UnknownData_ZM0P[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_TZTD[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              BeaconConnectionInitialTimeout;                            // 0x03D8(0x0004) (ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              BeaconConnectionTimeout;                                   // 0x03DC(0x0004) (ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UNetDriver*                                  NetDriver;                                                 // 0x03E0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_XIAO[0x10];                                    // 0x03E8(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LZMN[0x10];                                    // 0x03E8(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -285,7 +285,7 @@ public:
 	class AOnlineBeaconHostObject*                     BeaconOwner;                                               // 0x03F8(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UNetConnection*                              BeaconConnection;                                          // 0x0400(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	TEnumAsByte<OnlineSubsystemUtils_EBeaconConnectionState> ConnectionState;                                           // 0x0408(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_R2BU[0x17];                                    // 0x0409(0x0017) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7Y6B[0x17];                                    // 0x0409(0x0017) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -315,7 +315,7 @@ public:
 	int                                                ReservedHostTeamNum;                                       // 0x0040(0x0004) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	int                                                ForceTeamNum;                                              // 0x0044(0x0004) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	TArray<struct FPartyReservation>                   Reservations;                                              // 0x0048(0x0010) (ZeroConstructor, Transient, Protected)
-	unsigned char                                      UnknownData_EKZ9[0x10];                                    // 0x0058(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FY8I[0x10];                                    // 0x0058(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -336,13 +336,13 @@ public:
 class APartyBeaconClient : public AOnlineBeaconClient
 {
 public:
-	unsigned char                                      UnknownData_GWCQ[0x10];                                    // 0x0420(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_WM9P[0x10];                                    // 0x0420(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     DestSessionId;                                             // 0x0430(0x0010) (ZeroConstructor, Protected, HasGetValueTypeHash)
 	struct FPartyReservation                           PendingReservation;                                        // 0x0440(0x0030) (Protected)
 	TEnumAsByte<OnlineSubsystemUtils_EClientRequestType> RequestType;                                               // 0x0470(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	bool                                               bPendingReservationSent;                                   // 0x0471(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
 	bool                                               bCancelReservation;                                        // 0x0472(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
-	unsigned char                                      UnknownData_EHTV[0x5];                                     // 0x0473(0x0005) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_2XVD[0x5];                                     // 0x0473(0x0005) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -391,9 +391,9 @@ class AOnlineBeaconHost : public AOnlineBeacon
 {
 public:
 	int                                                ListenPort;                                                // 0x03F8(0x0004) (ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_3WMP[0x4];                                     // 0x03FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7OR8[0x4];                                     // 0x03FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class AOnlineBeaconClient*>                 ClientActors;                                              // 0x0400(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData_VI80[0xA0];                                    // 0x0410(0x00A0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PFLX[0xA0];                                    // 0x0410(0x00A0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -438,7 +438,7 @@ class APartyBeaconHost : public AOnlineBeaconHostObject
 {
 public:
 	class UPartyBeaconState*                           State;                                                     // 0x03F8(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_QEM7[0x28];                                    // 0x0400(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_34OA[0x28];                                    // 0x0400(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              SessionTimeoutSecs;                                        // 0x0428(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	float                                              TravelSessionTimeoutSecs;                                  // 0x042C(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 
@@ -504,7 +504,7 @@ class UAchievementQueryCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_U6HH[0x18];                                    // 0x0048(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_S3PP[0x18];                                    // 0x0048(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -529,7 +529,7 @@ class UAchievementWriteCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_SIYX[0x38];                                    // 0x0048(0x0038) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Z6UJ[0x38];                                    // 0x0048(0x0038) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -553,7 +553,7 @@ class UConnectionCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_7JG6[0x20];                                    // 0x0048(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_05KG[0x20];                                    // 0x0048(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -577,7 +577,7 @@ class UCreateSessionCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_DLSN[0x38];                                    // 0x0048(0x0038) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_P1QK[0x38];                                    // 0x0048(0x0038) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -601,7 +601,7 @@ class UDestroySessionCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_39C4[0x20];                                    // 0x0048(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_765P[0x20];                                    // 0x0048(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -625,7 +625,7 @@ class UEndMatchCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_VVD3[0x30];                                    // 0x0048(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4YUE[0x30];                                    // 0x0048(0x0030) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -649,7 +649,7 @@ class UEndTurnCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_A3WD[0x28];                                    // 0x0048(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3ECW[0x28];                                    // 0x0048(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -673,7 +673,7 @@ class UFindSessionsCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_7HBR[0x40];                                    // 0x0048(0x0040) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JADA[0x40];                                    // 0x0048(0x0040) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -701,7 +701,7 @@ class UFindTurnBasedMatchCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_LOD1[0x40];                                    // 0x0048(0x0040) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_G3HN[0x40];                                    // 0x0048(0x0040) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -725,7 +725,7 @@ class UJoinSessionCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_EQ8M[0x100];                                   // 0x0048(0x0100) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4MZW[0x100];                                   // 0x0048(0x0100) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -749,7 +749,7 @@ class UQuitMatchCallbackProxy : public UOnlineBlueprintCallProxyBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_5UVI[0x28];                                    // 0x0048(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZRLX[0x28];                                    // 0x0048(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -771,10 +771,10 @@ public:
 class UOnlineSessionClient : public UOnlineSession
 {
 public:
-	unsigned char                                      UnknownData_CMCW[0x138];                                   // 0x0028(0x0138) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ZWPJ[0x138];                                   // 0x0028(0x0138) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	bool                                               bIsFromInvite;                                             // 0x0160(0x0001) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected)
 	bool                                               bHandlingDisconnect;                                       // 0x0161(0x0001) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected)
-	unsigned char                                      UnknownData_MKUM[0x6];                                     // 0x0162(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B62T[0x6];                                     // 0x0162(0x0006) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -797,7 +797,7 @@ class UShowLoginUICallbackProxy : public UBlueprintAsyncActionBase
 public:
 	struct FScriptMulticastDelegate                    OnSuccess;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFailure;                                                 // 0x0038(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData_0A75[0x10];                                    // 0x0048(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_1OCV[0x10];                                    // 0x0048(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

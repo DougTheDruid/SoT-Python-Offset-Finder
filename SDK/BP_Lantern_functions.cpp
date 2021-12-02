@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.CreateLanternDynamicMaterial
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_Lantern_C::CreateLanternDynamicMaterial()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.CreateLanternDynamicMaterial");
 
-	ABP_Lantern_C_CreateLanternDynamicMaterial_Params params;
+	ABP_Lantern_C_CreateLanternDynamicMaterial_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,14 +38,14 @@ void ABP_Lantern_C::CreateLanternDynamicMaterial()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.OnAttachThirdPerson
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void ABP_Lantern_C::OnAttachThirdPerson()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.OnAttachThirdPerson");
 
-	ABP_Lantern_C_OnAttachThirdPerson_Params params;
+	ABP_Lantern_C_OnAttachThirdPerson_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -56,14 +56,14 @@ void ABP_Lantern_C::OnAttachThirdPerson()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.OnAttachFirstPerson
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void ABP_Lantern_C::OnAttachFirstPerson()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.OnAttachFirstPerson");
 
-	ABP_Lantern_C_OnAttachFirstPerson_Params params;
+	ABP_Lantern_C_OnAttachFirstPerson_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -74,14 +74,14 @@ void ABP_Lantern_C::OnAttachFirstPerson()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.TurnOff
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void ABP_Lantern_C::TurnOff()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.TurnOff");
 
-	ABP_Lantern_C_TurnOff_Params params;
+	ABP_Lantern_C_TurnOff_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -92,14 +92,14 @@ void ABP_Lantern_C::TurnOff()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.TurnOn
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void ABP_Lantern_C::TurnOn()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.TurnOn");
 
-	ABP_Lantern_C_TurnOn_Params params;
+	ABP_Lantern_C_TurnOn_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -110,14 +110,14 @@ void ABP_Lantern_C::TurnOn()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Lantern_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.UserConstructionScript");
 
-	ABP_Lantern_C_UserConstructionScript_Params params;
+	ABP_Lantern_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -128,14 +128,14 @@ void ABP_Lantern_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.ReceiveWieldFirstPerson
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Lantern_C::ReceiveWieldFirstPerson()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.ReceiveWieldFirstPerson");
 
-	ABP_Lantern_C_ReceiveWieldFirstPerson_Params params;
+	ABP_Lantern_C_ReceiveWieldFirstPerson_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -146,14 +146,14 @@ void ABP_Lantern_C::ReceiveWieldFirstPerson()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.ReceiveWieldThirdPerson
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Lantern_C::ReceiveWieldThirdPerson()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.ReceiveWieldThirdPerson");
 
-	ABP_Lantern_C_ReceiveWieldThirdPerson_Params params;
+	ABP_Lantern_C_ReceiveWieldThirdPerson_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -164,14 +164,14 @@ void ABP_Lantern_C::ReceiveWieldThirdPerson()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_Lantern_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.ReceiveBeginPlay");
 
-	ABP_Lantern_C_ReceiveBeginPlay_Params params;
+	ABP_Lantern_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -182,14 +182,14 @@ void ABP_Lantern_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.ReceiveLightChange
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Lantern_C::ReceiveLightChange()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.ReceiveLightChange");
 
-	ABP_Lantern_C_ReceiveLightChange_Params params;
+	ABP_Lantern_C_ReceiveLightChange_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -200,14 +200,14 @@ void ABP_Lantern_C::ReceiveLightChange()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.TriggerGlow
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Lantern_C::TriggerGlow()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.TriggerGlow");
 
-	ABP_Lantern_C_TriggerGlow_Params params;
+	ABP_Lantern_C_TriggerGlow_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -218,7 +218,7 @@ void ABP_Lantern_C::TriggerGlow()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.PostMeshChangedBPEvent
 //		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -227,7 +227,7 @@ void ABP_Lantern_C::PostMeshChangedBPEvent(bool SkipFlameColourTransition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.PostMeshChangedBPEvent");
 
-	ABP_Lantern_C_PostMeshChangedBPEvent_Params params;
+	ABP_Lantern_C_PostMeshChangedBPEvent_Params params {};
 	params.SkipFlameColourTransition = SkipFlameColourTransition;
 
 	auto flags = fn->FunctionFlags;
@@ -239,7 +239,7 @@ void ABP_Lantern_C::PostMeshChangedBPEvent(bool SkipFlameColourTransition)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.ReceiveFlameData
 //		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -248,7 +248,7 @@ void ABP_Lantern_C::ReceiveFlameData(bool WantChangeAnimation)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.ReceiveFlameData");
 
-	ABP_Lantern_C_ReceiveFlameData_Params params;
+	ABP_Lantern_C_ReceiveFlameData_Params params {};
 	params.WantChangeAnimation = WantChangeAnimation;
 
 	auto flags = fn->FunctionFlags;
@@ -260,7 +260,7 @@ void ABP_Lantern_C::ReceiveFlameData(bool WantChangeAnimation)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Lantern.BP_Lantern_C.ExecuteUbergraph_BP_Lantern
 //		Flags  -> ()
 // Parameters:
@@ -269,7 +269,7 @@ void ABP_Lantern_C::ExecuteUbergraph_BP_Lantern(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Lantern.BP_Lantern_C.ExecuteUbergraph_BP_Lantern");
 
-	ABP_Lantern_C_ExecuteUbergraph_BP_Lantern_Params params;
+	ABP_Lantern_C_ExecuteUbergraph_BP_Lantern_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

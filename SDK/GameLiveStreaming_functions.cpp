@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -27,14 +27,14 @@ void FBlueprintLiveStreamInfo::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0221E0F0
+//		Offset -> 0x02254DF0
 //		Name   -> Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StopBroadcastingGame
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 void UGameLiveStreamingFunctionLibrary::STATIC_StopBroadcastingGame()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StopBroadcastingGame");
 
-	UGameLiveStreamingFunctionLibrary_StopBroadcastingGame_Params params;
+	UGameLiveStreamingFunctionLibrary_StopBroadcastingGame_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -46,7 +46,7 @@ void UGameLiveStreamingFunctionLibrary::STATIC_StopBroadcastingGame()
 
 
 // Function:
-//		Offset -> 0x0221DE60
+//		Offset -> 0x02254B60
 //		Name   -> Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartBroadcastingGame
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -63,7 +63,7 @@ void UGameLiveStreamingFunctionLibrary::STATIC_StartBroadcastingGame(int FrameRa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartBroadcastingGame");
 
-	UGameLiveStreamingFunctionLibrary_StartBroadcastingGame_Params params;
+	UGameLiveStreamingFunctionLibrary_StartBroadcastingGame_Params params {};
 	params.FrameRate = FrameRate;
 	params.ScreenScaling = ScreenScaling;
 	params.bEnableWebCam = bEnableWebCam;
@@ -84,7 +84,7 @@ void UGameLiveStreamingFunctionLibrary::STATIC_StartBroadcastingGame(int FrameRa
 
 
 // Function:
-//		Offset -> 0x0221DD90
+//		Offset -> 0x02254A90
 //		Name   -> Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsBroadcastingGame
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -93,7 +93,7 @@ bool UGameLiveStreamingFunctionLibrary::STATIC_IsBroadcastingGame()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsBroadcastingGame");
 
-	UGameLiveStreamingFunctionLibrary_IsBroadcastingGame_Params params;
+	UGameLiveStreamingFunctionLibrary_IsBroadcastingGame_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -119,7 +119,7 @@ void UGameLiveStreamingFunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0221DDC0
+//		Offset -> 0x02254AC0
 //		Name   -> Function GameLiveStreaming.QueryLiveStreamsCallbackProxy.QueryLiveStreams
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -129,7 +129,7 @@ class UQueryLiveStreamsCallbackProxy* UQueryLiveStreamsCallbackProxy::STATIC_Que
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GameLiveStreaming.QueryLiveStreamsCallbackProxy.QueryLiveStreams");
 
-	UQueryLiveStreamsCallbackProxy_QueryLiveStreams_Params params;
+	UQueryLiveStreamsCallbackProxy_QueryLiveStreams_Params params {};
 	params.GameName = GameName;
 
 	auto flags = fn->FunctionFlags;

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_tls_hand_lantern_fod_02_a_Wieldable.BP_tls_hand_lantern_fod_02_a_Wieldable_C
-// 0x0000 (FullSize[0x09B8] - InheritedSize[0x09B8])
+// 0x0000 (FullSize[0x09D8] - InheritedSize[0x09D8])
 class ABP_tls_hand_lantern_fod_02_a_Wieldable_C : public ABP_Lantern_C
 {
 public:

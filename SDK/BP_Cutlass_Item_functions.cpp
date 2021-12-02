@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Cutlass_Item.BP_Cutlass_Item_C.DoBlockEffect
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_Cutlass_Item_C::DoBlockEffect()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Cutlass_Item.BP_Cutlass_Item_C.DoBlockEffect");
 
-	ABP_Cutlass_Item_C_DoBlockEffect_Params params;
+	ABP_Cutlass_Item_C_DoBlockEffect_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,14 +38,14 @@ void ABP_Cutlass_Item_C::DoBlockEffect()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Cutlass_Item.BP_Cutlass_Item_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Cutlass_Item_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Cutlass_Item.BP_Cutlass_Item_C.UserConstructionScript");
 
-	ABP_Cutlass_Item_C_UserConstructionScript_Params params;
+	ABP_Cutlass_Item_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -56,7 +56,7 @@ void ABP_Cutlass_Item_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Cutlass_Item.BP_Cutlass_Item_C.OnBlockedAttack
 //		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -65,7 +65,7 @@ void ABP_Cutlass_Item_C::OnBlockedAttack(const struct FEventBlocked& Event)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Cutlass_Item.BP_Cutlass_Item_C.OnBlockedAttack");
 
-	ABP_Cutlass_Item_C_OnBlockedAttack_Params params;
+	ABP_Cutlass_Item_C_OnBlockedAttack_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -77,7 +77,7 @@ void ABP_Cutlass_Item_C::OnBlockedAttack(const struct FEventBlocked& Event)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Cutlass_Item.BP_Cutlass_Item_C.ExecuteUbergraph_BP_Cutlass_Item
 //		Flags  -> ()
 // Parameters:
@@ -86,7 +86,7 @@ void ABP_Cutlass_Item_C::ExecuteUbergraph_BP_Cutlass_Item(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Cutlass_Item.BP_Cutlass_Item_C.ExecuteUbergraph_BP_Cutlass_Item");
 
-	ABP_Cutlass_Item_C_ExecuteUbergraph_BP_Cutlass_Item_Params params;
+	ABP_Cutlass_Item_C_ExecuteUbergraph_BP_Cutlass_Item_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

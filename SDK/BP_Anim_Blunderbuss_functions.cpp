@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.AnimNotify_ExitedFire
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Anim_Blunderbuss_C::AnimNotify_ExitedFire()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.AnimNotify_ExitedFire");
 
-	UBP_Anim_Blunderbuss_C_AnimNotify_ExitedFire_Params params;
+	UBP_Anim_Blunderbuss_C_AnimNotify_ExitedFire_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void UBP_Anim_Blunderbuss_C::AnimNotify_ExitedFire()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.OnOneShotUseTriggered
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -47,7 +47,7 @@ void UBP_Anim_Blunderbuss_C::OnOneShotUseTriggered(class UClass* InputID, const 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.OnOneShotUseTriggered");
 
-	UBP_Anim_Blunderbuss_C_OnOneShotUseTriggered_Params params;
+	UBP_Anim_Blunderbuss_C_OnOneShotUseTriggered_Params params {};
 	params.InputID = InputID;
 	params.ActionVisuals = ActionVisuals;
 
@@ -60,7 +60,7 @@ void UBP_Anim_Blunderbuss_C::OnOneShotUseTriggered(class UClass* InputID, const 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.OnUseStarted
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -70,7 +70,7 @@ void UBP_Anim_Blunderbuss_C::OnUseStarted(class UClass* InputID, const struct FW
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.OnUseStarted");
 
-	UBP_Anim_Blunderbuss_C_OnUseStarted_Params params;
+	UBP_Anim_Blunderbuss_C_OnUseStarted_Params params {};
 	params.InputID = InputID;
 	params.ActionVisuals = ActionVisuals;
 
@@ -83,14 +83,14 @@ void UBP_Anim_Blunderbuss_C::OnUseStarted(class UClass* InputID, const struct FW
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.BlueprintInitializeAnimation
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Anim_Blunderbuss_C::BlueprintInitializeAnimation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.BlueprintInitializeAnimation");
 
-	UBP_Anim_Blunderbuss_C_BlueprintInitializeAnimation_Params params;
+	UBP_Anim_Blunderbuss_C_BlueprintInitializeAnimation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -101,7 +101,7 @@ void UBP_Anim_Blunderbuss_C::BlueprintInitializeAnimation()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.ReloadEventDelegate
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -110,7 +110,7 @@ void UBP_Anim_Blunderbuss_C::ReloadEventDelegate(const struct FEventProjectileWe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.ReloadEventDelegate");
 
-	UBP_Anim_Blunderbuss_C_ReloadEventDelegate_Params params;
+	UBP_Anim_Blunderbuss_C_ReloadEventDelegate_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -122,14 +122,14 @@ void UBP_Anim_Blunderbuss_C::ReloadEventDelegate(const struct FEventProjectileWe
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.BlueprintUninitializeAnimation
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBP_Anim_Blunderbuss_C::BlueprintUninitializeAnimation()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.BlueprintUninitializeAnimation");
 
-	UBP_Anim_Blunderbuss_C_BlueprintUninitializeAnimation_Params params;
+	UBP_Anim_Blunderbuss_C_BlueprintUninitializeAnimation_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -140,14 +140,14 @@ void UBP_Anim_Blunderbuss_C::BlueprintUninitializeAnimation()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.AnimNotify_ResetReload
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_Anim_Blunderbuss_C::AnimNotify_ResetReload()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.AnimNotify_ResetReload");
 
-	UBP_Anim_Blunderbuss_C_AnimNotify_ResetReload_Params params;
+	UBP_Anim_Blunderbuss_C_AnimNotify_ResetReload_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -158,7 +158,7 @@ void UBP_Anim_Blunderbuss_C::AnimNotify_ResetReload()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.ExecuteUbergraph_BP_Anim_Blunderbuss
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -167,7 +167,7 @@ void UBP_Anim_Blunderbuss_C::ExecuteUbergraph_BP_Anim_Blunderbuss(int EntryPoint
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Anim_Blunderbuss.BP_Anim_Blunderbuss_C.ExecuteUbergraph_BP_Anim_Blunderbuss");
 
-	UBP_Anim_Blunderbuss_C_ExecuteUbergraph_BP_Anim_Blunderbuss_Params params;
+	UBP_Anim_Blunderbuss_C_ExecuteUbergraph_BP_Anim_Blunderbuss_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

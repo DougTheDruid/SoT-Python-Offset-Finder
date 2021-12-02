@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_gmp_telescope_wth_01_a_v01_Wieldable.BP_gmp_telescope_wth_01_a_v01_Wieldable_C
-// 0x0000 (FullSize[0x0870] - InheritedSize[0x0870])
+// 0x0000 (FullSize[0x0890] - InheritedSize[0x0890])
 class ABP_gmp_telescope_wth_01_a_v01_Wieldable_C : public ABP_Spyglass_C
 {
 public:

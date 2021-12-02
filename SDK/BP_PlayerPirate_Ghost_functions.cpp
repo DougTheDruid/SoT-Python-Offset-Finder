@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.GetPxActorCapacityForPhysXAggregate
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -28,7 +28,7 @@ unsigned char ABP_PlayerPirate_Ghost_C::GetPxActorCapacityForPhysXAggregate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.GetPxActorCapacityForPhysXAggregate");
 
-	ABP_PlayerPirate_Ghost_C_GetPxActorCapacityForPhysXAggregate_Params params;
+	ABP_PlayerPirate_Ghost_C_GetPxActorCapacityForPhysXAggregate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,7 +41,7 @@ unsigned char ABP_PlayerPirate_Ghost_C::GetPxActorCapacityForPhysXAggregate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.GetAllMaterialParents
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -51,7 +51,7 @@ void ABP_PlayerPirate_Ghost_C::GetAllMaterialParents(class UMaterialInstance* Ma
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.GetAllMaterialParents");
 
-	ABP_PlayerPirate_Ghost_C_GetAllMaterialParents_Params params;
+	ABP_PlayerPirate_Ghost_C_GetAllMaterialParents_Params params {};
 	params.MaterialInstance = MaterialInstance;
 
 	auto flags = fn->FunctionFlags;
@@ -66,7 +66,7 @@ void ABP_PlayerPirate_Ghost_C::GetAllMaterialParents(class UMaterialInstance* Ma
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.CheckBaseMaterial
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -77,7 +77,7 @@ void ABP_PlayerPirate_Ghost_C::CheckBaseMaterial(class UMaterialInstance* Materi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.CheckBaseMaterial");
 
-	ABP_PlayerPirate_Ghost_C_CheckBaseMaterial_Params params;
+	ABP_PlayerPirate_Ghost_C_CheckBaseMaterial_Params params {};
 	params.MaterialInstance = MaterialInstance;
 	params.MaterialToCheck = MaterialToCheck;
 
@@ -93,7 +93,7 @@ void ABP_PlayerPirate_Ghost_C::CheckBaseMaterial(class UMaterialInstance* Materi
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.Set Up Ghost Materials
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -102,7 +102,7 @@ void ABP_PlayerPirate_Ghost_C::Set_Up_Ghost_Materials(class USkeletalMeshCompone
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.Set Up Ghost Materials");
 
-	ABP_PlayerPirate_Ghost_C_Set_Up_Ghost_Materials_Params params;
+	ABP_PlayerPirate_Ghost_C_Set_Up_Ghost_Materials_Params params {};
 	params.Input_Mesh = Input_Mesh;
 
 	auto flags = fn->FunctionFlags;
@@ -114,7 +114,7 @@ void ABP_PlayerPirate_Ghost_C::Set_Up_Ghost_Materials(class USkeletalMeshCompone
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.GetMouthPosition
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -123,7 +123,7 @@ struct FVector ABP_PlayerPirate_Ghost_C::GetMouthPosition()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.GetMouthPosition");
 
-	ABP_PlayerPirate_Ghost_C_GetMouthPosition_Params params;
+	ABP_PlayerPirate_Ghost_C_GetMouthPosition_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -136,14 +136,14 @@ struct FVector ABP_PlayerPirate_Ghost_C::GetMouthPosition()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_PlayerPirate_Ghost_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.UserConstructionScript");
 
-	ABP_PlayerPirate_Ghost_C_UserConstructionScript_Params params;
+	ABP_PlayerPirate_Ghost_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -154,7 +154,7 @@ void ABP_PlayerPirate_Ghost_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.Update Athena Character
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -163,7 +163,7 @@ void ABP_PlayerPirate_Ghost_C::Update_Athena_Character(class AAthenaCharacter* A
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.Update Athena Character");
 
-	ABP_PlayerPirate_Ghost_C_Update_Athena_Character_Params params;
+	ABP_PlayerPirate_Ghost_C_Update_Athena_Character_Params params {};
 	params.AthenaCharacter = AthenaCharacter;
 
 	auto flags = fn->FunctionFlags;
@@ -175,7 +175,7 @@ void ABP_PlayerPirate_Ghost_C::Update_Athena_Character(class AAthenaCharacter* A
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.CapstanRotationSpeed
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -184,7 +184,7 @@ void ABP_PlayerPirate_Ghost_C::CapstanRotationSpeed(float RotationSpeed)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.CapstanRotationSpeed");
 
-	ABP_PlayerPirate_Ghost_C_CapstanRotationSpeed_Params params;
+	ABP_PlayerPirate_Ghost_C_CapstanRotationSpeed_Params params {};
 	params.RotationSpeed = RotationSpeed;
 
 	auto flags = fn->FunctionFlags;
@@ -196,7 +196,7 @@ void ABP_PlayerPirate_Ghost_C::CapstanRotationSpeed(float RotationSpeed)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.DockingInterface
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -205,7 +205,7 @@ void ABP_PlayerPirate_Ghost_C::DockingInterface(const struct FBP_Docking& Dockin
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.DockingInterface");
 
-	ABP_PlayerPirate_Ghost_C_DockingInterface_Params params;
+	ABP_PlayerPirate_Ghost_C_DockingInterface_Params params {};
 	params.Docking = Docking;
 
 	auto flags = fn->FunctionFlags;
@@ -217,7 +217,7 @@ void ABP_PlayerPirate_Ghost_C::DockingInterface(const struct FBP_Docking& Dockin
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.CapstanForce
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -229,7 +229,7 @@ void ABP_PlayerPirate_Ghost_C::CapstanForce(float IndividualForce, const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.CapstanForce");
 
-	ABP_PlayerPirate_Ghost_C_CapstanForce_Params params;
+	ABP_PlayerPirate_Ghost_C_CapstanForce_Params params {};
 	params.IndividualForce = IndividualForce;
 	params.LH_IK = LH_IK;
 	params.RH_IK = RH_IK;
@@ -244,7 +244,7 @@ void ABP_PlayerPirate_Ghost_C::CapstanForce(float IndividualForce, const struct 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Update Transform
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -254,7 +254,7 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Update_Transform(TEnumAsByte<EIKLimbName_
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Update Transform");
 
-	ABP_PlayerPirate_Ghost_C_IK_Limb_Update_Transform_Params params;
+	ABP_PlayerPirate_Ghost_C_IK_Limb_Update_Transform_Params params {};
 	params.LimbId = LimbId;
 	params.TransformUpdate = TransformUpdate;
 
@@ -267,7 +267,7 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Update_Transform(TEnumAsByte<EIKLimbName_
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Blend Timing
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -278,7 +278,7 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Blend_Timing(TEnumAsByte<EIKLimbName_EIKL
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Blend Timing");
 
-	ABP_PlayerPirate_Ghost_C_IK_Limb_Blend_Timing_Params params;
+	ABP_PlayerPirate_Ghost_C_IK_Limb_Blend_Timing_Params params {};
 	params.LimbId = LimbId;
 	params.BlendIn = BlendIn;
 	params.BlendOut = BlendOut;
@@ -292,7 +292,7 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Blend_Timing(TEnumAsByte<EIKLimbName_EIKL
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Update Strength
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -303,7 +303,7 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Update_Strength(TEnumAsByte<EIKLimbName_E
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Update Strength");
 
-	ABP_PlayerPirate_Ghost_C_IK_Limb_Update_Strength_Params params;
+	ABP_PlayerPirate_Ghost_C_IK_Limb_Update_Strength_Params params {};
 	params.LimbId = LimbId;
 	params.LocationStrength = LocationStrength;
 	params.RotationStrength = RotationStrength;
@@ -317,7 +317,7 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Update_Strength(TEnumAsByte<EIKLimbName_E
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Active
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -328,7 +328,7 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Active(TEnumAsByte<EIKLimbName_EIKLimbNam
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Active");
 
-	ABP_PlayerPirate_Ghost_C_IK_Limb_Active_Params params;
+	ABP_PlayerPirate_Ghost_C_IK_Limb_Active_Params params {};
 	params.LimbId = LimbId;
 	params.Active = Active;
 	params.CoordinateSpace = CoordinateSpace;
@@ -342,7 +342,7 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Active(TEnumAsByte<EIKLimbName_EIKLimbNam
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Stretch
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -353,7 +353,7 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Stretch(float ArmStretch, float SpineStre
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.IK Limb Stretch");
 
-	ABP_PlayerPirate_Ghost_C_IK_Limb_Stretch_Params params;
+	ABP_PlayerPirate_Ghost_C_IK_Limb_Stretch_Params params {};
 	params.ArmStretch = ArmStretch;
 	params.SpineStretch = SpineStretch;
 	params.LegStretch = LegStretch;
@@ -367,14 +367,14 @@ void ABP_PlayerPirate_Ghost_C::IK_Limb_Stretch(float ArmStretch, float SpineStre
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_PlayerPirate_Ghost_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.ReceiveBeginPlay");
 
-	ABP_PlayerPirate_Ghost_C_ReceiveBeginPlay_Params params;
+	ABP_PlayerPirate_Ghost_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -385,14 +385,14 @@ void ABP_PlayerPirate_Ghost_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.OnMeshSet
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_PlayerPirate_Ghost_C::OnMeshSet()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.OnMeshSet");
 
-	ABP_PlayerPirate_Ghost_C_OnMeshSet_Params params;
+	ABP_PlayerPirate_Ghost_C_OnMeshSet_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -403,7 +403,7 @@ void ABP_PlayerPirate_Ghost_C::OnMeshSet()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.ExecuteUbergraph_BP_PlayerPirate_Ghost
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -412,7 +412,7 @@ void ABP_PlayerPirate_Ghost_C::ExecuteUbergraph_BP_PlayerPirate_Ghost(int EntryP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PlayerPirate_Ghost.BP_PlayerPirate_Ghost_C.ExecuteUbergraph_BP_PlayerPirate_Ghost");
 
-	ABP_PlayerPirate_Ghost_C_ExecuteUbergraph_BP_PlayerPirate_Ghost_Params params;
+	ABP_PlayerPirate_Ghost_C_ExecuteUbergraph_BP_PlayerPirate_Ghost_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

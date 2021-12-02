@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0.Brig
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function bsp_torch_a.bsp_torch_a_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void Absp_torch_a_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function bsp_torch_a.bsp_torch_a_C.UserConstructionScript");
 
-	Absp_torch_a_C_UserConstructionScript_Params params;
+	Absp_torch_a_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void Absp_torch_a_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function bsp_torch_a.bsp_torch_a_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void Absp_torch_a_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function bsp_torch_a.bsp_torch_a_C.ReceiveBeginPlay");
 
-	Absp_torch_a_C_ReceiveBeginPlay_Params params;
+	Absp_torch_a_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void Absp_torch_a_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function bsp_torch_a.bsp_torch_a_C.ExecuteUbergraph_bsp_torch_a
 //		Flags  -> ()
 // Parameters:
@@ -64,7 +64,7 @@ void Absp_torch_a_C::ExecuteUbergraph_bsp_torch_a(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function bsp_torch_a.bsp_torch_a_C.ExecuteUbergraph_bsp_torch_a");
 
-	Absp_torch_a_C_ExecuteUbergraph_bsp_torch_a_Params params;
+	Absp_torch_a_C_ExecuteUbergraph_bsp_torch_a_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

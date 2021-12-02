@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,22 +20,22 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DamageZone.BP_DamageZone_C
-// 0x0058 (FullSize[0x0798] - InheritedSize[0x0740])
+// 0x0058 (FullSize[0x0820] - InheritedSize[0x07C8])
 class ABP_DamageZone_C : public ADamageZone
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0740(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-	struct FName                                       Repair_Tag;                                                // 0x0748(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FBP_InternalDamageGroup                     RepairGroup;                                               // 0x0750(0x0010) (Edit, BlueprintVisible, DisableEditOnInstance)
-	int                                                ExternalHitBufferIndex;                                    // 0x0760(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	int                                                MaxStoredHits;                                             // 0x0764(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	TArray<class UDecalComponent*>                     Deferred_Decals;                                           // 0x0768(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	int                                                Rep_ServerUpdateEventCount;                                // 0x0778(0x0004) (Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	int                                                ClientUpdateEventCount;                                    // 0x077C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	int                                                ExternalDecalBufferIndex;                                  // 0x0780(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                               HasBeenInitialized;                                        // 0x0784(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_1JLI[0x3];                                     // 0x0785(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	TArray<struct FHullDamageHit>                      Rep_ExternalHitList;                                       // 0x0788(0x0010) (Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, RepNotify)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x07C8(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
+	struct FName                                       Repair_Tag;                                                // 0x07D0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FBP_InternalDamageGroup                     RepairGroup;                                               // 0x07D8(0x0010) (Edit, BlueprintVisible, DisableEditOnInstance)
+	int                                                ExternalHitBufferIndex;                                    // 0x07E8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	int                                                MaxStoredHits;                                             // 0x07EC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	TArray<class UDecalComponent*>                     Deferred_Decals;                                           // 0x07F0(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	int                                                Rep_ServerUpdateEventCount;                                // 0x0800(0x0004) (Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	int                                                ClientUpdateEventCount;                                    // 0x0804(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	int                                                ExternalDecalBufferIndex;                                  // 0x0808(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                               HasBeenInitialized;                                        // 0x080C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	unsigned char                                      UnknownData_Z0SC[0x3];                                     // 0x080D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	TArray<struct FHullDamageHit>                      Rep_ExternalHitList;                                       // 0x0810(0x0010) (Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, RepNotify)
 
 
 	static UClass* StaticClass()

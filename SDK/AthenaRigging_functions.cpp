@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -155,7 +155,7 @@ void FRopeCatenaryLengthPair::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x038260E0
+//		Offset -> 0x038250D0
 //		Name   -> Function AthenaRigging.InstancedRopeComponent.SetUnderwater
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -164,7 +164,7 @@ void UInstancedRopeComponent::SetUnderwater(bool Underwater)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.InstancedRopeComponent.SetUnderwater");
 
-	UInstancedRopeComponent_SetUnderwater_Params params;
+	UInstancedRopeComponent_SetUnderwater_Params params {};
 	params.Underwater = Underwater;
 
 	auto flags = fn->FunctionFlags;
@@ -177,7 +177,7 @@ void UInstancedRopeComponent::SetUnderwater(bool Underwater)
 
 
 // Function:
-//		Offset -> 0x03825FB0
+//		Offset -> 0x03824FA0
 //		Name   -> Function AthenaRigging.InstancedRopeComponent.SetRopes
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -186,7 +186,7 @@ void UInstancedRopeComponent::SetRopes(TArray<struct FInstancedRopeParams> InRop
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.InstancedRopeComponent.SetRopes");
 
-	UInstancedRopeComponent_SetRopes_Params params;
+	UInstancedRopeComponent_SetRopes_Params params {};
 	params.InRopes = InRopes;
 
 	auto flags = fn->FunctionFlags;
@@ -241,7 +241,7 @@ void ARiggingSystem::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03826060
+//		Offset -> 0x03825050
 //		Name   -> Function AthenaRigging.RiggingSystemComponent.SetSocketLookupSource
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -250,7 +250,7 @@ void URiggingSystemComponent::SetSocketLookupSource(class AActor* InSocketSource
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.RiggingSystemComponent.SetSocketLookupSource");
 
-	URiggingSystemComponent_SetSocketLookupSource_Params params;
+	URiggingSystemComponent_SetSocketLookupSource_Params params {};
 	params.InSocketSource = InSocketSource;
 
 	auto flags = fn->FunctionFlags;
@@ -263,7 +263,7 @@ void URiggingSystemComponent::SetSocketLookupSource(class AActor* InSocketSource
 
 
 // Function:
-//		Offset -> 0x03825D90
+//		Offset -> 0x03824D80
 //		Name   -> Function AthenaRigging.RiggingSystemComponent.ConvertLineToRopeIndex
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -274,7 +274,7 @@ int URiggingSystemComponent::ConvertLineToRopeIndex(const struct FName& InLineGr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.RiggingSystemComponent.ConvertLineToRopeIndex");
 
-	URiggingSystemComponent_ConvertLineToRopeIndex_Params params;
+	URiggingSystemComponent_ConvertLineToRopeIndex_Params params {};
 	params.InLineGroupName = InLineGroupName;
 	params.InLineOffset = InLineOffset;
 
@@ -316,7 +316,7 @@ void URopeCatenaryRenderComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03825F30
+//		Offset -> 0x03824F20
 //		Name   -> Function AthenaRigging.RopeInterface.SetRopeUVOffset
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -325,7 +325,7 @@ void URopeInterface::SetRopeUVOffset(float InUVOffset)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.RopeInterface.SetRopeUVOffset");
 
-	URopeInterface_SetRopeUVOffset_Params params;
+	URopeInterface_SetRopeUVOffset_Params params {};
 	params.InUVOffset = InUVOffset;
 
 	auto flags = fn->FunctionFlags;
@@ -338,7 +338,7 @@ void URopeInterface::SetRopeUVOffset(float InUVOffset)
 
 
 // Function:
-//		Offset -> 0x03825E50
+//		Offset -> 0x03824E40
 //		Name   -> Function AthenaRigging.RopeInterface.SetRopeEndpoints
 //		Flags  -> (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -348,7 +348,7 @@ void URopeInterface::SetRopeEndpoints(const struct FVector& InWorldSpaceStart, c
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaRigging.RopeInterface.SetRopeEndpoints");
 
-	URopeInterface_SetRopeEndpoints_Params params;
+	URopeInterface_SetRopeEndpoints_Params params {};
 	params.InWorldSpaceStart = InWorldSpaceStart;
 	params.InWorldSpaceEnd = InWorldSpaceEnd;
 

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -55,19 +55,19 @@ struct UBP_PromptCoordinator_BootyStorage_C_Reset_Params
 // Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageUpdateFunc
 struct UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageUpdateFunc_Params
 {
-	struct FEventOnCrewStorageUpdate                   Event;                                                     // 0x0000(0x0010)  (Parm)
+	struct FEventOnCrewStorageUpdate                   Event;                                                     // 0x0000(0x0014)  (Parm)
 };
 
 // Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageFullFunc
 struct UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageFullFunc_Params
 {
-	struct FEventOnCrewStorageFull                     Event;                                                     // 0x0000(0x0010)  (Parm)
+	struct FEventOnCrewStorageFull                     Event;                                                     // 0x0000(0x0014)  (Parm)
 };
 
 // Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnWieldedFunc
 struct UBP_PromptCoordinator_BootyStorage_C_OnWieldedFunc_Params
 {
-	struct FEventObjectWielded                         Object;                                                    // 0x0000(0x0010)  (Parm)
+	struct FAthena_FEventObjectWielded                 Object;                                                    // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.PostInitialize
@@ -121,25 +121,25 @@ struct UBP_PromptCoordinator_BootyStorage_C_OnStowed_Params
 // Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnWielded
 struct UBP_PromptCoordinator_BootyStorage_C_OnWielded_Params
 {
-	struct FEventObjectWielded                         Object;                                                    // 0x0000(0x0010)  (Parm)
+	struct FAthena_FEventObjectWielded                 Object;                                                    // 0x0000(0x0010)  (Parm)
 };
 
 // Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageChange_Event
 struct UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageChange_Event_Params
 {
-	struct FEventOnCrewStorageFull                     Event;                                                     // 0x0000(0x0010)  (Parm)
+	struct FEventOnCrewStorageFull                     Event;                                                     // 0x0000(0x0014)  (Parm)
 };
 
 // Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnCrewStorageFull_Event
 struct UBP_PromptCoordinator_BootyStorage_C_OnCrewStorageFull_Event_Params
 {
-	struct FEventOnCrewStorageUpdate                   Event;                                                     // 0x0000(0x0010)  (Parm)
+	struct FEventOnCrewStorageUpdate                   Event;                                                     // 0x0000(0x0014)  (Parm)
 };
 
 // Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnItemsRetrieved_Event
 struct UBP_PromptCoordinator_BootyStorage_C_OnItemsRetrieved_Event_Params
 {
-	struct FEventItemsRetrieved                        Event;                                                     // 0x0000(0x0010)  (Parm)
+	struct FEventItemsRetrieved                        Event;                                                     // 0x0000(0x0014)  (Parm)
 };
 
 // Function BP_PromptCoordinator_BootyStorage.BP_PromptCoordinator_BootyStorage_C.OnBootyActorDespawned_Event

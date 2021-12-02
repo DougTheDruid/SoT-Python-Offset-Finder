@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,13 +20,13 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Base_Capstan.BP_Base_Capstan_C
-// 0x0018 (FullSize[0x07D0] - InheritedSize[0x07B8])
+// 0x0018 (FullSize[0x07D8] - InheritedSize[0x07C0])
 class ABP_Base_Capstan_C : public ACapstan
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x07B8(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-	class USphereComponent*                            ProjectileCollision;                                       // 0x07C0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
-	class UWwiseEmitterComponent*                      NewVar_1;                                                  // 0x07C8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x07C0(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
+	class USphereComponent*                            ProjectileCollision;                                       // 0x07C8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor)
+	class UWwiseEmitterComponent*                      NewVar_1;                                                  // 0x07D0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 
 	static UClass* StaticClass()

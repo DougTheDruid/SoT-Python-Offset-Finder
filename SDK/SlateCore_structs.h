@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -18,6 +18,29 @@ namespace CG
 //---------------------------------------------------------------------------
 // Enums
 //---------------------------------------------------------------------------
+
+// Enum SlateCore.EFontLanguage
+enum class SlateCore_EFontLanguage : uint8_t
+{
+	EFontLanguage__German          = 0,
+	EFontLanguage__English         = 1,
+	EFontLanguage__Spanish         = 2,
+	EFontLanguage__Mexican         = 3,
+	EFontLanguage__French          = 4,
+	EFontLanguage__Italian         = 5,
+	EFontLanguage__Korean          = 6,
+	EFontLanguage__Polish          = 7,
+	EFontLanguage__Portugese       = 8,
+	EFontLanguage__Russian         = 9,
+	EFontLanguage__SimplifiedChinese = 10,
+	EFontLanguage__TraditionalChinese = 11,
+	EFontLanguage__Japanese        = 12,
+	EFontLanguage__Thai            = 13,
+	EFontLanguage__Turkish         = 14,
+	EFontLanguage__COUNT           = 15,
+	EFontLanguage__EFontLanguage_MAX = 16,
+
+};
 
 // Enum SlateCore.EFontHinting
 enum class SlateCore_EFontHinting : uint8_t
@@ -285,7 +308,7 @@ struct FSlateColor
 {
 	struct FLinearColor                                SpecifiedColor;                                            // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
 	TEnumAsByte<SlateCore_ESlateColorStylingMode>      ColorUseRule;                                              // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_ROCA[0x1F];                                    // 0x0011(0x001F) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_21IV[0x1F];                                    // 0x0011(0x001F) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -298,20 +321,20 @@ struct FSlateBrush
 {
 	struct FVector2D                                   ImageSize;                                                 // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	TEnumAsByte<SlateCore_ESlateBrushDrawType>         DrawAs;                                                    // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_RWLA[0x3];                                     // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_B1LL[0x3];                                     // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FMargin                                     Margin;                                                    // 0x000C(0x0010) (Edit, BlueprintVisible)
 	struct FLinearColor                                Tint;                                                      // 0x001C(0x0010) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_M3U1[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_IUNS[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FSlateColor                                 TintColor;                                                 // 0x0030(0x0030) (Edit, BlueprintVisible)
 	TEnumAsByte<SlateCore_ESlateBrushTileType>         Tiling;                                                    // 0x0060(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<SlateCore_ESlateBrushMirrorType>       Mirroring;                                                 // 0x0061(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<SlateCore_ESlateBrushImageType>        ImageType;                                                 // 0x0062(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_55UV[0x5];                                     // 0x0063(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_WMS3[0x5];                                     // 0x0063(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UObject*                                     ResourceObject;                                            // 0x0068(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	struct FName                                       ResourceName;                                              // 0x0070(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	bool                                               bIsDynamicallyLoaded;                                      // 0x0078(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
 	bool                                               bHasUObject;                                               // 0x0079(0x0001) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, Protected)
-	unsigned char                                      UnknownData_GDMW[0x2];                                     // 0x007A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_89MQ[0x2];                                     // 0x007A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FBox2D                                      UVRegion;                                                  // 0x007C(0x0014) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected)
 
 	void AfterRead();
@@ -323,7 +346,7 @@ struct FSlateBrush
 // 0x0028
 struct FInputEvent
 {
-	unsigned char                                      UnknownData_7NHG[0x28];                                    // 0x0000(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SL62[0x28];                                    // 0x0000(0x0028) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -334,7 +357,7 @@ struct FInputEvent
 // 0x0060 (0x0088 - 0x0028)
 struct FPointerEvent : public FInputEvent
 {
-	unsigned char                                      UnknownData_SKX9[0x60];                                    // 0x0028(0x0060) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_GU4B[0x60];                                    // 0x0028(0x0060) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -345,7 +368,7 @@ struct FPointerEvent : public FInputEvent
 // 0x0034
 struct FGeometry
 {
-	unsigned char                                      UnknownData_P9DK[0x34];                                    // 0x0000(0x0034) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Q2HH[0x34];                                    // 0x0000(0x0034) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -356,7 +379,7 @@ struct FGeometry
 // 0x0008
 struct FSlateWidgetStyle
 {
-	unsigned char                                      UnknownData_YN2X[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_1MGK[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -368,7 +391,7 @@ struct FSlateWidgetStyle
 struct FSlateSound
 {
 	class UObject*                                     ResourceObject;                                            // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_QNZZ[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_COGQ[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -430,12 +453,12 @@ struct FSlateFontInfo
 {
 	class UObject*                                     FontObject;                                                // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                     FontMaterial;                                              // 0x0008(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_LWFE[0x18];                                    // 0x0010(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MI76[0x18];                                    // 0x0010(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FName                                       TypefaceFontName;                                          // 0x0028(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int                                                Size;                                                      // 0x0030(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FName                                       FontName;                                                  // 0x0034(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<SlateCore_EFontHinting>                Hinting;                                                   // 0x003C(0x0001) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_75IA[0x3];                                     // 0x003D(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_X0WB[0x3];                                     // 0x003D(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -539,7 +562,7 @@ struct FFontData
 	struct FString                                     FontFilename;                                              // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class UFontBulkData*                               BulkDataPtr;                                               // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<SlateCore_EFontHinting>                Hinting;                                                   // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_FFFY[0x7];                                     // 0x0019(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_91BX[0x7];                                     // 0x0019(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<unsigned char>                              FontData;                                                  // 0x0020(0x0010) (ZeroConstructor, Deprecated)
 
 	void AfterRead();
@@ -571,13 +594,14 @@ struct FTypeface
 };
 
 // ScriptStruct SlateCore.CompositeSubFont
-// 0x0028
+// 0x0038
 struct FCompositeSubFont
 {
 	struct FTypeface                                   Typeface;                                                  // 0x0000(0x0010) (Edit, BlueprintVisible)
 	TArray<struct FInt32Range>                         CharacterRanges;                                           // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	float                                              ScalingFactor;                                             // 0x0020(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GSD5[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
+	TArray<TEnumAsByte<SlateCore_EFontLanguage>>       Languages;                                                 // 0x0020(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	float                                              ScalingFactor;                                             // 0x0030(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_A87K[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -590,7 +614,7 @@ struct FCompositeFont
 {
 	struct FTypeface                                   DefaultTypeface;                                           // 0x0000(0x0010) (Edit, BlueprintVisible)
 	TArray<struct FCompositeSubFont>                   SubTypefaces;                                              // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	unsigned char                                      UnknownData_KZB3[0x8];                                     // 0x0020(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8I7E[0x8];                                     // 0x0020(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -660,7 +684,7 @@ struct FDockTabStyle : public FSlateWidgetStyle
 	struct FSlateBrush                                 TabWellBrush;                                              // 0x0610(0x0090) (Edit)
 	struct FMargin                                     TabPadding;                                                // 0x06A0(0x0010) (Edit)
 	float                                              OverlapWidth;                                              // 0x06B0(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_K0JO[0x4];                                     // 0x06B4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_LARY[0x4];                                     // 0x06B4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FSlateColor                                 FlashColor;                                                // 0x06B8(0x0030) (Edit)
 
 	void AfterRead();
@@ -744,7 +768,7 @@ struct FInlineTextImageStyle : public FSlateWidgetStyle
 {
 	struct FSlateBrush                                 Image;                                                     // 0x0008(0x0090) (Edit)
 	int16_t                                            Baseline;                                                  // 0x0098(0x0002) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_H9O9[0x6];                                     // 0x009A(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_1C01[0x6];                                     // 0x009A(0x0006) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -793,7 +817,7 @@ struct FSearchBoxStyle : public FSlateWidgetStyle
 	struct FSlateBrush                                 ClearImage;                                                // 0x0A58(0x0090) (Edit)
 	struct FMargin                                     ImagePadding;                                              // 0x0AE8(0x0010) (Edit)
 	bool                                               bLeftAlignButtons;                                         // 0x0AF8(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_0TQR[0x7];                                     // 0x0AF9(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7B1A[0x7];                                     // 0x0AF9(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -855,7 +879,7 @@ struct FHyperlinkStyle : public FSlateWidgetStyle
 struct FCheckBoxStyle : public FSlateWidgetStyle
 {
 	TEnumAsByte<SlateCore_ESlateCheckBoxType>          CheckBoxType;                                              // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_TFXQ[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_GLF9[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FSlateBrush                                 UncheckedImage;                                            // 0x0010(0x0090) (Edit, BlueprintVisible)
 	struct FSlateBrush                                 UncheckedHoveredImage;                                     // 0x00A0(0x0090) (Edit, BlueprintVisible)
 	struct FSlateBrush                                 UncheckedPressedImage;                                     // 0x0130(0x0090) (Edit, BlueprintVisible)
@@ -884,7 +908,7 @@ struct FCheckBoxStyle : public FSlateWidgetStyle
 // 0x0008 (0x0030 - 0x0028)
 struct FNavigationEvent : public FInputEvent
 {
-	unsigned char                                      UnknownData_SW9M[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_2YQ4[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -895,7 +919,7 @@ struct FNavigationEvent : public FInputEvent
 // 0x0030 (0x0058 - 0x0028)
 struct FMotionEvent : public FInputEvent
 {
-	unsigned char                                      UnknownData_ZHAL[0x30];                                    // 0x0028(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Z650[0x30];                                    // 0x0028(0x0030) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -906,7 +930,7 @@ struct FMotionEvent : public FInputEvent
 // 0x0028 (0x0050 - 0x0028)
 struct FControllerEvent : public FInputEvent
 {
-	unsigned char                                      UnknownData_GK2T[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B9VR[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -917,7 +941,7 @@ struct FControllerEvent : public FInputEvent
 // 0x0008 (0x0030 - 0x0028)
 struct FCharacterEvent : public FInputEvent
 {
-	unsigned char                                      UnknownData_DTEH[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_CVPV[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -928,7 +952,7 @@ struct FCharacterEvent : public FInputEvent
 // 0x0028 (0x0050 - 0x0028)
 struct FKeyEvent : public FInputEvent
 {
-	unsigned char                                      UnknownData_I1QU[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KNBH[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -939,7 +963,7 @@ struct FKeyEvent : public FInputEvent
 // 0x0008 (0x0058 - 0x0050)
 struct FAnalogInputEvent : public FKeyEvent
 {
-	unsigned char                                      UnknownData_RGZQ[0x8];                                     // 0x0050(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9IXG[0x8];                                     // 0x0050(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -950,7 +974,7 @@ struct FAnalogInputEvent : public FKeyEvent
 // 0x0008
 struct FFocusEvent
 {
-	unsigned char                                      UnknownData_B26D[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IS63[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

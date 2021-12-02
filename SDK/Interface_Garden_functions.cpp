@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function Interface_Garden.Interface_Garden_C.Set Garden Parameters
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -30,7 +30,7 @@ void UInterface_Garden_C::Set_Garden_Parameters(float Radius, int Int, bool* Ins
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interface_Garden.Interface_Garden_C.Set Garden Parameters");
 
-	UInterface_Garden_C_Set_Garden_Parameters_Params params;
+	UInterface_Garden_C_Set_Garden_Parameters_Params params {};
 	params.Radius = Radius;
 	params.Int = Int;
 

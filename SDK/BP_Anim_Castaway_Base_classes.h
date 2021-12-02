@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -87,16 +87,16 @@ public:
 	struct FAnimNode_Slot                              AnimGraphNode_Slot_0F5460ED406658E5F6DC8EB9B38FA9B5;       // 0x1B78(0x0060)
 	struct FAnimNode_ApplyAdditive                     AnimGraphNode_ApplyAdditive_B53112D04F420ED411D2D4834653EB93; // 0x1BD8(0x0070)
 	struct FAnimNode_RefPose                           AnimGraphNode_IdentityPose_BBAE480D4EB6C571F7DADE8874A05AF2; // 0x1C48(0x0038)
-	struct FAnimNode_Slot                              AnimGraphNode_Slot_022C0BF9485525FF891213B86BBA8DCB;       // 0x1C80(0x0060)
+	struct FAnimNode_Slot                              AnimGraphNode_Slot_4BE4FEE94EB433778EE56398000D22F5;       // 0x1C80(0x0060)
 	float                                              LookAtChest;                                               // 0x1CE0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FVector2D                                   LookAtAngleClamp;                                          // 0x1CE4(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	unsigned char                                      LookAtClamp;                                               // 0x1CEC(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_LOLV[0x3];                                     // 0x1CED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_CDMW[0x3];                                     // 0x1CED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              LookAtActivationSpeed;                                     // 0x1CF0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                              LookAtTargetPositionSpeed;                                 // 0x1CF4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               AnimgraphStarted;                                          // 0x1CF8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                               IsPhased;                                                  // 0x1CF9(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_TRGJ[0x2];                                     // 0x1CFA(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_A41R[0x2];                                     // 0x1CFA(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              SequencerBlendWeight;                                      // 0x1CFC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor)
 
 

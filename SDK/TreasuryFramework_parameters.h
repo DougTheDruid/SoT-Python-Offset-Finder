@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -114,6 +114,12 @@ struct ATreasuryRoom_OnEncounterParamsSetup_Params
 // Function TreasuryFramework.TreasuryRoom.OnDrainedWater
 struct ATreasuryRoom_OnDrainedWater_Params
 {
+};
+
+// Function TreasuryFramework.TreasuryRoom.GetState
+struct ATreasuryRoom_GetState_Params
+{
+	TEnumAsByte<TreasuryFramework_ETreasuryState>      ReturnValue;                                               // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

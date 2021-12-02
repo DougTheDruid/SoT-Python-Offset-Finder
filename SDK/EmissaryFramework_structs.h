@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -62,7 +62,7 @@ struct FEmissaryCompanyActionRewardBoostServiceEvent
 {
 	struct FName                                       AssociatedCompany;                                         // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<EmissaryFramework_EEmisaryCompanyActionType> CompanyActionType;                                         // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_01QU[0x3];                                     // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_X2VL[0x3];                                     // 0x0009(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGuid                                       AssociatedCrew;                                            // 0x000C(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	void AfterRead();
@@ -97,7 +97,7 @@ struct FEmissaryNonQuestCompanyActionRewardBoostEvent
 struct FEmissaryQuestCompanyActionRewardBoostEvent
 {
 	TEnumAsByte<EmissaryFramework_EEmisaryCompanyActionType> CompanyActionType;                                         // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_TMO4[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_D05H[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGuid                                       QuestId;                                                   // 0x0004(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	void AfterRead();
@@ -109,7 +109,7 @@ struct FEmissaryQuestCompanyActionRewardBoostEvent
 // 0x0010
 struct FEmissaryCompanyChangedEvent
 {
-	unsigned char                                      UnknownData_TJCS[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9RN4[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

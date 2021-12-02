@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LightingZone.BP_LightingZone_C.Update Lighting Zone
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_LightingZone_C::Update_Lighting_Zone()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LightingZone.BP_LightingZone_C.Update Lighting Zone");
 
-	ABP_LightingZone_C_Update_Lighting_Zone_Params params;
+	ABP_LightingZone_C_Update_Lighting_Zone_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,14 +38,14 @@ void ABP_LightingZone_C::Update_Lighting_Zone()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LightingZone.BP_LightingZone_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_LightingZone_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LightingZone.BP_LightingZone_C.UserConstructionScript");
 
-	ABP_LightingZone_C_UserConstructionScript_Params params;
+	ABP_LightingZone_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -56,14 +56,14 @@ void ABP_LightingZone_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LightingZone.BP_LightingZone_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_LightingZone_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LightingZone.BP_LightingZone_C.ReceiveBeginPlay");
 
-	ABP_LightingZone_C_ReceiveBeginPlay_Params params;
+	ABP_LightingZone_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -74,7 +74,7 @@ void ABP_LightingZone_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LightingZone.BP_LightingZone_C.ExecuteUbergraph_BP_LightingZone
 //		Flags  -> ()
 // Parameters:
@@ -83,7 +83,7 @@ void ABP_LightingZone_C::ExecuteUbergraph_BP_LightingZone(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LightingZone.BP_LightingZone_C.ExecuteUbergraph_BP_LightingZone");
 
-	ABP_LightingZone_C_ExecuteUbergraph_BP_LightingZone_Params params;
+	ABP_LightingZone_C_ExecuteUbergraph_BP_LightingZone_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

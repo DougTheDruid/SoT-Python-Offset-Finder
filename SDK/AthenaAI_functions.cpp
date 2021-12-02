@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -188,27 +188,81 @@ void FSwimAttackTargetShipImpulseData::BeforeDelete()
 	DELE_PTR_FULL(ShipSize);
 }
 
+void FAIStrategyMovementProperties::AfterRead()
+{
+	READ_PTR_FULL(AIStrategy, UClass);
+}
+
+void FAIStrategyMovementProperties::BeforeDelete()
+{
+	DELE_PTR_FULL(AIStrategy);
+}
+
+void FAISpawnerWave::AfterRead()
+{
+}
+
+void FAISpawnerWave::BeforeDelete()
+{
+}
+
+void FAIPersistentSpawnerWave::AfterRead()
+{
+	FAISpawnerWave::AfterRead();
+
+	READ_PTR_FULL(AITypeToCache, UClass);
+}
+
+void FAIPersistentSpawnerWave::BeforeDelete()
+{
+	FAISpawnerWave::BeforeDelete();
+
+	DELE_PTR_FULL(AITypeToCache);
+}
+
+void FAIBountySpawnerWave::AfterRead()
+{
+	FAIPersistentSpawnerWave::AfterRead();
+
+	READ_PTR_FULL(PostSpawnAction, UPostBountyAIPawnSpawnedAction);
+	READ_PTR_FULL(BountyReward, UClass);
+}
+
+void FAIBountySpawnerWave::BeforeDelete()
+{
+	FAIPersistentSpawnerWave::BeforeDelete();
+
+	DELE_PTR_FULL(PostSpawnAction);
+	DELE_PTR_FULL(BountyReward);
+}
+
+void FAIBountySpawnerWaveGroup::AfterRead()
+{
+	READ_PTR_FULL(CombatDialogueForWaveGroup, UClass);
+}
+
+void FAIBountySpawnerWaveGroup::BeforeDelete()
+{
+	DELE_PTR_FULL(CombatDialogueForWaveGroup);
+}
+
+void FAIFaunaSpawnerWave::AfterRead()
+{
+	FAISpawnerWave::AfterRead();
+
+}
+
+void FAIFaunaSpawnerWave::BeforeDelete()
+{
+	FAISpawnerWave::BeforeDelete();
+
+}
+
 void FAthenaAIControllerSenseSettings::AfterRead()
 {
 }
 
 void FAthenaAIControllerSenseSettings::BeforeDelete()
-{
-}
-
-void FAthenaAIControllerHealthCustomisation::AfterRead()
-{
-}
-
-void FAthenaAIControllerHealthCustomisation::BeforeDelete()
-{
-}
-
-void FAthenaAIControllerWeightedRangesParamValue::AfterRead()
-{
-}
-
-void FAthenaAIControllerWeightedRangesParamValue::BeforeDelete()
 {
 }
 
@@ -222,6 +276,154 @@ void FAthenaAIControllerSenseSettingOverride::BeforeDelete()
 	DELE_PTR_FULL(AIStrategy);
 }
 
+void FAIStategyControllerMovementMod::AfterRead()
+{
+	READ_PTR_FULL(AIStrategy, UClass);
+}
+
+void FAIStategyControllerMovementMod::BeforeDelete()
+{
+	DELE_PTR_FULL(AIStrategy);
+}
+
+void FAIEncounterSpecification::AfterRead()
+{
+	READ_PTR_FULL(Skillset, UAthenaAIControllerParamsDataAsset);
+	READ_PTR_FULL(Loadout, ULoadoutAsset);
+	READ_PTR_FULL(Form, UAthenaAIFormDataAsset);
+	READ_PTR_FULL(Ammo, UAthenaAIAmmoDataAsset);
+	READ_PTR_FULL(AIClass, UClass);
+	READ_PTR_FULL(PartsCategory, UAIPartsCategory);
+}
+
+void FAIEncounterSpecification::BeforeDelete()
+{
+	DELE_PTR_FULL(Skillset);
+	DELE_PTR_FULL(Loadout);
+	DELE_PTR_FULL(Form);
+	DELE_PTR_FULL(Ammo);
+	DELE_PTR_FULL(AIClass);
+	DELE_PTR_FULL(PartsCategory);
+}
+
+void FAIDioramaPawn::AfterRead()
+{
+	READ_PTR_FULL(Pawn, APawn);
+}
+
+void FAIDioramaPawn::BeforeDelete()
+{
+	DELE_PTR_FULL(Pawn);
+}
+
+void FAIDioramaRoleDesc::AfterRead()
+{
+	READ_PTR_FULL(StartingItemCategory, UClass);
+}
+
+void FAIDioramaRoleDesc::BeforeDelete()
+{
+	DELE_PTR_FULL(StartingItemCategory);
+}
+
+void FAIDioramaLocationSourceComponentData::AfterRead()
+{
+	READ_PTR_FULL(Interactable, AActor);
+}
+
+void FAIDioramaLocationSourceComponentData::BeforeDelete()
+{
+	DELE_PTR_FULL(Interactable);
+}
+
+void FIslandDioramas::AfterRead()
+{
+}
+
+void FIslandDioramas::BeforeDelete()
+{
+}
+
+void FDioramaCategoryEntries::AfterRead()
+{
+}
+
+void FDioramaCategoryEntries::BeforeDelete()
+{
+}
+
+void FPetFlyingStrategyProperties::AfterRead()
+{
+	READ_PTR_FULL(Strategy, UClass);
+}
+
+void FPetFlyingStrategyProperties::BeforeDelete()
+{
+	DELE_PTR_FULL(Strategy);
+}
+
+void FPetMovementRequest::AfterRead()
+{
+}
+
+void FPetMovementRequest::BeforeDelete()
+{
+}
+
+void FPetTurnRateModifier::AfterRead()
+{
+	READ_PTR_FULL(Strategy, UClass);
+}
+
+void FPetTurnRateModifier::BeforeDelete()
+{
+	DELE_PTR_FULL(Strategy);
+}
+
+void FPetLoadedMaterial::AfterRead()
+{
+	READ_PTR_FULL(MaterialInstance, UMaterialInstance);
+}
+
+void FPetLoadedMaterial::BeforeDelete()
+{
+	DELE_PTR_FULL(MaterialInstance);
+}
+
+void FPetPartSizeMapping::AfterRead()
+{
+}
+
+void FPetPartSizeMapping::BeforeDelete()
+{
+}
+
+void FAIPartId::AfterRead()
+{
+}
+
+void FAIPartId::BeforeDelete()
+{
+}
+
+void FPetMaterialEntry::AfterRead()
+{
+}
+
+void FPetMaterialEntry::BeforeDelete()
+{
+}
+
+void FPetWieldableReactMapping::AfterRead()
+{
+	READ_PTR_FULL(WieldableType, UClass);
+}
+
+void FPetWieldableReactMapping::BeforeDelete()
+{
+	DELE_PTR_FULL(WieldableType);
+}
+
 void FAthenaAIControllerDamageTargetScoreFromPerceivedTarget::AfterRead()
 {
 }
@@ -230,14 +432,142 @@ void FAthenaAIControllerDamageTargetScoreFromPerceivedTarget::BeforeDelete()
 {
 }
 
-void FAIStrategyMovementProperties::AfterRead()
+void FAthenaAIControllerHealthCustomisation::AfterRead()
 {
-	READ_PTR_FULL(AIStrategy, UClass);
 }
 
-void FAIStrategyMovementProperties::BeforeDelete()
+void FAthenaAIControllerHealthCustomisation::BeforeDelete()
 {
-	DELE_PTR_FULL(AIStrategy);
+}
+
+void FTinySharkParams::AfterRead()
+{
+	READ_PTR_FULL(TinySharkType, UClass);
+	READ_PTR_FULL(TinySharkClassID, UClass);
+}
+
+void FTinySharkParams::BeforeDelete()
+{
+	DELE_PTR_FULL(TinySharkType);
+	DELE_PTR_FULL(TinySharkClassID);
+}
+
+void FEventTinySharkSpawned::AfterRead()
+{
+}
+
+void FEventTinySharkSpawned::BeforeDelete()
+{
+}
+
+void FTinySharkCollidedTelemetryEvent::AfterRead()
+{
+}
+
+void FTinySharkCollidedTelemetryEvent::BeforeDelete()
+{
+}
+
+void FTinySharkDespawnTelemetryEvent::AfterRead()
+{
+}
+
+void FTinySharkDespawnTelemetryEvent::BeforeDelete()
+{
+}
+
+void FTinySharkSpawnTelemetryEvent::AfterRead()
+{
+}
+
+void FTinySharkSpawnTelemetryEvent::BeforeDelete()
+{
+}
+
+void FAIExclusionZone::AfterRead()
+{
+}
+
+void FAIExclusionZone::BeforeDelete()
+{
+}
+
+void FEventAIPartsRetrievalComponentBeforeBeginLoad::AfterRead()
+{
+}
+
+void FEventAIPartsRetrievalComponentBeforeBeginLoad::BeforeDelete()
+{
+}
+
+void FAISpawnerArchive::AfterRead()
+{
+}
+
+void FAISpawnerArchive::BeforeDelete()
+{
+}
+
+void FAIFixedWavesSpawnerArchive::AfterRead()
+{
+	FAISpawnerArchive::AfterRead();
+
+}
+
+void FAIFixedWavesSpawnerArchive::BeforeDelete()
+{
+	FAISpawnerArchive::BeforeDelete();
+
+}
+
+void FAIIncrementalWaveSpawnerArchive::AfterRead()
+{
+	FAISpawnerArchive::AfterRead();
+
+}
+
+void FAIIncrementalWaveSpawnerArchive::BeforeDelete()
+{
+	FAISpawnerArchive::BeforeDelete();
+
+}
+
+void FAIPerCrewSpawnerRespawnUnit::AfterRead()
+{
+}
+
+void FAIPerCrewSpawnerRespawnUnit::BeforeDelete()
+{
+}
+
+void FAthenaAIControllerWeightedRangesParamValue::AfterRead()
+{
+}
+
+void FAthenaAIControllerWeightedRangesParamValue::BeforeDelete()
+{
+}
+
+void FTinySharkShipSpawnData::AfterRead()
+{
+	READ_PTR_FULL(ShipSize, UClass);
+}
+
+void FTinySharkShipSpawnData::BeforeDelete()
+{
+	DELE_PTR_FULL(ShipSize);
+}
+
+void FTinySharkServiceParams::AfterRead()
+{
+	READ_PTR_FULL(TinySharkParams, UTinySharkParamsDataAsset);
+	READ_PTR_FULL(SpawnForShipQuery, UEnvQuery);
+}
+
+void FTinySharkServiceParams::BeforeDelete()
+{
+	DELE_PTR_FULL(TinySharkParams);
+	DELE_PTR_FULL(SpawnForShipQuery);
 }
 
 void FAthenaAICharacterCannonTarget::AfterRead()
@@ -280,24 +610,6 @@ void FAthenaAICharacterControllerSpawnItemDescForItemCategory::BeforeDelete()
 	DELE_PTR_FULL(ItemDesc);
 }
 
-void FAthenaAICharacterControllerItemCategoryNamedParams::AfterRead()
-{
-	READ_PTR_FULL(ItemCategory, UClass);
-}
-
-void FAthenaAICharacterControllerItemCategoryNamedParams::BeforeDelete()
-{
-	DELE_PTR_FULL(ItemCategory);
-}
-
-void FAthenaAICharacterCannonTargetingParams::AfterRead()
-{
-}
-
-void FAthenaAICharacterCannonTargetingParams::BeforeDelete()
-{
-}
-
 void FAthenaAIAbilityDamageStage::AfterRead()
 {
 }
@@ -326,43 +638,11 @@ void FAIAmmoRankMapping::BeforeDelete()
 	DELE_PTR_FULL(Ammo);
 }
 
-void FAIPartId::AfterRead()
-{
-}
-
-void FAIPartId::BeforeDelete()
-{
-}
-
 void FAIDebugVisualisationLine::AfterRead()
 {
 }
 
 void FAIDebugVisualisationLine::BeforeDelete()
-{
-}
-
-void FAIDebugVisualisationCone::AfterRead()
-{
-}
-
-void FAIDebugVisualisationCone::BeforeDelete()
-{
-}
-
-void FAIDebugVisualisationSphere::AfterRead()
-{
-}
-
-void FAIDebugVisualisationSphere::BeforeDelete()
-{
-}
-
-void FAIDebugVisualisationCylinder::AfterRead()
-{
-}
-
-void FAIDebugVisualisationCylinder::BeforeDelete()
 {
 }
 
@@ -374,19 +654,27 @@ void FAIDebugVisualisationBox::BeforeDelete()
 {
 }
 
-void FTargetItemDropProgressionPair::AfterRead()
+void FAIDebugVisualisationCylinder::AfterRead()
 {
 }
 
-void FTargetItemDropProgressionPair::BeforeDelete()
+void FAIDebugVisualisationCylinder::BeforeDelete()
 {
 }
 
-void FTargetSkillsetProgressionPair::AfterRead()
+void FAIDebugVisualisationSphere::AfterRead()
 {
 }
 
-void FTargetSkillsetProgressionPair::BeforeDelete()
+void FAIDebugVisualisationSphere::BeforeDelete()
+{
+}
+
+void FAIDebugVisualisationCone::AfterRead()
+{
+}
+
+void FAIDebugVisualisationCone::BeforeDelete()
 {
 }
 
@@ -398,11 +686,19 @@ void FAIIndividualVarietyEntry::BeforeDelete()
 {
 }
 
-void FAIFormVarietyEntry::AfterRead()
+void FTargetSkillsetProgressionPair::AfterRead()
 {
 }
 
-void FAIFormVarietyEntry::BeforeDelete()
+void FTargetSkillsetProgressionPair::BeforeDelete()
+{
+}
+
+void FTargetItemDropProgressionPair::AfterRead()
+{
+}
+
+void FTargetItemDropProgressionPair::BeforeDelete()
 {
 }
 
@@ -434,16 +730,6 @@ void FAIPartsCategoryMapping::BeforeDelete()
 {
 	DELE_PTR_FULL(ClassId);
 	DELE_PTR_FULL(PartsCategory);
-}
-
-void FAIPartsCategoryFormMapping::AfterRead()
-{
-	READ_PTR_FULL(Form, UAthenaAIFormDataAsset);
-}
-
-void FAIPartsCategoryFormMapping::BeforeDelete()
-{
-	DELE_PTR_FULL(Form);
 }
 
 void FAISkillsetRankMapping::AfterRead()
@@ -484,12 +770,40 @@ void FAITypeData::BeforeDelete()
 	DELE_PTR_FULL(DefaultDebugAIClassId);
 }
 
-void FAISpawnerWave::AfterRead()
+void FAthenaAICharacterCannonTargetingParams::AfterRead()
 {
 }
 
-void FAISpawnerWave::BeforeDelete()
+void FAthenaAICharacterCannonTargetingParams::BeforeDelete()
 {
+}
+
+void FAthenaAICharacterControllerItemCategoryNamedParams::AfterRead()
+{
+	READ_PTR_FULL(ItemCategory, UClass);
+}
+
+void FAthenaAICharacterControllerItemCategoryNamedParams::BeforeDelete()
+{
+	DELE_PTR_FULL(ItemCategory);
+}
+
+void FAIFormVarietyEntry::AfterRead()
+{
+}
+
+void FAIFormVarietyEntry::BeforeDelete()
+{
+}
+
+void FAIPartsCategoryFormMapping::AfterRead()
+{
+	READ_PTR_FULL(Form, UAthenaAIFormDataAsset);
+}
+
+void FAIPartsCategoryFormMapping::BeforeDelete()
+{
+	DELE_PTR_FULL(Form);
 }
 
 void FAISpawnWaveSequenceRankMapping::AfterRead()
@@ -556,542 +870,6 @@ void FAISpawnContextData::AfterRead()
 void FAISpawnContextData::BeforeDelete()
 {
 	DELE_PTR_FULL(Id);
-}
-
-void FAIPersistentSpawnerWave::AfterRead()
-{
-	FAISpawnerWave::AfterRead();
-
-}
-
-void FAIPersistentSpawnerWave::BeforeDelete()
-{
-	FAISpawnerWave::BeforeDelete();
-
-}
-
-void FAIPerPlayerSpawnerPlayerDetailsUnit::AfterRead()
-{
-}
-
-void FAIPerPlayerSpawnerPlayerDetailsUnit::BeforeDelete()
-{
-}
-
-void FTemporaryPlayerDetailsUnitEntry::AfterRead()
-{
-}
-
-void FTemporaryPlayerDetailsUnitEntry::BeforeDelete()
-{
-}
-
-void FAICustomNameTitleMapping::AfterRead()
-{
-	READ_PTR_FULL(AIClassId, UClass);
-}
-
-void FAICustomNameTitleMapping::BeforeDelete()
-{
-	DELE_PTR_FULL(AIClassId);
-}
-
-void FAICustomClassIdNameOverrides::AfterRead()
-{
-}
-
-void FAICustomClassIdNameOverrides::BeforeDelete()
-{
-}
-
-void FChanceForSharksToBlockSirenEncounterData::AfterRead()
-{
-}
-
-void FChanceForSharksToBlockSirenEncounterData::BeforeDelete()
-{
-}
-
-void FPerDepthSpawnChance::AfterRead()
-{
-}
-
-void FPerDepthSpawnChance::BeforeDelete()
-{
-}
-
-void FPlayerInWaterData::AfterRead()
-{
-}
-
-void FPlayerInWaterData::BeforeDelete()
-{
-}
-
-void FSirenEncounterData::AfterRead()
-{
-	READ_PTR_FULL(GameWorld, UWorld);
-	READ_PTR_FULL(SirenSpawner, UAIPerPlayerSpawner);
-	READ_PTR_FULL(AIRegion, USimpleAIRegion);
-	READ_PTR_FULL(ProximityPlayerTracker, UAIProximityPlayerTracker);
-}
-
-void FSirenEncounterData::BeforeDelete()
-{
-	DELE_PTR_FULL(GameWorld);
-	DELE_PTR_FULL(SirenSpawner);
-	DELE_PTR_FULL(AIRegion);
-	DELE_PTR_FULL(ProximityPlayerTracker);
-}
-
-void FMinMaxBurrowAbility::AfterRead()
-{
-}
-
-void FMinMaxBurrowAbility::BeforeDelete()
-{
-}
-
-void FWeightedAmmoType::AfterRead()
-{
-	READ_PTR_FULL(AmmoType, UClass);
-}
-
-void FWeightedAmmoType::BeforeDelete()
-{
-	DELE_PTR_FULL(AmmoType);
-}
-
-void FWeightedAmmoTypeRange::AfterRead()
-{
-}
-
-void FWeightedAmmoTypeRange::BeforeDelete()
-{
-}
-
-void FCarriedItemThreatOverride::AfterRead()
-{
-	READ_PTR_FULL(ItemDesc, UClass);
-}
-
-void FCarriedItemThreatOverride::BeforeDelete()
-{
-	DELE_PTR_FULL(ItemDesc);
-}
-
-void FHearingThreat::AfterRead()
-{
-}
-
-void FHearingThreat::BeforeDelete()
-{
-}
-
-void FBlackboardValueCondition::AfterRead()
-{
-}
-
-void FBlackboardValueCondition::BeforeDelete()
-{
-}
-
-void FChanceAndBlackboardKeyPair::AfterRead()
-{
-}
-
-void FChanceAndBlackboardKeyPair::BeforeDelete()
-{
-}
-
-void FConditionalBasedOnBlackboardKey::AfterRead()
-{
-}
-
-void FConditionalBasedOnBlackboardKey::BeforeDelete()
-{
-}
-
-void FWeightedAIStrategyChance::AfterRead()
-{
-	READ_PTR_FULL(Strategy, UClass);
-}
-
-void FWeightedAIStrategyChance::BeforeDelete()
-{
-	DELE_PTR_FULL(Strategy);
-}
-
-void FAIStrategyVulnerabilityData::AfterRead()
-{
-	READ_PTR_FULL(Strategy, UClass);
-}
-
-void FAIStrategyVulnerabilityData::BeforeDelete()
-{
-	DELE_PTR_FULL(Strategy);
-}
-
-void FAIBountySpawnerWave::AfterRead()
-{
-	FAIPersistentSpawnerWave::AfterRead();
-
-	READ_PTR_FULL(PostSpawnAction, UPostBountyAIPawnSpawnedAction);
-	READ_PTR_FULL(BountyReward, UClass);
-}
-
-void FAIBountySpawnerWave::BeforeDelete()
-{
-	FAIPersistentSpawnerWave::BeforeDelete();
-
-	DELE_PTR_FULL(PostSpawnAction);
-	DELE_PTR_FULL(BountyReward);
-}
-
-void FAIBountySpawnerWaveGroup::AfterRead()
-{
-	READ_PTR_FULL(CombatDialogueForWaveGroup, UClass);
-}
-
-void FAIBountySpawnerWaveGroup::BeforeDelete()
-{
-	DELE_PTR_FULL(CombatDialogueForWaveGroup);
-}
-
-void FAIDioramaPawn::AfterRead()
-{
-	READ_PTR_FULL(Pawn, APawn);
-}
-
-void FAIDioramaPawn::BeforeDelete()
-{
-	DELE_PTR_FULL(Pawn);
-}
-
-void FAIDioramaRoleDesc::AfterRead()
-{
-	READ_PTR_FULL(StartingItemCategory, UClass);
-}
-
-void FAIDioramaRoleDesc::BeforeDelete()
-{
-	DELE_PTR_FULL(StartingItemCategory);
-}
-
-void FAIDioramaLocationSourceComponentData::AfterRead()
-{
-	READ_PTR_FULL(Interactable, AActor);
-}
-
-void FAIDioramaLocationSourceComponentData::BeforeDelete()
-{
-	DELE_PTR_FULL(Interactable);
-}
-
-void FIslandDioramas::AfterRead()
-{
-}
-
-void FIslandDioramas::BeforeDelete()
-{
-}
-
-void FDioramaCategoryEntries::AfterRead()
-{
-}
-
-void FDioramaCategoryEntries::BeforeDelete()
-{
-}
-
-void FAIFaunaSpawnerWave::AfterRead()
-{
-	FAISpawnerWave::AfterRead();
-
-}
-
-void FAIFaunaSpawnerWave::BeforeDelete()
-{
-	FAISpawnerWave::BeforeDelete();
-
-}
-
-void FAIStategyControllerMovementMod::AfterRead()
-{
-	READ_PTR_FULL(AIStrategy, UClass);
-}
-
-void FAIStategyControllerMovementMod::BeforeDelete()
-{
-	DELE_PTR_FULL(AIStrategy);
-}
-
-void FPetFlyingStrategyProperties::AfterRead()
-{
-	READ_PTR_FULL(Strategy, UClass);
-}
-
-void FPetFlyingStrategyProperties::BeforeDelete()
-{
-	DELE_PTR_FULL(Strategy);
-}
-
-void FPetMovementRequest::AfterRead()
-{
-}
-
-void FPetMovementRequest::BeforeDelete()
-{
-}
-
-void FPetTurnRateModifier::AfterRead()
-{
-	READ_PTR_FULL(Strategy, UClass);
-}
-
-void FPetTurnRateModifier::BeforeDelete()
-{
-	DELE_PTR_FULL(Strategy);
-}
-
-void FAIEncounterSpecification::AfterRead()
-{
-	READ_PTR_FULL(Skillset, UAthenaAIControllerParamsDataAsset);
-	READ_PTR_FULL(Loadout, ULoadoutAsset);
-	READ_PTR_FULL(Form, UAthenaAIFormDataAsset);
-	READ_PTR_FULL(Ammo, UAthenaAIAmmoDataAsset);
-	READ_PTR_FULL(AIClass, UClass);
-	READ_PTR_FULL(PartsCategory, UAIPartsCategory);
-}
-
-void FAIEncounterSpecification::BeforeDelete()
-{
-	DELE_PTR_FULL(Skillset);
-	DELE_PTR_FULL(Loadout);
-	DELE_PTR_FULL(Form);
-	DELE_PTR_FULL(Ammo);
-	DELE_PTR_FULL(AIClass);
-	DELE_PTR_FULL(PartsCategory);
-}
-
-void FPetLoadedMaterial::AfterRead()
-{
-	READ_PTR_FULL(MaterialInstance, UMaterialInstance);
-}
-
-void FPetLoadedMaterial::BeforeDelete()
-{
-	DELE_PTR_FULL(MaterialInstance);
-}
-
-void FPetPartSizeMapping::AfterRead()
-{
-}
-
-void FPetPartSizeMapping::BeforeDelete()
-{
-}
-
-void FPetMaterialEntry::AfterRead()
-{
-}
-
-void FPetMaterialEntry::BeforeDelete()
-{
-}
-
-void FPetWieldableReactMapping::AfterRead()
-{
-	READ_PTR_FULL(WieldableType, UClass);
-}
-
-void FPetWieldableReactMapping::BeforeDelete()
-{
-	DELE_PTR_FULL(WieldableType);
-}
-
-void FTinySharkShipSpawnData::AfterRead()
-{
-	READ_PTR_FULL(ShipSize, UClass);
-}
-
-void FTinySharkShipSpawnData::BeforeDelete()
-{
-	DELE_PTR_FULL(ShipSize);
-}
-
-void FTinySharkServiceParams::AfterRead()
-{
-	READ_PTR_FULL(TinySharkParams, UTinySharkParamsDataAsset);
-	READ_PTR_FULL(SpawnForShipQuery, UEnvQuery);
-}
-
-void FTinySharkServiceParams::BeforeDelete()
-{
-	DELE_PTR_FULL(TinySharkParams);
-	DELE_PTR_FULL(SpawnForShipQuery);
-}
-
-void FAIAbilityDebugReplicatedIntervals::AfterRead()
-{
-}
-
-void FAIAbilityDebugReplicatedIntervals::BeforeDelete()
-{
-}
-
-void FTinySharkParams::AfterRead()
-{
-	READ_PTR_FULL(TinySharkType, UClass);
-	READ_PTR_FULL(TinySharkClassID, UClass);
-}
-
-void FTinySharkParams::BeforeDelete()
-{
-	DELE_PTR_FULL(TinySharkType);
-	DELE_PTR_FULL(TinySharkClassID);
-}
-
-void FAIEncounterWave::AfterRead()
-{
-}
-
-void FAIEncounterWave::BeforeDelete()
-{
-}
-
-void FAIBountySpawnerParams::AfterRead()
-{
-}
-
-void FAIBountySpawnerParams::BeforeDelete()
-{
-}
-
-void FEventAIStartedDeadActionState::AfterRead()
-{
-	READ_PTR_FULL(Killer, AActor);
-}
-
-void FEventAIStartedDeadActionState::BeforeDelete()
-{
-	DELE_PTR_FULL(Killer);
-}
-
-void FEventPawnFinishedDying::AfterRead()
-{
-	READ_PTR_FULL(AIPawn, APawn);
-}
-
-void FEventPawnFinishedDying::BeforeDelete()
-{
-	DELE_PTR_FULL(AIPawn);
-}
-
-void FEventPawnStartedDying::AfterRead()
-{
-	READ_PTR_FULL(AIPawn, APawn);
-	READ_PTR_FULL(Instigator, AActor);
-}
-
-void FEventPawnStartedDying::BeforeDelete()
-{
-	DELE_PTR_FULL(AIPawn);
-	DELE_PTR_FULL(Instigator);
-}
-
-void FEventOwnedPawnFinishedDying::AfterRead()
-{
-}
-
-void FEventOwnedPawnFinishedDying::BeforeDelete()
-{
-}
-
-void FEventOwnedPawnStartedDying::AfterRead()
-{
-	READ_PTR_FULL(Instigator, AActor);
-}
-
-void FEventOwnedPawnStartedDying::BeforeDelete()
-{
-	DELE_PTR_FULL(Instigator);
-}
-
-void FAISpawnerArchive::AfterRead()
-{
-}
-
-void FAISpawnerArchive::BeforeDelete()
-{
-}
-
-void FAIExclusionZone::AfterRead()
-{
-}
-
-void FAIExclusionZone::BeforeDelete()
-{
-}
-
-void FEventAIPartsRetrievalComponentBeforeBeginLoad::AfterRead()
-{
-}
-
-void FEventAIPartsRetrievalComponentBeforeBeginLoad::BeforeDelete()
-{
-}
-
-void FAIFixedWavesSpawnerArchive::AfterRead()
-{
-	FAISpawnerArchive::AfterRead();
-
-}
-
-void FAIFixedWavesSpawnerArchive::BeforeDelete()
-{
-	FAISpawnerArchive::BeforeDelete();
-
-}
-
-void FAIIncrementalWaveSpawnerArchive::AfterRead()
-{
-	FAISpawnerArchive::AfterRead();
-
-}
-
-void FAIIncrementalWaveSpawnerArchive::BeforeDelete()
-{
-	FAISpawnerArchive::BeforeDelete();
-
-}
-
-void FAIPerCrewSpawnerRespawnUnit::AfterRead()
-{
-}
-
-void FAIPerCrewSpawnerRespawnUnit::BeforeDelete()
-{
-}
-
-void FAIPerCrewSpawnerCrewUnit::AfterRead()
-{
-}
-
-void FAIPerCrewSpawnerCrewUnit::BeforeDelete()
-{
-}
-
-void FAIProgressiveWavesSpawnerArchive::AfterRead()
-{
-	FAISpawnerArchive::AfterRead();
-
-}
-
-void FAIProgressiveWavesSpawnerArchive::BeforeDelete()
-{
-	FAISpawnerArchive::BeforeDelete();
-
 }
 
 void FAITargetBounds::AfterRead()
@@ -1476,19 +1254,129 @@ void FAIActorTimeout::BeforeDelete()
 	DELE_PTR_FULL(AIActor);
 }
 
-void FBountySpawnerTargetDesc::AfterRead()
+void FAIPerPlayerSpawnerPlayerDetailsUnit::AfterRead()
 {
 }
 
-void FBountySpawnerTargetDesc::BeforeDelete()
+void FAIPerPlayerSpawnerPlayerDetailsUnit::BeforeDelete()
 {
 }
 
-void FAIBountySpawnerWaveLocation::AfterRead()
+void FTemporaryPlayerDetailsUnitEntry::AfterRead()
 {
 }
 
-void FAIBountySpawnerWaveLocation::BeforeDelete()
+void FTemporaryPlayerDetailsUnitEntry::BeforeDelete()
+{
+}
+
+void FAICustomNameTitleMapping::AfterRead()
+{
+	READ_PTR_FULL(AIClassId, UClass);
+}
+
+void FAICustomNameTitleMapping::BeforeDelete()
+{
+	DELE_PTR_FULL(AIClassId);
+}
+
+void FAICustomClassIdNameOverrides::AfterRead()
+{
+}
+
+void FAICustomClassIdNameOverrides::BeforeDelete()
+{
+}
+
+void FChanceForSharksToBlockSirenEncounterData::AfterRead()
+{
+}
+
+void FChanceForSharksToBlockSirenEncounterData::BeforeDelete()
+{
+}
+
+void FPerDepthSpawnChance::AfterRead()
+{
+}
+
+void FPerDepthSpawnChance::BeforeDelete()
+{
+}
+
+void FPlayerInWaterData::AfterRead()
+{
+}
+
+void FPlayerInWaterData::BeforeDelete()
+{
+}
+
+void FSirenEncounterData::AfterRead()
+{
+	READ_PTR_FULL(GameWorld, UWorld);
+	READ_PTR_FULL(SirenSpawner, UAIPerPlayerSpawner);
+	READ_PTR_FULL(AIRegion, USimpleAIRegion);
+	READ_PTR_FULL(ProximityPlayerTracker, UAIProximityPlayerTracker);
+}
+
+void FSirenEncounterData::BeforeDelete()
+{
+	DELE_PTR_FULL(GameWorld);
+	DELE_PTR_FULL(SirenSpawner);
+	DELE_PTR_FULL(AIRegion);
+	DELE_PTR_FULL(ProximityPlayerTracker);
+}
+
+void FMinMaxBurrowAbility::AfterRead()
+{
+}
+
+void FMinMaxBurrowAbility::BeforeDelete()
+{
+}
+
+void FWeightedAmmoType::AfterRead()
+{
+	READ_PTR_FULL(AmmoType, UClass);
+}
+
+void FWeightedAmmoType::BeforeDelete()
+{
+	DELE_PTR_FULL(AmmoType);
+}
+
+void FWeightedAmmoTypeRange::AfterRead()
+{
+}
+
+void FWeightedAmmoTypeRange::BeforeDelete()
+{
+}
+
+void FCarriedItemThreatOverride::AfterRead()
+{
+	READ_PTR_FULL(ItemDesc, UClass);
+}
+
+void FCarriedItemThreatOverride::BeforeDelete()
+{
+	DELE_PTR_FULL(ItemDesc);
+}
+
+void FHearingThreat::AfterRead()
+{
+}
+
+void FHearingThreat::BeforeDelete()
+{
+}
+
+void FBlackboardValueCondition::AfterRead()
+{
+}
+
+void FBlackboardValueCondition::BeforeDelete()
 {
 }
 
@@ -1505,6 +1393,132 @@ void FAIBountySpawnerArchiveWaveGroupEntry::AfterRead()
 }
 
 void FAIBountySpawnerArchiveWaveGroupEntry::BeforeDelete()
+{
+}
+
+void FChanceAndBlackboardKeyPair::AfterRead()
+{
+}
+
+void FChanceAndBlackboardKeyPair::BeforeDelete()
+{
+}
+
+void FConditionalBasedOnBlackboardKey::AfterRead()
+{
+}
+
+void FConditionalBasedOnBlackboardKey::BeforeDelete()
+{
+}
+
+void FWeightedAIStrategyChance::AfterRead()
+{
+	READ_PTR_FULL(Strategy, UClass);
+}
+
+void FWeightedAIStrategyChance::BeforeDelete()
+{
+	DELE_PTR_FULL(Strategy);
+}
+
+void FAIStrategyVulnerabilityData::AfterRead()
+{
+	READ_PTR_FULL(Strategy, UClass);
+}
+
+void FAIStrategyVulnerabilityData::BeforeDelete()
+{
+	DELE_PTR_FULL(Strategy);
+}
+
+void FAIAbilityDebugReplicatedIntervals::AfterRead()
+{
+}
+
+void FAIAbilityDebugReplicatedIntervals::BeforeDelete()
+{
+}
+
+void FAIEncounterWave::AfterRead()
+{
+}
+
+void FAIEncounterWave::BeforeDelete()
+{
+}
+
+void FAIBountySpawnerParams::AfterRead()
+{
+}
+
+void FAIBountySpawnerParams::BeforeDelete()
+{
+}
+
+void FEventAIStartedDeadActionState::AfterRead()
+{
+	READ_PTR_FULL(Killer, AActor);
+}
+
+void FEventAIStartedDeadActionState::BeforeDelete()
+{
+	DELE_PTR_FULL(Killer);
+}
+
+void FEventPawnFinishedDying::AfterRead()
+{
+	READ_PTR_FULL(AIPawn, APawn);
+}
+
+void FEventPawnFinishedDying::BeforeDelete()
+{
+	DELE_PTR_FULL(AIPawn);
+}
+
+void FEventPawnStartedDying::AfterRead()
+{
+	READ_PTR_FULL(AIPawn, APawn);
+	READ_PTR_FULL(Instigator, AActor);
+}
+
+void FEventPawnStartedDying::BeforeDelete()
+{
+	DELE_PTR_FULL(AIPawn);
+	DELE_PTR_FULL(Instigator);
+}
+
+void FEventOwnedPawnFinishedDying::AfterRead()
+{
+}
+
+void FEventOwnedPawnFinishedDying::BeforeDelete()
+{
+}
+
+void FEventOwnedPawnStartedDying::AfterRead()
+{
+	READ_PTR_FULL(Instigator, AActor);
+}
+
+void FEventOwnedPawnStartedDying::BeforeDelete()
+{
+	DELE_PTR_FULL(Instigator);
+}
+
+void FBountySpawnerTargetDesc::AfterRead()
+{
+}
+
+void FBountySpawnerTargetDesc::BeforeDelete()
+{
+}
+
+void FAIBountySpawnerWaveLocation::AfterRead()
+{
+}
+
+void FAIBountySpawnerWaveLocation::BeforeDelete()
 {
 }
 
@@ -1562,6 +1576,18 @@ void FEventAIBountySpawnerWaveCompleted::AfterRead()
 void FEventAIBountySpawnerWaveCompleted::BeforeDelete()
 {
 	DELE_PTR_FULL(InstigatorOfFinalAIPawnDeath);
+}
+
+void FMerchantCrateMetaWrapper::AfterRead()
+{
+	FItemMetaBase::AfterRead();
+
+}
+
+void FMerchantCrateMetaWrapper::BeforeDelete()
+{
+	FItemMetaBase::BeforeDelete();
+
 }
 
 void FEventFaunaThreatLevelChanged::AfterRead()
@@ -1662,39 +1688,35 @@ void FEventTinySharkDespawned::BeforeDelete()
 {
 }
 
-void FEventTinySharkSpawned::AfterRead()
+void FAIPerCrewSpawnerCrewUnit::AfterRead()
 {
 }
 
-void FEventTinySharkSpawned::BeforeDelete()
+void FAIPerCrewSpawnerCrewUnit::BeforeDelete()
 {
 }
 
-void FTinySharkDespawnTelemetryEvent::AfterRead()
+void FAIProgressiveWavesSpawnerArchive::AfterRead()
 {
+	FAISpawnerArchive::AfterRead();
+
 }
 
-void FTinySharkDespawnTelemetryEvent::BeforeDelete()
+void FAIProgressiveWavesSpawnerArchive::BeforeDelete()
 {
-}
+	FAISpawnerArchive::BeforeDelete();
 
-void FTinySharkSpawnTelemetryEvent::AfterRead()
-{
-}
-
-void FTinySharkSpawnTelemetryEvent::BeforeDelete()
-{
 }
 
 // Function:
-//		Offset -> 0x0363C370
+//		Offset -> 0x041D1A50
 //		Name   -> Function AthenaAI.AthenaAIFormComponent.OnRep_FormData
 //		Flags  -> (Final, Native, Private)
 void UAthenaAIFormComponent::OnRep_FormData()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIFormComponent.OnRep_FormData");
 
-	UAthenaAIFormComponent_OnRep_FormData_Params params;
+	UAthenaAIFormComponent_OnRep_FormData_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1746,7 +1768,7 @@ void UAIStrategyId::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363BF80
+//		Offset -> 0x041D1660
 //		Name   -> Function AthenaAI.AISpawner.GetNumOfSpawnRequests
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -1755,7 +1777,7 @@ int UAISpawner::GetNumOfSpawnRequests()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AISpawner.GetNumOfSpawnRequests");
 
-	UAISpawner_GetNumOfSpawnRequests_Params params;
+	UAISpawner_GetNumOfSpawnRequests_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -2028,6 +2050,2814 @@ void USpawnerBehaviourStrategy::BeforeDelete()
 
 }
 
+void UAICreatureCharacterMovementComponent::AfterRead()
+{
+	UCharacterMovementComponent::AfterRead();
+
+}
+
+void UAICreatureCharacterMovementComponent::BeforeDelete()
+{
+	UCharacterMovementComponent::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x035599E0
+//		Name   -> Function AthenaAI.AICreatureCharacter.SetAIStrategy
+//		Flags  -> (Native, Public, BlueprintCallable)
+// Parameters:
+//		class UClass*                                      InStrategy                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+void AAICreatureCharacter::SetAIStrategy(class UClass* InStrategy)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AICreatureCharacter.SetAIStrategy");
+
+	AAICreatureCharacter_SetAIStrategy_Params params {};
+	params.InStrategy = InStrategy;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03559960
+//		Name   -> Function AthenaAI.AICreatureCharacter.OnRep_CurrentAIStrategy
+//		Flags  -> (Final, Native, Protected)
+// Parameters:
+//		class UClass*                                      OldAIStrategy                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+void AAICreatureCharacter::OnRep_CurrentAIStrategy(class UClass* OldAIStrategy)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AICreatureCharacter.OnRep_CurrentAIStrategy");
+
+	AAICreatureCharacter_OnRep_CurrentAIStrategy_Params params {};
+	params.OldAIStrategy = OldAIStrategy;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03559940
+//		Name   -> Function AthenaAI.AICreatureCharacter.Multicast_DespawnRPC
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
+void AAICreatureCharacter::Multicast_DespawnRPC()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AICreatureCharacter.Multicast_DespawnRPC");
+
+	AAICreatureCharacter_Multicast_DespawnRPC_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03559900
+//		Name   -> Function AthenaAI.AICreatureCharacter.GetAIStrategy
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		class UClass*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+class UClass* AAICreatureCharacter::GetAIStrategy()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AICreatureCharacter.GetAIStrategy");
+
+	AAICreatureCharacter_GetAIStrategy_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+void AAICreatureCharacter::AfterRead()
+{
+	ACharacter::AfterRead();
+
+	READ_PTR_FULL(ActionStateMachineComponent, UActionStateMachineComponent);
+	READ_PTR_FULL(ActionStatePriorityTableData, UActionStatePriorityTableData);
+	READ_PTR_FULL(ActionStateCreatorDefinition, UClass);
+	READ_PTR_FULL(AIControllerParams, UAthenaAIControllerParamsDataAsset);
+	READ_PTR_FULL(InteractableComponent, UInteractableComponent);
+	READ_PTR_FULL(WaterHeightProviderComponent, UWaterHeightProviderComponent);
+	READ_PTR_FULL(AnimNotifyWwiseEmitterComponent, UAnimNotifyWwiseEmitterComponent);
+	READ_PTR_FULL(RewindComponent, URewindComponent);
+	READ_PTR_FULL(ActionRulesComponent, UActionRulesComponent);
+	READ_PTR_FULL(AICreatureCharacterMovementComponent, UAICreatureCharacterMovementComponent);
+	READ_PTR_FULL(CurrentAIStrategy, UClass);
+}
+
+void AAICreatureCharacter::BeforeDelete()
+{
+	ACharacter::BeforeDelete();
+
+	DELE_PTR_FULL(ActionStateMachineComponent);
+	DELE_PTR_FULL(ActionStatePriorityTableData);
+	DELE_PTR_FULL(ActionStateCreatorDefinition);
+	DELE_PTR_FULL(AIControllerParams);
+	DELE_PTR_FULL(InteractableComponent);
+	DELE_PTR_FULL(WaterHeightProviderComponent);
+	DELE_PTR_FULL(AnimNotifyWwiseEmitterComponent);
+	DELE_PTR_FULL(RewindComponent);
+	DELE_PTR_FULL(ActionRulesComponent);
+	DELE_PTR_FULL(AICreatureCharacterMovementComponent);
+	DELE_PTR_FULL(CurrentAIStrategy);
+}
+
+void UAthenaAICharacterPathFollowingComponent::AfterRead()
+{
+	UPathFollowingComponent::AfterRead();
+
+}
+
+void UAthenaAICharacterPathFollowingComponent::BeforeDelete()
+{
+	UPathFollowingComponent::BeforeDelete();
+
+}
+
+void UAICreatureCharacterPathFollowingComponent::AfterRead()
+{
+	UAthenaAICharacterPathFollowingComponent::AfterRead();
+
+}
+
+void UAICreatureCharacterPathFollowingComponent::BeforeDelete()
+{
+	UAthenaAICharacterPathFollowingComponent::BeforeDelete();
+
+}
+
+void UAICreatureMovementModifierInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UAICreatureMovementModifierInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UAICreatureMovementModifierParamsDataAsset::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+}
+
+void UAICreatureMovementModifierParamsDataAsset::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+}
+
+void UBehaviourTreeInterruptionInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UBehaviourTreeInterruptionInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UForcedIdleBehaviourInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UForcedIdleBehaviourInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UAIDialogueStateProviderInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UAIDialogueStateProviderInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void USimpleDialogueStateProvider::AfterRead()
+{
+	UObject::AfterRead();
+
+}
+
+void USimpleDialogueStateProvider::BeforeDelete()
+{
+	UObject::BeforeDelete();
+
+}
+
+void UBountySpawnerAudioZonesInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UBountySpawnerAudioZonesInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UAIBountySpawner::AfterRead()
+{
+	UAISpawner::AfterRead();
+
+	READ_PTR_FULL(ActiveCombatDialogue, UAICombatDialogue);
+	READ_PTR_FULL(AudioZoneTriggerComponent, UOverlapTriggerComponent);
+}
+
+void UAIBountySpawner::BeforeDelete()
+{
+	UAISpawner::BeforeDelete();
+
+	DELE_PTR_FULL(ActiveCombatDialogue);
+	DELE_PTR_FULL(AudioZoneTriggerComponent);
+}
+
+void UPostBountyAIPawnSpawnedAction::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+}
+
+void UPostBountyAIPawnSpawnedAction::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+}
+
+void UApplyNameplateToBountyWaveSpawnedAction::AfterRead()
+{
+	UPostBountyAIPawnSpawnedAction::AfterRead();
+
+}
+
+void UApplyNameplateToBountyWaveSpawnedAction::BeforeDelete()
+{
+	UPostBountyAIPawnSpawnedAction::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x03620E80
+//		Name   -> Function AthenaAI.AIFaunaSpawner.SpawnFaunaGroup
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+void UAIFaunaSpawner::SpawnFaunaGroup()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIFaunaSpawner.SpawnFaunaGroup");
+
+	UAIFaunaSpawner_SpawnFaunaGroup_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void UAIFaunaSpawner::AfterRead()
+{
+	UAISpawner::AfterRead();
+
+	READ_PTR_FULL(FaunaLeader, AActor);
+}
+
+void UAIFaunaSpawner::BeforeDelete()
+{
+	UAISpawner::BeforeDelete();
+
+	DELE_PTR_FULL(FaunaLeader);
+}
+
+// Function:
+//		Offset -> 0x041D3310
+//		Name   -> Function AthenaAI.AthenaAIControllerBase.SetNamedControllerParam
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+//		struct FName                                       ParamName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AAthenaAIControllerBase::SetNamedControllerParam(const struct FName& ParamName, float Value)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIControllerBase.SetNamedControllerParam");
+
+	AAthenaAIControllerBase_SetNamedControllerParam_Params params {};
+	params.ParamName = ParamName;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D13E0
+//		Name   -> Function AthenaAI.AthenaAIControllerBase.FindNamedWeightedRangesControllerParam
+//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		struct FName                                       ParamName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FWeightedProbabilityRangeOfRanges           ReturnValue                                                (Parm, OutParm, ReturnParm)
+struct FWeightedProbabilityRangeOfRanges AAthenaAIControllerBase::FindNamedWeightedRangesControllerParam(const struct FName& ParamName)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIControllerBase.FindNamedWeightedRangesControllerParam");
+
+	AAthenaAIControllerBase_FindNamedWeightedRangesControllerParam_Params params {};
+	params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x041D1330
+//		Name   -> Function AthenaAI.AthenaAIControllerBase.FindNamedControllerParam
+//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		struct FName                                       ParamName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+float AAthenaAIControllerBase::FindNamedControllerParam(const struct FName& ParamName)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIControllerBase.FindNamedControllerParam");
+
+	AAthenaAIControllerBase_FindNamedControllerParam_Params params {};
+	params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x041D0E00
+//		Name   -> Function AthenaAI.AthenaAIControllerBase.ApplyControllerParams
+//		Flags  -> (Native, Public, BlueprintCallable)
+// Parameters:
+//		class UAthenaAIControllerParamsDataAsset*          ParamsAsset                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class APawn*                                       InPawn                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AAthenaAIControllerBase::ApplyControllerParams(class UAthenaAIControllerParamsDataAsset* ParamsAsset, class APawn* InPawn)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIControllerBase.ApplyControllerParams");
+
+	AAthenaAIControllerBase_ApplyControllerParams_Params params {};
+	params.ParamsAsset = ParamsAsset;
+	params.InPawn = InPawn;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void AAthenaAIControllerBase::AfterRead()
+{
+	AAIController::AfterRead();
+
+}
+
+void AAthenaAIControllerBase::BeforeDelete()
+{
+	AAIController::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x041D37E0
+//		Name   -> Function AthenaAI.AthenaAIController.StopBehaviourLogic
+//		Flags  -> (Native, Public, BlueprintCallable)
+void AAthenaAIController::StopBehaviourLogic()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.StopBehaviourLogic");
+
+	AAthenaAIController_StopBehaviourLogic_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D3470
+//		Name   -> Function AthenaAI.AthenaAIController.SetPerceptionExpirationAgeForActor
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              ExpirationAge                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      Sense                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+void AAthenaAIController::SetPerceptionExpirationAgeForActor(class AActor* Actor, float ExpirationAge, class UClass* Sense)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.SetPerceptionExpirationAgeForActor");
+
+	AAthenaAIController_SetPerceptionExpirationAgeForActor_Params params {};
+	params.Actor = Actor;
+	params.ExpirationAge = ExpirationAge;
+	params.Sense = Sense;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D2690
+//		Name   -> Function AthenaAI.AthenaAIController.RegisterSpawnTriggerActorAsStimulus
+//		Flags  -> (Native, Public, BlueprintCallable)
+// Parameters:
+//		class AActor*                                      TriggerActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AAthenaAIController::RegisterSpawnTriggerActorAsStimulus(class AActor* TriggerActor)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.RegisterSpawnTriggerActorAsStimulus");
+
+	AAthenaAIController_RegisterSpawnTriggerActorAsStimulus_Params params {};
+	params.TriggerActor = TriggerActor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D1850
+//		Name   -> Function AthenaAI.AthenaAIController.OnPerceptionUpdated
+//		Flags  -> (Native, Public)
+// Parameters:
+//		TArray<class AActor*>                              ChangedPerceivedActors                                     (Parm, ZeroConstructor)
+void AAthenaAIController::OnPerceptionUpdated(TArray<class AActor*> ChangedPerceivedActors)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.OnPerceptionUpdated");
+
+	AAthenaAIController_OnPerceptionUpdated_Params params {};
+	params.ChangedPerceivedActors = ChangedPerceivedActors;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x016629C0
+//		Name   -> Function AthenaAI.AthenaAIController.OnNewlySpawned
+//		Flags  -> (Event, Public, BlueprintEvent)
+void AAthenaAIController::OnNewlySpawned()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.OnNewlySpawned");
+
+	AAthenaAIController_OnNewlySpawned_Params params {};
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x016629C0
+//		Name   -> Function AthenaAI.AthenaAIController.OnFinishDespawn
+//		Flags  -> (Event, Public, BlueprintEvent)
+void AAthenaAIController::OnFinishDespawn()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.OnFinishDespawn");
+
+	AAthenaAIController_OnFinishDespawn_Params params {};
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D16F0
+//		Name   -> Function AthenaAI.AthenaAIController.IsActorPerceived
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		class AActor*                                      TargetActor                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+bool AAthenaAIController::IsActorPerceived(class AActor* TargetActor)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.IsActorPerceived");
+
+	AAthenaAIController_IsActorPerceived_Params params {};
+	params.TargetActor = TargetActor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x041D16C0
+//		Name   -> Function AthenaAI.AthenaAIController.GetTargetActor
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		class AActor*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+class AActor* AAthenaAIController::GetTargetActor()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.GetTargetActor");
+
+	AAthenaAIController_GetTargetActor_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x041D1600
+//		Name   -> Function AthenaAI.AthenaAIController.GetAthenaAIPerceptionComponent
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+//		class UAthenaAIPerceptionComponent*                ReturnValue                                                (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+class UAthenaAIPerceptionComponent* AAthenaAIController::GetAthenaAIPerceptionComponent()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.GetAthenaAIPerceptionComponent");
+
+	AAthenaAIController_GetAthenaAIPerceptionComponent_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x041D1540
+//		Name   -> Function AthenaAI.AthenaAIController.GetAllSeenActors
+//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+//		TArray<class AActor*>                              SeenActors                                                 (Parm, OutParm, ZeroConstructor)
+void AAthenaAIController::GetAllSeenActors(TArray<class AActor*>* SeenActors)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.GetAllSeenActors");
+
+	AAthenaAIController_GetAllSeenActors_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+	if (SeenActors != nullptr)
+		*SeenActors = params.SeenActors;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D0D30
+//		Name   -> Function AthenaAI.AthenaAIController.ApplyControllerParams
+//		Flags  -> (Native, Public, BlueprintCallable)
+// Parameters:
+//		class UAthenaAIControllerParamsDataAsset*          ParamsAsset                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class APawn*                                       InPawn                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AAthenaAIController::ApplyControllerParams(class UAthenaAIControllerParamsDataAsset* ParamsAsset, class APawn* InPawn)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.ApplyControllerParams");
+
+	AAthenaAIController_ApplyControllerParams_Params params {};
+	params.ParamsAsset = ParamsAsset;
+	params.InPawn = InPawn;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void AAthenaAIController::AfterRead()
+{
+	AAthenaAIControllerBase::AfterRead();
+
+	READ_PTR_FULL(SightConfig, UAISenseConfig_Sight);
+	READ_PTR_FULL(HearingConfig, UAISenseConfig_Hearing);
+	READ_PTR_FULL(DamageSenseConfig, UAISenseConfig_Damage);
+	READ_PTR_FULL(CurrentNotSeenPerceivedActor, AActor);
+	READ_PTR_FULL(PendingSpawnTriggerActor, AActor);
+}
+
+void AAthenaAIController::BeforeDelete()
+{
+	AAthenaAIControllerBase::BeforeDelete();
+
+	DELE_PTR_FULL(SightConfig);
+	DELE_PTR_FULL(HearingConfig);
+	DELE_PTR_FULL(DamageSenseConfig);
+	DELE_PTR_FULL(CurrentNotSeenPerceivedActor);
+	DELE_PTR_FULL(PendingSpawnTriggerActor);
+}
+
+// Function:
+//		Offset -> 0x03620DF0
+//		Name   -> Function AthenaAI.AthenaFaunaAIController.SetDormancyCheckingEnabled
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		bool                                               InDormancyCheckingEnabledInAutomation                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+void AAthenaFaunaAIController::SetDormancyCheckingEnabled(bool InDormancyCheckingEnabledInAutomation)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.SetDormancyCheckingEnabled");
+
+	AAthenaFaunaAIController_SetDormancyCheckingEnabled_Params params {};
+	params.InDormancyCheckingEnabledInAutomation = InDormancyCheckingEnabledInAutomation;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620A90
+//		Name   -> Function AthenaAI.AthenaFaunaAIController.LeaderDestroyed
+//		Flags  -> (Final, Native, Private)
+// Parameters:
+//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AAthenaFaunaAIController::LeaderDestroyed(class AActor* Actor)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.LeaderDestroyed");
+
+	AAthenaFaunaAIController_LeaderDestroyed_Params params {};
+	params.Actor = Actor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x036202B0
+//		Name   -> Function AthenaAI.AthenaFaunaAIController.GetLeader
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		class AActor*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+class AActor* AAthenaFaunaAIController::GetLeader()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.GetLeader");
+
+	AAthenaFaunaAIController_GetLeader_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x0361FFB0
+//		Name   -> Function AthenaAI.AthenaFaunaAIController.GetCourage
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+float AAthenaFaunaAIController::GetCourage()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.GetCourage");
+
+	AAthenaFaunaAIController_GetCourage_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x0361FF80
+//		Name   -> Function AthenaAI.AthenaFaunaAIController.GetAthenaAICharPathFollowingComp
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		class UAthenaAICharacterPathFollowingComponent*    ReturnValue                                                (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+class UAthenaAICharacterPathFollowingComponent* AAthenaFaunaAIController::GetAthenaAICharPathFollowingComp()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.GetAthenaAICharPathFollowingComp");
+
+	AAthenaFaunaAIController_GetAthenaAICharPathFollowingComp_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+void AAthenaFaunaAIController::AfterRead()
+{
+	AAthenaAIController::AfterRead();
+
+	READ_PTR_FULL(FaunaDataAsset, UFaunaAIContollerParamsDataAsset);
+	READ_PTR_FULL(CarrierActor, AActor);
+	READ_PTR_FULL(HighestDangerActor, AActor);
+	READ_PTR_FULL(PlayerTracker, UFaunaAIPlayerTracker);
+}
+
+void AAthenaFaunaAIController::BeforeDelete()
+{
+	AAthenaAIController::BeforeDelete();
+
+	DELE_PTR_FULL(FaunaDataAsset);
+	DELE_PTR_FULL(CarrierActor);
+	DELE_PTR_FULL(HighestDangerActor);
+	DELE_PTR_FULL(PlayerTracker);
+}
+
+void UCatchFaunaConditionalStatTrigger::AfterRead()
+{
+	UConditionalStatsTriggerType::AfterRead();
+
+}
+
+void UCatchFaunaConditionalStatTrigger::BeforeDelete()
+{
+	UConditionalStatsTriggerType::BeforeDelete();
+
+}
+
+void UEnvQueryContext_LeaderFromBlackboard::AfterRead()
+{
+	UEnvQueryContext::AfterRead();
+
+}
+
+void UEnvQueryContext_LeaderFromBlackboard::BeforeDelete()
+{
+	UEnvQueryContext::BeforeDelete();
+
+}
+
+void UEnvQueryContext_Threat::AfterRead()
+{
+	UEnvQueryContext::AfterRead();
+
+}
+
+void UEnvQueryContext_Threat::BeforeDelete()
+{
+	UEnvQueryContext::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x03620EA0
+//		Name   -> Function AthenaAI.Fauna.TestingSetWaterState
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		TEnumAsByte<AthenaAI_EFaunaInWaterState>           NewInState                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AFauna::TestingSetWaterState(TEnumAsByte<AthenaAI_EFaunaInWaterState> NewInState)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.TestingSetWaterState");
+
+	AFauna_TestingSetWaterState_Params params {};
+	params.NewInState = NewInState;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620DD0
+//		Name   -> Function AthenaAI.Fauna.OnRep_TargetTurnAngle
+//		Flags  -> (Final, Native, Private)
+void AFauna::OnRep_TargetTurnAngle()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_TargetTurnAngle");
+
+	AFauna_OnRep_TargetTurnAngle_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620DB0
+//		Name   -> Function AthenaAI.Fauna.OnRep_IsPlayingStarvingAnim
+//		Flags  -> (Final, Native, Private)
+void AFauna::OnRep_IsPlayingStarvingAnim()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_IsPlayingStarvingAnim");
+
+	AFauna_OnRep_IsPlayingStarvingAnim_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620D90
+//		Name   -> Function AthenaAI.Fauna.OnRep_IsCalm
+//		Flags  -> (Final, Native, Private)
+void AFauna::OnRep_IsCalm()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_IsCalm");
+
+	AFauna_OnRep_IsCalm_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620D70
+//		Name   -> Function AthenaAI.Fauna.OnRep_IsAgitated
+//		Flags  -> (Final, Native, Private)
+void AFauna::OnRep_IsAgitated()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_IsAgitated");
+
+	AFauna_OnRep_IsAgitated_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620D50
+//		Name   -> Function AthenaAI.Fauna.OnRep_InWaterState
+//		Flags  -> (Final, Native, Private)
+void AFauna::OnRep_InWaterState()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_InWaterState");
+
+	AFauna_OnRep_InWaterState_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620CC0
+//		Name   -> Function AthenaAI.Fauna.OnRep_CratedState
+//		Flags  -> (Final, Native, Private, HasOutParms)
+// Parameters:
+//		TEnumAsByte<AthenaAI_EFaunaCratedState>            PreviousCratedState                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AFauna::OnRep_CratedState(TEnumAsByte<AthenaAI_EFaunaCratedState> PreviousCratedState)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_CratedState");
+
+	AFauna_OnRep_CratedState_Params params {};
+	params.PreviousCratedState = PreviousCratedState;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620C30
+//		Name   -> Function AthenaAI.Fauna.Multicast_PlayPutInCrateEffectsRPC
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Parameters:
+//		class AActor*                                      Crate                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AFauna::Multicast_PlayPutInCrateEffectsRPC(class AActor* Crate)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.Multicast_PlayPutInCrateEffectsRPC");
+
+	AFauna_Multicast_PlayPutInCrateEffectsRPC_Params params {};
+	params.Crate = Crate;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620BA0
+//		Name   -> Function AthenaAI.Fauna.Multicast_JustBeenFedRPC
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Parameters:
+//		class AActor*                                      FedBy                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AFauna::Multicast_JustBeenFedRPC(class AActor* FedBy)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.Multicast_JustBeenFedRPC");
+
+	AFauna_Multicast_JustBeenFedRPC_Params params {};
+	params.FedBy = FedBy;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03620B10
+//		Name   -> Function AthenaAI.Fauna.Multicast_HightlightLeader
+//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Parameters:
+//		bool                                               bIsLeader                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+void AFauna::Multicast_HightlightLeader(bool bIsLeader)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.Multicast_HightlightLeader");
+
+	AFauna_Multicast_HightlightLeader_Params params {};
+	params.bIsLeader = bIsLeader;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x0361FE10
+//		Name   -> Function AthenaAI.Fauna.GenerateNewRandomAnimationSeed
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+void AFauna::GenerateNewRandomAnimationSeed()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.GenerateNewRandomAnimationSeed");
+
+	AFauna_GenerateNewRandomAnimationSeed_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x0361FD60
+//		Name   -> Function AthenaAI.Fauna.ActivateResponseRPC
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+// Parameters:
+//		float                                              InTargetTurnAngle                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AFauna::ActivateResponseRPC(float InTargetTurnAngle)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.ActivateResponseRPC");
+
+	AFauna_ActivateResponseRPC_Params params {};
+	params.InTargetTurnAngle = InTargetTurnAngle;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void AFauna::AfterRead()
+{
+	AAICreatureCharacter::AfterRead();
+
+	READ_PTR_FULL(FaunaSpecies, UClass);
+	READ_PTR_FULL(FaunaBreed, UClass);
+	READ_PTR_FULL(HitImpactParticleSystem, UObject);
+	READ_PTR_FULL(DeathParticleSystem, UObject);
+	READ_PTR_FULL(PutInCrateParticleSystem, UObject);
+	READ_PTR_FULL(PutInCrateSoundCue, UWwiseEvent);
+	READ_PTR_FULL(TookDamageSoundCue, UWwiseEvent);
+	READ_PTR_FULL(AgitationStartedSoundCue, UWwiseEvent);
+	READ_PTR_FULL(AgitationStoppedSoundCue, UWwiseEvent);
+	READ_PTR_FULL(CalmStartedSoundCue, UWwiseEvent);
+	READ_PTR_FULL(CalmStoppedSoundCue, UWwiseEvent);
+	READ_PTR_FULL(BreathBubblesParticleSystem, UObject);
+	READ_PTR_FULL(OnFeedingForceFeedbackEffect, UForceFeedbackEffect);
+	READ_PTR_FULL(MountableComponent, UMountableComponent);
+	READ_PTR_FULL(HealthComponent, UHealthComponent);
+	READ_PTR_FULL(DamageableComponent, UDamageableComponent);
+	READ_PTR_FULL(AttackHitVolume, UPrimitiveComponent);
+	READ_PTR_FULL(Animations, UFaunaAnimationData);
+	READ_PTR_FULL(DitherComponent, UDitherComponent);
+	READ_PTR_FULL(StatusEffectManagerComponent, ULightWeightStatusEffectManagerComponent);
+	READ_PTR_FULL(AIControllerParamsWhenInCrate, UAthenaAIControllerParamsDataAsset);
+	READ_PTR_FULL(PeriodicAINoiseEventComponent, UPeriodicAINoiseEventComponent);
+	READ_PTR_FULL(AgitationResponseParticleSystem, UObject);
+	READ_PTR_FULL(FeedingComponent, UFeedingComponent);
+	READ_PTR_FULL(FaunaMovementComponent, UFaunaMovementComponent);
+	READ_PTR_FULL(Crate, AActor);
+	READ_PTR_FULL(BreathBubblesParticleSystemComponent, UParticleSystemComponent);
+	READ_PTR_FULL(VenomComponent, UVenomComponent);
+}
+
+void AFauna::BeforeDelete()
+{
+	AAICreatureCharacter::BeforeDelete();
+
+	DELE_PTR_FULL(FaunaSpecies);
+	DELE_PTR_FULL(FaunaBreed);
+	DELE_PTR_FULL(HitImpactParticleSystem);
+	DELE_PTR_FULL(DeathParticleSystem);
+	DELE_PTR_FULL(PutInCrateParticleSystem);
+	DELE_PTR_FULL(PutInCrateSoundCue);
+	DELE_PTR_FULL(TookDamageSoundCue);
+	DELE_PTR_FULL(AgitationStartedSoundCue);
+	DELE_PTR_FULL(AgitationStoppedSoundCue);
+	DELE_PTR_FULL(CalmStartedSoundCue);
+	DELE_PTR_FULL(CalmStoppedSoundCue);
+	DELE_PTR_FULL(BreathBubblesParticleSystem);
+	DELE_PTR_FULL(OnFeedingForceFeedbackEffect);
+	DELE_PTR_FULL(MountableComponent);
+	DELE_PTR_FULL(HealthComponent);
+	DELE_PTR_FULL(DamageableComponent);
+	DELE_PTR_FULL(AttackHitVolume);
+	DELE_PTR_FULL(Animations);
+	DELE_PTR_FULL(DitherComponent);
+	DELE_PTR_FULL(StatusEffectManagerComponent);
+	DELE_PTR_FULL(AIControllerParamsWhenInCrate);
+	DELE_PTR_FULL(PeriodicAINoiseEventComponent);
+	DELE_PTR_FULL(AgitationResponseParticleSystem);
+	DELE_PTR_FULL(FeedingComponent);
+	DELE_PTR_FULL(FaunaMovementComponent);
+	DELE_PTR_FULL(Crate);
+	DELE_PTR_FULL(BreathBubblesParticleSystemComponent);
+	DELE_PTR_FULL(VenomComponent);
+}
+
+void UFaunaAIPlayerTracker::AfterRead()
+{
+	UAIPlayerTracker::AfterRead();
+
+}
+
+void UFaunaAIPlayerTracker::BeforeDelete()
+{
+	UAIPlayerTracker::BeforeDelete();
+
+}
+
+void UFaunaAnimationInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UFaunaAnimationInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UFaunaMovementComponent::AfterRead()
+{
+	UAICreatureCharacterMovementComponent::AfterRead();
+
+}
+
+void UFaunaMovementComponent::BeforeDelete()
+{
+	UAICreatureCharacterMovementComponent::BeforeDelete();
+
+}
+
+void UMerchantCrateMetaGenerator::AfterRead()
+{
+	UItemSnapshotMetaGenerator::AfterRead();
+
+}
+
+void UMerchantCrateMetaGenerator::BeforeDelete()
+{
+	UItemSnapshotMetaGenerator::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x03762FC0
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAIWithSettings
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+//		TAssetPtr<class UClass>                            AIType                                                     (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
+//		TAssetPtr<class UAthenaAIControllerParamsDataAsset> Skillset                                                   (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
+//		TAssetPtr<class ULoadoutAsset>                     Loadout                                                    (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
+//		TAssetPtr<class UAthenaAIFormDataAsset>            Form                                                       (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
+//		TAssetPtr<class UClass>                            AIItemSpawnComponent                                       (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
+//		class UClass*                                      ClassId                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		TAssetPtr<class UAthenaAIAmmoDataAsset>            Ammo                                                       (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
+//		struct FVector                                     Pos                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FRotator                                    Rot                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FName                                       Region                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      TriggerActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FName                                       NavMeshOverride                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Delay                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void UAthenaAIDebugFunctionLibrary::STATIC_SpawnAIWithSettings(TAssetPtr<class UClass> AIType, TAssetPtr<class UAthenaAIControllerParamsDataAsset> Skillset, TAssetPtr<class ULoadoutAsset> Loadout, TAssetPtr<class UAthenaAIFormDataAsset> Form, TAssetPtr<class UClass> AIItemSpawnComponent, class UClass* ClassId, TAssetPtr<class UAthenaAIAmmoDataAsset> Ammo, const struct FVector& Pos, const struct FRotator& Rot, const struct FName& Region, class AActor* TriggerActor, const struct FName& NavMeshOverride, float Delay)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAIWithSettings");
+
+	UAthenaAIDebugFunctionLibrary_SpawnAIWithSettings_Params params {};
+	params.AIType = AIType;
+	params.Skillset = Skillset;
+	params.Loadout = Loadout;
+	params.Form = Form;
+	params.AIItemSpawnComponent = AIItemSpawnComponent;
+	params.ClassId = ClassId;
+	params.Ammo = Ammo;
+	params.Pos = Pos;
+	params.Rot = Rot;
+	params.Region = Region;
+	params.TriggerActor = TriggerActor;
+	params.NavMeshOverride = NavMeshOverride;
+	params.Delay = Delay;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03762CA0
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAI
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+//		class UAIEncounterSettings*                        EncounterSettings                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     Pos                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		struct FRotator                                    Rot                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		float                                              Delay                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               MakeAIPermanentlyNetRelevant                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		class AActor*                                      InstancedNavMesh                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FAIEncounterSpecification                   ReturnValue                                                (Parm, OutParm, ReturnParm)
+struct FAIEncounterSpecification UAthenaAIDebugFunctionLibrary::STATIC_SpawnAI(class UAIEncounterSettings* EncounterSettings, const struct FVector& Pos, const struct FRotator& Rot, float Delay, bool MakeAIPermanentlyNetRelevant, class AActor* InstancedNavMesh)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAI");
+
+	UAthenaAIDebugFunctionLibrary_SpawnAI_Params params {};
+	params.EncounterSettings = EncounterSettings;
+	params.Pos = Pos;
+	params.Rot = Rot;
+	params.Delay = Delay;
+	params.MakeAIPermanentlyNetRelevant = MakeAIPermanentlyNetRelevant;
+	params.InstancedNavMesh = InstancedNavMesh;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x03762BE0
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.SetEnvQueryManagerMaxAllowedSeconds
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+//		float                                              InMaxAllowedSeconds                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UObject*                                     QueryOwner                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void UAthenaAIDebugFunctionLibrary::STATIC_SetEnvQueryManagerMaxAllowedSeconds(float InMaxAllowedSeconds, class UObject* QueryOwner)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.SetEnvQueryManagerMaxAllowedSeconds");
+
+	UAthenaAIDebugFunctionLibrary_SetEnvQueryManagerMaxAllowedSeconds_Params params {};
+	params.InMaxAllowedSeconds = InMaxAllowedSeconds;
+	params.QueryOwner = QueryOwner;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03762BC0
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.KillAllDebugAISpawners
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+void UAthenaAIDebugFunctionLibrary::STATIC_KillAllDebugAISpawners()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.KillAllDebugAISpawners");
+
+	UAthenaAIDebugFunctionLibrary_KillAllDebugAISpawners_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03762B40
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.GetEnvQueryManagerNumRunningQueries
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+//		class UObject*                                     QueryOwner                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+int UAthenaAIDebugFunctionLibrary::STATIC_GetEnvQueryManagerNumRunningQueries(class UObject* QueryOwner)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.GetEnvQueryManagerNumRunningQueries");
+
+	UAthenaAIDebugFunctionLibrary_GetEnvQueryManagerNumRunningQueries_Params params {};
+	params.QueryOwner = QueryOwner;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x03762AD0
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableMaximumSightSettings
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+//		class AAthenaAIController*                         AIController                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void UAthenaAIDebugFunctionLibrary::STATIC_EnableMaximumSightSettings(class AAthenaAIController* AIController)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableMaximumSightSettings");
+
+	UAthenaAIDebugFunctionLibrary_EnableMaximumSightSettings_Params params {};
+	params.AIController = AIController;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03762A60
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableBehaviorTreeLogging
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+//		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void UAthenaAIDebugFunctionLibrary::STATIC_EnableBehaviorTreeLogging(class UObject* WorldContext)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableBehaviorTreeLogging");
+
+	UAthenaAIDebugFunctionLibrary_EnableBehaviorTreeLogging_Params params {};
+	params.WorldContext = WorldContext;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x037629F0
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.DespawnAIPawn
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+//		class APawn*                                       Pawn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void UAthenaAIDebugFunctionLibrary::STATIC_DespawnAIPawn(class APawn* Pawn)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.DespawnAIPawn");
+
+	UAthenaAIDebugFunctionLibrary_DespawnAIPawn_Params params {};
+	params.Pawn = Pawn;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x037628F0
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtPosition
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+//		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAISpawner*                                  SpawnerAsset                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     Pos                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+void UAthenaAIDebugFunctionLibrary::STATIC_CreateAISpawnerAtPosition(class UObject* WorldContext, class UAISpawner* SpawnerAsset, const struct FVector& Pos)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtPosition");
+
+	UAthenaAIDebugFunctionLibrary_CreateAISpawnerAtPosition_Params params {};
+	params.WorldContext = WorldContext;
+	params.SpawnerAsset = SpawnerAsset;
+	params.Pos = Pos;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03762800
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtActor
+//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+//		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UAISpawner*                                  SpawnerAsset                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class AActor*                                      SpawnLocationActor                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void UAthenaAIDebugFunctionLibrary::STATIC_CreateAISpawnerAtActor(class UObject* WorldContext, class UAISpawner* SpawnerAsset, class AActor* SpawnLocationActor)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtActor");
+
+	UAthenaAIDebugFunctionLibrary_CreateAISpawnerAtActor_Params params {};
+	params.WorldContext = WorldContext;
+	params.SpawnerAsset = SpawnerAsset;
+	params.SpawnLocationActor = SpawnLocationActor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03762630
+//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.CanProjectPointToNavigation
+//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+//		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		struct FVector                                     Point                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		struct FVector                                     QueryExtent                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+struct FVector UAthenaAIDebugFunctionLibrary::STATIC_CanProjectPointToNavigation(class UObject* WorldContext, const struct FVector& Point, class ANavigationData* NavData, class UClass* FilterClass, const struct FVector& QueryExtent)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.CanProjectPointToNavigation");
+
+	UAthenaAIDebugFunctionLibrary_CanProjectPointToNavigation_Params params {};
+	params.WorldContext = WorldContext;
+	params.Point = Point;
+	params.NavData = NavData;
+	params.FilterClass = FilterClass;
+	params.QueryExtent = QueryExtent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+void UAthenaAIDebugFunctionLibrary::AfterRead()
+{
+	UBlueprintFunctionLibrary::AfterRead();
+
+}
+
+void UAthenaAIDebugFunctionLibrary::BeforeDelete()
+{
+	UBlueprintFunctionLibrary::BeforeDelete();
+
+}
+
+void ADebugAISpawnerCreator::AfterRead()
+{
+	AActor::AfterRead();
+
+	READ_PTR_FULL(SpawnerTemplate, UAISpawner);
+	READ_PTR_FULL(Spawner, UAISpawner);
+	READ_PTR_FULL(ProximityPlayerTracker, UAIProximityPlayerTracker);
+	READ_PTR_FULL(Region, USimpleAIRegion);
+}
+
+void ADebugAISpawnerCreator::BeforeDelete()
+{
+	AActor::BeforeDelete();
+
+	DELE_PTR_FULL(SpawnerTemplate);
+	DELE_PTR_FULL(Spawner);
+	DELE_PTR_FULL(ProximityPlayerTracker);
+	DELE_PTR_FULL(Region);
+}
+
+void UAIDioramaLocationSourceInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UAIDioramaLocationSourceInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void AAIDiorama::AfterRead()
+{
+	AActor::AfterRead();
+
+	READ_PTR_FULL(SceneComponent, USceneComponent);
+	READ_PTR_FULL(SpawnedDialogueCoordinator, ASceneDialogueCoordinator);
+	READ_PTR_FULL(DialogueData, USceneDialogueData);
+}
+
+void AAIDiorama::BeforeDelete()
+{
+	AActor::BeforeDelete();
+
+	DELE_PTR_FULL(SceneComponent);
+	DELE_PTR_FULL(SpawnedDialogueCoordinator);
+	DELE_PTR_FULL(DialogueData);
+}
+
+void UAIDioramaCategory::AfterRead()
+{
+	UObject::AfterRead();
+
+}
+
+void UAIDioramaCategory::BeforeDelete()
+{
+	UObject::BeforeDelete();
+
+}
+
+void UAIDioramaController::AfterRead()
+{
+	UObject::AfterRead();
+
+	READ_PTR_FULL(AIDioramaDesc, UAIDioramaDesc);
+	READ_PTR_FULL(DialogueData, USceneDialogueData);
+	READ_PTR_FULL(AIDiorama, AAIDiorama);
+	READ_PTR_FULL(Spawner, UAISpawner);
+}
+
+void UAIDioramaController::BeforeDelete()
+{
+	UObject::BeforeDelete();
+
+	DELE_PTR_FULL(AIDioramaDesc);
+	DELE_PTR_FULL(DialogueData);
+	DELE_PTR_FULL(AIDiorama);
+	DELE_PTR_FULL(Spawner);
+}
+
+void UAIDioramaDesc::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+	READ_PTR_FULL(DialogueData, USceneDialogueData);
+}
+
+void UAIDioramaDesc::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+	DELE_PTR_FULL(DialogueData);
+}
+
+void UAIDioramaLocationSourceComponent::AfterRead()
+{
+	USceneComponent::AfterRead();
+
+	READ_PTR_FULL(DialogueTriggerRadiusSphere, USphereComponent);
+	READ_PTR_FULL(DialogueSubtitleRadiusSphere, USphereComponent);
+	READ_PTR_FULL(AISenseRadiusSphere, USphereComponent);
+}
+
+void UAIDioramaLocationSourceComponent::BeforeDelete()
+{
+	USceneComponent::BeforeDelete();
+
+	DELE_PTR_FULL(DialogueTriggerRadiusSphere);
+	DELE_PTR_FULL(DialogueSubtitleRadiusSphere);
+	DELE_PTR_FULL(AISenseRadiusSphere);
+}
+
+void UAIDioramaServiceInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UAIDioramaServiceInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void AAIDioramaService::AfterRead()
+{
+	AActor::AfterRead();
+
+}
+
+void AAIDioramaService::BeforeDelete()
+{
+	AActor::BeforeDelete();
+
+}
+
+void ADebugDioramaCreator::AfterRead()
+{
+	ADebugAISpawnerCreator::AfterRead();
+
+	READ_PTR_FULL(AIDioramaDesc, UAIDioramaDesc);
+	READ_PTR_FULL(Location, UAIDioramaLocationSourceComponent);
+	READ_PTR_FULL(AIDioramaController, UAIDioramaController);
+}
+
+void ADebugDioramaCreator::BeforeDelete()
+{
+	ADebugAISpawnerCreator::BeforeDelete();
+
+	DELE_PTR_FULL(AIDioramaDesc);
+	DELE_PTR_FULL(Location);
+	DELE_PTR_FULL(AIDioramaController);
+}
+
+void UInDioramaAIStrategyId::AfterRead()
+{
+	UAIStrategyId::AfterRead();
+
+}
+
+void UInDioramaAIStrategyId::BeforeDelete()
+{
+	UAIStrategyId::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x03A14A60
+//		Name   -> Function AthenaAI.Pet.SetExitTakeOffFlag
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		bool                                               InExitTakeOffFlag                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+void APet::SetExitTakeOffFlag(bool InExitTakeOffFlag)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.SetExitTakeOffFlag");
+
+	APet_SetExitTakeOffFlag_Params params {};
+	params.InExitTakeOffFlag = InExitTakeOffFlag;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A14900
+//		Name   -> Function AthenaAI.Pet.OnShipDestroyed
+//		Flags  -> (Final, Native, Public)
+// Parameters:
+//		class AActor*                                      InShip                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void APet::OnShipDestroyed(class AActor* InShip)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnShipDestroyed");
+
+	APet_OnShipDestroyed_Params params {};
+	params.InShip = InShip;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A148E0
+//		Name   -> Function AthenaAI.Pet.OnRep_RollRequest
+//		Flags  -> (Final, Native, Private)
+void APet::OnRep_RollRequest()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_RollRequest");
+
+	APet_OnRep_RollRequest_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A148C0
+//		Name   -> Function AthenaAI.Pet.OnRep_ResetRollAndZOffset
+//		Flags  -> (Final, Native, Private)
+void APet::OnRep_ResetRollAndZOffset()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_ResetRollAndZOffset");
+
+	APet_OnRep_ResetRollAndZOffset_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A148A0
+//		Name   -> Function AthenaAI.Pet.OnRep_PetTurnToFaceData
+//		Flags  -> (Final, Native, Public)
+void APet::OnRep_PetTurnToFaceData()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_PetTurnToFaceData");
+
+	APet_OnRep_PetTurnToFaceData_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A14880
+//		Name   -> Function AthenaAI.Pet.OnRep_PetOwner
+//		Flags  -> (Final, Native, Private)
+void APet::OnRep_PetOwner()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_PetOwner");
+
+	APet_OnRep_PetOwner_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A14860
+//		Name   -> Function AthenaAI.Pet.OnRep_PetIsSad
+//		Flags  -> (Final, Native, Private)
+void APet::OnRep_PetIsSad()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_PetIsSad");
+
+	APet_OnRep_PetIsSad_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A14840
+//		Name   -> Function AthenaAI.Pet.OnRep_PerchedInHangout
+//		Flags  -> (Final, Native, Private)
+void APet::OnRep_PerchedInHangout()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_PerchedInHangout");
+
+	APet_OnRep_PerchedInHangout_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A14820
+//		Name   -> Function AthenaAI.Pet.OnRep_MovementRequest
+//		Flags  -> (Final, Native, Private)
+void APet::OnRep_MovementRequest()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_MovementRequest");
+
+	APet_OnRep_MovementRequest_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A147E0
+//		Name   -> Function AthenaAI.Pet.OnRep_InHangout
+//		Flags  -> (Final, Native, Private)
+void APet::OnRep_InHangout()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_InHangout");
+
+	APet_OnRep_InHangout_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A145C0
+//		Name   -> Function AthenaAI.Pet.OnOwnerDestroyed
+//		Flags  -> (Final, Native, Public)
+// Parameters:
+//		class AActor*                                      InOwner                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void APet::OnOwnerDestroyed(class AActor* InOwner)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnOwnerDestroyed");
+
+	APet_OnOwnerDestroyed_Params params {};
+	params.InOwner = InOwner;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A145A0
+//		Name   -> Function AthenaAI.Pet.Multicast_DitherOut
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+void APet::Multicast_DitherOut()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.Multicast_DitherOut");
+
+	APet_Multicast_DitherOut_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A14580
+//		Name   -> Function AthenaAI.Pet.Multicast_DitherIn
+//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
+void APet::Multicast_DitherIn()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.Multicast_DitherIn");
+
+	APet_Multicast_DitherIn_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03A14560
+//		Name   -> Function AthenaAI.Pet.GetFloorMeshOffsetZ
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+float APet::GetFloorMeshOffsetZ()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.GetFloorMeshOffsetZ");
+
+	APet_GetFloorMeshOffsetZ_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+void APet::AfterRead()
+{
+	AAICreatureCharacter::AfterRead();
+
+	READ_PTR_FULL(WieldableReactMappingsAsset, UPetWieldableReactMappingsDataAsset);
+	READ_PTR_FULL(FlyingLandCurve, UCurveFloat);
+	READ_PTR_FULL(FlyingTakeOffCurve, UCurveFloat);
+	READ_PTR_FULL(MidFlightAdjustmentCurve, UCurveFloat);
+	READ_PTR_FULL(MidFlightTimeToDistanceAdjustmentCurve, UCurveFloat);
+	READ_PTR_FULL(FiredFromActorSFX, UWwiseEvent);
+	READ_PTR_FULL(DitherComponent, UPetDitherComponent);
+	READ_PTR_FULL(AINameplateComponent, UAINameplateComponent);
+	READ_PTR_FULL(FeedingComponent, UFeedingComponent);
+	READ_PTR_FULL(StarvingComponent, UStarvingComponent);
+	READ_PTR_FULL(CleanlinessComponent, UCleanlinessComponent);
+	READ_PTR_FULL(CannonSquashComponent, UCannonSquashComponent);
+	READ_PTR_FULL(AIPartsRetrievalComponent, UAIPartsRetrievalComponent);
+	READ_PTR_FULL(PetPartCustomisationComponent, UPetPartCustomisationComponent);
+	READ_PTR_FULL(LightWeightStatusEffectManagerComponent, ULightWeightStatusEffectManagerComponent);
+	READ_PTR_FULL(TelemetryComponent, UPetTelemetryComponent);
+	READ_PTR_FULL(SicknessComponent, UPetSicknessComponent);
+	READ_PTR_FULL(WaterExposureComponent, UWaterExposureComponent);
+	READ_PTR_FULL(AnimationDataStoreComponent, UAnimationDataStoreComponent);
+	READ_PTR_FULL(SpawnedForShip, AActor);
+	READ_PTR_FULL(PetOwner, AActor);
+	READ_PTR_FULL(PetInfo, AItemInfo);
+	READ_PTR_FULL(CurrentlyPlayingParticleSystem, UParticleSystemComponent);
+	READ_PTR_FULL(LandingStrategy, UClass);
+	READ_PTR_FULL(PursuitStrategy, UClass);
+}
+
+void APet::BeforeDelete()
+{
+	AAICreatureCharacter::BeforeDelete();
+
+	DELE_PTR_FULL(WieldableReactMappingsAsset);
+	DELE_PTR_FULL(FlyingLandCurve);
+	DELE_PTR_FULL(FlyingTakeOffCurve);
+	DELE_PTR_FULL(MidFlightAdjustmentCurve);
+	DELE_PTR_FULL(MidFlightTimeToDistanceAdjustmentCurve);
+	DELE_PTR_FULL(FiredFromActorSFX);
+	DELE_PTR_FULL(DitherComponent);
+	DELE_PTR_FULL(AINameplateComponent);
+	DELE_PTR_FULL(FeedingComponent);
+	DELE_PTR_FULL(StarvingComponent);
+	DELE_PTR_FULL(CleanlinessComponent);
+	DELE_PTR_FULL(CannonSquashComponent);
+	DELE_PTR_FULL(AIPartsRetrievalComponent);
+	DELE_PTR_FULL(PetPartCustomisationComponent);
+	DELE_PTR_FULL(LightWeightStatusEffectManagerComponent);
+	DELE_PTR_FULL(TelemetryComponent);
+	DELE_PTR_FULL(SicknessComponent);
+	DELE_PTR_FULL(WaterExposureComponent);
+	DELE_PTR_FULL(AnimationDataStoreComponent);
+	DELE_PTR_FULL(SpawnedForShip);
+	DELE_PTR_FULL(PetOwner);
+	DELE_PTR_FULL(PetInfo);
+	DELE_PTR_FULL(CurrentlyPlayingParticleSystem);
+	DELE_PTR_FULL(LandingStrategy);
+	DELE_PTR_FULL(PursuitStrategy);
+}
+
+void UBTTask_SetRoamingPetAnimationState::AfterRead()
+{
+	UBTTask_BlackboardBase::AfterRead();
+
+}
+
+void UBTTask_SetRoamingPetAnimationState::BeforeDelete()
+{
+	UBTTask_BlackboardBase::BeforeDelete();
+
+}
+
+void UEnvQueryContext_PositionFromBlackboard::AfterRead()
+{
+	UEnvQueryContext::AfterRead();
+
+}
+
+void UEnvQueryContext_PositionFromBlackboard::BeforeDelete()
+{
+	UEnvQueryContext::BeforeDelete();
+
+}
+
+void UPetDitherComponent::AfterRead()
+{
+	UDitherComponent::AfterRead();
+
+}
+
+void UPetDitherComponent::BeforeDelete()
+{
+	UDitherComponent::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x041D1AB0
+//		Name   -> Function AthenaAI.AINameplateComponent.OnRep_Title
+//		Flags  -> (Final, Native, Private)
+void UAINameplateComponent::OnRep_Title()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AINameplateComponent.OnRep_Title");
+
+	UAINameplateComponent_OnRep_Title_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D1A30
+//		Name   -> Function AthenaAI.AINameplateComponent.OnRep_DisplayNameAsString
+//		Flags  -> (Final, Native, Private)
+void UAINameplateComponent::OnRep_DisplayNameAsString()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AINameplateComponent.OnRep_DisplayNameAsString");
+
+	UAINameplateComponent_OnRep_DisplayNameAsString_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D1A10
+//		Name   -> Function AthenaAI.AINameplateComponent.OnRep_DisplayName
+//		Flags  -> (Final, Native, Private)
+void UAINameplateComponent::OnRep_DisplayName()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AINameplateComponent.OnRep_DisplayName");
+
+	UAINameplateComponent_OnRep_DisplayName_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D19F0
+//		Name   -> Function AthenaAI.AINameplateComponent.OnRep_DebugDisplayText
+//		Flags  -> (Final, Native, Private)
+void UAINameplateComponent::OnRep_DebugDisplayText()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AINameplateComponent.OnRep_DebugDisplayText");
+
+	UAINameplateComponent_OnRep_DebugDisplayText_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void UAINameplateComponent::AfterRead()
+{
+	UNameplateComponent::AfterRead();
+
+}
+
+void UAINameplateComponent::BeforeDelete()
+{
+	UNameplateComponent::BeforeDelete();
+
+}
+
+void UPetNameplateComponent::AfterRead()
+{
+	UAINameplateComponent::AfterRead();
+
+}
+
+void UPetNameplateComponent::BeforeDelete()
+{
+	UAINameplateComponent::BeforeDelete();
+
+}
+
+void UPetPartCustomisationComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+	READ_PTR_FULL(AnimationDataStoreId, UClass);
+	READ_PTR_FULL(SizeMappingsAsset, UPetPartSizeMappingsDataAsset);
+	READ_PTR_FULL(CurrentlyLoadedMesh, USkeletalMesh);
+	READ_PTR_FULL(CurrentlyLoadedOverrideAsset, UPetCustomisationOverrideDataAsset);
+}
+
+void UPetPartCustomisationComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+	DELE_PTR_FULL(AnimationDataStoreId);
+	DELE_PTR_FULL(SizeMappingsAsset);
+	DELE_PTR_FULL(CurrentlyLoadedMesh);
+	DELE_PTR_FULL(CurrentlyLoadedOverrideAsset);
+}
+
+void UPetPartSizeMappingsDataAsset::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+}
+
+void UPetPartSizeMappingsDataAsset::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+}
+
+void UPetSicknessComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+}
+
+void UPetSicknessComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+}
+
+void UAIPartsDesc::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+}
+
+void UAIPartsDesc::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+}
+
+void UPetsPartsDesc::AfterRead()
+{
+	UAIPartsDesc::AfterRead();
+
+	READ_PTR_FULL(PetOverrideAsset, UPetCustomisationOverrideDataAsset);
+}
+
+void UPetsPartsDesc::BeforeDelete()
+{
+	UAIPartsDesc::BeforeDelete();
+
+	DELE_PTR_FULL(PetOverrideAsset);
+}
+
+void UPetTelemetryComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+}
+
+void UPetTelemetryComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+}
+
+void UPetWieldableReactMappingsDataAsset::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+}
+
+void UPetWieldableReactMappingsDataAsset::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+}
+
+void APreviewPet::AfterRead()
+{
+	AActor::AfterRead();
+
+	READ_PTR_FULL(PreviewPetPartsCategory, UAIPartsCategory);
+	READ_PTR_FULL(PreviewPetMesh, USkeletalMeshComponent);
+	READ_PTR_FULL(AIPartsRetrievalComponent, UAIPartsRetrievalComponent);
+	READ_PTR_FULL(PetPartCustomisationComponent, UPetPartCustomisationComponent);
+}
+
+void APreviewPet::BeforeDelete()
+{
+	AActor::BeforeDelete();
+
+	DELE_PTR_FULL(PreviewPetPartsCategory);
+	DELE_PTR_FULL(PreviewPetMesh);
+	DELE_PTR_FULL(AIPartsRetrievalComponent);
+	DELE_PTR_FULL(PetPartCustomisationComponent);
+}
+
+// Function:
+//		Offset -> 0x03AC1710
+//		Name   -> Function AthenaAI.AthenaSwimmingAIController.ApplyControllerParams
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		class UAthenaAIControllerParamsDataAsset*          InControllerParametersAsset                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		class APawn*                                       InPawn                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AAthenaSwimmingAIController::ApplyControllerParams(class UAthenaAIControllerParamsDataAsset* InControllerParametersAsset, class APawn* InPawn)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaSwimmingAIController.ApplyControllerParams");
+
+	AAthenaSwimmingAIController_ApplyControllerParams_Params params {};
+	params.InControllerParametersAsset = InControllerParametersAsset;
+	params.InPawn = InPawn;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void AAthenaSwimmingAIController::AfterRead()
+{
+	AAthenaAIController::AfterRead();
+
+	READ_PTR_FULL(SwimmingPathFollowingComponent, USwimmingPathFollowingComponent);
+	READ_PTR_FULL(DistOfAttackerVsChanceToPursue, UCurveFloat);
+}
+
+void AAthenaSwimmingAIController::BeforeDelete()
+{
+	AAthenaAIController::BeforeDelete();
+
+	DELE_PTR_FULL(SwimmingPathFollowingComponent);
+	DELE_PTR_FULL(DistOfAttackerVsChanceToPursue);
+}
+
+void UBTDecorator_NearSurfaceOfWater::AfterRead()
+{
+	UBTDecorator::AfterRead();
+
+}
+
+void UBTDecorator_NearSurfaceOfWater::BeforeDelete()
+{
+	UBTDecorator::BeforeDelete();
+
+}
+
+void UBTService_SetFloatToTheSurfaceWhileInBranch::AfterRead()
+{
+	UBTService::AfterRead();
+
+}
+
+void UBTService_SetFloatToTheSurfaceWhileInBranch::BeforeDelete()
+{
+	UBTService::BeforeDelete();
+
+}
+
+void UBTTask_SetFloatToTheSurface::AfterRead()
+{
+	UBTTaskNode::AfterRead();
+
+}
+
+void UBTTask_SetFloatToTheSurface::BeforeDelete()
+{
+	UBTTaskNode::BeforeDelete();
+
+}
+
+void USwimmingCreatureMovementAnimationInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void USwimmingCreatureMovementAnimationInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void USwimmingPathFollowingComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+	READ_PTR_FULL(MovementComponent, USwimmingCreatureMovementComponent);
+	READ_PTR_FULL(SwimmingAIController, AAthenaSwimmingAIController);
+	READ_PTR_FULL(TargetActor, AActor);
+}
+
+void USwimmingPathFollowingComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+	DELE_PTR_FULL(MovementComponent);
+	DELE_PTR_FULL(SwimmingAIController);
+	DELE_PTR_FULL(TargetActor);
+}
+
+void UBTTask_SwimTo::AfterRead()
+{
+	UBTTask_BlackboardBase::AfterRead();
+
+}
+
+void UBTTask_SwimTo::BeforeDelete()
+{
+	UBTTask_BlackboardBase::BeforeDelete();
+
+}
+
+void UBTTask_SwimTurnOnTheSpot::AfterRead()
+{
+	UBTTask_BlackboardBase::AfterRead();
+
+}
+
+void UBTTask_SwimTurnOnTheSpot::BeforeDelete()
+{
+	UBTTask_BlackboardBase::BeforeDelete();
+
+}
+
+void UAthenaAIControllerParamsDataAsset::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+}
+
+void UAthenaAIControllerParamsDataAsset::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+}
+
+void UTinySharkTelemetryComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+}
+
+void UTinySharkTelemetryComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x03C8BF10
+//		Name   -> Function AthenaAI.TinySharkExperience.TinySharkPawnDestroyed
+//		Flags  -> (Final, Native, Private)
+// Parameters:
+//		class AActor*                                      InDestroyedActor                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void ATinySharkExperience::TinySharkPawnDestroyed(class AActor* InDestroyedActor)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.TinySharkPawnDestroyed");
+
+	ATinySharkExperience_TinySharkPawnDestroyed_Params params {};
+	params.InDestroyedActor = InDestroyedActor;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03C8BCA0
+//		Name   -> Function AthenaAI.TinySharkExperience.OnRep_TinySharkPawn
+//		Flags  -> (Native, Protected)
+// Parameters:
+//		class ASharkPawn*                                  LastTinySharkPawn                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void ATinySharkExperience::OnRep_TinySharkPawn(class ASharkPawn* LastTinySharkPawn)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.OnRep_TinySharkPawn");
+
+	ATinySharkExperience_OnRep_TinySharkPawn_Params params {};
+	params.LastTinySharkPawn = LastTinySharkPawn;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03C8BC80
+//		Name   -> Function AthenaAI.TinySharkExperience.GetTrackedShip
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		class AShip*                                       ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+class AShip* ATinySharkExperience::GetTrackedShip()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.GetTrackedShip");
+
+	ATinySharkExperience_GetTrackedShip_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x03C8BC60
+//		Name   -> Function AthenaAI.TinySharkExperience.GetCurrentState
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		TEnumAsByte<AthenaAI_ETinySharkState>              ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+TEnumAsByte<AthenaAI_ETinySharkState> ATinySharkExperience::GetCurrentState()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.GetCurrentState");
+
+	ATinySharkExperience_GetCurrentState_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x03C8BC40
+//		Name   -> Function AthenaAI.TinySharkExperience.GetActiveState
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		TEnumAsByte<AthenaAI_ETinySharkActiveState>        ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+TEnumAsByte<AthenaAI_ETinySharkActiveState> ATinySharkExperience::GetActiveState()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.GetActiveState");
+
+	ATinySharkExperience_GetActiveState_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+void ATinySharkExperience::AfterRead()
+{
+	AActor::AfterRead();
+
+	READ_PTR_FULL(TrackingMovementValidQuery, UEnvQuery);
+	READ_PTR_FULL(TinySharkSpawner, UAIOnDemandSpawner);
+	READ_PTR_FULL(TinySharkPawn, ASharkPawn);
+	READ_PTR_FULL(TinySharkTelemetryComponent, UTinySharkTelemetryComponent);
+	READ_PTR_FULL(TrackedShip, AShip);
+}
+
+void ATinySharkExperience::BeforeDelete()
+{
+	AActor::BeforeDelete();
+
+	DELE_PTR_FULL(TrackingMovementValidQuery);
+	DELE_PTR_FULL(TinySharkSpawner);
+	DELE_PTR_FULL(TinySharkPawn);
+	DELE_PTR_FULL(TinySharkTelemetryComponent);
+	DELE_PTR_FULL(TrackedShip);
+}
+
+void UCoralShieldAbility::AfterRead()
+{
+	UAthenaAIAbility::AfterRead();
+
+}
+
+void UCoralShieldAbility::BeforeDelete()
+{
+	UAthenaAIAbility::BeforeDelete();
+
+}
+
+void UElectricShieldAbility::AfterRead()
+{
+	UAthenaAIAbility::AfterRead();
+
+}
+
+void UElectricShieldAbility::BeforeDelete()
+{
+	UAthenaAIAbility::BeforeDelete();
+
+}
+
+void USporeBreathAIAbility::AfterRead()
+{
+	UAthenaAIAbility::AfterRead();
+
+	READ_PTR_FULL(BreathActor, AStatusEffectOverlapZone);
+	READ_PTR_FULL(BreathVFX, UVFXSpawnerComponent);
+}
+
+void USporeBreathAIAbility::BeforeDelete()
+{
+	UAthenaAIAbility::BeforeDelete();
+
+	DELE_PTR_FULL(BreathActor);
+	DELE_PTR_FULL(BreathVFX);
+}
+
+void UAthenaAIAbilityHandlerInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UAthenaAIAbilityHandlerInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UTinySharkParamsDataAsset::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+}
+
+void UTinySharkParamsDataAsset::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+}
+
+void UTinySharkServiceInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UTinySharkServiceInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x03C8BE10
+//		Name   -> Function AthenaAI.TinySharkService.RequestTinySharkWithShip
+//		Flags  -> (Native, Public, BlueprintCallable)
+// Parameters:
+//		class AShip*                                       InTrackedShip                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                OverrideControllerParamIndex                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		int                                                PartIndex                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+bool ATinySharkService::RequestTinySharkWithShip(class AShip* InTrackedShip, int OverrideControllerParamIndex, int PartIndex)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkService.RequestTinySharkWithShip");
+
+	ATinySharkService_RequestTinySharkWithShip_Params params {};
+	params.InTrackedShip = InTrackedShip;
+	params.OverrideControllerParamIndex = OverrideControllerParamIndex;
+	params.PartIndex = PartIndex;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x03C8BD30
+//		Name   -> Function AthenaAI.TinySharkService.RequestTinySharkWithLocation
+//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+//		struct FVector                                     SpawnLocation                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+//		int                                                PartIndex                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+bool ATinySharkService::RequestTinySharkWithLocation(const struct FVector& SpawnLocation, int PartIndex)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkService.RequestTinySharkWithLocation");
+
+	ATinySharkService_RequestTinySharkWithLocation_Params params {};
+	params.SpawnLocation = SpawnLocation;
+	params.PartIndex = PartIndex;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x03C8BC10
+//		Name   -> Function AthenaAI.TinySharkService.DismissAllTinySharks
+//		Flags  -> (Native, Public, BlueprintCallable)
+void ATinySharkService::DismissAllTinySharks()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkService.DismissAllTinySharks");
+
+	ATinySharkService_DismissAllTinySharks_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x03C8BBD0
+//		Name   -> Function AthenaAI.TinySharkService.CanSpawnTinySharkExperience
+//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+bool ATinySharkService::CanSpawnTinySharkExperience()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkService.CanSpawnTinySharkExperience");
+
+	ATinySharkService_CanSpawnTinySharkExperience_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+void ATinySharkService::AfterRead()
+{
+	AActor::AfterRead();
+
+	READ_PTR_FULL(TinySharkServiceParams, UTinySharkServiceParamsDataAsset);
+}
+
+void ATinySharkService::BeforeDelete()
+{
+	AActor::BeforeDelete();
+
+	DELE_PTR_FULL(TinySharkServiceParams);
+}
+
+void UTinySharkServiceParamsDataAsset::AfterRead()
+{
+	UDataAsset::AfterRead();
+
+}
+
+void UTinySharkServiceParamsDataAsset::BeforeDelete()
+{
+	UDataAsset::BeforeDelete();
+
+}
+
+void UMeshMemoryConstraintsAIPartsDesc::AfterRead()
+{
+	UAIPartsDesc::AfterRead();
+
+	READ_PTR_FULL(MeshFallbackCategory, UClass);
+	READ_PTR_FULL(BudgetToCountMemoryAgainstIfNoFallback, UClass);
+}
+
+void UMeshMemoryConstraintsAIPartsDesc::BeforeDelete()
+{
+	UAIPartsDesc::BeforeDelete();
+
+	DELE_PTR_FULL(MeshFallbackCategory);
+	DELE_PTR_FULL(BudgetToCountMemoryAgainstIfNoFallback);
+}
+
+void UTeleportAIAbility::AfterRead()
+{
+	UAthenaAIAbility::AfterRead();
+
+}
+
+void UTeleportAIAbility::BeforeDelete()
+{
+	UAthenaAIAbility::BeforeDelete();
+
+}
+
 void UAIItemParameterInterface::AfterRead()
 {
 	UInterface::AfterRead();
@@ -2047,18 +4877,6 @@ void UAthenaAIControllerSharedParamValuesDataAsset::AfterRead()
 }
 
 void UAthenaAIControllerSharedParamValuesDataAsset::BeforeDelete()
-{
-	UDataAsset::BeforeDelete();
-
-}
-
-void UAthenaAIControllerParamsDataAsset::AfterRead()
-{
-	UDataAsset::AfterRead();
-
-}
-
-void UAthenaAIControllerParamsDataAsset::BeforeDelete()
 {
 	UDataAsset::BeforeDelete();
 
@@ -2182,18 +5000,6 @@ void UAIClassId::BeforeDelete()
 
 }
 
-void UAIPartsDesc::AfterRead()
-{
-	UDataAsset::AfterRead();
-
-}
-
-void UAIPartsDesc::BeforeDelete()
-{
-	UDataAsset::BeforeDelete();
-
-}
-
 void UAIPartsCategory::AfterRead()
 {
 	UDataAsset::AfterRead();
@@ -2219,7 +5025,7 @@ void UAIPartsServiceInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363CEA0
+//		Offset -> 0x041D2580
 //		Name   -> Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedSkillsetProgression
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2228,7 +5034,7 @@ void UAIEncounterServiceInterface::RegisterLoadedSkillsetProgression(TAssetPtr<c
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedSkillsetProgression");
 
-	UAIEncounterServiceInterface_RegisterLoadedSkillsetProgression_Params params;
+	UAIEncounterServiceInterface_RegisterLoadedSkillsetProgression_Params params {};
 	params.Progression = Progression;
 
 	auto flags = fn->FunctionFlags;
@@ -2241,7 +5047,7 @@ void UAIEncounterServiceInterface::RegisterLoadedSkillsetProgression(TAssetPtr<c
 
 
 // Function:
-//		Offset -> 0x0363CC80
+//		Offset -> 0x041D2360
 //		Name   -> Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedSkillset
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2250,7 +5056,7 @@ void UAIEncounterServiceInterface::RegisterLoadedSkillset(TAssetPtr<class UAthen
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedSkillset");
 
-	UAIEncounterServiceInterface_RegisterLoadedSkillset_Params params;
+	UAIEncounterServiceInterface_RegisterLoadedSkillset_Params params {};
 	params.Skillset = Skillset;
 
 	auto flags = fn->FunctionFlags;
@@ -2263,7 +5069,7 @@ void UAIEncounterServiceInterface::RegisterLoadedSkillset(TAssetPtr<class UAthen
 
 
 // Function:
-//		Offset -> 0x0363CA60
+//		Offset -> 0x041D2140
 //		Name   -> Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedLoadout
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2272,7 +5078,7 @@ void UAIEncounterServiceInterface::RegisterLoadedLoadout(TAssetPtr<class ULoadou
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedLoadout");
 
-	UAIEncounterServiceInterface_RegisterLoadedLoadout_Params params;
+	UAIEncounterServiceInterface_RegisterLoadedLoadout_Params params {};
 	params.Loadout = Loadout;
 
 	auto flags = fn->FunctionFlags;
@@ -2285,7 +5091,7 @@ void UAIEncounterServiceInterface::RegisterLoadedLoadout(TAssetPtr<class ULoadou
 
 
 // Function:
-//		Offset -> 0x0363C840
+//		Offset -> 0x041D1F20
 //		Name   -> Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedForm
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2294,7 +5100,7 @@ void UAIEncounterServiceInterface::RegisterLoadedForm(TAssetPtr<class UAthenaAIF
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedForm");
 
-	UAIEncounterServiceInterface_RegisterLoadedForm_Params params;
+	UAIEncounterServiceInterface_RegisterLoadedForm_Params params {};
 	params.Form = Form;
 
 	auto flags = fn->FunctionFlags;
@@ -2307,7 +5113,7 @@ void UAIEncounterServiceInterface::RegisterLoadedForm(TAssetPtr<class UAthenaAIF
 
 
 // Function:
-//		Offset -> 0x0363C620
+//		Offset -> 0x041D1D00
 //		Name   -> Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedEncounter
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2316,7 +5122,7 @@ void UAIEncounterServiceInterface::RegisterLoadedEncounter(TAssetPtr<class UAIEn
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterServiceInterface.RegisterLoadedEncounter");
 
-	UAIEncounterServiceInterface_RegisterLoadedEncounter_Params params;
+	UAIEncounterServiceInterface_RegisterLoadedEncounter_Params params {};
 	params.Encounter = Encounter;
 
 	auto flags = fn->FunctionFlags;
@@ -2365,14 +5171,14 @@ void UAIColorVariantPool::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363C3F0
+//		Offset -> 0x041D1AD0
 //		Name   -> Function AthenaAI.AICombatEncounterInterface.OnVulnerabilityStateEntered
 //		Flags  -> (Native, Event, Public, BlueprintEvent)
 void UAICombatEncounterInterface::OnVulnerabilityStateEntered()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AICombatEncounterInterface.OnVulnerabilityStateEntered");
 
-	UAICombatEncounterInterface_OnVulnerabilityStateEntered_Params params;
+	UAICombatEncounterInterface_OnVulnerabilityStateEntered_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -2580,7 +5386,7 @@ void UAIPartsCategoryTypeList::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363CD90
+//		Offset -> 0x041D2470
 //		Name   -> Function AthenaAI.AIEncounterService.RegisterLoadedSkillsetProgression
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2589,7 +5395,7 @@ void AAIEncounterService::RegisterLoadedSkillsetProgression(TAssetPtr<class UAIS
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterService.RegisterLoadedSkillsetProgression");
 
-	AAIEncounterService_RegisterLoadedSkillsetProgression_Params params;
+	AAIEncounterService_RegisterLoadedSkillsetProgression_Params params {};
 	params.Progression = Progression;
 
 	auto flags = fn->FunctionFlags;
@@ -2602,7 +5408,7 @@ void AAIEncounterService::RegisterLoadedSkillsetProgression(TAssetPtr<class UAIS
 
 
 // Function:
-//		Offset -> 0x0363CB70
+//		Offset -> 0x041D2250
 //		Name   -> Function AthenaAI.AIEncounterService.RegisterLoadedSkillset
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2611,7 +5417,7 @@ void AAIEncounterService::RegisterLoadedSkillset(TAssetPtr<class UAthenaAIContro
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterService.RegisterLoadedSkillset");
 
-	AAIEncounterService_RegisterLoadedSkillset_Params params;
+	AAIEncounterService_RegisterLoadedSkillset_Params params {};
 	params.Skillset = Skillset;
 
 	auto flags = fn->FunctionFlags;
@@ -2624,7 +5430,7 @@ void AAIEncounterService::RegisterLoadedSkillset(TAssetPtr<class UAthenaAIContro
 
 
 // Function:
-//		Offset -> 0x0363C950
+//		Offset -> 0x041D2030
 //		Name   -> Function AthenaAI.AIEncounterService.RegisterLoadedLoadout
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2633,7 +5439,7 @@ void AAIEncounterService::RegisterLoadedLoadout(TAssetPtr<class ULoadoutAsset> L
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterService.RegisterLoadedLoadout");
 
-	AAIEncounterService_RegisterLoadedLoadout_Params params;
+	AAIEncounterService_RegisterLoadedLoadout_Params params {};
 	params.Loadout = Loadout;
 
 	auto flags = fn->FunctionFlags;
@@ -2646,7 +5452,7 @@ void AAIEncounterService::RegisterLoadedLoadout(TAssetPtr<class ULoadoutAsset> L
 
 
 // Function:
-//		Offset -> 0x0363C730
+//		Offset -> 0x041D1E10
 //		Name   -> Function AthenaAI.AIEncounterService.RegisterLoadedForm
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2655,7 +5461,7 @@ void AAIEncounterService::RegisterLoadedForm(TAssetPtr<class UAthenaAIFormDataAs
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterService.RegisterLoadedForm");
 
-	AAIEncounterService_RegisterLoadedForm_Params params;
+	AAIEncounterService_RegisterLoadedForm_Params params {};
 	params.Form = Form;
 
 	auto flags = fn->FunctionFlags;
@@ -2668,7 +5474,7 @@ void AAIEncounterService::RegisterLoadedForm(TAssetPtr<class UAthenaAIFormDataAs
 
 
 // Function:
-//		Offset -> 0x0363C500
+//		Offset -> 0x041D1BE0
 //		Name   -> Function AthenaAI.AIEncounterService.RegisterLoadedEncounter
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -2677,7 +5483,7 @@ void AAIEncounterService::RegisterLoadedEncounter(TAssetPtr<class UAIEncounterSe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIEncounterService.RegisterLoadedEncounter");
 
-	AAIEncounterService_RegisterLoadedEncounter_Params params;
+	AAIEncounterService_RegisterLoadedEncounter_Params params {};
 	params.Encounter = Encounter;
 
 	auto flags = fn->FunctionFlags;
@@ -2936,7 +5742,7 @@ void UAILoadoutWithNonStorableInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363DEA0
+//		Offset -> 0x041D3580
 //		Name   -> Function AthenaAI.AIManagerBlueprintFunctionLibrary.SpawnItemFromAI
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -2947,7 +5753,7 @@ class AItemInfo* UAIManagerBlueprintFunctionLibrary::STATIC_SpawnItemFromAI(clas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIManagerBlueprintFunctionLibrary.SpawnItemFromAI");
 
-	UAIManagerBlueprintFunctionLibrary_SpawnItemFromAI_Params params;
+	UAIManagerBlueprintFunctionLibrary_SpawnItemFromAI_Params params {};
 	params.Pawn = Pawn;
 	params.ItemDesc = ItemDesc;
 
@@ -2963,7 +5769,7 @@ class AItemInfo* UAIManagerBlueprintFunctionLibrary::STATIC_SpawnItemFromAI(clas
 
 
 // Function:
-//		Offset -> 0x0363BF50
+//		Offset -> 0x041D1630
 //		Name   -> Function AthenaAI.AIManagerBlueprintFunctionLibrary.GetFrameCounter
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -2972,7 +5778,7 @@ int UAIManagerBlueprintFunctionLibrary::STATIC_GetFrameCounter()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIManagerBlueprintFunctionLibrary.GetFrameCounter");
 
-	UAIManagerBlueprintFunctionLibrary_GetFrameCounter_Params params;
+	UAIManagerBlueprintFunctionLibrary_GetFrameCounter_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -2986,7 +5792,7 @@ int UAIManagerBlueprintFunctionLibrary::STATIC_GetFrameCounter()
 
 
 // Function:
-//		Offset -> 0x0363B570
+//		Offset -> 0x041D0C50
 //		Name   -> Function AthenaAI.AIManagerBlueprintFunctionLibrary.AddNameplateToAIWithLocalisedName
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -2996,7 +5802,7 @@ void UAIManagerBlueprintFunctionLibrary::STATIC_AddNameplateToAIWithLocalisedNam
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIManagerBlueprintFunctionLibrary.AddNameplateToAIWithLocalisedName");
 
-	UAIManagerBlueprintFunctionLibrary_AddNameplateToAIWithLocalisedName_Params params;
+	UAIManagerBlueprintFunctionLibrary_AddNameplateToAIWithLocalisedName_Params params {};
 	params.Actor = Actor;
 	params.DisplayName = DisplayName;
 
@@ -3010,7 +5816,7 @@ void UAIManagerBlueprintFunctionLibrary::STATIC_AddNameplateToAIWithLocalisedNam
 
 
 // Function:
-//		Offset -> 0x0363B4A0
+//		Offset -> 0x041D0B80
 //		Name   -> Function AthenaAI.AIManagerBlueprintFunctionLibrary.AddNameplateToAI
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -3020,7 +5826,7 @@ void UAIManagerBlueprintFunctionLibrary::STATIC_AddNameplateToAI(class AActor* A
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIManagerBlueprintFunctionLibrary.AddNameplateToAI");
 
-	UAIManagerBlueprintFunctionLibrary_AddNameplateToAI_Params params;
+	UAIManagerBlueprintFunctionLibrary_AddNameplateToAI_Params params {};
 	params.Actor = Actor;
 	params.DisplayName = DisplayName;
 
@@ -3046,7 +5852,7 @@ void UAIManagerBlueprintFunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363E030
+//		Offset -> 0x041D3710
 //		Name   -> Function AthenaAI.AIManagerServiceInterface.StartDespawnAI
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3056,7 +5862,7 @@ void UAIManagerServiceInterface::StartDespawnAI(class APawn* AIActor, TEnumAsByt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIManagerServiceInterface.StartDespawnAI");
 
-	UAIManagerServiceInterface_StartDespawnAI_Params params;
+	UAIManagerServiceInterface_StartDespawnAI_Params params {};
 	params.AIActor = AIActor;
 	params.DeathType = DeathType;
 
@@ -3070,7 +5876,7 @@ void UAIManagerServiceInterface::StartDespawnAI(class APawn* AIActor, TEnumAsByt
 
 
 // Function:
-//		Offset -> 0x0363BFB0
+//		Offset -> 0x041D1690
 //		Name   -> Function AthenaAI.AIManagerServiceInterface.GetNumOfSpawnedPawns
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -3079,7 +5885,7 @@ int UAIManagerServiceInterface::GetNumOfSpawnedPawns()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIManagerServiceInterface.GetNumOfSpawnedPawns");
 
-	UAIManagerServiceInterface_GetNumOfSpawnedPawns_Params params;
+	UAIManagerServiceInterface_GetNumOfSpawnedPawns_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -3102,6 +5908,54 @@ void UAIManagerServiceInterface::BeforeDelete()
 {
 	UInterface::BeforeDelete();
 
+}
+
+void UAthenaAIAbilityComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+	READ_PTR_FULL(CurrentAIAbility, UAthenaAIAbility);
+	READ_PTR_FULL(QueuedAbilityType, UClass);
+	READ_PTR_FULL(DebugAlwaysOnAbility, UClass);
+}
+
+void UAthenaAIAbilityComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+	DELE_PTR_FULL(CurrentAIAbility);
+	DELE_PTR_FULL(QueuedAbilityType);
+	DELE_PTR_FULL(DebugAlwaysOnAbility);
+}
+
+void UAthenaAIAbilityHandlerComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+	READ_PTR_FULL(DebugAlwaysOnAbility, UClass);
+	READ_PTR_FULL(RequiresActivation, UClass);
+}
+
+void UAthenaAIAbilityHandlerComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+	DELE_PTR_FULL(DebugAlwaysOnAbility);
+	DELE_PTR_FULL(RequiresActivation);
+}
+
+void UCoralShieldAbilityParams::AfterRead()
+{
+	UAthenaAIAbilityParams::AfterRead();
+
+	READ_PTR_FULL(VulnerabilityToApplyToSelf, UDamageableVulnerabilityLayer);
+}
+
+void UCoralShieldAbilityParams::BeforeDelete()
+{
+	UAthenaAIAbilityParams::BeforeDelete();
+
+	DELE_PTR_FULL(VulnerabilityToApplyToSelf);
 }
 
 void UAthenaAITypeListDataAsset::AfterRead()
@@ -3224,8 +6078,20 @@ void UAISpawnContextId::BeforeDelete()
 
 }
 
+void UCustomizableAIManagerInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UCustomizableAIManagerInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
 // Function:
-//		Offset -> 0x0363E120
+//		Offset -> 0x041D3800
 //		Name   -> Function AthenaAI.AIManagerService.TickService
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -3234,7 +6100,7 @@ void AAIManagerService::TickService(float DeltaSeconds)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIManagerService.TickService");
 
-	AAIManagerService_TickService_Params params;
+	AAIManagerService_TickService_Params params {};
 	params.DeltaSeconds = DeltaSeconds;
 
 	auto flags = fn->FunctionFlags;
@@ -3247,7 +6113,7 @@ void AAIManagerService::TickService(float DeltaSeconds)
 
 
 // Function:
-//		Offset -> 0x0363DF60
+//		Offset -> 0x041D3640
 //		Name   -> Function AthenaAI.AIManagerService.StartDespawnAI
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3257,7 +6123,7 @@ void AAIManagerService::StartDespawnAI(class APawn* AIActor, TEnumAsByte<Athena_
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIManagerService.StartDespawnAI");
 
-	AAIManagerService_StartDespawnAI_Params params;
+	AAIManagerService_StartDespawnAI_Params params {};
 	params.AIActor = AIActor;
 	params.DeathType = DeathType;
 
@@ -3289,7 +6155,7 @@ void AAIManagerService::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363DBB0
+//		Offset -> 0x041D3290
 //		Name   -> Function AthenaAI.DebugAIManagerServiceInterface.SetMaxNumOfSpawnedActors
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3298,7 +6164,7 @@ void UDebugAIManagerServiceInterface::SetMaxNumOfSpawnedActors(int InMaxNumOfSpa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerServiceInterface.SetMaxNumOfSpawnedActors");
 
-	UDebugAIManagerServiceInterface_SetMaxNumOfSpawnedActors_Params params;
+	UDebugAIManagerServiceInterface_SetMaxNumOfSpawnedActors_Params params {};
 	params.InMaxNumOfSpawnedActors = InMaxNumOfSpawnedActors;
 
 	auto flags = fn->FunctionFlags;
@@ -3311,7 +6177,7 @@ void UDebugAIManagerServiceInterface::SetMaxNumOfSpawnedActors(int InMaxNumOfSpa
 
 
 // Function:
-//		Offset -> 0x0363DAA0
+//		Offset -> 0x041D3180
 //		Name   -> Function AthenaAI.DebugAIManagerServiceInterface.SetMaxAICostUnitsPerRegion
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3320,7 +6186,7 @@ void UDebugAIManagerServiceInterface::SetMaxAICostUnitsPerRegion(int InMaxAICost
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerServiceInterface.SetMaxAICostUnitsPerRegion");
 
-	UDebugAIManagerServiceInterface_SetMaxAICostUnitsPerRegion_Params params;
+	UDebugAIManagerServiceInterface_SetMaxAICostUnitsPerRegion_Params params {};
 	params.InMaxAICostUnitsPerRegion = InMaxAICostUnitsPerRegion;
 
 	auto flags = fn->FunctionFlags;
@@ -3333,7 +6199,7 @@ void UDebugAIManagerServiceInterface::SetMaxAICostUnitsPerRegion(int InMaxAICost
 
 
 // Function:
-//		Offset -> 0x0363D990
+//		Offset -> 0x041D3070
 //		Name   -> Function AthenaAI.DebugAIManagerServiceInterface.SetMaxAICostUnitsForWorld
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3342,7 +6208,7 @@ void UDebugAIManagerServiceInterface::SetMaxAICostUnitsForWorld(int InMaxAICostU
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerServiceInterface.SetMaxAICostUnitsForWorld");
 
-	UDebugAIManagerServiceInterface_SetMaxAICostUnitsForWorld_Params params;
+	UDebugAIManagerServiceInterface_SetMaxAICostUnitsForWorld_Params params {};
 	params.InMaxAICostUnitsForWorld = InMaxAICostUnitsForWorld;
 
 	auto flags = fn->FunctionFlags;
@@ -3355,7 +6221,7 @@ void UDebugAIManagerServiceInterface::SetMaxAICostUnitsForWorld(int InMaxAICostU
 
 
 // Function:
-//		Offset -> 0x0363D760
+//		Offset -> 0x041D2E40
 //		Name   -> Function AthenaAI.DebugAIManagerServiceInterface.SetIgnoreCharacterLimits
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3364,7 +6230,7 @@ void UDebugAIManagerServiceInterface::SetIgnoreCharacterLimits(bool Ignore)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerServiceInterface.SetIgnoreCharacterLimits");
 
-	UDebugAIManagerServiceInterface_SetIgnoreCharacterLimits_Params params;
+	UDebugAIManagerServiceInterface_SetIgnoreCharacterLimits_Params params {};
 	params.Ignore = Ignore;
 
 	auto flags = fn->FunctionFlags;
@@ -3377,7 +6243,7 @@ void UDebugAIManagerServiceInterface::SetIgnoreCharacterLimits(bool Ignore)
 
 
 // Function:
-//		Offset -> 0x0363D650
+//		Offset -> 0x041D2D30
 //		Name   -> Function AthenaAI.DebugAIManagerServiceInterface.SetDistanceToPlayerToRaiseSpawnPriority
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3386,7 +6252,7 @@ void UDebugAIManagerServiceInterface::SetDistanceToPlayerToRaiseSpawnPriority(fl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerServiceInterface.SetDistanceToPlayerToRaiseSpawnPriority");
 
-	UDebugAIManagerServiceInterface_SetDistanceToPlayerToRaiseSpawnPriority_Params params;
+	UDebugAIManagerServiceInterface_SetDistanceToPlayerToRaiseSpawnPriority_Params params {};
 	params.InDistanceToPlayerToRaiseSpawnPriority = InDistanceToPlayerToRaiseSpawnPriority;
 
 	auto flags = fn->FunctionFlags;
@@ -3399,7 +6265,7 @@ void UDebugAIManagerServiceInterface::SetDistanceToPlayerToRaiseSpawnPriority(fl
 
 
 // Function:
-//		Offset -> 0x0363D4C0
+//		Offset -> 0x041D2BA0
 //		Name   -> Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterWorldDensityCheckTimer
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3408,7 +6274,7 @@ void UDebugAIManagerServiceInterface::SetCharacterWorldDensityCheckTimer(float I
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterWorldDensityCheckTimer");
 
-	UDebugAIManagerServiceInterface_SetCharacterWorldDensityCheckTimer_Params params;
+	UDebugAIManagerServiceInterface_SetCharacterWorldDensityCheckTimer_Params params {};
 	params.InCharacterWorldDensityCheckTimer = InCharacterWorldDensityCheckTimer;
 
 	auto flags = fn->FunctionFlags;
@@ -3421,7 +6287,7 @@ void UDebugAIManagerServiceInterface::SetCharacterWorldDensityCheckTimer(float I
 
 
 // Function:
-//		Offset -> 0x0363D3C0
+//		Offset -> 0x041D2AA0
 //		Name   -> Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterRegionDensityCheckTimer
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3430,7 +6296,7 @@ void UDebugAIManagerServiceInterface::SetCharacterRegionDensityCheckTimer(float 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterRegionDensityCheckTimer");
 
-	UDebugAIManagerServiceInterface_SetCharacterRegionDensityCheckTimer_Params params;
+	UDebugAIManagerServiceInterface_SetCharacterRegionDensityCheckTimer_Params params {};
 	params.InCharacterRegionDensityCheckTimer = InCharacterRegionDensityCheckTimer;
 
 	auto flags = fn->FunctionFlags;
@@ -3443,7 +6309,7 @@ void UDebugAIManagerServiceInterface::SetCharacterRegionDensityCheckTimer(float 
 
 
 // Function:
-//		Offset -> 0x0363D2C0
+//		Offset -> 0x041D29A0
 //		Name   -> Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterNetRelevancy
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3452,7 +6318,7 @@ void UDebugAIManagerServiceInterface::SetCharacterNetRelevancy(float InCloseByCh
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerServiceInterface.SetCharacterNetRelevancy");
 
-	UDebugAIManagerServiceInterface_SetCharacterNetRelevancy_Params params;
+	UDebugAIManagerServiceInterface_SetCharacterNetRelevancy_Params params {};
 	params.InCloseByCharactersRadius = InCloseByCharactersRadius;
 
 	auto flags = fn->FunctionFlags;
@@ -3465,7 +6331,7 @@ void UDebugAIManagerServiceInterface::SetCharacterNetRelevancy(float InCloseByCh
 
 
 // Function:
-//		Offset -> 0x0363B8C0
+//		Offset -> 0x041D0FA0
 //		Name   -> Function AthenaAI.DebugAIManagerServiceInterface.BlockAIAbility
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3476,7 +6342,7 @@ bool UDebugAIManagerServiceInterface::BlockAIAbility(class UClass* InExclusive, 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerServiceInterface.BlockAIAbility");
 
-	UDebugAIManagerServiceInterface_BlockAIAbility_Params params;
+	UDebugAIManagerServiceInterface_BlockAIAbility_Params params {};
 	params.InExclusive = InExclusive;
 	params.InBlockState = InBlockState;
 
@@ -3504,7 +6370,7 @@ void UDebugAIManagerServiceInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363DB20
+//		Offset -> 0x041D3200
 //		Name   -> Function AthenaAI.DebugAIManagerService.SetMaxNumOfSpawnedActors
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3513,7 +6379,7 @@ void ADebugAIManagerService::SetMaxNumOfSpawnedActors(int InMaxNumOfSpawnedActor
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerService.SetMaxNumOfSpawnedActors");
 
-	ADebugAIManagerService_SetMaxNumOfSpawnedActors_Params params;
+	ADebugAIManagerService_SetMaxNumOfSpawnedActors_Params params {};
 	params.InMaxNumOfSpawnedActors = InMaxNumOfSpawnedActors;
 
 	auto flags = fn->FunctionFlags;
@@ -3526,7 +6392,7 @@ void ADebugAIManagerService::SetMaxNumOfSpawnedActors(int InMaxNumOfSpawnedActor
 
 
 // Function:
-//		Offset -> 0x0363DA10
+//		Offset -> 0x041D30F0
 //		Name   -> Function AthenaAI.DebugAIManagerService.SetMaxAICostUnitsPerRegion
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3535,7 +6401,7 @@ void ADebugAIManagerService::SetMaxAICostUnitsPerRegion(int InMaxAICostUnitsPerR
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerService.SetMaxAICostUnitsPerRegion");
 
-	ADebugAIManagerService_SetMaxAICostUnitsPerRegion_Params params;
+	ADebugAIManagerService_SetMaxAICostUnitsPerRegion_Params params {};
 	params.InMaxAICostUnitsPerRegion = InMaxAICostUnitsPerRegion;
 
 	auto flags = fn->FunctionFlags;
@@ -3548,7 +6414,7 @@ void ADebugAIManagerService::SetMaxAICostUnitsPerRegion(int InMaxAICostUnitsPerR
 
 
 // Function:
-//		Offset -> 0x0363D900
+//		Offset -> 0x041D2FE0
 //		Name   -> Function AthenaAI.DebugAIManagerService.SetMaxAICostUnitsForWorld
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3557,7 +6423,7 @@ void ADebugAIManagerService::SetMaxAICostUnitsForWorld(int InMaxAICostUnitsForWo
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerService.SetMaxAICostUnitsForWorld");
 
-	ADebugAIManagerService_SetMaxAICostUnitsForWorld_Params params;
+	ADebugAIManagerService_SetMaxAICostUnitsForWorld_Params params {};
 	params.InMaxAICostUnitsForWorld = InMaxAICostUnitsForWorld;
 
 	auto flags = fn->FunctionFlags;
@@ -3570,7 +6436,7 @@ void ADebugAIManagerService::SetMaxAICostUnitsForWorld(int InMaxAICostUnitsForWo
 
 
 // Function:
-//		Offset -> 0x0363D6D0
+//		Offset -> 0x041D2DB0
 //		Name   -> Function AthenaAI.DebugAIManagerService.SetIgnoreCharacterLimits
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3579,7 +6445,7 @@ void ADebugAIManagerService::SetIgnoreCharacterLimits(bool Ignore)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerService.SetIgnoreCharacterLimits");
 
-	ADebugAIManagerService_SetIgnoreCharacterLimits_Params params;
+	ADebugAIManagerService_SetIgnoreCharacterLimits_Params params {};
 	params.Ignore = Ignore;
 
 	auto flags = fn->FunctionFlags;
@@ -3592,7 +6458,7 @@ void ADebugAIManagerService::SetIgnoreCharacterLimits(bool Ignore)
 
 
 // Function:
-//		Offset -> 0x0363D5D0
+//		Offset -> 0x041D2CB0
 //		Name   -> Function AthenaAI.DebugAIManagerService.SetDistanceToPlayerToRaiseSpawnPriority
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3601,7 +6467,7 @@ void ADebugAIManagerService::SetDistanceToPlayerToRaiseSpawnPriority(float InDis
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerService.SetDistanceToPlayerToRaiseSpawnPriority");
 
-	ADebugAIManagerService_SetDistanceToPlayerToRaiseSpawnPriority_Params params;
+	ADebugAIManagerService_SetDistanceToPlayerToRaiseSpawnPriority_Params params {};
 	params.InDistanceToPlayerToRaiseSpawnPriority = InDistanceToPlayerToRaiseSpawnPriority;
 
 	auto flags = fn->FunctionFlags;
@@ -3614,7 +6480,7 @@ void ADebugAIManagerService::SetDistanceToPlayerToRaiseSpawnPriority(float InDis
 
 
 // Function:
-//		Offset -> 0x0363D440
+//		Offset -> 0x041D2B20
 //		Name   -> Function AthenaAI.DebugAIManagerService.SetCharacterWorldDensityCheckTimer
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3623,7 +6489,7 @@ void ADebugAIManagerService::SetCharacterWorldDensityCheckTimer(float InCharacte
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerService.SetCharacterWorldDensityCheckTimer");
 
-	ADebugAIManagerService_SetCharacterWorldDensityCheckTimer_Params params;
+	ADebugAIManagerService_SetCharacterWorldDensityCheckTimer_Params params {};
 	params.InCharacterWorldDensityCheckTimer = InCharacterWorldDensityCheckTimer;
 
 	auto flags = fn->FunctionFlags;
@@ -3636,7 +6502,7 @@ void ADebugAIManagerService::SetCharacterWorldDensityCheckTimer(float InCharacte
 
 
 // Function:
-//		Offset -> 0x0363D340
+//		Offset -> 0x041D2A20
 //		Name   -> Function AthenaAI.DebugAIManagerService.SetCharacterRegionDensityCheckTimer
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3645,7 +6511,7 @@ void ADebugAIManagerService::SetCharacterRegionDensityCheckTimer(float InCharact
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerService.SetCharacterRegionDensityCheckTimer");
 
-	ADebugAIManagerService_SetCharacterRegionDensityCheckTimer_Params params;
+	ADebugAIManagerService_SetCharacterRegionDensityCheckTimer_Params params {};
 	params.InCharacterRegionDensityCheckTimer = InCharacterRegionDensityCheckTimer;
 
 	auto flags = fn->FunctionFlags;
@@ -3658,7 +6524,7 @@ void ADebugAIManagerService::SetCharacterRegionDensityCheckTimer(float InCharact
 
 
 // Function:
-//		Offset -> 0x0363D240
+//		Offset -> 0x041D2920
 //		Name   -> Function AthenaAI.DebugAIManagerService.SetCharacterNetRelevancy
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3667,7 +6533,7 @@ void ADebugAIManagerService::SetCharacterNetRelevancy(float InCloseByCharactersR
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerService.SetCharacterNetRelevancy");
 
-	ADebugAIManagerService_SetCharacterNetRelevancy_Params params;
+	ADebugAIManagerService_SetCharacterNetRelevancy_Params params {};
 	params.InCloseByCharactersRadius = InCloseByCharactersRadius;
 
 	auto flags = fn->FunctionFlags;
@@ -3680,7 +6546,7 @@ void ADebugAIManagerService::SetCharacterNetRelevancy(float InCloseByCharactersR
 
 
 // Function:
-//		Offset -> 0x0363B7F0
+//		Offset -> 0x041D0ED0
 //		Name   -> Function AthenaAI.DebugAIManagerService.BlockAIAbility
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -3691,7 +6557,7 @@ bool ADebugAIManagerService::BlockAIAbility(class UClass* InExclusive, bool InBl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.DebugAIManagerService.BlockAIAbility");
 
-	ADebugAIManagerService_BlockAIAbility_Params params;
+	ADebugAIManagerService_BlockAIAbility_Params params {};
 	params.InExclusive = InExclusive;
 	params.InBlockState = InBlockState;
 
@@ -3715,94 +6581,6 @@ void ADebugAIManagerService::AfterRead()
 void ADebugAIManagerService::BeforeDelete()
 {
 	AAIManagerService::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x0363C3D0
-//		Name   -> Function AthenaAI.AINameplateComponent.OnRep_Title
-//		Flags  -> (Final, Native, Private)
-void UAINameplateComponent::OnRep_Title()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AINameplateComponent.OnRep_Title");
-
-	UAINameplateComponent_OnRep_Title_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363C350
-//		Name   -> Function AthenaAI.AINameplateComponent.OnRep_DisplayNameAsString
-//		Flags  -> (Final, Native, Private)
-void UAINameplateComponent::OnRep_DisplayNameAsString()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AINameplateComponent.OnRep_DisplayNameAsString");
-
-	UAINameplateComponent_OnRep_DisplayNameAsString_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363C330
-//		Name   -> Function AthenaAI.AINameplateComponent.OnRep_DisplayName
-//		Flags  -> (Final, Native, Private)
-void UAINameplateComponent::OnRep_DisplayName()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AINameplateComponent.OnRep_DisplayName");
-
-	UAINameplateComponent_OnRep_DisplayName_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363C310
-//		Name   -> Function AthenaAI.AINameplateComponent.OnRep_DebugDisplayText
-//		Flags  -> (Final, Native, Private)
-void UAINameplateComponent::OnRep_DebugDisplayText()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AINameplateComponent.OnRep_DebugDisplayText");
-
-	UAINameplateComponent_OnRep_DebugDisplayText_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void UAINameplateComponent::AfterRead()
-{
-	UNameplateComponent::AfterRead();
-
-}
-
-void UAINameplateComponent::BeforeDelete()
-{
-	UNameplateComponent::BeforeDelete();
 
 }
 
@@ -3858,22 +6636,6 @@ void UAIPartIdListingAsset::BeforeDelete()
 
 }
 
-void UMeshMemoryConstraintsAIPartsDesc::AfterRead()
-{
-	UAIPartsDesc::AfterRead();
-
-	READ_PTR_FULL(MeshFallbackCategory, UClass);
-	READ_PTR_FULL(BudgetToCountMemoryAgainstIfNoFallback, UClass);
-}
-
-void UMeshMemoryConstraintsAIPartsDesc::BeforeDelete()
-{
-	UAIPartsDesc::BeforeDelete();
-
-	DELE_PTR_FULL(MeshFallbackCategory);
-	DELE_PTR_FULL(BudgetToCountMemoryAgainstIfNoFallback);
-}
-
 void UAIPartsRetrievalInterface::AfterRead()
 {
 	UInterface::AfterRead();
@@ -3887,7 +6649,7 @@ void UAIPartsRetrievalInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363D140
+//		Offset -> 0x041D2820
 //		Name   -> Function AthenaAI.AIPartsRetrievalComponent.RequestNewAIParts
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -3898,7 +6660,7 @@ void UAIPartsRetrievalComponent::RequestNewAIParts(class UAIPartsCategory* Assig
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIPartsRetrievalComponent.RequestNewAIParts");
 
-	UAIPartsRetrievalComponent_RequestNewAIParts_Params params;
+	UAIPartsRetrievalComponent_RequestNewAIParts_Params params {};
 	params.AssignedPartsCategory = AssignedPartsCategory;
 	params.PartsIndexToUse = PartsIndexToUse;
 	params.TeamColorIndex = TeamColorIndex;
@@ -3913,14 +6675,14 @@ void UAIPartsRetrievalComponent::RequestNewAIParts(class UAIPartsCategory* Assig
 
 
 // Function:
-//		Offset -> 0x0363C390
+//		Offset -> 0x041D1A70
 //		Name   -> Function AthenaAI.AIPartsRetrievalComponent.OnRep_ReplicatedAIPartsData
 //		Flags  -> (Final, Native, Private)
 void UAIPartsRetrievalComponent::OnRep_ReplicatedAIPartsData()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIPartsRetrievalComponent.OnRep_ReplicatedAIPartsData");
 
-	UAIPartsRetrievalComponent_OnRep_ReplicatedAIPartsData_Params params;
+	UAIPartsRetrievalComponent_OnRep_ReplicatedAIPartsData_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -4152,7 +6914,7 @@ void UAIOnDemandSpawner::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363C410
+//		Offset -> 0x041D1AF0
 //		Name   -> Function AthenaAI.AIPerPlayerSpawner.PlayerDeath
 //		Flags  -> (Final, Native, Public)
 // Parameters:
@@ -4161,7 +6923,7 @@ void UAIPerPlayerSpawner::PlayerDeath(class AActor* Player)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIPerPlayerSpawner.PlayerDeath");
 
-	UAIPerPlayerSpawner_PlayerDeath_Params params;
+	UAIPerPlayerSpawner_PlayerDeath_Params params {};
 	params.Player = Player;
 
 	auto flags = fn->FunctionFlags;
@@ -4446,7 +7208,7 @@ void AAITargetService::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363BB10
+//		Offset -> 0x041D11F0
 //		Name   -> Function AthenaAI.AITargetWeaponInterface.FindAimConfigToHitTarget
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -4458,7 +7220,7 @@ bool UAITargetWeaponInterface::FindAimConfigToHitTarget(const struct FVector& Ta
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AITargetWeaponInterface.FindAimConfigToHitTarget");
 
-	UAITargetWeaponInterface_FindAimConfigToHitTarget_Params params;
+	UAITargetWeaponInterface_FindAimConfigToHitTarget_Params params {};
 	params.Target = Target;
 	params.CheckYaw = CheckYaw;
 
@@ -4501,7 +7263,7 @@ void UAIWithFormInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363C270
+//		Offset -> 0x041D1950
 //		Name   -> Function AthenaAI.AmbientWaterSpawnerManager.OnPlayerDeath
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -4510,7 +7272,7 @@ void AAmbientWaterSpawnerManager::OnPlayerDeath(class AActor* InActorDying)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AmbientWaterSpawnerManager.OnPlayerDeath");
 
-	AAmbientWaterSpawnerManager_OnPlayerDeath_Params params;
+	AAmbientWaterSpawnerManager_OnPlayerDeath_Params params {};
 	params.InActorDying = InActorDying;
 
 	auto flags = fn->FunctionFlags;
@@ -4595,14 +7357,14 @@ void UBurrowAIAbility::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363C3B0
+//		Offset -> 0x041D1A90
 //		Name   -> Function AthenaAI.BurrowCrack.OnRep_StartFadeAndLifeSpan
 //		Flags  -> (Final, Native, Public)
 void ABurrowCrack::OnRep_StartFadeAndLifeSpan()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.BurrowCrack.OnRep_StartFadeAndLifeSpan");
 
-	ABurrowCrack_OnRep_StartFadeAndLifeSpan_Params params;
+	ABurrowCrack_OnRep_StartFadeAndLifeSpan_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -4614,7 +7376,7 @@ void ABurrowCrack::OnRep_StartFadeAndLifeSpan()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function AthenaAI.BurrowCrack.OnLifeSpanPercentLeft
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -4623,7 +7385,7 @@ void ABurrowCrack::OnLifeSpanPercentLeft(float PercentLeft)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.BurrowCrack.OnLifeSpanPercentLeft");
 
-	ABurrowCrack_OnLifeSpanPercentLeft_Params params;
+	ABurrowCrack_OnLifeSpanPercentLeft_Params params {};
 	params.PercentLeft = PercentLeft;
 
 	auto flags = fn->FunctionFlags;
@@ -4708,1063 +7470,6 @@ void UAthenaAIBuffAbilityInterface::BeforeDelete()
 
 }
 
-void UCoralShieldAbility::AfterRead()
-{
-	UAthenaAIAbility::AfterRead();
-
-}
-
-void UCoralShieldAbility::BeforeDelete()
-{
-	UAthenaAIAbility::BeforeDelete();
-
-}
-
-void UElectricShieldAbility::AfterRead()
-{
-	UAthenaAIAbility::AfterRead();
-
-}
-
-void UElectricShieldAbility::BeforeDelete()
-{
-	UAthenaAIAbility::BeforeDelete();
-
-}
-
-void USporeBreathAIAbility::AfterRead()
-{
-	UAthenaAIAbility::AfterRead();
-
-	READ_PTR_FULL(BreathActor, AStatusEffectOverlapZone);
-	READ_PTR_FULL(BreathVFX, UVFXSpawnerComponent);
-}
-
-void USporeBreathAIAbility::BeforeDelete()
-{
-	UAthenaAIAbility::BeforeDelete();
-
-	DELE_PTR_FULL(BreathActor);
-	DELE_PTR_FULL(BreathVFX);
-}
-
-void UTeleportAIAbility::AfterRead()
-{
-	UAthenaAIAbility::AfterRead();
-
-}
-
-void UTeleportAIAbility::BeforeDelete()
-{
-	UAthenaAIAbility::BeforeDelete();
-
-}
-
-void UAthenaAIAbilityHandlerInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UAthenaAIAbilityHandlerInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void UAthenaAIAbilityComponent::AfterRead()
-{
-	UActorComponent::AfterRead();
-
-	READ_PTR_FULL(CurrentAIAbility, UAthenaAIAbility);
-	READ_PTR_FULL(QueuedAbilityType, UClass);
-	READ_PTR_FULL(DebugAlwaysOnAbility, UClass);
-}
-
-void UAthenaAIAbilityComponent::BeforeDelete()
-{
-	UActorComponent::BeforeDelete();
-
-	DELE_PTR_FULL(CurrentAIAbility);
-	DELE_PTR_FULL(QueuedAbilityType);
-	DELE_PTR_FULL(DebugAlwaysOnAbility);
-}
-
-void UAthenaAIAbilityHandlerComponent::AfterRead()
-{
-	UActorComponent::AfterRead();
-
-	READ_PTR_FULL(DebugAlwaysOnAbility, UClass);
-	READ_PTR_FULL(RequiresActivation, UClass);
-}
-
-void UAthenaAIAbilityHandlerComponent::BeforeDelete()
-{
-	UActorComponent::BeforeDelete();
-
-	DELE_PTR_FULL(DebugAlwaysOnAbility);
-	DELE_PTR_FULL(RequiresActivation);
-}
-
-void UCoralShieldAbilityParams::AfterRead()
-{
-	UAthenaAIAbilityParams::AfterRead();
-
-	READ_PTR_FULL(VulnerabilityToApplyToSelf, UDamageableVulnerabilityLayer);
-}
-
-void UCoralShieldAbilityParams::BeforeDelete()
-{
-	UAthenaAIAbilityParams::BeforeDelete();
-
-	DELE_PTR_FULL(VulnerabilityToApplyToSelf);
-}
-
-void UElectricShieldAbilityParams::AfterRead()
-{
-	UAthenaAIAbilityParams::AfterRead();
-
-}
-
-void UElectricShieldAbilityParams::BeforeDelete()
-{
-	UAthenaAIAbilityParams::BeforeDelete();
-
-}
-
-void USporeBreathAIAbilityParams::AfterRead()
-{
-	UAthenaAIAbilityParams::AfterRead();
-
-	READ_PTR_FULL(BreathActor, UClass);
-	READ_PTR_FULL(VfxSpawner, UClass);
-}
-
-void USporeBreathAIAbilityParams::BeforeDelete()
-{
-	UAthenaAIAbilityParams::BeforeDelete();
-
-	DELE_PTR_FULL(BreathActor);
-	DELE_PTR_FULL(VfxSpawner);
-}
-
-void UBurrowAIAbilityType::AfterRead()
-{
-	UAthenaAIAbilityType::AfterRead();
-
-}
-
-void UBurrowAIAbilityType::BeforeDelete()
-{
-	UAthenaAIAbilityType::BeforeDelete();
-
-}
-
-void UBurrowHealAIAbilityType::AfterRead()
-{
-	UAthenaAIAbilityType::AfterRead();
-
-}
-
-void UBurrowHealAIAbilityType::BeforeDelete()
-{
-	UAthenaAIAbilityType::BeforeDelete();
-
-}
-
-void UCoralShieldAbilityType::AfterRead()
-{
-	UAthenaAIAbilityType::AfterRead();
-
-}
-
-void UCoralShieldAbilityType::BeforeDelete()
-{
-	UAthenaAIAbilityType::BeforeDelete();
-
-}
-
-void UElectricShieldAbilityType::AfterRead()
-{
-	UAthenaAIAbilityType::AfterRead();
-
-}
-
-void UElectricShieldAbilityType::BeforeDelete()
-{
-	UAthenaAIAbilityType::BeforeDelete();
-
-}
-
-void USporeBreathAIAbilityType::AfterRead()
-{
-	UAthenaAIAbilityType::AfterRead();
-
-}
-
-void USporeBreathAIAbilityType::BeforeDelete()
-{
-	UAthenaAIAbilityType::BeforeDelete();
-
-}
-
-void UAthenaAIRangeBasedAmmoDataAsset::AfterRead()
-{
-	UAthenaAIAmmoDataAsset::AfterRead();
-
-}
-
-void UAthenaAIRangeBasedAmmoDataAsset::BeforeDelete()
-{
-	UAthenaAIAmmoDataAsset::BeforeDelete();
-
-}
-
-void UAthenaAICharacterPathFollowingComponent::AfterRead()
-{
-	UPathFollowingComponent::AfterRead();
-
-}
-
-void UAthenaAICharacterPathFollowingComponent::BeforeDelete()
-{
-	UPathFollowingComponent::BeforeDelete();
-
-}
-
-void UAthenaAICharacterStatsInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UAthenaAICharacterStatsInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x0363DC30
-//		Name   -> Function AthenaAI.AthenaAIControllerBase.SetNamedControllerParam
-//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-//		struct FName                                       ParamName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		float                                              Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AAthenaAIControllerBase::SetNamedControllerParam(const struct FName& ParamName, float Value)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIControllerBase.SetNamedControllerParam");
-
-	AAthenaAIControllerBase_SetNamedControllerParam_Params params;
-	params.ParamName = ParamName;
-	params.Value = Value;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363BD00
-//		Name   -> Function AthenaAI.AthenaAIControllerBase.FindNamedWeightedRangesControllerParam
-//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		struct FName                                       ParamName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		struct FWeightedProbabilityRangeOfRanges           ReturnValue                                                (Parm, OutParm, ReturnParm)
-struct FWeightedProbabilityRangeOfRanges AAthenaAIControllerBase::FindNamedWeightedRangesControllerParam(const struct FName& ParamName)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIControllerBase.FindNamedWeightedRangesControllerParam");
-
-	AAthenaAIControllerBase_FindNamedWeightedRangesControllerParam_Params params;
-	params.ParamName = ParamName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x0363BC50
-//		Name   -> Function AthenaAI.AthenaAIControllerBase.FindNamedControllerParam
-//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		struct FName                                       ParamName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-float AAthenaAIControllerBase::FindNamedControllerParam(const struct FName& ParamName)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIControllerBase.FindNamedControllerParam");
-
-	AAthenaAIControllerBase_FindNamedControllerParam_Params params;
-	params.ParamName = ParamName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x0363B720
-//		Name   -> Function AthenaAI.AthenaAIControllerBase.ApplyControllerParams
-//		Flags  -> (Native, Public, BlueprintCallable)
-// Parameters:
-//		class UAthenaAIControllerParamsDataAsset*          ParamsAsset                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class APawn*                                       InPawn                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AAthenaAIControllerBase::ApplyControllerParams(class UAthenaAIControllerParamsDataAsset* ParamsAsset, class APawn* InPawn)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIControllerBase.ApplyControllerParams");
-
-	AAthenaAIControllerBase_ApplyControllerParams_Params params;
-	params.ParamsAsset = ParamsAsset;
-	params.InPawn = InPawn;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void AAthenaAIControllerBase::AfterRead()
-{
-	AAIController::AfterRead();
-
-}
-
-void AAthenaAIControllerBase::BeforeDelete()
-{
-	AAIController::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x0363E100
-//		Name   -> Function AthenaAI.AthenaAIController.StopBehaviourLogic
-//		Flags  -> (Native, Public, BlueprintCallable)
-void AAthenaAIController::StopBehaviourLogic()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.StopBehaviourLogic");
-
-	AAthenaAIController_StopBehaviourLogic_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363DD90
-//		Name   -> Function AthenaAI.AthenaAIController.SetPerceptionExpirationAgeForActor
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		float                                              ExpirationAge                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class UClass*                                      Sense                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-void AAthenaAIController::SetPerceptionExpirationAgeForActor(class AActor* Actor, float ExpirationAge, class UClass* Sense)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.SetPerceptionExpirationAgeForActor");
-
-	AAthenaAIController_SetPerceptionExpirationAgeForActor_Params params;
-	params.Actor = Actor;
-	params.ExpirationAge = ExpirationAge;
-	params.Sense = Sense;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363CFB0
-//		Name   -> Function AthenaAI.AthenaAIController.RegisterSpawnTriggerActorAsStimulus
-//		Flags  -> (Native, Public, BlueprintCallable)
-// Parameters:
-//		class AActor*                                      TriggerActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AAthenaAIController::RegisterSpawnTriggerActorAsStimulus(class AActor* TriggerActor)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.RegisterSpawnTriggerActorAsStimulus");
-
-	AAthenaAIController_RegisterSpawnTriggerActorAsStimulus_Params params;
-	params.TriggerActor = TriggerActor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363C170
-//		Name   -> Function AthenaAI.AthenaAIController.OnPerceptionUpdated
-//		Flags  -> (Native, Public)
-// Parameters:
-//		TArray<class AActor*>                              ChangedPerceivedActors                                     (Parm, ZeroConstructor)
-void AAthenaAIController::OnPerceptionUpdated(TArray<class AActor*> ChangedPerceivedActors)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.OnPerceptionUpdated");
-
-	AAthenaAIController_OnPerceptionUpdated_Params params;
-	params.ChangedPerceivedActors = ChangedPerceivedActors;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x01637030
-//		Name   -> Function AthenaAI.AthenaAIController.OnNewlySpawned
-//		Flags  -> (Event, Public, BlueprintEvent)
-void AAthenaAIController::OnNewlySpawned()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.OnNewlySpawned");
-
-	AAthenaAIController_OnNewlySpawned_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x01637030
-//		Name   -> Function AthenaAI.AthenaAIController.OnFinishDespawn
-//		Flags  -> (Event, Public, BlueprintEvent)
-void AAthenaAIController::OnFinishDespawn()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.OnFinishDespawn");
-
-	AAthenaAIController_OnFinishDespawn_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363C010
-//		Name   -> Function AthenaAI.AthenaAIController.IsActorPerceived
-//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		class AActor*                                      TargetActor                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-bool AAthenaAIController::IsActorPerceived(class AActor* TargetActor)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.IsActorPerceived");
-
-	AAthenaAIController_IsActorPerceived_Params params;
-	params.TargetActor = TargetActor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x0363BFE0
-//		Name   -> Function AthenaAI.AthenaAIController.GetTargetActor
-//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		class AActor*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-class AActor* AAthenaAIController::GetTargetActor()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.GetTargetActor");
-
-	AAthenaAIController_GetTargetActor_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x0363BF20
-//		Name   -> Function AthenaAI.AthenaAIController.GetAthenaAIPerceptionComponent
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-//		class UAthenaAIPerceptionComponent*                ReturnValue                                                (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-class UAthenaAIPerceptionComponent* AAthenaAIController::GetAthenaAIPerceptionComponent()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.GetAthenaAIPerceptionComponent");
-
-	AAthenaAIController_GetAthenaAIPerceptionComponent_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x0363BE60
-//		Name   -> Function AthenaAI.AthenaAIController.GetAllSeenActors
-//		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-//		TArray<class AActor*>                              SeenActors                                                 (Parm, OutParm, ZeroConstructor)
-void AAthenaAIController::GetAllSeenActors(TArray<class AActor*>* SeenActors)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.GetAllSeenActors");
-
-	AAthenaAIController_GetAllSeenActors_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-	if (SeenActors != nullptr)
-		*SeenActors = params.SeenActors;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363B650
-//		Name   -> Function AthenaAI.AthenaAIController.ApplyControllerParams
-//		Flags  -> (Native, Public, BlueprintCallable)
-// Parameters:
-//		class UAthenaAIControllerParamsDataAsset*          ParamsAsset                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class APawn*                                       InPawn                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AAthenaAIController::ApplyControllerParams(class UAthenaAIControllerParamsDataAsset* ParamsAsset, class APawn* InPawn)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIController.ApplyControllerParams");
-
-	AAthenaAIController_ApplyControllerParams_Params params;
-	params.ParamsAsset = ParamsAsset;
-	params.InPawn = InPawn;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void AAthenaAIController::AfterRead()
-{
-	AAthenaAIControllerBase::AfterRead();
-
-	READ_PTR_FULL(SightConfig, UAISenseConfig_Sight);
-	READ_PTR_FULL(HearingConfig, UAISenseConfig_Hearing);
-	READ_PTR_FULL(DamageSenseConfig, UAISenseConfig_Damage);
-	READ_PTR_FULL(CurrentNotSeenPerceivedActor, AActor);
-	READ_PTR_FULL(PendingSpawnTriggerActor, AActor);
-}
-
-void AAthenaAIController::BeforeDelete()
-{
-	AAthenaAIControllerBase::BeforeDelete();
-
-	DELE_PTR_FULL(SightConfig);
-	DELE_PTR_FULL(HearingConfig);
-	DELE_PTR_FULL(DamageSenseConfig);
-	DELE_PTR_FULL(CurrentNotSeenPerceivedActor);
-	DELE_PTR_FULL(PendingSpawnTriggerActor);
-}
-
-void USpawnItemDescProviderInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void USpawnItemDescProviderInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x0363DD00
-//		Name   -> Function AthenaAI.AthenaAICharacterController.SetOverridePrioritiseInteractablesBeforeEnemies
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		bool                                               InPrioritiseInteractablesBeforeEnemies                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-void AAthenaAICharacterController::SetOverridePrioritiseInteractablesBeforeEnemies(bool InPrioritiseInteractablesBeforeEnemies)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAICharacterController.SetOverridePrioritiseInteractablesBeforeEnemies");
-
-	AAthenaAICharacterController_SetOverridePrioritiseInteractablesBeforeEnemies_Params params;
-	params.InPrioritiseInteractablesBeforeEnemies = InPrioritiseInteractablesBeforeEnemies;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363D7F0
-//		Name   -> Function AthenaAI.AthenaAICharacterController.SetItemSpecificNamedControllerParam
-//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-//		class UClass*                                      InItemCategory                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-//		struct FName                                       ParamName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		float                                              Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AAthenaAICharacterController::SetItemSpecificNamedControllerParam(class UClass* InItemCategory, const struct FName& ParamName, float Value)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAICharacterController.SetItemSpecificNamedControllerParam");
-
-	AAthenaAICharacterController_SetItemSpecificNamedControllerParam_Params params;
-	params.InItemCategory = InItemCategory;
-	params.ParamName = ParamName;
-	params.Value = Value;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363D540
-//		Name   -> Function AthenaAI.AthenaAICharacterController.SetDisableTurningForTest
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		bool                                               InDisableTurningForTest                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-void AAthenaAICharacterController::SetDisableTurningForTest(bool InDisableTurningForTest)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAICharacterController.SetDisableTurningForTest");
-
-	AAthenaAICharacterController_SetDisableTurningForTest_Params params;
-	params.InDisableTurningForTest = InDisableTurningForTest;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363B990
-//		Name   -> Function AthenaAI.AthenaAICharacterController.ClearOverridePrioritiseInteractablesBeforeEnemies
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-void AAthenaAICharacterController::ClearOverridePrioritiseInteractablesBeforeEnemies()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAICharacterController.ClearOverridePrioritiseInteractablesBeforeEnemies");
-
-	AAthenaAICharacterController_ClearOverridePrioritiseInteractablesBeforeEnemies_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void AAthenaAICharacterController::AfterRead()
-{
-	AAthenaAIController::AfterRead();
-
-	READ_PTR_FULL(ItemParamsDataAsset, UAthenaAIItemParamsDataAsset);
-	READ_PTR_FULL(FallbackLoadoutIfAllEngageItemsDropped, ULoadoutAsset);
-	READ_PTR_FULL(CharacterParamsDataAsset, UAthenaAICharacterControllerParamsDataAsset);
-	READ_PTR_FULL(DistanceInMToCannonShotHitChanceCurve, UCurveFloat);
-}
-
-void AAthenaAICharacterController::BeforeDelete()
-{
-	AAthenaAIController::BeforeDelete();
-
-	DELE_PTR_FULL(ItemParamsDataAsset);
-	DELE_PTR_FULL(FallbackLoadoutIfAllEngageItemsDropped);
-	DELE_PTR_FULL(CharacterParamsDataAsset);
-	DELE_PTR_FULL(DistanceInMToCannonShotHitChanceCurve);
-}
-
-void UAthenaAIControllerNavMeshTogglesInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UAthenaAIControllerNavMeshTogglesInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void UFaunaAIContollerParamsDataAsset::AfterRead()
-{
-	UAthenaAIControllerParamsDataAsset::AfterRead();
-
-	READ_PTR_FULL(CharacterDistanceToDangerRatingCurve, UCurveFloat);
-	READ_PTR_FULL(DangerRatingToAgitationDurationCurve, UCurveFloat);
-	READ_PTR_FULL(DistanceToLeaderPatrolChanceCurve, UCurveFloat);
-}
-
-void UFaunaAIContollerParamsDataAsset::BeforeDelete()
-{
-	UAthenaAIControllerParamsDataAsset::BeforeDelete();
-
-	DELE_PTR_FULL(CharacterDistanceToDangerRatingCurve);
-	DELE_PTR_FULL(DangerRatingToAgitationDurationCurve);
-	DELE_PTR_FULL(DistanceToLeaderPatrolChanceCurve);
-}
-
-void UAthenaAIControllerParamsDataProvider::AfterRead()
-{
-	UAIDataProvider::AfterRead();
-
-}
-
-void UAthenaAIControllerParamsDataProvider::BeforeDelete()
-{
-	UAIDataProvider::BeforeDelete();
-
-}
-
-void UAthenaAIControllerParamsTargetInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UAthenaAIControllerParamsTargetInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void UAthenaAIFormComponentContainerInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UAthenaAIFormComponentContainerInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x0363C0E0
-//		Name   -> Function AthenaAI.AthenaAIPerceptionComponent.IsPerceptionSenseEnabled
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		class UClass*                                      Sense                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-bool UAthenaAIPerceptionComponent::IsPerceptionSenseEnabled(class UClass* Sense)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIPerceptionComponent.IsPerceptionSenseEnabled");
-
-	UAthenaAIPerceptionComponent_IsPerceptionSenseEnabled_Params params;
-	params.Sense = Sense;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x0363C0B0
-//		Name   -> Function AthenaAI.AthenaAIPerceptionComponent.IsAnyPerceptionEnabled
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-bool UAthenaAIPerceptionComponent::IsAnyPerceptionEnabled()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIPerceptionComponent.IsAnyPerceptionEnabled");
-
-	UAthenaAIPerceptionComponent_IsAnyPerceptionEnabled_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x0363BA40
-//		Name   -> Function AthenaAI.AthenaAIPerceptionComponent.EnablePerceptionSense
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		class UClass*                                      Sense                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-//		bool                                               Enable                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-void UAthenaAIPerceptionComponent::EnablePerceptionSense(class UClass* Sense, bool Enable)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIPerceptionComponent.EnablePerceptionSense");
-
-	UAthenaAIPerceptionComponent_EnablePerceptionSense_Params params;
-	params.Sense = Sense;
-	params.Enable = Enable;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0363B9B0
-//		Name   -> Function AthenaAI.AthenaAIPerceptionComponent.EnableAllPerception
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		bool                                               Enable                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-void UAthenaAIPerceptionComponent::EnableAllPerception(bool Enable)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIPerceptionComponent.EnableAllPerception");
-
-	UAthenaAIPerceptionComponent_EnableAllPerception_Params params;
-	params.Enable = Enable;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void UAthenaAIPerceptionComponent::AfterRead()
-{
-	UAIPerceptionComponent::AfterRead();
-
-}
-
-void UAthenaAIPerceptionComponent::BeforeDelete()
-{
-	UAIPerceptionComponent::BeforeDelete();
-
-}
-
-void UAthenaAISightTargetInterface::AfterRead()
-{
-	UAISightTargetInterface::AfterRead();
-
-}
-
-void UAthenaAISightTargetInterface::BeforeDelete()
-{
-	UAISightTargetInterface::BeforeDelete();
-
-}
-
-void UAthenaAIWeightedRangesDataProvider::AfterRead()
-{
-	UAIDataProvider::AfterRead();
-
-}
-
-void UAthenaAIWeightedRangesDataProvider::BeforeDelete()
-{
-	UAIDataProvider::BeforeDelete();
-
-}
-
-void UBlackboardAIDataProvider::AfterRead()
-{
-	UAIDataProvider::AfterRead();
-
-}
-
-void UBlackboardAIDataProvider::BeforeDelete()
-{
-	UAIDataProvider::BeforeDelete();
-
-}
-
-void UBTDecorator_ActionState::AfterRead()
-{
-	UBTDecorator::AfterRead();
-
-	READ_PTR_FULL(StateId, UClass);
-}
-
-void UBTDecorator_ActionState::BeforeDelete()
-{
-	UBTDecorator::BeforeDelete();
-
-	DELE_PTR_FULL(StateId);
-}
-
-void UBTDecorator_ActorInWater::AfterRead()
-{
-	UBTDecorator_BlackboardBase::AfterRead();
-
-}
-
-void UBTDecorator_ActorInWater::BeforeDelete()
-{
-	UBTDecorator_BlackboardBase::BeforeDelete();
-
-}
-
-void UBTDecorator_CurrentAIStrategy::AfterRead()
-{
-	UBTDecorator_BaseConditional::AfterRead();
-
-}
-
-void UBTDecorator_CurrentAIStrategy::BeforeDelete()
-{
-	UBTDecorator_BaseConditional::BeforeDelete();
-
-}
-
-void UBTDecorator_IsActorInExpectedActionState::AfterRead()
-{
-	UBTDecorator_BaseConditional::AfterRead();
-
-	READ_PTR_FULL(ExpectedActionState, UClass);
-}
-
-void UBTDecorator_IsActorInExpectedActionState::BeforeDelete()
-{
-	UBTDecorator_BaseConditional::BeforeDelete();
-
-	DELE_PTR_FULL(ExpectedActionState);
-}
-
-void UBTDecorator_ItemReadyToUse::AfterRead()
-{
-	UBTDecorator_BaseConditional::AfterRead();
-
-	READ_PTR_FULL(NotificationId, UClass);
-}
-
-void UBTDecorator_ItemReadyToUse::BeforeDelete()
-{
-	UBTDecorator_BaseConditional::BeforeDelete();
-
-	DELE_PTR_FULL(NotificationId);
-}
-
-void UBTDecorator_LeftOfAIPawn::AfterRead()
-{
-	UBTDecorator_BaseConditional::AfterRead();
-
-}
-
-void UBTDecorator_LeftOfAIPawn::BeforeDelete()
-{
-	UBTDecorator_BaseConditional::BeforeDelete();
-
-}
-
-void UBTDecorator_LineOfSightToTarget::AfterRead()
-{
-	UBTDecorator_BaseConditional::AfterRead();
-
-}
-
-void UBTDecorator_LineOfSightToTarget::BeforeDelete()
-{
-	UBTDecorator_BaseConditional::BeforeDelete();
-
-}
-
-void UBTDecorator_CompareBlackboardClassValue::AfterRead()
-{
-	UBTDecorator_BlackboardBase::AfterRead();
-
-	READ_PTR_FULL(Class, UClass);
-}
-
-void UBTDecorator_CompareBlackboardClassValue::BeforeDelete()
-{
-	UBTDecorator_BlackboardBase::BeforeDelete();
-
-	DELE_PTR_FULL(Class);
-}
-
-void UBTDecorator_CompareBlackboardIntValue::AfterRead()
-{
-	UBTDecorator::AfterRead();
-
-}
-
-void UBTDecorator_CompareBlackboardIntValue::BeforeDelete()
-{
-	UBTDecorator::BeforeDelete();
-
-}
-
 void UBTDecorator_CompareBlackboardValues::AfterRead()
 {
 	UBTDecorator::AfterRead();
@@ -5774,54 +7479,6 @@ void UBTDecorator_CompareBlackboardValues::AfterRead()
 void UBTDecorator_CompareBlackboardValues::BeforeDelete()
 {
 	UBTDecorator::BeforeDelete();
-
-}
-
-void UBTDecorator_CompareFloatValueBase::AfterRead()
-{
-	UBTDecorator_CompareBlackboardValues::AfterRead();
-
-}
-
-void UBTDecorator_CompareFloatValueBase::BeforeDelete()
-{
-	UBTDecorator_CompareBlackboardValues::BeforeDelete();
-
-}
-
-void UBTDecorator_CompareBlackboardActorSpeed::AfterRead()
-{
-	UBTDecorator_CompareFloatValueBase::AfterRead();
-
-}
-
-void UBTDecorator_CompareBlackboardActorSpeed::BeforeDelete()
-{
-	UBTDecorator_CompareFloatValueBase::BeforeDelete();
-
-}
-
-void UBTDecorator_CompareBlackboardFloatValue::AfterRead()
-{
-	UBTDecorator_CompareFloatValueBase::AfterRead();
-
-}
-
-void UBTDecorator_CompareBlackboardFloatValue::BeforeDelete()
-{
-	UBTDecorator_CompareFloatValueBase::BeforeDelete();
-
-}
-
-void UBTDecorator_CompareCurrentHealth::AfterRead()
-{
-	UBTDecorator_CompareFloatValueBase::AfterRead();
-
-}
-
-void UBTDecorator_CompareCurrentHealth::BeforeDelete()
-{
-	UBTDecorator_CompareFloatValueBase::BeforeDelete();
 
 }
 
@@ -6245,6 +7902,611 @@ void UBTService_TriggerNotifications::BeforeDelete()
 
 	DELE_PTR_FULL(EnterBranchNotificationId);
 	DELE_PTR_FULL(LeaveBranchNotificationId);
+}
+
+void UElectricShieldAbilityParams::AfterRead()
+{
+	UAthenaAIAbilityParams::AfterRead();
+
+}
+
+void UElectricShieldAbilityParams::BeforeDelete()
+{
+	UAthenaAIAbilityParams::BeforeDelete();
+
+}
+
+void USporeBreathAIAbilityParams::AfterRead()
+{
+	UAthenaAIAbilityParams::AfterRead();
+
+	READ_PTR_FULL(BreathActor, UClass);
+	READ_PTR_FULL(VfxSpawner, UClass);
+}
+
+void USporeBreathAIAbilityParams::BeforeDelete()
+{
+	UAthenaAIAbilityParams::BeforeDelete();
+
+	DELE_PTR_FULL(BreathActor);
+	DELE_PTR_FULL(VfxSpawner);
+}
+
+void UBurrowAIAbilityType::AfterRead()
+{
+	UAthenaAIAbilityType::AfterRead();
+
+}
+
+void UBurrowAIAbilityType::BeforeDelete()
+{
+	UAthenaAIAbilityType::BeforeDelete();
+
+}
+
+void UBurrowHealAIAbilityType::AfterRead()
+{
+	UAthenaAIAbilityType::AfterRead();
+
+}
+
+void UBurrowHealAIAbilityType::BeforeDelete()
+{
+	UAthenaAIAbilityType::BeforeDelete();
+
+}
+
+void UCoralShieldAbilityType::AfterRead()
+{
+	UAthenaAIAbilityType::AfterRead();
+
+}
+
+void UCoralShieldAbilityType::BeforeDelete()
+{
+	UAthenaAIAbilityType::BeforeDelete();
+
+}
+
+void UElectricShieldAbilityType::AfterRead()
+{
+	UAthenaAIAbilityType::AfterRead();
+
+}
+
+void UElectricShieldAbilityType::BeforeDelete()
+{
+	UAthenaAIAbilityType::BeforeDelete();
+
+}
+
+void USporeBreathAIAbilityType::AfterRead()
+{
+	UAthenaAIAbilityType::AfterRead();
+
+}
+
+void USporeBreathAIAbilityType::BeforeDelete()
+{
+	UAthenaAIAbilityType::BeforeDelete();
+
+}
+
+void UAthenaAIRangeBasedAmmoDataAsset::AfterRead()
+{
+	UAthenaAIAmmoDataAsset::AfterRead();
+
+}
+
+void UAthenaAIRangeBasedAmmoDataAsset::BeforeDelete()
+{
+	UAthenaAIAmmoDataAsset::BeforeDelete();
+
+}
+
+void UAthenaAICharacterStatsInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UAthenaAICharacterStatsInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void USpawnItemDescProviderInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void USpawnItemDescProviderInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x041D33E0
+//		Name   -> Function AthenaAI.AthenaAICharacterController.SetOverridePrioritiseInteractablesBeforeEnemies
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		bool                                               InPrioritiseInteractablesBeforeEnemies                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+void AAthenaAICharacterController::SetOverridePrioritiseInteractablesBeforeEnemies(bool InPrioritiseInteractablesBeforeEnemies)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAICharacterController.SetOverridePrioritiseInteractablesBeforeEnemies");
+
+	AAthenaAICharacterController_SetOverridePrioritiseInteractablesBeforeEnemies_Params params {};
+	params.InPrioritiseInteractablesBeforeEnemies = InPrioritiseInteractablesBeforeEnemies;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D2ED0
+//		Name   -> Function AthenaAI.AthenaAICharacterController.SetItemSpecificNamedControllerParam
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+//		class UClass*                                      InItemCategory                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		struct FName                                       ParamName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+//		float                                              Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void AAthenaAICharacterController::SetItemSpecificNamedControllerParam(class UClass* InItemCategory, const struct FName& ParamName, float Value)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAICharacterController.SetItemSpecificNamedControllerParam");
+
+	AAthenaAICharacterController_SetItemSpecificNamedControllerParam_Params params {};
+	params.InItemCategory = InItemCategory;
+	params.ParamName = ParamName;
+	params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D2C20
+//		Name   -> Function AthenaAI.AthenaAICharacterController.SetDisableTurningForTest
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		bool                                               InDisableTurningForTest                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+void AAthenaAICharacterController::SetDisableTurningForTest(bool InDisableTurningForTest)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAICharacterController.SetDisableTurningForTest");
+
+	AAthenaAICharacterController_SetDisableTurningForTest_Params params {};
+	params.InDisableTurningForTest = InDisableTurningForTest;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D1070
+//		Name   -> Function AthenaAI.AthenaAICharacterController.ClearOverridePrioritiseInteractablesBeforeEnemies
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+void AAthenaAICharacterController::ClearOverridePrioritiseInteractablesBeforeEnemies()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAICharacterController.ClearOverridePrioritiseInteractablesBeforeEnemies");
+
+	AAthenaAICharacterController_ClearOverridePrioritiseInteractablesBeforeEnemies_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void AAthenaAICharacterController::AfterRead()
+{
+	AAthenaAIController::AfterRead();
+
+	READ_PTR_FULL(ItemParamsDataAsset, UAthenaAIItemParamsDataAsset);
+	READ_PTR_FULL(FallbackLoadoutIfAllEngageItemsDropped, ULoadoutAsset);
+	READ_PTR_FULL(CharacterParamsDataAsset, UAthenaAICharacterControllerParamsDataAsset);
+	READ_PTR_FULL(DistanceInMToCannonShotHitChanceCurve, UCurveFloat);
+}
+
+void AAthenaAICharacterController::BeforeDelete()
+{
+	AAthenaAIController::BeforeDelete();
+
+	DELE_PTR_FULL(ItemParamsDataAsset);
+	DELE_PTR_FULL(FallbackLoadoutIfAllEngageItemsDropped);
+	DELE_PTR_FULL(CharacterParamsDataAsset);
+	DELE_PTR_FULL(DistanceInMToCannonShotHitChanceCurve);
+}
+
+void UAthenaAIControllerNavMeshTogglesInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UAthenaAIControllerNavMeshTogglesInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UFaunaAIContollerParamsDataAsset::AfterRead()
+{
+	UAthenaAIControllerParamsDataAsset::AfterRead();
+
+	READ_PTR_FULL(CharacterDistanceToDangerRatingCurve, UCurveFloat);
+	READ_PTR_FULL(DangerRatingToAgitationDurationCurve, UCurveFloat);
+	READ_PTR_FULL(DistanceToLeaderPatrolChanceCurve, UCurveFloat);
+}
+
+void UFaunaAIContollerParamsDataAsset::BeforeDelete()
+{
+	UAthenaAIControllerParamsDataAsset::BeforeDelete();
+
+	DELE_PTR_FULL(CharacterDistanceToDangerRatingCurve);
+	DELE_PTR_FULL(DangerRatingToAgitationDurationCurve);
+	DELE_PTR_FULL(DistanceToLeaderPatrolChanceCurve);
+}
+
+void UAthenaAIControllerParamsDataProvider::AfterRead()
+{
+	UAIDataProvider::AfterRead();
+
+}
+
+void UAthenaAIControllerParamsDataProvider::BeforeDelete()
+{
+	UAIDataProvider::BeforeDelete();
+
+}
+
+void UAthenaAIControllerParamsTargetInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UAthenaAIControllerParamsTargetInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+void UAthenaAIFormComponentContainerInterface::AfterRead()
+{
+	UInterface::AfterRead();
+
+}
+
+void UAthenaAIFormComponentContainerInterface::BeforeDelete()
+{
+	UInterface::BeforeDelete();
+
+}
+
+// Function:
+//		Offset -> 0x041D17C0
+//		Name   -> Function AthenaAI.AthenaAIPerceptionComponent.IsPerceptionSenseEnabled
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		class UClass*                                      Sense                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+bool UAthenaAIPerceptionComponent::IsPerceptionSenseEnabled(class UClass* Sense)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIPerceptionComponent.IsPerceptionSenseEnabled");
+
+	UAthenaAIPerceptionComponent_IsPerceptionSenseEnabled_Params params {};
+	params.Sense = Sense;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x041D1790
+//		Name   -> Function AthenaAI.AthenaAIPerceptionComponent.IsAnyPerceptionEnabled
+//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+bool UAthenaAIPerceptionComponent::IsAnyPerceptionEnabled()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIPerceptionComponent.IsAnyPerceptionEnabled");
+
+	UAthenaAIPerceptionComponent_IsAnyPerceptionEnabled_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function:
+//		Offset -> 0x041D1120
+//		Name   -> Function AthenaAI.AthenaAIPerceptionComponent.EnablePerceptionSense
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		class UClass*                                      Sense                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+//		bool                                               Enable                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+void UAthenaAIPerceptionComponent::EnablePerceptionSense(class UClass* Sense, bool Enable)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIPerceptionComponent.EnablePerceptionSense");
+
+	UAthenaAIPerceptionComponent_EnablePerceptionSense_Params params {};
+	params.Sense = Sense;
+	params.Enable = Enable;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x041D1090
+//		Name   -> Function AthenaAI.AthenaAIPerceptionComponent.EnableAllPerception
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		bool                                               Enable                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+void UAthenaAIPerceptionComponent::EnableAllPerception(bool Enable)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIPerceptionComponent.EnableAllPerception");
+
+	UAthenaAIPerceptionComponent_EnableAllPerception_Params params {};
+	params.Enable = Enable;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void UAthenaAIPerceptionComponent::AfterRead()
+{
+	UAIPerceptionComponent::AfterRead();
+
+}
+
+void UAthenaAIPerceptionComponent::BeforeDelete()
+{
+	UAIPerceptionComponent::BeforeDelete();
+
+}
+
+void UAthenaAISightTargetInterface::AfterRead()
+{
+	UAISightTargetInterface::AfterRead();
+
+}
+
+void UAthenaAISightTargetInterface::BeforeDelete()
+{
+	UAISightTargetInterface::BeforeDelete();
+
+}
+
+void UAthenaAIWeightedRangesDataProvider::AfterRead()
+{
+	UAIDataProvider::AfterRead();
+
+}
+
+void UAthenaAIWeightedRangesDataProvider::BeforeDelete()
+{
+	UAIDataProvider::BeforeDelete();
+
+}
+
+void UBlackboardAIDataProvider::AfterRead()
+{
+	UAIDataProvider::AfterRead();
+
+}
+
+void UBlackboardAIDataProvider::BeforeDelete()
+{
+	UAIDataProvider::BeforeDelete();
+
+}
+
+void UBTDecorator_ActionState::AfterRead()
+{
+	UBTDecorator::AfterRead();
+
+	READ_PTR_FULL(StateId, UClass);
+}
+
+void UBTDecorator_ActionState::BeforeDelete()
+{
+	UBTDecorator::BeforeDelete();
+
+	DELE_PTR_FULL(StateId);
+}
+
+void UBTDecorator_ActorInWater::AfterRead()
+{
+	UBTDecorator_BlackboardBase::AfterRead();
+
+}
+
+void UBTDecorator_ActorInWater::BeforeDelete()
+{
+	UBTDecorator_BlackboardBase::BeforeDelete();
+
+}
+
+void UBTDecorator_CurrentAIStrategy::AfterRead()
+{
+	UBTDecorator_BaseConditional::AfterRead();
+
+}
+
+void UBTDecorator_CurrentAIStrategy::BeforeDelete()
+{
+	UBTDecorator_BaseConditional::BeforeDelete();
+
+}
+
+void UBTDecorator_IsActorInExpectedActionState::AfterRead()
+{
+	UBTDecorator_BaseConditional::AfterRead();
+
+	READ_PTR_FULL(ExpectedActionState, UClass);
+}
+
+void UBTDecorator_IsActorInExpectedActionState::BeforeDelete()
+{
+	UBTDecorator_BaseConditional::BeforeDelete();
+
+	DELE_PTR_FULL(ExpectedActionState);
+}
+
+void UBTDecorator_ItemReadyToUse::AfterRead()
+{
+	UBTDecorator_BaseConditional::AfterRead();
+
+	READ_PTR_FULL(NotificationId, UClass);
+}
+
+void UBTDecorator_ItemReadyToUse::BeforeDelete()
+{
+	UBTDecorator_BaseConditional::BeforeDelete();
+
+	DELE_PTR_FULL(NotificationId);
+}
+
+void UBTDecorator_LeftOfAIPawn::AfterRead()
+{
+	UBTDecorator_BaseConditional::AfterRead();
+
+}
+
+void UBTDecorator_LeftOfAIPawn::BeforeDelete()
+{
+	UBTDecorator_BaseConditional::BeforeDelete();
+
+}
+
+void UBTDecorator_LineOfSightToTarget::AfterRead()
+{
+	UBTDecorator_BaseConditional::AfterRead();
+
+}
+
+void UBTDecorator_LineOfSightToTarget::BeforeDelete()
+{
+	UBTDecorator_BaseConditional::BeforeDelete();
+
+}
+
+void UBTDecorator_CompareBlackboardClassValue::AfterRead()
+{
+	UBTDecorator_BlackboardBase::AfterRead();
+
+	READ_PTR_FULL(Class, UClass);
+}
+
+void UBTDecorator_CompareBlackboardClassValue::BeforeDelete()
+{
+	UBTDecorator_BlackboardBase::BeforeDelete();
+
+	DELE_PTR_FULL(Class);
+}
+
+void UBTDecorator_CompareBlackboardIntValue::AfterRead()
+{
+	UBTDecorator::AfterRead();
+
+}
+
+void UBTDecorator_CompareBlackboardIntValue::BeforeDelete()
+{
+	UBTDecorator::BeforeDelete();
+
+}
+
+void UBTDecorator_CompareFloatValueBase::AfterRead()
+{
+	UBTDecorator_CompareBlackboardValues::AfterRead();
+
+}
+
+void UBTDecorator_CompareFloatValueBase::BeforeDelete()
+{
+	UBTDecorator_CompareBlackboardValues::BeforeDelete();
+
+}
+
+void UBTDecorator_CompareBlackboardActorSpeed::AfterRead()
+{
+	UBTDecorator_CompareFloatValueBase::AfterRead();
+
+}
+
+void UBTDecorator_CompareBlackboardActorSpeed::BeforeDelete()
+{
+	UBTDecorator_CompareFloatValueBase::BeforeDelete();
+
+}
+
+void UBTDecorator_CompareBlackboardFloatValue::AfterRead()
+{
+	UBTDecorator_CompareFloatValueBase::AfterRead();
+
+}
+
+void UBTDecorator_CompareBlackboardFloatValue::BeforeDelete()
+{
+	UBTDecorator_CompareFloatValueBase::BeforeDelete();
+
+}
+
+void UBTDecorator_CompareCurrentHealth::AfterRead()
+{
+	UBTDecorator_CompareFloatValueBase::AfterRead();
+
+}
+
+void UBTDecorator_CompareCurrentHealth::BeforeDelete()
+{
+	UBTDecorator_CompareFloatValueBase::BeforeDelete();
+
 }
 
 void UBTService_UpdateFocusOnBBChange::AfterRead()
@@ -6733,18 +8995,6 @@ void UBTTask_SetBlackboardFloatValue::BeforeDelete()
 
 }
 
-void UBTTask_SetBlackboardFloatValueFromMinMax::AfterRead()
-{
-	UBTTask_BlackboardBase::AfterRead();
-
-}
-
-void UBTTask_SetBlackboardFloatValueFromMinMax::BeforeDelete()
-{
-	UBTTask_BlackboardBase::BeforeDelete();
-
-}
-
 void UBTTask_SetBlackboardFloatValueFromWeightedArray::AfterRead()
 {
 	UBTTask_BlackboardBase::AfterRead();
@@ -6764,6 +9014,18 @@ void UBTTask_SetBlackboardIntValue::AfterRead()
 }
 
 void UBTTask_SetBlackboardIntValue::BeforeDelete()
+{
+	UBTTask_BlackboardBase::BeforeDelete();
+
+}
+
+void UBTTask_SetBlackboardVectorValue::AfterRead()
+{
+	UBTTask_BlackboardBase::AfterRead();
+
+}
+
+void UBTTask_SetBlackboardVectorValue::BeforeDelete()
 {
 	UBTTask_BlackboardBase::BeforeDelete();
 
@@ -6938,14 +9200,14 @@ void UBurrowComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363C2F0
+//		Offset -> 0x041D19D0
 //		Name   -> Function AthenaAI.CoralShieldVFXComponent.OnRep_CurrentCoralShieldRole
 //		Flags  -> (Final, Native, Private)
 void UCoralShieldVFXComponent::OnRep_CurrentCoralShieldRole()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.CoralShieldVFXComponent.OnRep_CurrentCoralShieldRole");
 
-	UCoralShieldVFXComponent_OnRep_CurrentCoralShieldRole_Params params;
+	UCoralShieldVFXComponent_OnRep_CurrentCoralShieldRole_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -6985,18 +9247,6 @@ void UCustomSkeletonAnimationDataList::AfterRead()
 void UCustomSkeletonAnimationDataList::BeforeDelete()
 {
 	UDataAsset::BeforeDelete();
-
-}
-
-void UEnvQueryContext_PositionFromBlackboard::AfterRead()
-{
-	UEnvQueryContext::AfterRead();
-
-}
-
-void UEnvQueryContext_PositionFromBlackboard::BeforeDelete()
-{
-	UEnvQueryContext::BeforeDelete();
 
 }
 
@@ -7377,7 +9627,7 @@ void USimpleAIRegion::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0363D040
+//		Offset -> 0x041D2720
 //		Name   -> Function AthenaAI.SpawnContextProviderZone.RemoveContextsFromTarget
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -7388,7 +9638,7 @@ void ASpawnContextProviderZone::RemoveContextsFromTarget(class AActor* InActor, 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.SpawnContextProviderZone.RemoveContextsFromTarget");
 
-	ASpawnContextProviderZone_RemoveContextsFromTarget_Params params;
+	ASpawnContextProviderZone_RemoveContextsFromTarget_Params params {};
 	params.InActor = InActor;
 	params.InComponent = InComponent;
 	params.InOtherBodyIndex = InOtherBodyIndex;
@@ -7403,7 +9653,7 @@ void ASpawnContextProviderZone::RemoveContextsFromTarget(class AActor* InActor, 
 
 
 // Function:
-//		Offset -> 0x0363B2D0
+//		Offset -> 0x041D09B0
 //		Name   -> Function AthenaAI.SpawnContextProviderZone.AddContextsToTarget
 //		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
@@ -7416,7 +9666,7 @@ void ASpawnContextProviderZone::AddContextsToTarget(class AActor* InActor, class
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.SpawnContextProviderZone.AddContextsToTarget");
 
-	ASpawnContextProviderZone_AddContextsToTarget_Params params;
+	ASpawnContextProviderZone_AddContextsToTarget_Params params {};
 	params.InActor = InActor;
 	params.InComponent = InComponent;
 	params.InOtherBodyIndex = InOtherBodyIndex;
@@ -7538,2195 +9788,15 @@ void AWaterbasedAISupplier::BeforeDelete()
 	DELE_PTR_FULL(Spawners);
 }
 
-void UAICreatureCharacterMovementComponent::AfterRead()
-{
-	UCharacterMovementComponent::AfterRead();
-
-}
-
-void UAICreatureCharacterMovementComponent::BeforeDelete()
-{
-	UCharacterMovementComponent::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x0368D7C0
-//		Name   -> Function AthenaAI.AICreatureCharacter.SetAIStrategy
-//		Flags  -> (Native, Public, BlueprintCallable)
-// Parameters:
-//		class UClass*                                      InStrategy                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-void AAICreatureCharacter::SetAIStrategy(class UClass* InStrategy)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AICreatureCharacter.SetAIStrategy");
-
-	AAICreatureCharacter_SetAIStrategy_Params params;
-	params.InStrategy = InStrategy;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0368D740
-//		Name   -> Function AthenaAI.AICreatureCharacter.OnRep_CurrentAIStrategy
-//		Flags  -> (Final, Native, Protected)
-// Parameters:
-//		class UClass*                                      OldAIStrategy                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-void AAICreatureCharacter::OnRep_CurrentAIStrategy(class UClass* OldAIStrategy)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AICreatureCharacter.OnRep_CurrentAIStrategy");
-
-	AAICreatureCharacter_OnRep_CurrentAIStrategy_Params params;
-	params.OldAIStrategy = OldAIStrategy;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0368D720
-//		Name   -> Function AthenaAI.AICreatureCharacter.Multicast_DespawnRPC
-//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
-void AAICreatureCharacter::Multicast_DespawnRPC()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AICreatureCharacter.Multicast_DespawnRPC");
-
-	AAICreatureCharacter_Multicast_DespawnRPC_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x0368D6E0
-//		Name   -> Function AthenaAI.AICreatureCharacter.GetAIStrategy
-//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		class UClass*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-class UClass* AAICreatureCharacter::GetAIStrategy()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AICreatureCharacter.GetAIStrategy");
-
-	AAICreatureCharacter_GetAIStrategy_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-void AAICreatureCharacter::AfterRead()
-{
-	ACharacter::AfterRead();
-
-	READ_PTR_FULL(ActionStateMachineComponent, UActionStateMachineComponent);
-	READ_PTR_FULL(ActionStatePriorityTableData, UActionStatePriorityTableData);
-	READ_PTR_FULL(ActionStateCreatorDefinition, UClass);
-	READ_PTR_FULL(AIControllerParams, UAthenaAIControllerParamsDataAsset);
-	READ_PTR_FULL(InteractableComponent, UInteractableComponent);
-	READ_PTR_FULL(WaterHeightProviderComponent, UWaterHeightProviderComponent);
-	READ_PTR_FULL(AnimNotifyWwiseEmitterComponent, UAnimNotifyWwiseEmitterComponent);
-	READ_PTR_FULL(RewindComponent, URewindComponent);
-	READ_PTR_FULL(ActionRulesComponent, UActionRulesComponent);
-	READ_PTR_FULL(AICreatureCharacterMovementComponent, UAICreatureCharacterMovementComponent);
-	READ_PTR_FULL(CurrentAIStrategy, UClass);
-}
-
-void AAICreatureCharacter::BeforeDelete()
-{
-	ACharacter::BeforeDelete();
-
-	DELE_PTR_FULL(ActionStateMachineComponent);
-	DELE_PTR_FULL(ActionStatePriorityTableData);
-	DELE_PTR_FULL(ActionStateCreatorDefinition);
-	DELE_PTR_FULL(AIControllerParams);
-	DELE_PTR_FULL(InteractableComponent);
-	DELE_PTR_FULL(WaterHeightProviderComponent);
-	DELE_PTR_FULL(AnimNotifyWwiseEmitterComponent);
-	DELE_PTR_FULL(RewindComponent);
-	DELE_PTR_FULL(ActionRulesComponent);
-	DELE_PTR_FULL(AICreatureCharacterMovementComponent);
-	DELE_PTR_FULL(CurrentAIStrategy);
-}
-
-void UAICreatureCharacterPathFollowingComponent::AfterRead()
-{
-	UAthenaAICharacterPathFollowingComponent::AfterRead();
-
-}
-
-void UAICreatureCharacterPathFollowingComponent::BeforeDelete()
-{
-	UAthenaAICharacterPathFollowingComponent::BeforeDelete();
-
-}
-
-void UAICreatureMovementModifierInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UAICreatureMovementModifierInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void UAICreatureMovementModifierParamsDataAsset::AfterRead()
-{
-	UDataAsset::AfterRead();
-
-}
-
-void UAICreatureMovementModifierParamsDataAsset::BeforeDelete()
-{
-	UDataAsset::BeforeDelete();
-
-}
-
-void UBehaviourTreeInterruptionInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UBehaviourTreeInterruptionInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void UForcedIdleBehaviourInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UForcedIdleBehaviourInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void UAIDialogueStateProviderInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UAIDialogueStateProviderInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void USimpleDialogueStateProvider::AfterRead()
-{
-	UObject::AfterRead();
-
-}
-
-void USimpleDialogueStateProvider::BeforeDelete()
-{
-	UObject::BeforeDelete();
-
-}
-
-void UBountySpawnerAudioZonesInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UBountySpawnerAudioZonesInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void UAIBountySpawner::AfterRead()
-{
-	UAISpawner::AfterRead();
-
-	READ_PTR_FULL(ActiveCombatDialogue, UAICombatDialogue);
-	READ_PTR_FULL(AudioZoneTriggerComponent, UOverlapTriggerComponent);
-}
-
-void UAIBountySpawner::BeforeDelete()
-{
-	UAISpawner::BeforeDelete();
-
-	DELE_PTR_FULL(ActiveCombatDialogue);
-	DELE_PTR_FULL(AudioZoneTriggerComponent);
-}
-
-void UPostBountyAIPawnSpawnedAction::AfterRead()
-{
-	UDataAsset::AfterRead();
-
-}
-
-void UPostBountyAIPawnSpawnedAction::BeforeDelete()
-{
-	UDataAsset::BeforeDelete();
-
-}
-
-void UApplyNameplateToBountyWaveSpawnedAction::AfterRead()
-{
-	UPostBountyAIPawnSpawnedAction::AfterRead();
-
-}
-
-void UApplyNameplateToBountyWaveSpawnedAction::BeforeDelete()
-{
-	UPostBountyAIPawnSpawnedAction::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x03724810
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAIWithSettings
-//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
-// Parameters:
-//		TAssetPtr<class UClass>                            AIType                                                     (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
-//		TAssetPtr<class UAthenaAIControllerParamsDataAsset> Skillset                                                   (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
-//		TAssetPtr<class ULoadoutAsset>                     Loadout                                                    (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
-//		TAssetPtr<class UAthenaAIFormDataAsset>            Form                                                       (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
-//		TAssetPtr<class UClass>                            AIItemSpawnComponent                                       (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
-//		class UClass*                                      ClassId                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-//		TAssetPtr<class UAthenaAIAmmoDataAsset>            Ammo                                                       (ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash)
-//		struct FVector                                     Pos                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-//		struct FRotator                                    Rot                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-//		struct FName                                       Region                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class AActor*                                      TriggerActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		struct FName                                       NavMeshOverride                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		float                                              Delay                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UAthenaAIDebugFunctionLibrary::STATIC_SpawnAIWithSettings(TAssetPtr<class UClass> AIType, TAssetPtr<class UAthenaAIControllerParamsDataAsset> Skillset, TAssetPtr<class ULoadoutAsset> Loadout, TAssetPtr<class UAthenaAIFormDataAsset> Form, TAssetPtr<class UClass> AIItemSpawnComponent, class UClass* ClassId, TAssetPtr<class UAthenaAIAmmoDataAsset> Ammo, const struct FVector& Pos, const struct FRotator& Rot, const struct FName& Region, class AActor* TriggerActor, const struct FName& NavMeshOverride, float Delay)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAIWithSettings");
-
-	UAthenaAIDebugFunctionLibrary_SpawnAIWithSettings_Params params;
-	params.AIType = AIType;
-	params.Skillset = Skillset;
-	params.Loadout = Loadout;
-	params.Form = Form;
-	params.AIItemSpawnComponent = AIItemSpawnComponent;
-	params.ClassId = ClassId;
-	params.Ammo = Ammo;
-	params.Pos = Pos;
-	params.Rot = Rot;
-	params.Region = Region;
-	params.TriggerActor = TriggerActor;
-	params.NavMeshOverride = NavMeshOverride;
-	params.Delay = Delay;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x037244F0
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAI
-//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
-// Parameters:
-//		class UAIEncounterSettings*                        EncounterSettings                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		struct FVector                                     Pos                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-//		struct FRotator                                    Rot                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-//		float                                              Delay                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		bool                                               MakeAIPermanentlyNetRelevant                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-//		class AActor*                                      InstancedNavMesh                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		struct FAIEncounterSpecification                   ReturnValue                                                (Parm, OutParm, ReturnParm)
-struct FAIEncounterSpecification UAthenaAIDebugFunctionLibrary::STATIC_SpawnAI(class UAIEncounterSettings* EncounterSettings, const struct FVector& Pos, const struct FRotator& Rot, float Delay, bool MakeAIPermanentlyNetRelevant, class AActor* InstancedNavMesh)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.SpawnAI");
-
-	UAthenaAIDebugFunctionLibrary_SpawnAI_Params params;
-	params.EncounterSettings = EncounterSettings;
-	params.Pos = Pos;
-	params.Rot = Rot;
-	params.Delay = Delay;
-	params.MakeAIPermanentlyNetRelevant = MakeAIPermanentlyNetRelevant;
-	params.InstancedNavMesh = InstancedNavMesh;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x03724430
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.SetEnvQueryManagerMaxAllowedSeconds
-//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-//		float                                              InMaxAllowedSeconds                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class UObject*                                     QueryOwner                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UAthenaAIDebugFunctionLibrary::STATIC_SetEnvQueryManagerMaxAllowedSeconds(float InMaxAllowedSeconds, class UObject* QueryOwner)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.SetEnvQueryManagerMaxAllowedSeconds");
-
-	UAthenaAIDebugFunctionLibrary_SetEnvQueryManagerMaxAllowedSeconds_Params params;
-	params.InMaxAllowedSeconds = InMaxAllowedSeconds;
-	params.QueryOwner = QueryOwner;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03724410
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.KillAllDebugAISpawners
-//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
-void UAthenaAIDebugFunctionLibrary::STATIC_KillAllDebugAISpawners()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.KillAllDebugAISpawners");
-
-	UAthenaAIDebugFunctionLibrary_KillAllDebugAISpawners_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03724390
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.GetEnvQueryManagerNumRunningQueries
-//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-//		class UObject*                                     QueryOwner                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		int                                                ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-int UAthenaAIDebugFunctionLibrary::STATIC_GetEnvQueryManagerNumRunningQueries(class UObject* QueryOwner)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.GetEnvQueryManagerNumRunningQueries");
-
-	UAthenaAIDebugFunctionLibrary_GetEnvQueryManagerNumRunningQueries_Params params;
-	params.QueryOwner = QueryOwner;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x03724320
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableMaximumSightSettings
-//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-//		class AAthenaAIController*                         AIController                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UAthenaAIDebugFunctionLibrary::STATIC_EnableMaximumSightSettings(class AAthenaAIController* AIController)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableMaximumSightSettings");
-
-	UAthenaAIDebugFunctionLibrary_EnableMaximumSightSettings_Params params;
-	params.AIController = AIController;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x037242B0
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableBehaviorTreeLogging
-//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-//		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UAthenaAIDebugFunctionLibrary::STATIC_EnableBehaviorTreeLogging(class UObject* WorldContext)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.EnableBehaviorTreeLogging");
-
-	UAthenaAIDebugFunctionLibrary_EnableBehaviorTreeLogging_Params params;
-	params.WorldContext = WorldContext;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03724240
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.DespawnAIPawn
-//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-//		class APawn*                                       Pawn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UAthenaAIDebugFunctionLibrary::STATIC_DespawnAIPawn(class APawn* Pawn)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.DespawnAIPawn");
-
-	UAthenaAIDebugFunctionLibrary_DespawnAIPawn_Params params;
-	params.Pawn = Pawn;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03724140
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtPosition
-//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
-// Parameters:
-//		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class UAISpawner*                                  SpawnerAsset                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		struct FVector                                     Pos                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-void UAthenaAIDebugFunctionLibrary::STATIC_CreateAISpawnerAtPosition(class UObject* WorldContext, class UAISpawner* SpawnerAsset, const struct FVector& Pos)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtPosition");
-
-	UAthenaAIDebugFunctionLibrary_CreateAISpawnerAtPosition_Params params;
-	params.WorldContext = WorldContext;
-	params.SpawnerAsset = SpawnerAsset;
-	params.Pos = Pos;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03724050
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtActor
-//		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-//		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class UAISpawner*                                  SpawnerAsset                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class AActor*                                      SpawnLocationActor                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UAthenaAIDebugFunctionLibrary::STATIC_CreateAISpawnerAtActor(class UObject* WorldContext, class UAISpawner* SpawnerAsset, class AActor* SpawnLocationActor)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.CreateAISpawnerAtActor");
-
-	UAthenaAIDebugFunctionLibrary_CreateAISpawnerAtActor_Params params;
-	params.WorldContext = WorldContext;
-	params.SpawnerAsset = SpawnerAsset;
-	params.SpawnLocationActor = SpawnLocationActor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03723E80
-//		Name   -> Function AthenaAI.AthenaAIDebugFunctionLibrary.CanProjectPointToNavigation
-//		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
-// Parameters:
-//		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		struct FVector                                     Point                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-//		class ANavigationData*                             NavData                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class UClass*                                      FilterClass                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-//		struct FVector                                     QueryExtent                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-//		struct FVector                                     ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-struct FVector UAthenaAIDebugFunctionLibrary::STATIC_CanProjectPointToNavigation(class UObject* WorldContext, const struct FVector& Point, class ANavigationData* NavData, class UClass* FilterClass, const struct FVector& QueryExtent)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaAIDebugFunctionLibrary.CanProjectPointToNavigation");
-
-	UAthenaAIDebugFunctionLibrary_CanProjectPointToNavigation_Params params;
-	params.WorldContext = WorldContext;
-	params.Point = Point;
-	params.NavData = NavData;
-	params.FilterClass = FilterClass;
-	params.QueryExtent = QueryExtent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-void UAthenaAIDebugFunctionLibrary::AfterRead()
-{
-	UBlueprintFunctionLibrary::AfterRead();
-
-}
-
-void UAthenaAIDebugFunctionLibrary::BeforeDelete()
-{
-	UBlueprintFunctionLibrary::BeforeDelete();
-
-}
-
-void ADebugAISpawnerCreator::AfterRead()
-{
-	AActor::AfterRead();
-
-	READ_PTR_FULL(SpawnerTemplate, UAISpawner);
-	READ_PTR_FULL(Spawner, UAISpawner);
-	READ_PTR_FULL(ProximityPlayerTracker, UAIProximityPlayerTracker);
-	READ_PTR_FULL(Region, USimpleAIRegion);
-}
-
-void ADebugAISpawnerCreator::BeforeDelete()
-{
-	AActor::BeforeDelete();
-
-	DELE_PTR_FULL(SpawnerTemplate);
-	DELE_PTR_FULL(Spawner);
-	DELE_PTR_FULL(ProximityPlayerTracker);
-	DELE_PTR_FULL(Region);
-}
-
-void UAIDioramaLocationSourceInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UAIDioramaLocationSourceInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void AAIDiorama::AfterRead()
-{
-	AActor::AfterRead();
-
-	READ_PTR_FULL(SceneComponent, USceneComponent);
-	READ_PTR_FULL(SpawnedDialogueCoordinator, ASceneDialogueCoordinator);
-	READ_PTR_FULL(DialogueData, USceneDialogueData);
-}
-
-void AAIDiorama::BeforeDelete()
-{
-	AActor::BeforeDelete();
-
-	DELE_PTR_FULL(SceneComponent);
-	DELE_PTR_FULL(SpawnedDialogueCoordinator);
-	DELE_PTR_FULL(DialogueData);
-}
-
-void UAIDioramaCategory::AfterRead()
-{
-	UObject::AfterRead();
-
-}
-
-void UAIDioramaCategory::BeforeDelete()
-{
-	UObject::BeforeDelete();
-
-}
-
-void UAIDioramaController::AfterRead()
-{
-	UObject::AfterRead();
-
-	READ_PTR_FULL(AIDioramaDesc, UAIDioramaDesc);
-	READ_PTR_FULL(DialogueData, USceneDialogueData);
-	READ_PTR_FULL(AIDiorama, AAIDiorama);
-	READ_PTR_FULL(Spawner, UAISpawner);
-}
-
-void UAIDioramaController::BeforeDelete()
-{
-	UObject::BeforeDelete();
-
-	DELE_PTR_FULL(AIDioramaDesc);
-	DELE_PTR_FULL(DialogueData);
-	DELE_PTR_FULL(AIDiorama);
-	DELE_PTR_FULL(Spawner);
-}
-
-void UAIDioramaDesc::AfterRead()
-{
-	UDataAsset::AfterRead();
-
-	READ_PTR_FULL(DialogueData, USceneDialogueData);
-}
-
-void UAIDioramaDesc::BeforeDelete()
-{
-	UDataAsset::BeforeDelete();
-
-	DELE_PTR_FULL(DialogueData);
-}
-
-void UAIDioramaLocationSourceComponent::AfterRead()
-{
-	USceneComponent::AfterRead();
-
-	READ_PTR_FULL(DialogueTriggerRadiusSphere, USphereComponent);
-	READ_PTR_FULL(DialogueSubtitleRadiusSphere, USphereComponent);
-	READ_PTR_FULL(AISenseRadiusSphere, USphereComponent);
-}
-
-void UAIDioramaLocationSourceComponent::BeforeDelete()
-{
-	USceneComponent::BeforeDelete();
-
-	DELE_PTR_FULL(DialogueTriggerRadiusSphere);
-	DELE_PTR_FULL(DialogueSubtitleRadiusSphere);
-	DELE_PTR_FULL(AISenseRadiusSphere);
-}
-
-void UAIDioramaServiceInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UAIDioramaServiceInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void AAIDioramaService::AfterRead()
-{
-	AActor::AfterRead();
-
-}
-
-void AAIDioramaService::BeforeDelete()
-{
-	AActor::BeforeDelete();
-
-}
-
-void ADebugDioramaCreator::AfterRead()
-{
-	ADebugAISpawnerCreator::AfterRead();
-
-	READ_PTR_FULL(AIDioramaDesc, UAIDioramaDesc);
-	READ_PTR_FULL(Location, UAIDioramaLocationSourceComponent);
-	READ_PTR_FULL(AIDioramaController, UAIDioramaController);
-}
-
-void ADebugDioramaCreator::BeforeDelete()
-{
-	ADebugAISpawnerCreator::BeforeDelete();
-
-	DELE_PTR_FULL(AIDioramaDesc);
-	DELE_PTR_FULL(Location);
-	DELE_PTR_FULL(AIDioramaController);
-}
-
-void UInDioramaAIStrategyId::AfterRead()
-{
-	UAIStrategyId::AfterRead();
-
-}
-
-void UInDioramaAIStrategyId::BeforeDelete()
-{
-	UAIStrategyId::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x039C1860
-//		Name   -> Function AthenaAI.AIFaunaSpawner.SpawnFaunaGroup
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-void UAIFaunaSpawner::SpawnFaunaGroup()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AIFaunaSpawner.SpawnFaunaGroup");
-
-	UAIFaunaSpawner_SpawnFaunaGroup_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void UAIFaunaSpawner::AfterRead()
-{
-	UAISpawner::AfterRead();
-
-	READ_PTR_FULL(FaunaLeader, AActor);
-}
-
-void UAIFaunaSpawner::BeforeDelete()
-{
-	UAISpawner::BeforeDelete();
-
-	DELE_PTR_FULL(FaunaLeader);
-}
-
-// Function:
-//		Offset -> 0x039C17D0
-//		Name   -> Function AthenaAI.AthenaFaunaAIController.SetDormancyCheckingEnabled
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		bool                                               InDormancyCheckingEnabledInAutomation                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-void AAthenaFaunaAIController::SetDormancyCheckingEnabled(bool InDormancyCheckingEnabledInAutomation)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.SetDormancyCheckingEnabled");
-
-	AAthenaFaunaAIController_SetDormancyCheckingEnabled_Params params;
-	params.InDormancyCheckingEnabledInAutomation = InDormancyCheckingEnabledInAutomation;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C1470
-//		Name   -> Function AthenaAI.AthenaFaunaAIController.LeaderDestroyed
-//		Flags  -> (Final, Native, Private)
-// Parameters:
-//		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AAthenaFaunaAIController::LeaderDestroyed(class AActor* Actor)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.LeaderDestroyed");
-
-	AAthenaFaunaAIController_LeaderDestroyed_Params params;
-	params.Actor = Actor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C1440
-//		Name   -> Function AthenaAI.AthenaFaunaAIController.GetLeader
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		class AActor*                                      ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-class AActor* AAthenaFaunaAIController::GetLeader()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.GetLeader");
-
-	AAthenaFaunaAIController_GetLeader_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x039C1410
-//		Name   -> Function AthenaAI.AthenaFaunaAIController.GetCourage
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-float AAthenaFaunaAIController::GetCourage()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.GetCourage");
-
-	AAthenaFaunaAIController_GetCourage_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x039C13E0
-//		Name   -> Function AthenaAI.AthenaFaunaAIController.GetAthenaAICharPathFollowingComp
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		class UAthenaAICharacterPathFollowingComponent*    ReturnValue                                                (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-class UAthenaAICharacterPathFollowingComponent* AAthenaFaunaAIController::GetAthenaAICharPathFollowingComp()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaFaunaAIController.GetAthenaAICharPathFollowingComp");
-
-	AAthenaFaunaAIController_GetAthenaAICharPathFollowingComp_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-void AAthenaFaunaAIController::AfterRead()
-{
-	AAthenaAIController::AfterRead();
-
-	READ_PTR_FULL(FaunaDataAsset, UFaunaAIContollerParamsDataAsset);
-	READ_PTR_FULL(CarrierActor, AActor);
-	READ_PTR_FULL(HighestDangerActor, AActor);
-	READ_PTR_FULL(PlayerTracker, UFaunaAIPlayerTracker);
-}
-
-void AAthenaFaunaAIController::BeforeDelete()
-{
-	AAthenaAIController::BeforeDelete();
-
-	DELE_PTR_FULL(FaunaDataAsset);
-	DELE_PTR_FULL(CarrierActor);
-	DELE_PTR_FULL(HighestDangerActor);
-	DELE_PTR_FULL(PlayerTracker);
-}
-
-void UCatchFaunaConditionalStatTrigger::AfterRead()
-{
-	UConditionalStatsTriggerType::AfterRead();
-
-}
-
-void UCatchFaunaConditionalStatTrigger::BeforeDelete()
-{
-	UConditionalStatsTriggerType::BeforeDelete();
-
-}
-
-void UEnvQueryContext_LeaderFromBlackboard::AfterRead()
-{
-	UEnvQueryContext::AfterRead();
-
-}
-
-void UEnvQueryContext_LeaderFromBlackboard::BeforeDelete()
-{
-	UEnvQueryContext::BeforeDelete();
-
-}
-
-void UEnvQueryContext_Threat::AfterRead()
-{
-	UEnvQueryContext::AfterRead();
-
-}
-
-void UEnvQueryContext_Threat::BeforeDelete()
-{
-	UEnvQueryContext::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x039C1880
-//		Name   -> Function AthenaAI.Fauna.TestingSetWaterState
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		TEnumAsByte<AthenaAI_EFaunaInWaterState>           NewInState                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AFauna::TestingSetWaterState(TEnumAsByte<AthenaAI_EFaunaInWaterState> NewInState)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.TestingSetWaterState");
-
-	AFauna_TestingSetWaterState_Params params;
-	params.NewInState = NewInState;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C17B0
-//		Name   -> Function AthenaAI.Fauna.OnRep_TargetTurnAngle
-//		Flags  -> (Final, Native, Private)
-void AFauna::OnRep_TargetTurnAngle()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_TargetTurnAngle");
-
-	AFauna_OnRep_TargetTurnAngle_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C1790
-//		Name   -> Function AthenaAI.Fauna.OnRep_IsPlayingStarvingAnim
-//		Flags  -> (Final, Native, Private)
-void AFauna::OnRep_IsPlayingStarvingAnim()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_IsPlayingStarvingAnim");
-
-	AFauna_OnRep_IsPlayingStarvingAnim_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C1770
-//		Name   -> Function AthenaAI.Fauna.OnRep_IsCalm
-//		Flags  -> (Final, Native, Private)
-void AFauna::OnRep_IsCalm()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_IsCalm");
-
-	AFauna_OnRep_IsCalm_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C1750
-//		Name   -> Function AthenaAI.Fauna.OnRep_IsAgitated
-//		Flags  -> (Final, Native, Private)
-void AFauna::OnRep_IsAgitated()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_IsAgitated");
-
-	AFauna_OnRep_IsAgitated_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C1730
-//		Name   -> Function AthenaAI.Fauna.OnRep_InWaterState
-//		Flags  -> (Final, Native, Private)
-void AFauna::OnRep_InWaterState()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_InWaterState");
-
-	AFauna_OnRep_InWaterState_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C16A0
-//		Name   -> Function AthenaAI.Fauna.OnRep_CratedState
-//		Flags  -> (Final, Native, Private, HasOutParms)
-// Parameters:
-//		TEnumAsByte<AthenaAI_EFaunaCratedState>            PreviousCratedState                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AFauna::OnRep_CratedState(TEnumAsByte<AthenaAI_EFaunaCratedState> PreviousCratedState)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.OnRep_CratedState");
-
-	AFauna_OnRep_CratedState_Params params;
-	params.PreviousCratedState = PreviousCratedState;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C1610
-//		Name   -> Function AthenaAI.Fauna.Multicast_PlayPutInCrateEffectsRPC
-//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
-// Parameters:
-//		class AActor*                                      Crate                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AFauna::Multicast_PlayPutInCrateEffectsRPC(class AActor* Crate)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.Multicast_PlayPutInCrateEffectsRPC");
-
-	AFauna_Multicast_PlayPutInCrateEffectsRPC_Params params;
-	params.Crate = Crate;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C1580
-//		Name   -> Function AthenaAI.Fauna.Multicast_JustBeenFedRPC
-//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
-// Parameters:
-//		class AActor*                                      FedBy                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AFauna::Multicast_JustBeenFedRPC(class AActor* FedBy)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.Multicast_JustBeenFedRPC");
-
-	AFauna_Multicast_JustBeenFedRPC_Params params;
-	params.FedBy = FedBy;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C14F0
-//		Name   -> Function AthenaAI.Fauna.Multicast_HightlightLeader
-//		Flags  -> (Net, NetReliable, Native, Event, NetMulticast, Public)
-// Parameters:
-//		bool                                               bIsLeader                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-void AFauna::Multicast_HightlightLeader(bool bIsLeader)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.Multicast_HightlightLeader");
-
-	AFauna_Multicast_HightlightLeader_Params params;
-	params.bIsLeader = bIsLeader;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C13C0
-//		Name   -> Function AthenaAI.Fauna.GenerateNewRandomAnimationSeed
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-void AFauna::GenerateNewRandomAnimationSeed()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.GenerateNewRandomAnimationSeed");
-
-	AFauna_GenerateNewRandomAnimationSeed_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039C1340
-//		Name   -> Function AthenaAI.Fauna.ActivateResponseRPC
-//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
-// Parameters:
-//		float                                              InTargetTurnAngle                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AFauna::ActivateResponseRPC(float InTargetTurnAngle)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Fauna.ActivateResponseRPC");
-
-	AFauna_ActivateResponseRPC_Params params;
-	params.InTargetTurnAngle = InTargetTurnAngle;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void AFauna::AfterRead()
-{
-	AAICreatureCharacter::AfterRead();
-
-	READ_PTR_FULL(FaunaSpecies, UClass);
-	READ_PTR_FULL(FaunaBreed, UClass);
-	READ_PTR_FULL(HitImpactParticleSystem, UObject);
-	READ_PTR_FULL(DeathParticleSystem, UObject);
-	READ_PTR_FULL(PutInCrateParticleSystem, UObject);
-	READ_PTR_FULL(PutInCrateSoundCue, UWwiseEvent);
-	READ_PTR_FULL(TookDamageSoundCue, UWwiseEvent);
-	READ_PTR_FULL(AgitationStartedSoundCue, UWwiseEvent);
-	READ_PTR_FULL(AgitationStoppedSoundCue, UWwiseEvent);
-	READ_PTR_FULL(CalmStartedSoundCue, UWwiseEvent);
-	READ_PTR_FULL(CalmStoppedSoundCue, UWwiseEvent);
-	READ_PTR_FULL(BreathBubblesParticleSystem, UObject);
-	READ_PTR_FULL(OnFeedingForceFeedbackEffect, UForceFeedbackEffect);
-	READ_PTR_FULL(MountableComponent, UMountableComponent);
-	READ_PTR_FULL(HealthComponent, UHealthComponent);
-	READ_PTR_FULL(DamageableComponent, UDamageableComponent);
-	READ_PTR_FULL(AttackHitVolume, UPrimitiveComponent);
-	READ_PTR_FULL(Animations, UFaunaAnimationData);
-	READ_PTR_FULL(DitherComponent, UDitherComponent);
-	READ_PTR_FULL(StatusEffectManagerComponent, ULightWeightStatusEffectManagerComponent);
-	READ_PTR_FULL(AIControllerParamsWhenInCrate, UAthenaAIControllerParamsDataAsset);
-	READ_PTR_FULL(PeriodicAINoiseEventComponent, UPeriodicAINoiseEventComponent);
-	READ_PTR_FULL(AgitationResponseParticleSystem, UObject);
-	READ_PTR_FULL(FeedingComponent, UFeedingComponent);
-	READ_PTR_FULL(FaunaMovementComponent, UFaunaMovementComponent);
-	READ_PTR_FULL(Crate, AActor);
-	READ_PTR_FULL(BreathBubblesParticleSystemComponent, UParticleSystemComponent);
-	READ_PTR_FULL(VenomComponent, UVenomComponent);
-}
-
-void AFauna::BeforeDelete()
-{
-	AAICreatureCharacter::BeforeDelete();
-
-	DELE_PTR_FULL(FaunaSpecies);
-	DELE_PTR_FULL(FaunaBreed);
-	DELE_PTR_FULL(HitImpactParticleSystem);
-	DELE_PTR_FULL(DeathParticleSystem);
-	DELE_PTR_FULL(PutInCrateParticleSystem);
-	DELE_PTR_FULL(PutInCrateSoundCue);
-	DELE_PTR_FULL(TookDamageSoundCue);
-	DELE_PTR_FULL(AgitationStartedSoundCue);
-	DELE_PTR_FULL(AgitationStoppedSoundCue);
-	DELE_PTR_FULL(CalmStartedSoundCue);
-	DELE_PTR_FULL(CalmStoppedSoundCue);
-	DELE_PTR_FULL(BreathBubblesParticleSystem);
-	DELE_PTR_FULL(OnFeedingForceFeedbackEffect);
-	DELE_PTR_FULL(MountableComponent);
-	DELE_PTR_FULL(HealthComponent);
-	DELE_PTR_FULL(DamageableComponent);
-	DELE_PTR_FULL(AttackHitVolume);
-	DELE_PTR_FULL(Animations);
-	DELE_PTR_FULL(DitherComponent);
-	DELE_PTR_FULL(StatusEffectManagerComponent);
-	DELE_PTR_FULL(AIControllerParamsWhenInCrate);
-	DELE_PTR_FULL(PeriodicAINoiseEventComponent);
-	DELE_PTR_FULL(AgitationResponseParticleSystem);
-	DELE_PTR_FULL(FeedingComponent);
-	DELE_PTR_FULL(FaunaMovementComponent);
-	DELE_PTR_FULL(Crate);
-	DELE_PTR_FULL(BreathBubblesParticleSystemComponent);
-	DELE_PTR_FULL(VenomComponent);
-}
-
-void UFaunaAIPlayerTracker::AfterRead()
-{
-	UAIPlayerTracker::AfterRead();
-
-}
-
-void UFaunaAIPlayerTracker::BeforeDelete()
-{
-	UAIPlayerTracker::BeforeDelete();
-
-}
-
-void UFaunaMovementComponent::AfterRead()
-{
-	UAICreatureCharacterMovementComponent::AfterRead();
-
-}
-
-void UFaunaMovementComponent::BeforeDelete()
-{
-	UAICreatureCharacterMovementComponent::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x03B00BB0
-//		Name   -> Function AthenaAI.Pet.SetExitTakeOffFlag
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		bool                                               InExitTakeOffFlag                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-void APet::SetExitTakeOffFlag(bool InExitTakeOffFlag)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.SetExitTakeOffFlag");
-
-	APet_SetExitTakeOffFlag_Params params;
-	params.InExitTakeOffFlag = InExitTakeOffFlag;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B00A50
-//		Name   -> Function AthenaAI.Pet.OnShipDestroyed
-//		Flags  -> (Final, Native, Public)
-// Parameters:
-//		class AActor*                                      InShip                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void APet::OnShipDestroyed(class AActor* InShip)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnShipDestroyed");
-
-	APet_OnShipDestroyed_Params params;
-	params.InShip = InShip;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B00A30
-//		Name   -> Function AthenaAI.Pet.OnRep_RollRequest
-//		Flags  -> (Final, Native, Private)
-void APet::OnRep_RollRequest()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_RollRequest");
-
-	APet_OnRep_RollRequest_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B00A10
-//		Name   -> Function AthenaAI.Pet.OnRep_ResetRollAndZOffset
-//		Flags  -> (Final, Native, Private)
-void APet::OnRep_ResetRollAndZOffset()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_ResetRollAndZOffset");
-
-	APet_OnRep_ResetRollAndZOffset_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B009F0
-//		Name   -> Function AthenaAI.Pet.OnRep_PetTurnToFaceData
-//		Flags  -> (Final, Native, Public)
-void APet::OnRep_PetTurnToFaceData()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_PetTurnToFaceData");
-
-	APet_OnRep_PetTurnToFaceData_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B009D0
-//		Name   -> Function AthenaAI.Pet.OnRep_PetOwner
-//		Flags  -> (Final, Native, Private)
-void APet::OnRep_PetOwner()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_PetOwner");
-
-	APet_OnRep_PetOwner_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B009B0
-//		Name   -> Function AthenaAI.Pet.OnRep_PetIsSad
-//		Flags  -> (Final, Native, Private)
-void APet::OnRep_PetIsSad()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_PetIsSad");
-
-	APet_OnRep_PetIsSad_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B00990
-//		Name   -> Function AthenaAI.Pet.OnRep_PerchedInHangout
-//		Flags  -> (Final, Native, Private)
-void APet::OnRep_PerchedInHangout()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_PerchedInHangout");
-
-	APet_OnRep_PerchedInHangout_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B00970
-//		Name   -> Function AthenaAI.Pet.OnRep_MovementRequest
-//		Flags  -> (Final, Native, Private)
-void APet::OnRep_MovementRequest()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_MovementRequest");
-
-	APet_OnRep_MovementRequest_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B00930
-//		Name   -> Function AthenaAI.Pet.OnRep_InHangout
-//		Flags  -> (Final, Native, Private)
-void APet::OnRep_InHangout()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnRep_InHangout");
-
-	APet_OnRep_InHangout_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B00710
-//		Name   -> Function AthenaAI.Pet.OnOwnerDestroyed
-//		Flags  -> (Final, Native, Public)
-// Parameters:
-//		class AActor*                                      InOwner                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void APet::OnOwnerDestroyed(class AActor* InOwner)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.OnOwnerDestroyed");
-
-	APet_OnOwnerDestroyed_Params params;
-	params.InOwner = InOwner;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B006F0
-//		Name   -> Function AthenaAI.Pet.Multicast_DitherOut
-//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
-void APet::Multicast_DitherOut()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.Multicast_DitherOut");
-
-	APet_Multicast_DitherOut_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B006D0
-//		Name   -> Function AthenaAI.Pet.Multicast_DitherIn
-//		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
-void APet::Multicast_DitherIn()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.Multicast_DitherIn");
-
-	APet_Multicast_DitherIn_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03B006B0
-//		Name   -> Function AthenaAI.Pet.GetFloorMeshOffsetZ
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		float                                              ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-float APet::GetFloorMeshOffsetZ()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.Pet.GetFloorMeshOffsetZ");
-
-	APet_GetFloorMeshOffsetZ_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-void APet::AfterRead()
-{
-	AAICreatureCharacter::AfterRead();
-
-	READ_PTR_FULL(WieldableReactMappingsAsset, UPetWieldableReactMappingsDataAsset);
-	READ_PTR_FULL(FlyingLandCurve, UCurveFloat);
-	READ_PTR_FULL(FlyingTakeOffCurve, UCurveFloat);
-	READ_PTR_FULL(MidFlightAdjustmentCurve, UCurveFloat);
-	READ_PTR_FULL(MidFlightTimeToDistanceAdjustmentCurve, UCurveFloat);
-	READ_PTR_FULL(FiredFromActorSFX, UWwiseEvent);
-	READ_PTR_FULL(DitherComponent, UPetDitherComponent);
-	READ_PTR_FULL(AINameplateComponent, UAINameplateComponent);
-	READ_PTR_FULL(FeedingComponent, UFeedingComponent);
-	READ_PTR_FULL(StarvingComponent, UStarvingComponent);
-	READ_PTR_FULL(CleanlinessComponent, UCleanlinessComponent);
-	READ_PTR_FULL(CannonSquashComponent, UCannonSquashComponent);
-	READ_PTR_FULL(AIPartsRetrievalComponent, UAIPartsRetrievalComponent);
-	READ_PTR_FULL(PetPartCustomisationComponent, UPetPartCustomisationComponent);
-	READ_PTR_FULL(LightWeightStatusEffectManagerComponent, ULightWeightStatusEffectManagerComponent);
-	READ_PTR_FULL(TelemetryComponent, UPetTelemetryComponent);
-	READ_PTR_FULL(SicknessComponent, UPetSicknessComponent);
-	READ_PTR_FULL(WaterExposureComponent, UWaterExposureComponent);
-	READ_PTR_FULL(AnimationDataStoreComponent, UAnimationDataStoreComponent);
-	READ_PTR_FULL(SpawnedForShip, AActor);
-	READ_PTR_FULL(PetOwner, AActor);
-	READ_PTR_FULL(PetInfo, AItemInfo);
-	READ_PTR_FULL(CurrentlyPlayingParticleSystem, UParticleSystemComponent);
-	READ_PTR_FULL(LandingStrategy, UClass);
-	READ_PTR_FULL(PursuitStrategy, UClass);
-}
-
-void APet::BeforeDelete()
-{
-	AAICreatureCharacter::BeforeDelete();
-
-	DELE_PTR_FULL(WieldableReactMappingsAsset);
-	DELE_PTR_FULL(FlyingLandCurve);
-	DELE_PTR_FULL(FlyingTakeOffCurve);
-	DELE_PTR_FULL(MidFlightAdjustmentCurve);
-	DELE_PTR_FULL(MidFlightTimeToDistanceAdjustmentCurve);
-	DELE_PTR_FULL(FiredFromActorSFX);
-	DELE_PTR_FULL(DitherComponent);
-	DELE_PTR_FULL(AINameplateComponent);
-	DELE_PTR_FULL(FeedingComponent);
-	DELE_PTR_FULL(StarvingComponent);
-	DELE_PTR_FULL(CleanlinessComponent);
-	DELE_PTR_FULL(CannonSquashComponent);
-	DELE_PTR_FULL(AIPartsRetrievalComponent);
-	DELE_PTR_FULL(PetPartCustomisationComponent);
-	DELE_PTR_FULL(LightWeightStatusEffectManagerComponent);
-	DELE_PTR_FULL(TelemetryComponent);
-	DELE_PTR_FULL(SicknessComponent);
-	DELE_PTR_FULL(WaterExposureComponent);
-	DELE_PTR_FULL(AnimationDataStoreComponent);
-	DELE_PTR_FULL(SpawnedForShip);
-	DELE_PTR_FULL(PetOwner);
-	DELE_PTR_FULL(PetInfo);
-	DELE_PTR_FULL(CurrentlyPlayingParticleSystem);
-	DELE_PTR_FULL(LandingStrategy);
-	DELE_PTR_FULL(PursuitStrategy);
-}
-
-void UBTTask_SetRoamingPetAnimationState::AfterRead()
+void UBTTask_SetBlackboardFloatValueFromMinMax::AfterRead()
 {
 	UBTTask_BlackboardBase::AfterRead();
 
 }
 
-void UBTTask_SetRoamingPetAnimationState::BeforeDelete()
+void UBTTask_SetBlackboardFloatValueFromMinMax::BeforeDelete()
 {
 	UBTTask_BlackboardBase::BeforeDelete();
-
-}
-
-void UPetDitherComponent::AfterRead()
-{
-	UDitherComponent::AfterRead();
-
-}
-
-void UPetDitherComponent::BeforeDelete()
-{
-	UDitherComponent::BeforeDelete();
-
-}
-
-void UPetNameplateComponent::AfterRead()
-{
-	UAINameplateComponent::AfterRead();
-
-}
-
-void UPetNameplateComponent::BeforeDelete()
-{
-	UAINameplateComponent::BeforeDelete();
-
-}
-
-void UPetPartCustomisationComponent::AfterRead()
-{
-	UActorComponent::AfterRead();
-
-	READ_PTR_FULL(AnimationDataStoreId, UClass);
-	READ_PTR_FULL(SizeMappingsAsset, UPetPartSizeMappingsDataAsset);
-	READ_PTR_FULL(CurrentlyLoadedMesh, USkeletalMesh);
-	READ_PTR_FULL(CurrentlyLoadedOverrideAsset, UPetCustomisationOverrideDataAsset);
-}
-
-void UPetPartCustomisationComponent::BeforeDelete()
-{
-	UActorComponent::BeforeDelete();
-
-	DELE_PTR_FULL(AnimationDataStoreId);
-	DELE_PTR_FULL(SizeMappingsAsset);
-	DELE_PTR_FULL(CurrentlyLoadedMesh);
-	DELE_PTR_FULL(CurrentlyLoadedOverrideAsset);
-}
-
-void UPetPartSizeMappingsDataAsset::AfterRead()
-{
-	UDataAsset::AfterRead();
-
-}
-
-void UPetPartSizeMappingsDataAsset::BeforeDelete()
-{
-	UDataAsset::BeforeDelete();
-
-}
-
-void UPetSicknessComponent::AfterRead()
-{
-	UActorComponent::AfterRead();
-
-}
-
-void UPetSicknessComponent::BeforeDelete()
-{
-	UActorComponent::BeforeDelete();
-
-}
-
-void UPetsPartsDesc::AfterRead()
-{
-	UAIPartsDesc::AfterRead();
-
-	READ_PTR_FULL(PetOverrideAsset, UPetCustomisationOverrideDataAsset);
-}
-
-void UPetsPartsDesc::BeforeDelete()
-{
-	UAIPartsDesc::BeforeDelete();
-
-	DELE_PTR_FULL(PetOverrideAsset);
-}
-
-void UPetTelemetryComponent::AfterRead()
-{
-	UActorComponent::AfterRead();
-
-}
-
-void UPetTelemetryComponent::BeforeDelete()
-{
-	UActorComponent::BeforeDelete();
-
-}
-
-void UPetWieldableReactMappingsDataAsset::AfterRead()
-{
-	UDataAsset::AfterRead();
-
-}
-
-void UPetWieldableReactMappingsDataAsset::BeforeDelete()
-{
-	UDataAsset::BeforeDelete();
-
-}
-
-void APreviewPet::AfterRead()
-{
-	AActor::AfterRead();
-
-	READ_PTR_FULL(PreviewPetPartsCategory, UAIPartsCategory);
-	READ_PTR_FULL(PreviewPetMesh, USkeletalMeshComponent);
-	READ_PTR_FULL(AIPartsRetrievalComponent, UAIPartsRetrievalComponent);
-	READ_PTR_FULL(PetPartCustomisationComponent, UPetPartCustomisationComponent);
-}
-
-void APreviewPet::BeforeDelete()
-{
-	AActor::BeforeDelete();
-
-	DELE_PTR_FULL(PreviewPetPartsCategory);
-	DELE_PTR_FULL(PreviewPetMesh);
-	DELE_PTR_FULL(AIPartsRetrievalComponent);
-	DELE_PTR_FULL(PetPartCustomisationComponent);
-}
-
-// Function:
-//		Offset -> 0x03B70450
-//		Name   -> Function AthenaAI.AthenaSwimmingAIController.ApplyControllerParams
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		class UAthenaAIControllerParamsDataAsset*          InControllerParametersAsset                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		class APawn*                                       InPawn                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void AAthenaSwimmingAIController::ApplyControllerParams(class UAthenaAIControllerParamsDataAsset* InControllerParametersAsset, class APawn* InPawn)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.AthenaSwimmingAIController.ApplyControllerParams");
-
-	AAthenaSwimmingAIController_ApplyControllerParams_Params params;
-	params.InControllerParametersAsset = InControllerParametersAsset;
-	params.InPawn = InPawn;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void AAthenaSwimmingAIController::AfterRead()
-{
-	AAthenaAIController::AfterRead();
-
-	READ_PTR_FULL(SwimmingPathFollowingComponent, USwimmingPathFollowingComponent);
-	READ_PTR_FULL(DistOfAttackerVsChanceToPursue, UCurveFloat);
-}
-
-void AAthenaSwimmingAIController::BeforeDelete()
-{
-	AAthenaAIController::BeforeDelete();
-
-	DELE_PTR_FULL(SwimmingPathFollowingComponent);
-	DELE_PTR_FULL(DistOfAttackerVsChanceToPursue);
-}
-
-void UBTDecorator_NearSurfaceOfWater::AfterRead()
-{
-	UBTDecorator::AfterRead();
-
-}
-
-void UBTDecorator_NearSurfaceOfWater::BeforeDelete()
-{
-	UBTDecorator::BeforeDelete();
-
-}
-
-void UBTService_SetFloatToTheSurfaceWhileInBranch::AfterRead()
-{
-	UBTService::AfterRead();
-
-}
-
-void UBTService_SetFloatToTheSurfaceWhileInBranch::BeforeDelete()
-{
-	UBTService::BeforeDelete();
-
-}
-
-void UBTTask_SetFloatToTheSurface::AfterRead()
-{
-	UBTTaskNode::AfterRead();
-
-}
-
-void UBTTask_SetFloatToTheSurface::BeforeDelete()
-{
-	UBTTaskNode::BeforeDelete();
-
-}
-
-void USwimmingCreatureMovementAnimationInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void USwimmingCreatureMovementAnimationInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void USwimmingPathFollowingComponent::AfterRead()
-{
-	UActorComponent::AfterRead();
-
-	READ_PTR_FULL(MovementComponent, USwimmingCreatureMovementComponent);
-	READ_PTR_FULL(SwimmingAIController, AAthenaSwimmingAIController);
-	READ_PTR_FULL(TargetActor, AActor);
-}
-
-void USwimmingPathFollowingComponent::BeforeDelete()
-{
-	UActorComponent::BeforeDelete();
-
-	DELE_PTR_FULL(MovementComponent);
-	DELE_PTR_FULL(SwimmingAIController);
-	DELE_PTR_FULL(TargetActor);
-}
-
-void UBTTask_SwimTo::AfterRead()
-{
-	UBTTask_BlackboardBase::AfterRead();
-
-}
-
-void UBTTask_SwimTo::BeforeDelete()
-{
-	UBTTask_BlackboardBase::BeforeDelete();
-
-}
-
-void UBTTask_SwimTurnOnTheSpot::AfterRead()
-{
-	UBTTask_BlackboardBase::AfterRead();
-
-}
-
-void UBTTask_SwimTurnOnTheSpot::BeforeDelete()
-{
-	UBTTask_BlackboardBase::BeforeDelete();
-
-}
-
-void UTinySharkTelemetryComponent::AfterRead()
-{
-	UActorComponent::AfterRead();
-
-}
-
-void UTinySharkTelemetryComponent::BeforeDelete()
-{
-	UActorComponent::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x03D34020
-//		Name   -> Function AthenaAI.TinySharkExperience.TinySharkPawnDestroyed
-//		Flags  -> (Final, Native, Private)
-// Parameters:
-//		class AActor*                                      InDestroyedActor                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void ATinySharkExperience::TinySharkPawnDestroyed(class AActor* InDestroyedActor)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.TinySharkPawnDestroyed");
-
-	ATinySharkExperience_TinySharkPawnDestroyed_Params params;
-	params.InDestroyedActor = InDestroyedActor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03D33DB0
-//		Name   -> Function AthenaAI.TinySharkExperience.OnRep_TinySharkPawn
-//		Flags  -> (Native, Protected)
-// Parameters:
-//		class ASharkPawn*                                  LastTinySharkPawn                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void ATinySharkExperience::OnRep_TinySharkPawn(class ASharkPawn* LastTinySharkPawn)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.OnRep_TinySharkPawn");
-
-	ATinySharkExperience_OnRep_TinySharkPawn_Params params;
-	params.LastTinySharkPawn = LastTinySharkPawn;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03D33D90
-//		Name   -> Function AthenaAI.TinySharkExperience.GetTrackedShip
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		class AShip*                                       ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-class AShip* ATinySharkExperience::GetTrackedShip()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.GetTrackedShip");
-
-	ATinySharkExperience_GetTrackedShip_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x03D33D70
-//		Name   -> Function AthenaAI.TinySharkExperience.GetCurrentState
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		TEnumAsByte<AthenaAI_ETinySharkState>              ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-TEnumAsByte<AthenaAI_ETinySharkState> ATinySharkExperience::GetCurrentState()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.GetCurrentState");
-
-	ATinySharkExperience_GetCurrentState_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x03D33D50
-//		Name   -> Function AthenaAI.TinySharkExperience.GetActiveState
-//		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		TEnumAsByte<AthenaAI_ETinySharkActiveState>        ReturnValue                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-TEnumAsByte<AthenaAI_ETinySharkActiveState> ATinySharkExperience::GetActiveState()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkExperience.GetActiveState");
-
-	ATinySharkExperience_GetActiveState_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-void ATinySharkExperience::AfterRead()
-{
-	AActor::AfterRead();
-
-	READ_PTR_FULL(TrackingMovementValidQuery, UEnvQuery);
-	READ_PTR_FULL(TinySharkSpawner, UAIOnDemandSpawner);
-	READ_PTR_FULL(TinySharkPawn, ASharkPawn);
-	READ_PTR_FULL(TinySharkTelemetryComponent, UTinySharkTelemetryComponent);
-	READ_PTR_FULL(TrackedShip, AShip);
-}
-
-void ATinySharkExperience::BeforeDelete()
-{
-	AActor::BeforeDelete();
-
-	DELE_PTR_FULL(TrackingMovementValidQuery);
-	DELE_PTR_FULL(TinySharkSpawner);
-	DELE_PTR_FULL(TinySharkPawn);
-	DELE_PTR_FULL(TinySharkTelemetryComponent);
-	DELE_PTR_FULL(TrackedShip);
-}
-
-void UTinySharkParamsDataAsset::AfterRead()
-{
-	UDataAsset::AfterRead();
-
-}
-
-void UTinySharkParamsDataAsset::BeforeDelete()
-{
-	UDataAsset::BeforeDelete();
-
-}
-
-void UTinySharkServiceInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UTinySharkServiceInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-// Function:
-//		Offset -> 0x03D33F20
-//		Name   -> Function AthenaAI.TinySharkService.RequestTinySharkWithShip
-//		Flags  -> (Native, Public, BlueprintCallable)
-// Parameters:
-//		class AShip*                                       InTrackedShip                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		int                                                OverrideControllerParamIndex                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		int                                                PartIndex                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-bool ATinySharkService::RequestTinySharkWithShip(class AShip* InTrackedShip, int OverrideControllerParamIndex, int PartIndex)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkService.RequestTinySharkWithShip");
-
-	ATinySharkService_RequestTinySharkWithShip_Params params;
-	params.InTrackedShip = InTrackedShip;
-	params.OverrideControllerParamIndex = OverrideControllerParamIndex;
-	params.PartIndex = PartIndex;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x03D33E40
-//		Name   -> Function AthenaAI.TinySharkService.RequestTinySharkWithLocation
-//		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
-// Parameters:
-//		struct FVector                                     SpawnLocation                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
-//		int                                                PartIndex                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-bool ATinySharkService::RequestTinySharkWithLocation(const struct FVector& SpawnLocation, int PartIndex)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkService.RequestTinySharkWithLocation");
-
-	ATinySharkService_RequestTinySharkWithLocation_Params params;
-	params.SpawnLocation = SpawnLocation;
-	params.PartIndex = PartIndex;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function:
-//		Offset -> 0x03D33D20
-//		Name   -> Function AthenaAI.TinySharkService.DismissAllTinySharks
-//		Flags  -> (Native, Public, BlueprintCallable)
-void ATinySharkService::DismissAllTinySharks()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkService.DismissAllTinySharks");
-
-	ATinySharkService_DismissAllTinySharks_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03D33CE0
-//		Name   -> Function AthenaAI.TinySharkService.CanSpawnTinySharkExperience
-//		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-//		bool                                               ReturnValue                                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-bool ATinySharkService::CanSpawnTinySharkExperience()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAI.TinySharkService.CanSpawnTinySharkExperience");
-
-	ATinySharkService_CanSpawnTinySharkExperience_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-void ATinySharkService::AfterRead()
-{
-	AActor::AfterRead();
-
-	READ_PTR_FULL(TinySharkServiceParams, UTinySharkServiceParamsDataAsset);
-}
-
-void ATinySharkService::BeforeDelete()
-{
-	AActor::BeforeDelete();
-
-	DELE_PTR_FULL(TinySharkServiceParams);
-}
-
-void UTinySharkServiceParamsDataAsset::AfterRead()
-{
-	UDataAsset::AfterRead();
-
-}
-
-void UTinySharkServiceParamsDataAsset::BeforeDelete()
-{
-	UDataAsset::BeforeDelete();
 
 }
 

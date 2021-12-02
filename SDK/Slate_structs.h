@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -99,7 +99,7 @@ struct FInputChord
 	unsigned char                                      bCtrl : 1;                                                 // 0x0020(0x0001) BIT_FIELD (NoDestructor)
 	unsigned char                                      bAlt : 1;                                                  // 0x0020(0x0001) BIT_FIELD (NoDestructor)
 	unsigned char                                      bCmd : 1;                                                  // 0x0020(0x0001) BIT_FIELD (NoDestructor)
-	unsigned char                                      UnknownData_8GDY[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PCUX[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

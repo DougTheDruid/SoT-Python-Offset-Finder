@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -27,7 +27,7 @@ void FShockwaveDamagerShipDamage::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03F205E0
+//		Offset -> 0x03E8C740
 //		Name   -> Function Damagers.RadialDamagerComponent.SetDamageRadius
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -36,7 +36,7 @@ void URadialDamagerComponent::SetDamageRadius(float Radius)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.RadialDamagerComponent.SetDamageRadius");
 
-	URadialDamagerComponent_SetDamageRadius_Params params;
+	URadialDamagerComponent_SetDamageRadius_Params params {};
 	params.Radius = Radius;
 
 	auto flags = fn->FunctionFlags;
@@ -49,14 +49,14 @@ void URadialDamagerComponent::SetDamageRadius(float Radius)
 
 
 // Function:
-//		Offset -> 0x03F20430
+//		Offset -> 0x03E8C5B0
 //		Name   -> Function Damagers.RadialDamagerComponent.EndDamage
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void URadialDamagerComponent::EndDamage()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.RadialDamagerComponent.EndDamage");
 
-	URadialDamagerComponent_EndDamage_Params params;
+	URadialDamagerComponent_EndDamage_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -68,14 +68,14 @@ void URadialDamagerComponent::EndDamage()
 
 
 // Function:
-//		Offset -> 0x03F203F0
+//		Offset -> 0x03E8C590
 //		Name   -> Function Damagers.RadialDamagerComponent.BeginDamage
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void URadialDamagerComponent::BeginDamage()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.RadialDamagerComponent.BeginDamage");
 
-	URadialDamagerComponent_BeginDamage_Params params;
+	URadialDamagerComponent_BeginDamage_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -101,81 +101,7 @@ void URadialDamagerComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03F20660
-//		Name   -> Function Damagers.ShipDamagerComponent.SetShape
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-// Parameters:
-//		class UPrimitiveComponent*                         InShape                                                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-void UShipDamagerComponent::SetShape(class UPrimitiveComponent* InShape)
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShipDamagerComponent.SetShape");
-
-	UShipDamagerComponent_SetShape_Params params;
-	params.InShape = InShape;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03F20450
-//		Name   -> Function Damagers.ShipDamagerComponent.EndDamage
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-void UShipDamagerComponent::EndDamage()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShipDamagerComponent.EndDamage");
-
-	UShipDamagerComponent_EndDamage_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x03F20410
-//		Name   -> Function Damagers.ShipDamagerComponent.BeginDamage
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-void UShipDamagerComponent::BeginDamage()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShipDamagerComponent.BeginDamage");
-
-	UShipDamagerComponent_BeginDamage_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void UShipDamagerComponent::AfterRead()
-{
-	UActorComponent::AfterRead();
-
-	READ_PTR_FULL(Shape, UPrimitiveComponent);
-}
-
-void UShipDamagerComponent::BeforeDelete()
-{
-	UActorComponent::BeforeDelete();
-
-	DELE_PTR_FULL(Shape);
-}
-
-// Function:
-//		Offset -> 0x03F20700
+//		Offset -> 0x03E8C7E0
 //		Name   -> Function Damagers.ShockwaveDamagerInterface.StartShockwaveAtLocation
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -184,7 +110,7 @@ void UShockwaveDamagerInterface::StartShockwaveAtLocation(const struct FVector& 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShockwaveDamagerInterface.StartShockwaveAtLocation");
 
-	UShockwaveDamagerInterface_StartShockwaveAtLocation_Params params;
+	UShockwaveDamagerInterface_StartShockwaveAtLocation_Params params {};
 	params.StartLocation = StartLocation;
 
 	auto flags = fn->FunctionFlags;
@@ -197,14 +123,14 @@ void UShockwaveDamagerInterface::StartShockwaveAtLocation(const struct FVector& 
 
 
 // Function:
-//		Offset -> 0x03F206E0
+//		Offset -> 0x03E8C7C0
 //		Name   -> Function Damagers.ShockwaveDamagerInterface.StartShockwave
 //		Flags  -> (Native, Public, BlueprintCallable)
 void UShockwaveDamagerInterface::StartShockwave()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShockwaveDamagerInterface.StartShockwave");
 
-	UShockwaveDamagerInterface_StartShockwave_Params params;
+	UShockwaveDamagerInterface_StartShockwave_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -216,7 +142,7 @@ void UShockwaveDamagerInterface::StartShockwave()
 
 
 // Function:
-//		Offset -> 0x03F204D0
+//		Offset -> 0x03E8C630
 //		Name   -> Function Damagers.ShockwaveDamagerInterface.IgnoreGhostShip
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -225,7 +151,7 @@ void UShockwaveDamagerInterface::IgnoreGhostShip(class AAggressiveGhostShip* Shi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShockwaveDamagerInterface.IgnoreGhostShip");
 
-	UShockwaveDamagerInterface_IgnoreGhostShip_Params params;
+	UShockwaveDamagerInterface_IgnoreGhostShip_Params params {};
 	params.Ship = Ship;
 
 	auto flags = fn->FunctionFlags;
@@ -238,7 +164,7 @@ void UShockwaveDamagerInterface::IgnoreGhostShip(class AAggressiveGhostShip* Shi
 
 
 // Function:
-//		Offset -> 0x03F204A0
+//		Offset -> 0x03E8C600
 //		Name   -> Function Damagers.ShockwaveDamagerInterface.GetShockwaveRadius
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -247,7 +173,7 @@ float UShockwaveDamagerInterface::GetShockwaveRadius()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShockwaveDamagerInterface.GetShockwaveRadius");
 
-	UShockwaveDamagerInterface_GetShockwaveRadius_Params params;
+	UShockwaveDamagerInterface_GetShockwaveRadius_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -261,7 +187,7 @@ float UShockwaveDamagerInterface::GetShockwaveRadius()
 
 
 // Function:
-//		Offset -> 0x03F20470
+//		Offset -> 0x03E8C5D0
 //		Name   -> Function Damagers.ShockwaveDamagerInterface.GetShockwaveDuration
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -270,7 +196,7 @@ float UShockwaveDamagerInterface::GetShockwaveDuration()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShockwaveDamagerInterface.GetShockwaveDuration");
 
-	UShockwaveDamagerInterface_GetShockwaveDuration_Params params;
+	UShockwaveDamagerInterface_GetShockwaveDuration_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -296,7 +222,7 @@ void UShockwaveDamagerInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03F20560
+//		Offset -> 0x03E8C6C0
 //		Name   -> Function Damagers.ShockwaveDamagerComponent.Multi_StartShockwave
 //		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private, HasDefaults)
 // Parameters:
@@ -305,7 +231,7 @@ void UShockwaveDamagerComponent::Multi_StartShockwave(const struct FVector& InSt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShockwaveDamagerComponent.Multi_StartShockwave");
 
-	UShockwaveDamagerComponent_Multi_StartShockwave_Params params;
+	UShockwaveDamagerComponent_Multi_StartShockwave_Params params {};
 	params.InStartLocation = InStartLocation;
 
 	auto flags = fn->FunctionFlags;
@@ -329,6 +255,80 @@ void UShockwaveDamagerComponent::BeforeDelete()
 	UActorComponent::BeforeDelete();
 
 	DELE_PTR_FULL(DamagerType);
+}
+
+// Function:
+//		Offset -> 0x040192F0
+//		Name   -> Function Damagers.ShipDamagerComponent.SetShape
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+// Parameters:
+//		class UPrimitiveComponent*                         InShape                                                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+void UShipDamagerComponent::SetShape(class UPrimitiveComponent* InShape)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShipDamagerComponent.SetShape");
+
+	UShipDamagerComponent_SetShape_Params params {};
+	params.InShape = InShape;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x040191A0
+//		Name   -> Function Damagers.ShipDamagerComponent.EndDamage
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+void UShipDamagerComponent::EndDamage()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShipDamagerComponent.EndDamage");
+
+	UShipDamagerComponent_EndDamage_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x04019180
+//		Name   -> Function Damagers.ShipDamagerComponent.BeginDamage
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+void UShipDamagerComponent::BeginDamage()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Damagers.ShipDamagerComponent.BeginDamage");
+
+	UShipDamagerComponent_BeginDamage_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void UShipDamagerComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+	READ_PTR_FULL(Shape, UPrimitiveComponent);
+}
+
+void UShipDamagerComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
+
+	DELE_PTR_FULL(Shape);
 }
 
 }

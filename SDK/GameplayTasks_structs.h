@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -60,7 +60,7 @@ enum class GameplayTasks_EGameplayTaskRunResult : uint8_t
 // 0x0002
 struct FGameplayResourceSet
 {
-	unsigned char                                      UnknownData_OLXE[0x2];                                     // 0x0000(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LN23[0x2];                                     // 0x0000(0x0002) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

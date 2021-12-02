@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_large_mast_fore.BP_large_mast_fore_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_large_mast_fore_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_large_mast_fore.BP_large_mast_fore_C.UserConstructionScript");
 
-	ABP_large_mast_fore_C_UserConstructionScript_Params params;
+	ABP_large_mast_fore_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void ABP_large_mast_fore_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_large_mast_fore.BP_large_mast_fore_C.OnMastDescLoaded
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -46,7 +46,7 @@ void ABP_large_mast_fore_C::OnMastDescLoaded(class UMastDescAsset* MastDesc)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_large_mast_fore.BP_large_mast_fore_C.OnMastDescLoaded");
 
-	ABP_large_mast_fore_C_OnMastDescLoaded_Params params;
+	ABP_large_mast_fore_C_OnMastDescLoaded_Params params {};
 	params.MastDesc = MastDesc;
 
 	auto flags = fn->FunctionFlags;
@@ -58,7 +58,7 @@ void ABP_large_mast_fore_C::OnMastDescLoaded(class UMastDescAsset* MastDesc)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_large_mast_fore.BP_large_mast_fore_C.ExecuteUbergraph_BP_large_mast_fore
 //		Flags  -> ()
 // Parameters:
@@ -67,7 +67,7 @@ void ABP_large_mast_fore_C::ExecuteUbergraph_BP_large_mast_fore(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_large_mast_fore.BP_large_mast_fore_C.ExecuteUbergraph_BP_large_mast_fore");
 
-	ABP_large_mast_fore_C_ExecuteUbergraph_BP_large_mast_fore_Params params;
+	ABP_large_mast_fore_C_ExecuteUbergraph_BP_large_mast_fore_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

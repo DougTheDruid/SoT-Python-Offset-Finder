@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,8 +20,8 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DynamicFogVolume_Undersea_Treasury_1C.BP_DynamicFogVolume_Undersea_Treasury_1C_C
-// 0x0000 (FullSize[0x0454] - InheritedSize[0x0454])
-class ABP_DynamicFogVolume_Undersea_Treasury_1C_C : public ABP_DynamicFogVolume_Undersea_C
+// 0x0000 (FullSize[0x03F4] - InheritedSize[0x03F4])
+class ABP_DynamicFogVolume_Undersea_Treasury_1C_C : public ABP_FogVolume_Undersea_C
 {
 public:
 

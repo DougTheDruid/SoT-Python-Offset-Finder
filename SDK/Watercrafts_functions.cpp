@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -159,7 +159,7 @@ void UControllableOarsInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03800D00
+//		Offset -> 0x038073A0
 //		Name   -> Function Watercrafts.FakeShip.OnAttachedItemEndPlay
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -168,7 +168,7 @@ void AFakeShip::OnAttachedItemEndPlay(class AActor* Actor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.FakeShip.OnAttachedItemEndPlay");
 
-	AFakeShip_OnAttachedItemEndPlay_Params params;
+	AFakeShip_OnAttachedItemEndPlay_Params params {};
 	params.Actor = Actor;
 
 	auto flags = fn->FunctionFlags;
@@ -205,7 +205,7 @@ void UWatercraftTrackerInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03800E00
+//		Offset -> 0x038074A0
 //		Name   -> Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnRep_CurrentWatercraft
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -214,7 +214,7 @@ void UItemProxyWatercraftTrackerComponent::OnRep_CurrentWatercraft(class AActor*
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnRep_CurrentWatercraft");
 
-	UItemProxyWatercraftTrackerComponent_OnRep_CurrentWatercraft_Params params;
+	UItemProxyWatercraftTrackerComponent_OnRep_CurrentWatercraft_Params params {};
 	params.PreviousWatercraft = PreviousWatercraft;
 
 	auto flags = fn->FunctionFlags;
@@ -227,7 +227,7 @@ void UItemProxyWatercraftTrackerComponent::OnRep_CurrentWatercraft(class AActor*
 
 
 // Function:
-//		Offset -> 0x03800D80
+//		Offset -> 0x03807420
 //		Name   -> Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnCurrentWatercraftDestroyed
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -236,7 +236,7 @@ void UItemProxyWatercraftTrackerComponent::OnCurrentWatercraftDestroyed(class AA
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.ItemProxyWatercraftTrackerComponent.OnCurrentWatercraftDestroyed");
 
-	UItemProxyWatercraftTrackerComponent_OnCurrentWatercraftDestroyed_Params params;
+	UItemProxyWatercraftTrackerComponent_OnCurrentWatercraftDestroyed_Params params {};
 	params.DestroyedWatercraft = DestroyedWatercraft;
 
 	auto flags = fn->FunctionFlags;
@@ -491,7 +491,7 @@ void UScrapeableComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03801020
+//		Offset -> 0x038076C0
 //		Name   -> Function Watercrafts.Watercraft.OnRigidBodyWake
 //		Flags  -> (Final, Native, Protected)
 // Parameters:
@@ -500,7 +500,7 @@ void AWatercraft::OnRigidBodyWake(const struct FName& InBoneName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.Watercraft.OnRigidBodyWake");
 
-	AWatercraft_OnRigidBodyWake_Params params;
+	AWatercraft_OnRigidBodyWake_Params params {};
 	params.InBoneName = InBoneName;
 
 	auto flags = fn->FunctionFlags;
@@ -513,7 +513,7 @@ void AWatercraft::OnRigidBodyWake(const struct FName& InBoneName)
 
 
 // Function:
-//		Offset -> 0x03800FA0
+//		Offset -> 0x03807640
 //		Name   -> Function Watercrafts.Watercraft.OnRigidBodySleep
 //		Flags  -> (Final, Native, Protected)
 // Parameters:
@@ -522,7 +522,7 @@ void AWatercraft::OnRigidBodySleep(const struct FName& InBoneName)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.Watercraft.OnRigidBodySleep");
 
-	AWatercraft_OnRigidBodySleep_Params params;
+	AWatercraft_OnRigidBodySleep_Params params {};
 	params.InBoneName = InBoneName;
 
 	auto flags = fn->FunctionFlags;
@@ -565,7 +565,7 @@ void AWatercraft::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03801220
+//		Offset -> 0x038078C0
 //		Name   -> Function Watercrafts.Rowboat.SetAlwaysEnabledInteractables
 //		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -574,7 +574,7 @@ void ARowboat::SetAlwaysEnabledInteractables(TArray<class UChildActorComponent*>
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.Rowboat.SetAlwaysEnabledInteractables");
 
-	ARowboat_SetAlwaysEnabledInteractables_Params params;
+	ARowboat_SetAlwaysEnabledInteractables_Params params {};
 	params.InAlwaysEnabledInteractables = InAlwaysEnabledInteractables;
 
 	auto flags = fn->FunctionFlags;
@@ -587,14 +587,14 @@ void ARowboat::SetAlwaysEnabledInteractables(TArray<class UChildActorComponent*>
 
 
 // Function:
-//		Offset -> 0x03800E80
+//		Offset -> 0x03807520
 //		Name   -> Function Watercrafts.Rowboat.OnRep_IsSinking
 //		Flags  -> (Final, Native, Private)
 void ARowboat::OnRep_IsSinking()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.Rowboat.OnRep_IsSinking");
 
-	ARowboat_OnRep_IsSinking_Params params;
+	ARowboat_OnRep_IsSinking_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -724,7 +724,7 @@ void AStorageSeat::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x038012D0
+//		Offset -> 0x03807970
 //		Name   -> Function Watercrafts.WatercraftBlueprintFunctionLibrary.SpawnWatercraft
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -737,7 +737,7 @@ class AWatercraft* UWatercraftBlueprintFunctionLibrary::STATIC_SpawnWatercraft(c
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.WatercraftBlueprintFunctionLibrary.SpawnWatercraft");
 
-	UWatercraftBlueprintFunctionLibrary_SpawnWatercraft_Params params;
+	UWatercraftBlueprintFunctionLibrary_SpawnWatercraft_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.WatercraftClass = WatercraftClass;
 	params.Location = Location;
@@ -803,7 +803,7 @@ void UWatercraftSpawnData::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x038010A0
+//		Offset -> 0x03807740
 //		Name   -> Function Watercrafts.WatercraftTrackerComponent.OnWatercraftDestroyed
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -812,7 +812,7 @@ void UWatercraftTrackerComponent::OnWatercraftDestroyed(class AActor* Watercraft
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Watercrafts.WatercraftTrackerComponent.OnWatercraftDestroyed");
 
-	UWatercraftTrackerComponent_OnWatercraftDestroyed_Params params;
+	UWatercraftTrackerComponent_OnWatercraftDestroyed_Params params {};
 	params.WatercraftActor = WatercraftActor;
 
 	auto flags = fn->FunctionFlags;

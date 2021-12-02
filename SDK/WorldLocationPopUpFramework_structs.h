@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,13 +20,12 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // ScriptStruct WorldLocationPopUpFramework.PlayerEnteredWorldLocationNotificationEvent
-// 0x0040
+// 0x0028
 struct FPlayerEnteredWorldLocationNotificationEvent
 {
-	struct FText                                       DisplayText;                                               // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH
-	unsigned char                                      UnknownData_NOF5[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-	float                                              DisplayDuration;                                           // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_K72R[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+	class UPopUpAudioDesc*                             AudioOverride;                                             // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FString                                     IconPath;                                                  // 0x0008(0x0010) (ZeroConstructor, HasGetValueTypeHash)
+	struct FString                                     DisplayText;                                               // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 
 	void AfterRead();
 	void BeforeDelete();

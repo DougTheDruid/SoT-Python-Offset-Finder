@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -48,7 +48,7 @@ class ABarrelsOfPlentySpawnProxy : public AActor
 {
 public:
 	class AShip*                                       Ship;                                                      // 0x03D0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_DX19[0x18];                                    // 0x03D8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_CVC4[0x18];                                    // 0x03D8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class USceneComponent*                             SceneComponent;                                            // 0x03F0(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
@@ -66,11 +66,10 @@ public:
 };
 
 // Class BarrelsOfPlenty.SpawnBarrelsOfPlentyStep
-// 0x0008 (FullSize[0x0098] - InheritedSize[0x0090])
+// 0x0000 (FullSize[0x0090] - InheritedSize[0x0090])
 class USpawnBarrelsOfPlentyStep : public UTaleQuestStep
 {
 public:
-	class USpawnBarrelsOfPlentyStepDesc*               Desc;                                                      // 0x0090(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()

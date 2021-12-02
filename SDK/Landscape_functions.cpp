@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -351,7 +351,7 @@ void ALandscapeMeshProxyActor::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01DEBEA0
+//		Offset -> 0x01E22200
 //		Name   -> Function Landscape.LandscapeProxy.EditorApplySpline
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -370,7 +370,7 @@ void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponen
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.EditorApplySpline");
 
-	ALandscapeProxy_EditorApplySpline_Params params;
+	ALandscapeProxy_EditorApplySpline_Params params {};
 	params.InSplineComponent = InSplineComponent;
 	params.StartWidth = StartWidth;
 	params.EndWidth = EndWidth;
@@ -393,7 +393,7 @@ void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponen
 
 
 // Function:
-//		Offset -> 0x01DEBE20
+//		Offset -> 0x01E22180
 //		Name   -> Function Landscape.LandscapeProxy.ChangeLODDistanceFactor
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -402,7 +402,7 @@ void ALandscapeProxy::ChangeLODDistanceFactor(float InLODDistanceFactor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeLODDistanceFactor");
 
-	ALandscapeProxy_ChangeLODDistanceFactor_Params params;
+	ALandscapeProxy_ChangeLODDistanceFactor_Params params {};
 	params.InLODDistanceFactor = InLODDistanceFactor;
 
 	auto flags = fn->FunctionFlags;

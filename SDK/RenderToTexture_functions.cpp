@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x02F001F0
+//		Offset -> 0x02F45730
 //		Name   -> Function RenderToTexture.RenderToTextureFunctionLibrary.GetRenderToTexture
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -29,7 +29,7 @@ class URenderToTextureSceneDetails* URenderToTextureFunctionLibrary::STATIC_GetR
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RenderToTexture.RenderToTextureFunctionLibrary.GetRenderToTexture");
 
-	URenderToTextureFunctionLibrary_GetRenderToTexture_Params params;
+	URenderToTextureFunctionLibrary_GetRenderToTexture_Params params {};
 	params.Identifier = Identifier;
 
 	auto flags = fn->FunctionFlags;
@@ -44,7 +44,7 @@ class URenderToTextureSceneDetails* URenderToTextureFunctionLibrary::STATIC_GetR
 
 
 // Function:
-//		Offset -> 0x02F00020
+//		Offset -> 0x02F45560
 //		Name   -> Function RenderToTexture.RenderToTextureFunctionLibrary.CreateRenderToTexture
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -58,7 +58,7 @@ class URenderToTextureSceneDetails* URenderToTextureFunctionLibrary::STATIC_Crea
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RenderToTexture.RenderToTextureFunctionLibrary.CreateRenderToTexture");
 
-	URenderToTextureFunctionLibrary_CreateRenderToTexture_Params params;
+	URenderToTextureFunctionLibrary_CreateRenderToTexture_Params params {};
 	params.Identifier = Identifier;
 	params.ClassToSpawn = ClassToSpawn;
 	params.Resolution = Resolution;
@@ -89,7 +89,7 @@ void URenderToTextureFunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02F00270
+//		Offset -> 0x02F457B0
 //		Name   -> Function RenderToTexture.RenderToTextureSceneDetails.GetTexture
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -98,7 +98,7 @@ class UTextureRenderTarget2D* URenderToTextureSceneDetails::GetTexture()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RenderToTexture.RenderToTextureSceneDetails.GetTexture");
 
-	URenderToTextureSceneDetails_GetTexture_Params params;
+	URenderToTextureSceneDetails_GetTexture_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -112,7 +112,7 @@ class UTextureRenderTarget2D* URenderToTextureSceneDetails::GetTexture()
 
 
 // Function:
-//		Offset -> 0x02F001C0
+//		Offset -> 0x02F45700
 //		Name   -> Function RenderToTexture.RenderToTextureSceneDetails.GetInstance
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -121,7 +121,7 @@ class AActor* URenderToTextureSceneDetails::GetInstance()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RenderToTexture.RenderToTextureSceneDetails.GetInstance");
 
-	URenderToTextureSceneDetails_GetInstance_Params params;
+	URenderToTextureSceneDetails_GetInstance_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -135,14 +135,14 @@ class AActor* URenderToTextureSceneDetails::GetInstance()
 
 
 // Function:
-//		Offset -> 0x02F001A0
+//		Offset -> 0x02F456E0
 //		Name   -> Function RenderToTexture.RenderToTextureSceneDetails.DestroyTexture
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void URenderToTextureSceneDetails::DestroyTexture()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RenderToTexture.RenderToTextureSceneDetails.DestroyTexture");
 
-	URenderToTextureSceneDetails_DestroyTexture_Params params;
+	URenderToTextureSceneDetails_DestroyTexture_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

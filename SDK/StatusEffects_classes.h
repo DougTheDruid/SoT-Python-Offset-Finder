@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UStatusBase : public UObject
 {
 public:
-	unsigned char                                      UnknownData_J2CI[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PWKS[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -45,7 +45,7 @@ public:
 class UStatusResponse : public UObject
 {
 public:
-	unsigned char                                      UnknownData_YLQZ[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_O50J[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -88,7 +88,7 @@ class UAppliedStatusToSelfStatCondition : public UTargetedStatCondition
 public:
 	TArray<class UClass*>                              Status;                                                    // 0x0030(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance, UObjectWrapper)
 	TEnumAsByte<StatusEffects_EStatusComparisonMode>   ComparisonMode;                                            // 0x0040(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_PZAB[0x7];                                     // 0x0041(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JOMF[0x7];                                     // 0x0041(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -129,9 +129,9 @@ public:
 class UBuffReceiverComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_DT0J[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_HYQ2[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	bool                                               CanReceiveBuff;                                            // 0x00D0(0x0001) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_X133[0x7];                                     // 0x00D1(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_HZ39[0x7];                                     // 0x00D1(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -174,11 +174,11 @@ public:
 class AStatusEffectOverlapZone : public AActor
 {
 public:
-	unsigned char                                      UnknownData_PBZ8[0xA8];                                    // 0x03D0(0x00A8) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SR6H[0xA8];                                    // 0x03D0(0x00A8) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UBoxComponent*                               CollisionMesh;                                             // 0x0478(0x0008) (Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FDelayedStatusEffect>                StatusesToApplyOnOverlap;                                  // 0x0480(0x0010) (Edit, ZeroConstructor)
 	bool                                               StartActive;                                               // 0x0490(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_W3O7[0x7];                                     // 0x0491(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9DMM[0x7];                                     // 0x0491(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -200,11 +200,11 @@ public:
 class UDebugStatusEffectOverlapZoneVisualizerComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_Q2DH[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_TKIO[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FVector                                     BoxCollisionDimensions;                                    // 0x00D0(0x000C) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor)
 	struct FColor                                      DebugColour;                                               // 0x00DC(0x0004) (Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor)
 	bool                                               VisibleState;                                              // 0x00E0(0x0001) (Net, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_MP92[0x7];                                     // 0x00E1(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Q4OP[0x7];                                     // 0x00E1(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -329,7 +329,7 @@ class UStatusResponseAsset : public UDataAsset
 {
 public:
 	struct FText                                       HighFrequencyTriggerStatusHelper;                          // 0x0028(0x0018) ELEMENT_SIZE_MISMATCH (Edit, EditConst)
-	unsigned char                                      UnknownData_Z1MN[0x20];                                    // 0x0028(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_WT7T[0x20];                                    // 0x0028(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	TArray<class UClass*>                              TriggerStatus;                                             // 0x0060(0x0010) (Edit, ZeroConstructor, UObjectWrapper)
 	TArray<class UStatusResponse*>                     Responses;                                                 // 0x0070(0x0010) (Edit, ExportObject, ZeroConstructor, ContainsInstancedReference)
 
@@ -375,7 +375,7 @@ public:
 class ULightWeightStatusEffectManagerComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_LF2Y[0x20];                                    // 0x00C8(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_O7JT[0x20];                                    // 0x00C8(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UStatusRecipientResponseList*                RecipientResponseList;                                     // 0x00E8(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FActiveStatusEffect>                 ActiveEffects;                                             // 0x00F0(0x0010) (Net, ZeroConstructor, RepNotify)
 
@@ -440,10 +440,10 @@ public:
 class UMaterialStatusSusceptibilityComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_CBSQ[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_0DON[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UPhysicalMaterial*                           CurrentSurfaceMaterial;                                    // 0x00D0(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	unsigned char                                      CurrentMaterialStatusZone[0x10];                           // 0x00D8(0x0010) UNKNOWN PROPERTY: InterfaceProperty StatusEffects.MaterialStatusSusceptibilityComponent.CurrentMaterialStatusZone
-	unsigned char                                      UnknownData_FMRG[0x10];                                    // 0x00E8(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BBBO[0x10];                                    // 0x00E8(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -464,11 +464,11 @@ public:
 class ASphericalStatusEffectZone : public AActor
 {
 public:
-	unsigned char                                      UnknownData_MYJJ[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_U1VV[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UActorActivationComponent*                   ActorActivationComponent;                                  // 0x03D8(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USphereComponent*                            SphereComponent;                                           // 0x03E0(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStatusEffectVolumeComponent*                StatusEffectVolumeComponent;                               // 0x03E8(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_Q9TP[0xA0];                                    // 0x03F0(0x00A0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_XDS5[0xA0];                                    // 0x03F0(0x00A0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -485,11 +485,11 @@ public:
 };
 
 // Class StatusEffects.StatusApplicationDesc
-// 0x0020 (FullSize[0x0048] - InheritedSize[0x0028])
+// 0x0028 (FullSize[0x0050] - InheritedSize[0x0028])
 class UStatusApplicationDesc : public UObject
 {
 public:
-	struct FEventAppliedStatusToTargets                ApplicationEvent;                                          // 0x0028(0x0020)
+	struct FEventAppliedStatusToTargets                ApplicationEvent;                                          // 0x0028(0x0028)
 
 
 	static UClass* StaticClass()
@@ -572,7 +572,7 @@ public:
 class UStatusEffectManagerComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_D1JS[0x28];                                    // 0x00C8(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_W9VW[0x28];                                    // 0x00C8(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UStatusRecipientResponseList*                RecipientResponseList;                                     // 0x00F0(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FActiveStatusEffect>                 ActiveEffects;                                             // 0x00F8(0x0010) (Net, ZeroConstructor, RepNotify)
 
@@ -617,7 +617,7 @@ public:
 class UStatusEffectPersistenceComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_HYV0[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LQ7K[0x8];                                     // 0x00C8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -660,9 +660,9 @@ class UStatusEffectVolumeComponent : public USceneComponent
 {
 public:
 	bool                                               UseOverlapEventsFromParentComponent;                       // 0x02B0(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_1P7E[0x7];                                     // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_83LT[0x7];                                     // 0x02B1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FStatus>                             StatusEffectsToMaintain;                                   // 0x02B8(0x0010) (Edit, ZeroConstructor)
-	unsigned char                                      UnknownData_2MSW[0x8];                                     // 0x02C8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5RBK[0x8];                                     // 0x02C8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -689,7 +689,7 @@ class USetCanReceiveBuffStatusResponse : public UStatusResponse
 public:
 	bool                                               LockBuffReceiver;                                          // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               RevertOnDeactivate;                                        // 0x0031(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_54YM[0x6];                                     // 0x0032(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5WQS[0x6];                                     // 0x0032(0x0006) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

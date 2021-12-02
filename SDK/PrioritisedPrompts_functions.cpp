@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -83,14 +83,14 @@ void FPlayerPromptTelemetryEvent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B31EF0
+//		Offset -> 0x036EE1F0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.UpdateVisiblePrompt
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UBasePromptCoordinator::UpdateVisiblePrompt()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.UpdateVisiblePrompt");
 
-	UBasePromptCoordinator_UpdateVisiblePrompt_Params params;
+	UBasePromptCoordinator_UpdateVisiblePrompt_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -102,14 +102,14 @@ void UBasePromptCoordinator::UpdateVisiblePrompt()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.UnregisterOtherEvents_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBasePromptCoordinator::UnregisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.UnregisterOtherEvents_Implementable");
 
-	UBasePromptCoordinator_UnregisterOtherEvents_Implementable_Params params;
+	UBasePromptCoordinator_UnregisterOtherEvents_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -120,7 +120,7 @@ void UBasePromptCoordinator::UnregisterOtherEvents_Implementable()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.UnregisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -129,7 +129,7 @@ void UBasePromptCoordinator::UnregisterCharacterEvents_Implementable(const struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.UnregisterCharacterEvents_Implementable");
 
-	UBasePromptCoordinator_UnregisterCharacterEvents_Implementable_Params params;
+	UBasePromptCoordinator_UnregisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -141,14 +141,14 @@ void UBasePromptCoordinator::UnregisterCharacterEvents_Implementable(const struc
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.Uninitialize_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBasePromptCoordinator::Uninitialize_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.Uninitialize_Implementable");
 
-	UBasePromptCoordinator_Uninitialize_Implementable_Params params;
+	UBasePromptCoordinator_Uninitialize_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -159,14 +159,14 @@ void UBasePromptCoordinator::Uninitialize_Implementable()
 
 
 // Function:
-//		Offset -> 0x03B31ED0
+//		Offset -> 0x036EE1D0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.Uninitialize
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UBasePromptCoordinator::Uninitialize()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.Uninitialize");
 
-	UBasePromptCoordinator_Uninitialize_Params params;
+	UBasePromptCoordinator_Uninitialize_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -178,14 +178,14 @@ void UBasePromptCoordinator::Uninitialize()
 
 
 // Function:
-//		Offset -> 0x03B31EB0
+//		Offset -> 0x036EE1B0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.Start
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 void UBasePromptCoordinator::Start()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.Start");
 
-	UBasePromptCoordinator_Start_Params params;
+	UBasePromptCoordinator_Start_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -197,7 +197,7 @@ void UBasePromptCoordinator::Start()
 
 
 // Function:
-//		Offset -> 0x03B31DC0
+//		Offset -> 0x036EE0C0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.SetPromptAs
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -206,7 +206,7 @@ void UBasePromptCoordinator::SetPromptAs(const struct FPrioritisedPromptWithHand
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.SetPromptAs");
 
-	UBasePromptCoordinator_SetPromptAs_Params params;
+	UBasePromptCoordinator_SetPromptAs_Params params {};
 	params.Prompt = Prompt;
 
 	auto flags = fn->FunctionFlags;
@@ -219,14 +219,14 @@ void UBasePromptCoordinator::SetPromptAs(const struct FPrioritisedPromptWithHand
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.RegisterOtherEvents_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBasePromptCoordinator::RegisterOtherEvents_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.RegisterOtherEvents_Implementable");
 
-	UBasePromptCoordinator_RegisterOtherEvents_Implementable_Params params;
+	UBasePromptCoordinator_RegisterOtherEvents_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -237,7 +237,7 @@ void UBasePromptCoordinator::RegisterOtherEvents_Implementable()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.RegisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -246,7 +246,7 @@ void UBasePromptCoordinator::RegisterCharacterEvents_Implementable(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.RegisterCharacterEvents_Implementable");
 
-	UBasePromptCoordinator_RegisterCharacterEvents_Implementable_Params params;
+	UBasePromptCoordinator_RegisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -258,7 +258,7 @@ void UBasePromptCoordinator::RegisterCharacterEvents_Implementable(const struct 
 
 
 // Function:
-//		Offset -> 0x03B31D40
+//		Offset -> 0x036EE040
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.OnControllerEndPlay
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -267,7 +267,7 @@ void UBasePromptCoordinator::OnControllerEndPlay(TEnumAsByte<Engine_EEndPlayReas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.OnControllerEndPlay");
 
-	UBasePromptCoordinator_OnControllerEndPlay_Params params;
+	UBasePromptCoordinator_OnControllerEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -280,14 +280,14 @@ void UBasePromptCoordinator::OnControllerEndPlay(TEnumAsByte<Engine_EEndPlayReas
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.MarkAsComplete_Implementable
 //		Flags  -> (Event, Public, BlueprintEvent)
 void UBasePromptCoordinator::MarkAsComplete_Implementable()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.MarkAsComplete_Implementable");
 
-	UBasePromptCoordinator_MarkAsComplete_Implementable_Params params;
+	UBasePromptCoordinator_MarkAsComplete_Implementable_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -298,7 +298,7 @@ void UBasePromptCoordinator::MarkAsComplete_Implementable()
 
 
 // Function:
-//		Offset -> 0x03B31C10
+//		Offset -> 0x036EDF10
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.MakeShowPrompt
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -308,7 +308,7 @@ struct FPromptEvaluation UBasePromptCoordinator::STATIC_MakeShowPrompt(const str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.MakeShowPrompt");
 
-	UBasePromptCoordinator_MakeShowPrompt_Params params;
+	UBasePromptCoordinator_MakeShowPrompt_Params params {};
 	params.Prompt = Prompt;
 
 	auto flags = fn->FunctionFlags;
@@ -323,7 +323,7 @@ struct FPromptEvaluation UBasePromptCoordinator::STATIC_MakeShowPrompt(const str
 
 
 // Function:
-//		Offset -> 0x03B31BA0
+//		Offset -> 0x036EDEA0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.MakeHideCurrentPrompts
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -332,7 +332,7 @@ struct FPromptEvaluation UBasePromptCoordinator::STATIC_MakeHideCurrentPrompts()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.MakeHideCurrentPrompts");
 
-	UBasePromptCoordinator_MakeHideCurrentPrompts_Params params;
+	UBasePromptCoordinator_MakeHideCurrentPrompts_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -346,7 +346,7 @@ struct FPromptEvaluation UBasePromptCoordinator::STATIC_MakeHideCurrentPrompts()
 
 
 // Function:
-//		Offset -> 0x03B31B30
+//		Offset -> 0x036EDE30
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.MakeCompleteCoordinator
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -355,7 +355,7 @@ struct FPromptEvaluation UBasePromptCoordinator::STATIC_MakeCompleteCoordinator(
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.MakeCompleteCoordinator");
 
-	UBasePromptCoordinator_MakeCompleteCoordinator_Params params;
+	UBasePromptCoordinator_MakeCompleteCoordinator_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -369,7 +369,7 @@ struct FPromptEvaluation UBasePromptCoordinator::STATIC_MakeCompleteCoordinator(
 
 
 // Function:
-//		Offset -> 0x03B31A70
+//		Offset -> 0x036EDD70
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.Initialize
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -379,7 +379,7 @@ void UBasePromptCoordinator::Initialize(class AAthenaPlayerController* PlayerCon
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.Initialize");
 
-	UBasePromptCoordinator_Initialize_Params params;
+	UBasePromptCoordinator_Initialize_Params params {};
 	params.PlayerController = PlayerController;
 	params.PrioritisedPromptsManager = PrioritisedPromptsManager;
 
@@ -393,7 +393,7 @@ void UBasePromptCoordinator::Initialize(class AAthenaPlayerController* PlayerCon
 
 
 // Function:
-//		Offset -> 0x03B318A0
+//		Offset -> 0x036EDBA0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.GetCompleted
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -402,7 +402,7 @@ bool UBasePromptCoordinator::GetCompleted()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.GetCompleted");
 
-	UBasePromptCoordinator_GetCompleted_Params params;
+	UBasePromptCoordinator_GetCompleted_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -416,7 +416,7 @@ bool UBasePromptCoordinator::GetCompleted()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.EvaluatePromptDisplayState
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -425,7 +425,7 @@ struct FPromptEvaluation UBasePromptCoordinator::EvaluatePromptDisplayState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.EvaluatePromptDisplayState");
 
-	UBasePromptCoordinator_EvaluatePromptDisplayState_Params params;
+	UBasePromptCoordinator_EvaluatePromptDisplayState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -438,14 +438,14 @@ struct FPromptEvaluation UBasePromptCoordinator::EvaluatePromptDisplayState()
 
 
 // Function:
-//		Offset -> 0x03B31880
+//		Offset -> 0x036EDB80
 //		Name   -> Function PrioritisedPrompts.BasePromptCoordinator.DismissAllPrompts
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UBasePromptCoordinator::DismissAllPrompts()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.BasePromptCoordinator.DismissAllPrompts");
 
-	UBasePromptCoordinator_DismissAllPrompts_Params params;
+	UBasePromptCoordinator_DismissAllPrompts_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -475,7 +475,7 @@ void UBasePromptCoordinator::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B31960
+//		Offset -> 0x036EDC60
 //		Name   -> Function PrioritisedPrompts.GetPromptsLocalService.GetPromptsLocalService
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -485,7 +485,7 @@ class UGetPromptsLocalService* UGetPromptsLocalService::STATIC_GetPromptsLocalSe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.GetPromptsLocalService.GetPromptsLocalService");
 
-	UGetPromptsLocalService_GetPromptsLocalService_Params params;
+	UGetPromptsLocalService_GetPromptsLocalService_Params params {};
 	params.WorldContextObject = WorldContextObject;
 
 	auto flags = fn->FunctionFlags;
@@ -540,7 +540,7 @@ void UPromptCounterAccessKey::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B319E0
+//		Offset -> 0x036EDCE0
 //		Name   -> Function PrioritisedPrompts.PromptsLocalServiceInterface.IncrementCountForKey
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -549,7 +549,7 @@ void UPromptsLocalServiceInterface::IncrementCountForKey(class UClass* AccessKey
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.PromptsLocalServiceInterface.IncrementCountForKey");
 
-	UPromptsLocalServiceInterface_IncrementCountForKey_Params params;
+	UPromptsLocalServiceInterface_IncrementCountForKey_Params params {};
 	params.AccessKey = AccessKey;
 
 	auto flags = fn->FunctionFlags;
@@ -562,7 +562,7 @@ void UPromptsLocalServiceInterface::IncrementCountForKey(class UClass* AccessKey
 
 
 // Function:
-//		Offset -> 0x03B318C0
+//		Offset -> 0x036EDBC0
 //		Name   -> Function PrioritisedPrompts.PromptsLocalServiceInterface.GetCountForKey
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -572,7 +572,7 @@ int UPromptsLocalServiceInterface::GetCountForKey(class UClass* AccessKey)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PrioritisedPrompts.PromptsLocalServiceInterface.GetCountForKey");
 
-	UPromptsLocalServiceInterface_GetCountForKey_Params params;
+	UPromptsLocalServiceInterface_GetCountForKey_Params params {};
 	params.AccessKey = AccessKey;
 
 	auto flags = fn->FunctionFlags;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SailAnim.BP_SailAnim_C.Set Billow Animation Rate
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void UBP_SailAnim_C::Set_Billow_Animation_Rate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SailAnim.BP_SailAnim_C.Set Billow Animation Rate");
 
-	UBP_SailAnim_C_Set_Billow_Animation_Rate_Params params;
+	UBP_SailAnim_C_Set_Billow_Animation_Rate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void UBP_SailAnim_C::Set_Billow_Animation_Rate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SailAnim.BP_SailAnim_C.InitialiseSail
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -47,7 +47,7 @@ void UBP_SailAnim_C::InitialiseSail(float PlayRateMultiplier, bool MainSail)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SailAnim.BP_SailAnim_C.InitialiseSail");
 
-	UBP_SailAnim_C_InitialiseSail_Params params;
+	UBP_SailAnim_C_InitialiseSail_Params params {};
 	params.PlayRateMultiplier = PlayRateMultiplier;
 	params.MainSail = MainSail;
 
@@ -60,7 +60,7 @@ void UBP_SailAnim_C::InitialiseSail(float PlayRateMultiplier, bool MainSail)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SailAnim.BP_SailAnim_C.ExecuteUbergraph_BP_SailAnim
 //		Flags  -> ()
 // Parameters:
@@ -69,7 +69,7 @@ void UBP_SailAnim_C::ExecuteUbergraph_BP_SailAnim(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SailAnim.BP_SailAnim_C.ExecuteUbergraph_BP_SailAnim");
 
-	UBP_SailAnim_C_ExecuteUbergraph_BP_SailAnim_Params params;
+	UBP_SailAnim_C_ExecuteUbergraph_BP_SailAnim_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

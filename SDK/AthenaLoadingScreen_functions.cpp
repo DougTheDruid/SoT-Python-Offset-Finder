@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -75,7 +75,7 @@ void FEventAthenaLoadingScreenOpen::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03742FA0
+//		Offset -> 0x032DE980
 //		Name   -> Function AthenaLoadingScreen.AthenaLoadingScreenBlueprintFunctionLibrary.IsLoadingScreenVisible
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -84,7 +84,7 @@ bool UAthenaLoadingScreenBlueprintFunctionLibrary::STATIC_IsLoadingScreenVisible
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaLoadingScreen.AthenaLoadingScreenBlueprintFunctionLibrary.IsLoadingScreenVisible");
 
-	UAthenaLoadingScreenBlueprintFunctionLibrary_IsLoadingScreenVisible_Params params;
+	UAthenaLoadingScreenBlueprintFunctionLibrary_IsLoadingScreenVisible_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -98,7 +98,7 @@ bool UAthenaLoadingScreenBlueprintFunctionLibrary::STATIC_IsLoadingScreenVisible
 
 
 // Function:
-//		Offset -> 0x03742F70
+//		Offset -> 0x032DE950
 //		Name   -> Function AthenaLoadingScreen.AthenaLoadingScreenBlueprintFunctionLibrary.IsLoadingScreenRegistered
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -107,7 +107,7 @@ bool UAthenaLoadingScreenBlueprintFunctionLibrary::STATIC_IsLoadingScreenRegiste
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaLoadingScreen.AthenaLoadingScreenBlueprintFunctionLibrary.IsLoadingScreenRegistered");
 
-	UAthenaLoadingScreenBlueprintFunctionLibrary_IsLoadingScreenRegistered_Params params;
+	UAthenaLoadingScreenBlueprintFunctionLibrary_IsLoadingScreenRegistered_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -157,7 +157,7 @@ void UAthenaLoadingScreenParams::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03742FD0
+//		Offset -> 0x032DE9B0
 //		Name   -> Function AthenaLoadingScreen.LoadingUtilities.IsStreaming
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -167,7 +167,7 @@ bool ULoadingUtilities::STATIC_IsStreaming(class UObject* WorldContextObject)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaLoadingScreen.LoadingUtilities.IsStreaming");
 
-	ULoadingUtilities_IsStreaming_Params params;
+	ULoadingUtilities_IsStreaming_Params params {};
 	params.WorldContextObject = WorldContextObject;
 
 	auto flags = fn->FunctionFlags;

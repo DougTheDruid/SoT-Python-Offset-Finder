@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -23,6 +23,14 @@ namespace CG
 struct AEmoteDice_SetDiceMesh_Params
 {
 	TEnumAsByte<EmotingFramework_EDiceType>            DiceType;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function EmotingFramework.EmoteDice.SendTelemetryData
+struct AEmoteDice_SendTelemetryData_Params
+{
+	struct FTransform                                  OrientationUsed;                                           // 0x0000(0x0030)  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
+	int                                                RollNumber;                                                // 0x0030(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TEnumAsByte<EmotingFramework_EDiceType>            DiceType;                                                  // 0x0034(0x0001)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function EmotingFramework.EmoteDice.RollDice

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -339,7 +339,7 @@ void FClothingItem::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01471440
+//		Offset -> 0x0149B680
 //		Name   -> Function PirateGenerator.AnimationSwitchDataAsset.GetAnimSetIdForDesc
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -349,7 +349,7 @@ class UClass* UAnimationSwitchDataAsset::GetAnimSetIdForDesc(const struct FPirat
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.AnimationSwitchDataAsset.GetAnimSetIdForDesc");
 
-	UAnimationSwitchDataAsset_GetAnimSetIdForDesc_Params params;
+	UAnimationSwitchDataAsset_GetAnimSetIdForDesc_Params params {};
 	params.Desc = Desc;
 
 	auto flags = fn->FunctionFlags;
@@ -376,7 +376,7 @@ void UAnimationSwitchDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0146FD50
+//		Offset -> 0x01499F90
 //		Name   -> Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMeshAsync
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -386,7 +386,7 @@ void UCharacterMeshBakeFunctionLibrary::STATIC_BakeCharacterMeshAsync(class UCha
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMeshAsync");
 
-	UCharacterMeshBakeFunctionLibrary_BakeCharacterMeshAsync_Params params;
+	UCharacterMeshBakeFunctionLibrary_BakeCharacterMeshAsync_Params params {};
 	params.CharacterMeshSpecification = CharacterMeshSpecification;
 	params.AsyncResult = AsyncResult;
 
@@ -400,7 +400,7 @@ void UCharacterMeshBakeFunctionLibrary::STATIC_BakeCharacterMeshAsync(class UCha
 
 
 // Function:
-//		Offset -> 0x0146FCD0
+//		Offset -> 0x01499F10
 //		Name   -> Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMesh
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -410,7 +410,7 @@ class USkeletalMesh* UCharacterMeshBakeFunctionLibrary::STATIC_BakeCharacterMesh
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeFunctionLibrary.BakeCharacterMesh");
 
-	UCharacterMeshBakeFunctionLibrary_BakeCharacterMesh_Params params;
+	UCharacterMeshBakeFunctionLibrary_BakeCharacterMesh_Params params {};
 	params.CharacterMeshSpecification = CharacterMeshSpecification;
 
 	auto flags = fn->FunctionFlags;
@@ -425,7 +425,7 @@ class USkeletalMesh* UCharacterMeshBakeFunctionLibrary::STATIC_BakeCharacterMesh
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> DelegateFunction PirateGenerator.CharacterMeshBakeFunctionLibrary.AsyncBakeResultDynamic__DelegateSignature
 //		Flags  -> (Public, Delegate)
 // Parameters:
@@ -434,7 +434,7 @@ void UCharacterMeshBakeFunctionLibrary::AsyncBakeResultDynamic__DelegateSignatur
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("DelegateFunction PirateGenerator.CharacterMeshBakeFunctionLibrary.AsyncBakeResultDynamic__DelegateSignature");
 
-	UCharacterMeshBakeFunctionLibrary_AsyncBakeResultDynamic__DelegateSignature_Params params;
+	UCharacterMeshBakeFunctionLibrary_AsyncBakeResultDynamic__DelegateSignature_Params params {};
 	params.Mesh = Mesh;
 
 	auto flags = fn->FunctionFlags;
@@ -446,7 +446,7 @@ void UCharacterMeshBakeFunctionLibrary::AsyncBakeResultDynamic__DelegateSignatur
 
 
 // Function:
-//		Offset -> 0x0146FB30
+//		Offset -> 0x01499D70
 //		Name   -> Function PirateGenerator.CharacterMeshBakeFunctionLibrary.AppendCharacterBlendShapes
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -456,7 +456,7 @@ void UCharacterMeshBakeFunctionLibrary::STATIC_AppendCharacterBlendShapes(class 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeFunctionLibrary.AppendCharacterBlendShapes");
 
-	UCharacterMeshBakeFunctionLibrary_AppendCharacterBlendShapes_Params params;
+	UCharacterMeshBakeFunctionLibrary_AppendCharacterBlendShapes_Params params {};
 	params.CharacterMeshSpecification = CharacterMeshSpecification;
 	params.BlendShapes = BlendShapes;
 
@@ -512,7 +512,7 @@ void UCharacterMeshBakeSpecification::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01472360
+//		Offset -> 0x0149C5A0
 //		Name   -> Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.MakeCharacterMeshSpecification
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -521,7 +521,7 @@ class UCharacterMeshBakeSpecification* UCharacterMeshBakeTestFunctionLibrary::ST
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.MakeCharacterMeshSpecification");
 
-	UCharacterMeshBakeTestFunctionLibrary_MakeCharacterMeshSpecification_Params params;
+	UCharacterMeshBakeTestFunctionLibrary_MakeCharacterMeshSpecification_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -535,7 +535,7 @@ class UCharacterMeshBakeSpecification* UCharacterMeshBakeTestFunctionLibrary::ST
 
 
 // Function:
-//		Offset -> 0x01470060
+//		Offset -> 0x0149A2A0
 //		Name   -> Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BlendMeshWithMeshPatchAssets
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -548,7 +548,7 @@ void UCharacterMeshBakeTestFunctionLibrary::STATIC_BlendMeshWithMeshPatchAssets(
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BlendMeshWithMeshPatchAssets");
 
-	UCharacterMeshBakeTestFunctionLibrary_BlendMeshWithMeshPatchAssets_Params params;
+	UCharacterMeshBakeTestFunctionLibrary_BlendMeshWithMeshPatchAssets_Params params {};
 	params.BaseMesh = BaseMesh;
 	params.BaseMeshWeight = BaseMeshWeight;
 	params.MeshPatchAssets = MeshPatchAssets;
@@ -567,7 +567,7 @@ void UCharacterMeshBakeTestFunctionLibrary::STATIC_BlendMeshWithMeshPatchAssets(
 
 
 // Function:
-//		Offset -> 0x0146FE40
+//		Offset -> 0x0149A080
 //		Name   -> Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BakeCharacterMeshFromClassDefault
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -577,7 +577,7 @@ class USkeletalMesh* UCharacterMeshBakeTestFunctionLibrary::STATIC_BakeCharacter
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.BakeCharacterMeshFromClassDefault");
 
-	UCharacterMeshBakeTestFunctionLibrary_BakeCharacterMeshFromClassDefault_Params params;
+	UCharacterMeshBakeTestFunctionLibrary_BakeCharacterMeshFromClassDefault_Params params {};
 	params.CharacterMeshBakeSpecificationClass = CharacterMeshBakeSpecificationClass;
 
 	auto flags = fn->FunctionFlags;
@@ -592,7 +592,7 @@ class USkeletalMesh* UCharacterMeshBakeTestFunctionLibrary::STATIC_BakeCharacter
 
 
 // Function:
-//		Offset -> 0x0146FC10
+//		Offset -> 0x01499E50
 //		Name   -> Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.AreMeshesEquivalentByMeshPatchCriteria
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -603,7 +603,7 @@ bool UCharacterMeshBakeTestFunctionLibrary::STATIC_AreMeshesEquivalentByMeshPatc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.CharacterMeshBakeTestFunctionLibrary.AreMeshesEquivalentByMeshPatchCriteria");
 
-	UCharacterMeshBakeTestFunctionLibrary_AreMeshesEquivalentByMeshPatchCriteria_Params params;
+	UCharacterMeshBakeTestFunctionLibrary_AreMeshesEquivalentByMeshPatchCriteria_Params params {};
 	params.MeshA = MeshA;
 	params.MeshB = MeshB;
 
@@ -643,7 +643,7 @@ void UColorTexture::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01471920
+//		Offset -> 0x0149BB60
 //		Name   -> Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetPathFromMeshPathAndTypeName
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -654,7 +654,7 @@ struct FString UFileAccessFunctionLibrary::STATIC_GetMeshPatchAssetPathFromMeshP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetPathFromMeshPathAndTypeName");
 
-	UFileAccessFunctionLibrary_GetMeshPatchAssetPathFromMeshPathAndTypeName_Params params;
+	UFileAccessFunctionLibrary_GetMeshPatchAssetPathFromMeshPathAndTypeName_Params params {};
 	params.MeshPath = MeshPath;
 	params.TypeName = TypeName;
 
@@ -670,7 +670,7 @@ struct FString UFileAccessFunctionLibrary::STATIC_GetMeshPatchAssetPathFromMeshP
 
 
 // Function:
-//		Offset -> 0x01471840
+//		Offset -> 0x0149BA80
 //		Name   -> Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetForMeshFromTypeName
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -681,7 +681,7 @@ class UMeshPatchAsset* UFileAccessFunctionLibrary::STATIC_GetMeshPatchAssetForMe
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.FileAccessFunctionLibrary.GetMeshPatchAssetForMeshFromTypeName");
 
-	UFileAccessFunctionLibrary_GetMeshPatchAssetForMeshFromTypeName_Params params;
+	UFileAccessFunctionLibrary_GetMeshPatchAssetForMeshFromTypeName_Params params {};
 	params.Mesh = Mesh;
 	params.TypeName = TypeName;
 
@@ -721,7 +721,7 @@ void UMaterialReferencesDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01471620
+//		Offset -> 0x0149B860
 //		Name   -> Function PirateGenerator.PirateBodyShapeFunctionLibrary.GetHighestWeighted
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -734,7 +734,7 @@ struct FString UPirateBodyShapeFunctionLibrary::STATIC_GetHighestWeighted(float 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateBodyShapeFunctionLibrary.GetHighestWeighted");
 
-	UPirateBodyShapeFunctionLibrary_GetHighestWeighted_Params params;
+	UPirateBodyShapeFunctionLibrary_GetHighestWeighted_Params params {};
 	params.BaseMeshBlendWeight = BaseMeshBlendWeight;
 	params.BodyShapeBlendNames = BodyShapeBlendNames;
 	params.BodyShapeBlendWeights = BodyShapeBlendWeights;
@@ -752,7 +752,7 @@ struct FString UPirateBodyShapeFunctionLibrary::STATIC_GetHighestWeighted(float 
 
 
 // Function:
-//		Offset -> 0x01470520
+//		Offset -> 0x0149A760
 //		Name   -> Function PirateGenerator.PirateBodyShapeFunctionLibrary.FindBodyBlendsFromBodyShapeWheelRadialCoordinate
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -766,7 +766,7 @@ bool UPirateBodyShapeFunctionLibrary::STATIC_FindBodyBlendsFromBodyShapeWheelRad
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateBodyShapeFunctionLibrary.FindBodyBlendsFromBodyShapeWheelRadialCoordinate");
 
-	UPirateBodyShapeFunctionLibrary_FindBodyBlendsFromBodyShapeWheelRadialCoordinate_Params params;
+	UPirateBodyShapeFunctionLibrary_FindBodyBlendsFromBodyShapeWheelRadialCoordinate_Params params {};
 	params.Gender = Gender;
 	params.BodyShapeWheelRadialCoordinate = BodyShapeWheelRadialCoordinate;
 
@@ -789,7 +789,7 @@ bool UPirateBodyShapeFunctionLibrary::STATIC_FindBodyBlendsFromBodyShapeWheelRad
 
 
 // Function:
-//		Offset -> 0x014704A0
+//		Offset -> 0x0149A6E0
 //		Name   -> Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertToRadialCoordinate
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -799,7 +799,7 @@ struct FRadialCoordinate UPirateBodyShapeFunctionLibrary::STATIC_ConvertToRadial
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertToRadialCoordinate");
 
-	UPirateBodyShapeFunctionLibrary_ConvertToRadialCoordinate_Params params;
+	UPirateBodyShapeFunctionLibrary_ConvertToRadialCoordinate_Params params {};
 	params.UV = UV;
 
 	auto flags = fn->FunctionFlags;
@@ -814,7 +814,7 @@ struct FRadialCoordinate UPirateBodyShapeFunctionLibrary::STATIC_ConvertToRadial
 
 
 // Function:
-//		Offset -> 0x01470410
+//		Offset -> 0x0149A650
 //		Name   -> Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertFromRadialCoordinate
 //		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -824,7 +824,7 @@ struct FVector2D UPirateBodyShapeFunctionLibrary::STATIC_ConvertFromRadialCoordi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateBodyShapeFunctionLibrary.ConvertFromRadialCoordinate");
 
-	UPirateBodyShapeFunctionLibrary_ConvertFromRadialCoordinate_Params params;
+	UPirateBodyShapeFunctionLibrary_ConvertFromRadialCoordinate_Params params {};
 	params.Coord = Coord;
 
 	auto flags = fn->FunctionFlags;
@@ -863,7 +863,7 @@ void UPirateGeneratorMaterials::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01472D40
+//		Offset -> 0x0149CF80
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.SavePirateDescription
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -874,7 +874,7 @@ bool UPirateGeneratorFunctionLibrary::STATIC_SavePirateDescription(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.SavePirateDescription");
 
-	UPirateGeneratorFunctionLibrary_SavePirateDescription_Params params;
+	UPirateGeneratorFunctionLibrary_SavePirateDescription_Params params {};
 	params.RelativePath = RelativePath;
 	params.InDesc = InDesc;
 
@@ -890,7 +890,7 @@ bool UPirateGeneratorFunctionLibrary::STATIC_SavePirateDescription(const struct 
 
 
 // Function:
-//		Offset -> 0x01472CB0
+//		Offset -> 0x0149CEF0
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.RandomBodyShape
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -900,7 +900,7 @@ struct FRadialCoordinate UPirateGeneratorFunctionLibrary::STATIC_RandomBodyShape
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.RandomBodyShape");
 
-	UPirateGeneratorFunctionLibrary_RandomBodyShape_Params params;
+	UPirateGeneratorFunctionLibrary_RandomBodyShape_Params params {};
 	params.Seed = Seed;
 
 	auto flags = fn->FunctionFlags;
@@ -915,7 +915,7 @@ struct FRadialCoordinate UPirateGeneratorFunctionLibrary::STATIC_RandomBodyShape
 
 
 // Function:
-//		Offset -> 0x01472210
+//		Offset -> 0x0149C450
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.LoadPirateDescription
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -926,7 +926,7 @@ bool UPirateGeneratorFunctionLibrary::STATIC_LoadPirateDescription(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.LoadPirateDescription");
 
-	UPirateGeneratorFunctionLibrary_LoadPirateDescription_Params params;
+	UPirateGeneratorFunctionLibrary_LoadPirateDescription_Params params {};
 	params.RelativePath = RelativePath;
 
 	auto flags = fn->FunctionFlags;
@@ -944,7 +944,7 @@ bool UPirateGeneratorFunctionLibrary::STATIC_LoadPirateDescription(const struct 
 
 
 // Function:
-//		Offset -> 0x01471FE0
+//		Offset -> 0x0149C220
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.K2_BakeFromDescriptionGameThread
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -956,7 +956,7 @@ void UPirateGeneratorFunctionLibrary::STATIC_K2_BakeFromDescriptionGameThread(co
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.K2_BakeFromDescriptionGameThread");
 
-	UPirateGeneratorFunctionLibrary_K2_BakeFromDescriptionGameThread_Params params;
+	UPirateGeneratorFunctionLibrary_K2_BakeFromDescriptionGameThread_Params params {};
 	params.Desc = Desc;
 	params.Flags = Flags;
 
@@ -975,7 +975,7 @@ void UPirateGeneratorFunctionLibrary::STATIC_K2_BakeFromDescriptionGameThread(co
 
 
 // Function:
-//		Offset -> 0x01471FB0
+//		Offset -> 0x0149C1F0
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.IPGLatestVersion
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -984,7 +984,7 @@ int UPirateGeneratorFunctionLibrary::STATIC_IPGLatestVersion()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.IPGLatestVersion");
 
-	UPirateGeneratorFunctionLibrary_IPGLatestVersion_Params params;
+	UPirateGeneratorFunctionLibrary_IPGLatestVersion_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -998,7 +998,7 @@ int UPirateGeneratorFunctionLibrary::STATIC_IPGLatestVersion()
 
 
 // Function:
-//		Offset -> 0x01471EB0
+//		Offset -> 0x0149C0F0
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GetSeedFromString
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1009,7 +1009,7 @@ int UPirateGeneratorFunctionLibrary::STATIC_GetSeedFromString(const struct FStri
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GetSeedFromString");
 
-	UPirateGeneratorFunctionLibrary_GetSeedFromString_Params params;
+	UPirateGeneratorFunctionLibrary_GetSeedFromString_Params params {};
 	params.RefName = RefName;
 	params.Str = Str;
 
@@ -1025,7 +1025,7 @@ int UPirateGeneratorFunctionLibrary::STATIC_GetSeedFromString(const struct FStri
 
 
 // Function:
-//		Offset -> 0x01471030
+//		Offset -> 0x0149B270
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllTextureReferences
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1035,7 +1035,7 @@ void UPirateGeneratorFunctionLibrary::STATIC_GetAllTextureReferences(class USkel
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllTextureReferences");
 
-	UPirateGeneratorFunctionLibrary_GetAllTextureReferences_Params params;
+	UPirateGeneratorFunctionLibrary_GetAllTextureReferences_Params params {};
 	params.Mesh = Mesh;
 
 	auto flags = fn->FunctionFlags;
@@ -1051,7 +1051,7 @@ void UPirateGeneratorFunctionLibrary::STATIC_GetAllTextureReferences(class USkel
 
 
 // Function:
-//		Offset -> 0x01470F20
+//		Offset -> 0x0149B160
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllDescriptions
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1060,7 +1060,7 @@ TArray<struct FString> UPirateGeneratorFunctionLibrary::STATIC_GetAllDescription
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GetAllDescriptions");
 
-	UPirateGeneratorFunctionLibrary_GetAllDescriptions_Params params;
+	UPirateGeneratorFunctionLibrary_GetAllDescriptions_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1074,7 +1074,7 @@ TArray<struct FString> UPirateGeneratorFunctionLibrary::STATIC_GetAllDescription
 
 
 // Function:
-//		Offset -> 0x01470B10
+//		Offset -> 0x0149AD50
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirateWithVersion
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1092,7 +1092,7 @@ struct FPirateDescription UPirateGeneratorFunctionLibrary::STATIC_GenerateRandom
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirateWithVersion");
 
-	UPirateGeneratorFunctionLibrary_GenerateRandomPirateWithVersion_Params params;
+	UPirateGeneratorFunctionLibrary_GenerateRandomPirateWithVersion_Params params {};
 	params.Seed = Seed;
 	params.Version = Version;
 	params.bOverrideBodyShape = bOverrideBodyShape;
@@ -1115,7 +1115,7 @@ struct FPirateDescription UPirateGeneratorFunctionLibrary::STATIC_GenerateRandom
 
 
 // Function:
-//		Offset -> 0x01470740
+//		Offset -> 0x0149A980
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirate
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1132,7 +1132,7 @@ struct FPirateDescription UPirateGeneratorFunctionLibrary::STATIC_GenerateRandom
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.GenerateRandomPirate");
 
-	UPirateGeneratorFunctionLibrary_GenerateRandomPirate_Params params;
+	UPirateGeneratorFunctionLibrary_GenerateRandomPirate_Params params {};
 	params.Seed = Seed;
 	params.bOverrideBodyShape = bOverrideBodyShape;
 	params.BodyShapeOverride = BodyShapeOverride;
@@ -1154,7 +1154,7 @@ struct FPirateDescription UPirateGeneratorFunctionLibrary::STATIC_GenerateRandom
 
 
 // Function:
-//		Offset -> 0x0146FEC0
+//		Offset -> 0x0149A100
 //		Name   -> Function PirateGenerator.PirateGeneratorFunctionLibrary.BakeFromDescriptionAsync
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1165,7 +1165,7 @@ void UPirateGeneratorFunctionLibrary::STATIC_BakeFromDescriptionAsync(const stru
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PirateGeneratorFunctionLibrary.BakeFromDescriptionAsync");
 
-	UPirateGeneratorFunctionLibrary_BakeFromDescriptionAsync_Params params;
+	UPirateGeneratorFunctionLibrary_BakeFromDescriptionAsync_Params params {};
 	params.Desc = Desc;
 	params.Flags = Flags;
 	params.AsyncResult = AsyncResult;
@@ -1204,7 +1204,7 @@ void UPirateGeneratorSettings::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01472A10
+//		Offset -> 0x0149CC50
 //		Name   -> Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateSkeletonBlendsInCharacterMeshBakeSpecification
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1219,7 +1219,7 @@ void UPreparePirateMeshBakeTestFunctionLibrary::STATIC_PopulateSkeletonBlendsInC
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateSkeletonBlendsInCharacterMeshBakeSpecification");
 
-	UPreparePirateMeshBakeTestFunctionLibrary_PopulateSkeletonBlendsInCharacterMeshBakeSpecification_Params params;
+	UPreparePirateMeshBakeTestFunctionLibrary_PopulateSkeletonBlendsInCharacterMeshBakeSpecification_Params params {};
 	params.CharacterMeshBakeSpecification = CharacterMeshBakeSpecification;
 	params.MeshWithBaseSkeleton = MeshWithBaseSkeleton;
 	params.SkeletonsDataAsset = SkeletonsDataAsset;
@@ -1238,7 +1238,7 @@ void UPreparePirateMeshBakeTestFunctionLibrary::STATIC_PopulateSkeletonBlendsInC
 
 
 // Function:
-//		Offset -> 0x014727E0
+//		Offset -> 0x0149CA20
 //		Name   -> Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateBlendedSubMeshesInCharacterMeshBakeSpecification
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1251,7 +1251,7 @@ void UPreparePirateMeshBakeTestFunctionLibrary::STATIC_PopulateBlendedSubMeshesI
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.PreparePirateMeshBakeTestFunctionLibrary.PopulateBlendedSubMeshesInCharacterMeshBakeSpecification");
 
-	UPreparePirateMeshBakeTestFunctionLibrary_PopulateBlendedSubMeshesInCharacterMeshBakeSpecification_Params params;
+	UPreparePirateMeshBakeTestFunctionLibrary_PopulateBlendedSubMeshesInCharacterMeshBakeSpecification_Params params {};
 	params.CharacterMeshBakeSpecification = CharacterMeshBakeSpecification;
 	params.SubMeshes = SubMeshes;
 	params.BaseMeshBlendWeight = BaseMeshBlendWeight;
@@ -1388,7 +1388,7 @@ void UWardrobeDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01471540
+//		Offset -> 0x0149B780
 //		Name   -> Function PirateGenerator.WardrobeOutfitDataAsset.GetBiasForCategory
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1398,7 +1398,7 @@ float UWardrobeOutfitDataAsset::GetBiasForCategory(const struct FName& Name)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeOutfitDataAsset.GetBiasForCategory");
 
-	UWardrobeOutfitDataAsset_GetBiasForCategory_Params params;
+	UWardrobeOutfitDataAsset_GetBiasForCategory_Params params {};
 	params.Name = Name;
 
 	auto flags = fn->FunctionFlags;
@@ -1425,7 +1425,7 @@ void UWardrobeOutfitDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x014725D0
+//		Offset -> 0x0149C810
 //		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.PickOutfitAsync
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1438,7 +1438,7 @@ void UWardrobeFunctionLibrary::STATIC_PickOutfitAsync(TArray<struct FName> Cloth
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.PickOutfitAsync");
 
-	UWardrobeFunctionLibrary_PickOutfitAsync_Params params;
+	UWardrobeFunctionLibrary_PickOutfitAsync_Params params {};
 	params.ClothingItemNames = ClothingItemNames;
 	params.Tags = Tags;
 	params.PirateType = PirateType;
@@ -1455,7 +1455,7 @@ void UWardrobeFunctionLibrary::STATIC_PickOutfitAsync(TArray<struct FName> Cloth
 
 
 // Function:
-//		Offset -> 0x01472390
+//		Offset -> 0x0149C5D0
 //		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.PickOutfit
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1469,7 +1469,7 @@ bool UWardrobeFunctionLibrary::STATIC_PickOutfit(TArray<struct FName> ClothingIt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.PickOutfit");
 
-	UWardrobeFunctionLibrary_PickOutfit_Params params;
+	UWardrobeFunctionLibrary_PickOutfit_Params params {};
 	params.ClothingItemNames = ClothingItemNames;
 	params.Tags = Tags;
 	params.PirateType = PirateType;
@@ -1490,7 +1490,7 @@ bool UWardrobeFunctionLibrary::STATIC_PickOutfit(TArray<struct FName> ClothingIt
 
 
 // Function:
-//		Offset -> 0x01471D00
+//		Offset -> 0x0149BF40
 //		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItemsWithBias
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1502,7 +1502,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomWardrobeItemsWith
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItemsWithBias");
 
-	UWardrobeFunctionLibrary_GetRandomWardrobeItemsWithBias_Params params;
+	UWardrobeFunctionLibrary_GetRandomWardrobeItemsWithBias_Params params {};
 	params.Seed = Seed;
 	params.InputItems = InputItems;
 	params.BiasPerCategory = BiasPerCategory;
@@ -1519,7 +1519,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomWardrobeItemsWith
 
 
 // Function:
-//		Offset -> 0x01471BC0
+//		Offset -> 0x0149BE00
 //		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItems
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1530,7 +1530,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomWardrobeItems(int
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetRandomWardrobeItems");
 
-	UWardrobeFunctionLibrary_GetRandomWardrobeItems_Params params;
+	UWardrobeFunctionLibrary_GetRandomWardrobeItems_Params params {};
 	params.Seed = Seed;
 	params.InputItems = InputItems;
 
@@ -1546,7 +1546,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomWardrobeItems(int
 
 
 // Function:
-//		Offset -> 0x01471A70
+//		Offset -> 0x0149BCB0
 //		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetRandomOutfit
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1558,7 +1558,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomOutfit(class UWar
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetRandomOutfit");
 
-	UWardrobeFunctionLibrary_GetRandomOutfit_Params params;
+	UWardrobeFunctionLibrary_GetRandomOutfit_Params params {};
 	params.Outfit = Outfit;
 	params.Seed = Seed;
 	params.Gender = Gender;
@@ -1575,7 +1575,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetRandomOutfit(class UWar
 
 
 // Function:
-//		Offset -> 0x014713A0
+//		Offset -> 0x0149B5E0
 //		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeTypes
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1584,7 +1584,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeTypes()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeTypes");
 
-	UWardrobeFunctionLibrary_GetAllWardrobeTypes_Params params;
+	UWardrobeFunctionLibrary_GetAllWardrobeTypes_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1598,7 +1598,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeTypes()
 
 
 // Function:
-//		Offset -> 0x01471230
+//		Offset -> 0x0149B470
 //		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItemsForType
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1610,7 +1610,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeItemsForType
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItemsForType");
 
-	UWardrobeFunctionLibrary_GetAllWardrobeItemsForType_Params params;
+	UWardrobeFunctionLibrary_GetAllWardrobeItemsForType_Params params {};
 	params.TypeName = TypeName;
 	params.PirateType = PirateType;
 	params.bWithExclusions = bWithExclusions;
@@ -1627,7 +1627,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeItemsForType
 
 
 // Function:
-//		Offset -> 0x01471150
+//		Offset -> 0x0149B390
 //		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItems
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1637,7 +1637,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeItems(TEnumA
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.GetAllWardrobeItems");
 
-	UWardrobeFunctionLibrary_GetAllWardrobeItems_Params params;
+	UWardrobeFunctionLibrary_GetAllWardrobeItems_Params params {};
 	params.PirateType = PirateType;
 
 	auto flags = fn->FunctionFlags;
@@ -1652,7 +1652,7 @@ TArray<struct FName> UWardrobeFunctionLibrary::STATIC_GetAllWardrobeItems(TEnumA
 
 
 // Function:
-//		Offset -> 0x01470250
+//		Offset -> 0x0149A490
 //		Name   -> Function PirateGenerator.WardrobeFunctionLibrary.CanLoadOutfit
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1665,7 +1665,7 @@ bool UWardrobeFunctionLibrary::STATIC_CanLoadOutfit(TArray<struct FName> Clothin
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function PirateGenerator.WardrobeFunctionLibrary.CanLoadOutfit");
 
-	UWardrobeFunctionLibrary_CanLoadOutfit_Params params;
+	UWardrobeFunctionLibrary_CanLoadOutfit_Params params {};
 	params.ClothingItemNames = ClothingItemNames;
 	params.Tags = Tags;
 	params.PirateType = PirateType;
@@ -1683,7 +1683,7 @@ bool UWardrobeFunctionLibrary::STATIC_CanLoadOutfit(TArray<struct FName> Clothin
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> DelegateFunction PirateGenerator.WardrobeFunctionLibrary.AsyncOutfitResultDynamic__DelegateSignature
 //		Flags  -> (Public, Delegate, HasOutParms)
 // Parameters:
@@ -1693,7 +1693,7 @@ void UWardrobeFunctionLibrary::AsyncOutfitResultDynamic__DelegateSignature(bool 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("DelegateFunction PirateGenerator.WardrobeFunctionLibrary.AsyncOutfitResultDynamic__DelegateSignature");
 
-	UWardrobeFunctionLibrary_AsyncOutfitResultDynamic__DelegateSignature_Params params;
+	UWardrobeFunctionLibrary_AsyncOutfitResultDynamic__DelegateSignature_Params params {};
 	params.Success = Success;
 	params.Meshes = Meshes;
 

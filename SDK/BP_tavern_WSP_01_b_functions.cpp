@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_tavern_WSP_01_b.BP_tavern_WSP_01_b_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_tavern_WSP_01_b_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_tavern_WSP_01_b.BP_tavern_WSP_01_b_C.UserConstructionScript");
 
-	ABP_tavern_WSP_01_b_C_UserConstructionScript_Params params;
+	ABP_tavern_WSP_01_b_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -40,6 +40,17 @@ void ABP_tavern_WSP_01_b_C::AfterRead()
 {
 	AActor::AfterRead();
 
+	READ_PTR_FULL(Seat_Bannister_Outside_4, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Bannister_Outside_3, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Bannister_Outside_2, UBP_SeatComponent_C);
+	READ_PTR_FULL(Seat_Bannister_Outside, UBP_SeatComponent_C);
+	READ_PTR_FULL(Stool_IntroTable_4, UStaticMeshComponent);
+	READ_PTR_FULL(Stool_IntroTable_3, UStaticMeshComponent);
+	READ_PTR_FULL(Stool_IntroTable_2, UStaticMeshComponent);
+	READ_PTR_FULL(StaticMesh3, UStaticMeshComponent);
+	READ_PTR_FULL(StaticMesh1, UStaticMeshComponent);
+	READ_PTR_FULL(StaticMesh, UStaticMeshComponent);
+	READ_PTR_FULL(cmn_painting_vinyl_01a, UStaticMeshComponent);
 	READ_PTR_FULL(SpotLight12, USpotLightComponent);
 	READ_PTR_FULL(SpotLight11, USpotLightComponent);
 	READ_PTR_FULL(SpotLight10, USpotLightComponent);
@@ -178,8 +189,8 @@ void ABP_tavern_WSP_01_b_C::AfterRead()
 	READ_PTR_FULL(Light_fire, USpotLightComponent);
 	READ_PTR_FULL(ParticleSystem3, UParticleSystemComponent);
 	READ_PTR_FULL(Light_candle_5, UPointLightComponent);
-	READ_PTR_FULL(light_ceiling_4, USpotLightComponent);
-	READ_PTR_FULL(light_ceiling_5, USpotLightComponent);
+	READ_PTR_FULL(Light_ceiling_4, USpotLightComponent);
+	READ_PTR_FULL(Light_ceiling_5, USpotLightComponent);
 	READ_PTR_FULL(Light_candle_6, UPointLightComponent);
 	READ_PTR_FULL(Light_candle_4, UPointLightComponent);
 	READ_PTR_FULL(Light_candle, UPointLightComponent);
@@ -229,14 +240,11 @@ void ABP_tavern_WSP_01_b_C::AfterRead()
 	READ_PTR_FULL(bld_tavern_roof_01_a, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_rug_01_a2, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_rug_01_a1, UStaticMeshComponent);
-	READ_PTR_FULL(cmn_stool_01_a3, UStaticMeshComponent);
-	READ_PTR_FULL(cmn_stool_01_a1, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_post_01_c1, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_post_01_c, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_post_01_b, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_rug_01_a, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_animal_rug_01_a, UStaticMeshComponent);
-	READ_PTR_FULL(cmn_stool_01_a, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_beam_sail_cloth_01_a, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_post_01_a, UStaticMeshComponent);
 	READ_PTR_FULL(bld_tvn_bench_01_a1, UStaticMeshComponent);
@@ -270,6 +278,17 @@ void ABP_tavern_WSP_01_b_C::BeforeDelete()
 {
 	AActor::BeforeDelete();
 
+	DELE_PTR_FULL(Seat_Bannister_Outside_4);
+	DELE_PTR_FULL(Seat_Bannister_Outside_3);
+	DELE_PTR_FULL(Seat_Bannister_Outside_2);
+	DELE_PTR_FULL(Seat_Bannister_Outside);
+	DELE_PTR_FULL(Stool_IntroTable_4);
+	DELE_PTR_FULL(Stool_IntroTable_3);
+	DELE_PTR_FULL(Stool_IntroTable_2);
+	DELE_PTR_FULL(StaticMesh3);
+	DELE_PTR_FULL(StaticMesh1);
+	DELE_PTR_FULL(StaticMesh);
+	DELE_PTR_FULL(cmn_painting_vinyl_01a);
 	DELE_PTR_FULL(SpotLight12);
 	DELE_PTR_FULL(SpotLight11);
 	DELE_PTR_FULL(SpotLight10);
@@ -408,8 +427,8 @@ void ABP_tavern_WSP_01_b_C::BeforeDelete()
 	DELE_PTR_FULL(Light_fire);
 	DELE_PTR_FULL(ParticleSystem3);
 	DELE_PTR_FULL(Light_candle_5);
-	DELE_PTR_FULL(light_ceiling_4);
-	DELE_PTR_FULL(light_ceiling_5);
+	DELE_PTR_FULL(Light_ceiling_4);
+	DELE_PTR_FULL(Light_ceiling_5);
 	DELE_PTR_FULL(Light_candle_6);
 	DELE_PTR_FULL(Light_candle_4);
 	DELE_PTR_FULL(Light_candle);
@@ -459,14 +478,11 @@ void ABP_tavern_WSP_01_b_C::BeforeDelete()
 	DELE_PTR_FULL(bld_tavern_roof_01_a);
 	DELE_PTR_FULL(bld_tvn_rug_01_a2);
 	DELE_PTR_FULL(bld_tvn_rug_01_a1);
-	DELE_PTR_FULL(cmn_stool_01_a3);
-	DELE_PTR_FULL(cmn_stool_01_a1);
 	DELE_PTR_FULL(bld_tvn_post_01_c1);
 	DELE_PTR_FULL(bld_tvn_post_01_c);
 	DELE_PTR_FULL(bld_tvn_post_01_b);
 	DELE_PTR_FULL(bld_tvn_rug_01_a);
 	DELE_PTR_FULL(bld_tvn_animal_rug_01_a);
-	DELE_PTR_FULL(cmn_stool_01_a);
 	DELE_PTR_FULL(bld_tvn_beam_sail_cloth_01_a);
 	DELE_PTR_FULL(bld_tvn_post_01_a);
 	DELE_PTR_FULL(bld_tvn_bench_01_a1);

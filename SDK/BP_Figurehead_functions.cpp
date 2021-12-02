@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Figurehead.BP_Figurehead_C.GetVFXComponent
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -28,7 +28,7 @@ class UParticleSystemComponent* ABP_Figurehead_C::GetVFXComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Figurehead.BP_Figurehead_C.GetVFXComponent");
 
-	ABP_Figurehead_C_GetVFXComponent_Params params;
+	ABP_Figurehead_C_GetVFXComponent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,7 +41,7 @@ class UParticleSystemComponent* ABP_Figurehead_C::GetVFXComponent()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Figurehead.BP_Figurehead_C.GetMeshComponent
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -50,7 +50,7 @@ class UStaticMeshComponent* ABP_Figurehead_C::GetMeshComponent()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Figurehead.BP_Figurehead_C.GetMeshComponent");
 
-	ABP_Figurehead_C_GetMeshComponent_Params params;
+	ABP_Figurehead_C_GetMeshComponent_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -63,14 +63,14 @@ class UStaticMeshComponent* ABP_Figurehead_C::GetMeshComponent()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Figurehead.BP_Figurehead_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Figurehead_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Figurehead.BP_Figurehead_C.UserConstructionScript");
 
-	ABP_Figurehead_C_UserConstructionScript_Params params;
+	ABP_Figurehead_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

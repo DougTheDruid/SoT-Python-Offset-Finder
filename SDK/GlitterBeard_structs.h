@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -47,7 +47,7 @@ enum class GlitterBeard_EGlitterbeardVFXState : uint8_t
 struct FFinaleReplicationState
 {
 	TEnumAsByte<GlitterBeard_EFinaleState>             State;                                                     // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_78GB[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_KB0P[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UObject*                                     TargetEnsemble;                                            // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	void AfterRead();
@@ -83,7 +83,7 @@ struct FChangeGlitterBeardVFXStateEvent
 {
 	int                                                Index;                                                     // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<GlitterBeard_EGlitterbeardVFXState>    Target;                                                    // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_T0UB[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_H7P3[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -94,7 +94,7 @@ struct FChangeGlitterBeardVFXStateEvent
 // 0x0010
 struct FGlitterbeardPuzzleCancelTelemetryEvent
 {
-	unsigned char                                      UnknownData_PWFV[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9J86[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -105,7 +105,7 @@ struct FGlitterbeardPuzzleCancelTelemetryEvent
 // 0x0010
 struct FGlitterbeardPuzzleUnlockTelemetryEvent
 {
-	unsigned char                                      UnknownData_QWX2[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KROG[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -116,7 +116,7 @@ struct FGlitterbeardPuzzleUnlockTelemetryEvent
 // 0x0010
 struct FGlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent
 {
-	unsigned char                                      UnknownData_FHUB[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KKN7[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -127,7 +127,7 @@ struct FGlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent
 // 0x0020
 struct FGlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent
 {
-	unsigned char                                      UnknownData_20TS[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QOIR[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -138,7 +138,7 @@ struct FGlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent
 // 0x0010
 struct FGlitterbeardSessionEndTelemetryEvent
 {
-	unsigned char                                      UnknownData_O9CY[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_DXXC[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -149,7 +149,7 @@ struct FGlitterbeardSessionEndTelemetryEvent
 // 0x0010
 struct FGlitterbeardSessionBeginTelemetryEvent
 {
-	unsigned char                                      UnknownData_I1VN[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MX90[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

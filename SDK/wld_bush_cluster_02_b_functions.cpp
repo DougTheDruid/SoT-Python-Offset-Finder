@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0.Brig
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function wld_bush_cluster_02_b.wld_bush_cluster_02_b_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void Awld_bush_cluster_02_b_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function wld_bush_cluster_02_b.wld_bush_cluster_02_b_C.UserConstructionScript");
 
-	Awld_bush_cluster_02_b_C_UserConstructionScript_Params params;
+	Awld_bush_cluster_02_b_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

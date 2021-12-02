@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Blunderbuss.BP_Blunderbuss_C.SetScopeEffectOn
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -28,7 +28,7 @@ void ABP_Blunderbuss_C::SetScopeEffectOn(bool IsOn)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Blunderbuss.BP_Blunderbuss_C.SetScopeEffectOn");
 
-	ABP_Blunderbuss_C_SetScopeEffectOn_Params params;
+	ABP_Blunderbuss_C_SetScopeEffectOn_Params params {};
 	params.IsOn = IsOn;
 
 	auto flags = fn->FunctionFlags;
@@ -40,7 +40,7 @@ void ABP_Blunderbuss_C::SetScopeEffectOn(bool IsOn)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Blunderbuss.BP_Blunderbuss_C.determine sfx relationship
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -49,7 +49,7 @@ void ABP_Blunderbuss_C::determine_sfx_relationship(TEnumAsByte<RareAudio_EEmitte
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Blunderbuss.BP_Blunderbuss_C.determine sfx relationship");
 
-	ABP_Blunderbuss_C_determine_sfx_relationship_Params params;
+	ABP_Blunderbuss_C_determine_sfx_relationship_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -63,7 +63,7 @@ void ABP_Blunderbuss_C::determine_sfx_relationship(TEnumAsByte<RareAudio_EEmitte
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Blunderbuss.BP_Blunderbuss_C.DoFireEffect
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -71,7 +71,7 @@ void ABP_Blunderbuss_C::DoFireEffect()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Blunderbuss.BP_Blunderbuss_C.DoFireEffect");
 
-	ABP_Blunderbuss_C_DoFireEffect_Params params;
+	ABP_Blunderbuss_C_DoFireEffect_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -82,14 +82,14 @@ void ABP_Blunderbuss_C::DoFireEffect()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Blunderbuss.BP_Blunderbuss_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Blunderbuss_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Blunderbuss.BP_Blunderbuss_C.UserConstructionScript");
 
-	ABP_Blunderbuss_C_UserConstructionScript_Params params;
+	ABP_Blunderbuss_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -100,14 +100,14 @@ void ABP_Blunderbuss_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Blunderbuss.BP_Blunderbuss_C.OnWeaponFired
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Blunderbuss_C::OnWeaponFired()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Blunderbuss.BP_Blunderbuss_C.OnWeaponFired");
 
-	ABP_Blunderbuss_C_OnWeaponFired_Params params;
+	ABP_Blunderbuss_C_OnWeaponFired_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -118,14 +118,14 @@ void ABP_Blunderbuss_C::OnWeaponFired()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Blunderbuss.BP_Blunderbuss_C.RadialBlurOn
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Blunderbuss_C::RadialBlurOn()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Blunderbuss.BP_Blunderbuss_C.RadialBlurOn");
 
-	ABP_Blunderbuss_C_RadialBlurOn_Params params;
+	ABP_Blunderbuss_C_RadialBlurOn_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -136,14 +136,14 @@ void ABP_Blunderbuss_C::RadialBlurOn()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Blunderbuss.BP_Blunderbuss_C.RadialBlurOff
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_Blunderbuss_C::RadialBlurOff()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Blunderbuss.BP_Blunderbuss_C.RadialBlurOff");
 
-	ABP_Blunderbuss_C_RadialBlurOff_Params params;
+	ABP_Blunderbuss_C_RadialBlurOff_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -154,7 +154,7 @@ void ABP_Blunderbuss_C::RadialBlurOff()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Blunderbuss.BP_Blunderbuss_C.ExecuteUbergraph_BP_Blunderbuss
 //		Flags  -> ()
 // Parameters:
@@ -163,7 +163,7 @@ void ABP_Blunderbuss_C::ExecuteUbergraph_BP_Blunderbuss(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Blunderbuss.BP_Blunderbuss_C.ExecuteUbergraph_BP_Blunderbuss");
 
-	ABP_Blunderbuss_C_ExecuteUbergraph_BP_Blunderbuss_Params params;
+	ABP_Blunderbuss_C_ExecuteUbergraph_BP_Blunderbuss_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

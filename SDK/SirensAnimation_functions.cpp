@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -21,7 +21,10 @@ namespace CG
 void FSirenAnimationLocomotion::AfterRead()
 {
 	READ_PTR_FULL(TreadwaterSequence, UAnimSequence);
+	READ_PTR_FULL(AggressiveTreadwaterSequence, UAnimSequence);
 	READ_PTR_FULL(LongwaysLocomotionBlendSpace, UBlendSpace1D);
+	READ_PTR_FULL(AggressiveLongwaysLocomotionBlendSpace, UBlendSpace1D);
+	READ_PTR_FULL(AlternativeAggressiveLongwaysLocomotionBlendSpace, UBlendSpace1D);
 	READ_PTR_FULL(LocomotionTurningAdditiveBlendSpace, UBlendSpace1D);
 	READ_PTR_FULL(LocomotionSpinningAdditiveBlendSpace, UBlendSpace1D);
 	READ_PTR_FULL(DivingFromSurfaceSequence, UAnimSequence);
@@ -31,7 +34,10 @@ void FSirenAnimationLocomotion::AfterRead()
 void FSirenAnimationLocomotion::BeforeDelete()
 {
 	DELE_PTR_FULL(TreadwaterSequence);
+	DELE_PTR_FULL(AggressiveTreadwaterSequence);
 	DELE_PTR_FULL(LongwaysLocomotionBlendSpace);
+	DELE_PTR_FULL(AggressiveLongwaysLocomotionBlendSpace);
+	DELE_PTR_FULL(AlternativeAggressiveLongwaysLocomotionBlendSpace);
 	DELE_PTR_FULL(LocomotionTurningAdditiveBlendSpace);
 	DELE_PTR_FULL(LocomotionSpinningAdditiveBlendSpace);
 	DELE_PTR_FULL(DivingFromSurfaceSequence);
@@ -63,14 +69,14 @@ void USirenAnimationData::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0147B340
+//		Offset -> 0x014A6300
 //		Name   -> Function SirensAnimation.SirenAnimationInstance.ClearActiveAttack
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void USirenAnimationInstance::ClearActiveAttack()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SirensAnimation.SirenAnimationInstance.ClearActiveAttack");
 
-	USirenAnimationInstance_ClearActiveAttack_Params params;
+	USirenAnimationInstance_ClearActiveAttack_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -82,14 +88,14 @@ void USirenAnimationInstance::ClearActiveAttack()
 
 
 // Function:
-//		Offset -> 0x0147B320
+//		Offset -> 0x014A62E0
 //		Name   -> Function SirensAnimation.SirenAnimationInstance.BeginNewAttack
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void USirenAnimationInstance::BeginNewAttack()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function SirensAnimation.SirenAnimationInstance.BeginNewAttack");
 
-	USirenAnimationInstance_BeginNewAttack_Params params;
+	USirenAnimationInstance_BeginNewAttack_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

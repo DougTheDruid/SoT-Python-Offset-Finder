@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -32,22 +32,6 @@ struct URadialDamagerComponent_EndDamage_Params
 
 // Function Damagers.RadialDamagerComponent.BeginDamage
 struct URadialDamagerComponent_BeginDamage_Params
-{
-};
-
-// Function Damagers.ShipDamagerComponent.SetShape
-struct UShipDamagerComponent_SetShape_Params
-{
-	class UPrimitiveComponent*                         InShape;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function Damagers.ShipDamagerComponent.EndDamage
-struct UShipDamagerComponent_EndDamage_Params
-{
-};
-
-// Function Damagers.ShipDamagerComponent.BeginDamage
-struct UShipDamagerComponent_BeginDamage_Params
 {
 };
 
@@ -84,6 +68,22 @@ struct UShockwaveDamagerInterface_GetShockwaveDuration_Params
 struct UShockwaveDamagerComponent_Multi_StartShockwave_Params
 {
 	struct FVector                                     InStartLocation;                                           // 0x0000(0x000C)  (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+};
+
+// Function Damagers.ShipDamagerComponent.SetShape
+struct UShipDamagerComponent_SetShape_Params
+{
+	class UPrimitiveComponent*                         InShape;                                                   // 0x0000(0x0008)  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function Damagers.ShipDamagerComponent.EndDamage
+struct UShipDamagerComponent_EndDamage_Params
+{
+};
+
+// Function Damagers.ShipDamagerComponent.BeginDamage
+struct UShipDamagerComponent_BeginDamage_Params
+{
 };
 
 }

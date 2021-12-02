@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function wsp_palm_cluster_03_c.wsp_palm_cluster_03_c_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void Awsp_palm_cluster_03_c_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function wsp_palm_cluster_03_c.wsp_palm_cluster_03_c_C.UserConstructionScript");
 
-	Awsp_palm_cluster_03_c_C_UserConstructionScript_Params params;
+	Awsp_palm_cluster_03_c_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

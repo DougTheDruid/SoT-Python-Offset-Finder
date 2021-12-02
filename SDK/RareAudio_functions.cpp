@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -36,6 +36,22 @@ void FEventToComponentMapping::BeforeDelete()
 {
 	DELE_PTR_FULL(PlayEvent);
 	DELE_PTR_FULL(StopEvent);
+}
+
+void FWWiseEmitterCreationRTPCSetting::AfterRead()
+{
+}
+
+void FWWiseEmitterCreationRTPCSetting::BeforeDelete()
+{
+}
+
+void FWWiseEmitterCreationSwitchSetting::AfterRead()
+{
+}
+
+void FWWiseEmitterCreationSwitchSetting::BeforeDelete()
+{
 }
 
 void FWwiseEmitterCreationParams::AfterRead()
@@ -145,14 +161,14 @@ void UAnimNotifyState_WwiseSound::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x04464340
+//		Offset -> 0x04587980
 //		Name   -> Function RareAudio.AudioEventToComponentMap.ClearMappings
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void AAudioEventToComponentMap::ClearMappings()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMap.ClearMappings");
 
-	AAudioEventToComponentMap_ClearMappings_Params params;
+	AAudioEventToComponentMap_ClearMappings_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -164,7 +180,7 @@ void AAudioEventToComponentMap::ClearMappings()
 
 
 // Function:
-//		Offset -> 0x044640A0
+//		Offset -> 0x045876E0
 //		Name   -> Function RareAudio.AudioEventToComponentMap.AddMappingWithSingleEmitterComponent
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -176,7 +192,7 @@ void AAudioEventToComponentMap::AddMappingWithSingleEmitterComponent(class UWwis
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMap.AddMappingWithSingleEmitterComponent");
 
-	AAudioEventToComponentMap_AddMappingWithSingleEmitterComponent_Params params;
+	AAudioEventToComponentMap_AddMappingWithSingleEmitterComponent_Params params {};
 	params.PlayEvent = PlayEvent;
 	params.StopEvent = StopEvent;
 	params.WwiseEmitterPool = WwiseEmitterPool;
@@ -194,7 +210,7 @@ void AAudioEventToComponentMap::AddMappingWithSingleEmitterComponent(class UWwis
 
 
 // Function:
-//		Offset -> 0x04463D60
+//		Offset -> 0x045873A0
 //		Name   -> Function RareAudio.AudioEventToComponentMap.AddMapping
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -206,7 +222,7 @@ void AAudioEventToComponentMap::AddMapping(class UWwiseEvent* PlayEvent, class U
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMap.AddMapping");
 
-	AAudioEventToComponentMap_AddMapping_Params params;
+	AAudioEventToComponentMap_AddMapping_Params params {};
 	params.PlayEvent = PlayEvent;
 	params.StopEvent = StopEvent;
 	params.WwiseEmitterPool = WwiseEmitterPool;
@@ -238,14 +254,14 @@ void AAudioEventToComponentMap::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x04464360
+//		Offset -> 0x045879A0
 //		Name   -> Function RareAudio.AudioEventToComponentMapComponent.ClearMappings
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UAudioEventToComponentMapComponent::ClearMappings()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMapComponent.ClearMappings");
 
-	UAudioEventToComponentMapComponent_ClearMappings_Params params;
+	UAudioEventToComponentMapComponent_ClearMappings_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -257,7 +273,7 @@ void UAudioEventToComponentMapComponent::ClearMappings()
 
 
 // Function:
-//		Offset -> 0x044641F0
+//		Offset -> 0x04587830
 //		Name   -> Function RareAudio.AudioEventToComponentMapComponent.AddMappingWithSingleEmitterComponent
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -269,7 +285,7 @@ void UAudioEventToComponentMapComponent::AddMappingWithSingleEmitterComponent(cl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMapComponent.AddMappingWithSingleEmitterComponent");
 
-	UAudioEventToComponentMapComponent_AddMappingWithSingleEmitterComponent_Params params;
+	UAudioEventToComponentMapComponent_AddMappingWithSingleEmitterComponent_Params params {};
 	params.PlayEvent = PlayEvent;
 	params.StopEvent = StopEvent;
 	params.WwiseEmitterPool = WwiseEmitterPool;
@@ -287,7 +303,7 @@ void UAudioEventToComponentMapComponent::AddMappingWithSingleEmitterComponent(cl
 
 
 // Function:
-//		Offset -> 0x04463F00
+//		Offset -> 0x04587540
 //		Name   -> Function RareAudio.AudioEventToComponentMapComponent.AddMapping
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -299,7 +315,7 @@ void UAudioEventToComponentMapComponent::AddMapping(class UWwiseEvent* PlayEvent
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioEventToComponentMapComponent.AddMapping");
 
-	UAudioEventToComponentMapComponent_AddMapping_Params params;
+	UAudioEventToComponentMapComponent_AddMapping_Params params {};
 	params.PlayEvent = PlayEvent;
 	params.StopEvent = StopEvent;
 	params.WwiseEmitterPool = WwiseEmitterPool;
@@ -329,7 +345,7 @@ void UAudioEventToComponentMapComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x04467320
+//		Offset -> 0x0458A9B0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseStopGlobalEvent
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -339,7 +355,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseStopGlobalEvent(class UWwiseEven
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseStopGlobalEvent");
 
-	UWwiseEmitterBlueprintLibrary_WwiseStopGlobalEvent_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseStopGlobalEvent_Params params {};
 	params.Event = Event;
 	params.FadeTime = FadeTime;
 
@@ -353,7 +369,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseStopGlobalEvent(class UWwiseEven
 
 
 // Function:
-//		Offset -> 0x04467270
+//		Offset -> 0x0458A900
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetState
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -363,7 +379,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseSetState(const struct FName& Sta
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetState");
 
-	UWwiseEmitterBlueprintLibrary_WwiseSetState_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseSetState_Params params {};
 	params.StateGroup = StateGroup;
 	params.StateValue = StateValue;
 
@@ -377,7 +393,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseSetState(const struct FName& Sta
 
 
 // Function:
-//		Offset -> 0x044671B0
+//		Offset -> 0x0458A840
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetGlobalRTPC
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -387,7 +403,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseSetGlobalRTPC(const struct FName
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseSetGlobalRTPC");
 
-	UWwiseEmitterBlueprintLibrary_WwiseSetGlobalRTPC_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseSetGlobalRTPC_Params params {};
 	params.RTPCName = RTPCName;
 	params.RTPCValue = RTPCValue;
 
@@ -401,7 +417,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseSetGlobalRTPC(const struct FName
 
 
 // Function:
-//		Offset -> 0x04467010
+//		Offset -> 0x0458A670
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostOneShotOnOwner
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -414,7 +430,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwisePostOneShotOnOwner(class UObject
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostOneShotOnOwner");
 
-	UWwiseEmitterBlueprintLibrary_WwisePostOneShotOnOwner_Params params;
+	UWwiseEmitterBlueprintLibrary_WwisePostOneShotOnOwner_Params params {};
 	params.Owner = Owner;
 	params.EmitterPool = EmitterPool;
 	params.CreationParams = CreationParams;
@@ -431,7 +447,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwisePostOneShotOnOwner(class UObject
 
 
 // Function:
-//		Offset -> 0x04466F90
+//		Offset -> 0x0458A5F0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostGlobalEvent
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -441,7 +457,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwisePostGlobalEvent(class UWwiseEvent
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostGlobalEvent");
 
-	UWwiseEmitterBlueprintLibrary_WwisePostGlobalEvent_Params params;
+	UWwiseEmitterBlueprintLibrary_WwisePostGlobalEvent_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -456,7 +472,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwisePostGlobalEvent(class UWwiseEvent
 
 
 // Function:
-//		Offset -> 0x04466D80
+//		Offset -> 0x0458A3E0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostEventAtLocation
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -471,7 +487,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwisePostEventAtLocation(struct FWwise
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwisePostEventAtLocation");
 
-	UWwiseEmitterBlueprintLibrary_WwisePostEventAtLocation_Params params;
+	UWwiseEmitterBlueprintLibrary_WwisePostEventAtLocation_Params params {};
 	params.Event = Event;
 	params.Location = Location;
 	params.Front = Front;
@@ -493,7 +509,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwisePostEventAtLocation(struct FWwise
 
 
 // Function:
-//		Offset -> 0x04466D00
+//		Offset -> 0x0458A360
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseIsGlobalEvent
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -503,7 +519,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseIsGlobalEvent(class UWwiseEvent*
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseIsGlobalEvent");
 
-	UWwiseEmitterBlueprintLibrary_WwiseIsGlobalEvent_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseIsGlobalEvent_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -518,7 +534,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseIsGlobalEvent(class UWwiseEvent*
 
 
 // Function:
-//		Offset -> 0x04466B90
+//		Offset -> 0x0458A1F0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerInfo
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -529,7 +545,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetListenerInfo(struct FWwiseLis
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerInfo");
 
-	UWwiseEmitterBlueprintLibrary_WwiseGetListenerInfo_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseGetListenerInfo_Params params {};
 	params.Viewport = Viewport;
 
 	auto flags = fn->FunctionFlags;
@@ -547,7 +563,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetListenerInfo(struct FWwiseLis
 
 
 // Function:
-//		Offset -> 0x04466930
+//		Offset -> 0x04589F90
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerEmitter
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -563,7 +579,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetListenerEmitter(struct FWwise
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetListenerEmitter");
 
-	UWwiseEmitterBlueprintLibrary_WwiseGetListenerEmitter_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseGetListenerEmitter_Params params {};
 	params.WorldContextObject = WorldContextObject;
 	params.ListenerIndex = ListenerIndex;
 	params.Name = Name;
@@ -586,7 +602,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetListenerEmitter(struct FWwise
 
 
 // Function:
-//		Offset -> 0x04466850
+//		Offset -> 0x04589EB0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetGlobalRTPC
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -597,7 +613,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetGlobalRTPC(const struct FName
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseGetGlobalRTPC");
 
-	UWwiseEmitterBlueprintLibrary_WwiseGetGlobalRTPC_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseGetGlobalRTPC_Params params {};
 	params.RTPCName = RTPCName;
 
 	auto flags = fn->FunctionFlags;
@@ -615,7 +631,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseGetGlobalRTPC(const struct FName
 
 
 // Function:
-//		Offset -> 0x044666B0
+//		Offset -> 0x04589D10
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterWaitToComplete
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -628,7 +644,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterWaitToComplete(const stru
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterWaitToComplete");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterWaitToComplete_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterWaitToComplete_Params params {};
 	params.Emitter = Emitter;
 	params.PlayId = PlayId;
 	params.WorldContextObject = WorldContextObject;
@@ -646,7 +662,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterWaitToComplete(const stru
 
 
 // Function:
-//		Offset -> 0x04466550
+//		Offset -> 0x04589BB0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterStop
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -658,7 +674,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterStop(const struct FWwiseE
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterStop");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterStop_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterStop_Params params {};
 	params.Emitter = Emitter;
 	params.PlayId = PlayId;
 	params.FadeTime = FadeTime;
@@ -675,7 +691,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterStop(const struct FWwiseE
 
 
 // Function:
-//		Offset -> 0x044663F0
+//		Offset -> 0x04589A50
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetSwitch
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -687,7 +703,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetSwitch(const struct FW
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetSwitch");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetSwitch_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetSwitch_Params params {};
 	params.Emitter = Emitter;
 	params.SwitchGroup = SwitchGroup;
 	params.Value = Value;
@@ -704,7 +720,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetSwitch(const struct FW
 
 
 // Function:
-//		Offset -> 0x044662C0
+//		Offset -> 0x04589920
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPCOnAll
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -716,7 +732,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetRTPCOnAll(TArray<struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPCOnAll");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetRTPCOnAll_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetRTPCOnAll_Params params {};
 	params.Emitters = Emitters;
 	params.Name = Name;
 	params.Value = Value;
@@ -733,7 +749,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetRTPCOnAll(TArray<struc
 
 
 // Function:
-//		Offset -> 0x04466160
+//		Offset -> 0x045897C0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPC
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -745,7 +761,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetRTPC(const struct FWwi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetRTPC");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetRTPC_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetRTPC_Params params {};
 	params.Emitter = Emitter;
 	params.Name = Name;
 	params.Value = Value;
@@ -762,7 +778,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetRTPC(const struct FWwi
 
 
 // Function:
-//		Offset -> 0x04466040
+//		Offset -> 0x045896A0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetParams
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -773,7 +789,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetParams(const struct FW
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetParams");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetParams_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetParams_Params params {};
 	params.Emitter = Emitter;
 	params.Params = Params;
 
@@ -789,7 +805,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetParams(const struct FW
 
 
 // Function:
-//		Offset -> 0x04465F20
+//		Offset -> 0x04589580
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetLocation
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -800,7 +816,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetLocation(const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterSetLocation");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetLocation_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterSetLocation_Params params {};
 	params.Emitter = Emitter;
 	params.Location = Location;
 
@@ -816,7 +832,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterSetLocation(const struct 
 
 
 // Function:
-//		Offset -> 0x04465D30
+//		Offset -> 0x04589390
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEventOnAll
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -830,7 +846,7 @@ TArray<int> UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterPostEventOnAll(TAr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEventOnAll");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterPostEventOnAll_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterPostEventOnAll_Params params {};
 	params.Emitters = Emitters;
 	params.WwiseEvent = WwiseEvent;
 	params.Relationship = Relationship;
@@ -849,7 +865,7 @@ TArray<int> UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterPostEventOnAll(TAr
 
 
 // Function:
-//		Offset -> 0x04465B70
+//		Offset -> 0x045891D0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEvent
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -863,7 +879,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterPostEvent(const struct FWw
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterPostEvent");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterPostEvent_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterPostEvent_Params params {};
 	params.Emitter = Emitter;
 	params.WwiseEvent = WwiseEvent;
 	params.Relationship = Relationship;
@@ -882,7 +898,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterPostEvent(const struct FWw
 
 
 // Function:
-//		Offset -> 0x04465AB0
+//		Offset -> 0x04589110
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsValid
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -892,7 +908,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterIsValid(const struct FWwi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsValid");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterIsValid_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterIsValid_Params params {};
 	params.Emitter = Emitter;
 
 	auto flags = fn->FunctionFlags;
@@ -907,7 +923,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterIsValid(const struct FWwi
 
 
 // Function:
-//		Offset -> 0x044659A0
+//		Offset -> 0x04589000
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsPlaying
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -918,7 +934,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterIsPlaying(const struct FW
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterIsPlaying");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterIsPlaying_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterIsPlaying_Params params {};
 	params.Emitter = Emitter;
 	params.Event = Event;
 
@@ -934,7 +950,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterIsPlaying(const struct FW
 
 
 // Function:
-//		Offset -> 0x04465830
+//		Offset -> 0x04588E90
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterGetRTPC
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -946,7 +962,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterGetRTPC(const struct FWwi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterGetRTPC");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterGetRTPC_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterGetRTPC_Params params {};
 	params.Emitter = Emitter;
 	params.Name = Name;
 
@@ -965,7 +981,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterGetRTPC(const struct FWwi
 
 
 // Function:
-//		Offset -> 0x04465780
+//		Offset -> 0x04588DE0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterDestroy
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -974,7 +990,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterDestroy(struct FWwiseEmit
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterDestroy");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterDestroy_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterDestroy_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -989,7 +1005,7 @@ void UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterDestroy(struct FWwiseEmit
 
 
 // Function:
-//		Offset -> 0x04465620
+//		Offset -> 0x04588C80
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPCOnAll
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1001,7 +1017,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentSetRTPCOnAll(TAr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPCOnAll");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterComponentSetRTPCOnAll_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterComponentSetRTPCOnAll_Params params {};
 	params.EmitterComponents = EmitterComponents;
 	params.Name = Name;
 	params.Value = Value;
@@ -1018,7 +1034,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentSetRTPCOnAll(TAr
 
 
 // Function:
-//		Offset -> 0x04465520
+//		Offset -> 0x04588B80
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPC
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1030,7 +1046,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentSetRTPC(class UW
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentSetRTPC");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterComponentSetRTPC_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterComponentSetRTPC_Params params {};
 	params.EmitterComponent = EmitterComponent;
 	params.Name = Name;
 	params.Value = Value;
@@ -1047,7 +1063,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentSetRTPC(class UW
 
 
 // Function:
-//		Offset -> 0x044652F0
+//		Offset -> 0x04588950
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEventOnAll
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1061,7 +1077,7 @@ TArray<int> UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentPostEvent
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEventOnAll");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterComponentPostEventOnAll_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterComponentPostEventOnAll_Params params {};
 	params.EmitterComponents = EmitterComponents;
 	params.WwiseEvent = WwiseEvent;
 	params.Relationship = Relationship;
@@ -1080,7 +1096,7 @@ TArray<int> UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentPostEvent
 
 
 // Function:
-//		Offset -> 0x04465170
+//		Offset -> 0x045887D0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEvent
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1094,7 +1110,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentPostEvent(class U
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseEmitterComponentPostEvent");
 
-	UWwiseEmitterBlueprintLibrary_WwiseEmitterComponentPostEvent_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseEmitterComponentPostEvent_Params params {};
 	params.EmitterComponent = EmitterComponent;
 	params.WwiseEvent = WwiseEvent;
 	params.Relationship = Relationship;
@@ -1113,7 +1129,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwiseEmitterComponentPostEvent(class U
 
 
 // Function:
-//		Offset -> 0x04464FB0
+//		Offset -> 0x04588610
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateEmitter
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1127,7 +1143,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseCreateEmitter(struct FWwiseEmitt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateEmitter");
 
-	UWwiseEmitterBlueprintLibrary_WwiseCreateEmitter_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseCreateEmitter_Params params {};
 	params.Name = Name;
 	params.Owner = Owner;
 	params.EmitterPool = EmitterPool;
@@ -1148,7 +1164,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_WwiseCreateEmitter(struct FWwiseEmitt
 
 
 // Function:
-//		Offset -> 0x04464D30
+//		Offset -> 0x04588370
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateDetachedEmitter
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1164,7 +1180,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwiseCreateDetachedEmitter(struct FWwi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.WwiseCreateDetachedEmitter");
 
-	UWwiseEmitterBlueprintLibrary_WwiseCreateDetachedEmitter_Params params;
+	UWwiseEmitterBlueprintLibrary_WwiseCreateDetachedEmitter_Params params {};
 	params.Name = Name;
 	params.EmitterPool = EmitterPool;
 	params.Location = Location;
@@ -1187,7 +1203,7 @@ int UWwiseEmitterBlueprintLibrary::STATIC_WwiseCreateDetachedEmitter(struct FWwi
 
 
 // Function:
-//		Offset -> 0x04464B60
+//		Offset -> 0x045881A0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.SeekOnEvent
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1201,7 +1217,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_SeekOnEvent(const struct FWwiseEmitte
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.SeekOnEvent");
 
-	UWwiseEmitterBlueprintLibrary_SeekOnEvent_Params params;
+	UWwiseEmitterBlueprintLibrary_SeekOnEvent_Params params {};
 	params.WwiseEmitter = WwiseEmitter;
 	params.in_eventID = in_eventID;
 	params.in_iPosition = in_iPosition;
@@ -1220,7 +1236,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_SeekOnEvent(const struct FWwiseEmitte
 
 
 // Function:
-//		Offset -> 0x044648B0
+//		Offset -> 0x04587EF0
 //		Name   -> Function RareAudio.WwiseEmitterBlueprintLibrary.GetPlaybackPosition
 //		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1232,7 +1248,7 @@ bool UWwiseEmitterBlueprintLibrary::STATIC_GetPlaybackPosition(const struct FWwi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterBlueprintLibrary.GetPlaybackPosition");
 
-	UWwiseEmitterBlueprintLibrary_GetPlaybackPosition_Params params;
+	UWwiseEmitterBlueprintLibrary_GetPlaybackPosition_Params params {};
 	params.WwiseEmitter = WwiseEmitter;
 	params.in_PlayingID = in_PlayingID;
 
@@ -1263,7 +1279,7 @@ void UWwiseEmitterBlueprintLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x04464750
+//		Offset -> 0x04587D90
 //		Name   -> Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetNamedEmitter
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1275,7 +1291,7 @@ bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetNamedEmitter(struct FWwis
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetNamedEmitter");
 
-	UWwiseEmitterComponentBlueprintLibrary_GetNamedEmitter_Params params;
+	UWwiseEmitterComponentBlueprintLibrary_GetNamedEmitter_Params params {};
 	params.InNameOfEmitterToRetrieve = InNameOfEmitterToRetrieve;
 	params.InActorToFindEmitterOn = InActorToFindEmitterOn;
 
@@ -1294,7 +1310,7 @@ bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetNamedEmitter(struct FWwis
 
 
 // Function:
-//		Offset -> 0x044644F0
+//		Offset -> 0x04587B30
 //		Name   -> Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestNEmitters
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1307,7 +1323,7 @@ bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetClosestNEmitters(TArray<s
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestNEmitters");
 
-	UWwiseEmitterComponentBlueprintLibrary_GetClosestNEmitters_Params params;
+	UWwiseEmitterComponentBlueprintLibrary_GetClosestNEmitters_Params params {};
 	params.InFromPosition = InFromPosition;
 	params.InNumEmittersToFind = InNumEmittersToFind;
 	params.InActorToFindClosestEmitterOn = InActorToFindClosestEmitterOn;
@@ -1327,7 +1343,7 @@ bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetClosestNEmitters(TArray<s
 
 
 // Function:
-//		Offset -> 0x04464380
+//		Offset -> 0x045879C0
 //		Name   -> Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestEmitter
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1339,7 +1355,7 @@ bool UWwiseEmitterComponentBlueprintLibrary::STATIC_GetClosestEmitter(struct FWw
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.WwiseEmitterComponentBlueprintLibrary.GetClosestEmitter");
 
-	UWwiseEmitterComponentBlueprintLibrary_GetClosestEmitter_Params params;
+	UWwiseEmitterComponentBlueprintLibrary_GetClosestEmitter_Params params {};
 	params.InFromPosition = InFromPosition;
 	params.InActorToFindClosestEmitterOn = InActorToFindClosestEmitterOn;
 
@@ -1394,7 +1410,7 @@ void AAudioIslandStaticMeshAssociatorBase::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0446E240
+//		Offset -> 0x045918D0
 //		Name   -> Function RareAudio.AudioPortalComponent.SetParentShip
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -1403,7 +1419,7 @@ void UAudioPortalComponent::SetParentShip(class AActor* ParentShip)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalComponent.SetParentShip");
 
-	UAudioPortalComponent_SetParentShip_Params params;
+	UAudioPortalComponent_SetParentShip_Params params {};
 	params.ParentShip = ParentShip;
 
 	auto flags = fn->FunctionFlags;
@@ -1432,7 +1448,7 @@ void UAudioPortalComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0446E2D0
+//		Offset -> 0x04591960
 //		Name   -> Function RareAudio.AudioPortalInterface.UnregisterPortal
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -1441,7 +1457,7 @@ void UAudioPortalInterface::UnregisterPortal(class UAudioPortalComponent* AudioP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalInterface.UnregisterPortal");
 
-	UAudioPortalInterface_UnregisterPortal_Params params;
+	UAudioPortalInterface_UnregisterPortal_Params params {};
 	params.AudioPortal = AudioPortal;
 
 	auto flags = fn->FunctionFlags;
@@ -1454,7 +1470,7 @@ void UAudioPortalInterface::UnregisterPortal(class UAudioPortalComponent* AudioP
 
 
 // Function:
-//		Offset -> 0x0446E180
+//		Offset -> 0x04591810
 //		Name   -> Function RareAudio.AudioPortalInterface.RegisterPortal
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -1464,7 +1480,7 @@ void UAudioPortalInterface::RegisterPortal(class UAudioPortalComponent* AudioPor
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalInterface.RegisterPortal");
 
-	UAudioPortalInterface_RegisterPortal_Params params;
+	UAudioPortalInterface_RegisterPortal_Params params {};
 	params.AudioPortal = AudioPortal;
 	params.OwningActor = OwningActor;
 
@@ -1478,7 +1494,7 @@ void UAudioPortalInterface::RegisterPortal(class UAudioPortalComponent* AudioPor
 
 
 // Function:
-//		Offset -> 0x0446DD50
+//		Offset -> 0x045913E0
 //		Name   -> Function RareAudio.AudioPortalInterface.GetAllRegisteredPortalsInSpecificSpace
 //		Flags  -> (Native, Public)
 // Parameters:
@@ -1489,7 +1505,7 @@ TArray<TWeakObjectPtr<class UAudioPortalComponent>> UAudioPortalInterface::GetAl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalInterface.GetAllRegisteredPortalsInSpecificSpace");
 
-	UAudioPortalInterface_GetAllRegisteredPortalsInSpecificSpace_Params params;
+	UAudioPortalInterface_GetAllRegisteredPortalsInSpecificSpace_Params params {};
 	params.AudioSpace = AudioSpace;
 	params.OwningActor = OwningActor;
 
@@ -1505,7 +1521,7 @@ TArray<TWeakObjectPtr<class UAudioPortalComponent>> UAudioPortalInterface::GetAl
 
 
 // Function:
-//		Offset -> 0x0446DCF0
+//		Offset -> 0x04591380
 //		Name   -> Function RareAudio.AudioPortalInterface.GetAllRegisteredPortals
 //		Flags  -> (Native, Public, Const)
 // Parameters:
@@ -1514,7 +1530,7 @@ TArray<TWeakObjectPtr<class UAudioPortalComponent>> UAudioPortalInterface::GetAl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioPortalInterface.GetAllRegisteredPortals");
 
-	UAudioPortalInterface_GetAllRegisteredPortals_Params params;
+	UAudioPortalInterface_GetAllRegisteredPortals_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1552,7 +1568,7 @@ void UAudioPortalService::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0446E060
+//		Offset -> 0x045916F0
 //		Name   -> Function RareAudio.AudioSpaceComponent.OnOverlapEnd
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -1563,7 +1579,7 @@ void UAudioSpaceComponent::OnOverlapEnd(class AActor* OtherActor, class UPrimiti
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioSpaceComponent.OnOverlapEnd");
 
-	UAudioSpaceComponent_OnOverlapEnd_Params params;
+	UAudioSpaceComponent_OnOverlapEnd_Params params {};
 	params.OtherActor = OtherActor;
 	params.OtherComp = OtherComp;
 	params.OtherBodyIndex = OtherBodyIndex;
@@ -1578,7 +1594,7 @@ void UAudioSpaceComponent::OnOverlapEnd(class AActor* OtherActor, class UPrimiti
 
 
 // Function:
-//		Offset -> 0x0446DE90
+//		Offset -> 0x04591520
 //		Name   -> Function RareAudio.AudioSpaceComponent.OnOverlapBegin
 //		Flags  -> (Final, Native, Private, HasOutParms)
 // Parameters:
@@ -1591,7 +1607,7 @@ void UAudioSpaceComponent::OnOverlapBegin(class AActor* OtherActor, class UPrimi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioSpaceComponent.OnOverlapBegin");
 
-	UAudioSpaceComponent_OnOverlapBegin_Params params;
+	UAudioSpaceComponent_OnOverlapBegin_Params params {};
 	params.OtherActor = OtherActor;
 	params.OtherComp = OtherComp;
 	params.OtherBodyIndex = OtherBodyIndex;
@@ -1622,7 +1638,7 @@ void UAudioSpaceComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0446DE70
+//		Offset -> 0x04591500
 //		Name   -> Function RareAudio.AudioSpaceDataAsset.GetRtpcName
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -1631,7 +1647,7 @@ struct FName UAudioSpaceDataAsset::GetRtpcName()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioSpaceDataAsset.GetRtpcName");
 
-	UAudioSpaceDataAsset_GetRtpcName_Params params;
+	UAudioSpaceDataAsset_GetRtpcName_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1661,7 +1677,7 @@ void UAudioSpaceDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0446DE40
+//		Offset -> 0x045914D0
 //		Name   -> Function RareAudio.AudioSpaceTrackerComponent.GetCurrentSpace
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1670,7 +1686,7 @@ class UAudioSpaceDataAsset* UAudioSpaceTrackerComponent::GetCurrentSpace()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.AudioSpaceTrackerComponent.GetCurrentSpace");
 
-	UAudioSpaceTrackerComponent_GetCurrentSpace_Params params;
+	UAudioSpaceTrackerComponent_GetCurrentSpace_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1720,14 +1736,14 @@ void UStaticMeshAudioDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0446E160
+//		Offset -> 0x045917F0
 //		Name   -> Function RareAudio.StaticMeshAudioEmittersComponent.PopulateInstanceAssociations
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UStaticMeshAudioEmittersComponent::PopulateInstanceAssociations()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RareAudio.StaticMeshAudioEmittersComponent.PopulateInstanceAssociations");
 
-	UStaticMeshAudioEmittersComponent_PopulateInstanceAssociations_Params params;
+	UStaticMeshAudioEmittersComponent_PopulateInstanceAssociations_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

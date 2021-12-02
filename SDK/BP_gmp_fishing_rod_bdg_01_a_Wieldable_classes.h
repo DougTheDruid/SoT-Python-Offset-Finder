@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_gmp_fishing_rod_bdg_01_a_Wieldable.BP_gmp_fishing_rod_bdg_01_a_Wieldable_C
-// 0x0000 (FullSize[0x0B80] - InheritedSize[0x0B80])
+// 0x0000 (FullSize[0x0BA0] - InheritedSize[0x0BA0])
 class ABP_gmp_fishing_rod_bdg_01_a_Wieldable_C : public ABP_FishingRod_C
 {
 public:

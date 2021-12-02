@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -449,14 +449,14 @@ void UMovieSceneFolder::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01E36910
+//		Offset -> 0x01E6CFF0
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.Stop
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::Stop()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.Stop");
 
-	UMovieSceneSequencePlayer_Stop_Params params;
+	UMovieSceneSequencePlayer_Stop_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -468,14 +468,14 @@ void UMovieSceneSequencePlayer::Stop()
 
 
 // Function:
-//		Offset -> 0x01E368F0
+//		Offset -> 0x01E6CFD0
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::StartPlayingNextTick()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick");
 
-	UMovieSceneSequencePlayer_StartPlayingNextTick_Params params;
+	UMovieSceneSequencePlayer_StartPlayingNextTick_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -487,7 +487,7 @@ void UMovieSceneSequencePlayer::StartPlayingNextTick()
 
 
 // Function:
-//		Offset -> 0x01E36730
+//		Offset -> 0x01E6CE10
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlayRate
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -496,7 +496,7 @@ void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetPlayRate");
 
-	UMovieSceneSequencePlayer_SetPlayRate_Params params;
+	UMovieSceneSequencePlayer_SetPlayRate_Params params {};
 	params.PlayRate = PlayRate;
 
 	auto flags = fn->FunctionFlags;
@@ -509,7 +509,7 @@ void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 
 
 // Function:
-//		Offset -> 0x01E36830
+//		Offset -> 0x01E6CF10
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -519,7 +519,7 @@ void UMovieSceneSequencePlayer::SetPlaybackRange(float NewStartTime, float NewEn
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange");
 
-	UMovieSceneSequencePlayer_SetPlaybackRange_Params params;
+	UMovieSceneSequencePlayer_SetPlaybackRange_Params params {};
 	params.NewStartTime = NewStartTime;
 	params.NewEndTime = NewEndTime;
 
@@ -533,7 +533,7 @@ void UMovieSceneSequencePlayer::SetPlaybackRange(float NewStartTime, float NewEn
 
 
 // Function:
-//		Offset -> 0x01E367B0
+//		Offset -> 0x01E6CE90
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -542,7 +542,7 @@ void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition");
 
-	UMovieSceneSequencePlayer_SetPlaybackPosition_Params params;
+	UMovieSceneSequencePlayer_SetPlaybackPosition_Params params {};
 	params.NewPlaybackPosition = NewPlaybackPosition;
 
 	auto flags = fn->FunctionFlags;
@@ -555,14 +555,17 @@ void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 
 
 // Function:
-//		Offset -> 0x01E36710
-//		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayReverse
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-void UMovieSceneSequencePlayer::PlayReverse()
+//		Offset -> 0x01E6CD50
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetOverridePlaybackSettings
+//		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+//		struct FMovieSceneSequencePlaybackSettings         InSettings                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+void UMovieSceneSequencePlayer::SetOverridePlaybackSettings(const struct FMovieSceneSequencePlaybackSettings& InSettings)
 {
-	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.PlayReverse");
+	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetOverridePlaybackSettings");
 
-	UMovieSceneSequencePlayer_PlayReverse_Params params;
+	UMovieSceneSequencePlayer_SetOverridePlaybackSettings_Params params {};
+	params.InSettings = InSettings;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -574,7 +577,26 @@ void UMovieSceneSequencePlayer::PlayReverse()
 
 
 // Function:
-//		Offset -> 0x01E36690
+//		Offset -> 0x01E6CD30
+//		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayReverse
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+void UMovieSceneSequencePlayer::PlayReverse()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.PlayReverse");
+
+	UMovieSceneSequencePlayer_PlayReverse_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x01E6CCB0
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayLooping
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -583,7 +605,7 @@ void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.PlayLooping");
 
-	UMovieSceneSequencePlayer_PlayLooping_Params params;
+	UMovieSceneSequencePlayer_PlayLooping_Params params {};
 	params.NumLoops = NumLoops;
 
 	auto flags = fn->FunctionFlags;
@@ -596,14 +618,14 @@ void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
 
 
 // Function:
-//		Offset -> 0x01E36670
+//		Offset -> 0x01E6CC90
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.Play
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::Play()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.Play");
 
-	UMovieSceneSequencePlayer_Play_Params params;
+	UMovieSceneSequencePlayer_Play_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -615,14 +637,14 @@ void UMovieSceneSequencePlayer::Play()
 
 
 // Function:
-//		Offset -> 0x01E36650
+//		Offset -> 0x01E6CC70
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.Pause
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::Pause()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.Pause");
 
-	UMovieSceneSequencePlayer_Pause_Params params;
+	UMovieSceneSequencePlayer_Pause_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -634,7 +656,7 @@ void UMovieSceneSequencePlayer::Pause()
 
 
 // Function:
-//		Offset -> 0x01E36620
+//		Offset -> 0x01E6CC40
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.IsPlaying
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -643,7 +665,7 @@ bool UMovieSceneSequencePlayer::IsPlaying()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.IsPlaying");
 
-	UMovieSceneSequencePlayer_IsPlaying_Params params;
+	UMovieSceneSequencePlayer_IsPlaying_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -657,7 +679,7 @@ bool UMovieSceneSequencePlayer::IsPlaying()
 
 
 // Function:
-//		Offset -> 0x01E36580
+//		Offset -> 0x01E6CBA0
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlayRate
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -666,7 +688,7 @@ float UMovieSceneSequencePlayer::GetPlayRate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlayRate");
 
-	UMovieSceneSequencePlayer_GetPlayRate_Params params;
+	UMovieSceneSequencePlayer_GetPlayRate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -680,7 +702,7 @@ float UMovieSceneSequencePlayer::GetPlayRate()
 
 
 // Function:
-//		Offset -> 0x01E36600
+//		Offset -> 0x01E6CC20
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -689,7 +711,7 @@ float UMovieSceneSequencePlayer::GetPlaybackStart()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart");
 
-	UMovieSceneSequencePlayer_GetPlaybackStart_Params params;
+	UMovieSceneSequencePlayer_GetPlaybackStart_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -703,7 +725,7 @@ float UMovieSceneSequencePlayer::GetPlaybackStart()
 
 
 // Function:
-//		Offset -> 0x01E365D0
+//		Offset -> 0x01E6CBF0
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -712,7 +734,7 @@ float UMovieSceneSequencePlayer::GetPlaybackPosition()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition");
 
-	UMovieSceneSequencePlayer_GetPlaybackPosition_Params params;
+	UMovieSceneSequencePlayer_GetPlaybackPosition_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -726,7 +748,7 @@ float UMovieSceneSequencePlayer::GetPlaybackPosition()
 
 
 // Function:
-//		Offset -> 0x01E365B0
+//		Offset -> 0x01E6CBD0
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -735,7 +757,7 @@ float UMovieSceneSequencePlayer::GetPlaybackEnd()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd");
 
-	UMovieSceneSequencePlayer_GetPlaybackEnd_Params params;
+	UMovieSceneSequencePlayer_GetPlaybackEnd_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -749,7 +771,7 @@ float UMovieSceneSequencePlayer::GetPlaybackEnd()
 
 
 // Function:
-//		Offset -> 0x01E36550
+//		Offset -> 0x01E6CB70
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetLength
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -758,7 +780,7 @@ float UMovieSceneSequencePlayer::GetLength()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetLength");
 
-	UMovieSceneSequencePlayer_GetLength_Params params;
+	UMovieSceneSequencePlayer_GetLength_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -772,14 +794,14 @@ float UMovieSceneSequencePlayer::GetLength()
 
 
 // Function:
-//		Offset -> 0x01E36530
+//		Offset -> 0x01E6CB50
 //		Name   -> Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void UMovieSceneSequencePlayer::ChangePlaybackDirection()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection");
 
-	UMovieSceneSequencePlayer_ChangePlaybackDirection_Params params;
+	UMovieSceneSequencePlayer_ChangePlaybackDirection_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

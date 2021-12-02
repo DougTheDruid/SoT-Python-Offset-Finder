@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -131,7 +131,7 @@ void FTestStringMapSerializationObject::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x02178B00
+//		Offset -> 0x021AF380
 //		Name   -> Function JsonUtilities.JsonUtilitiesBlueprintHelperLibrary.UStructToJsonObjectString
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -142,7 +142,7 @@ bool UJsonUtilitiesBlueprintHelperLibrary::STATIC_UStructToJsonObjectString(cons
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function JsonUtilities.JsonUtilitiesBlueprintHelperLibrary.UStructToJsonObjectString");
 
-	UJsonUtilitiesBlueprintHelperLibrary_UStructToJsonObjectString_Params params;
+	UJsonUtilitiesBlueprintHelperLibrary_UStructToJsonObjectString_Params params {};
 	params.Struct = Struct;
 
 	auto flags = fn->FunctionFlags;
@@ -160,7 +160,7 @@ bool UJsonUtilitiesBlueprintHelperLibrary::STATIC_UStructToJsonObjectString(cons
 
 
 // Function:
-//		Offset -> 0x021789B0
+//		Offset -> 0x021AF230
 //		Name   -> Function JsonUtilities.JsonUtilitiesBlueprintHelperLibrary.JsonObjectStringToUStruct
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -171,7 +171,7 @@ bool UJsonUtilitiesBlueprintHelperLibrary::STATIC_JsonObjectStringToUStruct(cons
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function JsonUtilities.JsonUtilitiesBlueprintHelperLibrary.JsonObjectStringToUStruct");
 
-	UJsonUtilitiesBlueprintHelperLibrary_JsonObjectStringToUStruct_Params params;
+	UJsonUtilitiesBlueprintHelperLibrary_JsonObjectStringToUStruct_Params params {};
 	params.InJsonString = InJsonString;
 	params.Struct = Struct;
 

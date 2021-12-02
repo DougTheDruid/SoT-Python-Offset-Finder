@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_msc_concertina_wth_01_a_v01_Wieldable.BP_msc_concertina_wth_01_a_v01_Wieldable_C
-// 0x0000 (FullSize[0x0850] - InheritedSize[0x0850])
+// 0x0000 (FullSize[0x0870] - InheritedSize[0x0870])
 class ABP_msc_concertina_wth_01_a_v01_Wieldable_C : public ABP_Concertina_C
 {
 public:

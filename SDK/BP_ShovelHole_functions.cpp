@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ShovelHole.BP_ShovelHole_C.SetFadeInParameters
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -28,7 +28,7 @@ void ABP_ShovelHole_C::SetFadeInParameters(float FadeTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ShovelHole.BP_ShovelHole_C.SetFadeInParameters");
 
-	ABP_ShovelHole_C_SetFadeInParameters_Params params;
+	ABP_ShovelHole_C_SetFadeInParameters_Params params {};
 	params.FadeTime = FadeTime;
 
 	auto flags = fn->FunctionFlags;
@@ -40,7 +40,7 @@ void ABP_ShovelHole_C::SetFadeInParameters(float FadeTime)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ShovelHole.BP_ShovelHole_C.SetFadeOutParameters
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -49,7 +49,7 @@ void ABP_ShovelHole_C::SetFadeOutParameters(float FadeTime)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ShovelHole.BP_ShovelHole_C.SetFadeOutParameters");
 
-	ABP_ShovelHole_C_SetFadeOutParameters_Params params;
+	ABP_ShovelHole_C_SetFadeOutParameters_Params params {};
 	params.FadeTime = FadeTime;
 
 	auto flags = fn->FunctionFlags;
@@ -61,7 +61,7 @@ void ABP_ShovelHole_C::SetFadeOutParameters(float FadeTime)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ShovelHole.BP_ShovelHole_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -69,7 +69,7 @@ void ABP_ShovelHole_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ShovelHole.BP_ShovelHole_C.UserConstructionScript");
 
-	ABP_ShovelHole_C_UserConstructionScript_Params params;
+	ABP_ShovelHole_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -80,7 +80,7 @@ void ABP_ShovelHole_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ShovelHole.BP_ShovelHole_C.OnStateChanged
 //		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -89,7 +89,7 @@ void ABP_ShovelHole_C::OnStateChanged(TEnumAsByte<Athena_EHoleState> InState)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ShovelHole.BP_ShovelHole_C.OnStateChanged");
 
-	ABP_ShovelHole_C_OnStateChanged_Params params;
+	ABP_ShovelHole_C_OnStateChanged_Params params {};
 	params.InState = InState;
 
 	auto flags = fn->FunctionFlags;
@@ -101,14 +101,14 @@ void ABP_ShovelHole_C::OnStateChanged(TEnumAsByte<Athena_EHoleState> InState)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ShovelHole.BP_ShovelHole_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_ShovelHole_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ShovelHole.BP_ShovelHole_C.ReceiveBeginPlay");
 
-	ABP_ShovelHole_C_ReceiveBeginPlay_Params params;
+	ABP_ShovelHole_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -119,7 +119,7 @@ void ABP_ShovelHole_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ShovelHole.BP_ShovelHole_C.ExecuteUbergraph_BP_ShovelHole
 //		Flags  -> ()
 // Parameters:
@@ -128,7 +128,7 @@ void ABP_ShovelHole_C::ExecuteUbergraph_BP_ShovelHole(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ShovelHole.BP_ShovelHole_C.ExecuteUbergraph_BP_ShovelHole");
 
-	ABP_ShovelHole_C_ExecuteUbergraph_BP_ShovelHole_Params params;
+	ABP_ShovelHole_C_ExecuteUbergraph_BP_ShovelHole_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

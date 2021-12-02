@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Tankard.BP_Tankard_C
-// 0x0000 (FullSize[0x0820] - InheritedSize[0x0820])
+// 0x0000 (FullSize[0x0840] - InheritedSize[0x0840])
 class ABP_Tankard_C : public ATankard
 {
 public:

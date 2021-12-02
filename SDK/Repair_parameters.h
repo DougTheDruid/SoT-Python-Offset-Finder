@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -22,6 +22,13 @@ namespace CG
 // Function Repair.RepairableInterface.HandleDestroy
 struct URepairableInterface_HandleDestroy_Params
 {
+};
+
+// Function Repair.RepairableInterface.GetUndoRepairTime
+struct URepairableInterface_GetUndoRepairTime_Params
+{
+	class AActor*                                      Interactor;                                                // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                              ReturnValue;                                               // 0x0008(0x0004)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Repair.RepairableInterface.GetRepairType

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -119,16 +119,14 @@ public:
 };
 
 // Class SeasonProgressionUI.SeasonProgressionUIComponent
-// 0x0100 (FullSize[0x01C8] - InheritedSize[0x00C8])
+// 0x00E8 (FullSize[0x01B0] - InheritedSize[0x00C8])
 class USeasonProgressionUIComponent : public UActorComponent
 {
 public:
-	unsigned char                                      UnknownData_DTFW[0x10];                                    // 0x00C8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class USeasonProgressionUIInputBinder*             InputBinder;                                               // 0x00D8(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USeasonProgressionUICompositeInputHandler*   InputHandler;                                              // 0x00E0(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_M997[0x20];                                    // 0x00C8(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FEnableMoreButtonEvent>              DetailsNavigationDesc;                                     // 0x00E8(0x0010) (ZeroConstructor)
 	struct FSeasonProgressionUITelemetryFragment       NextReceivedEventsTelemetryData;                           // 0x00F8(0x0018)
-	unsigned char                                      UnknownData_79OO[0xB8];                                    // 0x0110(0x00B8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IE1S[0xA0];                                    // 0x0110(0x00A0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -140,48 +138,6 @@ public:
 
 
 	void OnHUDDestroyed();
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// Class SeasonProgressionUI.SeasonProgressionUICompositeInputHandler
-// 0x0020 (FullSize[0x00F8] - InheritedSize[0x00D8])
-class USeasonProgressionUICompositeInputHandler : public UCompositeInputHandler
-{
-public:
-	unsigned char                                      UnknownData_8OGX[0x20];                                    // 0x00D8(0x0020) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = UObject::FindClass("Class SeasonProgressionUI.SeasonProgressionUICompositeInputHandler");
-		return ptr;
-	}
-
-
-
-	TEnumAsByte<AthenaInput_EInputHandlerResult> OnMenuButtonPressed();
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// Class SeasonProgressionUI.SeasonProgressionUIInputBinder
-// 0x0000 (FullSize[0x0088] - InheritedSize[0x0088])
-class USeasonProgressionUIInputBinder : public UInputBinder
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = UObject::FindClass("Class SeasonProgressionUI.SeasonProgressionUIInputBinder");
-		return ptr;
-	}
-
-
-
 	void AfterRead();
 	void BeforeDelete();
 
@@ -212,9 +168,9 @@ public:
 class ASeasonProgressionUIService : public AActor
 {
 public:
-	unsigned char                                      UnknownData_SWN8[0x30];                                    // 0x03D0(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_BWS7[0x30];                                    // 0x03D0(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class USeasonPopupListAsset*                       SeasonPopupListAsset;                                      // 0x0400(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_981O[0x188];                                   // 0x0408(0x0188) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KHNJ[0x188];                                   // 0x0408(0x0188) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

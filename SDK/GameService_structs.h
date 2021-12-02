@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -23,7 +23,7 @@ namespace CG
 // 0x0070
 struct FGameServiceMap
 {
-	unsigned char                                      UnknownData_TPYC[0x70];                                    // 0x0000(0x0070) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FVZA[0x70];                                    // 0x0000(0x0070) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -35,7 +35,7 @@ struct FGameServiceMap
 struct FGameServiceCoordinatorUnit
 {
 	class UObject*                                     Service;                                                   // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_LYSP[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IV4O[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -43,10 +43,11 @@ struct FGameServiceCoordinatorUnit
 };
 
 // ScriptStruct GameService.GameServiceCoordinator
-// 0x0010
+// 0x0020
 struct FGameServiceCoordinator
 {
 	TArray<struct FGameServiceCoordinatorUnit>         Services;                                                  // 0x0000(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData_671K[0x10];                                    // 0x0010(0x0010) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

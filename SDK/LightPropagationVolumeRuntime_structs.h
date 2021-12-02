@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -36,7 +36,7 @@ struct FLightPropagationVolumeSettings
 	unsigned char                                      bOverride_LPVGeometryVolumeBias : 1;                       // 0x0001(0x0001) BIT_FIELD (BlueprintVisible, NoDestructor)
 	unsigned char                                      bOverride_LPVVplInjectionBias : 1;                         // 0x0001(0x0001) BIT_FIELD (BlueprintVisible, NoDestructor)
 	unsigned char                                      bOverride_LPVEmissiveInjectionIntensity : 1;               // 0x0001(0x0001) BIT_FIELD (BlueprintVisible, NoDestructor)
-	unsigned char                                      UnknownData_1HMU[0x2];                                     // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7V3U[0x2];                                     // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              LPVIntensity;                                              // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	float                                              LPVVplInjectionBias;                                       // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	float                                              LPVSize;                                                   // 0x000C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,7 +50,7 @@ struct FLightPropagationVolumeSettings
 	float                                              LPVSpecularOcclusionExponent;                              // 0x002C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	float                                              LPVDiffuseOcclusionIntensity;                              // 0x0030(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	float                                              LPVSpecularOcclusionIntensity;                             // 0x0034(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_Q7S2[0x8];                                     // 0x0038(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_TGG4[0x8];                                     // 0x0038(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FTransform                                  LPVWorldRef;                                               // 0x0040(0x0030) (Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 
 	void AfterRead();

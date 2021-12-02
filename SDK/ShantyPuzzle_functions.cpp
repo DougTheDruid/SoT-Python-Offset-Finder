@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -95,7 +95,7 @@ void UShantyPuzzleInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A3D700
+//		Offset -> 0x0392CBA0
 //		Name   -> Function ShantyPuzzle.ShantyPuzzleComponent.OnEndOverlap
 //		Flags  -> (Final, Native, Public)
 // Parameters:
@@ -106,7 +106,7 @@ void UShantyPuzzleComponent::OnEndOverlap(class AActor* InActor, class UPrimitiv
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShantyPuzzle.ShantyPuzzleComponent.OnEndOverlap");
 
-	UShantyPuzzleComponent_OnEndOverlap_Params params;
+	UShantyPuzzleComponent_OnEndOverlap_Params params {};
 	params.InActor = InActor;
 	params.InComponent = InComponent;
 	params.InOtherBodyIndex = InOtherBodyIndex;
@@ -121,7 +121,7 @@ void UShantyPuzzleComponent::OnEndOverlap(class AActor* InActor, class UPrimitiv
 
 
 // Function:
-//		Offset -> 0x03A3D530
+//		Offset -> 0x0392C9D0
 //		Name   -> Function ShantyPuzzle.ShantyPuzzleComponent.OnBeginOverlap
 //		Flags  -> (Final, Native, Public, HasOutParms)
 // Parameters:
@@ -134,7 +134,7 @@ void UShantyPuzzleComponent::OnBeginOverlap(class AActor* InActor, class UPrimit
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShantyPuzzle.ShantyPuzzleComponent.OnBeginOverlap");
 
-	UShantyPuzzleComponent_OnBeginOverlap_Params params;
+	UShantyPuzzleComponent_OnBeginOverlap_Params params {};
 	params.InActor = InActor;
 	params.InComponent = InComponent;
 	params.InOtherBodyIndex = InOtherBodyIndex;

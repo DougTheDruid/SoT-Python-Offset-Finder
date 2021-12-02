@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -23,7 +23,7 @@ namespace CG
 // 0x0001
 struct FSessionServiceLogUnsubscribe
 {
-	unsigned char                                      UnknownData_9RQC[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PZ54[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -34,7 +34,7 @@ struct FSessionServiceLogUnsubscribe
 // 0x0001
 struct FSessionServiceLogSubscribe
 {
-	unsigned char                                      UnknownData_CF2Y[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6P6C[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -50,7 +50,7 @@ struct FSessionServiceLog
 	struct FGuid                                       InstanceId;                                                // 0x0018(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	double                                             TimeSeconds;                                               // 0x0028(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	unsigned char                                      Verbosity;                                                 // 0x0030(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_W0CG[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8XTL[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -66,13 +66,13 @@ struct FSessionServicePong
 	struct FGuid                                       InstanceId;                                                // 0x0020(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FString                                     InstanceName;                                              // 0x0030(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	bool                                               IsConsoleBuild;                                            // 0x0040(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_67TY[0x7];                                     // 0x0041(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ELYX[0x7];                                     // 0x0041(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     PlatformName;                                              // 0x0048(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FGuid                                       SessionId;                                                 // 0x0058(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FString                                     SessionName;                                               // 0x0068(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     SessionOwner;                                              // 0x0078(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	bool                                               Standalone;                                                // 0x0088(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_W796[0x7];                                     // 0x0089(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_77LO[0x7];                                     // 0x0089(0x0007) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -83,7 +83,7 @@ struct FSessionServicePong
 // 0x0001
 struct FSessionServicePing
 {
-	unsigned char                                      UnknownData_LVHY[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_G25D[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

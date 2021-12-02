@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -195,14 +195,14 @@ void UClueDestinationContainerInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x013476F0
+//		Offset -> 0x01370280
 //		Name   -> Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentTitleText
 //		Flags  -> (Final, Native, Private)
 void UAbandonedNoteClueDestinationContainerComponent::OnRep_CurrentTitleText()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentTitleText");
 
-	UAbandonedNoteClueDestinationContainerComponent_OnRep_CurrentTitleText_Params params;
+	UAbandonedNoteClueDestinationContainerComponent_OnRep_CurrentTitleText_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -214,14 +214,14 @@ void UAbandonedNoteClueDestinationContainerComponent::OnRep_CurrentTitleText()
 
 
 // Function:
-//		Offset -> 0x013476D0
+//		Offset -> 0x01370260
 //		Name   -> Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentClueDestination
 //		Flags  -> (Final, Native, Private)
 void UAbandonedNoteClueDestinationContainerComponent::OnRep_CurrentClueDestination()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.AbandonedNoteClueDestinationContainerComponent.OnRep_CurrentClueDestination");
 
-	UAbandonedNoteClueDestinationContainerComponent_OnRep_CurrentClueDestination_Params params;
+	UAbandonedNoteClueDestinationContainerComponent_OnRep_CurrentClueDestination_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -437,14 +437,14 @@ void UCircleMapClueDestinationContainerComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01347730
+//		Offset -> 0x013702C0
 //		Name   -> Function LostShipmentsClueVariants.ClueSiteCircleMapWieldable.OnRep_MapRadialIconData
 //		Flags  -> (Final, Native, Private)
 void AClueSiteCircleMapWieldable::OnRep_MapRadialIconData()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.ClueSiteCircleMapWieldable.OnRep_MapRadialIconData");
 
-	AClueSiteCircleMapWieldable_OnRep_MapRadialIconData_Params params;
+	AClueSiteCircleMapWieldable_OnRep_MapRadialIconData_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -468,7 +468,7 @@ void AClueSiteCircleMapWieldable::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01347620
+//		Offset -> 0x013701B0
 //		Name   -> Function LostShipmentsClueVariants.ClueVariantsBlueprintFunctionLibrary.GiveClueDescriptorToItem
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -478,7 +478,7 @@ void UClueVariantsBlueprintFunctionLibrary::STATIC_GiveClueDescriptorToItem(clas
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.ClueVariantsBlueprintFunctionLibrary.GiveClueDescriptorToItem");
 
-	UClueVariantsBlueprintFunctionLibrary_GiveClueDescriptorToItem_Params params;
+	UClueVariantsBlueprintFunctionLibrary_GiveClueDescriptorToItem_Params params {};
 	params.ItemInfo = ItemInfo;
 	params.Clue = Clue;
 
@@ -504,14 +504,14 @@ void UClueVariantsBlueprintFunctionLibrary::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01347710
+//		Offset -> 0x013702A0
 //		Name   -> Function LostShipmentsClueVariants.CompositeClueDestinationDescriptor.OnRep_DestinationInfo
 //		Flags  -> (Native, Public)
 void UCompositeClueDestinationDescriptor::OnRep_DestinationInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.CompositeClueDestinationDescriptor.OnRep_DestinationInfo");
 
-	UCompositeClueDestinationDescriptor_OnRep_DestinationInfo_Params params;
+	UCompositeClueDestinationDescriptor_OnRep_DestinationInfo_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -611,7 +611,7 @@ void UFloatingMessageInABottleSeaClueCreator::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x013475C0
+//		Offset -> 0x01370150
 //		Name   -> Function LostShipmentsClueVariants.GooseChaseClueBlueprintFunctionLibrary.CreateEndOfGooseChaseClue
 //		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -620,7 +620,7 @@ class UClueDescriptor* UGooseChaseClueBlueprintFunctionLibrary::STATIC_CreateEnd
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.GooseChaseClueBlueprintFunctionLibrary.CreateEndOfGooseChaseClue");
 
-	UGooseChaseClueBlueprintFunctionLibrary_CreateEndOfGooseChaseClue_Params params;
+	UGooseChaseClueBlueprintFunctionLibrary_CreateEndOfGooseChaseClue_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -642,30 +642,6 @@ void UGooseChaseClueBlueprintFunctionLibrary::AfterRead()
 void UGooseChaseClueBlueprintFunctionLibrary::BeforeDelete()
 {
 	UBlueprintFunctionLibrary::BeforeDelete();
-
-}
-
-void UInteractableGrammaticalGenderInterface::AfterRead()
-{
-	UInterface::AfterRead();
-
-}
-
-void UInteractableGrammaticalGenderInterface::BeforeDelete()
-{
-	UInterface::BeforeDelete();
-
-}
-
-void UInteractableGrammaticalGenderComponent::AfterRead()
-{
-	UActorComponent::AfterRead();
-
-}
-
-void UInteractableGrammaticalGenderComponent::BeforeDelete()
-{
-	UActorComponent::BeforeDelete();
 
 }
 
@@ -844,7 +820,7 @@ void USeaLocationByGridSquareClueDestinationDescriptor::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x013473C0
+//		Offset -> 0x0136FF50
 //		Name   -> Function LostShipmentsClueVariants.ShipwreckClueBlueprintFunctionLibrary.CreateCluePointingToShipwreck
 //		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -859,7 +835,7 @@ class UClueDescriptor* UShipwreckClueBlueprintFunctionLibrary::STATIC_CreateClue
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.ShipwreckClueBlueprintFunctionLibrary.CreateCluePointingToShipwreck");
 
-	UShipwreckClueBlueprintFunctionLibrary_CreateCluePointingToShipwreck_Params params;
+	UShipwreckClueBlueprintFunctionLibrary_CreateCluePointingToShipwreck_Params params {};
 	params.ConnectionConfiguration = ConnectionConfiguration;
 	params.Difficulty = Difficulty;
 	params.AllowedClueTypes = AllowedClueTypes;
@@ -927,7 +903,7 @@ void UShipwreckClueSiteType::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x01347750
+//		Offset -> 0x013702E0
 //		Name   -> Function LostShipmentsClueVariants.TaleQuestClueInventoryService.SetClueTitleText
 //		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -936,7 +912,7 @@ void UTaleQuestClueInventoryService::SetClueTitleText(const struct FText& InTitl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.TaleQuestClueInventoryService.SetClueTitleText");
 
-	UTaleQuestClueInventoryService_SetClueTitleText_Params params;
+	UTaleQuestClueInventoryService_SetClueTitleText_Params params {};
 	params.InTitleText = InTitleText;
 
 	auto flags = fn->FunctionFlags;
@@ -949,7 +925,7 @@ void UTaleQuestClueInventoryService::SetClueTitleText(const struct FText& InTitl
 
 
 // Function:
-//		Offset -> 0x013475F0
+//		Offset -> 0x01370180
 //		Name   -> Function LostShipmentsClueVariants.TaleQuestClueInventoryService.GetCollectedClueCount
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -958,7 +934,7 @@ int UTaleQuestClueInventoryService::GetCollectedClueCount()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LostShipmentsClueVariants.TaleQuestClueInventoryService.GetCollectedClueCount");
 
-	UTaleQuestClueInventoryService_GetCollectedClueCount_Params params;
+	UTaleQuestClueInventoryService_GetCollectedClueCount_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1248,6 +1224,18 @@ void UWashedUpSkeletonLandClueCreator::AfterRead()
 void UWashedUpSkeletonLandClueCreator::BeforeDelete()
 {
 	ULandClueCreator::BeforeDelete();
+
+}
+
+void UInteractableGrammaticalGenderComponent::AfterRead()
+{
+	UActorComponent::AfterRead();
+
+}
+
+void UInteractableGrammaticalGenderComponent::BeforeDelete()
+{
+	UActorComponent::BeforeDelete();
 
 }
 

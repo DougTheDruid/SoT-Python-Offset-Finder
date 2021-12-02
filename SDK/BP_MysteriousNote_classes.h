@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_MysteriousNote.BP_MysteriousNote_C
-// 0x0000 (FullSize[0x0920] - InheritedSize[0x0920])
+// 0x0000 (FullSize[0x0940] - InheritedSize[0x0940])
 class ABP_MysteriousNote_C : public AWieldableMysteriousNote
 {
 public:

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -46,6 +46,12 @@ struct UMovieSceneSequencePlayer_SetPlaybackRange_Params
 struct UMovieSceneSequencePlayer_SetPlaybackPosition_Params
 {
 	float                                              NewPlaybackPosition;                                       // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function MovieScene.MovieSceneSequencePlayer.SetOverridePlaybackSettings
+struct UMovieSceneSequencePlayer_SetOverridePlaybackSettings_Params
+{
+	struct FMovieSceneSequencePlaybackSettings         InSettings;                                                // 0x0000(0x0028)  (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function MovieScene.MovieSceneSequencePlayer.PlayReverse

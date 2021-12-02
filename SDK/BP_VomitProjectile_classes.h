@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_VomitProjectile.BP_VomitProjectile_C
-// 0x0000 (FullSize[0x0718] - InheritedSize[0x0718])
+// 0x0000 (FullSize[0x0730] - InheritedSize[0x0730])
 class ABP_VomitProjectile_C : public AVomitProjectile
 {
 public:

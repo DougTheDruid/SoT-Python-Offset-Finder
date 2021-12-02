@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -66,12 +66,12 @@ public:
 class UReviveGhostAnimationInstance : public UAnimInstance
 {
 public:
-	unsigned char                                      UnknownData_LBXZ[0x8];                                     // 0x0440(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PAAG[0x8];                                     // 0x0440(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FReviveGhostAnimations                      ReviveAnimations;                                          // 0x0448(0x0028) (BlueprintVisible, BlueprintReadOnly)
 	bool                                               FullyInitialised;                                          // 0x0470(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor)
 	bool                                               FullyRevived;                                              // 0x0471(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor)
 	bool                                               FromSwimming;                                              // 0x0472(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_WOFK[0x1D];                                    // 0x0473(0x001D) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IAQQ[0x1D];                                    // 0x0473(0x001D) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

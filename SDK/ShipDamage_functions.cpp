@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -93,7 +93,7 @@ void FAppliedDamageToShipEvent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x0399CF90
+//		Offset -> 0x04019370
 //		Name   -> Function ShipDamage.DamageablePartsInterface.UnregisterDamageablePart
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -102,7 +102,7 @@ void UDamageablePartsInterface::UnregisterDamageablePart(class AActor* Damageabl
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShipDamage.DamageablePartsInterface.UnregisterDamageablePart");
 
-	UDamageablePartsInterface_UnregisterDamageablePart_Params params;
+	UDamageablePartsInterface_UnregisterDamageablePart_Params params {};
 	params.DamageableActor = DamageableActor;
 
 	auto flags = fn->FunctionFlags;
@@ -115,7 +115,7 @@ void UDamageablePartsInterface::UnregisterDamageablePart(class AActor* Damageabl
 
 
 // Function:
-//		Offset -> 0x0399CF00
+//		Offset -> 0x04019260
 //		Name   -> Function ShipDamage.DamageablePartsInterface.RegisterDamageablePart
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -124,7 +124,7 @@ void UDamageablePartsInterface::RegisterDamageablePart(class AActor* DamageableA
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShipDamage.DamageablePartsInterface.RegisterDamageablePart");
 
-	UDamageablePartsInterface_RegisterDamageablePart_Params params;
+	UDamageablePartsInterface_RegisterDamageablePart_Params params {};
 	params.DamageableActor = DamageableActor;
 
 	auto flags = fn->FunctionFlags;
@@ -137,7 +137,7 @@ void UDamageablePartsInterface::RegisterDamageablePart(class AActor* DamageableA
 
 
 // Function:
-//		Offset -> 0x0399CE60
+//		Offset -> 0x040191C0
 //		Name   -> Function ShipDamage.DamageablePartsInterface.GetDamageableParts
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -146,7 +146,7 @@ TArray<class AActor*> UDamageablePartsInterface::GetDamageableParts()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function ShipDamage.DamageablePartsInterface.GetDamageableParts");
 
-	UDamageablePartsInterface_GetDamageableParts_Params params;
+	UDamageablePartsInterface_GetDamageableParts_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

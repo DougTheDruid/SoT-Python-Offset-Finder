@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_WheelInterface.BP_WheelInterface_C.Receive Animation State
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -32,7 +32,7 @@ void UBP_WheelInterface_C::Receive_Animation_State(const struct FRotator& WheelR
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_WheelInterface.BP_WheelInterface_C.Receive Animation State");
 
-	UBP_WheelInterface_C_Receive_Animation_State_Params params;
+	UBP_WheelInterface_C_Receive_Animation_State_Params params {};
 	params.WheelRotation = WheelRotation;
 	params.WheelAnimationTime = WheelAnimationTime;
 	params.EWheel = EWheel;

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass AD_FirstPerson_PlayerPirate_Male_Thin.AD_FirstPerson_PlayerPirate_Male_Thin_C
-// 0x0000 (FullSize[0x0458] - InheritedSize[0x0458])
+// 0x0000 (FullSize[0x0488] - InheritedSize[0x0488])
 class UAD_FirstPerson_PlayerPirate_Male_Thin_C : public UAD_FirstPerson_PlayerPirate_Male_Default_C
 {
 public:

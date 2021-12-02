@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -36,7 +36,7 @@ enum class JsonUtilities_EJsonTestEnum : uint8_t
 // 0x0018
 struct FJsonObjectWrapper
 {
-	unsigned char                                      UnknownData_JMV5[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SU22[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -48,9 +48,9 @@ struct FJsonObjectWrapper
 struct FTestTextObject
 {
 	struct FText                                       TestText;                                                  // 0x0000(0x0018) ELEMENT_SIZE_MISMATCH
-	unsigned char                                      UnknownData_6DTP[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_N2B1[0x20];                                    // 0x0000(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	struct FText                                       TestTextExport;                                            // 0x0038(0x0018) ELEMENT_SIZE_MISMATCH
-	unsigned char                                      UnknownData_FM3B[0x20];                                    // 0x0038(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_ZNZZ[0x20];                                    // 0x0038(0x0020) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 
 	void AfterRead();
 	void BeforeDelete();
@@ -107,7 +107,7 @@ struct FTestMessageDateTime
 struct FTestSerializationObject
 {
 	bool                                               TestBool;                                                  // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_X1GO[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_XRSO[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	int                                                TestInt;                                                   // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FString                                     TestString;                                                // 0x0008(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FGuid                                       TestGuid;                                                  // 0x0018(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)

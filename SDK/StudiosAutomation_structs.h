@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -80,6 +80,16 @@ enum class StudiosAutomation_ETestCategory : uint8_t
 
 };
 
+// Enum StudiosAutomation.ETextureAuditorMipSetting
+enum class StudiosAutomation_ETextureAuditorMipSetting : uint8_t
+{
+	ETextureAuditorMipSetting__MipGenRequired = 0,
+	ETextureAuditorMipSetting__NoMipGenRequired = 1,
+	ETextureAuditorMipSetting__MipGenOptional = 2,
+	ETextureAuditorMipSetting__ETextureAuditorMipSetting_MAX = 3,
+
+};
+
 // Enum StudiosAutomation.ECollectionAuditType
 enum class StudiosAutomation_ECollectionAuditType : uint8_t
 {
@@ -122,6 +132,34 @@ struct FClientPawnDetails
 
 };
 
+// ScriptStruct StudiosAutomation.TextureAuditorProperties
+// 0x0020
+struct FTextureAuditorProperties
+{
+	TEnumAsByte<StudiosAutomation_ETextureAuditorMipSetting> RequiredMipsSetting;                                       // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_C6KD[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	TArray<TEnumAsByte<CoreUObject_EPixelFormat>>      AllowedTextureFormats;                                     // 0x0008(0x0010) (Edit, ZeroConstructor)
+	uint32_t                                           MinSizeToValidateFormatX;                                  // 0x0018(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint32_t                                           MinSizeToValidateFormatY;                                  // 0x001C(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct StudiosAutomation.TextureAuditorGroupProperties
+// 0x0028
+struct FTextureAuditorGroupProperties
+{
+	TEnumAsByte<Engine_ETextureGroup>                  TextureGroup;                                              // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	unsigned char                                      UnknownData_DDQ1[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FTextureAuditorProperties                   Properties;                                                // 0x0008(0x0020) (Edit)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
 // ScriptStruct StudiosAutomation.SubstringAuditQueryData
 // 0x0018
 struct FSubstringAuditQueryData
@@ -140,7 +178,7 @@ struct FSubstringAuditQueryData
 struct FFolderTotals
 {
 	bool                                               EnforceCollectionMembership;                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_HJKU[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_Y47E[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FName>                               CollectionsAllowedForFolder;                               // 0x0008(0x0010) (ZeroConstructor)
 	TArray<struct FName>                               AssetTypesToTest;                                          // 0x0018(0x0010) (ZeroConstructor)
 
@@ -167,7 +205,7 @@ struct FAssetAuditConstantEntry
 {
 	struct FString                                     Name;                                                      // 0x0000(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	int                                                Value;                                                     // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_4JJI[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_DYU1[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -249,14 +287,14 @@ struct FCollectionLimits
 	struct FName                                       CollectionName;                                            // 0x0000(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TEnumAsByte<StudiosAutomation_ECollectionAuditType> AuditType;                                                 // 0x0008(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               IsOnlyParentCollection;                                    // 0x0009(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_1A1A[0x2];                                     // 0x000A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_52JE[0x2];                                     // 0x000A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FCollectionTotalsLimits                     CollectionTotals;                                          // 0x000C(0x0010) (Edit)
 	struct FCollectionStaticMeshLimits                 StaticMeshLimits;                                          // 0x001C(0x0008) (Edit)
 	struct FCollectionSkeleMeshLimits                  SkeleMeshLimits;                                           // 0x0024(0x0008) (Edit)
 	struct FCollectionAnimSequenceLimits               AnimLimits;                                                // 0x002C(0x0004) (Edit)
 	bool                                               CanUseComplexCollisionAsSimple;                            // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                               CanUseLOD0Collision;                                       // 0x0031(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_P5IB[0x2];                                     // 0x0032(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3NFR[0x2];                                     // 0x0032(0x0002) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

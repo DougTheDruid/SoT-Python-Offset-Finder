@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function Interface_Bomb.Interface_Bomb_C.Interface Trigger
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UInterface_Bomb_C::Interface_Trigger()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interface_Bomb.Interface_Bomb_C.Interface Trigger");
 
-	UInterface_Bomb_C_Interface_Trigger_Params params;
+	UInterface_Bomb_C_Interface_Trigger_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,7 +37,7 @@ void UInterface_Bomb_C::Interface_Trigger()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function Interface_Bomb.Interface_Bomb_C.Set Bomb Parameters
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -47,7 +47,7 @@ void UInterface_Bomb_C::Set_Bomb_Parameters(float Radius, int Seed)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Interface_Bomb.Interface_Bomb_C.Set Bomb Parameters");
 
-	UInterface_Bomb_C_Set_Bomb_Parameters_Params params;
+	UInterface_Bomb_C_Set_Bomb_Parameters_Params params {};
 	params.Radius = Radius;
 	params.Seed = Seed;
 

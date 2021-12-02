@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -25,7 +25,7 @@ struct FSetShouldUseRevivalFlowData
 {
 	int                                                PlayerNetGUID;                                             // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               bShouldUseRevivalFlow;                                     // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_S3T2[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WBC4[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -38,7 +38,7 @@ struct FSetShouldSkipFerryOfTheDamnedData
 {
 	int                                                PlayerNetGUID;                                             // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               bShouldSkipFerryOfTheDamned;                               // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_ORVA[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B06Y[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -72,7 +72,7 @@ struct FSetCustomPlayerStartData
 // 0x0018
 struct FCustomDeathConfiguration
 {
-	unsigned char                                      UnknownData_DFOS[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SDDU[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -107,7 +107,7 @@ struct FForcePlayerRespawnData
 {
 	int                                                PlayerNetGUID;                                             // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                               bRespawnAsGhost;                                           // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_31P2[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8FYB[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -119,19 +119,8 @@ struct FForcePlayerRespawnData
 struct FDestroyCustomPlayerStartData
 {
 	int                                                PlayerStartActorNetID;                                     // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_8L7R[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_X9ZV[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     Tag;                                                       // 0x0008(0x0010) (ZeroConstructor, HasGetValueTypeHash)
-
-	void AfterRead();
-	void BeforeDelete();
-
-};
-
-// ScriptStruct CustomDeath.KillCrewData
-// 0x0010
-struct FKillCrewData
-{
-	struct FGuid                                       CrewNetGUID;                                               // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	void AfterRead();
 	void BeforeDelete();
@@ -143,9 +132,20 @@ struct FKillCrewData
 struct FCustomPlayerStartConfigData
 {
 	struct FVector                                     Location;                                                  // 0x0000(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_CJDP[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_U5ZH[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FQuat                                       Rotation;                                                  // 0x0010(0x0010) (IsPlainOldData, NoDestructor)
 	TArray<struct FString>                             Tags;                                                      // 0x0020(0x0010) (ZeroConstructor)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
+// ScriptStruct CustomDeath.KillCrewData
+// 0x0010
+struct FKillCrewData
+{
+	struct FGuid                                       CrewNetGUID;                                               // 0x0000(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	void AfterRead();
 	void BeforeDelete();

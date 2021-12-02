@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -33,11 +33,22 @@ enum class ExplosionFramework_EExplosionReceiverCurveType : uint8_t
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct ExplosionFramework.EventExplosionIgnitedActor
+// 0x0008
+struct FEventExplosionIgnitedActor
+{
+	class AActor*                                      IgnitedActor;                                              // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+	void AfterRead();
+	void BeforeDelete();
+
+};
+
 // ScriptStruct ExplosionFramework.EventOnExploded
 // 0x000C
 struct FEventOnExploded
 {
-	unsigned char                                      UnknownData_M7QP[0xC];                                     // 0x0000(0x000C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_R2NN[0xC];                                     // 0x0000(0x000C) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

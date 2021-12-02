@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.UnregisterDamageEventFromCurrentShip
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_RepairShipWheel_C::UnregisterDamageEventFromCurrentShip()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.UnregisterDamageEventFromCurrentShip");
 
-	UBP_Prompt_RepairShipWheel_C_UnregisterDamageEventFromCurrentShip_Params params;
+	UBP_Prompt_RepairShipWheel_C_UnregisterDamageEventFromCurrentShip_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void UBP_Prompt_RepairShipWheel_C::UnregisterDamageEventFromCurrentShip()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.RegisterDamageEventWithCurrentShip
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_RepairShipWheel_C::RegisterDamageEventWithCurrentShip()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.RegisterDamageEventWithCurrentShip");
 
-	UBP_Prompt_RepairShipWheel_C_RegisterDamageEventWithCurrentShip_Params params;
+	UBP_Prompt_RepairShipWheel_C_RegisterDamageEventWithCurrentShip_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,14 +55,14 @@ void UBP_Prompt_RepairShipWheel_C::RegisterDamageEventWithCurrentShip()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.Evaluate
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 void UBP_Prompt_RepairShipWheel_C::Evaluate()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.Evaluate");
 
-	UBP_Prompt_RepairShipWheel_C_Evaluate_Params params;
+	UBP_Prompt_RepairShipWheel_C_Evaluate_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -73,7 +73,7 @@ void UBP_Prompt_RepairShipWheel_C::Evaluate()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.RegisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -82,7 +82,7 @@ void UBP_Prompt_RepairShipWheel_C::RegisterCharacterEvents_Implementable(const s
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.RegisterCharacterEvents_Implementable");
 
-	UBP_Prompt_RepairShipWheel_C_RegisterCharacterEvents_Implementable_Params params;
+	UBP_Prompt_RepairShipWheel_C_RegisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -94,7 +94,7 @@ void UBP_Prompt_RepairShipWheel_C::RegisterCharacterEvents_Implementable(const s
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.OnCurrentShipChanged
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -103,7 +103,7 @@ void UBP_Prompt_RepairShipWheel_C::OnCurrentShipChanged(const struct FEventCurre
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.OnCurrentShipChanged");
 
-	UBP_Prompt_RepairShipWheel_C_OnCurrentShipChanged_Params params;
+	UBP_Prompt_RepairShipWheel_C_OnCurrentShipChanged_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -115,7 +115,7 @@ void UBP_Prompt_RepairShipWheel_C::OnCurrentShipChanged(const struct FEventCurre
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.OnShipDamaged
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -124,7 +124,7 @@ void UBP_Prompt_RepairShipWheel_C::OnShipDamaged(const struct FEventWheelDamageL
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.OnShipDamaged");
 
-	UBP_Prompt_RepairShipWheel_C_OnShipDamaged_Params params;
+	UBP_Prompt_RepairShipWheel_C_OnShipDamaged_Params params {};
 	params.Event = Event;
 
 	auto flags = fn->FunctionFlags;
@@ -136,7 +136,7 @@ void UBP_Prompt_RepairShipWheel_C::OnShipDamaged(const struct FEventWheelDamageL
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.UnregisterCharacterEvents_Implementable
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
@@ -145,7 +145,7 @@ void UBP_Prompt_RepairShipWheel_C::UnregisterCharacterEvents_Implementable(const
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.UnregisterCharacterEvents_Implementable");
 
-	UBP_Prompt_RepairShipWheel_C_UnregisterCharacterEvents_Implementable_Params params;
+	UBP_Prompt_RepairShipWheel_C_UnregisterCharacterEvents_Implementable_Params params {};
 	params.CharacterDispatcher = CharacterDispatcher;
 
 	auto flags = fn->FunctionFlags;
@@ -157,7 +157,7 @@ void UBP_Prompt_RepairShipWheel_C::UnregisterCharacterEvents_Implementable(const
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.ExecuteUbergraph_BP_Prompt_RepairShipWheel
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -166,7 +166,7 @@ void UBP_Prompt_RepairShipWheel_C::ExecuteUbergraph_BP_Prompt_RepairShipWheel(in
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Prompt_RepairShipWheel.BP_Prompt_RepairShipWheel_C.ExecuteUbergraph_BP_Prompt_RepairShipWheel");
 
-	UBP_Prompt_RepairShipWheel_C_ExecuteUbergraph_BP_Prompt_RepairShipWheel_Params params;
+	UBP_Prompt_RepairShipWheel_C_ExecuteUbergraph_BP_Prompt_RepairShipWheel_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

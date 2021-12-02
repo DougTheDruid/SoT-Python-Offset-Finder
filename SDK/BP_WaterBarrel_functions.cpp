@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -18,16 +18,36 @@ namespace CG
 // Functions
 //---------------------------------------------------------------------------
 
+// Function:
+//		Offset -> 0x016629C0
+//		Name   -> Function BP_WaterBarrel.BP_WaterBarrel_C.UserConstructionScript
+//		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+void ABP_WaterBarrel_C::UserConstructionScript()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_WaterBarrel.BP_WaterBarrel_C.UserConstructionScript");
+
+	ABP_WaterBarrel_C_UserConstructionScript_Params params {};
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
 void ABP_WaterBarrel_C::AfterRead()
 {
 	AWaterBarrel::AfterRead();
 
+	READ_PTR_FULL(HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent, UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent);
 }
 
 void ABP_WaterBarrel_C::BeforeDelete()
 {
 	AWaterBarrel::BeforeDelete();
 
+	DELE_PTR_FULL(HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent);
 }
 
 }

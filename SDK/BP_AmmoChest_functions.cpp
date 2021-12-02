@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.GetObjectDisplayName
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -28,7 +28,7 @@ struct FText ABP_AmmoChest_C::GetObjectDisplayName()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.GetObjectDisplayName");
 
-	ABP_AmmoChest_C_GetObjectDisplayName_Params params;
+	ABP_AmmoChest_C_GetObjectDisplayName_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,7 +41,7 @@ struct FText ABP_AmmoChest_C::GetObjectDisplayName()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.GetClosestInteractionPoint
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -52,7 +52,7 @@ struct FVector ABP_AmmoChest_C::GetClosestInteractionPoint(const struct FVector&
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.GetClosestInteractionPoint");
 
-	ABP_AmmoChest_C_GetClosestInteractionPoint_Params params;
+	ABP_AmmoChest_C_GetClosestInteractionPoint_Params params {};
 	params.ReferencePosition = ReferencePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -69,14 +69,14 @@ struct FVector ABP_AmmoChest_C::GetClosestInteractionPoint(const struct FVector&
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_AmmoChest_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.UserConstructionScript");
 
-	ABP_AmmoChest_C_UserConstructionScript_Params params;
+	ABP_AmmoChest_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -87,14 +87,14 @@ void ABP_AmmoChest_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_AmmoChest_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.ReceiveBeginPlay");
 
-	ABP_AmmoChest_C_ReceiveBeginPlay_Params params;
+	ABP_AmmoChest_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -105,7 +105,7 @@ void ABP_AmmoChest_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Client
 //		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -114,7 +114,7 @@ void ABP_AmmoChest_C::Blueprint_OnInteract_Client(class AActor* InInteractor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Client");
 
-	ABP_AmmoChest_C_Blueprint_OnInteract_Client_Params params;
+	ABP_AmmoChest_C_Blueprint_OnInteract_Client_Params params {};
 	params.InInteractor = InInteractor;
 
 	auto flags = fn->FunctionFlags;
@@ -126,7 +126,7 @@ void ABP_AmmoChest_C::Blueprint_OnInteract_Client(class AActor* InInteractor)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Server
 //		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -135,7 +135,7 @@ void ABP_AmmoChest_C::Blueprint_OnInteract_Server(class AActor* InInteractor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.Blueprint_OnInteract_Server");
 
-	ABP_AmmoChest_C_Blueprint_OnInteract_Server_Params params;
+	ABP_AmmoChest_C_Blueprint_OnInteract_Server_Params params {};
 	params.InInteractor = InInteractor;
 
 	auto flags = fn->FunctionFlags;
@@ -147,7 +147,7 @@ void ABP_AmmoChest_C::Blueprint_OnInteract_Server(class AActor* InInteractor)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_AmmoChest.BP_AmmoChest_C.ExecuteUbergraph_BP_AmmoChest
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -156,7 +156,7 @@ void ABP_AmmoChest_C::ExecuteUbergraph_BP_AmmoChest(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_AmmoChest.BP_AmmoChest_C.ExecuteUbergraph_BP_AmmoChest");
 
-	ABP_AmmoChest_C_ExecuteUbergraph_BP_AmmoChest_Params params;
+	ABP_AmmoChest_C_ExecuteUbergraph_BP_AmmoChest_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

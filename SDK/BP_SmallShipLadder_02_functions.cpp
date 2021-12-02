@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShipLadder_02.BP_SmallShipLadder_02_C.GetDockableInfo
 //		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -28,7 +28,7 @@ struct FDockableInfo ABP_SmallShipLadder_02_C::GetDockableInfo()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShipLadder_02.BP_SmallShipLadder_02_C.GetDockableInfo");
 
-	ABP_SmallShipLadder_02_C_GetDockableInfo_Params params;
+	ABP_SmallShipLadder_02_C_GetDockableInfo_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -41,7 +41,7 @@ struct FDockableInfo ABP_SmallShipLadder_02_C::GetDockableInfo()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShipLadder_02.BP_SmallShipLadder_02_C.Setup Spline
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -51,7 +51,7 @@ void ABP_SmallShipLadder_02_C::Setup_Spline(class USplineComponent* Spline, TArr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShipLadder_02.BP_SmallShipLadder_02_C.Setup Spline");
 
-	ABP_SmallShipLadder_02_C_Setup_Spline_Params params;
+	ABP_SmallShipLadder_02_C_Setup_Spline_Params params {};
 	params.Spline = Spline;
 
 	auto flags = fn->FunctionFlags;
@@ -66,7 +66,7 @@ void ABP_SmallShipLadder_02_C::Setup_Spline(class USplineComponent* Spline, TArr
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShipLadder_02.BP_SmallShipLadder_02_C.CanInteract
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -76,7 +76,7 @@ bool ABP_SmallShipLadder_02_C::CanInteract(class AActor* InInteractor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShipLadder_02.BP_SmallShipLadder_02_C.CanInteract");
 
-	ABP_SmallShipLadder_02_C_CanInteract_Params params;
+	ABP_SmallShipLadder_02_C_CanInteract_Params params {};
 	params.InInteractor = InInteractor;
 
 	auto flags = fn->FunctionFlags;
@@ -90,14 +90,14 @@ bool ABP_SmallShipLadder_02_C::CanInteract(class AActor* InInteractor)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShipLadder_02.BP_SmallShipLadder_02_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_SmallShipLadder_02_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShipLadder_02.BP_SmallShipLadder_02_C.UserConstructionScript");
 
-	ABP_SmallShipLadder_02_C_UserConstructionScript_Params params;
+	ABP_SmallShipLadder_02_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

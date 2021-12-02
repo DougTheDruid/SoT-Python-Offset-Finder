@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_VotableCancelTale.BP_VotableCancelTale_C.PlayShowTokenAnimation
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -28,7 +28,7 @@ void ABP_VotableCancelTale_C::PlayShowTokenAnimation(class UPrimitiveComponent* 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelTale.BP_VotableCancelTale_C.PlayShowTokenAnimation");
 
-	ABP_VotableCancelTale_C_PlayShowTokenAnimation_Params params;
+	ABP_VotableCancelTale_C_PlayShowTokenAnimation_Params params {};
 	params.Token = Token;
 
 	auto flags = fn->FunctionFlags;
@@ -40,7 +40,7 @@ void ABP_VotableCancelTale_C::PlayShowTokenAnimation(class UPrimitiveComponent* 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_VotableCancelTale.BP_VotableCancelTale_C.Is Session Locked
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -49,7 +49,7 @@ void ABP_VotableCancelTale_C::Is_Session_Locked(bool* IsLocked)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelTale.BP_VotableCancelTale_C.Is Session Locked");
 
-	ABP_VotableCancelTale_C_Is_Session_Locked_Params params;
+	ABP_VotableCancelTale_C_Is_Session_Locked_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -63,7 +63,7 @@ void ABP_VotableCancelTale_C::Is_Session_Locked(bool* IsLocked)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_VotableCancelTale.BP_VotableCancelTale_C.GetObjectDisplayName
 //		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -72,7 +72,7 @@ struct FText ABP_VotableCancelTale_C::GetObjectDisplayName()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelTale.BP_VotableCancelTale_C.GetObjectDisplayName");
 
-	ABP_VotableCancelTale_C_GetObjectDisplayName_Params params;
+	ABP_VotableCancelTale_C_GetObjectDisplayName_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -85,7 +85,7 @@ struct FText ABP_VotableCancelTale_C::GetObjectDisplayName()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_VotableCancelTale.BP_VotableCancelTale_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -93,7 +93,7 @@ void ABP_VotableCancelTale_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelTale.BP_VotableCancelTale_C.UserConstructionScript");
 
-	ABP_VotableCancelTale_C_UserConstructionScript_Params params;
+	ABP_VotableCancelTale_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -104,14 +104,14 @@ void ABP_VotableCancelTale_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_VotableCancelTale.BP_VotableCancelTale_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_VotableCancelTale_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelTale.BP_VotableCancelTale_C.ReceiveBeginPlay");
 
-	ABP_VotableCancelTale_C_ReceiveBeginPlay_Params params;
+	ABP_VotableCancelTale_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -122,14 +122,14 @@ void ABP_VotableCancelTale_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_VotableCancelTale.BP_VotableCancelTale_C.OnVoteAdded
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 void ABP_VotableCancelTale_C::OnVoteAdded()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelTale.BP_VotableCancelTale_C.OnVoteAdded");
 
-	ABP_VotableCancelTale_C_OnVoteAdded_Params params;
+	ABP_VotableCancelTale_C_OnVoteAdded_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -140,14 +140,14 @@ void ABP_VotableCancelTale_C::OnVoteAdded()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_VotableCancelTale.BP_VotableCancelTale_C.OnVoteRemoved
 //		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 void ABP_VotableCancelTale_C::OnVoteRemoved()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelTale.BP_VotableCancelTale_C.OnVoteRemoved");
 
-	ABP_VotableCancelTale_C_OnVoteRemoved_Params params;
+	ABP_VotableCancelTale_C_OnVoteRemoved_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -158,7 +158,7 @@ void ABP_VotableCancelTale_C::OnVoteRemoved()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_VotableCancelTale.BP_VotableCancelTale_C.ExecuteUbergraph_BP_VotableCancelTale
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -167,7 +167,7 @@ void ABP_VotableCancelTale_C::ExecuteUbergraph_BP_VotableCancelTale(int EntryPoi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_VotableCancelTale.BP_VotableCancelTale_C.ExecuteUbergraph_BP_VotableCancelTale");
 
-	ABP_VotableCancelTale_C_ExecuteUbergraph_BP_VotableCancelTale_Params params;
+	ABP_VotableCancelTale_C_ExecuteUbergraph_BP_VotableCancelTale_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

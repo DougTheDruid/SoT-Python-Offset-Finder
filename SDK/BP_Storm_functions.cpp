@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Storm.BP_Storm_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Storm_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Storm.BP_Storm_C.UserConstructionScript");
 
-	ABP_Storm_C_UserConstructionScript_Params params;
+	ABP_Storm_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void ABP_Storm_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Storm.BP_Storm_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_Storm_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Storm.BP_Storm_C.ReceiveBeginPlay");
 
-	ABP_Storm_C_ReceiveBeginPlay_Params params;
+	ABP_Storm_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void ABP_Storm_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Storm.BP_Storm_C.ReceiveTick
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -64,7 +64,7 @@ void ABP_Storm_C::ReceiveTick(float DeltaSeconds)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Storm.BP_Storm_C.ReceiveTick");
 
-	ABP_Storm_C_ReceiveTick_Params params;
+	ABP_Storm_C_ReceiveTick_Params params {};
 	params.DeltaSeconds = DeltaSeconds;
 
 	auto flags = fn->FunctionFlags;
@@ -76,7 +76,7 @@ void ABP_Storm_C::ReceiveTick(float DeltaSeconds)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Storm.BP_Storm_C.ExecuteUbergraph_BP_Storm
 //		Flags  -> ()
 // Parameters:
@@ -85,7 +85,7 @@ void ABP_Storm_C::ExecuteUbergraph_BP_Storm(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Storm.BP_Storm_C.ExecuteUbergraph_BP_Storm");
 
-	ABP_Storm_C_ExecuteUbergraph_BP_Storm_Params params;
+	ABP_Storm_C_ExecuteUbergraph_BP_Storm_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

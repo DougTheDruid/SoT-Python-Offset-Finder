@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.UnhidePlayerPrompts
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::UnhidePlayerPrompts()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.UnhidePlayerPrompts");
 
-	ABP_Tutorial_Tavern_Stranger_NPC_C_UnhidePlayerPrompts_Params params;
+	ABP_Tutorial_Tavern_Stranger_NPC_C_UnhidePlayerPrompts_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,7 +38,7 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::UnhidePlayerPrompts()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.CanInteract
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -48,7 +48,7 @@ bool ABP_Tutorial_Tavern_Stranger_NPC_C::CanInteract(class AActor* InInteractor)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.CanInteract");
 
-	ABP_Tutorial_Tavern_Stranger_NPC_C_CanInteract_Params params;
+	ABP_Tutorial_Tavern_Stranger_NPC_C_CanInteract_Params params {};
 	params.InInteractor = InInteractor;
 
 	auto flags = fn->FunctionFlags;
@@ -62,7 +62,7 @@ bool ABP_Tutorial_Tavern_Stranger_NPC_C::CanInteract(class AActor* InInteractor)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.StartOnboardingCutscene
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -70,7 +70,7 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::StartOnboardingCutscene()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.StartOnboardingCutscene");
 
-	ABP_Tutorial_Tavern_Stranger_NPC_C_StartOnboardingCutscene_Params params;
+	ABP_Tutorial_Tavern_Stranger_NPC_C_StartOnboardingCutscene_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -81,14 +81,14 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::StartOnboardingCutscene()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Tutorial_Tavern_Stranger_NPC_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.UserConstructionScript");
 
-	ABP_Tutorial_Tavern_Stranger_NPC_C_UserConstructionScript_Params params;
+	ABP_Tutorial_Tavern_Stranger_NPC_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -99,14 +99,14 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.QueueCutsceneActorDestruction
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 void ABP_Tutorial_Tavern_Stranger_NPC_C::QueueCutsceneActorDestruction()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.QueueCutsceneActorDestruction");
 
-	ABP_Tutorial_Tavern_Stranger_NPC_C_QueueCutsceneActorDestruction_Params params;
+	ABP_Tutorial_Tavern_Stranger_NPC_C_QueueCutsceneActorDestruction_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -117,7 +117,7 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::QueueCutsceneActorDestruction()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.ReceiveEndPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -126,7 +126,7 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndP
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.ReceiveEndPlay");
 
-	ABP_Tutorial_Tavern_Stranger_NPC_C_ReceiveEndPlay_Params params;
+	ABP_Tutorial_Tavern_Stranger_NPC_C_ReceiveEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -138,14 +138,14 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::ReceiveEndPlay(TEnumAsByte<Engine_EEndP
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.CleanTutorialCutScene
 //		Flags  -> (Event, Protected, BlueprintCallable, BlueprintEvent)
 void ABP_Tutorial_Tavern_Stranger_NPC_C::CleanTutorialCutScene()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.CleanTutorialCutScene");
 
-	ABP_Tutorial_Tavern_Stranger_NPC_C_CleanTutorialCutScene_Params params;
+	ABP_Tutorial_Tavern_Stranger_NPC_C_CleanTutorialCutScene_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -156,7 +156,7 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::CleanTutorialCutScene()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.ExecuteUbergraph_BP_Tutorial_Tavern_Stranger_NPC
 //		Flags  -> ()
 // Parameters:
@@ -165,7 +165,7 @@ void ABP_Tutorial_Tavern_Stranger_NPC_C::ExecuteUbergraph_BP_Tutorial_Tavern_Str
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Tutorial_Tavern_Stranger_NPC.BP_Tutorial_Tavern_Stranger_NPC_C.ExecuteUbergraph_BP_Tutorial_Tavern_Stranger_NPC");
 
-	ABP_Tutorial_Tavern_Stranger_NPC_C_ExecuteUbergraph_BP_Tutorial_Tavern_Stranger_NPC_Params params;
+	ABP_Tutorial_Tavern_Stranger_NPC_C_ExecuteUbergraph_BP_Tutorial_Tavern_Stranger_NPC_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

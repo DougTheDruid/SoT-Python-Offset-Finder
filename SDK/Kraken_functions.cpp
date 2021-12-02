@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -408,16 +408,6 @@ void FKrakenDynamicsStateEvent::BeforeDelete()
 {
 }
 
-void FKrakenShipWrappingBehaviourTentacleHeadParams::AfterRead()
-{
-	READ_PTR_FULL(TentacleType, UClass);
-}
-
-void FKrakenShipWrappingBehaviourTentacleHeadParams::BeforeDelete()
-{
-	DELE_PTR_FULL(TentacleType);
-}
-
 void FKrakenShipWrappingBehaviourHealthParams::AfterRead()
 {
 }
@@ -426,30 +416,38 @@ void FKrakenShipWrappingBehaviourHealthParams::BeforeDelete()
 {
 }
 
-void FKrakenShipWrappingBehaviourNamedTransform::AfterRead()
+void FKrakenShipWrappingBehaviourDamageParams::AfterRead()
 {
 }
 
-void FKrakenShipWrappingBehaviourNamedTransform::BeforeDelete()
+void FKrakenShipWrappingBehaviourDamageParams::BeforeDelete()
 {
 }
 
-void FKrakenShipWrappingBehaviourWarningParams::AfterRead()
+void FKrakenShipWrappingBehaviourHeavyAttackParams::AfterRead()
+{
+}
+
+void FKrakenShipWrappingBehaviourHeavyAttackParams::BeforeDelete()
+{
+}
+
+void FKrakenShipWrappingBehaviourShakeAttackParams::AfterRead()
+{
+}
+
+void FKrakenShipWrappingBehaviourShakeAttackParams::BeforeDelete()
+{
+}
+
+void FKrakenShipWrappingBehaviourTentacleHeadParams::AfterRead()
 {
 	READ_PTR_FULL(TentacleType, UClass);
 }
 
-void FKrakenShipWrappingBehaviourWarningParams::BeforeDelete()
+void FKrakenShipWrappingBehaviourTentacleHeadParams::BeforeDelete()
 {
 	DELE_PTR_FULL(TentacleType);
-}
-
-void FKrakenShipWrappingBehaviourTentacleHeadLocations::AfterRead()
-{
-}
-
-void FKrakenShipWrappingBehaviourTentacleHeadLocations::BeforeDelete()
-{
 }
 
 void FKrakenDynamicsStateFragmentParams::AfterRead()
@@ -475,6 +473,22 @@ void FKrakenDynamicsParams::AfterRead()
 }
 
 void FKrakenDynamicsParams::BeforeDelete()
+{
+}
+
+void FKrakenShipWrappingBehaviourNamedTransform::AfterRead()
+{
+}
+
+void FKrakenShipWrappingBehaviourNamedTransform::BeforeDelete()
+{
+}
+
+void FKrakenShipWrappingBehaviourTentacleHeadLocations::AfterRead()
+{
+}
+
+void FKrakenShipWrappingBehaviourTentacleHeadLocations::BeforeDelete()
 {
 }
 
@@ -504,28 +518,14 @@ void FKrakenShipWrappingBehaviourWrapParams::BeforeDelete()
 {
 }
 
-void FKrakenShipWrappingBehaviourShakeAttackParams::AfterRead()
+void FKrakenShipWrappingBehaviourWarningParams::AfterRead()
 {
+	READ_PTR_FULL(TentacleType, UClass);
 }
 
-void FKrakenShipWrappingBehaviourShakeAttackParams::BeforeDelete()
+void FKrakenShipWrappingBehaviourWarningParams::BeforeDelete()
 {
-}
-
-void FKrakenShipWrappingBehaviourHeavyAttackParams::AfterRead()
-{
-}
-
-void FKrakenShipWrappingBehaviourHeavyAttackParams::BeforeDelete()
-{
-}
-
-void FKrakenShipWrappingBehaviourDamageParams::AfterRead()
-{
-}
-
-void FKrakenShipWrappingBehaviourDamageParams::BeforeDelete()
-{
+	DELE_PTR_FULL(TentacleType);
 }
 
 void FKrakenShipWrappingBehaviourParams::AfterRead()
@@ -807,7 +807,7 @@ void FKrakenSpawnTelemetryEvent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x039953B0
+//		Offset -> 0x0400DC70
 //		Name   -> Function Kraken.KrakenTentacle.OnDamageToTentacle
 //		Flags  -> (Final, Native, Public, HasOutParms)
 // Parameters:
@@ -816,7 +816,7 @@ void AKrakenTentacle::OnDamageToTentacle(const struct FImpactDamageEvent& Impact
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenTentacle.OnDamageToTentacle");
 
-	AKrakenTentacle_OnDamageToTentacle_Params params;
+	AKrakenTentacle_OnDamageToTentacle_Params params {};
 	params.ImpactDamageEvent = ImpactDamageEvent;
 
 	auto flags = fn->FunctionFlags;
@@ -844,6 +844,68 @@ void AKrakenTentacle::BeforeDelete()
 	DELE_PTR_FULL(HealthComponent);
 	DELE_PTR_FULL(DamageableComponent);
 	DELE_PTR_FULL(VenomComponent);
+}
+
+// Function:
+//		Offset -> 0x0400DB10
+//		Name   -> Function Kraken.Murk.DeactivateMurkBP
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+void AMurk::DeactivateMurkBP()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.Murk.DeactivateMurkBP");
+
+	AMurk_DeactivateMurkBP_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+// Function:
+//		Offset -> 0x0400DA70
+//		Name   -> Function Kraken.Murk.ActivateMurkBP
+//		Flags  -> (Final, Native, Public, BlueprintCallable)
+void AMurk::ActivateMurkBP()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.Murk.ActivateMurkBP");
+
+	AMurk_ActivateMurkBP_Params params {};
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+void AMurk::AfterRead()
+{
+	AActor::AfterRead();
+
+	READ_PTR_FULL(WaterModifierZone, UMurkWaterModifierZoneComponent);
+	READ_PTR_FULL(SceneRootComponent, USceneComponent);
+	READ_PTR_FULL(InnerSheet, UStaticMeshComponent);
+	READ_PTR_FULL(OuterSheet, UStaticMeshComponent);
+	READ_PTR_FULL(InnerSheetMaterialInstance, UMaterialInstanceDynamic);
+	READ_PTR_FULL(OuterSheetMaterialInstance, UMaterialInstanceDynamic);
+}
+
+void AMurk::BeforeDelete()
+{
+	AActor::BeforeDelete();
+
+	DELE_PTR_FULL(WaterModifierZone);
+	DELE_PTR_FULL(SceneRootComponent);
+	DELE_PTR_FULL(InnerSheet);
+	DELE_PTR_FULL(OuterSheet);
+	DELE_PTR_FULL(InnerSheetMaterialInstance);
+	DELE_PTR_FULL(OuterSheetMaterialInstance);
 }
 
 void UCoordinatedKrakenInterface::AfterRead()
@@ -955,76 +1017,14 @@ void UEnvQueryGenerator_KrakenTentacleSpawnLocations::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03995250
-//		Name   -> Function Kraken.Murk.DeactivateMurkBP
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-void AMurk::DeactivateMurkBP()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.Murk.DeactivateMurkBP");
-
-	AMurk_DeactivateMurkBP_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-// Function:
-//		Offset -> 0x039951B0
-//		Name   -> Function Kraken.Murk.ActivateMurkBP
-//		Flags  -> (Final, Native, Public, BlueprintCallable)
-void AMurk::ActivateMurkBP()
-{
-	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.Murk.ActivateMurkBP");
-
-	AMurk_ActivateMurkBP_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-}
-
-
-void AMurk::AfterRead()
-{
-	AActor::AfterRead();
-
-	READ_PTR_FULL(WaterModifierZone, UMurkWaterModifierZoneComponent);
-	READ_PTR_FULL(SceneRootComponent, USceneComponent);
-	READ_PTR_FULL(InnerSheet, UStaticMeshComponent);
-	READ_PTR_FULL(OuterSheet, UStaticMeshComponent);
-	READ_PTR_FULL(InnerSheetMaterialInstance, UMaterialInstanceDynamic);
-	READ_PTR_FULL(OuterSheetMaterialInstance, UMaterialInstanceDynamic);
-}
-
-void AMurk::BeforeDelete()
-{
-	AActor::BeforeDelete();
-
-	DELE_PTR_FULL(WaterModifierZone);
-	DELE_PTR_FULL(SceneRootComponent);
-	DELE_PTR_FULL(InnerSheet);
-	DELE_PTR_FULL(OuterSheet);
-	DELE_PTR_FULL(InnerSheetMaterialInstance);
-	DELE_PTR_FULL(OuterSheetMaterialInstance);
-}
-
-// Function:
-//		Offset -> 0x039954B0
+//		Offset -> 0x0400DD70
 //		Name   -> Function Kraken.KrakenShipWrappingTentacle.OnRep_CurrentServerAnimationState
 //		Flags  -> (Final, Native, Private)
 void AKrakenShipWrappingTentacle::OnRep_CurrentServerAnimationState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenShipWrappingTentacle.OnRep_CurrentServerAnimationState");
 
-	AKrakenShipWrappingTentacle_OnRep_CurrentServerAnimationState_Params params;
+	AKrakenShipWrappingTentacle_OnRep_CurrentServerAnimationState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1084,14 +1084,14 @@ void UKrakenTelemetryComponent::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03995310
+//		Offset -> 0x0400DBD0
 //		Name   -> Function Kraken.Kraken.Multicast_OnTentacleTakenDamage
 //		Flags  -> (Final, Net, Native, Event, NetMulticast, Private)
 void AKraken::Multicast_OnTentacleTakenDamage()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.Kraken.Multicast_OnTentacleTakenDamage");
 
-	AKraken_Multicast_OnTentacleTakenDamage_Params params;
+	AKraken_Multicast_OnTentacleTakenDamage_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1103,7 +1103,7 @@ void AKraken::Multicast_OnTentacleTakenDamage()
 
 
 // Function:
-//		Offset -> 0x039951D0
+//		Offset -> 0x0400DA90
 //		Name   -> Function Kraken.Kraken.AddActorToKnownTargets
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1112,7 +1112,7 @@ void AKraken::AddActorToKnownTargets(class AActor* Target)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.Kraken.AddActorToKnownTargets");
 
-	AKraken_AddActorToKnownTargets_Params params;
+	AKraken_AddActorToKnownTargets_Params params {};
 	params.Target = Target;
 
 	auto flags = fn->FunctionFlags;
@@ -1205,7 +1205,7 @@ void UKrakenHeadStateAnimationsDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x039955F0
+//		Offset -> 0x0400DEB0
 //		Name   -> Function Kraken.KrakenHead.RequestState
 //		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1214,7 +1214,7 @@ void AKrakenHead::RequestState(class UClass* NewState)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenHead.RequestState");
 
-	AKrakenHead_RequestState_Params params;
+	AKrakenHead_RequestState_Params params {};
 	params.NewState = NewState;
 
 	auto flags = fn->FunctionFlags;
@@ -1227,14 +1227,14 @@ void AKrakenHead::RequestState(class UClass* NewState)
 
 
 // Function:
-//		Offset -> 0x039954F0
+//		Offset -> 0x0400DDB0
 //		Name   -> Function Kraken.KrakenHead.OnRep_IsDamageEnabled
 //		Flags  -> (Final, Native, Protected)
 void AKrakenHead::OnRep_IsDamageEnabled()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenHead.OnRep_IsDamageEnabled");
 
-	AKrakenHead_OnRep_IsDamageEnabled_Params params;
+	AKrakenHead_OnRep_IsDamageEnabled_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1246,14 +1246,14 @@ void AKrakenHead::OnRep_IsDamageEnabled()
 
 
 // Function:
-//		Offset -> 0x039954D0
+//		Offset -> 0x0400DD90
 //		Name   -> Function Kraken.KrakenHead.OnRep_HeadStateRequest
 //		Flags  -> (Final, Native, Protected)
 void AKrakenHead::OnRep_HeadStateRequest()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenHead.OnRep_HeadStateRequest");
 
-	AKrakenHead_OnRep_HeadStateRequest_Params params;
+	AKrakenHead_OnRep_HeadStateRequest_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1265,7 +1265,7 @@ void AKrakenHead::OnRep_HeadStateRequest()
 
 
 // Function:
-//		Offset -> 0x03995330
+//		Offset -> 0x0400DBF0
 //		Name   -> Function Kraken.KrakenHead.OnCoordinatedKrakenSpecialEvent
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -1274,7 +1274,7 @@ void AKrakenHead::OnCoordinatedKrakenSpecialEvent(TEnumAsByte<Kraken_ECoordinate
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenHead.OnCoordinatedKrakenSpecialEvent");
 
-	AKrakenHead_OnCoordinatedKrakenSpecialEvent_Params params;
+	AKrakenHead_OnCoordinatedKrakenSpecialEvent_Params params {};
 	params.InEventType = InEventType;
 
 	auto flags = fn->FunctionFlags;
@@ -1441,7 +1441,7 @@ void UKrakenServiceInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03995510
+//		Offset -> 0x0400DDD0
 //		Name   -> Function Kraken.KrakenService.RequestKrakenWithLocation
 //		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -1451,7 +1451,7 @@ void AKrakenService::RequestKrakenWithLocation(const struct FVector& SpawnLocati
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenService.RequestKrakenWithLocation");
 
-	AKrakenService_RequestKrakenWithLocation_Params params;
+	AKrakenService_RequestKrakenWithLocation_Params params {};
 	params.SpawnLocation = SpawnLocation;
 	params.SpawnedForActor = SpawnedForActor;
 
@@ -1465,7 +1465,7 @@ void AKrakenService::RequestKrakenWithLocation(const struct FVector& SpawnLocati
 
 
 // Function:
-//		Offset -> 0x039952E0
+//		Offset -> 0x0400DBA0
 //		Name   -> Function Kraken.KrakenService.IsServiceInitialized
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -1474,7 +1474,7 @@ bool AKrakenService::IsServiceInitialized()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenService.IsServiceInitialized");
 
-	AKrakenService_IsServiceInitialized_Params params;
+	AKrakenService_IsServiceInitialized_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1488,7 +1488,7 @@ bool AKrakenService::IsServiceInitialized()
 
 
 // Function:
-//		Offset -> 0x039952A0
+//		Offset -> 0x0400DB60
 //		Name   -> Function Kraken.KrakenService.IsKrakenActive
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -1497,7 +1497,7 @@ bool AKrakenService::IsKrakenActive()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenService.IsKrakenActive");
 
-	AKrakenService_IsKrakenActive_Params params;
+	AKrakenService_IsKrakenActive_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1511,14 +1511,14 @@ bool AKrakenService::IsKrakenActive()
 
 
 // Function:
-//		Offset -> 0x03995270
+//		Offset -> 0x0400DB30
 //		Name   -> Function Kraken.KrakenService.DismissKraken
 //		Flags  -> (Native, Public, BlueprintCallable)
 void AKrakenService::DismissKraken()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Kraken.KrakenService.DismissKraken");
 
-	AKrakenService_DismissKraken_Params params;
+	AKrakenService_DismissKraken_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

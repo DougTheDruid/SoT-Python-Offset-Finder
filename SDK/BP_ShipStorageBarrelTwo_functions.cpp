@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_ShipStorageBarrelTwo.BP_ShipStorageBarrelTwo_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_ShipStorageBarrelTwo_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_ShipStorageBarrelTwo.BP_ShipStorageBarrelTwo_C.UserConstructionScript");
 
-	ABP_ShipStorageBarrelTwo_C_UserConstructionScript_Params params;
+	ABP_ShipStorageBarrelTwo_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -40,6 +40,7 @@ void ABP_ShipStorageBarrelTwo_C::AfterRead()
 {
 	AActor::AfterRead();
 
+	READ_PTR_FULL(HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent, UHitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent);
 	READ_PTR_FULL(StaticMesh, UStaticMeshComponent);
 }
 
@@ -47,6 +48,7 @@ void ABP_ShipStorageBarrelTwo_C::BeforeDelete()
 {
 	AActor::BeforeDelete();
 
+	DELE_PTR_FULL(HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent);
 	DELE_PTR_FULL(StaticMesh);
 }
 

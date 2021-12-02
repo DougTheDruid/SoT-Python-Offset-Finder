@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -113,7 +113,7 @@ void UGlitterBeardEntitlementDesc::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A4DCF0
+//		Offset -> 0x0393D1C0
 //		Name   -> Function GlitterBeard.GlitterBeardFinaleCoordinatorComponent.OnRep_ReplicationState
 //		Flags  -> (Final, RequiredAPI, Native, Private, HasOutParms)
 // Parameters:
@@ -122,7 +122,7 @@ void UGlitterBeardFinaleCoordinatorComponent::OnRep_ReplicationState(const struc
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardFinaleCoordinatorComponent.OnRep_ReplicationState");
 
-	UGlitterBeardFinaleCoordinatorComponent_OnRep_ReplicationState_Params params;
+	UGlitterBeardFinaleCoordinatorComponent_OnRep_ReplicationState_Params params {};
 	params.OldState = OldState;
 
 	auto flags = fn->FunctionFlags;
@@ -215,14 +215,14 @@ void UGlitterBeardTrustedTreeInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A4DE30
+//		Offset -> 0x0393D300
 //		Name   -> Function GlitterBeard.GlitterBeardTree.StopVocals
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void AGlitterBeardTree::StopVocals()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.StopVocals");
 
-	AGlitterBeardTree_StopVocals_Params params;
+	AGlitterBeardTree_StopVocals_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -234,7 +234,7 @@ void AGlitterBeardTree::StopVocals()
 
 
 // Function:
-//		Offset -> 0x03A4DDF0
+//		Offset -> 0x0393D2C0
 //		Name   -> Function GlitterBeard.GlitterBeardTree.StopReaction
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -243,7 +243,7 @@ bool AGlitterBeardTree::StopReaction()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.StopReaction");
 
-	AGlitterBeardTree_StopReaction_Params params;
+	AGlitterBeardTree_StopReaction_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -257,14 +257,14 @@ bool AGlitterBeardTree::StopReaction()
 
 
 // Function:
-//		Offset -> 0x03A4DDD0
+//		Offset -> 0x0393D2A0
 //		Name   -> Function GlitterBeard.GlitterBeardTree.StartVocals
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 void AGlitterBeardTree::StartVocals()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.StartVocals");
 
-	AGlitterBeardTree_StartVocals_Params params;
+	AGlitterBeardTree_StartVocals_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -276,7 +276,7 @@ void AGlitterBeardTree::StartVocals()
 
 
 // Function:
-//		Offset -> 0x03A4DD90
+//		Offset -> 0x0393D260
 //		Name   -> Function GlitterBeard.GlitterBeardTree.StartReaction
 //		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -285,7 +285,7 @@ bool AGlitterBeardTree::StartReaction()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.StartReaction");
 
-	AGlitterBeardTree_StartReaction_Params params;
+	AGlitterBeardTree_StartReaction_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -299,14 +299,14 @@ bool AGlitterBeardTree::StartReaction()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function GlitterBeard.GlitterBeardTree.Reset_Impl
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void AGlitterBeardTree::Reset_Impl()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTree.Reset_Impl");
 
-	AGlitterBeardTree_Reset_Impl_Params params;
+	AGlitterBeardTree_Reset_Impl_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -347,7 +347,7 @@ void AGlitterBeardTree::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03A4DC40
+//		Offset -> 0x0393D110
 //		Name   -> Function GlitterBeard.GlitterBeardTreeVisualFeedbackComponent.OnRep_NextStateEvent
 //		Flags  -> (Final, RequiredAPI, Native, Private, HasOutParms)
 // Parameters:
@@ -356,7 +356,7 @@ void UGlitterBeardTreeVisualFeedbackComponent::OnRep_NextStateEvent(TArray<TEnum
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function GlitterBeard.GlitterBeardTreeVisualFeedbackComponent.OnRep_NextStateEvent");
 
-	UGlitterBeardTreeVisualFeedbackComponent_OnRep_NextStateEvent_Params params;
+	UGlitterBeardTreeVisualFeedbackComponent_OnRep_NextStateEvent_Params params {};
 	params.OldStates = OldStates;
 
 	auto flags = fn->FunctionFlags;

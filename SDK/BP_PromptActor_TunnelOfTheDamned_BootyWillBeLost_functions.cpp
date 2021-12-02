@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost.BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost.BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C.UserConstructionScript");
 
-	ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C_UserConstructionScript_Params params;
+	ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,14 +37,14 @@ void ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C::UserConstructionScript
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost.BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost.BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C.ReceiveBeginPlay");
 
-	ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C_ReceiveBeginPlay_Params params;
+	ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -55,7 +55,7 @@ void ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost.BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C.ReceiveEndPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -64,7 +64,7 @@ void ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C::ReceiveEndPlay(TEnumAs
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost.BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C.ReceiveEndPlay");
 
-	ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C_ReceiveEndPlay_Params params;
+	ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C_ReceiveEndPlay_Params params {};
 	params.EndPlayReason = EndPlayReason;
 
 	auto flags = fn->FunctionFlags;
@@ -76,7 +76,7 @@ void ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C::ReceiveEndPlay(TEnumAs
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost.BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C.ExecuteUbergraph_BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost
 //		Flags  -> ()
 // Parameters:
@@ -85,7 +85,7 @@ void ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C::ExecuteUbergraph_BP_Pr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost.BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C.ExecuteUbergraph_BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost");
 
-	ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C_ExecuteUbergraph_BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_Params params;
+	ABP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C_ExecuteUbergraph_BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

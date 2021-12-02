@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.AttemptToAddDamageDecal
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -31,7 +31,7 @@ void ABP_Mast_C::AttemptToAddDamageDecal(TEnumAsByte<Repair_ERepairableState> Re
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.AttemptToAddDamageDecal");
 
-	ABP_Mast_C_AttemptToAddDamageDecal_Params params;
+	ABP_Mast_C_AttemptToAddDamageDecal_Params params {};
 	params.RepairableState = RepairableState;
 	params.RelativeTransform = RelativeTransform;
 	params.NewDecalMaterial = NewDecalMaterial;
@@ -48,7 +48,7 @@ void ABP_Mast_C::AttemptToAddDamageDecal(TEnumAsByte<Repair_ERepairableState> Re
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.IsMastVisuallyFractured
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -57,7 +57,7 @@ bool ABP_Mast_C::IsMastVisuallyFractured()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.IsMastVisuallyFractured");
 
-	ABP_Mast_C_IsMastVisuallyFractured_Params params;
+	ABP_Mast_C_IsMastVisuallyFractured_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -70,7 +70,7 @@ bool ABP_Mast_C::IsMastVisuallyFractured()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.Customise Static Mesh
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -80,7 +80,7 @@ void ABP_Mast_C::Customise_Static_Mesh(class UStaticMesh* New_Static_Mesh, class
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.Customise Static Mesh");
 
-	ABP_Mast_C_Customise_Static_Mesh_Params params;
+	ABP_Mast_C_Customise_Static_Mesh_Params params {};
 	params.New_Static_Mesh = New_Static_Mesh;
 	params.Static_Mesh_Component = Static_Mesh_Component;
 
@@ -93,7 +93,7 @@ void ABP_Mast_C::Customise_Static_Mesh(class UStaticMesh* New_Static_Mesh, class
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.Trim Array Func
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -103,7 +103,7 @@ void ABP_Mast_C::Trim_Array_Func(TArray<class UObject*>* TargetArray, int Size)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.Trim Array Func");
 
-	ABP_Mast_C_Trim_Array_Func_Params params;
+	ABP_Mast_C_Trim_Array_Func_Params params {};
 	params.Size = Size;
 
 	auto flags = fn->FunctionFlags;
@@ -118,7 +118,7 @@ void ABP_Mast_C::Trim_Array_Func(TArray<class UObject*>* TargetArray, int Size)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.Initialise Sail Parameters
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -126,7 +126,7 @@ void ABP_Mast_C::Initialise_Sail_Parameters()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.Initialise Sail Parameters");
 
-	ABP_Mast_C_Initialise_Sail_Parameters_Params params;
+	ABP_Mast_C_Initialise_Sail_Parameters_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -137,7 +137,7 @@ void ABP_Mast_C::Initialise_Sail_Parameters()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.Populate Lists of Yards and Sails
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -145,7 +145,7 @@ void ABP_Mast_C::Populate_Lists_of_Yards_and_Sails()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.Populate Lists of Yards and Sails");
 
-	ABP_Mast_C_Populate_Lists_of_Yards_and_Sails_Params params;
+	ABP_Mast_C_Populate_Lists_of_Yards_and_Sails_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -156,7 +156,7 @@ void ABP_Mast_C::Populate_Lists_of_Yards_and_Sails()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.Cull Excess Components
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -165,7 +165,7 @@ void ABP_Mast_C::Cull_Excess_Components(TArray<class UActorComponent*>* TargetAr
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.Cull Excess Components");
 
-	ABP_Mast_C_Cull_Excess_Components_Params params;
+	ABP_Mast_C_Cull_Excess_Components_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -179,7 +179,7 @@ void ABP_Mast_C::Cull_Excess_Components(TArray<class UActorComponent*>* TargetAr
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.Initialise Sails
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -187,7 +187,7 @@ void ABP_Mast_C::Initialise_Sails()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.Initialise Sails");
 
-	ABP_Mast_C_Initialise_Sails_Params params;
+	ABP_Mast_C_Initialise_Sails_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -198,14 +198,14 @@ void ABP_Mast_C::Initialise_Sails()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Mast_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.UserConstructionScript");
 
-	ABP_Mast_C_UserConstructionScript_Params params;
+	ABP_Mast_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -216,7 +216,7 @@ void ABP_Mast_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.OnMastDescLoaded
 //		Flags  -> (Event, Public, BlueprintEvent)
 // Parameters:
@@ -225,7 +225,7 @@ void ABP_Mast_C::OnMastDescLoaded(class UMastDescAsset* MastDesc)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.OnMastDescLoaded");
 
-	ABP_Mast_C_OnMastDescLoaded_Params params;
+	ABP_Mast_C_OnMastDescLoaded_Params params {};
 	params.MastDesc = MastDesc;
 
 	auto flags = fn->FunctionFlags;
@@ -237,7 +237,7 @@ void ABP_Mast_C::OnMastDescLoaded(class UMastDescAsset* MastDesc)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.OnMastMeshSwapRequested
 //		Flags  -> (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -247,7 +247,7 @@ void ABP_Mast_C::OnMastMeshSwapRequested(class UStaticMesh* NewMeshBottom, class
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.OnMastMeshSwapRequested");
 
-	ABP_Mast_C_OnMastMeshSwapRequested_Params params;
+	ABP_Mast_C_OnMastMeshSwapRequested_Params params {};
 	params.NewMeshBottom = NewMeshBottom;
 	params.NewMeshTop = NewMeshTop;
 
@@ -260,7 +260,7 @@ void ABP_Mast_C::OnMastMeshSwapRequested(class UStaticMesh* NewMeshBottom, class
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_RepairableStateChangedDelegate__DelegateSignature
 //		Flags  -> (BlueprintEvent)
 // Parameters:
@@ -271,7 +271,7 @@ void ABP_Mast_C::BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_R
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_RepairableStateChangedDelegate__DelegateSignature");
 
-	ABP_Mast_C_BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_RepairableStateChangedDelegate__DelegateSignature_Params params;
+	ABP_Mast_C_BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_RepairableStateChangedDelegate__DelegateSignature_Params params {};
 	params.State = State;
 	params.PreviousState = PreviousState;
 	params.RepairableComponent = RepairableComponent;
@@ -285,7 +285,7 @@ void ABP_Mast_C::BndEvt__RepairableComponentFirst_K2Node_ComponentBoundEvent_3_R
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_RepairableStateChangedDelegate__DelegateSignature
 //		Flags  -> (BlueprintEvent)
 // Parameters:
@@ -296,7 +296,7 @@ void ABP_Mast_C::BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_RepairableStateChangedDelegate__DelegateSignature");
 
-	ABP_Mast_C_BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_RepairableStateChangedDelegate__DelegateSignature_Params params;
+	ABP_Mast_C_BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_RepairableStateChangedDelegate__DelegateSignature_Params params {};
 	params.State = State;
 	params.PreviousState = PreviousState;
 	params.RepairableComponent = RepairableComponent;
@@ -310,7 +310,7 @@ void ABP_Mast_C::BndEvt__RepairableComponentSecond_K2Node_ComponentBoundEvent_6_
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_RepairableStateChangedDelegate__DelegateSignature
 //		Flags  -> (BlueprintEvent)
 // Parameters:
@@ -321,7 +321,7 @@ void ABP_Mast_C::BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_RepairableStateChangedDelegate__DelegateSignature");
 
-	ABP_Mast_C_BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_RepairableStateChangedDelegate__DelegateSignature_Params params;
+	ABP_Mast_C_BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_RepairableStateChangedDelegate__DelegateSignature_Params params {};
 	params.State = State;
 	params.PreviousState = PreviousState;
 	params.RepairableComponent = RepairableComponent;
@@ -335,7 +335,7 @@ void ABP_Mast_C::BndEvt__RepairableComponentThird_K2Node_ComponentBoundEvent_10_
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Mast.BP_Mast_C.ExecuteUbergraph_BP_Mast
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -344,7 +344,7 @@ void ABP_Mast_C::ExecuteUbergraph_BP_Mast(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Mast.BP_Mast_C.ExecuteUbergraph_BP_Mast");
 
-	ABP_Mast_C_ExecuteUbergraph_BP_Mast_Params params;
+	ABP_Mast_C_ExecuteUbergraph_BP_Mast_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

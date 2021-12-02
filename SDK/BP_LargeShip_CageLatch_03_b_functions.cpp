@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.GetClosestInteractionPoint
 //		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -30,7 +30,7 @@ struct FVector ABP_LargeShip_CageLatch_03_b_C::GetClosestInteractionPoint(const 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.GetClosestInteractionPoint");
 
-	ABP_LargeShip_CageLatch_03_b_C_GetClosestInteractionPoint_Params params;
+	ABP_LargeShip_CageLatch_03_b_C_GetClosestInteractionPoint_Params params {};
 	params.ReferencePosition = ReferencePosition;
 
 	auto flags = fn->FunctionFlags;
@@ -47,14 +47,14 @@ struct FVector ABP_LargeShip_CageLatch_03_b_C::GetClosestInteractionPoint(const 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_LargeShip_CageLatch_03_b_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.UserConstructionScript");
 
-	ABP_LargeShip_CageLatch_03_b_C_UserConstructionScript_Params params;
+	ABP_LargeShip_CageLatch_03_b_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -65,14 +65,14 @@ void ABP_LargeShip_CageLatch_03_b_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.OnAnimationStarted
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_LargeShip_CageLatch_03_b_C::OnAnimationStarted()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.OnAnimationStarted");
 
-	ABP_LargeShip_CageLatch_03_b_C_OnAnimationStarted_Params params;
+	ABP_LargeShip_CageLatch_03_b_C_OnAnimationStarted_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -83,14 +83,14 @@ void ABP_LargeShip_CageLatch_03_b_C::OnAnimationStarted()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.OnAnimationCompleted
 //		Flags  -> (Event, Protected, BlueprintEvent)
 void ABP_LargeShip_CageLatch_03_b_C::OnAnimationCompleted()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.OnAnimationCompleted");
 
-	ABP_LargeShip_CageLatch_03_b_C_OnAnimationCompleted_Params params;
+	ABP_LargeShip_CageLatch_03_b_C_OnAnimationCompleted_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -101,7 +101,7 @@ void ABP_LargeShip_CageLatch_03_b_C::OnAnimationCompleted()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.ExecuteUbergraph_BP_LargeShip_CageLatch_03_b
 //		Flags  -> ()
 // Parameters:
@@ -110,7 +110,7 @@ void ABP_LargeShip_CageLatch_03_b_C::ExecuteUbergraph_BP_LargeShip_CageLatch_03_
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_LargeShip_CageLatch_03_b.BP_LargeShip_CageLatch_03_b_C.ExecuteUbergraph_BP_LargeShip_CageLatch_03_b");
 
-	ABP_LargeShip_CageLatch_03_b_C_ExecuteUbergraph_BP_LargeShip_CageLatch_03_b_Params params;
+	ABP_LargeShip_CageLatch_03_b_C_ExecuteUbergraph_BP_LargeShip_CageLatch_03_b_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

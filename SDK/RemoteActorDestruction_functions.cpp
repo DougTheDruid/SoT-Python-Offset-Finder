@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -35,7 +35,7 @@ void FDestroyAllExistingActorsByClassData::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03ECF560
+//		Offset -> 0x03E39E80
 //		Name   -> Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyExistingActors
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -44,7 +44,7 @@ void URemoteActorDestructionInterface::DestroyExistingActors(TArray<class UClass
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyExistingActors");
 
-	URemoteActorDestructionInterface_DestroyExistingActors_Params params;
+	URemoteActorDestructionInterface_DestroyExistingActors_Params params {};
 	params.ClassesToDestroy = ClassesToDestroy;
 
 	auto flags = fn->FunctionFlags;
@@ -57,7 +57,7 @@ void URemoteActorDestructionInterface::DestroyExistingActors(TArray<class UClass
 
 
 // Function:
-//		Offset -> 0x03ECF4D0
+//		Offset -> 0x03E39DF0
 //		Name   -> Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyActor
 //		Flags  -> (Native, Public, HasOutParms)
 // Parameters:
@@ -66,7 +66,7 @@ void URemoteActorDestructionInterface::DestroyActor(const struct FDestroyActorDa
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function RemoteActorDestruction.RemoteActorDestructionInterface.DestroyActor");
 
-	URemoteActorDestructionInterface_DestroyActor_Params params;
+	URemoteActorDestructionInterface_DestroyActor_Params params {};
 	params.DestroyActorData = DestroyActorData;
 
 	auto flags = fn->FunctionFlags;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -27,7 +27,7 @@ void FLiquidTypeParams::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03EC0330
+//		Offset -> 0x03E2C900
 //		Name   -> Function LiquidContainer.LiquidContainerInterface.SetLiquidLevel
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -36,7 +36,7 @@ void ULiquidContainerInterface::SetLiquidLevel(float Level)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.SetLiquidLevel");
 
-	ULiquidContainerInterface_SetLiquidLevel_Params params;
+	ULiquidContainerInterface_SetLiquidLevel_Params params {};
 	params.Level = Level;
 
 	auto flags = fn->FunctionFlags;
@@ -49,7 +49,7 @@ void ULiquidContainerInterface::SetLiquidLevel(float Level)
 
 
 // Function:
-//		Offset -> 0x03EC0300
+//		Offset -> 0x03E2C8D0
 //		Name   -> Function LiquidContainer.LiquidContainerInterface.GetWantedLiquidLevel
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -58,7 +58,7 @@ float ULiquidContainerInterface::GetWantedLiquidLevel()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.GetWantedLiquidLevel");
 
-	ULiquidContainerInterface_GetWantedLiquidLevel_Params params;
+	ULiquidContainerInterface_GetWantedLiquidLevel_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -72,7 +72,7 @@ float ULiquidContainerInterface::GetWantedLiquidLevel()
 
 
 // Function:
-//		Offset -> 0x03EC02D0
+//		Offset -> 0x03E2C8A0
 //		Name   -> Function LiquidContainer.LiquidContainerInterface.GetMaxLiquidCollectionAmount
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -81,7 +81,7 @@ float ULiquidContainerInterface::GetMaxLiquidCollectionAmount()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.GetMaxLiquidCollectionAmount");
 
-	ULiquidContainerInterface_GetMaxLiquidCollectionAmount_Params params;
+	ULiquidContainerInterface_GetMaxLiquidCollectionAmount_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -95,7 +95,7 @@ float ULiquidContainerInterface::GetMaxLiquidCollectionAmount()
 
 
 // Function:
-//		Offset -> 0x03EC0270
+//		Offset -> 0x03E2C840
 //		Name   -> Function LiquidContainer.LiquidContainerInterface.GetLiquidLevel
 //		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -104,7 +104,7 @@ float ULiquidContainerInterface::GetLiquidLevel()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.GetLiquidLevel");
 
-	ULiquidContainerInterface_GetLiquidLevel_Params params;
+	ULiquidContainerInterface_GetLiquidLevel_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -118,7 +118,7 @@ float ULiquidContainerInterface::GetLiquidLevel()
 
 
 // Function:
-//		Offset -> 0x03EC0160
+//		Offset -> 0x03E2C730
 //		Name   -> Function LiquidContainer.LiquidContainerInterface.CollectLiquidAmount
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -128,7 +128,7 @@ float ULiquidContainerInterface::CollectLiquidAmount(float DesiredAmount)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerInterface.CollectLiquidAmount");
 
-	ULiquidContainerInterface_CollectLiquidAmount_Params params;
+	ULiquidContainerInterface_CollectLiquidAmount_Params params {};
 	params.DesiredAmount = DesiredAmount;
 
 	auto flags = fn->FunctionFlags;
@@ -155,7 +155,7 @@ void ULiquidContainerInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03EC0430
+//		Offset -> 0x03E2CA00
 //		Name   -> Function LiquidContainer.LiquidContainerComponent.SetLiquidType
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -164,7 +164,7 @@ void ULiquidContainerComponent::SetLiquidType(TEnumAsByte<LiquidContainer_ELiqui
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerComponent.SetLiquidType");
 
-	ULiquidContainerComponent_SetLiquidType_Params params;
+	ULiquidContainerComponent_SetLiquidType_Params params {};
 	params.LiquidType = LiquidType;
 
 	auto flags = fn->FunctionFlags;
@@ -177,7 +177,7 @@ void ULiquidContainerComponent::SetLiquidType(TEnumAsByte<LiquidContainer_ELiqui
 
 
 // Function:
-//		Offset -> 0x03EC03B0
+//		Offset -> 0x03E2C980
 //		Name   -> Function LiquidContainer.LiquidContainerComponent.SetLiquidLevel
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -186,7 +186,7 @@ void ULiquidContainerComponent::SetLiquidLevel(float Level)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerComponent.SetLiquidLevel");
 
-	ULiquidContainerComponent_SetLiquidLevel_Params params;
+	ULiquidContainerComponent_SetLiquidLevel_Params params {};
 	params.Level = Level;
 
 	auto flags = fn->FunctionFlags;
@@ -199,7 +199,7 @@ void ULiquidContainerComponent::SetLiquidLevel(float Level)
 
 
 // Function:
-//		Offset -> 0x03EC02A0
+//		Offset -> 0x03E2C870
 //		Name   -> Function LiquidContainer.LiquidContainerComponent.GetLiquidLevel
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -208,7 +208,7 @@ float ULiquidContainerComponent::GetLiquidLevel()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerComponent.GetLiquidLevel");
 
-	ULiquidContainerComponent_GetLiquidLevel_Params params;
+	ULiquidContainerComponent_GetLiquidLevel_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -222,7 +222,7 @@ float ULiquidContainerComponent::GetLiquidLevel()
 
 
 // Function:
-//		Offset -> 0x03EC01F0
+//		Offset -> 0x03E2C7C0
 //		Name   -> Function LiquidContainer.LiquidContainerComponent.CollectLiquidMaterials
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -231,7 +231,7 @@ void ULiquidContainerComponent::CollectLiquidMaterials(class UMeshComponent* Mes
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function LiquidContainer.LiquidContainerComponent.CollectLiquidMaterials");
 
-	ULiquidContainerComponent_CollectLiquidMaterials_Params params;
+	ULiquidContainerComponent_CollectLiquidMaterials_Params params {};
 	params.MeshComponent = MeshComponent;
 
 	auto flags = fn->FunctionFlags;

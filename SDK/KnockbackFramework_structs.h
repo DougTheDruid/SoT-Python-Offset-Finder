@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -46,7 +46,7 @@ enum class KnockbackFramework_EKnockbackType : uint8_t
 // 0x0020
 struct FKnockbackableInfo
 {
-	unsigned char                                      UnknownData_FRF7[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_H9F4[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 	void AfterRead();
 	void BeforeDelete();

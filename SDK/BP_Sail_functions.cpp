@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Sail.BP_Sail_C.Debug
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -27,7 +27,7 @@ void ABP_Sail_C::Debug()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Sail.BP_Sail_C.Debug");
 
-	ABP_Sail_C_Debug_Params params;
+	ABP_Sail_C_Debug_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -38,7 +38,7 @@ void ABP_Sail_C::Debug()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Sail.BP_Sail_C.Initialise
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -48,7 +48,7 @@ void ABP_Sail_C::Initialise(bool IsMainSail, float SailForceScalar)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Sail.BP_Sail_C.Initialise");
 
-	ABP_Sail_C_Initialise_Params params;
+	ABP_Sail_C_Initialise_Params params {};
 	params.IsMainSail = IsMainSail;
 	params.SailForceScalar = SailForceScalar;
 
@@ -61,14 +61,14 @@ void ABP_Sail_C::Initialise(bool IsMainSail, float SailForceScalar)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_Sail.BP_Sail_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_Sail_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_Sail.BP_Sail_C.UserConstructionScript");
 
-	ABP_Sail_C_UserConstructionScript_Params params;
+	ABP_Sail_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

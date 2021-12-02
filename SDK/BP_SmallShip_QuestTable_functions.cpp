@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,14 +19,14 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShip_QuestTable.BP_SmallShip_QuestTable_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_SmallShip_QuestTable_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShip_QuestTable.BP_SmallShip_QuestTable_C.UserConstructionScript");
 
-	ABP_SmallShip_QuestTable_C_UserConstructionScript_Params params;
+	ABP_SmallShip_QuestTable_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -40,6 +40,7 @@ void ABP_SmallShip_QuestTable_C::AfterRead()
 {
 	AVoyageProposalContainer::AfterRead();
 
+	READ_PTR_FULL(PlayerBuiredItemsMapBundleInteractionPoint, UChildActorComponent);
 	READ_PTR_FULL(CancelTale, UChildActorComponent);
 	READ_PTR_FULL(CancelVoyage, UChildActorComponent);
 	READ_PTR_FULL(VoyageSelectionSlot4, UChildActorComponent);
@@ -52,6 +53,7 @@ void ABP_SmallShip_QuestTable_C::BeforeDelete()
 {
 	AVoyageProposalContainer::BeforeDelete();
 
+	DELE_PTR_FULL(PlayerBuiredItemsMapBundleInteractionPoint);
 	DELE_PTR_FULL(CancelTale);
 	DELE_PTR_FULL(CancelVoyage);
 	DELE_PTR_FULL(VoyageSelectionSlot4);

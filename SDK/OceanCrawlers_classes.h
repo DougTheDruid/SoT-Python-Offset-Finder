@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -25,7 +25,7 @@ class UBTTask_BroadcastOceanCrawlerAbilityAudioEvent : public UBTTaskNode
 {
 public:
 	TEnumAsByte<AthenaAI_EOceanCrawlerAbilityAudioKey> OceanCrawlerAudioKeyToBroadcast;                           // 0x0060(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_V6YK[0x7];                                     // 0x0061(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5Z2T[0x7];                                     // 0x0061(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -74,7 +74,7 @@ class UOceanCrawlerAudioBroadcaster : public UActorComponent
 public:
 	class UOceanCrawlerAudioParamsDataAsset*           AudioDataAsset;                                            // 0x00C8(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                      CachedOwner;                                               // 0x00D0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_NSRK[0xC8];                                    // 0x00D8(0x00C8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4NNA[0xC8];                                    // 0x00D8(0x00C8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

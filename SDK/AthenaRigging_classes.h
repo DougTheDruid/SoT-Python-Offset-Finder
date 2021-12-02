@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -27,7 +27,7 @@ public:
 	class UStaticMesh*                                 StaticMesh;                                                // 0x0588(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FInstancedRopeParams>                Ropes;                                                     // 0x0590(0x0010) (Edit, ZeroConstructor, EditConst)
 	int                                                ShadowLOD;                                                 // 0x05A0(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_0U1W[0xAC];                                    // 0x05A4(0x00AC) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_P448[0xAC];                                    // 0x05A4(0x00AC) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -51,7 +51,7 @@ class UMaterialExpressionRopeParameter : public UMaterialExpression
 {
 public:
 	TEnumAsByte<AthenaRigging_EInstancedRopeParameterType> RopeParameterType;                                         // 0x0070(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_0PD6[0x7];                                     // 0x0071(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_V8GC[0x7];                                     // 0x0071(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -72,7 +72,7 @@ public:
 class ARiggingSystem : public AActor
 {
 public:
-	unsigned char                                      UnknownData_NXNC[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_3F62[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class USceneComponent*                             Root;                                                      // 0x03D8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UInstancedRopeComponent*                     InstancedRopes;                                            // 0x03E0(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FRiggingSystemLine>                  Lines;                                                     // 0x03E8(0x0010) (ZeroConstructor)
@@ -81,7 +81,7 @@ public:
 	struct FRiggingSystemPulleyData                    Pulleys;                                                   // 0x0418(0x0060)
 	TArray<struct FSocketId>                           Sockets;                                                   // 0x0478(0x0010) (ZeroConstructor)
 	TArray<float>                                      InitialMainRopeLengths;                                    // 0x0488(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData_4T7H[0x88];                                    // 0x0498(0x0088) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_8Z9S[0x88];                                    // 0x0498(0x0088) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -105,7 +105,7 @@ public:
 	struct FRopeStyleParams                            RopeStyle;                                                 // 0x02B0(0x0020) (Edit, BlueprintVisible, BlueprintReadOnly)
 	TArray<struct FRiggingSystemLineGroup>             LineGroups;                                                // 0x02D0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	class ARiggingSystem*                              Impl;                                                      // 0x02E0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_CD07[0x8];                                     // 0x02E8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BIMC[0x8];                                     // 0x02E8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -128,7 +128,7 @@ public:
 class URopeCatenaryRenderComponent : public UCordRenderComponent
 {
 public:
-	unsigned char                                      UnknownData_IPF9[0x8];                                     // 0x0628(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_NCKL[0x8];                                     // 0x0628(0x0008) Fix Super Size
 
 
 	static UClass* StaticClass()

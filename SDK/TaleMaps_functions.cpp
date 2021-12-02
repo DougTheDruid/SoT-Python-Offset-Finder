@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -198,14 +198,12 @@ void UTaleQuestAddTradeRouteMapStep::AfterRead()
 {
 	UTaleQuestStep::AfterRead();
 
-	READ_PTR_FULL(ClueSiteToMarkMap, UClueSiteTypeToMapMarkIdDataAsset);
 }
 
 void UTaleQuestAddTradeRouteMapStep::BeforeDelete()
 {
 	UTaleQuestStep::BeforeDelete();
 
-	DELE_PTR_FULL(ClueSiteToMarkMap);
 }
 
 void UTaleQuestLocationMapChestFoundStep::AfterRead()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -39,7 +39,7 @@ public:
 
 	void Set_Colour_on_All_Materials(const struct FName& ParameterName, const struct FLinearColor& Value);
 	void Set_Value_on_All_Materials(const struct FName& Variable_Name, float Value);
-	void Apply_Bits_to_Lanterns(int Bits);
+	void Apply_Bits_to_Lanterns(int bits);
 	void Create_Dynamic_Materials();
 	void UserConstructionScript();
 	void ReceiveBeginPlay();

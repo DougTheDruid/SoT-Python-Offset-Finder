@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.Apply Hit
 //		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -32,7 +32,7 @@ void ABP_HullDamage_C::Apply_Hit(const struct FVector& HitPosition, const struct
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.Apply Hit");
 
-	ABP_HullDamage_C_Apply_Hit_Params params;
+	ABP_HullDamage_C_Apply_Hit_Params params {};
 	params.HitPosition = HitPosition;
 	params.HitNormal = HitNormal;
 	params.HitStrength = HitStrength;
@@ -50,7 +50,7 @@ void ABP_HullDamage_C::Apply_Hit(const struct FVector& HitPosition, const struct
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.PlayHitSFX
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -60,7 +60,7 @@ void ABP_HullDamage_C::PlayHitSFX(const struct FVector& HitLocation, float HitSt
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.PlayHitSFX");
 
-	ABP_HullDamage_C_PlayHitSFX_Params params;
+	ABP_HullDamage_C_PlayHitSFX_Params params {};
 	params.HitLocation = HitLocation;
 	params.HitStrenght = HitStrenght;
 
@@ -73,7 +73,7 @@ void ABP_HullDamage_C::PlayHitSFX(const struct FVector& HitLocation, float HitSt
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.Apply Visual Hit
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -86,7 +86,7 @@ void ABP_HullDamage_C::Apply_Visual_Hit(const struct FVector& HitPosition, const
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.Apply Visual Hit");
 
-	ABP_HullDamage_C_Apply_Visual_Hit_Params params;
+	ABP_HullDamage_C_Apply_Visual_Hit_Params params {};
 	params.HitPosition = HitPosition;
 	params.HitNormal = HitNormal;
 	params.HitStrength = HitStrength;
@@ -104,7 +104,7 @@ void ABP_HullDamage_C::Apply_Visual_Hit(const struct FVector& HitPosition, const
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.Process Hit
 //		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -113,7 +113,7 @@ void ABP_HullDamage_C::Process_Hit(struct FImpactDamageEvent* ImpactDamageEvent)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.Process Hit");
 
-	ABP_HullDamage_C_Process_Hit_Params params;
+	ABP_HullDamage_C_Process_Hit_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -127,7 +127,7 @@ void ABP_HullDamage_C::Process_Hit(struct FImpactDamageEvent* ImpactDamageEvent)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.Scale Hit Strength and Get Decal Flag
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -140,7 +140,7 @@ void ABP_HullDamage_C::Scale_Hit_Strength_and_Get_Decal_Flag(const struct FVecto
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.Scale Hit Strength and Get Decal Flag");
 
-	ABP_HullDamage_C_Scale_Hit_Strength_and_Get_Decal_Flag_Params params;
+	ABP_HullDamage_C_Scale_Hit_Strength_and_Get_Decal_Flag_Params params {};
 	params.Hit_Normal = Hit_Normal;
 	params.Hit_Velocity = Hit_Velocity;
 	params.Hit_Strength = Hit_Strength;
@@ -159,7 +159,7 @@ void ABP_HullDamage_C::Scale_Hit_Strength_and_Get_Decal_Flag(const struct FVecto
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.Get Random Deferred Decal
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -168,7 +168,7 @@ void ABP_HullDamage_C::Get_Random_Deferred_Decal(class UMaterialInterface** Deca
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.Get Random Deferred Decal");
 
-	ABP_HullDamage_C_Get_Random_Deferred_Decal_Params params;
+	ABP_HullDamage_C_Get_Random_Deferred_Decal_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -182,7 +182,7 @@ void ABP_HullDamage_C::Get_Random_Deferred_Decal(class UMaterialInterface** Deca
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.Get Random Persistent Decal
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -191,7 +191,7 @@ void ABP_HullDamage_C::Get_Random_Persistent_Decal(class UTexture2D** Decal_Text
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.Get Random Persistent Decal");
 
-	ABP_HullDamage_C_Get_Random_Persistent_Decal_Params params;
+	ABP_HullDamage_C_Get_Random_Persistent_Decal_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -205,7 +205,7 @@ void ABP_HullDamage_C::Get_Random_Persistent_Decal(class UTexture2D** Decal_Text
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.Initialize Damage Materials
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -214,7 +214,7 @@ void ABP_HullDamage_C::Initialize_Damage_Materials(TArray<class UStaticMeshCompo
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.Initialize Damage Materials");
 
-	ABP_HullDamage_C_Initialize_Damage_Materials_Params params;
+	ABP_HullDamage_C_Initialize_Damage_Materials_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -228,14 +228,14 @@ void ABP_HullDamage_C::Initialize_Damage_Materials(TArray<class UStaticMeshCompo
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_HullDamage_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.UserConstructionScript");
 
-	ABP_HullDamage_C_UserConstructionScript_Params params;
+	ABP_HullDamage_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -246,14 +246,14 @@ void ABP_HullDamage_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_HullDamage_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.ReceiveBeginPlay");
 
-	ABP_HullDamage_C_ReceiveBeginPlay_Params params;
+	ABP_HullDamage_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -264,7 +264,7 @@ void ABP_HullDamage_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.BndEvt__ShipDamageComponent_K2Node_ComponentBoundEvent_6_ImpactDamageEventDelegate__DelegateSignature
 //		Flags  -> (HasOutParms, BlueprintEvent)
 // Parameters:
@@ -273,7 +273,7 @@ void ABP_HullDamage_C::BndEvt__ShipDamageComponent_K2Node_ComponentBoundEvent_6_
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.BndEvt__ShipDamageComponent_K2Node_ComponentBoundEvent_6_ImpactDamageEventDelegate__DelegateSignature");
 
-	ABP_HullDamage_C_BndEvt__ShipDamageComponent_K2Node_ComponentBoundEvent_6_ImpactDamageEventDelegate__DelegateSignature_Params params;
+	ABP_HullDamage_C_BndEvt__ShipDamageComponent_K2Node_ComponentBoundEvent_6_ImpactDamageEventDelegate__DelegateSignature_Params params {};
 	params.ImpactDamageEvent = ImpactDamageEvent;
 
 	auto flags = fn->FunctionFlags;
@@ -285,7 +285,7 @@ void ABP_HullDamage_C::BndEvt__ShipDamageComponent_K2Node_ComponentBoundEvent_6_
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_HullDamage.BP_HullDamage_C.ExecuteUbergraph_BP_HullDamage
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -294,7 +294,7 @@ void ABP_HullDamage_C::ExecuteUbergraph_BP_HullDamage(int EntryPoint)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_HullDamage.BP_HullDamage_C.ExecuteUbergraph_BP_HullDamage");
 
-	ABP_HullDamage_C_ExecuteUbergraph_BP_HullDamage_Params params;
+	ABP_HullDamage_C_ExecuteUbergraph_BP_HullDamage_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_shop_oos_01_a.BP_shop_oos_01_a_C.Set Magic Box Hidden
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -28,7 +28,7 @@ void ABP_shop_oos_01_a_C::Set_Magic_Box_Hidden(bool Is_Hidden)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_shop_oos_01_a.BP_shop_oos_01_a_C.Set Magic Box Hidden");
 
-	ABP_shop_oos_01_a_C_Set_Magic_Box_Hidden_Params params;
+	ABP_shop_oos_01_a_C_Set_Magic_Box_Hidden_Params params {};
 	params.Is_Hidden = Is_Hidden;
 
 	auto flags = fn->FunctionFlags;
@@ -40,14 +40,14 @@ void ABP_shop_oos_01_a_C::Set_Magic_Box_Hidden(bool Is_Hidden)
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_shop_oos_01_a.BP_shop_oos_01_a_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_shop_oos_01_a_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_shop_oos_01_a.BP_shop_oos_01_a_C.UserConstructionScript");
 
-	ABP_shop_oos_01_a_C_UserConstructionScript_Params params;
+	ABP_shop_oos_01_a_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 

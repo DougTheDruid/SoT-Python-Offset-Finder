@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_DistantLightProxy.BP_DistantLightProxy_C.FindExistingLight
 //		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -30,7 +30,7 @@ void ABP_DistantLightProxy_C::FindExistingLight(const struct FString& Name, bool
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DistantLightProxy.BP_DistantLightProxy_C.FindExistingLight");
 
-	ABP_DistantLightProxy_C_FindExistingLight_Params params;
+	ABP_DistantLightProxy_C_FindExistingLight_Params params {};
 	params.Name = Name;
 
 	auto flags = fn->FunctionFlags;
@@ -47,7 +47,7 @@ void ABP_DistantLightProxy_C::FindExistingLight(const struct FString& Name, bool
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_DistantLightProxy.BP_DistantLightProxy_C.Create Lights
 //		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -55,7 +55,7 @@ void ABP_DistantLightProxy_C::Create_Lights()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DistantLightProxy.BP_DistantLightProxy_C.Create Lights");
 
-	ABP_DistantLightProxy_C_Create_Lights_Params params;
+	ABP_DistantLightProxy_C_Create_Lights_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -66,14 +66,14 @@ void ABP_DistantLightProxy_C::Create_Lights()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_DistantLightProxy.BP_DistantLightProxy_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_DistantLightProxy_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DistantLightProxy.BP_DistantLightProxy_C.UserConstructionScript");
 
-	ABP_DistantLightProxy_C_UserConstructionScript_Params params;
+	ABP_DistantLightProxy_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -84,7 +84,7 @@ void ABP_DistantLightProxy_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_DistantLightProxy.BP_DistantLightProxy_C.Add Light
 //		Flags  -> (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -96,7 +96,7 @@ void ABP_DistantLightProxy_C::Add_Light(const struct FVector& Location, float Si
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DistantLightProxy.BP_DistantLightProxy_C.Add Light");
 
-	ABP_DistantLightProxy_C_Add_Light_Params params;
+	ABP_DistantLightProxy_C_Add_Light_Params params {};
 	params.Location = Location;
 	params.Size = Size;
 	params.Material = Material;
@@ -111,7 +111,7 @@ void ABP_DistantLightProxy_C::Add_Light(const struct FVector& Location, float Si
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_DistantLightProxy.BP_DistantLightProxy_C.ExecuteUbergraph_BP_DistantLightProxy
 //		Flags  -> (HasDefaults)
 // Parameters:
@@ -120,7 +120,7 @@ void ABP_DistantLightProxy_C::ExecuteUbergraph_BP_DistantLightProxy(int EntryPoi
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_DistantLightProxy.BP_DistantLightProxy_C.ExecuteUbergraph_BP_DistantLightProxy");
 
-	ABP_DistantLightProxy_C_ExecuteUbergraph_BP_DistantLightProxy_Params params;
+	ABP_DistantLightProxy_C_ExecuteUbergraph_BP_DistantLightProxy_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -47,7 +47,7 @@ struct FDestroyMysteriousNoteData
 struct FCreateMysteriousNoteData
 {
 	int                                                PlayerNetGUID;                                             // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_4A80[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_KXI2[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     NoteType;                                                  // 0x0008(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     NoteTitle;                                                 // 0x0018(0x0010) (ZeroConstructor, HasGetValueTypeHash)
 	struct FString                                     NoteBody;                                                  // 0x0028(0x0010) (ZeroConstructor, HasGetValueTypeHash)

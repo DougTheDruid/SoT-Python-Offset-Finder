@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class AShimmerActor : public AActor
 {
 public:
-	unsigned char                                      UnknownData_JN9T[0xA8];                                    // 0x03D0(0x00A8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_63R8[0xA8];                                    // 0x03D0(0x00A8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -71,7 +71,7 @@ public:
 class ATreasuryRoom : public AActor
 {
 public:
-	unsigned char                                      UnknownData_771K[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_2YYS[0x8];                                     // 0x03D0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UBoxComponent*                               RoomAreaComponent;                                         // 0x03D8(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TreasuryInactiveDurationMinSeconds;                        // 0x03E0(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                              TreasuryInactiveDurationMaxSeconds;                        // 0x03E4(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -93,19 +93,19 @@ public:
 	class UClass*                                      VaultLootSpawner;                                          // 0x0448(0x0008) (Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class AActor*                                      VaultLootSpawnLocationActor;                               // 0x0450(0x0008) (Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TAssetPtr<class AActor>                            Shimmer;                                                   // 0x0458(0x001C) ELEMENT_SIZE_MISMATCH (Edit, DisableEditOnTemplate, UObjectWrapper, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_H8J6[0x4];                                     // 0x0458(0x0004) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_WK6L[0x4];                                     // 0x0458(0x0004) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 	TArray<class AActor*>                              OverlappingActors;                                         // 0x0478(0x0010) (ZeroConstructor, Protected)
 	TArray<TWeakObjectPtr<class AController>>          CachedParticipantControllers;                              // 0x0488(0x0010) (ZeroConstructor, Protected, UObjectWrapper)
 	class AActor*                                      VaultLootSpawnerActor;                                     // 0x0498(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	struct FPlayerStat                                 VaultOpenStat;                                             // 0x04A0(0x0004) (Edit, Protected)
-	unsigned char                                      UnknownData_D65K[0x4];                                     // 0x04A4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_LHUH[0x4];                                     // 0x04A4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UMechanismActionComponent*                   FloodMechanismComponent;                                   // 0x04A8(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UMechanismActionComponent*                   DrainMechanismComponent;                                   // 0x04B0(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	class UMechanismActionComponent*                   VaultMechanismComponent;                                   // 0x04B8(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash)
 	unsigned char                                      FloodTriggerComponent[0x10];                               // 0x04C0(0x0010) UNKNOWN PROPERTY: InterfaceProperty TreasuryFramework.TreasuryRoom.FloodTriggerComponent
 	unsigned char                                      DrainTriggerComponent[0x10];                               // 0x04D0(0x0010) UNKNOWN PROPERTY: InterfaceProperty TreasuryFramework.TreasuryRoom.DrainTriggerComponent
 	unsigned char                                      VaultTriggerComponent[0x10];                               // 0x04E0(0x0010) UNKNOWN PROPERTY: InterfaceProperty TreasuryFramework.TreasuryRoom.VaultTriggerComponent
-	unsigned char                                      UnknownData_VG0M[0x10];                                    // 0x04F0(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_U6PK[0x10];                                    // 0x04F0(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -132,6 +132,7 @@ public:
 	void OnEnterRoom(class AActor* OtherActor);
 	void OnEncounterParamsSetup();
 	void OnDrainedWater();
+	TEnumAsByte<TreasuryFramework_ETreasuryState> GetState();
 	void AfterRead();
 	void BeforeDelete();
 

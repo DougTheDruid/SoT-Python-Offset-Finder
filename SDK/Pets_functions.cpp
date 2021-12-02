@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -1087,7 +1087,7 @@ void UPetIdleMovementInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B00790
+//		Offset -> 0x03A14640
 //		Name   -> Function Pets.PetAIController.OnPerceptionUpdated
 //		Flags  -> (Native, Public)
 // Parameters:
@@ -1096,7 +1096,7 @@ void APetAIController::OnPerceptionUpdated(TArray<class AActor*> ChangedPerceive
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetAIController.OnPerceptionUpdated");
 
-	APetAIController_OnPerceptionUpdated_Params params;
+	APetAIController_OnPerceptionUpdated_Params params {};
 	params.ChangedPerceivedActors = ChangedPerceivedActors;
 
 	auto flags = fn->FunctionFlags;
@@ -1109,7 +1109,7 @@ void APetAIController::OnPerceptionUpdated(TArray<class AActor*> ChangedPerceive
 
 
 // Function:
-//		Offset -> 0x03B00680
+//		Offset -> 0x03A14530
 //		Name   -> Function Pets.PetAIController.GetAthenaAICharPathFollowingComp
 //		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -1118,7 +1118,7 @@ class UAthenaAICharacterPathFollowingComponent* APetAIController::GetAthenaAICha
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetAIController.GetAthenaAICharPathFollowingComp");
 
-	APetAIController_GetAthenaAICharPathFollowingComp_Params params;
+	APetAIController_GetAthenaAICharPathFollowingComp_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1212,14 +1212,14 @@ void UPetFeedingDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B00950
+//		Offset -> 0x03A14800
 //		Name   -> Function Pets.PetHangoutSpotComponent.OnRep_IsOwnerSinking
 //		Flags  -> (Final, Native, Private)
 void UPetHangoutSpotComponent::OnRep_IsOwnerSinking()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetHangoutSpotComponent.OnRep_IsOwnerSinking");
 
-	UPetHangoutSpotComponent_OnRep_IsOwnerSinking_Params params;
+	UPetHangoutSpotComponent_OnRep_IsOwnerSinking_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1297,14 +1297,14 @@ void UPetOwnerInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B00B60
+//		Offset -> 0x03A14A10
 //		Name   -> Function Pets.PetOwnerComponent.Server_RequestDismissal
 //		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 void UPetOwnerComponent::Server_RequestDismissal()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetOwnerComponent.Server_RequestDismissal");
 
-	UPetOwnerComponent_Server_RequestDismissal_Params params;
+	UPetOwnerComponent_Server_RequestDismissal_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1398,7 +1398,7 @@ void UPetsServiceParamsDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B00AD0
+//		Offset -> 0x03A14980
 //		Name   -> Function Pets.PetsService.RemovePetFromActor
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1407,7 +1407,7 @@ void UPetsService::RemovePetFromActor(class AActor* InOwner)
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetsService.RemovePetFromActor");
 
-	UPetsService_RemovePetFromActor_Params params;
+	UPetsService_RemovePetFromActor_Params params {};
 	params.InOwner = InOwner;
 
 	auto flags = fn->FunctionFlags;
@@ -1420,7 +1420,7 @@ void UPetsService::RemovePetFromActor(class AActor* InOwner)
 
 
 // Function:
-//		Offset -> 0x03B004E0
+//		Offset -> 0x03A14390
 //		Name   -> Function Pets.PetsService.AddPetForActorAndWield
 //		Flags  -> (Native, Public, BlueprintCallable)
 // Parameters:
@@ -1432,7 +1432,7 @@ void UPetsService::AddPetForActorAndWield(class UClass* InPetType, const struct 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetsService.AddPetForActorAndWield");
 
-	UPetsService_AddPetForActorAndWield_Params params;
+	UPetsService_AddPetForActorAndWield_Params params {};
 	params.InPetType = InPetType;
 	params.InCustomisation = InCustomisation;
 	params.InOwner = InOwner;
@@ -1448,7 +1448,7 @@ void UPetsService::AddPetForActorAndWield(class UClass* InPetType, const struct 
 
 
 // Function:
-//		Offset -> 0x03B003A0
+//		Offset -> 0x03A14250
 //		Name   -> Function Pets.PetsService.AddPetForActor
 //		Flags  -> (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1459,7 +1459,7 @@ void UPetsService::AddPetForActor(class UClass* InPetType, const struct FPetCust
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.PetsService.AddPetForActor");
 
-	UPetsService_AddPetForActor_Params params;
+	UPetsService_AddPetForActor_Params params {};
 	params.InPetType = InPetType;
 	params.InCustomisation = InCustomisation;
 	params.InOwner = InOwner;
@@ -1526,14 +1526,14 @@ void UReactStateMappingsDataAsset::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03B00910
+//		Offset -> 0x03A147C0
 //		Name   -> Function Pets.WieldablePet.OnRep_HungerReactAnimationState
 //		Flags  -> (Final, Native, Private)
 void AWieldablePet::OnRep_HungerReactAnimationState()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.WieldablePet.OnRep_HungerReactAnimationState");
 
-	AWieldablePet_OnRep_HungerReactAnimationState_Params params;
+	AWieldablePet_OnRep_HungerReactAnimationState_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -1545,7 +1545,7 @@ void AWieldablePet::OnRep_HungerReactAnimationState()
 
 
 // Function:
-//		Offset -> 0x03B00890
+//		Offset -> 0x03A14740
 //		Name   -> Function Pets.WieldablePet.OnRep_DropRequest
 //		Flags  -> (Final, Native, Private)
 // Parameters:
@@ -1554,7 +1554,7 @@ void AWieldablePet::OnRep_DropRequest(TEnumAsByte<Pets_EWieldablePetDropRequestR
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function Pets.WieldablePet.OnRep_DropRequest");
 
-	AWieldablePet_OnRep_DropRequest_Params params;
+	AWieldablePet_OnRep_DropRequest_Params params {};
 	params.PriorDropRequest = PriorDropRequest;
 
 	auto flags = fn->FunctionFlags;

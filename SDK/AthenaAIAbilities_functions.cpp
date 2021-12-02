@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -137,14 +137,14 @@ void UBurrowEruptDamagerType::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03D9D110
+//		Offset -> 0x03CFE8D0
 //		Name   -> Function AthenaAIAbilities.BurrowHealVFXComponent.OnRep_IsVFXActive
 //		Flags  -> (Final, Native, Private)
 void UBurrowHealVFXComponent::OnRep_IsVFXActive()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAIAbilities.BurrowHealVFXComponent.OnRep_IsVFXActive");
 
-	UBurrowHealVFXComponent_OnRep_IsVFXActive_Params params;
+	UBurrowHealVFXComponent_OnRep_IsVFXActive_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -258,14 +258,14 @@ void UElectricShieldBuffInterface::BeforeDelete()
 }
 
 // Function:
-//		Offset -> 0x03D9D0F0
+//		Offset -> 0x03CFE8B0
 //		Name   -> Function AthenaAIAbilities.ElectricShieldBuffComponent.OnRep_IsShieldActive
 //		Flags  -> (Final, Native, Public)
 void UElectricShieldBuffComponent::OnRep_IsShieldActive()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAIAbilities.ElectricShieldBuffComponent.OnRep_IsShieldActive");
 
-	UElectricShieldBuffComponent_OnRep_IsShieldActive_Params params;
+	UElectricShieldBuffComponent_OnRep_IsShieldActive_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;
@@ -277,14 +277,14 @@ void UElectricShieldBuffComponent::OnRep_IsShieldActive()
 
 
 // Function:
-//		Offset -> 0x03D9D0C0
+//		Offset -> 0x03CFE880
 //		Name   -> Function AthenaAIAbilities.ElectricShieldBuffComponent.DeactivateShield
 //		Flags  -> (Native, Public)
 void UElectricShieldBuffComponent::DeactivateShield()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function AthenaAIAbilities.ElectricShieldBuffComponent.DeactivateShield");
 
-	UElectricShieldBuffComponent_DeactivateShield_Params params;
+	UElectricShieldBuffComponent_DeactivateShield_Params params {};
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

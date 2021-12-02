@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -20,7 +20,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_cmp_pocket_watch_mrh_01_e_Wieldable.BP_cmp_pocket_watch_mrh_01_e_Wieldable_C
-// 0x0000 (FullSize[0x0A60] - InheritedSize[0x0A60])
+// 0x0000 (FullSize[0x0A80] - InheritedSize[0x0A80])
 class ABP_cmp_pocket_watch_mrh_01_e_Wieldable_C : public ABP_PocketWatch_C
 {
 public:

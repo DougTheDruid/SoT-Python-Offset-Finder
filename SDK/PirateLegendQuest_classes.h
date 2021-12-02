@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -25,7 +25,7 @@ class AVeilOfTheAncients : public AInteractableBase
 {
 public:
 	float                                              NumberOfGems;                                              // 0x03F8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_GHVJ[0x4];                                     // 0x03FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_5Z7E[0x4];                                     // 0x03FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class ULockComponent*                              LockComponent;                                             // 0x0400(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                        StaticMeshComponent;                                       // 0x0408(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -48,13 +48,13 @@ public:
 class UVeilService : public UTaleQuestService
 {
 public:
-	unsigned char                                      UnknownData_MNFG[0x20];                                    // 0x0060(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_YWJZ[0x20];                                    // 0x0060(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UWorld*                                      World;                                                     // 0x0080(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AGameState*                                  GameState;                                                 // 0x0088(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_RLUN[0x8];                                     // 0x0090(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_960T[0x8];                                     // 0x0090(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class AVeilOfTheAncients*                          TrackedVeil;                                               // 0x0098(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AShip*                                       Ship;                                                      // 0x00A0(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_2KQZ[0xB8];                                    // 0x00A8(0x00B8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9FEJ[0xB8];                                    // 0x00A8(0x00B8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -71,11 +71,10 @@ public:
 };
 
 // Class PirateLegendQuest.GetVeilOfTheAncientsStep
-// 0x0008 (FullSize[0x0098] - InheritedSize[0x0090])
+// 0x0000 (FullSize[0x0090] - InheritedSize[0x0090])
 class UGetVeilOfTheAncientsStep : public UTaleQuestStep
 {
 public:
-	class UGetVeilOfTheAncientsStepDesc*               StepDesc;                                                  // 0x0090(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 
 	static UClass* StaticClass()

@@ -1,4 +1,4 @@
-﻿// Name: SoT, Version: 2.3.0
+﻿// Name: SoT, Version: 2.4.0
 
 #include "../pch.h"
 
@@ -19,7 +19,7 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.GetLineIntersectionFromPlane
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -31,7 +31,7 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::GetLineIntersectionFromPlan
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.GetLineIntersectionFromPlane");
 
-	ABP_SmallShip_StandardHull_InternalShipWater_C_GetLineIntersectionFromPlane_Params params;
+	ABP_SmallShip_StandardHull_InternalShipWater_C_GetLineIntersectionFromPlane_Params params {};
 	params.LineStart = LineStart;
 	params.LineEnd = LineEnd;
 
@@ -49,7 +49,7 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::GetLineIntersectionFromPlan
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.GetWaterLevel
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -58,7 +58,7 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::GetWaterLevel(float* WaterL
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.GetWaterLevel");
 
-	ABP_SmallShip_StandardHull_InternalShipWater_C_GetWaterLevel_Params params;
+	ABP_SmallShip_StandardHull_InternalShipWater_C_GetWaterLevel_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -72,7 +72,7 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::GetWaterLevel(float* WaterL
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.GetDistanceFromPlane
 //		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -82,7 +82,7 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::GetDistanceFromPlane(const 
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.GetDistanceFromPlane");
 
-	ABP_SmallShip_StandardHull_InternalShipWater_C_GetDistanceFromPlane_Params params;
+	ABP_SmallShip_StandardHull_InternalShipWater_C_GetDistanceFromPlane_Params params {};
 	params.Location = Location;
 
 	auto flags = fn->FunctionFlags;
@@ -97,14 +97,14 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::GetDistanceFromPlane(const 
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.UserConstructionScript
 //		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 void ABP_SmallShip_StandardHull_InternalShipWater_C::UserConstructionScript()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.UserConstructionScript");
 
-	ABP_SmallShip_StandardHull_InternalShipWater_C_UserConstructionScript_Params params;
+	ABP_SmallShip_StandardHull_InternalShipWater_C_UserConstructionScript_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -115,7 +115,7 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::UserConstructionScript()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.AddWater
 //		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -124,7 +124,7 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::AddWater(float Water_Amount
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.AddWater");
 
-	ABP_SmallShip_StandardHull_InternalShipWater_C_AddWater_Params params;
+	ABP_SmallShip_StandardHull_InternalShipWater_C_AddWater_Params params {};
 	params.Water_Amount = Water_Amount;
 
 	auto flags = fn->FunctionFlags;
@@ -136,14 +136,14 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::AddWater(float Water_Amount
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.ReceiveBeginPlay
 //		Flags  -> (Event, Public, BlueprintEvent)
 void ABP_SmallShip_StandardHull_InternalShipWater_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.ReceiveBeginPlay");
 
-	ABP_SmallShip_StandardHull_InternalShipWater_C_ReceiveBeginPlay_Params params;
+	ABP_SmallShip_StandardHull_InternalShipWater_C_ReceiveBeginPlay_Params params {};
 
 	auto flags = fn->FunctionFlags;
 
@@ -154,7 +154,7 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::ReceiveBeginPlay()
 
 
 // Function:
-//		Offset -> 0x01637030
+//		Offset -> 0x016629C0
 //		Name   -> Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.ExecuteUbergraph_BP_SmallShip_StandardHull_InternalShipWater
 //		Flags  -> ()
 // Parameters:
@@ -163,7 +163,7 @@ void ABP_SmallShip_StandardHull_InternalShipWater_C::ExecuteUbergraph_BP_SmallSh
 {
 	static UFunction* fn = UObject::FindObject<UFunction>("Function BP_SmallShip_StandardHull_InternalShipWater.BP_SmallShip_StandardHull_InternalShipWater_C.ExecuteUbergraph_BP_SmallShip_StandardHull_InternalShipWater");
 
-	ABP_SmallShip_StandardHull_InternalShipWater_C_ExecuteUbergraph_BP_SmallShip_StandardHull_InternalShipWater_Params params;
+	ABP_SmallShip_StandardHull_InternalShipWater_C_ExecuteUbergraph_BP_SmallShip_StandardHull_InternalShipWater_Params params {};
 	params.EntryPoint = EntryPoint;
 
 	auto flags = fn->FunctionFlags;

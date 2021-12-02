@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: SoT, Version: 2.3.0
+// Name: SoT, Version: 2.4.0
 
 
 /*!!DEFINE!!*/
@@ -29,17 +29,17 @@ public:
 	struct FLinearColor                                InactiveSelectionColor;                                    // 0x0048(0x0010) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor)
 	struct FLinearColor                                KeyboardFocusColor;                                        // 0x0058(0x0010) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay)
 	TEnumAsByte<EditorStyle_EColorVisionDeficiency>    ColorVisionDeficiencyPreviewType;                          // 0x0068(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	unsigned char                                      UnknownData_KJ2C[0x3];                                     // 0x0069(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_Y0CD[0x3];                                     // 0x0069(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	unsigned char                                      bUseSmallToolBarIcons : 1;                                 // 0x006C(0x0001) BIT_FIELD (Edit, Config, NoDestructor)
 	unsigned char                                      bEnableWindowAnimations : 1;                               // 0x006C(0x0001) BIT_FIELD (Edit, Config, NoDestructor)
 	unsigned char                                      bShowFriendlyNames : 1;                                    // 0x006C(0x0001) BIT_FIELD (Edit, Config, NoDestructor)
 	unsigned char                                      bExpandConfigurationMenus : 1;                             // 0x006C(0x0001) BIT_FIELD (Edit, Config, NoDestructor, AdvancedDisplay)
 	unsigned char                                      bShowProjectMenus : 1;                                     // 0x006C(0x0001) BIT_FIELD (Config, NoDestructor)
 	unsigned char                                      bShowLaunchMenus : 1;                                      // 0x006C(0x0001) BIT_FIELD (Config, NoDestructor)
-	unsigned char                                      UnknownData_PTA9[0x3];                                     // 0x006D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_4O5O[0x3];                                     // 0x006D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TEnumAsByte<CoreUObject_ELogTimes>                 LogTimestampMode;                                          // 0x0070(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                               bOpenAssetEditorTabsInNewWindow;                           // 0x0071(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor)
-	unsigned char                                      UnknownData_JELN[0x1E];                                    // 0x0072(0x001E) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_I0TJ[0x1E];                                    // 0x0072(0x001E) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
