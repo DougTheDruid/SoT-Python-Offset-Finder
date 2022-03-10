@@ -4,189 +4,168 @@
     "FullSize": "0x438",
     "InheritedSize": "0x408",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissarySecuredLootOnShip_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x428"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissarySecuredLootOnShip_GH_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x438",
     "InheritedSize": "0x408",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissarySecuredLootOnShip_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x428"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissarySecuredLootOnShip_MA_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x438",
     "InheritedSize": "0x408",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissarySecuredLootOnShip_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x428"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissarySecuredLootOnShip_OOS_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x438",
     "InheritedSize": "0x408",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissarySecuredLootOnShip_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x428"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissarySecuredLootOnShip_RB_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x438",
     "InheritedSize": "0x408",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissarySecuredLootOnShip_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x428"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

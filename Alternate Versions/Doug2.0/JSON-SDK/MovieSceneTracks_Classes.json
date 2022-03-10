@@ -4,1073 +4,973 @@
     "FullSize": "0xa8",
     "InheritedSize": "0x98",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ConstraintId": {
         "Type": "Struct Guid",
-        "Name": "ConstraintId",
         "Size": "0x10",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "MovieScene3DAttachSection": {
     "Super": "MovieScene3DConstraintSection",
     "FullSize": "0xc0",
     "InheritedSize": "0xa8",
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AttachSocketName": {
         "Type": "struct FName",
-        "Name": "AttachSocketName",
         "Size": "0x8",
         "Offset": "0xa8"
       },
-      {
+      "AttachComponentName": {
         "Type": "struct FName",
-        "Name": "AttachComponentName",
         "Size": "0x8",
         "Offset": "0xb0"
       },
-      {
+      "bConstrainTx": {
         "Type": "bool",
-        "Name": "bConstrainTx",
         "Size": "0x1",
         "Offset": "0xb8"
       },
-      {
+      "bConstrainTy": {
         "Type": "bool",
-        "Name": "bConstrainTy",
         "Size": "0x1",
         "Offset": "0xb8"
       },
-      {
+      "bConstrainTz": {
         "Type": "bool",
-        "Name": "bConstrainTz",
         "Size": "0x1",
         "Offset": "0xb8"
       },
-      {
+      "bConstrainRx": {
         "Type": "bool",
-        "Name": "bConstrainRx",
         "Size": "0x1",
         "Offset": "0xb8"
       },
-      {
+      "bConstrainRy": {
         "Type": "bool",
-        "Name": "bConstrainRy",
         "Size": "0x1",
         "Offset": "0xb8"
       },
-      {
+      "bConstrainRz": {
         "Type": "bool",
-        "Name": "bConstrainRz",
         "Size": "0x1",
         "Offset": "0xb8"
       }
-    ]
+    }
   },
   "MovieScene3DPathSection": {
     "Super": "MovieScene3DConstraintSection",
     "FullSize": "0x128",
     "InheritedSize": "0xa8",
     "ClassSize": "0x80",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TimingCurve": {
         "Type": "Struct RichCurve",
-        "Name": "TimingCurve",
         "Size": "0x78",
         "Offset": "0xa8"
       },
-      {
+      "FrontAxisEnum": {
         "Type": "byte",
-        "Name": "FrontAxisEnum",
         "Size": "0x1",
         "Offset": "0x120"
       },
-      {
+      "UpAxisEnum": {
         "Type": "byte",
-        "Name": "UpAxisEnum",
         "Size": "0x1",
         "Offset": "0x121"
       },
-      {
+      "bFollow": {
         "Type": "bool",
-        "Name": "bFollow",
         "Size": "0x1",
         "Offset": "0x124"
       },
-      {
+      "bReverse": {
         "Type": "bool",
-        "Name": "bReverse",
         "Size": "0x1",
         "Offset": "0x124"
       },
-      {
+      "bForceUpright": {
         "Type": "bool",
-        "Name": "bForceUpright",
         "Size": "0x1",
         "Offset": "0x124"
       }
-    ]
+    }
   },
   "MovieScene3DConstraintTrack": {
     "Super": "MovieSceneTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ConstraintSections": {
         "Type": "TArray<class ConstraintSections*>",
-        "Name": "ConstraintSections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieScene3DAttachTrack": {
     "Super": "MovieScene3DConstraintTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x98",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieScene3DPathTrack": {
     "Super": "MovieScene3DConstraintTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x98",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieScene3DTransformSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x4d8",
     "InheritedSize": "0x98",
     "ClassSize": "0x440",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Translation": {
         "Type": "Struct RichCurve",
-        "Name": "Translation",
         "Size": "0x78",
         "Offset": "0xa0"
       },
-      {
+      "Rotation": {
         "Type": "Struct RichCurve",
-        "Name": "Rotation",
         "Size": "0x78",
         "Offset": "0x208"
       },
-      {
+      "Scale": {
         "Type": "Struct RichCurve",
-        "Name": "Scale",
         "Size": "0x78",
         "Offset": "0x370"
       }
-    ]
+    }
   },
   "MovieSceneActorReferenceSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x130",
     "InheritedSize": "0x98",
     "ClassSize": "0x98",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ActorGuidIndexCurve": {
         "Type": "Struct IntegralCurve",
-        "Name": "ActorGuidIndexCurve",
         "Size": "0x70",
         "Offset": "0xa0"
       },
-      {
+      "ActorGuidStrings": {
         "Type": "TArray<Str >",
-        "Name": "ActorGuidStrings",
         "Size": "0x10",
         "Offset": "0x120"
       }
-    ]
+    }
   },
   "MovieSceneAudioSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x1a8",
     "InheritedSize": "0x98",
     "ClassSize": "0x110",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Sound": {
         "Type": "Class SoundBase*",
-        "Name": "Sound",
         "Size": "0x8",
         "Offset": "0x98"
       },
-      {
+      "StartOffset": {
         "Type": "float",
-        "Name": "StartOffset",
         "Size": "0x4",
         "Offset": "0xa0"
       },
-      {
+      "AudioStartTime": {
         "Type": "float",
-        "Name": "AudioStartTime",
         "Size": "0x4",
         "Offset": "0xa4"
       },
-      {
+      "AudioDilationFactor": {
         "Type": "float",
-        "Name": "AudioDilationFactor",
         "Size": "0x4",
         "Offset": "0xa8"
       },
-      {
+      "AudioVolume": {
         "Type": "float",
-        "Name": "AudioVolume",
         "Size": "0x4",
         "Offset": "0xac"
       },
-      {
+      "SoundVolume": {
         "Type": "Struct RichCurve",
-        "Name": "SoundVolume",
         "Size": "0x78",
         "Offset": "0xb0"
       },
-      {
+      "PitchMultiplier": {
         "Type": "Struct RichCurve",
-        "Name": "PitchMultiplier",
         "Size": "0x78",
         "Offset": "0x128"
       },
-      {
+      "bSuppressSubtitles": {
         "Type": "bool",
-        "Name": "bSuppressSubtitles",
         "Size": "0x1",
         "Offset": "0x1a0"
       }
-    ]
+    }
   },
   "MovieSceneAudioTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AudioSections": {
         "Type": "TArray<class AudioSections*>",
-        "Name": "AudioSections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieSceneBoolSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x118",
     "InheritedSize": "0x98",
     "ClassSize": "0x80",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DefaultValue": {
         "Type": "bool",
-        "Name": "DefaultValue",
         "Size": "0x1",
         "Offset": "0xa0"
       },
-      {
+      "BoolCurve": {
         "Type": "Struct IntegralCurve",
-        "Name": "BoolCurve",
         "Size": "0x70",
         "Offset": "0xa8"
       }
-    ]
+    }
   },
   "MovieSceneSpawnSection": {
     "Super": "MovieSceneBoolSection",
     "FullSize": "0x118",
     "InheritedSize": "0x118",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneByteSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x110",
     "InheritedSize": "0x98",
     "ClassSize": "0x78",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ByteCurve": {
         "Type": "Struct IntegralCurve",
-        "Name": "ByteCurve",
         "Size": "0x70",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "MovieSceneCameraAnimSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0xd8",
     "InheritedSize": "0x98",
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AnimData": {
         "Type": "Struct MovieSceneCameraAnimSectionData",
-        "Name": "AnimData",
         "Size": "0x20",
         "Offset": "0x98"
       },
-      {
+      "CameraAnim": {
         "Type": "Class CameraAnim*",
-        "Name": "CameraAnim",
         "Size": "0x8",
         "Offset": "0xb8"
       },
-      {
+      "PlayRate": {
         "Type": "float",
-        "Name": "PlayRate",
         "Size": "0x4",
         "Offset": "0xc0"
       },
-      {
+      "PlayScale": {
         "Type": "float",
-        "Name": "PlayScale",
         "Size": "0x4",
         "Offset": "0xc4"
       },
-      {
+      "BlendInTime": {
         "Type": "float",
-        "Name": "BlendInTime",
         "Size": "0x4",
         "Offset": "0xc8"
       },
-      {
+      "BlendOutTime": {
         "Type": "float",
-        "Name": "BlendOutTime",
         "Size": "0x4",
         "Offset": "0xcc"
       },
-      {
+      "bLooping": {
         "Type": "bool",
-        "Name": "bLooping",
         "Size": "0x1",
         "Offset": "0xd0"
       }
-    ]
+    }
   },
   "MovieSceneCameraAnimTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CameraAnimSections": {
         "Type": "TArray<class CameraAnimSections*>",
-        "Name": "CameraAnimSections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieSceneCameraCutSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0xa8",
     "InheritedSize": "0x98",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CameraGuid": {
         "Type": "Struct Guid",
-        "Name": "CameraGuid",
         "Size": "0x10",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "MovieSceneCameraCutTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Sections": {
         "Type": "TArray<class Sections*>",
-        "Name": "Sections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieSceneCameraShakeSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0xd8",
     "InheritedSize": "0x98",
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ShakeData": {
         "Type": "Struct MovieSceneCameraShakeSectionData",
-        "Name": "ShakeData",
         "Size": "0x20",
         "Offset": "0x98"
       },
-      {
+      "ShakeClass": {
         "Type": "class",
-        "Name": "ShakeClass",
         "Size": "0x8",
         "Offset": "0xb8"
       },
-      {
+      "PlayScale": {
         "Type": "float",
-        "Name": "PlayScale",
         "Size": "0x4",
         "Offset": "0xc0"
       },
-      {
+      "PlaySpace": {
         "Type": "byte",
-        "Name": "PlaySpace",
         "Size": "0x1",
         "Offset": "0xc4"
       },
-      {
+      "UserDefinedPlaySpace": {
         "Type": "Struct Rotator",
-        "Name": "UserDefinedPlaySpace",
         "Size": "0xc",
         "Offset": "0xc8"
       }
-    ]
+    }
   },
   "MovieSceneCameraShakeTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CameraShakeSections": {
         "Type": "TArray<class CameraShakeSections*>",
-        "Name": "CameraShakeSections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieSceneColorSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x280",
     "InheritedSize": "0x98",
     "ClassSize": "0x1e8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "RedCurve": {
         "Type": "Struct RichCurve",
-        "Name": "RedCurve",
         "Size": "0x78",
         "Offset": "0xa0"
       },
-      {
+      "GreenCurve": {
         "Type": "Struct RichCurve",
-        "Name": "GreenCurve",
         "Size": "0x78",
         "Offset": "0x118"
       },
-      {
+      "BlueCurve": {
         "Type": "Struct RichCurve",
-        "Name": "BlueCurve",
         "Size": "0x78",
         "Offset": "0x190"
       },
-      {
+      "AlphaCurve": {
         "Type": "Struct RichCurve",
-        "Name": "AlphaCurve",
         "Size": "0x78",
         "Offset": "0x208"
       }
-    ]
+    }
   },
   "MovieSceneEnumSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x110",
     "InheritedSize": "0x98",
     "ClassSize": "0x78",
-    "Attributes": [
-      {
+    "Attributes": {
+      "EnumCurve": {
         "Type": "Struct IntegralCurve",
-        "Name": "EnumCurve",
         "Size": "0x70",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "MovieSceneEventSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x1a8",
     "InheritedSize": "0x98",
     "ClassSize": "0x110",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Events": {
         "Type": "Struct NameCurve",
-        "Name": "Events",
         "Size": "0x68",
         "Offset": "0x98"
       },
-      {
+      "EventData": {
         "Type": "Struct MovieSceneEventSectionData",
-        "Name": "EventData",
         "Size": "0x20",
         "Offset": "0x100"
       }
-    ]
+    }
   },
   "MovieSceneSpawnTrack": {
     "Super": "MovieSceneTrack",
     "FullSize": "0xa8",
     "InheritedSize": "0x88",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Sections": {
         "Type": "TArray<class Sections*>",
-        "Name": "Sections",
         "Size": "0x10",
         "Offset": "0x88"
       },
-      {
+      "ObjectGuid": {
         "Type": "Struct Guid",
-        "Name": "ObjectGuid",
         "Size": "0x10",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "MovieSceneEventTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0xa0",
     "InheritedSize": "0x88",
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "bFireEventsWhenForwards": {
         "Type": "bool",
-        "Name": "bFireEventsWhenForwards",
         "Size": "0x1",
         "Offset": "0x88"
       },
-      {
+      "bFireEventsWhenBackwards": {
         "Type": "bool",
-        "Name": "bFireEventsWhenBackwards",
         "Size": "0x1",
         "Offset": "0x88"
       },
-      {
+      "Sections": {
         "Type": "TArray<class Sections*>",
-        "Name": "Sections",
         "Size": "0x10",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "MovieSceneFloatSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x118",
     "InheritedSize": "0x98",
     "ClassSize": "0x80",
-    "Attributes": [
-      {
+    "Attributes": {
+      "FloatCurve": {
         "Type": "Struct RichCurve",
-        "Name": "FloatCurve",
         "Size": "0x78",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "MovieSceneFadeSection": {
     "Super": "MovieSceneFloatSection",
     "FullSize": "0x130",
     "InheritedSize": "0x118",
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "FadeColor": {
         "Type": "Struct LinearColor",
-        "Name": "FadeColor",
         "Size": "0x10",
         "Offset": "0x118"
       },
-      {
+      "bFadeAudio": {
         "Type": "bool",
-        "Name": "bFadeAudio",
         "Size": "0x1",
         "Offset": "0x128"
       }
-    ]
+    }
   },
   "MovieSceneSlomoSection": {
     "Super": "MovieSceneFloatSection",
     "FullSize": "0x118",
     "InheritedSize": "0x118",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneIntegerSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x110",
     "InheritedSize": "0x98",
     "ClassSize": "0x78",
-    "Attributes": [
-      {
+    "Attributes": {
+      "IntegerCurve": {
         "Type": "Struct IntegralCurve",
-        "Name": "IntegerCurve",
         "Size": "0x70",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "MovieSceneLevelVisibilitySection": {
     "Super": "MovieSceneSection",
     "FullSize": "0xb0",
     "InheritedSize": "0x98",
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Visibility": {
         "Type": "byte",
-        "Name": "Visibility",
         "Size": "0x1",
         "Offset": "0x98"
       },
-      {
+      "LevelNames": {
         "Type": "TArray<Struct FName>",
-        "Name": "LevelNames",
         "Size": "0x10",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "MovieScenePropertyTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0x88",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "PropertyName": {
         "Type": "struct FName",
-        "Name": "PropertyName",
         "Size": "0x8",
         "Offset": "0x88"
       },
-      {
+      "PropertyPath": {
         "Type": "Struct FString",
-        "Name": "PropertyPath",
         "Size": "0x10",
         "Offset": "0x90"
       },
-      {
+      "Sections": {
         "Type": "TArray<class Sections*>",
-        "Name": "Sections",
         "Size": "0x10",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "MovieSceneLevelVisibilityTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Sections": {
         "Type": "TArray<class Sections*>",
-        "Name": "Sections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieSceneParameterSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0xc8",
     "InheritedSize": "0x98",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ScalarParameterNamesAndCurves": {
         "Type": "TArray<Struct Sections>",
-        "Name": "ScalarParameterNamesAndCurves",
         "Size": "0x10",
         "Offset": "0x98"
       },
-      {
+      "VectorParameterNamesAndCurves": {
         "Type": "TArray<Struct ScalarParameterNamesAndCurves>",
-        "Name": "VectorParameterNamesAndCurves",
         "Size": "0x10",
         "Offset": "0xa8"
       },
-      {
+      "ColorParameterNamesAndCurves": {
         "Type": "TArray<Struct VectorParameterNamesAndCurves>",
-        "Name": "ColorParameterNamesAndCurves",
         "Size": "0x10",
         "Offset": "0xb8"
       }
-    ]
+    }
   },
   "MovieSceneMaterialTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Sections": {
         "Type": "TArray<class Sections*>",
-        "Name": "Sections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieSceneComponentMaterialTrack": {
     "Super": "MovieSceneMaterialTrack",
     "FullSize": "0xa0",
     "InheritedSize": "0x98",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MaterialIndex": {
         "Type": "int",
-        "Name": "MaterialIndex",
         "Size": "0x4",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "MovieSceneParticleParameterTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Sections": {
         "Type": "TArray<class Sections*>",
-        "Name": "Sections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieSceneParticleSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x108",
     "InheritedSize": "0x98",
     "ClassSize": "0x70",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ParticleKeys": {
         "Type": "Struct IntegralCurve",
-        "Name": "ParticleKeys",
         "Size": "0x70",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "MovieSceneParticleTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ParticleSections": {
         "Type": "TArray<class ParticleSections*>",
-        "Name": "ParticleSections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieScene3DTransformTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0xb0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneActorReferenceTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0xb0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneBoolTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0xb0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneVisibilityTrack": {
     "Super": "MovieSceneBoolTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0xb0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneByteTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb8",
     "InheritedSize": "0xb0",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Enum": {
         "Type": "Class Enum*",
-        "Name": "Enum",
         "Size": "0x8",
         "Offset": "0xb0"
       }
-    ]
+    }
   },
   "MovieSceneColorTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb8",
     "InheritedSize": "0xb0",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "bIsSlateColor": {
         "Type": "bool",
-        "Name": "bIsSlateColor",
         "Size": "0x1",
         "Offset": "0xb0"
       }
-    ]
+    }
   },
   "MovieSceneEnumTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb8",
     "InheritedSize": "0xb0",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Enum": {
         "Type": "Class Enum*",
-        "Name": "Enum",
         "Size": "0x8",
         "Offset": "0xb0"
       }
-    ]
+    }
   },
   "MovieSceneFloatTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0xb0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneFadeTrack": {
     "Super": "MovieSceneFloatTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0xb0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneSlomoTrack": {
     "Super": "MovieSceneFloatTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0xb0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneIntegerTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0xb0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneStringTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb0",
     "InheritedSize": "0xb0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneVectorTrack": {
     "Super": "MovieScenePropertyTrack",
     "FullSize": "0xb8",
     "InheritedSize": "0xb0",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "NumChannelsUsed": {
         "Type": "int",
-        "Name": "NumChannelsUsed",
         "Size": "0x4",
         "Offset": "0xb0"
       }
-    ]
+    }
   },
   "MovieSceneSkeletalAnimationSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x158",
     "InheritedSize": "0x98",
     "ClassSize": "0xc0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Params": {
         "Type": "Struct MovieSceneSkeletalAnimationParams",
-        "Name": "Params",
         "Size": "0x98",
         "Offset": "0x98"
       },
-      {
+      "AnimSequence": {
         "Type": "Class AnimSequence*",
-        "Name": "AnimSequence",
         "Size": "0x8",
         "Offset": "0x130"
       },
-      {
+      "Animation": {
         "Type": "Class AnimSequenceBase*",
-        "Name": "Animation",
         "Size": "0x8",
         "Offset": "0x138"
       },
-      {
+      "StartOffset": {
         "Type": "float",
-        "Name": "StartOffset",
         "Size": "0x4",
         "Offset": "0x140"
       },
-      {
+      "EndOffset": {
         "Type": "float",
-        "Name": "EndOffset",
         "Size": "0x4",
         "Offset": "0x144"
       },
-      {
+      "PlayRate": {
         "Type": "float",
-        "Name": "PlayRate",
         "Size": "0x4",
         "Offset": "0x148"
       },
-      {
+      "bReverse": {
         "Type": "bool",
-        "Name": "bReverse",
         "Size": "0x1",
         "Offset": "0x14c"
       },
-      {
+      "SlotName": {
         "Type": "struct FName",
-        "Name": "SlotName",
         "Size": "0x8",
         "Offset": "0x150"
       }
-    ]
+    }
   },
   "MovieSceneSkeletalAnimationTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AnimationSections": {
         "Type": "TArray<class AnimationSections*>",
-        "Name": "AnimationSections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieSceneStringSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x118",
     "InheritedSize": "0x98",
     "ClassSize": "0x80",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StringCurve": {
         "Type": "Struct StringCurve",
-        "Name": "StringCurve",
         "Size": "0x78",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "MovieSceneSubSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x100",
     "InheritedSize": "0x98",
     "ClassSize": "0x68",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Parameters": {
         "Type": "Struct MovieSceneSectionParameters",
-        "Name": "Parameters",
         "Size": "0x10",
         "Offset": "0x98"
       },
-      {
+      "StartOffset": {
         "Type": "float",
-        "Name": "StartOffset",
         "Size": "0x4",
         "Offset": "0xa8"
       },
-      {
+      "TimeScale": {
         "Type": "float",
-        "Name": "TimeScale",
         "Size": "0x4",
         "Offset": "0xac"
       },
-      {
+      "PrerollTime": {
         "Type": "float",
-        "Name": "PrerollTime",
         "Size": "0x4",
         "Offset": "0xb0"
       },
-      {
+      "SubSequence": {
         "Type": "Class MovieSceneSequence*",
-        "Name": "SubSequence",
         "Size": "0x8",
         "Offset": "0xb8"
       },
-      {
+      "TargetSequenceName": {
         "Type": "Struct FString",
-        "Name": "TargetSequenceName",
         "Size": "0x10",
         "Offset": "0xe0"
       },
-      {
+      "TargetPathToRecordTo": {
         "Type": "Struct DirectoryPath",
-        "Name": "TargetPathToRecordTo",
         "Size": "0x10",
         "Offset": "0xf0"
       }
-    ]
+    }
   },
   "MovieSceneCinematicShotSection": {
     "Super": "MovieSceneSubSection",
     "FullSize": "0x138",
     "InheritedSize": "0x100",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DisplayName": {
         "Type": "Struct FText",
-        "Name": "DisplayName",
         "Size": "0x38",
         "Offset": "0x100"
       }
-    ]
+    }
   },
   "MovieSceneSubTrack": {
     "Super": "MovieSceneNameableTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Sections": {
         "Type": "TArray<class Sections*>",
-        "Name": "Sections",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "MovieSceneCinematicShotTrack": {
     "Super": "MovieSceneSubTrack",
     "FullSize": "0x98",
     "InheritedSize": "0x98",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneVectorSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x288",
     "InheritedSize": "0x98",
     "ClassSize": "0x1f0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Curves": {
         "Type": "Struct RichCurve",
-        "Name": "Curves",
         "Size": "0x78",
         "Offset": "0xa0"
       },
-      {
+      "ChannelsUsed": {
         "Type": "int",
-        "Name": "ChannelsUsed",
         "Size": "0x4",
         "Offset": "0x280"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

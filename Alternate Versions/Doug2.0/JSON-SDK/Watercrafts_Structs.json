@@ -1,301 +1,267 @@
 {
   "RowboatDamageEffectData": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DynamicMaterialInstance": {
         "Type": "Class MaterialInstanceDynamic*",
-        "Name": "DynamicMaterialInstance",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "FadeInDuration": {
         "Type": "float",
-        "Name": "FadeInDuration",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "RowboatStrainDamageData": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StormDamageScalar": {
         "Type": "float",
-        "Name": "StormDamageScalar",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "WaterStrengthToCountAsStorm": {
         "Type": "float",
-        "Name": "WaterStrengthToCountAsStorm",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "StormStrengthThresholdForDamage": {
         "Type": "float",
-        "Name": "StormStrengthThresholdForDamage",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "MinStormDamageFrequencyInSeconds": {
         "Type": "float",
-        "Name": "MinStormDamageFrequencyInSeconds",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      {
+      "MaxStormDamageFrequencyInSeconds": {
         "Type": "float",
-        "Name": "MaxStormDamageFrequencyInSeconds",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      {
+      "WorldEdgeDamageScalar": {
         "Type": "float",
-        "Name": "WorldEdgeDamageScalar",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      {
+      "MinWorldEdgeDamageFrequencyInSeconds": {
         "Type": "float",
-        "Name": "MinWorldEdgeDamageFrequencyInSeconds",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      {
+      "MaxWorldEdgeDamageFrequencyInSeconds": {
         "Type": "float",
-        "Name": "MaxWorldEdgeDamageFrequencyInSeconds",
         "Size": "0x4",
         "Offset": "0x1c"
       }
-    ]
+    }
   },
   "ScrapeableDamageSpeedEntry": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SpeedBand": {
         "Type": "class",
-        "Name": "SpeedBand",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ForceFeedbackEffect": {
         "Type": "Class ForceFeedbackEffect*",
-        "Name": "ForceFeedbackEffect",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "DamageAmount": {
         "Type": "int",
-        "Name": "DamageAmount",
         "Size": "0x4",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "WatercraftRolloverCorrector": {
     "ClassSize": "0xc",
-    "Attributes": [
-      {
+    "Attributes": {
+      "RollThresholdToConsiderRolledOver": {
         "Type": "float",
-        "Name": "RollThresholdToConsiderRolledOver",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "TorqueScalar": {
         "Type": "float",
-        "Name": "TorqueScalar",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    ]
+    }
   },
   "OarParams": {
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "RowingPower": {
         "Type": "float",
-        "Name": "RowingPower",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "OarLength": {
         "Type": "float",
-        "Name": "OarLength",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "OarOffsetDirection": {
         "Type": "Struct Vector",
-        "Name": "OarOffsetDirection",
         "Size": "0xc",
         "Offset": "0x8"
       },
-      {
+      "OarForwardForceDirection": {
         "Type": "Struct Vector",
-        "Name": "OarForwardForceDirection",
         "Size": "0xc",
         "Offset": "0x14"
       },
-      {
+      "TimeForCompleteStroke": {
         "Type": "float",
-        "Name": "TimeForCompleteStroke",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      {
+      "TimeForResetCompletion": {
         "Type": "float",
-        "Name": "TimeForResetCompletion",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      {
+      "RowingPowerCurve": {
         "Type": "Class CurveFloat*",
-        "Name": "RowingPowerCurve",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      {
+      "BrakeForcePerMetresPerSecond": {
         "Type": "float",
-        "Name": "BrakeForcePerMetresPerSecond",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      {
+      "EndOfStrokeBrakeForcePerMetresPerSecond": {
         "Type": "float",
-        "Name": "EndOfStrokeBrakeForcePerMetresPerSecond",
         "Size": "0x4",
         "Offset": "0x34"
       }
-    ]
+    }
   },
   "Oar": {
     "ClassSize": "0x60",
-    "Attributes": [
-      {
+    "Attributes": {
+      "OarParams": {
         "Type": "Struct OarParams",
-        "Name": "OarParams",
         "Size": "0x38",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "QuestVariableWatercraft": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventOarStrokeEnded": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventRowboatExitedWater": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventRowboatEnteredWater": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "RowboatMountStateTelemetryEvent": {
     "ClassSize": "0x14",
-    "Attributes": [
-      {
+    "Attributes": {
+      "WatercraftId": {
         "Type": "Struct Guid",
-        "Name": "WatercraftId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "ActionName": {
         "Type": "byte",
-        "Name": "ActionName",
         "Size": "0x1",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "WatercraftDespawnTelemetryEvent": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "WatercraftId": {
         "Type": "Struct Guid",
-        "Name": "WatercraftId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "Location": {
         "Type": "Struct Vector",
-        "Name": "Location",
         "Size": "0xc",
         "Offset": "0x10"
       },
-      {
+      "DespawnReason": {
         "Type": "byte",
-        "Name": "DespawnReason",
         "Size": "0x1",
         "Offset": "0x1c"
       }
-    ]
+    }
   },
   "WatercraftSpawnTelemetryEvent": {
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "WatercraftId": {
         "Type": "Struct Guid",
-        "Name": "WatercraftId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "WatercraftType": {
         "Type": "Struct FString",
-        "Name": "WatercraftType",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "Location": {
         "Type": "Struct Vector",
-        "Name": "Location",
         "Size": "0xc",
         "Offset": "0x20"
       },
-      {
+      "Forward": {
         "Type": "Struct Vector",
-        "Name": "Forward",
         "Size": "0xc",
         "Offset": "0x2c"
       }
-    ]
+    }
   },
   "EventExitedWatercraft": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Watercraft": {
         "Type": "Class Actor*",
-        "Name": "Watercraft",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "Actor": {
         "Type": "Class Actor*",
-        "Name": "Actor",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "EventEnteredWatercraft": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Watercraft": {
         "Type": "Class Actor*",
-        "Name": "Watercraft",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "Actor": {
         "Type": "Class Actor*",
-        "Name": "Actor",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

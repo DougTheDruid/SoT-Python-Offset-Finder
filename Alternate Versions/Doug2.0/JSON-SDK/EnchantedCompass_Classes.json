@@ -4,195 +4,183 @@
     "FullSize": "0x1f0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x128",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StartAnnouncingEvent": {
         "Type": "Class WwiseEvent*",
-        "Name": "StartAnnouncingEvent",
         "Size": "0x8",
         "Offset": "0xc8"
       },
-      {
+      "StopAnnouncingEvent": {
         "Type": "Class WwiseEvent*",
-        "Name": "StopAnnouncingEvent",
         "Size": "0x8",
         "Offset": "0xd0"
       },
-      {
+      "MaxFrequencyDistanceSquared": {
         "Type": "float",
-        "Name": "MaxFrequencyDistanceSquared",
         "Size": "0x4",
         "Offset": "0xd8"
       },
-      {
+      "IsSettingEnabled": {
         "Type": "bool",
-        "Name": "IsSettingEnabled",
         "Size": "0x1",
         "Offset": "0x120"
       }
-    ]
+    }
   },
   "MultiTargetEnchantedCompass": {
     "Super": "Compass",
     "FullSize": "0x8a0",
     "InheritedSize": "0x870",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Locations": {
         "Type": "TArray<Struct BP_GetTargetLocations>",
-        "Name": "Locations",
         "Size": "0x10",
         "Offset": "0x870"
       },
-      {
+      "LocationIds": {
         "Type": "TArray<Struct Locations>",
-        "Name": "LocationIds",
         "Size": "0x10",
         "Offset": "0x880"
       },
-      {
+      "InventoryItem": {
         "Type": "Class InventoryItemComponent*",
-        "Name": "InventoryItem",
         "Size": "0x8",
         "Offset": "0x890"
       },
-      {
+      "ProximityAnnouncementComponent": {
         "Type": "Class EnchantedCompassProximityAnnouncementComponent*",
-        "Name": "ProximityAnnouncementComponent",
         "Size": "0x8",
         "Offset": "0x898"
       }
-    ]
+    }
   },
   "PrototypeMultiTargetEnchantedCompass": {
     "Super": "MultiTargetEnchantedCompass",
     "FullSize": "0x8a0",
     "InheritedSize": "0x8a0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestMultiTargetCompassAddTrackedLocationStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "TaleQuestMultiTargetCompassAddTrackedLocationStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xc0",
     "InheritedSize": "0x80",
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Location": {
         "Type": "Struct QuestVariableVector",
-        "Name": "Location",
         "Size": "0x20",
         "Offset": "0x80"
       },
-      {
+      "TargetID": {
         "Type": "Struct QuestVariableGuid",
-        "Name": "TargetID",
         "Size": "0x20",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "TaleQuestMultiTargetCompassRemoveTrackedLocationStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xa0",
     "InheritedSize": "0x90",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
     "InheritedSize": "0x80",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TargetID": {
         "Type": "Struct QuestVariableGuid",
-        "Name": "TargetID",
         "Size": "0x20",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "TaleQuestMultiTargetCompassService": {
     "Super": "TaleQuestToolService",
     "FullSize": "0x140",
     "InheritedSize": "0x120",
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestMultiTargetCompassServiceDesc": {
     "Super": "TaleQuestToolServiceDesc",
     "FullSize": "0x38",
     "InheritedSize": "0x30",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CompassDesc": {
         "Type": "class",
-        "Name": "CompassDesc",
         "Size": "0x8",
         "Offset": "0x30"
       }
-    ]
+    }
   },
   "TaleQuestSetCompassTargetToTargetStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xd0",
     "InheritedSize": "0x90",
     "ClassSize": "0x40",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestSetCompassTargetBaseStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x88",
     "InheritedSize": "0x80",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TargetUpdateReason": {
         "Type": "byte",
-        "Name": "TargetUpdateReason",
         "Size": "0x1",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "TaleQuestSetCompassTargetToActorStepDesc": {
     "Super": "TaleQuestSetCompassTargetBaseStepDesc",
     "FullSize": "0xa8",
     "InheritedSize": "0x88",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TargetActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "TargetActor",
         "Size": "0x20",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "TaleQuestSetCompassTargetToPointStepDesc": {
     "Super": "TaleQuestSetCompassTargetBaseStepDesc",
     "FullSize": "0xa8",
     "InheritedSize": "0x88",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TargetPoint": {
         "Type": "Struct QuestVariableOrientedPoint",
-        "Name": "TargetPoint",
         "Size": "0x20",
         "Offset": "0x88"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

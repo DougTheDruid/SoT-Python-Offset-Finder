@@ -1,169 +1,146 @@
 {
   "LightPropagationVolumeSettings": {
     "ClassSize": "0x70",
-    "Attributes": [
-      {
+    "Attributes": {
+      "bOverride_LPVIntensity": {
         "Type": "bool",
-        "Name": "bOverride_LPVIntensity",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "bOverride_LPVDirectionalOcclusionIntensity": {
         "Type": "bool",
-        "Name": "bOverride_LPVDirectionalOcclusionIntensity",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "bOverride_LPVDirectionalOcclusionRadius": {
         "Type": "bool",
-        "Name": "bOverride_LPVDirectionalOcclusionRadius",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "bOverride_LPVDiffuseOcclusionExponent": {
         "Type": "bool",
-        "Name": "bOverride_LPVDiffuseOcclusionExponent",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "bOverride_LPVSpecularOcclusionExponent": {
         "Type": "bool",
-        "Name": "bOverride_LPVSpecularOcclusionExponent",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "bOverride_LPVDiffuseOcclusionIntensity": {
         "Type": "bool",
-        "Name": "bOverride_LPVDiffuseOcclusionIntensity",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "bOverride_LPVSpecularOcclusionIntensity": {
         "Type": "bool",
-        "Name": "bOverride_LPVSpecularOcclusionIntensity",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "bOverride_LPVSize": {
         "Type": "bool",
-        "Name": "bOverride_LPVSize",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "bOverride_LPVSecondaryOcclusionIntensity": {
         "Type": "bool",
-        "Name": "bOverride_LPVSecondaryOcclusionIntensity",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      {
+      "bOverride_LPVSecondaryBounceIntensity": {
         "Type": "bool",
-        "Name": "bOverride_LPVSecondaryBounceIntensity",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      {
+      "bOverride_LPVGeometryVolumeBias": {
         "Type": "bool",
-        "Name": "bOverride_LPVGeometryVolumeBias",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      {
+      "bOverride_LPVVplInjectionBias": {
         "Type": "bool",
-        "Name": "bOverride_LPVVplInjectionBias",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      {
+      "bOverride_LPVEmissiveInjectionIntensity": {
         "Type": "bool",
-        "Name": "bOverride_LPVEmissiveInjectionIntensity",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      {
+      "LPVIntensity": {
         "Type": "float",
-        "Name": "LPVIntensity",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "LPVVplInjectionBias": {
         "Type": "float",
-        "Name": "LPVVplInjectionBias",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "LPVSize": {
         "Type": "float",
-        "Name": "LPVSize",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      {
+      "LPVSecondaryOcclusionIntensity": {
         "Type": "float",
-        "Name": "LPVSecondaryOcclusionIntensity",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      {
+      "LPVSecondaryBounceIntensity": {
         "Type": "float",
-        "Name": "LPVSecondaryBounceIntensity",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      {
+      "LPVGeometryVolumeBias": {
         "Type": "float",
-        "Name": "LPVGeometryVolumeBias",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      {
+      "LPVEmissiveInjectionIntensity": {
         "Type": "float",
-        "Name": "LPVEmissiveInjectionIntensity",
         "Size": "0x4",
         "Offset": "0x1c"
       },
-      {
+      "LPVDirectionalOcclusionIntensity": {
         "Type": "float",
-        "Name": "LPVDirectionalOcclusionIntensity",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      {
+      "LPVDirectionalOcclusionRadius": {
         "Type": "float",
-        "Name": "LPVDirectionalOcclusionRadius",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      {
+      "LPVDiffuseOcclusionExponent": {
         "Type": "float",
-        "Name": "LPVDiffuseOcclusionExponent",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      {
+      "LPVSpecularOcclusionExponent": {
         "Type": "float",
-        "Name": "LPVSpecularOcclusionExponent",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      {
+      "LPVDiffuseOcclusionIntensity": {
         "Type": "float",
-        "Name": "LPVDiffuseOcclusionIntensity",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      {
+      "LPVSpecularOcclusionIntensity": {
         "Type": "float",
-        "Name": "LPVSpecularOcclusionIntensity",
         "Size": "0x4",
         "Offset": "0x34"
       },
-      {
+      "LPVWorldRef": {
         "Type": "Struct Transform",
-        "Name": "LPVWorldRef",
         "Size": "0x30",
         "Offset": "0x40"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

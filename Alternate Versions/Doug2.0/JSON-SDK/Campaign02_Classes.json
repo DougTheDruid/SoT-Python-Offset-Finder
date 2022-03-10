@@ -4,433 +4,437 @@
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign020_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign020_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign020_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign020_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign021_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign021_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign021_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign021_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign021_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign022_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign022_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign022_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign022_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign022_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign023_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign023_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign023_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign023_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign023_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign024_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign024_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign024_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign025_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign025_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign025_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign025_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign025a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign025a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign025a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign025a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign025a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign026_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign026_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign026_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign026_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign026_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign027_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign027_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign027_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign027_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign027_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign027a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign027a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign027a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign027a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign027a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign028_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign028_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign028_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign028_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign028_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign029_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign029_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign029_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign029_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign029_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GHLetter_ExclusionEntitlement_Campaign029a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "HCLetter_ExclusionEntitlement_Campaign029a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MALetter_ExclusionEntitlement_Campaign029a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "OOSLetter_ExclusionEntitlement_Campaign029a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SDLetter_ExclusionEntitlement_Campaign029a_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

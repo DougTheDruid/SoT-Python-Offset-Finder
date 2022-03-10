@@ -4,489 +4,431 @@
     "FullSize": "0x98",
     "InheritedSize": "0x38",
     "ClassSize": "0x60",
-    "Attributes": [
-      {
+    "Attributes": {
+      "HealthRegained": {
         "Type": "float",
-        "Name": "HealthRegained",
         "Size": "0x4",
         "Offset": "0x38"
       },
-      {
+      "MaximumReviveDistance": {
         "Type": "float",
-        "Name": "MaximumReviveDistance",
         "Size": "0x4",
         "Offset": "0x3c"
       },
-      {
+      "FadeColour": {
         "Type": "Struct LinearColor",
-        "Name": "FadeColour",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "ShouldFadeAudio": {
         "Type": "bool",
-        "Name": "ShouldFadeAudio",
         "Size": "0x1",
         "Offset": "0x50"
       },
-      {
+      "ServerWaitTimeBeforeFullyReviving": {
         "Type": "float",
-        "Name": "ServerWaitTimeBeforeFullyReviving",
         "Size": "0x4",
         "Offset": "0x54"
       },
-      {
+      "ReviveTime": {
         "Type": "float",
-        "Name": "ReviveTime",
         "Size": "0x4",
         "Offset": "0x58"
       },
-      {
+      "ReviveTimeOnEnemyShip": {
         "Type": "float",
-        "Name": "ReviveTimeOnEnemyShip",
         "Size": "0x4",
         "Offset": "0x5c"
       },
-      {
+      "MaxRevertEvaporateDuration": {
         "Type": "float",
-        "Name": "MaxRevertEvaporateDuration",
         "Size": "0x4",
         "Offset": "0x60"
       },
-      {
+      "UnsupportedPlayModes": {
         "Type": "TArray<Byte MaxRevertEvaporateDuration>",
-        "Name": "UnsupportedPlayModes",
         "Size": "0x10",
         "Offset": "0x68"
       },
-      {
+      "ModeSpecificSettings": {
         "Type": "TArray<Struct UnsupportedPlayModes>",
-        "Name": "ModeSpecificSettings",
         "Size": "0x10",
         "Offset": "0x78"
       },
-      {
+      "GiveUpHoldTime": {
         "Type": "float",
-        "Name": "GiveUpHoldTime",
         "Size": "0x4",
         "Offset": "0x88"
       },
-      {
+      "GiveUpFadeDuration": {
         "Type": "float",
-        "Name": "GiveUpFadeDuration",
         "Size": "0x4",
         "Offset": "0x8c"
       },
-      {
+      "GiveUpEvaporateDuration": {
         "Type": "float",
-        "Name": "GiveUpEvaporateDuration",
         "Size": "0x4",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "DeathSelfInteractionComponent": {
     "Super": "InteractableComponent",
     "FullSize": "0x178",
     "InheritedSize": "0x118",
     "ClassSize": "0x60",
-    "Attributes": [
-      {
+    "Attributes": {
+      "HasGivenUp": {
         "Type": "bool",
-        "Name": "HasGivenUp",
         "Size": "0x1",
         "Offset": "0x120"
       }
-    ]
+    }
   },
   "PostReviveLocomotionActionStateId": {
     "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "RevivableStatus": {
     "Super": "StatusBase",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "ReviveableActionStateId": {
     "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "ReviveableCharacterInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "ReviveableRepresentationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "ReviveAudioComponent": {
     "Super": "WwiseEmitterComponent",
     "FullSize": "0x320",
     "InheritedSize": "0x300",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ReviveEffectsDataAsset": {
         "Type": "Class ReviveEffectsDataAsset*",
-        "Name": "ReviveEffectsDataAsset",
         "Size": "0x8",
         "Offset": "0x300"
       }
-    ]
+    }
   },
   "ReviveInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "ReviveComponent": {
     "Super": "InteractableComponent",
     "FullSize": "0x260",
     "InheritedSize": "0x118",
     "ClassSize": "0x148",
-    "Attributes": [
-      {
+    "Attributes": {
+      "OwningCharacter": {
         "Type": "Class Character*",
-        "Name": "OwningCharacter",
         "Size": "0x8",
         "Offset": "0x128"
       },
-      {
+      "ReviveableRepresentationActor": {
         "Type": "Class Actor*",
-        "Name": "ReviveableRepresentationActor",
         "Size": "0x8",
         "Offset": "0x130"
       },
-      {
+      "ReviveState": {
         "Type": "byte",
-        "Name": "ReviveState",
         "Size": "0x1",
         "Offset": "0x138"
       },
-      {
+      "InteractionState": {
         "Type": "byte",
-        "Name": "InteractionState",
         "Size": "0x1",
         "Offset": "0x139"
       },
-      {
+      "ReviveableRepresentationClass": {
         "Type": "class",
-        "Name": "ReviveableRepresentationClass",
         "Size": "0x8",
         "Offset": "0x140"
       },
-      {
+      "ReviveWindowIsOpen": {
         "Type": "bool",
-        "Name": "ReviveWindowIsOpen",
         "Size": "0x1",
         "Offset": "0x15a"
       },
-      {
+      "RevivableStatus": {
         "Type": "Struct Status",
-        "Name": "RevivableStatus",
         "Size": "0x18",
         "Offset": "0x230"
       }
-    ]
+    }
   },
   "ReviveConditionalStatTrigger": {
     "Super": "ConditionalStatsTriggerType",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "RevivedActionStateId": {
     "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "ReviveDebugComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x160",
     "InheritedSize": "0xc8",
     "ClassSize": "0x98",
-    "Attributes": []
+    "Attributes": {}
   },
   "ReviveEffectsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0xd0",
     "InheritedSize": "0x28",
     "ClassSize": "0xa8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ReviveMaterialParameterCollection": {
         "Type": "Class MaterialParameterCollection*",
-        "Name": "ReviveMaterialParameterCollection",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      {
+      "AstralCordReviveInProgressMaterialCollectionScalarParameterName": {
         "Type": "struct FName",
-        "Name": "AstralCordReviveInProgressMaterialCollectionScalarParameterName",
         "Size": "0x8",
         "Offset": "0x30"
       },
-      {
+      "AstralCordFadeMaterialCollectionScalarParameterName": {
         "Type": "struct FName",
-        "Name": "AstralCordFadeMaterialCollectionScalarParameterName",
         "Size": "0x8",
         "Offset": "0x38"
       },
-      {
+      "AstralCordBorderMaterialCollectionScalarParameterName": {
         "Type": "struct FName",
-        "Name": "AstralCordBorderMaterialCollectionScalarParameterName",
         "Size": "0x8",
         "Offset": "0x40"
       },
-      {
+      "AstralCordBorderParamValueByAbsoluteTimeSinceDeath": {
         "Type": "Class CurveFloat*",
-        "Name": "AstralCordBorderParamValueByAbsoluteTimeSinceDeath",
         "Size": "0x8",
         "Offset": "0x48"
       },
-      {
+      "ReviveePostProcessMaterial": {
         "Type": "Class Material*",
-        "Name": "ReviveePostProcessMaterial",
         "Size": "0x8",
         "Offset": "0x50"
       },
-      {
+      "GhostShaderGhostEffectInterpolationValue": {
         "Type": "float",
-        "Name": "GhostShaderGhostEffectInterpolationValue",
         "Size": "0x4",
         "Offset": "0x58"
       },
-      {
+      "ReviveSuccessfulEffectDuration": {
         "Type": "float",
-        "Name": "ReviveSuccessfulEffectDuration",
         "Size": "0x4",
         "Offset": "0x5c"
       },
-      {
+      "ReviveSuccessfulOneShotVFX": {
         "Type": "Class Object*",
-        "Name": "ReviveSuccessfulOneShotVFX",
         "Size": "0x8",
         "Offset": "0x60"
       },
-      {
+      "ReviveSuccessfulOneShotVFX_Revivee": {
         "Type": "Class Object*",
-        "Name": "ReviveSuccessfulOneShotVFX_Revivee",
         "Size": "0x8",
         "Offset": "0x68"
       },
-      {
+      "ReviveInProgressLoopingVFX": {
         "Type": "Class Object*",
-        "Name": "ReviveInProgressLoopingVFX",
         "Size": "0x8",
         "Offset": "0x70"
       },
-      {
+      "AstralCordReviveInProgressInterpolationSpeed": {
         "Type": "float",
-        "Name": "AstralCordReviveInProgressInterpolationSpeed",
         "Size": "0x4",
         "Offset": "0x78"
       },
-      {
+      "AstralCordReviveNotInProgressInterpolationSpeed": {
         "Type": "float",
-        "Name": "AstralCordReviveNotInProgressInterpolationSpeed",
         "Size": "0x4",
         "Offset": "0x7c"
       },
-      {
+      "ContinuousBodyLoopingVFX": {
         "Type": "Class Object*",
-        "Name": "ContinuousBodyLoopingVFX",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "AstralCordFadeInInterpolationSpeed": {
         "Type": "float",
-        "Name": "AstralCordFadeInInterpolationSpeed",
         "Size": "0x4",
         "Offset": "0x88"
       },
-      {
+      "AstralCordFadeOutInterpolationSpeed": {
         "Type": "float",
-        "Name": "AstralCordFadeOutInterpolationSpeed",
         "Size": "0x4",
         "Offset": "0x8c"
       },
-      {
+      "DefaultAstralCordHeight": {
         "Type": "float",
-        "Name": "DefaultAstralCordHeight",
         "Size": "0x4",
         "Offset": "0x90"
       },
-      {
+      "AstralCordHeightOffsetFromTheGhost": {
         "Type": "float",
-        "Name": "AstralCordHeightOffsetFromTheGhost",
         "Size": "0x4",
         "Offset": "0x94"
       },
-      {
+      "DeadPlayerBodyEvaporatesOneShotVFX": {
         "Type": "Class Object*",
-        "Name": "DeadPlayerBodyEvaporatesOneShotVFX",
         "Size": "0x8",
         "Offset": "0x98"
       },
-      {
+      "OtherPlayers_ReviveGhostAmbientStart": {
         "Type": "Class WwiseEvent*",
-        "Name": "OtherPlayers_ReviveGhostAmbientStart",
         "Size": "0x8",
         "Offset": "0xa0"
       },
-      {
+      "OtherPlayers_ReviveGhostAmbientStop": {
         "Type": "Class WwiseEvent*",
-        "Name": "OtherPlayers_ReviveGhostAmbientStop",
         "Size": "0x8",
         "Offset": "0xa8"
       },
-      {
+      "DeadPlayer_ReviveInProgressStart": {
         "Type": "Class WwiseEvent*",
-        "Name": "DeadPlayer_ReviveInProgressStart",
         "Size": "0x8",
         "Offset": "0xb0"
       },
-      {
+      "DeadPlayer_ReviveInProgressStop": {
         "Type": "Class WwiseEvent*",
-        "Name": "DeadPlayer_ReviveInProgressStop",
         "Size": "0x8",
         "Offset": "0xb8"
       },
-      {
+      "OtherPlayers_ReviveInProgressStart": {
         "Type": "Class WwiseEvent*",
-        "Name": "OtherPlayers_ReviveInProgressStart",
         "Size": "0x8",
         "Offset": "0xc0"
       },
-      {
+      "OtherPlayers_ReviveInProgressStop": {
         "Type": "Class WwiseEvent*",
-        "Name": "OtherPlayers_ReviveInProgressStop",
         "Size": "0x8",
         "Offset": "0xc8"
       }
-    ]
+    }
   },
   "ReviveGhost": {
     "Super": "Actor",
     "FullSize": "0x628",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x258",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CorpseMaterials": {
         "Type": "TArray<class CorpseMaterials*>",
-        "Name": "CorpseMaterials",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
-      {
+      "Root": {
         "Type": "Class SceneComponent*",
-        "Name": "Root",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
-      {
+      "MeshComponent": {
         "Type": "Class SkeletalMeshComponent*",
-        "Name": "MeshComponent",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
-      {
+      "AstralCordContainer": {
         "Type": "Class SceneComponent*",
-        "Name": "AstralCordContainer",
         "Size": "0x8",
         "Offset": "0x400"
       },
-      {
+      "AnimationDataStoreComponent": {
         "Type": "Class AnimationDataStoreComponent*",
-        "Name": "AnimationDataStoreComponent",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PostProcessComponent": {
         "Type": "Class PostProcessComponent*",
-        "Name": "PostProcessComponent",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "DitherComponent": {
         "Type": "Class DitherComponent*",
-        "Name": "DitherComponent",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "AudioComponent": {
         "Type": "Class ReviveAudioComponent*",
-        "Name": "AudioComponent",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "RevivableOwnerNetRole": {
         "Type": "byte",
-        "Name": "RevivableOwnerNetRole",
         "Size": "0x1",
         "Offset": "0x438"
       },
-      {
+      "ReviveGhostDataAsset": {
         "Type": "Class GhostDataAsset*",
-        "Name": "ReviveGhostDataAsset",
         "Size": "0x8",
         "Offset": "0x440"
       },
-      {
+      "ReviveEffectsDataAsset": {
         "Type": "Class ReviveEffectsDataAsset*",
-        "Name": "ReviveEffectsDataAsset",
         "Size": "0x8",
         "Offset": "0x448"
       },
-      {
+      "ReviveEffectsValues": {
         "Type": "Struct ReviveEffectsValues",
-        "Name": "ReviveEffectsValues",
         "Size": "0x20",
         "Offset": "0x450"
       },
-      {
+      "ReviveSettings": {
         "Type": "Struct ModeSpecificReviveSettings",
-        "Name": "ReviveSettings",
         "Size": "0x30",
         "Offset": "0x470"
       },
-      {
+      "AstralCordDynamicMaterials": {
         "Type": "TArray<class AstralCordDynamicMaterials*>",
-        "Name": "AstralCordDynamicMaterials",
         "Size": "0x10",
         "Offset": "0x608"
       },
-      {
+      "GhostPlayModeSpecificParameters": {
         "Type": "Struct GhostPlayModeParameters",
-        "Name": "GhostPlayModeSpecificParameters",
         "Size": "0xc",
         "Offset": "0x618"
       }
-    ]
+    }
   },
   "RevivePlayerActionStateId": {
     "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

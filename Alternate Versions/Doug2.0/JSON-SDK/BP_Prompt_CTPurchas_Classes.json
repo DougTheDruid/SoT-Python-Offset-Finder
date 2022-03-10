@@ -4,217 +4,186 @@
     "FullSize": "0x840",
     "InheritedSize": "0x118",
     "ClassSize": "0x728",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x118"
       },
-      {
+      "TriggerVolumeRadius": {
         "Type": "float",
-        "Name": "TriggerVolumeRadius",
         "Size": "0x4",
         "Offset": "0x120"
       },
-      {
+      "InsideGoldHoardersRadius": {
         "Type": "int",
-        "Name": "InsideGoldHoardersRadius",
         "Size": "0x4",
         "Offset": "0x124"
       },
-      {
+      "GoldHoarderOverlapActors": {
         "Type": "TArray<class GoldHoarderOverlapActors*>",
-        "Name": "GoldHoarderOverlapActors",
         "Size": "0x10",
         "Offset": "0x128"
       },
-      {
+      "OutpostOverlapActors": {
         "Type": "TArray<class OutpostOverlapActors*>",
-        "Name": "OutpostOverlapActors",
         "Size": "0x10",
         "Offset": "0x138"
       },
-      {
+      "OutpostRadiusReduction": {
         "Type": "float",
-        "Name": "OutpostRadiusReduction",
         "Size": "0x4",
         "Offset": "0x148"
       },
-      {
+      "Prompt_GoToVendors": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_GoToVendors",
         "Size": "0x68",
         "Offset": "0x150"
       },
-      {
+      "Prompt_GoToGoldhoarders": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_GoToGoldhoarders",
         "Size": "0x68",
         "Offset": "0x1b8"
       },
-      {
+      "Prompt_GoToOrderOfSouls": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_GoToOrderOfSouls",
         "Size": "0x68",
         "Offset": "0x220"
       },
-      {
+      "Prompt_GoToMerchantAlliance": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_GoToMerchantAlliance",
         "Size": "0x68",
         "Offset": "0x288"
       },
-      {
+      "Prompt_ProposeVoyage": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_ProposeVoyage",
         "Size": "0x68",
         "Offset": "0x2f0"
       },
-      {
+      "Prompt_VoteOnVoyage": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_VoteOnVoyage",
         "Size": "0x68",
         "Offset": "0x358"
       },
-      {
+      "Prompt_BoardShip": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_BoardShip",
         "Size": "0x68",
         "Offset": "0x3c0"
       },
-      {
+      "Prompt_VisitSignpost_GH": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_VisitSignpost_GH",
         "Size": "0x68",
         "Offset": "0x428"
       },
-      {
+      "Prompt_VisitSignpost_MA": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_VisitSignpost_MA",
         "Size": "0x68",
         "Offset": "0x490"
       },
-      {
+      "Prompt_VisitSignpost_OOS": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_VisitSignpost_OOS",
         "Size": "0x68",
         "Offset": "0x4f8"
       },
-      {
+      "Handle_OfferPurchased": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_OfferPurchased",
         "Size": "0x48",
         "Offset": "0x560"
       },
-      {
+      "Handle_VoyageProposalDiscarded": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_VoyageProposalDiscarded",
         "Size": "0x48",
         "Offset": "0x5a8"
       },
-      {
+      "Handle_VoyageProposed": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_VoyageProposed",
         "Size": "0x48",
         "Offset": "0x5f0"
       },
-      {
+      "Handle_VoyageBegun": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_VoyageBegun",
         "Size": "0x48",
         "Offset": "0x638"
       },
-      {
+      "Handle_VoyageComplete": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_VoyageComplete",
         "Size": "0x48",
         "Offset": "0x680"
       },
-      {
+      "Handle_PlayerEnteredShip": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_PlayerEnteredShip",
         "Size": "0x48",
         "Offset": "0x6c8"
       },
-      {
+      "Handle_PlayerExitedShip": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_PlayerExitedShip",
         "Size": "0x48",
         "Offset": "0x710"
       },
-      {
+      "Handle_PlayerWithdrewVoyage": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_PlayerWithdrewVoyage",
         "Size": "0x48",
         "Offset": "0x758"
       },
-      {
+      "Handle_VoyageCancelled": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_VoyageCancelled",
         "Size": "0x48",
         "Offset": "0x7a0"
       },
-      {
+      "State_InsideOutpostRadius": {
         "Type": "bool",
-        "Name": "State_InsideOutpostRadius",
         "Size": "0x1",
         "Offset": "0x7e8"
       },
-      {
+      "State_InsideGoldhoardersRadius": {
         "Type": "bool",
-        "Name": "State_InsideGoldhoardersRadius",
         "Size": "0x1",
         "Offset": "0x7e9"
       },
-      {
+      "State_InsideOrderOfSouls": {
         "Type": "bool",
-        "Name": "State_InsideOrderOfSouls",
         "Size": "0x1",
         "Offset": "0x7ea"
       },
-      {
+      "State_InsideMerchantAllianceRadius": {
         "Type": "bool",
-        "Name": "State_InsideMerchantAllianceRadius",
         "Size": "0x1",
         "Offset": "0x7eb"
       },
-      {
+      "State_OnShip": {
         "Type": "bool",
-        "Name": "State_OnShip",
         "Size": "0x1",
         "Offset": "0x7ec"
       },
-      {
+      "State_IsHidden": {
         "Type": "bool",
-        "Name": "State_IsHidden",
         "Size": "0x1",
         "Offset": "0x7ed"
       },
-      {
+      "State_IsTutorialForceDisabled": {
         "Type": "bool",
-        "Name": "State_IsTutorialForceDisabled",
         "Size": "0x1",
         "Offset": "0x7ee"
       },
-      {
+      "State_SeenSignpostPrompt": {
         "Type": "bool",
-        "Name": "State_SeenSignpostPrompt",
         "Size": "0x1",
         "Offset": "0x7ef"
       },
-      {
+      "CompanyTutorialProgress": {
         "Type": "BlueprintGeneratedClass BP_CT_TutorialProgress_C*",
-        "Name": "CompanyTutorialProgress",
         "Size": "0x8",
         "Offset": "0x7f0"
       },
-      {
+      "Handle_CompanyRankPurchased": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_CompanyRankPurchased",
         "Size": "0x48",
         "Offset": "0x7f8"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

@@ -4,294 +4,265 @@
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "CordRenderComponent": {
     "Super": "StaticMeshComponent",
     "FullSize": "0x650",
     "InheritedSize": "0x610",
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CordMaterials": {
         "Type": "TArray<class CordMaterials*>",
-        "Name": "CordMaterials",
         "Size": "0x10",
         "Offset": "0x618"
       },
-      {
+      "ThicknessCm": {
         "Type": "float",
-        "Name": "ThicknessCm",
         "Size": "0x4",
         "Offset": "0x628"
       }
-    ]
+    }
   },
   "DynamicCordRenderComponent": {
     "Super": "CordRenderComponent",
     "FullSize": "0x6b0",
     "InheritedSize": "0x650",
     "ClassSize": "0x60",
-    "Attributes": [
-      {
+    "Attributes": {
+      "BoundsPadding": {
         "Type": "float",
-        "Name": "BoundsPadding",
         "Size": "0x4",
         "Offset": "0x648"
       },
-      {
+      "EndPointA": {
         "Type": "Class SceneComponent*",
-        "Name": "EndPointA",
         "Size": "0x8",
         "Offset": "0x650"
       },
-      {
+      "EndPointB": {
         "Type": "Class SceneComponent*",
-        "Name": "EndPointB",
         "Size": "0x8",
         "Offset": "0x658"
       }
-    ]
+    }
   },
   "HarpoonRenderComponent": {
     "Super": "CordRenderComponent",
     "FullSize": "0x670",
     "InheritedSize": "0x650",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "HarpoonMaterials": {
         "Type": "TArray<class HarpoonMaterials*>",
-        "Name": "HarpoonMaterials",
         "Size": "0x10",
         "Offset": "0x648"
       },
-      {
+      "LaunchAnimationDurationSecs": {
         "Type": "float",
-        "Name": "LaunchAnimationDurationSecs",
         "Size": "0x4",
         "Offset": "0x658"
       },
-      {
+      "HitAnimationDurationSecs": {
         "Type": "float",
-        "Name": "HitAnimationDurationSecs",
         "Size": "0x4",
         "Offset": "0x65c"
       },
-      {
+      "QuickRetractAnimationSpeed": {
         "Type": "float",
-        "Name": "QuickRetractAnimationSpeed",
         "Size": "0x4",
         "Offset": "0x660"
       }
-    ]
+    }
   },
   "TetherConstraintInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "DistanceJointComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x150",
     "InheritedSize": "0xc8",
     "ClassSize": "0x88",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MinDistance": {
         "Type": "float",
-        "Name": "MinDistance",
         "Size": "0x4",
         "Offset": "0x138"
       },
-      {
+      "MaxDistance": {
         "Type": "float",
-        "Name": "MaxDistance",
         "Size": "0x4",
         "Offset": "0x13c"
       },
-      {
+      "SpringStiffness": {
         "Type": "float",
-        "Name": "SpringStiffness",
         "Size": "0x4",
         "Offset": "0x140"
       },
-      {
+      "SpringDamping": {
         "Type": "float",
-        "Name": "SpringDamping",
         "Size": "0x4",
         "Offset": "0x144"
       },
-      {
+      "ApplyAsSpring": {
         "Type": "bool",
-        "Name": "ApplyAsSpring",
         "Size": "0x1",
         "Offset": "0x148"
       },
-      {
+      "EnforceMinDistance": {
         "Type": "bool",
-        "Name": "EnforceMinDistance",
         "Size": "0x1",
         "Offset": "0x149"
       },
-      {
+      "EnforceMaxDistance": {
         "Type": "bool",
-        "Name": "EnforceMaxDistance",
         "Size": "0x1",
         "Offset": "0x14a"
       }
-    ]
+    }
   },
   "ShouldTetherInWorldSpaceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TetherQueriableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TetherCustomisationInterface": {
     "Super": "TetherQueriableInterface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TetherInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "Tether": {
     "Super": "Actor",
     "FullSize": "0x510",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x140",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TetherPositionAnchorComponent": {
         "Type": "Class SceneComponent*",
-        "Name": "TetherPositionAnchorComponent",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
-      {
+      "SourcePhysicsHandle": {
         "Type": "Class SphereComponent*",
-        "Name": "SourcePhysicsHandle",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
-      {
+      "TargetPhysicsHandle": {
         "Type": "Class SphereComponent*",
-        "Name": "TargetPhysicsHandle",
         "Size": "0x8",
         "Offset": "0x4d8"
       },
-      {
+      "JointComponent": {
         "Type": "Class DistanceJointComponent*",
-        "Name": "JointComponent",
         "Size": "0x8",
         "Offset": "0x4e0"
       },
-      {
+      "SourceActor": {
         "Type": "Class Actor*",
-        "Name": "SourceActor",
         "Size": "0x8",
         "Offset": "0x4e8"
       },
-      {
+      "TargetActor": {
         "Type": "Class Actor*",
-        "Name": "TargetActor",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
-      {
+      "SlackCm": {
         "Type": "float",
-        "Name": "SlackCm",
         "Size": "0x4",
         "Offset": "0x4f8"
       },
-      {
+      "MaxLengthWhenGrowing": {
         "Type": "float",
-        "Name": "MaxLengthWhenGrowing",
         "Size": "0x4",
         "Offset": "0x4fc"
       },
-      {
+      "HasAttached": {
         "Type": "bool",
-        "Name": "HasAttached",
         "Size": "0x1",
         "Offset": "0x508"
       },
-      {
+      "HasSourceActor": {
         "Type": "bool",
-        "Name": "HasSourceActor",
         "Size": "0x1",
         "Offset": "0x509"
       },
-      {
+      "HasTargetActor": {
         "Type": "bool",
-        "Name": "HasTargetActor",
         "Size": "0x1",
         "Offset": "0x50a"
       },
-      {
+      "IsSlackEnabled": {
         "Type": "bool",
-        "Name": "IsSlackEnabled",
         "Size": "0x1",
         "Offset": "0x50b"
       },
-      {
+      "CurrentTetherMode": {
         "Type": "byte",
-        "Name": "CurrentTetherMode",
         "Size": "0x1",
         "Offset": "0x50c"
       }
-    ]
+    }
   },
   "TetherCustomisationComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x128",
     "InheritedSize": "0xc8",
     "ClassSize": "0x60",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ComponentToTetherTo": {
         "Type": "Class SceneComponent*",
-        "Name": "ComponentToTetherTo",
         "Size": "0x8",
         "Offset": "0xd0"
       },
-      {
+      "MassIntertiaScale": {
         "Type": "float",
-        "Name": "MassIntertiaScale",
         "Size": "0x4",
         "Offset": "0x120"
       },
-      {
+      "CanBeTethered": {
         "Type": "bool",
-        "Name": "CanBeTethered",
         "Size": "0x1",
         "Offset": "0x124"
       },
-      {
+      "IsMassInertiaScalingEnabled": {
         "Type": "bool",
-        "Name": "IsMassInertiaScalingEnabled",
         "Size": "0x1",
         "Offset": "0x125"
       }
-    ]
+    }
   },
   "TetherInWorldSpaceComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": {}
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

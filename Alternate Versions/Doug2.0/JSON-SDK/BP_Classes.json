@@ -4,839 +4,452 @@
     "FullSize": "0x7b8",
     "InheritedSize": "0x7b8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "BP_fod_ChickenMeatRawBite1_00_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "BP_fod_ChickenMeatRaw_00_a_Wieldable_C": {
     "Super": "BP_StaticWieldableIngestible_C",
     "FullSize": "0x858",
     "InheritedSize": "0x858",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "BP_fod_ChickenMeatRaw_00_a_ItemInfo_C": {
     "Super": "BP_MeatItemInfo_C",
     "FullSize": "0x580",
     "InheritedSize": "0x568",
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MaterialManipulationSettings": {
         "Type": "Class MaterialManipulationSettingsComponent*",
-        "Name": "MaterialManipulationSettings",
         "Size": "0x8",
         "Offset": "0x568"
       },
-      {
+      "LightweightStatusEffectManager": {
         "Type": "Class LightWeightStatusEffectManagerComponent*",
-        "Name": "LightweightStatusEffectManager",
         "Size": "0x8",
         "Offset": "0x570"
       },
-      {
+      "Cookable": {
         "Type": "Class CookableComponent*",
-        "Name": "Cookable",
         "Size": "0x8",
         "Offset": "0x578"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank2_AF_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x440",
     "InheritedSize": "0x408",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x430"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank2_GH_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x440",
     "InheritedSize": "0x408",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x430"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank2_MA_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x440",
     "InheritedSize": "0x408",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x430"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank2_OOS_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x440",
     "InheritedSize": "0x408",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
-        "Type": "TArray<Struct None>",
-        "Name": "Prompts",
+      "Prompts": {
+        "Type": "TArray<Struct Prompts>",
         "Size": "0x10",
         "Offset": "0x430"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank2_RB_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x440",
     "InheritedSize": "0x408",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x430"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank5_AF_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x444",
     "InheritedSize": "0x408",
     "ClassSize": "0x3c",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x430"
       },
-      {
+      "InitialDelay": {
         "Type": "float",
-        "Name": "InitialDelay",
         "Size": "0x4",
         "Offset": "0x440"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank5_GH_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x444",
     "InheritedSize": "0x408",
     "ClassSize": "0x3c",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x430"
       },
-      {
+      "InitialDelay": {
         "Type": "float",
-        "Name": "InitialDelay",
         "Size": "0x4",
         "Offset": "0x440"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank5_MA_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x444",
     "InheritedSize": "0x408",
     "ClassSize": "0x3c",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
+      "Prompts": {
         "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
         "Size": "0x10",
         "Offset": "0x430"
       },
-      {
+      "InitialDelay": {
         "Type": "float",
-        "Name": "InitialDelay",
         "Size": "0x4",
         "Offset": "0x440"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank5_OOS_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x444",
     "InheritedSize": "0x408",
     "ClassSize": "0x3c",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
-        "Type": "TArray<Struct Company>",
-        "Name": "Prompts",
+      "Prompts": {
+        "Type": "TArray<Struct Prompts>",
         "Size": "0x10",
         "Offset": "0x430"
       },
-      {
+      "InitialDelay": {
         "Type": "float",
-        "Name": "InitialDelay",
         "Size": "0x4",
         "Offset": "0x440"
       }
-    ]
+    }
   },
   "BP_PromptActor_EmissaryRank5_RB_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x444",
     "InheritedSize": "0x408",
     "ClassSize": "0x3c",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      {
+      "PromptCoordinator": {
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
-        "Name": "PromptCoordinator",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      {
+      "PromptCounterAccessKey": {
         "Type": "class",
-        "Name": "PromptCounterAccessKey",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      {
+      "ExpectedLevel": {
         "Type": "int",
-        "Name": "ExpectedLevel",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      {
-        "Type": "TArray<Struct Prompts>",
-        "Name": "Prompts",
+      "Prompts": {
+        "Type": "TArray<Struct PromptCoordinator>",
         "Size": "0x10",
         "Offset": "0x430"
       },
-      {
+      "InitialDelay": {
         "Type": "float",
-        "Name": "InitialDelay",
         "Size": "0x4",
         "Offset": "0x440"
       }
-    ]
+    }
   },
-  "BP_fod_PorkMeatCooked_00_a_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_fod_PineappleFresh_00_a_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_Emote_Dice_D20_Desc_C": {
-    "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_Emote_Dice_D12_Desc_C": {
-    "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_Emote_Dice_D10_Desc_C": {
-    "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_Emote_Dice_D8_Desc_C": {
-    "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_Emote_Dice_D4_Desc_C": {
-    "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_Emote_Dice_D6_Desc_C": {
-    "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_white_01_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_red_05_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_red_04_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_red_01_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_brown_07_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_brown_05_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_brown_03_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_blond_05_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_blond_04_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_blond_01_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_black_03_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_black_02_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_black_01_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_underwear_yellow_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_underwear_red_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_underwear_purple_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_underwear_orange_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_underwear_grey_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_underwear_green_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_underwear_blue_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_underwear_black_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_fod_PorkMeatBurned_00_a_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_fod_ChickenMeatRaw_00_a_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_EmissaryFlotsam_Wieldable_Base_C": {
-    "Super": "StaticSimpleBootyWieldableItem",
-    "FullSize": "0x7b0",
-    "InheritedSize": "0x790",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Type": "Class BoxComponent*",
-        "Name": "HitVolume",
-        "Size": "0x8",
-        "Offset": "0x790"
-      },
-      {
-        "Type": "Class WieldableInteractableComponent*",
-        "Name": "WieldableInteractable",
-        "Size": "0x8",
-        "Offset": "0x798"
-      },
-      {
-        "Type": "Class PickupableComponent*",
-        "Name": "Pickupable",
-        "Size": "0x8",
-        "Offset": "0x7a0"
-      },
-      {
-        "Type": "Class UsableWieldableComponent*",
-        "Name": "UsableWieldable",
-        "Size": "0x8",
-        "Offset": "0x7a8"
-      }
-    ]
-  },
-  "BP_fod_PineappleFreshBite1_00_a_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_hair_col_white_02_under_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_EmissaryFlotsam_GoldHoarders_Rank5_ItemDesc_C": {
-    "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_EmissaryFlotsam_GoldHoarders_Rank5_Wieldable_C": {
-    "Super": "BP_EmissaryFlotsam_Wieldable_Base_C",
-    "FullSize": "0x7b0",
-    "InheritedSize": "0x7b0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_fod_PineappleFresh_00_a_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x520",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Type": "Class MaterialManipulationSettingsComponent*",
-        "Name": "MaterialManipulationSettings",
-        "Size": "0x8",
-        "Offset": "0x500"
-      },
-      {
-        "Type": "Class LightWeightStatusEffectManagerComponent*",
-        "Name": "LightweightStatusEffectManager",
-        "Size": "0x8",
-        "Offset": "0x508"
-      },
-      {
-        "Type": "Class CookableComponent*",
-        "Name": "Cookable",
-        "Size": "0x8",
-        "Offset": "0x510"
-      },
-      {
-        "Type": "Class SceneComponent*",
-        "Name": "DefaultSceneRoot",
-        "Size": "0x8",
-        "Offset": "0x518"
-      }
-    ]
-  },
-  "BP_fod_PineappleFresh_00_a_Wieldable_C": {
-    "Super": "BP_StaticWieldableIngestible_C",
-    "FullSize": "0x858",
-    "InheritedSize": "0x858",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_fod_PineappleFresh_00_a_ItemProxy_C": {
-    "Super": "BP_ProxyIngestible_C",
-    "FullSize": "0x7b0",
-    "InheritedSize": "0x7b0",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

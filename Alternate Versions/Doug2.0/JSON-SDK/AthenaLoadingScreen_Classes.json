@@ -4,233 +4,203 @@
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SlateLoadingScreenParams": {
     "Super": "DataAsset",
     "FullSize": "0x218",
     "InheritedSize": "0x28",
     "ClassSize": "0x1f0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DrawBackground": {
         "Type": "bool",
-        "Name": "DrawBackground",
         "Size": "0x1",
         "Offset": "0x28"
       },
-      {
+      "DrawBackgroundImage": {
         "Type": "bool",
-        "Name": "DrawBackgroundImage",
         "Size": "0x1",
         "Offset": "0x29"
       },
-      {
+      "DrawTips": {
         "Type": "bool",
-        "Name": "DrawTips",
         "Size": "0x1",
         "Offset": "0x2a"
       },
-      {
+      "DrawSpinner": {
         "Type": "bool",
-        "Name": "DrawSpinner",
         "Size": "0x1",
         "Offset": "0x2b"
       },
-      {
+      "ViewportWidth": {
         "Type": "float",
-        "Name": "ViewportWidth",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      {
+      "ViewportHeight": {
         "Type": "float",
-        "Name": "ViewportHeight",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      {
+      "FooterHeight": {
         "Type": "float",
-        "Name": "FooterHeight",
         "Size": "0x4",
         "Offset": "0x34"
       },
-      {
+      "DrawSpinnerText": {
         "Type": "bool",
-        "Name": "DrawSpinnerText",
         "Size": "0x1",
         "Offset": "0x38"
       },
-      {
+      "PlaceholderSpinnerTexture": {
         "Type": "Struct StringAssetReference",
-        "Name": "PlaceholderSpinnerTexture",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "BackgroundColour": {
         "Type": "Struct LinearColor",
-        "Name": "BackgroundColour",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      {
+      "PrimaryImage": {
         "Type": "Struct SlateLoadingScreenImageParams",
-        "Name": "PrimaryImage",
         "Size": "0x20",
         "Offset": "0x60"
       },
-      {
+      "CyclingImages": {
         "Type": "TArray<Struct PrimaryImage>",
-        "Name": "CyclingImages",
         "Size": "0x10",
         "Offset": "0x80"
       },
-      {
+      "MaxNumImagesPerLoad": {
         "Type": "int",
-        "Name": "MaxNumImagesPerLoad",
         "Size": "0x4",
         "Offset": "0x90"
       },
-      {
+      "SpinnerText": {
         "Type": "Struct FText",
-        "Name": "SpinnerText",
         "Size": "0x38",
         "Offset": "0x98"
       },
-      {
+      "SpinnerTextColour": {
         "Type": "Struct SlateColor",
-        "Name": "SpinnerTextColour",
         "Size": "0x30",
         "Offset": "0xd0"
       },
-      {
+      "SpinnerTextFont": {
         "Type": "Struct SlateFontInfo",
-        "Name": "SpinnerTextFont",
         "Size": "0x40",
         "Offset": "0x100"
       },
-      {
+      "SpinnerSize": {
         "Type": "float",
-        "Name": "SpinnerSize",
         "Size": "0x4",
         "Offset": "0x140"
       },
-      {
+      "SpinnerMargin": {
         "Type": "Struct Margin",
-        "Name": "SpinnerMargin",
         "Size": "0x10",
         "Offset": "0x144"
       },
-      {
+      "SpinnerPadding": {
         "Type": "float",
-        "Name": "SpinnerPadding",
         "Size": "0x4",
         "Offset": "0x154"
       },
-      {
+      "SpinnerIcon": {
         "Type": "Struct StringAssetReference",
-        "Name": "SpinnerIcon",
         "Size": "0x10",
         "Offset": "0x158"
       },
-      {
+      "TipsMargin": {
         "Type": "Struct Margin",
-        "Name": "TipsMargin",
         "Size": "0x10",
         "Offset": "0x168"
       },
-      {
+      "TipWrapLength": {
         "Type": "float",
-        "Name": "TipWrapLength",
         "Size": "0x4",
         "Offset": "0x178"
       },
-      {
+      "TipDisplayDuration": {
         "Type": "float",
-        "Name": "TipDisplayDuration",
         "Size": "0x4",
         "Offset": "0x17c"
       },
-      {
+      "TipDurationBetweenTips": {
         "Type": "float",
-        "Name": "TipDurationBetweenTips",
         "Size": "0x4",
         "Offset": "0x180"
       },
-      {
+      "NumTipsPerImage": {
         "Type": "int",
-        "Name": "NumTipsPerImage",
         "Size": "0x4",
         "Offset": "0x184"
       },
-      {
+      "LoadingTipFont": {
         "Type": "Struct SlateFontInfo",
-        "Name": "LoadingTipFont",
         "Size": "0x40",
         "Offset": "0x188"
       },
-      {
+      "LoadingTipFontLineHeightPercentage": {
         "Type": "float",
-        "Name": "LoadingTipFontLineHeightPercentage",
         "Size": "0x4",
         "Offset": "0x1c8"
       },
-      {
+      "LoadingScreenTips": {
         "Type": "TArray<Struct FText>",
-        "Name": "LoadingScreenTips",
         "Size": "0x10",
         "Offset": "0x1d0"
       },
-      {
+      "LoadingScreenTipColour": {
         "Type": "Struct SlateColor",
-        "Name": "LoadingScreenTipColour",
         "Size": "0x30",
         "Offset": "0x1e0"
       },
-      {
+      "AllowSyncronousAssetLoad": {
         "Type": "bool",
-        "Name": "AllowSyncronousAssetLoad",
         "Size": "0x1",
         "Offset": "0x210"
       }
-    ]
+    }
   },
   "AthenaLoadingScreenParams": {
     "Super": "DeveloperSettings",
     "FullSize": "0x78",
     "InheritedSize": "0x38",
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "BootLoadingScreen": {
         "Type": "Struct StringAssetReference",
-        "Name": "BootLoadingScreen",
         "Size": "0x10",
         "Offset": "0x38"
       },
-      {
+      "TeleportLoadingScreen": {
         "Type": "Struct StringAssetReference",
-        "Name": "TeleportLoadingScreen",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      {
+      "AdventureLoadingScreens": {
         "Type": "Struct StringAssetReference",
-        "Name": "AdventureLoadingScreens",
         "Size": "0x10",
         "Offset": "0x58"
       },
-      {
+      "ArenaLoadingScreens": {
         "Type": "Struct StringAssetReference",
-        "Name": "ArenaLoadingScreens",
         "Size": "0x10",
         "Offset": "0x68"
       }
-    ]
+    }
   },
   "LoadingUtilities": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

@@ -4,217 +4,190 @@
     "FullSize": "0x101",
     "InheritedSize": "0xe0",
     "ClassSize": "0x21",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0xe0"
       },
-      {
+      "AthenaPlayerController": {
         "Type": "Class AthenaPlayerController*",
-        "Name": "AthenaPlayerController",
         "Size": "0x8",
         "Offset": "0xe8"
       },
-      {
+      "VoyageState": {
         "Type": "byte",
-        "Name": "VoyageState",
         "Size": "0x1",
         "Offset": "0xf0"
       },
-      {
+      "MaximumRank": {
         "Type": "class",
-        "Name": "MaximumRank",
         "Size": "0x8",
         "Offset": "0xf8"
       },
-      {
+      "NoLongerPurchaseable": {
         "Type": "bool",
-        "Name": "NoLongerPurchaseable",
         "Size": "0x1",
         "Offset": "0x100"
       }
-    ]
+    }
   },
   "BP_CT_TutorialProgress_C": {
     "Super": "Object",
     "FullSize": "0x70",
     "InheritedSize": "0x28",
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      {
+      "AthenaPlayerController": {
         "Type": "Class AthenaPlayerController*",
-        "Name": "AthenaPlayerController",
         "Size": "0x8",
         "Offset": "0x30"
       },
-      {
+      "TutorialVoyageProgressTrackers": {
         "Type": "TArray<class TutorialVoyageProgressTrackers*>",
-        "Name": "TutorialVoyageProgressTrackers",
         "Size": "0x10",
         "Offset": "0x38"
       },
-      {
+      "XMarksTutorialProgress": {
         "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
-        "Name": "XMarksTutorialProgress",
         "Size": "0x8",
         "Offset": "0x48"
       },
-      {
+      "RiddleTutorialProgress": {
         "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
-        "Name": "RiddleTutorialProgress",
         "Size": "0x8",
         "Offset": "0x50"
       },
-      {
+      "FaunaTutorialProgress": {
         "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
-        "Name": "FaunaTutorialProgress",
         "Size": "0x8",
         "Offset": "0x58"
       },
-      {
+      "CargoTutorialProgress": {
         "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
-        "Name": "CargoTutorialProgress",
         "Size": "0x8",
         "Offset": "0x60"
       },
-      {
+      "BootyTutorialProgress": {
         "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
-        "Name": "BootyTutorialProgress",
         "Size": "0x8",
         "Offset": "0x68"
       }
-    ]
+    }
   },
   "BP_Prompt_VisitCompanyShop_C": {
     "Super": "BP_PromptCoordinator_Base_C",
     "FullSize": "0x1f2",
     "InheritedSize": "0x118",
     "ClassSize": "0xda",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x118"
       },
-      {
+      "Handle_TreasureChestSoldPredictedEvent": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_TreasureChestSoldPredictedEvent",
         "Size": "0x48",
         "Offset": "0x120"
       },
-      {
+      "Prompt_VisitCompanyShop": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_VisitCompanyShop",
         "Size": "0x68",
         "Offset": "0x168"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x1d0"
       },
-      {
+      "AccessKey": {
         "Type": "class",
-        "Name": "AccessKey",
         "Size": "0x8",
         "Offset": "0x1d8"
       },
-      {
+      "CompanyRankDesc": {
         "Type": "class",
-        "Name": "CompanyRankDesc",
         "Size": "0x8",
         "Offset": "0x1e0"
       },
-      {
+      "PromptDelayUntilDisplay": {
         "Type": "float",
-        "Name": "PromptDelayUntilDisplay",
         "Size": "0x4",
         "Offset": "0x1e8"
       },
-      {
+      "PromptDisplayDuration": {
         "Type": "float",
-        "Name": "PromptDisplayDuration",
         "Size": "0x4",
         "Offset": "0x1ec"
       },
-      {
+      "IsCorrectCompany": {
         "Type": "bool",
-        "Name": "IsCorrectCompany",
         "Size": "0x1",
         "Offset": "0x1f0"
       },
-      {
+      "PromptInfoSet": {
         "Type": "bool",
-        "Name": "PromptInfoSet",
         "Size": "0x1",
         "Offset": "0x1f1"
       }
-    ]
+    }
   },
   "BP_Prompt_VisitSeapost_C": {
     "Super": "BP_PromptCoordinator_Base_C",
     "FullSize": "0x258",
     "InheritedSize": "0x118",
     "ClassSize": "0x140",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x118"
       },
-      {
+      "Handle_EventObjectWielded": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_EventObjectWielded",
         "Size": "0x48",
         "Offset": "0x120"
       },
-      {
+      "Prompt_WieledFishOrMeat": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_WieledFishOrMeat",
         "Size": "0x68",
         "Offset": "0x168"
       },
-      {
+      "Prompt_VisitSeapost": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_VisitSeapost",
         "Size": "0x68",
         "Offset": "0x1d0"
       },
-      {
+      "IsWieldingMeatOrFish": {
         "Type": "bool",
-        "Name": "IsWieldingMeatOrFish",
         "Size": "0x1",
         "Offset": "0x238"
       },
-      {
+      "DisplayDuration": {
         "Type": "float",
-        "Name": "DisplayDuration",
         "Size": "0x4",
         "Offset": "0x23c"
       },
-      {
+      "DelayUntilNextPrompt": {
         "Type": "float",
-        "Name": "DelayUntilNextPrompt",
         "Size": "0x4",
         "Offset": "0x240"
       },
-      {
-        "Type": "TArray<Class Prompt_WieledFishOrMeat>",
-        "Name": "IgnoredFood",
+      "IgnoredFood": {
+        "Type": "TArray<Class IgnoredFood>",
         "Size": "0x10",
         "Offset": "0x248"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

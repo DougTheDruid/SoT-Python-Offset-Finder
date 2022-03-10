@@ -4,191 +4,169 @@
     "FullSize": "0x788",
     "InheritedSize": "0x80",
     "ClassSize": "0x708",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Idles": {
         "Type": "Struct ADS_IdlesNative",
-        "Name": "Idles",
         "Size": "0x10",
         "Offset": "0x80"
       },
-      {
+      "Locomotion": {
         "Type": "Struct ADS_LocomotionNative",
-        "Name": "Locomotion",
         "Size": "0x50",
         "Offset": "0x90"
       },
-      {
+      "LocomotionAlternate": {
         "Type": "Struct ADS_LocomotionAlternateNative",
-        "Name": "LocomotionAlternate",
         "Size": "0x140",
         "Offset": "0xe0"
       },
-      {
+      "Jumping": {
         "Type": "Struct ADS_JumpingNative",
-        "Name": "Jumping",
         "Size": "0x78",
         "Offset": "0x220"
       },
-      {
+      "Swimming": {
         "Type": "Struct ADS_SwimmingNative",
-        "Name": "Swimming",
         "Size": "0x68",
         "Offset": "0x298"
       },
-      {
+      "Wheel": {
         "Type": "Struct ADS_WheelNative",
-        "Name": "Wheel",
         "Size": "0x88",
         "Offset": "0x300"
       },
-      {
+      "Capstan": {
         "Type": "Struct ADS_CapstanNative",
-        "Name": "Capstan",
         "Size": "0x68",
         "Offset": "0x388"
       },
-      {
+      "Ladder": {
         "Type": "Struct ADS_LadderNative",
-        "Name": "Ladder",
         "Size": "0x68",
         "Offset": "0x3f0"
       },
-      {
+      "Items": {
         "Type": "Struct ADS_ObjectsNative",
-        "Name": "Items",
         "Size": "0x10",
         "Offset": "0x458"
       },
-      {
+      "Cannon": {
         "Type": "Struct ADS_CannonNative",
-        "Name": "Cannon",
         "Size": "0x38",
         "Offset": "0x468"
       },
-      {
+      "HarpoonLauncher": {
         "Type": "Struct ADS_HarpoonLauncherNative",
-        "Name": "HarpoonLauncher",
         "Size": "0x28",
         "Offset": "0x4a0"
       },
-      {
+      "Sockets": {
         "Type": "Struct ADS_Sockets",
-        "Name": "Sockets",
         "Size": "0x2",
         "Offset": "0x4c8"
       },
-      {
+      "Facial": {
         "Type": "Struct ADS_FacialNative",
-        "Name": "Facial",
         "Size": "0x90",
         "Offset": "0x4d0"
       },
-      {
+      "IkFootPlanting": {
         "Type": "Struct ADS_IKFootPlantingNative",
-        "Name": "IkFootPlanting",
         "Size": "0x28",
         "Offset": "0x560"
       },
-      {
+      "HitReacts": {
         "Type": "Struct ADS_HitReactsNative",
-        "Name": "HitReacts",
         "Size": "0x40",
         "Offset": "0x588"
       },
-      {
+      "MapTable": {
         "Type": "Struct ADS_MapTableNative",
-        "Name": "MapTable",
         "Size": "0x30",
         "Offset": "0x5c8"
       },
-      {
+      "Spawning": {
         "Type": "Struct ADS_SpawnNative2",
-        "Name": "Spawning",
         "Size": "0x10",
         "Offset": "0x5f8"
       },
-      {
+      "CharacterSelect": {
         "Type": "Struct ADS_CharacterSelectNative",
-        "Name": "CharacterSelect",
         "Size": "0x10",
         "Offset": "0x608"
       },
-      {
+      "SkeletonFlee": {
         "Type": "Struct ADS_SkeletonFleeNative",
-        "Name": "SkeletonFlee",
         "Size": "0x10",
         "Offset": "0x618"
       },
-      {
+      "ShopInteraction": {
         "Type": "Struct ADS_InteractionNative",
-        "Name": "ShopInteraction",
         "Size": "0x10",
         "Offset": "0x628"
       },
-      {
+      "SkeletonSensing": {
         "Type": "Struct ADS_SkeletonSensing",
-        "Name": "SkeletonSensing",
         "Size": "0x10",
         "Offset": "0x638"
       },
-      {
+      "SkeletonActionEmotes": {
         "Type": "Struct ADS_SkeletonEmoteActions",
-        "Name": "SkeletonActionEmotes",
         "Size": "0x10",
         "Offset": "0x648"
       },
-      {
+      "Rowboat": {
         "Type": "Struct ADS_RowingBoatNative",
-        "Name": "Rowboat",
         "Size": "0x98",
         "Offset": "0x658"
       },
-      {
+      "SkeletonShipCaptain": {
         "Type": "Struct ADS_SkeletonCaptainNative",
-        "Name": "SkeletonShipCaptain",
         "Size": "0x48",
         "Offset": "0x6f0"
       },
-      {
+      "SkeletonCurse": {
         "Type": "Struct ADS_SkeletonCurseNative",
-        "Name": "SkeletonCurse",
         "Size": "0x28",
         "Offset": "0x738"
       },
-      {
+      "WaterPump": {
         "Type": "Struct ADS_WaterPumpNative",
-        "Name": "WaterPump",
         "Size": "0x28",
         "Offset": "0x760"
       }
-    ]
+    }
   },
   "AD_ThirdPerson_PlayerPirate_Female_Athletic_C": {
     "Super": "AD_ThirdPerson_PlayerPirate_Female_Default_C",
     "FullSize": "0x788",
     "InheritedSize": "0x788",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "AD_ThirdPerson_PlayerPirate_Female_Large_C": {
     "Super": "AD_ThirdPerson_PlayerPirate_Female_Default_C",
     "FullSize": "0x788",
     "InheritedSize": "0x788",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "AD_ThirdPerson_PlayerPirate_Female_Thin_C": {
     "Super": "AD_ThirdPerson_PlayerPirate_Female_Default_C",
     "FullSize": "0x788",
     "InheritedSize": "0x788",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "AD_ThirdPerson_PlayerPirate_Female_Unfit_C": {
     "Super": "AD_ThirdPerson_PlayerPirate_Female_Default_C",
     "FullSize": "0x788",
     "InheritedSize": "0x788",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

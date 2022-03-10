@@ -1,330 +1,286 @@
 {
   "DrawDebugItemString": {
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "GroupName": {
         "Type": "struct FName",
-        "Name": "GroupName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ReplaceInGroup": {
         "Type": "bool",
-        "Name": "ReplaceInGroup",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      {
+      "String": {
         "Type": "Struct FString",
-        "Name": "String",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "Colour": {
         "Type": "Struct Color",
-        "Name": "Colour",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      {
+      "StringPos": {
         "Type": "Struct Vector",
-        "Name": "StringPos",
         "Size": "0xc",
         "Offset": "0x24"
       }
-    ]
+    }
   },
   "DrawDebugItemMessage": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "GroupName": {
         "Type": "struct FName",
-        "Name": "GroupName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ReplaceInGroup": {
         "Type": "bool",
-        "Name": "ReplaceInGroup",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      {
+      "Message": {
         "Type": "Struct FString",
-        "Name": "Message",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "Colour": {
         "Type": "Struct Color",
-        "Name": "Colour",
         "Size": "0x4",
         "Offset": "0x20"
       }
-    ]
+    }
   },
   "DrawDebugItemSector": {
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "GroupName": {
         "Type": "struct FName",
-        "Name": "GroupName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ReplaceInGroup": {
         "Type": "bool",
-        "Name": "ReplaceInGroup",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      {
+      "RotationAngle": {
         "Type": "float",
-        "Name": "RotationAngle",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      {
+      "Centre": {
         "Type": "Struct Vector",
-        "Name": "Centre",
         "Size": "0xc",
         "Offset": "0x10"
       },
-      {
+      "SectorAngle": {
         "Type": "float",
-        "Name": "SectorAngle",
         "Size": "0x4",
         "Offset": "0x1c"
       },
-      {
+      "Radius": {
         "Type": "float",
-        "Name": "Radius",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      {
+      "Colour": {
         "Type": "Struct Color",
-        "Name": "Colour",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      {
+      "ZeroAngleVector": {
         "Type": "Struct Vector",
-        "Name": "ZeroAngleVector",
         "Size": "0xc",
         "Offset": "0x28"
       },
-      {
+      "RotationAxis": {
         "Type": "Struct Vector",
-        "Name": "RotationAxis",
         "Size": "0xc",
         "Offset": "0x34"
       },
-      {
+      "SubAngles": {
         "Type": "float",
-        "Name": "SubAngles",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      {
+      "Thickness": {
         "Type": "float",
-        "Name": "Thickness",
         "Size": "0x4",
         "Offset": "0x44"
       }
-    ]
+    }
   },
   "DrawDebugItemLine": {
     "ClassSize": "0x2c",
-    "Attributes": [
-      {
+    "Attributes": {
+      "GroupName": {
         "Type": "struct FName",
-        "Name": "GroupName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ReplaceInGroup": {
         "Type": "bool",
-        "Name": "ReplaceInGroup",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      {
+      "LineStart": {
         "Type": "Struct Vector",
-        "Name": "LineStart",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      {
+      "LineEnd": {
         "Type": "Struct Vector",
-        "Name": "LineEnd",
         "Size": "0xc",
         "Offset": "0x18"
       },
-      {
+      "Colour": {
         "Type": "Struct Color",
-        "Name": "Colour",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      {
+      "Thickness": {
         "Type": "float",
-        "Name": "Thickness",
         "Size": "0x4",
         "Offset": "0x28"
       }
-    ]
+    }
   },
   "DrawDebugItemCapsule": {
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "GroupName": {
         "Type": "struct FName",
-        "Name": "GroupName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ReplaceInGroup": {
         "Type": "bool",
-        "Name": "ReplaceInGroup",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      {
+      "CentrePos": {
         "Type": "Struct Vector",
-        "Name": "CentrePos",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      {
+      "HalfHeight": {
         "Type": "float",
-        "Name": "HalfHeight",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      {
+      "Radius": {
         "Type": "float",
-        "Name": "Radius",
         "Size": "0x4",
         "Offset": "0x1c"
       },
-      {
+      "Rotation": {
         "Type": "Struct Quat",
-        "Name": "Rotation",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      {
+      "Colour": {
         "Type": "Struct Color",
-        "Name": "Colour",
         "Size": "0x4",
         "Offset": "0x30"
       }
-    ]
+    }
   },
   "DrawDebugItemBox": {
     "ClassSize": "0x50",
-    "Attributes": [
-      {
+    "Attributes": {
+      "GroupName": {
         "Type": "struct FName",
-        "Name": "GroupName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ReplaceInGroup": {
         "Type": "bool",
-        "Name": "ReplaceInGroup",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      {
+      "CentrePos": {
         "Type": "Struct Vector",
-        "Name": "CentrePos",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      {
+      "Box": {
         "Type": "Struct Vector",
-        "Name": "Box",
         "Size": "0xc",
         "Offset": "0x18"
       },
-      {
+      "Rotation": {
         "Type": "Struct Quat",
-        "Name": "Rotation",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      {
+      "Colour": {
         "Type": "Struct Color",
-        "Name": "Colour",
         "Size": "0x4",
         "Offset": "0x40"
       }
-    ]
+    }
   },
   "DrawDebugItemSphere": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "GroupName": {
         "Type": "struct FName",
-        "Name": "GroupName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ReplaceInGroup": {
         "Type": "bool",
-        "Name": "ReplaceInGroup",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      {
+      "CentrePos": {
         "Type": "Struct Vector",
-        "Name": "CentrePos",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      {
+      "Radius": {
         "Type": "float",
-        "Name": "Radius",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      {
+      "Colour": {
         "Type": "Struct Color",
-        "Name": "Colour",
         "Size": "0x4",
         "Offset": "0x1c"
       }
-    ]
+    }
   },
   "SphereData": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Location": {
         "Type": "Struct Vector",
-        "Name": "Location",
         "Size": "0xc",
         "Offset": "0x0"
       },
-      {
+      "Radius": {
         "Type": "float",
-        "Name": "Radius",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      {
+      "Segments": {
         "Type": "int",
-        "Name": "Segments",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      {
+      "Colour": {
         "Type": "Struct Color",
-        "Name": "Colour",
         "Size": "0x4",
         "Offset": "0x14"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

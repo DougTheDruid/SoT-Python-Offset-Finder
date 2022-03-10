@@ -1,1893 +1,1651 @@
 {
   "CoordinatedKrakenExplosionEvent": {
     "ClassSize": "0xc",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ExplosionPointIndex": {
         "Type": "int",
-        "Name": "ExplosionPointIndex",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "TimeOffset": {
         "Type": "float",
-        "Name": "TimeOffset",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    ]
+    }
   },
   "CoordinatedKrakenHeadAction": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "State": {
         "Type": "class",
-        "Name": "State",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "TimeOffset": {
         "Type": "float",
-        "Name": "TimeOffset",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "CoordinatedKrakenSpecialEvent": {
     "ClassSize": "0xc",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Type": {
         "Type": "byte",
-        "Name": "Type",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "TimeOffset": {
         "Type": "float",
-        "Name": "TimeOffset",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    ]
+    }
   },
   "CoordinatedKrakenTentacleAction": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "State": {
         "Type": "class",
-        "Name": "State",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "TentacleIndex": {
         "Type": "int",
-        "Name": "TentacleIndex",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "TimeOffset": {
         "Type": "float",
-        "Name": "TimeOffset",
         "Size": "0x4",
         "Offset": "0xc"
       }
-    ]
+    }
   },
   "CoordinatedKrakenAction": {
     "ClassSize": "0x330",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ActionName": {
         "Type": "struct FName",
-        "Name": "ActionName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ActionLength": {
         "Type": "float",
-        "Name": "ActionLength",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "ActionType": {
         "Type": "byte",
-        "Name": "ActionType",
         "Size": "0x1",
         "Offset": "0xc"
       },
-      {
+      "SpecialEvents": {
         "Type": "TArray<Struct ActionType>",
-        "Name": "SpecialEvents",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "TentacleActions": {
         "Type": "TArray<Struct SpecialEvents>",
-        "Name": "TentacleActions",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      {
+      "HeadActions": {
         "Type": "TArray<Struct TentacleActions>",
-        "Name": "HeadActions",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      {
+      "ExplosionEvents": {
         "Type": "TArray<Struct HeadActions>",
-        "Name": "ExplosionEvents",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "TargetActorLocationAnimation": {
         "Type": "Struct RuntimeVectorCurve",
-        "Name": "TargetActorLocationAnimation",
         "Size": "0x170",
         "Offset": "0x50"
       },
-      {
+      "TargetActorRotationAnimation": {
         "Type": "Struct RuntimeVectorCurve",
-        "Name": "TargetActorRotationAnimation",
         "Size": "0x170",
         "Offset": "0x1c0"
       }
-    ]
+    }
   },
   "KrakenShipHittingBehaviourParamsCollection": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Params": {
         "Type": "TArray<class Params*>",
-        "Name": "Params",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "KrakenShipHittingBehaviourParams": {
     "ClassSize": "0x60",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ShipSize": {
         "Type": "class",
-        "Name": "ShipSize",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "TentacleType": {
         "Type": "class",
-        "Name": "TentacleType",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "DamageRequiredToCancelImpact": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "DamageRequiredToCancelImpact",
         "Size": "0x30",
         "Offset": "0x10"
       },
-      {
+      "CancellationThreshold": {
         "Type": "float",
-        "Name": "CancellationThreshold",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      {
+      "ImpactTime": {
         "Type": "float",
-        "Name": "ImpactTime",
         "Size": "0x4",
         "Offset": "0x44"
       },
-      {
+      "LevelsOfDamage": {
         "Type": "int",
-        "Name": "LevelsOfDamage",
         "Size": "0x4",
         "Offset": "0x48"
       },
-      {
+      "Configurations": {
         "Type": "TArray<Struct KrakenShipHittingBehaviourImpactParams>",
-        "Name": "Configurations",
         "Size": "0x10",
         "Offset": "0x50"
       }
-    ]
+    }
   },
   "KrakenShipHittingBehaviourImpactParams": {
     "ClassSize": "0xa0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Weight": {
         "Type": "int",
-        "Name": "Weight",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "TentacleTransform": {
         "Type": "Struct Transform",
-        "Name": "TentacleTransform",
         "Size": "0x30",
         "Offset": "0x10"
       },
-      {
+      "ImpactLocation": {
         "Type": "Struct Vector",
-        "Name": "ImpactLocation",
         "Size": "0xc",
         "Offset": "0x40"
       },
-      {
+      "ImpactForce": {
         "Type": "Struct Vector",
-        "Name": "ImpactForce",
         "Size": "0xc",
         "Offset": "0x4c"
       },
-      {
+      "DamageLocation": {
         "Type": "Struct Vector",
-        "Name": "DamageLocation",
         "Size": "0xc",
         "Offset": "0x58"
       },
-      {
+      "NumZonesToDamage": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "NumZonesToDamage",
         "Size": "0x30",
         "Offset": "0x68"
       }
-    ]
+    }
   },
   "KrakenShipWrappingTentacleParams": {
     "ClassSize": "0xf0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AnimationStates": {
         "Type": "Struct KrakenShipWrappingTentacleAnimationPhaseCollection",
-        "Name": "AnimationStates",
         "Size": "0x80",
         "Offset": "0x0"
       },
-      {
+      "TimeIntoWrappingToDisableInteractables": {
         "Type": "float",
-        "Name": "TimeIntoWrappingToDisableInteractables",
         "Size": "0x4",
         "Offset": "0x80"
       },
-      {
+      "TimeIntoUnwrappingToEnableInteractables": {
         "Type": "float",
-        "Name": "TimeIntoUnwrappingToEnableInteractables",
         "Size": "0x4",
         "Offset": "0x84"
       },
-      {
+      "TimeIntoWrappingToEnableCollisions": {
         "Type": "float",
-        "Name": "TimeIntoWrappingToEnableCollisions",
         "Size": "0x4",
         "Offset": "0x88"
       },
-      {
+      "TimeIntoUnwrappingToDisableCollisions": {
         "Type": "float",
-        "Name": "TimeIntoUnwrappingToDisableCollisions",
         "Size": "0x4",
         "Offset": "0x8c"
       },
-      {
+      "TimeIntoEnteringShakeAttackToEnableCollisions": {
         "Type": "float",
-        "Name": "TimeIntoEnteringShakeAttackToEnableCollisions",
         "Size": "0x4",
         "Offset": "0x90"
       },
-      {
+      "TimeIntoExitingShakeAttackToDisableCollisions": {
         "Type": "float",
-        "Name": "TimeIntoExitingShakeAttackToDisableCollisions",
         "Size": "0x4",
         "Offset": "0x94"
       },
-      {
+      "HighDetailAnimationStreamingDistance": {
         "Type": "float",
-        "Name": "HighDetailAnimationStreamingDistance",
         "Size": "0x4",
         "Offset": "0x98"
       },
-      {
+      "WrappingOutOfWaterSplashVFX": {
         "Type": "Struct KrakenShipWrappingTentacleVFXParams",
-        "Name": "WrappingOutOfWaterSplashVFX",
         "Size": "0x28",
         "Offset": "0xa0"
       },
-      {
+      "WrappingIntoWaterSplashVFX": {
         "Type": "Struct KrakenShipWrappingTentacleVFXParams",
-        "Name": "WrappingIntoWaterSplashVFX",
         "Size": "0x28",
         "Offset": "0xc8"
       }
-    ]
+    }
   },
   "KrakenShipWrappingTentacleVFXParams": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "VFX": {
         "Type": "Class ParticleSystem*",
-        "Name": "VFX",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "TriggerTime": {
         "Type": "float",
-        "Name": "TriggerTime",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "Location": {
         "Type": "Struct Vector",
-        "Name": "Location",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      {
+      "Rotation": {
         "Type": "Struct Rotator",
-        "Name": "Rotation",
         "Size": "0xc",
         "Offset": "0x18"
       }
-    ]
+    }
   },
   "KrakenShipWrappingTentacleAnimationPhaseCollection": {
     "ClassSize": "0x80",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Dormant": {
         "Type": "Struct KrakenShipWrappingTentacleAnimationStateParams",
-        "Name": "Dormant",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "Wrapping": {
         "Type": "Struct KrakenShipWrappingTentacleAnimationStateParams",
-        "Name": "Wrapping",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "AmbientWobble": {
         "Type": "Struct KrakenShipWrappingTentacleAnimationStateParams",
-        "Name": "AmbientWobble",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      {
+      "EnteringShakeAttack": {
         "Type": "Struct KrakenShipWrappingTentacleAnimationStateParams",
-        "Name": "EnteringShakeAttack",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      {
+      "ShakeAttack": {
         "Type": "Struct KrakenShipWrappingTentacleAnimationStateParams",
-        "Name": "ShakeAttack",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "ExitingShakeAttack": {
         "Type": "Struct KrakenShipWrappingTentacleAnimationStateParams",
-        "Name": "ExitingShakeAttack",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      {
+      "HeavyAttack": {
         "Type": "Struct KrakenShipWrappingTentacleAnimationStateParams",
-        "Name": "HeavyAttack",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      {
+      "Unwrapping": {
         "Type": "Struct KrakenShipWrappingTentacleAnimationStateParams",
-        "Name": "Unwrapping",
         "Size": "0x10",
         "Offset": "0x70"
       }
-    ]
+    }
   },
   "KrakenShipWrappingTentacleAnimationStateParams": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Visible": {
         "Type": "bool",
-        "Name": "Visible",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "StartFrame": {
         "Type": "int",
-        "Name": "StartFrame",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "EndFrame": {
         "Type": "int",
-        "Name": "EndFrame",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "Duration": {
         "Type": "float",
-        "Name": "Duration",
         "Size": "0x4",
         "Offset": "0xc"
       }
-    ]
+    }
   },
   "KrakenShipWrappingTentacleAnimationState": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "State": {
         "Type": "byte",
-        "Name": "State",
         "Size": "0x1",
         "Offset": "0x4"
       },
-      {
+      "EndTime": {
         "Type": "double",
-        "Name": "EndTime",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "KrakenAnchorDynamicsParams": {
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": {}
   },
   "KrakenDynamicsParams": {
     "ClassSize": "0x50",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AmbientWobble": {
         "Type": "Struct KrakenDynamicsStateParams",
-        "Name": "AmbientWobble",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "EnteringShakeAttack": {
         "Type": "Struct KrakenDynamicsStateParams",
-        "Name": "EnteringShakeAttack",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "ShakeAttack": {
         "Type": "Struct KrakenDynamicsStateParams",
-        "Name": "ShakeAttack",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      {
+      "ExitingShakeAttack": {
         "Type": "Struct KrakenDynamicsStateParams",
-        "Name": "ExitingShakeAttack",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      {
+      "HeavyAttack": {
         "Type": "Struct KrakenDynamicsStateParams",
-        "Name": "HeavyAttack",
         "Size": "0x10",
         "Offset": "0x40"
       }
-    ]
+    }
   },
   "KrakenDynamicsStateParams": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "FragmentParams": {
         "Type": "TArray<Struct KrakenDynamicsStateFragmentParams>",
-        "Name": "FragmentParams",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "KrakenDynamicsStateFragmentParams": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TorqueCurve": {
         "Type": "Class CurveVector*",
-        "Name": "TorqueCurve",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "BaselineTorque": {
         "Type": "float",
-        "Name": "BaselineTorque",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "Events": {
         "Type": "TArray<Struct KrakenDynamicsStateEvent>",
-        "Name": "Events",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "KrakenDynamicsStateEvent": {
     "ClassSize": "0xc",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Event": {
         "Type": "byte",
-        "Name": "Event",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "Time": {
         "Type": "float",
-        "Name": "Time",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "Value": {
         "Type": "float",
-        "Name": "Value",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourParamsCollection": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Params": {
         "Type": "TArray<class Params*>",
-        "Name": "Params",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourParams": {
     "ClassSize": "0x420",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ShipSize": {
         "Type": "class",
-        "Name": "ShipSize",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "WarningParams": {
         "Type": "Struct KrakenShipWrappingBehaviourWarningParams",
-        "Name": "WarningParams",
         "Size": "0xa0",
         "Offset": "0x10"
       },
-      {
+      "WrapParams": {
         "Type": "Struct KrakenShipWrappingBehaviourWrapParams",
-        "Name": "WrapParams",
         "Size": "0x140",
         "Offset": "0xb0"
       },
-      {
+      "TentacleHeadParams": {
         "Type": "Struct KrakenShipWrappingBehaviourTentacleHeadParams",
-        "Name": "TentacleHeadParams",
         "Size": "0x48",
         "Offset": "0x1f0"
       },
-      {
+      "ShakeAttackParams": {
         "Type": "Struct KrakenShipWrappingBehaviourShakeAttackParams",
-        "Name": "ShakeAttackParams",
         "Size": "0x68",
         "Offset": "0x238"
       },
-      {
+      "HeavyAttackParams": {
         "Type": "Struct KrakenShipWrappingBehaviourHeavyAttackParams",
-        "Name": "HeavyAttackParams",
         "Size": "0xd8",
         "Offset": "0x2a0"
       },
-      {
+      "DamageParams": {
         "Type": "Struct KrakenShipWrappingBehaviourDamageParams",
-        "Name": "DamageParams",
         "Size": "0x70",
         "Offset": "0x378"
       },
-      {
+      "HealthParams": {
         "Type": "Struct KrakenShipWrappingBehaviourHealthParams",
-        "Name": "HealthParams",
         "Size": "0x38",
         "Offset": "0x3e8"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourHealthParams": {
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "HealthReductionRequiredToUnwrapTheShipRange": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "HealthReductionRequiredToUnwrapTheShipRange",
         "Size": "0x30",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourDamageParams": {
     "ClassSize": "0x70",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ChanceOfDamagingBottomDeckDamageHoles": {
         "Type": "float",
-        "Name": "ChanceOfDamagingBottomDeckDamageHoles",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "ChanceThatExistingHolesWillBeDamaged": {
         "Type": "float",
-        "Name": "ChanceThatExistingHolesWillBeDamaged",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "LevelsOfDamage": {
         "Type": "int",
-        "Name": "LevelsOfDamage",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "NumHolesToDamageRange": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "NumHolesToDamageRange",
         "Size": "0x30",
         "Offset": "0x10"
       },
-      {
+      "DamageIntervalRange": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "DamageIntervalRange",
         "Size": "0x30",
         "Offset": "0x40"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourHeavyAttackParams": {
     "ClassSize": "0xd8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AttackDuration": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "AttackDuration",
         "Size": "0x30",
         "Offset": "0x0"
       },
-      {
+      "ChanceOfEnteringHeavyAttack": {
         "Type": "float",
-        "Name": "ChanceOfEnteringHeavyAttack",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      {
+      "ExteriorKnockbackParams": {
         "Type": "Struct KnockBackInfo",
-        "Name": "ExteriorKnockbackParams",
         "Size": "0x50",
         "Offset": "0x34"
       },
-      {
+      "InteriorKnockbackParams": {
         "Type": "Struct KnockBackInfo",
-        "Name": "InteriorKnockbackParams",
         "Size": "0x50",
         "Offset": "0x84"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourShakeAttackParams": {
     "ClassSize": "0x68",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TimeBetweenShakeAttackAttempts": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "TimeBetweenShakeAttackAttempts",
         "Size": "0x30",
         "Offset": "0x0"
       },
-      {
+      "AttackDuration": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "AttackDuration",
         "Size": "0x30",
         "Offset": "0x30"
       },
-      {
+      "ChanceOfShake": {
         "Type": "float",
-        "Name": "ChanceOfShake",
         "Size": "0x4",
         "Offset": "0x64"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourTentacleHeadParams": {
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TentacleType": {
         "Type": "class",
-        "Name": "TentacleType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "DamageRequiredToRelocate": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "DamageRequiredToRelocate",
         "Size": "0x30",
         "Offset": "0x8"
       },
-      {
+      "RelocationThreshold": {
         "Type": "float",
-        "Name": "RelocationThreshold",
         "Size": "0x4",
         "Offset": "0x38"
       },
-      {
+      "ChanceOfSwitchingSides": {
         "Type": "float",
-        "Name": "ChanceOfSwitchingSides",
         "Size": "0x4",
         "Offset": "0x3c"
       },
-      {
+      "ChanceOfSelectingNearLocationAfterSwitchingSides": {
         "Type": "float",
-        "Name": "ChanceOfSelectingNearLocationAfterSwitchingSides",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      {
+      "ChanceOfSelectingSelectingDifferentDistanceFromShipWhenRemaning": {
         "Type": "float",
-        "Name": "ChanceOfSelectingSelectingDifferentDistanceFromShipWhenRemaning",
         "Size": "0x4",
         "Offset": "0x44"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourWrapParams": {
     "ClassSize": "0x140",
-    "Attributes": [
-      {
+    "Attributes": {
+      "WrapTimeBeforeGivingUpRange": {
         "Type": "Struct FloatRange",
-        "Name": "WrapTimeBeforeGivingUpRange",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "ShipInternalWaterLevelToTriggerUnwrap": {
         "Type": "float",
-        "Name": "ShipInternalWaterLevelToTriggerUnwrap",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      {
+      "AnchorDynamicsParams": {
         "Type": "Struct KrakenAnchorDynamicsParams",
-        "Name": "AnchorDynamicsParams",
         "Size": "0x28",
         "Offset": "0x18"
       },
-      {
+      "WrapLocations": {
         "Type": "TArray<Struct KrakenShipWrappingBehaviourWrapLocationWeightedParams>",
-        "Name": "WrapLocations",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "WrapTimeBeforeGivingUp": {
         "Type": "float",
-        "Name": "WrapTimeBeforeGivingUp",
         "Size": "0x4",
         "Offset": "0x50"
       },
-      {
+      "WrapLocation": {
         "Type": "Struct KrakenShipWrappingBehaviourWrapLocationParams",
-        "Name": "WrapLocation",
         "Size": "0xe0",
         "Offset": "0x60"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourWrapLocationParams": {
     "ClassSize": "0xe0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TentacleType": {
         "Type": "class",
-        "Name": "TentacleType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "WrapLocationAnchorPoint": {
         "Type": "Struct Vector",
-        "Name": "WrapLocationAnchorPoint",
         "Size": "0xc",
         "Offset": "0x8"
       },
-      {
+      "TentacleHeadHoldShipLocation": {
         "Type": "Struct Transform",
-        "Name": "TentacleHeadHoldShipLocation",
         "Size": "0x30",
         "Offset": "0x20"
       },
-      {
+      "PortTentacleHeadLocations": {
         "Type": "Struct KrakenShipWrappingBehaviourTentacleHeadLocations",
-        "Name": "PortTentacleHeadLocations",
         "Size": "0x20",
         "Offset": "0x50"
       },
-      {
+      "StarboardTentacleHeadLocations": {
         "Type": "Struct KrakenShipWrappingBehaviourTentacleHeadLocations",
-        "Name": "StarboardTentacleHeadLocations",
         "Size": "0x20",
         "Offset": "0x70"
       },
-      {
+      "DynamicsParams": {
         "Type": "Struct KrakenDynamicsParams",
-        "Name": "DynamicsParams",
         "Size": "0x50",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourTentacleHeadLocations": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Near": {
         "Type": "TArray<Struct PortTentacleHeadLocations>",
-        "Name": "Near",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "Far": {
         "Type": "TArray<Struct KrakenShipWrappingBehaviourNamedTransform>",
-        "Name": "Far",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourNamedTransform": {
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Name": {
         "Type": "struct FName",
-        "Name": "Name",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "Transform": {
         "Type": "Struct Transform",
-        "Name": "Transform",
         "Size": "0x30",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourWrapLocationWeightedParams": {
     "ClassSize": "0xf0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Weight": {
         "Type": "float",
-        "Name": "Weight",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "Params": {
         "Type": "Struct KrakenShipWrappingBehaviourWrapLocationParams",
-        "Name": "Params",
         "Size": "0xe0",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "KrakenShipWrappingBehaviourWarningParams": {
     "ClassSize": "0xa0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TentacleType": {
         "Type": "class",
-        "Name": "TentacleType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "TickDuration": {
         "Type": "float",
-        "Name": "TickDuration",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "TentacleTimeoutRange": {
         "Type": "Struct FloatRange",
-        "Name": "TentacleTimeoutRange",
         "Size": "0x10",
         "Offset": "0xc"
       },
-      {
+      "TentacleHealthRange": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "TentacleHealthRange",
         "Size": "0x30",
         "Offset": "0x20"
       },
-      {
+      "TentacleLocations": {
         "Type": "TArray<Struct TentacleHealthRange>",
-        "Name": "TentacleLocations",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      {
+      "TentacleTimeout": {
         "Type": "float",
-        "Name": "TentacleTimeout",
         "Size": "0x4",
         "Offset": "0x60"
       },
-      {
+      "TentacleHealth": {
         "Type": "float",
-        "Name": "TentacleHealth",
         "Size": "0x4",
         "Offset": "0x64"
       },
-      {
+      "TentacleLocation": {
         "Type": "Struct Transform",
-        "Name": "TentacleLocation",
         "Size": "0x30",
         "Offset": "0x70"
       }
-    ]
+    }
   },
   "KrakenBehaviourParams": {
     "ClassSize": "0x68",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Type": {
         "Type": "byte",
-        "Name": "Type",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "TargetTimeout": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "TargetTimeout",
         "Size": "0x30",
         "Offset": "0x8"
       },
-      {
+      "IdleParams": {
         "Type": "Class KrakenIdleBehaviourParamsDataAsset*",
-        "Name": "IdleParams",
         "Size": "0x8",
         "Offset": "0x38"
       },
-      {
+      "ShipWrappingParams": {
         "Type": "Struct KrakenShipWrappingBehaviourParamsCollection",
-        "Name": "ShipWrappingParams",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "ShipHittingParams": {
         "Type": "Struct KrakenShipHittingBehaviourParamsCollection",
-        "Name": "ShipHittingParams",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      {
+      "PlayerGrabbingParams": {
         "Type": "Class KrakenPlayerGrabbingBehaviourParamsDataAsset*",
-        "Name": "PlayerGrabbingParams",
         "Size": "0x8",
         "Offset": "0x60"
       }
-    ]
+    }
   },
   "KrakenParams": {
     "ClassSize": "0x160",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MurkClass": {
         "Type": "class",
-        "Name": "MurkClass",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "PotentialTentacleSpawnLocations": {
         "Type": "Class GeneratedLocationsDataAsset*",
-        "Name": "PotentialTentacleSpawnLocations",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "NumberOfTentaclesToSpawn": {
         "Type": "Struct WeightedProbabilityRange",
-        "Name": "NumberOfTentaclesToSpawn",
         "Size": "0x20",
         "Offset": "0x10"
       },
-      {
+      "TentaclesRequiredToDismissKraken": {
         "Type": "TArray<Struct NumberOfTentaclesToSpawn>",
-        "Name": "TentaclesRequiredToDismissKraken",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      {
+      "TickFrequencyToLookForNewBehaviours": {
         "Type": "float",
-        "Name": "TickFrequencyToLookForNewBehaviours",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      {
+      "OperatingAreaRadius": {
         "Type": "float",
-        "Name": "OperatingAreaRadius",
         "Size": "0x4",
         "Offset": "0x44"
       },
-      {
+      "MinimumOperatingAreaMovementDeltaToInvalidateLocations": {
         "Type": "float",
-        "Name": "MinimumOperatingAreaMovementDeltaToInvalidateLocations",
         "Size": "0x4",
         "Offset": "0x48"
       },
-      {
+      "RadiusToleranceBeforeOperatingAreaDespawn": {
         "Type": "float",
-        "Name": "RadiusToleranceBeforeOperatingAreaDespawn",
         "Size": "0x4",
         "Offset": "0x4c"
       },
-      {
+      "NumTentacleInstancesToAssignToShip": {
         "Type": "TArray<Struct KrakenTentaclesChanceParams>",
-        "Name": "NumTentacleInstancesToAssignToShip",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      {
+      "GlobalPlayRateScale": {
         "Type": "float",
-        "Name": "GlobalPlayRateScale",
         "Size": "0x4",
         "Offset": "0x60"
       },
-      {
+      "NewTargetTimeout": {
         "Type": "Struct FloatRange",
-        "Name": "NewTargetTimeout",
         "Size": "0x10",
         "Offset": "0x64"
       },
-      {
+      "UnavailableTargetTimeout": {
         "Type": "Struct FloatRange",
-        "Name": "UnavailableTargetTimeout",
         "Size": "0x10",
         "Offset": "0x74"
       },
-      {
+      "TentacleParams": {
         "Type": "Struct KrakenTentacleParams",
-        "Name": "TentacleParams",
         "Size": "0x50",
         "Offset": "0x88"
       },
-      {
+      "DismissTimeoutWhenNoTargets": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "DismissTimeoutWhenNoTargets",
         "Size": "0x30",
         "Offset": "0xd8"
       },
-      {
+      "DismissTimeoutWithNewTarget": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "DismissTimeoutWithNewTarget",
         "Size": "0x30",
         "Offset": "0x108"
       },
-      {
+      "ShipInteractingBehaviourWeights": {
         "Type": "TArray<Struct KrakenWeightedBehaviour>",
-        "Name": "ShipInteractingBehaviourWeights",
         "Size": "0x10",
         "Offset": "0x138"
       },
-      {
+      "Behaviours": {
         "Type": "TArray<Struct ShipInteractingBehaviourWeights>",
-        "Name": "Behaviours",
         "Size": "0x10",
         "Offset": "0x148"
       },
-      {
+      "DamageAmountToTriggerAudioComponentNotification": {
         "Type": "float",
-        "Name": "DamageAmountToTriggerAudioComponentNotification",
         "Size": "0x4",
         "Offset": "0x158"
       }
-    ]
+    }
   },
   "KrakenWeightedBehaviour": {
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Weight": {
         "Type": "int",
-        "Name": "Weight",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "BehaviourType": {
         "Type": "byte",
-        "Name": "BehaviourType",
         "Size": "0x1",
         "Offset": "0x4"
       }
-    ]
+    }
   },
   "KrakenTentacleParams": {
     "ClassSize": "0x50",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TentacleHealth": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "TentacleHealth",
         "Size": "0x30",
         "Offset": "0x0"
       },
-      {
+      "InactiveToActiveTentacleTimeout": {
         "Type": "Struct FloatRange",
-        "Name": "InactiveToActiveTentacleTimeout",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      {
+      "InactiveToActiveTentacleTimeoutThresholdInSeconds": {
         "Type": "float",
-        "Name": "InactiveToActiveTentacleTimeoutThresholdInSeconds",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      {
+      "ChanceOfInactiveToActiveTentacle": {
         "Type": "float",
-        "Name": "ChanceOfInactiveToActiveTentacle",
         "Size": "0x4",
         "Offset": "0x44"
       },
-      {
+      "ChanceOfInactiveToActiveTentacleOnDeathOrFlee": {
         "Type": "float",
-        "Name": "ChanceOfInactiveToActiveTentacleOnDeathOrFlee",
         "Size": "0x4",
         "Offset": "0x48"
       }
-    ]
+    }
   },
   "KrakenTentaclesChanceParams": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "NumberOfTentaclesSpawned": {
         "Type": "int",
-        "Name": "NumberOfTentaclesSpawned",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "ProbabilityRange": {
         "Type": "Struct WeightedProbabilityRange",
-        "Name": "ProbabilityRange",
         "Size": "0x20",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "KrakenAnimatedTentacleAnimationBoneTrack": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Frames": {
         "Type": "TArray<Struct KrakenAnimatedTentacleAnimationBoneFrame>",
-        "Name": "Frames",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "KrakenAnimatedTentacleAnimationBoneFrame": {
     "ClassSize": "0xc",
-    "Attributes": [
-      {
+    "Attributes": {
+      "BoneLocation": {
         "Type": "Struct Vector",
-        "Name": "BoneLocation",
         "Size": "0xc",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "KrakenAnimatedTentacleMappedAnimation": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ClientAnimation": {
         "Type": "Class AnimSequence*",
-        "Name": "ClientAnimation",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "AnimationAsset": {
         "Type": "Class KrakenAnimatedTentacleAnimationDataAsset*",
-        "Name": "AnimationAsset",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "KrakenAnimatedTentacleAnimationSpecBone": {
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "BoneName": {
         "Type": "struct FName",
-        "Name": "BoneName",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "KrakenAnimatedTentacleStateAnimationMapping": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "State": {
         "Type": "class",
-        "Name": "State",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "Animation": {
         "Type": "Class AnimSequence*",
-        "Name": "Animation",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "Loop": {
         "Type": "bool",
-        "Name": "Loop",
         "Size": "0x1",
         "Offset": "0x10"
       },
-      {
+      "Transitions": {
         "Type": "TArray<Struct KrakenAnimatedTentacleTransitionAnimation>",
-        "Name": "Transitions",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    ]
+    }
   },
   "KrakenAnimatedTentacleTransitionAnimation": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "FromState": {
         "Type": "class",
-        "Name": "FromState",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "BranchAnimationTimeRemaining": {
         "Type": "float",
-        "Name": "BranchAnimationTimeRemaining",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "TransitionAnimations": {
         "Type": "TArray<class TransitionAnimations*>",
-        "Name": "TransitionAnimations",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "HeadStateChangeRequest": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "RequestedState": {
         "Type": "class",
-        "Name": "RequestedState",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "StateChangeID": {
         "Type": "Struct Guid",
-        "Name": "StateChangeID",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "KrakenHeadStateAnimationMapping": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "State": {
         "Type": "class",
-        "Name": "State",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "Animation": {
         "Type": "Class AnimSequence*",
-        "Name": "Animation",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "Loop": {
         "Type": "bool",
-        "Name": "Loop",
         "Size": "0x1",
         "Offset": "0x10"
       },
-      {
+      "Transitions": {
         "Type": "TArray<Struct KrakenHeadTransitionAnimation>",
-        "Name": "Transitions",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    ]
+    }
   },
   "KrakenHeadTransitionAnimation": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "FromState": {
         "Type": "class",
-        "Name": "FromState",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "TransitionAnimation": {
         "Type": "Class AnimSequence*",
-        "Name": "TransitionAnimation",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "KrakenHeadHealthPair": {
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "PlayerCount": {
         "Type": "int",
-        "Name": "PlayerCount",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "KrakenHeadHealth": {
         "Type": "float",
-        "Name": "KrakenHeadHealth",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    ]
+    }
   },
   "KrakenHeadHitReactAnimations": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Weight": {
         "Type": "float",
-        "Name": "Weight",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "HitReactAnimation": {
         "Type": "Class AnimSequence*",
-        "Name": "HitReactAnimation",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "KrakenTentacleBehaviourParams": {
     "ClassSize": "0xc0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "InactiveSpawnQueryTemplate": {
         "Type": "Class EnvQuery*",
-        "Name": "InactiveSpawnQueryTemplate",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ChanceOfCannonSideSpawn": {
         "Type": "float",
-        "Name": "ChanceOfCannonSideSpawn",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "ActiveCannonSideSpawnQueryTemplate": {
         "Type": "Class EnvQuery*",
-        "Name": "ActiveCannonSideSpawnQueryTemplate",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      {
+      "ActiveNonCannonSideSpawnQueryTemplate": {
         "Type": "Class EnvQuery*",
-        "Name": "ActiveNonCannonSideSpawnQueryTemplate",
         "Size": "0x8",
         "Offset": "0x18"
       },
-      {
+      "TentacleClass": {
         "Type": "class",
-        "Name": "TentacleClass",
         "Size": "0x8",
         "Offset": "0x20"
       },
-      {
+      "MinScale": {
         "Type": "float",
-        "Name": "MinScale",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      {
+      "MaxScale": {
         "Type": "float",
-        "Name": "MaxScale",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      {
+      "MinPlayRateScale": {
         "Type": "float",
-        "Name": "MinPlayRateScale",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      {
+      "MaxPlayRateScale": {
         "Type": "float",
-        "Name": "MaxPlayRateScale",
         "Size": "0x4",
         "Offset": "0x34"
       },
-      {
+      "PanicDespawnShipRangeRadius": {
         "Type": "float",
-        "Name": "PanicDespawnShipRangeRadius",
         "Size": "0x4",
         "Offset": "0x38"
       },
-      {
+      "PanicDespawnWatercraftRangeRadius": {
         "Type": "float",
-        "Name": "PanicDespawnWatercraftRangeRadius",
         "Size": "0x4",
         "Offset": "0x3c"
       },
-      {
+      "PanicDespawnTentacleRadius": {
         "Type": "float",
-        "Name": "PanicDespawnTentacleRadius",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      {
+      "PanicDespawnAnimationPlayRateScale": {
         "Type": "float",
-        "Name": "PanicDespawnAnimationPlayRateScale",
         "Size": "0x4",
         "Offset": "0x44"
       },
-      {
+      "PreDeathAnimationPlayRateScale": {
         "Type": "float",
-        "Name": "PreDeathAnimationPlayRateScale",
         "Size": "0x4",
         "Offset": "0x48"
       },
-      {
+      "OnDamageActionChances": {
         "Type": "TArray<Struct KrakenTentacleBehaviourActionChances>",
-        "Name": "OnDamageActionChances",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      {
+      "TimeToSpendInInactiveState": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "TimeToSpendInInactiveState",
         "Size": "0x30",
         "Offset": "0x60"
       },
-      {
+      "TimeToSpendInActiveState": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "TimeToSpendInActiveState",
         "Size": "0x30",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "KrakenTentacleBehaviourActionChances": {
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ActionToTransitionTo": {
         "Type": "byte",
-        "Name": "ActionToTransitionTo",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "WeightedChance": {
         "Type": "float",
-        "Name": "WeightedChance",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    ]
+    }
   },
   "KrakenIdleBehaviourParams": {
     "ClassSize": "0xc0",
-    "Attributes": []
+    "Attributes": {}
   },
   "KrakenPlayerGrabbingBehaviourParams": {
     "ClassSize": "0xe8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MinUnsuccessfulTargetTimeout": {
         "Type": "float",
-        "Name": "MinUnsuccessfulTargetTimeout",
         "Size": "0x4",
         "Offset": "0xc0"
       },
-      {
+      "MaxUnsuccessfulTargetTimeout": {
         "Type": "float",
-        "Name": "MaxUnsuccessfulTargetTimeout",
         "Size": "0x4",
         "Offset": "0xc4"
       },
-      {
+      "HoldingTransitionChances": {
         "Type": "TArray<Struct KrakenPlayerGrabbingHoldingStateTransitionChance>",
-        "Name": "HoldingTransitionChances",
         "Size": "0x10",
         "Offset": "0xc8"
       },
-      {
+      "MinTargetHoldingTime": {
         "Type": "float",
-        "Name": "MinTargetHoldingTime",
         "Size": "0x4",
         "Offset": "0xd8"
       },
-      {
+      "MaxTargetHoldingTime": {
         "Type": "float",
-        "Name": "MaxTargetHoldingTime",
         "Size": "0x4",
         "Offset": "0xdc"
       },
-      {
+      "TargetThrowingSpeed": {
         "Type": "float",
-        "Name": "TargetThrowingSpeed",
         "Size": "0x4",
         "Offset": "0xe0"
       }
-    ]
+    }
   },
   "KrakenPlayerGrabbingHoldingStateTransitionChance": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "WeightedChance": {
         "Type": "float",
-        "Name": "WeightedChance",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "StateToTransitionTo": {
         "Type": "class",
-        "Name": "StateToTransitionTo",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "KrakenServiceParams": {
     "ClassSize": "0xa0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "KrakenType": {
         "Type": "class",
-        "Name": "KrakenType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "SpawnParams": {
         "Type": "Struct KrakenServiceSpawnParams",
-        "Name": "SpawnParams",
         "Size": "0x80",
         "Offset": "0x8"
       },
-      {
+      "DefaultKrakenParams": {
         "Type": "Class KrakenParamsDataAsset*",
-        "Name": "DefaultKrakenParams",
         "Size": "0x8",
         "Offset": "0x88"
       },
-      {
+      "KrakenParams": {
         "Type": "TArray<Struct KrakenServiceShipParams>",
-        "Name": "KrakenParams",
         "Size": "0x10",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "KrakenServiceShipParams": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Feature": {
         "Type": "struct FName",
-        "Name": "Feature",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ValidShipTypes": {
         "Type": "TArray<Class Feature>",
-        "Name": "ValidShipTypes",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      {
+      "KrakenParams": {
         "Type": "Class KrakenParamsDataAsset*",
-        "Name": "KrakenParams",
         "Size": "0x8",
         "Offset": "0x18"
       }
-    ]
+    }
   },
   "KrakenServiceSpawnParams": {
     "ClassSize": "0x80",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SpawnLocationDistributionRadius": {
         "Type": "float",
-        "Name": "SpawnLocationDistributionRadius",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "SpawnLocationDistributionMinDistanceBetweenPoints": {
         "Type": "float",
-        "Name": "SpawnLocationDistributionMinDistanceBetweenPoints",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "SpawnDistanceInFrontOfShip": {
         "Type": "float",
-        "Name": "SpawnDistanceInFrontOfShip",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "TimeBetweenSpawnAttemptsRange": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "TimeBetweenSpawnAttemptsRange",
         "Size": "0x30",
         "Offset": "0x10"
       },
-      {
+      "TimeBetweenSpawnAttemptsPostSpawnFailure": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "TimeBetweenSpawnAttemptsPostSpawnFailure",
         "Size": "0x30",
         "Offset": "0x40"
       },
-      {
+      "SpawnChance": {
         "Type": "float",
-        "Name": "SpawnChance",
         "Size": "0x4",
         "Offset": "0x70"
       },
-      {
+      "MaxConsecutiveFailedSpawnAttempts": {
         "Type": "int",
-        "Name": "MaxConsecutiveFailedSpawnAttempts",
         "Size": "0x4",
         "Offset": "0x74"
       },
-      {
+      "SpawnLocationQuery": {
         "Type": "Class EnvQuery*",
-        "Name": "SpawnLocationQuery",
         "Size": "0x8",
         "Offset": "0x78"
       }
-    ]
+    }
   },
   "KrakenWorldSettingsParams": {
     "ClassSize": "0x1",
-    "Attributes": [
-      {
+    "Attributes": {
+      "KrakenEnabled": {
         "Type": "bool",
-        "Name": "KrakenEnabled",
         "Size": "0x1",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "CoordinatedKrakenPhaseAssetEntry": {
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "RelativeAnimationOrigin": {
         "Type": "Struct Transform",
-        "Name": "RelativeAnimationOrigin",
         "Size": "0x30",
         "Offset": "0x0"
       },
-      {
+      "Asset": {
         "Type": "Class CoordinatedKrakenPhaseActionsDataAsset*",
-        "Name": "Asset",
         "Size": "0x8",
         "Offset": "0x30"
       }
-    ]
+    }
   },
   "EventKrakenAnimatedTentacleTriggerHitReaction": {
     "ClassSize": "0x4",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CollisionBoneIndex": {
         "Type": "int",
-        "Name": "CollisionBoneIndex",
         "Size": "0x4",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "EventKrakenAnimatedTentacleTentacleDead": {
     "ClassSize": "0x4",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TentacleIndex": {
         "Type": "int",
-        "Name": "TentacleIndex",
         "Size": "0x4",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "EventKrakenAnimatedTentacleTakenDamage": {
     "ClassSize": "0x4",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TentacleIndex": {
         "Type": "int",
-        "Name": "TentacleIndex",
         "Size": "0x4",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "EventKrakenAnimatedTentacleTargetVomit": {
     "ClassSize": "0x4",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentaclePlayerInMouthEnd": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentaclePlayerInMouthBegin": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleSuckingEnd": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleSuckingStart": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenWrappingTentacleTellEnd": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenWrappingTentacleTellBegin": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleSuckingTellEnd": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleSuckingTellBegin": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleSuckingTell": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleSubmerge": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleEmerge": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenTentacleEndPlay": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleAnimationStopped": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleAnimationStarted": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Animation": {
         "Type": "Class AnimSequence*",
-        "Name": "Animation",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "EventKrakenAnimatedTentacleAuthoritativeAnimationTime": {
     "ClassSize": "0x4",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenAnimatedTentacleStateEntered": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "State": {
         "Type": "class",
-        "Name": "State",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "PreviousState": {
         "Type": "class",
-        "Name": "PreviousState",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "SkipTransitions": {
         "Type": "bool",
-        "Name": "SkipTransitions",
         "Size": "0x1",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "EventKrakenHeadHit": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventCoordinatedKrakenPhaseEnded": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "EventKrakenTentacleDestroyed": {
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "KillingBlowInstigator": {
         "Type": "Class Actor*",
-        "Name": "KillingBlowInstigator",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "EventKrakenDespawned": {
     "ClassSize": "0x1",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DespawnReason": {
         "Type": "byte",
-        "Name": "DespawnReason",
         "Size": "0x1",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "EventKrakenSpawned": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "PrimaryShipTarget": {
         "Type": "Class Ship*",
-        "Name": "PrimaryShipTarget",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ConfigSpawnId": {
         "Type": "Struct Guid",
-        "Name": "ConfigSpawnId",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "EventKrakenShipWrappingTentacleStateChanged": {
     "ClassSize": "0x2",
-    "Attributes": [
-      {
+    "Attributes": {
+      "PreviousState": {
         "Type": "byte",
-        "Name": "PreviousState",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "NewState": {
         "Type": "byte",
-        "Name": "NewState",
         "Size": "0x1",
         "Offset": "0x1"
       }
-    ]
+    }
   },
   "EventKrakenTentaclePreUninitializeComponents": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "KrakenTentacleDestroyedTelemetryEvent": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "KrakenId": {
         "Type": "Struct FString",
-        "Name": "KrakenId",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "KrakenDespawnTelemetryEvent": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "KrakenId": {
         "Type": "Struct FString",
-        "Name": "KrakenId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "KrakenDespawnReason": {
         "Type": "byte",
-        "Name": "KrakenDespawnReason",
         "Size": "0x1",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "KrakenSpawnTelemetryEvent": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "KrakenId": {
         "Type": "Struct FString",
-        "Name": "KrakenId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "ConfigSpawnId": {
         "Type": "Struct Guid",
-        "Name": "ConfigSpawnId",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

@@ -4,189 +4,175 @@
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneCaptureProtocolSettings": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MovieSceneCapture": {
     "Super": "Object",
     "FullSize": "0x1e0",
     "InheritedSize": "0x28",
     "ClassSize": "0x1b8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CaptureType": {
         "Type": "Struct CaptureProtocolID",
-        "Name": "CaptureType",
         "Size": "0x8",
         "Offset": "0x38"
       },
-      {
+      "ProtocolSettings": {
         "Type": "Class MovieSceneCaptureProtocolSettings*",
-        "Name": "ProtocolSettings",
         "Size": "0x8",
         "Offset": "0x40"
       },
-      {
+      "Settings": {
         "Type": "Struct MovieSceneCaptureSettings",
-        "Name": "Settings",
         "Size": "0x50",
         "Offset": "0x48"
       },
-      {
+      "bUseSeparateProcess": {
         "Type": "bool",
-        "Name": "bUseSeparateProcess",
         "Size": "0x1",
         "Offset": "0x98"
       },
-      {
+      "bCloseEditorWhenCaptureStarts": {
         "Type": "bool",
-        "Name": "bCloseEditorWhenCaptureStarts",
         "Size": "0x1",
         "Offset": "0x99"
       },
-      {
+      "AdditionalCommandLineArguments": {
         "Type": "Struct FString",
-        "Name": "AdditionalCommandLineArguments",
         "Size": "0x10",
         "Offset": "0xa0"
       },
-      {
+      "InheritedCommandLineArguments": {
         "Type": "Struct FString",
-        "Name": "InheritedCommandLineArguments",
         "Size": "0x10",
         "Offset": "0xb0"
       }
-    ]
+    }
   },
   "AutomatedLevelSequenceCapture": {
     "Super": "MovieSceneCapture",
     "FullSize": "0x1e0",
     "InheritedSize": "0x1e0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "LevelCapture": {
     "Super": "MovieSceneCapture",
     "FullSize": "0x200",
     "InheritedSize": "0x1e0",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "bAutoStartCapture": {
         "Type": "bool",
-        "Name": "bAutoStartCapture",
         "Size": "0x1",
         "Offset": "0x1e0"
       },
-      {
+      "PrerequisiteActorId": {
         "Type": "Struct Guid",
-        "Name": "PrerequisiteActorId",
         "Size": "0x10",
         "Offset": "0x1ec"
       }
-    ]
+    }
   },
   "MovieSceneCaptureEnvironment": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "FrameGrabberProtocolSettings": {
     "Super": "MovieSceneCaptureProtocolSettings",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": {}
   },
   "BmpImageCaptureSettings": {
     "Super": "MovieSceneCaptureProtocolSettings",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "ImageCaptureSettings": {
     "Super": "FrameGrabberProtocolSettings",
     "FullSize": "0x38",
     "InheritedSize": "0x30",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CompressionQuality": {
         "Type": "int",
-        "Name": "CompressionQuality",
         "Size": "0x4",
         "Offset": "0x30"
       }
-    ]
+    }
   },
   "CompositionGraphCaptureSettings": {
     "Super": "MovieSceneCaptureProtocolSettings",
     "FullSize": "0x58",
     "InheritedSize": "0x28",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "IncludeRenderPasses": {
         "Type": "Struct CompositionGraphCapturePasses",
-        "Name": "IncludeRenderPasses",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      {
+      "bCaptureFramesInHDR": {
         "Type": "bool",
-        "Name": "bCaptureFramesInHDR",
         "Size": "0x1",
         "Offset": "0x38"
       },
-      {
+      "HDRCompressionQuality": {
         "Type": "int",
-        "Name": "HDRCompressionQuality",
         "Size": "0x4",
         "Offset": "0x3c"
       },
-      {
+      "CaptureGamut": {
         "Type": "byte",
-        "Name": "CaptureGamut",
         "Size": "0x1",
         "Offset": "0x40"
       },
-      {
+      "PostProcessingMaterial": {
         "Type": "Struct StringAssetReference",
-        "Name": "PostProcessingMaterial",
         "Size": "0x10",
         "Offset": "0x48"
       }
-    ]
+    }
   },
   "VideoCaptureSettings": {
     "Super": "FrameGrabberProtocolSettings",
     "FullSize": "0x48",
     "InheritedSize": "0x30",
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "bUseCompression": {
         "Type": "bool",
-        "Name": "bUseCompression",
         "Size": "0x1",
         "Offset": "0x30"
       },
-      {
+      "CompressionQuality": {
         "Type": "float",
-        "Name": "CompressionQuality",
         "Size": "0x4",
         "Offset": "0x34"
       },
-      {
+      "VideoCodec": {
         "Type": "Struct FString",
-        "Name": "VideoCodec",
         "Size": "0x10",
         "Offset": "0x38"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

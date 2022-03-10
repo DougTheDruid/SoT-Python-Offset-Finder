@@ -1,202 +1,181 @@
 {
   "ShipDamageParams": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DamageParams": {
         "Type": "TArray<Struct ShipPartLevelsOfDamage>",
-        "Name": "DamageParams",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "ShipPartLevelsOfDamage": {
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DamagePerDistance": {
         "Type": "TArray<Struct DistanceAndLevelOfDamage>",
-        "Name": "DamagePerDistance",
         "Size": "0x10",
         "Offset": "0x20"
       }
-    ]
+    }
   },
   "DistanceAndLevelOfDamage": {
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DistanceLimit": {
         "Type": "float",
-        "Name": "DistanceLimit",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "LevelOfDamage": {
         "Type": "int",
-        "Name": "LevelOfDamage",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    ]
+    }
   },
   "HullDamagePersistenceModel": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DamageZones": {
         "Type": "TArray<Struct HullDamageZoneInfo>",
-        "Name": "DamageZones",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "HullDamageZoneInfo": {
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DamageZoneId": {
         "Type": "Struct FString",
-        "Name": "DamageZoneId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "DamageLevel": {
         "Type": "int",
-        "Name": "DamageLevel",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      {
+      "RepairedDamageLevel": {
         "Type": "int",
-        "Name": "RepairedDamageLevel",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      {
+      "RepairableState": {
         "Type": "byte",
-        "Name": "RepairableState",
         "Size": "0x1",
         "Offset": "0x18"
       },
-      {
+      "ExternalHitList": {
         "Type": "TArray<Struct HullDamageHit>",
-        "Name": "ExternalHitList",
         "Size": "0x10",
         "Offset": "0x20"
       }
-    ]
+    }
   },
   "HullDamageHit": {
     "ClassSize": "0x24",
-    "Attributes": [
-      {
+    "Attributes": {
+      "HitPosition": {
         "Type": "Struct Vector",
-        "Name": "HitPosition",
         "Size": "0xc",
         "Offset": "0x0"
       },
-      {
+      "HitNormal": {
         "Type": "Struct Vector",
-        "Name": "HitNormal",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      {
+      "HitStrength": {
         "Type": "float",
-        "Name": "HitStrength",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      {
+      "HitLevel": {
         "Type": "int",
-        "Name": "HitLevel",
         "Size": "0x4",
         "Offset": "0x1c"
       },
-      {
+      "HasDecal": {
         "Type": "bool",
-        "Name": "HasDecal",
         "Size": "0x1",
         "Offset": "0x20"
       }
-    ]
+    }
   },
   "EventShipDamageApplied": {
     "ClassSize": "0x70",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Ship": {
         "Type": "Class Actor*",
-        "Name": "Ship",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "DamagedShipPartIdentifier": {
         "Type": "struct FName",
-        "Name": "DamagedShipPartIdentifier",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "NewDamageLevel": {
         "Type": "int",
-        "Name": "NewDamageLevel",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      {
+      "ImpactDamageEvent": {
         "Type": "Struct ImpactDamageEvent",
-        "Name": "ImpactDamageEvent",
         "Size": "0x58",
         "Offset": "0x18"
       }
-    ]
+    }
   },
   "EventShipDamaged": {
     "ClassSize": "0x60",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Ship": {
         "Type": "Class Actor*",
-        "Name": "Ship",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ImpactDamageEvent": {
         "Type": "Struct ImpactDamageEvent",
-        "Name": "ImpactDamageEvent",
         "Size": "0x58",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "DamageZoneDamageLevelChanged": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DamageZone": {
         "Type": "Class Actor*",
-        "Name": "DamageZone",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "DamageLevel": {
         "Type": "int",
-        "Name": "DamageLevel",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "AppliedDamageToShipEvent": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ShipType": {
         "Type": "class",
-        "Name": "ShipType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "Ship": {
         "Type": "Class Actor*",
-        "Name": "Ship",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

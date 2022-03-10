@@ -1,258 +1,233 @@
 {
   "ClueSite": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SiteType": {
         "Type": "class",
-        "Name": "SiteType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "SiteData": {
         "Type": "Class ClueSiteData*",
-        "Name": "SiteData",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "Location": {
         "Type": "Struct Vector",
-        "Name": "Location",
         "Size": "0xc",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "LandClueCreationChoice": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ClueSiteType": {
         "Type": "class",
-        "Name": "ClueSiteType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "IslandIdentifier": {
         "Type": "struct FName",
-        "Name": "IslandIdentifier",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "ClueCreator": {
         "Type": "Class LandClueCreator*",
-        "Name": "ClueCreator",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "SeaClueCreationChoice": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SiteType": {
         "Type": "class",
-        "Name": "SiteType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ClueCreator": {
         "Type": "Class SeaClueCreator*",
-        "Name": "ClueCreator",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "WeightedClueDestinationDescriptor": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DestinationType": {
         "Type": "class",
-        "Name": "DestinationType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "DifficultyWeightings": {
         "Type": "TArray<Float >",
-        "Name": "DifficultyWeightings",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "ClueSiteTypeSupportedDescribedByEntry": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SiteType": {
         "Type": "class",
-        "Name": "SiteType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "SupportedDescriptors": {
         "Type": "TArray<Struct WeightedClueDescriptor>",
-        "Name": "SupportedDescriptors",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "WeightedClueDescriptor": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Descriptor": {
         "Type": "class",
-        "Name": "Descriptor",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "DifficultyWeightings": {
         "Type": "TArray<Float >",
-        "Name": "DifficultyWeightings",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "RestrictedClueType": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Type": {
         "Type": "class",
-        "Name": "Type",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "Max": {
         "Type": "int",
-        "Name": "Max",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "ClueSiteLootRestriction": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SiteType": {
         "Type": "class",
-        "Name": "SiteType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "LootMax": {
         "Type": "int",
-        "Name": "LootMax",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "DebrisToRangeDist": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "NumberOfDebrisItemsToSpawn": {
         "Type": "Struct WeightedProbabilityRange",
-        "Name": "NumberOfDebrisItemsToSpawn",
         "Size": "0x20",
         "Offset": "0x0"
       },
-      {
+      "WeightedDebrisTypeAsset": {
         "Type": "Class WeightedDebrisDataAsset*",
-        "Name": "WeightedDebrisTypeAsset",
         "Size": "0x8",
         "Offset": "0x20"
       }
-    ]
+    }
   },
   "LootToRangeDist": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "NumberOfLootItemsToSpawn": {
         "Type": "Struct WeightedProbabilityRange",
-        "Name": "NumberOfLootItemsToSpawn",
         "Size": "0x20",
         "Offset": "0x0"
       },
-      {
+      "WeightedLootDescAsset": {
         "Type": "Class WeightedTreasureChestDescAsset*",
-        "Name": "WeightedLootDescAsset",
         "Size": "0x8",
         "Offset": "0x20"
       }
-    ]
+    }
   },
   "QuestVariableClueSiteArray": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": {}
   },
   "QuestVariableClueSite": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": {}
   },
   "ClueSiteLootHistory": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "History": {
         "Type": "TArray<Struct LootSpawnedAtClueSite>",
-        "Name": "History",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "LootSpawnedAtClueSite": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SiteType": {
         "Type": "class",
-        "Name": "SiteType",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "SiteLocation": {
         "Type": "Struct Vector",
-        "Name": "SiteLocation",
         "Size": "0xc",
         "Offset": "0x8"
       },
-      {
+      "NumLoot": {
         "Type": "int",
-        "Name": "NumLoot",
         "Size": "0x4",
         "Offset": "0x14"
       }
-    ]
+    }
   },
   "QuestVariableClueDescriptor": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": {}
   },
   "WeightedDebris": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Weight": {
         "Type": "float",
-        "Name": "Weight",
         "Size": "0x4",
         "Offset": "0x20"
       }
-    ]
+    }
   },
   "EventClueObtained": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ObtainedClue": {
         "Type": "Class ClueDescriptor*",
-        "Name": "ObtainedClue",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "ObtainedSiteType": {
         "Type": "class",
-        "Name": "ObtainedSiteType",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

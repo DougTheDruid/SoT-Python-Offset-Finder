@@ -1,229 +1,201 @@
 {
   "InAppPurchaseProductInfo": {
     "ClassSize": "0xa0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Identifier": {
         "Type": "Struct FString",
-        "Name": "Identifier",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "TransactionIdentifier": {
         "Type": "Struct FString",
-        "Name": "TransactionIdentifier",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "DisplayName": {
         "Type": "Struct FString",
-        "Name": "DisplayName",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      {
+      "DisplayDescription": {
         "Type": "Struct FString",
-        "Name": "DisplayDescription",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      {
+      "DisplayPrice": {
         "Type": "Struct FString",
-        "Name": "DisplayPrice",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "CurrencyCode": {
         "Type": "Struct FString",
-        "Name": "CurrencyCode",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      {
+      "CurrencySymbol": {
         "Type": "Struct FString",
-        "Name": "CurrencySymbol",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      {
+      "DecimalSeparator": {
         "Type": "Struct FString",
-        "Name": "DecimalSeparator",
         "Size": "0x10",
         "Offset": "0x70"
       },
-      {
+      "GroupingSeparator": {
         "Type": "Struct FString",
-        "Name": "GroupingSeparator",
         "Size": "0x10",
         "Offset": "0x80"
       },
-      {
+      "ReceiptData": {
         "Type": "Struct FString",
-        "Name": "ReceiptData",
         "Size": "0x10",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "InAppPurchaseRestoreInfo": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Identifier": {
         "Type": "Struct FString",
-        "Name": "Identifier",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "ReceiptData": {
         "Type": "Struct FString",
-        "Name": "ReceiptData",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "AchievementUpdatedEvent": {
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AchievementId": {
         "Type": "Struct FString",
-        "Name": "AchievementId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "Successful": {
         "Type": "bool",
-        "Name": "Successful",
         "Size": "0x1",
         "Offset": "0x14"
       },
-      {
+      "Reason": {
         "Type": "Struct FString",
-        "Name": "Reason",
         "Size": "0x10",
         "Offset": "0x18"
       },
-      {
+      "Platform": {
         "Type": "Struct FString",
-        "Name": "Platform",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    ]
+    }
   },
   "NamedInterfaceDef": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "InterfaceName": {
         "Type": "struct FName",
-        "Name": "InterfaceName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "InterfaceClassName": {
         "Type": "Struct FString",
-        "Name": "InterfaceClassName",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "NamedInterface": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "InterfaceName": {
         "Type": "struct FName",
-        "Name": "InterfaceName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "InterfaceObject": {
         "Type": "Class Object*",
-        "Name": "InterfaceObject",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "OnlineStoreCatalogItem": {
     "ClassSize": "0x90",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ProductId": {
         "Type": "Struct FString",
-        "Name": "ProductId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "Title": {
         "Type": "Struct FString",
-        "Name": "Title",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "Description": {
         "Type": "Struct FString",
-        "Name": "Description",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      {
+      "FormattedPrice": {
         "Type": "Struct FString",
-        "Name": "FormattedPrice",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      {
+      "FormattedBasePrice": {
         "Type": "Struct FString",
-        "Name": "FormattedBasePrice",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "IsOnSale": {
         "Type": "bool",
-        "Name": "IsOnSale",
         "Size": "0x1",
         "Offset": "0x50"
       },
-      {
+      "SaleEndDate": {
         "Type": "Struct DateTime",
-        "Name": "SaleEndDate",
         "Size": "0x8",
         "Offset": "0x58"
       },
-      {
+      "ImageUri": {
         "Type": "Struct FString",
-        "Name": "ImageUri",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      {
+      "CurrencyCode": {
         "Type": "Struct FString",
-        "Name": "CurrencyCode",
         "Size": "0x10",
         "Offset": "0x70"
       },
-      {
+      "MetaTags": {
         "Type": "TArray<Str >",
-        "Name": "MetaTags",
         "Size": "0x10",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "InAppPurchaseProductRequest": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ProductIdentifier": {
         "Type": "Struct FString",
-        "Name": "ProductIdentifier",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "bIsConsumable": {
         "Type": "bool",
-        "Name": "bIsConsumable",
         "Size": "0x1",
         "Offset": "0x10"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

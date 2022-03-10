@@ -1,366 +1,321 @@
 {
   "WeightedVolcanoProjectile": {
     "ClassSize": "0xc0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Weight": {
         "Type": "float",
-        "Name": "Weight",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "ProjectileClass": {
         "Type": "class",
-        "Name": "ProjectileClass",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "ProjectileSpeedMinAtInnerRadius": {
         "Type": "float",
-        "Name": "ProjectileSpeedMinAtInnerRadius",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      {
+      "ProjectileSpeedMaxAtInnerRadius": {
         "Type": "float",
-        "Name": "ProjectileSpeedMaxAtInnerRadius",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      {
+      "ProjectileSpeedMinAtOuterRadius": {
         "Type": "float",
-        "Name": "ProjectileSpeedMinAtOuterRadius",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      {
+      "ProjectileSpeedMaxAtOuterRadius": {
         "Type": "float",
-        "Name": "ProjectileSpeedMaxAtOuterRadius",
         "Size": "0x4",
         "Offset": "0x1c"
       },
-      {
+      "ProjectileGravityScale": {
         "Type": "float",
-        "Name": "ProjectileGravityScale",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      {
+      "RotationRatePitch": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "RotationRatePitch",
         "Size": "0x30",
         "Offset": "0x28"
       },
-      {
+      "RotationRateRoll": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "RotationRateRoll",
         "Size": "0x30",
         "Offset": "0x58"
       },
-      {
+      "RotationRateYaw": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "RotationRateYaw",
         "Size": "0x30",
         "Offset": "0x88"
       },
-      {
+      "LaunchAudioPlayEvent": {
         "Type": "Class WwiseEvent*",
-        "Name": "LaunchAudioPlayEvent",
         "Size": "0x8",
         "Offset": "0xb8"
       }
-    ]
+    }
   },
   "VolcanoTarget": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Type": {
         "Type": "byte",
-        "Name": "Type",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "HitType": {
         "Type": "byte",
-        "Name": "HitType",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      {
+      "Target": {
         "Type": "Class Actor*",
-        "Name": "Target",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "NumExtraShots": {
         "Type": "int",
-        "Name": "NumExtraShots",
         "Size": "0x4",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "VolcanoTargetChances": {
     "ClassSize": "0x58",
-    "Attributes": [
-      {
+    "Attributes": {
+      "OnTarget": {
         "Type": "float",
-        "Name": "OnTarget",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "NearMiss": {
         "Type": "float",
-        "Name": "NearMiss",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "Random": {
         "Type": "float",
-        "Name": "Random",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "OnTargetNumExtraShots": {
         "Type": "Struct WeightedProbabilityRange",
-        "Name": "OnTargetNumExtraShots",
         "Size": "0x20",
         "Offset": "0x10"
       },
-      {
+      "NearMissNumExtraShots": {
         "Type": "Struct WeightedProbabilityRange",
-        "Name": "NearMissNumExtraShots",
         "Size": "0x20",
         "Offset": "0x30"
       },
-      {
+      "CoolDownDuration": {
         "Type": "float",
-        "Name": "CoolDownDuration",
         "Size": "0x4",
         "Offset": "0x50"
       }
-    ]
+    }
   },
   "VolcanoSetupDataEmbersEntry": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MaxDistanceInMetres": {
         "Type": "float",
-        "Name": "MaxDistanceInMetres",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "Effect": {
         "Type": "Class Object*",
-        "Name": "Effect",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "WeightedAshenLordVolcanoProjectile": {
     "ClassSize": "0xd0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Weight": {
         "Type": "float",
-        "Name": "Weight",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "GravityMultiplier": {
         "Type": "float",
-        "Name": "GravityMultiplier",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "Speed": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "Speed",
         "Size": "0x30",
         "Offset": "0x8"
       },
-      {
+      "RotationRatePitch": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "RotationRatePitch",
         "Size": "0x30",
         "Offset": "0x38"
       },
-      {
+      "RotationRateRoll": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "RotationRateRoll",
         "Size": "0x30",
         "Offset": "0x68"
       },
-      {
+      "RotationRateYaw": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "RotationRateYaw",
         "Size": "0x30",
         "Offset": "0x98"
       },
-      {
+      "ProjectileClass": {
         "Type": "class",
-        "Name": "ProjectileClass",
         "Size": "0x8",
         "Offset": "0xc8"
       }
-    ]
+    }
   },
   "AshenLordWorldEndCloudAnimation": {
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ServerStartTime": {
         "Type": "float",
-        "Name": "ServerStartTime",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "ServerLifeTime": {
         "Type": "float",
-        "Name": "ServerLifeTime",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    ]
+    }
   },
   "PlayerFeedback": {
     "ClassSize": "0x80",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ForceFeedback": {
         "Type": "Struct EarthquakeForceFeedback",
-        "Name": "ForceFeedback",
         "Size": "0x40",
         "Offset": "0x0"
       },
-      {
+      "CameraShakes": {
         "Type": "TArray<Class ForceFeedback>",
-        "Name": "CameraShakes",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "StaggerStrength": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "StaggerStrength",
         "Size": "0x30",
         "Offset": "0x50"
       }
-    ]
+    }
   },
   "EarthquakeForceFeedback": {
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ForceFeedbackOptions": {
         "Type": "TArray<Struct EarthquakeForceFeedbackOption>",
-        "Name": "ForceFeedbackOptions",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "TimeBetweenRumbles": {
         "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Name": "TimeBetweenRumbles",
         "Size": "0x30",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "EarthquakeForceFeedbackOption": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ForceFeedback": {
         "Type": "TArray<Struct GeyserSpawnAngleOption>",
-        "Name": "ForceFeedback",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "GeyserSpawnAngleOption": {
     "ClassSize": "0xc",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Weight": {
         "Type": "float",
-        "Name": "Weight",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "Direction": {
         "Type": "float",
-        "Name": "Direction",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "Range": {
         "Type": "float",
-        "Name": "Range",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "VolcanoTargetCoolDown": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Target": {
         "Type": "Class Actor*",
-        "Name": "Target",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "VolcanoProjectileData": {
     "ClassSize": "0x1c",
-    "Attributes": [
-      {
+    "Attributes": {
+      "WeightedVolcanoProjectileIndex": {
         "Type": "int",
-        "Name": "WeightedVolcanoProjectileIndex",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "LaunchVelocity": {
         "Type": "Struct Vector",
-        "Name": "LaunchVelocity",
         "Size": "0xc",
         "Offset": "0x4"
       },
-      {
+      "RotationRate": {
         "Type": "Struct Vector",
-        "Name": "RotationRate",
         "Size": "0xc",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "VolcanoStateData": {
     "ClassSize": "0xc",
-    "Attributes": [
-      {
+    "Attributes": {
+      "State": {
         "Type": "byte",
-        "Name": "State",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      {
+      "StateDuration": {
         "Type": "float",
-        "Name": "StateDuration",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "PercentageOfMaxTargetingRange": {
         "Type": "float",
-        "Name": "PercentageOfMaxTargetingRange",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "EventVolcanoStateChanged": {
     "ClassSize": "0x1",
-    "Attributes": [
-      {
+    "Attributes": {
+      "State": {
         "Type": "byte",
-        "Name": "State",
         "Size": "0x1",
         "Offset": "0x0"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

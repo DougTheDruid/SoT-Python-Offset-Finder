@@ -4,2678 +4,2440 @@
     "FullSize": "0x90",
     "InheritedSize": "0x28",
     "ClassSize": "0x68",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TaleStepDesc": {
         "Type": "Class TaleQuestStepDesc*",
-        "Name": "TaleStepDesc",
         "Size": "0x8",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "TaleQuestService": {
     "Super": "Object",
     "FullSize": "0x60",
     "InheritedSize": "0x28",
     "ClassSize": "0x38",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestServiceDesc": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestStepDesc": {
     "Super": "Object",
     "FullSize": "0x80",
     "InheritedSize": "0x28",
     "ClassSize": "0x58",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Fork": {
         "Type": "bool",
-        "Name": "Fork",
         "Size": "0x1",
         "Offset": "0x28"
       }
-    ]
+    }
   },
   "TaleMigrationAction": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestFramedStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xd0",
     "InheritedSize": "0x90",
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Services": {
         "Type": "TArray<class Services*>",
-        "Name": "Services",
         "Size": "0x10",
         "Offset": "0x98"
       },
-      {
+      "FrameDesc": {
         "Type": "Class TaleQuestFramedStepDesc*",
-        "Name": "FrameDesc",
         "Size": "0x8",
         "Offset": "0xa8"
       },
-      {
+      "StructForCollector": {
         "Type": "Class ScriptStruct*",
-        "Name": "StructForCollector",
         "Size": "0x8",
         "Offset": "0xc0"
       },
-      {
+      "LocalStructForCollector": {
         "Type": "Class ScriptStruct*",
-        "Name": "LocalStructForCollector",
         "Size": "0x8",
         "Offset": "0xc8"
       }
-    ]
+    }
   },
   "TaleQuestFramedStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
     "InheritedSize": "0x80",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Services": {
         "Type": "TArray<class Services*>",
-        "Name": "Services",
         "Size": "0x10",
         "Offset": "0x80"
       },
-      {
+      "Variables": {
         "Type": "Class ScriptStruct*",
-        "Name": "Variables",
         "Size": "0x8",
         "Offset": "0x90"
       },
-      {
+      "GeneratedVariables": {
         "Type": "Struct InlineUserDefinedStructDetails",
-        "Name": "GeneratedVariables",
         "Size": "0x8",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "ContendedResourceServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "WorldResourceRegistryInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "ContendedResourceComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x100",
     "InheritedSize": "0xc8",
     "ClassSize": "0x38",
-    "Attributes": []
+    "Attributes": {}
   },
   "EnvQueryContext_TaleContextBase": {
     "Super": "EnvQueryContext",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "IslandTypeWeightsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "IslandTypeWeightsForDifficultyRanks": {
         "Type": "TArray<Struct StructForCollector>",
-        "Name": "IslandTypeWeightsForDifficultyRanks",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    ]
+    }
   },
   "SplineFootprintPathComponent": {
     "Super": "SplineComponent",
     "FullSize": "0x650",
     "InheritedSize": "0x630",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DistanceBetweenDecals": {
         "Type": "float",
-        "Name": "DistanceBetweenDecals",
         "Size": "0x4",
         "Offset": "0x628"
       },
-      {
+      "DecalMaterial": {
         "Type": "Class MaterialInterface*",
-        "Name": "DecalMaterial",
         "Size": "0x8",
         "Offset": "0x630"
       },
-      {
+      "PathTool": {
         "Type": "Struct SplineFootprintPathTool",
-        "Name": "PathTool",
         "Size": "0x1",
         "Offset": "0x638"
       },
-      {
+      "DecalYaw": {
         "Type": "float",
-        "Name": "DecalYaw",
         "Size": "0x4",
         "Offset": "0x63c"
       },
-      {
+      "DecalUniformScale": {
         "Type": "Struct Vector",
-        "Name": "DecalUniformScale",
         "Size": "0xc",
         "Offset": "0x640"
       }
-    ]
+    }
   },
   "StartTallTaleConditionalStatTrigger": {
     "Super": "ConditionalStatsTriggerType",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestArrayEntrySelectionStrategy": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "FixedArrayEntrySelectionStrategy": {
     "Super": "TaleQuestArrayEntrySelectionStrategy",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "IndexToSelect": {
         "Type": "int",
-        "Name": "IndexToSelect",
         "Size": "0x4",
         "Offset": "0x28"
       }
-    ]
+    }
   },
   "RandomArrayEntrySelectionStrategy": {
     "Super": "TaleQuestArrayEntrySelectionStrategy",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "SequentialArrayEntrySelectionStrategy": {
     "Super": "TaleQuestArrayEntrySelectionStrategy",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestCargoRunContract": {
     "Super": "Object",
     "FullSize": "0xb0",
     "InheritedSize": "0x28",
     "ClassSize": "0x88",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ItemsToCollect": {
         "Type": "TArray<Struct OnCollected>",
-        "Name": "ItemsToCollect",
         "Size": "0x10",
         "Offset": "0x68"
       },
-      {
+      "DeliverToNPC": {
         "Type": "Class Actor*",
-        "Name": "DeliverToNPC",
         "Size": "0x8",
         "Offset": "0x88"
       },
-      {
+      "CollectFromNPC": {
         "Type": "Class Actor*",
-        "Name": "CollectFromNPC",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "TaleQuestCargoRunContractsService": {
     "Super": "TaleQuestService",
     "FullSize": "0xa8",
     "InheritedSize": "0x60",
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Contracts": {
         "Type": "TArray<class Contracts*>",
-        "Name": "Contracts",
         "Size": "0x10",
         "Offset": "0x60"
       }
-    ]
+    }
   },
   "TaleQuestMerchantContract": {
     "Super": "Object",
     "FullSize": "0x88",
     "InheritedSize": "0x28",
     "ClassSize": "0x60",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestMerchantContractsService": {
     "Super": "TaleQuestService",
     "FullSize": "0x70",
     "InheritedSize": "0x60",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Contracts": {
         "Type": "TArray<class Contracts*>",
-        "Name": "Contracts",
         "Size": "0x10",
         "Offset": "0x60"
       }
-    ]
+    }
   },
   "TaleQuestImportFrame": {
     "Super": "TaleQuestRootFrame",
     "FullSize": "0xc0",
     "InheritedSize": "0x38",
     "ClassSize": "0x88",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestSelectorServiceBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "CutsceneResponsesTaleService": {
     "Super": "TaleQuestService",
     "FullSize": "0x90",
     "InheritedSize": "0x60",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TrackedResponseCoordinators": {
         "Type": "TArray<class TrackedResponseCoordinators*>",
-        "Name": "TrackedResponseCoordinators",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      {
+      "TrackedResponseComponents": {
         "Type": "TArray<class TrackedResponseComponents*>",
-        "Name": "TrackedResponseComponents",
         "Size": "0x10",
         "Offset": "0x70"
       },
-      {
+      "ResponseRelevantActors": {
         "Type": "TArray<class ResponseRelevantActors*>",
-        "Name": "ResponseRelevantActors",
         "Size": "0x10",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "GameEventExclusionZoneTaleService": {
     "Super": "TaleQuestService",
     "FullSize": "0x88",
     "InheritedSize": "0x60",
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": {}
   },
   "RewardGenTaleQuestService": {
     "Super": "TaleQuestService",
     "FullSize": "0x90",
     "InheritedSize": "0x60",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "GlobalSpawnData": {
         "Type": "Class TaleQuestWeightedItemDescSpawnDataAsset*",
-        "Name": "GlobalSpawnData",
         "Size": "0x8",
         "Offset": "0x60"
       },
-      {
+      "ValidSpawnData": {
         "Type": "TArray<Int >",
-        "Name": "ValidSpawnData",
         "Size": "0x10",
         "Offset": "0x68"
       },
-      {
+      "ItemsToSpawn": {
         "Type": "TArray<class ItemsToSpawn*>",
-        "Name": "ItemsToSpawn",
         "Size": "0x10",
         "Offset": "0x78"
       }
-    ]
+    }
   },
   "TaleQuestActorService": {
     "Super": "TaleQuestService",
     "FullSize": "0x370",
     "InheritedSize": "0x60",
     "ClassSize": "0x310",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TrackedActors": {
         "Type": "TArray<Struct Desc>",
-        "Name": "TrackedActors",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      {
+      "CriticalActors": {
         "Type": "TArray<Struct TrackedActors>",
-        "Name": "CriticalActors",
         "Size": "0x10",
         "Offset": "0x70"
       },
-      {
+      "SnapshottedActors": {
         "Type": "TArray<Struct CriticalActors>",
-        "Name": "SnapshottedActors",
         "Size": "0x10",
         "Offset": "0x80"
       },
-      {
+      "Desc": {
         "Type": "Class TaleQuestActorServiceDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       },
-      {
+      "PhasedClusterRoot": {
         "Type": "Class PhasedClusterRoot*",
-        "Name": "PhasedClusterRoot",
         "Size": "0x8",
         "Offset": "0x98"
       },
-      {
+      "PhasedActors": {
         "Type": "TArray<Struct PhasedClusterRoot>",
-        "Name": "PhasedActors",
         "Size": "0x10",
         "Offset": "0xa0"
       },
-      {
+      "PhasedItems": {
         "Type": "TArray<Struct PhasedActors>",
-        "Name": "PhasedItems",
         "Size": "0x10",
         "Offset": "0xb0"
       },
-      {
+      "CriticalActorHandedInByAnotherCrewFailureMessage": {
         "Type": "Struct FText",
-        "Name": "CriticalActorHandedInByAnotherCrewFailureMessage",
         "Size": "0x38",
         "Offset": "0xc0"
       }
-    ]
+    }
   },
   "TaleQuestCheckpointService": {
     "Super": "TaleQuestService",
     "FullSize": "0x98",
     "InheritedSize": "0x60",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class TaleQuestCheckpointServiceDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x60"
       }
-    ]
+    }
   },
   "TaleQuestEQSService": {
     "Super": "TaleQuestService",
     "FullSize": "0x128",
     "InheritedSize": "0x60",
     "ClassSize": "0xc8",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestSelectorService": {
     "Super": "TaleQuestService",
     "FullSize": "0x88",
     "InheritedSize": "0x60",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class TaleQuestSelectorServiceDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x60"
       }
-    ]
+    }
   },
   "TaleQuestToggleInteractionDescriptionService": {
     "Super": "TaleQuestService",
     "FullSize": "0xb8",
     "InheritedSize": "0x60",
     "ClassSize": "0x58",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class TaleQuestToggleInteractionDescriptionServiceDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0xb0"
       }
-    ]
+    }
   },
   "TaleResourceBrokerService": {
     "Super": "TaleQuestService",
     "FullSize": "0xa8",
     "InheritedSize": "0x60",
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MigrationActions": {
         "Type": "TArray<Struct ResourceRegistry>",
-        "Name": "MigrationActions",
         "Size": "0x10",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "CutsceneResponsesTaleServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GameEventExclusionZoneTaleServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "RewardGenTaleQuestServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SpawnData": {
         "Type": "Class TaleQuestWeightedItemDescSpawnDataAsset*",
-        "Name": "SpawnData",
         "Size": "0x8",
         "Offset": "0x28"
       }
-    ]
+    }
   },
   "TaleQuestActorServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ItemLostFailureRunnable": {
         "Type": "class",
-        "Name": "ItemLostFailureRunnable",
         "Size": "0x8",
         "Offset": "0x28"
       }
-    ]
+    }
   },
   "TaleQuestCargoRunContractsServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestEQSServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestMerchantContractsServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestSelectorServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestToggleInteractionDescriptionServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ResetDisabledInteractsOnEnd": {
         "Type": "bool",
-        "Name": "ResetDisabledInteractsOnEnd",
         "Size": "0x1",
         "Offset": "0x28"
       },
-      {
+      "ResetEnabledInteractsOnEnd": {
         "Type": "bool",
-        "Name": "ResetEnabledInteractsOnEnd",
         "Size": "0x1",
         "Offset": "0x29"
       }
-    ]
+    }
   },
   "AddGameEventExclusionZoneStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class AddGameEventExclusionZoneStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "CallObjectFunctionStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "DebugTaleAddInstancedLevelStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xc8",
     "InheritedSize": "0x90",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StepDesc": {
         "Type": "Class DebugTaleAddInstancedLevelStepDesc*",
-        "Name": "StepDesc",
         "Size": "0x8",
         "Offset": "0x98"
       },
-      {
+      "InstancedLevelPath": {
         "Type": "Struct FString",
-        "Name": "InstancedLevelPath",
         "Size": "0x10",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "DebugTaleAddInstancedLevelStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xc0",
     "InheritedSize": "0x80",
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "InstancedLevelKeyword": {
         "Type": "Struct FText",
-        "Name": "InstancedLevelKeyword",
         "Size": "0x38",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "DestroySpawnedActorStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "DoEQSQueryStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xa0",
     "InheritedSize": "0x90",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class DoEQSQueryStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       },
-      {
+      "CachedTaleEQSService": {
         "Type": "Class TaleQuestEQSService*",
-        "Name": "CachedTaleEQSService",
         "Size": "0x8",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "FindNamedPointStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "FindNamedPointAsVectorStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "FindNamedPointAsTransformStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "GenerateDigLocationInRadiusStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x110",
     "InheritedSize": "0x90",
     "ClassSize": "0x80",
-    "Attributes": []
+    "Attributes": {}
   },
   "GetVoyageDifficultyFromRankStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xb8",
     "InheritedSize": "0x90",
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": {}
   },
   "InvokeDamageStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "LinkEQSContextWithVariableStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class LinkEQSContextWithVariableStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "LoadSequencerAnimationStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xa8",
     "InheritedSize": "0x90",
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StepDesc": {
         "Type": "Class LoadSequencerAnimationStepDesc*",
-        "Name": "StepDesc",
         "Size": "0x8",
         "Offset": "0x90"
       },
-      {
+      "SequencerCutSceneActor": {
         "Type": "Class SequencerCutSceneActor*",
-        "Name": "SequencerCutSceneActor",
         "Size": "0x8",
         "Offset": "0x98"
       },
-      {
+      "TargetToSpawnActor": {
         "Type": "Class Actor*",
-        "Name": "TargetToSpawnActor",
         "Size": "0x8",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "ParticipantRadiusTrackerStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xb0",
     "InheritedSize": "0x90",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class ParticipantRadiusTrackerStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "PlaySequencerAnimationOnCutsceneActorStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xc0",
     "InheritedSize": "0x90",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StepDesc": {
         "Type": "Class PlaySequencerAnimationOnCutsceneActorStepDesc*",
-        "Name": "StepDesc",
         "Size": "0x8",
         "Offset": "0x90"
       },
-      {
+      "SequencerCutSceneActor": {
         "Type": "Class SequencerCutSceneActor*",
-        "Name": "SequencerCutSceneActor",
         "Size": "0x8",
         "Offset": "0x98"
       },
-      {
+      "PossessableSequences": {
         "Type": "TArray<Struct SequencerCutSceneActor>",
-        "Name": "PossessableSequences",
         "Size": "0x10",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "PlaySequencerAnimationStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xc8",
     "InheritedSize": "0x90",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StepDesc": {
         "Type": "Class PlaySequencerAnimationStepDesc*",
-        "Name": "StepDesc",
         "Size": "0x8",
         "Offset": "0x90"
       },
-      {
+      "SequencerCutSceneActor": {
         "Type": "Class SequencerCutSceneActor*",
-        "Name": "SequencerCutSceneActor",
         "Size": "0x8",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "ProvokeHitReactionStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "RemoveGameEventExclusionZoneStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class RemoveGameEventExclusionZoneStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "SetEQSNamedContextStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class SetEQSNamedContextStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "SpawnPhasedActorWithTransformStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xe0",
     "InheritedSize": "0x90",
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": {}
   },
   "SpawnPhasedItemStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "StartSuppressingCutsceneResponsesStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "StopSuppressingCutsceneResponsesStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestAwaitEventStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xd8",
     "InheritedSize": "0x90",
     "ClassSize": "0x48",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestChooseIslandFromWeightsStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xf8",
     "InheritedSize": "0x90",
     "ClassSize": "0x68",
-    "Attributes": [
-      {
+    "Attributes": {
+      "IslandTypeWeights": {
         "Type": "Class IslandTypeWeightsDataAsset*",
-        "Name": "IslandTypeWeights",
         "Size": "0x8",
         "Offset": "0xf0"
       }
-    ]
+    }
   },
   "TaleQuestClearTaleProposalsStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestDisableInteractionStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestEmissaryCompanyActionRewardBoostStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class TaleQuestEmissaryCompanyActionRewardBoostStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "TaleQuestEnableInteractionStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestFireEventStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestForEachSequential": {
     "Super": "TaleQuestStep",
     "FullSize": "0xe8",
     "InheritedSize": "0x90",
     "ClassSize": "0x58",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StepDesc": {
         "Type": "Class TaleQuestForEachStepDescBase*",
-        "Name": "StepDesc",
         "Size": "0x8",
         "Offset": "0x98"
       },
-      {
+      "Body": {
         "Type": "Class TaleQuestStep*",
-        "Name": "Body",
         "Size": "0x8",
         "Offset": "0xa0"
       },
-      {
+      "CurrentIndex": {
         "Type": "int",
-        "Name": "CurrentIndex",
         "Size": "0x4",
         "Offset": "0xa8"
       }
-    ]
+    }
   },
   "TaleQuestGetCollectionItemCountStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestGrantRewardStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xc0",
     "InheritedSize": "0x90",
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestPermanentPromptStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestSelectEntryFromArrayStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xd0",
     "InheritedSize": "0x90",
     "ClassSize": "0x40",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestStructStepBase": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestBreakStructStep": {
     "Super": "TaleQuestStructStepBase",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestMakeStructStep": {
     "Super": "TaleQuestStructStepBase",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestUpdateCheckpointStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestWaitForHandInStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xa0",
     "InheritedSize": "0x90",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class TaleQuestWaitForHandInStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "TrackResponseCoordinatorStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StepDesc": {
         "Type": "Class TrackResponseCoordinatorStepDesc*",
-        "Name": "StepDesc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "WaitForItemPickupStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x140",
     "InheritedSize": "0x90",
     "ClassSize": "0xb0",
-    "Attributes": []
+    "Attributes": {}
   },
   "AddGameEventExclusionZoneStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa8",
     "InheritedSize": "0x80",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Radius": {
         "Type": "float",
-        "Name": "Radius",
         "Size": "0x4",
         "Offset": "0x80"
       },
-      {
+      "Location": {
         "Type": "Struct QuestVariableVector",
-        "Name": "Location",
         "Size": "0x20",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "CallObjectFunctionStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xe8",
     "InheritedSize": "0x80",
     "ClassSize": "0x68",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Target": {
         "Type": "Class Object*",
-        "Name": "Target",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "Function": {
         "Type": "Struct ClassFunctionSelectionType",
-        "Name": "Function",
         "Size": "0x10",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "DestroySpawnedActorStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
     "InheritedSize": "0x80",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ActorVar": {
         "Type": "Struct QuestVariableActor",
-        "Name": "ActorVar",
         "Size": "0x20",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "DoEQSQueryStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa8",
     "InheritedSize": "0x80",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "EQSQuery": {
         "Type": "Class EnvQuery*",
-        "Name": "EQSQuery",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "OutPoints": {
         "Type": "Struct QuestVariableArray",
-        "Name": "OutPoints",
         "Size": "0x20",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "FindNamedPointStepDescBase": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xf0",
     "InheritedSize": "0x80",
     "ClassSize": "0x70",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ActorToSearch": {
         "Type": "Struct QuestVariableActor",
-        "Name": "ActorToSearch",
         "Size": "0x20",
         "Offset": "0xa0"
       },
-      {
+      "GroupNamePin": {
         "Type": "Struct QuestVariableName",
-        "Name": "GroupNamePin",
         "Size": "0x20",
         "Offset": "0xc0"
       },
-      {
+      "PointGroupName": {
         "Type": "struct FName",
-        "Name": "PointGroupName",
         "Size": "0x8",
         "Offset": "0xe0"
       },
-      {
+      "SearchMethod": {
         "Type": "byte",
-        "Name": "SearchMethod",
         "Size": "0x1",
         "Offset": "0xe8"
       },
-      {
+      "ReturnInSpace": {
         "Type": "byte",
-        "Name": "ReturnInSpace",
         "Size": "0x1",
         "Offset": "0xe9"
       }
-    ]
+    }
   },
   "FindNamedPointStepDesc": {
     "Super": "FindNamedPointStepDescBase",
     "FullSize": "0x110",
     "InheritedSize": "0xf0",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "OutputOrientedPoint": {
         "Type": "Struct QuestVariableOrientedPoint",
-        "Name": "OutputOrientedPoint",
         "Size": "0x20",
         "Offset": "0xf0"
       }
-    ]
+    }
   },
   "FindNamedPointAsVectorStepDesc": {
     "Super": "FindNamedPointStepDescBase",
     "FullSize": "0x110",
     "InheritedSize": "0xf0",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "OutputVectorLocation": {
         "Type": "Struct QuestVariableVector",
-        "Name": "OutputVectorLocation",
         "Size": "0x20",
         "Offset": "0xf0"
       }
-    ]
+    }
   },
   "FindNamedPointAsTransformStepDesc": {
     "Super": "FindNamedPointStepDescBase",
     "FullSize": "0x118",
     "InheritedSize": "0xf0",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "OutputTransform": {
         "Type": "Struct QuestVariableTransform",
-        "Name": "OutputTransform",
         "Size": "0x28",
         "Offset": "0xf0"
       }
-    ]
+    }
   },
   "GenerateDigLocationInRadiusStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xe8",
     "InheritedSize": "0x80",
     "ClassSize": "0x68",
-    "Attributes": [
-      {
+    "Attributes": {
+      "IslandName": {
         "Type": "Struct QuestVariableName",
-        "Name": "IslandName",
         "Size": "0x20",
         "Offset": "0x80"
       },
-      {
+      "Center": {
         "Type": "Struct QuestVariableVector",
-        "Name": "Center",
         "Size": "0x20",
         "Offset": "0xa0"
       },
-      {
+      "RadiusInCm": {
         "Type": "float",
-        "Name": "RadiusInCm",
         "Size": "0x4",
         "Offset": "0xc0"
       },
-      {
+      "DigLocation": {
         "Type": "Struct QuestVariableVector",
-        "Name": "DigLocation",
         "Size": "0x20",
         "Offset": "0xc8"
       }
-    ]
+    }
   },
   "InvokeDamageDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xb0",
     "InheritedSize": "0x80",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ActorToDamage": {
         "Type": "Struct QuestVariableActor",
-        "Name": "ActorToDamage",
         "Size": "0x20",
         "Offset": "0x80"
       },
-      {
+      "DamageType": {
         "Type": "class",
-        "Name": "DamageType",
         "Size": "0x8",
         "Offset": "0xa0"
       },
-      {
+      "DamageAmount": {
         "Type": "float",
-        "Name": "DamageAmount",
         "Size": "0x4",
         "Offset": "0xa8"
       },
-      {
+      "DamageReason": {
         "Type": "byte",
-        "Name": "DamageReason",
         "Size": "0x1",
         "Offset": "0xac"
       }
-    ]
+    }
   },
   "LinkEQSContextWithVariableStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa8",
     "InheritedSize": "0x80",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Context": {
         "Type": "class",
-        "Name": "Context",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "Variable": {
         "Type": "Struct QuestVariableSetEQSTaleContextValue",
-        "Name": "Variable",
         "Size": "0x20",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "LoadSequencerAnimationStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x100",
     "InheritedSize": "0x80",
     "ClassSize": "0x80",
-    "Attributes": [
-      {
+    "Attributes": {
+      "LevelSequencesToLoad": {
         "Type": "TArray<class LevelSequencesToLoad*>",
-        "Name": "LevelSequencesToLoad",
         "Size": "0x10",
         "Offset": "0x80"
       },
-      {
+      "TargetActorToSpawn": {
         "Type": "Struct QuestVariableActor",
-        "Name": "TargetActorToSpawn",
         "Size": "0x20",
         "Offset": "0x90"
       },
-      {
+      "LevelSequenceActorSpawnLocation": {
         "Type": "Struct QuestVariableActor",
-        "Name": "LevelSequenceActorSpawnLocation",
         "Size": "0x20",
         "Offset": "0xb0"
       },
-      {
+      "SequencerCutSceneActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "SequencerCutSceneActor",
         "Size": "0x20",
         "Offset": "0xd0"
       },
-      {
+      "AttachToTargetActor": {
         "Type": "bool",
-        "Name": "AttachToTargetActor",
         "Size": "0x1",
         "Offset": "0xf0"
       },
-      {
+      "AttachSocketName": {
         "Type": "struct FName",
-        "Name": "AttachSocketName",
         "Size": "0x8",
         "Offset": "0xf4"
       },
-      {
+      "PlayGlobally": {
         "Type": "bool",
-        "Name": "PlayGlobally",
         "Size": "0x1",
         "Offset": "0xfc"
       }
-    ]
+    }
   },
   "ParticipantRadiusTrackerStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xc8",
     "InheritedSize": "0x80",
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DurationBetweenChecks": {
         "Type": "float",
-        "Name": "DurationBetweenChecks",
         "Size": "0x4",
         "Offset": "0x80"
       },
-      {
+      "Location": {
         "Type": "Struct QuestVariableVector",
-        "Name": "Location",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "Radius": {
         "Type": "Struct QuestVariableFloat",
-        "Name": "Radius",
         "Size": "0x20",
         "Offset": "0xa8"
       }
-    ]
+    }
   },
   "WaitUntilAllParticipantsEnterRadiusStep": {
     "Super": "ParticipantRadiusTrackerStepDesc",
     "FullSize": "0xc8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "WaitUntilAllParticipantsLeaveRadiusStep": {
     "Super": "ParticipantRadiusTrackerStepDesc",
     "FullSize": "0xc8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "WaitUntilAnyParticipantEntersRadiusStep": {
     "Super": "ParticipantRadiusTrackerStepDesc",
     "FullSize": "0xc8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "PlaySequencerAnimationOnCutsceneActorStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x168",
     "InheritedSize": "0x80",
     "ClassSize": "0xe8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "LevelSequence": {
         "Type": "Class LevelSequence*",
-        "Name": "LevelSequence",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "Delay": {
         "Type": "float",
-        "Name": "Delay",
         "Size": "0x4",
         "Offset": "0x88"
       },
-      {
+      "DockableBaseActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "DockableBaseActor",
         "Size": "0x20",
         "Offset": "0x90"
       },
-      {
+      "SequencerCutSceneActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "SequencerCutSceneActor",
         "Size": "0x20",
         "Offset": "0xb0"
       },
-      {
+      "ActorToPossess": {
         "Type": "Struct QuestVariableActor",
-        "Name": "ActorToPossess",
         "Size": "0x20",
         "Offset": "0xd0"
       },
-      {
+      "AdditionalPossessables": {
         "Type": "Struct QuestVariableArray",
-        "Name": "AdditionalPossessables",
         "Size": "0x20",
         "Offset": "0xf0"
       },
-      {
+      "InteractingActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "InteractingActor",
         "Size": "0x20",
         "Offset": "0x110"
       },
-      {
+      "PossessableName": {
         "Type": "Struct FString",
-        "Name": "PossessableName",
         "Size": "0x10",
         "Offset": "0x130"
       },
-      {
+      "DialogueData": {
         "Type": "Class SceneDialogueData*",
-        "Name": "DialogueData",
         "Size": "0x8",
         "Offset": "0x140"
       },
-      {
+      "LocalisableNames": {
         "Type": "TArray<Struct FText>",
-        "Name": "LocalisableNames",
         "Size": "0x10",
         "Offset": "0x148"
       },
-      {
+      "IsLevelSequenceActorAlwaysRelevant": {
         "Type": "bool",
-        "Name": "IsLevelSequenceActorAlwaysRelevant",
         "Size": "0x1",
         "Offset": "0x158"
       },
-      {
+      "IsLooping": {
         "Type": "bool",
-        "Name": "IsLooping",
         "Size": "0x1",
         "Offset": "0x159"
       },
-      {
+      "SubtitleSphereRadiusInCm": {
         "Type": "float",
-        "Name": "SubtitleSphereRadiusInCm",
         "Size": "0x4",
         "Offset": "0x15c"
       },
-      {
+      "FemaleLevelSequence": {
         "Type": "Class LevelSequence*",
-        "Name": "FemaleLevelSequence",
         "Size": "0x8",
         "Offset": "0x160"
       }
-    ]
+    }
   },
   "PlaySequencerAnimationStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x138",
     "InheritedSize": "0x80",
     "ClassSize": "0xb8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "LevelSequenceToPlay": {
         "Type": "Class LevelSequence*",
-        "Name": "LevelSequenceToPlay",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "TargetActorToSpawn": {
         "Type": "Struct QuestVariableActor",
-        "Name": "TargetActorToSpawn",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "LevelSequenceActorSpawnLocation": {
         "Type": "Struct QuestVariableActor",
-        "Name": "LevelSequenceActorSpawnLocation",
         "Size": "0x20",
         "Offset": "0xa8"
       },
-      {
+      "DockableBaseActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "DockableBaseActor",
         "Size": "0x20",
         "Offset": "0xc8"
       },
-      {
+      "InteractingActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "InteractingActor",
         "Size": "0x20",
         "Offset": "0xe8"
       },
-      {
+      "PlayGlobally": {
         "Type": "bool",
-        "Name": "PlayGlobally",
         "Size": "0x1",
         "Offset": "0x108"
       },
-      {
+      "IsLevelSequenceActorAlawaysRelevant": {
         "Type": "bool",
-        "Name": "IsLevelSequenceActorAlawaysRelevant",
         "Size": "0x1",
         "Offset": "0x109"
       },
-      {
+      "DialogueData": {
         "Type": "Class SceneDialogueData*",
-        "Name": "DialogueData",
         "Size": "0x8",
         "Offset": "0x110"
       },
-      {
+      "LocalisableNames": {
         "Type": "TArray<Struct FText>",
-        "Name": "LocalisableNames",
         "Size": "0x10",
         "Offset": "0x118"
       },
-      {
+      "IsLooping": {
         "Type": "bool",
-        "Name": "IsLooping",
         "Size": "0x1",
         "Offset": "0x128"
       },
-      {
+      "SubtitleSphereRadiusInCm": {
         "Type": "float",
-        "Name": "SubtitleSphereRadiusInCm",
         "Size": "0x4",
         "Offset": "0x12c"
       },
-      {
+      "FemaleLevelSequenceToPlay": {
         "Type": "Class LevelSequence*",
-        "Name": "FemaleLevelSequenceToPlay",
         "Size": "0x8",
         "Offset": "0x130"
       }
-    ]
+    }
   },
   "ProvokeHitReactionDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xb0",
     "InheritedSize": "0x80",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ActorToProvoke": {
         "Type": "Struct QuestVariableActor",
-        "Name": "ActorToProvoke",
         "Size": "0x20",
         "Offset": "0x80"
       },
-      {
+      "DamageType": {
         "Type": "class",
-        "Name": "DamageType",
         "Size": "0x8",
         "Offset": "0xa0"
       },
-      {
+      "DamageAmount": {
         "Type": "float",
-        "Name": "DamageAmount",
         "Size": "0x4",
         "Offset": "0xa8"
       },
-      {
+      "DamageReason": {
         "Type": "byte",
-        "Name": "DamageReason",
         "Size": "0x1",
         "Offset": "0xac"
       }
-    ]
+    }
   },
   "RemoveGameEventExclusionZoneStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa8",
     "InheritedSize": "0x80",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Radius": {
         "Type": "float",
-        "Name": "Radius",
         "Size": "0x4",
         "Offset": "0x80"
       },
-      {
+      "Location": {
         "Type": "Struct QuestVariableVector",
-        "Name": "Location",
         "Size": "0x20",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "SetEQSNamedContextStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa8",
     "InheritedSize": "0x80",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Name": {
         "Type": "struct FName",
-        "Name": "Name",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "Value": {
         "Type": "Struct QuestVariableLinkEQSContext",
-        "Name": "Value",
         "Size": "0x20",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "SpawnPhasedActorWithTransformStepBaseDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x100",
     "InheritedSize": "0x80",
     "ClassSize": "0x80",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MarkAsCritical": {
         "Type": "bool",
-        "Name": "MarkAsCritical",
         "Size": "0x1",
         "Offset": "0xa0"
       },
-      {
+      "CriticalActorLostMessage": {
         "Type": "Struct FText",
-        "Name": "CriticalActorLostMessage",
         "Size": "0x38",
         "Offset": "0xa8"
       },
-      {
+      "ActorVar": {
         "Type": "Struct QuestVariableActor",
-        "Name": "ActorVar",
         "Size": "0x20",
         "Offset": "0xe0"
       }
-    ]
+    }
   },
   "SpawnPhasedActorAtLocationStepDesc": {
     "Super": "SpawnPhasedActorWithTransformStepBaseDesc",
     "FullSize": "0x128",
     "InheritedSize": "0x100",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Location": {
         "Type": "Struct QuestVariableTransform",
-        "Name": "Location",
         "Size": "0x28",
         "Offset": "0x100"
       }
-    ]
+    }
   },
   "SpawnPhasedItemStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x128",
     "InheritedSize": "0x80",
     "ClassSize": "0xa8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TrackItem": {
         "Type": "bool",
-        "Name": "TrackItem",
         "Size": "0x1",
         "Offset": "0x80"
       },
-      {
+      "MarkItemAsCritical": {
         "Type": "bool",
-        "Name": "MarkItemAsCritical",
         "Size": "0x1",
         "Offset": "0x81"
       },
-      {
+      "CriticalActorLostMessage": {
         "Type": "Struct FText",
-        "Name": "CriticalActorLostMessage",
         "Size": "0x38",
         "Offset": "0x88"
       },
-      {
+      "SocketName": {
         "Type": "struct FName",
-        "Name": "SocketName",
         "Size": "0x8",
         "Offset": "0xc0"
       },
-      {
+      "Item": {
         "Type": "Struct QuestVariableItemDescType",
-        "Name": "Item",
         "Size": "0x20",
         "Offset": "0xc8"
       },
-      {
+      "LocatorVar": {
         "Type": "Struct QuestVariableActor",
-        "Name": "LocatorVar",
         "Size": "0x20",
         "Offset": "0xe8"
       },
-      {
+      "SpawnedItemVar": {
         "Type": "Struct QuestVariableItemInfo",
-        "Name": "SpawnedItemVar",
         "Size": "0x20",
         "Offset": "0x108"
       }
-    ]
+    }
   },
   "StartSuppressingCutsceneResponsesStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x80",
     "InheritedSize": "0x80",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "StopSuppressingCutsceneResponsesStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x80",
     "InheritedSize": "0x80",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestChooseIslandFromWeightsStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xe8",
     "InheritedSize": "0x80",
     "ClassSize": "0x68",
-    "Attributes": [
-      {
+    "Attributes": {
+      "IslandsToChooseFrom": {
         "Type": "Struct QuestVariableNameArray",
-        "Name": "IslandsToChooseFrom",
         "Size": "0x20",
         "Offset": "0x80"
       },
-      {
+      "DifficultyRank": {
         "Type": "Struct QuestVariableInt",
-        "Name": "DifficultyRank",
         "Size": "0x20",
         "Offset": "0xa0"
       },
-      {
+      "ChosenIsland": {
         "Type": "Struct QuestVariableName",
-        "Name": "ChosenIsland",
         "Size": "0x20",
         "Offset": "0xc0"
       },
-      {
+      "IslandTypeWeights": {
         "Type": "Class IslandTypeWeightsDataAsset*",
-        "Name": "IslandTypeWeights",
         "Size": "0x8",
         "Offset": "0xe0"
       }
-    ]
+    }
   },
   "TaleQuestClearTaleProposalsStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x88",
     "InheritedSize": "0x80",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CampaignId": {
         "Type": "struct FName",
-        "Name": "CampaignId",
         "Size": "0x8",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "TaleQuestDisableInteractionStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
     "InheritedSize": "0x80",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TargetActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "TargetActor",
         "Size": "0x20",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "TaleQuestEmissaryCompanyActionRewardBoostStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x88",
     "InheritedSize": "0x80",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CompanyActionType": {
         "Type": "byte",
-        "Name": "CompanyActionType",
         "Size": "0x1",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "TaleQuestEnableInteractionStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
     "InheritedSize": "0x80",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TargetActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "TargetActor",
         "Size": "0x20",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "TaleQuestEventStepDescBase": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xe0",
     "InheritedSize": "0x80",
     "ClassSize": "0x60",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Dispatcher": {
         "Type": "Class Object*",
-        "Name": "Dispatcher",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "EventType": {
         "Type": "Struct NativeAndUserDefinedStructSelector",
-        "Name": "EventType",
         "Size": "0x8",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "TaleQuestAwaitEventStepDesc": {
     "Super": "TaleQuestEventStepDescBase",
     "FullSize": "0xe0",
     "InheritedSize": "0xe0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestFireEventStepDesc": {
     "Super": "TaleQuestEventStepDescBase",
     "FullSize": "0xe0",
     "InheritedSize": "0xe0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestForEachStepDescBase": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
     "InheritedSize": "0x80",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Collection": {
         "Type": "struct FName",
-        "Name": "Collection",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "Body": {
         "Type": "Class TaleQuestStepDesc*",
-        "Name": "Body",
         "Size": "0x8",
         "Offset": "0x88"
       },
-      {
+      "KeyPinName": {
         "Type": "struct FName",
-        "Name": "KeyPinName",
         "Size": "0x8",
         "Offset": "0x90"
       },
-      {
+      "ItemPinName": {
         "Type": "struct FName",
-        "Name": "ItemPinName",
         "Size": "0x8",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "TaleQuestForEachSequentialDesc": {
     "Super": "TaleQuestForEachStepDescBase",
     "FullSize": "0xa0",
     "InheritedSize": "0xa0",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestGetCollectionItemCountStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xc0",
     "InheritedSize": "0x80",
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Collection": {
         "Type": "Struct QuestVariableCollection",
-        "Name": "Collection",
         "Size": "0x20",
         "Offset": "0x80"
       },
-      {
+      "Num": {
         "Type": "Struct QuestVariableInt",
-        "Name": "Num",
         "Size": "0x20",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "TaleQuestGrantRewardStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xb0",
     "InheritedSize": "0x80",
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "RewardId": {
         "Type": "Struct RewardId",
-        "Name": "RewardId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "Company": {
         "Type": "class",
-        "Name": "Company",
         "Size": "0x8",
         "Offset": "0x88"
       },
-      {
+      "Id": {
         "Type": "Struct Guid",
-        "Name": "Id",
         "Size": "0x10",
         "Offset": "0x90"
       },
-      {
+      "ShouldGrantToAlliedCrews": {
         "Type": "bool",
-        "Name": "ShouldGrantToAlliedCrews",
         "Size": "0x1",
         "Offset": "0xa0"
       },
-      {
+      "Feature": {
         "Type": "struct FName",
-        "Name": "Feature",
         "Size": "0x8",
         "Offset": "0xa4"
       }
-    ]
+    }
   },
   "TaleQuestPermanentPromptStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa8",
     "InheritedSize": "0x80",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Prompt": {
         "Type": "Struct QuestVariablePrioritisedPrompt",
-        "Name": "Prompt",
         "Size": "0x20",
         "Offset": "0x80"
       },
-      {
+      "StartOrStop": {
         "Type": "byte",
-        "Name": "StartOrStop",
         "Size": "0x1",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "TaleQuestSelectEntryFromArrayStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xc8",
     "InheritedSize": "0x80",
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SelectionStrategy": {
         "Type": "Class TaleQuestArrayEntrySelectionStrategy*",
-        "Name": "SelectionStrategy",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "InputArray": {
         "Type": "Struct QuestVariableArray",
-        "Name": "InputArray",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "OutputEntry": {
         "Type": "Struct QuestVariableAny",
-        "Name": "OutputEntry",
         "Size": "0x20",
         "Offset": "0xa8"
       }
-    ]
+    }
   },
   "TaleQuestStructStepDescBase": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0x80",
     "ClassSize": "0x58",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Struct": {
         "Type": "Class ScriptStruct*",
-        "Name": "Struct",
         "Size": "0x8",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "TaleQuestBreakStructStepDesc": {
     "Super": "TaleQuestStructStepDescBase",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestMakeStructStepDesc": {
     "Super": "TaleQuestStructStepDescBase",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestUpdateCheckpointStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x98",
     "InheritedSize": "0x80",
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "RewardIdToAward": {
         "Type": "Struct RewardId",
-        "Name": "RewardIdToAward",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "CampaignIdToRemove": {
         "Type": "struct FName",
-        "Name": "CampaignIdToRemove",
         "Size": "0x8",
         "Offset": "0x88"
       },
-      {
+      "Feature": {
         "Type": "struct FName",
-        "Name": "Feature",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "TaleQuestWaitForHandInStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xc8",
     "InheritedSize": "0x80",
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "HandInActor": {
         "Type": "Struct QuestVariableActor",
-        "Name": "HandInActor",
         "Size": "0x20",
         "Offset": "0x80"
       },
-      {
+      "SpecificItem": {
         "Type": "class",
-        "Name": "SpecificItem",
         "Size": "0x8",
         "Offset": "0xa0"
       },
-      {
+      "HandInItem": {
         "Type": "Struct QuestVariableItemDescType",
-        "Name": "HandInItem",
         "Size": "0x20",
         "Offset": "0xa8"
       }
-    ]
+    }
   },
   "TrackResponseCoordinatorStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
     "InheritedSize": "0x80",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CutsceneResponseCoordinator": {
         "Type": "Struct QuestVariableUObject",
-        "Name": "CutsceneResponseCoordinator",
         "Size": "0x20",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "WaitForItemPickupStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xc0",
     "InheritedSize": "0x80",
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Item": {
         "Type": "Struct QuestVariableActor",
-        "Name": "Item",
         "Size": "0x20",
         "Offset": "0x80"
       },
-      {
+      "PickerUpper": {
         "Type": "Struct QuestVariableActor",
-        "Name": "PickerUpper",
         "Size": "0x20",
         "Offset": "0xa0"
       }
-    ]
+    }
   },
   "TaleQuestSelectShipwreckLocationFromValidCandidatesStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x208",
     "InheritedSize": "0x90",
     "ClassSize": "0x178",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CachedSelectorService": {
         "Type": "Class TaleQuestSelectorService*",
-        "Name": "CachedSelectorService",
         "Size": "0x8",
         "Offset": "0xe8"
       }
-    ]
+    }
   },
   "TaleQuestSelectShipwreckLocationFromValidCandidatesStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xe8",
     "InheritedSize": "0x80",
     "ClassSize": "0x68",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SelectionStrategy": {
         "Type": "Class TaleQuestArrayEntrySelectionStrategy*",
-        "Name": "SelectionStrategy",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "InputArray": {
         "Type": "Struct QuestVariableVectorArray",
-        "Name": "InputArray",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "OutputEntry": {
         "Type": "Struct QuestVariableVector",
-        "Name": "OutputEntry",
         "Size": "0x20",
         "Offset": "0xa8"
       },
-      {
+      "ShuffleLists": {
         "Type": "Struct QuestVariableBool",
-        "Name": "ShuffleLists",
         "Size": "0x20",
         "Offset": "0xc8"
       }
-    ]
+    }
   },
   "RemoveFlameOfFateTypeStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x90",
     "InheritedSize": "0x80",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "FlameOfFateTypeToRemove": {
         "Type": "byte",
-        "Name": "FlameOfFateTypeToRemove",
         "Size": "0x1",
         "Offset": "0x80"
       },
-      {
+      "LanternItemCategory": {
         "Type": "class",
-        "Name": "LanternItemCategory",
         "Size": "0x8",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "TaleQuestFlameOfFateService": {
     "Super": "TaleQuestService",
     "FullSize": "0xc0",
     "InheritedSize": "0x60",
     "ClassSize": "0x60",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ServiceDesc": {
         "Type": "Class TaleQuestFlameOfFateServiceDesc*",
-        "Name": "ServiceDesc",
         "Size": "0x8",
         "Offset": "0x60"
       }
-    ]
+    }
   },
   "TaleQuestFlameOfFateServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "LanternItemCategory": {
         "Type": "class",
-        "Name": "LanternItemCategory",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      {
+      "FlameOfFateTypeToSet": {
         "Type": "byte",
-        "Name": "FlameOfFateTypeToSet",
         "Size": "0x1",
         "Offset": "0x30"
       },
-      {
+      "SetFlameOnStart": {
         "Type": "bool",
-        "Name": "SetFlameOnStart",
         "Size": "0x1",
         "Offset": "0x31"
       }
-    ]
+    }
   },
   "TaleQuestAddBountyMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestAddBountyMapStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x138",
     "InheritedSize": "0x80",
     "ClassSize": "0xb8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "IslandName": {
         "Type": "Struct QuestVariableName",
-        "Name": "IslandName",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "Location": {
         "Type": "Struct QuestVariableText",
-        "Name": "Location",
         "Size": "0x20",
         "Offset": "0xa8"
       },
-      {
+      "Description": {
         "Type": "Struct QuestVariableTextArray",
-        "Name": "Description",
         "Size": "0x20",
         "Offset": "0xc8"
       },
-      {
+      "CaptainTargets": {
         "Type": "Struct QuestVariableBountyTargetArray",
-        "Name": "CaptainTargets",
         "Size": "0x20",
         "Offset": "0xe8"
       },
-      {
+      "CrewTargets": {
         "Type": "Struct QuestVariableBountyTargetArray",
-        "Name": "CrewTargets",
         "Size": "0x20",
         "Offset": "0x108"
       },
-      {
+      "CustomLayout": {
         "Type": "Class BountyMapLayout*",
-        "Name": "CustomLayout",
         "Size": "0x8",
         "Offset": "0x128"
       },
-      {
+      "OverrideTreasureMapItemDesc": {
         "Type": "class",
-        "Name": "OverrideTreasureMapItemDesc",
         "Size": "0x8",
         "Offset": "0x130"
       }
-    ]
+    }
   },
   "TaleQuestAddCargoRunMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestAddChecklistMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestAddCircleMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestAddMerchantMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestAddRiddleMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestAddXMarksMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestAdvanceRiddleMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestMapService": {
     "Super": "TaleQuestService",
     "FullSize": "0x100",
     "InheritedSize": "0x60",
     "ClassSize": "0xa0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestMapServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TaleQuestAddCargoRunMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0xf0",
     "InheritedSize": "0x80",
     "ClassSize": "0x70",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "IslandName": {
         "Type": "Struct QuestVariableName",
-        "Name": "IslandName",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "NumItems": {
         "Type": "Struct QuestVariableInt",
-        "Name": "NumItems",
         "Size": "0x20",
         "Offset": "0xa8"
       },
-      {
+      "NPCId": {
         "Type": "Struct QuestVariableGuid",
-        "Name": "NPCId",
         "Size": "0x20",
         "Offset": "0xc8"
       },
-      {
+      "Layout": {
         "Type": "Class CargoRunMapLayout*",
-        "Name": "Layout",
         "Size": "0x8",
         "Offset": "0xe8"
       }
-    ]
+    }
   },
   "TaleQuestAddChecklistMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0x130",
     "InheritedSize": "0x80",
     "ClassSize": "0xb0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "Title": {
         "Type": "Struct QuestVariableText",
-        "Name": "Title",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "Description": {
         "Type": "Struct QuestVariableText",
-        "Name": "Description",
         "Size": "0x20",
         "Offset": "0xa8"
       },
-      {
+      "ChecklistItemsData": {
         "Type": "Struct QuestVariableDataAsset",
-        "Name": "ChecklistItemsData",
         "Size": "0x20",
         "Offset": "0xc8"
       },
-      {
+      "Afternote": {
         "Type": "Struct QuestVariableText",
-        "Name": "Afternote",
         "Size": "0x20",
         "Offset": "0xe8"
       },
-      {
+      "Layout": {
         "Type": "Struct QuestVariableDataAsset",
-        "Name": "Layout",
         "Size": "0x20",
         "Offset": "0x108"
       },
-      {
+      "RadialMiniIcon": {
         "Type": "byte",
-        "Name": "RadialMiniIcon",
         "Size": "0x1",
         "Offset": "0x128"
       }
-    ]
+    }
   },
   "TaleQuestAddCircleMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0xd0",
     "InheritedSize": "0x80",
     "ClassSize": "0x50",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "IslandName": {
         "Type": "Struct QuestVariableName",
-        "Name": "IslandName",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "Location": {
         "Type": "Struct QuestVariableVector",
-        "Name": "Location",
         "Size": "0x20",
         "Offset": "0xa8"
       },
-      {
+      "CircleScale": {
         "Type": "float",
-        "Name": "CircleScale",
         "Size": "0x4",
         "Offset": "0xc8"
       },
-      {
+      "RadialMiniIcon": {
         "Type": "byte",
-        "Name": "RadialMiniIcon",
         "Size": "0x1",
         "Offset": "0xcc"
       }
-    ]
+    }
   },
   "TaleQuestAddMerchantMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0x110",
     "InheritedSize": "0x80",
     "ClassSize": "0x90",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "IslandName": {
         "Type": "Struct QuestVariableName",
-        "Name": "IslandName",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "DeliveryLocation": {
         "Type": "Struct QuestVariableText",
-        "Name": "DeliveryLocation",
         "Size": "0x20",
         "Offset": "0xa8"
       },
-      {
+      "DeliverByTime": {
         "Type": "Struct QuestVariableText",
-        "Name": "DeliverByTime",
         "Size": "0x20",
         "Offset": "0xc8"
       },
-      {
+      "Items": {
         "Type": "Struct QuestVariableMerchantItemArray",
-        "Name": "Items",
         "Size": "0x20",
         "Offset": "0xe8"
       },
-      {
+      "Layout": {
         "Type": "Class MerchantMapLayout*",
-        "Name": "Layout",
         "Size": "0x8",
         "Offset": "0x108"
       }
-    ]
+    }
   },
   "TaleQuestAddRiddleMapBaseStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0xa8",
     "InheritedSize": "0x80",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "IslandName": {
         "Type": "Struct QuestVariableName",
-        "Name": "IslandName",
         "Size": "0x20",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "TaleQuestAddRiddleMapStepDesc": {
     "Super": "TaleQuestAddRiddleMapBaseStepDesc",
     "FullSize": "0xb8",
     "InheritedSize": "0xa8",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Text": {
         "Type": "TArray<Text None>",
-        "Name": "Text",
         "Size": "0x10",
         "Offset": "0xa8"
       }
-    ]
+    }
   },
   "TaleQuestAddRiddleMapUsingVariableStepDesc": {
     "Super": "TaleQuestAddRiddleMapBaseStepDesc",
     "FullSize": "0xc8",
     "InheritedSize": "0xa8",
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TextVariable": {
         "Type": "Struct QuestVariableTextArray",
-        "Name": "TextVariable",
         "Size": "0x20",
         "Offset": "0xa8"
       }
-    ]
+    }
   },
   "TaleQuestAddXMarksMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0xc8",
     "InheritedSize": "0x80",
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "IslandName": {
         "Type": "Struct QuestVariableName",
-        "Name": "IslandName",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "Location": {
         "Type": "Struct QuestVariableVector",
-        "Name": "Location",
         "Size": "0x20",
         "Offset": "0xa8"
       }
-    ]
+    }
   },
   "TaleQuestAdvanceRiddleMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0x88",
     "InheritedSize": "0x80",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       }
-    ]
+    }
   },
   "TaleQuestRemoveMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "StepDesc": {
         "Type": "Class TaleQuestRemoveMapStepDesc*",
-        "Name": "StepDesc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "TaleQuestRemoveMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0xa8",
     "InheritedSize": "0x80",
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "Location": {
         "Type": "Struct QuestVariableVector",
-        "Name": "Location",
         "Size": "0x20",
         "Offset": "0x88"
       }
-    ]
+    }
   },
   "TaleQuestUpdateMerchantMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Desc": {
         "Type": "Class TaleQuestUpdateMerchantMapStepDesc*",
-        "Name": "Desc",
         "Size": "0x8",
         "Offset": "0x90"
       }
-    ]
+    }
   },
   "TaleQuestUpdateMerchantMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0xc8",
     "InheritedSize": "0x80",
     "ClassSize": "0x48",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       },
-      {
+      "Item": {
         "Type": "Struct QuestVariableMerchantItem",
-        "Name": "Item",
         "Size": "0x20",
         "Offset": "0x88"
       },
-      {
+      "Index": {
         "Type": "Struct QuestVariableInt",
-        "Name": "Index",
         "Size": "0x20",
         "Offset": "0xa8"
       }
-    ]
+    }
   },
   "TaleQuestWaitForChecklistMapCompletionStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
     "FullSize": "0x88",
     "InheritedSize": "0x80",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MapId": {
         "Type": "struct FName",
-        "Name": "MapId",
         "Size": "0x8",
         "Offset": "0x80"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

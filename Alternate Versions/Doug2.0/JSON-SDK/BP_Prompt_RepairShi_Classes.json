@@ -4,223 +4,195 @@
     "FullSize": "0x230",
     "InheritedSize": "0x118",
     "ClassSize": "0x118",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x118"
       },
-      {
+      "State_ShipDamaged": {
         "Type": "bool",
-        "Name": "State_ShipDamaged",
         "Size": "0x1",
         "Offset": "0x120"
       },
-      {
+      "Handle_OnShipDamaged": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_OnShipDamaged",
         "Size": "0x48",
         "Offset": "0x128"
       },
-      {
+      "State_Complete": {
         "Type": "bool",
-        "Name": "State_Complete",
         "Size": "0x1",
         "Offset": "0x170"
       },
-      {
+      "Prompt_RepairShip": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_RepairShip",
         "Size": "0x68",
         "Offset": "0x178"
       },
-      {
+      "Handle_CurrentShipChanged": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_CurrentShipChanged",
         "Size": "0x48",
         "Offset": "0x1e0"
       },
-      {
+      "CurrentShip": {
         "Type": "Class Ship*",
-        "Name": "CurrentShip",
         "Size": "0x8",
         "Offset": "0x228"
       }
-    ]
+    }
   },
   "BP_Prompt_RepairShipCapstan_C": {
     "Super": "BP_PromptCoordinator_Base_C",
     "FullSize": "0x230",
     "InheritedSize": "0x118",
     "ClassSize": "0x118",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x118"
       },
-      {
+      "State_CapstanDamaged": {
         "Type": "bool",
-        "Name": "State_CapstanDamaged",
         "Size": "0x1",
         "Offset": "0x120"
       },
-      {
+      "Handle_OnCapstanDamaged": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_OnCapstanDamaged",
         "Size": "0x48",
         "Offset": "0x128"
       },
-      {
+      "State_Complete": {
         "Type": "bool",
-        "Name": "State_Complete",
         "Size": "0x1",
         "Offset": "0x170"
       },
-      {
+      "Prompt_RepairShip": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_RepairShip",
         "Size": "0x68",
         "Offset": "0x178"
       },
-      {
+      "Handle_CurrentShipChanged": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_CurrentShipChanged",
         "Size": "0x48",
         "Offset": "0x1e0"
       },
-      {
+      "CurrentShip": {
         "Type": "Class Ship*",
-        "Name": "CurrentShip",
         "Size": "0x8",
         "Offset": "0x228"
       }
-    ]
+    }
   },
   "BP_Prompt_RepairShipMast_C": {
     "Super": "BP_PromptCoordinator_Base_C",
     "FullSize": "0x2c8",
     "InheritedSize": "0x118",
     "ClassSize": "0x1b0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x118"
       },
-      {
+      "State_ShipMastDamaged": {
         "Type": "bool",
-        "Name": "State_ShipMastDamaged",
         "Size": "0x1",
         "Offset": "0x120"
       },
-      {
+      "Handle_OnMastDamaged1": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_OnMastDamaged1",
         "Size": "0x48",
         "Offset": "0x128"
       },
-      {
+      "State_Complete": {
         "Type": "bool",
-        "Name": "State_Complete",
         "Size": "0x1",
         "Offset": "0x170"
       },
-      {
+      "Prompt_RepairShip": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_RepairShip",
         "Size": "0x68",
         "Offset": "0x178"
       },
-      {
+      "Handle_CurrentShipChanged": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_CurrentShipChanged",
         "Size": "0x48",
         "Offset": "0x1e0"
       },
-      {
+      "CurrentShip": {
         "Type": "Class Ship*",
-        "Name": "CurrentShip",
         "Size": "0x8",
         "Offset": "0x228"
       },
-      {
+      "Handle_OnMastDamaged2": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_OnMastDamaged2",
         "Size": "0x48",
         "Offset": "0x230"
       },
-      {
+      "Handle_OnMastDamaged3": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_OnMastDamaged3",
         "Size": "0x48",
         "Offset": "0x278"
       },
-      {
+      "NumMastsRegistered": {
         "Type": "int",
-        "Name": "NumMastsRegistered",
         "Size": "0x4",
         "Offset": "0x2c0"
       },
-      {
+      "MastIndex": {
         "Type": "int",
-        "Name": "MastIndex",
         "Size": "0x4",
         "Offset": "0x2c4"
       }
-    ]
+    }
   },
   "BP_Prompt_RepairShipWheel_C": {
     "Super": "BP_PromptCoordinator_Base_C",
     "FullSize": "0x230",
     "InheritedSize": "0x118",
     "ClassSize": "0x118",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UberGraphFrame": {
         "Type": "Struct PointerToUberGraphFrame",
-        "Name": "UberGraphFrame",
         "Size": "0x8",
         "Offset": "0x118"
       },
-      {
+      "State_ShipWheelDamaged": {
         "Type": "bool",
-        "Name": "State_ShipWheelDamaged",
         "Size": "0x1",
         "Offset": "0x120"
       },
-      {
+      "Handle_OnWheelDamaged": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_OnWheelDamaged",
         "Size": "0x48",
         "Offset": "0x128"
       },
-      {
+      "State_Complete": {
         "Type": "bool",
-        "Name": "State_Complete",
         "Size": "0x1",
         "Offset": "0x170"
       },
-      {
+      "Prompt_RepairShip": {
         "Type": "Struct PrioritisedPromptWithHandle",
-        "Name": "Prompt_RepairShip",
         "Size": "0x68",
         "Offset": "0x178"
       },
-      {
+      "Handle_CurrentShipChanged": {
         "Type": "Struct ObjectMessagingHandle",
-        "Name": "Handle_CurrentShipChanged",
         "Size": "0x48",
         "Offset": "0x1e0"
       },
-      {
+      "CurrentShip": {
         "Type": "Class Ship*",
-        "Name": "CurrentShip",
         "Size": "0x8",
         "Offset": "0x228"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

@@ -4,236 +4,218 @@
     "FullSize": "0xe0",
     "InheritedSize": "0x28",
     "ClassSize": "0xb8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AssignedVoyageProposalDescClass": {
         "Type": "class",
-        "Name": "AssignedVoyageProposalDescClass",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      {
+      "AssignedTaleRankDescClass": {
         "Type": "class",
-        "Name": "AssignedTaleRankDescClass",
         "Size": "0x8",
         "Offset": "0x30"
       }
-    ]
+    }
   },
   "ContextualTutorialComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x120",
     "InheritedSize": "0xc8",
     "ClassSize": "0x58",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ContextualTutorialClasses": {
         "Type": "TArray<Struct TutorialStarterType>",
-        "Name": "ContextualTutorialClasses",
         "Size": "0x10",
         "Offset": "0xc8"
       },
-      {
+      "SpawnedPromptActors": {
         "Type": "TArray<class SpawnedPromptActors*>",
-        "Name": "SpawnedPromptActors",
         "Size": "0x10",
         "Offset": "0xd8"
       }
-    ]
+    }
   },
   "HasTutorialStarterBegunNPCDialogConditional": {
     "Super": "NPCDialogConditional",
     "FullSize": "0x38",
     "InheritedSize": "0x30",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TutorialStarterType": {
         "Type": "byte",
-        "Name": "TutorialStarterType",
         "Size": "0x1",
         "Offset": "0x30"
       }
-    ]
+    }
   },
   "OnboardingStatusInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "Tutorial2019Component": {
     "Super": "ActorComponent",
     "FullSize": "0xd0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "IsEnabledByServer": {
         "Type": "bool",
-        "Name": "IsEnabledByServer",
         "Size": "0x1",
         "Offset": "0xc8"
       },
-      {
+      "IsInTutorialTale": {
         "Type": "bool",
-        "Name": "IsInTutorialTale",
         "Size": "0x1",
         "Offset": "0xc9"
       }
-    ]
+    }
   },
   "Tutorial2019ContextualDelegatingComponent": {
     "Super": "Tutorial2019Component",
     "FullSize": "0xd8",
     "InheritedSize": "0xd0",
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ContextualTutorialComponent": {
         "Type": "Class ContextualTutorialComponent*",
-        "Name": "ContextualTutorialComponent",
         "Size": "0x8",
         "Offset": "0xd0"
       }
-    ]
+    }
   },
   "Tutorial2019FunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TutorialHelpersBlueprintLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TutorialManagerInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "TutorialManager": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
     "InheritedSize": "0xc8",
     "ClassSize": "0x50",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CompanyOnboardingStarterClass": {
         "Type": "class",
-        "Name": "CompanyOnboardingStarterClass",
         "Size": "0x8",
         "Offset": "0xd0"
       },
-      {
+      "MaidenVoyageStarterClass": {
         "Type": "class",
-        "Name": "MaidenVoyageStarterClass",
         "Size": "0x8",
         "Offset": "0xd8"
       },
-      {
+      "BeachNPCSpawnFlowStarterClass": {
         "Type": "class",
-        "Name": "BeachNPCSpawnFlowStarterClass",
         "Size": "0x8",
         "Offset": "0xe0"
       },
-      {
+      "SelectedTutorialClass": {
         "Type": "class",
-        "Name": "SelectedTutorialClass",
         "Size": "0x8",
         "Offset": "0xe8"
       },
-      {
+      "SelectedTutorial": {
         "Type": "Class TutorialStarter*",
-        "Name": "SelectedTutorial",
         "Size": "0x8",
         "Offset": "0xf0"
       },
-      {
+      "TutorialType": {
         "Type": "byte",
-        "Name": "TutorialType",
         "Size": "0x1",
         "Offset": "0xf8"
       },
-      {
+      "HasEverPlayedFirstPersonAnimation": {
         "Type": "bool",
-        "Name": "HasEverPlayedFirstPersonAnimation",
         "Size": "0x1",
         "Offset": "0xf9"
       },
-      {
+      "HasStartedTutorial": {
         "Type": "bool",
-        "Name": "HasStartedTutorial",
         "Size": "0x1",
         "Offset": "0xfa"
       },
-      {
+      "HasReceivedEntitlements": {
         "Type": "bool",
-        "Name": "HasReceivedEntitlements",
         "Size": "0x1",
         "Offset": "0xfb"
       },
-      {
+      "HasPosessedPawn": {
         "Type": "bool",
-        "Name": "HasPosessedPawn",
         "Size": "0x1",
         "Offset": "0xfc"
       }
-    ]
+    }
   },
   "TutorialStarter": {
     "Super": "Object",
     "FullSize": "0x60",
     "InheritedSize": "0x28",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "AthenaPlayerController": {
         "Type": "Class AthenaPlayerController*",
-        "Name": "AthenaPlayerController",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      {
+      "ShouldPlayIntroAnimatic": {
         "Type": "bool",
-        "Name": "ShouldPlayIntroAnimatic",
         "Size": "0x1",
         "Offset": "0x30"
       },
-      {
+      "ShouldDisableAllIntroBehaviour": {
         "Type": "bool",
-        "Name": "ShouldDisableAllIntroBehaviour",
         "Size": "0x1",
         "Offset": "0x31"
       },
-      {
+      "IntroAnimationSettings": {
         "Type": "Struct FirstPersonAnimaticSettings",
-        "Name": "IntroAnimationSettings",
         "Size": "0x2c",
         "Offset": "0x34"
       }
-    ]
+    }
   },
   "BeachNPCSpawnFlowStarter": {
     "Super": "TutorialStarter",
     "FullSize": "0x60",
     "InheritedSize": "0x60",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "CompanyOnboardingStarter": {
     "Super": "TutorialStarter",
     "FullSize": "0x60",
     "InheritedSize": "0x60",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
   },
   "MaidenVoyageStarter": {
     "Super": "TutorialStarter",
     "FullSize": "0x60",
     "InheritedSize": "0x60",
     "ClassSize": "0x0",
-    "Attributes": []
+    "Attributes": {}
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

@@ -1,307 +1,269 @@
 {
   "PlayerTrackedObjective": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ObjectiveId": {
         "Type": "Struct Guid",
-        "Name": "ObjectiveId",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "SeasonReward": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Id": {
         "Type": "Struct Guid",
-        "Name": "Id",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "SeasonServiceDataUpdatedEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "SeasonRewardEarnedEvent": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SeasonId": {
         "Type": "Struct Guid",
-        "Name": "SeasonId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "MultipleRewards": {
         "Type": "bool",
-        "Name": "MultipleRewards",
         "Size": "0x1",
         "Offset": "0x10"
       },
-      {
+      "Rewards": {
         "Type": "TArray<Struct MultipleRewards>",
-        "Name": "Rewards",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    ]
+    }
   },
   "LevelCompletionEvent": {
     "ClassSize": "0x24",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SeasonId": {
         "Type": "Struct Guid",
-        "Name": "SeasonId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "Level": {
         "Type": "int",
-        "Name": "Level",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      {
+      "TimeSpentInLevel": {
         "Type": "int",
-        "Name": "TimeSpentInLevel",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      {
+      "Tier": {
         "Type": "int",
-        "Name": "Tier",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      {
+      "TimeSpentInTier": {
         "Type": "int",
-        "Name": "TimeSpentInTier",
         "Size": "0x4",
         "Offset": "0x1c"
       },
-      {
+      "TierCompleted": {
         "Type": "bool",
-        "Name": "TierCompleted",
         "Size": "0x1",
         "Offset": "0x20"
       },
-      {
+      "SeasonCompleted": {
         "Type": "bool",
-        "Name": "SeasonCompleted",
         "Size": "0x1",
         "Offset": "0x21"
       }
-    ]
+    }
   },
   "LevelProgressionEvent": {
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SeasonId": {
         "Type": "Struct Guid",
-        "Name": "SeasonId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "SourceGoalId": {
         "Type": "Struct Guid",
-        "Name": "SourceGoalId",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "XpChange": {
         "Type": "int",
-        "Name": "XpChange",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      {
+      "CurrentXP": {
         "Type": "int",
-        "Name": "CurrentXP",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      {
+      "CurrentTier": {
         "Type": "int",
-        "Name": "CurrentTier",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      {
+      "CurrentLevel": {
         "Type": "int",
-        "Name": "CurrentLevel",
         "Size": "0x4",
         "Offset": "0x2c"
       }
-    ]
+    }
   },
   "SeasonGoalCompletionEvent": {
     "ClassSize": "0x34",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SeasonId": {
         "Type": "Struct Guid",
-        "Name": "SeasonId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "GoalId": {
         "Type": "Struct Guid",
-        "Name": "GoalId",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "GoalType": {
         "Type": "byte",
-        "Name": "GoalType",
         "Size": "0x1",
         "Offset": "0x20"
       },
-      {
+      "GoalGroupId": {
         "Type": "Struct Guid",
-        "Name": "GoalGroupId",
         "Size": "0x10",
         "Offset": "0x24"
       }
-    ]
+    }
   },
   "SeasonGoalProgressionEvent": {
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "PreviousProgress": {
         "Type": "int",
-        "Name": "PreviousProgress",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "CurrentProgress": {
         "Type": "int",
-        "Name": "CurrentProgress",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "CompletionThreshold": {
         "Type": "int",
-        "Name": "CompletionThreshold",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "SeasonId": {
         "Type": "Struct Guid",
-        "Name": "SeasonId",
         "Size": "0x10",
         "Offset": "0xc"
       },
-      {
+      "GoalId": {
         "Type": "Struct Guid",
-        "Name": "GoalId",
         "Size": "0x10",
         "Offset": "0x1c"
       },
-      {
+      "GoalType": {
         "Type": "byte",
-        "Name": "GoalType",
         "Size": "0x1",
         "Offset": "0x2c"
       },
-      {
+      "GoalGroupId": {
         "Type": "Struct Guid",
-        "Name": "GoalGroupId",
         "Size": "0x10",
         "Offset": "0x30"
       }
-    ]
+    }
   },
   "TrackedObjectiveCompletionMessage": {
     "ClassSize": "0xe0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ObjectiveId": {
         "Type": "Struct Guid",
-        "Name": "ObjectiveId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "PirateIdentity": {
         "Type": "Struct PirateIdentity",
-        "Name": "PirateIdentity",
         "Size": "0x78",
         "Offset": "0x10"
       },
-      {
+      "PlayerInfo": {
         "Type": "Struct PlayerBaseTelemetryFragment",
-        "Name": "PlayerInfo",
         "Size": "0x48",
         "Offset": "0x88"
       },
-      {
+      "PlayMode": {
         "Type": "byte",
-        "Name": "PlayMode",
         "Size": "0x1",
         "Offset": "0xd0"
       },
-      {
+      "PlayModeVariant": {
         "Type": "byte",
-        "Name": "PlayModeVariant",
         "Size": "0x1",
         "Offset": "0xd1"
       },
-      {
+      "CreatedAt": {
         "Type": "double",
-        "Name": "CreatedAt",
         "Size": "0x8",
         "Offset": "0xd8"
       }
-    ]
+    }
   },
   "TrackedObjectiveProgressUpdateMessage": {
     "ClassSize": "0xe0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ObjectiveId": {
         "Type": "Struct Guid",
-        "Name": "ObjectiveId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "PirateIdentity": {
         "Type": "Struct PirateIdentity",
-        "Name": "PirateIdentity",
         "Size": "0x78",
         "Offset": "0x10"
       },
-      {
+      "PlayerInfo": {
         "Type": "Struct PlayerBaseTelemetryFragment",
-        "Name": "PlayerInfo",
         "Size": "0x48",
         "Offset": "0x88"
       },
-      {
+      "PlayMode": {
         "Type": "byte",
-        "Name": "PlayMode",
         "Size": "0x1",
         "Offset": "0xd0"
       },
-      {
+      "PlayModeVariant": {
         "Type": "byte",
-        "Name": "PlayModeVariant",
         "Size": "0x1",
         "Offset": "0xd1"
       },
-      {
+      "Value": {
         "Type": "int",
-        "Name": "Value",
         "Size": "0x4",
         "Offset": "0xd4"
       },
-      {
+      "CreatedAt": {
         "Type": "double",
-        "Name": "CreatedAt",
         "Size": "0x8",
         "Offset": "0xd8"
       }
-    ]
+    }
   },
   "TrackedObjectiveEvent": {
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": {}
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

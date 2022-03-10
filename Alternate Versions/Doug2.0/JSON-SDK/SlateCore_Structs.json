@@ -1,1457 +1,1255 @@
 {
   "SlateBrush": {
     "ClassSize": "0x90",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ImageSize": {
         "Type": "Struct Vector2D",
-        "Name": "ImageSize",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "DrawAs": {
         "Type": "byte",
-        "Name": "DrawAs",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      {
+      "Margin": {
         "Type": "Struct Margin",
-        "Name": "Margin",
         "Size": "0x10",
         "Offset": "0xc"
       },
-      {
+      "Tint": {
         "Type": "Struct LinearColor",
-        "Name": "Tint",
         "Size": "0x10",
         "Offset": "0x1c"
       },
-      {
+      "TintColor": {
         "Type": "Struct SlateColor",
-        "Name": "TintColor",
         "Size": "0x30",
         "Offset": "0x30"
       },
-      {
+      "Tiling": {
         "Type": "byte",
-        "Name": "Tiling",
         "Size": "0x1",
         "Offset": "0x60"
       },
-      {
+      "Mirroring": {
         "Type": "byte",
-        "Name": "Mirroring",
         "Size": "0x1",
         "Offset": "0x61"
       },
-      {
+      "ImageType": {
         "Type": "byte",
-        "Name": "ImageType",
         "Size": "0x1",
         "Offset": "0x62"
       },
-      {
+      "ResourceObject": {
         "Type": "Class Object*",
-        "Name": "ResourceObject",
         "Size": "0x8",
         "Offset": "0x68"
       },
-      {
+      "ResourceName": {
         "Type": "struct FName",
-        "Name": "ResourceName",
         "Size": "0x8",
         "Offset": "0x70"
       },
-      {
+      "bIsDynamicallyLoaded": {
         "Type": "bool",
-        "Name": "bIsDynamicallyLoaded",
         "Size": "0x1",
         "Offset": "0x78"
       },
-      {
+      "bHasUObject": {
         "Type": "bool",
-        "Name": "bHasUObject",
         "Size": "0x1",
         "Offset": "0x79"
       },
-      {
+      "UVRegion": {
         "Type": "Struct Box2D",
-        "Name": "UVRegion",
         "Size": "0x14",
         "Offset": "0x7c"
       }
-    ]
+    }
   },
   "SlateColor": {
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SpecifiedColor": {
         "Type": "Struct LinearColor",
-        "Name": "SpecifiedColor",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "ColorUseRule": {
         "Type": "byte",
-        "Name": "ColorUseRule",
         "Size": "0x1",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "Margin": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Left": {
         "Type": "float",
-        "Name": "Left",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      {
+      "Top": {
         "Type": "float",
-        "Name": "Top",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      {
+      "Right": {
         "Type": "float",
-        "Name": "Right",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      {
+      "Bottom": {
         "Type": "float",
-        "Name": "Bottom",
         "Size": "0x4",
         "Offset": "0xc"
       }
-    ]
+    }
   },
   "PointerEvent": {
     "ClassSize": "0x88",
-    "Attributes": []
+    "Attributes": {}
   },
   "InputEvent": {
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": {}
   },
   "Geometry": {
     "ClassSize": "0x34",
-    "Attributes": []
+    "Attributes": {}
   },
   "ComboBoxStyle": {
     "ClassSize": "0x428",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ComboButtonStyle": {
         "Type": "Struct ComboButtonStyle",
-        "Name": "ComboButtonStyle",
         "Size": "0x3e0",
         "Offset": "0x8"
       },
-      {
+      "PressedSlateSound": {
         "Type": "Struct SlateSound",
-        "Name": "PressedSlateSound",
         "Size": "0x18",
         "Offset": "0x3e8"
       },
-      {
+      "SelectionChangeSlateSound": {
         "Type": "Struct SlateSound",
-        "Name": "SelectionChangeSlateSound",
         "Size": "0x18",
         "Offset": "0x400"
       },
-      {
+      "PressedSound": {
         "Type": "struct FName",
-        "Name": "PressedSound",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      {
+      "SelectionChangeSound": {
         "Type": "struct FName",
-        "Name": "SelectionChangeSound",
         "Size": "0x8",
         "Offset": "0x420"
       }
-    ]
+    }
   },
   "SlateWidgetStyle": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": {}
   },
   "SlateSound": {
     "ClassSize": "0x18",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ResourceObject": {
         "Type": "Class Object*",
-        "Name": "ResourceObject",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "ComboButtonStyle": {
     "ClassSize": "0x3e0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ButtonStyle": {
         "Type": "Struct ButtonStyle",
-        "Name": "ButtonStyle",
         "Size": "0x2a8",
         "Offset": "0x8"
       },
-      {
+      "DownArrowImage": {
         "Type": "Struct SlateBrush",
-        "Name": "DownArrowImage",
         "Size": "0x90",
         "Offset": "0x2b0"
       },
-      {
+      "MenuBorderBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "MenuBorderBrush",
         "Size": "0x90",
         "Offset": "0x340"
       },
-      {
+      "MenuBorderPadding": {
         "Type": "Struct Margin",
-        "Name": "MenuBorderPadding",
         "Size": "0x10",
         "Offset": "0x3d0"
       }
-    ]
+    }
   },
   "ButtonStyle": {
     "ClassSize": "0x2a8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Normal": {
         "Type": "Struct SlateBrush",
-        "Name": "Normal",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "Hovered": {
         "Type": "Struct SlateBrush",
-        "Name": "Hovered",
         "Size": "0x90",
         "Offset": "0x98"
       },
-      {
+      "Pressed": {
         "Type": "Struct SlateBrush",
-        "Name": "Pressed",
         "Size": "0x90",
         "Offset": "0x128"
       },
-      {
+      "Disabled": {
         "Type": "Struct SlateBrush",
-        "Name": "Disabled",
         "Size": "0x90",
         "Offset": "0x1b8"
       },
-      {
+      "NormalPadding": {
         "Type": "Struct Margin",
-        "Name": "NormalPadding",
         "Size": "0x10",
         "Offset": "0x248"
       },
-      {
+      "PressedPadding": {
         "Type": "Struct Margin",
-        "Name": "PressedPadding",
         "Size": "0x10",
         "Offset": "0x258"
       },
-      {
+      "PressedSlateSound": {
         "Type": "Struct SlateSound",
-        "Name": "PressedSlateSound",
         "Size": "0x18",
         "Offset": "0x268"
       },
-      {
+      "HoveredSlateSound": {
         "Type": "Struct SlateSound",
-        "Name": "HoveredSlateSound",
         "Size": "0x18",
         "Offset": "0x280"
       },
-      {
+      "PressedSound": {
         "Type": "struct FName",
-        "Name": "PressedSound",
         "Size": "0x8",
         "Offset": "0x298"
       },
-      {
+      "HoveredSound": {
         "Type": "struct FName",
-        "Name": "HoveredSound",
         "Size": "0x8",
         "Offset": "0x2a0"
       }
-    ]
+    }
   },
   "SlateFontInfo": {
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "FontObject": {
         "Type": "Class Object*",
-        "Name": "FontObject",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "FontMaterial": {
         "Type": "Class Object*",
-        "Name": "FontMaterial",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      {
+      "TypefaceFontName": {
         "Type": "struct FName",
-        "Name": "TypefaceFontName",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      {
+      "Size": {
         "Type": "int",
-        "Name": "Size",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      {
+      "FontName": {
         "Type": "struct FName",
-        "Name": "FontName",
         "Size": "0x8",
         "Offset": "0x34"
       },
-      {
+      "Hinting": {
         "Type": "byte",
-        "Name": "Hinting",
         "Size": "0x1",
         "Offset": "0x3c"
       }
-    ]
+    }
   },
   "EditableTextStyle": {
     "ClassSize": "0x228",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Font": {
         "Type": "Struct SlateFontInfo",
-        "Name": "Font",
         "Size": "0x40",
         "Offset": "0x8"
       },
-      {
+      "ColorAndOpacity": {
         "Type": "Struct SlateColor",
-        "Name": "ColorAndOpacity",
         "Size": "0x30",
         "Offset": "0x48"
       },
-      {
+      "BackgroundImageSelected": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundImageSelected",
         "Size": "0x90",
         "Offset": "0x78"
       },
-      {
+      "BackgroundImageComposing": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundImageComposing",
         "Size": "0x90",
         "Offset": "0x108"
       },
-      {
+      "CaretImage": {
         "Type": "Struct SlateBrush",
-        "Name": "CaretImage",
         "Size": "0x90",
         "Offset": "0x198"
       }
-    ]
+    }
   },
   "EditableTextBoxStyle": {
     "ClassSize": "0x860",
-    "Attributes": [
-      {
+    "Attributes": {
+      "BackgroundImageNormal": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundImageNormal",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "BackgroundImageHovered": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundImageHovered",
         "Size": "0x90",
         "Offset": "0x98"
       },
-      {
+      "BackgroundImageFocused": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundImageFocused",
         "Size": "0x90",
         "Offset": "0x128"
       },
-      {
+      "BackgroundImageReadOnly": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundImageReadOnly",
         "Size": "0x90",
         "Offset": "0x1b8"
       },
-      {
+      "Padding": {
         "Type": "Struct Margin",
-        "Name": "Padding",
         "Size": "0x10",
         "Offset": "0x248"
       },
-      {
+      "Font": {
         "Type": "Struct SlateFontInfo",
-        "Name": "Font",
         "Size": "0x40",
         "Offset": "0x258"
       },
-      {
+      "ForegroundColor": {
         "Type": "Struct SlateColor",
-        "Name": "ForegroundColor",
         "Size": "0x30",
         "Offset": "0x298"
       },
-      {
+      "BackgroundColor": {
         "Type": "Struct SlateColor",
-        "Name": "BackgroundColor",
         "Size": "0x30",
         "Offset": "0x2c8"
       },
-      {
+      "ReadOnlyForegroundColor": {
         "Type": "Struct SlateColor",
-        "Name": "ReadOnlyForegroundColor",
         "Size": "0x30",
         "Offset": "0x2f8"
       },
-      {
+      "HScrollBarPadding": {
         "Type": "Struct Margin",
-        "Name": "HScrollBarPadding",
         "Size": "0x10",
         "Offset": "0x328"
       },
-      {
+      "VScrollBarPadding": {
         "Type": "Struct Margin",
-        "Name": "VScrollBarPadding",
         "Size": "0x10",
         "Offset": "0x338"
       },
-      {
+      "ScrollBarStyle": {
         "Type": "Struct ScrollBarStyle",
-        "Name": "ScrollBarStyle",
         "Size": "0x518",
         "Offset": "0x348"
       }
-    ]
+    }
   },
   "ScrollBarStyle": {
     "ClassSize": "0x518",
-    "Attributes": [
-      {
+    "Attributes": {
+      "HorizontalBackgroundImage": {
         "Type": "Struct SlateBrush",
-        "Name": "HorizontalBackgroundImage",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "VerticalBackgroundImage": {
         "Type": "Struct SlateBrush",
-        "Name": "VerticalBackgroundImage",
         "Size": "0x90",
         "Offset": "0x98"
       },
-      {
+      "VerticalTopSlotImage": {
         "Type": "Struct SlateBrush",
-        "Name": "VerticalTopSlotImage",
         "Size": "0x90",
         "Offset": "0x128"
       },
-      {
+      "HorizontalTopSlotImage": {
         "Type": "Struct SlateBrush",
-        "Name": "HorizontalTopSlotImage",
         "Size": "0x90",
         "Offset": "0x1b8"
       },
-      {
+      "VerticalBottomSlotImage": {
         "Type": "Struct SlateBrush",
-        "Name": "VerticalBottomSlotImage",
         "Size": "0x90",
         "Offset": "0x248"
       },
-      {
+      "HorizontalBottomSlotImage": {
         "Type": "Struct SlateBrush",
-        "Name": "HorizontalBottomSlotImage",
         "Size": "0x90",
         "Offset": "0x2d8"
       },
-      {
+      "NormalThumbImage": {
         "Type": "Struct SlateBrush",
-        "Name": "NormalThumbImage",
         "Size": "0x90",
         "Offset": "0x368"
       },
-      {
+      "HoveredThumbImage": {
         "Type": "Struct SlateBrush",
-        "Name": "HoveredThumbImage",
         "Size": "0x90",
         "Offset": "0x3f8"
       },
-      {
+      "DraggedThumbImage": {
         "Type": "Struct SlateBrush",
-        "Name": "DraggedThumbImage",
         "Size": "0x90",
         "Offset": "0x488"
       }
-    ]
+    }
   },
   "TextBlockStyle": {
     "ClassSize": "0x160",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Font": {
         "Type": "Struct SlateFontInfo",
-        "Name": "Font",
         "Size": "0x40",
         "Offset": "0x8"
       },
-      {
+      "ColorAndOpacity": {
         "Type": "Struct SlateColor",
-        "Name": "ColorAndOpacity",
         "Size": "0x30",
         "Offset": "0x48"
       },
-      {
+      "ShadowOffset": {
         "Type": "Struct Vector2D",
-        "Name": "ShadowOffset",
         "Size": "0x8",
         "Offset": "0x78"
       },
-      {
+      "ShadowColorAndOpacity": {
         "Type": "Struct LinearColor",
-        "Name": "ShadowColorAndOpacity",
         "Size": "0x10",
         "Offset": "0x80"
       },
-      {
+      "SelectedBackgroundColor": {
         "Type": "Struct SlateColor",
-        "Name": "SelectedBackgroundColor",
         "Size": "0x30",
         "Offset": "0x90"
       },
-      {
+      "HighlightColor": {
         "Type": "Struct LinearColor",
-        "Name": "HighlightColor",
         "Size": "0x10",
         "Offset": "0xc0"
       },
-      {
+      "HighlightShape": {
         "Type": "Struct SlateBrush",
-        "Name": "HighlightShape",
         "Size": "0x90",
         "Offset": "0xd0"
       }
-    ]
+    }
   },
   "SpinBoxStyle": {
     "ClassSize": "0x318",
-    "Attributes": [
-      {
+    "Attributes": {
+      "BackgroundBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundBrush",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "HoveredBackgroundBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "HoveredBackgroundBrush",
         "Size": "0x90",
         "Offset": "0x98"
       },
-      {
+      "ActiveFillBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "ActiveFillBrush",
         "Size": "0x90",
         "Offset": "0x128"
       },
-      {
+      "InactiveFillBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "InactiveFillBrush",
         "Size": "0x90",
         "Offset": "0x1b8"
       },
-      {
+      "ArrowsImage": {
         "Type": "Struct SlateBrush",
-        "Name": "ArrowsImage",
         "Size": "0x90",
         "Offset": "0x248"
       },
-      {
+      "ForegroundColor": {
         "Type": "Struct SlateColor",
-        "Name": "ForegroundColor",
         "Size": "0x30",
         "Offset": "0x2d8"
       },
-      {
+      "TextPadding": {
         "Type": "Struct Margin",
-        "Name": "TextPadding",
         "Size": "0x10",
         "Offset": "0x308"
       }
-    ]
+    }
   },
   "CompositeFont": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
+    "Attributes": {
+      "DefaultTypeface": {
         "Type": "Struct Typeface",
-        "Name": "DefaultTypeface",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "SubTypefaces": {
         "Type": "TArray<Struct CompositeSubFont>",
-        "Name": "SubTypefaces",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "CompositeSubFont": {
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Typeface": {
         "Type": "Struct Typeface",
-        "Name": "Typeface",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "CharacterRanges": {
         "Type": "TArray<Struct Typeface>",
-        "Name": "CharacterRanges",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "Languages": {
         "Type": "TArray<Byte CharacterRanges>",
-        "Name": "Languages",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      {
+      "ScalingFactor": {
         "Type": "float",
-        "Name": "ScalingFactor",
         "Size": "0x4",
         "Offset": "0x30"
       }
-    ]
+    }
   },
   "Typeface": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Fonts": {
         "Type": "TArray<Struct TypefaceEntry>",
-        "Name": "Fonts",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "TypefaceEntry": {
     "ClassSize": "0x38",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Name": {
         "Type": "struct FName",
-        "Name": "Name",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "Font": {
         "Type": "Struct FontData",
-        "Name": "Font",
         "Size": "0x30",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "FontData": {
     "ClassSize": "0x30",
-    "Attributes": [
-      {
+    "Attributes": {
+      "FontFilename": {
         "Type": "Struct FString",
-        "Name": "FontFilename",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "BulkDataPtr": {
         "Type": "Class FontBulkData*",
-        "Name": "BulkDataPtr",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      {
+      "Hinting": {
         "Type": "byte",
-        "Name": "Hinting",
         "Size": "0x1",
         "Offset": "0x18"
       },
-      {
+      "FontData": {
         "Type": "TArray<Byte Hinting>",
-        "Name": "FontData",
         "Size": "0x10",
         "Offset": "0x20"
       }
-    ]
+    }
   },
   "WindowStyle": {
     "ClassSize": "0x1028",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MinimizeButtonStyle": {
         "Type": "Struct ButtonStyle",
-        "Name": "MinimizeButtonStyle",
         "Size": "0x2a8",
         "Offset": "0x8"
       },
-      {
+      "MaximizeButtonStyle": {
         "Type": "Struct ButtonStyle",
-        "Name": "MaximizeButtonStyle",
         "Size": "0x2a8",
         "Offset": "0x2b0"
       },
-      {
+      "RestoreButtonStyle": {
         "Type": "Struct ButtonStyle",
-        "Name": "RestoreButtonStyle",
         "Size": "0x2a8",
         "Offset": "0x558"
       },
-      {
+      "CloseButtonStyle": {
         "Type": "Struct ButtonStyle",
-        "Name": "CloseButtonStyle",
         "Size": "0x2a8",
         "Offset": "0x800"
       },
-      {
+      "TitleTextStyle": {
         "Type": "Struct TextBlockStyle",
-        "Name": "TitleTextStyle",
         "Size": "0x160",
         "Offset": "0xaa8"
       },
-      {
+      "ActiveTitleBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "ActiveTitleBrush",
         "Size": "0x90",
         "Offset": "0xc08"
       },
-      {
+      "InactiveTitleBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "InactiveTitleBrush",
         "Size": "0x90",
         "Offset": "0xc98"
       },
-      {
+      "FlashTitleBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "FlashTitleBrush",
         "Size": "0x90",
         "Offset": "0xd28"
       },
-      {
+      "OutlineBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "OutlineBrush",
         "Size": "0x90",
         "Offset": "0xdb8"
       },
-      {
+      "OutlineColor": {
         "Type": "Struct SlateColor",
-        "Name": "OutlineColor",
         "Size": "0x30",
         "Offset": "0xe48"
       },
-      {
+      "BorderBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "BorderBrush",
         "Size": "0x90",
         "Offset": "0xe78"
       },
-      {
+      "BackgroundBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundBrush",
         "Size": "0x90",
         "Offset": "0xf08"
       },
-      {
+      "ChildBackgroundBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "ChildBackgroundBrush",
         "Size": "0x90",
         "Offset": "0xf98"
       }
-    ]
+    }
   },
   "ScrollBorderStyle": {
     "ClassSize": "0x128",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TopShadowBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "TopShadowBrush",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "BottomShadowBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "BottomShadowBrush",
         "Size": "0x90",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "ScrollBoxStyle": {
     "ClassSize": "0x248",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TopShadowBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "TopShadowBrush",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "BottomShadowBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "BottomShadowBrush",
         "Size": "0x90",
         "Offset": "0x98"
       },
-      {
+      "LeftShadowBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "LeftShadowBrush",
         "Size": "0x90",
         "Offset": "0x128"
       },
-      {
+      "RightShadowBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "RightShadowBrush",
         "Size": "0x90",
         "Offset": "0x1b8"
       }
-    ]
+    }
   },
   "DockTabStyle": {
     "ClassSize": "0x6e8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CloseButtonStyle": {
         "Type": "Struct ButtonStyle",
-        "Name": "CloseButtonStyle",
         "Size": "0x2a8",
         "Offset": "0x8"
       },
-      {
+      "NormalBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "NormalBrush",
         "Size": "0x90",
         "Offset": "0x2b0"
       },
-      {
+      "ActiveBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "ActiveBrush",
         "Size": "0x90",
         "Offset": "0x340"
       },
-      {
+      "ColorOverlayBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "ColorOverlayBrush",
         "Size": "0x90",
         "Offset": "0x3d0"
       },
-      {
+      "ForegroundBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "ForegroundBrush",
         "Size": "0x90",
         "Offset": "0x460"
       },
-      {
+      "HoveredBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "HoveredBrush",
         "Size": "0x90",
         "Offset": "0x4f0"
       },
-      {
+      "ContentAreaBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "ContentAreaBrush",
         "Size": "0x90",
         "Offset": "0x580"
       },
-      {
+      "TabWellBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "TabWellBrush",
         "Size": "0x90",
         "Offset": "0x610"
       },
-      {
+      "TabPadding": {
         "Type": "Struct Margin",
-        "Name": "TabPadding",
         "Size": "0x10",
         "Offset": "0x6a0"
       },
-      {
+      "OverlapWidth": {
         "Type": "float",
-        "Name": "OverlapWidth",
         "Size": "0x4",
         "Offset": "0x6b0"
       },
-      {
+      "FlashColor": {
         "Type": "Struct SlateColor",
-        "Name": "FlashColor",
         "Size": "0x30",
         "Offset": "0x6b8"
       }
-    ]
+    }
   },
   "HeaderRowStyle": {
     "ClassSize": "0xc20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ColumnStyle": {
         "Type": "Struct TableColumnHeaderStyle",
-        "Name": "ColumnStyle",
         "Size": "0x518",
         "Offset": "0x8"
       },
-      {
+      "LastColumnStyle": {
         "Type": "Struct TableColumnHeaderStyle",
-        "Name": "LastColumnStyle",
         "Size": "0x518",
         "Offset": "0x520"
       },
-      {
+      "ColumnSplitterStyle": {
         "Type": "Struct SplitterStyle",
-        "Name": "ColumnSplitterStyle",
         "Size": "0x128",
         "Offset": "0xa38"
       },
-      {
+      "BackgroundBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundBrush",
         "Size": "0x90",
         "Offset": "0xb60"
       },
-      {
+      "ForegroundColor": {
         "Type": "Struct SlateColor",
-        "Name": "ForegroundColor",
         "Size": "0x30",
         "Offset": "0xbf0"
       }
-    ]
+    }
   },
   "SplitterStyle": {
     "ClassSize": "0x128",
-    "Attributes": [
-      {
+    "Attributes": {
+      "HandleNormalBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "HandleNormalBrush",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "HandleHighlightBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "HandleHighlightBrush",
         "Size": "0x90",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "TableColumnHeaderStyle": {
     "ClassSize": "0x518",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SortPrimaryAscendingImage": {
         "Type": "Struct SlateBrush",
-        "Name": "SortPrimaryAscendingImage",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "SortPrimaryDescendingImage": {
         "Type": "Struct SlateBrush",
-        "Name": "SortPrimaryDescendingImage",
         "Size": "0x90",
         "Offset": "0x98"
       },
-      {
+      "SortSecondaryAscendingImage": {
         "Type": "Struct SlateBrush",
-        "Name": "SortSecondaryAscendingImage",
         "Size": "0x90",
         "Offset": "0x128"
       },
-      {
+      "SortSecondaryDescendingImage": {
         "Type": "Struct SlateBrush",
-        "Name": "SortSecondaryDescendingImage",
         "Size": "0x90",
         "Offset": "0x1b8"
       },
-      {
+      "NormalBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "NormalBrush",
         "Size": "0x90",
         "Offset": "0x248"
       },
-      {
+      "HoveredBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "HoveredBrush",
         "Size": "0x90",
         "Offset": "0x2d8"
       },
-      {
+      "MenuDropdownImage": {
         "Type": "Struct SlateBrush",
-        "Name": "MenuDropdownImage",
         "Size": "0x90",
         "Offset": "0x368"
       },
-      {
+      "MenuDropdownNormalBorderBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "MenuDropdownNormalBorderBrush",
         "Size": "0x90",
         "Offset": "0x3f8"
       },
-      {
+      "MenuDropdownHoveredBorderBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "MenuDropdownHoveredBorderBrush",
         "Size": "0x90",
         "Offset": "0x488"
       }
-    ]
+    }
   },
   "TableRowStyle": {
     "ClassSize": "0x728",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SelectorFocusedBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "SelectorFocusedBrush",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "ActiveHoveredBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "ActiveHoveredBrush",
         "Size": "0x90",
         "Offset": "0x98"
       },
-      {
+      "ActiveBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "ActiveBrush",
         "Size": "0x90",
         "Offset": "0x128"
       },
-      {
+      "InactiveHoveredBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "InactiveHoveredBrush",
         "Size": "0x90",
         "Offset": "0x1b8"
       },
-      {
+      "InactiveBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "InactiveBrush",
         "Size": "0x90",
         "Offset": "0x248"
       },
-      {
+      "EvenRowBackgroundHoveredBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "EvenRowBackgroundHoveredBrush",
         "Size": "0x90",
         "Offset": "0x2d8"
       },
-      {
+      "EvenRowBackgroundBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "EvenRowBackgroundBrush",
         "Size": "0x90",
         "Offset": "0x368"
       },
-      {
+      "OddRowBackgroundHoveredBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "OddRowBackgroundHoveredBrush",
         "Size": "0x90",
         "Offset": "0x3f8"
       },
-      {
+      "OddRowBackgroundBrush": {
         "Type": "Struct SlateBrush",
-        "Name": "OddRowBackgroundBrush",
         "Size": "0x90",
         "Offset": "0x488"
       },
-      {
+      "TextColor": {
         "Type": "Struct SlateColor",
-        "Name": "TextColor",
         "Size": "0x30",
         "Offset": "0x518"
       },
-      {
+      "SelectedTextColor": {
         "Type": "Struct SlateColor",
-        "Name": "SelectedTextColor",
         "Size": "0x30",
         "Offset": "0x548"
       },
-      {
+      "DropIndicator_Above": {
         "Type": "Struct SlateBrush",
-        "Name": "DropIndicator_Above",
         "Size": "0x90",
         "Offset": "0x578"
       },
-      {
+      "DropIndicator_Onto": {
         "Type": "Struct SlateBrush",
-        "Name": "DropIndicator_Onto",
         "Size": "0x90",
         "Offset": "0x608"
       },
-      {
+      "DropIndicator_Below": {
         "Type": "Struct SlateBrush",
-        "Name": "DropIndicator_Below",
         "Size": "0x90",
         "Offset": "0x698"
       }
-    ]
+    }
   },
   "InlineTextImageStyle": {
     "ClassSize": "0xa0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Image": {
         "Type": "Struct SlateBrush",
-        "Name": "Image",
         "Size": "0x90",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "VolumeControlStyle": {
     "ClassSize": "0x520",
-    "Attributes": [
-      {
+    "Attributes": {
+      "SliderStyle": {
         "Type": "Struct SliderStyle",
-        "Name": "SliderStyle",
         "Size": "0x248",
         "Offset": "0x8"
       },
-      {
+      "HighVolumeImage": {
         "Type": "Struct SlateBrush",
-        "Name": "HighVolumeImage",
         "Size": "0x90",
         "Offset": "0x250"
       },
-      {
+      "MidVolumeImage": {
         "Type": "Struct SlateBrush",
-        "Name": "MidVolumeImage",
         "Size": "0x90",
         "Offset": "0x2e0"
       },
-      {
+      "LowVolumeImage": {
         "Type": "Struct SlateBrush",
-        "Name": "LowVolumeImage",
         "Size": "0x90",
         "Offset": "0x370"
       },
-      {
+      "NoVolumeImage": {
         "Type": "Struct SlateBrush",
-        "Name": "NoVolumeImage",
         "Size": "0x90",
         "Offset": "0x400"
       },
-      {
+      "MutedImage": {
         "Type": "Struct SlateBrush",
-        "Name": "MutedImage",
         "Size": "0x90",
         "Offset": "0x490"
       }
-    ]
+    }
   },
   "SliderStyle": {
     "ClassSize": "0x248",
-    "Attributes": [
-      {
+    "Attributes": {
+      "NormalBarImage": {
         "Type": "Struct SlateBrush",
-        "Name": "NormalBarImage",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "DisabledBarImage": {
         "Type": "Struct SlateBrush",
-        "Name": "DisabledBarImage",
         "Size": "0x90",
         "Offset": "0x98"
       },
-      {
+      "NormalThumbImage": {
         "Type": "Struct SlateBrush",
-        "Name": "NormalThumbImage",
         "Size": "0x90",
         "Offset": "0x128"
       },
-      {
+      "DisabledThumbImage": {
         "Type": "Struct SlateBrush",
-        "Name": "DisabledThumbImage",
         "Size": "0x90",
         "Offset": "0x1b8"
       }
-    ]
+    }
   },
   "SearchBoxStyle": {
     "ClassSize": "0xb00",
-    "Attributes": [
-      {
+    "Attributes": {
+      "TextBoxStyle": {
         "Type": "Struct EditableTextBoxStyle",
-        "Name": "TextBoxStyle",
         "Size": "0x860",
         "Offset": "0x8"
       },
-      {
+      "ActiveFontInfo": {
         "Type": "Struct SlateFontInfo",
-        "Name": "ActiveFontInfo",
         "Size": "0x40",
         "Offset": "0x868"
       },
-      {
+      "UpArrowImage": {
         "Type": "Struct SlateBrush",
-        "Name": "UpArrowImage",
         "Size": "0x90",
         "Offset": "0x8a8"
       },
-      {
+      "DownArrowImage": {
         "Type": "Struct SlateBrush",
-        "Name": "DownArrowImage",
         "Size": "0x90",
         "Offset": "0x938"
       },
-      {
+      "GlassImage": {
         "Type": "Struct SlateBrush",
-        "Name": "GlassImage",
         "Size": "0x90",
         "Offset": "0x9c8"
       },
-      {
+      "ClearImage": {
         "Type": "Struct SlateBrush",
-        "Name": "ClearImage",
         "Size": "0x90",
         "Offset": "0xa58"
       },
-      {
+      "ImagePadding": {
         "Type": "Struct Margin",
-        "Name": "ImagePadding",
         "Size": "0x10",
         "Offset": "0xae8"
       },
-      {
+      "bLeftAlignButtons": {
         "Type": "bool",
-        "Name": "bLeftAlignButtons",
         "Size": "0x1",
         "Offset": "0xaf8"
       }
-    ]
+    }
   },
   "ExpandableAreaStyle": {
     "ClassSize": "0x128",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CollapsedImage": {
         "Type": "Struct SlateBrush",
-        "Name": "CollapsedImage",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "ExpandedImage": {
         "Type": "Struct SlateBrush",
-        "Name": "ExpandedImage",
         "Size": "0x90",
         "Offset": "0x98"
       }
-    ]
+    }
   },
   "ProgressBarStyle": {
     "ClassSize": "0x1b8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "BackgroundImage": {
         "Type": "Struct SlateBrush",
-        "Name": "BackgroundImage",
         "Size": "0x90",
         "Offset": "0x8"
       },
-      {
+      "FillImage": {
         "Type": "Struct SlateBrush",
-        "Name": "FillImage",
         "Size": "0x90",
         "Offset": "0x98"
       },
-      {
+      "MarqueeImage": {
         "Type": "Struct SlateBrush",
-        "Name": "MarqueeImage",
         "Size": "0x90",
         "Offset": "0x128"
       }
-    ]
+    }
   },
   "InlineEditableTextBlockStyle": {
     "ClassSize": "0x9c8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "EditableTextBoxStyle": {
         "Type": "Struct EditableTextBoxStyle",
-        "Name": "EditableTextBoxStyle",
         "Size": "0x860",
         "Offset": "0x8"
       },
-      {
+      "TextStyle": {
         "Type": "Struct TextBlockStyle",
-        "Name": "TextStyle",
         "Size": "0x160",
         "Offset": "0x868"
       }
-    ]
+    }
   },
   "HyperlinkStyle": {
     "ClassSize": "0x420",
-    "Attributes": [
-      {
+    "Attributes": {
+      "UnderlineStyle": {
         "Type": "Struct ButtonStyle",
-        "Name": "UnderlineStyle",
         "Size": "0x2a8",
         "Offset": "0x8"
       },
-      {
+      "TextStyle": {
         "Type": "Struct TextBlockStyle",
-        "Name": "TextStyle",
         "Size": "0x160",
         "Offset": "0x2b0"
       },
-      {
+      "Padding": {
         "Type": "Struct Margin",
-        "Name": "Padding",
         "Size": "0x10",
         "Offset": "0x410"
       }
-    ]
+    }
   },
   "CheckBoxStyle": {
     "ClassSize": "0x5f0",
-    "Attributes": [
-      {
+    "Attributes": {
+      "CheckBoxType": {
         "Type": "byte",
-        "Name": "CheckBoxType",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      {
+      "UncheckedImage": {
         "Type": "Struct SlateBrush",
-        "Name": "UncheckedImage",
         "Size": "0x90",
         "Offset": "0x10"
       },
-      {
+      "UncheckedHoveredImage": {
         "Type": "Struct SlateBrush",
-        "Name": "UncheckedHoveredImage",
         "Size": "0x90",
         "Offset": "0xa0"
       },
-      {
+      "UncheckedPressedImage": {
         "Type": "Struct SlateBrush",
-        "Name": "UncheckedPressedImage",
         "Size": "0x90",
         "Offset": "0x130"
       },
-      {
+      "CheckedImage": {
         "Type": "Struct SlateBrush",
-        "Name": "CheckedImage",
         "Size": "0x90",
         "Offset": "0x1c0"
       },
-      {
+      "CheckedHoveredImage": {
         "Type": "Struct SlateBrush",
-        "Name": "CheckedHoveredImage",
         "Size": "0x90",
         "Offset": "0x250"
       },
-      {
+      "CheckedPressedImage": {
         "Type": "Struct SlateBrush",
-        "Name": "CheckedPressedImage",
         "Size": "0x90",
         "Offset": "0x2e0"
       },
-      {
+      "UndeterminedImage": {
         "Type": "Struct SlateBrush",
-        "Name": "UndeterminedImage",
         "Size": "0x90",
         "Offset": "0x370"
       },
-      {
+      "UndeterminedHoveredImage": {
         "Type": "Struct SlateBrush",
-        "Name": "UndeterminedHoveredImage",
         "Size": "0x90",
         "Offset": "0x400"
       },
-      {
+      "UndeterminedPressedImage": {
         "Type": "Struct SlateBrush",
-        "Name": "UndeterminedPressedImage",
         "Size": "0x90",
         "Offset": "0x490"
       },
-      {
+      "Padding": {
         "Type": "Struct Margin",
-        "Name": "Padding",
         "Size": "0x10",
         "Offset": "0x520"
       },
-      {
+      "ForegroundColor": {
         "Type": "Struct SlateColor",
-        "Name": "ForegroundColor",
         "Size": "0x30",
         "Offset": "0x530"
       },
-      {
+      "BorderBackgroundColor": {
         "Type": "Struct SlateColor",
-        "Name": "BorderBackgroundColor",
         "Size": "0x30",
         "Offset": "0x560"
       },
-      {
+      "CheckedSlateSound": {
         "Type": "Struct SlateSound",
-        "Name": "CheckedSlateSound",
         "Size": "0x18",
         "Offset": "0x590"
       },
-      {
+      "UncheckedSlateSound": {
         "Type": "Struct SlateSound",
-        "Name": "UncheckedSlateSound",
         "Size": "0x18",
         "Offset": "0x5a8"
       },
-      {
+      "HoveredSlateSound": {
         "Type": "Struct SlateSound",
-        "Name": "HoveredSlateSound",
         "Size": "0x18",
         "Offset": "0x5c0"
       },
-      {
+      "CheckedSound": {
         "Type": "struct FName",
-        "Name": "CheckedSound",
         "Size": "0x8",
         "Offset": "0x5d8"
       },
-      {
+      "UncheckedSound": {
         "Type": "struct FName",
-        "Name": "UncheckedSound",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
-      {
+      "HoveredSound": {
         "Type": "struct FName",
-        "Name": "HoveredSound",
         "Size": "0x8",
         "Offset": "0x5e8"
       }
-    ]
+    }
   },
   "NavigationEvent": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": {}
   },
   "MotionEvent": {
     "ClassSize": "0x58",
-    "Attributes": []
+    "Attributes": {}
   },
   "ControllerEvent": {
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": {}
   },
   "CharacterEvent": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": {}
   },
   "AnalogInputEvent": {
     "ClassSize": "0x58",
-    "Attributes": []
+    "Attributes": {}
   },
   "KeyEvent": {
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": {}
   },
   "FocusEvent": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": {}
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }

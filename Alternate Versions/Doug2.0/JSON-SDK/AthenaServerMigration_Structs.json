@@ -1,202 +1,185 @@
 {
   "IncomingMigrationPreventionZone": {
     "ClassSize": "0xc",
-    "Attributes": [
-      {
+    "Attributes": {
+      "Location": {
         "Type": "Struct Vector2D",
-        "Name": "Location",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      {
+      "Radius": {
         "Type": "float",
-        "Name": "Radius",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    ]
+    }
   },
   "ServerMigrationSetupCompleteEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "ServerMigrationSetupRequestEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "ServerMigrationReadyToTransferActors": {
     "ClassSize": "0x90",
-    "Attributes": []
+    "Attributes": {}
   },
   "PrepareForWorldSwitchRpc": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": {}
   },
   "ServerMigrationAboutToStartEvent": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": {}
   },
   "ServerMigrationConfigChangedEvent": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": {}
   },
   "ServerMigrationAbortEvent": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": {}
   },
   "ServerMigrationCompleteEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": {}
   },
   "ServerMigrationHeartbeatEvent": {
     "ClassSize": "0x78",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ServerId": {
         "Type": "Struct Guid",
-        "Name": "ServerId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "ServerLocation": {
         "Type": "Struct FString",
-        "Name": "ServerLocation",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "GameEndpoint": {
         "Type": "Struct FString",
-        "Name": "GameEndpoint",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      {
+      "MigrationEndpoint": {
         "Type": "Struct FString",
-        "Name": "MigrationEndpoint",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      {
+      "CrewsMigrationStatus": {
         "Type": "TArray<Struct ServerMigrationCrewMigrationStatus>",
-        "Name": "CrewsMigrationStatus",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      {
+      "SequenceId": {
         "Type": "int",
-        "Name": "SequenceId",
         "Size": "0x4",
         "Offset": "0x50"
       },
-      {
+      "ServerUptime": {
         "Type": "Struct Timespan",
-        "Name": "ServerUptime",
         "Size": "0x8",
         "Offset": "0x58"
       },
-      {
+      "ExpectedServerLifetime": {
         "Type": "Struct Timespan",
-        "Name": "ExpectedServerLifetime",
         "Size": "0x8",
         "Offset": "0x60"
       },
-      {
+      "MessageInterval": {
         "Type": "Struct Timespan",
-        "Name": "MessageInterval",
         "Size": "0x8",
         "Offset": "0x68"
       },
-      {
+      "ContestMatchmaking": {
         "Type": "bool",
-        "Name": "ContestMatchmaking",
         "Size": "0x1",
         "Offset": "0x70"
       }
-    ]
+    }
   },
   "ServerMigrationRefusedEvent": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MigrationId": {
         "Type": "Struct Guid",
-        "Name": "MigrationId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "CrewId": {
         "Type": "Struct Guid",
-        "Name": "CrewId",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "OutgoingServerMigrationAbortedEvent": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": {}
   },
   "ServerMigrationInstanceEventBase": {
     "ClassSize": "0x20",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ServerId": {
         "Type": "Struct Guid",
-        "Name": "ServerId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "MigrationId": {
         "Type": "Struct Guid",
-        "Name": "MigrationId",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    ]
+    }
   },
   "OutgoingServerMigrationCompletedEvent": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": {}
   },
   "OutgoingServerMigrationStartedEvent": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": {}
   },
   "ServerMigrationSetServerConfigMessage": {
     "ClassSize": "0x8",
-    "Attributes": [
-      {
+    "Attributes": {
+      "ExpectedServerLifetime": {
         "Type": "Struct Timespan",
-        "Name": "ExpectedServerLifetime",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    ]
+    }
   },
   "ServerMigrationRequestEvent": {
     "ClassSize": "0x40",
-    "Attributes": [
-      {
+    "Attributes": {
+      "MigrationId": {
         "Type": "Struct Guid",
-        "Name": "MigrationId",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
+      "DestinationAddress": {
         "Type": "Struct FString",
-        "Name": "DestinationAddress",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      {
+      "CrewId": {
         "Type": "Struct Guid",
-        "Name": "CrewId",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      {
+      "SubMode": {
         "Type": "Struct FString",
-        "Name": "SubMode",
         "Size": "0x10",
         "Offset": "0x30"
       }
-    ]
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
   }
 }
