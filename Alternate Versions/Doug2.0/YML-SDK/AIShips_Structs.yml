@@ -1,0 +1,726 @@
+AIShipBattleEncounterDescGenerationParams:
+  Attributes:
+  - Name: EnableHardShip
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: BattleGenerationParams
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct FeatureLockedAIShipEncounterBattleGenerationParams>
+  - Name: BattleDescs
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct AIShipEncounterBattleDesc>
+  ClassSize: '0x28'
+AIShipBattleParams:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: Location
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Radius
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x48'
+AIShipCaptainParams:
+  Attributes:
+  - Name: AIClassId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Name
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x10'
+AIShipClassWeightedSizes:
+  Attributes:
+  - Name: TargetShipSize
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: ShipSizes
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct AIShipWeightedSize>
+  ClassSize: '0x18'
+AIShipContextDescDamageParams:
+  Attributes:
+  - Name: OverrideRainFillRate
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OverrideRepairTime
+    Offset: '0x4'
+    Size: '0x1'
+    Type: bool
+  - Name: RepairTimeMultiplier
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: OverrideLeakAmounts
+    Offset: '0xc'
+    Size: '0x1'
+    Type: bool
+  - Name: LeakAmountMultiplier
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
+AIShipContextDescGenerationParams:
+  Attributes:
+  - Name: SharedParams
+    Offset: '0x0'
+    Size: '0x60'
+    Type: Struct AIShipContextDescGenerationSharedParams
+  - Name: EncounterSpecificParams
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<Struct AIShipContextDescGenerationSharedParams>
+  - Name: ShipSpecificParams
+    Offset: '0x70'
+    Size: '0x10'
+    Type: TArray<Struct AIShipContextDescGenerationShipSpecificParams>
+  ClassSize: '0x80'
+AIShipContextDescGenerationSharedParams:
+  Attributes:
+  - Name: EncounterTypes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Byte SharedParams>
+  - Name: SkeletonForms
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct EncounterTypes>
+  - Name: SkeletonAmmoTypes
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct SkeletonForms>
+  - Name: SailColours
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct SkeletonAmmoTypes>
+  - Name: Captains
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Struct AIShipCaptainParams>
+  - Name: CaptainGenders
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<Class Captains>
+  ClassSize: '0x60'
+AIShipContextDescGenerationShipSpecificParams:
+  Attributes:
+  - Name: ShipSize
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: ShipDesc
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ShipDescAsset*
+  - Name: ShipGenerationParams
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct AIShipGenerationParams>
+  - Name: SpawnerTemplates
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct ShipGenerationParams>
+  ClassSize: '0x30'
+AIShipCrewAmmoType:
+  Attributes:
+  - Name: IconType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: AmmoType
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x18'
+AIShipCrewFormType:
+  Attributes:
+  - Name: IconType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: IconColour
+    Offset: '0x4'
+    Size: '0x4'
+    Type: Struct Color
+  - Name: Form
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x20'
+AIShipDamagedTelemetryEvent:
+  Attributes:
+  - Name: DamageType
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DamageLocation
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: DamagedShipPart
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DamageLevel
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  - Name: AttackId
+    Offset: '0x34'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x48'
+AIShipDespawnTelemetryEvent:
+  Attributes:
+  - Name: AIShipId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: AIShipDestructionReason
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x18'
+AIShipDespawnedEvent:
+  Attributes:
+  - Name: Ship
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ShipDestructionReason
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x10'
+AIShipEncounterBattleDesc:
+  Attributes:
+  - Name: WaveDescs
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct AIShipEncounterWaveDesc>
+  ClassSize: '0x10'
+AIShipEncounterBattleGenerationParams:
+  Attributes:
+  - Name: HardShipType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: NumberOfWaves
+    Offset: '0x8'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: MinMaxNumberOfShips
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct Int32Range
+  - Name: MinNumberOfShipsInFinalWave
+    Offset: '0x38'
+    Size: '0x4'
+    Type: int
+  - Name: ShipSizeLimits
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Struct AIShipSizeLimit>
+  - Name: WaveConfigurations
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<Struct ShipSizeLimits>
+  ClassSize: '0x60'
+AIShipEncounterCompleteNetEvent:
+  Attributes:
+  - Name: BattleIdx
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: CannonballIconType
+    Offset: '0x14'
+    Size: '0x1'
+    Type: byte
+  - Name: SkellyFormIconType
+    Offset: '0x15'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x18'
+AIShipEncounterNotification:
+  Attributes:
+  - Name: BattleName
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: SeaName
+    Offset: '0x38'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SkellyCrewName
+    Offset: '0x40'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: CannonBallType
+    Offset: '0x78'
+    Size: '0x1'
+    Type: byte
+  - Name: SkellyType
+    Offset: '0x79'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x80'
+AIShipEncounterParams:
+  Attributes:
+  - Name: MinEngagedDistanceFromPlayers
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: ShipTypeParams
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct ShipTypeAIShipEncounterParams>
+  ClassSize: '0x18'
+AIShipEncounterParamsSpawnerData:
+  Attributes:
+  - Name: Spawner
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class AISpawner*
+  - Name: SpawnLocationType
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ShipPlayerTrackerType
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  - Name: CaptainName
+    Offset: '0x14'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CanRepairDamage
+    Offset: '0x1c'
+    Size: '0x1'
+    Type: bool
+  - Name: CanUseCannons
+    Offset: '0x1d'
+    Size: '0x1'
+    Type: bool
+  - Name: IsCaptain
+    Offset: '0x1e'
+    Size: '0x1'
+    Type: bool
+  - Name: BelowDeck
+    Offset: '0x1f'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x20'
+AIShipEncounterRevealNetEvent:
+  Attributes:
+  - Name: BattleIdx
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: SkellyCrewIdx
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
+  - Name: CannonballIconType
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
+  - Name: SkellyFormIconType
+    Offset: '0x19'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x20'
+AIShipEncounterWave:
+  Attributes:
+  - Name: AIShipsInWave
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class AIShipsInWave*>
+  ClassSize: '0x10'
+AIShipEncounterWaveDesc:
+  Attributes:
+  - Name: ShipSizes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Class BattleGenerationParams>
+  ClassSize: '0x10'
+AIShipEncounterZoneEnteredNetworkEvent:
+  Attributes:
+  - Name: RemainingAIShips
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: TotalAIShips
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
+  - Name: TotalAIShipsInFinalWave
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
+AIShipEncounterZoneExitedNetworkEvent:
+  Attributes: []
+  ClassSize: '0x10'
+AIShipGenerationParams:
+  Attributes:
+  - Name: EncounterType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: ShipType
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: ShipControllerParams
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class AthenaAIShipControllerParamsDataAsset*
+  - Name: SkillsetOverrides
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct AIShipSkeletonSkillsetOverride>
+  - Name: SkeletonAmmoTypeOverrides
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct SkillsetOverrides>
+  - Name: DamageParams
+    Offset: '0x30'
+    Size: '0x14'
+    Type: Struct AIShipContextDescDamageParams
+  ClassSize: '0x48'
+AIShipSailData:
+  Attributes:
+  - Name: SailRGB
+    Offset: '0x0'
+    Size: '0x4'
+    Type: Struct Color
+  - Name: IconRGB
+    Offset: '0x4'
+    Size: '0x4'
+    Type: Struct Color
+  - Name: CrewIndex
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: CursedCannonballIndex
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
+AIShipSingleWaveEncounterDescGenerationParams:
+  Attributes:
+  - Name: ShipClassWeightedSizes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct AIShipClassWeightedSizes>
+  ClassSize: '0x10'
+AIShipSinkNetworkEvent:
+  Attributes: []
+  ClassSize: '0x10'
+AIShipSizeLimit:
+  Attributes:
+  - Name: ShipSize
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: MaxInstances
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
+AIShipSkeletonSkillsetOverride:
+  Attributes:
+  - Name: SpawnLocationType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Skillset
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x18'
+AIShipSpawnTelemetryEvent:
+  Attributes:
+  - Name: AIShipId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SpawningCrewId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: AIShipBattleId
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: AIShipType
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SpawnConfigId
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: AIShipSize
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: AIShipWaveIndex
+    Offset: '0x60'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x68'
+AIShipSpawnedEvent:
+  Attributes:
+  - Name: Ship
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Ship*
+  - Name: SpawningCrew
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: SpawningEventId
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: SpawnConfigId
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Wave
+    Offset: '0x38'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x40'
+AIShipSpawnedNetworkEvent:
+  Attributes: []
+  ClassSize: '0x10'
+AIShipWeightedSize:
+  Attributes:
+  - Name: Feature
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Weight
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: ShipSize
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x18'
+AIShipWorldSettings:
+  Attributes:
+  - Name: FeatureToggledBattlesData
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct FeatureLockedAIShipBattles>
+  - Name: DefaultBattlesData
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class AIShipBattlesDataAsset*
+  ClassSize: '0x18'
+CursedSailsBattleParams:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: SkellyCrewName
+    Offset: '0x38'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: CannonBallType
+    Offset: '0x70'
+    Size: '0x1'
+    Type: byte
+  - Name: SkellyType
+    Offset: '0x71'
+    Size: '0x1'
+    Type: byte
+  - Name: EncounterDescription
+    Offset: '0x78'
+    Size: '0x8'
+    Type: Class AIShipEncounterDesc*
+  ClassSize: '0x80'
+FeatureLockedAIShipBattles:
+  Attributes:
+  - Name: Feature
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct FeatureFlag
+  - Name: BattlesData
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class AIShipBattlesDataAsset*
+  ClassSize: '0x10'
+FeatureLockedAIShipEncounterBattleGenerationParams:
+  Attributes:
+  - Name: Feature
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Params
+    Offset: '0x8'
+    Size: '0x60'
+    Type: Struct AIShipEncounterBattleGenerationParams
+  ClassSize: '0x78'
+RelativeSpawnLocationGeneratorParams:
+  Attributes:
+  - Name: SpawnDirections
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct WeightedSpawnDirection>
+  ClassSize: '0xa0'
+ShipMovementParams:
+  Attributes:
+  - Name: MinTargetDistanceForMovement
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: MaxTurnAngle
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: MaxTurnAngleForObstacleAvoidance
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: MaxTurnAngleForPlayerShipObstacleAvoidance
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: MinTurnSpeedScaler
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: MaxSpeed
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: MinSpeed
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: TimeToAccelerateFromZeroToMaxSpeed
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: TimeToAccelerateFromZeroToMaxTurnSpeed
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: MoveBackwardsAngleThreshold
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  - Name: MoveBackwardsDistanceThreshold
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: MoveBackwardsShipSpeedThreshold
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  - Name: MaxObstacleAvoidanceOverrideDistance
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x34'
+ShipTypeAIShipEncounterParams:
+  Attributes:
+  - Name: ShipSize
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Params
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class AIShipEncounterParamsDataAsset*
+  ClassSize: '0x10'
+TrackingNoiseGenerator:
+  Attributes:
+  - Name: ParallelOffsetCurve
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: OscillationTime
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x18'
+WeightedAIShipCrewAmmoType:
+  Attributes:
+  - Name: Weight
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Params
+    Offset: '0x8'
+    Size: '0x18'
+    Type: Struct AIShipCrewAmmoType
+  ClassSize: '0x20'
+WeightedAIShipCrewFormType:
+  Attributes:
+  - Name: Weight
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Params
+    Offset: '0x8'
+    Size: '0x20'
+    Type: Struct AIShipCrewFormType
+  ClassSize: '0x28'
+WeightedSpawnDirection:
+  Attributes:
+  - Name: DirectionAngle
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: DirectionWidth
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Weight
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: SpawnOffsets
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct WeightedSpawnOffset>
+  ClassSize: '0xb0'
+WeightedSpawnOffset:
+  Attributes:
+  - Name: MinSpawnDistance
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: MaxSpawnDistance
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Weight
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: SpawnRotations
+    Offset: '0x10'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  ClassSize: '0x40'

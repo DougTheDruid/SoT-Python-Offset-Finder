@@ -1,0 +1,164 @@
+BP_IslandStorageBarrel_Double_01_a_C:
+  Attributes:
+  - Name: cmn_looted_box_01_a
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: BP_IslandStorageBarrel_02
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: BP_IslandStorageBarrel_01
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: SharedRoot
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x20'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3d0'
+  Super: Actor
+BP_IslandStorageBarrel_Double_02_a_C:
+  Attributes:
+  - Name: cmn_broken_shovel_01_b
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: cmn_broken_shovel_01_a
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: shp_rope_coil_03_a
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: cmn_looted_box_01_a
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: BP_IslandStorageBarrel_02
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: BP_IslandStorageBarrel_01
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: SharedRoot
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x38'
+  FullSize: '0x408'
+  InheritedSize: '0x3d0'
+  Super: Actor
+BP_IslandStorageBarrel_Double_03_a_C:
+  Attributes:
+  - Name: shp_rope_coil_03_a
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMesh
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: cmn_driftwood_04_a
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: cmn_driftwood_03_a
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: BP_IslandStorageBarrel_02
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: BP_IslandStorageBarrel_01
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: SharedRoot
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x38'
+  FullSize: '0x408'
+  InheritedSize: '0x3d0'
+  Super: Actor
+BP_IslandStorageBarrel_Single_01_a_C:
+  Attributes:
+  - Name: shp_rope_coil_03_a
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: BP_IslandStorageBarrel_01
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: SharedRoot
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x18'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+BP_IslandStorageBarrel_Single_02_a_C:
+  Attributes:
+  - Name: cmn_bottle_01_a2
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: cmn_bottle_01_a1
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: cmn_bottle_01_a
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: BP_IslandStorageBarrel_01
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: SharedRoot
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x28'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+BP_IslandStorageBarrel_Triple_01_a_C:
+  Attributes:
+  - Name: cmn_barrel_debris_03_a
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: cmn_driftwood_03_b
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: BP_IslandStorageBarrel_03
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: BP_IslandStorageBarrel_02
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: BP_IslandStorageBarrel_01
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: SharedRoot
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x30'
+  FullSize: '0x400'
+  InheritedSize: '0x3d0'
+  Super: Actor

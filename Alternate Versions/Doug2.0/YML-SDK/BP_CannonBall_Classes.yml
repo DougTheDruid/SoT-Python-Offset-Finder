@@ -1,0 +1,18 @@
+BP_CannonBall_C:
+  Attributes:
+  - Name: UsableWieldable
+    Offset: '0x7a0'
+    Size: '0x8'
+    Type: Class UsableWieldableComponent*
+  - Name: WieldableInteractable
+    Offset: '0x7a8'
+    Size: '0x8'
+    Type: Class WieldableInteractableComponent*
+  - Name: Pickupable
+    Offset: '0x7b0'
+    Size: '0x8'
+    Type: Class PickupableComponent*
+  ClassSize: '0x18'
+  FullSize: '0x7b8'
+  InheritedSize: '0x7a0'
+  Super: CannonBall

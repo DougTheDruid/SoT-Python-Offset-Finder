@@ -1,0 +1,110 @@
+ButtonWidgetStyle:
+  Attributes:
+  - Name: ButtonStyle
+    Offset: '0x30'
+    Size: '0x2a8'
+    Type: Struct ButtonStyle
+  ClassSize: '0x2a8'
+  FullSize: '0x2d8'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+CheckBoxWidgetStyle:
+  Attributes:
+  - Name: CheckBoxStyle
+    Offset: '0x30'
+    Size: '0x5f0'
+    Type: Struct CheckBoxStyle
+  ClassSize: '0x5f0'
+  FullSize: '0x620'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+ComboBoxWidgetStyle:
+  Attributes:
+  - Name: ComboBoxStyle
+    Offset: '0x30'
+    Size: '0x428'
+    Type: Struct ComboBoxStyle
+  ClassSize: '0x428'
+  FullSize: '0x458'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+ComboButtonWidgetStyle:
+  Attributes:
+  - Name: ComboButtonStyle
+    Offset: '0x30'
+    Size: '0x3e0'
+    Type: Struct ComboButtonStyle
+  ClassSize: '0x3e0'
+  FullSize: '0x410'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+EditableTextBoxWidgetStyle:
+  Attributes:
+  - Name: EditableTextBoxStyle
+    Offset: '0x30'
+    Size: '0x860'
+    Type: Struct EditableTextBoxStyle
+  ClassSize: '0x860'
+  FullSize: '0x890'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+EditableTextWidgetStyle:
+  Attributes:
+  - Name: EditableTextStyle
+    Offset: '0x30'
+    Size: '0x228'
+    Type: Struct EditableTextStyle
+  ClassSize: '0x228'
+  FullSize: '0x258'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+ProgressWidgetStyle:
+  Attributes:
+  - Name: ProgressBarStyle
+    Offset: '0x30'
+    Size: '0x1b8'
+    Type: Struct ProgressBarStyle
+  ClassSize: '0x1b8'
+  FullSize: '0x1e8'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+ScrollBarWidgetStyle:
+  Attributes:
+  - Name: ScrollBarStyle
+    Offset: '0x30'
+    Size: '0x518'
+    Type: Struct ScrollBarStyle
+  ClassSize: '0x518'
+  FullSize: '0x548'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+ScrollBoxWidgetStyle:
+  Attributes:
+  - Name: ScrollBoxStyle
+    Offset: '0x30'
+    Size: '0x248'
+    Type: Struct ScrollBoxStyle
+  ClassSize: '0x248'
+  FullSize: '0x278'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+SpinBoxWidgetStyle:
+  Attributes:
+  - Name: SpinBoxStyle
+    Offset: '0x30'
+    Size: '0x318'
+    Type: Struct SpinBoxStyle
+  ClassSize: '0x318'
+  FullSize: '0x348'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase
+TextBlockWidgetStyle:
+  Attributes:
+  - Name: TextBlockStyle
+    Offset: '0x30'
+    Size: '0x160'
+    Type: Struct TextBlockStyle
+  ClassSize: '0x160'
+  FullSize: '0x190'
+  InheritedSize: '0x30'
+  Super: SlateWidgetStyleContainerBase

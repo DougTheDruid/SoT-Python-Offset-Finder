@@ -1,0 +1,30 @@
+wld_bush_cluster_03_a_C:
+  Attributes:
+  - Name: wsp_bush_07_a_02
+    Offset: '0x410'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wsp_bush_05_a
+    Offset: '0x418'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMesh15
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMesh16
+    Offset: '0x428'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wsp_bush_07_a_01
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Scene
+    Offset: '0x438'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x30'
+  FullSize: '0x440'
+  InheritedSize: '0x410'
+  Super: BP_Placement_HeightDrop_C

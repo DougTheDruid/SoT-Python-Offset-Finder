@@ -1,0 +1,14 @@
+BP_ShipAmmoChest_C:
+  Attributes:
+  - Name: AddCrewLockableActionRule
+    Offset: '0x4a8'
+    Size: '0x8'
+    Type: Class AddCrewLockableActionRuleComponent*
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+    Offset: '0x4b0'
+    Size: '0x8'
+    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
+  ClassSize: '0x10'
+  FullSize: '0x4b8'
+  InheritedSize: '0x4a8'
+  Super: BP_AmmoChest_C

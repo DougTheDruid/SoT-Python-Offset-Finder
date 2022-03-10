@@ -1,0 +1,52 @@
+CreateActorInstanceOnExplodeComponent:
+  Attributes:
+  - Name: ActorToInstance
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x60'
+  FullSize: '0x128'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+ExplosionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ExplosionReceiverInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ExplosiveComponentInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+FuseInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+StatusResponseExplodeAfterTime:
+  Attributes:
+  - Name: MinTimeUntilExplosion
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: MaxTimeUntilExplosion
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  - Name: CachedWorld
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class World*
+  ClassSize: '0x18'
+  FullSize: '0x48'
+  InheritedSize: '0x30'
+  Super: StatusResponse

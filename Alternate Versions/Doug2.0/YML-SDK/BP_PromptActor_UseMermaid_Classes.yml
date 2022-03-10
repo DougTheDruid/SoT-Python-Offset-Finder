@@ -1,0 +1,14 @@
+BP_PromptActor_UseMermaid_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_UseAMermaid_C*
+  ClassSize: '0x10'
+  FullSize: '0x418'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C

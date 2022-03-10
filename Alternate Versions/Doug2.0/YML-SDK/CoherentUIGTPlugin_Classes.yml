@@ -1,0 +1,342 @@
+CoherentUIGTAssetReferencer:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+CoherentUIGTBaseComponent:
+  Attributes:
+  - Name: Texture
+    Offset: '0x170'
+    Size: '0x8'
+    Type: Class TextureRenderTarget2D*
+  - Name: Filter
+    Offset: '0x178'
+    Size: '0x1'
+    Type: byte
+  - Name: bReceiveInput
+    Offset: '0x179'
+    Size: '0x1'
+    Type: bool
+  - Name: bReceiveInputWhenTransparent
+    Offset: '0x17a'
+    Size: '0x1'
+    Type: bool
+  - Name: AllowPerformanceWarnings
+    Offset: '0x17b'
+    Size: '0x1'
+    Type: bool
+  - Name: ExecuteJSTimersThresholdMs
+    Offset: '0x17c'
+    Size: '0x4'
+    Type: float
+  - Name: UpdateStylesAndLayoutThresholdMs
+    Offset: '0x180'
+    Size: '0x4'
+    Type: float
+  - Name: RecordRenderingCommandsThresholdMs
+    Offset: '0x184'
+    Size: '0x4'
+    Type: float
+  - Name: PaintWarningThresholdMs
+    Offset: '0x188'
+    Size: '0x4'
+    Type: float
+  - Name: LayersCountThreshold
+    Offset: '0x18c'
+    Size: '0x4'
+    Type: int
+  - Name: LayerWidthThreshold
+    Offset: '0x190'
+    Size: '0x4'
+    Type: int
+  - Name: LayerHeightThreshold
+    Offset: '0x194'
+    Size: '0x4'
+    Type: int
+  - Name: bEnableAdditionalDefaultStyles
+    Offset: '0x198'
+    Size: '0x1'
+    Type: bool
+  - Name: bDelayedUpdate
+    Offset: '0x199'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x248'
+  FullSize: '0x310'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+CoherentUIGTBlueprintFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+CoherentUIGTComponent:
+  Attributes:
+  - Name: URL
+    Offset: '0x310'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Width
+    Offset: '0x320'
+    Size: '0x4'
+    Type: int
+  - Name: Height
+    Offset: '0x324'
+    Size: '0x4'
+    Type: int
+  - Name: ManualTexture
+    Offset: '0x328'
+    Size: '0x1'
+    Type: bool
+  - Name: ClickThroughAlphaThreshold
+    Offset: '0x32c'
+    Size: '0x4'
+    Type: float
+  - Name: Transparent
+    Offset: '0x330'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x38'
+  FullSize: '0x348'
+  InheritedSize: '0x310'
+  Super: CoherentUIGTBaseComponent
+CoherentUIGTEventHelpers:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+CoherentUIGTGameHUD:
+  Attributes:
+  - Name: CoherentUIGTHUD
+    Offset: '0x4c8'
+    Size: '0x8'
+    Type: Class CoherentUIGTHUD*
+  ClassSize: '0x98'
+  FullSize: '0x560'
+  InheritedSize: '0x4c8'
+  Super: HUD
+CoherentUIGTHUD:
+  Attributes:
+  - Name: HUDMaterialName
+    Offset: '0x310'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: HUDMaterial
+    Offset: '0x320'
+    Size: '0x8'
+    Type: Class Material*
+  - Name: HUDMaterialInstance
+    Offset: '0x328'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  ClassSize: '0x28'
+  FullSize: '0x338'
+  InheritedSize: '0x310'
+  Super: CoherentUIGTBaseComponent
+CoherentUIGTInputActor:
+  Attributes: []
+  ClassSize: '0x60'
+  FullSize: '0x430'
+  InheritedSize: '0x3d0'
+  Super: Actor
+CoherentUIGTJSEvent:
+  Attributes:
+  - Name: StructTypes
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: TArray<class StructTypes*>
+  ClassSize: '0x90'
+  FullSize: '0xb8'
+  InheritedSize: '0x28'
+  Super: Object
+CoherentUIGTJSPayload:
+  Attributes:
+  - Name: EventName
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: Object
+CoherentUIGTLiveView:
+  Attributes:
+  - Name: LinkName
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Texture
+    Offset: '0xd8'
+    Size: '0x8'
+    Type: Class TextureRenderTarget2D*
+  ClassSize: '0x30'
+  FullSize: '0xf8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+CoherentUIGTRenderToTextureLiveView:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x100'
+  InheritedSize: '0xf8'
+  Super: CoherentUIGTLiveView
+CoherentUIGTSettings:
+  Attributes:
+  - Name: EnableLiveReload
+    Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  - Name: InspectorPort
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: int
+  - Name: WebdriverPort
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  - Name: EnableWebSecurity
+    Offset: '0x34'
+    Size: '0x1'
+    Type: bool
+  - Name: EnableLocalization
+    Offset: '0x35'
+    Size: '0x1'
+    Type: bool
+  - Name: RunAsynchronous
+    Offset: '0x36'
+    Size: '0x1'
+    Type: bool
+  - Name: bRecursivelyBindUStructs
+    Offset: '0x37'
+    Size: '0x1'
+    Type: bool
+  - Name: LoadSystemFonts
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  - Name: AllowPerformanceWarningsInEditor
+    Offset: '0x39'
+    Size: '0x1'
+    Type: bool
+  - Name: ShowWarningsOnScreen
+    Offset: '0x3a'
+    Size: '0x1'
+    Type: bool
+  - Name: LogSeverity
+    Offset: '0x3b'
+    Size: '0x1'
+    Type: byte
+  - Name: bPaintToBackBuffer
+    Offset: '0x3c'
+    Size: '0x1'
+    Type: bool
+  - Name: bRespectTitleSafeZone
+    Offset: '0x3d'
+    Size: '0x1'
+    Type: bool
+  - Name: bRespectLetterboxing
+    Offset: '0x3e'
+    Size: '0x1'
+    Type: bool
+  - Name: HUDMaterialName
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CoUIResourcesRoot
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: TickWhileGameIsPaused
+    Offset: '0x60'
+    Size: '0x1'
+    Type: bool
+  - Name: MSAA
+    Offset: '0x61'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x40'
+  FullSize: '0x68'
+  InheritedSize: '0x28'
+  Super: Object
+CoherentUIGTSystem:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0x420'
+  InheritedSize: '0x3d0'
+  Super: Actor
+CoherentUIGTWidget:
+  Attributes:
+  - Name: Owner
+    Offset: '0x158'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Filter
+    Offset: '0x1f8'
+    Size: '0x1'
+    Type: byte
+  - Name: bReceiveInput
+    Offset: '0x1f9'
+    Size: '0x1'
+    Type: bool
+  - Name: bReceiveInputWhenTransparent
+    Offset: '0x1fa'
+    Size: '0x1'
+    Type: bool
+  - Name: bGammaCorrectedMaterial
+    Offset: '0x1fb'
+    Size: '0x1'
+    Type: bool
+  - Name: AllowPerformanceWarnings
+    Offset: '0x1fc'
+    Size: '0x1'
+    Type: bool
+  - Name: ExecuteJSTimersThresholdMs
+    Offset: '0x200'
+    Size: '0x4'
+    Type: float
+  - Name: UpdateStylesAndLayoutThresholdMs
+    Offset: '0x204'
+    Size: '0x4'
+    Type: float
+  - Name: RecordRenderingCommandsThresholdMs
+    Offset: '0x208'
+    Size: '0x4'
+    Type: float
+  - Name: PaintWarningThresholdMs
+    Offset: '0x20c'
+    Size: '0x4'
+    Type: float
+  - Name: LayersCountThreshold
+    Offset: '0x210'
+    Size: '0x4'
+    Type: int
+  - Name: LayerWidthThreshold
+    Offset: '0x214'
+    Size: '0x4'
+    Type: int
+  - Name: LayerHeightThreshold
+    Offset: '0x218'
+    Size: '0x4'
+    Type: int
+  - Name: bEnableAdditionalDefaultStyles
+    Offset: '0x21c'
+    Size: '0x1'
+    Type: bool
+  - Name: URL
+    Offset: '0x3c0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ClickThroughAlphaThreshold
+    Offset: '0x3d0'
+    Size: '0x4'
+    Type: float
+  - Name: Transparent
+    Offset: '0x3d4'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x2a0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x138'
+  Super: Widget

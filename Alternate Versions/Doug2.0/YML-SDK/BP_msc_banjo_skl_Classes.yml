@@ -1,0 +1,22 @@
+BP_msc_banjo_skl_01_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_msc_banjo_skl_01_a_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x500'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x508'
+  InheritedSize: '0x500'
+  Super: ItemInfo
+BP_msc_banjo_skl_01_a_Wieldable_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x8c0'
+  InheritedSize: '0x8c0'
+  Super: BP_Banjo_C

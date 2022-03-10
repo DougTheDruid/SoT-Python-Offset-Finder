@@ -1,0 +1,42 @@
+CrewOwnershipTrackingComponent:
+  Attributes:
+  - Name: SpawningCrewId
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: CurrentOwnedByCrewId
+    Offset: '0xf0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: PreviousOwnedByCrewIdList
+    Offset: '0x100'
+    Size: '0x10'
+    Type: Struct OwnerListEntry
+  ClassSize: '0xa8'
+  FullSize: '0x170'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+CrewOwnershipTrackingControlInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CrewOwnershipTrackingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CrewSpawnOwnershipTrackingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CustomCrewTrackingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

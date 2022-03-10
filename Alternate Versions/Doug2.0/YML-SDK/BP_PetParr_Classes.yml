@@ -1,0 +1,10 @@
+BP_PetParrotActionStateCreatorDefinition_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x4b8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x4c0'
+  InheritedSize: '0x4b8'
+  Super: PetActionStateCreatorDefinition

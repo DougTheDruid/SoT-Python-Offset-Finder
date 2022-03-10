@@ -1,0 +1,55 @@
+BeachNPCSpawnFlowNetworkEvent:
+  Attributes:
+  - Name: HasTaleCheckpointVoyage
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+ContextualTutorialPromptDesc:
+  Attributes:
+  - Name: PromptActorClass
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: AccessKey
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
+  - Name: FeatureName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: MustBeUnderCount
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
+EventTutorialTypeDecided:
+  Attributes:
+  - Name: TutorialType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x1'
+TutorialShowTutorialLegendaryTavernStrangerEvent:
+  Attributes: []
+  ClassSize: '0x1'
+TutorialStepEndedTelemetryEvent:
+  Attributes:
+  - Name: SequenceName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: StepName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: StepCompleted
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
+  - Name: IsFinalStep
+    Offset: '0x21'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x28'

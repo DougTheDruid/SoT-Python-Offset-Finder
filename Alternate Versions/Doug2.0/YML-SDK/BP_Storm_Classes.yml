@@ -1,0 +1,26 @@
+BP_Storm_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x630'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: Lightning4
+    Offset: '0x638'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Lightning3
+    Offset: '0x640'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Lightning2
+    Offset: '0x648'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Lightning1
+    Offset: '0x650'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x28'
+  FullSize: '0x658'
+  InheritedSize: '0x630'
+  Super: Storm

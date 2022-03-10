@@ -1,0 +1,28 @@
+ServiceMessagingSubscribedEvent:
+  Attributes:
+  - Name: RoutingKey
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'
+ServiceMessagingTestMessage:
+  Attributes:
+  - Name: Data
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x4'
+ServiceMessagingUnsubscribedEvent:
+  Attributes:
+  - Name: RoutingKey
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'
+TestStructWithNetId:
+  Attributes:
+  - Name: NetId
+    Offset: '0x0'
+    Size: '0x18'
+    Type: Struct UniqueNetIdRepl
+  ClassSize: '0x18'

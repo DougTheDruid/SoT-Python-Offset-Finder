@@ -1,0 +1,22 @@
+EventInteractionBlockingStateChanged:
+  Attributes:
+  - Name: IsInteractionBlocked
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: InteractionBlockReason
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x2'
+EventOptimalInteractionObjectChanged:
+  Attributes:
+  - Name: PreviousFocusObject
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: NewFocusObject
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x10'

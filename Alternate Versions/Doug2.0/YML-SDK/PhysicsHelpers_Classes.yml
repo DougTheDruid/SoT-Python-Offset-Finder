@@ -1,0 +1,12 @@
+MockPostPhysicsTickerComponent:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0xd8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+PostPhysicsTickerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

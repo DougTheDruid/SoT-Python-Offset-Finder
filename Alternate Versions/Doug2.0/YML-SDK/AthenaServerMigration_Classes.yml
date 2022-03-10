@@ -1,0 +1,28 @@
+AthenaServerMigrationGameAuthorityProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+MigrationServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+RegisterServerMigrationPointOfInterestComponent:
+  Attributes:
+  - Name: MigrationRadius
+    Offset: '0xc8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
+  FullSize: '0xe8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+ServerMigrationGatherableActorInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

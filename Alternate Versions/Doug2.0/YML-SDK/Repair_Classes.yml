@@ -1,0 +1,28 @@
+RepairTypeId:
+  Attributes:
+  - Name: DisplayName
+    Offset: '0x28'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x38'
+  FullSize: '0x60'
+  InheritedSize: '0x28'
+  Super: Object
+RepairableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+RepairingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WoodRepairTypeId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x60'
+  InheritedSize: '0x60'
+  Super: RepairTypeId

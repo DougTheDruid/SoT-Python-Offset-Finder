@@ -1,0 +1,75 @@
+DebugErrorHappeningEvent:
+  Attributes: []
+  ClassSize: '0x1'
+DebugMenuButtonShortcut:
+  Attributes:
+  - Name: DisplayName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ConsoleCommand
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Buttons
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct ConsoleCommand>
+  - Name: RequiredHoldTime
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: AvailableInShippingBuilds
+    Offset: '0x34'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x40'
+DebugMenuDataAssetEntry:
+  Attributes:
+  - Name: MenuPath
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DisplayName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ConsoleCommand
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CloseMenuWhenExecuted
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  - Name: AvailableInShippingBuilds
+    Offset: '0x31'
+    Size: '0x1'
+    Type: bool
+  - Name: AddToCommonlyUsedMenu
+    Offset: '0x32'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x38'
+DebugMenuOptionExecutedEvent:
+  Attributes:
+  - Name: DebugMenuItemName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ConsoleCommand
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'
+DebugMenuUserItem:
+  Attributes:
+  - Name: path
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Command
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'

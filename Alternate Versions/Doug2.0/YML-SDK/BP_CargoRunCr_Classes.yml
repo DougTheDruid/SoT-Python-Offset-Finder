@@ -1,0 +1,36 @@
+BP_CargoRunCrate_Cloth_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_CargoRunCrate_Cloth_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_CargoRunCrate_Plants_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_CargoRunCrate_Plants_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_CargoRunCrate_Rum_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_CargoRunCrate_Rum_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc

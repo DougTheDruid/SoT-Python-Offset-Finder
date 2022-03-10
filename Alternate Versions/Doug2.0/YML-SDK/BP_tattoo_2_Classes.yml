@@ -1,0 +1,18 @@
+BP_tattoo_20_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_tattoo_21_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_tattoo_22_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc

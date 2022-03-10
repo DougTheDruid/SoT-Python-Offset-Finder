@@ -1,0 +1,12 @@
+SimpleOverlapCollectionKey:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+SimpleOverlapComponent:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0xd0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent

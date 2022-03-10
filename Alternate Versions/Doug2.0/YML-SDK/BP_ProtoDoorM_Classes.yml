@@ -1,0 +1,84 @@
+BP_ProtoDoorMechanism_GalleonFront_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x580'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: OpenJumpToLocation
+    Offset: '0x588'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: ClosedJumpToLocation
+    Offset: '0x590'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: OpenKnockbackDirection
+    Offset: '0x598'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: ClosedKnockbackDirection
+    Offset: '0x5a0'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: InteractionPoint
+    Offset: '0x5a8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: OpenVolume
+    Offset: '0x5b0'
+    Size: '0x8'
+    Type: Class BoxComponent*
+  - Name: ClosedVolume
+    Offset: '0x5b8'
+    Size: '0x8'
+    Type: Class BoxComponent*
+  - Name: EnableJumpToLocation
+    Offset: '0x5c0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x41'
+  FullSize: '0x5c1'
+  InheritedSize: '0x580'
+  Super: DoorMechanism
+BP_ProtoDoorMechanism_GalleonSide_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x580'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: OpenJumpToLocation
+    Offset: '0x588'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: ClosedJumpToLocation
+    Offset: '0x590'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: OpenKnockbackDirection
+    Offset: '0x598'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: ClosedKnockbackDirection
+    Offset: '0x5a0'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: InteractionPoint
+    Offset: '0x5a8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: OpenVolume
+    Offset: '0x5b0'
+    Size: '0x8'
+    Type: Class BoxComponent*
+  - Name: ClosedVolume
+    Offset: '0x5b8'
+    Size: '0x8'
+    Type: Class BoxComponent*
+  - Name: EnableJumpToLocation
+    Offset: '0x5c0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x41'
+  FullSize: '0x5c1'
+  InheritedSize: '0x580'
+  Super: DoorMechanism

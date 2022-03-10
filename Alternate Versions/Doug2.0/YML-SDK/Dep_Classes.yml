@@ -1,0 +1,30 @@
+BP_TreasureChest_Common+_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Common-_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Legendary-_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Rare+_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Rare-_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc

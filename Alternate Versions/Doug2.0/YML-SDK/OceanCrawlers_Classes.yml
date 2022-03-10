@@ -1,0 +1,54 @@
+BTTask_BroadcastOceanCrawlerAbilityAudioEvent:
+  Attributes:
+  - Name: OceanCrawlerAudioKeyToBroadcast
+    Offset: '0x60'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+  FullSize: '0x68'
+  InheritedSize: '0x60'
+  Super: BTTaskNode
+OceanCrawlerAudioBroadcaster:
+  Attributes:
+  - Name: AudioDataAsset
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: Class OceanCrawlerAudioParamsDataAsset*
+  - Name: CachedOwner
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0xd8'
+  FullSize: '0x1a0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+OceanCrawlerAudioParamsDataAsset:
+  Attributes:
+  - Name: WwiseObjectPoolWrapper
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: AudioKeyPairs
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct WwiseObjectPoolWrapper>
+  - Name: BuffThankDelay
+    Offset: '0x40'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: CrabBuffAudioSettings
+    Offset: '0x70'
+    Size: '0x10'
+    Type: Struct OceanCrawlerBuffAudioSettings
+  - Name: EelBuffAudioSettings
+    Offset: '0x80'
+    Size: '0x10'
+    Type: Struct OceanCrawlerBuffAudioSettings
+  - Name: HermitBuffAudioSettings
+    Offset: '0x90'
+    Size: '0x10'
+    Type: Struct OceanCrawlerBuffAudioSettings
+  ClassSize: '0x78'
+  FullSize: '0xa0'
+  InheritedSize: '0x28'
+  Super: DataAsset

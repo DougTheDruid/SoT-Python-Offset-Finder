@@ -1,0 +1,188 @@
+AssetAuditConstantEntry:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Value
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
+AssetAuditConstants:
+  Attributes:
+  - Name: AssetAuditConstants
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct AssetAuditConstantEntry>
+  ClassSize: '0x10'
+ClientPawnDetails:
+  Attributes:
+  - Name: Pawns
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class Pawns*>
+  ClassSize: '0x10'
+CollectionAnimSequenceLimits:
+  Attributes:
+  - Name: MaxMemory
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x4'
+CollectionLimits:
+  Attributes:
+  - Name: CollectionName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AuditType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: IsOnlyParentCollection
+    Offset: '0x9'
+    Size: '0x1'
+    Type: bool
+  - Name: CollectionTotals
+    Offset: '0xc'
+    Size: '0x10'
+    Type: Struct CollectionTotalsLimits
+  - Name: StaticMeshLimits
+    Offset: '0x1c'
+    Size: '0x8'
+    Type: Struct CollectionStaticMeshLimits
+  - Name: SkeleMeshLimits
+    Offset: '0x24'
+    Size: '0x8'
+    Type: Struct CollectionSkeleMeshLimits
+  - Name: AnimLimits
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: Struct CollectionAnimSequenceLimits
+  - Name: CanUseComplexCollisionAsSimple
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  - Name: CanUseLOD0Collision
+    Offset: '0x31'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x34'
+CollectionLimitsArray:
+  Attributes:
+  - Name: CollectionLimits
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct MaterialQualityOverrides>
+  ClassSize: '0x10'
+CollectionMeshLimitsBase:
+  Attributes:
+  - Name: MaxVerts
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: MaxMemory
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+CollectionSkeleMeshLimits:
+  Attributes: []
+  ClassSize: '0x8'
+CollectionStaticMeshLimits:
+  Attributes: []
+  ClassSize: '0x8'
+CollectionTotalsLimits:
+  Attributes:
+  - Name: MaxTotalVerts
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: MaxTotalMemory
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: MostExpensiveAssetsSetSize
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: ExpensiveAssetSetMaxTotalMemory
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
+FolderTotals:
+  Attributes:
+  - Name: EnforceCollectionMembership
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: CollectionsAllowedForFolder
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: AssetTypesToTest
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x28'
+MeshAuditLimits:
+  Attributes:
+  - Name: SubstringQueries
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct SubstringAuditQueryData>
+  - Name: FolderMeshLimits
+    Offset: '0x10'
+    Size: '0x28'
+    Type: Struct FolderTotals
+  ClassSize: '0x38'
+SubstringAuditQueryData:
+  Attributes:
+  - Name: QueryStringArray
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Str None>
+  - Name: SearchSetSize
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: MemoryLimitForSet
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
+TestLevelMetadataEntry:
+  Attributes:
+  - Name: Property
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Value
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'
+TextureAuditorGroupProperties:
+  Attributes:
+  - Name: TextureGroup
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Properties
+    Offset: '0x8'
+    Size: '0x20'
+    Type: Struct TextureAuditorProperties
+  ClassSize: '0x28'
+TextureAuditorProperties:
+  Attributes:
+  - Name: RequiredMipsSetting
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: AllowedTextureFormats
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Byte RequiredMipsSetting>
+  ClassSize: '0x20'

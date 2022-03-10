@@ -1,0 +1,226 @@
+MovieScene:
+  Attributes:
+  - Name: Spawnables
+    Offset: '0x80'
+    Size: '0x10'
+    Type: TArray<Struct BindingData>
+  - Name: Possessables
+    Offset: '0x90'
+    Size: '0x10'
+    Type: TArray<Struct Spawnables>
+  - Name: ObjectBindings
+    Offset: '0xa0'
+    Size: '0x10'
+    Type: TArray<Struct Possessables>
+  - Name: MasterTracks
+    Offset: '0xb0'
+    Size: '0x10'
+    Type: TArray<class MasterTracks*>
+  - Name: CameraCutTrack
+    Offset: '0xc0'
+    Size: '0x8'
+    Type: Class MovieSceneTrack*
+  - Name: SelectionRange
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: PlaybackRange
+    Offset: '0xd8'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: bForceFixedFrameIntervalPlayback
+    Offset: '0xe8'
+    Size: '0x1'
+    Type: bool
+  - Name: FixedFrameInterval
+    Offset: '0xec'
+    Size: '0x4'
+    Type: float
+  - Name: InTime
+    Offset: '0xf0'
+    Size: '0x4'
+    Type: float
+  - Name: OutTime
+    Offset: '0xf4'
+    Size: '0x4'
+    Type: float
+  - Name: StartTime
+    Offset: '0xf8'
+    Size: '0x4'
+    Type: float
+  - Name: EndTime
+    Offset: '0xfc'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x80'
+  FullSize: '0x100'
+  InheritedSize: '0x80'
+  Super: MovieSceneSignedObject
+MovieSceneBindingOverrides:
+  Attributes:
+  - Name: BindingData
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct ChildObjectBindingStrings>
+  ClassSize: '0x70'
+  FullSize: '0x98'
+  InheritedSize: '0x28'
+  Super: Object
+MovieSceneBindingOverridesInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+MovieSceneBindingOwnerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+MovieSceneFolder:
+  Attributes:
+  - Name: FolderName
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ChildFolders
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<class ChildFolders*>
+  - Name: ChildMasterTracks
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<class ChildMasterTracks*>
+  - Name: ChildObjectBindingStrings
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<Str >
+  ClassSize: '0x48'
+  FullSize: '0x70'
+  InheritedSize: '0x28'
+  Super: Object
+MovieSceneNameableTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x88'
+  InheritedSize: '0x88'
+  Super: MovieSceneTrack
+MovieSceneSection:
+  Attributes:
+  - Name: EvalOptions
+    Offset: '0x80'
+    Size: '0x2'
+    Type: Struct MovieSceneSectionEvalOptions
+  - Name: StartTime
+    Offset: '0x84'
+    Size: '0x4'
+    Type: float
+  - Name: EndTime
+    Offset: '0x88'
+    Size: '0x4'
+    Type: float
+  - Name: RowIndex
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: int
+  - Name: OverlapPriority
+    Offset: '0x90'
+    Size: '0x4'
+    Type: int
+  - Name: bIsActive
+    Offset: '0x94'
+    Size: '0x1'
+    Type: bool
+  - Name: bIsLocked
+    Offset: '0x94'
+    Size: '0x1'
+    Type: bool
+  - Name: bIsInfinite
+    Offset: '0x94'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+  FullSize: '0x98'
+  InheritedSize: '0x80'
+  Super: MovieSceneSignedObject
+MovieSceneSequence:
+  Attributes:
+  - Name: EvaluationTemplate
+    Offset: '0x80'
+    Size: '0x220'
+    Type: Struct CachedMovieSceneEvaluationTemplate
+  - Name: TemplateParameters
+    Offset: '0x2a0'
+    Size: '0x1'
+    Type: Struct MovieSceneTrackCompilationParams
+  - Name: bParentContextsAreSignificant
+    Offset: '0x2a1'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x228'
+  FullSize: '0x2a8'
+  InheritedSize: '0x80'
+  Super: MovieSceneSignedObject
+MovieSceneSequencePlayer:
+  Attributes:
+  - Name: bIsPlaying
+    Offset: '0x3c0'
+    Size: '0x1'
+    Type: bool
+  - Name: bReversePlayback
+    Offset: '0x3c0'
+    Size: '0x1'
+    Type: bool
+  - Name: bPendingFirstUpdate
+    Offset: '0x3c0'
+    Size: '0x1'
+    Type: bool
+  - Name: Sequence
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: Class MovieSceneSequence*
+  - Name: TimeCursorPosition
+    Offset: '0x3d0'
+    Size: '0x4'
+    Type: float
+  - Name: StartTime
+    Offset: '0x3d4'
+    Size: '0x4'
+    Type: float
+  - Name: EndTime
+    Offset: '0x3d8'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentNumLoops
+    Offset: '0x3dc'
+    Size: '0x4'
+    Type: int
+  - Name: PlaybackSettings
+    Offset: '0x3f0'
+    Size: '0x28'
+    Type: Struct MovieSceneSequencePlaybackSettings
+  ClassSize: '0x5d8'
+  FullSize: '0x600'
+  InheritedSize: '0x28'
+  Super: Object
+MovieSceneSignedObject:
+  Attributes:
+  - Name: Signature
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x58'
+  FullSize: '0x80'
+  InheritedSize: '0x28'
+  Super: Object
+MovieSceneTrack:
+  Attributes:
+  - Name: EvalOptions
+    Offset: '0x80'
+    Size: '0x4'
+    Type: Struct MovieSceneTrackEvalOptions
+  ClassSize: '0x8'
+  FullSize: '0x88'
+  InheritedSize: '0x80'
+  Super: MovieSceneSignedObject

@@ -1,0 +1,10 @@
+BP_LavaZone_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x470'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x478'
+  InheritedSize: '0x470'
+  Super: LavaZone

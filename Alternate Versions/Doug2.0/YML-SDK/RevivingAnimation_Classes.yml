@@ -1,0 +1,42 @@
+ReviveGhostAnimationData:
+  Attributes:
+  - Name: ReviveAnimationsDataAsset
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class ReviveGhostAnimationDataAsset*
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: AnimationData
+ReviveGhostAnimationDataAsset:
+  Attributes:
+  - Name: Animations
+    Offset: '0x28'
+    Size: '0x28'
+    Type: Struct ReviveGhostAnimations
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: DataAsset
+ReviveGhostAnimationInstance:
+  Attributes:
+  - Name: ReviveAnimations
+    Offset: '0x448'
+    Size: '0x28'
+    Type: Struct ReviveGhostAnimations
+  - Name: FullyInitialised
+    Offset: '0x470'
+    Size: '0x1'
+    Type: bool
+  - Name: FullyRevived
+    Offset: '0x471'
+    Size: '0x1'
+    Type: bool
+  - Name: FromSwimming
+    Offset: '0x472'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x50'
+  FullSize: '0x490'
+  InheritedSize: '0x440'
+  Super: AnimInstance

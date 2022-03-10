@@ -1,0 +1,85 @@
+EngineServiceAuthDeny:
+  Attributes:
+  - Name: UserName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: UserToDeny
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'
+EngineServiceAuthGrant:
+  Attributes:
+  - Name: UserName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: UserToGrant
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'
+EngineServiceExecuteCommand:
+  Attributes:
+  - Name: Command
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: UserName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'
+EngineServiceNotification:
+  Attributes:
+  - Name: Text
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: TimeSeconds
+    Offset: '0x10'
+    Size: '0x8'
+    Type: double
+  ClassSize: '0x18'
+EngineServicePing:
+  Attributes: []
+  ClassSize: '0x1'
+EngineServicePong:
+  Attributes:
+  - Name: CurrentLevel
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: EngineVersion
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: HasBegunPlay
+    Offset: '0x14'
+    Size: '0x1'
+    Type: bool
+  - Name: InstanceId
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: InstanceType
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SessionId
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: WorldTimeSeconds
+    Offset: '0x48'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x50'
+EngineServiceTerminate:
+  Attributes:
+  - Name: UserName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'

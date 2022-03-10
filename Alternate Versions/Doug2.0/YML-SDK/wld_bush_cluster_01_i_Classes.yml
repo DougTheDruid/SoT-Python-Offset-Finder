@@ -1,0 +1,18 @@
+wld_bush_cluster_01_i_C:
+  Attributes:
+  - Name: StaticMeshComponent03
+    Offset: '0x410'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMeshComponent01
+    Offset: '0x418'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: SharedRoot
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x18'
+  FullSize: '0x428'
+  InheritedSize: '0x410'
+  Super: BP_Placement_HeightDrop_C

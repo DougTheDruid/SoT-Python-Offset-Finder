@@ -1,0 +1,292 @@
+CookItemConditionalStatTrigger:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
+  Super: ConditionalStatsTriggerType
+CookableComponent:
+  Attributes:
+  - Name: NextCookState
+    Offset: '0xe8'
+    Size: '0x8'
+    Type: class
+  - Name: TimeToNextCookState
+    Offset: '0xf0'
+    Size: '0x4'
+    Type: float
+  - Name: SmokeFeedbackLevels
+    Offset: '0xf8'
+    Size: '0x10'
+    Type: TArray<Struct TimeToNextCookState>
+  - Name: VisibleCookedExtentOverTime
+    Offset: '0x108'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: DefaultVisibleCookedExtent
+    Offset: '0x110'
+    Size: '0x4'
+    Type: float
+  - Name: CookableTypeName
+    Offset: '0x114'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CookedStat
+    Offset: '0x11c'
+    Size: '0x4'
+    Type: Struct PlayerStat
+  - Name: ShipCookedStat
+    Offset: '0x120'
+    Size: '0x4'
+    Type: Struct PlayerStat
+  - Name: CookingState
+    Offset: '0x124'
+    Size: '0x1'
+    Type: byte
+  - Name: InitialCookingState
+    Offset: '0x125'
+    Size: '0x1'
+    Type: byte
+  - Name: RemovedCookingState
+    Offset: '0x126'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x60'
+  FullSize: '0x128'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+CookableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CookerComponent:
+  Attributes:
+  - Name: StatusToApplyToContents
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: TArray<Struct MaxCookingRtpcAmount>
+  - Name: VFXFeedback
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: TArray<Struct StatusToApplyToContents>
+  - Name: CookableStaticMeshComponent
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: Class StaticMeshMemoryConstraintComponent*
+  - Name: CookableSkeletalMeshComponent
+    Offset: '0xf8'
+    Size: '0x8'
+    Type: Class SkeletalMeshMemoryConstraintComponent*
+  - Name: CookedMaterialParameterName
+    Offset: '0x100'
+    Size: '0x8'
+    Type: struct FName
+  - Name: BurnDownDirectionParameterName
+    Offset: '0x108'
+    Size: '0x8'
+    Type: struct FName
+  - Name: PlacementVarianceAngleBound
+    Offset: '0x110'
+    Size: '0x4'
+    Type: float
+  - Name: OnByDefault
+    Offset: '0x114'
+    Size: '0x1'
+    Type: bool
+  - Name: AudioParams
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Class CookingComponentAudioParams*
+  - Name: VfxLocation
+    Offset: '0x120'
+    Size: '0x1'
+    Type: byte
+  - Name: CurrentlyCookingItem
+    Offset: '0x128'
+    Size: '0x8'
+    Type: Class ItemInfo*
+  - Name: CookingState
+    Offset: '0x130'
+    Size: '0x68'
+    Type: Struct CookingClientRepresentation
+  - Name: SmokeParticleComponent
+    Offset: '0x198'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: VisibleCookableMaterial
+    Offset: '0x1a0'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: TurnedOn
+    Offset: '0x1a8'
+    Size: '0x1'
+    Type: bool
+  - Name: OnIsland
+    Offset: '0x1a9'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x180'
+  FullSize: '0x248'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+CookerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CookingComponentAudioParams:
+  Attributes:
+  - Name: CookingPool
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: EmitterOffsetVector
+    Offset: '0x30'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: FoodPlaceInPot
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: CookingStart
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: CookingStop
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: CookingTypeSwitchGroup
+    Offset: '0x58'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CookingTypeSizzle
+    Offset: '0x60'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CookingTypeSimmer
+    Offset: '0x68'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FoodTypeSwitchGroup
+    Offset: '0x70'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FoodTypeFruit
+    Offset: '0x78'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FoodTypeMeat
+    Offset: '0x80'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FoodTypeRareMeat
+    Offset: '0x88'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FoodCookedAmount
+    Offset: '0x90'
+    Size: '0x8'
+    Type: struct FName
+  - Name: MaxCookingRtpcAmount
+    Offset: '0x98'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x78'
+  FullSize: '0xa0'
+  InheritedSize: '0x28'
+  Super: DataAsset
+CookingDefaultsInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CookingPot:
+  Attributes:
+  - Name: MeshComponent
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: InteractableComponent
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class ActionRulesInteractableComponent*
+  - Name: CookerComponent
+    Offset: '0x410'
+    Size: '0x8'
+    Type: Class CookerComponent*
+  - Name: HoldToInteractTime
+    Offset: '0x418'
+    Size: '0x4'
+    Type: float
+  - Name: NotWieldingCookableItemTooltip
+    Offset: '0x420'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: WieldingCookableItemTooltip
+    Offset: '0x458'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: TakeItemTooltip
+    Offset: '0x490'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: CannotTakeItemTooltip
+    Offset: '0x4c8'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: MixInItemTooltip
+    Offset: '0x500'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x1e0'
+  FullSize: '0x5d8'
+  InheritedSize: '0x3f8'
+  Super: InteractableBase
+CookingStateInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CookingStatusPublisherInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+HasRequiredCookingStateStatCondition:
+  Attributes:
+  - Name: RequiredState
+    Offset: '0x30'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+  FullSize: '0x38'
+  InheritedSize: '0x30'
+  Super: TargetedStatCondition
+MixableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+PottableComponent:
+  Attributes:
+  - Name: CanBePutInPot
+    Offset: '0xd0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x10'
+  FullSize: '0xd8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+PottableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

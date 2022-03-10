@@ -1,0 +1,30 @@
+EmissarySecuredLootOnShip_AF_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
+EmissarySecuredLootOnShip_GH_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
+EmissarySecuredLootOnShip_MA_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
+EmissarySecuredLootOnShip_OOS_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
+EmissarySecuredLootOnShip_RB_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey

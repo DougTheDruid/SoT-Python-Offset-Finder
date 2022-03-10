@@ -1,0 +1,22 @@
+gmp_wrld_res_fruit3special_01_a_C:
+  Attributes:
+  - Name: None
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class ClusterStaticMeshComponent*
+  - Name: None
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class ClusterStaticMeshComponent*
+  - Name: None
+    Offset: '0x410'
+    Size: '0x8'
+    Type: Class ClusterStaticMeshComponent*
+  ClassSize: '0x20'
+  FullSize: '0x418'
+  InheritedSize: '0x3f8'
+  Super: Cluster

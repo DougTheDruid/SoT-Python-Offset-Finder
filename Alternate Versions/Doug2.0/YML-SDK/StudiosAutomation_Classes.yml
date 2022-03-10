@@ -1,0 +1,190 @@
+ActorThatLogsErrorWhenTicked:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
+  Super: Actor
+AutomationBlueprintFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+AutomationLatentActionCallback:
+  Attributes: []
+  ClassSize: '0x38'
+  FullSize: '0x60'
+  InheritedSize: '0x28'
+  Super: Object
+BPNamedObjectMock:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+DummyReplicatedActor:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
+  Super: Actor
+MapFixtureTestGameMode:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x4c8'
+  InheritedSize: '0x4c8'
+  Super: GameMode
+ObjectWithSettableWorld:
+  Attributes:
+  - Name: World
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class World*
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: Object
+OtherTestUObject:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+RunUnitTestsCommandlet:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: Commandlet
+TestAbstractActor:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
+  Super: Actor
+TestLevelScriptActor:
+  Attributes:
+  - Name: Category
+    Offset: '0x3e0'
+    Size: '0x1'
+    Type: byte
+  - Name: Area
+    Offset: '0x3e1'
+    Size: '0x1'
+    Type: byte
+  - Name: VisualTest
+    Offset: '0x3e2'
+    Size: '0x1'
+    Type: bool
+  - Name: RunInEditor
+    Offset: '0x3e3'
+    Size: '0x1'
+    Type: bool
+  - Name: RunOnServer
+    Offset: '0x3e4'
+    Size: '0x1'
+    Type: bool
+  - Name: RequiresServices
+    Offset: '0x3e5'
+    Size: '0x1'
+    Type: bool
+  - Name: AdditionalMetadata
+    Offset: '0x3e8'
+    Size: '0x10'
+    Type: TArray<Struct RequiresServices>
+  - Name: CaptureType
+    Offset: '0x3f8'
+    Size: '0x1'
+    Type: byte
+  - Name: PlayModeOverride
+    Offset: '0x3f9'
+    Size: '0x1'
+    Type: byte
+  - Name: TestTimeout
+    Offset: '0x3fc'
+    Size: '0x4'
+    Type: float
+  - Name: TestPausedTimeout
+    Offset: '0x400'
+    Size: '0x4'
+    Type: float
+  - Name: VerboseLogCategories
+    Offset: '0x408'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: ClientsRunning
+    Offset: '0x418'
+    Size: '0x10'
+    Type: TArray<Int >
+  - Name: ClientIds
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Int >
+  - Name: ClientPawns
+    Offset: '0x438'
+    Size: '0x10'
+    Type: TArray<Struct ClientIds>
+  - Name: SpawnedActors
+    Offset: '0x448'
+    Size: '0x10'
+    Type: TArray<class SpawnedActors*>
+  - Name: NextSpawnedActorIndex
+    Offset: '0x458'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0xc0'
+  FullSize: '0x498'
+  InheritedSize: '0x3d8'
+  Super: LevelScriptActor
+TestSettings:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: DeveloperSettings
+TestUObject:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+TestablePlayerController:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x728'
+  InheritedSize: '0x728'
+  Super: PlayerController
+TestablePlayerControllerComponent:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0xe8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+TestablePlayerControllerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+TextureAuditorSettings:
+  Attributes:
+  - Name: SpecificTexturesToNotAudit
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Struct ForwardSettingMap>
+  - Name: TextureDirectoriesToNotAudit
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Struct SpecificTexturesToNotAudit>
+  - Name: DefaultTextureProperties
+    Offset: '0x58'
+    Size: '0x20'
+    Type: Struct TextureAuditorProperties
+  - Name: PerTextureGroupPropertiesOverrides
+    Offset: '0x78'
+    Size: '0x10'
+    Type: TArray<Struct DefaultTextureProperties>
+  ClassSize: '0x50'
+  FullSize: '0x88'
+  InheritedSize: '0x38'
+  Super: TestSettings

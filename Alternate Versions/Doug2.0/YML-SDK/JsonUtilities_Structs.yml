@@ -1,0 +1,90 @@
+JsonObjectWrapper:
+  Attributes: []
+  ClassSize: '0x18'
+TestEnumObject:
+  Attributes:
+  - Name: TestEnum
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x1'
+TestFloatObject:
+  Attributes:
+  - Name: TestFloat1
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: TestFloat2
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+TestInt32MapSerializationObject:
+  Attributes: []
+  ClassSize: '0x50'
+TestInvalidStringMapSerializationObject:
+  Attributes: []
+  ClassSize: '0x50'
+TestMessageDateTime:
+  Attributes:
+  - Name: DateTime
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct DateTime
+  ClassSize: '0x8'
+TestMessageInt64:
+  Attributes: []
+  ClassSize: '0x8'
+TestMessageTimespan:
+  Attributes:
+  - Name: Timespan
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Timespan
+  ClassSize: '0x8'
+TestMessageUInt64:
+  Attributes: []
+  ClassSize: '0x8'
+TestSerializationNestedObject:
+  Attributes:
+  - Name: NestedObject
+    Offset: '0x0'
+    Size: '0x28'
+    Type: Struct TestSerializationObject
+  ClassSize: '0x28'
+TestSerializationObject:
+  Attributes:
+  - Name: TestBool
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: TestInt
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: TestString
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: TestGuid
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x28'
+TestStringMapSerializationObject:
+  Attributes: []
+  ClassSize: '0x50'
+TestTextObject:
+  Attributes:
+  - Name: TestText
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: TestTextExport
+    Offset: '0x38'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x70'
+TestUStructMapSerializationObject:
+  Attributes: []
+  ClassSize: '0x50'

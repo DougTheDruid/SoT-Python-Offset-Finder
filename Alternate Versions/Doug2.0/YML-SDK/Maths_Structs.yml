@@ -1,0 +1,114 @@
+FixedStepInterpCurvePointVector2D:
+  Attributes:
+  - Name: OutVal
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Tangent
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct Vector2D
+  ClassSize: '0x10'
+FixedStepInterpCurveVector2D:
+  Attributes:
+  - Name: Points
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct FixedStepInterpCurvePointVector2D>
+  - Name: StepTime
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: IsLooped
+    Offset: '0x14'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+InertialSmoothedFloat:
+  Attributes:
+  - Name: AccelerationMagnitude
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: MaxSpeed
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentVelocity
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentValue
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
+OrientedPoint:
+  Attributes:
+  - Name: Location
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Rotation
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Rotator
+  ClassSize: '0x18'
+RotationUpdateResult:
+  Attributes:
+  - Name: UpdatedRotation
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Rotator
+  - Name: SpinAngle
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: TiltAngle
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: TiltDirection
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x18'
+SpatialOffset:
+  Attributes:
+  - Name: OffsetValue
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OffsetMethod
+    Offset: '0x4'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+TimedBuffer:
+  Attributes: []
+  ClassSize: '0x18'
+WeightedProbabilityRange:
+  Attributes:
+  - Name: Weights
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Float >
+  ClassSize: '0x20'
+WeightedProbabilityRangeOfRanges:
+  Attributes:
+  - Name: SubRanges
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct WeightedProbabilityRangeOfRangesFloatPair>
+  ClassSize: '0x30'
+WeightedProbabilityRangeOfRangesFloatPair:
+  Attributes:
+  - Name: Min
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Max
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'

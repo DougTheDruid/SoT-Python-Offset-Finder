@@ -1,0 +1,30 @@
+EmissarySunk_AF_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
+EmissarySunk_GH_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
+EmissarySunk_MA_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
+EmissarySunk_OOS_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
+EmissarySunk_RB_PromptAccessKey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey

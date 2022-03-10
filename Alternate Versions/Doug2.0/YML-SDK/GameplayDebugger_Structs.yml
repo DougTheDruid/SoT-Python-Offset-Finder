@@ -1,0 +1,23 @@
+GDTCustomViewNames:
+  Attributes:
+  - Name: GameView1
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: GameView2
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: GameView3
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: GameView4
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: GameView5
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x50'

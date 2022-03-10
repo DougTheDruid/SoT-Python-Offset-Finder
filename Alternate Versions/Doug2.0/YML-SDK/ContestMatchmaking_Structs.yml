@@ -1,0 +1,165 @@
+ContestMatchmakingServerRequestModel:
+  Attributes:
+  - Name: ServerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: VmId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PrivateServerId
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ServerLocation
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PlayModeTags
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: PlayModeStates
+    Offset: '0x58'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: Crews
+    Offset: '0x68'
+    Size: '0x10'
+    Type: TArray<Struct ServerCrewModel>
+  - Name: RequestCorrelationId
+    Offset: '0x78'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x88'
+OptionalPlayModeModel:
+  Attributes: []
+  ClassSize: '0x50'
+ServerContendedModel:
+  Attributes:
+  - Name: Positions
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct Uptime>
+  - Name: Regions
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct ServerRegionModel>
+  - Name: Resources
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<UInt32 >
+  ClassSize: '0x30'
+ServerCrewModel:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: UserId
+    Offset: '0x10'
+    Size: '0x18'
+    Type: Struct UniqueNetIdRepl
+  - Name: ServerId
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: SessionType
+    Offset: '0x38'
+    Size: '0x4'
+    Type: int
+  - Name: Positions
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Struct SessionType>
+  - Name: Resources
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<UInt32 >
+  ClassSize: '0x60'
+ServerCrewRequestModel:
+  Attributes:
+  - Name: ServerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: VmId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PrivateServerId
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ServerLocation
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PlayModeTags
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: PlayModeState
+    Offset: '0x58'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CrewCount
+    Offset: '0x68'
+    Size: '0x4'
+    Type: int
+  - Name: CrewCountBucket
+    Offset: '0x6c'
+    Size: '0x4'
+    Type: int
+  - Name: CrewMin
+    Offset: '0x70'
+    Size: '0x4'
+    Type: int
+  - Name: CrewMax
+    Offset: '0x74'
+    Size: '0x4'
+    Type: int
+  - Name: CrewSessionTypes
+    Offset: '0x78'
+    Size: '0x10'
+    Type: TArray<Int >
+  - Name: Uptime
+    Offset: '0x88'
+    Size: '0x8'
+    Type: Struct Timespan
+  - Name: Contended
+    Offset: '0x90'
+    Size: '0x30'
+    Type: Struct ServerContendedModel
+  ClassSize: '0xc0'
+ServerCrewResponseModel:
+  Attributes:
+  - Name: Crews
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct OptionalPlayModeModel>
+  - Name: RetryAfter
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Struct Timespan
+  - Name: MigrationThreshold
+    Offset: '0x68'
+    Size: '0x8'
+    Type: Struct Timespan
+  - Name: ExpireAfter
+    Offset: '0x70'
+    Size: '0x8'
+    Type: Struct Timespan
+  ClassSize: '0x78'
+ServerRegionModel:
+  Attributes:
+  - Name: Position
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Radius
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'

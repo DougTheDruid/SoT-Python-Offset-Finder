@@ -1,0 +1,75 @@
+SessionServiceLog:
+  Attributes:
+  - Name: Category
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Data
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: InstanceId
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: TimeSeconds
+    Offset: '0x28'
+    Size: '0x8'
+    Type: double
+  - Name: Verbosity
+    Offset: '0x30'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x38'
+SessionServiceLogSubscribe:
+  Attributes: []
+  ClassSize: '0x1'
+SessionServiceLogUnsubscribe:
+  Attributes: []
+  ClassSize: '0x1'
+SessionServicePing:
+  Attributes: []
+  ClassSize: '0x1'
+SessionServicePong:
+  Attributes:
+  - Name: BuildDate
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DeviceName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: InstanceId
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: InstanceName
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: IsConsoleBuild
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
+  - Name: PlatformName
+    Offset: '0x48'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SessionId
+    Offset: '0x58'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: SessionName
+    Offset: '0x68'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SessionOwner
+    Offset: '0x78'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Standalone
+    Offset: '0x88'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x90'

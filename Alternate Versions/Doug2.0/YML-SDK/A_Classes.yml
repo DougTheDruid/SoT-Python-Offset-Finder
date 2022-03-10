@@ -1,0 +1,24 @@
+ALK_BDog_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_PDog_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_PincherMonkey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_PrnMonkey_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId

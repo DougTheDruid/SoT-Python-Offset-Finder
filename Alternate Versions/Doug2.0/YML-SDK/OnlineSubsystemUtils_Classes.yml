@@ -1,0 +1,328 @@
+AchievementBlueprintLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+AchievementQueryCallbackProxy:
+  Attributes: []
+  ClassSize: '0x38'
+  FullSize: '0x60'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+AchievementWriteCallbackProxy:
+  Attributes: []
+  ClassSize: '0x58'
+  FullSize: '0x80'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+ConnectionCallbackProxy:
+  Attributes: []
+  ClassSize: '0x40'
+  FullSize: '0x68'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+CreateSessionCallbackProxy:
+  Attributes: []
+  ClassSize: '0x58'
+  FullSize: '0x80'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+DestroySessionCallbackProxy:
+  Attributes: []
+  ClassSize: '0x40'
+  FullSize: '0x68'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+EndMatchCallbackProxy:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0x78'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+EndTurnCallbackProxy:
+  Attributes: []
+  ClassSize: '0x48'
+  FullSize: '0x70'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+FindSessionsCallbackProxy:
+  Attributes: []
+  ClassSize: '0x60'
+  FullSize: '0x88'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+FindTurnBasedMatchCallbackProxy:
+  Attributes: []
+  ClassSize: '0x60'
+  FullSize: '0x88'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+InAppPurchaseCallbackProxy:
+  Attributes: []
+  ClassSize: '0x60'
+  FullSize: '0x88'
+  InheritedSize: '0x28'
+  Super: Object
+InAppPurchaseQueryCallbackProxy:
+  Attributes: []
+  ClassSize: '0x70'
+  FullSize: '0x98'
+  InheritedSize: '0x28'
+  Super: Object
+InAppPurchaseRestoreCallbackProxy:
+  Attributes: []
+  ClassSize: '0x70'
+  FullSize: '0x98'
+  InheritedSize: '0x28'
+  Super: Object
+IpConnection:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0x345d8'
+  InheritedSize: '0x34588'
+  Super: NetConnection
+IpNetDriver:
+  Attributes:
+  - Name: LogPortUnreach
+    Offset: '0x478'
+    Size: '0x1'
+    Type: bool
+  - Name: AllowPlayerPortUnreach
+    Offset: '0x478'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x50'
+  FullSize: '0x4c8'
+  InheritedSize: '0x478'
+  Super: NetDriver
+JoinSessionCallbackProxy:
+  Attributes: []
+  ClassSize: '0x120'
+  FullSize: '0x148'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+LeaderboardBlueprintLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+LeaderboardFlushCallbackProxy:
+  Attributes: []
+  ClassSize: '0x38'
+  FullSize: '0x60'
+  InheritedSize: '0x28'
+  Super: Object
+LeaderboardQueryCallbackProxy:
+  Attributes: []
+  ClassSize: '0x68'
+  FullSize: '0x90'
+  InheritedSize: '0x28'
+  Super: Object
+LogoutCallbackProxy:
+  Attributes: []
+  ClassSize: '0x38'
+  FullSize: '0x60'
+  InheritedSize: '0x28'
+  Super: BlueprintAsyncActionBase
+OnlineBeacon:
+  Attributes:
+  - Name: BeaconConnectionInitialTimeout
+    Offset: '0x3d8'
+    Size: '0x4'
+    Type: float
+  - Name: BeaconConnectionTimeout
+    Offset: '0x3dc'
+    Size: '0x4'
+    Type: float
+  - Name: NetDriver
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class NetDriver*
+  ClassSize: '0x28'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+OnlineBeaconClient:
+  Attributes:
+  - Name: BeaconOwner
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class OnlineBeaconHostObject*
+  - Name: BeaconConnection
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class NetConnection*
+  - Name: ConnectionState
+    Offset: '0x408'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+  FullSize: '0x420'
+  InheritedSize: '0x3f8'
+  Super: OnlineBeacon
+OnlineBeaconHost:
+  Attributes:
+  - Name: ListenPort
+    Offset: '0x3f8'
+    Size: '0x4'
+    Type: int
+  - Name: ClientActors
+    Offset: '0x400'
+    Size: '0x10'
+    Type: TArray<class ClientActors*>
+  ClassSize: '0xb8'
+  FullSize: '0x4b0'
+  InheritedSize: '0x3f8'
+  Super: OnlineBeacon
+OnlineBeaconHostObject:
+  Attributes:
+  - Name: BeaconTypeName
+    Offset: '0x3d0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ClientBeaconActorClass
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: class
+  - Name: ClientActors
+    Offset: '0x3e8'
+    Size: '0x10'
+    Type: TArray<class ClientActors*>
+  ClassSize: '0x28'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+OnlineBlueprintCallProxyBase:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+OnlineSessionClient:
+  Attributes:
+  - Name: bIsFromInvite
+    Offset: '0x160'
+    Size: '0x1'
+    Type: bool
+  - Name: bHandlingDisconnect
+    Offset: '0x161'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x140'
+  FullSize: '0x168'
+  InheritedSize: '0x28'
+  Super: OnlineSession
+PartyBeaconClient:
+  Attributes:
+  - Name: DestSessionId
+    Offset: '0x430'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PendingReservation
+    Offset: '0x440'
+    Size: '0x30'
+    Type: Struct PartyReservation
+  - Name: RequestType
+    Offset: '0x470'
+    Size: '0x1'
+    Type: byte
+  - Name: bPendingReservationSent
+    Offset: '0x471'
+    Size: '0x1'
+    Type: bool
+  - Name: bCancelReservation
+    Offset: '0x472'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x58'
+  FullSize: '0x478'
+  InheritedSize: '0x420'
+  Super: OnlineBeaconClient
+PartyBeaconHost:
+  Attributes:
+  - Name: State
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class PartyBeaconState*
+  - Name: SessionTimeoutSecs
+    Offset: '0x428'
+    Size: '0x4'
+    Type: float
+  - Name: TravelSessionTimeoutSecs
+    Offset: '0x42c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x38'
+  FullSize: '0x430'
+  InheritedSize: '0x3f8'
+  Super: OnlineBeaconHostObject
+PartyBeaconState:
+  Attributes:
+  - Name: SessionName
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: NumConsumedReservations
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  - Name: MaxReservations
+    Offset: '0x34'
+    Size: '0x4'
+    Type: int
+  - Name: NumTeams
+    Offset: '0x38'
+    Size: '0x4'
+    Type: int
+  - Name: NumPlayersPerTeam
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: int
+  - Name: ReservedHostTeamNum
+    Offset: '0x40'
+    Size: '0x4'
+    Type: int
+  - Name: ForceTeamNum
+    Offset: '0x44'
+    Size: '0x4'
+    Type: int
+  - Name: Reservations
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Struct ForceTeamNum>
+  ClassSize: '0x40'
+  FullSize: '0x68'
+  InheritedSize: '0x28'
+  Super: Object
+QuitMatchCallbackProxy:
+  Attributes: []
+  ClassSize: '0x48'
+  FullSize: '0x70'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase
+ShowLoginUICallbackProxy:
+  Attributes: []
+  ClassSize: '0x30'
+  FullSize: '0x58'
+  InheritedSize: '0x28'
+  Super: BlueprintAsyncActionBase
+TestBeaconClient:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x420'
+  InheritedSize: '0x420'
+  Super: OnlineBeaconClient
+TestBeaconHost:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3f8'
+  Super: OnlineBeaconHostObject
+TurnBasedBlueprintLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary

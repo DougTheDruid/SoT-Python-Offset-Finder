@@ -1,0 +1,18 @@
+AthenaCalmWaterZone:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3d8'
+  Super: CalmWaterZone
+CalmWaterMappingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CalmWaterMappingService:
+  Attributes: []
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: Object

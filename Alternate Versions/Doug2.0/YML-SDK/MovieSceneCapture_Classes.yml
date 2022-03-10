@@ -1,0 +1,138 @@
+AutomatedLevelSequenceCapture:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x1e0'
+  InheritedSize: '0x1e0'
+  Super: MovieSceneCapture
+BmpImageCaptureSettings:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MovieSceneCaptureProtocolSettings
+CompositionGraphCaptureSettings:
+  Attributes:
+  - Name: IncludeRenderPasses
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct CompositionGraphCapturePasses
+  - Name: bCaptureFramesInHDR
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  - Name: HDRCompressionQuality
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: int
+  - Name: CaptureGamut
+    Offset: '0x40'
+    Size: '0x1'
+    Type: byte
+  - Name: PostProcessingMaterial
+    Offset: '0x48'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x30'
+  FullSize: '0x58'
+  InheritedSize: '0x28'
+  Super: MovieSceneCaptureProtocolSettings
+FrameGrabberProtocolSettings:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: MovieSceneCaptureProtocolSettings
+ImageCaptureSettings:
+  Attributes:
+  - Name: CompressionQuality
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+  FullSize: '0x38'
+  InheritedSize: '0x30'
+  Super: FrameGrabberProtocolSettings
+LevelCapture:
+  Attributes:
+  - Name: bAutoStartCapture
+    Offset: '0x1e0'
+    Size: '0x1'
+    Type: bool
+  - Name: PrerequisiteActorId
+    Offset: '0x1ec'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x20'
+  FullSize: '0x200'
+  InheritedSize: '0x1e0'
+  Super: MovieSceneCapture
+MovieSceneCapture:
+  Attributes:
+  - Name: CaptureType
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Struct CaptureProtocolID
+  - Name: ProtocolSettings
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class MovieSceneCaptureProtocolSettings*
+  - Name: Settings
+    Offset: '0x48'
+    Size: '0x50'
+    Type: Struct MovieSceneCaptureSettings
+  - Name: bUseSeparateProcess
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  - Name: bCloseEditorWhenCaptureStarts
+    Offset: '0x99'
+    Size: '0x1'
+    Type: bool
+  - Name: AdditionalCommandLineArguments
+    Offset: '0xa0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: InheritedCommandLineArguments
+    Offset: '0xb0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x1b8'
+  FullSize: '0x1e0'
+  InheritedSize: '0x28'
+  Super: Object
+MovieSceneCaptureEnvironment:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+MovieSceneCaptureInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+MovieSceneCaptureProtocolSettings:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+VideoCaptureSettings:
+  Attributes:
+  - Name: bUseCompression
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  - Name: CompressionQuality
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  - Name: VideoCodec
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x18'
+  FullSize: '0x48'
+  InheritedSize: '0x30'
+  Super: FrameGrabberProtocolSettings

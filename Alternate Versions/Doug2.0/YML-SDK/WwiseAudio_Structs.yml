@@ -1,0 +1,325 @@
+AnimNotify_SoundSwitch:
+  Attributes:
+  - Name: SkeletalMeshReference
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: SkeletalMeshCategoryName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
+MovieSceneAkAudioEventTemplate:
+  Attributes:
+  - Name: Section
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class MovieSceneAkAudioEventSection*
+  ClassSize: '0x20'
+MovieSceneAkAudioRTPCSectionData:
+  Attributes:
+  - Name: RTPCName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: RTPCCurve
+    Offset: '0x10'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x88'
+MovieSceneAkAudioRTPCTemplate:
+  Attributes:
+  - Name: Section
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class MovieSceneAkAudioRTPCSection*
+  ClassSize: '0x20'
+ReverbPresetControllerSettings:
+  Attributes:
+  - Name: HorizontalConeSegmentElevationAngle
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: UpwardsConeAngle
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: TraceVectorLength
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: TimeToDiscardSample
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: DistanceToDiscardSample
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: BiasTowardsVerticalSegment
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+WwiseAudioAcousticSurfaceParams:
+  Attributes:
+  - Name: Thickness
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Reflectivity
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+WwiseAudioGameStateSettings:
+  Attributes:
+  - Name: AudioGameStateGroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AudioGameStateFrontend
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AudioGameStateLoading
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AudioGameStateIngame
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: EventsToPlayOnLobbyStart
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct AudioGameStateIngame>
+  - Name: EventsToPlayOnLobbyEnd
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct EventsToPlayOnLobbyStart>
+  - Name: EventsToPlayOnEngageStart
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Struct EventsToPlayOnLobbyEnd>
+  - Name: EventsToPlayOnEngageEnd
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<Struct EventsToPlayOnEngageStart>
+  - Name: EventsToPlayOnLoadingStart
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<Struct EventsToPlayOnEngageEnd>
+  - Name: EventsToPlayOnLoadingEnd
+    Offset: '0x70'
+    Size: '0x10'
+    Type: TArray<Struct EventsToPlayOnLoadingStart>
+  - Name: EventsToPlayOnFrontEndOrLoadingStart
+    Offset: '0x80'
+    Size: '0x10'
+    Type: TArray<Struct EventsToPlayOnLoadingEnd>
+  - Name: EventsToPlayOnFrontEndOrLoadingEnd
+    Offset: '0x90'
+    Size: '0x10'
+    Type: TArray<Struct EventsToPlayOnFrontEndOrLoadingStart>
+  ClassSize: '0xa0'
+WwiseAudioReverbPresets:
+  Attributes:
+  - Name: ShortEarlyReflectionPresetName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: LongEarlyReflectionPresetName
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SpaceSizeRTPCName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: EnclosedRatioRTPCName
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: MaterialThicknessRTPCName
+    Offset: '0x20'
+    Size: '0x8'
+    Type: struct FName
+  - Name: MaterialReflectivityRTPCName
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: EnvironmentTraceChannel
+    Offset: '0x30'
+    Size: '0x1'
+    Type: byte
+  - Name: MinSpaceSizeWindowForEarlyReflections
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  - Name: MaxSpaceSizeWindowforEarlyReflections
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: SamplingSettings
+    Offset: '0x3c'
+    Size: '0x28'
+    Type: Struct ReverbPresetControllerSettings
+  ClassSize: '0x64'
+WwiseBinkSettings:
+  Attributes:
+  - Name: PlayEvent
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: StopEvent
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: PreBufferCount
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: Mappings
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct WwiseBinkTrackMappings>
+  ClassSize: '0x38'
+WwiseBinkTrackMapping:
+  Attributes:
+  - Name: mChannelMapping
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: mRequired
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: mVolumeDb
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+WwiseBinkTrackMappings:
+  Attributes:
+  - Name: mLanguage
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: mChannels
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct WwiseBinkTrackMapping>
+  ClassSize: '0x18'
+WwiseEmitterParams:
+  Attributes:
+  - Name: bEnableObstructionAndOcclusion
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bEnableAccoustics
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x2'
+WwiseEventParam:
+  Attributes:
+  - Name: SourcePath
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SourceObj
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
+WwiseExternalSource:
+  Attributes:
+  - Name: path
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'
+WwiseIOPriorityMappingConfig:
+  Attributes:
+  - Name: WwisePriority
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: AsyncIOPriority
+    Offset: '0x4'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+WwiseListenerInfo:
+  Attributes:
+  - Name: Position
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Up
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Right
+    Offset: '0x18'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Front
+    Offset: '0x24'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Velocity
+    Offset: '0x30'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x3c'
+WwiseNativeEmitterPoolDensityParams:
+  Attributes:
+  - Name: PlayPoolDensityAudio
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: PoolDensityAudioPlayEvent
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: PoolDensityAudioStopEvent
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: DensityRtpcName
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FullDensityAmount
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: DensityDistance
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+WwiseNetworkRelationship:
+  Attributes:
+  - Name: SwitchGroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: RemotePlayerSwitchValue
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: LocalPlayerSwitchValue
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
+WwiseSubtitle:
+  Attributes:
+  - Name: Subtitle
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'

@@ -1,0 +1,26 @@
+BP_FishingFloat_C:
+  Attributes:
+  - Name: FishingFloatNameplate
+    Offset: '0x7f0'
+    Size: '0x8'
+    Type: Class FishingFloatNameplateComponent*
+  - Name: StaticMesh
+    Offset: '0x7f8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x10'
+  FullSize: '0x800'
+  InheritedSize: '0x7f0'
+  Super: FishingFloat
+BP_FishingRod_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xba0'
+  InheritedSize: '0xba0'
+  Super: FishingRod
+BP_FishingRod_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc

@@ -1,0 +1,18 @@
+Title_HC_HunterOfTheSeaOfThieves_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: TitleDesc
+Title_HC_HunterOfTreacherousPlunder_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: TitleDesc
+Title_HC_HunterOfTrophyFish_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: TitleDesc

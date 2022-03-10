@@ -1,0 +1,81 @@
+PermanentPromptNetworkEvent:
+  Attributes:
+  - Name: Prompt
+    Offset: '0x10'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: StartOrStop
+    Offset: '0x78'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x80'
+PlayerPromptTelemetryEvent:
+  Attributes:
+  - Name: Message
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Key
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'
+PrioritisedPrompt:
+  Attributes:
+  - Name: Message
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: Key
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PopUpMessageDesc
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class PopUpMessageDesc*
+  - Name: BasePriority
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: MenuNavigation
+    Offset: '0x51'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x58'
+PrioritisedPromptHandle:
+  Attributes:
+  - Name: Id
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x10'
+PrioritisedPromptWithHandle:
+  Attributes:
+  - Name: PromptHandle
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct PrioritisedPromptHandle
+  - Name: Prompt
+    Offset: '0x10'
+    Size: '0x58'
+    Type: Struct PrioritisedPrompt
+  ClassSize: '0x68'
+PromptEvaluation:
+  Attributes:
+  - Name: PromptType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Prompt
+    Offset: '0x8'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  ClassSize: '0x70'
+PromptsCounterIncrementEvent:
+  Attributes:
+  - Name: AccessKey
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x8'

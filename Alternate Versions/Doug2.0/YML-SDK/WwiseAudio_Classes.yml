@@ -1,0 +1,330 @@
+AnimNotifyWwiseEmitterComponentRetrievalInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+MovieSceneAkAudioEventSection:
+  Attributes:
+  - Name: Event
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x8'
+  FullSize: '0xa0'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneAkAudioEventTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xa0'
+  InheritedSize: '0xa0'
+  Super: MovieSceneAkTrack
+MovieSceneAkAudioRTPCSection:
+  Attributes:
+  - Name: Name
+    Offset: '0xa0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FloatCurve
+    Offset: '0xb0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x90'
+  FullSize: '0x128'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneAkAudioRTPCTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xa0'
+  InheritedSize: '0xa0'
+  Super: MovieSceneAkTrack
+MovieSceneAkTrack:
+  Attributes:
+  - Name: Sections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class Sections*>
+  - Name: bIsAMasterTrack
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+  FullSize: '0xa0'
+  InheritedSize: '0x88'
+  Super: MovieSceneTrack
+WwiseAudioSettings:
+  Attributes:
+  - Name: ReverbPresetSettings
+    Offset: '0xe8'
+    Size: '0x64'
+    Type: Struct WwiseAudioReverbPresets
+  - Name: BinkSettings
+    Offset: '0x150'
+    Size: '0x38'
+    Type: Struct WwiseBinkSettings
+  - Name: PersistentSoundBanks
+    Offset: '0x188'
+    Size: '0x10'
+    Type: TArray<Struct BinkSettings>
+  - Name: InitBank
+    Offset: '0x198'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: WwiseSoundbanksRoot
+    Offset: '0x1a8'
+    Size: '0x10'
+    Type: Struct DirectoryPath
+  - Name: WwiseIDsDatabase
+    Offset: '0x1b8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: WwiseStreamedFilesDirectory
+    Offset: '0x1c8'
+    Size: '0x10'
+    Type: Struct DirectoryPath
+  - Name: AsyncIOPriorityMappings
+    Offset: '0x1d8'
+    Size: '0x10'
+    Type: TArray<Struct WwiseStreamedFilesDirectory>
+  - Name: TritonAcousticMapsDirectory
+    Offset: '0x1e8'
+    Size: '0x10'
+    Type: Struct DirectoryPath
+  - Name: DefaultLanguage
+    Offset: '0x1f8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SinkSharesetName
+    Offset: '0x208'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PauseEventStart
+    Offset: '0x218'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: PauseEventRelease
+    Offset: '0x228'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: StopAllEvent
+    Offset: '0x238'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: NetworkRelationship
+    Offset: '0x248'
+    Size: '0x18'
+    Type: Struct WwiseNetworkRelationship
+  - Name: AudioStateSettings
+    Offset: '0x260'
+    Size: '0xa0'
+    Type: Struct WwiseAudioGameStateSettings
+  - Name: PauseEventStartInstance
+    Offset: '0x308'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: PauseEventReleaseInstance
+    Offset: '0x310'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopAllEventInstance
+    Offset: '0x318'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: AnimNotifyPoolInstance
+    Offset: '0x320'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: EventsToPlayOnFrontendStartInstance
+    Offset: '0x368'
+    Size: '0x10'
+    Type: TArray<class EventsToPlayOnFrontendStartInstance*>
+  - Name: EventsToPlayOnFrontendEndInstance
+    Offset: '0x378'
+    Size: '0x10'
+    Type: TArray<class EventsToPlayOnFrontendEndInstance*>
+  - Name: EventsToPlayOnStartEngagementInstance
+    Offset: '0x388'
+    Size: '0x10'
+    Type: TArray<class EventsToPlayOnStartEngagementInstance*>
+  - Name: EventsToPlayOnEndEngagementInstance
+    Offset: '0x398'
+    Size: '0x10'
+    Type: TArray<class EventsToPlayOnEndEngagementInstance*>
+  - Name: EventsToPlayOnLoadingStartInstance
+    Offset: '0x3a8'
+    Size: '0x10'
+    Type: TArray<class EventsToPlayOnLoadingStartInstance*>
+  - Name: EventsToPlayOnLoadingEndInstance
+    Offset: '0x3b8'
+    Size: '0x10'
+    Type: TArray<class EventsToPlayOnLoadingEndInstance*>
+  - Name: EventsToPlayOnFrontEndOrLoadingStartInstance
+    Offset: '0x3c8'
+    Size: '0x10'
+    Type: TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>
+  - Name: EventsToPlayOnFrontEndOrLoadingEndInstance
+    Offset: '0x3d8'
+    Size: '0x10'
+    Type: TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>
+  ClassSize: '0x3c0'
+  FullSize: '0x3e8'
+  InheritedSize: '0x28'
+  Super: Object
+WwiseBank:
+  Attributes:
+  - Name: path
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x40'
+  FullSize: '0x68'
+  InheritedSize: '0x28'
+  Super: Object
+WwiseDDSEvent:
+  Attributes:
+  - Name: DDSArgumentsGroupsIDs
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<UInt32 None>
+  ClassSize: '0x10'
+  FullSize: '0x60'
+  InheritedSize: '0x50'
+  Super: WwiseEvent
+WwiseDebugManager:
+  Attributes: []
+  ClassSize: '0x60'
+  FullSize: '0x88'
+  InheritedSize: '0x28'
+  Super: Object
+WwiseEmitterInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WwiseEmitterManager:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: Object
+WwiseEvent:
+  Attributes:
+  - Name: RequiredBank
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class WwiseBank*
+  - Name: WaitForBankToLoad
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  - Name: DurationMin
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: DurationMax
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: MaxAttenuation
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  - Name: DurationType
+    Offset: '0x44'
+    Size: '0x1'
+    Type: byte
+  - Name: CookedIsStopEvent
+    Offset: '0x45'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: Object
+WwiseIDsDatabase:
+  Attributes:
+  - Name: StateGroupIDs
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<UInt32 None>
+  - Name: StateGroupNames
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: StateValueIDs
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<UInt32 >
+  - Name: StateValueNames
+    Offset: '0x58'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: SwitchGroupIDs
+    Offset: '0x68'
+    Size: '0x10'
+    Type: TArray<UInt32 >
+  - Name: SwitchGroupNames
+    Offset: '0x78'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: SwitchStateIDs
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<UInt32 >
+  - Name: SwitchStateNames
+    Offset: '0x98'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x80'
+  FullSize: '0xa8'
+  InheritedSize: '0x28'
+  Super: DataAsset
+WwiseInputManager:
+  Attributes: []
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: Object
+WwiseInputManagerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WwiseMediaManager:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0x78'
+  InheritedSize: '0x28'
+  Super: Object
+WwisePersistentContentStore:
+  Attributes:
+  - Name: PersistentlyLoadedBanks
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class PersistentlyLoadedBanks*>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+WwisePoolManager:
+  Attributes: []
+  ClassSize: '0xd8'
+  FullSize: '0x100'
+  InheritedSize: '0x28'
+  Super: Object
+WwiseSoundFrameManager:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: Object
+WwiseSubSystemInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

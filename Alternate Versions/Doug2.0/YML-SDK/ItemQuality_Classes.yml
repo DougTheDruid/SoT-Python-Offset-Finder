@@ -1,0 +1,28 @@
+ItemQualityComponent:
+  Attributes:
+  - Name: ItemQualityLevel
+    Offset: '0xd0'
+    Size: '0x1'
+    Type: byte
+  - Name: CompanySpecificItemQualityLevels
+    Offset: '0xd8'
+    Size: '0x10'
+    Type: TArray<Struct ItemQualityLevel>
+  - Name: CompanySpecificComplexItemQualityLevels
+    Offset: '0xe8'
+    Size: '0x10'
+    Type: TArray<Struct CompanySpecificItemQualityLevels>
+  - Name: CompanySpecificComplexItemQualityLevelsHandin
+    Offset: '0xf8'
+    Size: '0x10'
+    Type: TArray<Struct CompanySpecificComplexItemQualityLevels>
+  ClassSize: '0x40'
+  FullSize: '0x108'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+ItemQualityInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

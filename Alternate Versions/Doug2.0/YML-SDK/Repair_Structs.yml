@@ -1,0 +1,42 @@
+EventPlayerUndoRepairCompleted:
+  Attributes: []
+  ClassSize: '0x8'
+EventPlayerUndoRepairEnd:
+  Attributes: []
+  ClassSize: '0x8'
+EventPlayerUndoRepairStart:
+  Attributes: []
+  ClassSize: '0x8'
+EventRepairableObjectDestroyed:
+  Attributes: []
+  ClassSize: '0x1'
+EventRepairableObjectRepairEndedEvent:
+  Attributes:
+  - Name: Repairable
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: Position
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: RepairerActor
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: RepairPercentage
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+ShipPartDamagePersistenceModel:
+  Attributes:
+  - Name: ComponentRepairableStates
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Byte EventPlayerNameOverridesLoaded>
+  - Name: Identifier
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'

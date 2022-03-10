@@ -1,0 +1,96 @@
+InstancedRopeComponent:
+  Attributes:
+  - Name: StaticMesh
+    Offset: '0x5a8'
+    Size: '0x8'
+    Type: Class StaticMesh*
+  - Name: Ropes
+    Offset: '0x5b0'
+    Size: '0x10'
+    Type: TArray<Struct StaticMesh>
+  - Name: ShadowLOD
+    Offset: '0x5c0'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0xc0'
+  FullSize: '0x670'
+  InheritedSize: '0x5b0'
+  Super: PrimitiveComponent
+MaterialExpressionRopeParameter:
+  Attributes:
+  - Name: RopeParameterType
+    Offset: '0x70'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+  FullSize: '0x78'
+  InheritedSize: '0x70'
+  Super: MaterialExpression
+RiggingSystem:
+  Attributes:
+  - Name: Root
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: InstancedRopes
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class InstancedRopeComponent*
+  - Name: Lines
+    Offset: '0x3e8'
+    Size: '0x10'
+    Type: TArray<Struct InstancedRopes>
+  - Name: Ropes
+    Offset: '0x3f8'
+    Size: '0x10'
+    Type: TArray<Struct Lines>
+  - Name: PulleyInstances
+    Offset: '0x408'
+    Size: '0x10'
+    Type: TArray<class PulleyInstances*>
+  - Name: Pulleys
+    Offset: '0x418'
+    Size: '0x60'
+    Type: Struct RiggingSystemPulleyData
+  - Name: Sockets
+    Offset: '0x478'
+    Size: '0x10'
+    Type: TArray<Struct Pulleys>
+  - Name: InitialMainRopeLengths
+    Offset: '0x488'
+    Size: '0x10'
+    Type: TArray<Float >
+  ClassSize: '0x150'
+  FullSize: '0x520'
+  InheritedSize: '0x3d0'
+  Super: Actor
+RiggingSystemComponent:
+  Attributes:
+  - Name: RopeStyle
+    Offset: '0x2d0'
+    Size: '0x20'
+    Type: Struct RopeStyleParams
+  - Name: LineGroups
+    Offset: '0x2f0'
+    Size: '0x10'
+    Type: TArray<Struct RopeStyle>
+  - Name: Impl
+    Offset: '0x300'
+    Size: '0x8'
+    Type: Class RiggingSystem*
+  ClassSize: '0x40'
+  FullSize: '0x310'
+  InheritedSize: '0x2d0'
+  Super: SceneComponent
+RopeCatenaryRenderComponent:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x650'
+  InheritedSize: '0x650'
+  Super: CordRenderComponent
+RopeInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

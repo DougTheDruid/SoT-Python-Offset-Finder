@@ -1,0 +1,154 @@
+BP_FishCreature_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: CreatureType
+    Offset: '0x3d8'
+    Size: '0x1'
+    Type: byte
+  - Name: NumOfCreatures
+    Offset: '0x3d9'
+    Size: '0x1'
+    Type: byte
+  - Name: BoundsBias
+    Offset: '0x3dc'
+    Size: '0x4'
+    Type: float
+  - Name: StaticMeshComponent
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: currMaterial
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: MaterialInstance
+    Offset: '0x3f0'
+    Size: '0x10'
+    Type: TArray<class MaterialInstance*>
+  - Name: Seed
+    Offset: '0x400'
+    Size: '0x4'
+    Type: float
+  - Name: SwimSpeed
+    Offset: '0x404'
+    Size: '0x4'
+    Type: float
+  - Name: CirclingSpeed
+    Offset: '0x408'
+    Size: '0x4'
+    Type: float
+  - Name: CirclingDirection
+    Offset: '0x40c'
+    Size: '0x1'
+    Type: byte
+  - Name: CirclingRadius
+    Offset: '0x410'
+    Size: '0x4'
+    Type: float
+  - Name: SwimDeformation
+    Offset: '0x414'
+    Size: '0x4'
+    Type: float
+  - Name: mud
+    Offset: '0x418'
+    Size: '0x4'
+    Type: float
+  - Name: shoalSpeed
+    Offset: '0x41c'
+    Size: '0x4'
+    Type: float
+  - Name: ShoalingSpread
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: ShoalingHeight
+    Offset: '0x428'
+    Size: '0x4'
+    Type: float
+  - Name: fishSpeed
+    Offset: '0x42c'
+    Size: '0x4'
+    Type: float
+  - Name: FishSpread
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: FishHeight
+    Offset: '0x438'
+    Size: '0x4'
+    Type: float
+  - Name: RandomSpread
+    Offset: '0x43c'
+    Size: '0x4'
+    Type: float
+  - Name: HueVariance
+    Offset: '0x440'
+    Size: '0x4'
+    Type: float
+  - Name: Smoothness
+    Offset: '0x444'
+    Size: '0x4'
+    Type: float
+  - Name: SelectedCreatureType
+    Offset: '0x448'
+    Size: '0x10'
+    Type: TArray<Assetclass >
+  - Name: Fish_04
+    Offset: '0x458'
+    Size: '0x10'
+    Type: TArray<Assetclass None>
+  - Name: Fish_05
+    Offset: '0x468'
+    Size: '0x10'
+    Type: TArray<Assetclass WeakObjectProperty>
+  - Name: Size
+    Offset: '0x478'
+    Size: '0x4'
+    Type: float
+  - Name: SizeVariance
+    Offset: '0x47c'
+    Size: '0x4'
+    Type: float
+  - Name: SimSpeed
+    Offset: '0x480'
+    Size: '0x4'
+    Type: float
+  - Name: BBox
+    Offset: '0x484'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Fish_07
+    Offset: '0x490'
+    Size: '0x10'
+    Type: TArray<Assetclass UEndOfGooseChaseClueDestinationDescriptor>
+  - Name: DrawDistance
+    Offset: '0x4a0'
+    Size: '0x4'
+    Type: float
+  - Name: Clown_01
+    Offset: '0x4a8'
+    Size: '0x10'
+    Type: TArray<Assetclass G>
+  - Name: SizeCompensation
+    Offset: '0x4b8'
+    Size: '0x4'
+    Type: float
+  - Name: Splashtail
+    Offset: '0x4c0'
+    Size: '0x10'
+    Type: TArray<Assetclass execLetBool>
+  - Name: Pondie
+    Offset: '0x4d0'
+    Size: '0x10'
+    Type: TArray<Assetclass ByteProperty>
+  - Name: FishDistribution
+    Offset: '0x4e0'
+    Size: '0x10'
+    Type: Struct LinearColor
+  ClassSize: '0x120'
+  FullSize: '0x4f0'
+  InheritedSize: '0x3d0'
+  Super: Actor

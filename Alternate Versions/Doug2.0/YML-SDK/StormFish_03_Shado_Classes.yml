@@ -1,0 +1,24 @@
+BP_fod_StormFish_03_ShadowBurned_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_StormFish_03_ShadowCooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_StormFish_03_ShadowRaw_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_StormFish_03_ShadowUndercooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc

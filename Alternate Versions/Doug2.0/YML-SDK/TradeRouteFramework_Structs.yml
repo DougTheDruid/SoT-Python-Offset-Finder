@@ -1,0 +1,18 @@
+QuestVariableTradeRouteData:
+  Attributes: []
+  ClassSize: '0x20'
+TradeRouteMapping:
+  Attributes:
+  - Name: StartIsland
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct IslandSelectionType
+  - Name: DifficultyBand
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
+  - Name: TradeRouteReference
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x20'

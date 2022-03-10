@@ -1,0 +1,431 @@
+CachedMovieSceneEvaluationTemplate:
+  Attributes: []
+  ClassSize: '0x220'
+MovieSceneBinding:
+  Attributes:
+  - Name: ObjectGuid
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: BindingName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Tracks
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<class Tracks*>
+  ClassSize: '0x30'
+MovieSceneBindingOverrideData:
+  Attributes:
+  - Name: ObjectBindingId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct MovieSceneObjectBindingPtr
+  - Name: bOverridesDefault
+    Offset: '0x18'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1c'
+MovieSceneEditorData:
+  Attributes:
+  - Name: WorkingRange
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: ViewRange
+    Offset: '0x60'
+    Size: '0x10'
+    Type: Struct FloatRange
+  ClassSize: '0x70'
+MovieSceneEmptyStruct:
+  Attributes: []
+  ClassSize: '0x1'
+MovieSceneEvalTemplate:
+  Attributes:
+  - Name: CompletionMode
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x18'
+MovieSceneEvalTemplateBase:
+  Attributes: []
+  ClassSize: '0x10'
+MovieSceneEvalTemplatePtr:
+  Attributes: []
+  ClassSize: '0x38'
+MovieSceneEvaluationField:
+  Attributes:
+  - Name: Ranges
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct MovieSceneEvalTemplateBase>
+  - Name: Groups
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct MovieSceneEvaluationGroup>
+  - Name: MetaData
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct MovieSceneEvaluationMetaData>
+  ClassSize: '0x30'
+MovieSceneEvaluationFieldSegmentPtr:
+  Attributes:
+  - Name: SegmentIndex
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0xc'
+MovieSceneEvaluationFieldTrackPtr:
+  Attributes:
+  - Name: SequenceId
+    Offset: '0x0'
+    Size: '0x4'
+    Type: Struct MovieSceneSequenceID
+  - Name: TrackIdentifier
+    Offset: '0x4'
+    Size: '0x4'
+    Type: Struct MovieSceneTrackIdentifier
+  ClassSize: '0x8'
+MovieSceneEvaluationGroup:
+  Attributes:
+  - Name: LUTIndices
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct MovieSceneEvaluationGroupLUTIndex>
+  - Name: SegmentPtrLUT
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct MovieSceneEvaluationFieldSegmentPtr>
+  ClassSize: '0x20'
+MovieSceneEvaluationGroupLUTIndex:
+  Attributes:
+  - Name: bRequiresImmediateFlush
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: LUTOffset
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: NumInitPtrs
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: NumEvalPtrs
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
+MovieSceneEvaluationMetaData:
+  Attributes:
+  - Name: ActiveSequences
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct Groups>
+  ClassSize: '0x10'
+MovieSceneEvaluationTemplate:
+  Attributes:
+  - Name: EvaluationField
+    Offset: '0xa0'
+    Size: '0x30'
+    Type: Struct MovieSceneEvaluationField
+  - Name: Hierarchy
+    Offset: '0xd0'
+    Size: '0xa0'
+    Type: Struct MovieSceneSequenceHierarchy
+  - Name: Ledger
+    Offset: '0x170'
+    Size: '0xa8'
+    Type: Struct MovieSceneGenerationLedger
+  - Name: bHasLegacyTrackInstances
+    Offset: '0x218'
+    Size: '0x1'
+    Type: bool
+  - Name: bKeepStaleTracks
+    Offset: '0x218'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x220'
+MovieSceneEvaluationTrack:
+  Attributes:
+  - Name: ObjectBindingId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: EvaluationMethod
+    Offset: '0x12'
+    Size: '0x1'
+    Type: byte
+  - Name: Segments
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct EvaluationMethod>
+  - Name: ChildTemplates
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct Segments>
+  - Name: TrackTemplate
+    Offset: '0x38'
+    Size: '0x38'
+    Type: Struct MovieSceneTrackImplementationPtr
+  - Name: EvaluationGroup
+    Offset: '0x70'
+    Size: '0x8'
+    Type: struct FName
+  - Name: bEvaluateInPreroll
+    Offset: '0x78'
+    Size: '0x1'
+    Type: bool
+  - Name: bEvaluateInPostroll
+    Offset: '0x78'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x80'
+MovieSceneExpansionState:
+  Attributes:
+  - Name: bExpanded
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+MovieSceneGenerationLedger:
+  Attributes: []
+  ClassSize: '0xa8'
+MovieSceneKeyStruct:
+  Attributes: []
+  ClassSize: '0x8'
+MovieSceneLegacyTrackInstanceTemplate:
+  Attributes:
+  - Name: Track
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class MovieSceneTrack*
+  ClassSize: '0x20'
+MovieSceneObjectBindingPtr:
+  Attributes:
+  - Name: Guid
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x10'
+MovieScenePossessable:
+  Attributes:
+  - Name: Guid
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Name
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PossessedObjectClass
+    Offset: '0x20'
+    Size: '0x8'
+    Type: class
+  - Name: ParentGuid
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x38'
+MovieScenePropertySectionData:
+  Attributes:
+  - Name: PropertyName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: PropertyPath
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FunctionName
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x20'
+MovieSceneSectionEvalOptions:
+  Attributes:
+  - Name: bCanEditCompletionMode
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: CompletionMode
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x2'
+MovieSceneSectionParameters:
+  Attributes:
+  - Name: StartOffset
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: TimeScale
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: PrerollTime
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: PostrollTime
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
+MovieSceneSegment:
+  Attributes: []
+  ClassSize: '0x40'
+MovieSceneSequenceCachedSignature:
+  Attributes:
+  - Name: CachedSignature
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x18'
+MovieSceneSequenceHierarchy:
+  Attributes: []
+  ClassSize: '0xa0'
+MovieSceneSequenceHierarchyNode:
+  Attributes:
+  - Name: ParentID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: Struct MovieSceneSequenceID
+  - Name: Children
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct ParentID>
+  ClassSize: '0x18'
+MovieSceneSequenceID:
+  Attributes: []
+  ClassSize: '0x4'
+MovieSceneSequencePlaybackSettings:
+  Attributes:
+  - Name: LoopCount
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: PlayRate
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: bRandomStartTime
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: StartTime
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: bRestoreState
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x28'
+MovieSceneSequenceTransform:
+  Attributes:
+  - Name: TimeScale
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Offset
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+MovieSceneSpawnable:
+  Attributes:
+  - Name: Guid
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Name
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ObjectTemplate
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: ChildPossessables
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct ObjectTemplate>
+  - Name: Ownership
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x40'
+MovieSceneSubSequenceData:
+  Attributes:
+  - Name: Sequence
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class MovieSceneSequence*
+  - Name: RootToSequenceTransform
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct MovieSceneSequenceTransform
+  - Name: SourceSequenceSignature
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: DeterministicSequenceID
+    Offset: '0x20'
+    Size: '0x4'
+    Type: Struct MovieSceneSequenceID
+  ClassSize: '0x28'
+MovieSceneTrackCompilationParams:
+  Attributes:
+  - Name: bForEditorPreview
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+MovieSceneTrackEvalOptions:
+  Attributes:
+  - Name: bCanEvaluateNearestSection
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bEvaluateNearestSection
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bEvaluateInPreroll
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bEvaluateInPostroll
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x4'
+MovieSceneTrackIdentifier:
+  Attributes: []
+  ClassSize: '0x4'
+MovieSceneTrackImplementation:
+  Attributes: []
+  ClassSize: '0x10'
+MovieSceneTrackImplementationPtr:
+  Attributes: []
+  ClassSize: '0x38'
+MovieSceneTrackLabels:
+  Attributes:
+  - Name: Strings
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Str None>
+  ClassSize: '0x10'
+SectionEvaluationData:
+  Attributes:
+  - Name: ImplIndex
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: ForcedTime
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'

@@ -1,0 +1,36 @@
+BP_fod_Wrecker_03_MoonCooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_Wrecker_03_RoseCooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_Wrecker_03_SnowCooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_Wrecker_05_MoonCooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_Wrecker_05_RoseCooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_Wrecker_05_SnowCooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc

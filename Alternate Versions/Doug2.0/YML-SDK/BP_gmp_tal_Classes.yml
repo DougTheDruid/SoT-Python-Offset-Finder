@@ -1,0 +1,28 @@
+BP_gmp_tal_ancient_spyglass_reward_01_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_gmp_tal_makeshift_spyglass_01_b_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_gmp_tal_makeshift_spyglass_01_b_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x500'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x508'
+  InheritedSize: '0x500'
+  Super: ItemInfo
+BP_gmp_tal_makeshift_spyglass_01_b_Wieldable_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x890'
+  InheritedSize: '0x890'
+  Super: BP_Spyglass_C

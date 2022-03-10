@@ -1,0 +1,12 @@
+SOT_World_Layout_Design_Starlight_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d8'
+  Super: LevelScriptActor
+SOT_World_Layout_Starlight_Portals_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d8'
+  Super: LevelScriptActor

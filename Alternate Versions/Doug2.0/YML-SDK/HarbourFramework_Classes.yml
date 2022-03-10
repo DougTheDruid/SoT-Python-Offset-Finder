@@ -1,0 +1,28 @@
+HarbourComponent:
+  Attributes:
+  - Name: HarbourRadiusInCentimetres
+    Offset: '0x2d8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x30'
+  FullSize: '0x300'
+  InheritedSize: '0x2d0'
+  Super: SceneComponent
+HarbourInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+HarbourService:
+  Attributes: []
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: Object
+HarbourServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

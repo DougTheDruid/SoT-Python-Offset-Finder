@@ -1,0 +1,12 @@
+OcclusionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+OcclusionService:
+  Attributes: []
+  ClassSize: '0x68'
+  FullSize: '0x90'
+  InheritedSize: '0x28'
+  Super: Object

@@ -1,0 +1,110 @@
+AD_ThirdPerson_Phantom_C:
+  Attributes:
+  - Name: None
+    Offset: '0x80'
+    Size: '0x10'
+    Type: Struct ADS_IdlesNative
+  - Name: None
+    Offset: '0x90'
+    Size: '0x50'
+    Type: Struct ADS_LocomotionNative
+  - Name: None
+    Offset: '0xe0'
+    Size: '0x140'
+    Type: Struct ADS_LocomotionAlternateNative
+  - Name: None
+    Offset: '0x220'
+    Size: '0x78'
+    Type: Struct ADS_JumpingNative
+  - Name: None
+    Offset: '0x298'
+    Size: '0x68'
+    Type: Struct ADS_SwimmingNative
+  - Name: None
+    Offset: '0x300'
+    Size: '0x88'
+    Type: Struct ADS_WheelNative
+  - Name: None
+    Offset: '0x388'
+    Size: '0x68'
+    Type: Struct ADS_CapstanNative
+  - Name: None
+    Offset: '0x3f0'
+    Size: '0x68'
+    Type: Struct ADS_LadderNative
+  - Name: None
+    Offset: '0x458'
+    Size: '0x10'
+    Type: Struct ADS_ObjectsNative
+  - Name: None
+    Offset: '0x468'
+    Size: '0x38'
+    Type: Struct ADS_CannonNative
+  - Name: None
+    Offset: '0x4a0'
+    Size: '0x28'
+    Type: Struct ADS_HarpoonLauncherNative
+  - Name: None
+    Offset: '0x4c8'
+    Size: '0x2'
+    Type: Struct ADS_Sockets
+  - Name: None
+    Offset: '0x4d0'
+    Size: '0x90'
+    Type: Struct ADS_FacialNative
+  - Name: None
+    Offset: '0x560'
+    Size: '0x28'
+    Type: Struct ADS_IKFootPlantingNative
+  - Name: None
+    Offset: '0x588'
+    Size: '0x40'
+    Type: Struct ADS_HitReactsNative
+  - Name: None
+    Offset: '0x5c8'
+    Size: '0x30'
+    Type: Struct ADS_MapTableNative
+  - Name: None
+    Offset: '0x5f8'
+    Size: '0x10'
+    Type: Struct ADS_SpawnNative2
+  - Name: None
+    Offset: '0x608'
+    Size: '0x10'
+    Type: Struct ADS_CharacterSelectNative
+  - Name: None
+    Offset: '0x618'
+    Size: '0x10'
+    Type: Struct ADS_SkeletonFleeNative
+  - Name: None
+    Offset: '0x628'
+    Size: '0x10'
+    Type: Struct ADS_InteractionNative
+  - Name: None
+    Offset: '0x638'
+    Size: '0x10'
+    Type: Struct ADS_SkeletonSensing
+  - Name: None
+    Offset: '0x648'
+    Size: '0x10'
+    Type: Struct ADS_SkeletonEmoteActions
+  - Name: None
+    Offset: '0x658'
+    Size: '0x98'
+    Type: Struct ADS_RowingBoatNative
+  - Name: None
+    Offset: '0x6f0'
+    Size: '0x48'
+    Type: Struct ADS_SkeletonCaptainNative
+  - Name: None
+    Offset: '0x738'
+    Size: '0x28'
+    Type: Struct ADS_SkeletonCurseNative
+  - Name: None
+    Offset: '0x760'
+    Size: '0x28'
+    Type: Struct ADS_WaterPumpNative
+  ClassSize: '0x708'
+  FullSize: '0x788'
+  InheritedSize: '0x80'
+  Super: AthenaAnimationThirdPersonAnimationData

@@ -1,0 +1,30 @@
+GHLetter_ExclusionEntitlement_Campaign019_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc
+HCLetter_ExclusionEntitlementCampaign019_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc
+MALetter_ExclusionEntitlementCampaign019_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc
+OOSLetter_ExclusionEntitlementCampaign019_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc
+SDLetter_ExclusionEntitlementCampaign019_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc

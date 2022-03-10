@@ -1,0 +1,30 @@
+CannonballItemCategory_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: CannonballItemCategory
+ChainShotCannonballItemCategory_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: CannonballItemCategory_C
+CursedCannonballItemCategory_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: CannonballItemCategory_C
+RegularCannonballItemCategory_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: CannonballItemCategory_C
+ThrowableCannonballItemCategory_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: CursedCannonballItemCategory_C

@@ -1,0 +1,130 @@
+BP_MerchantCrate_AnyItemCrate_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x710'
+  InheritedSize: '0x708'
+  Super: BootyItemInfo
+BP_MerchantCrate_BananaCrate_FullyStocked_ItemInfo_C:
+  Attributes:
+  - Name: CommoditySource
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class CommoditySourceComponent*
+  - Name: CrateFiller
+    Offset: '0x710'
+    Size: '0x8'
+    Type: Class CrateFillerComponent*
+  - Name: DefaultSceneRoot
+    Offset: '0x718'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x18'
+  FullSize: '0x720'
+  InheritedSize: '0x708'
+  Super: BootyItemInfo
+BP_MerchantCrate_CannonballCrate_FullyStocked_ItemInfo_C:
+  Attributes:
+  - Name: CommoditySource
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class CommoditySourceComponent*
+  - Name: CrateFiller
+    Offset: '0x710'
+    Size: '0x8'
+    Type: Class CrateFillerComponent*
+  - Name: DefaultSceneRoot
+    Offset: '0x718'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x18'
+  FullSize: '0x720'
+  InheritedSize: '0x708'
+  Super: BootyItemInfo
+BP_MerchantCrate_Commodity_GhostCrate_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x710'
+  InheritedSize: '0x708'
+  Super: BootyItemInfo
+BP_MerchantCrate_Commodity_SilkCrate_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x710'
+  InheritedSize: '0x708'
+  Super: BootyItemInfo
+BP_MerchantCrate_Commodity_SpiceCrate_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x710'
+  InheritedSize: '0x708'
+  Super: BootyItemInfo
+BP_MerchantCrate_Commodity_TeaCrate_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x710'
+  InheritedSize: '0x708'
+  Super: BootyItemInfo
+BP_MerchantCrate_GunpowderBarrel_ItemInfo_C:
+  Attributes:
+  - Name: None
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x710'
+  InheritedSize: '0x708'
+  Super: BootyItemInfo
+BP_MerchantCrate_PigCrate_ItemInfo_C:
+  Attributes:
+  - Name: None
+    Offset: '0x780'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x788'
+  InheritedSize: '0x780'
+  Super: MerchantCrateItemInfo
+BP_MerchantCrate_WoodCrate_FullyStocked_ItemInfo_C:
+  Attributes:
+  - Name: CommoditySource
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class CommoditySourceComponent*
+  - Name: CrateFiller
+    Offset: '0x710'
+    Size: '0x8'
+    Type: Class CrateFillerComponent*
+  - Name: DefaultSceneRoot
+    Offset: '0x718'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x18'
+  FullSize: '0x720'
+  InheritedSize: '0x708'
+  Super: BootyItemInfo
+BP_MermaidGem_Proxy_Sapphire_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x7c8'
+  InheritedSize: '0x7c8'
+  Super: BP_TreasureArtifact_Proxy_Base_C

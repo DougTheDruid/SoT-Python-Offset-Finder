@@ -1,0 +1,42 @@
+CoherentUIGTLoadingScreenSettings:
+  Attributes:
+  - Name: MinimumLoadingScreenDisplayTime
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: bAutoCompleteWhenLoadingCompletes
+    Offset: '0x4'
+    Size: '0x1'
+    Type: bool
+  - Name: bWaitForManualStop
+    Offset: '0x5'
+    Size: '0x1'
+    Type: bool
+  - Name: URL
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x18'
+CoherentUIGTViewInfo:
+  Attributes:
+  - Name: Width
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Height
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: IsTransparent
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: ClickThroughAlphaThreshold
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: AnimationFrameDefer
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'

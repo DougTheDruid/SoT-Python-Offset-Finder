@@ -1,0 +1,17 @@
+GameServiceCoordinator:
+  Attributes:
+  - Name: Services
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct GameServiceCoordinatorUnit>
+  ClassSize: '0x20'
+GameServiceCoordinatorUnit:
+  Attributes:
+  - Name: Service
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x18'
+GameServiceMap:
+  Attributes: []
+  ClassSize: '0x70'

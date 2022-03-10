@@ -1,0 +1,1914 @@
+AsyncTaskDownloadImage:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: BlueprintAsyncActionBase
+BoolBinding:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x48'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+Border:
+  Attributes:
+  - Name: ContentColorAndOpacity
+    Offset: '0x150'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: Padding
+    Offset: '0x170'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: HorizontalAlignment
+    Offset: '0x180'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x181'
+    Size: '0x1'
+    Type: byte
+  - Name: Background
+    Offset: '0x188'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: BrushColor
+    Offset: '0x228'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: bShowEffectWhenDisabled
+    Offset: '0x248'
+    Size: '0x1'
+    Type: bool
+  - Name: Brush
+    Offset: '0x2a8'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  ClassSize: '0x160'
+  FullSize: '0x2b0'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+BorderSlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: HorizontalAlignment
+    Offset: '0x48'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x49'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x30'
+  FullSize: '0x68'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+BrushBinding:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x50'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+Button:
+  Attributes:
+  - Name: Style
+    Offset: '0x150'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: WidgetStyle
+    Offset: '0x158'
+    Size: '0x2a8'
+    Type: Struct ButtonStyle
+  - Name: ColorAndOpacity
+    Offset: '0x400'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: BackgroundColor
+    Offset: '0x410'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ClickMethod
+    Offset: '0x420'
+    Size: '0x1'
+    Type: byte
+  - Name: TouchMethod
+    Offset: '0x421'
+    Size: '0x1'
+    Type: byte
+  - Name: IsFocusable
+    Offset: '0x422'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x320'
+  FullSize: '0x470'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+ButtonSlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: HorizontalAlignment
+    Offset: '0x48'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x49'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x30'
+  FullSize: '0x68'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+CanvasPanel:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x168'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+CanvasPanelSlot:
+  Attributes:
+  - Name: LayoutData
+    Offset: '0x38'
+    Size: '0x28'
+    Type: Struct AnchorData
+  - Name: bAutoSize
+    Offset: '0x60'
+    Size: '0x1'
+    Type: bool
+  - Name: ZOrder
+    Offset: '0x64'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x38'
+  FullSize: '0x70'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+CheckBox:
+  Attributes:
+  - Name: CheckedState
+    Offset: '0x150'
+    Size: '0x1'
+    Type: byte
+  - Name: WidgetStyle
+    Offset: '0x168'
+    Size: '0x5f0'
+    Type: Struct CheckBoxStyle
+  - Name: Style
+    Offset: '0x758'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: UncheckedImage
+    Offset: '0x760'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: UncheckedHoveredImage
+    Offset: '0x768'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: UncheckedPressedImage
+    Offset: '0x770'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: CheckedImage
+    Offset: '0x778'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: CheckedHoveredImage
+    Offset: '0x780'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: CheckedPressedImage
+    Offset: '0x788'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: UndeterminedImage
+    Offset: '0x790'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: UndeterminedHoveredImage
+    Offset: '0x798'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: UndeterminedPressedImage
+    Offset: '0x7a0'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: HorizontalAlignment
+    Offset: '0x7a8'
+    Size: '0x1'
+    Type: byte
+  - Name: Padding
+    Offset: '0x7ac'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: BorderBackgroundColor
+    Offset: '0x7c0'
+    Size: '0x30'
+    Type: Struct SlateColor
+  ClassSize: '0x6c8'
+  FullSize: '0x818'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+CheckedStateBinding:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x50'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+CircularThrobber:
+  Attributes:
+  - Name: NumberOfPieces
+    Offset: '0x138'
+    Size: '0x4'
+    Type: int
+  - Name: Period
+    Offset: '0x13c'
+    Size: '0x4'
+    Type: float
+  - Name: Radius
+    Offset: '0x140'
+    Size: '0x4'
+    Type: float
+  - Name: PieceImage
+    Offset: '0x148'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: Image
+    Offset: '0x150'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0xc0'
+  FullSize: '0x1f8'
+  InheritedSize: '0x138'
+  Super: Widget
+ColorBinding:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x50'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+ComboBox:
+  Attributes:
+  - Name: Items
+    Offset: '0x138'
+    Size: '0x10'
+    Type: TArray<class Items*>
+  ClassSize: '0x38'
+  FullSize: '0x170'
+  InheritedSize: '0x138'
+  Super: Widget
+ComboBoxString:
+  Attributes:
+  - Name: DefaultOptions
+    Offset: '0x138'
+    Size: '0x10'
+    Type: TArray<Str None>
+  - Name: SelectedOption
+    Offset: '0x148'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: WidgetStyle
+    Offset: '0x158'
+    Size: '0x428'
+    Type: Struct ComboBoxStyle
+  - Name: ContentPadding
+    Offset: '0x580'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: MaxListHeight
+    Offset: '0x590'
+    Size: '0x4'
+    Type: float
+  - Name: HasDownArrow
+    Offset: '0x594'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x4e8'
+  FullSize: '0x620'
+  InheritedSize: '0x138'
+  Super: Widget
+ContentWidget:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x150'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+DragDropOperation:
+  Attributes:
+  - Name: Tag
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: payload
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: DefaultDragVisual
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class Widget*
+  - Name: Pivot
+    Offset: '0x48'
+    Size: '0x1'
+    Type: byte
+  - Name: Offset
+    Offset: '0x4c'
+    Size: '0x8'
+    Type: Struct Vector2D
+  ClassSize: '0x60'
+  FullSize: '0x88'
+  InheritedSize: '0x28'
+  Super: Object
+EditableText:
+  Attributes:
+  - Name: Text
+    Offset: '0x138'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: HintText
+    Offset: '0x180'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: WidgetStyle
+    Offset: '0x1c8'
+    Size: '0x228'
+    Type: Struct EditableTextStyle
+  - Name: Style
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: BackgroundImageSelected
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: BackgroundImageComposing
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: CaretImage
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: Font
+    Offset: '0x410'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: ColorAndOpacity
+    Offset: '0x450'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: IsReadOnly
+    Offset: '0x480'
+    Size: '0x1'
+    Type: bool
+  - Name: IsPassword
+    Offset: '0x481'
+    Size: '0x1'
+    Type: bool
+  - Name: MinimumDesiredWidth
+    Offset: '0x484'
+    Size: '0x4'
+    Type: float
+  - Name: IsCaretMovedWhenGainFocus
+    Offset: '0x488'
+    Size: '0x1'
+    Type: bool
+  - Name: SelectAllTextWhenFocused
+    Offset: '0x489'
+    Size: '0x1'
+    Type: bool
+  - Name: RevertTextOnEscape
+    Offset: '0x48a'
+    Size: '0x1'
+    Type: bool
+  - Name: ClearKeyboardFocusOnCommit
+    Offset: '0x48b'
+    Size: '0x1'
+    Type: bool
+  - Name: SelectAllTextOnCommit
+    Offset: '0x48c'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x390'
+  FullSize: '0x4c8'
+  InheritedSize: '0x138'
+  Super: Widget
+EditableTextBox:
+  Attributes:
+  - Name: Text
+    Offset: '0x138'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: WidgetStyle
+    Offset: '0x180'
+    Size: '0x860'
+    Type: Struct EditableTextBoxStyle
+  - Name: Style
+    Offset: '0x9e0'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: HintText
+    Offset: '0x9e8'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: Font
+    Offset: '0xa30'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: ForegroundColor
+    Offset: '0xa70'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: BackgroundColor
+    Offset: '0xa80'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ReadOnlyForegroundColor
+    Offset: '0xa90'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: IsReadOnly
+    Offset: '0xaa0'
+    Size: '0x1'
+    Type: bool
+  - Name: IsPassword
+    Offset: '0xaa1'
+    Size: '0x1'
+    Type: bool
+  - Name: MinimumDesiredWidth
+    Offset: '0xaa4'
+    Size: '0x4'
+    Type: float
+  - Name: Padding
+    Offset: '0xaa8'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: IsCaretMovedWhenGainFocus
+    Offset: '0xab8'
+    Size: '0x1'
+    Type: bool
+  - Name: SelectAllTextWhenFocused
+    Offset: '0xab9'
+    Size: '0x1'
+    Type: bool
+  - Name: RevertTextOnEscape
+    Offset: '0xaba'
+    Size: '0x1'
+    Type: bool
+  - Name: ClearKeyboardFocusOnCommit
+    Offset: '0xabb'
+    Size: '0x1'
+    Type: bool
+  - Name: SelectAllTextOnCommit
+    Offset: '0xabc'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x9c0'
+  FullSize: '0xaf8'
+  InheritedSize: '0x138'
+  Super: Widget
+ExpandableArea:
+  Attributes:
+  - Name: bIsExpanded
+    Offset: '0x140'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxHeight
+    Offset: '0x144'
+    Size: '0x4'
+    Type: float
+  - Name: AreaPadding
+    Offset: '0x148'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: HeaderContent
+    Offset: '0x168'
+    Size: '0x8'
+    Type: Class Widget*
+  - Name: BodyContent
+    Offset: '0x170'
+    Size: '0x8'
+    Type: Class Widget*
+  ClassSize: '0x58'
+  FullSize: '0x190'
+  InheritedSize: '0x138'
+  Super: Widget
+FloatBinding:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x48'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+GridPanel:
+  Attributes:
+  - Name: ColumnFill
+    Offset: '0x150'
+    Size: '0x10'
+    Type: TArray<Float None>
+  - Name: RowFill
+    Offset: '0x160'
+    Size: '0x10'
+    Type: TArray<Float >
+  ClassSize: '0x38'
+  FullSize: '0x188'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+GridSlot:
+  Attributes:
+  - Name: HorizontalAlignment
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x39'
+    Size: '0x1'
+    Type: byte
+  - Name: Row
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: int
+  - Name: RowSpan
+    Offset: '0x40'
+    Size: '0x4'
+    Type: int
+  - Name: Column
+    Offset: '0x44'
+    Size: '0x4'
+    Type: int
+  - Name: ColumnSpan
+    Offset: '0x48'
+    Size: '0x4'
+    Type: int
+  - Name: Layer
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: int
+  - Name: Nudge
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Struct Vector2D
+  ClassSize: '0x28'
+  FullSize: '0x60'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+HorizontalBox:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x168'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+HorizontalBoxSlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: Size
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Struct SlateChildSize
+  - Name: HorizontalAlignment
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x51'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+  FullSize: '0x60'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+Image:
+  Attributes:
+  - Name: Image
+    Offset: '0x138'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: Brush
+    Offset: '0x140'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ColorAndOpacity
+    Offset: '0x1e0'
+    Size: '0x10'
+    Type: Struct LinearColor
+  ClassSize: '0xf0'
+  FullSize: '0x228'
+  InheritedSize: '0x138'
+  Super: Widget
+Int32Binding:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x48'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+InvalidationBox:
+  Attributes:
+  - Name: CacheRelativeTransforms
+    Offset: '0x150'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x20'
+  FullSize: '0x170'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+ListView:
+  Attributes:
+  - Name: ItemHeight
+    Offset: '0x138'
+    Size: '0x4'
+    Type: float
+  - Name: Items
+    Offset: '0x140'
+    Size: '0x10'
+    Type: TArray<class Items*>
+  - Name: SelectionMode
+    Offset: '0x150'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x48'
+  FullSize: '0x180'
+  InheritedSize: '0x138'
+  Super: TableViewBase
+MenuAnchor:
+  Attributes:
+  - Name: MenuClass
+    Offset: '0x150'
+    Size: '0x8'
+    Type: class
+  - Name: Placement
+    Offset: '0x168'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x48'
+  FullSize: '0x198'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+MouseCursorBinding:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x48'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+MovieScene2DTransformSection:
+  Attributes:
+  - Name: Translation
+    Offset: '0xa0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: Rotation
+    Offset: '0x190'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: Scale
+    Offset: '0x208'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: Shear
+    Offset: '0x2f8'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x350'
+  FullSize: '0x3e8'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieScene2DTransformTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneMarginSection:
+  Attributes:
+  - Name: TopCurve
+    Offset: '0xa0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: LeftCurve
+    Offset: '0x118'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: RightCurve
+    Offset: '0x190'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: BottomCurve
+    Offset: '0x208'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x1e8'
+  FullSize: '0x280'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneMarginTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneWidgetMaterialTrack:
+  Attributes:
+  - Name: BrushPropertyNamePath
+    Offset: '0x98'
+    Size: '0x10'
+    Type: TArray<Name None>
+  - Name: TrackName
+    Offset: '0xa8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
+  FullSize: '0xb0'
+  InheritedSize: '0x98'
+  Super: MovieSceneMaterialTrack
+MultiLineEditableText:
+  Attributes:
+  - Name: Text
+    Offset: '0x138'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: WidgetStyle
+    Offset: '0x170'
+    Size: '0x160'
+    Type: Struct TextBlockStyle
+  - Name: Justification
+    Offset: '0x2d0'
+    Size: '0x1'
+    Type: byte
+  - Name: bAutoWrapText
+    Offset: '0x2d1'
+    Size: '0x1'
+    Type: bool
+  - Name: WrapTextAt
+    Offset: '0x2d4'
+    Size: '0x4'
+    Type: float
+  - Name: Font
+    Offset: '0x2d8'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  ClassSize: '0x218'
+  FullSize: '0x350'
+  InheritedSize: '0x138'
+  Super: Widget
+MultiLineEditableTextBox:
+  Attributes:
+  - Name: Text
+    Offset: '0x138'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: WidgetStyle
+    Offset: '0x170'
+    Size: '0x860'
+    Type: Struct EditableTextBoxStyle
+  - Name: TextStyle
+    Offset: '0x9d0'
+    Size: '0x160'
+    Type: Struct TextBlockStyle
+  - Name: Style
+    Offset: '0xb30'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: Justification
+    Offset: '0xb38'
+    Size: '0x1'
+    Type: byte
+  - Name: bAutoWrapText
+    Offset: '0xb39'
+    Size: '0x1'
+    Type: bool
+  - Name: WrapTextAt
+    Offset: '0xb3c'
+    Size: '0x4'
+    Type: float
+  - Name: Font
+    Offset: '0xb40'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: ForegroundColor
+    Offset: '0xb80'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: BackgroundColor
+    Offset: '0xb90'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ReadOnlyForegroundColor
+    Offset: '0xba0'
+    Size: '0x10'
+    Type: Struct LinearColor
+  ClassSize: '0xab0'
+  FullSize: '0xbe8'
+  InheritedSize: '0x138'
+  Super: Widget
+NamedSlot:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x168'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+NamedSlotInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+NativeWidgetHost:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x150'
+  InheritedSize: '0x138'
+  Super: Widget
+Overlay:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x168'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+OverlaySlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: HorizontalAlignment
+    Offset: '0x48'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x49'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x20'
+  FullSize: '0x58'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+PanelSlot:
+  Attributes:
+  - Name: Parent
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class PanelWidget*
+  - Name: Content
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class Widget*
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Visual
+PanelWidget:
+  Attributes:
+  - Name: Slots
+    Offset: '0x138'
+    Size: '0x10'
+    Type: TArray<class Slots*>
+  ClassSize: '0x18'
+  FullSize: '0x150'
+  InheritedSize: '0x138'
+  Super: Widget
+ProgressBar:
+  Attributes:
+  - Name: WidgetStyle
+    Offset: '0x138'
+    Size: '0x1b8'
+    Type: Struct ProgressBarStyle
+  - Name: Style
+    Offset: '0x2f0'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: BackgroundImage
+    Offset: '0x2f8'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: FillImage
+    Offset: '0x300'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: MarqueeImage
+    Offset: '0x308'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: Percent
+    Offset: '0x310'
+    Size: '0x4'
+    Type: float
+  - Name: BarFillType
+    Offset: '0x314'
+    Size: '0x1'
+    Type: byte
+  - Name: bIsMarquee
+    Offset: '0x315'
+    Size: '0x1'
+    Type: bool
+  - Name: FillColorAndOpacity
+    Offset: '0x328'
+    Size: '0x10'
+    Type: Struct LinearColor
+  ClassSize: '0x228'
+  FullSize: '0x360'
+  InheritedSize: '0x138'
+  Super: Widget
+PropertyBinding:
+  Attributes:
+  - Name: SourcePath
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct DynamicPropertyPath
+  - Name: DestinationProperty
+    Offset: '0x40'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: Object
+RichTextBlock:
+  Attributes:
+  - Name: Text
+    Offset: '0x138'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: Font
+    Offset: '0x180'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: Color
+    Offset: '0x1c0'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: Justification
+    Offset: '0x1d0'
+    Size: '0x1'
+    Type: byte
+  - Name: AutoWrapText
+    Offset: '0x1d1'
+    Size: '0x1'
+    Type: bool
+  - Name: WrapTextAt
+    Offset: '0x1d4'
+    Size: '0x4'
+    Type: float
+  - Name: Margin
+    Offset: '0x1d8'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: LineHeightPercentage
+    Offset: '0x1e8'
+    Size: '0x4'
+    Type: float
+  - Name: Decorators
+    Offset: '0x1f0'
+    Size: '0x10'
+    Type: TArray<class Decorators*>
+  ClassSize: '0x240'
+  FullSize: '0x378'
+  InheritedSize: '0x138'
+  Super: Widget
+RichTextBlockDecorator:
+  Attributes:
+  - Name: bReveal
+    Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  - Name: RevealedIndex
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: Object
+SafeZone:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x168'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+SafeZoneSlot:
+  Attributes:
+  - Name: bIsTitleSafe
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  - Name: HAlign
+    Offset: '0x39'
+    Size: '0x1'
+    Type: byte
+  - Name: VAlign
+    Offset: '0x3a'
+    Size: '0x1'
+    Type: byte
+  - Name: Padding
+    Offset: '0x3c'
+    Size: '0x10'
+    Type: Struct Margin
+  ClassSize: '0x18'
+  FullSize: '0x50'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+ScaleBox:
+  Attributes:
+  - Name: StretchDirection
+    Offset: '0x150'
+    Size: '0x1'
+    Type: byte
+  - Name: Stretch
+    Offset: '0x151'
+    Size: '0x1'
+    Type: byte
+  - Name: UserSpecifiedScale
+    Offset: '0x154'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
+  FullSize: '0x170'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+ScaleBoxSlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: HorizontalAlignment
+    Offset: '0x48'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x49'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x30'
+  FullSize: '0x68'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+ScrollBar:
+  Attributes:
+  - Name: WidgetStyle
+    Offset: '0x138'
+    Size: '0x518'
+    Type: Struct ScrollBarStyle
+  - Name: Style
+    Offset: '0x650'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: bAlwaysShowScrollbar
+    Offset: '0x658'
+    Size: '0x1'
+    Type: bool
+  - Name: Orientation
+    Offset: '0x659'
+    Size: '0x1'
+    Type: byte
+  - Name: Thickness
+    Offset: '0x65c'
+    Size: '0x8'
+    Type: Struct Vector2D
+  ClassSize: '0x548'
+  FullSize: '0x680'
+  InheritedSize: '0x138'
+  Super: Widget
+ScrollBox:
+  Attributes:
+  - Name: WidgetStyle
+    Offset: '0x150'
+    Size: '0x248'
+    Type: Struct ScrollBoxStyle
+  - Name: WidgetBarStyle
+    Offset: '0x398'
+    Size: '0x518'
+    Type: Struct ScrollBarStyle
+  - Name: Style
+    Offset: '0x8b0'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: BarStyle
+    Offset: '0x8b8'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: Orientation
+    Offset: '0x8c0'
+    Size: '0x1'
+    Type: byte
+  - Name: ScrollBarVisibility
+    Offset: '0x8c1'
+    Size: '0x1'
+    Type: byte
+  - Name: ConsumeMouseWheel
+    Offset: '0x8c2'
+    Size: '0x1'
+    Type: byte
+  - Name: ScrollbarThickness
+    Offset: '0x8c4'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: AlwaysShowScrollbar
+    Offset: '0x8cc'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x7a0'
+  FullSize: '0x8f0'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+ScrollBoxSlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: HorizontalAlignment
+    Offset: '0x48'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x20'
+  FullSize: '0x58'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+SizeBox:
+  Attributes:
+  - Name: bOverride_WidthOverride
+    Offset: '0x150'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_HeightOverride
+    Offset: '0x150'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_MinDesiredWidth
+    Offset: '0x150'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_MinDesiredHeight
+    Offset: '0x150'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_MaxDesiredWidth
+    Offset: '0x150'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_MaxDesiredHeight
+    Offset: '0x150'
+    Size: '0x1'
+    Type: bool
+  - Name: WidthOverride
+    Offset: '0x154'
+    Size: '0x4'
+    Type: float
+  - Name: HeightOverride
+    Offset: '0x158'
+    Size: '0x4'
+    Type: float
+  - Name: MinDesiredWidth
+    Offset: '0x15c'
+    Size: '0x4'
+    Type: float
+  - Name: MinDesiredHeight
+    Offset: '0x160'
+    Size: '0x4'
+    Type: float
+  - Name: MaxDesiredWidth
+    Offset: '0x164'
+    Size: '0x4'
+    Type: float
+  - Name: MaxDesiredHeight
+    Offset: '0x168'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x38'
+  FullSize: '0x188'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+SizeBoxSlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: HorizontalAlignment
+    Offset: '0x48'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x49'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x30'
+  FullSize: '0x68'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+SlateBlueprintLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+Slider:
+  Attributes:
+  - Name: Value
+    Offset: '0x138'
+    Size: '0x4'
+    Type: float
+  - Name: WidgetStyle
+    Offset: '0x150'
+    Size: '0x248'
+    Type: Struct SliderStyle
+  - Name: Orientation
+    Offset: '0x398'
+    Size: '0x1'
+    Type: byte
+  - Name: SliderBarColor
+    Offset: '0x39c'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: SliderHandleColor
+    Offset: '0x3ac'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: IndentHandle
+    Offset: '0x3bc'
+    Size: '0x1'
+    Type: bool
+  - Name: Locked
+    Offset: '0x3bd'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x2d0'
+  FullSize: '0x408'
+  InheritedSize: '0x138'
+  Super: Widget
+Spacer:
+  Attributes:
+  - Name: Size
+    Offset: '0x138'
+    Size: '0x8'
+    Type: Struct Vector2D
+  ClassSize: '0x20'
+  FullSize: '0x158'
+  InheritedSize: '0x138'
+  Super: Widget
+SpinBox:
+  Attributes:
+  - Name: Value
+    Offset: '0x138'
+    Size: '0x4'
+    Type: float
+  - Name: WidgetStyle
+    Offset: '0x150'
+    Size: '0x318'
+    Type: Struct SpinBoxStyle
+  - Name: Style
+    Offset: '0x468'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: Delta
+    Offset: '0x470'
+    Size: '0x4'
+    Type: float
+  - Name: SliderExponent
+    Offset: '0x474'
+    Size: '0x4'
+    Type: float
+  - Name: Font
+    Offset: '0x478'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: MinDesiredWidth
+    Offset: '0x4b8'
+    Size: '0x4'
+    Type: float
+  - Name: ClearKeyboardFocusOnCommit
+    Offset: '0x4bc'
+    Size: '0x1'
+    Type: bool
+  - Name: SelectAllTextOnCommit
+    Offset: '0x4bd'
+    Size: '0x1'
+    Type: bool
+  - Name: ForegroundColor
+    Offset: '0x4c0'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: bOverride_MinValue
+    Offset: '0x530'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_MaxValue
+    Offset: '0x530'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_MinSliderValue
+    Offset: '0x530'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_MaxSliderValue
+    Offset: '0x530'
+    Size: '0x1'
+    Type: bool
+  - Name: MinValue
+    Offset: '0x534'
+    Size: '0x4'
+    Type: float
+  - Name: MaxValue
+    Offset: '0x538'
+    Size: '0x4'
+    Type: float
+  - Name: MinSliderValue
+    Offset: '0x53c'
+    Size: '0x4'
+    Type: float
+  - Name: MaxSliderValue
+    Offset: '0x540'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x428'
+  FullSize: '0x560'
+  InheritedSize: '0x138'
+  Super: Widget
+TableViewBase:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x138'
+  InheritedSize: '0x138'
+  Super: Widget
+TextBinding:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x50'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+TextBlock:
+  Attributes:
+  - Name: Style
+    Offset: '0x138'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleAsset*
+  - Name: Text
+    Offset: '0x140'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: ColorAndOpacity
+    Offset: '0x188'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: Font
+    Offset: '0x1c8'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: ShadowOffset
+    Offset: '0x208'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: ShadowColorAndOpacity
+    Offset: '0x210'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: Justification
+    Offset: '0x230'
+    Size: '0x1'
+    Type: byte
+  - Name: AutoWrapText
+    Offset: '0x231'
+    Size: '0x1'
+    Type: bool
+  - Name: WrapTextAt
+    Offset: '0x234'
+    Size: '0x4'
+    Type: float
+  - Name: MinDesiredWidth
+    Offset: '0x238'
+    Size: '0x4'
+    Type: float
+  - Name: Margin
+    Offset: '0x23c'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: LineHeightPercentage
+    Offset: '0x24c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x130'
+  FullSize: '0x268'
+  InheritedSize: '0x138'
+  Super: Widget
+Throbber:
+  Attributes:
+  - Name: NumberOfPieces
+    Offset: '0x138'
+    Size: '0x4'
+    Type: int
+  - Name: bAnimateHorizontally
+    Offset: '0x13c'
+    Size: '0x1'
+    Type: bool
+  - Name: bAnimateVertically
+    Offset: '0x13d'
+    Size: '0x1'
+    Type: bool
+  - Name: bAnimateOpacity
+    Offset: '0x13e'
+    Size: '0x1'
+    Type: bool
+  - Name: PieceImage
+    Offset: '0x140'
+    Size: '0x8'
+    Type: Class SlateBrushAsset*
+  - Name: Image
+    Offset: '0x148'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0xb8'
+  FullSize: '0x1f0'
+  InheritedSize: '0x138'
+  Super: Widget
+TileView:
+  Attributes:
+  - Name: ItemWidth
+    Offset: '0x138'
+    Size: '0x4'
+    Type: float
+  - Name: ItemHeight
+    Offset: '0x13c'
+    Size: '0x4'
+    Type: float
+  - Name: Items
+    Offset: '0x140'
+    Size: '0x10'
+    Type: TArray<class Items*>
+  - Name: SelectionMode
+    Offset: '0x150'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x48'
+  FullSize: '0x180'
+  InheritedSize: '0x138'
+  Super: TableViewBase
+UMGSequencePlayer:
+  Attributes:
+  - Name: Animation
+    Offset: '0x390'
+    Size: '0x8'
+    Type: Class WidgetAnimation*
+  ClassSize: '0x5a0'
+  FullSize: '0x5c8'
+  InheritedSize: '0x28'
+  Super: Object
+UniformGridPanel:
+  Attributes:
+  - Name: SlotPadding
+    Offset: '0x150'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: MinDesiredSlotWidth
+    Offset: '0x160'
+    Size: '0x4'
+    Type: float
+  - Name: MinDesiredSlotHeight
+    Offset: '0x164'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x30'
+  FullSize: '0x180'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+UniformGridSlot:
+  Attributes:
+  - Name: HorizontalAlignment
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x39'
+    Size: '0x1'
+    Type: byte
+  - Name: Row
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: int
+  - Name: Column
+    Offset: '0x40'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
+  FullSize: '0x50'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+UserWidget:
+  Attributes:
+  - Name: ColorAndOpacity
+    Offset: '0x140'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ForegroundColor
+    Offset: '0x160'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: bSupportsKeyboardFocus
+    Offset: '0x1a0'
+    Size: '0x1'
+    Type: bool
+  - Name: WidgetTree
+    Offset: '0x1a8'
+    Size: '0x8'
+    Type: Class WidgetTree*
+  - Name: ActiveSequencePlayers
+    Offset: '0x1b0'
+    Size: '0x10'
+    Type: TArray<class ActiveSequencePlayers*>
+  - Name: StoppedSequencePlayers
+    Offset: '0x1c0'
+    Size: '0x10'
+    Type: TArray<class StoppedSequencePlayers*>
+  - Name: NamedSlotBindings
+    Offset: '0x1d0'
+    Size: '0x10'
+    Type: TArray<Struct StoppedSequencePlayers>
+  ClassSize: '0xf8'
+  FullSize: '0x230'
+  InheritedSize: '0x138'
+  Super: Widget
+VerticalBox:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x168'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+VerticalBoxSlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: Size
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Struct SlateChildSize
+  - Name: HorizontalAlignment
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x51'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+  FullSize: '0x60'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+Viewport:
+  Attributes:
+  - Name: BackgroundColor
+    Offset: '0x150'
+    Size: '0x10'
+    Type: Struct LinearColor
+  ClassSize: '0x40'
+  FullSize: '0x190'
+  InheritedSize: '0x150'
+  Super: ContentWidget
+VisibilityBinding:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x48'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+Visual:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+Widget:
+  Attributes:
+  - Name: bIsVariable
+    Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  - Name: bCreatedByConstructionScript
+    Offset: '0x29'
+    Size: '0x1'
+    Type: bool
+  - Name: Slot
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class PanelSlot*
+  - Name: bIsEnabled
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  - Name: ToolTipText
+    Offset: '0x50'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: ToolTipWidget
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class Widget*
+  - Name: Visiblity
+    Offset: '0xb0'
+    Size: '0x1'
+    Type: byte
+  - Name: Visibility
+    Offset: '0xb1'
+    Size: '0x1'
+    Type: byte
+  - Name: bOverride_Cursor
+    Offset: '0xc4'
+    Size: '0x1'
+    Type: bool
+  - Name: Cursor
+    Offset: '0xc8'
+    Size: '0x1'
+    Type: byte
+  - Name: bIsVolatile
+    Offset: '0xc9'
+    Size: '0x1'
+    Type: bool
+  - Name: RenderTransform
+    Offset: '0xcc'
+    Size: '0x1c'
+    Type: Struct WidgetTransform
+  - Name: RenderTransformPivot
+    Offset: '0xe8'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Navigation
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: Class WidgetNavigation*
+  - Name: NativeBindings
+    Offset: '0x128'
+    Size: '0x10'
+    Type: TArray<class NativeBindings*>
+  ClassSize: '0x110'
+  FullSize: '0x138'
+  InheritedSize: '0x28'
+  Super: Visual
+WidgetAnimation:
+  Attributes:
+  - Name: MovieScene
+    Offset: '0x2c8'
+    Size: '0x8'
+    Type: Class MovieScene*
+  - Name: AnimationBindings
+    Offset: '0x2d0'
+    Size: '0x10'
+    Type: TArray<Struct MovieScene>
+  ClassSize: '0x38'
+  FullSize: '0x2e0'
+  InheritedSize: '0x2a8'
+  Super: MovieSceneSequence
+WidgetBinding:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x48'
+  InheritedSize: '0x48'
+  Super: PropertyBinding
+WidgetBlueprintGeneratedClass:
+  Attributes:
+  - Name: WidgetTree
+    Offset: '0x228'
+    Size: '0x8'
+    Type: Class WidgetTree*
+  - Name: Bindings
+    Offset: '0x230'
+    Size: '0x10'
+    Type: TArray<Struct WidgetTree>
+  - Name: Animations
+    Offset: '0x240'
+    Size: '0x10'
+    Type: TArray<class Animations*>
+  - Name: NamedSlots
+    Offset: '0x250'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x38'
+  FullSize: '0x260'
+  InheritedSize: '0x228'
+  Super: BlueprintGeneratedClass
+WidgetBlueprintLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+WidgetComponent:
+  Attributes:
+  - Name: Space
+    Offset: '0x5a8'
+    Size: '0x1'
+    Type: byte
+  - Name: WidgetClass
+    Offset: '0x5b0'
+    Size: '0x8'
+    Type: class
+  - Name: DrawSize
+    Offset: '0x5b8'
+    Size: '0x8'
+    Type: Struct IntPoint
+  - Name: Pivot
+    Offset: '0x5c0'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: MaxInteractionDistance
+    Offset: '0x5c8'
+    Size: '0x4'
+    Type: float
+  - Name: OwnerPlayer
+    Offset: '0x5d0'
+    Size: '0x8'
+    Type: Class LocalPlayer*
+  - Name: BackgroundColor
+    Offset: '0x5d8'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: BlendMode
+    Offset: '0x5e8'
+    Size: '0x1'
+    Type: byte
+  - Name: bIsOpaque
+    Offset: '0x5e9'
+    Size: '0x1'
+    Type: bool
+  - Name: bIsTwoSided
+    Offset: '0x5ea'
+    Size: '0x1'
+    Type: bool
+  - Name: ParabolaDistortion
+    Offset: '0x5ec'
+    Size: '0x4'
+    Type: float
+  - Name: TickWhenOffscreen
+    Offset: '0x5f0'
+    Size: '0x1'
+    Type: bool
+  - Name: Widget
+    Offset: '0x5f8'
+    Size: '0x8'
+    Type: Class UserWidget*
+  - Name: BodySetup
+    Offset: '0x600'
+    Size: '0x8'
+    Type: Class BodySetup*
+  - Name: TranslucentMaterial
+    Offset: '0x608'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: TranslucentMaterial_OneSided
+    Offset: '0x610'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: OpaqueMaterial
+    Offset: '0x618'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: OpaqueMaterial_OneSided
+    Offset: '0x620'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: MaskedMaterial
+    Offset: '0x628'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: MaskedMaterial_OneSided
+    Offset: '0x630'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: RenderTarget
+    Offset: '0x638'
+    Size: '0x8'
+    Type: Class TextureRenderTarget2D*
+  - Name: MaterialInstance
+    Offset: '0x640'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: bUseLegacyRotation
+    Offset: '0x648'
+    Size: '0x1'
+    Type: bool
+  - Name: bAddedToScreen
+    Offset: '0x649'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xf0'
+  FullSize: '0x6a0'
+  InheritedSize: '0x5b0'
+  Super: PrimitiveComponent
+WidgetLayoutLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+WidgetNavigation:
+  Attributes:
+  - Name: Up
+    Offset: '0x28'
+    Size: '0x14'
+    Type: Struct WidgetNavigationData
+  - Name: Down
+    Offset: '0x3c'
+    Size: '0x14'
+    Type: Struct WidgetNavigationData
+  - Name: Left
+    Offset: '0x50'
+    Size: '0x14'
+    Type: Struct WidgetNavigationData
+  - Name: Right
+    Offset: '0x64'
+    Size: '0x14'
+    Type: Struct WidgetNavigationData
+  - Name: Next
+    Offset: '0x78'
+    Size: '0x14'
+    Type: Struct WidgetNavigationData
+  - Name: Previous
+    Offset: '0x8c'
+    Size: '0x14'
+    Type: Struct WidgetNavigationData
+  ClassSize: '0x78'
+  FullSize: '0xa0'
+  InheritedSize: '0x28'
+  Super: Object
+WidgetSwitcher:
+  Attributes:
+  - Name: ActiveWidgetIndex
+    Offset: '0x150'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
+  FullSize: '0x170'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+WidgetSwitcherSlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: HorizontalAlignment
+    Offset: '0x48'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x49'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x20'
+  FullSize: '0x58'
+  InheritedSize: '0x38'
+  Super: PanelSlot
+WidgetTree:
+  Attributes:
+  - Name: RootWidget
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class Widget*
+  - Name: AllWidgets
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<class AllWidgets*>
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: Object
+WrapBox:
+  Attributes:
+  - Name: InnerSlotPadding
+    Offset: '0x150'
+    Size: '0x8'
+    Type: Struct Vector2D
+  ClassSize: '0x20'
+  FullSize: '0x170'
+  InheritedSize: '0x150'
+  Super: PanelWidget
+WrapBoxSlot:
+  Attributes:
+  - Name: Padding
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: bFillEmptySpace
+    Offset: '0x48'
+    Size: '0x1'
+    Type: bool
+  - Name: FillSpanWhenLessThan
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: float
+  - Name: HorizontalAlignment
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: VerticalAlignment
+    Offset: '0x51'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+  FullSize: '0x60'
+  InheritedSize: '0x38'
+  Super: PanelSlot

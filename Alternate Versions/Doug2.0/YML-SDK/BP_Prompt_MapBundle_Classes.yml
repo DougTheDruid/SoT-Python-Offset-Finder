@@ -1,0 +1,38 @@
+BP_Prompt_MapBundle_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: MapBundlePromptAccessKey
+    Offset: '0x120'
+    Size: '0x8'
+    Type: class
+  - Name: Prompt
+    Offset: '0x128'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: MapBundleBecameVisible
+    Offset: '0x190'
+    Size: '0x1'
+    Type: bool
+  - Name: MapBundleAppearedHandle
+    Offset: '0x198'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: CharacterDispatcher
+    Offset: '0x1e0'
+    Size: '0x8'
+    Type: Struct ObjectMessagingDispatcherHandle
+  - Name: HasShown
+    Offset: '0x1e8'
+    Size: '0x1'
+    Type: bool
+  - Name: StealPrompt
+    Offset: '0x1f0'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  ClassSize: '0x140'
+  FullSize: '0x258'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C

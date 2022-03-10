@@ -1,0 +1,575 @@
+AIDamageEvent:
+  Attributes:
+  - Name: Amount
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Location
+    Offset: '0x4'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: HitLocation
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: DamagedActor
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Instigator
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x30'
+AIDataProviderBoolValue:
+  Attributes:
+  - Name: DefaultValue
+    Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x30'
+AIDataProviderFloatValue:
+  Attributes:
+  - Name: DefaultValue
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x30'
+AIDataProviderIntValue:
+  Attributes:
+  - Name: DefaultValue
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x30'
+AIDataProviderStructValue:
+  Attributes: []
+  ClassSize: '0x30'
+AIDataProviderTypedValue:
+  Attributes:
+  - Name: PropertyType
+    Offset: '0x20'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x28'
+AIDataProviderValue:
+  Attributes:
+  - Name: CachedProperty
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Property*
+  - Name: DataBinding
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class AIDataProvider*
+  - Name: DataField
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x20'
+AIMoveRequest:
+  Attributes:
+  - Name: GoalActor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x40'
+AINoiseEvent:
+  Attributes:
+  - Name: NoiseLocation
+    Offset: '0x4'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Loudness
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: MaxRange
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: Instigator
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Tag
+    Offset: '0x20'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x30'
+AIPredictionEvent:
+  Attributes:
+  - Name: Requestor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: PredictedActor
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x18'
+AIRequestID:
+  Attributes: []
+  ClassSize: '0x4'
+AISenseAffiliationFilter:
+  Attributes:
+  - Name: bDetectEnemies
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bDetectNeutrals
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bDetectFriendlies
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x4'
+AISightEvent:
+  Attributes:
+  - Name: SeenActor
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Observer
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x18'
+AIStimulus:
+  Attributes:
+  - Name: Age
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: ExpirationAge
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Strength
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: StimulusLocation
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: ReceiverLocation
+    Offset: '0x18'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Tag
+    Offset: '0x24'
+    Size: '0x8'
+    Type: struct FName
+  - Name: bSuccessfullySensed
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x3c'
+AITeamStimulusEvent:
+  Attributes:
+  - Name: Broadcaster
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Enemy
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x38'
+AITouchEvent:
+  Attributes:
+  - Name: TouchReceiver
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: OtherActor
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x20'
+ActorPerceptionBlueprintInfo:
+  Attributes:
+  - Name: Target
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: LastSensedStimuli
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct Target>
+  - Name: bIsHostile
+    Offset: '0x18'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x20'
+BTCompositeChild:
+  Attributes:
+  - Name: ChildComposite
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class BTCompositeNode*
+  - Name: ChildTask
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class BTTaskNode*
+  - Name: Decorators
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<class Decorators*>
+  - Name: DecoratorOps
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct BTDecoratorLogic>
+  ClassSize: '0x30'
+BTDecoratorLogic:
+  Attributes:
+  - Name: Operation
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x4'
+BehaviorTreeTemplateInfo:
+  Attributes:
+  - Name: Asset
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class BehaviorTree*
+  - Name: Template
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class BTCompositeNode*
+  ClassSize: '0x18'
+BlackboardEntry:
+  Attributes:
+  - Name: EntryName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: KeyType
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class BlackboardKeyType*
+  - Name: bInstanceSynced
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+BlackboardKeySelector:
+  Attributes:
+  - Name: AllowedTypes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class AllowedTypes*>
+  - Name: SelectedKeyName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SelectedKeyType
+    Offset: '0x18'
+    Size: '0x8'
+    Type: class
+  - Name: SelectedKeyID
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
+  - Name: bNoneIsAllowedValue
+    Offset: '0x24'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x28'
+CrowdAvoidanceConfig:
+  Attributes:
+  - Name: VelocityBias
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: DesiredVelocityWeight
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentVelocityWeight
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: SideBiasWeight
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: ImpactTimeWeight
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: ImpactTimeRange
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: CustomPatternIdx
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
+  - Name: AdaptiveDivisions
+    Offset: '0x19'
+    Size: '0x1'
+    Type: byte
+  - Name: AdaptiveRings
+    Offset: '0x1a'
+    Size: '0x1'
+    Type: byte
+  - Name: AdaptiveDepth
+    Offset: '0x1b'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x1c'
+CrowdAvoidanceSamplingPattern:
+  Attributes:
+  - Name: Angles
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Float None>
+  - Name: Radii
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Float >
+  ClassSize: '0x20'
+CustomDataProviderObjectPropertySelector:
+  Attributes:
+  - Name: ObjectClass
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: PropertyName
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x10'
+EnvBoolParam:
+  Attributes: []
+  ClassSize: '0xc'
+EnvBoolParam_DEPRECATED:
+  Attributes:
+  - Name: Value
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: ParamName
+    Offset: '0x4'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0xc'
+EnvDirection:
+  Attributes:
+  - Name: LineFrom
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: LineTo
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
+  - Name: Rotation
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class
+  - Name: DirMode
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x20'
+EnvFloatParam:
+  Attributes: []
+  ClassSize: '0xc'
+EnvFloatParam_DEPRECATED:
+  Attributes:
+  - Name: Value
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: ParamName
+    Offset: '0x4'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0xc'
+EnvIntParam:
+  Attributes: []
+  ClassSize: '0xc'
+EnvIntParam_DEPRECATED:
+  Attributes:
+  - Name: Value
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: ParamName
+    Offset: '0x4'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0xc'
+EnvNamedValue:
+  Attributes:
+  - Name: ParamName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ParamType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: Value
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
+EnvQueryInstanceCache:
+  Attributes:
+  - Name: Template
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class EnvQuery*
+  ClassSize: '0x290'
+EnvQueryRequest:
+  Attributes:
+  - Name: QueryTemplate
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class EnvQuery*
+  - Name: Owner
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: World
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class World*
+  ClassSize: '0x170'
+EnvQueryResult:
+  Attributes:
+  - Name: ItemType
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class
+  - Name: OptionIndex
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: int
+  - Name: QueryID
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x40'
+EnvTraceData:
+  Attributes:
+  - Name: VersionNum
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: NavigationFilter
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
+  - Name: OverrideNavMesh
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ProjectDown
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: ProjectUp
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: ExtentX
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: ExtentY
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  - Name: ExtentZ
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: PostProjectionVerticalOffset
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  - Name: TraceChannel
+    Offset: '0x30'
+    Size: '0x1'
+    Type: byte
+  - Name: SerializedChannel
+    Offset: '0x31'
+    Size: '0x1'
+    Type: byte
+  - Name: TraceShape
+    Offset: '0x32'
+    Size: '0x1'
+    Type: byte
+  - Name: TraceMode
+    Offset: '0x33'
+    Size: '0x1'
+    Type: byte
+  - Name: bTraceComplex
+    Offset: '0x34'
+    Size: '0x1'
+    Type: bool
+  - Name: bOnlyBlockingHits
+    Offset: '0x34'
+    Size: '0x1'
+    Type: bool
+  - Name: bCanTraceOnNavMesh
+    Offset: '0x34'
+    Size: '0x1'
+    Type: bool
+  - Name: bCanTraceOnGeometry
+    Offset: '0x34'
+    Size: '0x1'
+    Type: bool
+  - Name: bCanDisableTrace
+    Offset: '0x34'
+    Size: '0x1'
+    Type: bool
+  - Name: bCanProjectDown
+    Offset: '0x34'
+    Size: '0x1'
+    Type: bool
+  - Name: bUseUpDownAsAbsoluteZStartAndEnd
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  - Name: bUseSourceZAsEnd
+    Offset: '0x39'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x40'
+GenericTeamId:
+  Attributes:
+  - Name: TeamID
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x1'
+IgnoreActorInfo:
+  Attributes:
+  - Name: TimeRemaining
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+PawnActionEvent:
+  Attributes:
+  - Name: Action
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class PawnAction*
+  ClassSize: '0x18'
+PawnActionStack:
+  Attributes:
+  - Name: TopAction
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class PawnAction*
+  ClassSize: '0x8'

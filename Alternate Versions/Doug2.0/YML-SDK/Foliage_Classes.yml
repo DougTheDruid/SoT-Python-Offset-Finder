@@ -1,0 +1,484 @@
+FoliageInstancedStaticMeshComponent:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x7b0'
+  InheritedSize: '0x790'
+  Super: HierarchicalInstancedStaticMeshComponent
+FoliageStatistics:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+FoliageType:
+  Attributes:
+  - Name: UpdateGuid
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Density
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: DensityAdjustmentFactor
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: Radius
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  - Name: Scaling
+    Offset: '0x44'
+    Size: '0x1'
+    Type: byte
+  - Name: ScaleX
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  - Name: ScaleY
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  - Name: ScaleZ
+    Offset: '0x58'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  - Name: VertexColorMask
+    Offset: '0x60'
+    Size: '0x1'
+    Type: byte
+  - Name: VertexColorMaskThreshold
+    Offset: '0x64'
+    Size: '0x4'
+    Type: float
+  - Name: VertexColorMaskInvert
+    Offset: '0x68'
+    Size: '0x1'
+    Type: bool
+  - Name: ZOffset
+    Offset: '0x6c'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  - Name: AlignToNormal
+    Offset: '0x74'
+    Size: '0x1'
+    Type: bool
+  - Name: AlignMaxAngle
+    Offset: '0x78'
+    Size: '0x4'
+    Type: float
+  - Name: RandomYaw
+    Offset: '0x7c'
+    Size: '0x1'
+    Type: bool
+  - Name: RandomPitchAngle
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  - Name: GroundSlopeAngle
+    Offset: '0x84'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  - Name: Height
+    Offset: '0x8c'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  - Name: LandscapeLayers
+    Offset: '0x98'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: LandscapeLayer
+    Offset: '0xa8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CollisionWithWorld
+    Offset: '0xb0'
+    Size: '0x1'
+    Type: bool
+  - Name: CollisionScale
+    Offset: '0xb4'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: MinimumLayerWeight
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: float
+  - Name: MeshBounds
+    Offset: '0xc4'
+    Size: '0x1c'
+    Type: Struct BoxSphereBounds
+  - Name: LowBoundOriginRadius
+    Offset: '0xe0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Mobility
+    Offset: '0xec'
+    Size: '0x1'
+    Type: byte
+  - Name: CullDistance
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: Struct Int32Interval
+  - Name: bEnableStaticLighting
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: bool
+  - Name: CastShadow
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectDynamicIndirectLighting
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectDistanceFieldLighting
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastDynamicShadow
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastStaticShadow
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastShadowAsTwoSided
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: bool
+  - Name: bReceivesDecals
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverrideLightMapRes
+    Offset: '0xf9'
+    Size: '0x1'
+    Type: bool
+  - Name: OverriddenLightMapRes
+    Offset: '0xfc'
+    Size: '0x4'
+    Type: int
+  - Name: bUseAsOccluder
+    Offset: '0x100'
+    Size: '0x1'
+    Type: bool
+  - Name: BodyInstance
+    Offset: '0x108'
+    Size: '0x180'
+    Type: Struct BodyInstance
+  - Name: CustomNavigableGeometry
+    Offset: '0x288'
+    Size: '0x1'
+    Type: byte
+  - Name: IsSelected
+    Offset: '0x298'
+    Size: '0x1'
+    Type: bool
+  - Name: CollisionRadius
+    Offset: '0x29c'
+    Size: '0x4'
+    Type: float
+  - Name: ShadeRadius
+    Offset: '0x2a0'
+    Size: '0x4'
+    Type: float
+  - Name: NumSteps
+    Offset: '0x2a4'
+    Size: '0x4'
+    Type: int
+  - Name: InitialSeedDensity
+    Offset: '0x2a8'
+    Size: '0x4'
+    Type: float
+  - Name: AverageSpreadDistance
+    Offset: '0x2ac'
+    Size: '0x4'
+    Type: float
+  - Name: SpreadVariance
+    Offset: '0x2b0'
+    Size: '0x4'
+    Type: float
+  - Name: SeedsPerStep
+    Offset: '0x2b4'
+    Size: '0x4'
+    Type: int
+  - Name: DistributionSeed
+    Offset: '0x2b8'
+    Size: '0x4'
+    Type: int
+  - Name: MaxInitialSeedOffset
+    Offset: '0x2bc'
+    Size: '0x4'
+    Type: float
+  - Name: bCanGrowInShade
+    Offset: '0x2c0'
+    Size: '0x1'
+    Type: bool
+  - Name: bSpawnsInShade
+    Offset: '0x2c1'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxInitialAge
+    Offset: '0x2c4'
+    Size: '0x4'
+    Type: float
+  - Name: MaxAge
+    Offset: '0x2c8'
+    Size: '0x4'
+    Type: float
+  - Name: OverlapPriority
+    Offset: '0x2cc'
+    Size: '0x4'
+    Type: float
+  - Name: ProceduralScale
+    Offset: '0x2d0'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  - Name: ScaleCurve
+    Offset: '0x2d8'
+    Size: '0x80'
+    Type: Struct RuntimeFloatCurve
+  - Name: ChangeCount
+    Offset: '0x358'
+    Size: '0x4'
+    Type: int
+  - Name: ReapplyDensity
+    Offset: '0x35c'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyRadius
+    Offset: '0x35c'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyAlignToNormal
+    Offset: '0x35c'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyRandomYaw
+    Offset: '0x35c'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyScaling
+    Offset: '0x35c'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyScaleX
+    Offset: '0x35c'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyScaleY
+    Offset: '0x35c'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyScaleZ
+    Offset: '0x35c'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyRandomPitchAngle
+    Offset: '0x35d'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyGroundSlope
+    Offset: '0x35d'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyHeight
+    Offset: '0x35d'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyLandscapeLayers
+    Offset: '0x35d'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyZOffset
+    Offset: '0x35d'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyCollisionWithWorld
+    Offset: '0x35d'
+    Size: '0x1'
+    Type: bool
+  - Name: ReapplyVertexColorMask
+    Offset: '0x35d'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x338'
+  FullSize: '0x360'
+  InheritedSize: '0x28'
+  Super: Object
+FoliageType_InstancedStaticMesh:
+  Attributes:
+  - Name: Mesh
+    Offset: '0x360'
+    Size: '0x8'
+    Type: Class StaticMesh*
+  - Name: OverrideMaterials
+    Offset: '0x368'
+    Size: '0x10'
+    Type: TArray<class OverrideMaterials*>
+  - Name: ComponentClass
+    Offset: '0x378'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x20'
+  FullSize: '0x380'
+  InheritedSize: '0x360'
+  Super: FoliageType
+InstancedFoliageActor:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0x420'
+  InheritedSize: '0x3d0'
+  Super: Actor
+InteractiveFoliageActor:
+  Attributes:
+  - Name: CapsuleComponent
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class CapsuleComponent*
+  - Name: TouchingActorEntryPosition
+    Offset: '0x3e8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: FoliageVelocity
+    Offset: '0x3f4'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: FoliageForce
+    Offset: '0x400'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: FoliagePosition
+    Offset: '0x40c'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: FoliageDamageImpulseScale
+    Offset: '0x418'
+    Size: '0x4'
+    Type: float
+  - Name: FoliageTouchImpulseScale
+    Offset: '0x41c'
+    Size: '0x4'
+    Type: float
+  - Name: FoliageStiffness
+    Offset: '0x420'
+    Size: '0x4'
+    Type: float
+  - Name: FoliageStiffnessQuadratic
+    Offset: '0x424'
+    Size: '0x4'
+    Type: float
+  - Name: FoliageDamping
+    Offset: '0x428'
+    Size: '0x4'
+    Type: float
+  - Name: MaxDamageImpulse
+    Offset: '0x42c'
+    Size: '0x4'
+    Type: float
+  - Name: MaxTouchImpulse
+    Offset: '0x430'
+    Size: '0x4'
+    Type: float
+  - Name: MaxForce
+    Offset: '0x434'
+    Size: '0x4'
+    Type: float
+  - Name: Mass
+    Offset: '0x438'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x60'
+  FullSize: '0x440'
+  InheritedSize: '0x3e0'
+  Super: StaticMeshActor
+InteractiveFoliageComponent:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0x620'
+  InheritedSize: '0x610'
+  Super: StaticMeshComponent
+ProceduralFoliageBlockingVolume:
+  Attributes:
+  - Name: ProceduralFoliageVolume
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class ProceduralFoliageVolume*
+  ClassSize: '0x8'
+  FullSize: '0x410'
+  InheritedSize: '0x408'
+  Super: Volume
+ProceduralFoliageComponent:
+  Attributes:
+  - Name: FoliageSpawner
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: Class ProceduralFoliageSpawner*
+  - Name: TileOverlap
+    Offset: '0xd0'
+    Size: '0x4'
+    Type: float
+  - Name: SpawningVolume
+    Offset: '0xd8'
+    Size: '0x8'
+    Type: Class Volume*
+  - Name: ProceduralGuid
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x28'
+  FullSize: '0xf0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+ProceduralFoliageSpawner:
+  Attributes:
+  - Name: RandomSeed
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: TileSize
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  - Name: NumUniqueTiles
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  - Name: FoliageTypes
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Struct NumUniqueTiles>
+  - Name: bNeedsSimulation
+    Offset: '0x48'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x40'
+  FullSize: '0x68'
+  InheritedSize: '0x28'
+  Super: Object
+ProceduralFoliageTile:
+  Attributes:
+  - Name: FoliageSpawner
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class ProceduralFoliageSpawner*
+  - Name: InstancesArray
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: TArray<Struct FoliageSpawner>
+  ClassSize: '0x128'
+  FullSize: '0x150'
+  InheritedSize: '0x28'
+  Super: Object
+ProceduralFoliageVolume:
+  Attributes:
+  - Name: ProceduralComponent
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class ProceduralFoliageComponent*
+  ClassSize: '0x8'
+  FullSize: '0x410'
+  InheritedSize: '0x408'
+  Super: Volume

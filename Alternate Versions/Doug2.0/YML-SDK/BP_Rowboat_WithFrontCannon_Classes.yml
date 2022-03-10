@@ -1,0 +1,14 @@
+BP_Rowboat_WithFrontCannon_C:
+  Attributes:
+  - Name: CannonRecoil
+    Offset: '0xa30'
+    Size: '0x8'
+    Type: Class CannonRecoilComponent*
+  - Name: Cannon
+    Offset: '0xa38'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  ClassSize: '0x10'
+  FullSize: '0xa40'
+  InheritedSize: '0xa30'
+  Super: BP_Rowboat_C

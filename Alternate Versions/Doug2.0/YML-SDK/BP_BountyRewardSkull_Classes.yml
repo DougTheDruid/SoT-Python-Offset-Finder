@@ -1,0 +1,22 @@
+BP_BountyRewardSkull_C:
+  Attributes:
+  - Name: HitVolume
+    Offset: '0x790'
+    Size: '0x8'
+    Type: Class BoxComponent*
+  - Name: WieldableInteractable
+    Offset: '0x798'
+    Size: '0x8'
+    Type: Class WieldableInteractableComponent*
+  - Name: Pickupable
+    Offset: '0x7a0'
+    Size: '0x8'
+    Type: Class PickupableComponent*
+  - Name: UsableWieldable
+    Offset: '0x7a8'
+    Size: '0x8'
+    Type: Class UsableWieldableComponent*
+  ClassSize: '0x20'
+  FullSize: '0x7b0'
+  InheritedSize: '0x790'
+  Super: BountyReward

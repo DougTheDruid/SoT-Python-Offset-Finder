@@ -1,0 +1,26 @@
+BP_Rowboat_C:
+  Attributes:
+  - Name: PetHangoutSpot
+    Offset: '0xa08'
+    Size: '0x8'
+    Type: Class PetHangoutSpotComponent*
+  - Name: WaterInteraction
+    Offset: '0xa10'
+    Size: '0x8'
+    Type: Class WaterInteractionComponent*
+  - Name: ImpulseThrottler
+    Offset: '0xa18'
+    Size: '0x8'
+    Type: Class ImpulseThrottlerComponent*
+  - Name: MiddleRightSeat
+    Offset: '0xa20'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: MiddleLeftSeat
+    Offset: '0xa28'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  ClassSize: '0x28'
+  FullSize: '0xa30'
+  InheritedSize: '0xa08'
+  Super: Rowboat

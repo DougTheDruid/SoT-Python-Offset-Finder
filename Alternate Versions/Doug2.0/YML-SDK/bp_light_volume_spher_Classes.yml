@@ -1,0 +1,28 @@
+bp_light_volume_sphere_blue_a_C:
+  Attributes:
+  - Name: None
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class BillboardComponent*
+  - Name: None
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '-0x408b470a'
+  FullSize: '-0x408b470a'
+  InheritedSize: '0x0'
+  Super: None
+bp_light_volume_sphere_orange_a_C:
+  Attributes:
+  - Name: None
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class BillboardComponent*
+  - Name: None
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x3f800000'
+  FullSize: '0x3f800000'
+  InheritedSize: '0x0'
+  Super: None

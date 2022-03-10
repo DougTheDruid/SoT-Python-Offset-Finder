@@ -1,0 +1,54 @@
+MediaPlayer:
+  Attributes:
+  - Name: Looping
+    Offset: '0x48'
+    Size: '0x1'
+    Type: bool
+  - Name: URL
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x90'
+  FullSize: '0xb8'
+  InheritedSize: '0x28'
+  Super: Object
+MediaSoundWave:
+  Attributes:
+  - Name: AudioTrackIndex
+    Offset: '0x218'
+    Size: '0x4'
+    Type: int
+  - Name: MediaPlayer
+    Offset: '0x220'
+    Size: '0x8'
+    Type: Class MediaPlayer*
+  ClassSize: '0x60'
+  FullSize: '0x278'
+  InheritedSize: '0x218'
+  Super: SoundWave
+MediaTexture:
+  Attributes:
+  - Name: AddressX
+    Offset: '0x138'
+    Size: '0x1'
+    Type: byte
+  - Name: AddressY
+    Offset: '0x139'
+    Size: '0x1'
+    Type: byte
+  - Name: ClearColor
+    Offset: '0x13c'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: VideoTrackIndex
+    Offset: '0x14c'
+    Size: '0x4'
+    Type: int
+  - Name: MediaPlayer
+    Offset: '0x150'
+    Size: '0x8'
+    Type: Class MediaPlayer*
+  ClassSize: '0x70'
+  FullSize: '0x1a8'
+  InheritedSize: '0x138'
+  Super: Texture

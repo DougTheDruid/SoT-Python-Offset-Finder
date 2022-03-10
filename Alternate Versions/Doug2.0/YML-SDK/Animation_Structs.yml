@@ -1,0 +1,445 @@
+ActorVelocityData:
+  Attributes:
+  - Name: ActorsVelocityVector
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: ActorSpeed
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: IsCharacterMoving
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: WantedMovementSpeed
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x18'
+AnimDataEntryStructWrapper:
+  Attributes: []
+  ClassSize: '0x18'
+AnimNode_WeightedLoadOnDemandSquencePlayer:
+  Attributes:
+  - Name: PlayRate
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  - Name: WeightedAnimSequenceLoadOnDemand
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class WeightedAnimSequenceLoadOnDemand*
+  - Name: GroupIndex
+    Offset: '0x50'
+    Size: '0x4'
+    Type: int
+  - Name: GroupRole
+    Offset: '0x54'
+    Size: '0x1'
+    Type: byte
+  - Name: CurrentSequence
+    Offset: '0x58'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  - Name: NextSequence
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  ClassSize: '0x70'
+AnimationDataStoreAssetEntry:
+  Attributes:
+  - Name: AnimDataId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: AnimDataTypeCooked
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
+  - Name: AnimServerData
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class AnimationServerData*
+  ClassSize: '0x18'
+AnimationDataStoreAssetWeakReferenceEntry:
+  Attributes:
+  - Name: AnimDataId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x28'
+AnimationDataStoreEntry:
+  Attributes:
+  - Name: AnimDataId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: AnimData
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class AnimationData*
+  - Name: AnimServerData
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class AnimationServerData*
+  ClassSize: '0x18'
+AnimationDataStoreLoadingEntry:
+  Attributes:
+  - Name: AnimDataId
+    Offset: '0x38'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x40'
+AnimationLookAt:
+  Attributes:
+  - Name: Params
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct AnimationLookAtParams
+  - Name: LookAtTarget
+    Offset: '0x14'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: IKLookAtActive
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x98'
+AnimationLookAtParams:
+  Attributes:
+  - Name: ActivationSpeed
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: HorizontalLimit
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: VerticalLimit
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+AnimationStateCompleteEvent:
+  Attributes:
+  - Name: CompletedStateId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x8'
+CharacterAnimationIKUpdateParams:
+  Attributes:
+  - Name: CurrentAlpha
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: TranslationStrength
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: RotationStrength
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: Location
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Orientation
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Quat
+  - Name: EffectorSpace
+    Offset: '0x30'
+    Size: '0x1'
+    Type: byte
+  - Name: ParentBone
+    Offset: '0x34'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x40'
+CosmeticItemAnimationSetLoopData:
+  Attributes:
+  - Name: Into
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class AnimSequenceBase*
+  - Name: Loop
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class AnimSequenceBase*
+  - Name: IntoSyncGroup
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: LoopSyncGroup
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x20'
+CosmeticItems:
+  Attributes:
+  - Name: CosmeticItemArray
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class CosmeticItemArray*>
+  ClassSize: '0x10'
+CurveUpdateValues:
+  Attributes:
+  - Name: CurveName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FinalValue
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+CustomAnimationMontageComponentReplicatedData:
+  Attributes:
+  - Name: CustomMontageId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct CustomAnimationMontageId
+  - Name: AnimationCallId
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0xc'
+CustomAnimationMontageDefinitionEntry:
+  Attributes:
+  - Name: MontageId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Definition
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x18'
+CustomAnimationMontageId:
+  Attributes:
+  - Name: CustomAnimationMontageId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x8'
+CustomAnimationMontageStagedLoopingData:
+  Attributes:
+  - Name: Into
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class AnimMontage*
+  - Name: LoopAnims
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<class LoopAnims*>
+  - Name: OutOfAnims
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<class OutOfAnims*>
+  ClassSize: '0x28'
+CustomAnimationMontageStateMachine:
+  Attributes:
+  - Name: ActiveState
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class CustomAnimationMontageDefinitionDataAsset*
+  - Name: PendingState
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class CustomAnimationMontageDefinitionDataAsset*
+  - Name: ActiveMontage
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class AnimMontage*
+  ClassSize: '0xd8'
+DockableInfo:
+  Attributes:
+  - Name: SocketName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SceneComponent
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: ShouldOverlapsUpdateOnParentUpdate
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x18'
+Docker:
+  Attributes: []
+  ClassSize: '0x50'
+EventAnimationHappyReact:
+  Attributes: []
+  ClassSize: '0x1'
+EventAnimationLookAtUpdated:
+  Attributes: []
+  ClassSize: '0x1'
+EventCosmeticItemAttachmentSwitched:
+  Attributes:
+  - Name: Owner
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+EventCosmeticItemSpawned:
+  Attributes:
+  - Name: Owner
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: CosmeticData
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class CosmeticItemAnimationSetDataAsset*
+  ClassSize: '0x10'
+EventCosmeticItemSpawnedOwnerNotification:
+  Attributes:
+  - Name: CosmeticItemActor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+EventCustomAnimationMontageExitRequested:
+  Attributes: []
+  ClassSize: '0xc'
+EventCustomAnimationMontageRequested:
+  Attributes: []
+  ClassSize: '0x8'
+EventHitReactAnimationFinished:
+  Attributes: []
+  ClassSize: '0x1'
+EventHitReactAnimationRequested:
+  Attributes:
+  - Name: HitNormal
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: HitVelocity
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: ReactionAnimType
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x1c'
+EventPreviewCharacterAnimationRequest:
+  Attributes:
+  - Name: AnimationToPlay
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class AnimationAsset*
+  ClassSize: '0x8'
+HitReactionAnimationData:
+  Attributes:
+  - Name: HitReactBlendSpace
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class BlendSpace1D*
+  ClassSize: '0x8'
+HitReactionAnimationState:
+  Attributes:
+  - Name: Yaw
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: AdditiveBlend
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: ReactType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: ActivateNewHitReact
+    Offset: '0x9'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x28'
+IKLookAtParams:
+  Attributes:
+  - Name: ActivationSpeed
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: HorizontalLimit
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: VerticalLimit
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+LimbIK:
+  Attributes: []
+  ClassSize: '0x60'
+TransformBlendCurve:
+  Attributes:
+  - Name: UseLocationCurve
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: LocationCurve
+    Offset: '0x8'
+    Size: '0x170'
+    Type: Struct RuntimeVectorCurve
+  - Name: UseRotationCurve
+    Offset: '0x178'
+    Size: '0x1'
+    Type: bool
+  - Name: RotationCurve
+    Offset: '0x180'
+    Size: '0x170'
+    Type: Struct RuntimeVectorCurve
+  - Name: UseScaleCurve
+    Offset: '0x2f0'
+    Size: '0x1'
+    Type: bool
+  - Name: ScaleCurve
+    Offset: '0x2f8'
+    Size: '0x170'
+    Type: Struct RuntimeVectorCurve
+  - Name: SourceTransform
+    Offset: '0x470'
+    Size: '0x30'
+    Type: Struct Transform
+  - Name: TargetTransform
+    Offset: '0x4a0'
+    Size: '0x30'
+    Type: Struct Transform
+  ClassSize: '0x500'
+WeightedAnimationData:
+  Attributes:
+  - Name: Animation
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Weighting
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x18'
+WeightedAnimationTimeout:
+  Attributes:
+  - Name: TimeoutRange
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: Weighting
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
+WeightedAnimationTimeoutSelector:
+  Attributes:
+  - Name: Weightings
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct WeightedAnimationTimeout>
+  ClassSize: '0x10'

@@ -1,0 +1,12 @@
+Proposal_LegendaryStoryteller_Chapter2_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x140'
+  InheritedSize: '0x140'
+  Super: VoyageCheckpointProposalDesc
+Proposal_LegendaryStoryteller_Chapter3_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x140'
+  InheritedSize: '0x140'
+  Super: VoyageCheckpointProposalDesc

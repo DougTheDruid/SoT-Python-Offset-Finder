@@ -1,0 +1,92 @@
+OnEndWaterSlideActionStateEvent:
+  Attributes:
+  - Name: WaterSlideEnd
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: WaterSlideIsEndOneShot
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x18'
+OnExitedWaterSlideEvent:
+  Attributes: []
+  ClassSize: '0x1'
+OnPlayerChangedWaterSlideRouteActionStateEvent:
+  Attributes:
+  - Name: WaterSlideChangeForkOneShot
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x10'
+OnPlayerSpeedOnWaterSlideChangedActionStateEvent:
+  Attributes: []
+  ClassSize: '0xc'
+OnStartWaterSlideActionStateEvent:
+  Attributes:
+  - Name: WaterSlideStart
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: WaterSlideVfxOverride
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ParticleSystem*
+  ClassSize: '0x10'
+WaterSlideActionStateConstructionInfo:
+  Attributes:
+  - Name: SceneComponent
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x38'
+WaterSlideActionStateParams:
+  Attributes:
+  - Name: ForcedFieldOfView
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: ForceStash
+    Offset: '0x4'
+    Size: '0x1'
+    Type: bool
+  - Name: LookAtOffsetParams
+    Offset: '0x8'
+    Size: '0x1c'
+    Type: Struct LookAtOffsetParams
+  ClassSize: '0x24'
+WaterSlideParams:
+  Attributes:
+  - Name: ForwardSpeed
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: IncreaseForwardSpeedMultiplier
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: DecreaseForwardSpeedMultiplier
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: VeeringSpeed
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: LeftVeeringDistance
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: RightVeeringDistance
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: StatToFireForRouteChange
+    Offset: '0x18'
+    Size: '0x4'
+    Type: Struct PlayerStat
+  - Name: PlayerSplashingVFXOverride
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Class ParticleSystem*
+  ClassSize: '0x28'

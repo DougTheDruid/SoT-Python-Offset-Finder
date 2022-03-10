@@ -1,0 +1,16 @@
+ContestRowboatsService:
+  Attributes:
+  - Name: RowboatClass
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x60'
+  FullSize: '0x430'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ContestRowboatsServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

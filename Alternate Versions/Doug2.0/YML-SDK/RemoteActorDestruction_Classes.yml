@@ -1,0 +1,12 @@
+RemoteActorDestructionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+RemoteActorDestructionService:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3d0'
+  Super: Actor

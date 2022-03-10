@@ -1,0 +1,754 @@
+AIAnimationInstanceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+AnimNotifyCondition_FeatureConfigValidation:
+  Attributes:
+  - Name: Feature
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: TriggerWhenDisabled
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: AnimNotifyCondition
+AnimNotifyState_HideMeshByBoneForDuration:
+  Attributes:
+  - Name: BoneName
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: AnimNotifyState
+AnimNotifyState_PropagateCurveValuesToMaterials:
+  Attributes:
+  - Name: CurveValues
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct DestroyLocation>
+  - Name: DoNotPropagteCurveValues
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: AnimNotifyState
+AnimNotifyState_SetLookAtDisabledForDuration:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimNotifyState
+AnimNotifyState_SetLookAtEnabledForDuration:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimNotifyState
+AnimNotifyState_SetMeshInvisibleForDuration:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimNotifyState
+AnimNotifyState_SpawnCosmeticItem:
+  Attributes:
+  - Name: CosmeticItemToSpawn
+    Offset: '0x28'
+    Size: '0x8'
+    Type: class
+  - Name: SpawnLocation
+    Offset: '0x30'
+    Size: '0x1'
+    Type: byte
+  - Name: CosmeticItemAnimationDataSet
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class CosmeticItemAnimationSetDataAsset*
+  - Name: SpawnHidden
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
+  - Name: DestroyOnEnd
+    Offset: '0x41'
+    Size: '0x1'
+    Type: bool
+  - Name: OverrideDestroyLocation
+    Offset: '0x42'
+    Size: '0x1'
+    Type: bool
+  - Name: DestroyLocation
+    Offset: '0x43'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: AnimNotifyState
+AnimNotify_DestroyAllCosmeticItems:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_DestroyCosmeticItem:
+  Attributes:
+  - Name: DestroyLocation
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_DetachAndMaintainWorldPosition:
+  Attributes:
+  - Name: CurrentLocation
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_PlayAnimationForCosmetic:
+  Attributes:
+  - Name: CosmeticLocation
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  - Name: CosmeticItemAnimation
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class AnimSequenceBase*
+  - Name: Looping
+    Offset: '0x48'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+  FullSize: '0x50'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_PlayMontage:
+  Attributes:
+  - Name: MontageToPlay
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class AnimMontage*
+  ClassSize: '0x8'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_SetCosmeticItemVisibility:
+  Attributes:
+  - Name: ItemLocation
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  - Name: Visible
+    Offset: '0x39'
+    Size: '0x1'
+    Type: bool
+  - Name: RenderShadow
+    Offset: '0x3a'
+    Size: '0x1'
+    Type: bool
+  - Name: RenderShadowWhenHidden
+    Offset: '0x3b'
+    Size: '0x1'
+    Type: bool
+  - Name: UpdateForRole
+    Offset: '0x3c'
+    Size: '0x1'
+    Type: bool
+  - Name: UpdateRole
+    Offset: '0x3d'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_SetLookAtEnabled:
+  Attributes:
+  - Name: Enabled
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_SpawnCosmeticItem:
+  Attributes:
+  - Name: ItemSpawnClass
+    Offset: '0x38'
+    Size: '0x8'
+    Type: class
+  - Name: SpawnLocation
+    Offset: '0x40'
+    Size: '0x1'
+    Type: byte
+  - Name: CosmeticItemAnimationDataSet
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class CosmeticItemAnimationSetDataAsset*
+  - Name: SpawnHidden
+    Offset: '0x50'
+    Size: '0x1'
+    Type: bool
+  - Name: SpawnForRole
+    Offset: '0x51'
+    Size: '0x1'
+    Type: bool
+  - Name: SpawnRole
+    Offset: '0x52'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x20'
+  FullSize: '0x58'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_StateComplete:
+  Attributes:
+  - Name: CompletedStateId
+    Offset: '0x38'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x8'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_SwitchCosmeticItemAttachment:
+  Attributes:
+  - Name: PreviousLocation
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  - Name: NewLocation
+    Offset: '0x39'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_ToggleIK:
+  Attributes:
+  - Name: IKLimbsToAdjust
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Byte TriggerWhenDisabled>
+  - Name: Enabled
+    Offset: '0x48'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+  FullSize: '0x50'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimationData:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+AnimationDataConsumerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+AnimationDataFunctionLib:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+AnimationDataOverriderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+AnimationDataStore:
+  Attributes:
+  - Name: Data
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Struct GetAnimationDataClass>
+  - Name: LoadingData
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<Struct Data>
+  ClassSize: '0x38'
+  FullSize: '0x60'
+  InheritedSize: '0x28'
+  Super: Object
+AnimationDataStoreAsset:
+  Attributes:
+  - Name: AssetRefs
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct AssetWeakRefs>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+AnimationDataStoreComponent:
+  Attributes:
+  - Name: AnimationDataStoreWeakReferences
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: Class AnimationDataStoreWeakReferenceAsset*
+  ClassSize: '0xc8'
+  FullSize: '0x190'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+AnimationDataStoreId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+AnimationDataStoreInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+AnimationDataStoreLoaderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+AnimationDataStoreOverrideId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+AnimationDataStoreWeakReferenceAsset:
+  Attributes:
+  - Name: AssetWeakRefs
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct AnimationDataStoreWeakReferences>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+AnimationEditorSettings:
+  Attributes:
+  - Name: CustomAnimationMontageIdListings
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x10'
+  FullSize: '0x48'
+  InheritedSize: '0x38'
+  Super: DeveloperSettings
+AnimationLookAtInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+AnimationServerData:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+AnimationStateId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+AthenaAnimationControllableSocketsInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CharacterAnimationInstance:
+  Attributes:
+  - Name: IKLeftHandUpdateParams
+    Offset: '0x450'
+    Size: '0x40'
+    Type: Struct CharacterAnimationIKUpdateParams
+  - Name: IKRightHandUpdateParams
+    Offset: '0x490'
+    Size: '0x40'
+    Type: Struct CharacterAnimationIKUpdateParams
+  - Name: RightHandIKSocketName
+    Offset: '0x4d0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: LeftHandIKSocketName
+    Offset: '0x4d8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: RightHandIK
+    Offset: '0x4e0'
+    Size: '0x60'
+    Type: Struct LimbIK
+  - Name: LeftHandIK
+    Offset: '0x540'
+    Size: '0x60'
+    Type: Struct LimbIK
+  - Name: RightFootIK
+    Offset: '0x5a0'
+    Size: '0x60'
+    Type: Struct LimbIK
+  - Name: LeftFootIK
+    Offset: '0x600'
+    Size: '0x60'
+    Type: Struct LimbIK
+  ClassSize: '0x220'
+  FullSize: '0x660'
+  InheritedSize: '0x440'
+  Super: AnimInstance
+CharacterIKInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ClientSkeletalMeshComponent:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x9b0'
+  InheritedSize: '0x9b0'
+  Super: SkeletalMeshComponent
+CosmeticItemActor:
+  Attributes:
+  - Name: MeshComponent
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class SkeletalMeshComponent*
+  ClassSize: '0xb0'
+  FullSize: '0x480'
+  InheritedSize: '0x3d0'
+  Super: Actor
+CosmeticItemAnimationComponent:
+  Attributes:
+  - Name: DataAsset
+    Offset: '0x120'
+    Size: '0x8'
+    Type: Class CosmeticItemAnimationDataAsset*
+  ClassSize: '0x60'
+  FullSize: '0x128'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+CosmeticItemAnimationDataAsset:
+  Attributes:
+  - Name: WieldSockets
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x38'
+  FullSize: '0x60'
+  InheritedSize: '0x28'
+  Super: DataAsset
+CosmeticItemAnimationDataConsumerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CosmeticItemAnimationInstance:
+  Attributes:
+  - Name: AnimationDataSet
+    Offset: '0x448'
+    Size: '0x8'
+    Type: Class CosmeticItemAnimationSetDataAsset*
+  - Name: ActiveMontage
+    Offset: '0x450'
+    Size: '0x8'
+    Type: Class AnimMontage*
+  ClassSize: '0xb0'
+  FullSize: '0x4f0'
+  InheritedSize: '0x440'
+  Super: AnimInstance
+CosmeticItemAnimationInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CosmeticItemAnimationSetDataAsset:
+  Attributes:
+  - Name: LoopData
+    Offset: '0x28'
+    Size: '0x20'
+    Type: Struct CosmeticItemAnimationSetLoopData
+  - Name: OneShotSequences
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<class OneShotSequences*>
+  ClassSize: '0x30'
+  FullSize: '0x58'
+  InheritedSize: '0x28'
+  Super: DataAsset
+CustomAnimationHandlerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CustomAnimationInstanceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CustomAnimationInstanceProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CustomAnimationMontageComponent:
+  Attributes:
+  - Name: ReplicatedData
+    Offset: '0xd0'
+    Size: '0xc'
+    Type: Struct CustomAnimationMontageComponentReplicatedData
+  ClassSize: '0x70'
+  FullSize: '0x138'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+CustomAnimationMontageDefinitionDataAsset:
+  Attributes:
+  - Name: MontageId
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: MontageType
+    Offset: '0x30'
+    Size: '0x1'
+    Type: byte
+  - Name: MontageData
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class AnimMontage*
+  - Name: LoopingData
+    Offset: '0x40'
+    Size: '0x28'
+    Type: Struct CustomAnimationMontageStagedLoopingData
+  - Name: Interrupts
+    Offset: '0x68'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x48'
+  FullSize: '0x70'
+  InheritedSize: '0x28'
+  Super: DataAsset
+CustomAnimationMontageDefinitionListingDataAsset:
+  Attributes:
+  - Name: Entries
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct MontageIds>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+CustomAnimationMontageIdListingDataAsset:
+  Attributes:
+  - Name: MontageIds
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Name None>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+CustomAnimationMontageInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+DockableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+DockingAnimationInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+EmotePropDataInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+IndexedPlayableMontagesInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+LimbIKFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+LoadableAnimationsInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+LocomotionFunctionLib:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+NetworkSyncedAnimationComponent:
+  Attributes:
+  - Name: PlayRateAdjustMaxTimeDelta
+    Offset: '0xc8'
+    Size: '0x4'
+    Type: float
+  - Name: PlayRateAdjustMaxPercentageToSpeedUpPlayRate
+    Offset: '0xcc'
+    Size: '0x4'
+    Type: float
+  - Name: PlayRateAdjustMaxPercentageToSlowDownPlayRate
+    Offset: '0xd0'
+    Size: '0x4'
+    Type: float
+  - Name: ReplicatedAnimationProgression
+    Offset: '0xd4'
+    Size: '0x4'
+    Type: float
+  - Name: ReplicatedPlayingAnimationIndex
+    Offset: '0xd8'
+    Size: '0x4'
+    Type: int
+  - Name: ReplicatedPlayRate
+    Offset: '0xdc'
+    Size: '0x4'
+    Type: float
+  - Name: AnimInstance
+    Offset: '0xe8'
+    Size: '0x8'
+    Type: Class AnimInstance*
+  ClassSize: '0x48'
+  FullSize: '0x110'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+NetworkSyncedAnimationInstanceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+PreviewCharacterAnimationInstance:
+  Attributes:
+  - Name: ActiveMontage
+    Offset: '0x660'
+    Size: '0x8'
+    Type: Class AnimMontage*
+  ClassSize: '0x80'
+  FullSize: '0x6e0'
+  InheritedSize: '0x660'
+  Super: CharacterAnimationInstance
+RemoteAnimPlayableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ServerAnimationDataStoreInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+SyncGroupAnimMetaData:
+  Attributes:
+  - Name: SyncGroup
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: AnimMetaData
+TransformBlendCurveComponent:
+  Attributes:
+  - Name: Curve
+    Offset: '0xd0'
+    Size: '0x500'
+    Type: Struct TransformBlendCurve
+  ClassSize: '0x508'
+  FullSize: '0x5d0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+TurningFunctionLib:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+WaitForAnimationStateEntryProxy:
+  Attributes: []
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: Object
+WaitForAnimationStateExitProxy:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: Object
+WeightedAnimSequenceLoadOnDemand:
+  Attributes:
+  - Name: FallBackAnimation
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  - Name: WeightedAnimationList
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct FallBackAnimation>
+  ClassSize: '0xf8'
+  FullSize: '0x120'
+  InheritedSize: '0x28'
+  Super: Object
+WeightedAnimationLoadOnDemandDataAsset:
+  Attributes:
+  - Name: WeightedAnimationList
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct CreateNewWeightedAnimSequenceLoadOnDemand>
+  - Name: FallBackAnimation
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: DataAsset

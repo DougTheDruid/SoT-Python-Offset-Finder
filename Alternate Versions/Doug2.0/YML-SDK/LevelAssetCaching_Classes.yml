@@ -1,0 +1,66 @@
+LevelAssetCachingService:
+  Attributes:
+  - Name: CurrentRegion
+    Offset: '0x40'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x48'
+  FullSize: '0x70'
+  InheritedSize: '0x28'
+  Super: Object
+RegionLookupGeneratedGrid:
+  Attributes:
+  - Name: WorldSetup
+    Offset: '0x30'
+    Size: '0x28'
+    Type: Struct WorldRegionSetup
+  ClassSize: '0x88'
+  FullSize: '0xb0'
+  InheritedSize: '0x28'
+  Super: Object
+RegionLookupInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+RegionLookupSeaId:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: Object
+RegionalAssetCache:
+  Attributes: []
+  ClassSize: '0x98'
+  FullSize: '0xc0'
+  InheritedSize: '0x28'
+  Super: Object
+RegionalAssetCacheInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+RegionalAssetListDataAsset:
+  Attributes:
+  - Name: RegionAssets
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct ListMapping>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+RegionalAssetListSetupDataAsset:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0x78'
+  InheritedSize: '0x28'
+  Super: DataAsset
+RegionalAssetListWorldSetupDataAsset:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0x78'
+  InheritedSize: '0x28'
+  Super: DataAsset

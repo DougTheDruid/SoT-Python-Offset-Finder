@@ -1,0 +1,68 @@
+RetractableComponent:
+  Attributes:
+  - Name: FeatureToggle
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: OrientationAdjustmentOnRetractFlags
+    Offset: '0xf8'
+    Size: '0x3'
+    Type: Struct RetractorOrientationAdjustmentFlags
+  - Name: RetractorBoxAxis
+    Offset: '0xfb'
+    Size: '0x1'
+    Type: byte
+  - Name: ShouldAutoReleaseOnSuccessfulRetract
+    Offset: '0xfc'
+    Size: '0x1'
+    Type: bool
+  - Name: MigrateAttachedWithRetractor
+    Offset: '0xfd'
+    Size: '0x1'
+    Type: bool
+  - Name: WasSimulatingPhysicsBeforeRetract
+    Offset: '0xfe'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x38'
+  FullSize: '0x100'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+RetractableFloatingBarrelComponent:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0x110'
+  InheritedSize: '0x100'
+  Super: RetractableComponent
+RetractableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+RetractableProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+RetractorComponent:
+  Attributes:
+  - Name: RetractDestinationComponent
+    Offset: '0x110'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: RetractingComponent
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x60'
+  FullSize: '0x128'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+RetractorInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

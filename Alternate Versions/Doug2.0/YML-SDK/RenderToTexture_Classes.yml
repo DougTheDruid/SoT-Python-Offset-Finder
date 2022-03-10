@@ -1,0 +1,28 @@
+RenderToTextureFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+RenderToTextureSceneDetails:
+  Attributes:
+  - Name: ClassToSpawn
+    Offset: '0x28'
+    Size: '0x8'
+    Type: class
+  - Name: Resolution
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Struct IntPoint
+  - Name: World
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class World*
+  - Name: RenderTarget
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Class TextureRenderTarget2D*
+  ClassSize: '0x80'
+  FullSize: '0xa8'
+  InheritedSize: '0x28'
+  Super: Object

@@ -1,0 +1,605 @@
+ColorParameterNameAndCurves:
+  Attributes:
+  - Name: ParameterName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Index
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: RedCurve
+    Offset: '0x10'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: GreenCurve
+    Offset: '0x88'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: BlueCurve
+    Offset: '0x100'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: AlphaCurve
+    Offset: '0x178'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x1f0'
+EventPayload:
+  Attributes:
+  - Name: EventName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: IsSubtitleEvent
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: ActorNumber
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
+  - Name: SubtitleIndex
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: Parameters
+    Offset: '0x18'
+    Size: '0x18'
+    Type: Struct MovieSceneEventParameters
+  ClassSize: '0x30'
+MovieScene3DAttachSectionTemplate:
+  Attributes:
+  - Name: AttachGuid
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: AttachSocketName
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AttachComponentName
+    Offset: '0x30'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x38'
+MovieScene3DLocationKeyStruct:
+  Attributes:
+  - Name: Location
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x30'
+MovieScene3DPathSectionTemplate:
+  Attributes:
+  - Name: PathGuid
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: TimingCurve
+    Offset: '0x28'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: FrontAxisEnum
+    Offset: '0xa0'
+    Size: '0x1'
+    Type: byte
+  - Name: UpAxisEnum
+    Offset: '0xa1'
+    Size: '0x1'
+    Type: byte
+  - Name: bFollow
+    Offset: '0xa4'
+    Size: '0x1'
+    Type: bool
+  - Name: bReverse
+    Offset: '0xa4'
+    Size: '0x1'
+    Type: bool
+  - Name: bForceUpright
+    Offset: '0xa4'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xa8'
+MovieScene3DRotationKeyStruct:
+  Attributes:
+  - Name: Rotation
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Rotator
+  ClassSize: '0x30'
+MovieScene3DScaleKeyStruct:
+  Attributes:
+  - Name: Scale
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x30'
+MovieScene3DTransformKeyStruct:
+  Attributes:
+  - Name: Location
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Rotation
+    Offset: '0x14'
+    Size: '0xc'
+    Type: Struct Rotator
+  - Name: Scale
+    Offset: '0x20'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x78'
+MovieScene3DTransformSectionTemplate:
+  Attributes:
+  - Name: TranslationCurve
+    Offset: '0x18'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: RotationCurve
+    Offset: '0x180'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: ScaleCurve
+    Offset: '0x2e8'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x450'
+MovieSceneActorReferenceSectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: ActorGuidIndexCurve
+    Offset: '0x38'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  - Name: ActorGuids
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: TArray<Struct ActorGuidIndexCurve>
+  ClassSize: '0xb8'
+MovieSceneAdditiveCameraAnimationTemplate:
+  Attributes: []
+  ClassSize: '0x18'
+MovieSceneAdditiveCameraAnimationTrackTemplate:
+  Attributes: []
+  ClassSize: '0x18'
+MovieSceneAudioSectionTemplate:
+  Attributes:
+  - Name: AudioData
+    Offset: '0x18'
+    Size: '0x118'
+    Type: Struct MovieSceneAudioSectionTemplateData
+  ClassSize: '0x130'
+MovieSceneAudioSectionTemplateData:
+  Attributes:
+  - Name: Sound
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class SoundBase*
+  - Name: AudioStartOffset
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: AudioRange
+    Offset: '0xc'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: AudioPitchMultiplierCurve
+    Offset: '0x20'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: AudioVolumeCurve
+    Offset: '0x98'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: RowIndex
+    Offset: '0x110'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x118'
+MovieSceneBoolPropertySectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: BoolCurve
+    Offset: '0x38'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0xa8'
+MovieSceneBytePropertySectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: ByteCurve
+    Offset: '0x38'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0xa8'
+MovieSceneCameraAnimSectionData:
+  Attributes:
+  - Name: CameraAnim
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class CameraAnim*
+  - Name: PlayRate
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: PlayScale
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: BlendInTime
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: BlendOutTime
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: bLooping
+    Offset: '0x18'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x20'
+MovieSceneCameraAnimSectionTemplate:
+  Attributes:
+  - Name: SourceData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieSceneCameraAnimSectionData
+  - Name: SectionStartTime
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x40'
+MovieSceneCameraCutSectionTemplate:
+  Attributes:
+  - Name: CameraGuid
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x28'
+MovieSceneCameraShakeSectionData:
+  Attributes:
+  - Name: ShakeClass
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: PlayScale
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: PlaySpace
+    Offset: '0xc'
+    Size: '0x1'
+    Type: byte
+  - Name: UserDefinedPlaySpace
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Rotator
+  ClassSize: '0x20'
+MovieSceneCameraShakeSectionTemplate:
+  Attributes:
+  - Name: SourceData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieSceneCameraShakeSectionData
+  - Name: SectionStartTime
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x40'
+MovieSceneColorKeyStruct:
+  Attributes:
+  - Name: Color
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct LinearColor
+  ClassSize: '0x58'
+MovieSceneColorSectionTemplate:
+  Attributes:
+  - Name: PropertyName
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: PropertyPath
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Curves
+    Offset: '0x30'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x210'
+MovieSceneComponentMaterialSectionTemplate:
+  Attributes:
+  - Name: MaterialIndex
+    Offset: '0x48'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x50'
+MovieSceneEnumPropertySectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: EnumCurve
+    Offset: '0x38'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0xa8'
+MovieSceneEventParameters:
+  Attributes: []
+  ClassSize: '0x18'
+MovieSceneEventSectionData:
+  Attributes:
+  - Name: KeyTimes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Float None>
+  - Name: KeyValues
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct EventPayload>
+  ClassSize: '0x20'
+MovieSceneEventSectionTemplate:
+  Attributes:
+  - Name: EventData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieSceneEventSectionData
+  - Name: bFireEventsWhenForwards
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  - Name: bFireEventsWhenBackwards
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x40'
+MovieSceneFadeSectionTemplate:
+  Attributes:
+  - Name: FadeCurve
+    Offset: '0x18'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: FadeColor
+    Offset: '0x90'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: bFadeAudio
+    Offset: '0xa0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xa8'
+MovieSceneFloatPropertySectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: FloatCurve
+    Offset: '0x38'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0xb0'
+MovieSceneIntegerPropertySectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: IntegerCurve
+    Offset: '0x38'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0xa8'
+MovieSceneLevelVisibilitySectionTemplate:
+  Attributes:
+  - Name: Visibility
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
+  - Name: LevelNames
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x30'
+MovieSceneLevelVisibilitySharedTrack:
+  Attributes: []
+  ClassSize: '0x18'
+MovieSceneParameterSectionTemplate:
+  Attributes:
+  - Name: Scalars
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct MaterialIndex>
+  - Name: Vectors
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct Scalars>
+  - Name: Colors
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Struct Vectors>
+  ClassSize: '0x48'
+MovieSceneParticleParameterSectionTemplate:
+  Attributes: []
+  ClassSize: '0x48'
+MovieSceneParticleSectionTemplate:
+  Attributes:
+  - Name: ParticleKeys
+    Offset: '0x18'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0x88'
+MovieSceneSkeletalAnimationParams:
+  Attributes:
+  - Name: Animation
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class AnimSequenceBase*
+  - Name: StartOffset
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: EndOffset
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: PlayRate
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: bReverse
+    Offset: '0x14'
+    Size: '0x1'
+    Type: bool
+  - Name: SlotName
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Weight
+    Offset: '0x20'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x98'
+MovieSceneSkeletalAnimationSectionTemplate:
+  Attributes:
+  - Name: Params
+    Offset: '0x18'
+    Size: '0xa0'
+    Type: Struct MovieSceneSkeletalAnimationSectionTemplateParameters
+  ClassSize: '0xb8'
+MovieSceneSkeletalAnimationSectionTemplateParameters:
+  Attributes:
+  - Name: SectionStartTime
+    Offset: '0x98'
+    Size: '0x4'
+    Type: float
+  - Name: SectionEndTime
+    Offset: '0x9c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xa0'
+MovieSceneSkeletalAnimationSharedTrack:
+  Attributes: []
+  ClassSize: '0x18'
+MovieSceneSlomoSectionTemplate:
+  Attributes:
+  - Name: SlomoCurve
+    Offset: '0x18'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x90'
+MovieSceneSpawnSectionTemplate:
+  Attributes:
+  - Name: Curve
+    Offset: '0x18'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0x88'
+MovieSceneStringPropertySectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: StringCurve
+    Offset: '0x38'
+    Size: '0x78'
+    Type: Struct StringCurve
+  ClassSize: '0xb0'
+MovieSceneVector2DKeyStruct:
+  Attributes:
+  - Name: Vector
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Struct Vector2D
+  ClassSize: '0x50'
+MovieSceneVector4KeyStruct:
+  Attributes:
+  - Name: Vector
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct Vector4
+  ClassSize: '0x60'
+MovieSceneVectorKeyStruct:
+  Attributes:
+  - Name: Vector
+    Offset: '0x48'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x58'
+MovieSceneVectorKeyStructBase:
+  Attributes: []
+  ClassSize: '0x48'
+MovieSceneVectorPropertySectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: ComponentCurves
+    Offset: '0x38'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: NumChannelsUsed
+    Offset: '0x218'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x220'
+MovieSceneVisibilitySectionTemplate:
+  Attributes:
+  - Name: bTemporarilyHiddenInGame
+    Offset: '0xa8'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xb0'
+ScalarParameterNameAndCurve:
+  Attributes:
+  - Name: ParameterName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Index
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: ParameterCurve
+    Offset: '0x10'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x88'
+VectorParameterNameAndCurves:
+  Attributes:
+  - Name: ParameterName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Index
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: XCurve
+    Offset: '0x10'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: YCurve
+    Offset: '0x88'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: ZCurve
+    Offset: '0x100'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x178'

@@ -1,0 +1,16 @@
+EntityEnumerationInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+EntityEnumerationService:
+  Attributes:
+  - Name: World
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class World*
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: Object

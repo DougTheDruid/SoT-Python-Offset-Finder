@@ -1,0 +1,17 @@
+ChecklistActionProgressTracker:
+  Attributes:
+  - Name: ActionData
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class ChecklistActionData*
+  ClassSize: '0x10'
+TaleQuestChecklistItem:
+  Attributes:
+  - Name: ChecklistActions
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct ChecklistActionProgressTracker>
+  ClassSize: '0x50'
+TaleQuestVariableMapMarkType:
+  Attributes: []
+  ClassSize: '0x20'

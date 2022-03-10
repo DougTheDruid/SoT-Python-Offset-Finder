@@ -1,0 +1,48 @@
+EventTreasuryRoomActive:
+  Attributes: []
+  ClassSize: '0x1'
+EventTreasuryRoomInactive:
+  Attributes: []
+  ClassSize: '0x1'
+TreasuryWaveEncounter:
+  Attributes:
+  - Name: EncounterType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: SpawnerMechanism
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class SpawnAIWaveMechanismAction*
+  - Name: MechanismTrigger
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: SpawnerMechanismVaultMaster
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class SpawnAIWaveMechanismAction*
+  - Name: MechanismTriggerVaultMaster
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Waves
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class TreasuryWaveDataAsset*
+  - Name: FinalWaves
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class TreasuryWaveDataAsset*
+  - Name: FinalWavesVaultMaster
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class TreasuryWaveDataAsset*
+  - Name: NeedsRoomFlooded
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x48'
+TreasuryWaveTracker:
+  Attributes: []
+  ClassSize: '0x18'

@@ -1,0 +1,50 @@
+BP_Prompt_EmissarySoldLoot_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: Handle_EmissarySoldLoot
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: CompanyName
+    Offset: '0x168'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SurfacedThisSession
+    Offset: '0x170'
+    Size: '0x1'
+    Type: bool
+  - Name: ExpectedCompanyName
+    Offset: '0x174'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Prompts
+    Offset: '0x180'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
+  - Name: PromptAccessKey
+    Offset: '0x190'
+    Size: '0x8'
+    Type: class
+  - Name: PromptIndex
+    Offset: '0x198'
+    Size: '0x4'
+    Type: int
+  - Name: NumberOfPrompts
+    Offset: '0x19c'
+    Size: '0x4'
+    Type: int
+  - Name: InitialDelay
+    Offset: '0x1a0'
+    Size: '0x4'
+    Type: float
+  - Name: ShowPromptDuration
+    Offset: '0x1a4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x90'
+  FullSize: '0x1a8'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C

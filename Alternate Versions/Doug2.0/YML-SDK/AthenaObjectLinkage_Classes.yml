@@ -1,0 +1,34 @@
+EndPlayHandler:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: Object
+LinkEndpointIdUtilities:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+LinkEndpointInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+LinkerComponent:
+  Attributes:
+  - Name: EndPlayHandlers
+    Offset: '0x190'
+    Size: '0x10'
+    Type: TArray<class EndPlayHandlers*>
+  ClassSize: '0xd8'
+  FullSize: '0x1a0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+LinkerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

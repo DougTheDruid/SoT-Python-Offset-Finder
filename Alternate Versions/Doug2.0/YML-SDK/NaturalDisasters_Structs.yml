@@ -1,0 +1,238 @@
+AshenLordWorldEndCloudAnimation:
+  Attributes:
+  - Name: ServerStartTime
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: ServerLifeTime
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+EarthquakeForceFeedback:
+  Attributes:
+  - Name: ForceFeedbackOptions
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct EarthquakeForceFeedbackOption>
+  - Name: TimeBetweenRumbles
+    Offset: '0x10'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  ClassSize: '0x40'
+EarthquakeForceFeedbackOption:
+  Attributes:
+  - Name: ForceFeedback
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct GeyserSpawnAngleOption>
+  ClassSize: '0x10'
+EventVolcanoStateChanged:
+  Attributes:
+  - Name: State
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x1'
+GeyserSpawnAngleOption:
+  Attributes:
+  - Name: Weight
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Direction
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Range
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+PlayerFeedback:
+  Attributes:
+  - Name: ForceFeedback
+    Offset: '0x0'
+    Size: '0x40'
+    Type: Struct EarthquakeForceFeedback
+  - Name: CameraShakes
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Class ForceFeedback>
+  - Name: StaggerStrength
+    Offset: '0x50'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  ClassSize: '0x80'
+VolcanoProjectileData:
+  Attributes:
+  - Name: WeightedVolcanoProjectileIndex
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: LaunchVelocity
+    Offset: '0x4'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: RotationRate
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x1c'
+VolcanoSetupDataEmbersEntry:
+  Attributes:
+  - Name: MaxDistanceInMetres
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Effect
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x10'
+VolcanoStateData:
+  Attributes:
+  - Name: State
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: StateDuration
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: PercentageOfMaxTargetingRange
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+VolcanoTarget:
+  Attributes:
+  - Name: Type
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: HitType
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: Target
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: NumExtraShots
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
+VolcanoTargetChances:
+  Attributes:
+  - Name: OnTarget
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: NearMiss
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Random
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: OnTargetNumExtraShots
+    Offset: '0x10'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: NearMissNumExtraShots
+    Offset: '0x30'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: CoolDownDuration
+    Offset: '0x50'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x58'
+VolcanoTargetCoolDown:
+  Attributes:
+  - Name: Target
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x10'
+WeightedAshenLordVolcanoProjectile:
+  Attributes:
+  - Name: Weight
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: GravityMultiplier
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Speed
+    Offset: '0x8'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: RotationRatePitch
+    Offset: '0x38'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: RotationRateRoll
+    Offset: '0x68'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: RotationRateYaw
+    Offset: '0x98'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: ProjectileClass
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0xd0'
+WeightedVolcanoProjectile:
+  Attributes:
+  - Name: Weight
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: ProjectileClass
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
+  - Name: ProjectileSpeedMinAtInnerRadius
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: ProjectileSpeedMaxAtInnerRadius
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: ProjectileSpeedMinAtOuterRadius
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: ProjectileSpeedMaxAtOuterRadius
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: ProjectileGravityScale
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: RotationRatePitch
+    Offset: '0x28'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: RotationRateRoll
+    Offset: '0x58'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: RotationRateYaw
+    Offset: '0x88'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: LaunchAudioPlayEvent
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0xc0'

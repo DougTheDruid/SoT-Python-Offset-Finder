@@ -1,0 +1,18 @@
+BP_BountyRewardSkull_Proxy_C:
+  Attributes:
+  - Name: GlintComponent
+    Offset: '0x7f0'
+    Size: '0x8'
+    Type: Class GlintComponent*
+  - Name: ParticleSystem
+    Offset: '0x7f8'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: Interactable
+    Offset: '0x800'
+    Size: '0x8'
+    Type: Class InteractableComponent*
+  ClassSize: '0x18'
+  FullSize: '0x808'
+  InheritedSize: '0x7f0'
+  Super: BountyRewardItemProxy

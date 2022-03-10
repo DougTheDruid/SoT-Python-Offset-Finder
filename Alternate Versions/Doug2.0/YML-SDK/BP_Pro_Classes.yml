@@ -1,0 +1,26 @@
+BP_Projectile_CannonBall_ChainShot_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x658'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: MeshRotator
+    Offset: '0x660'
+    Size: '0x8'
+    Type: Class MeshRotatorComponent*
+  - Name: BoxCollisionExtentAdjustOverTime
+    Offset: '0x668'
+    Size: '0x8'
+    Type: Class BoxCollisionExtentAdjustOverTimeComponent*
+  - Name: chainshot
+    Offset: '0x670'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Collision
+    Offset: '0x678'
+    Size: '0x8'
+    Type: Class BoxComponent*
+  ClassSize: '0x28'
+  FullSize: '0x680'
+  InheritedSize: '0x658'
+  Super: CannonProjectile

@@ -1,0 +1,40 @@
+ClientSettings:
+  Attributes:
+  - Name: FailToConnectToServer
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: PauseMigrationBeforeOwnershipTransfer
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x2'
+ServerMigrationCustomMigrationSerialisationStruct:
+  Attributes: []
+  ClassSize: '0x4'
+ServerMigrationSerialisationDetailsTestsUStruct:
+  Attributes:
+  - Name: FloatWithNoMarkup
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+ServerSettings:
+  Attributes:
+  - Name: FailToConnectToServer
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: RefuseMigrationStart
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: DisconnectServerConnectionDuringMigration
+    Offset: '0x2'
+    Size: '0x1'
+    Type: bool
+  - Name: RefuseIncomingClientConnections
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'

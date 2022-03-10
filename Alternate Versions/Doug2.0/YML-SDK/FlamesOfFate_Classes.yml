@@ -1,0 +1,10 @@
+RemoveFlameOfFateTypeStep:
+  Attributes:
+  - Name: Desc
+    Offset: '0x90'
+    Size: '0x8'
+    Type: Class RemoveFlameOfFateTypeStepDesc*
+  ClassSize: '0x8'
+  FullSize: '0x98'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep

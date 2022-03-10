@@ -1,0 +1,132 @@
+ChecklistActionData:
+  Attributes:
+  - Name: NumRequiredActions
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: ActionType
+    Offset: '0x2c'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: Object
+ChecklistItemsDataAsset:
+  Attributes:
+  - Name: ChecklistItems
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct Afternote>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+ChecklistMap:
+  Attributes:
+  - Name: CanvasWidth
+    Offset: '0x7e0'
+    Size: '0x4'
+    Type: int
+  - Name: CanvasHeight
+    Offset: '0x7e4'
+    Size: '0x4'
+    Type: int
+  - Name: Font
+    Offset: '0x7e8'
+    Size: '0x8'
+    Type: Class Font*
+  - Name: FontScale
+    Offset: '0x7f0'
+    Size: '0x4'
+    Type: float
+  - Name: FontLineSpacingScale
+    Offset: '0x7f4'
+    Size: '0x4'
+    Type: float
+  - Name: ChecklistMapLayout
+    Offset: '0x800'
+    Size: '0x8'
+    Type: Class ChecklistMapLayout*
+  - Name: Contents
+    Offset: '0x808'
+    Size: '0xe8'
+    Type: Struct ChecklistMapContents
+  ClassSize: '0x160'
+  FullSize: '0x940'
+  InheritedSize: '0x7e0'
+  Super: TreasureMap
+ChecklistMapCollectionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ChecklistMapCompletionComponent:
+  Attributes:
+  - Name: ActionData
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: Class ChecklistActionData*
+  ClassSize: '0x78'
+  FullSize: '0x140'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+ChecklistMapSettings:
+  Attributes:
+  - Name: ChecklistMapItemDescClass
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: ChecklistEvents
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x20'
+  FullSize: '0x58'
+  InheritedSize: '0x38'
+  Super: DeveloperSettings
+DeliverBootyChecklistActionData:
+  Attributes:
+  - Name: TargetBootyTypes
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<AssetClass TargetAIClasses>
+  - Name: TargetCompanies
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Class TargetBootyTypes>
+  ClassSize: '0x20'
+  FullSize: '0x50'
+  InheritedSize: '0x30'
+  Super: ChecklistActionData
+KillActorChecklistActionData:
+  Attributes:
+  - Name: TargetAIClasses
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Class EventsSource>
+  ClassSize: '0x10'
+  FullSize: '0x40'
+  InheritedSize: '0x30'
+  Super: ChecklistActionData
+NPCInteractionChecklistActionData:
+  Attributes:
+  - Name: TargetNPCIds
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct ChecklistItems>
+  ClassSize: '0x10'
+  FullSize: '0x40'
+  InheritedSize: '0x30'
+  Super: ChecklistActionData
+NamedChecklistEventActionData:
+  Attributes:
+  - Name: Event
+    Offset: '0x30'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x8'
+  FullSize: '0x38'
+  InheritedSize: '0x30'
+  Super: ChecklistActionData

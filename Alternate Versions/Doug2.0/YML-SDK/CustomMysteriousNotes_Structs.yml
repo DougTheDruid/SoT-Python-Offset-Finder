@@ -1,0 +1,37 @@
+CreateMysteriousNoteData:
+  Attributes:
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: NoteType
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: NoteTitle
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: NoteBody
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x38'
+CustomPlayerNoteList:
+  Attributes:
+  - Name: Notes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct EnchantedCompassTarget>
+  ClassSize: '0x10'
+DestroyMysteriousNoteData:
+  Attributes:
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: NoteGUID
+    Offset: '0x4'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x14'

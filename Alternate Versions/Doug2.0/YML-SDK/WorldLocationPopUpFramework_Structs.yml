@@ -1,0 +1,15 @@
+PlayerEnteredWorldLocationNotificationEvent:
+  Attributes:
+  - Name: AudioOverride
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class PopUpAudioDesc*
+  - Name: IconPath
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DisplayText
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x28'

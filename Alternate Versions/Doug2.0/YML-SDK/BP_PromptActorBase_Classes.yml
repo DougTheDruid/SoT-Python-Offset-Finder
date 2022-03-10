@@ -1,0 +1,22 @@
+BP_PromptActorBase_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: DefaultSceneRoot
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: IsCompleted
+    Offset: '0x3e0'
+    Size: '0x1'
+    Type: bool
+  - Name: PromptCoordinators
+    Offset: '0x3e8'
+    Size: '0x10'
+    Type: TArray<class PromptCoordinators*>
+  ClassSize: '0x38'
+  FullSize: '0x408'
+  InheritedSize: '0x3d0'
+  Super: Actor

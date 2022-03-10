@@ -1,0 +1,292 @@
+MigrationControlChannel:
+  Attributes: []
+  ClassSize: '0x48'
+  FullSize: '0xb0'
+  InheritedSize: '0x68'
+  Super: Channel
+MigrationRelevancyClusterActor:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
+  Super: Actor
+NetworkTestingBlueprintFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+ServerMigrationBlueprintFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+ServerMigrationSerialisationDetailsTestsActorRef:
+  Attributes:
+  - Name: ActorReferenceWithMigrationMarkup
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: Object
+ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPl:
+  Attributes:
+  - Name: PrimitiveComponent
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class PrimitiveComponent*
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsActorWithChild:
+  Attributes:
+  - Name: ChildActorComponent
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsActorWithDynamicCompone:
+  Attributes:
+  - Name: SubObject
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class ServerMigrationSerialisationDetailsTestsMigratableComponent*
+  - Name: ActorComponent
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class ServerMigrationSerialisationDetailsTestsMigratableComponent*
+  - Name: Subobject2
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class ServerMigrationSerialisationDetailsTestsMigratableComponent*
+  ClassSize: '0x18'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr:
+  Attributes:
+  - Name: ActorPtr
+    Offset: '0x3d0'
+    Size: '0x14'
+    Type: Struct NetActorPtr
+  ClassSize: '0x18'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsActorWithReplicatedChil:
+  Attributes:
+  - Name: ChildActorComponent
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsActorWithUniqueNetId:
+  Attributes:
+  - Name: UniqueId
+    Offset: '0x3d0'
+    Size: '0x18'
+    Type: Struct UniqueNetIdRepl
+  ClassSize: '0x18'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsMigratableComponent:
+  Attributes:
+  - Name: FloatWithMigrationMarkup
+    Offset: '0xc8'
+    Size: '0x4'
+    Type: float
+  - Name: IntWithNoMarkup
+    Offset: '0xcc'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+  FullSize: '0xd0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+ServerMigrationSerialisationDetailsTestsMigratableComponentActo:
+  Attributes:
+  - Name: ComponentWithMigrationMarkup
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class ServerMigrationSerialisationDetailsTestsMigratableComponent*
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsMigratableDefaultCompon:
+  Attributes:
+  - Name: ComponentWithMigrationMarkup
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class ServerMigrationSerialisationDetailsTestsMigratableComponent*
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrde:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsMigrationActorWithRootC:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsMigrationChildActorLink:
+  Attributes:
+  - Name: Component
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d8'
+  Super: ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis
+ServerMigrationSerialisationDetailsTestsMigrationGetLinkedActor:
+  Attributes:
+  - Name: DependentActor
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsMigrationReferenceActor:
+  Attributes:
+  - Name: ActorReferenceWithMigrationMarkup
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x10'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsPropertyMarkup:
+  Attributes:
+  - Name: Int32NoMarkup
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: BoolWithMigrationMarkup
+    Offset: '0x2c'
+    Size: '0x1'
+    Type: bool
+  - Name: StringWithSaveGameMarkup
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FloatWithMigrationAndReplicationMarkup
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: Object
+ServerMigrationSerialisationDetailsTestsTArrayProperty:
+  Attributes:
+  - Name: IntegerArrayWithMigrationMarkup
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Int None>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+ServerMigrationSerialisationDetailsTestsUStructProperty:
+  Attributes:
+  - Name: SubStructWithMigrationMarkup
+    Offset: '0x28'
+    Size: '0xc'
+    Type: Struct ServerMigrationSerialisationDetailsTestsUStruct
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+ServerMigrationSettings:
+  Attributes:
+  - Name: MaxSimultaneousMigrations
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: TransportImplementation
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ServerDefaultListenPort
+    Offset: '0x40'
+    Size: '0x4'
+    Type: int
+  - Name: ServerListenPortRangeSize
+    Offset: '0x44'
+    Size: '0x4'
+    Type: int
+  - Name: AutomationServerDefaultListenPort
+    Offset: '0x48'
+    Size: '0x4'
+    Type: int
+  - Name: InstanceImplementation
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: MigrationConnectionTimeoutSeconds
+    Offset: '0x60'
+    Size: '0x4'
+    Type: float
+  - Name: WaitForClientActorRemappingTimeoutLength
+    Offset: '0x64'
+    Size: '0x4'
+    Type: float
+  - Name: WaitForTransferOwnershipAcknowledgementTimeoutLength
+    Offset: '0x68'
+    Size: '0x4'
+    Type: float
+  - Name: DeserialisationTimeSliceLength
+    Offset: '0x6c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x48'
+  FullSize: '0x70'
+  InheritedSize: '0x28'
+  Super: Object
+TestActorWithUObjectProperty:
+  Attributes:
+  - Name: ObjectProperty
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+TestUObjectWithObjectProperty:
+  Attributes:
+  - Name: ObjectProperty
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: Object

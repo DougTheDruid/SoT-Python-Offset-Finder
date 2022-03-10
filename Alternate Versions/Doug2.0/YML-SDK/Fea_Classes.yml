@@ -1,0 +1,18 @@
+BP_FeatureIslandCrate_cmn_looted_box_01_c_C:
+  Attributes:
+  - Name: Replenishable
+    Offset: '0x4c0'
+    Size: '0x8'
+    Type: Class ReplenishableComponent*
+  - Name: IslandTelemetrySubject
+    Offset: '0x4c8'
+    Size: '0x8'
+    Type: Class IslandTelemetrySubjectComponent*
+  - Name: StorageContainer
+    Offset: '0x4d0'
+    Size: '0x8'
+    Type: Class StorageContainerComponent*
+  ClassSize: '0x18'
+  FullSize: '0x4d8'
+  InheritedSize: '0x4c0'
+  Super: StorageContainer

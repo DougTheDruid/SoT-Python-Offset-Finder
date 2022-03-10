@@ -1,0 +1,40 @@
+FontBulkData:
+  Attributes: []
+  ClassSize: '0x98'
+  FullSize: '0xc0'
+  InheritedSize: '0x28'
+  Super: Object
+FontProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+SlateTypes:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+SlateWidgetStyleAsset:
+  Attributes:
+  - Name: CustomStyle
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class SlateWidgetStyleContainerBase*
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: Object
+SlateWidgetStyleContainerBase:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: Object
+SlateWidgetStyleContainerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

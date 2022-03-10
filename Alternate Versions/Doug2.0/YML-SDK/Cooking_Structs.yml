@@ -1,0 +1,126 @@
+CookEndTelemetryEvent:
+  Attributes:
+  - Name: ItemName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CookState
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  - Name: Location
+    Offset: '0x14'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: CookId
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x30'
+CookStartTelemetryEvent:
+  Attributes:
+  - Name: ItemName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CookState
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  - Name: Location
+    Offset: '0x14'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: CookId
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x30'
+CookableComponentSmokeFeedbackTimingEntry:
+  Attributes:
+  - Name: StateDuration
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: StateFeedbackLevel
+    Offset: '0x4'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+CookerSmokeFeedbackEntry:
+  Attributes:
+  - Name: FeedbackLevel
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: SmokeVFX
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ParticleSystem*
+  ClassSize: '0x10'
+CookingClientRepresentation:
+  Attributes:
+  - Name: Cooking
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: HasItem
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: CurrentlyCookingItem
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ItemInfo*
+  - Name: CurrentCookingItemDisplayName
+    Offset: '0x10'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: CurrentCookingItemCategory
+    Offset: '0x48'
+    Size: '0x8'
+    Type: class
+  - Name: SmokeFeedbackLevel
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: VisibleCookedExtent
+    Offset: '0x54'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentItemPlacementAngle
+    Offset: '0x58'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentCookableTypeName
+    Offset: '0x5c'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x68'
+CookingInfo:
+  Attributes: []
+  ClassSize: '0xc'
+OnItemStartedCooking:
+  Attributes: []
+  ClassSize: '0x10'
+OnItemStoppedCooking:
+  Attributes: []
+  ClassSize: '0x1'
+OnPlacedItemInCookingPot:
+  Attributes:
+  - Name: Interactor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ItemToCook
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ItemInfo*
+  ClassSize: '0x10'
+OnRemovedItemFromCookingPot:
+  Attributes:
+  - Name: Interactor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'

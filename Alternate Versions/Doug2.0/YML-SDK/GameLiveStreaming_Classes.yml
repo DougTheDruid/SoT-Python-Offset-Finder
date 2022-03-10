@@ -1,0 +1,12 @@
+GameLiveStreamingFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+QueryLiveStreamsCallbackProxy:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: OnlineBlueprintCallProxyBase

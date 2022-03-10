@@ -1,0 +1,10 @@
+BP_CapstanRelease_C:
+  Attributes:
+  - Name: Interactable
+    Offset: '0x4b8'
+    Size: '0x8'
+    Type: Class InteractableComponent*
+  ClassSize: '0x8'
+  FullSize: '0x4c0'
+  InheritedSize: '0x4b8'
+  Super: CapstanRelease

@@ -1,0 +1,33 @@
+BlueprintSessionResult:
+  Attributes: []
+  ClassSize: '0xe0'
+PartyReservation:
+  Attributes:
+  - Name: TeamNum
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: PartyLeader
+    Offset: '0x8'
+    Size: '0x18'
+    Type: Struct UniqueNetIdRepl
+  - Name: PartyMembers
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct PlayerReservation>
+  ClassSize: '0x30'
+PlayerReservation:
+  Attributes:
+  - Name: UniqueId
+    Offset: '0x0'
+    Size: '0x18'
+    Type: Struct UniqueNetIdRepl
+  - Name: ValidationStr
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ElapsedTime
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x30'

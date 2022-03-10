@@ -1,0 +1,66 @@
+ALK_ThirdPerson_Female_Athletic_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Female_Default_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Female_Large_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Female_Thin_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Female_Unfit_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Male_Athletic_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Male_Default_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Male_Large_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Male_Thin_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Male_Unfit_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId
+ALK_ThirdPerson_Skeleton_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: AnimationDataStoreId

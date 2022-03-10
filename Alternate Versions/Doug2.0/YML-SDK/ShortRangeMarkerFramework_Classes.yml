@@ -1,0 +1,48 @@
+ShortRangeMarker:
+  Attributes:
+  - Name: DynamicMaterials
+    Offset: '0x3e0'
+    Size: '0x10'
+    Type: TArray<class DynamicMaterials*>
+  - Name: LifetimerTimer
+    Offset: '0x3f0'
+    Size: '0x4'
+    Type: float
+  - Name: FadeTimer
+    Offset: '0x3f4'
+    Size: '0x4'
+    Type: float
+  - Name: CachedActors
+    Offset: '0x418'
+    Size: '0x10'
+    Type: TArray<Weakclass TriggerFadeOut>
+  ClassSize: '0x58'
+  FullSize: '0x428'
+  InheritedSize: '0x3d0'
+  Super: Actor
+ShortRangeMarkerBlueprintFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+ShortRangeMarkerDataAsset:
+  Attributes:
+  - Name: RewardMarker
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class ActorSpawnData*
+  - Name: RewardMarkerHeight
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+ShortRangeMarkerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

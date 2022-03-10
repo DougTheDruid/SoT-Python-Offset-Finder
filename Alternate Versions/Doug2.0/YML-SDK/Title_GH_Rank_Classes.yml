@@ -1,0 +1,18 @@
+Title_GH_Rank1_001_CaptainOfGoldenEmissaries_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: TitleDesc
+Title_GH_Rank2_001_EmissaryOfGoldMarauders_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: TitleDesc
+Title_GH_Rank3_001_EmissaryOfGoldSeafarers_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: TitleDesc

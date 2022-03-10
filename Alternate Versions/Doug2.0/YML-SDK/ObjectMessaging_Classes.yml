@@ -1,0 +1,24 @@
+ObjectMessagingDispatcherComponent:
+  Attributes: []
+  ClassSize: '0xa8'
+  FullSize: '0x170'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+ObjectMessagingDispatcherInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ObjectMessagingFunctions:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+ObjectMessagingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

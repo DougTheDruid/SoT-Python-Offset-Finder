@@ -1,0 +1,130 @@
+AppliedDamageToShipEvent:
+  Attributes:
+  - Name: ShipType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Ship
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x10'
+DamageZoneDamageLevelChanged:
+  Attributes:
+  - Name: DamageZone
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: DamageLevel
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
+DistanceAndLevelOfDamage:
+  Attributes:
+  - Name: DistanceLimit
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: LevelOfDamage
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+EventShipDamageApplied:
+  Attributes:
+  - Name: Ship
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: DamagedShipPartIdentifier
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: NewDamageLevel
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: ImpactDamageEvent
+    Offset: '0x18'
+    Size: '0x58'
+    Type: Struct ImpactDamageEvent
+  ClassSize: '0x70'
+EventShipDamaged:
+  Attributes:
+  - Name: Ship
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ImpactDamageEvent
+    Offset: '0x8'
+    Size: '0x58'
+    Type: Struct ImpactDamageEvent
+  ClassSize: '0x60'
+HullDamageHit:
+  Attributes:
+  - Name: HitPosition
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: HitNormal
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: HitStrength
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: HitLevel
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: int
+  - Name: HasDecal
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x24'
+HullDamagePersistenceModel:
+  Attributes:
+  - Name: DamageZones
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct HullDamageZoneInfo>
+  ClassSize: '0x10'
+HullDamageZoneInfo:
+  Attributes:
+  - Name: DamageZoneId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DamageLevel
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: RepairedDamageLevel
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
+  - Name: RepairableState
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
+  - Name: ExternalHitList
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct HullDamageHit>
+  ClassSize: '0x30'
+ShipDamageParams:
+  Attributes:
+  - Name: DamageParams
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct ShipPartLevelsOfDamage>
+  ClassSize: '0x10'
+ShipPartLevelsOfDamage:
+  Attributes:
+  - Name: DamagePerDistance
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct DistanceAndLevelOfDamage>
+  ClassSize: '0x30'

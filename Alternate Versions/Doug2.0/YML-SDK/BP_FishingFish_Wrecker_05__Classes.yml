@@ -1,0 +1,30 @@
+BP_FishingFish_Wrecker_05_Colour_01_Rose_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x920'
+  InheritedSize: '0x920'
+  Super: BP_FishingFish_Wrecker_05_C
+BP_FishingFish_Wrecker_05_Colour_02_Blackcloud_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x920'
+  InheritedSize: '0x920'
+  Super: BP_FishingFish_Wrecker_05_C
+BP_FishingFish_Wrecker_05_Colour_03_Snow_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x920'
+  InheritedSize: '0x920'
+  Super: BP_FishingFish_Wrecker_05_C
+BP_FishingFish_Wrecker_05_Colour_04_Sun_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x920'
+  InheritedSize: '0x920'
+  Super: BP_FishingFish_Wrecker_05_C
+BP_FishingFish_Wrecker_05_Colour_05_Moon_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x920'
+  InheritedSize: '0x920'
+  Super: BP_FishingFish_Wrecker_05_C

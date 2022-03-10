@@ -1,0 +1,18 @@
+Proposal_RevengeOfTheMornignstar_Chapter2_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x140'
+  InheritedSize: '0x140'
+  Super: VoyageCheckpointProposalDesc
+Proposal_RevengeOfTheMornignstar_Chapter3_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x140'
+  InheritedSize: '0x140'
+  Super: VoyageCheckpointProposalDesc
+Proposal_RevengeOfTheMornignstar_Chapter4_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x140'
+  InheritedSize: '0x140'
+  Super: VoyageCheckpointProposalDesc

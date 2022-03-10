@@ -1,0 +1,30 @@
+AthenaCheatManager:
+  Attributes:
+  - Name: CinematicCameraController
+    Offset: '0x78'
+    Size: '0x8'
+    Type: Class CinematicCameraController*
+  - Name: CinematicCameraControllerClass
+    Offset: '0x80'
+    Size: '0x8'
+    Type: class
+  - Name: CreatedWorldMarkers
+    Offset: '0xb0'
+    Size: '0x10'
+    Type: TArray<Struct CinematicCameraControllerClass>
+  - Name: DebugSchedulerSettings
+    Offset: '0xc0'
+    Size: '0x8'
+    Type: Class GameEventSchedulerSettingsAsset*
+  - Name: ServerPerformanceReplicator
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: Class ServerPerformanceReplicator*
+  - Name: TeleportToDigsiteHeightOffset
+    Offset: '0xd0'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xa0'
+  FullSize: '0x118'
+  InheritedSize: '0x78'
+  Super: CheatManager

@@ -1,0 +1,42 @@
+UdpMessagingSettings:
+  Attributes:
+  - Name: EnableTransport
+    Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  - Name: UnicastEndpoint
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: MulticastEndpoint
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: MulticastTimeToLive
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: StaticEndpoints
+    Offset: '0x58'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: EnableTunnel
+    Offset: '0x68'
+    Size: '0x1'
+    Type: bool
+  - Name: TunnelUnicastEndpoint
+    Offset: '0x70'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: TunnelMulticastEndpoint
+    Offset: '0x80'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: RemoteTunnelEndpoints
+    Offset: '0x90'
+    Size: '0x10'
+    Type: TArray<Str >
+  ClassSize: '0x78'
+  FullSize: '0xa0'
+  InheritedSize: '0x28'
+  Super: Object

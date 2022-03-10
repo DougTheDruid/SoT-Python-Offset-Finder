@@ -1,0 +1,70 @@
+LiveWidgetReflectorNode:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x98'
+  InheritedSize: '0x80'
+  Super: WidgetReflectorNodeBase
+SnapshotWidgetReflectorNode:
+  Attributes:
+  - Name: CachedWidgetType
+    Offset: '0x80'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: CachedWidgetVisibilityText
+    Offset: '0xb8'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: CachedWidgetReadableLocation
+    Offset: '0xf0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: CachedWidgetFile
+    Offset: '0x128'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CachedWidgetLineNumber
+    Offset: '0x138'
+    Size: '0x4'
+    Type: int
+  - Name: CachedWidgetAssetName
+    Offset: '0x13c'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CachedWidgetDesiredSize
+    Offset: '0x144'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: CachedWidgetForegroundColor
+    Offset: '0x150'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: CachedWidgetAddress
+    Offset: '0x180'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CachedWidgetEnabled
+    Offset: '0x190'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x118'
+  FullSize: '0x198'
+  InheritedSize: '0x80'
+  Super: WidgetReflectorNodeBase
+WidgetReflectorNodeBase:
+  Attributes:
+  - Name: Geometry
+    Offset: '0x28'
+    Size: '0x34'
+    Type: Struct Geometry
+  - Name: ChildNodes
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<class ChildNodes*>
+  - Name: Tint
+    Offset: '0x70'
+    Size: '0x10'
+    Type: Struct LinearColor
+  ClassSize: '0x58'
+  FullSize: '0x80'
+  InheritedSize: '0x28'
+  Super: Object

@@ -1,0 +1,70 @@
+BasePromptCoordinator:
+  Attributes:
+  - Name: PlayerController
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class AthenaPlayerController*
+  - Name: PrioritisedPromptsManager
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class PrioritisedPromptsManager*
+  - Name: CharacterWithRegisteredEvents
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class Character*
+  ClassSize: '0xd0'
+  FullSize: '0xf8'
+  InheritedSize: '0x28'
+  Super: Object
+GetPromptsLocalService:
+  Attributes:
+  - Name: WorldContextObject
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: BlueprintAsyncActionBase
+PrioritisedPromptsManager:
+  Attributes:
+  - Name: AllPrompts
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct Key>
+  - Name: PlayerController
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class PlayerController*
+  ClassSize: '0x50'
+  FullSize: '0x78'
+  InheritedSize: '0x28'
+  Super: Object
+PrioritisedPromptsManagerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+PromptCounterAccessKey:
+  Attributes:
+  - Name: Key
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+PromptsLocalService:
+  Attributes: []
+  ClassSize: '0x70'
+  FullSize: '0x98'
+  InheritedSize: '0x28'
+  Super: Object
+PromptsLocalServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

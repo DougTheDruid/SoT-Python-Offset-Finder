@@ -1,0 +1,12 @@
+BP_MiddleDeckDamageZone_00_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x868'
+  InheritedSize: '0x868'
+  Super: BP_BaseInternalDamageZone_C
+BP_MiddleDeckDamageZone_01_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x868'
+  InheritedSize: '0x868'
+  Super: BP_BaseInternalDamageZone_C

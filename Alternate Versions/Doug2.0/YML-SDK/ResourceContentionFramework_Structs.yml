@@ -1,0 +1,18 @@
+PoolableCollectionMapConfiguration:
+  Attributes:
+  - Name: Pools
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct PoolableCollectionMapConfigurationEntry>
+  - Name: PopulateJustInTime
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+PoolableCollectionMapConfigurationEntry:
+  Attributes:
+  - Name: Size
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'

@@ -1,0 +1,152 @@
+BP_Prompt_RepairShipCapstan_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: State_CapstanDamaged
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_OnCapstanDamaged
+    Offset: '0x128'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: State_Complete
+    Offset: '0x170'
+    Size: '0x1'
+    Type: bool
+  - Name: Prompt_RepairShip
+    Offset: '0x178'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Handle_CurrentShipChanged
+    Offset: '0x1e0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: CurrentShip
+    Offset: '0x228'
+    Size: '0x8'
+    Type: Class Ship*
+  ClassSize: '0x118'
+  FullSize: '0x230'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C
+BP_Prompt_RepairShipMast_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: State_ShipMastDamaged
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_OnMastDamaged1
+    Offset: '0x128'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: State_Complete
+    Offset: '0x170'
+    Size: '0x1'
+    Type: bool
+  - Name: Prompt_RepairShip
+    Offset: '0x178'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Handle_CurrentShipChanged
+    Offset: '0x1e0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: CurrentShip
+    Offset: '0x228'
+    Size: '0x8'
+    Type: Class Ship*
+  - Name: Handle_OnMastDamaged2
+    Offset: '0x230'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_OnMastDamaged3
+    Offset: '0x278'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: NumMastsRegistered
+    Offset: '0x2c0'
+    Size: '0x4'
+    Type: int
+  - Name: MastIndex
+    Offset: '0x2c4'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x1b0'
+  FullSize: '0x2c8'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C
+BP_Prompt_RepairShipWheel_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: State_ShipWheelDamaged
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_OnWheelDamaged
+    Offset: '0x128'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: State_Complete
+    Offset: '0x170'
+    Size: '0x1'
+    Type: bool
+  - Name: Prompt_RepairShip
+    Offset: '0x178'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Handle_CurrentShipChanged
+    Offset: '0x1e0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: CurrentShip
+    Offset: '0x228'
+    Size: '0x8'
+    Type: Class Ship*
+  ClassSize: '0x118'
+  FullSize: '0x230'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C
+BP_Prompt_RepairShip_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: State_ShipDamaged
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_OnShipDamaged
+    Offset: '0x128'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: State_Complete
+    Offset: '0x170'
+    Size: '0x1'
+    Type: bool
+  - Name: Prompt_RepairShip
+    Offset: '0x178'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Handle_CurrentShipChanged
+    Offset: '0x1e0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: CurrentShip
+    Offset: '0x228'
+    Size: '0x8'
+    Type: Class Ship*
+  ClassSize: '0x118'
+  FullSize: '0x230'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C

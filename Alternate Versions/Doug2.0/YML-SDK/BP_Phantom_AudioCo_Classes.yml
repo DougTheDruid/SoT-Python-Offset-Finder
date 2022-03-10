@@ -1,0 +1,26 @@
+BP_Phantom_AudioComponent_C:
+  Attributes:
+  - Name: None
+    Offset: '0x350'
+    Size: '0x1'
+    Type: bool
+  - Name: None
+    Offset: '0x354'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x358'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x35c'
+    Size: '0x4'
+    Type: int
+  - Name: None
+    Offset: '0x360'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  ClassSize: '0x58'
+  FullSize: '0x3a8'
+  InheritedSize: '0x350'
+  Super: SkeletonAICharacterAudioComponent

@@ -1,0 +1,18 @@
+IdleTimeTracker:
+  Attributes:
+  - Name: InactivityThreshold
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Timespan
+  ClassSize: '0x38'
+NotificationInputDisplayName:
+  Attributes:
+  - Name: InputID
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Name
+    Offset: '0x8'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x40'

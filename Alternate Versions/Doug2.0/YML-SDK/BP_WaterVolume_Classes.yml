@@ -1,0 +1,34 @@
+BP_WaterVolume_C:
+  Attributes:
+  - Name: None
+    Offset: '0x450'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: None
+    Offset: '0x458'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0x460'
+    Size: '0x8'
+    Type: Class DynamicFlowComponent*
+  - Name: None
+    Offset: '0x468'
+    Size: '0x8'
+    Type: Class FlatWaterPlaneComponent*
+  - Name: None
+    Offset: '0x470'
+    Size: '0x8'
+    Type: Class FlatWaterMeshComponent*
+  - Name: None
+    Offset: '0x478'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: None
+    Offset: '0x480'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x3c'
+  FullSize: '0x48c'
+  InheritedSize: '0x450'
+  Super: WaterVolume

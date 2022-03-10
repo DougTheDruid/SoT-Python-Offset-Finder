@@ -1,0 +1,48 @@
+VoiceChatEmitterInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+VoiceChatRenderer:
+  Attributes:
+  - Name: AttenuatedVoiceEvent
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: AttenuatedAndSpatialisedVoiceEvent
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: UnattenuatedVoiceEvent
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: PreBufferInMilliseconds
+    Offset: '0x50'
+    Size: '0x4'
+    Type: int
+  - Name: ChatRoutingListenerIndex
+    Offset: '0x54'
+    Size: '0x4'
+    Type: int
+  - Name: EmitterHoldInSeconds
+    Offset: '0x58'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x158'
+  FullSize: '0x180'
+  InheritedSize: '0x28'
+  Super: Object
+VoiceChatRendererInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+VoiceChatRendererRetreivalInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

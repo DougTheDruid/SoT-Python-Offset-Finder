@@ -1,0 +1,70 @@
+BP_Prompt_CosmeticPurchased_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: Handle_OfferPurchasedEvent
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_ShopClosedEvent
+    Offset: '0x168'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_PlayerEntitlementUpdatedEvent
+    Offset: '0x1b0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Prompt_CosmeticPurchased
+    Offset: '0x1f8'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Prompt_VisitCustomizationChest
+    Offset: '0x260'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: AccessKey
+    Offset: '0x2c8'
+    Size: '0x8'
+    Type: class
+  - Name: CategoryTypes
+    Offset: '0x2d0'
+    Size: '0x10'
+    Type: TArray<Class CallFunc_IsServer_ReturnValue>
+  - Name: PurchasedEntitlementIds
+    Offset: '0x2e0'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: DelayUntilPromptDisplays
+    Offset: '0x2f0'
+    Size: '0x4'
+    Type: float
+  - Name: DelayBetweenPrompts
+    Offset: '0x2f4'
+    Size: '0x4'
+    Type: float
+  - Name: PromptDisplayDuration
+    Offset: '0x2f8'
+    Size: '0x4'
+    Type: float
+  - Name: CosmeticPurchased
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: PromptInfoSet
+    Offset: '0x2fd'
+    Size: '0x1'
+    Type: bool
+  - Name: DisplayingPrompts
+    Offset: '0x2fe'
+    Size: '0x1'
+    Type: bool
+  - Name: ProcessingPurchase
+    Offset: '0x2ff'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1e8'
+  FullSize: '0x300'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C

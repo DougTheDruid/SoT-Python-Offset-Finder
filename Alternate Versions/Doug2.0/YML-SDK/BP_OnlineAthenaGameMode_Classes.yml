@@ -1,0 +1,10 @@
+BP_OnlineAthenaGameMode_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0xb88'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0xb90'
+  InheritedSize: '0xb88'
+  Super: OnlineAthenaGameMode

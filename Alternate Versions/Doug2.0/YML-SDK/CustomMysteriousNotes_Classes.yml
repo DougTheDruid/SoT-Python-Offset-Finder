@@ -1,0 +1,12 @@
+CustomMysteriousNotesInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CustomMysteriousNotesService:
+  Attributes: []
+  ClassSize: '0x58'
+  FullSize: '0x428'
+  InheritedSize: '0x3d0'
+  Super: Actor

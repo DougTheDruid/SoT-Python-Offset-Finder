@@ -1,0 +1,30 @@
+GameServiceLifecycleInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+GameServiceMapFunctions:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+GameServiceProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+GameServiceTickInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ServiceProviderGameState:
+  Attributes: []
+  ClassSize: '0x120'
+  FullSize: '0x548'
+  InheritedSize: '0x428'
+  Super: GameState

@@ -1,0 +1,770 @@
+BP_AI_wpn_PhantomUnarmedCombat_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemWithoutIconsDesc
+BP_AI_wpn_PhantomUnarmedCombat_ItemInfo_C:
+  Attributes:
+  - Name: None
+    Offset: '0x500'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x508'
+  InheritedSize: '0x500'
+  Super: ItemInfo
+BP_AI_wpn_PhantomUnarmedCombat_Wieldable_C:
+  Attributes: []
+  ClassSize: '-0x4653e9c9'
+  FullSize: '0xa78'
+  InheritedSize: '0x4653f441'
+  Super: ''
+BP_AI_wpn_unarmedCombat_ItemDesc_C:
+  Attributes: []
+  ClassSize: '-0x26641c10'
+  FullSize: '0x0'
+  InheritedSize: '0x26641c10'
+  Super: "\x80'd&\xF6\x7F"
+BP_AncientCollectorsChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_AshenChestCollectorsChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BoxOfSecrets_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BriggsyCollectorsChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_CollectorsChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_CollectorsChest_MaidenVoyage_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_CollectorsChest_RevengeOfTheMorningstar_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_EmissaryFlotsam_GoldHoarders_Rank5_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x720'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x728'
+  InheritedSize: '0x720'
+  Super: EmissaryFlotsamItemInfo
+BP_GoldHoarder_SkeletonKey_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_LockedCollectorsChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BP_CollectorsChest_Desc_C
+BP_LockedEquipmentChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_LockedFateofTheMorningstarChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BP_CollectorsChest_Desc_C
+BP_LoversChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_AnyItemCrate_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemWithoutIconsDesc
+BP_MerchantCrate_BananaCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_BananaCrate_FullyStocked_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_BigGunpowderBarrel_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_CannonballCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_ChickenCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_Fort_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_Gemstones_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_GhostCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_Minerals_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_Ore_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_SilkCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_SpiceCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_SugarCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_TeaCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_Commodity_VolcanicStone_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_GhostCannonballCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_GunpowderBarrel_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_PigCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_SnakeBasket_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_WoodCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_WoodCrate_FullyStocked_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_Projectile_CannonBall_Cursed_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x670'
+  InheritedSize: '0x670'
+  Super: BP_Projectile_CannonBall_C
+BP_Projectile_CannonBall_Cursed_ComplexWaterHits_C:
+  Attributes:
+  - Name: MeshRotator
+    Offset: '0x670'
+    Size: '0x8'
+    Type: Class MeshRotatorComponent*
+  - Name: OverlapsWaterInteractionVolumes
+    Offset: '0x678'
+    Size: '0x8'
+    Type: Class BoxComponent*
+  - Name: WaterInteraction
+    Offset: '0x680'
+    Size: '0x8'
+    Type: Class WaterInteractionComponent*
+  - Name: ShipTracker
+    Offset: '0x688'
+    Size: '0x8'
+    Type: Class ShipTrackerComponent*
+  - Name: SimpleOverlap
+    Offset: '0x690'
+    Size: '0x8'
+    Type: Class SimpleOverlapComponent*
+  ClassSize: '0x28'
+  FullSize: '0x698'
+  InheritedSize: '0x670'
+  Super: BP_Projectile_CannonBall_Cursed_C
+BP_PromptActor_EmissarySunk_AF_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C
+BP_PromptActor_EmissarySunk_GH_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C
+BP_PromptActor_EmissarySunk_MA_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C
+BP_PromptActor_EmissarySunk_OOS_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C
+BP_PromptActor_EmissarySunk_RB_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Company>
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C
+BP_ReapersBountyChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_ReapersChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_ShipwreckTreasureChest_Common_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_ShipwreckTreasureChest_Legendary_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_ShipwreckTreasureChest_Mythical_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_ShipwreckTreasureChest_Rare_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_Shroudbreaker_AncientCollectorsChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_SkeletonCollectorsChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_SkeletonsOrders_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemWithoutIconsDesc
+BP_TreasureChest_AIShip_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_ChestOfRage_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Common_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Common_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Common_Desc_Rome_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Common_Tutorial_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Drunken_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Fort_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Ghost_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Legendary_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Legendary_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Legendary_Desc_Rome_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Mythical_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Mythical_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Mythical_Desc_Rome_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_PirateLegend_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_PirateLegend_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Rare_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Rare_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Rare_Desc_Rome_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_TreasureChest_Weeping_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_UnLockedEquipmentChest_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_fod_CoconutBurned_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_KrakenMeatRawBite1_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_KrakenMeatRawBite1_00_a_ItemInfo_C:
+  Attributes:
+  - Name: MaterialManipulationSettings
+    Offset: '0x568'
+    Size: '0x8'
+    Type: Class MaterialManipulationSettingsComponent*
+  - Name: LightweightStatusEffectManager
+    Offset: '0x570'
+    Size: '0x8'
+    Type: Class LightWeightStatusEffectManagerComponent*
+  - Name: Cookable
+    Offset: '0x578'
+    Size: '0x8'
+    Type: Class CookableComponent*
+  ClassSize: '0x18'
+  FullSize: '0x580'
+  InheritedSize: '0x568'
+  Super: BP_MeatItemInfo_C
+BP_fod_KrakenMeatRawBite1_00_a_ItemProxy_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x7b8'
+  InheritedSize: '0x7b8'
+  Super: BP_ProxyIngestible_Retractable_C
+BP_fod_KrakenMeatRawBite1_00_a_Wieldable_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x858'
+  InheritedSize: '0x858'
+  Super: BP_StaticWieldableIngestible_C
+BP_fod_KrakenMeatRaw_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_KrakenMeatRaw_00_a_ItemInfo_C:
+  Attributes:
+  - Name: MaterialManipulationSettings
+    Offset: '0x568'
+    Size: '0x8'
+    Type: Class MaterialManipulationSettingsComponent*
+  - Name: LightweightStatusEffectManager
+    Offset: '0x570'
+    Size: '0x8'
+    Type: Class LightWeightStatusEffectManagerComponent*
+  - Name: Cookable
+    Offset: '0x578'
+    Size: '0x8'
+    Type: Class CookableComponent*
+  ClassSize: '0x18'
+  FullSize: '0x580'
+  InheritedSize: '0x568'
+  Super: BP_MeatItemInfo_C
+BP_fod_KrakenMeatRaw_00_a_ItemProxy_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x7b8'
+  InheritedSize: '0x7b8'
+  Super: BP_ProxyIngestible_Retractable_C
+BP_fod_KrakenMeatRaw_00_a_Wieldable_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x858'
+  InheritedSize: '0x858'
+  Super: BP_StaticWieldableIngestible_C
+BP_fod_MegMeatBurned_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_fod_MegMeatCooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
+BP_hair_col_black_01_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_black_02_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_black_03_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_blond_01_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_blond_04_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_blond_05_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_brown_03_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_brown_05_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_brown_07_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_red_01_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_red_04_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_red_05_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_white_01_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_wpn_flintlock_pistol_skd_01_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc

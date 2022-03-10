@@ -1,0 +1,184 @@
+BeingRevivedStartedEvent:
+  Attributes: []
+  ClassSize: '0x1'
+BeingRevivedStoppedEvent:
+  Attributes: []
+  ClassSize: '0x1'
+EventCharacterDiedDuringReviving:
+  Attributes:
+  - Name: OwningCharacter
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Character*
+  ClassSize: '0x8'
+EventCharacterFullyRevived:
+  Attributes: []
+  ClassSize: '0x1'
+EventRevivableRepresentationReturnedToBody:
+  Attributes: []
+  ClassSize: '0x1'
+EventRevivableRepresentationSpawnCompleted:
+  Attributes:
+  - Name: FromSwimming
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+EventRevivableRepresentationSpawnStarted:
+  Attributes: []
+  ClassSize: '0x1'
+EventRevivePlayerActionStateEntered:
+  Attributes: []
+  ClassSize: '0x1'
+EventRevivePlayerActionStateLeft:
+  Attributes: []
+  ClassSize: '0x1'
+ModeSpecificReviveSettings:
+  Attributes:
+  - Name: AssociatedPlaymode
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: DeathCameraBlackFadeDelay
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: DeathCameraBlackFadeDuration
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: DeathCameraBlackFadeEventClientTimeout
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: DeathCameraBlackFadeEventServerTimeout
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: DelayBeforeEvaporate
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: EvaporateDuration
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: DeathCameraStartDelay
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: ReviveWindowDuration
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: GhostFadeDuration
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  - Name: CachedReviveSettings
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class ReviveSettings*
+  ClassSize: '0x30'
+PlayerInReviveableStateTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x1'
+PlayerRevivalTelemetryEvent:
+  Attributes:
+  - Name: Success
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+PostReviveLocomotionActionStateConstructionInfo:
+  Attributes: []
+  ClassSize: '0x30'
+RevivableCharacterGhostlyBodyEvaporateStarted:
+  Attributes: []
+  ClassSize: '0x1'
+ReviveEffectsValues:
+  Attributes:
+  - Name: AstralCordPostProcessMID
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  ClassSize: '0x20'
+ReviveEndedEarlyEvent:
+  Attributes: []
+  ClassSize: '0x1'
+RevivePlayerActionStateConstructionInfo:
+  Attributes:
+  - Name: CharacterReviving
+    Offset: '0x30'
+    Size: '0x14'
+    Type: Struct NetActorPtr
+  - Name: CharacterBeingRevived
+    Offset: '0x44'
+    Size: '0x14'
+    Type: Struct NetSubObjectPtr
+  - Name: InputID
+    Offset: '0x58'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x60'
+ReviveableActionStateConstructionInfo:
+  Attributes:
+  - Name: ActionStateId
+    Offset: '0x30'
+    Size: '0x8'
+    Type: class
+  - Name: DamageInstance
+    Offset: '0x38'
+    Size: '0x28'
+    Type: Struct DamageInstance
+  - Name: CharacterDeathType
+    Offset: '0x60'
+    Size: '0x1'
+    Type: byte
+  - Name: CharacterType
+    Offset: '0x61'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x68'
+ReviveableActionStateStarted:
+  Attributes: []
+  ClassSize: '0x1'
+RevivedActionStateConstructionInfo:
+  Attributes: []
+  ClassSize: '0x30'
+RevivedActionStateParams:
+  Attributes:
+  - Name: HealthRegained
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: ReviveDuration
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: ReviveGaspAudio
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x10'
+RevivingWindowEnd:
+  Attributes: []
+  ClassSize: '0x1'
+RevivingWindowStart:
+  Attributes:
+  - Name: DamageInstance
+    Offset: '0x0'
+    Size: '0x28'
+    Type: Struct DamageInstance
+  - Name: CharacterDeathType
+    Offset: '0x28'
+    Size: '0x1'
+    Type: byte
+  - Name: RevivableCharacter
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class Character*
+  ClassSize: '0x38'
+SuccessfulReviveEvent:
+  Attributes: []
+  ClassSize: '0x1'

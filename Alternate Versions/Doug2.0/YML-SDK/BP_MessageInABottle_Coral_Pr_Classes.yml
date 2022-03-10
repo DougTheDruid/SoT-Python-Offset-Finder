@@ -1,0 +1,22 @@
+BP_MessageInABottle_Coral_Proxy_C:
+  Attributes:
+  - Name: ConfigurableBuryableItem
+    Offset: '0x7e8'
+    Size: '0x8'
+    Type: Class ConfigurableBuryableItemComponent*
+  - Name: RetractableItemProxy
+    Offset: '0x7f0'
+    Size: '0x8'
+    Type: Class RetractableItemProxyComponent*
+  - Name: Glint
+    Offset: '0x7f8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Interactable
+    Offset: '0x800'
+    Size: '0x8'
+    Type: Class InteractableComponent*
+  ClassSize: '0x20'
+  FullSize: '0x808'
+  InheritedSize: '0x7e8'
+  Super: MessageInABottleItemProxy

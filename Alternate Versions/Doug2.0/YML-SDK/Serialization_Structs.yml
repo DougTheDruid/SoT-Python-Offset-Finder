@@ -1,0 +1,110 @@
+StructSerializerArrayTestStruct:
+  Attributes:
+  - Name: Int32Array
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Int >
+  - Name: StaticSingleElement
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: StaticInt32Array
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
+  - Name: StaticFloatArray
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: VectorArray
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct StaticFloatArray>
+  ClassSize: '0x40'
+StructSerializerBooleanTestStruct:
+  Attributes:
+  - Name: BoolFalse
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: BoolTrue
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'
+StructSerializerBuiltinTestStruct:
+  Attributes:
+  - Name: Guid
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Name
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: String
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Rotator
+    Offset: '0x28'
+    Size: '0xc'
+    Type: Struct Rotator
+  - Name: Vector
+    Offset: '0x34'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x40'
+StructSerializerNumericTestStruct:
+  Attributes:
+  - Name: Int32
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: UInt8
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  - Name: Float
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: Double
+    Offset: '0x28'
+    Size: '0x8'
+    Type: double
+  ClassSize: '0x30'
+StructSerializerObjectTestStruct:
+  Attributes:
+  - Name: Class
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: ObjectPtr
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x10'
+StructSerializerTestStruct:
+  Attributes:
+  - Name: Numerics
+    Offset: '0x0'
+    Size: '0x30'
+    Type: Struct StructSerializerNumericTestStruct
+  - Name: Booleans
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Struct StructSerializerBooleanTestStruct
+  - Name: Objects
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct StructSerializerObjectTestStruct
+  - Name: Builtins
+    Offset: '0x48'
+    Size: '0x40'
+    Type: Struct StructSerializerBuiltinTestStruct
+  - Name: Arrays
+    Offset: '0x88'
+    Size: '0x40'
+    Type: Struct StructSerializerArrayTestStruct
+  ClassSize: '0xc8'

@@ -1,0 +1,50 @@
+BP_SKD_ShrineShimmer_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x478'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: surface_bio_lum
+    Offset: '0x480'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: volume_glow
+    Offset: '0x488'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: shimmer_water_00
+    Offset: '0x490'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: shimmer_air_01
+    Offset: '0x498'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: shimmer_air_00
+    Offset: '0x4a0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: SharedRoot
+    Offset: '0x4a8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: FadeCurve_Opacity_D7ECDDBE4184BCE83B3BD58190CD98C7
+    Offset: '0x4b0'
+    Size: '0x4'
+    Type: float
+  - Name: FadeCurve__Direction_D7ECDDBE4184BCE83B3BD58190CD98C7
+    Offset: '0x4b4'
+    Size: '0x1'
+    Type: byte
+  - Name: FadeCurve
+    Offset: '0x4b8'
+    Size: '0x8'
+    Type: Class TimelineComponent*
+  - Name: ShimmerIsVisible
+    Offset: '0x4c0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x49'
+  FullSize: '0x4c1'
+  InheritedSize: '0x478'
+  Super: ShimmerActor

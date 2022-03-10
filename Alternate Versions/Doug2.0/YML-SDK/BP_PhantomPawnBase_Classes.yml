@@ -1,0 +1,10 @@
+BP_PhantomPawnBase_C:
+  Attributes:
+  - Name: None
+    Offset: '0x1250'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  ClassSize: '0x190'
+  FullSize: '0x13e0'
+  InheritedSize: '0x1250'
+  Super: None

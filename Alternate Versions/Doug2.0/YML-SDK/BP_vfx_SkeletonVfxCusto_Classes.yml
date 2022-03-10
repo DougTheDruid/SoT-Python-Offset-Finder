@@ -1,0 +1,18 @@
+BP_vfx_SkeletonVfxCustom_Summon_Fast_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: VfxCustomisationType
+BP_vfx_SkeletonVfxCustom_Summon_Slow_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: VfxCustomisationType
+BP_vfx_SkeletonVfxCustom_Summon_Spawn1_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: VfxCustomisationType

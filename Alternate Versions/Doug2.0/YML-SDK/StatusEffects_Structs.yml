@@ -1,0 +1,224 @@
+ActiveStatusEffect:
+  Attributes:
+  - Name: SourceStatus
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Class FeatureToggledStatusResponseList>
+  - Name: Descriptor
+    Offset: '0x10'
+    Size: '0x4'
+    Type: Struct StatusDescriptor
+  - Name: ResponseTemplates
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<class ResponseTemplates*>
+  - Name: InstancedResponses
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class InstancedResponses*>
+  - Name: ResponsesAreActive
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x50'
+ApplyStatusEvent:
+  Attributes:
+  - Name: StatusToApply
+    Offset: '0x0'
+    Size: '0x18'
+    Type: Struct Status
+  ClassSize: '0x18'
+BuffedTargetData:
+  Attributes: []
+  ClassSize: '0x18'
+DebugMenuStatusDefinition:
+  Attributes:
+  - Name: Identifier
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Status
+    Offset: '0x8'
+    Size: '0x18'
+    Type: Struct Status
+  ClassSize: '0x20'
+DelayedStatusEffect:
+  Attributes:
+  - Name: StatusEffect
+    Offset: '0x0'
+    Size: '0x18'
+    Type: Struct Status
+  - Name: InEffectTime
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
+EventAppliedStatusToTargets:
+  Attributes:
+  - Name: StatusApplied
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Class StatusEffectPersistenceKey>
+  - Name: Targets
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<class Targets*>
+  - Name: StatusSource
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x28'
+EventEnteredSurfaceMaterialStatusZone:
+  Attributes: []
+  ClassSize: '0x10'
+EventExitedSurfaceMaterialStatusZone:
+  Attributes: []
+  ClassSize: '0x1'
+EventStatusMaterialEffectEnded:
+  Attributes:
+  - Name: MaterialParamName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CanShowMaterialParam
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FadeOutAcceleration
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
+EventStatusMaterialEffectStarted:
+  Attributes:
+  - Name: MaterialParamName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CanShowMaterialParam
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: TintParamName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: TintColor
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: TargetEffectStrength
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: FadeInAcceleration
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x30'
+EventStatusScreenEffectEnded:
+  Attributes:
+  - Name: MaterialParamName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FadeOutAcceleration
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+EventStatusScreenEffectStarted:
+  Attributes:
+  - Name: MaterialParamName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: TintParamName
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: TintColor
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: TargetEffectStrength
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: FadeInAcceleration
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+EventStatusScreenSpaceParticleEffectEnded:
+  Attributes:
+  - Name: ParticleSystem
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x8'
+EventStatusScreenSpaceParticleEffectStarted:
+  Attributes:
+  - Name: ParticleSystem
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x8'
+FeatureToggledStatusResponseList:
+  Attributes:
+  - Name: Feature
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ResponseAssets
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<class ResponseAssets*>
+  ClassSize: '0x18'
+Status:
+  Attributes:
+  - Name: Type
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Class EventCurseWheelLockEnd>
+  - Name: Descriptor
+    Offset: '0x10'
+    Size: '0x4'
+    Type: Struct StatusDescriptor
+  ClassSize: '0x18'
+StatusActivatedEvent:
+  Attributes:
+  - Name: Id
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: StatusName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
+StatusDeactivatedEvent:
+  Attributes:
+  - Name: Id
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: StatusName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
+StatusDescriptor:
+  Attributes:
+  - Name: Intensity
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x4'
+StatusEffectPersistenceKey:
+  Attributes:
+  - Name: AppliedStatuses
+    Offset: '0x0'
+    Size: '0x18'
+    Type: Struct Status
+  ClassSize: '0x18'

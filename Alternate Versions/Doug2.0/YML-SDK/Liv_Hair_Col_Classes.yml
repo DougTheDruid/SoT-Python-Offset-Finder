@@ -1,0 +1,18 @@
+Liv_Hair_ColorClothingCategory_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xa0'
+  InheritedSize: '0xa0'
+  Super: ClothingCategory
+Liv_Hair_ColorOverClothingCategory_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xa0'
+  InheritedSize: '0xa0'
+  Super: ClothingCategory
+Liv_Hair_ColorUnderClothingCategory_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xa0'
+  InheritedSize: '0xa0'
+  Super: ClothingCategory

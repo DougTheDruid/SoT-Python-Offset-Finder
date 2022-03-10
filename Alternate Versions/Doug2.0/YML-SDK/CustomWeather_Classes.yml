@@ -1,0 +1,16 @@
+CustomWeatherService:
+  Attributes:
+  - Name: World
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class World*
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+CustomWeatherServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

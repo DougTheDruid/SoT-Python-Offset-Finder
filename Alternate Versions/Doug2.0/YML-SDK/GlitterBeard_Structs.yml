@@ -1,0 +1,54 @@
+ChangeGlitterBeardVFXStateEvent:
+  Attributes:
+  - Name: Index
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Target
+    Offset: '0x4'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+FinaleReplicationState:
+  Attributes:
+  - Name: State
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: TargetEnsemble
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x10'
+GlitterBeardVFXTransitionCompletedEvent:
+  Attributes:
+  - Name: Index
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x4'
+GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x20'
+GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x10'
+GlitterbeardPuzzleCancelTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x10'
+GlitterbeardPuzzleUnlockTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x10'
+GlitterbeardSessionBeginTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x10'
+GlitterbeardSessionEndTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x10'
+UnlockEventData:
+  Attributes:
+  - Name: Idx
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x4'

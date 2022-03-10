@@ -1,0 +1,18 @@
+BP_AIProjectile_SirenTrident_C:
+  Attributes:
+  - Name: SphereCollisionExtentAdjustOverTime
+    Offset: '0x820'
+    Size: '0x8'
+    Type: Class SphereCollisionExtentAdjustOverTimeComponent*
+  - Name: Sphere
+    Offset: '0x828'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Collision
+    Offset: '0x830'
+    Size: '0x8'
+    Type: Class SphereComponent*
+  ClassSize: '0x18'
+  FullSize: '0x838'
+  InheritedSize: '0x820'
+  Super: SirenTridentProjectile

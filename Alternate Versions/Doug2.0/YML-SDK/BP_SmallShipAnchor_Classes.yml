@@ -1,0 +1,10 @@
+BP_SmallShipAnchor_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x410'
+  InheritedSize: '0x408'
+  Super: Anchor

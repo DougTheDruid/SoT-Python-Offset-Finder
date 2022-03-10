@@ -1,0 +1,250 @@
+HeightTriggerableAudioComponentParams:
+  Attributes:
+  - Name: Pool
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: RisingOneShot
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: RisingStart
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: RisingStop
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: LoweringStart
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: LoweringStop
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x30'
+  FullSize: '0x58'
+  InheritedSize: '0x28'
+  Super: DataAsset
+HeightTriggerableEffectsComponent:
+  Attributes:
+  - Name: AudioParams
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: Class HeightTriggerableAudioComponentParams*
+  - Name: EmitterOwner
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: Struct ActorComponentSelector
+  - Name: EmitterOffset
+    Offset: '0xe0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: UseParentEmitter
+    Offset: '0xec'
+    Size: '0x1'
+    Type: bool
+  - Name: RisingAudioTriggerValue
+    Offset: '0xf0'
+    Size: '0x4'
+    Type: float
+  - Name: CameraShake
+    Offset: '0xf8'
+    Size: '0x8'
+    Type: class
+  - Name: ShakeInnerRadius
+    Offset: '0x100'
+    Size: '0x4'
+    Type: float
+  - Name: ShakeOuterRadius
+    Offset: '0x104'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x90'
+  FullSize: '0x158'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+SpireResource:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+SpireService:
+  Attributes:
+  - Name: Params
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class SpireServiceParams*
+  - Name: ServerOnlySpireInfo
+    Offset: '0x3e0'
+    Size: '0x10'
+    Type: TArray<Struct Params>
+  - Name: SpireLevels
+    Offset: '0x3f0'
+    Size: '0x10'
+    Type: TArray<Struct ServerOnlySpireInfo>
+  ClassSize: '0x98'
+  FullSize: '0x468'
+  InheritedSize: '0x3d0'
+  Super: Actor
+SpireServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+SpireServiceParams:
+  Attributes:
+  - Name: OnCancelFakeSpire
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class ActorSpawnData*
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: DataAsset
+SpireSettingsInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+SpireShippingDrawDebugActorSphereCollection:
+  Attributes:
+  - Name: SpireList
+    Offset: '0x3e0'
+    Size: '0x10'
+    Type: TArray<Weakclass IsSpireVisible>
+  ClassSize: '0x10'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3e0'
+  Super: ShippingDebugActorSphereCollection
+SpireStreamedLevelDataAsset:
+  Attributes:
+  - Name: StreamedLevel
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class AthenaStreamedLevelDataAsset*
+  - Name: Entries
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct StreamedLevel>
+  - Name: FeatureToggle
+    Offset: '0x40'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: DataAsset
+TaleLoadSpireStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x90'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+TaleLoadSpireStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleMakeSpireVisibleStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x90'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+TaleMakeSpireVisibleStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleRegisterSpireStep:
+  Attributes:
+  - Name: StepDesc
+    Offset: '0x90'
+    Size: '0x8'
+    Type: Class TaleRegisterSpireStepDesc*
+  ClassSize: '0x10'
+  FullSize: '0xa0'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+TaleRegisterSpireStepDesc:
+  Attributes:
+  - Name: SelectionOriginPoint
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableVector
+  - Name: PlayerExclusionSelectionRadius
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableFloat
+  - Name: AllocatedSpireHandle
+    Offset: '0xc0'
+    Size: '0x20'
+    Type: Struct QuestVariableTaleResourceHandle
+  - Name: AllocatedSpireLocation
+    Offset: '0xe0'
+    Size: '0x20'
+    Type: Struct QuestVariableVector
+  ClassSize: '0x80'
+  FullSize: '0x100'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleReleaseSpireStep:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x98'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+TaleReleaseSpireStepDesc:
+  Attributes:
+  - Name: SpireHandle
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableTaleResourceHandle
+  ClassSize: '0x20'
+  FullSize: '0xa0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleSpireService:
+  Attributes: []
+  ClassSize: '0x48'
+  FullSize: '0xa8'
+  InheritedSize: '0x60'
+  Super: TaleQuestService
+TaleSpireServiceDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: TaleQuestServiceDesc
+TaleUnloadSpireStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x90'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+TaleUnloadSpireStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleWaitForSpireToLoadStep:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0xe0'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+TaleWaitForSpireToLoadStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc

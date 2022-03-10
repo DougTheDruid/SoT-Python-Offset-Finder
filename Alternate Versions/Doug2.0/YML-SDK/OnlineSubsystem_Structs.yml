@@ -1,0 +1,149 @@
+AchievementUpdatedEvent:
+  Attributes:
+  - Name: AchievementId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Successful
+    Offset: '0x14'
+    Size: '0x1'
+    Type: bool
+  - Name: Reason
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Platform
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x38'
+InAppPurchaseProductInfo:
+  Attributes:
+  - Name: Identifier
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: TransactionIdentifier
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DisplayName
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DisplayDescription
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DisplayPrice
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CurrencyCode
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CurrencySymbol
+    Offset: '0x60'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DecimalSeparator
+    Offset: '0x70'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: GroupingSeparator
+    Offset: '0x80'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ReceiptData
+    Offset: '0x90'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0xa0'
+InAppPurchaseProductRequest:
+  Attributes:
+  - Name: ProductIdentifier
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: bIsConsumable
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+InAppPurchaseRestoreInfo:
+  Attributes:
+  - Name: Identifier
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ReceiptData
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'
+NamedInterface:
+  Attributes:
+  - Name: InterfaceName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: InterfaceObject
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x10'
+NamedInterfaceDef:
+  Attributes:
+  - Name: InterfaceName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: InterfaceClassName
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x18'
+OnlineStoreCatalogItem:
+  Attributes:
+  - Name: ProductId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Title
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Description
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FormattedPrice
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FormattedBasePrice
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: IsOnSale
+    Offset: '0x50'
+    Size: '0x1'
+    Type: bool
+  - Name: SaleEndDate
+    Offset: '0x58'
+    Size: '0x8'
+    Type: Struct DateTime
+  - Name: ImageUri
+    Offset: '0x60'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CurrencyCode
+    Offset: '0x70'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: MetaTags
+    Offset: '0x80'
+    Size: '0x10'
+    Type: TArray<Str >
+  ClassSize: '0x90'

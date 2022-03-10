@@ -1,0 +1,95 @@
+FireworkAmbientLightData:
+  Attributes:
+  - Name: FadeInTimer
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: FadeOutTimer
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: LifetimeTimer
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: Radius
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: AmbientIntensity
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
+FireworkExplosionData:
+  Attributes:
+  - Name: VFX
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: Sfx
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: SecondarySFX
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x40'
+GeneratedFireworkData:
+  Attributes:
+  - Name: FireworkAmbientLightData
+    Offset: '0xc'
+    Size: '0x14'
+    Type: Struct FireworkAmbientLightData
+  - Name: ExplosionData
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct FireworkExplosionData>
+  - Name: SfxPool
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: LaunchSfx
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: FireworkFeedbackData
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Class FireworkFeedbackDataAsset*
+  ClassSize: '0x58'
+WeightedFireworkVFXData:
+  Attributes:
+  - Name: VFX
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: Sfx
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: SecondarySFX
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: Weight
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: AmbientLightColour
+    Offset: '0x1c'
+    Size: '0x10'
+    Type: Struct LinearColor
+  ClassSize: '0x30'
+WeightedProjectileMeshAnimationData:
+  Attributes:
+  - Name: AnimationCurve
+    Offset: '0x0'
+    Size: '0x170'
+    Type: Struct RuntimeVectorCurve
+  - Name: Weight
+    Offset: '0x170'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x178'

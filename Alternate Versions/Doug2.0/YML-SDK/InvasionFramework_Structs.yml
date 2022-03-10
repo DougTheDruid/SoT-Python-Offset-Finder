@@ -1,0 +1,6 @@
+InvasionEvent_AggressiveShipTeleporting:
+  Attributes: []
+  ClassSize: '0x1'
+InvasionEvent_PassiveTaleStarted:
+  Attributes: []
+  ClassSize: '0x1'

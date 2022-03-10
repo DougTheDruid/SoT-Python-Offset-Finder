@@ -1,0 +1,250 @@
+AthenaFFTWater:
+  Attributes: []
+  ClassSize: '0x28'
+  FullSize: '0x440'
+  InheritedSize: '0x418'
+  Super: FFTWater
+AthenaWaterEmissionVolume:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3d8'
+  Super: WaterEmissionVolume
+FFTWaterInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+FFTWaterService:
+  Attributes:
+  - Name: ReplicatedServerCreationTime
+    Offset: '0x448'
+    Size: '0x8'
+    Type: double
+  ClassSize: '0x80'
+  FullSize: '0x450'
+  InheritedSize: '0x3d0'
+  Super: Actor
+FlatWaterPlaneComponent:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0x5d0'
+  InheritedSize: '0x5c0'
+  Super: BaseWaterComponent
+MockWaterInterface:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+MockWaterServiceWithValidWaterPlane:
+  Attributes:
+  - Name: DefaultWaterComponent
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class FFTWaterComponent*
+  ClassSize: '0x8'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: MockWaterInterface
+NoSwimWaterId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: WaterId
+SeaWaterId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: WaterId
+ShipWaterId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: WaterId
+SplashProbeDataAsset:
+  Attributes:
+  - Name: Probes
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct AttachProbesToComponent>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+SplashProbeVFXComponent:
+  Attributes:
+  - Name: Probes
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: Class SplashProbeDataAsset*
+  - Name: ProbesInstance
+    Offset: '0xf8'
+    Size: '0x8'
+    Type: Class SplashProbeDataAsset*
+  - Name: AttachProbesToOwner
+    Offset: '0x100'
+    Size: '0x10'
+    Type: Struct ActorComponentSelector
+  - Name: AttachProbesToComponent
+    Offset: '0x110'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x50'
+  FullSize: '0x118'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+UndergroundSeaWaterId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: WaterId
+WaterBuoyancyFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+WaterBuoyancySampleMovementFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+WaterEmissionVolumeInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WaterEmissionVolumeService:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: Object
+WaterExclusionSurfaceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WaterInteractionComponent:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x600'
+  InheritedSize: '0x5e0'
+  Super: BoxComponent
+WaterInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WaterPlaneExclusionComponent:
+  Attributes:
+  - Name: UseSpecificComponentForOverlaps
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: Struct ActorComponentSelector
+  ClassSize: '0x10'
+  FullSize: '0xd8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+WaterPlaneInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WaterPlaneRetrievalProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WaterProperties:
+  Attributes:
+  - Name: WaterInfo
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct GetActorWaterInformation>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+WaterSplashProbeFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+WaterSpoutVFXComponent:
+  Attributes:
+  - Name: WaterSpouts
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: TArray<Struct IsEnabled>
+  - Name: SplashEffectPointBottomZ
+    Offset: '0xd8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: SpoutParticleSystem
+    Offset: '0xe8'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: SplashParticleSystem
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: WaterSplashDelayMin
+    Offset: '0xf8'
+    Size: '0x4'
+    Type: float
+  - Name: WaterSplashDelayMax
+    Offset: '0xfc'
+    Size: '0x4'
+    Type: float
+  - Name: SplashEffectVFXOffset
+    Offset: '0x100'
+    Size: '0x4'
+    Type: float
+  - Name: SplashSweepRadius
+    Offset: '0x104'
+    Size: '0x4'
+    Type: float
+  - Name: ShouldSpawnKillPlaneAtSplash
+    Offset: '0x108'
+    Size: '0x1'
+    Type: bool
+  - Name: SplashKillPlaneMesh
+    Offset: '0x110'
+    Size: '0x8'
+    Type: Class StaticMesh*
+  - Name: SplashKillPlaneScale
+    Offset: '0x118'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: SplashKillPlane
+    Offset: '0x128'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: ActiveWaterSpouts
+    Offset: '0x130'
+    Size: '0x10'
+    Type: TArray<Struct SplashKillPlane>
+  ClassSize: '0x90'
+  FullSize: '0x158'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+WaterVolumeInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

@@ -1,0 +1,54 @@
+wld_beach_rocks_03_C:
+  Attributes:
+  - Name: wld_rock_medium_01__a
+    Offset: '0x410'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_small_01__d
+    Offset: '0x418'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_small_01__c
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_small_01__b
+    Offset: '0x428'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_small_01__a
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_medium_01__b
+    Offset: '0x438'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_large_01__a
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_large_01__e
+    Offset: '0x448'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_large_01__d
+    Offset: '0x450'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_large_01__c
+    Offset: '0x458'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: wld_rock_large_01__b
+    Offset: '0x460'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Scene
+    Offset: '0x468'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x60'
+  FullSize: '0x470'
+  InheritedSize: '0x410'
+  Super: BP_Placement_HeightDrop_C

@@ -1,0 +1,340 @@
+AnimationSwitchDataAsset:
+  Attributes:
+  - Name: Threshold
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: Entries
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct Threshold>
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: DataAsset
+CharacterMeshBakeFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+CharacterMeshBakeSpecification:
+  Attributes:
+  - Name: StripTopLOD
+    Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  - Name: CharacterMesh
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class SkeletalMesh*
+  - Name: BaseMeshReferenceSkeleton
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class SkeletalMesh*
+  - Name: SourceSkeletons
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class SkeletonsDataAsset*
+  - Name: SourceSkeletonNames
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: SourceSkeletonWeights
+    Offset: '0x58'
+    Size: '0x10'
+    Type: TArray<Float >
+  - Name: BlendedSubMeshes
+    Offset: '0x68'
+    Size: '0x10'
+    Type: TArray<Struct SourceSkeletonWeights>
+  - Name: UnblendedSubMeshes
+    Offset: '0x78'
+    Size: '0x10'
+    Type: TArray<class UnblendedSubMeshes*>
+  - Name: BlendShapes
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<Struct UnblendedSubMeshes>
+  ClassSize: '0x70'
+  FullSize: '0x98'
+  InheritedSize: '0x28'
+  Super: Object
+CharacterMeshBakeTestFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+ColorTexture:
+  Attributes:
+  - Name: Color
+    Offset: '0x138'
+    Size: '0x10'
+    Type: Struct LinearColor
+  ClassSize: '0x10'
+  FullSize: '0x148'
+  InheritedSize: '0x138'
+  Super: Texture
+ColorTextureSwitchBySeed:
+  Attributes:
+  - Name: HashSource
+    Offset: '0x220'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Entries
+    Offset: '0x228'
+    Size: '0x10'
+    Type: TArray<Struct HashSource>
+  ClassSize: '0x18'
+  FullSize: '0x238'
+  InheritedSize: '0x220'
+  Super: TextureSwitch
+FileAccessFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+MaterialReferencesDataAsset:
+  Attributes:
+  - Name: MaterialReferences
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct ConvertFromRadialCoordinate>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+PirateBodyShapeFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+PirateGeneratorFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+PirateGeneratorMaterials:
+  Attributes:
+  - Name: Materials
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class Materials*>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+PirateGeneratorSettings:
+  Attributes:
+  - Name: ConfigJson
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PiratesFolder
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: WardrobeFolder
+    Offset: '0x48'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: WardrobeDataAsset
+    Offset: '0x58'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: DefaultWardrobeItems
+    Offset: '0x68'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: MaterialReferencesDataAsset
+    Offset: '0x78'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: SkeletonsDataAsset
+    Offset: '0x88'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: BaseSkeletonMeshes
+    Offset: '0x98'
+    Size: '0x10'
+    Type: TArray<Struct SkeletonsDataAsset>
+  - Name: Characterization
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: TArray<Struct BaseSkeletonMeshes>
+  - Name: SkeletonMeshFormats
+    Offset: '0xb8'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: FirstPersonAnimations
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: ThirdPersonAnimations
+    Offset: '0xd8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: LODScreenSizes
+    Offset: '0xe8'
+    Size: '0x10'
+    Type: TArray<Float >
+  - Name: LODHysteresis
+    Offset: '0xf8'
+    Size: '0x10'
+    Type: TArray<Float >
+  - Name: DefaultPirateGenerationSeed
+    Offset: '0x108'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0xe8'
+  FullSize: '0x110'
+  InheritedSize: '0x28'
+  Super: Object
+PreparePirateMeshBakeTestFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+SkeletonsDataAsset:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0x78'
+  InheritedSize: '0x28'
+  Super: DataAsset
+TextureSwitch:
+  Attributes:
+  - Name: bDuplicated
+    Offset: '0x1c0'
+    Size: '0x1'
+    Type: bool
+  - Name: DefaultParameters
+    Offset: '0x1c8'
+    Size: '0x58'
+    Type: Struct TextureSwitchParameters
+  ClassSize: '0xe0'
+  FullSize: '0x220'
+  InheritedSize: '0x140'
+  Super: TextureProxy
+TextureSwitchByBodyShape:
+  Attributes:
+  - Name: Entries
+    Offset: '0x220'
+    Size: '0x10'
+    Type: TArray<Struct Entries>
+  ClassSize: '0x10'
+  FullSize: '0x230'
+  InheritedSize: '0x220'
+  Super: TextureSwitch
+TextureSwitchByEthnicity:
+  Attributes:
+  - Name: Entries
+    Offset: '0x220'
+    Size: '0x10'
+    Type: TArray<Struct Entries>
+  ClassSize: '0x10'
+  FullSize: '0x230'
+  InheritedSize: '0x220'
+  Super: TextureSwitch
+TextureSwitchByGender:
+  Attributes:
+  - Name: Entries
+    Offset: '0x220'
+    Size: '0x10'
+    Type: TArray<Struct Entries>
+  ClassSize: '0x10'
+  FullSize: '0x230'
+  InheritedSize: '0x220'
+  Super: TextureSwitch
+TextureSwitchByItem:
+  Attributes:
+  - Name: FallbackTexture
+    Offset: '0x220'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Entries
+    Offset: '0x230'
+    Size: '0x10'
+    Type: TArray<Struct FallbackTexture>
+  ClassSize: '0x20'
+  FullSize: '0x240'
+  InheritedSize: '0x220'
+  Super: TextureSwitch
+TextureSwitchBySeed:
+  Attributes:
+  - Name: HashSource
+    Offset: '0x220'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FallbackProbability
+    Offset: '0x228'
+    Size: '0x4'
+    Type: float
+  - Name: FallbackReferenceName
+    Offset: '0x22c'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FallbackTexture
+    Offset: '0x238'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Entries
+    Offset: '0x248'
+    Size: '0x10'
+    Type: TArray<Struct FallbackTexture>
+  ClassSize: '0x38'
+  FullSize: '0x258'
+  InheritedSize: '0x220'
+  Super: TextureSwitch
+WardrobeDataAsset:
+  Attributes:
+  - Name: ExcludeDataAssets
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: TArray<class ExcludeDataAssets*>
+  - Name: AssetMap
+    Offset: '0xd8'
+    Size: '0x10'
+    Type: TArray<Struct ExcludeDataAssets>
+  ClassSize: '0xc0'
+  FullSize: '0xe8'
+  InheritedSize: '0x28'
+  Super: DataAsset
+WardrobeExcludeDataAsset:
+  Attributes:
+  - Name: ExcludeItems
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Name None>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+WardrobeFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+WardrobeOutfitDataAsset:
+  Attributes:
+  - Name: FemaleWardrobeItems
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Name None>
+  - Name: MaleWardrobeItems
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: BiasPerCategory
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Struct MaleWardrobeItems>
+  ClassSize: '0x30'
+  FullSize: '0x58'
+  InheritedSize: '0x28'
+  Super: DataAsset

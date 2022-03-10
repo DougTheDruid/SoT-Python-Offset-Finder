@@ -1,0 +1,38 @@
+BP_Prompt_TavernBoard_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: WieldableItemUseEvent
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: TavernBoardPromptAccessKey
+    Offset: '0x168'
+    Size: '0x8'
+    Type: class
+  - Name: Prompt
+    Offset: '0x170'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: InRangeOfTavernBoard
+    Offset: '0x1d8'
+    Size: '0x1'
+    Type: bool
+  - Name: ApproachedTavernBoardHandle
+    Offset: '0x1e0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: CharacterDispatcher
+    Offset: '0x228'
+    Size: '0x8'
+    Type: Struct ObjectMessagingDispatcherHandle
+  - Name: HasShown
+    Offset: '0x230'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x119'
+  FullSize: '0x231'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C

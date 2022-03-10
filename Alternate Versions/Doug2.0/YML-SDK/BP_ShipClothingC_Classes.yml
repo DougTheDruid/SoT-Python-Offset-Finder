@@ -1,0 +1,10 @@
+BP_ShipClothingChest_C:
+  Attributes:
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+    Offset: '0x568'
+    Size: '0x8'
+    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
+  ClassSize: '0x8'
+  FullSize: '0x570'
+  InheritedSize: '0x568'
+  Super: PossessionsChest

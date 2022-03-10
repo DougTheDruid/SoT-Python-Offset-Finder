@@ -1,0 +1,7 @@
+Key:
+  Attributes:
+  - Name: KeyName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x20'

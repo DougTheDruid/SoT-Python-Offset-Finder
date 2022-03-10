@@ -1,0 +1,111 @@
+LightPropagationVolumeSettings:
+  Attributes:
+  - Name: bOverride_LPVIntensity
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVDirectionalOcclusionIntensity
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVDirectionalOcclusionRadius
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVDiffuseOcclusionExponent
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVSpecularOcclusionExponent
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVDiffuseOcclusionIntensity
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVSpecularOcclusionIntensity
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVSize
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVSecondaryOcclusionIntensity
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVSecondaryBounceIntensity
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVGeometryVolumeBias
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVVplInjectionBias
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverride_LPVEmissiveInjectionIntensity
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: LPVIntensity
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: LPVVplInjectionBias
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: LPVSize
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: LPVSecondaryOcclusionIntensity
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: LPVSecondaryBounceIntensity
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: LPVGeometryVolumeBias
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: LPVEmissiveInjectionIntensity
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: LPVDirectionalOcclusionIntensity
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: LPVDirectionalOcclusionRadius
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  - Name: LPVDiffuseOcclusionExponent
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: LPVSpecularOcclusionExponent
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  - Name: LPVDiffuseOcclusionIntensity
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: LPVSpecularOcclusionIntensity
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  - Name: LPVWorldRef
+    Offset: '0x40'
+    Size: '0x30'
+    Type: Struct Transform
+  ClassSize: '0x70'

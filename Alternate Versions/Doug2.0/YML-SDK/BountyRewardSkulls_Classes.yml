@@ -1,0 +1,144 @@
+BP_BountyRewardSkull_AIShip_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Common+_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Common-_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Common_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Common_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Fort_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Ghost_Common_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Legendary+_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Legendary-_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Legendary_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Legendary_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Mythical+_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Mythical-_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Mythical_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Mythical_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Rare+_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Rare-_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Rare_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BountyRewardSkull_Rare_Desc_DVR_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_BriggsysSkull_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_Crystal_Skull_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_GoldHoarderSkull_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_GraymarrowSkull_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_Ritual_Skull_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc

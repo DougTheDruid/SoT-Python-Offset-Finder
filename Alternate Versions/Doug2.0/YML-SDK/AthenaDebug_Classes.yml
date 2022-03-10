@@ -1,0 +1,94 @@
+DrawDebugService:
+  Attributes:
+  - Name: MessagesReplicated
+    Offset: '0x3d8'
+    Size: '0x10'
+    Type: TArray<Struct SphereList>
+  - Name: SpheresReplicated
+    Offset: '0x3e8'
+    Size: '0x10'
+    Type: TArray<Struct MessagesReplicated>
+  - Name: BoxesReplicated
+    Offset: '0x3f8'
+    Size: '0x10'
+    Type: TArray<Struct SpheresReplicated>
+  - Name: CapsulesReplicated
+    Offset: '0x408'
+    Size: '0x10'
+    Type: TArray<Struct BoxesReplicated>
+  - Name: LinesReplicated
+    Offset: '0x418'
+    Size: '0x10'
+    Type: TArray<Struct CapsulesReplicated>
+  - Name: SectorsReplicated
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct LinesReplicated>
+  - Name: StringsReplicated
+    Offset: '0x438'
+    Size: '0x10'
+    Type: TArray<Struct SectorsReplicated>
+  - Name: IsDrawDebugActive
+    Offset: '0x448'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xf8'
+  FullSize: '0x4c8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+DrawDebugServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ShippingDebugActorSphereCollection:
+  Attributes:
+  - Name: SphereList
+    Offset: '0x3d0'
+    Size: '0x10'
+    Type: TArray<Struct Id>
+  ClassSize: '0x10'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3d0'
+  Super: Actor
+TickableDebugDrawingServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+Videprinter:
+  Attributes:
+  - Name: OutputRingBuffer
+    Offset: '0x3d0'
+    Size: '0x10'
+    Type: TArray<Str None>
+  - Name: AddAt
+    Offset: '0x3e0'
+    Size: '0x4'
+    Type: int
+  - Name: Id
+    Offset: '0x3e4'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x28'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3d0'
+  Super: Actor
+VideprinterService:
+  Attributes:
+  - Name: Videprinters
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<class Videprinters*>
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: Object
+VideprinterServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

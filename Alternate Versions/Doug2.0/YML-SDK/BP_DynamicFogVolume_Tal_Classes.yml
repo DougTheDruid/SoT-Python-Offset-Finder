@@ -1,0 +1,22 @@
+BP_DynamicFogVolume_Tale2_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: WorldFadeDistanceStart
+    Offset: '0x448'
+    Size: '0x4'
+    Type: float
+  - Name: WorldFadeDistanceRange
+    Offset: '0x44c'
+    Size: '0x4'
+    Type: float
+  - Name: FogMaxDensity
+    Offset: '0x450'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
+  FullSize: '0x454'
+  InheritedSize: '0x440'
+  Super: BP_DynamicDensityFogVolume_C

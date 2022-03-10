@@ -1,0 +1,32 @@
+BP_MultiCrewSkeletonThrone_C:
+  Attributes:
+  - Name: VFX Skull 4
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: VFX Skull 3
+    Offset: '0x428'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: VFX Skull 2
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: VFX Skull 1
+    Offset: '0x438'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: VFX Under Chair
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  ClassSize: '0x28'
+  FullSize: '0x448'
+  InheritedSize: '0x420'
+  Super: MultiCrewSkeletonThrone
+BP_MultiCrewSkeletonThrone_Sea_rock_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x448'
+  InheritedSize: '0x448'
+  Super: BP_MultiCrewSkeletonThrone_C

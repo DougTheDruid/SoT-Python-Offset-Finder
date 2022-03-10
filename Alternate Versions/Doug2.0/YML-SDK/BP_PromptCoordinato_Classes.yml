@@ -1,0 +1,48 @@
+BP_PromptCoordinator_Base_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0xf8'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: IsCompleted
+    Offset: '0x100'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x20'
+  FullSize: '0x118'
+  InheritedSize: '0xf8'
+  Super: BasePromptCoordinator
+BP_PromptCoordinator_DiceEmote_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: DiceEmotePromptAccessKey
+    Offset: '0x120'
+    Size: '0x8'
+    Type: class
+  - Name: EmoteStartedEvent
+    Offset: '0x128'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Prompt
+    Offset: '0x170'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: StartedDiceEmote
+    Offset: '0x1d8'
+    Size: '0x1'
+    Type: bool
+  - Name: CharacterDispatcher
+    Offset: '0x1e0'
+    Size: '0x8'
+    Type: Struct ObjectMessagingDispatcherHandle
+  - Name: HasShown
+    Offset: '0x1e8'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xd1'
+  FullSize: '0x1e9'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C

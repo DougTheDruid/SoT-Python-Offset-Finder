@@ -1,0 +1,18 @@
+BP_MaidenVoyage_GoldInHold_Entitlement2_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: TaleRankDesc
+BP_MaidenVoyage_GoldInHold_Entitlement3_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: TaleRankDesc
+BP_MaidenVoyage_GoldInHold_Entitlement_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: TaleRankDesc

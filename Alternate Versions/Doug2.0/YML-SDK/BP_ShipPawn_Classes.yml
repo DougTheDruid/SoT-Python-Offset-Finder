@@ -1,0 +1,10 @@
+BP_ShipPawn_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x480'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x488'
+  InheritedSize: '0x480'
+  Super: ShipProxyPawn

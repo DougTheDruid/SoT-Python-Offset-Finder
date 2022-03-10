@@ -1,0 +1,194 @@
+AnchorData:
+  Attributes:
+  - Name: Offsets
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: Anchors
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Anchors
+  - Name: Alignment
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Struct Vector2D
+  ClassSize: '0x28'
+DelegateRuntimeBinding:
+  Attributes:
+  - Name: ObjectName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PropertyName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FunctionName
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SourcePath
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct DynamicPropertyPath
+  - Name: Kind
+    Offset: '0x30'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x38'
+DynamicPropertyPath:
+  Attributes:
+  - Name: Segments
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct PropertyPathSegment>
+  ClassSize: '0x10'
+EventReply:
+  Attributes: []
+  ClassSize: '0xe8'
+MovieScene2DTransformSectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: Translation
+    Offset: '0x38'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: Rotation
+    Offset: '0x128'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: Scale
+    Offset: '0x1a0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: Shear
+    Offset: '0x290'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x380'
+MovieSceneMarginSectionTemplate:
+  Attributes:
+  - Name: PropertyData
+    Offset: '0x18'
+    Size: '0x20'
+    Type: Struct MovieScenePropertySectionData
+  - Name: TopCurve
+    Offset: '0x38'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: LeftCurve
+    Offset: '0xb0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: RightCurve
+    Offset: '0x128'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: BottomCurve
+    Offset: '0x1a0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x218'
+MovieSceneWidgetMaterialSectionTemplate:
+  Attributes:
+  - Name: BrushPropertyNamePath
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Name None>
+  ClassSize: '0x58'
+NamedSlotBinding:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Content
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Widget*
+  ClassSize: '0x10'
+PaintContext:
+  Attributes: []
+  ClassSize: '0x30'
+PropertyPathSegment:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ArrayIndex
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: Struct
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Struct*
+  - Name: Field
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class Field*
+  ClassSize: '0x20'
+SlateChildSize:
+  Attributes:
+  - Name: Value
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: SizeRule
+    Offset: '0x4'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+WidgetAnimationBinding:
+  Attributes:
+  - Name: WidgetName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SlotWidgetName
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AnimationGuid
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: bIsRootWidget
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x24'
+WidgetNavigationData:
+  Attributes:
+  - Name: Rule
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: WidgetToFocus
+    Offset: '0x4'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x14'
+WidgetTransform:
+  Attributes:
+  - Name: Translation
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Scale
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Shear
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Angle
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x1c'

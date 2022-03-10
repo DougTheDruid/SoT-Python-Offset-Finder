@@ -1,0 +1,764 @@
+MovieScene3DAttachSection:
+  Attributes:
+  - Name: AttachSocketName
+    Offset: '0xa8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AttachComponentName
+    Offset: '0xb0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: bConstrainTx
+    Offset: '0xb8'
+    Size: '0x1'
+    Type: bool
+  - Name: bConstrainTy
+    Offset: '0xb8'
+    Size: '0x1'
+    Type: bool
+  - Name: bConstrainTz
+    Offset: '0xb8'
+    Size: '0x1'
+    Type: bool
+  - Name: bConstrainRx
+    Offset: '0xb8'
+    Size: '0x1'
+    Type: bool
+  - Name: bConstrainRy
+    Offset: '0xb8'
+    Size: '0x1'
+    Type: bool
+  - Name: bConstrainRz
+    Offset: '0xb8'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+  FullSize: '0xc0'
+  InheritedSize: '0xa8'
+  Super: MovieScene3DConstraintSection
+MovieScene3DAttachTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: MovieScene3DConstraintTrack
+MovieScene3DConstraintSection:
+  Attributes:
+  - Name: ConstraintId
+    Offset: '0x98'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x10'
+  FullSize: '0xa8'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieScene3DConstraintTrack:
+  Attributes:
+  - Name: ConstraintSections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class ConstraintSections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneTrack
+MovieScene3DPathSection:
+  Attributes:
+  - Name: TimingCurve
+    Offset: '0xa8'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: FrontAxisEnum
+    Offset: '0x120'
+    Size: '0x1'
+    Type: byte
+  - Name: UpAxisEnum
+    Offset: '0x121'
+    Size: '0x1'
+    Type: byte
+  - Name: bFollow
+    Offset: '0x124'
+    Size: '0x1'
+    Type: bool
+  - Name: bReverse
+    Offset: '0x124'
+    Size: '0x1'
+    Type: bool
+  - Name: bForceUpright
+    Offset: '0x124'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x80'
+  FullSize: '0x128'
+  InheritedSize: '0xa8'
+  Super: MovieScene3DConstraintSection
+MovieScene3DPathTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: MovieScene3DConstraintTrack
+MovieScene3DTransformSection:
+  Attributes:
+  - Name: Translation
+    Offset: '0xa0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: Rotation
+    Offset: '0x208'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: Scale
+    Offset: '0x370'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x440'
+  FullSize: '0x4d8'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieScene3DTransformTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneActorReferenceSection:
+  Attributes:
+  - Name: ActorGuidIndexCurve
+    Offset: '0xa0'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  - Name: ActorGuidStrings
+    Offset: '0x120'
+    Size: '0x10'
+    Type: TArray<Str >
+  ClassSize: '0x98'
+  FullSize: '0x130'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneActorReferenceTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneAudioSection:
+  Attributes:
+  - Name: Sound
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class SoundBase*
+  - Name: StartOffset
+    Offset: '0xa0'
+    Size: '0x4'
+    Type: float
+  - Name: AudioStartTime
+    Offset: '0xa4'
+    Size: '0x4'
+    Type: float
+  - Name: AudioDilationFactor
+    Offset: '0xa8'
+    Size: '0x4'
+    Type: float
+  - Name: AudioVolume
+    Offset: '0xac'
+    Size: '0x4'
+    Type: float
+  - Name: SoundVolume
+    Offset: '0xb0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: PitchMultiplier
+    Offset: '0x128'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: bSuppressSubtitles
+    Offset: '0x1a0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x110'
+  FullSize: '0x1a8'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneAudioTrack:
+  Attributes:
+  - Name: AudioSections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class AudioSections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneBoolSection:
+  Attributes:
+  - Name: DefaultValue
+    Offset: '0xa0'
+    Size: '0x1'
+    Type: bool
+  - Name: BoolCurve
+    Offset: '0xa8'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0x80'
+  FullSize: '0x118'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneBoolTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneByteSection:
+  Attributes:
+  - Name: ByteCurve
+    Offset: '0xa0'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0x78'
+  FullSize: '0x110'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneByteTrack:
+  Attributes:
+  - Name: Enum
+    Offset: '0xb0'
+    Size: '0x8'
+    Type: Class Enum*
+  ClassSize: '0x8'
+  FullSize: '0xb8'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneCameraAnimSection:
+  Attributes:
+  - Name: AnimData
+    Offset: '0x98'
+    Size: '0x20'
+    Type: Struct MovieSceneCameraAnimSectionData
+  - Name: CameraAnim
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: Class CameraAnim*
+  - Name: PlayRate
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: float
+  - Name: PlayScale
+    Offset: '0xc4'
+    Size: '0x4'
+    Type: float
+  - Name: BlendInTime
+    Offset: '0xc8'
+    Size: '0x4'
+    Type: float
+  - Name: BlendOutTime
+    Offset: '0xcc'
+    Size: '0x4'
+    Type: float
+  - Name: bLooping
+    Offset: '0xd0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x40'
+  FullSize: '0xd8'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneCameraAnimTrack:
+  Attributes:
+  - Name: CameraAnimSections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class CameraAnimSections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneCameraCutSection:
+  Attributes:
+  - Name: CameraGuid
+    Offset: '0x98'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x10'
+  FullSize: '0xa8'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneCameraCutTrack:
+  Attributes:
+  - Name: Sections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class Sections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneCameraShakeSection:
+  Attributes:
+  - Name: ShakeData
+    Offset: '0x98'
+    Size: '0x20'
+    Type: Struct MovieSceneCameraShakeSectionData
+  - Name: ShakeClass
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: class
+  - Name: PlayScale
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: float
+  - Name: PlaySpace
+    Offset: '0xc4'
+    Size: '0x1'
+    Type: byte
+  - Name: UserDefinedPlaySpace
+    Offset: '0xc8'
+    Size: '0xc'
+    Type: Struct Rotator
+  ClassSize: '0x40'
+  FullSize: '0xd8'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneCameraShakeTrack:
+  Attributes:
+  - Name: CameraShakeSections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class CameraShakeSections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneCinematicShotSection:
+  Attributes:
+  - Name: DisplayName
+    Offset: '0x100'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x38'
+  FullSize: '0x138'
+  InheritedSize: '0x100'
+  Super: MovieSceneSubSection
+MovieSceneCinematicShotTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: MovieSceneSubTrack
+MovieSceneColorSection:
+  Attributes:
+  - Name: RedCurve
+    Offset: '0xa0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: GreenCurve
+    Offset: '0x118'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: BlueCurve
+    Offset: '0x190'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: AlphaCurve
+    Offset: '0x208'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x1e8'
+  FullSize: '0x280'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneColorTrack:
+  Attributes:
+  - Name: bIsSlateColor
+    Offset: '0xb0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'
+  FullSize: '0xb8'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneComponentMaterialTrack:
+  Attributes:
+  - Name: MaterialIndex
+    Offset: '0x98'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+  FullSize: '0xa0'
+  InheritedSize: '0x98'
+  Super: MovieSceneMaterialTrack
+MovieSceneEnumSection:
+  Attributes:
+  - Name: EnumCurve
+    Offset: '0xa0'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0x78'
+  FullSize: '0x110'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneEnumTrack:
+  Attributes:
+  - Name: Enum
+    Offset: '0xb0'
+    Size: '0x8'
+    Type: Class Enum*
+  ClassSize: '0x8'
+  FullSize: '0xb8'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneEventSection:
+  Attributes:
+  - Name: Events
+    Offset: '0x98'
+    Size: '0x68'
+    Type: Struct NameCurve
+  - Name: EventData
+    Offset: '0x100'
+    Size: '0x20'
+    Type: Struct MovieSceneEventSectionData
+  ClassSize: '0x110'
+  FullSize: '0x1a8'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneEventTrack:
+  Attributes:
+  - Name: bFireEventsWhenForwards
+    Offset: '0x88'
+    Size: '0x1'
+    Type: bool
+  - Name: bFireEventsWhenBackwards
+    Offset: '0x88'
+    Size: '0x1'
+    Type: bool
+  - Name: Sections
+    Offset: '0x90'
+    Size: '0x10'
+    Type: TArray<class Sections*>
+  ClassSize: '0x18'
+  FullSize: '0xa0'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneFadeSection:
+  Attributes:
+  - Name: FadeColor
+    Offset: '0x118'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: bFadeAudio
+    Offset: '0x128'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+  FullSize: '0x130'
+  InheritedSize: '0x118'
+  Super: MovieSceneFloatSection
+MovieSceneFadeTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieSceneFloatTrack
+MovieSceneFloatSection:
+  Attributes:
+  - Name: FloatCurve
+    Offset: '0xa0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  ClassSize: '0x80'
+  FullSize: '0x118'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneFloatTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneIntegerSection:
+  Attributes:
+  - Name: IntegerCurve
+    Offset: '0xa0'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0x78'
+  FullSize: '0x110'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneIntegerTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneLevelVisibilitySection:
+  Attributes:
+  - Name: Visibility
+    Offset: '0x98'
+    Size: '0x1'
+    Type: byte
+  - Name: LevelNames
+    Offset: '0xa0'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x18'
+  FullSize: '0xb0'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneLevelVisibilityTrack:
+  Attributes:
+  - Name: Sections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class Sections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneMaterialTrack:
+  Attributes:
+  - Name: Sections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class Sections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneParameterSection:
+  Attributes:
+  - Name: ScalarParameterNamesAndCurves
+    Offset: '0x98'
+    Size: '0x10'
+    Type: TArray<Struct Sections>
+  - Name: VectorParameterNamesAndCurves
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: TArray<Struct ScalarParameterNamesAndCurves>
+  - Name: ColorParameterNamesAndCurves
+    Offset: '0xb8'
+    Size: '0x10'
+    Type: TArray<Struct VectorParameterNamesAndCurves>
+  ClassSize: '0x30'
+  FullSize: '0xc8'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneParticleParameterTrack:
+  Attributes:
+  - Name: Sections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class Sections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneParticleSection:
+  Attributes:
+  - Name: ParticleKeys
+    Offset: '0x98'
+    Size: '0x70'
+    Type: Struct IntegralCurve
+  ClassSize: '0x70'
+  FullSize: '0x108'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneParticleTrack:
+  Attributes:
+  - Name: ParticleSections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class ParticleSections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieScenePropertyTrack:
+  Attributes:
+  - Name: PropertyName
+    Offset: '0x88'
+    Size: '0x8'
+    Type: struct FName
+  - Name: PropertyPath
+    Offset: '0x90'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Sections
+    Offset: '0xa0'
+    Size: '0x10'
+    Type: TArray<class Sections*>
+  ClassSize: '0x28'
+  FullSize: '0xb0'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneSkeletalAnimationSection:
+  Attributes:
+  - Name: Params
+    Offset: '0x98'
+    Size: '0x98'
+    Type: Struct MovieSceneSkeletalAnimationParams
+  - Name: AnimSequence
+    Offset: '0x130'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  - Name: Animation
+    Offset: '0x138'
+    Size: '0x8'
+    Type: Class AnimSequenceBase*
+  - Name: StartOffset
+    Offset: '0x140'
+    Size: '0x4'
+    Type: float
+  - Name: EndOffset
+    Offset: '0x144'
+    Size: '0x4'
+    Type: float
+  - Name: PlayRate
+    Offset: '0x148'
+    Size: '0x4'
+    Type: float
+  - Name: bReverse
+    Offset: '0x14c'
+    Size: '0x1'
+    Type: bool
+  - Name: SlotName
+    Offset: '0x150'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0xc0'
+  FullSize: '0x158'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneSkeletalAnimationTrack:
+  Attributes:
+  - Name: AnimationSections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class AnimationSections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneSlomoSection:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x118'
+  InheritedSize: '0x118'
+  Super: MovieSceneFloatSection
+MovieSceneSlomoTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieSceneFloatTrack
+MovieSceneSpawnSection:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x118'
+  InheritedSize: '0x118'
+  Super: MovieSceneBoolSection
+MovieSceneSpawnTrack:
+  Attributes:
+  - Name: Sections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class Sections*>
+  - Name: ObjectGuid
+    Offset: '0x98'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x20'
+  FullSize: '0xa8'
+  InheritedSize: '0x88'
+  Super: MovieSceneTrack
+MovieSceneStringSection:
+  Attributes:
+  - Name: StringCurve
+    Offset: '0xa0'
+    Size: '0x78'
+    Type: Struct StringCurve
+  ClassSize: '0x80'
+  FullSize: '0x118'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneStringTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneSubSection:
+  Attributes:
+  - Name: Parameters
+    Offset: '0x98'
+    Size: '0x10'
+    Type: Struct MovieSceneSectionParameters
+  - Name: StartOffset
+    Offset: '0xa8'
+    Size: '0x4'
+    Type: float
+  - Name: TimeScale
+    Offset: '0xac'
+    Size: '0x4'
+    Type: float
+  - Name: PrerollTime
+    Offset: '0xb0'
+    Size: '0x4'
+    Type: float
+  - Name: SubSequence
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: Class MovieSceneSequence*
+  - Name: TargetSequenceName
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: TargetPathToRecordTo
+    Offset: '0xf0'
+    Size: '0x10'
+    Type: Struct DirectoryPath
+  ClassSize: '0x68'
+  FullSize: '0x100'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneSubTrack:
+  Attributes:
+  - Name: Sections
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<class Sections*>
+  ClassSize: '0x10'
+  FullSize: '0x98'
+  InheritedSize: '0x88'
+  Super: MovieSceneNameableTrack
+MovieSceneVectorSection:
+  Attributes:
+  - Name: Curves
+    Offset: '0xa0'
+    Size: '0x78'
+    Type: Struct RichCurve
+  - Name: ChannelsUsed
+    Offset: '0x280'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x1f0'
+  FullSize: '0x288'
+  InheritedSize: '0x98'
+  Super: MovieSceneSection
+MovieSceneVectorTrack:
+  Attributes:
+  - Name: NumChannelsUsed
+    Offset: '0xb0'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+  FullSize: '0xb8'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
+MovieSceneVisibilityTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieSceneBoolTrack

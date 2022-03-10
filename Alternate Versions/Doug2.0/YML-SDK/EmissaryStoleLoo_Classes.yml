@@ -1,0 +1,130 @@
+BP_PromptActor_EmissaryStoleLoot_AF_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryStoleLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct UberGraphFrame>
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C
+BP_PromptActor_EmissaryStoleLoot_GH_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryStoleLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C
+BP_PromptActor_EmissaryStoleLoot_MA_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryStoleLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C
+BP_PromptActor_EmissaryStoleLoot_OOS_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryStoleLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct >
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C
+BP_PromptActor_EmissaryStoleLoot_RB_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryStoleLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
+  ClassSize: '0x30'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
+  Super: BP_PromptActorBase_C

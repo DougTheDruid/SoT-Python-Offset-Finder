@@ -1,0 +1,58 @@
+BP_Prompt_SpeakingTrumpet_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: WieldableItemUseEvent
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: NotificationInputId
+    Offset: '0x168'
+    Size: '0x8'
+    Type: class
+  - Name: SpeakingTrumpetPromptAccessKey
+    Offset: '0x170'
+    Size: '0x8'
+    Type: class
+  - Name: WieldableItemEquipEvent
+    Offset: '0x178'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Prompt
+    Offset: '0x1c0'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: WieldingTrumpet
+    Offset: '0x228'
+    Size: '0x1'
+    Type: bool
+  - Name: WieldableItemStow
+    Offset: '0x230'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: In
+    Offset: '0x278'
+    Size: '0x8'
+    Type: class
+  - Name: UsingSecondaryInput
+    Offset: '0x280'
+    Size: '0x1'
+    Type: bool
+  - Name: StatCompleted
+    Offset: '0x281'
+    Size: '0x1'
+    Type: bool
+  - Name: CharacterDispatcher
+    Offset: '0x288'
+    Size: '0x8'
+    Type: Struct ObjectMessagingDispatcherHandle
+  - Name: HasShown
+    Offset: '0x290'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x179'
+  FullSize: '0x291'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C

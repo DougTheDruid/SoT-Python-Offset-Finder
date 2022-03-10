@@ -1,0 +1,96 @@
+EventToComponentMapping:
+  Attributes:
+  - Name: PlayEvent
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopEvent
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: WwiseEmitterComponents
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<class WwiseEmitterComponents*>
+  ClassSize: '0x20'
+StaticMeshAudioAssociation:
+  Attributes:
+  - Name: PlaybackDataArray
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct StaticMeshWwiseEmitterData>
+  - Name: Meshes
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<class Meshes*>
+  ClassSize: '0x20'
+StaticMeshComponentAudioAssociation:
+  Attributes:
+  - Name: PlaybackData
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct StaticMeshWwiseEmitterData
+  - Name: EmitterPositionRelativeToComponentOrigin
+    Offset: '0x38'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x68'
+StaticMeshWwiseEmitterData:
+  Attributes:
+  - Name: Pool
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: LocalOriginOffset
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: StartEvents
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<class StartEvents*>
+  - Name: StopEvents
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class StopEvents*>
+  ClassSize: '0x38'
+WWiseEmitterCreationRTPCSetting:
+  Attributes:
+  - Name: RTPCName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: RTPCValue
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+WWiseEmitterCreationSwitchSetting:
+  Attributes:
+  - Name: SwitchGroup
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SwitchValue
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x10'
+WwiseEmitter:
+  Attributes: []
+  ClassSize: '0x20'
+WwiseEmitterCreationParams:
+  Attributes:
+  - Name: Event
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: RTPCs
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct WWiseEmitterCreationRTPCSetting>
+  - Name: Switches
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct WWiseEmitterCreationSwitchSetting>
+  ClassSize: '0x28'

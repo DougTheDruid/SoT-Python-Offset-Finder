@@ -1,0 +1,33 @@
+AshenLordFireShroud:
+  Attributes:
+  - Name: FireShroudOverlapZone
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class StatusEffectOverlapZone*
+  - Name: Params
+    Offset: '0x8'
+    Size: '0x18'
+    Type: Struct AshenLordFireShroudParams
+  ClassSize: '0x20'
+AshenLordFireShroudParams:
+  Attributes:
+  - Name: FireShroudZoneClass
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: FireShroudCollisionVolume
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x18'
+MeleeAttackIdWeights:
+  Attributes:
+  - Name: MeleeAttackType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Weight
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'

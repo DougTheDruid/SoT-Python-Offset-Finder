@@ -1,0 +1,104 @@
+DebugWindInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+DebugWindService:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0x518'
+  InheritedSize: '0x508'
+  Super: WindService
+MockWindService:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: Object
+TestWindInterface:
+  Attributes:
+  - Name: WindZones
+    Offset: '0x58'
+    Size: '0x10'
+    Type: TArray<Interface GetWindAtLocation>
+  ClassSize: '0x40'
+  FullSize: '0x68'
+  InheritedSize: '0x28'
+  Super: Object
+TestWindZone:
+  Attributes: []
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: Object
+TestWindZoneComponent:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x360'
+  InheritedSize: '0x360'
+  Super: WindZoneComponent
+WindFunctions:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+WindInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WindService:
+  Attributes:
+  - Name: GlobalWindSource
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class WindDirectionalSource*
+  - Name: CurrentWindAngle
+    Offset: '0x3f8'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentWindMagnitude
+    Offset: '0x3fc'
+    Size: '0x4'
+    Type: float
+  - Name: WindZones
+    Offset: '0x4e8'
+    Size: '0x10'
+    Type: TArray<Interface CurrentWindMagnitude>
+  - Name: ExtraWind
+    Offset: '0x4f8'
+    Size: '0x10'
+    Type: TArray<Struct WindZones>
+  ClassSize: '0x138'
+  FullSize: '0x508'
+  InheritedSize: '0x3d0'
+  Super: Actor
+WindServiceParamsFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+WindZoneComponent:
+  Attributes:
+  - Name: TurbulenceParams
+    Offset: '0x2d8'
+    Size: '0x70'
+    Type: Struct WindTurbulenceParameters
+  - Name: WindZoneParams
+    Offset: '0x348'
+    Size: '0x10'
+    Type: Struct WindZoneParams
+  ClassSize: '0x90'
+  FullSize: '0x360'
+  InheritedSize: '0x2d0'
+  Super: SceneComponent
+WindZoneInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

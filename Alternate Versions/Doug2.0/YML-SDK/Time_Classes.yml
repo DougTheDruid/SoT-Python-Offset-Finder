@@ -1,0 +1,106 @@
+CustomizableTimeInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CustomizableTimeService:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x4f0'
+  InheritedSize: '0x4e8'
+  Super: DebugTimeService
+DebugTimeInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+DebugTimeService:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x4e8'
+  InheritedSize: '0x4e0'
+  Super: TimeService
+LocationProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+TimeBlueprintLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+TimeFormatterInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+TimeInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+TimeService:
+  Attributes:
+  - Name: GameWorldTimeOffset
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct Timespan
+  - Name: ServiceTimeQueryRapidFrequencyOffsetMax
+    Offset: '0x420'
+    Size: '0x8'
+    Type: double
+  - Name: ServiceTimeQueryRapidFrequencyInSeconds
+    Offset: '0x428'
+    Size: '0x4'
+    Type: float
+  - Name: ServiceTimeQueryFrequencyInSeconds
+    Offset: '0x42c'
+    Size: '0x4'
+    Type: float
+  - Name: ClientTimeUpdateFrequencyInSeconds
+    Offset: '0x430'
+    Size: '0x4'
+    Type: float
+  - Name: SunriseTimeHours
+    Offset: '0x434'
+    Size: '0x4'
+    Type: float
+  - Name: SunsetTimeHours
+    Offset: '0x438'
+    Size: '0x4'
+    Type: float
+  - Name: LocalTimeUpdateAdjustMaxTimeDelta
+    Offset: '0x43c'
+    Size: '0x4'
+    Type: float
+  - Name: MinLocalTimeUpdateAdjustPercentageToSlowDown
+    Offset: '0x440'
+    Size: '0x4'
+    Type: float
+  - Name: MaxLocalTimeUpdateAdjustPercentageToSlowDown
+    Offset: '0x444'
+    Size: '0x4'
+    Type: float
+  - Name: MinLocalTimeUpdateAdjustPercentageToSpeedUp
+    Offset: '0x448'
+    Size: '0x4'
+    Type: float
+  - Name: MaxLocalTimeUpdateAdjustPercentageToSpeedUp
+    Offset: '0x44c'
+    Size: '0x4'
+    Type: float
+  - Name: ReplicatedServerTime
+    Offset: '0x4a0'
+    Size: '0x10'
+    Type: Struct ReplicatedAuthoritativeTime
+  ClassSize: '0x110'
+  FullSize: '0x4e0'
+  InheritedSize: '0x3d0'
+  Super: Actor

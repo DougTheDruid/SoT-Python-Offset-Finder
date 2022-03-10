@@ -1,0 +1,178 @@
+MemoryCommonData:
+  Attributes:
+  - Name: mUsedPhysicalMB
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: mUsedPhysicalPercentage
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: mAvailablePhysicalMB
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: mAvailablePhysicalPercentage
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: mOOMBackupPoolSize
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: mExecutableSize
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: mConfigCacheMemoryUsage
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: mFNameTableMemoryUsage
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: mAssetRegistrySize
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: mGCWorkingMemoryPoolSizeMB
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  - Name: mGCAllocated
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: mObjectsArraySizeMB
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  - Name: mMaxObjectsAllowed
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  - Name: mNumPermanentObjects
+    Offset: '0x34'
+    Size: '0x4'
+    Type: int
+  - Name: mNumTransientObjects
+    Offset: '0x38'
+    Size: '0x4'
+    Type: int
+  - Name: mUnsetSlotCound
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: int
+  - Name: mNumClusters
+    Offset: '0x44'
+    Size: '0x4'
+    Type: int
+  - Name: mNumClusteredObjects
+    Offset: '0x48'
+    Size: '0x4'
+    Type: int
+  - Name: mMaxClusterSize
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x50'
+MemoryVisualiserCategory:
+  Attributes:
+  - Name: CategoryName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CategoryStats
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct MemoryVisualiserStat>
+  - Name: CategoryClasses
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct MemoryVisualiserClass>
+  - Name: CollectOnServer
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  - Name: XboxOneBudgetMB
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  - Name: XboxOneSBudgetMB
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: XboxOneXBudgetMB
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: PCLowSpecBudgetMB
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  - Name: PCMidSpecBudgetMB
+    Offset: '0x44'
+    Size: '0x4'
+    Type: float
+  - Name: PCHighSpecBudgetMB
+    Offset: '0x48'
+    Size: '0x4'
+    Type: float
+  - Name: PCUltraSpecBudgetMB
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: float
+  - Name: MemoryUsageMB
+    Offset: '0x50'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x58'
+MemoryVisualiserClass:
+  Attributes:
+  - Name: ClassType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: MemoryGatheringMode
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: DisplayName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: MemoryUsageMB
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+MemoryVisualiserStat:
+  Attributes:
+  - Name: StatName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: DisplayName
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: MemoryUsageMB
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
+StaticMeshActorList:
+  Attributes:
+  - Name: Actors
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class Actors*>
+  ClassSize: '0x10'
+StaticMeshComponentList:
+  Attributes:
+  - Name: Components
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class Components*>
+  ClassSize: '0x10'

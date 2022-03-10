@@ -1,0 +1,38 @@
+BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: Handle_CrewEnteredTunnelOfTheDamnedPortalProximity
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Prompt_BootyWillBeLost
+    Offset: '0x168'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: PromptDisplayDuration
+    Offset: '0x1d0'
+    Size: '0x4'
+    Type: float
+  - Name: CrewInRadius
+    Offset: '0x1d4'
+    Size: '0x1'
+    Type: bool
+  - Name: PromptOnCooldown
+    Offset: '0x1d5'
+    Size: '0x1'
+    Type: bool
+  - Name: PromptDisplayCooldown
+    Offset: '0x1d8'
+    Size: '0x4'
+    Type: float
+  - Name: LootFilterDataAsset
+    Offset: '0x1e0'
+    Size: '0x8'
+    Type: Class TunnelsOfTheDamnedLootFilterDataAsset*
+  ClassSize: '0xd0'
+  FullSize: '0x1e8'
+  InheritedSize: '0x118'
+  Super: BP_PromptCoordinator_Base_C

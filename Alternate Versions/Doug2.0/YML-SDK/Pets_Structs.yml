@@ -1,0 +1,705 @@
+DismissPetNotificationEvent:
+  Attributes: []
+  ClassSize: '0x1'
+EventHangoutSpotMadeAvailable:
+  Attributes: []
+  ClassSize: '0x50'
+EventHangoutSpotMadeUnavailable:
+  Attributes: []
+  ClassSize: '0x50'
+EventNewPetThreatDetected:
+  Attributes: []
+  ClassSize: '0x1'
+EventPerchHangoutSpotSetEnabledState:
+  Attributes: []
+  ClassSize: '0xc'
+EventPetCustomisationComplete:
+  Attributes: []
+  ClassSize: '0x1'
+EventPetCustomisationReady:
+  Attributes: []
+  ClassSize: '0x10'
+EventPetDismissed:
+  Attributes:
+  - Name: DismissingActor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+EventPetDropped:
+  Attributes: []
+  ClassSize: '0x1'
+EventPetEndPlay:
+  Attributes:
+  - Name: LinkedPet
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Pawn*
+  ClassSize: '0x8'
+EventPetEnteredHangout:
+  Attributes: []
+  ClassSize: '0x2'
+EventPetFed:
+  Attributes:
+  - Name: FedWithActor
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: FeedingActor
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x20'
+EventPetFoodBase:
+  Attributes:
+  - Name: FeedingInteractionId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x10'
+EventPetLeftHangout:
+  Attributes:
+  - Name: Pet
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+EventPetNotFed:
+  Attributes:
+  - Name: FeedingActor
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x18'
+EventPetOwnerAssigned:
+  Attributes:
+  - Name: Owner
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+EventPetPerchSpotEnabledStateChanged:
+  Attributes: []
+  ClassSize: '0x1'
+EventPetPickedUp:
+  Attributes:
+  - Name: IsOnPerch
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+EventPetReactBegun:
+  Attributes:
+  - Name: ReactId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReactState
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0xc'
+EventPetReactCancellation:
+  Attributes:
+  - Name: ReactSource
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ReactId
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x10'
+EventPetReactRequest:
+  Attributes:
+  - Name: ReactSource
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ReactId
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x10'
+EventPetReactedToFood:
+  Attributes:
+  - Name: ReactionType
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x14'
+EventPetRefusedFood:
+  Attributes:
+  - Name: FeedingActor
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x18'
+EventPetSadnessBegin:
+  Attributes: []
+  ClassSize: '0x1'
+EventPetSadnessEnd:
+  Attributes: []
+  ClassSize: '0x1'
+EventPetSpawnedForShip:
+  Attributes:
+  - Name: LinkedPet
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Pawn*
+  - Name: LinkedShip
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x10'
+EventWieldablePetHungerStateUpdated:
+  Attributes:
+  - Name: NewState
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x1'
+EventWieldablePetPendingDrop:
+  Attributes:
+  - Name: DropRequestReason
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x1'
+EventWieldablePetPutOnPerch:
+  Attributes:
+  - Name: Pet
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: HangoutSpotName
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x20'
+HangoutSpotId:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x8'
+HangoutSpotParams:
+  Attributes:
+  - Name: HangoutSpotName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Weight
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: PetParams
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct PetHangoutSpotParams>
+  - Name: FeatureName
+    Offset: '0x20'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x28'
+HangoutSpotPosition:
+  Attributes:
+  - Name: Id
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct HangoutSpotId
+  - Name: Transform
+    Offset: '0x10'
+    Size: '0x30'
+    Type: Struct Transform
+  - Name: RotationMode
+    Offset: '0x40'
+    Size: '0x1'
+    Type: byte
+  - Name: ShipDeck
+    Offset: '0x41'
+    Size: '0x1'
+    Type: byte
+  - Name: Occupier
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class Pawn*
+  - Name: IsPerch
+    Offset: '0x60'
+    Size: '0x1'
+    Type: bool
+  - Name: NeedOverrideInteractionPoint
+    Offset: '0x61'
+    Size: '0x1'
+    Type: bool
+  - Name: OverrideInteractionPointPosition
+    Offset: '0x64'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: BlockPetEmoteReactions
+    Offset: '0x70'
+    Size: '0x1'
+    Type: bool
+  - Name: IgnorePickupFromHangoutTooltipDisplayOffset
+    Offset: '0x71'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x80'
+PetBaseTelemetryFragment:
+  Attributes:
+  - Name: OwnerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PetPartId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CurrentPetRepresentation
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
+  - Name: PetLocation
+    Offset: '0x24'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x30'
+PetBaseTelemetryFragmentInput:
+  Attributes: []
+  ClassSize: '0x8'
+PetControllerSetTickOrderEvent:
+  Attributes:
+  - Name: Actor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+PetCustomiationOverrideMappingEntry:
+  Attributes:
+  - Name: Identifier
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: OverrideAsset
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class PetCustomisationOverrideDataAsset*
+  ClassSize: '0x18'
+PetCustomisation:
+  Attributes:
+  - Name: PetName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PetPartId
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Struct AIPartId
+  ClassSize: '0x18'
+PetDangerHearingThreat:
+  Attributes:
+  - Name: SoundTag
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: TimeBeforeForgotten
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: Responses
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct TimeBeforeForgotten>
+  ClassSize: '0x20'
+PetDangerHearingThreatResponse:
+  Attributes:
+  - Name: Type
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: IgnoredTarget
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: InvertIgnoredTarget
+    Offset: '0x2'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x3'
+PetDespawnActionStateParams:
+  Attributes:
+  - Name: TakeOffHeight
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: TakeOffTime
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: TotalGhostShaderTime
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: TimeToTriggerVFX
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: DespawnVFX
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: DespawnVFXColour
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: DespawnSFX
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopDespawnSFX
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: TotalDespawningTime
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x40'
+PetDismissedTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x1'
+PetDroppedTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x1'
+PetFedTelemetryEvent:
+  Attributes:
+  - Name: FedWithItemId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FeedingPlayerId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FeedingInteractionId
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x30'
+PetFeedingAnimationData:
+  Attributes:
+  - Name: AnimationState
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: AnimationTimeout
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+PetFeedingParams:
+  Attributes:
+  - Name: EatingAnimData
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct PetFeedingAnimationData
+  - Name: FedAnimData
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct PetFeedingAnimationData
+  - Name: NotFedAnimData
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Struct PetFeedingAnimationData
+  - Name: SickAnimData
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Struct PetFeedingAnimationData
+  - Name: RefusalAnimData
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Struct PetFeedingAnimationData
+  - Name: TimeToStartEating
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: TimeUntilGivingUp
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  - Name: DistToleranceSquared
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: RotationTolerance
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x38'
+PetHangoutSpotParams:
+  Attributes:
+  - Name: PetType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: HangoutTime
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: AnimationSelector
+    Offset: '0x18'
+    Size: '0xa0'
+    Type: Struct WeightedPetAnimationSelector
+  ClassSize: '0xb8'
+PetListingTypeEntry:
+  Attributes:
+  - Name: PetPartsCategory
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: PetType
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringClassReference
+  - Name: FeatureToggleName
+    Offset: '0x20'
+    Size: '0x8'
+    Type: struct FName
+  - Name: PetListingName
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x38'
+PetNotFedTelemetryEvent:
+  Attributes:
+  - Name: IgnoringPlayerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FeedingInteractionId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x20'
+PetPickedUpTelemetryEvent:
+  Attributes:
+  - Name: IsOnPerch
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+PetReactedTelemetryEvent:
+  Attributes:
+  - Name: ReactId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: AnimationState
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x18'
+PetReactedToFoodTelemetryEvent:
+  Attributes:
+  - Name: FeedingInteractionId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: FeedingReaction
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x14'
+PetRefusedFoodTelemetryEvent:
+  Attributes:
+  - Name: TryingToFeedPlayerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FeedingInteractionId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x20'
+PetRelationship:
+  Attributes:
+  - Name: PetInfo
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class PetItemInfo*
+  ClassSize: '0x20'
+PetSpawnActionStateConstructionInfo:
+  Attributes: []
+  ClassSize: '0x30'
+PetSpawnActionStateParams:
+  Attributes:
+  - Name: LandingHeight
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: LandingTime
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: TotalGhostShaderTime
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: TimeToTriggerVFX
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: SpawnVFX
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: SpawnVFXColour
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: SpawnSFX
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopSpawnSFX
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: TotalSpawningTime
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x40'
+PetTurnToFaceData:
+  Attributes:
+  - Name: EndRotation
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Quat
+  - Name: RotationTime
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
+PetsServiceParams:
+  Attributes:
+  - Name: MaxPetsInProximity
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: RespawnRequestTimeout
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: SpawnTimeDelay
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: MinPetProximityLifespan
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: MaxPetProximityLifespan
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: MinPetProximityRespawnDelay
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: MaxPetProximityRespawnDelay
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: HeldPetDespawnDelay
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  - Name: IllegalShipsSizesForSpawn
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Class HeldPetDespawnDelay>
+  ClassSize: '0x38'
+ReactStateMapping:
+  Attributes:
+  - Name: AnimationID
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CanTimeout
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: AnimationTimeout
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: PetStateSelector
+    Offset: '0x10'
+    Size: '0xa0'
+    Type: Struct WeightedPetAnimationSelector
+  - Name: AnimationChance
+    Offset: '0xb0'
+    Size: '0x4'
+    Type: float
+  - Name: AnimationDelay
+    Offset: '0xb4'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: IgnoringStrategies
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: TArray<Class AnimationDelay>
+  ClassSize: '0xd8'
+RespawnPetEvent:
+  Attributes:
+  - Name: PetOwner
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+WieldablePetDropTimeout:
+  Attributes:
+  - Name: RequestReason
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: DropDelay
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+WieldablePetFoodSourceEntry:
+  Attributes:
+  - Name: FoodSourceActor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: TimeUntilConsumption
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
+WieldablePetHungerAnimationData:
+  Attributes:
+  - Name: AnimState
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: AnimTimeout
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+WieldablePetPutOnPerchTelemetryEvent:
+  Attributes:
+  - Name: HangoutSpotName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: WieldingActorTelemetrySubjectId
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x28'

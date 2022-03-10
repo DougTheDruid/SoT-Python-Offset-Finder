@@ -1,0 +1,14 @@
+BP_Sail_C:
+  Attributes:
+  - Name: Sail Positions Top
+    Offset: '0x578'
+    Size: '0x10'
+    Type: TArray<Struct Sail Positions Bottom>
+  - Name: Sail Positions Bottom
+    Offset: '0x588'
+    Size: '0x10'
+    Type: TArray<Struct Sail Positions Top>
+  ClassSize: '0x20'
+  FullSize: '0x598'
+  InheritedSize: '0x578'
+  Super: Sail

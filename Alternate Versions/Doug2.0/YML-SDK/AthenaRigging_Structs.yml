@@ -1,0 +1,264 @@
+InstancedRopeParams:
+  Attributes:
+  - Name: Start
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: End
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Thickness
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: UVScale
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: UVBase
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: UVOffset
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  - Name: Roughness
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: Shape
+    Offset: '0x2c'
+    Size: '0x18'
+    Type: Struct RopeCatenaryShapeParams
+  - Name: Swing
+    Offset: '0x44'
+    Size: '0x8'
+    Type: Struct RopeCatenarySwingParams
+  - Name: Dynamics
+    Offset: '0x4c'
+    Size: '0x8'
+    Type: Struct RopeCatenaryDynamicsParams
+  ClassSize: '0x54'
+PulleyVisualParams:
+  Attributes:
+  - Name: Mesh
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class StaticMesh*
+  - Name: Scale
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: Radius
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
+RiggingSystemLine:
+  Attributes: []
+  ClassSize: '0x10'
+RiggingSystemLineGroup:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Lines
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct Name>
+  ClassSize: '0x18'
+RiggingSystemLineParams:
+  Attributes:
+  - Name: Start
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct SocketId
+  - Name: Pulleys
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct Start>
+  - Name: End
+    Offset: '0x30'
+    Size: '0x20'
+    Type: Struct SocketId
+  - Name: Visuals
+    Offset: '0x50'
+    Size: '0xc'
+    Type: Struct RopeVisualParams
+  - Name: Shape
+    Offset: '0x5c'
+    Size: '0x18'
+    Type: Struct RopeCatenaryShapeParams
+  ClassSize: '0x78'
+RiggingSystemPulleyAttachmentParams:
+  Attributes:
+  - Name: Visuals
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct RopeVisualParams
+  - Name: Length
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: Sag
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
+RiggingSystemPulleyData:
+  Attributes:
+  - Name: AttachmentSag
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Float None>
+  - Name: AttachmentLength
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Float >
+  - Name: Scale
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Float >
+  - Name: ScaledOffset
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Float >
+  - Name: ScaledRadius
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Float >
+  - Name: MeshIDs
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<Int >
+  ClassSize: '0x60'
+RiggingSystemPulleyParams:
+  Attributes:
+  - Name: Anchor
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct SocketId
+  - Name: OffsetFromAnchor
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: Visuals
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct PulleyVisualParams
+  - Name: AttachmentRope
+    Offset: '0x38'
+    Size: '0x14'
+    Type: Struct RiggingSystemPulleyAttachmentParams
+  ClassSize: '0x50'
+RopeCatenaryDynamicsParams:
+  Attributes:
+  - Name: CatenaryToTautLengthRatioToConsiderCatenary
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: ReactsToWind
+    Offset: '0x4'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'
+RopeCatenaryLengthPair:
+  Attributes:
+  - Name: Taut
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Catenary
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+RopeCatenaryLengthParams:
+  Attributes:
+  - Name: MinTautLength
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: MaxTautLength
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: CatenaryScaleAtMinLength
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: CatenaryScaleAtMaxLength
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
+RopeCatenaryShapeParams:
+  Attributes:
+  - Name: Length
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct RopeCatenaryLengthParams
+  - Name: Slope
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Struct RopeCatenarySlopeBlendParams
+  ClassSize: '0x18'
+RopeCatenarySlopeBlendParams:
+  Attributes:
+  - Name: MinSlopeForTautBlend
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: MaxSlopeForTautBlend
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+RopeCatenarySwingParams:
+  Attributes:
+  - Name: LengthForNeutralSwing
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: LengthBias
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+RopeStyleParams:
+  Attributes:
+  - Name: Mesh
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class StaticMesh*
+  - Name: DiffuseTexture
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: NormalTexture
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: ShadowLOD
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
+RopeVisualParams:
+  Attributes:
+  - Name: Thickness
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: UVScale
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Roughness
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'

@@ -1,0 +1,112 @@
+CustomDeathConfiguration:
+  Attributes: []
+  ClassSize: '0x18'
+CustomPlayerStartConfigData:
+  Attributes:
+  - Name: Location
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Rotation
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Quat
+  - Name: Tags
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Str >
+  ClassSize: '0x30'
+CustomPlayerStartConfigResponseData:
+  Attributes:
+  - Name: Success
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: PlayerStartId
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+DestroyCustomPlayerStartData:
+  Attributes:
+  - Name: PlayerStartActorNetID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Tag
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x18'
+ForcePlayerRespawnData:
+  Attributes:
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: bRespawnAsGhost
+    Offset: '0x4'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'
+GameModeDeathPenaltyRespawnTimerData:
+  Attributes:
+  - Name: SpawnTimer
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x4'
+KillCrewData:
+  Attributes:
+  - Name: CrewNetGUID
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x10'
+KillPlayerData:
+  Attributes:
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x4'
+ResetCustomConfigForPlayerData:
+  Attributes:
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x4'
+SetCustomPlayerStartData:
+  Attributes:
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: PlayerStartActorNetID
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+SetShouldSkipFerryOfTheDamnedData:
+  Attributes:
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: bShouldSkipFerryOfTheDamned
+    Offset: '0x4'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'
+SetShouldUseRevivalFlowData:
+  Attributes:
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: bShouldUseRevivalFlow
+    Offset: '0x4'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'

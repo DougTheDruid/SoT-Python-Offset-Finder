@@ -1,0 +1,58 @@
+AthenaCharacterBaseInputComponent:
+  Attributes: []
+  ClassSize: '0x128'
+  FullSize: '0x278'
+  InheritedSize: '0x150'
+  Super: InputComponent
+AthenaCharacterBaseInputComponentWithInterference:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0x280'
+  InheritedSize: '0x278'
+  Super: AthenaCharacterBaseInputComponent
+AthenaClampedFreelookInputComponent:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x298'
+  InheritedSize: '0x278'
+  Super: AthenaCharacterBaseInputComponent
+ClampedFreelookMouseXInputId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: AnalogInputId
+ClampedFreelookMouseYInputId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: AnalogInputId
+ClampedFreelookXAnalogInputId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: AnalogInputId
+ClampedFreelookYAnalogInputId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: AnalogInputId
+LookingAtWieldableInputComponent:
+  Attributes:
+  - Name: TargetWieldable
+    Offset: '0x278'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+  FullSize: '0x280'
+  InheritedSize: '0x278'
+  Super: AthenaCharacterBaseInputComponent
+MovementInterferenceComponent:
+  Attributes: []
+  ClassSize: '0x70'
+  FullSize: '0x1c0'
+  InheritedSize: '0x150'
+  Super: InputComponent

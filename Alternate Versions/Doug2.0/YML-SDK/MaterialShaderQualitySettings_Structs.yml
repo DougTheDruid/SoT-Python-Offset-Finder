@@ -1,0 +1,34 @@
+MaterialQualityOverrides:
+  Attributes:
+  - Name: bEnableOverride
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: bForceFullyRough
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: bForceNonMetal
+    Offset: '0x2'
+    Size: '0x1'
+    Type: bool
+  - Name: bForceDisableLMDirectionality
+    Offset: '0x3'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x4'
+ShaderQualityOverridesListItem:
+  Attributes:
+  - Name: RangeName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: QualityProperty
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class BoolProperty*
+  - Name: SettingContainer
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class ShaderPlatformQualitySettings*
+  ClassSize: '0x20'

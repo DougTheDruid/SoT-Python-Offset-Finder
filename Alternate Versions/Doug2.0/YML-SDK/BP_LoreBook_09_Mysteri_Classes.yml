@@ -1,0 +1,18 @@
+BP_LoreBook_09_MysteriousJournal02_C:
+  Attributes:
+  - Name: None
+    Offset: '0x4e8'
+    Size: '0x8'
+    Type: Class NPCDialogComponent*
+  - Name: None
+    Offset: '0x4f0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0x4f8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x18'
+  FullSize: '0x500'
+  InheritedSize: '0x4e8'
+  Super: ModalInteractionProxy

@@ -1,0 +1,61 @@
+ShantyPuzzleInteractionZoneDefinition:
+  Attributes:
+  - Name: Location
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Radius
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: RequiredMusicalInstrumentType
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  - Name: RequiredNumInteractors
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
+ShantyPuzzlePlayerEnterInteractionZoneEvent:
+  Attributes:
+  - Name: Player
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+ShantyPuzzlePlayerExitInteractionZoneEvent:
+  Attributes:
+  - Name: Player
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+ShantyPuzzleSingleInteractionZoneStopInteractingEvent:
+  Attributes:
+  - Name: Player
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: InteractionZoneIdx
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
+ShantyPuzzleSingleInteractionZoneUnlockEvent:
+  Attributes:
+  - Name: Player
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: InteractionZoneIdx
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
+ShantyPuzzleUnlockCanceledEvent:
+  Attributes: []
+  ClassSize: '0x1'
+ShantyPuzzleUnlockedCompleteEvent:
+  Attributes: []
+  ClassSize: '0x1'

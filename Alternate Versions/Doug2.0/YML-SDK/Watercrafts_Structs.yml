@@ -1,0 +1,197 @@
+EventEnteredWatercraft:
+  Attributes:
+  - Name: Watercraft
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Actor
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x10'
+EventExitedWatercraft:
+  Attributes:
+  - Name: Watercraft
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Actor
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x10'
+EventOarStrokeEnded:
+  Attributes: []
+  ClassSize: '0x1'
+EventRowboatEnteredWater:
+  Attributes: []
+  ClassSize: '0x1'
+EventRowboatExitedWater:
+  Attributes: []
+  ClassSize: '0x1'
+Oar:
+  Attributes:
+  - Name: OarParams
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct OarParams
+  ClassSize: '0x60'
+OarParams:
+  Attributes:
+  - Name: RowingPower
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OarLength
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: OarOffsetDirection
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: OarForwardForceDirection
+    Offset: '0x14'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: TimeForCompleteStroke
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: TimeForResetCompletion
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  - Name: RowingPowerCurve
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: BrakeForcePerMetresPerSecond
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: EndOfStrokeBrakeForcePerMetresPerSecond
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x38'
+QuestVariableWatercraft:
+  Attributes: []
+  ClassSize: '0x20'
+RowboatDamageEffectData:
+  Attributes:
+  - Name: DynamicMaterialInstance
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: FadeInDuration
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x18'
+RowboatMountStateTelemetryEvent:
+  Attributes:
+  - Name: WatercraftId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: ActionName
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x14'
+RowboatStrainDamageData:
+  Attributes:
+  - Name: StormDamageScalar
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: WaterStrengthToCountAsStorm
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: StormStrengthThresholdForDamage
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: MinStormDamageFrequencyInSeconds
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: MaxStormDamageFrequencyInSeconds
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: WorldEdgeDamageScalar
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: MinWorldEdgeDamageFrequencyInSeconds
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: MaxWorldEdgeDamageFrequencyInSeconds
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
+ScrapeableDamageSpeedEntry:
+  Attributes:
+  - Name: SpeedBand
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: ForceFeedbackEffect
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ForceFeedbackEffect*
+  - Name: DamageAmount
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
+WatercraftDespawnTelemetryEvent:
+  Attributes:
+  - Name: WatercraftId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Location
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: DespawnReason
+    Offset: '0x1c'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x20'
+WatercraftRolloverCorrector:
+  Attributes:
+  - Name: RollThresholdToConsiderRolledOver
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: TorqueScalar
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+WatercraftSpawnTelemetryEvent:
+  Attributes:
+  - Name: WatercraftId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: WatercraftType
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Location
+    Offset: '0x20'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Forward
+    Offset: '0x2c'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x38'

@@ -1,0 +1,22 @@
+BP_BaseInternalDamageZone_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x830'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: RepairWood
+    Offset: '0x838'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Start Repair Cue
+    Offset: '0x840'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: RepairEmitter
+    Offset: '0x848'
+    Size: '0x20'
+    Type: Struct WwiseEmitter
+  ClassSize: '0x3f'
+  FullSize: '0x868'
+  InheritedSize: '0x829'
+  Super: BP_DamageZone_C

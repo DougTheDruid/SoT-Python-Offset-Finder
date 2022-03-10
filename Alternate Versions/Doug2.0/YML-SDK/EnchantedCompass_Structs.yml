@@ -1,0 +1,7 @@
+CompassTargetSet:
+  Attributes:
+  - Name: TargetLocation
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0xc'

@@ -1,0 +1,22 @@
+BP_Snake_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0xbb0'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: AIItemSpawn
+    Offset: '0xbb8'
+    Size: '0x8'
+    Type: Class AIItemSpawnComponent*
+  - Name: Venom
+    Offset: '0xbc0'
+    Size: '0x8'
+    Type: Class VenomComponent*
+  - Name: SnakeSkeletalMesh
+    Offset: '0xbc8'
+    Size: '0x8'
+    Type: Class SkeletalMeshComponent*
+  ClassSize: '0x20'
+  FullSize: '0xbd0'
+  InheritedSize: '0xbb0'
+  Super: BP_Fauna_C

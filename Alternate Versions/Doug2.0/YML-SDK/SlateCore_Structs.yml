@@ -1,0 +1,962 @@
+AnalogInputEvent:
+  Attributes: []
+  ClassSize: '0x58'
+ButtonStyle:
+  Attributes:
+  - Name: Normal
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: Hovered
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: Pressed
+    Offset: '0x128'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: Disabled
+    Offset: '0x1b8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: NormalPadding
+    Offset: '0x248'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: PressedPadding
+    Offset: '0x258'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: PressedSlateSound
+    Offset: '0x268'
+    Size: '0x18'
+    Type: Struct SlateSound
+  - Name: HoveredSlateSound
+    Offset: '0x280'
+    Size: '0x18'
+    Type: Struct SlateSound
+  - Name: PressedSound
+    Offset: '0x298'
+    Size: '0x8'
+    Type: struct FName
+  - Name: HoveredSound
+    Offset: '0x2a0'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x2a8'
+CharacterEvent:
+  Attributes: []
+  ClassSize: '0x30'
+CheckBoxStyle:
+  Attributes:
+  - Name: CheckBoxType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: UncheckedImage
+    Offset: '0x10'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: UncheckedHoveredImage
+    Offset: '0xa0'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: UncheckedPressedImage
+    Offset: '0x130'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: CheckedImage
+    Offset: '0x1c0'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: CheckedHoveredImage
+    Offset: '0x250'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: CheckedPressedImage
+    Offset: '0x2e0'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: UndeterminedImage
+    Offset: '0x370'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: UndeterminedHoveredImage
+    Offset: '0x400'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: UndeterminedPressedImage
+    Offset: '0x490'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: Padding
+    Offset: '0x520'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: ForegroundColor
+    Offset: '0x530'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: BorderBackgroundColor
+    Offset: '0x560'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: CheckedSlateSound
+    Offset: '0x590'
+    Size: '0x18'
+    Type: Struct SlateSound
+  - Name: UncheckedSlateSound
+    Offset: '0x5a8'
+    Size: '0x18'
+    Type: Struct SlateSound
+  - Name: HoveredSlateSound
+    Offset: '0x5c0'
+    Size: '0x18'
+    Type: Struct SlateSound
+  - Name: CheckedSound
+    Offset: '0x5d8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: UncheckedSound
+    Offset: '0x5e0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: HoveredSound
+    Offset: '0x5e8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x5f0'
+ComboBoxStyle:
+  Attributes:
+  - Name: ComboButtonStyle
+    Offset: '0x8'
+    Size: '0x3e0'
+    Type: Struct ComboButtonStyle
+  - Name: PressedSlateSound
+    Offset: '0x3e8'
+    Size: '0x18'
+    Type: Struct SlateSound
+  - Name: SelectionChangeSlateSound
+    Offset: '0x400'
+    Size: '0x18'
+    Type: Struct SlateSound
+  - Name: PressedSound
+    Offset: '0x418'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SelectionChangeSound
+    Offset: '0x420'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x428'
+ComboButtonStyle:
+  Attributes:
+  - Name: ButtonStyle
+    Offset: '0x8'
+    Size: '0x2a8'
+    Type: Struct ButtonStyle
+  - Name: DownArrowImage
+    Offset: '0x2b0'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: MenuBorderBrush
+    Offset: '0x340'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: MenuBorderPadding
+    Offset: '0x3d0'
+    Size: '0x10'
+    Type: Struct Margin
+  ClassSize: '0x3e0'
+CompositeFont:
+  Attributes:
+  - Name: DefaultTypeface
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Typeface
+  - Name: SubTypefaces
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct CompositeSubFont>
+  ClassSize: '0x28'
+CompositeSubFont:
+  Attributes:
+  - Name: Typeface
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Typeface
+  - Name: CharacterRanges
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct Typeface>
+  - Name: Languages
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Byte CharacterRanges>
+  - Name: ScalingFactor
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x38'
+ControllerEvent:
+  Attributes: []
+  ClassSize: '0x50'
+DockTabStyle:
+  Attributes:
+  - Name: CloseButtonStyle
+    Offset: '0x8'
+    Size: '0x2a8'
+    Type: Struct ButtonStyle
+  - Name: NormalBrush
+    Offset: '0x2b0'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ActiveBrush
+    Offset: '0x340'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ColorOverlayBrush
+    Offset: '0x3d0'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ForegroundBrush
+    Offset: '0x460'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: HoveredBrush
+    Offset: '0x4f0'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ContentAreaBrush
+    Offset: '0x580'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: TabWellBrush
+    Offset: '0x610'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: TabPadding
+    Offset: '0x6a0'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: OverlapWidth
+    Offset: '0x6b0'
+    Size: '0x4'
+    Type: float
+  - Name: FlashColor
+    Offset: '0x6b8'
+    Size: '0x30'
+    Type: Struct SlateColor
+  ClassSize: '0x6e8'
+EditableTextBoxStyle:
+  Attributes:
+  - Name: BackgroundImageNormal
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: BackgroundImageHovered
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: BackgroundImageFocused
+    Offset: '0x128'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: BackgroundImageReadOnly
+    Offset: '0x1b8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: Padding
+    Offset: '0x248'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: Font
+    Offset: '0x258'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: ForegroundColor
+    Offset: '0x298'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: BackgroundColor
+    Offset: '0x2c8'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: ReadOnlyForegroundColor
+    Offset: '0x2f8'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: HScrollBarPadding
+    Offset: '0x328'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: VScrollBarPadding
+    Offset: '0x338'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: ScrollBarStyle
+    Offset: '0x348'
+    Size: '0x518'
+    Type: Struct ScrollBarStyle
+  ClassSize: '0x860'
+EditableTextStyle:
+  Attributes:
+  - Name: Font
+    Offset: '0x8'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: ColorAndOpacity
+    Offset: '0x48'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: BackgroundImageSelected
+    Offset: '0x78'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: BackgroundImageComposing
+    Offset: '0x108'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: CaretImage
+    Offset: '0x198'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x228'
+ExpandableAreaStyle:
+  Attributes:
+  - Name: CollapsedImage
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ExpandedImage
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x128'
+FocusEvent:
+  Attributes: []
+  ClassSize: '0x8'
+FontData:
+  Attributes:
+  - Name: FontFilename
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: BulkDataPtr
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class FontBulkData*
+  - Name: Hinting
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
+  - Name: FontData
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Byte Hinting>
+  ClassSize: '0x30'
+Geometry:
+  Attributes: []
+  ClassSize: '0x34'
+HeaderRowStyle:
+  Attributes:
+  - Name: ColumnStyle
+    Offset: '0x8'
+    Size: '0x518'
+    Type: Struct TableColumnHeaderStyle
+  - Name: LastColumnStyle
+    Offset: '0x520'
+    Size: '0x518'
+    Type: Struct TableColumnHeaderStyle
+  - Name: ColumnSplitterStyle
+    Offset: '0xa38'
+    Size: '0x128'
+    Type: Struct SplitterStyle
+  - Name: BackgroundBrush
+    Offset: '0xb60'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ForegroundColor
+    Offset: '0xbf0'
+    Size: '0x30'
+    Type: Struct SlateColor
+  ClassSize: '0xc20'
+HyperlinkStyle:
+  Attributes:
+  - Name: UnderlineStyle
+    Offset: '0x8'
+    Size: '0x2a8'
+    Type: Struct ButtonStyle
+  - Name: TextStyle
+    Offset: '0x2b0'
+    Size: '0x160'
+    Type: Struct TextBlockStyle
+  - Name: Padding
+    Offset: '0x410'
+    Size: '0x10'
+    Type: Struct Margin
+  ClassSize: '0x420'
+InlineEditableTextBlockStyle:
+  Attributes:
+  - Name: EditableTextBoxStyle
+    Offset: '0x8'
+    Size: '0x860'
+    Type: Struct EditableTextBoxStyle
+  - Name: TextStyle
+    Offset: '0x868'
+    Size: '0x160'
+    Type: Struct TextBlockStyle
+  ClassSize: '0x9c8'
+InlineTextImageStyle:
+  Attributes:
+  - Name: Image
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0xa0'
+InputEvent:
+  Attributes: []
+  ClassSize: '0x28'
+KeyEvent:
+  Attributes: []
+  ClassSize: '0x50'
+Margin:
+  Attributes:
+  - Name: Left
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Top
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Right
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: Bottom
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
+MotionEvent:
+  Attributes: []
+  ClassSize: '0x58'
+NavigationEvent:
+  Attributes: []
+  ClassSize: '0x30'
+PointerEvent:
+  Attributes: []
+  ClassSize: '0x88'
+ProgressBarStyle:
+  Attributes:
+  - Name: BackgroundImage
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: FillImage
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: MarqueeImage
+    Offset: '0x128'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x1b8'
+ScrollBarStyle:
+  Attributes:
+  - Name: HorizontalBackgroundImage
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: VerticalBackgroundImage
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: VerticalTopSlotImage
+    Offset: '0x128'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: HorizontalTopSlotImage
+    Offset: '0x1b8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: VerticalBottomSlotImage
+    Offset: '0x248'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: HorizontalBottomSlotImage
+    Offset: '0x2d8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: NormalThumbImage
+    Offset: '0x368'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: HoveredThumbImage
+    Offset: '0x3f8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: DraggedThumbImage
+    Offset: '0x488'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x518'
+ScrollBorderStyle:
+  Attributes:
+  - Name: TopShadowBrush
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: BottomShadowBrush
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x128'
+ScrollBoxStyle:
+  Attributes:
+  - Name: TopShadowBrush
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: BottomShadowBrush
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: LeftShadowBrush
+    Offset: '0x128'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: RightShadowBrush
+    Offset: '0x1b8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x248'
+SearchBoxStyle:
+  Attributes:
+  - Name: TextBoxStyle
+    Offset: '0x8'
+    Size: '0x860'
+    Type: Struct EditableTextBoxStyle
+  - Name: ActiveFontInfo
+    Offset: '0x868'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: UpArrowImage
+    Offset: '0x8a8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: DownArrowImage
+    Offset: '0x938'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: GlassImage
+    Offset: '0x9c8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ClearImage
+    Offset: '0xa58'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ImagePadding
+    Offset: '0xae8'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: bLeftAlignButtons
+    Offset: '0xaf8'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xb00'
+SlateBrush:
+  Attributes:
+  - Name: ImageSize
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: DrawAs
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: Margin
+    Offset: '0xc'
+    Size: '0x10'
+    Type: Struct Margin
+  - Name: Tint
+    Offset: '0x1c'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: TintColor
+    Offset: '0x30'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: Tiling
+    Offset: '0x60'
+    Size: '0x1'
+    Type: byte
+  - Name: Mirroring
+    Offset: '0x61'
+    Size: '0x1'
+    Type: byte
+  - Name: ImageType
+    Offset: '0x62'
+    Size: '0x1'
+    Type: byte
+  - Name: ResourceObject
+    Offset: '0x68'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: ResourceName
+    Offset: '0x70'
+    Size: '0x8'
+    Type: struct FName
+  - Name: bIsDynamicallyLoaded
+    Offset: '0x78'
+    Size: '0x1'
+    Type: bool
+  - Name: bHasUObject
+    Offset: '0x79'
+    Size: '0x1'
+    Type: bool
+  - Name: UVRegion
+    Offset: '0x7c'
+    Size: '0x14'
+    Type: Struct Box2D
+  ClassSize: '0x90'
+SlateColor:
+  Attributes:
+  - Name: SpecifiedColor
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ColorUseRule
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x30'
+SlateFontInfo:
+  Attributes:
+  - Name: FontObject
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: FontMaterial
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: TypefaceFontName
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Size
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  - Name: FontName
+    Offset: '0x34'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Hinting
+    Offset: '0x3c'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x40'
+SlateSound:
+  Attributes:
+  - Name: ResourceObject
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x18'
+SlateWidgetStyle:
+  Attributes: []
+  ClassSize: '0x8'
+SliderStyle:
+  Attributes:
+  - Name: NormalBarImage
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: DisabledBarImage
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: NormalThumbImage
+    Offset: '0x128'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: DisabledThumbImage
+    Offset: '0x1b8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x248'
+SpinBoxStyle:
+  Attributes:
+  - Name: BackgroundBrush
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: HoveredBackgroundBrush
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ActiveFillBrush
+    Offset: '0x128'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: InactiveFillBrush
+    Offset: '0x1b8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ArrowsImage
+    Offset: '0x248'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ForegroundColor
+    Offset: '0x2d8'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: TextPadding
+    Offset: '0x308'
+    Size: '0x10'
+    Type: Struct Margin
+  ClassSize: '0x318'
+SplitterStyle:
+  Attributes:
+  - Name: HandleNormalBrush
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: HandleHighlightBrush
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x128'
+TableColumnHeaderStyle:
+  Attributes:
+  - Name: SortPrimaryAscendingImage
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: SortPrimaryDescendingImage
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: SortSecondaryAscendingImage
+    Offset: '0x128'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: SortSecondaryDescendingImage
+    Offset: '0x1b8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: NormalBrush
+    Offset: '0x248'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: HoveredBrush
+    Offset: '0x2d8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: MenuDropdownImage
+    Offset: '0x368'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: MenuDropdownNormalBorderBrush
+    Offset: '0x3f8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: MenuDropdownHoveredBorderBrush
+    Offset: '0x488'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x518'
+TableRowStyle:
+  Attributes:
+  - Name: SelectorFocusedBrush
+    Offset: '0x8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ActiveHoveredBrush
+    Offset: '0x98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ActiveBrush
+    Offset: '0x128'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: InactiveHoveredBrush
+    Offset: '0x1b8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: InactiveBrush
+    Offset: '0x248'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: EvenRowBackgroundHoveredBrush
+    Offset: '0x2d8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: EvenRowBackgroundBrush
+    Offset: '0x368'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: OddRowBackgroundHoveredBrush
+    Offset: '0x3f8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: OddRowBackgroundBrush
+    Offset: '0x488'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: TextColor
+    Offset: '0x518'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: SelectedTextColor
+    Offset: '0x548'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: DropIndicator_Above
+    Offset: '0x578'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: DropIndicator_Onto
+    Offset: '0x608'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: DropIndicator_Below
+    Offset: '0x698'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x728'
+TextBlockStyle:
+  Attributes:
+  - Name: Font
+    Offset: '0x8'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: ColorAndOpacity
+    Offset: '0x48'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: ShadowOffset
+    Offset: '0x78'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: ShadowColorAndOpacity
+    Offset: '0x80'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: SelectedBackgroundColor
+    Offset: '0x90'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: HighlightColor
+    Offset: '0xc0'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: HighlightShape
+    Offset: '0xd0'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x160'
+Typeface:
+  Attributes:
+  - Name: Fonts
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct TypefaceEntry>
+  ClassSize: '0x10'
+TypefaceEntry:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Font
+    Offset: '0x8'
+    Size: '0x30'
+    Type: Struct FontData
+  ClassSize: '0x38'
+VolumeControlStyle:
+  Attributes:
+  - Name: SliderStyle
+    Offset: '0x8'
+    Size: '0x248'
+    Type: Struct SliderStyle
+  - Name: HighVolumeImage
+    Offset: '0x250'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: MidVolumeImage
+    Offset: '0x2e0'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: LowVolumeImage
+    Offset: '0x370'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: NoVolumeImage
+    Offset: '0x400'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: MutedImage
+    Offset: '0x490'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x520'
+WindowStyle:
+  Attributes:
+  - Name: MinimizeButtonStyle
+    Offset: '0x8'
+    Size: '0x2a8'
+    Type: Struct ButtonStyle
+  - Name: MaximizeButtonStyle
+    Offset: '0x2b0'
+    Size: '0x2a8'
+    Type: Struct ButtonStyle
+  - Name: RestoreButtonStyle
+    Offset: '0x558'
+    Size: '0x2a8'
+    Type: Struct ButtonStyle
+  - Name: CloseButtonStyle
+    Offset: '0x800'
+    Size: '0x2a8'
+    Type: Struct ButtonStyle
+  - Name: TitleTextStyle
+    Offset: '0xaa8'
+    Size: '0x160'
+    Type: Struct TextBlockStyle
+  - Name: ActiveTitleBrush
+    Offset: '0xc08'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: InactiveTitleBrush
+    Offset: '0xc98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: FlashTitleBrush
+    Offset: '0xd28'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: OutlineBrush
+    Offset: '0xdb8'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: OutlineColor
+    Offset: '0xe48'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: BorderBrush
+    Offset: '0xe78'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: BackgroundBrush
+    Offset: '0xf08'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  - Name: ChildBackgroundBrush
+    Offset: '0xf98'
+    Size: '0x90'
+    Type: Struct SlateBrush
+  ClassSize: '0x1028'

@@ -1,0 +1,100 @@
+AISpawnerMusicZoneComponent:
+  Attributes:
+  - Name: BattleWonEvent
+    Offset: '0x390'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: AISpawner
+    Offset: '0x398'
+    Size: '0x8'
+    Type: Class AISpawner*
+  - Name: SpawnerPawns
+    Offset: '0x3a0'
+    Size: '0x10'
+    Type: TArray<class SpawnerPawns*>
+  - Name: SpawnerState
+    Offset: '0x3b0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x30'
+  FullSize: '0x3c0'
+  InheritedSize: '0x390'
+  Super: MusicZoneComponent
+MusicZoneComponent:
+  Attributes:
+  - Name: InnerRadius
+    Offset: '0x2d8'
+    Size: '0x4'
+    Type: float
+  - Name: OuterRadius
+    Offset: '0x2dc'
+    Size: '0x4'
+    Type: float
+  - Name: LocationRTPC
+    Offset: '0x2e0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: LocalRTPC
+    Offset: '0x2e8'
+    Size: '0x1'
+    Type: bool
+  - Name: PlayEvent
+    Offset: '0x2f0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopEvent
+    Offset: '0x2f8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: OneShotEvents
+    Offset: '0x300'
+    Size: '0x10'
+    Type: TArray<class OneShotEvents*>
+  - Name: EmitterPool
+    Offset: '0x310'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: DisableAfterPlayThrough
+    Offset: '0x318'
+    Size: '0x1'
+    Type: bool
+  - Name: ActivateOnBeginPlay
+    Offset: '0x319'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xc0'
+  FullSize: '0x390'
+  InheritedSize: '0x2d0'
+  Super: SceneComponent
+MusicZoneInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+MusicZoneService:
+  Attributes: []
+  ClassSize: '0xa8'
+  FullSize: '0x478'
+  InheritedSize: '0x3d0'
+  Super: Actor
+MusicZoneServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+SynchedMusicZoneComponent:
+  Attributes:
+  - Name: StartDelayTime
+    Offset: '0x390'
+    Size: '0x4'
+    Type: float
+  - Name: PlayFromStartTimeMS
+    Offset: '0x394'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x30'
+  FullSize: '0x3c0'
+  InheritedSize: '0x390'
+  Super: MusicZoneComponent

@@ -1,0 +1,216 @@
+DrawDebugItemBox:
+  Attributes:
+  - Name: GroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReplaceInGroup
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: CentrePos
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Box
+    Offset: '0x18'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Rotation
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct Quat
+  - Name: Colour
+    Offset: '0x40'
+    Size: '0x4'
+    Type: Struct Color
+  ClassSize: '0x50'
+DrawDebugItemCapsule:
+  Attributes:
+  - Name: GroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReplaceInGroup
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: CentrePos
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: HalfHeight
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: Radius
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: Rotation
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Quat
+  - Name: Colour
+    Offset: '0x30'
+    Size: '0x4'
+    Type: Struct Color
+  ClassSize: '0x40'
+DrawDebugItemLine:
+  Attributes:
+  - Name: GroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReplaceInGroup
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: LineStart
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: LineEnd
+    Offset: '0x18'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Colour
+    Offset: '0x24'
+    Size: '0x4'
+    Type: Struct Color
+  - Name: Thickness
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x2c'
+DrawDebugItemMessage:
+  Attributes:
+  - Name: GroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReplaceInGroup
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: Message
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Colour
+    Offset: '0x20'
+    Size: '0x4'
+    Type: Struct Color
+  ClassSize: '0x28'
+DrawDebugItemSector:
+  Attributes:
+  - Name: GroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReplaceInGroup
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: RotationAngle
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: Centre
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: SectorAngle
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: Radius
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: Colour
+    Offset: '0x24'
+    Size: '0x4'
+    Type: Struct Color
+  - Name: ZeroAngleVector
+    Offset: '0x28'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: RotationAxis
+    Offset: '0x34'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: SubAngles
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  - Name: Thickness
+    Offset: '0x44'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x48'
+DrawDebugItemSphere:
+  Attributes:
+  - Name: GroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReplaceInGroup
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: CentrePos
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Radius
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: Colour
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: Struct Color
+  ClassSize: '0x20'
+DrawDebugItemString:
+  Attributes:
+  - Name: GroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReplaceInGroup
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: String
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Colour
+    Offset: '0x20'
+    Size: '0x4'
+    Type: Struct Color
+  - Name: StringPos
+    Offset: '0x24'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x30'
+SphereData:
+  Attributes:
+  - Name: Location
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Radius
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: Segments
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: Colour
+    Offset: '0x14'
+    Size: '0x4'
+    Type: Struct Color
+  ClassSize: '0x18'

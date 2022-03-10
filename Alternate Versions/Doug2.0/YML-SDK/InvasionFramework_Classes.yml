@@ -1,0 +1,76 @@
+GetRivalCrewIdForInvasionStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x90'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+GetRivalCrewIdForInvasionStepDesc:
+  Attributes:
+  - Name: RivalCrewId
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableGuid
+  - Name: RivalCrewShip
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x40'
+  FullSize: '0xc0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+InvasionService:
+  Attributes: []
+  ClassSize: '0x58'
+  FullSize: '0x428'
+  InheritedSize: '0x3d0'
+  Super: Actor
+InvasionServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+NotifyCrewOfInvasionStep:
+  Attributes:
+  - Name: StepDesc
+    Offset: '0x90'
+    Size: '0x8'
+    Type: Class NotifyCrewOfInvasionStepDesc*
+  ClassSize: '0x8'
+  FullSize: '0x98'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+NotifyCrewOfInvasionStepDesc:
+  Attributes:
+  - Name: RivalCrewId
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableGuid
+  ClassSize: '0x20'
+  FullSize: '0xa0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TeleportShipToRivalCrewStep:
+  Attributes:
+  - Name: StepDesc
+    Offset: '0x90'
+    Size: '0x8'
+    Type: Class TeleportShipToRivalCrewStepDesc*
+  ClassSize: '0x8'
+  FullSize: '0x98'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+TeleportShipToRivalCrewStepDesc:
+  Attributes:
+  - Name: RivalCrewId
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableGuid
+  - Name: DistanceOffsetMetres
+    Offset: '0xa0'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+  FullSize: '0xa8'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
