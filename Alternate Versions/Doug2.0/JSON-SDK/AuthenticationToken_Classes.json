@@ -1,0 +1,30 @@
+{
+  "JwtAuthenticationTokenSettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "TokenSecretKey",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "JwtAuthenticationTokenEditorSettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "TokenSecretKey",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  }
+}

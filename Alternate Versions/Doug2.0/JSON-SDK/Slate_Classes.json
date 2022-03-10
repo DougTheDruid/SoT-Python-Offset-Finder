@@ -1,0 +1,156 @@
+{
+  "ButtonWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x2d8",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x2a8",
+    "Attributes": [
+      {
+        "Type": "Struct ButtonStyle",
+        "Name": "ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "CheckBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x620",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x5f0",
+    "Attributes": [
+      {
+        "Type": "Struct CheckBoxStyle",
+        "Name": "CheckBoxStyle",
+        "Size": "0x5f0",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ComboBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x458",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x428",
+    "Attributes": [
+      {
+        "Type": "Struct ComboBoxStyle",
+        "Name": "ComboBoxStyle",
+        "Size": "0x428",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ComboButtonWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x410",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x3e0",
+    "Attributes": [
+      {
+        "Type": "Struct ComboButtonStyle",
+        "Name": "ComboButtonStyle",
+        "Size": "0x3e0",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EditableTextBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x890",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x860",
+    "Attributes": [
+      {
+        "Type": "Struct EditableTextBoxStyle",
+        "Name": "EditableTextBoxStyle",
+        "Size": "0x860",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EditableTextWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x258",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x228",
+    "Attributes": [
+      {
+        "Type": "Struct EditableTextStyle",
+        "Name": "EditableTextStyle",
+        "Size": "0x228",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ProgressWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x1e8",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x1b8",
+    "Attributes": [
+      {
+        "Type": "Struct ProgressBarStyle",
+        "Name": "ProgressBarStyle",
+        "Size": "0x1b8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ScrollBarWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x548",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x518",
+    "Attributes": [
+      {
+        "Type": "Struct ScrollBarStyle",
+        "Name": "ScrollBarStyle",
+        "Size": "0x518",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ScrollBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x278",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x248",
+    "Attributes": [
+      {
+        "Type": "Struct ScrollBoxStyle",
+        "Name": "ScrollBoxStyle",
+        "Size": "0x248",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "SpinBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x348",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x318",
+    "Attributes": [
+      {
+        "Type": "Struct SpinBoxStyle",
+        "Name": "SpinBoxStyle",
+        "Size": "0x318",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "TextBlockWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x190",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Type": "Struct TextBlockStyle",
+        "Name": "TextBlockStyle",
+        "Size": "0x160",
+        "Offset": "0x30"
+      }
+    ]
+  }
+}

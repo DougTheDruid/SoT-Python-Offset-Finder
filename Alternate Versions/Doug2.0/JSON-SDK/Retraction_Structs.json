@@ -1,0 +1,25 @@
+{
+  "RetractorOrientationAdjustmentFlags": {
+    "ClassSize": "0x3",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "AdjustPitch",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "AdjustRoll",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "bool",
+        "Name": "AdjustYaw",
+        "Size": "0x1",
+        "Offset": "0x2"
+      }
+    ]
+  }
+}

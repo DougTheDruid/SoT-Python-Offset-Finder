@@ -1,0 +1,301 @@
+{
+  "RowboatDamageEffectData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "DynamicMaterialInstance",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "FadeInDuration",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RowboatStrainDamageData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "StormDamageScalar",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "WaterStrengthToCountAsStorm",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "StormStrengthThresholdForDamage",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "MinStormDamageFrequencyInSeconds",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxStormDamageFrequencyInSeconds",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "WorldEdgeDamageScalar",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "float",
+        "Name": "MinWorldEdgeDamageFrequencyInSeconds",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxWorldEdgeDamageFrequencyInSeconds",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "ScrapeableDamageSpeedEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "SpeedBand",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class ForceFeedbackEffect*",
+        "Name": "ForceFeedbackEffect",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "int",
+        "Name": "DamageAmount",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WatercraftRolloverCorrector": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "RollThresholdToConsiderRolledOver",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "TorqueScalar",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "OarParams": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "RowingPower",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "OarLength",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "OarOffsetDirection",
+        "Size": "0xc",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "OarForwardForceDirection",
+        "Size": "0xc",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "float",
+        "Name": "TimeForCompleteStroke",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "float",
+        "Name": "TimeForResetCompletion",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "RowingPowerCurve",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "float",
+        "Name": "BrakeForcePerMetresPerSecond",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "EndOfStrokeBrakeForcePerMetresPerSecond",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "Oar": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Struct OarParams",
+        "Name": "OarParams",
+        "Size": "0x38",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableWatercraft": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "EventOarStrokeEnded": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventRowboatExitedWater": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventRowboatEnteredWater": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "RowboatMountStateTelemetryEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "WatercraftId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "ActionName",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WatercraftDespawnTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "WatercraftId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Location",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "byte",
+        "Name": "DespawnReason",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "WatercraftSpawnTelemetryEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "WatercraftId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "WatercraftType",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Location",
+        "Size": "0xc",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Forward",
+        "Size": "0xc",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "EventExitedWatercraft": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Watercraft",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "Actor",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventEnteredWatercraft": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Watercraft",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "Actor",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  }
+}

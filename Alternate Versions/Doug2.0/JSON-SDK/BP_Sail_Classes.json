@@ -1,0 +1,22 @@
+{
+  "BP_Sail_C": {
+    "Super": "Sail",
+    "FullSize": "0x598",
+    "InheritedSize": "0x578",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct Sail Positions Bottom>",
+        "Name": "Sail Positions Top",
+        "Size": "0x10",
+        "Offset": "0x578"
+      },
+      {
+        "Type": "TArray<Struct Sail Positions Top>",
+        "Name": "Sail Positions Bottom",
+        "Size": "0x10",
+        "Offset": "0x588"
+      }
+    ]
+  }
+}

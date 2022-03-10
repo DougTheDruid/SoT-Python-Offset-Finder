@@ -1,0 +1,16 @@
+{
+  "BP_RowboatRowingSeat_C": {
+    "Super": "RowingSeat",
+    "FullSize": "0x7e8",
+    "InheritedSize": "0x7e0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEmitterComponent*",
+        "Name": "RowboatEmitter",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      }
+    ]
+  }
+}

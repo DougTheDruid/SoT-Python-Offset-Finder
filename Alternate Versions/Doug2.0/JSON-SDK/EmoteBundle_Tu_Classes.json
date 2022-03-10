@@ -1,0 +1,30 @@
+{
+  "BP_Emote_Tuck_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x110",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_TuckPlant_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x110",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_TuckPost_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x110",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_TuckBarrel_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x110",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

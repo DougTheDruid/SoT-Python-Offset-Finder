@@ -1,0 +1,175 @@
+{
+  "SetCustomPlayerStartData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "PlayerNetGUID",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "PlayerStartActorNetID",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "CustomDeathConfiguration": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "DestroyCustomPlayerStartData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "PlayerStartActorNetID",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Tag",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CustomPlayerStartConfigResponseData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "Success",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "PlayerStartId",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "CustomPlayerStartConfigData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "Location",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Quat",
+        "Name": "Rotation",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "Tags",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "ResetCustomConfigForPlayerData": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "PlayerNetGUID",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SetShouldSkipFerryOfTheDamnedData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "PlayerNetGUID",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bShouldSkipFerryOfTheDamned",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "SetShouldUseRevivalFlowData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "PlayerNetGUID",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bShouldUseRevivalFlow",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "GameModeDeathPenaltyRespawnTimerData": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "SpawnTimer",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ForcePlayerRespawnData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "PlayerNetGUID",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bRespawnAsGhost",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "KillCrewData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "CrewNetGUID",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "KillPlayerData": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "PlayerNetGUID",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

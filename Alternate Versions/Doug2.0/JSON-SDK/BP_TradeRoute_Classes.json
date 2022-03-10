@@ -1,0 +1,16 @@
+{
+  "BP_TradeRoute_C": {
+    "Super": "TradeRoute",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3e0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      }
+    ]
+  }
+}

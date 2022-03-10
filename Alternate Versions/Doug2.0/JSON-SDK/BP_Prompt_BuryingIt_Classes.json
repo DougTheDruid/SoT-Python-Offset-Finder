@@ -1,0 +1,88 @@
+{
+  "BP_Prompt_BuryingItem_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x291",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x179",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "WieldableItemUseEvent",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "class",
+        "Name": "NotificationInputId",
+        "Size": "0x8",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "class",
+        "Name": "BuryingItemPromptAccessKey",
+        "Size": "0x8",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "WieldableItemEquipEvent",
+        "Size": "0x48",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt",
+        "Size": "0x68",
+        "Offset": "0x1c0"
+      },
+      {
+        "Type": "bool",
+        "Name": "WieldingShovel",
+        "Size": "0x1",
+        "Offset": "0x228"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "WieldableItemStow",
+        "Size": "0x48",
+        "Offset": "0x230"
+      },
+      {
+        "Type": "class",
+        "Name": "In",
+        "Size": "0x8",
+        "Offset": "0x278"
+      },
+      {
+        "Type": "bool",
+        "Name": "UsingSecondaryInput",
+        "Size": "0x1",
+        "Offset": "0x280"
+      },
+      {
+        "Type": "bool",
+        "Name": "StatCompleted",
+        "Size": "0x1",
+        "Offset": "0x281"
+      },
+      {
+        "Type": "Struct ObjectMessagingDispatcherHandle",
+        "Name": "CharacterDispatcher",
+        "Size": "0x8",
+        "Offset": "0x288"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasShown",
+        "Size": "0x1",
+        "Offset": "0x290"
+      }
+    ]
+  }
+}

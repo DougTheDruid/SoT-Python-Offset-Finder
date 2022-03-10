@@ -1,0 +1,28 @@
+{
+  "TaleQuestVariableMapMarkType": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "TaleQuestChecklistItem": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct ChecklistActionProgressTracker>",
+        "Name": "ChecklistActions",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ChecklistActionProgressTracker": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class ChecklistActionData*",
+        "Name": "ActionData",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "AthenaLoadingScreenBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SlateLoadingScreenParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x218",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x1f0",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "DrawBackground",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "bool",
+        "Name": "DrawBackgroundImage",
+        "Size": "0x1",
+        "Offset": "0x29"
+      },
+      {
+        "Type": "bool",
+        "Name": "DrawTips",
+        "Size": "0x1",
+        "Offset": "0x2a"
+      },
+      {
+        "Type": "bool",
+        "Name": "DrawSpinner",
+        "Size": "0x1",
+        "Offset": "0x2b"
+      },
+      {
+        "Type": "float",
+        "Name": "ViewportWidth",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "float",
+        "Name": "ViewportHeight",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "FooterHeight",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "bool",
+        "Name": "DrawSpinnerText",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "PlaceholderSpinnerTexture",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "Struct LinearColor",
+        "Name": "BackgroundColour",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "Struct SlateLoadingScreenImageParams",
+        "Name": "PrimaryImage",
+        "Size": "0x20",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "TArray<Struct PrimaryImage>",
+        "Name": "CyclingImages",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "int",
+        "Name": "MaxNumImagesPerLoad",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Type": "Struct FText",
+        "Name": "SpinnerText",
+        "Size": "0x38",
+        "Offset": "0x98"
+      },
+      {
+        "Type": "Struct SlateColor",
+        "Name": "SpinnerTextColour",
+        "Size": "0x30",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "Struct SlateFontInfo",
+        "Name": "SpinnerTextFont",
+        "Size": "0x40",
+        "Offset": "0x100"
+      },
+      {
+        "Type": "float",
+        "Name": "SpinnerSize",
+        "Size": "0x4",
+        "Offset": "0x140"
+      },
+      {
+        "Type": "Struct Margin",
+        "Name": "SpinnerMargin",
+        "Size": "0x10",
+        "Offset": "0x144"
+      },
+      {
+        "Type": "float",
+        "Name": "SpinnerPadding",
+        "Size": "0x4",
+        "Offset": "0x154"
+      },
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "SpinnerIcon",
+        "Size": "0x10",
+        "Offset": "0x158"
+      },
+      {
+        "Type": "Struct Margin",
+        "Name": "TipsMargin",
+        "Size": "0x10",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "float",
+        "Name": "TipWrapLength",
+        "Size": "0x4",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "float",
+        "Name": "TipDisplayDuration",
+        "Size": "0x4",
+        "Offset": "0x17c"
+      },
+      {
+        "Type": "float",
+        "Name": "TipDurationBetweenTips",
+        "Size": "0x4",
+        "Offset": "0x180"
+      },
+      {
+        "Type": "int",
+        "Name": "NumTipsPerImage",
+        "Size": "0x4",
+        "Offset": "0x184"
+      },
+      {
+        "Type": "Struct SlateFontInfo",
+        "Name": "LoadingTipFont",
+        "Size": "0x40",
+        "Offset": "0x188"
+      },
+      {
+        "Type": "float",
+        "Name": "LoadingTipFontLineHeightPercentage",
+        "Size": "0x4",
+        "Offset": "0x1c8"
+      },
+      {
+        "Type": "TArray<Struct FText>",
+        "Name": "LoadingScreenTips",
+        "Size": "0x10",
+        "Offset": "0x1d0"
+      },
+      {
+        "Type": "Struct SlateColor",
+        "Name": "LoadingScreenTipColour",
+        "Size": "0x30",
+        "Offset": "0x1e0"
+      },
+      {
+        "Type": "bool",
+        "Name": "AllowSyncronousAssetLoad",
+        "Size": "0x1",
+        "Offset": "0x210"
+      }
+    ]
+  },
+  "AthenaLoadingScreenParams": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x78",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "BootLoadingScreen",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "TeleportLoadingScreen",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "AdventureLoadingScreens",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "ArenaLoadingScreens",
+        "Size": "0x10",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "LoadingUtilities": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "ReviveGhostAnimations": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class AnimSequence*",
+        "Name": "ReviveInto",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class AnimSequence*",
+        "Name": "SwimmingReviveInto",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Class AnimSequence*",
+        "Name": "ReviveLoop",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Class AnimSequence*",
+        "Name": "ReviveOutOf",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Class AnimSequence*",
+        "Name": "ReviveOutOfLoop",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  }
+}

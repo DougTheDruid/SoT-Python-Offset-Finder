@@ -1,0 +1,54 @@
+{
+  "MaterialQualityOverrides": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "bEnableOverride",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bForceFullyRough",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "bool",
+        "Name": "bForceNonMetal",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Type": "bool",
+        "Name": "bForceDisableLMDirectionality",
+        "Size": "0x1",
+        "Offset": "0x3"
+      }
+    ]
+  },
+  "ShaderQualityOverridesListItem": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "RangeName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class BoolProperty*",
+        "Name": "QualityProperty",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Class ShaderPlatformQualitySettings*",
+        "Name": "SettingContainer",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  }
+}

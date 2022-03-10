@@ -1,0 +1,151 @@
+{
+  "BP_CylinderLightingZone_Treasury_1C_C": {
+    "Super": "BP_CylinderLightingZone_C",
+    "FullSize": "0x415",
+    "InheritedSize": "0x415",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CylinderLightingZone_Treasury_1B_C": {
+    "Super": "BP_CylinderLightingZone_C",
+    "FullSize": "0x415",
+    "InheritedSize": "0x415",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CylinderLightingZone_Treasury_1A_C": {
+    "Super": "BP_CylinderLightingZone_C",
+    "FullSize": "0x415",
+    "InheritedSize": "0x415",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CylinderLightingZone_Shrine_2C_C": {
+    "Super": "BP_CylinderLightingZone_C",
+    "FullSize": "0x415",
+    "InheritedSize": "0x415",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CylinderLightingZone_Shrine_2B_C": {
+    "Super": "BP_CylinderLightingZone_C",
+    "FullSize": "0x415",
+    "InheritedSize": "0x415",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CylinderLightingZone_Shrine_2A_C": {
+    "Super": "BP_CylinderLightingZone_C",
+    "FullSize": "0x415",
+    "InheritedSize": "0x415",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CylinderLightingZone_Shrine_1C_C": {
+    "Super": "BP_CylinderLightingZone_C",
+    "FullSize": "0x415",
+    "InheritedSize": "0x415",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CylinderLightingZone_Shrine_1B_C": {
+    "Super": "BP_CylinderLightingZone_C",
+    "FullSize": "0x415",
+    "InheritedSize": "0x415",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CylinderLightingZone_Shrine_1A_C": {
+    "Super": "BP_CylinderLightingZone_C",
+    "FullSize": "0x415",
+    "InheritedSize": "0x415",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CylinderLightingZone_C": {
+    "Super": "Actor",
+    "FullSize": "0x415",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x45",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class CapsuleComponent*",
+        "Name": "InnerCapsule",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class CapsuleComponent*",
+        "Name": "OuterCapsule",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class LightingZoneComponent*",
+        "Name": "LightingZone",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "float",
+        "Name": "Outer Radius",
+        "Size": "0x4",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "float",
+        "Name": "Outer Half Height",
+        "Size": "0x4",
+        "Offset": "0x3fc"
+      },
+      {
+        "Type": "float",
+        "Name": "Inner Radius",
+        "Size": "0x4",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "float",
+        "Name": "Inner Half Height",
+        "Size": "0x4",
+        "Offset": "0x404"
+      },
+      {
+        "Type": "float",
+        "Name": "Weight",
+        "Size": "0x4",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "int",
+        "Name": "Priority Layer",
+        "Size": "0x4",
+        "Offset": "0x40c"
+      },
+      {
+        "Type": "int",
+        "Name": "Lighting Set",
+        "Size": "0x4",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsUnderwaterZone",
+        "Size": "0x1",
+        "Offset": "0x414"
+      }
+    ]
+  }
+}

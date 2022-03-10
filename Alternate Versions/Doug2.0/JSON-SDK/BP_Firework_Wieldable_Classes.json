@@ -1,0 +1,40 @@
+{
+  "BP_Firework_Wieldable_C": {
+    "Super": "StaticMeshWieldableItem",
+    "FullSize": "0x7b8",
+    "InheritedSize": "0x790",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class UsableWieldableComponent*",
+        "Name": "UsableWieldable",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Type": "Class WieldableInteractableComponent*",
+        "Name": "WieldableInteractable",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Type": "Class PickupableComponent*",
+        "Name": "Pickupable",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Type": "Class ConsumableWieldableComponent*",
+        "Name": "ConsumableWieldable",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      },
+      {
+        "Type": "Class InventoryItemComponent*",
+        "Name": "InventoryItem",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      }
+    ]
+  }
+}

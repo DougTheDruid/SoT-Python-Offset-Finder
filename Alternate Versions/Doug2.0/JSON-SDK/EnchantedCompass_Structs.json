@@ -1,0 +1,13 @@
+{
+  "CompassTargetSet": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "TargetLocation",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "BP_fod_StormFish_03_ShoresRaw_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_StormFish_03_ShoresUndercooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_StormFish_03_ShoresCooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_StormFish_03_ShoresBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

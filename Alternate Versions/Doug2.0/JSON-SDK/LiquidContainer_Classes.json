@@ -1,0 +1,79 @@
+{
+  "LiquidContainerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LiquidContainerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "LiquidMaterialName",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "LiquidMaterialParameterName",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "TArray<Struct LiquidMaterialParameterName>",
+        "Name": "LiquidTypeParams",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "float",
+        "Name": "StartingLiquidLevelNormalised",
+        "Size": "0x4",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "TransitionCurve",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "float",
+        "Name": "TransitionSpeedDecrease",
+        "Size": "0x4",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "float",
+        "Name": "TransitionSpeedIncrease",
+        "Size": "0x4",
+        "Offset": "0xfc"
+      },
+      {
+        "Type": "TArray<class LiquidMaterials*>",
+        "Name": "LiquidMaterials",
+        "Size": "0x10",
+        "Offset": "0x100"
+      }
+    ]
+  },
+  "LiquidContainerServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LiquidContainerService": {
+    "Super": "InteractableService",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": []
+  }
+}

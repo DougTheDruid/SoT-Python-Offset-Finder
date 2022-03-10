@@ -1,0 +1,25 @@
+{
+  "BlueprintLiveStreamInfo": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "GameName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "StreamName",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "URL",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  }
+}

@@ -1,0 +1,751 @@
+{
+  "ALK_WieldableObject_ArtifactBox_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_ArtifactGoblet_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_ArtifactImpressive_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_ArtifactVase_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Bait_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Banana_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Banjo_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Blunderbuss_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_BoardingAxe_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Boot_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Bottle_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Bread_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_BrokenShovel_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_BrokenTelescope_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Bucket_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Cannonball_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Cannonball_ChainedShot_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_CaptainSkull_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_CargoCrate_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_CargoCratePig_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_CargoCrateSnake_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Chalice_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_ChickenLeg_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Coconut_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Coin_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_CollectorsChest_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Compass_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Concertina_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Crown_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_CursedSkull_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_CutlassSword_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Dice_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Drum_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Fiddle_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Firework_Cake_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Firework_Living_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Firework_Rocket_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_FishingRod_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_FlagPole_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Grenade_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_GunpowderBarrel_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Hat_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_HeavySword_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_HurdyGurdy_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Key_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_KeyJail_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_KeySoul_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_KeyVault_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_KrakenMeat_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Lantern_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_LargeFish_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_LoreBook_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Mango_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_MapBundle_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Medallion_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_MegalodonMeat_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_MerchantContract_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_MusicBox_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pendant_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pet_Cat_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pet_Dog_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pet_Monkey_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pet_Parrot_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pet_Pig_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_PigMeat_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pineapple_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pipe_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pistol_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_PocketWatch_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Pomegranate_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_RapierSword_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Relic_Box_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Relic_Doll_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Relic_Kraken_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Relic_Ship_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Relic_Skull_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_RuneTablet_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_ScrubBrush_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_SharkEffigy_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_SharkMeat_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Shovel_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Shroudbreaker_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_ShroudbreakersJewel_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_SkeletonFortKey_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Skull_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_SmallFish_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_SnakeMeat_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_SniperRifle_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_SpeakingTrumpet_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_SpiceBox_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_StarJewel_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_StarMap_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Stool_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_TallTalesWood_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Tankard_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Telescope_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Totem_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_TreasureChest_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_TreasureMap_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Trident_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_TT_Gem_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_TT_QuestBook_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Unarmed_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_VeilStone_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_WoodPlank_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_Cutlass_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_WieldableObject_UnarmedCombat_C": {
+    "Super": "UnarmedCombatWieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

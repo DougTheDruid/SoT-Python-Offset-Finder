@@ -1,0 +1,239 @@
+{
+  "CompanyTutorialVoyageProgress": {
+    "Super": "Object",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "AssignedVoyageProposalDescClass",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "class",
+        "Name": "AssignedTaleRankDescClass",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ContextualTutorialComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x120",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct TutorialStarterType>",
+        "Name": "ContextualTutorialClasses",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "TArray<class SpawnedPromptActors*>",
+        "Name": "SpawnedPromptActors",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "HasTutorialStarterBegunNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "TutorialStarterType",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "OnboardingStatusInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Tutorial2019Component": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "IsEnabledByServer",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsInTutorialTale",
+        "Size": "0x1",
+        "Offset": "0xc9"
+      }
+    ]
+  },
+  "Tutorial2019ContextualDelegatingComponent": {
+    "Super": "Tutorial2019Component",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ContextualTutorialComponent*",
+        "Name": "ContextualTutorialComponent",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "Tutorial2019FunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TutorialHelpersBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TutorialManagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TutorialManager": {
+    "Super": "ActorComponent",
+    "FullSize": "0x118",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "CompanyOnboardingStarterClass",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "class",
+        "Name": "MaidenVoyageStarterClass",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "class",
+        "Name": "BeachNPCSpawnFlowStarterClass",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "class",
+        "Name": "SelectedTutorialClass",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "Class TutorialStarter*",
+        "Name": "SelectedTutorial",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "byte",
+        "Name": "TutorialType",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasEverPlayedFirstPersonAnimation",
+        "Size": "0x1",
+        "Offset": "0xf9"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasStartedTutorial",
+        "Size": "0x1",
+        "Offset": "0xfa"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasReceivedEntitlements",
+        "Size": "0x1",
+        "Offset": "0xfb"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasPosessedPawn",
+        "Size": "0x1",
+        "Offset": "0xfc"
+      }
+    ]
+  },
+  "TutorialStarter": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Class AthenaPlayerController*",
+        "Name": "AthenaPlayerController",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShouldPlayIntroAnimatic",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShouldDisableAllIntroBehaviour",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Type": "Struct FirstPersonAnimaticSettings",
+        "Name": "IntroAnimationSettings",
+        "Size": "0x2c",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "BeachNPCSpawnFlowStarter": {
+    "Super": "TutorialStarter",
+    "FullSize": "0x60",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CompanyOnboardingStarter": {
+    "Super": "TutorialStarter",
+    "FullSize": "0x60",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MaidenVoyageStarter": {
+    "Super": "TutorialStarter",
+    "FullSize": "0x60",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

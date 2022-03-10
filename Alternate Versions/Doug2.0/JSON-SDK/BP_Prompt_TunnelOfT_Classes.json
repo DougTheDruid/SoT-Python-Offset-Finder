@@ -1,0 +1,58 @@
+{
+  "BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x1e8",
+    "InheritedSize": "0x118",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_CrewEnteredTunnelOfTheDamnedPortalProximity",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_BootyWillBeLost",
+        "Size": "0x68",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "float",
+        "Name": "PromptDisplayDuration",
+        "Size": "0x4",
+        "Offset": "0x1d0"
+      },
+      {
+        "Type": "bool",
+        "Name": "CrewInRadius",
+        "Size": "0x1",
+        "Offset": "0x1d4"
+      },
+      {
+        "Type": "bool",
+        "Name": "PromptOnCooldown",
+        "Size": "0x1",
+        "Offset": "0x1d5"
+      },
+      {
+        "Type": "float",
+        "Name": "PromptDisplayCooldown",
+        "Size": "0x4",
+        "Offset": "0x1d8"
+      },
+      {
+        "Type": "Class TunnelsOfTheDamnedLootFilterDataAsset*",
+        "Name": "LootFilterDataAsset",
+        "Size": "0x8",
+        "Offset": "0x1e0"
+      }
+    ]
+  }
+}

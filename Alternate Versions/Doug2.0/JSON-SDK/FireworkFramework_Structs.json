@@ -1,0 +1,147 @@
+{
+  "WeightedFireworkVFXData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Class Object*",
+        "Name": "VFX",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "Sfx",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "SecondarySFX",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "Weight",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Struct LinearColor",
+        "Name": "AmbientLightColour",
+        "Size": "0x10",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "GeneratedFireworkData": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "Struct FireworkAmbientLightData",
+        "Name": "FireworkAmbientLightData",
+        "Size": "0x14",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "TArray<Struct FireworkExplosionData>",
+        "Name": "ExplosionData",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Name": "SfxPool",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "LaunchSfx",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "Class FireworkFeedbackDataAsset*",
+        "Name": "FireworkFeedbackData",
+        "Size": "0x8",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "FireworkExplosionData": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Class Object*",
+        "Name": "VFX",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "Sfx",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "SecondarySFX",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "FireworkAmbientLightData": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "FadeInTimer",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "FadeOutTimer",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "LifetimeTimer",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "Radius",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "AmbientIntensity",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WeightedProjectileMeshAnimationData": {
+    "ClassSize": "0x178",
+    "Attributes": [
+      {
+        "Type": "Struct RuntimeVectorCurve",
+        "Name": "AnimationCurve",
+        "Size": "0x170",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Weight",
+        "Size": "0x4",
+        "Offset": "0x170"
+      }
+    ]
+  }
+}

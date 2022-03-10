@@ -1,0 +1,137 @@
+{
+  "JsonObjectWrapper": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "TestTextObject": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "Struct FText",
+        "Name": "TestText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FText",
+        "Name": "TestTextExport",
+        "Size": "0x38",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "TestFloatObject": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "TestFloat1",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "TestFloat2",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "TestEnumObject": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "TestEnum",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestMessageTimespan": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Struct Timespan",
+        "Name": "Timespan",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestMessageDateTime": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Struct DateTime",
+        "Name": "DateTime",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestSerializationNestedObject": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct TestSerializationObject",
+        "Name": "NestedObject",
+        "Size": "0x28",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestSerializationObject": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "TestBool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "TestInt",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "TestString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "TestGuid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "TestMessageUInt64": {
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "TestMessageInt64": {
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "TestUStructMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "TestInt32MapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "TestInvalidStringMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "TestStringMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": []
+  }
+}

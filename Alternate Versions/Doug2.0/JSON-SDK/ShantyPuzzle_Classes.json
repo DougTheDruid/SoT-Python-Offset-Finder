@@ -1,0 +1,66 @@
+{
+  "ShantyPuzzleInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShantyPuzzleComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x110",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "RequiredShantyItemDesc",
+        "Size": "0x8",
+        "Offset": "0x2d8"
+      },
+      {
+        "Type": "TArray<Struct RequiredShantyItemDesc>",
+        "Name": "ShantyPuzzleInteractionZoneDefinitions",
+        "Size": "0x10",
+        "Offset": "0x2e0"
+      },
+      {
+        "Type": "bool",
+        "Name": "TimeLimited",
+        "Size": "0x1",
+        "Offset": "0x2f0"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShouldMoveEnsembleToActorPosition",
+        "Size": "0x1",
+        "Offset": "0x2f1"
+      },
+      {
+        "Type": "Struct GameTimeRange",
+        "Name": "ActiveTimeRange",
+        "Size": "0x10",
+        "Offset": "0x2f8"
+      },
+      {
+        "Type": "TArray<class ShantyPuzzleInteractionZones*>",
+        "Name": "ShantyPuzzleInteractionZones",
+        "Size": "0x10",
+        "Offset": "0x308"
+      },
+      {
+        "Type": "Class Ensemble*",
+        "Name": "CurrentlyPlayingShantyPuzzleEnsemble",
+        "Size": "0x8",
+        "Offset": "0x318"
+      }
+    ]
+  },
+  "ShantyPuzzleInteractionZoneComponent": {
+    "Super": "SphereComponent",
+    "FullSize": "0x5f0",
+    "InheritedSize": "0x5d0",
+    "ClassSize": "0x20",
+    "Attributes": []
+  }
+}

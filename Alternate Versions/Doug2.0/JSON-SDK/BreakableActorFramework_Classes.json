@@ -1,0 +1,234 @@
+{
+  "BreakableActorAudioComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1a8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "UseParentEmitter",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Name": "AudioPool",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "PlayMusicEvent",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "StopMusicEvent",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "PlayDamagedEvent",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "PlayDestroyedEvent",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      }
+    ]
+  },
+  "BreakableActorBase": {
+    "Super": "Actor",
+    "FullSize": "0x550",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x180",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "DespawnDelay",
+        "Size": "0x4",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class PrimitiveComponent*",
+        "Name": "ThirdPersonMesh",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class HealthComponent*",
+        "Name": "HealthComponent",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "Class BreakableActorAudioComponent*",
+        "Name": "AudioComponent",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "Class BreakableActorVfxComponent*",
+        "Name": "VFXComponent",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Type": "Class BreakableActorDynamicMaterialComponent*",
+        "Name": "DamageMaterialComponent",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "Class ActorDamageableComponent*",
+        "Name": "DamageableComponent",
+        "Size": "0x8",
+        "Offset": "0x440"
+      }
+    ]
+  },
+  "BreakableSarcophagus": {
+    "Super": "BreakableActorBase",
+    "FullSize": "0x550",
+    "InheritedSize": "0x550",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BreakableActorDynamicMaterialComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1f0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "MagicColourPropertyName",
+        "Size": "0x8",
+        "Offset": "0xcc"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "DamageLevelPropertyName",
+        "Size": "0x8",
+        "Offset": "0xd4"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "TimeBasedPropertyName",
+        "Size": "0x8",
+        "Offset": "0xdc"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "HitPositionPropertyName",
+        "Size": "0x8",
+        "Offset": "0xe4"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "CollapseStartTimePropertyName",
+        "Size": "0x8",
+        "Offset": "0xec"
+      },
+      {
+        "Type": "Class PrimitiveComponent*",
+        "Name": "TargetMesh",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "TArray<class DynamicMaterials*>",
+        "Name": "DynamicMaterials",
+        "Size": "0x10",
+        "Offset": "0x100"
+      },
+      {
+        "Type": "Class BreakableActorBase*",
+        "Name": "BreakableActor",
+        "Size": "0x8",
+        "Offset": "0x110"
+      }
+    ]
+  },
+  "BreakableActorItemSpawnComponent": {
+    "Super": "ItemSpawnComponent",
+    "FullSize": "0x4a0",
+    "InheritedSize": "0x430",
+    "ClassSize": "0x70",
+    "Attributes": []
+  },
+  "BreakableActorVfxComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Type": "Struct Color",
+        "Name": "VFXTintColour",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "DamagedParticleSystem",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "DestroyedParticleSystem",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "int",
+        "Name": "GlowMaterialIndex",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "GlowMaterialPropertyName",
+        "Size": "0x8",
+        "Offset": "0xe4"
+      },
+      {
+        "Type": "float",
+        "Name": "GlowMaterialScale",
+        "Size": "0x4",
+        "Offset": "0xec"
+      },
+      {
+        "Type": "float",
+        "Name": "GlowMaterialBias",
+        "Size": "0x4",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "float",
+        "Name": "GlowUpdateSpeed",
+        "Size": "0x4",
+        "Offset": "0xf4"
+      },
+      {
+        "Type": "Class BreakableActorBase*",
+        "Name": "BreakableActor",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "GlowMaterial",
+        "Size": "0x8",
+        "Offset": "0x100"
+      }
+    ]
+  }
+}

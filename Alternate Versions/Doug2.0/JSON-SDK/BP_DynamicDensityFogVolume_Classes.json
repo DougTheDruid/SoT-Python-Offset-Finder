@@ -1,0 +1,88 @@
+{
+  "BP_DynamicDensityFogVolume_C": {
+    "Super": "FogVolume",
+    "FullSize": "0x440",
+    "InheritedSize": "0x3e0",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "float",
+        "Name": "StateBlend_BlendAmount_F79089CA4C773743F03F4C978EB7C986",
+        "Size": "0x4",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "byte",
+        "Name": "StateBlend__Direction_F79089CA4C773743F03F4C978EB7C986",
+        "Size": "0x1",
+        "Offset": "0x3ec"
+      },
+      {
+        "Type": "Class TimelineComponent*",
+        "Name": "StateBlend",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "UpdateMaterial",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class CanvasRenderTarget2D*",
+        "Name": "Canvas",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "int",
+        "Name": "CurrentState",
+        "Size": "0x4",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "int",
+        "Name": "NextState",
+        "Size": "0x4",
+        "Offset": "0x40c"
+      },
+      {
+        "Type": "TArray<class StateTextures*>",
+        "Name": "StateTextures",
+        "Size": "0x10",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "int",
+        "Name": "Width",
+        "Size": "0x4",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "int",
+        "Name": "Height",
+        "Size": "0x4",
+        "Offset": "0x424"
+      },
+      {
+        "Type": "bool",
+        "Name": "UseStateParameters",
+        "Size": "0x1",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "TArray<Struct UCompanyServiceInterface>",
+        "Name": "StateParams",
+        "Size": "0x10",
+        "Offset": "0x430"
+      }
+    ]
+  }
+}

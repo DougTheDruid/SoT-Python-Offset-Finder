@@ -1,0 +1,44 @@
+{
+  "BP_fod_Wrecker_05_SnowBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_Wrecker_05_RoseBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_Wrecker_05_MoonBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_Wrecker_03_SnowBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_Wrecker_03_RoseBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_Wrecker_03_MoonBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "WeightedProbabilityRange": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "TArray<Float >",
+        "Name": "Weights",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WeightedProbabilityRangeOfRanges": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct WeightedProbabilityRangeOfRangesFloatPair>",
+        "Name": "SubRanges",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "WeightedProbabilityRangeOfRangesFloatPair": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "Min",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Max",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "OrientedPoint": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "Location",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Rotator",
+        "Name": "Rotation",
+        "Size": "0xc",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "RotationUpdateResult": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct Rotator",
+        "Name": "UpdatedRotation",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "SpinAngle",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "TiltAngle",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "TiltDirection",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "TimedBuffer": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "FixedStepInterpCurveVector2D": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct FixedStepInterpCurvePointVector2D>",
+        "Name": "Points",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "StepTime",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsLooped",
+        "Size": "0x1",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "FixedStepInterpCurvePointVector2D": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct Vector2D",
+        "Name": "OutVal",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector2D",
+        "Name": "Tangent",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "InertialSmoothedFloat": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "AccelerationMagnitude",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxSpeed",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "CurrentVelocity",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "CurrentValue",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "SpatialOffset": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "OffsetValue",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "OffsetMethod",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  }
+}

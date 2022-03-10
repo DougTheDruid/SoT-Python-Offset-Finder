@@ -1,0 +1,72 @@
+{
+  "RareGameEngine": {
+    "Super": "GameEngine",
+    "FullSize": "0xa40",
+    "InheritedSize": "0x9e8",
+    "ClassSize": "0x58",
+    "Attributes": []
+  },
+  "AssetReferencer": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Assetclass DidHitchOccurThisFrame>",
+        "Name": "AssetsToReference",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AudioHardwareDeviceService": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "HitchDiagnosisBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MemoryUsageVisualiserSettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct Activate>",
+        "Name": "VisualiserCategories",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "RareHUD": {
+    "Super": "HUD",
+    "FullSize": "0x4c8",
+    "InheritedSize": "0x4c8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StallDetector": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": []
+  },
+  "StaticMeshActorBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

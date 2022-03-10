@@ -1,0 +1,114 @@
+{
+  "SessionServiceLogUnsubscribe": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "SessionServiceLogSubscribe": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "SessionServiceLog": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "Category",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Data",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "InstanceId",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "double",
+        "Name": "TimeSeconds",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "byte",
+        "Name": "Verbosity",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "SessionServicePong": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "BuildDate",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DeviceName",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "InstanceId",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "InstanceName",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsConsoleBuild",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "PlatformName",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "SessionId",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "SessionName",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "SessionOwner",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Type": "bool",
+        "Name": "Standalone",
+        "Size": "0x1",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "SessionServicePing": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  }
+}

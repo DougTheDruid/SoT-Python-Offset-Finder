@@ -1,0 +1,29 @@
+{
+  "QuestVariableTradeRouteData": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "TradeRouteMapping": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct IslandSelectionType",
+        "Name": "StartIsland",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "class",
+        "Name": "DifficultyBand",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "TradeRouteReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  }
+}

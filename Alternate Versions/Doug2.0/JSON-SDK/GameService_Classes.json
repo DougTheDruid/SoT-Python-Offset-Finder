@@ -1,0 +1,37 @@
+{
+  "ServiceProviderGameState": {
+    "Super": "GameState",
+    "FullSize": "0x548",
+    "InheritedSize": "0x428",
+    "ClassSize": "0x120",
+    "Attributes": []
+  },
+  "GameServiceLifecycleInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameServiceMapFunctions": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameServiceProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameServiceTickInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

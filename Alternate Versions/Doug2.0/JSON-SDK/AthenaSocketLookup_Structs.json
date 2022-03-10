@@ -1,0 +1,45 @@
+{
+  "SocketPathNode": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "Name",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SocketPath": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct SocketId>",
+        "Name": "Nodes",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SocketId": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct SocketPath",
+        "Name": "path",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "Name",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "SocketLookupCache": {
+    "ClassSize": "0x50",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "DebugMenuButtonShortcut": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "DisplayName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ConsoleCommand",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "TArray<Struct ConsoleCommand>",
+        "Name": "Buttons",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "float",
+        "Name": "RequiredHoldTime",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "bool",
+        "Name": "AvailableInShippingBuilds",
+        "Size": "0x1",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "DebugMenuDataAssetEntry": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "MenuPath",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DisplayName",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ConsoleCommand",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "bool",
+        "Name": "CloseMenuWhenExecuted",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "bool",
+        "Name": "AvailableInShippingBuilds",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Type": "bool",
+        "Name": "AddToCommonlyUsedMenu",
+        "Size": "0x1",
+        "Offset": "0x32"
+      }
+    ]
+  },
+  "DebugMenuUserItem": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "path",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Command",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "DebugErrorHappeningEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "DebugMenuOptionExecutedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "DebugMenuItemName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ConsoleCommand",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  }
+}

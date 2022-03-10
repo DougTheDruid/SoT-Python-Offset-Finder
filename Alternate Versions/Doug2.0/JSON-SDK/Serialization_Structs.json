@@ -1,0 +1,170 @@
+{
+  "StructSerializerTestStruct": {
+    "ClassSize": "0xc8",
+    "Attributes": [
+      {
+        "Type": "Struct StructSerializerNumericTestStruct",
+        "Name": "Numerics",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct StructSerializerBooleanTestStruct",
+        "Name": "Booleans",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct StructSerializerObjectTestStruct",
+        "Name": "Objects",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Struct StructSerializerBuiltinTestStruct",
+        "Name": "Builtins",
+        "Size": "0x40",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct StructSerializerArrayTestStruct",
+        "Name": "Arrays",
+        "Size": "0x40",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "StructSerializerArrayTestStruct": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "TArray<Int >",
+        "Name": "Int32Array",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "StaticSingleElement",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "int",
+        "Name": "StaticInt32Array",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "float",
+        "Name": "StaticFloatArray",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "TArray<Struct StaticFloatArray>",
+        "Name": "VectorArray",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StructSerializerBuiltinTestStruct": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "Name",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "String",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Struct Rotator",
+        "Name": "Rotator",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Vector",
+        "Size": "0xc",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "StructSerializerObjectTestStruct": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "Class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "ObjectPtr",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StructSerializerBooleanTestStruct": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "BoolFalse",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "BoolTrue",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "StructSerializerNumericTestStruct": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "Int32",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "byte",
+        "Name": "UInt8",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "Float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "double",
+        "Name": "Double",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "EndPlayHandler": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "LinkEndpointIdUtilities": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LinkEndpointInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LinkerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Type": "TArray<class EndPlayHandlers*>",
+        "Name": "EndPlayHandlers",
+        "Size": "0x10",
+        "Offset": "0x190"
+      }
+    ]
+  },
+  "LinkerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

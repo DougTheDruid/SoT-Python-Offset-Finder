@@ -1,0 +1,16 @@
+{
+  "BP_PetAIController_C": {
+    "Super": "PetAIController",
+    "FullSize": "0x9e8",
+    "InheritedSize": "0x9e0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x9e0"
+      }
+    ]
+  }
+}

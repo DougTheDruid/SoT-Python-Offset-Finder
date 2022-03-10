@@ -1,0 +1,34 @@
+{
+  "BP_riddle_trigger_C": {
+    "Super": "Actor",
+    "FullSize": "0x3ec",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Shockwave",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "DynamicMaterial",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "float",
+        "Name": "Duration",
+        "Size": "0x4",
+        "Offset": "0x3e8"
+      }
+    ]
+  }
+}

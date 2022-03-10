@@ -1,0 +1,272 @@
+{
+  "MemoryVisualiserCategory": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "CategoryName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct MemoryVisualiserStat>",
+        "Name": "CategoryStats",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "TArray<Struct MemoryVisualiserClass>",
+        "Name": "CategoryClasses",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "bool",
+        "Name": "CollectOnServer",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "XboxOneBudgetMB",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "float",
+        "Name": "XboxOneSBudgetMB",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "XboxOneXBudgetMB",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "float",
+        "Name": "PCLowSpecBudgetMB",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "float",
+        "Name": "PCMidSpecBudgetMB",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "float",
+        "Name": "PCHighSpecBudgetMB",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "float",
+        "Name": "PCUltraSpecBudgetMB",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Type": "float",
+        "Name": "MemoryUsageMB",
+        "Size": "0x4",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "MemoryVisualiserClass": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "ClassType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "MemoryGatheringMode",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DisplayName",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "MemoryUsageMB",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "MemoryVisualiserStat": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "StatName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DisplayName",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "MemoryUsageMB",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "MemoryCommonData": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "mUsedPhysicalMB",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "mUsedPhysicalPercentage",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "mAvailablePhysicalMB",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "mAvailablePhysicalPercentage",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "mOOMBackupPoolSize",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "mExecutableSize",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "float",
+        "Name": "mConfigCacheMemoryUsage",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "mFNameTableMemoryUsage",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Type": "float",
+        "Name": "mAssetRegistrySize",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "float",
+        "Name": "mGCWorkingMemoryPoolSizeMB",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Type": "float",
+        "Name": "mGCAllocated",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "float",
+        "Name": "mObjectsArraySizeMB",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "int",
+        "Name": "mMaxObjectsAllowed",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "int",
+        "Name": "mNumPermanentObjects",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "int",
+        "Name": "mNumTransientObjects",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "int",
+        "Name": "mUnsetSlotCound",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "int",
+        "Name": "mNumClusters",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "int",
+        "Name": "mNumClusteredObjects",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "int",
+        "Name": "mMaxClusterSize",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "StaticMeshComponentList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<class Components*>",
+        "Name": "Components",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StaticMeshActorList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<class Actors*>",
+        "Name": "Actors",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

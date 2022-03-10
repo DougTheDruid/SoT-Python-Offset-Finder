@@ -1,0 +1,22 @@
+{
+  "BP_WoodPlankProxy_C": {
+    "Super": "StaticMeshItemProxy",
+    "FullSize": "0x638",
+    "InheritedSize": "0x628",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class TrackedOwnerComponent*",
+        "Name": "TrackedOwner",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Type": "Class InteractableComponent*",
+        "Name": "Interactable",
+        "Size": "0x8",
+        "Offset": "0x630"
+      }
+    ]
+  }
+}

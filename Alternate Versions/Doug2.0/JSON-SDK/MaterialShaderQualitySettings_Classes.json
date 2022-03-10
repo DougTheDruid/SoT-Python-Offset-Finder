@@ -1,0 +1,23 @@
+{
+  "MaterialShaderQualitySettings": {
+    "Super": "Object",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": []
+  },
+  "ShaderPlatformQualitySettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct MaterialQualityOverrides",
+        "Name": "QualityOverrides",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
+  }
+}

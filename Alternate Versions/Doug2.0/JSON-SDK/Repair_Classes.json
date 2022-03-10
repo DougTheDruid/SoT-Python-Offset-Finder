@@ -1,0 +1,37 @@
+{
+  "RepairTypeId": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct FText",
+        "Name": "DisplayName",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "RepairableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RepairingInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WoodRepairTypeId": {
+    "Super": "RepairTypeId",
+    "FullSize": "0x60",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

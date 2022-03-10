@@ -1,0 +1,88 @@
+{
+  "BP_EyeOfReach_C": {
+    "Super": "ProjectileWeapon",
+    "FullSize": "0xac0",
+    "InheritedSize": "0xa60",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0xa60"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Glint",
+        "Size": "0x8",
+        "Offset": "0xa68"
+      },
+      {
+        "Type": "Class PostProcessComponent*",
+        "Name": "PostProcess",
+        "Size": "0x8",
+        "Offset": "0xa70"
+      },
+      {
+        "Type": "byte",
+        "Name": "sfx relationship",
+        "Size": "0x1",
+        "Offset": "0xa78"
+      },
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "DynamicMaterial",
+        "Size": "0x8",
+        "Offset": "0xa80"
+      },
+      {
+        "Type": "bool",
+        "Name": "TurningOn",
+        "Size": "0x1",
+        "Offset": "0xa88"
+      },
+      {
+        "Type": "float",
+        "Name": "BlurTime",
+        "Size": "0x4",
+        "Offset": "0xa8c"
+      },
+      {
+        "Type": "float",
+        "Name": "BlurInDuration",
+        "Size": "0x4",
+        "Offset": "0xa90"
+      },
+      {
+        "Type": "float",
+        "Name": "BlurOutDuration",
+        "Size": "0x4",
+        "Offset": "0xa94"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "BlurCurve",
+        "Size": "0x8",
+        "Offset": "0xa98"
+      },
+      {
+        "Type": "Class Texture2D*",
+        "Name": "LensNormal",
+        "Size": "0x8",
+        "Offset": "0xaa0"
+      },
+      {
+        "Type": "Class Texture2D*",
+        "Name": "LensMask",
+        "Size": "0x8",
+        "Offset": "0xaa8"
+      },
+      {
+        "Type": "Struct LinearColor",
+        "Name": "LensTint",
+        "Size": "0x10",
+        "Offset": "0xab0"
+      }
+    ]
+  }
+}

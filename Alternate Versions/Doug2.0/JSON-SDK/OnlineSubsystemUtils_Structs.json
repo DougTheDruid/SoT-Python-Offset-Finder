@@ -1,0 +1,52 @@
+{
+  "BlueprintSessionResult": {
+    "ClassSize": "0xe0",
+    "Attributes": []
+  },
+  "PartyReservation": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "TeamNum",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct UniqueNetIdRepl",
+        "Name": "PartyLeader",
+        "Size": "0x18",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "TArray<Struct PlayerReservation>",
+        "Name": "PartyMembers",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "PlayerReservation": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Struct UniqueNetIdRepl",
+        "Name": "UniqueId",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ValidationStr",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "ElapsedTime",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
+  }
+}

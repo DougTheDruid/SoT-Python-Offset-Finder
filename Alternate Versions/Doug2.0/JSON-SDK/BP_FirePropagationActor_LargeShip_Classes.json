@@ -1,0 +1,22 @@
+{
+  "BP_FirePropagationActor_LargeShip_C": {
+    "Super": "Actor",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class ShipFirePropagationComponent*",
+        "Name": "ShipFirePropagation",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "wsp_sky_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3e4",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "Atmospheric Cloud Pressure",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "float",
+        "Name": "ElapsedTime",
+        "Size": "0x4",
+        "Offset": "0x3dc"
+      },
+      {
+        "Type": "float",
+        "Name": "Interval",
+        "Size": "0x4",
+        "Offset": "0x3e0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "DestroyActorData": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "ActorNetID",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DestroyAllExistingActorsByClassData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Str None>",
+        "Name": "ActorClassNames",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

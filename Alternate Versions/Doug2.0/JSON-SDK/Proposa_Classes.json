@@ -1,0 +1,51 @@
+{
+  "Proposal_ShoresOfGold_Chapter2_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_SL_APL_Chapter2_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_SL_APL_Chapter3_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_SL_DB_Chapter2_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_SL_DB_Chapter3_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_SL_DB_Chapter4_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_SL_DB_Chapter5_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

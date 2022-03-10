@@ -1,0 +1,86 @@
+{
+  "RegionalAssetCacheInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RegionLookupInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LevelAssetCachingService": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "CurrentRegion",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "RegionalAssetCache": {
+    "Super": "Object",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x98",
+    "Attributes": []
+  },
+  "RegionalAssetListDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct ListMapping>",
+        "Name": "RegionAssets",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "RegionalAssetListSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "RegionalAssetListWorldSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "RegionLookupGeneratedGrid": {
+    "Super": "Object",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Type": "Struct WorldRegionSetup",
+        "Name": "WorldSetup",
+        "Size": "0x28",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "RegionLookupSeaId": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": []
+  }
+}

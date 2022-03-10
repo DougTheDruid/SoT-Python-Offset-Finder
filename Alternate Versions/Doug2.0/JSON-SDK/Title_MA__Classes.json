@@ -1,0 +1,58 @@
+{
+  "Title_MA_MerchantofForsakenFlora_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_MerchantofForsakenRum_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_MerchantofForsakenSilk_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_MerchantoftheFloraTrade_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_MerchantoftheSilkenTrade_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_MerchantRumRunner_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_MerchantAdventurer_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_GildedMerchant_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

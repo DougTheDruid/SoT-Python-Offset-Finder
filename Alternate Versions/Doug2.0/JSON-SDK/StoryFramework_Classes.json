@@ -1,0 +1,127 @@
+{
+  "IsStoryActiveNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "NeedsAllStories",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StoryNPCDialogConditionalContext": {
+    "Super": "NPCDialogConditionalContext",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Name None>",
+        "Name": "StoryNames",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "StoryNPCDialogOverrideType": {
+    "Super": "NPCDialogOverrideType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StoryServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StoryService": {
+    "Super": "Actor",
+    "FullSize": "0x4b0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct StorySpawnedActorsAssetList>",
+        "Name": "Stories",
+        "Size": "0x10",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "TArray<Struct Stories>",
+        "Name": "ActiveStories",
+        "Size": "0x10",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "StorySpawnedActorsCollectionDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<class StorySpawnedActorsAssetList*>",
+        "Name": "StorySpawnedActorsAssetList",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "StorySpawnedActorsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct Asset>",
+        "Name": "StorySpawnedActorsList",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "StorySpawnedActorsServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StorySpawnedActorsService": {
+    "Super": "Actor",
+    "FullSize": "0x4b8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Type": "Class StorySpawnedActorsCollectionDataAsset*",
+        "Name": "Asset",
+        "Size": "0x8",
+        "Offset": "0x428"
+      }
+    ]
+  },
+  "StorySpawnedActorsSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "StorySpawnActorsCollectionDataAssetLocation",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  }
+}

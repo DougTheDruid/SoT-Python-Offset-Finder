@@ -1,0 +1,44 @@
+{
+  "BP_AnimationStateID_Dead_C": {
+    "Super": "AnimationStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_AnimationStateID_Reviving_C": {
+    "Super": "AnimationStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_AnimationStateID_Sitting_C": {
+    "Super": "AnimationStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_AnimationStateID_UndoRepair_C": {
+    "Super": "AnimationStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_AnimationStateID_DeadFirstPerson_C": {
+    "Super": "AnimationStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_AnimationStateID_Revived_C": {
+    "Super": "AnimationStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

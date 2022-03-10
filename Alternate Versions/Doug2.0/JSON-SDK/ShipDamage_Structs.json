@@ -1,0 +1,202 @@
+{
+  "ShipDamageParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct ShipPartLevelsOfDamage>",
+        "Name": "DamageParams",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShipPartLevelsOfDamage": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct DistanceAndLevelOfDamage>",
+        "Name": "DamagePerDistance",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "DistanceAndLevelOfDamage": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "DistanceLimit",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "LevelOfDamage",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "HullDamagePersistenceModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct HullDamageZoneInfo>",
+        "Name": "DamageZones",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "HullDamageZoneInfo": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "DamageZoneId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "DamageLevel",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "int",
+        "Name": "RepairedDamageLevel",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "byte",
+        "Name": "RepairableState",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "TArray<Struct HullDamageHit>",
+        "Name": "ExternalHitList",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "HullDamageHit": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "HitPosition",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "HitNormal",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "HitStrength",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "int",
+        "Name": "HitLevel",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasDecal",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "EventShipDamageApplied": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Ship",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "DamagedShipPartIdentifier",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "int",
+        "Name": "NewDamageLevel",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct ImpactDamageEvent",
+        "Name": "ImpactDamageEvent",
+        "Size": "0x58",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EventShipDamaged": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Ship",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct ImpactDamageEvent",
+        "Name": "ImpactDamageEvent",
+        "Size": "0x58",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "DamageZoneDamageLevelChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "DamageZone",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "DamageLevel",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AppliedDamageToShipEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "ShipType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "Ship",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "BP_fod_AncientScale_03_SapphireRaw_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_AncientScale_03_SapphireUndercooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_AncientScale_03_SapphireCooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_AncientScale_03_SapphireBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

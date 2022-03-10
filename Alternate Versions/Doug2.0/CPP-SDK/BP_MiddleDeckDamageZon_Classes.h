@@ -1,0 +1,21 @@
+namespace DougsSDKDumper
+{
+//-----
+// Classes
+//-----
+
+// Size 0x0
+class BP_MiddleDeckDamageZone_01_C: public BP_BaseInternalDamageZone_C
+{
+public:
+};
+
+
+// Size 0x0
+class BP_MiddleDeckDamageZone_00_C: public BP_BaseInternalDamageZone_C
+{
+public:
+};
+
+
+}

@@ -1,0 +1,25 @@
+{
+  "ObjectMessagingDispatcher": {
+    "ClassSize": "0xa0",
+    "Attributes": []
+  },
+  "ObjectMessagingDispatcherHandle": {
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "ObjectMessagingHandle": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "Class Struct*",
+        "Name": "EventType",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ObjectMessagingObjectScoper": {
+    "ClassSize": "0x50",
+    "Attributes": []
+  }
+}

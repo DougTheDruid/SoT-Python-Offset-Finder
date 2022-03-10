@@ -1,0 +1,117 @@
+{
+  "MerchantContractItemDesc": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "AllocatedCrate",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct ItemAndReward>",
+        "Name": "ItemData",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "class",
+        "Name": "FaunaSpecies",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "class",
+        "Name": "FaunaBreed",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "ItemAndReward": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "ItemDesc",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct RewardId",
+        "Name": "HandInOnTimeRewardId",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "MerchantContractDeliveryRequest": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "Id",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct MerchantContractItemDesc",
+        "Name": "ItemDesc",
+        "Size": "0x28",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "int",
+        "Name": "NumToAllocate",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "int",
+        "Name": "NumToCollect",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "int",
+        "Name": "NumToDeliver",
+        "Size": "0x4",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MerchantContract": {
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct MerchantMapLayoutItem>",
+        "Name": "DeliveryRequests",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "PlayerMerchantContract": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "Id",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "IslandName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "TArray<Struct IslandName>",
+        "Name": "Requests",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  }
+}

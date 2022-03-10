@@ -1,0 +1,159 @@
+{
+  "CommoditySelectionType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "CommodityType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ActiveNPCDemands": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "TArray<UInt32 None>",
+        "Name": "NPCIdHashes",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct ActiveCommodityDemands>",
+        "Name": "NPCDemands",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "ActiveCommodityDemands": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "TArray<UInt32 >",
+        "Name": "CommodityIdHashes",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Byte CommodityIdHashes>",
+        "Name": "CommodityDemands",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CommodityDescWithRedeemId": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct CommoditySelectionType",
+        "Name": "RedeemId",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "class",
+        "Name": "RedeemItemDesc",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EntitlementToRedeemItems": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "RequiredEntitlement",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct RequiredEntitlement>",
+        "Name": "RedeemItems",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CommodityTypeDataEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "CommodityType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "DisplayName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventCommodityCrateRedeemed": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "CommodityRedemptionTrackingModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "NPCName",
+        "Size": "0x1",
+        "Offset": "0x2"
+      }
+    ]
+  },
+  "CommodityTrackingModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "ItemOfferId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "NPCName",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "TrackCommodityPurchaseOnServerRpc": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Class Object*",
+        "Name": "CommodityDemandStorageObject",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "NPCName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "ItemOfferId",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ItemClientId",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  }
+}

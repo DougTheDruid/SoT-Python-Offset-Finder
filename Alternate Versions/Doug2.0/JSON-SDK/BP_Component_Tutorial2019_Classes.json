@@ -1,0 +1,58 @@
+{
+  "BP_Component_Tutorial2019_C": {
+    "Super": "Tutorial2019ContextualDelegatingComponent",
+    "FullSize": "0x178",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "TArray<Assetclass >",
+        "Name": "GoldHoarders",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "TArray<Struct GoldHoarders>",
+        "Name": "GoldHoarderLocations",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_CTPurchaseVoyageSequence_C*",
+        "Name": "GoToVendorPromptObject",
+        "Size": "0x8",
+        "Offset": "0x100"
+      },
+      {
+        "Type": "TArray<Assetclass NPCBlacklist>",
+        "Name": "NPCBlacklist",
+        "Size": "0x10",
+        "Offset": "0x108"
+      },
+      {
+        "Type": "TArray<Struct FName>",
+        "Name": "OutpostNames",
+        "Size": "0x10",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "GoldHoarderOnRepPrerequiste",
+        "Size": "0x1",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_PlayerFinishedSpawning",
+        "Size": "0x48",
+        "Offset": "0x130"
+      }
+    ]
+  }
+}

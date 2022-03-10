@@ -1,0 +1,16 @@
+{
+  "CustomMysteriousNotesInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CustomMysteriousNotesService": {
+    "Super": "Actor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x58",
+    "Attributes": []
+  }
+}

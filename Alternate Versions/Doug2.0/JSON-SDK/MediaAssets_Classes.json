@@ -1,0 +1,80 @@
+{
+  "MediaPlayer": {
+    "Super": "Object",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "Looping",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "URL",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "MediaSoundWave": {
+    "Super": "SoundWave",
+    "FullSize": "0x278",
+    "InheritedSize": "0x218",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "AudioTrackIndex",
+        "Size": "0x4",
+        "Offset": "0x218"
+      },
+      {
+        "Type": "Class MediaPlayer*",
+        "Name": "MediaPlayer",
+        "Size": "0x8",
+        "Offset": "0x220"
+      }
+    ]
+  },
+  "MediaTexture": {
+    "Super": "Texture",
+    "FullSize": "0x1a8",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "AddressX",
+        "Size": "0x1",
+        "Offset": "0x138"
+      },
+      {
+        "Type": "byte",
+        "Name": "AddressY",
+        "Size": "0x1",
+        "Offset": "0x139"
+      },
+      {
+        "Type": "Struct LinearColor",
+        "Name": "ClearColor",
+        "Size": "0x10",
+        "Offset": "0x13c"
+      },
+      {
+        "Type": "int",
+        "Name": "VideoTrackIndex",
+        "Size": "0x4",
+        "Offset": "0x14c"
+      },
+      {
+        "Type": "Class MediaPlayer*",
+        "Name": "MediaPlayer",
+        "Size": "0x8",
+        "Offset": "0x150"
+      }
+    ]
+  }
+}

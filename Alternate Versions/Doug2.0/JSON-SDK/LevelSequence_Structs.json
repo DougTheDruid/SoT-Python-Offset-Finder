@@ -1,0 +1,87 @@
+{
+  "LevelSequenceObject": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "ComponentName",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "LevelSequenceObjectReferenceMap": {
+    "ClassSize": "0xa0",
+    "Attributes": []
+  },
+  "LevelSequenceObjectReference": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "LevelSequencePlayerSnapshot": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct FText",
+        "Name": "MasterName",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "MasterTime",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Struct FText",
+        "Name": "CurrentShotName",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "float",
+        "Name": "CurrentShotLocalTime",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Type": "Class CameraComponent*",
+        "Name": "CameraComponent",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "Struct LevelSequenceSnapshotSettings",
+        "Name": "Settings",
+        "Size": "0x8",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "LevelSequenceSnapshotSettings": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "ZeroPadAmount",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "FrameRate",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "LevelSequencePlaybackSettings": {
+    "ClassSize": "0x28",
+    "Attributes": []
+  },
+  "BoundActorProxy": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  }
+}

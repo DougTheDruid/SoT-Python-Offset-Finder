@@ -1,0 +1,154 @@
+{
+  "BP_PromptActor_VisitCompanyShop_GH_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x498",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_VisitCompanyShop_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "class",
+        "Name": "Company",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "class",
+        "Name": "AccessKey",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt",
+        "Size": "0x68",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "class",
+        "Name": "CompanyRankDesc",
+        "Size": "0x8",
+        "Offset": "0x490"
+      }
+    ]
+  },
+  "BP_PromptActor_VisitCompanyShop_MA_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x498",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_VisitCompanyShop_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "class",
+        "Name": "Company",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "class",
+        "Name": "AccessKey",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt",
+        "Size": "0x68",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "class",
+        "Name": "CompanyRankDesc",
+        "Size": "0x8",
+        "Offset": "0x490"
+      }
+    ]
+  },
+  "BP_PromptActor_VisitCompanyShop_OOS_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x498",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_VisitCompanyShop_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "class",
+        "Name": "Company",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "class",
+        "Name": "AccessKey",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt",
+        "Size": "0x68",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "class",
+        "Name": "CompanyRankDesc",
+        "Size": "0x8",
+        "Offset": "0x490"
+      }
+    ]
+  },
+  "BP_PromptActor_VisitSeapost_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_VisitSeapost_C*",
+        "Name": "Coordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      }
+    ]
+  }
+}

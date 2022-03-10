@@ -1,0 +1,16 @@
+{
+  "BP_WaterReflection_C": {
+    "Super": "Actor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class PlanarReflectionPlaneComponent*",
+        "Name": "PlanarReflectionPlane",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "BP_CharacterVFXComponent_C": {
+    "Super": "CharacterVfxComponent",
+    "FullSize": "0x330",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x250",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "EnterWaterEvent",
+        "Size": "0x48",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "UnderwaterStateChanged",
+        "Size": "0x48",
+        "Offset": "0x130"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "Splash Emitter",
+        "Size": "0x8",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "Class ParticleSystem*",
+        "Name": "Large Foot Splash",
+        "Size": "0x8",
+        "Offset": "0x180"
+      },
+      {
+        "Type": "Class ParticleSystem*",
+        "Name": "Small Foot Splash",
+        "Size": "0x8",
+        "Offset": "0x188"
+      },
+      {
+        "Type": "float",
+        "Name": "Threshold for run",
+        "Size": "0x4",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "float",
+        "Name": "Threshold for large foot impact",
+        "Size": "0x4",
+        "Offset": "0x194"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "FallingIntoWaterHandle",
+        "Size": "0x48",
+        "Offset": "0x198"
+      },
+      {
+        "Type": "Class ParticleSystem*",
+        "Name": "Large Falling Splash",
+        "Size": "0x8",
+        "Offset": "0x1e0"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "PlayerViewUnderWaterHandle",
+        "Size": "0x48",
+        "Offset": "0x1e8"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "EnterShipEventHandle",
+        "Size": "0x48",
+        "Offset": "0x230"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "ExitShipEventHandle",
+        "Size": "0x48",
+        "Offset": "0x278"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "WindOffsetFromShip",
+        "Size": "0xc",
+        "Offset": "0x2c0"
+      },
+      {
+        "Type": "bool",
+        "Name": "DEBUG_WindActive",
+        "Size": "0x1",
+        "Offset": "0x2cc"
+      },
+      {
+        "Type": "float",
+        "Name": "DEBUG_WindToggleTimer",
+        "Size": "0x4",
+        "Offset": "0x2d0"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "WindDirectionChangedHandle",
+        "Size": "0x48",
+        "Offset": "0x2d8"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_particle_underwater_ambient",
+        "Size": "0x8",
+        "Offset": "0x320"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_player_underwater_ambient",
+        "Size": "0x8",
+        "Offset": "0x328"
+      }
+    ]
+  }
+}

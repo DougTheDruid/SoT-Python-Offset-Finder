@@ -1,0 +1,22 @@
+{
+  "BP_Rudder_SmallShip_C": {
+    "Super": "Rudder",
+    "FullSize": "0x458",
+    "InheritedSize": "0x448",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "Root",
+        "Size": "0x8",
+        "Offset": "0x450"
+      }
+    ]
+  }
+}

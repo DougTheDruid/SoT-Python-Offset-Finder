@@ -1,0 +1,82 @@
+{
+  "BP_PromptActor_RepairShip_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_RepairShip_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      }
+    ]
+  },
+  "BP_PromptActor_RepairShipCapstan_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_RepairShipCapstan_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      }
+    ]
+  },
+  "BP_PromptActor_RepairShipMast_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_RepairShipMast_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      }
+    ]
+  },
+  "BP_PromptActor_RepairShipWheel_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_RepairShipWheel_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      }
+    ]
+  }
+}

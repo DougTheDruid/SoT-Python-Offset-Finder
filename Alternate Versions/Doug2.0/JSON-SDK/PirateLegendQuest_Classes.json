@@ -1,0 +1,88 @@
+{
+  "VeilOfTheAncients": {
+    "Super": "InteractableBase",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "NumberOfGems",
+        "Size": "0x4",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class LockComponent*",
+        "Name": "LockComponent",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent",
+        "Size": "0x8",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "VeilService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x160",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Type": "Class World*",
+        "Name": "World",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "Class GameState*",
+        "Name": "GameState",
+        "Size": "0x8",
+        "Offset": "0x88"
+      },
+      {
+        "Type": "Class VeilOfTheAncients*",
+        "Name": "TrackedVeil",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Type": "Class Ship*",
+        "Name": "Ship",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "GetVeilOfTheAncientsStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x90",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "VeilOfTheAncientsServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GetVeilOfTheAncientsStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct QuestVariableActor",
+        "Name": "QuestVeil",
+        "Size": "0x20",
+        "Offset": "0x80"
+      }
+    ]
+  }
+}

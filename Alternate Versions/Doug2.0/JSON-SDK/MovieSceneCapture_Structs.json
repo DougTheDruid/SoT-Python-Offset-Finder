@@ -1,0 +1,135 @@
+{
+  "CaptureProtocolID": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "Identifier",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MovieSceneCaptureSettings": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct DirectoryPath",
+        "Name": "OutputDirectory",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCreateTemporaryCopiesOfLevels",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "class",
+        "Name": "GameModeOverride",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "OutputFormat",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverwriteExisting",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "bool",
+        "Name": "bUseRelativeFrameNumbers",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Type": "int",
+        "Name": "HandleFrames",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "byte",
+        "Name": "ZeroPadFrameNumbers",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "int",
+        "Name": "FrameRate",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "Struct CaptureResolution",
+        "Name": "Resolution",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "bool",
+        "Name": "bEnableTextureStreaming",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCinematicEngineScalability",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCinematicMode",
+        "Size": "0x1",
+        "Offset": "0x4a"
+      },
+      {
+        "Type": "bool",
+        "Name": "bAllowMovement",
+        "Size": "0x1",
+        "Offset": "0x4b"
+      },
+      {
+        "Type": "bool",
+        "Name": "bAllowTurning",
+        "Size": "0x1",
+        "Offset": "0x4c"
+      },
+      {
+        "Type": "bool",
+        "Name": "bShowPlayer",
+        "Size": "0x1",
+        "Offset": "0x4d"
+      },
+      {
+        "Type": "bool",
+        "Name": "bShowHUD",
+        "Size": "0x1",
+        "Offset": "0x4e"
+      }
+    ]
+  },
+  "CaptureResolution": {
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "CompositionGraphCapturePasses": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Str None>",
+        "Name": "Value",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

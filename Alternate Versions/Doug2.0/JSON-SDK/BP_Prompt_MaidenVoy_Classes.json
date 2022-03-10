@@ -1,0 +1,264 @@
+{
+  "BP_Prompt_MaidenVoyage_FishingRodTutorial_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x628",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x510",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_RodWielded",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_FishBattling",
+        "Size": "0x1",
+        "Offset": "0x121"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_CastRod",
+        "Size": "0x1",
+        "Offset": "0x122"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_CaughtFish",
+        "Size": "0x1",
+        "Offset": "0x123"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_DockWithCannon",
+        "Size": "0x1",
+        "Offset": "0x124"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_BattleFish",
+        "Size": "0x1",
+        "Offset": "0x125"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_FishTired",
+        "Size": "0x1",
+        "Offset": "0x126"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_ReelingWhileBattling",
+        "Size": "0x1",
+        "Offset": "0x127"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_CastRod",
+        "Size": "0x68",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_WaitForBite",
+        "Size": "0x68",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_BattleFish",
+        "Size": "0x68",
+        "Offset": "0x1f8"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_ReelFish",
+        "Size": "0x68",
+        "Offset": "0x260"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_WieldRod",
+        "Size": "0x48",
+        "Offset": "0x2c8"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_CastRod",
+        "Size": "0x48",
+        "Offset": "0x310"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_FishBite",
+        "Size": "0x48",
+        "Offset": "0x358"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_FishCaught",
+        "Size": "0x48",
+        "Offset": "0x3a0"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_BattleFish",
+        "Size": "0x48",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "class",
+        "Name": "RequiredInput",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Type": "class",
+        "Name": "WieldedItemType",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "class",
+        "Name": "Sword_WieldedItemType",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_SnapLine",
+        "Size": "0x68",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_ReelingWhileBattling",
+        "Size": "0x48",
+        "Offset": "0x4b0"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_StowRod",
+        "Size": "0x48",
+        "Offset": "0x4f8"
+      },
+      {
+        "Type": "bool",
+        "Name": "FishStartedBattling",
+        "Size": "0x1",
+        "Offset": "0x540"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_FishEscaped",
+        "Size": "0x48",
+        "Offset": "0x548"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_Completed",
+        "Size": "0x1",
+        "Offset": "0x590"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_PlayerDeath",
+        "Size": "0x48",
+        "Offset": "0x598"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_DockToObject",
+        "Size": "0x48",
+        "Offset": "0x5e0"
+      }
+    ]
+  },
+  "BP_Prompt_MaidenVoyage_RowboatTutorial_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x3aa",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x292",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_SatInRowboat",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_RowTheBoat",
+        "Size": "0x68",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_UseRowboat",
+        "Size": "0x48",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_LeaveRowboat",
+        "Size": "0x1",
+        "Offset": "0x1d8"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_LeaveRowboat",
+        "Size": "0x48",
+        "Offset": "0x1e0"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_ReleaseOars",
+        "Size": "0x68",
+        "Offset": "0x228"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_Brake",
+        "Size": "0x68",
+        "Offset": "0x290"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_OneAtATime",
+        "Size": "0x68",
+        "Offset": "0x2f8"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_StrokeEnded",
+        "Size": "0x48",
+        "Offset": "0x360"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_StrokeCompleted",
+        "Size": "0x1",
+        "Offset": "0x3a8"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_Completed",
+        "Size": "0x1",
+        "Offset": "0x3a9"
+      }
+    ]
+  }
+}

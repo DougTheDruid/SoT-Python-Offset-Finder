@@ -1,0 +1,31 @@
+{
+  "DebugTeleportDestinationEntry": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "DebugMenuSubPath",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Destination",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "AssociatedCrew",
+        "Size": "0x10",
+        "Offset": "0x1c"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "Id",
+        "Size": "0x10",
+        "Offset": "0x2c"
+      }
+    ]
+  }
+}

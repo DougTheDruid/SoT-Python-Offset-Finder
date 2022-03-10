@@ -1,0 +1,22 @@
+{
+  "BP_TornMap_Wieldable_C": {
+    "Super": "TornMap",
+    "FullSize": "0x900",
+    "InheritedSize": "0x8f0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class UserSettingsMapMarkProviderComponent*",
+        "Name": "UserSettingsMapMarkProvider",
+        "Size": "0x8",
+        "Offset": "0x8f0"
+      },
+      {
+        "Type": "Class IslandServiceIslandTextureProviderComponent*",
+        "Name": "IslandServiceIslandTextureProvider",
+        "Size": "0x8",
+        "Offset": "0x8f8"
+      }
+    ]
+  }
+}

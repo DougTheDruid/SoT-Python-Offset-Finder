@@ -1,0 +1,37 @@
+{
+  "GDTCustomViewNames": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "GameView1",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "GameView2",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "GameView3",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "GameView4",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "GameView5",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  }
+}

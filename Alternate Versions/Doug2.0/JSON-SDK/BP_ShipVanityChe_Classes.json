@@ -1,0 +1,16 @@
+{
+  "BP_ShipVanityChest_C": {
+    "Super": "PossessionsChest",
+    "FullSize": "0x570",
+    "InheritedSize": "0x568",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Size": "0x8",
+        "Offset": "0x568"
+      }
+    ]
+  }
+}

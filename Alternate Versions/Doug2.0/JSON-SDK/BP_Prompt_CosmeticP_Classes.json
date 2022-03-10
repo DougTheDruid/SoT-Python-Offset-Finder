@@ -1,0 +1,106 @@
+{
+  "BP_Prompt_CosmeticPurchased_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x300",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x1e8",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OfferPurchasedEvent",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_ShopClosedEvent",
+        "Size": "0x48",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_PlayerEntitlementUpdatedEvent",
+        "Size": "0x48",
+        "Offset": "0x1b0"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_CosmeticPurchased",
+        "Size": "0x68",
+        "Offset": "0x1f8"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_VisitCustomizationChest",
+        "Size": "0x68",
+        "Offset": "0x260"
+      },
+      {
+        "Type": "class",
+        "Name": "AccessKey",
+        "Size": "0x8",
+        "Offset": "0x2c8"
+      },
+      {
+        "Type": "TArray<Class CallFunc_IsServer_ReturnValue>",
+        "Name": "CategoryTypes",
+        "Size": "0x10",
+        "Offset": "0x2d0"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "PurchasedEntitlementIds",
+        "Size": "0x10",
+        "Offset": "0x2e0"
+      },
+      {
+        "Type": "float",
+        "Name": "DelayUntilPromptDisplays",
+        "Size": "0x4",
+        "Offset": "0x2f0"
+      },
+      {
+        "Type": "float",
+        "Name": "DelayBetweenPrompts",
+        "Size": "0x4",
+        "Offset": "0x2f4"
+      },
+      {
+        "Type": "float",
+        "Name": "PromptDisplayDuration",
+        "Size": "0x4",
+        "Offset": "0x2f8"
+      },
+      {
+        "Type": "bool",
+        "Name": "CosmeticPurchased",
+        "Size": "0x1",
+        "Offset": "0x2fc"
+      },
+      {
+        "Type": "bool",
+        "Name": "PromptInfoSet",
+        "Size": "0x1",
+        "Offset": "0x2fd"
+      },
+      {
+        "Type": "bool",
+        "Name": "DisplayingPrompts",
+        "Size": "0x1",
+        "Offset": "0x2fe"
+      },
+      {
+        "Type": "bool",
+        "Name": "ProcessingPurchase",
+        "Size": "0x1",
+        "Offset": "0x2ff"
+      }
+    ]
+  }
+}

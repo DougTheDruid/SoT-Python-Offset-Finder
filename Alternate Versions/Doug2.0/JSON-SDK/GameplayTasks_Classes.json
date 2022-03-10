@@ -1,0 +1,84 @@
+{
+  "GameplayTaskOwnerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameplayTask": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "InstanceName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "GameplayTask_SpawnActor": {
+    "Super": "GameplayTask",
+    "FullSize": "0x98",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "ClassToSpawn",
+        "Size": "0x8",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "GameplayTask_WaitDelay": {
+    "Super": "GameplayTask",
+    "FullSize": "0x70",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "GameplayTaskResource": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "ManualResourceID",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "bool",
+        "Name": "bManuallySetID",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "GameplayTasksComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "TArray<class SimulatedTasks*>",
+        "Name": "SimulatedTasks",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "TArray<class TaskPriorityQueue*>",
+        "Name": "TaskPriorityQueue",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      }
+    ]
+  }
+}

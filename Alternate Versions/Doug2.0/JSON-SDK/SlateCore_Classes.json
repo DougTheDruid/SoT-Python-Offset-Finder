@@ -1,0 +1,51 @@
+{
+  "FontBulkData": {
+    "Super": "Object",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x98",
+    "Attributes": []
+  },
+  "FontProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SlateTypes": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SlateWidgetStyleContainerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SlateWidgetStyleContainerBase": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "SlateWidgetStyleAsset": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class SlateWidgetStyleContainerBase*",
+        "Name": "CustomStyle",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  }
+}

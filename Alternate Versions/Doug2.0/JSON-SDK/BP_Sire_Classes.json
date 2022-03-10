@@ -1,0 +1,123 @@
+{
+  "BP_SirenTrident_Wieldable_C": {
+    "Super": "DoubleActionItemWithAmmo",
+    "FullSize": "0x9b0",
+    "InheritedSize": "0x970",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Class AimSensitivityComponent*",
+        "Name": "AimSensitivity",
+        "Size": "0x8",
+        "Offset": "0x970"
+      },
+      {
+        "Type": "Class AmmoEffectsComponent*",
+        "Name": "AmmoEffects",
+        "Size": "0x8",
+        "Offset": "0x978"
+      },
+      {
+        "Type": "Class StaticStashedMeshMemoryConstraintComponent*",
+        "Name": "StaticStashedMeshMemoryConstraint",
+        "Size": "0x8",
+        "Offset": "0x980"
+      },
+      {
+        "Type": "Class AmmoTransferComponent*",
+        "Name": "AmmoTransfer",
+        "Size": "0x8",
+        "Offset": "0x988"
+      },
+      {
+        "Type": "Class ItemActionComponent*",
+        "Name": "AimDownSightAction",
+        "Size": "0x8",
+        "Offset": "0x990"
+      },
+      {
+        "Type": "Class SirenTridentShotActionComponent*",
+        "Name": "SirenTridentShotAction",
+        "Size": "0x8",
+        "Offset": "0x998"
+      },
+      {
+        "Type": "Class LaunchableAttachPointComponent*",
+        "Name": "LaunchableAttachPoint",
+        "Size": "0x8",
+        "Offset": "0x9a0"
+      },
+      {
+        "Type": "Class PostProcessComponent*",
+        "Name": "PostProcess",
+        "Size": "0x8",
+        "Offset": "0x9a8"
+      }
+    ]
+  },
+  "BP_SirenTrident_ItemInfo_C": {
+    "Super": "NonStorableItemInfo",
+    "FullSize": "0x508",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x500"
+      }
+    ]
+  },
+  "BP_SirenTrident_Proxy_C": {
+    "Super": "StaticSimpleBootyItemProxy",
+    "FullSize": "0x7ec",
+    "InheritedSize": "0x7b8",
+    "ClassSize": "0x34",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x7b8"
+      },
+      {
+        "Type": "Class GlintComponent*",
+        "Name": "Glint",
+        "Size": "0x8",
+        "Offset": "0x7c0"
+      },
+      {
+        "Type": "Class AmmoEffectsComponent*",
+        "Name": "AmmoEffects",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Type": "Class AmmoTransferComponent*",
+        "Name": "AmmoTransfer",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Type": "Class InteractableComponent*",
+        "Name": "Interactable",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "LocalInteractionOffset",
+        "Size": "0xc",
+        "Offset": "0x7e0"
+      }
+    ]
+  },
+  "BP_SirenTrident_ItemDesc_C": {
+    "Super": "ItemWithoutIconsDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

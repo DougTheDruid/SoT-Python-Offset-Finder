@@ -1,0 +1,16 @@
+{
+  "RemoteEmergentVoyageInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RemoteEmergentVoyageService": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": []
+  }
+}

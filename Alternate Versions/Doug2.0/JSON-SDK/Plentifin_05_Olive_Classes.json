@@ -1,0 +1,30 @@
+{
+  "BP_fod_Plentifin_05_OliveRaw_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_Plentifin_05_OliveUndercooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_Plentifin_05_OliveCooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_Plentifin_05_OliveBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "BP_ReviveGhost_C": {
+    "Super": "ReviveGhost",
+    "FullSize": "0x650",
+    "InheritedSize": "0x628",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Name": "AnimNotifyWwiseEmitter",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Cord_Ribbons",
+        "Size": "0x8",
+        "Offset": "0x630"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Cord_Outer_02",
+        "Size": "0x8",
+        "Offset": "0x638"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Cord_Outer_01",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Cord_Inner",
+        "Size": "0x8",
+        "Offset": "0x648"
+      }
+    ]
+  }
+}

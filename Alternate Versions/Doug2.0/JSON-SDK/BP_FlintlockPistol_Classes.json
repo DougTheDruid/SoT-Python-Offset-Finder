@@ -1,0 +1,52 @@
+{
+  "BP_FlintlockPistol_C": {
+    "Super": "ProjectileWeapon",
+    "FullSize": "0xa98",
+    "InheritedSize": "0xa60",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0xa60"
+      },
+      {
+        "Type": "Class PostProcessComponent*",
+        "Name": "PostProcess",
+        "Size": "0x8",
+        "Offset": "0xa68"
+      },
+      {
+        "Type": "byte",
+        "Name": "sfx relationship",
+        "Size": "0x1",
+        "Offset": "0xa70"
+      },
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "DynamicMaterial",
+        "Size": "0x8",
+        "Offset": "0xa78"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "ThirdPerson_VFX_AI",
+        "Size": "0x8",
+        "Offset": "0xa80"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "Flintlock3rdPersonSFX",
+        "Size": "0x8",
+        "Offset": "0xa88"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "FlintLockFirstPersonSFX",
+        "Size": "0x8",
+        "Offset": "0xa90"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "BP_fod_SplashTail_05_IndigoRaw_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_SplashTail_05_IndigoUndercooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_SplashTail_05_IndigoCooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_SplashTail_05_IndigoBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "EmissaryRank2_AF_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRank2_GH_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRank2_MA_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRank2_OOS_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRank2_RB_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRank5_AF_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRank5_GH_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRank5_MA_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRank5_OOS_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRank5_RB_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

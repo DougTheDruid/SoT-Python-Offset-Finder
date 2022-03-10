@@ -1,0 +1,66 @@
+{
+  "CoherentUIGTLoadingScreenSettings": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "MinimumLoadingScreenDisplayTime",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bAutoCompleteWhenLoadingCompletes",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "bool",
+        "Name": "bWaitForManualStop",
+        "Size": "0x1",
+        "Offset": "0x5"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "URL",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CoherentUIGTViewInfo": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "Width",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "Height",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsTransparent",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "ClickThroughAlphaThreshold",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "AnimationFrameDefer",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "BP_RowboatStorageSeat_C": {
+    "Super": "StorageSeat",
+    "FullSize": "0x6b0",
+    "InheritedSize": "0x6a8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ReplenishableComponent*",
+        "Name": "Replenishable",
+        "Size": "0x8",
+        "Offset": "0x6a8"
+      }
+    ]
+  }
+}

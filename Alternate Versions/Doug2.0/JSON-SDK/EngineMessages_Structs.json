@@ -1,0 +1,132 @@
+{
+  "EngineServiceNotification": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "Text",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "double",
+        "Name": "TimeSeconds",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceTerminate": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "UserName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EngineServiceExecuteCommand": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "Command",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "UserName",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceAuthGrant": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "UserName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "UserToGrant",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceAuthDeny": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "UserName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "UserToDeny",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServicePong": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "CurrentLevel",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "EngineVersion",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasBegunPlay",
+        "Size": "0x1",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "InstanceId",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "InstanceType",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "SessionId",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "WorldTimeSeconds",
+        "Size": "0x4",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "EngineServicePing": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  }
+}

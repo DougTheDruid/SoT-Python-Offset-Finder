@@ -1,0 +1,201 @@
+{
+  "SeasonPopupAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x2a0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x278",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "ThemeId",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "TArray<Struct ThemeId>",
+        "Name": "TierInfos",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "TArray<Struct TierInfos>",
+        "Name": "TrialInfos",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "TArray<Struct TrialInfos>",
+        "Name": "DeedInfos",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "TArray<Struct DeedInfos>",
+        "Name": "RenownActionInfos",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "Struct SeasonIconPopupAsset",
+        "Name": "SeasonInfo",
+        "Size": "0x68",
+        "Offset": "0x70"
+      },
+      {
+        "Type": "Struct SeasonIconPopupAsset",
+        "Name": "LevelIncreaseInfo",
+        "Size": "0x68",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "Struct SeasonIconPopupAsset",
+        "Name": "RewardInfo",
+        "Size": "0x68",
+        "Offset": "0x140"
+      },
+      {
+        "Type": "Struct SeasonIconPopupAsset",
+        "Name": "MultipleRewardsInfo",
+        "Size": "0x68",
+        "Offset": "0x1a8"
+      },
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "BackgroundImage",
+        "Size": "0x10",
+        "Offset": "0x210"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DefaultToastSfxEventName",
+        "Size": "0x10",
+        "Offset": "0x220"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DefaultToastEventName",
+        "Size": "0x10",
+        "Offset": "0x230"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DefaultToastSwitchName",
+        "Size": "0x10",
+        "Offset": "0x240"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DefaultToastSwitchValue",
+        "Size": "0x10",
+        "Offset": "0x250"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DefaultChatSfxEventName",
+        "Size": "0x10",
+        "Offset": "0x260"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DefaultChatEventName",
+        "Size": "0x10",
+        "Offset": "0x270"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DefaultChatSwitchName",
+        "Size": "0x10",
+        "Offset": "0x280"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DefaultChatSwitchValue",
+        "Size": "0x10",
+        "Offset": "0x290"
+      }
+    ]
+  },
+  "SeasonPopupListAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<class SeasonPopups*>",
+        "Name": "SeasonPopups",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "SeasonProgressionUIInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SeasonProgressionUITelemetryInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SeasonProgressionUIComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1b0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct SeasonPopupListAsset>",
+        "Name": "DetailsNavigationDesc",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "Struct SeasonProgressionUITelemetryFragment",
+        "Name": "NextReceivedEventsTelemetryData",
+        "Size": "0x18",
+        "Offset": "0xf8"
+      }
+    ]
+  },
+  "SeasonProgressionUIServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SeasonProgressionUIService": {
+    "Super": "Actor",
+    "FullSize": "0x590",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x1c0",
+    "Attributes": [
+      {
+        "Type": "Class SeasonPopupListAsset*",
+        "Name": "SeasonPopupListAsset",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "SeasonProgressionUISettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "SeasonPopupListAsset",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  }
+}

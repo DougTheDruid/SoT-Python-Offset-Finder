@@ -1,0 +1,131 @@
+{
+  "EmoteCameraInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmoteCard": {
+    "Super": "Actor",
+    "FullSize": "0x510",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "DynamicCardSelectionMaterialInstance",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "MeshComponent",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "RandomCardParameterName",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Struct Int32Range",
+        "Name": "RandomCardParameterRange",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      }
+    ]
+  },
+  "EmoteCoin": {
+    "Super": "Actor",
+    "FullSize": "0x4e8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x118",
+    "Attributes": []
+  },
+  "EmotePropData": {
+    "Super": "DataAsset",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmotePropDiceData": {
+    "Super": "EmotePropData",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "DiceType",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EmoteDice": {
+    "Super": "Actor",
+    "FullSize": "0x4f0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x120",
+    "Attributes": []
+  },
+  "EmoteIdListingAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Name None>",
+        "Name": "EmoteIds",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EmoteSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "NumPages",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "int",
+        "Name": "ExpandedAndCompactEmoteRadialNumPages",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "EmoteZoomInAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmoteZoomMouseAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmoteZoomOutAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "CannonballItemCategory_C": {
+    "Super": "CannonballItemCategory",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CursedCannonballItemCategory_C": {
+    "Super": "CannonballItemCategory_C",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ThrowableCannonballItemCategory_C": {
+    "Super": "CursedCannonballItemCategory_C",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ChainShotCannonballItemCategory_C": {
+    "Super": "CannonballItemCategory_C",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RegularCannonballItemCategory_C": {
+    "Super": "CannonballItemCategory_C",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

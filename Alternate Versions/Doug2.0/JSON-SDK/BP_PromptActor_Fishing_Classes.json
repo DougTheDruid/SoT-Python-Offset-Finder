@@ -1,0 +1,22 @@
+{
+  "BP_PromptActor_Fishing_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_MaidenVoyage_FishingRodTutorial_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      }
+    ]
+  }
+}

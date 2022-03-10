@@ -1,0 +1,28 @@
+{
+  "BP_Base_Capstan_C": {
+    "Super": "Capstan",
+    "FullSize": "0x7e0",
+    "InheritedSize": "0x7c8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Type": "Class SphereComponent*",
+        "Name": "ProjectileCollision",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Type": "Class WwiseEmitterComponent*",
+        "Name": "NewVar",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      }
+    ]
+  }
+}

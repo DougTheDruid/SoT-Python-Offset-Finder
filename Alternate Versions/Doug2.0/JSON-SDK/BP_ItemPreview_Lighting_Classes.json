@@ -1,0 +1,52 @@
+{
+  "BP_ItemPreview_Lighting_C": {
+    "Super": "Actor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "Class ExponentialHeightFogComponent*",
+        "Name": "ExponentialHeightFog",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class SkyLightComponent*",
+        "Name": "SkyLight",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class SpotLightComponent*",
+        "Name": "SpotLight2",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class SpotLightComponent*",
+        "Name": "SpotLight1",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class SpotLightComponent*",
+        "Name": "SpotLight",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class PostProcessComponent*",
+        "Name": "PostProcess",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  }
+}

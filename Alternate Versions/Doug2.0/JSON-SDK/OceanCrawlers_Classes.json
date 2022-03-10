@@ -1,0 +1,80 @@
+{
+  "BTTask_BroadcastOceanCrawlerAbilityAudioEvent": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "OceanCrawlerAudioKeyToBroadcast",
+        "Size": "0x1",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "OceanCrawlerAudioParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Name": "WwiseObjectPoolWrapper",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "TArray<Struct WwiseObjectPoolWrapper>",
+        "Name": "AudioKeyPairs",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "BuffThankDelay",
+        "Size": "0x30",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "Struct OceanCrawlerBuffAudioSettings",
+        "Name": "CrabBuffAudioSettings",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Type": "Struct OceanCrawlerBuffAudioSettings",
+        "Name": "EelBuffAudioSettings",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "Struct OceanCrawlerBuffAudioSettings",
+        "Name": "HermitBuffAudioSettings",
+        "Size": "0x10",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "OceanCrawlerAudioBroadcaster": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Type": "Class OceanCrawlerAudioParamsDataAsset*",
+        "Name": "AudioDataAsset",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "CachedOwner",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      }
+    ]
+  }
+}

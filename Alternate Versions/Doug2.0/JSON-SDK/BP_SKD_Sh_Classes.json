@@ -1,0 +1,76 @@
+{
+  "BP_SKD_ShrineShimmer_C": {
+    "Super": "ShimmerActor",
+    "FullSize": "0x4c1",
+    "InheritedSize": "0x478",
+    "ClassSize": "0x49",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "surface_bio_lum",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "volume_glow",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shimmer_water_00",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shimmer_air_01",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shimmer_air_00",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Size": "0x8",
+        "Offset": "0x4a8"
+      },
+      {
+        "Type": "float",
+        "Name": "FadeCurve_Opacity_D7ECDDBE4184BCE83B3BD58190CD98C7",
+        "Size": "0x4",
+        "Offset": "0x4b0"
+      },
+      {
+        "Type": "byte",
+        "Name": "FadeCurve__Direction_D7ECDDBE4184BCE83B3BD58190CD98C7",
+        "Size": "0x1",
+        "Offset": "0x4b4"
+      },
+      {
+        "Type": "Class TimelineComponent*",
+        "Name": "FadeCurve",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShimmerIsVisible",
+        "Size": "0x1",
+        "Offset": "0x4c0"
+      }
+    ]
+  }
+}

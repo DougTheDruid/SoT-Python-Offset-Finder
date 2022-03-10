@@ -1,0 +1,712 @@
+{
+  "FoliageInstancedStaticMeshComponent": {
+    "Super": "HierarchicalInstancedStaticMeshComponent",
+    "FullSize": "0x7b0",
+    "InheritedSize": "0x790",
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "FoliageStatistics": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FoliageType": {
+    "Super": "Object",
+    "FullSize": "0x360",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x338",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "UpdateGuid",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "float",
+        "Name": "Density",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "DensityAdjustmentFactor",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "float",
+        "Name": "Radius",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "byte",
+        "Name": "Scaling",
+        "Size": "0x1",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "Struct FloatInterval",
+        "Name": "ScaleX",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct FloatInterval",
+        "Name": "ScaleY",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "Struct FloatInterval",
+        "Name": "ScaleZ",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "byte",
+        "Name": "VertexColorMask",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "float",
+        "Name": "VertexColorMaskThreshold",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Type": "bool",
+        "Name": "VertexColorMaskInvert",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Type": "Struct FloatInterval",
+        "Name": "ZOffset",
+        "Size": "0x8",
+        "Offset": "0x6c"
+      },
+      {
+        "Type": "bool",
+        "Name": "AlignToNormal",
+        "Size": "0x1",
+        "Offset": "0x74"
+      },
+      {
+        "Type": "float",
+        "Name": "AlignMaxAngle",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Type": "bool",
+        "Name": "RandomYaw",
+        "Size": "0x1",
+        "Offset": "0x7c"
+      },
+      {
+        "Type": "float",
+        "Name": "RandomPitchAngle",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "Struct FloatInterval",
+        "Name": "GroundSlopeAngle",
+        "Size": "0x8",
+        "Offset": "0x84"
+      },
+      {
+        "Type": "Struct FloatInterval",
+        "Name": "Height",
+        "Size": "0x8",
+        "Offset": "0x8c"
+      },
+      {
+        "Type": "TArray<Struct FName>",
+        "Name": "LandscapeLayers",
+        "Size": "0x10",
+        "Offset": "0x98"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "LandscapeLayer",
+        "Size": "0x8",
+        "Offset": "0xa8"
+      },
+      {
+        "Type": "bool",
+        "Name": "CollisionWithWorld",
+        "Size": "0x1",
+        "Offset": "0xb0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "CollisionScale",
+        "Size": "0xc",
+        "Offset": "0xb4"
+      },
+      {
+        "Type": "float",
+        "Name": "MinimumLayerWeight",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Type": "Struct BoxSphereBounds",
+        "Name": "MeshBounds",
+        "Size": "0x1c",
+        "Offset": "0xc4"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "LowBoundOriginRadius",
+        "Size": "0xc",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "byte",
+        "Name": "Mobility",
+        "Size": "0x1",
+        "Offset": "0xec"
+      },
+      {
+        "Type": "Struct Int32Interval",
+        "Name": "CullDistance",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bEnableStaticLighting",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "CastShadow",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bAffectDynamicIndirectLighting",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bAffectDistanceFieldLighting",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCastDynamicShadow",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCastStaticShadow",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCastShadowAsTwoSided",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bReceivesDecals",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverrideLightMapRes",
+        "Size": "0x1",
+        "Offset": "0xf9"
+      },
+      {
+        "Type": "int",
+        "Name": "OverriddenLightMapRes",
+        "Size": "0x4",
+        "Offset": "0xfc"
+      },
+      {
+        "Type": "bool",
+        "Name": "bUseAsOccluder",
+        "Size": "0x1",
+        "Offset": "0x100"
+      },
+      {
+        "Type": "Struct BodyInstance",
+        "Name": "BodyInstance",
+        "Size": "0x180",
+        "Offset": "0x108"
+      },
+      {
+        "Type": "byte",
+        "Name": "CustomNavigableGeometry",
+        "Size": "0x1",
+        "Offset": "0x288"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsSelected",
+        "Size": "0x1",
+        "Offset": "0x298"
+      },
+      {
+        "Type": "float",
+        "Name": "CollisionRadius",
+        "Size": "0x4",
+        "Offset": "0x29c"
+      },
+      {
+        "Type": "float",
+        "Name": "ShadeRadius",
+        "Size": "0x4",
+        "Offset": "0x2a0"
+      },
+      {
+        "Type": "int",
+        "Name": "NumSteps",
+        "Size": "0x4",
+        "Offset": "0x2a4"
+      },
+      {
+        "Type": "float",
+        "Name": "InitialSeedDensity",
+        "Size": "0x4",
+        "Offset": "0x2a8"
+      },
+      {
+        "Type": "float",
+        "Name": "AverageSpreadDistance",
+        "Size": "0x4",
+        "Offset": "0x2ac"
+      },
+      {
+        "Type": "float",
+        "Name": "SpreadVariance",
+        "Size": "0x4",
+        "Offset": "0x2b0"
+      },
+      {
+        "Type": "int",
+        "Name": "SeedsPerStep",
+        "Size": "0x4",
+        "Offset": "0x2b4"
+      },
+      {
+        "Type": "int",
+        "Name": "DistributionSeed",
+        "Size": "0x4",
+        "Offset": "0x2b8"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxInitialSeedOffset",
+        "Size": "0x4",
+        "Offset": "0x2bc"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCanGrowInShade",
+        "Size": "0x1",
+        "Offset": "0x2c0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bSpawnsInShade",
+        "Size": "0x1",
+        "Offset": "0x2c1"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxInitialAge",
+        "Size": "0x4",
+        "Offset": "0x2c4"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxAge",
+        "Size": "0x4",
+        "Offset": "0x2c8"
+      },
+      {
+        "Type": "float",
+        "Name": "OverlapPriority",
+        "Size": "0x4",
+        "Offset": "0x2cc"
+      },
+      {
+        "Type": "Struct FloatInterval",
+        "Name": "ProceduralScale",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
+      {
+        "Type": "Struct RuntimeFloatCurve",
+        "Name": "ScaleCurve",
+        "Size": "0x80",
+        "Offset": "0x2d8"
+      },
+      {
+        "Type": "int",
+        "Name": "ChangeCount",
+        "Size": "0x4",
+        "Offset": "0x358"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyDensity",
+        "Size": "0x1",
+        "Offset": "0x35c"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyRadius",
+        "Size": "0x1",
+        "Offset": "0x35c"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyAlignToNormal",
+        "Size": "0x1",
+        "Offset": "0x35c"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyRandomYaw",
+        "Size": "0x1",
+        "Offset": "0x35c"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyScaling",
+        "Size": "0x1",
+        "Offset": "0x35c"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyScaleX",
+        "Size": "0x1",
+        "Offset": "0x35c"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyScaleY",
+        "Size": "0x1",
+        "Offset": "0x35c"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyScaleZ",
+        "Size": "0x1",
+        "Offset": "0x35c"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyRandomPitchAngle",
+        "Size": "0x1",
+        "Offset": "0x35d"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyGroundSlope",
+        "Size": "0x1",
+        "Offset": "0x35d"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyHeight",
+        "Size": "0x1",
+        "Offset": "0x35d"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyLandscapeLayers",
+        "Size": "0x1",
+        "Offset": "0x35d"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyZOffset",
+        "Size": "0x1",
+        "Offset": "0x35d"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyCollisionWithWorld",
+        "Size": "0x1",
+        "Offset": "0x35d"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReapplyVertexColorMask",
+        "Size": "0x1",
+        "Offset": "0x35d"
+      }
+    ]
+  },
+  "FoliageType_InstancedStaticMesh": {
+    "Super": "FoliageType",
+    "FullSize": "0x380",
+    "InheritedSize": "0x360",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class StaticMesh*",
+        "Name": "Mesh",
+        "Size": "0x8",
+        "Offset": "0x360"
+      },
+      {
+        "Type": "TArray<class OverrideMaterials*>",
+        "Name": "OverrideMaterials",
+        "Size": "0x10",
+        "Offset": "0x368"
+      },
+      {
+        "Type": "class",
+        "Name": "ComponentClass",
+        "Size": "0x8",
+        "Offset": "0x378"
+      }
+    ]
+  },
+  "InstancedFoliageActor": {
+    "Super": "Actor",
+    "FullSize": "0x420",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "InteractiveFoliageActor": {
+    "Super": "StaticMeshActor",
+    "FullSize": "0x440",
+    "InheritedSize": "0x3e0",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Class CapsuleComponent*",
+        "Name": "CapsuleComponent",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "TouchingActorEntryPosition",
+        "Size": "0xc",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "FoliageVelocity",
+        "Size": "0xc",
+        "Offset": "0x3f4"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "FoliageForce",
+        "Size": "0xc",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "FoliagePosition",
+        "Size": "0xc",
+        "Offset": "0x40c"
+      },
+      {
+        "Type": "float",
+        "Name": "FoliageDamageImpulseScale",
+        "Size": "0x4",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "float",
+        "Name": "FoliageTouchImpulseScale",
+        "Size": "0x4",
+        "Offset": "0x41c"
+      },
+      {
+        "Type": "float",
+        "Name": "FoliageStiffness",
+        "Size": "0x4",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "float",
+        "Name": "FoliageStiffnessQuadratic",
+        "Size": "0x4",
+        "Offset": "0x424"
+      },
+      {
+        "Type": "float",
+        "Name": "FoliageDamping",
+        "Size": "0x4",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxDamageImpulse",
+        "Size": "0x4",
+        "Offset": "0x42c"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxTouchImpulse",
+        "Size": "0x4",
+        "Offset": "0x430"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxForce",
+        "Size": "0x4",
+        "Offset": "0x434"
+      },
+      {
+        "Type": "float",
+        "Name": "Mass",
+        "Size": "0x4",
+        "Offset": "0x438"
+      }
+    ]
+  },
+  "InteractiveFoliageComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x620",
+    "InheritedSize": "0x610",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "ProceduralFoliageBlockingVolume": {
+    "Super": "Volume",
+    "FullSize": "0x410",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ProceduralFoliageVolume*",
+        "Name": "ProceduralFoliageVolume",
+        "Size": "0x8",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "ProceduralFoliageComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class ProceduralFoliageSpawner*",
+        "Name": "FoliageSpawner",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "float",
+        "Name": "TileOverlap",
+        "Size": "0x4",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "Class Volume*",
+        "Name": "SpawningVolume",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "ProceduralGuid",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "ProceduralFoliageSpawner": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "RandomSeed",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "float",
+        "Name": "TileSize",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "int",
+        "Name": "NumUniqueTiles",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "TArray<Struct NumUniqueTiles>",
+        "Name": "FoliageTypes",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "bool",
+        "Name": "bNeedsSimulation",
+        "Size": "0x1",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ProceduralFoliageTile": {
+    "Super": "Object",
+    "FullSize": "0x150",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Type": "Class ProceduralFoliageSpawner*",
+        "Name": "FoliageSpawner",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "TArray<Struct FoliageSpawner>",
+        "Name": "InstancesArray",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "ProceduralFoliageVolume": {
+    "Super": "Volume",
+    "FullSize": "0x410",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ProceduralFoliageComponent*",
+        "Name": "ProceduralComponent",
+        "Size": "0x8",
+        "Offset": "0x408"
+      }
+    ]
+  }
+}

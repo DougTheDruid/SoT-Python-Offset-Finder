@@ -1,0 +1,22 @@
+{
+  "LightPropagationVolumeBlendable": {
+    "Super": "Object",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Type": "Struct LightPropagationVolumeSettings",
+        "Name": "Settings",
+        "Size": "0x70",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "BlendWeight",
+        "Size": "0x4",
+        "Offset": "0xa0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "ChecklistActionData": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "NumRequiredActions",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "byte",
+        "Name": "ActionType",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "DeliverBootyChecklistActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x50",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "TArray<AssetClass TargetAIClasses>",
+        "Name": "TargetBootyTypes",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "TArray<Class TargetBootyTypes>",
+        "Name": "TargetCompanies",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "KillActorChecklistActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Class EventsSource>",
+        "Name": "TargetAIClasses",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "NamedChecklistEventActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "Event",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "NPCInteractionChecklistActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct ChecklistItems>",
+        "Name": "TargetNPCIds",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ChecklistItemsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct Afternote>",
+        "Name": "ChecklistItems",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ChecklistMap": {
+    "Super": "TreasureMap",
+    "FullSize": "0x940",
+    "InheritedSize": "0x7e0",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "CanvasWidth",
+        "Size": "0x4",
+        "Offset": "0x7e0"
+      },
+      {
+        "Type": "int",
+        "Name": "CanvasHeight",
+        "Size": "0x4",
+        "Offset": "0x7e4"
+      },
+      {
+        "Type": "Class Font*",
+        "Name": "Font",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      },
+      {
+        "Type": "float",
+        "Name": "FontScale",
+        "Size": "0x4",
+        "Offset": "0x7f0"
+      },
+      {
+        "Type": "float",
+        "Name": "FontLineSpacingScale",
+        "Size": "0x4",
+        "Offset": "0x7f4"
+      },
+      {
+        "Type": "Class ChecklistMapLayout*",
+        "Name": "ChecklistMapLayout",
+        "Size": "0x8",
+        "Offset": "0x800"
+      },
+      {
+        "Type": "Struct ChecklistMapContents",
+        "Name": "Contents",
+        "Size": "0xe8",
+        "Offset": "0x808"
+      }
+    ]
+  },
+  "ChecklistMapCollectionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ChecklistMapCompletionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Type": "Class ChecklistActionData*",
+        "Name": "ActionData",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "ChecklistMapSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "ChecklistMapItemDescClass",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "TArray<Struct FName>",
+        "Name": "ChecklistEvents",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  }
+}

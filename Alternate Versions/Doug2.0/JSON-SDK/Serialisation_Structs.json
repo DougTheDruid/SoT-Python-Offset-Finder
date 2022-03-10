@@ -1,0 +1,72 @@
+{
+  "SerialisedTestStruct": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "Int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "String",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "TArray<Int >",
+        "Name": "IntArray",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "TArray<Struct IntArray>",
+        "Name": "StructArray",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct SerialisedNestedStruct",
+        "Name": "NestedStruct",
+        "Size": "0x28",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "SerialisedNestedStruct": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "String",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Int >",
+        "Name": "IntArray",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "int",
+        "Name": "Int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "float",
+        "Name": "Float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  }
+}

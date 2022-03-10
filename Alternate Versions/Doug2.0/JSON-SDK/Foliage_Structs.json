@@ -1,0 +1,76 @@
+{
+  "FoliageTypeObject": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class Object*",
+        "Name": "FoliageTypeObject",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class FoliageType_InstancedStaticMesh*",
+        "Name": "TypeInstance",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bIsAsset",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "class",
+        "Name": "Type",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "ProceduralFoliageInstance": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "Location",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Quat",
+        "Name": "Rotation",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Normal",
+        "Size": "0xc",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "float",
+        "Name": "Age",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "float",
+        "Name": "Scale",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Class FoliageType_InstancedStaticMesh*",
+        "Name": "Type",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "ConsoleCommands": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  }
+}

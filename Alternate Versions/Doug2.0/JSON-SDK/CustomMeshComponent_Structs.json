@@ -1,0 +1,25 @@
+{
+  "CustomMeshTriangle": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "Vertex0",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Vertex1",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Vertex2",
+        "Size": "0xc",
+        "Offset": "0x18"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "BP_InstancedStaticMeshes_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x428",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "wsp_bush_01_a6",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "wsp_bush_07_a_01",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "wsp_bush_06_b_01",
+        "Size": "0x8",
+        "Offset": "0x420"
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "LightPropagationVolumeSettings": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVIntensity",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVDirectionalOcclusionIntensity",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVDirectionalOcclusionRadius",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVDiffuseOcclusionExponent",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVSpecularOcclusionExponent",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVDiffuseOcclusionIntensity",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVSpecularOcclusionIntensity",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVSize",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVSecondaryOcclusionIntensity",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVSecondaryBounceIntensity",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVGeometryVolumeBias",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVVplInjectionBias",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOverride_LPVEmissiveInjectionIntensity",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVIntensity",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVVplInjectionBias",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVSize",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVSecondaryOcclusionIntensity",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVSecondaryBounceIntensity",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVGeometryVolumeBias",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVEmissiveInjectionIntensity",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVDirectionalOcclusionIntensity",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVDirectionalOcclusionRadius",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVDiffuseOcclusionExponent",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVSpecularOcclusionExponent",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVDiffuseOcclusionIntensity",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "LPVSpecularOcclusionIntensity",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "Struct Transform",
+        "Name": "LPVWorldRef",
+        "Size": "0x30",
+        "Offset": "0x40"
+      }
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "BP_CT_VoyageProgress_C": {
+    "Super": "CompanyTutorialVoyageProgress",
+    "FullSize": "0x101",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x21",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "Class AthenaPlayerController*",
+        "Name": "AthenaPlayerController",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "byte",
+        "Name": "VoyageState",
+        "Size": "0x1",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "class",
+        "Name": "MaximumRank",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "bool",
+        "Name": "NoLongerPurchaseable",
+        "Size": "0x1",
+        "Offset": "0x100"
+      }
+    ]
+  },
+  "BP_CT_TutorialProgress_C": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Class AthenaPlayerController*",
+        "Name": "AthenaPlayerController",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "TArray<class TutorialVoyageProgressTrackers*>",
+        "Name": "TutorialVoyageProgressTrackers",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
+        "Name": "XMarksTutorialProgress",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
+        "Name": "RiddleTutorialProgress",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
+        "Name": "FaunaTutorialProgress",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
+        "Name": "CargoTutorialProgress",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_CT_VoyageProgress_C*",
+        "Name": "BootyTutorialProgress",
+        "Size": "0x8",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "BP_Prompt_VisitCompanyShop_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x1f2",
+    "InheritedSize": "0x118",
+    "ClassSize": "0xda",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_TreasureChestSoldPredictedEvent",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_VisitCompanyShop",
+        "Size": "0x68",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "class",
+        "Name": "Company",
+        "Size": "0x8",
+        "Offset": "0x1d0"
+      },
+      {
+        "Type": "class",
+        "Name": "AccessKey",
+        "Size": "0x8",
+        "Offset": "0x1d8"
+      },
+      {
+        "Type": "class",
+        "Name": "CompanyRankDesc",
+        "Size": "0x8",
+        "Offset": "0x1e0"
+      },
+      {
+        "Type": "float",
+        "Name": "PromptDelayUntilDisplay",
+        "Size": "0x4",
+        "Offset": "0x1e8"
+      },
+      {
+        "Type": "float",
+        "Name": "PromptDisplayDuration",
+        "Size": "0x4",
+        "Offset": "0x1ec"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsCorrectCompany",
+        "Size": "0x1",
+        "Offset": "0x1f0"
+      },
+      {
+        "Type": "bool",
+        "Name": "PromptInfoSet",
+        "Size": "0x1",
+        "Offset": "0x1f1"
+      }
+    ]
+  },
+  "BP_Prompt_VisitSeapost_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x258",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_EventObjectWielded",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_WieledFishOrMeat",
+        "Size": "0x68",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_VisitSeapost",
+        "Size": "0x68",
+        "Offset": "0x1d0"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsWieldingMeatOrFish",
+        "Size": "0x1",
+        "Offset": "0x238"
+      },
+      {
+        "Type": "float",
+        "Name": "DisplayDuration",
+        "Size": "0x4",
+        "Offset": "0x23c"
+      },
+      {
+        "Type": "float",
+        "Name": "DelayUntilNextPrompt",
+        "Size": "0x4",
+        "Offset": "0x240"
+      },
+      {
+        "Type": "TArray<Class Prompt_WieledFishOrMeat>",
+        "Name": "IgnoredFood",
+        "Size": "0x10",
+        "Offset": "0x248"
+      }
+    ]
+  }
+}

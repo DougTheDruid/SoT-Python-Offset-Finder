@@ -1,0 +1,405 @@
+{
+  "RopeCatenaryShapeParams": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct RopeCatenaryLengthParams",
+        "Name": "Length",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct RopeCatenarySlopeBlendParams",
+        "Name": "Slope",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "RopeCatenarySlopeBlendParams": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "MinSlopeForTautBlend",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxSlopeForTautBlend",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "RopeCatenaryLengthParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "MinTautLength",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxTautLength",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "CatenaryScaleAtMinLength",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "CatenaryScaleAtMaxLength",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "RopeCatenarySwingParams": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "LengthForNeutralSwing",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "LengthBias",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "RopeCatenaryDynamicsParams": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "CatenaryToTautLengthRatioToConsiderCatenary",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "ReactsToWind",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "InstancedRopeParams": {
+    "ClassSize": "0x54",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "Start",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "End",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "Thickness",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "UVScale",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Type": "float",
+        "Name": "UVBase",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "float",
+        "Name": "UVOffset",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Type": "float",
+        "Name": "Roughness",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct RopeCatenaryShapeParams",
+        "Name": "Shape",
+        "Size": "0x18",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "Struct RopeCatenarySwingParams",
+        "Name": "Swing",
+        "Size": "0x8",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "Struct RopeCatenaryDynamicsParams",
+        "Name": "Dynamics",
+        "Size": "0x8",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "RiggingSystemLine": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "RiggingSystemPulleyData": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "TArray<Float None>",
+        "Name": "AttachmentSag",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Float >",
+        "Name": "AttachmentLength",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "TArray<Float >",
+        "Name": "Scale",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "TArray<Float >",
+        "Name": "ScaledOffset",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "TArray<Float >",
+        "Name": "ScaledRadius",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "TArray<Int >",
+        "Name": "MeshIDs",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "RopeVisualParams": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "Thickness",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "UVScale",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "Roughness",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RopeStyleParams": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class StaticMesh*",
+        "Name": "Mesh",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Texture2D*",
+        "Name": "DiffuseTexture",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Class Texture2D*",
+        "Name": "NormalTexture",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "int",
+        "Name": "ShadowLOD",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "PulleyVisualParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class StaticMesh*",
+        "Name": "Mesh",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Scale",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "Radius",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "RiggingSystemPulleyParams": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct SocketId",
+        "Name": "Anchor",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "OffsetFromAnchor",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct PulleyVisualParams",
+        "Name": "Visuals",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct RiggingSystemPulleyAttachmentParams",
+        "Name": "AttachmentRope",
+        "Size": "0x14",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "RiggingSystemPulleyAttachmentParams": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Type": "Struct RopeVisualParams",
+        "Name": "Visuals",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Length",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "Sag",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "RiggingSystemLineParams": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Type": "Struct SocketId",
+        "Name": "Start",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct Start>",
+        "Name": "Pulleys",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct SocketId",
+        "Name": "End",
+        "Size": "0x20",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct RopeVisualParams",
+        "Name": "Visuals",
+        "Size": "0xc",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "Struct RopeCatenaryShapeParams",
+        "Name": "Shape",
+        "Size": "0x18",
+        "Offset": "0x5c"
+      }
+    ]
+  },
+  "RiggingSystemLineGroup": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "Name",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct Name>",
+        "Name": "Lines",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RopeCatenaryLengthPair": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "Taut",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Catenary",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  }
+}

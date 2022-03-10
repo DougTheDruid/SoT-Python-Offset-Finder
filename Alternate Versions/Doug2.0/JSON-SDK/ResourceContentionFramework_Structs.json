@@ -1,0 +1,30 @@
+{
+  "PoolableCollectionMapConfiguration": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct PoolableCollectionMapConfigurationEntry>",
+        "Name": "Pools",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "PopulateJustInTime",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "PoolableCollectionMapConfigurationEntry": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "Size",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  }
+}

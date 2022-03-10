@@ -1,0 +1,138 @@
+{
+  "SirenAnimationData": {
+    "Super": "AnimationData",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Struct SirenAnimationDataStructure",
+        "Name": "SirenAnimationData",
+        "Size": "0x60",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "SirenAnimationInstance": {
+    "Super": "AnimInstance",
+    "FullSize": "0x710",
+    "InheritedSize": "0x440",
+    "ClassSize": "0x2d0",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "PropAttachmentSocket",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Type": "Struct SirenAnimationDataStructure",
+        "Name": "SirenAnimationData",
+        "Size": "0x60",
+        "Offset": "0x460"
+      },
+      {
+        "Type": "Struct AthenaAnimationWeapon",
+        "Name": "AttackAnimations",
+        "Size": "0xb8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Type": "float",
+        "Name": "ForwardSpeed",
+        "Size": "0x4",
+        "Offset": "0x578"
+      },
+      {
+        "Type": "float",
+        "Name": "TiltDirectionAngleDegrees",
+        "Size": "0x4",
+        "Offset": "0x588"
+      },
+      {
+        "Type": "float",
+        "Name": "TiltAngleAlpha",
+        "Size": "0x4",
+        "Offset": "0x58c"
+      },
+      {
+        "Type": "float",
+        "Name": "SpinAngleDegrees",
+        "Size": "0x4",
+        "Offset": "0x590"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxTiltAngleRepresentedByAdditiveBendAnimations",
+        "Size": "0x4",
+        "Offset": "0x594"
+      },
+      {
+        "Type": "bool",
+        "Name": "UpperBodyOverlayActive",
+        "Size": "0x1",
+        "Offset": "0x598"
+      },
+      {
+        "Type": "bool",
+        "Name": "SwimmingLongways",
+        "Size": "0x1",
+        "Offset": "0x599"
+      },
+      {
+        "Type": "bool",
+        "Name": "UseAggressiveAnimations",
+        "Size": "0x1",
+        "Offset": "0x59a"
+      },
+      {
+        "Type": "bool",
+        "Name": "UseAlternativeAggressiveAnimation",
+        "Size": "0x1",
+        "Offset": "0x59b"
+      },
+      {
+        "Type": "TArray<Class UseAlternativeAggressiveAnimation>",
+        "Name": "StrategiesForAggressiveAnimations",
+        "Size": "0x10",
+        "Offset": "0x5a0"
+      },
+      {
+        "Type": "Struct FloatRange",
+        "Name": "TimeBeforeAlternativeAggressiveAnimationToggleFlips",
+        "Size": "0x10",
+        "Offset": "0x5b0"
+      },
+      {
+        "Type": "bool",
+        "Name": "AnimationsLoaded",
+        "Size": "0x1",
+        "Offset": "0x5c8"
+      },
+      {
+        "Type": "float",
+        "Name": "AimUpAlpha",
+        "Size": "0x4",
+        "Offset": "0x5cc"
+      },
+      {
+        "Type": "float",
+        "Name": "AimDownAlpha",
+        "Size": "0x4",
+        "Offset": "0x5d0"
+      },
+      {
+        "Type": "Struct CustomAnimationMontageStateMachine",
+        "Name": "FullBodyStateMachine",
+        "Size": "0xd8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Type": "Struct HitReactionAnimationState",
+        "Name": "HitReacts",
+        "Size": "0x28",
+        "Offset": "0x6b0"
+      }
+    ]
+  }
+}

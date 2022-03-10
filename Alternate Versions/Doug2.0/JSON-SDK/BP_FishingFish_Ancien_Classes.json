@@ -1,0 +1,93 @@
+{
+  "BP_FishingFish_AncientScale_Base_C": {
+    "Super": "BP_FishingFish_SplashTail_Base_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_03_C": {
+    "Super": "BP_FishingFish_AncientScale_Base_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_03_Colour_01_Almond_C": {
+    "Super": "BP_FishingFish_AncientScale_03_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_03_Colour_02_Sapphire_C": {
+    "Super": "BP_FishingFish_AncientScale_03_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_03_Colour_03_Smoke_C": {
+    "Super": "BP_FishingFish_AncientScale_03_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_03_Colour_04_Bone_C": {
+    "Super": "BP_FishingFish_AncientScale_03_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_03_Colour_05_Starshine_C": {
+    "Super": "BP_FishingFish_AncientScale_03_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_05_C": {
+    "Super": "BP_FishingFish_AncientScale_Base_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_05_Colour_01_Almond_C": {
+    "Super": "BP_FishingFish_AncientScale_05_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_05_Colour_02_Sapphire_C": {
+    "Super": "BP_FishingFish_AncientScale_05_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_05_Colour_03_Smoke_C": {
+    "Super": "BP_FishingFish_AncientScale_05_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_05_Colour_04_Bone_C": {
+    "Super": "BP_FishingFish_AncientScale_05_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishingFish_AncientScale_05_Colour_05_Starshine_C": {
+    "Super": "BP_FishingFish_AncientScale_05_C",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

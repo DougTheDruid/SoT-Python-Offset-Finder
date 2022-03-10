@@ -1,0 +1,58 @@
+{
+  "BP_LargeShip_QuestTable_C": {
+    "Super": "VoyageProposalContainer",
+    "FullSize": "0x7a8",
+    "InheritedSize": "0x768",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "CancelAdventure",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "PlayerBuiredItemsMapBundleInteractionPoint",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "CancelTale",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "CancelVoyage",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "VoyageSelectionSlot4",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "VoyageSelectionSlot3",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "VoyageSelectionSlot2",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "VoyageSelectionSlot1",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      }
+    ]
+  }
+}

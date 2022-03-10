@@ -1,0 +1,16 @@
+{
+  "BP_Compass_C": {
+    "Super": "Compass",
+    "FullSize": "0x878",
+    "InheritedSize": "0x870",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class InventoryItemComponent*",
+        "Name": "InventoryItem",
+        "Size": "0x8",
+        "Offset": "0x870"
+      }
+    ]
+  }
+}

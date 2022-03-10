@@ -1,0 +1,86 @@
+{
+  "GameplayTagContainer": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct GameplayTag>",
+        "Name": "GameplayTags",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "TArray<Struct FName>",
+        "Name": "Tags",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "GameplayTag": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "TagName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameplayTagQuery": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "TokenStreamVersion",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct TokenStreamVersion>",
+        "Name": "TagDictionary",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "TArray<Byte TagDictionary>",
+        "Name": "QueryTokenStream",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "UserDescription",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "AutoDescription",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "GameplayTagNode": {
+    "ClassSize": "0x78",
+    "Attributes": []
+  },
+  "GameplayTagTableRow": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "Tag",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FText",
+        "Name": "CategoryText",
+        "Size": "0x38",
+        "Offset": "0x10"
+      }
+    ]
+  }
+}

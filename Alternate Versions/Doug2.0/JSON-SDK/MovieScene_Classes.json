@@ -1,0 +1,327 @@
+{
+  "MovieSceneSignedObject": {
+    "Super": "Object",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "Signature",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "MovieScene": {
+    "Super": "MovieSceneSignedObject",
+    "FullSize": "0x100",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct BindingData>",
+        "Name": "Spawnables",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "TArray<Struct Spawnables>",
+        "Name": "Possessables",
+        "Size": "0x10",
+        "Offset": "0x90"
+      },
+      {
+        "Type": "TArray<Struct Possessables>",
+        "Name": "ObjectBindings",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      },
+      {
+        "Type": "TArray<class MasterTracks*>",
+        "Name": "MasterTracks",
+        "Size": "0x10",
+        "Offset": "0xb0"
+      },
+      {
+        "Type": "Class MovieSceneTrack*",
+        "Name": "CameraCutTrack",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      },
+      {
+        "Type": "Struct FloatRange",
+        "Name": "SelectionRange",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "Struct FloatRange",
+        "Name": "PlaybackRange",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bForceFixedFrameIntervalPlayback",
+        "Size": "0x1",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "float",
+        "Name": "FixedFrameInterval",
+        "Size": "0x4",
+        "Offset": "0xec"
+      },
+      {
+        "Type": "float",
+        "Name": "InTime",
+        "Size": "0x4",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "float",
+        "Name": "OutTime",
+        "Size": "0x4",
+        "Offset": "0xf4"
+      },
+      {
+        "Type": "float",
+        "Name": "StartTime",
+        "Size": "0x4",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "float",
+        "Name": "EndTime",
+        "Size": "0x4",
+        "Offset": "0xfc"
+      }
+    ]
+  },
+  "MovieSceneBindingOverridesInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneBindingOverrides": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct ChildObjectBindingStrings>",
+        "Name": "BindingData",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "MovieSceneBindingOwnerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneFolder": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "FolderName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "TArray<class ChildFolders*>",
+        "Name": "ChildFolders",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "TArray<class ChildMasterTracks*>",
+        "Name": "ChildMasterTracks",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "ChildObjectBindingStrings",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "MovieSceneSequencePlayer": {
+    "Super": "Object",
+    "FullSize": "0x600",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x5d8",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "bIsPlaying",
+        "Size": "0x1",
+        "Offset": "0x3c0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bReversePlayback",
+        "Size": "0x1",
+        "Offset": "0x3c0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bPendingFirstUpdate",
+        "Size": "0x1",
+        "Offset": "0x3c0"
+      },
+      {
+        "Type": "Class MovieSceneSequence*",
+        "Name": "Sequence",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Type": "float",
+        "Name": "TimeCursorPosition",
+        "Size": "0x4",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "float",
+        "Name": "StartTime",
+        "Size": "0x4",
+        "Offset": "0x3d4"
+      },
+      {
+        "Type": "float",
+        "Name": "EndTime",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "int",
+        "Name": "CurrentNumLoops",
+        "Size": "0x4",
+        "Offset": "0x3dc"
+      },
+      {
+        "Type": "Struct MovieSceneSequencePlaybackSettings",
+        "Name": "PlaybackSettings",
+        "Size": "0x28",
+        "Offset": "0x3f0"
+      }
+    ]
+  },
+  "MovieSceneSection": {
+    "Super": "MovieSceneSignedObject",
+    "FullSize": "0x98",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct MovieSceneSectionEvalOptions",
+        "Name": "EvalOptions",
+        "Size": "0x2",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "float",
+        "Name": "StartTime",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Type": "float",
+        "Name": "EndTime",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Type": "int",
+        "Name": "RowIndex",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Type": "int",
+        "Name": "OverlapPriority",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Type": "bool",
+        "Name": "bIsActive",
+        "Size": "0x1",
+        "Offset": "0x94"
+      },
+      {
+        "Type": "bool",
+        "Name": "bIsLocked",
+        "Size": "0x1",
+        "Offset": "0x94"
+      },
+      {
+        "Type": "bool",
+        "Name": "bIsInfinite",
+        "Size": "0x1",
+        "Offset": "0x94"
+      }
+    ]
+  },
+  "MovieSceneTrack": {
+    "Super": "MovieSceneSignedObject",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Struct MovieSceneTrackEvalOptions",
+        "Name": "EvalOptions",
+        "Size": "0x4",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "MovieSceneSequence": {
+    "Super": "MovieSceneSignedObject",
+    "FullSize": "0x2a8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x228",
+    "Attributes": [
+      {
+        "Type": "Struct CachedMovieSceneEvaluationTemplate",
+        "Name": "EvaluationTemplate",
+        "Size": "0x220",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "Struct MovieSceneTrackCompilationParams",
+        "Name": "TemplateParameters",
+        "Size": "0x1",
+        "Offset": "0x2a0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bParentContextsAreSignificant",
+        "Size": "0x1",
+        "Offset": "0x2a1"
+      }
+    ]
+  },
+  "MovieSceneNameableTrack": {
+    "Super": "MovieSceneTrack",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

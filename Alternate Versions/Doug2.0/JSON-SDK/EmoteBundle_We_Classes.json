@@ -1,0 +1,16 @@
+{
+  "Emote_MainHandWeaponPose4_Desc_C": {
+    "Super": "EmoteFlourishDesc",
+    "FullSize": "0x128",
+    "InheritedSize": "0x128",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Emote_OffHandWeaponPose4_Desc_C": {
+    "Super": "EmoteFlourishDesc",
+    "FullSize": "0x128",
+    "InheritedSize": "0x128",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

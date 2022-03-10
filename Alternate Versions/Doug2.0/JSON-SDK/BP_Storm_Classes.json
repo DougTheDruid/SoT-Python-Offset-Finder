@@ -1,0 +1,40 @@
+{
+  "BP_Storm_C": {
+    "Super": "Storm",
+    "FullSize": "0x658",
+    "InheritedSize": "0x630",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x630"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Lightning4",
+        "Size": "0x8",
+        "Offset": "0x638"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Lightning3",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Lightning2",
+        "Size": "0x8",
+        "Offset": "0x648"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Lightning1",
+        "Size": "0x8",
+        "Offset": "0x650"
+      }
+    ]
+  }
+}

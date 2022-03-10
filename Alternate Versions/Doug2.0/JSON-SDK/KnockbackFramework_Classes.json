@@ -1,0 +1,59 @@
+{
+  "KnockbackInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "KnockbackColliderComponent": {
+    "Super": "BoxComponent",
+    "FullSize": "0x660",
+    "InheritedSize": "0x5e0",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Type": "Struct CollisionProfileName",
+        "Name": "SolidCollisionProfile",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Type": "Struct CollisionProfileName",
+        "Name": "KnockbackTraceProfile",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Type": "byte",
+        "Name": "KnockbackType",
+        "Size": "0x1",
+        "Offset": "0x5e8"
+      },
+      {
+        "Type": "Struct KnockBackInfo",
+        "Name": "KnockbackParams",
+        "Size": "0x50",
+        "Offset": "0x5ec"
+      },
+      {
+        "Type": "class",
+        "Name": "KnockbackDamageType",
+        "Size": "0x8",
+        "Offset": "0x648"
+      },
+      {
+        "Type": "float",
+        "Name": "KnockbackInterval",
+        "Size": "0x4",
+        "Offset": "0x650"
+      },
+      {
+        "Type": "byte",
+        "Name": "SolidState",
+        "Size": "0x1",
+        "Offset": "0x658"
+      }
+    ]
+  }
+}

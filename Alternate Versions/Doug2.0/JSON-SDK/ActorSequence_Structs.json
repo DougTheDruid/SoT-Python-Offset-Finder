@@ -1,0 +1,53 @@
+{
+  "ActorSequenceObjectReferenceMap": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct TestTextObject>",
+        "Name": "BindingIds",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct ActorSequenceObjectReferences>",
+        "Name": "References",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "ActorSequenceObjectReferences": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct ActorSequenceObjectReference>",
+        "Name": "Array",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ActorSequenceObjectReference": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "Type",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "ActorId",
+        "Size": "0x10",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "PathToComponent",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "EntityEnumerationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EntityEnumerationService": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class World*",
+        "Name": "World",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  }
+}

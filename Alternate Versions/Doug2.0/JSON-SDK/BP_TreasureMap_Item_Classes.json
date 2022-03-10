@@ -1,0 +1,16 @@
+{
+  "BP_TreasureMap_ItemInfo_XMarksTheSpot_C": {
+    "Super": "TreasureMapItemInfo",
+    "FullSize": "0x508",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x500"
+      }
+    ]
+  }
+}

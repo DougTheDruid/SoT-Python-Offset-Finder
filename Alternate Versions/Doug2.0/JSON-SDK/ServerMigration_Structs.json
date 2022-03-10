@@ -1,0 +1,63 @@
+{
+  "ClientSettings": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "FailToConnectToServer",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "PauseMigrationBeforeOwnershipTransfer",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "ServerSettings": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "FailToConnectToServer",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "RefuseMigrationStart",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "bool",
+        "Name": "DisconnectServerConnectionDuringMigration",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Type": "int",
+        "Name": "RefuseIncomingClientConnections",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "ServerMigrationCustomMigrationSerialisationStruct": {
+    "ClassSize": "0x4",
+    "Attributes": []
+  },
+  "ServerMigrationSerialisationDetailsTestsUStruct": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "FloatWithNoMarkup",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

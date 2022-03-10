@@ -1,0 +1,41 @@
+{
+  "RenderToTextureFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RenderToTextureSceneDetails": {
+    "Super": "Object",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "ClassToSpawn",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct IntPoint",
+        "Name": "Resolution",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Class World*",
+        "Name": "World",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Class TextureRenderTarget2D*",
+        "Name": "RenderTarget",
+        "Size": "0x8",
+        "Offset": "0x50"
+      }
+    ]
+  }
+}

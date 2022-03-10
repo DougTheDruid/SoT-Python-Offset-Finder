@@ -1,0 +1,136 @@
+{
+  "BP_PiratePreview_C": {
+    "Super": "PiratePreviewActor",
+    "FullSize": "0x890",
+    "InheritedSize": "0x7b8",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x7b8"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_SideView",
+        "Size": "0x8",
+        "Offset": "0x7c0"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_ProfileImage",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Head_old",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Hat",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Gloves",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Boots",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_PegLeg",
+        "Size": "0x8",
+        "Offset": "0x7f0"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Hook",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Glove",
+        "Size": "0x8",
+        "Offset": "0x800"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Torso",
+        "Size": "0x8",
+        "Offset": "0x808"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Mid",
+        "Size": "0x8",
+        "Offset": "0x810"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Legs",
+        "Size": "0x8",
+        "Offset": "0x818"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Feet",
+        "Size": "0x8",
+        "Offset": "0x820"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Head",
+        "Size": "0x8",
+        "Offset": "0x828"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Default",
+        "Size": "0x8",
+        "Offset": "0x830"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "ChildActor",
+        "Size": "0x8",
+        "Offset": "0x838"
+      },
+      {
+        "Type": "Class SkeletalMeshComponent*",
+        "Name": "HiddenDftMesh",
+        "Size": "0x8",
+        "Offset": "0x840"
+      },
+      {
+        "Type": "Class SkeletalMeshComponent*",
+        "Name": "PirateMesh",
+        "Size": "0x8",
+        "Offset": "0x848"
+      },
+      {
+        "Type": "Class CameraComponent*",
+        "Name": "Camera",
+        "Size": "0x8",
+        "Offset": "0x850"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x858"
+      }
+    ]
+  }
+}

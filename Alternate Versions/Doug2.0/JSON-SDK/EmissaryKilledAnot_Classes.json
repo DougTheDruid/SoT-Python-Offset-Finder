@@ -1,0 +1,37 @@
+{
+  "EmissaryKilledAnotherEmissary_AF_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryKilledAnotherEmissary_GH_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryKilledAnotherEmissary_MA_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryKilledAnotherEmissary_OOS_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryKilledAnotherEmissary_RB_PromptAccessKey_C": {
+    "Super": "PromptCounterAccessKey",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "ServerSpireInfo": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "LevelId",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Location",
+        "Size": "0xc",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "SpireActor",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "SpireInfo": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "LevelId",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShouldBeLoaded",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShouldBeVisible",
+        "Size": "0x1",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "SpireEntry": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "Location",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "IslandName",
+        "Size": "0x8",
+        "Offset": "0xc"
+      }
+    ]
+  }
+}

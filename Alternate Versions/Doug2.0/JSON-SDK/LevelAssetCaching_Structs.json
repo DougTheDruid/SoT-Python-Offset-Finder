@@ -1,0 +1,31 @@
+{
+  "WorldRegionSetup": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct Vector2D",
+        "Name": "WorldBoundsOrigin",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector2D",
+        "Name": "RegionSize",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct IntPoint",
+        "Name": "GridSize",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "TArray<Struct FName>",
+        "Name": "RegionNames",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  }
+}

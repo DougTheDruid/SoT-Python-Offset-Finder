@@ -1,0 +1,88 @@
+{
+  "BP_Prompt_EmissaryLevelRankChange_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x1b0",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_EmissaryRankChange",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "CompanyName",
+        "Size": "0x8",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "int",
+        "Name": "NewLevel",
+        "Size": "0x4",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "bool",
+        "Name": "SurfacedThisSession",
+        "Size": "0x1",
+        "Offset": "0x174"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "ExpectedCompanyName",
+        "Size": "0x8",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "int",
+        "Name": "ExpectedLevel",
+        "Size": "0x4",
+        "Offset": "0x180"
+      },
+      {
+        "Type": "TArray<Struct Prompts>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x188"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptAccessKey",
+        "Size": "0x8",
+        "Offset": "0x198"
+      },
+      {
+        "Type": "int",
+        "Name": "PromptIndex",
+        "Size": "0x4",
+        "Offset": "0x1a0"
+      },
+      {
+        "Type": "int",
+        "Name": "NumberOfPrompts",
+        "Size": "0x4",
+        "Offset": "0x1a4"
+      },
+      {
+        "Type": "float",
+        "Name": "InitialDelay",
+        "Size": "0x4",
+        "Offset": "0x1a8"
+      },
+      {
+        "Type": "float",
+        "Name": "ShowPromptDuration",
+        "Size": "0x4",
+        "Offset": "0x1ac"
+      }
+    ]
+  }
+}

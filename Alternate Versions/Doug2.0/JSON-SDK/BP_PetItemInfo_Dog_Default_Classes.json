@@ -1,0 +1,16 @@
+{
+  "BP_PetItemInfo_Dog_Default_C": {
+    "Super": "PetItemInfo",
+    "FullSize": "0x568",
+    "InheritedSize": "0x560",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x560"
+      }
+    ]
+  }
+}

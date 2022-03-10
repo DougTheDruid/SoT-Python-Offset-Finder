@@ -1,0 +1,105 @@
+{
+  "GetRivalCrewIdForInvasionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x90",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "InvasionServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "InvasionService": {
+    "Super": "Actor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x58",
+    "Attributes": []
+  },
+  "GetRivalCrewIdForInvasionStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Struct QuestVariableGuid",
+        "Name": "RivalCrewId",
+        "Size": "0x20",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "Struct QuestVariableActor",
+        "Name": "RivalCrewShip",
+        "Size": "0x20",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "NotifyCrewOfInvasionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class NotifyCrewOfInvasionStepDesc*",
+        "Name": "StepDesc",
+        "Size": "0x8",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "NotifyCrewOfInvasionStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct QuestVariableGuid",
+        "Name": "RivalCrewId",
+        "Size": "0x20",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "TeleportShipToRivalCrewStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class TeleportShipToRivalCrewStepDesc*",
+        "Name": "StepDesc",
+        "Size": "0x8",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "TeleportShipToRivalCrewStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct QuestVariableGuid",
+        "Name": "RivalCrewId",
+        "Size": "0x20",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "float",
+        "Name": "DistanceOffsetMetres",
+        "Size": "0x4",
+        "Offset": "0xa0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "BP_SmallMapTable_C": {
+    "Super": "MapTable",
+    "FullSize": "0x7cd",
+    "InheritedSize": "0x778",
+    "ClassSize": "0x55",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "NavBlocker",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "ControlPoint",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "ControlPoint",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "ControlPoint",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "ControlPoint",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      },
+      {
+        "Type": "Class TextureFeedbackComponent*",
+        "Name": "TextureFeedback",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Cube",
+        "Size": "0x8",
+        "Offset": "0x7b8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Map",
+        "Size": "0x8",
+        "Offset": "0x7c0"
+      },
+      {
+        "Type": "float",
+        "Name": "ActiveRange",
+        "Size": "0x4",
+        "Offset": "0x7c8"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsActive",
+        "Size": "0x1",
+        "Offset": "0x7cc"
+      }
+    ]
+  }
+}

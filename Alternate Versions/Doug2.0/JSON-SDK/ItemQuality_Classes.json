@@ -1,0 +1,41 @@
+{
+  "ItemQualityInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ItemQualityComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x108",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "ItemQualityLevel",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "TArray<Struct ItemQualityLevel>",
+        "Name": "CompanySpecificItemQualityLevels",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "TArray<Struct CompanySpecificItemQualityLevels>",
+        "Name": "CompanySpecificComplexItemQualityLevels",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "TArray<Struct CompanySpecificComplexItemQualityLevels>",
+        "Name": "CompanySpecificComplexItemQualityLevelsHandin",
+        "Size": "0x10",
+        "Offset": "0xf8"
+      }
+    ]
+  }
+}

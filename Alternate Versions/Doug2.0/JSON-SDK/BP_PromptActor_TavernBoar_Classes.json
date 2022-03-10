@@ -1,0 +1,40 @@
+{
+  "BP_PromptActor_TavernBoard_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x439",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x31",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_TavernBoard_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "TArray<Struct OnApproachedTavernBoard>",
+        "Name": "TavernBoardLocations",
+        "Size": "0x10",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "TArray<class TavernBoardPromptCoordinators*>",
+        "Name": "TavernBoardPromptCoordinators",
+        "Size": "0x10",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasPromptShown",
+        "Size": "0x1",
+        "Offset": "0x438"
+      }
+    ]
+  }
+}

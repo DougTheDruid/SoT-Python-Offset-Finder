@@ -1,0 +1,112 @@
+{
+  "BP_InteractableRowboatLantern_C": {
+    "Super": "InteractableLight",
+    "FullSize": "0x649",
+    "InheritedSize": "0x5d0",
+    "ClassSize": "0x79",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "LanternGlow",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Lantern",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Hook",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      },
+      {
+        "Type": "Class InteractableComponent*",
+        "Name": "Interactable",
+        "Size": "0x8",
+        "Offset": "0x5f0"
+      },
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "DynamicGlowMaterial",
+        "Size": "0x8",
+        "Offset": "0x5f8"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "GlowBrightnessParameterName",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "GlowRandomSeedParameterName",
+        "Size": "0x8",
+        "Offset": "0x608"
+      },
+      {
+        "Type": "float",
+        "Name": "GlowIntensityOn",
+        "Size": "0x4",
+        "Offset": "0x610"
+      },
+      {
+        "Type": "float",
+        "Name": "GlowIntensityOff",
+        "Size": "0x4",
+        "Offset": "0x614"
+      },
+      {
+        "Type": "bool",
+        "Name": "UsesGlow",
+        "Size": "0x1",
+        "Offset": "0x618"
+      },
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "DynamicMaterial",
+        "Size": "0x8",
+        "Offset": "0x620"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "FlameParameterName",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Type": "float",
+        "Name": "FlameIntensityOn",
+        "Size": "0x4",
+        "Offset": "0x630"
+      },
+      {
+        "Type": "float",
+        "Name": "FlameIntensityOff",
+        "Size": "0x4",
+        "Offset": "0x634"
+      },
+      {
+        "Type": "Struct LinearColor",
+        "Name": "DefaultGlowColour",
+        "Size": "0x10",
+        "Offset": "0x638"
+      },
+      {
+        "Type": "byte",
+        "Name": "CurrentFlameOfFateType",
+        "Size": "0x1",
+        "Offset": "0x648"
+      }
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "InstancedRopeComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x670",
+    "InheritedSize": "0x5b0",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Type": "Class StaticMesh*",
+        "Name": "StaticMesh",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Type": "TArray<Struct StaticMesh>",
+        "Name": "Ropes",
+        "Size": "0x10",
+        "Offset": "0x5b0"
+      },
+      {
+        "Type": "int",
+        "Name": "ShadowLOD",
+        "Size": "0x4",
+        "Offset": "0x5c0"
+      }
+    ]
+  },
+  "MaterialExpressionRopeParameter": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "RopeParameterType",
+        "Size": "0x1",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "RiggingSystem": {
+    "Super": "Actor",
+    "FullSize": "0x520",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "Root",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class InstancedRopeComponent*",
+        "Name": "InstancedRopes",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "TArray<Struct InstancedRopes>",
+        "Name": "Lines",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "TArray<Struct Lines>",
+        "Name": "Ropes",
+        "Size": "0x10",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "TArray<class PulleyInstances*>",
+        "Name": "PulleyInstances",
+        "Size": "0x10",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Struct RiggingSystemPulleyData",
+        "Name": "Pulleys",
+        "Size": "0x60",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "TArray<Struct Pulleys>",
+        "Name": "Sockets",
+        "Size": "0x10",
+        "Offset": "0x478"
+      },
+      {
+        "Type": "TArray<Float >",
+        "Name": "InitialMainRopeLengths",
+        "Size": "0x10",
+        "Offset": "0x488"
+      }
+    ]
+  },
+  "RiggingSystemComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x310",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Struct RopeStyleParams",
+        "Name": "RopeStyle",
+        "Size": "0x20",
+        "Offset": "0x2d0"
+      },
+      {
+        "Type": "TArray<Struct RopeStyle>",
+        "Name": "LineGroups",
+        "Size": "0x10",
+        "Offset": "0x2f0"
+      },
+      {
+        "Type": "Class RiggingSystem*",
+        "Name": "Impl",
+        "Size": "0x8",
+        "Offset": "0x300"
+      }
+    ]
+  },
+  "RopeCatenaryRenderComponent": {
+    "Super": "CordRenderComponent",
+    "FullSize": "0x650",
+    "InheritedSize": "0x650",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RopeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

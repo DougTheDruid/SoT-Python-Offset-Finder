@@ -1,0 +1,144 @@
+{
+  "TimeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CustomizableTimeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugTimeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LocationProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TimeBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TimeFormatterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TimeService": {
+    "Super": "Actor",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x110",
+    "Attributes": [
+      {
+        "Type": "Struct Timespan",
+        "Name": "GameWorldTimeOffset",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "double",
+        "Name": "ServiceTimeQueryRapidFrequencyOffsetMax",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "float",
+        "Name": "ServiceTimeQueryRapidFrequencyInSeconds",
+        "Size": "0x4",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "float",
+        "Name": "ServiceTimeQueryFrequencyInSeconds",
+        "Size": "0x4",
+        "Offset": "0x42c"
+      },
+      {
+        "Type": "float",
+        "Name": "ClientTimeUpdateFrequencyInSeconds",
+        "Size": "0x4",
+        "Offset": "0x430"
+      },
+      {
+        "Type": "float",
+        "Name": "SunriseTimeHours",
+        "Size": "0x4",
+        "Offset": "0x434"
+      },
+      {
+        "Type": "float",
+        "Name": "SunsetTimeHours",
+        "Size": "0x4",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "float",
+        "Name": "LocalTimeUpdateAdjustMaxTimeDelta",
+        "Size": "0x4",
+        "Offset": "0x43c"
+      },
+      {
+        "Type": "float",
+        "Name": "MinLocalTimeUpdateAdjustPercentageToSlowDown",
+        "Size": "0x4",
+        "Offset": "0x440"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxLocalTimeUpdateAdjustPercentageToSlowDown",
+        "Size": "0x4",
+        "Offset": "0x444"
+      },
+      {
+        "Type": "float",
+        "Name": "MinLocalTimeUpdateAdjustPercentageToSpeedUp",
+        "Size": "0x4",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxLocalTimeUpdateAdjustPercentageToSpeedUp",
+        "Size": "0x4",
+        "Offset": "0x44c"
+      },
+      {
+        "Type": "Struct ReplicatedAuthoritativeTime",
+        "Name": "ReplicatedServerTime",
+        "Size": "0x10",
+        "Offset": "0x4a0"
+      }
+    ]
+  },
+  "DebugTimeService": {
+    "Super": "TimeService",
+    "FullSize": "0x4e8",
+    "InheritedSize": "0x4e0",
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "CustomizableTimeService": {
+    "Super": "DebugTimeService",
+    "FullSize": "0x4f0",
+    "InheritedSize": "0x4e8",
+    "ClassSize": "0x8",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "DarkTides_HexingSkullSoldEntitlement_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DarkTides_RuneTabletSoldEntitlement_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

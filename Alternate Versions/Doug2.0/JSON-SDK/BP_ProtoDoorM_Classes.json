@@ -1,0 +1,126 @@
+{
+  "BP_ProtoDoorMechanism_GalleonSide_C": {
+    "Super": "DoorMechanism",
+    "FullSize": "0x5c1",
+    "InheritedSize": "0x580",
+    "ClassSize": "0x41",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x580"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "OpenJumpToLocation",
+        "Size": "0x8",
+        "Offset": "0x588"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "ClosedJumpToLocation",
+        "Size": "0x8",
+        "Offset": "0x590"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "OpenKnockbackDirection",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "ClosedKnockbackDirection",
+        "Size": "0x8",
+        "Offset": "0x5a0"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "InteractionPoint",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "OpenVolume",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "ClosedVolume",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Type": "bool",
+        "Name": "EnableJumpToLocation",
+        "Size": "0x1",
+        "Offset": "0x5c0"
+      }
+    ]
+  },
+  "BP_ProtoDoorMechanism_GalleonFront_C": {
+    "Super": "DoorMechanism",
+    "FullSize": "0x5c1",
+    "InheritedSize": "0x580",
+    "ClassSize": "0x41",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x580"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "OpenJumpToLocation",
+        "Size": "0x8",
+        "Offset": "0x588"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "ClosedJumpToLocation",
+        "Size": "0x8",
+        "Offset": "0x590"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "OpenKnockbackDirection",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "ClosedKnockbackDirection",
+        "Size": "0x8",
+        "Offset": "0x5a0"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "InteractionPoint",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "OpenVolume",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "ClosedVolume",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Type": "bool",
+        "Name": "EnableJumpToLocation",
+        "Size": "0x1",
+        "Offset": "0x5c0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "ContextualTutorialPromptDesc": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "PromptActorClass",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "class",
+        "Name": "AccessKey",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "FeatureName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "int",
+        "Name": "MustBeUnderCount",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EventTutorialTypeDecided": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "TutorialType",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "BeachNPCSpawnFlowNetworkEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "HasTaleCheckpointVoyage",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "TutorialStepEndedTelemetryEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "SequenceName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "StepName",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "bool",
+        "Name": "StepCompleted",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsFinalStep",
+        "Size": "0x1",
+        "Offset": "0x21"
+      }
+    ]
+  },
+  "TutorialShowTutorialLegendaryTavernStrangerEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  }
+}

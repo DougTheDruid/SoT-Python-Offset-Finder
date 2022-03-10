@@ -1,0 +1,60 @@
+{
+  "ZoomedInOnWieldableItemActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ZoomInOnWieldableItemInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ZoomInOnWieldableItemComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "FeatureName",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "float",
+        "Name": "ZoomedInFov",
+        "Size": "0x4",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "float",
+        "Name": "FreelookPitch",
+        "Size": "0x4",
+        "Offset": "0xdc"
+      },
+      {
+        "Type": "float",
+        "Name": "FreelookYaw",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "float",
+        "Name": "FreelookOutInterpolationRate",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
+        "Type": "float",
+        "Name": "LookSensitivityScaler",
+        "Size": "0x4",
+        "Offset": "0xe8"
+      }
+    ]
+  }
+}

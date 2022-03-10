@@ -1,0 +1,330 @@
+{
+  "AthenaFFTWater": {
+    "Super": "FFTWater",
+    "FullSize": "0x440",
+    "InheritedSize": "0x418",
+    "ClassSize": "0x28",
+    "Attributes": []
+  },
+  "WaterEmissionVolumeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AthenaWaterEmissionVolume": {
+    "Super": "WaterEmissionVolume",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "FFTWaterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterProperties": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct GetActorWaterInformation>",
+        "Name": "WaterInfo",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WaterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FFTWaterService": {
+    "Super": "Actor",
+    "FullSize": "0x450",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Type": "double",
+        "Name": "ReplicatedServerCreationTime",
+        "Size": "0x8",
+        "Offset": "0x448"
+      }
+    ]
+  },
+  "FlatWaterPlaneComponent": {
+    "Super": "BaseWaterComponent",
+    "FullSize": "0x5d0",
+    "InheritedSize": "0x5c0",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "MockWaterInterface": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "MockWaterServiceWithValidWaterPlane": {
+    "Super": "MockWaterInterface",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class FFTWaterComponent*",
+        "Name": "DefaultWaterComponent",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "NoSwimWaterId": {
+    "Super": "WaterId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SeaWaterId": {
+    "Super": "WaterId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShipWaterId": {
+    "Super": "WaterId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SplashProbeDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct AttachProbesToComponent>",
+        "Name": "Probes",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "SplashProbeVFXComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x118",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Class SplashProbeDataAsset*",
+        "Name": "Probes",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "Class SplashProbeDataAsset*",
+        "Name": "ProbesInstance",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "Struct ActorComponentSelector",
+        "Name": "AttachProbesToOwner",
+        "Size": "0x10",
+        "Offset": "0x100"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "AttachProbesToComponent",
+        "Size": "0x8",
+        "Offset": "0x110"
+      }
+    ]
+  },
+  "UndergroundSeaWaterId": {
+    "Super": "WaterId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterBuoyancyFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterBuoyancySampleMovementFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterEmissionVolumeService": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "WaterExclusionSurfaceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterPlaneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterInteractionComponent": {
+    "Super": "BoxComponent",
+    "FullSize": "0x600",
+    "InheritedSize": "0x5e0",
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "WaterPlaneExclusionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct ActorComponentSelector",
+        "Name": "UseSpecificComponentForOverlaps",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "WaterPlaneRetrievalProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterSplashProbeFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterSpoutVFXComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x158",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct IsEnabled>",
+        "Name": "WaterSpouts",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "SplashEffectPointBottomZ",
+        "Size": "0xc",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "SpoutParticleSystem",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "SplashParticleSystem",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "float",
+        "Name": "WaterSplashDelayMin",
+        "Size": "0x4",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "float",
+        "Name": "WaterSplashDelayMax",
+        "Size": "0x4",
+        "Offset": "0xfc"
+      },
+      {
+        "Type": "float",
+        "Name": "SplashEffectVFXOffset",
+        "Size": "0x4",
+        "Offset": "0x100"
+      },
+      {
+        "Type": "float",
+        "Name": "SplashSweepRadius",
+        "Size": "0x4",
+        "Offset": "0x104"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShouldSpawnKillPlaneAtSplash",
+        "Size": "0x1",
+        "Offset": "0x108"
+      },
+      {
+        "Type": "Class StaticMesh*",
+        "Name": "SplashKillPlaneMesh",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "SplashKillPlaneScale",
+        "Size": "0xc",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "SplashKillPlane",
+        "Size": "0x8",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "TArray<Struct SplashKillPlane>",
+        "Name": "ActiveWaterSpouts",
+        "Size": "0x10",
+        "Offset": "0x130"
+      }
+    ]
+  },
+  "WaterVolumeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "SeasonProgressionExclusionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SeasonProgressionExclusionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "ShouldBeExcludedFromSeasonProgessionValue",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      }
+    ]
+  }
+}

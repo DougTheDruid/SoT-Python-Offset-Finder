@@ -1,0 +1,16 @@
+{
+  "BP_BaseClamberSpot_C": {
+    "Super": "ClamberSpot",
+    "FullSize": "0x600",
+    "InheritedSize": "0x5f0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct CallFunc_IsValid_ReturnValue8>",
+        "Name": "ClamberSplinePoints",
+        "Size": "0x10",
+        "Offset": "0x5f0"
+      }
+    ]
+  }
+}

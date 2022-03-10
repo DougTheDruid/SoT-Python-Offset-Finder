@@ -1,0 +1,37 @@
+{
+  "Title_AshenSeeker_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_ScholarofCurses_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_BigHeartedBuccaneer_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_PiratePresentPursuer_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_ScholarofPower_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

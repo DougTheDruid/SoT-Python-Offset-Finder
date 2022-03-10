@@ -1,0 +1,298 @@
+{
+  "BP_Prompt_EmissaryEncounteredAIShip_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x1a8",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_EmissaryEncounteredAIShip",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "CompanyName",
+        "Size": "0x8",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "bool",
+        "Name": "SurfacedThisSession",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "ExpectedCompanyName",
+        "Size": "0x8",
+        "Offset": "0x174"
+      },
+      {
+        "Type": "TArray<Struct Prompts>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x180"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptAccessKey",
+        "Size": "0x8",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "int",
+        "Name": "PromptIndex",
+        "Size": "0x4",
+        "Offset": "0x198"
+      },
+      {
+        "Type": "int",
+        "Name": "NumberOfPrompts",
+        "Size": "0x4",
+        "Offset": "0x19c"
+      },
+      {
+        "Type": "float",
+        "Name": "InitialDelay",
+        "Size": "0x4",
+        "Offset": "0x1a0"
+      },
+      {
+        "Type": "float",
+        "Name": "ShowPromptDuration",
+        "Size": "0x4",
+        "Offset": "0x1a4"
+      }
+    ]
+  },
+  "BP_Prompt_EmissaryEncounteredKraken_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x1a8",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_EmissaryEncounteredKraken",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "CompanyName",
+        "Size": "0x8",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "bool",
+        "Name": "SurfacedThisSession",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "ExpectedCompanyName",
+        "Size": "0x8",
+        "Offset": "0x174"
+      },
+      {
+        "Type": "TArray<Struct NewParam>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x180"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptAccessKey",
+        "Size": "0x8",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "int",
+        "Name": "PromptIndex",
+        "Size": "0x4",
+        "Offset": "0x198"
+      },
+      {
+        "Type": "int",
+        "Name": "NumberOfPrompts",
+        "Size": "0x4",
+        "Offset": "0x19c"
+      },
+      {
+        "Type": "float",
+        "Name": "InitialDelay",
+        "Size": "0x4",
+        "Offset": "0x1a0"
+      },
+      {
+        "Type": "float",
+        "Name": "ShowPromptDuration",
+        "Size": "0x4",
+        "Offset": "0x1a4"
+      }
+    ]
+  },
+  "BP_Prompt_EmissaryEncounteredSkellyFort_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x1a8",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_EmissaryEncounteredSkellyFort",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "CompanyName",
+        "Size": "0x8",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "bool",
+        "Name": "SurfacedThisSession",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "ExpectedCompanyName",
+        "Size": "0x8",
+        "Offset": "0x174"
+      },
+      {
+        "Type": "TArray<Struct Prompts>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x180"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptAccessKey",
+        "Size": "0x8",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "int",
+        "Name": "PromptIndex",
+        "Size": "0x4",
+        "Offset": "0x198"
+      },
+      {
+        "Type": "int",
+        "Name": "NumberOfPrompts",
+        "Size": "0x4",
+        "Offset": "0x19c"
+      },
+      {
+        "Type": "float",
+        "Name": "InitialDelay",
+        "Size": "0x4",
+        "Offset": "0x1a0"
+      },
+      {
+        "Type": "float",
+        "Name": "ShowPromptDuration",
+        "Size": "0x4",
+        "Offset": "0x1a4"
+      }
+    ]
+  },
+  "BP_Prompt_EmissaryEntitlementPurchased_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x1b8",
+    "InheritedSize": "0x118",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_EmissaryEntitlementPurchased",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "OfferId",
+        "Size": "0x10",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "ExpectedOfferId",
+        "Size": "0x10",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "TArray<Struct Prompts>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x188"
+      },
+      {
+        "Type": "bool",
+        "Name": "PromptSurfacedThisSession",
+        "Size": "0x1",
+        "Offset": "0x198"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptAccessKey",
+        "Size": "0x8",
+        "Offset": "0x1a0"
+      },
+      {
+        "Type": "int",
+        "Name": "PromptIndex",
+        "Size": "0x4",
+        "Offset": "0x1a8"
+      },
+      {
+        "Type": "int",
+        "Name": "NumberOfPrompts",
+        "Size": "0x4",
+        "Offset": "0x1ac"
+      },
+      {
+        "Type": "float",
+        "Name": "InitialDelay",
+        "Size": "0x4",
+        "Offset": "0x1b0"
+      },
+      {
+        "Type": "float",
+        "Name": "ShowPromptDuration",
+        "Size": "0x4",
+        "Offset": "0x1b4"
+      }
+    ]
+  }
+}

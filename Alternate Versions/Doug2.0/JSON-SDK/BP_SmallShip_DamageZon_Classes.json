@@ -1,0 +1,30 @@
+{
+  "BP_SmallShip_DamageZone_MezzanineDeck_01_C": {
+    "Super": "BP_BaseInternalDamageZone_C",
+    "FullSize": "0x868",
+    "InheritedSize": "0x868",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_SmallShip_DamageZone_MezzanineDeck_00_C": {
+    "Super": "BP_BaseInternalDamageZone_C",
+    "FullSize": "0x868",
+    "InheritedSize": "0x868",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_SmallShip_DamageZone_LowerDeck_01_C": {
+    "Super": "BP_BaseInternalDamageZone_C",
+    "FullSize": "0x868",
+    "InheritedSize": "0x868",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_SmallShip_DamageZone_LowerDeck_00_C": {
+    "Super": "BP_BaseInternalDamageZone_C",
+    "FullSize": "0x868",
+    "InheritedSize": "0x868",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

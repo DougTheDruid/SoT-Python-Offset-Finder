@@ -1,0 +1,160 @@
+{
+  "BP_PlayerPirate_C": {
+    "Super": "AthenaPlayerCharacter",
+    "FullSize": "0x1b34",
+    "InheritedSize": "0x1a60",
+    "ClassSize": "0xd4",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x1a60"
+      },
+      {
+        "Type": "Class ChainLightningReceiverComponent*",
+        "Name": "ChainLightningReceiver",
+        "Size": "0x8",
+        "Offset": "0x1a68"
+      },
+      {
+        "Type": "Class StatusApplicationMonitorComponent*",
+        "Name": "StatusApplicationMonitor",
+        "Size": "0x8",
+        "Offset": "0x1a70"
+      },
+      {
+        "Type": "Class ReviveComponent*",
+        "Name": "ReviveComponent",
+        "Size": "0x8",
+        "Offset": "0x1a78"
+      },
+      {
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Name": "AnimNotifyWwiseEmitter",
+        "Size": "0x8",
+        "Offset": "0x1a80"
+      },
+      {
+        "Type": "Class VomitComponent*",
+        "Name": "Vomit",
+        "Size": "0x8",
+        "Offset": "0x1a88"
+      },
+      {
+        "Type": "Class NoiseMakerComponent*",
+        "Name": "NoiseMaker",
+        "Size": "0x8",
+        "Offset": "0x1a90"
+      },
+      {
+        "Type": "Class PlayerNameplateComponent*",
+        "Name": "PlayerNameplate",
+        "Size": "0x8",
+        "Offset": "0x1a98"
+      },
+      {
+        "Type": "Class BodyLightControllerComponent*",
+        "Name": "BodyLightController",
+        "Size": "0x8",
+        "Offset": "0x1aa0"
+      },
+      {
+        "Type": "Class AmbientLightSourceComponent*",
+        "Name": "BodyLight",
+        "Size": "0x8",
+        "Offset": "0x1aa8"
+      },
+      {
+        "Type": "Class AudioSpaceTrackerComponent*",
+        "Name": "AudioSpaceTracker",
+        "Size": "0x8",
+        "Offset": "0x1ab0"
+      },
+      {
+        "Type": "Class PlayerAtmosphericsAudioComponent*",
+        "Name": "PlayerAtmosphericsAudio",
+        "Size": "0x8",
+        "Offset": "0x1ab8"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_CharacterVFXComponent_C*",
+        "Name": "BP_CharacterVFXComponent",
+        "Size": "0x8",
+        "Offset": "0x1ac0"
+      },
+      {
+        "Type": "Class WaterInteractionComponent*",
+        "Name": "WaterInteraction",
+        "Size": "0x8",
+        "Offset": "0x1ac8"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_CharacterAudioComponent_C*",
+        "Name": "BP_PlayerAudioComponent",
+        "Size": "0x8",
+        "Offset": "0x1ad0"
+      },
+      {
+        "Type": "Class CharacterFootImpactComponent*",
+        "Name": "CharacterFootImpact",
+        "Size": "0x8",
+        "Offset": "0x1ad8"
+      },
+      {
+        "Type": "Class PlayerOceanAudioComponent*",
+        "Name": "PlayerOceanAudio",
+        "Size": "0x8",
+        "Offset": "0x1ae0"
+      },
+      {
+        "Type": "float",
+        "Name": "TattooGlowDuration",
+        "Size": "0x4",
+        "Offset": "0x1ae8"
+      },
+      {
+        "Type": "Class StaticMesh*",
+        "Name": "CurrentStaticMesh",
+        "Size": "0x8",
+        "Offset": "0x1af0"
+      },
+      {
+        "Type": "Class SkeletalMesh*",
+        "Name": "CurrentSkeletalMesh",
+        "Size": "0x8",
+        "Offset": "0x1af8"
+      },
+      {
+        "Type": "TArray<class SkeletalMeshArray*>",
+        "Name": "SkeletalMeshArray",
+        "Size": "0x10",
+        "Offset": "0x1b00"
+      },
+      {
+        "Type": "TArray<class StaticMeshArray*>",
+        "Name": "StaticMeshArray",
+        "Size": "0x10",
+        "Offset": "0x1b10"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsSkeletalMesh",
+        "Size": "0x1",
+        "Offset": "0x1b20"
+      },
+      {
+        "Type": "int",
+        "Name": "ItemSelectArray",
+        "Size": "0x4",
+        "Offset": "0x1b24"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "ItemScale",
+        "Size": "0xc",
+        "Offset": "0x1b28"
+      }
+    ]
+  }
+}

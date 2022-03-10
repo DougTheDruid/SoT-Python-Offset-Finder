@@ -1,0 +1,34 @@
+{
+  "BP_PromptActorBase_C": {
+    "Super": "Actor",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsCompleted",
+        "Size": "0x1",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "TArray<class PromptCoordinators*>",
+        "Name": "PromptCoordinators",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      }
+    ]
+  }
+}

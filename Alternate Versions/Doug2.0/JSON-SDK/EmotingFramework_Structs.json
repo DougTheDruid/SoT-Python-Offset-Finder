@@ -1,0 +1,180 @@
+{
+  "EmoteData": {
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Type": "Struct EmoteId",
+        "Name": "EmoteId",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FText",
+        "Name": "EmoteDisplayName",
+        "Size": "0x38",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct FText",
+        "Name": "AudioDescription",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "float",
+        "Name": "DelayBeforeAllowingExit",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Type": "float",
+        "Name": "VerticalOffsetFactorWhenZoomed",
+        "Size": "0x4",
+        "Offset": "0x7c"
+      },
+      {
+        "Type": "bool",
+        "Name": "HideNameplate",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "Class EmotePropData*",
+        "Name": "EmotePropDataAsset",
+        "Size": "0x8",
+        "Offset": "0x88"
+      },
+      {
+        "Type": "bool",
+        "Name": "CanPlayInSuccession",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShowDescriptionInTextChat",
+        "Size": "0x1",
+        "Offset": "0x91"
+      }
+    ]
+  },
+  "EmoteId": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "EmoteId",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventEmoteEndRequested": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "EmoteIdentifier",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "EndForcedEmote",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventEndEmoteAnimation": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventEmoteSwapped": {
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Type": "Struct EmoteData",
+        "Name": "EmoteData",
+        "Size": "0x98",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventEmoteCompleted": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "EmoteName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventEmoteStarted": {
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Type": "Struct EmoteData",
+        "Name": "EmoteData",
+        "Size": "0x98",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventEmoteRequested": {
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Type": "Struct EmoteData",
+        "Name": "EmoteData",
+        "Size": "0x98",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "ForcedEmoteIdentifier",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Type": "bool",
+        "Name": "ForcedEmote",
+        "Size": "0x1",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "EmoteDiceOutcomeTelemetryEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "MaxLimit",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "RollNumber",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "OrientationUsed",
+        "Size": "0xc",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventDisableLookAtEmoteCamera": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventEnableLookAtEmoteCamera": {
+    "ClassSize": "0x8",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "WeightedVolcanoProjectile": {
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "Weight",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "class",
+        "Name": "ProjectileClass",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "ProjectileSpeedMinAtInnerRadius",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "ProjectileSpeedMaxAtInnerRadius",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "float",
+        "Name": "ProjectileSpeedMinAtOuterRadius",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "ProjectileSpeedMaxAtOuterRadius",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Type": "float",
+        "Name": "ProjectileGravityScale",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "RotationRatePitch",
+        "Size": "0x30",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "RotationRateRoll",
+        "Size": "0x30",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "RotationRateYaw",
+        "Size": "0x30",
+        "Offset": "0x88"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "LaunchAudioPlayEvent",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "VolcanoTarget": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "Type",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "HitType",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "Target",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "int",
+        "Name": "NumExtraShots",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "VolcanoTargetChances": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "OnTarget",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "NearMiss",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "Random",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRange",
+        "Name": "OnTargetNumExtraShots",
+        "Size": "0x20",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRange",
+        "Name": "NearMissNumExtraShots",
+        "Size": "0x20",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "CoolDownDuration",
+        "Size": "0x4",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "VolcanoSetupDataEmbersEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "MaxDistanceInMetres",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "Effect",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WeightedAshenLordVolcanoProjectile": {
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "Weight",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "GravityMultiplier",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "Speed",
+        "Size": "0x30",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "RotationRatePitch",
+        "Size": "0x30",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "RotationRateRoll",
+        "Size": "0x30",
+        "Offset": "0x68"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "RotationRateYaw",
+        "Size": "0x30",
+        "Offset": "0x98"
+      },
+      {
+        "Type": "class",
+        "Name": "ProjectileClass",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "AshenLordWorldEndCloudAnimation": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "ServerStartTime",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "ServerLifeTime",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "PlayerFeedback": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Type": "Struct EarthquakeForceFeedback",
+        "Name": "ForceFeedback",
+        "Size": "0x40",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Class ForceFeedback>",
+        "Name": "CameraShakes",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "StaggerStrength",
+        "Size": "0x30",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "EarthquakeForceFeedback": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct EarthquakeForceFeedbackOption>",
+        "Name": "ForceFeedbackOptions",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "TimeBetweenRumbles",
+        "Size": "0x30",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EarthquakeForceFeedbackOption": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct GeyserSpawnAngleOption>",
+        "Name": "ForceFeedback",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GeyserSpawnAngleOption": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "Weight",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Direction",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "Range",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "VolcanoTargetCoolDown": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Target",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "VolcanoProjectileData": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "WeightedVolcanoProjectileIndex",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "LaunchVelocity",
+        "Size": "0xc",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "RotationRate",
+        "Size": "0xc",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "VolcanoStateData": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "State",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "StateDuration",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "PercentageOfMaxTargetingRange",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventVolcanoStateChanged": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "State",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

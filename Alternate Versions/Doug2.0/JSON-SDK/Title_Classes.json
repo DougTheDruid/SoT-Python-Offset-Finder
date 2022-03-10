@@ -1,0 +1,44 @@
+{
+  "Title_ScholarOfFire_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_TributeBringer_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_ChroniclerOfLegend_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MerchantOf_LostShipmentsTitle1_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MerchantOf_LostShipmentsTitle2_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_SunkenKingdom_LegendOfTheSunkenKingdom_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

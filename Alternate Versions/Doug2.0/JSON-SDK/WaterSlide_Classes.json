@@ -1,0 +1,194 @@
+{
+  "WaterSlideParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct WaterSlideParams",
+        "Name": "WaterSlideParams",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WaterSlide": {
+    "Super": "Actor",
+    "FullSize": "0x450",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Type": "Class SplineComponent*",
+        "Name": "SlideSpline",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "Root",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class WaterSlideParamsDataAsset*",
+        "Name": "WaterSlideParamsDataAsset",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class PrimitiveComponent*",
+        "Name": "EntranceCollisionComponent",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class WaterSlide*",
+        "Name": "ContinuedWaterSlideRoute",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class WaterSlide*",
+        "Name": "LeftWaterSlideRoute",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class WaterSlide*",
+        "Name": "RightWaterSlideRoute",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsEndOfSlide",
+        "Size": "0x1",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "EndOfSlideLaunchForce",
+        "Size": "0xc",
+        "Offset": "0x414"
+      },
+      {
+        "Type": "Class WaterSlideAudioParams*",
+        "Name": "WaterSlideAudioParams",
+        "Size": "0x8",
+        "Offset": "0x420"
+      }
+    ]
+  },
+  "WaterSlideActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterSlideAudioParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "WaterSlideStart",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "WaterSlideEnd",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "WaterSlideIsEndOneShot",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "WaterSlideChangeForkOneShot",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "PlayerSpeedOnWaterSlideRTPC",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "float",
+        "Name": "PlayerSpeedThatMapsToOne",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "float",
+        "Name": "PlayerSpeedThatMapsToZero",
+        "Size": "0x4",
+        "Offset": "0x54"
+      }
+    ]
+  },
+  "WaterSlideInputComponent": {
+    "Super": "LookAtOffsetInputComponent",
+    "FullSize": "0x290",
+    "InheritedSize": "0x280",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "WaterSlidePlayerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterSlidePlayerComponent": {
+    "Super": "DoubleIntentComponent",
+    "FullSize": "0x118",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "PlayerWaterSlideSplashingVFXComponent",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "Class ParticleSystem*",
+        "Name": "PlayerWaterSlideSplashingVFX",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "float",
+        "Name": "SpawnLocationZOffset",
+        "Size": "0x4",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "Class WaterSlide*",
+        "Name": "CurrentWaterSlide",
+        "Size": "0x8",
+        "Offset": "0x110"
+      }
+    ]
+  },
+  "WaterSlideVeeringAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

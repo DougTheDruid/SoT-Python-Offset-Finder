@@ -1,0 +1,53 @@
+{
+  "MeleeAttackIdWeights": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "MeleeAttackType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Weight",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AshenLordFireShroudParams": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "FireShroudZoneClass",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "FireShroudCollisionVolume",
+        "Size": "0xc",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AshenLordFireShroud": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class StatusEffectOverlapZone*",
+        "Name": "FireShroudOverlapZone",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct AshenLordFireShroudParams",
+        "Name": "Params",
+        "Size": "0x18",
+        "Offset": "0x8"
+      }
+    ]
+  }
+}

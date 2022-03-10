@@ -1,0 +1,16 @@
+{
+  "BP_FogBank_C": {
+    "Super": "FogBank",
+    "FullSize": "0x540",
+    "InheritedSize": "0x538",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class AthenaPlayerZonePenetrationTrackerComponent*",
+        "Name": "AthenaPlayerZonePenetrationTracker",
+        "Size": "0x8",
+        "Offset": "0x538"
+      }
+    ]
+  }
+}

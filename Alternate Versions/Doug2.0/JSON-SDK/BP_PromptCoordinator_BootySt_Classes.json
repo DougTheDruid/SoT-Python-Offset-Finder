@@ -1,0 +1,106 @@
+{
+  "BP_PromptCoordinator_BootyStorage_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x2e8",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShowLootPrompt",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShowMermaidPrompt",
+        "Size": "0x1",
+        "Offset": "0x121"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasUsedStatue",
+        "Size": "0x1",
+        "Offset": "0x122"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasRetrievedLoot",
+        "Size": "0x1",
+        "Offset": "0x123"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "MermaidPrompt",
+        "Size": "0x68",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "LootPrompt",
+        "Size": "0x68",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "CrewStorageChangedHandle",
+        "Size": "0x48",
+        "Offset": "0x1f8"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "CrewStorageFullHandle",
+        "Size": "0x48",
+        "Offset": "0x240"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "ItemsRetrievedHandle",
+        "Size": "0x48",
+        "Offset": "0x288"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "RetrieveActorHandle",
+        "Size": "0x48",
+        "Offset": "0x2d0"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "WieldedEventHandle",
+        "Size": "0x48",
+        "Offset": "0x318"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptKey",
+        "Size": "0x8",
+        "Offset": "0x360"
+      },
+      {
+        "Type": "Class WieldableItem*",
+        "Name": "CurrentlyWieldedItem",
+        "Size": "0x8",
+        "Offset": "0x368"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "StowedEventHandle",
+        "Size": "0x48",
+        "Offset": "0x370"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "RetrieveActorDespawnHandle",
+        "Size": "0x48",
+        "Offset": "0x3b8"
+      }
+    ]
+  }
+}

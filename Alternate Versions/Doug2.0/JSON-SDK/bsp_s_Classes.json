@@ -1,0 +1,436 @@
+{
+  "bsp_sea_rock_cluster_g_C": {
+    "Super": "Actor",
+    "FullSize": "0x418",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent06",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent05",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent04",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent03",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent02",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent01",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent0",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Size": "0x8",
+        "Offset": "0x410"
+      }
+    ]
+  },
+  "bsp_sea_rock_cluster_f_C": {
+    "Super": "Actor",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent04",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent03",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent02",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent01",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent0",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "bsp_sea_rock_cluster_e_C": {
+    "Super": "Actor",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent06",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent05",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent04",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent03",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent02",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent01",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent0",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Size": "0x8",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "bsp_sea_rock_cluster_d_C": {
+    "Super": "Actor",
+    "FullSize": "0x420",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent08",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent07",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent06",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent05",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent04",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent03",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent02",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent01",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent0",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Size": "0x8",
+        "Offset": "0x418"
+      }
+    ]
+  },
+  "bsp_sea_rock_cluster_c_C": {
+    "Super": "Actor",
+    "FullSize": "0x438",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent011",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent010",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent09",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent08",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent07",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent06",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent05",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent04",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent03",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent02",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent01",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent0",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Size": "0x8",
+        "Offset": "0x430"
+      }
+    ]
+  },
+  "bsp_sea_rock_cluster_b_C": {
+    "Super": "Actor",
+    "FullSize": "0x418",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "bsp_rock_cliff_01_j",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "bsp_rock_cliff_01_k",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "bsp_rock_cliff_01_h",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "bsp_rock_cliff_01_b",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent03",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent02",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent01",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent0",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Size": "0x8",
+        "Offset": "0x410"
+      }
+    ]
+  },
+  "bsp_sea_rock_cluster_a_C": {
+    "Super": "Actor",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "bsp_rock_cliff_01_g",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "bsp_rock_cliff_01_e",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "bsp_sea_rocks_e",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "bsp_rock_cliff_01_i",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "bsp_sea_rocks_a",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent01",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent0",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Size": "0x8",
+        "Offset": "0x408"
+      }
+    ]
+  }
+}

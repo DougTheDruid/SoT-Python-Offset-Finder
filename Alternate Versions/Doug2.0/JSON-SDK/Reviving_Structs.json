@@ -1,0 +1,275 @@
+{
+  "ModeSpecificReviveSettings": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "AssociatedPlaymode",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "DeathCameraBlackFadeDelay",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "DeathCameraBlackFadeDuration",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "DeathCameraBlackFadeEventClientTimeout",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "DeathCameraBlackFadeEventServerTimeout",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "DelayBeforeEvaporate",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "float",
+        "Name": "EvaporateDuration",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "DeathCameraStartDelay",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Type": "float",
+        "Name": "ReviveWindowDuration",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "float",
+        "Name": "GhostFadeDuration",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Type": "Class ReviveSettings*",
+        "Name": "CachedReviveSettings",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ReviveEffectsValues": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "AstralCordPostProcessMID",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PlayerInReviveableStateTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "PlayerRevivalTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "Success",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PostReviveLocomotionActionStateConstructionInfo": {
+    "ClassSize": "0x30",
+    "Attributes": []
+  },
+  "EventRevivableRepresentationSpawnCompleted": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "FromSwimming",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventRevivableRepresentationSpawnStarted": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "ReviveableActionStateConstructionInfo": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "ActionStateId",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct DamageInstance",
+        "Name": "DamageInstance",
+        "Size": "0x28",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "byte",
+        "Name": "CharacterDeathType",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "byte",
+        "Name": "CharacterType",
+        "Size": "0x1",
+        "Offset": "0x61"
+      }
+    ]
+  },
+  "RevivedActionStateConstructionInfo": {
+    "ClassSize": "0x30",
+    "Attributes": []
+  },
+  "RevivedActionStateParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "HealthRegained",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "ReviveDuration",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "ReviveGaspAudio",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ReviveableActionStateStarted": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventCharacterDiedDuringReviving": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class Character*",
+        "Name": "OwningCharacter",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventRevivePlayerActionStateLeft": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventRevivePlayerActionStateEntered": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventCharacterFullyRevived": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "ReviveEndedEarlyEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventRevivableRepresentationReturnedToBody": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "SuccessfulReviveEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "BeingRevivedStoppedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "BeingRevivedStartedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "RevivableCharacterGhostlyBodyEvaporateStarted": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "RevivingWindowEnd": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "RevivingWindowStart": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct DamageInstance",
+        "Name": "DamageInstance",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "CharacterDeathType",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Class Character*",
+        "Name": "RevivableCharacter",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "RevivePlayerActionStateConstructionInfo": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Struct NetActorPtr",
+        "Name": "CharacterReviving",
+        "Size": "0x14",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct NetSubObjectPtr",
+        "Name": "CharacterBeingRevived",
+        "Size": "0x14",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "class",
+        "Name": "InputID",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  }
+}

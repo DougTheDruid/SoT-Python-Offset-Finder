@@ -1,0 +1,54 @@
+{
+  "InputChord": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct Key",
+        "Name": "Key",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bShift",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCtrl",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "bool",
+        "Name": "bAlt",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCmd",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "Anchors": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct Vector2D",
+        "Name": "Minimum",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector2D",
+        "Name": "Maximum",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "EditorStyleSettings": {
+    "Super": "Object",
+    "FullSize": "0x90",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Type": "Struct LinearColor",
+        "Name": "SelectionColor",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct LinearColor",
+        "Name": "PressedSelectionColor",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Struct LinearColor",
+        "Name": "InactiveSelectionColor",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct LinearColor",
+        "Name": "KeyboardFocusColor",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "byte",
+        "Name": "ColorVisionDeficiencyPreviewType",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Type": "bool",
+        "Name": "bUseSmallToolBarIcons",
+        "Size": "0x1",
+        "Offset": "0x6c"
+      },
+      {
+        "Type": "bool",
+        "Name": "bEnableWindowAnimations",
+        "Size": "0x1",
+        "Offset": "0x6c"
+      },
+      {
+        "Type": "bool",
+        "Name": "bShowFriendlyNames",
+        "Size": "0x1",
+        "Offset": "0x6c"
+      },
+      {
+        "Type": "bool",
+        "Name": "bExpandConfigurationMenus",
+        "Size": "0x1",
+        "Offset": "0x6c"
+      },
+      {
+        "Type": "bool",
+        "Name": "bShowProjectMenus",
+        "Size": "0x1",
+        "Offset": "0x6c"
+      },
+      {
+        "Type": "bool",
+        "Name": "bShowLaunchMenus",
+        "Size": "0x1",
+        "Offset": "0x6c"
+      },
+      {
+        "Type": "byte",
+        "Name": "LogTimestampMode",
+        "Size": "0x1",
+        "Offset": "0x70"
+      },
+      {
+        "Type": "bool",
+        "Name": "bOpenAssetEditorTabsInNewWindow",
+        "Size": "0x1",
+        "Offset": "0x71"
+      }
+    ]
+  }
+}

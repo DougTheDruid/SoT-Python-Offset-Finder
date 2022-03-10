@@ -1,0 +1,16 @@
+{
+  "BP_CollectorsChest_ItemInfo_C": {
+    "Super": "CollectorsChestItemInfo",
+    "FullSize": "0x7b8",
+    "InheritedSize": "0x7b0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      }
+    ]
+  }
+}

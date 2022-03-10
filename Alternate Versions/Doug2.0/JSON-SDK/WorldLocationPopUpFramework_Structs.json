@@ -1,0 +1,25 @@
+{
+  "PlayerEnteredWorldLocationNotificationEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class PopUpAudioDesc*",
+        "Name": "AudioOverride",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "IconPath",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DisplayText",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  }
+}

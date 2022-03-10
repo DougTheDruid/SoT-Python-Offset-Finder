@@ -1,0 +1,52 @@
+{
+  "BP_Prompt_QuickStorageTransfer_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x248",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_Complete",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_ShowPrompt",
+        "Size": "0x1",
+        "Offset": "0x121"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_QuickStorageTransfer_Take",
+        "Size": "0x68",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_QuickStorageTransfer_Add",
+        "Size": "0x68",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_ShowAdd",
+        "Size": "0x1",
+        "Offset": "0x1f8"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_ObjectWielded",
+        "Size": "0x48",
+        "Offset": "0x200"
+      }
+    ]
+  }
+}

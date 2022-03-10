@@ -1,0 +1,82 @@
+{
+  "BP_ItemPreview_C": {
+    "Super": "ItemPreviewActor",
+    "FullSize": "0x620",
+    "InheritedSize": "0x590",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x590"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Dog",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Far",
+        "Size": "0x8",
+        "Offset": "0x5a0"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Mid",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Near",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Type": "Class BillboardComponent*",
+        "Name": "IconBillboard",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Type": "Class ArrowComponent*",
+        "Name": "Camera_Default",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "ChildActor",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Type": "Class SkeletalMeshComponent*",
+        "Name": "HiddenDftMesh",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Type": "Class SkeletalMeshComponent*",
+        "Name": "ItemMesh",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Type": "Class CameraComponent*",
+        "Name": "Camera",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      }
+    ]
+  }
+}

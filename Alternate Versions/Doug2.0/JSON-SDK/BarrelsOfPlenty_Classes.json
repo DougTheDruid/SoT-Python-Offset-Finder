@@ -1,0 +1,69 @@
+{
+  "BarrelsOfPlentyDebugSpawnLocation": {
+    "Super": "Actor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct SceneComponent>",
+        "Name": "Objects",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "SpawnCentre",
+        "Size": "0xc",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "float",
+        "Name": "Radius",
+        "Size": "0x4",
+        "Offset": "0x3ec"
+      }
+    ]
+  },
+  "BarrelsOfPlentySpawnProxy": {
+    "Super": "Actor",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class Ship*",
+        "Name": "Ship",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SceneComponent",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      }
+    ]
+  },
+  "SpawnBarrelsOfPlentyStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x90",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SpawnBarrelsOfPlentyStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct QuestVariableVector",
+        "Name": "LocatorVar",
+        "Size": "0x20",
+        "Offset": "0x80"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "ScalarParamInfo": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "ParamName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "UseWorldTime",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "NewScalarValue",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  }
+}

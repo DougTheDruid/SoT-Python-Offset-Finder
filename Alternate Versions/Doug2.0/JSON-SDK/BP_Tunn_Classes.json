@@ -1,0 +1,160 @@
+{
+  "BP_TunnelOfTheDamnedPortalLocator_WSP_C": {
+    "Super": "PortalLocatorActor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class SphereComponent*",
+        "Name": "SeaRockBounds",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "SignalAnchor",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "CalmWater",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "Visuals",
+        "Size": "0x8",
+        "Offset": "0x420"
+      }
+    ]
+  },
+  "BP_TunnelOfTheDamnedPortal_WSP_C": {
+    "Super": "BP_TunnelOfTheDamnedPortal_Ship_C",
+    "FullSize": "0x658",
+    "InheritedSize": "0x650",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "PortalEffects",
+        "Size": "0x8",
+        "Offset": "0x650"
+      }
+    ]
+  },
+  "BP_TunnelOfTheDamnedPortalLocator_WLD_C": {
+    "Super": "PortalLocatorActor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class SphereComponent*",
+        "Name": "SeaRockBounds",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "SignalAnchor",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "CalmWater",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "Visuals",
+        "Size": "0x8",
+        "Offset": "0x420"
+      }
+    ]
+  },
+  "BP_TunnelOfTheDamnedPortal_WLD_C": {
+    "Super": "BP_TunnelOfTheDamnedPortal_Ship_C",
+    "FullSize": "0x658",
+    "InheritedSize": "0x650",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "PortalEffects",
+        "Size": "0x8",
+        "Offset": "0x650"
+      }
+    ]
+  },
+  "BP_TunnelOfTheDamnedPortalLocator_BSP_C": {
+    "Super": "PortalLocatorActor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class SphereComponent*",
+        "Name": "SeaRockBounds",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "SignalAnchor",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "CalmWater",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "Visuals",
+        "Size": "0x8",
+        "Offset": "0x420"
+      }
+    ]
+  },
+  "BP_TunnelOfTheDamnedPortal_BSP_C": {
+    "Super": "BP_TunnelOfTheDamnedPortal_Ship_C",
+    "FullSize": "0x658",
+    "InheritedSize": "0x650",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "PortalEffects",
+        "Size": "0x8",
+        "Offset": "0x650"
+      }
+    ]
+  },
+  "BP_TunnelOfTheDamnedPortal_Ship_C": {
+    "Super": "TunnelOfTheDamnedPortal",
+    "FullSize": "0x650",
+    "InheritedSize": "0x640",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Type": "Class SynchedMusicZoneComponent*",
+        "Name": "SynchedMusicZone",
+        "Size": "0x8",
+        "Offset": "0x648"
+      }
+    ]
+  }
+}

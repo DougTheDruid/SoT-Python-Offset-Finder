@@ -1,0 +1,28 @@
+{
+  "EventExplosionIgnitedActor": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "IgnitedActor",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventOnExploded": {
+    "ClassSize": "0xc",
+    "Attributes": []
+  },
+  "EventExplosionOverlap": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "DamagerType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

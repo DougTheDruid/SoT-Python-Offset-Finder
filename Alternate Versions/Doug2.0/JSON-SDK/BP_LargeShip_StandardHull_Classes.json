@@ -1,0 +1,1712 @@
+{
+  "BP_LargeShip_StandardHull_C": {
+    "Super": "Hull",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Occluder",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "Damage",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "Art",
+        "Size": "0x8",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "BP_LargeShip_StandardHull_Art_C": {
+    "Super": "Actor",
+    "FullSize": "0x6c0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x2f0",
+    "Attributes": [
+      {
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hatch_01_a",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class PostProcessComponent*",
+        "Name": "FirePostProcess",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "Fire_PP_Volume",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "SideDoor",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "FrontDoor",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "StaticDoors",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class PostProcessComponent*",
+        "Name": "PostProcess2",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "captains_PP_Volume_window",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_rain_occlusion",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class SurfaceWaterComponent*",
+        "Name": "SurfaceWater",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_glass_ext_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_glass_ext_01_a_05",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_glass_ext_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_glass_ext_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_glass_ext_01_a_06",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captains_cabin_window_feature_glass_ext_01_a",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Type": "Class MergedStaticMeshComponent*",
+        "Name": "Merged_ExteriorGlass",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Type": "Class PostProcessComponent*",
+        "Name": "PostProcess1",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "Ship_PP_Volume_A",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Type": "Class PostProcessComponent*",
+        "Name": "PostProcess",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "Captain_PP_volume",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_deck_forecastle_steps_01_a",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_forecastle_02_a",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_forecastle_02_a1",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hatch_02_a",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_01_a_06",
+        "Size": "0x8",
+        "Offset": "0x4a8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_window_01_a_05",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x4d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x4d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a_05",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a_06",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a_07",
+        "Size": "0x8",
+        "Offset": "0x4f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a_08",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a_09",
+        "Size": "0x8",
+        "Offset": "0x508"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a",
+        "Size": "0x8",
+        "Offset": "0x510"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a",
+        "Size": "0x8",
+        "Offset": "0x518"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_hatch_01_a",
+        "Size": "0x8",
+        "Offset": "0x520"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_shelf_01_a_06",
+        "Size": "0x8",
+        "Offset": "0x528"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_shelf_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x530"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_shelf_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x538"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_shelf_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x540"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_shelf_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x548"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_shelf_01_a_05",
+        "Size": "0x8",
+        "Offset": "0x550"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captains_cabin_window_feature_01_a",
+        "Size": "0x8",
+        "Offset": "0x558"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_sterncastle_wheel_balustrade_01_a",
+        "Size": "0x8",
+        "Offset": "0x560"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_long_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x568"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_long_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x570"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_long_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x578"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_long_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x580"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_deck_sterncastle_flagpole_01_a",
+        "Size": "0x8",
+        "Offset": "0x588"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_forecastle_curve_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x590"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captains_cabin_balcony_bannister_01_a",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_forecastle_curve_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x5a0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cmn_driftwood_01_a",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_rear_window_01_a",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_captain_cabin_side_door_porch_01_a",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cmn_driftwood_01_a2",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Type": "Class MergedStaticMeshComponent*",
+        "Name": "MergedStaticMesh_col",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_galleon_harpoon_placement_01_a",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_cap_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_cap_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_cap_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_cap_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x5f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_cap_01_a",
+        "Size": "0x8",
+        "Offset": "0x5f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_cap_01_a",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_cap_01_a",
+        "Size": "0x8",
+        "Offset": "0x608"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_balustrade_cap_01_a",
+        "Size": "0x8",
+        "Offset": "0x610"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hull_rudder_hinge_01_a",
+        "Size": "0x8",
+        "Offset": "0x618"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_plaque_01_a",
+        "Size": "0x8",
+        "Offset": "0x620"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_rope_rigging_rear_01_a",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_rope_coil_01_a",
+        "Size": "0x8",
+        "Offset": "0x630"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_rope_coil_02_a",
+        "Size": "0x8",
+        "Offset": "0x638"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_rope_coil_04_a_03",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_rope_coil_04_a_04",
+        "Size": "0x8",
+        "Offset": "0x648"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_rope_coil_04_a_05",
+        "Size": "0x8",
+        "Offset": "0x650"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_mast_trim_01_a",
+        "Size": "0x8",
+        "Offset": "0x658"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_mast_trim_01_a1",
+        "Size": "0x8",
+        "Offset": "0x660"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_mast_trim_01_a2",
+        "Size": "0x8",
+        "Offset": "0x668"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_capstan_trim_01_a",
+        "Size": "0x8",
+        "Offset": "0x670"
+      },
+      {
+        "Type": "Class MergedStaticMeshComponent*",
+        "Name": "MergedStaticMesh",
+        "Size": "0x8",
+        "Offset": "0x678"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cmn_walk_plank_01_a1",
+        "Size": "0x8",
+        "Offset": "0x680"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cmn_walk_plank_01_a",
+        "Size": "0x8",
+        "Offset": "0x688"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "Interior_Captains_Cabin",
+        "Size": "0x8",
+        "Offset": "0x690"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "Interior_Brig_Deck",
+        "Size": "0x8",
+        "Offset": "0x698"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "Interior_Map_Deck",
+        "Size": "0x8",
+        "Offset": "0x6a0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_stern_staircase_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x6a8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_stern_staircase_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x6b0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_galleon_main_deck_01_a",
+        "Size": "0x8",
+        "Offset": "0x6b8"
+      }
+    ]
+  },
+  "BP_LargeShip_StandardHull_Art_Interior_Map_Deck_C": {
+    "Super": "Actor",
+    "FullSize": "0x730",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x360",
+    "Attributes": [
+      {
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "BP_CookingPot",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_cooker_02_a",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_kitchen_worktop_01_a",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_inv_zone_01_a",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_rug_02_a",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_hatch_02_a",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_mast_hull_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_mast_hull_01_a",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_mast_hull_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a_05",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "Class MergedStaticMeshComponent*",
+        "Name": "MergedStaticMesh_col",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a19",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_swing_rope_04_a",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_swing_rope_02_a",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_swing_rope_03_a",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_swing_rope_01_a",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_kitchen_shelf_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_kitchen_extractor_01_a",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_b",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_b_01",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_kitchen_shelf_01_a",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_kitchen_shelf_02_a",
+        "Size": "0x8",
+        "Offset": "0x4a8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x4d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a_05",
+        "Size": "0x8",
+        "Offset": "0x4d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a_07",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a_08",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a_09",
+        "Size": "0x8",
+        "Offset": "0x4f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x508"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a_06",
+        "Size": "0x8",
+        "Offset": "0x510"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x518"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x520"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a_05",
+        "Size": "0x8",
+        "Offset": "0x528"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a_06",
+        "Size": "0x8",
+        "Offset": "0x530"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a_07",
+        "Size": "0x8",
+        "Offset": "0x538"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a_08",
+        "Size": "0x8",
+        "Offset": "0x540"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a_09",
+        "Size": "0x8",
+        "Offset": "0x548"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_block_arm_01_a",
+        "Size": "0x8",
+        "Offset": "0x550"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_floor_beam_01_a",
+        "Size": "0x8",
+        "Offset": "0x558"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_ceiling_beam_01_a_05",
+        "Size": "0x8",
+        "Offset": "0x560"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_floor_beam_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x568"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_floor_beam_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x570"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_floor_beam_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x578"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_ceiling_beam_01_a",
+        "Size": "0x8",
+        "Offset": "0x580"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_ceiling_beam_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x588"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_ceiling_beam_01_a_02",
+        "Size": "0x8",
+        "Offset": "0x590"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_ceiling_beam_01_a_03",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_ceiling_beam_01_a_04",
+        "Size": "0x8",
+        "Offset": "0x5a0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_floor_beam_01_a_01",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a_01",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a_02",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a_03",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a1",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a2",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a1",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a4",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a5",
+        "Size": "0x8",
+        "Offset": "0x5f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a6",
+        "Size": "0x8",
+        "Offset": "0x5f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a7",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a8",
+        "Size": "0x8",
+        "Offset": "0x608"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_ceiling_beam_01_a1",
+        "Size": "0x8",
+        "Offset": "0x610"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a3",
+        "Size": "0x8",
+        "Offset": "0x618"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "ptn_pois_01_a",
+        "Size": "0x8",
+        "Offset": "0x620"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_floor_beam_01_a1",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_fry_pan_01_a",
+        "Size": "0x8",
+        "Offset": "0x630"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "ptn_cure_01_a",
+        "Size": "0x8",
+        "Offset": "0x638"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "ptn_cure_01_a1",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "tls_tankard_01_b1",
+        "Size": "0x8",
+        "Offset": "0x648"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "tls_tankard_01_b2",
+        "Size": "0x8",
+        "Offset": "0x650"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cmn_bottle_01_a2",
+        "Size": "0x8",
+        "Offset": "0x658"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cmn_bottle_01_a",
+        "Size": "0x8",
+        "Offset": "0x660"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "fod_rum_01_a",
+        "Size": "0x8",
+        "Offset": "0x668"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "fod_rum_01_a1",
+        "Size": "0x8",
+        "Offset": "0x670"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cmn_bottle_01_a1",
+        "Size": "0x8",
+        "Offset": "0x678"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "tls_tankard_01_b3",
+        "Size": "0x8",
+        "Offset": "0x680"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_hatch_pull_01_a",
+        "Size": "0x8",
+        "Offset": "0x688"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_hatch_pull_01_a1",
+        "Size": "0x8",
+        "Offset": "0x690"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_hatch_pull_01_a2",
+        "Size": "0x8",
+        "Offset": "0x698"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_hatch_pull_01_a3",
+        "Size": "0x8",
+        "Offset": "0x6a0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a9",
+        "Size": "0x8",
+        "Offset": "0x6a8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a10",
+        "Size": "0x8",
+        "Offset": "0x6b0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a18",
+        "Size": "0x8",
+        "Offset": "0x6b8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a12",
+        "Size": "0x8",
+        "Offset": "0x6c0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a13",
+        "Size": "0x8",
+        "Offset": "0x6c8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a14",
+        "Size": "0x8",
+        "Offset": "0x6d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a15",
+        "Size": "0x8",
+        "Offset": "0x6d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a16",
+        "Size": "0x8",
+        "Offset": "0x6e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a17",
+        "Size": "0x8",
+        "Offset": "0x6e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_02_a11",
+        "Size": "0x8",
+        "Offset": "0x6f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a3",
+        "Size": "0x8",
+        "Offset": "0x6f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_beam_01_a4",
+        "Size": "0x8",
+        "Offset": "0x700"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_ceiling_beam_01_a2",
+        "Size": "0x8",
+        "Offset": "0x708"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_floor_beam_01_c",
+        "Size": "0x8",
+        "Offset": "0x710"
+      },
+      {
+        "Type": "Class MergedStaticMeshComponent*",
+        "Name": "MergedStaticMesh",
+        "Size": "0x8",
+        "Offset": "0x718"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_stairs_01_a",
+        "Size": "0x8",
+        "Offset": "0x720"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_interior_map_deck_01_a",
+        "Size": "0x8",
+        "Offset": "0x728"
+      }
+    ]
+  },
+  "BP_LargeShip_StandardHull_Art_Interior_Captains_Cabin_C": {
+    "Super": "Actor",
+    "FullSize": "0x510",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_candle_chandelier_flame",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_rug_rnd_01_a",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_candle_chandelier_01_a",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_rug_02_a",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_rug_01_a1",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_curtain_03_a",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_chair_01_a",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_bunk_01_a",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_drapes_01_a",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_curtain_01_a",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_curtain_02_a",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabinet_02_a",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cage_01_b",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cage_01_a",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "CaptainsTable",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_tavern_candle_looping_01_a8",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_tavern_candle_looping_01_a1",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_tavern_candle_looping_01_a",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_item_shelf_01_a",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_book_stand_01_a",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabinet_01_a",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_drawer_01_a",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_trunk_01_a",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_trunk_01_a1",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Type": "Class MergedStaticMeshComponent*",
+        "Name": "MergedStaticMesh_col",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "trs_candlestick_01_a",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cmn_candle_01_a",
+        "Size": "0x8",
+        "Offset": "0x4a8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cmn_candle_01_e",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_shark_jaws_01_a",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_books_03_a",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_books_02_a",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_books_01_a",
+        "Size": "0x8",
+        "Offset": "0x4d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_wooden_plaque_01_a",
+        "Size": "0x8",
+        "Offset": "0x4d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_inkwell_01_a",
+        "Size": "0x8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_model_01_a",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_skull_candle_01_a",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "cap_cabin_map_rolls_01_a",
+        "Size": "0x8",
+        "Offset": "0x4f8"
+      },
+      {
+        "Type": "Class MergedStaticMeshComponent*",
+        "Name": "MergedStaticMesh",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_interior_captains_cabin_01_a",
+        "Size": "0x8",
+        "Offset": "0x508"
+      }
+    ]
+  },
+  "BP_LargeShip_StandardHull_Art_Interior_Brig_Deck_C": {
+    "Super": "Actor",
+    "FullSize": "0x4b0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_cell_02_a",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_a6",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_b6",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_a8",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_b5",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_a3",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_b1",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_a1",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_b",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_b2",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_b4",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_b3",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_b7",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "Class MergedStaticMeshComponent*",
+        "Name": "MergedStaticMesh",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_stairs_01_a",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a7",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a6",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_a5",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_brig_beam_01_a4",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a5",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a4",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a3",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a2",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a1",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_int_map_pillar_01_a",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Type": "Class MergedStaticMeshComponent*",
+        "Name": "MergedStaticMesh_col",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_interior_brig_deck_01_a",
+        "Size": "0x8",
+        "Offset": "0x4a8"
+      }
+    ]
+  },
+  "BP_LargeShip_StandardHull_Art_Doors_C": {
+    "Super": "Actor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh1",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      }
+    ]
+  }
+}

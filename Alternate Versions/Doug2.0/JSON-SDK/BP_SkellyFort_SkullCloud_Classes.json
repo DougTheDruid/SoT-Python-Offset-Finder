@@ -1,0 +1,16 @@
+{
+  "BP_SkellyFort_SkullCloud_C": {
+    "Super": "BP_RotatableSignalCloud_C",
+    "FullSize": "0x4c8",
+    "InheritedSize": "0x4c0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      }
+    ]
+  }
+}

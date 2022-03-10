@@ -1,0 +1,196 @@
+{
+  "BoxedRpc": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class ScriptStruct*",
+        "Name": "Type",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PlayModeDefiniton": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "TArray<Str >",
+        "Name": "Tags",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "States",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "int",
+        "Name": "CrewMin",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "int",
+        "Name": "CrewMax",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
+  "SerialisedRpc": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class ScriptStruct*",
+        "Name": "ContentsType",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "ServicesStampId": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "StampId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StringAssetClassPair": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "String",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct StringAssetClassPairFeatureOverride>",
+        "Name": "FeatureOverrides",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StringAssetClassPairFeatureOverride": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "FeatureName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ActorComponentSelector": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "ComponentName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class ActorComponent*",
+        "Name": "CachedComponent",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PlaySoundRpc": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "WwiseEvent",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "bool",
+        "Name": "PlayOnTarget",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EventCancelForceFeedback": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class ForceFeedbackEffect*",
+        "Name": "ForceFeedbackEffect",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "Tag",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventTriggerForceFeedback": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class ForceFeedbackEffect*",
+        "Name": "ForceFeedbackEffect",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "Looping",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "Tag",
+        "Size": "0x8",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "AthenaAsyncAssetLoaderWrapper": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "EventMeshAssigned": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "InlineUserDefinedStructDetails": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ScriptStruct*",
+        "Name": "Struct",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NativeAndUserDefinedStructSelector": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ScriptStruct*",
+        "Name": "Struct",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

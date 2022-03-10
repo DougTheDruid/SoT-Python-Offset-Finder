@@ -1,0 +1,70 @@
+{
+  "CreateActorInstanceOnExplodeComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "ActorToInstance",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "ExplosionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ExplosionReceiverInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ExplosiveComponentInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FuseInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StatusResponseExplodeAfterTime": {
+    "Super": "StatusResponse",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "MinTimeUntilExplosion",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxTimeUntilExplosion",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "Class World*",
+        "Name": "CachedWorld",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  }
+}

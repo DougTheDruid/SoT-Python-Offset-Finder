@@ -1,0 +1,82 @@
+{
+  "FinaleReplicationState": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "State",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "TargetEnsemble",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "UnlockEventData": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "Idx",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterBeardVFXTransitionCompletedEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "Index",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ChangeGlitterBeardVFXStateEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "Index",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "Target",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "GlitterbeardPuzzleCancelTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "GlitterbeardPuzzleUnlockTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "GlitterbeardSessionEndTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "GlitterbeardSessionBeginTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  }
+}

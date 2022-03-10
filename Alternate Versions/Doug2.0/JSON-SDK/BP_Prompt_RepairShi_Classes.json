@@ -1,0 +1,226 @@
+{
+  "BP_Prompt_RepairShip_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x230",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x118",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_ShipDamaged",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OnShipDamaged",
+        "Size": "0x48",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_Complete",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_RepairShip",
+        "Size": "0x68",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_CurrentShipChanged",
+        "Size": "0x48",
+        "Offset": "0x1e0"
+      },
+      {
+        "Type": "Class Ship*",
+        "Name": "CurrentShip",
+        "Size": "0x8",
+        "Offset": "0x228"
+      }
+    ]
+  },
+  "BP_Prompt_RepairShipCapstan_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x230",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x118",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_CapstanDamaged",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OnCapstanDamaged",
+        "Size": "0x48",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_Complete",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_RepairShip",
+        "Size": "0x68",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_CurrentShipChanged",
+        "Size": "0x48",
+        "Offset": "0x1e0"
+      },
+      {
+        "Type": "Class Ship*",
+        "Name": "CurrentShip",
+        "Size": "0x8",
+        "Offset": "0x228"
+      }
+    ]
+  },
+  "BP_Prompt_RepairShipMast_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x2c8",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x1b0",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_ShipMastDamaged",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OnMastDamaged1",
+        "Size": "0x48",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_Complete",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_RepairShip",
+        "Size": "0x68",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_CurrentShipChanged",
+        "Size": "0x48",
+        "Offset": "0x1e0"
+      },
+      {
+        "Type": "Class Ship*",
+        "Name": "CurrentShip",
+        "Size": "0x8",
+        "Offset": "0x228"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OnMastDamaged2",
+        "Size": "0x48",
+        "Offset": "0x230"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OnMastDamaged3",
+        "Size": "0x48",
+        "Offset": "0x278"
+      },
+      {
+        "Type": "int",
+        "Name": "NumMastsRegistered",
+        "Size": "0x4",
+        "Offset": "0x2c0"
+      },
+      {
+        "Type": "int",
+        "Name": "MastIndex",
+        "Size": "0x4",
+        "Offset": "0x2c4"
+      }
+    ]
+  },
+  "BP_Prompt_RepairShipWheel_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x230",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x118",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_ShipWheelDamaged",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OnWheelDamaged",
+        "Size": "0x48",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_Complete",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_RepairShip",
+        "Size": "0x68",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_CurrentShipChanged",
+        "Size": "0x48",
+        "Offset": "0x1e0"
+      },
+      {
+        "Type": "Class Ship*",
+        "Name": "CurrentShip",
+        "Size": "0x8",
+        "Offset": "0x228"
+      }
+    ]
+  }
+}

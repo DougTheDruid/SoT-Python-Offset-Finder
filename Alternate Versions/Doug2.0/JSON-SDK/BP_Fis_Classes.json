@@ -1,0 +1,30 @@
+{
+  "BP_FishedItem_Boot_ItemDesc_C": {
+    "Super": "BootyItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishedItem_FishBones_ItemDesc_C": {
+    "Super": "BootyItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishedItem_Hat_ItemDesc_C": {
+    "Super": "BootyItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_FishedItem_Skull_ItemDesc_C": {
+    "Super": "BootyItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

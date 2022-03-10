@@ -1,0 +1,94 @@
+{
+  "BP_bsp_totd_portal_effects_C": {
+    "Super": "BP_TotD_PortalController_C",
+    "FullSize": "0x4a8",
+    "InheritedSize": "0x438",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "Class PointLightComponent*",
+        "Name": "PointLight",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_PortalAmbience_02",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_PortalAmbience_01",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "vfx_cloud",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Portal",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "vfx_cloud_depth",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "vfx_big_cloud",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "roundedcube_invertednormals",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Type": "Class DecalComponent*",
+        "Name": "crack_decal2",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Type": "Class DecalComponent*",
+        "Name": "crack_decal",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "volume_glow",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Type": "Class PointLightComponent*",
+        "Name": "LightComponent0",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      }
+    ]
+  }
+}

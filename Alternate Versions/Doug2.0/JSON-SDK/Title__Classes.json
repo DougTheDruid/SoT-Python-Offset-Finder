@@ -1,0 +1,23 @@
+{
+  "Title_BoneHaulBandit_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_BoneHaulBearer_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MerchantOfDeath_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

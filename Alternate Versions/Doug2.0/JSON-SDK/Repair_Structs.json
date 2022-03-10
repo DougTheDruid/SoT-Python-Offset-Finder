@@ -1,0 +1,64 @@
+{
+  "EventRepairableObjectRepairEndedEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class Object*",
+        "Name": "Repairable",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Position",
+        "Size": "0xc",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "RepairerActor",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "RepairPercentage",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "EventRepairableObjectDestroyed": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventPlayerUndoRepairEnd": {
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "EventPlayerUndoRepairCompleted": {
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "EventPlayerUndoRepairStart": {
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "ShipPartDamagePersistenceModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "TArray<Byte EventPlayerNameOverridesLoaded>",
+        "Name": "ComponentRepairableStates",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Identifier",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  }
+}

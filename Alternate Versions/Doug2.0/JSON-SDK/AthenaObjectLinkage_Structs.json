@@ -1,0 +1,13 @@
+{
+  "LinkEndpointId": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "Raw",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

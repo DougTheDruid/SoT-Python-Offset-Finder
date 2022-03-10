@@ -1,0 +1,30 @@
+{
+  "NotificationInputDisplayName": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "InputID",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FText",
+        "Name": "Name",
+        "Size": "0x38",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "IdleTimeTracker": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct Timespan",
+        "Name": "InactivityThreshold",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

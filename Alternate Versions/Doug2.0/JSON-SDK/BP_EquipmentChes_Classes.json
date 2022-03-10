@@ -1,0 +1,30 @@
+{
+  "BP_EquipmentChestInteraction_C": {
+    "Super": "EquipmentChestInteraction",
+    "FullSize": "0x4a0",
+    "InheritedSize": "0x498",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x498"
+      }
+    ]
+  },
+  "BP_EquipmentChest_C": {
+    "Super": "PossessionsChest",
+    "FullSize": "0x570",
+    "InheritedSize": "0x568",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Size": "0x8",
+        "Offset": "0x568"
+      }
+    ]
+  }
+}

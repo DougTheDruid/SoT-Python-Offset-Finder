@@ -1,0 +1,22 @@
+{
+  "BP_MeatItemInfo_C": {
+    "Super": "RewardableItemInfo",
+    "FullSize": "0x568",
+    "InheritedSize": "0x558",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class DeliverableRedirectionComponent*",
+        "Name": "DeliverableRedirection",
+        "Size": "0x8",
+        "Offset": "0x558"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x560"
+      }
+    ]
+  }
+}

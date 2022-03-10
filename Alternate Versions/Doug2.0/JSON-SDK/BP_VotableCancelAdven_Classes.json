@@ -1,0 +1,70 @@
+{
+  "BP_VotableCancelAdventure_C": {
+    "Super": "VotableObjectView",
+    "FullSize": "0x538",
+    "InheritedSize": "0x4e8",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Token 2",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Token 4",
+        "Size": "0x8",
+        "Offset": "0x4f8"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Token 3",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Token 1",
+        "Size": "0x8",
+        "Offset": "0x508"
+      },
+      {
+        "Type": "TArray<class Tokens*>",
+        "Name": "Tokens",
+        "Size": "0x10",
+        "Offset": "0x510"
+      },
+      {
+        "Type": "Class StaticMesh*",
+        "Name": "Token Asset",
+        "Size": "0x8",
+        "Offset": "0x520"
+      },
+      {
+        "Type": "int",
+        "Name": "VoteCount",
+        "Size": "0x4",
+        "Offset": "0x528"
+      },
+      {
+        "Type": "float",
+        "Name": "Show Token Animation Time",
+        "Size": "0x4",
+        "Offset": "0x52c"
+      },
+      {
+        "Type": "Class MaterialInterface*",
+        "Name": "Token Material",
+        "Size": "0x8",
+        "Offset": "0x530"
+      }
+    ]
+  }
+}

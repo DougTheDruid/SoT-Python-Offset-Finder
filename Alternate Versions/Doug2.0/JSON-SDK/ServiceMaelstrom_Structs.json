@@ -1,0 +1,19 @@
+{
+  "MaelstromEventBaseFragment": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "Name",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "TimestampUtc",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  }
+}

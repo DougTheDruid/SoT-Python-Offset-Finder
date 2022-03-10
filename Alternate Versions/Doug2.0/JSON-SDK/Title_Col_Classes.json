@@ -1,0 +1,44 @@
+{
+  "Title_CollectorOfLegendaryBlackPowder_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_CollectorOfLegendaryChalices_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_CollectorOfLegendaryRelics_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_CollectorOfLegendarySkulls_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_CollectorOfLegendaryVillainousSkulls_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_CollectorOfLegendaryVoyages_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

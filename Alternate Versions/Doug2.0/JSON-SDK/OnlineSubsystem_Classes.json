@@ -1,0 +1,55 @@
+{
+  "DefaultOnlineEnvironmentSettings": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "EnvironmentId",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ServiceConfigId",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ClientCertificateThumbprint",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "NamedInterfaces": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct OnMatchEnded>",
+        "Name": "NamedInterfaces",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "TArray<Struct NamedInterfaces>",
+        "Name": "NamedInterfaceDefs",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "TurnBasedMatchInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

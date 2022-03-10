@@ -1,0 +1,48 @@
+{
+  "BP_ProxyIngestible_C": {
+    "Super": "StaticMeshFloatingItemProxy",
+    "FullSize": "0x7b0",
+    "InheritedSize": "0x790",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class ConfigurableBuryableItemComponent*",
+        "Name": "ConfigurableBuryableItem",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Type": "Class TrackedOwnerComponent*",
+        "Name": "TrackedOwner",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Type": "Class MaterialManipulationComponent*",
+        "Name": "MaterialManipulation",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Type": "Class InteractableComponent*",
+        "Name": "Interactable",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      }
+    ]
+  },
+  "BP_ProxyIngestible_Retractable_C": {
+    "Super": "BP_ProxyIngestible_C",
+    "FullSize": "0x7b8",
+    "InheritedSize": "0x7b0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class RetractableItemProxyComponent*",
+        "Name": "RetractableItemProxy",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      }
+    ]
+  }
+}

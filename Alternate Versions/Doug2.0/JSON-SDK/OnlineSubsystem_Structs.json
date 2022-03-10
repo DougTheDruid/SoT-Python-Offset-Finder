@@ -1,0 +1,229 @@
+{
+  "InAppPurchaseProductInfo": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "Identifier",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "TransactionIdentifier",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DisplayName",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DisplayDescription",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DisplayPrice",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "CurrencyCode",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "CurrencySymbol",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "DecimalSeparator",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "GroupingSeparator",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ReceiptData",
+        "Size": "0x10",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "InAppPurchaseRestoreInfo": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "Identifier",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ReceiptData",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AchievementUpdatedEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "AchievementId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "Successful",
+        "Size": "0x1",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Reason",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Platform",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "NamedInterfaceDef": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "InterfaceName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "InterfaceClassName",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "NamedInterface": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "InterfaceName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "InterfaceObject",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnlineStoreCatalogItem": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "ProductId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Title",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Description",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "FormattedPrice",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "FormattedBasePrice",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsOnSale",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "Struct DateTime",
+        "Name": "SaleEndDate",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ImageUri",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "CurrencyCode",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "MetaTags",
+        "Size": "0x10",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "InAppPurchaseProductRequest": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "ProductIdentifier",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "bIsConsumable",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  }
+}

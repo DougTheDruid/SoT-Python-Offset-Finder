@@ -1,0 +1,95 @@
+{
+  "ShantyPuzzleUnlockCanceledEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "ShantyPuzzleSingleInteractionZoneStopInteractingEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Player",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "InteractionZoneIdx",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ShantyPuzzleSingleInteractionZoneUnlockEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Player",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "InteractionZoneIdx",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ShantyPuzzlePlayerExitInteractionZoneEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Player",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShantyPuzzlePlayerEnterInteractionZoneEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Player",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShantyPuzzleUnlockedCompleteEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "ShantyPuzzleInteractionZoneDefinition": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "Location",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Radius",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "byte",
+        "Name": "RequiredMusicalInstrumentType",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "int",
+        "Name": "RequiredNumInteractors",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  }
+}

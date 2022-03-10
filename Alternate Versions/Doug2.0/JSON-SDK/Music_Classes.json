@@ -1,0 +1,143 @@
+{
+  "MusicZoneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MusicZoneComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x390",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "InnerRadius",
+        "Size": "0x4",
+        "Offset": "0x2d8"
+      },
+      {
+        "Type": "float",
+        "Name": "OuterRadius",
+        "Size": "0x4",
+        "Offset": "0x2dc"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "LocationRTPC",
+        "Size": "0x8",
+        "Offset": "0x2e0"
+      },
+      {
+        "Type": "bool",
+        "Name": "LocalRTPC",
+        "Size": "0x1",
+        "Offset": "0x2e8"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "PlayEvent",
+        "Size": "0x8",
+        "Offset": "0x2f0"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "StopEvent",
+        "Size": "0x8",
+        "Offset": "0x2f8"
+      },
+      {
+        "Type": "TArray<class OneShotEvents*>",
+        "Name": "OneShotEvents",
+        "Size": "0x10",
+        "Offset": "0x300"
+      },
+      {
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Name": "EmitterPool",
+        "Size": "0x8",
+        "Offset": "0x310"
+      },
+      {
+        "Type": "bool",
+        "Name": "DisableAfterPlayThrough",
+        "Size": "0x1",
+        "Offset": "0x318"
+      },
+      {
+        "Type": "bool",
+        "Name": "ActivateOnBeginPlay",
+        "Size": "0x1",
+        "Offset": "0x319"
+      }
+    ]
+  },
+  "AISpawnerMusicZoneComponent": {
+    "Super": "MusicZoneComponent",
+    "FullSize": "0x3c0",
+    "InheritedSize": "0x390",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "BattleWonEvent",
+        "Size": "0x8",
+        "Offset": "0x390"
+      },
+      {
+        "Type": "Class AISpawner*",
+        "Name": "AISpawner",
+        "Size": "0x8",
+        "Offset": "0x398"
+      },
+      {
+        "Type": "TArray<class SpawnerPawns*>",
+        "Name": "SpawnerPawns",
+        "Size": "0x10",
+        "Offset": "0x3a0"
+      },
+      {
+        "Type": "byte",
+        "Name": "SpawnerState",
+        "Size": "0x1",
+        "Offset": "0x3b0"
+      }
+    ]
+  },
+  "SynchedMusicZoneComponent": {
+    "Super": "MusicZoneComponent",
+    "FullSize": "0x3c0",
+    "InheritedSize": "0x390",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "StartDelayTime",
+        "Size": "0x4",
+        "Offset": "0x390"
+      },
+      {
+        "Type": "int",
+        "Name": "PlayFromStartTimeMS",
+        "Size": "0x4",
+        "Offset": "0x394"
+      }
+    ]
+  },
+  "MusicZoneServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MusicZoneService": {
+    "Super": "Actor",
+    "FullSize": "0x478",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0xa8",
+    "Attributes": []
+  }
+}

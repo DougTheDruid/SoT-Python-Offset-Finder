@@ -1,0 +1,94 @@
+{
+  "RetractableComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x100",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "FeatureToggle",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "Struct RetractorOrientationAdjustmentFlags",
+        "Name": "OrientationAdjustmentOnRetractFlags",
+        "Size": "0x3",
+        "Offset": "0xf8"
+      },
+      {
+        "Type": "byte",
+        "Name": "RetractorBoxAxis",
+        "Size": "0x1",
+        "Offset": "0xfb"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShouldAutoReleaseOnSuccessfulRetract",
+        "Size": "0x1",
+        "Offset": "0xfc"
+      },
+      {
+        "Type": "bool",
+        "Name": "MigrateAttachedWithRetractor",
+        "Size": "0x1",
+        "Offset": "0xfd"
+      },
+      {
+        "Type": "bool",
+        "Name": "WasSimulatingPhysicsBeforeRetract",
+        "Size": "0x1",
+        "Offset": "0xfe"
+      }
+    ]
+  },
+  "RetractorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RetractableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RetractableProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RetractableFloatingBarrelComponent": {
+    "Super": "RetractableComponent",
+    "FullSize": "0x110",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "RetractorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "RetractDestinationComponent",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "RetractingComponent",
+        "Size": "0x8",
+        "Offset": "0x118"
+      }
+    ]
+  }
+}

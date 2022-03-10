@@ -1,0 +1,135 @@
+{
+  "DeliverableRequirementBase": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "DeliverableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DeliverableRedirectionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DeliverableComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class DeliverableRequirementsDataAsset*",
+        "Name": "DeliveryRequirementsAsset",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "DeliverableRedirectionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class DeliverableRedirectionContextBase*",
+        "Name": "Context",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "DeliverableRedirectionContextBase": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DeliverableRedirectionNoContext": {
+    "Super": "DeliverableRedirectionContextBase",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DeliverableRedirectionCompositeContext": {
+    "Super": "DeliverableRedirectionContextBase",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "TArray<class Contexts*>",
+        "Name": "Contexts",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DeliverableRedirectionDestinationDescriptorBase": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DeliverableRedirectionContextHandlerBase": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class DeliverableRedirectionDestinationDescriptorBase*",
+        "Name": "DestinationDescriptor",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DeliverableRedirectionLiteralDestinationDescriptor": {
+    "Super": "DeliverableRedirectionDestinationDescriptorBase",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct FText",
+        "Name": "Destination",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DeliverableRequirementsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<class Requirements*>",
+        "Name": "Requirements",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DeliverableTooltipCustomizerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

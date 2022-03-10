@@ -1,0 +1,41 @@
+{
+  "SimpleOverlapEnd": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct SimpleOverlapInfo",
+        "Name": "OverlapInfo",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SimpleOverlapInfo": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "OtherActor",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class PrimitiveComponent*",
+        "Name": "OtherComponent",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "SimpleOverlapBegin": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct SimpleOverlapInfo",
+        "Name": "OverlapInfo",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

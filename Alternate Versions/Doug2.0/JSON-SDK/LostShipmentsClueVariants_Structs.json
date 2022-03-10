@@ -1,0 +1,79 @@
+{
+  "ClueDestinationToTextIndex": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "DestinationType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ClueDestinationChoice": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class ClueDestinationDescriptor*",
+        "Name": "Destination",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GenderSpecificTextPairings": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "Struct FText",
+        "Name": "MasculineClueDestinationDescription",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FText",
+        "Name": "FeminineClueDestinationDescription",
+        "Size": "0x38",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "TextEntryWithLayout": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "Struct FText",
+        "Name": "TextEntry",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct TreasureMapWidgetText",
+        "Name": "TextLayout",
+        "Size": "0x38",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MapRadialIconData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "AssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Rotation",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "ExistingNPCToPhasedNPC": {
+    "ClassSize": "0x40",
+    "Attributes": []
+  }
+}

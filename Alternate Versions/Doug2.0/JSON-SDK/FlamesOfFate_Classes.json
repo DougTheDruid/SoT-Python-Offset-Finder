@@ -1,0 +1,16 @@
+{
+  "RemoveFlameOfFateTypeStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class RemoveFlameOfFateTypeStepDesc*",
+        "Name": "Desc",
+        "Size": "0x8",
+        "Offset": "0x90"
+      }
+    ]
+  }
+}

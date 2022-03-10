@@ -1,0 +1,494 @@
+{
+  "CoherentUIGTBaseComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x310",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x248",
+    "Attributes": [
+      {
+        "Type": "Class TextureRenderTarget2D*",
+        "Name": "Texture",
+        "Size": "0x8",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "byte",
+        "Name": "Filter",
+        "Size": "0x1",
+        "Offset": "0x178"
+      },
+      {
+        "Type": "bool",
+        "Name": "bReceiveInput",
+        "Size": "0x1",
+        "Offset": "0x179"
+      },
+      {
+        "Type": "bool",
+        "Name": "bReceiveInputWhenTransparent",
+        "Size": "0x1",
+        "Offset": "0x17a"
+      },
+      {
+        "Type": "bool",
+        "Name": "AllowPerformanceWarnings",
+        "Size": "0x1",
+        "Offset": "0x17b"
+      },
+      {
+        "Type": "float",
+        "Name": "ExecuteJSTimersThresholdMs",
+        "Size": "0x4",
+        "Offset": "0x17c"
+      },
+      {
+        "Type": "float",
+        "Name": "UpdateStylesAndLayoutThresholdMs",
+        "Size": "0x4",
+        "Offset": "0x180"
+      },
+      {
+        "Type": "float",
+        "Name": "RecordRenderingCommandsThresholdMs",
+        "Size": "0x4",
+        "Offset": "0x184"
+      },
+      {
+        "Type": "float",
+        "Name": "PaintWarningThresholdMs",
+        "Size": "0x4",
+        "Offset": "0x188"
+      },
+      {
+        "Type": "int",
+        "Name": "LayersCountThreshold",
+        "Size": "0x4",
+        "Offset": "0x18c"
+      },
+      {
+        "Type": "int",
+        "Name": "LayerWidthThreshold",
+        "Size": "0x4",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "int",
+        "Name": "LayerHeightThreshold",
+        "Size": "0x4",
+        "Offset": "0x194"
+      },
+      {
+        "Type": "bool",
+        "Name": "bEnableAdditionalDefaultStyles",
+        "Size": "0x1",
+        "Offset": "0x198"
+      },
+      {
+        "Type": "bool",
+        "Name": "bDelayedUpdate",
+        "Size": "0x1",
+        "Offset": "0x199"
+      }
+    ]
+  },
+  "CoherentUIGTComponent": {
+    "Super": "CoherentUIGTBaseComponent",
+    "FullSize": "0x348",
+    "InheritedSize": "0x310",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "URL",
+        "Size": "0x10",
+        "Offset": "0x310"
+      },
+      {
+        "Type": "int",
+        "Name": "Width",
+        "Size": "0x4",
+        "Offset": "0x320"
+      },
+      {
+        "Type": "int",
+        "Name": "Height",
+        "Size": "0x4",
+        "Offset": "0x324"
+      },
+      {
+        "Type": "bool",
+        "Name": "ManualTexture",
+        "Size": "0x1",
+        "Offset": "0x328"
+      },
+      {
+        "Type": "float",
+        "Name": "ClickThroughAlphaThreshold",
+        "Size": "0x4",
+        "Offset": "0x32c"
+      },
+      {
+        "Type": "bool",
+        "Name": "Transparent",
+        "Size": "0x1",
+        "Offset": "0x330"
+      }
+    ]
+  },
+  "CoherentUIGTLiveView": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "LinkName",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "Class TextureRenderTarget2D*",
+        "Name": "Texture",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "CoherentUIGTRenderToTextureLiveView": {
+    "Super": "CoherentUIGTLiveView",
+    "FullSize": "0x100",
+    "InheritedSize": "0xf8",
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "CoherentUIGTAssetReferencer": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CoherentUIGTSystem": {
+    "Super": "Actor",
+    "FullSize": "0x420",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "CoherentUIGTJSEvent": {
+    "Super": "Object",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "TArray<class StructTypes*>",
+        "Name": "StructTypes",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      }
+    ]
+  },
+  "CoherentUIGTJSPayload": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "EventName",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "CoherentUIGTEventHelpers": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CoherentUIGTHUD": {
+    "Super": "CoherentUIGTBaseComponent",
+    "FullSize": "0x338",
+    "InheritedSize": "0x310",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "HUDMaterialName",
+        "Size": "0x10",
+        "Offset": "0x310"
+      },
+      {
+        "Type": "Class Material*",
+        "Name": "HUDMaterial",
+        "Size": "0x8",
+        "Offset": "0x320"
+      },
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "HUDMaterialInstance",
+        "Size": "0x8",
+        "Offset": "0x328"
+      }
+    ]
+  },
+  "CoherentUIGTBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CoherentUIGTGameHUD": {
+    "Super": "HUD",
+    "FullSize": "0x560",
+    "InheritedSize": "0x4c8",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Type": "Class CoherentUIGTHUD*",
+        "Name": "CoherentUIGTHUD",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      }
+    ]
+  },
+  "CoherentUIGTInputActor": {
+    "Super": "Actor",
+    "FullSize": "0x430",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x60",
+    "Attributes": []
+  },
+  "CoherentUIGTSettings": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "EnableLiveReload",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "int",
+        "Name": "InspectorPort",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "int",
+        "Name": "WebdriverPort",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "bool",
+        "Name": "EnableWebSecurity",
+        "Size": "0x1",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "bool",
+        "Name": "EnableLocalization",
+        "Size": "0x1",
+        "Offset": "0x35"
+      },
+      {
+        "Type": "bool",
+        "Name": "RunAsynchronous",
+        "Size": "0x1",
+        "Offset": "0x36"
+      },
+      {
+        "Type": "bool",
+        "Name": "bRecursivelyBindUStructs",
+        "Size": "0x1",
+        "Offset": "0x37"
+      },
+      {
+        "Type": "bool",
+        "Name": "LoadSystemFonts",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "bool",
+        "Name": "AllowPerformanceWarningsInEditor",
+        "Size": "0x1",
+        "Offset": "0x39"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShowWarningsOnScreen",
+        "Size": "0x1",
+        "Offset": "0x3a"
+      },
+      {
+        "Type": "byte",
+        "Name": "LogSeverity",
+        "Size": "0x1",
+        "Offset": "0x3b"
+      },
+      {
+        "Type": "bool",
+        "Name": "bPaintToBackBuffer",
+        "Size": "0x1",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "bool",
+        "Name": "bRespectTitleSafeZone",
+        "Size": "0x1",
+        "Offset": "0x3d"
+      },
+      {
+        "Type": "bool",
+        "Name": "bRespectLetterboxing",
+        "Size": "0x1",
+        "Offset": "0x3e"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "HUDMaterialName",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "CoUIResourcesRoot",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "bool",
+        "Name": "TickWhileGameIsPaused",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "byte",
+        "Name": "MSAA",
+        "Size": "0x1",
+        "Offset": "0x61"
+      }
+    ]
+  },
+  "CoherentUIGTWidget": {
+    "Super": "Widget",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x2a0",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Owner",
+        "Size": "0x8",
+        "Offset": "0x158"
+      },
+      {
+        "Type": "byte",
+        "Name": "Filter",
+        "Size": "0x1",
+        "Offset": "0x1f8"
+      },
+      {
+        "Type": "bool",
+        "Name": "bReceiveInput",
+        "Size": "0x1",
+        "Offset": "0x1f9"
+      },
+      {
+        "Type": "bool",
+        "Name": "bReceiveInputWhenTransparent",
+        "Size": "0x1",
+        "Offset": "0x1fa"
+      },
+      {
+        "Type": "bool",
+        "Name": "bGammaCorrectedMaterial",
+        "Size": "0x1",
+        "Offset": "0x1fb"
+      },
+      {
+        "Type": "bool",
+        "Name": "AllowPerformanceWarnings",
+        "Size": "0x1",
+        "Offset": "0x1fc"
+      },
+      {
+        "Type": "float",
+        "Name": "ExecuteJSTimersThresholdMs",
+        "Size": "0x4",
+        "Offset": "0x200"
+      },
+      {
+        "Type": "float",
+        "Name": "UpdateStylesAndLayoutThresholdMs",
+        "Size": "0x4",
+        "Offset": "0x204"
+      },
+      {
+        "Type": "float",
+        "Name": "RecordRenderingCommandsThresholdMs",
+        "Size": "0x4",
+        "Offset": "0x208"
+      },
+      {
+        "Type": "float",
+        "Name": "PaintWarningThresholdMs",
+        "Size": "0x4",
+        "Offset": "0x20c"
+      },
+      {
+        "Type": "int",
+        "Name": "LayersCountThreshold",
+        "Size": "0x4",
+        "Offset": "0x210"
+      },
+      {
+        "Type": "int",
+        "Name": "LayerWidthThreshold",
+        "Size": "0x4",
+        "Offset": "0x214"
+      },
+      {
+        "Type": "int",
+        "Name": "LayerHeightThreshold",
+        "Size": "0x4",
+        "Offset": "0x218"
+      },
+      {
+        "Type": "bool",
+        "Name": "bEnableAdditionalDefaultStyles",
+        "Size": "0x1",
+        "Offset": "0x21c"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "URL",
+        "Size": "0x10",
+        "Offset": "0x3c0"
+      },
+      {
+        "Type": "float",
+        "Name": "ClickThroughAlphaThreshold",
+        "Size": "0x4",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "bool",
+        "Name": "Transparent",
+        "Size": "0x1",
+        "Offset": "0x3d4"
+      }
+    ]
+  }
+}

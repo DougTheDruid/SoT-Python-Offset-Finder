@@ -1,0 +1,73 @@
+{
+  "TreasuryWaveEncounter": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "EncounterType",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class SpawnAIWaveMechanismAction*",
+        "Name": "SpawnerMechanism",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "MechanismTrigger",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Class SpawnAIWaveMechanismAction*",
+        "Name": "SpawnerMechanismVaultMaster",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "MechanismTriggerVaultMaster",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Class TreasuryWaveDataAsset*",
+        "Name": "Waves",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Class TreasuryWaveDataAsset*",
+        "Name": "FinalWaves",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Class TreasuryWaveDataAsset*",
+        "Name": "FinalWavesVaultMaster",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "bool",
+        "Name": "NeedsRoomFlooded",
+        "Size": "0x1",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "TreasuryWaveTracker": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "EventTreasuryRoomInactive": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventTreasuryRoomActive": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  }
+}

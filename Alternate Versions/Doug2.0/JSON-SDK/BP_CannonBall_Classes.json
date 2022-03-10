@@ -1,0 +1,28 @@
+{
+  "BP_CannonBall_C": {
+    "Super": "CannonBall",
+    "FullSize": "0x7b8",
+    "InheritedSize": "0x7a0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class UsableWieldableComponent*",
+        "Name": "UsableWieldable",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Type": "Class WieldableInteractableComponent*",
+        "Name": "WieldableInteractable",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      },
+      {
+        "Type": "Class PickupableComponent*",
+        "Name": "Pickupable",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "ZoomedInOnWieldableItemActionStateConstructionInfo": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "ZoomedInFov",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "FreelookPitch",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "float",
+        "Name": "FreelookYaw",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "FreelookOutInterpolationRate",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "float",
+        "Name": "LookSensitivityScaler",
+        "Size": "0x4",
+        "Offset": "0x40"
+      }
+    ]
+  }
+}

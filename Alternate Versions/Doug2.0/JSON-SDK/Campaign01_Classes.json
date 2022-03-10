@@ -1,0 +1,37 @@
+{
+  "GHLetter_ExclusionEntitlement_Campaign019_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "HCLetter_ExclusionEntitlementCampaign019_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MALetter_ExclusionEntitlementCampaign019_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "OOSLetter_ExclusionEntitlementCampaign019_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SDLetter_ExclusionEntitlementCampaign019_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

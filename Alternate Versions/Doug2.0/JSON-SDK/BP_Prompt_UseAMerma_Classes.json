@@ -1,0 +1,70 @@
+{
+  "BP_Prompt_UseAMermaid_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x27c",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x164",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_IsThereAMermaid",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OnMermaidActivatedLocally",
+        "Size": "0x48",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OnMermaidDeactivatedLocally",
+        "Size": "0x48",
+        "Offset": "0x170"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_OnMermaidUsed",
+        "Size": "0x48",
+        "Offset": "0x1b8"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_MermaidUsed",
+        "Size": "0x1",
+        "Offset": "0x200"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_UseMermaid",
+        "Size": "0x68",
+        "Offset": "0x208"
+      },
+      {
+        "Type": "bool",
+        "Name": "State_ShowPrompt",
+        "Size": "0x1",
+        "Offset": "0x270"
+      },
+      {
+        "Type": "float",
+        "Name": "PromptDisplayDuration",
+        "Size": "0x4",
+        "Offset": "0x274"
+      },
+      {
+        "Type": "float",
+        "Name": "PromptHideDuration",
+        "Size": "0x4",
+        "Offset": "0x278"
+      }
+    ]
+  }
+}

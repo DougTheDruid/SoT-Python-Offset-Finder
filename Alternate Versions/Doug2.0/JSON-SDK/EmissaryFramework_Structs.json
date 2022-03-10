@@ -1,0 +1,96 @@
+{
+  "EmissaryGlobalActionRewardBoostServiceEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "FinishedEventType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "AssociatedCrew",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EmissaryCompanyActionRewardBoostServiceEvent": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "AssociatedCompany",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "CompanyActionType",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "AssociatedCrew",
+        "Size": "0x10",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "EmissaryGlobalActionRewardBoostEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "GameEventType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EmissaryNonQuestCompanyActionRewardBoostEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "CompanyActionType",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EmissaryQuestCompanyActionRewardBoostEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "CompanyActionType",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "QuestId",
+        "Size": "0x10",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "EmissaryCompanyChangedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "EmissaryLedgerVisited": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "CompanyId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "BP_ShipwreckStorageBarrel_Wood_C": {
+    "Super": "None",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x1",
+    "Attributes": []
+  },
+  "BP_ShipwreckStorageBarrel_Food_C": {
+    "Super": "None",
+    "FullSize": "-0x68000000",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x68000000",
+    "Attributes": []
+  },
+  "BP_ShipwreckStorageBarrel_Cannonball_C": {
+    "Super": "None",
+    "FullSize": "0x51",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x51",
+    "Attributes": []
+  },
+  "BP_ShipwreckStorageBarrel_C": {
+    "Super": "None",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x1",
+    "Attributes": []
+  }
+}

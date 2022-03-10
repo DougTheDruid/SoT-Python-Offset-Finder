@@ -1,0 +1,507 @@
+{
+  "SplashProbe": {
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Type": "Struct WaterSplashProbe",
+        "Name": "Probe",
+        "Size": "0xd8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "ProbeSamplingTime",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "float",
+        "Name": "TimeBetweenProbeVfx",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
+        "Type": "Class Object*",
+        "Name": "ParticleSystem",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "bool",
+        "Name": "SpawnAttached",
+        "Size": "0x1",
+        "Offset": "0xf0"
+      },
+      {
+        "Type": "bool",
+        "Name": "AttachToWaterSurface",
+        "Size": "0x1",
+        "Offset": "0xf1"
+      },
+      {
+        "Type": "byte",
+        "Name": "SplashAttachType",
+        "Size": "0x1",
+        "Offset": "0xf2"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "VfxSpawnOffset",
+        "Size": "0xc",
+        "Offset": "0xf4"
+      },
+      {
+        "Type": "bool",
+        "Name": "Enabled",
+        "Size": "0x1",
+        "Offset": "0x100"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "CurrentlyPlayingVFX",
+        "Size": "0x8",
+        "Offset": "0x108"
+      }
+    ]
+  },
+  "WaterSplashProbe": {
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "ProbeDebugName",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "LocalOffset",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "Height",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Type": "float",
+        "Name": "Pitch",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "float",
+        "Name": "Yaw",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "float",
+        "Name": "Roll",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "RateOfChangeThreshold",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "LocalOffsetAdjustment",
+        "Size": "0xc",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "LocalOffsetAdjustmentDuration",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "byte",
+        "Name": "Type",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "byte",
+        "Name": "WaterHeightType",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Type": "float",
+        "Name": "StaticWaterHeightValue",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "WaterInformation": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "WaterType",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "CanSwim",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WaterSplashProbesContainer": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct WaterBuoyancy>",
+        "Name": "Probes",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "ProbeSamplingTime",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WaterBuoyancy": {
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Type": "Class PrimitiveComponent*",
+        "Name": "PrimitiveComponent",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "OverallBuyoancyScalar",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "DampingPerSample",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "AdditionalAngularDampingWhenSubmerged",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "TArray<Struct BuoyancyVolumeSample>",
+        "Name": "VolumeSamples",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "TArray<Struct BuoyancyDragSample>",
+        "Name": "DragSamples",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "BuyoancySampleZSpeedVSDampeningScalar",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "QuadSubmersionTestSampleResolution",
+        "Size": "0x4",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "BuoyancyDragSample": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "Offset",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Normal",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Tangent",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "Radius",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Type": "float",
+        "Name": "DragCoefficient",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "byte",
+        "Name": "Type",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "BuoyancyVolumeSample": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "Offset",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Radius",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "byte",
+        "Name": "Type",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "bool",
+        "Name": "bRelevantForSubmersionVolumeCalculation",
+        "Size": "0x1",
+        "Offset": "0x11"
+      },
+      {
+        "Type": "float",
+        "Name": "Scalar",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "float",
+        "Name": "DampingScalar",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "DistUnderwaterVSBuoyancyForce",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "DistUnderwaterVSBuoyancyForceSecondary",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "DistUnderwaterVSBuoyancyForceTertiary",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "FakeZOffsetGeneratorCurve",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "FakeZOffsetAmp",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "float",
+        "Name": "FakeZOffsetGeneratorTimeScale",
+        "Size": "0x4",
+        "Offset": "0x44"
+      }
+    ]
+  },
+  "BuoyancySampleMovement": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct BuoyancySampleMovementConfiguration>",
+        "Name": "Configurations",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "BuoyancyScalarCurve",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "ProbeMovementCurve",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "BuoyancySampleMovementConfiguration": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Class CurveVector*",
+        "Name": "CenterOfMassOffsetCurve",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct BuoyancySampleMovementConfigurationEntry>",
+        "Name": "SampleMoveData",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "OverallBuoyancyScalar",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "OverallBuoyancyScalarBlendCurve",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "ProbeMovementBlendCurve",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "float",
+        "Name": "Duration",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "BuoyancySampleMovementConfigurationEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "SampleOffset",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "BuoyancyScaleCurve",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WaterSpout": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "Struct Transform",
+        "Name": "SpoutLocatorTransform",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "SpoutParticleSystem",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "SplashParticleSystem",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "EventCurrentWaterPlaneChange": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class BaseWaterComponent*",
+        "Name": "FormerWaterPlane",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class BaseWaterComponent*",
+        "Name": "NewWaterPlane",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventLeftWaterExclusionZone": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventEnteredWaterExclusionZone": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "FFTWaterQueryResult": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "Height",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector2D",
+        "Name": "Choppiness",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "Normal",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "byte",
+        "Name": "WaterQueryResult",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  }
+}

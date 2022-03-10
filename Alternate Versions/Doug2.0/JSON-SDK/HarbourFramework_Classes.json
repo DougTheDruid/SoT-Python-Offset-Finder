@@ -1,0 +1,37 @@
+{
+  "HarbourInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "HarbourComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x300",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "HarbourRadiusInCentimetres",
+        "Size": "0x4",
+        "Offset": "0x2d8"
+      }
+    ]
+  },
+  "HarbourServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "HarbourService": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": []
+  }
+}

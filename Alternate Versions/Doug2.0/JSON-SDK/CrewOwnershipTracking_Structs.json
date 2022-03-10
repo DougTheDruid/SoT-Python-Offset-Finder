@@ -1,0 +1,70 @@
+{
+  "CrewTrackedItemOwnershipSet": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Item",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "CrewId",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CrewTrackedItemOwnershipChanged": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Item",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "CrewId",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "PreviousCrewId",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsFirstTimeOwnedByThisCrew",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "OwnerListEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct TrackItemOwnershipEvent>",
+        "Name": "OwnerList",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TrackItemOwnershipEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "TrackedItem",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

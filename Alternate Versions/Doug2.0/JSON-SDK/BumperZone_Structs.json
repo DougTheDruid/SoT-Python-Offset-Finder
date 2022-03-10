@@ -1,0 +1,17 @@
+{
+  "BumperZoneData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class ShipBumperZone*",
+        "Name": "BumperZone",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CachedShip": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  }
+}

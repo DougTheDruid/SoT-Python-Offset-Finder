@@ -1,0 +1,13 @@
+{
+  "Key": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "KeyName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

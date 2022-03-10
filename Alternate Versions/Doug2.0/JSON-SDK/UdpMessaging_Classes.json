@@ -1,0 +1,64 @@
+{
+  "UdpMessagingSettings": {
+    "Super": "Object",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "EnableTransport",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "UnicastEndpoint",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "MulticastEndpoint",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "byte",
+        "Name": "MulticastTimeToLive",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "StaticEndpoints",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "bool",
+        "Name": "EnableTunnel",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "TunnelUnicastEndpoint",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "TunnelMulticastEndpoint",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "RemoteTunnelEndpoints",
+        "Size": "0x10",
+        "Offset": "0x90"
+      }
+    ]
+  }
+}

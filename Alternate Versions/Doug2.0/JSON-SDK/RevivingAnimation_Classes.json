@@ -1,0 +1,62 @@
+{
+  "ReviveGhostAnimationData": {
+    "Super": "AnimationData",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ReviveGhostAnimationDataAsset*",
+        "Name": "ReviveAnimationsDataAsset",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ReviveGhostAnimationDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct ReviveGhostAnimations",
+        "Name": "Animations",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ReviveGhostAnimationInstance": {
+    "Super": "AnimInstance",
+    "FullSize": "0x490",
+    "InheritedSize": "0x440",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct ReviveGhostAnimations",
+        "Name": "ReviveAnimations",
+        "Size": "0x28",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "bool",
+        "Name": "FullyInitialised",
+        "Size": "0x1",
+        "Offset": "0x470"
+      },
+      {
+        "Type": "bool",
+        "Name": "FullyRevived",
+        "Size": "0x1",
+        "Offset": "0x471"
+      },
+      {
+        "Type": "bool",
+        "Name": "FromSwimming",
+        "Size": "0x1",
+        "Offset": "0x472"
+      }
+    ]
+  }
+}

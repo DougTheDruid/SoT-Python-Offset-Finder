@@ -1,0 +1,23 @@
+{
+  "CustomDeathInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CustomDeathService": {
+    "Super": "Actor",
+    "FullSize": "0x468",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Type": "TArray<class CustomPlayerStarts*>",
+        "Name": "CustomPlayerStarts",
+        "Size": "0x10",
+        "Offset": "0x408"
+      }
+    ]
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "CommodityDemandFrameworkEditorSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "CommodityDataFileLocation",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CommodityDemandFrameworkSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x68",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "DemandRefreshFrequencyInSeconds",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "DemandCollectionId",
+        "Size": "0x8",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "int",
+        "Name": "CommodityPurchaseLockoutInGameDays",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "int",
+        "Name": "InGameHourWhenCommoditiesRestock",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct GameTime",
+        "Name": "CommodityRedemptionTimeOutPeriodInDays",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "NPCListAsset",
+        "Size": "0x10",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "CommodityDemandServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CommodityDemandService": {
+    "Super": "Actor",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "Struct ActiveNPCDemands",
+        "Name": "ActiveCommodityDemands",
+        "Size": "0x20",
+        "Offset": "0x3f0"
+      }
+    ]
+  },
+  "CommodityDemandStorageInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CommodityDemandStorageProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CommodityEntitlementRedemptionAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct CommodityDemand>",
+        "Name": "CommoditiesForRedemption",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "CommodityItemDesc": {
+    "Super": "BootyItemDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct CommoditySelectionType",
+        "Name": "CommodityType",
+        "Size": "0x8",
+        "Offset": "0x130"
+      },
+      {
+        "Type": "byte",
+        "Name": "CommodityDemand",
+        "Size": "0x1",
+        "Offset": "0x138"
+      }
+    ]
+  },
+  "CommodityPurchaseTrackingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x148",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x80",
+    "Attributes": []
+  },
+  "CommodityRedemptionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CommodityRedemptionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x190",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xc8",
+    "Attributes": [
+      {
+        "Type": "Struct FText",
+        "Name": "RedeemTooltipText",
+        "Size": "0x38",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "TArray<class PendingRedemptions*>",
+        "Name": "PendingRedemptions",
+        "Size": "0x10",
+        "Offset": "0x180"
+      }
+    ]
+  },
+  "CommoditySourceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CommoditySourceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "NPCIdentifier",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "CommodityTokenEntitlementDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "NPCToRedeemAt",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "class",
+        "Name": "ItemToRedeemFor",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "CommodityTypeDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct CommodityDemand>",
+        "Name": "CommodityEntries",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "CrateFillerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CrateFillerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "DeliverableCommodityRequirement": {
+    "Super": "DeliverableRequirementBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "IsWieldedCommodityItemInDemandStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x50",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "CommodityDemand",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "SpecificItemsCrateFillerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct CommodityDemand>",
+        "Name": "ItemsToFillCrateWith",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "WasWieldedCommodityItemBoughtAtDemandStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "CommodityDemand",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  }
+}

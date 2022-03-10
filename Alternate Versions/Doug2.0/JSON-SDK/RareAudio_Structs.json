@@ -1,0 +1,149 @@
+{
+  "WwiseEmitter": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "WwiseEmitterCreationParams": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "Event",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct WWiseEmitterCreationRTPCSetting>",
+        "Name": "RTPCs",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "TArray<Struct WWiseEmitterCreationSwitchSetting>",
+        "Name": "Switches",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "WWiseEmitterCreationSwitchSetting": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "SwitchGroup",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "SwitchValue",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WWiseEmitterCreationRTPCSetting": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "RTPCName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "RTPCValue",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventToComponentMapping": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "PlayEvent",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "StopEvent",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "TArray<class WwiseEmitterComponents*>",
+        "Name": "WwiseEmitterComponents",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "StaticMeshAudioAssociation": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct StaticMeshWwiseEmitterData>",
+        "Name": "PlaybackDataArray",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<class Meshes*>",
+        "Name": "Meshes",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "StaticMeshWwiseEmitterData": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Name": "Pool",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "LocalOriginOffset",
+        "Size": "0xc",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "TArray<class StartEvents*>",
+        "Name": "StartEvents",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "TArray<class StopEvents*>",
+        "Name": "StopEvents",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "StaticMeshComponentAudioAssociation": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Type": "Struct StaticMeshWwiseEmitterData",
+        "Name": "PlaybackData",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "EmitterPositionRelativeToComponentOrigin",
+        "Size": "0xc",
+        "Offset": "0x38"
+      }
+    ]
+  }
+}

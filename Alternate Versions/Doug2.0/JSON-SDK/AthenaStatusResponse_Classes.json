@@ -1,0 +1,143 @@
+{
+  "StatusResponseApplyOneShotStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct Status",
+        "Name": "StatusToApply",
+        "Size": "0x18",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StatusResponseApplyPersistentStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x50",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct Status",
+        "Name": "StatusToApply",
+        "Size": "0x18",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "DurationMultiplier",
+        "Size": "0x4",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "StatusResponseCancelStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Class HealthPoolChangeIntensityMultiplier>",
+        "Name": "Status",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StatusResponseCook": {
+    "Super": "StatusResponse",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StatusResponseHealthRegenerationPoolChange": {
+    "Super": "StatusResponse",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "HealthPoolChangeIntensityMultiplier",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StatusResponseReportNoiseEvent": {
+    "Super": "StatusResponse",
+    "FullSize": "0x70",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "NoiseInstigator",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "NoiseTag",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "NoiseRange",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "float",
+        "Name": "NoiseLoudness",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "bool",
+        "Name": "NoiseMultipleTicks",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "float",
+        "Name": "NoiseTimerTick",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "StatusResponseSetScalarParamOnCharacter": {
+    "Super": "StatusResponse",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct Status>",
+        "Name": "ParamsToChange",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StatusResponseSuspendStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Class MaxWheelTurbulence>",
+        "Name": "Status",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  }
+}

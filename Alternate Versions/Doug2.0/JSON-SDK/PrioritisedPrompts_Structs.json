@@ -1,0 +1,127 @@
+{
+  "PrioritisedPromptWithHandle": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Type": "Struct PrioritisedPromptHandle",
+        "Name": "PromptHandle",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct PrioritisedPrompt",
+        "Name": "Prompt",
+        "Size": "0x58",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "PrioritisedPrompt": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "Struct FText",
+        "Name": "Message",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Key",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Class PopUpMessageDesc*",
+        "Name": "PopUpMessageDesc",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "byte",
+        "Name": "BasePriority",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "byte",
+        "Name": "MenuNavigation",
+        "Size": "0x1",
+        "Offset": "0x51"
+      }
+    ]
+  },
+  "PrioritisedPromptHandle": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "Id",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PromptEvaluation": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "PromptType",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt",
+        "Size": "0x68",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PermanentPromptNetworkEvent": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt",
+        "Size": "0x68",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "byte",
+        "Name": "StartOrStop",
+        "Size": "0x1",
+        "Offset": "0x78"
+      }
+    ]
+  },
+  "PromptsCounterIncrementEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "AccessKey",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PlayerPromptTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "Message",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Key",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  }
+}

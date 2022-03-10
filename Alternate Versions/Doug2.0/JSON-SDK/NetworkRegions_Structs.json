@@ -1,0 +1,19 @@
+{
+  "RegionAssetsList": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "Region",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct Region>",
+        "Name": "CachedAssetsForRegion",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ShockwaveDamagerShipDamage": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "MaxDistanceInMetres",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "MinNumHoles",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "int",
+        "Name": "MaxNumHoles",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "int",
+        "Name": "LevelOfHoleDamage",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  }
+}

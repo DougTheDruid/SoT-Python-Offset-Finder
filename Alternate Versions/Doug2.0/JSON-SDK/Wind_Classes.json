@@ -1,0 +1,137 @@
+{
+  "WindZoneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WindInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugWindInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MockWindService": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "TestWindInterface": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "TArray<Interface GetWindAtLocation>",
+        "Name": "WindZones",
+        "Size": "0x10",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "TestWindZone": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": []
+  },
+  "WindFunctions": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WindService": {
+    "Super": "Actor",
+    "FullSize": "0x508",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x138",
+    "Attributes": [
+      {
+        "Type": "Class WindDirectionalSource*",
+        "Name": "GlobalWindSource",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "float",
+        "Name": "CurrentWindAngle",
+        "Size": "0x4",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "float",
+        "Name": "CurrentWindMagnitude",
+        "Size": "0x4",
+        "Offset": "0x3fc"
+      },
+      {
+        "Type": "TArray<Interface CurrentWindMagnitude>",
+        "Name": "WindZones",
+        "Size": "0x10",
+        "Offset": "0x4e8"
+      },
+      {
+        "Type": "TArray<Struct WindZones>",
+        "Name": "ExtraWind",
+        "Size": "0x10",
+        "Offset": "0x4f8"
+      }
+    ]
+  },
+  "DebugWindService": {
+    "Super": "WindService",
+    "FullSize": "0x518",
+    "InheritedSize": "0x508",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "WindServiceParamsFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WindZoneComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x360",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct WindTurbulenceParameters",
+        "Name": "TurbulenceParams",
+        "Size": "0x70",
+        "Offset": "0x2d8"
+      },
+      {
+        "Type": "Struct WindZoneParams",
+        "Name": "WindZoneParams",
+        "Size": "0x10",
+        "Offset": "0x348"
+      }
+    ]
+  },
+  "TestWindZoneComponent": {
+    "Super": "WindZoneComponent",
+    "FullSize": "0x360",
+    "InheritedSize": "0x360",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

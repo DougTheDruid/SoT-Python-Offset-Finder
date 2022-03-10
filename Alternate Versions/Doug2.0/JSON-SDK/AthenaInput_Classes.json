@@ -1,0 +1,107 @@
+{
+  "NotificationInputId": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "AnalogInputId": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "TestAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestAnalogInput2Id": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NamedNotificationInputInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NamedNotificationInputComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct PushCharacterIntoDeadActionState>",
+        "Name": "NotificationInputDisplayNames",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "CrewNameplatesToggleInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "OpenQuickMenuNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PressedNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ReleasedNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ScrambleGamertagsToggleInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestNotificationInput2Id": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ReceivesInputInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "ExtraWind": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Class Object*",
+        "Name": "Source",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "Basis",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WindServiceParams": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "MinAngleChange",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxAngleChange",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "MinTimeChange",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxTimeChange",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "MinWindMagnitude",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxWindMagnitude",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "float",
+        "Name": "AbsoluteMaxWindMagnitude",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "float",
+        "Name": "MinBlendTimeBetweenChanges",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxBlendTimeBetweenChanges",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "WindZoneTurbulence": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "Base",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Current",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "WindZoneParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "OuterRadius",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "InnerRadius",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "TurbulenceScalar",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "bool",
+        "Name": "WindOnlyAffectsTrees",
+        "Size": "0x1",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "WindTurbulenceParameters": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "Struct FloatRange",
+        "Name": "GustPower",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "GustTime",
+        "Size": "0x30",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Name": "CalmTime",
+        "Size": "0x30",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "WindMagnitudeChanged": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "WindDirectionChanged": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  }
+}

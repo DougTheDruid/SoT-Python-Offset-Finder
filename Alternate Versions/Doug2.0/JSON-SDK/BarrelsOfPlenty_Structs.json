@@ -1,0 +1,19 @@
+{
+  "BarrelsOfPlentyDebugLocationEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct Vector",
+        "Name": "WorldSpacePosition",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "SinkTime",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  }
+}

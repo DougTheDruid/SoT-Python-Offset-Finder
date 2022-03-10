@@ -1,0 +1,46 @@
+{
+  "AthenaCheatManager": {
+    "Super": "CheatManager",
+    "FullSize": "0x118",
+    "InheritedSize": "0x78",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Type": "Class CinematicCameraController*",
+        "Name": "CinematicCameraController",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Type": "class",
+        "Name": "CinematicCameraControllerClass",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "TArray<Struct CinematicCameraControllerClass>",
+        "Name": "CreatedWorldMarkers",
+        "Size": "0x10",
+        "Offset": "0xb0"
+      },
+      {
+        "Type": "Class GameEventSchedulerSettingsAsset*",
+        "Name": "DebugSchedulerSettings",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      },
+      {
+        "Type": "Class ServerPerformanceReplicator*",
+        "Name": "ServerPerformanceReplicator",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "float",
+        "Name": "TeleportToDigsiteHeightOffset",
+        "Size": "0x4",
+        "Offset": "0xd0"
+      }
+    ]
+  }
+}

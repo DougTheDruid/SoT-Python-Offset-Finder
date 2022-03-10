@@ -1,0 +1,83 @@
+{
+  "PerComanyItemQualityEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "Company",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "Quality",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PerComanyComplexItemQualityEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "Company",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct ComplexItemQualityEntry>",
+        "Name": "QualityData",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ComplexItemQualityEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "OnTime",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "HealthLevel",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Type": "byte",
+        "Name": "IsComissioned",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Type": "byte",
+        "Name": "IsStolen",
+        "Size": "0x1",
+        "Offset": "0x3"
+      },
+      {
+        "Type": "byte",
+        "Name": "QueryReason",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "byte",
+        "Name": "QualityLevel",
+        "Size": "0x1",
+        "Offset": "0x5"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "Rarity",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  }
+}

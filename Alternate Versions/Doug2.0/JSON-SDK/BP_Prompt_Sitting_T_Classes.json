@@ -1,0 +1,70 @@
+{
+  "BP_Prompt_Sitting_ThirdPerson_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x26a",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x152",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_LocalPlayerEnteredSittingState",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_ThirdPerson",
+        "Size": "0x68",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "float",
+        "Name": "PromptDisplayDuration",
+        "Size": "0x4",
+        "Offset": "0x1d0"
+      },
+      {
+        "Type": "bool",
+        "Name": "CrewInRadius",
+        "Size": "0x1",
+        "Offset": "0x1d4"
+      },
+      {
+        "Type": "bool",
+        "Name": "PromptOnCooldown",
+        "Size": "0x1",
+        "Offset": "0x1d5"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_LocalPlayerExitedSittingState",
+        "Size": "0x48",
+        "Offset": "0x1d8"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_LocalPlayerEnteredSittingThirdPersonCameraState",
+        "Size": "0x48",
+        "Offset": "0x220"
+      },
+      {
+        "Type": "bool",
+        "Name": "PlayerOnSeat",
+        "Size": "0x1",
+        "Offset": "0x268"
+      },
+      {
+        "Type": "bool",
+        "Name": "PromptEvaluated",
+        "Size": "0x1",
+        "Offset": "0x269"
+      }
+    ]
+  }
+}

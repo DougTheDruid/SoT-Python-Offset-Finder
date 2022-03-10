@@ -1,0 +1,198 @@
+{
+  "BP_CollectorsChest_Wieldable_C": {
+    "Super": "CollectorsChestStaticWieldableItem",
+    "FullSize": "0x838",
+    "InheritedSize": "0x7d0",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Type": "Class MaterialManipulationComponent*",
+        "Name": "MaterialManipulation",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Type": "Class OpenableItemMaterialAnimationReactionComponent*",
+        "Name": "OpenableItemMaterialAnimationReaction",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Type": "Class MaterialAnimatorComponent*",
+        "Name": "MaterialAnimator",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "HitVolume",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      },
+      {
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Name": "AnimNotifyWwiseEmitter",
+        "Size": "0x8",
+        "Offset": "0x7f0"
+      },
+      {
+        "Type": "Class GoldInContainerComponent*",
+        "Name": "GoldInContainer",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Type": "Class QuestBookPagesInContainerComponent*",
+        "Name": "QuestBookPagesInContainer",
+        "Size": "0x8",
+        "Offset": "0x800"
+      },
+      {
+        "Type": "Class CollectorsChestItemSlotInteractable*",
+        "Name": "ItemSlotInteractable",
+        "Size": "0x8",
+        "Offset": "0x808"
+      },
+      {
+        "Type": "Class CollectorsChestItemSlotInteractable*",
+        "Name": "ItemSlotInteractable",
+        "Size": "0x8",
+        "Offset": "0x810"
+      },
+      {
+        "Type": "Class CollectorsChestItemSlotInteractable*",
+        "Name": "ItemSlotInteractable",
+        "Size": "0x8",
+        "Offset": "0x818"
+      },
+      {
+        "Type": "Class PickupableComponent*",
+        "Name": "Pickupable",
+        "Size": "0x8",
+        "Offset": "0x820"
+      },
+      {
+        "Type": "Class UsableWieldableComponent*",
+        "Name": "UsableWieldable",
+        "Size": "0x8",
+        "Offset": "0x828"
+      },
+      {
+        "Type": "Class WieldableInteractableComponent*",
+        "Name": "WieldableInteractable",
+        "Size": "0x8",
+        "Offset": "0x830"
+      }
+    ]
+  },
+  "BP_CollectorsChest_Proxy_C": {
+    "Super": "CollectorsChestItemProxyStatic",
+    "FullSize": "0x921",
+    "InheritedSize": "0x860",
+    "ClassSize": "0xc1",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x860"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "WaterOcclusionVolume",
+        "Size": "0x8",
+        "Offset": "0x868"
+      },
+      {
+        "Type": "Class MaterialAnimatorComponent*",
+        "Name": "MaterialAnimator",
+        "Size": "0x8",
+        "Offset": "0x870"
+      },
+      {
+        "Type": "Class OpenableItemMeshAnimationReactionComponent*",
+        "Name": "OpenableItemMeshAnimationReaction",
+        "Size": "0x8",
+        "Offset": "0x878"
+      },
+      {
+        "Type": "Class MeshAnimatorComponent*",
+        "Name": "MeshAnimator",
+        "Size": "0x8",
+        "Offset": "0x880"
+      },
+      {
+        "Type": "Class OpenableItemMaterialAnimationReactionComponent*",
+        "Name": "OpenableItemMaterialAnimationReaction",
+        "Size": "0x8",
+        "Offset": "0x888"
+      },
+      {
+        "Type": "Class GlintComponent*",
+        "Name": "Glint",
+        "Size": "0x8",
+        "Offset": "0x890"
+      },
+      {
+        "Type": "Class QuestBookPagesInContainerComponent*",
+        "Name": "QuestBookPagesInContainer",
+        "Size": "0x8",
+        "Offset": "0x898"
+      },
+      {
+        "Type": "Class GoldInContainerComponent*",
+        "Name": "GoldInContainer",
+        "Size": "0x8",
+        "Offset": "0x8a0"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "Scene",
+        "Size": "0x8",
+        "Offset": "0x8a8"
+      },
+      {
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Name": "AnimNotifyWwiseEmitter",
+        "Size": "0x8",
+        "Offset": "0x8b0"
+      },
+      {
+        "Type": "Class CollectorsChestItemSlotInteractable*",
+        "Name": "ItemSlotInteractable",
+        "Size": "0x8",
+        "Offset": "0x8b8"
+      },
+      {
+        "Type": "Class CollectorsChestItemSlotInteractable*",
+        "Name": "ItemSlotInteractable",
+        "Size": "0x8",
+        "Offset": "0x8c0"
+      },
+      {
+        "Type": "Class CollectorsChestItemSlotInteractable*",
+        "Name": "ItemSlotInteractable",
+        "Size": "0x8",
+        "Offset": "0x8c8"
+      },
+      {
+        "Type": "Class InteractableComponent*",
+        "Name": "Interactable",
+        "Size": "0x8",
+        "Offset": "0x8d0"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "OnDroppedHandle",
+        "Size": "0x48",
+        "Offset": "0x8d8"
+      },
+      {
+        "Type": "bool",
+        "Name": "HideWaterOcclusionVolume",
+        "Size": "0x1",
+        "Offset": "0x920"
+      }
+    ]
+  }
+}

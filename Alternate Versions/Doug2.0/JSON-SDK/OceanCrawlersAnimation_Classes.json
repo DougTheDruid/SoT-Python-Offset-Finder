@@ -1,0 +1,116 @@
+{
+  "OceanCrawlerAnimationData": {
+    "Super": "AnimationData",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Type": "Struct OceanCrawlerAnimationDataStructure",
+        "Name": "OceanCrawlerAnimationDataStructure",
+        "Size": "0x90",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "OceanCrawlerAnimationInstance": {
+    "Super": "AnimInstance",
+    "FullSize": "0x720",
+    "InheritedSize": "0x440",
+    "ClassSize": "0x2e0",
+    "Attributes": [
+      {
+        "Type": "Struct OceanCrawlerAnimationDataStructure",
+        "Name": "LoadedAnimations",
+        "Size": "0x90",
+        "Offset": "0x458"
+      },
+      {
+        "Type": "Struct ActorVelocityData",
+        "Name": "MovementData",
+        "Size": "0x18",
+        "Offset": "0x4e8"
+      },
+      {
+        "Type": "float",
+        "Name": "CurrentDirection",
+        "Size": "0x4",
+        "Offset": "0x500"
+      },
+      {
+        "Type": "Struct AthenaAnimationWeapon",
+        "Name": "AttackAnims",
+        "Size": "0xb8",
+        "Offset": "0x508"
+      },
+      {
+        "Type": "bool",
+        "Name": "UseDefaultAnimations",
+        "Size": "0x1",
+        "Offset": "0x5c0"
+      },
+      {
+        "Type": "bool",
+        "Name": "AnimationsLoaded",
+        "Size": "0x1",
+        "Offset": "0x5c1"
+      },
+      {
+        "Type": "bool",
+        "Name": "SporeBreathActive",
+        "Size": "0x1",
+        "Offset": "0x5c2"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "PropAttachmentSocket",
+        "Size": "0x8",
+        "Offset": "0x5c4"
+      },
+      {
+        "Type": "Struct CustomAnimationMontageStateMachine",
+        "Name": "MontagePlayer",
+        "Size": "0xd8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Type": "Struct HitReactionAnimationState",
+        "Name": "HitReacts",
+        "Size": "0x28",
+        "Offset": "0x6a8"
+      }
+    ]
+  },
+  "OceanCrawlerAnimationServerData": {
+    "Super": "AnimationServerData",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "class",
+        "Name": "AnimInstanceType",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxSpawnAnimDuration",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxSpawnOnShipAnimDuration",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxSpawnBoardingAnimDuration",
+        "Size": "0x4",
+        "Offset": "0x40"
+      }
+    ]
+  }
+}

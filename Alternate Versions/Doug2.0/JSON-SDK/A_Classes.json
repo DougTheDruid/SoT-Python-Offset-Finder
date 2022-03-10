@@ -1,0 +1,30 @@
+{
+  "ALK_BDog_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_PDog_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_PincherMonkey_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_PrnMonkey_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

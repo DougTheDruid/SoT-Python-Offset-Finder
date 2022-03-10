@@ -1,0 +1,16 @@
+{
+  "BP_PetActionStateCreatorDefinition_C": {
+    "Super": "PetActionStateCreatorDefinition",
+    "FullSize": "0x4c0",
+    "InheritedSize": "0x4b8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "BP_Wayfinder_MultiTargetCompass_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Wayfinder_MultiTargetCompass_ItemInfo_C": {
+    "Super": "ItemInfo",
+    "FullSize": "0x511",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x11",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot",
+        "Size": "0x8",
+        "Offset": "0x508"
+      },
+      {
+        "Type": "bool",
+        "Name": "NewVar",
+        "Size": "0x1",
+        "Offset": "0x510"
+      }
+    ]
+  },
+  "BP_Wayfinder_MultiTargetCompass_Wieldable_C": {
+    "Super": "PrototypeMultiTargetEnchantedCompass",
+    "FullSize": "0x958",
+    "InheritedSize": "0x8a0",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x8a0"
+      },
+      {
+        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "RetargetGlowDynamicMaterial",
+        "Size": "0x8",
+        "Offset": "0x8a8"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "OnWieldedHandle",
+        "Size": "0x48",
+        "Offset": "0x8b0"
+      },
+      {
+        "Type": "float",
+        "Name": "MinTrackingDistance",
+        "Size": "0x4",
+        "Offset": "0x8f8"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxTrackingDistance",
+        "Size": "0x4",
+        "Offset": "0x8fc"
+      },
+      {
+        "Type": "float",
+        "Name": "TargetDistance",
+        "Size": "0x4",
+        "Offset": "0x900"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "TargetLocation",
+        "Size": "0xc",
+        "Offset": "0x904"
+      },
+      {
+        "Type": "float",
+        "Name": "TargetYaw",
+        "Size": "0x4",
+        "Offset": "0x910"
+      },
+      {
+        "Type": "float",
+        "Name": "BaseYaw",
+        "Size": "0x4",
+        "Offset": "0x914"
+      },
+      {
+        "Type": "float",
+        "Name": "OutputYaw",
+        "Size": "0x4",
+        "Offset": "0x918"
+      },
+      {
+        "Type": "TArray<Struct V>",
+        "Name": "WobbleCurves",
+        "Size": "0x10",
+        "Offset": "0x920"
+      },
+      {
+        "Type": "TArray<Float None>",
+        "Name": "WobbleTimes",
+        "Size": "0x10",
+        "Offset": "0x930"
+      },
+      {
+        "Type": "Class CurveFloat*",
+        "Name": "SpinCurve",
+        "Size": "0x8",
+        "Offset": "0x940"
+      },
+      {
+        "Type": "float",
+        "Name": "YawVelocity",
+        "Size": "0x4",
+        "Offset": "0x948"
+      },
+      {
+        "Type": "float",
+        "Name": "YawAcceleration",
+        "Size": "0x4",
+        "Offset": "0x94c"
+      },
+      {
+        "Type": "float",
+        "Name": "YawTargetSpeed",
+        "Size": "0x4",
+        "Offset": "0x950"
+      },
+      {
+        "Type": "float",
+        "Name": "YawDamping",
+        "Size": "0x4",
+        "Offset": "0x954"
+      }
+    ]
+  }
+}

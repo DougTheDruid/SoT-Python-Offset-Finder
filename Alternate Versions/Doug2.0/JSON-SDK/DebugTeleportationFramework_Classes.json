@@ -1,0 +1,37 @@
+{
+  "DebugTeleportationLookupInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugTeleportationPresentationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugTeleportationRegistrationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugTeleportationDestinationService": {
+    "Super": "Actor",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct Radius>",
+        "Name": "DebugTeleportationRegistry",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      }
+    ]
+  }
+}

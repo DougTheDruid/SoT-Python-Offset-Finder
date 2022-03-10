@@ -1,0 +1,133 @@
+{
+  "DrawDebugServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DrawDebugService": {
+    "Super": "Actor",
+    "FullSize": "0x4c8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0xf8",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct SphereList>",
+        "Name": "MessagesReplicated",
+        "Size": "0x10",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "TArray<Struct MessagesReplicated>",
+        "Name": "SpheresReplicated",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "TArray<Struct SpheresReplicated>",
+        "Name": "BoxesReplicated",
+        "Size": "0x10",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "TArray<Struct BoxesReplicated>",
+        "Name": "CapsulesReplicated",
+        "Size": "0x10",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "TArray<Struct CapsulesReplicated>",
+        "Name": "LinesReplicated",
+        "Size": "0x10",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "TArray<Struct LinesReplicated>",
+        "Name": "SectorsReplicated",
+        "Size": "0x10",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "TArray<Struct SectorsReplicated>",
+        "Name": "StringsReplicated",
+        "Size": "0x10",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsDrawDebugActive",
+        "Size": "0x1",
+        "Offset": "0x448"
+      }
+    ]
+  },
+  "ShippingDebugActorSphereCollection": {
+    "Super": "Actor",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct Id>",
+        "Name": "SphereList",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      }
+    ]
+  },
+  "TickableDebugDrawingServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Videprinter": {
+    "Super": "Actor",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "TArray<Str None>",
+        "Name": "OutputRingBuffer",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "int",
+        "Name": "AddAt",
+        "Size": "0x4",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "Id",
+        "Size": "0x8",
+        "Offset": "0x3e4"
+      }
+    ]
+  },
+  "VideprinterServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "VideprinterService": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "TArray<class Videprinters*>",
+        "Name": "Videprinters",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "MysteriousNotesCompletionEventsModel": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "CompletionIdent",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MysteriousNotesCompletionEventsModelEntry": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "CompletionIdent",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventListenForCinematicEndEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventTriggerMysteriousNotesPopup": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class PlayerController*",
+        "Name": "PlayerController",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "CinematicSkipped",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventMarkNoteDeleted": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class PlayerController*",
+        "Name": "PlayerController",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "NoteId",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventNoteClientCompletionStep": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class PlayerController*",
+        "Name": "PlayerController",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "CompletionStepID",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventNoteCompletionStep": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class PlayerController*",
+        "Name": "PlayerController",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "CompletionStepID",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventNotesUpdated": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventMarkNoteRead": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class PlayerController*",
+        "Name": "PlayerController",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "NoteId",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventOnlineAthenaPlayerControllerUnpossessed": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class PlayerController*",
+        "Name": "PlayerController",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventPlayerControllerPossessed": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class PlayerController*",
+        "Name": "PlayerController",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventMysteriousNoteContentUpdated": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "EventMysteriousNoteSettingsLoaded": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventMysteriousNoteCustomContentUpdate": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventMysteriousNoteRemoved": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "MysteriousNoteInfo": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "NoteId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "NoteRead",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShowNoteAnimation",
+        "Size": "0x1",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "MysteriousNoteTheme": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "NoteType",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WieldableMysteriousNoteLayoutItem": {
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "Theme",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Font*",
+        "Name": "Font",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct TreasureMapWidgetStreamedTexture",
+        "Name": "Image",
+        "Size": "0x30",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Struct StringAssetReference",
+        "Name": "RadialIcon",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct TreasureMapWidgetText",
+        "Name": "NoteTitleWidgetText",
+        "Size": "0x38",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "Struct TreasureMapWidgetText",
+        "Name": "NoteBodyWidgetText",
+        "Size": "0x38",
+        "Offset": "0x90"
+      },
+      {
+        "Type": "float",
+        "Name": "NoteWidth",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "ActiveNoteData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct MysteriousNoteRequest>",
+        "Name": "NotesRemoteServiceNoteModels",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct NoteCompletionEntry>",
+        "Name": "PendingCompletionEntries",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "TArray<Struct PendingCompletionEntries>",
+        "Name": "PendingDetailRequestIDs",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "NoteCompletionEntry": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "NoteId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "CompletionEventIds",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MysteriousNoteRequest": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Type": "Class PlayerController*",
+        "Name": "PlayerController",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct PirateIdentity",
+        "Name": "PirateIdentity",
+        "Size": "0x78",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PlayerMysteriousNoteItem": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "OriginalNoteID",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "LocalisedTitle",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "LocalisedBody",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "NoteType",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ClientNoteData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "NotifyArrival",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Struct NotifyArrival>",
+        "Name": "PendingNotes",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PlayerSentNotesTelemetryEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "NoteCount",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PlayerNoteStateChangeTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "NoteId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "NoteState",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  }
+}

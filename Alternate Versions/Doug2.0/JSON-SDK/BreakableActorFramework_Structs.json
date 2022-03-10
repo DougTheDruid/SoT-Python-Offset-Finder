@@ -1,0 +1,30 @@
+{
+  "EventBreakableActorWasDestroyed": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Instigator",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "DirectInstigator",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventBreakableActorWasDamaged": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "Struct ImpactDamageEvent",
+        "Name": "ImpactDamageEvent",
+        "Size": "0x58",
+        "Offset": "0x0"
+      }
+    ]
+  }
+}

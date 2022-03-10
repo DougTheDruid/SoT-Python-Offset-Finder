@@ -1,0 +1,68 @@
+{
+  "ShortRangeMarker": {
+    "Super": "Actor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "TArray<class DynamicMaterials*>",
+        "Name": "DynamicMaterials",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "float",
+        "Name": "LifetimerTimer",
+        "Size": "0x4",
+        "Offset": "0x3f0"
+      },
+      {
+        "Type": "float",
+        "Name": "FadeTimer",
+        "Size": "0x4",
+        "Offset": "0x3f4"
+      },
+      {
+        "Type": "TArray<Weakclass TriggerFadeOut>",
+        "Name": "CachedActors",
+        "Size": "0x10",
+        "Offset": "0x418"
+      }
+    ]
+  },
+  "ShortRangeMarkerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShortRangeMarkerBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShortRangeMarkerDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class ActorSpawnData*",
+        "Name": "RewardMarker",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "float",
+        "Name": "RewardMarkerHeight",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "SafeZoneComponent": {
+    "Super": "CapsuleComponent",
+    "FullSize": "0x710",
+    "InheritedSize": "0x5d0",
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "ExclusionRadius",
+        "Size": "0x4",
+        "Offset": "0x5e0"
+      },
+      {
+        "Type": "float",
+        "Name": "ExclusionHeight",
+        "Size": "0x4",
+        "Offset": "0x5e8"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "SafeZoneEmptyCollisionProfile",
+        "Size": "0x8",
+        "Offset": "0x5ec"
+      },
+      {
+        "Type": "bool",
+        "Name": "AutoActivateSafeZone",
+        "Size": "0x1",
+        "Offset": "0x5f4"
+      },
+      {
+        "Type": "bool",
+        "Name": "DeactivateSafeZoneAfterExclusionRadiusIsEmpty",
+        "Size": "0x1",
+        "Offset": "0x5f5"
+      },
+      {
+        "Type": "bool",
+        "Name": "UsePlayerTeleport",
+        "Size": "0x1",
+        "Offset": "0x5f6"
+      },
+      {
+        "Type": "float",
+        "Name": "PlayerTeleportRadius",
+        "Size": "0x4",
+        "Offset": "0x5f8"
+      },
+      {
+        "Type": "bool",
+        "Name": "UseRepelForce",
+        "Size": "0x1",
+        "Offset": "0x600"
+      },
+      {
+        "Type": "float",
+        "Name": "RepelForceRadius",
+        "Size": "0x4",
+        "Offset": "0x604"
+      },
+      {
+        "Type": "float",
+        "Name": "RepelForceExtents",
+        "Size": "0x4",
+        "Offset": "0x60c"
+      },
+      {
+        "Type": "float",
+        "Name": "RepelForceMin",
+        "Size": "0x4",
+        "Offset": "0x610"
+      },
+      {
+        "Type": "float",
+        "Name": "RepelForceMax",
+        "Size": "0x4",
+        "Offset": "0x614"
+      },
+      {
+        "Type": "bool",
+        "Name": "ApplyRepelForceAtCentreOfMass",
+        "Size": "0x1",
+        "Offset": "0x618"
+      },
+      {
+        "Type": "Struct RuntimeFloatCurve",
+        "Name": "RepelForceGradientCurve",
+        "Size": "0x80",
+        "Offset": "0x620"
+      },
+      {
+        "Type": "bool",
+        "Name": "UseAngularImpulse",
+        "Size": "0x1",
+        "Offset": "0x6a0"
+      },
+      {
+        "Type": "float",
+        "Name": "AngularImpulseRadius",
+        "Size": "0x4",
+        "Offset": "0x6a4"
+      },
+      {
+        "Type": "float",
+        "Name": "AngularImpulseForce",
+        "Size": "0x4",
+        "Offset": "0x6ac"
+      },
+      {
+        "Type": "float",
+        "Name": "TargetDeflectionAngle",
+        "Size": "0x4",
+        "Offset": "0x6b0"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsSafeZoneEmpty",
+        "Size": "0x1",
+        "Offset": "0x6b4"
+      },
+      {
+        "Type": "bool",
+        "Name": "StopAISpawning",
+        "Size": "0x1",
+        "Offset": "0x6b5"
+      },
+      {
+        "Type": "struct FName",
+        "Name": "CurrentCollisionProfile",
+        "Size": "0x8",
+        "Offset": "0x6b8"
+      },
+      {
+        "Type": "byte",
+        "Name": "SafeZoneState",
+        "Size": "0x1",
+        "Offset": "0x6c0"
+      }
+    ]
+  }
+}

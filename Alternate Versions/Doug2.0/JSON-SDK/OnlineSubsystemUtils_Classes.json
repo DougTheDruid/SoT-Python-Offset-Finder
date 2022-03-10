@@ -1,0 +1,435 @@
+{
+  "AchievementBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "InAppPurchaseCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": []
+  },
+  "InAppPurchaseQueryCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": []
+  },
+  "InAppPurchaseRestoreCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": []
+  },
+  "IpConnection": {
+    "Super": "NetConnection",
+    "FullSize": "0x345d8",
+    "InheritedSize": "0x34588",
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "IpNetDriver": {
+    "Super": "NetDriver",
+    "FullSize": "0x4c8",
+    "InheritedSize": "0x478",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "LogPortUnreach",
+        "Size": "0x1",
+        "Offset": "0x478"
+      },
+      {
+        "Type": "bool",
+        "Name": "AllowPlayerPortUnreach",
+        "Size": "0x1",
+        "Offset": "0x478"
+      }
+    ]
+  },
+  "LeaderboardBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LeaderboardFlushCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": []
+  },
+  "LeaderboardQueryCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x90",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x68",
+    "Attributes": []
+  },
+  "LogoutCallbackProxy": {
+    "Super": "BlueprintAsyncActionBase",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": []
+  },
+  "OnlineBeacon": {
+    "Super": "Actor",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "BeaconConnectionInitialTimeout",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Type": "float",
+        "Name": "BeaconConnectionTimeout",
+        "Size": "0x4",
+        "Offset": "0x3dc"
+      },
+      {
+        "Type": "Class NetDriver*",
+        "Name": "NetDriver",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      }
+    ]
+  },
+  "OnlineBeaconClient": {
+    "Super": "OnlineBeacon",
+    "FullSize": "0x420",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class OnlineBeaconHostObject*",
+        "Name": "BeaconOwner",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "Class NetConnection*",
+        "Name": "BeaconConnection",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "byte",
+        "Name": "ConnectionState",
+        "Size": "0x1",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "PartyBeaconState": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "struct FName",
+        "Name": "SessionName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "int",
+        "Name": "NumConsumedReservations",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "int",
+        "Name": "MaxReservations",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "int",
+        "Name": "NumTeams",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "int",
+        "Name": "NumPlayersPerTeam",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "int",
+        "Name": "ReservedHostTeamNum",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "int",
+        "Name": "ForceTeamNum",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "TArray<Struct ForceTeamNum>",
+        "Name": "Reservations",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "PartyBeaconClient": {
+    "Super": "OnlineBeaconClient",
+    "FullSize": "0x478",
+    "InheritedSize": "0x420",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "DestSessionId",
+        "Size": "0x10",
+        "Offset": "0x430"
+      },
+      {
+        "Type": "Struct PartyReservation",
+        "Name": "PendingReservation",
+        "Size": "0x30",
+        "Offset": "0x440"
+      },
+      {
+        "Type": "byte",
+        "Name": "RequestType",
+        "Size": "0x1",
+        "Offset": "0x470"
+      },
+      {
+        "Type": "bool",
+        "Name": "bPendingReservationSent",
+        "Size": "0x1",
+        "Offset": "0x471"
+      },
+      {
+        "Type": "bool",
+        "Name": "bCancelReservation",
+        "Size": "0x1",
+        "Offset": "0x472"
+      }
+    ]
+  },
+  "TestBeaconClient": {
+    "Super": "OnlineBeaconClient",
+    "FullSize": "0x420",
+    "InheritedSize": "0x420",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "OnlineBeaconHost": {
+    "Super": "OnlineBeacon",
+    "FullSize": "0x4b0",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "ListenPort",
+        "Size": "0x4",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "TArray<class ClientActors*>",
+        "Name": "ClientActors",
+        "Size": "0x10",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "OnlineBeaconHostObject": {
+    "Super": "Actor",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "BeaconTypeName",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "class",
+        "Name": "ClientBeaconActorClass",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "TArray<class ClientActors*>",
+        "Name": "ClientActors",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      }
+    ]
+  },
+  "PartyBeaconHost": {
+    "Super": "OnlineBeaconHostObject",
+    "FullSize": "0x430",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Class PartyBeaconState*",
+        "Name": "State",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "float",
+        "Name": "SessionTimeoutSecs",
+        "Size": "0x4",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "float",
+        "Name": "TravelSessionTimeoutSecs",
+        "Size": "0x4",
+        "Offset": "0x42c"
+      }
+    ]
+  },
+  "TestBeaconHost": {
+    "Super": "OnlineBeaconHostObject",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "OnlineBlueprintCallProxyBase": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AchievementQueryCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": []
+  },
+  "AchievementWriteCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": []
+  },
+  "ConnectionCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": []
+  },
+  "CreateSessionCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": []
+  },
+  "DestroySessionCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": []
+  },
+  "EndMatchCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "EndTurnCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": []
+  },
+  "FindSessionsCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": []
+  },
+  "FindTurnBasedMatchCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": []
+  },
+  "JoinSessionCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x148",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x120",
+    "Attributes": []
+  },
+  "QuitMatchCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": []
+  },
+  "OnlineSessionClient": {
+    "Super": "OnlineSession",
+    "FullSize": "0x168",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "bIsFromInvite",
+        "Size": "0x1",
+        "Offset": "0x160"
+      },
+      {
+        "Type": "bool",
+        "Name": "bHandlingDisconnect",
+        "Size": "0x1",
+        "Offset": "0x161"
+      }
+    ]
+  },
+  "ShowLoginUICallbackProxy": {
+    "Super": "BlueprintAsyncActionBase",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": []
+  },
+  "TurnBasedBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

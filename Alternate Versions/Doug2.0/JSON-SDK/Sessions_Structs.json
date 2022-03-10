@@ -1,0 +1,376 @@
+{
+  "SessionTemplate": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "TemplateName",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "SessionType",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "int",
+        "Name": "MaxPlayers",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CrewSessionTemplate": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "MatchmakingHopper",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "class",
+        "Name": "ShipSize",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "int",
+        "Name": "MaxMatchmakingPlayers",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "OnlineSessionMemberLostEvent": {
+    "ClassSize": "0x28",
+    "Attributes": []
+  },
+  "SessionLostEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "SessionDetailsChangedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "SessionInfoUpdateAvailableEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "CrewId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewSessionOperationFailedTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "ErrorMessage",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "OperationTypeCode",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "bool",
+        "Name": "WasCancelled",
+        "Size": "0x1",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CrewSessionMatchmakingFollowedTelemetryEvent": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "NewCrewId",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "int",
+        "Name": "ResultCode",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Message",
+        "Size": "0x10",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "CrewSessionBaseSessionTelemetryEvent": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct CrewSessionTelemetry",
+        "Name": "Session",
+        "Size": "0x40",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CrewSessionBaseTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "CrewId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewSessionTelemetry": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct CrewSessionMemberTelemetry>",
+        "Name": "SessionMembers",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "SessionTemplate",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "SessionVisibility",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "PlayMode",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "CrewSessionMemberTelemetry": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "UserId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "StatusString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsSessionHost",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CrewSessionMatchmakingEndedTelemetryEvent": {
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "NewCrewId",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "CrewMatchmakingAttemptId",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "SessionType",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "MatchmakingHopper",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "MatchmakingType",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "MatchmakingResult",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ErrorMessage",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Type": "TArray<Int >",
+        "Name": "CrewSegmentValues",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "int",
+        "Name": "CurrentCrewCount",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Type": "int",
+        "Name": "TotalWaitTime",
+        "Size": "0x4",
+        "Offset": "0x94"
+      }
+    ]
+  },
+  "CrewSessionMatchmakingStartedTelemetryEvent": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "CrewMatchmakingAttemptId",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "SessionType",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "MatchmakingHopper",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "MatchmakingType",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "TArray<Int >",
+        "Name": "CrewSegmentValues",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "int",
+        "Name": "CurrentCrewCount",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "int",
+        "Name": "EstimatedWaitTime",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Type": "int",
+        "Name": "MaxWaitTime",
+        "Size": "0x4",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "CrewSessionLeaveTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "CrewSessionJoinedTelemetryEvent": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "JoinMethod",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "TArray<Struct CrewSessionQoSMeasurementTelemetry>",
+        "Name": "QoSTelemetry",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "CrewSessionQoSMeasurementTelemetry": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "Location",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "NumReceivedPings",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "int",
+        "Name": "NumFailedPings",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "byte",
+        "Name": "ResolveResult",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      },
+      {
+        "Type": "bool",
+        "Name": "LocationWasConsidered",
+        "Size": "0x1",
+        "Offset": "0x1d"
+      }
+    ]
+  },
+  "CrewSessionCreatedTelemetryEvent": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct CrewTrackedItemOwnershipSet>",
+        "Name": "QoSTelemetry",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  }
+}

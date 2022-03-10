@@ -1,0 +1,142 @@
+{
+  "WaterSlideParams": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "ForwardSpeed",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "IncreaseForwardSpeedMultiplier",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "DecreaseForwardSpeedMultiplier",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "VeeringSpeed",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Type": "float",
+        "Name": "LeftVeeringDistance",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "float",
+        "Name": "RightVeeringDistance",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Type": "Struct PlayerStat",
+        "Name": "StatToFireForRouteChange",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Class ParticleSystem*",
+        "Name": "PlayerSplashingVFXOverride",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "WaterSlideActionStateConstructionInfo": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Class SceneComponent*",
+        "Name": "SceneComponent",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "WaterSlideActionStateParams": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "ForcedFieldOfView",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "ForceStash",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "Struct LookAtOffsetParams",
+        "Name": "LookAtOffsetParams",
+        "Size": "0x1c",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnPlayerSpeedOnWaterSlideChangedActionStateEvent": {
+    "ClassSize": "0xc",
+    "Attributes": []
+  },
+  "OnPlayerChangedWaterSlideRouteActionStateEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "WaterSlideChangeForkOneShot",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnEndWaterSlideActionStateEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "WaterSlideEnd",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "WaterSlideIsEndOneShot",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "OnStartWaterSlideActionStateEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "WaterSlideStart",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class ParticleSystem*",
+        "Name": "WaterSlideVfxOverride",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnExitedWaterSlideEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  }
+}

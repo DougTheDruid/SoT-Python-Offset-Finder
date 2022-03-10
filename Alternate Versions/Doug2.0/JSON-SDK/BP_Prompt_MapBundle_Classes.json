@@ -1,0 +1,58 @@
+{
+  "BP_Prompt_MapBundle_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x258",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "class",
+        "Name": "MapBundlePromptAccessKey",
+        "Size": "0x8",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt",
+        "Size": "0x68",
+        "Offset": "0x128"
+      },
+      {
+        "Type": "bool",
+        "Name": "MapBundleBecameVisible",
+        "Size": "0x1",
+        "Offset": "0x190"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "MapBundleAppearedHandle",
+        "Size": "0x48",
+        "Offset": "0x198"
+      },
+      {
+        "Type": "Struct ObjectMessagingDispatcherHandle",
+        "Name": "CharacterDispatcher",
+        "Size": "0x8",
+        "Offset": "0x1e0"
+      },
+      {
+        "Type": "bool",
+        "Name": "HasShown",
+        "Size": "0x1",
+        "Offset": "0x1e8"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "StealPrompt",
+        "Size": "0x68",
+        "Offset": "0x1f0"
+      }
+    ]
+  }
+}

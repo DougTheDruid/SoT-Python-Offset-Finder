@@ -1,0 +1,126 @@
+{
+  "ChecklistItem": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct FText",
+        "Name": "Description",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "int",
+        "Name": "NumRequiredActionCompletions",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "TArray<class ActionData*>",
+        "Name": "ActionData",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "ChecklistMapItemData": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct TreasureMapTextDesc",
+        "Name": "Description",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "bool",
+        "Name": "IsComplete",
+        "Size": "0x1",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ChecklistMapContents": {
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Type": "Struct TreasureMapTextDesc",
+        "Name": "Title",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Struct TreasureMapTextDesc",
+        "Name": "Description",
+        "Size": "0x48",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "TArray<Struct Description>",
+        "Name": "ChecklistItems",
+        "Size": "0x10",
+        "Offset": "0x90"
+      },
+      {
+        "Type": "Struct TreasureMapTextDesc",
+        "Name": "Afternote",
+        "Size": "0x48",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "CompleteEntireChecklistEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "ChecklistBootyDeliveredEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class Actor*",
+        "Name": "Seller",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "BuyingNPC",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ChecklistCompletionEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class ChecklistActionData*",
+        "Name": "ActionData",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ChecklistItemCompletedTelemetryEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Struct Guid",
+        "Name": "ChecklistMapId",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "byte",
+        "Name": "ReceivedActionType",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ActionDescryption",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  }
+}

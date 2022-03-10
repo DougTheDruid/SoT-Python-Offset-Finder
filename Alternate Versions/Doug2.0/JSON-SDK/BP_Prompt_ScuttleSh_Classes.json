@@ -1,0 +1,70 @@
+{
+  "BP_Prompt_ScuttleShip_C": {
+    "Super": "BP_PromptCoordinator_Base_C",
+    "FullSize": "0x295",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x17d",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_CharacterDeadEvent",
+        "Size": "0x48",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Struct ObjectMessagingHandle",
+        "Name": "Handle_WaitingToSpawnEndedEvent",
+        "Size": "0x48",
+        "Offset": "0x168"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_ArrivedOnFerry",
+        "Size": "0x68",
+        "Offset": "0x1b0"
+      },
+      {
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Name": "Prompt_SuggestScuttling",
+        "Size": "0x68",
+        "Offset": "0x218"
+      },
+      {
+        "Type": "float",
+        "Name": "SpawnKillTimeThreshold",
+        "Size": "0x4",
+        "Offset": "0x280"
+      },
+      {
+        "Type": "int",
+        "Name": "RepeatDeathThreshold",
+        "Size": "0x4",
+        "Offset": "0x284"
+      },
+      {
+        "Type": "Struct GameTime",
+        "Name": "TimeOfLastPvPDeath",
+        "Size": "0x8",
+        "Offset": "0x288"
+      },
+      {
+        "Type": "int",
+        "Name": "NumRecentDeaths",
+        "Size": "0x4",
+        "Offset": "0x290"
+      },
+      {
+        "Type": "bool",
+        "Name": "DiedEnough",
+        "Size": "0x1",
+        "Offset": "0x294"
+      }
+    ]
+  }
+}

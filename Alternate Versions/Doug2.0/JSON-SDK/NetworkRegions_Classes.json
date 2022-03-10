@@ -1,0 +1,43 @@
+{
+  "NetworkRegionServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NetworkRegionService": {
+    "Super": "Object",
+    "FullSize": "0xc8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Type": "TArray<class PlayersThatNeedToBeTicked*>",
+        "Name": "PlayersThatNeedToBeTicked",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "RegionAssetCacheActor": {
+    "Super": "Actor",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct GetPressureZoneParameters>",
+        "Name": "RegionData",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "TArray<class LoadedAssets*>",
+        "Name": "LoadedAssets",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      }
+    ]
+  }
+}

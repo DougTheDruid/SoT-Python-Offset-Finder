@@ -1,0 +1,318 @@
+{
+  "ForceFeedbackCondition": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AthenaEngineInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BoxedRpcDispatcherInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BoxedRpcDispatcherComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "DynamicColourPointLightComponent": {
+    "Super": "PointLightComponent",
+    "FullSize": "0x5d0",
+    "InheritedSize": "0x4a0",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Type": "Struct RuntimeFloatCurve",
+        "Name": "ActivationCurve",
+        "Size": "0x80",
+        "Offset": "0x498"
+      },
+      {
+        "Type": "Struct RuntimeFloatCurve",
+        "Name": "DeactivationCurve",
+        "Size": "0x80",
+        "Offset": "0x518"
+      }
+    ]
+  },
+  "EmptyObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameInstanceSessionIdProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NestedWorldRootDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "OnlinePlayerPermissionsRetrieverInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PlayModeHelpers": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PlayModeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PrimitiveCollisionExtentAdjustOverTimeComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x108",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "DelayBeforeExtentAdjustment",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "Class World*",
+        "Name": "CachedWorld",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      }
+    ]
+  },
+  "BoxCollisionExtentAdjustOverTimeComponent": {
+    "Super": "PrimitiveCollisionExtentAdjustOverTimeComponent",
+    "FullSize": "0x138",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "ShouldAdjustBoxExtentX",
+        "Size": "0x1",
+        "Offset": "0x108"
+      },
+      {
+        "Type": "float",
+        "Name": "PostAdjustmentBoxExtentX",
+        "Size": "0x4",
+        "Offset": "0x10c"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShouldAdjustBoxExtentY",
+        "Size": "0x1",
+        "Offset": "0x110"
+      },
+      {
+        "Type": "float",
+        "Name": "PostAdjustmentBoxExtentY",
+        "Size": "0x4",
+        "Offset": "0x114"
+      },
+      {
+        "Type": "bool",
+        "Name": "ShouldAdjustBoxExtentZ",
+        "Size": "0x1",
+        "Offset": "0x118"
+      },
+      {
+        "Type": "float",
+        "Name": "PostAdjustmentBoxExtentZ",
+        "Size": "0x4",
+        "Offset": "0x11c"
+      },
+      {
+        "Type": "Struct Vector",
+        "Name": "ServerSizeScale",
+        "Size": "0xc",
+        "Offset": "0x120"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "BoxCollisionToAdjust",
+        "Size": "0x8",
+        "Offset": "0x130"
+      }
+    ]
+  },
+  "SphereCollisionExtentAdjustOverTimeComponent": {
+    "Super": "PrimitiveCollisionExtentAdjustOverTimeComponent",
+    "FullSize": "0x120",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "ShouldAdjustSphereRadius",
+        "Size": "0x1",
+        "Offset": "0x108"
+      },
+      {
+        "Type": "float",
+        "Name": "PostAdjustmentSphereRadius",
+        "Size": "0x4",
+        "Offset": "0x10c"
+      },
+      {
+        "Type": "float",
+        "Name": "ServerSizeScale",
+        "Size": "0x4",
+        "Offset": "0x110"
+      },
+      {
+        "Type": "Class SphereComponent*",
+        "Name": "SphereCollisionToAdjust",
+        "Size": "0x8",
+        "Offset": "0x118"
+      }
+    ]
+  },
+  "ResourceProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RotateMeshToActorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Class MeshComponent*",
+        "Name": "MeshToRotate",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "Class Actor*",
+        "Name": "ActorToRotateTo",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Type": "float",
+        "Name": "CloseProximityRadius",
+        "Size": "0x4",
+        "Offset": "0xd8"
+      },
+      {
+        "Type": "bool",
+        "Name": "Use2DDistanceForCloseProximityRadius",
+        "Size": "0x1",
+        "Offset": "0xdc"
+      },
+      {
+        "Type": "bool",
+        "Name": "WhenInCloseProximityKeepLastYaw",
+        "Size": "0x1",
+        "Offset": "0xdd"
+      },
+      {
+        "Type": "float",
+        "Name": "RotationSpeed",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Type": "bool",
+        "Name": "PreventPitchModification",
+        "Size": "0x1",
+        "Offset": "0xe4"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxPitch",
+        "Size": "0x4",
+        "Offset": "0xe8"
+      },
+      {
+        "Type": "float",
+        "Name": "CloseProximityYawRotation",
+        "Size": "0x4",
+        "Offset": "0xec"
+      }
+    ]
+  },
+  "RotateMeshToLocalPlayerComponent": {
+    "Super": "RotateMeshToActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xf8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ServicesStampIdInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SkeletalMeshAggregateTickComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "Class SkeletalMeshComponent*",
+        "Name": "Mesh",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "StringToAssetClassMap": {
+    "Super": "DataAsset",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct ClosestActorToPoint>",
+        "Name": "StringAssetClassPairs",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "SyncedRandomRetrievalInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

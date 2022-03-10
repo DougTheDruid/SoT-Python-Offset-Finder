@@ -1,0 +1,37 @@
+{
+  "AthenaServerMigrationGameAuthorityProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MigrationServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RegisterServerMigrationPointOfInterestComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Type": "float",
+        "Name": "MigrationRadius",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "ServerMigrationGatherableActorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "Proposal_TheAshenDragon_Chapter2_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_TheAshenDragon_Chapter3_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_TheAshenDragon_Chapter4_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_CursedRogue_Chapter2_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Proposal_CursedRogue_Chapter3_C": {
+    "Super": "VoyageCheckpointProposalDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

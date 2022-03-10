@@ -1,0 +1,28 @@
+{
+  "BP_Cannon_C": {
+    "Super": "Cannon",
+    "FullSize": "0xc38",
+    "InheritedSize": "0xc20",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Class GroupedInteractableAreaComponent*",
+        "Name": "GroupedInteractableArea",
+        "Size": "0x8",
+        "Offset": "0xc20"
+      },
+      {
+        "Type": "Class InteractableComponent*",
+        "Name": "Interactable",
+        "Size": "0x8",
+        "Offset": "0xc28"
+      },
+      {
+        "Type": "Class StaticMeshComponent*",
+        "Name": "Collision",
+        "Size": "0x8",
+        "Offset": "0xc30"
+      }
+    ]
+  }
+}

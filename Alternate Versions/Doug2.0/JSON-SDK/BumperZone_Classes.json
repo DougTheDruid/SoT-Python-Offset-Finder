@@ -1,0 +1,64 @@
+{
+  "ShipBumperZone": {
+    "Super": "Actor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "UseInverseRightVector",
+        "Size": "0x1",
+        "Offset": "0x3d0"
+      },
+      {
+        "Type": "Class BoxComponent*",
+        "Name": "BumperZoneComponent",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "Class SphereComponent*",
+        "Name": "DistanceRadiusComponent",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "bool",
+        "Name": "ApplyAngularImpulse",
+        "Size": "0x1",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "float",
+        "Name": "AngularImpulse",
+        "Size": "0x4",
+        "Offset": "0x414"
+      },
+      {
+        "Type": "bool",
+        "Name": "OverrideWheelControl",
+        "Size": "0x1",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "bool",
+        "Name": "ApplyWheelTurbulence",
+        "Size": "0x1",
+        "Offset": "0x419"
+      },
+      {
+        "Type": "float",
+        "Name": "MinWheelTurbulence",
+        "Size": "0x4",
+        "Offset": "0x41c"
+      },
+      {
+        "Type": "float",
+        "Name": "MaxWheelTurbulence",
+        "Size": "0x4",
+        "Offset": "0x420"
+      }
+    ]
+  }
+}

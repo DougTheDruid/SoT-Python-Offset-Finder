@@ -1,0 +1,309 @@
+{
+  "ConsoleSettings": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "MaxScrollbackSize",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "TArray<Struct MaxScrollbackSize>",
+        "Name": "ManualAutoCompleteList",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "AutoCompleteMapPaths",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "GameMapsSettings": {
+    "Super": "Object",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "EditorStartupMap",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "LocalMapOptions",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "TransitionMap",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "bool",
+        "Name": "bUseSplitscreen",
+        "Size": "0x1",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "byte",
+        "Name": "TwoPlayerSplitscreenLayout",
+        "Size": "0x1",
+        "Offset": "0x59"
+      },
+      {
+        "Type": "byte",
+        "Name": "ThreePlayerSplitscreenLayout",
+        "Size": "0x1",
+        "Offset": "0x5a"
+      },
+      {
+        "Type": "Struct StringClassReference",
+        "Name": "GameInstanceClass",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "GameDefaultMap",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ServerDefaultMap",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Type": "Struct StringClassReference",
+        "Name": "GlobalDefaultGameMode",
+        "Size": "0x10",
+        "Offset": "0x90"
+      },
+      {
+        "Type": "Struct StringClassReference",
+        "Name": "GlobalDefaultServerGameMode",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "GameNetworkManagerSettings": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "MinDynamicBandwidth",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "int",
+        "Name": "MaxDynamicBandwidth",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "int",
+        "Name": "TotalNetBandwidth",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "int",
+        "Name": "BadPingThreshold",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Type": "bool",
+        "Name": "bIsStandbyCheckingEnabled",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "float",
+        "Name": "StandbyRxCheatTime",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Type": "float",
+        "Name": "StandbyTxCheatTime",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Type": "float",
+        "Name": "PercentMissingForRxStandby",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Type": "float",
+        "Name": "PercentMissingForTxStandby",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "float",
+        "Name": "PercentForBadPing",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Type": "float",
+        "Name": "JoinInProgressStandbyWaitTime",
+        "Size": "0x4",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "GameSessionSettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "MaxSpectators",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "int",
+        "Name": "MaxPlayers",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Type": "bool",
+        "Name": "bRequiresPushToTalk",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "GeneralEngineSettings": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GeneralProjectSettings": {
+    "Super": "Object",
+    "FullSize": "0x110",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "CompanyName",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "CompanyDistinguishedName",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "CopyrightNotice",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Description",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "Homepage",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "LicensingTerms",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "PrivacyPolicy",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "ProjectID",
+        "Size": "0x10",
+        "Offset": "0x98"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ProjectName",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ProjectVersion",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "SupportContact",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Type": "Struct FText",
+        "Name": "ProjectDisplayedTitle",
+        "Size": "0x38",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "HudSettings": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "bool",
+        "Name": "bShowHUD",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "TArray<Struct FName>",
+        "Name": "DebugDisplay",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  }
+}

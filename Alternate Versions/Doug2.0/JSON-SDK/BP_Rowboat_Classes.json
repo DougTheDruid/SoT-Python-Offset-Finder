@@ -1,0 +1,40 @@
+{
+  "BP_Rowboat_C": {
+    "Super": "Rowboat",
+    "FullSize": "0xa30",
+    "InheritedSize": "0xa08",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Type": "Class PetHangoutSpotComponent*",
+        "Name": "PetHangoutSpot",
+        "Size": "0x8",
+        "Offset": "0xa08"
+      },
+      {
+        "Type": "Class WaterInteractionComponent*",
+        "Name": "WaterInteraction",
+        "Size": "0x8",
+        "Offset": "0xa10"
+      },
+      {
+        "Type": "Class ImpulseThrottlerComponent*",
+        "Name": "ImpulseThrottler",
+        "Size": "0x8",
+        "Offset": "0xa18"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "MiddleRightSeat",
+        "Size": "0x8",
+        "Offset": "0xa20"
+      },
+      {
+        "Type": "Class ChildActorComponent*",
+        "Name": "MiddleLeftSeat",
+        "Size": "0x8",
+        "Offset": "0xa28"
+      }
+    ]
+  }
+}

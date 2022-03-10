@@ -1,0 +1,44 @@
+{
+  "Campaign038_VoyageEntitlement1_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Campaign038_VoyageEntitlement2_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Campaign038_VoyageEntitlement3_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Campaign038_VoyageEntitlement4_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Campaign038_VoyageEntitlement5_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Campaign038_VoyageEntitlement6_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

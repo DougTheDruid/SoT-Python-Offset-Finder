@@ -1,0 +1,72 @@
+{
+  "ALK_FirstPerson_Female_Athletic_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_FirstPerson_Female_Default_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_FirstPerson_Female_Large_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_FirstPerson_Female_Thin_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_FirstPerson_Female_Unfit_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_FirstPerson_Male_Athletic_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_FirstPerson_Male_Default_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_FirstPerson_Male_Large_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_FirstPerson_Male_Thin_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ALK_FirstPerson_Male_Unfit_C": {
+    "Super": "AnimationDataStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

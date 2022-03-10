@@ -1,0 +1,256 @@
+{
+  "TestLevelScriptActor": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x498",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "Category",
+        "Size": "0x1",
+        "Offset": "0x3e0"
+      },
+      {
+        "Type": "byte",
+        "Name": "Area",
+        "Size": "0x1",
+        "Offset": "0x3e1"
+      },
+      {
+        "Type": "bool",
+        "Name": "VisualTest",
+        "Size": "0x1",
+        "Offset": "0x3e2"
+      },
+      {
+        "Type": "bool",
+        "Name": "RunInEditor",
+        "Size": "0x1",
+        "Offset": "0x3e3"
+      },
+      {
+        "Type": "bool",
+        "Name": "RunOnServer",
+        "Size": "0x1",
+        "Offset": "0x3e4"
+      },
+      {
+        "Type": "bool",
+        "Name": "RequiresServices",
+        "Size": "0x1",
+        "Offset": "0x3e5"
+      },
+      {
+        "Type": "TArray<Struct RequiresServices>",
+        "Name": "AdditionalMetadata",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      },
+      {
+        "Type": "byte",
+        "Name": "CaptureType",
+        "Size": "0x1",
+        "Offset": "0x3f8"
+      },
+      {
+        "Type": "byte",
+        "Name": "PlayModeOverride",
+        "Size": "0x1",
+        "Offset": "0x3f9"
+      },
+      {
+        "Type": "float",
+        "Name": "TestTimeout",
+        "Size": "0x4",
+        "Offset": "0x3fc"
+      },
+      {
+        "Type": "float",
+        "Name": "TestPausedTimeout",
+        "Size": "0x4",
+        "Offset": "0x400"
+      },
+      {
+        "Type": "TArray<Str >",
+        "Name": "VerboseLogCategories",
+        "Size": "0x10",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "TArray<Int >",
+        "Name": "ClientsRunning",
+        "Size": "0x10",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "TArray<Int >",
+        "Name": "ClientIds",
+        "Size": "0x10",
+        "Offset": "0x428"
+      },
+      {
+        "Type": "TArray<Struct ClientIds>",
+        "Name": "ClientPawns",
+        "Size": "0x10",
+        "Offset": "0x438"
+      },
+      {
+        "Type": "TArray<class SpawnedActors*>",
+        "Name": "SpawnedActors",
+        "Size": "0x10",
+        "Offset": "0x448"
+      },
+      {
+        "Type": "int",
+        "Name": "NextSpawnedActorIndex",
+        "Size": "0x4",
+        "Offset": "0x458"
+      }
+    ]
+  },
+  "ActorThatLogsErrorWhenTicked": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AutomationBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AutomationLatentActionCallback": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": []
+  },
+  "BPNamedObjectMock": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DummyReplicatedActor": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MapFixtureTestGameMode": {
+    "Super": "GameMode",
+    "FullSize": "0x4c8",
+    "InheritedSize": "0x4c8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ObjectWithSettableWorld": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Type": "Class World*",
+        "Name": "World",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "OtherTestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RunUnitTestsCommandlet": {
+    "Super": "Commandlet",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerController": {
+    "Super": "PlayerController",
+    "FullSize": "0x728",
+    "InheritedSize": "0x728",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerControllerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerControllerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "TestAbstractActor": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TextureAuditorSettings": {
+    "Super": "TestSettings",
+    "FullSize": "0x88",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct ForwardSettingMap>",
+        "Name": "SpecificTexturesToNotAudit",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "TArray<Struct SpecificTexturesToNotAudit>",
+        "Name": "TextureDirectoriesToNotAudit",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct TextureAuditorProperties",
+        "Name": "DefaultTextureProperties",
+        "Size": "0x20",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "TArray<Struct DefaultTextureProperties>",
+        "Name": "PerTextureGroupPropertiesOverrides",
+        "Size": "0x10",
+        "Offset": "0x78"
+      }
+    ]
+  }
+}

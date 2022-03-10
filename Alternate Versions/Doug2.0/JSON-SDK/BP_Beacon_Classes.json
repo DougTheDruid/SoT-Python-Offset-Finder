@@ -1,0 +1,82 @@
+{
+  "BP_Beacon_C": {
+    "Super": "Beacon",
+    "FullSize": "0x828",
+    "InheritedSize": "0x7c8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Class PointLightComponent*",
+        "Name": "PointLight3",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Type": "Class PointLightComponent*",
+        "Name": "PointLight2",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Type": "Class PointLightComponent*",
+        "Name": "PointLight1",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "ParticleSystem6",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_candle_01_smoke_tavern",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "ParticleSystem5",
+        "Size": "0x8",
+        "Offset": "0x7f0"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "ParticleSystem4",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "ParticleSystem3",
+        "Size": "0x8",
+        "Offset": "0x800"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "ParticleSystem2",
+        "Size": "0x8",
+        "Offset": "0x808"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "ParticleSystem1",
+        "Size": "0x8",
+        "Offset": "0x810"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "ParticleSystem",
+        "Size": "0x8",
+        "Offset": "0x818"
+      },
+      {
+        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_candle_01_tavern",
+        "Size": "0x8",
+        "Offset": "0x820"
+      }
+    ]
+  }
+}

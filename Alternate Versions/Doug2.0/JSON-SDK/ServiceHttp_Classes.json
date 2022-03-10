@@ -1,0 +1,66 @@
+{
+  "ServiceHttpSettings": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "DiscoveryServiceUrl",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "byte",
+        "Name": "ServerMetricsLevel",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "byte",
+        "Name": "ClientMetricsLevel",
+        "Size": "0x1",
+        "Offset": "0x39"
+      }
+    ]
+  },
+  "DevelopmentAuthenticationSettings": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Type": "Struct FString",
+        "Name": "SandboxId",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "TokenServiceUrl",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ClientId",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "ClientSecret",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Type": "Struct FString",
+        "Name": "LivePrivileges",
+        "Size": "0x10",
+        "Offset": "0x68"
+      }
+    ]
+  }
+}

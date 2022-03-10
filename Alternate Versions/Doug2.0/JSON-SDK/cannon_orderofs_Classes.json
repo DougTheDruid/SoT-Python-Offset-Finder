@@ -1,0 +1,16 @@
+{
+  "cannon_orderofsoulsdre_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "cannon_orderofsouls_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "SirenAnimationDataStructure": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Type": "Struct SirenAnimationLocomotion",
+        "Name": "LocomotionAnims",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class CustomAnimationMontageDefinitionListingDataAsset*",
+        "Name": "FullBodyMontageListings",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Type": "Class AthenaAnimationWeaponDataAsset*",
+        "Name": "AttackAnimationAsset",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Type": "Struct HitReactionAnimationData",
+        "Name": "HitReactAnimationData",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "SirenAnimationLocomotion": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Type": "Class AnimSequence*",
+        "Name": "TreadwaterSequence",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class AnimSequence*",
+        "Name": "AggressiveTreadwaterSequence",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "Class BlendSpace1D*",
+        "Name": "LongwaysLocomotionBlendSpace",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Type": "Class BlendSpace1D*",
+        "Name": "AggressiveLongwaysLocomotionBlendSpace",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Type": "Class BlendSpace1D*",
+        "Name": "AlternativeAggressiveLongwaysLocomotionBlendSpace",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Type": "Class BlendSpace1D*",
+        "Name": "LocomotionTurningAdditiveBlendSpace",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Type": "Class BlendSpace1D*",
+        "Name": "LocomotionSpinningAdditiveBlendSpace",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Type": "Class AnimSequence*",
+        "Name": "DivingFromSurfaceSequence",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Type": "Class AnimSequence*",
+        "Name": "EmergingToSurfaceSequence",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  }
+}

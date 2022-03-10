@@ -1,0 +1,29 @@
+{
+  "CleanlinessInfo": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "DirtinessType",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "Strength",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "QuickClean",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventQuickCleanRequest": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  }
+}

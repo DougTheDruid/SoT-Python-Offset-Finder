@@ -1,0 +1,36 @@
+{
+  "OceanCrawlerBuffAudioSettings": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "GiveBuffAudioEvent",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "ReceiveBuffAudioEvent",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OceanCrawlerAudioKeyPair": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "AudioKey",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "Class WwiseEvent*",
+        "Name": "AudioEvent",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  }
+}

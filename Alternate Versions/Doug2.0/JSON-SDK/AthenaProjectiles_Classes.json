@@ -1,0 +1,30 @@
+{
+  "AthenaProjectilesThrottledTickCollectionAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct GlobalSettings>",
+        "Name": "ProjectileTickPools",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ProjectileLauncherSpecificSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "TArray<Struct SetParamValues>",
+        "Name": "GlobalSettings",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  }
+}

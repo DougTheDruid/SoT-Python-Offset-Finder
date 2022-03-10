@@ -1,0 +1,192 @@
+{
+  "BP_PromptActor_EmissaryEntitlementPurchased_AF_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x440",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptCounterAccessKey",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "OfferId",
+        "Size": "0x10",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "TArray<Struct Prompts>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x430"
+      }
+    ]
+  },
+  "BP_PromptActor_EmissaryEntitlementPurchased_GH_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x440",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptCounterAccessKey",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "OfferId",
+        "Size": "0x10",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "TArray<Struct None>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x430"
+      }
+    ]
+  },
+  "BP_PromptActor_EmissaryEntitlementPurchased_MA_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x440",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptCounterAccessKey",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "OfferId",
+        "Size": "0x10",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "TArray<Struct Prompts>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x430"
+      }
+    ]
+  },
+  "BP_PromptActor_EmissaryEntitlementPurchased_OOS_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x440",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptCounterAccessKey",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "OfferId",
+        "Size": "0x10",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "TArray<Struct Prompts>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x430"
+      }
+    ]
+  },
+  "BP_PromptActor_EmissaryEntitlementPurchased_RB_C": {
+    "Super": "BP_PromptActorBase_C",
+    "FullSize": "0x440",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
+        "Name": "PromptCoordinator",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Type": "class",
+        "Name": "PromptCounterAccessKey",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Type": "Struct Guid",
+        "Name": "OfferId",
+        "Size": "0x10",
+        "Offset": "0x420"
+      },
+      {
+        "Type": "TArray<Struct Prompts>",
+        "Name": "Prompts",
+        "Size": "0x10",
+        "Offset": "0x430"
+      }
+    ]
+  }
+}

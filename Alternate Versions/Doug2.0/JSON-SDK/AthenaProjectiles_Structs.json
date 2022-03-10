@@ -1,0 +1,48 @@
+{
+  "ThrottledProjectileTickPool": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Type": "int",
+        "Name": "MaxNumberToTickPerFrame",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "TArray<Class MaxNumberToTickPerFrame>",
+        "Name": "Projectiles",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "GlobalProjectileSettings": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Type": "byte",
+        "Name": "SettingsFor",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Type": "float",
+        "Name": "ProjectileDestroyDepth",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Type": "float",
+        "Name": "ProjectileOceanFloorDestroyDepth",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Type": "float",
+        "Name": "ProjectileMinimumFallDistance",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  }
+}
