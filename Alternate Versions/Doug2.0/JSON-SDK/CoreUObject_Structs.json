@@ -1,0 +1,851 @@
+{
+  "Default__ScriptStruct": {
+    "ClassSize": "0x0",
+    "Attributes": {}
+  },
+  "Guid": {
+    "ClassSize": "0x10",
+    "Attributes": {
+      "A": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "B": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      "C": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      "D": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    }
+  },
+  "Vector": {
+    "ClassSize": "0xc",
+    "Attributes": {
+      "X": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Y": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      "Z": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    }
+  },
+  "Vector4": {
+    "ClassSize": "0x10",
+    "Attributes": {
+      "X": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Y": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      "Z": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      "W": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    }
+  },
+  "Vector2D": {
+    "ClassSize": "0x8",
+    "Attributes": {
+      "X": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Y": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    }
+  },
+  "TwoVectors": {
+    "ClassSize": "0x18",
+    "Attributes": {
+      "v1": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      "v2": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      }
+    }
+  },
+  "Plane": {
+    "ClassSize": "0x10",
+    "Attributes": {
+      "W": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    }
+  },
+  "Rotator": {
+    "ClassSize": "0xc",
+    "Attributes": {
+      "Pitch": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Yaw": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      "Roll": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    }
+  },
+  "Quat": {
+    "ClassSize": "0x10",
+    "Attributes": {
+      "X": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Y": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      "Z": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      "W": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    }
+  },
+  "PackedNormal": {
+    "ClassSize": "0x4",
+    "Attributes": {
+      "X": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      "Y": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      "Z": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      "W": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3"
+      }
+    }
+  },
+  "IntPoint": {
+    "ClassSize": "0x8",
+    "Attributes": {
+      "X": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Y": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    }
+  },
+  "IntVector": {
+    "ClassSize": "0xc",
+    "Attributes": {
+      "X": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Y": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      "Z": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    }
+  },
+  "Color": {
+    "ClassSize": "0x4",
+    "Attributes": {
+      "B": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      "G": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      "R": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      "A": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3"
+      }
+    }
+  },
+  "LinearColor": {
+    "ClassSize": "0x10",
+    "Attributes": {
+      "R": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "G": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      "B": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      "A": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    }
+  },
+  "Box": {
+    "ClassSize": "0x1c",
+    "Attributes": {
+      "Min": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      "Max": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      "IsValid": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    }
+  },
+  "Box2D": {
+    "ClassSize": "0x14",
+    "Attributes": {
+      "Min": {
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      "Max": {
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      "IsValid": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    }
+  },
+  "BoxSphereBounds": {
+    "ClassSize": "0x1c",
+    "Attributes": {
+      "Origin": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      "BoxExtent": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      "SphereRadius": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    }
+  },
+  "OrientedBox": {
+    "ClassSize": "0x3c",
+    "Attributes": {
+      "Center": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      "AxisX": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      "AxisY": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      "AxisZ": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x24"
+      },
+      "ExtentX": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      "ExtentY": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      "ExtentZ": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      }
+    }
+  },
+  "Matrix": {
+    "ClassSize": "0x40",
+    "Attributes": {
+      "XPlane": {
+        "Type": "Struct Plane",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      "YPlane": {
+        "Type": "Struct Plane",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      "ZPlane": {
+        "Type": "Struct Plane",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      "WPlane": {
+        "Type": "Struct Plane",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    }
+  },
+  "InterpCurvePointFloat": {
+    "ClassSize": "0x14",
+    "Attributes": {
+      "InVal": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "OutVal": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      "ArriveTangent": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      "LeaveTangent": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      "InterpMode": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    }
+  },
+  "InterpCurveFloat": {
+    "ClassSize": "0x18",
+    "Attributes": {
+      "Points": {
+        "Type": "TArray<Struct InterpCurvePointVector2D>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      "bIsLooped": {
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      "LoopKeyOffset": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    }
+  },
+  "InterpCurvePointVector2D": {
+    "ClassSize": "0x20",
+    "Attributes": {
+      "InVal": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "OutVal": {
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      "ArriveTangent": {
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0xc"
+      },
+      "LeaveTangent": {
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x14"
+      },
+      "InterpMode": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      }
+    }
+  },
+  "InterpCurveVector2D": {
+    "ClassSize": "0x18",
+    "Attributes": {
+      "Points": {
+        "Type": "TArray<Struct InterpCurvePointVector>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      "bIsLooped": {
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      "LoopKeyOffset": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    }
+  },
+  "InterpCurvePointVector": {
+    "ClassSize": "0x2c",
+    "Attributes": {
+      "InVal": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "OutVal": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x4"
+      },
+      "ArriveTangent": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      "LeaveTangent": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x1c"
+      },
+      "InterpMode": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    }
+  },
+  "InterpCurveVector": {
+    "ClassSize": "0x18",
+    "Attributes": {
+      "Points": {
+        "Type": "TArray<Struct InterpCurvePointQuat>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      "bIsLooped": {
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      "LoopKeyOffset": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    }
+  },
+  "InterpCurvePointQuat": {
+    "ClassSize": "0x50",
+    "Attributes": {
+      "InVal": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "OutVal": {
+        "Type": "Struct Quat",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      "ArriveTangent": {
+        "Type": "Struct Quat",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      "LeaveTangent": {
+        "Type": "Struct Quat",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      "InterpMode": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x40"
+      }
+    }
+  },
+  "InterpCurveQuat": {
+    "ClassSize": "0x18",
+    "Attributes": {
+      "Points": {
+        "Type": "TArray<Struct InterpCurvePointTwoVectors>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      "bIsLooped": {
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      "LoopKeyOffset": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    }
+  },
+  "InterpCurvePointTwoVectors": {
+    "ClassSize": "0x50",
+    "Attributes": {
+      "InVal": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "OutVal": {
+        "Type": "Struct TwoVectors",
+        "Size": "0x18",
+        "Offset": "0x4"
+      },
+      "ArriveTangent": {
+        "Type": "Struct TwoVectors",
+        "Size": "0x18",
+        "Offset": "0x1c"
+      },
+      "LeaveTangent": {
+        "Type": "Struct TwoVectors",
+        "Size": "0x18",
+        "Offset": "0x34"
+      },
+      "InterpMode": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4c"
+      }
+    }
+  },
+  "InterpCurveTwoVectors": {
+    "ClassSize": "0x18",
+    "Attributes": {
+      "Points": {
+        "Type": "TArray<Struct InterpCurvePointLinearColor>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      "bIsLooped": {
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      "LoopKeyOffset": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    }
+  },
+  "InterpCurvePointLinearColor": {
+    "ClassSize": "0x38",
+    "Attributes": {
+      "InVal": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "OutVal": {
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x4"
+      },
+      "ArriveTangent": {
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x14"
+      },
+      "LeaveTangent": {
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x24"
+      },
+      "InterpMode": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x34"
+      }
+    }
+  },
+  "InterpCurveLinearColor": {
+    "ClassSize": "0x18",
+    "Attributes": {
+      "Points": {
+        "Type": "TArray<Struct Transform>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      "bIsLooped": {
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      "LoopKeyOffset": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    }
+  },
+  "Transform": {
+    "ClassSize": "0x30",
+    "Attributes": {
+      "Rotation": {
+        "Type": "Struct Quat",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      "Translation": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      "Scale3D": {
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x20"
+      }
+    }
+  },
+  "RandomStream": {
+    "ClassSize": "0x8",
+    "Attributes": {
+      "InitialSeed": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Seed": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    }
+  },
+  "DateTime": {
+    "ClassSize": "0x8",
+    "Attributes": {}
+  },
+  "Timespan": {
+    "ClassSize": "0x8",
+    "Attributes": {}
+  },
+  "StringAssetReference": {
+    "ClassSize": "0x10",
+    "Attributes": {
+      "AssetLongPathname": {
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    }
+  },
+  "StringClassReference": {
+    "ClassSize": "0x10",
+    "Attributes": {}
+  },
+  "FallbackStruct": {
+    "ClassSize": "0x1",
+    "Attributes": {}
+  },
+  "FloatRangeBound": {
+    "ClassSize": "0x8",
+    "Attributes": {
+      "Type": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      "Value": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    }
+  },
+  "FloatRange": {
+    "ClassSize": "0x10",
+    "Attributes": {
+      "LowerBound": {
+        "Type": "Struct FloatRangeBound",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      "UpperBound": {
+        "Type": "Struct FloatRangeBound",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    }
+  },
+  "Int32RangeBound": {
+    "ClassSize": "0x8",
+    "Attributes": {
+      "Type": {
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      "Value": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    }
+  },
+  "Int32Range": {
+    "ClassSize": "0x10",
+    "Attributes": {
+      "LowerBound": {
+        "Type": "Struct Int32RangeBound",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      "UpperBound": {
+        "Type": "Struct Int32RangeBound",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    }
+  },
+  "FloatInterval": {
+    "ClassSize": "0x8",
+    "Attributes": {
+      "Min": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Max": {
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    }
+  },
+  "Int32Interval": {
+    "ClassSize": "0x8",
+    "Attributes": {
+      "Min": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      "Max": {
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    }
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}
