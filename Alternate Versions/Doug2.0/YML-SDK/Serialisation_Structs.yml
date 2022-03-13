@@ -2,47 +2,47 @@
 # https://github.com/DougTheDruid
 SerialisedNestedStruct:
   Attributes:
-    Float:
-      Offset: '0x24'
-      Size: '0x4'
-      Type: float
-    Int:
-      Offset: '0x20'
-      Size: '0x4'
-      Type: int
-    IntArray:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: TArray<Int >
-    String:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: String
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: IntArray
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Int >
+  - Name: Int
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: Float
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x28'
 SerialisedTestStruct:
   Attributes:
-    Float:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    Int:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    IntArray:
-      Offset: '0x18'
-      Size: '0x10'
-      Type: TArray<Int >
-    NestedStruct:
-      Offset: '0x38'
-      Size: '0x28'
-      Type: Struct SerialisedNestedStruct
-    String:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: Struct FString
-    StructArray:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<Struct IntArray>
+  - Name: Int
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Float
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: String
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: IntArray
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Int >
+  - Name: StructArray
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct IntArray>
+  - Name: NestedStruct
+    Offset: '0x38'
+    Size: '0x28'
+    Type: Struct SerialisedNestedStruct
   ClassSize: '0x60'

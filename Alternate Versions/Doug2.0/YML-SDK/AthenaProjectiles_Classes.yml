@@ -2,20 +2,20 @@
 # https://github.com/DougTheDruid
 AthenaProjectilesThrottledTickCollectionAsset:
   Attributes:
-    ProjectileTickPools:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<Struct GlobalSettings>
+  - Name: ProjectileTickPools
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct GlobalSettings>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 ProjectileLauncherSpecificSettings:
   Attributes:
-    GlobalSettings:
-      Offset: '0x38'
-      Size: '0x10'
-      Type: TArray<Struct SetParamValues>
+  - Name: GlobalSettings
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Struct SetParamValues>
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'

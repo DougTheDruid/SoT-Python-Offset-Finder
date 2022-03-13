@@ -2,198 +2,198 @@
 # https://github.com/DougTheDruid
 EventEnteredWatercraft:
   Attributes:
-    Actor:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class Actor*
-    Watercraft:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class Actor*
+  - Name: Watercraft
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Actor
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
   ClassSize: '0x10'
 EventExitedWatercraft:
   Attributes:
-    Actor:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class Actor*
-    Watercraft:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class Actor*
+  - Name: Watercraft
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Actor
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
   ClassSize: '0x10'
 EventOarStrokeEnded:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 EventRowboatEnteredWater:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 EventRowboatExitedWater:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 Oar:
   Attributes:
-    OarParams:
-      Offset: '0x0'
-      Size: '0x38'
-      Type: Struct OarParams
+  - Name: OarParams
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct OarParams
   ClassSize: '0x60'
 OarParams:
   Attributes:
-    BrakeForcePerMetresPerSecond:
-      Offset: '0x30'
-      Size: '0x4'
-      Type: float
-    EndOfStrokeBrakeForcePerMetresPerSecond:
-      Offset: '0x34'
-      Size: '0x4'
-      Type: float
-    OarForwardForceDirection:
-      Offset: '0x14'
-      Size: '0xc'
-      Type: Struct Vector
-    OarLength:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    OarOffsetDirection:
-      Offset: '0x8'
-      Size: '0xc'
-      Type: Struct Vector
-    RowingPower:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    RowingPowerCurve:
-      Offset: '0x28'
-      Size: '0x8'
-      Type: Class CurveFloat*
-    TimeForCompleteStroke:
-      Offset: '0x20'
-      Size: '0x4'
-      Type: float
-    TimeForResetCompletion:
-      Offset: '0x24'
-      Size: '0x4'
-      Type: float
+  - Name: RowingPower
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OarLength
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: OarOffsetDirection
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: OarForwardForceDirection
+    Offset: '0x14'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: TimeForCompleteStroke
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: TimeForResetCompletion
+    Offset: '0x24'
+    Size: '0x4'
+    Type: float
+  - Name: RowingPowerCurve
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: BrakeForcePerMetresPerSecond
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: EndOfStrokeBrakeForcePerMetresPerSecond
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x38'
 QuestVariableWatercraft:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
 RowboatDamageEffectData:
   Attributes:
-    DynamicMaterialInstance:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class MaterialInstanceDynamic*
-    FadeInDuration:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
+  - Name: DynamicMaterialInstance
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: FadeInDuration
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x18'
 RowboatMountStateTelemetryEvent:
   Attributes:
-    ActionName:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: byte
-    WatercraftId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Guid
+  - Name: WatercraftId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: ActionName
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x14'
 RowboatStrainDamageData:
   Attributes:
-    MaxStormDamageFrequencyInSeconds:
-      Offset: '0x10'
-      Size: '0x4'
-      Type: float
-    MaxWorldEdgeDamageFrequencyInSeconds:
-      Offset: '0x1c'
-      Size: '0x4'
-      Type: float
-    MinStormDamageFrequencyInSeconds:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: float
-    MinWorldEdgeDamageFrequencyInSeconds:
-      Offset: '0x18'
-      Size: '0x4'
-      Type: float
-    StormDamageScalar:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    StormStrengthThresholdForDamage:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
-    WaterStrengthToCountAsStorm:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    WorldEdgeDamageScalar:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: float
+  - Name: StormDamageScalar
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: WaterStrengthToCountAsStorm
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: StormStrengthThresholdForDamage
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: MinStormDamageFrequencyInSeconds
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: MaxStormDamageFrequencyInSeconds
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: WorldEdgeDamageScalar
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: MinWorldEdgeDamageFrequencyInSeconds
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: MaxWorldEdgeDamageFrequencyInSeconds
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x20'
 ScrapeableDamageSpeedEntry:
   Attributes:
-    DamageAmount:
-      Offset: '0x10'
-      Size: '0x4'
-      Type: int
-    ForceFeedbackEffect:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class ForceFeedbackEffect*
-    SpeedBand:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: SpeedBand
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: ForceFeedbackEffect
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ForceFeedbackEffect*
+  - Name: DamageAmount
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x18'
 WatercraftDespawnTelemetryEvent:
   Attributes:
-    DespawnReason:
-      Offset: '0x1c'
-      Size: '0x1'
-      Type: byte
-    Location:
-      Offset: '0x10'
-      Size: '0xc'
-      Type: Struct Vector
-    WatercraftId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Guid
+  - Name: WatercraftId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Location
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: DespawnReason
+    Offset: '0x1c'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x20'
 WatercraftRolloverCorrector:
   Attributes:
-    RollThresholdToConsiderRolledOver:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    TorqueScalar:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
+  - Name: RollThresholdToConsiderRolledOver
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: TorqueScalar
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xc'
 WatercraftSpawnTelemetryEvent:
   Attributes:
-    Forward:
-      Offset: '0x2c'
-      Size: '0xc'
-      Type: Struct Vector
-    Location:
-      Offset: '0x20'
-      Size: '0xc'
-      Type: Struct Vector
-    WatercraftId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Guid
-    WatercraftType:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: WatercraftId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: WatercraftType
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Location
+    Offset: '0x20'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Forward
+    Offset: '0x2c'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0x38'

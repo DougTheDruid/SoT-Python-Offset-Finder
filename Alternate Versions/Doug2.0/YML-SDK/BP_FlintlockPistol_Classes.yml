@@ -2,34 +2,34 @@
 # https://github.com/DougTheDruid
 BP_FlintlockPistol_C:
   Attributes:
-    DynamicMaterial:
-      Offset: '0xa78'
-      Size: '0x8'
-      Type: Class MaterialInstanceDynamic*
-    FlintLockFirstPersonSFX:
-      Offset: '0xa90'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    Flintlock3rdPersonSFX:
-      Offset: '0xa88'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    PostProcess:
-      Offset: '0xa68'
-      Size: '0x8'
-      Type: Class PostProcessComponent*
-    ThirdPerson_VFX_AI:
-      Offset: '0xa80'
-      Size: '0x8'
-      Type: Class Object*
-    UberGraphFrame:
-      Offset: '0xa60'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
-    sfx relationship:
-      Offset: '0xa70'
-      Size: '0x1'
-      Type: byte
+  - Name: UberGraphFrame
+    Offset: '0xa60'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PostProcess
+    Offset: '0xa68'
+    Size: '0x8'
+    Type: Class PostProcessComponent*
+  - Name: sfx relationship
+    Offset: '0xa70'
+    Size: '0x1'
+    Type: byte
+  - Name: DynamicMaterial
+    Offset: '0xa78'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: ThirdPerson_VFX_AI
+    Offset: '0xa80'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: Flintlock3rdPersonSFX
+    Offset: '0xa88'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: FlintLockFirstPersonSFX
+    Offset: '0xa90'
+    Size: '0x8'
+    Type: Class WwiseEvent*
   ClassSize: '0x38'
   FullSize: '0xa98'
   InheritedSize: '0xa60'

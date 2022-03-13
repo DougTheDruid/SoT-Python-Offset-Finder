@@ -2,29 +2,29 @@
 # https://github.com/DougTheDruid
 ServiceMessagingSubscribedEvent:
   Attributes:
-    RoutingKey:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: RoutingKey
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
 ServiceMessagingTestMessage:
   Attributes:
-    Data:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
+  - Name: Data
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x4'
 ServiceMessagingUnsubscribedEvent:
   Attributes:
-    RoutingKey:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: RoutingKey
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
 TestStructWithNetId:
   Attributes:
-    NetId:
-      Offset: '0x0'
-      Size: '0x18'
-      Type: Struct UniqueNetIdRepl
+  - Name: NetId
+    Offset: '0x0'
+    Size: '0x18'
+    Type: Struct UniqueNetIdRepl
   ClassSize: '0x18'

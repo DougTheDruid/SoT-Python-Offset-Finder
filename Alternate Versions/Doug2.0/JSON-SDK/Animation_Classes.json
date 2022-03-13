@@ -4,941 +4,1020 @@
     "FullSize": "0x660",
     "InheritedSize": "0x440",
     "ClassSize": "0x220",
-    "Attributes": {
-      "IKLeftHandUpdateParams": {
+    "Attributes": [
+      {
+        "Name": "IKLeftHandUpdateParams",
         "Type": "Struct CharacterAnimationIKUpdateParams",
         "Size": "0x40",
         "Offset": "0x450"
       },
-      "IKRightHandUpdateParams": {
+      {
+        "Name": "IKRightHandUpdateParams",
         "Type": "Struct CharacterAnimationIKUpdateParams",
         "Size": "0x40",
         "Offset": "0x490"
       },
-      "RightHandIKSocketName": {
+      {
+        "Name": "RightHandIKSocketName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
-      "LeftHandIKSocketName": {
+      {
+        "Name": "LeftHandIKSocketName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x4d8"
       },
-      "RightHandIK": {
+      {
+        "Name": "RightHandIK",
         "Type": "Struct LimbIK",
         "Size": "0x60",
         "Offset": "0x4e0"
       },
-      "LeftHandIK": {
+      {
+        "Name": "LeftHandIK",
         "Type": "Struct LimbIK",
         "Size": "0x60",
         "Offset": "0x540"
       },
-      "RightFootIK": {
+      {
+        "Name": "RightFootIK",
         "Type": "Struct LimbIK",
         "Size": "0x60",
         "Offset": "0x5a0"
       },
-      "LeftFootIK": {
+      {
+        "Name": "LeftFootIK",
         "Type": "Struct LimbIK",
         "Size": "0x60",
         "Offset": "0x600"
       }
-    }
+    ]
   },
   "AnimationData": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationServerData": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AIAnimationInstanceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationDataConsumerInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationDataFunctionLib": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationDataOverriderInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationDataStoreId": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationDataStoreOverrideId": {
     "Super": "AnimationDataStoreId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationDataStore": {
     "Super": "Object",
     "FullSize": "0x60",
     "InheritedSize": "0x28",
     "ClassSize": "0x38",
-    "Attributes": {
-      "Data": {
+    "Attributes": [
+      {
+        "Name": "Data",
         "Type": "TArray<Struct GetAnimationDataClass>",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      "LoadingData": {
+      {
+        "Name": "LoadingData",
         "Type": "TArray<Struct Data>",
         "Size": "0x10",
         "Offset": "0x50"
       }
-    }
+    ]
   },
   "AnimationDataStoreAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "AssetRefs": {
+    "Attributes": [
+      {
+        "Name": "AssetRefs",
         "Type": "TArray<Struct AssetWeakRefs>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "AnimationDataStoreWeakReferenceAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "AssetWeakRefs": {
+    "Attributes": [
+      {
+        "Name": "AssetWeakRefs",
         "Type": "TArray<Struct AnimationDataStoreWeakReferences>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "AnimationDataStoreLoaderInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationDataStoreComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x190",
     "InheritedSize": "0xc8",
     "ClassSize": "0xc8",
-    "Attributes": {
-      "AnimationDataStoreWeakReferences": {
+    "Attributes": [
+      {
+        "Name": "AnimationDataStoreWeakReferences",
         "Type": "Class AnimationDataStoreWeakReferenceAsset*",
         "Size": "0x8",
         "Offset": "0xd0"
       }
-    }
+    ]
   },
   "AnimationDataStoreInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationEditorSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x48",
     "InheritedSize": "0x38",
     "ClassSize": "0x10",
-    "Attributes": {
-      "CustomAnimationMontageIdListings": {
+    "Attributes": [
+      {
+        "Name": "CustomAnimationMontageIdListings",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "AnimationLookAtInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimationStateId": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimNotify_DestroyAllCosmeticItems": {
     "Super": "AnimNotify",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimNotify_DestroyCosmeticItem": {
     "Super": "AnimNotify",
     "FullSize": "0x40",
     "InheritedSize": "0x38",
     "ClassSize": "0x8",
-    "Attributes": {
-      "DestroyLocation": {
+    "Attributes": [
+      {
+        "Name": "DestroyLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "AnimNotify_DetachAndMaintainWorldPosition": {
     "Super": "AnimNotify",
     "FullSize": "0x40",
     "InheritedSize": "0x38",
     "ClassSize": "0x8",
-    "Attributes": {
-      "CurrentLocation": {
+    "Attributes": [
+      {
+        "Name": "CurrentLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "AnimNotify_PlayAnimationForCosmetic": {
     "Super": "AnimNotify",
     "FullSize": "0x50",
     "InheritedSize": "0x38",
     "ClassSize": "0x18",
-    "Attributes": {
-      "CosmeticLocation": {
+    "Attributes": [
+      {
+        "Name": "CosmeticLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x38"
       },
-      "CosmeticItemAnimation": {
+      {
+        "Name": "CosmeticItemAnimation",
         "Type": "Class AnimSequenceBase*",
         "Size": "0x8",
         "Offset": "0x40"
       },
-      "Looping": {
+      {
+        "Name": "Looping",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x48"
       }
-    }
+    ]
   },
   "AnimNotify_PlayMontage": {
     "Super": "AnimNotify",
     "FullSize": "0x40",
     "InheritedSize": "0x38",
     "ClassSize": "0x8",
-    "Attributes": {
-      "MontageToPlay": {
+    "Attributes": [
+      {
+        "Name": "MontageToPlay",
         "Type": "Class AnimMontage*",
         "Size": "0x8",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "AnimNotify_SetCosmeticItemVisibility": {
     "Super": "AnimNotify",
     "FullSize": "0x40",
     "InheritedSize": "0x38",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ItemLocation": {
+    "Attributes": [
+      {
+        "Name": "ItemLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x38"
       },
-      "Visible": {
+      {
+        "Name": "Visible",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x39"
       },
-      "RenderShadow": {
+      {
+        "Name": "RenderShadow",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3a"
       },
-      "RenderShadowWhenHidden": {
+      {
+        "Name": "RenderShadowWhenHidden",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3b"
       },
-      "UpdateForRole": {
+      {
+        "Name": "UpdateForRole",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3c"
       },
-      "UpdateRole": {
+      {
+        "Name": "UpdateRole",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x3d"
       }
-    }
+    ]
   },
   "AnimNotify_SetLookAtEnabled": {
     "Super": "AnimNotify",
     "FullSize": "0x40",
     "InheritedSize": "0x38",
     "ClassSize": "0x8",
-    "Attributes": {
-      "Enabled": {
+    "Attributes": [
+      {
+        "Name": "Enabled",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "AnimNotify_SpawnCosmeticItem": {
     "Super": "AnimNotify",
     "FullSize": "0x58",
     "InheritedSize": "0x38",
     "ClassSize": "0x20",
-    "Attributes": {
-      "ItemSpawnClass": {
+    "Attributes": [
+      {
+        "Name": "ItemSpawnClass",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x38"
       },
-      "SpawnLocation": {
+      {
+        "Name": "SpawnLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x40"
       },
-      "CosmeticItemAnimationDataSet": {
+      {
+        "Name": "CosmeticItemAnimationDataSet",
         "Type": "Class CosmeticItemAnimationSetDataAsset*",
         "Size": "0x8",
         "Offset": "0x48"
       },
-      "SpawnHidden": {
+      {
+        "Name": "SpawnHidden",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x50"
       },
-      "SpawnForRole": {
+      {
+        "Name": "SpawnForRole",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x51"
       },
-      "SpawnRole": {
+      {
+        "Name": "SpawnRole",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x52"
       }
-    }
+    ]
   },
   "AnimNotify_StateComplete": {
     "Super": "AnimNotify",
     "FullSize": "0x40",
     "InheritedSize": "0x38",
     "ClassSize": "0x8",
-    "Attributes": {
-      "CompletedStateId": {
+    "Attributes": [
+      {
+        "Name": "CompletedStateId",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "AnimNotify_SwitchCosmeticItemAttachment": {
     "Super": "AnimNotify",
     "FullSize": "0x40",
     "InheritedSize": "0x38",
     "ClassSize": "0x8",
-    "Attributes": {
-      "PreviousLocation": {
+    "Attributes": [
+      {
+        "Name": "PreviousLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x38"
       },
-      "NewLocation": {
+      {
+        "Name": "NewLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x39"
       }
-    }
+    ]
   },
   "AnimNotify_ToggleIK": {
     "Super": "AnimNotify",
     "FullSize": "0x50",
     "InheritedSize": "0x38",
     "ClassSize": "0x18",
-    "Attributes": {
-      "IKLimbsToAdjust": {
+    "Attributes": [
+      {
+        "Name": "IKLimbsToAdjust",
         "Type": "TArray<Byte TriggerWhenDisabled>",
         "Size": "0x10",
         "Offset": "0x38"
       },
-      "Enabled": {
+      {
+        "Name": "Enabled",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x48"
       }
-    }
+    ]
   },
   "AnimNotifyCondition_FeatureConfigValidation": {
     "Super": "AnimNotifyCondition",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "Feature": {
+    "Attributes": [
+      {
+        "Name": "Feature",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "TriggerWhenDisabled": {
+      {
+        "Name": "TriggerWhenDisabled",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "AnimNotifyState_HideMeshByBoneForDuration": {
     "Super": "AnimNotifyState",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": {
-      "BoneName": {
+    "Attributes": [
+      {
+        "Name": "BoneName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "AnimNotifyState_PropagateCurveValuesToMaterials": {
     "Super": "AnimNotifyState",
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": {
-      "CurveValues": {
+    "Attributes": [
+      {
+        "Name": "CurveValues",
         "Type": "TArray<Struct DestroyLocation>",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "DoNotPropagteCurveValues": {
+      {
+        "Name": "DoNotPropagteCurveValues",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "AnimNotifyState_SetLookAtDisabledForDuration": {
     "Super": "AnimNotifyState",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimNotifyState_SetLookAtEnabledForDuration": {
     "Super": "AnimNotifyState",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimNotifyState_SetMeshInvisibleForDuration": {
     "Super": "AnimNotifyState",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AnimNotifyState_SpawnCosmeticItem": {
     "Super": "AnimNotifyState",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": {
-      "CosmeticItemToSpawn": {
+    "Attributes": [
+      {
+        "Name": "CosmeticItemToSpawn",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "SpawnLocation": {
+      {
+        "Name": "SpawnLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
       },
-      "CosmeticItemAnimationDataSet": {
+      {
+        "Name": "CosmeticItemAnimationDataSet",
         "Type": "Class CosmeticItemAnimationSetDataAsset*",
         "Size": "0x8",
         "Offset": "0x38"
       },
-      "SpawnHidden": {
+      {
+        "Name": "SpawnHidden",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
       },
-      "DestroyOnEnd": {
+      {
+        "Name": "DestroyOnEnd",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x41"
       },
-      "OverrideDestroyLocation": {
+      {
+        "Name": "OverrideDestroyLocation",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x42"
       },
-      "DestroyLocation": {
+      {
+        "Name": "DestroyLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x43"
       }
-    }
+    ]
   },
   "AthenaAnimationControllableSocketsInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CharacterIKInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "PreviewCharacterAnimationInstance": {
     "Super": "CharacterAnimationInstance",
     "FullSize": "0x6e0",
     "InheritedSize": "0x660",
     "ClassSize": "0x80",
-    "Attributes": {
-      "ActiveMontage": {
+    "Attributes": [
+      {
+        "Name": "ActiveMontage",
         "Type": "Class AnimMontage*",
         "Size": "0x8",
         "Offset": "0x660"
       }
-    }
+    ]
   },
   "ClientSkeletalMeshComponent": {
     "Super": "SkeletalMeshComponent",
     "FullSize": "0x9b0",
     "InheritedSize": "0x9b0",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CosmeticItemActor": {
     "Super": "Actor",
     "FullSize": "0x480",
     "InheritedSize": "0x3d0",
     "ClassSize": "0xb0",
-    "Attributes": {
-      "MeshComponent": {
+    "Attributes": [
+      {
+        "Name": "MeshComponent",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       }
-    }
+    ]
   },
   "CosmeticItemAnimationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CosmeticItemAnimationComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x128",
     "InheritedSize": "0xc8",
     "ClassSize": "0x60",
-    "Attributes": {
-      "DataAsset": {
+    "Attributes": [
+      {
+        "Name": "DataAsset",
         "Type": "Class CosmeticItemAnimationDataAsset*",
         "Size": "0x8",
         "Offset": "0x120"
       }
-    }
+    ]
   },
   "CosmeticItemAnimationDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x60",
     "InheritedSize": "0x28",
     "ClassSize": "0x38",
-    "Attributes": {
-      "WieldSockets": {
+    "Attributes": [
+      {
+        "Name": "WieldSockets",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "CosmeticItemAnimationDataConsumerInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CosmeticItemAnimationInstance": {
     "Super": "AnimInstance",
     "FullSize": "0x4f0",
     "InheritedSize": "0x440",
     "ClassSize": "0xb0",
-    "Attributes": {
-      "AnimationDataSet": {
+    "Attributes": [
+      {
+        "Name": "AnimationDataSet",
         "Type": "Class CosmeticItemAnimationSetDataAsset*",
         "Size": "0x8",
         "Offset": "0x448"
       },
-      "ActiveMontage": {
+      {
+        "Name": "ActiveMontage",
         "Type": "Class AnimMontage*",
         "Size": "0x8",
         "Offset": "0x450"
       }
-    }
+    ]
   },
   "CosmeticItemAnimationSetDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x58",
     "InheritedSize": "0x28",
     "ClassSize": "0x30",
-    "Attributes": {
-      "LoopData": {
+    "Attributes": [
+      {
+        "Name": "LoopData",
         "Type": "Struct CosmeticItemAnimationSetLoopData",
         "Size": "0x20",
         "Offset": "0x28"
       },
-      "OneShotSequences": {
+      {
+        "Name": "OneShotSequences",
         "Type": "TArray<class OneShotSequences*>",
         "Size": "0x10",
         "Offset": "0x48"
       }
-    }
+    ]
   },
   "CustomAnimationHandlerInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CustomAnimationInstanceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CustomAnimationInstanceProviderInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CustomAnimationMontageInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CustomAnimationMontageComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x138",
     "InheritedSize": "0xc8",
     "ClassSize": "0x70",
-    "Attributes": {
-      "ReplicatedData": {
+    "Attributes": [
+      {
+        "Name": "ReplicatedData",
         "Type": "Struct CustomAnimationMontageComponentReplicatedData",
         "Size": "0xc",
         "Offset": "0xd0"
       }
-    }
+    ]
   },
   "CustomAnimationMontageDefinitionDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x70",
     "InheritedSize": "0x28",
     "ClassSize": "0x48",
-    "Attributes": {
-      "MontageId": {
+    "Attributes": [
+      {
+        "Name": "MontageId",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "MontageType": {
+      {
+        "Name": "MontageType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
       },
-      "MontageData": {
+      {
+        "Name": "MontageData",
         "Type": "Class AnimMontage*",
         "Size": "0x8",
         "Offset": "0x38"
       },
-      "LoopingData": {
+      {
+        "Name": "LoopingData",
         "Type": "Struct CustomAnimationMontageStagedLoopingData",
         "Size": "0x28",
         "Offset": "0x40"
       },
-      "Interrupts": {
+      {
+        "Name": "Interrupts",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x68"
       }
-    }
+    ]
   },
   "CustomAnimationMontageDefinitionListingDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "Entries": {
+    "Attributes": [
+      {
+        "Name": "Entries",
         "Type": "TArray<Struct MontageIds>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "CustomAnimationMontageIdListingDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "MontageIds": {
+    "Attributes": [
+      {
+        "Name": "MontageIds",
         "Type": "TArray<Name None>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "DockingAnimationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "EmotePropDataInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "IndexedPlayableMontagesInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "LimbIKFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "LoadableAnimationsInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "LocomotionFunctionLib": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "NetworkSyncedAnimationInstanceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "NetworkSyncedAnimationComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x110",
     "InheritedSize": "0xc8",
     "ClassSize": "0x48",
-    "Attributes": {
-      "PlayRateAdjustMaxTimeDelta": {
+    "Attributes": [
+      {
+        "Name": "PlayRateAdjustMaxTimeDelta",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc8"
       },
-      "PlayRateAdjustMaxPercentageToSpeedUpPlayRate": {
+      {
+        "Name": "PlayRateAdjustMaxPercentageToSpeedUpPlayRate",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xcc"
       },
-      "PlayRateAdjustMaxPercentageToSlowDownPlayRate": {
+      {
+        "Name": "PlayRateAdjustMaxPercentageToSlowDownPlayRate",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd0"
       },
-      "ReplicatedAnimationProgression": {
+      {
+        "Name": "ReplicatedAnimationProgression",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd4"
       },
-      "ReplicatedPlayingAnimationIndex": {
+      {
+        "Name": "ReplicatedPlayingAnimationIndex",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xd8"
       },
-      "ReplicatedPlayRate": {
+      {
+        "Name": "ReplicatedPlayRate",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xdc"
       },
-      "AnimInstance": {
+      {
+        "Name": "AnimInstance",
         "Type": "Class AnimInstance*",
         "Size": "0x8",
         "Offset": "0xe8"
       }
-    }
+    ]
   },
   "RemoteAnimPlayableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ServerAnimationDataStoreInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "SyncGroupAnimMetaData": {
     "Super": "AnimMetaData",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": {
-      "SyncGroup": {
+    "Attributes": [
+      {
+        "Name": "SyncGroup",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "TransformBlendCurveComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x5d0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x508",
-    "Attributes": {
-      "Curve": {
+    "Attributes": [
+      {
+        "Name": "Curve",
         "Type": "Struct TransformBlendCurve",
         "Size": "0x500",
         "Offset": "0xd0"
       }
-    }
+    ]
   },
   "TurningFunctionLib": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WaitForAnimationStateEntryProxy": {
     "Super": "Object",
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": {}
+    "Attributes": []
   },
   "WaitForAnimationStateExitProxy": {
     "Super": "Object",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": {}
+    "Attributes": []
   },
   "WeightedAnimationLoadOnDemandDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x40",
     "InheritedSize": "0x28",
     "ClassSize": "0x18",
-    "Attributes": {
-      "WeightedAnimationList": {
+    "Attributes": [
+      {
+        "Name": "WeightedAnimationList",
         "Type": "TArray<Struct CreateNewWeightedAnimSequenceLoadOnDemand>",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "FallBackAnimation": {
+      {
+        "Name": "FallBackAnimation",
         "Type": "Class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "WeightedAnimSequenceLoadOnDemand": {
     "Super": "Object",
     "FullSize": "0x120",
     "InheritedSize": "0x28",
     "ClassSize": "0xf8",
-    "Attributes": {
-      "FallBackAnimation": {
+    "Attributes": [
+      {
+        "Name": "FallBackAnimation",
         "Type": "Class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "WeightedAnimationList": {
+      {
+        "Name": "WeightedAnimationList",
         "Type": "TArray<Struct FallBackAnimation>",
         "Size": "0x10",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "DockableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

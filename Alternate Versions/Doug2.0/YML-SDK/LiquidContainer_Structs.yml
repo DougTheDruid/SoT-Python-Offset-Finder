@@ -2,64 +2,64 @@
 # https://github.com/DougTheDruid
 LiquidTypeParams:
   Attributes:
-    BillboardScale:
-      Offset: '0x4c'
-      Size: '0x4'
-      Type: float
-    BubbleBrightness:
-      Offset: '0x48'
-      Size: '0x4'
-      Type: float
-    EdgeScumEnd:
-      Offset: '0x2c'
-      Size: '0x4'
-      Type: float
-    EdgeScumStart:
-      Offset: '0x28'
-      Size: '0x4'
-      Type: float
-    EmissiveScale:
-      Offset: '0x50'
-      Size: '0x4'
-      Type: float
-    FogColour:
-      Offset: '0x4'
-      Size: '0xc'
-      Type: Struct Vector
-    FogFadeDistance:
-      Offset: '0x30'
-      Size: '0x4'
-      Type: float
-    LiquidColour:
-      Offset: '0x10'
-      Size: '0xc'
-      Type: Struct Vector
-    LiquidType:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    RefractionScale:
-      Offset: '0x34'
-      Size: '0x4'
-      Type: float
-    RippleFrequency:
-      Offset: '0x38'
-      Size: '0x4'
-      Type: float
-    ScumColour:
-      Offset: '0x1c'
-      Size: '0xc'
-      Type: Struct Vector
-    Slosh:
-      Offset: '0x3c'
-      Size: '0x4'
-      Type: float
-    SurfaceThickness:
-      Offset: '0x40'
-      Size: '0x4'
-      Type: float
-    Viscosity:
-      Offset: '0x44'
-      Size: '0x4'
-      Type: float
+  - Name: LiquidType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: FogColour
+    Offset: '0x4'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: LiquidColour
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: ScumColour
+    Offset: '0x1c'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: EdgeScumStart
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: EdgeScumEnd
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  - Name: FogFadeDistance
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: RefractionScale
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  - Name: RippleFrequency
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: Slosh
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: SurfaceThickness
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  - Name: Viscosity
+    Offset: '0x44'
+    Size: '0x4'
+    Type: float
+  - Name: BubbleBrightness
+    Offset: '0x48'
+    Size: '0x4'
+    Type: float
+  - Name: BillboardScale
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: float
+  - Name: EmissiveScale
+    Offset: '0x50'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x54'

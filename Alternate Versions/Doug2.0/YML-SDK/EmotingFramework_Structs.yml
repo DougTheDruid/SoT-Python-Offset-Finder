@@ -2,118 +2,118 @@
 # https://github.com/DougTheDruid
 EmoteData:
   Attributes:
-    AudioDescription:
-      Offset: '0x40'
-      Size: '0x38'
-      Type: Struct FText
-    CanPlayInSuccession:
-      Offset: '0x90'
-      Size: '0x1'
-      Type: bool
-    DelayBeforeAllowingExit:
-      Offset: '0x78'
-      Size: '0x4'
-      Type: float
-    EmoteDisplayName:
-      Offset: '0x8'
-      Size: '0x38'
-      Type: Struct FText
-    EmoteId:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct EmoteId
-    EmotePropDataAsset:
-      Offset: '0x88'
-      Size: '0x8'
-      Type: Class EmotePropData*
-    HideNameplate:
-      Offset: '0x80'
-      Size: '0x1'
-      Type: bool
-    ShowDescriptionInTextChat:
-      Offset: '0x91'
-      Size: '0x1'
-      Type: bool
-    VerticalOffsetFactorWhenZoomed:
-      Offset: '0x7c'
-      Size: '0x4'
-      Type: float
+  - Name: EmoteId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct EmoteId
+  - Name: EmoteDisplayName
+    Offset: '0x8'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: AudioDescription
+    Offset: '0x40'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: DelayBeforeAllowingExit
+    Offset: '0x78'
+    Size: '0x4'
+    Type: float
+  - Name: VerticalOffsetFactorWhenZoomed
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: float
+  - Name: HideNameplate
+    Offset: '0x80'
+    Size: '0x1'
+    Type: bool
+  - Name: EmotePropDataAsset
+    Offset: '0x88'
+    Size: '0x8'
+    Type: Class EmotePropData*
+  - Name: CanPlayInSuccession
+    Offset: '0x90'
+    Size: '0x1'
+    Type: bool
+  - Name: ShowDescriptionInTextChat
+    Offset: '0x91'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x98'
 EmoteDiceOutcomeTelemetryEvent:
   Attributes:
-    MaxLimit:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    OrientationUsed:
-      Offset: '0x8'
-      Size: '0xc'
-      Type: Struct Vector
-    RollNumber:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
+  - Name: MaxLimit
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: RollNumber
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: OrientationUsed
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0x14'
 EmoteId:
   Attributes:
-    EmoteId:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: EmoteId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x8'
 EventDisableLookAtEmoteCamera:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 EventEmoteCompleted:
   Attributes:
-    EmoteName:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: EmoteName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0xc'
 EventEmoteEndRequested:
   Attributes:
-    EmoteIdentifier:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
-    EndForcedEmote:
-      Offset: '0x8'
-      Size: '0x1'
-      Type: bool
+  - Name: EmoteIdentifier
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: EndForcedEmote
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xc'
 EventEmoteRequested:
   Attributes:
-    EmoteData:
-      Offset: '0x0'
-      Size: '0x98'
-      Type: Struct EmoteData
-    ForcedEmote:
-      Offset: '0xa0'
-      Size: '0x1'
-      Type: bool
-    ForcedEmoteIdentifier:
-      Offset: '0x98'
-      Size: '0x8'
-      Type: struct FName
+  - Name: EmoteData
+    Offset: '0x0'
+    Size: '0x98'
+    Type: Struct EmoteData
+  - Name: ForcedEmoteIdentifier
+    Offset: '0x98'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ForcedEmote
+    Offset: '0xa0'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xa8'
 EventEmoteStarted:
   Attributes:
-    EmoteData:
-      Offset: '0x0'
-      Size: '0x98'
-      Type: Struct EmoteData
+  - Name: EmoteData
+    Offset: '0x0'
+    Size: '0x98'
+    Type: Struct EmoteData
   ClassSize: '0x98'
 EventEmoteSwapped:
   Attributes:
-    EmoteData:
-      Offset: '0x0'
-      Size: '0x98'
-      Type: Struct EmoteData
+  - Name: EmoteData
+    Offset: '0x0'
+    Size: '0x98'
+    Type: Struct EmoteData
   ClassSize: '0x98'
 EventEnableLookAtEmoteCamera:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
 EventEndEmoteAnimation:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'

@@ -1,888 +1,1024 @@
 {
   "IPGBlendShape": {
     "ClassSize": "0x14",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "NodeName": {
+      {
+        "Name": "NodeName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "Value": {
+      {
+        "Name": "Value",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "PirateDescription": {
     "ClassSize": "0x80",
-    "Attributes": {
-      "Type": {
+    "Attributes": [
+      {
+        "Name": "Type",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "Version": {
+      {
+        "Name": "Version",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      "Gender": {
+      {
+        "Name": "Gender",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      "Ethnicity": {
+      {
+        "Name": "Ethnicity",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x9"
       },
-      "BodyShapeCoordinate": {
+      {
+        "Name": "BodyShapeCoordinate",
         "Type": "Struct RadialCoordinate",
         "Size": "0x8",
         "Offset": "0xc"
       },
-      "BlendShapes": {
+      {
+        "Name": "BlendShapes",
         "Type": "TArray<Struct BodyShapeCoordinate>",
         "Size": "0x10",
         "Offset": "0x18"
       },
-      "DynamicSliders": {
+      {
+        "Name": "DynamicSliders",
         "Type": "TArray<Struct IPGDynamicSlider>",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "Seed": {
+      {
+        "Name": "Seed",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
       },
-      "Items": {
+      {
+        "Name": "Items",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      "TextureReferences": {
+      {
+        "Name": "TextureReferences",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      "MaterialReferences": {
+      {
+        "Name": "MaterialReferences",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      "ScalarParameters": {
+      {
+        "Name": "ScalarParameters",
         "Type": "TArray<Struct IPGScalarParameter>",
         "Size": "0x10",
         "Offset": "0x70"
       }
-    }
+    ]
   },
   "IPGScalarParameter": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Value": {
+      {
+        "Name": "Value",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "IPGDynamicSlider": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "AffectedPriority": {
+    "Attributes": [
+      {
+        "Name": "AffectedPriority",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "Value": {
+      {
+        "Name": "Value",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "RadialCoordinate": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "NormalizedAngle": {
+    "Attributes": [
+      {
+        "Name": "NormalizedAngle",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "RadialDistance": {
+      {
+        "Name": "RadialDistance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "WardrobeOutfitCategoryBias": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "CategoryName": {
+    "Attributes": [
+      {
+        "Name": "CategoryName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "EmptyProbability": {
+      {
+        "Name": "EmptyProbability",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "WardrobeOutfitResult": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "Meshes": {
+    "Attributes": [
+      {
+        "Name": "Meshes",
         "Type": "TArray<class Meshes*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "ScalarParameters": {
+      {
+        "Name": "ScalarParameters",
         "Type": "TArray<Struct Meshes>",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "MaterialReferences": {
+      {
+        "Name": "MaterialReferences",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "ClothingCreatorSlotItemConfig": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "Items": {
+    "Attributes": [
+      {
+        "Name": "Items",
         "Type": "TArray<Struct ClothingCreatorSlotItem>",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "ClothingCreatorSlotItem": {
     "ClassSize": "0x50",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "DisplayName": {
+      {
+        "Name": "DisplayName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "Description": {
+      {
+        "Name": "Description",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "Category": {
+      {
+        "Name": "Category",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "Slots": {
+      {
+        "Name": "Slots",
         "Type": "TArray<Str >",
         "Size": "0x10",
         "Offset": "0x40"
       }
-    }
+    ]
   },
   "IPGTestClass": {
     "ClassSize": "0x60",
-    "Attributes": {
-      "StringTest": {
+    "Attributes": [
+      {
+        "Name": "StringTest",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "FloatTest": {
+      {
+        "Name": "FloatTest",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      "IntTest": {
+      {
+        "Name": "IntTest",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      "EnumTest": {
+      {
+        "Name": "EnumTest",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
       },
-      "ObjectTest": {
+      {
+        "Name": "ObjectTest",
         "Type": "Struct IPGTestSimpleType",
         "Size": "0xc",
         "Offset": "0x14"
       },
-      "ObjectNoneTest": {
+      {
+        "Name": "ObjectNoneTest",
         "Type": "Struct IPGTestSimpleType",
         "Size": "0xc",
         "Offset": "0x20"
       },
-      "VectorTest": {
+      {
+        "Name": "VectorTest",
         "Type": "TArray<Struct IPGTestSimpleType>",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "StrVectorTest": {
+      {
+        "Name": "StrVectorTest",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      "EnumVectorTest": {
+      {
+        "Name": "EnumVectorTest",
         "Type": "TArray<Byte StrVectorTest>",
         "Size": "0x10",
         "Offset": "0x50"
       }
-    }
+    ]
   },
   "IPGTestSimpleType": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "StringTest": {
+    "Attributes": [
+      {
+        "Name": "StringTest",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "IntTest": {
+      {
+        "Name": "IntTest",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "Config": {
     "ClassSize": "0x78",
-    "Attributes": {
-      "IPG": {
+    "Attributes": [
+      {
+        "Name": "IPG",
         "Type": "Struct IPGData",
         "Size": "0x48",
         "Offset": "0x0"
       },
-      "MaleBaseShape": {
+      {
+        "Name": "MaleBaseShape",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x48"
       },
-      "FemaleBaseShape": {
+      {
+        "Name": "FemaleBaseShape",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x50"
       },
-      "BodyShapes": {
+      {
+        "Name": "BodyShapes",
         "Type": "Struct IPGBodyShapes",
         "Size": "0x20",
         "Offset": "0x58"
       }
-    }
+    ]
   },
   "IPGBodyShapes": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "Male": {
+    "Attributes": [
+      {
+        "Name": "Male",
         "Type": "TArray<Struct FemaleBaseShape>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Female": {
+      {
+        "Name": "Female",
         "Type": "TArray<Struct IPGBodyShape>",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "IPGBodyShape": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "NormalizedWheelAngle": {
+      {
+        "Name": "NormalizedWheelAngle",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "IPGData": {
     "ClassSize": "0x48",
-    "Attributes": {
-      "DynamicSliderNames": {
+    "Attributes": [
+      {
+        "Name": "DynamicSliderNames",
         "Type": "TArray<Struct IPGDynamicSliderName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "BlendingMethods": {
+      {
+        "Name": "BlendingMethods",
         "Type": "TArray<Struct IPGBlendingMethod>",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "Groups": {
+      {
+        "Name": "Groups",
         "Type": "TArray<Struct IPGSetGroup>",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "CurrentVersion": {
+      {
+        "Name": "CurrentVersion",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      "Versions": {
+      {
+        "Name": "Versions",
         "Type": "TArray<Struct IPGSetsData>",
         "Size": "0x10",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "IPGSetsData": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Version": {
+    "Attributes": [
+      {
+        "Name": "Version",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "Sets": {
+      {
+        "Name": "Sets",
         "Type": "TArray<Struct IPGSetData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "IPGSetData": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Gender": {
+      {
+        "Name": "Gender",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      "Ethnicity": {
+      {
+        "Name": "Ethnicity",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x9"
       },
-      "Priority": {
+      {
+        "Name": "Priority",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      "Nodes": {
+      {
+        "Name": "Nodes",
         "Type": "TArray<Struct IPGBlendNode>",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "IPGBlendNode": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Ranges": {
+      {
+        "Name": "Ranges",
         "Type": "TArray<Struct IPGBlendRange>",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "IPGBlendRange": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Min": {
+      {
+        "Name": "Min",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      "Max": {
+      {
+        "Name": "Max",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      "Env": {
+      {
+        "Name": "Env",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "Compatibility": {
+      {
+        "Name": "Compatibility",
         "Type": "TArray<Struct IPGCompatibleSet>",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "IPGCompatibleSet": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "SetName": {
+    "Attributes": [
+      {
+        "Name": "SetName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "IPGSetGroup": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "Priority": {
+    "Attributes": [
+      {
+        "Name": "Priority",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "Mode": {
+      {
+        "Name": "Mode",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "IPGBlendingMethod": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Probability": {
+      {
+        "Name": "Probability",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      "BlendType": {
+      {
+        "Name": "BlendType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xc"
       }
-    }
+    ]
   },
   "IPGDynamicSliderName": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "AffectedPriority": {
+    "Attributes": [
+      {
+        "Name": "AffectedPriority",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "Name": {
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "WardrobeConfig": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "Slots": {
+    "Attributes": [
+      {
+        "Name": "Slots",
         "Type": "TArray<Struct ClothingSlot>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Priority": {
+      {
+        "Name": "Priority",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "ClothingSlot": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Tags": {
+      {
+        "Name": "Tags",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "Type": {
+      {
+        "Name": "Type",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "Outfit": {
     "ClassSize": "0x40",
-    "Attributes": {
-      "PartNames": {
+    "Attributes": [
+      {
+        "Name": "PartNames",
         "Type": "TArray<Name None>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "FreeSlots": {
+      {
+        "Name": "FreeSlots",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "ScalarParameters": {
+      {
+        "Name": "ScalarParameters",
         "Type": "TArray<Struct FreeSlots>",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "MaterialReferences": {
+      {
+        "Name": "MaterialReferences",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "ClothingItem": {
     "ClassSize": "0x78",
-    "Attributes": {
-      "Type": {
+    "Attributes": [
+      {
+        "Name": "Type",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Name": {
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "CompatiblePirateTypes": {
+      {
+        "Name": "CompatiblePirateTypes",
         "Type": "TArray<Byte Name>",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "Variants": {
+      {
+        "Name": "Variants",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "NewSlots": {
+      {
+        "Name": "NewSlots",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "Parent": {
+      {
+        "Name": "Parent",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x40"
       },
-      "Parts": {
+      {
+        "Name": "Parts",
         "Type": "TArray<Struct ClothingPart>",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      "ScalarParameters": {
+      {
+        "Name": "ScalarParameters",
         "Type": "TArray<Struct Parts>",
         "Size": "0x10",
         "Offset": "0x58"
       },
-      "MaterialReferences": {
+      {
+        "Name": "MaterialReferences",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x68"
       }
-    }
+    ]
   },
   "ClothingPart": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Slots": {
+      {
+        "Name": "Slots",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "Gender": {
+      {
+        "Name": "Gender",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
       },
-      "PartType": {
+      {
+        "Name": "PartType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x19"
       }
-    }
+    ]
   },
   "AnimationSwitchEntry": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "BodyShape": {
+    "Attributes": [
+      {
+        "Name": "BodyShape",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "AnimSetDataId": {
+      {
+        "Name": "AnimSetDataId",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "BlendedSubMeshSpecification": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "Mesh": {
+    "Attributes": [
+      {
+        "Name": "Mesh",
         "Type": "Class SkeletalMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "BaseMeshWeight": {
+      {
+        "Name": "BaseMeshWeight",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      "MeshPatchAssets": {
+      {
+        "Name": "MeshPatchAssets",
         "Type": "TArray<class MeshPatchAssets*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "MeshPatchAssetWeights": {
+      {
+        "Name": "MeshPatchAssetWeights",
         "Type": "TArray<Float >",
         "Size": "0x10",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "MaterialReferencesEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "References": {
+      {
+        "Name": "References",
         "Type": "TArray<Struct MaterialReferenceEntry>",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "MaterialReferenceEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "bCopyParametersAcross": {
+    "Attributes": [
+      {
+        "Name": "bCopyParametersAcross",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "bReplaceAll": {
+      {
+        "Name": "bReplaceAll",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      "FromMaterial": {
+      {
+        "Name": "FromMaterial",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "ToMaterial": {
+      {
+        "Name": "ToMaterial",
         "Type": "Class MaterialInstanceConstant*",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "PirateGeneratorTextureReference": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "References": {
+      {
+        "Name": "References",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "ColorTextureSwitchSeedEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "ReferenceName": {
+    "Attributes": [
+      {
+        "Name": "ReferenceName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Color": {
+      {
+        "Name": "Color",
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "TextureSwitchItemEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "ItemName": {
+    "Attributes": [
+      {
+        "Name": "ItemName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Texture": {
+      {
+        "Name": "Texture",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "TextureSwitchBodyShapeEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "BodyShape": {
+    "Attributes": [
+      {
+        "Name": "BodyShape",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Texture": {
+      {
+        "Name": "Texture",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "TextureSwitchEthnicityEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Ethnicity": {
+    "Attributes": [
+      {
+        "Name": "Ethnicity",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "Texture": {
+      {
+        "Name": "Texture",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "TextureSwitchGenderEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Gender": {
+    "Attributes": [
+      {
+        "Name": "Gender",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "Texture": {
+      {
+        "Name": "Texture",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "TextureSwitchSeedEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "ReferenceName": {
+    "Attributes": [
+      {
+        "Name": "ReferenceName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Texture": {
+      {
+        "Name": "Texture",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "TextureSwitchParameters": {
     "ClassSize": "0x58",
-    "Attributes": {
-      "bAsync": {
+    "Attributes": [
+      {
+        "Name": "bAsync",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      "bHighPriority": {
+      {
+        "Name": "bHighPriority",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x9"
       },
-      "Seed": {
+      {
+        "Name": "Seed",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      "SelectedGender": {
+      {
+        "Name": "SelectedGender",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
       },
-      "SelectedEthnicity": {
+      {
+        "Name": "SelectedEthnicity",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x11"
       },
-      "SelectedBodyShape": {
+      {
+        "Name": "SelectedBodyShape",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x14"
       },
-      "SelectedItems": {
+      {
+        "Name": "SelectedItems",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "SelectedReferences": {
+      {
+        "Name": "SelectedReferences",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "MeshPatchEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Reference": {
+      {
+        "Name": "Reference",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

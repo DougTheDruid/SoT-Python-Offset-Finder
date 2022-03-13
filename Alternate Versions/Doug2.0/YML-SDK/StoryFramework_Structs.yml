@@ -2,92 +2,92 @@
 # https://github.com/DougTheDruid
 ActorLocationPair:
   Attributes:
-    SpawnLocation:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct StringAssetReference
+  - Name: SpawnLocation
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
   ClassSize: '0x30'
 NamedPointsActorLocation:
   Attributes:
-    ActorWithNamedPointsComponent:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    NamedPointsGroup:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: NamedPointsGroup
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ActorWithNamedPointsComponent
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
   ClassSize: '0x38'
 PhasedActorInfo:
   Attributes:
-    MapActor:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class Actor*
-    PhasedActor:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class Actor*
+  - Name: MapActor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: PhasedActor
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
   ClassSize: '0x18'
 SpawnedActorsList:
   Attributes:
-    ActorsList:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct PhasedActorInfo>
+  - Name: ActorsList
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct PhasedActorInfo>
   ClassSize: '0x10'
 StoriesChangedTelemetryEvent:
   Attributes:
-    ActiveStories:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Str None>
+  - Name: ActiveStories
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Str None>
   ClassSize: '0x10'
 StoryInfo:
   Attributes:
-    Name:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x18'
 StorySpawnedActorsChangeTelemetryEvent:
   Attributes:
-    StoryDespawnedActors:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: TArray<Struct StorySpawnedActorsIndividualStoryInfo>
-    StorySpawnedActors:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct SpawnedActorsList>
+  - Name: StorySpawnedActors
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct SpawnedActorsList>
+  - Name: StoryDespawnedActors
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct StorySpawnedActorsIndividualStoryInfo>
   ClassSize: '0x20'
 StorySpawnedActorsIndividualStoryInfo:
   Attributes:
-    NumActorsDespawned:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: int
-    NumActorsSpawned:
-      Offset: '0x10'
-      Size: '0x4'
-      Type: int
-    StoryName:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: StoryName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: NumActorsSpawned
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: NumActorsDespawned
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x18'
 StorySpawnedActorsList:
   Attributes:
-    ActorLocations:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Struct ActorLocationPair>
-    NamedPointsActorLocations:
-      Offset: '0x18'
-      Size: '0x10'
-      Type: TArray<Struct NamedPointsActorLocation>
-    StoryName:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: StoryName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ActorLocations
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct ActorLocationPair>
+  - Name: NamedPointsActorLocations
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct NamedPointsActorLocation>
   ClassSize: '0x28'

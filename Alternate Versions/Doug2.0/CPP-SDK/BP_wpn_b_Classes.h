@@ -41,4 +41,81 @@ public:
 };
 
 
+// Size 0x11219
+class BP_wpn_blunderbuss_shr_01_a_ItemInfo_C: public /Game/Starlight/Models/Environments/Sea_Of_Damned/Props/Common/
+{
+public:
+};
+
+
+// Size 0xa8c
+class BP_wpn_blunderbuss_shr_01_a_Wieldable_C: public BoolProperty
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_pum_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_win_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_blk_01_a_v03_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_oos_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_blb_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_shr_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_yr1_leg_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_elb_01_a_v02_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_smp_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
 }

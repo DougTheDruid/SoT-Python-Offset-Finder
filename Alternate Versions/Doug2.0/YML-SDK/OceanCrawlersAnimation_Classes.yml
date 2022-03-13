@@ -2,78 +2,78 @@
 # https://github.com/DougTheDruid
 OceanCrawlerAnimationData:
   Attributes:
-    OceanCrawlerAnimationDataStructure:
-      Offset: '0x28'
-      Size: '0x90'
-      Type: Struct OceanCrawlerAnimationDataStructure
+  - Name: OceanCrawlerAnimationDataStructure
+    Offset: '0x28'
+    Size: '0x90'
+    Type: Struct OceanCrawlerAnimationDataStructure
   ClassSize: '0x90'
   FullSize: '0xb8'
   InheritedSize: '0x28'
   Super: AnimationData
 OceanCrawlerAnimationInstance:
   Attributes:
-    AnimationsLoaded:
-      Offset: '0x5c1'
-      Size: '0x1'
-      Type: bool
-    AttackAnims:
-      Offset: '0x508'
-      Size: '0xb8'
-      Type: Struct AthenaAnimationWeapon
-    CurrentDirection:
-      Offset: '0x500'
-      Size: '0x4'
-      Type: float
-    HitReacts:
-      Offset: '0x6a8'
-      Size: '0x28'
-      Type: Struct HitReactionAnimationState
-    LoadedAnimations:
-      Offset: '0x458'
-      Size: '0x90'
-      Type: Struct OceanCrawlerAnimationDataStructure
-    MontagePlayer:
-      Offset: '0x5d0'
-      Size: '0xd8'
-      Type: Struct CustomAnimationMontageStateMachine
-    MovementData:
-      Offset: '0x4e8'
-      Size: '0x18'
-      Type: Struct ActorVelocityData
-    PropAttachmentSocket:
-      Offset: '0x5c4'
-      Size: '0x8'
-      Type: struct FName
-    SporeBreathActive:
-      Offset: '0x5c2'
-      Size: '0x1'
-      Type: bool
-    UseDefaultAnimations:
-      Offset: '0x5c0'
-      Size: '0x1'
-      Type: bool
+  - Name: LoadedAnimations
+    Offset: '0x458'
+    Size: '0x90'
+    Type: Struct OceanCrawlerAnimationDataStructure
+  - Name: MovementData
+    Offset: '0x4e8'
+    Size: '0x18'
+    Type: Struct ActorVelocityData
+  - Name: CurrentDirection
+    Offset: '0x500'
+    Size: '0x4'
+    Type: float
+  - Name: AttackAnims
+    Offset: '0x508'
+    Size: '0xb8'
+    Type: Struct AthenaAnimationWeapon
+  - Name: UseDefaultAnimations
+    Offset: '0x5c0'
+    Size: '0x1'
+    Type: bool
+  - Name: AnimationsLoaded
+    Offset: '0x5c1'
+    Size: '0x1'
+    Type: bool
+  - Name: SporeBreathActive
+    Offset: '0x5c2'
+    Size: '0x1'
+    Type: bool
+  - Name: PropAttachmentSocket
+    Offset: '0x5c4'
+    Size: '0x8'
+    Type: struct FName
+  - Name: MontagePlayer
+    Offset: '0x5d0'
+    Size: '0xd8'
+    Type: Struct CustomAnimationMontageStateMachine
+  - Name: HitReacts
+    Offset: '0x6a8'
+    Size: '0x28'
+    Type: Struct HitReactionAnimationState
   ClassSize: '0x2e0'
   FullSize: '0x720'
   InheritedSize: '0x440'
   Super: AnimInstance
 OceanCrawlerAnimationServerData:
   Attributes:
-    AnimInstanceType:
-      Offset: '0x30'
-      Size: '0x8'
-      Type: class
-    MaxSpawnAnimDuration:
-      Offset: '0x38'
-      Size: '0x4'
-      Type: float
-    MaxSpawnBoardingAnimDuration:
-      Offset: '0x40'
-      Size: '0x4'
-      Type: float
-    MaxSpawnOnShipAnimDuration:
-      Offset: '0x3c'
-      Size: '0x4'
-      Type: float
+  - Name: AnimInstanceType
+    Offset: '0x30'
+    Size: '0x8'
+    Type: class
+  - Name: MaxSpawnAnimDuration
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: MaxSpawnOnShipAnimDuration
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: MaxSpawnBoardingAnimDuration
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

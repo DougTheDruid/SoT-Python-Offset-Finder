@@ -2,56 +2,56 @@
 # https://github.com/DougTheDruid
 LiquidContainerComponent:
   Attributes:
-    LiquidMaterialName:
-      Offset: '0xc8'
-      Size: '0x8'
-      Type: struct FName
-    LiquidMaterialParameterName:
-      Offset: '0xd0'
-      Size: '0x8'
-      Type: struct FName
-    LiquidMaterials:
-      Offset: '0x100'
-      Size: '0x10'
-      Type: TArray<class LiquidMaterials*>
-    LiquidTypeParams:
-      Offset: '0xd8'
-      Size: '0x10'
-      Type: TArray<Struct LiquidMaterialParameterName>
-    StartingLiquidLevelNormalised:
-      Offset: '0xe8'
-      Size: '0x4'
-      Type: float
-    TransitionCurve:
-      Offset: '0xf0'
-      Size: '0x8'
-      Type: Class CurveFloat*
-    TransitionSpeedDecrease:
-      Offset: '0xf8'
-      Size: '0x4'
-      Type: float
-    TransitionSpeedIncrease:
-      Offset: '0xfc'
-      Size: '0x4'
-      Type: float
+  - Name: LiquidMaterialName
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: LiquidMaterialParameterName
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: LiquidTypeParams
+    Offset: '0xd8'
+    Size: '0x10'
+    Type: TArray<Struct LiquidMaterialParameterName>
+  - Name: StartingLiquidLevelNormalised
+    Offset: '0xe8'
+    Size: '0x4'
+    Type: float
+  - Name: TransitionCurve
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: TransitionSpeedDecrease
+    Offset: '0xf8'
+    Size: '0x4'
+    Type: float
+  - Name: TransitionSpeedIncrease
+    Offset: '0xfc'
+    Size: '0x4'
+    Type: float
+  - Name: LiquidMaterials
+    Offset: '0x100'
+    Size: '0x10'
+    Type: TArray<class LiquidMaterials*>
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
 LiquidContainerInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 LiquidContainerService:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
   FullSize: '0x78'
   InheritedSize: '0x70'
   Super: InteractableService
 LiquidContainerServiceInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

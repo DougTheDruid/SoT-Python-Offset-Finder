@@ -2,89 +2,89 @@
 # https://github.com/DougTheDruid
 CaptureProtocolID:
   Attributes:
-    Identifier:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: Identifier
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x8'
 CaptureResolution:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
 CompositionGraphCapturePasses:
   Attributes:
-    Value:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Str None>
+  - Name: Value
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Str None>
   ClassSize: '0x10'
 MovieSceneCaptureSettings:
   Attributes:
-    FrameRate:
-      Offset: '0x3c'
-      Size: '0x4'
-      Type: int
-    GameModeOverride:
-      Offset: '0x18'
-      Size: '0x8'
-      Type: class
-    HandleFrames:
-      Offset: '0x34'
-      Size: '0x4'
-      Type: int
-    OutputDirectory:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct DirectoryPath
-    OutputFormat:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct FString
-    Resolution:
-      Offset: '0x40'
-      Size: '0x8'
-      Type: Struct CaptureResolution
-    ZeroPadFrameNumbers:
-      Offset: '0x38'
-      Size: '0x1'
-      Type: byte
-    bAllowMovement:
-      Offset: '0x4b'
-      Size: '0x1'
-      Type: bool
-    bAllowTurning:
-      Offset: '0x4c'
-      Size: '0x1'
-      Type: bool
-    bCinematicEngineScalability:
-      Offset: '0x49'
-      Size: '0x1'
-      Type: bool
-    bCinematicMode:
-      Offset: '0x4a'
-      Size: '0x1'
-      Type: bool
-    bCreateTemporaryCopiesOfLevels:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: bool
-    bEnableTextureStreaming:
-      Offset: '0x48'
-      Size: '0x1'
-      Type: bool
-    bOverwriteExisting:
-      Offset: '0x30'
-      Size: '0x1'
-      Type: bool
-    bShowHUD:
-      Offset: '0x4e'
-      Size: '0x1'
-      Type: bool
-    bShowPlayer:
-      Offset: '0x4d'
-      Size: '0x1'
-      Type: bool
-    bUseRelativeFrameNumbers:
-      Offset: '0x31'
-      Size: '0x1'
-      Type: bool
+  - Name: OutputDirectory
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct DirectoryPath
+  - Name: bCreateTemporaryCopiesOfLevels
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: GameModeOverride
+    Offset: '0x18'
+    Size: '0x8'
+    Type: class
+  - Name: OutputFormat
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: bOverwriteExisting
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  - Name: bUseRelativeFrameNumbers
+    Offset: '0x31'
+    Size: '0x1'
+    Type: bool
+  - Name: HandleFrames
+    Offset: '0x34'
+    Size: '0x4'
+    Type: int
+  - Name: ZeroPadFrameNumbers
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  - Name: FrameRate
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: int
+  - Name: Resolution
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Struct CaptureResolution
+  - Name: bEnableTextureStreaming
+    Offset: '0x48'
+    Size: '0x1'
+    Type: bool
+  - Name: bCinematicEngineScalability
+    Offset: '0x49'
+    Size: '0x1'
+    Type: bool
+  - Name: bCinematicMode
+    Offset: '0x4a'
+    Size: '0x1'
+    Type: bool
+  - Name: bAllowMovement
+    Offset: '0x4b'
+    Size: '0x1'
+    Type: bool
+  - Name: bAllowTurning
+    Offset: '0x4c'
+    Size: '0x1'
+    Type: bool
+  - Name: bShowPlayer
+    Offset: '0x4d'
+    Size: '0x1'
+    Type: bool
+  - Name: bShowHUD
+    Offset: '0x4e'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x50'

@@ -4,771 +4,870 @@
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "FakeShip": {
     "Super": "Actor",
     "FullSize": "0x4d0",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x100",
-    "Attributes": {
-      "AttachedItems": {
+    "Attributes": [
+      {
+        "Name": "AttachedItems",
         "Type": "TArray<class AttachedItems*>",
         "Size": "0x10",
         "Offset": "0x3d8"
       }
-    }
+    ]
   },
   "WatercraftTrackerInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ItemProxyWatercraftTrackerComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x150",
     "InheritedSize": "0xc8",
     "ClassSize": "0x88",
-    "Attributes": {
-      "WatercraftTrackingData": {
+    "Attributes": [
+      {
+        "Name": "WatercraftTrackingData",
         "Type": "Class ItemProxyWatercraftTrackerComponentDataAsset*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
-      "CurrentWatercraft": {
+      {
+        "Name": "CurrentWatercraft",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0xd8"
       }
-    }
+    ]
   },
   "ItemProxyWatercraftTrackerComponentDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "WatercraftTypes": {
+    "Attributes": [
+      {
+        "Name": "WatercraftTypes",
         "Type": "TArray<Class ParentRowboat>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "RowboatAudioComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x480",
     "InheritedSize": "0x2d0",
     "ClassSize": "0x1b0",
-    "Attributes": {
-      "Params": {
+    "Attributes": [
+      {
+        "Name": "Params",
         "Type": "Class RowboatAudioComponentParams*",
         "Size": "0x8",
         "Offset": "0x2d0"
       },
-      "ParentRowboat": {
+      {
+        "Name": "ParentRowboat",
         "Type": "Class Rowboat*",
         "Size": "0x8",
         "Offset": "0x2d8"
       }
-    }
+    ]
   },
   "RowboatAudioComponentParams": {
     "Super": "DataAsset",
     "FullSize": "0xe8",
     "InheritedSize": "0x28",
     "ClassSize": "0xc0",
-    "Attributes": {
-      "RowboatObjectPool": {
+    "Attributes": [
+      {
+        "Name": "RowboatObjectPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "RowboatWakeStart": {
+      {
+        "Name": "RowboatWakeStart",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
-      "RowboatWakeStop": {
+      {
+        "Name": "RowboatWakeStop",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
       },
-      "RowboatSpeedRtpcName": {
+      {
+        "Name": "RowboatSpeedRtpcName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x40"
       },
-      "RowboatMaxSpeedRtpc": {
+      {
+        "Name": "RowboatMaxSpeedRtpc",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48"
       },
-      "RowboatLaunch": {
+      {
+        "Name": "RowboatLaunch",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x50"
       },
-      "RowboatImpactAndScrapeStart": {
+      {
+        "Name": "RowboatImpactAndScrapeStart",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x58"
       },
-      "RowboatImpactAndScrapeStop": {
+      {
+        "Name": "RowboatImpactAndScrapeStop",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x60"
       },
-      "RowboatStrainStart": {
+      {
+        "Name": "RowboatStrainStart",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x68"
       },
-      "RowboatStrainStop": {
+      {
+        "Name": "RowboatStrainStop",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x70"
       },
-      "RowboatStrainRtpcName": {
+      {
+        "Name": "RowboatStrainRtpcName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x78"
       },
-      "RowboatMaxStrainRtpc": {
+      {
+        "Name": "RowboatMaxStrainRtpc",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x80"
       },
-      "RowboatTakenDamage": {
+      {
+        "Name": "RowboatTakenDamage",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x88"
       },
-      "DamageAmountRequiredForNoiseToPlay": {
+      {
+        "Name": "DamageAmountRequiredForNoiseToPlay",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x90"
       },
-      "RowboatAttach": {
+      {
+        "Name": "RowboatAttach",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x98"
       },
-      "RowboatDetach": {
+      {
+        "Name": "RowboatDetach",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
-      "WwiseOarEmitterPool": {
+      {
+        "Name": "WwiseOarEmitterPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0xa8"
       },
-      "PlayOarInOarLayer": {
+      {
+        "Name": "PlayOarInOarLayer",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xb0"
       },
-      "PlayOarInWaterLayer": {
+      {
+        "Name": "PlayOarInWaterLayer",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xb8"
       },
-      "PlayOarOutOarLayer": {
+      {
+        "Name": "PlayOarOutOarLayer",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xc0"
       },
-      "PlayOarOutWaterLayer": {
+      {
+        "Name": "PlayOarOutWaterLayer",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
-      "PlayOarBrakingLoop": {
+      {
+        "Name": "PlayOarBrakingLoop",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
-      "StopOarBrakingLoop": {
+      {
+        "Name": "StopOarBrakingLoop",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
-      "PlayOarPullFinished": {
+      {
+        "Name": "PlayOarPullFinished",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xe0"
       }
-    }
+    ]
   },
   "RowboatDescDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": {
-      "PartDesc": {
+    "Attributes": [
+      {
+        "Name": "PartDesc",
         "Type": "Struct PartDesc",
         "Size": "0x20",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "RowboatOarsLeftForwardNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RowboatOarsLeftForwardDeactivatedNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RowboatOarsRightForwardNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RowboatOarsRightForwardDeactivatedNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RowboatOarsLeftBrakingActivatedNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RowboatOarsLeftBrakingDeactivatedNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RowboatOarsRightBrakingActivatedNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RowboatOarsRightBrakingDeactivatedNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ScrapeableDamageDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "DamageSpeedParams": {
+    "Attributes": [
+      {
+        "Name": "DamageSpeedParams",
         "Type": "TArray<Struct ScrapeDamagerType>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "ScrapeableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ScrapeableComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xf8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x30",
-    "Attributes": {
-      "MinIntervalBetweenScrapeDamage": {
+    "Attributes": [
+      {
+        "Name": "MinIntervalBetweenScrapeDamage",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd0"
       },
-      "ScrapeDamageSettings": {
+      {
+        "Name": "ScrapeDamageSettings",
         "Type": "Class ScrapeableDamageDataAsset*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
-      "SafeZoneCenterDirection": {
+      {
+        "Name": "SafeZoneCenterDirection",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0xe0"
       },
-      "SafeZoneMaximumAngle": {
+      {
+        "Name": "SafeZoneMaximumAngle",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xec"
       },
-      "ScrapeDamagerType": {
+      {
+        "Name": "ScrapeDamagerType",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0xf0"
       }
-    }
+    ]
   },
   "Watercraft": {
     "Super": "Actor",
     "FullSize": "0x718",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x348",
-    "Attributes": {
-      "BuoyancyComponent": {
+    "Attributes": [
+      {
+        "Name": "BuoyancyComponent",
         "Type": "Class BuoyancyComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
-      "RolloverCorrector": {
+      {
+        "Name": "RolloverCorrector",
         "Type": "Struct WatercraftRolloverCorrector",
         "Size": "0xc",
         "Offset": "0x400"
       },
-      "NosediveBrake": {
+      {
+        "Name": "NosediveBrake",
         "Type": "Class ShipNosediveBrake*",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      "BowSplashContainer": {
+      {
+        "Name": "BowSplashContainer",
         "Type": "Class BowSplashContainer*",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      "CollisionMesh": {
+      {
+        "Name": "CollisionMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      "CraftMesh": {
+      {
+        "Name": "CraftMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
-      "OverlapHits": {
+      {
+        "Name": "OverlapHits",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
-      "WaterOcclusionVolume": {
+      {
+        "Name": "WaterOcclusionVolume",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
-      "WaterInteractionComponent": {
+      {
+        "Name": "WaterInteractionComponent",
         "Type": "Class WaterInteractionComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       },
-      "ClientConvexHullCollisionProfile": {
+      {
+        "Name": "ClientConvexHullCollisionProfile",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x448"
       },
-      "MovementTimeStamp": {
+      {
+        "Name": "MovementTimeStamp",
         "Type": "Struct NetTimeStampCalculator",
         "Size": "0x70",
         "Offset": "0x450"
       },
-      "PhysicsErrorCorrection": {
+      {
+        "Name": "PhysicsErrorCorrection",
         "Type": "Struct RigidBodyErrorCorrection",
         "Size": "0x1c",
         "Offset": "0x4c0"
       },
-      "BuoyancySampleMovement": {
+      {
+        "Name": "BuoyancySampleMovement",
         "Type": "Struct BuoyancySampleMovement",
         "Size": "0x68",
         "Offset": "0x510"
       },
-      "SpeedToChoppinessScalarCurve": {
+      {
+        "Name": "SpeedToChoppinessScalarCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x578"
       },
-      "DeepWaterSubmersionThreshold": {
+      {
+        "Name": "DeepWaterSubmersionThreshold",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x580"
       },
-      "BuoyancyChoppinessWhileSinking": {
+      {
+        "Name": "BuoyancyChoppinessWhileSinking",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x584"
       },
-      "RigidBodyAwake": {
+      {
+        "Name": "RigidBodyAwake",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x588"
       },
-      "InContactWithLand": {
+      {
+        "Name": "InContactWithLand",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x589"
       },
-      "InDeepWater": {
+      {
+        "Name": "InDeepWater",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x58a"
       }
-    }
+    ]
   },
   "Rowboat": {
     "Super": "Watercraft",
     "FullSize": "0xa08",
     "InheritedSize": "0x718",
     "ClassSize": "0x2f0",
-    "Attributes": {
-      "LeftSideClamberSpot": {
+    "Attributes": [
+      {
+        "Name": "LeftSideClamberSpot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x758"
       },
-      "RightSideClamberSpot": {
+      {
+        "Name": "RightSideClamberSpot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x760"
       },
-      "ForceSpot": {
+      {
+        "Name": "ForceSpot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x768"
       },
-      "Lantern": {
+      {
+        "Name": "Lantern",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x770"
       },
-      "RowingSeat": {
+      {
+        "Name": "RowingSeat",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x778"
       },
-      "StorageSeat": {
+      {
+        "Name": "StorageSeat",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x780"
       },
-      "LiveryComponent": {
+      {
+        "Name": "LiveryComponent",
         "Type": "Class ShipLiveryComponent*",
         "Size": "0x8",
         "Offset": "0x788"
       },
-      "CustomizationComponent": {
+      {
+        "Name": "CustomizationComponent",
         "Type": "Class ReplicatedShipPartCustomizationComponent*",
         "Size": "0x8",
         "Offset": "0x790"
       },
-      "WaterExclusionOffset": {
+      {
+        "Name": "WaterExclusionOffset",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x798"
       },
-      "TetherCustomisationComponent": {
+      {
+        "Name": "TetherCustomisationComponent",
         "Type": "Class TetherCustomisationComponent*",
         "Size": "0x8",
         "Offset": "0x7a8"
       },
-      "HealthComponent": {
+      {
+        "Name": "HealthComponent",
         "Type": "Class HealthComponent*",
         "Size": "0x8",
         "Offset": "0x7b0"
       },
-      "ActorDamageableComponent": {
+      {
+        "Name": "ActorDamageableComponent",
         "Type": "Class ActorDamageableComponent*",
         "Size": "0x8",
         "Offset": "0x7b8"
       },
-      "RammableComponent": {
+      {
+        "Name": "RammableComponent",
         "Type": "Class RammableComponent*",
         "Size": "0x8",
         "Offset": "0x7c0"
       },
-      "ScrapeableComponent": {
+      {
+        "Name": "ScrapeableComponent",
         "Type": "Class ScrapeableComponent*",
         "Size": "0x8",
         "Offset": "0x7c8"
       },
-      "RowboatAudio": {
+      {
+        "Name": "RowboatAudio",
         "Type": "Class RowboatAudioComponent*",
         "Size": "0x8",
         "Offset": "0x7d0"
       },
-      "HullDragDynamicsDesc": {
+      {
+        "Name": "HullDragDynamicsDesc",
         "Type": "Class BaseHullDragDynamicsDesc*",
         "Size": "0x8",
         "Offset": "0x7d8"
       },
-      "OarSplashContainer": {
+      {
+        "Name": "OarSplashContainer",
         "Type": "Class BowSplashContainer*",
         "Size": "0x8",
         "Offset": "0x7e0"
       },
-      "MountableComponent": {
+      {
+        "Name": "MountableComponent",
         "Type": "Class MountableComponent*",
         "Size": "0x8",
         "Offset": "0x7e8"
       },
-      "LinearDampingOverTimeWhileBeachedScalarCurve": {
+      {
+        "Name": "LinearDampingOverTimeWhileBeachedScalarCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x7f0"
       },
-      "AngularDampingOverTimeWhileBeachedScalarCurve": {
+      {
+        "Name": "AngularDampingOverTimeWhileBeachedScalarCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x7f8"
       },
-      "DamageEffectData": {
+      {
+        "Name": "DamageEffectData",
         "Type": "Struct RowboatDamageEffectData",
         "Size": "0x18",
         "Offset": "0x800"
       },
-      "StrainDamageData": {
+      {
+        "Name": "StrainDamageData",
         "Type": "Struct RowboatStrainDamageData",
         "Size": "0x20",
         "Offset": "0x818"
       },
-      "AlwaysEnabledInteractables": {
+      {
+        "Name": "AlwaysEnabledInteractables",
         "Type": "TArray<class AlwaysEnabledInteractables*>",
         "Size": "0x10",
         "Offset": "0x838"
       },
-      "ShroudBreakerTrackerComponent": {
+      {
+        "Name": "ShroudBreakerTrackerComponent",
         "Type": "Class ShroudBreakerTrackerComponent*",
         "Size": "0x8",
         "Offset": "0x848"
       },
-      "IsBeingLaunched": {
+      {
+        "Name": "IsBeingLaunched",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x850"
       },
-      "IsSinking": {
+      {
+        "Name": "IsSinking",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x851"
       },
-      "MaxPushingAngle": {
+      {
+        "Name": "MaxPushingAngle",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x854"
       },
-      "CurrentStrainAmount": {
+      {
+        "Name": "CurrentStrainAmount",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x858"
       },
-      "IsDocked": {
+      {
+        "Name": "IsDocked",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x85c"
       },
-      "CoverCollisionChannel": {
+      {
+        "Name": "CoverCollisionChannel",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x85e"
       },
-      "UnderCoverCheckInterval": {
+      {
+        "Name": "UnderCoverCheckInterval",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x860"
       },
-      "UnderCoverHeight": {
+      {
+        "Name": "UnderCoverHeight",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x864"
       },
-      "RelativeUnderCoverProbeRoots": {
+      {
+        "Name": "RelativeUnderCoverProbeRoots",
         "Type": "TArray<Struct UnderCoverHeight>",
         "Size": "0x10",
         "Offset": "0x868"
       },
-      "TrackedActorType": {
+      {
+        "Name": "TrackedActorType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x878"
       }
-    }
+    ]
   },
   "RowboatPartInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RowboatSpawnParamsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "RowboatTypes": {
+    "Attributes": [
+      {
+        "Name": "RowboatTypes",
         "Type": "TArray<Class TargetOars>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "RowingActionStateId": {
     "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RowingInputComponent": {
     "Super": "LookAtOffsetInputComponent",
     "FullSize": "0x288",
     "InheritedSize": "0x280",
     "ClassSize": "0x8",
-    "Attributes": {
-      "TargetOars": {
+    "Attributes": [
+      {
+        "Name": "TargetOars",
         "Type": "Class RowingSeat*",
         "Size": "0x8",
         "Offset": "0x280"
       }
-    }
+    ]
   },
   "StorageSeat": {
     "Super": "Seat",
     "FullSize": "0x6a8",
     "InheritedSize": "0x678",
     "ClassSize": "0x30",
-    "Attributes": {
-      "StorageInteractionInput": {
+    "Attributes": [
+      {
+        "Name": "StorageInteractionInput",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x678"
       },
-      "StorageContainerComponent": {
+      {
+        "Name": "StorageContainerComponent",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
         "Offset": "0x680"
       }
-    }
+    ]
   },
   "TaleQuestSinkWatercraftStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "TaleQuestWatercraftService": {
     "Super": "TaleQuestService",
     "FullSize": "0x88",
     "InheritedSize": "0x60",
     "ClassSize": "0x28",
-    "Attributes": {}
+    "Attributes": []
   },
   "TaleQuestWatercraftServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "TaleQuestSinkWatercraftStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
     "InheritedSize": "0x80",
     "ClassSize": "0x20",
-    "Attributes": {
-      "Watercraft": {
+    "Attributes": [
+      {
+        "Name": "Watercraft",
         "Type": "Struct QuestVariableWatercraft",
         "Size": "0x20",
         "Offset": "0x80"
       }
-    }
+    ]
   },
   "TaleQuestSpawnWatercraftStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x90",
     "InheritedSize": "0x90",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "TaleQuestSpawnWatercraftStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xe8",
     "InheritedSize": "0x80",
     "ClassSize": "0x68",
-    "Attributes": {
-      "SpawnLocation": {
+    "Attributes": [
+      {
+        "Name": "SpawnLocation",
         "Type": "Struct QuestVariableTransform",
         "Size": "0x28",
         "Offset": "0x80"
       },
-      "Watercraft": {
+      {
+        "Name": "Watercraft",
         "Type": "Struct QuestVariableWatercraft",
         "Size": "0x20",
         "Offset": "0xc8"
       }
-    }
+    ]
   },
   "WatercraftBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WatercraftServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WatercraftService": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "WatercraftSpawnData": {
     "Super": "ItemSpawnData",
     "FullSize": "0x80",
     "InheritedSize": "0x58",
     "ClassSize": "0x28",
-    "Attributes": {
-      "MinDistanceToNearestWatercraftInMetres": {
+    "Attributes": [
+      {
+        "Name": "MinDistanceToNearestWatercraftInMetres",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x78"
       }
-    }
+    ]
   },
   "WatercraftTrackerComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xe0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x18",
-    "Attributes": {
-      "CurrentWatercrafts": {
+    "Attributes": [
+      {
+        "Name": "CurrentWatercrafts",
         "Type": "TArray<class CurrentWatercrafts*>",
         "Size": "0x10",
         "Offset": "0xd0"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

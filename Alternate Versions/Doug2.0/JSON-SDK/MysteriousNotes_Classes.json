@@ -4,226 +4,253 @@
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "LookingAtMysteriousNoteInputComponent": {
     "Super": "LookingAtWieldableInputComponent",
     "FullSize": "0x2b0",
     "InheritedSize": "0x280",
     "ClassSize": "0x30",
-    "Attributes": {}
+    "Attributes": []
   },
   "MysteriousNoteDesc": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "MysteriousNotesCompletionEventsModelDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "MysteriousNoteCompletionEvents": {
+    "Attributes": [
+      {
+        "Name": "MysteriousNoteCompletionEvents",
         "Type": "TArray<Struct NotificationBackground>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "MysteriousNoteSettings": {
     "Super": "Object",
     "FullSize": "0x70",
     "InheritedSize": "0x28",
     "ClassSize": "0x48",
-    "Attributes": {
-      "LookAheadInMinutes": {
+    "Attributes": [
+      {
+        "Name": "LookAheadInMinutes",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "RequestTimeout": {
+      {
+        "Name": "RequestTimeout",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      "MysteriousNotesCompletionStringsAsset": {
+      {
+        "Name": "MysteriousNotesCompletionStringsAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "WieldableNoteDataAsset": {
+      {
+        "Name": "WieldableNoteDataAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      "Image": {
+      {
+        "Name": "Image",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      "NotificationBackground": {
+      {
+        "Name": "NotificationBackground",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x60"
       }
-    }
+    ]
   },
   "MysteriousNotesServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WieldableMysteriousNoteLayout": {
     "Super": "DataAsset",
     "FullSize": "0x178",
     "InheritedSize": "0x28",
     "ClassSize": "0x150",
-    "Attributes": {
-      "DefaultTitle": {
+    "Attributes": [
+      {
+        "Name": "DefaultTitle",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x28"
       },
-      "DefaultBody": {
+      {
+        "Name": "DefaultBody",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x60"
       },
-      "DefaultNoteLayoutItem": {
+      {
+        "Name": "DefaultNoteLayoutItem",
         "Type": "Struct WieldableMysteriousNoteLayoutItem",
         "Size": "0xd0",
         "Offset": "0x98"
       },
-      "NoteLayoutItems": {
+      {
+        "Name": "NoteLayoutItems",
         "Type": "TArray<Struct DefaultNoteLayoutItem>",
         "Size": "0x10",
         "Offset": "0x168"
       }
-    }
+    ]
   },
   "WieldableMysteriousNoteDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "WieldableNoteDesc": {
+    "Attributes": [
+      {
+        "Name": "WieldableNoteDesc",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "NoteLayout": {
+      {
+        "Name": "NoteLayout",
         "Type": "Class WieldableMysteriousNoteLayout*",
         "Size": "0x8",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "MysteriousNotesService": {
     "Super": "Actor",
     "FullSize": "0x498",
     "InheritedSize": "0x3d0",
     "ClassSize": "0xc8",
-    "Attributes": {
-      "CachedNoteSettings": {
+    "Attributes": [
+      {
+        "Name": "CachedNoteSettings",
         "Type": "Class MysteriousNoteSettings*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
-      "WieldableNoteDataAsset": {
+      {
+        "Name": "WieldableNoteDataAsset",
         "Type": "Class WieldableMysteriousNoteDataAsset*",
         "Size": "0x8",
         "Offset": "0x400"
       },
-      "CompletionEventsModelData": {
+      {
+        "Name": "CompletionEventsModelData",
         "Type": "Class MysteriousNotesCompletionEventsModelDataAsset*",
         "Size": "0x8",
         "Offset": "0x408"
       }
-    }
+    ]
   },
   "PlayerMysteriousNoteInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "PlayerMysteriousNoteComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x238",
     "InheritedSize": "0xc8",
     "ClassSize": "0x170",
-    "Attributes": {
-      "NoteData": {
+    "Attributes": [
+      {
+        "Name": "NoteData",
         "Type": "Struct ClientNoteData",
         "Size": "0x18",
         "Offset": "0xd0"
       },
-      "BeenPossessed": {
+      {
+        "Name": "BeenPossessed",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xe8"
       },
-      "CinematicPlayed": {
+      {
+        "Name": "CinematicPlayed",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xe9"
       }
-    }
+    ]
   },
   "WieldableMysteriousNote": {
     "Super": "SkeletalMeshWieldableItem",
     "FullSize": "0x940",
     "InheritedSize": "0x790",
     "ClassSize": "0x1b0",
-    "Attributes": {
-      "RenderTarget": {
+    "Attributes": [
+      {
+        "Name": "RenderTarget",
         "Type": "Class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x7a0"
       },
-      "NoteLayout": {
+      {
+        "Name": "NoteLayout",
         "Type": "Class WieldableMysteriousNoteLayout*",
         "Size": "0x8",
         "Offset": "0x7a8"
       },
-      "CanvasWidth": {
+      {
+        "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x7b0"
       },
-      "CanvasHeight": {
+      {
+        "Name": "CanvasHeight",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x7b4"
       },
-      "FontScale": {
+      {
+        "Name": "FontScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x7b8"
       },
-      "NamedNotificationInputComponent": {
+      {
+        "Name": "NamedNotificationInputComponent",
         "Type": "Class NamedNotificationInputComponent*",
         "Size": "0x8",
         "Offset": "0x810"
       },
-      "UsableWieldableComponent": {
+      {
+        "Name": "UsableWieldableComponent",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
         "Offset": "0x818"
       },
-      "InventoryItemComponent": {
+      {
+        "Name": "InventoryItemComponent",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
         "Offset": "0x820"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

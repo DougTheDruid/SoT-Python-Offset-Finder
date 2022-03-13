@@ -4,178 +4,209 @@
     "FullSize": "0x478",
     "InheritedSize": "0x3d0",
     "ClassSize": "0xa8",
-    "Attributes": {}
+    "Attributes": []
   },
   "TreasuryWaveDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x68",
     "InheritedSize": "0x28",
     "ClassSize": "0x40",
-    "Attributes": {
-      "Waves1Player": {
+    "Attributes": [
+      {
+        "Name": "Waves1Player",
         "Type": "TArray<class Waves1Player*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "Waves2Player": {
+      {
+        "Name": "Waves2Player",
         "Type": "TArray<class Waves2Player*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
-      "Waves3Player": {
+      {
+        "Name": "Waves3Player",
         "Type": "TArray<class Waves3Player*>",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      "Waves4Player": {
+      {
+        "Name": "Waves4Player",
         "Type": "TArray<class Waves4Player*>",
         "Size": "0x10",
         "Offset": "0x58"
       }
-    }
+    ]
   },
   "TreasuryRoom": {
     "Super": "Actor",
     "FullSize": "0x500",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x130",
-    "Attributes": {
-      "RoomAreaComponent": {
+    "Attributes": [
+      {
+        "Name": "RoomAreaComponent",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
-      "TreasuryInactiveDurationMinSeconds": {
+      {
+        "Name": "TreasuryInactiveDurationMinSeconds",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e0"
       },
-      "TreasuryInactiveDurationMaxSeconds": {
+      {
+        "Name": "TreasuryInactiveDurationMaxSeconds",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e4"
       },
-      "RoomFailureDurationSeconds": {
+      {
+        "Name": "RoomFailureDurationSeconds",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e8"
       },
-      "WaveDelaySeconds": {
+      {
+        "Name": "WaveDelaySeconds",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3ec"
       },
-      "EncounterDelaySeconds": {
+      {
+        "Name": "EncounterDelaySeconds",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3f0"
       },
-      "VaultDoorAnimDurationSeconds": {
+      {
+        "Name": "VaultDoorAnimDurationSeconds",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3f4"
       },
-      "VaultDoorOpenDurationSeconds": {
+      {
+        "Name": "VaultDoorOpenDurationSeconds",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3f8"
       },
-      "MinWavesInEncounter": {
+      {
+        "Name": "MinWavesInEncounter",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x3fc"
       },
-      "MaxWavesInEncounter": {
+      {
+        "Name": "MaxWavesInEncounter",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x400"
       },
-      "MaxEncounters": {
+      {
+        "Name": "MaxEncounters",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x404"
       },
-      "WaveEncounters": {
+      {
+        "Name": "WaveEncounters",
         "Type": "TArray<Struct MaxEncounters>",
         "Size": "0x10",
         "Offset": "0x408"
       },
-      "FloodMechanismActor": {
+      {
+        "Name": "FloodMechanismActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      "FloodTriggerActor": {
+      {
+        "Name": "FloodTriggerActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x420"
       },
-      "DrainMechanismActor": {
+      {
+        "Name": "DrainMechanismActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x428"
       },
-      "DrainTriggerActor": {
+      {
+        "Name": "DrainTriggerActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x430"
       },
-      "VaultMechanismActor": {
+      {
+        "Name": "VaultMechanismActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x438"
       },
-      "VaultTriggerActor": {
+      {
+        "Name": "VaultTriggerActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x440"
       },
-      "VaultLootSpawner": {
+      {
+        "Name": "VaultLootSpawner",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x448"
       },
-      "VaultLootSpawnLocationActor": {
+      {
+        "Name": "VaultLootSpawnLocationActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x450"
       },
-      "OverlappingActors": {
+      {
+        "Name": "OverlappingActors",
         "Type": "TArray<class OverlappingActors*>",
         "Size": "0x10",
         "Offset": "0x478"
       },
-      "CachedParticipantControllers": {
+      {
+        "Name": "CachedParticipantControllers",
         "Type": "TArray<Weakclass OverlappingActors>",
         "Size": "0x10",
         "Offset": "0x488"
       },
-      "VaultLootSpawnerActor": {
+      {
+        "Name": "VaultLootSpawnerActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x498"
       },
-      "VaultOpenStat": {
+      {
+        "Name": "VaultOpenStat",
         "Type": "Struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x4a0"
       },
-      "FloodMechanismComponent": {
+      {
+        "Name": "FloodMechanismComponent",
         "Type": "Class MechanismActionComponent*",
         "Size": "0x8",
         "Offset": "0x4a8"
       },
-      "DrainMechanismComponent": {
+      {
+        "Name": "DrainMechanismComponent",
         "Type": "Class MechanismActionComponent*",
         "Size": "0x8",
         "Offset": "0x4b0"
       },
-      "VaultMechanismComponent": {
+      {
+        "Name": "VaultMechanismComponent",
         "Type": "Class MechanismActionComponent*",
         "Size": "0x8",
         "Offset": "0x4b8"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

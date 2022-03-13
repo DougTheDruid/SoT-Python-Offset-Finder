@@ -2,18 +2,18 @@
 # https://github.com/DougTheDruid
 DescribableComponent:
   Attributes:
-    DescribableTooltipText:
-      Offset: '0x128'
-      Size: '0x38'
-      Type: Struct FText
-    TooltipActive:
-      Offset: '0x160'
-      Size: '0x1'
-      Type: bool
-    TooltipActiveOnBeginPlay:
-      Offset: '0x120'
-      Size: '0x1'
-      Type: bool
+  - Name: TooltipActiveOnBeginPlay
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: DescribableTooltipText
+    Offset: '0x128'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: TooltipActive
+    Offset: '0x160'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x60'
   FullSize: '0x178'
   InheritedSize: '0x118'

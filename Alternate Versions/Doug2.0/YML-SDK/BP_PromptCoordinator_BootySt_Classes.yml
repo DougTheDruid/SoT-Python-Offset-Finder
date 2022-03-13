@@ -2,70 +2,70 @@
 # https://github.com/DougTheDruid
 BP_PromptCoordinator_BootyStorage_C:
   Attributes:
-    CrewStorageChangedHandle:
-      Offset: '0x1f8'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    CrewStorageFullHandle:
-      Offset: '0x240'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    CurrentlyWieldedItem:
-      Offset: '0x368'
-      Size: '0x8'
-      Type: Class WieldableItem*
-    HasRetrievedLoot:
-      Offset: '0x123'
-      Size: '0x1'
-      Type: bool
-    HasUsedStatue:
-      Offset: '0x122'
-      Size: '0x1'
-      Type: bool
-    ItemsRetrievedHandle:
-      Offset: '0x288'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    LootPrompt:
-      Offset: '0x190'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    MermaidPrompt:
-      Offset: '0x128'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    PromptKey:
-      Offset: '0x360'
-      Size: '0x8'
-      Type: class
-    RetrieveActorDespawnHandle:
-      Offset: '0x3b8'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    RetrieveActorHandle:
-      Offset: '0x2d0'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    ShowLootPrompt:
-      Offset: '0x120'
-      Size: '0x1'
-      Type: bool
-    ShowMermaidPrompt:
-      Offset: '0x121'
-      Size: '0x1'
-      Type: bool
-    StowedEventHandle:
-      Offset: '0x370'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
-    WieldedEventHandle:
-      Offset: '0x318'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: ShowLootPrompt
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: ShowMermaidPrompt
+    Offset: '0x121'
+    Size: '0x1'
+    Type: bool
+  - Name: HasUsedStatue
+    Offset: '0x122'
+    Size: '0x1'
+    Type: bool
+  - Name: HasRetrievedLoot
+    Offset: '0x123'
+    Size: '0x1'
+    Type: bool
+  - Name: MermaidPrompt
+    Offset: '0x128'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: LootPrompt
+    Offset: '0x190'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: CrewStorageChangedHandle
+    Offset: '0x1f8'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: CrewStorageFullHandle
+    Offset: '0x240'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: ItemsRetrievedHandle
+    Offset: '0x288'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: RetrieveActorHandle
+    Offset: '0x2d0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: WieldedEventHandle
+    Offset: '0x318'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: PromptKey
+    Offset: '0x360'
+    Size: '0x8'
+    Type: class
+  - Name: CurrentlyWieldedItem
+    Offset: '0x368'
+    Size: '0x8'
+    Type: Class WieldableItem*
+  - Name: StowedEventHandle
+    Offset: '0x370'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: RetrieveActorDespawnHandle
+    Offset: '0x3b8'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
   ClassSize: '0x2e8'
   FullSize: '0x400'
   InheritedSize: '0x118'

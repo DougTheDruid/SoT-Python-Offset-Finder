@@ -2,46 +2,46 @@
 # https://github.com/DougTheDruid
 BP_Prompt_UseAMermaid_C:
   Attributes:
-    Handle_OnMermaidActivatedLocally:
-      Offset: '0x128'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_OnMermaidDeactivatedLocally:
-      Offset: '0x170'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_OnMermaidUsed:
-      Offset: '0x1b8'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    PromptDisplayDuration:
-      Offset: '0x274'
-      Size: '0x4'
-      Type: float
-    PromptHideDuration:
-      Offset: '0x278'
-      Size: '0x4'
-      Type: float
-    Prompt_UseMermaid:
-      Offset: '0x208'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    State_IsThereAMermaid:
-      Offset: '0x120'
-      Size: '0x1'
-      Type: bool
-    State_MermaidUsed:
-      Offset: '0x200'
-      Size: '0x1'
-      Type: bool
-    State_ShowPrompt:
-      Offset: '0x270'
-      Size: '0x1'
-      Type: bool
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: State_IsThereAMermaid
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_OnMermaidActivatedLocally
+    Offset: '0x128'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_OnMermaidDeactivatedLocally
+    Offset: '0x170'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_OnMermaidUsed
+    Offset: '0x1b8'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: State_MermaidUsed
+    Offset: '0x200'
+    Size: '0x1'
+    Type: bool
+  - Name: Prompt_UseMermaid
+    Offset: '0x208'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: State_ShowPrompt
+    Offset: '0x270'
+    Size: '0x1'
+    Type: bool
+  - Name: PromptDisplayDuration
+    Offset: '0x274'
+    Size: '0x4'
+    Type: float
+  - Name: PromptHideDuration
+    Offset: '0x278'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x164'
   FullSize: '0x27c'
   InheritedSize: '0x118'

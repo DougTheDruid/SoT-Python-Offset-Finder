@@ -1,436 +1,508 @@
 {
   "SplashProbe": {
     "ClassSize": "0x128",
-    "Attributes": {
-      "Probe": {
+    "Attributes": [
+      {
+        "Name": "Probe",
         "Type": "Struct WaterSplashProbe",
         "Size": "0xd8",
         "Offset": "0x8"
       },
-      "ProbeSamplingTime": {
+      {
+        "Name": "ProbeSamplingTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe0"
       },
-      "TimeBetweenProbeVfx": {
+      {
+        "Name": "TimeBetweenProbeVfx",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe4"
       },
-      "ParticleSystem": {
+      {
+        "Name": "ParticleSystem",
         "Type": "Class Object*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
-      "SpawnAttached": {
+      {
+        "Name": "SpawnAttached",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf0"
       },
-      "AttachToWaterSurface": {
+      {
+        "Name": "AttachToWaterSurface",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf1"
       },
-      "SplashAttachType": {
+      {
+        "Name": "SplashAttachType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xf2"
       },
-      "VfxSpawnOffset": {
+      {
+        "Name": "VfxSpawnOffset",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0xf4"
       },
-      "Enabled": {
+      {
+        "Name": "Enabled",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x100"
       },
-      "CurrentlyPlayingVFX": {
+      {
+        "Name": "CurrentlyPlayingVFX",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x108"
       }
-    }
+    ]
   },
   "WaterSplashProbe": {
     "ClassSize": "0xd8",
-    "Attributes": {
-      "ProbeDebugName": {
+    "Attributes": [
+      {
+        "Name": "ProbeDebugName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "LocalOffset": {
+      {
+        "Name": "LocalOffset",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
-      "Height": {
+      {
+        "Name": "Height",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      "Pitch": {
+      {
+        "Name": "Pitch",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "Yaw": {
+      {
+        "Name": "Yaw",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      "Roll": {
+      {
+        "Name": "Roll",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      "RateOfChangeThreshold": {
+      {
+        "Name": "RateOfChangeThreshold",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x34"
       },
-      "LocalOffsetAdjustment": {
+      {
+        "Name": "LocalOffsetAdjustment",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x38"
       },
-      "LocalOffsetAdjustmentDuration": {
+      {
+        "Name": "LocalOffsetAdjustmentDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x44"
       },
-      "Type": {
+      {
+        "Name": "Type",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x48"
       },
-      "WaterHeightType": {
+      {
+        "Name": "WaterHeightType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x49"
       },
-      "StaticWaterHeightValue": {
+      {
+        "Name": "StaticWaterHeightValue",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c"
       }
-    }
+    ]
   },
   "WaterInformation": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "WaterType": {
+    "Attributes": [
+      {
+        "Name": "WaterType",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "CanSwim": {
+      {
+        "Name": "CanSwim",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "WaterSplashProbesContainer": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Probes": {
+    "Attributes": [
+      {
+        "Name": "Probes",
         "Type": "TArray<Struct WaterBuoyancy>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "ProbeSamplingTime": {
+      {
+        "Name": "ProbeSamplingTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "WaterBuoyancy": {
     "ClassSize": "0x130",
-    "Attributes": {
-      "PrimitiveComponent": {
+    "Attributes": [
+      {
+        "Name": "PrimitiveComponent",
         "Type": "Class PrimitiveComponent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "OverallBuyoancyScalar": {
+      {
+        "Name": "OverallBuyoancyScalar",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      "DampingPerSample": {
+      {
+        "Name": "DampingPerSample",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      "AdditionalAngularDampingWhenSubmerged": {
+      {
+        "Name": "AdditionalAngularDampingWhenSubmerged",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "VolumeSamples": {
+      {
+        "Name": "VolumeSamples",
         "Type": "TArray<Struct BuoyancyVolumeSample>",
         "Size": "0x10",
         "Offset": "0x18"
       },
-      "DragSamples": {
+      {
+        "Name": "DragSamples",
         "Type": "TArray<Struct BuoyancyDragSample>",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "BuyoancySampleZSpeedVSDampeningScalar": {
+      {
+        "Name": "BuyoancySampleZSpeedVSDampeningScalar",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x38"
       },
-      "QuadSubmersionTestSampleResolution": {
+      {
+        "Name": "QuadSubmersionTestSampleResolution",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
       }
-    }
+    ]
   },
   "BuoyancyDragSample": {
     "ClassSize": "0x90",
-    "Attributes": {
-      "Offset": {
+    "Attributes": [
+      {
+        "Name": "Offset",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
-      "Normal": {
+      {
+        "Name": "Normal",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      "Tangent": {
+      {
+        "Name": "Tangent",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
-      "Radius": {
+      {
+        "Name": "Radius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      "DragCoefficient": {
+      {
+        "Name": "DragCoefficient",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "Type": {
+      {
+        "Name": "Type",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x2c"
       }
-    }
+    ]
   },
   "BuoyancyVolumeSample": {
     "ClassSize": "0x58",
-    "Attributes": {
-      "Offset": {
+    "Attributes": [
+      {
+        "Name": "Offset",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
-      "Radius": {
+      {
+        "Name": "Radius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      "Type": {
+      {
+        "Name": "Type",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
       },
-      "bRelevantForSubmersionVolumeCalculation": {
+      {
+        "Name": "bRelevantForSubmersionVolumeCalculation",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x11"
       },
-      "Scalar": {
+      {
+        "Name": "Scalar",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      "DampingScalar": {
+      {
+        "Name": "DampingScalar",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      "DistUnderwaterVSBuoyancyForce": {
+      {
+        "Name": "DistUnderwaterVSBuoyancyForce",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x20"
       },
-      "DistUnderwaterVSBuoyancyForceSecondary": {
+      {
+        "Name": "DistUnderwaterVSBuoyancyForceSecondary",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "DistUnderwaterVSBuoyancyForceTertiary": {
+      {
+        "Name": "DistUnderwaterVSBuoyancyForceTertiary",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x30"
       },
-      "FakeZOffsetGeneratorCurve": {
+      {
+        "Name": "FakeZOffsetGeneratorCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x38"
       },
-      "FakeZOffsetAmp": {
+      {
+        "Name": "FakeZOffsetAmp",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      "FakeZOffsetGeneratorTimeScale": {
+      {
+        "Name": "FakeZOffsetGeneratorTimeScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x44"
       }
-    }
+    ]
   },
   "BuoyancySampleMovement": {
     "ClassSize": "0x68",
-    "Attributes": {
-      "Configurations": {
+    "Attributes": [
+      {
+        "Name": "Configurations",
         "Type": "TArray<Struct BuoyancySampleMovementConfiguration>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "BuoyancyScalarCurve": {
+      {
+        "Name": "BuoyancyScalarCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x50"
       },
-      "ProbeMovementCurve": {
+      {
+        "Name": "ProbeMovementCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x58"
       }
-    }
+    ]
   },
   "BuoyancySampleMovementConfiguration": {
     "ClassSize": "0x38",
-    "Attributes": {
-      "CenterOfMassOffsetCurve": {
+    "Attributes": [
+      {
+        "Name": "CenterOfMassOffsetCurve",
         "Type": "Class CurveVector*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "SampleMoveData": {
+      {
+        "Name": "SampleMoveData",
         "Type": "TArray<Struct BuoyancySampleMovementConfigurationEntry>",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "OverallBuoyancyScalar": {
+      {
+        "Name": "OverallBuoyancyScalar",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      "OverallBuoyancyScalarBlendCurve": {
+      {
+        "Name": "OverallBuoyancyScalarBlendCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x20"
       },
-      "ProbeMovementBlendCurve": {
+      {
+        "Name": "ProbeMovementBlendCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "Duration": {
+      {
+        "Name": "Duration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "BuoyancySampleMovementConfigurationEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "SampleOffset": {
+    "Attributes": [
+      {
+        "Name": "SampleOffset",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
-      "BuoyancyScaleCurve": {
+      {
+        "Name": "BuoyancyScaleCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "WaterSpout": {
     "ClassSize": "0x70",
-    "Attributes": {
-      "SpoutLocatorTransform": {
+    "Attributes": [
+      {
+        "Name": "SpoutLocatorTransform",
         "Type": "Struct Transform",
         "Size": "0x30",
         "Offset": "0x0"
       },
-      "SpoutParticleSystem": {
+      {
+        "Name": "SpoutParticleSystem",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
-      "SplashParticleSystem": {
+      {
+        "Name": "SplashParticleSystem",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "EventCurrentWaterPlaneChange": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "FormerWaterPlane": {
+    "Attributes": [
+      {
+        "Name": "FormerWaterPlane",
         "Type": "Class BaseWaterComponent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "NewWaterPlane": {
+      {
+        "Name": "NewWaterPlane",
         "Type": "Class BaseWaterComponent*",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EventLeftWaterExclusionZone": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "EventEnteredWaterExclusionZone": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "FFTWaterQueryResult": {
     "ClassSize": "0x1c",
-    "Attributes": {
-      "Height": {
+    "Attributes": [
+      {
+        "Name": "Height",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "Choppiness": {
+      {
+        "Name": "Choppiness",
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x4"
       },
-      "Normal": {
+      {
+        "Name": "Normal",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      "WaterQueryResult": {
+      {
+        "Name": "WaterQueryResult",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

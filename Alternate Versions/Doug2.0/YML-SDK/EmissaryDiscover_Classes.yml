@@ -2,182 +2,182 @@
 # https://github.com/DougTheDruid
 BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C:
   Attributes:
-    Company:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: class
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredCargoRunCrate_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x428'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredCargoRunCrate_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryDiscoveredCargoRunCrate_RB_C:
   Attributes:
-    Company:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: class
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredCargoRunCrate_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x428'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredCargoRunCrate_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryDiscoveredLoot_AF_C:
   Attributes:
-    Company:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: class
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x428'
-      Size: '0x10'
-      Type: TArray<Struct /Game/DataAssets/NonverbalChat/Weapons/SirenTridentPhrases>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct None>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryDiscoveredLoot_GH_C:
   Attributes:
-    Company:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: class
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x428'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryDiscoveredLoot_MA_C:
   Attributes:
-    Company:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: class
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x428'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryDiscoveredLoot_OOS_C:
   Attributes:
-    Company:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: class
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x428'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryDiscoveredLoot_RB_C:
   Attributes:
-    Company:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: class
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x428'
-      Size: '0x10'
-      Type: TArray<Struct None>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: Company
+    Offset: '0x420'
+    Size: '0x8'
+    Type: class
+  - Name: Prompts
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct None>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'

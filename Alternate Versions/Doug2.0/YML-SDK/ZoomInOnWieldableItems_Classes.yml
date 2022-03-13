@@ -2,42 +2,42 @@
 # https://github.com/DougTheDruid
 ZoomInOnWieldableItemComponent:
   Attributes:
-    FeatureName:
-      Offset: '0xd0'
-      Size: '0x8'
-      Type: struct FName
-    FreelookOutInterpolationRate:
-      Offset: '0xe4'
-      Size: '0x4'
-      Type: float
-    FreelookPitch:
-      Offset: '0xdc'
-      Size: '0x4'
-      Type: float
-    FreelookYaw:
-      Offset: '0xe0'
-      Size: '0x4'
-      Type: float
-    LookSensitivityScaler:
-      Offset: '0xe8'
-      Size: '0x4'
-      Type: float
-    ZoomedInFov:
-      Offset: '0xd8'
-      Size: '0x4'
-      Type: float
+  - Name: FeatureName
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ZoomedInFov
+    Offset: '0xd8'
+    Size: '0x4'
+    Type: float
+  - Name: FreelookPitch
+    Offset: '0xdc'
+    Size: '0x4'
+    Type: float
+  - Name: FreelookYaw
+    Offset: '0xe0'
+    Size: '0x4'
+    Type: float
+  - Name: FreelookOutInterpolationRate
+    Offset: '0xe4'
+    Size: '0x4'
+    Type: float
+  - Name: LookSensitivityScaler
+    Offset: '0xe8'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ZoomInOnWieldableItemInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 ZoomedInOnWieldableItemActionStateId:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

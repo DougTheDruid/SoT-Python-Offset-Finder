@@ -2,34 +2,34 @@
 # https://github.com/DougTheDruid
 AshenLordFireShroud:
   Attributes:
-    FireShroudOverlapZone:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class StatusEffectOverlapZone*
-    Params:
-      Offset: '0x8'
-      Size: '0x18'
-      Type: Struct AshenLordFireShroudParams
+  - Name: FireShroudOverlapZone
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class StatusEffectOverlapZone*
+  - Name: Params
+    Offset: '0x8'
+    Size: '0x18'
+    Type: Struct AshenLordFireShroudParams
   ClassSize: '0x20'
 AshenLordFireShroudParams:
   Attributes:
-    FireShroudCollisionVolume:
-      Offset: '0x8'
-      Size: '0xc'
-      Type: Struct Vector
-    FireShroudZoneClass:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: FireShroudZoneClass
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: FireShroudCollisionVolume
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0x18'
 MeleeAttackIdWeights:
   Attributes:
-    MeleeAttackType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
-    Weight:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
+  - Name: MeleeAttackType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Weight
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x10'

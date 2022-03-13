@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 LightPropagationVolumeBlendable:
   Attributes:
-    BlendWeight:
-      Offset: '0xa0'
-      Size: '0x4'
-      Type: float
-    Settings:
-      Offset: '0x30'
-      Size: '0x70'
-      Type: Struct LightPropagationVolumeSettings
+  - Name: Settings
+    Offset: '0x30'
+    Size: '0x70'
+    Type: Struct LightPropagationVolumeSettings
+  - Name: BlendWeight
+    Offset: '0xa0'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'

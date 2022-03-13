@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 GlobalProjectileSettings:
   Attributes:
-    ProjectileDestroyDepth:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    ProjectileMinimumFallDistance:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: float
-    ProjectileOceanFloorDestroyDepth:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
-    SettingsFor:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
+  - Name: SettingsFor
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: ProjectileDestroyDepth
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: ProjectileOceanFloorDestroyDepth
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: ProjectileMinimumFallDistance
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x10'
 ThrottledProjectileTickPool:
   Attributes:
-    MaxNumberToTickPerFrame:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    Projectiles:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Class MaxNumberToTickPerFrame>
+  - Name: MaxNumberToTickPerFrame
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Projectiles
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Class MaxNumberToTickPerFrame>
   ClassSize: '0x18'

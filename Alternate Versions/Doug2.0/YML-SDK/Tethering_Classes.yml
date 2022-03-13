@@ -2,210 +2,210 @@
 # https://github.com/DougTheDruid
 CordRenderComponent:
   Attributes:
-    CordMaterials:
-      Offset: '0x618'
-      Size: '0x10'
-      Type: TArray<class CordMaterials*>
-    ThicknessCm:
-      Offset: '0x628'
-      Size: '0x4'
-      Type: float
+  - Name: CordMaterials
+    Offset: '0x618'
+    Size: '0x10'
+    Type: TArray<class CordMaterials*>
+  - Name: ThicknessCm
+    Offset: '0x628'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x40'
   FullSize: '0x650'
   InheritedSize: '0x610'
   Super: StaticMeshComponent
 CordRenderInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 DistanceJointComponent:
   Attributes:
-    ApplyAsSpring:
-      Offset: '0x148'
-      Size: '0x1'
-      Type: bool
-    EnforceMaxDistance:
-      Offset: '0x14a'
-      Size: '0x1'
-      Type: bool
-    EnforceMinDistance:
-      Offset: '0x149'
-      Size: '0x1'
-      Type: bool
-    MaxDistance:
-      Offset: '0x13c'
-      Size: '0x4'
-      Type: float
-    MinDistance:
-      Offset: '0x138'
-      Size: '0x4'
-      Type: float
-    SpringDamping:
-      Offset: '0x144'
-      Size: '0x4'
-      Type: float
-    SpringStiffness:
-      Offset: '0x140'
-      Size: '0x4'
-      Type: float
+  - Name: MinDistance
+    Offset: '0x138'
+    Size: '0x4'
+    Type: float
+  - Name: MaxDistance
+    Offset: '0x13c'
+    Size: '0x4'
+    Type: float
+  - Name: SpringStiffness
+    Offset: '0x140'
+    Size: '0x4'
+    Type: float
+  - Name: SpringDamping
+    Offset: '0x144'
+    Size: '0x4'
+    Type: float
+  - Name: ApplyAsSpring
+    Offset: '0x148'
+    Size: '0x1'
+    Type: bool
+  - Name: EnforceMinDistance
+    Offset: '0x149'
+    Size: '0x1'
+    Type: bool
+  - Name: EnforceMaxDistance
+    Offset: '0x14a'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x88'
   FullSize: '0x150'
   InheritedSize: '0xc8'
   Super: ActorComponent
 DynamicCordRenderComponent:
   Attributes:
-    BoundsPadding:
-      Offset: '0x648'
-      Size: '0x4'
-      Type: float
-    EndPointA:
-      Offset: '0x650'
-      Size: '0x8'
-      Type: Class SceneComponent*
-    EndPointB:
-      Offset: '0x658'
-      Size: '0x8'
-      Type: Class SceneComponent*
+  - Name: BoundsPadding
+    Offset: '0x648'
+    Size: '0x4'
+    Type: float
+  - Name: EndPointA
+    Offset: '0x650'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: EndPointB
+    Offset: '0x658'
+    Size: '0x8'
+    Type: Class SceneComponent*
   ClassSize: '0x60'
   FullSize: '0x6b0'
   InheritedSize: '0x650'
   Super: CordRenderComponent
 HarpoonRenderComponent:
   Attributes:
-    HarpoonMaterials:
-      Offset: '0x648'
-      Size: '0x10'
-      Type: TArray<class HarpoonMaterials*>
-    HitAnimationDurationSecs:
-      Offset: '0x65c'
-      Size: '0x4'
-      Type: float
-    LaunchAnimationDurationSecs:
-      Offset: '0x658'
-      Size: '0x4'
-      Type: float
-    QuickRetractAnimationSpeed:
-      Offset: '0x660'
-      Size: '0x4'
-      Type: float
+  - Name: HarpoonMaterials
+    Offset: '0x648'
+    Size: '0x10'
+    Type: TArray<class HarpoonMaterials*>
+  - Name: LaunchAnimationDurationSecs
+    Offset: '0x658'
+    Size: '0x4'
+    Type: float
+  - Name: HitAnimationDurationSecs
+    Offset: '0x65c'
+    Size: '0x4'
+    Type: float
+  - Name: QuickRetractAnimationSpeed
+    Offset: '0x660'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x20'
   FullSize: '0x670'
   InheritedSize: '0x650'
   Super: CordRenderComponent
 ShouldTetherInWorldSpaceInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 Tether:
   Attributes:
-    CurrentTetherMode:
-      Offset: '0x50c'
-      Size: '0x1'
-      Type: byte
-    HasAttached:
-      Offset: '0x508'
-      Size: '0x1'
-      Type: bool
-    HasSourceActor:
-      Offset: '0x509'
-      Size: '0x1'
-      Type: bool
-    HasTargetActor:
-      Offset: '0x50a'
-      Size: '0x1'
-      Type: bool
-    IsSlackEnabled:
-      Offset: '0x50b'
-      Size: '0x1'
-      Type: bool
-    JointComponent:
-      Offset: '0x4e0'
-      Size: '0x8'
-      Type: Class DistanceJointComponent*
-    MaxLengthWhenGrowing:
-      Offset: '0x4fc'
-      Size: '0x4'
-      Type: float
-    SlackCm:
-      Offset: '0x4f8'
-      Size: '0x4'
-      Type: float
-    SourceActor:
-      Offset: '0x4e8'
-      Size: '0x8'
-      Type: Class Actor*
-    SourcePhysicsHandle:
-      Offset: '0x4d0'
-      Size: '0x8'
-      Type: Class SphereComponent*
-    TargetActor:
-      Offset: '0x4f0'
-      Size: '0x8'
-      Type: Class Actor*
-    TargetPhysicsHandle:
-      Offset: '0x4d8'
-      Size: '0x8'
-      Type: Class SphereComponent*
-    TetherPositionAnchorComponent:
-      Offset: '0x4c8'
-      Size: '0x8'
-      Type: Class SceneComponent*
+  - Name: TetherPositionAnchorComponent
+    Offset: '0x4c8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: SourcePhysicsHandle
+    Offset: '0x4d0'
+    Size: '0x8'
+    Type: Class SphereComponent*
+  - Name: TargetPhysicsHandle
+    Offset: '0x4d8'
+    Size: '0x8'
+    Type: Class SphereComponent*
+  - Name: JointComponent
+    Offset: '0x4e0'
+    Size: '0x8'
+    Type: Class DistanceJointComponent*
+  - Name: SourceActor
+    Offset: '0x4e8'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: TargetActor
+    Offset: '0x4f0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: SlackCm
+    Offset: '0x4f8'
+    Size: '0x4'
+    Type: float
+  - Name: MaxLengthWhenGrowing
+    Offset: '0x4fc'
+    Size: '0x4'
+    Type: float
+  - Name: HasAttached
+    Offset: '0x508'
+    Size: '0x1'
+    Type: bool
+  - Name: HasSourceActor
+    Offset: '0x509'
+    Size: '0x1'
+    Type: bool
+  - Name: HasTargetActor
+    Offset: '0x50a'
+    Size: '0x1'
+    Type: bool
+  - Name: IsSlackEnabled
+    Offset: '0x50b'
+    Size: '0x1'
+    Type: bool
+  - Name: CurrentTetherMode
+    Offset: '0x50c'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x140'
   FullSize: '0x510'
   InheritedSize: '0x3d0'
   Super: Actor
 TetherConstraintInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 TetherCustomisationComponent:
   Attributes:
-    CanBeTethered:
-      Offset: '0x124'
-      Size: '0x1'
-      Type: bool
-    ComponentToTetherTo:
-      Offset: '0xd0'
-      Size: '0x8'
-      Type: Class SceneComponent*
-    IsMassInertiaScalingEnabled:
-      Offset: '0x125'
-      Size: '0x1'
-      Type: bool
-    MassIntertiaScale:
-      Offset: '0x120'
-      Size: '0x4'
-      Type: float
+  - Name: ComponentToTetherTo
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: MassIntertiaScale
+    Offset: '0x120'
+    Size: '0x4'
+    Type: float
+  - Name: CanBeTethered
+    Offset: '0x124'
+    Size: '0x1'
+    Type: bool
+  - Name: IsMassInertiaScalingEnabled
+    Offset: '0x125'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
 TetherCustomisationInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: TetherQueriableInterface
 TetherInWorldSpaceComponent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
   FullSize: '0xd0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 TetherInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 TetherQueriableInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

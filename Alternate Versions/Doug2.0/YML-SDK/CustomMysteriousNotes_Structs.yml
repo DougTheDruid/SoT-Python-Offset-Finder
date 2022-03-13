@@ -2,38 +2,38 @@
 # https://github.com/DougTheDruid
 CreateMysteriousNoteData:
   Attributes:
-    NoteBody:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: Struct FString
-    NoteTitle:
-      Offset: '0x18'
-      Size: '0x10'
-      Type: Struct FString
-    NoteType:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: Struct FString
-    PlayerNetGUID:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: NoteType
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: NoteTitle
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: NoteBody
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x38'
 CustomPlayerNoteList:
   Attributes:
-    Notes:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct EnchantedCompassTarget>
+  - Name: Notes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct EnchantedCompassTarget>
   ClassSize: '0x10'
 DestroyMysteriousNoteData:
   Attributes:
-    NoteGUID:
-      Offset: '0x4'
-      Size: '0x10'
-      Type: Struct Guid
-    PlayerNetGUID:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: NoteGUID
+    Offset: '0x4'
+    Size: '0x10'
+    Type: Struct Guid
   ClassSize: '0x14'

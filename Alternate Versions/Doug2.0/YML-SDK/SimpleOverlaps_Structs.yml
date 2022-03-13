@@ -2,26 +2,26 @@
 # https://github.com/DougTheDruid
 SimpleOverlapBegin:
   Attributes:
-    OverlapInfo:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct SimpleOverlapInfo
+  - Name: OverlapInfo
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct SimpleOverlapInfo
   ClassSize: '0x10'
 SimpleOverlapEnd:
   Attributes:
-    OverlapInfo:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct SimpleOverlapInfo
+  - Name: OverlapInfo
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct SimpleOverlapInfo
   ClassSize: '0x10'
 SimpleOverlapInfo:
   Attributes:
-    OtherActor:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class Actor*
-    OtherComponent:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class PrimitiveComponent*
+  - Name: OtherActor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: OtherComponent
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class PrimitiveComponent*
   ClassSize: '0x10'

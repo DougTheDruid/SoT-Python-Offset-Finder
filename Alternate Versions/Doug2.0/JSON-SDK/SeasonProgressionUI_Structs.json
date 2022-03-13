@@ -1,346 +1,399 @@
 {
   "SeasonIconPopupAsset": {
     "ClassSize": "0x68",
-    "Attributes": {
-      "GlowIcon": {
+    "Attributes": [
+      {
+        "Name": "GlowIcon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Icon": {
+      {
+        "Name": "Icon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "ToastSfxEventName": {
+      {
+        "Name": "ToastSfxEventName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "ToastEventName": {
+      {
+        "Name": "ToastEventName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "ToastSwitchName": {
+      {
+        "Name": "ToastSwitchName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      "ToastSwitchValue": {
+      {
+        "Name": "ToastSwitchValue",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      "ToastHoldDuration": {
+      {
+        "Name": "ToastHoldDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x60"
       }
-    }
+    ]
   },
   "SeasonGoalPopupAsset": {
     "ClassSize": "0x80",
-    "Attributes": {
-      "Category": {
+    "Attributes": [
+      {
+        "Name": "Category",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "GlowIcon": {
+      {
+        "Name": "GlowIcon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "Icon": {
+      {
+        "Name": "Icon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x18"
       },
-      "ChatIcon": {
+      {
+        "Name": "ChatIcon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "ToastSfxEventName": {
+      {
+        "Name": "ToastSfxEventName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
-      "ToastEventName": {
+      {
+        "Name": "ToastEventName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      "ToastSwitchName": {
+      {
+        "Name": "ToastSwitchName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x58"
       },
-      "ToastSwitchValue": {
+      {
+        "Name": "ToastSwitchValue",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x68"
       },
-      "ToastHoldDuration": {
+      {
+        "Name": "ToastHoldDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x78"
       }
-    }
+    ]
   },
   "SeasonNotificationContent": {
     "ClassSize": "0x68",
-    "Attributes": {
-      "GlowIcon": {
+    "Attributes": [
+      {
+        "Name": "GlowIcon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Icon": {
+      {
+        "Name": "Icon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "SfxEventName": {
+      {
+        "Name": "SfxEventName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "EventName": {
+      {
+        "Name": "EventName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "SwitchName": {
+      {
+        "Name": "SwitchName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      "SwitchValue": {
+      {
+        "Name": "SwitchValue",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      "ToastHoldDuration": {
+      {
+        "Name": "ToastHoldDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x60"
       }
-    }
+    ]
   },
   "DeedProgressDesc": {
     "ClassSize": "0x80",
-    "Attributes": {
-      "Description": {
+    "Attributes": [
+      {
+        "Name": "Description",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Icon": {
+      {
+        "Name": "Icon",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "NavigationDesc": {
+      {
+        "Name": "NavigationDesc",
         "Type": "Struct NavigationDesc",
         "Size": "0x14",
         "Offset": "0x20"
       },
-      "ProgressValue": {
+      {
+        "Name": "ProgressValue",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x34"
       },
-      "Threshold": {
+      {
+        "Name": "Threshold",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
       },
-      "Audio": {
+      {
+        "Name": "Audio",
         "Type": "Struct GenericPopupAudioDescriptor",
         "Size": "0x40",
         "Offset": "0x40"
       }
-    }
+    ]
   },
   "NavigationDesc": {
     "ClassSize": "0x14",
-    "Attributes": {
-      "Action": {
+    "Attributes": [
+      {
+        "Name": "Action",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "Id": {
+      {
+        "Name": "Id",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "SeasonsChatNotification": {
     "ClassSize": "0x60",
-    "Attributes": {
-      "IconUrl": {
+    "Attributes": [
+      {
+        "Name": "IconUrl",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Message": {
+      {
+        "Name": "Message",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "Audio": {
+      {
+        "Name": "Audio",
         "Type": "Struct GenericPopupAudioDescriptor",
         "Size": "0x40",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "SeasonsDataRefreshEvent": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "OpenSeasonsMenuEvent": {
     "ClassSize": "0x14",
-    "Attributes": {
-      "NavigationAction": {
+    "Attributes": [
+      {
+        "Name": "NavigationAction",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "Id": {
+      {
+        "Name": "Id",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "DisableMoreButtonEvent": {
     "ClassSize": "0x1",
-    "Attributes": {
-      "MoreButtonSource": {
+    "Attributes": [
+      {
+        "Name": "MoreButtonSource",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EnableMoreButtonEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "MoreButtonSource": {
+    "Attributes": [
+      {
+        "Name": "MoreButtonSource",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "Navigation": {
+      {
+        "Name": "Navigation",
         "Type": "Struct NavigationDesc",
         "Size": "0x14",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "ShowDeedProgressEvent": {
     "ClassSize": "0x80",
-    "Attributes": {
-      "DeedProgressDesc": {
+    "Attributes": [
+      {
+        "Name": "DeedProgressDesc",
         "Type": "Struct DeedProgressDesc",
         "Size": "0x80",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "SeasonsChatNotificationEvent": {
     "ClassSize": "0x60",
-    "Attributes": {
-      "SeasonsChatNotification": {
+    "Attributes": [
+      {
+        "Name": "SeasonsChatNotification",
         "Type": "Struct SeasonsChatNotification",
         "Size": "0x60",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "SeasonProgressionUITelemetryFragmentInput": {
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "SeasonProgressionUITelemetryFragment": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "ReceivedEventsData": {
+    "Attributes": [
+      {
+        "Name": "ReceivedEventsData",
         "Type": "TArray<Struct SeasonProgressionUIEventTypeTelemetryFragment>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "TotalNumReceivedEvents": {
+      {
+        "Name": "TotalNumReceivedEvents",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "SeasonProgressionUIEventTypeTelemetryFragment": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "EventName": {
+    "Attributes": [
+      {
+        "Name": "EventName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "NumReceivedEvents": {
+      {
+        "Name": "NumReceivedEvents",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "SeasonsPopupEvent": {
     "ClassSize": "0xa0",
-    "Attributes": {
-      "Text": {
+    "Attributes": [
+      {
+        "Name": "Text",
         "Type": "TArray<Text None>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Images": {
+      {
+        "Name": "Images",
         "Type": "TArray<Str >",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "Background": {
+      {
+        "Name": "Background",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "Audio": {
+      {
+        "Name": "Audio",
         "Type": "Struct GenericPopupAudioDescriptor",
         "Size": "0x40",
         "Offset": "0x30"
       },
-      "StyleModifiers": {
+      {
+        "Name": "StyleModifiers",
         "Type": "TArray<Byte Audio>",
         "Size": "0x10",
         "Offset": "0x70"
       },
-      "Rank": {
+      {
+        "Name": "Rank",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x80"
       },
-      "NavigationDesc": {
+      {
+        "Name": "NavigationDesc",
         "Type": "Struct NavigationDesc",
         "Size": "0x14",
         "Offset": "0x84"
       },
-      "HoldDuration": {
+      {
+        "Name": "HoldDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x98"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

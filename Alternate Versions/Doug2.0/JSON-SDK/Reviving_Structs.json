@@ -1,248 +1,276 @@
 {
   "ModeSpecificReviveSettings": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "AssociatedPlaymode": {
+    "Attributes": [
+      {
+        "Name": "AssociatedPlaymode",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "DeathCameraBlackFadeDelay": {
+      {
+        "Name": "DeathCameraBlackFadeDelay",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      "DeathCameraBlackFadeDuration": {
+      {
+        "Name": "DeathCameraBlackFadeDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      "DeathCameraBlackFadeEventClientTimeout": {
+      {
+        "Name": "DeathCameraBlackFadeEventClientTimeout",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      "DeathCameraBlackFadeEventServerTimeout": {
+      {
+        "Name": "DeathCameraBlackFadeEventServerTimeout",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "DelayBeforeEvaporate": {
+      {
+        "Name": "DelayBeforeEvaporate",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      "EvaporateDuration": {
+      {
+        "Name": "EvaporateDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      "DeathCameraStartDelay": {
+      {
+        "Name": "DeathCameraStartDelay",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x1c"
       },
-      "ReviveWindowDuration": {
+      {
+        "Name": "ReviveWindowDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      "GhostFadeDuration": {
+      {
+        "Name": "GhostFadeDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      "CachedReviveSettings": {
+      {
+        "Name": "CachedReviveSettings",
         "Type": "Class ReviveSettings*",
         "Size": "0x8",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "ReviveEffectsValues": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "AstralCordPostProcessMID": {
+    "Attributes": [
+      {
+        "Name": "AstralCordPostProcessMID",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "PlayerInReviveableStateTelemetryEvent": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "PlayerRevivalTelemetryEvent": {
     "ClassSize": "0x1",
-    "Attributes": {
-      "Success": {
+    "Attributes": [
+      {
+        "Name": "Success",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "PostReviveLocomotionActionStateConstructionInfo": {
     "ClassSize": "0x30",
-    "Attributes": {}
+    "Attributes": []
   },
   "EventRevivableRepresentationSpawnCompleted": {
     "ClassSize": "0x1",
-    "Attributes": {
-      "FromSwimming": {
+    "Attributes": [
+      {
+        "Name": "FromSwimming",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EventRevivableRepresentationSpawnStarted": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "ReviveableActionStateConstructionInfo": {
     "ClassSize": "0x68",
-    "Attributes": {
-      "ActionStateId": {
+    "Attributes": [
+      {
+        "Name": "ActionStateId",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x30"
       },
-      "DamageInstance": {
+      {
+        "Name": "DamageInstance",
         "Type": "Struct DamageInstance",
         "Size": "0x28",
         "Offset": "0x38"
       },
-      "CharacterDeathType": {
+      {
+        "Name": "CharacterDeathType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x60"
       },
-      "CharacterType": {
+      {
+        "Name": "CharacterType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x61"
       }
-    }
+    ]
   },
   "RevivedActionStateConstructionInfo": {
     "ClassSize": "0x30",
-    "Attributes": {}
+    "Attributes": []
   },
   "RevivedActionStateParams": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "HealthRegained": {
+    "Attributes": [
+      {
+        "Name": "HealthRegained",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "ReviveDuration": {
+      {
+        "Name": "ReviveDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      "ReviveGaspAudio": {
+      {
+        "Name": "ReviveGaspAudio",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "ReviveableActionStateStarted": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "EventCharacterDiedDuringReviving": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "OwningCharacter": {
+    "Attributes": [
+      {
+        "Name": "OwningCharacter",
         "Type": "Class Character*",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EventRevivePlayerActionStateLeft": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "EventRevivePlayerActionStateEntered": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "EventCharacterFullyRevived": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "ReviveEndedEarlyEvent": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "EventRevivableRepresentationReturnedToBody": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "SuccessfulReviveEvent": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "BeingRevivedStoppedEvent": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "BeingRevivedStartedEvent": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "RevivableCharacterGhostlyBodyEvaporateStarted": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "RevivingWindowEnd": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "RevivingWindowStart": {
     "ClassSize": "0x38",
-    "Attributes": {
-      "DamageInstance": {
+    "Attributes": [
+      {
+        "Name": "DamageInstance",
         "Type": "Struct DamageInstance",
         "Size": "0x28",
         "Offset": "0x0"
       },
-      "CharacterDeathType": {
+      {
+        "Name": "CharacterDeathType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x28"
       },
-      "RevivableCharacter": {
+      {
+        "Name": "RevivableCharacter",
         "Type": "Class Character*",
         "Size": "0x8",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "RevivePlayerActionStateConstructionInfo": {
     "ClassSize": "0x60",
-    "Attributes": {
-      "CharacterReviving": {
+    "Attributes": [
+      {
+        "Name": "CharacterReviving",
         "Type": "Struct NetActorPtr",
         "Size": "0x14",
         "Offset": "0x30"
       },
-      "CharacterBeingRevived": {
+      {
+        "Name": "CharacterBeingRevived",
         "Type": "Struct NetSubObjectPtr",
         "Size": "0x14",
         "Offset": "0x44"
       },
-      "InputID": {
+      {
+        "Name": "InputID",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x58"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

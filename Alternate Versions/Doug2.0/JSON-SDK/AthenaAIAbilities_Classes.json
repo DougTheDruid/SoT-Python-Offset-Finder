@@ -4,394 +4,419 @@
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "MeleeAIAbilityType": {
     "Super": "AthenaAIAbilityType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AreaOfEffectHealAIAbility": {
     "Super": "AthenaAIAbility",
     "FullSize": "0xa0",
     "InheritedSize": "0x78",
     "ClassSize": "0x28",
-    "Attributes": {
-      "HealAreaOfEffectActor": {
+    "Attributes": [
+      {
+        "Name": "HealAreaOfEffectActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x88"
       }
-    }
+    ]
   },
   "AreaOfEffectHealAIAbilityParams": {
     "Super": "AthenaAIAbilityParams",
     "FullSize": "0xe0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x18",
-    "Attributes": {
-      "ChanceToGoOnCooldownInsteadOfExecuting": {
+    "Attributes": [
+      {
+        "Name": "ChanceToGoOnCooldownInsteadOfExecuting",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc8"
       },
-      "HealthPercentageThresholdToHeal": {
+      {
+        "Name": "HealthPercentageThresholdToHeal",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xcc"
       },
-      "StatusEffectZone": {
+      {
+        "Name": "StatusEffectZone",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0xd0"
       },
-      "MinimumTimeSpentHealing": {
+      {
+        "Name": "MinimumTimeSpentHealing",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd8"
       },
-      "MaximumTimeSpentHealing": {
+      {
+        "Name": "MaximumTimeSpentHealing",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xdc"
       }
-    }
+    ]
   },
   "AshenFireStatus": {
     "Super": "StatusBase",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "BullRushAIAbilityType": {
     "Super": "AthenaAIAbilityType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "BurrowEruptDamagerType": {
     "Super": "DamagerType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "BurrowHealVFXComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
     "InheritedSize": "0xc8",
     "ClassSize": "0x50",
-    "Attributes": {
-      "VFXAsset": {
+    "Attributes": [
+      {
+        "Name": "VFXAsset",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
-      "VfxSocketName": {
+      {
+        "Name": "VfxSocketName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xd0"
       },
-      "VFXDuration": {
+      {
+        "Name": "VFXDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd8"
       },
-      "SpawnedVFXSystem": {
+      {
+        "Name": "SpawnedVFXSystem",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0xe0"
       },
-      "IsVFXActive": {
+      {
+        "Name": "IsVFXActive",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xe8"
       }
-    }
+    ]
   },
   "CoralShieldStatus": {
     "Super": "StatusBase",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "EelSlapAIAbilityType": {
     "Super": "AthenaAIAbilityType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "EelSlapStatus": {
     "Super": "StatusBase",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "EelThrowAIAbility": {
     "Super": "AthenaAIAbility",
     "FullSize": "0x80",
     "InheritedSize": "0x78",
     "ClassSize": "0x8",
-    "Attributes": {
-      "CachedBlackboardComponent": {
+    "Attributes": [
+      {
+        "Name": "CachedBlackboardComponent",
         "Type": "Class BlackboardComponent*",
         "Size": "0x8",
         "Offset": "0x78"
       }
-    }
+    ]
   },
   "EelThrowAIAbilityParams": {
     "Super": "AthenaAIAbilityParams",
     "FullSize": "0xe8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x20",
-    "Attributes": {
-      "MinMaxNumberOfAttacksBeforeEnd": {
+    "Attributes": [
+      {
+        "Name": "MinMaxNumberOfAttacksBeforeEnd",
         "Type": "Struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0xc8"
       }
-    }
+    ]
   },
   "EelThrowAIAbilityType": {
     "Super": "AthenaAIAbilityType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ElectricShieldBuffInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ElectricShieldBuffComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x1b8",
     "InheritedSize": "0xc8",
     "ClassSize": "0xf0",
-    "Attributes": {
-      "ShieldVFXAsset": {
+    "Attributes": [
+      {
+        "Name": "ShieldVFXAsset",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
-      "VfxSocketName": {
+      {
+        "Name": "VfxSocketName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xd8"
       },
-      "StartAudioLoopEvent": {
+      {
+        "Name": "StartAudioLoopEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xe0"
       },
-      "StopAudioLoopEvent": {
+      {
+        "Name": "StopAudioLoopEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
-      "IsShieldActive": {
+      {
+        "Name": "IsShieldActive",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf0"
       },
-      "ShieldEffectComponent": {
+      {
+        "Name": "ShieldEffectComponent",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0xf8"
       }
-    }
+    ]
   },
   "ElectricShieldStatus": {
     "Super": "StatusBase",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ImpactMeleeAttackEelSlapId": {
     "Super": "ImpactProjectileId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "MeleeAIAbility": {
     "Super": "AthenaAIAbility",
     "FullSize": "0x80",
     "InheritedSize": "0x78",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "MeleeAttackId": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "MeleeAIAbilityParams": {
     "Super": "AthenaAIAbilityParams",
     "FullSize": "0xd8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x10",
-    "Attributes": {
-      "MeleeAttacks": {
+    "Attributes": [
+      {
+        "Name": "MeleeAttacks",
         "Type": "TArray<Struct AngleChecker>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
-    }
+    ]
   },
   "EelSlapAIAbilityParams": {
     "Super": "MeleeAIAbilityParams",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "EelSlapAIAbility": {
     "Super": "MeleeAIAbility",
     "FullSize": "0x80",
     "InheritedSize": "0x80",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ComboMeleeAttackId": {
     "Super": "MeleeAttackId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "HeavyMeleeAttackId": {
     "Super": "MeleeAttackId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "LightMeleeAttackId": {
     "Super": "MeleeAttackId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "BullRushAIAbilityParams": {
     "Super": "MeleeChargeAIAbilityParams",
     "FullSize": "0x100",
     "InheritedSize": "0xe0",
     "ClassSize": "0x20",
-    "Attributes": {
-      "StaticCollisionWarmup": {
+    "Attributes": [
+      {
+        "Name": "StaticCollisionWarmup",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe0"
       },
-      "ValidatorEQSystems": {
+      {
+        "Name": "ValidatorEQSystems",
         "Type": "TArray<class ValidatorEQSystems*>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
-      "TimeBetweenCanExecuteChecks": {
+      {
+        "Name": "TimeBetweenCanExecuteChecks",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xf8"
       }
-    }
+    ]
   },
   "BullRushAIAbility": {
     "Super": "MeleeChargeAIAbility",
     "FullSize": "0xb8",
     "InheritedSize": "0x98",
     "ClassSize": "0x20",
-    "Attributes": {
-      "CachedWorld": {
+    "Attributes": [
+      {
+        "Name": "CachedWorld",
         "Type": "Class World*",
         "Size": "0x8",
         "Offset": "0x98"
       }
-    }
+    ]
   },
   "MeleeCollisionAwarenessInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "SporeCloudStatus": {
     "Super": "StatusBase",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "SporeExposureInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "SporeExposureComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x100",
     "InheritedSize": "0xc8",
     "ClassSize": "0x38",
-    "Attributes": {}
+    "Attributes": []
   },
   "SporeExposureStatus": {
     "Super": "StatusBase",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "StatusResponseActivateElectricShield": {
     "Super": "StatusResponse",
     "FullSize": "0x38",
     "InheritedSize": "0x30",
     "ClassSize": "0x8",
-    "Attributes": {
-      "Duration": {
+    "Attributes": [
+      {
+        "Name": "Duration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "StatusResponseShowBurrowHealVFX": {
     "Super": "StatusResponse",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "StatusResponseShowCoralShieldVFX": {
     "Super": "StatusResponse",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "StatusResponseSporeCloud": {
     "Super": "StatusResponse",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

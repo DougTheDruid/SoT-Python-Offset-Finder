@@ -2,26 +2,26 @@
 # https://github.com/DougTheDruid
 BP_ReviveGhost_C:
   Attributes:
-    AnimNotifyWwiseEmitter:
-      Offset: '0x628'
-      Size: '0x8'
-      Type: Class AnimNotifyWwiseEmitterComponent*
-    Cord_Inner:
-      Offset: '0x648'
-      Size: '0x8'
-      Type: Class StaticMeshComponent*
-    Cord_Outer_01:
-      Offset: '0x640'
-      Size: '0x8'
-      Type: Class StaticMeshComponent*
-    Cord_Outer_02:
-      Offset: '0x638'
-      Size: '0x8'
-      Type: Class StaticMeshComponent*
-    Cord_Ribbons:
-      Offset: '0x630'
-      Size: '0x8'
-      Type: Class StaticMeshComponent*
+  - Name: AnimNotifyWwiseEmitter
+    Offset: '0x628'
+    Size: '0x8'
+    Type: Class AnimNotifyWwiseEmitterComponent*
+  - Name: Cord_Ribbons
+    Offset: '0x630'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Cord_Outer_02
+    Offset: '0x638'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Cord_Outer_01
+    Offset: '0x640'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Cord_Inner
+    Offset: '0x648'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
   ClassSize: '0x28'
   FullSize: '0x650'
   InheritedSize: '0x628'

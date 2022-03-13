@@ -4,429 +4,492 @@
     "FullSize": "0x310",
     "InheritedSize": "0xc8",
     "ClassSize": "0x248",
-    "Attributes": {
-      "Texture": {
+    "Attributes": [
+      {
+        "Name": "Texture",
         "Type": "Class TextureRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x170"
       },
-      "Filter": {
+      {
+        "Name": "Filter",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x178"
       },
-      "bReceiveInput": {
+      {
+        "Name": "bReceiveInput",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x179"
       },
-      "bReceiveInputWhenTransparent": {
+      {
+        "Name": "bReceiveInputWhenTransparent",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x17a"
       },
-      "AllowPerformanceWarnings": {
+      {
+        "Name": "AllowPerformanceWarnings",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x17b"
       },
-      "ExecuteJSTimersThresholdMs": {
+      {
+        "Name": "ExecuteJSTimersThresholdMs",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x17c"
       },
-      "UpdateStylesAndLayoutThresholdMs": {
+      {
+        "Name": "UpdateStylesAndLayoutThresholdMs",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x180"
       },
-      "RecordRenderingCommandsThresholdMs": {
+      {
+        "Name": "RecordRenderingCommandsThresholdMs",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x184"
       },
-      "PaintWarningThresholdMs": {
+      {
+        "Name": "PaintWarningThresholdMs",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x188"
       },
-      "LayersCountThreshold": {
+      {
+        "Name": "LayersCountThreshold",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18c"
       },
-      "LayerWidthThreshold": {
+      {
+        "Name": "LayerWidthThreshold",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x190"
       },
-      "LayerHeightThreshold": {
+      {
+        "Name": "LayerHeightThreshold",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x194"
       },
-      "bEnableAdditionalDefaultStyles": {
+      {
+        "Name": "bEnableAdditionalDefaultStyles",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x198"
       },
-      "bDelayedUpdate": {
+      {
+        "Name": "bDelayedUpdate",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x199"
       }
-    }
+    ]
   },
   "CoherentUIGTComponent": {
     "Super": "CoherentUIGTBaseComponent",
     "FullSize": "0x348",
     "InheritedSize": "0x310",
     "ClassSize": "0x38",
-    "Attributes": {
-      "URL": {
+    "Attributes": [
+      {
+        "Name": "URL",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x310"
       },
-      "Width": {
+      {
+        "Name": "Width",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x320"
       },
-      "Height": {
+      {
+        "Name": "Height",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x324"
       },
-      "ManualTexture": {
+      {
+        "Name": "ManualTexture",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x328"
       },
-      "ClickThroughAlphaThreshold": {
+      {
+        "Name": "ClickThroughAlphaThreshold",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x32c"
       },
-      "Transparent": {
+      {
+        "Name": "Transparent",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x330"
       }
-    }
+    ]
   },
   "CoherentUIGTLiveView": {
     "Super": "ActorComponent",
     "FullSize": "0xf8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x30",
-    "Attributes": {
-      "LinkName": {
+    "Attributes": [
+      {
+        "Name": "LinkName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0xc8"
       },
-      "Texture": {
+      {
+        "Name": "Texture",
         "Type": "Class TextureRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0xd8"
       }
-    }
+    ]
   },
   "CoherentUIGTRenderToTextureLiveView": {
     "Super": "CoherentUIGTLiveView",
     "FullSize": "0x100",
     "InheritedSize": "0xf8",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "CoherentUIGTAssetReferencer": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CoherentUIGTSystem": {
     "Super": "Actor",
     "FullSize": "0x420",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x50",
-    "Attributes": {}
+    "Attributes": []
   },
   "CoherentUIGTJSEvent": {
     "Super": "Object",
     "FullSize": "0xb8",
     "InheritedSize": "0x28",
     "ClassSize": "0x90",
-    "Attributes": {
-      "StructTypes": {
+    "Attributes": [
+      {
+        "Name": "StructTypes",
         "Type": "TArray<class StructTypes*>",
         "Size": "0x10",
         "Offset": "0xa8"
       }
-    }
+    ]
   },
   "CoherentUIGTJSPayload": {
     "Super": "Object",
     "FullSize": "0x40",
     "InheritedSize": "0x28",
     "ClassSize": "0x18",
-    "Attributes": {
-      "EventName": {
+    "Attributes": [
+      {
+        "Name": "EventName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "CoherentUIGTEventHelpers": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CoherentUIGTHUD": {
     "Super": "CoherentUIGTBaseComponent",
     "FullSize": "0x338",
     "InheritedSize": "0x310",
     "ClassSize": "0x28",
-    "Attributes": {
-      "HUDMaterialName": {
+    "Attributes": [
+      {
+        "Name": "HUDMaterialName",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x310"
       },
-      "HUDMaterial": {
+      {
+        "Name": "HUDMaterial",
         "Type": "Class Material*",
         "Size": "0x8",
         "Offset": "0x320"
       },
-      "HUDMaterialInstance": {
+      {
+        "Name": "HUDMaterialInstance",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x328"
       }
-    }
+    ]
   },
   "CoherentUIGTBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "CoherentUIGTGameHUD": {
     "Super": "HUD",
     "FullSize": "0x560",
     "InheritedSize": "0x4c8",
     "ClassSize": "0x98",
-    "Attributes": {
-      "CoherentUIGTHUD": {
+    "Attributes": [
+      {
+        "Name": "CoherentUIGTHUD",
         "Type": "Class CoherentUIGTHUD*",
         "Size": "0x8",
         "Offset": "0x4c8"
       }
-    }
+    ]
   },
   "CoherentUIGTInputActor": {
     "Super": "Actor",
     "FullSize": "0x430",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x60",
-    "Attributes": {}
+    "Attributes": []
   },
   "CoherentUIGTSettings": {
     "Super": "Object",
     "FullSize": "0x68",
     "InheritedSize": "0x28",
     "ClassSize": "0x40",
-    "Attributes": {
-      "EnableLiveReload": {
+    "Attributes": [
+      {
+        "Name": "EnableLiveReload",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
       },
-      "InspectorPort": {
+      {
+        "Name": "InspectorPort",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      "WebdriverPort": {
+      {
+        "Name": "WebdriverPort",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      "EnableWebSecurity": {
+      {
+        "Name": "EnableWebSecurity",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x34"
       },
-      "EnableLocalization": {
+      {
+        "Name": "EnableLocalization",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35"
       },
-      "RunAsynchronous": {
+      {
+        "Name": "RunAsynchronous",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x36"
       },
-      "bRecursivelyBindUStructs": {
+      {
+        "Name": "bRecursivelyBindUStructs",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x37"
       },
-      "LoadSystemFonts": {
+      {
+        "Name": "LoadSystemFonts",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
       },
-      "AllowPerformanceWarningsInEditor": {
+      {
+        "Name": "AllowPerformanceWarningsInEditor",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x39"
       },
-      "ShowWarningsOnScreen": {
+      {
+        "Name": "ShowWarningsOnScreen",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3a"
       },
-      "LogSeverity": {
+      {
+        "Name": "LogSeverity",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x3b"
       },
-      "bPaintToBackBuffer": {
+      {
+        "Name": "bPaintToBackBuffer",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3c"
       },
-      "bRespectTitleSafeZone": {
+      {
+        "Name": "bRespectTitleSafeZone",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3d"
       },
-      "bRespectLetterboxing": {
+      {
+        "Name": "bRespectLetterboxing",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3e"
       },
-      "HUDMaterialName": {
+      {
+        "Name": "HUDMaterialName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      "CoUIResourcesRoot": {
+      {
+        "Name": "CoUIResourcesRoot",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      "TickWhileGameIsPaused": {
+      {
+        "Name": "TickWhileGameIsPaused",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x60"
       },
-      "MSAA": {
+      {
+        "Name": "MSAA",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x61"
       }
-    }
+    ]
   },
   "CoherentUIGTWidget": {
     "Super": "Widget",
     "FullSize": "0x3d8",
     "InheritedSize": "0x138",
     "ClassSize": "0x2a0",
-    "Attributes": {
-      "Owner": {
+    "Attributes": [
+      {
+        "Name": "Owner",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x158"
       },
-      "Filter": {
+      {
+        "Name": "Filter",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x1f8"
       },
-      "bReceiveInput": {
+      {
+        "Name": "bReceiveInput",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1f9"
       },
-      "bReceiveInputWhenTransparent": {
+      {
+        "Name": "bReceiveInputWhenTransparent",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1fa"
       },
-      "bGammaCorrectedMaterial": {
+      {
+        "Name": "bGammaCorrectedMaterial",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1fb"
       },
-      "AllowPerformanceWarnings": {
+      {
+        "Name": "AllowPerformanceWarnings",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1fc"
       },
-      "ExecuteJSTimersThresholdMs": {
+      {
+        "Name": "ExecuteJSTimersThresholdMs",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x200"
       },
-      "UpdateStylesAndLayoutThresholdMs": {
+      {
+        "Name": "UpdateStylesAndLayoutThresholdMs",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x204"
       },
-      "RecordRenderingCommandsThresholdMs": {
+      {
+        "Name": "RecordRenderingCommandsThresholdMs",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x208"
       },
-      "PaintWarningThresholdMs": {
+      {
+        "Name": "PaintWarningThresholdMs",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20c"
       },
-      "LayersCountThreshold": {
+      {
+        "Name": "LayersCountThreshold",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x210"
       },
-      "LayerWidthThreshold": {
+      {
+        "Name": "LayerWidthThreshold",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x214"
       },
-      "LayerHeightThreshold": {
+      {
+        "Name": "LayerHeightThreshold",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x218"
       },
-      "bEnableAdditionalDefaultStyles": {
+      {
+        "Name": "bEnableAdditionalDefaultStyles",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x21c"
       },
-      "URL": {
+      {
+        "Name": "URL",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x3c0"
       },
-      "ClickThroughAlphaThreshold": {
+      {
+        "Name": "ClickThroughAlphaThreshold",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3d0"
       },
-      "Transparent": {
+      {
+        "Name": "Transparent",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3d4"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

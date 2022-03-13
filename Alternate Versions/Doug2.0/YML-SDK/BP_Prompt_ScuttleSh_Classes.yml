@@ -2,46 +2,46 @@
 # https://github.com/DougTheDruid
 BP_Prompt_ScuttleShip_C:
   Attributes:
-    DiedEnough:
-      Offset: '0x294'
-      Size: '0x1'
-      Type: bool
-    Handle_CharacterDeadEvent:
-      Offset: '0x120'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_WaitingToSpawnEndedEvent:
-      Offset: '0x168'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    NumRecentDeaths:
-      Offset: '0x290'
-      Size: '0x4'
-      Type: int
-    Prompt_ArrivedOnFerry:
-      Offset: '0x1b0'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    Prompt_SuggestScuttling:
-      Offset: '0x218'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    RepeatDeathThreshold:
-      Offset: '0x284'
-      Size: '0x4'
-      Type: int
-    SpawnKillTimeThreshold:
-      Offset: '0x280'
-      Size: '0x4'
-      Type: float
-    TimeOfLastPvPDeath:
-      Offset: '0x288'
-      Size: '0x8'
-      Type: Struct GameTime
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: Handle_CharacterDeadEvent
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_WaitingToSpawnEndedEvent
+    Offset: '0x168'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Prompt_ArrivedOnFerry
+    Offset: '0x1b0'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Prompt_SuggestScuttling
+    Offset: '0x218'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: SpawnKillTimeThreshold
+    Offset: '0x280'
+    Size: '0x4'
+    Type: float
+  - Name: RepeatDeathThreshold
+    Offset: '0x284'
+    Size: '0x4'
+    Type: int
+  - Name: TimeOfLastPvPDeath
+    Offset: '0x288'
+    Size: '0x8'
+    Type: Struct GameTime
+  - Name: NumRecentDeaths
+    Offset: '0x290'
+    Size: '0x4'
+    Type: int
+  - Name: DiedEnough
+    Offset: '0x294'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x17d'
   FullSize: '0x295'
   InheritedSize: '0x118'

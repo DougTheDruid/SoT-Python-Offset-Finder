@@ -2,34 +2,34 @@
 # https://github.com/DougTheDruid
 CleanlinessComponent:
   Attributes:
-    CleanlinessInfo:
-      Offset: '0xe0'
-      Size: '0xc'
-      Type: Struct CleanlinessInfo
-    DirtinessDecayRatePerSecond:
-      Offset: '0xec'
-      Size: '0x4'
-      Type: float
-    DirtinessStrengthToMaterialStrength:
-      Offset: '0xd8'
-      Size: '0x8'
-      Type: Class CurveFloat*
-    QuickCleanDirtynessDecayRatePerSecond:
-      Offset: '0xf0'
-      Size: '0x4'
-      Type: float
+  - Name: DirtinessStrengthToMaterialStrength
+    Offset: '0xd8'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: CleanlinessInfo
+    Offset: '0xe0'
+    Size: '0xc'
+    Type: Struct CleanlinessInfo
+  - Name: DirtinessDecayRatePerSecond
+    Offset: '0xec'
+    Size: '0x4'
+    Type: float
+  - Name: QuickCleanDirtynessDecayRatePerSecond
+    Offset: '0xf0'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x80'
   FullSize: '0x148'
   InheritedSize: '0xc8'
   Super: ActorComponent
 CleanlinessInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 CleanlinessTransferInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

@@ -1,327 +1,376 @@
 {
   "LandscapeInfoLayerSettings": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "LayerInfoObj": {
+    "Attributes": [
+      {
+        "Name": "LayerInfoObj",
         "Type": "Class LandscapeLayerInfoObject*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "LayerName": {
+      {
+        "Name": "LayerName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "WeightmapLayerAllocationInfo": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "LayerInfo": {
+    "Attributes": [
+      {
+        "Name": "LayerInfo",
         "Type": "Class LandscapeLayerInfoObject*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "WeightmapTextureIndex": {
+      {
+        "Name": "WeightmapTextureIndex",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      "WeightmapTextureChannel": {
+      {
+        "Name": "WeightmapTextureChannel",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x9"
       },
-      "GrassMapChannelIndex": {
+      {
+        "Name": "GrassMapChannelIndex",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xa"
       }
-    }
+    ]
   },
   "GizmoSelectData": {
     "ClassSize": "0x50",
-    "Attributes": {}
+    "Attributes": []
   },
   "GrassVariety": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "GrassMesh": {
+    "Attributes": [
+      {
+        "Name": "GrassMesh",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "GrassDensity": {
+      {
+        "Name": "GrassDensity",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      "bUseGrid": {
+      {
+        "Name": "bUseGrid",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xc"
       },
-      "PlacementJitter": {
+      {
+        "Name": "PlacementJitter",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "StartCullDistance": {
+      {
+        "Name": "StartCullDistance",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      "EndCullDistance": {
+      {
+        "Name": "EndCullDistance",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      "MinLOD": {
+      {
+        "Name": "MinLOD",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x1c"
       },
-      "RandomRotation": {
+      {
+        "Name": "RandomRotation",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x20"
       },
-      "AlignToSurface": {
+      {
+        "Name": "AlignToSurface",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      "ScaleVariationMin": {
+      {
+        "Name": "ScaleVariationMin",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "ScaleVariationMax": {
+      {
+        "Name": "ScaleVariationMax",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
       }
-    }
+    ]
   },
   "LandscapeImportLayerInfo": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "LandscapeLayerStruct": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "LayerInfoObj": {
+    "Attributes": [
+      {
+        "Name": "LayerInfoObj",
         "Type": "Class LandscapeLayerInfoObject*",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "LandscapeEditorLayerSettings": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "LandscapeWeightmapUsage": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "ChannelUsage": {
+    "Attributes": [
+      {
+        "Name": "ChannelUsage",
         "Type": "Class LandscapeComponent*",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "LandscapeSplineMeshEntry": {
     "ClassSize": "0x38",
-    "Attributes": {
-      "Mesh": {
+    "Attributes": [
+      {
+        "Name": "Mesh",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "MaterialOverrides": {
+      {
+        "Name": "MaterialOverrides",
         "Type": "TArray<class MaterialOverrides*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "bCenterH": {
+      {
+        "Name": "bCenterH",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x18"
       },
-      "CenterAdjust": {
+      {
+        "Name": "CenterAdjust",
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x1c"
       },
-      "bScaleToWidth": {
+      {
+        "Name": "bScaleToWidth",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x24"
       },
-      "Scale": {
+      {
+        "Name": "Scale",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x28"
       },
-      "Orientation": {
+      {
+        "Name": "Orientation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x34"
       },
-      "ForwardAxis": {
+      {
+        "Name": "ForwardAxis",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x35"
       },
-      "UpAxis": {
+      {
+        "Name": "UpAxis",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x36"
       }
-    }
+    ]
   },
   "LandscapeSplineSegmentConnection": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "ControlPoint": {
+    "Attributes": [
+      {
+        "Name": "ControlPoint",
         "Type": "Class LandscapeSplineControlPoint*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "TangentLen": {
+      {
+        "Name": "TangentLen",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      "SocketName": {
+      {
+        "Name": "SocketName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xc"
       }
-    }
+    ]
   },
   "LandscapeSplineInterpPoint": {
     "ClassSize": "0x40",
-    "Attributes": {
-      "Center": {
+    "Attributes": [
+      {
+        "Name": "Center",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
-      "Left": {
+      {
+        "Name": "Left",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      "Right": {
+      {
+        "Name": "Right",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
-      "FalloffLeft": {
+      {
+        "Name": "FalloffLeft",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x24"
       },
-      "FalloffRight": {
+      {
+        "Name": "FalloffRight",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x30"
       },
-      "StartEndFalloff": {
+      {
+        "Name": "StartEndFalloff",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3c"
       }
-    }
+    ]
   },
   "LandscapeSplineConnection": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "Segment": {
+    "Attributes": [
+      {
+        "Name": "Segment",
         "Type": "Class LandscapeSplineSegment*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "End": {
+      {
+        "Name": "End",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "ForeignWorldSplineData": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "ForeignSplineSegmentData": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "ForeignControlPointData": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "GrassInput": {
     "ClassSize": "0x48",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "GrassType": {
+      {
+        "Name": "GrassType",
         "Type": "Class LandscapeGrassType*",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "Input": {
+      {
+        "Name": "Input",
         "Type": "Struct ExpressionInput",
         "Size": "0x38",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "LayerBlendInput": {
     "ClassSize": "0x98",
-    "Attributes": {
-      "LayerName": {
+    "Attributes": [
+      {
+        "Name": "LayerName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "BlendType": {
+      {
+        "Name": "BlendType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      "LayerInput": {
+      {
+        "Name": "LayerInput",
         "Type": "Struct ExpressionInput",
         "Size": "0x38",
         "Offset": "0x10"
       },
-      "HeightInput": {
+      {
+        "Name": "HeightInput",
         "Type": "Struct ExpressionInput",
         "Size": "0x38",
         "Offset": "0x48"
       },
-      "PreviewWeight": {
+      {
+        "Name": "PreviewWeight",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x80"
       },
-      "ConstLayerInput": {
+      {
+        "Name": "ConstLayerInput",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x84"
       },
-      "ConstHeightInput": {
+      {
+        "Name": "ConstHeightInput",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x90"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

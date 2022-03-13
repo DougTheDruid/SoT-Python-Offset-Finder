@@ -17,7 +17,7 @@ public:
 	Struct PrioritisedPromptWithHandle                           Prompt_CosmeticPurchased;                          // 0x1f8(0x68)
 	Struct PrioritisedPromptWithHandle                           Prompt_VisitCustomizationChest;                    // 0x260(0x68)
 	class                                                        AccessKey;                                         // 0x2c8(0x8)
-	TArray<Class CategoryTypes>                                  CategoryTypes;                                     // 0x2d0(0x10)
+	TArray<Class ProcessingPurchase>                             CategoryTypes;                                     // 0x2d0(0x10)
 	TArray<Str >                                                 PurchasedEntitlementIds;                           // 0x2e0(0x10)
 	float                                                        DelayUntilPromptDisplays;                          // 0x2f0(0x4)
 	float                                                        DelayBetweenPrompts;                               // 0x2f4(0x4)

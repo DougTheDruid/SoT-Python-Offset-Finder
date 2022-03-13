@@ -2,274 +2,274 @@
 # https://github.com/DougTheDruid
 AddMarkToTornMapAtActorLocationStepDesc:
   Attributes:
-    MarkLocation:
-      Offset: '0xc0'
-      Size: '0x20'
-      Type: Struct QuestVariableActor
+  - Name: MarkLocation
+    Offset: '0xc0'
+    Size: '0x20'
+    Type: Struct QuestVariableActor
   ClassSize: '0x20'
   FullSize: '0xe0'
   InheritedSize: '0xc0'
   Super: AddMarkToTornMapStepDescBase
 AddMarkToTornMapAtLocationStepDesc:
   Attributes:
-    MarkLocation:
-      Offset: '0xc0'
-      Size: '0x20'
-      Type: Struct QuestVariableVector
+  - Name: MarkLocation
+    Offset: '0xc0'
+    Size: '0x20'
+    Type: Struct QuestVariableVector
   ClassSize: '0x20'
   FullSize: '0xe0'
   InheritedSize: '0xc0'
   Super: AddMarkToTornMapStepDescBase
 AddMarkToTornMapStep:
   Attributes:
-    MapMark:
-      Offset: '0xb0'
-      Size: '0x8'
-      Type: class
+  - Name: MapMark
+    Offset: '0xb0'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x28'
   FullSize: '0xb8'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 AddMarkToTornMapStepDescBase:
   Attributes:
-    MapId:
-      Offset: '0x80'
-      Size: '0x20'
-      Type: Struct QuestVariableGuid
-    MapMark:
-      Offset: '0xa0'
-      Size: '0x20'
-      Type: Struct TaleQuestVariableMapMarkType
+  - Name: MapId
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableGuid
+  - Name: MapMark
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct TaleQuestVariableMapMarkType
   ClassSize: '0x40'
   FullSize: '0xc0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 GetNumberOfCollectedTornMapPiecesStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x30'
   FullSize: '0xc0'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 GetNumberOfCollectedTornMapPiecesStepDesc:
   Attributes:
-    MapId:
-      Offset: '0x80'
-      Size: '0x20'
-      Type: Struct QuestVariableGuid
-    NumPieces:
-      Offset: '0xa0'
-      Size: '0x20'
-      Type: Struct QuestVariableInt
+  - Name: MapId
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableGuid
+  - Name: NumPieces
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableInt
   ClassSize: '0x40'
   FullSize: '0xc0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 RegionIslandFilteredSelectionStrategy:
   Attributes:
-    IslandTypes:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<Byte SelectionStrategy>
-    MaxDistanceFromStartingIsland:
-      Offset: '0x3c'
-      Size: '0x4'
-      Type: float
-    UseMaxDistance:
-      Offset: '0x38'
-      Size: '0x1'
-      Type: bool
+  - Name: IslandTypes
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Byte SelectionStrategy>
+  - Name: UseMaxDistance
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxDistanceFromStartingIsland
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: RegionIslandSelectionStrategyBase
 RegionIslandRandomSelectionStrategy:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: RegionIslandSelectionStrategyBase
 RegionIslandSelectionStrategyBase:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
 SelectIslandsFromRegionStep:
   Attributes:
-    RegionData:
-      Offset: '0x90'
-      Size: '0x8'
-      Type: Class RegionMapDataAsset*
-    SelectionStrategy:
-      Offset: '0x98'
-      Size: '0x8'
-      Type: Class RegionIslandSelectionStrategyBase*
+  - Name: RegionData
+    Offset: '0x90'
+    Size: '0x8'
+    Type: Class RegionMapDataAsset*
+  - Name: SelectionStrategy
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class RegionIslandSelectionStrategyBase*
   ClassSize: '0x50'
   FullSize: '0xe0'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 SelectIslandsFromRegionStepDesc:
   Attributes:
-    DefaultMaxDifferentIslands:
-      Offset: '0x10c'
-      Size: '0x4'
-      Type: int
-    DefaultNumIslands:
-      Offset: '0x108'
-      Size: '0x4'
-      Type: int
-    MaxDifferentIslands:
-      Offset: '0xc0'
-      Size: '0x20'
-      Type: Struct QuestVariableInt
-    NumIslands:
-      Offset: '0xa0'
-      Size: '0x20'
-      Type: Struct QuestVariableInt
-    Region:
-      Offset: '0x80'
-      Size: '0x20'
-      Type: Struct QuestVariableDataAsset
-    SelectedIslands:
-      Offset: '0xe0'
-      Size: '0x20'
-      Type: Struct QuestVariableNameArray
-    SelectionStrategy:
-      Offset: '0x100'
-      Size: '0x8'
-      Type: Class RegionIslandSelectionStrategyBase*
+  - Name: Region
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableDataAsset
+  - Name: NumIslands
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableInt
+  - Name: MaxDifferentIslands
+    Offset: '0xc0'
+    Size: '0x20'
+    Type: Struct QuestVariableInt
+  - Name: SelectedIslands
+    Offset: '0xe0'
+    Size: '0x20'
+    Type: Struct QuestVariableNameArray
+  - Name: SelectionStrategy
+    Offset: '0x100'
+    Size: '0x8'
+    Type: Class RegionIslandSelectionStrategyBase*
+  - Name: DefaultNumIslands
+    Offset: '0x108'
+    Size: '0x4'
+    Type: int
+  - Name: DefaultMaxDifferentIslands
+    Offset: '0x10c'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x90'
   FullSize: '0x110'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestAddLocationMapStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x80'
   FullSize: '0x110'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 TaleQuestAddLocationMapStepDesc:
   Attributes:
-    MapId:
-      Offset: '0x80'
-      Size: '0x8'
-      Type: struct FName
-    MapParams:
-      Offset: '0xe8'
-      Size: '0x20'
-      Type: Struct QuestVariableDataAsset
-    NumberOfChests:
-      Offset: '0x88'
-      Size: '0x20'
-      Type: Struct QuestVariableInt
-    RegionMapData:
-      Offset: '0xa8'
-      Size: '0x20'
-      Type: Struct QuestVariableDataAsset
-    VaultData:
-      Offset: '0xc8'
-      Size: '0x20'
-      Type: Struct QuestVariableDataAsset
+  - Name: MapId
+    Offset: '0x80'
+    Size: '0x8'
+    Type: struct FName
+  - Name: NumberOfChests
+    Offset: '0x88'
+    Size: '0x20'
+    Type: Struct QuestVariableInt
+  - Name: RegionMapData
+    Offset: '0xa8'
+    Size: '0x20'
+    Type: Struct QuestVariableDataAsset
+  - Name: VaultData
+    Offset: '0xc8'
+    Size: '0x20'
+    Type: Struct QuestVariableDataAsset
+  - Name: MapParams
+    Offset: '0xe8'
+    Size: '0x20'
+    Type: Struct QuestVariableDataAsset
   ClassSize: '0x88'
   FullSize: '0x108'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAddTornMapStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x80'
   FullSize: '0x110'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 TaleQuestAddTornMapStepDesc:
   Attributes:
-    IslandName:
-      Offset: '0x80'
-      Size: '0x20'
-      Type: Struct QuestVariableName
-    MapId:
-      Offset: '0xe0'
-      Size: '0x20'
-      Type: Struct QuestVariableGuid
-    MapParams:
-      Offset: '0xc0'
-      Size: '0x20'
-      Type: Struct QuestVariableDataAsset
-    NumberOfPieces:
-      Offset: '0xa0'
-      Size: '0x20'
-      Type: Struct QuestVariableInt
+  - Name: IslandName
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableName
+  - Name: NumberOfPieces
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableInt
+  - Name: MapParams
+    Offset: '0xc0'
+    Size: '0x20'
+    Type: Struct QuestVariableDataAsset
+  - Name: MapId
+    Offset: '0xe0'
+    Size: '0x20'
+    Type: Struct QuestVariableGuid
   ClassSize: '0x80'
   FullSize: '0x100'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAddTradeRouteMapStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x60'
   FullSize: '0xf0'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 TaleQuestAddTradeRouteMapStepDesc:
   Attributes:
-    ClueSiteToMapMarkIdMap:
-      Offset: '0xe0'
-      Size: '0x8'
-      Type: Class ClueSiteTypeToMapMarkIdDataAsset*
-    MapId:
-      Offset: '0xc0'
-      Size: '0x20'
-      Type: Struct QuestVariableGuid
-    TradeRouteData:
-      Offset: '0x80'
-      Size: '0x20'
-      Type: Struct QuestVariableDataAsset
-    VesselName:
-      Offset: '0xa0'
-      Size: '0x20'
-      Type: Struct QuestVariableText
+  - Name: TradeRouteData
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableDataAsset
+  - Name: VesselName
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableText
+  - Name: MapId
+    Offset: '0xc0'
+    Size: '0x20'
+    Type: Struct QuestVariableGuid
+  - Name: ClueSiteToMapMarkIdMap
+    Offset: '0xe0'
+    Size: '0x8'
+    Type: Class ClueSiteTypeToMapMarkIdDataAsset*
   ClassSize: '0x68'
   FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestLocationMapChestFoundStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
   FullSize: '0x98'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 TaleQuestLocationMapChestFoundStepDesc:
   Attributes:
-    MapId:
-      Offset: '0x80'
-      Size: '0x8'
-      Type: struct FName
+  - Name: MapId
+    Offset: '0x80'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestMapStepDescBase:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x80'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestTriggerNamedChecklistEventStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x90'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 TaleQuestTriggerNamedChecklistEventStepDesc:
   Attributes:
-    Event:
-      Offset: '0x80'
-      Size: '0x8'
-      Type: struct FName
+  - Name: Event
+    Offset: '0x80'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestWaitForChecklistMapCompletionStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
   FullSize: '0x98'
   InheritedSize: '0x90'

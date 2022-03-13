@@ -4,343 +4,343 @@
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "GCObjectReferencer": {
     "Super": "Object",
     "FullSize": "0x60",
     "InheritedSize": "0x28",
     "ClassSize": "0x38",
-    "Attributes": {}
+    "Attributes": []
   },
   "TextBuffer": {
     "Super": "Object",
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": {}
+    "Attributes": []
   },
   "Field": {
     "Super": "Object",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "Struct": {
     "Super": "Field",
     "FullSize": "0x88",
     "InheritedSize": "0x30",
     "ClassSize": "0x58",
-    "Attributes": {}
+    "Attributes": []
   },
   "ScriptStruct": {
     "Super": "Struct",
     "FullSize": "0x98",
     "InheritedSize": "0x88",
     "ClassSize": "0x10",
-    "Attributes": {}
+    "Attributes": []
   },
   "Package": {
     "Super": "Object",
     "FullSize": "0x80",
     "InheritedSize": "0x28",
     "ClassSize": "0x58",
-    "Attributes": {}
+    "Attributes": []
   },
   "Class": {
     "Super": "Struct",
     "FullSize": "0x1c0",
     "InheritedSize": "0x88",
     "ClassSize": "0x138",
-    "Attributes": {}
+    "Attributes": []
   },
   "Function": {
     "Super": "Struct",
     "FullSize": "0xb8",
     "InheritedSize": "0x88",
     "ClassSize": "0x30",
-    "Attributes": {}
+    "Attributes": []
   },
   "DelegateFunction": {
     "Super": "Function",
     "FullSize": "0xb8",
     "InheritedSize": "0xb8",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "SparseDelegateFunction": {
     "Super": "DelegateFunction",
     "FullSize": "0xc8",
     "InheritedSize": "0xb8",
     "ClassSize": "0x10",
-    "Attributes": {}
+    "Attributes": []
   },
   "PackageMap": {
     "Super": "Object",
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": {}
+    "Attributes": []
   },
   "Enum": {
     "Super": "Field",
     "FullSize": "0x58",
     "InheritedSize": "0x30",
     "ClassSize": "0x28",
-    "Attributes": {}
+    "Attributes": []
   },
   "LinkerPlaceholderClass": {
     "Super": "Class",
     "FullSize": "0x310",
     "InheritedSize": "0x1c0",
     "ClassSize": "0x150",
-    "Attributes": {}
+    "Attributes": []
   },
   "LinkerPlaceholderExportObject": {
     "Super": "Object",
     "FullSize": "0x88",
     "InheritedSize": "0x28",
     "ClassSize": "0x60",
-    "Attributes": {}
+    "Attributes": []
   },
   "LinkerPlaceholderFunction": {
     "Super": "Function",
     "FullSize": "0x208",
     "InheritedSize": "0xb8",
     "ClassSize": "0x150",
-    "Attributes": {}
+    "Attributes": []
   },
   "MetaData": {
     "Super": "Object",
     "FullSize": "0x78",
     "InheritedSize": "0x28",
     "ClassSize": "0x50",
-    "Attributes": {}
+    "Attributes": []
   },
   "ObjectRedirector": {
     "Super": "Object",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "Property": {
     "Super": "Field",
     "FullSize": "0x70",
     "InheritedSize": "0x30",
     "ClassSize": "0x40",
-    "Attributes": {}
+    "Attributes": []
   },
   "NumericProperty": {
     "Super": "Property",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ArrayProperty": {
     "Super": "Property",
     "FullSize": "0x78",
     "InheritedSize": "0x70",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "ObjectPropertyBase": {
     "Super": "Property",
     "FullSize": "0x78",
     "InheritedSize": "0x70",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "AssetObjectProperty": {
     "Super": "ObjectPropertyBase",
     "FullSize": "0x78",
     "InheritedSize": "0x78",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AssetClassProperty": {
     "Super": "AssetObjectProperty",
     "FullSize": "0x80",
     "InheritedSize": "0x78",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "BoolProperty": {
     "Super": "Property",
     "FullSize": "0x78",
     "InheritedSize": "0x70",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "ByteProperty": {
     "Super": "NumericProperty",
     "FullSize": "0x78",
     "InheritedSize": "0x70",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "ObjectProperty": {
     "Super": "ObjectPropertyBase",
     "FullSize": "0x78",
     "InheritedSize": "0x78",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ClassProperty": {
     "Super": "ObjectProperty",
     "FullSize": "0x80",
     "InheritedSize": "0x78",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "DelegateProperty": {
     "Super": "Property",
     "FullSize": "0x78",
     "InheritedSize": "0x70",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "DoubleProperty": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "FloatProperty": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "IntProperty": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "Int16Property": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "Int64Property": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "Int8Property": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "InterfaceProperty": {
     "Super": "Property",
     "FullSize": "0x78",
     "InheritedSize": "0x70",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "LazyObjectProperty": {
     "Super": "ObjectPropertyBase",
     "FullSize": "0x78",
     "InheritedSize": "0x78",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "MapProperty": {
     "Super": "Property",
     "FullSize": "0xa8",
     "InheritedSize": "0x70",
     "ClassSize": "0x38",
-    "Attributes": {}
+    "Attributes": []
   },
   "MulticastDelegateProperty": {
     "Super": "Property",
     "FullSize": "0x78",
     "InheritedSize": "0x70",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "MulticastInlineDelegateProperty": {
     "Super": "MulticastDelegateProperty",
     "FullSize": "0x78",
     "InheritedSize": "0x78",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "NameProperty": {
     "Super": "Property",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "StrProperty": {
     "Super": "Property",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "StructProperty": {
     "Super": "Property",
     "FullSize": "0x78",
     "InheritedSize": "0x70",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "UInt16Property": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "UInt32Property": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "UInt64Property": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WeakObjectProperty": {
     "Super": "ObjectPropertyBase",
     "FullSize": "0x78",
     "InheritedSize": "0x78",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "TextProperty": {
     "Super": "Property",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "Default__Class": {
     "Super": "None",
     "FullSize": "0x0",
     "InheritedSize": "0x0",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

@@ -2,103 +2,103 @@
 # https://github.com/DougTheDruid
 ActiveCommodityDemands:
   Attributes:
-    CommodityDemands:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: TArray<Byte CommodityIdHashes>
-    CommodityIdHashes:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<UInt32 >
+  - Name: CommodityIdHashes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<UInt32 >
+  - Name: CommodityDemands
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Byte CommodityIdHashes>
   ClassSize: '0x20'
 ActiveNPCDemands:
   Attributes:
-    NPCDemands:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: TArray<Struct ActiveCommodityDemands>
-    NPCIdHashes:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<UInt32 None>
+  - Name: NPCIdHashes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<UInt32 None>
+  - Name: NPCDemands
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct ActiveCommodityDemands>
   ClassSize: '0x20'
 CommodityDescWithRedeemId:
   Attributes:
-    RedeemId:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct CommoditySelectionType
-    RedeemItemDesc:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: class
+  - Name: RedeemId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct CommoditySelectionType
+  - Name: RedeemItemDesc
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x10'
 CommodityRedemptionTrackingModel:
   Attributes:
-    NPCName:
-      Offset: '0x2'
-      Size: '0x1'
-      Type: byte
+  - Name: NPCName
+    Offset: '0x2'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x10'
 CommoditySelectionType:
   Attributes:
-    CommodityType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: CommodityType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x8'
 CommodityTrackingModel:
   Attributes:
-    ItemOfferId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Guid
-    NPCName:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: byte
+  - Name: ItemOfferId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: NPCName
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x20'
 CommodityTypeDataEntry:
   Attributes:
-    CommodityType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
-    DisplayName:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: struct FName
+  - Name: CommodityType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: DisplayName
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x10'
 EntitlementToRedeemItems:
   Attributes:
-    RedeemItems:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Struct RequiredEntitlement>
-    RequiredEntitlement:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: RequiredEntitlement
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: RedeemItems
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct RequiredEntitlement>
   ClassSize: '0x18'
 EventCommodityCrateRedeemed:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x18'
 TrackCommodityPurchaseOnServerRpc:
   Attributes:
-    CommodityDemandStorageObject:
-      Offset: '0x10'
-      Size: '0x8'
-      Type: Class Object*
-    ItemClientId:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: Struct FString
-    ItemOfferId:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct Guid
-    NPCName:
-      Offset: '0x18'
-      Size: '0x8'
-      Type: struct FName
+  - Name: CommodityDemandStorageObject
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: NPCName
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ItemOfferId
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: ItemClientId
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x40'

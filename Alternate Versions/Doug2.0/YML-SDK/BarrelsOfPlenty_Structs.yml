@@ -2,12 +2,12 @@
 # https://github.com/DougTheDruid
 BarrelsOfPlentyDebugLocationEntry:
   Attributes:
-    SinkTime:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: float
-    WorldSpacePosition:
-      Offset: '0x0'
-      Size: '0xc'
-      Type: Struct Vector
+  - Name: WorldSpacePosition
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: SinkTime
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x10'

@@ -15,7 +15,7 @@ public:
 	struct FName                                                 CompanyName;                                       // 0x168(0x8)
 	bool                                                         SurfacedThisSession;                               // 0x170(0x1)
 	struct FName                                                 ExpectedCompanyName;                               // 0x174(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x180(0x10)
+	TArray<Struct None>                                          Prompts;                                           // 0x180(0x10)
 	class                                                        PromptAccessKey;                                   // 0x190(0x8)
 	int                                                          PromptIndex;                                       // 0x198(0x4)
 	int                                                          NumberOfPrompts;                                   // 0x19c(0x4)

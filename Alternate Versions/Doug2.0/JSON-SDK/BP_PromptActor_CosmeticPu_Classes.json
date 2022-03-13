@@ -4,190 +4,220 @@
     "FullSize": "0x500",
     "InheritedSize": "0x408",
     "ClassSize": "0xf8",
-    "Attributes": {
-      "UberGraphFrame": {
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      "PromptCoordinator": {
+      {
+        "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      "AccessKey": {
+      {
+        "Name": "AccessKey",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      "CategoryTypes": {
-        "Type": "TArray<Class ObjectProperty>",
+      {
+        "Name": "CategoryTypes",
+        "Type": "TArray<Class CategoryTypes>",
         "Size": "0x10",
         "Offset": "0x420"
       },
-      "Prompt_CosmeticPurchased": {
+      {
+        "Name": "Prompt_CosmeticPurchased",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x430"
       },
-      "Prompt_VisitCustomizationChest": {
+      {
+        "Name": "Prompt_VisitCustomizationChest",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x498"
       }
-    }
+    ]
   },
   "BP_PromptActor_CosmeticPurchased_Equipment_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x500",
     "InheritedSize": "0x408",
     "ClassSize": "0xf8",
-    "Attributes": {
-      "UberGraphFrame": {
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      "PromptCoordinator": {
+      {
+        "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      "AccessKey": {
+      {
+        "Name": "AccessKey",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      "CategoryTypes": {
-        "Type": "TArray<Class CategoryTypes>",
+      {
+        "Name": "CategoryTypes",
+        "Type": "TArray<Class None>",
         "Size": "0x10",
         "Offset": "0x420"
       },
-      "Prompt_CosmeticPurchased": {
+      {
+        "Name": "Prompt_CosmeticPurchased",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x430"
       },
-      "Prompt_VisitCustomizationChest": {
+      {
+        "Name": "Prompt_VisitCustomizationChest",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x498"
       }
-    }
+    ]
   },
   "BP_PromptActor_CosmeticPurchased_Ship_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x500",
     "InheritedSize": "0x408",
     "ClassSize": "0xf8",
-    "Attributes": {
-      "UberGraphFrame": {
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      "PromptCoordinator": {
+      {
+        "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      "AccessKey": {
+      {
+        "Name": "AccessKey",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      "CategoryTypes": {
-        "Type": "TArray<Class CategoryTypes>",
+      {
+        "Name": "CategoryTypes",
+        "Type": "TArray<Class PromptCoordinators>",
         "Size": "0x10",
         "Offset": "0x420"
       },
-      "Prompt_CosmeticPurchased": {
+      {
+        "Name": "Prompt_CosmeticPurchased",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x430"
       },
-      "Prompt_VisitCustomizationChest": {
+      {
+        "Name": "Prompt_VisitCustomizationChest",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x498"
       }
-    }
+    ]
   },
   "BP_PromptActor_CosmeticPurchased_Vanity_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x500",
     "InheritedSize": "0x408",
     "ClassSize": "0xf8",
-    "Attributes": {
-      "UberGraphFrame": {
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      "PromptCoordinator": {
+      {
+        "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      "AccessKey": {
+      {
+        "Name": "AccessKey",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      "CategoryTypes": {
-        "Type": "TArray<Class CategoryTypes>",
+      {
+        "Name": "CategoryTypes",
+        "Type": "TArray<Class Prompt>",
         "Size": "0x10",
         "Offset": "0x420"
       },
-      "Prompt_CosmeticPurchased": {
+      {
+        "Name": "Prompt_CosmeticPurchased",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x430"
       },
-      "Prompt_VisitCustomizationChest": {
+      {
+        "Name": "Prompt_VisitCustomizationChest",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x498"
       }
-    }
+    ]
   },
   "BP_PromptActor_CosmeticPurchased_Weapon_C": {
     "Super": "BP_PromptActorBase_C",
     "FullSize": "0x500",
     "InheritedSize": "0x408",
     "ClassSize": "0xf8",
-    "Attributes": {
-      "UberGraphFrame": {
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x408"
       },
-      "PromptCoordinator": {
+      {
+        "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*",
         "Size": "0x8",
         "Offset": "0x410"
       },
-      "AccessKey": {
+      {
+        "Name": "AccessKey",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x418"
       },
-      "CategoryTypes": {
-        "Type": "TArray<Class None>",
+      {
+        "Name": "CategoryTypes",
+        "Type": "TArray<Class CategoryTypes>",
         "Size": "0x10",
         "Offset": "0x420"
       },
-      "Prompt_CosmeticPurchased": {
+      {
+        "Name": "Prompt_CosmeticPurchased",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x430"
       },
-      "Prompt_VisitCustomizationChest": {
+      {
+        "Name": "Prompt_VisitCustomizationChest",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x498"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

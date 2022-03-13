@@ -2,46 +2,46 @@
 # https://github.com/DougTheDruid
 ShantyPuzzleComponent:
   Attributes:
-    ActiveTimeRange:
-      Offset: '0x2f8'
-      Size: '0x10'
-      Type: Struct GameTimeRange
-    CurrentlyPlayingShantyPuzzleEnsemble:
-      Offset: '0x318'
-      Size: '0x8'
-      Type: Class Ensemble*
-    RequiredShantyItemDesc:
-      Offset: '0x2d8'
-      Size: '0x8'
-      Type: class
-    ShantyPuzzleInteractionZoneDefinitions:
-      Offset: '0x2e0'
-      Size: '0x10'
-      Type: TArray<Struct RequiredShantyItemDesc>
-    ShantyPuzzleInteractionZones:
-      Offset: '0x308'
-      Size: '0x10'
-      Type: TArray<class ShantyPuzzleInteractionZones*>
-    ShouldMoveEnsembleToActorPosition:
-      Offset: '0x2f1'
-      Size: '0x1'
-      Type: bool
-    TimeLimited:
-      Offset: '0x2f0'
-      Size: '0x1'
-      Type: bool
+  - Name: RequiredShantyItemDesc
+    Offset: '0x2d8'
+    Size: '0x8'
+    Type: class
+  - Name: ShantyPuzzleInteractionZoneDefinitions
+    Offset: '0x2e0'
+    Size: '0x10'
+    Type: TArray<Struct RequiredShantyItemDesc>
+  - Name: TimeLimited
+    Offset: '0x2f0'
+    Size: '0x1'
+    Type: bool
+  - Name: ShouldMoveEnsembleToActorPosition
+    Offset: '0x2f1'
+    Size: '0x1'
+    Type: bool
+  - Name: ActiveTimeRange
+    Offset: '0x2f8'
+    Size: '0x10'
+    Type: Struct GameTimeRange
+  - Name: ShantyPuzzleInteractionZones
+    Offset: '0x308'
+    Size: '0x10'
+    Type: TArray<class ShantyPuzzleInteractionZones*>
+  - Name: CurrentlyPlayingShantyPuzzleEnsemble
+    Offset: '0x318'
+    Size: '0x8'
+    Type: Class Ensemble*
   ClassSize: '0x110'
   FullSize: '0x3e0'
   InheritedSize: '0x2d0'
   Super: SceneComponent
 ShantyPuzzleInteractionZoneComponent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
   FullSize: '0x5f0'
   InheritedSize: '0x5d0'
   Super: SphereComponent
 ShantyPuzzleInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

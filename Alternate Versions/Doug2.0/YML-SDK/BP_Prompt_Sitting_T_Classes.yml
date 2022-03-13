@@ -2,46 +2,46 @@
 # https://github.com/DougTheDruid
 BP_Prompt_Sitting_ThirdPerson_C:
   Attributes:
-    CrewInRadius:
-      Offset: '0x1d4'
-      Size: '0x1'
-      Type: bool
-    Handle_LocalPlayerEnteredSittingState:
-      Offset: '0x120'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_LocalPlayerEnteredSittingThirdPersonCameraState:
-      Offset: '0x220'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_LocalPlayerExitedSittingState:
-      Offset: '0x1d8'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    PlayerOnSeat:
-      Offset: '0x268'
-      Size: '0x1'
-      Type: bool
-    PromptDisplayDuration:
-      Offset: '0x1d0'
-      Size: '0x4'
-      Type: float
-    PromptEvaluated:
-      Offset: '0x269'
-      Size: '0x1'
-      Type: bool
-    PromptOnCooldown:
-      Offset: '0x1d5'
-      Size: '0x1'
-      Type: bool
-    Prompt_ThirdPerson:
-      Offset: '0x168'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: Handle_LocalPlayerEnteredSittingState
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Prompt_ThirdPerson
+    Offset: '0x168'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: PromptDisplayDuration
+    Offset: '0x1d0'
+    Size: '0x4'
+    Type: float
+  - Name: CrewInRadius
+    Offset: '0x1d4'
+    Size: '0x1'
+    Type: bool
+  - Name: PromptOnCooldown
+    Offset: '0x1d5'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_LocalPlayerExitedSittingState
+    Offset: '0x1d8'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_LocalPlayerEnteredSittingThirdPersonCameraState
+    Offset: '0x220'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: PlayerOnSeat
+    Offset: '0x268'
+    Size: '0x1'
+    Type: bool
+  - Name: PromptEvaluated
+    Offset: '0x269'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x152'
   FullSize: '0x26a'
   InheritedSize: '0x118'

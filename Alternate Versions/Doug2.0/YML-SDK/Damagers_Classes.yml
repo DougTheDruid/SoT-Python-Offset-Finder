@@ -2,136 +2,136 @@
 # https://github.com/DougTheDruid
 RadialDamagerComponent:
   Attributes:
-    DamageIntervalSeconds:
-      Offset: '0xc8'
-      Size: '0x4'
-      Type: float
-    DamagePerSecondAtCentre:
-      Offset: '0xcc'
-      Size: '0x4'
-      Type: float
-    DamagePerSecondAtMaxRadius:
-      Offset: '0xd0'
-      Size: '0x4'
-      Type: float
-    DamageRadius:
-      Offset: '0xd4'
-      Size: '0x4'
-      Type: float
-    DamagerType:
-      Offset: '0xe0'
-      Size: '0x8'
-      Type: class
-    HealthChangedReason:
-      Offset: '0xe8'
-      Size: '0x1'
-      Type: byte
-    LocalOffset:
-      Offset: '0xec'
-      Size: '0xc'
-      Type: Struct Vector
+  - Name: DamageIntervalSeconds
+    Offset: '0xc8'
+    Size: '0x4'
+    Type: float
+  - Name: DamagePerSecondAtCentre
+    Offset: '0xcc'
+    Size: '0x4'
+    Type: float
+  - Name: DamagePerSecondAtMaxRadius
+    Offset: '0xd0'
+    Size: '0x4'
+    Type: float
+  - Name: DamageRadius
+    Offset: '0xd4'
+    Size: '0x4'
+    Type: float
+  - Name: DamagerType
+    Offset: '0xe0'
+    Size: '0x8'
+    Type: class
+  - Name: HealthChangedReason
+    Offset: '0xe8'
+    Size: '0x1'
+    Type: byte
+  - Name: LocalOffset
+    Offset: '0xec'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0x58'
   FullSize: '0x120'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ShipDamagerComponent:
   Attributes:
-    Shape:
-      Offset: '0xd0'
-      Size: '0x8'
-      Type: Class PrimitiveComponent*
-    ShipHulls:
-      Offset: '0xd8'
-      Size: '0x10'
-      Type: TArray<Interface Shape>
-    ShipStrainDamage:
-      Offset: '0xf8'
-      Size: '0x28'
-      Type: Struct StrainDamage
-    StartDamagingOnBeginPlay:
-      Offset: '0x154'
-      Size: '0x1'
-      Type: bool
-    TimeBetweenWatercraftDamage:
-      Offset: '0x120'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    WatercraftDamage:
-      Offset: '0x150'
-      Size: '0x4'
-      Type: float
-    WatercraftHealthInterfaces:
-      Offset: '0xe8'
-      Size: '0x10'
-      Type: TArray<Interface ShipHulls>
+  - Name: Shape
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: Class PrimitiveComponent*
+  - Name: ShipHulls
+    Offset: '0xd8'
+    Size: '0x10'
+    Type: TArray<Interface Shape>
+  - Name: WatercraftHealthInterfaces
+    Offset: '0xe8'
+    Size: '0x10'
+    Type: TArray<Interface ShipHulls>
+  - Name: ShipStrainDamage
+    Offset: '0xf8'
+    Size: '0x28'
+    Type: Struct StrainDamage
+  - Name: TimeBetweenWatercraftDamage
+    Offset: '0x120'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: WatercraftDamage
+    Offset: '0x150'
+    Size: '0x4'
+    Type: float
+  - Name: StartDamagingOnBeginPlay
+    Offset: '0x154'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x158'
   FullSize: '0x220'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ShockwaveDamagerComponent:
   Attributes:
-    ApplyDamageToShips:
-      Offset: '0x110'
-      Size: '0x1'
-      Type: bool
-    ApplyImpulseToGhostShips:
-      Offset: '0x130'
-      Size: '0x1'
-      Type: bool
-    ApplyImpulseToShips:
-      Offset: '0xd8'
-      Size: '0x1'
-      Type: bool
-    DamagerType:
-      Offset: '0x128'
-      Size: '0x8'
-      Type: class
-    DestroyHostileGhostShips:
-      Offset: '0x13c'
-      Size: '0x1'
-      Type: bool
-    EndRadiusInMetres:
-      Offset: '0xd4'
-      Size: '0x4'
-      Type: float
-    ExpansionDuration:
-      Offset: '0xd0'
-      Size: '0x4'
-      Type: float
-    ForceToApplyToShip:
-      Offset: '0xe0'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    GhostShipImpulseDuration:
-      Offset: '0x134'
-      Size: '0x4'
-      Type: float
-    GhostShipImpulseMaxDeflectionAngle:
-      Offset: '0x138'
-      Size: '0x4'
-      Type: float
-    NearbyEncounterDistanceInMetres:
-      Offset: '0x140'
-      Size: '0x4'
-      Type: float
-    ProcessedGhostShips:
-      Offset: '0x178'
-      Size: '0x10'
-      Type: TArray<Weakclass ProcessedShips>
-    ProcessedShips:
-      Offset: '0x168'
-      Size: '0x10'
-      Type: TArray<Weakclass OnShockwaveEnded>
-    ShipDamageLevels:
-      Offset: '0x118'
-      Size: '0x10'
-      Type: TArray<Struct ApplyDamageToShips>
+  - Name: ExpansionDuration
+    Offset: '0xd0'
+    Size: '0x4'
+    Type: float
+  - Name: EndRadiusInMetres
+    Offset: '0xd4'
+    Size: '0x4'
+    Type: float
+  - Name: ApplyImpulseToShips
+    Offset: '0xd8'
+    Size: '0x1'
+    Type: bool
+  - Name: ForceToApplyToShip
+    Offset: '0xe0'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: ApplyDamageToShips
+    Offset: '0x110'
+    Size: '0x1'
+    Type: bool
+  - Name: ShipDamageLevels
+    Offset: '0x118'
+    Size: '0x10'
+    Type: TArray<Struct ApplyDamageToShips>
+  - Name: DamagerType
+    Offset: '0x128'
+    Size: '0x8'
+    Type: class
+  - Name: ApplyImpulseToGhostShips
+    Offset: '0x130'
+    Size: '0x1'
+    Type: bool
+  - Name: GhostShipImpulseDuration
+    Offset: '0x134'
+    Size: '0x4'
+    Type: float
+  - Name: GhostShipImpulseMaxDeflectionAngle
+    Offset: '0x138'
+    Size: '0x4'
+    Type: float
+  - Name: DestroyHostileGhostShips
+    Offset: '0x13c'
+    Size: '0x1'
+    Type: bool
+  - Name: NearbyEncounterDistanceInMetres
+    Offset: '0x140'
+    Size: '0x4'
+    Type: float
+  - Name: ProcessedShips
+    Offset: '0x168'
+    Size: '0x10'
+    Type: TArray<Weakclass OnShockwaveEnded>
+  - Name: ProcessedGhostShips
+    Offset: '0x178'
+    Size: '0x10'
+    Type: TArray<Weakclass ProcessedShips>
   ClassSize: '0x108'
   FullSize: '0x1d0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ShockwaveDamagerInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

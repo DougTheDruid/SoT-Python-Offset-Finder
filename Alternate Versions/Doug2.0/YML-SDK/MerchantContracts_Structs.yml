@@ -2,76 +2,76 @@
 # https://github.com/DougTheDruid
 ItemAndReward:
   Attributes:
-    HandInOnTimeRewardId:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Struct RewardId
-    ItemDesc:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: ItemDesc
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: HandInOnTimeRewardId
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct RewardId
   ClassSize: '0x10'
 MerchantContract:
   Attributes:
-    DeliveryRequests:
-      Offset: '0x18'
-      Size: '0x10'
-      Type: TArray<Struct MerchantMapLayoutItem>
+  - Name: DeliveryRequests
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct MerchantMapLayoutItem>
   ClassSize: '0xc0'
 MerchantContractDeliveryRequest:
   Attributes:
-    Id:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    ItemDesc:
-      Offset: '0x8'
-      Size: '0x28'
-      Type: Struct MerchantContractItemDesc
-    NumToAllocate:
-      Offset: '0x30'
-      Size: '0x4'
-      Type: int
-    NumToCollect:
-      Offset: '0x34'
-      Size: '0x4'
-      Type: int
-    NumToDeliver:
-      Offset: '0x38'
-      Size: '0x4'
-      Type: int
+  - Name: Id
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: ItemDesc
+    Offset: '0x8'
+    Size: '0x28'
+    Type: Struct MerchantContractItemDesc
+  - Name: NumToAllocate
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  - Name: NumToCollect
+    Offset: '0x34'
+    Size: '0x4'
+    Type: int
+  - Name: NumToDeliver
+    Offset: '0x38'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x40'
 MerchantContractItemDesc:
   Attributes:
-    AllocatedCrate:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
-    FaunaBreed:
-      Offset: '0x20'
-      Size: '0x8'
-      Type: class
-    FaunaSpecies:
-      Offset: '0x18'
-      Size: '0x8'
-      Type: class
-    ItemData:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Struct ItemAndReward>
+  - Name: AllocatedCrate
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: ItemData
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct ItemAndReward>
+  - Name: FaunaSpecies
+    Offset: '0x18'
+    Size: '0x8'
+    Type: class
+  - Name: FaunaBreed
+    Offset: '0x20'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x28'
 PlayerMerchantContract:
   Attributes:
-    Id:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Guid
-    IslandName:
-      Offset: '0x10'
-      Size: '0x8'
-      Type: struct FName
-    Requests:
-      Offset: '0x18'
-      Size: '0x10'
-      Type: TArray<Struct IslandName>
+  - Name: Id
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: IslandName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Requests
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct IslandName>
   ClassSize: '0x28'

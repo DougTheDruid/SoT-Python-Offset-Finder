@@ -29,15 +29,16 @@ def get_offset(file_name, title, memory_object):
     :return: The int-converted version of the offset for a specific data field
     out of a parent object
     """
-    try:
-        with open(file_name) as file_to_check:
-            json_sdk_file = json.load(file_to_check)
-            components = json_sdk_file.get(title, None)
+    offset = "Not Found"
+    with open(file_name) as file_to_check:
+        json_sdk_file = json.load(file_to_check)
+        components = json_sdk_file.get(title, None)
+        if components:
             attributes = components.get('Attributes', None)
-            mem_object = attributes.get(memory_object, None)
-            return int(mem_object.get('Offset'), 16)
-    except:
-        return "Not Found"
+            for attribute in attributes:
+                if attribute['Name'] == memory_object:
+                    offset = int(attribute.get('Offset'), 16)
+    return offset
 
 
 if __name__ == '__main__':

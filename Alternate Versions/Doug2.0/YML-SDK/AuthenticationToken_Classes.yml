@@ -2,20 +2,20 @@
 # https://github.com/DougTheDruid
 JwtAuthenticationTokenEditorSettings:
   Attributes:
-    TokenSecretKey:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: TokenSecretKey
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
 JwtAuthenticationTokenSettings:
   Attributes:
-    TokenSecretKey:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: TokenSecretKey
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

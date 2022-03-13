@@ -2,136 +2,136 @@
 # https://github.com/DougTheDruid
 IncomingMigrationPreventionZone:
   Attributes:
-    Location:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct Vector2D
-    Radius:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
+  - Name: Location
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Radius
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xc'
 OutgoingServerMigrationAbortedEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
 OutgoingServerMigrationCompletedEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
 OutgoingServerMigrationStartedEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
 PrepareForWorldSwitchRpc:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 ServerMigrationAbortEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 ServerMigrationAboutToStartEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
 ServerMigrationCompleteEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 ServerMigrationConfigChangedEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
 ServerMigrationHeartbeatEvent:
   Attributes:
-    ContestMatchmaking:
-      Offset: '0x70'
-      Size: '0x1'
-      Type: bool
-    CrewsMigrationStatus:
-      Offset: '0x40'
-      Size: '0x10'
-      Type: TArray<Struct ServerMigrationCrewMigrationStatus>
-    ExpectedServerLifetime:
-      Offset: '0x60'
-      Size: '0x8'
-      Type: Struct Timespan
-    GameEndpoint:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct FString
-    MessageInterval:
-      Offset: '0x68'
-      Size: '0x8'
-      Type: Struct Timespan
-    MigrationEndpoint:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: Struct FString
-    SequenceId:
-      Offset: '0x50'
-      Size: '0x4'
-      Type: int
-    ServerId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Guid
-    ServerLocation:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct FString
-    ServerUptime:
-      Offset: '0x58'
-      Size: '0x8'
-      Type: Struct Timespan
+  - Name: ServerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: ServerLocation
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: GameEndpoint
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: MigrationEndpoint
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CrewsMigrationStatus
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Struct ServerMigrationCrewMigrationStatus>
+  - Name: SequenceId
+    Offset: '0x50'
+    Size: '0x4'
+    Type: int
+  - Name: ServerUptime
+    Offset: '0x58'
+    Size: '0x8'
+    Type: Struct Timespan
+  - Name: ExpectedServerLifetime
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Struct Timespan
+  - Name: MessageInterval
+    Offset: '0x68'
+    Size: '0x8'
+    Type: Struct Timespan
+  - Name: ContestMatchmaking
+    Offset: '0x70'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x78'
 ServerMigrationInstanceEventBase:
   Attributes:
-    MigrationId:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct Guid
-    ServerId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Guid
+  - Name: ServerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: MigrationId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
   ClassSize: '0x20'
 ServerMigrationReadyToTransferActors:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x90'
 ServerMigrationRefusedEvent:
   Attributes:
-    CrewId:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct Guid
-    MigrationId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Guid
+  - Name: MigrationId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: CrewId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
   ClassSize: '0x20'
 ServerMigrationRequestEvent:
   Attributes:
-    CrewId:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct Guid
-    DestinationAddress:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct FString
-    MigrationId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Guid
-    SubMode:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: MigrationId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: DestinationAddress
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CrewId
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: SubMode
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x40'
 ServerMigrationSetServerConfigMessage:
   Attributes:
-    ExpectedServerLifetime:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct Timespan
+  - Name: ExpectedServerLifetime
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Timespan
   ClassSize: '0x8'
 ServerMigrationSetupCompleteEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 ServerMigrationSetupRequestEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'

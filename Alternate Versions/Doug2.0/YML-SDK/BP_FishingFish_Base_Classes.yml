@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 BP_FishingFish_Base_C:
   Attributes:
-    MaterialManipulation:
-      Offset: '0x918'
-      Size: '0x8'
-      Type: Class MaterialManipulationComponent*
-    WaterInteractionOverlap:
-      Offset: '0x910'
-      Size: '0x8'
-      Type: Class BoxComponent*
+  - Name: WaterInteractionOverlap
+    Offset: '0x910'
+    Size: '0x8'
+    Type: Class BoxComponent*
+  - Name: MaterialManipulation
+    Offset: '0x918'
+    Size: '0x8'
+    Type: Class MaterialManipulationComponent*
   ClassSize: '0x10'
   FullSize: '0x920'
   InheritedSize: '0x910'

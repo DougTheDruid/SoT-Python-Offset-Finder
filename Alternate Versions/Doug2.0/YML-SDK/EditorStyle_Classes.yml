@@ -2,58 +2,58 @@
 # https://github.com/DougTheDruid
 EditorStyleSettings:
   Attributes:
-    ColorVisionDeficiencyPreviewType:
-      Offset: '0x68'
-      Size: '0x1'
-      Type: byte
-    InactiveSelectionColor:
-      Offset: '0x48'
-      Size: '0x10'
-      Type: Struct LinearColor
-    KeyboardFocusColor:
-      Offset: '0x58'
-      Size: '0x10'
-      Type: Struct LinearColor
-    LogTimestampMode:
-      Offset: '0x70'
-      Size: '0x1'
-      Type: byte
-    PressedSelectionColor:
-      Offset: '0x38'
-      Size: '0x10'
-      Type: Struct LinearColor
-    SelectionColor:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: Struct LinearColor
-    bEnableWindowAnimations:
-      Offset: '0x6c'
-      Size: '0x1'
-      Type: bool
-    bExpandConfigurationMenus:
-      Offset: '0x6c'
-      Size: '0x1'
-      Type: bool
-    bOpenAssetEditorTabsInNewWindow:
-      Offset: '0x71'
-      Size: '0x1'
-      Type: bool
-    bShowFriendlyNames:
-      Offset: '0x6c'
-      Size: '0x1'
-      Type: bool
-    bShowLaunchMenus:
-      Offset: '0x6c'
-      Size: '0x1'
-      Type: bool
-    bShowProjectMenus:
-      Offset: '0x6c'
-      Size: '0x1'
-      Type: bool
-    bUseSmallToolBarIcons:
-      Offset: '0x6c'
-      Size: '0x1'
-      Type: bool
+  - Name: SelectionColor
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: PressedSelectionColor
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: InactiveSelectionColor
+    Offset: '0x48'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: KeyboardFocusColor
+    Offset: '0x58'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ColorVisionDeficiencyPreviewType
+    Offset: '0x68'
+    Size: '0x1'
+    Type: byte
+  - Name: bUseSmallToolBarIcons
+    Offset: '0x6c'
+    Size: '0x1'
+    Type: bool
+  - Name: bEnableWindowAnimations
+    Offset: '0x6c'
+    Size: '0x1'
+    Type: bool
+  - Name: bShowFriendlyNames
+    Offset: '0x6c'
+    Size: '0x1'
+    Type: bool
+  - Name: bExpandConfigurationMenus
+    Offset: '0x6c'
+    Size: '0x1'
+    Type: bool
+  - Name: bShowProjectMenus
+    Offset: '0x6c'
+    Size: '0x1'
+    Type: bool
+  - Name: bShowLaunchMenus
+    Offset: '0x6c'
+    Size: '0x1'
+    Type: bool
+  - Name: LogTimestampMode
+    Offset: '0x70'
+    Size: '0x1'
+    Type: byte
+  - Name: bOpenAssetEditorTabsInNewWindow
+    Offset: '0x71'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x68'
   FullSize: '0x90'
   InheritedSize: '0x28'

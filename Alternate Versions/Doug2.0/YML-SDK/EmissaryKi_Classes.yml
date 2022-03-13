@@ -2,58 +2,58 @@
 # https://github.com/DougTheDruid
 BP_Prompt_EmissaryKilledAnotherEmissary_C:
   Attributes:
-    CompanyName:
-      Offset: '0x168'
-      Size: '0x8'
-      Type: struct FName
-    ExpectedCompanyName:
-      Offset: '0x17c'
-      Size: '0x8'
-      Type: struct FName
-    ExpectedVictimCompanyName:
-      Offset: '0x188'
-      Size: '0x10'
-      Type: TArray<Struct FName>
-    Handle_EmissaryKilledAnotherEmissary:
-      Offset: '0x120'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    InitialDelay:
-      Offset: '0x1b8'
-      Size: '0x4'
-      Type: float
-    NumberOfPrompts:
-      Offset: '0x1b4'
-      Size: '0x4'
-      Type: int
-    PromptAccessKey:
-      Offset: '0x1a8'
-      Size: '0x8'
-      Type: class
-    PromptIndex:
-      Offset: '0x1b0'
-      Size: '0x4'
-      Type: int
-    Prompts:
-      Offset: '0x198'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    ShowPromptDuration:
-      Offset: '0x1bc'
-      Size: '0x4'
-      Type: float
-    SurfacedThisSession:
-      Offset: '0x178'
-      Size: '0x1'
-      Type: bool
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
-    VictimCompanyName:
-      Offset: '0x170'
-      Size: '0x8'
-      Type: struct FName
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: Handle_EmissaryKilledAnotherEmissary
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: CompanyName
+    Offset: '0x168'
+    Size: '0x8'
+    Type: struct FName
+  - Name: VictimCompanyName
+    Offset: '0x170'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SurfacedThisSession
+    Offset: '0x178'
+    Size: '0x1'
+    Type: bool
+  - Name: ExpectedCompanyName
+    Offset: '0x17c'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ExpectedVictimCompanyName
+    Offset: '0x188'
+    Size: '0x10'
+    Type: "TArray<Name 2\xC0\xC3\xCCH\x8B\xC4AVH\x81\xEC\x10\x03>"
+  - Name: Prompts
+    Offset: '0x198'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
+  - Name: PromptAccessKey
+    Offset: '0x1a8'
+    Size: '0x8'
+    Type: class
+  - Name: PromptIndex
+    Offset: '0x1b0'
+    Size: '0x4'
+    Type: int
+  - Name: NumberOfPrompts
+    Offset: '0x1b4'
+    Size: '0x4'
+    Type: int
+  - Name: InitialDelay
+    Offset: '0x1b8'
+    Size: '0x4'
+    Type: float
+  - Name: ShowPromptDuration
+    Offset: '0x1bc'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xa8'
   FullSize: '0x1c0'
   InheritedSize: '0x118'

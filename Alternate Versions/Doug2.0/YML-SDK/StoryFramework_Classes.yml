@@ -2,92 +2,92 @@
 # https://github.com/DougTheDruid
 IsStoryActiveNPCDialogConditional:
   Attributes:
-    NeedsAllStories:
-      Offset: '0x30'
-      Size: '0x1'
-      Type: bool
+  - Name: NeedsAllStories
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x18'
   FullSize: '0x48'
   InheritedSize: '0x30'
   Super: NPCDialogConditional
 StoryNPCDialogConditionalContext:
   Attributes:
-    StoryNames:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<Name None>
+  - Name: StoryNames
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Name None>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: NPCDialogConditionalContext
 StoryNPCDialogOverrideType:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: NPCDialogOverrideType
 StoryService:
   Attributes:
-    ActiveStories:
-      Offset: '0x408'
-      Size: '0x10'
-      Type: TArray<Struct Stories>
-    Stories:
-      Offset: '0x3f8'
-      Size: '0x10'
-      Type: TArray<Struct StorySpawnedActorsAssetList>
+  - Name: Stories
+    Offset: '0x3f8'
+    Size: '0x10'
+    Type: TArray<Struct StorySpawnedActorsAssetList>
+  - Name: ActiveStories
+    Offset: '0x408'
+    Size: '0x10'
+    Type: TArray<Struct Stories>
   ClassSize: '0xe0'
   FullSize: '0x4b0'
   InheritedSize: '0x3d0'
   Super: Actor
 StoryServiceInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 StorySpawnedActorsCollectionDataAsset:
   Attributes:
-    StorySpawnedActorsAssetList:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<class StorySpawnedActorsAssetList*>
+  - Name: StorySpawnedActorsAssetList
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class StorySpawnedActorsAssetList*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 StorySpawnedActorsDataAsset:
   Attributes:
-    StorySpawnedActorsList:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<Struct Asset>
+  - Name: StorySpawnedActorsList
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct Asset>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 StorySpawnedActorsService:
   Attributes:
-    Asset:
-      Offset: '0x428'
-      Size: '0x8'
-      Type: Class StorySpawnedActorsCollectionDataAsset*
+  - Name: Asset
+    Offset: '0x428'
+    Size: '0x8'
+    Type: Class StorySpawnedActorsCollectionDataAsset*
   ClassSize: '0xe8'
   FullSize: '0x4b8'
   InheritedSize: '0x3d0'
   Super: Actor
 StorySpawnedActorsServiceInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 StorySpawnedActorsSettings:
   Attributes:
-    StorySpawnActorsCollectionDataAssetLocation:
-      Offset: '0x38'
-      Size: '0x10'
-      Type: Struct StringAssetReference
+  - Name: StorySpawnActorsCollectionDataAssetLocation
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'

@@ -1,217 +1,253 @@
 {
   "ContestMatchmakingServerRequestModel": {
     "ClassSize": "0x88",
-    "Attributes": {
-      "ServerId": {
+    "Attributes": [
+      {
+        "Name": "ServerId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "VmId": {
+      {
+        "Name": "VmId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "PrivateServerId": {
+      {
+        "Name": "PrivateServerId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "ServerLocation": {
+      {
+        "Name": "ServerLocation",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "PlayModeTags": {
+      {
+        "Name": "PlayModeTags",
         "Type": "TArray<Str >",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      "PlayModeStates": {
+      {
+        "Name": "PlayModeStates",
         "Type": "TArray<Str >",
         "Size": "0x10",
         "Offset": "0x58"
       },
-      "Crews": {
+      {
+        "Name": "Crews",
         "Type": "TArray<Struct ServerCrewModel>",
         "Size": "0x10",
         "Offset": "0x68"
       },
-      "RequestCorrelationId": {
+      {
+        "Name": "RequestCorrelationId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x78"
       }
-    }
+    ]
   },
   "ServerCrewModel": {
     "ClassSize": "0x60",
-    "Attributes": {
-      "CrewId": {
+    "Attributes": [
+      {
+        "Name": "CrewId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "UserId": {
+      {
+        "Name": "UserId",
         "Type": "Struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x10"
       },
-      "ServerId": {
+      {
+        "Name": "ServerId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "SessionType": {
+      {
+        "Name": "SessionType",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
       },
-      "Positions": {
+      {
+        "Name": "Positions",
         "Type": "TArray<Struct SessionType>",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      "Resources": {
+      {
+        "Name": "Resources",
         "Type": "TArray<UInt32 >",
         "Size": "0x10",
         "Offset": "0x50"
       }
-    }
+    ]
   },
   "ServerCrewResponseModel": {
     "ClassSize": "0x78",
-    "Attributes": {
-      "Crews": {
+    "Attributes": [
+      {
+        "Name": "Crews",
         "Type": "TArray<Struct OptionalPlayModeModel>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "RetryAfter": {
+      {
+        "Name": "RetryAfter",
         "Type": "Struct Timespan",
         "Size": "0x8",
         "Offset": "0x60"
       },
-      "MigrationThreshold": {
+      {
+        "Name": "MigrationThreshold",
         "Type": "Struct Timespan",
         "Size": "0x8",
         "Offset": "0x68"
       },
-      "ExpireAfter": {
+      {
+        "Name": "ExpireAfter",
         "Type": "Struct Timespan",
         "Size": "0x8",
         "Offset": "0x70"
       }
-    }
+    ]
   },
   "OptionalPlayModeModel": {
     "ClassSize": "0x50",
-    "Attributes": {}
+    "Attributes": []
   },
   "ServerCrewRequestModel": {
     "ClassSize": "0xc0",
-    "Attributes": {
-      "ServerId": {
+    "Attributes": [
+      {
+        "Name": "ServerId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "VmId": {
+      {
+        "Name": "VmId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "PrivateServerId": {
+      {
+        "Name": "PrivateServerId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "ServerLocation": {
+      {
+        "Name": "ServerLocation",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "PlayModeTags": {
+      {
+        "Name": "PlayModeTags",
         "Type": "TArray<Str >",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      "PlayModeState": {
+      {
+        "Name": "PlayModeState",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x58"
       },
-      "CrewCount": {
+      {
+        "Name": "CrewCount",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x68"
       },
-      "CrewCountBucket": {
+      {
+        "Name": "CrewCountBucket",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x6c"
       },
-      "CrewMin": {
+      {
+        "Name": "CrewMin",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x70"
       },
-      "CrewMax": {
+      {
+        "Name": "CrewMax",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x74"
       },
-      "CrewSessionTypes": {
+      {
+        "Name": "CrewSessionTypes",
         "Type": "TArray<Int >",
         "Size": "0x10",
         "Offset": "0x78"
       },
-      "Uptime": {
+      {
+        "Name": "Uptime",
         "Type": "Struct Timespan",
         "Size": "0x8",
         "Offset": "0x88"
       },
-      "Contended": {
+      {
+        "Name": "Contended",
         "Type": "Struct ServerContendedModel",
         "Size": "0x30",
         "Offset": "0x90"
       }
-    }
+    ]
   },
   "ServerContendedModel": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "Positions": {
+    "Attributes": [
+      {
+        "Name": "Positions",
         "Type": "TArray<Struct Uptime>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Regions": {
+      {
+        "Name": "Regions",
         "Type": "TArray<Struct ServerRegionModel>",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "Resources": {
+      {
+        "Name": "Resources",
         "Type": "TArray<UInt32 >",
         "Size": "0x10",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "ServerRegionModel": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "Position": {
+    "Attributes": [
+      {
+        "Name": "Position",
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Radius": {
+      {
+        "Name": "Radius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

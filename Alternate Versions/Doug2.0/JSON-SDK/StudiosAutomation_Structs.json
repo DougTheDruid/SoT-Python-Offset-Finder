@@ -1,256 +1,291 @@
 {
   "TestLevelMetadataEntry": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "Property": {
+    "Attributes": [
+      {
+        "Name": "Property",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Value": {
+      {
+        "Name": "Value",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "ClientPawnDetails": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "Pawns": {
+    "Attributes": [
+      {
+        "Name": "Pawns",
         "Type": "TArray<class Pawns*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "TextureAuditorGroupProperties": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "TextureGroup": {
+    "Attributes": [
+      {
+        "Name": "TextureGroup",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "Properties": {
+      {
+        "Name": "Properties",
         "Type": "Struct TextureAuditorProperties",
         "Size": "0x20",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "TextureAuditorProperties": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "RequiredMipsSetting": {
+    "Attributes": [
+      {
+        "Name": "RequiredMipsSetting",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "AllowedTextureFormats": {
+      {
+        "Name": "AllowedTextureFormats",
         "Type": "TArray<Byte RequiredMipsSetting>",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "MeshAuditLimits": {
     "ClassSize": "0x38",
-    "Attributes": {
-      "SubstringQueries": {
+    "Attributes": [
+      {
+        "Name": "SubstringQueries",
         "Type": "TArray<Struct SubstringAuditQueryData>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "FolderMeshLimits": {
+      {
+        "Name": "FolderMeshLimits",
         "Type": "Struct FolderTotals",
         "Size": "0x28",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "FolderTotals": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "EnforceCollectionMembership": {
+    "Attributes": [
+      {
+        "Name": "EnforceCollectionMembership",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "CollectionsAllowedForFolder": {
+      {
+        "Name": "CollectionsAllowedForFolder",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "AssetTypesToTest": {
+      {
+        "Name": "AssetTypesToTest",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "SubstringAuditQueryData": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "QueryStringArray": {
+    "Attributes": [
+      {
+        "Name": "QueryStringArray",
         "Type": "TArray<Str None>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "SearchSetSize": {
+      {
+        "Name": "SearchSetSize",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "MemoryLimitForSet": {
+      {
+        "Name": "MemoryLimitForSet",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x14"
       }
-    }
+    ]
   },
   "AssetAuditConstants": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "AssetAuditConstants": {
+    "Attributes": [
+      {
+        "Name": "AssetAuditConstants",
         "Type": "TArray<Struct AssetAuditConstantEntry>",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "AssetAuditConstantEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Value": {
+      {
+        "Name": "Value",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "CollectionLimits": {
     "ClassSize": "0x34",
-    "Attributes": {
-      "CollectionName": {
+    "Attributes": [
+      {
+        "Name": "CollectionName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "AuditType": {
+      {
+        "Name": "AuditType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      "IsOnlyParentCollection": {
+      {
+        "Name": "IsOnlyParentCollection",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x9"
       },
-      "CollectionTotals": {
+      {
+        "Name": "CollectionTotals",
         "Type": "Struct CollectionTotalsLimits",
         "Size": "0x10",
         "Offset": "0xc"
       },
-      "StaticMeshLimits": {
+      {
+        "Name": "StaticMeshLimits",
         "Type": "Struct CollectionStaticMeshLimits",
         "Size": "0x8",
         "Offset": "0x1c"
       },
-      "SkeleMeshLimits": {
+      {
+        "Name": "SkeleMeshLimits",
         "Type": "Struct CollectionSkeleMeshLimits",
         "Size": "0x8",
         "Offset": "0x24"
       },
-      "AnimLimits": {
+      {
+        "Name": "AnimLimits",
         "Type": "Struct CollectionAnimSequenceLimits",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      "CanUseComplexCollisionAsSimple": {
+      {
+        "Name": "CanUseComplexCollisionAsSimple",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
       },
-      "CanUseLOD0Collision": {
+      {
+        "Name": "CanUseLOD0Collision",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x31"
       }
-    }
+    ]
   },
   "CollectionAnimSequenceLimits": {
     "ClassSize": "0x4",
-    "Attributes": {
-      "MaxMemory": {
+    "Attributes": [
+      {
+        "Name": "MaxMemory",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "CollectionSkeleMeshLimits": {
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "CollectionMeshLimitsBase": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "MaxVerts": {
+    "Attributes": [
+      {
+        "Name": "MaxVerts",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "MaxMemory": {
+      {
+        "Name": "MaxMemory",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "CollectionStaticMeshLimits": {
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "CollectionTotalsLimits": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "MaxTotalVerts": {
+    "Attributes": [
+      {
+        "Name": "MaxTotalVerts",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "MaxTotalMemory": {
+      {
+        "Name": "MaxTotalMemory",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      "MostExpensiveAssetsSetSize": {
+      {
+        "Name": "MostExpensiveAssetsSetSize",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
       },
-      "ExpensiveAssetSetMaxTotalMemory": {
+      {
+        "Name": "ExpensiveAssetSetMaxTotalMemory",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xc"
       }
-    }
+    ]
   },
   "CollectionLimitsArray": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "CollectionLimits": {
+    "Attributes": [
+      {
+        "Name": "CollectionLimits",
         "Type": "TArray<Struct MaterialQualityOverrides>",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

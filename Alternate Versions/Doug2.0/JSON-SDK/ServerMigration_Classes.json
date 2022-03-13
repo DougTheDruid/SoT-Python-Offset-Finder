@@ -4,371 +4,405 @@
     "FullSize": "0xb0",
     "InheritedSize": "0x68",
     "ClassSize": "0x48",
-    "Attributes": {}
+    "Attributes": []
   },
   "MigrationRelevancyClusterActor": {
     "Super": "Actor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "NetworkTestingBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ServerMigrationBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ServerMigrationSerialisationDetailsTestsActorRef": {
     "Super": "Object",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ActorReferenceWithMigrationMarkup": {
+    "Attributes": [
+      {
+        "Name": "ActorReferenceWithMigrationMarkup",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPl": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {
-      "PrimitiveComponent": {
+    "Attributes": [
+      {
+        "Name": "PrimitiveComponent",
         "Type": "Class PrimitiveComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsActorWithChild": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ChildActorComponent": {
+    "Attributes": [
+      {
+        "Name": "ChildActorComponent",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsActorWithReplicatedChil": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ChildActorComponent": {
+    "Attributes": [
+      {
+        "Name": "ChildActorComponent",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsActorWithDynamicCompone": {
     "Super": "Actor",
     "FullSize": "0x3e8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x18",
-    "Attributes": {
-      "SubObject": {
+    "Attributes": [
+      {
+        "Name": "SubObject",
         "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
-      "ActorComponent": {
+      {
+        "Name": "ActorComponent",
         "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
-      "Subobject2": {
+      {
+        "Name": "Subobject2",
         "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr": {
     "Super": "Actor",
     "FullSize": "0x3e8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x18",
-    "Attributes": {
-      "ActorPtr": {
+    "Attributes": [
+      {
+        "Name": "ActorPtr",
         "Type": "Struct NetActorPtr",
         "Size": "0x14",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsActorWithUniqueNetId": {
     "Super": "Actor",
     "FullSize": "0x3e8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x18",
-    "Attributes": {
-      "UniqueId": {
+    "Attributes": [
+      {
+        "Name": "UniqueId",
         "Type": "Struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsMigratableComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x8",
-    "Attributes": {
-      "FloatWithMigrationMarkup": {
+    "Attributes": [
+      {
+        "Name": "FloatWithMigrationMarkup",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc8"
       },
-      "IntWithNoMarkup": {
+      {
+        "Name": "IntWithNoMarkup",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xcc"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsMigratableComponentActo": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ComponentWithMigrationMarkup": {
+    "Attributes": [
+      {
+        "Name": "ComponentWithMigrationMarkup",
         "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsMigratableDefaultCompon": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ComponentWithMigrationMarkup": {
+    "Attributes": [
+      {
+        "Name": "ComponentWithMigrationMarkup",
         "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrde": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "ServerMigrationSerialisationDetailsTestsMigrationActorWithRootC": {
     "Super": "Actor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ServerMigrationSerialisationDetailsTestsMigrationChildActorLink": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {
-      "Component": {
+    "Attributes": [
+      {
+        "Name": "Component",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis": {
     "Super": "ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d8",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ServerMigrationSerialisationDetailsTestsMigrationGetLinkedActor": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {
-      "DependentActor": {
+    "Attributes": [
+      {
+        "Name": "DependentActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsMigrationReferenceActor": {
     "Super": "Actor",
     "FullSize": "0x3e0",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x10",
-    "Attributes": {
-      "ActorReferenceWithMigrationMarkup": {
+    "Attributes": [
+      {
+        "Name": "ActorReferenceWithMigrationMarkup",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsPropertyMarkup": {
     "Super": "Object",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": {
-      "Int32NoMarkup": {
+    "Attributes": [
+      {
+        "Name": "Int32NoMarkup",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "BoolWithMigrationMarkup": {
+      {
+        "Name": "BoolWithMigrationMarkup",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2c"
       },
-      "StringWithSaveGameMarkup": {
+      {
+        "Name": "StringWithSaveGameMarkup",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "FloatWithMigrationAndReplicationMarkup": {
+      {
+        "Name": "FloatWithMigrationAndReplicationMarkup",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsTArrayProperty": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "IntegerArrayWithMigrationMarkup": {
+    "Attributes": [
+      {
+        "Name": "IntegerArrayWithMigrationMarkup",
         "Type": "TArray<Int None>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsUStructProperty": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "SubStructWithMigrationMarkup": {
+    "Attributes": [
+      {
+        "Name": "SubStructWithMigrationMarkup",
         "Type": "Struct ServerMigrationSerialisationDetailsTestsUStruct",
         "Size": "0xc",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "ServerMigrationSettings": {
     "Super": "Object",
     "FullSize": "0x70",
     "InheritedSize": "0x28",
     "ClassSize": "0x48",
-    "Attributes": {
-      "MaxSimultaneousMigrations": {
+    "Attributes": [
+      {
+        "Name": "MaxSimultaneousMigrations",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "TransportImplementation": {
+      {
+        "Name": "TransportImplementation",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "ServerDefaultListenPort": {
+      {
+        "Name": "ServerDefaultListenPort",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      "ServerListenPortRangeSize": {
+      {
+        "Name": "ServerListenPortRangeSize",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x44"
       },
-      "AutomationServerDefaultListenPort": {
+      {
+        "Name": "AutomationServerDefaultListenPort",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x48"
       },
-      "InstanceImplementation": {
+      {
+        "Name": "InstanceImplementation",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      "MigrationConnectionTimeoutSeconds": {
+      {
+        "Name": "MigrationConnectionTimeoutSeconds",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x60"
       },
-      "WaitForClientActorRemappingTimeoutLength": {
+      {
+        "Name": "WaitForClientActorRemappingTimeoutLength",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x64"
       },
-      "WaitForTransferOwnershipAcknowledgementTimeoutLength": {
+      {
+        "Name": "WaitForTransferOwnershipAcknowledgementTimeoutLength",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x68"
       },
-      "DeserialisationTimeSliceLength": {
+      {
+        "Name": "DeserialisationTimeSliceLength",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x6c"
       }
-    }
+    ]
   },
   "TestActorWithUObjectProperty": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ObjectProperty": {
+    "Attributes": [
+      {
+        "Name": "ObjectProperty",
         "Type": "Class Object*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }
-    }
+    ]
   },
   "TestUObjectWithObjectProperty": {
     "Super": "Object",
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ObjectProperty": {
+    "Attributes": [
+      {
+        "Name": "ObjectProperty",
         "Type": "Class Object*",
         "Size": "0x8",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

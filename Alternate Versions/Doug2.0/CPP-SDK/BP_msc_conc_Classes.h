@@ -20,4 +20,25 @@ public:
 };
 
 
+// Size 0x0
+class BP_msc_concertina_wth_01_a_v01_ItemInfo_C: public None
+{
+public:
+};
+
+
+// Size 0x0
+class BP_msc_concertina_wth_01_a_v01_Wieldable_C: public None
+{
+public:
+};
+
+
+// Size 0x0
+class BP_msc_concertina_wth_01_a_v01_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
 }

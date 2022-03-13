@@ -2,180 +2,180 @@
 # https://github.com/DougTheDruid
 ActionStateChangeRequestId:
   Attributes:
-    Raw:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
+  - Name: Raw
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x1'
 ActionStateConstructionInfo:
   Attributes:
-    Id:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
-    Type:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class ScriptStruct*
+  - Name: Id
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Type
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ScriptStruct*
   ClassSize: '0x28'
 ActionStateMessage:
   Attributes:
-    Type:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class ScriptStruct*
+  - Name: Type
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ScriptStruct*
   ClassSize: '0x10'
 ActionStatePriorityList:
   Attributes:
-    Entries:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Struct ActionStatePriorityRelationship>
-    State:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: State
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Entries
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct ActionStatePriorityRelationship>
   ClassSize: '0x18'
 ActionStatePriorityRelationship:
   Attributes:
-    Priority:
-      Offset: '0x8'
-      Size: '0x1'
-      Type: byte
-    State:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: State
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Priority
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x10'
 ActionStatePriorityTable:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0xa0'
 ActionStateSerialisableData:
   Attributes:
-    Id:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: class
-    Type:
-      Offset: '0x10'
-      Size: '0x8'
-      Type: Class ScriptStruct*
+  - Name: Id
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
+  - Name: Type
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class ScriptStruct*
   ClassSize: '0x30'
 ActorActionStateConstructionInfo:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x30'
 EventFirstPersonAnimaticActionStateEndedClient:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 EventWaitingToSpawnActionStateEndedClient:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 EventWaitingToSpawnActionStateStartedClient:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 InnerTestStruct:
   Attributes:
-    BoolProp:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: bool
-    StringProp:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: BoolProp
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: StringProp
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x18'
 InnerWithObjTestStruct:
   Attributes:
-    ObjPointer:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class Object*
+  - Name: ObjPointer
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
   ClassSize: '0x8'
 NullActionStateConstructionInfo:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x30'
 ResetStateMachineRpc:
   Attributes:
-    LatestEpochIds:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: Struct ActionStateChangeRequestId
-    LatestRequestIds:
-      Offset: '0x5'
-      Size: '0x1'
-      Type: Struct ActionStateChangeRequestId
-    PerTrackConstructionInfoStore:
-      Offset: '0x10'
-      Size: '0x140'
-      Type: Struct SerialisedConstructionInfoStore
+  - Name: LatestEpochIds
+    Offset: '0x0'
+    Size: '0x1'
+    Type: Struct ActionStateChangeRequestId
+  - Name: LatestRequestIds
+    Offset: '0x5'
+    Size: '0x1'
+    Type: Struct ActionStateChangeRequestId
+  - Name: PerTrackConstructionInfoStore
+    Offset: '0x10'
+    Size: '0x140'
+    Type: Struct SerialisedConstructionInfoStore
   ClassSize: '0x150'
 SerialisedActionStateInfo:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x40'
 SerialisedActionStateMessage:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x18'
 SerialisedConstructionInfoStore:
   Attributes:
-    SerialisedConstructionInfo:
-      Offset: '0x0'
-      Size: '0x40'
-      Type: Struct SerialisedActionStateInfo
+  - Name: SerialisedConstructionInfo
+    Offset: '0x0'
+    Size: '0x40'
+    Type: Struct SerialisedActionStateInfo
   ClassSize: '0x140'
 TestActionStateConstructionInfo:
   Attributes:
-    IntProp:
-      Offset: '0x28'
-      Size: '0x4'
-      Type: int
+  - Name: IntProp
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x30'
 TestActionStateConstructionInfoWithInner:
   Attributes:
-    FloatProp:
-      Offset: '0x28'
-      Size: '0x4'
-      Type: float
-    InnerStruct:
-      Offset: '0x30'
-      Size: '0x18'
-      Type: Struct InnerTestStruct
+  - Name: FloatProp
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: InnerStruct
+    Offset: '0x30'
+    Size: '0x18'
+    Type: Struct InnerTestStruct
   ClassSize: '0x48'
 TestActionStateConstructionInfoWithObjPointers:
   Attributes:
-    Array:
-      Offset: '0x38'
-      Size: '0x10'
-      Type: TArray<class Array*>
-    Inner:
-      Offset: '0x30'
-      Size: '0x8'
-      Type: Struct InnerWithObjTestStruct
-    ObjPointer:
-      Offset: '0x28'
-      Size: '0x8'
-      Type: Class Object*
+  - Name: ObjPointer
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: Inner
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Struct InnerWithObjTestStruct
+  - Name: Array
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<class Array*>
   ClassSize: '0x48'
 TestActionStateMessage:
   Attributes:
-    TestProperty:
-      Offset: '0x10'
-      Size: '0x4'
-      Type: int
+  - Name: TestProperty
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x18'
 TestActionStateMessage2:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 TestActionStateSerialisableData:
   Attributes:
-    IntProp:
-      Offset: '0x30'
-      Size: '0x4'
-      Type: int
+  - Name: IntProp
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x38'
 TestActorActionStateConstructionInfo:
   Attributes:
-    IntProp:
-      Offset: '0x30'
-      Size: '0x4'
-      Type: int
+  - Name: IntProp
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x38'

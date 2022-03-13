@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BumperZoneData:
   Attributes:
-    BumperZone:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class ShipBumperZone*
+  - Name: BumperZone
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class ShipBumperZone*
   ClassSize: '0x28'
 CachedShip:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x18'

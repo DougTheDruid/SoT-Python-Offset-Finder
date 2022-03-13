@@ -2,637 +2,637 @@
 # https://github.com/DougTheDruid
 Box:
   Attributes:
-    IsValid:
-      Offset: '0x18'
-      Size: '0x1'
-      Type: byte
-    Max:
-      Offset: '0xc'
-      Size: '0xc'
-      Type: Struct Vector
-    Min:
-      Offset: '0x0'
-      Size: '0xc'
-      Type: Struct Vector
+  - Name: Min
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Max
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: IsValid
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x1c'
 Box2D:
   Attributes:
-    IsValid:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: byte
-    Max:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Struct Vector2D
-    Min:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct Vector2D
+  - Name: Min
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Max
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: IsValid
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x14'
 BoxSphereBounds:
   Attributes:
-    BoxExtent:
-      Offset: '0xc'
-      Size: '0xc'
-      Type: Struct Vector
-    Origin:
-      Offset: '0x0'
-      Size: '0xc'
-      Type: Struct Vector
-    SphereRadius:
-      Offset: '0x18'
-      Size: '0x4'
-      Type: float
+  - Name: Origin
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: BoxExtent
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: SphereRadius
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x1c'
 Color:
   Attributes:
-    A:
-      Offset: '0x3'
-      Size: '0x1'
-      Type: byte
-    B:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    G:
-      Offset: '0x1'
-      Size: '0x1'
-      Type: byte
-    R:
-      Offset: '0x2'
-      Size: '0x1'
-      Type: byte
+  - Name: B
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: G
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: R
+    Offset: '0x2'
+    Size: '0x1'
+    Type: byte
+  - Name: A
+    Offset: '0x3'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x4'
 DateTime:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
 Default__ScriptStruct:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
 FallbackStruct:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 FloatInterval:
   Attributes:
-    Max:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    Min:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
+  - Name: Min
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Max
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x8'
 FloatRange:
   Attributes:
-    LowerBound:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct FloatRangeBound
-    UpperBound:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Struct FloatRangeBound
+  - Name: LowerBound
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct FloatRangeBound
+  - Name: UpperBound
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct FloatRangeBound
   ClassSize: '0x10'
 FloatRangeBound:
   Attributes:
-    Type:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    Value:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
+  - Name: Type
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Value
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x8'
 Guid:
   Attributes:
-    A:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    B:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
-    C:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: int
-    D:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: int
+  - Name: A
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: B
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: C
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: D
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x10'
 Int32Interval:
   Attributes:
-    Max:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
-    Min:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
+  - Name: Min
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Max
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x8'
 Int32Range:
   Attributes:
-    LowerBound:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct Int32RangeBound
-    UpperBound:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Struct Int32RangeBound
+  - Name: LowerBound
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Int32RangeBound
+  - Name: UpperBound
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct Int32RangeBound
   ClassSize: '0x10'
 Int32RangeBound:
   Attributes:
-    Type:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    Value:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
+  - Name: Type
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Value
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x8'
 IntPoint:
   Attributes:
-    X:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    Y:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
+  - Name: X
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Y
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x8'
 IntVector:
   Attributes:
-    X:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    Y:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
-    Z:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: int
+  - Name: X
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Y
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: Z
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
   ClassSize: '0xc'
 InterpCurveFloat:
   Attributes:
-    LoopKeyOffset:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: float
-    Points:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct InterpCurvePointVector2D>
-    bIsLooped:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: bool
+  - Name: Points
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct InterpCurvePointVector2D>
+  - Name: bIsLooped
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: LoopKeyOffset
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x18'
 InterpCurveLinearColor:
   Attributes:
-    LoopKeyOffset:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: float
-    Points:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct Transform>
-    bIsLooped:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: bool
+  - Name: Points
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct Transform>
+  - Name: bIsLooped
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: LoopKeyOffset
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x18'
 InterpCurvePointFloat:
   Attributes:
-    ArriveTangent:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
-    InVal:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    InterpMode:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: byte
-    LeaveTangent:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: float
-    OutVal:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
+  - Name: InVal
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OutVal
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: ArriveTangent
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: LeaveTangent
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: InterpMode
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x14'
 InterpCurvePointLinearColor:
   Attributes:
-    ArriveTangent:
-      Offset: '0x14'
-      Size: '0x10'
-      Type: Struct LinearColor
-    InVal:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    InterpMode:
-      Offset: '0x34'
-      Size: '0x1'
-      Type: byte
-    LeaveTangent:
-      Offset: '0x24'
-      Size: '0x10'
-      Type: Struct LinearColor
-    OutVal:
-      Offset: '0x4'
-      Size: '0x10'
-      Type: Struct LinearColor
+  - Name: InVal
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OutVal
+    Offset: '0x4'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ArriveTangent
+    Offset: '0x14'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: LeaveTangent
+    Offset: '0x24'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: InterpMode
+    Offset: '0x34'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x38'
 InterpCurvePointQuat:
   Attributes:
-    ArriveTangent:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct Quat
-    InVal:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    InterpMode:
-      Offset: '0x40'
-      Size: '0x1'
-      Type: byte
-    LeaveTangent:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: Struct Quat
-    OutVal:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct Quat
+  - Name: InVal
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OutVal
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Quat
+  - Name: ArriveTangent
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Quat
+  - Name: LeaveTangent
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct Quat
+  - Name: InterpMode
+    Offset: '0x40'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x50'
 InterpCurvePointTwoVectors:
   Attributes:
-    ArriveTangent:
-      Offset: '0x1c'
-      Size: '0x18'
-      Type: Struct TwoVectors
-    InVal:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    InterpMode:
-      Offset: '0x4c'
-      Size: '0x1'
-      Type: byte
-    LeaveTangent:
-      Offset: '0x34'
-      Size: '0x18'
-      Type: Struct TwoVectors
-    OutVal:
-      Offset: '0x4'
-      Size: '0x18'
-      Type: Struct TwoVectors
+  - Name: InVal
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OutVal
+    Offset: '0x4'
+    Size: '0x18'
+    Type: Struct TwoVectors
+  - Name: ArriveTangent
+    Offset: '0x1c'
+    Size: '0x18'
+    Type: Struct TwoVectors
+  - Name: LeaveTangent
+    Offset: '0x34'
+    Size: '0x18'
+    Type: Struct TwoVectors
+  - Name: InterpMode
+    Offset: '0x4c'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x50'
 InterpCurvePointVector:
   Attributes:
-    ArriveTangent:
-      Offset: '0x10'
-      Size: '0xc'
-      Type: Struct Vector
-    InVal:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    InterpMode:
-      Offset: '0x28'
-      Size: '0x1'
-      Type: byte
-    LeaveTangent:
-      Offset: '0x1c'
-      Size: '0xc'
-      Type: Struct Vector
-    OutVal:
-      Offset: '0x4'
-      Size: '0xc'
-      Type: Struct Vector
+  - Name: InVal
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OutVal
+    Offset: '0x4'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: ArriveTangent
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: LeaveTangent
+    Offset: '0x1c'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: InterpMode
+    Offset: '0x28'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x2c'
 InterpCurvePointVector2D:
   Attributes:
-    ArriveTangent:
-      Offset: '0xc'
-      Size: '0x8'
-      Type: Struct Vector2D
-    InVal:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    InterpMode:
-      Offset: '0x1c'
-      Size: '0x1'
-      Type: byte
-    LeaveTangent:
-      Offset: '0x14'
-      Size: '0x8'
-      Type: Struct Vector2D
-    OutVal:
-      Offset: '0x4'
-      Size: '0x8'
-      Type: Struct Vector2D
+  - Name: InVal
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: OutVal
+    Offset: '0x4'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: ArriveTangent
+    Offset: '0xc'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: LeaveTangent
+    Offset: '0x14'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: InterpMode
+    Offset: '0x1c'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x20'
 InterpCurveQuat:
   Attributes:
-    LoopKeyOffset:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: float
-    Points:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct InterpCurvePointTwoVectors>
-    bIsLooped:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: bool
+  - Name: Points
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct InterpCurvePointTwoVectors>
+  - Name: bIsLooped
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: LoopKeyOffset
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x18'
 InterpCurveTwoVectors:
   Attributes:
-    LoopKeyOffset:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: float
-    Points:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct InterpCurvePointLinearColor>
-    bIsLooped:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: bool
+  - Name: Points
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct InterpCurvePointLinearColor>
+  - Name: bIsLooped
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: LoopKeyOffset
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x18'
 InterpCurveVector:
   Attributes:
-    LoopKeyOffset:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: float
-    Points:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct InterpCurvePointQuat>
-    bIsLooped:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: bool
+  - Name: Points
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct InterpCurvePointQuat>
+  - Name: bIsLooped
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: LoopKeyOffset
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x18'
 InterpCurveVector2D:
   Attributes:
-    LoopKeyOffset:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: float
-    Points:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct InterpCurvePointVector>
-    bIsLooped:
-      Offset: '0x10'
-      Size: '0x1'
-      Type: bool
+  - Name: Points
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct InterpCurvePointVector>
+  - Name: bIsLooped
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: LoopKeyOffset
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x18'
 LinearColor:
   Attributes:
-    A:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: float
-    B:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
-    G:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    R:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
+  - Name: R
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: G
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: B
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: A
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x10'
 Matrix:
   Attributes:
-    WPlane:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: Struct Plane
-    XPlane:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Plane
-    YPlane:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct Plane
-    ZPlane:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct Plane
+  - Name: XPlane
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Plane
+  - Name: YPlane
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Plane
+  - Name: ZPlane
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Plane
+  - Name: WPlane
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct Plane
   ClassSize: '0x40'
 OrientedBox:
   Attributes:
-    AxisX:
-      Offset: '0xc'
-      Size: '0xc'
-      Type: Struct Vector
-    AxisY:
-      Offset: '0x18'
-      Size: '0xc'
-      Type: Struct Vector
-    AxisZ:
-      Offset: '0x24'
-      Size: '0xc'
-      Type: Struct Vector
-    Center:
-      Offset: '0x0'
-      Size: '0xc'
-      Type: Struct Vector
-    ExtentX:
-      Offset: '0x30'
-      Size: '0x4'
-      Type: float
-    ExtentY:
-      Offset: '0x34'
-      Size: '0x4'
-      Type: float
-    ExtentZ:
-      Offset: '0x38'
-      Size: '0x4'
-      Type: float
+  - Name: Center
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: AxisX
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: AxisY
+    Offset: '0x18'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: AxisZ
+    Offset: '0x24'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: ExtentX
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: ExtentY
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  - Name: ExtentZ
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x3c'
 PackedNormal:
   Attributes:
-    W:
-      Offset: '0x3'
-      Size: '0x1'
-      Type: byte
-    X:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    Y:
-      Offset: '0x1'
-      Size: '0x1'
-      Type: byte
-    Z:
-      Offset: '0x2'
-      Size: '0x1'
-      Type: byte
+  - Name: X
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Y
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: Z
+    Offset: '0x2'
+    Size: '0x1'
+    Type: byte
+  - Name: W
+    Offset: '0x3'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x4'
 Plane:
   Attributes:
-    W:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: float
+  - Name: W
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x10'
 Quat:
   Attributes:
-    W:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: float
-    X:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    Y:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    Z:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
+  - Name: X
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Y
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Z
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: W
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x10'
 RandomStream:
   Attributes:
-    InitialSeed:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    Seed:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
+  - Name: InitialSeed
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Seed
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x8'
 Rotator:
   Attributes:
-    Pitch:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    Roll:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
-    Yaw:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
+  - Name: Pitch
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Yaw
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Roll
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xc'
 StringAssetReference:
   Attributes:
-    AssetLongPathname:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: AssetLongPathname
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
 StringClassReference:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 Timespan:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
 Transform:
   Attributes:
-    Rotation:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct Quat
-    Scale3D:
-      Offset: '0x20'
-      Size: '0xc'
-      Type: Struct Vector
-    Translation:
-      Offset: '0x10'
-      Size: '0xc'
-      Type: Struct Vector
+  - Name: Rotation
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Quat
+  - Name: Translation
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Scale3D
+    Offset: '0x20'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0x30'
 TwoVectors:
   Attributes:
-    v1:
-      Offset: '0x0'
-      Size: '0xc'
-      Type: Struct Vector
-    v2:
-      Offset: '0xc'
-      Size: '0xc'
-      Type: Struct Vector
+  - Name: v1
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: v2
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0x18'
 Vector:
   Attributes:
-    X:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    Y:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    Z:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
+  - Name: X
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Y
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Z
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xc'
 Vector2D:
   Attributes:
-    X:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    Y:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
+  - Name: X
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Y
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x8'
 Vector4:
   Attributes:
-    W:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: float
-    X:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    Y:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    Z:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
+  - Name: X
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Y
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Z
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: W
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x10'

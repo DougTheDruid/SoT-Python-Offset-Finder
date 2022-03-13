@@ -2,20 +2,20 @@
 # https://github.com/DougTheDruid
 WorldRegionSetup:
   Attributes:
-    GridSize:
-      Offset: '0x10'
-      Size: '0x8'
-      Type: Struct IntPoint
-    RegionNames:
-      Offset: '0x18'
-      Size: '0x10'
-      Type: TArray<Struct FName>
-    RegionSize:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Struct Vector2D
-    WorldBoundsOrigin:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct Vector2D
+  - Name: WorldBoundsOrigin
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: RegionSize
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: GridSize
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Struct IntPoint
+  - Name: RegionNames
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct FName>
   ClassSize: '0x28'

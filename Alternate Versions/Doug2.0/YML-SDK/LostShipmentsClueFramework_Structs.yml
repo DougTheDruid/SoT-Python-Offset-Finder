@@ -2,168 +2,168 @@
 # https://github.com/DougTheDruid
 ClueSite:
   Attributes:
-    Location:
-      Offset: '0x10'
-      Size: '0xc'
-      Type: Struct Vector
-    SiteData:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class ClueSiteData*
-    SiteType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: SiteType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: SiteData
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ClueSiteData*
+  - Name: Location
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0x20'
 ClueSiteLootHistory:
   Attributes:
-    History:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct LootSpawnedAtClueSite>
+  - Name: History
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct LootSpawnedAtClueSite>
   ClassSize: '0x10'
 ClueSiteLootRestriction:
   Attributes:
-    LootMax:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: int
-    SiteType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: SiteType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: LootMax
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x10'
 ClueSiteTypeSupportedDescribedByEntry:
   Attributes:
-    SiteType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
-    SupportedDescriptors:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Struct WeightedClueDescriptor>
+  - Name: SiteType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: SupportedDescriptors
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct WeightedClueDescriptor>
   ClassSize: '0x18'
 DebrisToRangeDist:
   Attributes:
-    NumberOfDebrisItemsToSpawn:
-      Offset: '0x0'
-      Size: '0x20'
-      Type: Struct WeightedProbabilityRange
-    WeightedDebrisTypeAsset:
-      Offset: '0x20'
-      Size: '0x8'
-      Type: Class WeightedDebrisDataAsset*
+  - Name: NumberOfDebrisItemsToSpawn
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: WeightedDebrisTypeAsset
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Class WeightedDebrisDataAsset*
   ClassSize: '0x28'
 EventClueObtained:
   Attributes:
-    ObtainedClue:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class ClueDescriptor*
-    ObtainedSiteType:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: class
+  - Name: ObtainedClue
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class ClueDescriptor*
+  - Name: ObtainedSiteType
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x20'
 LandClueCreationChoice:
   Attributes:
-    ClueCreator:
-      Offset: '0x10'
-      Size: '0x8'
-      Type: Class LandClueCreator*
-    ClueSiteType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
-    IslandIdentifier:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: struct FName
+  - Name: ClueSiteType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: IslandIdentifier
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ClueCreator
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class LandClueCreator*
   ClassSize: '0x18'
 LootSpawnedAtClueSite:
   Attributes:
-    NumLoot:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: int
-    SiteLocation:
-      Offset: '0x8'
-      Size: '0xc'
-      Type: Struct Vector
-    SiteType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: SiteType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: SiteLocation
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: NumLoot
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x18'
 LootToRangeDist:
   Attributes:
-    NumberOfLootItemsToSpawn:
-      Offset: '0x0'
-      Size: '0x20'
-      Type: Struct WeightedProbabilityRange
-    WeightedLootDescAsset:
-      Offset: '0x20'
-      Size: '0x8'
-      Type: Class WeightedTreasureChestDescAsset*
+  - Name: NumberOfLootItemsToSpawn
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: WeightedLootDescAsset
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Class WeightedTreasureChestDescAsset*
   ClassSize: '0x28'
 QuestVariableClueDescriptor:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
 QuestVariableClueSite:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
 QuestVariableClueSiteArray:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
 RestrictedClueType:
   Attributes:
-    Max:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: int
-    Type:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: Type
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Max
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x10'
 SeaClueCreationChoice:
   Attributes:
-    ClueCreator:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class SeaClueCreator*
-    SiteType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: SiteType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: ClueCreator
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class SeaClueCreator*
   ClassSize: '0x20'
 WeightedClueDescriptor:
   Attributes:
-    Descriptor:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
-    DifficultyWeightings:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Float >
+  - Name: Descriptor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: DifficultyWeightings
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Float >
   ClassSize: '0x18'
 WeightedClueDestinationDescriptor:
   Attributes:
-    DestinationType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
-    DifficultyWeightings:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Float >
+  - Name: DestinationType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: DifficultyWeightings
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Float >
   ClassSize: '0x18'
 WeightedDebris:
   Attributes:
-    Weight:
-      Offset: '0x20'
-      Size: '0x4'
-      Type: float
+  - Name: Weight
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x28'

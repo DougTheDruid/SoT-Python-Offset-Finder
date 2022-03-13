@@ -4,233 +4,278 @@
     "FullSize": "0x545",
     "InheritedSize": "0x428",
     "ClassSize": "0x11d",
-    "Attributes": {
-      "DefaultSceneRoot": {
+    "Attributes": [
+      {
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
-      "CreatureType": {
+      {
+        "Name": "CreatureType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x430"
       },
-      "NumOfCreatures": {
+      {
+        "Name": "NumOfCreatures",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x431"
       },
-      "BoundsBias": {
+      {
+        "Name": "BoundsBias",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x434"
       },
-      "StaticMeshComponent": {
+      {
+        "Name": "StaticMeshComponent",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
-      "currMaterial": {
+      {
+        "Name": "currMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x440"
       },
-      "MaterialInstance": {
+      {
+        "Name": "MaterialInstance",
         "Type": "TArray<class MaterialInstance*>",
         "Size": "0x10",
         "Offset": "0x448"
       },
-      "Seed": {
+      {
+        "Name": "Seed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x458"
       },
-      "FlapSpeed": {
+      {
+        "Name": "FlapSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x45c"
       },
-      "CirclingSpeed": {
+      {
+        "Name": "CirclingSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x460"
       },
-      "CirclingDirection": {
+      {
+        "Name": "CirclingDirection",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x464"
       },
-      "CirclingRadius": {
+      {
+        "Name": "CirclingRadius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x468"
       },
-      "FlapDeformation": {
+      {
+        "Name": "FlapDeformation",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x46c"
       },
-      "mud": {
+      {
+        "Name": "mud",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x470"
       },
-      "FlockSpeed": {
+      {
+        "Name": "FlockSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x474"
       },
-      "FlockingSpread": {
+      {
+        "Name": "FlockingSpread",
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x478"
       },
-      "FlockingHeight": {
+      {
+        "Name": "FlockingHeight",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x480"
       },
-      "BirdSpeed": {
+      {
+        "Name": "BirdSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x484"
       },
-      "BirdSpread": {
+      {
+        "Name": "BirdSpread",
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x488"
       },
-      "BirdHeight": {
+      {
+        "Name": "BirdHeight",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x490"
       },
-      "RandomHorizontalSpread": {
+      {
+        "Name": "RandomHorizontalSpread",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x494"
       },
-      "HueVariance": {
+      {
+        "Name": "HueVariance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x498"
       },
-      "RandomVerticalSpread": {
+      {
+        "Name": "RandomVerticalSpread",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x49c"
       },
-      "Smoothness": {
+      {
+        "Name": "Smoothness",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4a0"
       },
-      "SelectedCreatureType": {
-        "Type": "TArray<Assetclass >",
+      {
+        "Name": "SelectedCreatureType",
+        "Type": "TArray<Assetclass MaterialExpressionConstant>",
         "Size": "0x10",
         "Offset": "0x4a8"
       },
-      "Seagull": {
-        "Type": "TArray<Assetclass UMulticastInlineDelegateProperty>",
+      {
+        "Name": "Seagull",
+        "Type": "TArray<Assetclass StaticMeshComponent>",
         "Size": "0x10",
         "Offset": "0x4b8"
       },
-      "Size": {
+      {
+        "Name": "Size",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c8"
       },
-      "SizeVariance": {
+      {
+        "Name": "SizeVariance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4cc"
       },
-      "SimSpeed": {
+      {
+        "Name": "SimSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4d0"
       },
-      "BBox": {
+      {
+        "Name": "BBox",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x4d4"
       },
-      "Skellygull_01": {
-        "Type": "TArray<Assetclass >",
+      {
+        "Name": "Skellygull_01",
+        "Type": "TArray<Assetclass MaterialExpressionConstant>",
         "Size": "0x10",
         "Offset": "0x4e0"
       },
-      "Bats_01": {
+      {
+        "Name": "Bats_01",
         "Type": "TArray<Assetclass >",
         "Size": "0x10",
         "Offset": "0x4f0"
       },
-      "Parrot_01": {
-        "Type": "TArray<Assetclass None>",
+      {
+        "Name": "Parrot_01",
+        "Type": "TArray<Assetclass >",
         "Size": "0x10",
         "Offset": "0x500"
       },
-      "ScaleInDistance": {
+      {
+        "Name": "ScaleInDistance",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x510"
       },
-      "DistanceScale": {
+      {
+        "Name": "DistanceScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x514"
       },
-      "DrawDistanceWithoutScale": {
+      {
+        "Name": "DrawDistanceWithoutScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x518"
       },
-      "DrawDistanceWithScale": {
+      {
+        "Name": "DrawDistanceWithScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x51c"
       },
-      "ForceHibernation": {
+      {
+        "Name": "ForceHibernation",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x520"
       },
-      "HibernateAtNight": {
+      {
+        "Name": "HibernateAtNight",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x524"
       },
-      "HibernateBoundsExtension": {
+      {
+        "Name": "HibernateBoundsExtension",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x528"
       },
-      "hibernationStartTime": {
+      {
+        "Name": "hibernationStartTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x534"
       },
-      "hibernationEndTime": {
+      {
+        "Name": "hibernationEndTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x538"
       },
-      "HibernationTransitionTime": {
+      {
+        "Name": "HibernationTransitionTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x53c"
       },
-      "HibernationIndependance": {
+      {
+        "Name": "HibernationIndependance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x540"
       },
-      "Glide": {
+      {
+        "Name": "Glide",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x544"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

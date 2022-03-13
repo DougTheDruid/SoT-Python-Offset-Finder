@@ -2,102 +2,102 @@
 # https://github.com/DougTheDruid
 ExtraWind:
   Attributes:
-    Basis:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class Actor*
-    Source:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class Object*
+  - Name: Source
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: Basis
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
   ClassSize: '0x38'
 WindDirectionChanged:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 WindMagnitudeChanged:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 WindServiceParams:
   Attributes:
-    AbsoluteMaxWindMagnitude:
-      Offset: '0x18'
-      Size: '0x4'
-      Type: float
-    MaxAngleChange:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    MaxBlendTimeBetweenChanges:
-      Offset: '0x20'
-      Size: '0x4'
-      Type: float
-    MaxTimeChange:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: float
-    MaxWindMagnitude:
-      Offset: '0x14'
-      Size: '0x4'
-      Type: float
-    MinAngleChange:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    MinBlendTimeBetweenChanges:
-      Offset: '0x1c'
-      Size: '0x4'
-      Type: float
-    MinTimeChange:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
-    MinWindMagnitude:
-      Offset: '0x10'
-      Size: '0x4'
-      Type: float
+  - Name: MinAngleChange
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: MaxAngleChange
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: MinTimeChange
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: MaxTimeChange
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: MinWindMagnitude
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: MaxWindMagnitude
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: AbsoluteMaxWindMagnitude
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: MinBlendTimeBetweenChanges
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: MaxBlendTimeBetweenChanges
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x24'
 WindTurbulenceParameters:
   Attributes:
-    CalmTime:
-      Offset: '0x40'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    GustPower:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FloatRange
-    GustTime:
-      Offset: '0x10'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: GustPower
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: GustTime
+    Offset: '0x10'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: CalmTime
+    Offset: '0x40'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x70'
 WindZoneParams:
   Attributes:
-    InnerRadius:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
-    OuterRadius:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    TurbulenceScalar:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: float
-    WindOnlyAffectsTrees:
-      Offset: '0xc'
-      Size: '0x1'
-      Type: bool
+  - Name: OuterRadius
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: InnerRadius
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: TurbulenceScalar
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: WindOnlyAffectsTrees
+    Offset: '0xc'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x10'
 WindZoneTurbulence:
   Attributes:
-    Base:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    Current:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: float
+  - Name: Base
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Current
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x8'

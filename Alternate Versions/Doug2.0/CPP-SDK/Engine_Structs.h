@@ -5244,6 +5244,7 @@ public:
 	struct FName                                                 MessageType;                                       // 0x8(0x8)
 	int                                                          MessageIndex;                                      // 0x10(0x4)
 	Struct FString                                               MessageString;                                     // 0x18(0x10)
+	Class PlayerState*                                           RelatedPlayerState;                                // 0x28(0x8)
 	Class PlayerState*                                           RelatedPlayerState;                                // 0x30(0x8)
 	Class Object*                                                OptionalObject;                                    // 0x38(0x8)
 };

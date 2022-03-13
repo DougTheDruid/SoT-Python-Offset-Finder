@@ -2,16 +2,16 @@
 # https://github.com/DougTheDruid
 RetractorOrientationAdjustmentFlags:
   Attributes:
-    AdjustPitch:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: bool
-    AdjustRoll:
-      Offset: '0x1'
-      Size: '0x1'
-      Type: bool
-    AdjustYaw:
-      Offset: '0x2'
-      Size: '0x1'
-      Type: bool
+  - Name: AdjustPitch
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: AdjustRoll
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: AdjustYaw
+    Offset: '0x2'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x3'

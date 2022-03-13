@@ -2,130 +2,130 @@
 # https://github.com/DougTheDruid
 BP_PromptActor_EmissaryEntitlementPurchased_AF_C:
   Attributes:
-    OfferId:
-      Offset: '0x420'
-      Size: '0x10'
-      Type: Struct Guid
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x430'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: OfferId
+    Offset: '0x420'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Prompts
+    Offset: '0x430'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
   ClassSize: '0x38'
   FullSize: '0x440'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryEntitlementPurchased_GH_C:
   Attributes:
-    OfferId:
-      Offset: '0x420'
-      Size: '0x10'
-      Type: Struct Guid
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x430'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: OfferId
+    Offset: '0x420'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Prompts
+    Offset: '0x430'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
   ClassSize: '0x38'
   FullSize: '0x440'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryEntitlementPurchased_MA_C:
   Attributes:
-    OfferId:
-      Offset: '0x420'
-      Size: '0x10'
-      Type: Struct Guid
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x430'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: OfferId
+    Offset: '0x420'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Prompts
+    Offset: '0x430'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
   ClassSize: '0x38'
   FullSize: '0x440'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryEntitlementPurchased_OOS_C:
   Attributes:
-    OfferId:
-      Offset: '0x420'
-      Size: '0x10'
-      Type: Struct Guid
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x430'
-      Size: '0x10'
-      Type: TArray<Struct None>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: OfferId
+    Offset: '0x420'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Prompts
+    Offset: '0x430'
+    Size: '0x10'
+    Type: TArray<Struct Prompts>
   ClassSize: '0x38'
   FullSize: '0x440'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryEntitlementPurchased_RB_C:
   Attributes:
-    OfferId:
-      Offset: '0x420'
-      Size: '0x10'
-      Type: Struct Guid
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
-    PromptCounterAccessKey:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: class
-    Prompts:
-      Offset: '0x430'
-      Size: '0x10'
-      Type: TArray<Struct Prompts>
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*
+  - Name: PromptCounterAccessKey
+    Offset: '0x418'
+    Size: '0x8'
+    Type: class
+  - Name: OfferId
+    Offset: '0x420'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Prompts
+    Offset: '0x430'
+    Size: '0x10'
+    Type: TArray<Struct None>
   ClassSize: '0x38'
   FullSize: '0x440'
   InheritedSize: '0x408'

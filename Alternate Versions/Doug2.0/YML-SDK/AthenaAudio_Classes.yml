@@ -2,24 +2,24 @@
 # https://github.com/DougTheDruid
 AthenaAudioConfig:
   Attributes:
-    AnimNotifyPool:
-      Offset: '0x30'
-      Size: '0x8'
-      Type: Class WwiseObjectPoolWrapper*
-    ItemProxyPool:
-      Offset: '0x28'
-      Size: '0x8'
-      Type: Class WwiseObjectPoolWrapper*
+  - Name: ItemProxyPool
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: AnimNotifyPool
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 AthenaAudioModuleSettings:
   Attributes:
-    AudioConfigAsset:
-      Offset: '0x38'
-      Size: '0x10'
-      Type: Struct StringAssetReference
+  - Name: AudioConfigAsset
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'

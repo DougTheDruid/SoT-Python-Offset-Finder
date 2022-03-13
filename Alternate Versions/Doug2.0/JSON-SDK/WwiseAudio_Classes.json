@@ -4,411 +4,462 @@
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwiseEvent": {
     "Super": "Object",
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": {
-      "RequiredBank": {
+    "Attributes": [
+      {
+        "Name": "RequiredBank",
         "Type": "Class WwiseBank*",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "WaitForBankToLoad": {
+      {
+        "Name": "WaitForBankToLoad",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
       },
-      "DurationMin": {
+      {
+        "Name": "DurationMin",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x38"
       },
-      "DurationMax": {
+      {
+        "Name": "DurationMax",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3c"
       },
-      "MaxAttenuation": {
+      {
+        "Name": "MaxAttenuation",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      "DurationType": {
+      {
+        "Name": "DurationType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x44"
       },
-      "CookedIsStopEvent": {
+      {
+        "Name": "CookedIsStopEvent",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x45"
       }
-    }
+    ]
   },
   "MovieSceneAkAudioEventSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0xa0",
     "InheritedSize": "0x98",
     "ClassSize": "0x8",
-    "Attributes": {
-      "Event": {
+    "Attributes": [
+      {
+        "Name": "Event",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x98"
       }
-    }
+    ]
   },
   "MovieSceneAkAudioRTPCSection": {
     "Super": "MovieSceneSection",
     "FullSize": "0x128",
     "InheritedSize": "0x98",
     "ClassSize": "0x90",
-    "Attributes": {
-      "Name": {
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0xa0"
       },
-      "FloatCurve": {
+      {
+        "Name": "FloatCurve",
         "Type": "Struct RichCurve",
         "Size": "0x78",
         "Offset": "0xb0"
       }
-    }
+    ]
   },
   "MovieSceneAkTrack": {
     "Super": "MovieSceneTrack",
     "FullSize": "0xa0",
     "InheritedSize": "0x88",
     "ClassSize": "0x18",
-    "Attributes": {
-      "Sections": {
+    "Attributes": [
+      {
+        "Name": "Sections",
         "Type": "TArray<class Sections*>",
         "Size": "0x10",
         "Offset": "0x88"
       },
-      "bIsAMasterTrack": {
+      {
+        "Name": "bIsAMasterTrack",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x98"
       }
-    }
+    ]
   },
   "MovieSceneAkAudioEventTrack": {
     "Super": "MovieSceneAkTrack",
     "FullSize": "0xa0",
     "InheritedSize": "0xa0",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "MovieSceneAkAudioRTPCTrack": {
     "Super": "MovieSceneAkTrack",
     "FullSize": "0xa0",
     "InheritedSize": "0xa0",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwiseAudioSettings": {
     "Super": "Object",
     "FullSize": "0x3e8",
     "InheritedSize": "0x28",
     "ClassSize": "0x3c0",
-    "Attributes": {
-      "ReverbPresetSettings": {
+    "Attributes": [
+      {
+        "Name": "ReverbPresetSettings",
         "Type": "Struct WwiseAudioReverbPresets",
         "Size": "0x64",
         "Offset": "0xe8"
       },
-      "BinkSettings": {
+      {
+        "Name": "BinkSettings",
         "Type": "Struct WwiseBinkSettings",
         "Size": "0x38",
         "Offset": "0x150"
       },
-      "PersistentSoundBanks": {
+      {
+        "Name": "PersistentSoundBanks",
         "Type": "TArray<Struct BinkSettings>",
         "Size": "0x10",
         "Offset": "0x188"
       },
-      "InitBank": {
+      {
+        "Name": "InitBank",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x198"
       },
-      "WwiseSoundbanksRoot": {
+      {
+        "Name": "WwiseSoundbanksRoot",
         "Type": "Struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x1a8"
       },
-      "WwiseIDsDatabase": {
+      {
+        "Name": "WwiseIDsDatabase",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x1b8"
       },
-      "WwiseStreamedFilesDirectory": {
+      {
+        "Name": "WwiseStreamedFilesDirectory",
         "Type": "Struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x1c8"
       },
-      "AsyncIOPriorityMappings": {
+      {
+        "Name": "AsyncIOPriorityMappings",
         "Type": "TArray<Struct WwiseStreamedFilesDirectory>",
         "Size": "0x10",
         "Offset": "0x1d8"
       },
-      "TritonAcousticMapsDirectory": {
+      {
+        "Name": "TritonAcousticMapsDirectory",
         "Type": "Struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x1e8"
       },
-      "DefaultLanguage": {
+      {
+        "Name": "DefaultLanguage",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x1f8"
       },
-      "SinkSharesetName": {
+      {
+        "Name": "SinkSharesetName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x208"
       },
-      "PauseEventStart": {
+      {
+        "Name": "PauseEventStart",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x218"
       },
-      "PauseEventRelease": {
+      {
+        "Name": "PauseEventRelease",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x228"
       },
-      "StopAllEvent": {
+      {
+        "Name": "StopAllEvent",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x238"
       },
-      "NetworkRelationship": {
+      {
+        "Name": "NetworkRelationship",
         "Type": "Struct WwiseNetworkRelationship",
         "Size": "0x18",
         "Offset": "0x248"
       },
-      "AudioStateSettings": {
+      {
+        "Name": "AudioStateSettings",
         "Type": "Struct WwiseAudioGameStateSettings",
         "Size": "0xa0",
         "Offset": "0x260"
       },
-      "PauseEventStartInstance": {
+      {
+        "Name": "PauseEventStartInstance",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x308"
       },
-      "PauseEventReleaseInstance": {
+      {
+        "Name": "PauseEventReleaseInstance",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x310"
       },
-      "StopAllEventInstance": {
+      {
+        "Name": "StopAllEventInstance",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x318"
       },
-      "AnimNotifyPoolInstance": {
+      {
+        "Name": "AnimNotifyPoolInstance",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x320"
       },
-      "EventsToPlayOnFrontendStartInstance": {
+      {
+        "Name": "EventsToPlayOnFrontendStartInstance",
         "Type": "TArray<class EventsToPlayOnFrontendStartInstance*>",
         "Size": "0x10",
         "Offset": "0x368"
       },
-      "EventsToPlayOnFrontendEndInstance": {
+      {
+        "Name": "EventsToPlayOnFrontendEndInstance",
         "Type": "TArray<class EventsToPlayOnFrontendEndInstance*>",
         "Size": "0x10",
         "Offset": "0x378"
       },
-      "EventsToPlayOnStartEngagementInstance": {
+      {
+        "Name": "EventsToPlayOnStartEngagementInstance",
         "Type": "TArray<class EventsToPlayOnStartEngagementInstance*>",
         "Size": "0x10",
         "Offset": "0x388"
       },
-      "EventsToPlayOnEndEngagementInstance": {
+      {
+        "Name": "EventsToPlayOnEndEngagementInstance",
         "Type": "TArray<class EventsToPlayOnEndEngagementInstance*>",
         "Size": "0x10",
         "Offset": "0x398"
       },
-      "EventsToPlayOnLoadingStartInstance": {
+      {
+        "Name": "EventsToPlayOnLoadingStartInstance",
         "Type": "TArray<class EventsToPlayOnLoadingStartInstance*>",
         "Size": "0x10",
         "Offset": "0x3a8"
       },
-      "EventsToPlayOnLoadingEndInstance": {
+      {
+        "Name": "EventsToPlayOnLoadingEndInstance",
         "Type": "TArray<class EventsToPlayOnLoadingEndInstance*>",
         "Size": "0x10",
         "Offset": "0x3b8"
       },
-      "EventsToPlayOnFrontEndOrLoadingStartInstance": {
+      {
+        "Name": "EventsToPlayOnFrontEndOrLoadingStartInstance",
         "Type": "TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>",
         "Size": "0x10",
         "Offset": "0x3c8"
       },
-      "EventsToPlayOnFrontEndOrLoadingEndInstance": {
+      {
+        "Name": "EventsToPlayOnFrontEndOrLoadingEndInstance",
         "Type": "TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>",
         "Size": "0x10",
         "Offset": "0x3d8"
       }
-    }
+    ]
   },
   "WwiseBank": {
     "Super": "Object",
     "FullSize": "0x68",
     "InheritedSize": "0x28",
     "ClassSize": "0x40",
-    "Attributes": {
-      "path": {
+    "Attributes": [
+      {
+        "Name": "path",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "WwiseSubSystemInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwiseDebugManager": {
     "Super": "Object",
     "FullSize": "0x88",
     "InheritedSize": "0x28",
     "ClassSize": "0x60",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwiseEmitterInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwiseEmitterManager": {
     "Super": "Object",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwiseDDSEvent": {
     "Super": "WwiseEvent",
     "FullSize": "0x60",
     "InheritedSize": "0x50",
     "ClassSize": "0x10",
-    "Attributes": {
-      "DDSArgumentsGroupsIDs": {
+    "Attributes": [
+      {
+        "Name": "DDSArgumentsGroupsIDs",
         "Type": "TArray<UInt32 None>",
         "Size": "0x10",
         "Offset": "0x50"
       }
-    }
+    ]
   },
   "WwiseIDsDatabase": {
     "Super": "DataAsset",
     "FullSize": "0xa8",
     "InheritedSize": "0x28",
     "ClassSize": "0x80",
-    "Attributes": {
-      "StateGroupIDs": {
+    "Attributes": [
+      {
+        "Name": "StateGroupIDs",
         "Type": "TArray<UInt32 None>",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "StateGroupNames": {
+      {
+        "Name": "StateGroupNames",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x38"
       },
-      "StateValueIDs": {
+      {
+        "Name": "StateValueIDs",
         "Type": "TArray<UInt32 >",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      "StateValueNames": {
+      {
+        "Name": "StateValueNames",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x58"
       },
-      "SwitchGroupIDs": {
+      {
+        "Name": "SwitchGroupIDs",
         "Type": "TArray<UInt32 >",
         "Size": "0x10",
         "Offset": "0x68"
       },
-      "SwitchGroupNames": {
+      {
+        "Name": "SwitchGroupNames",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x78"
       },
-      "SwitchStateIDs": {
+      {
+        "Name": "SwitchStateIDs",
         "Type": "TArray<UInt32 >",
         "Size": "0x10",
         "Offset": "0x88"
       },
-      "SwitchStateNames": {
+      {
+        "Name": "SwitchStateNames",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x98"
       }
-    }
+    ]
   },
   "WwiseInputManagerInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwiseInputManager": {
     "Super": "Object",
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwiseMediaManager": {
     "Super": "Object",
     "FullSize": "0x78",
     "InheritedSize": "0x28",
     "ClassSize": "0x50",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwisePersistentContentStore": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "PersistentlyLoadedBanks": {
+    "Attributes": [
+      {
+        "Name": "PersistentlyLoadedBanks",
         "Type": "TArray<class PersistentlyLoadedBanks*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "WwisePoolManager": {
     "Super": "Object",
     "FullSize": "0x100",
     "InheritedSize": "0x28",
     "ClassSize": "0xd8",
-    "Attributes": {}
+    "Attributes": []
   },
   "WwiseSoundFrameManager": {
     "Super": "Object",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": {}
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

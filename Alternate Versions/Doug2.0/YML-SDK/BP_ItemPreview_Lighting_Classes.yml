@@ -2,34 +2,34 @@
 # https://github.com/DougTheDruid
 BP_ItemPreview_Lighting_C:
   Attributes:
-    DefaultSceneRoot:
-      Offset: '0x400'
-      Size: '0x8'
-      Type: Class SceneComponent*
-    ExponentialHeightFog:
-      Offset: '0x3d0'
-      Size: '0x8'
-      Type: Class ExponentialHeightFogComponent*
-    PostProcess:
-      Offset: '0x3f8'
-      Size: '0x8'
-      Type: Class PostProcessComponent*
-    SkyLight:
-      Offset: '0x3d8'
-      Size: '0x8'
-      Type: Class SkyLightComponent*
-    SpotLight:
-      Offset: '0x3f0'
-      Size: '0x8'
-      Type: Class SpotLightComponent*
-    SpotLight1:
-      Offset: '0x3e8'
-      Size: '0x8'
-      Type: Class SpotLightComponent*
-    SpotLight2:
-      Offset: '0x3e0'
-      Size: '0x8'
-      Type: Class SpotLightComponent*
+  - Name: None
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class ExponentialHeightFogComponent*
+  - Name: None
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class SkyLightComponent*
+  - Name: None
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class SpotLightComponent*
+  - Name: None
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class SpotLightComponent*
+  - Name: None
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class SpotLightComponent*
+  - Name: None
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class PostProcessComponent*
+  - Name: None
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class SceneComponent*
   ClassSize: '0x58'
   FullSize: '0x428'
   InheritedSize: '0x3d0'

@@ -2,261 +2,261 @@
 # https://github.com/DougTheDruid
 DeedProgressDesc:
   Attributes:
-    Audio:
-      Offset: '0x40'
-      Size: '0x40'
-      Type: Struct GenericPopupAudioDescriptor
-    Description:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
-    Icon:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct FString
-    NavigationDesc:
-      Offset: '0x20'
-      Size: '0x14'
-      Type: Struct NavigationDesc
-    ProgressValue:
-      Offset: '0x34'
-      Size: '0x4'
-      Type: int
-    Threshold:
-      Offset: '0x38'
-      Size: '0x4'
-      Type: int
+  - Name: Description
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Icon
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: NavigationDesc
+    Offset: '0x20'
+    Size: '0x14'
+    Type: Struct NavigationDesc
+  - Name: ProgressValue
+    Offset: '0x34'
+    Size: '0x4'
+    Type: int
+  - Name: Threshold
+    Offset: '0x38'
+    Size: '0x4'
+    Type: int
+  - Name: Audio
+    Offset: '0x40'
+    Size: '0x40'
+    Type: Struct GenericPopupAudioDescriptor
   ClassSize: '0x80'
 DisableMoreButtonEvent:
   Attributes:
-    MoreButtonSource:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
+  - Name: MoreButtonSource
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x1'
 EnableMoreButtonEvent:
   Attributes:
-    MoreButtonSource:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    Navigation:
-      Offset: '0x4'
-      Size: '0x14'
-      Type: Struct NavigationDesc
+  - Name: MoreButtonSource
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Navigation
+    Offset: '0x4'
+    Size: '0x14'
+    Type: Struct NavigationDesc
   ClassSize: '0x18'
 NavigationDesc:
   Attributes:
-    Action:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    Id:
-      Offset: '0x4'
-      Size: '0x10'
-      Type: Struct Guid
+  - Name: Action
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Id
+    Offset: '0x4'
+    Size: '0x10'
+    Type: Struct Guid
   ClassSize: '0x14'
 OpenSeasonsMenuEvent:
   Attributes:
-    Id:
-      Offset: '0x4'
-      Size: '0x10'
-      Type: Struct Guid
-    NavigationAction:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
+  - Name: NavigationAction
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Id
+    Offset: '0x4'
+    Size: '0x10'
+    Type: Struct Guid
   ClassSize: '0x14'
 SeasonGoalPopupAsset:
   Attributes:
-    Category:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
-    ChatIcon:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    GlowIcon:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    Icon:
-      Offset: '0x18'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    ToastEventName:
-      Offset: '0x48'
-      Size: '0x10'
-      Type: Struct FString
-    ToastHoldDuration:
-      Offset: '0x78'
-      Size: '0x4'
-      Type: float
-    ToastSfxEventName:
-      Offset: '0x38'
-      Size: '0x10'
-      Type: Struct FString
-    ToastSwitchName:
-      Offset: '0x58'
-      Size: '0x10'
-      Type: Struct FString
-    ToastSwitchValue:
-      Offset: '0x68'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: Category
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: GlowIcon
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Icon
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: ChatIcon
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: ToastSfxEventName
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastEventName
+    Offset: '0x48'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastSwitchName
+    Offset: '0x58'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastSwitchValue
+    Offset: '0x68'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastHoldDuration
+    Offset: '0x78'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x80'
 SeasonIconPopupAsset:
   Attributes:
-    GlowIcon:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    Icon:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    ToastEventName:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: Struct FString
-    ToastHoldDuration:
-      Offset: '0x60'
-      Size: '0x4'
-      Type: float
-    ToastSfxEventName:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct FString
-    ToastSwitchName:
-      Offset: '0x40'
-      Size: '0x10'
-      Type: Struct FString
-    ToastSwitchValue:
-      Offset: '0x50'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: GlowIcon
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Icon
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: ToastSfxEventName
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastEventName
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastSwitchName
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastSwitchValue
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastHoldDuration
+    Offset: '0x60'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x68'
 SeasonNotificationContent:
   Attributes:
-    EventName:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: Struct FString
-    GlowIcon:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    Icon:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    SfxEventName:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct FString
-    SwitchName:
-      Offset: '0x40'
-      Size: '0x10'
-      Type: Struct FString
-    SwitchValue:
-      Offset: '0x50'
-      Size: '0x10'
-      Type: Struct FString
-    ToastHoldDuration:
-      Offset: '0x60'
-      Size: '0x4'
-      Type: float
+  - Name: GlowIcon
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Icon
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: SfxEventName
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: EventName
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SwitchName
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SwitchValue
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastHoldDuration
+    Offset: '0x60'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x68'
 SeasonProgressionUIEventTypeTelemetryFragment:
   Attributes:
-    EventName:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
-    NumReceivedEvents:
-      Offset: '0x10'
-      Size: '0x4'
-      Type: int
+  - Name: EventName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: NumReceivedEvents
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x18'
 SeasonProgressionUITelemetryFragment:
   Attributes:
-    ReceivedEventsData:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct SeasonProgressionUIEventTypeTelemetryFragment>
-    TotalNumReceivedEvents:
-      Offset: '0x10'
-      Size: '0x4'
-      Type: int
+  - Name: ReceivedEventsData
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct SeasonProgressionUIEventTypeTelemetryFragment>
+  - Name: TotalNumReceivedEvents
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x18'
 SeasonProgressionUITelemetryFragmentInput:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
 SeasonsChatNotification:
   Attributes:
-    Audio:
-      Offset: '0x20'
-      Size: '0x40'
-      Type: Struct GenericPopupAudioDescriptor
-    IconUrl:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
-    Message:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: IconUrl
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Message
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Audio
+    Offset: '0x20'
+    Size: '0x40'
+    Type: Struct GenericPopupAudioDescriptor
   ClassSize: '0x60'
 SeasonsChatNotificationEvent:
   Attributes:
-    SeasonsChatNotification:
-      Offset: '0x0'
-      Size: '0x60'
-      Type: Struct SeasonsChatNotification
+  - Name: SeasonsChatNotification
+    Offset: '0x0'
+    Size: '0x60'
+    Type: Struct SeasonsChatNotification
   ClassSize: '0x60'
 SeasonsDataRefreshEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 SeasonsPopupEvent:
   Attributes:
-    Audio:
-      Offset: '0x30'
-      Size: '0x40'
-      Type: Struct GenericPopupAudioDescriptor
-    Background:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct FString
-    HoldDuration:
-      Offset: '0x98'
-      Size: '0x4'
-      Type: float
-    Images:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: TArray<Str >
-    NavigationDesc:
-      Offset: '0x84'
-      Size: '0x14'
-      Type: Struct NavigationDesc
-    Rank:
-      Offset: '0x80'
-      Size: '0x4'
-      Type: int
-    StyleModifiers:
-      Offset: '0x70'
-      Size: '0x10'
-      Type: TArray<Byte Audio>
-    Text:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Text None>
+  - Name: Text
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Text None>
+  - Name: Images
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: Background
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Audio
+    Offset: '0x30'
+    Size: '0x40'
+    Type: Struct GenericPopupAudioDescriptor
+  - Name: StyleModifiers
+    Offset: '0x70'
+    Size: '0x10'
+    Type: TArray<Byte Audio>
+  - Name: Rank
+    Offset: '0x80'
+    Size: '0x4'
+    Type: int
+  - Name: NavigationDesc
+    Offset: '0x84'
+    Size: '0x14'
+    Type: Struct NavigationDesc
+  - Name: HoldDuration
+    Offset: '0x98'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xa0'
 ShowDeedProgressEvent:
   Attributes:
-    DeedProgressDesc:
-      Offset: '0x0'
-      Size: '0x80'
-      Type: Struct DeedProgressDesc
+  - Name: DeedProgressDesc
+    Offset: '0x0'
+    Size: '0x80'
+    Type: Struct DeedProgressDesc
   ClassSize: '0x80'

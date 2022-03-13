@@ -2,142 +2,142 @@
 # https://github.com/DougTheDruid
 EnchantedCompassProximityAnnouncementComponent:
   Attributes:
-    IsSettingEnabled:
-      Offset: '0x120'
-      Size: '0x1'
-      Type: bool
-    MaxFrequencyDistanceSquared:
-      Offset: '0xd8'
-      Size: '0x4'
-      Type: float
-    StartAnnouncingEvent:
-      Offset: '0xc8'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    StopAnnouncingEvent:
-      Offset: '0xd0'
-      Size: '0x8'
-      Type: Class WwiseEvent*
+  - Name: StartAnnouncingEvent
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopAnnouncingEvent
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: MaxFrequencyDistanceSquared
+    Offset: '0xd8'
+    Size: '0x4'
+    Type: float
+  - Name: IsSettingEnabled
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x128'
   FullSize: '0x1f0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 MultiTargetEnchantedCompass:
   Attributes:
-    InventoryItem:
-      Offset: '0x890'
-      Size: '0x8'
-      Type: Class InventoryItemComponent*
-    LocationIds:
-      Offset: '0x880'
-      Size: '0x10'
-      Type: TArray<Struct Locations>
-    Locations:
-      Offset: '0x870'
-      Size: '0x10'
-      Type: TArray<Struct BP_GetTargetLocations>
-    ProximityAnnouncementComponent:
-      Offset: '0x898'
-      Size: '0x8'
-      Type: Class EnchantedCompassProximityAnnouncementComponent*
+  - Name: Locations
+    Offset: '0x870'
+    Size: '0x10'
+    Type: TArray<Struct BP_GetTargetLocations>
+  - Name: LocationIds
+    Offset: '0x880'
+    Size: '0x10'
+    Type: TArray<Struct Locations>
+  - Name: InventoryItem
+    Offset: '0x890'
+    Size: '0x8'
+    Type: Class InventoryItemComponent*
+  - Name: ProximityAnnouncementComponent
+    Offset: '0x898'
+    Size: '0x8'
+    Type: Class EnchantedCompassProximityAnnouncementComponent*
   ClassSize: '0x30'
   FullSize: '0x8a0'
   InheritedSize: '0x870'
   Super: Compass
 PrototypeMultiTargetEnchantedCompass:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x8a0'
   InheritedSize: '0x8a0'
   Super: MultiTargetEnchantedCompass
 TaleQuestMultiTargetCompassAddTrackedLocationStep:
   Attributes:
-    Desc:
-      Offset: '0x90'
-      Size: '0x8'
-      Type: Class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc*
+  - Name: Desc
+    Offset: '0x90'
+    Size: '0x8'
+    Type: Class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc*
   ClassSize: '0x8'
   FullSize: '0x98'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 TaleQuestMultiTargetCompassAddTrackedLocationStepDesc:
   Attributes:
-    Location:
-      Offset: '0x80'
-      Size: '0x20'
-      Type: Struct QuestVariableVector
-    TargetID:
-      Offset: '0xa0'
-      Size: '0x20'
-      Type: Struct QuestVariableGuid
+  - Name: Location
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableVector
+  - Name: TargetID
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableGuid
   ClassSize: '0x40'
   FullSize: '0xc0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestMultiTargetCompassRemoveTrackedLocationStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
   FullSize: '0xa0'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc:
   Attributes:
-    TargetID:
-      Offset: '0x80'
-      Size: '0x20'
-      Type: Struct QuestVariableGuid
+  - Name: TargetID
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableGuid
   ClassSize: '0x20'
   FullSize: '0xa0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestMultiTargetCompassService:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
   FullSize: '0x140'
   InheritedSize: '0x120'
   Super: TaleQuestToolService
 TaleQuestMultiTargetCompassServiceDesc:
   Attributes:
-    CompassDesc:
-      Offset: '0x30'
-      Size: '0x8'
-      Type: class
+  - Name: CompassDesc
+    Offset: '0x30'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x8'
   FullSize: '0x38'
   InheritedSize: '0x30'
   Super: TaleQuestToolServiceDesc
 TaleQuestSetCompassTargetBaseStepDesc:
   Attributes:
-    TargetUpdateReason:
-      Offset: '0x80'
-      Size: '0x1'
-      Type: byte
+  - Name: TargetUpdateReason
+    Offset: '0x80'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSetCompassTargetToActorStepDesc:
   Attributes:
-    TargetActor:
-      Offset: '0x88'
-      Size: '0x20'
-      Type: Struct QuestVariableActor
+  - Name: TargetActor
+    Offset: '0x88'
+    Size: '0x20'
+    Type: Struct QuestVariableActor
   ClassSize: '0x20'
   FullSize: '0xa8'
   InheritedSize: '0x88'
   Super: TaleQuestSetCompassTargetBaseStepDesc
 TaleQuestSetCompassTargetToPointStepDesc:
   Attributes:
-    TargetPoint:
-      Offset: '0x88'
-      Size: '0x20'
-      Type: Struct QuestVariableOrientedPoint
+  - Name: TargetPoint
+    Offset: '0x88'
+    Size: '0x20'
+    Type: Struct QuestVariableOrientedPoint
   ClassSize: '0x20'
   FullSize: '0xa8'
   InheritedSize: '0x88'
   Super: TaleQuestSetCompassTargetBaseStepDesc
 TaleQuestSetCompassTargetToTargetStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x40'
   FullSize: '0xd0'
   InheritedSize: '0x90'

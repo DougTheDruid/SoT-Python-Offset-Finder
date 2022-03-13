@@ -26,7 +26,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryStoleLoot_C*       PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct None>                                          Prompts;                                           // 0x428(0x10)
+	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
 };
 
 

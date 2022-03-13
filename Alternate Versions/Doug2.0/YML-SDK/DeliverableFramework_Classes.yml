@@ -2,102 +2,102 @@
 # https://github.com/DougTheDruid
 DeliverableComponent:
   Attributes:
-    DeliveryRequirementsAsset:
-      Offset: '0xd8'
-      Size: '0x8'
-      Type: Class DeliverableRequirementsDataAsset*
+  - Name: DeliveryRequirementsAsset
+    Offset: '0xd8'
+    Size: '0x8'
+    Type: Class DeliverableRequirementsDataAsset*
   ClassSize: '0x20'
   FullSize: '0xe8'
   InheritedSize: '0xc8'
   Super: ActorComponent
 DeliverableInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 DeliverableRedirectionComponent:
   Attributes:
-    Context:
-      Offset: '0xd0'
-      Size: '0x8'
-      Type: Class DeliverableRedirectionContextBase*
+  - Name: Context
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: Class DeliverableRedirectionContextBase*
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
   Super: ActorComponent
 DeliverableRedirectionCompositeContext:
   Attributes:
-    Contexts:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<class Contexts*>
+  - Name: Contexts
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class Contexts*>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
   Super: DeliverableRedirectionContextBase
 DeliverableRedirectionContextBase:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
 DeliverableRedirectionContextHandlerBase:
   Attributes:
-    DestinationDescriptor:
-      Offset: '0x28'
-      Size: '0x8'
-      Type: Class DeliverableRedirectionDestinationDescriptorBase*
+  - Name: DestinationDescriptor
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class DeliverableRedirectionDestinationDescriptorBase*
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: Object
 DeliverableRedirectionDestinationDescriptorBase:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
 DeliverableRedirectionInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 DeliverableRedirectionLiteralDestinationDescriptor:
   Attributes:
-    Destination:
-      Offset: '0x28'
-      Size: '0x38'
-      Type: Struct FText
+  - Name: Destination
+    Offset: '0x28'
+    Size: '0x38'
+    Type: Struct FText
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
   Super: DeliverableRedirectionDestinationDescriptorBase
 DeliverableRedirectionNoContext:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: DeliverableRedirectionContextBase
 DeliverableRequirementBase:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: Object
 DeliverableRequirementsDataAsset:
   Attributes:
-    Requirements:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<class Requirements*>
+  - Name: Requirements
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class Requirements*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 DeliverableTooltipCustomizerInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

@@ -2,484 +2,484 @@
 # https://github.com/DougTheDruid
 AnimNode_BoneDrivenController:
   Attributes:
-    DrivingCurve:
-      Offset: '0x68'
-      Size: '0x8'
-      Type: Class CurveFloat*
-    ModificationMode:
-      Offset: '0x9c'
-      Size: '0x1'
-      Type: byte
-    Multiplier:
-      Offset: '0x70'
-      Size: '0x4'
-      Type: float
-    RangeMax:
-      Offset: '0x7c'
-      Size: '0x4'
-      Type: float
-    RangeMin:
-      Offset: '0x78'
-      Size: '0x4'
-      Type: float
-    RemappedMax:
-      Offset: '0x84'
-      Size: '0x4'
-      Type: float
-    RemappedMin:
-      Offset: '0x80'
-      Size: '0x4'
-      Type: float
-    SourceBone:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    SourceComponent:
-      Offset: '0x64'
-      Size: '0x1'
-      Type: byte
-    TargetBone:
-      Offset: '0x88'
-      Size: '0xc'
-      Type: Struct BoneReference
-    TargetComponent:
-      Offset: '0x94'
-      Size: '0x1'
-      Type: byte
-    bAffectTargetRotationX:
-      Offset: '0x98'
-      Size: '0x1'
-      Type: bool
-    bAffectTargetRotationY:
-      Offset: '0x98'
-      Size: '0x1'
-      Type: bool
-    bAffectTargetRotationZ:
-      Offset: '0x98'
-      Size: '0x1'
-      Type: bool
-    bAffectTargetScaleX:
-      Offset: '0x98'
-      Size: '0x1'
-      Type: bool
-    bAffectTargetScaleY:
-      Offset: '0x98'
-      Size: '0x1'
-      Type: bool
-    bAffectTargetScaleZ:
-      Offset: '0x99'
-      Size: '0x1'
-      Type: bool
-    bAffectTargetTranslationX:
-      Offset: '0x98'
-      Size: '0x1'
-      Type: bool
-    bAffectTargetTranslationY:
-      Offset: '0x98'
-      Size: '0x1'
-      Type: bool
-    bAffectTargetTranslationZ:
-      Offset: '0x98'
-      Size: '0x1'
-      Type: bool
-    bUseRange:
-      Offset: '0x74'
-      Size: '0x1'
-      Type: bool
+  - Name: SourceBone
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: SourceComponent
+    Offset: '0x64'
+    Size: '0x1'
+    Type: byte
+  - Name: DrivingCurve
+    Offset: '0x68'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: Multiplier
+    Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: bUseRange
+    Offset: '0x74'
+    Size: '0x1'
+    Type: bool
+  - Name: RangeMin
+    Offset: '0x78'
+    Size: '0x4'
+    Type: float
+  - Name: RangeMax
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: float
+  - Name: RemappedMin
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  - Name: RemappedMax
+    Offset: '0x84'
+    Size: '0x4'
+    Type: float
+  - Name: TargetBone
+    Offset: '0x88'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: TargetComponent
+    Offset: '0x94'
+    Size: '0x1'
+    Type: byte
+  - Name: bAffectTargetTranslationX
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectTargetTranslationY
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectTargetTranslationZ
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectTargetRotationX
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectTargetRotationY
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectTargetRotationZ
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectTargetScaleX
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectTargetScaleY
+    Offset: '0x98'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectTargetScaleZ
+    Offset: '0x99'
+    Size: '0x1'
+    Type: bool
+  - Name: ModificationMode
+    Offset: '0x9c'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0xa0'
 AnimNode_CopyBone:
   Attributes:
-    SourceBone:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    TargetBone:
-      Offset: '0x64'
-      Size: '0xc'
-      Type: Struct BoneReference
-    bCopyRotation:
-      Offset: '0x71'
-      Size: '0x1'
-      Type: bool
-    bCopyScale:
-      Offset: '0x72'
-      Size: '0x1'
-      Type: bool
-    bCopyTranslation:
-      Offset: '0x70'
-      Size: '0x1'
-      Type: bool
+  - Name: SourceBone
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: TargetBone
+    Offset: '0x64'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: bCopyTranslation
+    Offset: '0x70'
+    Size: '0x1'
+    Type: bool
+  - Name: bCopyRotation
+    Offset: '0x71'
+    Size: '0x1'
+    Type: bool
+  - Name: bCopyScale
+    Offset: '0x72'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x78'
 AnimNode_CopyPoseFromMesh:
   Attributes:
-    SourceMeshComponent:
-      Offset: '0x30'
-      Size: '0x8'
-      Type: Class SkeletalMeshComponent*
-    bUseAttachedParent:
-      Offset: '0x38'
-      Size: '0x1'
-      Type: bool
+  - Name: SourceMeshComponent
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class SkeletalMeshComponent*
+  - Name: bUseAttachedParent
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xc0'
 AnimNode_Fabrik:
   Attributes:
-    EffectorRotationSource:
-      Offset: '0xa0'
-      Size: '0x1'
-      Type: byte
-    EffectorTransform:
-      Offset: '0x60'
-      Size: '0x30'
-      Type: Struct Transform
-    EffectorTransformBone:
-      Offset: '0x94'
-      Size: '0xc'
-      Type: Struct BoneReference
-    EffectorTransformSpace:
-      Offset: '0x90'
-      Size: '0x1'
-      Type: byte
-    MaxIterations:
-      Offset: '0xc0'
-      Size: '0x4'
-      Type: int
-    Precision:
-      Offset: '0xbc'
-      Size: '0x4'
-      Type: float
-    RootBone:
-      Offset: '0xb0'
-      Size: '0xc'
-      Type: Struct BoneReference
-    TipBone:
-      Offset: '0xa4'
-      Size: '0xc'
-      Type: Struct BoneReference
-    bEnableDebugDraw:
-      Offset: '0xc4'
-      Size: '0x1'
-      Type: bool
+  - Name: EffectorTransform
+    Offset: '0x60'
+    Size: '0x30'
+    Type: Struct Transform
+  - Name: EffectorTransformSpace
+    Offset: '0x90'
+    Size: '0x1'
+    Type: byte
+  - Name: EffectorTransformBone
+    Offset: '0x94'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: EffectorRotationSource
+    Offset: '0xa0'
+    Size: '0x1'
+    Type: byte
+  - Name: TipBone
+    Offset: '0xa4'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: RootBone
+    Offset: '0xb0'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: Precision
+    Offset: '0xbc'
+    Size: '0x4'
+    Type: float
+  - Name: MaxIterations
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: int
+  - Name: bEnableDebugDraw
+    Offset: '0xc4'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xd0'
 AnimNode_HandIKRetargeting:
   Attributes:
-    HandFKWeight:
-      Offset: '0x98'
-      Size: '0x4'
-      Type: float
-    IKBonesToMove:
-      Offset: '0x88'
-      Size: '0x10'
-      Type: TArray<Struct LeftHandIK>
-    LeftHandFK:
-      Offset: '0x64'
-      Size: '0xc'
-      Type: Struct BoneReference
-    LeftHandIK:
-      Offset: '0x7c'
-      Size: '0xc'
-      Type: Struct BoneReference
-    RightHandFK:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    RightHandIK:
-      Offset: '0x70'
-      Size: '0xc'
-      Type: Struct BoneReference
+  - Name: RightHandFK
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: LeftHandFK
+    Offset: '0x64'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: RightHandIK
+    Offset: '0x70'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: LeftHandIK
+    Offset: '0x7c'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: IKBonesToMove
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<Struct LeftHandIK>
+  - Name: HandFKWeight
+    Offset: '0x98'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xa0'
 AnimNode_LookAt:
   Attributes:
-    BoneToModify:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    InterpolationTime:
-      Offset: '0x88'
-      Size: '0x4'
-      Type: float
-    InterpolationTriggerThreashold:
-      Offset: '0x8c'
-      Size: '0x4'
-      Type: float
-    InterpolationType:
-      Offset: '0x84'
-      Size: '0x1'
-      Type: byte
-    LookAtAxis:
-      Offset: '0x7c'
-      Size: '0x1'
-      Type: byte
-    LookAtBone:
-      Offset: '0x64'
-      Size: '0xc'
-      Type: Struct BoneReference
-    LookAtClamp:
-      Offset: '0x80'
-      Size: '0x4'
-      Type: float
-    LookAtLocation:
-      Offset: '0x70'
-      Size: '0xc'
-      Type: Struct Vector
-    LookUpAxis:
-      Offset: '0x7e'
-      Size: '0x1'
-      Type: byte
-    bEnableDebug:
-      Offset: '0x90'
-      Size: '0x1'
-      Type: bool
-    bUseLookUpAxis:
-      Offset: '0x7d'
-      Size: '0x1'
-      Type: bool
+  - Name: BoneToModify
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: LookAtBone
+    Offset: '0x64'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: LookAtLocation
+    Offset: '0x70'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: LookAtAxis
+    Offset: '0x7c'
+    Size: '0x1'
+    Type: byte
+  - Name: bUseLookUpAxis
+    Offset: '0x7d'
+    Size: '0x1'
+    Type: bool
+  - Name: LookUpAxis
+    Offset: '0x7e'
+    Size: '0x1'
+    Type: byte
+  - Name: LookAtClamp
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  - Name: InterpolationType
+    Offset: '0x84'
+    Size: '0x1'
+    Type: byte
+  - Name: InterpolationTime
+    Offset: '0x88'
+    Size: '0x4'
+    Type: float
+  - Name: InterpolationTriggerThreashold
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: float
+  - Name: bEnableDebug
+    Offset: '0x90'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xc0'
 AnimNode_ModifyBone:
   Attributes:
-    BoneToModify:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    Rotation:
-      Offset: '0x70'
-      Size: '0xc'
-      Type: Struct Rotator
-    RotationMode:
-      Offset: '0x89'
-      Size: '0x1'
-      Type: byte
-    RotationSpace:
-      Offset: '0x8c'
-      Size: '0x1'
-      Type: byte
-    Scale:
-      Offset: '0x7c'
-      Size: '0xc'
-      Type: Struct Vector
-    ScaleMode:
-      Offset: '0x8a'
-      Size: '0x1'
-      Type: byte
-    ScaleSpace:
-      Offset: '0x8d'
-      Size: '0x1'
-      Type: byte
-    Translation:
-      Offset: '0x64'
-      Size: '0xc'
-      Type: Struct Vector
-    TranslationMode:
-      Offset: '0x88'
-      Size: '0x1'
-      Type: byte
-    TranslationSpace:
-      Offset: '0x8b'
-      Size: '0x1'
-      Type: byte
+  - Name: BoneToModify
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: Translation
+    Offset: '0x64'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Rotation
+    Offset: '0x70'
+    Size: '0xc'
+    Type: Struct Rotator
+  - Name: Scale
+    Offset: '0x7c'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: TranslationMode
+    Offset: '0x88'
+    Size: '0x1'
+    Type: byte
+  - Name: RotationMode
+    Offset: '0x89'
+    Size: '0x1'
+    Type: byte
+  - Name: ScaleMode
+    Offset: '0x8a'
+    Size: '0x1'
+    Type: byte
+  - Name: TranslationSpace
+    Offset: '0x8b'
+    Size: '0x1'
+    Type: byte
+  - Name: RotationSpace
+    Offset: '0x8c'
+    Size: '0x1'
+    Type: byte
+  - Name: ScaleSpace
+    Offset: '0x8d'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x90'
 AnimNode_ObserveBone:
   Attributes:
-    BoneToObserve:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    DisplaySpace:
-      Offset: '0x64'
-      Size: '0x1'
-      Type: byte
-    Rotation:
-      Offset: '0x74'
-      Size: '0xc'
-      Type: Struct Rotator
-    Scale:
-      Offset: '0x80'
-      Size: '0xc'
-      Type: Struct Vector
-    Translation:
-      Offset: '0x68'
-      Size: '0xc'
-      Type: Struct Vector
-    bRelativeToRefPose:
-      Offset: '0x65'
-      Size: '0x1'
-      Type: bool
+  - Name: BoneToObserve
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: DisplaySpace
+    Offset: '0x64'
+    Size: '0x1'
+    Type: byte
+  - Name: bRelativeToRefPose
+    Offset: '0x65'
+    Size: '0x1'
+    Type: bool
+  - Name: Translation
+    Offset: '0x68'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Rotation
+    Offset: '0x74'
+    Size: '0xc'
+    Type: Struct Rotator
+  - Name: Scale
+    Offset: '0x80'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0x90'
 AnimNode_RotationMultiplier:
   Attributes:
-    Multiplier:
-      Offset: '0x70'
-      Size: '0x4'
-      Type: float
-    RotationAxisToRefer:
-      Offset: '0x74'
-      Size: '0x1'
-      Type: byte
-    SourceBone:
-      Offset: '0x64'
-      Size: '0xc'
-      Type: Struct BoneReference
-    TargetBone:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    bIsAdditive:
-      Offset: '0x75'
-      Size: '0x1'
-      Type: bool
+  - Name: TargetBone
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: SourceBone
+    Offset: '0x64'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: Multiplier
+    Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: RotationAxisToRefer
+    Offset: '0x74'
+    Size: '0x1'
+    Type: byte
+  - Name: bIsAdditive
+    Offset: '0x75'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x78'
 AnimNode_SkeletalControlBase:
   Attributes:
-    Alpha:
-      Offset: '0x48'
-      Size: '0x4'
-      Type: float
-    AlphaScaleBias:
-      Offset: '0x4c'
-      Size: '0x8'
-      Type: Struct InputScaleBias
-    ComponentPose:
-      Offset: '0x30'
-      Size: '0x18'
-      Type: Struct ComponentSpacePoseLink
+  - Name: ComponentPose
+    Offset: '0x30'
+    Size: '0x18'
+    Type: Struct ComponentSpacePoseLink
+  - Name: Alpha
+    Offset: '0x48'
+    Size: '0x4'
+    Type: float
+  - Name: AlphaScaleBias
+    Offset: '0x4c'
+    Size: '0x8'
+    Type: Struct InputScaleBias
   ClassSize: '0x58'
 AnimNode_SpringBone:
   Attributes:
-    ErrorResetThresh:
-      Offset: '0x74'
-      Size: '0x4'
-      Type: float
-    MaxDisplacement:
-      Offset: '0x68'
-      Size: '0x4'
-      Type: float
-    SpringBone:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    SpringDamping:
-      Offset: '0x70'
-      Size: '0x4'
-      Type: float
-    SpringStiffness:
-      Offset: '0x6c'
-      Size: '0x4'
-      Type: float
-    bLimitDisplacement:
-      Offset: '0x64'
-      Size: '0x1'
-      Type: bool
-    bNoZSpring:
-      Offset: '0x78'
-      Size: '0x1'
-      Type: bool
-    bRotateX:
-      Offset: '0x7c'
-      Size: '0x1'
-      Type: bool
-    bRotateY:
-      Offset: '0x7d'
-      Size: '0x1'
-      Type: bool
-    bRotateZ:
-      Offset: '0x7e'
-      Size: '0x1'
-      Type: bool
-    bTranslateX:
-      Offset: '0x79'
-      Size: '0x1'
-      Type: bool
-    bTranslateY:
-      Offset: '0x7a'
-      Size: '0x1'
-      Type: bool
-    bTranslateZ:
-      Offset: '0x7b'
-      Size: '0x1'
-      Type: bool
+  - Name: SpringBone
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: bLimitDisplacement
+    Offset: '0x64'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxDisplacement
+    Offset: '0x68'
+    Size: '0x4'
+    Type: float
+  - Name: SpringStiffness
+    Offset: '0x6c'
+    Size: '0x4'
+    Type: float
+  - Name: SpringDamping
+    Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: ErrorResetThresh
+    Offset: '0x74'
+    Size: '0x4'
+    Type: float
+  - Name: bNoZSpring
+    Offset: '0x78'
+    Size: '0x1'
+    Type: bool
+  - Name: bTranslateX
+    Offset: '0x79'
+    Size: '0x1'
+    Type: bool
+  - Name: bTranslateY
+    Offset: '0x7a'
+    Size: '0x1'
+    Type: bool
+  - Name: bTranslateZ
+    Offset: '0x7b'
+    Size: '0x1'
+    Type: bool
+  - Name: bRotateX
+    Offset: '0x7c'
+    Size: '0x1'
+    Type: bool
+  - Name: bRotateY
+    Offset: '0x7d'
+    Size: '0x1'
+    Type: bool
+  - Name: bRotateZ
+    Offset: '0x7e'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xa8'
 AnimNode_Trail:
   Attributes:
-    ChainBoneAxis:
-      Offset: '0x68'
-      Size: '0x1'
-      Type: byte
-    ChainLength:
-      Offset: '0x64'
-      Size: '0x4'
-      Type: int
-    FakeVelocity:
-      Offset: '0x74'
-      Size: '0xc'
-      Type: Struct Vector
-    StretchLimit:
-      Offset: '0x70'
-      Size: '0x4'
-      Type: float
-    TrailBone:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    TrailRelaxation:
-      Offset: '0x6c'
-      Size: '0x4'
-      Type: float
-    bActorSpaceFakeVel:
-      Offset: '0x80'
-      Size: '0x1'
-      Type: bool
-    bInvertChainBoneAxis:
-      Offset: '0x69'
-      Size: '0x1'
-      Type: bool
-    bLimitStretch:
-      Offset: '0x6a'
-      Size: '0x1'
-      Type: bool
+  - Name: TrailBone
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: ChainLength
+    Offset: '0x64'
+    Size: '0x4'
+    Type: int
+  - Name: ChainBoneAxis
+    Offset: '0x68'
+    Size: '0x1'
+    Type: byte
+  - Name: bInvertChainBoneAxis
+    Offset: '0x69'
+    Size: '0x1'
+    Type: bool
+  - Name: bLimitStretch
+    Offset: '0x6a'
+    Size: '0x1'
+    Type: bool
+  - Name: TrailRelaxation
+    Offset: '0x6c'
+    Size: '0x4'
+    Type: float
+  - Name: StretchLimit
+    Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: FakeVelocity
+    Offset: '0x74'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: bActorSpaceFakeVel
+    Offset: '0x80'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xe0'
 AnimNode_TwoBoneIK:
   Attributes:
-    EffectorLocation:
-      Offset: '0x64'
-      Size: '0xc'
-      Type: Struct Vector
-    EffectorLocationSpace:
-      Offset: '0x90'
-      Size: '0x1'
-      Type: byte
-    EffectorSpaceBoneName:
-      Offset: '0x84'
-      Size: '0x8'
-      Type: struct FName
-    IKBone:
-      Offset: '0x58'
-      Size: '0xc'
-      Type: Struct BoneReference
-    JointTargetLocation:
-      Offset: '0x70'
-      Size: '0xc'
-      Type: Struct Vector
-    JointTargetLocationSpace:
-      Offset: '0x91'
-      Size: '0x1'
-      Type: byte
-    JointTargetSpaceBoneName:
-      Offset: '0x94'
-      Size: '0x8'
-      Type: struct FName
-    StretchLimits:
-      Offset: '0x7c'
-      Size: '0x8'
-      Type: Struct Vector2D
-    bAllowStretching:
-      Offset: '0x8c'
-      Size: '0x1'
-      Type: bool
-    bMaintainEffectorRelRot:
-      Offset: '0x8c'
-      Size: '0x1'
-      Type: bool
-    bTakeRotationFromEffectorSpace:
-      Offset: '0x8c'
-      Size: '0x1'
-      Type: bool
+  - Name: IKBone
+    Offset: '0x58'
+    Size: '0xc'
+    Type: Struct BoneReference
+  - Name: EffectorLocation
+    Offset: '0x64'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: JointTargetLocation
+    Offset: '0x70'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: StretchLimits
+    Offset: '0x7c'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: EffectorSpaceBoneName
+    Offset: '0x84'
+    Size: '0x8'
+    Type: struct FName
+  - Name: bTakeRotationFromEffectorSpace
+    Offset: '0x8c'
+    Size: '0x1'
+    Type: bool
+  - Name: bMaintainEffectorRelRot
+    Offset: '0x8c'
+    Size: '0x1'
+    Type: bool
+  - Name: bAllowStretching
+    Offset: '0x8c'
+    Size: '0x1'
+    Type: bool
+  - Name: EffectorLocationSpace
+    Offset: '0x90'
+    Size: '0x1'
+    Type: byte
+  - Name: JointTargetLocationSpace
+    Offset: '0x91'
+    Size: '0x1'
+    Type: byte
+  - Name: JointTargetSpaceBoneName
+    Offset: '0x94'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0xa0'

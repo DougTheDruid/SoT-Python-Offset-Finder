@@ -2,24 +2,24 @@
 # https://github.com/DougTheDruid
 ReviveGhostAnimations:
   Attributes:
-    ReviveInto:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class AnimSequence*
-    ReviveLoop:
-      Offset: '0x10'
-      Size: '0x8'
-      Type: Class AnimSequence*
-    ReviveOutOf:
-      Offset: '0x18'
-      Size: '0x8'
-      Type: Class AnimSequence*
-    ReviveOutOfLoop:
-      Offset: '0x20'
-      Size: '0x8'
-      Type: Class AnimSequence*
-    SwimmingReviveInto:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class AnimSequence*
+  - Name: ReviveInto
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  - Name: SwimmingReviveInto
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  - Name: ReviveLoop
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  - Name: ReviveOutOf
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  - Name: ReviveOutOfLoop
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Class AnimSequence*
   ClassSize: '0x28'

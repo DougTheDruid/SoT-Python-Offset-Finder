@@ -2,29 +2,29 @@
 # https://github.com/DougTheDruid
 SocketId:
   Attributes:
-    Name:
-      Offset: '0x18'
-      Size: '0x8'
-      Type: struct FName
-    path:
-      Offset: '0x0'
-      Size: '0x18'
-      Type: Struct SocketPath
+  - Name: path
+    Offset: '0x0'
+    Size: '0x18'
+    Type: Struct SocketPath
+  - Name: Name
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x20'
 SocketLookupCache:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x50'
 SocketPath:
   Attributes:
-    Nodes:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct SocketId>
+  - Name: Nodes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct SocketId>
   ClassSize: '0x18'
 SocketPathNode:
   Attributes:
-    Name:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x8'

@@ -55,4 +55,116 @@ public:
 };
 
 
+// Size 0x0
+class BP_wpn_cutlass_par_01_a_v03_ItemInfo_C: public None
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_par_01_a_v03_Wieldable_C: public None
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_bri_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_pum_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_rea_mys_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_elb_01_a_v03_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_win_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_cra_01_a_v03_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_oos_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_par_01_a_v03_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_blb_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_ban_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_par_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_yr1_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_elb_01_a_v02_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_wth_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
 }

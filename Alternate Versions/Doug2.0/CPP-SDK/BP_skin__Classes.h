@@ -49,6 +49,13 @@ public:
 
 
 // Size 0x0
+class BP_skin_col_white_06_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_skin_col_white_05_Desc_C: public ClothingDesc
 {
 public:

@@ -2,8 +2,8 @@
 # https://github.com/DougTheDruid
 Key:
   Attributes:
-    KeyName:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: KeyName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x20'

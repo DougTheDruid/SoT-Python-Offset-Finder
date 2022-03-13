@@ -4,289 +4,316 @@
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "AthenaEngineInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "BoxedRpcDispatcherInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "BoxedRpcDispatcherComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "DynamicColourPointLightComponent": {
     "Super": "PointLightComponent",
     "FullSize": "0x5d0",
     "InheritedSize": "0x4a0",
     "ClassSize": "0x130",
-    "Attributes": {
-      "ActivationCurve": {
+    "Attributes": [
+      {
+        "Name": "ActivationCurve",
         "Type": "Struct RuntimeFloatCurve",
         "Size": "0x80",
         "Offset": "0x498"
       },
-      "DeactivationCurve": {
+      {
+        "Name": "DeactivationCurve",
         "Type": "Struct RuntimeFloatCurve",
         "Size": "0x80",
         "Offset": "0x518"
       }
-    }
+    ]
   },
   "EmptyObject": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "GameInstanceSessionIdProviderInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "NestedWorldRootDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {}
+    "Attributes": []
   },
   "OnlinePlayerPermissionsRetrieverInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "PlayModeHelpers": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "PlayModeInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "PrimitiveCollisionExtentAdjustOverTimeComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x108",
     "InheritedSize": "0xc8",
     "ClassSize": "0x40",
-    "Attributes": {
-      "DelayBeforeExtentAdjustment": {
+    "Attributes": [
+      {
+        "Name": "DelayBeforeExtentAdjustment",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc8"
       },
-      "CachedWorld": {
+      {
+        "Name": "CachedWorld",
         "Type": "Class World*",
         "Size": "0x8",
         "Offset": "0xf8"
       }
-    }
+    ]
   },
   "BoxCollisionExtentAdjustOverTimeComponent": {
     "Super": "PrimitiveCollisionExtentAdjustOverTimeComponent",
     "FullSize": "0x138",
     "InheritedSize": "0x108",
     "ClassSize": "0x30",
-    "Attributes": {
-      "ShouldAdjustBoxExtentX": {
+    "Attributes": [
+      {
+        "Name": "ShouldAdjustBoxExtentX",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x108"
       },
-      "PostAdjustmentBoxExtentX": {
+      {
+        "Name": "PostAdjustmentBoxExtentX",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10c"
       },
-      "ShouldAdjustBoxExtentY": {
+      {
+        "Name": "ShouldAdjustBoxExtentY",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x110"
       },
-      "PostAdjustmentBoxExtentY": {
+      {
+        "Name": "PostAdjustmentBoxExtentY",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x114"
       },
-      "ShouldAdjustBoxExtentZ": {
+      {
+        "Name": "ShouldAdjustBoxExtentZ",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x118"
       },
-      "PostAdjustmentBoxExtentZ": {
+      {
+        "Name": "PostAdjustmentBoxExtentZ",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x11c"
       },
-      "ServerSizeScale": {
+      {
+        "Name": "ServerSizeScale",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x120"
       },
-      "BoxCollisionToAdjust": {
+      {
+        "Name": "BoxCollisionToAdjust",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x130"
       }
-    }
+    ]
   },
   "SphereCollisionExtentAdjustOverTimeComponent": {
     "Super": "PrimitiveCollisionExtentAdjustOverTimeComponent",
     "FullSize": "0x120",
     "InheritedSize": "0x108",
     "ClassSize": "0x18",
-    "Attributes": {
-      "ShouldAdjustSphereRadius": {
+    "Attributes": [
+      {
+        "Name": "ShouldAdjustSphereRadius",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x108"
       },
-      "PostAdjustmentSphereRadius": {
+      {
+        "Name": "PostAdjustmentSphereRadius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10c"
       },
-      "ServerSizeScale": {
+      {
+        "Name": "ServerSizeScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x110"
       },
-      "SphereCollisionToAdjust": {
+      {
+        "Name": "SphereCollisionToAdjust",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x118"
       }
-    }
+    ]
   },
   "ResourceProviderInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "RotateMeshToActorComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xf8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x30",
-    "Attributes": {
-      "MeshToRotate": {
+    "Attributes": [
+      {
+        "Name": "MeshToRotate",
         "Type": "Class MeshComponent*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
-      "ActorToRotateTo": {
+      {
+        "Name": "ActorToRotateTo",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
-      "CloseProximityRadius": {
+      {
+        "Name": "CloseProximityRadius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd8"
       },
-      "Use2DDistanceForCloseProximityRadius": {
+      {
+        "Name": "Use2DDistanceForCloseProximityRadius",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xdc"
       },
-      "WhenInCloseProximityKeepLastYaw": {
+      {
+        "Name": "WhenInCloseProximityKeepLastYaw",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xdd"
       },
-      "RotationSpeed": {
+      {
+        "Name": "RotationSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe0"
       },
-      "PreventPitchModification": {
+      {
+        "Name": "PreventPitchModification",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xe4"
       },
-      "MaxPitch": {
+      {
+        "Name": "MaxPitch",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe8"
       },
-      "CloseProximityYawRotation": {
+      {
+        "Name": "CloseProximityYawRotation",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xec"
       }
-    }
+    ]
   },
   "RotateMeshToLocalPlayerComponent": {
     "Super": "RotateMeshToActorComponent",
     "FullSize": "0xf8",
     "InheritedSize": "0xf8",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "ServicesStampIdInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "SkeletalMeshAggregateTickComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xf8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x30",
-    "Attributes": {
-      "Mesh": {
+    "Attributes": [
+      {
+        "Name": "Mesh",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0xc8"
       }
-    }
+    ]
   },
   "StringToAssetClassMap": {
     "Super": "DataAsset",
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": {
-      "StringAssetClassPairs": {
+    "Attributes": [
+      {
+        "Name": "StringAssetClassPairs",
         "Type": "TArray<Struct ClosestActorToPoint>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "SyncedRandomRetrievalInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

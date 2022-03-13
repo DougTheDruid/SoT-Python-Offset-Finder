@@ -2,942 +2,942 @@
 # https://github.com/DougTheDruid
 AshenLordAshCloud:
   Attributes:
-    CloudMesh:
-      Offset: '0x3d0'
-      Size: '0x8'
-      Type: Class StaticMeshComponent*
-    CloudState:
-      Offset: '0x404'
-      Size: '0x1'
-      Type: byte
-    InnerRangeStartOffset:
-      Offset: '0x3e0'
-      Size: '0x4'
-      Type: float
-    LifeTime:
-      Offset: '0x3f8'
-      Size: '0x4'
-      Type: float
-    MaxRadiusMultiplier:
-      Offset: '0x43c'
-      Size: '0x4'
-      Type: float
-    NormalisedEngulfedRTPC:
-      Offset: '0x3e8'
-      Size: '0x8'
-      Type: struct FName
-    OuterRangeStart:
-      Offset: '0x3e4'
-      Size: '0x4'
-      Type: float
-    RTPCSecondsBetweenUpdates:
-      Offset: '0x3f0'
-      Size: '0x4'
-      Type: float
-    SetupData:
-      Offset: '0x3d8'
-      Size: '0x8'
-      Type: Class AshenLordAshCloudSetupDataAsset*
-    StartTime:
-      Offset: '0x3fc'
-      Size: '0x4'
-      Type: float
-    TimeOffset:
-      Offset: '0x400'
-      Size: '0x4'
-      Type: float
+  - Name: CloudMesh
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: SetupData
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class AshenLordAshCloudSetupDataAsset*
+  - Name: InnerRangeStartOffset
+    Offset: '0x3e0'
+    Size: '0x4'
+    Type: float
+  - Name: OuterRangeStart
+    Offset: '0x3e4'
+    Size: '0x4'
+    Type: float
+  - Name: NormalisedEngulfedRTPC
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: RTPCSecondsBetweenUpdates
+    Offset: '0x3f0'
+    Size: '0x4'
+    Type: float
+  - Name: LifeTime
+    Offset: '0x3f8'
+    Size: '0x4'
+    Type: float
+  - Name: StartTime
+    Offset: '0x3fc'
+    Size: '0x4'
+    Type: float
+  - Name: TimeOffset
+    Offset: '0x400'
+    Size: '0x4'
+    Type: float
+  - Name: CloudState
+    Offset: '0x404'
+    Size: '0x1'
+    Type: byte
+  - Name: MaxRadiusMultiplier
+    Offset: '0x43c'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x88'
   FullSize: '0x458'
   InheritedSize: '0x3d0'
   Super: Actor
 AshenLordAshCloudSetupDataAsset:
   Attributes:
-    AshCloudHeightCoefficient:
-      Offset: '0x58'
-      Size: '0x4'
-      Type: float
-    AshCloudLifetime:
-      Offset: '0x60'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    AshCloudRadiusInMetres:
-      Offset: '0x28'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    DissipationCurve:
-      Offset: '0x98'
-      Size: '0x8'
-      Type: Class CurveFloat*
-    ScaleUpSpeedCurve:
-      Offset: '0x90'
-      Size: '0x8'
-      Type: Class CurveFloat*
+  - Name: AshCloudRadiusInMetres
+    Offset: '0x28'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: AshCloudHeightCoefficient
+    Offset: '0x58'
+    Size: '0x4'
+    Type: float
+  - Name: AshCloudLifetime
+    Offset: '0x60'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: ScaleUpSpeedCurve
+    Offset: '0x90'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: DissipationCurve
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class CurveFloat*
   ClassSize: '0x78'
   FullSize: '0xa0'
   InheritedSize: '0x28'
   Super: DataAsset
 AshenLordVolcano:
   Attributes:
-    VolcanoSetupData:
-      Offset: '0x3d0'
-      Size: '0x8'
-      Type: Class AshenLordVolcanoSetupDataAsset*
+  - Name: VolcanoSetupData
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class AshenLordVolcanoSetupDataAsset*
   ClassSize: '0x70'
   FullSize: '0x440'
   InheritedSize: '0x3d0'
   Super: Actor
 AshenLordVolcanoSetupDataAsset:
   Attributes:
-    EmberSpawnHeightInMeters:
-      Offset: '0x170'
-      Size: '0x4'
-      Type: float
-    Embers:
-      Offset: '0x160'
-      Size: '0x10'
-      Type: Struct VolcanoSetupDataEmbersEntry
-    NumProjectilesToTrigger:
-      Offset: '0x58'
-      Size: '0x20'
-      Type: Struct WeightedProbabilityRange
-    PoolableProjectilesConfig:
-      Offset: '0x148'
-      Size: '0x18'
-      Type: Struct PoolableCollectionMapConfiguration
-    ProjectileTriggerFrequency:
-      Offset: '0x28'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    Projectiles:
-      Offset: '0x138'
-      Size: '0x10'
-      Type: TArray<Struct StartPositionOffsetInMetres>
-    SpawnHeightInMetres:
-      Offset: '0x78'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    StartPositionOffsetInMetres:
-      Offset: '0x108'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    TargetDistanceFromCenterInMetres:
-      Offset: '0xa8'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    TimeBetweenEmbers:
-      Offset: '0x174'
-      Size: '0x4'
-      Type: float
-    TimeBetweenSpawns:
-      Offset: '0xd8'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: ProjectileTriggerFrequency
+    Offset: '0x28'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: NumProjectilesToTrigger
+    Offset: '0x58'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: SpawnHeightInMetres
+    Offset: '0x78'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: TargetDistanceFromCenterInMetres
+    Offset: '0xa8'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: TimeBetweenSpawns
+    Offset: '0xd8'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: StartPositionOffsetInMetres
+    Offset: '0x108'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: Projectiles
+    Offset: '0x138'
+    Size: '0x10'
+    Type: TArray<Struct StartPositionOffsetInMetres>
+  - Name: PoolableProjectilesConfig
+    Offset: '0x148'
+    Size: '0x18'
+    Type: Struct PoolableCollectionMapConfiguration
+  - Name: Embers
+    Offset: '0x160'
+    Size: '0x10'
+    Type: Struct VolcanoSetupDataEmbersEntry
+  - Name: EmberSpawnHeightInMeters
+    Offset: '0x170'
+    Size: '0x4'
+    Type: float
+  - Name: TimeBetweenEmbers
+    Offset: '0x174'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x150'
   FullSize: '0x178'
   InheritedSize: '0x28'
   Super: DataAsset
 AshenLordWorldEndCloud:
   Attributes:
-    CloudState:
-      Offset: '0x3d4'
-      Size: '0x1'
-      Type: byte
-    CurrentCloudAnimation:
-      Offset: '0x3d8'
-      Size: '0x8'
-      Type: Struct AshenLordWorldEndCloudAnimation
-    SelfDestructDelayOnComplete:
-      Offset: '0x3d0'
-      Size: '0x4'
-      Type: float
+  - Name: SelfDestructDelayOnComplete
+    Offset: '0x3d0'
+    Size: '0x4'
+    Type: float
+  - Name: CloudState
+    Offset: '0x3d4'
+    Size: '0x1'
+    Type: byte
+  - Name: CurrentCloudAnimation
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Struct AshenLordWorldEndCloudAnimation
   ClassSize: '0x18'
   FullSize: '0x3e8'
   InheritedSize: '0x3d0'
   Super: Actor
 DisableGeyserMechanismAction:
   Attributes:
-    GeysersToDisable:
-      Offset: '0x3d8'
-      Size: '0x10'
-      Type: TArray<class GeysersToDisable*>
-    MechanismActionComponent:
-      Offset: '0x3d0'
-      Size: '0x8'
-      Type: Class MechanismActionComponent*
+  - Name: MechanismActionComponent
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class MechanismActionComponent*
+  - Name: GeysersToDisable
+    Offset: '0x3d8'
+    Size: '0x10'
+    Type: TArray<class GeysersToDisable*>
   ClassSize: '0x18'
   FullSize: '0x3e8'
   InheritedSize: '0x3d0'
   Super: Actor
 Earthquake:
   Attributes:
-    AssociatedGeyserManager:
-      Offset: '0x3f0'
-      Size: '0x8'
-      Type: Class GeyserManager*
-    AssociatedVolcano:
-      Offset: '0x3e8'
-      Size: '0x8'
-      Type: Class Volcano*
-    AudioPool:
-      Offset: '0x400'
-      Size: '0x8'
-      Type: Class WwiseObjectPoolWrapper*
-    EarthquakeEffectInnerRadiusOffsetInMetres:
-      Offset: '0x3f8'
-      Size: '0x4'
-      Type: float
-    EarthquakeRtpcMax:
-      Offset: '0x434'
-      Size: '0x4'
-      Type: float
-    EarthquakeRtpcMin:
-      Offset: '0x430'
-      Size: '0x4'
-      Type: float
-    EarthquakeRtpcName:
-      Offset: '0x428'
-      Size: '0x8'
-      Type: struct FName
-    EarthquakeSetupData:
-      Offset: '0x3e0'
-      Size: '0x8'
-      Type: Class EarthquakeSetupDataAsset*
-    EarthquakeSizeToUseLargeAttenuation:
-      Offset: '0x438'
-      Size: '0x4'
-      Type: float
-    EarthquakeState:
-      Offset: '0x450'
-      Size: '0x1'
-      Type: byte
-    HitDetectionVolume:
-      Offset: '0x440'
-      Size: '0x8'
-      Type: Class CapsuleComponent*
-    PlayEarthquakeLarge:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    PlayEarthquakeSmall:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    StopEarthquakeLarge:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    StopEarthquakeSmall:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    WindZone:
-      Offset: '0x448'
-      Size: '0x8'
-      Type: Class WindZoneComponent*
+  - Name: EarthquakeSetupData
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class EarthquakeSetupDataAsset*
+  - Name: AssociatedVolcano
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class Volcano*
+  - Name: AssociatedGeyserManager
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class GeyserManager*
+  - Name: EarthquakeEffectInnerRadiusOffsetInMetres
+    Offset: '0x3f8'
+    Size: '0x4'
+    Type: float
+  - Name: AudioPool
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: PlayEarthquakeLarge
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopEarthquakeLarge
+    Offset: '0x410'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: PlayEarthquakeSmall
+    Offset: '0x418'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopEarthquakeSmall
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: EarthquakeRtpcName
+    Offset: '0x428'
+    Size: '0x8'
+    Type: struct FName
+  - Name: EarthquakeRtpcMin
+    Offset: '0x430'
+    Size: '0x4'
+    Type: float
+  - Name: EarthquakeRtpcMax
+    Offset: '0x434'
+    Size: '0x4'
+    Type: float
+  - Name: EarthquakeSizeToUseLargeAttenuation
+    Offset: '0x438'
+    Size: '0x4'
+    Type: float
+  - Name: HitDetectionVolume
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Class CapsuleComponent*
+  - Name: WindZone
+    Offset: '0x448'
+    Size: '0x8'
+    Type: Class WindZoneComponent*
+  - Name: EarthquakeState
+    Offset: '0x450'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x1d0'
   FullSize: '0x5a0'
   InheritedSize: '0x3d0'
   Super: Actor
 EarthquakeSetupDataAsset:
   Attributes:
-    ActiveGustPower:
-      Offset: '0x310'
-      Size: '0x10'
-      Type: Struct FloatRange
-    ActivePlayerFeedback:
-      Offset: '0x180'
-      Size: '0x80'
-      Type: Struct PlayerFeedback
-    ActiveWindTurbulence:
-      Offset: '0x30c'
-      Size: '0x4'
-      Type: float
-    ChanceEarthquakeTriggersGeysers:
-      Offset: '0x28c'
-      Size: '0x4'
-      Type: float
-    ChanceOfTriggeringAVolcano:
-      Offset: '0xe8'
-      Size: '0x4'
-      Type: float
-    CoolDownDuration:
-      Offset: '0x88'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    DormantDuration:
-      Offset: '0xb8'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    EarthquakeDuration:
-      Offset: '0x58'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    EarthquakeEffects:
-      Offset: '0x2e8'
-      Size: '0x10'
-      Type: Struct DistanceThrottledRandomParticleSystemPicker
-    EffectConeAngle:
-      Offset: '0x2e0'
-      Size: '0x4'
-      Type: float
-    EffectRaycastDistanceInMetres:
-      Offset: '0x2e4'
-      Size: '0x4'
-      Type: float
-    ForceToApplyToShip:
-      Offset: '0x258'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    MaximumShipSpeedToBePushed:
-      Offset: '0x288'
-      Size: '0x4'
-      Type: float
-    NumberOfLocalEffectsToTrigger:
-      Offset: '0x2c0'
-      Size: '0x20'
-      Type: Struct WeightedProbabilityRange
-    PercentageThroughCameraShakeToStartNextOne:
-      Offset: '0x234'
-      Size: '0x10'
-      Type: Struct FloatRange
-    PercentageThroughEarthquakeToStartVolcano:
-      Offset: '0xec'
-      Size: '0x10'
-      Type: Struct FloatRange
-    StaggerStrengthDuration:
-      Offset: '0x200'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    StaggerStrengthModifierWhenOnAShip:
-      Offset: '0x230'
-      Size: '0x4'
-      Type: float
-    TimeBetweenLocalEffects:
-      Offset: '0x290'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    TimeToShipPush:
-      Offset: '0x244'
-      Size: '0x10'
-      Type: Struct FloatRange
-    WarmUpDuration:
-      Offset: '0x28'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    WarmupGustPower:
-      Offset: '0x2fc'
-      Size: '0x10'
-      Type: Struct FloatRange
-    WarmupPlayerFeedback:
-      Offset: '0x100'
-      Size: '0x80'
-      Type: Struct PlayerFeedback
-    WarmupWindTurbulence:
-      Offset: '0x2f8'
-      Size: '0x4'
-      Type: float
+  - Name: WarmUpDuration
+    Offset: '0x28'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: EarthquakeDuration
+    Offset: '0x58'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: CoolDownDuration
+    Offset: '0x88'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: DormantDuration
+    Offset: '0xb8'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: ChanceOfTriggeringAVolcano
+    Offset: '0xe8'
+    Size: '0x4'
+    Type: float
+  - Name: PercentageThroughEarthquakeToStartVolcano
+    Offset: '0xec'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: WarmupPlayerFeedback
+    Offset: '0x100'
+    Size: '0x80'
+    Type: Struct PlayerFeedback
+  - Name: ActivePlayerFeedback
+    Offset: '0x180'
+    Size: '0x80'
+    Type: Struct PlayerFeedback
+  - Name: StaggerStrengthDuration
+    Offset: '0x200'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: StaggerStrengthModifierWhenOnAShip
+    Offset: '0x230'
+    Size: '0x4'
+    Type: float
+  - Name: PercentageThroughCameraShakeToStartNextOne
+    Offset: '0x234'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: TimeToShipPush
+    Offset: '0x244'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: ForceToApplyToShip
+    Offset: '0x258'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: MaximumShipSpeedToBePushed
+    Offset: '0x288'
+    Size: '0x4'
+    Type: float
+  - Name: ChanceEarthquakeTriggersGeysers
+    Offset: '0x28c'
+    Size: '0x4'
+    Type: float
+  - Name: TimeBetweenLocalEffects
+    Offset: '0x290'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: NumberOfLocalEffectsToTrigger
+    Offset: '0x2c0'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: EffectConeAngle
+    Offset: '0x2e0'
+    Size: '0x4'
+    Type: float
+  - Name: EffectRaycastDistanceInMetres
+    Offset: '0x2e4'
+    Size: '0x4'
+    Type: float
+  - Name: EarthquakeEffects
+    Offset: '0x2e8'
+    Size: '0x10'
+    Type: Struct DistanceThrottledRandomParticleSystemPicker
+  - Name: WarmupWindTurbulence
+    Offset: '0x2f8'
+    Size: '0x4'
+    Type: float
+  - Name: WarmupGustPower
+    Offset: '0x2fc'
+    Size: '0x10'
+    Type: Struct FloatRange
+  - Name: ActiveWindTurbulence
+    Offset: '0x30c'
+    Size: '0x4'
+    Type: float
+  - Name: ActiveGustPower
+    Offset: '0x310'
+    Size: '0x10'
+    Type: Struct FloatRange
   ClassSize: '0x2f8'
   FullSize: '0x320'
   InheritedSize: '0x28'
   Super: DataAsset
 Geyser:
   Attributes:
-    ActiveParticlesComponent:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: Class ParticleSystemComponent*
-    EruptingParticlesComponent:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: Class ParticleSystemComponent*
-    ExplosionComponent:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: Class ExplosionComponent*
-    GeyserBlowPool:
-      Offset: '0x3f0'
-      Size: '0x8'
-      Type: Class WwiseObjectPoolWrapper*
-    GeyserBuildUpPool:
-      Offset: '0x3e8'
-      Size: '0x8'
-      Type: Class WwiseObjectPoolWrapper*
-    GeyserHole:
-      Offset: '0x438'
-      Size: '0x8'
-      Type: Class Hole*
-    GeyserHoleClass:
-      Offset: '0x430'
-      Size: '0x8'
-      Type: class
-    GeyserState:
-      Offset: '0x3e0'
-      Size: '0x1'
-      Type: byte
-    HitTestTraceChannel:
-      Offset: '0x428'
-      Size: '0x1'
-      Type: byte
-    PlayEruptingAudioEvent:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    SetupData:
-      Offset: '0x3d8'
-      Size: '0x8'
-      Type: Class GeyserSetupDataAsset*
-    StartActiveAudioLoopEvent:
-      Offset: '0x3f8'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    StopActiveAudioLoopEvent:
-      Offset: '0x400'
-      Size: '0x8'
-      Type: Class WwiseEvent*
+  - Name: SetupData
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class GeyserSetupDataAsset*
+  - Name: GeyserState
+    Offset: '0x3e0'
+    Size: '0x1'
+    Type: byte
+  - Name: GeyserBuildUpPool
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: GeyserBlowPool
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: StartActiveAudioLoopEvent
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopActiveAudioLoopEvent
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: PlayEruptingAudioEvent
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: ExplosionComponent
+    Offset: '0x410'
+    Size: '0x8'
+    Type: Class ExplosionComponent*
+  - Name: ActiveParticlesComponent
+    Offset: '0x418'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: EruptingParticlesComponent
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: HitTestTraceChannel
+    Offset: '0x428'
+    Size: '0x1'
+    Type: byte
+  - Name: GeyserHoleClass
+    Offset: '0x430'
+    Size: '0x8'
+    Type: class
+  - Name: GeyserHole
+    Offset: '0x438'
+    Size: '0x8'
+    Type: Class Hole*
   ClassSize: '0xb0'
   FullSize: '0x480'
   InheritedSize: '0x3d0'
   Super: Actor
 GeyserItemSpawnComponent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
   FullSize: '0x450'
   InheritedSize: '0x430'
   Super: ItemSpawnComponent
 GeyserManager:
   Attributes:
-    GeyserManagerSetupData:
-      Offset: '0x3d0'
-      Size: '0x8'
-      Type: Class GeyserManagerSetupDataAsset*
-    Root:
-      Offset: '0x3d8'
-      Size: '0x8'
-      Type: Class SceneComponent*
-    State:
-      Offset: '0x3e0'
-      Size: '0x1'
-      Type: byte
+  - Name: GeyserManagerSetupData
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class GeyserManagerSetupDataAsset*
+  - Name: Root
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: State
+    Offset: '0x3e0'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x60'
   FullSize: '0x430'
   InheritedSize: '0x3d0'
   Super: Actor
 GeyserManagerSetupDataAsset:
   Attributes:
-    ActiveDuration:
-      Offset: '0x58'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    DelayBetweenEachGeyserSpawningInAGroup:
-      Offset: '0x180'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    DelayBetweenGeyserGroupsDuringGeyserEvent:
-      Offset: '0x88'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    DormantDuration:
-      Offset: '0x28'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    GeyserToSpawn:
-      Offset: '0xc8'
-      Size: '0x8'
-      Type: class
-    MaximumDensityMaxNumGeysersWithinRadius:
-      Offset: '0x1b4'
-      Size: '0x4'
-      Type: int
-    MaximumDensityRadiusInMetres:
-      Offset: '0x1b0'
-      Size: '0x4'
-      Type: float
-    MinDistanceFromPlayerInMetres:
-      Offset: '0xbc'
-      Size: '0x4'
-      Type: float
-    MinGeyserSequenceSpacing:
-      Offset: '0xc0'
-      Size: '0x4'
-      Type: float
-    NoRestartAfterGeyserSpurtComplete:
-      Offset: '0xb9'
-      Size: '0x1'
-      Type: bool
-    NumGeyserGroupsToSpawn:
-      Offset: '0xd0'
-      Size: '0x20'
-      Type: Struct WeightedProbabilityRange
-    NumGeysersToSpawnPerGroup:
-      Offset: '0xf0'
-      Size: '0x20'
-      Type: Struct WeightedProbabilityRange
-    SpawnAngleRelativeToPlayerDirection:
-      Offset: '0x170'
-      Size: '0x10'
-      Type: TArray<Struct SpawnRadiusInMetres>
-    SpawnDistanceFromPlayerInMetres:
-      Offset: '0x110'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    SpawnRadiusInMetres:
-      Offset: '0x140'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    StartInactive:
-      Offset: '0xb8'
-      Size: '0x1'
-      Type: bool
-    UseUniqueLocationsForEachGeyser:
-      Offset: '0xba'
-      Size: '0x1'
-      Type: bool
+  - Name: DormantDuration
+    Offset: '0x28'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: ActiveDuration
+    Offset: '0x58'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: DelayBetweenGeyserGroupsDuringGeyserEvent
+    Offset: '0x88'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: StartInactive
+    Offset: '0xb8'
+    Size: '0x1'
+    Type: bool
+  - Name: NoRestartAfterGeyserSpurtComplete
+    Offset: '0xb9'
+    Size: '0x1'
+    Type: bool
+  - Name: UseUniqueLocationsForEachGeyser
+    Offset: '0xba'
+    Size: '0x1'
+    Type: bool
+  - Name: MinDistanceFromPlayerInMetres
+    Offset: '0xbc'
+    Size: '0x4'
+    Type: float
+  - Name: MinGeyserSequenceSpacing
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: float
+  - Name: GeyserToSpawn
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: class
+  - Name: NumGeyserGroupsToSpawn
+    Offset: '0xd0'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: NumGeysersToSpawnPerGroup
+    Offset: '0xf0'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: SpawnDistanceFromPlayerInMetres
+    Offset: '0x110'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: SpawnRadiusInMetres
+    Offset: '0x140'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: SpawnAngleRelativeToPlayerDirection
+    Offset: '0x170'
+    Size: '0x10'
+    Type: TArray<Struct SpawnRadiusInMetres>
+  - Name: DelayBetweenEachGeyserSpawningInAGroup
+    Offset: '0x180'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: MaximumDensityRadiusInMetres
+    Offset: '0x1b0'
+    Size: '0x4'
+    Type: float
+  - Name: MaximumDensityMaxNumGeysersWithinRadius
+    Offset: '0x1b4'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x190'
   FullSize: '0x1b8'
   InheritedSize: '0x28'
   Super: DataAsset
 GeyserSetupDataAsset:
   Attributes:
-    DestroyAfterDeactivationDelay:
-      Offset: '0xdc'
-      Size: '0x4'
-      Type: float
-    DormantDuration:
-      Offset: '0x28'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    InitialWarningDuration:
-      Offset: '0x58'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    NumSpurtsPerActivation:
-      Offset: '0x88'
-      Size: '0x20'
-      Type: Struct WeightedProbabilityRange
-    ShouldDestroyOnDeactivation:
-      Offset: '0xd8'
-      Size: '0x1'
-      Type: bool
-    TimeBetweenSpurts:
-      Offset: '0xa8'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: DormantDuration
+    Offset: '0x28'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: InitialWarningDuration
+    Offset: '0x58'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: NumSpurtsPerActivation
+    Offset: '0x88'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: TimeBetweenSpurts
+    Offset: '0xa8'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: ShouldDestroyOnDeactivation
+    Offset: '0xd8'
+    Size: '0x1'
+    Type: bool
+  - Name: DestroyAfterDeactivationDelay
+    Offset: '0xdc'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xb8'
   FullSize: '0xe0'
   InheritedSize: '0x28'
   Super: DataAsset
 LavaStatus:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x30'
   InheritedSize: '0x30'
   Super: StatusBase
 LavaZone:
   Attributes:
-    Active:
-      Offset: '0x448'
-      Size: '0x1'
-      Type: bool
-    ActiveDuration:
-      Offset: '0x400'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    ActorsInZone:
-      Offset: '0x438'
-      Size: '0x10'
-      Type: TArray<class ActorsInZone*>
-    InitializeFromGlobalState:
-      Offset: '0x449'
-      Size: '0x1'
-      Type: bool
-    LavaMaterial:
-      Offset: '0x430'
-      Size: '0x8'
-      Type: Class PhysicalMaterial*
-    SelfActivating:
-      Offset: '0x44a'
-      Size: '0x1'
-      Type: bool
-    TimeBetweenActivations:
-      Offset: '0x3d0'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: TimeBetweenActivations
+    Offset: '0x3d0'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: ActiveDuration
+    Offset: '0x400'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: LavaMaterial
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Class PhysicalMaterial*
+  - Name: ActorsInZone
+    Offset: '0x438'
+    Size: '0x10'
+    Type: TArray<class ActorsInZone*>
+  - Name: Active
+    Offset: '0x448'
+    Size: '0x1'
+    Type: bool
+  - Name: InitializeFromGlobalState
+    Offset: '0x449'
+    Size: '0x1'
+    Type: bool
+  - Name: SelfActivating
+    Offset: '0x44a'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xa0'
   FullSize: '0x470'
   InheritedSize: '0x3d0'
   Super: Actor
 MechanismGeyser:
   Attributes:
-    GeyserStateWhenMechanismIsInactive:
-      Offset: '0x480'
-      Size: '0x1'
-      Type: byte
-    MechanismActionComponent:
-      Offset: '0x488'
-      Size: '0x8'
-      Type: Class MechanismActionComponent*
+  - Name: GeyserStateWhenMechanismIsInactive
+    Offset: '0x480'
+    Size: '0x1'
+    Type: byte
+  - Name: MechanismActionComponent
+    Offset: '0x488'
+    Size: '0x8'
+    Type: Class MechanismActionComponent*
   ClassSize: '0x10'
   FullSize: '0x490'
   InheritedSize: '0x480'
   Super: Geyser
 NaturalDisasterRegistryInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 SeatStat_IslandVolcanoActive:
   Attributes:
-    VolcanoIslandName:
-      Offset: '0x48'
-      Size: '0x8'
-      Type: struct FName
+  - Name: VolcanoIslandName
+    Offset: '0x48'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x68'
   FullSize: '0xb0'
   InheritedSize: '0x48'
   Super: SeatStat
 SuperheatedWater:
   Attributes:
-    FakeUnderwaterLocationsDistanceBetweenPointsInMetres:
-      Offset: '0x494'
-      Size: '0x4'
-      Type: float
-    FakeUnderwaterLocationsMinDistanceInMetres:
-      Offset: '0x490'
-      Size: '0x4'
-      Type: float
-    HitDetectionVolume:
-      Offset: '0x488'
-      Size: '0x8'
-      Type: Class CapsuleComponent*
-    PlayersInZone:
-      Offset: '0x498'
-      Size: '0x10'
-      Type: TArray<Weakclass FakeUnderwaterLocationsDistanceBetweenPointsInMetres>
-    SetupData:
-      Offset: '0x480'
-      Size: '0x8'
-      Type: Class SuperheatedWaterSetupDataAsset*
+  - Name: SetupData
+    Offset: '0x480'
+    Size: '0x8'
+    Type: Class SuperheatedWaterSetupDataAsset*
+  - Name: HitDetectionVolume
+    Offset: '0x488'
+    Size: '0x8'
+    Type: Class CapsuleComponent*
+  - Name: FakeUnderwaterLocationsMinDistanceInMetres
+    Offset: '0x490'
+    Size: '0x4'
+    Type: float
+  - Name: FakeUnderwaterLocationsDistanceBetweenPointsInMetres
+    Offset: '0x494'
+    Size: '0x4'
+    Type: float
+  - Name: PlayersInZone
+    Offset: '0x498'
+    Size: '0x10'
+    Type: TArray<Weakclass FakeUnderwaterLocationsDistanceBetweenPointsInMetres>
   ClassSize: '0x108'
   FullSize: '0x578'
   InheritedSize: '0x470'
   Super: Murk
 SuperheatedWaterSetupDataAsset:
   Attributes:
-    EffectSpawnHeight:
-      Offset: '0x78'
-      Size: '0x4'
-      Type: float
-    LargeSurfaceEffectMinimumDistanceInMetres:
-      Offset: '0x60'
-      Size: '0x4'
-      Type: float
-    LargeSurfaceEffects:
-      Offset: '0x68'
-      Size: '0x10'
-      Type: Struct RandomParticleSystemPicker
-    MinimumWaterDepthToCauseDamage:
-      Offset: '0x2c'
-      Size: '0x4'
-      Type: float
-    MurkStrengthToStartEffects:
-      Offset: '0x7c'
-      Size: '0x4'
-      Type: float
-    NumSmallSurfaceEffects:
-      Offset: '0xb0'
-      Size: '0x20'
-      Type: Struct WeightedProbabilityRange
-    SmallSurfaceEffectNearbyPlayerRadiusInMetres:
-      Offset: '0xe0'
-      Size: '0x4'
-      Type: float
-    SmallSurfaceEffectOffsetRadiusInMetres:
-      Offset: '0xe4'
-      Size: '0x4'
-      Type: float
-    SmallSurfaceEffects:
-      Offset: '0xd0'
-      Size: '0x10'
-      Type: Struct DistanceThrottledRandomParticleSystemPicker
-    TimeBetweenHealthReduction:
-      Offset: '0x28'
-      Size: '0x4'
-      Type: float
-    TimeBetweenLargeSurfaceEffects:
-      Offset: '0x30'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    TimeBetweenSmallSurfaceEffects:
-      Offset: '0x80'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: TimeBetweenHealthReduction
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: MinimumWaterDepthToCauseDamage
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  - Name: TimeBetweenLargeSurfaceEffects
+    Offset: '0x30'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: LargeSurfaceEffectMinimumDistanceInMetres
+    Offset: '0x60'
+    Size: '0x4'
+    Type: float
+  - Name: LargeSurfaceEffects
+    Offset: '0x68'
+    Size: '0x10'
+    Type: Struct RandomParticleSystemPicker
+  - Name: EffectSpawnHeight
+    Offset: '0x78'
+    Size: '0x4'
+    Type: float
+  - Name: MurkStrengthToStartEffects
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: float
+  - Name: TimeBetweenSmallSurfaceEffects
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: NumSmallSurfaceEffects
+    Offset: '0xb0'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: SmallSurfaceEffects
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: Struct DistanceThrottledRandomParticleSystemPicker
+  - Name: SmallSurfaceEffectNearbyPlayerRadiusInMetres
+    Offset: '0xe0'
+    Size: '0x4'
+    Type: float
+  - Name: SmallSurfaceEffectOffsetRadiusInMetres
+    Offset: '0xe4'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xc0'
   FullSize: '0xe8'
   InheritedSize: '0x28'
   Super: DataAsset
 Volcano:
   Attributes:
-    AssociatedIslandName:
-      Offset: '0x498'
-      Size: '0x8'
-      Type: struct FName
-    AssociatedLavaZone:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Class LavaZone*
-    AssociatedSuperheatedWater:
-      Offset: '0x400'
-      Size: '0x8'
-      Type: Class Murk*
-    AudioPool:
-      Offset: '0x458'
-      Size: '0x8'
-      Type: Class WwiseObjectPoolWrapper*
-    BlendedAtmosphericPressureZoneComponent:
-      Offset: '0x438'
-      Size: '0x8'
-      Type: Class BlendedAtmosphericPressureZoneComponent*
-    BlendedLightingZoneComponent:
-      Offset: '0x430'
-      Size: '0x8'
-      Type: Class BlendedLightingZoneComponent*
-    BlendedPostProcessingRainZoneComponent:
-      Offset: '0x440'
-      Size: '0x8'
-      Type: Class BlendedPostProcessingRainZoneComponent*
-    EruptingAudioPlayEvent:
-      Offset: '0x470'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    EruptingAudioStopEvent:
-      Offset: '0x478'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    EruptingEmitter:
-      Offset: '0x428'
-      Size: '0x8'
-      Type: Class ParticleSystemComponent*
-    HitDetectionVolume:
-      Offset: '0x3e8'
-      Size: '0x8'
-      Type: Class CapsuleComponent*
-    InnerTargetRadiusInMetres:
-      Offset: '0x410'
-      Size: '0x4'
-      Type: float
-    InstantKillZone:
-      Offset: '0x480'
-      Size: '0x8'
-      Type: Class CapsuleComponent*
-    InstantKillZoneTestInterval:
-      Offset: '0x488'
-      Size: '0x4'
-      Type: float
-    NearbyPlayerRangeToFireProjectilesInMetres:
-      Offset: '0x418'
-      Size: '0x4'
-      Type: float
-    OuterTargetRadiusInMetres:
-      Offset: '0x414'
-      Size: '0x4'
-      Type: float
-    ProjectileLaunchOffset:
-      Offset: '0x448'
-      Size: '0xc'
-      Type: Struct Vector
-    RandomShipPositionScale:
-      Offset: '0x41c'
-      Size: '0x4'
-      Type: float
-    StateData:
-      Offset: '0x48c'
-      Size: '0xc'
-      Type: Struct VolcanoStateData
-    UseDormantDuration:
-      Offset: '0x3f0'
-      Size: '0x1'
-      Type: bool
-    VolcanoSetupData:
-      Offset: '0x3f8'
-      Size: '0x8'
-      Type: Class VolcanoSetupDataAsset*
-    WarmingUpEmitter:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: Class ParticleSystemComponent*
-    WarmupAudioPlayEvent:
-      Offset: '0x460'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    WarmupAudioStopEvent:
-      Offset: '0x468'
-      Size: '0x8'
-      Type: Class WwiseEvent*
+  - Name: HitDetectionVolume
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class CapsuleComponent*
+  - Name: UseDormantDuration
+    Offset: '0x3f0'
+    Size: '0x1'
+    Type: bool
+  - Name: VolcanoSetupData
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class VolcanoSetupDataAsset*
+  - Name: AssociatedSuperheatedWater
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class Murk*
+  - Name: AssociatedLavaZone
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class LavaZone*
+  - Name: InnerTargetRadiusInMetres
+    Offset: '0x410'
+    Size: '0x4'
+    Type: float
+  - Name: OuterTargetRadiusInMetres
+    Offset: '0x414'
+    Size: '0x4'
+    Type: float
+  - Name: NearbyPlayerRangeToFireProjectilesInMetres
+    Offset: '0x418'
+    Size: '0x4'
+    Type: float
+  - Name: RandomShipPositionScale
+    Offset: '0x41c'
+    Size: '0x4'
+    Type: float
+  - Name: WarmingUpEmitter
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: EruptingEmitter
+    Offset: '0x428'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: BlendedLightingZoneComponent
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Class BlendedLightingZoneComponent*
+  - Name: BlendedAtmosphericPressureZoneComponent
+    Offset: '0x438'
+    Size: '0x8'
+    Type: Class BlendedAtmosphericPressureZoneComponent*
+  - Name: BlendedPostProcessingRainZoneComponent
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Class BlendedPostProcessingRainZoneComponent*
+  - Name: ProjectileLaunchOffset
+    Offset: '0x448'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: AudioPool
+    Offset: '0x458'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: WarmupAudioPlayEvent
+    Offset: '0x460'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: WarmupAudioStopEvent
+    Offset: '0x468'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: EruptingAudioPlayEvent
+    Offset: '0x470'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: EruptingAudioStopEvent
+    Offset: '0x478'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: InstantKillZone
+    Offset: '0x480'
+    Size: '0x8'
+    Type: Class CapsuleComponent*
+  - Name: InstantKillZoneTestInterval
+    Offset: '0x488'
+    Size: '0x4'
+    Type: float
+  - Name: StateData
+    Offset: '0x48c'
+    Size: '0xc'
+    Type: Struct VolcanoStateData
+  - Name: AssociatedIslandName
+    Offset: '0x498'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x1f0'
   FullSize: '0x5c0'
   InheritedSize: '0x3d0'
   Super: Actor
 VolcanoInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 VolcanoService:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'
   Super: Object
 VolcanoServiceInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 VolcanoSetupDataAsset:
   Attributes:
-    ChanceToTargetPlayers:
-      Offset: '0x160'
-      Size: '0x58'
-      Type: Struct VolcanoTargetChances
-    ChanceToTargetShips:
-      Offset: '0x1b8'
-      Size: '0x58'
-      Type: Struct VolcanoTargetChances
-    ChanceToTargetWatercraft:
-      Offset: '0x210'
-      Size: '0x58'
-      Type: Struct VolcanoTargetChances
-    DormantDuration:
-      Offset: '0x88'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    EmbersSpawnOffsetInMetres:
-      Offset: '0x438'
-      Size: '0x4'
-      Type: float
-    EruptionDuration:
-      Offset: '0x58'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    ExtraProjectilePoolNumProjectiles:
-      Offset: '0x158'
-      Size: '0x4'
-      Type: int
-    ForceFeedbackIgnitionEffect:
-      Offset: '0x2b8'
-      Size: '0x10'
-      Type: TArray<Struct Projectiles>
-    GroundAndWaterStayHotDurationAfterVolcanoFinishesDuration:
-      Offset: '0xc0'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    InnerShipNearMissRadiusInMetres:
-      Offset: '0x298'
-      Size: '0x4'
-      Type: float
-    InnerWatercraftNearMissRadiusInMetres:
-      Offset: '0x2a0'
-      Size: '0x4'
-      Type: float
-    LocalEmbers:
-      Offset: '0x428'
-      Size: '0x10'
-      Type: TArray<Struct TimeBetweenLocalEmbers>
-    LocalMiniProjectilesClass:
-      Offset: '0x2c8'
-      Size: '0x8'
-      Type: class
-    LocalMiniProjectilesGravityScale:
-      Offset: '0x3b0'
-      Size: '0x4'
-      Type: float
-    LocalMiniProjectilesSpawnAngleRange:
-      Offset: '0x3b8'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    LocalMiniProjectilesSpawnDistanceFromPlayerInMetres:
-      Offset: '0x300'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    LocalMiniProjectilesSpawnDistanceMaxPlayerSpeed:
-      Offset: '0x41c'
-      Size: '0x4'
-      Type: float
-    LocalMiniProjectilesSpawnDistanceSpeedScalar:
-      Offset: '0x418'
-      Size: '0x4'
-      Type: float
-    LocalMiniProjectilesSpawnHeightAbovePlayerInMetres:
-      Offset: '0x2d0'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    LocalMiniProjectilesSpawnStartPositionOffsetInMetres:
-      Offset: '0x3e8'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    LocalMiniProjectilesSpeed:
-      Offset: '0x380'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    LocalMiniProjectilesTimeBetweenSpawns:
-      Offset: '0x330'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    MaxNumProjectilesToTrigger:
-      Offset: '0x154'
-      Size: '0x4'
-      Type: int
-    MinNumProjectilesToTrigger:
-      Offset: '0x150'
-      Size: '0x4'
-      Type: int
-    MinimumDurationForTheEffects:
-      Offset: '0xb8'
-      Size: '0x4'
-      Type: float
-    NumLocalMiniProjectilesToTrigger:
-      Offset: '0x360'
-      Size: '0x20'
-      Type: Struct WeightedProbabilityRange
-    OuterShipNearMissRadiusInMetres:
-      Offset: '0x29c'
-      Size: '0x4'
-      Type: float
-    OuterWatercraftNearMissRadiusInMetres:
-      Offset: '0x2a4'
-      Size: '0x4'
-      Type: float
-    PercentageOfMaxTargetingRange:
-      Offset: '0x120'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    PlayerNearMissDistanceInMetres:
-      Offset: '0x268'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    ProjectileTriggerFrequency:
-      Offset: '0xf0'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
-    Projectiles:
-      Offset: '0x2a8'
-      Size: '0x10'
-      Type: TArray<Struct OuterWatercraftNearMissRadiusInMetres>
-    ServerMigrationDistanceAsMultipleOfOuterTargetRadius:
-      Offset: '0x43c'
-      Size: '0x4'
-      Type: float
-    TimeBetweenLocalEmbers:
-      Offset: '0x420'
-      Size: '0x4'
-      Type: float
-    WarmUpDuration:
-      Offset: '0x28'
-      Size: '0x30'
-      Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: WarmUpDuration
+    Offset: '0x28'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: EruptionDuration
+    Offset: '0x58'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: DormantDuration
+    Offset: '0x88'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: MinimumDurationForTheEffects
+    Offset: '0xb8'
+    Size: '0x4'
+    Type: float
+  - Name: GroundAndWaterStayHotDurationAfterVolcanoFinishesDuration
+    Offset: '0xc0'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: ProjectileTriggerFrequency
+    Offset: '0xf0'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: PercentageOfMaxTargetingRange
+    Offset: '0x120'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: MinNumProjectilesToTrigger
+    Offset: '0x150'
+    Size: '0x4'
+    Type: int
+  - Name: MaxNumProjectilesToTrigger
+    Offset: '0x154'
+    Size: '0x4'
+    Type: int
+  - Name: ExtraProjectilePoolNumProjectiles
+    Offset: '0x158'
+    Size: '0x4'
+    Type: int
+  - Name: ChanceToTargetPlayers
+    Offset: '0x160'
+    Size: '0x58'
+    Type: Struct VolcanoTargetChances
+  - Name: ChanceToTargetShips
+    Offset: '0x1b8'
+    Size: '0x58'
+    Type: Struct VolcanoTargetChances
+  - Name: ChanceToTargetWatercraft
+    Offset: '0x210'
+    Size: '0x58'
+    Type: Struct VolcanoTargetChances
+  - Name: PlayerNearMissDistanceInMetres
+    Offset: '0x268'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: InnerShipNearMissRadiusInMetres
+    Offset: '0x298'
+    Size: '0x4'
+    Type: float
+  - Name: OuterShipNearMissRadiusInMetres
+    Offset: '0x29c'
+    Size: '0x4'
+    Type: float
+  - Name: InnerWatercraftNearMissRadiusInMetres
+    Offset: '0x2a0'
+    Size: '0x4'
+    Type: float
+  - Name: OuterWatercraftNearMissRadiusInMetres
+    Offset: '0x2a4'
+    Size: '0x4'
+    Type: float
+  - Name: Projectiles
+    Offset: '0x2a8'
+    Size: '0x10'
+    Type: TArray<Struct OuterWatercraftNearMissRadiusInMetres>
+  - Name: ForceFeedbackIgnitionEffect
+    Offset: '0x2b8'
+    Size: '0x10'
+    Type: TArray<Struct Projectiles>
+  - Name: LocalMiniProjectilesClass
+    Offset: '0x2c8'
+    Size: '0x8'
+    Type: class
+  - Name: LocalMiniProjectilesSpawnHeightAbovePlayerInMetres
+    Offset: '0x2d0'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: LocalMiniProjectilesSpawnDistanceFromPlayerInMetres
+    Offset: '0x300'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: LocalMiniProjectilesTimeBetweenSpawns
+    Offset: '0x330'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: NumLocalMiniProjectilesToTrigger
+    Offset: '0x360'
+    Size: '0x20'
+    Type: Struct WeightedProbabilityRange
+  - Name: LocalMiniProjectilesSpeed
+    Offset: '0x380'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: LocalMiniProjectilesGravityScale
+    Offset: '0x3b0'
+    Size: '0x4'
+    Type: float
+  - Name: LocalMiniProjectilesSpawnAngleRange
+    Offset: '0x3b8'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: LocalMiniProjectilesSpawnStartPositionOffsetInMetres
+    Offset: '0x3e8'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  - Name: LocalMiniProjectilesSpawnDistanceSpeedScalar
+    Offset: '0x418'
+    Size: '0x4'
+    Type: float
+  - Name: LocalMiniProjectilesSpawnDistanceMaxPlayerSpeed
+    Offset: '0x41c'
+    Size: '0x4'
+    Type: float
+  - Name: TimeBetweenLocalEmbers
+    Offset: '0x420'
+    Size: '0x4'
+    Type: float
+  - Name: LocalEmbers
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Struct TimeBetweenLocalEmbers>
+  - Name: EmbersSpawnOffsetInMetres
+    Offset: '0x438'
+    Size: '0x4'
+    Type: float
+  - Name: ServerMigrationDistanceAsMultipleOfOuterTargetRadius
+    Offset: '0x43c'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x418'
   FullSize: '0x440'
   InheritedSize: '0x28'

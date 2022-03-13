@@ -4,91 +4,322 @@
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_shroudedghostadv_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_meg_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_fearbundle_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_fearsolo_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_courage_a_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_courage_b_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_courage_c_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_courage_d_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_pioneer_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_shroudedghosthsolo_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_goldhoarders_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "figurehead_morningstar_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
+  },
+  "figurehead_GoldenChaser_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_LuckyRover_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_RegalHound_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_FlamingJackal_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_AzureScout_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_borealsolo_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_boreal_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_pumpkin_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_ferry_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_zeus_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_blackbeardsolo_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_reapersbonesmys_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_orderofsoulsdre_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_merchantgmu_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_goldhoardersghw_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_phoenixglow_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_mayhem_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_sabrewulfsolo_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_party_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_omen_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_thunderpack_01_v01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_swordfish_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_sailor_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_yr1_legendary_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_reapersbones_e_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_reapersbones_d_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_reapersbones_c_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_reapersbones_b_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_reapersbones_a_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_orderofsouls_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_merchant_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_legendary_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "figurehead_goldhoarders_01_b_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

@@ -2,18 +2,18 @@
 # https://github.com/DougTheDruid
 BP_Projectile_CannonBall_C:
   Attributes:
-    CannonBall:
-      Offset: '0x660'
-      Size: '0x8'
-      Type: Class StaticMeshComponent*
-    Collision:
-      Offset: '0x668'
-      Size: '0x8'
-      Type: Class SphereComponent*
-    SphereCollisionExtentAdjustOverTime:
-      Offset: '0x658'
-      Size: '0x8'
-      Type: Class SphereCollisionExtentAdjustOverTimeComponent*
+  - Name: SphereCollisionExtentAdjustOverTime
+    Offset: '0x658'
+    Size: '0x8'
+    Type: Class SphereCollisionExtentAdjustOverTimeComponent*
+  - Name: CannonBall
+    Offset: '0x660'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Collision
+    Offset: '0x668'
+    Size: '0x8'
+    Type: Class SphereComponent*
   ClassSize: '0x18'
   FullSize: '0x670'
   InheritedSize: '0x658'

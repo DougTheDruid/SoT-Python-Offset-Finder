@@ -2,60 +2,60 @@
 # https://github.com/DougTheDruid
 GameplayTask:
   Attributes:
-    InstanceName:
-      Offset: '0x28'
-      Size: '0x8'
-      Type: struct FName
+  - Name: InstanceName
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
   Super: Object
 GameplayTaskOwnerInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 GameplayTaskResource:
   Attributes:
-    ManualResourceID:
-      Offset: '0x28'
-      Size: '0x4'
-      Type: int
-    bManuallySetID:
-      Offset: '0x30'
-      Size: '0x1'
-      Type: bool
+  - Name: ManualResourceID
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: bManuallySetID
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
 GameplayTask_SpawnActor:
   Attributes:
-    ClassToSpawn:
-      Offset: '0x90'
-      Size: '0x8'
-      Type: class
+  - Name: ClassToSpawn
+    Offset: '0x90'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x40'
   FullSize: '0x98'
   InheritedSize: '0x58'
   Super: GameplayTask
 GameplayTask_WaitDelay:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x18'
   FullSize: '0x70'
   InheritedSize: '0x58'
   Super: GameplayTask
 GameplayTasksComponent:
   Attributes:
-    SimulatedTasks:
-      Offset: '0xd0'
-      Size: '0x10'
-      Type: TArray<class SimulatedTasks*>
-    TaskPriorityQueue:
-      Offset: '0xe0'
-      Size: '0x10'
-      Type: TArray<class TaskPriorityQueue*>
+  - Name: SimulatedTasks
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: TArray<class SimulatedTasks*>
+  - Name: TaskPriorityQueue
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: TArray<class TaskPriorityQueue*>
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'

@@ -2,94 +2,94 @@
 # https://github.com/DougTheDruid
 SafeZoneComponent:
   Attributes:
-    AngularImpulseForce:
-      Offset: '0x6ac'
-      Size: '0x4'
-      Type: float
-    AngularImpulseRadius:
-      Offset: '0x6a4'
-      Size: '0x4'
-      Type: float
-    ApplyRepelForceAtCentreOfMass:
-      Offset: '0x618'
-      Size: '0x1'
-      Type: bool
-    AutoActivateSafeZone:
-      Offset: '0x5f4'
-      Size: '0x1'
-      Type: bool
-    CurrentCollisionProfile:
-      Offset: '0x6b8'
-      Size: '0x8'
-      Type: struct FName
-    DeactivateSafeZoneAfterExclusionRadiusIsEmpty:
-      Offset: '0x5f5'
-      Size: '0x1'
-      Type: bool
-    ExclusionHeight:
-      Offset: '0x5e8'
-      Size: '0x4'
-      Type: float
-    ExclusionRadius:
-      Offset: '0x5e0'
-      Size: '0x4'
-      Type: float
-    IsSafeZoneEmpty:
-      Offset: '0x6b4'
-      Size: '0x1'
-      Type: bool
-    PlayerTeleportRadius:
-      Offset: '0x5f8'
-      Size: '0x4'
-      Type: float
-    RepelForceExtents:
-      Offset: '0x60c'
-      Size: '0x4'
-      Type: float
-    RepelForceGradientCurve:
-      Offset: '0x620'
-      Size: '0x80'
-      Type: Struct RuntimeFloatCurve
-    RepelForceMax:
-      Offset: '0x614'
-      Size: '0x4'
-      Type: float
-    RepelForceMin:
-      Offset: '0x610'
-      Size: '0x4'
-      Type: float
-    RepelForceRadius:
-      Offset: '0x604'
-      Size: '0x4'
-      Type: float
-    SafeZoneEmptyCollisionProfile:
-      Offset: '0x5ec'
-      Size: '0x8'
-      Type: struct FName
-    SafeZoneState:
-      Offset: '0x6c0'
-      Size: '0x1'
-      Type: byte
-    StopAISpawning:
-      Offset: '0x6b5'
-      Size: '0x1'
-      Type: bool
-    TargetDeflectionAngle:
-      Offset: '0x6b0'
-      Size: '0x4'
-      Type: float
-    UseAngularImpulse:
-      Offset: '0x6a0'
-      Size: '0x1'
-      Type: bool
-    UsePlayerTeleport:
-      Offset: '0x5f6'
-      Size: '0x1'
-      Type: bool
-    UseRepelForce:
-      Offset: '0x600'
-      Size: '0x1'
-      Type: bool
+  - Name: ExclusionRadius
+    Offset: '0x5e0'
+    Size: '0x4'
+    Type: float
+  - Name: ExclusionHeight
+    Offset: '0x5e8'
+    Size: '0x4'
+    Type: float
+  - Name: SafeZoneEmptyCollisionProfile
+    Offset: '0x5ec'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AutoActivateSafeZone
+    Offset: '0x5f4'
+    Size: '0x1'
+    Type: bool
+  - Name: DeactivateSafeZoneAfterExclusionRadiusIsEmpty
+    Offset: '0x5f5'
+    Size: '0x1'
+    Type: bool
+  - Name: UsePlayerTeleport
+    Offset: '0x5f6'
+    Size: '0x1'
+    Type: bool
+  - Name: PlayerTeleportRadius
+    Offset: '0x5f8'
+    Size: '0x4'
+    Type: float
+  - Name: UseRepelForce
+    Offset: '0x600'
+    Size: '0x1'
+    Type: bool
+  - Name: RepelForceRadius
+    Offset: '0x604'
+    Size: '0x4'
+    Type: float
+  - Name: RepelForceExtents
+    Offset: '0x60c'
+    Size: '0x4'
+    Type: float
+  - Name: RepelForceMin
+    Offset: '0x610'
+    Size: '0x4'
+    Type: float
+  - Name: RepelForceMax
+    Offset: '0x614'
+    Size: '0x4'
+    Type: float
+  - Name: ApplyRepelForceAtCentreOfMass
+    Offset: '0x618'
+    Size: '0x1'
+    Type: bool
+  - Name: RepelForceGradientCurve
+    Offset: '0x620'
+    Size: '0x80'
+    Type: Struct RuntimeFloatCurve
+  - Name: UseAngularImpulse
+    Offset: '0x6a0'
+    Size: '0x1'
+    Type: bool
+  - Name: AngularImpulseRadius
+    Offset: '0x6a4'
+    Size: '0x4'
+    Type: float
+  - Name: AngularImpulseForce
+    Offset: '0x6ac'
+    Size: '0x4'
+    Type: float
+  - Name: TargetDeflectionAngle
+    Offset: '0x6b0'
+    Size: '0x4'
+    Type: float
+  - Name: IsSafeZoneEmpty
+    Offset: '0x6b4'
+    Size: '0x1'
+    Type: bool
+  - Name: StopAISpawning
+    Offset: '0x6b5'
+    Size: '0x1'
+    Type: bool
+  - Name: CurrentCollisionProfile
+    Offset: '0x6b8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SafeZoneState
+    Offset: '0x6c0'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x140'
   FullSize: '0x710'
   InheritedSize: '0x5d0'

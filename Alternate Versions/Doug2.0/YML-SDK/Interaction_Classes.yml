@@ -2,188 +2,188 @@
 # https://github.com/DougTheDruid
 CharacterInteractionComponent:
   Attributes:
-    CurrentOptimalInteractable:
-      Offset: '0x5e0'
-      Size: '0x8'
-      Type: Class InteractableArea*
+  - Name: CurrentOptimalInteractable
+    Offset: '0x5e0'
+    Size: '0x8'
+    Type: Class InteractableArea*
   ClassSize: '0xc0'
   FullSize: '0x6a0'
   InheritedSize: '0x5e0'
   Super: BoxComponent
 GroupedInteractableAreaComponent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0xc8'
   InheritedSize: '0xc8'
   Super: ActorComponent
 InteractableArea:
   Attributes:
-    Bounds:
-      Offset: '0x28'
-      Size: '0x1c'
-      Type: Struct BoxSphereBounds
-    Interactable:
-      Offset: '0x50'
-      Size: '0x8'
-      Type: Class Object*
-    Name:
-      Offset: '0x44'
-      Size: '0x8'
-      Type: struct FName
-    Parent:
-      Offset: '0x58'
-      Size: '0x8'
-      Type: Class Actor*
+  - Name: Bounds
+    Offset: '0x28'
+    Size: '0x1c'
+    Type: Struct BoxSphereBounds
+  - Name: Name
+    Offset: '0x44'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Interactable
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: Parent
+    Offset: '0x58'
+    Size: '0x8'
+    Type: Class Actor*
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
   Super: Object
 InteractableBlueprintFunctionLibrary:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
 InteractableComponent:
   Attributes:
-    BoxExtent:
-      Offset: '0xd8'
-      Size: '0xc'
-      Type: Struct Vector
-    BoxOrigin:
-      Offset: '0xe4'
-      Size: '0xc'
-      Type: Struct Vector
-    BoxRotation:
-      Offset: '0xf0'
-      Size: '0xc'
-      Type: Struct Rotator
-    CurrentInteractionState:
-      Offset: '0x110'
-      Size: '0x1'
-      Type: byte
-    FeatureFlag:
-      Offset: '0xd0'
-      Size: '0x8'
-      Type: struct FName
-    InteractableArea:
-      Offset: '0x108'
-      Size: '0x8'
-      Type: Class InteractableArea*
-    InteractionRadius:
-      Offset: '0x100'
-      Size: '0x4'
-      Type: float
-    MayBeGrouped:
-      Offset: '0xfc'
-      Size: '0x1'
-      Type: bool
-    ProxyForActorInteraction:
-      Offset: '0xfc'
-      Size: '0x1'
-      Type: bool
-    RequiresFacingFront:
-      Offset: '0xfc'
-      Size: '0x1'
-      Type: bool
-    RequiresNotAirborne:
-      Offset: '0xfc'
-      Size: '0x1'
-      Type: bool
-    RequiresNotSwimming:
-      Offset: '0xfc'
-      Size: '0x1'
-      Type: bool
+  - Name: FeatureFlag
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: BoxExtent
+    Offset: '0xd8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: BoxOrigin
+    Offset: '0xe4'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: BoxRotation
+    Offset: '0xf0'
+    Size: '0xc'
+    Type: Struct Rotator
+  - Name: MayBeGrouped
+    Offset: '0xfc'
+    Size: '0x1'
+    Type: bool
+  - Name: ProxyForActorInteraction
+    Offset: '0xfc'
+    Size: '0x1'
+    Type: bool
+  - Name: RequiresFacingFront
+    Offset: '0xfc'
+    Size: '0x1'
+    Type: bool
+  - Name: RequiresNotAirborne
+    Offset: '0xfc'
+    Size: '0x1'
+    Type: bool
+  - Name: RequiresNotSwimming
+    Offset: '0xfc'
+    Size: '0x1'
+    Type: bool
+  - Name: InteractionRadius
+    Offset: '0x100'
+    Size: '0x4'
+    Type: float
+  - Name: InteractableArea
+    Offset: '0x108'
+    Size: '0x8'
+    Type: Class InteractableArea*
+  - Name: CurrentInteractionState
+    Offset: '0x110'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x50'
   FullSize: '0x118'
   InheritedSize: '0xc8'
   Super: ActorComponent
 InteractableIdentifierInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 InteractableInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 InteractableService:
   Attributes:
-    InteractableAreas:
-      Offset: '0x38'
-      Size: '0x10'
-      Type: TArray<class InteractableAreas*>
+  - Name: InteractableAreas
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<class InteractableAreas*>
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
   Super: Object
 InteractableServiceInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 InteractionValidatorOwnerInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 InteractionValidatorSetterInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 InteractorInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 MockActorWithCharacterInteractionComponent:
   Attributes:
-    CharacterInteractionComponent:
-      Offset: '0x5e8'
-      Size: '0x8'
-      Type: Class CharacterInteractionComponent*
+  - Name: CharacterInteractionComponent
+    Offset: '0x5e8'
+    Size: '0x8'
+    Type: Class CharacterInteractionComponent*
   ClassSize: '0xb0'
   FullSize: '0x690'
   InheritedSize: '0x5e0'
   Super: Character
 MockInteractableService:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: Object
 MockInteractorActor:
   Attributes:
-    FocusedInteractable:
-      Offset: '0x3d8'
-      Size: '0x8'
-      Type: Class Object*
-    InteractNotificationType:
-      Offset: '0x3e8'
-      Size: '0x8'
-      Type: class
-    InteractedObject:
-      Offset: '0x3e0'
-      Size: '0x8'
-      Type: Class Object*
-    ValidInteractNotificationIds:
-      Offset: '0x3f0'
-      Size: '0x10'
-      Type: TArray<Class InteractNotificationType>
+  - Name: FocusedInteractable
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: InteractedObject
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: InteractNotificationType
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: class
+  - Name: ValidInteractNotificationIds
+    Offset: '0x3f0'
+    Size: '0x10'
+    Type: TArray<Class InteractNotificationType>
   ClassSize: '0x30'
   FullSize: '0x400'
   InheritedSize: '0x3d0'
   Super: Actor
 SelfInteractionInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

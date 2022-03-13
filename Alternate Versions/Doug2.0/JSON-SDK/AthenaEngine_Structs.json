@@ -1,176 +1,197 @@
 {
   "BoxedRpc": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "Type": {
+    "Attributes": [
+      {
+        "Name": "Type",
         "Type": "Class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "PlayModeDefiniton": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "Tags": {
+    "Attributes": [
+      {
+        "Name": "Tags",
         "Type": "TArray<Str >",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "States": {
+      {
+        "Name": "States",
         "Type": "TArray<Str >",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "CrewMin": {
+      {
+        "Name": "CrewMin",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      "CrewMax": {
+      {
+        "Name": "CrewMax",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x24"
       }
-    }
+    ]
   },
   "SerialisedRpc": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "ContentsType": {
+    "Attributes": [
+      {
+        "Name": "ContentsType",
         "Type": "Class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "ServicesStampId": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "StampId": {
+    "Attributes": [
+      {
+        "Name": "StampId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "StringAssetClassPair": {
     "ClassSize": "0x40",
-    "Attributes": {
-      "String": {
+    "Attributes": [
+      {
+        "Name": "String",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "FeatureOverrides": {
+      {
+        "Name": "FeatureOverrides",
         "Type": "TArray<Struct StringAssetClassPairFeatureOverride>",
         "Size": "0x10",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "StringAssetClassPairFeatureOverride": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "FeatureName": {
+    "Attributes": [
+      {
+        "Name": "FeatureName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "ActorComponentSelector": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "ComponentName": {
+    "Attributes": [
+      {
+        "Name": "ComponentName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "CachedComponent": {
+      {
+        "Name": "CachedComponent",
         "Type": "Class ActorComponent*",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "PlaySoundRpc": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "WwiseEvent": {
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "PlayOnTarget": {
+      {
+        "Name": "PlayOnTarget",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "EventCancelForceFeedback": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "ForceFeedbackEffect": {
+    "Attributes": [
+      {
+        "Name": "ForceFeedbackEffect",
         "Type": "Class ForceFeedbackEffect*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Tag": {
+      {
+        "Name": "Tag",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EventTriggerForceFeedback": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "ForceFeedbackEffect": {
+    "Attributes": [
+      {
+        "Name": "ForceFeedbackEffect",
         "Type": "Class ForceFeedbackEffect*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Looping": {
+      {
+        "Name": "Looping",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
       },
-      "Tag": {
+      {
+        "Name": "Tag",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xc"
       }
-    }
+    ]
   },
   "AthenaAsyncAssetLoaderWrapper": {
     "ClassSize": "0x18",
-    "Attributes": {}
+    "Attributes": []
   },
   "EventMeshAssigned": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "InlineUserDefinedStructDetails": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "Struct": {
+    "Attributes": [
+      {
+        "Name": "Struct",
         "Type": "Class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "NativeAndUserDefinedStructSelector": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "Struct": {
+    "Attributes": [
+      {
+        "Name": "Struct",
         "Type": "Class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

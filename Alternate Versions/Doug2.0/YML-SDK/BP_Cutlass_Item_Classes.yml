@@ -2,10 +2,10 @@
 # https://github.com/DougTheDruid
 BP_Cutlass_Item_C:
   Attributes:
-    UberGraphFrame:
-      Offset: '0xa80'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0xa80'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
   ClassSize: '0x8'
   FullSize: '0xa88'
   InheritedSize: '0xa80'

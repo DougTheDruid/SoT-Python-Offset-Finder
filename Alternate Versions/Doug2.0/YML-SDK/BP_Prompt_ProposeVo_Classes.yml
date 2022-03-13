@@ -2,26 +2,26 @@
 # https://github.com/DougTheDruid
 BP_Prompt_ProposeVoyage_C:
   Attributes:
-    Handle_OnOfferPurchased:
-      Offset: '0x128'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Prompt_ProposeVoyage:
-      Offset: '0x178'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    State_Complete:
-      Offset: '0x170'
-      Size: '0x1'
-      Type: bool
-    State_OfferPurchased:
-      Offset: '0x120'
-      Size: '0x1'
-      Type: bool
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: State_OfferPurchased
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_OnOfferPurchased
+    Offset: '0x128'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: State_Complete
+    Offset: '0x170'
+    Size: '0x1'
+    Type: bool
+  - Name: Prompt_ProposeVoyage
+    Offset: '0x178'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
   ClassSize: '0xc8'
   FullSize: '0x1e0'
   InheritedSize: '0x118'

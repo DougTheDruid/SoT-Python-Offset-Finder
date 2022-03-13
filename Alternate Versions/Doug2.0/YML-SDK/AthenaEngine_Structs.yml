@@ -2,127 +2,127 @@
 # https://github.com/DougTheDruid
 ActorComponentSelector:
   Attributes:
-    CachedComponent:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class ActorComponent*
-    ComponentName:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: ComponentName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CachedComponent
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ActorComponent*
   ClassSize: '0x10'
 AthenaAsyncAssetLoaderWrapper:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x18'
 BoxedRpc:
   Attributes:
-    Type:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class ScriptStruct*
+  - Name: Type
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class ScriptStruct*
   ClassSize: '0x10'
 EventCancelForceFeedback:
   Attributes:
-    ForceFeedbackEffect:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class ForceFeedbackEffect*
-    Tag:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: struct FName
+  - Name: ForceFeedbackEffect
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class ForceFeedbackEffect*
+  - Name: Tag
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x10'
 EventMeshAssigned:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 EventTriggerForceFeedback:
   Attributes:
-    ForceFeedbackEffect:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class ForceFeedbackEffect*
-    Looping:
-      Offset: '0x8'
-      Size: '0x1'
-      Type: bool
-    Tag:
-      Offset: '0xc'
-      Size: '0x8'
-      Type: struct FName
+  - Name: ForceFeedbackEffect
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class ForceFeedbackEffect*
+  - Name: Looping
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: Tag
+    Offset: '0xc'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x18'
 InlineUserDefinedStructDetails:
   Attributes:
-    Struct:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class ScriptStruct*
+  - Name: Struct
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class ScriptStruct*
   ClassSize: '0x8'
 NativeAndUserDefinedStructSelector:
   Attributes:
-    Struct:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class ScriptStruct*
+  - Name: Struct
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class ScriptStruct*
   ClassSize: '0x8'
 PlayModeDefiniton:
   Attributes:
-    CrewMax:
-      Offset: '0x24'
-      Size: '0x4'
-      Type: int
-    CrewMin:
-      Offset: '0x20'
-      Size: '0x4'
-      Type: int
-    States:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: TArray<Str >
-    Tags:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Str >
+  - Name: Tags
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: States
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Str >
+  - Name: CrewMin
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: CrewMax
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x28'
 PlaySoundRpc:
   Attributes:
-    PlayOnTarget:
-      Offset: '0x18'
-      Size: '0x1'
-      Type: bool
-    WwiseEvent:
-      Offset: '0x10'
-      Size: '0x8'
-      Type: Class WwiseEvent*
+  - Name: WwiseEvent
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: PlayOnTarget
+    Offset: '0x18'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x20'
 SerialisedRpc:
   Attributes:
-    ContentsType:
-      Offset: '0x18'
-      Size: '0x8'
-      Type: Class ScriptStruct*
+  - Name: ContentsType
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class ScriptStruct*
   ClassSize: '0x20'
 ServicesStampId:
   Attributes:
-    StampId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: StampId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
 StringAssetClassPair:
   Attributes:
-    FeatureOverrides:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: TArray<Struct StringAssetClassPairFeatureOverride>
-    String:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: String
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FeatureOverrides
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct StringAssetClassPairFeatureOverride>
   ClassSize: '0x40'
 StringAssetClassPairFeatureOverride:
   Attributes:
-    FeatureName:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: FeatureName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x28'

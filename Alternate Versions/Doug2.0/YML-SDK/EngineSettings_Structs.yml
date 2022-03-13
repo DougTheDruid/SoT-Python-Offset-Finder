@@ -2,16 +2,16 @@
 # https://github.com/DougTheDruid
 AutoCompleteCommand:
   Attributes:
-    Command:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
-    Desc:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct FString
-    Keywords:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: Command
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Desc
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Keywords
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x30'

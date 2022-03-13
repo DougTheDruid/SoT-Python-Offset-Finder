@@ -2,54 +2,54 @@
 # https://github.com/DougTheDruid
 ComplexItemQualityEntry:
   Attributes:
-    HealthLevel:
-      Offset: '0x1'
-      Size: '0x1'
-      Type: byte
-    IsComissioned:
-      Offset: '0x2'
-      Size: '0x1'
-      Type: byte
-    IsStolen:
-      Offset: '0x3'
-      Size: '0x1'
-      Type: byte
-    OnTime:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    QualityLevel:
-      Offset: '0x5'
-      Size: '0x1'
-      Type: byte
-    QueryReason:
-      Offset: '0x4'
-      Size: '0x1'
-      Type: byte
-    Rarity:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: struct FName
+  - Name: OnTime
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: HealthLevel
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: IsComissioned
+    Offset: '0x2'
+    Size: '0x1'
+    Type: byte
+  - Name: IsStolen
+    Offset: '0x3'
+    Size: '0x1'
+    Type: byte
+  - Name: QueryReason
+    Offset: '0x4'
+    Size: '0x1'
+    Type: byte
+  - Name: QualityLevel
+    Offset: '0x5'
+    Size: '0x1'
+    Type: byte
+  - Name: Rarity
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x10'
 PerComanyComplexItemQualityEntry:
   Attributes:
-    Company:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
-    QualityData:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Struct ComplexItemQualityEntry>
+  - Name: Company
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: QualityData
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct ComplexItemQualityEntry>
   ClassSize: '0x18'
 PerComanyItemQualityEntry:
   Attributes:
-    Company:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
-    Quality:
-      Offset: '0x8'
-      Size: '0x1'
-      Type: byte
+  - Name: Company
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Quality
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x10'

@@ -2,148 +2,148 @@
 # https://github.com/DougTheDruid
 BP_CT_TutorialProgress_C:
   Attributes:
-    AthenaPlayerController:
-      Offset: '0x30'
-      Size: '0x8'
-      Type: Class AthenaPlayerController*
-    BootyTutorialProgress:
-      Offset: '0x68'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
-    CargoTutorialProgress:
-      Offset: '0x60'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
-    FaunaTutorialProgress:
-      Offset: '0x58'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
-    RiddleTutorialProgress:
-      Offset: '0x50'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
-    TutorialVoyageProgressTrackers:
-      Offset: '0x38'
-      Size: '0x10'
-      Type: TArray<class TutorialVoyageProgressTrackers*>
-    UberGraphFrame:
-      Offset: '0x28'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
-    XMarksTutorialProgress:
-      Offset: '0x48'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+  - Name: UberGraphFrame
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: AthenaPlayerController
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class AthenaPlayerController*
+  - Name: TutorialVoyageProgressTrackers
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<class TutorialVoyageProgressTrackers*>
+  - Name: XMarksTutorialProgress
+    Offset: '0x48'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+  - Name: RiddleTutorialProgress
+    Offset: '0x50'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+  - Name: FaunaTutorialProgress
+    Offset: '0x58'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+  - Name: CargoTutorialProgress
+    Offset: '0x60'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+  - Name: BootyTutorialProgress
+    Offset: '0x68'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
   Super: Object
 BP_CT_VoyageProgress_C:
   Attributes:
-    AthenaPlayerController:
-      Offset: '0xe8'
-      Size: '0x8'
-      Type: Class AthenaPlayerController*
-    MaximumRank:
-      Offset: '0xf8'
-      Size: '0x8'
-      Type: class
-    NoLongerPurchaseable:
-      Offset: '0x100'
-      Size: '0x1'
-      Type: bool
-    UberGraphFrame:
-      Offset: '0xe0'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
-    VoyageState:
-      Offset: '0xf0'
-      Size: '0x1'
-      Type: byte
+  - Name: UberGraphFrame
+    Offset: '0xe0'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: AthenaPlayerController
+    Offset: '0xe8'
+    Size: '0x8'
+    Type: Class AthenaPlayerController*
+  - Name: VoyageState
+    Offset: '0xf0'
+    Size: '0x1'
+    Type: byte
+  - Name: MaximumRank
+    Offset: '0xf8'
+    Size: '0x8'
+    Type: class
+  - Name: NoLongerPurchaseable
+    Offset: '0x100'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x21'
   FullSize: '0x101'
   InheritedSize: '0xe0'
   Super: CompanyTutorialVoyageProgress
 BP_Prompt_VisitCompanyShop_C:
   Attributes:
-    AccessKey:
-      Offset: '0x1d8'
-      Size: '0x8'
-      Type: class
-    Company:
-      Offset: '0x1d0'
-      Size: '0x8'
-      Type: class
-    CompanyRankDesc:
-      Offset: '0x1e0'
-      Size: '0x8'
-      Type: class
-    Handle_TreasureChestSoldPredictedEvent:
-      Offset: '0x120'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    IsCorrectCompany:
-      Offset: '0x1f0'
-      Size: '0x1'
-      Type: bool
-    PromptDelayUntilDisplay:
-      Offset: '0x1e8'
-      Size: '0x4'
-      Type: float
-    PromptDisplayDuration:
-      Offset: '0x1ec'
-      Size: '0x4'
-      Type: float
-    PromptInfoSet:
-      Offset: '0x1f1'
-      Size: '0x1'
-      Type: bool
-    Prompt_VisitCompanyShop:
-      Offset: '0x168'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: Handle_TreasureChestSoldPredictedEvent
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Prompt_VisitCompanyShop
+    Offset: '0x168'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Company
+    Offset: '0x1d0'
+    Size: '0x8'
+    Type: class
+  - Name: AccessKey
+    Offset: '0x1d8'
+    Size: '0x8'
+    Type: class
+  - Name: CompanyRankDesc
+    Offset: '0x1e0'
+    Size: '0x8'
+    Type: class
+  - Name: PromptDelayUntilDisplay
+    Offset: '0x1e8'
+    Size: '0x4'
+    Type: float
+  - Name: PromptDisplayDuration
+    Offset: '0x1ec'
+    Size: '0x4'
+    Type: float
+  - Name: IsCorrectCompany
+    Offset: '0x1f0'
+    Size: '0x1'
+    Type: bool
+  - Name: PromptInfoSet
+    Offset: '0x1f1'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xda'
   FullSize: '0x1f2'
   InheritedSize: '0x118'
   Super: BP_PromptCoordinator_Base_C
 BP_Prompt_VisitSeapost_C:
   Attributes:
-    DelayUntilNextPrompt:
-      Offset: '0x240'
-      Size: '0x4'
-      Type: float
-    DisplayDuration:
-      Offset: '0x23c'
-      Size: '0x4'
-      Type: float
-    Handle_EventObjectWielded:
-      Offset: '0x120'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    IgnoredFood:
-      Offset: '0x248'
-      Size: '0x10'
-      Type: TArray<Class IgnoredFood>
-    IsWieldingMeatOrFish:
-      Offset: '0x238'
-      Size: '0x1'
-      Type: bool
-    Prompt_VisitSeapost:
-      Offset: '0x1d0'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    Prompt_WieledFishOrMeat:
-      Offset: '0x168'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: Handle_EventObjectWielded
+    Offset: '0x120'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Prompt_WieledFishOrMeat
+    Offset: '0x168'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Prompt_VisitSeapost
+    Offset: '0x1d0'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: IsWieldingMeatOrFish
+    Offset: '0x238'
+    Size: '0x1'
+    Type: bool
+  - Name: DisplayDuration
+    Offset: '0x23c'
+    Size: '0x4'
+    Type: float
+  - Name: DelayUntilNextPrompt
+    Offset: '0x240'
+    Size: '0x4'
+    Type: float
+  - Name: IgnoredFood
+    Offset: '0x248'
+    Size: '0x10'
+    Type: TArray<Class IgnoredFood>
   ClassSize: '0x140'
   FullSize: '0x258'
   InheritedSize: '0x118'

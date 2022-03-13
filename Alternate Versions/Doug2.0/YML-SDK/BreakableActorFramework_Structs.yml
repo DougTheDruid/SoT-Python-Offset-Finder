@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 EventBreakableActorWasDamaged:
   Attributes:
-    ImpactDamageEvent:
-      Offset: '0x0'
-      Size: '0x58'
-      Type: Struct ImpactDamageEvent
+  - Name: ImpactDamageEvent
+    Offset: '0x0'
+    Size: '0x58'
+    Type: Struct ImpactDamageEvent
   ClassSize: '0x58'
 EventBreakableActorWasDestroyed:
   Attributes:
-    DirectInstigator:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class Actor*
-    Instigator:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class Actor*
+  - Name: Instigator
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: DirectInstigator
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
   ClassSize: '0x10'

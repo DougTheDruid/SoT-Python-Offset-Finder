@@ -1,170 +1,194 @@
 {
   "CookingInfo": {
     "ClassSize": "0xc",
-    "Attributes": {}
+    "Attributes": []
   },
   "CookableComponentSmokeFeedbackTimingEntry": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "StateDuration": {
+    "Attributes": [
+      {
+        "Name": "StateDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "StateFeedbackLevel": {
+      {
+        "Name": "StateFeedbackLevel",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "CookingClientRepresentation": {
     "ClassSize": "0x68",
-    "Attributes": {
-      "Cooking": {
+    "Attributes": [
+      {
+        "Name": "Cooking",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "HasItem": {
+      {
+        "Name": "HasItem",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      "CurrentlyCookingItem": {
+      {
+        "Name": "CurrentlyCookingItem",
         "Type": "Class ItemInfo*",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "CurrentCookingItemDisplayName": {
+      {
+        "Name": "CurrentCookingItemDisplayName",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x10"
       },
-      "CurrentCookingItemCategory": {
+      {
+        "Name": "CurrentCookingItemCategory",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x48"
       },
-      "SmokeFeedbackLevel": {
+      {
+        "Name": "SmokeFeedbackLevel",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x50"
       },
-      "VisibleCookedExtent": {
+      {
+        "Name": "VisibleCookedExtent",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x54"
       },
-      "CurrentItemPlacementAngle": {
+      {
+        "Name": "CurrentItemPlacementAngle",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x58"
       },
-      "CurrentCookableTypeName": {
+      {
+        "Name": "CurrentCookableTypeName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x5c"
       }
-    }
+    ]
   },
   "CookerSmokeFeedbackEntry": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "FeedbackLevel": {
+    "Attributes": [
+      {
+        "Name": "FeedbackLevel",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "SmokeVFX": {
+      {
+        "Name": "SmokeVFX",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "OnRemovedItemFromCookingPot": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "Interactor": {
+    "Attributes": [
+      {
+        "Name": "Interactor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "OnPlacedItemInCookingPot": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "Interactor": {
+    "Attributes": [
+      {
+        "Name": "Interactor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "ItemToCook": {
+      {
+        "Name": "ItemToCook",
         "Type": "Class ItemInfo*",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "OnItemStartedCooking": {
     "ClassSize": "0x10",
-    "Attributes": {}
+    "Attributes": []
   },
   "OnItemStoppedCooking": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "CookEndTelemetryEvent": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "ItemName": {
+    "Attributes": [
+      {
+        "Name": "ItemName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "CookState": {
+      {
+        "Name": "CookState",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
       },
-      "Location": {
+      {
+        "Name": "Location",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x14"
       },
-      "CookId": {
+      {
+        "Name": "CookId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "CookStartTelemetryEvent": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "ItemName": {
+    "Attributes": [
+      {
+        "Name": "ItemName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "CookState": {
+      {
+        "Name": "CookState",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
       },
-      "Location": {
+      {
+        "Name": "Location",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x14"
       },
-      "CookId": {
+      {
+        "Name": "CookId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

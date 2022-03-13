@@ -2,344 +2,344 @@
 # https://github.com/DougTheDruid
 DeathSelfInteractionComponent:
   Attributes:
-    HasGivenUp:
-      Offset: '0x120'
-      Size: '0x1'
-      Type: bool
+  - Name: HasGivenUp
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x60'
   FullSize: '0x178'
   InheritedSize: '0x118'
   Super: InteractableComponent
 PostReviveLocomotionActionStateId:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: ActionStateId
 RevivableStatus:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x30'
   InheritedSize: '0x30'
   Super: StatusBase
 ReviveAudioComponent:
   Attributes:
-    ReviveEffectsDataAsset:
-      Offset: '0x300'
-      Size: '0x8'
-      Type: Class ReviveEffectsDataAsset*
+  - Name: ReviveEffectsDataAsset
+    Offset: '0x300'
+    Size: '0x8'
+    Type: Class ReviveEffectsDataAsset*
   ClassSize: '0x20'
   FullSize: '0x320'
   InheritedSize: '0x300'
   Super: WwiseEmitterComponent
 ReviveComponent:
   Attributes:
-    InteractionState:
-      Offset: '0x139'
-      Size: '0x1'
-      Type: byte
-    OwningCharacter:
-      Offset: '0x128'
-      Size: '0x8'
-      Type: Class Character*
-    RevivableStatus:
-      Offset: '0x230'
-      Size: '0x18'
-      Type: Struct Status
-    ReviveState:
-      Offset: '0x138'
-      Size: '0x1'
-      Type: byte
-    ReviveWindowIsOpen:
-      Offset: '0x15a'
-      Size: '0x1'
-      Type: bool
-    ReviveableRepresentationActor:
-      Offset: '0x130'
-      Size: '0x8'
-      Type: Class Actor*
-    ReviveableRepresentationClass:
-      Offset: '0x140'
-      Size: '0x8'
-      Type: class
+  - Name: OwningCharacter
+    Offset: '0x128'
+    Size: '0x8'
+    Type: Class Character*
+  - Name: ReviveableRepresentationActor
+    Offset: '0x130'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ReviveState
+    Offset: '0x138'
+    Size: '0x1'
+    Type: byte
+  - Name: InteractionState
+    Offset: '0x139'
+    Size: '0x1'
+    Type: byte
+  - Name: ReviveableRepresentationClass
+    Offset: '0x140'
+    Size: '0x8'
+    Type: class
+  - Name: ReviveWindowIsOpen
+    Offset: '0x15a'
+    Size: '0x1'
+    Type: bool
+  - Name: RevivableStatus
+    Offset: '0x230'
+    Size: '0x18'
+    Type: Struct Status
   ClassSize: '0x148'
   FullSize: '0x260'
   InheritedSize: '0x118'
   Super: InteractableComponent
 ReviveConditionalStatTrigger:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x30'
   InheritedSize: '0x30'
   Super: ConditionalStatsTriggerType
 ReviveDebugComponent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x98'
   FullSize: '0x160'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ReviveEffectsDataAsset:
   Attributes:
-    AstralCordBorderMaterialCollectionScalarParameterName:
-      Offset: '0x40'
-      Size: '0x8'
-      Type: struct FName
-    AstralCordBorderParamValueByAbsoluteTimeSinceDeath:
-      Offset: '0x48'
-      Size: '0x8'
-      Type: Class CurveFloat*
-    AstralCordFadeInInterpolationSpeed:
-      Offset: '0x88'
-      Size: '0x4'
-      Type: float
-    AstralCordFadeMaterialCollectionScalarParameterName:
-      Offset: '0x38'
-      Size: '0x8'
-      Type: struct FName
-    AstralCordFadeOutInterpolationSpeed:
-      Offset: '0x8c'
-      Size: '0x4'
-      Type: float
-    AstralCordHeightOffsetFromTheGhost:
-      Offset: '0x94'
-      Size: '0x4'
-      Type: float
-    AstralCordReviveInProgressInterpolationSpeed:
-      Offset: '0x78'
-      Size: '0x4'
-      Type: float
-    AstralCordReviveInProgressMaterialCollectionScalarParameterName:
-      Offset: '0x30'
-      Size: '0x8'
-      Type: struct FName
-    AstralCordReviveNotInProgressInterpolationSpeed:
-      Offset: '0x7c'
-      Size: '0x4'
-      Type: float
-    ContinuousBodyLoopingVFX:
-      Offset: '0x80'
-      Size: '0x8'
-      Type: Class Object*
-    DeadPlayerBodyEvaporatesOneShotVFX:
-      Offset: '0x98'
-      Size: '0x8'
-      Type: Class Object*
-    DeadPlayer_ReviveInProgressStart:
-      Offset: '0xb0'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    DeadPlayer_ReviveInProgressStop:
-      Offset: '0xb8'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    DefaultAstralCordHeight:
-      Offset: '0x90'
-      Size: '0x4'
-      Type: float
-    GhostShaderGhostEffectInterpolationValue:
-      Offset: '0x58'
-      Size: '0x4'
-      Type: float
-    OtherPlayers_ReviveGhostAmbientStart:
-      Offset: '0xa0'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    OtherPlayers_ReviveGhostAmbientStop:
-      Offset: '0xa8'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    OtherPlayers_ReviveInProgressStart:
-      Offset: '0xc0'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    OtherPlayers_ReviveInProgressStop:
-      Offset: '0xc8'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    ReviveInProgressLoopingVFX:
-      Offset: '0x70'
-      Size: '0x8'
-      Type: Class Object*
-    ReviveMaterialParameterCollection:
-      Offset: '0x28'
-      Size: '0x8'
-      Type: Class MaterialParameterCollection*
-    ReviveSuccessfulEffectDuration:
-      Offset: '0x5c'
-      Size: '0x4'
-      Type: float
-    ReviveSuccessfulOneShotVFX:
-      Offset: '0x60'
-      Size: '0x8'
-      Type: Class Object*
-    ReviveSuccessfulOneShotVFX_Revivee:
-      Offset: '0x68'
-      Size: '0x8'
-      Type: Class Object*
-    ReviveePostProcessMaterial:
-      Offset: '0x50'
-      Size: '0x8'
-      Type: Class Material*
+  - Name: ReviveMaterialParameterCollection
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class MaterialParameterCollection*
+  - Name: AstralCordReviveInProgressMaterialCollectionScalarParameterName
+    Offset: '0x30'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AstralCordFadeMaterialCollectionScalarParameterName
+    Offset: '0x38'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AstralCordBorderMaterialCollectionScalarParameterName
+    Offset: '0x40'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AstralCordBorderParamValueByAbsoluteTimeSinceDeath
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: ReviveePostProcessMaterial
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Class Material*
+  - Name: GhostShaderGhostEffectInterpolationValue
+    Offset: '0x58'
+    Size: '0x4'
+    Type: float
+  - Name: ReviveSuccessfulEffectDuration
+    Offset: '0x5c'
+    Size: '0x4'
+    Type: float
+  - Name: ReviveSuccessfulOneShotVFX
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: ReviveSuccessfulOneShotVFX_Revivee
+    Offset: '0x68'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: ReviveInProgressLoopingVFX
+    Offset: '0x70'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: AstralCordReviveInProgressInterpolationSpeed
+    Offset: '0x78'
+    Size: '0x4'
+    Type: float
+  - Name: AstralCordReviveNotInProgressInterpolationSpeed
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: float
+  - Name: ContinuousBodyLoopingVFX
+    Offset: '0x80'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: AstralCordFadeInInterpolationSpeed
+    Offset: '0x88'
+    Size: '0x4'
+    Type: float
+  - Name: AstralCordFadeOutInterpolationSpeed
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: float
+  - Name: DefaultAstralCordHeight
+    Offset: '0x90'
+    Size: '0x4'
+    Type: float
+  - Name: AstralCordHeightOffsetFromTheGhost
+    Offset: '0x94'
+    Size: '0x4'
+    Type: float
+  - Name: DeadPlayerBodyEvaporatesOneShotVFX
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: OtherPlayers_ReviveGhostAmbientStart
+    Offset: '0xa0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: OtherPlayers_ReviveGhostAmbientStop
+    Offset: '0xa8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: DeadPlayer_ReviveInProgressStart
+    Offset: '0xb0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: DeadPlayer_ReviveInProgressStop
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: OtherPlayers_ReviveInProgressStart
+    Offset: '0xc0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: OtherPlayers_ReviveInProgressStop
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
   ClassSize: '0xa8'
   FullSize: '0xd0'
   InheritedSize: '0x28'
   Super: DataAsset
 ReviveGhost:
   Attributes:
-    AnimationDataStoreComponent:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Class AnimationDataStoreComponent*
-    AstralCordContainer:
-      Offset: '0x400'
-      Size: '0x8'
-      Type: Class SceneComponent*
-    AstralCordDynamicMaterials:
-      Offset: '0x608'
-      Size: '0x10'
-      Type: TArray<class AstralCordDynamicMaterials*>
-    AudioComponent:
-      Offset: '0x420'
-      Size: '0x8'
-      Type: Class ReviveAudioComponent*
-    CorpseMaterials:
-      Offset: '0x3e0'
-      Size: '0x10'
-      Type: TArray<class CorpseMaterials*>
-    DitherComponent:
-      Offset: '0x418'
-      Size: '0x8'
-      Type: Class DitherComponent*
-    GhostPlayModeSpecificParameters:
-      Offset: '0x618'
-      Size: '0xc'
-      Type: Struct GhostPlayModeParameters
-    MeshComponent:
-      Offset: '0x3f8'
-      Size: '0x8'
-      Type: Class SkeletalMeshComponent*
-    PostProcessComponent:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: Class PostProcessComponent*
-    RevivableOwnerNetRole:
-      Offset: '0x438'
-      Size: '0x1'
-      Type: byte
-    ReviveEffectsDataAsset:
-      Offset: '0x448'
-      Size: '0x8'
-      Type: Class ReviveEffectsDataAsset*
-    ReviveEffectsValues:
-      Offset: '0x450'
-      Size: '0x20'
-      Type: Struct ReviveEffectsValues
-    ReviveGhostDataAsset:
-      Offset: '0x440'
-      Size: '0x8'
-      Type: Class GhostDataAsset*
-    ReviveSettings:
-      Offset: '0x470'
-      Size: '0x30'
-      Type: Struct ModeSpecificReviveSettings
-    Root:
-      Offset: '0x3f0'
-      Size: '0x8'
-      Type: Class SceneComponent*
+  - Name: CorpseMaterials
+    Offset: '0x3e0'
+    Size: '0x10'
+    Type: TArray<class CorpseMaterials*>
+  - Name: Root
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: MeshComponent
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class SkeletalMeshComponent*
+  - Name: AstralCordContainer
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: AnimationDataStoreComponent
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Class AnimationDataStoreComponent*
+  - Name: PostProcessComponent
+    Offset: '0x410'
+    Size: '0x8'
+    Type: Class PostProcessComponent*
+  - Name: DitherComponent
+    Offset: '0x418'
+    Size: '0x8'
+    Type: Class DitherComponent*
+  - Name: AudioComponent
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class ReviveAudioComponent*
+  - Name: RevivableOwnerNetRole
+    Offset: '0x438'
+    Size: '0x1'
+    Type: byte
+  - Name: ReviveGhostDataAsset
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Class GhostDataAsset*
+  - Name: ReviveEffectsDataAsset
+    Offset: '0x448'
+    Size: '0x8'
+    Type: Class ReviveEffectsDataAsset*
+  - Name: ReviveEffectsValues
+    Offset: '0x450'
+    Size: '0x20'
+    Type: Struct ReviveEffectsValues
+  - Name: ReviveSettings
+    Offset: '0x470'
+    Size: '0x30'
+    Type: Struct ModeSpecificReviveSettings
+  - Name: AstralCordDynamicMaterials
+    Offset: '0x608'
+    Size: '0x10'
+    Type: TArray<class AstralCordDynamicMaterials*>
+  - Name: GhostPlayModeSpecificParameters
+    Offset: '0x618'
+    Size: '0xc'
+    Type: Struct GhostPlayModeParameters
   ClassSize: '0x258'
   FullSize: '0x628'
   InheritedSize: '0x3d0'
   Super: Actor
 ReviveInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 RevivePlayerActionStateId:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: ActionStateId
 ReviveSettings:
   Attributes:
-    FadeColour:
-      Offset: '0x40'
-      Size: '0x10'
-      Type: Struct LinearColor
-    GiveUpEvaporateDuration:
-      Offset: '0x90'
-      Size: '0x4'
-      Type: float
-    GiveUpFadeDuration:
-      Offset: '0x8c'
-      Size: '0x4'
-      Type: float
-    GiveUpHoldTime:
-      Offset: '0x88'
-      Size: '0x4'
-      Type: float
-    HealthRegained:
-      Offset: '0x38'
-      Size: '0x4'
-      Type: float
-    MaxRevertEvaporateDuration:
-      Offset: '0x60'
-      Size: '0x4'
-      Type: float
-    MaximumReviveDistance:
-      Offset: '0x3c'
-      Size: '0x4'
-      Type: float
-    ModeSpecificSettings:
-      Offset: '0x78'
-      Size: '0x10'
-      Type: TArray<Struct UnsupportedPlayModes>
-    ReviveTime:
-      Offset: '0x58'
-      Size: '0x4'
-      Type: float
-    ReviveTimeOnEnemyShip:
-      Offset: '0x5c'
-      Size: '0x4'
-      Type: float
-    ServerWaitTimeBeforeFullyReviving:
-      Offset: '0x54'
-      Size: '0x4'
-      Type: float
-    ShouldFadeAudio:
-      Offset: '0x50'
-      Size: '0x1'
-      Type: bool
-    UnsupportedPlayModes:
-      Offset: '0x68'
-      Size: '0x10'
-      Type: TArray<Byte MaxRevertEvaporateDuration>
+  - Name: HealthRegained
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: MaximumReviveDistance
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: FadeColour
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ShouldFadeAudio
+    Offset: '0x50'
+    Size: '0x1'
+    Type: bool
+  - Name: ServerWaitTimeBeforeFullyReviving
+    Offset: '0x54'
+    Size: '0x4'
+    Type: float
+  - Name: ReviveTime
+    Offset: '0x58'
+    Size: '0x4'
+    Type: float
+  - Name: ReviveTimeOnEnemyShip
+    Offset: '0x5c'
+    Size: '0x4'
+    Type: float
+  - Name: MaxRevertEvaporateDuration
+    Offset: '0x60'
+    Size: '0x4'
+    Type: float
+  - Name: UnsupportedPlayModes
+    Offset: '0x68'
+    Size: '0x10'
+    Type: TArray<Byte MaxRevertEvaporateDuration>
+  - Name: ModeSpecificSettings
+    Offset: '0x78'
+    Size: '0x10'
+    Type: TArray<Struct UnsupportedPlayModes>
+  - Name: GiveUpHoldTime
+    Offset: '0x88'
+    Size: '0x4'
+    Type: float
+  - Name: GiveUpFadeDuration
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: float
+  - Name: GiveUpEvaporateDuration
+    Offset: '0x90'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x60'
   FullSize: '0x98'
   InheritedSize: '0x38'
   Super: DeveloperSettings
 ReviveableActionStateId:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: ActionStateId
 ReviveableCharacterInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 ReviveableRepresentationInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 RevivedActionStateId:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

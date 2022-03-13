@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 DestroyActorData:
   Attributes:
-    ActorNetID:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
+  - Name: ActorNetID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x4'
 DestroyAllExistingActorsByClassData:
   Attributes:
-    ActorClassNames:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Str None>
+  - Name: ActorClassNames
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Str None>
   ClassSize: '0x10'

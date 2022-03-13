@@ -2,12 +2,12 @@
 # https://github.com/DougTheDruid
 GiveEmergentVoyageData:
   Attributes:
-    PlayerNetGUID:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    VoyageAssetPath:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: PlayerNetGUID
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: VoyageAssetPath
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x18'

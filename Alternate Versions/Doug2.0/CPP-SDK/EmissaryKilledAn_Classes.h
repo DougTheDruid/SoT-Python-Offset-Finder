@@ -15,7 +15,7 @@ public:
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
 	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
-	TArray<Struct FName>                                         ExpectedVictimCompanyName;                         // 0x438(0x10)
+	TArray<Name H>                                           ExpectedVictimCompanyName;                         // 0x438(0x10)
 	TArray<Class ExpectedVictimCompanies>                        ExpectedVictimCompanies;                           // 0x448(0x10)
 };
 
@@ -43,7 +43,7 @@ public:
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
 	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
-	TArray<Struct FName>                                         ExpectedVictimCompanyName;                         // 0x438(0x10)
+	TArray<Name None>                                            ExpectedVictimCompanyName;                         // 0x438(0x10)
 	TArray<Class ExpectedVictimCompanies>                        ExpectedVictimCompanies;                           // 0x448(0x10)
 };
 
@@ -56,7 +56,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryKilledAnotherEmissary_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
+	TArray<Struct >                                              Prompts;                                           // 0x428(0x10)
 	TArray<Struct FName>                                         ExpectedVictimCompanyName;                         // 0x438(0x10)
 	TArray<Class ExpectedVictimCompanies>                        ExpectedVictimCompanies;                           // 0x448(0x10)
 };
@@ -70,7 +70,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryKilledAnotherEmissary_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct >                                              Prompts;                                           // 0x428(0x10)
+	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
 	TArray<Struct FName>                                         ExpectedVictimCompanyName;                         // 0x438(0x10)
 	TArray<Class ExpectedVictimCompanies>                        ExpectedVictimCompanies;                           // 0x448(0x10)
 };

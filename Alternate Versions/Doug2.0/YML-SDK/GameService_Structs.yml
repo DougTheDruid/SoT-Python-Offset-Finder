@@ -2,18 +2,18 @@
 # https://github.com/DougTheDruid
 GameServiceCoordinator:
   Attributes:
-    Services:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct GameServiceCoordinatorUnit>
+  - Name: Services
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct GameServiceCoordinatorUnit>
   ClassSize: '0x20'
 GameServiceCoordinatorUnit:
   Attributes:
-    Service:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class Object*
+  - Name: Service
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
   ClassSize: '0x18'
 GameServiceMap:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x70'

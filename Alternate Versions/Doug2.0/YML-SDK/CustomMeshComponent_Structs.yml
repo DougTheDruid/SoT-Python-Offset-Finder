@@ -2,16 +2,16 @@
 # https://github.com/DougTheDruid
 CustomMeshTriangle:
   Attributes:
-    Vertex0:
-      Offset: '0x0'
-      Size: '0xc'
-      Type: Struct Vector
-    Vertex1:
-      Offset: '0xc'
-      Size: '0xc'
-      Type: Struct Vector
-    Vertex2:
-      Offset: '0x18'
-      Size: '0xc'
-      Type: Struct Vector
+  - Name: Vertex0
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Vertex1
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Vertex2
+    Offset: '0x18'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0x24'

@@ -2,56 +2,56 @@
 # https://github.com/DougTheDruid
 AssetReferencer:
   Attributes:
-    AssetsToReference:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<Assetclass DidHitchOccurThisFrame>
+  - Name: AssetsToReference
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Assetclass DidHitchOccurThisFrame>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 AudioHardwareDeviceService:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: Object
 HitchDiagnosisBlueprintFunctionLibrary:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
 MemoryUsageVisualiserSettings:
   Attributes:
-    VisualiserCategories:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<Struct Activate>
+  - Name: VisualiserCategories
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct Activate>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
 RareGameEngine:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x58'
   FullSize: '0xa40'
   InheritedSize: '0x9e8'
   Super: GameEngine
 RareHUD:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x4c8'
   InheritedSize: '0x4c8'
   Super: HUD
 StallDetector:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
   Super: Object
 StaticMeshActorBlueprintLibrary:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

@@ -2,60 +2,60 @@
 # https://github.com/DougTheDruid
 WorldLocationPopUpComponent:
   Attributes:
-    AlwaysShowPopUp:
-      Offset: '0x2e4'
-      Size: '0x1'
-      Type: bool
-    LocationCooldown:
-      Offset: '0x2e0'
-      Size: '0x4'
-      Type: float
-    LocationOverlapVolume:
-      Offset: '0x2d8'
-      Size: '0x8'
-      Type: Class ShapeComponent*
-    PopUpData:
-      Offset: '0x2d0'
-      Size: '0x8'
-      Type: Class WorldLocationPopUpDataAsset*
+  - Name: PopUpData
+    Offset: '0x2d0'
+    Size: '0x8'
+    Type: Class WorldLocationPopUpDataAsset*
+  - Name: LocationOverlapVolume
+    Offset: '0x2d8'
+    Size: '0x8'
+    Type: Class ShapeComponent*
+  - Name: LocationCooldown
+    Offset: '0x2e0'
+    Size: '0x4'
+    Type: float
+  - Name: AlwaysShowPopUp
+    Offset: '0x2e4'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x80'
   FullSize: '0x350'
   InheritedSize: '0x2d0'
   Super: SceneComponent
 WorldLocationPopUpDataAsset:
   Attributes:
-    AudioOverride:
-      Offset: '0x78'
-      Size: '0x8'
-      Type: Class PopUpAudioDesc*
-    BannerIcon:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    DisplayText:
-      Offset: '0x40'
-      Size: '0x38'
-      Type: Struct FText
-    Id:
-      Offset: '0x28'
-      Size: '0x8'
-      Type: struct FName
+  - Name: Id
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: BannerIcon
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: DisplayText
+    Offset: '0x40'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: AudioOverride
+    Offset: '0x78'
+    Size: '0x8'
+    Type: Class PopUpAudioDesc*
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'
   Super: DataAsset
 WorldLocationVisitorComponent:
   Attributes:
-    RevisitCooldown:
-      Offset: '0xd0'
-      Size: '0x4'
-      Type: float
+  - Name: RevisitCooldown
+    Offset: '0xd0'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'
   Super: ActorComponent
 WorldLocationVisitorInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

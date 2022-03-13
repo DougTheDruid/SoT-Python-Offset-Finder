@@ -2,8 +2,8 @@
 # https://github.com/DougTheDruid
 LinkEndpointId:
   Attributes:
-    Raw:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
+  - Name: Raw
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
   ClassSize: '0x8'

@@ -2,48 +2,48 @@
 # https://github.com/DougTheDruid
 BarrelsOfPlentyDebugSpawnLocation:
   Attributes:
-    Objects:
-      Offset: '0x3d0'
-      Size: '0x10'
-      Type: TArray<Struct SceneComponent>
-    Radius:
-      Offset: '0x3ec'
-      Size: '0x4'
-      Type: float
-    SpawnCentre:
-      Offset: '0x3e0'
-      Size: '0xc'
-      Type: Struct Vector
+  - Name: Objects
+    Offset: '0x3d0'
+    Size: '0x10'
+    Type: TArray<Struct SceneComponent>
+  - Name: SpawnCentre
+    Offset: '0x3e0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Radius
+    Offset: '0x3ec'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x20'
   FullSize: '0x3f0'
   InheritedSize: '0x3d0'
   Super: Actor
 BarrelsOfPlentySpawnProxy:
   Attributes:
-    SceneComponent:
-      Offset: '0x3f0'
-      Size: '0x8'
-      Type: Class SceneComponent*
-    Ship:
-      Offset: '0x3d0'
-      Size: '0x8'
-      Type: Class Ship*
+  - Name: Ship
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class Ship*
+  - Name: SceneComponent
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class SceneComponent*
   ClassSize: '0x28'
   FullSize: '0x3f8'
   InheritedSize: '0x3d0'
   Super: Actor
 SpawnBarrelsOfPlentyStep:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x90'
   InheritedSize: '0x90'
   Super: TaleQuestStep
 SpawnBarrelsOfPlentyStepDesc:
   Attributes:
-    LocatorVar:
-      Offset: '0x80'
-      Size: '0x20'
-      Type: Struct QuestVariableVector
+  - Name: LocatorVar
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableVector
   ClassSize: '0x20'
   FullSize: '0xa0'
   InheritedSize: '0x80'

@@ -2,18 +2,18 @@
 # https://github.com/DougTheDruid
 EventExplosionIgnitedActor:
   Attributes:
-    IgnitedActor:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class Actor*
+  - Name: IgnitedActor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
   ClassSize: '0x8'
 EventExplosionOverlap:
   Attributes:
-    DamagerType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: DamagerType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x8'
 EventOnExploded:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0xc'

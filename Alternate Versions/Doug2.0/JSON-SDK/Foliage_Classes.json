@@ -4,607 +4,710 @@
     "FullSize": "0x7b0",
     "InheritedSize": "0x790",
     "ClassSize": "0x20",
-    "Attributes": {}
+    "Attributes": []
   },
   "FoliageStatistics": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "FoliageType": {
     "Super": "Object",
     "FullSize": "0x360",
     "InheritedSize": "0x28",
     "ClassSize": "0x338",
-    "Attributes": {
-      "UpdateGuid": {
+    "Attributes": [
+      {
+        "Name": "UpdateGuid",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "Density": {
+      {
+        "Name": "Density",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x38"
       },
-      "DensityAdjustmentFactor": {
+      {
+        "Name": "DensityAdjustmentFactor",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3c"
       },
-      "Radius": {
+      {
+        "Name": "Radius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      "Scaling": {
+      {
+        "Name": "Scaling",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x44"
       },
-      "ScaleX": {
+      {
+        "Name": "ScaleX",
         "Type": "Struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x48"
       },
-      "ScaleY": {
+      {
+        "Name": "ScaleY",
         "Type": "Struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x50"
       },
-      "ScaleZ": {
+      {
+        "Name": "ScaleZ",
         "Type": "Struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x58"
       },
-      "VertexColorMask": {
+      {
+        "Name": "VertexColorMask",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x60"
       },
-      "VertexColorMaskThreshold": {
+      {
+        "Name": "VertexColorMaskThreshold",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x64"
       },
-      "VertexColorMaskInvert": {
+      {
+        "Name": "VertexColorMaskInvert",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x68"
       },
-      "ZOffset": {
+      {
+        "Name": "ZOffset",
         "Type": "Struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x6c"
       },
-      "AlignToNormal": {
+      {
+        "Name": "AlignToNormal",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x74"
       },
-      "AlignMaxAngle": {
+      {
+        "Name": "AlignMaxAngle",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x78"
       },
-      "RandomYaw": {
+      {
+        "Name": "RandomYaw",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x7c"
       },
-      "RandomPitchAngle": {
+      {
+        "Name": "RandomPitchAngle",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x80"
       },
-      "GroundSlopeAngle": {
+      {
+        "Name": "GroundSlopeAngle",
         "Type": "Struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x84"
       },
-      "Height": {
+      {
+        "Name": "Height",
         "Type": "Struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x8c"
       },
-      "LandscapeLayers": {
+      {
+        "Name": "LandscapeLayers",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x98"
       },
-      "LandscapeLayer": {
+      {
+        "Name": "LandscapeLayer",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xa8"
       },
-      "CollisionWithWorld": {
+      {
+        "Name": "CollisionWithWorld",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xb0"
       },
-      "CollisionScale": {
+      {
+        "Name": "CollisionScale",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0xb4"
       },
-      "MinimumLayerWeight": {
+      {
+        "Name": "MinimumLayerWeight",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc0"
       },
-      "MeshBounds": {
+      {
+        "Name": "MeshBounds",
         "Type": "Struct BoxSphereBounds",
         "Size": "0x1c",
         "Offset": "0xc4"
       },
-      "LowBoundOriginRadius": {
+      {
+        "Name": "LowBoundOriginRadius",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0xe0"
       },
-      "Mobility": {
+      {
+        "Name": "Mobility",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xec"
       },
-      "CullDistance": {
+      {
+        "Name": "CullDistance",
         "Type": "Struct Int32Interval",
         "Size": "0x8",
         "Offset": "0xf0"
       },
-      "bEnableStaticLighting": {
+      {
+        "Name": "bEnableStaticLighting",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf8"
       },
-      "CastShadow": {
+      {
+        "Name": "CastShadow",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf8"
       },
-      "bAffectDynamicIndirectLighting": {
+      {
+        "Name": "bAffectDynamicIndirectLighting",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf8"
       },
-      "bAffectDistanceFieldLighting": {
+      {
+        "Name": "bAffectDistanceFieldLighting",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf8"
       },
-      "bCastDynamicShadow": {
+      {
+        "Name": "bCastDynamicShadow",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf8"
       },
-      "bCastStaticShadow": {
+      {
+        "Name": "bCastStaticShadow",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf8"
       },
-      "bCastShadowAsTwoSided": {
+      {
+        "Name": "bCastShadowAsTwoSided",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf8"
       },
-      "bReceivesDecals": {
+      {
+        "Name": "bReceivesDecals",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf8"
       },
-      "bOverrideLightMapRes": {
+      {
+        "Name": "bOverrideLightMapRes",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xf9"
       },
-      "OverriddenLightMapRes": {
+      {
+        "Name": "OverriddenLightMapRes",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xfc"
       },
-      "bUseAsOccluder": {
+      {
+        "Name": "bUseAsOccluder",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x100"
       },
-      "BodyInstance": {
+      {
+        "Name": "BodyInstance",
         "Type": "Struct BodyInstance",
         "Size": "0x180",
         "Offset": "0x108"
       },
-      "CustomNavigableGeometry": {
+      {
+        "Name": "CustomNavigableGeometry",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x288"
       },
-      "IsSelected": {
+      {
+        "Name": "IsSelected",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x298"
       },
-      "CollisionRadius": {
+      {
+        "Name": "CollisionRadius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x29c"
       },
-      "ShadeRadius": {
+      {
+        "Name": "ShadeRadius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2a0"
       },
-      "NumSteps": {
+      {
+        "Name": "NumSteps",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2a4"
       },
-      "InitialSeedDensity": {
+      {
+        "Name": "InitialSeedDensity",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2a8"
       },
-      "AverageSpreadDistance": {
+      {
+        "Name": "AverageSpreadDistance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2ac"
       },
-      "SpreadVariance": {
+      {
+        "Name": "SpreadVariance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2b0"
       },
-      "SeedsPerStep": {
+      {
+        "Name": "SeedsPerStep",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2b4"
       },
-      "DistributionSeed": {
+      {
+        "Name": "DistributionSeed",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2b8"
       },
-      "MaxInitialSeedOffset": {
+      {
+        "Name": "MaxInitialSeedOffset",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2bc"
       },
-      "bCanGrowInShade": {
+      {
+        "Name": "bCanGrowInShade",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2c0"
       },
-      "bSpawnsInShade": {
+      {
+        "Name": "bSpawnsInShade",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2c1"
       },
-      "MaxInitialAge": {
+      {
+        "Name": "MaxInitialAge",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c4"
       },
-      "MaxAge": {
+      {
+        "Name": "MaxAge",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c8"
       },
-      "OverlapPriority": {
+      {
+        "Name": "OverlapPriority",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2cc"
       },
-      "ProceduralScale": {
+      {
+        "Name": "ProceduralScale",
         "Type": "Struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x2d0"
       },
-      "ScaleCurve": {
+      {
+        "Name": "ScaleCurve",
         "Type": "Struct RuntimeFloatCurve",
         "Size": "0x80",
         "Offset": "0x2d8"
       },
-      "ChangeCount": {
+      {
+        "Name": "ChangeCount",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x358"
       },
-      "ReapplyDensity": {
+      {
+        "Name": "ReapplyDensity",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35c"
       },
-      "ReapplyRadius": {
+      {
+        "Name": "ReapplyRadius",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35c"
       },
-      "ReapplyAlignToNormal": {
+      {
+        "Name": "ReapplyAlignToNormal",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35c"
       },
-      "ReapplyRandomYaw": {
+      {
+        "Name": "ReapplyRandomYaw",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35c"
       },
-      "ReapplyScaling": {
+      {
+        "Name": "ReapplyScaling",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35c"
       },
-      "ReapplyScaleX": {
+      {
+        "Name": "ReapplyScaleX",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35c"
       },
-      "ReapplyScaleY": {
+      {
+        "Name": "ReapplyScaleY",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35c"
       },
-      "ReapplyScaleZ": {
+      {
+        "Name": "ReapplyScaleZ",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35c"
       },
-      "ReapplyRandomPitchAngle": {
+      {
+        "Name": "ReapplyRandomPitchAngle",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35d"
       },
-      "ReapplyGroundSlope": {
+      {
+        "Name": "ReapplyGroundSlope",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35d"
       },
-      "ReapplyHeight": {
+      {
+        "Name": "ReapplyHeight",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35d"
       },
-      "ReapplyLandscapeLayers": {
+      {
+        "Name": "ReapplyLandscapeLayers",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35d"
       },
-      "ReapplyZOffset": {
+      {
+        "Name": "ReapplyZOffset",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35d"
       },
-      "ReapplyCollisionWithWorld": {
+      {
+        "Name": "ReapplyCollisionWithWorld",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35d"
       },
-      "ReapplyVertexColorMask": {
+      {
+        "Name": "ReapplyVertexColorMask",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35d"
       }
-    }
+    ]
   },
   "FoliageType_InstancedStaticMesh": {
     "Super": "FoliageType",
     "FullSize": "0x380",
     "InheritedSize": "0x360",
     "ClassSize": "0x20",
-    "Attributes": {
-      "Mesh": {
+    "Attributes": [
+      {
+        "Name": "Mesh",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x360"
       },
-      "OverrideMaterials": {
+      {
+        "Name": "OverrideMaterials",
         "Type": "TArray<class OverrideMaterials*>",
         "Size": "0x10",
         "Offset": "0x368"
       },
-      "ComponentClass": {
+      {
+        "Name": "ComponentClass",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x378"
       }
-    }
+    ]
   },
   "InstancedFoliageActor": {
     "Super": "Actor",
     "FullSize": "0x420",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x50",
-    "Attributes": {}
+    "Attributes": []
   },
   "InteractiveFoliageActor": {
     "Super": "StaticMeshActor",
     "FullSize": "0x440",
     "InheritedSize": "0x3e0",
     "ClassSize": "0x60",
-    "Attributes": {
-      "CapsuleComponent": {
+    "Attributes": [
+      {
+        "Name": "CapsuleComponent",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
-      "TouchingActorEntryPosition": {
+      {
+        "Name": "TouchingActorEntryPosition",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x3e8"
       },
-      "FoliageVelocity": {
+      {
+        "Name": "FoliageVelocity",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x3f4"
       },
-      "FoliageForce": {
+      {
+        "Name": "FoliageForce",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x400"
       },
-      "FoliagePosition": {
+      {
+        "Name": "FoliagePosition",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x40c"
       },
-      "FoliageDamageImpulseScale": {
+      {
+        "Name": "FoliageDamageImpulseScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x418"
       },
-      "FoliageTouchImpulseScale": {
+      {
+        "Name": "FoliageTouchImpulseScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x41c"
       },
-      "FoliageStiffness": {
+      {
+        "Name": "FoliageStiffness",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x420"
       },
-      "FoliageStiffnessQuadratic": {
+      {
+        "Name": "FoliageStiffnessQuadratic",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x424"
       },
-      "FoliageDamping": {
+      {
+        "Name": "FoliageDamping",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x428"
       },
-      "MaxDamageImpulse": {
+      {
+        "Name": "MaxDamageImpulse",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x42c"
       },
-      "MaxTouchImpulse": {
+      {
+        "Name": "MaxTouchImpulse",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x430"
       },
-      "MaxForce": {
+      {
+        "Name": "MaxForce",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x434"
       },
-      "Mass": {
+      {
+        "Name": "Mass",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x438"
       }
-    }
+    ]
   },
   "InteractiveFoliageComponent": {
     "Super": "StaticMeshComponent",
     "FullSize": "0x620",
     "InheritedSize": "0x610",
     "ClassSize": "0x10",
-    "Attributes": {}
+    "Attributes": []
   },
   "ProceduralFoliageBlockingVolume": {
     "Super": "Volume",
     "FullSize": "0x410",
     "InheritedSize": "0x408",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ProceduralFoliageVolume": {
+    "Attributes": [
+      {
+        "Name": "ProceduralFoliageVolume",
         "Type": "Class ProceduralFoliageVolume*",
         "Size": "0x8",
         "Offset": "0x408"
       }
-    }
+    ]
   },
   "ProceduralFoliageComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xf0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x28",
-    "Attributes": {
-      "FoliageSpawner": {
+    "Attributes": [
+      {
+        "Name": "FoliageSpawner",
         "Type": "Class ProceduralFoliageSpawner*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
-      "TileOverlap": {
+      {
+        "Name": "TileOverlap",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd0"
       },
-      "SpawningVolume": {
+      {
+        "Name": "SpawningVolume",
         "Type": "Class Volume*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
-      "ProceduralGuid": {
+      {
+        "Name": "ProceduralGuid",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0xe0"
       }
-    }
+    ]
   },
   "ProceduralFoliageSpawner": {
     "Super": "Object",
     "FullSize": "0x68",
     "InheritedSize": "0x28",
     "ClassSize": "0x40",
-    "Attributes": {
-      "RandomSeed": {
+    "Attributes": [
+      {
+        "Name": "RandomSeed",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "TileSize": {
+      {
+        "Name": "TileSize",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      "NumUniqueTiles": {
+      {
+        "Name": "NumUniqueTiles",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      "FoliageTypes": {
+      {
+        "Name": "FoliageTypes",
         "Type": "TArray<Struct NumUniqueTiles>",
         "Size": "0x10",
         "Offset": "0x38"
       },
-      "bNeedsSimulation": {
+      {
+        "Name": "bNeedsSimulation",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x48"
       }
-    }
+    ]
   },
   "ProceduralFoliageTile": {
     "Super": "Object",
     "FullSize": "0x150",
     "InheritedSize": "0x28",
     "ClassSize": "0x128",
-    "Attributes": {
-      "FoliageSpawner": {
+    "Attributes": [
+      {
+        "Name": "FoliageSpawner",
         "Type": "Class ProceduralFoliageSpawner*",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "InstancesArray": {
+      {
+        "Name": "InstancesArray",
         "Type": "TArray<Struct FoliageSpawner>",
         "Size": "0x10",
         "Offset": "0xd0"
       }
-    }
+    ]
   },
   "ProceduralFoliageVolume": {
     "Super": "Volume",
     "FullSize": "0x410",
     "InheritedSize": "0x408",
     "ClassSize": "0x8",
-    "Attributes": {
-      "ProceduralComponent": {
+    "Attributes": [
+      {
+        "Name": "ProceduralComponent",
         "Type": "Class ProceduralFoliageComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

@@ -2,176 +2,176 @@
 # https://github.com/DougTheDruid
 BP_Prompt_MaidenVoyage_FishingRodTutorial_C:
   Attributes:
-    FishStartedBattling:
-      Offset: '0x540'
-      Size: '0x1'
-      Type: bool
-    Handle_BattleFish:
-      Offset: '0x3e8'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_CastRod:
-      Offset: '0x310'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_DockToObject:
-      Offset: '0x5e0'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_FishBite:
-      Offset: '0x358'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_FishCaught:
-      Offset: '0x3a0'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_FishEscaped:
-      Offset: '0x548'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_PlayerDeath:
-      Offset: '0x598'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_ReelingWhileBattling:
-      Offset: '0x4b0'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_StowRod:
-      Offset: '0x4f8'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_WieldRod:
-      Offset: '0x2c8'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Prompt_BattleFish:
-      Offset: '0x1f8'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    Prompt_CastRod:
-      Offset: '0x128'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    Prompt_ReelFish:
-      Offset: '0x260'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    Prompt_SnapLine:
-      Offset: '0x448'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    Prompt_WaitForBite:
-      Offset: '0x190'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    RequiredInput:
-      Offset: '0x430'
-      Size: '0x8'
-      Type: class
-    State_BattleFish:
-      Offset: '0x125'
-      Size: '0x1'
-      Type: bool
-    State_CastRod:
-      Offset: '0x122'
-      Size: '0x1'
-      Type: bool
-    State_CaughtFish:
-      Offset: '0x123'
-      Size: '0x1'
-      Type: bool
-    State_Completed:
-      Offset: '0x590'
-      Size: '0x1'
-      Type: bool
-    State_DockWithCannon:
-      Offset: '0x124'
-      Size: '0x1'
-      Type: bool
-    State_FishBattling:
-      Offset: '0x121'
-      Size: '0x1'
-      Type: bool
-    State_FishTired:
-      Offset: '0x126'
-      Size: '0x1'
-      Type: bool
-    State_ReelingWhileBattling:
-      Offset: '0x127'
-      Size: '0x1'
-      Type: bool
-    State_RodWielded:
-      Offset: '0x120'
-      Size: '0x1'
-      Type: bool
-    Sword_WieldedItemType:
-      Offset: '0x440'
-      Size: '0x8'
-      Type: class
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
-    WieldedItemType:
-      Offset: '0x438'
-      Size: '0x8'
-      Type: class
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: State_RodWielded
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: State_FishBattling
+    Offset: '0x121'
+    Size: '0x1'
+    Type: bool
+  - Name: State_CastRod
+    Offset: '0x122'
+    Size: '0x1'
+    Type: bool
+  - Name: State_CaughtFish
+    Offset: '0x123'
+    Size: '0x1'
+    Type: bool
+  - Name: State_DockWithCannon
+    Offset: '0x124'
+    Size: '0x1'
+    Type: bool
+  - Name: State_BattleFish
+    Offset: '0x125'
+    Size: '0x1'
+    Type: bool
+  - Name: State_FishTired
+    Offset: '0x126'
+    Size: '0x1'
+    Type: bool
+  - Name: State_ReelingWhileBattling
+    Offset: '0x127'
+    Size: '0x1'
+    Type: bool
+  - Name: Prompt_CastRod
+    Offset: '0x128'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Prompt_WaitForBite
+    Offset: '0x190'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Prompt_BattleFish
+    Offset: '0x1f8'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Prompt_ReelFish
+    Offset: '0x260'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Handle_WieldRod
+    Offset: '0x2c8'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_CastRod
+    Offset: '0x310'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_FishBite
+    Offset: '0x358'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_FishCaught
+    Offset: '0x3a0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_BattleFish
+    Offset: '0x3e8'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: RequiredInput
+    Offset: '0x430'
+    Size: '0x8'
+    Type: class
+  - Name: WieldedItemType
+    Offset: '0x438'
+    Size: '0x8'
+    Type: class
+  - Name: Sword_WieldedItemType
+    Offset: '0x440'
+    Size: '0x8'
+    Type: class
+  - Name: Prompt_SnapLine
+    Offset: '0x448'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Handle_ReelingWhileBattling
+    Offset: '0x4b0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_StowRod
+    Offset: '0x4f8'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: FishStartedBattling
+    Offset: '0x540'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_FishEscaped
+    Offset: '0x548'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: State_Completed
+    Offset: '0x590'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_PlayerDeath
+    Offset: '0x598'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Handle_DockToObject
+    Offset: '0x5e0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
   ClassSize: '0x510'
   FullSize: '0x628'
   InheritedSize: '0x118'
   Super: BP_PromptCoordinator_Base_C
 BP_Prompt_MaidenVoyage_RowboatTutorial_C:
   Attributes:
-    Handle_LeaveRowboat:
-      Offset: '0x1e0'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_StrokeEnded:
-      Offset: '0x360'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Handle_UseRowboat:
-      Offset: '0x190'
-      Size: '0x48'
-      Type: Struct ObjectMessagingHandle
-    Prompt_Brake:
-      Offset: '0x290'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    Prompt_OneAtATime:
-      Offset: '0x2f8'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    Prompt_ReleaseOars:
-      Offset: '0x228'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    Prompt_RowTheBoat:
-      Offset: '0x128'
-      Size: '0x68'
-      Type: Struct PrioritisedPromptWithHandle
-    State_Completed:
-      Offset: '0x3a9'
-      Size: '0x1'
-      Type: bool
-    State_LeaveRowboat:
-      Offset: '0x1d8'
-      Size: '0x1'
-      Type: bool
-    State_SatInRowboat:
-      Offset: '0x120'
-      Size: '0x1'
-      Type: bool
-    State_StrokeCompleted:
-      Offset: '0x3a8'
-      Size: '0x1'
-      Type: bool
-    UberGraphFrame:
-      Offset: '0x118'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: State_SatInRowboat
+    Offset: '0x120'
+    Size: '0x1'
+    Type: bool
+  - Name: Prompt_RowTheBoat
+    Offset: '0x128'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Handle_UseRowboat
+    Offset: '0x190'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: State_LeaveRowboat
+    Offset: '0x1d8'
+    Size: '0x1'
+    Type: bool
+  - Name: Handle_LeaveRowboat
+    Offset: '0x1e0'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: Prompt_ReleaseOars
+    Offset: '0x228'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Prompt_Brake
+    Offset: '0x290'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Prompt_OneAtATime
+    Offset: '0x2f8'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: Handle_StrokeEnded
+    Offset: '0x360'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: State_StrokeCompleted
+    Offset: '0x3a8'
+    Size: '0x1'
+    Type: bool
+  - Name: State_Completed
+    Offset: '0x3a9'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x292'
   FullSize: '0x3aa'
   InheritedSize: '0x118'

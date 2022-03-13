@@ -2,8 +2,8 @@
 # https://github.com/DougTheDruid
 CompassTargetSet:
   Attributes:
-    TargetLocation:
-      Offset: '0x0'
-      Size: '0xc'
-      Type: Struct Vector
+  - Name: TargetLocation
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
   ClassSize: '0xc'

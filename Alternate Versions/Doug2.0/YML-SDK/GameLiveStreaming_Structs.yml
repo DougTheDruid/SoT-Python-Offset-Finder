@@ -2,16 +2,16 @@
 # https://github.com/DougTheDruid
 BlueprintLiveStreamInfo:
   Attributes:
-    GameName:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
-    StreamName:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: Struct FString
-    URL:
-      Offset: '0x20'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: GameName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: StreamName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: URL
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x30'

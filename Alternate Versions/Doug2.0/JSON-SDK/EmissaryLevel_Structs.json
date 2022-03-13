@@ -1,1013 +1,1156 @@
 {
   "EmissaryFlagMeshReferences": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "BackOfShipEmissaryFlagMeshAssetReference": {
+    "Attributes": [
+      {
+        "Name": "BackOfShipEmissaryFlagMeshAssetReference",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "MastEmissaryFlagMeshAssetReference": {
+      {
+        "Name": "MastEmissaryFlagMeshAssetReference",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "ParticleVisualisation": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "TargetParticles": {
+    "Attributes": [
+      {
+        "Name": "TargetParticles",
         "Type": "Struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Delay": {
+      {
+        "Name": "Delay",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "DelayAfterPutOutParticles": {
+      {
+        "Name": "DelayAfterPutOutParticles",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      "PutOutParticles": {
+      {
+        "Name": "PutOutParticles",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x18"
       },
-      "ParticleSystem": {
+      {
+        "Name": "ParticleSystem",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "LightVisualisation": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "TargetLight": {
+    "Attributes": [
+      {
+        "Name": "TargetLight",
         "Type": "Struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "TransitionTime": {
+      {
+        "Name": "TransitionTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "ActiveValue": {
+      {
+        "Name": "ActiveValue",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      "InactiveValue": {
+      {
+        "Name": "InactiveValue",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      "Light": {
+      {
+        "Name": "Light",
         "Type": "Class LightComponent*",
         "Size": "0x8",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "MaterialVisualisation": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "TargetMesh": {
+    "Attributes": [
+      {
+        "Name": "TargetMesh",
         "Type": "Struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "TransitionTime": {
+      {
+        "Name": "TransitionTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "MaterialIndex": {
+      {
+        "Name": "MaterialIndex",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      "ParameterName": {
+      {
+        "Name": "ParameterName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
       },
-      "ActiveValue": {
+      {
+        "Name": "ActiveValue",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      "InactiveValue": {
+      {
+        "Name": "InactiveValue",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      "DynamicMaterial": {
+      {
+        "Name": "DynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "EmissaryLevelEntry": {
     "ClassSize": "0x80",
-    "Attributes": {
-      "Company": {
+    "Attributes": [
+      {
+        "Name": "Company",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "CompanyLevelData": {
+      {
+        "Name": "CompanyLevelData",
         "Type": "TArray<Struct EmissaryLevelData>",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "MaxRankPopUpToastData": {
+      {
+        "Name": "MaxRankPopUpToastData",
         "Type": "Class DataAsset*",
         "Size": "0x8",
         "Offset": "0x18"
       },
-      "EmissarySunkPopUpToastData": {
+      {
+        "Name": "EmissarySunkPopUpToastData",
         "Type": "Class DataAsset*",
         "Size": "0x8",
         "Offset": "0x20"
       },
-      "CompanyCosmetics": {
+      {
+        "Name": "CompanyCosmetics",
         "Type": "Struct EmissaryCompanyCosmetics",
         "Size": "0x20",
         "Offset": "0x28"
       },
-      "TimeSpentAtMaxRankStat": {
+      {
+        "Name": "TimeSpentAtMaxRankStat",
         "Type": "Struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x48"
       },
-      "StatsToFireOnFullEmissaryClothing": {
+      {
+        "Name": "StatsToFireOnFullEmissaryClothing",
         "Type": "TArray<Struct TimeSpentAtMaxRankStat>",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      "StatsToFireOnFullEmissaryShipCustomizations": {
+      {
+        "Name": "StatsToFireOnFullEmissaryShipCustomizations",
         "Type": "TArray<Struct StatsToFireOnFullEmissaryClothing>",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      "StatsToFireOnFullShipCustomizationsAndClothing": {
+      {
+        "Name": "StatsToFireOnFullShipCustomizationsAndClothing",
         "Type": "TArray<Struct StatsToFireOnFullEmissaryShipCustomizations>",
         "Size": "0x10",
         "Offset": "0x70"
       }
-    }
+    ]
   },
   "EmissaryCompanyCosmetics": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "CompanyCostumeCosmetics": {
+    "Attributes": [
+      {
+        "Name": "CompanyCostumeCosmetics",
         "Type": "TArray<Class EmissarySunkPopUpToastData>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "CompanyShipCosmetics": {
+      {
+        "Name": "CompanyShipCosmetics",
         "Type": "TArray<Class CompanyCostumeCosmetics>",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EmissaryLevelData": {
     "ClassSize": "0x80",
-    "Attributes": {
-      "LevelTarget": {
+    "Attributes": [
+      {
+        "Name": "LevelTarget",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "EmissaryFlagMeshAssetReferences": {
+      {
+        "Name": "EmissaryFlagMeshAssetReferences",
         "Type": "Struct EmissaryFlagMeshReferences",
         "Size": "0x20",
         "Offset": "0x8"
       },
-      "EmissaryDeactivationReward": {
+      {
+        "Name": "EmissaryDeactivationReward",
         "Type": "Struct RewardId",
         "Size": "0x8",
         "Offset": "0x48"
       },
-      "StatsToFireOnEmissaryLevelReached": {
+      {
+        "Name": "StatsToFireOnEmissaryLevelReached",
         "Type": "TArray<Struct EmissaryDeactivationReward>",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      "TreasureSoldNotificationFlag": {
+      {
+        "Name": "TreasureSoldNotificationFlag",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      "EmissaryFlagTextureReference": {
+      {
+        "Name": "EmissaryFlagTextureReference",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x70"
       }
-    }
+    ]
   },
   "EmissaryPointBoostMultipliers": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "PlayerWearningCompanyCostume": {
+    "Attributes": [
+      {
+        "Name": "PlayerWearningCompanyCostume",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "CrewShipFullyEquippedWithCompanyCosmetics": {
+      {
+        "Name": "CrewShipFullyEquippedWithCompanyCosmetics",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "EmissaryLevelStatusStatInfo": {
     "ClassSize": "0x4",
-    "Attributes": {
-      "StatToFire": {
+    "Attributes": [
+      {
+        "Name": "StatToFire",
         "Type": "Struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EmissaryPointsBoostCriteria": {
     "ClassSize": "0x8",
-    "Attributes": {}
+    "Attributes": []
   },
   "TrackedPlayerKillEntry": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "KilledPlayer": {
+    "Attributes": [
+      {
+        "Name": "KilledPlayer",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "KillCount": {
+      {
+        "Name": "KillCount",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "KillTime": {
+      {
+        "Name": "KillTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
       }
-    }
+    ]
   },
   "EmissaryCompanyCampaignSettings": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "Company": {
+    "Attributes": [
+      {
+        "Name": "Company",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "KillPlayers": {
+      {
+        "Name": "KillPlayers",
         "Type": "TArray<Struct EmissaryCompanyCampaignKillPlayer>",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "GameEvents": {
+      {
+        "Name": "GameEvents",
         "Type": "TArray<Struct EmissaryCompanyCampaignGameEvent>",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "EmissaryCompanyCampaignGameEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "EventType": {
+    "Attributes": [
+      {
+        "Name": "EventType",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Scales": {
+      {
+        "Name": "Scales",
         "Type": "TArray<Struct EmissaryCompanyCampaignScale>",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EmissaryCompanyCampaignScale": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "Campaign": {
+    "Attributes": [
+      {
+        "Name": "Campaign",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Scale": {
+      {
+        "Name": "Scale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EmissaryCompanyCampaignKillPlayer": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Company": {
+    "Attributes": [
+      {
+        "Name": "Company",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Scales": {
+      {
+        "Name": "Scales",
         "Type": "TArray<Struct Company>",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EmissaryRewardEntry": {
     "ClassSize": "0x80",
-    "Attributes": {
-      "Company": {
+    "Attributes": [
+      {
+        "Name": "Company",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "ActionRewardData": {
+      {
+        "Name": "ActionRewardData",
         "Type": "Struct EmissaryActionRewardData",
         "Size": "0x78",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EmissaryActionRewardData": {
     "ClassSize": "0x78",
-    "Attributes": {
-      "OwnershipChangedRewards": {
+    "Attributes": [
+      {
+        "Name": "OwnershipChangedRewards",
         "Type": "TArray<Struct Company>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "PlacedOnShipRewards": {
+      {
+        "Name": "PlacedOnShipRewards",
         "Type": "TArray<Struct OwnershipChangedRewards>",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "KillPlayerReward": {
+      {
+        "Name": "KillPlayerReward",
         "Type": "Struct EmissaryKillPlayerReward",
         "Size": "0x28",
         "Offset": "0x20"
       },
-      "GameEventsRewards": {
+      {
+        "Name": "GameEventsRewards",
         "Type": "TArray<Struct EmissaryGameEventsReward>",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      "HandinRewards": {
+      {
+        "Name": "HandinRewards",
         "Type": "TArray<Struct EmissaryEventAward>",
         "Size": "0x10",
         "Offset": "0x58"
       },
-      "CompanyActionRewards": {
+      {
+        "Name": "CompanyActionRewards",
         "Type": "TArray<Struct EmissaryCompanyActionReward>",
         "Size": "0x10",
         "Offset": "0x68"
       }
-    }
+    ]
   },
   "EmissaryCompanyActionReward": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "CompanyActionType": {
+    "Attributes": [
+      {
+        "Name": "CompanyActionType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "Amount": {
+      {
+        "Name": "Amount",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "EmissaryEventAward": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "FirstTimeOnly": {
+    "Attributes": [
+      {
+        "Name": "FirstTimeOnly",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "NotOriginalOwner": {
+      {
+        "Name": "NotOriginalOwner",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      "ItemQualityRequirement": {
+      {
+        "Name": "ItemQualityRequirement",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x2"
       },
-      "EmissaryLevelIncrease": {
+      {
+        "Name": "EmissaryLevelIncrease",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "EmissaryGameEventsReward": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "FinishedEventType": {
+    "Attributes": [
+      {
+        "Name": "FinishedEventType",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Amount": {
+      {
+        "Name": "Amount",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EmissaryKillPlayerReward": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "EmissaryLevelIncrease": {
+    "Attributes": [
+      {
+        "Name": "EmissaryLevelIncrease",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "EmissaryLevelKillCountScaleFactors": {
+      {
+        "Name": "EmissaryLevelKillCountScaleFactors",
         "Type": "TArray<Struct EmissaryKillScaleFactor>",
         "Size": "0x10",
         "Offset": "0x8"
       },
-      "ValidEmissariesToKill": {
+      {
+        "Name": "ValidEmissariesToKill",
         "Type": "TArray<Class EmissaryLevelKillCountScaleFactors>",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "EmissaryKillScaleFactor": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "KillCount": {
+    "Attributes": [
+      {
+        "Name": "KillCount",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "ScaleFactor": {
+      {
+        "Name": "ScaleFactor",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "EmissaryVoteRemovedEvent": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "Company": {
+    "Attributes": [
+      {
+        "Name": "Company",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EmissaryVoteAddedEvent": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "Company": {
+    "Attributes": [
+      {
+        "Name": "Company",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "CrewMemberVotes": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "CrewId": {
+    "Attributes": [
+      {
+        "Name": "CrewId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "CompanyVotes": {
+      {
+        "Name": "CompanyVotes",
         "Type": "TArray<Struct PerCompanyVotes>",
         "Size": "0x10",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "PerCompanyVotes": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "MemberVotes": {
+    "Attributes": [
+      {
+        "Name": "MemberVotes",
         "Type": "TArray<class MemberVotes*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "CompanyIdentifier": {
+      {
+        "Name": "CompanyIdentifier",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "ChaliceStatuePhaseUpdate": {
     "ClassSize": "0x4",
-    "Attributes": {
-      "NewLevel": {
+    "Attributes": [
+      {
+        "Name": "NewLevel",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EmissaryEncounteredSkellyFortNetworkEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EmissaryEncounteredAIShipEvent": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EmissaryEncounteredTinySharkEvent": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EmissaryEncounteredKrakenEvent": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EmissaryEntitlementPurchasedEvent": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "OfferId": {
+    "Attributes": [
+      {
+        "Name": "OfferId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EmissaryLevelRankChange": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "NewLevel": {
+    "Attributes": [
+      {
+        "Name": "NewLevel",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "CompanyName": {
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "EmissaryActivated": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EmissaryKilledAnotherEmissaryNetworkEvent": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "VictimCompanyName": {
+      {
+        "Name": "VictimCompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "EmissarySoldLootNetworkEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EmissaryStoleLootNetworkEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EmissaryDiscoveredCargoRunCrateNetworkEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EmissaryDiscoveredLootNetworkEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EmissarySecuredLootOnShipNetworkEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EmissarySunkNetworkEvent": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "PopUpDesc": {
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
         "Type": "Class DataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "CompanyName": {
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "EmissaryMaxLevelReachedNetworkEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "PopUpDesc": {
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
         "Type": "Class DataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EmissaryDeactivatedNetworkEvent": {
     "ClassSize": "0x10",
-    "Attributes": {}
+    "Attributes": []
   },
   "EmissaryStateUpdateEvent": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "CurrentRepTotal": {
+    "Attributes": [
+      {
+        "Name": "CurrentRepTotal",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "CompanyId": {
+      {
+        "Name": "CompanyId",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "EmissaryProgressUpdatedNetworkEvent": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "OldRepTotal": {
+    "Attributes": [
+      {
+        "Name": "OldRepTotal",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "NewRepTotal": {
+      {
+        "Name": "NewRepTotal",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      "CompanyId": {
+      {
+        "Name": "CompanyId",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "EmissaryLevelProgressUpdatedEvent": {
     "ClassSize": "0x14",
-    "Attributes": {
-      "LevelProgress": {
+    "Attributes": [
+      {
+        "Name": "LevelProgress",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "AssociatedCrew": {
+      {
+        "Name": "AssociatedCrew",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "ActivateEmissaryMaxRankQuestForSession": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "UpdateEmissaryValueForCompany": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "SessionId": {
+    "Attributes": [
+      {
+        "Name": "SessionId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Company": {
+      {
+        "Name": "Company",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "AssociatedCrew": {
+      {
+        "Name": "AssociatedCrew",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       },
-      "RewardType": {
+      {
+        "Name": "RewardType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x28"
       },
-      "UpdateAmount": {
+      {
+        "Name": "UpdateAmount",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2c"
       }
-    }
+    ]
   },
   "ReactivateEmissaryForMigratedCrew": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "SessionId": {
+    "Attributes": [
+      {
+        "Name": "SessionId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Company": {
+      {
+        "Name": "Company",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "AssociatedCrew": {
+      {
+        "Name": "AssociatedCrew",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "DeactivateEmissaryForCrew": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "SessionId": {
+    "Attributes": [
+      {
+        "Name": "SessionId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Company": {
+      {
+        "Name": "Company",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "AssociatedCrew": {
+      {
+        "Name": "AssociatedCrew",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       },
-      "EmissaryDeactivateReason": {
+      {
+        "Name": "EmissaryDeactivateReason",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x28"
       },
-      "EmissaryTotal": {
+      {
+        "Name": "EmissaryTotal",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2c"
       }
-    }
+    ]
   },
   "ActivateEmissaryForCrew": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "SessionId": {
+    "Attributes": [
+      {
+        "Name": "SessionId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Company": {
+      {
+        "Name": "Company",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "AssociatedCrew": {
+      {
+        "Name": "AssociatedCrew",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "EmissaryLevelChanged": {
     "ClassSize": "0x1c",
-    "Attributes": {
-      "NewLevel": {
+    "Attributes": [
+      {
+        "Name": "NewLevel",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "AssociatedCrew": {
+      {
+        "Name": "AssociatedCrew",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       },
-      "CompanyName": {
+      {
+        "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x14"
       }
-    }
+    ]
   },
   "EmissaryLevelResetProgress": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "PlayerRemovedFromEmissaryCrew": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "PlayerAddedToEmissaryCrew": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "EmissaryLevel": {
+    "Attributes": [
+      {
+        "Name": "EmissaryLevel",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "EmissaryLevelProgress": {
+      {
+        "Name": "EmissaryLevelProgress",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       },
-      "EmissaryCompany": {
+      {
+        "Name": "EmissaryCompany",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EmissaryRoleplayActionTelemetryEvent": {
     "ClassSize": "0x2c",
-    "Attributes": {
-      "EmissarySessionId": {
+    "Attributes": [
+      {
+        "Name": "EmissarySessionId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "EmissaryCompany": {
+      {
+        "Name": "EmissaryCompany",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "EmissaryRank": {
+      {
+        "Name": "EmissaryRank",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      "ActionName": {
+      {
+        "Name": "ActionName",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x1c"
       },
-      "PointsRewarded": {
+      {
+        "Name": "PointsRewarded",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      "PointsAccumulated": {
+      {
+        "Name": "PointsAccumulated",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x24"
       },
-      "PointsRequiredToNextRank": {
+      {
+        "Name": "PointsRequiredToNextRank",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "EmissarySessionEndTelemetryEvent": {
     "ClassSize": "0x1c",
-    "Attributes": {
-      "EmissarySessionId": {
+    "Attributes": [
+      {
+        "Name": "EmissarySessionId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "EmissaryCompany": {
+      {
+        "Name": "EmissaryCompany",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "DisbandedReason": {
+      {
+        "Name": "DisbandedReason",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "EmissarySessionStartTelemetryEvent": {
     "ClassSize": "0x1c",
-    "Attributes": {
-      "EmissarySessionId": {
+    "Attributes": [
+      {
+        "Name": "EmissarySessionId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "EmissaryCompany": {
+      {
+        "Name": "EmissaryCompany",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "EmisarriesOnServerCount": {
+      {
+        "Name": "EmisarriesOnServerCount",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "VoteAddedNetworkEvent": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "CompanyId": {
+    "Attributes": [
+      {
+        "Name": "CompanyId",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "CrewId": {
+      {
+        "Name": "CrewId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "VoteRemovedNetworkEvent": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "CompanyId": {
+    "Attributes": [
+      {
+        "Name": "CompanyId",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "CrewId": {
+      {
+        "Name": "CrewId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

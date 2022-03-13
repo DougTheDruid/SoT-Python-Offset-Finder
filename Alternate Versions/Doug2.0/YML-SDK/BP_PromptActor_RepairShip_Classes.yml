@@ -2,56 +2,56 @@
 # https://github.com/DougTheDruid
 BP_PromptActor_RepairShipCapstan_C:
   Attributes:
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_RepairShipCapstan_C*
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_RepairShipCapstan_C*
   ClassSize: '0x10'
   FullSize: '0x418'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_RepairShipMast_C:
   Attributes:
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_RepairShipMast_C*
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_RepairShipMast_C*
   ClassSize: '0x10'
   FullSize: '0x418'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_RepairShipWheel_C:
   Attributes:
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_RepairShipWheel_C*
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_RepairShipWheel_C*
   ClassSize: '0x10'
   FullSize: '0x418'
   InheritedSize: '0x408'
   Super: BP_PromptActorBase_C
 BP_PromptActor_RepairShip_C:
   Attributes:
-    PromptCoordinator:
-      Offset: '0x410'
-      Size: '0x8'
-      Type: BlueprintGeneratedClass BP_Prompt_RepairShip_C*
-    UberGraphFrame:
-      Offset: '0x408'
-      Size: '0x8'
-      Type: Struct PointerToUberGraphFrame
+  - Name: UberGraphFrame
+    Offset: '0x408'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PromptCoordinator
+    Offset: '0x410'
+    Size: '0x8'
+    Type: BlueprintGeneratedClass BP_Prompt_RepairShip_C*
   ClassSize: '0x10'
   FullSize: '0x418'
   InheritedSize: '0x408'

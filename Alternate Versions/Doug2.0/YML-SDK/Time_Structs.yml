@@ -2,59 +2,59 @@
 # https://github.com/DougTheDruid
 EventSetDateTime:
   Attributes:
-    Day:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: int
-    Hour:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: int
-    Minute:
-      Offset: '0x10'
-      Size: '0x4'
-      Type: int
-    Month:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
-    Year:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
+  - Name: Year
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Month
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: Day
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: Hour
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
+  - Name: Minute
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x14'
 GameTime:
   Attributes:
-    DateTimeRepresentation:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct DateTime
+  - Name: DateTimeRepresentation
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct DateTime
   ClassSize: '0x8'
 GameTimeRange:
   Attributes:
-    End:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Struct GameTime
-    Start:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct GameTime
+  - Name: Start
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct GameTime
+  - Name: End
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct GameTime
   ClassSize: '0x10'
 ReplicatedAuthoritativeTime:
   Attributes:
-    SyncTime:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Struct ReplicatedDateTime
-    WorldTime:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct ReplicatedDateTime
+  - Name: WorldTime
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct ReplicatedDateTime
+  - Name: SyncTime
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct ReplicatedDateTime
   ClassSize: '0x10'
 ReplicatedDateTime:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'
 ReplicatedTimespan:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x8'

@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 OceanCrawlerAudioKeyPair:
   Attributes:
-    AudioEvent:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    AudioKey:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
+  - Name: AudioKey
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: AudioEvent
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
   ClassSize: '0x10'
 OceanCrawlerBuffAudioSettings:
   Attributes:
-    GiveBuffAudioEvent:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class WwiseEvent*
-    ReceiveBuffAudioEvent:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class WwiseEvent*
+  - Name: GiveBuffAudioEvent
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: ReceiveBuffAudioEvent
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
   ClassSize: '0x10'

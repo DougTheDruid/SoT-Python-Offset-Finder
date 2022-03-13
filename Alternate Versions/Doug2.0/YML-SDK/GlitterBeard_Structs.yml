@@ -2,55 +2,55 @@
 # https://github.com/DougTheDruid
 ChangeGlitterBeardVFXStateEvent:
   Attributes:
-    Index:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
-    Target:
-      Offset: '0x4'
-      Size: '0x1'
-      Type: byte
+  - Name: Index
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Target
+    Offset: '0x4'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x8'
 FinaleReplicationState:
   Attributes:
-    State:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    TargetEnsemble:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Class Object*
+  - Name: State
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: TargetEnsemble
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
   ClassSize: '0x10'
 GlitterBeardVFXTransitionCompletedEvent:
   Attributes:
-    Index:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
+  - Name: Index
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x4'
 GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'
 GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 GlitterbeardPuzzleCancelTelemetryEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 GlitterbeardPuzzleUnlockTelemetryEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 GlitterbeardSessionBeginTelemetryEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 GlitterbeardSessionEndTelemetryEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 UnlockEventData:
   Attributes:
-    Idx:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: int
+  - Name: Idx
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x4'

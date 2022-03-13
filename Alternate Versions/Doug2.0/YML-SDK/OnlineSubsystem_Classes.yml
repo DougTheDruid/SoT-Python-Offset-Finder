@@ -2,38 +2,38 @@
 # https://github.com/DougTheDruid
 DefaultOnlineEnvironmentSettings:
   Attributes:
-    ClientCertificateThumbprint:
-      Offset: '0x50'
-      Size: '0x10'
-      Type: Struct FString
-    EnvironmentId:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: Struct FString
-    ServiceConfigId:
-      Offset: '0x40'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: EnvironmentId
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ServiceConfigId
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ClientCertificateThumbprint
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
   Super: Object
 NamedInterfaces:
   Attributes:
-    NamedInterfaceDefs:
-      Offset: '0x38'
-      Size: '0x10'
-      Type: TArray<Struct NamedInterfaces>
-    NamedInterfaces:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<Struct OnMatchEnded>
+  - Name: NamedInterfaces
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct OnMatchEnded>
+  - Name: NamedInterfaceDefs
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Struct NamedInterfaces>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
   Super: Object
 TurnBasedMatchInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'

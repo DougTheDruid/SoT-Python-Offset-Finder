@@ -2,42 +2,42 @@
 # https://github.com/DougTheDruid
 EventAthenaLoadingScreenBlockUntilUIIntialised:
   Attributes:
-    Description:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: Description
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
 EventAthenaLoadingScreenBlockUntilUIIntialisedClear:
   Attributes:
-    Description:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: Description
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
 EventAthenaLoadingScreenClose:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 EventAthenaLoadingScreenOpen:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 EventAthenaLoadingScreenStateRequest:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x1'
 EventAthenaLoadingScreenStateResponse:
   Attributes:
-    IsVisible:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: bool
+  - Name: IsVisible
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x1'
 SlateLoadingScreenImageParams:
   Attributes:
-    ImageAsset:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    ImageTips:
-      Offset: '0x10'
-      Size: '0x10'
-      Type: TArray<Struct FText>
+  - Name: ImageAsset
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: ImageTips
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct FText>
   ClassSize: '0x20'

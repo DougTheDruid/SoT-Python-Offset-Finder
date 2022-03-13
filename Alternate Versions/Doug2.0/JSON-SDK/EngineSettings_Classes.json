@@ -4,265 +4,307 @@
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": {
-      "MaxScrollbackSize": {
+    "Attributes": [
+      {
+        "Name": "MaxScrollbackSize",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "ManualAutoCompleteList": {
+      {
+        "Name": "ManualAutoCompleteList",
         "Type": "TArray<Struct MaxScrollbackSize>",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "AutoCompleteMapPaths": {
+      {
+        "Name": "AutoCompleteMapPaths",
         "Type": "TArray<Str >",
         "Size": "0x10",
         "Offset": "0x40"
       }
-    }
+    ]
   },
   "GameMapsSettings": {
     "Super": "Object",
     "FullSize": "0xb0",
     "InheritedSize": "0x28",
     "ClassSize": "0x88",
-    "Attributes": {
-      "EditorStartupMap": {
+    "Attributes": [
+      {
+        "Name": "EditorStartupMap",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "LocalMapOptions": {
+      {
+        "Name": "LocalMapOptions",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
-      "TransitionMap": {
+      {
+        "Name": "TransitionMap",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      "bUseSplitscreen": {
+      {
+        "Name": "bUseSplitscreen",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x58"
       },
-      "TwoPlayerSplitscreenLayout": {
+      {
+        "Name": "TwoPlayerSplitscreenLayout",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x59"
       },
-      "ThreePlayerSplitscreenLayout": {
+      {
+        "Name": "ThreePlayerSplitscreenLayout",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x5a"
       },
-      "GameInstanceClass": {
+      {
+        "Name": "GameInstanceClass",
         "Type": "Struct StringClassReference",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      "GameDefaultMap": {
+      {
+        "Name": "GameDefaultMap",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x70"
       },
-      "ServerDefaultMap": {
+      {
+        "Name": "ServerDefaultMap",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x80"
       },
-      "GlobalDefaultGameMode": {
+      {
+        "Name": "GlobalDefaultGameMode",
         "Type": "Struct StringClassReference",
         "Size": "0x10",
         "Offset": "0x90"
       },
-      "GlobalDefaultServerGameMode": {
+      {
+        "Name": "GlobalDefaultServerGameMode",
         "Type": "Struct StringClassReference",
         "Size": "0x10",
         "Offset": "0xa0"
       }
-    }
+    ]
   },
   "GameNetworkManagerSettings": {
     "Super": "Object",
     "FullSize": "0x58",
     "InheritedSize": "0x28",
     "ClassSize": "0x30",
-    "Attributes": {
-      "MinDynamicBandwidth": {
+    "Attributes": [
+      {
+        "Name": "MinDynamicBandwidth",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "MaxDynamicBandwidth": {
+      {
+        "Name": "MaxDynamicBandwidth",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      "TotalNetBandwidth": {
+      {
+        "Name": "TotalNetBandwidth",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
       },
-      "BadPingThreshold": {
+      {
+        "Name": "BadPingThreshold",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x34"
       },
-      "bIsStandbyCheckingEnabled": {
+      {
+        "Name": "bIsStandbyCheckingEnabled",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
       },
-      "StandbyRxCheatTime": {
+      {
+        "Name": "StandbyRxCheatTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3c"
       },
-      "StandbyTxCheatTime": {
+      {
+        "Name": "StandbyTxCheatTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
       },
-      "PercentMissingForRxStandby": {
+      {
+        "Name": "PercentMissingForRxStandby",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x44"
       },
-      "PercentMissingForTxStandby": {
+      {
+        "Name": "PercentMissingForTxStandby",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48"
       },
-      "PercentForBadPing": {
+      {
+        "Name": "PercentForBadPing",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c"
       },
-      "JoinInProgressStandbyWaitTime": {
+      {
+        "Name": "JoinInProgressStandbyWaitTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50"
       }
-    }
+    ]
   },
   "GameSessionSettings": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": {
-      "MaxSpectators": {
+    "Attributes": [
+      {
+        "Name": "MaxSpectators",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "MaxPlayers": {
+      {
+        "Name": "MaxPlayers",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2c"
       },
-      "bRequiresPushToTalk": {
+      {
+        "Name": "bRequiresPushToTalk",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "GeneralEngineSettings": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
-    "Attributes": {}
+    "Attributes": []
   },
   "GeneralProjectSettings": {
     "Super": "Object",
     "FullSize": "0x110",
     "InheritedSize": "0x28",
     "ClassSize": "0xe8",
-    "Attributes": {
-      "CompanyName": {
+    "Attributes": [
+      {
+        "Name": "CompanyName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "CompanyDistinguishedName": {
+      {
+        "Name": "CompanyDistinguishedName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
-      "CopyrightNotice": {
+      {
+        "Name": "CopyrightNotice",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       },
-      "Description": {
+      {
+        "Name": "Description",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x58"
       },
-      "Homepage": {
+      {
+        "Name": "Homepage",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x68"
       },
-      "LicensingTerms": {
+      {
+        "Name": "LicensingTerms",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x78"
       },
-      "PrivacyPolicy": {
+      {
+        "Name": "PrivacyPolicy",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x88"
       },
-      "ProjectID": {
+      {
+        "Name": "ProjectID",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x98"
       },
-      "ProjectName": {
+      {
+        "Name": "ProjectName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0xa8"
       },
-      "ProjectVersion": {
+      {
+        "Name": "ProjectVersion",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0xb8"
       },
-      "SupportContact": {
+      {
+        "Name": "SupportContact",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0xc8"
       },
-      "ProjectDisplayedTitle": {
+      {
+        "Name": "ProjectDisplayedTitle",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0xd8"
       }
-    }
+    ]
   },
   "HudSettings": {
     "Super": "Object",
     "FullSize": "0x40",
     "InheritedSize": "0x28",
     "ClassSize": "0x18",
-    "Attributes": {
-      "bShowHUD": {
+    "Attributes": [
+      {
+        "Name": "bShowHUD",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
       },
-      "DebugDisplay": {
+      {
+        "Name": "DebugDisplay",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

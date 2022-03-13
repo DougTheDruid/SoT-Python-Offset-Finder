@@ -1,433 +1,500 @@
 {
   "WwiseAudioAcousticSurfaceParams": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "Thickness": {
+    "Attributes": [
+      {
+        "Name": "Thickness",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "Reflectivity": {
+      {
+        "Name": "Reflectivity",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "AnimNotify_SoundSwitch": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "SkeletalMeshReference": {
+    "Attributes": [
+      {
+        "Name": "SkeletalMeshReference",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "SkeletalMeshCategoryName": {
+      {
+        "Name": "SkeletalMeshCategoryName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "WwiseEventParam": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "SourcePath": {
+    "Attributes": [
+      {
+        "Name": "SourcePath",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "SourceObj": {
+      {
+        "Name": "SourceObj",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "WwiseAudioReverbPresets": {
     "ClassSize": "0x64",
-    "Attributes": {
-      "ShortEarlyReflectionPresetName": {
+    "Attributes": [
+      {
+        "Name": "ShortEarlyReflectionPresetName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "LongEarlyReflectionPresetName": {
+      {
+        "Name": "LongEarlyReflectionPresetName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "SpaceSizeRTPCName": {
+      {
+        "Name": "SpaceSizeRTPCName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "EnclosedRatioRTPCName": {
+      {
+        "Name": "EnclosedRatioRTPCName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
       },
-      "MaterialThicknessRTPCName": {
+      {
+        "Name": "MaterialThicknessRTPCName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x20"
       },
-      "MaterialReflectivityRTPCName": {
+      {
+        "Name": "MaterialReflectivityRTPCName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x28"
       },
-      "EnvironmentTraceChannel": {
+      {
+        "Name": "EnvironmentTraceChannel",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
       },
-      "MinSpaceSizeWindowForEarlyReflections": {
+      {
+        "Name": "MinSpaceSizeWindowForEarlyReflections",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x34"
       },
-      "MaxSpaceSizeWindowforEarlyReflections": {
+      {
+        "Name": "MaxSpaceSizeWindowforEarlyReflections",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x38"
       },
-      "SamplingSettings": {
+      {
+        "Name": "SamplingSettings",
         "Type": "Struct ReverbPresetControllerSettings",
         "Size": "0x28",
         "Offset": "0x3c"
       }
-    }
+    ]
   },
   "ReverbPresetControllerSettings": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "HorizontalConeSegmentElevationAngle": {
+    "Attributes": [
+      {
+        "Name": "HorizontalConeSegmentElevationAngle",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
       },
-      "UpwardsConeAngle": {
+      {
+        "Name": "UpwardsConeAngle",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "TraceVectorLength": {
+      {
+        "Name": "TraceVectorLength",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
       },
-      "TimeToDiscardSample": {
+      {
+        "Name": "TimeToDiscardSample",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
       },
-      "DistanceToDiscardSample": {
+      {
+        "Name": "DistanceToDiscardSample",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x1c"
       },
-      "BiasTowardsVerticalSegment": {
+      {
+        "Name": "BiasTowardsVerticalSegment",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "WwiseAudioGameStateSettings": {
     "ClassSize": "0xa0",
-    "Attributes": {
-      "AudioGameStateGroupName": {
+    "Attributes": [
+      {
+        "Name": "AudioGameStateGroupName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "AudioGameStateFrontend": {
+      {
+        "Name": "AudioGameStateFrontend",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "AudioGameStateLoading": {
+      {
+        "Name": "AudioGameStateLoading",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "AudioGameStateIngame": {
+      {
+        "Name": "AudioGameStateIngame",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
       },
-      "EventsToPlayOnLobbyStart": {
+      {
+        "Name": "EventsToPlayOnLobbyStart",
         "Type": "TArray<Struct AudioGameStateIngame>",
         "Size": "0x10",
         "Offset": "0x20"
       },
-      "EventsToPlayOnLobbyEnd": {
+      {
+        "Name": "EventsToPlayOnLobbyEnd",
         "Type": "TArray<Struct EventsToPlayOnLobbyStart>",
         "Size": "0x10",
         "Offset": "0x30"
       },
-      "EventsToPlayOnEngageStart": {
+      {
+        "Name": "EventsToPlayOnEngageStart",
         "Type": "TArray<Struct EventsToPlayOnLobbyEnd>",
         "Size": "0x10",
         "Offset": "0x40"
       },
-      "EventsToPlayOnEngageEnd": {
+      {
+        "Name": "EventsToPlayOnEngageEnd",
         "Type": "TArray<Struct EventsToPlayOnEngageStart>",
         "Size": "0x10",
         "Offset": "0x50"
       },
-      "EventsToPlayOnLoadingStart": {
+      {
+        "Name": "EventsToPlayOnLoadingStart",
         "Type": "TArray<Struct EventsToPlayOnEngageEnd>",
         "Size": "0x10",
         "Offset": "0x60"
       },
-      "EventsToPlayOnLoadingEnd": {
+      {
+        "Name": "EventsToPlayOnLoadingEnd",
         "Type": "TArray<Struct EventsToPlayOnLoadingStart>",
         "Size": "0x10",
         "Offset": "0x70"
       },
-      "EventsToPlayOnFrontEndOrLoadingStart": {
+      {
+        "Name": "EventsToPlayOnFrontEndOrLoadingStart",
         "Type": "TArray<Struct EventsToPlayOnLoadingEnd>",
         "Size": "0x10",
         "Offset": "0x80"
       },
-      "EventsToPlayOnFrontEndOrLoadingEnd": {
+      {
+        "Name": "EventsToPlayOnFrontEndOrLoadingEnd",
         "Type": "TArray<Struct EventsToPlayOnFrontEndOrLoadingStart>",
         "Size": "0x10",
         "Offset": "0x90"
       }
-    }
+    ]
   },
   "WwiseBinkSettings": {
     "ClassSize": "0x38",
-    "Attributes": {
-      "PlayEvent": {
+    "Attributes": [
+      {
+        "Name": "PlayEvent",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "StopEvent": {
+      {
+        "Name": "StopEvent",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "PreBufferCount": {
+      {
+        "Name": "PreBufferCount",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      "Mappings": {
+      {
+        "Name": "Mappings",
         "Type": "TArray<Struct WwiseBinkTrackMappings>",
         "Size": "0x10",
         "Offset": "0x28"
       }
-    }
+    ]
   },
   "WwiseBinkTrackMappings": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "mLanguage": {
+    "Attributes": [
+      {
+        "Name": "mLanguage",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "mChannels": {
+      {
+        "Name": "mChannels",
         "Type": "TArray<Struct WwiseBinkTrackMapping>",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "WwiseBinkTrackMapping": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "mChannelMapping": {
+    "Attributes": [
+      {
+        "Name": "mChannelMapping",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "mRequired": {
+      {
+        "Name": "mRequired",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1"
       },
-      "mVolumeDb": {
+      {
+        "Name": "mVolumeDb",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "WwiseIOPriorityMappingConfig": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "WwisePriority": {
+    "Attributes": [
+      {
+        "Name": "WwisePriority",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
-      "AsyncIOPriority": {
+      {
+        "Name": "AsyncIOPriority",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
       }
-    }
+    ]
   },
   "WwiseNetworkRelationship": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "SwitchGroupName": {
+    "Attributes": [
+      {
+        "Name": "SwitchGroupName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "RemotePlayerSwitchValue": {
+      {
+        "Name": "RemotePlayerSwitchValue",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "LocalPlayerSwitchValue": {
+      {
+        "Name": "LocalPlayerSwitchValue",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "WwiseEmitterParams": {
     "ClassSize": "0x2",
-    "Attributes": {
-      "bEnableObstructionAndOcclusion": {
+    "Attributes": [
+      {
+        "Name": "bEnableObstructionAndOcclusion",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "bEnableAccoustics": {
+      {
+        "Name": "bEnableAccoustics",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1"
       }
-    }
+    ]
   },
   "WwiseListenerInfo": {
     "ClassSize": "0x3c",
-    "Attributes": {
-      "Position": {
+    "Attributes": [
+      {
+        "Name": "Position",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
-      "Up": {
+      {
+        "Name": "Up",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
-      "Right": {
+      {
+        "Name": "Right",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
-      "Front": {
+      {
+        "Name": "Front",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x24"
       },
-      "Velocity": {
+      {
+        "Name": "Velocity",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x30"
       }
-    }
+    ]
   },
   "WwiseNativeEmitterPoolDensityParams": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "PlayPoolDensityAudio": {
+    "Attributes": [
+      {
+        "Name": "PlayPoolDensityAudio",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       },
-      "PoolDensityAudioPlayEvent": {
+      {
+        "Name": "PoolDensityAudioPlayEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "PoolDensityAudioStopEvent": {
+      {
+        "Name": "PoolDensityAudioStopEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "DensityRtpcName": {
+      {
+        "Name": "DensityRtpcName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
       },
-      "FullDensityAmount": {
+      {
+        "Name": "FullDensityAmount",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      "DensityDistance": {
+      {
+        "Name": "DensityDistance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x24"
       }
-    }
+    ]
   },
   "WwiseExternalSource": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "path": {
+    "Attributes": [
+      {
+        "Name": "path",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "WwiseSubtitle": {
     "ClassSize": "0x10",
-    "Attributes": {
-      "Subtitle": {
+    "Attributes": [
+      {
+        "Name": "Subtitle",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "MovieSceneAkAudioEventTemplate": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "Section": {
+    "Attributes": [
+      {
+        "Name": "Section",
         "Type": "Class MovieSceneAkAudioEventSection*",
         "Size": "0x8",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "MovieSceneAkAudioRTPCTemplate": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "Section": {
+    "Attributes": [
+      {
+        "Name": "Section",
         "Type": "Class MovieSceneAkAudioRTPCSection*",
         "Size": "0x8",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "MovieSceneAkAudioRTPCSectionData": {
     "ClassSize": "0x88",
-    "Attributes": {
-      "RTPCName": {
+    "Attributes": [
+      {
+        "Name": "RTPCName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "RTPCCurve": {
+      {
+        "Name": "RTPCCurve",
         "Type": "Struct RichCurve",
         "Size": "0x78",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

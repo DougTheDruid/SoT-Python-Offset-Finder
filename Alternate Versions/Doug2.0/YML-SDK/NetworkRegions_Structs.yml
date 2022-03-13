@@ -2,12 +2,12 @@
 # https://github.com/DougTheDruid
 RegionAssetsList:
   Attributes:
-    CachedAssetsForRegion:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: TArray<Struct Region>
-    Region:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
+  - Name: Region
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: CachedAssetsForRegion
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct Region>
   ClassSize: '0x18'

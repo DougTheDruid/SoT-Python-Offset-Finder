@@ -14,7 +14,7 @@ public:
 	Struct ObjectMessagingHandle                                 Handle_EmissaryCompanyChangedEvent;                // 0x120(0x48)
 	struct FName                                                 CompanyName;                                       // 0x168(0x8)
 	struct FName                                                 ExpectedCompanyName;                               // 0x170(0x8)
-	TArray<Struct PromptAccessKey>                               Prompts;                                           // 0x178(0x10)
+	TArray<Struct Prompts>                                       Prompts;                                           // 0x178(0x10)
 	bool                                                         PromptSurfacedThisSession;                         // 0x188(0x1)
 	class                                                        PromptAccessKey;                                   // 0x190(0x8)
 	int                                                          PromptIndex;                                       // 0x198(0x4)

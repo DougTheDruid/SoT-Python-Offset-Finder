@@ -2,62 +2,62 @@
 # https://github.com/DougTheDruid
 EmissaryCompanyActionRewardBoostServiceEvent:
   Attributes:
-    AssociatedCompany:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: struct FName
-    AssociatedCrew:
-      Offset: '0xc'
-      Size: '0x10'
-      Type: Struct Guid
-    CompanyActionType:
-      Offset: '0x8'
-      Size: '0x1'
-      Type: byte
+  - Name: AssociatedCompany
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CompanyActionType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: AssociatedCrew
+    Offset: '0xc'
+    Size: '0x10'
+    Type: Struct Guid
   ClassSize: '0x1c'
 EmissaryCompanyChangedEvent:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x10'
 EmissaryGlobalActionRewardBoostEvent:
   Attributes:
-    GameEventType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: GameEventType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x8'
 EmissaryGlobalActionRewardBoostServiceEvent:
   Attributes:
-    AssociatedCrew:
-      Offset: '0x8'
-      Size: '0x10'
-      Type: Struct Guid
-    FinishedEventType:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: class
+  - Name: FinishedEventType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: AssociatedCrew
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct Guid
   ClassSize: '0x18'
 EmissaryLedgerVisited:
   Attributes:
-    CompanyId:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: Struct FString
+  - Name: CompanyId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
 EmissaryNonQuestCompanyActionRewardBoostEvent:
   Attributes:
-    CompanyActionType:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
+  - Name: CompanyActionType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x1'
 EmissaryQuestCompanyActionRewardBoostEvent:
   Attributes:
-    CompanyActionType:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: byte
-    QuestId:
-      Offset: '0x4'
-      Size: '0x10'
-      Type: Struct Guid
+  - Name: CompanyActionType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: QuestId
+    Offset: '0x4'
+    Size: '0x10'
+    Type: Struct Guid
   ClassSize: '0x14'

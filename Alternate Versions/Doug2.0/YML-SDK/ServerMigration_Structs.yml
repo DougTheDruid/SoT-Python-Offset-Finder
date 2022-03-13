@@ -2,41 +2,41 @@
 # https://github.com/DougTheDruid
 ClientSettings:
   Attributes:
-    FailToConnectToServer:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: bool
-    PauseMigrationBeforeOwnershipTransfer:
-      Offset: '0x1'
-      Size: '0x1'
-      Type: bool
+  - Name: FailToConnectToServer
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: PauseMigrationBeforeOwnershipTransfer
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x2'
 ServerMigrationCustomMigrationSerialisationStruct:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x4'
 ServerMigrationSerialisationDetailsTestsUStruct:
   Attributes:
-    FloatWithNoMarkup:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
+  - Name: FloatWithNoMarkup
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xc'
 ServerSettings:
   Attributes:
-    DisconnectServerConnectionDuringMigration:
-      Offset: '0x2'
-      Size: '0x1'
-      Type: bool
-    FailToConnectToServer:
-      Offset: '0x0'
-      Size: '0x1'
-      Type: bool
-    RefuseIncomingClientConnections:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
-    RefuseMigrationStart:
-      Offset: '0x1'
-      Size: '0x1'
-      Type: bool
+  - Name: FailToConnectToServer
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: RefuseMigrationStart
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: DisconnectServerConnectionDuringMigration
+    Offset: '0x2'
+    Size: '0x1'
+    Type: bool
+  - Name: RefuseIncomingClientConnections
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x8'

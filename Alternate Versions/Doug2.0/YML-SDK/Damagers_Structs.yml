@@ -2,20 +2,20 @@
 # https://github.com/DougTheDruid
 ShockwaveDamagerShipDamage:
   Attributes:
-    LevelOfHoleDamage:
-      Offset: '0xc'
-      Size: '0x4'
-      Type: int
-    MaxDistanceInMetres:
-      Offset: '0x0'
-      Size: '0x4'
-      Type: float
-    MaxNumHoles:
-      Offset: '0x8'
-      Size: '0x4'
-      Type: int
-    MinNumHoles:
-      Offset: '0x4'
-      Size: '0x4'
-      Type: int
+  - Name: MaxDistanceInMetres
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: MinNumHoles
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: MaxNumHoles
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: LevelOfHoleDamage
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x10'

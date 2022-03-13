@@ -2,18 +2,18 @@
 # https://github.com/DougTheDruid
 ChecklistActionProgressTracker:
   Attributes:
-    ActionData:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Class ChecklistActionData*
+  - Name: ActionData
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class ChecklistActionData*
   ClassSize: '0x10'
 TaleQuestChecklistItem:
   Attributes:
-    ChecklistActions:
-      Offset: '0x0'
-      Size: '0x10'
-      Type: TArray<Struct ChecklistActionProgressTracker>
+  - Name: ChecklistActions
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct ChecklistActionProgressTracker>
   ClassSize: '0x50'
 TaleQuestVariableMapMarkType:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x20'

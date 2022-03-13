@@ -21,4 +21,11 @@ public:
 };
 
 
+// Size 0x0
+class BP_SirenTrident_ItemDesc_C: public ItemWithoutIconsDesc
+{
+public:
+};
+
+
 }

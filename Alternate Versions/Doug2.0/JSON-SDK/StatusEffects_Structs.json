@@ -1,305 +1,346 @@
 {
   "Status": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Type": {
+    "Attributes": [
+      {
+        "Name": "Type",
         "Type": "TArray<Class EventCurseWheelLockEnd>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Descriptor": {
+      {
+        "Name": "Descriptor",
         "Type": "Struct StatusDescriptor",
         "Size": "0x4",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "StatusDescriptor": {
     "ClassSize": "0x4",
-    "Attributes": {
-      "Intensity": {
+    "Attributes": [
+      {
+        "Name": "Intensity",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "DebugMenuStatusDefinition": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "Identifier": {
+    "Attributes": [
+      {
+        "Name": "Identifier",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "Status": {
+      {
+        "Name": "Status",
         "Type": "Struct Status",
         "Size": "0x18",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "DelayedStatusEffect": {
     "ClassSize": "0x20",
-    "Attributes": {
-      "StatusEffect": {
+    "Attributes": [
+      {
+        "Name": "StatusEffect",
         "Type": "Struct Status",
         "Size": "0x18",
         "Offset": "0x0"
       },
-      "InEffectTime": {
+      {
+        "Name": "InEffectTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
       }
-    }
+    ]
   },
   "ActiveStatusEffect": {
     "ClassSize": "0x50",
-    "Attributes": {
-      "SourceStatus": {
+    "Attributes": [
+      {
+        "Name": "SourceStatus",
         "Type": "TArray<Class FeatureToggledStatusResponseList>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Descriptor": {
+      {
+        "Name": "Descriptor",
         "Type": "Struct StatusDescriptor",
         "Size": "0x4",
         "Offset": "0x10"
       },
-      "ResponseTemplates": {
+      {
+        "Name": "ResponseTemplates",
         "Type": "TArray<class ResponseTemplates*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
-      "InstancedResponses": {
+      {
+        "Name": "InstancedResponses",
         "Type": "TArray<class InstancedResponses*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
-      "ResponsesAreActive": {
+      {
+        "Name": "ResponsesAreActive",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
       }
-    }
+    ]
   },
   "FeatureToggledStatusResponseList": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Feature": {
+    "Attributes": [
+      {
+        "Name": "Feature",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "ResponseAssets": {
+      {
+        "Name": "ResponseAssets",
         "Type": "TArray<class ResponseAssets*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EventAppliedStatusToTargets": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "StatusApplied": {
+    "Attributes": [
+      {
+        "Name": "StatusApplied",
         "Type": "TArray<Class StatusEffectPersistenceKey>",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "Targets": {
+      {
+        "Name": "Targets",
         "Type": "TArray<class Targets*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "StatusSource": {
+      {
+        "Name": "StatusSource",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x20"
       }
-    }
+    ]
   },
   "StatusEffectPersistenceKey": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "AppliedStatuses": {
+    "Attributes": [
+      {
+        "Name": "AppliedStatuses",
         "Type": "Struct Status",
         "Size": "0x18",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "ApplyStatusEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "StatusToApply": {
+    "Attributes": [
+      {
+        "Name": "StatusToApply",
         "Type": "Struct Status",
         "Size": "0x18",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "BuffedTargetData": {
     "ClassSize": "0x18",
-    "Attributes": {}
+    "Attributes": []
   },
   "StatusDeactivatedEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Id": {
+    "Attributes": [
+      {
+        "Name": "Id",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "StatusName": {
+      {
+        "Name": "StatusName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "StatusActivatedEvent": {
     "ClassSize": "0x18",
-    "Attributes": {
-      "Id": {
+    "Attributes": [
+      {
+        "Name": "Id",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      "StatusName": {
+      {
+        "Name": "StatusName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EventStatusMaterialEffectEnded": {
     "ClassSize": "0x14",
-    "Attributes": {
-      "MaterialParamName": {
+    "Attributes": [
+      {
+        "Name": "MaterialParamName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "CanShowMaterialParam": {
+      {
+        "Name": "CanShowMaterialParam",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "FadeOutAcceleration": {
+      {
+        "Name": "FadeOutAcceleration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       }
-    }
+    ]
   },
   "EventStatusMaterialEffectStarted": {
     "ClassSize": "0x30",
-    "Attributes": {
-      "MaterialParamName": {
+    "Attributes": [
+      {
+        "Name": "MaterialParamName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "CanShowMaterialParam": {
+      {
+        "Name": "CanShowMaterialParam",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "TintParamName": {
+      {
+        "Name": "TintParamName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       },
-      "TintColor": {
+      {
+        "Name": "TintColor",
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x18"
       },
-      "TargetEffectStrength": {
+      {
+        "Name": "TargetEffectStrength",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
       },
-      "FadeInAcceleration": {
+      {
+        "Name": "FadeInAcceleration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
       }
-    }
+    ]
   },
   "EventStatusScreenEffectEnded": {
     "ClassSize": "0xc",
-    "Attributes": {
-      "MaterialParamName": {
+    "Attributes": [
+      {
+        "Name": "MaterialParamName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "FadeOutAcceleration": {
+      {
+        "Name": "FadeOutAcceleration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       }
-    }
+    ]
   },
   "EventStatusScreenSpaceParticleEffectEnded": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "ParticleSystem": {
+    "Attributes": [
+      {
+        "Name": "ParticleSystem",
         "Type": "Class Object*",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EventStatusScreenSpaceParticleEffectStarted": {
     "ClassSize": "0x8",
-    "Attributes": {
-      "ParticleSystem": {
+    "Attributes": [
+      {
+        "Name": "ParticleSystem",
         "Type": "Class Object*",
         "Size": "0x8",
         "Offset": "0x0"
       }
-    }
+    ]
   },
   "EventStatusScreenEffectStarted": {
     "ClassSize": "0x28",
-    "Attributes": {
-      "MaterialParamName": {
+    "Attributes": [
+      {
+        "Name": "MaterialParamName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
-      "TintParamName": {
+      {
+        "Name": "TintParamName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       },
-      "TintColor": {
+      {
+        "Name": "TintColor",
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x10"
       },
-      "TargetEffectStrength": {
+      {
+        "Name": "TargetEffectStrength",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
       },
-      "FadeInAcceleration": {
+      {
+        "Name": "FadeInAcceleration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x24"
       }
-    }
+    ]
   },
   "EventExitedSurfaceMaterialStatusZone": {
     "ClassSize": "0x1",
-    "Attributes": {}
+    "Attributes": []
   },
   "EventEnteredSurfaceMaterialStatusZone": {
     "ClassSize": "0x10",
-    "Attributes": {}
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

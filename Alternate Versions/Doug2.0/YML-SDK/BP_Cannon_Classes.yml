@@ -2,18 +2,18 @@
 # https://github.com/DougTheDruid
 BP_Cannon_C:
   Attributes:
-    Collision:
-      Offset: '0xc30'
-      Size: '0x8'
-      Type: Class StaticMeshComponent*
-    GroupedInteractableArea:
-      Offset: '0xc20'
-      Size: '0x8'
-      Type: Class GroupedInteractableAreaComponent*
-    Interactable:
-      Offset: '0xc28'
-      Size: '0x8'
-      Type: Class InteractableComponent*
+  - Name: GroupedInteractableArea
+    Offset: '0xc20'
+    Size: '0x8'
+    Type: Class GroupedInteractableAreaComponent*
+  - Name: Interactable
+    Offset: '0xc28'
+    Size: '0x8'
+    Type: Class InteractableComponent*
+  - Name: Collision
+    Offset: '0xc30'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
   ClassSize: '0x18'
   FullSize: '0xc38'
   InheritedSize: '0xc20'

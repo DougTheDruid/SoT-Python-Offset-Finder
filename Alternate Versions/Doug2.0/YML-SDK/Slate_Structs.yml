@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 Anchors:
   Attributes:
-    Maximum:
-      Offset: '0x8'
-      Size: '0x8'
-      Type: Struct Vector2D
-    Minimum:
-      Offset: '0x0'
-      Size: '0x8'
-      Type: Struct Vector2D
+  - Name: Minimum
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: Maximum
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct Vector2D
   ClassSize: '0x10'
 InputChord:
   Attributes:
-    Key:
-      Offset: '0x0'
-      Size: '0x20'
-      Type: Struct Key
-    bAlt:
-      Offset: '0x20'
-      Size: '0x1'
-      Type: bool
-    bCmd:
-      Offset: '0x20'
-      Size: '0x1'
-      Type: bool
-    bCtrl:
-      Offset: '0x20'
-      Size: '0x1'
-      Type: bool
-    bShift:
-      Offset: '0x20'
-      Size: '0x1'
-      Type: bool
+  - Name: Key
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct Key
+  - Name: bShift
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
+  - Name: bCtrl
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
+  - Name: bAlt
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
+  - Name: bCmd
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x28'

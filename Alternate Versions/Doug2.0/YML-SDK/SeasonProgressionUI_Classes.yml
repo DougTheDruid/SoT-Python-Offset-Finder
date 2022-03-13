@@ -2,140 +2,140 @@
 # https://github.com/DougTheDruid
 SeasonPopupAsset:
   Attributes:
-    BackgroundImage:
-      Offset: '0x210'
-      Size: '0x10'
-      Type: Struct StringAssetReference
-    DeedInfos:
-      Offset: '0x50'
-      Size: '0x10'
-      Type: TArray<Struct TrialInfos>
-    DefaultChatEventName:
-      Offset: '0x270'
-      Size: '0x10'
-      Type: Struct FString
-    DefaultChatSfxEventName:
-      Offset: '0x260'
-      Size: '0x10'
-      Type: Struct FString
-    DefaultChatSwitchName:
-      Offset: '0x280'
-      Size: '0x10'
-      Type: Struct FString
-    DefaultChatSwitchValue:
-      Offset: '0x290'
-      Size: '0x10'
-      Type: Struct FString
-    DefaultToastEventName:
-      Offset: '0x230'
-      Size: '0x10'
-      Type: Struct FString
-    DefaultToastSfxEventName:
-      Offset: '0x220'
-      Size: '0x10'
-      Type: Struct FString
-    DefaultToastSwitchName:
-      Offset: '0x240'
-      Size: '0x10'
-      Type: Struct FString
-    DefaultToastSwitchValue:
-      Offset: '0x250'
-      Size: '0x10'
-      Type: Struct FString
-    LevelIncreaseInfo:
-      Offset: '0xd8'
-      Size: '0x68'
-      Type: Struct SeasonIconPopupAsset
-    MultipleRewardsInfo:
-      Offset: '0x1a8'
-      Size: '0x68'
-      Type: Struct SeasonIconPopupAsset
-    RenownActionInfos:
-      Offset: '0x60'
-      Size: '0x10'
-      Type: TArray<Struct DeedInfos>
-    RewardInfo:
-      Offset: '0x140'
-      Size: '0x68'
-      Type: Struct SeasonIconPopupAsset
-    SeasonInfo:
-      Offset: '0x70'
-      Size: '0x68'
-      Type: Struct SeasonIconPopupAsset
-    ThemeId:
-      Offset: '0x28'
-      Size: '0x8'
-      Type: struct FName
-    TierInfos:
-      Offset: '0x30'
-      Size: '0x10'
-      Type: TArray<Struct ThemeId>
-    TrialInfos:
-      Offset: '0x40'
-      Size: '0x10'
-      Type: TArray<Struct TierInfos>
+  - Name: ThemeId
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: TierInfos
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct ThemeId>
+  - Name: TrialInfos
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Struct TierInfos>
+  - Name: DeedInfos
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<Struct TrialInfos>
+  - Name: RenownActionInfos
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<Struct DeedInfos>
+  - Name: SeasonInfo
+    Offset: '0x70'
+    Size: '0x68'
+    Type: Struct SeasonIconPopupAsset
+  - Name: LevelIncreaseInfo
+    Offset: '0xd8'
+    Size: '0x68'
+    Type: Struct SeasonIconPopupAsset
+  - Name: RewardInfo
+    Offset: '0x140'
+    Size: '0x68'
+    Type: Struct SeasonIconPopupAsset
+  - Name: MultipleRewardsInfo
+    Offset: '0x1a8'
+    Size: '0x68'
+    Type: Struct SeasonIconPopupAsset
+  - Name: BackgroundImage
+    Offset: '0x210'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: DefaultToastSfxEventName
+    Offset: '0x220'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DefaultToastEventName
+    Offset: '0x230'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DefaultToastSwitchName
+    Offset: '0x240'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DefaultToastSwitchValue
+    Offset: '0x250'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DefaultChatSfxEventName
+    Offset: '0x260'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DefaultChatEventName
+    Offset: '0x270'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DefaultChatSwitchName
+    Offset: '0x280'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DefaultChatSwitchValue
+    Offset: '0x290'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x278'
   FullSize: '0x2a0'
   InheritedSize: '0x28'
   Super: DataAsset
 SeasonPopupListAsset:
   Attributes:
-    SeasonPopups:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: TArray<class SeasonPopups*>
+  - Name: SeasonPopups
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class SeasonPopups*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 SeasonProgressionUIComponent:
   Attributes:
-    DetailsNavigationDesc:
-      Offset: '0xe8'
-      Size: '0x10'
-      Type: TArray<Struct SeasonPopupListAsset>
-    NextReceivedEventsTelemetryData:
-      Offset: '0xf8'
-      Size: '0x18'
-      Type: Struct SeasonProgressionUITelemetryFragment
+  - Name: DetailsNavigationDesc
+    Offset: '0xe8'
+    Size: '0x10'
+    Type: TArray<Struct SeasonPopupListAsset>
+  - Name: NextReceivedEventsTelemetryData
+    Offset: '0xf8'
+    Size: '0x18'
+    Type: Struct SeasonProgressionUITelemetryFragment
   ClassSize: '0xe8'
   FullSize: '0x1b0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 SeasonProgressionUIInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 SeasonProgressionUIService:
   Attributes:
-    SeasonPopupListAsset:
-      Offset: '0x400'
-      Size: '0x8'
-      Type: Class SeasonPopupListAsset*
+  - Name: SeasonPopupListAsset
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class SeasonPopupListAsset*
   ClassSize: '0x1c0'
   FullSize: '0x590'
   InheritedSize: '0x3d0'
   Super: Actor
 SeasonProgressionUIServiceInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
 SeasonProgressionUISettings:
   Attributes:
-    SeasonPopupListAsset:
-      Offset: '0x28'
-      Size: '0x10'
-      Type: Struct StringAssetReference
+  - Name: SeasonPopupListAsset
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
 SeasonProgressionUITelemetryInterface:
-  Attributes: {}
+  Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
