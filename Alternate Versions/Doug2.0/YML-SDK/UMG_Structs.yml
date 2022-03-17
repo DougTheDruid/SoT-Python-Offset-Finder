@@ -99,7 +99,7 @@ MovieSceneWidgetMaterialSectionTemplate:
   - Name: BrushPropertyNamePath
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   ClassSize: '0x58'
 NamedSlotBinding:
   Attributes:

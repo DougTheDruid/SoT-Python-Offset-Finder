@@ -35,11 +35,11 @@ ActionStatePriorityTableData:
   - Name: StateDefaultValue
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct CreatePriorityTable>
+    Type: TArray<Struct ActionStatePriorityRelationship>
   - Name: PriorityTableEntry
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct StateDefaultValue>
+    Type: TArray<Struct ActionStatePriorityList>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

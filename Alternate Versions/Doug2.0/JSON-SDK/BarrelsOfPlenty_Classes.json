@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Objects",
-        "Type": "TArray<Struct SceneComponent>",
+        "Type": "TArray<Struct BarrelsOfPlentyDebugLocationEntry>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },

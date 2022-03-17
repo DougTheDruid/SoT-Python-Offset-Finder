@@ -73,7 +73,7 @@ CommodityEntitlementRedemptionAsset:
   - Name: CommoditiesForRedemption
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct CommodityDemand>
+    Type: TArray<Struct EntitlementToRedeemItems>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -153,7 +153,7 @@ CommodityTypeDataAsset:
   - Name: CommodityEntries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct CommodityDemand>
+    Type: TArray<Struct CommodityTypeDataEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -191,7 +191,7 @@ SpecificItemsCrateFillerComponent:
   - Name: ItemsToFillCrateWith
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct CommodityDemand>
+    Type: TArray<Struct StorageContainerNode>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'

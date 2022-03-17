@@ -37,7 +37,7 @@ FireworkDataAsset:
   - Name: Explosions
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct FireworkAmbientLightData>
+    Type: TArray<Struct WeightedFireworkVFXData>
   - Name: NumExplosions
     Offset: '0xb0'
     Size: '0x20'
@@ -309,7 +309,7 @@ ProjectileAnimationComponent:
   - Name: ProjectileAnimationCurves
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct Desc>
+    Type: TArray<Struct WeightedProjectileMeshAnimationData>
   - Name: MeshComponent
     Offset: '0xd8'
     Size: '0x8'

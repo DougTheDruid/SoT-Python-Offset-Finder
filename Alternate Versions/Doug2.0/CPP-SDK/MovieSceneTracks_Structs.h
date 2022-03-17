@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x78
-class MovieScene3DTransformKeyStruct: public None
+struct MovieScene3DTransformKeyStruct
 {
 public:
 	Struct Vector                                                Location;                                          // 0x8(0xc)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x30
-class MovieScene3DScaleKeyStruct: public None
+struct MovieScene3DScaleKeyStruct
 {
 public:
 	Struct Vector                                                Scale;                                             // 0x8(0xc)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0x30
-class MovieScene3DRotationKeyStruct: public None
+struct MovieScene3DRotationKeyStruct
 {
 public:
 	Struct Rotator                                               Rotation;                                          // 0x8(0xc)
@@ -33,7 +33,7 @@ public:
 
 
 // Size 0x30
-class MovieScene3DLocationKeyStruct: public None
+struct MovieScene3DLocationKeyStruct
 {
 public:
 	Struct Vector                                                Location;                                          // 0x8(0xc)
@@ -41,7 +41,7 @@ public:
 
 
 // Size 0x20
-class MovieSceneCameraAnimSectionData: public None
+struct MovieSceneCameraAnimSectionData
 {
 public:
 	Class CameraAnim*                                            CameraAnim;                                        // 0x0(0x8)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0x20
-class MovieSceneCameraShakeSectionData: public None
+struct MovieSceneCameraShakeSectionData
 {
 public:
 	class                                                        ShakeClass;                                        // 0x0(0x8)
@@ -65,7 +65,7 @@ public:
 
 
 // Size 0x58
-class MovieSceneColorKeyStruct: public None
+struct MovieSceneColorKeyStruct
 {
 public:
 	Struct LinearColor                                           Color;                                             // 0x8(0x10)
@@ -73,16 +73,16 @@ public:
 
 
 // Size 0x20
-class MovieSceneEventSectionData: public None
+struct MovieSceneEventSectionData
 {
 public:
-	TArray<Float None>                                           KeyTimes;                                          // 0x0(0x10)
+	TArray<Float KeyTimes>                                       KeyTimes;                                          // 0x0(0x10)
 	TArray<Struct EventPayload>                                  KeyValues;                                         // 0x10(0x10)
 };
 
 
 // Size 0x30
-class EventPayload: public None
+struct EventPayload
 {
 public:
 	struct FName                                                 EventName;                                         // 0x0(0x8)
@@ -94,14 +94,14 @@ public:
 
 
 // Size 0x18
-class MovieSceneEventParameters: public None
+struct MovieSceneEventParameters
 {
 public:
 };
 
 
 // Size 0x1f0
-class ColorParameterNameAndCurves: public None
+struct ColorParameterNameAndCurves
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -114,7 +114,7 @@ public:
 
 
 // Size 0x178
-class VectorParameterNameAndCurves: public None
+struct VectorParameterNameAndCurves
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -126,7 +126,7 @@ public:
 
 
 // Size 0x88
-class ScalarParameterNameAndCurve: public None
+struct ScalarParameterNameAndCurve
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -136,7 +136,7 @@ public:
 
 
 // Size 0x98
-class MovieSceneSkeletalAnimationParams: public None
+struct MovieSceneSkeletalAnimationParams
 {
 public:
 	Class AnimSequenceBase*                                      Animation;                                         // 0x0(0x8)
@@ -150,7 +150,7 @@ public:
 
 
 // Size 0x60
-class MovieSceneVector4KeyStruct: public None
+struct MovieSceneVector4KeyStruct
 {
 public:
 	Struct Vector4                                               Vector;                                            // 0x50(0x10)
@@ -158,14 +158,14 @@ public:
 
 
 // Size 0x48
-class MovieSceneVectorKeyStructBase: public None
+struct MovieSceneVectorKeyStructBase
 {
 public:
 };
 
 
 // Size 0x58
-class MovieSceneVectorKeyStruct: public None
+struct MovieSceneVectorKeyStruct
 {
 public:
 	Struct Vector                                                Vector;                                            // 0x48(0xc)
@@ -173,7 +173,7 @@ public:
 
 
 // Size 0x50
-class MovieSceneVector2DKeyStruct: public None
+struct MovieSceneVector2DKeyStruct
 {
 public:
 	Struct Vector2D                                              Vector;                                            // 0x48(0x8)
@@ -181,7 +181,7 @@ public:
 
 
 // Size 0x50
-class MovieSceneComponentMaterialSectionTemplate: public None
+struct MovieSceneComponentMaterialSectionTemplate
 {
 public:
 	int                                                          MaterialIndex;                                     // 0x48(0x4)
@@ -189,17 +189,17 @@ public:
 
 
 // Size 0x48
-class MovieSceneParameterSectionTemplate: public None
+struct MovieSceneParameterSectionTemplate
 {
 public:
-	TArray<Struct MaterialIndex>                                 Scalars;                                           // 0x18(0x10)
-	TArray<Struct Scalars>                                       Vectors;                                           // 0x28(0x10)
-	TArray<Struct Vectors>                                       Colors;                                            // 0x38(0x10)
+	TArray<Struct ScalarParameterNameAndCurve>                   Scalars;                                           // 0x18(0x10)
+	TArray<Struct VectorParameterNameAndCurves>                  Vectors;                                           // 0x28(0x10)
+	TArray<Struct ColorParameterNameAndCurves>                   Colors;                                            // 0x38(0x10)
 };
 
 
 // Size 0x88
-class MovieSceneSpawnSectionTemplate: public None
+struct MovieSceneSpawnSectionTemplate
 {
 public:
 	Struct IntegralCurve                                         Curve;                                             // 0x18(0x70)
@@ -207,7 +207,7 @@ public:
 
 
 // Size 0x38
-class MovieScene3DAttachSectionTemplate: public None
+struct MovieScene3DAttachSectionTemplate
 {
 public:
 	Struct Guid                                                  AttachGuid;                                        // 0x18(0x10)
@@ -217,7 +217,7 @@ public:
 
 
 // Size 0xa8
-class MovieScene3DPathSectionTemplate: public None
+struct MovieScene3DPathSectionTemplate
 {
 public:
 	Struct Guid                                                  PathGuid;                                          // 0x18(0x10)
@@ -231,7 +231,7 @@ public:
 
 
 // Size 0x450
-class MovieScene3DTransformSectionTemplate: public None
+struct MovieScene3DTransformSectionTemplate
 {
 public:
 	Struct RichCurve                                             TranslationCurve;                                  // 0x18(0x78)
@@ -241,17 +241,17 @@ public:
 
 
 // Size 0xb8
-class MovieSceneActorReferenceSectionTemplate: public None
+struct MovieSceneActorReferenceSectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	Struct IntegralCurve                                         ActorGuidIndexCurve;                               // 0x38(0x70)
-	TArray<Struct ActorGuidIndexCurve>                           ActorGuids;                                        // 0xa8(0x10)
+	TArray<Struct Guid>                                          ActorGuids;                                        // 0xa8(0x10)
 };
 
 
 // Size 0x130
-class MovieSceneAudioSectionTemplate: public None
+struct MovieSceneAudioSectionTemplate
 {
 public:
 	Struct MovieSceneAudioSectionTemplateData                    AudioData;                                         // 0x18(0x118)
@@ -259,7 +259,7 @@ public:
 
 
 // Size 0x118
-class MovieSceneAudioSectionTemplateData: public None
+struct MovieSceneAudioSectionTemplateData
 {
 public:
 	Class SoundBase*                                             Sound;                                             // 0x0(0x8)
@@ -272,14 +272,14 @@ public:
 
 
 // Size 0x18
-class MovieSceneAdditiveCameraAnimationTrackTemplate: public None
+struct MovieSceneAdditiveCameraAnimationTrackTemplate
 {
 public:
 };
 
 
 // Size 0x40
-class MovieSceneCameraShakeSectionTemplate: public None
+struct MovieSceneCameraShakeSectionTemplate
 {
 public:
 	Struct MovieSceneCameraShakeSectionData                      SourceData;                                        // 0x18(0x20)
@@ -288,14 +288,14 @@ public:
 
 
 // Size 0x18
-class MovieSceneAdditiveCameraAnimationTemplate: public None
+struct MovieSceneAdditiveCameraAnimationTemplate
 {
 public:
 };
 
 
 // Size 0x40
-class MovieSceneCameraAnimSectionTemplate: public None
+struct MovieSceneCameraAnimSectionTemplate
 {
 public:
 	Struct MovieSceneCameraAnimSectionData                       SourceData;                                        // 0x18(0x20)
@@ -304,7 +304,7 @@ public:
 
 
 // Size 0x28
-class MovieSceneCameraCutSectionTemplate: public None
+struct MovieSceneCameraCutSectionTemplate
 {
 public:
 	Struct Guid                                                  CameraGuid;                                        // 0x18(0x10)
@@ -312,7 +312,7 @@ public:
 
 
 // Size 0x210
-class MovieSceneColorSectionTemplate: public None
+struct MovieSceneColorSectionTemplate
 {
 public:
 	struct FName                                                 PropertyName;                                      // 0x18(0x8)
@@ -322,7 +322,7 @@ public:
 
 
 // Size 0x40
-class MovieSceneEventSectionTemplate: public None
+struct MovieSceneEventSectionTemplate
 {
 public:
 	Struct MovieSceneEventSectionData                            EventData;                                         // 0x18(0x20)
@@ -332,7 +332,7 @@ public:
 
 
 // Size 0xa8
-class MovieSceneFadeSectionTemplate: public None
+struct MovieSceneFadeSectionTemplate
 {
 public:
 	Struct RichCurve                                             FadeCurve;                                         // 0x18(0x78)
@@ -342,14 +342,14 @@ public:
 
 
 // Size 0x18
-class MovieSceneLevelVisibilitySharedTrack: public None
+struct MovieSceneLevelVisibilitySharedTrack
 {
 public:
 };
 
 
 // Size 0x30
-class MovieSceneLevelVisibilitySectionTemplate: public None
+struct MovieSceneLevelVisibilitySectionTemplate
 {
 public:
 	byte                                                         Visibility;                                        // 0x18(0x1)
@@ -358,14 +358,14 @@ public:
 
 
 // Size 0x48
-class MovieSceneParticleParameterSectionTemplate: public None
+struct MovieSceneParticleParameterSectionTemplate
 {
 public:
 };
 
 
 // Size 0x88
-class MovieSceneParticleSectionTemplate: public None
+struct MovieSceneParticleSectionTemplate
 {
 public:
 	Struct IntegralCurve                                         ParticleKeys;                                      // 0x18(0x70)
@@ -373,7 +373,7 @@ public:
 
 
 // Size 0x220
-class MovieSceneVectorPropertySectionTemplate: public None
+struct MovieSceneVectorPropertySectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
@@ -383,7 +383,7 @@ public:
 
 
 // Size 0xb0
-class MovieSceneStringPropertySectionTemplate: public None
+struct MovieSceneStringPropertySectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
@@ -392,7 +392,7 @@ public:
 
 
 // Size 0xa8
-class MovieSceneIntegerPropertySectionTemplate: public None
+struct MovieSceneIntegerPropertySectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
@@ -401,7 +401,7 @@ public:
 
 
 // Size 0xa8
-class MovieSceneEnumPropertySectionTemplate: public None
+struct MovieSceneEnumPropertySectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
@@ -410,7 +410,7 @@ public:
 
 
 // Size 0xa8
-class MovieSceneBytePropertySectionTemplate: public None
+struct MovieSceneBytePropertySectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
@@ -419,7 +419,7 @@ public:
 
 
 // Size 0xb0
-class MovieSceneFloatPropertySectionTemplate: public None
+struct MovieSceneFloatPropertySectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
@@ -428,7 +428,7 @@ public:
 
 
 // Size 0xa8
-class MovieSceneBoolPropertySectionTemplate: public None
+struct MovieSceneBoolPropertySectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
@@ -437,14 +437,14 @@ public:
 
 
 // Size 0x18
-class MovieSceneSkeletalAnimationSharedTrack: public None
+struct MovieSceneSkeletalAnimationSharedTrack
 {
 public:
 };
 
 
 // Size 0xb8
-class MovieSceneSkeletalAnimationSectionTemplate: public None
+struct MovieSceneSkeletalAnimationSectionTemplate
 {
 public:
 	Struct MovieSceneSkeletalAnimationSectionTemplateParameters  Params;                                            // 0x18(0xa0)
@@ -452,7 +452,7 @@ public:
 
 
 // Size 0xa0
-class MovieSceneSkeletalAnimationSectionTemplateParameters: public None
+struct MovieSceneSkeletalAnimationSectionTemplateParameters
 {
 public:
 	float                                                        SectionStartTime;                                  // 0x98(0x4)
@@ -461,7 +461,7 @@ public:
 
 
 // Size 0x90
-class MovieSceneSlomoSectionTemplate: public None
+struct MovieSceneSlomoSectionTemplate
 {
 public:
 	Struct RichCurve                                             SlomoCurve;                                        // 0x18(0x78)
@@ -469,7 +469,7 @@ public:
 
 
 // Size 0xb0
-class MovieSceneVisibilitySectionTemplate: public None
+struct MovieSceneVisibilitySectionTemplate
 {
 public:
 	bool                                                         bTemporarilyHiddenInGame;                          // 0xa8(0x1)

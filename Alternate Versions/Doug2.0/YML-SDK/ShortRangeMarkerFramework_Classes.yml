@@ -17,7 +17,7 @@ ShortRangeMarker:
   - Name: CachedActors
     Offset: '0x418'
     Size: '0x10'
-    Type: TArray<Weakclass TriggerFadeOut>
+    Type: TArray<Weakclass CachedActors>
   ClassSize: '0x58'
   FullSize: '0x428'
   InheritedSize: '0x3d0'

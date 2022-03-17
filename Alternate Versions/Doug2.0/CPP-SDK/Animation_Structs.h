@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x500
-class TransformBlendCurve: public None
+struct TransformBlendCurve
 {
 public:
 	bool                                                         UseLocationCurve;                                  // 0x0(0x1)
@@ -22,7 +22,7 @@ public:
 
 
 // Size 0x8
-class CustomAnimationMontageId: public None
+struct CustomAnimationMontageId
 {
 public:
 	struct FName                                                 CustomAnimationMontageId;                          // 0x0(0x8)
@@ -30,7 +30,7 @@ public:
 
 
 // Size 0x8
-class HitReactionAnimationData: public None
+struct HitReactionAnimationData
 {
 public:
 	Class BlendSpace1D*                                          HitReactBlendSpace;                                // 0x0(0x8)
@@ -38,14 +38,14 @@ public:
 
 
 // Size 0x18
-class AnimDataEntryStructWrapper: public None
+struct AnimDataEntryStructWrapper
 {
 public:
 };
 
 
 // Size 0x18
-class AnimationDataStoreEntry: public None
+struct AnimationDataStoreEntry
 {
 public:
 	class                                                        AnimDataId;                                        // 0x0(0x8)
@@ -55,7 +55,7 @@ public:
 
 
 // Size 0x40
-class AnimationDataStoreLoadingEntry: public None
+struct AnimationDataStoreLoadingEntry
 {
 public:
 	class                                                        AnimDataId;                                        // 0x38(0x8)
@@ -63,7 +63,7 @@ public:
 
 
 // Size 0x28
-class AnimationDataStoreAssetWeakReferenceEntry: public None
+struct AnimationDataStoreAssetWeakReferenceEntry
 {
 public:
 	class                                                        AnimDataId;                                        // 0x0(0x8)
@@ -71,7 +71,7 @@ public:
 
 
 // Size 0x18
-class AnimationDataStoreAssetEntry: public None
+struct AnimationDataStoreAssetEntry
 {
 public:
 	class                                                        AnimDataId;                                        // 0x0(0x8)
@@ -81,7 +81,7 @@ public:
 
 
 // Size 0xc
-class CurveUpdateValues: public None
+struct CurveUpdateValues
 {
 public:
 	struct FName                                                 CurveName;                                         // 0x0(0x8)
@@ -90,7 +90,7 @@ public:
 
 
 // Size 0x40
-class CharacterAnimationIKUpdateParams: public None
+struct CharacterAnimationIKUpdateParams
 {
 public:
 	float                                                        CurrentAlpha;                                      // 0x0(0x4)
@@ -104,14 +104,14 @@ public:
 
 
 // Size 0x60
-class LimbIK: public None
+struct LimbIK
 {
 public:
 };
 
 
 // Size 0x10
-class CosmeticItems: public None
+struct CosmeticItems
 {
 public:
 	TArray<class CosmeticItemArray*>                             CosmeticItemArray;                                 // 0x0(0x10)
@@ -119,7 +119,7 @@ public:
 
 
 // Size 0x20
-class CosmeticItemAnimationSetLoopData: public None
+struct CosmeticItemAnimationSetLoopData
 {
 public:
 	Class AnimSequenceBase*                                      Into;                                              // 0x0(0x8)
@@ -130,7 +130,7 @@ public:
 
 
 // Size 0xc
-class CustomAnimationMontageComponentReplicatedData: public None
+struct CustomAnimationMontageComponentReplicatedData
 {
 public:
 	Struct CustomAnimationMontageId                              CustomMontageId;                                   // 0x0(0x8)
@@ -139,7 +139,7 @@ public:
 
 
 // Size 0x28
-class CustomAnimationMontageStagedLoopingData: public None
+struct CustomAnimationMontageStagedLoopingData
 {
 public:
 	Class AnimMontage*                                           Into;                                              // 0x0(0x8)
@@ -149,7 +149,7 @@ public:
 
 
 // Size 0x18
-class CustomAnimationMontageDefinitionEntry: public None
+struct CustomAnimationMontageDefinitionEntry
 {
 public:
 	struct FName                                                 MontageId;                                         // 0x0(0x8)
@@ -158,7 +158,7 @@ public:
 
 
 // Size 0x18
-class ActorVelocityData: public None
+struct ActorVelocityData
 {
 public:
 	Struct Vector                                                ActorsVelocityVector;                              // 0x0(0xc)
@@ -169,7 +169,7 @@ public:
 
 
 // Size 0x18
-class WeightedAnimationData: public None
+struct WeightedAnimationData
 {
 public:
 	Struct StringAssetReference                                  Animation;                                         // 0x0(0x10)
@@ -178,7 +178,7 @@ public:
 
 
 // Size 0x8
-class EventCosmeticItemAttachmentSwitched: public None
+struct EventCosmeticItemAttachmentSwitched
 {
 public:
 	Class Actor*                                                 Owner;                                             // 0x0(0x8)
@@ -186,7 +186,7 @@ public:
 
 
 // Size 0x8
-class EventCosmeticItemSpawnedOwnerNotification: public None
+struct EventCosmeticItemSpawnedOwnerNotification
 {
 public:
 	Class Actor*                                                 CosmeticItemActor;                                 // 0x0(0x8)
@@ -194,7 +194,7 @@ public:
 
 
 // Size 0x10
-class EventCosmeticItemSpawned: public None
+struct EventCosmeticItemSpawned
 {
 public:
 	Class Actor*                                                 Owner;                                             // 0x0(0x8)
@@ -203,21 +203,21 @@ public:
 
 
 // Size 0x1
-class EventAnimationHappyReact: public None
+struct EventAnimationHappyReact
 {
 public:
 };
 
 
 // Size 0x1
-class EventHitReactAnimationFinished: public None
+struct EventHitReactAnimationFinished
 {
 public:
 };
 
 
 // Size 0x1c
-class EventHitReactAnimationRequested: public None
+struct EventHitReactAnimationRequested
 {
 public:
 	Struct Vector                                                HitNormal;                                         // 0x0(0xc)
@@ -227,7 +227,7 @@ public:
 
 
 // Size 0x28
-class HitReactionAnimationState: public None
+struct HitReactionAnimationState
 {
 public:
 	float                                                        Yaw;                                               // 0x0(0x4)
@@ -238,7 +238,7 @@ public:
 
 
 // Size 0xc
-class AnimationLookAtParams: public None
+struct AnimationLookAtParams
 {
 public:
 	float                                                        ActivationSpeed;                                   // 0x0(0x4)
@@ -248,7 +248,7 @@ public:
 
 
 // Size 0x98
-class AnimationLookAt: public None
+struct AnimationLookAt
 {
 public:
 	Struct AnimationLookAtParams                                 Params;                                            // 0x8(0xc)
@@ -258,14 +258,14 @@ public:
 
 
 // Size 0x1
-class EventAnimationLookAtUpdated: public None
+struct EventAnimationLookAtUpdated
 {
 public:
 };
 
 
 // Size 0xc
-class IKLookAtParams: public None
+struct IKLookAtParams
 {
 public:
 	float                                                        ActivationSpeed;                                   // 0x0(0x4)
@@ -275,7 +275,7 @@ public:
 
 
 // Size 0x70
-class AnimNode_WeightedLoadOnDemandSquencePlayer: public None
+struct AnimNode_WeightedLoadOnDemandSquencePlayer
 {
 public:
 	float                                                        PlayRate;                                          // 0x40(0x4)
@@ -288,21 +288,21 @@ public:
 
 
 // Size 0xc
-class EventCustomAnimationMontageExitRequested: public None
+struct EventCustomAnimationMontageExitRequested
 {
 public:
 };
 
 
 // Size 0x8
-class EventCustomAnimationMontageRequested: public None
+struct EventCustomAnimationMontageRequested
 {
 public:
 };
 
 
 // Size 0xd8
-class CustomAnimationMontageStateMachine: public None
+struct CustomAnimationMontageStateMachine
 {
 public:
 	Class CustomAnimationMontageDefinitionDataAsset*             ActiveState;                                       // 0x0(0x8)
@@ -312,7 +312,7 @@ public:
 
 
 // Size 0x8
-class EventPreviewCharacterAnimationRequest: public None
+struct EventPreviewCharacterAnimationRequest
 {
 public:
 	Class AnimationAsset*                                        AnimationToPlay;                                   // 0x0(0x8)
@@ -320,7 +320,7 @@ public:
 
 
 // Size 0x8
-class AnimationStateCompleteEvent: public None
+struct AnimationStateCompleteEvent
 {
 public:
 	class                                                        CompletedStateId;                                  // 0x0(0x8)
@@ -328,7 +328,7 @@ public:
 
 
 // Size 0x10
-class WeightedAnimationTimeoutSelector: public None
+struct WeightedAnimationTimeoutSelector
 {
 public:
 	TArray<Struct WeightedAnimationTimeout>                      Weightings;                                        // 0x0(0x10)
@@ -336,7 +336,7 @@ public:
 
 
 // Size 0x14
-class WeightedAnimationTimeout: public None
+struct WeightedAnimationTimeout
 {
 public:
 	Struct FloatRange                                            TimeoutRange;                                      // 0x0(0x10)
@@ -345,7 +345,7 @@ public:
 
 
 // Size 0x18
-class DockableInfo: public None
+struct DockableInfo
 {
 public:
 	struct FName                                                 SocketName;                                        // 0x0(0x8)
@@ -355,7 +355,7 @@ public:
 
 
 // Size 0x50
-class Docker: public None
+struct Docker
 {
 public:
 };

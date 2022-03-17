@@ -47,7 +47,7 @@
       },
       {
         "Name": "SmokeFeedbackLevels",
-        "Type": "TArray<Struct TimeToNextCookState>",
+        "Type": "TArray<Struct CookableComponentSmokeFeedbackTimingEntry>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
@@ -116,13 +116,13 @@
     "Attributes": [
       {
         "Name": "StatusToApplyToContents",
-        "Type": "TArray<Struct MaxCookingRtpcAmount>",
+        "Type": "TArray<Struct Status>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
         "Name": "VFXFeedback",
-        "Type": "TArray<Struct StatusToApplyToContents>",
+        "Type": "TArray<Struct CookerSmokeFeedbackEntry>",
         "Size": "0x10",
         "Offset": "0xe0"
       },

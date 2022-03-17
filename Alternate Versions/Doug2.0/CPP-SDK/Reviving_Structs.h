@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class ModeSpecificReviveSettings: public None
+struct ModeSpecificReviveSettings
 {
 public:
 	byte                                                         AssociatedPlaymode;                                // 0x0(0x1)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0x20
-class ReviveEffectsValues: public None
+struct ReviveEffectsValues
 {
 public:
 	Class MaterialInstanceDynamic*                               AstralCordPostProcessMID;                          // 0x0(0x8)
@@ -33,14 +33,14 @@ public:
 
 
 // Size 0x1
-class PlayerInReviveableStateTelemetryEvent: public None
+struct PlayerInReviveableStateTelemetryEvent
 {
 public:
 };
 
 
 // Size 0x1
-class PlayerRevivalTelemetryEvent: public None
+struct PlayerRevivalTelemetryEvent
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
@@ -48,14 +48,14 @@ public:
 
 
 // Size 0x30
-class PostReviveLocomotionActionStateConstructionInfo: public None
+struct PostReviveLocomotionActionStateConstructionInfo
 {
 public:
 };
 
 
 // Size 0x1
-class EventRevivableRepresentationSpawnCompleted: public None
+struct EventRevivableRepresentationSpawnCompleted
 {
 public:
 	bool                                                         FromSwimming;                                      // 0x0(0x1)
@@ -63,14 +63,14 @@ public:
 
 
 // Size 0x1
-class EventRevivableRepresentationSpawnStarted: public None
+struct EventRevivableRepresentationSpawnStarted
 {
 public:
 };
 
 
 // Size 0x68
-class ReviveableActionStateConstructionInfo: public None
+struct ReviveableActionStateConstructionInfo
 {
 public:
 	class                                                        ActionStateId;                                     // 0x30(0x8)
@@ -81,14 +81,14 @@ public:
 
 
 // Size 0x30
-class RevivedActionStateConstructionInfo: public None
+struct RevivedActionStateConstructionInfo
 {
 public:
 };
 
 
 // Size 0x10
-class RevivedActionStateParams: public None
+struct RevivedActionStateParams
 {
 public:
 	float                                                        HealthRegained;                                    // 0x0(0x4)
@@ -98,14 +98,14 @@ public:
 
 
 // Size 0x1
-class ReviveableActionStateStarted: public None
+struct ReviveableActionStateStarted
 {
 public:
 };
 
 
 // Size 0x8
-class EventCharacterDiedDuringReviving: public None
+struct EventCharacterDiedDuringReviving
 {
 public:
 	Class Character*                                             OwningCharacter;                                   // 0x0(0x8)
@@ -113,77 +113,77 @@ public:
 
 
 // Size 0x1
-class EventRevivePlayerActionStateLeft: public None
+struct EventRevivePlayerActionStateLeft
 {
 public:
 };
 
 
 // Size 0x1
-class EventRevivePlayerActionStateEntered: public None
+struct EventRevivePlayerActionStateEntered
 {
 public:
 };
 
 
 // Size 0x1
-class EventCharacterFullyRevived: public None
+struct EventCharacterFullyRevived
 {
 public:
 };
 
 
 // Size 0x1
-class ReviveEndedEarlyEvent: public None
+struct ReviveEndedEarlyEvent
 {
 public:
 };
 
 
 // Size 0x1
-class EventRevivableRepresentationReturnedToBody: public None
+struct EventRevivableRepresentationReturnedToBody
 {
 public:
 };
 
 
 // Size 0x1
-class SuccessfulReviveEvent: public None
+struct SuccessfulReviveEvent
 {
 public:
 };
 
 
 // Size 0x1
-class BeingRevivedStoppedEvent: public None
+struct BeingRevivedStoppedEvent
 {
 public:
 };
 
 
 // Size 0x1
-class BeingRevivedStartedEvent: public None
+struct BeingRevivedStartedEvent
 {
 public:
 };
 
 
 // Size 0x1
-class RevivableCharacterGhostlyBodyEvaporateStarted: public None
+struct RevivableCharacterGhostlyBodyEvaporateStarted
 {
 public:
 };
 
 
 // Size 0x1
-class RevivingWindowEnd: public None
+struct RevivingWindowEnd
 {
 public:
 };
 
 
 // Size 0x38
-class RevivingWindowStart: public None
+struct RevivingWindowStart
 {
 public:
 	Struct DamageInstance                                        DamageInstance;                                    // 0x0(0x28)
@@ -193,7 +193,7 @@ public:
 
 
 // Size 0x60
-class RevivePlayerActionStateConstructionInfo: public None
+struct RevivePlayerActionStateConstructionInfo
 {
 public:
 	Struct NetActorPtr                                           CharacterReviving;                                 // 0x30(0x14)

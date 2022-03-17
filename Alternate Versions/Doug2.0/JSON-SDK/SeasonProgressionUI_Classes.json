@@ -13,25 +13,25 @@
       },
       {
         "Name": "TierInfos",
-        "Type": "TArray<Struct ThemeId>",
+        "Type": "TArray<Struct SeasonIconPopupAsset>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "TrialInfos",
-        "Type": "TArray<Struct TierInfos>",
+        "Type": "TArray<Struct SeasonGoalPopupAsset>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "DeedInfos",
-        "Type": "TArray<Struct TrialInfos>",
+        "Type": "TArray<Struct SeasonGoalPopupAsset>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "RenownActionInfos",
-        "Type": "TArray<Struct DeedInfos>",
+        "Type": "TArray<Struct SeasonGoalPopupAsset>",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -151,7 +151,7 @@
     "Attributes": [
       {
         "Name": "DetailsNavigationDesc",
-        "Type": "TArray<Struct SeasonPopupListAsset>",
+        "Type": "TArray<Struct EnableMoreButtonEvent>",
         "Size": "0x10",
         "Offset": "0xe8"
       },

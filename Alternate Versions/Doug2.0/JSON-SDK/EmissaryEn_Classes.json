@@ -37,7 +37,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x180"
       },
@@ -111,7 +111,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x180"
       },
@@ -185,7 +185,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct /Game/Blueprints/GameObjects/Items/ItemDescs/TreasureChests/BP_>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x180"
       },
@@ -253,7 +253,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x188"
       },

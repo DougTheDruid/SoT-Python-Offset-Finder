@@ -97,7 +97,7 @@ public:
 class GameplayTagsSettings: public Object
 {
 public:
-	TArray<Str None>                                             GameplayTags;                                      // 0x28(0x10)
+	TArray<Str GameplayTags>                                     GameplayTags;                                      // 0x28(0x10)
 };
 
 

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x68
-class PrioritisedPromptWithHandle: public None
+struct PrioritisedPromptWithHandle
 {
 public:
 	Struct PrioritisedPromptHandle                               PromptHandle;                                      // 0x0(0x10)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x58
-class PrioritisedPrompt: public None
+struct PrioritisedPrompt
 {
 public:
 	Struct FText                                                 Message;                                           // 0x0(0x38)
@@ -28,7 +28,7 @@ public:
 
 
 // Size 0x10
-class PrioritisedPromptHandle: public None
+struct PrioritisedPromptHandle
 {
 public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
@@ -36,7 +36,7 @@ public:
 
 
 // Size 0x70
-class PromptEvaluation: public None
+struct PromptEvaluation
 {
 public:
 	byte                                                         PromptType;                                        // 0x0(0x1)
@@ -45,7 +45,7 @@ public:
 
 
 // Size 0x80
-class PermanentPromptNetworkEvent: public None
+struct PermanentPromptNetworkEvent
 {
 public:
 	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x10(0x68)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0x8
-class PromptsCounterIncrementEvent: public None
+struct PromptsCounterIncrementEvent
 {
 public:
 	class                                                        AccessKey;                                         // 0x0(0x8)
@@ -62,7 +62,7 @@ public:
 
 
 // Size 0x20
-class PlayerPromptTelemetryEvent: public None
+struct PlayerPromptTelemetryEvent
 {
 public:
 	Struct FString                                               Message;                                           // 0x0(0x10)

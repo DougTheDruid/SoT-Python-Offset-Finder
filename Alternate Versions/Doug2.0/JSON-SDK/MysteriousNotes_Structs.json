@@ -238,7 +238,7 @@
     "Attributes": [
       {
         "Name": "NotesRemoteServiceNoteModels",
-        "Type": "TArray<Struct MysteriousNoteRequest>",
+        "Type": "TArray<Struct NotesRemoteServiceNoteModel>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -250,7 +250,7 @@
       },
       {
         "Name": "PendingDetailRequestIDs",
-        "Type": "TArray<Struct PendingCompletionEntries>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -267,7 +267,7 @@
       },
       {
         "Name": "CompletionEventIds",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str CompletionEventIds>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -330,7 +330,7 @@
       },
       {
         "Name": "PendingNotes",
-        "Type": "TArray<Struct NotifyArrival>",
+        "Type": "TArray<Struct MysteriousNoteInfo>",
         "Size": "0x10",
         "Offset": "0x8"
       }

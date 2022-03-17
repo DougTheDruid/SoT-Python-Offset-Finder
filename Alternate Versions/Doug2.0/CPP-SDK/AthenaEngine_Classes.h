@@ -169,7 +169,7 @@ public:
 class StringToAssetClassMap: public DataAsset
 {
 public:
-	TArray<Struct ClosestActorToPoint>                           StringAssetClassPairs;                             // 0x28(0x10)
+	TArray<Struct StringAssetClassPair>                          StringAssetClassPairs;                             // 0x28(0x10)
 };
 
 

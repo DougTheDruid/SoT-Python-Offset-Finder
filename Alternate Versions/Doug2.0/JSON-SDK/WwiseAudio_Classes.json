@@ -144,7 +144,7 @@
       },
       {
         "Name": "PersistentSoundBanks",
-        "Type": "TArray<Struct BinkSettings>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x188"
       },
@@ -174,7 +174,7 @@
       },
       {
         "Name": "AsyncIOPriorityMappings",
-        "Type": "TArray<Struct WwiseStreamedFilesDirectory>",
+        "Type": "TArray<Struct WwiseIOPriorityMappingConfig>",
         "Size": "0x10",
         "Offset": "0x1d8"
       },
@@ -350,7 +350,7 @@
     "Attributes": [
       {
         "Name": "DDSArgumentsGroupsIDs",
-        "Type": "TArray<UInt32 None>",
+        "Type": "TArray<UInt32 DDSArgumentsGroupsIDs>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -364,7 +364,7 @@
     "Attributes": [
       {
         "Name": "StateGroupIDs",
-        "Type": "TArray<UInt32 None>",
+        "Type": "TArray<UInt32 StateGroupIDs>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -376,7 +376,7 @@
       },
       {
         "Name": "StateValueIDs",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 StateValueIDs>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -388,7 +388,7 @@
       },
       {
         "Name": "SwitchGroupIDs",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 SwitchGroupIDs>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -400,7 +400,7 @@
       },
       {
         "Name": "SwitchStateIDs",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 SwitchStateIDs>",
         "Size": "0x10",
         "Offset": "0x88"
       },

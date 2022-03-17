@@ -193,13 +193,13 @@
     "Attributes": [
       {
         "Name": "FeedbackActions",
-        "Type": "TArray<Struct TreeBlendTime>",
+        "Type": "TArray<Struct VisualFeedbackList>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "CurrentStates",
-        "Type": "TArray<Byte FeedbackActions>",
+        "Type": "TArray<Byte CurrentStates>",
         "Size": "0x10",
         "Offset": "0xe8"
       }

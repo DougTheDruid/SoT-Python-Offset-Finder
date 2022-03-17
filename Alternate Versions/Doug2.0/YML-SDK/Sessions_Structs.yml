@@ -19,7 +19,7 @@ CrewSessionCreatedTelemetryEvent:
   - Name: QoSTelemetry
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct CrewTrackedItemOwnershipSet>
+    Type: TArray<Struct CrewSessionQoSMeasurementTelemetry>
   ClassSize: '0x60'
 CrewSessionJoinedTelemetryEvent:
   Attributes:
@@ -68,7 +68,7 @@ CrewSessionMatchmakingEndedTelemetryEvent:
   - Name: CrewSegmentValues
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int CrewSegmentValues>
   - Name: CurrentCrewCount
     Offset: '0x90'
     Size: '0x4'
@@ -114,7 +114,7 @@ CrewSessionMatchmakingStartedTelemetryEvent:
   - Name: CrewSegmentValues
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int CrewSegmentValues>
   - Name: CurrentCrewCount
     Offset: '0x60'
     Size: '0x4'

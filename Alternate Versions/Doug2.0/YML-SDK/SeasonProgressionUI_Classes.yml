@@ -9,19 +9,19 @@ SeasonPopupAsset:
   - Name: TierInfos
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct ThemeId>
+    Type: TArray<Struct SeasonIconPopupAsset>
   - Name: TrialInfos
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct TierInfos>
+    Type: TArray<Struct SeasonGoalPopupAsset>
   - Name: DeedInfos
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct TrialInfos>
+    Type: TArray<Struct SeasonGoalPopupAsset>
   - Name: RenownActionInfos
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct DeedInfos>
+    Type: TArray<Struct SeasonGoalPopupAsset>
   - Name: SeasonInfo
     Offset: '0x70'
     Size: '0x68'
@@ -93,7 +93,7 @@ SeasonProgressionUIComponent:
   - Name: DetailsNavigationDesc
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Struct SeasonPopupListAsset>
+    Type: TArray<Struct EnableMoreButtonEvent>
   - Name: NextReceivedEventsTelemetryData
     Offset: '0xf8'
     Size: '0x18'

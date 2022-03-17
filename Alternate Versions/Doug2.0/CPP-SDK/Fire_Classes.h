@@ -109,7 +109,7 @@ public:
 class FireGridCellSelectionParamsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct SetAllCellsState>                              FireGridCellSelectionParams;                       // 0x28(0x10)
+	TArray<Struct FireGridCellSelectionParams>                   FireGridCellSelectionParams;                       // 0x28(0x10)
 };
 
 
@@ -173,16 +173,16 @@ class FireGridVFXManager: public Object
 {
 public:
 	Class FireGridVFXParamsDataAsset*                            VFXParams;                                         // 0x28(0x8)
-	TArray<Struct SpawnedParticleSystemsForTemplates>            SpawnedCustomParticleSystemsForCells;              // 0x80(0x10)
+	TArray<Struct FireParticleSystem>                            SpawnedCustomParticleSystemsForCells;              // 0x80(0x10)
 	Class ParticleSystemComponent*                               SpawnedExteriorSmokeParticleSystem;                // 0x130(0x8)
 	Class ParticleSystemComponent*                               SpawnedLowDetailParticleSystem;                    // 0x138(0x8)
-	TArray<Struct SpawnedLowDetailParticleSystem>                DespawningMeshes;                                  // 0x140(0x10)
-	TArray<Struct DespawningMeshes>                              InteriorSmokeSpawnDescs;                           // 0x150(0x10)
-	TArray<Struct InteriorSmokeSpawnDescs>                       LowDetailVFXSpawnDescs;                            // 0x160(0x10)
-	TArray<Struct LowDetailVFXSpawnDescs>                        ParticleSpawnLODSettings;                          // 0x170(0x10)
-	TArray<Struct ParticleSpawnLODSettings>                      ExteriorSmokeVFXSpawnDescs;                        // 0x180(0x10)
-	TArray<Struct ExteriorSmokeVFXSpawnDescs>                    VFXToSpawn;                                        // 0x190(0x10)
-	TArray<Struct VFXToSpawn>                                    InterleavedSpawnLists;                             // 0x1a8(0x10)
+	TArray<Struct FireMesh>                                      DespawningMeshes;                                  // 0x140(0x10)
+	TArray<Struct FireGridRelativeSpawnDesc>                     InteriorSmokeSpawnDescs;                           // 0x150(0x10)
+	TArray<Struct FireGridLowDetailRelativeSpawnDesc>            LowDetailVFXSpawnDescs;                            // 0x160(0x10)
+	TArray<Struct FireParticleSpawnData>                         ParticleSpawnLODSettings;                          // 0x170(0x10)
+	TArray<Struct FireGridLowDetailRelativeSpawnDesc>            ExteriorSmokeVFXSpawnDescs;                        // 0x180(0x10)
+	TArray<Struct FireDefaultVFXSpawnData>                       VFXToSpawn;                                        // 0x190(0x10)
+	TArray<Struct FireParticleSpawnList>                         InterleavedSpawnLists;                             // 0x1a8(0x10)
 	Class FirePropagator*                                        Propagator;                                        // 0x1b8(0x8)
 };
 
@@ -231,13 +231,13 @@ public:
 	Struct Vector                                                GridOffset;                                        // 0xf8(0xc)
 	Class FirePropagator*                                        Propagator;                                        // 0x108(0x8)
 	Class ShipFireDamageParamsDataAsset*                         FireDamageDataAsset;                               // 0x110(0x8)
-	TArray<Struct FireDamageDataAsset>                           FireCellDescs;                                     // 0x118(0x10)
+	TArray<Struct FireCellDesc>                                  FireCellDescs;                                     // 0x118(0x10)
 	Struct Status                                                BurnStatus;                                        // 0x138(0x18)
 	Class FireGridVFXManager*                                    VFXManager;                                        // 0x150(0x8)
 	Struct FireGridVfxSpawnSettings                              VfxSpawnSettings;                                  // 0x158(0x58)
 	Struct ShipFireLightManager                                  FireLightManager;                                  // 0x1b0(0x150)
 	Struct FireGridCharringManager                               FireCharringManager;                               // 0x300(0xc8)
-	TArray<Struct FireCharringManager>                           ReplicatedCellData;                                // 0x3c8(0x10)
+	TArray<Struct ReplicatedFireCellData>                        ReplicatedCellData;                                // 0x3c8(0x10)
 	Struct ReplicatedFireCellCharringData                        ReplicatedCellCharringData;                        // 0x3d8(0x18)
 	Class FireGridAudioManager*                                  FireAudioManager;                                  // 0x3f0(0x8)
 	Struct FireCellAudioParams                                   FireAudioParams;                                   // 0x3f8(0x40)

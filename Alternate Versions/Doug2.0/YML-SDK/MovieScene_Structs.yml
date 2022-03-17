@@ -61,7 +61,7 @@ MovieSceneEvaluationField:
   - Name: Ranges
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct MovieSceneEvalTemplateBase>
+    Type: TArray<Struct FloatRange>
   - Name: Groups
     Offset: '0x10'
     Size: '0x10'
@@ -124,7 +124,7 @@ MovieSceneEvaluationMetaData:
   - Name: ActiveSequences
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct Groups>
+    Type: TArray<Struct MovieSceneSequenceID>
   ClassSize: '0x10'
 MovieSceneEvaluationTemplate:
   Attributes:
@@ -162,11 +162,11 @@ MovieSceneEvaluationTrack:
   - Name: Segments
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct EvaluationMethod>
+    Type: TArray<Struct MovieSceneSegment>
   - Name: ChildTemplates
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Segments>
+    Type: TArray<Struct MovieSceneEvalTemplatePtr>
   - Name: TrackTemplate
     Offset: '0x38'
     Size: '0x38'
@@ -297,7 +297,7 @@ MovieSceneSequenceHierarchyNode:
   - Name: Children
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ParentID>
+    Type: TArray<Struct MovieSceneSequenceID>
   ClassSize: '0x18'
 MovieSceneSequenceID:
   Attributes: []
@@ -353,7 +353,7 @@ MovieSceneSpawnable:
   - Name: ChildPossessables
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ObjectTemplate>
+    Type: TArray<Struct Guid>
   - Name: Ownership
     Offset: '0x38'
     Size: '0x1'
@@ -418,7 +418,7 @@ MovieSceneTrackLabels:
   - Name: Strings
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Strings>
   ClassSize: '0x10'
 SectionEvaluationData:
   Attributes:

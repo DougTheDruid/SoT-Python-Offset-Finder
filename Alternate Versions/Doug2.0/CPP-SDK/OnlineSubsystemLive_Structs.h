@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x48
-class UpdateAchievementsXblRequestModel: public None
+struct UpdateAchievementsXblRequestModel
 {
 public:
 	TArray<Struct AchievementProgressXblRequestModel>            Achievements;                                      // 0x0(0x10)
@@ -18,7 +18,7 @@ public:
 
 
 // Size 0x18
-class AchievementProgressXblRequestModel: public None
+struct AchievementProgressXblRequestModel
 {
 public:
 	Struct FString                                               Id;                                                // 0x0(0x10)

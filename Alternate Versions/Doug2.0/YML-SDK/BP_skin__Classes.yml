@@ -102,9 +102,3 @@ BP_skin_col_white_05_Desc_C:
   FullSize: '0xe0'
   InheritedSize: '0xe0'
   Super: ClothingDesc
-BP_skin_col_white_06_Desc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
-  Super: ClothingDesc

@@ -22,13 +22,13 @@
       },
       {
         "Name": "IntArray",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int IntArray>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "StructArray",
-        "Type": "TArray<Struct IntArray>",
+        "Type": "TArray<Struct SerialisedNestedStruct>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -51,7 +51,7 @@
       },
       {
         "Name": "IntArray",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int IntArray>",
         "Size": "0x10",
         "Offset": "0x10"
       },

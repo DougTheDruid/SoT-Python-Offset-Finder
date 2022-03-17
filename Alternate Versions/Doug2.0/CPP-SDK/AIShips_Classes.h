@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AIShipBattlesDataAsset: public DataAsset
 {
 public:
-	TArray<Struct TrackingNoiseGenerator>                        Battles;                                           // 0x28(0x10)
+	TArray<Struct AIShipBattleParams>                            Battles;                                           // 0x28(0x10)
 	TArray<Struct FText>                                         SkellyCrewNames;                                   // 0x38(0x10)
 	Struct FText                                                 EncounterCompleteText;                             // 0x48(0x38)
 };
@@ -74,7 +74,7 @@ public:
 	int                                                          NumIslandsToVisitBeforeReturning;                  // 0x430(0x4)
 	float                                                        DistanceFromIslandsToSailTo;                       // 0x434(0x4)
 	float                                                        DistanceToTargetToDropAnchor;                      // 0x438(0x4)
-	TArray<Class DistanceToTargetToDropAnchor>                   AggressionOverrideImpactIDs;                       // 0x440(0x10)
+	TArray<Class AggressionOverrideImpactIDs>                    AggressionOverrideImpactIDs;                       // 0x440(0x10)
 };
 
 
@@ -86,7 +86,7 @@ public:
 	byte                                                         EncounterType;                                     // 0x29(0x1)
 	Class ShipDescAsset*                                         ShipDesc;                                          // 0x30(0x8)
 	Class AthenaAIShipControllerParamsDataAsset*                 ControllerParams;                                  // 0x38(0x8)
-	TArray<Struct ControllerParams>                              Spawners;                                          // 0x40(0x10)
+	TArray<Struct AIShipEncounterParamsSpawnerData>              Spawners;                                          // 0x40(0x10)
 	Struct AIShipContextDescDamageParams                         DamageParams;                                      // 0x50(0x14)
 	Struct AIShipSailData                                        SailsCustomisation;                                // 0x64(0x10)
 	Struct Color                                                 SailColour;                                        // 0x74(0x4)
@@ -216,7 +216,7 @@ public:
 	bool                                                         EnableMaximumEncounterDuration;                    // 0x40(0x1)
 	int                                                          MaximumEncounterDuration;                          // 0x44(0x4)
 	byte                                                         EncounterType;                                     // 0x48(0x1)
-	TArray<Struct EncounterType>                                 Waves;                                             // 0x50(0x10)
+	TArray<Struct AIShipEncounterWave>                           Waves;                                             // 0x50(0x10)
 };
 
 
@@ -351,7 +351,7 @@ public:
 class CursedSailsCampaignDataAsset: public DataAsset
 {
 public:
-	TArray<Struct EncounterType>                                 Battles;                                           // 0x28(0x10)
+	TArray<Struct CursedSailsBattleParams>                       Battles;                                           // 0x28(0x10)
 };
 
 

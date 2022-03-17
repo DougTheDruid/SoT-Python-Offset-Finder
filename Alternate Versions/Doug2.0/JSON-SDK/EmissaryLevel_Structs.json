@@ -174,19 +174,19 @@
       },
       {
         "Name": "StatsToFireOnFullEmissaryClothing",
-        "Type": "TArray<Struct TimeSpentAtMaxRankStat>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "StatsToFireOnFullEmissaryShipCustomizations",
-        "Type": "TArray<Struct StatsToFireOnFullEmissaryClothing>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "StatsToFireOnFullShipCustomizationsAndClothing",
-        "Type": "TArray<Struct StatsToFireOnFullEmissaryShipCustomizations>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -197,13 +197,13 @@
     "Attributes": [
       {
         "Name": "CompanyCostumeCosmetics",
-        "Type": "TArray<Class EmissarySunkPopUpToastData>",
+        "Type": "TArray<Class CompanyCostumeCosmetics>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "CompanyShipCosmetics",
-        "Type": "TArray<Class CompanyCostumeCosmetics>",
+        "Type": "TArray<Class CompanyShipCosmetics>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -232,7 +232,7 @@
       },
       {
         "Name": "StatsToFireOnEmissaryLevelReached",
-        "Type": "TArray<Struct EmissaryDeactivationReward>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -373,7 +373,7 @@
       },
       {
         "Name": "Scales",
-        "Type": "TArray<Struct Company>",
+        "Type": "TArray<Struct EmissaryCompanyCampaignScale>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -401,13 +401,13 @@
     "Attributes": [
       {
         "Name": "OwnershipChangedRewards",
-        "Type": "TArray<Struct Company>",
+        "Type": "TArray<Struct EmissaryEventAward>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "PlacedOnShipRewards",
-        "Type": "TArray<Struct OwnershipChangedRewards>",
+        "Type": "TArray<Struct EmissaryEventAward>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -517,7 +517,7 @@
       },
       {
         "Name": "ValidEmissariesToKill",
-        "Type": "TArray<Class EmissaryLevelKillCountScaleFactors>",
+        "Type": "TArray<Class ValidEmissariesToKill>",
         "Size": "0x10",
         "Offset": "0x18"
       }

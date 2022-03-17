@@ -9,11 +9,11 @@ ConsoleSettings:
   - Name: ManualAutoCompleteList
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct MaxScrollbackSize>
+    Type: TArray<Struct AutoCompleteCommand>
   - Name: AutoCompleteMapPaths
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str AutoCompleteMapPaths>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'

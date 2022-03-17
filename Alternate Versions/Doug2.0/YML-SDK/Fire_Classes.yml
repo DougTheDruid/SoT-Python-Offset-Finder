@@ -85,7 +85,7 @@ FireGridCellSelectionParamsDataAsset:
   - Name: FireGridCellSelectionParams
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct SetAllCellsState>
+    Type: TArray<Struct FireGridCellSelectionParams>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -111,7 +111,7 @@ FireGridVFXManager:
   - Name: SpawnedCustomParticleSystemsForCells
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct SpawnedParticleSystemsForTemplates>
+    Type: TArray<Struct FireParticleSystem>
   - Name: SpawnedExteriorSmokeParticleSystem
     Offset: '0x130'
     Size: '0x8'
@@ -123,31 +123,31 @@ FireGridVFXManager:
   - Name: DespawningMeshes
     Offset: '0x140'
     Size: '0x10'
-    Type: TArray<Struct SpawnedLowDetailParticleSystem>
+    Type: TArray<Struct FireMesh>
   - Name: InteriorSmokeSpawnDescs
     Offset: '0x150'
     Size: '0x10'
-    Type: TArray<Struct DespawningMeshes>
+    Type: TArray<Struct FireGridRelativeSpawnDesc>
   - Name: LowDetailVFXSpawnDescs
     Offset: '0x160'
     Size: '0x10'
-    Type: TArray<Struct InteriorSmokeSpawnDescs>
+    Type: TArray<Struct FireGridLowDetailRelativeSpawnDesc>
   - Name: ParticleSpawnLODSettings
     Offset: '0x170'
     Size: '0x10'
-    Type: TArray<Struct LowDetailVFXSpawnDescs>
+    Type: TArray<Struct FireParticleSpawnData>
   - Name: ExteriorSmokeVFXSpawnDescs
     Offset: '0x180'
     Size: '0x10'
-    Type: TArray<Struct ParticleSpawnLODSettings>
+    Type: TArray<Struct FireGridLowDetailRelativeSpawnDesc>
   - Name: VFXToSpawn
     Offset: '0x190'
     Size: '0x10'
-    Type: TArray<Struct ExteriorSmokeVFXSpawnDescs>
+    Type: TArray<Struct FireDefaultVFXSpawnData>
   - Name: InterleavedSpawnLists
     Offset: '0x1a8'
     Size: '0x10'
-    Type: TArray<Struct VFXToSpawn>
+    Type: TArray<Struct FireParticleSpawnList>
   - Name: Propagator
     Offset: '0x1b8'
     Size: '0x8'
@@ -287,7 +287,7 @@ ShipFirePropagationComponent:
   - Name: FireCellDescs
     Offset: '0x118'
     Size: '0x10'
-    Type: TArray<Struct FireDamageDataAsset>
+    Type: TArray<Struct FireCellDesc>
   - Name: BurnStatus
     Offset: '0x138'
     Size: '0x18'
@@ -311,7 +311,7 @@ ShipFirePropagationComponent:
   - Name: ReplicatedCellData
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<Struct FireCharringManager>
+    Type: TArray<Struct ReplicatedFireCellData>
   - Name: ReplicatedCellCharringData
     Offset: '0x3d8'
     Size: '0x18'

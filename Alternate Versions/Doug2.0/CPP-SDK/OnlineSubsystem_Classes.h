@@ -20,8 +20,8 @@ public:
 class NamedInterfaces: public Object
 {
 public:
-	TArray<Struct OnMatchEnded>                                  NamedInterfaces;                                   // 0x28(0x10)
-	TArray<Struct NamedInterfaces>                               NamedInterfaceDefs;                                // 0x38(0x10)
+	TArray<Struct NamedInterface>                                NamedInterfaces;                                   // 0x28(0x10)
+	TArray<Struct NamedInterfaceDef>                             NamedInterfaceDefs;                                // 0x38(0x10)
 };
 
 

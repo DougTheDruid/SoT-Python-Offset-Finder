@@ -103,7 +103,7 @@
     "Attributes": [
       {
         "Name": "IslandTypes",
-        "Type": "TArray<Byte SelectionStrategy>",
+        "Type": "TArray<Byte IslandTypes>",
         "Size": "0x10",
         "Offset": "0x28"
       },

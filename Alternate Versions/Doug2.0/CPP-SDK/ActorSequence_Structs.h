@@ -7,16 +7,16 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class ActorSequenceObjectReferenceMap: public None
+struct ActorSequenceObjectReferenceMap
 {
 public:
-	TArray<Struct TestTextObject>                                BindingIds;                                        // 0x0(0x10)
+	TArray<Struct Guid>                                          BindingIds;                                        // 0x0(0x10)
 	TArray<Struct ActorSequenceObjectReferences>                 References;                                        // 0x10(0x10)
 };
 
 
 // Size 0x10
-class ActorSequenceObjectReferences: public None
+struct ActorSequenceObjectReferences
 {
 public:
 	TArray<Struct ActorSequenceObjectReference>                  Array;                                             // 0x0(0x10)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x28
-class ActorSequenceObjectReference: public None
+struct ActorSequenceObjectReference
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)

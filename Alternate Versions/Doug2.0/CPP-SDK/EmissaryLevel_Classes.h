@@ -18,9 +18,9 @@ class EmissaryActiveTableVisualiserComponent: public ActorComponent
 {
 public:
 	class                                                        TargetCompany;                                     // 0xc8(0x8)
-	TArray<Struct TargetCompany>                                 MaterialChanges;                                   // 0xd0(0x10)
-	TArray<Struct MaterialChanges>                               LightChanges;                                      // 0xf0(0x10)
-	TArray<Struct LightChanges>                                  ParticleChanges;                                   // 0x110(0x10)
+	TArray<Struct MaterialVisualisation>                         MaterialChanges;                                   // 0xd0(0x10)
+	TArray<Struct LightVisualisation>                            LightChanges;                                      // 0xf0(0x10)
+	TArray<Struct ParticleVisualisation>                         ParticleChanges;                                   // 0x110(0x10)
 };
 
 
@@ -66,7 +66,7 @@ public:
 class EmissaryLevelSettingsAsset: public DataAsset
 {
 public:
-	TArray<Struct RewardSettings>                                EmissaryLevelData;                                 // 0x28(0x10)
+	TArray<Struct EmissaryLevelEntry>                            EmissaryLevelData;                                 // 0x28(0x10)
 	Struct EmissaryPointBoostMultipliers                         BoostMultiplers;                                   // 0x38(0x8)
 	Struct EmissaryFlagMeshReferences                            DefaultEmissaryFlagAssetReferences;                // 0x40(0x20)
 };
@@ -103,7 +103,7 @@ public:
 	struct FName                                                 AffiliatedCompany;                                 // 0xd8(0x8)
 	bool                                                         IsAtMaxRank;                                       // 0xe0(0x1)
 	bool                                                         IsEmissaryMaxRankQuestBeenActivatedThisSession;    // 0xe1(0x1)
-	TArray<Struct IsEmissaryMaxRankQuestBeenActivatedThisSession> NoteCompletionIdents;                              // 0xe8(0x10)
+	TArray<Struct MysteriousNotesCompletionEventsModelEntry>     NoteCompletionIdents;                              // 0xe8(0x10)
 	struct FName                                                 VotedCompany;                                      // 0x108(0x8)
 };
 
@@ -119,7 +119,7 @@ public:
 class EmissaryRewardCampaignSettingsAsset: public DataAsset
 {
 public:
-	TArray<Struct CampaignSettings>                              Companies;                                         // 0x28(0x10)
+	TArray<Struct EmissaryCompanyCampaignSettings>               Companies;                                         // 0x28(0x10)
 };
 
 
@@ -127,7 +127,7 @@ public:
 class EmissaryRewardSettingsAsset: public DataAsset
 {
 public:
-	TArray<Struct OnRep_EmissaryCount>                           EmissaryRewardData;                                // 0x28(0x10)
+	TArray<Struct EmissaryRewardEntry>                           EmissaryRewardData;                                // 0x28(0x10)
 	float                                                        PlayerKilledExpiryTime;                            // 0x38(0x4)
 	Class EmissaryRewardCampaignSettingsAsset*                   CampaignSettings;                                  // 0x40(0x8)
 };
@@ -139,7 +139,7 @@ class EmissaryShipAffiliationTrackerComponent: public SceneComponent
 public:
 	int                                                          EmissaryCount;                                     // 0x2d0(0x4)
 	class                                                        TrackedCompany;                                    // 0x2d8(0x8)
-	TArray<Struct EmissaryRepresentationMesh>                    EmissaryRepresentationTransforms;                  // 0x300(0x10)
+	TArray<Struct Transform>                                     EmissaryRepresentationTransforms;                  // 0x300(0x10)
 	TArray<class EmissaryRepresentationMeshes*>                  EmissaryRepresentationMeshes;                      // 0x310(0x10)
 	class                                                        LoadedEmissaryRepresentationMesh;                  // 0x320(0x8)
 };
@@ -152,7 +152,7 @@ public:
 	Class EmissaryVoyageVoteValidatorBase*                       Validator;                                         // 0x30(0x8)
 	Struct FText                                                 VoyageCinematicHeader;                             // 0x80(0x38)
 	struct FName                                                 VoyageCinematicTag;                                // 0xb8(0x8)
-	TArray<Struct VoyageCinematicTag>                            Votes;                                             // 0xe0(0x10)
+	TArray<Struct CrewMemberVotes>                               Votes;                                             // 0xe0(0x10)
 	Class BoxedRpcDispatcherComponent*                           RpcDispatcher;                                     // 0xf0(0x8)
 	Class Actor*                                                 OwningActor;                                       // 0x118(0x8)
 };

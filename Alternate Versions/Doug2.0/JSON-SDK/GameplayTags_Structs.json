@@ -38,13 +38,13 @@
       },
       {
         "Name": "TagDictionary",
-        "Type": "TArray<Struct TokenStreamVersion>",
+        "Type": "TArray<Struct GameplayTag>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "QueryTokenStream",
-        "Type": "TArray<Byte TagDictionary>",
+        "Type": "TArray<Byte QueryTokenStream>",
         "Size": "0x10",
         "Offset": "0x18"
       },

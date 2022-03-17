@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class PerComanyItemQualityEntry: public None
+struct PerComanyItemQualityEntry
 {
 public:
 	class                                                        Company;                                           // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x18
-class PerComanyComplexItemQualityEntry: public None
+struct PerComanyComplexItemQualityEntry
 {
 public:
 	class                                                        Company;                                           // 0x0(0x8)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0x10
-class ComplexItemQualityEntry: public None
+struct ComplexItemQualityEntry
 {
 public:
 	byte                                                         OnTime;                                            // 0x0(0x1)

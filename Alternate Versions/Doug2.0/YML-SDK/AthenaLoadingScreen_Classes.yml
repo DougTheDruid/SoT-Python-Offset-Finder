@@ -83,7 +83,7 @@ SlateLoadingScreenParams:
   - Name: CyclingImages
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct PrimaryImage>
+    Type: TArray<Struct SlateLoadingScreenImageParams>
   - Name: MaxNumImagesPerLoad
     Offset: '0x90'
     Size: '0x4'

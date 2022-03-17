@@ -83,32 +83,4 @@ public:
 };
 
 
-// Size 0x0
-class MeshMemoryConstraintCategory_Scroll_C: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_Pouch_C: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_Crate_GoodsOneHanded_C: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_Bottle_C: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
 }

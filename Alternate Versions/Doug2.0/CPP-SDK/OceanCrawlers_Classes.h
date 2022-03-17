@@ -19,7 +19,7 @@ class OceanCrawlerAudioParamsDataAsset: public DataAsset
 {
 public:
 	Class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x28(0x8)
-	TArray<Struct WwiseObjectPoolWrapper>                        AudioKeyPairs;                                     // 0x30(0x10)
+	TArray<Struct OceanCrawlerAudioKeyPair>                      AudioKeyPairs;                                     // 0x30(0x10)
 	Struct WeightedProbabilityRangeOfRanges                      BuffThankDelay;                                    // 0x40(0x30)
 	Struct OceanCrawlerBuffAudioSettings                         CrabBuffAudioSettings;                             // 0x70(0x10)
 	Struct OceanCrawlerBuffAudioSettings                         EelBuffAudioSettings;                              // 0x80(0x10)

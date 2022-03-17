@@ -33,7 +33,7 @@ BP_Prompt_EmissaryLevelRankChange_C:
   - Name: Prompts
     Offset: '0x188'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: PromptAccessKey
     Offset: '0x198'
     Size: '0x8'

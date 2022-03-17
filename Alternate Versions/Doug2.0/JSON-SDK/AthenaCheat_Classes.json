@@ -19,7 +19,7 @@
       },
       {
         "Name": "CreatedWorldMarkers",
-        "Type": "TArray<Struct CinematicCameraControllerClass>",
+        "Type": "TArray<Struct WorldMarkerDesc>",
         "Size": "0x10",
         "Offset": "0xb0"
       },

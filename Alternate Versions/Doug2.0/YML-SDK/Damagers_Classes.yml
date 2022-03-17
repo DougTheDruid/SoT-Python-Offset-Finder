@@ -43,11 +43,11 @@ ShipDamagerComponent:
   - Name: ShipHulls
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Interface Shape>
+    Type: TArray<Interface ShipHulls>
   - Name: WatercraftHealthInterfaces
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Interface ShipHulls>
+    Type: TArray<Interface WatercraftHealthInterfaces>
   - Name: ShipStrainDamage
     Offset: '0xf8'
     Size: '0x28'
@@ -93,7 +93,7 @@ ShockwaveDamagerComponent:
   - Name: ShipDamageLevels
     Offset: '0x118'
     Size: '0x10'
-    Type: TArray<Struct ApplyDamageToShips>
+    Type: TArray<Struct ShockwaveDamagerShipDamage>
   - Name: DamagerType
     Offset: '0x128'
     Size: '0x8'
@@ -121,11 +121,11 @@ ShockwaveDamagerComponent:
   - Name: ProcessedShips
     Offset: '0x168'
     Size: '0x10'
-    Type: TArray<Weakclass OnShockwaveEnded>
+    Type: TArray<Weakclass ProcessedShips>
   - Name: ProcessedGhostShips
     Offset: '0x178'
     Size: '0x10'
-    Type: TArray<Weakclass ProcessedShips>
+    Type: TArray<Weakclass ProcessedGhostShips>
   ClassSize: '0x108'
   FullSize: '0x1d0'
   InheritedSize: '0xc8'

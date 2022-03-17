@@ -60,7 +60,7 @@ public:
 class CommodityEntitlementRedemptionAsset: public DataAsset
 {
 public:
-	TArray<Struct CommodityDemand>                               CommoditiesForRedemption;                          // 0x28(0x10)
+	TArray<Struct EntitlementToRedeemItems>                      CommoditiesForRedemption;                          // 0x28(0x10)
 };
 
 
@@ -124,7 +124,7 @@ public:
 class CommodityTypeDataAsset: public DataAsset
 {
 public:
-	TArray<Struct CommodityDemand>                               CommodityEntries;                                  // 0x28(0x10)
+	TArray<Struct CommodityTypeDataEntry>                        CommodityEntries;                                  // 0x28(0x10)
 };
 
 
@@ -161,7 +161,7 @@ public:
 class SpecificItemsCrateFillerComponent: public ActorComponent
 {
 public:
-	TArray<Struct CommodityDemand>                               ItemsToFillCrateWith;                              // 0xd0(0x10)
+	TArray<Struct StorageContainerNode>                          ItemsToFillCrateWith;                              // 0xd0(0x10)
 };
 
 

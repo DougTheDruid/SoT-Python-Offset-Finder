@@ -115,7 +115,7 @@ AshenLordVolcanoSetupDataAsset:
   - Name: Projectiles
     Offset: '0x138'
     Size: '0x10'
-    Type: TArray<Struct StartPositionOffsetInMetres>
+    Type: TArray<Struct WeightedAshenLordVolcanoProjectile>
   - Name: PoolableProjectilesConfig
     Offset: '0x148'
     Size: '0x18'
@@ -479,7 +479,7 @@ GeyserManagerSetupDataAsset:
   - Name: SpawnAngleRelativeToPlayerDirection
     Offset: '0x170'
     Size: '0x10'
-    Type: TArray<Struct SpawnRadiusInMetres>
+    Type: TArray<Struct GeyserSpawnAngleOption>
   - Name: DelayBetweenEachGeyserSpawningInAGroup
     Offset: '0x180'
     Size: '0x30'
@@ -617,7 +617,7 @@ SuperheatedWater:
   - Name: PlayersInZone
     Offset: '0x498'
     Size: '0x10'
-    Type: TArray<Weakclass FakeUnderwaterLocationsDistanceBetweenPointsInMetres>
+    Type: TArray<Weakclass PlayersInZone>
   ClassSize: '0x108'
   FullSize: '0x578'
   InheritedSize: '0x470'
@@ -873,11 +873,11 @@ VolcanoSetupDataAsset:
   - Name: Projectiles
     Offset: '0x2a8'
     Size: '0x10'
-    Type: TArray<Struct OuterWatercraftNearMissRadiusInMetres>
+    Type: TArray<Struct WeightedVolcanoProjectile>
   - Name: ForceFeedbackIgnitionEffect
     Offset: '0x2b8'
     Size: '0x10'
-    Type: TArray<Struct Projectiles>
+    Type: TArray<Struct LandmarkReactionEventPlayForceFeedbackEntry>
   - Name: LocalMiniProjectilesClass
     Offset: '0x2c8'
     Size: '0x8'
@@ -929,7 +929,7 @@ VolcanoSetupDataAsset:
   - Name: LocalEmbers
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct TimeBetweenLocalEmbers>
+    Type: TArray<Struct VolcanoSetupDataEmbersEntry>
   - Name: EmbersSpawnOffsetInMetres
     Offset: '0x438'
     Size: '0x4'

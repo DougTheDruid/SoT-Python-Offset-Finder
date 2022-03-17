@@ -203,7 +203,7 @@
       },
       {
         "Name": "MetaTags",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str MetaTags>",
         "Size": "0x10",
         "Offset": "0x80"
       }

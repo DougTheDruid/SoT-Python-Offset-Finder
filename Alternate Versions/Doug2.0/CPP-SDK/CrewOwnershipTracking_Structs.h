@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class CrewTrackedItemOwnershipSet: public None
+struct CrewTrackedItemOwnershipSet
 {
 public:
 	Class Actor*                                                 Item;                                              // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x30
-class CrewTrackedItemOwnershipChanged: public None
+struct CrewTrackedItemOwnershipChanged
 {
 public:
 	Class Actor*                                                 Item;                                              // 0x0(0x8)
@@ -27,15 +27,15 @@ public:
 
 
 // Size 0x10
-class OwnerListEntry: public None
+struct OwnerListEntry
 {
 public:
-	TArray<Struct TrackItemOwnershipEvent>                       OwnerList;                                         // 0x0(0x10)
+	TArray<Struct Guid>                                          OwnerList;                                         // 0x0(0x10)
 };
 
 
 // Size 0x18
-class TrackItemOwnershipEvent: public None
+struct TrackItemOwnershipEvent
 {
 public:
 	Class Actor*                                                 TrackedItem;                                       // 0x0(0x8)

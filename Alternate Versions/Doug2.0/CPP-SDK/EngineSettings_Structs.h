@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class AutoCompleteCommand: public None
+struct AutoCompleteCommand
 {
 public:
 	Struct FString                                               Command;                                           // 0x0(0x10)

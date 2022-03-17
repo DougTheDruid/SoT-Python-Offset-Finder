@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x28
-class PlayerEnteredWorldLocationNotificationEvent: public None
+struct PlayerEnteredWorldLocationNotificationEvent
 {
 public:
 	Class PopUpAudioDesc*                                        AudioOverride;                                     // 0x0(0x8)

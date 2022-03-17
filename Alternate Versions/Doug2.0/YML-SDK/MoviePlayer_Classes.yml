@@ -13,7 +13,7 @@ MoviePlayerSettings:
   - Name: StartupMovies
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str StartupMovies>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'

@@ -42,7 +42,7 @@
     "Attributes": [
       {
         "Name": "NotificationInputDisplayNames",
-        "Type": "TArray<Struct PushCharacterIntoDeadActionState>",
+        "Type": "TArray<Struct NotificationInputDisplayName>",
         "Size": "0x10",
         "Offset": "0xd0"
       }

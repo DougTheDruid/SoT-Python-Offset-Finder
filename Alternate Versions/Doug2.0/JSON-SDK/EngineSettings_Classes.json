@@ -13,13 +13,13 @@
       },
       {
         "Name": "ManualAutoCompleteList",
-        "Type": "TArray<Struct MaxScrollbackSize>",
+        "Type": "TArray<Struct AutoCompleteCommand>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "AutoCompleteMapPaths",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str AutoCompleteMapPaths>",
         "Size": "0x10",
         "Offset": "0x40"
       }

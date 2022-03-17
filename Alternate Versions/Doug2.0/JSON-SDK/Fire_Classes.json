@@ -150,7 +150,7 @@
     "Attributes": [
       {
         "Name": "FireGridCellSelectionParams",
-        "Type": "TArray<Struct SetAllCellsState>",
+        "Type": "TArray<Struct FireGridCellSelectionParams>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -259,7 +259,7 @@
       },
       {
         "Name": "SpawnedCustomParticleSystemsForCells",
-        "Type": "TArray<Struct SpawnedParticleSystemsForTemplates>",
+        "Type": "TArray<Struct FireParticleSystem>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -277,43 +277,43 @@
       },
       {
         "Name": "DespawningMeshes",
-        "Type": "TArray<Struct SpawnedLowDetailParticleSystem>",
+        "Type": "TArray<Struct FireMesh>",
         "Size": "0x10",
         "Offset": "0x140"
       },
       {
         "Name": "InteriorSmokeSpawnDescs",
-        "Type": "TArray<Struct DespawningMeshes>",
+        "Type": "TArray<Struct FireGridRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x150"
       },
       {
         "Name": "LowDetailVFXSpawnDescs",
-        "Type": "TArray<Struct InteriorSmokeSpawnDescs>",
+        "Type": "TArray<Struct FireGridLowDetailRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x160"
       },
       {
         "Name": "ParticleSpawnLODSettings",
-        "Type": "TArray<Struct LowDetailVFXSpawnDescs>",
+        "Type": "TArray<Struct FireParticleSpawnData>",
         "Size": "0x10",
         "Offset": "0x170"
       },
       {
         "Name": "ExteriorSmokeVFXSpawnDescs",
-        "Type": "TArray<Struct ParticleSpawnLODSettings>",
+        "Type": "TArray<Struct FireGridLowDetailRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x180"
       },
       {
         "Name": "VFXToSpawn",
-        "Type": "TArray<Struct ExteriorSmokeVFXSpawnDescs>",
+        "Type": "TArray<Struct FireDefaultVFXSpawnData>",
         "Size": "0x10",
         "Offset": "0x190"
       },
       {
         "Name": "InterleavedSpawnLists",
-        "Type": "TArray<Struct VFXToSpawn>",
+        "Type": "TArray<Struct FireParticleSpawnList>",
         "Size": "0x10",
         "Offset": "0x1a8"
       },
@@ -437,7 +437,7 @@
       },
       {
         "Name": "FireCellDescs",
-        "Type": "TArray<Struct FireDamageDataAsset>",
+        "Type": "TArray<Struct FireCellDesc>",
         "Size": "0x10",
         "Offset": "0x118"
       },
@@ -473,7 +473,7 @@
       },
       {
         "Name": "ReplicatedCellData",
-        "Type": "TArray<Struct FireCharringManager>",
+        "Type": "TArray<Struct ReplicatedFireCellData>",
         "Size": "0x10",
         "Offset": "0x3c8"
       },

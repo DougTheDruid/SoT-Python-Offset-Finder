@@ -190,11 +190,11 @@ CompositeSubFont:
   - Name: CharacterRanges
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct Typeface>
+    Type: TArray<Struct Int32Range>
   - Name: Languages
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Byte CharacterRanges>
+    Type: TArray<Byte Languages>
   - Name: ScalingFactor
     Offset: '0x30'
     Size: '0x4'
@@ -355,7 +355,7 @@ FontData:
   - Name: FontData
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Byte Hinting>
+    Type: TArray<Byte FontData>
   ClassSize: '0x30'
 Geometry:
   Attributes: []

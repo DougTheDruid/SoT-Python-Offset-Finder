@@ -169,7 +169,7 @@ public:
 class MeleeAIAbilityParams: public AthenaAIAbilityParams
 {
 public:
-	TArray<Struct AngleChecker>                                  MeleeAttacks;                                      // 0xc8(0x10)
+	TArray<Struct MeleeAttackIdWeights>                          MeleeAttacks;                                      // 0xc8(0x10)
 };
 
 

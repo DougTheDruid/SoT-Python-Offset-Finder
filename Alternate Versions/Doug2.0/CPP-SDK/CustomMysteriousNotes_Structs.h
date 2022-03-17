@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x14
-class DestroyMysteriousNoteData: public None
+struct DestroyMysteriousNoteData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x38
-class CreateMysteriousNoteData: public None
+struct CreateMysteriousNoteData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -27,10 +27,10 @@ public:
 
 
 // Size 0x10
-class CustomPlayerNoteList: public None
+struct CustomPlayerNoteList
 {
 public:
-	TArray<Struct EnchantedCompassTarget>                        Notes;                                             // 0x0(0x10)
+	TArray<Struct NotesRemoteServiceNoteDetailModel>             Notes;                                             // 0x0(0x10)
 };
 
 

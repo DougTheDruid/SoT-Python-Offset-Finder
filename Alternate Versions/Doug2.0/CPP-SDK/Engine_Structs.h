@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x28
-class DistributionLookupTable: public None
+struct DistributionLookupTable
 {
 public:
 	byte                                                         Op;                                                // 0x0(0x1)
@@ -16,13 +16,13 @@ public:
 	byte                                                         SubEntryStride;                                    // 0x3(0x1)
 	float                                                        TimeScale;                                         // 0x4(0x4)
 	float                                                        TimeBias;                                          // 0x8(0x4)
-	TArray<Float >                                               Values;                                            // 0x10(0x10)
+	TArray<Float Values>                                         Values;                                            // 0x10(0x10)
 	byte                                                         LockFlag;                                          // 0x20(0x1)
 };
 
 
 // Size 0x28
-class RawDistribution: public None
+struct RawDistribution
 {
 public:
 	Struct DistributionLookupTable                               Table;                                             // 0x0(0x28)
@@ -30,7 +30,7 @@ public:
 
 
 // Size 0x28
-class FloatDistribution: public None
+struct FloatDistribution
 {
 public:
 	Struct DistributionLookupTable                               Table;                                             // 0x0(0x28)
@@ -38,7 +38,7 @@ public:
 
 
 // Size 0x28
-class VectorDistribution: public None
+struct VectorDistribution
 {
 public:
 	Struct DistributionLookupTable                               Table;                                             // 0x0(0x28)
@@ -46,7 +46,7 @@ public:
 
 
 // Size 0x28
-class Vector4Distribution: public None
+struct Vector4Distribution
 {
 public:
 	Struct DistributionLookupTable                               Table;                                             // 0x0(0x28)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0x38
-class ExpressionInput: public None
+struct ExpressionInput
 {
 public:
 	Class MaterialExpression*                                    Expression;                                        // 0x0(0x8)
@@ -70,14 +70,14 @@ public:
 
 
 // Size 0x38
-class MaterialAttributesInput: public None
+struct MaterialAttributesInput
 {
 public:
 };
 
 
 // Size 0x28
-class ExpressionOutput: public None
+struct ExpressionOutput
 {
 public:
 	Struct FString                                               OutputName;                                        // 0x0(0x10)
@@ -90,7 +90,7 @@ public:
 
 
 // Size 0x38
-class MaterialInput: public None
+struct MaterialInput
 {
 public:
 	Class MaterialExpression*                                    Expression;                                        // 0x0(0x8)
@@ -106,7 +106,7 @@ public:
 
 
 // Size 0x40
-class ColorMaterialInput: public None
+struct ColorMaterialInput
 {
 public:
 	bool                                                         UseConstant;                                       // 0x38(0x1)
@@ -115,7 +115,7 @@ public:
 
 
 // Size 0x40
-class ScalarMaterialInput: public None
+struct ScalarMaterialInput
 {
 public:
 	bool                                                         UseConstant;                                       // 0x38(0x1)
@@ -124,7 +124,7 @@ public:
 
 
 // Size 0x48
-class VectorMaterialInput: public None
+struct VectorMaterialInput
 {
 public:
 	bool                                                         UseConstant;                                       // 0x38(0x1)
@@ -133,7 +133,7 @@ public:
 
 
 // Size 0x48
-class Vector2MaterialInput: public None
+struct Vector2MaterialInput
 {
 public:
 	bool                                                         UseConstant;                                       // 0x38(0x1)
@@ -143,7 +143,7 @@ public:
 
 
 // Size 0x80
-class HitResult: public None
+struct HitResult
 {
 public:
 	bool                                                         bBlockingHit;                                      // 0x0(0x1)
@@ -164,21 +164,21 @@ public:
 
 
 // Size 0xc
-class Vector_NetQuantize: public None
+struct Vector_NetQuantize
 {
 public:
 };
 
 
 // Size 0xc
-class Vector_NetQuantizeNormal: public None
+struct Vector_NetQuantizeNormal
 {
 public:
 };
 
 
 // Size 0x8
-class ActorPtr: public None
+struct ActorPtr
 {
 public:
 	Class Actor*                                                 Actor;                                             // 0x0(0x8)
@@ -186,7 +186,7 @@ public:
 
 
 // Size 0x48
-class RepAttachment: public None
+struct RepAttachment
 {
 public:
 	Class Actor*                                                 AttachParent;                                      // 0x0(0x8)
@@ -199,14 +199,14 @@ public:
 
 
 // Size 0xc
-class Vector_NetQuantize100: public None
+struct Vector_NetQuantize100
 {
 public:
 };
 
 
 // Size 0x38
-class RepMovement: public None
+struct RepMovement
 {
 public:
 	Struct Vector                                                LinearVelocity;                                    // 0x0(0xc)
@@ -222,14 +222,14 @@ public:
 
 
 // Size 0x50
-class ActorTickFunction: public None
+struct ActorTickFunction
 {
 public:
 };
 
 
 // Size 0x48
-class TickFunction: public None
+struct TickFunction
 {
 public:
 	byte                                                         TickGroup;                                         // 0x30(0x1)
@@ -242,7 +242,7 @@ public:
 
 
 // Size 0x20
-class SimpleMemberReference: public None
+struct SimpleMemberReference
 {
 public:
 	Class Object*                                                MemberParent;                                      // 0x0(0x8)
@@ -252,14 +252,14 @@ public:
 
 
 // Size 0x50
-class ActorComponentTickFunction: public None
+struct ActorComponentTickFunction
 {
 public:
 };
 
 
 // Size 0x40
-class SubtitleCue: public None
+struct SubtitleCue
 {
 public:
 	Struct FText                                                 Text;                                              // 0x0(0x38)
@@ -268,7 +268,7 @@ public:
 
 
 // Size 0x1c
-class InterpControlPoint: public None
+struct InterpControlPoint
 {
 public:
 	Struct Vector                                                PositionControlPoint;                              // 0x0(0xc)
@@ -277,7 +277,7 @@ public:
 
 
 // Size 0x38
-class PlatformInterfaceDelegateResult: public None
+struct PlatformInterfaceDelegateResult
 {
 public:
 	bool                                                         bSuccessful;                                       // 0x0(0x1)
@@ -286,7 +286,7 @@ public:
 
 
 // Size 0x30
-class PlatformInterfaceData: public None
+struct PlatformInterfaceData
 {
 public:
 	struct FName                                                 DataName;                                          // 0x0(0x8)
@@ -299,10 +299,10 @@ public:
 
 
 // Size 0x20
-class DebugFloatHistory: public None
+struct DebugFloatHistory
 {
 public:
-	TArray<Float >                                               Samples;                                           // 0x0(0x10)
+	TArray<Float Samples>                                        Samples;                                           // 0x0(0x10)
 	float                                                        MaxSamples;                                        // 0x10(0x4)
 	float                                                        MinValue;                                          // 0x14(0x4)
 	float                                                        MaxValue;                                          // 0x18(0x4)
@@ -311,7 +311,7 @@ public:
 
 
 // Size 0x18
-class LatentActionInfo: public None
+struct LatentActionInfo
 {
 public:
 	int                                                          Linkage;                                           // 0x0(0x4)
@@ -322,14 +322,14 @@ public:
 
 
 // Size 0x4
-class TimerHandle: public None
+struct TimerHandle
 {
 public:
 };
 
 
 // Size 0x8
-class CollisionProfileName: public None
+struct CollisionProfileName
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -337,7 +337,7 @@ public:
 
 
 // Size 0x4
-class GenericStruct: public None
+struct GenericStruct
 {
 public:
 	int                                                          Data;                                              // 0x0(0x4)
@@ -345,7 +345,7 @@ public:
 
 
 // Size 0x8
-class FastArraySerializerItem: public None
+struct FastArraySerializerItem
 {
 public:
 	int                                                          ReplicationID;                                     // 0x0(0x4)
@@ -354,21 +354,21 @@ public:
 
 
 // Size 0xa8
-class FastArraySerializer: public None
+struct FastArraySerializer
 {
 public:
 };
 
 
 // Size 0x84
-class OverlapInfo: public None
+struct OverlapInfo
 {
 public:
 };
 
 
 // Size 0x8
-class WalkableSlopeOverride: public None
+struct WalkableSlopeOverride
 {
 public:
 	byte                                                         WalkableSlopeBehavior;                             // 0x0(0x1)
@@ -377,14 +377,14 @@ public:
 
 
 // Size 0x50
-class PrimitiveComponentPostPhysicsTickFunction: public None
+struct PrimitiveComponentPostPhysicsTickFunction
 {
 public:
 };
 
 
 // Size 0x180
-class BodyInstance: public None
+struct BodyInstance
 {
 public:
 	Struct Vector                                                Scale3D;                                           // 0x4(0xc)
@@ -435,7 +435,7 @@ public:
 
 
 // Size 0x24
-class MassPropertiesOverride: public None
+struct MassPropertiesOverride
 {
 public:
 	Struct Vector                                                InertiaTensorOverride;                             // 0x0(0xc)
@@ -445,7 +445,7 @@ public:
 
 
 // Size 0x30
-class CollisionResponse: public None
+struct CollisionResponse
 {
 public:
 	Struct CollisionResponseContainer                            ResponseToChannels;                                // 0x0(0x20)
@@ -454,7 +454,7 @@ public:
 
 
 // Size 0xc
-class ResponseChannel: public None
+struct ResponseChannel
 {
 public:
 	struct FName                                                 Channel;                                           // 0x0(0x8)
@@ -463,7 +463,7 @@ public:
 
 
 // Size 0x20
-class CollisionResponseContainer: public None
+struct CollisionResponseContainer
 {
 public:
 	byte                                                         WorldStatic;                                       // 0x0(0x1)
@@ -502,15 +502,15 @@ public:
 
 
 // Size 0x10
-class CustomPrimitiveData: public None
+struct CustomPrimitiveData
 {
 public:
-	TArray<Float >                                               Data;                                              // 0x0(0x10)
+	TArray<Float Data>                                           Data;                                              // 0x0(0x10)
 };
 
 
 // Size 0x80
-class RuntimeFloatCurve: public None
+struct RuntimeFloatCurve
 {
 public:
 	Struct RichCurve                                             EditorCurveData;                                   // 0x0(0x78)
@@ -519,7 +519,7 @@ public:
 
 
 // Size 0x78
-class RichCurve: public None
+struct RichCurve
 {
 public:
 	byte                                                         PreInfinityExtrap;                                 // 0x58(0x1)
@@ -530,7 +530,7 @@ public:
 
 
 // Size 0x58
-class IndexedCurve: public None
+struct IndexedCurve
 {
 public:
 	Struct KeyHandleMap                                          KeyHandlesToIndices;                               // 0x8(0x50)
@@ -538,14 +538,14 @@ public:
 
 
 // Size 0x50
-class KeyHandleMap: public None
+struct KeyHandleMap
 {
 public:
 };
 
 
 // Size 0x1c
-class RichCurveKey: public None
+struct RichCurveKey
 {
 public:
 	byte                                                         InterpMode;                                        // 0x0(0x1)
@@ -561,7 +561,7 @@ public:
 
 
 // Size 0x14
-class NetActorPtr: public None
+struct NetActorPtr
 {
 public:
 	Struct NetObjectPtr                                          ObjectPtr;                                         // 0x0(0x14)
@@ -569,14 +569,14 @@ public:
 
 
 // Size 0x14
-class NetObjectPtr: public None
+struct NetObjectPtr
 {
 public:
 };
 
 
 // Size 0x20
-class PacketDiscardStats: public None
+struct PacketDiscardStats
 {
 public:
 	int                                                          DiscardCounts;                                     // 0x0(0x4)
@@ -585,7 +585,7 @@ public:
 
 
 // Size 0x8
-class FeatureFlag: public None
+struct FeatureFlag
 {
 public:
 	struct FName                                                 FeatureName;                                       // 0x0(0x8)
@@ -593,14 +593,14 @@ public:
 
 
 // Size 0x18
-class UniqueNetIdRepl: public None
+struct UniqueNetIdRepl
 {
 public:
 };
 
 
 // Size 0xc0
-class RainPostProcessSettings: public None
+struct RainPostProcessSettings
 {
 public:
 	bool                                                         bOverride_RainParticleTexture;                     // 0x0(0x1)
@@ -669,7 +669,7 @@ public:
 
 
 // Size 0x170
-class RuntimeVectorCurve: public None
+struct RuntimeVectorCurve
 {
 public:
 	Struct RichCurve                                             FloatCurves;                                       // 0x0(0x78)
@@ -678,14 +678,14 @@ public:
 
 
 // Size 0x1
-class TableRowBase: public None
+struct TableRowBase
 {
 public:
 };
 
 
 // Size 0x14
-class NetSubObjectPtr: public None
+struct NetSubObjectPtr
 {
 public:
 	Struct NetObjectPtr                                          SubObject;                                         // 0x0(0x14)
@@ -693,7 +693,7 @@ public:
 
 
 // Size 0x30
-class AnimNode_Base: public None
+struct AnimNode_Base
 {
 public:
 	Struct ExposedValueHandler                                   EvaluateGraphExposedInputs;                        // 0x8(0x28)
@@ -701,7 +701,7 @@ public:
 
 
 // Size 0x28
-class ExposedValueHandler: public None
+struct ExposedValueHandler
 {
 public:
 	struct FName                                                 BoundFunction;                                     // 0x0(0x8)
@@ -710,7 +710,7 @@ public:
 
 
 // Size 0x70
-class ExposedValueCopyRecord: public None
+struct ExposedValueCopyRecord
 {
 public:
 	Class Property*                                              SourceProperty;                                    // 0x0(0x8)
@@ -727,7 +727,7 @@ public:
 
 
 // Size 0x8
-class InputScaleBias: public None
+struct InputScaleBias
 {
 public:
 	float                                                        Scale;                                             // 0x0(0x4)
@@ -736,14 +736,14 @@ public:
 
 
 // Size 0x18
-class ComponentSpacePoseLink: public None
+struct ComponentSpacePoseLink
 {
 public:
 };
 
 
 // Size 0x18
-class PoseLinkBase: public None
+struct PoseLinkBase
 {
 public:
 	int                                                          LinkID;                                            // 0x0(0x4)
@@ -751,7 +751,7 @@ public:
 
 
 // Size 0xc
-class BoneReference: public None
+struct BoneReference
 {
 public:
 	struct FName                                                 BoneName;                                          // 0x0(0x8)
@@ -759,7 +759,7 @@ public:
 
 
 // Size 0x70
-class IntegralCurve: public None
+struct IntegralCurve
 {
 public:
 	TArray<Struct IntegralKey>                                   Keys;                                              // 0x58(0x10)
@@ -769,7 +769,7 @@ public:
 
 
 // Size 0x8
-class IntegralKey: public None
+struct IntegralKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -778,7 +778,7 @@ public:
 
 
 // Size 0x78
-class StringCurve: public None
+struct StringCurve
 {
 public:
 	Struct FString                                               DefaultValue;                                      // 0x58(0x10)
@@ -787,7 +787,7 @@ public:
 
 
 // Size 0x18
-class StringCurveKey: public None
+struct StringCurveKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -796,7 +796,7 @@ public:
 
 
 // Size 0x10
-class DirectoryPath: public None
+struct DirectoryPath
 {
 public:
 	Struct FString                                               path;                                              // 0x0(0x10)
@@ -804,7 +804,7 @@ public:
 
 
 // Size 0x50
-class EdGraphPinType: public None
+struct EdGraphPinType
 {
 public:
 	Struct FString                                               PinCategory;                                       // 0x0(0x10)
@@ -818,7 +818,7 @@ public:
 
 
 // Size 0x8
-class ExposureSettings: public None
+struct ExposureSettings
 {
 public:
 	int                                                          LogOffset;                                         // 0x0(0x4)
@@ -827,7 +827,7 @@ public:
 
 
 // Size 0x70
-class URL: public None
+struct URL
 {
 public:
 	Struct FString                                               Protocol;                                          // 0x0(0x10)
@@ -835,28 +835,28 @@ public:
 	int                                                          Port;                                              // 0x20(0x4)
 	Struct FString                                               Map;                                               // 0x28(0x10)
 	Struct FString                                               RedirectURL;                                       // 0x38(0x10)
-	TArray<Str >                                                 Op;                                                // 0x48(0x10)
+	TArray<Str Op>                                               Op;                                                // 0x48(0x10)
 	Struct FString                                               Portal;                                            // 0x58(0x10)
 	int                                                          Valid;                                             // 0x68(0x4)
 };
 
 
 // Size 0x10
-class TickPrerequisite: public None
+struct TickPrerequisite
 {
 public:
 };
 
 
 // Size 0xc
-class Vector_NetQuantize10: public None
+struct Vector_NetQuantize10
 {
 public:
 };
 
 
 // Size 0x50
-class SimplygonRemeshingSettings: public None
+struct SimplygonRemeshingSettings
 {
 public:
 	bool                                                         bActive;                                           // 0x0(0x1)
@@ -875,7 +875,7 @@ public:
 
 
 // Size 0x28
-class SimplygonMaterialLODSettings: public None
+struct SimplygonMaterialLODSettings
 {
 public:
 	bool                                                         bActive;                                           // 0x0(0x1)
@@ -896,7 +896,7 @@ public:
 
 
 // Size 0x10
-class SimplygonChannelCastingSettings: public None
+struct SimplygonChannelCastingSettings
 {
 public:
 	byte                                                         MaterialChannel;                                   // 0x0(0x1)
@@ -913,7 +913,7 @@ public:
 
 
 // Size 0x60
-class CanvasUVTri: public None
+struct CanvasUVTri
 {
 public:
 	Struct Vector2D                                              V0_Pos;                                            // 0x0(0x8)
@@ -929,7 +929,7 @@ public:
 
 
 // Size 0x28
-class FontRenderInfo: public None
+struct FontRenderInfo
 {
 public:
 	bool                                                         bClipText;                                         // 0x0(0x1)
@@ -939,7 +939,7 @@ public:
 
 
 // Size 0x24
-class DepthFieldGlowInfo: public None
+struct DepthFieldGlowInfo
 {
 public:
 	bool                                                         bEnableGlow;                                       // 0x0(0x1)
@@ -950,7 +950,7 @@ public:
 
 
 // Size 0x10
-class Redirector: public None
+struct Redirector
 {
 public:
 	struct FName                                                 OldName;                                           // 0x0(0x8)
@@ -959,7 +959,7 @@ public:
 
 
 // Size 0x10
-class FilePath: public None
+struct FilePath
 {
 public:
 	Struct FString                                               FilePath;                                          // 0x0(0x10)
@@ -967,7 +967,7 @@ public:
 
 
 // Size 0x18
-class ComponentReference: public None
+struct ComponentReference
 {
 public:
 	Class Actor*                                                 OtherActor;                                        // 0x0(0x8)
@@ -976,7 +976,7 @@ public:
 
 
 // Size 0x8
-class ConstrainComponentPropName: public None
+struct ConstrainComponentPropName
 {
 public:
 	struct FName                                                 ComponentName;                                     // 0x0(0x8)
@@ -984,17 +984,17 @@ public:
 
 
 // Size 0x40
-class RadialDamageEvent: public None
+struct RadialDamageEvent
 {
 public:
 	Struct RadialDamageParams                                    Params;                                            // 0x10(0x14)
 	Struct Vector                                                Origin;                                            // 0x24(0xc)
-	TArray<Struct Origin>                                        ComponentHits;                                     // 0x30(0x10)
+	TArray<Struct HitResult>                                     ComponentHits;                                     // 0x30(0x10)
 };
 
 
 // Size 0x10
-class DamageEvent: public None
+struct DamageEvent
 {
 public:
 	class                                                        DamageTypeClass;                                   // 0x8(0x8)
@@ -1002,7 +1002,7 @@ public:
 
 
 // Size 0x14
-class RadialDamageParams: public None
+struct RadialDamageParams
 {
 public:
 	float                                                        BaseDamage;                                        // 0x0(0x4)
@@ -1014,7 +1014,7 @@ public:
 
 
 // Size 0xa0
-class PointDamageEvent: public None
+struct PointDamageEvent
 {
 public:
 	float                                                        Damage;                                            // 0x10(0x4)
@@ -1024,14 +1024,14 @@ public:
 
 
 // Size 0x1
-class CollisionMergingSettings: public None
+struct CollisionMergingSettings
 {
 public:
 };
 
 
 // Size 0x38
-class MeshMergingSettings: public None
+struct MeshMergingSettings
 {
 public:
 	bool                                                         bGenerateLightMapUV;                               // 0x0(0x1)
@@ -1050,13 +1050,13 @@ public:
 	bool                                                         bUseRelativeTransform;                             // 0x19(0x1)
 	bool                                                         bMergeRelativeToFirstComponent;                    // 0x1a(0x1)
 	bool                                                         bDuplicateLODs;                                    // 0x1b(0x1)
-	TArray<Float >                                               LODScreenSizes;                                    // 0x20(0x10)
+	TArray<Float LODScreenSizes>                                 LODScreenSizes;                                    // 0x20(0x10)
 	int                                                          LODForCollision;                                   // 0x30(0x4)
 };
 
 
 // Size 0x70
-class MeshProxySettings: public None
+struct MeshProxySettings
 {
 public:
 	int                                                          ScreenSize;                                        // 0x0(0x4)
@@ -1078,7 +1078,7 @@ public:
 
 
 // Size 0x44
-class MaterialSimplificationSettings: public None
+struct MaterialSimplificationSettings
 {
 public:
 	Struct IntPoint                                              BaseColorMapSize;                                  // 0x0(0x8)
@@ -1097,7 +1097,7 @@ public:
 
 
 // Size 0x40
-class MeshBuildSettings: public None
+struct MeshBuildSettings
 {
 public:
 	bool                                                         bUseMikkTSpace;                                    // 0x0(0x1)
@@ -1120,7 +1120,7 @@ public:
 
 
 // Size 0x8
-class PresortedBillboardsParams: public None
+struct PresortedBillboardsParams
 {
 public:
 	byte                                                         Mode;                                              // 0x0(0x1)
@@ -1129,7 +1129,7 @@ public:
 
 
 // Size 0x58
-class MeshReductionSettings: public None
+struct MeshReductionSettings
 {
 public:
 	float                                                        PercentTriangles;                                  // 0x0(0x4)
@@ -1154,7 +1154,7 @@ public:
 
 
 // Size 0x1c
-class POV: public None
+struct POV
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
@@ -1164,7 +1164,7 @@ public:
 
 
 // Size 0x38
-class AnimUpdateRateParameters: public None
+struct AnimUpdateRateParameters
 {
 public:
 	int                                                          UpdateRate;                                        // 0x4(0x4)
@@ -1175,12 +1175,12 @@ public:
 	float                                                        TickedPoseOffestTime;                              // 0x10(0x4)
 	float                                                        AdditionalTime;                                    // 0x14(0x4)
 	int                                                          BaseNonRenderedUpdateRate;                         // 0x1c(0x4)
-	TArray<Float >                                               BaseVisibleDistanceFactorThesholds;                // 0x28(0x10)
+	TArray<Float BaseVisibleDistanceFactorThesholds>             BaseVisibleDistanceFactorThesholds;                // 0x28(0x10)
 };
 
 
 // Size 0xc
-class AnimSlotDesc: public None
+struct AnimSlotDesc
 {
 public:
 	struct FName                                                 SlotName;                                          // 0x0(0x8)
@@ -1189,16 +1189,16 @@ public:
 
 
 // Size 0x18
-class AnimSlotInfo: public None
+struct AnimSlotInfo
 {
 public:
 	struct FName                                                 SlotName;                                          // 0x0(0x8)
-	TArray<Float >                                               ChannelWeights;                                    // 0x8(0x10)
+	TArray<Float ChannelWeights>                                 ChannelWeights;                                    // 0x8(0x10)
 };
 
 
 // Size 0x10
-class MTDResult: public None
+struct MTDResult
 {
 public:
 	Struct Vector                                                Direction;                                         // 0x0(0xc)
@@ -1207,7 +1207,7 @@ public:
 
 
 // Size 0x18
-class OverlapResult: public None
+struct OverlapResult
 {
 public:
 	bool                                                         bBlockingHit;                                      // 0x14(0x1)
@@ -1215,7 +1215,7 @@ public:
 
 
 // Size 0x18
-class PrimitiveMaterialRef: public None
+struct PrimitiveMaterialRef
 {
 public:
 	Class PrimitiveComponent*                                    Primitive;                                         // 0x0(0x8)
@@ -1225,7 +1225,7 @@ public:
 
 
 // Size 0x4
-class SwarmDebugOptions: public None
+struct SwarmDebugOptions
 {
 public:
 	bool                                                         bDistributionEnabled;                              // 0x0(0x1)
@@ -1235,7 +1235,7 @@ public:
 
 
 // Size 0x10
-class LightmassDebugOptions: public None
+struct LightmassDebugOptions
 {
 public:
 	bool                                                         bDebugMode;                                        // 0x0(0x1)
@@ -1258,7 +1258,7 @@ public:
 
 
 // Size 0x18
-class LightmassPrimitiveSettings: public None
+struct LightmassPrimitiveSettings
 {
 public:
 	bool                                                         bUseTwoSidedLighting;                              // 0x0(0x1)
@@ -1274,7 +1274,7 @@ public:
 
 
 // Size 0x10
-class LightmassDirectionalLightSettings: public None
+struct LightmassDirectionalLightSettings
 {
 public:
 	float                                                        LightSourceAngle;                                  // 0xc(0x4)
@@ -1282,7 +1282,7 @@ public:
 
 
 // Size 0xc
-class LightmassLightSettings: public None
+struct LightmassLightSettings
 {
 public:
 	float                                                        IndirectLightingSaturation;                        // 0x0(0x4)
@@ -1292,18 +1292,18 @@ public:
 
 
 // Size 0xc
-class LightmassPointLightSettings: public None
+struct LightmassPointLightSettings
 {
 public:
 };
 
 
 // Size 0x28
-class LocalizedSubtitle: public None
+struct LocalizedSubtitle
 {
 public:
 	Struct FString                                               LanguageExt;                                       // 0x0(0x10)
-	TArray<Struct LanguageExt>                                   Subtitles;                                         // 0x10(0x10)
+	TArray<Struct SubtitleCue>                                   Subtitles;                                         // 0x10(0x10)
 	bool                                                         bMature;                                           // 0x20(0x1)
 	bool                                                         bManualWordWrap;                                   // 0x20(0x1)
 	bool                                                         bSingleLine;                                       // 0x20(0x1)
@@ -1311,7 +1311,7 @@ public:
 
 
 // Size 0x38
-class BasedPosition: public None
+struct BasedPosition
 {
 public:
 	Class Actor*                                                 Base;                                              // 0x0(0x8)
@@ -1323,7 +1323,7 @@ public:
 
 
 // Size 0x10
-class FractureEffect: public None
+struct FractureEffect
 {
 public:
 	Class ParticleSystem*                                        ParticleSystem;                                    // 0x0(0x8)
@@ -1332,7 +1332,7 @@ public:
 
 
 // Size 0x28
-class CollisionImpactData: public None
+struct CollisionImpactData
 {
 public:
 	TArray<Struct RigidBodyContactInfo>                          ContactInfos;                                      // 0x0(0x10)
@@ -1342,7 +1342,7 @@ public:
 
 
 // Size 0x30
-class RigidBodyContactInfo: public None
+struct RigidBodyContactInfo
 {
 public:
 	Struct Vector                                                ContactPosition;                                   // 0x0(0xc)
@@ -1353,7 +1353,7 @@ public:
 
 
 // Size 0x1c
-class RigidBodyErrorCorrection: public None
+struct RigidBodyErrorCorrection
 {
 public:
 	float                                                        LinearDeltaThresholdSq;                            // 0x0(0x4)
@@ -1367,7 +1367,7 @@ public:
 
 
 // Size 0x40
-class RigidBodyState: public None
+struct RigidBodyState
 {
 public:
 	Struct Vector_NetQuantize100                                 Position;                                          // 0x0(0xc)
@@ -1379,7 +1379,7 @@ public:
 
 
 // Size 0x18
-class EditedDocumentInfo: public None
+struct EditedDocumentInfo
 {
 public:
 	Class Object*                                                EditedObject;                                      // 0x0(0x8)
@@ -1389,7 +1389,7 @@ public:
 
 
 // Size 0x18
-class BPInterfaceDescription: public None
+struct BPInterfaceDescription
 {
 public:
 	class                                                        Interface;                                         // 0x0(0x8)
@@ -1398,7 +1398,7 @@ public:
 
 
 // Size 0xe0
-class BPVariableDescription: public None
+struct BPVariableDescription
 {
 public:
 	struct FName                                                 VarName;                                           // 0x0(0x8)
@@ -1413,7 +1413,7 @@ public:
 
 
 // Size 0x18
-class BPVariableMetaDataEntry: public None
+struct BPVariableMetaDataEntry
 {
 public:
 	struct FName                                                 DataKey;                                           // 0x0(0x8)
@@ -1422,7 +1422,7 @@ public:
 
 
 // Size 0x38
-class MemberReference: public None
+struct MemberReference
 {
 public:
 	Class Object*                                                MemberParent;                                      // 0x0(0x8)
@@ -1435,7 +1435,7 @@ public:
 
 
 // Size 0x10
-class AutomaticInstancingMeshComponentArray: public None
+struct AutomaticInstancingMeshComponentArray
 {
 public:
 	TArray<class Array*>                                         Array;                                             // 0x0(0x10)
@@ -1443,42 +1443,42 @@ public:
 
 
 // Size 0xf0
-class LatentActionManager: public None
+struct LatentActionManager
 {
 public:
 };
 
 
 // Size 0x50
-class EndClothSimulationFunction: public None
+struct EndClothSimulationFunction
 {
 public:
 };
 
 
 // Size 0x50
-class StartClothSimulationFunction: public None
+struct StartClothSimulationFunction
 {
 public:
 };
 
 
 // Size 0x50
-class EndPhysicsTickFunction: public None
+struct EndPhysicsTickFunction
 {
 public:
 };
 
 
 // Size 0x50
-class StartPhysicsTickFunction: public None
+struct StartPhysicsTickFunction
 {
 public:
 };
 
 
 // Size 0x20
-class LevelViewportInfo: public None
+struct LevelViewportInfo
 {
 public:
 	Struct Vector                                                CamPosition;                                       // 0x0(0xc)
@@ -1489,7 +1489,7 @@ public:
 
 
 // Size 0xac
-class LevelSimplificationDetails: public None
+struct LevelSimplificationDetails
 {
 public:
 	bool                                                         bCreatePackagePerAsset;                            // 0x0(0x1)
@@ -1514,7 +1514,7 @@ public:
 
 
 // Size 0x28
-class DynamicTextureInstance: public None
+struct DynamicTextureInstance
 {
 public:
 	Class Texture2D*                                             Texture;                                           // 0x18(0x8)
@@ -1524,14 +1524,14 @@ public:
 
 
 // Size 0x14
-class StreamableTextureInstance: public None
+struct StreamableTextureInstance
 {
 public:
 };
 
 
 // Size 0xc
-class GeomSelection: public None
+struct GeomSelection
 {
 public:
 	int                                                          Type;                                              // 0x0(0x4)
@@ -1541,7 +1541,7 @@ public:
 
 
 // Size 0x24
-class InteriorSettings: public None
+struct InteriorSettings
 {
 public:
 	bool                                                         bIsWorldSettings;                                  // 0x0(0x1)
@@ -1557,7 +1557,7 @@ public:
 
 
 // Size 0x18
-class ReverbSettings: public None
+struct ReverbSettings
 {
 public:
 	bool                                                         bApplyReverb;                                      // 0x0(0x1)
@@ -1569,7 +1569,7 @@ public:
 
 
 // Size 0x8
-class CullDistanceSizePair: public None
+struct CullDistanceSizePair
 {
 public:
 	float                                                        Size;                                              // 0x0(0x4)
@@ -1578,7 +1578,7 @@ public:
 
 
 // Size 0x58
-class NavDataConfig: public None
+struct NavDataConfig
 {
 public:
 	Struct Color                                                 Color;                                             // 0x30(0x4)
@@ -1589,7 +1589,7 @@ public:
 
 
 // Size 0x30
-class NavAgentProperties: public None
+struct NavAgentProperties
 {
 public:
 	struct FName                                                 Name;                                              // 0x4(0x8)
@@ -1605,7 +1605,7 @@ public:
 
 
 // Size 0x4
-class MovementProperties: public None
+struct MovementProperties
 {
 public:
 	bool                                                         bCanCrouch;                                        // 0x0(0x1)
@@ -1617,7 +1617,7 @@ public:
 
 
 // Size 0x4
-class NavAgentSelector: public None
+struct NavAgentSelector
 {
 public:
 	bool                                                         bSupportsAgent0;                                   // 0x0(0x1)
@@ -1640,7 +1640,7 @@ public:
 
 
 // Size 0x18
-class PlayerAmbientLightOverrideSettings: public None
+struct PlayerAmbientLightOverrideSettings
 {
 public:
 	bool                                                         OverrideBodyLightAmbience;                         // 0x0(0x1)
@@ -1653,7 +1653,7 @@ public:
 
 
 // Size 0x540
-class PostProcessSettings: public None
+struct PostProcessSettings
 {
 public:
 	bool                                                         bOverride_WhiteTemp;                               // 0x0(0x1)
@@ -1962,7 +1962,7 @@ public:
 
 
 // Size 0x10
-class WeightedBlendables: public None
+struct WeightedBlendables
 {
 public:
 	TArray<Struct WeightedBlendable>                             Array;                                             // 0x0(0x10)
@@ -1970,7 +1970,7 @@ public:
 
 
 // Size 0x10
-class WeightedBlendable: public None
+struct WeightedBlendable
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
@@ -1979,7 +1979,7 @@ public:
 
 
 // Size 0x70
-class LPVCascadeSettings: public None
+struct LPVCascadeSettings
 {
 public:
 	bool                                                         bOverride_LPVIntensity;                            // 0x0(0x1)
@@ -2016,7 +2016,7 @@ public:
 
 
 // Size 0x5a0
-class MinimalViewInfo: public None
+struct MinimalViewInfo
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
@@ -2035,7 +2035,7 @@ public:
 
 
 // Size 0x24
-class VOscillator: public None
+struct VOscillator
 {
 public:
 	Struct FOscillator                                           X;                                                 // 0x0(0xc)
@@ -2045,7 +2045,7 @@ public:
 
 
 // Size 0xc
-class FOscillator: public None
+struct FOscillator
 {
 public:
 	float                                                        Amplitude;                                         // 0x0(0x4)
@@ -2055,7 +2055,7 @@ public:
 
 
 // Size 0x24
-class ROscillator: public None
+struct ROscillator
 {
 public:
 	Struct FOscillator                                           Pitch;                                             // 0x0(0xc)
@@ -2065,7 +2065,7 @@ public:
 
 
 // Size 0x10
-class ViewTargetTransitionParams: public None
+struct ViewTargetTransitionParams
 {
 public:
 	float                                                        BlendTime;                                         // 0x0(0x4)
@@ -2076,7 +2076,7 @@ public:
 
 
 // Size 0x5c0
-class TViewTarget: public None
+struct TViewTarget
 {
 public:
 	Class Actor*                                                 Target;                                            // 0x0(0x8)
@@ -2086,7 +2086,7 @@ public:
 
 
 // Size 0x5b0
-class CameraCacheEntry: public None
+struct CameraCacheEntry
 {
 public:
 	float                                                        TimeStamp;                                         // 0x0(0x4)
@@ -2095,7 +2095,7 @@ public:
 
 
 // Size 0x68
-class NameCurve: public None
+struct NameCurve
 {
 public:
 	TArray<Struct NameCurveKey>                                  Keys;                                              // 0x58(0x10)
@@ -2103,7 +2103,7 @@ public:
 
 
 // Size 0xc
-class NameCurveKey: public None
+struct NameCurveKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -2112,7 +2112,7 @@ public:
 
 
 // Size 0x18
-class ActiveForceFeedbackEffect: public None
+struct ActiveForceFeedbackEffect
 {
 public:
 	Class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
@@ -2120,7 +2120,7 @@ public:
 
 
 // Size 0x88
-class ForceFeedbackChannelDetails: public None
+struct ForceFeedbackChannelDetails
 {
 public:
 	bool                                                         bAffectsLeftLarge;                                 // 0x0(0x1)
@@ -2134,7 +2134,7 @@ public:
 
 
 // Size 0x18
-class LevelStreamingStatusUpdateInfo: public None
+struct LevelStreamingStatusUpdateInfo
 {
 public:
 	Struct FString                                               PackageName;                                       // 0x0(0x10)
@@ -2146,7 +2146,7 @@ public:
 
 
 // Size 0x60
-class DebugTextInfo: public None
+struct DebugTextInfo
 {
 public:
 	Class Actor*                                                 SrcActor;                                          // 0x0(0x8)
@@ -2166,7 +2166,7 @@ public:
 
 
 // Size 0x20
-class GameClassShortName: public None
+struct GameClassShortName
 {
 public:
 	Struct FString                                               ShortName;                                         // 0x0(0x10)
@@ -2175,7 +2175,7 @@ public:
 
 
 // Size 0xc
-class MergedCollisionActorsSimplification: public None
+struct MergedCollisionActorsSimplification
 {
 public:
 	Struct CollisionMergingSettings                              MergeCollisionSettings;                            // 0x0(0x1)
@@ -2185,7 +2185,7 @@ public:
 
 
 // Size 0xc0
-class HierarchicalSimplification: public None
+struct HierarchicalSimplification
 {
 public:
 	bool                                                         bSimplifyMesh;                                     // 0x0(0x1)
@@ -2199,7 +2199,7 @@ public:
 
 
 // Size 0x28
-class NetViewer: public None
+struct NetViewer
 {
 public:
 	Class Actor*                                                 InViewer;                                          // 0x0(0x8)
@@ -2210,7 +2210,7 @@ public:
 
 
 // Size 0x44
-class LightmassWorldInfoSettings: public None
+struct LightmassWorldInfoSettings
 {
 public:
 	float                                                        StaticLightingLevelScale;                          // 0x0(0x4)
@@ -2236,7 +2236,7 @@ public:
 
 
 // Size 0x20
-class GameModePrefix: public None
+struct GameModePrefix
 {
 public:
 	Struct FString                                               Prefix;                                            // 0x0(0x10)
@@ -2245,7 +2245,7 @@ public:
 
 
 // Size 0x18
-class InterpGroupActorInfo: public None
+struct InterpGroupActorInfo
 {
 public:
 	struct FName                                                 ObjectName;                                        // 0x0(0x8)
@@ -2254,7 +2254,7 @@ public:
 
 
 // Size 0x10
-class CameraCutInfo: public None
+struct CameraCutInfo
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
@@ -2263,7 +2263,7 @@ public:
 
 
 // Size 0x4
-class NavigationFilterFlags: public None
+struct NavigationFilterFlags
 {
 public:
 	bool                                                         bNavFlag0;                                         // 0x0(0x1)
@@ -2286,7 +2286,7 @@ public:
 
 
 // Size 0x18
-class NavigationFilterArea: public None
+struct NavigationFilterArea
 {
 public:
 	class                                                        AreaClass;                                         // 0x0(0x8)
@@ -2299,7 +2299,7 @@ public:
 
 
 // Size 0x20
-class SupportedAreaData: public None
+struct SupportedAreaData
 {
 public:
 	Struct FString                                               AreaClassName;                                     // 0x0(0x10)
@@ -2309,7 +2309,7 @@ public:
 
 
 // Size 0x18
-class NavGraphNode: public None
+struct NavGraphNode
 {
 public:
 	Class Object*                                                Owner;                                             // 0x0(0x8)
@@ -2317,14 +2317,14 @@ public:
 
 
 // Size 0x18
-class NavGraphEdge: public None
+struct NavGraphEdge
 {
 public:
 };
 
 
 // Size 0x60
-class NavigationSegmentLink: public None
+struct NavigationSegmentLink
 {
 public:
 	Struct Vector                                                LeftStart;                                         // 0x30(0xc)
@@ -2335,7 +2335,7 @@ public:
 
 
 // Size 0x30
-class NavigationLinkBase: public None
+struct NavigationLinkBase
 {
 public:
 	float                                                        LeftProjectHeight;                                 // 0x0(0x4)
@@ -2367,7 +2367,7 @@ public:
 
 
 // Size 0x48
-class NavigationLink: public None
+struct NavigationLink
 {
 public:
 	Struct Vector                                                Left;                                              // 0x30(0xc)
@@ -2376,7 +2376,7 @@ public:
 
 
 // Size 0x14
-class LightmassMaterialInterfaceSettings: public None
+struct LightmassMaterialInterfaceSettings
 {
 public:
 	bool                                                         bCastShadowAsMasked;                               // 0x0(0x1)
@@ -2391,7 +2391,7 @@ public:
 
 
 // Size 0xc
-class MaterialRelevance: public None
+struct MaterialRelevance
 {
 public:
 	bool                                                         bOpaque;                                           // 0x0(0x1)
@@ -2414,7 +2414,7 @@ public:
 
 
 // Size 0x78
-class SpriteCategoryInfo: public None
+struct SpriteCategoryInfo
 {
 public:
 	struct FName                                                 Category;                                          // 0x0(0x8)
@@ -2424,7 +2424,7 @@ public:
 
 
 // Size 0x10
-class NamedEmitterMaterial: public None
+struct NamedEmitterMaterial
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -2433,22 +2433,22 @@ public:
 
 
 // Size 0x10
-class LODSoloTrack: public None
+struct LODSoloTrack
 {
 public:
-	TArray<Byte ParticleSystemLOD>                               SoloEnableSetting;                                 // 0x0(0x10)
+	TArray<Byte SoloEnableSetting>                               SoloEnableSetting;                                 // 0x0(0x10)
 };
 
 
 // Size 0x1
-class ParticleSystemLOD: public None
+struct ParticleSystemLOD
 {
 public:
 };
 
 
 // Size 0x50
-class ParticleSysParam: public None
+struct ParticleSysParam
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -2465,7 +2465,7 @@ public:
 
 
 // Size 0x40
-class EmitterPointData: public None
+struct EmitterPointData
 {
 public:
 	Struct Vector4                                               Position;                                          // 0x0(0x10)
@@ -2476,17 +2476,17 @@ public:
 
 
 // Size 0x38
-class TriMeshCollisionData: public None
+struct TriMeshCollisionData
 {
 public:
-	TArray<Struct PreviewAssetAttachContainer>                   Vertices;                                          // 0x0(0x10)
+	TArray<Struct Vector>                                        Vertices;                                          // 0x0(0x10)
 	TArray<Struct TriIndices>                                    Indices;                                           // 0x10(0x10)
 	bool                                                         bFlipNormals;                                      // 0x20(0x1)
 };
 
 
 // Size 0xc
-class TriIndices: public None
+struct TriIndices
 {
 public:
 	int                                                          v0;                                                // 0x0(0x4)
@@ -2496,7 +2496,7 @@ public:
 
 
 // Size 0x10
-class PreviewAssetAttachContainer: public None
+struct PreviewAssetAttachContainer
 {
 public:
 	TArray<Struct PreviewAttachedObjectPair>                     AttachedObjects;                                   // 0x0(0x10)
@@ -2504,7 +2504,7 @@ public:
 
 
 // Size 0x30
-class PreviewAttachedObjectPair: public None
+struct PreviewAttachedObjectPair
 {
 public:
 	Class Object*                                                Object;                                            // 0x20(0x8)
@@ -2513,7 +2513,7 @@ public:
 
 
 // Size 0x10
-class DeformablesSettings: public None
+struct DeformablesSettings
 {
 public:
 	float                                                        DistanceStiffness;                                 // 0x0(0x4)
@@ -2524,7 +2524,7 @@ public:
 
 
 // Size 0x10
-class SkeletalMaterial: public None
+struct SkeletalMaterial
 {
 public:
 	Class MaterialInterface*                                     MaterialInterface;                                 // 0x0(0x8)
@@ -2533,7 +2533,7 @@ public:
 
 
 // Size 0x40
-class ClothingAssetData: public None
+struct ClothingAssetData
 {
 public:
 	struct FName                                                 AssetName;                                         // 0x0(0x8)
@@ -2544,7 +2544,7 @@ public:
 
 
 // Size 0x24
-class ClothPhysicsProperties: public None
+struct ClothPhysicsProperties
 {
 public:
 	float                                                        BendResistance;                                    // 0x0(0x4)
@@ -2560,7 +2560,7 @@ public:
 
 
 // Size 0x10
-class MorphTargetMap: public None
+struct MorphTargetMap
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -2569,12 +2569,12 @@ public:
 
 
 // Size 0xf0
-class SkeletalMeshLODInfo: public None
+struct SkeletalMeshLODInfo
 {
 public:
 	float                                                        ScreenSize;                                        // 0x0(0x4)
 	float                                                        LODHysteresis;                                     // 0x4(0x4)
-	TArray<Int >                                                 LODMaterialMap;                                    // 0x8(0x10)
+	TArray<Int LODMaterialMap>                                   LODMaterialMap;                                    // 0x8(0x10)
 	TArray<Struct TriangleSortSettings>                          TriangleSortSettings;                              // 0x18(0x10)
 	bool                                                         bHasBeenSimplified;                                // 0x28(0x1)
 	Struct SkeletalMeshOptimizationSettings                      ReductionSettings;                                 // 0x30(0x70)
@@ -2583,7 +2583,7 @@ public:
 
 
 // Size 0x70
-class SkeletalMeshOptimizationSettings: public None
+struct SkeletalMeshOptimizationSettings
 {
 public:
 	byte                                                         ReductionMethod;                                   // 0x0(0x1)
@@ -2598,7 +2598,7 @@ public:
 	byte                                                         SkinningImportance;                                // 0x1b(0x1)
 	float                                                        BoneReductionRatio;                                // 0x1c(0x4)
 	int                                                          MaxBonesPerVertex;                                 // 0x20(0x4)
-	TArray<Struct MaxBonesPerVertex>                             BonesToRemove;                                     // 0x28(0x10)
+	TArray<Struct BoneReference>                                 BonesToRemove;                                     // 0x28(0x10)
 	int                                                          BaseLODModel;                                      // 0x38(0x4)
 	int                                                          LODChainLastIndex;                                 // 0x3c(0x4)
 	bool                                                         bForceRebuild;                                     // 0x40(0x1)
@@ -2607,7 +2607,7 @@ public:
 
 
 // Size 0xc
-class TriangleSortSettings: public None
+struct TriangleSortSettings
 {
 public:
 	byte                                                         TriangleSorting;                                   // 0x0(0x1)
@@ -2617,7 +2617,7 @@ public:
 
 
 // Size 0x14
-class BoneMirrorExport: public None
+struct BoneMirrorExport
 {
 public:
 	struct FName                                                 BoneName;                                          // 0x0(0x8)
@@ -2627,7 +2627,7 @@ public:
 
 
 // Size 0x8
-class BoneMirrorInfo: public None
+struct BoneMirrorInfo
 {
 public:
 	int                                                          SourceIndex;                                       // 0x0(0x4)
@@ -2636,7 +2636,7 @@ public:
 
 
 // Size 0xc
-class AnimationGroupReference: public None
+struct AnimationGroupReference
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -2645,7 +2645,7 @@ public:
 
 
 // Size 0x40
-class RootMotionMovementParams: public None
+struct RootMotionMovementParams
 {
 public:
 	bool                                                         bHasRootMotion;                                    // 0x0(0x1)
@@ -2655,14 +2655,14 @@ public:
 
 
 // Size 0x18
-class AnimGroupInstance: public None
+struct AnimGroupInstance
 {
 public:
 };
 
 
 // Size 0x40
-class AnimTickRecord: public None
+struct AnimTickRecord
 {
 public:
 	Class AnimationAsset*                                        SourceAsset;                                       // 0x0(0x8)
@@ -2670,7 +2670,7 @@ public:
 
 
 // Size 0x8
-class AnimExtractContext: public None
+struct AnimExtractContext
 {
 public:
 	bool                                                         bExtractRootMotion;                                // 0x0(0x1)
@@ -2679,14 +2679,14 @@ public:
 
 
 // Size 0x90
-class BlendFilter: public None
+struct BlendFilter
 {
 public:
 };
 
 
 // Size 0x20
-class BlendSampleData: public None
+struct BlendSampleData
 {
 public:
 	int                                                          SampleDataIndex;                                   // 0x0(0x4)
@@ -2696,7 +2696,7 @@ public:
 
 
 // Size 0x38
-class BasedMovementInfo: public None
+struct BasedMovementInfo
 {
 public:
 	Class PrimitiveComponent*                                    MovementBase;                                      // 0x0(0x8)
@@ -2710,7 +2710,7 @@ public:
 
 
 // Size 0x48
-class SimulatedRootMotionReplicatedMove: public None
+struct SimulatedRootMotionReplicatedMove
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -2719,7 +2719,7 @@ public:
 
 
 // Size 0x40
-class RepRootMotionMontage: public None
+struct RepRootMotionMontage
 {
 public:
 	Class AnimMontage*                                           AnimMontage;                                       // 0x0(0x8)
@@ -2734,15 +2734,15 @@ public:
 
 
 // Size 0x10
-class SkelMeshComponentLODInfo: public None
+struct SkelMeshComponentLODInfo
 {
 public:
-	TArray<Bool ActiveVertexAnim>                                HiddenMaterials;                                   // 0x0(0x10)
+	TArray<Bool HiddenMaterials>                                 HiddenMaterials;                                   // 0x0(0x10)
 };
 
 
 // Size 0x10
-class ActiveVertexAnim: public None
+struct ActiveVertexAnim
 {
 public:
 	Class VertexAnimBase*                                        VertAnim;                                          // 0x0(0x8)
@@ -2752,7 +2752,7 @@ public:
 
 
 // Size 0x160
-class ConstraintInstance: public None
+struct ConstraintInstance
 {
 public:
 	Class SceneComponent*                                        OwnerComponent;                                    // 0x8(0x8)
@@ -2826,21 +2826,21 @@ public:
 
 
 // Size 0x50
-class SmartNameContainer: public None
+struct SmartNameContainer
 {
 public:
 };
 
 
 // Size 0x68
-class SmartNameMapping: public None
+struct SmartNameMapping
 {
 public:
 };
 
 
 // Size 0x18
-class AnimSlotGroup: public None
+struct AnimSlotGroup
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -2849,7 +2849,7 @@ public:
 
 
 // Size 0x18
-class RigConfiguration: public None
+struct RigConfiguration
 {
 public:
 	Class Rig*                                                   Rig;                                               // 0x0(0x8)
@@ -2858,7 +2858,7 @@ public:
 
 
 // Size 0x10
-class NameMapping: public None
+struct NameMapping
 {
 public:
 	struct FName                                                 NodeName;                                          // 0x0(0x8)
@@ -2867,24 +2867,24 @@ public:
 
 
 // Size 0x10
-class BoneReductionSetting: public None
+struct BoneReductionSetting
 {
 public:
-	TArray<Name None>                                            BonesToRemove;                                     // 0x0(0x10)
+	TArray<Struct FName>                                         BonesToRemove;                                     // 0x0(0x10)
 };
 
 
 // Size 0x18
-class ReferencePose: public None
+struct ReferencePose
 {
 public:
 	struct FName                                                 PoseName;                                          // 0x0(0x8)
-	TArray<Struct PoseName>                                      ReferencePose;                                     // 0x8(0x10)
+	TArray<Struct Transform>                                     ReferencePose;                                     // 0x8(0x10)
 };
 
 
 // Size 0x1
-class BoneNode: public None
+struct BoneNode
 {
 public:
 	byte                                                         TranslationRetargetingMode;                        // 0x0(0x1)
@@ -2892,16 +2892,16 @@ public:
 
 
 // Size 0x20
-class SkeletonToMeshLinkup: public None
+struct SkeletonToMeshLinkup
 {
 public:
-	TArray<Int None>                                             SkeletonToMeshTable;                               // 0x0(0x10)
-	TArray<Int >                                                 MeshToSkeletonTable;                               // 0x10(0x10)
+	TArray<Int SkeletonToMeshTable>                              SkeletonToMeshTable;                               // 0x0(0x10)
+	TArray<Int MeshToSkeletonTable>                              MeshToSkeletonTable;                               // 0x10(0x10)
 };
 
 
 // Size 0x30
-class AnimLinkableElement: public None
+struct AnimLinkableElement
 {
 public:
 	Class AnimMontage*                                           LinkedMontage;                                     // 0x8(0x8)
@@ -2917,7 +2917,7 @@ public:
 
 
 // Size 0x28
-class AnimNotifyTrack: public None
+struct AnimNotifyTrack
 {
 public:
 	struct FName                                                 TrackName;                                         // 0x0(0x8)
@@ -2926,7 +2926,7 @@ public:
 
 
 // Size 0xb0
-class AnimNotifyEvent: public None
+struct AnimNotifyEvent
 {
 public:
 	float                                                        DisplayTime;                                       // 0x30(0x4)
@@ -2949,7 +2949,7 @@ public:
 
 
 // Size 0x10
-class RawCurveTracks: public None
+struct RawCurveTracks
 {
 public:
 	TArray<Struct FloatCurve>                                    FloatCurves;                                       // 0x0(0x10)
@@ -2957,7 +2957,7 @@ public:
 
 
 // Size 0x90
-class FloatCurve: public None
+struct FloatCurve
 {
 public:
 	Struct RichCurve                                             FloatCurve;                                        // 0x18(0x78)
@@ -2965,7 +2965,7 @@ public:
 
 
 // Size 0x18
-class AnimCurveBase: public None
+struct AnimCurveBase
 {
 public:
 	struct FName                                                 LastObservedName;                                  // 0x8(0x8)
@@ -2974,7 +2974,7 @@ public:
 
 
 // Size 0x498
-class TransformCurve: public None
+struct TransformCurve
 {
 public:
 	Struct VectorCurve                                           TranslationCurve;                                  // 0x18(0x180)
@@ -2984,7 +2984,7 @@ public:
 
 
 // Size 0x180
-class VectorCurve: public None
+struct VectorCurve
 {
 public:
 	Struct RichCurve                                             FloatCurves;                                       // 0x18(0x78)
@@ -2992,14 +2992,14 @@ public:
 
 
 // Size 0x50
-class SkeletalMeshComponentPreClothTickFunction: public None
+struct SkeletalMeshComponentPreClothTickFunction
 {
 public:
 };
 
 
 // Size 0x20
-class SingleAnimationPlayData: public None
+struct SingleAnimationPlayData
 {
 public:
 	Class AnimationAsset*                                        AnimToPlay;                                        // 0x0(0x8)
@@ -3012,7 +3012,7 @@ public:
 
 
 // Size 0x10
-class AnimTrack: public None
+struct AnimTrack
 {
 public:
 	TArray<Struct AnimSegment>                                   AnimSegments;                                      // 0x0(0x10)
@@ -3020,7 +3020,7 @@ public:
 
 
 // Size 0x20
-class AnimSegment: public None
+struct AnimSegment
 {
 public:
 	Class AnimSequenceBase*                                      AnimReference;                                     // 0x0(0x8)
@@ -3033,7 +3033,7 @@ public:
 
 
 // Size 0x10
-class RootMotionExtractionStep: public None
+struct RootMotionExtractionStep
 {
 public:
 	Class AnimSequence*                                          AnimSequence;                                      // 0x0(0x8)
@@ -3043,7 +3043,7 @@ public:
 
 
 // Size 0x30
-class AlphaBlend: public None
+struct AlphaBlend
 {
 public:
 	byte                                                         BlendOption;                                       // 0x0(0x1)
@@ -3060,7 +3060,7 @@ public:
 
 
 // Size 0x30
-class BakedAnimationStateMachine: public None
+struct BakedAnimationStateMachine
 {
 public:
 	struct FName                                                 MachineName;                                       // 0x0(0x8)
@@ -3071,7 +3071,7 @@ public:
 
 
 // Size 0x38
-class AnimationTransitionBetweenStates: public None
+struct AnimationTransitionBetweenStates
 {
 public:
 	int                                                          PreviousState;                                     // 0x8(0x4)
@@ -3087,7 +3087,7 @@ public:
 
 
 // Size 0x8
-class AnimationStateBase: public None
+struct AnimationStateBase
 {
 public:
 	struct FName                                                 StateName;                                         // 0x0(0x8)
@@ -3095,7 +3095,7 @@ public:
 
 
 // Size 0x50
-class BakedAnimationState: public None
+struct BakedAnimationState
 {
 public:
 	struct FName                                                 StateName;                                         // 0x0(0x8)
@@ -3107,13 +3107,13 @@ public:
 	int                                                          FullyBlendedNotify;                                // 0x2c(0x4)
 	bool                                                         bIsAConduit;                                       // 0x30(0x1)
 	int                                                          EntryRuleNodeIndex;                                // 0x34(0x4)
-	TArray<Int >                                                 PlayerNodeIndices;                                 // 0x38(0x10)
+	TArray<Int PlayerNodeIndices>                                PlayerNodeIndices;                                 // 0x38(0x10)
 	bool                                                         CanBeReEntered;                                    // 0x48(0x1)
 };
 
 
 // Size 0x20
-class BakedStateExitTransition: public None
+struct BakedStateExitTransition
 {
 public:
 	int                                                          CanTakeDelegateIndex;                              // 0x0(0x4)
@@ -3121,12 +3121,12 @@ public:
 	int                                                          TransitionIndex;                                   // 0x8(0x4)
 	bool                                                         bDesiredTransitionReturnValue;                     // 0xc(0x1)
 	bool                                                         bAutomaticRemainingTimeRule;                       // 0xd(0x1)
-	TArray<Int >                                                 PoseEvaluatorLinks;                                // 0x10(0x10)
+	TArray<Int PoseEvaluatorLinks>                               PoseEvaluatorLinks;                                // 0x10(0x10)
 };
 
 
 // Size 0x28
-class AnimationState: public None
+struct AnimationState
 {
 public:
 	TArray<Struct AnimationTransitionRule>                       Transitions;                                       // 0x8(0x10)
@@ -3138,7 +3138,7 @@ public:
 
 
 // Size 0x10
-class AnimationTransitionRule: public None
+struct AnimationTransitionRule
 {
 public:
 	struct FName                                                 RuleToExecute;                                     // 0x0(0x8)
@@ -3148,7 +3148,7 @@ public:
 
 
 // Size 0x48
-class SlotEvaluationPose: public None
+struct SlotEvaluationPose
 {
 public:
 	byte                                                         AdditiveType;                                      // 0x0(0x1)
@@ -3157,7 +3157,7 @@ public:
 
 
 // Size 0x10
-class PerBoneBlendWeights: public None
+struct PerBoneBlendWeights
 {
 public:
 	TArray<Struct PerBoneBlendWeight>                            BoneBlendWeights;                                  // 0x0(0x10)
@@ -3165,7 +3165,7 @@ public:
 
 
 // Size 0x8
-class PerBoneBlendWeight: public None
+struct PerBoneBlendWeight
 {
 public:
 	int                                                          SourceIndex;                                       // 0x0(0x4)
@@ -3174,23 +3174,23 @@ public:
 
 
 // Size 0x28
-class A2CSPose: public None
+struct A2CSPose
 {
 public:
-	TArray<Byte AnimMontageInstance>                             ComponentSpaceFlags;                               // 0x18(0x10)
+	TArray<Byte ComponentSpaceFlags>                             ComponentSpaceFlags;                               // 0x18(0x10)
 };
 
 
 // Size 0x10
-class A2Pose: public None
+struct A2Pose
 {
 public:
-	TArray<Struct ComponentSpaceFlags>                           Bones;                                             // 0x0(0x10)
+	TArray<Struct Transform>                                     Bones;                                             // 0x0(0x10)
 };
 
 
 // Size 0xa0
-class AnimMontageInstance: public None
+struct AnimMontageInstance
 {
 public:
 	Class AnimMontage*                                           Montage;                                           // 0x0(0x8)
@@ -3198,17 +3198,17 @@ public:
 	float                                                        Weight;                                            // 0xc(0x4)
 	float                                                        BlendTime;                                         // 0x10(0x4)
 	float                                                        DefaultBlendTimeMultiplier;                        // 0x14(0x4)
-	TArray<Int >                                                 NextSections;                                      // 0x18(0x10)
-	TArray<Int >                                                 PrevSections;                                      // 0x28(0x10)
+	TArray<Int NextSections>                                     NextSections;                                      // 0x18(0x10)
+	TArray<Int PrevSections>                                     PrevSections;                                      // 0x28(0x10)
 	bool                                                         bPlaying;                                          // 0x38(0x1)
-	TArray<Struct bPlaying>                                      ActiveStateBranchingPoints;                        // 0x68(0x10)
+	TArray<Struct AnimNotifyEvent>                               ActiveStateBranchingPoints;                        // 0x68(0x10)
 	float                                                        Position;                                          // 0x78(0x4)
 	float                                                        PlayRate;                                          // 0x7c(0x4)
 };
 
 
 // Size 0xc
-class BranchingPointMarker: public None
+struct BranchingPointMarker
 {
 public:
 	int                                                          NotifyIndex;                                       // 0x0(0x4)
@@ -3218,7 +3218,7 @@ public:
 
 
 // Size 0x40
-class BranchingPoint: public None
+struct BranchingPoint
 {
 public:
 	struct FName                                                 EventName;                                         // 0x30(0x8)
@@ -3228,7 +3228,7 @@ public:
 
 
 // Size 0x18
-class SlotAnimationTrack: public None
+struct SlotAnimationTrack
 {
 public:
 	struct FName                                                 SlotName;                                          // 0x0(0x8)
@@ -3237,7 +3237,7 @@ public:
 
 
 // Size 0x58
-class CompositeSection: public None
+struct CompositeSection
 {
 public:
 	struct FName                                                 SectionName;                                       // 0x30(0x8)
@@ -3248,7 +3248,7 @@ public:
 
 
 // Size 0x4
-class NavAvoidanceMask: public None
+struct NavAvoidanceMask
 {
 public:
 	bool                                                         bGroup0;                                           // 0x0(0x1)
@@ -3287,14 +3287,14 @@ public:
 
 
 // Size 0x50
-class CharacterMovementComponentPreClothTickFunction: public None
+struct CharacterMovementComponentPreClothTickFunction
 {
 public:
 };
 
 
 // Size 0x8c
-class FindFloorResult: public None
+struct FindFloorResult
 {
 public:
 	bool                                                         bBlockingHit;                                      // 0x0(0x1)
@@ -3307,7 +3307,7 @@ public:
 
 
 // Size 0x2c
-class AtmospherePrecomputeParameters: public None
+struct AtmospherePrecomputeParameters
 {
 public:
 	float                                                        DensityHeight;                                     // 0x0(0x4)
@@ -3325,7 +3325,7 @@ public:
 
 
 // Size 0xc0
-class AttenuationSettings: public None
+struct AttenuationSettings
 {
 public:
 	bool                                                         bAttenuate;                                        // 0x0(0x1)
@@ -3349,7 +3349,7 @@ public:
 
 
 // Size 0x20
-class AudioComponentParam: public None
+struct AudioComponentParam
 {
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
@@ -3361,7 +3361,7 @@ public:
 
 
 // Size 0x130
-class FogVolumeInfo: public None
+struct FogVolumeInfo
 {
 public:
 	Class FogVolumeComponent*                                    Component;                                         // 0x0(0x8)
@@ -3371,7 +3371,7 @@ public:
 
 
 // Size 0x30
-class WaterSimPlane: public None
+struct WaterSimPlane
 {
 public:
 	class                                                        WaterId;                                           // 0x0(0x8)
@@ -3384,7 +3384,7 @@ public:
 
 
 // Size 0x20
-class MurkyRegion: public None
+struct MurkyRegion
 {
 public:
 	bool                                                         Enabled;                                           // 0x0(0x1)
@@ -3397,7 +3397,7 @@ public:
 
 
 // Size 0x310
-class FFTWaterComponentParams: public None
+struct FFTWaterComponentParams
 {
 public:
 	Struct LinearColor                                           AmbientColour;                                     // 0x0(0x10)
@@ -3434,7 +3434,7 @@ public:
 
 
 // Size 0x248
-class FFTWaterComponentParticleParams: public None
+struct FFTWaterComponentParticleParams
 {
 public:
 	int                                                          MaxParticlesPerFrame;                              // 0x0(0x4)
@@ -3444,7 +3444,7 @@ public:
 
 
 // Size 0x58
-class FFTWaterComponentIntersectParticleType: public None
+struct FFTWaterComponentIntersectParticleType
 {
 public:
 	Struct Vector2D                                              VelocityRange;                                     // 0x0(0x8)
@@ -3466,7 +3466,7 @@ public:
 
 
 // Size 0x38
-class FFTWaterComponentWaveParticleType: public None
+struct FFTWaterComponentWaveParticleType
 {
 public:
 	Struct Vector2D                                              SpawnRadiusRange;                                  // 0x0(0x8)
@@ -3480,7 +3480,7 @@ public:
 
 
 // Size 0x28
-class BatchedPoint: public None
+struct BatchedPoint
 {
 public:
 	Struct Vector                                                Position;                                          // 0x0(0xc)
@@ -3492,7 +3492,7 @@ public:
 
 
 // Size 0x34
-class BatchedLine: public None
+struct BatchedLine
 {
 public:
 	Struct Vector                                                Start;                                             // 0x0(0xc)
@@ -3505,7 +3505,7 @@ public:
 
 
 // Size 0x28
-class MaterialSpriteElement: public None
+struct MaterialSpriteElement
 {
 public:
 	Class MaterialInterface*                                     Material;                                          // 0x0(0x8)
@@ -3518,16 +3518,16 @@ public:
 
 
 // Size 0x18
-class CustomProfile: public None
+struct CustomProfile
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<Struct Name>                                          CustomResponses;                                   // 0x8(0x10)
+	TArray<Struct ResponseChannel>                               CustomResponses;                                   // 0x8(0x10)
 };
 
 
 // Size 0x10
-class CustomChannelSetup: public None
+struct CustomChannelSetup
 {
 public:
 	byte                                                         Channel;                                           // 0x0(0x1)
@@ -3539,20 +3539,20 @@ public:
 
 
 // Size 0x60
-class CollisionResponseTemplate: public None
+struct CollisionResponseTemplate
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
 	byte                                                         CollisionEnabled;                                  // 0x8(0x1)
 	struct FName                                                 ObjectTypeName;                                    // 0xc(0x8)
-	TArray<Struct ObjectTypeName>                                CustomResponses;                                   // 0x18(0x10)
+	TArray<Struct ResponseChannel>                               CustomResponses;                                   // 0x18(0x10)
 	Struct FString                                               HelpMessage;                                       // 0x28(0x10)
 	bool                                                         bCanModify;                                        // 0x38(0x1)
 };
 
 
 // Size 0x28
-class AssetEditorOrbitCameraPosition: public None
+struct AssetEditorOrbitCameraPosition
 {
 public:
 	bool                                                         bIsSet;                                            // 0x0(0x1)
@@ -3563,14 +3563,14 @@ public:
 
 
 // Size 0x50
-class MeshSectionInfoMap: public None
+struct MeshSectionInfoMap
 {
 public:
 };
 
 
 // Size 0x8
-class MeshSectionInfo: public None
+struct MeshSectionInfo
 {
 public:
 	int                                                          MaterialIndex;                                     // 0x0(0x4)
@@ -3580,7 +3580,7 @@ public:
 
 
 // Size 0xf8
-class StaticMeshSourceModel: public None
+struct StaticMeshSourceModel
 {
 public:
 	Struct MeshBuildSettings                                     BuildSettings;                                     // 0x0(0x40)
@@ -3594,7 +3594,7 @@ public:
 
 
 // Size 0x1c
-class StaticMeshOptimizationSettings: public None
+struct StaticMeshOptimizationSettings
 {
 public:
 	byte                                                         ReductionMethod;                                   // 0x0(0x1)
@@ -3610,7 +3610,7 @@ public:
 
 
 // Size 0x40
-class MergedCollisionComponentStaticMeshInstanceData: public None
+struct MergedCollisionComponentStaticMeshInstanceData
 {
 public:
 	Struct Transform                                             RelativeTransform;                                 // 0x0(0x30)
@@ -3620,7 +3620,7 @@ public:
 
 
 // Size 0x28
-class StaticMeshComponentLODInfo: public None
+struct StaticMeshComponentLODInfo
 {
 public:
 	TArray<Struct PaintedVertex>                                 PaintedVertices;                                   // 0x10(0x10)
@@ -3628,7 +3628,7 @@ public:
 
 
 // Size 0x14
-class PaintedVertex: public None
+struct PaintedVertex
 {
 public:
 	Struct Vector                                                Position;                                          // 0x0(0xc)
@@ -3638,28 +3638,28 @@ public:
 
 
 // Size 0x28
-class TexturePlatformData: public None
+struct TexturePlatformData
 {
 public:
 };
 
 
 // Size 0x80
-class TextureSource: public None
+struct TextureSource
 {
 public:
 };
 
 
 // Size 0x28
-class ExternalMip: public None
+struct ExternalMip
 {
 public:
 };
 
 
 // Size 0x18
-class FlatWaterMeshTextureOverride: public None
+struct FlatWaterMeshTextureOverride
 {
 public:
 	Class Texture*                                               Texture;                                           // 0x10(0x8)
@@ -3667,14 +3667,14 @@ public:
 
 
 // Size 0xc
-class NameIndexPair: public None
+struct NameIndexPair
 {
 public:
 };
 
 
 // Size 0x8
-class InstancedCoverageMeshLOD: public None
+struct InstancedCoverageMeshLOD
 {
 public:
 	float                                                        LODReduction;                                      // 0x0(0x4)
@@ -3683,14 +3683,14 @@ public:
 
 
 // Size 0x8
-class InstancedStaticMeshMappingInfo: public None
+struct InstancedStaticMeshMappingInfo
 {
 public:
 };
 
 
 // Size 0x50
-class InstancedStaticMeshInstanceData: public None
+struct InstancedStaticMeshInstanceData
 {
 public:
 	Struct Matrix                                                Transform;                                         // 0x0(0x40)
@@ -3700,7 +3700,7 @@ public:
 
 
 // Size 0x28
-class ClusterNode: public None
+struct ClusterNode
 {
 public:
 	Struct Vector                                                BoundMin;                                          // 0x0(0xc)
@@ -3713,7 +3713,7 @@ public:
 
 
 // Size 0x8
-class MobileInstancedStaticMeshLOD: public None
+struct MobileInstancedStaticMeshLOD
 {
 public:
 	float                                                        LODReduction;                                      // 0x0(0x4)
@@ -3722,7 +3722,7 @@ public:
 
 
 // Size 0x58
-class SplineMeshParams: public None
+struct SplineMeshParams
 {
 public:
 	Struct Vector                                                StartPos;                                          // 0x0(0xc)
@@ -3739,7 +3739,7 @@ public:
 
 
 // Size 0x18
-class EngineShowFlagsSetting: public None
+struct EngineShowFlagsSetting
 {
 public:
 	Struct FString                                               ShowFlagName;                                      // 0x0(0x10)
@@ -3748,7 +3748,7 @@ public:
 
 
 // Size 0x98
-class Timeline: public None
+struct Timeline
 {
 public:
 	byte                                                         LengthMode;                                        // 0x0(0x1)
@@ -3768,7 +3768,7 @@ public:
 
 
 // Size 0x30
-class TimelineLinearColorTrack: public None
+struct TimelineLinearColorTrack
 {
 public:
 	Class CurveLinearColor*                                      LinearColorCurve;                                  // 0x0(0x8)
@@ -3778,7 +3778,7 @@ public:
 
 
 // Size 0x30
-class TimelineFloatTrack: public None
+struct TimelineFloatTrack
 {
 public:
 	Class CurveFloat*                                            FloatCurve;                                        // 0x0(0x8)
@@ -3788,7 +3788,7 @@ public:
 
 
 // Size 0x30
-class TimelineVectorTrack: public None
+struct TimelineVectorTrack
 {
 public:
 	Class CurveVector*                                           VectorCurve;                                       // 0x0(0x8)
@@ -3798,7 +3798,7 @@ public:
 
 
 // Size 0x14
-class TimelineEventEntry: public None
+struct TimelineEventEntry
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -3806,63 +3806,63 @@ public:
 
 
 // Size 0x18
-class CompressedOffsetData: public None
+struct CompressedOffsetData
 {
 public:
-	TArray<Int None>                                             OffsetData;                                        // 0x0(0x10)
+	TArray<Int OffsetData>                                       OffsetData;                                        // 0x0(0x10)
 	int                                                          StripSize;                                         // 0x10(0x4)
 };
 
 
 // Size 0x38
-class CompressedTrack: public None
+struct CompressedTrack
 {
 public:
-	TArray<Byte CurveTrack>                                      ByteStream;                                        // 0x0(0x10)
-	TArray<Float >                                               Times;                                             // 0x10(0x10)
+	TArray<Byte ByteStream>                                      ByteStream;                                        // 0x0(0x10)
+	TArray<Float Times>                                          Times;                                             // 0x10(0x10)
 	float                                                        Mins;                                              // 0x20(0x4)
 	float                                                        Ranges;                                            // 0x2c(0x4)
 };
 
 
 // Size 0x18
-class CurveTrack: public None
+struct CurveTrack
 {
 public:
 	struct FName                                                 CurveName;                                         // 0x0(0x8)
-	TArray<Float >                                               CurveWeights;                                      // 0x8(0x10)
+	TArray<Float CurveWeights>                                   CurveWeights;                                      // 0x8(0x10)
 };
 
 
 // Size 0x20
-class ScaleTrack: public None
+struct ScaleTrack
 {
 public:
-	TArray<Struct RotationTrack>                                 ScaleKeys;                                         // 0x0(0x10)
-	TArray<Float >                                               Times;                                             // 0x10(0x10)
+	TArray<Struct Vector>                                        ScaleKeys;                                         // 0x0(0x10)
+	TArray<Float Times>                                          Times;                                             // 0x10(0x10)
 };
 
 
 // Size 0x20
-class RotationTrack: public None
+struct RotationTrack
 {
 public:
-	TArray<Struct TranslationTrack>                              RotKeys;                                           // 0x0(0x10)
-	TArray<Float >                                               Times;                                             // 0x10(0x10)
+	TArray<Struct Quat>                                          RotKeys;                                           // 0x0(0x10)
+	TArray<Float Times>                                          Times;                                             // 0x10(0x10)
 };
 
 
 // Size 0x20
-class TranslationTrack: public None
+struct TranslationTrack
 {
 public:
-	TArray<Struct TrackToSkeletonMap>                            PosKeys;                                           // 0x0(0x10)
-	TArray<Float >                                               Times;                                             // 0x10(0x10)
+	TArray<Struct Vector>                                        PosKeys;                                           // 0x0(0x10)
+	TArray<Float Times>                                          Times;                                             // 0x10(0x10)
 };
 
 
 // Size 0x4
-class TrackToSkeletonMap: public None
+struct TrackToSkeletonMap
 {
 public:
 	int                                                          BoneTreeIndex;                                     // 0x0(0x4)
@@ -3870,7 +3870,7 @@ public:
 
 
 // Size 0x20
-class AnimSequenceTrackContainer: public None
+struct AnimSequenceTrackContainer
 {
 public:
 	TArray<Struct RawAnimSequenceTrack>                          AnimationTracks;                                   // 0x0(0x10)
@@ -3879,17 +3879,17 @@ public:
 
 
 // Size 0x30
-class RawAnimSequenceTrack: public None
+struct RawAnimSequenceTrack
 {
 public:
-	TArray<Struct PerBoneInterpolation>                          PosKeys;                                           // 0x0(0x10)
-	TArray<Struct PosKeys>                                       RotKeys;                                           // 0x10(0x10)
-	TArray<Struct RotKeys>                                       ScaleKeys;                                         // 0x20(0x10)
+	TArray<Struct Vector>                                        PosKeys;                                           // 0x0(0x10)
+	TArray<Struct Quat>                                          RotKeys;                                           // 0x10(0x10)
+	TArray<Struct Vector>                                        ScaleKeys;                                         // 0x20(0x10)
 };
 
 
 // Size 0x10
-class PerBoneInterpolation: public None
+struct PerBoneInterpolation
 {
 public:
 	Struct BoneReference                                         BoneReference;                                     // 0x0(0xc)
@@ -3898,7 +3898,7 @@ public:
 
 
 // Size 0x1c
-class GridBlendSample: public None
+struct GridBlendSample
 {
 public:
 	Struct EditorElement                                         GridElement;                                       // 0x0(0x18)
@@ -3907,7 +3907,7 @@ public:
 
 
 // Size 0x18
-class EditorElement: public None
+struct EditorElement
 {
 public:
 	int                                                          Indices;                                           // 0x0(0x4)
@@ -3916,7 +3916,7 @@ public:
 
 
 // Size 0x18
-class BlendSample: public None
+struct BlendSample
 {
 public:
 	Class AnimSequence*                                          Animation;                                         // 0x0(0x8)
@@ -3925,7 +3925,7 @@ public:
 
 
 // Size 0x20
-class BlendParameter: public None
+struct BlendParameter
 {
 public:
 	Struct FString                                               DisplayName;                                       // 0x0(0x10)
@@ -3936,7 +3936,7 @@ public:
 
 
 // Size 0x8
-class InterpolationParameter: public None
+struct InterpolationParameter
 {
 public:
 	float                                                        InterpolationTime;                                 // 0x0(0x4)
@@ -3945,22 +3945,22 @@ public:
 
 
 // Size 0x10
-class AnimSetMeshLinkup: public None
+struct AnimSetMeshLinkup
 {
 public:
-	TArray<Int None>                                             BoneToTrackTable;                                  // 0x0(0x10)
+	TArray<Int BoneToTrackTable>                                 BoneToTrackTable;                                  // 0x0(0x10)
 };
 
 
 // Size 0x1
-class AssetImportInfo: public None
+struct AssetImportInfo
 {
 public:
 };
 
 
 // Size 0x20
-class LaunchOnTestSettings: public None
+struct LaunchOnTestSettings
 {
 public:
 	Struct FilePath                                              LaunchOnTestmap;                                   // 0x0(0x10)
@@ -3969,7 +3969,7 @@ public:
 
 
 // Size 0x18
-class EditorMapPerformanceTestDefinition: public None
+struct EditorMapPerformanceTestDefinition
 {
 public:
 	Struct FilePath                                              PerformanceTestmap;                                // 0x0(0x10)
@@ -3978,7 +3978,7 @@ public:
 
 
 // Size 0x210
-class BuildPromotionTestSettings: public None
+struct BuildPromotionTestSettings
 {
 public:
 	Struct FilePath                                              DefaultStaticMeshAsset;                            // 0x0(0x10)
@@ -3991,7 +3991,7 @@ public:
 
 
 // Size 0x20
-class BuildPromotionNewProjectSettings: public None
+struct BuildPromotionNewProjectSettings
 {
 public:
 	Struct DirectoryPath                                         NewProjectFolderOverride;                          // 0x0(0x10)
@@ -4000,7 +4000,7 @@ public:
 
 
 // Size 0x20
-class BuildPromotionBlueprintSettings: public None
+struct BuildPromotionBlueprintSettings
 {
 public:
 	Struct FilePath                                              FirstMeshPath;                                     // 0x0(0x10)
@@ -4009,7 +4009,7 @@ public:
 
 
 // Size 0x60
-class BuildPromotionOpenAssetSettings: public None
+struct BuildPromotionOpenAssetSettings
 {
 public:
 	Struct FilePath                                              BlueprintAsset;                                    // 0x0(0x10)
@@ -4022,7 +4022,7 @@ public:
 
 
 // Size 0x150
-class BuildPromotionImportWorkflowSettings: public None
+struct BuildPromotionImportWorkflowSettings
 {
 public:
 	Struct EditorImportWorkflowDefinition                        Diffuse;                                           // 0x0(0x20)
@@ -4040,7 +4040,7 @@ public:
 
 
 // Size 0x20
-class EditorImportWorkflowDefinition: public None
+struct EditorImportWorkflowDefinition
 {
 public:
 	Struct FilePath                                              ImportFilePath;                                    // 0x0(0x10)
@@ -4049,7 +4049,7 @@ public:
 
 
 // Size 0x20
-class ImportFactorySettingValues: public None
+struct ImportFactorySettingValues
 {
 public:
 	Struct FString                                               SettingName;                                       // 0x0(0x10)
@@ -4058,7 +4058,7 @@ public:
 
 
 // Size 0x10
-class ParticleEditorPromotionSettings: public None
+struct ParticleEditorPromotionSettings
 {
 public:
 	Struct FilePath                                              DefaultParticleAsset;                              // 0x0(0x10)
@@ -4066,7 +4066,7 @@ public:
 
 
 // Size 0x30
-class MaterialEditorPromotionSettings: public None
+struct MaterialEditorPromotionSettings
 {
 public:
 	Struct FilePath                                              DefaultMaterialAsset;                              // 0x0(0x10)
@@ -4076,18 +4076,18 @@ public:
 
 
 // Size 0x38
-class EditorImportExportTestDefinition: public None
+struct EditorImportExportTestDefinition
 {
 public:
 	Struct FilePath                                              ImportFilePath;                                    // 0x0(0x10)
 	Struct FString                                               ExportFileExtension;                               // 0x10(0x10)
 	bool                                                         bSkipExport;                                       // 0x20(0x1)
-	TArray<Struct bSkipExport>                                   FactorySettings;                                   // 0x28(0x10)
+	TArray<Struct ImportFactorySettingValues>                    FactorySettings;                                   // 0x28(0x10)
 };
 
 
 // Size 0x60
-class ExternalToolDefinition: public None
+struct ExternalToolDefinition
 {
 public:
 	Struct FString                                               ToolName;                                          // 0x0(0x10)
@@ -4100,7 +4100,7 @@ public:
 
 
 // Size 0x18
-class OpenTestAsset: public None
+struct OpenTestAsset
 {
 public:
 	Struct FilePath                                              AssetToOpen;                                       // 0x0(0x10)
@@ -4109,14 +4109,14 @@ public:
 
 
 // Size 0x3c
-class NavAvoidanceData: public None
+struct NavAvoidanceData
 {
 public:
 };
 
 
 // Size 0x18
-class AnimParentNodeAssetOverride: public None
+struct AnimParentNodeAssetOverride
 {
 public:
 	Class AnimationAsset*                                        NewAsset;                                          // 0x0(0x8)
@@ -4125,7 +4125,7 @@ public:
 
 
 // Size 0x18
-class AnimGroupInfo: public None
+struct AnimGroupInfo
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -4134,7 +4134,7 @@ public:
 
 
 // Size 0x18
-class DataTableCategoryHandle: public None
+struct DataTableCategoryHandle
 {
 public:
 	Class DataTable*                                             DataTable;                                         // 0x0(0x8)
@@ -4144,7 +4144,7 @@ public:
 
 
 // Size 0x10
-class DataTableRowHandle: public None
+struct DataTableRowHandle
 {
 public:
 	Class DataTable*                                             DataTable;                                         // 0x0(0x8)
@@ -4153,7 +4153,7 @@ public:
 
 
 // Size 0x20
-class DialogueWaveParameter: public None
+struct DialogueWaveParameter
 {
 public:
 	Class DialogueWave*                                          DialogueWave;                                      // 0x0(0x8)
@@ -4162,7 +4162,7 @@ public:
 
 
 // Size 0x18
-class DialogueContext: public None
+struct DialogueContext
 {
 public:
 	Class DialogueVoice*                                         Speaker;                                           // 0x0(0x8)
@@ -4171,7 +4171,7 @@ public:
 
 
 // Size 0x70
-class FormatTextArgument: public None
+struct FormatTextArgument
 {
 public:
 	Struct FText                                                 ArgumentName;                                      // 0x0(0x38)
@@ -4180,7 +4180,7 @@ public:
 
 
 // Size 0x10
-class EventGraphFastCallPair: public None
+struct EventGraphFastCallPair
 {
 public:
 	Class Function*                                              FunctionToPatch;                                   // 0x0(0x8)
@@ -4189,63 +4189,63 @@ public:
 
 
 // Size 0x1
-class BlueprintDebugData: public None
+struct BlueprintDebugData
 {
 public:
 };
 
 
 // Size 0x8
-class PointerToUberGraphFrame: public None
+struct PointerToUberGraphFrame
 {
 public:
 };
 
 
 // Size 0x140
-class DebuggingInfoForSingleFunction: public None
+struct DebuggingInfoForSingleFunction
 {
 public:
 };
 
 
 // Size 0x14
-class NodeToCodeAssociation: public None
+struct NodeToCodeAssociation
 {
 public:
 };
 
 
 // Size 0x1
-class AnimBlueprintDebugData: public None
+struct AnimBlueprintDebugData
 {
 public:
 };
 
 
 // Size 0x1
-class AnimationFrameSnapshot: public None
+struct AnimationFrameSnapshot
 {
 public:
 };
 
 
 // Size 0xb0
-class StateMachineDebugData: public None
+struct StateMachineDebugData
 {
 public:
 };
 
 
 // Size 0x20
-class KShapeElem: public None
+struct KShapeElem
 {
 public:
 };
 
 
 // Size 0x50
-class KBoxElem: public None
+struct KBoxElem
 {
 public:
 	Struct Vector                                                Center;                                            // 0x20(0xc)
@@ -4257,17 +4257,17 @@ public:
 
 
 // Size 0x90
-class KConvexElem: public None
+struct KConvexElem
 {
 public:
-	TArray<Struct KSphereElem>                                   VertexData;                                        // 0x20(0x10)
+	TArray<Struct Vector>                                        VertexData;                                        // 0x20(0x10)
 	Struct Box                                                   ElemBox;                                           // 0x30(0x1c)
 	Struct Transform                                             Transform;                                         // 0x50(0x30)
 };
 
 
 // Size 0x30
-class KSphereElem: public None
+struct KSphereElem
 {
 public:
 	Struct Vector                                                Center;                                            // 0x20(0xc)
@@ -4276,7 +4276,7 @@ public:
 
 
 // Size 0x50
-class KSphylElem: public None
+struct KSphylElem
 {
 public:
 	Struct Vector                                                Center;                                            // 0x20(0xc)
@@ -4287,18 +4287,18 @@ public:
 
 
 // Size 0x48
-class KAggregateGeom: public None
+struct KAggregateGeom
 {
 public:
-	TArray<Struct AggregateGeometry2D>                           SphereElems;                                       // 0x0(0x10)
-	TArray<Struct SphereElems>                                   BoxElems;                                          // 0x10(0x10)
-	TArray<Struct BoxElems>                                      SphylElems;                                        // 0x20(0x10)
-	TArray<Struct SphylElems>                                    ConvexElems;                                       // 0x30(0x10)
+	TArray<Struct KSphereElem>                                   SphereElems;                                       // 0x0(0x10)
+	TArray<Struct KBoxElem>                                      BoxElems;                                          // 0x10(0x10)
+	TArray<Struct KSphylElem>                                    SphylElems;                                        // 0x20(0x10)
+	TArray<Struct KConvexElem>                                   ConvexElems;                                       // 0x30(0x10)
 };
 
 
 // Size 0x30
-class AggregateGeometry2D: public None
+struct AggregateGeometry2D
 {
 public:
 	TArray<Struct CircleElement2D>                               CircleElements;                                    // 0x0(0x10)
@@ -4308,15 +4308,15 @@ public:
 
 
 // Size 0x10
-class ConvexElement2D: public None
+struct ConvexElement2D
 {
 public:
-	TArray<Struct BoxElements>                                   VertexData;                                        // 0x0(0x10)
+	TArray<Struct Vector2D>                                      VertexData;                                        // 0x0(0x10)
 };
 
 
 // Size 0x14
-class BoxElement2D: public None
+struct BoxElement2D
 {
 public:
 	Struct Vector2D                                              Center;                                            // 0x0(0x8)
@@ -4327,7 +4327,7 @@ public:
 
 
 // Size 0xc
-class CircleElement2D: public None
+struct CircleElement2D
 {
 public:
 	Struct Vector2D                                              Center;                                            // 0x0(0x8)
@@ -4336,7 +4336,7 @@ public:
 
 
 // Size 0x10
-class InputBlendPose: public None
+struct InputBlendPose
 {
 public:
 	TArray<Struct BranchFilter>                                  BranchFilters;                                     // 0x0(0x10)
@@ -4344,7 +4344,7 @@ public:
 
 
 // Size 0xc
-class BranchFilter: public None
+struct BranchFilter
 {
 public:
 	struct FName                                                 BoneName;                                          // 0x0(0x8)
@@ -4353,10 +4353,10 @@ public:
 
 
 // Size 0x20
-class BuilderPoly: public None
+struct BuilderPoly
 {
 public:
-	TArray<Int None>                                             VertexIndices;                                     // 0x0(0x10)
+	TArray<Int VertexIndices>                                    VertexIndices;                                     // 0x0(0x10)
 	int                                                          Direction;                                         // 0x10(0x4)
 	struct FName                                                 ItemName;                                          // 0x14(0x8)
 	int                                                          PolyFlags;                                         // 0x1c(0x4)
@@ -4364,7 +4364,7 @@ public:
 
 
 // Size 0x18
-class WrappedStringElement: public None
+struct WrappedStringElement
 {
 public:
 	Struct FString                                               Value;                                             // 0x0(0x10)
@@ -4373,7 +4373,7 @@ public:
 
 
 // Size 0x28
-class TextSizingParameters: public None
+struct TextSizingParameters
 {
 public:
 	float                                                        DrawX;                                             // 0x0(0x4)
@@ -4387,7 +4387,7 @@ public:
 
 
 // Size 0x48
-class TextureRenderData: public None
+struct TextureRenderData
 {
 public:
 	Class Texture*                                               RenderTexture;                                     // 0x0(0x8)
@@ -4403,7 +4403,7 @@ public:
 
 
 // Size 0x18
-class CanvasIcon: public None
+struct CanvasIcon
 {
 public:
 	Class Texture*                                               Texture;                                           // 0x0(0x8)
@@ -4415,7 +4415,7 @@ public:
 
 
 // Size 0xc0
-class RPCStats: public None
+struct RPCStats
 {
 public:
 	Struct RPCStatEntry                                          Entries;                                           // 0x0(0x60)
@@ -4423,7 +4423,7 @@ public:
 
 
 // Size 0x60
-class RPCStatEntry: public None
+struct RPCStatEntry
 {
 public:
 	double                                                       AccumulatedPayloadInKB;                            // 0x30(0x8)
@@ -4433,7 +4433,7 @@ public:
 
 
 // Size 0x18
-class SpikeStatEntry: public None
+struct SpikeStatEntry
 {
 public:
 	TArray<Struct FuncStatEntry>                                 WorstRPCs;                                         // 0x0(0x10)
@@ -4442,7 +4442,7 @@ public:
 
 
 // Size 0x20
-class FuncStatEntry: public None
+struct FuncStatEntry
 {
 public:
 	Struct FString                                               Name;                                              // 0x0(0x10)
@@ -4450,23 +4450,23 @@ public:
 
 
 // Size 0x28
-class FuncStatHolder: public None
+struct FuncStatHolder
 {
 public:
 };
 
 
 // Size 0x28
-class AutoCompleteNode: public None
+struct AutoCompleteNode
 {
 public:
 	int                                                          IndexChar;                                         // 0x0(0x4)
-	TArray<Int >                                                 AutoCompleteListIndices;                           // 0x8(0x10)
+	TArray<Int AutoCompleteListIndices>                          AutoCompleteListIndices;                           // 0x8(0x10)
 };
 
 
 // Size 0x1e8
-class RuntimeCurveLinearColor: public None
+struct RuntimeCurveLinearColor
 {
 public:
 	Struct RichCurve                                             ColorCurves;                                       // 0x0(0x78)
@@ -4475,7 +4475,7 @@ public:
 
 
 // Size 0x10
-class CurveTableRowHandle: public None
+struct CurveTableRowHandle
 {
 public:
 	Class CurveTable*                                            CurveTable;                                        // 0x0(0x8)
@@ -4484,7 +4484,7 @@ public:
 
 
 // Size 0x18
-class FeatureToggledStringAssetReferenceEntry: public None
+struct FeatureToggledStringAssetReferenceEntry
 {
 public:
 	Struct StringAssetReference                                  Asset;                                             // 0x0(0x10)
@@ -4493,7 +4493,7 @@ public:
 
 
 // Size 0x38
-class InstancedNavMesh: public None
+struct InstancedNavMesh
 {
 public:
 	Struct Vector                                                Location;                                          // 0x20(0xc)
@@ -4503,7 +4503,7 @@ public:
 
 
 // Size 0x4
-class DestructibleChunkParameters: public None
+struct DestructibleChunkParameters
 {
 public:
 	bool                                                         bIsSupportChunk;                                   // 0x0(0x1)
@@ -4514,7 +4514,7 @@ public:
 
 
 // Size 0x24
-class FractureMaterial: public None
+struct FractureMaterial
 {
 public:
 	Struct Vector2D                                              UVScale;                                           // 0x0(0x8)
@@ -4526,7 +4526,7 @@ public:
 
 
 // Size 0x40
-class AudioQualitySettings: public None
+struct AudioQualitySettings
 {
 public:
 	Struct FText                                                 DisplayName;                                       // 0x0(0x38)
@@ -4535,7 +4535,7 @@ public:
 
 
 // Size 0xc
-class PhysicalSurfaceName: public None
+struct PhysicalSurfaceName
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
@@ -4544,7 +4544,7 @@ public:
 
 
 // Size 0xc
-class DominanceGroupName: public None
+struct DominanceGroupName
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
@@ -4553,7 +4553,7 @@ public:
 
 
 // Size 0xc
-class DominanceGroupPair: public None
+struct DominanceGroupPair
 {
 public:
 	byte                                                         FirstGroupId;                                      // 0x0(0x1)
@@ -4564,7 +4564,7 @@ public:
 
 
 // Size 0x3c
-class TextureLODGroup: public None
+struct TextureLODGroup
 {
 public:
 	byte                                                         Group;                                             // 0x0(0x1)
@@ -4581,7 +4581,7 @@ public:
 
 
 // Size 0x28
-class DialogueContextMapping: public None
+struct DialogueContextMapping
 {
 public:
 	Struct DialogueContext                                       Context;                                           // 0x0(0x18)
@@ -4591,7 +4591,7 @@ public:
 
 
 // Size 0x38
-class RawDistributionFloat: public None
+struct RawDistributionFloat
 {
 public:
 	float                                                        MinValue;                                          // 0x28(0x4)
@@ -4601,7 +4601,7 @@ public:
 
 
 // Size 0x38
-class RawDistributionVector: public None
+struct RawDistributionVector
 {
 public:
 	float                                                        MinValue;                                          // 0x28(0x4)
@@ -4611,7 +4611,7 @@ public:
 
 
 // Size 0x18
-class BlueprintComponentDelegateBinding: public None
+struct BlueprintComponentDelegateBinding
 {
 public:
 	struct FName                                                 ComponentPropertyName;                             // 0x0(0x8)
@@ -4621,7 +4621,7 @@ public:
 
 
 // Size 0x4
-class BlueprintInputDelegateBinding: public None
+struct BlueprintInputDelegateBinding
 {
 public:
 	bool                                                         bConsumeInput;                                     // 0x0(0x1)
@@ -4631,7 +4631,7 @@ public:
 
 
 // Size 0x18
-class BlueprintInputActionDelegateBinding: public None
+struct BlueprintInputActionDelegateBinding
 {
 public:
 	struct FName                                                 InputActionName;                                   // 0x4(0x8)
@@ -4641,7 +4641,7 @@ public:
 
 
 // Size 0x14
-class BlueprintInputAxisDelegateBinding: public None
+struct BlueprintInputAxisDelegateBinding
 {
 public:
 	struct FName                                                 InputAxisName;                                     // 0x4(0x8)
@@ -4650,7 +4650,7 @@ public:
 
 
 // Size 0x30
-class BlueprintInputAxisKeyDelegateBinding: public None
+struct BlueprintInputAxisKeyDelegateBinding
 {
 public:
 	Struct Key                                                   AxisKey;                                           // 0x8(0x20)
@@ -4659,7 +4659,7 @@ public:
 
 
 // Size 0x40
-class BlueprintInputKeyDelegateBinding: public None
+struct BlueprintInputKeyDelegateBinding
 {
 public:
 	Struct InputChord                                            InputChord;                                        // 0x8(0x28)
@@ -4669,7 +4669,7 @@ public:
 
 
 // Size 0x10
-class BlueprintInputTouchDelegateBinding: public None
+struct BlueprintInputTouchDelegateBinding
 {
 public:
 	byte                                                         InputKeyEvent;                                     // 0x4(0x1)
@@ -4678,7 +4678,7 @@ public:
 
 
 // Size 0x10
-class BlueprintInstancedActorDelegateBinding: public None
+struct BlueprintInstancedActorDelegateBinding
 {
 public:
 	struct FName                                                 DelegatePropertyName;                              // 0x0(0x8)
@@ -4687,7 +4687,7 @@ public:
 
 
 // Size 0x20
-class GraphReference: public None
+struct GraphReference
 {
 public:
 	Class EdGraph*                                               MacroGraph;                                        // 0x0(0x8)
@@ -4697,7 +4697,7 @@ public:
 
 
 // Size 0xd0
-class EdGraphSchemaAction_NewNode: public None
+struct EdGraphSchemaAction_NewNode
 {
 public:
 	Class EdGraphNode*                                           NodeTemplate;                                      // 0xc8(0x8)
@@ -4705,7 +4705,7 @@ public:
 
 
 // Size 0xc8
-class EdGraphSchemaAction: public None
+struct EdGraphSchemaAction
 {
 public:
 	Struct FText                                                 MenuDescription;                                   // 0x8(0x38)
@@ -4718,7 +4718,7 @@ public:
 
 
 // Size 0x20
-class PluginRedirect: public None
+struct PluginRedirect
 {
 public:
 	Struct FString                                               OldPluginName;                                     // 0x0(0x10)
@@ -4727,7 +4727,7 @@ public:
 
 
 // Size 0x20
-class StructRedirect: public None
+struct StructRedirect
 {
 public:
 	Struct FString                                               OldStructName;                                     // 0x0(0x10)
@@ -4736,7 +4736,7 @@ public:
 
 
 // Size 0x58
-class ClassRedirect: public None
+struct ClassRedirect
 {
 public:
 	Struct FString                                               ObjectName;                                        // 0x0(0x10)
@@ -4749,7 +4749,7 @@ public:
 
 
 // Size 0x20
-class GameNameRedirect: public None
+struct GameNameRedirect
 {
 public:
 	Struct FString                                               OldGameName;                                       // 0x0(0x10)
@@ -4758,7 +4758,7 @@ public:
 
 
 // Size 0x30
-class ScreenMessageString: public None
+struct ScreenMessageString
 {
 public:
 	Struct FString                                               ScreenMessage;                                     // 0x8(0x10)
@@ -4769,7 +4769,7 @@ public:
 
 
 // Size 0x28
-class DropNoteInfo: public None
+struct DropNoteInfo
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
@@ -4779,7 +4779,7 @@ public:
 
 
 // Size 0x28
-class StatColorMapping: public None
+struct StatColorMapping
 {
 public:
 	Struct FString                                               StatName;                                          // 0x0(0x10)
@@ -4789,7 +4789,7 @@ public:
 
 
 // Size 0x8
-class StatColorMapEntry: public None
+struct StatColorMapEntry
 {
 public:
 	float                                                        In;                                                // 0x0(0x4)
@@ -4798,7 +4798,7 @@ public:
 
 
 // Size 0x298
-class WorldContext: public None
+struct WorldContext
 {
 public:
 	Struct URL                                                   LastURL;                                           // 0xe0(0x70)
@@ -4815,7 +4815,7 @@ public:
 
 
 // Size 0x10
-class NamedNetDriver: public None
+struct NamedNetDriver
 {
 public:
 	Class NetDriver*                                             NetDriver;                                         // 0x0(0x8)
@@ -4823,7 +4823,7 @@ public:
 
 
 // Size 0x10
-class LevelStreamingStatus: public None
+struct LevelStreamingStatus
 {
 public:
 	struct FName                                                 PackageName;                                       // 0x0(0x8)
@@ -4833,7 +4833,7 @@ public:
 
 
 // Size 0x38
-class FullyLoadedPackagesInfo: public None
+struct FullyLoadedPackagesInfo
 {
 public:
 	byte                                                         FullyLoadType;                                     // 0x0(0x1)
@@ -4844,7 +4844,7 @@ public:
 
 
 // Size 0x18
-class NetDriverDefinition: public None
+struct NetDriverDefinition
 {
 public:
 	struct FName                                                 DefName;                                           // 0x0(0x8)
@@ -4854,7 +4854,7 @@ public:
 
 
 // Size 0xb0
-class FontImportOptionsData: public None
+struct FontImportOptionsData
 {
 public:
 	Struct FString                                               FontName;                                          // 0x0(0x10)
@@ -4890,7 +4890,7 @@ public:
 
 
 // Size 0x18
-class FontCharacter: public None
+struct FontCharacter
 {
 public:
 	int                                                          StartU;                                            // 0x0(0x4)
@@ -4903,7 +4903,7 @@ public:
 
 
 // Size 0x10
-class ActiveHapticFeedbackEffect: public None
+struct ActiveHapticFeedbackEffect
 {
 public:
 	Class HapticFeedbackEffect*                                  HapticEffect;                                      // 0x0(0x8)
@@ -4911,7 +4911,7 @@ public:
 
 
 // Size 0x100
-class HapticFeedbackDetails: public None
+struct HapticFeedbackDetails
 {
 public:
 	Struct RuntimeFloatCurve                                     Frequency;                                         // 0x0(0x80)
@@ -4920,14 +4920,14 @@ public:
 
 
 // Size 0x18
-class PoseLink: public None
+struct PoseLink
 {
 public:
 };
 
 
 // Size 0x48
-class AnimNode_HIKBase: public None
+struct AnimNode_HIKBase
 {
 public:
 	Struct ComponentSpacePoseLink                                HIKSettings;                                       // 0x30(0x18)
@@ -4935,14 +4935,14 @@ public:
 
 
 // Size 0x58
-class HIKElements: public None
+struct HIKElements
 {
 public:
 };
 
 
 // Size 0xc
-class HIKBoneMapping: public None
+struct HIKBoneMapping
 {
 public:
 	struct FName                                                 UnrealBoneName;                                    // 0x0(0x8)
@@ -4951,7 +4951,7 @@ public:
 
 
 // Size 0x30
-class HIKBoneTransform: public None
+struct HIKBoneTransform
 {
 public:
 	int                                                          BoneID;                                            // 0x0(0x4)
@@ -4962,7 +4962,7 @@ public:
 
 
 // Size 0x28
-class ComponentOverrideRecord: public None
+struct ComponentOverrideRecord
 {
 public:
 	Class ActorComponent*                                        ComponentTemplate;                                 // 0x0(0x8)
@@ -4971,7 +4971,7 @@ public:
 
 
 // Size 0x20
-class ComponentKey: public None
+struct ComponentKey
 {
 public:
 	class                                                        OwnerClass;                                        // 0x0(0x8)
@@ -4981,7 +4981,7 @@ public:
 
 
 // Size 0x58
-class InputCombinedAxisKeyMapping: public None
+struct InputCombinedAxisKeyMapping
 {
 public:
 	struct FName                                                 AxisName;                                          // 0x0(0x8)
@@ -4995,7 +4995,7 @@ public:
 
 
 // Size 0x30
-class InputAxisKeyMapping: public None
+struct InputAxisKeyMapping
 {
 public:
 	struct FName                                                 AxisName;                                          // 0x0(0x8)
@@ -5005,7 +5005,7 @@ public:
 
 
 // Size 0x30
-class InputActionKeyMapping: public None
+struct InputActionKeyMapping
 {
 public:
 	struct FName                                                 ActionName;                                        // 0x0(0x8)
@@ -5018,7 +5018,7 @@ public:
 
 
 // Size 0x18
-class InputAxisConfigEntry: public None
+struct InputAxisConfigEntry
 {
 public:
 	struct FName                                                 AxisKeyName;                                       // 0x0(0x8)
@@ -5027,7 +5027,7 @@ public:
 
 
 // Size 0x10
-class InputAxisProperties: public None
+struct InputAxisProperties
 {
 public:
 	float                                                        DeadZone;                                          // 0x0(0x4)
@@ -5038,7 +5038,7 @@ public:
 
 
 // Size 0x38
-class KeyBind: public None
+struct KeyBind
 {
 public:
 	Struct Key                                                   Key;                                               // 0x0(0x20)
@@ -5055,7 +5055,7 @@ public:
 
 
 // Size 0x30
-class CurveEdTab: public None
+struct CurveEdTab
 {
 public:
 	Struct FString                                               TabName;                                           // 0x0(0x10)
@@ -5068,7 +5068,7 @@ public:
 
 
 // Size 0x38
-class CurveEdEntry: public None
+struct CurveEdEntry
 {
 public:
 	Class Object*                                                CurveObject;                                       // 0x0(0x8)
@@ -5084,7 +5084,7 @@ public:
 
 
 // Size 0x18
-class InterpEdSelKey: public None
+struct InterpEdSelKey
 {
 public:
 	Class InterpGroup*                                           Group;                                             // 0x0(0x8)
@@ -5095,7 +5095,7 @@ public:
 
 
 // Size 0x30
-class CameraPreviewInfo: public None
+struct CameraPreviewInfo
 {
 public:
 	class                                                        PawnClass;                                         // 0x0(0x8)
@@ -5107,18 +5107,18 @@ public:
 
 
 // Size 0x28
-class SubTrackGroup: public None
+struct SubTrackGroup
 {
 public:
 	Struct FString                                               GroupName;                                         // 0x0(0x10)
-	TArray<Int >                                                 TrackIndices;                                      // 0x10(0x10)
+	TArray<Int TrackIndices>                                     TrackIndices;                                      // 0x10(0x10)
 	bool                                                         bIsCollapsed;                                      // 0x20(0x1)
 	bool                                                         bIsSelected;                                       // 0x20(0x1)
 };
 
 
 // Size 0x20
-class SupportedSubTrackInfo: public None
+struct SupportedSubTrackInfo
 {
 public:
 	class                                                        SupportedClass;                                    // 0x0(0x8)
@@ -5128,7 +5128,7 @@ public:
 
 
 // Size 0x8
-class BoolTrackKey: public None
+struct BoolTrackKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -5137,7 +5137,7 @@ public:
 
 
 // Size 0x14
-class DirectorTrackCut: public None
+struct DirectorTrackCut
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -5148,7 +5148,7 @@ public:
 
 
 // Size 0xc
-class EventTrackKey: public None
+struct EventTrackKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -5157,7 +5157,7 @@ public:
 
 
 // Size 0x20
-class AnimControlTrackKey: public None
+struct AnimControlTrackKey
 {
 public:
 	float                                                        StartTime;                                         // 0x0(0x4)
@@ -5171,7 +5171,7 @@ public:
 
 
 // Size 0x10
-class InterpLookupTrack: public None
+struct InterpLookupTrack
 {
 public:
 	TArray<Struct InterpLookupPoint>                             Points;                                            // 0x0(0x10)
@@ -5179,7 +5179,7 @@ public:
 
 
 // Size 0xc
-class InterpLookupPoint: public None
+struct InterpLookupPoint
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -5188,7 +5188,7 @@ public:
 
 
 // Size 0xc
-class ParticleReplayTrackKey: public None
+struct ParticleReplayTrackKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -5198,7 +5198,7 @@ public:
 
 
 // Size 0x8
-class ToggleTrackKey: public None
+struct ToggleTrackKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -5207,7 +5207,7 @@ public:
 
 
 // Size 0x18
-class SoundTrackKey: public None
+struct SoundTrackKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -5218,7 +5218,7 @@ public:
 
 
 // Size 0x8
-class VisibilityTrackKey: public None
+struct VisibilityTrackKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
@@ -5228,7 +5228,7 @@ public:
 
 
 // Size 0x10
-class LayerActorStats: public None
+struct LayerActorStats
 {
 public:
 	class                                                        Type;                                              // 0x0(0x8)
@@ -5237,7 +5237,7 @@ public:
 
 
 // Size 0x40
-class ClientReceiveData: public None
+struct ClientReceiveData
 {
 public:
 	Class PlayerController*                                      LocalPC;                                           // 0x0(0x8)
@@ -5251,7 +5251,7 @@ public:
 
 
 // Size 0x48
-class CustomInput: public None
+struct CustomInput
 {
 public:
 	Struct FString                                               InputName;                                         // 0x0(0x10)
@@ -5260,7 +5260,7 @@ public:
 
 
 // Size 0x40
-class FunctionExpressionOutput: public None
+struct FunctionExpressionOutput
 {
 public:
 	Class MaterialExpressionFunctionOutput*                      ExpressionOutput;                                  // 0x0(0x8)
@@ -5270,7 +5270,7 @@ public:
 
 
 // Size 0x50
-class FunctionExpressionInput: public None
+struct FunctionExpressionInput
 {
 public:
 	Class MaterialExpressionFunctionInput*                       ExpressionInput;                                   // 0x0(0x8)
@@ -5280,7 +5280,7 @@ public:
 
 
 // Size 0x18
-class MaterialParameterCollectionInfo: public None
+struct MaterialParameterCollectionInfo
 {
 public:
 	Struct Guid                                                  StateId;                                           // 0x0(0x10)
@@ -5289,7 +5289,7 @@ public:
 
 
 // Size 0x18
-class MaterialFunctionInfo: public None
+struct MaterialFunctionInfo
 {
 public:
 	Struct Guid                                                  StateId;                                           // 0x0(0x10)
@@ -5298,7 +5298,7 @@ public:
 
 
 // Size 0x84
-class MaterialInstanceBasePropertyOverrides: public None
+struct MaterialInstanceBasePropertyOverrides
 {
 public:
 	bool                                                         bOverride_OpacityMaskClipValue;                    // 0x0(0x1)
@@ -5362,7 +5362,7 @@ public:
 
 
 // Size 0x28
-class VectorParameterValue: public None
+struct VectorParameterValue
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -5372,7 +5372,7 @@ public:
 
 
 // Size 0x20
-class TextureParameterValue: public None
+struct TextureParameterValue
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -5382,7 +5382,7 @@ public:
 
 
 // Size 0x1c
-class ScalarParameterValue: public None
+struct ScalarParameterValue
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -5392,7 +5392,7 @@ public:
 
 
 // Size 0x28
-class FontParameterValue: public None
+struct FontParameterValue
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -5403,7 +5403,7 @@ public:
 
 
 // Size 0x28
-class CollectionVectorParameter: public None
+struct CollectionVectorParameter
 {
 public:
 	Struct LinearColor                                           DefaultValue;                                      // 0x18(0x10)
@@ -5411,7 +5411,7 @@ public:
 
 
 // Size 0x18
-class CollectionParameterBase: public None
+struct CollectionParameterBase
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -5420,7 +5420,7 @@ public:
 
 
 // Size 0x1c
-class CollectionScalarParameter: public None
+struct CollectionScalarParameter
 {
 public:
 	float                                                        DefaultValue;                                      // 0x18(0x4)
@@ -5428,7 +5428,7 @@ public:
 
 
 // Size 0x18
-class NavCollisionBox: public None
+struct NavCollisionBox
 {
 public:
 	Struct Vector                                                Offset;                                            // 0x0(0xc)
@@ -5437,7 +5437,7 @@ public:
 
 
 // Size 0x14
-class NavCollisionCylinder: public None
+struct NavCollisionCylinder
 {
 public:
 	Struct Vector                                                Offset;                                            // 0x0(0xc)
@@ -5447,7 +5447,7 @@ public:
 
 
 // Size 0x14
-class ParticleBurst: public None
+struct ParticleBurst
 {
 public:
 	int                                                          Count;                                             // 0x0(0x4)
@@ -5459,7 +5459,7 @@ public:
 
 
 // Size 0x20
-class ParticleRandomSeedInfo: public None
+struct ParticleRandomSeedInfo
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -5467,12 +5467,12 @@ public:
 	bool                                                         bInstanceSeedIsIndex;                              // 0x8(0x1)
 	bool                                                         bResetSeedOnEmitterLooping;                        // 0x8(0x1)
 	bool                                                         bRandomlySelectSeedArray;                          // 0x8(0x1)
-	TArray<Int >                                                 RandomSeeds;                                       // 0x10(0x10)
+	TArray<Int RandomSeeds>                                      RandomSeeds;                                       // 0x10(0x10)
 };
 
 
 // Size 0x18
-class ParticleCurvePair: public None
+struct ParticleCurvePair
 {
 public:
 	Struct FString                                               CurveName;                                         // 0x0(0x10)
@@ -5481,7 +5481,7 @@ public:
 
 
 // Size 0x4
-class BeamModifierOptions: public None
+struct BeamModifierOptions
 {
 public:
 	bool                                                         bModify;                                           // 0x0(0x1)
@@ -5491,7 +5491,7 @@ public:
 
 
 // Size 0x28
-class ParticleEvent_GenerateInfo: public None
+struct ParticleEvent_GenerateInfo
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
@@ -5507,7 +5507,7 @@ public:
 
 
 // Size 0x28
-class ParticleEventGPU_GenerateInfo: public None
+struct ParticleEventGPU_GenerateInfo
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
@@ -5519,7 +5519,7 @@ public:
 
 
 // Size 0x14
-class LocationBoneSocketInfo: public None
+struct LocationBoneSocketInfo
 {
 public:
 	struct FName                                                 BoneSocketName;                                    // 0x0(0x8)
@@ -5528,7 +5528,7 @@ public:
 
 
 // Size 0x10
-class PrimitiveSphereEmitterAngleRanges: public None
+struct PrimitiveSphereEmitterAngleRanges
 {
 public:
 	Struct Vector2D                                              HorizontalAngle;                                   // 0x0(0x8)
@@ -5537,7 +5537,7 @@ public:
 
 
 // Size 0x4
-class OrbitOptions: public None
+struct OrbitOptions
 {
 public:
 	bool                                                         bProcessDuringSpawn;                               // 0x0(0x1)
@@ -5547,7 +5547,7 @@ public:
 
 
 // Size 0x50
-class EmitterDynamicParameter: public None
+struct EmitterDynamicParameter
 {
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
@@ -5560,7 +5560,7 @@ public:
 
 
 // Size 0x10
-class RotationAboutAxisParameters: public None
+struct RotationAboutAxisParameters
 {
 public:
 	Struct Vector                                                Rotation;                                          // 0x0(0xc)
@@ -5570,7 +5570,7 @@ public:
 
 
 // Size 0xc
-class BeamTargetData: public None
+struct BeamTargetData
 {
 public:
 	struct FName                                                 TargetName;                                        // 0x0(0x8)
@@ -5579,14 +5579,14 @@ public:
 
 
 // Size 0xa00
-class GPUSpriteResourceData: public None
+struct GPUSpriteResourceData
 {
 public:
-	TArray<Struct GPUSpriteEmitterInfo>                          QuantizedColorSamples;                             // 0x0(0x10)
-	TArray<Struct QuantizedColorSamples>                         QuantizedMiscSamples;                              // 0x10(0x10)
-	TArray<Struct QuantizedMiscSamples>                          QuantizedDynamicParamSamples;                      // 0x20(0x10)
-	TArray<Struct QuantizedDynamicParamSamples>                  QuantizedSimulationAttrSamples;                    // 0x30(0x10)
-	TArray<Struct QuantizedSimulationAttrSamples>                QuantizedSizeOverVelocitySamples;                  // 0x40(0x10)
+	TArray<Struct Color>                                         QuantizedColorSamples;                             // 0x0(0x10)
+	TArray<Struct Color>                                         QuantizedMiscSamples;                              // 0x10(0x10)
+	TArray<Struct Color>                                         QuantizedDynamicParamSamples;                      // 0x20(0x10)
+	TArray<Struct Color>                                         QuantizedSimulationAttrSamples;                    // 0x30(0x10)
+	TArray<Struct Color>                                         QuantizedSizeOverVelocitySamples;                  // 0x40(0x10)
 	Struct Vector4                                               ColorScale;                                        // 0x50(0x10)
 	Struct Vector4                                               ColorBias;                                         // 0x60(0x10)
 	Struct Vector4                                               MiscScale;                                         // 0x70(0x10)
@@ -5631,7 +5631,7 @@ public:
 
 
 // Size 0x2a0
-class GPUSpriteEmitterInfo: public None
+struct GPUSpriteEmitterInfo
 {
 public:
 	Class ParticleModuleRequired*                                RequiredModule;                                    // 0x0(0x8)
@@ -5679,7 +5679,7 @@ public:
 
 
 // Size 0x70
-class GPUSpriteLocalVectorFieldInfo: public None
+struct GPUSpriteLocalVectorFieldInfo
 {
 public:
 	Class VectorField*                                           Field;                                             // 0x0(0x8)
@@ -5697,7 +5697,7 @@ public:
 
 
 // Size 0x80
-class VelocityConeGroupParams: public None
+struct VelocityConeGroupParams
 {
 public:
 	Struct RawDistributionFloat                                  Angle;                                             // 0x0(0x38)
@@ -5707,29 +5707,29 @@ public:
 
 
 // Size 0x10
-class ParticleSystemReplayFrame: public None
+struct ParticleSystemReplayFrame
 {
 public:
 };
 
 
 // Size 0x10
-class ParticleEmitterReplayFrame: public None
+struct ParticleEmitterReplayFrame
 {
 public:
 };
 
 
 // Size 0x10
-class DelegateArray: public None
+struct DelegateArray
 {
 public:
-	TArray<Delegate PurchaseInfo>                                Delegates;                                         // 0x0(0x10)
+	TArray<Delegate Delegates>                                   Delegates;                                         // 0x0(0x10)
 };
 
 
 // Size 0x40
-class PurchaseInfo: public None
+struct PurchaseInfo
 {
 public:
 	Struct FString                                               Identifier;                                        // 0x0(0x10)
@@ -5740,7 +5740,7 @@ public:
 
 
 // Size 0x20
-class DebugDisplayProperty: public None
+struct DebugDisplayProperty
 {
 public:
 	Class Object*                                                Obj;                                               // 0x0(0x8)
@@ -5749,7 +5749,7 @@ public:
 
 
 // Size 0x28
-class TransformBase: public None
+struct TransformBase
 {
 public:
 	struct FName                                                 Node;                                              // 0x0(0x8)
@@ -5758,7 +5758,7 @@ public:
 
 
 // Size 0x10
-class TransformBaseConstraint: public None
+struct TransformBaseConstraint
 {
 public:
 	TArray<Struct RigTransformConstraint>                        TransformConstraints;                              // 0x0(0x10)
@@ -5766,7 +5766,7 @@ public:
 
 
 // Size 0x10
-class RigTransformConstraint: public None
+struct RigTransformConstraint
 {
 public:
 	byte                                                         TranformType;                                      // 0x0(0x1)
@@ -5776,7 +5776,7 @@ public:
 
 
 // Size 0x60
-class Node: public None
+struct Node
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -5788,7 +5788,7 @@ public:
 
 
 // Size 0x88
-class DestructibleParameters: public None
+struct DestructibleParameters
 {
 public:
 	Struct DestructibleDamageParameters                          DamageParameters;                                  // 0x0(0x1c)
@@ -5801,7 +5801,7 @@ public:
 
 
 // Size 0x4
-class DestructibleParametersFlag: public None
+struct DestructibleParametersFlag
 {
 public:
 	bool                                                         bAccumulateDamage;                                 // 0x0(0x1)
@@ -5817,7 +5817,7 @@ public:
 
 
 // Size 0x1
-class DestructibleDepthParameters: public None
+struct DestructibleDepthParameters
 {
 public:
 	byte                                                         ImpactDamageOverride;                              // 0x0(0x1)
@@ -5825,7 +5825,7 @@ public:
 
 
 // Size 0x14
-class DestructibleSpecialHierarchyDepths: public None
+struct DestructibleSpecialHierarchyDepths
 {
 public:
 	int                                                          SupportDepth;                                      // 0x0(0x4)
@@ -5837,7 +5837,7 @@ public:
 
 
 // Size 0x10
-class DestructibleAdvancedParameters: public None
+struct DestructibleAdvancedParameters
 {
 public:
 	float                                                        DamageCap;                                         // 0x0(0x4)
@@ -5848,7 +5848,7 @@ public:
 
 
 // Size 0x2c
-class DestructibleDebrisParameters: public None
+struct DestructibleDebrisParameters
 {
 public:
 	float                                                        DebrisLifetimeMin;                                 // 0x0(0x4)
@@ -5860,7 +5860,7 @@ public:
 
 
 // Size 0x1c
-class DestructibleDamageParameters: public None
+struct DestructibleDamageParameters
 {
 public:
 	float                                                        DamageThreshold;                                   // 0x0(0x4)
@@ -5874,14 +5874,14 @@ public:
 
 
 // Size 0x8
-class SoundNodeEditorData: public None
+struct SoundNodeEditorData
 {
 public:
 };
 
 
 // Size 0x20
-class SoundGroup: public None
+struct SoundGroup
 {
 public:
 	byte                                                         SoundGroup;                                        // 0x0(0x1)
@@ -5892,14 +5892,14 @@ public:
 
 
 // Size 0x20
-class StreamedAudioPlatformData: public None
+struct StreamedAudioPlatformData
 {
 public:
 };
 
 
 // Size 0x10
-class PassiveSoundMixModifier: public None
+struct PassiveSoundMixModifier
 {
 public:
 	Class SoundMix*                                              SoundMix;                                          // 0x0(0x8)
@@ -5909,7 +5909,7 @@ public:
 
 
 // Size 0x24
-class SoundClassProperties: public None
+struct SoundClassProperties
 {
 public:
 	float                                                        Volume;                                            // 0x0(0x4)
@@ -5931,14 +5931,14 @@ public:
 
 
 // Size 0x8
-class SoundClassEditorData: public None
+struct SoundClassEditorData
 {
 public:
 };
 
 
 // Size 0x18
-class SoundClassAdjuster: public None
+struct SoundClassAdjuster
 {
 public:
 	Class SoundClass*                                            SoundClassObject;                                  // 0x0(0x8)
@@ -5950,7 +5950,7 @@ public:
 
 
 // Size 0x28
-class AudioEQEffect: public None
+struct AudioEQEffect
 {
 public:
 	float                                                        HFFrequency;                                       // 0x8(0x4)
@@ -5964,7 +5964,7 @@ public:
 
 
 // Size 0x14
-class DistanceDatum: public None
+struct DistanceDatum
 {
 public:
 	float                                                        FadeInDistanceStart;                               // 0x0(0x4)
@@ -5976,7 +5976,7 @@ public:
 
 
 // Size 0x20
-class ModulatorContinuousParams: public None
+struct ModulatorContinuousParams
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
@@ -5990,7 +5990,7 @@ public:
 
 
 // Size 0x24
-class SubsurfaceProfileStruct: public None
+struct SubsurfaceProfileStruct
 {
 public:
 	float                                                        ScatterRadius;                                     // 0x0(0x4)
@@ -6000,7 +6000,7 @@ public:
 
 
 // Size 0x18
-class TTLinearColorTrack: public None
+struct TTLinearColorTrack
 {
 public:
 	Class CurveLinearColor*                                      CurveLinearColor;                                  // 0x10(0x8)
@@ -6008,7 +6008,7 @@ public:
 
 
 // Size 0xc
-class TTTrackBase: public None
+struct TTTrackBase
 {
 public:
 	struct FName                                                 TrackName;                                         // 0x0(0x8)
@@ -6017,7 +6017,7 @@ public:
 
 
 // Size 0x18
-class TTVectorTrack: public None
+struct TTVectorTrack
 {
 public:
 	Class CurveVector*                                           CurveVector;                                       // 0x10(0x8)
@@ -6025,7 +6025,7 @@ public:
 
 
 // Size 0x18
-class TTFloatTrack: public None
+struct TTFloatTrack
 {
 public:
 	Class CurveFloat*                                            CurveFloat;                                        // 0x10(0x8)
@@ -6033,7 +6033,7 @@ public:
 
 
 // Size 0x18
-class TTEventTrack: public None
+struct TTEventTrack
 {
 public:
 	Class CurveFloat*                                            CurveKeys;                                         // 0x10(0x8)
@@ -6041,7 +6041,7 @@ public:
 
 
 // Size 0x78
-class TouchInputControl: public None
+struct TouchInputControl
 {
 public:
 	Class Texture2D*                                             Image1;                                            // 0x0(0x8)
@@ -6057,7 +6057,7 @@ public:
 
 
 // Size 0xc
-class AnimationRecordingSettings: public None
+struct AnimationRecordingSettings
 {
 public:
 	bool                                                         bRecordInWorldSpace;                               // 0x0(0x1)
@@ -6069,7 +6069,7 @@ public:
 
 
 // Size 0x70
-class AnimNode_ApplyAdditive: public None
+struct AnimNode_ApplyAdditive
 {
 public:
 	Struct PoseLink                                              Base;                                              // 0x30(0x18)
@@ -6080,7 +6080,7 @@ public:
 
 
 // Size 0x40
-class AnimNode_AssetPlayerBase: public None
+struct AnimNode_AssetPlayerBase
 {
 public:
 	bool                                                         bIgnoreForRelevancyTest;                           // 0x30(0x1)
@@ -6090,22 +6090,22 @@ public:
 
 
 // Size 0xa8
-class AnimNode_BlendListBase: public None
+struct AnimNode_BlendListBase
 {
 public:
-	TArray<Struct AnimNode_BlendListByBool>                      BlendPose;                                         // 0x30(0x10)
-	TArray<Float >                                               BlendTime;                                         // 0x40(0x10)
+	TArray<Struct PoseLink>                                      BlendPose;                                         // 0x30(0x10)
+	TArray<Float BlendTime>                                      BlendTime;                                         // 0x40(0x10)
 	byte                                                         BlendType;                                         // 0x50(0x1)
 	Class CurveFloat*                                            CustomBlendCurve;                                  // 0x58(0x8)
-	TArray<Struct CustomBlendCurve>                              Blends;                                            // 0x60(0x10)
-	TArray<Float >                                               BlendWeights;                                      // 0x70(0x10)
-	TArray<Float >                                               RemainingBlendTimes;                               // 0x80(0x10)
+	TArray<Struct AlphaBlend>                                    Blends;                                            // 0x60(0x10)
+	TArray<Float BlendWeights>                                   BlendWeights;                                      // 0x70(0x10)
+	TArray<Float RemainingBlendTimes>                            RemainingBlendTimes;                               // 0x80(0x10)
 	int                                                          LastActiveChildIndex;                              // 0x90(0x4)
 };
 
 
 // Size 0xb0
-class AnimNode_BlendListByBool: public None
+struct AnimNode_BlendListByBool
 {
 public:
 	bool                                                         bActiveValue;                                      // 0xa8(0x1)
@@ -6113,16 +6113,16 @@ public:
 
 
 // Size 0xc0
-class AnimNode_BlendListByEnum: public None
+struct AnimNode_BlendListByEnum
 {
 public:
-	TArray<Int None>                                             EnumToPoseIndex;                                   // 0xa8(0x10)
+	TArray<Int EnumToPoseIndex>                                  EnumToPoseIndex;                                   // 0xa8(0x10)
 	byte                                                         ActiveEnumValue;                                   // 0xb8(0x1)
 };
 
 
 // Size 0xb0
-class AnimNode_BlendListByInt: public None
+struct AnimNode_BlendListByInt
 {
 public:
 	int                                                          ActiveChildIndex;                                  // 0xa8(0x4)
@@ -6130,16 +6130,16 @@ public:
 
 
 // Size 0xc0
-class AnimNode_BlendListByObject: public None
+struct AnimNode_BlendListByObject
 {
 public:
 	class                                                        ActiveTypeValue;                                   // 0xa8(0x8)
-	TArray<Class ActiveTypeValue>                                ObjectToPoseIndex;                                 // 0xb0(0x10)
+	TArray<Class ObjectToPoseIndex>                              ObjectToPoseIndex;                                 // 0xb0(0x10)
 };
 
 
 // Size 0x110
-class AnimNode_BlendSpacePlayer: public None
+struct AnimNode_BlendSpacePlayer
 {
 public:
 	float                                                        X;                                                 // 0x40(0x4)
@@ -6151,12 +6151,12 @@ public:
 	int                                                          GroupIndex;                                        // 0x60(0x4)
 	byte                                                         GroupRole;                                         // 0x64(0x1)
 	Struct BlendFilter                                           BlendFilter;                                       // 0x68(0x90)
-	TArray<Struct BlendFilter>                                   BlendSampleDataCache;                              // 0xf8(0x10)
+	TArray<Struct BlendSampleData>                               BlendSampleDataCache;                              // 0xf8(0x10)
 };
 
 
 // Size 0x118
-class AnimNode_BlendSpaceEvaluator: public None
+struct AnimNode_BlendSpaceEvaluator
 {
 public:
 	float                                                        NormalizedTime;                                    // 0x110(0x4)
@@ -6164,7 +6164,7 @@ public:
 
 
 // Size 0xc0
-class AnimNode_HIKFloorContact: public None
+struct AnimNode_HIKFloorContact
 {
 public:
 	bool                                                         FeetContact;                                       // 0x48(0x1)
@@ -6196,7 +6196,7 @@ public:
 
 
 // Size 0x88
-class AnimNode_HIKLookAt: public None
+struct AnimNode_HIKLookAt
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6213,7 +6213,7 @@ public:
 
 
 // Size 0x60
-class AnimNode_HIKOffset: public None
+struct AnimNode_HIKOffset
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6225,7 +6225,7 @@ public:
 
 
 // Size 0x58
-class AnimNode_HIKPin: public None
+struct AnimNode_HIKPin
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6236,7 +6236,7 @@ public:
 
 
 // Size 0x60
-class AnimNode_HIKPlant: public None
+struct AnimNode_HIKPlant
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6250,7 +6250,7 @@ public:
 
 
 // Size 0x50
-class AnimNode_HIKPull: public None
+struct AnimNode_HIKPull
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6259,7 +6259,7 @@ public:
 
 
 // Size 0x80
-class AnimNode_HIKReach: public None
+struct AnimNode_HIKReach
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6274,7 +6274,7 @@ public:
 
 
 // Size 0x70
-class AnimNode_HIKReachRotator: public None
+struct AnimNode_HIKReachRotator
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6288,7 +6288,7 @@ public:
 
 
 // Size 0x98
-class AnimNode_HIKRelativePlant: public None
+struct AnimNode_HIKRelativePlant
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6306,7 +6306,7 @@ public:
 
 
 // Size 0x50
-class AnimNode_HIKResist: public None
+struct AnimNode_HIKResist
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6315,7 +6315,7 @@ public:
 
 
 // Size 0x50
-class AnimNode_HIKSetProperty: public None
+struct AnimNode_HIKSetProperty
 {
 public:
 	byte                                                         Property;                                          // 0x48(0x1)
@@ -6324,7 +6324,7 @@ public:
 
 
 // Size 0x80
-class AnimNode_HIKSolve: public None
+struct AnimNode_HIKSolve
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6352,7 +6352,7 @@ public:
 
 
 // Size 0x58
-class AnimNode_HIKTest: public None
+struct AnimNode_HIKTest
 {
 public:
 	float                                                        Alpha;                                             // 0x48(0x4)
@@ -6362,24 +6362,24 @@ public:
 
 
 // Size 0xa0
-class AnimNode_LayeredBoneBlend: public None
+struct AnimNode_LayeredBoneBlend
 {
 public:
 	Struct PoseLink                                              BasePose;                                          // 0x30(0x18)
-	TArray<Struct BasePose>                                      BlendPoses;                                        // 0x48(0x10)
-	TArray<Struct BlendPoses>                                    LayerSetup;                                        // 0x58(0x10)
-	TArray<Float >                                               BlendWeights;                                      // 0x68(0x10)
+	TArray<Struct PoseLink>                                      BlendPoses;                                        // 0x48(0x10)
+	TArray<Struct InputBlendPose>                                LayerSetup;                                        // 0x58(0x10)
+	TArray<Float BlendWeights>                                   BlendWeights;                                      // 0x68(0x10)
 	bool                                                         bMeshSpaceRotationBlend;                           // 0x78(0x1)
 	byte                                                         CurveBlendOption;                                  // 0x79(0x1)
 };
 
 
 // Size 0x70
-class AnimNode_MultiWayBlend: public None
+struct AnimNode_MultiWayBlend
 {
 public:
-	TArray<Struct AnimNode_MeshSpaceRefPose>                     Poses;                                             // 0x30(0x10)
-	TArray<Float >                                               DesiredAlphas;                                     // 0x40(0x10)
+	TArray<Struct PoseLink>                                      Poses;                                             // 0x30(0x10)
+	TArray<Float DesiredAlphas>                                  DesiredAlphas;                                     // 0x40(0x10)
 	bool                                                         bAdditiveNode;                                     // 0x50(0x1)
 	bool                                                         bNormalizeAlpha;                                   // 0x51(0x1)
 	Struct InputScaleBias                                        AlphaScaleBias;                                    // 0x54(0x8)
@@ -6387,14 +6387,14 @@ public:
 
 
 // Size 0x30
-class AnimNode_MeshSpaceRefPose: public None
+struct AnimNode_MeshSpaceRefPose
 {
 public:
 };
 
 
 // Size 0x38
-class AnimNode_RefPose: public None
+struct AnimNode_RefPose
 {
 public:
 	byte                                                         RefPoseType;                                       // 0x30(0x1)
@@ -6402,7 +6402,7 @@ public:
 
 
 // Size 0x48
-class AnimNode_Root: public None
+struct AnimNode_Root
 {
 public:
 	Struct PoseLink                                              Result;                                            // 0x30(0x18)
@@ -6410,7 +6410,7 @@ public:
 
 
 // Size 0x60
-class AnimNode_RotateRootBone: public None
+struct AnimNode_RotateRootBone
 {
 public:
 	Struct PoseLink                                              BasePose;                                          // 0x30(0x18)
@@ -6421,7 +6421,7 @@ public:
 
 
 // Size 0x128
-class AnimNode_RotationOffsetBlendSpace: public None
+struct AnimNode_RotationOffsetBlendSpace
 {
 public:
 	Struct PoseLink                                              BasePose;                                          // 0x110(0x18)
@@ -6429,7 +6429,7 @@ public:
 
 
 // Size 0x90
-class AnimNode_SaveCachedPose: public None
+struct AnimNode_SaveCachedPose
 {
 public:
 	Struct PoseLink                                              Pose;                                              // 0x38(0x18)
@@ -6437,7 +6437,7 @@ public:
 
 
 // Size 0x50
-class AnimNode_SequenceEvaluator: public None
+struct AnimNode_SequenceEvaluator
 {
 public:
 	Class AnimSequenceBase*                                      Sequence;                                          // 0x40(0x8)
@@ -6446,7 +6446,7 @@ public:
 
 
 // Size 0x60
-class AnimNode_SequencePlayer: public None
+struct AnimNode_SequencePlayer
 {
 public:
 	Class AnimSequenceBase*                                      Sequence;                                          // 0x40(0x8)
@@ -6458,7 +6458,7 @@ public:
 
 
 // Size 0x60
-class AnimNode_Slot: public None
+struct AnimNode_Slot
 {
 public:
 	Struct PoseLink                                              Source;                                            // 0x30(0x18)
@@ -6467,7 +6467,7 @@ public:
 
 
 // Size 0xa8
-class AnimNode_StateMachine: public None
+struct AnimNode_StateMachine
 {
 public:
 	int                                                          StateMachineIndexInClass;                          // 0x30(0x4)
@@ -6478,21 +6478,21 @@ public:
 
 
 // Size 0x10
-class AnimationPotentialTransition: public None
+struct AnimationPotentialTransition
 {
 public:
 };
 
 
 // Size 0x90
-class AnimationActiveTransitionEntry: public None
+struct AnimationActiveTransitionEntry
 {
 public:
 };
 
 
 // Size 0x80
-class AnimNode_TransitionPoseEvaluator: public None
+struct AnimNode_TransitionPoseEvaluator
 {
 public:
 	byte                                                         DataSource;                                        // 0x30(0x1)
@@ -6503,7 +6503,7 @@ public:
 
 
 // Size 0x40
-class AnimNode_TransitionResult: public None
+struct AnimNode_TransitionResult
 {
 public:
 	bool                                                         bCanEnterTransition;                               // 0x30(0x1)
@@ -6511,7 +6511,7 @@ public:
 
 
 // Size 0x70
-class AnimationNode_TwoWayBlend: public None
+struct AnimationNode_TwoWayBlend
 {
 public:
 	Struct PoseLink                                              A;                                                 // 0x30(0x18)
@@ -6522,7 +6522,7 @@ public:
 
 
 // Size 0x48
-class AnimNode_UseCachedPose: public None
+struct AnimNode_UseCachedPose
 {
 public:
 	Struct PoseLink                                              LinkToCachingNode;                                 // 0x30(0x18)
@@ -6530,7 +6530,7 @@ public:
 
 
 // Size 0x48
-class AnimNode_ConvertLocalToComponentSpace: public None
+struct AnimNode_ConvertLocalToComponentSpace
 {
 public:
 	Struct PoseLink                                              LocalPose;                                         // 0x30(0x18)
@@ -6538,7 +6538,7 @@ public:
 
 
 // Size 0x48
-class AnimNode_ConvertComponentToLocalSpace: public None
+struct AnimNode_ConvertComponentToLocalSpace
 {
 public:
 	Struct ComponentSpacePoseLink                                ComponentPose;                                     // 0x30(0x18)
@@ -6546,28 +6546,28 @@ public:
 
 
 // Size 0x1
-class DummySpacerCameraTypes: public None
+struct DummySpacerCameraTypes
 {
 public:
 };
 
 
 // Size 0x70
-class NetTimeStampCalculator: public None
+struct NetTimeStampCalculator
 {
 public:
 };
 
 
 // Size 0xc0
-class StreamableManager: public None
+struct StreamableManager
 {
 public:
 };
 
 
 // Size 0x10
-class ServerMigrationTelemetryFailedData: public None
+struct ServerMigrationTelemetryFailedData
 {
 public:
 	Struct FString                                               Stage;                                             // 0x0(0x10)
@@ -6575,7 +6575,7 @@ public:
 
 
 // Size 0x20
-class ServerMigrationTelemetrySucceededData: public None
+struct ServerMigrationTelemetrySucceededData
 {
 public:
 	TArray<Struct ServerMigrationTelemetryActorData>             ActorDetails;                                      // 0x0(0x10)
@@ -6587,7 +6587,7 @@ public:
 
 
 // Size 0x28
-class ServerMigrationTelemetryActorData: public None
+struct ServerMigrationTelemetryActorData
 {
 public:
 	int                                                          Count;                                             // 0x20(0x4)
@@ -6595,7 +6595,7 @@ public:
 
 
 // Size 0x50
-class ReplicatedPhysicsState: public None
+struct ReplicatedPhysicsState
 {
 public:
 	Class PrimitiveComponent*                                    MovementBase;                                      // 0x0(0x8)
@@ -6606,7 +6606,7 @@ public:
 
 
 // Size 0x30
-class ReplicatedTransformState: public None
+struct ReplicatedTransformState
 {
 public:
 	Class SceneComponent*                                        MovementBase;                                      // 0x0(0x8)
@@ -6617,7 +6617,7 @@ public:
 
 
 // Size 0x18
-class RepTransform: public None
+struct RepTransform
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
@@ -6626,7 +6626,7 @@ public:
 
 
 // Size 0xc
-class SkelMeshMergeMorphTarget: public None
+struct SkelMeshMergeMorphTarget
 {
 public:
 };

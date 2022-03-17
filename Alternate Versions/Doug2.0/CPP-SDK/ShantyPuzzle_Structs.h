@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x1
-class ShantyPuzzleUnlockCanceledEvent: public None
+struct ShantyPuzzleUnlockCanceledEvent
 {
 public:
 };
 
 
 // Size 0x10
-class ShantyPuzzleSingleInteractionZoneStopInteractingEvent: public None
+struct ShantyPuzzleSingleInteractionZoneStopInteractingEvent
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
@@ -23,7 +23,7 @@ public:
 
 
 // Size 0x10
-class ShantyPuzzleSingleInteractionZoneUnlockEvent: public None
+struct ShantyPuzzleSingleInteractionZoneUnlockEvent
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
@@ -32,7 +32,7 @@ public:
 
 
 // Size 0x8
-class ShantyPuzzlePlayerExitInteractionZoneEvent: public None
+struct ShantyPuzzlePlayerExitInteractionZoneEvent
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
@@ -40,7 +40,7 @@ public:
 
 
 // Size 0x8
-class ShantyPuzzlePlayerEnterInteractionZoneEvent: public None
+struct ShantyPuzzlePlayerEnterInteractionZoneEvent
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
@@ -48,14 +48,14 @@ public:
 
 
 // Size 0x1
-class ShantyPuzzleUnlockedCompleteEvent: public None
+struct ShantyPuzzleUnlockedCompleteEvent
 {
 public:
 };
 
 
 // Size 0x18
-class ShantyPuzzleInteractionZoneDefinition: public None
+struct ShantyPuzzleInteractionZoneDefinition
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)

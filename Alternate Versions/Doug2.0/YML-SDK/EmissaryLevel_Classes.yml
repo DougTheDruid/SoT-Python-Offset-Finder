@@ -15,15 +15,15 @@ EmissaryActiveTableVisualiserComponent:
   - Name: MaterialChanges
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct TargetCompany>
+    Type: TArray<Struct MaterialVisualisation>
   - Name: LightChanges
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<Struct MaterialChanges>
+    Type: TArray<Struct LightVisualisation>
   - Name: ParticleChanges
     Offset: '0x110'
     Size: '0x10'
-    Type: TArray<Struct LightChanges>
+    Type: TArray<Struct ParticleVisualisation>
   ClassSize: '0x90'
   FullSize: '0x158'
   InheritedSize: '0xc8'
@@ -89,7 +89,7 @@ EmissaryLevelSettingsAsset:
   - Name: EmissaryLevelData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct RewardSettings>
+    Type: TArray<Struct EmissaryLevelEntry>
   - Name: BoostMultiplers
     Offset: '0x38'
     Size: '0x8'
@@ -157,7 +157,7 @@ EmissaryParticipantComponent:
   - Name: NoteCompletionIdents
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Struct IsEmissaryMaxRankQuestBeenActivatedThisSession>
+    Type: TArray<Struct MysteriousNotesCompletionEventsModelEntry>
   - Name: VotedCompany
     Offset: '0x108'
     Size: '0x8'
@@ -177,7 +177,7 @@ EmissaryRewardCampaignSettingsAsset:
   - Name: Companies
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct CampaignSettings>
+    Type: TArray<Struct EmissaryCompanyCampaignSettings>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -187,7 +187,7 @@ EmissaryRewardSettingsAsset:
   - Name: EmissaryRewardData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct OnRep_EmissaryCount>
+    Type: TArray<Struct EmissaryRewardEntry>
   - Name: PlayerKilledExpiryTime
     Offset: '0x38'
     Size: '0x4'
@@ -213,7 +213,7 @@ EmissaryShipAffiliationTrackerComponent:
   - Name: EmissaryRepresentationTransforms
     Offset: '0x300'
     Size: '0x10'
-    Type: TArray<Struct EmissaryRepresentationMesh>
+    Type: TArray<Struct Transform>
   - Name: EmissaryRepresentationMeshes
     Offset: '0x310'
     Size: '0x10'
@@ -243,7 +243,7 @@ EmissaryVoyageInlineVoteConsumerBase:
   - Name: Votes
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct VoyageCinematicTag>
+    Type: TArray<Struct CrewMemberVotes>
   - Name: RpcDispatcher
     Offset: '0xf0'
     Size: '0x8'

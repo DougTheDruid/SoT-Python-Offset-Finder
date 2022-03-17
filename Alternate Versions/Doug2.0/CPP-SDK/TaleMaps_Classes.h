@@ -66,7 +66,7 @@ public:
 class RegionIslandFilteredSelectionStrategy: public RegionIslandSelectionStrategyBase
 {
 public:
-	TArray<Byte SelectionStrategy>                               IslandTypes;                                       // 0x28(0x10)
+	TArray<Byte IslandTypes>                                     IslandTypes;                                       // 0x28(0x10)
 	bool                                                         UseMaxDistance;                                    // 0x38(0x1)
 	float                                                        MaxDistanceFromStartingIsland;                     // 0x3c(0x4)
 };

@@ -109,7 +109,7 @@ public:
 	int                                                          NumPlayersPerTeam;                                 // 0x3c(0x4)
 	int                                                          ReservedHostTeamNum;                               // 0x40(0x4)
 	int                                                          ForceTeamNum;                                      // 0x44(0x4)
-	TArray<Struct ForceTeamNum>                                  Reservations;                                      // 0x48(0x10)
+	TArray<Struct PartyReservation>                              Reservations;                                      // 0x48(0x10)
 };
 
 

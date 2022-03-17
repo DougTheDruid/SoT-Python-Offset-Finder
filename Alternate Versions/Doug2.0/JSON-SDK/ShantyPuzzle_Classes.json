@@ -20,7 +20,7 @@
       },
       {
         "Name": "ShantyPuzzleInteractionZoneDefinitions",
-        "Type": "TArray<Struct RequiredShantyItemDesc>",
+        "Type": "TArray<Struct ShantyPuzzleInteractionZoneDefinition>",
         "Size": "0x10",
         "Offset": "0x2e0"
       },

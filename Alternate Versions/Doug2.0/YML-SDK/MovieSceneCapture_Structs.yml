@@ -15,7 +15,7 @@ CompositionGraphCapturePasses:
   - Name: Value
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Value>
   ClassSize: '0x10'
 MovieSceneCaptureSettings:
   Attributes:

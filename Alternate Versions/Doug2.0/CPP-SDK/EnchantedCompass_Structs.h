@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xc
-class CompassTargetSet: public None
+struct CompassTargetSet
 {
 public:
 	Struct Vector                                                TargetLocation;                                    // 0x0(0xc)

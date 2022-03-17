@@ -83,7 +83,7 @@ class ClueDescriptorGenerator: public Object
 {
 public:
 	class                                                        DescriptorType;                                    // 0x28(0x8)
-	TArray<Class DescriptorType>                                 SupportedDestinationTypes;                         // 0x30(0x10)
+	TArray<Class SupportedDestinationTypes>                      SupportedDestinationTypes;                         // 0x30(0x10)
 };
 
 
@@ -92,7 +92,7 @@ class ClueDestinationGenerator: public Object
 {
 public:
 	class                                                        RequiredClueSiteDataType;                          // 0x28(0x8)
-	TArray<Struct RequiredClueSiteDataType>                      WeightedSupportedDescriptorTypes;                  // 0x30(0x10)
+	TArray<Struct WeightedClueDestinationDescriptor>             WeightedSupportedDescriptorTypes;                  // 0x30(0x10)
 };
 
 
@@ -100,7 +100,7 @@ public:
 class ClueConnectionConfig: public DataAsset
 {
 public:
-	TArray<Struct HasClueBeenGiven>                              CluesThatCanDescribeSites;                         // 0x28(0x10)
+	TArray<Struct ClueSiteTypeSupportedDescribedByEntry>         CluesThatCanDescribeSites;                         // 0x28(0x10)
 	TArray<class ClueGenerators*>                                ClueGenerators;                                    // 0x38(0x10)
 	TArray<class DestinationGenerators*>                         DestinationGenerators;                             // 0x48(0x10)
 };
@@ -129,7 +129,7 @@ public:
 	TArray<class LandClueCreators*>                              LandClueCreators;                                  // 0x28(0x10)
 	TArray<class SeaClueCreators*>                               SeaClueCreators;                                   // 0x38(0x10)
 	Class ClueChoiceSelectionStrategy*                           ChoiceStrategy;                                    // 0x48(0x8)
-	TArray<Struct ChoiceStrategy>                                RestrictedClueTypes;                               // 0x50(0x10)
+	TArray<Struct RestrictedClueType>                            RestrictedClueTypes;                               // 0x50(0x10)
 };
 
 
@@ -152,7 +152,7 @@ public:
 class ClueSiteLootRestrictionsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct RankBasedDebrisDistribution>                   ClueSiteLootRestrictions;                          // 0x28(0x10)
+	TArray<Struct ClueSiteLootRestriction>                       ClueSiteLootRestrictions;                          // 0x28(0x10)
 };
 
 
@@ -160,7 +160,7 @@ public:
 class DebrisForVoyageRankDescAsset: public DataAsset
 {
 public:
-	TArray<Struct ContextProjectionPoint>                        RankBasedDebrisDistribution;                       // 0x28(0x10)
+	TArray<Struct DebrisToRangeDist>                             RankBasedDebrisDistribution;                       // 0x28(0x10)
 };
 
 
@@ -181,7 +181,7 @@ public:
 class LootForVoyageRankDescAsset: public DataAsset
 {
 public:
-	TArray<Struct LootItemSpawnRelativeLocations>                RankBasedLootDistribution;                         // 0x28(0x10)
+	TArray<Struct LootToRangeDist>                               RankBasedLootDistribution;                         // 0x28(0x10)
 };
 
 
@@ -196,7 +196,7 @@ public:
 class NPCLootSpawnComponent: public ActorComponent
 {
 public:
-	TArray<Struct ClueSiteTypes>                                 LootItemSpawnRelativeLocations;                    // 0xd0(0x10)
+	TArray<Struct Vector>                                        LootItemSpawnRelativeLocations;                    // 0xd0(0x10)
 };
 
 
@@ -204,7 +204,7 @@ public:
 class SeaClueSiteTypesDataAsset: public DataAsset
 {
 public:
-	TArray<Class SeaClueSiteTypes>                               ClueSiteTypes;                                     // 0x28(0x10)
+	TArray<Class ClueSiteTypes>                                  ClueSiteTypes;                                     // 0x28(0x10)
 };
 
 
@@ -221,8 +221,8 @@ class TaleQuestClueSiteService: public TaleQuestService
 {
 public:
 	Class TaleQuestClueSiteServiceDesc*                          Desc;                                              // 0x60(0x8)
-	TArray<Struct Desc>                                          ClueSites;                                         // 0x68(0x10)
-	TArray<Struct SpawnedLoot>                                   DebugClueSiteIds;                                  // 0xc8(0x10)
+	TArray<Struct ClueSite>                                      ClueSites;                                         // 0x68(0x10)
+	TArray<Struct Guid>                                          DebugClueSiteIds;                                  // 0xc8(0x10)
 };
 
 
@@ -265,7 +265,7 @@ public:
 	Struct QuestVariableVector                                   SourceLocation;                                    // 0xa0(0x20)
 	Struct QuestVariableClueSite                                 TargetClueSite;                                    // 0xc0(0x20)
 	Struct QuestVariableClueDescriptor                           GeneratedClue;                                     // 0xe0(0x20)
-	TArray<Class GeneratedClue>                                  AllowedClueTypes;                                  // 0x100(0x10)
+	TArray<Class AllowedClueTypes>                               AllowedClueTypes;                                  // 0x100(0x10)
 	Class ClueConnectionConfig*                                  ConnectionConfiguration;                           // 0x110(0x8)
 };
 
@@ -447,7 +447,7 @@ public:
 class WeightedDebrisDataAsset: public DataAsset
 {
 public:
-	TArray<Struct DestinationDescriptor>                         Debris;                                            // 0x28(0x10)
+	TArray<Struct WeightedDebris>                                Debris;                                            // 0x28(0x10)
 };
 
 

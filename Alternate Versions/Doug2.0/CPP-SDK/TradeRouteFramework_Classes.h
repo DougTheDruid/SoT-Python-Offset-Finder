@@ -68,7 +68,7 @@ public:
 class TradeRoutesDataAsset: public DataAsset
 {
 public:
-	TArray<Struct ClueSiteTypeToMarkIdMap>                       TradeRouteMappings;                                // 0x28(0x10)
+	TArray<Struct TradeRouteMapping>                             TradeRouteMappings;                                // 0x28(0x10)
 };
 
 

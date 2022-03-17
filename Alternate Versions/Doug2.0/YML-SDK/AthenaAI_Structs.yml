@@ -57,7 +57,7 @@ AIAmmoRankMapping:
   - Name: Weights
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Weights>
   ClassSize: '0x18'
 AIBountySpawnerArchive:
   Attributes:
@@ -109,11 +109,11 @@ AIBountySpawnerParams:
   - Name: NumTargetsInWave
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int NumTargetsInWave>
   - Name: NumCaptainsInWave
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int NumCaptainsInWave>
   - Name: MinTimeBetweenSpawns
     Offset: '0x40'
     Size: '0x4'
@@ -141,7 +141,7 @@ AIBountySpawnerParams:
   - Name: WaveSuicideTime
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float WaveSuicideTime>
   - Name: WaveSuicideMinDist
     Offset: '0xa0'
     Size: '0x4'
@@ -169,7 +169,7 @@ AIBountySpawnerParams:
   - Name: AICombatDialogue
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<Class NumCaptainsPerWaveGroup>
+    Type: TArray<Class AICombatDialogue>
   ClassSize: '0xc8'
 AIBountySpawnerWave:
   Attributes:
@@ -233,7 +233,7 @@ AICustomClassIdNameOverrides:
   - Name: ClassIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class AICustomNameTitleMapping>
+    Type: TArray<Class ClassIds>
   - Name: Names
     Offset: '0x10'
     Size: '0x10'
@@ -433,7 +433,7 @@ AIDropSpawnerRankMapping:
   - Name: Weights
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Weights>
   ClassSize: '0x30'
 AIEncounterAndWaveSettingsOverride:
   Attributes:
@@ -525,7 +525,7 @@ AIEncounterWave:
   - Name: SpecificationSpawnOrder
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int SpecificationSpawnOrder>
   ClassSize: '0x20'
 AIExclusionZone:
   Attributes:
@@ -554,7 +554,7 @@ AIFixedWavesSpawnerArchive:
   - Name: NumSpawnedPawnsInWaves
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int NumSpawnedPawnsInWaves>
   - Name: WavesSpawnedOnSpottedNewTarget
     Offset: '0x18'
     Size: '0x1'
@@ -592,7 +592,7 @@ AIFormRankMapping:
   - Name: Weights
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Weights>
   ClassSize: '0x18'
 AIFormVarietyEntry:
   Attributes:
@@ -629,7 +629,7 @@ AIIndividualVarietyEntry:
   - Name: Loadouts
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct MaxPerEncounter>
+    Type: TArray<Struct StringAssetReference>
   - Name: RankOffset
     Offset: '0x10'
     Size: '0x4'
@@ -652,7 +652,7 @@ AILoadoutRankMapping:
   - Name: Weights
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Weights>
   ClassSize: '0x18'
 AIPartId:
   Attributes:
@@ -699,7 +699,7 @@ AIPerCrewSpawnerCrewUnit:
   - Name: SelectedWaves
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct TemporaryPlayerDetailsUnitEntry>
+    Type: TArray<Struct AISpawnerWave>
   ClassSize: '0x30'
 AIPerCrewSpawnerRespawnUnit:
   Attributes: []
@@ -734,7 +734,7 @@ AISkillsetRankMapping:
   - Name: Weights
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Weights>
   ClassSize: '0x18'
 AISpawnContextData:
   Attributes:
@@ -752,7 +752,7 @@ AISpawnContextIdEncounterSettingsPair:
   - Name: SpawnContexts
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class AIExclusionZone>
+    Type: TArray<Class SpawnContexts>
   - Name: DisableSpawning
     Offset: '0x10'
     Size: '0x1'
@@ -768,7 +768,7 @@ AISpawnContextIdEncounterSettingsPair:
   - Name: EncounterAndWaveSettingsOverride
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct SpawnWaveProgression>
+    Type: TArray<Struct AIEncounterAndWaveSettingsOverride>
   ClassSize: '0x38'
 AISpawnOverride:
   Attributes:
@@ -828,7 +828,7 @@ AISpawnTypeParamsCollection:
   - Name: SpawnParams
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct NumOfSpawnsInWave>
+    Type: TArray<Struct WeightedAISpawnTypeParams>
   ClassSize: '0x48'
 AISpawnWaveSequenceRankMapping:
   Attributes:
@@ -839,7 +839,7 @@ AISpawnWaveSequenceRankMapping:
   - Name: Weights
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Weights>
   ClassSize: '0x18'
 AISpawnerArchive:
   Attributes: []
@@ -857,7 +857,7 @@ AISpawnerTelemetryEvent:
   - Name: AISpawnerContexts
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str AISpawnerContexts>
   - Name: AISpawnerWaveSpawnNumber
     Offset: '0x30'
     Size: '0x4'
@@ -941,7 +941,7 @@ AIStrategyVulnerabilityData:
   - Name: PreventedHealthChanges
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Byte Strategy>
+    Type: TArray<Byte PreventedHealthChanges>
   ClassSize: '0x18'
 AITargetBounds:
   Attributes:
@@ -986,7 +986,7 @@ AITelemetryFragment:
   - Name: AILoadOut
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str AILoadOut>
   - Name: AIPawnType
     Offset: '0x30'
     Size: '0x10'
@@ -1059,7 +1059,7 @@ AIWeightedProbabilityRangeOfRangesRankMapping:
   - Name: Weights
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Weights>
   ClassSize: '0x18'
 AdditionalSpawnerBehaviour:
   Attributes:
@@ -1120,7 +1120,7 @@ AthenaAICharacterControllerItemCategoryNamedParams:
   - Name: NamedControllerParams
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ItemCategory>
+    Type: TArray<Struct AthenaAIControllerParamValue>
   ClassSize: '0x18'
 AthenaAICharacterControllerItemCategoryProjectileEffectivenessP:
   Attributes:
@@ -1935,7 +1935,7 @@ IslandDioramas:
   - Name: Entries
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Interface CampaignInfo>
+    Type: TArray<Interface Entries>
   ClassSize: '0x10'
 MerchantCrateMetaWrapper:
   Attributes:
@@ -2156,11 +2156,11 @@ SpawnLocationGroup:
   - Name: AllowedSpawnTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: SpawnLocations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct AllowedSpawnTypes>
+    Type: TArray<Struct Vector>
   ClassSize: '0x20'
 SwimAttackTargetShipImpulseData:
   Attributes:
@@ -2337,7 +2337,7 @@ TinySharkShipSpawnData:
   - Name: ControllerParams
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Assetclass Timer>
+    Type: TArray<Assetclass ControllerParams>
   - Name: ControllerParamsToUse
     Offset: '0x48'
     Size: '0x20'

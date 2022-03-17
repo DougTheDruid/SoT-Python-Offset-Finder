@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class MysteriousNotesCompletionEventsModel: public None
+struct MysteriousNotesCompletionEventsModel
 {
 public:
 	struct FName                                                 CompletionIdent;                                   // 0x0(0x8)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x8
-class MysteriousNotesCompletionEventsModelEntry: public None
+struct MysteriousNotesCompletionEventsModelEntry
 {
 public:
 	struct FName                                                 CompletionIdent;                                   // 0x0(0x8)
@@ -23,14 +23,14 @@ public:
 
 
 // Size 0x1
-class EventListenForCinematicEndEvent: public None
+struct EventListenForCinematicEndEvent
 {
 public:
 };
 
 
 // Size 0x10
-class EventTriggerMysteriousNotesPopup: public None
+struct EventTriggerMysteriousNotesPopup
 {
 public:
 	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
@@ -39,7 +39,7 @@ public:
 
 
 // Size 0x18
-class EventMarkNoteDeleted: public None
+struct EventMarkNoteDeleted
 {
 public:
 	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
@@ -48,7 +48,7 @@ public:
 
 
 // Size 0x10
-class EventNoteClientCompletionStep: public None
+struct EventNoteClientCompletionStep
 {
 public:
 	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
@@ -57,7 +57,7 @@ public:
 
 
 // Size 0x10
-class EventNoteCompletionStep: public None
+struct EventNoteCompletionStep
 {
 public:
 	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
@@ -66,14 +66,14 @@ public:
 
 
 // Size 0x1
-class EventNotesUpdated: public None
+struct EventNotesUpdated
 {
 public:
 };
 
 
 // Size 0x18
-class EventMarkNoteRead: public None
+struct EventMarkNoteRead
 {
 public:
 	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
@@ -82,7 +82,7 @@ public:
 
 
 // Size 0x8
-class EventOnlineAthenaPlayerControllerUnpossessed: public None
+struct EventOnlineAthenaPlayerControllerUnpossessed
 {
 public:
 	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
@@ -90,7 +90,7 @@ public:
 
 
 // Size 0x8
-class EventPlayerControllerPossessed: public None
+struct EventPlayerControllerPossessed
 {
 public:
 	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
@@ -98,35 +98,35 @@ public:
 
 
 // Size 0x10
-class EventMysteriousNoteContentUpdated: public None
+struct EventMysteriousNoteContentUpdated
 {
 public:
 };
 
 
 // Size 0x1
-class EventMysteriousNoteSettingsLoaded: public None
+struct EventMysteriousNoteSettingsLoaded
 {
 public:
 };
 
 
 // Size 0x1
-class EventMysteriousNoteCustomContentUpdate: public None
+struct EventMysteriousNoteCustomContentUpdate
 {
 public:
 };
 
 
 // Size 0x10
-class EventMysteriousNoteRemoved: public None
+struct EventMysteriousNoteRemoved
 {
 public:
 };
 
 
 // Size 0x14
-class MysteriousNoteInfo: public None
+struct MysteriousNoteInfo
 {
 public:
 	Struct Guid                                                  NoteId;                                            // 0x0(0x10)
@@ -136,7 +136,7 @@ public:
 
 
 // Size 0x10
-class MysteriousNoteTheme: public None
+struct MysteriousNoteTheme
 {
 public:
 	Struct FString                                               NoteType;                                          // 0x0(0x10)
@@ -144,7 +144,7 @@ public:
 
 
 // Size 0xd0
-class WieldableMysteriousNoteLayoutItem: public None
+struct WieldableMysteriousNoteLayoutItem
 {
 public:
 	Struct FString                                               Theme;                                             // 0x0(0x10)
@@ -158,26 +158,26 @@ public:
 
 
 // Size 0x30
-class ActiveNoteData: public None
+struct ActiveNoteData
 {
 public:
-	TArray<Struct MysteriousNoteRequest>                         NotesRemoteServiceNoteModels;                      // 0x0(0x10)
+	TArray<Struct NotesRemoteServiceNoteModel>                   NotesRemoteServiceNoteModels;                      // 0x0(0x10)
 	TArray<Struct NoteCompletionEntry>                           PendingCompletionEntries;                          // 0x10(0x10)
-	TArray<Struct PendingCompletionEntries>                      PendingDetailRequestIDs;                           // 0x20(0x10)
+	TArray<Struct Guid>                                          PendingDetailRequestIDs;                           // 0x20(0x10)
 };
 
 
 // Size 0x20
-class NoteCompletionEntry: public None
+struct NoteCompletionEntry
 {
 public:
 	Struct Guid                                                  NoteId;                                            // 0x0(0x10)
-	TArray<Str >                                                 CompletionEventIds;                                // 0x10(0x10)
+	TArray<Str CompletionEventIds>                               CompletionEventIds;                                // 0x10(0x10)
 };
 
 
 // Size 0x80
-class MysteriousNoteRequest: public None
+struct MysteriousNoteRequest
 {
 public:
 	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
@@ -186,7 +186,7 @@ public:
 
 
 // Size 0x48
-class PlayerMysteriousNoteItem: public None
+struct PlayerMysteriousNoteItem
 {
 public:
 	Struct Guid                                                  OriginalNoteID;                                    // 0x0(0x10)
@@ -197,16 +197,16 @@ public:
 
 
 // Size 0x18
-class ClientNoteData: public None
+struct ClientNoteData
 {
 public:
 	bool                                                         NotifyArrival;                                     // 0x0(0x1)
-	TArray<Struct NotifyArrival>                                 PendingNotes;                                      // 0x8(0x10)
+	TArray<Struct MysteriousNoteInfo>                            PendingNotes;                                      // 0x8(0x10)
 };
 
 
 // Size 0x4
-class PlayerSentNotesTelemetryEvent: public None
+struct PlayerSentNotesTelemetryEvent
 {
 public:
 	int                                                          NoteCount;                                         // 0x0(0x4)
@@ -214,7 +214,7 @@ public:
 
 
 // Size 0x20
-class PlayerNoteStateChangeTelemetryEvent: public None
+struct PlayerNoteStateChangeTelemetryEvent
 {
 public:
 	Struct Guid                                                  NoteId;                                            // 0x0(0x10)

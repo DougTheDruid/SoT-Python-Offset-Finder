@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class EventBreakableActorWasDestroyed: public None
+struct EventBreakableActorWasDestroyed
 {
 public:
 	Class Actor*                                                 Instigator;                                        // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x58
-class EventBreakableActorWasDamaged: public None
+struct EventBreakableActorWasDamaged
 {
 public:
 	Struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x0(0x58)

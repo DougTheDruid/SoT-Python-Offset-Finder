@@ -112,7 +112,7 @@
       },
       {
         "Name": "WaveEncounters",
-        "Type": "TArray<Struct MaxEncounters>",
+        "Type": "TArray<Struct TreasuryWaveEncounter>",
         "Size": "0x10",
         "Offset": "0x408"
       },
@@ -172,7 +172,7 @@
       },
       {
         "Name": "CachedParticipantControllers",
-        "Type": "TArray<Weakclass OverlappingActors>",
+        "Type": "TArray<Weakclass CachedParticipantControllers>",
         "Size": "0x10",
         "Offset": "0x488"
       },

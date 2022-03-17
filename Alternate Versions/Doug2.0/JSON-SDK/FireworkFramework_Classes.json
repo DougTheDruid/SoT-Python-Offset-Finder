@@ -83,7 +83,7 @@
       },
       {
         "Name": "Explosions",
-        "Type": "TArray<Struct FireworkAmbientLightData>",
+        "Type": "TArray<Struct WeightedFireworkVFXData>",
         "Size": "0x10",
         "Offset": "0xa0"
       },
@@ -445,7 +445,7 @@
     "Attributes": [
       {
         "Name": "ProjectileAnimationCurves",
-        "Type": "TArray<Struct Desc>",
+        "Type": "TArray<Struct WeightedProjectileMeshAnimationData>",
         "Size": "0x10",
         "Offset": "0xc8"
       },

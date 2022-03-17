@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class SocketPathNode: public None
+struct SocketPathNode
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -15,15 +15,15 @@ public:
 
 
 // Size 0x18
-class SocketPath: public None
+struct SocketPath
 {
 public:
-	TArray<Struct SocketId>                                      Nodes;                                             // 0x0(0x10)
+	TArray<Struct SocketPathNode>                                Nodes;                                             // 0x0(0x10)
 };
 
 
 // Size 0x20
-class SocketId: public None
+struct SocketId
 {
 public:
 	Struct SocketPath                                            path;                                              // 0x0(0x18)
@@ -32,7 +32,7 @@ public:
 
 
 // Size 0x50
-class SocketLookupCache: public None
+struct SocketLookupCache
 {
 public:
 };

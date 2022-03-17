@@ -21,7 +21,7 @@ BP_PromptActor_EmissaryEncounteredAIShip_AF_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct UberGraphFrame>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -47,7 +47,7 @@ BP_PromptActor_EmissaryEncounteredAIShip_GH_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct >
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -73,7 +73,7 @@ BP_PromptActor_EmissaryEncounteredAIShip_MA_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -99,7 +99,7 @@ BP_PromptActor_EmissaryEncounteredAIShip_OOS_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -125,7 +125,7 @@ BP_PromptActor_EmissaryEncounteredAIShip_RB_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct >
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -151,7 +151,7 @@ BP_PromptActor_EmissaryEncounteredKraken_AF_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -177,7 +177,7 @@ BP_PromptActor_EmissaryEncounteredKraken_GH_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -203,7 +203,7 @@ BP_PromptActor_EmissaryEncounteredKraken_MA_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct >
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -229,7 +229,7 @@ BP_PromptActor_EmissaryEncounteredKraken_OOS_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct >
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -255,7 +255,7 @@ BP_PromptActor_EmissaryEncounteredKraken_RB_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct >
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -281,7 +281,7 @@ BP_PromptActor_EmissaryEncounteredSkellyFort_AF_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -307,7 +307,7 @@ BP_PromptActor_EmissaryEncounteredSkellyFort_GH_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -333,7 +333,7 @@ BP_PromptActor_EmissaryEncounteredSkellyFort_MA_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -359,7 +359,7 @@ BP_PromptActor_EmissaryEncounteredSkellyFort_OOS_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct ByteProperty>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -385,7 +385,7 @@ BP_PromptActor_EmissaryEncounteredSkellyFort_RB_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'

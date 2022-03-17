@@ -42,21 +42,3 @@ BP_UnsortedCommodity_Tea_Desc_C:
   FullSize: '0x140'
   InheritedSize: '0x140'
   Super: CommodityItemDesc
-ResourceCrate_Cannonballs_BSP2_TokenEntitlementDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xe8'
-  InheritedSize: '0xe8'
-  Super: CommodityTokenEntitlementDesc
-ResourceCrate_Cannonballs_WSP2_TokenEntitlementDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xe8'
-  InheritedSize: '0xe8'
-  Super: CommodityTokenEntitlementDesc
-ResourceCrate_Storage_WSP2_TokenEntitlementDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xe8'
-  InheritedSize: '0xe8'
-  Super: CommodityTokenEntitlementDesc

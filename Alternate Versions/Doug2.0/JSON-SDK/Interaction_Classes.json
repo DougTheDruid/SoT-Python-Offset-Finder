@@ -242,7 +242,7 @@
       },
       {
         "Name": "ValidInteractNotificationIds",
-        "Type": "TArray<Class InteractNotificationType>",
+        "Type": "TArray<Class ValidInteractNotificationIds>",
         "Size": "0x10",
         "Offset": "0x3f0"
       }

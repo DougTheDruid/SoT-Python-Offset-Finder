@@ -13,13 +13,13 @@
       },
       {
         "Name": "GoldHoarders",
-        "Type": "TArray<Assetclass >",
+        "Type": "TArray<Assetclass GoldHoarders>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "GoldHoarderLocations",
-        "Type": "TArray<Struct GoldHoarderLocations>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0xf0"
       },
@@ -37,7 +37,7 @@
       },
       {
         "Name": "OutpostNames",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x118"
       },

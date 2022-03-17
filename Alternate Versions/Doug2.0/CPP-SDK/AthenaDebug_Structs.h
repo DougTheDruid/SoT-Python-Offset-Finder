@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class DrawDebugItemString: public None
+struct DrawDebugItemString
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -19,7 +19,7 @@ public:
 
 
 // Size 0x28
-class DrawDebugItemMessage: public None
+struct DrawDebugItemMessage
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -30,7 +30,7 @@ public:
 
 
 // Size 0x48
-class DrawDebugItemSector: public None
+struct DrawDebugItemSector
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -48,7 +48,7 @@ public:
 
 
 // Size 0x2c
-class DrawDebugItemLine: public None
+struct DrawDebugItemLine
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -61,7 +61,7 @@ public:
 
 
 // Size 0x40
-class DrawDebugItemCapsule: public None
+struct DrawDebugItemCapsule
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -75,7 +75,7 @@ public:
 
 
 // Size 0x50
-class DrawDebugItemBox: public None
+struct DrawDebugItemBox
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -88,7 +88,7 @@ public:
 
 
 // Size 0x20
-class DrawDebugItemSphere: public None
+struct DrawDebugItemSphere
 {
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
@@ -100,7 +100,7 @@ public:
 
 
 // Size 0x18
-class SphereData: public None
+struct SphereData
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)

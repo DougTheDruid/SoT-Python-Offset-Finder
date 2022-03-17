@@ -5,7 +5,7 @@ ActiveStatusEffect:
   - Name: SourceStatus
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class FeatureToggledStatusResponseList>
+    Type: TArray<Class SourceStatus>
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'
@@ -60,7 +60,7 @@ EventAppliedStatusToTargets:
   - Name: StatusApplied
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class StatusEffectPersistenceKey>
+    Type: TArray<Class StatusApplied>
   - Name: Targets
     Offset: '0x10'
     Size: '0x10'
@@ -182,7 +182,7 @@ Status:
   - Name: Type
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class EventCurseWheelLockEnd>
+    Type: TArray<Class Type>
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'

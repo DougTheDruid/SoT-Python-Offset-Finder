@@ -5,7 +5,7 @@ AIShipBattlesDataAsset:
   - Name: Battles
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct TrackingNoiseGenerator>
+    Type: TArray<Struct AIShipBattleParams>
   - Name: SkellyCrewNames
     Offset: '0x38'
     Size: '0x10'
@@ -39,7 +39,7 @@ AIShipContextDescDataAsset:
   - Name: Spawners
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct ControllerParams>
+    Type: TArray<Struct AIShipEncounterParamsSpawnerData>
   - Name: DamageParams
     Offset: '0x50'
     Size: '0x14'
@@ -233,7 +233,7 @@ AIShipEncounterDesc:
   - Name: Waves
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct EncounterType>
+    Type: TArray<Struct AIShipEncounterWave>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -627,7 +627,7 @@ AthenaAIShipControllerParamsDataAsset:
   - Name: AggressionOverrideImpactIDs
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<Class DistanceToTargetToDropAnchor>
+    Type: TArray<Class AggressionOverrideImpactIDs>
   ClassSize: '0x350'
   FullSize: '0x450'
   InheritedSize: '0x100'
@@ -761,7 +761,7 @@ CursedSailsCampaignDataAsset:
   - Name: Battles
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct EncounterType>
+    Type: TArray<Struct CursedSailsBattleParams>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

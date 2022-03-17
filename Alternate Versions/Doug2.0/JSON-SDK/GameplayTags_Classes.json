@@ -152,7 +152,7 @@
     "Attributes": [
       {
         "Name": "GameplayTags",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str GameplayTags>",
         "Size": "0x10",
         "Offset": "0x28"
       }

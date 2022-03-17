@@ -235,7 +235,7 @@
       },
       {
         "Name": "CrewSegmentValues",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int CrewSegmentValues>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -282,7 +282,7 @@
       },
       {
         "Name": "CrewSegmentValues",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int CrewSegmentValues>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -367,7 +367,7 @@
     "Attributes": [
       {
         "Name": "QoSTelemetry",
-        "Type": "TArray<Struct CrewTrackedItemOwnershipSet>",
+        "Type": "TArray<Struct CrewSessionQoSMeasurementTelemetry>",
         "Size": "0x10",
         "Offset": "0x50"
       }

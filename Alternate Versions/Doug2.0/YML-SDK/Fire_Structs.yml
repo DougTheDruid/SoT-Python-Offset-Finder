@@ -118,7 +118,7 @@ FireCellDesc:
   - Name: CustomParticleEffectTemplates
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct DefaultParticleEffectPlane>
+    Type: TArray<Struct FireCellStateParticleTemplate>
   - Name: CustomParticleEffectSpawnTransform
     Offset: '0xa0'
     Size: '0x30'
@@ -126,15 +126,15 @@ FireCellDesc:
   - Name: NeighbourCellIndices
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int NeighbourCellIndices>
   - Name: CustomAddedDiagonalNeighbourOffsets
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct NeighbourCellIndices>
+    Type: TArray<Struct IntVector>
   - Name: CustomRemovedDefaultNeighbourOffsets
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<Struct CustomAddedDiagonalNeighbourOffsets>
+    Type: TArray<Struct IntVector>
   ClassSize: '0x100'
 FireCellStateData:
   Attributes: []
@@ -344,14 +344,14 @@ FireGridRelativeSpawnDesc:
   - Name: CellIndicesToSpawnFor
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int CellIndicesToSpawnFor>
   ClassSize: '0x30'
 FireGridVFXParams:
   Attributes:
   - Name: DefaultParticleTemplates
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FireGridRelativeSpawnDesc>
+    Type: TArray<Struct FireCellStateParticleTemplate>
   - Name: ExteriorLowDetailParticleSystem
     Offset: '0x10'
     Size: '0x8'
@@ -394,15 +394,15 @@ FireGridVfxSpawnSettings:
   - Name: InteriorSmokeSpawnDescs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FireParticleSystem>
+    Type: TArray<Struct FireGridRelativeSpawnDesc>
   - Name: LowDetailVFXSpawnDescs
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct InteriorSmokeSpawnDescs>
+    Type: TArray<Struct FireGridLowDetailRelativeSpawnDesc>
   - Name: ParticleSpawnLODSettings
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct LowDetailVFXSpawnDescs>
+    Type: TArray<Struct FireParticleSpawnData>
   - Name: LowFrequencyParticleSpawnSettings
     Offset: '0x30'
     Size: '0x10'
@@ -410,7 +410,7 @@ FireGridVfxSpawnSettings:
   - Name: ExteriorSmokeVFXSpawnDescs
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct LowFrequencyParticleSpawnSettings>
+    Type: TArray<Struct FireGridLowDetailRelativeSpawnDesc>
   - Name: VFXParams
     Offset: '0x50'
     Size: '0x8'
@@ -439,7 +439,7 @@ FireParticleSpawnList:
   - Name: ParticleSpawnLODs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FireDefaultVFXSpawnData>
+    Type: TArray<Struct FireParticleSpawnData>
   ClassSize: '0x20'
 FireParticleSystem:
   Attributes:
@@ -457,7 +457,7 @@ HullCharringPersistenceModel:
   - Name: TimeSpentCharring
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float TimeSpentCharring>
   ClassSize: '0x10'
 OnFireChangedEvent:
   Attributes:
@@ -492,7 +492,7 @@ ReplicatedFireCellCharringData:
   - Name: TimeSpentCharring
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float TimeSpentCharring>
   ClassSize: '0x18'
 ReplicatedFireCellData:
   Attributes:
@@ -536,7 +536,7 @@ ShipFireLightManager:
   - Name: LightSpawnDescs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct HullCharringPersistenceModel>
+    Type: TArray<Struct ShipFireLightRelativeSpawnDesc>
   - Name: LightTemplate
     Offset: '0x10'
     Size: '0xd0'
@@ -544,7 +544,7 @@ ShipFireLightManager:
   - Name: Lights
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct LightTemplate>
+    Type: TArray<Struct ShipFireLight>
   - Name: Propagator
     Offset: '0xf0'
     Size: '0x8'
@@ -610,7 +610,7 @@ ShipFireLightRelativeSpawnDesc:
   - Name: DormantShipRegions
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Byte LightPositionOffset>
+    Type: TArray<Byte DormantShipRegions>
   - Name: DormantFadeDistance
     Offset: '0x50'
     Size: '0x4'

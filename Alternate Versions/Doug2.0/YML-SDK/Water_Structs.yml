@@ -312,7 +312,7 @@ WaterSplashProbesContainer:
   - Name: Probes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct WaterBuoyancy>
+    Type: TArray<Struct WaterSplashProbe>
   - Name: ProbeSamplingTime
     Offset: '0x10'
     Size: '0x4'

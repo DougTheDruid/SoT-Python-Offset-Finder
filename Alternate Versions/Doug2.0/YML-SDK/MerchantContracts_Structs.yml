@@ -16,7 +16,7 @@ MerchantContract:
   - Name: DeliveryRequests
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct MerchantMapLayoutItem>
+    Type: TArray<Struct MerchantContractDeliveryRequest>
   ClassSize: '0xc0'
 MerchantContractDeliveryRequest:
   Attributes:
@@ -73,5 +73,5 @@ PlayerMerchantContract:
   - Name: Requests
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct IslandName>
+    Type: TArray<Struct MerchantContractDeliveryRequest>
   ClassSize: '0x28'

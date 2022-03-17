@@ -33,11 +33,11 @@ BP_Prompt_CosmeticPurchased_C:
   - Name: CategoryTypes
     Offset: '0x2d0'
     Size: '0x10'
-    Type: TArray<Class ProcessingPurchase>
+    Type: TArray<Class CategoryTypes>
   - Name: PurchasedEntitlementIds
     Offset: '0x2e0'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str PurchasedEntitlementIds>
   - Name: DelayUntilPromptDisplays
     Offset: '0x2f0'
     Size: '0x4'

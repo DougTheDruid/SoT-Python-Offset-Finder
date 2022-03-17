@@ -48,11 +48,4 @@ public:
 };
 
 
-// Size 0x0
-class BP_TreasureMap_ItemDesc_PlayerBuriedXMarksTheSpot_C: public TreasureMapItemDesc
-{
-public:
-};
-
-
 }

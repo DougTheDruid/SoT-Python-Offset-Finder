@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Weights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Weights>",
         "Size": "0x10",
         "Offset": "0x10"
       }

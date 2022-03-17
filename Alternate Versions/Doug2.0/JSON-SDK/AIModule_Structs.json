@@ -262,7 +262,7 @@
       },
       {
         "Name": "LastSensedStimuli",
-        "Type": "TArray<Struct Target>",
+        "Type": "TArray<Struct AIStimulus>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -766,13 +766,13 @@
     "Attributes": [
       {
         "Name": "Angles",
-        "Type": "TArray<Float None>",
+        "Type": "TArray<Float Angles>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Radii",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Radii>",
         "Size": "0x10",
         "Offset": "0x10"
       }

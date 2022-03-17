@@ -27,13 +27,13 @@
     "Attributes": [
       {
         "Name": "TargetBootyTypes",
-        "Type": "TArray<AssetClass TargetAIClasses>",
+        "Type": "TArray<AssetClass TargetBootyTypes>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "TargetCompanies",
-        "Type": "TArray<Class TargetBootyTypes>",
+        "Type": "TArray<Class TargetCompanies>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -47,7 +47,7 @@
     "Attributes": [
       {
         "Name": "TargetAIClasses",
-        "Type": "TArray<Class EventsSource>",
+        "Type": "TArray<Class TargetAIClasses>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -75,7 +75,7 @@
     "Attributes": [
       {
         "Name": "TargetNPCIds",
-        "Type": "TArray<Struct ChecklistItems>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -89,7 +89,7 @@
     "Attributes": [
       {
         "Name": "ChecklistItems",
-        "Type": "TArray<Struct Afternote>",
+        "Type": "TArray<Struct ChecklistItem>",
         "Size": "0x10",
         "Offset": "0x28"
       }

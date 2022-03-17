@@ -13,7 +13,7 @@ public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
 	class                                                        Company;                                           // 0x418(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x420(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 	BlueprintGeneratedClass BP_Prompt_EmissarySoldLoot_C*        PromptCoordinator;                                 // 0x430(0x8)
 };
 
@@ -25,7 +25,7 @@ public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
 	class                                                        Company;                                           // 0x418(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x420(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 	BlueprintGeneratedClass BP_Prompt_EmissarySoldLoot_C*        PromptCoordinator;                                 // 0x430(0x8)
 };
 
@@ -37,7 +37,7 @@ public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
 	class                                                        Company;                                           // 0x418(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x420(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 	BlueprintGeneratedClass BP_Prompt_EmissarySoldLoot_C*        PromptCoordinator;                                 // 0x430(0x8)
 };
 
@@ -49,7 +49,7 @@ public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
 	class                                                        Company;                                           // 0x418(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x420(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 	BlueprintGeneratedClass BP_Prompt_EmissarySoldLoot_C*        PromptCoordinator;                                 // 0x430(0x8)
 };
 
@@ -61,7 +61,7 @@ public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
 	class                                                        Company;                                           // 0x418(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x420(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 	BlueprintGeneratedClass BP_Prompt_EmissarySoldLoot_C*        PromptCoordinator;                                 // 0x430(0x8)
 };
 

@@ -151,13 +151,13 @@
       },
       {
         "Name": "SelectedCreatureType",
-        "Type": "TArray<Assetclass MaterialExpressionConstant>",
+        "Type": "TArray<Assetclass SelectedCreatureType>",
         "Size": "0x10",
         "Offset": "0x4a8"
       },
       {
         "Name": "Seagull",
-        "Type": "TArray<Assetclass StaticMeshComponent>",
+        "Type": "TArray<Assetclass Seagull>",
         "Size": "0x10",
         "Offset": "0x4b8"
       },
@@ -187,19 +187,19 @@
       },
       {
         "Name": "Skellygull_01",
-        "Type": "TArray<Assetclass MaterialExpressionConstant>",
+        "Type": "TArray<Assetclass Skellygull_01>",
         "Size": "0x10",
         "Offset": "0x4e0"
       },
       {
         "Name": "Bats_01",
-        "Type": "TArray<Assetclass >",
+        "Type": "TArray<Assetclass Bats_01>",
         "Size": "0x10",
         "Offset": "0x4f0"
       },
       {
         "Name": "Parrot_01",
-        "Type": "TArray<Assetclass >",
+        "Type": "TArray<Assetclass Parrot_01>",
         "Size": "0x10",
         "Offset": "0x500"
       },

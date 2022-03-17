@@ -121,11 +121,11 @@ GlitterBeardTreeVisualFeedbackComponent:
   - Name: FeedbackActions
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct TreeBlendTime>
+    Type: TArray<Struct VisualFeedbackList>
   - Name: CurrentStates
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Byte FeedbackActions>
+    Type: TArray<Byte CurrentStates>
   ClassSize: '0x50'
   FullSize: '0x118'
   InheritedSize: '0xc8'

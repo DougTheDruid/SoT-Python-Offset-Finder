@@ -25,7 +25,7 @@
       },
       {
         "Name": "CachedActors",
-        "Type": "TArray<Weakclass TriggerFadeOut>",
+        "Type": "TArray<Weakclass CachedActors>",
         "Size": "0x10",
         "Offset": "0x418"
       }

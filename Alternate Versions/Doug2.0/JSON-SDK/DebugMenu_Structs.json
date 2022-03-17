@@ -16,7 +16,7 @@
       },
       {
         "Name": "Buttons",
-        "Type": "TArray<Struct ConsoleCommand>",
+        "Type": "TArray<Struct Key>",
         "Size": "0x10",
         "Offset": "0x20"
       },

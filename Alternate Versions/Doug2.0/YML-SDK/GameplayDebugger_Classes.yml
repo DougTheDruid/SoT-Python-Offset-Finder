@@ -71,7 +71,7 @@ GameplayDebuggingComponent:
   - Name: ReplicateViewDataCounters
     Offset: '0x5c8'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int ReplicateViewDataCounters>
   - Name: ControllerName
     Offset: '0x5d8'
     Size: '0x10'
@@ -139,23 +139,23 @@ GameplayDebuggingComponent:
   - Name: BlackboardRepData
     Offset: '0x6d8'
     Size: '0x10'
-    Type: TArray<Byte BrainComponentString>
+    Type: TArray<Byte BlackboardRepData>
   - Name: PathPoints
     Offset: '0x6f8'
     Size: '0x10'
-    Type: TArray<Struct BlackboardRepData>
+    Type: TArray<Struct Vector>
   - Name: PathCorridorData
     Offset: '0x708'
     Size: '0x10'
-    Type: TArray<Byte PathPoints>
+    Type: TArray<Byte PathCorridorData>
   - Name: NavmeshRepData
     Offset: '0x728'
     Size: '0x10'
-    Type: TArray<Byte PathCorridorData>
+    Type: TArray<Byte NavmeshRepData>
   - Name: EQSRepData
     Offset: '0x738'
     Size: '0x10'
-    Type: TArray<Byte NavmeshRepData>
+    Type: TArray<Byte EQSRepData>
   - Name: SensingComponentLocation
     Offset: '0x748'
     Size: '0xc'

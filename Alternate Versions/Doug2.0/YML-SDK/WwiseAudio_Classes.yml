@@ -69,7 +69,7 @@ WwiseAudioSettings:
   - Name: PersistentSoundBanks
     Offset: '0x188'
     Size: '0x10'
-    Type: TArray<Struct BinkSettings>
+    Type: TArray<Struct StringAssetReference>
   - Name: InitBank
     Offset: '0x198'
     Size: '0x10'
@@ -89,7 +89,7 @@ WwiseAudioSettings:
   - Name: AsyncIOPriorityMappings
     Offset: '0x1d8'
     Size: '0x10'
-    Type: TArray<Struct WwiseStreamedFilesDirectory>
+    Type: TArray<Struct WwiseIOPriorityMappingConfig>
   - Name: TritonAcousticMapsDirectory
     Offset: '0x1e8'
     Size: '0x10'
@@ -189,7 +189,7 @@ WwiseDDSEvent:
   - Name: DDSArgumentsGroupsIDs
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<UInt32 None>
+    Type: TArray<UInt32 DDSArgumentsGroupsIDs>
   ClassSize: '0x10'
   FullSize: '0x60'
   InheritedSize: '0x50'
@@ -251,7 +251,7 @@ WwiseIDsDatabase:
   - Name: StateGroupIDs
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<UInt32 None>
+    Type: TArray<UInt32 StateGroupIDs>
   - Name: StateGroupNames
     Offset: '0x38'
     Size: '0x10'
@@ -259,7 +259,7 @@ WwiseIDsDatabase:
   - Name: StateValueIDs
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 StateValueIDs>
   - Name: StateValueNames
     Offset: '0x58'
     Size: '0x10'
@@ -267,7 +267,7 @@ WwiseIDsDatabase:
   - Name: SwitchGroupIDs
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 SwitchGroupIDs>
   - Name: SwitchGroupNames
     Offset: '0x78'
     Size: '0x10'
@@ -275,7 +275,7 @@ WwiseIDsDatabase:
   - Name: SwitchStateIDs
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 SwitchStateIDs>
   - Name: SwitchStateNames
     Offset: '0x98'
     Size: '0x10'

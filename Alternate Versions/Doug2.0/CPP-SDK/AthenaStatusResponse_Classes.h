@@ -27,7 +27,7 @@ public:
 class StatusResponseCancelStatus: public StatusResponse
 {
 public:
-	TArray<Class HealthPoolChangeIntensityMultiplier>            Status;                                            // 0x30(0x10)
+	TArray<Class Status>                                         Status;                                            // 0x30(0x10)
 };
 
 
@@ -63,7 +63,7 @@ public:
 class StatusResponseSetScalarParamOnCharacter: public StatusResponse
 {
 public:
-	TArray<Struct Status>                                        ParamsToChange;                                    // 0x30(0x10)
+	TArray<Struct ScalarParamInfo>                               ParamsToChange;                                    // 0x30(0x10)
 };
 
 
@@ -71,7 +71,7 @@ public:
 class StatusResponseSuspendStatus: public StatusResponse
 {
 public:
-	TArray<Class MaxWheelTurbulence>                             Status;                                            // 0x30(0x10)
+	TArray<Class Status>                                         Status;                                            // 0x30(0x10)
 };
 
 

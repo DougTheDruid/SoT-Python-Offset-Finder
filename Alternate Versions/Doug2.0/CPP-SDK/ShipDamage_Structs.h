@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class ShipDamageParams: public None
+struct ShipDamageParams
 {
 public:
 	TArray<Struct ShipPartLevelsOfDamage>                        DamageParams;                                      // 0x0(0x10)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x30
-class ShipPartLevelsOfDamage: public None
+struct ShipPartLevelsOfDamage
 {
 public:
 	TArray<Struct DistanceAndLevelOfDamage>                      DamagePerDistance;                                 // 0x20(0x10)
@@ -23,7 +23,7 @@ public:
 
 
 // Size 0x8
-class DistanceAndLevelOfDamage: public None
+struct DistanceAndLevelOfDamage
 {
 public:
 	float                                                        DistanceLimit;                                     // 0x0(0x4)
@@ -32,7 +32,7 @@ public:
 
 
 // Size 0x10
-class HullDamagePersistenceModel: public None
+struct HullDamagePersistenceModel
 {
 public:
 	TArray<Struct HullDamageZoneInfo>                            DamageZones;                                       // 0x0(0x10)
@@ -40,7 +40,7 @@ public:
 
 
 // Size 0x30
-class HullDamageZoneInfo: public None
+struct HullDamageZoneInfo
 {
 public:
 	Struct FString                                               DamageZoneId;                                      // 0x0(0x10)
@@ -52,7 +52,7 @@ public:
 
 
 // Size 0x24
-class HullDamageHit: public None
+struct HullDamageHit
 {
 public:
 	Struct Vector                                                HitPosition;                                       // 0x0(0xc)
@@ -64,7 +64,7 @@ public:
 
 
 // Size 0x70
-class EventShipDamageApplied: public None
+struct EventShipDamageApplied
 {
 public:
 	Class Actor*                                                 Ship;                                              // 0x0(0x8)
@@ -75,7 +75,7 @@ public:
 
 
 // Size 0x60
-class EventShipDamaged: public None
+struct EventShipDamaged
 {
 public:
 	Class Actor*                                                 Ship;                                              // 0x0(0x8)
@@ -84,7 +84,7 @@ public:
 
 
 // Size 0x10
-class DamageZoneDamageLevelChanged: public None
+struct DamageZoneDamageLevelChanged
 {
 public:
 	Class Actor*                                                 DamageZone;                                        // 0x0(0x8)
@@ -93,7 +93,7 @@ public:
 
 
 // Size 0x10
-class AppliedDamageToShipEvent: public None
+struct AppliedDamageToShipEvent
 {
 public:
 	class                                                        ShipType;                                          // 0x0(0x8)

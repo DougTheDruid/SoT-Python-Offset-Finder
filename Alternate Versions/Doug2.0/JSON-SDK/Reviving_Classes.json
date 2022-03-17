@@ -55,13 +55,13 @@
       },
       {
         "Name": "UnsupportedPlayModes",
-        "Type": "TArray<Byte MaxRevertEvaporateDuration>",
+        "Type": "TArray<Byte UnsupportedPlayModes>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "ModeSpecificSettings",
-        "Type": "TArray<Struct UnsupportedPlayModes>",
+        "Type": "TArray<Struct ModeSpecificReviveSettings>",
         "Size": "0x10",
         "Offset": "0x78"
       },

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class BarrelsOfPlentyDebugLocationEntry: public None
+struct BarrelsOfPlentyDebugLocationEntry
 {
 public:
 	Struct Vector                                                WorldSpacePosition;                                // 0x0(0xc)

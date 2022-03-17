@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x4
-class DestroyActorData: public None
+struct DestroyActorData
 {
 public:
 	int                                                          ActorNetID;                                        // 0x0(0x4)
@@ -15,10 +15,10 @@ public:
 
 
 // Size 0x10
-class DestroyAllExistingActorsByClassData: public None
+struct DestroyAllExistingActorsByClassData
 {
 public:
-	TArray<Str None>                                             ActorClassNames;                                   // 0x0(0x10)
+	TArray<Str ActorClassNames>                                  ActorClassNames;                                   // 0x0(0x10)
 };
 
 

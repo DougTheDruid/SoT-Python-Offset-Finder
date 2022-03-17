@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x68
-class ServerSpireInfo: public None
+struct ServerSpireInfo
 {
 public:
 	int                                                          LevelId;                                           // 0x0(0x4)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x8
-class SpireInfo: public None
+struct SpireInfo
 {
 public:
 	int                                                          LevelId;                                           // 0x0(0x4)
@@ -27,7 +27,7 @@ public:
 
 
 // Size 0x14
-class SpireEntry: public None
+struct SpireEntry
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)

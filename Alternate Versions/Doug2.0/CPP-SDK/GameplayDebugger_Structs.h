@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x50
-class GDTCustomViewNames: public None
+struct GDTCustomViewNames
 {
 public:
 	Struct FString                                               GameView1;                                         // 0x0(0x10)

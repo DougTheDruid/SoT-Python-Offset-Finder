@@ -7,16 +7,16 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class ThrottledProjectileTickPool: public None
+struct ThrottledProjectileTickPool
 {
 public:
 	int                                                          MaxNumberToTickPerFrame;                           // 0x0(0x4)
-	TArray<Class MaxNumberToTickPerFrame>                        Projectiles;                                       // 0x8(0x10)
+	TArray<Class Projectiles>                                    Projectiles;                                       // 0x8(0x10)
 };
 
 
 // Size 0x10
-class GlobalProjectileSettings: public None
+struct GlobalProjectileSettings
 {
 public:
 	byte                                                         SettingsFor;                                       // 0x0(0x1)

@@ -229,7 +229,7 @@ Actor:
   - Name: ChildComponentActors
     Offset: '0x1b0'
     Size: '0x10'
-    Type: TArray<Weakclass ParentComponentActor>
+    Type: TArray<Weakclass ChildComponentActors>
   - Name: bActorSeamlessTraveled
     Offset: '0x1c8'
     Size: '0x1'
@@ -481,7 +481,7 @@ AnimBlueprint:
   - Name: Groups
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct TargetSkeleton>
+    Type: TArray<Struct AnimGroupInfo>
   - Name: SkeletonSlotNames
     Offset: '0xf0'
     Size: '0x10'
@@ -495,7 +495,7 @@ AnimBlueprintGeneratedClass:
   - Name: BakedStateMachines
     Offset: '0x228'
     Size: '0x10'
-    Type: TArray<Struct BuildScale3D>
+    Type: TArray<Struct BakedAnimationStateMachine>
   - Name: TargetSkeleton
     Offset: '0x238'
     Size: '0x8'
@@ -503,7 +503,7 @@ AnimBlueprintGeneratedClass:
   - Name: AnimNotifies
     Offset: '0x240'
     Size: '0x10'
-    Type: TArray<Struct TargetSkeleton>
+    Type: TArray<Struct AnimNotifyEvent>
   - Name: RootAnimNodeIndex
     Offset: '0x250'
     Size: '0x4'
@@ -511,7 +511,7 @@ AnimBlueprintGeneratedClass:
   - Name: Groups
     Offset: '0x270'
     Size: '0x10'
-    Type: TArray<Struct RootAnimNodeIndex>
+    Type: TArray<Struct AnimGroupInfo>
   - Name: SkeletonSlotNames
     Offset: '0x280'
     Size: '0x10'
@@ -633,15 +633,15 @@ AnimCompress_PerTrackCompression:
   - Name: AllowedRotationFormats
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Byte MaxScaleDiffBitwise>
+    Type: TArray<Byte AllowedRotationFormats>
   - Name: AllowedTranslationFormats
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Byte AllowedRotationFormats>
+    Type: TArray<Byte AllowedTranslationFormats>
   - Name: AllowedScaleFormats
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Byte AllowedTranslationFormats>
+    Type: TArray<Byte AllowedScaleFormats>
   - Name: bResampleAnimation
     Offset: '0xa0'
     Size: '0x1'
@@ -791,15 +791,15 @@ AnimInstance:
   - Name: UngroupedActivePlayers
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct CurrentSkeleton>
+    Type: TArray<Struct AnimTickRecord>
   - Name: SyncGroups
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct UngroupedActivePlayers>
+    Type: TArray<Struct AnimGroupInstance>
   - Name: VertexAnims
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct SyncGroups>
+    Type: TArray<Struct ActiveVertexAnim>
   - Name: RootMotionMode
     Offset: '0x60'
     Size: '0x1'
@@ -815,7 +815,7 @@ AnimInstance:
   - Name: ActiveAnimNotifyState
     Offset: '0x240'
     Size: '0x10'
-    Type: TArray<Struct bQueueMontageEvents>
+    Type: TArray<Struct AnimNotifyEvent>
   - Name: bBoneCachesInvalidated
     Offset: '0x3a8'
     Size: '0x1'
@@ -851,15 +851,15 @@ AnimMontage:
   - Name: CompositeSections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct BlendOutTriggerTime>
+    Type: TArray<Struct CompositeSection>
   - Name: SlotAnimTracks
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct CompositeSections>
+    Type: TArray<Struct SlotAnimationTrack>
   - Name: BranchingPoints
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct SlotAnimTracks>
+    Type: TArray<Struct BranchingPoint>
   - Name: bEnableRootMotionTranslation
     Offset: '0xb8'
     Size: '0x1'
@@ -875,7 +875,7 @@ AnimMontage:
   - Name: BranchingPointMarkers
     Offset: '0xc0'
     Size: '0x10'
-    Type: TArray<Struct RootMotionRootLock>
+    Type: TArray<Struct BranchingPointMarker>
   - Name: bAnimBranchingPointNeedsSort
     Offset: '0xd0'
     Size: '0x1'
@@ -883,7 +883,7 @@ AnimMontage:
   - Name: BranchingPointStateNotifyIndices
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int BranchingPointStateNotifyIndices>
   ClassSize: '0x70'
   FullSize: '0xe8'
   InheritedSize: '0x78'
@@ -989,19 +989,19 @@ AnimSequence:
   - Name: TrackToSkeletonMapTable
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct NumFrames>
+    Type: TArray<Struct TrackToSkeletonMap>
   - Name: TranslationData
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct TrackToSkeletonMapTable>
+    Type: TArray<Struct TranslationTrack>
   - Name: RotationData
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Struct TranslationData>
+    Type: TArray<Struct RotationTrack>
   - Name: ScaleData
     Offset: '0xc0'
     Size: '0x10'
-    Type: TArray<Struct RotationData>
+    Type: TArray<Struct ScaleTrack>
   - Name: TranslationCompressionFormat
     Offset: '0xd0'
     Size: '0x1'
@@ -1017,7 +1017,7 @@ AnimSequence:
   - Name: CompressedTrackOffsets
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int CompressedTrackOffsets>
   - Name: CompressedScaleOffsets
     Offset: '0xe8'
     Size: '0x18'
@@ -1071,7 +1071,7 @@ AnimSequenceBase:
   - Name: Notifies
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct BranchingPointStateNotifyIndices>
+    Type: TArray<Struct AnimNotifyEvent>
   - Name: SequenceLength
     Offset: '0x60'
     Size: '0x4'
@@ -1101,15 +1101,15 @@ AnimSet:
   - Name: LinkupCache
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct TrackBoneNames>
+    Type: TArray<Struct AnimSetMeshLinkup>
   - Name: BoneUseAnimTranslation
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Byte LinkupCache>
+    Type: TArray<Byte BoneUseAnimTranslation>
   - Name: ForceUseMeshTranslation
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Byte BoneUseAnimTranslation>
+    Type: TArray<Byte ForceUseMeshTranslation>
   - Name: UseTranslationBoneNames
     Offset: '0x70'
     Size: '0x10'
@@ -1147,7 +1147,7 @@ AnimSingleNodeInstance:
   - Name: BlendSampleData
     Offset: '0x460'
     Size: '0x10'
-    Type: TArray<Struct BlendSpaceInput>
+    Type: TArray<Struct BlendSampleData>
   - Name: BlendFilter
     Offset: '0x470'
     Size: '0x90'
@@ -1201,7 +1201,7 @@ AnimationSettings:
   - Name: DefaultVisibleDistanceFactorThresholds
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float DefaultVisibleDistanceFactorThresholds>
   - Name: CompressCommandletVersion
     Offset: '0x48'
     Size: '0x4'
@@ -1209,7 +1209,7 @@ AnimationSettings:
   - Name: KeyEndEffectorsMatchNameArray
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str KeyEndEffectorsMatchNameArray>
   - Name: DefaultCompressionAlgorithm
     Offset: '0x60'
     Size: '0x8'
@@ -1413,7 +1413,7 @@ AudioComponent:
   - Name: InstanceParameters
     Offset: '0x2d8'
     Size: '0x10'
-    Type: TArray<Struct Sound>
+    Type: TArray<Struct AudioComponentParam>
   - Name: SoundClassOverride
     Offset: '0x2e8'
     Size: '0x8'
@@ -1507,7 +1507,7 @@ AudioSettings:
   - Name: QualityLevels
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct MaximumConcurrentStreams>
+    Type: TArray<Struct AudioQualitySettings>
   ClassSize: '0x48'
   FullSize: '0x80'
   InheritedSize: '0x38'
@@ -1567,7 +1567,7 @@ AutomationTestSettings:
   - Name: EditorPerformanceTestMaps
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct AutomationTestmap>
+    Type: TArray<Struct EditorMapPerformanceTestDefinition>
   - Name: BuildPromotionTest
     Offset: '0x48'
     Size: '0x210'
@@ -1583,31 +1583,31 @@ AutomationTestSettings:
   - Name: EngineTestModules
     Offset: '0x298'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str EngineTestModules>
   - Name: EditorTestModules
     Offset: '0x2a8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str EditorTestModules>
   - Name: TestLevelFolders
     Offset: '0x2b8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str TestLevelFolders>
   - Name: TestAssetsToOpen
     Offset: '0x2c8'
     Size: '0x10'
-    Type: TArray<Struct TestLevelFolders>
+    Type: TArray<Struct OpenTestAsset>
   - Name: ExternalTools
     Offset: '0x2d8'
     Size: '0x10'
-    Type: TArray<Struct TestAssetsToOpen>
+    Type: TArray<Struct ExternalToolDefinition>
   - Name: ImportExportTestDefinitions
     Offset: '0x2e8'
     Size: '0x10'
-    Type: TArray<Struct ExternalTools>
+    Type: TArray<Struct EditorImportExportTestDefinition>
   - Name: LaunchOnSettings
     Offset: '0x2f8'
     Size: '0x10'
-    Type: TArray<Struct ImportExportTestDefinitions>
+    Type: TArray<Struct LaunchOnTestSettings>
   ClassSize: '0x2e0'
   FullSize: '0x308'
   InheritedSize: '0x28'
@@ -1621,11 +1621,11 @@ AutomationTestUserSettings:
   - Name: IncludedTestsPrefix
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str IncludedTestsPrefix>
   - Name: ExcludedTestsPrefix
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str ExcludedTestsPrefix>
   - Name: IncludeEpicTests
     Offset: '0x50'
     Size: '0x1'
@@ -1771,15 +1771,15 @@ BlendSpaceBase:
   - Name: PerBoneBlend
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Struct AnimLength>
+    Type: TArray<Struct PerBoneInterpolation>
   - Name: SampleData
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Struct PerBoneBlend>
+    Type: TArray<Struct BlendSample>
   - Name: GridSamples
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct SampleData>
+    Type: TArray<Struct EditorElement>
   ClassSize: '0xb8'
   FullSize: '0x108'
   InheritedSize: '0x50'
@@ -1921,7 +1921,7 @@ BlueprintGeneratedClass:
   - Name: FastCallPairs
     Offset: '0x218'
     Size: '0x10'
-    Type: TArray<Struct UberGraphFunction>
+    Type: TArray<Struct EventGraphFastCallPair>
   ClassSize: '0x68'
   FullSize: '0x228'
   InheritedSize: '0x1c0'
@@ -2011,7 +2011,7 @@ BoneMaskFilter:
   - Name: BlendPoses
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct HiddenLevels>
+    Type: TArray<Struct InputBlendPose>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -2029,7 +2029,7 @@ BookMark:
   - Name: HiddenLevels
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str HiddenLevels>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -2153,7 +2153,7 @@ Brush:
   - Name: SavedSelections
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<Struct bInManipulation>
+    Type: TArray<Struct GeomSelection>
   ClassSize: '0x38'
   FullSize: '0x408'
   InheritedSize: '0x3d0'
@@ -2175,11 +2175,11 @@ BrushBuilder:
   - Name: Vertices
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct NotifyBadParams>
+    Type: TArray<Struct Vector>
   - Name: Polys
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct Vertices>
+    Type: TArray<Struct BuilderPoly>
   - Name: Layer
     Offset: '0x70'
     Size: '0x8'
@@ -2723,7 +2723,7 @@ Character:
   - Name: RootMotionRepMoves
     Offset: '0x580'
     Size: '0x10'
-    Type: TArray<Struct ClientRootMotionParams>
+    Type: TArray<Struct SimulatedRootMotionReplicatedMove>
   - Name: RepRootMotion
     Offset: '0x590'
     Size: '0x40'
@@ -3341,7 +3341,7 @@ CloudStorageBase:
   - Name: LocalCloudFiles
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str LocalCloudFiles>
   - Name: bSuppressDelegateCalls
     Offset: '0x48'
     Size: '0x1'
@@ -3355,23 +3355,23 @@ CollisionProfile:
   - Name: Profiles
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct GetBoundingBox>
+    Type: TArray<Struct CollisionResponseTemplate>
   - Name: DefaultChannelResponses
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct Profiles>
+    Type: TArray<Struct CustomChannelSetup>
   - Name: EditProfiles
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct DefaultChannelResponses>
+    Type: TArray<Struct CustomProfile>
   - Name: ProfileRedirects
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct EditProfiles>
+    Type: TArray<Struct Redirector>
   - Name: CollisionChannelRedirects
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct ProfileRedirects>
+    Type: TArray<Struct Redirector>
   ClassSize: '0x120'
   FullSize: '0x158'
   InheritedSize: '0x38'
@@ -3393,11 +3393,11 @@ Commandlet:
   - Name: HelpParamNames
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str HelpParamNames>
   - Name: HelpParamDescriptions
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str HelpParamDescriptions>
   - Name: IsServer
     Offset: '0x78'
     Size: '0x1'
@@ -3437,7 +3437,7 @@ ComponentDelegateBinding:
   - Name: ComponentDelegateBindings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct InputActionDelegateBindings>
+    Type: TArray<Struct BlueprintComponentDelegateBinding>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -3481,7 +3481,7 @@ Console:
   - Name: HistoryBuffer
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str HistoryBuffer>
   ClassSize: '0xc8'
   FullSize: '0xf0'
   InheritedSize: '0x28'
@@ -3541,7 +3541,7 @@ CullDistanceVolume:
   - Name: CullDistances
     Offset: '0x408'
     Size: '0x10'
-    Type: TArray<Struct GetComponent>
+    Type: TArray<Struct CullDistanceSizePair>
   - Name: bEnabled
     Offset: '0x418'
     Size: '0x1'
@@ -3863,7 +3863,7 @@ DestructibleComponent:
   - Name: FractureEffects
     Offset: '0x6e8'
     Size: '0x10'
-    Type: TArray<Struct bFractureEffectOverride>
+    Type: TArray<Struct FractureEffect>
   - Name: bEnableHardSleeping
     Offset: '0x6f8'
     Size: '0x1'
@@ -3893,7 +3893,7 @@ DestructibleFractureSettings:
   - Name: VoronoiSites
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct RandomSeed>
+    Type: TArray<Struct Vector>
   - Name: OriginalSubmeshCount
     Offset: '0x68'
     Size: '0x4'
@@ -3905,11 +3905,11 @@ DestructibleFractureSettings:
   - Name: ChunkParameters
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct Materials>
+    Type: TArray<Struct DestructibleChunkParameters>
   - Name: MaterialNames
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str MaterialNames>
   ClassSize: '0x78'
   FullSize: '0xa0'
   InheritedSize: '0x28'
@@ -3923,7 +3923,7 @@ DestructibleMesh:
   - Name: FractureEffects
     Offset: '0x2c0'
     Size: '0x10'
-    Type: TArray<Struct DefaultDestructibleParameters>
+    Type: TArray<Struct FractureEffect>
   ClassSize: '0x98'
   FullSize: '0x2d0'
   InheritedSize: '0x238'
@@ -3951,7 +3951,7 @@ DeviceProfile:
   - Name: CVars
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str CVars>
   ClassSize: '0x48'
   FullSize: '0x80'
   InheritedSize: '0x38'
@@ -4009,7 +4009,7 @@ DialogueWave:
   - Name: ContextMappings
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct SpokenText>
+    Type: TArray<Struct DialogueContextMapping>
   - Name: LocalizationGUID
     Offset: '0x50'
     Size: '0x10'
@@ -4649,7 +4649,7 @@ EmitterCameraLensEffectBase:
   - Name: EmittersToTreatAsSame
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<Class bAllowMultipleInstances>
+    Type: TArray<Class EmittersToTreatAsSame>
   - Name: BaseCamera
     Offset: '0x450'
     Size: '0x8'
@@ -4733,7 +4733,7 @@ Engine:
   - Name: AdditionalFontNames
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str AdditionalFontNames>
   - Name: ConsoleClass
     Offset: '0x100'
     Size: '0x8'
@@ -5065,19 +5065,19 @@ Engine:
   - Name: LightComplexityColors
     Offset: '0x4d8'
     Size: '0x10'
-    Type: TArray<Struct LightingOnlyBrightness>
+    Type: TArray<Struct Color>
   - Name: ShaderComplexityColors
     Offset: '0x4e8'
     Size: '0x10'
-    Type: TArray<Struct LightComplexityColors>
+    Type: TArray<Struct LinearColor>
   - Name: StationaryLightOverlapColors
     Offset: '0x4f8'
     Size: '0x10'
-    Type: TArray<Struct ShaderComplexityColors>
+    Type: TArray<Struct LinearColor>
   - Name: LODColorationColors
     Offset: '0x508'
     Size: '0x10'
-    Type: TArray<Struct StationaryLightOverlapColors>
+    Type: TArray<Struct LinearColor>
   - Name: MaxPixelShaderAdditiveComplexityCount
     Offset: '0x518'
     Size: '0x4'
@@ -5121,7 +5121,7 @@ Engine:
   - Name: StatColorMappings
     Offset: '0x558'
     Size: '0x10'
-    Type: TArray<Struct LightMapDensitySelectedColor>
+    Type: TArray<Struct StatColorMapping>
   - Name: DefaultPhysMaterial
     Offset: '0x568'
     Size: '0x8'
@@ -5133,19 +5133,19 @@ Engine:
   - Name: ActiveGameNameRedirects
     Offset: '0x580'
     Size: '0x10'
-    Type: TArray<Struct DefaultPhysMaterialName>
+    Type: TArray<Struct GameNameRedirect>
   - Name: ActiveClassRedirects
     Offset: '0x590'
     Size: '0x10'
-    Type: TArray<Struct ActiveGameNameRedirects>
+    Type: TArray<Struct ClassRedirect>
   - Name: ActivePluginRedirects
     Offset: '0x5a0'
     Size: '0x10'
-    Type: TArray<Struct ActiveClassRedirects>
+    Type: TArray<Struct PluginRedirect>
   - Name: ActiveStructRedirects
     Offset: '0x5b0'
     Size: '0x10'
-    Type: TArray<Struct ActivePluginRedirects>
+    Type: TArray<Struct StructRedirect>
   - Name: PreIntegratedSkinBRDFTexture
     Offset: '0x5c0'
     Size: '0x8'
@@ -5185,7 +5185,7 @@ Engine:
   - Name: DeferredCommands
     Offset: '0x630'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str DeferredCommands>
   - Name: TickCycles
     Offset: '0x640'
     Size: '0x4'
@@ -5365,7 +5365,7 @@ Engine:
   - Name: PendingDroppedNotes
     Offset: '0x700'
     Size: '0x10'
-    Type: TArray<Struct MaxParticleResizeWarn>
+    Type: TArray<Struct DropNoteInfo>
   - Name: PhysicErrorCorrection
     Offset: '0x710'
     Size: '0x1c'
@@ -5461,15 +5461,15 @@ Engine:
   - Name: NetDriverDefinitions
     Offset: '0x908'
     Size: '0x10'
-    Type: TArray<Struct SelectionHighlightIntensityBillboards>
+    Type: TArray<Struct NetDriverDefinition>
   - Name: ServerActors
     Offset: '0x918'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str ServerActors>
   - Name: RuntimeServerActors
     Offset: '0x928'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str RuntimeServerActors>
   - Name: bStartedLoadMapMovie
     Offset: '0x938'
     Size: '0x1'
@@ -5631,11 +5631,11 @@ Exporter:
   - Name: FormatExtension
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str FormatExtension>
   - Name: FormatDescription
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str FormatDescription>
   - Name: PreferredFormatIndex
     Offset: '0x58'
     Size: '0x4'
@@ -5747,7 +5747,7 @@ FeatureToggledStringAssetReference:
   - Name: Entries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct CoherentToWwiseEventEntries>
+    Type: TArray<Struct FeatureToggledStringAssetReferenceEntry>
   - Name: ClassType
     Offset: '0x38'
     Size: '0x8'
@@ -5829,7 +5829,7 @@ FlatWaterMeshComponent:
   - Name: TextureOverrides
     Offset: '0x690'
     Size: '0x10'
-    Type: TArray<Struct OriginalMaterials>
+    Type: TArray<Struct FlatWaterMeshTextureOverride>
   ClassSize: '0xa0'
   FullSize: '0x6b0'
   InheritedSize: '0x610'
@@ -6045,7 +6045,7 @@ Font:
   - Name: Characters
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct FontCacheType>
+    Type: TArray<Struct FontCharacter>
   - Name: Textures
     Offset: '0x48'
     Size: '0x10'
@@ -6085,7 +6085,7 @@ Font:
   - Name: MaxCharHeight
     Offset: '0x128'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int MaxCharHeight>
   - Name: ScalingFactor
     Offset: '0x138'
     Size: '0x4'
@@ -6121,7 +6121,7 @@ ForceFeedbackEffect:
   - Name: ChannelDetails
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct PickedActor>
+    Type: TArray<Struct ForceFeedbackChannelDetails>
   - Name: Duration
     Offset: '0x38'
     Size: '0x4'
@@ -6267,7 +6267,7 @@ GameMode:
   - Name: GameModeClassAliases
     Offset: '0x4b0'
     Size: '0x10'
-    Type: TArray<Struct InactivePlayerArray>
+    Type: TArray<Struct GameClassShortName>
   - Name: InactivePlayerStateLifeSpan
     Offset: '0x4c0'
     Size: '0x4'
@@ -6521,7 +6521,7 @@ GameViewportClient:
   - Name: DebugProperties
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct ViewportConsole>
+    Type: TArray<Struct DebugDisplayProperty>
   - Name: World
     Offset: '0x80'
     Size: '0x8'
@@ -6661,7 +6661,7 @@ HIKCharacterization:
   - Name: BoneTransforms
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct Head>
+    Type: TArray<Struct HIKBoneTransform>
   - Name: Locked
     Offset: '0xb8'
     Size: '0x1'
@@ -6669,11 +6669,11 @@ HIKCharacterization:
   - Name: UnrealToHumanIKBoneMapping
     Offset: '0xc0'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int UnrealToHumanIKBoneMapping>
   - Name: AdditionalBones
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct UnrealToHumanIKBoneMapping>
+    Type: TArray<Struct HIKBoneMapping>
   - Name: LeftElbowInverted
     Offset: '0xe0'
     Size: '0x1'
@@ -6827,7 +6827,7 @@ HUD:
   - Name: DebugTextList
     Offset: '0x438'
     Size: '0x10'
-    Type: TArray<Struct DebugCanvas>
+    Type: TArray<Struct DebugTextInfo>
   - Name: ShowDebugTargetDesiredClass
     Offset: '0x448'
     Size: '0x8'
@@ -6855,7 +6855,7 @@ HierarchicalInstancedStaticMeshComponent:
   - Name: SortedInstances
     Offset: '0x700'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int SortedInstances>
   - Name: NumBuiltInstances
     Offset: '0x710'
     Size: '0x4'
@@ -6871,7 +6871,7 @@ HierarchicalInstancedStaticMeshComponent:
   - Name: UnbuiltInstanceBoundsList
     Offset: '0x750'
     Size: '0x10'
-    Type: TArray<Struct UnbuiltInstanceBounds>
+    Type: TArray<Struct Box>
   - Name: OcclusionLayerNumNodes
     Offset: '0x760'
     Size: '0x4'
@@ -6929,11 +6929,11 @@ InGameAdManager:
   - Name: ClickedBannerDelegates
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Delegate bShouldPauseWhileAdOpen>
+    Type: TArray<Delegate ClickedBannerDelegates>
   - Name: ClosedAdDelegates
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Delegate ClickedBannerDelegates>
+    Type: TArray<Delegate ClosedAdDelegates>
   ClassSize: '0x28'
   FullSize: '0x60'
   InheritedSize: '0x38'
@@ -6949,7 +6949,7 @@ InheritableComponentHandler:
   - Name: Records
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ClearSmoothing>
+    Type: TArray<Struct ComponentOverrideRecord>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -6959,7 +6959,7 @@ InputActionDelegateBinding:
   - Name: InputActionDelegateBindings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct InputAxisDelegateBindings>
+    Type: TArray<Struct BlueprintInputActionDelegateBinding>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -6969,7 +6969,7 @@ InputAxisDelegateBinding:
   - Name: InputAxisDelegateBindings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct InputAxisKeyDelegateBindings>
+    Type: TArray<Struct BlueprintInputAxisDelegateBinding>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -6979,7 +6979,7 @@ InputAxisKeyDelegateBinding:
   - Name: InputAxisKeyDelegateBindings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct InputKeyDelegateBindings>
+    Type: TArray<Struct BlueprintInputAxisKeyDelegateBinding>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -7001,7 +7001,7 @@ InputKeyDelegateBinding:
   - Name: InputKeyDelegateBindings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct InputTouchDelegateBindings>
+    Type: TArray<Struct BlueprintInputKeyDelegateBinding>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -7011,7 +7011,7 @@ InputSettings:
   - Name: AxisConfig
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ActiveTab>
+    Type: TArray<Struct InputAxisConfigEntry>
   - Name: bAltEnterTogglesFullscreen
     Offset: '0x38'
     Size: '0x1'
@@ -7039,15 +7039,15 @@ InputSettings:
   - Name: ActionMappings
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct DoubleClickTime>
+    Type: TArray<Struct InputActionKeyMapping>
   - Name: AxisMappings
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct ActionMappings>
+    Type: TArray<Struct InputAxisKeyMapping>
   - Name: CombinedAxisMappings
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct AxisMappings>
+    Type: TArray<Struct InputCombinedAxisKeyMapping>
   - Name: bAlwaysShowTouchInterface
     Offset: '0x78'
     Size: '0x1'
@@ -7067,7 +7067,7 @@ InputSettings:
   - Name: ConsoleKeys
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Struct ConsoleKey>
+    Type: TArray<Struct Key>
   ClassSize: '0x98'
   FullSize: '0xc0'
   InheritedSize: '0x28'
@@ -7077,7 +7077,7 @@ InputTouchDelegateBinding:
   - Name: InputTouchDelegateBindings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ActorDelegateBindings>
+    Type: TArray<Struct BlueprintInputTouchDelegateBinding>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -7093,7 +7093,7 @@ InstancedActorDelegateBinding:
   - Name: ActorDelegateBindings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct bAllowRenaming>
+    Type: TArray<Struct BlueprintInstancedActorDelegateBinding>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -7143,7 +7143,7 @@ InstancedCoverageMeshComponent:
   - Name: LODs
     Offset: '0x658'
     Size: '0x10'
-    Type: TArray<Struct InstanceBaseMeshPlacementLOD>
+    Type: TArray<Struct InstancedCoverageMeshLOD>
   - Name: CompleteCullingDistance
     Offset: '0x668'
     Size: '0x4'
@@ -7179,7 +7179,7 @@ InstancedCoverageMeshComponent:
   - Name: RandomNumbers
     Offset: '0x680'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float RandomNumbers>
   - Name: BaseMeshSurfaceArea
     Offset: '0x690'
     Size: '0x4'
@@ -7223,7 +7223,7 @@ InstancedNavMeshesDataAsset:
   - Name: InstancedNavMeshes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Array>
+    Type: TArray<Struct InstancedNavMesh>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -7233,7 +7233,7 @@ InstancedStaticMeshComponent:
   - Name: PerInstanceSMData
     Offset: '0x610'
     Size: '0x10'
-    Type: TArray<Struct RemoveInstances>
+    Type: TArray<Struct InstancedStaticMeshInstanceData>
   - Name: InstancingRandomSeed
     Offset: '0x620'
     Size: '0x4'
@@ -7249,11 +7249,11 @@ InstancedStaticMeshComponent:
   - Name: InstanceReorderTable
     Offset: '0x630'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int InstanceReorderTable>
   - Name: RemovedInstances
     Offset: '0x640'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int RemovedInstances>
   - Name: PhysicsSerializer
     Offset: '0x698'
     Size: '0x8'
@@ -7265,7 +7265,7 @@ InstancedStaticMeshComponent:
   - Name: CachedMappings
     Offset: '0x6a8'
     Size: '0x10'
-    Type: TArray<Struct NumPendingLightmaps>
+    Type: TArray<Struct InstancedStaticMeshMappingInfo>
   ClassSize: '0xb0'
   FullSize: '0x6c0'
   InheritedSize: '0x610'
@@ -7313,7 +7313,7 @@ InterpCurveEdSetup:
   - Name: Tabs
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AllEventNames>
+    Type: TArray<Struct CurveEdTab>
   - Name: ActiveTab
     Offset: '0x38'
     Size: '0x4'
@@ -7571,7 +7571,7 @@ InterpTrackAnimControl:
   - Name: AnimSeqs
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct SlotName>
+    Type: TArray<Struct AnimControlTrackKey>
   - Name: bSkipAnimNotifiers
     Offset: '0xa8'
     Size: '0x1'
@@ -7591,7 +7591,7 @@ InterpTrackBoolProp:
   - Name: BoolTrack
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct bSimulateCameraCutsOnClients>
+    Type: TArray<Struct BoolTrackKey>
   - Name: PropertyName
     Offset: '0x80'
     Size: '0x8'
@@ -7621,7 +7621,7 @@ InterpTrackDirector:
   - Name: CutTrack
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct bUseCustomEventName>
+    Type: TArray<Struct DirectorTrackCut>
   - Name: bSimulateCameraCutsOnClients
     Offset: '0x80'
     Size: '0x1'
@@ -7635,7 +7635,7 @@ InterpTrackEvent:
   - Name: EventTrack
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct CurveTension>
+    Type: TArray<Struct EventTrackKey>
   - Name: bFireEventsWhenForwards
     Offset: '0x80'
     Size: '0x1'
@@ -7837,11 +7837,11 @@ InterpTrackInstFloatMaterialParam:
   - Name: ResetFloats
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float ResetFloats>
   - Name: PrimitiveMaterialRefs
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct ResetFloats>
+    Type: TArray<Struct PrimitiveMaterialRef>
   - Name: InstancedTrack
     Offset: '0x58'
     Size: '0x8'
@@ -7959,11 +7959,11 @@ InterpTrackInstVectorMaterialParam:
   - Name: ResetVectors
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct MaterialInstances>
+    Type: TArray<Struct Vector>
   - Name: PrimitiveMaterialRefs
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct ResetVectors>
+    Type: TArray<Struct PrimitiveMaterialRef>
   - Name: InstancedTrack
     Offset: '0x58'
     Size: '0x8'
@@ -8097,7 +8097,7 @@ InterpTrackParticleReplay:
   - Name: TrackKeys
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct bFireEventsWhenJumpingForwards>
+    Type: TArray<Struct ParticleReplayTrackKey>
   ClassSize: '0x10'
   FullSize: '0x80'
   InheritedSize: '0x70'
@@ -8107,7 +8107,7 @@ InterpTrackSound:
   - Name: Sounds
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct ParamName>
+    Type: TArray<Struct SoundTrackKey>
   - Name: bPlayOnReverse
     Offset: '0xa0'
     Size: '0x1'
@@ -8137,7 +8137,7 @@ InterpTrackToggle:
   - Name: ToggleTrack
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct CurveTension>
+    Type: TArray<Struct ToggleTrackKey>
   - Name: bActivateSystemEachUpdate
     Offset: '0x80'
     Size: '0x1'
@@ -8205,7 +8205,7 @@ InterpTrackVisibility:
   - Name: VisibilityTrack
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct LastUpdatePosition>
+    Type: TArray<Struct VisibilityTrackKey>
   - Name: bFireEventsWhenForwards
     Offset: '0x80'
     Size: '0x1'
@@ -8321,7 +8321,7 @@ Layer:
   - Name: ActorStats
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct bIsVisible>
+    Type: TArray<Struct LayerActorStats>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -8371,7 +8371,7 @@ Level:
   - Name: StaticNavigableGeometry
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<Struct ShadowmapTotalSize>
+    Type: TArray<Struct Vector>
   - Name: LevelVisibility
     Offset: '0x260'
     Size: '0x1'
@@ -8485,7 +8485,7 @@ LevelStreaming:
   - Name: Keywords
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Keywords>
   - Name: LoadedLevel
     Offset: '0x200'
     Size: '0x8'
@@ -8529,7 +8529,7 @@ LevelStreamingVolume:
   - Name: StreamingLevelNames
     Offset: '0x408'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: bEditorPreVisOnly
     Offset: '0x418'
     Size: '0x1'
@@ -8739,7 +8739,7 @@ LightmappedSurfaceCollection:
   - Name: Surfaces
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int Surfaces>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -9355,11 +9355,11 @@ Material:
   - Name: MaterialFunctionInfos
     Offset: '0x928'
     Size: '0x10'
-    Type: TArray<Struct Expressions>
+    Type: TArray<Struct MaterialFunctionInfo>
   - Name: MaterialParameterCollectionInfos
     Offset: '0x938'
     Size: '0x10'
-    Type: TArray<Struct MaterialFunctionInfos>
+    Type: TArray<Struct MaterialParameterCollectionInfo>
   - Name: bCanMaskedBeAssumedOpaque
     Offset: '0x948'
     Size: '0x1'
@@ -9429,7 +9429,7 @@ MaterialBillboardComponent:
   - Name: Elements
     Offset: '0x5a8'
     Size: '0x10'
-    Type: TArray<Struct CollisionChannelRedirects>
+    Type: TArray<Struct MaterialSpriteElement>
   ClassSize: '0x10'
   FullSize: '0x5c0'
   InheritedSize: '0x5b0'
@@ -9499,7 +9499,7 @@ MaterialExpression:
   - Name: Outputs
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct MenuCategories>
+    Type: TArray<Struct ExpressionOutput>
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
@@ -9889,7 +9889,7 @@ MaterialExpressionCustom:
   - Name: Inputs
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct Description>
+    Type: TArray<Struct CustomInput>
   - Name: DeclarationCode
     Offset: '0xa8'
     Size: '0x10'
@@ -10097,7 +10097,7 @@ MaterialExpressionDynamicParameter:
   - Name: ParamNames
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str ParamNames>
   - Name: DefaultValue
     Offset: '0x80'
     Size: '0x10'
@@ -10591,11 +10591,11 @@ MaterialExpressionMaterialFunctionCall:
   - Name: FunctionInputs
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct MaterialFunction>
+    Type: TArray<Struct FunctionExpressionInput>
   - Name: FunctionOutputs
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct FunctionInputs>
+    Type: TArray<Struct FunctionExpressionOutput>
   ClassSize: '0x28'
   FullSize: '0x98'
   InheritedSize: '0x70'
@@ -11651,19 +11651,19 @@ MaterialInstance:
   - Name: FontParameterValues
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct ParentLightingGuid>
+    Type: TArray<Struct FontParameterValue>
   - Name: ScalarParameterValues
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct FontParameterValues>
+    Type: TArray<Struct ScalarParameterValue>
   - Name: TextureParameterValues
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct ScalarParameterValues>
+    Type: TArray<Struct TextureParameterValue>
   - Name: VectorParameterValues
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Struct TextureParameterValues>
+    Type: TArray<Struct VectorParameterValue>
   - Name: BasePropertyOverrides
     Offset: '0xc0'
     Size: '0x84'
@@ -11717,11 +11717,11 @@ MaterialParameterCollection:
   - Name: ScalarParameters
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct StateId>
+    Type: TArray<Struct CollectionScalarParameter>
   - Name: VectorParameters
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct ScalarParameters>
+    Type: TArray<Struct CollectionVectorParameter>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -11821,7 +11821,7 @@ MatineeActor:
   - Name: GroupActorInfos
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<Struct bHideHud>
+    Type: TArray<Struct InterpGroupActorInfo>
   - Name: bShouldShowGore
     Offset: '0x408'
     Size: '0x1'
@@ -11833,7 +11833,7 @@ MatineeActor:
   - Name: CameraCuts
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct GroupInst>
+    Type: TArray<Struct CameraCutInfo>
   - Name: bIsPlaying
     Offset: '0x430'
     Size: '0x1'
@@ -11917,7 +11917,7 @@ MergedCollisionComponent:
   - Name: PerInstanceData
     Offset: '0x5a8'
     Size: '0x10'
-    Type: TArray<Struct ApplyDamage>
+    Type: TArray<Struct MergedCollisionComponentStaticMeshInstanceData>
   ClassSize: '0x20'
   FullSize: '0x5d0'
   InheritedSize: '0x5b0'
@@ -11931,7 +11931,7 @@ MergedStaticMeshComponent:
   - Name: LODScreenSizes
     Offset: '0x618'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float LODScreenSizes>
   - Name: LODForCollision
     Offset: '0x628'
     Size: '0x4'
@@ -11965,7 +11965,7 @@ MicroTransactionBase:
   - Name: AvailableProducts
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct AuthorizeAccounts>
+    Type: TArray<Struct PurchaseInfo>
   - Name: LastError
     Offset: '0x48'
     Size: '0x10'
@@ -11987,11 +11987,11 @@ MobileInstancedStaticMeshComponent:
   - Name: InstanceTransforms
     Offset: '0x620'
     Size: '0x10'
-    Type: TArray<Struct MaxInstances>
+    Type: TArray<Struct Transform>
   - Name: InstanceMatrices
     Offset: '0x630'
     Size: '0x10'
-    Type: TArray<Struct InstanceTransforms>
+    Type: TArray<Struct Matrix>
   - Name: LocalBounds
     Offset: '0x640'
     Size: '0x1c'
@@ -12277,11 +12277,11 @@ NavCollision:
   - Name: CylinderCollision
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct NavigationDataName>
+    Type: TArray<Struct NavCollisionCylinder>
   - Name: BoxCollision
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct CylinderCollision>
+    Type: TArray<Struct NavCollisionBox>
   - Name: AreaClass
     Offset: '0x98'
     Size: '0x8'
@@ -12375,11 +12375,11 @@ NavLinkDefinition:
   - Name: Links
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct HasMovingAgents>
+    Type: TArray<Struct NavigationLink>
   - Name: SegmentLinks
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct Links>
+    Type: TArray<Struct NavigationSegmentLink>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -12395,11 +12395,11 @@ NavLinkProxy:
   - Name: PointLinks
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<Struct ContainsEmitterType>
+    Type: TArray<Struct NavigationLink>
   - Name: SegmentLinks
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<Struct PointLinks>
+    Type: TArray<Struct NavigationSegmentLink>
   - Name: SmartLinkComp
     Offset: '0x400'
     Size: '0x8'
@@ -12569,7 +12569,7 @@ NavigationData:
   - Name: SupportedAreas
     Offset: '0x528'
     Size: '0x10'
-    Type: TArray<Struct ObservedPathsTickInterval>
+    Type: TArray<Struct SupportedAreaData>
   ClassSize: '0x1c0'
   FullSize: '0x590'
   InheritedSize: '0x3d0'
@@ -12655,7 +12655,7 @@ NavigationPath:
   - Name: PathPoints
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct PathUpdatedNotifier>
+    Type: TArray<Struct Vector>
   - Name: RecalculateOnInvalidation
     Offset: '0x48'
     Size: '0x1'
@@ -12675,7 +12675,7 @@ NavigationQueryFilter:
   - Name: Areas
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct SupportedAreas>
+    Type: TArray<Struct NavigationFilterArea>
   - Name: IncludeFlags
     Offset: '0x38'
     Size: '0x4'
@@ -12733,7 +12733,7 @@ NavigationSystem:
   - Name: SupportedAgents
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct ActiveTilesUpdateInterval>
+    Type: TArray<Struct NavDataConfig>
   - Name: DirtyAreasUpdateFreq
     Offset: '0x58'
     Size: '0x4'
@@ -13095,7 +13095,7 @@ ObjectLibrary:
   - Name: WeakObjects
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Weakclass Objects>
+    Type: TArray<Weakclass WeakObjects>
   - Name: bUseWeakReferences
     Offset: '0x58'
     Size: '0x1'
@@ -13373,11 +13373,11 @@ ParticleModule:
   - Name: ModuleInstanceOffsets
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int ModuleInstanceOffsets>
   - Name: ModuleOffsets
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int ModuleOffsets>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -13919,7 +13919,7 @@ ParticleModuleCollision:
   - Name: CollisionTypes
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<Byte CollisionCompletionOption>
+    Type: TArray<Byte CollisionTypes>
   - Name: bApplyPhysics
     Offset: '0x114'
     Size: '0x1'
@@ -14127,7 +14127,7 @@ ParticleModuleEventGenerator:
   - Name: Events
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct Events>
+    Type: TArray<Struct ParticleEvent_GenerateInfo>
   ClassSize: '0x10'
   FullSize: '0x60'
   InheritedSize: '0x50'
@@ -14137,7 +14137,7 @@ ParticleModuleEventGeneratorGPU:
   - Name: Events
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct EventName>
+    Type: TArray<Struct ParticleEventGPU_GenerateInfo>
   ClassSize: '0x10'
   FullSize: '0x60'
   InheritedSize: '0x50'
@@ -14415,7 +14415,7 @@ ParticleModuleLocationBoneSocket:
   - Name: SourceLocations
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct UniversalOffset>
+    Type: TArray<Struct LocationBoneSocketInfo>
   - Name: SelectionMethod
     Offset: '0x70'
     Size: '0x1'
@@ -14847,7 +14847,7 @@ ParticleModuleLocationSkelVertSurface:
   - Name: ValidMaterialIndices
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int ValidMaterialIndices>
   - Name: bInheritVertexColor
     Offset: '0xa8'
     Size: '0x1'
@@ -15077,7 +15077,7 @@ ParticleModuleParameterDynamic:
   - Name: DynamicParams
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct RandomSeedInfo>
+    Type: TArray<Struct EmitterDynamicParameter>
   - Name: UpdateFlags
     Offset: '0x60'
     Size: '0x4'
@@ -15349,7 +15349,7 @@ ParticleModuleRequired:
   - Name: BurstList
     Offset: '0x1e8'
     Size: '0x10'
-    Type: TArray<Struct ParticleBurstMethod>
+    Type: TArray<Struct ParticleBurst>
   - Name: EmitterDelay
     Offset: '0x1f8'
     Size: '0x4'
@@ -15773,7 +15773,7 @@ ParticleModuleSpawn:
   - Name: BurstList
     Offset: '0x228'
     Size: '0x10'
-    Type: TArray<Struct ParticleBurstMethod>
+    Type: TArray<Struct ParticleBurst>
   - Name: BurstScale
     Offset: '0x238'
     Size: '0x38'
@@ -15947,7 +15947,7 @@ ParticleModuleTrailSource:
   - Name: SourceOffsetDefaults
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct SourceOffsetCount>
+    Type: TArray<Struct Vector>
   - Name: SelectionMethod
     Offset: '0xb0'
     Size: '0x1'
@@ -16659,7 +16659,7 @@ ParticleSystem:
   - Name: LODDistances
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float LODDistances>
   - Name: bRegenerateLODDuplicate
     Offset: '0x80'
     Size: '0x1'
@@ -16667,7 +16667,7 @@ ParticleSystem:
   - Name: LODSettings
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct bRegenerateLODDuplicate>
+    Type: TArray<Struct ParticleSystemLOD>
   - Name: bIgnoreBoundsRotation
     Offset: '0x98'
     Size: '0x1'
@@ -16747,11 +16747,11 @@ ParticleSystem:
   - Name: SoloTracking
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<Struct CustomOcclusionBounds>
+    Type: TArray<Struct LODSoloTrack>
   - Name: NamedMaterialSlots
     Offset: '0x130'
     Size: '0x10'
-    Type: TArray<Struct SoloTracking>
+    Type: TArray<Struct NamedEmitterMaterial>
   ClassSize: '0x118'
   FullSize: '0x140'
   InheritedSize: '0x28'
@@ -16799,7 +16799,7 @@ ParticleSystemComponent:
   - Name: InstanceParameters
     Offset: '0x5d8'
     Size: '0x10'
-    Type: TArray<Struct bUpdateOnDedicatedServer>
+    Type: TArray<Struct ParticleSysParam>
   - Name: EmitterPointParameter
     Offset: '0x5e8'
     Size: '0x50'
@@ -16859,7 +16859,7 @@ ParticleSystemComponent:
   - Name: CachedViewRelevanceFlags
     Offset: '0x718'
     Size: '0x10'
-    Type: TArray<Struct bSkipUpdateDynamicDataDuringTick>
+    Type: TArray<Struct MaterialRelevance>
   - Name: ReplayClips
     Offset: '0x730'
     Size: '0x10'
@@ -17081,7 +17081,7 @@ PhysicsAsset:
   - Name: BoundsBodies
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int BoundsBodies>
   - Name: ConstraintSetup
     Offset: '0x48'
     Size: '0x10'
@@ -17467,15 +17467,15 @@ PhysicsSettings:
   - Name: PhysicalSurfaces
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct InitialAverageFrameRate>
+    Type: TArray<Struct PhysicalSurfaceName>
   - Name: DominanceGroups
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct PhysicalSurfaces>
+    Type: TArray<Struct DominanceGroupPair>
   - Name: DominanceGroupNames
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct DominanceGroups>
+    Type: TArray<Struct DominanceGroupName>
   - Name: DefaultStaticDominanceGroup
     Offset: '0xb8'
     Size: '0x1'
@@ -17615,7 +17615,7 @@ PlatformInterfaceBase:
   - Name: AllDelegates
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct bSuppressDelegateCalls>
+    Type: TArray<Struct DelegateArray>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -17641,7 +17641,7 @@ PlatformInterfaceWebResponse:
   - Name: BinaryResponse
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Byte StringResponse>
+    Type: TArray<Byte BinaryResponse>
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'
@@ -17713,7 +17713,7 @@ PlayerCameraManager:
   - Name: DefaultModifiers
     Offset: '0x1b48'
     Size: '0x10'
-    Type: TArray<Class ModifierList>
+    Type: TArray<Class DefaultModifiers>
   - Name: FreeCamDistance
     Offset: '0x1b58'
     Size: '0x4'
@@ -17741,7 +17741,7 @@ PlayerCameraManager:
   - Name: PostProcessBlendCache
     Offset: '0x1be0'
     Size: '0x10'
-    Type: TArray<Struct AnimInstPool>
+    Type: TArray<Struct PostProcessSettings>
   - Name: ActiveAnims
     Offset: '0x1c00'
     Size: '0x10'
@@ -17863,7 +17863,7 @@ PlayerController:
   - Name: ActiveForceFeedbackEffects
     Offset: '0x4d8'
     Size: '0x10'
-    Type: TArray<Struct PlayerInput>
+    Type: TArray<Struct ActiveForceFeedbackEffect>
   - Name: bPlayerIsWaiting
     Offset: '0x578'
     Size: '0x1'
@@ -17977,7 +17977,7 @@ PlayerInput:
   - Name: DebugExecBindings
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<Struct ConsoleKeys>
+    Type: TArray<Struct KeyBind>
   - Name: GamepadInvertedAxes
     Offset: '0x170'
     Size: '0x10'
@@ -18741,7 +18741,7 @@ RadialForceComponent:
   - Name: ObjectTypesToAffect
     Offset: '0x2e8'
     Size: '0x10'
-    Type: TArray<Byte DestructibleDamage>
+    Type: TArray<Byte ObjectTypesToAffect>
   ClassSize: '0x30'
   FullSize: '0x300'
   InheritedSize: '0x2d0'
@@ -19239,11 +19239,11 @@ Rig:
   - Name: TransformBases
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct DefaultSceneRootNode>
+    Type: TArray<Struct TransformBase>
   - Name: Nodes
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct TransformBases>
+    Type: TArray<Struct Node>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -19309,7 +19309,7 @@ SCS_Node:
   - Name: MetaDataArray
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct ChildNodes>
+    Type: TArray<Struct BPVariableMetaDataEntry>
   - Name: VariableGuid
     Offset: '0x78'
     Size: '0x10'
@@ -19359,7 +19359,7 @@ SceneCaptureComponent:
   - Name: HiddenComponents
     Offset: '0x2d0'
     Size: '0x10'
-    Type: TArray<Weakclass AddOrUpdateBlendable>
+    Type: TArray<Weakclass HiddenComponents>
   - Name: bCaptureEveryFrame
     Offset: '0x2e0'
     Size: '0x1'
@@ -19371,7 +19371,7 @@ SceneCaptureComponent:
   - Name: ShowFlagSettings
     Offset: '0x2e8'
     Size: '0x10'
-    Type: TArray<Struct MaxViewDistanceOverride>
+    Type: TArray<Struct EngineShowFlagsSetting>
   ClassSize: '0x70'
   FullSize: '0x340'
   InheritedSize: '0x2d0'
@@ -19645,11 +19645,11 @@ SkeletalMesh:
   - Name: Materials
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct Bounds>
+    Type: TArray<Struct SkeletalMaterial>
   - Name: SkelMirrorTable
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct Materials>
+    Type: TArray<Struct BoneMirrorInfo>
   - Name: SkelMirrorAxis
     Offset: '0x98'
     Size: '0x1'
@@ -19661,7 +19661,7 @@ SkeletalMesh:
   - Name: LODInfo
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct SkelMirrorFlipAxis>
+    Type: TArray<Struct SkeletalMeshLODInfo>
   - Name: bUseFullPrecisionUVs
     Offset: '0xb0'
     Size: '0x1'
@@ -19677,7 +19677,7 @@ SkeletalMesh:
   - Name: DeformablesSettings
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<Struct bHasVertexColors>
+    Type: TArray<Struct DeformablesSettings>
   - Name: bKeepTessellationAdjacency
     Offset: '0xc8'
     Size: '0x1'
@@ -19725,7 +19725,7 @@ SkeletalMesh:
   - Name: ClothingAssets
     Offset: '0x1f0'
     Size: '0x10'
-    Type: TArray<Struct MeshPatchAssets>
+    Type: TArray<Struct ClothingAssetData>
   - Name: AssetUserData
     Offset: '0x210'
     Size: '0x10'
@@ -19793,11 +19793,11 @@ SkeletalMeshComponent:
   - Name: CachedLocalAtoms
     Offset: '0x738'
     Size: '0x10'
-    Type: TArray<Struct AnimationData>
+    Type: TArray<Struct Transform>
   - Name: CachedSpaceBases
     Offset: '0x748'
     Size: '0x10'
-    Type: TArray<Struct CachedLocalAtoms>
+    Type: TArray<Struct Transform>
   - Name: GlobalAnimRateScale
     Offset: '0x780'
     Size: '0x4'
@@ -19967,11 +19967,11 @@ Skeleton:
   - Name: BoneTree
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct GetAnimInstance>
+    Type: TArray<Struct BoneNode>
   - Name: LinkupCache
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<Struct BoneTree>
+    Type: TArray<Struct SkeletonToMeshLinkup>
   - Name: Sockets
     Offset: '0xc8'
     Size: '0x10'
@@ -19983,7 +19983,7 @@ Skeleton:
   - Name: SlotGroups
     Offset: '0x178'
     Size: '0x10'
-    Type: TArray<Struct SmartNames>
+    Type: TArray<Struct AnimSlotGroup>
   ClassSize: '0x240'
   FullSize: '0x268'
   InheritedSize: '0x28'
@@ -20005,7 +20005,7 @@ SkinnedMeshComponent:
   - Name: ActiveVertexAnims
     Offset: '0x628'
     Size: '0x10'
-    Type: TArray<Struct bUseBoundsFromMasterPoseComponent>
+    Type: TArray<Struct ActiveVertexAnim>
   - Name: PhysicsAssetOverride
     Offset: '0x638'
     Size: '0x8'
@@ -20033,7 +20033,7 @@ SkinnedMeshComponent:
   - Name: LODInfo
     Offset: '0x658'
     Size: '0x10'
-    Type: TArray<Struct MaxDistanceFactor>
+    Type: TArray<Struct SkelMeshComponentLODInfo>
   - Name: StreamingDistanceMultiplier
     Offset: '0x668'
     Size: '0x4'
@@ -20251,7 +20251,7 @@ SoundClass:
   - Name: PassiveSoundMixModifiers
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct ChildClasses>
+    Type: TArray<Struct PassiveSoundMixModifier>
   - Name: ParentClass
     Offset: '0x70'
     Size: '0x8'
@@ -20291,7 +20291,7 @@ SoundGroups:
   - Name: SoundGroupProfiles
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct LocalizedSubtitles>
+    Type: TArray<Struct SoundGroup>
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -20313,7 +20313,7 @@ SoundMix:
   - Name: SoundClassEffects
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct EQSettings>
+    Type: TArray<Struct SoundClassAdjuster>
   - Name: InitialDelay
     Offset: '0x68'
     Size: '0x4'
@@ -20383,7 +20383,7 @@ SoundNodeConcatenator:
   - Name: InputVolume
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float InputVolume>
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -20421,7 +20421,7 @@ SoundNodeDistanceCrossFade:
   - Name: CrossFadeInput
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct ParamName>
+    Type: TArray<Struct DistanceDatum>
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -20503,7 +20503,7 @@ SoundNodeGroupControl:
   - Name: GroupSizes
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int GroupSizes>
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -20533,7 +20533,7 @@ SoundNodeMixer:
   - Name: InputVolume
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float InputVolume>
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -20641,7 +20641,7 @@ SoundNodeRandom:
   - Name: Weights
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float Weights>
   - Name: PreselectAtLevelLoad
     Offset: '0x48'
     Size: '0x4'
@@ -20653,7 +20653,7 @@ SoundNodeRandom:
   - Name: HasBeenUsed
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Bool bRandomizeWithoutReplacement>
+    Type: TArray<Bool HasBeenUsed>
   - Name: NumRandomUsed
     Offset: '0x60'
     Size: '0x4'
@@ -20767,11 +20767,11 @@ SoundWave:
   - Name: Subtitles
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct RawPCMDataSize>
+    Type: TArray<Struct SubtitleCue>
   - Name: LocalizedSubtitles
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct Subtitles>
+    Type: TArray<Struct LocalizedSubtitle>
   ClassSize: '0x1c8'
   FullSize: '0x218'
   InheritedSize: '0x50'
@@ -21117,7 +21117,7 @@ StaticMesh:
   - Name: SourceMaterials
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str SourceMaterials>
   - Name: UVsForStreaming
     Offset: '0x118'
     Size: '0x4'
@@ -21205,11 +21205,11 @@ StaticMeshComponent:
   - Name: IrrelevantLights
     Offset: '0x5e8'
     Size: '0x10'
-    Type: TArray<Struct StreamingDistanceMultiplier>
+    Type: TArray<Struct Guid>
   - Name: LODData
     Offset: '0x5f8'
     Size: '0x10'
-    Type: TArray<Struct IrrelevantLights>
+    Type: TArray<Struct StaticMeshComponentLODInfo>
   - Name: CustomDepthMaterial
     Offset: '0x608'
     Size: '0x8'
@@ -21309,7 +21309,7 @@ StringArrayDataAsset:
   - Name: Array
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Array>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -21519,7 +21519,7 @@ Texture:
   - Name: ExternalMips
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct StreamingPriorityBoost>
+    Type: TArray<Struct ExternalMip>
   ClassSize: '0x110'
   FullSize: '0x138'
   InheritedSize: '0x28'
@@ -21607,7 +21607,7 @@ TextureLODSettings:
   - Name: TextureLODGroups
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct CVars>
+    Type: TArray<Struct TextureLODGroup>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -21769,23 +21769,23 @@ TimelineTemplate:
   - Name: EventTracks
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct bValidatedAsWired>
+    Type: TArray<Struct TTEventTrack>
   - Name: FloatTracks
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct EventTracks>
+    Type: TArray<Struct TTFloatTrack>
   - Name: VectorTracks
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct FloatTracks>
+    Type: TArray<Struct TTVectorTrack>
   - Name: LinearColorTracks
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct VectorTracks>
+    Type: TArray<Struct TTLinearColorTrack>
   - Name: MetaDataArray
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct LinearColorTracks>
+    Type: TArray<Struct BPVariableMetaDataEntry>
   - Name: TimelineGuid
     Offset: '0x88'
     Size: '0x10'
@@ -21799,7 +21799,7 @@ TouchInterface:
   - Name: Controls
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct DisplayNames>
+    Type: TArray<Struct TouchInputControl>
   - Name: ActiveOpacity
     Offset: '0x38'
     Size: '0x4'
@@ -21881,7 +21881,7 @@ UserDefinedEnum:
   - Name: DisplayNames
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Text None>
+    Type: TArray<Struct FText>
   ClassSize: '0x10'
   FullSize: '0x68'
   InheritedSize: '0x58'
@@ -22411,7 +22411,7 @@ WorldSettings:
   - Name: DefaultMapPrefixes
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct DefaultGameMode>
+    Type: TArray<Struct GameModePrefix>
   - Name: GameNetworkManagerClass
     Offset: '0x430'
     Size: '0x8'
@@ -22499,7 +22499,7 @@ WorldSettings:
   - Name: ReplicationViewers
     Offset: '0x558'
     Size: '0x10'
-    Type: TArray<Struct bHighPriorityLoadingLocal>
+    Type: TArray<Struct NetViewer>
   - Name: AssetUserData
     Offset: '0x568'
     Size: '0x10'

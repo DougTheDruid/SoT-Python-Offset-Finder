@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x40
-class DebugTeleportDestinationEntry: public None
+struct DebugTeleportDestinationEntry
 {
 public:
 	Struct FString                                               DebugMenuSubPath;                                  // 0x0(0x10)

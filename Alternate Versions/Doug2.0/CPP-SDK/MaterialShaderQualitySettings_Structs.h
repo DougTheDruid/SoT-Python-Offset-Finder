@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x4
-class MaterialQualityOverrides: public None
+struct MaterialQualityOverrides
 {
 public:
 	bool                                                         bEnableOverride;                                   // 0x0(0x1)
@@ -18,7 +18,7 @@ public:
 
 
 // Size 0x20
-class ShaderQualityOverridesListItem: public None
+struct ShaderQualityOverridesListItem
 {
 public:
 	Struct FString                                               RangeName;                                         // 0x0(0x10)

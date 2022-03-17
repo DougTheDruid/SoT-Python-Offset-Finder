@@ -36,7 +36,7 @@ ShipPartDamagePersistenceModel:
   - Name: ComponentRepairableStates
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte EventPlayerNameOverridesLoaded>
+    Type: TArray<Byte ComponentRepairableStates>
   - Name: Identifier
     Offset: '0x10'
     Size: '0x10'

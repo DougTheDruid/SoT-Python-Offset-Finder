@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x4
-class ServiceMessagingTestMessage: public None
+struct ServiceMessagingTestMessage
 {
 public:
 	int                                                          Data;                                              // 0x0(0x4)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x10
-class ServiceMessagingUnsubscribedEvent: public None
+struct ServiceMessagingUnsubscribedEvent
 {
 public:
 	Struct FString                                               RoutingKey;                                        // 0x0(0x10)
@@ -23,7 +23,7 @@ public:
 
 
 // Size 0x10
-class ServiceMessagingSubscribedEvent: public None
+struct ServiceMessagingSubscribedEvent
 {
 public:
 	Struct FString                                               RoutingKey;                                        // 0x0(0x10)
@@ -31,7 +31,7 @@ public:
 
 
 // Size 0x18
-class TestStructWithNetId: public None
+struct TestStructWithNetId
 {
 public:
 	Struct UniqueNetIdRepl                                       NetId;                                             // 0x0(0x18)

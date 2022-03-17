@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class Key: public None
+struct Key
 {
 public:
 	struct FName                                                 KeyName;                                           // 0x0(0x8)

@@ -31,13 +31,13 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       },
       {
         "Name": "ExpectedVictimCompanyName",
-        "Type": "TArray<Name H\u008d\u0081\u0010\u0001>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x438"
       },
@@ -81,7 +81,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       },
@@ -131,13 +131,13 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       },
       {
         "Name": "ExpectedVictimCompanyName",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x438"
       },
@@ -181,7 +181,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct >",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       },
@@ -231,7 +231,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       },

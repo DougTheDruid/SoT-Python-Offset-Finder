@@ -40,7 +40,7 @@
       },
       {
         "Name": "Values",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Values>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -714,7 +714,7 @@
     "Attributes": [
       {
         "Name": "Samples",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Samples>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -1373,7 +1373,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Data>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -2275,7 +2275,7 @@
       },
       {
         "Name": "Op",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Op>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -2716,7 +2716,7 @@
       },
       {
         "Name": "ComponentHits",
-        "Type": "TArray<Struct Origin>",
+        "Type": "TArray<Struct HitResult>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -2896,7 +2896,7 @@
       },
       {
         "Name": "LODScreenSizes",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float LODScreenSizes>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -3387,7 +3387,7 @@
       },
       {
         "Name": "BaseVisibleDistanceFactorThesholds",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float BaseVisibleDistanceFactorThesholds>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -3421,7 +3421,7 @@
       },
       {
         "Name": "ChannelWeights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float ChannelWeights>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -3710,7 +3710,7 @@
       },
       {
         "Name": "Subtitles",
-        "Type": "TArray<Struct LanguageExt>",
+        "Type": "TArray<Struct SubtitleCue>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -7985,7 +7985,7 @@
     "Attributes": [
       {
         "Name": "SoloEnableSetting",
-        "Type": "TArray<Byte ParticleSystemLOD>",
+        "Type": "TArray<Byte SoloEnableSetting>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -8094,7 +8094,7 @@
     "Attributes": [
       {
         "Name": "Vertices",
-        "Type": "TArray<Struct PreviewAssetAttachContainer>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -8331,7 +8331,7 @@
       },
       {
         "Name": "LODMaterialMap",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int LODMaterialMap>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -8438,7 +8438,7 @@
       },
       {
         "Name": "BonesToRemove",
-        "Type": "TArray<Struct MaxBonesPerVertex>",
+        "Type": "TArray<Struct BoneReference>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -8752,7 +8752,7 @@
     "Attributes": [
       {
         "Name": "HiddenMaterials",
-        "Type": "TArray<Bool ActiveVertexAnim>",
+        "Type": "TArray<Bool HiddenMaterials>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -9252,7 +9252,7 @@
     "Attributes": [
       {
         "Name": "BonesToRemove",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -9269,7 +9269,7 @@
       },
       {
         "Name": "ReferencePose",
-        "Type": "TArray<Struct PoseName>",
+        "Type": "TArray<Struct Transform>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -9291,13 +9291,13 @@
     "Attributes": [
       {
         "Name": "SkeletonToMeshTable",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int SkeletonToMeshTable>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "MeshToSkeletonTable",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int MeshToSkeletonTable>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -9896,7 +9896,7 @@
       },
       {
         "Name": "PlayerNodeIndices",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int PlayerNodeIndices>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -9943,7 +9943,7 @@
       },
       {
         "Name": "PoseEvaluatorLinks",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int PoseEvaluatorLinks>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -10057,7 +10057,7 @@
     "Attributes": [
       {
         "Name": "ComponentSpaceFlags",
-        "Type": "TArray<Byte AnimMontageInstance>",
+        "Type": "TArray<Byte ComponentSpaceFlags>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -10068,7 +10068,7 @@
     "Attributes": [
       {
         "Name": "Bones",
-        "Type": "TArray<Struct ComponentSpaceFlags>",
+        "Type": "TArray<Struct Transform>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -10109,13 +10109,13 @@
       },
       {
         "Name": "NextSections",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int NextSections>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "PrevSections",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int PrevSections>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -10127,7 +10127,7 @@
       },
       {
         "Name": "ActiveStateBranchingPoints",
-        "Type": "TArray<Struct bPlaying>",
+        "Type": "TArray<Struct AnimNotifyEvent>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -11275,7 +11275,7 @@
       },
       {
         "Name": "CustomResponses",
-        "Type": "TArray<Struct Name>",
+        "Type": "TArray<Struct ResponseChannel>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -11339,7 +11339,7 @@
       },
       {
         "Name": "CustomResponses",
-        "Type": "TArray<Struct ObjectTypeName>",
+        "Type": "TArray<Struct ResponseChannel>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -11955,7 +11955,7 @@
     "Attributes": [
       {
         "Name": "OffsetData",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int OffsetData>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -11972,13 +11972,13 @@
     "Attributes": [
       {
         "Name": "ByteStream",
-        "Type": "TArray<Byte CurveTrack>",
+        "Type": "TArray<Byte ByteStream>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Times",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Times>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -12007,7 +12007,7 @@
       },
       {
         "Name": "CurveWeights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float CurveWeights>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -12018,13 +12018,13 @@
     "Attributes": [
       {
         "Name": "ScaleKeys",
-        "Type": "TArray<Struct RotationTrack>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Times",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Times>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -12035,13 +12035,13 @@
     "Attributes": [
       {
         "Name": "RotKeys",
-        "Type": "TArray<Struct TranslationTrack>",
+        "Type": "TArray<Struct Quat>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Times",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Times>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -12052,13 +12052,13 @@
     "Attributes": [
       {
         "Name": "PosKeys",
-        "Type": "TArray<Struct TrackToSkeletonMap>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Times",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Times>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -12097,19 +12097,19 @@
     "Attributes": [
       {
         "Name": "PosKeys",
-        "Type": "TArray<Struct PerBoneInterpolation>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "RotKeys",
-        "Type": "TArray<Struct PosKeys>",
+        "Type": "TArray<Struct Quat>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ScaleKeys",
-        "Type": "TArray<Struct RotKeys>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -12234,7 +12234,7 @@
     "Attributes": [
       {
         "Name": "BoneToTrackTable",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int BoneToTrackTable>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -12556,7 +12556,7 @@
       },
       {
         "Name": "FactorySettings",
-        "Type": "TArray<Struct bSkipExport>",
+        "Type": "TArray<Struct ImportFactorySettingValues>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -12838,7 +12838,7 @@
     "Attributes": [
       {
         "Name": "VertexData",
-        "Type": "TArray<Struct KSphereElem>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -12907,25 +12907,25 @@
     "Attributes": [
       {
         "Name": "SphereElems",
-        "Type": "TArray<Struct AggregateGeometry2D>",
+        "Type": "TArray<Struct KSphereElem>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "BoxElems",
-        "Type": "TArray<Struct SphereElems>",
+        "Type": "TArray<Struct KBoxElem>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "SphylElems",
-        "Type": "TArray<Struct BoxElems>",
+        "Type": "TArray<Struct KSphylElem>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "ConvexElems",
-        "Type": "TArray<Struct SphylElems>",
+        "Type": "TArray<Struct KConvexElem>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -12959,7 +12959,7 @@
     "Attributes": [
       {
         "Name": "VertexData",
-        "Type": "TArray<Struct BoxElements>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -13044,7 +13044,7 @@
     "Attributes": [
       {
         "Name": "VertexIndices",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int VertexIndices>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -13303,7 +13303,7 @@
       },
       {
         "Name": "AutoCompleteListIndices",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int AutoCompleteListIndices>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -14981,7 +14981,7 @@
       },
       {
         "Name": "TrackIndices",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int TrackIndices>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -16007,7 +16007,7 @@
       },
       {
         "Name": "RandomSeeds",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int RandomSeeds>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -16290,31 +16290,31 @@
     "Attributes": [
       {
         "Name": "QuantizedColorSamples",
-        "Type": "TArray<Struct GPUSpriteEmitterInfo>",
+        "Type": "TArray<Struct Color>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "QuantizedMiscSamples",
-        "Type": "TArray<Struct QuantizedColorSamples>",
+        "Type": "TArray<Struct Color>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "QuantizedDynamicParamSamples",
-        "Type": "TArray<Struct QuantizedMiscSamples>",
+        "Type": "TArray<Struct Color>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "QuantizedSimulationAttrSamples",
-        "Type": "TArray<Struct QuantizedDynamicParamSamples>",
+        "Type": "TArray<Struct Color>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "QuantizedSizeOverVelocitySamples",
-        "Type": "TArray<Struct QuantizedSimulationAttrSamples>",
+        "Type": "TArray<Struct Color>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -16918,7 +16918,7 @@
     "Attributes": [
       {
         "Name": "Delegates",
-        "Type": "TArray<Delegate PurchaseInfo>",
+        "Type": "TArray<Delegate Delegates>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -17871,13 +17871,13 @@
     "Attributes": [
       {
         "Name": "BlendPose",
-        "Type": "TArray<Struct AnimNode_BlendListByBool>",
+        "Type": "TArray<Struct PoseLink>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "BlendTime",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float BlendTime>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -17895,19 +17895,19 @@
       },
       {
         "Name": "Blends",
-        "Type": "TArray<Struct CustomBlendCurve>",
+        "Type": "TArray<Struct AlphaBlend>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "BlendWeights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float BlendWeights>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "RemainingBlendTimes",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float RemainingBlendTimes>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -17935,7 +17935,7 @@
     "Attributes": [
       {
         "Name": "EnumToPoseIndex",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int EnumToPoseIndex>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -17969,7 +17969,7 @@
       },
       {
         "Name": "ObjectToPoseIndex",
-        "Type": "TArray<Class ActiveTypeValue>",
+        "Type": "TArray<Class ObjectToPoseIndex>",
         "Size": "0x10",
         "Offset": "0xb0"
       }
@@ -18034,7 +18034,7 @@
       },
       {
         "Name": "BlendSampleDataCache",
-        "Type": "TArray<Struct BlendFilter>",
+        "Type": "TArray<Struct BlendSampleData>",
         "Size": "0x10",
         "Offset": "0xf8"
       }
@@ -18769,19 +18769,19 @@
       },
       {
         "Name": "BlendPoses",
-        "Type": "TArray<Struct BasePose>",
+        "Type": "TArray<Struct PoseLink>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "LayerSetup",
-        "Type": "TArray<Struct BlendPoses>",
+        "Type": "TArray<Struct InputBlendPose>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "BlendWeights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float BlendWeights>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -18804,13 +18804,13 @@
     "Attributes": [
       {
         "Name": "Poses",
-        "Type": "TArray<Struct AnimNode_MeshSpaceRefPose>",
+        "Type": "TArray<Struct PoseLink>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "DesiredAlphas",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float DesiredAlphas>",
         "Size": "0x10",
         "Offset": "0x40"
       },

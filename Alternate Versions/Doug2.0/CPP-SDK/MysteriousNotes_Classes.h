@@ -31,7 +31,7 @@ public:
 class MysteriousNotesCompletionEventsModelDataAsset: public DataAsset
 {
 public:
-	TArray<Struct NotificationBackground>                        MysteriousNoteCompletionEvents;                    // 0x28(0x10)
+	TArray<Struct MysteriousNotesCompletionEventsModel>          MysteriousNoteCompletionEvents;                    // 0x28(0x10)
 };
 
 
@@ -62,7 +62,7 @@ public:
 	Struct FText                                                 DefaultTitle;                                      // 0x28(0x38)
 	Struct FText                                                 DefaultBody;                                       // 0x60(0x38)
 	Struct WieldableMysteriousNoteLayoutItem                     DefaultNoteLayoutItem;                             // 0x98(0xd0)
-	TArray<Struct DefaultNoteLayoutItem>                         NoteLayoutItems;                                   // 0x168(0x10)
+	TArray<Struct WieldableMysteriousNoteLayoutItem>             NoteLayoutItems;                                   // 0x168(0x10)
 };
 
 

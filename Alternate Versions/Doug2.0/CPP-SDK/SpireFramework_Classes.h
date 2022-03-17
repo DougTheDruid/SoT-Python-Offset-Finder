@@ -61,8 +61,8 @@ class SpireService: public Actor
 {
 public:
 	Class SpireServiceParams*                                    Params;                                            // 0x3d8(0x8)
-	TArray<Struct Params>                                        ServerOnlySpireInfo;                               // 0x3e0(0x10)
-	TArray<Struct ServerOnlySpireInfo>                           SpireLevels;                                       // 0x3f0(0x10)
+	TArray<Struct ServerSpireInfo>                               ServerOnlySpireInfo;                               // 0x3e0(0x10)
+	TArray<Struct SpireInfo>                                     SpireLevels;                                       // 0x3f0(0x10)
 };
 
 
@@ -71,7 +71,7 @@ class SpireStreamedLevelDataAsset: public DataAsset
 {
 public:
 	Class AthenaStreamedLevelDataAsset*                          StreamedLevel;                                     // 0x28(0x8)
-	TArray<Struct StreamedLevel>                                 Entries;                                           // 0x30(0x10)
+	TArray<Struct SpireEntry>                                    Entries;                                           // 0x30(0x10)
 	struct FName                                                 FeatureToggle;                                     // 0x40(0x8)
 };
 
@@ -87,7 +87,7 @@ public:
 class SpireShippingDrawDebugActorSphereCollection: public ShippingDebugActorSphereCollection
 {
 public:
-	TArray<Weakclass IsSpireVisible>                             SpireList;                                         // 0x3e0(0x10)
+	TArray<Weakclass SpireList>                                  SpireList;                                         // 0x3e0(0x10)
 };
 
 

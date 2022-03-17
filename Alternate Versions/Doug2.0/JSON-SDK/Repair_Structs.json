@@ -49,7 +49,7 @@
     "Attributes": [
       {
         "Name": "ComponentRepairableStates",
-        "Type": "TArray<Byte EventPlayerNameOverridesLoaded>",
+        "Type": "TArray<Byte ComponentRepairableStates>",
         "Size": "0x10",
         "Offset": "0x0"
       },

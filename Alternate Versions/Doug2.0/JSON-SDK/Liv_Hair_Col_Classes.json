@@ -6,13 +6,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "Liv_Hair_ColorOverClothingCategory_C": {
-    "Super": "ClothingCategory",
-    "FullSize": "0xa0",
-    "InheritedSize": "0xa0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "Liv_Hair_ColorClothingCategory_C": {
     "Super": "ClothingCategory",
     "FullSize": "0xa0",

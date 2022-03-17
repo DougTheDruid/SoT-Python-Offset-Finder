@@ -21,11 +21,11 @@ BP_PromptActor_EmissaryKilledAnotherEmissary_AF_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: ExpectedVictimCompanyName
     Offset: '0x438'
     Size: '0x10'
-    Type: "TArray<Name H\x8D\x81\x10\x01>"
+    Type: TArray<Struct FName>
   - Name: ExpectedVictimCompanies
     Offset: '0x448'
     Size: '0x10'
@@ -55,7 +55,7 @@ BP_PromptActor_EmissaryKilledAnotherEmissary_GH_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: ExpectedVictimCompanyName
     Offset: '0x438'
     Size: '0x10'
@@ -89,11 +89,11 @@ BP_PromptActor_EmissaryKilledAnotherEmissary_MA_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: ExpectedVictimCompanyName
     Offset: '0x438'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: ExpectedVictimCompanies
     Offset: '0x448'
     Size: '0x10'
@@ -123,7 +123,7 @@ BP_PromptActor_EmissaryKilledAnotherEmissary_OOS_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct >
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: ExpectedVictimCompanyName
     Offset: '0x438'
     Size: '0x10'
@@ -157,7 +157,7 @@ BP_PromptActor_EmissaryKilledAnotherEmissary_RB_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: ExpectedVictimCompanyName
     Offset: '0x438'
     Size: '0x10'

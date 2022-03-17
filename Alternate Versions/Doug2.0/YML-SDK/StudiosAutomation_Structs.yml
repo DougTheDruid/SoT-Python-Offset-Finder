@@ -76,7 +76,7 @@ CollectionLimitsArray:
   - Name: CollectionLimits
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct MaterialQualityOverrides>
+    Type: TArray<Struct CollectionLimits>
   ClassSize: '0x10'
 CollectionMeshLimitsBase:
   Attributes:
@@ -145,7 +145,7 @@ SubstringAuditQueryData:
   - Name: QueryStringArray
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str QueryStringArray>
   - Name: SearchSetSize
     Offset: '0x10'
     Size: '0x4'
@@ -186,5 +186,5 @@ TextureAuditorProperties:
   - Name: AllowedTextureFormats
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Byte RequiredMipsSetting>
+    Type: TArray<Byte AllowedTextureFormats>
   ClassSize: '0x20'

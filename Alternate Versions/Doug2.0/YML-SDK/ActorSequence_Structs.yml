@@ -20,7 +20,7 @@ ActorSequenceObjectReferenceMap:
   - Name: BindingIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct TestTextObject>
+    Type: TArray<Struct Guid>
   - Name: References
     Offset: '0x10'
     Size: '0x10'

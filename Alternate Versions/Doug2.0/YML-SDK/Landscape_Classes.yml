@@ -49,7 +49,7 @@ LandscapeComponent:
   - Name: WeightmapLayerAllocations
     Offset: '0x5d8'
     Size: '0x10'
-    Type: TArray<Struct MaterialInstance>
+    Type: TArray<Struct WeightmapLayerAllocationInfo>
   - Name: WeightmapTextures
     Offset: '0x5e8'
     Size: '0x10'
@@ -81,7 +81,7 @@ LandscapeComponent:
   - Name: IrrelevantLights
     Offset: '0x670'
     Size: '0x10'
-    Type: TArray<Struct CollisionComponent>
+    Type: TArray<Struct Guid>
   - Name: CollisionMipLevel
     Offset: '0x690'
     Size: '0x4'
@@ -149,7 +149,7 @@ LandscapeGrassType:
   - Name: GrassVarieties
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct CookedPhysicalMaterials>
+    Type: TArray<Struct GrassVariety>
   - Name: GrassMesh
     Offset: '0x38'
     Size: '0x8'
@@ -207,7 +207,7 @@ LandscapeHeightfieldCollisionComponent:
   - Name: CollisionQuadFlags
     Offset: '0x5c8'
     Size: '0x10'
-    Type: TArray<Byte CollisionScale>
+    Type: TArray<Byte CollisionQuadFlags>
   - Name: HeightfieldGuid
     Offset: '0x5d8'
     Size: '0x10'
@@ -321,7 +321,7 @@ LandscapeMeshProxyComponent:
   - Name: ProxyComponentBases
     Offset: '0x620'
     Size: '0x10'
-    Type: TArray<Struct LandscapeGuid>
+    Type: TArray<Struct IntPoint>
   ClassSize: '0x30'
   FullSize: '0x640'
   InheritedSize: '0x610'
@@ -493,11 +493,11 @@ LandscapeSplineControlPoint:
   - Name: ConnectedSegments
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct EndFalloff>
+    Type: TArray<Struct LandscapeSplineConnection>
   - Name: Points
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct ConnectedSegments>
+    Type: TArray<Struct LandscapeSplineInterpPoint>
   - Name: Bounds
     Offset: '0x70'
     Size: '0x1c'
@@ -523,7 +523,7 @@ LandscapeSplineSegment:
   - Name: Points
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct SplineInfo>
+    Type: TArray<Struct LandscapeSplineInterpPoint>
   - Name: Bounds
     Offset: '0x80'
     Size: '0x1c'
@@ -559,7 +559,7 @@ MaterialExpressionLandscapeGrassOutput:
   - Name: GrassTypes
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct ExpressionGUID>
+    Type: TArray<Struct GrassInput>
   ClassSize: '0x10'
   FullSize: '0x80'
   InheritedSize: '0x70'
@@ -569,7 +569,7 @@ MaterialExpressionLandscapeLayerBlend:
   - Name: Layers
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct MappingPanV>
+    Type: TArray<Struct LayerBlendInput>
   - Name: ExpressionGUID
     Offset: '0x80'
     Size: '0x10'

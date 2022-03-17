@@ -61,7 +61,7 @@ ChecklistMapContents:
   - Name: ChecklistItems
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct Description>
+    Type: TArray<Struct ChecklistMapItemData>
   - Name: Afternote
     Offset: '0xa0'
     Size: '0x48'

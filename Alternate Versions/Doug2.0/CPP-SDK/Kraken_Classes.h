@@ -42,9 +42,9 @@ public:
 class CoordinatedKrakenPhaseActionsDataAsset: public DataAsset
 {
 public:
-	TArray<Int None>                                             TentaclesUsed;                                     // 0x28(0x10)
+	TArray<Int TentaclesUsed>                                    TentaclesUsed;                                     // 0x28(0x10)
 	bool                                                         KrakenHeadUsed;                                    // 0x38(0x1)
-	TArray<Struct KrakenHeadUsed>                                Actions;                                           // 0x40(0x10)
+	TArray<Struct CoordinatedKrakenAction>                       Actions;                                           // 0x40(0x10)
 };
 
 
@@ -156,7 +156,7 @@ public:
 	bool                                                         AllowLookAround;                                   // 0x3c(0x1)
 	bool                                                         RequiresWaterHeightQuery;                          // 0x3d(0x1)
 	float                                                        AnimationPlayRateScale;                            // 0x40(0x4)
-	TArray<Struct AnimationPlayRateScale>                        Bones;                                             // 0x48(0x10)
+	TArray<Struct KrakenAnimatedTentacleAnimationBoneTrack>      Bones;                                             // 0x48(0x10)
 };
 
 
@@ -164,7 +164,7 @@ public:
 class KrakenAnimatedTentacleAnimationMappingDataAsset: public DataAsset
 {
 public:
-	TArray<Struct Bones>                                         Animations;                                        // 0x28(0x10)
+	TArray<Struct KrakenAnimatedTentacleMappedAnimation>         Animations;                                        // 0x28(0x10)
 };
 
 
@@ -172,7 +172,7 @@ public:
 class KrakenAnimatedTentacleAnimationSpecDataAsset: public DataAsset
 {
 public:
-	TArray<Struct States>                                        Bones;                                             // 0x28(0x10)
+	TArray<Struct KrakenAnimatedTentacleAnimationSpecBone>       Bones;                                             // 0x28(0x10)
 };
 
 
@@ -180,7 +180,7 @@ public:
 class KrakenAnimatedTentacleStateAnimationsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct MappingAssetReference>                         States;                                            // 0x48(0x10)
+	TArray<Struct KrakenAnimatedTentacleStateAnimationMapping>   States;                                            // 0x48(0x10)
 };
 
 
@@ -188,7 +188,7 @@ public:
 class KrakenHeadStateAnimationsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct OnCoordinatedKrakenSpecialEvent>               States;                                            // 0x28(0x10)
+	TArray<Struct KrakenHeadStateAnimationMapping>               States;                                            // 0x28(0x10)
 };
 
 
@@ -203,9 +203,9 @@ public:
 	Class VenomComponent*                                        VenomComponent;                                    // 0x400(0x8)
 	Class ExplosionComponent*                                    ExplosionComponent;                                // 0x408(0x8)
 	Class ParticleSystem*                                        BiteAttackVFX;                                     // 0x410(0x8)
-	TArray<Struct BiteAttackVFX>                                 BreathingInContinuousStatusesToApply;              // 0x418(0x10)
+	TArray<Struct Status>                                        BreathingInContinuousStatusesToApply;              // 0x418(0x10)
 	float                                                        BreatheInStatusDuration;                           // 0x428(0x4)
-	TArray<Struct BreatheInStatusDuration>                       RoarContinuousStatusesToApply;                     // 0x430(0x10)
+	TArray<Struct Status>                                        RoarContinuousStatusesToApply;                     // 0x430(0x10)
 	float                                                        RoarStatusDuration;                                // 0x440(0x4)
 	Class EnvQuery*                                              RoarEQSQuery;                                      // 0x448(0x8)
 	class                                                        KnockbackDamagerType;                              // 0x450(0x8)
@@ -246,7 +246,7 @@ public:
 class KrakenHeadHealthParamsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct HitReactionAnimations>                         KrakenHeadHealthPairs;                             // 0x28(0x10)
+	TArray<Struct KrakenHeadHealthPair>                          KrakenHeadHealthPairs;                             // 0x28(0x10)
 };
 
 
@@ -254,7 +254,7 @@ public:
 class KrakenHeadHitReactAnimationsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct Params>                                        HitReactionAnimations;                             // 0x28(0x10)
+	TArray<Struct KrakenHeadHitReactAnimations>                  HitReactionAnimations;                             // 0x28(0x10)
 };
 
 

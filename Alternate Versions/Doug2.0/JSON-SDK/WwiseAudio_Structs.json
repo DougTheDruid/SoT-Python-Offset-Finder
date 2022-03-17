@@ -185,49 +185,49 @@
       },
       {
         "Name": "EventsToPlayOnLobbyStart",
-        "Type": "TArray<Struct AudioGameStateIngame>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "EventsToPlayOnLobbyEnd",
-        "Type": "TArray<Struct EventsToPlayOnLobbyStart>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "EventsToPlayOnEngageStart",
-        "Type": "TArray<Struct EventsToPlayOnLobbyEnd>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "EventsToPlayOnEngageEnd",
-        "Type": "TArray<Struct EventsToPlayOnEngageStart>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "EventsToPlayOnLoadingStart",
-        "Type": "TArray<Struct EventsToPlayOnEngageEnd>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "EventsToPlayOnLoadingEnd",
-        "Type": "TArray<Struct EventsToPlayOnLoadingStart>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingStart",
-        "Type": "TArray<Struct EventsToPlayOnLoadingEnd>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingEnd",
-        "Type": "TArray<Struct EventsToPlayOnFrontEndOrLoadingStart>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x90"
       }

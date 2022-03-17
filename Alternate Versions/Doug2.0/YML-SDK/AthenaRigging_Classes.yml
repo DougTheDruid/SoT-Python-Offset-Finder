@@ -9,7 +9,7 @@ InstancedRopeComponent:
   - Name: Ropes
     Offset: '0x5b0'
     Size: '0x10'
-    Type: TArray<Struct StaticMesh>
+    Type: TArray<Struct InstancedRopeParams>
   - Name: ShadowLOD
     Offset: '0x5c0'
     Size: '0x4'
@@ -41,11 +41,11 @@ RiggingSystem:
   - Name: Lines
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<Struct InstancedRopes>
+    Type: TArray<Struct RiggingSystemLine>
   - Name: Ropes
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<Struct Lines>
+    Type: TArray<Struct InstancedRopeParams>
   - Name: PulleyInstances
     Offset: '0x408'
     Size: '0x10'
@@ -57,11 +57,11 @@ RiggingSystem:
   - Name: Sockets
     Offset: '0x478'
     Size: '0x10'
-    Type: TArray<Struct Pulleys>
+    Type: TArray<Struct SocketId>
   - Name: InitialMainRopeLengths
     Offset: '0x488'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float InitialMainRopeLengths>
   ClassSize: '0x150'
   FullSize: '0x520'
   InheritedSize: '0x3d0'
@@ -75,7 +75,7 @@ RiggingSystemComponent:
   - Name: LineGroups
     Offset: '0x2f0'
     Size: '0x10'
-    Type: TArray<Struct RopeStyle>
+    Type: TArray<Struct RiggingSystemLineGroup>
   - Name: Impl
     Offset: '0x300'
     Size: '0x8'

@@ -19,7 +19,7 @@ ChecklistItemsDataAsset:
   - Name: ChecklistItems
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Afternote>
+    Type: TArray<Struct ChecklistItem>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -93,11 +93,11 @@ DeliverBootyChecklistActionData:
   - Name: TargetBootyTypes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<AssetClass TargetAIClasses>
+    Type: TArray<AssetClass TargetBootyTypes>
   - Name: TargetCompanies
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Class TargetBootyTypes>
+    Type: TArray<Class TargetCompanies>
   ClassSize: '0x20'
   FullSize: '0x50'
   InheritedSize: '0x30'
@@ -107,7 +107,7 @@ KillActorChecklistActionData:
   - Name: TargetAIClasses
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Class EventsSource>
+    Type: TArray<Class TargetAIClasses>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -117,7 +117,7 @@ NPCInteractionChecklistActionData:
   - Name: TargetNPCIds
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct ChecklistItems>
+    Type: TArray<Struct Guid>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'

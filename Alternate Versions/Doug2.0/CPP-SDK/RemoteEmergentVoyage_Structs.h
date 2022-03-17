@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class GiveEmergentVoyageData: public None
+struct GiveEmergentVoyageData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)

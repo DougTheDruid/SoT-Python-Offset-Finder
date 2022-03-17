@@ -19,7 +19,7 @@ CookableComponent:
   - Name: SmokeFeedbackLevels
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct TimeToNextCookState>
+    Type: TArray<Struct CookableComponentSmokeFeedbackTimingEntry>
   - Name: VisibleCookedExtentOverTime
     Offset: '0x108'
     Size: '0x8'
@@ -67,11 +67,11 @@ CookerComponent:
   - Name: StatusToApplyToContents
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct MaxCookingRtpcAmount>
+    Type: TArray<Struct Status>
   - Name: VFXFeedback
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct StatusToApplyToContents>
+    Type: TArray<Struct CookerSmokeFeedbackEntry>
   - Name: CookableStaticMeshComponent
     Offset: '0xf0'
     Size: '0x8'

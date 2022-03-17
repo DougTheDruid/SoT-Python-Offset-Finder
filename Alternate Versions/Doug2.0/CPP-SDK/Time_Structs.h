@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class GameTime: public None
+struct GameTime
 {
 public:
 	Struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x10
-class GameTimeRange: public None
+struct GameTimeRange
 {
 public:
 	Struct GameTime                                              Start;                                             // 0x0(0x8)
@@ -24,14 +24,14 @@ public:
 
 
 // Size 0x8
-class ReplicatedDateTime: public None
+struct ReplicatedDateTime
 {
 public:
 };
 
 
 // Size 0x10
-class ReplicatedAuthoritativeTime: public None
+struct ReplicatedAuthoritativeTime
 {
 public:
 	Struct ReplicatedDateTime                                    WorldTime;                                         // 0x0(0x8)
@@ -40,14 +40,14 @@ public:
 
 
 // Size 0x8
-class ReplicatedTimespan: public None
+struct ReplicatedTimespan
 {
 public:
 };
 
 
 // Size 0x14
-class EventSetDateTime: public None
+struct EventSetDateTime
 {
 public:
 	int                                                          Year;                                              // 0x0(0x4)

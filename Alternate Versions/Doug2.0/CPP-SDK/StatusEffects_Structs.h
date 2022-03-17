@@ -7,16 +7,16 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class Status: public None
+struct Status
 {
 public:
-	TArray<Class EventCurseWheelLockEnd>                         Type;                                              // 0x0(0x10)
+	TArray<Class Type>                                           Type;                                              // 0x0(0x10)
 	Struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
 };
 
 
 // Size 0x4
-class StatusDescriptor: public None
+struct StatusDescriptor
 {
 public:
 	float                                                        Intensity;                                         // 0x0(0x4)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x20
-class DebugMenuStatusDefinition: public None
+struct DebugMenuStatusDefinition
 {
 public:
 	struct FName                                                 Identifier;                                        // 0x0(0x8)
@@ -33,7 +33,7 @@ public:
 
 
 // Size 0x20
-class DelayedStatusEffect: public None
+struct DelayedStatusEffect
 {
 public:
 	Struct Status                                                StatusEffect;                                      // 0x0(0x18)
@@ -42,10 +42,10 @@ public:
 
 
 // Size 0x50
-class ActiveStatusEffect: public None
+struct ActiveStatusEffect
 {
 public:
-	TArray<Class FeatureToggledStatusResponseList>               SourceStatus;                                      // 0x0(0x10)
+	TArray<Class SourceStatus>                                   SourceStatus;                                      // 0x0(0x10)
 	Struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
 	TArray<class ResponseTemplates*>                             ResponseTemplates;                                 // 0x18(0x10)
 	TArray<class InstancedResponses*>                            InstancedResponses;                                // 0x28(0x10)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0x18
-class FeatureToggledStatusResponseList: public None
+struct FeatureToggledStatusResponseList
 {
 public:
 	struct FName                                                 Feature;                                           // 0x0(0x8)
@@ -63,17 +63,17 @@ public:
 
 
 // Size 0x28
-class EventAppliedStatusToTargets: public None
+struct EventAppliedStatusToTargets
 {
 public:
-	TArray<Class StatusEffectPersistenceKey>                     StatusApplied;                                     // 0x0(0x10)
+	TArray<Class StatusApplied>                                  StatusApplied;                                     // 0x0(0x10)
 	TArray<class Targets*>                                       Targets;                                           // 0x10(0x10)
 	Class Actor*                                                 StatusSource;                                      // 0x20(0x8)
 };
 
 
 // Size 0x18
-class StatusEffectPersistenceKey: public None
+struct StatusEffectPersistenceKey
 {
 public:
 	Struct Status                                                AppliedStatuses;                                   // 0x0(0x18)
@@ -81,7 +81,7 @@ public:
 
 
 // Size 0x18
-class ApplyStatusEvent: public None
+struct ApplyStatusEvent
 {
 public:
 	Struct Status                                                StatusToApply;                                     // 0x0(0x18)
@@ -89,14 +89,14 @@ public:
 
 
 // Size 0x18
-class BuffedTargetData: public None
+struct BuffedTargetData
 {
 public:
 };
 
 
 // Size 0x18
-class StatusDeactivatedEvent: public None
+struct StatusDeactivatedEvent
 {
 public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
@@ -105,7 +105,7 @@ public:
 
 
 // Size 0x18
-class StatusActivatedEvent: public None
+struct StatusActivatedEvent
 {
 public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
@@ -114,7 +114,7 @@ public:
 
 
 // Size 0x14
-class EventStatusMaterialEffectEnded: public None
+struct EventStatusMaterialEffectEnded
 {
 public:
 	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
@@ -124,7 +124,7 @@ public:
 
 
 // Size 0x30
-class EventStatusMaterialEffectStarted: public None
+struct EventStatusMaterialEffectStarted
 {
 public:
 	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
@@ -137,7 +137,7 @@ public:
 
 
 // Size 0xc
-class EventStatusScreenEffectEnded: public None
+struct EventStatusScreenEffectEnded
 {
 public:
 	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
@@ -146,7 +146,7 @@ public:
 
 
 // Size 0x8
-class EventStatusScreenSpaceParticleEffectEnded: public None
+struct EventStatusScreenSpaceParticleEffectEnded
 {
 public:
 	Class Object*                                                ParticleSystem;                                    // 0x0(0x8)
@@ -154,7 +154,7 @@ public:
 
 
 // Size 0x8
-class EventStatusScreenSpaceParticleEffectStarted: public None
+struct EventStatusScreenSpaceParticleEffectStarted
 {
 public:
 	Class Object*                                                ParticleSystem;                                    // 0x0(0x8)
@@ -162,7 +162,7 @@ public:
 
 
 // Size 0x28
-class EventStatusScreenEffectStarted: public None
+struct EventStatusScreenEffectStarted
 {
 public:
 	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
@@ -174,14 +174,14 @@ public:
 
 
 // Size 0x1
-class EventExitedSurfaceMaterialStatusZone: public None
+struct EventExitedSurfaceMaterialStatusZone
 {
 public:
 };
 
 
 // Size 0x10
-class EventEnteredSurfaceMaterialStatusZone: public None
+struct EventEnteredSurfaceMaterialStatusZone
 {
 public:
 };

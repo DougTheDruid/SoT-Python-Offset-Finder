@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class EventOptimalInteractionObjectChanged: public None
+struct EventOptimalInteractionObjectChanged
 {
 public:
 	Class Object*                                                PreviousFocusObject;                               // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x2
-class EventInteractionBlockingStateChanged: public None
+struct EventInteractionBlockingStateChanged
 {
 public:
 	bool                                                         IsInteractionBlocked;                              // 0x0(0x1)

@@ -48,46 +48,4 @@ public:
 };
 
 
-// Size 0x0
-class BP_makeup_s5_01_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_makeup_s4_01_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_makeup_hzn_01_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_makeup_mer_01_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_makeup_set_cold_01_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_makeup_hln_02_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
 }

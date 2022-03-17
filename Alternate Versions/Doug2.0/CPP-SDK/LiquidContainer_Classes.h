@@ -19,7 +19,7 @@ class LiquidContainerComponent: public ActorComponent
 public:
 	struct FName                                                 LiquidMaterialName;                                // 0xc8(0x8)
 	struct FName                                                 LiquidMaterialParameterName;                       // 0xd0(0x8)
-	TArray<Struct LiquidMaterialParameterName>                   LiquidTypeParams;                                  // 0xd8(0x10)
+	TArray<Struct LiquidTypeParams>                              LiquidTypeParams;                                  // 0xd8(0x10)
 	float                                                        StartingLiquidLevelNormalised;                     // 0xe8(0x4)
 	Class CurveFloat*                                            TransitionCurve;                                   // 0xf0(0x8)
 	float                                                        TransitionSpeedDecrease;                           // 0xf8(0x4)

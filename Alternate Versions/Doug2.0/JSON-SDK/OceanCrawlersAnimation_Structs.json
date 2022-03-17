@@ -34,7 +34,7 @@
       },
       {
         "Name": "AttackInterruptMontages",
-        "Type": "TArray<Struct SporeBreathData>",
+        "Type": "TArray<Struct CustomAnimationMontageId>",
         "Size": "0x10",
         "Offset": "0x60"
       },

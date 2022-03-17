@@ -79,7 +79,7 @@ class MovieSceneActorReferenceSection: public MovieSceneSection
 {
 public:
 	Struct IntegralCurve                                         ActorGuidIndexCurve;                               // 0xa0(0x70)
-	TArray<Str >                                                 ActorGuidStrings;                                  // 0x120(0x10)
+	TArray<Str ActorGuidStrings>                                 ActorGuidStrings;                                  // 0x120(0x10)
 };
 
 
@@ -298,9 +298,9 @@ public:
 class MovieSceneParameterSection: public MovieSceneSection
 {
 public:
-	TArray<Struct Sections>                                      ScalarParameterNamesAndCurves;                     // 0x98(0x10)
-	TArray<Struct ScalarParameterNamesAndCurves>                 VectorParameterNamesAndCurves;                     // 0xa8(0x10)
-	TArray<Struct VectorParameterNamesAndCurves>                 ColorParameterNamesAndCurves;                      // 0xb8(0x10)
+	TArray<Struct ScalarParameterNameAndCurve>                   ScalarParameterNamesAndCurves;                     // 0x98(0x10)
+	TArray<Struct VectorParameterNameAndCurves>                  VectorParameterNamesAndCurves;                     // 0xa8(0x10)
+	TArray<Struct ColorParameterNameAndCurves>                   ColorParameterNamesAndCurves;                      // 0xb8(0x10)
 };
 
 

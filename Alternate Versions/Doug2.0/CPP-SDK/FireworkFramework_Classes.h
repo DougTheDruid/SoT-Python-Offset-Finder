@@ -40,7 +40,7 @@ public:
 	bool                                                         IsFlare;                                           // 0x88(0x1)
 	bool                                                         ShouldCastAmbientLight;                            // 0x89(0x1)
 	Struct FireworkAmbientLightData                              FireworkAmbientLightData;                          // 0x8c(0x14)
-	TArray<Struct FireworkAmbientLightData>                      Explosions;                                        // 0xa0(0x10)
+	TArray<Struct WeightedFireworkVFXData>                       Explosions;                                        // 0xa0(0x10)
 	Struct WeightedProbabilityRange                              NumExplosions;                                     // 0xb0(0x20)
 	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenExplosions;                             // 0xd0(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      ExplosionLocationOffset;                           // 0x100(0x30)
@@ -163,7 +163,7 @@ public:
 class ProjectileAnimationComponent: public ActorComponent
 {
 public:
-	TArray<Struct Desc>                                          ProjectileAnimationCurves;                         // 0xc8(0x10)
+	TArray<Struct WeightedProjectileMeshAnimationData>           ProjectileAnimationCurves;                         // 0xc8(0x10)
 	Class StaticMeshComponent*                                   MeshComponent;                                     // 0xd8(0x8)
 	Struct RuntimeVectorCurve                                    AnimationOffsetCurve;                              // 0xe0(0x170)
 };

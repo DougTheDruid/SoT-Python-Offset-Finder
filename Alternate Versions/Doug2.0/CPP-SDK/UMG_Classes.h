@@ -65,7 +65,7 @@ public:
 class MovieSceneWidgetMaterialTrack: public MovieSceneMaterialTrack
 {
 public:
-	TArray<Name None>                                            BrushPropertyNamePath;                             // 0x98(0x10)
+	TArray<Struct FName>                                         BrushPropertyNamePath;                             // 0x98(0x10)
 	struct FName                                                 TrackName;                                         // 0xa8(0x8)
 };
 
@@ -211,7 +211,7 @@ public:
 	Class WidgetTree*                                            WidgetTree;                                        // 0x1a8(0x8)
 	TArray<class ActiveSequencePlayers*>                         ActiveSequencePlayers;                             // 0x1b0(0x10)
 	TArray<class StoppedSequencePlayers*>                        StoppedSequencePlayers;                            // 0x1c0(0x10)
-	TArray<Struct StoppedSequencePlayers>                        NamedSlotBindings;                                 // 0x1d0(0x10)
+	TArray<Struct NamedSlotBinding>                              NamedSlotBindings;                                 // 0x1d0(0x10)
 };
 
 
@@ -406,7 +406,7 @@ public:
 class ComboBoxString: public Widget
 {
 public:
-	TArray<Str None>                                             DefaultOptions;                                    // 0x138(0x10)
+	TArray<Str DefaultOptions>                                   DefaultOptions;                                    // 0x138(0x10)
 	Struct FString                                               SelectedOption;                                    // 0x148(0x10)
 	Struct ComboBoxStyle                                         WidgetStyle;                                       // 0x158(0x428)
 	Struct Margin                                                ContentPadding;                                    // 0x580(0x10)
@@ -668,8 +668,8 @@ public:
 class GridPanel: public PanelWidget
 {
 public:
-	TArray<Float None>                                           ColumnFill;                                        // 0x150(0x10)
-	TArray<Float >                                               RowFill;                                           // 0x160(0x10)
+	TArray<Float ColumnFill>                                     ColumnFill;                                        // 0x150(0x10)
+	TArray<Float RowFill>                                        RowFill;                                           // 0x160(0x10)
 };
 
 
@@ -892,7 +892,7 @@ class WidgetAnimation: public MovieSceneSequence
 {
 public:
 	Class MovieScene*                                            MovieScene;                                        // 0x2c8(0x8)
-	TArray<Struct MovieScene>                                    AnimationBindings;                                 // 0x2d0(0x10)
+	TArray<Struct WidgetAnimationBinding>                        AnimationBindings;                                 // 0x2d0(0x10)
 };
 
 
@@ -901,7 +901,7 @@ class WidgetBlueprintGeneratedClass: public BlueprintGeneratedClass
 {
 public:
 	Class WidgetTree*                                            WidgetTree;                                        // 0x228(0x8)
-	TArray<Struct WidgetTree>                                    Bindings;                                          // 0x230(0x10)
+	TArray<Struct DelegateRuntimeBinding>                        Bindings;                                          // 0x230(0x10)
 	TArray<class Animations*>                                    Animations;                                        // 0x240(0x10)
 	TArray<Struct FName>                                         NamedSlots;                                        // 0x250(0x10)
 };

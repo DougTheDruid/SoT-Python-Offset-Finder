@@ -17,19 +17,19 @@ CoordinatedKrakenAction:
   - Name: SpecialEvents
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct ActionType>
+    Type: TArray<Struct CoordinatedKrakenSpecialEvent>
   - Name: TentacleActions
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct SpecialEvents>
+    Type: TArray<Struct CoordinatedKrakenTentacleAction>
   - Name: HeadActions
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct TentacleActions>
+    Type: TArray<Struct CoordinatedKrakenHeadAction>
   - Name: ExplosionEvents
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct HeadActions>
+    Type: TArray<Struct CoordinatedKrakenExplosionEvent>
   - Name: TargetActorLocationAnimation
     Offset: '0x50'
     Size: '0x170'
@@ -481,7 +481,7 @@ KrakenParams:
   - Name: TentaclesRequiredToDismissKraken
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct NumberOfTentaclesToSpawn>
+    Type: TArray<Struct KrakenTentaclesChanceParams>
   - Name: TickFrequencyToLookForNewBehaviours
     Offset: '0x40'
     Size: '0x4'
@@ -533,7 +533,7 @@ KrakenParams:
   - Name: Behaviours
     Offset: '0x148'
     Size: '0x10'
-    Type: TArray<Struct ShipInteractingBehaviourWeights>
+    Type: TArray<Struct KrakenBehaviourParams>
   - Name: DamageAmountToTriggerAudioComponentNotification
     Offset: '0x158'
     Size: '0x4'
@@ -605,7 +605,7 @@ KrakenServiceShipParams:
   - Name: ValidShipTypes
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class Feature>
+    Type: TArray<Class ValidShipTypes>
   - Name: KrakenParams
     Offset: '0x18'
     Size: '0x8'
@@ -833,7 +833,7 @@ KrakenShipWrappingBehaviourTentacleHeadLocations:
   - Name: Near
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct PortTentacleHeadLocations>
+    Type: TArray<Struct KrakenShipWrappingBehaviourNamedTransform>
   - Name: Far
     Offset: '0x10'
     Size: '0x10'
@@ -887,7 +887,7 @@ KrakenShipWrappingBehaviourWarningParams:
   - Name: TentacleLocations
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct TentacleHealthRange>
+    Type: TArray<Struct KrakenShipWrappingBehaviourNamedTransform>
   - Name: TentacleTimeout
     Offset: '0x60'
     Size: '0x4'

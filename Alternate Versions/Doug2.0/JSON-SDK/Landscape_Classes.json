@@ -100,7 +100,7 @@
       },
       {
         "Name": "WeightmapLayerAllocations",
-        "Type": "TArray<Struct MaterialInstance>",
+        "Type": "TArray<Struct WeightmapLayerAllocationInfo>",
         "Size": "0x10",
         "Offset": "0x5d8"
       },
@@ -148,7 +148,7 @@
       },
       {
         "Name": "IrrelevantLights",
-        "Type": "TArray<Struct CollisionComponent>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x670"
       },
@@ -243,7 +243,7 @@
     "Attributes": [
       {
         "Name": "GrassVarieties",
-        "Type": "TArray<Struct CookedPhysicalMaterials>",
+        "Type": "TArray<Struct GrassVariety>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -329,7 +329,7 @@
       },
       {
         "Name": "CollisionQuadFlags",
-        "Type": "TArray<Byte CollisionScale>",
+        "Type": "TArray<Byte CollisionQuadFlags>",
         "Size": "0x10",
         "Offset": "0x5c8"
       },
@@ -666,7 +666,7 @@
       },
       {
         "Name": "ProxyComponentBases",
-        "Type": "TArray<Struct LandscapeGuid>",
+        "Type": "TArray<Struct IntPoint>",
         "Size": "0x10",
         "Offset": "0x620"
       }
@@ -725,7 +725,7 @@
       },
       {
         "Name": "Points",
-        "Type": "TArray<Struct SplineInfo>",
+        "Type": "TArray<Struct LandscapeSplineInterpPoint>",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -781,13 +781,13 @@
       },
       {
         "Name": "ConnectedSegments",
-        "Type": "TArray<Struct EndFalloff>",
+        "Type": "TArray<Struct LandscapeSplineConnection>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "Points",
-        "Type": "TArray<Struct ConnectedSegments>",
+        "Type": "TArray<Struct LandscapeSplineInterpPoint>",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -813,7 +813,7 @@
     "Attributes": [
       {
         "Name": "GrassTypes",
-        "Type": "TArray<Struct ExpressionGUID>",
+        "Type": "TArray<Struct GrassInput>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -827,7 +827,7 @@
     "Attributes": [
       {
         "Name": "Layers",
-        "Type": "TArray<Struct MappingPanV>",
+        "Type": "TArray<Struct LayerBlendInput>",
         "Size": "0x10",
         "Offset": "0x70"
       },

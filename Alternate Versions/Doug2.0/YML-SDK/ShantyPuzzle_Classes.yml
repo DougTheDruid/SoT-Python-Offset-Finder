@@ -9,7 +9,7 @@ ShantyPuzzleComponent:
   - Name: ShantyPuzzleInteractionZoneDefinitions
     Offset: '0x2e0'
     Size: '0x10'
-    Type: TArray<Struct RequiredShantyItemDesc>
+    Type: TArray<Struct ShantyPuzzleInteractionZoneDefinition>
   - Name: TimeLimited
     Offset: '0x2f0'
     Size: '0x1'

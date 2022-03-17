@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AthenaAIFormComponent: public ActorComponent
 {
 public:
-	TArray<Struct ActivationTimerHandle>                         VfxCustomisations;                                 // 0xd0(0x10)
+	TArray<Struct AthenaAIFormComponentVfxCustomisation>         VfxCustomisations;                                 // 0xd0(0x10)
 	Class AthenaAIFormDataAsset*                                 FormData;                                          // 0xe0(0x8)
 	Class CharacterHitReactionDamagerTypeToAnimTypeLayer*        HitReactionsLayer;                                 // 0xe8(0x8)
 };
@@ -38,7 +38,7 @@ public:
 	Struct AISpawnTypeParamsCollection                           SpawnTypeParamsCollection;                         // 0x40(0x48)
 	Class AIEncounterSettings*                                   DefaultEncounterSettings;                          // 0x88(0x8)
 	Class AISpawnWaveSequenceRankProgression*                    DefaultSpawnWaveProgression;                       // 0x90(0x8)
-	TArray<Struct DefaultSpawnWaveProgression>                   SpawnContextSpecificEncounterSettings;             // 0x98(0x10)
+	TArray<Struct AISpawnContextIdEncounterSettingsPair>         SpawnContextSpecificEncounterSettings;             // 0x98(0x10)
 	bool                                                         ShouldSpawnFacingRegionCentre;                     // 0xa8(0x1)
 	byte                                                         DefaultSpawnType;                                  // 0xa9(0x1)
 	Class EnvQuery*                                              FindSpawnPosQuery;                                 // 0xb0(0x8)
@@ -46,8 +46,8 @@ public:
 	struct FName                                                 SpawnLocationType;                                 // 0xbc(0x8)
 	int                                                          MaxNumOfSpawnedPawns;                              // 0xc4(0x4)
 	int                                                          PriorityForSpawnedPawns;                           // 0xc8(0x4)
-	TArray<Struct PriorityForSpawnedPawns>                       SpawnOverrides;                                    // 0xd0(0x10)
-	TArray<Struct SpawnOverrides>                                AdditionalBehaviours;                              // 0xe0(0x10)
+	TArray<Struct ConditionalAISpawnOverride>                    SpawnOverrides;                                    // 0xd0(0x10)
+	TArray<Struct AdditionalSpawnerBehaviour>                    AdditionalBehaviours;                              // 0xe0(0x10)
 	Class AthenaAISettings*                                      AthenaAISettings;                                  // 0x360(0x8)
 };
 
@@ -71,8 +71,8 @@ public:
 class AthenaAIFormDataAsset: public DataAsset
 {
 public:
-	TArray<Byte ParticleActivationDelay>                         PreventHealthChangedReasons;                       // 0x28(0x10)
-	TArray<Struct PreventHealthChangedReasons>                   DamageResponses;                                   // 0x38(0x10)
+	TArray<Byte PreventHealthChangedReasons>                     PreventHealthChangedReasons;                       // 0x28(0x10)
+	TArray<Struct AIFormDamageResponse>                          DamageResponses;                                   // 0x38(0x10)
 	Class StatusRecipientResponseList*                           OverrideStatusRecipientResponseList;               // 0x48(0x8)
 	Class PhysicalMaterial*                                      SurfaceMaterial;                                   // 0x50(0x8)
 	Class Object*                                                KilledVfxTemplate;                                 // 0x58(0x8)
@@ -134,7 +134,7 @@ public:
 class AthenaAIAbilityParams: public Object
 {
 public:
-	TArray<Struct AshCloudClass>                                 NamedControllerParams;                             // 0x28(0x10)
+	TArray<Struct AthenaAIControllerParamValue>                  NamedControllerParams;                             // 0x28(0x10)
 	byte                                                         DamageIntervalCountingMode;                        // 0x38(0x1)
 	bool                                                         UseTimeBetweenAbility;                             // 0x39(0x1)
 	Struct AthenaAIAbilityPlayerBasedRanges                      ActivationTimerCooldown;                           // 0x40(0x10)
@@ -144,7 +144,7 @@ public:
 	float                                                        AbilityRadius;                                     // 0x78(0x4)
 	bool                                                         UseMinMaxAttackRange;                              // 0x7c(0x1)
 	Struct MinMaxAbilityRange                                    MinMaxAttackRange;                                 // 0x80(0x8)
-	TArray<Struct MinMaxAttackRange>                             FollowUpAbilities;                                 // 0x88(0x10)
+	TArray<Struct AIAbilityFollowUp>                             FollowUpAbilities;                                 // 0x88(0x10)
 	float                                                        Weight;                                            // 0x98(0x4)
 	Struct AIAbilityContinuousCooldownParameterData              ContinuousCooldownAbilityParameters;               // 0xa0(0x20)
 	class                                                        AIAbilityTypeClass;                                // 0xc0(0x8)
@@ -202,7 +202,7 @@ class BTTask_SwimAttackTargetActor: public BTTask_BlackboardBase
 public:
 	float                                                        DamageToApply;                                     // 0x88(0x4)
 	float                                                        MaxAngleToTargetToSuccessfullyAttack;              // 0x8c(0x4)
-	TArray<Struct MaxAngleToTargetToSuccessfullyAttack>          AttackAnimMapping;                                 // 0x90(0x10)
+	TArray<Struct AttackableTypeToAnimMapping>                   AttackAnimMapping;                                 // 0x90(0x10)
 	struct FName                                                 LoSTraceProfileName;                               // 0xa0(0x8)
 	Struct AIDataProviderFloatValue                              LosTraceRadius;                                    // 0xa8(0x30)
 	float                                                        MaxDistanceToTargetToApplyDamage;                  // 0xd8(0x4)
@@ -223,7 +223,7 @@ public:
 	float                                                        AttackVFXZOffset;                                  // 0xb0(0x4)
 	struct FName                                                 LoSTraceProfileName;                               // 0xb4(0x8)
 	Struct AIDataProviderFloatValue                              LosTraceRadius;                                    // 0xc0(0x30)
-	TArray<Struct LosTraceRadius>                                ImpulseData;                                       // 0xf0(0x10)
+	TArray<Struct SwimAttackTargetShipImpulseData>               ImpulseData;                                       // 0xf0(0x10)
 	Struct AIDataProviderIntValue                                MinDamageHolesToApply;                             // 0x100(0x30)
 	Struct AIDataProviderIntValue                                MaxDamageHolesToApply;                             // 0x130(0x30)
 	int                                                          LevelsOfHullDamage;                                // 0x160(0x4)
@@ -260,7 +260,7 @@ public:
 class AICreatureCharacterMovementComponent: public CharacterMovementComponent
 {
 public:
-	TArray<Struct GetAIStrategy>                                 AIStrategyMovementProperties;                      // 0x558(0x10)
+	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0x558(0x10)
 	float                                                        BlendSpeed;                                        // 0x568(0x4)
 	bool                                                         bCreateDisturbance;                                // 0x56c(0x1)
 	float                                                        DisturbanceSize;                                   // 0x570(0x4)
@@ -270,7 +270,7 @@ public:
 	float                                                        UpdateOrientationFrequency;                        // 0x580(0x4)
 	float                                                        MinStairAngle;                                     // 0x584(0x4)
 	float                                                        MinStairVelocityDampen;                            // 0x588(0x4)
-	TArray<Class MinStairVelocityDampen>                         SubscribedStairClimbStrategies;                    // 0x590(0x10)
+	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x590(0x10)
 };
 
 
@@ -317,7 +317,7 @@ public:
 	float                                                        MaximumLandTime;                                   // 0x2f8(0x4)
 	float                                                        MinStairAngle;                                     // 0x2fc(0x4)
 	float                                                        MinStairVelocityDampen;                            // 0x300(0x4)
-	TArray<Class MinStairVelocityDampen>                         SubscribedStairClimbStrategies;                    // 0x308(0x10)
+	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x308(0x10)
 };
 
 
@@ -379,11 +379,11 @@ class AIBountySpawner: public AISpawner
 {
 public:
 	float                                                        MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup;  // 0x428(0x4)
-	TArray<Struct MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup> WaveGroups;                                        // 0x430(0x10)
+	TArray<Struct AIBountySpawnerWaveGroup>                      WaveGroups;                                        // 0x430(0x10)
 	Struct StringAssetReference                                  TeamColor;                                         // 0x440(0x10)
 	Struct WeightedProbabilityRange                              WavesPerRelocate;                                  // 0x450(0x20)
 	Struct WeightedProbabilityRange                              WaveSplitChance;                                   // 0x470(0x20)
-	TArray<Float >                                               WaveSuicideTime;                                   // 0x490(0x10)
+	TArray<Float WaveSuicideTime>                                WaveSuicideTime;                                   // 0x490(0x10)
 	float                                                        WaveSuicideMinDist;                                // 0x4a0(0x4)
 	bool                                                         ImmediatelyPerceiveTargets;                        // 0x4a4(0x1)
 	Class AICombatDialogue*                                      ActiveCombatDialogue;                              // 0x4a8(0x8)
@@ -434,7 +434,7 @@ public:
 	Class AISenseConfig_Sight*                                   SightConfig;                                       // 0x680(0x8)
 	Class AISenseConfig_Hearing*                                 HearingConfig;                                     // 0x688(0x8)
 	Class AISenseConfig_Damage*                                  DamageSenseConfig;                                 // 0x690(0x8)
-	TArray<Struct DamageSenseConfig>                             AIStrategySenseSettingOverrides;                   // 0x6e0(0x10)
+	TArray<Struct AthenaAIControllerSenseSettingOverride>        AIStrategySenseSettingOverrides;                   // 0x6e0(0x10)
 	Class Actor*                                                 CurrentNotSeenPerceivedActor;                      // 0x8c8(0x8)
 	Class Actor*                                                 PendingSpawnTriggerActor;                          // 0x8d0(0x8)
 };
@@ -446,7 +446,7 @@ class AthenaFaunaAIController: public AthenaAIController
 public:
 	float                                                        MaxTimeBetweenThreatDetermination;                 // 0x8f8(0x4)
 	float                                                        DefaultControlRotationInterpSpeed;                 // 0x8fc(0x4)
-	TArray<Struct DefaultControlRotationInterpSpeed>             StrategyControllerMovementMods;                    // 0x900(0x10)
+	TArray<Struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x900(0x10)
 	float                                                        MinAgentHalfHeightPctOverride;                     // 0x910(0x4)
 	Class FaunaAIContollerParamsDataAsset*                       FaunaDataAsset;                                    // 0x918(0x8)
 	Class Actor*                                                 CarrierActor;                                      // 0x920(0x8)
@@ -582,7 +582,7 @@ class AIDebugSpawnActor: public Actor
 {
 public:
 	Struct AthenaAIDebugCostDisplay                              DebugCostDisplay;                                  // 0x3d0(0x1)
-	TArray<Struct DebugCostDisplay>                              SpawnConfigList;                                   // 0x3d8(0x10)
+	TArray<Struct AIDebugSpawnConfiguration>                     SpawnConfigList;                                   // 0x3d8(0x10)
 	TArray<class SpawnedAIList*>                                 SpawnedAIList;                                     // 0x3e8(0x10)
 };
 
@@ -620,7 +620,7 @@ public:
 	Class SceneComponent*                                        SceneComponent;                                    // 0x3d8(0x8)
 	Class SceneDialogueCoordinator*                              SpawnedDialogueCoordinator;                        // 0x3e0(0x8)
 	Class SceneDialogueData*                                     DialogueData;                                      // 0x3e8(0x8)
-	TArray<Struct DialogueData>                                  LinkedActors;                                      // 0x3f0(0x10)
+	TArray<Struct AIDioramaPawn>                                 LinkedActors;                                      // 0x3f0(0x10)
 };
 
 
@@ -637,7 +637,7 @@ class AIDioramaController: public Object
 public:
 	Class AIDioramaDesc*                                         AIDioramaDesc;                                     // 0x30(0x8)
 	Class SceneDialogueData*                                     DialogueData;                                      // 0x38(0x8)
-	TArray<Struct DialogueData>                                  SpawnedDioramaPawns;                               // 0x40(0x10)
+	TArray<Struct AIDioramaPawn>                                 SpawnedDioramaPawns;                               // 0x40(0x10)
 	Class AIDiorama*                                             AIDiorama;                                         // 0x50(0x8)
 	Class AISpawner*                                             Spawner;                                           // 0x58(0x8)
 };
@@ -647,7 +647,7 @@ public:
 class AIDioramaDesc: public DataAsset
 {
 public:
-	TArray<Struct AISenseRadiusSphere>                           RoleList;                                          // 0x28(0x10)
+	TArray<Struct AIDioramaRoleDesc>                             RoleList;                                          // 0x28(0x10)
 	Class SceneDialogueData*                                     DialogueData;                                      // 0x38(0x8)
 };
 
@@ -656,11 +656,11 @@ public:
 class AIDioramaLocationSourceComponent: public SceneComponent
 {
 public:
-	TArray<Struct AllDioramasLocationsByCategory>                DioramaRelativeLocations;                          // 0x2e0(0x10)
+	TArray<Struct AIDioramaLocationSourceComponentData>          DioramaRelativeLocations;                          // 0x2e0(0x10)
 	float                                                        DialogueTriggerRadius;                             // 0x2f0(0x4)
 	float                                                        DialogueSubtitleBuffer;                            // 0x2f4(0x4)
 	float                                                        AISenseRadiusForDebugDisplay;                      // 0x2f8(0x4)
-	TArray<Class AISenseRadiusForDebugDisplay>                   Categories;                                        // 0x300(0x10)
+	TArray<Class Categories>                                     Categories;                                        // 0x300(0x10)
 	struct FName                                                 FeatureToggle;                                     // 0x310(0x8)
 	Struct Color                                                 DebugTriggerRadiusColor;                           // 0x318(0x4)
 	Struct Color                                                 DebugSubtitleRadiusColor;                          // 0x31c(0x4)
@@ -709,7 +709,7 @@ public:
 	Class PetWieldableReactMappingsDataAsset*                    WieldableReactMappingsAsset;                       // 0x898(0x8)
 	float                                                        MaxVelocityForLocomotionAnimation;                 // 0x8a0(0x4)
 	bool                                                         CanFly;                                            // 0x8a4(0x1)
-	TArray<Struct CanFly>                                        FlyingStrategyProperties;                          // 0x8a8(0x10)
+	TArray<Struct PetFlyingStrategyProperties>                   FlyingStrategyProperties;                          // 0x8a8(0x10)
 	float                                                        FlyingLandTime;                                    // 0x8b8(0x4)
 	Class CurveFloat*                                            FlyingLandCurve;                                   // 0x8c0(0x8)
 	float                                                        FlyingTakeOffTime;                                 // 0x8c8(0x4)
@@ -725,7 +725,7 @@ public:
 	float                                                        MinimumDurationUntilPetCanDespawnConcealed;        // 0x918(0x4)
 	float                                                        DefaultNamePlateHeight;                            // 0x91c(0x4)
 	float                                                        AlternateNamePlateHeight;                          // 0x920(0x4)
-	TArray<Byte AlternateNamePlateHeight>                        StatesToUseAlternateNamePlatePos;                  // 0x928(0x10)
+	TArray<Byte StatesToUseAlternateNamePlatePos>                StatesToUseAlternateNamePlatePos;                  // 0x928(0x10)
 	Struct FloatRange                                            PetTimeSpentSad;                                   // 0x938(0x10)
 	byte                                                         DebugStateDescriptor;                              // 0x948(0x1)
 	Class AINameplateComponent*                                  AINameplateComponent;                              // 0x950(0x8)
@@ -736,9 +736,9 @@ public:
 	Struct PetMovementRequest                                    ReplicatedMovementRequest;                         // 0x978(0xc)
 	float                                                        TargetMeshRoll;                                    // 0x984(0x4)
 	float                                                        DefaultShipTurnRateModifier;                       // 0x998(0x4)
-	TArray<Struct DefaultShipTurnRateModifier>                   TurnRateModifierList;                              // 0x9a0(0x10)
-	TArray<Byte TurnRateModifierList>                            LocomotingMovementStates;                          // 0x9b0(0x10)
-	TArray<Byte LocomotingMovementStates>                        RequestIdleOrMovementValidMovementStates;          // 0x9c0(0x10)
+	TArray<Struct PetTurnRateModifier>                           TurnRateModifierList;                              // 0x9a0(0x10)
+	TArray<Byte LocomotingMovementStates>                        LocomotingMovementStates;                          // 0x9b0(0x10)
+	TArray<Byte RequestIdleOrMovementValidMovementStates>        RequestIdleOrMovementValidMovementStates;          // 0x9c0(0x10)
 	float                                                        MaxRollAngle;                                      // 0x9d0(0x4)
 	float                                                        DelayForDisablingMovementOnIdle;                   // 0x9d4(0x4)
 	float                                                        IslandDustRatePerSecond;                           // 0x9d8(0x4)
@@ -822,7 +822,7 @@ class PetPartCustomisationComponent: public ActorComponent
 public:
 	class                                                        AnimationDataStoreId;                              // 0xd8(0x8)
 	Class PetPartSizeMappingsDataAsset*                          SizeMappingsAsset;                                 // 0xe0(0x8)
-	TArray<Struct SizeMappingsAsset>                             CurrentlyLoadedMaterials;                          // 0xe8(0x10)
+	TArray<Struct PetLoadedMaterial>                             CurrentlyLoadedMaterials;                          // 0xe8(0x10)
 	Struct StringAssetReference                                  DefaultMeshRef;                                    // 0xf8(0x10)
 	Struct StringAssetReference                                  HighResMeshRef;                                    // 0x108(0x10)
 	Class SkeletalMesh*                                          CurrentlyLoadedMesh;                               // 0x118(0x8)
@@ -835,7 +835,7 @@ public:
 class PetPartSizeMappingsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct IgnorePickupFromHangoutTooltipDisplayOffset>   Mappings;                                          // 0x28(0x10)
+	TArray<Struct PetPartSizeMapping>                            Mappings;                                          // 0x28(0x10)
 	Struct FloatRange                                            ConcealedScaleBounds;                              // 0x38(0x10)
 };
 
@@ -861,7 +861,7 @@ class PetsPartsDesc: public AIPartsDesc
 public:
 	Struct StringAssetReference                                  Mesh;                                              // 0x30(0x10)
 	Struct StringAssetReference                                  HighResMesh;                                       // 0x40(0x10)
-	TArray<Struct HighResMesh>                                   PetMaterials;                                      // 0x50(0x10)
+	TArray<Struct PetMaterialEntry>                              PetMaterials;                                      // 0x50(0x10)
 	byte                                                         PetSize;                                           // 0x60(0x1)
 	Class PetCustomisationOverrideDataAsset*                     PetOverrideAsset;                                  // 0x68(0x8)
 };
@@ -878,7 +878,7 @@ public:
 class PetWieldableReactMappingsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct PetPartCustomisationComponent>                 WieldableReactMappings;                            // 0x28(0x10)
+	TArray<Struct PetWieldableReactMapping>                      WieldableReactMappings;                            // 0x28(0x10)
 };
 
 
@@ -960,7 +960,7 @@ public:
 	float                                                        FirstLoSTriggerTimeInNewPath;                      // 0xf4(0x4)
 	float                                                        FirstLoSTriggerTimeInRePath;                       // 0xf8(0x4)
 	bool                                                         DrawDebugOnServer;                                 // 0xfc(0x1)
-	TArray<Byte DrawDebugOnServer>                               CollisionTypesToDoPathUpdate;                      // 0x100(0x10)
+	TArray<Byte CollisionTypesToDoPathUpdate>                    CollisionTypesToDoPathUpdate;                      // 0x100(0x10)
 	Class SwimmingCreatureMovementComponent*                     MovementComponent;                                 // 0x110(0x8)
 	Class AthenaSwimmingAIController*                            SwimmingAIController;                              // 0x118(0x8)
 	byte                                                         ArcFollowingMode;                                  // 0x120(0x1)
@@ -1010,7 +1010,7 @@ public:
 	bool                                                         OverrideTeamID;                                    // 0x45(0x1)
 	byte                                                         TeamID;                                            // 0x46(0x1)
 	float                                                        TargetSwitchScoreTolerance;                        // 0x48(0x4)
-	TArray<Float >                                               TargetLoadWeightingBias;                           // 0x50(0x10)
+	TArray<Float TargetLoadWeightingBias>                        TargetLoadWeightingBias;                           // 0x50(0x10)
 	float                                                        DistanceToStartTargetPickingDecrease;              // 0x60(0x4)
 	float                                                        TargetPickingDistScoreAtMaxSightRange;             // 0x64(0x4)
 	float                                                        VisionAngleToStartTargetPickingDecrease;           // 0x68(0x4)
@@ -1021,10 +1021,10 @@ public:
 	bool                                                         IndividualOverrideMeshScale;                       // 0x98(0x1)
 	float                                                        IndividualMeshScale;                               // 0x9c(0x4)
 	Struct AthenaAIControllerHealthCustomisation                 IndividualHealthCustomisationValues;               // 0xa0(0xc)
-	TArray<Struct IndividualHealthCustomisationValues>           IndividualInitialBlackboardValues;                 // 0xb0(0x10)
-	TArray<Struct IndividualInitialBlackboardValues>             IndividualNamedControllerParams;                   // 0xc0(0x10)
-	TArray<Struct IndividualNamedControllerParams>               IndividualNamedWeightedRangesControllerParams;     // 0xd0(0x10)
-	TArray<Struct IndividualNamedWeightedRangesControllerParams> IndividualAIStrategySenseSettingOverrides;         // 0xe0(0x10)
+	TArray<Struct AthenaAIControllerParamValue>                  IndividualInitialBlackboardValues;                 // 0xb0(0x10)
+	TArray<Struct AthenaAIControllerParamValue>                  IndividualNamedControllerParams;                   // 0xc0(0x10)
+	TArray<Struct AthenaAIControllerWeightedRangesParamValue>    IndividualNamedWeightedRangesControllerParams;     // 0xd0(0x10)
+	TArray<Struct AthenaAIControllerSenseSettingOverride>        IndividualAIStrategySenseSettingOverrides;         // 0xe0(0x10)
 	bool                                                         IndividualOverrideCurrentTargetPerceivedNotVisibleAge; // 0xf0(0x1)
 	float                                                        IndividualCurrentTargetPerceivedNotVisibleAge;     // 0xf4(0x4)
 	struct FName                                                 FeatureName;                                       // 0xf8(0x8)
@@ -1163,7 +1163,7 @@ public:
 	class                                                        MeshFallbackCategory;                              // 0x50(0x8)
 	class                                                        BudgetToCountMemoryAgainstIfNoFallback;            // 0x58(0x8)
 	TArray<class OverrideMaterials*>                             OverrideMaterials;                                 // 0x60(0x10)
-	TArray<Struct OverrideMaterials>                             FallbackOverrideMaterials;                         // 0x70(0x10)
+	TArray<Struct StringAssetReference>                          FallbackOverrideMaterials;                         // 0x70(0x10)
 };
 
 
@@ -1189,11 +1189,11 @@ public:
 	float                                                        MeshScale;                                         // 0x2c(0x4)
 	bool                                                         OverrideCurrentTargetPerceivedNotVisibleAge;       // 0x30(0x1)
 	float                                                        CurrentTargetPerceivedNotVisibleAge;               // 0x34(0x4)
-	TArray<Struct CurrentTargetPerceivedNotVisibleAge>           AIStrategySenseSettingOverrides;                   // 0x38(0x10)
+	TArray<Struct AthenaAIControllerSenseSettingOverride>        AIStrategySenseSettingOverrides;                   // 0x38(0x10)
 	Struct AthenaAIControllerHealthCustomisation                 HealthCustomisationValues;                         // 0x48(0xc)
-	TArray<Struct HealthCustomisationValues>                     InitialBlackboardValues;                           // 0x58(0x10)
-	TArray<Struct InitialBlackboardValues>                       NamedControllerParams;                             // 0x68(0x10)
-	TArray<Struct NamedControllerParams>                         NamedWeightedRangesControllerParams;               // 0x78(0x10)
+	TArray<Struct AthenaAIControllerParamValue>                  InitialBlackboardValues;                           // 0x58(0x10)
+	TArray<Struct AthenaAIControllerParamValue>                  NamedControllerParams;                             // 0x68(0x10)
+	TArray<Struct AthenaAIControllerWeightedRangesParamValue>    NamedWeightedRangesControllerParams;               // 0x78(0x10)
 };
 
 
@@ -1206,15 +1206,15 @@ public:
 	bool                                                         OverridePrioritiseInteractablesBeforeEnemies;      // 0x8a(0x1)
 	bool                                                         PrioritiseInteractablesBeforeEnemies;              // 0x8b(0x1)
 	Class CurveFloat*                                            DistanceInMToCannonShotHitChanceCurve;             // 0x90(0x8)
-	TArray<Struct DistanceInMToCannonShotHitChanceCurve>         AIStrategyMovementProperties;                      // 0x98(0x10)
-	TArray<Struct AIStrategyMovementProperties>                  ItemCategoryAIStrategyMovementPropertiesOverrides; // 0xa8(0x10)
+	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0x98(0x10)
+	TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride> ItemCategoryAIStrategyMovementPropertiesOverrides; // 0xa8(0x10)
 	Struct AthenaAICharacterCannonTargetingParams                CannonTargetingParams;                             // 0xb8(0x10)
-	TArray<Struct CannonTargetingParams>                         WieldedItemProjectileEffectivenessProperties;      // 0xc8(0x10)
-	TArray<Struct WieldedItemProjectileEffectivenessProperties>  WieldedItemOverrideNamedControllerParams;          // 0xd8(0x10)
-	TArray<Struct WieldedItemOverrideNamedControllerParams>      NamedItemParams;                                   // 0xe8(0x10)
-	TArray<Struct NamedItemParams>                               SpawnItemDescForItemCategories;                    // 0xf8(0x10)
+	TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP> WieldedItemProjectileEffectivenessProperties;      // 0xc8(0x10)
+	TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams> WieldedItemOverrideNamedControllerParams;          // 0xd8(0x10)
+	TArray<Struct AthenaAIItemParamValue>                        NamedItemParams;                                   // 0xe8(0x10)
+	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> SpawnItemDescForItemCategories;                    // 0xf8(0x10)
 	TArray<class AIAbilityParams*>                               AIAbilityParams;                                   // 0x108(0x10)
-	TArray<Struct AIAbilityParams>                               NonItemEngageOptions;                              // 0x118(0x10)
+	TArray<Struct AthenaAIEngageEnemyData>                       NonItemEngageOptions;                              // 0x118(0x10)
 	Struct StringAssetReference                                  AnimationDataOverrideAsset;                        // 0x128(0x10)
 	Struct StringAssetReference                                  CustomAnimationAsset;                              // 0x138(0x10)
 	bool                                                         OverrideNoInitialItem;                             // 0x148(0x1)
@@ -1234,18 +1234,18 @@ public:
 	bool                                                         IndividualOverridePrioritiseInteractablesBeforeEnemies; // 0x102(0x1)
 	bool                                                         IndividualPrioritiseInteractablesBeforeEnemies;    // 0x103(0x1)
 	Class CurveFloat*                                            IndividualDistanceInMToCannonShotHitChanceCurve;   // 0x108(0x8)
-	TArray<Struct IndividualDistanceInMToCannonShotHitChanceCurve> IndividualAIStrategyMovementProperties;            // 0x110(0x10)
-	TArray<Struct IndividualAIStrategyMovementProperties>        IndividualItemCategoryAIStrategyMovementPropertiesOverrides; // 0x120(0x10)
+	TArray<Struct AIStrategyMovementProperties>                  IndividualAIStrategyMovementProperties;            // 0x110(0x10)
+	TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride> IndividualItemCategoryAIStrategyMovementPropertiesOverrides; // 0x120(0x10)
 	Struct AthenaAICharacterCannonTargetingParams                IndividualCannonTargetingParams;                   // 0x130(0x10)
-	TArray<Struct IndividualCannonTargetingParams>               IndividualWieldedItemProjectileEffectivenessProperties; // 0x140(0x10)
-	TArray<Struct IndividualWieldedItemProjectileEffectivenessProperties> IndividualWieldedItemOverrideNamedControllerParams; // 0x150(0x10)
-	TArray<Struct IndividualWieldedItemOverrideNamedControllerParams> IndividualNamedItemParams;                         // 0x160(0x10)
-	TArray<Struct IndividualNamedItemParams>                     IndividualSpawnItemDescForItemCategories;          // 0x170(0x10)
+	TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP> IndividualWieldedItemProjectileEffectivenessProperties; // 0x140(0x10)
+	TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams> IndividualWieldedItemOverrideNamedControllerParams; // 0x150(0x10)
+	TArray<Struct AthenaAIItemParamValue>                        IndividualNamedItemParams;                         // 0x160(0x10)
+	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> IndividualSpawnItemDescForItemCategories;          // 0x170(0x10)
 	bool                                                         UseDamageBasedAbilityStages;                       // 0x180(0x1)
-	TArray<Float >                                               HealthStages;                                      // 0x188(0x10)
-	TArray<Struct HealthStages>                                  IndividualDamageBasedAIAbilityStages;              // 0x198(0x10)
+	TArray<Float HealthStages>                                   HealthStages;                                      // 0x188(0x10)
+	TArray<Struct AthenaAIAbilityDamageStage>                    IndividualDamageBasedAIAbilityStages;              // 0x198(0x10)
 	TArray<class IndividualAIAbilityParams*>                     IndividualAIAbilityParams;                         // 0x1a8(0x10)
-	TArray<Struct IndividualAIAbilityParams>                     IndividualNonItemEngageOptions;                    // 0x1b8(0x10)
+	TArray<Struct AthenaAIEngageEnemyData>                       IndividualNonItemEngageOptions;                    // 0x1b8(0x10)
 	Struct StringAssetReference                                  IndividualAnimationDataOverrideAsset;              // 0x1c8(0x10)
 	Struct StringAssetReference                                  IndividualCustomAnimationAsset;                    // 0x1d8(0x10)
 	bool                                                         IndividualOverrideNoInitialItem;                   // 0x1e8(0x1)
@@ -1260,7 +1260,7 @@ public:
 class AthenaAIAmmoDataAsset: public DataAsset
 {
 public:
-	TArray<Struct NumberOfRanks>                                 AmmoWeights;                                       // 0xb8(0x10)
+	TArray<Struct AthenaAICharacterControllerWeightedAmmoType>   AmmoWeights;                                       // 0xb8(0x10)
 	struct FName                                                 FeatureName;                                       // 0xc8(0x8)
 };
 
@@ -1269,7 +1269,7 @@ public:
 class AIAmmoRankProgression: public DataAsset
 {
 public:
-	TArray<Struct AllProgressions>                               RankMappings;                                      // 0x28(0x10)
+	TArray<Struct AIAmmoRankMapping>                             RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
 };
 
@@ -1342,7 +1342,7 @@ public:
 class AIClassIdTypeList: public DataAsset
 {
 public:
-	TArray<Class AvailableColors>                                AllClassIds;                                       // 0x28(0x10)
+	TArray<Class AllClassIds>                                    AllClassIds;                                       // 0x28(0x10)
 };
 
 
@@ -1350,7 +1350,7 @@ public:
 class AIColorVariantPool: public DataAsset
 {
 public:
-	TArray<Struct OnVulnerabilityStateEntered>                   AvailableColors;                                   // 0x28(0x10)
+	TArray<Struct StringAssetReference>                          AvailableColors;                                   // 0x28(0x10)
 };
 
 
@@ -1365,11 +1365,11 @@ public:
 class AIDebugVisualisationComponent: public ActorComponent
 {
 public:
-	TArray<Struct TargetItemDropOverrides>                       Lines;                                             // 0xc8(0x10)
-	TArray<Struct Lines>                                         Boxes;                                             // 0xd8(0x10)
-	TArray<Struct Boxes>                                         Cylinders;                                         // 0xe8(0x10)
-	TArray<Struct Cylinders>                                     Spheres;                                           // 0xf8(0x10)
-	TArray<Struct Spheres>                                       Cones;                                             // 0x108(0x10)
+	TArray<Struct AIDebugVisualisationLine>                      Lines;                                             // 0xc8(0x10)
+	TArray<Struct AIDebugVisualisationBox>                       Boxes;                                             // 0xd8(0x10)
+	TArray<Struct AIDebugVisualisationCylinder>                  Cylinders;                                         // 0xe8(0x10)
+	TArray<Struct AIDebugVisualisationSphere>                    Spheres;                                           // 0xf8(0x10)
+	TArray<Struct AIDebugVisualisationCone>                      Cones;                                             // 0x108(0x10)
 };
 
 
@@ -1384,7 +1384,7 @@ public:
 class AIEncounterGenerationRecipe: public DataAsset
 {
 public:
-	TArray<Struct FeatureBasedRecipeLists>                       Forms;                                             // 0x28(0x10)
+	TArray<Struct AIFormVarietyEntry>                            Forms;                                             // 0x28(0x10)
 	Struct StringAssetReference                                  SkillsetProgression;                               // 0x38(0x10)
 	Struct StringAssetReference                                  ItemDropProgression;                               // 0x48(0x10)
 	Struct TargetSkillsetProgressionPair                         TargetSkillsetOverrides;                           // 0x58(0x20)
@@ -1397,7 +1397,7 @@ class AIEncounterGenerationRecipeRankOrderList: public DataAsset
 {
 public:
 	TArray<class Recipes*>                                       Recipes;                                           // 0x28(0x10)
-	TArray<Struct Recipes>                                       FeatureBasedRecipeLists;                           // 0x38(0x10)
+	TArray<Struct AIEncounterGenerationRecipeFeatureBasedRankOrderList> FeatureBasedRecipeLists;                           // 0x38(0x10)
 };
 
 
@@ -1428,7 +1428,7 @@ public:
 class AIFormRankProgression: public DataAsset
 {
 public:
-	TArray<Struct AllProgressions>                               RankMappings;                                      // 0x28(0x10)
+	TArray<Struct AIFormRankMapping>                             RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
 };
 
@@ -1494,8 +1494,8 @@ public:
 class AIEncounterService: public Actor
 {
 public:
-	TArray<Struct NumberOfRanks>                                 DefaultPartsCategories;                            // 0x3d8(0x10)
-	TArray<Struct DefaultPartsCategories>                        FormPartsCategories;                               // 0x3e8(0x10)
+	TArray<Struct AIPartsCategoryMapping>                        DefaultPartsCategories;                            // 0x3d8(0x10)
+	TArray<Struct AIPartsCategoryFormMapping>                    FormPartsCategories;                               // 0x3e8(0x10)
 	Class AIAmmoTypeList*                                        Ammo;                                              // 0x3f8(0x8)
 	Class AIAmmoProgressionTypeList*                             AmmoProgressions;                                  // 0x400(0x8)
 	Class AIFormTypeList*                                        Forms;                                             // 0x408(0x8)
@@ -1517,7 +1517,7 @@ public:
 class AISkillsetRankProgression: public DataAsset
 {
 public:
-	TArray<Struct TeamColor>                                     RankMappings;                                      // 0x28(0x10)
+	TArray<Struct AISkillsetRankMapping>                         RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
 };
 
@@ -1591,7 +1591,7 @@ public:
 class AIItemDropComponentList: public DataAsset
 {
 public:
-	TArray<AssetClass AllProgressions>                           AllSpawners;                                       // 0x28(0x10)
+	TArray<AssetClass AllSpawners>                               AllSpawners;                                       // 0x28(0x10)
 };
 
 
@@ -1622,7 +1622,7 @@ public:
 class AIItemSpawnRankProgression: public DataAsset
 {
 public:
-	TArray<Struct AllowedLoadouts>                               RankMappings;                                      // 0x28(0x10)
+	TArray<Struct AIDropSpawnerRankMapping>                      RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
 };
 
@@ -1646,7 +1646,7 @@ public:
 class AILoadoutRankProgression: public DataAsset
 {
 public:
-	TArray<Struct AddNameplateToAI>                              RankMappings;                                      // 0x28(0x10)
+	TArray<Struct AILoadoutRankMapping>                          RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
 };
 
@@ -1676,8 +1676,8 @@ public:
 class AthenaAITypeListDataAsset: public DataAsset
 {
 public:
-	TArray<Struct FeatureName>                                   AITypes;                                           // 0x28(0x10)
-	TArray<Struct AITypes>                                       AdditionalAIActors;                                // 0x38(0x10)
+	TArray<Struct AITypeData>                                    AITypes;                                           // 0x28(0x10)
+	TArray<Struct StringClassReference>                          AdditionalAIActors;                                // 0x38(0x10)
 };
 
 
@@ -1685,7 +1685,7 @@ public:
 class AISpawnWaveSequence: public DataAsset
 {
 public:
-	TArray<Struct NumberOfRanks>                                 Waves;                                             // 0x28(0x10)
+	TArray<Struct AISpawnerWave>                                 Waves;                                             // 0x28(0x10)
 	struct FName                                                 FeatureName;                                       // 0x38(0x8)
 };
 
@@ -1694,7 +1694,7 @@ public:
 class AISpawnWaveSequenceRankProgression: public DataAsset
 {
 public:
-	TArray<Struct FeatureName>                                   RankMappings;                                      // 0x28(0x10)
+	TArray<Struct AISpawnWaveSequenceRankMapping>                RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
 };
 
@@ -1713,7 +1713,7 @@ public:
 class AIWeightedProbabilityRangeOfRangesRankProgression: public DataAsset
 {
 public:
-	TArray<Struct AICharacterWaterInteractionCollisionProfileName> RankMappings;                                      // 0x28(0x10)
+	TArray<Struct AIWeightedProbabilityRangeOfRangesRankMapping> RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
 };
 
@@ -1792,11 +1792,11 @@ public:
 class AIManagerService: public Actor
 {
 public:
-	TArray<Class BlockAIAbility>                                 LoadedAIPawnClasses;                               // 0x4d8(0x10)
-	TArray<Class LoadedAIPawnClasses>                            LoadedAIItemDropComponentClasses;                  // 0x4e8(0x10)
+	TArray<Class LoadedAIPawnClasses>                            LoadedAIPawnClasses;                               // 0x4d8(0x10)
+	TArray<Class LoadedAIItemDropComponentClasses>               LoadedAIItemDropComponentClasses;                  // 0x4e8(0x10)
 	Class AmbientWaterSpawnerManager*                            AmbientWaterSpawnerManager;                        // 0x500(0x8)
 	TArray<class PlayerTrackers*>                                PlayerTrackers;                                    // 0x838(0x10)
-	TArray<Struct PlayerTrackers>                                CustomPlayersTrackerDatas;                         // 0x848(0x10)
+	TArray<Struct CustomPlayersAITrackerData>                    CustomPlayersTrackerDatas;                         // 0x848(0x10)
 	TArray<class SpawnersPendingShutdown*>                       SpawnersPendingShutdown;                           // 0x958(0x10)
 	Class AthenaAITypeListDataAsset*                             AITypeList;                                        // 0xa10(0x8)
 	Class AISpawnContextList*                                    AISpawnContextList;                                // 0xa18(0x8)
@@ -1814,7 +1814,7 @@ public:
 class DebugAIManagerService: public AIManagerService
 {
 public:
-	TArray<Class TeamColors>                                     BlockedAIAbilities;                                // 0xb40(0x10)
+	TArray<Class BlockedAIAbilities>                             BlockedAIAbilities;                                // 0xb40(0x10)
 };
 
 
@@ -1845,7 +1845,7 @@ public:
 class AIPartIdListingAsset: public DataAsset
 {
 public:
-	TArray<Struct KilledVfxTemplate>                             AIPartIdsVariantInfo;                              // 0x28(0x10)
+	TArray<Struct AIPartIdNumVariantInfo>                        AIPartIdsVariantInfo;                              // 0x28(0x10)
 };
 
 
@@ -1914,7 +1914,7 @@ public:
 	bool                                                         UpdateRegionPosition;                              // 0x2d8(0x1)
 	struct FName                                                 NavMeshAgentType;                                  // 0x2dc(0x8)
 	float                                                        RegionRadius;                                      // 0x2e4(0x4)
-	TArray<Struct RegionRadius>                                  SpawnLocationGroups;                               // 0x2e8(0x10)
+	TArray<Struct SpawnLocationGroup>                            SpawnLocationGroups;                               // 0x2e8(0x10)
 };
 
 
@@ -1951,7 +1951,7 @@ public:
 class AISpawnContextList: public DataAsset
 {
 public:
-	TArray<Struct NumWavesToSpawnOnSpottedNewTarget>             SpawnContextList;                                  // 0x28(0x10)
+	TArray<Struct AISpawnContextData>                            SpawnContextList;                                  // 0x28(0x10)
 };
 
 
@@ -1966,7 +1966,7 @@ public:
 class AIFixedWavesSpawner: public AISpawner
 {
 public:
-	TArray<Struct SpawnedWave>                                   SpawnedWaves;                                      // 0x428(0x10)
+	TArray<Struct AIPersistentSpawnerWave>                       SpawnedWaves;                                      // 0x428(0x10)
 	int                                                          NumWavesToSpawnOnSpottedNewTarget;                 // 0x438(0x4)
 };
 
@@ -2025,12 +2025,12 @@ public:
 class NamedAIDataAsset: public DataAsset
 {
 public:
-	TArray<Text None>                                            MaleCaptainNames;                                  // 0x28(0x10)
+	TArray<Struct FText>                                         MaleCaptainNames;                                  // 0x28(0x10)
 	TArray<Struct FText>                                         FemaleCaptainNames;                                // 0x38(0x10)
 	TArray<Struct FText>                                         MaleCrewNames;                                     // 0x48(0x10)
 	TArray<Struct FText>                                         FemaleCrewNames;                                   // 0x58(0x10)
-	TArray<Struct FemaleCrewNames>                               CustomNameTitles;                                  // 0x68(0x10)
-	TArray<Struct CustomNameTitles>                              CustomNameOverrides;                               // 0x78(0x10)
+	TArray<Struct AICustomNameTitleMapping>                      CustomNameTitles;                                  // 0x68(0x10)
+	TArray<Struct AICustomClassIdNameOverrides>                  CustomNameOverrides;                               // 0x78(0x10)
 	class                                                        DefaultClassId;                                    // 0x88(0x8)
 	class                                                        FemaleCaptainClassId;                              // 0x90(0x8)
 	class                                                        MaleCaptainClassId;                                // 0x98(0x8)
@@ -2046,7 +2046,7 @@ public:
 	int                                                          NumberOfWavesToSpawn;                              // 0x610(0x4)
 	Class WwiseEvent*                                            NewWaveSpawnSfx;                                   // 0x618(0x8)
 	float                                                        NewWaveSpawnSfxTriggerRadius;                      // 0x620(0x4)
-	TArray<Class NewWaveSpawnSfxTriggerRadius>                   ShowNameplatesFor;                                 // 0x628(0x10)
+	TArray<Class ShowNameplatesFor>                              ShowNameplatesFor;                                 // 0x628(0x10)
 	Class NamedAIDataAsset*                                      NamedAIDataAsset;                                  // 0x638(0x8)
 	Class Actor*                                                 ActorToTrack;                                      // 0x640(0x8)
 };
@@ -2057,7 +2057,7 @@ class AIProgressiveWavesSpawner: public AISpawner
 {
 public:
 	bool                                                         ApplyLocalisableNamesToNameplates;                 // 0x428(0x1)
-	TArray<Struct ApplyLocalisableNamesToNameplates>             Waves;                                             // 0x430(0x10)
+	TArray<Struct AIPersistentSpawnerWave>                       Waves;                                             // 0x430(0x10)
 	Class Actor*                                                 TriggerActor;                                      // 0x458(0x8)
 };
 
@@ -2137,7 +2137,7 @@ public:
 class AISpawnMatchesAnyContextCondition: public AISpawnOverrideCondition
 {
 public:
-	TArray<Class ShouldApplyOverride>                            Contexts;                                          // 0x30(0x10)
+	TArray<Class Contexts>                                       Contexts;                                          // 0x30(0x10)
 };
 
 
@@ -2222,10 +2222,10 @@ public:
 	Struct WeightedProbabilityRangeOfRanges                      UnsuccessfulSirenSpawningWeightedTimeRange;        // 0x448(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      SuccessfulSirenSpawningWeightedTimeRange;          // 0x478(0x30)
 	Struct ChanceForSharksToBlockSirenEncounterData              SharkEncounterSpawnBlockingData;                   // 0x4a8(0xc)
-	TArray<Struct SharkEncounterSpawnBlockingData>               PerDepthSpawnChances;                              // 0x4b8(0x10)
+	TArray<Struct PerDepthSpawnChance>                           PerDepthSpawnChances;                              // 0x4b8(0x10)
 	Class AIPerPlayerSpawner*                                    SharkPerPlayerSpawner;                             // 0x4c8(0x8)
-	TArray<Struct SharkPerPlayerSpawner>                         PlayersInWater;                                    // 0x600(0x10)
-	TArray<Struct PlayersInWater>                                SirenEncounters;                                   // 0x610(0x10)
+	TArray<Struct PlayerInWaterData>                             PlayersInWater;                                    // 0x600(0x10)
+	TArray<Struct SirenEncounterData>                            SirenEncounters;                                   // 0x610(0x10)
 };
 
 
@@ -2240,12 +2240,12 @@ public:
 class AppliedStatusToMultipleAIWithFormsStatCondition: public StatCondition
 {
 public:
-	TArray<Class bProcessingSpawnLocations>                      Status;                                            // 0x28(0x10)
+	TArray<Class Status>                                         Status;                                            // 0x28(0x10)
 	int                                                          AICountMinimum;                                    // 0x38(0x4)
 	bool                                                         AllowAllForms;                                     // 0x3c(0x1)
-	TArray<AssetClass AllowAllForms>                             AllowedAIForms;                                    // 0x40(0x10)
-	TArray<Class AllowedAIForms>                                 AIClassesToIgnore;                                 // 0x50(0x10)
-	TArray<AssetClass AIClassesToIgnore>                         AllowedSources;                                    // 0x60(0x10)
+	TArray<AssetClass AllowedAIForms>                            AllowedAIForms;                                    // 0x40(0x10)
+	TArray<Class AIClassesToIgnore>                              AIClassesToIgnore;                                 // 0x50(0x10)
+	TArray<AssetClass AllowedSources>                            AllowedSources;                                    // 0x60(0x10)
 };
 
 
@@ -2260,7 +2260,7 @@ public:
 class BurrowAIAbility: public AthenaAIAbility
 {
 public:
-	TArray<Struct OnLifeSpanPercentLeft>                         LocationsToSpawnCrack;                             // 0x78(0x10)
+	TArray<Struct Vector>                                        LocationsToSpawnCrack;                             // 0x78(0x10)
 	Struct TimerHandle                                           TimerHandleStartNextSpawnWave;                     // 0x88(0x4)
 	Class Actor*                                                 CachedTarget;                                      // 0x90(0x8)
 	bool                                                         bExecuting;                                        // 0x124(0x1)
@@ -2283,7 +2283,7 @@ public:
 class BurrowAIAbilityParams: public AthenaAIAbilityParams
 {
 public:
-	TArray<Byte StatusToApplyOnHeal>                             ValidBurrowSurfaceTypes;                           // 0xc8(0x10)
+	TArray<Byte ValidBurrowSurfaceTypes>                         ValidBurrowSurfaceTypes;                           // 0xc8(0x10)
 	class                                                        BurrowCrackToSpawn;                                // 0xd8(0x8)
 	class                                                        BurrowEruptArea;                                   // 0xe0(0x8)
 	Class EnvQuery*                                              EnvQueryLinesToTarget;                             // 0xe8(0x8)
@@ -2331,8 +2331,8 @@ public:
 class CoralShieldAbility: public AthenaAIAbility
 {
 public:
-	TArray<Weakclass OwnerChainLightningSourceInterface>         PotentialTargets;                                  // 0x78(0x10)
-	TArray<Struct CachedBuffReceiver>                            BuffedTargets;                                     // 0xa8(0x10)
+	TArray<Weakclass PotentialTargets>                           PotentialTargets;                                  // 0x78(0x10)
+	TArray<Struct BuffedTargetData>                              BuffedTargets;                                     // 0xa8(0x10)
 };
 
 
@@ -2340,7 +2340,7 @@ public:
 class ElectricShieldAbility: public AthenaAIAbility
 {
 public:
-	TArray<Interface BreathVFX>                                  SelectedTargets;                                   // 0x80(0x10)
+	TArray<Interface SelectedTargets>                            SelectedTargets;                                   // 0x80(0x10)
 };
 
 
@@ -2369,7 +2369,7 @@ public:
 	Class AthenaAIAbility*                                       CurrentAIAbility;                                  // 0xf0(0x8)
 	class                                                        QueuedAbilityType;                                 // 0xf8(0x8)
 	class                                                        DebugAlwaysOnAbility;                              // 0x100(0x8)
-	TArray<Struct DebugAlwaysOnAbility>                          AbilityDamageStages;                               // 0x108(0x10)
+	TArray<Struct AthenaAIAbilityDamageStage>                    AbilityDamageStages;                               // 0x108(0x10)
 };
 
 
@@ -2377,9 +2377,9 @@ public:
 class AthenaAIAbilityHandlerComponent: public ActorComponent
 {
 public:
-	TArray<Struct DelayBeforeSFXPlays>                           AbilityStages;                                     // 0x178(0x10)
+	TArray<Struct AthenaAIAbilityDamageStage>                    AbilityStages;                                     // 0x178(0x10)
 	TArray<class AIAbilities*>                                   AIAbilities;                                       // 0x188(0x10)
-	TArray<Class AIAbilities>                                    ReadyAbilitiesPool;                                // 0x198(0x10)
+	TArray<Class ReadyAbilitiesPool>                             ReadyAbilitiesPool;                                // 0x198(0x10)
 	class                                                        DebugAlwaysOnAbility;                              // 0x1c8(0x8)
 	class                                                        RequiresActivation;                                // 0x1d0(0x8)
 };
@@ -2462,7 +2462,7 @@ public:
 class AthenaAIRangeBasedAmmoDataAsset: public AthenaAIAmmoDataAsset
 {
 public:
-	TArray<Struct ClearOverridePrioritiseInteractablesBeforeEnemies> AmmoTypeRanges;                                    // 0xd0(0x10)
+	TArray<Struct WeightedAmmoTypeRange>                         AmmoTypeRanges;                                    // 0xd0(0x10)
 };
 
 
@@ -2491,9 +2491,9 @@ public:
 	bool                                                         FaceTargetDisabled;                                // 0x915(0x1)
 	float                                                        MinTurnAngleToPlayTurnAnim;                        // 0x918(0x4)
 	Class AthenaAICharacterControllerParamsDataAsset*            CharacterParamsDataAsset;                          // 0x930(0x8)
-	TArray<Struct CharacterParamsDataAsset>                      SpawnItemDescForItemCategories;                    // 0x9c8(0x10)
+	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> SpawnItemDescForItemCategories;                    // 0x9c8(0x10)
 	TArray<class AIAbilityParams*>                               AIAbilityParams;                                   // 0x9d8(0x10)
-	TArray<Struct AIAbilityParams>                               NonItemEngageOptions;                              // 0x9e8(0x10)
+	TArray<Struct AthenaAIEngageEnemyData>                       NonItemEngageOptions;                              // 0x9e8(0x10)
 	Class CurveFloat*                                            DistanceInMToCannonShotHitChanceCurve;             // 0x9f8(0x8)
 };
 
@@ -2510,9 +2510,9 @@ class FaunaAIContollerParamsDataAsset: public AthenaAIControllerParamsDataAsset
 {
 public:
 	Struct WeightedProbabilityRange                              Courage;                                           // 0x100(0x20)
-	TArray<Struct Courage>                                       CarriedItemThreatOverrides;                        // 0x120(0x10)
+	TArray<Struct CarriedItemThreatOverride>                     CarriedItemThreatOverrides;                        // 0x120(0x10)
 	bool                                                         ThreatenedBySightOfCarrier;                        // 0x130(0x1)
-	TArray<Struct ThreatenedBySightOfCarrier>                    KnownHearingDangers;                               // 0x138(0x10)
+	TArray<Struct HearingThreat>                                 KnownHearingDangers;                               // 0x138(0x10)
 	float                                                        CarrierHearingThreatSpeedThreshold;                // 0x148(0x4)
 	float                                                        DamageThreat;                                      // 0x14c(0x4)
 	Class CurveFloat*                                            CharacterDistanceToDangerRatingCurve;              // 0x150(0x8)
@@ -2616,7 +2616,7 @@ public:
 class BTDecorator_CurrentAIStrategy: public BTDecorator_BaseConditional
 {
 public:
-	TArray<Class ExpectedTrackId>                                Strategies;                                        // 0x68(0x10)
+	TArray<Class Strategies>                                     Strategies;                                        // 0x68(0x10)
 };
 
 
@@ -2683,7 +2683,7 @@ public:
 class BTDecorator_CompareBlackboardValues: public BTDecorator
 {
 public:
-	TArray<Struct Value>                                         FloatConditions;                                   // 0x68(0x10)
+	TArray<Struct BlackboardValueCondition>                      FloatConditions;                                   // 0x68(0x10)
 	byte                                                         FloatConditionComposite;                           // 0x78(0x1)
 };
 
@@ -2802,7 +2802,7 @@ public:
 class BTDecorator_MultipleRandomDiceRolls: public BTDecorator
 {
 public:
-	TArray<Struct Chance>                                        ChanceKeyPairs;                                    // 0x68(0x10)
+	TArray<Struct ChanceAndBlackboardKeyPair>                    ChanceKeyPairs;                                    // 0x68(0x10)
 };
 
 
@@ -2870,7 +2870,7 @@ public:
 class BTService_DisableCollisions: public BTService
 {
 public:
-	TArray<Byte Conditional>                                     ChannelsToLeaveUnaffected;                         // 0x70(0x10)
+	TArray<Byte ChannelsToLeaveUnaffected>                       ChannelsToLeaveUnaffected;                         // 0x70(0x10)
 };
 
 
@@ -2935,7 +2935,7 @@ public:
 	bool                                                         OverrideQueryTemplateWithBlackboardValue;          // 0x98(0x1)
 	Struct BlackboardKeySelector                                 OverrideEQSKey;                                    // 0xa0(0x28)
 	Class EnvQuery*                                              QueryTemplate;                                     // 0xc8(0x8)
-	TArray<Struct QueryTemplate>                                 QueryParams;                                       // 0xd0(0x10)
+	TArray<Struct EnvNamedValue>                                 QueryParams;                                       // 0xd0(0x10)
 	byte                                                         RunMode;                                           // 0xe0(0x1)
 	bool                                                         ThrottleQueryTimePerFrame;                         // 0xe1(0x1)
 	float                                                        MaxSecondsToSpendOnQueryPerFrame;                  // 0xe4(0x4)
@@ -3293,7 +3293,7 @@ public:
 class BTTask_SetAIStrategyFromWeightedArray: public BTTaskNode
 {
 public:
-	TArray<Struct Actor>                                         WeightedStrategies;                                // 0x60(0x10)
+	TArray<Struct WeightedAIStrategyChance>                      WeightedStrategies;                                // 0x60(0x10)
 };
 
 
@@ -3508,7 +3508,7 @@ public:
 class CustomSkeletonAnimationDataList: public DataAsset
 {
 public:
-	TArray<Struct SeenActors>                                    CustomAnimationAssets;                             // 0x28(0x10)
+	TArray<Struct StringAssetReference>                          CustomAnimationAssets;                             // 0x28(0x10)
 };
 
 
@@ -3627,7 +3627,7 @@ public:
 class EnvQueryGenerator_Sphere: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	TArray<Struct DirectArcTarget>                               Radiuses;                                          // 0x90(0x10)
+	TArray<Struct AIDataProviderFloatValue>                      Radiuses;                                          // 0x90(0x10)
 	Struct AIDataProviderIntValue                                NumberOfVerticalCircles;                           // 0xa0(0x30)
 	Struct AIDataProviderIntValue                                NumberOfHorizontalCircles;                         // 0xd0(0x30)
 	bool                                                         DefineFirstPointDirection;                         // 0x100(0x1)
@@ -3678,7 +3678,7 @@ class EnvQueryGenerator_WaterMultiDeckerRing: public EnvQueryGenerator_Projected
 {
 public:
 	Struct AIDataProviderFloatValue                              Radius;                                            // 0x90(0x30)
-	TArray<Struct Radius>                                        ZOffsetOfRingsFromContext;                         // 0xc0(0x10)
+	TArray<Struct AIDataProviderFloatValue>                      ZOffsetOfRingsFromContext;                         // 0xc0(0x10)
 	Struct AIDataProviderIntValue                                PointsPerRing;                                     // 0xd0(0x30)
 	class                                                        Center;                                            // 0x100(0x8)
 };
@@ -3735,7 +3735,7 @@ public:
 class IsAIOfClassStatCondition: public TargetedStatCondition
 {
 public:
-	TArray<Class AllowedAIForms>                                 AIClasses;                                         // 0x30(0x10)
+	TArray<Class AIClasses>                                      AIClasses;                                         // 0x30(0x10)
 };
 
 
@@ -3743,7 +3743,7 @@ public:
 class IsAIOfFormStatCondition: public TargetedStatCondition
 {
 public:
-	TArray<AssetClass AISkillsets>                               AllowedAIForms;                                    // 0x30(0x10)
+	TArray<AssetClass AllowedAIForms>                            AllowedAIForms;                                    // 0x30(0x10)
 };
 
 
@@ -3785,7 +3785,7 @@ public:
 class SpawnContextProviderZone: public Actor
 {
 public:
-	TArray<Name None>                                            SpawnContextIDs;                                   // 0x3d0(0x10)
+	TArray<Struct FName>                                         SpawnContextIDs;                                   // 0x3d0(0x10)
 	Class BoxComponent*                                          BoundingBox;                                       // 0x3e0(0x8)
 };
 
@@ -3840,7 +3840,7 @@ public:
 class VulnerabilityDuringAIStrategyComponent: public ActorComponent
 {
 public:
-	TArray<Struct Spawners>                                      StrategyVulnerabilities;                           // 0xc8(0x10)
+	TArray<Struct AIStrategyVulnerabilityData>                   StrategyVulnerabilities;                           // 0xc8(0x10)
 	Class HealthComponent*                                       HealthComponent;                                   // 0xd8(0x8)
 };
 

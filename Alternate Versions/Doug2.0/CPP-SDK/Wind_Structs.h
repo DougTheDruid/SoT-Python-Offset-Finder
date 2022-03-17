@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x38
-class ExtraWind: public None
+struct ExtraWind
 {
 public:
 	Class Object*                                                Source;                                            // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x24
-class WindServiceParams: public None
+struct WindServiceParams
 {
 public:
 	float                                                        MinAngleChange;                                    // 0x0(0x4)
@@ -32,7 +32,7 @@ public:
 
 
 // Size 0x8
-class WindZoneTurbulence: public None
+struct WindZoneTurbulence
 {
 public:
 	float                                                        Base;                                              // 0x0(0x4)
@@ -41,7 +41,7 @@ public:
 
 
 // Size 0x10
-class WindZoneParams: public None
+struct WindZoneParams
 {
 public:
 	float                                                        OuterRadius;                                       // 0x0(0x4)
@@ -52,7 +52,7 @@ public:
 
 
 // Size 0x70
-class WindTurbulenceParameters: public None
+struct WindTurbulenceParameters
 {
 public:
 	Struct FloatRange                                            GustPower;                                         // 0x0(0x10)
@@ -62,14 +62,14 @@ public:
 
 
 // Size 0x1
-class WindMagnitudeChanged: public None
+struct WindMagnitudeChanged
 {
 public:
 };
 
 
 // Size 0x1
-class WindDirectionChanged: public None
+struct WindDirectionChanged
 {
 public:
 };

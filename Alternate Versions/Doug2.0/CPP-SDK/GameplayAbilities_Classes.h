@@ -35,18 +35,18 @@ public:
 	Struct GameplayEffectModifierMagnitude                       DurationMagnitude;                                 // 0x38(0x170)
 	Struct ScalableFloat                                         Period;                                            // 0x1a8(0x20)
 	bool                                                         bExecutePeriodicEffectOnApplication;               // 0x1c8(0x1)
-	TArray<Struct bExecutePeriodicEffectOnApplication>           Modifiers;                                         // 0x1d0(0x10)
-	TArray<Struct Modifiers>                                     Executions;                                        // 0x1e0(0x10)
+	TArray<Struct GameplayModifierInfo>                          Modifiers;                                         // 0x1d0(0x10)
+	TArray<Struct GameplayEffectExecutionDefinition>             Executions;                                        // 0x1e0(0x10)
 	Struct ScalableFloat                                         ChanceToApplyToTarget;                             // 0x1f0(0x20)
-	TArray<Class ChanceToApplyToTarget>                          TargetEffectClasses;                               // 0x210(0x10)
+	TArray<Class TargetEffectClasses>                            TargetEffectClasses;                               // 0x210(0x10)
 	TArray<class TargetEffects*>                                 TargetEffects;                                     // 0x220(0x10)
-	TArray<Class TargetEffects>                                  OverflowEffects;                                   // 0x230(0x10)
+	TArray<Class OverflowEffects>                                OverflowEffects;                                   // 0x230(0x10)
 	bool                                                         bDenyOverflowApplication;                          // 0x240(0x1)
 	bool                                                         bClearStackOnOverflow;                             // 0x241(0x1)
-	TArray<Class bClearStackOnOverflow>                          PrematureExpirationEffectClasses;                  // 0x248(0x10)
-	TArray<Class PrematureExpirationEffectClasses>               RoutineExpirationEffectClasses;                    // 0x258(0x10)
+	TArray<Class PrematureExpirationEffectClasses>               PrematureExpirationEffectClasses;                  // 0x248(0x10)
+	TArray<Class RoutineExpirationEffectClasses>                 RoutineExpirationEffectClasses;                    // 0x258(0x10)
 	bool                                                         bRequireModifierSuccessToTriggerCues;              // 0x268(0x1)
-	TArray<Struct bRequireModifierSuccessToTriggerCues>          GameplayCues;                                      // 0x270(0x10)
+	TArray<Struct GameplayEffectCue>                             GameplayCues;                                      // 0x270(0x10)
 	Class GameplayEffectUIData*                                  UIData;                                            // 0x280(0x8)
 	Struct InheritedTagContainer                                 InheritableGameplayEffectTags;                     // 0x288(0x78)
 	Struct GameplayTagContainer                                  GameplayEffectTags;                                // 0x300(0x28)
@@ -61,7 +61,7 @@ public:
 	int                                                          StackLimitCount;                                   // 0x55c(0x4)
 	byte                                                         StackDurationRefreshPolicy;                        // 0x560(0x1)
 	byte                                                         StackPeriodResetPolicy;                            // 0x561(0x1)
-	TArray<Struct StackPeriodResetPolicy>                        GrantedAbilities;                                  // 0x568(0x10)
+	TArray<Struct GameplayAbilitySpecDef>                        GrantedAbilities;                                  // 0x568(0x10)
 };
 
 
@@ -80,7 +80,7 @@ public:
 	byte                                                         NetExecutionPolicy;                                // 0x198(0x1)
 	class                                                        CostGameplayEffectClass;                           // 0x1a0(0x8)
 	Class GameplayEffect*                                        CostGameplayEffect;                                // 0x1a8(0x8)
-	TArray<Struct CostGameplayEffect>                            AbilityTriggers;                                   // 0x1b0(0x10)
+	TArray<Struct AbilityTriggerData>                            AbilityTriggers;                                   // 0x1b0(0x10)
 	class                                                        CooldownGameplayEffectClass;                       // 0x1c0(0x8)
 	Class GameplayEffect*                                        CooldownGameplayEffect;                            // 0x1c8(0x8)
 	Struct GameplayTagQuery                                      CancelAbilitiesMatchingTagQuery;                   // 0x1d0(0x48)
@@ -119,7 +119,7 @@ public:
 	Class Actor*                                                 AvatarActor;                                       // 0x5d0(0x8)
 	Struct ActiveGameplayEffectsContainer                        ActiveGameplayEffects;                             // 0x5f0(0x368)
 	Struct ActiveGameplayCueContainer                            ActiveGameplayCues;                                // 0x958(0xc0)
-	TArray<Byte ActiveGameplayCues>                              BlockedAbilityBindings;                            // 0xb48(0x10)
+	TArray<Byte BlockedAbilityBindings>                          BlockedAbilityBindings;                            // 0xb48(0x10)
 };
 
 
@@ -149,7 +149,7 @@ public:
 	Struct FString                                               GlobalAttributeMetaDataTableName;                  // 0x98(0x10)
 	Struct FString                                               GlobalAttributeSetDefaultsTableName;               // 0xa8(0x10)
 	Struct StringAssetReference                                  GlobalGameplayCueManagerName;                      // 0xb8(0x10)
-	TArray<Str >                                                 GameplayCueNotifyPaths;                            // 0xc8(0x10)
+	TArray<Str GameplayCueNotifyPaths>                           GameplayCueNotifyPaths;                            // 0xc8(0x10)
 	Struct StringAssetReference                                  GameplayTagResponseTableName;                      // 0xd8(0x10)
 	Class GameplayTagReponseTable*                               GameplayTagResponseTable;                          // 0xe8(0x8)
 	bool                                                         PredictTargetGameplayEffects;                      // 0xf0(0x1)
@@ -445,7 +445,7 @@ public:
 	Class AnimMontage*                                           MontageToPlay;                                     // 0x448(0x8)
 	float                                                        PlayRate;                                          // 0x450(0x4)
 	struct FName                                                 SectionName;                                       // 0x454(0x8)
-	TArray<Class SectionName>                                    GameplayEffectClassesWhileAnimating;               // 0x460(0x10)
+	TArray<Class GameplayEffectClassesWhileAnimating>            GameplayEffectClassesWhileAnimating;               // 0x460(0x10)
 	TArray<class GameplayEffectsWhileAnimating*>                 GameplayEffectsWhileAnimating;                     // 0x470(0x10)
 };
 
@@ -468,7 +468,7 @@ public:
 class GameplayAbilitySet: public DataAsset
 {
 public:
-	TArray<Struct Radius>                                        Abilities;                                         // 0x28(0x10)
+	TArray<Struct GameplayAbilityBindInfo>                       Abilities;                                         // 0x28(0x10)
 };
 
 
@@ -532,7 +532,7 @@ public:
 	Class ObjectLibrary*                                         GameplayCueNotifyActorObjectLibrary;               // 0x30(0x8)
 	Class ObjectLibrary*                                         GameplayCueNotifyStaticObjectLibrary;              // 0x38(0x8)
 	Struct StreamableManager                                     StreamableManager;                                 // 0x40(0xc0)
-	TArray<Struct StreamableManager>                             PendingExecuteCues;                                // 0x160(0x10)
+	TArray<Struct GameplayCuePendingExecute>                     PendingExecuteCues;                                // 0x160(0x10)
 	int                                                          GameplayCueSendContextCount;                       // 0x170(0x4)
 };
 
@@ -574,7 +574,7 @@ public:
 class GameplayCueSet: public DataAsset
 {
 public:
-	TArray<Struct RelevantAttributesToCapture>                   GameplayCueData;                                   // 0x28(0x10)
+	TArray<Struct GameplayCueNotifyData>                         GameplayCueData;                                   // 0x28(0x10)
 };
 
 
@@ -589,7 +589,7 @@ public:
 class GameplayEffectCalculation: public Object
 {
 public:
-	TArray<Struct Execute>                                       RelevantAttributesToCapture;                       // 0x28(0x10)
+	TArray<Struct GameplayEffectAttributeCaptureDefinition>      RelevantAttributesToCapture;                       // 0x28(0x10)
 };
 
 
@@ -612,8 +612,8 @@ public:
 class GameplayEffectExtension: public Object
 {
 public:
-	TArray<Struct HealthRestoreGameplayEffect>                   RelevantSourceAttributes;                          // 0x28(0x10)
-	TArray<Struct RelevantSourceAttributes>                      RelevantTargetAttributes;                          // 0x38(0x10)
+	TArray<Struct GameplayAttribute>                             RelevantSourceAttributes;                          // 0x28(0x10)
+	TArray<Struct GameplayAttribute>                             RelevantTargetAttributes;                          // 0x38(0x10)
 };
 
 
@@ -652,7 +652,7 @@ public:
 class GameplayTagReponseTable: public DataAsset
 {
 public:
-	TArray<Struct GameView5>                                     Entries;                                           // 0x28(0x10)
+	TArray<Struct GameplayTagResponseTableEntry>                 Entries;                                           // 0x28(0x10)
 };
 
 

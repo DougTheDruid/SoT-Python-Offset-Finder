@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class LinkEndpointId: public None
+struct LinkEndpointId
 {
 public:
 	struct FName                                                 Raw;                                               // 0x0(0x8)

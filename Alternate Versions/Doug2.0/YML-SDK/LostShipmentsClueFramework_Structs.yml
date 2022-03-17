@@ -147,7 +147,7 @@ WeightedClueDescriptor:
   - Name: DifficultyWeightings
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float DifficultyWeightings>
   ClassSize: '0x18'
 WeightedClueDestinationDescriptor:
   Attributes:
@@ -158,7 +158,7 @@ WeightedClueDestinationDescriptor:
   - Name: DifficultyWeightings
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float DifficultyWeightings>
   ClassSize: '0x18'
 WeightedDebris:
   Attributes:

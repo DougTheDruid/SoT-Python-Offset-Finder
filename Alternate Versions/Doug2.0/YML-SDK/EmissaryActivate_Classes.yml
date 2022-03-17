@@ -17,7 +17,7 @@ BP_PromptActor_EmissaryActivated_AF_C:
   - Name: Prompts
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct UberGraphFrame>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
     Offset: '0x430'
     Size: '0x8'
@@ -43,7 +43,7 @@ BP_PromptActor_EmissaryActivated_GH_C:
   - Name: Prompts
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
     Offset: '0x430'
     Size: '0x8'
@@ -69,7 +69,7 @@ BP_PromptActor_EmissaryActivated_MA_C:
   - Name: Prompts
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
     Offset: '0x430'
     Size: '0x8'
@@ -95,7 +95,7 @@ BP_PromptActor_EmissaryActivated_OOS_C:
   - Name: Prompts
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
     Offset: '0x430'
     Size: '0x8'
@@ -121,7 +121,7 @@ BP_PromptActor_EmissaryActivated_RB_C:
   - Name: Prompts
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
     Offset: '0x430'
     Size: '0x8'

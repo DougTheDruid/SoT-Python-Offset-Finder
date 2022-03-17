@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xa0
-class InAppPurchaseProductInfo: public None
+struct InAppPurchaseProductInfo
 {
 public:
 	Struct FString                                               Identifier;                                        // 0x0(0x10)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x20
-class InAppPurchaseRestoreInfo: public None
+struct InAppPurchaseRestoreInfo
 {
 public:
 	Struct FString                                               Identifier;                                        // 0x0(0x10)
@@ -33,7 +33,7 @@ public:
 
 
 // Size 0x38
-class AchievementUpdatedEvent: public None
+struct AchievementUpdatedEvent
 {
 public:
 	Struct FString                                               AchievementId;                                     // 0x0(0x10)
@@ -44,7 +44,7 @@ public:
 
 
 // Size 0x18
-class NamedInterfaceDef: public None
+struct NamedInterfaceDef
 {
 public:
 	struct FName                                                 InterfaceName;                                     // 0x0(0x8)
@@ -53,7 +53,7 @@ public:
 
 
 // Size 0x10
-class NamedInterface: public None
+struct NamedInterface
 {
 public:
 	struct FName                                                 InterfaceName;                                     // 0x0(0x8)
@@ -62,7 +62,7 @@ public:
 
 
 // Size 0x90
-class OnlineStoreCatalogItem: public None
+struct OnlineStoreCatalogItem
 {
 public:
 	Struct FString                                               ProductId;                                         // 0x0(0x10)
@@ -74,12 +74,12 @@ public:
 	Struct DateTime                                              SaleEndDate;                                       // 0x58(0x8)
 	Struct FString                                               ImageUri;                                          // 0x60(0x10)
 	Struct FString                                               CurrencyCode;                                      // 0x70(0x10)
-	TArray<Str >                                                 MetaTags;                                          // 0x80(0x10)
+	TArray<Str MetaTags>                                         MetaTags;                                          // 0x80(0x10)
 };
 
 
 // Size 0x18
-class InAppPurchaseProductRequest: public None
+struct InAppPurchaseProductRequest
 {
 public:
 	Struct FString                                               ProductIdentifier;                                 // 0x0(0x10)

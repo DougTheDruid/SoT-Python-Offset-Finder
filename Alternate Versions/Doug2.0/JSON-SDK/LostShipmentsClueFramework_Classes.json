@@ -97,7 +97,7 @@
       },
       {
         "Name": "SupportedDestinationTypes",
-        "Type": "TArray<Class DescriptorType>",
+        "Type": "TArray<Class SupportedDestinationTypes>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -117,7 +117,7 @@
       },
       {
         "Name": "WeightedSupportedDescriptorTypes",
-        "Type": "TArray<Struct RequiredClueSiteDataType>",
+        "Type": "TArray<Struct WeightedClueDestinationDescriptor>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -131,7 +131,7 @@
     "Attributes": [
       {
         "Name": "CluesThatCanDescribeSites",
-        "Type": "TArray<Struct HasClueBeenGiven>",
+        "Type": "TArray<Struct ClueSiteTypeSupportedDescribedByEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -202,7 +202,7 @@
       },
       {
         "Name": "RestrictedClueTypes",
-        "Type": "TArray<Struct ChoiceStrategy>",
+        "Type": "TArray<Struct RestrictedClueType>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -237,7 +237,7 @@
     "Attributes": [
       {
         "Name": "ClueSiteLootRestrictions",
-        "Type": "TArray<Struct RankBasedDebrisDistribution>",
+        "Type": "TArray<Struct ClueSiteLootRestriction>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -251,7 +251,7 @@
     "Attributes": [
       {
         "Name": "RankBasedDebrisDistribution",
-        "Type": "TArray<Struct ContextProjectionPoint>",
+        "Type": "TArray<Struct DebrisToRangeDist>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -309,7 +309,7 @@
     "Attributes": [
       {
         "Name": "RankBasedLootDistribution",
-        "Type": "TArray<Struct LootItemSpawnRelativeLocations>",
+        "Type": "TArray<Struct LootToRangeDist>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -330,7 +330,7 @@
     "Attributes": [
       {
         "Name": "LootItemSpawnRelativeLocations",
-        "Type": "TArray<Struct ClueSiteTypes>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0xd0"
       }
@@ -344,7 +344,7 @@
     "Attributes": [
       {
         "Name": "ClueSiteTypes",
-        "Type": "TArray<Class SeaClueSiteTypes>",
+        "Type": "TArray<Class ClueSiteTypes>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -378,13 +378,13 @@
       },
       {
         "Name": "ClueSites",
-        "Type": "TArray<Struct Desc>",
+        "Type": "TArray<Struct ClueSite>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "DebugClueSiteIds",
-        "Type": "TArray<Struct SpawnedLoot>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -504,7 +504,7 @@
       },
       {
         "Name": "AllowedClueTypes",
-        "Type": "TArray<Class GeneratedClue>",
+        "Type": "TArray<Class AllowedClueTypes>",
         "Size": "0x10",
         "Offset": "0x100"
       },
@@ -873,7 +873,7 @@
     "Attributes": [
       {
         "Name": "Debris",
-        "Type": "TArray<Struct DestinationDescriptor>",
+        "Type": "TArray<Struct WeightedDebris>",
         "Size": "0x10",
         "Offset": "0x28"
       }

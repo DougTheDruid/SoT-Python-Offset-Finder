@@ -19,8 +19,8 @@ public:
 class DeliverBootyChecklistActionData: public ChecklistActionData
 {
 public:
-	TArray<AssetClass TargetAIClasses>                           TargetBootyTypes;                                  // 0x30(0x10)
-	TArray<Class TargetBootyTypes>                               TargetCompanies;                                   // 0x40(0x10)
+	TArray<AssetClass TargetBootyTypes>                          TargetBootyTypes;                                  // 0x30(0x10)
+	TArray<Class TargetCompanies>                                TargetCompanies;                                   // 0x40(0x10)
 };
 
 
@@ -28,7 +28,7 @@ public:
 class KillActorChecklistActionData: public ChecklistActionData
 {
 public:
-	TArray<Class EventsSource>                                   TargetAIClasses;                                   // 0x30(0x10)
+	TArray<Class TargetAIClasses>                                TargetAIClasses;                                   // 0x30(0x10)
 };
 
 
@@ -44,7 +44,7 @@ public:
 class NPCInteractionChecklistActionData: public ChecklistActionData
 {
 public:
-	TArray<Struct ChecklistItems>                                TargetNPCIds;                                      // 0x30(0x10)
+	TArray<Struct Guid>                                          TargetNPCIds;                                      // 0x30(0x10)
 };
 
 
@@ -52,7 +52,7 @@ public:
 class ChecklistItemsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct Afternote>                                     ChecklistItems;                                    // 0x28(0x10)
+	TArray<Struct ChecklistItem>                                 ChecklistItems;                                    // 0x28(0x10)
 };
 
 

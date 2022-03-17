@@ -330,31 +330,7 @@ OOSLetter_ExclusionEntitlement_Campaign038a_C:
   FullSize: '0xd8'
   InheritedSize: '0xd8'
   Super: EntitlementDesc
-RitualSkull_ExclusionEntitlement_Campaign031_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xd8'
-  InheritedSize: '0xd8'
-  Super: EntitlementDesc
-RitualSkull_ExclusionEntitlement_Campaign032_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xd8'
-  InheritedSize: '0xd8'
-  Super: EntitlementDesc
-RitualSkull_ExclusionEntitlement_Campaign033_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xd8'
-  InheritedSize: '0xd8'
-  Super: EntitlementDesc
 SDLetter_ExclusionEntitlement_Campaign030_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xd8'
-  InheritedSize: '0xd8'
-  Super: EntitlementDesc
-SDLetter_ExclusionEntitlement_Campaign031_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xd8'

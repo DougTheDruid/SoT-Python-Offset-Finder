@@ -53,7 +53,7 @@ MysteriousNotesCompletionEventsModelDataAsset:
   - Name: MysteriousNoteCompletionEvents
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct NotificationBackground>
+    Type: TArray<Struct MysteriousNotesCompletionEventsModel>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -175,7 +175,7 @@ WieldableMysteriousNoteLayout:
   - Name: NoteLayoutItems
     Offset: '0x168'
     Size: '0x10'
-    Type: TArray<Struct DefaultNoteLayoutItem>
+    Type: TArray<Struct WieldableMysteriousNoteLayoutItem>
   ClassSize: '0x150'
   FullSize: '0x178'
   InheritedSize: '0x28'

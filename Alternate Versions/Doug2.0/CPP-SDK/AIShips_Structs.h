@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x48
-class AIShipBattleParams: public None
+struct AIShipBattleParams
 {
 public:
 	Struct FText                                                 Name;                                              // 0x0(0x38)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x34
-class ShipMovementParams: public None
+struct ShipMovementParams
 {
 public:
 	float                                                        MinTargetDistanceForMovement;                      // 0x0(0x4)
@@ -37,7 +37,7 @@ public:
 
 
 // Size 0x18
-class TrackingNoiseGenerator: public None
+struct TrackingNoiseGenerator
 {
 public:
 	Class CurveFloat*                                            ParallelOffsetCurve;                               // 0x0(0x8)
@@ -46,7 +46,7 @@ public:
 
 
 // Size 0x20
-class WeightedAIShipCrewAmmoType: public None
+struct WeightedAIShipCrewAmmoType
 {
 public:
 	int                                                          Weight;                                            // 0x0(0x4)
@@ -55,7 +55,7 @@ public:
 
 
 // Size 0x18
-class AIShipCrewAmmoType: public None
+struct AIShipCrewAmmoType
 {
 public:
 	byte                                                         IconType;                                          // 0x0(0x1)
@@ -64,7 +64,7 @@ public:
 
 
 // Size 0x28
-class WeightedAIShipCrewFormType: public None
+struct WeightedAIShipCrewFormType
 {
 public:
 	int                                                          Weight;                                            // 0x0(0x4)
@@ -73,7 +73,7 @@ public:
 
 
 // Size 0x20
-class AIShipCrewFormType: public None
+struct AIShipCrewFormType
 {
 public:
 	byte                                                         IconType;                                          // 0x0(0x1)
@@ -83,7 +83,7 @@ public:
 
 
 // Size 0x14
-class AIShipContextDescDamageParams: public None
+struct AIShipContextDescDamageParams
 {
 public:
 	float                                                        OverrideRainFillRate;                              // 0x0(0x4)
@@ -95,7 +95,7 @@ public:
 
 
 // Size 0x10
-class AIShipSailData: public None
+struct AIShipSailData
 {
 public:
 	Struct Color                                                 SailRGB;                                           // 0x0(0x4)
@@ -106,7 +106,7 @@ public:
 
 
 // Size 0x20
-class AIShipEncounterParamsSpawnerData: public None
+struct AIShipEncounterParamsSpawnerData
 {
 public:
 	Class AISpawner*                                             Spawner;                                           // 0x0(0x8)
@@ -121,7 +121,7 @@ public:
 
 
 // Size 0x80
-class AIShipContextDescGenerationParams: public None
+struct AIShipContextDescGenerationParams
 {
 public:
 	Struct AIShipContextDescGenerationSharedParams               SharedParams;                                      // 0x0(0x60)
@@ -131,31 +131,31 @@ public:
 
 
 // Size 0x30
-class AIShipContextDescGenerationShipSpecificParams: public None
+struct AIShipContextDescGenerationShipSpecificParams
 {
 public:
 	class                                                        ShipSize;                                          // 0x0(0x8)
 	Class ShipDescAsset*                                         ShipDesc;                                          // 0x8(0x8)
 	TArray<Struct AIShipGenerationParams>                        ShipGenerationParams;                              // 0x10(0x10)
-	TArray<Struct ShipGenerationParams>                          SpawnerTemplates;                                  // 0x20(0x10)
+	TArray<Struct AIShipEncounterParamsSpawnerData>              SpawnerTemplates;                                  // 0x20(0x10)
 };
 
 
 // Size 0x48
-class AIShipGenerationParams: public None
+struct AIShipGenerationParams
 {
 public:
 	byte                                                         EncounterType;                                     // 0x0(0x1)
 	byte                                                         ShipType;                                          // 0x1(0x1)
 	Class AthenaAIShipControllerParamsDataAsset*                 ShipControllerParams;                              // 0x8(0x8)
 	TArray<Struct AIShipSkeletonSkillsetOverride>                SkillsetOverrides;                                 // 0x10(0x10)
-	TArray<Struct SkillsetOverrides>                             SkeletonAmmoTypeOverrides;                         // 0x20(0x10)
+	TArray<Struct WeightedAIShipCrewAmmoType>                    SkeletonAmmoTypeOverrides;                         // 0x20(0x10)
 	Struct AIShipContextDescDamageParams                         DamageParams;                                      // 0x30(0x14)
 };
 
 
 // Size 0x18
-class AIShipSkeletonSkillsetOverride: public None
+struct AIShipSkeletonSkillsetOverride
 {
 public:
 	struct FName                                                 SpawnLocationType;                                 // 0x0(0x8)
@@ -164,20 +164,20 @@ public:
 
 
 // Size 0x60
-class AIShipContextDescGenerationSharedParams: public None
+struct AIShipContextDescGenerationSharedParams
 {
 public:
-	TArray<Byte SharedParams>                                    EncounterTypes;                                    // 0x0(0x10)
-	TArray<Struct EncounterTypes>                                SkeletonForms;                                     // 0x10(0x10)
-	TArray<Struct SkeletonForms>                                 SkeletonAmmoTypes;                                 // 0x20(0x10)
-	TArray<Struct SkeletonAmmoTypes>                             SailColours;                                       // 0x30(0x10)
+	TArray<Byte EncounterTypes>                                  EncounterTypes;                                    // 0x0(0x10)
+	TArray<Struct WeightedAIShipCrewFormType>                    SkeletonForms;                                     // 0x10(0x10)
+	TArray<Struct WeightedAIShipCrewAmmoType>                    SkeletonAmmoTypes;                                 // 0x20(0x10)
+	TArray<Struct Color>                                         SailColours;                                       // 0x30(0x10)
 	TArray<Struct AIShipCaptainParams>                           Captains;                                          // 0x40(0x10)
-	TArray<Class Captains>                                       CaptainGenders;                                    // 0x50(0x10)
+	TArray<Class CaptainGenders>                                 CaptainGenders;                                    // 0x50(0x10)
 };
 
 
 // Size 0x10
-class AIShipCaptainParams: public None
+struct AIShipCaptainParams
 {
 public:
 	class                                                        AIClassId;                                         // 0x0(0x8)
@@ -186,7 +186,7 @@ public:
 
 
 // Size 0x10
-class AIShipSingleWaveEncounterDescGenerationParams: public None
+struct AIShipSingleWaveEncounterDescGenerationParams
 {
 public:
 	TArray<Struct AIShipClassWeightedSizes>                      ShipClassWeightedSizes;                            // 0x0(0x10)
@@ -194,7 +194,7 @@ public:
 
 
 // Size 0x18
-class AIShipClassWeightedSizes: public None
+struct AIShipClassWeightedSizes
 {
 public:
 	class                                                        TargetShipSize;                                    // 0x0(0x8)
@@ -203,7 +203,7 @@ public:
 
 
 // Size 0x18
-class AIShipWeightedSize: public None
+struct AIShipWeightedSize
 {
 public:
 	struct FName                                                 Feature;                                           // 0x0(0x8)
@@ -213,7 +213,7 @@ public:
 
 
 // Size 0x28
-class AIShipBattleEncounterDescGenerationParams: public None
+struct AIShipBattleEncounterDescGenerationParams
 {
 public:
 	bool                                                         EnableHardShip;                                    // 0x0(0x1)
@@ -223,7 +223,7 @@ public:
 
 
 // Size 0x10
-class AIShipEncounterBattleDesc: public None
+struct AIShipEncounterBattleDesc
 {
 public:
 	TArray<Struct AIShipEncounterWaveDesc>                       WaveDescs;                                         // 0x0(0x10)
@@ -231,15 +231,15 @@ public:
 
 
 // Size 0x10
-class AIShipEncounterWaveDesc: public None
+struct AIShipEncounterWaveDesc
 {
 public:
-	TArray<Class BattleGenerationParams>                         ShipSizes;                                         // 0x0(0x10)
+	TArray<Class ShipSizes>                                      ShipSizes;                                         // 0x0(0x10)
 };
 
 
 // Size 0x78
-class FeatureLockedAIShipEncounterBattleGenerationParams: public None
+struct FeatureLockedAIShipEncounterBattleGenerationParams
 {
 public:
 	struct FName                                                 Feature;                                           // 0x0(0x8)
@@ -248,7 +248,7 @@ public:
 
 
 // Size 0x60
-class AIShipEncounterBattleGenerationParams: public None
+struct AIShipEncounterBattleGenerationParams
 {
 public:
 	class                                                        HardShipType;                                      // 0x0(0x8)
@@ -256,12 +256,12 @@ public:
 	Struct Int32Range                                            MinMaxNumberOfShips;                               // 0x28(0x10)
 	int                                                          MinNumberOfShipsInFinalWave;                       // 0x38(0x4)
 	TArray<Struct AIShipSizeLimit>                               ShipSizeLimits;                                    // 0x40(0x10)
-	TArray<Struct ShipSizeLimits>                                WaveConfigurations;                                // 0x50(0x10)
+	TArray<Struct AIShipEncounterWaveDesc>                       WaveConfigurations;                                // 0x50(0x10)
 };
 
 
 // Size 0x10
-class AIShipSizeLimit: public None
+struct AIShipSizeLimit
 {
 public:
 	class                                                        ShipSize;                                          // 0x0(0x8)
@@ -270,7 +270,7 @@ public:
 
 
 // Size 0xa0
-class RelativeSpawnLocationGeneratorParams: public None
+struct RelativeSpawnLocationGeneratorParams
 {
 public:
 	TArray<Struct WeightedSpawnDirection>                        SpawnDirections;                                   // 0x0(0x10)
@@ -278,7 +278,7 @@ public:
 
 
 // Size 0xb0
-class WeightedSpawnDirection: public None
+struct WeightedSpawnDirection
 {
 public:
 	float                                                        DirectionAngle;                                    // 0x0(0x4)
@@ -289,7 +289,7 @@ public:
 
 
 // Size 0x40
-class WeightedSpawnOffset: public None
+struct WeightedSpawnOffset
 {
 public:
 	float                                                        MinSpawnDistance;                                  // 0x0(0x4)
@@ -300,7 +300,7 @@ public:
 
 
 // Size 0x18
-class AIShipEncounterParams: public None
+struct AIShipEncounterParams
 {
 public:
 	float                                                        MinEngagedDistanceFromPlayers;                     // 0x0(0x4)
@@ -309,7 +309,7 @@ public:
 
 
 // Size 0x10
-class ShipTypeAIShipEncounterParams: public None
+struct ShipTypeAIShipEncounterParams
 {
 public:
 	class                                                        ShipSize;                                          // 0x0(0x8)
@@ -318,7 +318,7 @@ public:
 
 
 // Size 0x10
-class AIShipEncounterWave: public None
+struct AIShipEncounterWave
 {
 public:
 	TArray<class AIShipsInWave*>                                 AIShipsInWave;                                     // 0x0(0x10)
@@ -326,7 +326,7 @@ public:
 
 
 // Size 0x80
-class CursedSailsBattleParams: public None
+struct CursedSailsBattleParams
 {
 public:
 	Struct FText                                                 Name;                                              // 0x0(0x38)
@@ -338,7 +338,7 @@ public:
 
 
 // Size 0x10
-class AIShipDespawnedEvent: public None
+struct AIShipDespawnedEvent
 {
 public:
 	Class Actor*                                                 Ship;                                              // 0x0(0x8)
@@ -347,7 +347,7 @@ public:
 
 
 // Size 0x40
-class AIShipSpawnedEvent: public None
+struct AIShipSpawnedEvent
 {
 public:
 	Class Ship*                                                  Ship;                                              // 0x0(0x8)
@@ -359,21 +359,21 @@ public:
 
 
 // Size 0x10
-class AIShipSinkNetworkEvent: public None
+struct AIShipSinkNetworkEvent
 {
 public:
 };
 
 
 // Size 0x10
-class AIShipSpawnedNetworkEvent: public None
+struct AIShipSpawnedNetworkEvent
 {
 public:
 };
 
 
 // Size 0x18
-class AIShipEncounterCompleteNetEvent: public None
+struct AIShipEncounterCompleteNetEvent
 {
 public:
 	int                                                          BattleIdx;                                         // 0x10(0x4)
@@ -383,7 +383,7 @@ public:
 
 
 // Size 0x20
-class AIShipEncounterRevealNetEvent: public None
+struct AIShipEncounterRevealNetEvent
 {
 public:
 	int                                                          BattleIdx;                                         // 0x10(0x4)
@@ -394,7 +394,7 @@ public:
 
 
 // Size 0x80
-class AIShipEncounterNotification: public None
+struct AIShipEncounterNotification
 {
 public:
 	Struct FText                                                 BattleName;                                        // 0x0(0x38)
@@ -406,14 +406,14 @@ public:
 
 
 // Size 0x10
-class AIShipEncounterZoneExitedNetworkEvent: public None
+struct AIShipEncounterZoneExitedNetworkEvent
 {
 public:
 };
 
 
 // Size 0x20
-class AIShipEncounterZoneEnteredNetworkEvent: public None
+struct AIShipEncounterZoneEnteredNetworkEvent
 {
 public:
 	int                                                          RemainingAIShips;                                  // 0x10(0x4)
@@ -423,7 +423,7 @@ public:
 
 
 // Size 0x18
-class AIShipWorldSettings: public None
+struct AIShipWorldSettings
 {
 public:
 	TArray<Struct FeatureLockedAIShipBattles>                    FeatureToggledBattlesData;                         // 0x0(0x10)
@@ -432,7 +432,7 @@ public:
 
 
 // Size 0x10
-class FeatureLockedAIShipBattles: public None
+struct FeatureLockedAIShipBattles
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x0(0x8)
@@ -441,7 +441,7 @@ public:
 
 
 // Size 0x48
-class AIShipDamagedTelemetryEvent: public None
+struct AIShipDamagedTelemetryEvent
 {
 public:
 	Struct FString                                               DamageType;                                        // 0x0(0x10)
@@ -453,7 +453,7 @@ public:
 
 
 // Size 0x18
-class AIShipDespawnTelemetryEvent: public None
+struct AIShipDespawnTelemetryEvent
 {
 public:
 	Struct FString                                               AIShipId;                                          // 0x0(0x10)
@@ -462,7 +462,7 @@ public:
 
 
 // Size 0x68
-class AIShipSpawnTelemetryEvent: public None
+struct AIShipSpawnTelemetryEvent
 {
 public:
 	Struct FString                                               AIShipId;                                          // 0x0(0x10)

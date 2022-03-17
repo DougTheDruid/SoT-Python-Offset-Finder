@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x54
-class LiquidTypeParams: public None
+struct LiquidTypeParams
 {
 public:
 	byte                                                         LiquidType;                                        // 0x0(0x1)

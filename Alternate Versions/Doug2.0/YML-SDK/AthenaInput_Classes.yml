@@ -17,7 +17,7 @@ NamedNotificationInputComponent:
   - Name: NotificationInputDisplayNames
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct PushCharacterIntoDeadActionState>
+    Type: TArray<Struct NotificationInputDisplayName>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'

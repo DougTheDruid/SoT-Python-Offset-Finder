@@ -14,43 +14,43 @@
     "Attributes": [
       {
         "Name": "MessagesReplicated",
-        "Type": "TArray<Struct SphereList>",
+        "Type": "TArray<Struct DrawDebugItemMessage>",
         "Size": "0x10",
         "Offset": "0x3d8"
       },
       {
         "Name": "SpheresReplicated",
-        "Type": "TArray<Struct MessagesReplicated>",
+        "Type": "TArray<Struct DrawDebugItemSphere>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
       {
         "Name": "BoxesReplicated",
-        "Type": "TArray<Struct SpheresReplicated>",
+        "Type": "TArray<Struct DrawDebugItemBox>",
         "Size": "0x10",
         "Offset": "0x3f8"
       },
       {
         "Name": "CapsulesReplicated",
-        "Type": "TArray<Struct BoxesReplicated>",
+        "Type": "TArray<Struct DrawDebugItemCapsule>",
         "Size": "0x10",
         "Offset": "0x408"
       },
       {
         "Name": "LinesReplicated",
-        "Type": "TArray<Struct CapsulesReplicated>",
+        "Type": "TArray<Struct DrawDebugItemLine>",
         "Size": "0x10",
         "Offset": "0x418"
       },
       {
         "Name": "SectorsReplicated",
-        "Type": "TArray<Struct LinesReplicated>",
+        "Type": "TArray<Struct DrawDebugItemSector>",
         "Size": "0x10",
         "Offset": "0x428"
       },
       {
         "Name": "StringsReplicated",
-        "Type": "TArray<Struct SectorsReplicated>",
+        "Type": "TArray<Struct DrawDebugItemString>",
         "Size": "0x10",
         "Offset": "0x438"
       },
@@ -70,7 +70,7 @@
     "Attributes": [
       {
         "Name": "SphereList",
-        "Type": "TArray<Struct Id>",
+        "Type": "TArray<Struct SphereData>",
         "Size": "0x10",
         "Offset": "0x3d0"
       }
@@ -91,7 +91,7 @@
     "Attributes": [
       {
         "Name": "OutputRingBuffer",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str OutputRingBuffer>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },

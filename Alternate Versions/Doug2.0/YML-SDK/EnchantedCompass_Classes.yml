@@ -27,11 +27,11 @@ MultiTargetEnchantedCompass:
   - Name: Locations
     Offset: '0x870'
     Size: '0x10'
-    Type: TArray<Struct BP_GetTargetLocations>
+    Type: TArray<Struct Vector>
   - Name: LocationIds
     Offset: '0x880'
     Size: '0x10'
-    Type: TArray<Struct Locations>
+    Type: TArray<Struct Guid>
   - Name: InventoryItem
     Offset: '0x890'
     Size: '0x8'

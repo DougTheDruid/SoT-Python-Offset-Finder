@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x128
-class SplashProbe: public None
+struct SplashProbe
 {
 public:
 	Struct WaterSplashProbe                                      Probe;                                             // 0x8(0xd8)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0xd8
-class WaterSplashProbe: public None
+struct WaterSplashProbe
 {
 public:
 	Struct FString                                               ProbeDebugName;                                    // 0x8(0x10)
@@ -43,7 +43,7 @@ public:
 
 
 // Size 0x10
-class WaterInformation: public None
+struct WaterInformation
 {
 public:
 	class                                                        WaterType;                                         // 0x0(0x8)
@@ -52,16 +52,16 @@ public:
 
 
 // Size 0x18
-class WaterSplashProbesContainer: public None
+struct WaterSplashProbesContainer
 {
 public:
-	TArray<Struct WaterBuoyancy>                                 Probes;                                            // 0x0(0x10)
+	TArray<Struct WaterSplashProbe>                              Probes;                                            // 0x0(0x10)
 	float                                                        ProbeSamplingTime;                                 // 0x10(0x4)
 };
 
 
 // Size 0x130
-class WaterBuoyancy: public None
+struct WaterBuoyancy
 {
 public:
 	Class PrimitiveComponent*                                    PrimitiveComponent;                                // 0x0(0x8)
@@ -76,7 +76,7 @@ public:
 
 
 // Size 0x90
-class BuoyancyDragSample: public None
+struct BuoyancyDragSample
 {
 public:
 	Struct Vector                                                Offset;                                            // 0x0(0xc)
@@ -89,7 +89,7 @@ public:
 
 
 // Size 0x58
-class BuoyancyVolumeSample: public None
+struct BuoyancyVolumeSample
 {
 public:
 	Struct Vector                                                Offset;                                            // 0x0(0xc)
@@ -108,7 +108,7 @@ public:
 
 
 // Size 0x68
-class BuoyancySampleMovement: public None
+struct BuoyancySampleMovement
 {
 public:
 	TArray<Struct BuoyancySampleMovementConfiguration>           Configurations;                                    // 0x0(0x10)
@@ -118,7 +118,7 @@ public:
 
 
 // Size 0x38
-class BuoyancySampleMovementConfiguration: public None
+struct BuoyancySampleMovementConfiguration
 {
 public:
 	Class CurveVector*                                           CenterOfMassOffsetCurve;                           // 0x0(0x8)
@@ -131,7 +131,7 @@ public:
 
 
 // Size 0x18
-class BuoyancySampleMovementConfigurationEntry: public None
+struct BuoyancySampleMovementConfigurationEntry
 {
 public:
 	Struct Vector                                                SampleOffset;                                      // 0x0(0xc)
@@ -140,7 +140,7 @@ public:
 
 
 // Size 0x70
-class WaterSpout: public None
+struct WaterSpout
 {
 public:
 	Struct Transform                                             SpoutLocatorTransform;                             // 0x0(0x30)
@@ -150,7 +150,7 @@ public:
 
 
 // Size 0x10
-class EventCurrentWaterPlaneChange: public None
+struct EventCurrentWaterPlaneChange
 {
 public:
 	Class BaseWaterComponent*                                    FormerWaterPlane;                                  // 0x0(0x8)
@@ -159,21 +159,21 @@ public:
 
 
 // Size 0x1
-class EventLeftWaterExclusionZone: public None
+struct EventLeftWaterExclusionZone
 {
 public:
 };
 
 
 // Size 0x1
-class EventEnteredWaterExclusionZone: public None
+struct EventEnteredWaterExclusionZone
 {
 public:
 };
 
 
 // Size 0x1c
-class FFTWaterQueryResult: public None
+struct FFTWaterQueryResult
 {
 public:
 	float                                                        Height;                                            // 0x0(0x4)

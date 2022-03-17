@@ -35,7 +35,7 @@
     "Attributes": [
       {
         "Name": "WindZones",
-        "Type": "TArray<Interface GetWindAtLocation>",
+        "Type": "TArray<Interface WindZones>",
         "Size": "0x10",
         "Offset": "0x58"
       }
@@ -81,13 +81,13 @@
       },
       {
         "Name": "WindZones",
-        "Type": "TArray<Interface CurrentWindMagnitude>",
+        "Type": "TArray<Interface WindZones>",
         "Size": "0x10",
         "Offset": "0x4e8"
       },
       {
         "Name": "ExtraWind",
-        "Type": "TArray<Struct WindZones>",
+        "Type": "TArray<Struct ExtraWind>",
         "Size": "0x10",
         "Offset": "0x4f8"
       }

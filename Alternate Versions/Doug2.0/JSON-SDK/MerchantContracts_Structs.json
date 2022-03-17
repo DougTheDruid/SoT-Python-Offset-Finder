@@ -85,7 +85,7 @@
     "Attributes": [
       {
         "Name": "DeliveryRequests",
-        "Type": "TArray<Struct MerchantMapLayoutItem>",
+        "Type": "TArray<Struct MerchantContractDeliveryRequest>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -108,7 +108,7 @@
       },
       {
         "Name": "Requests",
-        "Type": "TArray<Struct IslandName>",
+        "Type": "TArray<Struct MerchantContractDeliveryRequest>",
         "Size": "0x10",
         "Offset": "0x18"
       }

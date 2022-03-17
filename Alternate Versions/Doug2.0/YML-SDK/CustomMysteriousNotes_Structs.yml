@@ -24,7 +24,7 @@ CustomPlayerNoteList:
   - Name: Notes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct EnchantedCompassTarget>
+    Type: TArray<Struct NotesRemoteServiceNoteDetailModel>
   ClassSize: '0x10'
 DestroyMysteriousNoteData:
   Attributes:

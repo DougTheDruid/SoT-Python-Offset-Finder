@@ -96,25 +96,25 @@
       },
       {
         "Name": "SpecialEvents",
-        "Type": "TArray<Struct ActionType>",
+        "Type": "TArray<Struct CoordinatedKrakenSpecialEvent>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "TentacleActions",
-        "Type": "TArray<Struct SpecialEvents>",
+        "Type": "TArray<Struct CoordinatedKrakenTentacleAction>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "HeadActions",
-        "Type": "TArray<Struct TentacleActions>",
+        "Type": "TArray<Struct CoordinatedKrakenHeadAction>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "ExplosionEvents",
-        "Type": "TArray<Struct HeadActions>",
+        "Type": "TArray<Struct CoordinatedKrakenExplosionEvent>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -810,7 +810,7 @@
     "Attributes": [
       {
         "Name": "Near",
-        "Type": "TArray<Struct PortTentacleHeadLocations>",
+        "Type": "TArray<Struct KrakenShipWrappingBehaviourNamedTransform>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -885,7 +885,7 @@
       },
       {
         "Name": "TentacleLocations",
-        "Type": "TArray<Struct TentacleHealthRange>",
+        "Type": "TArray<Struct KrakenShipWrappingBehaviourNamedTransform>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -973,7 +973,7 @@
       },
       {
         "Name": "TentaclesRequiredToDismissKraken",
-        "Type": "TArray<Struct NumberOfTentaclesToSpawn>",
+        "Type": "TArray<Struct KrakenTentaclesChanceParams>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -1051,7 +1051,7 @@
       },
       {
         "Name": "Behaviours",
-        "Type": "TArray<Struct ShipInteractingBehaviourWeights>",
+        "Type": "TArray<Struct KrakenBehaviourParams>",
         "Size": "0x10",
         "Offset": "0x148"
       },
@@ -1557,7 +1557,7 @@
       },
       {
         "Name": "ValidShipTypes",
-        "Type": "TArray<Class Feature>",
+        "Type": "TArray<Class ValidShipTypes>",
         "Size": "0x10",
         "Offset": "0x8"
       },

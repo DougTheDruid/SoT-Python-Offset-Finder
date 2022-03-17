@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x70
-class LightPropagationVolumeSettings: public None
+struct LightPropagationVolumeSettings
 {
 public:
 	bool                                                         bOverride_LPVIntensity;                            // 0x0(0x1)

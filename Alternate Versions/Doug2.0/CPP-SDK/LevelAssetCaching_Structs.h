@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x28
-class WorldRegionSetup: public None
+struct WorldRegionSetup
 {
 public:
 	Struct Vector2D                                              WorldBoundsOrigin;                                 // 0x0(0x8)

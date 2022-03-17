@@ -43,7 +43,7 @@
       },
       {
         "Name": "AdditionalMetadata",
-        "Type": "TArray<Struct RequiresServices>",
+        "Type": "TArray<Struct TestLevelMetadataEntry>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
@@ -73,25 +73,25 @@
       },
       {
         "Name": "VerboseLogCategories",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str VerboseLogCategories>",
         "Size": "0x10",
         "Offset": "0x408"
       },
       {
         "Name": "ClientsRunning",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int ClientsRunning>",
         "Size": "0x10",
         "Offset": "0x418"
       },
       {
         "Name": "ClientIds",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int ClientIds>",
         "Size": "0x10",
         "Offset": "0x428"
       },
       {
         "Name": "ClientPawns",
-        "Type": "TArray<Struct ClientIds>",
+        "Type": "TArray<Struct ClientPawnDetails>",
         "Size": "0x10",
         "Offset": "0x438"
       },
@@ -229,13 +229,13 @@
     "Attributes": [
       {
         "Name": "SpecificTexturesToNotAudit",
-        "Type": "TArray<Struct ForwardSettingMap>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "TextureDirectoriesToNotAudit",
-        "Type": "TArray<Struct SpecificTexturesToNotAudit>",
+        "Type": "TArray<Struct DirectoryPath>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -247,7 +247,7 @@
       },
       {
         "Name": "PerTextureGroupPropertiesOverrides",
-        "Type": "TArray<Struct DefaultTextureProperties>",
+        "Type": "TArray<Struct TextureAuditorGroupProperties>",
         "Size": "0x10",
         "Offset": "0x78"
       }

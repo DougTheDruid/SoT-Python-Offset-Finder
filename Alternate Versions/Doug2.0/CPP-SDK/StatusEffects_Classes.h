@@ -31,7 +31,7 @@ public:
 class AppliedStatusToSelfStatCondition: public TargetedStatCondition
 {
 public:
-	TArray<Class CanReceiveBuff>                                 Status;                                            // 0x30(0x10)
+	TArray<Class Status>                                         Status;                                            // 0x30(0x10)
 	byte                                                         ComparisonMode;                                    // 0x40(0x1)
 };
 
@@ -55,8 +55,8 @@ public:
 class DebugMenuStatusDataAsset: public DataAsset
 {
 public:
-	TArray<Struct OnStatusDelayEnd>                              StatusDefinitions;                                 // 0x28(0x10)
-	TArray<Float >                                               Durations;                                         // 0x38(0x10)
+	TArray<Struct DebugMenuStatusDefinition>                     StatusDefinitions;                                 // 0x28(0x10)
+	TArray<Float Durations>                                      Durations;                                         // 0x38(0x10)
 };
 
 
@@ -65,7 +65,7 @@ class StatusEffectOverlapZone: public Actor
 {
 public:
 	Class BoxComponent*                                          CollisionMesh;                                     // 0x478(0x8)
-	TArray<Struct CollisionMesh>                                 StatusesToApplyOnOverlap;                          // 0x480(0x10)
+	TArray<Struct DelayedStatusEffect>                           StatusesToApplyOnOverlap;                          // 0x480(0x10)
 	bool                                                         StartActive;                                       // 0x490(0x1)
 };
 
@@ -121,7 +121,7 @@ class StatusResponseAsset: public DataAsset
 {
 public:
 	Struct FText                                                 HighFrequencyTriggerStatusHelper;                  // 0x28(0x38)
-	TArray<Class HighFrequencyTriggerStatusHelper>               TriggerStatus;                                     // 0x60(0x10)
+	TArray<Class TriggerStatus>                                  TriggerStatus;                                     // 0x60(0x10)
 	TArray<class Responses*>                                     Responses;                                         // 0x70(0x10)
 };
 
@@ -131,7 +131,7 @@ class StatusRecipientResponseList: public DataAsset
 {
 public:
 	TArray<class ResponseAssets*>                                ResponseAssets;                                    // 0x28(0x10)
-	TArray<Struct ResponseAssets>                                FeatureToggledResponseLists;                       // 0x38(0x10)
+	TArray<Struct FeatureToggledStatusResponseList>              FeatureToggledResponseLists;                       // 0x38(0x10)
 	TArray<class FinalResponseAssets*>                           FinalResponseAssets;                               // 0x48(0x10)
 };
 
@@ -141,7 +141,7 @@ class LightWeightStatusEffectManagerComponent: public ActorComponent
 {
 public:
 	Class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xe8(0x8)
-	TArray<Struct RecipientResponseList>                         ActiveEffects;                                     // 0xf0(0x10)
+	TArray<Struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf0(0x10)
 };
 
 
@@ -212,7 +212,7 @@ class StatusEffectManagerComponent: public ActorComponent
 {
 public:
 	Class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xf0(0x8)
-	TArray<Struct RecipientResponseList>                         ActiveEffects;                                     // 0xf8(0x10)
+	TArray<Struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf8(0x10)
 };
 
 
@@ -243,7 +243,7 @@ class StatusEffectVolumeComponent: public SceneComponent
 {
 public:
 	bool                                                         UseOverlapEventsFromParentComponent;               // 0x2d0(0x1)
-	TArray<Struct UseOverlapEventsFromParentComponent>           StatusEffectsToMaintain;                           // 0x2d8(0x10)
+	TArray<Struct Status>                                        StatusEffectsToMaintain;                           // 0x2d8(0x10)
 };
 
 

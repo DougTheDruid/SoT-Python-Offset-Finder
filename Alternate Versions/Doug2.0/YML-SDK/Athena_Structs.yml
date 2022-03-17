@@ -192,7 +192,7 @@ AchievementRemoteServiceLogTelemetry:
   - Name: LogLines
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str LogLines>
   ClassSize: '0x30'
 AchievementSailCloseToShipWithoutFiring:
   Attributes:
@@ -458,7 +458,7 @@ AddStatusesData:
   - Name: Statuses
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Statuses>
   ClassSize: '0x18'
 AddWaterToVaultData:
   Attributes:
@@ -503,11 +503,11 @@ AdditionalCaptainTarget:
   - Name: CrewStatsToFireWhenDefeated
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct NameplateOverride>
+    Type: TArray<Struct PlayerStat>
   - Name: AllianceStatsToFireWhenDefeated
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct CrewStatsToFireWhenDefeated>
+    Type: TArray<Struct PlayerStat>
   - Name: IsUsingDialogue
     Offset: '0xb8'
     Size: '0x1'
@@ -627,7 +627,7 @@ AggressiveGhostShipDifficultyShipSizeTargetSelection:
   - Name: TargetSelection
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ShipSize>
+    Type: TArray<Struct AggressiveGhostShipDifficultyTargetSelection>
   ClassSize: '0x18'
 AggressiveGhostShipDifficultyTargetSelection:
   Attributes:
@@ -724,7 +724,7 @@ AggressiveGhostShipEncounterShipDesc:
   - Name: StatsToFireOnDeath
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct Locations>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x48'
 AggressiveGhostShipEncounterStartFromTaleTelemetryEvent:
   Attributes:
@@ -863,7 +863,7 @@ AggressiveGhostShipFixedSpline:
   - Name: Offsets
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Offsets>
   ClassSize: '0x18'
 AggressiveGhostShipLocationEntryDesc:
   Attributes:
@@ -881,7 +881,7 @@ AggressiveGhostShipMineFormation:
   - Name: OffsetsInMetres
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct NumMinesInFormation>
+    Type: TArray<Struct Vector2D>
   ClassSize: '0x10'
 AggressiveGhostShipMineFormationOptions:
   Attributes:
@@ -996,7 +996,7 @@ AggressiveGhostShipSpawnedRewardsTelemetryEvent:
   - Name: RewardTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str RewardTypes>
   - Name: ShipId
     Offset: '0x10'
     Size: '0x10'
@@ -1053,7 +1053,7 @@ AggressiveGhostShipSplineDataVariables:
   - Name: SplineOffsets
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float SplineOffsets>
   - Name: CentrePoint
     Offset: '0x20'
     Size: '0xc'
@@ -1201,7 +1201,7 @@ Alliance:
   - Name: Crews
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct AllianceId>
+    Type: TArray<Struct Guid>
   - Name: AllianceIndex
     Offset: '0x20'
     Size: '0x1'
@@ -1283,7 +1283,7 @@ AllianceRewardRequestEvent:
   - Name: SecondaryRecipients
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct PrimaryRecipient>
+    Type: TArray<Struct RewardRequestCrewGame>
   - Name: RewardId
     Offset: '0x60'
     Size: '0x8'
@@ -1696,14 +1696,14 @@ ArmoryItemEntitlementsUpdatedEvent:
   - Name: ItemEntitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RequestArmoryItemLoadoutEvent>
+    Type: TArray<Struct ChestEntitlementViewModel>
   ClassSize: '0x10'
 ArmoryItemLoadoutUpdatedEvent:
   Attributes:
   - Name: ItemLoadout
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ArmoryItemEntitlementsUpdatedEvent>
+    Type: TArray<Struct ChestTabViewModel>
   ClassSize: '0x10'
 AshenLordEncounterServiceDesc:
   Attributes: []
@@ -1758,7 +1758,7 @@ AshenWindsSkullRewardLevel:
   - Name: CompanyRewardIds
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct DefaultRewardId>
+    Type: TArray<Struct CompanySpecificBootyReward>
   ClassSize: '0x20'
 AssetDelayLoadEntry:
   Attributes:
@@ -1785,11 +1785,11 @@ AssetDelayLoadEntry:
   - Name: AssetsToLoad
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct LoadForServer>
+    Type: TArray<Struct StringAssetReference>
   - Name: BlueprintsToLoad
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<AssetClass AssetsToLoad>
+    Type: TArray<AssetClass BlueprintsToLoad>
   ClassSize: '0x38'
 AthenaAICharacterNewWaveGroupSpawned:
   Attributes: []
@@ -1822,7 +1822,7 @@ AthenaAICharacterWasKilledWhileCursed:
   - Name: Curses
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte AthenaPlayerZonePenetrationTrackerUpdateEvent>
+    Type: TArray<Byte Curses>
   - Name: Instigator
     Offset: '0x10'
     Size: '0x8'
@@ -2520,7 +2520,7 @@ AthenaAnimationEmoteAnimations:
   - Name: ContinuousCycle
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Assetclass ContinuousIn>
+    Type: TArray<Assetclass ContinuousCycle>
   - Name: UseWithObject
     Offset: '0x80'
     Size: '0x8'
@@ -2531,7 +2531,7 @@ AthenaAnimationEmoteAnimgraphStructure:
   - Name: EmoteAnimationArray
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct AthenaAnimationFire>
+    Type: TArray<Struct AthenaAnimationEmoteAnimations>
   - Name: OneShotAnimationToUse
     Offset: '0x10'
     Size: '0x8'
@@ -3179,7 +3179,7 @@ AthenaAnimationItemListingMappingType:
   - Name: FirstPersonListing
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct AthenaAnimationJumping>
+    Type: TArray<Struct AthenaAnimationItemListingMappings>
   - Name: ThirdPersonListing
     Offset: '0x10'
     Size: '0x10'
@@ -4178,15 +4178,15 @@ AthenaAnimationObjectMeleeV2:
   - Name: ComboAttacks
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct AthenaAnimationObjectMeleeBlocking>
+    Type: TArray<Struct AthenaAnimationObjectComplexOneShot>
   - Name: ComboAttacksStatic
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct ComboAttacks>
+    Type: TArray<Struct AthenaAnimationObjectComplexOneShot>
   - Name: SwimmingComboAttacks
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct ComboAttacksStatic>
+    Type: TArray<Struct AthenaAnimationObjectComplexOneShot>
   - Name: HeavyAttack
     Offset: '0x30'
     Size: '0x28'
@@ -4570,7 +4570,7 @@ AthenaAnimationPulleyControl:
   - Name: PulleyObjectTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte AthenaAnimationWaterPump>
+    Type: TArray<Byte PulleyObjectTypes>
   - Name: MaxRate
     Offset: '0x10'
     Size: '0x4'
@@ -5419,11 +5419,11 @@ AthenaAnimationWeaponData:
   - Name: ComboAttacks
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct AthenaAnimationWheel>
+    Type: TArray<Struct AthenaAnimationObjectComplexOneShot>
   - Name: StaticComboAttacks
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct ComboAttacks>
+    Type: TArray<Struct AthenaAnimationObjectComplexOneShot>
   - Name: HeavyAttack
     Offset: '0x20'
     Size: '0x28'
@@ -5980,31 +5980,31 @@ AudioDataTelemetryFragment:
   - Name: WwiseStateGroups
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 WwiseStateGroups>
   - Name: WwiseStateValues
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 WwiseStateValues>
   - Name: PeakProxyCountsPools
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 PeakProxyCountsPools>
   - Name: PeakProxyCounts
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 PeakProxyCounts>
   - Name: StreamFindFailedIDs
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 StreamFindFailedIDs>
   - Name: StreamOpenFailedIDs
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 StreamOpenFailedIDs>
   - Name: StreamReadFailedIDs
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 StreamReadFailedIDs>
   - Name: FailedToLoadBankIDs
     Offset: '0x90'
     Size: '0x10'
@@ -6056,7 +6056,7 @@ AuthorityRepairableState:
   - Name: RepairingList
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Weakclass RepairableState>
+    Type: TArray<Weakclass RepairingList>
   ClassSize: '0x18'
 AwardGoldMessage:
   Attributes:
@@ -6306,7 +6306,7 @@ BeaconLitWithFlameOfFateStatsToFire:
   - Name: StatsToFire
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct FlameOfFateType>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x18'
 BeaconStateData:
   Attributes:
@@ -6357,7 +6357,7 @@ BellPlayerStats:
   - Name: StatsToFireUponBellRing
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct BellDesc>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x10'
 BlendAdditiveValues:
   Attributes:
@@ -6827,7 +6827,7 @@ BootyItemSellPrerequisites:
   - Name: Entitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class BootyItemShipDroppedInfo>
+    Type: TArray<Class Entitlements>
   ClassSize: '0x10'
 BootyItemShipDroppedInfo:
   Attributes:
@@ -6860,35 +6860,35 @@ BootyItemStats:
   - Name: HandInPlayerStats
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct CompanyId>
+    Type: TArray<Struct PlayerStat>
   - Name: HandInStolenPlayerStats
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct HandInPlayerStats>
+    Type: TArray<Struct PlayerStat>
   - Name: HandInAsPirateLegendPlayerStats
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct HandInStolenPlayerStats>
+    Type: TArray<Struct PlayerStat>
   - Name: HandInOnSchedulePlayerStats
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct HandInAsPirateLegendPlayerStats>
+    Type: TArray<Struct PlayerStat>
   - Name: HandInAsPirateLegendOnSchedulePlayerStats
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct HandInOnSchedulePlayerStats>
+    Type: TArray<Struct PlayerStat>
   - Name: HandInAsEmissaryPlayerStats
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct HandInAsPirateLegendOnSchedulePlayerStats>
+    Type: TArray<Struct EmissaryBootyItemStats>
   - Name: HandInAsMaxLevelEmissaryPlayerStats
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct HandInAsEmissaryPlayerStats>
+    Type: TArray<Struct EmissaryBootyItemStats>
   - Name: HandInStolenAsEmissaryPlayerStats
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct HandInAsMaxLevelEmissaryPlayerStats>
+    Type: TArray<Struct EmissaryBootyItemStats>
   - Name: HandInStolenAsMaxLevelEmissaryPlayerStats
     Offset: '0x80'
     Size: '0x10'
@@ -6914,11 +6914,11 @@ BountyMapContents:
   - Name: Descriptions
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct Location>
+    Type: TArray<Struct TreasureMapTextDesc>
   - Name: Targets
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct Descriptions>
+    Type: TArray<Struct BountyMapTargetDesc>
   ClassSize: '0x68'
 BountyMapLayoutTarget:
   Attributes:
@@ -6966,15 +6966,15 @@ BountyQuestDesc:
   - Name: Descriptions
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct Location>
+    Type: TArray<Struct TreasureMapTextDesc>
   - Name: Targets
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct Descriptions>
+    Type: TArray<Struct BountyMapTargetDesc>
   - Name: BountyRewards
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Class Targets>
+    Type: TArray<Class BountyRewards>
   - Name: BountyRewardsSpawnData
     Offset: '0xb0'
     Size: '0x10'
@@ -7106,7 +7106,7 @@ BountyQuestRandomSpawnGeneratorParams:
   - Name: WaveSuicideTime
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float WaveSuicideTime>
   - Name: WaveSuicideMinDist
     Offset: '0xb8'
     Size: '0x4'
@@ -7353,7 +7353,7 @@ BuoyantObjectSpawnGroup:
   - Name: Objects
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct AthenaStreamedLevelData>
+    Type: TArray<Struct BuoyantObjectSpawnDesc>
   ClassSize: '0x10'
 BuoyantObjectSpawnParams:
   Attributes:
@@ -7380,7 +7380,7 @@ BuoyantObjectSpawnParams:
   - Name: ExcludedShipSizes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class HitTestTraceChannel>
+    Type: TArray<Class ExcludedShipSizes>
   - Name: SpawnDistributionParams
     Offset: '0x38'
     Size: '0x14'
@@ -7636,7 +7636,7 @@ CampaignRanks:
   - Name: Ranks
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class CampaignId>
+    Type: TArray<Class Ranks>
   ClassSize: '0x18'
 CampfireDamageLightingChance:
   Attributes:
@@ -7776,7 +7776,7 @@ CannonProjectileHitShipWithStatusEffectsEvent:
   - Name: Statuses
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Ship>
+    Type: TArray<Struct Status>
   - Name: Instigator
     Offset: '0x18'
     Size: '0x8'
@@ -7828,7 +7828,7 @@ CanvasWorldMapBackgroundItems:
   - Name: Locations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct WorldSize>
+    Type: TArray<Struct Vector2D>
   ClassSize: '0x20'
 CanvasWorldMapForegroundItems:
   Attributes:
@@ -7843,7 +7843,7 @@ CanvasWorldMapForegroundItems:
   - Name: Locations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct FeatureToggle>
+    Type: TArray<Struct Vector2D>
   ClassSize: '0x20'
 CanvasWorldMapGeneric:
   Attributes:
@@ -8393,7 +8393,7 @@ CargoRunQuestDesc:
   - Name: CrateItemDesc
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Class CargoDeliveredTelemetryEvent>
+    Type: TArray<Class CrateItemDesc>
   - Name: OverrideTreasureMapItemDesc
     Offset: '0x60'
     Size: '0x8'
@@ -8434,11 +8434,11 @@ CargoRunReward:
   - Name: OnTimeRewards
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct CompanyId>
+    Type: TArray<Struct RewardId>
   - Name: LateRewards
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct OnTimeRewards>
+    Type: TArray<Struct RewardId>
   ClassSize: '0x20'
 CarouselPirateBodyshape:
   Attributes:
@@ -8536,7 +8536,7 @@ CarouselPirateDesc:
   - Name: Outfit
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Class Wonkiness>
+    Type: TArray<Class Outfit>
   ClassSize: '0x30'
 CarouselPirateGeneratorParams:
   Attributes:
@@ -8551,7 +8551,7 @@ CarouselPirateGeneratorParams:
   - Name: Groups
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct MinNumOfEachEthnicity>
+    Type: TArray<Struct CarouselPirateGroup>
   - Name: Default
     Offset: '0x18'
     Size: '0x6c'
@@ -8609,7 +8609,7 @@ Catalog:
   - Name: Offers
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct DisplayDescription>
+    Type: TArray<Struct CatalogOffer>
   ClassSize: '0x30'
 CatalogDescTab:
   Attributes:
@@ -8643,7 +8643,7 @@ CatalogOffer:
   - Name: AssetPaths
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str AssetPaths>
   - Name: Thumbnail
     Offset: '0xa8'
     Size: '0x10'
@@ -8651,7 +8651,7 @@ CatalogOffer:
   - Name: PurchaseStats
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str PurchaseStats>
   - Name: Prerequisites
     Offset: '0xc8'
     Size: '0x78'
@@ -8711,7 +8711,7 @@ CatalogOfferPrerequisites:
   - Name: Entitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Entitlements>
   - Name: Sig
     Offset: '0x68'
     Size: '0x10'
@@ -8722,7 +8722,7 @@ CatalogOfferPrerequisitesDataAsset:
   - Name: Entitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class CategoryDefaultsUnit>
+    Type: TArray<Class Entitlements>
   - Name: CompanyLevel
     Offset: '0x10'
     Size: '0x10'
@@ -8759,7 +8759,7 @@ CategorisedLoadout:
   - Name: ItemLoadout
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RewardDefinition>
+    Type: TArray<Struct LoadoutCategory>
   - Name: ClothingLoadout
     Offset: '0x10'
     Size: '0x10'
@@ -8786,7 +8786,7 @@ CategoryDefaultsUnit:
   - Name: PartialStrings
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str PartialStrings>
   - Name: Category
     Offset: '0x10'
     Size: '0x8'
@@ -8816,7 +8816,7 @@ CategorySpec:
   - Name: FallbackCategories
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class ItemCategory>
+    Type: TArray<Class FallbackCategories>
   - Name: DefaultSlotIconURL
     Offset: '0x18'
     Size: '0x10'
@@ -8842,7 +8842,7 @@ CauseOfDeathItemSpawnDistribution:
   - Name: CauseOfDeath
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte WeightedItemDescSpawner>
+    Type: TArray<Byte CauseOfDeath>
   - Name: ItemSpawnDistributionAsset
     Offset: '0x10'
     Size: '0x8'
@@ -8853,7 +8853,7 @@ ChainData:
   - Name: Chain
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ChainLightningParameters>
+    Type: TArray<Struct ChainLink>
   - Name: LifeTime
     Offset: '0x10'
     Size: '0x4'
@@ -8929,7 +8929,7 @@ ChapterQuests:
   - Name: QuestDescAssets
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Assetclass Feature>
+    Type: TArray<Assetclass QuestDescAssets>
   ClassSize: '0x10'
 CharacterActionStateConstructionInfo:
   Attributes:
@@ -9184,7 +9184,7 @@ CinematicCrewEvent:
   - Name: CrewMembers
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str CrewMembers>
   - Name: Header
     Offset: '0x10'
     Size: '0x38'
@@ -9409,7 +9409,7 @@ ClientCargoRunCrewDataUnit:
   - Name: NPCPickUpPoints
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct CrewId>
+    Type: TArray<Struct Guid>
   ClassSize: '0x20'
 ClientConditionsCompleteNetworkEvent:
   Attributes: []
@@ -9860,11 +9860,11 @@ ClothingChestChangeClothingEvent:
   - Name: Adds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class ClothingChestUnequipClothingEvent>
+    Type: TArray<Class Adds>
   - Name: Removes
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Class Adds>
+    Type: TArray<Class Removes>
   ClassSize: '0x20'
 ClothingChestCloseRequestEvent:
   Attributes:
@@ -9878,14 +9878,14 @@ ClothingChestClothingEntitlementsUpdatedEvent:
   - Name: Entitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RequestEmoteSelectEquipEvent>
+    Type: TArray<Struct ChestEntitlementViewModel>
   ClassSize: '0x10'
 ClothingChestClothingLoadoutUpdatedEvent:
   Attributes:
   - Name: Loadout
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ClothingChestClothingEntitlementsUpdatedEvent>
+    Type: TArray<Struct ChestTabViewModel>
   ClassSize: '0x10'
 ClothingChestEquipClothingEvent:
   Attributes:
@@ -9946,7 +9946,7 @@ ClothingLoadout:
   - Name: Items
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class ClothingLoadoutContainer>
+    Type: TArray<Class Items>
   ClassSize: '0x10'
 ClothingLoadoutContainer:
   Attributes:
@@ -10018,7 +10018,7 @@ CloudTileParameters:
   - Name: Meshes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct CloudDomeParameters>
+    Type: TArray<Struct CloudTypeDefinition>
   - Name: Samples
     Offset: '0x10'
     Size: '0x4'
@@ -10261,7 +10261,7 @@ CollectorsChestItemSlotDefinition:
   - Name: TargetObjectTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<AssetClass CollectorsChestStoredItemInfo>
+    Type: TArray<AssetClass TargetObjectTypes>
   - Name: RelativeTransform
     Offset: '0x10'
     Size: '0x30'
@@ -10272,7 +10272,7 @@ CollectorsChestMetaWrapper:
   - Name: StoredItemSnapshots
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct GoldInContainerData>
+    Type: TArray<Struct ItemSnapshot>
   ClassSize: '0x30'
 CollectorsChestStoredItemInfo:
   Attributes:
@@ -10386,11 +10386,11 @@ CompanyCargoRunHandInStats:
   - Name: StatsToFireOnHandIn
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct CompanyId>
+    Type: TArray<Struct PlayerStat>
   - Name: StatsToFireOnDamagedHandIn
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct StatsToFireOnHandIn>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x28'
 CompanyLevelClaim:
   Attributes:
@@ -10529,7 +10529,7 @@ CompanyScreenInformation:
   - Name: EmblemSets
     Offset: '0x160'
     Size: '0x10'
-    Type: TArray<Struct CompanyFlavourText2>
+    Type: TArray<Struct EmblemSetInformation>
   ClassSize: '0x170'
 CompanyShopInfo:
   Attributes:
@@ -10563,7 +10563,7 @@ CompanyShopOffersEvent:
   - Name: ItemOffers
     Offset: '0x1f8'
     Size: '0x10'
-    Type: TArray<Struct VoyageOffers>
+    Type: TArray<Struct ShopOffer>
   ClassSize: '0x208'
 CompanyShopSkin:
   Attributes:
@@ -10673,7 +10673,7 @@ CompanySpecificCargoRunStats:
   - Name: StatsToFireUponPerfectOnTimeHandIn
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct CompanyId>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x18'
 CompanyValidationAssetUnit:
   Attributes:
@@ -10718,7 +10718,7 @@ CompletionEventsRemoteServiceModel:
   - Name: CompletionEvents
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str CompletionEvents>
   ClassSize: '0x10'
 ConditionalHandInStat:
   Attributes:
@@ -10781,7 +10781,7 @@ ConfigurationComboAndTrigger:
   - Name: RequiredConfigurationCombo
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Int8 None>
+    Type: TArray<Int8 RequiredConfigurationCombo>
   - Name: TriggerToActivate
     Offset: '0x10'
     Size: '0x8'
@@ -10859,7 +10859,7 @@ ConsumedIngestibleTelemetryEvent:
   - Name: StatusesApplied
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str StatusesApplied>
   ClassSize: '0x28'
 ContentTypeSelectorPair:
   Attributes:
@@ -10910,7 +10910,7 @@ ContestCeremonyEvent:
   - Name: SpecialEvents
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Byte AudioEvents>
+    Type: TArray<Byte SpecialEvents>
   - Name: NPCName
     Offset: '0x20'
     Size: '0x38'
@@ -11054,7 +11054,7 @@ ContestEventSet:
   - Name: Events
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ShipIdentityOwnership>
+    Type: TArray<Struct ContestCeremonyEvent>
   - Name: BelongingStage
     Offset: '0x10'
     Size: '0x1'
@@ -11109,7 +11109,7 @@ ContestLeaderboardUpdateEvent:
   - Name: Leaderboard
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct PlayersCompletedContestSpawnInRewardStage>
+    Type: TArray<Struct CrewScore>
   ClassSize: '0x20'
 ContestMapContents:
   Attributes:
@@ -11124,11 +11124,11 @@ ContestMapContents:
   - Name: CrewsData
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct ScoreboardTitle>
+    Type: TArray<Struct ContestMapCrewData>
   - Name: ScoreReasonsToShowInfo
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Byte CrewsData>
+    Type: TArray<Byte ScoreReasonsToShowInfo>
   ClassSize: '0x40'
 ContestMapCrewData:
   Attributes:
@@ -11204,11 +11204,11 @@ ContestMatchmakingClientRequestModel:
   - Name: PlayModeTags
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str PlayModeTags>
   - Name: PlayModeStates
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str PlayModeStates>
   - Name: Crews
     Offset: '0x70'
     Size: '0x10'
@@ -11257,7 +11257,7 @@ ContestMatchmakingLocationsResponseModel:
   - Name: Locations
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Locations>
   - Name: MaxHops
     Offset: '0x10'
     Size: '0x4'
@@ -11276,7 +11276,7 @@ ContestMigrationRequestMessage:
   - Name: CrewIds
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct DestinationEndpoint>
+    Type: TArray<Struct Guid>
   ClassSize: '0x30'
 ContestNotificationNetworkEvent:
   Attributes:
@@ -11414,7 +11414,7 @@ ContestStartEvent:
   - Name: CrewMembers
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str CrewMembers>
   - Name: HoldDuration
     Offset: '0x40'
     Size: '0x4'
@@ -11502,7 +11502,7 @@ ContestVoyageInfo:
   - Name: ValidShipTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class ContestVoyagesSelectorUnit>
+    Type: TArray<Class ValidShipTypes>
   - Name: WeightedContestVoyage
     Offset: '0x10'
     Size: '0x10'
@@ -11597,7 +11597,7 @@ ControlObjectActionRuleParams:
   - Name: WieldableItemSizesToDisableControl
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte EventPlayerReliquishedControlOfControllable>
+    Type: TArray<Byte WieldableItemSizesToDisableControl>
   ClassSize: '0x10'
 ControlObjectActionStateConstructionInfo:
   Attributes: []
@@ -12001,7 +12001,7 @@ CrewBootyStorage:
   - Name: CrewStorage
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct CrewId>
+    Type: TArray<Struct LocationBootyStorage>
   ClassSize: '0x20'
 CrewCancelVoteOutOfBrigEvent:
   Attributes:
@@ -12483,7 +12483,7 @@ CrewServerRequestMessage:
   - Name: ServerLocations
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str ServerLocations>
   ClassSize: '0x48'
 CrewServiceCrewsReplicatedEvent:
   Attributes: []
@@ -12501,23 +12501,23 @@ CrewServiceParams:
   - Name: VotesRequiredForSendToBrig
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int VotesRequiredForSendToBrig>
   - Name: VotesRequiredForReleaseFromBrig
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int VotesRequiredForReleaseFromBrig>
   - Name: VotesRequiredForScuttleShip
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int VotesRequiredForScuttleShip>
   - Name: VotesRequiredForChangeMatchmakingVisibility
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int VotesRequiredForChangeMatchmakingVisibility>
   - Name: VotesRequiredForArenaRivalVote
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int VotesRequiredForArenaRivalVote>
   - Name: BrigMinReleaseTime
     Offset: '0x58'
     Size: '0x4'
@@ -12873,7 +12873,7 @@ CutScenePlayData:
   - Name: PossessableSequences
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct LocalisableNames>
+    Type: TArray<Struct PossessableSequence>
   ClassSize: '0x38'
 CutsceneAnimationElement:
   Attributes:
@@ -12930,7 +12930,7 @@ CutscenePool:
   - Name: CutsceneLengths
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float CutsceneLengths>
   ClassSize: '0x40'
 CutscenePriorityQueueEntry:
   Attributes:
@@ -13237,7 +13237,7 @@ DebugStoryInfoModelSchedule:
   - Name: Stories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct CampaignGoalProgressEvent>
+    Type: TArray<Struct StoryInfoModel>
   - Name: RepeatDuration
     Offset: '0x10'
     Size: '0x8'
@@ -13681,7 +13681,7 @@ DiscoveryNotificationEvent:
   - Name: Images
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Images>
   - Name: Background
     Offset: '0x18'
     Size: '0x10'
@@ -13807,7 +13807,7 @@ DropItemParams:
   - Name: AttachOnDropParentTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<AssetClass StartPickupObjectActionRuleParams>
+    Type: TArray<AssetClass AttachOnDropParentTypes>
   - Name: DropItemOffset
     Offset: '0x10'
     Size: '0xc'
@@ -13892,7 +13892,7 @@ DynamicMaterialsList:
   - Name: Materials
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Weakclass MaterialAnimatorGroupInstance>
+    Type: TArray<Weakclass Materials>
   ClassSize: '0x10'
 EjectFromTunnelOfTheDamnedActionStateConstructionInfo:
   Attributes:
@@ -14082,7 +14082,7 @@ EmblemInformation:
   - Name: Progressions
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct ProgressDescriptions>
+    Type: TArray<Struct CappedCount>
   ClassSize: '0x70'
 EmblemProgress:
   Attributes:
@@ -14316,7 +14316,7 @@ EmissaryBootyItemStats:
   - Name: Stats
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct EmissaryCompany>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x18'
 EmissaryCompanyQuestIcons:
   Attributes:
@@ -14331,7 +14331,7 @@ EmissaryCompanyQuestIcons:
   - Name: Icons
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct Background>
+    Type: TArray<Struct StringAssetReference>
   ClassSize: '0x28'
 EmissaryDeactivatedNotificationUIEvent:
   Attributes: []
@@ -14625,7 +14625,7 @@ EncounterListenerData:
   - Name: EncounterListenerTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte EventEncounterEnd>
+    Type: TArray<Byte EncounterListenerTypes>
   - Name: EncounterListenerActors
     Offset: '0x10'
     Size: '0x10'
@@ -14633,7 +14633,7 @@ EncounterListenerData:
   - Name: EncounterListenerLocations
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct EncounterListenerActors>
+    Type: TArray<Struct Vector>
   ClassSize: '0x40'
 EncounterParams:
   Attributes:
@@ -14663,7 +14663,7 @@ EncounterServiceEntry:
   - Name: ValidEncounterTypes
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Byte EncounterListenerType>
+    Type: TArray<Byte ValidEncounterTypes>
   ClassSize: '0x18'
 EncounterServiceParams:
   Attributes:
@@ -14789,11 +14789,11 @@ Entitlements:
   - Name: PreCachedEntitlementTypes
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class PlayerEntitlements>
+    Type: TArray<Class PreCachedEntitlementTypes>
   - Name: Entitlements
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Class PreCachedEntitlementTypes>
+    Type: TArray<Class Entitlements>
   ClassSize: '0x78'
 EntitlementsFailedEvent:
   Attributes:
@@ -14807,7 +14807,7 @@ EntitlementsRequestEvent:
   - Name: EntitlementIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str EntitlementIds>
   ClassSize: '0x10'
 EntitlementsResponseEvent:
   Attributes:
@@ -14850,14 +14850,14 @@ EquipmentChestItemEntitlementsUpdatedEvent:
   - Name: ItemEntitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RequestEquipmentChestItemLoadoutEvent>
+    Type: TArray<Struct ChestEntitlementViewModel>
   ClassSize: '0x10'
 EquipmentChestItemLoadoutUpdatedEvent:
   Attributes:
   - Name: ItemLoadout
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct EquipmentChestItemEntitlementsUpdatedEvent>
+    Type: TArray<Struct ChestTabViewModel>
   ClassSize: '0x10'
 ErrorHappeningEvent:
   Attributes: []
@@ -15625,7 +15625,7 @@ EventCompanyProgressData:
   - Name: CompanyProgress
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct EventCompanyDataResponse>
+    Type: TArray<Struct UICompanyProgress>
   ClassSize: '0x10'
 EventCompanyProgressRequest:
   Attributes: []
@@ -15736,7 +15736,7 @@ EventCompanyReputationCampaignInformationResponse:
   - Name: CampaignInformation
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct EventCompanyReputationCampaignInformationRequest>
+    Type: TArray<Struct EventCompanyReputationCampaignInformation>
   ClassSize: '0x10'
 EventCompanyScreenDisplayInformationRequest:
   Attributes:
@@ -15923,7 +15923,7 @@ EventDisableInteractionPoints:
   - Name: InteractionPointsToDisable
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class CurseTag>
+    Type: TArray<Class InteractionPointsToDisable>
   ClassSize: '0x18'
 EventDockableObjectDestroyed:
   Attributes: []
@@ -15988,7 +15988,7 @@ EventEnableInteractionPoints:
   - Name: InteractionPointsToEnable
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class CurseTag>
+    Type: TArray<Class InteractionPointsToEnable>
   ClassSize: '0x18'
 EventEncounterBase:
   Attributes:
@@ -16035,11 +16035,11 @@ EventEntityIdsSwitch:
   - Name: EnableEntityIds
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int EnableEntityIds>
   - Name: DisableEntityIds
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int DisableEntityIds>
   ClassSize: '0x28'
 EventExitedShip:
   Attributes:
@@ -16233,7 +16233,7 @@ EventFriendsListChanged:
   - Name: FriendsList
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str FriendsList>
   ClassSize: '0x10'
 EventFriendsListFailed:
   Attributes: []
@@ -16246,7 +16246,7 @@ EventFriendsListResponse:
   - Name: FriendsList
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str FriendsList>
   ClassSize: '0x10'
 EventFrontendSetSceneVisibility:
   Attributes:
@@ -16278,11 +16278,11 @@ EventGetAllKeybindingsResponse:
   - Name: ActionBindings
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct EventGetAllKeybindingsRequest>
+    Type: TArray<Struct KeyBinding>
   - Name: AxisBindings
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct ActionBindings>
+    Type: TArray<Struct KeyBinding>
   - Name: DefaultKeyboardLayout
     Offset: '0x20'
     Size: '0x4'
@@ -17354,7 +17354,7 @@ EventPlayerTreasureMapSet:
   - Name: Marks
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct MapTexture>
+    Type: TArray<Struct Vector2D>
   ClassSize: '0x18'
 EventPlayerTriggeredTrapPressurePlate:
   Attributes: []
@@ -17576,7 +17576,7 @@ EventReputationDisplayInformationResponse:
   - Name: ReputationData
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct EventReputationDisplayInformationRequest>
+    Type: TArray<Struct CompanyReputationSummary>
   ClassSize: '0x10'
 EventRequestRespawn:
   Attributes:
@@ -17997,15 +17997,15 @@ EventShopOffersEvent:
   - Name: Offers
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ShopOffersEvent>
+    Type: TArray<Struct ShopOffer>
   - Name: Categories
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Categories>
   - Name: GildedVoyages
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Categories>
+    Type: TArray<Struct ShopOffer>
   ClassSize: '0x30'
 EventShowControllerDisconnectedUI:
   Attributes: []
@@ -18870,7 +18870,7 @@ ExplosionInfo:
   - Name: StatusesToApply
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct IgnitionParameters>
+    Type: TArray<Struct Status>
   - Name: ApplyStatusEffectsWhenUnderwater
     Offset: '0xb0'
     Size: '0x1'
@@ -19307,7 +19307,7 @@ FeatureToggledLevels:
   - Name: Levels
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Feature>
+    Type: TArray<Struct StringAssetReference>
   ClassSize: '0x18'
 FeatureToggledMechanismGroups:
   Attributes:
@@ -19406,7 +19406,7 @@ FireBroadcast:
   - Name: HitResults
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Instigator>
+    Type: TArray<Struct HitResult>
   - Name: FirePosition
     Offset: '0x18'
     Size: '0xc'
@@ -19452,7 +19452,7 @@ FireRequest:
   - Name: HitResults
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct RemoteAimData>
+    Type: TArray<Struct HitResult>
   - Name: TelemetryAttackId
     Offset: '0x80'
     Size: '0x10'
@@ -19935,7 +19935,7 @@ FlamethrowerStatusOverride:
   - Name: StatusesToApplyOnOverlap
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct ActorType>
+    Type: TArray<Struct Status>
   ClassSize: '0x30'
 FlashbangEffectEvent:
   Attributes:
@@ -19990,7 +19990,7 @@ FogBankManagerFogBankTemplate:
   - Name: FogBanks
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class Weight>
+    Type: TArray<Class FogBanks>
   - Name: DistanceFromIslandInKm
     Offset: '0x18'
     Size: '0x30'
@@ -20420,7 +20420,7 @@ GameEventSchedulerConfiguration:
   - Name: MainEvents
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct ServerConfigName>
+    Type: TArray<Struct GameEventCount>
   - Name: SubConfigs
     Offset: '0x20'
     Size: '0x10'
@@ -20565,7 +20565,7 @@ GarbageCollectionFrametimeTelemetryFragment:
   - Name: GCFrametimesMs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float GCFrametimesMs>
   - Name: MaxGCFrametimeMs
     Offset: '0x10'
     Size: '0x4'
@@ -20615,11 +20615,11 @@ GenericNotificationUIEvent:
   - Name: Text
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Text None>
+    Type: TArray<Struct FText>
   - Name: Images
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Images>
   - Name: Background
     Offset: '0x20'
     Size: '0x10'
@@ -20627,7 +20627,7 @@ GenericNotificationUIEvent:
   - Name: FlagIcons
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str FlagIcons>
   - Name: StampIcon
     Offset: '0x40'
     Size: '0x10'
@@ -20639,7 +20639,7 @@ GenericNotificationUIEvent:
   - Name: StyleModifiers
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Byte Audio>
+    Type: TArray<Byte StyleModifiers>
   - Name: OnlyPlayAudio
     Offset: '0xa0'
     Size: '0x1'
@@ -20713,28 +20713,28 @@ GetAmmoChestsDataResponse:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetNPCsDataResponse>
+    Type: TArray<Struct AmmoChestStateData>
   ClassSize: '0x18'
 GetBeaconsDataResponse:
   Attributes:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetGeysersDataResponse>
+    Type: TArray<Struct BeaconStateData>
   ClassSize: '0x18'
 GetCampfiresDataResponse:
   Attributes:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetStorageContainersDataResponse>
+    Type: TArray<Struct CampfireStateData>
   ClassSize: '0x18'
 GetCannonsDataResponse:
   Attributes:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct RemoveAITypeSpawnRuleData>
+    Type: TArray<Struct CannonStateData>
   ClassSize: '0x18'
 GetFilteredCatalogRequestModel:
   Attributes:
@@ -20748,14 +20748,14 @@ GetGeysersDataResponse:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetVolcanoesDataResponse>
+    Type: TArray<Struct GeyserStateData>
   ClassSize: '0x18'
 GetItemsDataResponse:
   Attributes:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetItemsInRadiusData>
+    Type: TArray<Struct ItemStateData>
   ClassSize: '0x18'
 GetItemsInRadiusData:
   Attributes:
@@ -20769,7 +20769,7 @@ GetNPCsDataResponse:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetCampfiresDataResponse>
+    Type: TArray<Struct NPCStateData>
   ClassSize: '0x18'
 GetOnlineFriendsSuccessEvent:
   Attributes: []
@@ -20782,35 +20782,35 @@ GetShipwrecksDataResponse:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetAmmoChestsDataResponse>
+    Type: TArray<Struct ShipwreckStateData>
   ClassSize: '0x18'
 GetSkeletonThronesDataResponse:
   Attributes:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetBeaconsDataResponse>
+    Type: TArray<Struct SkeletonThroneStateData>
   ClassSize: '0x18'
 GetStorageContainersDataResponse:
   Attributes:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetCannonsDataResponse>
+    Type: TArray<Struct StorageContainerStateData>
   ClassSize: '0x18'
 GetVaultsDataResponse:
   Attributes:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetSkeletonThronesDataResponse>
+    Type: TArray<Struct VaultStateData>
   ClassSize: '0x18'
 GetVolcanoesDataResponse:
   Attributes:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GetShipwrecksDataResponse>
+    Type: TArray<Struct VolcanoActorStateData>
   ClassSize: '0x18'
 GeyserStateData:
   Attributes:
@@ -20889,7 +20889,7 @@ GhostShipRewardData:
   - Name: SpawnTransforms
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct NumberOfItemsToSpawn>
+    Type: TArray<Struct Transform>
   ClassSize: '0x38'
 GlintVisibilityLock:
   Attributes: []
@@ -20899,7 +20899,7 @@ GlobalEventSubscriptionData:
   - Name: EnableEvents
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: DisableEvents
     Offset: '0x10'
     Size: '0x10'
@@ -21140,7 +21140,7 @@ HideInObjectActionStateParams:
   - Name: PreventedHealthChanges
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Byte IngestedByKrakenActionStateParams>
+    Type: TArray<Byte PreventedHealthChanges>
   ClassSize: '0x28'
 HideInviteModalEvent:
   Attributes: []
@@ -21276,7 +21276,7 @@ HitRegTrailData:
   - Name: Trail
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct WeaponMesh>
+    Type: TArray<Struct Vector>
   - Name: DistanceBeforeGravity
     Offset: '0x10'
     Size: '0x4'
@@ -21341,7 +21341,7 @@ HoleContainer:
   - Name: Holes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Weakclass BuriedBuriable>
+    Type: TArray<Weakclass Holes>
   - Name: IslandName
     Offset: '0x10'
     Size: '0x8'
@@ -21360,7 +21360,7 @@ HoleItemToSpawn:
   - Name: RestrictToSurface
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Byte ItemDesc>
+    Type: TArray<Byte RestrictToSurface>
   - Name: FeatureFlag
     Offset: '0x20'
     Size: '0x8'
@@ -21441,7 +21441,7 @@ HttpResponseTelemetryFragment:
   - Name: ResponseHeaders
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str ResponseHeaders>
   - Name: Attempts
     Offset: '0x60'
     Size: '0x4'
@@ -21480,7 +21480,7 @@ HttpResponseTelemetryFragmentInput:
   - Name: ResponseHeaders
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str ResponseHeaders>
   - Name: Attempts
     Offset: '0x60'
     Size: '0x4'
@@ -21575,7 +21575,7 @@ ITavernBoardMap:
   - Name: Creators
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Creators>
   - Name: IconPath
     Offset: '0x10'
     Size: '0x10'
@@ -22165,15 +22165,15 @@ InventoryInteractionUpdateEvent:
   - Name: Current
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct InventoryInteractionTakeAllRequestEvent>
+    Type: TArray<Struct IInventoryItem>
   - Name: Available
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct Current>
+    Type: TArray<Struct IInventoryItem>
   - Name: Descriptions
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Available>
+    Type: TArray<Struct IInventoryItemDescription>
   ClassSize: '0x30'
 InventoryManipulatorAutoEquipPolicyEntry:
   Attributes:
@@ -22197,7 +22197,7 @@ InventoryResponseEvent:
   - Name: Equipment
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct InventoryRequestEvent>
+    Type: TArray<Struct IInventoryItem>
   - Name: Resources
     Offset: '0x10'
     Size: '0x10'
@@ -22385,7 +22385,7 @@ IslandMaterialZoneStatusMapping:
   - Name: Status
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct ActivateOnStart>
+    Type: TArray<Struct Status>
   ClassSize: '0x20'
 IslandNameAndBounds:
   Attributes:
@@ -22475,7 +22475,7 @@ ItemBuryingBaseOverride:
   - Name: Classes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<AssetClass ItemDiggingEffectsOverride>
+    Type: TArray<AssetClass Classes>
   - Name: BuryingConfig
     Offset: '0x10'
     Size: '0x8'
@@ -22490,7 +22490,7 @@ ItemCategoryAIStrategyMovementPropertiesOverride:
   - Name: AIStrategyMovementPropertiesOverrides
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ItemCategory>
+    Type: TArray<Struct AIStrategyMovementProperties>
   ClassSize: '0x18'
 ItemConsumptionStatusChanceEntry:
   Attributes:
@@ -22508,7 +22508,7 @@ ItemDiggingAnimationOverride:
   - Name: Classes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<AssetClass ItemDiggingAudioOverride>
+    Type: TArray<AssetClass Classes>
   - Name: DiggingAnimationConfig
     Offset: '0x10'
     Size: '0x8'
@@ -22519,7 +22519,7 @@ ItemDiggingAudioOverride:
   - Name: Classes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<AssetClass ItemDiggingBaseOverride>
+    Type: TArray<AssetClass Classes>
   - Name: DiggingAudioConfig
     Offset: '0x10'
     Size: '0x8'
@@ -22530,7 +22530,7 @@ ItemDiggingBaseOverride:
   - Name: Classes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<AssetClass ItemBuryingBaseOverride>
+    Type: TArray<AssetClass Classes>
   - Name: DiggingBaseConfig
     Offset: '0x10'
     Size: '0x8'
@@ -22541,7 +22541,7 @@ ItemDiggingEffectsOverride:
   - Name: Classes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<AssetClass DioramaDebugMenuEntry>
+    Type: TArray<AssetClass Classes>
   - Name: DiggingEffectsConfig
     Offset: '0x10'
     Size: '0x8'
@@ -22612,7 +22612,7 @@ ItemLoadout:
   - Name: Items
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Class Capacities>
+    Type: TArray<Class Items>
   ClassSize: '0x20'
 ItemLoadoutCapacity:
   Attributes:
@@ -22630,7 +22630,7 @@ ItemLoadoutComponentSlots:
   - Name: WeaponSlots
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class ItemPreviewUpdateCameraEvent>
+    Type: TArray<Class WeaponSlots>
   - Name: Slots
     Offset: '0x10'
     Size: '0x10'
@@ -22787,7 +22787,7 @@ ItemRequirementData:
   - Name: RequiredItemsInLoadout
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class RequiredNumberToMatch>
+    Type: TArray<Class RequiredItemsInLoadout>
   ClassSize: '0x18'
 ItemSnapshot:
   Attributes:
@@ -23029,7 +23029,7 @@ KeySequence:
   - Name: ActiveToInactiveSequenceCheckpoints
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct VaultKeyDesc>
+    Type: TArray<Struct MechanismCheckpoint>
   - Name: InactiveToActiveSequenceCheckpoints
     Offset: '0x18'
     Size: '0x10'
@@ -23339,7 +23339,7 @@ LandmarkReaction:
   - Name: ActionsThatTriggerThisReaction
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Byte RelevantRadiusInMetres>
+    Type: TArray<Byte ActionsThatTriggerThisReaction>
   - Name: GateCompletedAudioCue
     Offset: '0x18'
     Size: '0x8'
@@ -23399,7 +23399,7 @@ LandmarkTreasureLocationEntry:
   - Name: Locations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct LandmarkName>
+    Type: TArray<Struct Vector>
   ClassSize: '0x20'
 LargeSessionEncounterDevTelemetryEvent:
   Attributes:
@@ -23919,7 +23919,7 @@ LightingControllerMoonParams:
   - Name: MoonPhaseAngles
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float MoonPhaseAngles>
   - Name: MoonYaw
     Offset: '0x10'
     Size: '0x4'
@@ -24813,7 +24813,7 @@ LoadoutRepairFailedTelemetryEvent:
   - Name: CarouselSeeds
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int CarouselSeeds>
   ClassSize: '0x18'
 LoadoutRepairSuccessTelemetryEvent:
   Attributes:
@@ -24846,7 +24846,7 @@ LoadoutSubstitution:
   - Name: LoadoutsToSubstituteIn
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct LoadoutToSubstituteOut>
+    Type: TArray<Struct StringAssetReference>
   ClassSize: '0x20'
 LobbyCreationRequestModel:
   Attributes:
@@ -24916,11 +24916,11 @@ LobbySetup:
   - Name: Crews
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct EventSessionCodeTextboxTextFromVirtualKeyboard>
+    Type: TArray<Struct LobbyCrewInfo>
   - Name: CrewlessMembers
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct Crews>
+    Type: TArray<Struct LobbyCrewMember>
   ClassSize: '0x20'
 LobbySetupChangedEvent:
   Attributes: []
@@ -24967,7 +24967,7 @@ LocationBootyStorage:
   - Name: StoredTreasure
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct IslandLocation>
+    Type: TArray<Struct ItemSnapshot>
   - Name: StoredTreasureCount
     Offset: '0x28'
     Size: '0x1'
@@ -25009,7 +25009,7 @@ LocationMapBannerParams:
   - Name: ChestCanvasOffsets
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct BannerLocation>
+    Type: TArray<Struct Vector2D>
   ClassSize: '0x38'
 Locator:
   Attributes:
@@ -25078,7 +25078,7 @@ LockMetaWrapper:
   - Name: LockStates
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct OpenableItemMetaWrapper>
+    Type: TArray<Struct StorableLockState>
   ClassSize: '0x48'
 LockState:
   Attributes:
@@ -25249,7 +25249,7 @@ MakeFriendsEmoteParams:
   - Name: TriggerEmoteNames
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: TriggerDistanceThreshold
     Offset: '0x10'
     Size: '0x4'
@@ -25302,7 +25302,7 @@ MapTablePersistenceModel:
   - Name: MapPins
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ShipBaseTelemetryFragmentInput>
+    Type: TArray<Struct Vector2D>
   ClassSize: '0x10'
 MapTableStateForTunnel:
   Attributes:
@@ -25744,15 +25744,15 @@ MaterialManipulationSettings:
   - Name: ScalarParameterValues
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct MeshAnimatorInstance>
+    Type: TArray<Struct ScalarParameterValue>
   - Name: TextureParameterValues
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct ScalarParameterValues>
+    Type: TArray<Struct TextureParameterValue>
   - Name: VectorParameterValues
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct TextureParameterValues>
+    Type: TArray<Struct VectorParameterValue>
   ClassSize: '0x30'
 MatineeActorPlayNetworkEvent:
   Attributes:
@@ -26193,7 +26193,7 @@ MerchantMapContents:
   - Name: ItemData
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct DeliveryLocationIslandName>
+    Type: TArray<Struct MerchantMapItemData>
   ClassSize: '0xf0'
 MerchantMapItemData:
   Attributes:
@@ -26212,7 +26212,7 @@ MerchantMapItemData:
   - Name: AcceptableAlternativeCrateItemData
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct CrateItemDesc>
+    Type: TArray<Struct MerchantQuestItemDescAndReward>
   - Name: FaunaSpecies
     Offset: '0x68'
     Size: '0x8'
@@ -26337,7 +26337,7 @@ MerchantQuestDesc:
   - Name: ItemData
     Offset: '0x178'
     Size: '0x10'
-    Type: TArray<Struct DeliverByTimeText>
+    Type: TArray<Struct MerchantMapItemData>
   - Name: ItemGroupDescs
     Offset: '0x188'
     Size: '0x10'
@@ -26391,7 +26391,7 @@ MerchantQuestParams:
   - Name: CategoryGroupBounds
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Struct NumberOfGroups>
+    Type: TArray<Struct MerchantQuestCategoryGroupBounds>
   ClassSize: '0xc0'
 MerchantQuestRandomRequiredItemsEntry:
   Attributes:
@@ -26728,7 +26728,7 @@ MermaidStatueDespawnedTelemetryEvent:
   - Name: Crews
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct MermaidStatueDespawnReason>
+    Type: TArray<Struct Guid>
   ClassSize: '0x30'
 MermaidStatueSpawnTelemetryEvent:
   Attributes:
@@ -26977,7 +26977,7 @@ MigrationUIContentsDataAssetEntry:
   - Name: DisplayText
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Text None>
+    Type: TArray<Struct FText>
   ClassSize: '0x10'
 ModalInteractionActionStateConstructionInfo:
   Attributes:
@@ -27068,7 +27068,7 @@ MountpointParams:
   - Name: AcceptedMountableTypes
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Class InteractionBoxExtent>
+    Type: TArray<Class AcceptedMountableTypes>
   ClassSize: '0x60'
 MountpointState:
   Attributes:
@@ -27112,7 +27112,7 @@ MultipleNPCCompaniesRedirectionData:
   - Name: Companies
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class SingleNPCCompanyRedirectionData>
+    Type: TArray<Class Companies>
   - Name: VisitNPCTooltip
     Offset: '0x10'
     Size: '0x38'
@@ -27138,7 +27138,7 @@ NPCAnimationContinuousCycle:
   - Name: Loop
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct In>
+    Type: TArray<Struct NPCAnimationSequence>
   - Name: Out
     Offset: '0x20'
     Size: '0x10'
@@ -27463,7 +27463,7 @@ NPCDialogRankGatedText:
   - Name: RequiredRanks
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Class Text>
+    Type: TArray<Class RequiredRanks>
   ClassSize: '0x48'
 NPCInitialSpawnedCosmeticItems:
   Attributes:
@@ -27642,7 +27642,7 @@ NPCOnSurfaceStateInfo:
   - Name: OnActorDamagedReactions
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct DespawnVOGroupEntries>
+    Type: TArray<Struct NPCReactionVOEntry>
   - Name: OnActorKilledReactions
     Offset: '0xb8'
     Size: '0x10'
@@ -27683,7 +27683,7 @@ NPCOneShotAnimationElement:
   - Name: OneShotSequence
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct SequenceName>
+    Type: TArray<Struct NPCAnimationSequence>
   ClassSize: '0x18'
 NPCReactionDualActorVOEntry:
   Attributes:
@@ -27751,11 +27751,11 @@ NamedPointsCollectionGroup:
   - Name: GroupPoints
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GroupName>
+    Type: TArray<Struct OrientedPoint>
   - Name: GroupTags
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Byte GroupPoints>
+    Type: TArray<Byte GroupTags>
   ClassSize: '0x28'
 NamedStateSelector:
   Attributes:
@@ -27986,7 +27986,7 @@ NotesManagementRemoteServiceAddNoteScheduleModel:
   - Name: CompletionEventIds
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str CompletionEventIds>
   - Name: RewardId
     Offset: '0x30'
     Size: '0x10'
@@ -28012,7 +28012,7 @@ NotesRemoteServiceModel:
   - Name: Notes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct NotesRemoteServiceNoteDetailModel>
+    Type: TArray<Struct Guid>
   ClassSize: '0x10'
 NotesRemoteServiceNoteDetailModel:
   Attributes:
@@ -28054,7 +28054,7 @@ NotesRemoteServiceNoteModel:
   - Name: CompletionEventIds
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str CompletionEventIds>
   ClassSize: '0x88'
 NotificationStickiness:
   Attributes:
@@ -28092,14 +28092,14 @@ ObjectLeakDetectionDataReceivedEvent:
   - Name: DataBlob
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Byte Connection>
+    Type: TArray<Byte DataBlob>
   ClassSize: '0x18'
 ObjectLeakDetectionTelemetryRpc:
   Attributes:
   - Name: DataBlob
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Byte RequestWalletBalanceUpdateHUDEvent>
+    Type: TArray<Byte DataBlob>
   ClassSize: '0x20'
 OfferPurchasedEvent:
   Attributes:
@@ -28220,15 +28220,15 @@ OpenInventoryInteractionEvent:
   - Name: Current
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct InventoryName>
+    Type: TArray<Struct IInventoryItem>
   - Name: Available
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Current>
+    Type: TArray<Struct IInventoryItem>
   - Name: Descriptions
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct Available>
+    Type: TArray<Struct IInventoryItemDescription>
   - Name: CanPlayerStoreItems
     Offset: '0x40'
     Size: '0x1'
@@ -28415,7 +28415,7 @@ OverrideTypeDialogOptionUsageCounter:
   - Name: OptionUsageCounter
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int OptionUsageCounter>
   ClassSize: '0x18'
 OwnedCrewCostumes:
   Attributes:
@@ -28426,7 +28426,7 @@ OwnedCrewCostumes:
   - Name: Costumes
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<AssetClass CrewId>
+    Type: TArray<AssetClass Costumes>
   ClassSize: '0x20'
 PLSectionBundleEntry:
   Attributes:
@@ -28492,18 +28492,18 @@ PartialClientHitRegProjectileSnapshotData:
   - Name: AttackRecords
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct SendingPlayer>
+    Type: TArray<Struct HitRegSnapshotProjectileRecord>
   ClassSize: '0x18'
 PartialHitRegProjectileSnapshotData:
   Attributes:
   - Name: AttackerClientRecords
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct HitRegRecordProjectileShotRpc>
+    Type: TArray<Struct HitRegSnapshotProjectileRecord>
   - Name: ServerRecords
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct AttackerClientRecords>
+    Type: TArray<Struct HitRegSnapshotProjectileRecord>
   - Name: ServerAttacker
     Offset: '0x20'
     Size: '0x8'
@@ -28533,11 +28533,11 @@ PartsCustomisation:
   - Name: Parts
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct Template>
+    Type: TArray<Struct PartDesc>
   - Name: InitialEntitlements
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Class Parts>
+    Type: TArray<Class InitialEntitlements>
   ClassSize: '0x20'
 PenaltyRequestEvent:
   Attributes:
@@ -28630,7 +28630,7 @@ PeriodObjectiveCompleteMessage:
   - Name: PlayerGameIds
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct UserId>
+    Type: TArray<Struct Guid>
   - Name: HasReward
     Offset: '0x50'
     Size: '0x1'
@@ -28653,7 +28653,7 @@ PeriodicCommodityMultipliers:
   - Name: Rewards
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct DateTo>
+    Type: TArray<Struct CommodityDemandMultipliers>
   ClassSize: '0x20'
 PeriodicResponse:
   Attributes:
@@ -28873,7 +28873,7 @@ PersistentUserGameSettings:
   - Name: ActionBindings
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct ControllerSensitivity_TridentOfDarkTides>
+    Type: TArray<Struct KeyBinding>
   - Name: AxisBindings
     Offset: '0xb8'
     Size: '0x10'
@@ -29488,11 +29488,11 @@ PetBreedViewModel:
   - Name: Offers
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct IsOwned>
+    Type: TArray<Struct ShopOffer>
   - Name: Categories
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct Offers>
+    Type: TArray<Struct CategoryTab>
   ClassSize: '0x58'
 PetChestCloseRequestEvent:
   Attributes:
@@ -29538,14 +29538,14 @@ PetChestPetEntitlementsUpdatedEvent:
   - Name: Entitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RequestPetChestPetLoadoutEvent>
+    Type: TArray<Struct ChestEntitlementViewModel>
   ClassSize: '0x10'
 PetChestPetLoadoutUpdatedEvent:
   Attributes:
   - Name: Loadout
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct PetChestPetEntitlementsUpdatedEvent>
+    Type: TArray<Struct ChestTabViewModel>
   ClassSize: '0x10'
 PetChestPetNameUpdateFailedEvent:
   Attributes: []
@@ -29565,7 +29565,7 @@ PetChestRemovePetEvent:
   - Name: Removes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class PetChestUnequipPetEvent>
+    Type: TArray<Class Removes>
   ClassSize: '0x10'
 PetChestSuccessfulNameChangeTelemetryEvent:
   Attributes:
@@ -29814,7 +29814,7 @@ PetShopPetBreed:
   - Name: Categories
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Class Description>
+    Type: TArray<Class Categories>
   ClassSize: '0x90'
 PetShopPetSpecies:
   Attributes:
@@ -30000,7 +30000,7 @@ PirateCreationEvent_SavePirate:
   - Name: Outfit
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Class Description>
+    Type: TArray<Class Outfit>
   ClassSize: '0x90'
 PirateCreationEvent_SelectButtonPressed:
   Attributes: []
@@ -30043,11 +30043,11 @@ PirateGeneratorBakeFailureTelemetryEvent:
   - Name: CompleteTextures
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str CompleteTextures>
   - Name: IncompleteTextures
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str IncompleteTextures>
   ClassSize: '0xc8'
 PirateGeneratorBakeTelemetryEvent:
   Attributes:
@@ -30220,7 +30220,7 @@ PirateRemoteServiceModel:
   - Name: Pirates
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct PlayerActiveInWorldMessage>
+    Type: TArray<Struct PirateProfile>
   ClassSize: '0x10'
 PirateRerollEvent_CancelReroll:
   Attributes: []
@@ -30308,7 +30308,7 @@ PlayModeLevelArray:
   - Name: PlayModeLevels
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FirstInteractableTelemetryEvent>
+    Type: TArray<Struct StringAssetReference>
   - Name: SubModes
     Offset: '0x10'
     Size: '0x10'
@@ -30437,14 +30437,14 @@ PlayerAggregatePositionTelemetryFragment:
   - Name: PositionData
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RPCTelemetryFragment>
+    Type: TArray<Struct Vector>
   ClassSize: '0x10'
 PlayerAggregatePositionTelemetryFragmentInput:
   Attributes:
   - Name: PositionData
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct PlayerAggregatePositionTelemetryFragment>
+    Type: TArray<Struct Vector>
   ClassSize: '0x10'
 PlayerArriveLocationTelemetryEvent:
   Attributes:
@@ -30726,11 +30726,11 @@ PlayerBuriedItemServicePlayerTreasureDiscoveredTelemetryEvent:
   - Name: CrewBuryHistory
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct DiscoveredByCrewId>
+    Type: TArray<Struct Guid>
   - Name: CrewDiscoverHistory
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct CrewBuryHistory>
+    Type: TArray<Struct Guid>
   - Name: WasDeferredRewardSent
     Offset: '0x68'
     Size: '0x1'
@@ -30833,11 +30833,11 @@ PlayerBuriedItemsMapBundlePickedUpTelemetryEvent:
   - Name: PlayerBuriedItemMapIds
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct PickedUpByCrewSessionId>
+    Type: TArray<Struct Guid>
   - Name: MapIdsOriginalOwners
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct PlayerBuriedItemMapIds>
+    Type: TArray<Struct Guid>
   ClassSize: '0x80'
 PlayerBuriedItemsMapTakenFromStoreTelemetryEvent:
   Attributes:
@@ -31143,7 +31143,7 @@ PlayerEntitlementsCompact:
   - Name: Loose
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class Status>
+    Type: TArray<Class Loose>
   ClassSize: '0x38'
 PlayerExitedHideoutEvent:
   Attributes: []
@@ -32101,7 +32101,7 @@ PocketWatchHandParams:
   - Name: PrimaryTickAnimations
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct PioneerRewardInfo>
+    Type: TArray<Struct PocketWatchTickAnimation>
   - Name: PrimaryTickAnimationProbabilities
     Offset: '0x10'
     Size: '0x20'
@@ -32390,7 +32390,7 @@ PremiumCatalogOfferData:
   - Name: TileImages
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str TileImages>
   - Name: TileSize
     Offset: '0x18'
     Size: '0x4'
@@ -32457,7 +32457,7 @@ PremiumCatalogOfferGroup:
   - Name: Children
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct Title>
+    Type: TArray<Struct Guid>
   ClassSize: '0x48'
 PremiumCurrencyItem:
   Attributes:
@@ -32637,7 +32637,7 @@ PremiumStoreCardView:
   - Name: Image
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Image>
   - Name: Cost
     Offset: '0x10'
     Size: '0x10'
@@ -32744,7 +32744,7 @@ PremiumStoreItemsView:
   - Name: Items
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct Title>
+    Type: TArray<Struct PremiumStoreOffer>
   - Name: TopBannerUrl
     Offset: '0x20'
     Size: '0x10'
@@ -32766,7 +32766,7 @@ PremiumStoreLandingPageItem:
   - Name: Image
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Image>
   - Name: Cost
     Offset: '0x10'
     Size: '0x10'
@@ -33024,7 +33024,7 @@ ProjectileAttackGroup:
   - Name: Projectiles
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ProjectileHitScanVFX>
+    Type: TArray<Struct WeaponProjectile>
   ClassSize: '0x68'
 ProjectileHitEvent:
   Attributes:
@@ -33055,7 +33055,7 @@ ProjectileHitEvent:
   - Name: TrailData
     Offset: '0x168'
     Size: '0x10'
-    Type: TArray<Struct TelemetryAttackId>
+    Type: TArray<Struct Vector>
   ClassSize: '0x178'
 ProjectileHitScanVFX:
   Attributes:
@@ -33164,7 +33164,7 @@ ProjectileServiceUpdateRewindFailedEvent:
   - Name: AffectedProjectilesTelemetryAttackIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ReapersMarkLevelChanged>
+    Type: TArray<Struct Guid>
   - Name: DamagerType
     Offset: '0x10'
     Size: '0x10'
@@ -33492,7 +33492,7 @@ PurchaseOfferResponse:
   - Name: PurchasedItems
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str PurchasedItems>
   ClassSize: '0x10'
 PurchasePremiumCurrencyErrorEvent:
   Attributes:
@@ -33552,7 +33552,7 @@ PurchaseRequestSuccessResponse:
   - Name: PurchasedItems
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str PurchasedItems>
   ClassSize: '0x20'
 PurchaseShopOfferFailedEvent:
   Attributes: []
@@ -33565,7 +33565,7 @@ PushCachedSlotActionEvent:
   - Name: NotificationIDs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class RadialContextChanged>
+    Type: TArray<Class NotificationIDs>
   ClassSize: '0x40'
 PushToTalkModeChangedEvent:
   Attributes:
@@ -33776,11 +33776,11 @@ QuestBookRepInfo:
   - Name: CurrentBookContents
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int CurrentBookContents>
   - Name: ProcPageList
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct CurrentBookContents>
+    Type: TArray<Struct PageLayoutRepInfo>
   ClassSize: '0x28'
 QuestBootyItemPopUpEntry:
   Attributes:
@@ -33968,11 +33968,11 @@ QuestPoolParams:
   - Name: Quests
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Weight>
+    Type: TArray<Struct WeightedQuestParams>
   - Name: Location
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct Quests>
+    Type: TArray<Struct WeightedVoyageLocationParams>
   - Name: AllowRepeatIslandsWithinQuest
     Offset: '0x28'
     Size: '0x1'
@@ -34784,7 +34784,7 @@ RemoteAchievementCompletionModel:
   - Name: AchievementIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str AchievementIds>
   ClassSize: '0x10'
 RemoteAchievementProgressModel:
   Attributes: []
@@ -34845,7 +34845,7 @@ RemotePreferences:
   - Name: ActionBindings
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct HttpResponseTelemetryFragmentInput>
+    Type: TArray<Struct KeyBindingRemote>
   - Name: AxisBindings
     Offset: '0x10'
     Size: '0x10'
@@ -35302,7 +35302,7 @@ RemoteRewardRequestModel:
   - Name: Pirates
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RewardGrantedMessage>
+    Type: TArray<Struct PirateIdentity>
   - Name: RequestID
     Offset: '0x10'
     Size: '0x10'
@@ -35351,7 +35351,7 @@ RemoveStatusesData:
   - Name: Statuses
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Statuses>
   ClassSize: '0x18'
 RemoveStormData:
   Attributes:
@@ -35439,11 +35439,11 @@ RepairLoadoutFromSeedRpc:
   - Name: Seeds
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int Seeds>
   - Name: CategoriesToApply
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Seeds>
+    Type: TArray<Struct StringClassReference>
   ClassSize: '0x30'
 RepairObjectActionStateConstructionInfo:
   Attributes:
@@ -35483,7 +35483,7 @@ RepairableAuthoritiveRepairState:
   - Name: RepairingList
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Weakclass RepairableState>
+    Type: TArray<Weakclass RepairingList>
   ClassSize: '0x18'
 ReplacementDialogue:
   Attributes:
@@ -35583,7 +35583,7 @@ RequestArmoryItemLoadoutEvent:
   - Name: Categories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Categories>
   ClassSize: '0x10'
 RequestAuthoritativeFire:
   Attributes:
@@ -35604,7 +35604,7 @@ RequestClearClothingCategoryPiratePreviewEvent:
   - Name: ClothingCategories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class RequestRandomiseClothingCategoryPiratePreviewEvent>
+    Type: TArray<Class ClothingCategories>
   ClassSize: '0x10'
 RequestCloseInteractionEvent:
   Attributes: []
@@ -35639,7 +35639,7 @@ RequestClothingChestClothingLoadoutEvent:
   - Name: Categories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Categories>
   ClassSize: '0x10'
 RequestClothingChestPreviewUpdateEvent:
   Attributes:
@@ -35722,7 +35722,7 @@ RequestCreateSessionEvent:
   - Name: SessionTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte EnableServerCreationEvent>
+    Type: TArray<Byte SessionTypes>
   ClassSize: '0x10'
 RequestCrewManagementEvent:
   Attributes: []
@@ -35819,7 +35819,7 @@ RequestEquipmentChestItemLoadoutEvent:
   - Name: Categories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Categories>
   ClassSize: '0x10'
 RequestEventShopOffersEvent:
   Attributes:
@@ -35871,7 +35871,7 @@ RequestOpenPossessionsChestEvent:
   - Name: Categories
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Categories>
   ClassSize: '0x18'
 RequestOpenShopEvent:
   Attributes:
@@ -35903,7 +35903,7 @@ RequestPetChestPetLoadoutEvent:
   - Name: Categories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Categories>
   ClassSize: '0x10'
 RequestPetChestPreviewUpdateEvent:
   Attributes:
@@ -35998,7 +35998,7 @@ RequestRandomiseClothingCategoryPiratePreviewEvent:
   - Name: ClothingCategories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class RequestEquipClothingPiratePreviewEvent>
+    Type: TArray<Class ClothingCategories>
   ClassSize: '0x10'
 RequestRealMoneyPurchasePremiumShopOfferEvent:
   Attributes:
@@ -36058,7 +36058,7 @@ RequestShipCustomizationChestShipCustomizationLoadoutEvent:
   - Name: Categories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Categories>
   ClassSize: '0x10'
 RequestShipCustomizationChestUnequipShipCustomizationEvent:
   Attributes:
@@ -36131,7 +36131,7 @@ RequiredClothingData:
   - Name: RequiredClothing
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class RequiredNumberToMatch>
+    Type: TArray<Class RequiredClothing>
   ClassSize: '0x18'
 RequiredShipCustomizationData:
   Attributes:
@@ -36142,7 +36142,7 @@ RequiredShipCustomizationData:
   - Name: RequiredShipCustomizations
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class RequiredNumberToMatch>
+    Type: TArray<Class RequiredShipCustomizations>
   ClassSize: '0x18'
 ReservedCrewSlotData:
   Attributes:
@@ -36205,7 +36205,7 @@ ResponseEventSchedulerStatusNetworkEvent:
   - Name: EventStatus
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str EventStatus>
   ClassSize: '0x20'
 ResponseMigrationStatusNetworkEvent:
   Attributes:
@@ -36256,7 +36256,7 @@ RetrieveAllPiratesRequestSuccessEvent:
   - Name: PirateProfiles
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct UserId>
+    Type: TArray<Struct PirateProfile>
   - Name: RequestID
     Offset: '0x28'
     Size: '0x10'
@@ -36301,7 +36301,7 @@ RewardDefinition:
   - Name: PrerequisiteEntitlements
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class Rewards>
+    Type: TArray<Class PrerequisiteEntitlements>
   - Name: AllowedFromInsecureSources
     Offset: '0x38'
     Size: '0x1'
@@ -36343,7 +36343,7 @@ RewardGrantedEvent:
   - Name: Entitlements
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Entitlements>
   - Name: RequestID
     Offset: '0x40'
     Size: '0x10'
@@ -36370,7 +36370,7 @@ RewardGrantedMessage:
   - Name: Entitlements
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Entitlements>
   - Name: RequestID
     Offset: '0x40'
     Size: '0x10'
@@ -36397,7 +36397,7 @@ RewardGrantedNetworkEvent:
   - Name: Entitlements
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Entitlements>
   - Name: DeferralReason
     Offset: '0x50'
     Size: '0x10'
@@ -36408,7 +36408,7 @@ RewardGroup:
   - Name: Rewards
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class NumRewards>
+    Type: TArray<Class Rewards>
   ClassSize: '0x10'
 RewardGroupList:
   Attributes:
@@ -36438,7 +36438,7 @@ RewardHandInPopupNetworkEvent:
   - Name: Images
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Images>
   ClassSize: '0x68'
 RewardId:
   Attributes:
@@ -36507,7 +36507,7 @@ RewardRequestCrew:
   - Name: Pirates
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct CrewId>
+    Type: TArray<Struct PirateIdentity>
   - Name: EmissaryAffiliation
     Offset: '0x20'
     Size: '0x8'
@@ -36522,7 +36522,7 @@ RewardRequestCrewGame:
   - Name: Pirates
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct CrewId>
+    Type: TArray<Struct PirateIdentity>
   - Name: EmissaryAffiliation
     Offset: '0x20'
     Size: '0x8'
@@ -36537,7 +36537,7 @@ RewardRequestEvent:
   - Name: PirateIdentities
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct RequestID>
+    Type: TArray<Struct PirateIdentity>
   - Name: CrewId
     Offset: '0x20'
     Size: '0x10'
@@ -36579,7 +36579,7 @@ RewardRequestFailedMessage:
   - Name: PirateIdentities
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RewardRequestSucceededMessage>
+    Type: TArray<Struct PirateIdentity>
   - Name: RequestID
     Offset: '0x10'
     Size: '0x10'
@@ -36679,7 +36679,7 @@ RewardRequestMessage:
   - Name: Pirates
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct AwardGoldMessage>
+    Type: TArray<Struct PirateIdentity>
   - Name: RequestID
     Offset: '0x10'
     Size: '0x10'
@@ -36747,7 +36747,7 @@ RewardRuntimeDefinition:
   - Name: PrerequisiteEntitlements
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Class PopUp>
+    Type: TArray<Class PrerequisiteEntitlements>
   ClassSize: '0x38'
 RewindComponentParameters:
   Attributes:
@@ -36838,7 +36838,7 @@ RiddleMapContents:
   - Name: Text
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RumbleParameters>
+    Type: TArray<Struct TreasureMapTextDesc>
   - Name: Progress
     Offset: '0x10'
     Size: '0x4'
@@ -36994,7 +36994,7 @@ RiddleTextRenderer:
   - Name: DroppedTextCharacters
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str DroppedTextCharacters>
   - Name: VerticallyCentredText
     Offset: '0x30'
     Size: '0x1'
@@ -37252,7 +37252,7 @@ ScoreRewardValueData:
   - Name: ScoreByPeriod
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int ScoreByPeriod>
   ClassSize: '0x30'
 ScoreRewardWieldableItemData:
   Attributes:
@@ -37371,14 +37371,14 @@ SeagullManagerFormationOffset:
   - Name: Offsets
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct NumInFormation>
+    Type: TArray<Struct Vector>
   ClassSize: '0x10'
 SeagullManagerLocationBank:
   Attributes:
   - Name: Locations
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: MotionModifierDataAsset
     Offset: '0x10'
     Size: '0x8'
@@ -37421,11 +37421,11 @@ SeagullManagerPseudoRandomEntry:
   - Name: RollCurveIndices
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int RollCurveIndices>
   - Name: OffsetCurveIndices
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int OffsetCurveIndices>
   ClassSize: '0x48'
 SeasonChallengeGroupInfo:
   Attributes:
@@ -37471,7 +37471,7 @@ SeasonChallengeInfo:
   - Name: Goals
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct LocalizedCopy>
+    Type: TArray<Struct SeasonGoalInfo>
   ClassSize: '0x68'
 SeasonGoalCompletionMessage:
   Attributes:
@@ -37616,7 +37616,7 @@ SeasonRewardEarnedMessage:
   - Name: Rewards
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct MultipleRewards>
+    Type: TArray<Struct SeasonReward>
   ClassSize: '0xa0'
 SeasonTierInfo:
   Attributes:
@@ -37660,7 +37660,7 @@ SendShipStatsServerRpc:
   - Name: Stats
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct Controller>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x28'
 SequenceResponseContainer:
   Attributes:
@@ -37968,7 +37968,7 @@ ServerMigrationCrewMigrationStatus:
   - Name: Locations
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct Migratable>
+    Type: TArray<Struct Vector2D>
   ClassSize: '0x28'
 ServerMigrationFailedDevTelemetryEvent:
   Attributes:
@@ -38362,7 +38362,7 @@ ServerUpdateCrewState:
   - Name: Locations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct CrewId>
+    Type: TArray<Struct Vector2D>
   - Name: SessionType
     Offset: '0x20'
     Size: '0x1'
@@ -38370,7 +38370,7 @@ ServerUpdateCrewState:
   - Name: ContendedResources
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 ContendedResources>
   ClassSize: '0x38'
 ServerWieldSet:
   Attributes:
@@ -38454,7 +38454,7 @@ SessionCreationRequestModel:
   - Name: Crews
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct PrivateServerId>
+    Type: TArray<Struct SessionCreationCrewModel>
   ClassSize: '0x20'
 SessionCreationResponseModel:
   Attributes:
@@ -38693,7 +38693,7 @@ SetNonVerbalOption:
   - Name: Phrases
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Phrases>
   ClassSize: '0x18'
 SetNonVerbalOptionWithImages:
   Attributes:
@@ -39283,14 +39283,14 @@ ShipCustomizationChestShipCustomizationEntitlementsUpdatedEvent:
   - Name: Entitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RequestShipCustomizationChestShipCustomizationLoadoutEvent>
+    Type: TArray<Struct ChestEntitlementViewModel>
   ClassSize: '0x10'
 ShipCustomizationChestShipCustomizationLoadoutUpdatedEvent:
   Attributes:
   - Name: Loadout
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ShipCustomizationChestShipCustomizationEntitlementsUpdatedEvent>
+    Type: TArray<Struct ChestTabViewModel>
   ClassSize: '0x10'
 ShipCustomizationChestUnequipShipCustomizationEvent:
   Attributes:
@@ -39304,11 +39304,11 @@ ShipCustomizationLoadout:
   - Name: Customizations
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class ShipDesc>
+    Type: TArray<Class Customizations>
   - Name: InitialCustomizations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Class Customizations>
+    Type: TArray<Class InitialCustomizations>
   - Name: HasInitialCustomizationsSet
     Offset: '0x20'
     Size: '0x1'
@@ -39329,7 +39329,7 @@ ShipCustomizationPersistenceModel:
   - Name: EntitlementKeys
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   ClassSize: '0x10'
 ShipDamageEntry:
   Attributes:
@@ -39672,7 +39672,7 @@ ShipLiveryCatalogue:
   - Name: Liveries
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct OwnedCrewCostumes>
+    Type: TArray<Struct ShipLiveryCatalogueEntry>
   ClassSize: '0x10'
 ShipLiveryCatalogueEntry:
   Attributes:
@@ -39777,7 +39777,7 @@ ShipLiveryTeamSet:
   - Name: ShipCatalogue
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct OtherCrewMuteStateResponse>
+    Type: TArray<Struct ShipLiveryCatalogueEntry>
   ClassSize: '0x10'
 ShipLiveryTextureSwap:
   Attributes:
@@ -39928,7 +39928,7 @@ ShipPartsCataloguePartCustomisation:
   - Name: Customisation
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct FriendlyName>
+    Type: TArray<Struct PartCustomisation>
   ClassSize: '0x20'
 ShipPartsCataloguePartCustomisations:
   Attributes:
@@ -39946,7 +39946,7 @@ ShipPersistenceModel:
   - Name: PartDamagePersistenceModels
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ServerSpireInfo>
+    Type: TArray<Struct ShipPartDamagePersistenceModel>
   - Name: HullDamageModel
     Offset: '0x10'
     Size: '0x10'
@@ -40051,11 +40051,11 @@ ShipSnapshotV1:
   - Name: Cannons
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct Masts>
+    Type: TArray<Struct CannonStateData>
   - Name: StorageContainers
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct Cannons>
+    Type: TArray<Struct StorageContainerStateData>
   ClassSize: '0x68'
 ShipSpawnedTelemetryEvent:
   Attributes: []
@@ -40279,7 +40279,7 @@ ShopOffer:
   - Name: ClientIds
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str ClientIds>
   - Name: CatalogName
     Offset: '0x98'
     Size: '0x10'
@@ -40287,7 +40287,7 @@ ShopOffer:
   - Name: PurchaseStats
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str PurchaseStats>
   - Name: Prerequisites
     Offset: '0xb8'
     Size: '0x68'
@@ -40306,7 +40306,7 @@ ShopOfferPrerequisites:
   - Name: Entitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Entitlements>
   ClassSize: '0x68'
 ShopOfferPrice:
   Attributes:
@@ -40324,11 +40324,11 @@ ShopOffersEvent:
   - Name: Offers
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RequestShopOffersFailedEvent>
+    Type: TArray<Struct ShopOffer>
   - Name: Categories
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Categories>
   ClassSize: '0x20'
 ShovelDigActionStateConstructionInfo:
   Attributes:
@@ -40480,15 +40480,15 @@ SingleStickMapping:
   - Name: BindToLeftX
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ActionMappingKeyLookupFallback>
+    Type: TArray<Struct SingleStickMappingAxis>
   - Name: BindToLeftY
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct BindToLeftX>
+    Type: TArray<Struct SingleStickMappingAxis>
   - Name: BindToRightX
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct BindToLeftY>
+    Type: TArray<Struct SingleStickMappingAxis>
   - Name: BindToRightY
     Offset: '0x30'
     Size: '0x10'
@@ -40496,7 +40496,7 @@ SingleStickMapping:
   - Name: Unbind
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Unbind>
   ClassSize: '0x50'
 SingleStickMappingAxis:
   Attributes:
@@ -40613,7 +40613,7 @@ SirenStatuesSelector_BasedOnShipSize_Entry:
   - Name: SirenStatueTypes
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<AssetClass ShipSize>
+    Type: TArray<AssetClass SirenStatueTypes>
   ClassSize: '0x30'
 SiteGeneratorThresholdData:
   Attributes:
@@ -40690,11 +40690,11 @@ SittingActionStateParams:
   - Name: AllowedInteractableTypes
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Class AllowInteractWithOtherObjectsWhileSitting>
+    Type: TArray<Class AllowedInteractableTypes>
   - Name: AllowedInteractionNotificationInputIds
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Class AllowedInteractableTypes>
+    Type: TArray<Class AllowedInteractionNotificationInputIds>
   - Name: DockingMode
     Offset: '0x88'
     Size: '0x1'
@@ -40731,7 +40731,7 @@ SkeletonAICharacterItemSpecificAudioEvents:
   - Name: ItemCategories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class DefaultEvents>
+    Type: TArray<Class ItemCategories>
   - Name: Events
     Offset: '0x10'
     Size: '0x20'
@@ -40963,7 +40963,7 @@ SpawnableItemCategory:
   - Name: SpawnableItems
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class Category>
+    Type: TArray<Class SpawnableItems>
   ClassSize: '0x18'
 SpawnablePrisoner:
   Attributes:
@@ -41208,7 +41208,7 @@ StaggerModifiersEntry:
   - Name: StaggersThatCancelThisModifier
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Byte StaggerToModify>
+    Type: TArray<Byte StaggersThatCancelThisModifier>
   - Name: OnlyWhenSprinting
     Offset: '0x18'
     Size: '0x1'
@@ -41362,7 +41362,7 @@ StartPickupObjectActionRuleParams:
   - Name: WieldableItemSizesDisablePickup
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte ItemProxyImpactVfxParams>
+    Type: TArray<Byte WieldableItemSizesDisablePickup>
   ClassSize: '0x10'
 StartUpdatingConstellationVisibility:
   Attributes: []
@@ -41397,7 +41397,7 @@ StatBatchMessageValues:
   - Name: Values
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<UInt64 >
+    Type: TArray<UInt64 Values>
   ClassSize: '0x10'
 StatEvent:
   Attributes: []
@@ -41605,7 +41605,7 @@ StorageContainerWeightedItemListEntryList:
   - Name: Entries
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Weight>
+    Type: TArray<Struct StorageContainerWeightedItemListEntry>
   ClassSize: '0x18'
 StorageContainerWeightedItemListFeatureGroup:
   Attributes:
@@ -41666,7 +41666,7 @@ StoreCatalogItem:
   - Name: MetaTags
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str MetaTags>
   - Name: DisplayPriority
     Offset: '0x90'
     Size: '0x4'
@@ -41894,7 +41894,7 @@ StreamersRequest:
   - Name: StreamingStatuses
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct CreatorCrewSettings>
+    Type: TArray<Struct StreamingStatusModel>
   ClassSize: '0x10'
 StreamersResponse:
   Attributes:
@@ -42349,7 +42349,7 @@ TQStructGenParams:
   - Name: CombatGroups
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct MaxCombatOccurrences>
+    Type: TArray<Struct TQStructGenGroup>
   - Name: MaxNonCombatOccurrences
     Offset: '0x60'
     Size: '0x4'
@@ -42484,7 +42484,7 @@ TaleQuestProgressTelemetryEvent:
   - Name: Context
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Context>
   ClassSize: '0x20'
 TaleQuestSelectWreckLocationTelemetryEvent:
   Attributes:
@@ -42507,7 +42507,7 @@ TaleQuestSelectWreckLocationTelemetryEvent:
   - Name: FlagResponses
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int FlagResponses>
   ClassSize: '0x30'
 TaleQuestStateTelemetryEvent:
   Attributes:
@@ -42532,7 +42532,7 @@ TaleQuestTaskStartedTelemetryEvent:
   - Name: Context
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Context>
   - Name: TaskId
     Offset: '0x20'
     Size: '0x10'
@@ -42580,7 +42580,7 @@ TallTaleContestInfo:
   - Name: ValidShipTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class ContestVoyageInfo>
+    Type: TArray<Class ValidShipTypes>
   - Name: WeightedTallTaleContest
     Offset: '0x10'
     Size: '0x10'
@@ -42591,18 +42591,18 @@ TallTaleDebugInfo:
   - Name: StepNames
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str StepNames>
   - Name: VariableStringBlobs
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str VariableStringBlobs>
   ClassSize: '0x20'
 TavernBoardAvailableMapsEvent:
   Attributes:
   - Name: Maps
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct TavernBoardMyMapsRequestEvent>
+    Type: TArray<Struct ITavernBoardMap>
   ClassSize: '0x10'
 TavernBoardAvailableMapsRequestEvent:
   Attributes: []
@@ -42631,7 +42631,7 @@ TavernBoardMyMapsEvent:
   - Name: MyMaps
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct WorldRegionMapping>
+    Type: TArray<Struct ITavernBoardMap>
   ClassSize: '0x10'
 TavernBoardMyMapsRequestEvent:
   Attributes: []
@@ -43020,7 +43020,7 @@ TimedContestEventAction:
   - Name: SpecialEvents
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Byte Duration>
+    Type: TArray<Byte SpecialEvents>
   - Name: AudioEvents
     Offset: '0x90'
     Size: '0x10'
@@ -43037,7 +43037,7 @@ TimedDoorLandmarkReactions:
   - Name: Reactions
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct KeySequence>
+    Type: TArray<Struct LandmarkReactionKeyFrame>
   ClassSize: '0x10'
 TimedDoorOpenedEvent:
   Attributes: []
@@ -43435,7 +43435,7 @@ TreasureMapData:
   - Name: TreasureLocations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct LocationSource>
+    Type: TArray<Struct TreasureLocationData>
   - Name: RotationFromNorth
     Offset: '0x20'
     Size: '0x4'
@@ -43957,7 +43957,7 @@ TypedIslandItemSpawnLocationData:
   - Name: Locations
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct LocationType>
+    Type: TArray<Struct IslandItemSpawnLocationData>
   ClassSize: '0x18'
 TypedStorageContainerContentTypeSelectorEntry:
   Attributes:
@@ -44084,7 +44084,7 @@ UICompanySkin:
   - Name: ProgressIconUrls
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str ProgressIconUrls>
   - Name: ShopTopBannerUrl
     Offset: '0x40'
     Size: '0x10'
@@ -44395,14 +44395,14 @@ UIWhatsNewAvailableArticlesEvent:
   - Name: Articles
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Articles>
   ClassSize: '0x10'
 UIWhatsNewAvailableArticlesTelemetryEvent:
   Attributes:
   - Name: Articles
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str Articles>
   ClassSize: '0x10'
 UndoRepairActionStateConstructionInfo:
   Attributes:
@@ -44438,7 +44438,7 @@ UnlockableEntitlementCategory:
   - Name: Entitlements
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class Category>
+    Type: TArray<Class Entitlements>
   ClassSize: '0x18'
 UnmountedFromMountpointEvent:
   Attributes: []
@@ -44473,7 +44473,7 @@ UpdateRadialIconUrls:
   - Name: ItemUrlCacheList
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str ItemUrlCacheList>
   ClassSize: '0x18'
 UpdateRivalVoteCountUIEvent:
   Attributes:
@@ -44502,7 +44502,7 @@ UpdateSelectedPirateEvent:
   - Name: Outfit
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Class BootFlowStartAccessibilitySettingsStateEvent>
+    Type: TArray<Class Outfit>
   ClassSize: '0x90'
 UpdateSignOutButtonVisibilityEvent:
   Attributes: []
@@ -44668,11 +44668,11 @@ UseMountedWeaponActionStateParams:
   - Name: AimYawInputId
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Class FireInputId>
+    Type: TArray<Class AimYawInputId>
   - Name: AimPitchInputId
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Class AimYawInputId>
+    Type: TArray<Class AimPitchInputId>
   ClassSize: '0x58'
 UseSingleStickCameraToggleModeChangedEvent:
   Attributes:
@@ -44832,7 +44832,7 @@ VaultPuzzleSolutionPositions:
   - Name: SolutionPositions
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int SolutionPositions>
   ClassSize: '0x10'
 VaultReserved:
   Attributes:
@@ -44944,7 +44944,7 @@ VirtualActionBindingDefinition:
   - Name: ActionNames
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: BindingName
     Offset: '0x10'
     Size: '0x10'
@@ -44955,7 +44955,7 @@ VirtualAxisBindingDefinition:
   - Name: AxisNames
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: CombinedAxisNamesX
     Offset: '0x10'
     Size: '0x10'
@@ -45165,7 +45165,7 @@ VomitVFX:
   - Name: No1stObjects
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Class Component3rd>
+    Type: TArray<Class No1stObjects>
   - Name: Controller
     Offset: '0x78'
     Size: '0x8'
@@ -45191,7 +45191,7 @@ VoteSessionData:
   - Name: Votes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct PrioritisedPromptWithHandle>
+    Type: TArray<Struct VotersByOption>
   - Name: SessionId
     Offset: '0x10'
     Size: '0x10'
@@ -45220,11 +45220,11 @@ VoyageAndTaleProposalsUpdatedEvent:
   - Name: VoyageProposalEntitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct VoyageProposalsUpdatedEvent>
+    Type: TArray<Struct VoyageProposalDescViewModel>
   - Name: TaleProposalEntitlements
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct VoyageProposalEntitlements>
+    Type: TArray<Struct VoyageProposalDescViewModel>
   - Name: VoyageIsActive
     Offset: '0x20'
     Size: '0x1'
@@ -45271,7 +45271,7 @@ VoyageBegunAnimationEvent:
   - Name: CrewMembers
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str CrewMembers>
   - Name: ChapterIndex
     Offset: '0x48'
     Size: '0x4'
@@ -45552,11 +45552,11 @@ VoyageInfo:
   - Name: VoyageCompletionStats
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct Rank>
+    Type: TArray<Struct PlayerStat>
   - Name: ReapersMarkCompletionStats
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct VoyageCompletionStats>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x80'
 VoyageInventoryClosedEvent:
   Attributes: []
@@ -45639,7 +45639,7 @@ VoyageLocationRandomParams:
   - Name: Seas
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Class OnlyNamedIslandsListDataAsset>
+    Type: TArray<Class Seas>
   - Name: WithinDistance
     Offset: '0x28'
     Size: '0x1'
@@ -45662,7 +45662,7 @@ VoyageMembershipInfo:
   - Name: QuestStatus
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct Id>
+    Type: TArray<Struct QuestInfo>
   - Name: Company
     Offset: '0x58'
     Size: '0x8'
@@ -45694,11 +45694,11 @@ VoyageMembershipInfo:
   - Name: VoyageCompletionStats
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct Rank>
+    Type: TArray<Struct PlayerStat>
   - Name: ReapersMarkCompletionStats
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct VoyageCompletionStats>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x90'
 VoyageOffer:
   Attributes:
@@ -45800,11 +45800,11 @@ VoyageParticipantView:
   - Name: VoyageCompletionStats
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct CollectCratesPopUpId>
+    Type: TArray<Struct PlayerStat>
   - Name: ReapersMarkCompletionStats
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<Struct VoyageCompletionStats>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0xc8'
 VoyageParticipantViewContainer:
   Attributes:
@@ -45848,7 +45848,7 @@ VoyageProposalCompletedNetworkEvent:
   - Name: VoyageProposalIds
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str VoyageProposalIds>
   ClassSize: '0x20'
 VoyageProposalDescViewModel:
   Attributes:
@@ -45892,7 +45892,7 @@ VoyageProposalOverride:
   - Name: NecessaryFeatures
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: Proposal
     Offset: '0x10'
     Size: '0x8'
@@ -45944,7 +45944,7 @@ VoyageProposalsUpdatedEvent:
   - Name: Entitlements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ForceCloseVoyageInventoryEvent>
+    Type: TArray<Struct VoyageProposalDescViewModel>
   ClassSize: '0x10'
 VoyageProposedEvent:
   Attributes:
@@ -45992,7 +45992,7 @@ VoyageRecipe:
   - Name: QuestPools
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct QuestSelection>
+    Type: TArray<Struct QuestPoolParams>
   - Name: UseFixedFinalQuestPool
     Offset: '0xe0'
     Size: '0x1'
@@ -46012,11 +46012,11 @@ VoyageRecipe:
   - Name: CompletionStats
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<Struct DoNotNotifyParticipantsOnVoyageComplete>
+    Type: TArray<Struct PlayerStat>
   - Name: ReapersMarkCompletionStats
     Offset: '0x130'
     Size: '0x10'
-    Type: TArray<Struct CompletionStats>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x140'
 VoyageStartTelemetryEvent:
   Attributes:
@@ -46632,7 +46632,7 @@ WeightedItemDescSpawner:
   - Name: SpawnedItems
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Weakclass SpawnList>
+    Type: TArray<Weakclass SpawnedItems>
   ClassSize: '0x58'
 WeightedPetAnimation:
   Attributes:
@@ -47119,7 +47119,7 @@ WieldableItemActionVisuals:
   - Name: BlockActions
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class ItemActionEffectHandle>
+    Type: TArray<Class BlockActions>
   - Name: AnimVariant
     Offset: '0x10'
     Size: '0x1'
@@ -47299,7 +47299,7 @@ WorldMapSetLocation:
   - Name: MapPins
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct WorldMapRequestWorldResponse>
+    Type: TArray<Struct Vector2D>
   - Name: MaxMapPins
     Offset: '0x10'
     Size: '0x4'
@@ -47442,46 +47442,46 @@ WorldSnapshotV1:
   - Name: Crews
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct CustomTriggerOverlap>
+    Type: TArray<Struct CrewSnapshotV1>
   - Name: Ships
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Crews>
+    Type: TArray<Struct ShipSnapshotV1>
   - Name: Islands
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct Ships>
+    Type: TArray<Struct IslandSnapshotV1>
   - Name: Rowboats
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct Islands>
+    Type: TArray<Struct RowboatSnapshotV1>
   - Name: WorldEvents
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct Rowboats>
+    Type: TArray<Struct WorldEventSnapshotV1>
   ClassSize: '0x60'
 WorldSnapshotV2:
   Attributes:
   - Name: Crews
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct RemoveStatusesData>
+    Type: TArray<Struct CrewSnapshotV1>
   - Name: Ships
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Crews>
+    Type: TArray<Struct ShipSnapshotV1>
   - Name: Islands
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct Ships>
+    Type: TArray<Struct IslandSnapshotV1>
   - Name: Rowboats
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct Islands>
+    Type: TArray<Struct RowboatSnapshotV1>
   - Name: WorldEvents
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct Rowboats>
+    Type: TArray<Struct WorldEventSnapshotV1>
   ClassSize: '0x60'
 WreckEvictionAfterMigrationFailedTelemetryEvent:
   Attributes:
@@ -47524,19 +47524,19 @@ WreckSpawnBlockingObjectArrays:
   - Name: ShipsLocations
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct QuestVariableShipwreck>
+    Type: TArray<Struct Vector>
   - Name: AmbientShipwrecks
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Interface ShipsLocations>
+    Type: TArray<Interface AmbientShipwrecks>
   - Name: ActiveCustomShipwrecks
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Interface AmbientShipwrecks>
+    Type: TArray<Interface ActiveCustomShipwrecks>
   - Name: AmbientWrecksWithoutClosePlayers
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct ActiveCustomShipwrecks>
+    Type: TArray<Struct WreckMatch>
   - Name: AmbientWrecksWithClosePlayers
     Offset: '0x60'
     Size: '0x10'

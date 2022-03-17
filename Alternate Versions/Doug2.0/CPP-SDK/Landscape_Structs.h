@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class LandscapeInfoLayerSettings: public None
+struct LandscapeInfoLayerSettings
 {
 public:
 	Class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x10
-class WeightmapLayerAllocationInfo: public None
+struct WeightmapLayerAllocationInfo
 {
 public:
 	Class LandscapeLayerInfoObject*                              LayerInfo;                                         // 0x0(0x8)
@@ -27,14 +27,14 @@ public:
 
 
 // Size 0x50
-class GizmoSelectData: public None
+struct GizmoSelectData
 {
 public:
 };
 
 
 // Size 0x30
-class GrassVariety: public None
+struct GrassVariety
 {
 public:
 	Class StaticMesh*                                            GrassMesh;                                         // 0x0(0x8)
@@ -52,14 +52,14 @@ public:
 
 
 // Size 0x1
-class LandscapeImportLayerInfo: public None
+struct LandscapeImportLayerInfo
 {
 public:
 };
 
 
 // Size 0x8
-class LandscapeLayerStruct: public None
+struct LandscapeLayerStruct
 {
 public:
 	Class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
@@ -67,14 +67,14 @@ public:
 
 
 // Size 0x1
-class LandscapeEditorLayerSettings: public None
+struct LandscapeEditorLayerSettings
 {
 public:
 };
 
 
 // Size 0x20
-class LandscapeWeightmapUsage: public None
+struct LandscapeWeightmapUsage
 {
 public:
 	Class LandscapeComponent*                                    ChannelUsage;                                      // 0x0(0x8)
@@ -82,7 +82,7 @@ public:
 
 
 // Size 0x38
-class LandscapeSplineMeshEntry: public None
+struct LandscapeSplineMeshEntry
 {
 public:
 	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
@@ -98,7 +98,7 @@ public:
 
 
 // Size 0x18
-class LandscapeSplineSegmentConnection: public None
+struct LandscapeSplineSegmentConnection
 {
 public:
 	Class LandscapeSplineControlPoint*                           ControlPoint;                                      // 0x0(0x8)
@@ -108,7 +108,7 @@ public:
 
 
 // Size 0x40
-class LandscapeSplineInterpPoint: public None
+struct LandscapeSplineInterpPoint
 {
 public:
 	Struct Vector                                                Center;                                            // 0x0(0xc)
@@ -121,7 +121,7 @@ public:
 
 
 // Size 0x10
-class LandscapeSplineConnection: public None
+struct LandscapeSplineConnection
 {
 public:
 	Class LandscapeSplineSegment*                                Segment;                                           // 0x0(0x8)
@@ -130,28 +130,28 @@ public:
 
 
 // Size 0x1
-class ForeignWorldSplineData: public None
+struct ForeignWorldSplineData
 {
 public:
 };
 
 
 // Size 0x1
-class ForeignSplineSegmentData: public None
+struct ForeignSplineSegmentData
 {
 public:
 };
 
 
 // Size 0x1
-class ForeignControlPointData: public None
+struct ForeignControlPointData
 {
 public:
 };
 
 
 // Size 0x48
-class GrassInput: public None
+struct GrassInput
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -161,7 +161,7 @@ public:
 
 
 // Size 0x98
-class LayerBlendInput: public None
+struct LayerBlendInput
 {
 public:
 	struct FName                                                 LayerName;                                         // 0x0(0x8)

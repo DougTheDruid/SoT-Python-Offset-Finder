@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xc
-class CleanlinessInfo: public None
+struct CleanlinessInfo
 {
 public:
 	byte                                                         DirtinessType;                                     // 0x0(0x1)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x1
-class EventQuickCleanRequest: public None
+struct EventQuickCleanRequest
 {
 public:
 };

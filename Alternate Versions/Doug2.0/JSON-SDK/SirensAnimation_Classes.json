@@ -93,7 +93,7 @@
       },
       {
         "Name": "StrategiesForAggressiveAnimations",
-        "Type": "TArray<Class UseAlternativeAggressiveAnimation>",
+        "Type": "TArray<Class StrategiesForAggressiveAnimations>",
         "Size": "0x10",
         "Offset": "0x5a0"
       },

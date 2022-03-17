@@ -15,7 +15,7 @@ StoryNPCDialogConditionalContext:
   - Name: StoryNames
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -31,11 +31,11 @@ StoryService:
   - Name: Stories
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<Struct StorySpawnedActorsAssetList>
+    Type: TArray<Struct StoryInfo>
   - Name: ActiveStories
     Offset: '0x408'
     Size: '0x10'
-    Type: TArray<Struct Stories>
+    Type: TArray<Struct StoryInfo>
   ClassSize: '0xe0'
   FullSize: '0x4b0'
   InheritedSize: '0x3d0'
@@ -61,7 +61,7 @@ StorySpawnedActorsDataAsset:
   - Name: StorySpawnedActorsList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Asset>
+    Type: TArray<Struct StorySpawnedActorsList>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

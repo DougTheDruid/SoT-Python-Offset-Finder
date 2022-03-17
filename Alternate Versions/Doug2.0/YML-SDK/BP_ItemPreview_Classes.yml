@@ -2,51 +2,51 @@
 # https://github.com/DougTheDruid
 BP_ItemPreview_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x590'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: Camera_Dog
     Offset: '0x598'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: None
+  - Name: Camera_Far
     Offset: '0x5a0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: None
+  - Name: Camera_Mid
     Offset: '0x5a8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: None
+  - Name: Camera_Near
     Offset: '0x5b0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: None
+  - Name: IconBillboard
     Offset: '0x5b8'
     Size: '0x8'
     Type: Class BillboardComponent*
-  - Name: None
+  - Name: Camera_Default
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: None
+  - Name: ChildActor
     Offset: '0x5c8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: HiddenDftMesh
     Offset: '0x5d0'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: None
+  - Name: ItemMesh
     Offset: '0x5d8'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: None
+  - Name: Camera
     Offset: '0x5e0'
     Size: '0x8'
     Type: Class CameraComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x5e8'
     Size: '0x8'
     Type: Class SceneComponent*

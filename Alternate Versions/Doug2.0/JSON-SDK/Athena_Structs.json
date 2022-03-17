@@ -812,7 +812,7 @@
       },
       {
         "Name": "HitResults",
-        "Type": "TArray<Struct Instigator>",
+        "Type": "TArray<Struct HitResult>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -859,7 +859,7 @@
       },
       {
         "Name": "HitResults",
-        "Type": "TArray<Struct RemoteAimData>",
+        "Type": "TArray<Struct HitResult>",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -1353,7 +1353,7 @@
       },
       {
         "Name": "Crews",
-        "Type": "TArray<Struct AllianceId>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -1579,7 +1579,7 @@
       },
       {
         "Name": "Loop",
-        "Type": "TArray<Struct In>",
+        "Type": "TArray<Struct NPCAnimationSequence>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -1619,7 +1619,7 @@
       },
       {
         "Name": "OneShotSequence",
-        "Type": "TArray<Struct SequenceName>",
+        "Type": "TArray<Struct NPCAnimationSequence>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -3201,13 +3201,13 @@
       },
       {
         "Name": "AssetsToLoad",
-        "Type": "TArray<Struct LoadForServer>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "BlueprintsToLoad",
-        "Type": "TArray<AssetClass AssetsToLoad>",
+        "Type": "TArray<AssetClass BlueprintsToLoad>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -3372,13 +3372,13 @@
       },
       {
         "Name": "VoyageCompletionStats",
-        "Type": "TArray<Struct CollectCratesPopUpId>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
         "Name": "ReapersMarkCompletionStats",
-        "Type": "TArray<Struct VoyageCompletionStats>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0xb8"
       }
@@ -3754,7 +3754,7 @@
       },
       {
         "Name": "Levels",
-        "Type": "TArray<Struct Feature>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -3765,7 +3765,7 @@
     "Attributes": [
       {
         "Name": "PlayModeLevels",
-        "Type": "TArray<Struct FirstInteractableTelemetryEvent>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -4078,7 +4078,7 @@
     "Attributes": [
       {
         "Name": "TriggerEmoteNames",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -4411,31 +4411,31 @@
       },
       {
         "Name": "VotesRequiredForSendToBrig",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int VotesRequiredForSendToBrig>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "VotesRequiredForReleaseFromBrig",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int VotesRequiredForReleaseFromBrig>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "VotesRequiredForScuttleShip",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int VotesRequiredForScuttleShip>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "VotesRequiredForChangeMatchmakingVisibility",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int VotesRequiredForChangeMatchmakingVisibility>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "VotesRequiredForArenaRivalVote",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int VotesRequiredForArenaRivalVote>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -5009,7 +5009,7 @@
       },
       {
         "Name": "WaveSuicideTime",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float WaveSuicideTime>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -5206,7 +5206,7 @@
       },
       {
         "Name": "CategoryGroupBounds",
-        "Type": "TArray<Struct NumberOfGroups>",
+        "Type": "TArray<Struct MerchantQuestCategoryGroupBounds>",
         "Size": "0x10",
         "Offset": "0xb0"
       }
@@ -5462,7 +5462,7 @@
       },
       {
         "Name": "Seas",
-        "Type": "TArray<Class OnlyNamedIslandsListDataAsset>",
+        "Type": "TArray<Class Seas>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -5519,13 +5519,13 @@
       },
       {
         "Name": "Quests",
-        "Type": "TArray<Struct Weight>",
+        "Type": "TArray<Struct WeightedQuestParams>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "Location",
-        "Type": "TArray<Struct Quests>",
+        "Type": "TArray<Struct WeightedVoyageLocationParams>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -5566,7 +5566,7 @@
       },
       {
         "Name": "QuestPools",
-        "Type": "TArray<Struct QuestSelection>",
+        "Type": "TArray<Struct QuestPoolParams>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
@@ -5596,13 +5596,13 @@
       },
       {
         "Name": "CompletionStats",
-        "Type": "TArray<Struct DoNotNotifyParticipantsOnVoyageComplete>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x120"
       },
       {
         "Name": "ReapersMarkCompletionStats",
-        "Type": "TArray<Struct CompletionStats>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x130"
       }
@@ -6121,43 +6121,43 @@
     "Attributes": [
       {
         "Name": "WwiseStateGroups",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 WwiseStateGroups>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "WwiseStateValues",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 WwiseStateValues>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "PeakProxyCountsPools",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 PeakProxyCountsPools>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "PeakProxyCounts",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 PeakProxyCounts>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "StreamFindFailedIDs",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 StreamFindFailedIDs>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "StreamOpenFailedIDs",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 StreamOpenFailedIDs>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "StreamReadFailedIDs",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 StreamReadFailedIDs>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -6210,7 +6210,7 @@
     "Attributes": [
       {
         "Name": "GCFrametimesMs",
-        "Type": "TArray<Float None>",
+        "Type": "TArray<Float GCFrametimesMs>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -6602,7 +6602,7 @@
       },
       {
         "Name": "Locations",
-        "Type": "TArray<Struct FeatureToggle>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -6625,7 +6625,7 @@
       },
       {
         "Name": "Locations",
-        "Type": "TArray<Struct WorldSize>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -6951,49 +6951,49 @@
     "Attributes": [
       {
         "Name": "HandInPlayerStats",
-        "Type": "TArray<Struct CompanyId>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "HandInStolenPlayerStats",
-        "Type": "TArray<Struct HandInPlayerStats>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "HandInAsPirateLegendPlayerStats",
-        "Type": "TArray<Struct HandInStolenPlayerStats>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "HandInOnSchedulePlayerStats",
-        "Type": "TArray<Struct HandInAsPirateLegendPlayerStats>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "HandInAsPirateLegendOnSchedulePlayerStats",
-        "Type": "TArray<Struct HandInOnSchedulePlayerStats>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "HandInAsEmissaryPlayerStats",
-        "Type": "TArray<Struct HandInAsPirateLegendOnSchedulePlayerStats>",
+        "Type": "TArray<Struct EmissaryBootyItemStats>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "HandInAsMaxLevelEmissaryPlayerStats",
-        "Type": "TArray<Struct HandInAsEmissaryPlayerStats>",
+        "Type": "TArray<Struct EmissaryBootyItemStats>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "HandInStolenAsEmissaryPlayerStats",
-        "Type": "TArray<Struct HandInAsMaxLevelEmissaryPlayerStats>",
+        "Type": "TArray<Struct EmissaryBootyItemStats>",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -7016,7 +7016,7 @@
       },
       {
         "Name": "Stats",
-        "Type": "TArray<Struct EmissaryCompany>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -7062,7 +7062,7 @@
       },
       {
         "Name": "StatsToFire",
-        "Type": "TArray<Struct FlameOfFateType>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -7098,7 +7098,7 @@
     "Attributes": [
       {
         "Name": "StatsToFireUponBellRing",
-        "Type": "TArray<Struct BellDesc>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -7433,13 +7433,13 @@
       },
       {
         "Name": "CurrentBookContents",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int CurrentBookContents>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "ProcPageList",
-        "Type": "TArray<Struct CurrentBookContents>",
+        "Type": "TArray<Struct PageLayoutRepInfo>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -7507,13 +7507,13 @@
       },
       {
         "Name": "Descriptions",
-        "Type": "TArray<Struct Location>",
+        "Type": "TArray<Struct TreasureMapTextDesc>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "Targets",
-        "Type": "TArray<Struct Descriptions>",
+        "Type": "TArray<Struct BountyMapTargetDesc>",
         "Size": "0x10",
         "Offset": "0x58"
       }
@@ -7564,7 +7564,7 @@
       },
       {
         "Name": "LoadoutsToSubstituteIn",
-        "Type": "TArray<Struct LoadoutToSubstituteOut>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -8077,7 +8077,7 @@
       },
       {
         "Name": "InteractionPointsToEnable",
-        "Type": "TArray<Class CurseTag>",
+        "Type": "TArray<Class InteractionPointsToEnable>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -8100,7 +8100,7 @@
       },
       {
         "Name": "InteractionPointsToDisable",
-        "Type": "TArray<Class CurseTag>",
+        "Type": "TArray<Class InteractionPointsToDisable>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -8564,7 +8564,7 @@
     "Attributes": [
       {
         "Name": "MapPins",
-        "Type": "TArray<Struct WorldMapRequestWorldResponse>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -8896,7 +8896,7 @@
       },
       {
         "Name": "RepairingList",
-        "Type": "TArray<Weakclass RepairableState>",
+        "Type": "TArray<Weakclass RepairingList>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -8953,13 +8953,13 @@
       },
       {
         "Name": "StatsToFireOnHandIn",
-        "Type": "TArray<Struct CompanyId>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "StatsToFireOnDamagedHandIn",
-        "Type": "TArray<Struct StatsToFireOnHandIn>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -8976,7 +8976,7 @@
       },
       {
         "Name": "StatsToFireUponPerfectOnTimeHandIn",
-        "Type": "TArray<Struct CompanyId>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -9004,13 +9004,13 @@
     "Attributes": [
       {
         "Name": "OnTimeRewards",
-        "Type": "TArray<Struct CompanyId>",
+        "Type": "TArray<Struct RewardId>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LateRewards",
-        "Type": "TArray<Struct OnTimeRewards>",
+        "Type": "TArray<Struct RewardId>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -9132,7 +9132,7 @@
       },
       {
         "Name": "Outfit",
-        "Type": "TArray<Class Wonkiness>",
+        "Type": "TArray<Class Outfit>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -9155,7 +9155,7 @@
       },
       {
         "Name": "Groups",
-        "Type": "TArray<Struct MinNumOfEachEthnicity>",
+        "Type": "TArray<Struct CarouselPirateGroup>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -9385,7 +9385,7 @@
     "Attributes": [
       {
         "Name": "Entitlements",
-        "Type": "TArray<Class CategoryDefaultsUnit>",
+        "Type": "TArray<Class Entitlements>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -9413,7 +9413,7 @@
     "Attributes": [
       {
         "Name": "PartialStrings",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str PartialStrings>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -9851,7 +9851,7 @@
     "Attributes": [
       {
         "Name": "Items",
-        "Type": "TArray<Class ClothingLoadoutContainer>",
+        "Type": "TArray<Class Items>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -9944,7 +9944,7 @@
     "Attributes": [
       {
         "Name": "Meshes",
-        "Type": "TArray<Struct CloudDomeParameters>",
+        "Type": "TArray<Struct CloudTypeDefinition>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -10590,7 +10590,7 @@
       },
       {
         "Name": "SpecialEvents",
-        "Type": "TArray<Byte AudioEvents>",
+        "Type": "TArray<Byte SpecialEvents>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -10619,7 +10619,7 @@
     "Attributes": [
       {
         "Name": "Events",
-        "Type": "TArray<Struct ShipIdentityOwnership>",
+        "Type": "TArray<Struct ContestCeremonyEvent>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -10784,7 +10784,7 @@
     "Attributes": [
       {
         "Name": "Liveries",
-        "Type": "TArray<Struct OwnedCrewCostumes>",
+        "Type": "TArray<Struct ShipLiveryCatalogueEntry>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -10801,7 +10801,7 @@
       },
       {
         "Name": "Costumes",
-        "Type": "TArray<AssetClass CrewId>",
+        "Type": "TArray<AssetClass Costumes>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -10830,7 +10830,7 @@
       },
       {
         "Name": "SpecialEvents",
-        "Type": "TArray<Byte Duration>",
+        "Type": "TArray<Byte SpecialEvents>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -11116,7 +11116,7 @@
       },
       {
         "Name": "ScoreByPeriod",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int ScoreByPeriod>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -11254,7 +11254,7 @@
     "Attributes": [
       {
         "Name": "ShipCatalogue",
-        "Type": "TArray<Struct OtherCrewMuteStateResponse>",
+        "Type": "TArray<Struct ShipLiveryCatalogueEntry>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -11538,7 +11538,7 @@
       },
       {
         "Name": "CrewMembers",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str CrewMembers>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -11976,13 +11976,13 @@
       },
       {
         "Name": "CrewsData",
-        "Type": "TArray<Struct ScoreboardTitle>",
+        "Type": "TArray<Struct ContestMapCrewData>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "ScoreReasonsToShowInfo",
-        "Type": "TArray<Byte CrewsData>",
+        "Type": "TArray<Byte ScoreReasonsToShowInfo>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -12016,7 +12016,7 @@
       },
       {
         "Name": "CrewIds",
-        "Type": "TArray<Struct DestinationEndpoint>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -12093,7 +12093,7 @@
     "Attributes": [
       {
         "Name": "ValidShipTypes",
-        "Type": "TArray<Class ContestVoyageInfo>",
+        "Type": "TArray<Class ValidShipTypes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -12110,7 +12110,7 @@
     "Attributes": [
       {
         "Name": "ValidShipTypes",
-        "Type": "TArray<Class ContestVoyagesSelectorUnit>",
+        "Type": "TArray<Class ValidShipTypes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -12491,7 +12491,7 @@
       },
       {
         "Name": "RepairingList",
-        "Type": "TArray<Weakclass RepairableState>",
+        "Type": "TArray<Weakclass RepairingList>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -12519,7 +12519,7 @@
     "Attributes": [
       {
         "Name": "Companies",
-        "Type": "TArray<Class SingleNPCCompanyRedirectionData>",
+        "Type": "TArray<Class Companies>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -12553,7 +12553,7 @@
     "Attributes": [
       {
         "Name": "Classes",
-        "Type": "TArray<AssetClass ItemDiggingAudioOverride>",
+        "Type": "TArray<AssetClass Classes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -12570,7 +12570,7 @@
     "Attributes": [
       {
         "Name": "Classes",
-        "Type": "TArray<AssetClass ItemDiggingBaseOverride>",
+        "Type": "TArray<AssetClass Classes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -12587,7 +12587,7 @@
     "Attributes": [
       {
         "Name": "Classes",
-        "Type": "TArray<AssetClass ItemBuryingBaseOverride>",
+        "Type": "TArray<AssetClass Classes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -12604,7 +12604,7 @@
     "Attributes": [
       {
         "Name": "Classes",
-        "Type": "TArray<AssetClass ItemDiggingEffectsOverride>",
+        "Type": "TArray<AssetClass Classes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -12621,7 +12621,7 @@
     "Attributes": [
       {
         "Name": "Classes",
-        "Type": "TArray<AssetClass DioramaDebugMenuEntry>",
+        "Type": "TArray<AssetClass Classes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -12828,7 +12828,7 @@
     "Attributes": [
       {
         "Name": "EntitlementIds",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str EntitlementIds>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -12845,7 +12845,7 @@
       },
       {
         "Name": "RequiredClothing",
-        "Type": "TArray<Class RequiredNumberToMatch>",
+        "Type": "TArray<Class RequiredClothing>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -12862,7 +12862,7 @@
       },
       {
         "Name": "RequiredItemsInLoadout",
-        "Type": "TArray<Class RequiredNumberToMatch>",
+        "Type": "TArray<Class RequiredItemsInLoadout>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -13317,7 +13317,7 @@
       },
       {
         "Name": "FogBanks",
-        "Type": "TArray<Class Weight>",
+        "Type": "TArray<Class FogBanks>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -13536,7 +13536,7 @@
       },
       {
         "Name": "CombatGroups",
-        "Type": "TArray<Struct MaxCombatOccurrences>",
+        "Type": "TArray<Struct TQStructGenGroup>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -13730,7 +13730,7 @@
       },
       {
         "Name": "RestrictToSurface",
-        "Type": "TArray<Byte ItemDesc>",
+        "Type": "TArray<Byte RestrictToSurface>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -13764,7 +13764,7 @@
     "Attributes": [
       {
         "Name": "Holes",
-        "Type": "TArray<Weakclass BuriedBuriable>",
+        "Type": "TArray<Weakclass Holes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -14088,13 +14088,13 @@
       },
       {
         "Name": "AimYawInputId",
-        "Type": "TArray<Class FireInputId>",
+        "Type": "TArray<Class AimYawInputId>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "AimPitchInputId",
-        "Type": "TArray<Class AimYawInputId>",
+        "Type": "TArray<Class AimPitchInputId>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -14308,7 +14308,7 @@
     "Attributes": [
       {
         "Name": "PreventedHealthChanges",
-        "Type": "TArray<Byte IngestedByKrakenActionStateParams>",
+        "Type": "TArray<Byte PreventedHealthChanges>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -14650,7 +14650,7 @@
     "Attributes": [
       {
         "Name": "SolutionPositions",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int SolutionPositions>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -14832,7 +14832,7 @@
       },
       {
         "Name": "FallbackCategories",
-        "Type": "TArray<Class ItemCategory>",
+        "Type": "TArray<Class FallbackCategories>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -14999,7 +14999,7 @@
       },
       {
         "Name": "RequiredShipCustomizations",
-        "Type": "TArray<Class RequiredNumberToMatch>",
+        "Type": "TArray<Class RequiredShipCustomizations>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -15010,7 +15010,7 @@
     "Attributes": [
       {
         "Name": "WeaponSlots",
-        "Type": "TArray<Class ItemPreviewUpdateCameraEvent>",
+        "Type": "TArray<Class WeaponSlots>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -15316,7 +15316,7 @@
     "Attributes": [
       {
         "Name": "Phrases",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Phrases>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -16516,7 +16516,7 @@
     "Attributes": [
       {
         "Name": "MoonPhaseAngles",
-        "Type": "TArray<Float None>",
+        "Type": "TArray<Float MoonPhaseAngles>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -16970,7 +16970,7 @@
       },
       {
         "Name": "Items",
-        "Type": "TArray<Class Capacities>",
+        "Type": "TArray<Class Items>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -17496,7 +17496,7 @@
       },
       {
         "Name": "AcceptableAlternativeCrateItemData",
-        "Type": "TArray<Struct CrateItemDesc>",
+        "Type": "TArray<Struct MerchantQuestItemDescAndReward>",
         "Size": "0x10",
         "Offset": "0x58"
       },
@@ -17555,7 +17555,7 @@
       },
       {
         "Name": "ItemData",
-        "Type": "TArray<Struct DeliveryLocationIslandName>",
+        "Type": "TArray<Struct MerchantMapItemData>",
         "Size": "0x10",
         "Offset": "0xe0"
       }
@@ -17752,7 +17752,7 @@
     "Attributes": [
       {
         "Name": "DisplayText",
-        "Type": "TArray<Text None>",
+        "Type": "TArray<Struct FText>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -17936,7 +17936,7 @@
       },
       {
         "Name": "OptionUsageCounter",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int OptionUsageCounter>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -17993,7 +17993,7 @@
       },
       {
         "Name": "RequiredRanks",
-        "Type": "TArray<Class Text>",
+        "Type": "TArray<Class RequiredRanks>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -18291,7 +18291,7 @@
       },
       {
         "Name": "Categories",
-        "Type": "TArray<Class Description>",
+        "Type": "TArray<Class Categories>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -18359,13 +18359,13 @@
     "Attributes": [
       {
         "Name": "CompleteTextures",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str CompleteTextures>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
         "Name": "IncompleteTextures",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str IncompleteTextures>",
         "Size": "0x10",
         "Offset": "0xb8"
       }
@@ -18549,7 +18549,7 @@
     "Attributes": [
       {
         "Name": "ClothingCategories",
-        "Type": "TArray<Class RequestRandomiseClothingCategoryPiratePreviewEvent>",
+        "Type": "TArray<Class ClothingCategories>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -18560,7 +18560,7 @@
     "Attributes": [
       {
         "Name": "ClothingCategories",
-        "Type": "TArray<Class RequestEquipClothingPiratePreviewEvent>",
+        "Type": "TArray<Class ClothingCategories>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -19054,13 +19054,13 @@
     "Attributes": [
       {
         "Name": "PreCachedEntitlementTypes",
-        "Type": "TArray<Class PlayerEntitlements>",
+        "Type": "TArray<Class PreCachedEntitlementTypes>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "Entitlements",
-        "Type": "TArray<Class PreCachedEntitlementTypes>",
+        "Type": "TArray<Class Entitlements>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -19088,7 +19088,7 @@
       },
       {
         "Name": "Loose",
-        "Type": "TArray<Class Status>",
+        "Type": "TArray<Class Loose>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -19346,7 +19346,7 @@
     "Attributes": [
       {
         "Name": "PrimaryTickAnimations",
-        "Type": "TArray<Struct PioneerRewardInfo>",
+        "Type": "TArray<Struct PocketWatchTickAnimation>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -19705,7 +19705,7 @@
     "Attributes": [
       {
         "Name": "Entitlements",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Entitlements>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -19746,7 +19746,7 @@
       },
       {
         "Name": "AssetPaths",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str AssetPaths>",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -19758,7 +19758,7 @@
       },
       {
         "Name": "PurchaseStats",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str PurchaseStats>",
         "Size": "0x10",
         "Offset": "0xb8"
       },
@@ -19805,7 +19805,7 @@
       },
       {
         "Name": "TileImages",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str TileImages>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -19906,7 +19906,7 @@
       },
       {
         "Name": "Children",
-        "Type": "TArray<Struct Title>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -19999,7 +19999,7 @@
       },
       {
         "Name": "MetaTags",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str MetaTags>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -20102,7 +20102,7 @@
     "Attributes": [
       {
         "Name": "Image",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Image>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -20267,7 +20267,7 @@
       },
       {
         "Name": "ClientIds",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str ClientIds>",
         "Size": "0x10",
         "Offset": "0x88"
       },
@@ -20279,7 +20279,7 @@
       },
       {
         "Name": "PurchaseStats",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str PurchaseStats>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -20308,7 +20308,7 @@
     "Attributes": [
       {
         "Name": "Entitlements",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Entitlements>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -20394,7 +20394,7 @@
     "Attributes": [
       {
         "Name": "Image",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Image>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -20494,7 +20494,7 @@
       },
       {
         "Name": "Items",
-        "Type": "TArray<Struct Title>",
+        "Type": "TArray<Struct PremiumStoreOffer>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -21185,13 +21185,13 @@
       },
       {
         "Name": "Offers",
-        "Type": "TArray<Struct IsOwned>",
+        "Type": "TArray<Struct ShopOffer>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "Categories",
-        "Type": "TArray<Struct Offers>",
+        "Type": "TArray<Struct CategoryTab>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -21296,7 +21296,7 @@
       },
       {
         "Name": "TrailData",
-        "Type": "TArray<Struct TelemetryAttackId>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x168"
       }
@@ -21407,7 +21407,7 @@
     "Attributes": [
       {
         "Name": "Projectiles",
-        "Type": "TArray<Struct ProjectileHitScanVFX>",
+        "Type": "TArray<Struct WeaponProjectile>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -21446,7 +21446,7 @@
     "Attributes": [
       {
         "Name": "RequiredConfigurationCombo",
-        "Type": "TArray<Int8 None>",
+        "Type": "TArray<Int8 RequiredConfigurationCombo>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -21779,7 +21779,7 @@
       },
       {
         "Name": "Icons",
-        "Type": "TArray<Struct Background>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -21790,7 +21790,7 @@
     "Attributes": [
       {
         "Name": "NecessaryFeatures",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -22100,7 +22100,7 @@
       },
       {
         "Name": "DroppedTextCharacters",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str DroppedTextCharacters>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -22165,7 +22165,7 @@
     "Attributes": [
       {
         "Name": "Text",
-        "Type": "TArray<Struct RumbleParameters>",
+        "Type": "TArray<Struct TreasureMapTextDesc>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -22215,7 +22215,7 @@
     "Attributes": [
       {
         "Name": "Locations",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -22280,13 +22280,13 @@
       },
       {
         "Name": "RollCurveIndices",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int RollCurveIndices>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "OffsetCurveIndices",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int OffsetCurveIndices>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -22314,7 +22314,7 @@
     "Attributes": [
       {
         "Name": "Offsets",
-        "Type": "TArray<Struct NumInFormation>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -22432,7 +22432,7 @@
       },
       {
         "Name": "Locations",
-        "Type": "TArray<Struct CrewId>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -22444,7 +22444,7 @@
       },
       {
         "Name": "ContendedResources",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 ContendedResources>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -22685,7 +22685,7 @@
       },
       {
         "Name": "Customisation",
-        "Type": "TArray<Struct FriendlyName>",
+        "Type": "TArray<Struct PartCustomisation>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -22872,7 +22872,7 @@
       },
       {
         "Name": "ItemOffers",
-        "Type": "TArray<Struct VoyageOffers>",
+        "Type": "TArray<Struct ShopOffer>",
         "Size": "0x10",
         "Offset": "0x1f8"
       }
@@ -22965,19 +22965,19 @@
     "Attributes": [
       {
         "Name": "Offers",
-        "Type": "TArray<Struct ShopOffersEvent>",
+        "Type": "TArray<Struct ShopOffer>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Categories",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Categories>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "GildedVoyages",
-        "Type": "TArray<Struct Categories>",
+        "Type": "TArray<Struct ShopOffer>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -22988,13 +22988,13 @@
     "Attributes": [
       {
         "Name": "Offers",
-        "Type": "TArray<Struct RequestShopOffersFailedEvent>",
+        "Type": "TArray<Struct ShopOffer>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Categories",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Categories>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -23102,7 +23102,7 @@
     "Attributes": [
       {
         "Name": "SirenStatueTypes",
-        "Type": "TArray<AssetClass ShipSize>",
+        "Type": "TArray<AssetClass SirenStatueTypes>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -23136,7 +23136,7 @@
     "Attributes": [
       {
         "Name": "ItemCategories",
-        "Type": "TArray<Class DefaultEvents>",
+        "Type": "TArray<Class ItemCategories>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -23241,13 +23241,13 @@
       },
       {
         "Name": "CrewStatsToFireWhenDefeated",
-        "Type": "TArray<Struct NameplateOverride>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "AllianceStatsToFireWhenDefeated",
-        "Type": "TArray<Struct CrewStatsToFireWhenDefeated>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -23280,7 +23280,7 @@
       },
       {
         "Name": "StaggersThatCancelThisModifier",
-        "Type": "TArray<Byte StaggerToModify>",
+        "Type": "TArray<Byte StaggersThatCancelThisModifier>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -23683,7 +23683,7 @@
     "Attributes": [
       {
         "Name": "CrewMembers",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str CrewMembers>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -23735,7 +23735,7 @@
       },
       {
         "Name": "Ranks",
-        "Type": "TArray<Class CampaignId>",
+        "Type": "TArray<Class Ranks>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -24355,7 +24355,7 @@
       },
       {
         "Name": "No1stObjects",
-        "Type": "TArray<Class Component3rd>",
+        "Type": "TArray<Class No1stObjects>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -25637,7 +25637,7 @@
       },
       {
         "Name": "Outfit",
-        "Type": "TArray<Class Description>",
+        "Type": "TArray<Class Outfit>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -26057,7 +26057,7 @@
     "Attributes": [
       {
         "Name": "Outfit",
-        "Type": "TArray<Class BootFlowStartAccessibilitySettingsStateEvent>",
+        "Type": "TArray<Class Outfit>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -26275,13 +26275,13 @@
     "Attributes": [
       {
         "Name": "Crews",
-        "Type": "TArray<Struct EventSessionCodeTextboxTextFromVirtualKeyboard>",
+        "Type": "TArray<Struct LobbyCrewInfo>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "CrewlessMembers",
-        "Type": "TArray<Struct Crews>",
+        "Type": "TArray<Struct LobbyCrewMember>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -26487,7 +26487,7 @@
     "Attributes": [
       {
         "Name": "SessionTypes",
-        "Type": "TArray<Byte EnableServerCreationEvent>",
+        "Type": "TArray<Byte SessionTypes>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -26672,7 +26672,7 @@
       },
       {
         "Name": "Crews",
-        "Type": "TArray<Struct PrivateServerId>",
+        "Type": "TArray<Struct SessionCreationCrewModel>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -26683,7 +26683,7 @@
     "Attributes": [
       {
         "Name": "Locations",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Locations>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -26717,13 +26717,13 @@
     "Attributes": [
       {
         "Name": "PlayModeTags",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str PlayModeTags>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "PlayModeStates",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str PlayModeStates>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -27084,7 +27084,7 @@
     "Attributes": [
       {
         "Name": "StreamingStatuses",
-        "Type": "TArray<Struct CreatorCrewSettings>",
+        "Type": "TArray<Struct StreamingStatusModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -27252,7 +27252,7 @@
     "Attributes": [
       {
         "Name": "EventStatus",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str EventStatus>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -27484,7 +27484,7 @@
     "Attributes": [
       {
         "Name": "Curses",
-        "Type": "TArray<Byte AthenaPlayerZonePenetrationTrackerUpdateEvent>",
+        "Type": "TArray<Byte Curses>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -29204,7 +29204,7 @@
     "Attributes": [
       {
         "Name": "Marks",
-        "Type": "TArray<Struct MapTexture>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -30141,7 +30141,7 @@
       },
       {
         "Name": "Entitlements",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Entitlements>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -30266,7 +30266,7 @@
     "Attributes": [
       {
         "Name": "Values",
-        "Type": "TArray<UInt64 >",
+        "Type": "TArray<UInt64 Values>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -30294,7 +30294,7 @@
       },
       {
         "Name": "DataBlob",
-        "Type": "TArray<Byte Connection>",
+        "Type": "TArray<Byte DataBlob>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -30305,7 +30305,7 @@
     "Attributes": [
       {
         "Name": "DataBlob",
-        "Type": "TArray<Byte RequestWalletBalanceUpdateHUDEvent>",
+        "Type": "TArray<Byte DataBlob>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -30393,7 +30393,7 @@
       },
       {
         "Name": "Categories",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Categories>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -30460,13 +30460,13 @@
     "Attributes": [
       {
         "Name": "Adds",
-        "Type": "TArray<Class ClothingChestUnequipClothingEvent>",
+        "Type": "TArray<Class Adds>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Removes",
-        "Type": "TArray<Class Adds>",
+        "Type": "TArray<Class Removes>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -30560,7 +30560,7 @@
     "Attributes": [
       {
         "Name": "Removes",
-        "Type": "TArray<Class PetChestUnequipPetEvent>",
+        "Type": "TArray<Class Removes>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -30709,7 +30709,7 @@
       },
       {
         "Name": "Statuses",
-        "Type": "TArray<Struct Ship>",
+        "Type": "TArray<Struct Status>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -30974,7 +30974,7 @@
       },
       {
         "Name": "Crews",
-        "Type": "TArray<Struct MermaidStatueDespawnReason>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -31805,13 +31805,13 @@
       },
       {
         "Name": "Cannons",
-        "Type": "TArray<Struct Masts>",
+        "Type": "TArray<Struct CannonStateData>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "StorageContainers",
-        "Type": "TArray<Struct Cannons>",
+        "Type": "TArray<Struct StorageContainerStateData>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -31930,31 +31930,31 @@
     "Attributes": [
       {
         "Name": "Crews",
-        "Type": "TArray<Struct RemoveStatusesData>",
+        "Type": "TArray<Struct CrewSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Ships",
-        "Type": "TArray<Struct Crews>",
+        "Type": "TArray<Struct ShipSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "Islands",
-        "Type": "TArray<Struct Ships>",
+        "Type": "TArray<Struct IslandSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "Rowboats",
-        "Type": "TArray<Struct Islands>",
+        "Type": "TArray<Struct RowboatSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "WorldEvents",
-        "Type": "TArray<Struct Rowboats>",
+        "Type": "TArray<Struct WorldEventSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -31971,7 +31971,7 @@
       },
       {
         "Name": "Statuses",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Statuses>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -31988,7 +31988,7 @@
       },
       {
         "Name": "Statuses",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Statuses>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -31999,7 +31999,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetItemsInRadiusData>",
+        "Type": "TArray<Struct ItemStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32049,7 +32049,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetSkeletonThronesDataResponse>",
+        "Type": "TArray<Struct VaultStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32060,7 +32060,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetBeaconsDataResponse>",
+        "Type": "TArray<Struct SkeletonThroneStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32071,7 +32071,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetGeysersDataResponse>",
+        "Type": "TArray<Struct BeaconStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32082,7 +32082,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetVolcanoesDataResponse>",
+        "Type": "TArray<Struct GeyserStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32093,7 +32093,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetShipwrecksDataResponse>",
+        "Type": "TArray<Struct VolcanoActorStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32104,7 +32104,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetAmmoChestsDataResponse>",
+        "Type": "TArray<Struct ShipwreckStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32115,7 +32115,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetNPCsDataResponse>",
+        "Type": "TArray<Struct AmmoChestStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32126,7 +32126,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetCampfiresDataResponse>",
+        "Type": "TArray<Struct NPCStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32137,7 +32137,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetStorageContainersDataResponse>",
+        "Type": "TArray<Struct CampfireStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32148,7 +32148,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetCannonsDataResponse>",
+        "Type": "TArray<Struct StorageContainerStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32159,7 +32159,7 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct RemoveAITypeSpawnRuleData>",
+        "Type": "TArray<Struct CannonStateData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32412,13 +32412,13 @@
       },
       {
         "Name": "EnableEntityIds",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int EnableEntityIds>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "DisableEntityIds",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int DisableEntityIds>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -32429,7 +32429,7 @@
     "Attributes": [
       {
         "Name": "EnableEvents",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -32929,31 +32929,31 @@
     "Attributes": [
       {
         "Name": "Crews",
-        "Type": "TArray<Struct CustomTriggerOverlap>",
+        "Type": "TArray<Struct CrewSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Ships",
-        "Type": "TArray<Struct Crews>",
+        "Type": "TArray<Struct ShipSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "Islands",
-        "Type": "TArray<Struct Ships>",
+        "Type": "TArray<Struct IslandSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "Rowboats",
-        "Type": "TArray<Struct Islands>",
+        "Type": "TArray<Struct RowboatSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "WorldEvents",
-        "Type": "TArray<Struct Rowboats>",
+        "Type": "TArray<Struct WorldEventSnapshotV1>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -33281,7 +33281,7 @@
     "Attributes": [
       {
         "Name": "CarouselSeeds",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int CarouselSeeds>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -33326,13 +33326,13 @@
     "Attributes": [
       {
         "Name": "Seeds",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int Seeds>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "CategoriesToApply",
-        "Type": "TArray<Struct Seeds>",
+        "Type": "TArray<Struct StringClassReference>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -33395,7 +33395,7 @@
     "Attributes": [
       {
         "Name": "AffectedProjectilesTelemetryAttackIds",
-        "Type": "TArray<Struct ReapersMarkLevelChanged>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -33801,7 +33801,7 @@
       },
       {
         "Name": "LogLines",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str LogLines>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -33909,7 +33909,7 @@
     "Attributes": [
       {
         "Name": "AchievementIds",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str AchievementIds>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -33936,7 +33936,7 @@
       },
       {
         "Name": "Offers",
-        "Type": "TArray<Struct DisplayDescription>",
+        "Type": "TArray<Struct CatalogOffer>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -34031,7 +34031,7 @@
     "Attributes": [
       {
         "Name": "PurchasedItems",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str PurchasedItems>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -34065,7 +34065,7 @@
       },
       {
         "Name": "PurchasedItems",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str PurchasedItems>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -34890,7 +34890,7 @@
       },
       {
         "Name": "PlayerGameIds",
-        "Type": "TArray<Struct UserId>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -34948,7 +34948,7 @@
       },
       {
         "Name": "PirateProfiles",
-        "Type": "TArray<Struct UserId>",
+        "Type": "TArray<Struct PirateProfile>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -35113,7 +35113,7 @@
     "Attributes": [
       {
         "Name": "Pirates",
-        "Type": "TArray<Struct PlayerActiveInWorldMessage>",
+        "Type": "TArray<Struct PirateProfile>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -35162,7 +35162,7 @@
     "Attributes": [
       {
         "Name": "ActionBindings",
-        "Type": "TArray<Struct HttpResponseTelemetryFragmentInput>",
+        "Type": "TArray<Struct KeyBindingRemote>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -35880,7 +35880,7 @@
       },
       {
         "Name": "ResponseHeaders",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str ResponseHeaders>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -35939,7 +35939,7 @@
       },
       {
         "Name": "ResponseHeaders",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str ResponseHeaders>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -35964,7 +35964,7 @@
     "Attributes": [
       {
         "Name": "Pirates",
-        "Type": "TArray<Struct RewardGrantedMessage>",
+        "Type": "TArray<Struct PirateIdentity>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -36023,7 +36023,7 @@
       },
       {
         "Name": "Entitlements",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Entitlements>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -36110,7 +36110,7 @@
     "Attributes": [
       {
         "Name": "PirateIdentities",
-        "Type": "TArray<Struct RewardRequestSucceededMessage>",
+        "Type": "TArray<Struct PirateIdentity>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -36404,7 +36404,7 @@
       },
       {
         "Name": "Pirates",
-        "Type": "TArray<Struct CrewId>",
+        "Type": "TArray<Struct PirateIdentity>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -36421,7 +36421,7 @@
     "Attributes": [
       {
         "Name": "Pirates",
-        "Type": "TArray<Struct AwardGoldMessage>",
+        "Type": "TArray<Struct PirateIdentity>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -36699,7 +36699,7 @@
       },
       {
         "Name": "ServerLocations",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str ServerLocations>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -36760,7 +36760,7 @@
       },
       {
         "Name": "Images",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Images>",
         "Size": "0x10",
         "Offset": "0x58"
       }
@@ -38193,7 +38193,7 @@
       },
       {
         "Name": "ActionBindings",
-        "Type": "TArray<Struct ControllerSensitivity_TridentOfDarkTides>",
+        "Type": "TArray<Struct KeyBinding>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -39421,13 +39421,13 @@
     "Attributes": [
       {
         "Name": "Text",
-        "Type": "TArray<Text None>",
+        "Type": "TArray<Struct FText>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Images",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Images>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -39439,7 +39439,7 @@
       },
       {
         "Name": "FlagIcons",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str FlagIcons>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -39457,7 +39457,7 @@
       },
       {
         "Name": "StyleModifiers",
-        "Type": "TArray<Byte Audio>",
+        "Type": "TArray<Byte StyleModifiers>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -39574,7 +39574,7 @@
       },
       {
         "Name": "CrewMembers",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str CrewMembers>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -39751,7 +39751,7 @@
     "Attributes": [
       {
         "Name": "Articles",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Articles>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -39997,7 +39997,7 @@
     "Attributes": [
       {
         "Name": "ItemLoadout",
-        "Type": "TArray<Struct ArmoryItemEntitlementsUpdatedEvent>",
+        "Type": "TArray<Struct ChestTabViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40008,7 +40008,7 @@
     "Attributes": [
       {
         "Name": "ItemEntitlements",
-        "Type": "TArray<Struct RequestArmoryItemLoadoutEvent>",
+        "Type": "TArray<Struct ChestEntitlementViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40019,7 +40019,7 @@
     "Attributes": [
       {
         "Name": "Categories",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Categories>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40062,7 +40062,7 @@
     "Attributes": [
       {
         "Name": "Loadout",
-        "Type": "TArray<Struct ClothingChestClothingEntitlementsUpdatedEvent>",
+        "Type": "TArray<Struct ChestTabViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40073,7 +40073,7 @@
     "Attributes": [
       {
         "Name": "Entitlements",
-        "Type": "TArray<Struct RequestEmoteSelectEquipEvent>",
+        "Type": "TArray<Struct ChestEntitlementViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40101,7 +40101,7 @@
     "Attributes": [
       {
         "Name": "Categories",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Categories>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40189,7 +40189,7 @@
     "Attributes": [
       {
         "Name": "CompanyProgress",
-        "Type": "TArray<Struct EventCompanyDataResponse>",
+        "Type": "TArray<Struct UICompanyProgress>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40287,7 +40287,7 @@
       },
       {
         "Name": "ProgressIconUrls",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str ProgressIconUrls>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -40349,7 +40349,7 @@
     "Attributes": [
       {
         "Name": "ItemLoadout",
-        "Type": "TArray<Struct EquipmentChestItemEntitlementsUpdatedEvent>",
+        "Type": "TArray<Struct ChestTabViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40360,7 +40360,7 @@
     "Attributes": [
       {
         "Name": "ItemEntitlements",
-        "Type": "TArray<Struct RequestEquipmentChestItemLoadoutEvent>",
+        "Type": "TArray<Struct ChestEntitlementViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40371,7 +40371,7 @@
     "Attributes": [
       {
         "Name": "Categories",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Categories>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40560,7 +40560,7 @@
     "Attributes": [
       {
         "Name": "Loadout",
-        "Type": "TArray<Struct PetChestPetEntitlementsUpdatedEvent>",
+        "Type": "TArray<Struct ChestTabViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40571,7 +40571,7 @@
     "Attributes": [
       {
         "Name": "Entitlements",
-        "Type": "TArray<Struct RequestPetChestPetLoadoutEvent>",
+        "Type": "TArray<Struct ChestEntitlementViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40582,7 +40582,7 @@
     "Attributes": [
       {
         "Name": "Categories",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Categories>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -40649,7 +40649,7 @@
     "Attributes": [
       {
         "Name": "Equipment",
-        "Type": "TArray<Struct InventoryRequestEvent>",
+        "Type": "TArray<Struct IInventoryItem>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -40891,7 +40891,7 @@
       },
       {
         "Name": "Progressions",
-        "Type": "TArray<Struct ProgressDescriptions>",
+        "Type": "TArray<Struct CappedCount>",
         "Size": "0x10",
         "Offset": "0x58"
       }
@@ -40996,7 +40996,7 @@
       },
       {
         "Name": "EmblemSets",
-        "Type": "TArray<Struct CompanyFlavourText2>",
+        "Type": "TArray<Struct EmblemSetInformation>",
         "Size": "0x10",
         "Offset": "0x160"
       }
@@ -41139,7 +41139,7 @@
     "Attributes": [
       {
         "Name": "FriendsList",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str FriendsList>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -41150,7 +41150,7 @@
     "Attributes": [
       {
         "Name": "FriendsList",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str FriendsList>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -41187,7 +41187,7 @@
     "Attributes": [
       {
         "Name": "CampaignInformation",
-        "Type": "TArray<Struct EventCompanyReputationCampaignInformationRequest>",
+        "Type": "TArray<Struct EventCompanyReputationCampaignInformation>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -41231,7 +41231,7 @@
     "Attributes": [
       {
         "Name": "ReputationData",
-        "Type": "TArray<Struct EventReputationDisplayInformationRequest>",
+        "Type": "TArray<Struct CompanyReputationSummary>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -41246,7 +41246,7 @@
     "Attributes": [
       {
         "Name": "Loadout",
-        "Type": "TArray<Struct ShipCustomizationChestShipCustomizationEntitlementsUpdatedEvent>",
+        "Type": "TArray<Struct ChestTabViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -41257,7 +41257,7 @@
     "Attributes": [
       {
         "Name": "Entitlements",
-        "Type": "TArray<Struct RequestShipCustomizationChestShipCustomizationLoadoutEvent>",
+        "Type": "TArray<Struct ChestEntitlementViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -41268,7 +41268,7 @@
     "Attributes": [
       {
         "Name": "Categories",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Categories>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -41442,13 +41442,13 @@
     "Attributes": [
       {
         "Name": "VoyageProposalEntitlements",
-        "Type": "TArray<Struct VoyageProposalsUpdatedEvent>",
+        "Type": "TArray<Struct VoyageProposalDescViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "TaleProposalEntitlements",
-        "Type": "TArray<Struct VoyageProposalEntitlements>",
+        "Type": "TArray<Struct VoyageProposalDescViewModel>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -41471,7 +41471,7 @@
     "Attributes": [
       {
         "Name": "Entitlements",
-        "Type": "TArray<Struct ForceCloseVoyageInventoryEvent>",
+        "Type": "TArray<Struct VoyageProposalDescViewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -41671,19 +41671,19 @@
       },
       {
         "Name": "Descriptions",
-        "Type": "TArray<Struct Location>",
+        "Type": "TArray<Struct TreasureMapTextDesc>",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "Targets",
-        "Type": "TArray<Struct Descriptions>",
+        "Type": "TArray<Struct BountyMapTargetDesc>",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "BountyRewards",
-        "Type": "TArray<Class Targets>",
+        "Type": "TArray<Class BountyRewards>",
         "Size": "0x10",
         "Offset": "0xa0"
       },
@@ -41809,7 +41809,7 @@
     "Attributes": [
       {
         "Name": "CrateItemDesc",
-        "Type": "TArray<Class CargoDeliveredTelemetryEvent>",
+        "Type": "TArray<Class CrateItemDesc>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -42034,7 +42034,7 @@
       },
       {
         "Name": "ItemData",
-        "Type": "TArray<Struct DeliverByTimeText>",
+        "Type": "TArray<Struct MerchantMapItemData>",
         "Size": "0x10",
         "Offset": "0x178"
       },
@@ -42226,13 +42226,13 @@
     "Attributes": [
       {
         "Name": "StepNames",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str StepNames>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "VariableStringBlobs",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str VariableStringBlobs>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -42508,7 +42508,7 @@
     "Attributes": [
       {
         "Name": "VoyageProposalIds",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str VoyageProposalIds>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -42883,7 +42883,7 @@
       },
       {
         "Name": "OnActorDamagedReactions",
-        "Type": "TArray<Struct DespawnVOGroupEntries>",
+        "Type": "TArray<Struct NPCReactionVOEntry>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -43442,7 +43442,7 @@
       },
       {
         "Name": "Entitlements",
-        "Type": "TArray<Class Category>",
+        "Type": "TArray<Class Entitlements>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -43722,7 +43722,7 @@
     "Attributes": [
       {
         "Name": "PositionData",
-        "Type": "TArray<Struct PlayerAggregatePositionTelemetryFragment>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -43733,7 +43733,7 @@
     "Attributes": [
       {
         "Name": "PositionData",
-        "Type": "TArray<Struct RPCTelemetryFragment>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -43830,7 +43830,7 @@
     "Attributes": [
       {
         "Name": "Stories",
-        "Type": "TArray<Struct CampaignGoalProgressEvent>",
+        "Type": "TArray<Struct StoryInfoModel>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -44075,7 +44075,7 @@
       },
       {
         "Name": "Rewards",
-        "Type": "TArray<Struct DateTo>",
+        "Type": "TArray<Struct CommodityDemandMultipliers>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -44189,7 +44189,7 @@
       },
       {
         "Name": "CompletionEventIds",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str CompletionEventIds>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -44263,7 +44263,7 @@
     "Attributes": [
       {
         "Name": "CompletionEvents",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str CompletionEvents>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -44274,7 +44274,7 @@
     "Attributes": [
       {
         "Name": "Notes",
-        "Type": "TArray<Struct NotesRemoteServiceNoteDetailModel>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -44338,7 +44338,7 @@
       },
       {
         "Name": "CompletionEventIds",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str CompletionEventIds>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -44389,7 +44389,7 @@
       },
       {
         "Name": "Rewards",
-        "Type": "TArray<Struct MultipleRewards>",
+        "Type": "TArray<Struct SeasonReward>",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -44687,7 +44687,7 @@
       },
       {
         "Name": "Goals",
-        "Type": "TArray<Struct LocalizedCopy>",
+        "Type": "TArray<Struct SeasonGoalInfo>",
         "Size": "0x10",
         "Offset": "0x58"
       }
@@ -45168,13 +45168,13 @@
     "Attributes": [
       {
         "Name": "ActionBindings",
-        "Type": "TArray<Struct EventGetAllKeybindingsRequest>",
+        "Type": "TArray<Struct KeyBinding>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "AxisBindings",
-        "Type": "TArray<Struct ActionBindings>",
+        "Type": "TArray<Struct KeyBinding>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -45577,7 +45577,7 @@
     "Attributes": [
       {
         "Name": "Materials",
-        "Type": "TArray<Weakclass MaterialAnimatorGroupInstance>",
+        "Type": "TArray<Weakclass Materials>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -45674,19 +45674,19 @@
     "Attributes": [
       {
         "Name": "ScalarParameterValues",
-        "Type": "TArray<Struct MeshAnimatorInstance>",
+        "Type": "TArray<Struct ScalarParameterValue>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "TextureParameterValues",
-        "Type": "TArray<Struct ScalarParameterValues>",
+        "Type": "TArray<Struct TextureParameterValue>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "VectorParameterValues",
-        "Type": "TArray<Struct TextureParameterValues>",
+        "Type": "TArray<Struct VectorParameterValue>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -46646,7 +46646,7 @@
     "Attributes": [
       {
         "Name": "Articles",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Articles>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -48037,13 +48037,13 @@
     "Attributes": [
       {
         "Name": "Customizations",
-        "Type": "TArray<Class ShipDesc>",
+        "Type": "TArray<Class Customizations>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "InitialCustomizations",
-        "Type": "TArray<Class Customizations>",
+        "Type": "TArray<Class InitialCustomizations>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -48083,13 +48083,13 @@
     "Attributes": [
       {
         "Name": "Parts",
-        "Type": "TArray<Struct Template>",
+        "Type": "TArray<Struct PartDesc>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "InitialEntitlements",
-        "Type": "TArray<Class Parts>",
+        "Type": "TArray<Class InitialEntitlements>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -48218,7 +48218,7 @@
     "Attributes": [
       {
         "Name": "EntitlementKeys",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -48671,7 +48671,7 @@
     "Attributes": [
       {
         "Name": "MapPins",
-        "Type": "TArray<Struct ShipBaseTelemetryFragmentInput>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -48900,19 +48900,19 @@
     "Attributes": [
       {
         "Name": "BindToLeftX",
-        "Type": "TArray<Struct ActionMappingKeyLookupFallback>",
+        "Type": "TArray<Struct SingleStickMappingAxis>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "BindToLeftY",
-        "Type": "TArray<Struct BindToLeftX>",
+        "Type": "TArray<Struct SingleStickMappingAxis>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "BindToRightX",
-        "Type": "TArray<Struct BindToLeftY>",
+        "Type": "TArray<Struct SingleStickMappingAxis>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -48924,7 +48924,7 @@
       },
       {
         "Name": "Unbind",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Unbind>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -48969,7 +48969,7 @@
     "Attributes": [
       {
         "Name": "AxisNames",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -49004,7 +49004,7 @@
     "Attributes": [
       {
         "Name": "ActionNames",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -49790,7 +49790,7 @@
     "Attributes": [
       {
         "Name": "NotificationIDs",
-        "Type": "TArray<Class RadialContextChanged>",
+        "Type": "TArray<Class NotificationIDs>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -49834,7 +49834,7 @@
     "Attributes": [
       {
         "Name": "ItemUrlCacheList",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str ItemUrlCacheList>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -50267,7 +50267,7 @@
     "Attributes": [
       {
         "Name": "BlockActions",
-        "Type": "TArray<Class ItemActionEffectHandle>",
+        "Type": "TArray<Class BlockActions>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -50552,7 +50552,7 @@
     "Attributes": [
       {
         "Name": "AttachOnDropParentTypes",
-        "Type": "TArray<AssetClass StartPickupObjectActionRuleParams>",
+        "Type": "TArray<AssetClass AttachOnDropParentTypes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -50635,7 +50635,7 @@
     "Attributes": [
       {
         "Name": "WieldableItemSizesDisablePickup",
-        "Type": "TArray<Byte ItemProxyImpactVfxParams>",
+        "Type": "TArray<Byte WieldableItemSizesDisablePickup>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -51707,7 +51707,7 @@
     "Attributes": [
       {
         "Name": "WieldableItemSizesToDisableControl",
-        "Type": "TArray<Byte EventPlayerReliquishedControlOfControllable>",
+        "Type": "TArray<Byte WieldableItemSizesToDisableControl>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -51825,7 +51825,7 @@
       },
       {
         "Name": "AcceptedMountableTypes",
-        "Type": "TArray<Class InteractionBoxExtent>",
+        "Type": "TArray<Class AcceptedMountableTypes>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -52258,7 +52258,7 @@
       },
       {
         "Name": "MainEvents",
-        "Type": "TArray<Struct ServerConfigName>",
+        "Type": "TArray<Struct GameEventCount>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -52629,7 +52629,7 @@
       },
       {
         "Name": "ValidEncounterTypes",
-        "Type": "TArray<Byte EncounterListenerType>",
+        "Type": "TArray<Byte ValidEncounterTypes>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -52640,7 +52640,7 @@
     "Attributes": [
       {
         "Name": "EncounterListenerTypes",
-        "Type": "TArray<Byte EventEncounterEnd>",
+        "Type": "TArray<Byte EncounterListenerTypes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -52652,7 +52652,7 @@
       },
       {
         "Name": "EncounterListenerLocations",
-        "Type": "TArray<Struct EncounterListenerActors>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -53021,7 +53021,7 @@
     "Attributes": [
       {
         "Name": "CauseOfDeath",
-        "Type": "TArray<Byte WeightedItemDescSpawner>",
+        "Type": "TArray<Byte CauseOfDeath>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -53050,7 +53050,7 @@
       },
       {
         "Name": "SpawnedItems",
-        "Type": "TArray<Weakclass SpawnList>",
+        "Type": "TArray<Weakclass SpawnedItems>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -53165,7 +53165,7 @@
       },
       {
         "Name": "NPCPickUpPoints",
-        "Type": "TArray<Struct CrewId>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -53245,7 +53245,7 @@
     "Attributes": [
       {
         "Name": "ItemLoadout",
-        "Type": "TArray<Struct RewardDefinition>",
+        "Type": "TArray<Struct LoadoutCategory>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -53350,7 +53350,7 @@
       },
       {
         "Name": "PrerequisiteEntitlements",
-        "Type": "TArray<Class Rewards>",
+        "Type": "TArray<Class PrerequisiteEntitlements>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -53385,7 +53385,7 @@
       },
       {
         "Name": "Pirates",
-        "Type": "TArray<Struct CrewId>",
+        "Type": "TArray<Struct PirateIdentity>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -53420,7 +53420,7 @@
       },
       {
         "Name": "Entitlements",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Entitlements>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -53712,7 +53712,7 @@
       },
       {
         "Name": "SecondaryRecipients",
-        "Type": "TArray<Struct PrimaryRecipient>",
+        "Type": "TArray<Struct RewardRequestCrewGame>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -53777,7 +53777,7 @@
       },
       {
         "Name": "PirateIdentities",
-        "Type": "TArray<Struct RequestID>",
+        "Type": "TArray<Struct PirateIdentity>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -53892,7 +53892,7 @@
       },
       {
         "Name": "PrerequisiteEntitlements",
-        "Type": "TArray<Class PopUp>",
+        "Type": "TArray<Class PrerequisiteEntitlements>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -53984,19 +53984,19 @@
     "Attributes": [
       {
         "Name": "Current",
-        "Type": "TArray<Struct InventoryInteractionTakeAllRequestEvent>",
+        "Type": "TArray<Struct IInventoryItem>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Available",
-        "Type": "TArray<Struct Current>",
+        "Type": "TArray<Struct IInventoryItem>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Descriptions",
-        "Type": "TArray<Struct Available>",
+        "Type": "TArray<Struct IInventoryItemDescription>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -54065,19 +54065,19 @@
       },
       {
         "Name": "Current",
-        "Type": "TArray<Struct InventoryName>",
+        "Type": "TArray<Struct IInventoryItem>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Available",
-        "Type": "TArray<Struct Current>",
+        "Type": "TArray<Struct IInventoryItem>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "Descriptions",
-        "Type": "TArray<Struct Available>",
+        "Type": "TArray<Struct IInventoryItemDescription>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -54190,7 +54190,7 @@
       },
       {
         "Name": "Entries",
-        "Type": "TArray<Struct Weight>",
+        "Type": "TArray<Struct StorageContainerWeightedItemListEntry>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -54505,7 +54505,7 @@
     "Attributes": [
       {
         "Name": "Entitlements",
-        "Type": "TArray<Class BootyItemShipDroppedInfo>",
+        "Type": "TArray<Class Entitlements>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -54545,7 +54545,7 @@
       },
       {
         "Name": "SpawnableItems",
-        "Type": "TArray<Class Category>",
+        "Type": "TArray<Class SpawnableItems>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -54775,7 +54775,7 @@
       },
       {
         "Name": "StatusesApplied",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str StatusesApplied>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -55325,7 +55325,7 @@
       },
       {
         "Name": "ExcludedShipSizes",
-        "Type": "TArray<Class HitTestTraceChannel>",
+        "Type": "TArray<Class ExcludedShipSizes>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -55506,7 +55506,7 @@
     "Attributes": [
       {
         "Name": "Objects",
-        "Type": "TArray<Struct AthenaStreamedLevelData>",
+        "Type": "TArray<Struct BuoyantObjectSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -55758,7 +55758,7 @@
     "Attributes": [
       {
         "Name": "QuestDescAssets",
-        "Type": "TArray<Assetclass Feature>",
+        "Type": "TArray<Assetclass QuestDescAssets>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -55843,7 +55843,7 @@
     "Attributes": [
       {
         "Name": "Rewards",
-        "Type": "TArray<Class NumRewards>",
+        "Type": "TArray<Class Rewards>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -55955,7 +55955,7 @@
       },
       {
         "Name": "Images",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Images>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -56019,7 +56019,7 @@
       },
       {
         "Name": "QuestStatus",
-        "Type": "TArray<Struct Id>",
+        "Type": "TArray<Struct QuestInfo>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -56067,13 +56067,13 @@
       },
       {
         "Name": "VoyageCompletionStats",
-        "Type": "TArray<Struct Rank>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "ReapersMarkCompletionStats",
-        "Type": "TArray<Struct VoyageCompletionStats>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -56377,13 +56377,13 @@
       },
       {
         "Name": "VoyageCompletionStats",
-        "Type": "TArray<Struct Rank>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "ReapersMarkCompletionStats",
-        "Type": "TArray<Struct VoyageCompletionStats>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -56406,7 +56406,7 @@
       },
       {
         "Name": "ActionsThatTriggerThisReaction",
-        "Type": "TArray<Byte RelevantRadiusInMetres>",
+        "Type": "TArray<Byte ActionsThatTriggerThisReaction>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -56458,7 +56458,7 @@
       },
       {
         "Name": "Locations",
-        "Type": "TArray<Struct LandmarkName>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -57843,7 +57843,7 @@
     "Attributes": [
       {
         "Name": "LockStates",
-        "Type": "TArray<Struct OpenableItemMetaWrapper>",
+        "Type": "TArray<Struct StorableLockState>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -57977,7 +57977,7 @@
     "Attributes": [
       {
         "Name": "TargetObjectTypes",
-        "Type": "TArray<AssetClass CollectorsChestStoredItemInfo>",
+        "Type": "TArray<AssetClass TargetObjectTypes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -58028,7 +58028,7 @@
     "Attributes": [
       {
         "Name": "StoredItemSnapshots",
-        "Type": "TArray<Struct GoldInContainerData>",
+        "Type": "TArray<Struct ItemSnapshot>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -58217,7 +58217,7 @@
       },
       {
         "Name": "StoredTreasure",
-        "Type": "TArray<Struct IslandLocation>",
+        "Type": "TArray<Struct ItemSnapshot>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -58240,7 +58240,7 @@
       },
       {
         "Name": "CrewStorage",
-        "Type": "TArray<Struct CrewId>",
+        "Type": "TArray<Struct LocationBootyStorage>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -58597,7 +58597,7 @@
       },
       {
         "Name": "CutsceneLengths",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float CutsceneLengths>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -58707,7 +58707,7 @@
       },
       {
         "Name": "PossessableSequences",
-        "Type": "TArray<Struct LocalisableNames>",
+        "Type": "TArray<Struct PossessableSequence>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -58789,13 +58789,13 @@
       },
       {
         "Name": "GroupPoints",
-        "Type": "TArray<Struct GroupName>",
+        "Type": "TArray<Struct OrientedPoint>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "GroupTags",
-        "Type": "TArray<Byte GroupPoints>",
+        "Type": "TArray<Byte GroupTags>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -58863,7 +58863,7 @@
     "Attributes": [
       {
         "Name": "Votes",
-        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
+        "Type": "TArray<Struct VotersByOption>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -59015,7 +59015,7 @@
       },
       {
         "Name": "Context",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Context>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -59038,7 +59038,7 @@
       },
       {
         "Name": "Context",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Context>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -59184,7 +59184,7 @@
     "Attributes": [
       {
         "Name": "Trail",
-        "Type": "TArray<Struct WeaponMesh>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -59346,13 +59346,13 @@
     "Attributes": [
       {
         "Name": "AttackerClientRecords",
-        "Type": "TArray<Struct HitRegRecordProjectileShotRpc>",
+        "Type": "TArray<Struct HitRegSnapshotProjectileRecord>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ServerRecords",
-        "Type": "TArray<Struct AttackerClientRecords>",
+        "Type": "TArray<Struct HitRegSnapshotProjectileRecord>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -59375,7 +59375,7 @@
       },
       {
         "Name": "AttackRecords",
-        "Type": "TArray<Struct SendingPlayer>",
+        "Type": "TArray<Struct HitRegSnapshotProjectileRecord>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -59477,7 +59477,7 @@
     "Attributes": [
       {
         "Name": "Leaderboard",
-        "Type": "TArray<Struct PlayersCompletedContestSpawnInRewardStage>",
+        "Type": "TArray<Struct CrewScore>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -60161,7 +60161,7 @@
       },
       {
         "Name": "StatusesToApply",
-        "Type": "TArray<Struct IgnitionParameters>",
+        "Type": "TArray<Struct Status>",
         "Size": "0x10",
         "Offset": "0xa0"
       },
@@ -60398,7 +60398,7 @@
     "Attributes": [
       {
         "Name": "Reactions",
-        "Type": "TArray<Struct KeySequence>",
+        "Type": "TArray<Struct LandmarkReactionKeyFrame>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -60415,7 +60415,7 @@
       },
       {
         "Name": "ActiveToInactiveSequenceCheckpoints",
-        "Type": "TArray<Struct VaultKeyDesc>",
+        "Type": "TArray<Struct MechanismCheckpoint>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -60491,7 +60491,7 @@
     "Attributes": [
       {
         "Name": "StatusesToApplyOnOverlap",
-        "Type": "TArray<Struct ActorType>",
+        "Type": "TArray<Struct Status>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -60916,25 +60916,25 @@
     "Attributes": [
       {
         "Name": "ShipsLocations",
-        "Type": "TArray<Struct QuestVariableShipwreck>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "AmbientShipwrecks",
-        "Type": "TArray<Interface ShipsLocations>",
+        "Type": "TArray<Interface AmbientShipwrecks>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "ActiveCustomShipwrecks",
-        "Type": "TArray<Interface AmbientShipwrecks>",
+        "Type": "TArray<Interface ActiveCustomShipwrecks>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "AmbientWrecksWithoutClosePlayers",
-        "Type": "TArray<Struct ActiveCustomShipwrecks>",
+        "Type": "TArray<Struct WreckMatch>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -61085,7 +61085,7 @@
       },
       {
         "Name": "FlagResponses",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int FlagResponses>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -62770,7 +62770,7 @@
       },
       {
         "Name": "ChestCanvasOffsets",
-        "Type": "TArray<Struct BannerLocation>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -63406,7 +63406,7 @@
     "Attributes": [
       {
         "Name": "Creators",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Creators>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -63502,7 +63502,7 @@
     "Attributes": [
       {
         "Name": "Maps",
-        "Type": "TArray<Struct TavernBoardMyMapsRequestEvent>",
+        "Type": "TArray<Struct ITavernBoardMap>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -63517,7 +63517,7 @@
     "Attributes": [
       {
         "Name": "MyMaps",
-        "Type": "TArray<Struct WorldRegionMapping>",
+        "Type": "TArray<Struct ITavernBoardMap>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -63845,13 +63845,13 @@
       },
       {
         "Name": "CrewBuryHistory",
-        "Type": "TArray<Struct DiscoveredByCrewId>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "CrewDiscoverHistory",
-        "Type": "TArray<Struct CrewBuryHistory>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x58"
       },
@@ -63961,13 +63961,13 @@
       },
       {
         "Name": "PlayerBuriedItemMapIds",
-        "Type": "TArray<Struct PickedUpByCrewSessionId>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "MapIdsOriginalOwners",
-        "Type": "TArray<Struct PlayerBuriedItemMapIds>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -64299,7 +64299,7 @@
     "Attributes": [
       {
         "Name": "PartDamagePersistenceModels",
-        "Type": "TArray<Struct ServerSpireInfo>",
+        "Type": "TArray<Struct ShipPartDamagePersistenceModel>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -64657,7 +64657,7 @@
       },
       {
         "Name": "SpawnTransforms",
-        "Type": "TArray<Struct NumberOfItemsToSpawn>",
+        "Type": "TArray<Struct Transform>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -64738,7 +64738,7 @@
       },
       {
         "Name": "SplineOffsets",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float SplineOffsets>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -64925,7 +64925,7 @@
       },
       {
         "Name": "StatsToFireOnDeath",
-        "Type": "TArray<Struct Locations>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -65123,7 +65123,7 @@
       },
       {
         "Name": "Offsets",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Offsets>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -65151,7 +65151,7 @@
     "Attributes": [
       {
         "Name": "OffsetsInMetres",
-        "Type": "TArray<Struct NumMinesInFormation>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -65235,7 +65235,7 @@
       },
       {
         "Name": "TargetSelection",
-        "Type": "TArray<Struct ShipSize>",
+        "Type": "TArray<Struct AggressiveGhostShipDifficultyTargetSelection>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -65292,7 +65292,7 @@
     "Attributes": [
       {
         "Name": "RewardTypes",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str RewardTypes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -65619,7 +65619,7 @@
       },
       {
         "Name": "CompanyRewardIds",
-        "Type": "TArray<Struct DefaultRewardId>",
+        "Type": "TArray<Struct CompanySpecificBootyReward>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -65680,7 +65680,7 @@
     "Attributes": [
       {
         "Name": "Chain",
-        "Type": "TArray<Struct ChainLightningParameters>",
+        "Type": "TArray<Struct ChainLink>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -65906,7 +65906,7 @@
       },
       {
         "Name": "Stats",
-        "Type": "TArray<Struct Controller>",
+        "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -66586,13 +66586,13 @@
       },
       {
         "Name": "AllowedInteractableTypes",
-        "Type": "TArray<Class AllowInteractWithOtherObjectsWhileSitting>",
+        "Type": "TArray<Class AllowedInteractableTypes>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "AllowedInteractionNotificationInputIds",
-        "Type": "TArray<Class AllowedInteractableTypes>",
+        "Type": "TArray<Class AllowedInteractionNotificationInputIds>",
         "Size": "0x10",
         "Offset": "0x78"
       },
@@ -67553,7 +67553,7 @@
       },
       {
         "Name": "ContinuousCycle",
-        "Type": "TArray<Assetclass ContinuousIn>",
+        "Type": "TArray<Assetclass ContinuousCycle>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -67570,7 +67570,7 @@
     "Attributes": [
       {
         "Name": "FirstPersonListing",
-        "Type": "TArray<Struct AthenaAnimationJumping>",
+        "Type": "TArray<Struct AthenaAnimationItemListingMappings>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -67822,19 +67822,19 @@
     "Attributes": [
       {
         "Name": "ComboAttacks",
-        "Type": "TArray<Struct AthenaAnimationObjectMeleeBlocking>",
+        "Type": "TArray<Struct AthenaAnimationObjectComplexOneShot>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ComboAttacksStatic",
-        "Type": "TArray<Struct ComboAttacks>",
+        "Type": "TArray<Struct AthenaAnimationObjectComplexOneShot>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "SwimmingComboAttacks",
-        "Type": "TArray<Struct ComboAttacksStatic>",
+        "Type": "TArray<Struct AthenaAnimationObjectComplexOneShot>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -68129,13 +68129,13 @@
     "Attributes": [
       {
         "Name": "ComboAttacks",
-        "Type": "TArray<Struct AthenaAnimationWheel>",
+        "Type": "TArray<Struct AthenaAnimationObjectComplexOneShot>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "StaticComboAttacks",
-        "Type": "TArray<Struct ComboAttacks>",
+        "Type": "TArray<Struct AthenaAnimationObjectComplexOneShot>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -69656,7 +69656,7 @@
     "Attributes": [
       {
         "Name": "EmoteAnimationArray",
-        "Type": "TArray<Struct AthenaAnimationFire>",
+        "Type": "TArray<Struct AthenaAnimationEmoteAnimations>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -70777,7 +70777,7 @@
     "Attributes": [
       {
         "Name": "PulleyObjectTypes",
-        "Type": "TArray<Byte AthenaAnimationWaterPump>",
+        "Type": "TArray<Byte PulleyObjectTypes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -71156,7 +71156,7 @@
       },
       {
         "Name": "AIStrategyMovementPropertiesOverrides",
-        "Type": "TArray<Struct ItemCategory>",
+        "Type": "TArray<Struct AIStrategyMovementProperties>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -71450,7 +71450,7 @@
       },
       {
         "Name": "Locations",
-        "Type": "TArray<Struct LocationType>",
+        "Type": "TArray<Struct IslandItemSpawnLocationData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -71473,7 +71473,7 @@
       },
       {
         "Name": "Status",
-        "Type": "TArray<Struct ActivateOnStart>",
+        "Type": "TArray<Struct Status>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -71496,7 +71496,7 @@
       },
       {
         "Name": "TreasureLocations",
-        "Type": "TArray<Struct LocationSource>",
+        "Type": "TArray<Struct TreasureLocationData>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -71857,7 +71857,7 @@
       },
       {
         "Name": "Locations",
-        "Type": "TArray<Struct Migratable>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x18"
       }

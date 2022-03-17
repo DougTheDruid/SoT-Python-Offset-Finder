@@ -9,5 +9,5 @@ RegionAssetsList:
   - Name: CachedAssetsForRegion
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Region>
+    Type: TArray<Struct StringAssetReference>
   ClassSize: '0x18'

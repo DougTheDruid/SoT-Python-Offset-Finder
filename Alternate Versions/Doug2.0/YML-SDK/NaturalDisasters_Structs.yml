@@ -27,7 +27,7 @@ EarthquakeForceFeedbackOption:
   - Name: ForceFeedback
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct GeyserSpawnAngleOption>
+    Type: TArray<Struct LandmarkReactionEventPlayForceFeedbackEntry>
   ClassSize: '0x10'
 EventVolcanoStateChanged:
   Attributes:
@@ -60,7 +60,7 @@ PlayerFeedback:
   - Name: CameraShakes
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Class ForceFeedback>
+    Type: TArray<Class CameraShakes>
   - Name: StaggerStrength
     Offset: '0x50'
     Size: '0x30'

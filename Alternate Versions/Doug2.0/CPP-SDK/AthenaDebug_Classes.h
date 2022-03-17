@@ -17,13 +17,13 @@ public:
 class DrawDebugService: public Actor
 {
 public:
-	TArray<Struct SphereList>                                    MessagesReplicated;                                // 0x3d8(0x10)
-	TArray<Struct MessagesReplicated>                            SpheresReplicated;                                 // 0x3e8(0x10)
-	TArray<Struct SpheresReplicated>                             BoxesReplicated;                                   // 0x3f8(0x10)
-	TArray<Struct BoxesReplicated>                               CapsulesReplicated;                                // 0x408(0x10)
-	TArray<Struct CapsulesReplicated>                            LinesReplicated;                                   // 0x418(0x10)
-	TArray<Struct LinesReplicated>                               SectorsReplicated;                                 // 0x428(0x10)
-	TArray<Struct SectorsReplicated>                             StringsReplicated;                                 // 0x438(0x10)
+	TArray<Struct DrawDebugItemMessage>                          MessagesReplicated;                                // 0x3d8(0x10)
+	TArray<Struct DrawDebugItemSphere>                           SpheresReplicated;                                 // 0x3e8(0x10)
+	TArray<Struct DrawDebugItemBox>                              BoxesReplicated;                                   // 0x3f8(0x10)
+	TArray<Struct DrawDebugItemCapsule>                          CapsulesReplicated;                                // 0x408(0x10)
+	TArray<Struct DrawDebugItemLine>                             LinesReplicated;                                   // 0x418(0x10)
+	TArray<Struct DrawDebugItemSector>                           SectorsReplicated;                                 // 0x428(0x10)
+	TArray<Struct DrawDebugItemString>                           StringsReplicated;                                 // 0x438(0x10)
 	bool                                                         IsDrawDebugActive;                                 // 0x448(0x1)
 };
 
@@ -32,7 +32,7 @@ public:
 class ShippingDebugActorSphereCollection: public Actor
 {
 public:
-	TArray<Struct Id>                                            SphereList;                                        // 0x3d0(0x10)
+	TArray<Struct SphereData>                                    SphereList;                                        // 0x3d0(0x10)
 };
 
 
@@ -47,7 +47,7 @@ public:
 class Videprinter: public Actor
 {
 public:
-	TArray<Str None>                                             OutputRingBuffer;                                  // 0x3d0(0x10)
+	TArray<Str OutputRingBuffer>                                 OutputRingBuffer;                                  // 0x3d0(0x10)
 	int                                                          AddAt;                                             // 0x3e0(0x4)
 	struct FName                                                 Id;                                                // 0x3e4(0x8)
 };

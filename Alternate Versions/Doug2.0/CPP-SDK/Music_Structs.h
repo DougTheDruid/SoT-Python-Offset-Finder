@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class MusicZoneDestroyedEvent: public None
+struct MusicZoneDestroyedEvent
 {
 public:
 };
 
 
 // Size 0x10
-class MusicZoneSpawnedEvent: public None
+struct MusicZoneSpawnedEvent
 {
 public:
 };

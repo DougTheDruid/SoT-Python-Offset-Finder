@@ -56,7 +56,7 @@
       },
       {
         "Name": "ChecklistItems",
-        "Type": "TArray<Struct Description>",
+        "Type": "TArray<Struct ChecklistMapItemData>",
         "Size": "0x10",
         "Offset": "0x90"
       },

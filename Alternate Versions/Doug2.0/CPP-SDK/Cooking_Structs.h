@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xc
-class CookingInfo: public None
+struct CookingInfo
 {
 public:
 };
 
 
 // Size 0x8
-class CookableComponentSmokeFeedbackTimingEntry: public None
+struct CookableComponentSmokeFeedbackTimingEntry
 {
 public:
 	float                                                        StateDuration;                                     // 0x0(0x4)
@@ -23,7 +23,7 @@ public:
 
 
 // Size 0x68
-class CookingClientRepresentation: public None
+struct CookingClientRepresentation
 {
 public:
 	bool                                                         Cooking;                                           // 0x0(0x1)
@@ -39,7 +39,7 @@ public:
 
 
 // Size 0x10
-class CookerSmokeFeedbackEntry: public None
+struct CookerSmokeFeedbackEntry
 {
 public:
 	byte                                                         FeedbackLevel;                                     // 0x0(0x1)
@@ -48,7 +48,7 @@ public:
 
 
 // Size 0x8
-class OnRemovedItemFromCookingPot: public None
+struct OnRemovedItemFromCookingPot
 {
 public:
 	Class Actor*                                                 Interactor;                                        // 0x0(0x8)
@@ -56,7 +56,7 @@ public:
 
 
 // Size 0x10
-class OnPlacedItemInCookingPot: public None
+struct OnPlacedItemInCookingPot
 {
 public:
 	Class Actor*                                                 Interactor;                                        // 0x0(0x8)
@@ -65,21 +65,21 @@ public:
 
 
 // Size 0x10
-class OnItemStartedCooking: public None
+struct OnItemStartedCooking
 {
 public:
 };
 
 
 // Size 0x1
-class OnItemStoppedCooking: public None
+struct OnItemStoppedCooking
 {
 public:
 };
 
 
 // Size 0x30
-class CookEndTelemetryEvent: public None
+struct CookEndTelemetryEvent
 {
 public:
 	Struct FString                                               ItemName;                                          // 0x0(0x10)
@@ -90,7 +90,7 @@ public:
 
 
 // Size 0x30
-class CookStartTelemetryEvent: public None
+struct CookStartTelemetryEvent
 {
 public:
 	Struct FString                                               ItemName;                                          // 0x0(0x10)

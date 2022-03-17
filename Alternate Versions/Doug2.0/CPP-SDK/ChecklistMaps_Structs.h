@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x50
-class ChecklistItem: public None
+struct ChecklistItem
 {
 public:
 	Struct FText                                                 Description;                                       // 0x0(0x38)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x50
-class ChecklistMapItemData: public None
+struct ChecklistMapItemData
 {
 public:
 	Struct TreasureMapTextDesc                                   Description;                                       // 0x0(0x48)
@@ -26,25 +26,25 @@ public:
 
 
 // Size 0xe8
-class ChecklistMapContents: public None
+struct ChecklistMapContents
 {
 public:
 	Struct TreasureMapTextDesc                                   Title;                                             // 0x0(0x48)
 	Struct TreasureMapTextDesc                                   Description;                                       // 0x48(0x48)
-	TArray<Struct Description>                                   ChecklistItems;                                    // 0x90(0x10)
+	TArray<Struct ChecklistMapItemData>                          ChecklistItems;                                    // 0x90(0x10)
 	Struct TreasureMapTextDesc                                   Afternote;                                         // 0xa0(0x48)
 };
 
 
 // Size 0x1
-class CompleteEntireChecklistEvent: public None
+struct CompleteEntireChecklistEvent
 {
 public:
 };
 
 
 // Size 0x10
-class ChecklistBootyDeliveredEvent: public None
+struct ChecklistBootyDeliveredEvent
 {
 public:
 	Class Actor*                                                 Seller;                                            // 0x0(0x8)
@@ -53,7 +53,7 @@ public:
 
 
 // Size 0x8
-class ChecklistCompletionEvent: public None
+struct ChecklistCompletionEvent
 {
 public:
 	Class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
@@ -61,7 +61,7 @@ public:
 
 
 // Size 0x28
-class ChecklistItemCompletedTelemetryEvent: public None
+struct ChecklistItemCompletedTelemetryEvent
 {
 public:
 	Struct Guid                                                  ChecklistMapId;                                    // 0x0(0x10)

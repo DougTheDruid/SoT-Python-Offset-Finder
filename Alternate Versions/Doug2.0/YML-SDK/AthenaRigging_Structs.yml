@@ -70,7 +70,7 @@ RiggingSystemLineGroup:
   - Name: Lines
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Name>
+    Type: TArray<Struct RiggingSystemLineParams>
   ClassSize: '0x18'
 RiggingSystemLineParams:
   Attributes:
@@ -81,7 +81,7 @@ RiggingSystemLineParams:
   - Name: Pulleys
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Start>
+    Type: TArray<Struct RiggingSystemPulleyParams>
   - Name: End
     Offset: '0x30'
     Size: '0x20'
@@ -115,27 +115,27 @@ RiggingSystemPulleyData:
   - Name: AttachmentSag
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float AttachmentSag>
   - Name: AttachmentLength
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float AttachmentLength>
   - Name: Scale
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Scale>
   - Name: ScaledOffset
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float ScaledOffset>
   - Name: ScaledRadius
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float ScaledRadius>
   - Name: MeshIDs
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int MeshIDs>
   ClassSize: '0x60'
 RiggingSystemPulleyParams:
   Attributes:

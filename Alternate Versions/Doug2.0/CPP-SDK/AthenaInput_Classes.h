@@ -45,7 +45,7 @@ public:
 class NamedNotificationInputComponent: public ActorComponent
 {
 public:
-	TArray<Struct PushCharacterIntoDeadActionState>              NotificationInputDisplayNames;                     // 0xd0(0x10)
+	TArray<Struct NotificationInputDisplayName>                  NotificationInputDisplayNames;                     // 0xd0(0x10)
 };
 
 

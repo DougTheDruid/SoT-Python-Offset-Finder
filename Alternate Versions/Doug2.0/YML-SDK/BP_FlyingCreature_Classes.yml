@@ -101,11 +101,11 @@ BP_FlyingCreature_C:
   - Name: SelectedCreatureType
     Offset: '0x4a8'
     Size: '0x10'
-    Type: TArray<Assetclass MaterialExpressionConstant>
+    Type: TArray<Assetclass SelectedCreatureType>
   - Name: Seagull
     Offset: '0x4b8'
     Size: '0x10'
-    Type: TArray<Assetclass StaticMeshComponent>
+    Type: TArray<Assetclass Seagull>
   - Name: Size
     Offset: '0x4c8'
     Size: '0x4'
@@ -125,15 +125,15 @@ BP_FlyingCreature_C:
   - Name: Skellygull_01
     Offset: '0x4e0'
     Size: '0x10'
-    Type: TArray<Assetclass MaterialExpressionConstant>
+    Type: TArray<Assetclass Skellygull_01>
   - Name: Bats_01
     Offset: '0x4f0'
     Size: '0x10'
-    Type: TArray<Assetclass >
+    Type: TArray<Assetclass Bats_01>
   - Name: Parrot_01
     Offset: '0x500'
     Size: '0x10'
-    Type: TArray<Assetclass >
+    Type: TArray<Assetclass Parrot_01>
   - Name: ScaleInDistance
     Offset: '0x510'
     Size: '0x1'

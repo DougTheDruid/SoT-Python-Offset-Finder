@@ -36,15 +36,15 @@ public:
 	bool                                                         ApplyImpulseToShips;                               // 0xd8(0x1)
 	Struct WeightedProbabilityRangeOfRanges                      ForceToApplyToShip;                                // 0xe0(0x30)
 	bool                                                         ApplyDamageToShips;                                // 0x110(0x1)
-	TArray<Struct ApplyDamageToShips>                            ShipDamageLevels;                                  // 0x118(0x10)
+	TArray<Struct ShockwaveDamagerShipDamage>                    ShipDamageLevels;                                  // 0x118(0x10)
 	class                                                        DamagerType;                                       // 0x128(0x8)
 	bool                                                         ApplyImpulseToGhostShips;                          // 0x130(0x1)
 	float                                                        GhostShipImpulseDuration;                          // 0x134(0x4)
 	float                                                        GhostShipImpulseMaxDeflectionAngle;                // 0x138(0x4)
 	bool                                                         DestroyHostileGhostShips;                          // 0x13c(0x1)
 	float                                                        NearbyEncounterDistanceInMetres;                   // 0x140(0x4)
-	TArray<Weakclass OnShockwaveEnded>                           ProcessedShips;                                    // 0x168(0x10)
-	TArray<Weakclass ProcessedShips>                             ProcessedGhostShips;                               // 0x178(0x10)
+	TArray<Weakclass ProcessedShips>                             ProcessedShips;                                    // 0x168(0x10)
+	TArray<Weakclass ProcessedGhostShips>                        ProcessedGhostShips;                               // 0x178(0x10)
 };
 
 
@@ -53,8 +53,8 @@ class ShipDamagerComponent: public ActorComponent
 {
 public:
 	Class PrimitiveComponent*                                    Shape;                                             // 0xd0(0x8)
-	TArray<Interface Shape>                                      ShipHulls;                                         // 0xd8(0x10)
-	TArray<Interface ShipHulls>                                  WatercraftHealthInterfaces;                        // 0xe8(0x10)
+	TArray<Interface ShipHulls>                                  ShipHulls;                                         // 0xd8(0x10)
+	TArray<Interface WatercraftHealthInterfaces>                 WatercraftHealthInterfaces;                        // 0xe8(0x10)
 	Struct StrainDamage                                          ShipStrainDamage;                                  // 0xf8(0x28)
 	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenWatercraftDamage;                       // 0x120(0x30)
 	float                                                        WatercraftDamage;                                  // 0x150(0x4)

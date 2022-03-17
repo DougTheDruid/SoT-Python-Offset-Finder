@@ -31,7 +31,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct UberGraphFrame>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -69,7 +69,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct >",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -107,7 +107,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -145,7 +145,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -183,7 +183,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct >",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -221,7 +221,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -259,7 +259,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -297,7 +297,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct >",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -335,7 +335,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct >",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -373,7 +373,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct >",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -411,7 +411,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct None>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -449,7 +449,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct None>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -487,7 +487,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct None>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -525,7 +525,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct ByteProperty>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }
@@ -563,7 +563,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x428"
       }

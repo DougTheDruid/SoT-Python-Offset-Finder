@@ -269,7 +269,7 @@ ComboBoxString:
   - Name: DefaultOptions
     Offset: '0x138'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str DefaultOptions>
   - Name: SelectedOption
     Offset: '0x148'
     Size: '0x10'
@@ -511,11 +511,11 @@ GridPanel:
   - Name: ColumnFill
     Offset: '0x150'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float ColumnFill>
   - Name: RowFill
     Offset: '0x160'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float RowFill>
   ClassSize: '0x38'
   FullSize: '0x188'
   InheritedSize: '0x150'
@@ -719,7 +719,7 @@ MovieSceneWidgetMaterialTrack:
   - Name: BrushPropertyNamePath
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: TrackName
     Offset: '0xa8'
     Size: '0x8'
@@ -1529,7 +1529,7 @@ UserWidget:
   - Name: NamedSlotBindings
     Offset: '0x1d0'
     Size: '0x10'
-    Type: TArray<Struct StoppedSequencePlayers>
+    Type: TArray<Struct NamedSlotBinding>
   ClassSize: '0xf8'
   FullSize: '0x230'
   InheritedSize: '0x138'
@@ -1659,7 +1659,7 @@ WidgetAnimation:
   - Name: AnimationBindings
     Offset: '0x2d0'
     Size: '0x10'
-    Type: TArray<Struct MovieScene>
+    Type: TArray<Struct WidgetAnimationBinding>
   ClassSize: '0x38'
   FullSize: '0x2e0'
   InheritedSize: '0x2a8'
@@ -1679,7 +1679,7 @@ WidgetBlueprintGeneratedClass:
   - Name: Bindings
     Offset: '0x230'
     Size: '0x10'
-    Type: TArray<Struct WidgetTree>
+    Type: TArray<Struct DelegateRuntimeBinding>
   - Name: Animations
     Offset: '0x240'
     Size: '0x10'

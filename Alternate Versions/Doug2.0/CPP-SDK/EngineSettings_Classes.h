@@ -11,8 +11,8 @@ class ConsoleSettings: public Object
 {
 public:
 	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
-	TArray<Struct MaxScrollbackSize>                             ManualAutoCompleteList;                            // 0x30(0x10)
-	TArray<Str >                                                 AutoCompleteMapPaths;                              // 0x40(0x10)
+	TArray<Struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
+	TArray<Str AutoCompleteMapPaths>                             AutoCompleteMapPaths;                              // 0x40(0x10)
 };
 
 

@@ -293,7 +293,7 @@
       },
       {
         "Name": "IKBonesToMove",
-        "Type": "TArray<Struct LeftHandIK>",
+        "Type": "TArray<Struct BoneReference>",
         "Size": "0x10",
         "Offset": "0x88"
       },

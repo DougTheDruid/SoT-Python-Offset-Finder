@@ -153,7 +153,7 @@
       },
       {
         "Name": "Responses",
-        "Type": "TArray<Struct TimeBeforeForgotten>",
+        "Type": "TArray<Struct PetDangerHearingThreatResponse>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -382,7 +382,7 @@
       },
       {
         "Name": "IllegalShipsSizesForSpawn",
-        "Type": "TArray<Class HeldPetDespawnDelay>",
+        "Type": "TArray<Class IllegalShipsSizesForSpawn>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -440,7 +440,7 @@
       },
       {
         "Name": "IgnoringStrategies",
-        "Type": "TArray<Class AnimationDelay>",
+        "Type": "TArray<Class IgnoringStrategies>",
         "Size": "0x10",
         "Offset": "0xc8"
       }

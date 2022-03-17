@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class ActorActionStateConstructionInfo: public None
+struct ActorActionStateConstructionInfo
 {
 public:
 };
 
 
 // Size 0x28
-class ActionStateConstructionInfo: public None
+struct ActionStateConstructionInfo
 {
 public:
 	class                                                        Id;                                                // 0x0(0x8)
@@ -23,7 +23,7 @@ public:
 
 
 // Size 0x30
-class ActionStateSerialisableData: public None
+struct ActionStateSerialisableData
 {
 public:
 	class                                                        Id;                                                // 0x8(0x8)
@@ -32,7 +32,7 @@ public:
 
 
 // Size 0x10
-class ActionStateMessage: public None
+struct ActionStateMessage
 {
 public:
 	Class ScriptStruct*                                          Type;                                              // 0x8(0x8)
@@ -40,7 +40,7 @@ public:
 
 
 // Size 0x1
-class ActionStateChangeRequestId: public None
+struct ActionStateChangeRequestId
 {
 public:
 	byte                                                         Raw;                                               // 0x0(0x1)
@@ -48,21 +48,21 @@ public:
 
 
 // Size 0x40
-class SerialisedActionStateInfo: public None
+struct SerialisedActionStateInfo
 {
 public:
 };
 
 
 // Size 0x18
-class SerialisedActionStateMessage: public None
+struct SerialisedActionStateMessage
 {
 public:
 };
 
 
 // Size 0x140
-class SerialisedConstructionInfoStore: public None
+struct SerialisedConstructionInfoStore
 {
 public:
 	Struct SerialisedActionStateInfo                             SerialisedConstructionInfo;                        // 0x0(0x40)
@@ -70,7 +70,7 @@ public:
 
 
 // Size 0x150
-class ResetStateMachineRpc: public None
+struct ResetStateMachineRpc
 {
 public:
 	Struct ActionStateChangeRequestId                            LatestEpochIds;                                    // 0x0(0x1)
@@ -80,7 +80,7 @@ public:
 
 
 // Size 0x38
-class TestActionStateSerialisableData: public None
+struct TestActionStateSerialisableData
 {
 public:
 	int                                                          IntProp;                                           // 0x30(0x4)
@@ -88,7 +88,7 @@ public:
 
 
 // Size 0x18
-class ActionStatePriorityList: public None
+struct ActionStatePriorityList
 {
 public:
 	class                                                        State;                                             // 0x0(0x8)
@@ -97,7 +97,7 @@ public:
 
 
 // Size 0x10
-class ActionStatePriorityRelationship: public None
+struct ActionStatePriorityRelationship
 {
 public:
 	class                                                        State;                                             // 0x0(0x8)
@@ -106,14 +106,14 @@ public:
 
 
 // Size 0xa0
-class ActionStatePriorityTable: public None
+struct ActionStatePriorityTable
 {
 public:
 };
 
 
 // Size 0x48
-class TestActionStateConstructionInfoWithObjPointers: public None
+struct TestActionStateConstructionInfoWithObjPointers
 {
 public:
 	Class Object*                                                ObjPointer;                                        // 0x28(0x8)
@@ -123,7 +123,7 @@ public:
 
 
 // Size 0x8
-class InnerWithObjTestStruct: public None
+struct InnerWithObjTestStruct
 {
 public:
 	Class Object*                                                ObjPointer;                                        // 0x0(0x8)
@@ -131,7 +131,7 @@ public:
 
 
 // Size 0x48
-class TestActionStateConstructionInfoWithInner: public None
+struct TestActionStateConstructionInfoWithInner
 {
 public:
 	float                                                        FloatProp;                                         // 0x28(0x4)
@@ -140,7 +140,7 @@ public:
 
 
 // Size 0x18
-class InnerTestStruct: public None
+struct InnerTestStruct
 {
 public:
 	bool                                                         BoolProp;                                          // 0x0(0x1)
@@ -149,7 +149,7 @@ public:
 
 
 // Size 0x30
-class TestActionStateConstructionInfo: public None
+struct TestActionStateConstructionInfo
 {
 public:
 	int                                                          IntProp;                                           // 0x28(0x4)
@@ -157,42 +157,42 @@ public:
 
 
 // Size 0x1
-class EventWaitingToSpawnActionStateEndedClient: public None
+struct EventWaitingToSpawnActionStateEndedClient
 {
 public:
 };
 
 
 // Size 0x1
-class EventWaitingToSpawnActionStateStartedClient: public None
+struct EventWaitingToSpawnActionStateStartedClient
 {
 public:
 };
 
 
 // Size 0x1
-class EventFirstPersonAnimaticActionStateEndedClient: public None
+struct EventFirstPersonAnimaticActionStateEndedClient
 {
 public:
 };
 
 
 // Size 0x30
-class NullActionStateConstructionInfo: public None
+struct NullActionStateConstructionInfo
 {
 public:
 };
 
 
 // Size 0x10
-class TestActionStateMessage2: public None
+struct TestActionStateMessage2
 {
 public:
 };
 
 
 // Size 0x18
-class TestActionStateMessage: public None
+struct TestActionStateMessage
 {
 public:
 	int                                                          TestProperty;                                      // 0x10(0x4)
@@ -200,7 +200,7 @@ public:
 
 
 // Size 0x38
-class TestActorActionStateConstructionInfo: public None
+struct TestActorActionStateConstructionInfo
 {
 public:
 	int                                                          IntProp;                                           // 0x30(0x4)

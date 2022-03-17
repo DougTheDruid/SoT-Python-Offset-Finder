@@ -49,13 +49,13 @@
       },
       {
         "Name": "CategoryTypes",
-        "Type": "TArray<Class ProcessingPurchase>",
+        "Type": "TArray<Class CategoryTypes>",
         "Size": "0x10",
         "Offset": "0x2d0"
       },
       {
         "Name": "PurchasedEntitlementIds",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str PurchasedEntitlementIds>",
         "Size": "0x10",
         "Offset": "0x2e0"
       },

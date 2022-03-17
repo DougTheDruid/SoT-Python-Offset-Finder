@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class Default__ScriptStruct: public None
+struct Default__ScriptStruct
 {
 public:
 };
 
 
 // Size 0x10
-class Guid: public None
+struct Guid
 {
 public:
 	int                                                          A;                                                 // 0x0(0x4)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0xc
-class Vector: public None
+struct Vector
 {
 public:
 	float                                                        X;                                                 // 0x0(0x4)
@@ -35,7 +35,7 @@ public:
 
 
 // Size 0x10
-class Vector4: public None
+struct Vector4
 {
 public:
 	float                                                        X;                                                 // 0x0(0x4)
@@ -46,7 +46,7 @@ public:
 
 
 // Size 0x8
-class Vector2D: public None
+struct Vector2D
 {
 public:
 	float                                                        X;                                                 // 0x0(0x4)
@@ -55,7 +55,7 @@ public:
 
 
 // Size 0x18
-class TwoVectors: public None
+struct TwoVectors
 {
 public:
 	Struct Vector                                                v1;                                                // 0x0(0xc)
@@ -64,7 +64,7 @@ public:
 
 
 // Size 0x10
-class Plane: public None
+struct Plane
 {
 public:
 	float                                                        W;                                                 // 0xc(0x4)
@@ -72,7 +72,7 @@ public:
 
 
 // Size 0xc
-class Rotator: public None
+struct Rotator
 {
 public:
 	float                                                        Pitch;                                             // 0x0(0x4)
@@ -82,7 +82,7 @@ public:
 
 
 // Size 0x10
-class Quat: public None
+struct Quat
 {
 public:
 	float                                                        X;                                                 // 0x0(0x4)
@@ -93,7 +93,7 @@ public:
 
 
 // Size 0x4
-class PackedNormal: public None
+struct PackedNormal
 {
 public:
 	byte                                                         X;                                                 // 0x0(0x1)
@@ -104,7 +104,7 @@ public:
 
 
 // Size 0x8
-class IntPoint: public None
+struct IntPoint
 {
 public:
 	int                                                          X;                                                 // 0x0(0x4)
@@ -113,7 +113,7 @@ public:
 
 
 // Size 0xc
-class IntVector: public None
+struct IntVector
 {
 public:
 	int                                                          X;                                                 // 0x0(0x4)
@@ -123,7 +123,7 @@ public:
 
 
 // Size 0x4
-class Color: public None
+struct Color
 {
 public:
 	byte                                                         B;                                                 // 0x0(0x1)
@@ -134,7 +134,7 @@ public:
 
 
 // Size 0x10
-class LinearColor: public None
+struct LinearColor
 {
 public:
 	float                                                        R;                                                 // 0x0(0x4)
@@ -145,7 +145,7 @@ public:
 
 
 // Size 0x1c
-class Box: public None
+struct Box
 {
 public:
 	Struct Vector                                                Min;                                               // 0x0(0xc)
@@ -155,7 +155,7 @@ public:
 
 
 // Size 0x14
-class Box2D: public None
+struct Box2D
 {
 public:
 	Struct Vector2D                                              Min;                                               // 0x0(0x8)
@@ -165,7 +165,7 @@ public:
 
 
 // Size 0x1c
-class BoxSphereBounds: public None
+struct BoxSphereBounds
 {
 public:
 	Struct Vector                                                Origin;                                            // 0x0(0xc)
@@ -175,7 +175,7 @@ public:
 
 
 // Size 0x3c
-class OrientedBox: public None
+struct OrientedBox
 {
 public:
 	Struct Vector                                                Center;                                            // 0x0(0xc)
@@ -189,7 +189,7 @@ public:
 
 
 // Size 0x40
-class Matrix: public None
+struct Matrix
 {
 public:
 	Struct Plane                                                 XPlane;                                            // 0x0(0x10)
@@ -200,7 +200,7 @@ public:
 
 
 // Size 0x14
-class InterpCurvePointFloat: public None
+struct InterpCurvePointFloat
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
@@ -212,17 +212,17 @@ public:
 
 
 // Size 0x18
-class InterpCurveFloat: public None
+struct InterpCurveFloat
 {
 public:
-	TArray<Struct InterpCurvePointVector2D>                      Points;                                            // 0x0(0x10)
+	TArray<Struct None>                                          Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
 
 // Size 0x20
-class InterpCurvePointVector2D: public None
+struct InterpCurvePointVector2D
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
@@ -234,17 +234,17 @@ public:
 
 
 // Size 0x18
-class InterpCurveVector2D: public None
+struct InterpCurveVector2D
 {
 public:
-	TArray<Struct InterpCurvePointVector>                        Points;                                            // 0x0(0x10)
+	TArray<Struct InterpCurvePointVector2D>                      Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
 
 // Size 0x2c
-class InterpCurvePointVector: public None
+struct InterpCurvePointVector
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
@@ -256,17 +256,17 @@ public:
 
 
 // Size 0x18
-class InterpCurveVector: public None
+struct InterpCurveVector
 {
 public:
-	TArray<Struct InterpCurvePointQuat>                          Points;                                            // 0x0(0x10)
+	TArray<Struct InterpCurvePointVector>                        Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
 
 // Size 0x50
-class InterpCurvePointQuat: public None
+struct InterpCurvePointQuat
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
@@ -278,17 +278,17 @@ public:
 
 
 // Size 0x18
-class InterpCurveQuat: public None
+struct InterpCurveQuat
 {
 public:
-	TArray<Struct InterpCurvePointTwoVectors>                    Points;                                            // 0x0(0x10)
+	TArray<Struct InterpCurvePointQuat>                          Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
 
 // Size 0x50
-class InterpCurvePointTwoVectors: public None
+struct InterpCurvePointTwoVectors
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
@@ -300,17 +300,17 @@ public:
 
 
 // Size 0x18
-class InterpCurveTwoVectors: public None
+struct InterpCurveTwoVectors
 {
 public:
-	TArray<Struct InterpCurvePointLinearColor>                   Points;                                            // 0x0(0x10)
+	TArray<Struct InterpCurvePointTwoVectors>                    Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
 
 // Size 0x38
-class InterpCurvePointLinearColor: public None
+struct InterpCurvePointLinearColor
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
@@ -322,17 +322,17 @@ public:
 
 
 // Size 0x18
-class InterpCurveLinearColor: public None
+struct InterpCurveLinearColor
 {
 public:
-	TArray<Struct Transform>                                     Points;                                            // 0x0(0x10)
+	TArray<Struct InterpCurvePointLinearColor>                   Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
 
 // Size 0x30
-class Transform: public None
+struct Transform
 {
 public:
 	Struct Quat                                                  Rotation;                                          // 0x0(0x10)
@@ -342,7 +342,7 @@ public:
 
 
 // Size 0x8
-class RandomStream: public None
+struct RandomStream
 {
 public:
 	int                                                          InitialSeed;                                       // 0x0(0x4)
@@ -351,21 +351,21 @@ public:
 
 
 // Size 0x8
-class DateTime: public None
+struct DateTime
 {
 public:
 };
 
 
 // Size 0x8
-class Timespan: public None
+struct Timespan
 {
 public:
 };
 
 
 // Size 0x10
-class StringAssetReference: public None
+struct StringAssetReference
 {
 public:
 	Struct FString                                               AssetLongPathname;                                 // 0x0(0x10)
@@ -373,21 +373,21 @@ public:
 
 
 // Size 0x10
-class StringClassReference: public None
+struct StringClassReference
 {
 public:
 };
 
 
 // Size 0x1
-class FallbackStruct: public None
+struct FallbackStruct
 {
 public:
 };
 
 
 // Size 0x8
-class FloatRangeBound: public None
+struct FloatRangeBound
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
@@ -396,7 +396,7 @@ public:
 
 
 // Size 0x10
-class FloatRange: public None
+struct FloatRange
 {
 public:
 	Struct FloatRangeBound                                       LowerBound;                                        // 0x0(0x8)
@@ -405,7 +405,7 @@ public:
 
 
 // Size 0x8
-class Int32RangeBound: public None
+struct Int32RangeBound
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
@@ -414,7 +414,7 @@ public:
 
 
 // Size 0x10
-class Int32Range: public None
+struct Int32Range
 {
 public:
 	Struct Int32RangeBound                                       LowerBound;                                        // 0x0(0x8)
@@ -423,7 +423,7 @@ public:
 
 
 // Size 0x8
-class FloatInterval: public None
+struct FloatInterval
 {
 public:
 	float                                                        Min;                                               // 0x0(0x4)
@@ -432,7 +432,7 @@ public:
 
 
 // Size 0x8
-class Int32Interval: public None
+struct Int32Interval
 {
 public:
 	int                                                          Min;                                               // 0x0(0x4)

@@ -618,13 +618,13 @@
       },
       {
         "Name": "CharacterRanges",
-        "Type": "TArray<Struct Typeface>",
+        "Type": "TArray<Struct Int32Range>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Languages",
-        "Type": "TArray<Byte CharacterRanges>",
+        "Type": "TArray<Byte Languages>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -687,7 +687,7 @@
       },
       {
         "Name": "FontData",
-        "Type": "TArray<Byte Hinting>",
+        "Type": "TArray<Byte FontData>",
         "Size": "0x10",
         "Offset": "0x20"
       }

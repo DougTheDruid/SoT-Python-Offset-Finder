@@ -5,7 +5,7 @@ BarrelsOfPlentyDebugSpawnLocation:
   - Name: Objects
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<Struct SceneComponent>
+    Type: TArray<Struct BarrelsOfPlentyDebugLocationEntry>
   - Name: SpawnCentre
     Offset: '0x3e0'
     Size: '0xc'

@@ -7,21 +7,21 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x1
-class SessionServiceLogUnsubscribe: public None
+struct SessionServiceLogUnsubscribe
 {
 public:
 };
 
 
 // Size 0x1
-class SessionServiceLogSubscribe: public None
+struct SessionServiceLogSubscribe
 {
 public:
 };
 
 
 // Size 0x38
-class SessionServiceLog: public None
+struct SessionServiceLog
 {
 public:
 	struct FName                                                 Category;                                          // 0x0(0x8)
@@ -33,7 +33,7 @@ public:
 
 
 // Size 0x90
-class SessionServicePong: public None
+struct SessionServicePong
 {
 public:
 	Struct FString                                               BuildDate;                                         // 0x0(0x10)
@@ -50,7 +50,7 @@ public:
 
 
 // Size 0x1
-class SessionServicePing: public None
+struct SessionServicePing
 {
 public:
 };

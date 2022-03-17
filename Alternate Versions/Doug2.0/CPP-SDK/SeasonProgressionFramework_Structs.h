@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class PlayerTrackedObjective: public None
+struct PlayerTrackedObjective
 {
 public:
 	Struct Guid                                                  ObjectiveId;                                       // 0x0(0x10)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x20
-class SeasonReward: public None
+struct SeasonReward
 {
 public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
@@ -23,24 +23,24 @@ public:
 
 
 // Size 0x1
-class SeasonServiceDataUpdatedEvent: public None
+struct SeasonServiceDataUpdatedEvent
 {
 public:
 };
 
 
 // Size 0x28
-class SeasonRewardEarnedEvent: public None
+struct SeasonRewardEarnedEvent
 {
 public:
 	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
 	bool                                                         MultipleRewards;                                   // 0x10(0x1)
-	TArray<Struct MultipleRewards>                               Rewards;                                           // 0x18(0x10)
+	TArray<Struct SeasonReward>                                  Rewards;                                           // 0x18(0x10)
 };
 
 
 // Size 0x24
-class LevelCompletionEvent: public None
+struct LevelCompletionEvent
 {
 public:
 	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0x30
-class LevelProgressionEvent: public None
+struct LevelProgressionEvent
 {
 public:
 	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
@@ -67,7 +67,7 @@ public:
 
 
 // Size 0x34
-class SeasonGoalCompletionEvent: public None
+struct SeasonGoalCompletionEvent
 {
 public:
 	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
@@ -78,7 +78,7 @@ public:
 
 
 // Size 0x40
-class SeasonGoalProgressionEvent: public None
+struct SeasonGoalProgressionEvent
 {
 public:
 	int                                                          PreviousProgress;                                  // 0x0(0x4)
@@ -92,7 +92,7 @@ public:
 
 
 // Size 0xe0
-class TrackedObjectiveCompletionMessage: public None
+struct TrackedObjectiveCompletionMessage
 {
 public:
 	Struct Guid                                                  ObjectiveId;                                       // 0x0(0x10)
@@ -105,7 +105,7 @@ public:
 
 
 // Size 0xe0
-class TrackedObjectiveProgressUpdateMessage: public None
+struct TrackedObjectiveProgressUpdateMessage
 {
 public:
 	Struct Guid                                                  ObjectiveId;                                       // 0x0(0x10)
@@ -119,7 +119,7 @@ public:
 
 
 // Size 0x18
-class TrackedObjectiveEvent: public None
+struct TrackedObjectiveEvent
 {
 public:
 };

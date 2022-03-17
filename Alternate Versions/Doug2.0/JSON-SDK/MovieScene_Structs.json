@@ -74,7 +74,7 @@
       },
       {
         "Name": "ChildPossessables",
-        "Type": "TArray<Struct ObjectTemplate>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -91,7 +91,7 @@
     "Attributes": [
       {
         "Name": "Strings",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Strings>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -218,7 +218,7 @@
     "Attributes": [
       {
         "Name": "Ranges",
-        "Type": "TArray<Struct MovieSceneEvalTemplateBase>",
+        "Type": "TArray<Struct FloatRange>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -241,7 +241,7 @@
     "Attributes": [
       {
         "Name": "ActiveSequences",
-        "Type": "TArray<Struct Groups>",
+        "Type": "TArray<Struct MovieSceneSequenceID>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -390,13 +390,13 @@
       },
       {
         "Name": "Segments",
-        "Type": "TArray<Struct EvaluationMethod>",
+        "Type": "TArray<Struct MovieSceneSegment>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "ChildTemplates",
-        "Type": "TArray<Struct Segments>",
+        "Type": "TArray<Struct MovieSceneEvalTemplatePtr>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -487,7 +487,7 @@
       },
       {
         "Name": "Children",
-        "Type": "TArray<Struct ParentID>",
+        "Type": "TArray<Struct MovieSceneSequenceID>",
         "Size": "0x10",
         "Offset": "0x8"
       }

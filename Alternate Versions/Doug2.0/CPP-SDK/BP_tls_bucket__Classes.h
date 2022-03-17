@@ -27,39 +27,4 @@ public:
 };
 
 
-// Size 0x8
-class BP_tls_bucket_bdg_01_a_ItemInfo_C: public ItemInfo
-{
-public:
-};
-
-
-// Size 0x0
-class BP_tls_bucket_bdg_01_a_Wieldable_C: public None
-{
-public:
-};
-
-
-// Size 0x0
-class BP_tls_bucket_s06_01_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_tls_bucket_wth_01_a_v01_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_tls_bucket_bdg_01_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
 }

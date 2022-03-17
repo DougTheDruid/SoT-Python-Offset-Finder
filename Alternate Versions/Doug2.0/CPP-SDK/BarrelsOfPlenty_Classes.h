@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BarrelsOfPlentyDebugSpawnLocation: public Actor
 {
 public:
-	TArray<Struct SceneComponent>                                Objects;                                           // 0x3d0(0x10)
+	TArray<Struct BarrelsOfPlentyDebugLocationEntry>             Objects;                                           // 0x3d0(0x10)
 	Struct Vector                                                SpawnCentre;                                       // 0x3e0(0xc)
 	float                                                        Radius;                                            // 0x3ec(0x4)
 };

@@ -28,7 +28,7 @@
     "Attributes": [
       {
         "Name": "RegionData",
-        "Type": "TArray<Struct GetPressureZoneParameters>",
+        "Type": "TArray<Struct RegionAssetsList>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },

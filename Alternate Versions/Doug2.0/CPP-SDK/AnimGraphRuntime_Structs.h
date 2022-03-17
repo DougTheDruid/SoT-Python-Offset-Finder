@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xc0
-class AnimNode_CopyPoseFromMesh: public None
+struct AnimNode_CopyPoseFromMesh
 {
 public:
 	Class SkeletalMeshComponent*                                 SourceMeshComponent;                               // 0x30(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x58
-class AnimNode_SkeletalControlBase: public None
+struct AnimNode_SkeletalControlBase
 {
 public:
 	Struct ComponentSpacePoseLink                                ComponentPose;                                     // 0x30(0x18)
@@ -26,7 +26,7 @@ public:
 
 
 // Size 0xa0
-class AnimNode_BoneDrivenController: public None
+struct AnimNode_BoneDrivenController
 {
 public:
 	Struct BoneReference                                         SourceBone;                                        // 0x58(0xc)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0x78
-class AnimNode_CopyBone: public None
+struct AnimNode_CopyBone
 {
 public:
 	Struct BoneReference                                         SourceBone;                                        // 0x58(0xc)
@@ -66,7 +66,7 @@ public:
 
 
 // Size 0xd0
-class AnimNode_Fabrik: public None
+struct AnimNode_Fabrik
 {
 public:
 	Struct Transform                                             EffectorTransform;                                 // 0x60(0x30)
@@ -82,20 +82,20 @@ public:
 
 
 // Size 0xa0
-class AnimNode_HandIKRetargeting: public None
+struct AnimNode_HandIKRetargeting
 {
 public:
 	Struct BoneReference                                         RightHandFK;                                       // 0x58(0xc)
 	Struct BoneReference                                         LeftHandFK;                                        // 0x64(0xc)
 	Struct BoneReference                                         RightHandIK;                                       // 0x70(0xc)
 	Struct BoneReference                                         LeftHandIK;                                        // 0x7c(0xc)
-	TArray<Struct LeftHandIK>                                    IKBonesToMove;                                     // 0x88(0x10)
+	TArray<Struct BoneReference>                                 IKBonesToMove;                                     // 0x88(0x10)
 	float                                                        HandFKWeight;                                      // 0x98(0x4)
 };
 
 
 // Size 0xc0
-class AnimNode_LookAt: public None
+struct AnimNode_LookAt
 {
 public:
 	Struct BoneReference                                         BoneToModify;                                      // 0x58(0xc)
@@ -113,7 +113,7 @@ public:
 
 
 // Size 0x90
-class AnimNode_ModifyBone: public None
+struct AnimNode_ModifyBone
 {
 public:
 	Struct BoneReference                                         BoneToModify;                                      // 0x58(0xc)
@@ -130,7 +130,7 @@ public:
 
 
 // Size 0x90
-class AnimNode_ObserveBone: public None
+struct AnimNode_ObserveBone
 {
 public:
 	Struct BoneReference                                         BoneToObserve;                                     // 0x58(0xc)
@@ -143,7 +143,7 @@ public:
 
 
 // Size 0x78
-class AnimNode_RotationMultiplier: public None
+struct AnimNode_RotationMultiplier
 {
 public:
 	Struct BoneReference                                         TargetBone;                                        // 0x58(0xc)
@@ -155,7 +155,7 @@ public:
 
 
 // Size 0xa8
-class AnimNode_SpringBone: public None
+struct AnimNode_SpringBone
 {
 public:
 	Struct BoneReference                                         SpringBone;                                        // 0x58(0xc)
@@ -175,7 +175,7 @@ public:
 
 
 // Size 0xe0
-class AnimNode_Trail: public None
+struct AnimNode_Trail
 {
 public:
 	Struct BoneReference                                         TrailBone;                                         // 0x58(0xc)
@@ -191,7 +191,7 @@ public:
 
 
 // Size 0xa0
-class AnimNode_TwoBoneIK: public None
+struct AnimNode_TwoBoneIK
 {
 public:
 	Struct BoneReference                                         IKBone;                                            // 0x58(0xc)

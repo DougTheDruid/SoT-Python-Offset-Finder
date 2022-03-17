@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x28
-class BumperZoneData: public None
+struct BumperZoneData
 {
 public:
 	Class ShipBumperZone*                                        BumperZone;                                        // 0x0(0x8)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x18
-class CachedShip: public None
+struct CachedShip
 {
 public:
 };

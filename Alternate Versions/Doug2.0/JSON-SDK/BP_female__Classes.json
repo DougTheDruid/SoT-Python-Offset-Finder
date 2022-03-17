@@ -1,33 +1,5 @@
 {
-  "BP_female_eyebrows_07_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_female_eyebrows_06_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_female_eyebrows_05_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_female_eyebrows_04_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_female_eyebrows_03_Desc_C": {
+  "BP_female_eyebrows_01_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xe0",
     "InheritedSize": "0xe0",
@@ -41,7 +13,35 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_female_eyebrows_01_Desc_C": {
+  "BP_female_eyebrows_03_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_female_eyebrows_04_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_female_eyebrows_05_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_female_eyebrows_06_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_female_eyebrows_07_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xe0",
     "InheritedSize": "0xe0",

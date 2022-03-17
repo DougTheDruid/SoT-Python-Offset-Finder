@@ -171,7 +171,7 @@ AIPerceptionStimuliSourceComponent:
   - Name: RegisterAsSourceForSenses
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Class bAutoRegisterAsSource>
+    Type: TArray<Class RegisterAsSourceForSenses>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'
@@ -405,7 +405,7 @@ AISense_Damage:
   - Name: RegisteredEvents
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct ReportNoiseEvent>
+    Type: TArray<Struct AIDamageEvent>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -423,11 +423,11 @@ AISense_Hearing:
   - Name: NoiseEventsArrayA
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct MaxNoisesStored>
+    Type: TArray<Struct AINoiseEvent>
   - Name: NoiseEventsArrayB
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct NoiseEventsArrayA>
+    Type: TArray<Struct AINoiseEvent>
   - Name: SpeedOfSoundSq
     Offset: '0xc8'
     Size: '0x4'
@@ -441,7 +441,7 @@ AISense_Prediction:
   - Name: RegisteredEvents
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct SightLimitQueryImportance>
+    Type: TArray<Struct AIPredictionEvent>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -473,7 +473,7 @@ AISense_Team:
   - Name: RegisteredEvents
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct RegisteredEvents>
+    Type: TArray<Struct AITeamStimulusEvent>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -483,7 +483,7 @@ AISense_Touch:
   - Name: RegisteredEvents
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct Guid>
+    Type: TArray<Struct AITouchEvent>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -599,7 +599,7 @@ BTCompositeNode:
   - Name: Children
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct RootDecoratorOps>
+    Type: TArray<Struct BTCompositeChild>
   - Name: Services
     Offset: '0x68'
     Size: '0x10'
@@ -1227,7 +1227,7 @@ BTTask_RunEQSQuery:
   - Name: QueryParams
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct QueryTemplate>
+    Type: TArray<Struct EnvNamedValue>
   - Name: RunMode
     Offset: '0xa0'
     Size: '0x1'
@@ -1295,7 +1295,7 @@ BehaviorTree:
   - Name: RootDecoratorOps
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct RootDecorators>
+    Type: TArray<Struct BTDecoratorLogic>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -1319,7 +1319,7 @@ BehaviorTreeManager:
   - Name: LoadedTemplates
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct MaxDebuggerSteps>
+    Type: TArray<Struct BehaviorTreeTemplateInfo>
   - Name: ActiveComponents
     Offset: '0x40'
     Size: '0x10'
@@ -1361,7 +1361,7 @@ BlackboardData:
   - Name: Keys
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct Parent>
+    Type: TArray<Struct BlackboardEntry>
   - Name: bHasSynchronizedKeys
     Offset: '0x40'
     Size: '0x1'
@@ -1529,11 +1529,11 @@ CrowdManager:
   - Name: AvoidanceConfig
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct MyNavData>
+    Type: TArray<Struct CrowdAvoidanceConfig>
   - Name: SamplingPatterns
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct AvoidanceConfig>
+    Type: TArray<Struct CrowdAvoidanceSamplingPattern>
   - Name: MaxAgents
     Offset: '0x50'
     Size: '0x4'
@@ -1599,7 +1599,7 @@ EQSTestingPawn:
   - Name: QueryParams
     Offset: '0x5e8'
     Size: '0x10'
-    Type: TArray<Struct QueryTemplate>
+    Type: TArray<Struct EnvNamedValue>
   - Name: TimeLimitPerStep
     Offset: '0x5f8'
     Size: '0x4'
@@ -1929,7 +1929,7 @@ EnvQueryManager:
   - Name: InstanceCache
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct SearchCenter>
+    Type: TArray<Struct EnvQueryInstanceCache>
   - Name: LocalContexts
     Offset: '0xa8'
     Size: '0x10'
@@ -2333,11 +2333,11 @@ PawnActionsComponent:
   - Name: ActionStacks
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct ControlledPawn>
+    Type: TArray<Struct PawnActionStack>
   - Name: ActionEvents
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct ActionStacks>
+    Type: TArray<Struct PawnActionEvent>
   - Name: CurrentAction
     Offset: '0xf0'
     Size: '0x8'

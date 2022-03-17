@@ -184,7 +184,7 @@
       },
       {
         "Name": "Reservations",
-        "Type": "TArray<Struct ForceTeamNum>",
+        "Type": "TArray<Struct PartyReservation>",
         "Size": "0x10",
         "Offset": "0x48"
       }

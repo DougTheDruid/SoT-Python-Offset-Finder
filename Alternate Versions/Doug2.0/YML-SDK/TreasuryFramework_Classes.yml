@@ -55,7 +55,7 @@ TreasuryRoom:
   - Name: WaveEncounters
     Offset: '0x408'
     Size: '0x10'
-    Type: TArray<Struct MaxEncounters>
+    Type: TArray<Struct TreasuryWaveEncounter>
   - Name: FloodMechanismActor
     Offset: '0x418'
     Size: '0x8'
@@ -95,7 +95,7 @@ TreasuryRoom:
   - Name: CachedParticipantControllers
     Offset: '0x488'
     Size: '0x10'
-    Type: TArray<Weakclass OverlappingActors>
+    Type: TArray<Weakclass CachedParticipantControllers>
   - Name: VaultLootSpawnerActor
     Offset: '0x498'
     Size: '0x8'

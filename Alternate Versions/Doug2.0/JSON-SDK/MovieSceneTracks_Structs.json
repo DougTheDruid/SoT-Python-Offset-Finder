@@ -141,7 +141,7 @@
     "Attributes": [
       {
         "Name": "KeyTimes",
-        "Type": "TArray<Float None>",
+        "Type": "TArray<Float KeyTimes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -391,19 +391,19 @@
     "Attributes": [
       {
         "Name": "Scalars",
-        "Type": "TArray<Struct MaterialIndex>",
+        "Type": "TArray<Struct ScalarParameterNameAndCurve>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "Vectors",
-        "Type": "TArray<Struct Scalars>",
+        "Type": "TArray<Struct VectorParameterNameAndCurves>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "Colors",
-        "Type": "TArray<Struct Vectors>",
+        "Type": "TArray<Struct ColorParameterNameAndCurves>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -530,7 +530,7 @@
       },
       {
         "Name": "ActorGuids",
-        "Type": "TArray<Struct ActorGuidIndexCurve>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0xa8"
       }

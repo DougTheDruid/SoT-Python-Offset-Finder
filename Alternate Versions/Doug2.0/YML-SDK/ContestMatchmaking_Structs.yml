@@ -21,11 +21,11 @@ ContestMatchmakingServerRequestModel:
   - Name: PlayModeTags
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str PlayModeTags>
   - Name: PlayModeStates
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str PlayModeStates>
   - Name: Crews
     Offset: '0x68'
     Size: '0x10'
@@ -43,7 +43,7 @@ ServerContendedModel:
   - Name: Positions
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct Uptime>
+    Type: TArray<Struct Vector2D>
   - Name: Regions
     Offset: '0x10'
     Size: '0x10'
@@ -51,7 +51,7 @@ ServerContendedModel:
   - Name: Resources
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 Resources>
   ClassSize: '0x30'
 ServerCrewModel:
   Attributes:
@@ -74,11 +74,11 @@ ServerCrewModel:
   - Name: Positions
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct SessionType>
+    Type: TArray<Struct Vector2D>
   - Name: Resources
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<UInt32 >
+    Type: TArray<UInt32 Resources>
   ClassSize: '0x60'
 ServerCrewRequestModel:
   Attributes:
@@ -101,7 +101,7 @@ ServerCrewRequestModel:
   - Name: PlayModeTags
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str PlayModeTags>
   - Name: PlayModeState
     Offset: '0x58'
     Size: '0x10'
@@ -125,7 +125,7 @@ ServerCrewRequestModel:
   - Name: CrewSessionTypes
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int CrewSessionTypes>
   - Name: Uptime
     Offset: '0x88'
     Size: '0x8'
@@ -140,7 +140,7 @@ ServerCrewResponseModel:
   - Name: Crews
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct OptionalPlayModeModel>
+    Type: TArray<Struct ServerCrewModel>
   - Name: RetryAfter
     Offset: '0x60'
     Size: '0x8'

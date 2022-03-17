@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x40
-class NotificationInputDisplayName: public None
+struct NotificationInputDisplayName
 {
 public:
 	class                                                        InputID;                                           // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x38
-class IdleTimeTracker: public None
+struct IdleTimeTracker
 {
 public:
 	Struct Timespan                                              InactivityThreshold;                               // 0x0(0x8)

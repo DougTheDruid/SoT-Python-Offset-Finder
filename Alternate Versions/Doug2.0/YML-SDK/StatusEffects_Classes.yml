@@ -11,7 +11,7 @@ AppliedStatusToSelfStatCondition:
   - Name: Status
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Class CanReceiveBuff>
+    Type: TArray<Class Status>
   - Name: ComparisonMode
     Offset: '0x40'
     Size: '0x1'
@@ -41,11 +41,11 @@ DebugMenuStatusDataAsset:
   - Name: StatusDefinitions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct OnStatusDelayEnd>
+    Type: TArray<Struct DebugMenuStatusDefinition>
   - Name: Durations
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Durations>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -87,7 +87,7 @@ LightWeightStatusEffectManagerComponent:
   - Name: ActiveEffects
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<Struct RecipientResponseList>
+    Type: TArray<Struct ActiveStatusEffect>
   ClassSize: '0x38'
   FullSize: '0x100'
   InheritedSize: '0xc8'
@@ -187,7 +187,7 @@ StatusEffectManagerComponent:
   - Name: ActiveEffects
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct RecipientResponseList>
+    Type: TArray<Struct ActiveStatusEffect>
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'
@@ -201,7 +201,7 @@ StatusEffectOverlapZone:
   - Name: StatusesToApplyOnOverlap
     Offset: '0x480'
     Size: '0x10'
-    Type: TArray<Struct CollisionMesh>
+    Type: TArray<Struct DelayedStatusEffect>
   - Name: StartActive
     Offset: '0x490'
     Size: '0x1'
@@ -255,7 +255,7 @@ StatusEffectVolumeComponent:
   - Name: StatusEffectsToMaintain
     Offset: '0x2d8'
     Size: '0x10'
-    Type: TArray<Struct UseOverlapEventsFromParentComponent>
+    Type: TArray<Struct Status>
   ClassSize: '0x20'
   FullSize: '0x2f0'
   InheritedSize: '0x2d0'
@@ -279,7 +279,7 @@ StatusRecipientResponseList:
   - Name: FeatureToggledResponseLists
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct ResponseAssets>
+    Type: TArray<Struct FeatureToggledStatusResponseList>
   - Name: FinalResponseAssets
     Offset: '0x48'
     Size: '0x10'
@@ -303,7 +303,7 @@ StatusResponseAsset:
   - Name: TriggerStatus
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Class HighFrequencyTriggerStatusHelper>
+    Type: TArray<Class TriggerStatus>
   - Name: Responses
     Offset: '0x70'
     Size: '0x10'

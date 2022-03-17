@@ -78,7 +78,7 @@
       },
       {
         "Name": "MeshOverrides",
-        "Type": "TArray<Struct SkeletalMeshSwitchGroup>",
+        "Type": "TArray<Struct AnimNotify_SoundSwitch>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -126,7 +126,7 @@
     "Attributes": [
       {
         "Name": "LocalComponentMappings",
-        "Type": "TArray<Struct GetDurationMax>",
+        "Type": "TArray<Struct EventToComponentMapping>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -318,7 +318,7 @@
     "Attributes": [
       {
         "Name": "MeshToAudioAssociations",
-        "Type": "TArray<Struct PopulateInstanceAssociations>",
+        "Type": "TArray<Struct StaticMeshAudioAssociation>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -332,7 +332,7 @@
     "Attributes": [
       {
         "Name": "InstanceAssociations",
-        "Type": "TArray<Struct TritonMapFilename>",
+        "Type": "TArray<Struct StaticMeshComponentAudioAssociation>",
         "Size": "0x10",
         "Offset": "0x2d0"
       }

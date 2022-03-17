@@ -271,7 +271,7 @@
     "Attributes": [
       {
         "Name": "SourceAttributes",
-        "Type": "TArray<Struct ModifiedAttributes>",
+        "Type": "TArray<Struct GameplayEffectAttributeCaptureSpec>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -463,7 +463,7 @@
       },
       {
         "Name": "ModifiedAttributes",
-        "Type": "TArray<Struct Def>",
+        "Type": "TArray<Struct GameplayEffectModifiedAttribute>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -585,7 +585,7 @@
     "Attributes": [
       {
         "Name": "GameplayEffects_Internal",
-        "Type": "TArray<Struct AvatarActor>",
+        "Type": "TArray<Struct ActiveGameplayEffect>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -895,7 +895,7 @@
     "Attributes": [
       {
         "Name": "Actors",
-        "Type": "TArray<Weakclass InstigatorAbilitySystemComponent>",
+        "Type": "TArray<Weakclass Actors>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -974,7 +974,7 @@
       },
       {
         "Name": "TargetActorArray",
-        "Type": "TArray<Weakclass SourceLocation>",
+        "Type": "TArray<Weakclass TargetActorArray>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -1342,7 +1342,7 @@
       },
       {
         "Name": "ConditionalGameplayEffectClasses",
-        "Type": "TArray<Class CalculationModifiers>",
+        "Type": "TArray<Class ConditionalGameplayEffectClasses>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -1497,7 +1497,7 @@
     "Attributes": [
       {
         "Name": "OutputModifiers",
-        "Type": "TArray<Struct GameplayEffectCustomExecutionParameters>",
+        "Type": "TArray<Struct GameplayModifierEvaluatedData>",
         "Size": "0x10",
         "Offset": "0x0"
       },

@@ -40,7 +40,7 @@ class CookableComponent: public ActorComponent
 public:
 	class                                                        NextCookState;                                     // 0xe8(0x8)
 	float                                                        TimeToNextCookState;                               // 0xf0(0x4)
-	TArray<Struct TimeToNextCookState>                           SmokeFeedbackLevels;                               // 0xf8(0x10)
+	TArray<Struct CookableComponentSmokeFeedbackTimingEntry>     SmokeFeedbackLevels;                               // 0xf8(0x10)
 	Class CurveFloat*                                            VisibleCookedExtentOverTime;                       // 0x108(0x8)
 	float                                                        DefaultVisibleCookedExtent;                        // 0x110(0x4)
 	struct FName                                                 CookableTypeName;                                  // 0x114(0x8)
@@ -63,8 +63,8 @@ public:
 class CookerComponent: public ActorComponent
 {
 public:
-	TArray<Struct MaxCookingRtpcAmount>                          StatusToApplyToContents;                           // 0xd0(0x10)
-	TArray<Struct StatusToApplyToContents>                       VFXFeedback;                                       // 0xe0(0x10)
+	TArray<Struct Status>                                        StatusToApplyToContents;                           // 0xd0(0x10)
+	TArray<Struct CookerSmokeFeedbackEntry>                      VFXFeedback;                                       // 0xe0(0x10)
 	Class StaticMeshMemoryConstraintComponent*                   CookableStaticMeshComponent;                       // 0xf0(0x8)
 	Class SkeletalMeshMemoryConstraintComponent*                 CookableSkeletalMeshComponent;                     // 0xf8(0x8)
 	struct FName                                                 CookedMaterialParameterName;                       // 0x100(0x8)

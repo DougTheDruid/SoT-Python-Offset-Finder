@@ -171,7 +171,7 @@ public:
 	int                                                          RandomSeed;                                        // 0x28(0x4)
 	float                                                        TileSize;                                          // 0x2c(0x4)
 	int                                                          NumUniqueTiles;                                    // 0x30(0x4)
-	TArray<Struct NumUniqueTiles>                                FoliageTypes;                                      // 0x38(0x10)
+	TArray<Struct FoliageTypeObject>                             FoliageTypes;                                      // 0x38(0x10)
 	bool                                                         bNeedsSimulation;                                  // 0x48(0x1)
 };
 
@@ -181,7 +181,7 @@ class ProceduralFoliageTile: public Object
 {
 public:
 	Class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0x28(0x8)
-	TArray<Struct FoliageSpawner>                                InstancesArray;                                    // 0xd0(0x10)
+	TArray<Struct ProceduralFoliageInstance>                     InstancesArray;                                    // 0xd0(0x10)
 };
 
 

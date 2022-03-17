@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xc
-class IncomingMigrationPreventionZone: public None
+struct IncomingMigrationPreventionZone
 {
 public:
 	Struct Vector2D                                              Location;                                          // 0x0(0x8)
@@ -16,63 +16,63 @@ public:
 
 
 // Size 0x1
-class ServerMigrationSetupCompleteEvent: public None
+struct ServerMigrationSetupCompleteEvent
 {
 public:
 };
 
 
 // Size 0x1
-class ServerMigrationSetupRequestEvent: public None
+struct ServerMigrationSetupRequestEvent
 {
 public:
 };
 
 
 // Size 0x90
-class ServerMigrationReadyToTransferActors: public None
+struct ServerMigrationReadyToTransferActors
 {
 public:
 };
 
 
 // Size 0x10
-class PrepareForWorldSwitchRpc: public None
+struct PrepareForWorldSwitchRpc
 {
 public:
 };
 
 
 // Size 0x20
-class ServerMigrationAboutToStartEvent: public None
+struct ServerMigrationAboutToStartEvent
 {
 public:
 };
 
 
 // Size 0x8
-class ServerMigrationConfigChangedEvent: public None
+struct ServerMigrationConfigChangedEvent
 {
 public:
 };
 
 
 // Size 0x10
-class ServerMigrationAbortEvent: public None
+struct ServerMigrationAbortEvent
 {
 public:
 };
 
 
 // Size 0x1
-class ServerMigrationCompleteEvent: public None
+struct ServerMigrationCompleteEvent
 {
 public:
 };
 
 
 // Size 0x78
-class ServerMigrationHeartbeatEvent: public None
+struct ServerMigrationHeartbeatEvent
 {
 public:
 	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
@@ -89,7 +89,7 @@ public:
 
 
 // Size 0x20
-class ServerMigrationRefusedEvent: public None
+struct ServerMigrationRefusedEvent
 {
 public:
 	Struct Guid                                                  MigrationId;                                       // 0x0(0x10)
@@ -98,14 +98,14 @@ public:
 
 
 // Size 0x20
-class OutgoingServerMigrationAbortedEvent: public None
+struct OutgoingServerMigrationAbortedEvent
 {
 public:
 };
 
 
 // Size 0x20
-class ServerMigrationInstanceEventBase: public None
+struct ServerMigrationInstanceEventBase
 {
 public:
 	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
@@ -114,21 +114,21 @@ public:
 
 
 // Size 0x20
-class OutgoingServerMigrationCompletedEvent: public None
+struct OutgoingServerMigrationCompletedEvent
 {
 public:
 };
 
 
 // Size 0x20
-class OutgoingServerMigrationStartedEvent: public None
+struct OutgoingServerMigrationStartedEvent
 {
 public:
 };
 
 
 // Size 0x8
-class ServerMigrationSetServerConfigMessage: public None
+struct ServerMigrationSetServerConfigMessage
 {
 public:
 	Struct Timespan                                              ExpectedServerLifetime;                            // 0x0(0x8)
@@ -136,7 +136,7 @@ public:
 
 
 // Size 0x40
-class ServerMigrationRequestEvent: public None
+struct ServerMigrationRequestEvent
 {
 public:
 	Struct Guid                                                  MigrationId;                                       // 0x0(0x10)

@@ -28,5 +28,5 @@ ThrottledProjectileTickPool:
   - Name: Projectiles
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class MaxNumberToTickPerFrame>
+    Type: TArray<Class Projectiles>
   ClassSize: '0x18'

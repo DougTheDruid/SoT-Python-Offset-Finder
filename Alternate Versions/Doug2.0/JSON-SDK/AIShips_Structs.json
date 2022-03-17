@@ -359,7 +359,7 @@
       },
       {
         "Name": "SpawnerTemplates",
-        "Type": "TArray<Struct ShipGenerationParams>",
+        "Type": "TArray<Struct AIShipEncounterParamsSpawnerData>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -394,7 +394,7 @@
       },
       {
         "Name": "SkeletonAmmoTypeOverrides",
-        "Type": "TArray<Struct SkillsetOverrides>",
+        "Type": "TArray<Struct WeightedAIShipCrewAmmoType>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -428,25 +428,25 @@
     "Attributes": [
       {
         "Name": "EncounterTypes",
-        "Type": "TArray<Byte SharedParams>",
+        "Type": "TArray<Byte EncounterTypes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SkeletonForms",
-        "Type": "TArray<Struct EncounterTypes>",
+        "Type": "TArray<Struct WeightedAIShipCrewFormType>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "SkeletonAmmoTypes",
-        "Type": "TArray<Struct SkeletonForms>",
+        "Type": "TArray<Struct WeightedAIShipCrewAmmoType>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "SailColours",
-        "Type": "TArray<Struct SkeletonAmmoTypes>",
+        "Type": "TArray<Struct Color>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -458,7 +458,7 @@
       },
       {
         "Name": "CaptainGenders",
-        "Type": "TArray<Class Captains>",
+        "Type": "TArray<Class CaptainGenders>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -571,7 +571,7 @@
     "Attributes": [
       {
         "Name": "ShipSizes",
-        "Type": "TArray<Class BattleGenerationParams>",
+        "Type": "TArray<Class ShipSizes>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -629,7 +629,7 @@
       },
       {
         "Name": "WaveConfigurations",
-        "Type": "TArray<Struct ShipSizeLimits>",
+        "Type": "TArray<Struct AIShipEncounterWaveDesc>",
         "Size": "0x10",
         "Offset": "0x50"
       }

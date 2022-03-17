@@ -93,7 +93,7 @@ TestLevelScriptActor:
   - Name: AdditionalMetadata
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<Struct RequiresServices>
+    Type: TArray<Struct TestLevelMetadataEntry>
   - Name: CaptureType
     Offset: '0x3f8'
     Size: '0x1'
@@ -113,19 +113,19 @@ TestLevelScriptActor:
   - Name: VerboseLogCategories
     Offset: '0x408'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str VerboseLogCategories>
   - Name: ClientsRunning
     Offset: '0x418'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int ClientsRunning>
   - Name: ClientIds
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int ClientIds>
   - Name: ClientPawns
     Offset: '0x438'
     Size: '0x10'
-    Type: TArray<Struct ClientIds>
+    Type: TArray<Struct ClientPawnDetails>
   - Name: SpawnedActors
     Offset: '0x448'
     Size: '0x10'
@@ -173,11 +173,11 @@ TextureAuditorSettings:
   - Name: SpecificTexturesToNotAudit
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct ForwardSettingMap>
+    Type: TArray<Struct StringAssetReference>
   - Name: TextureDirectoriesToNotAudit
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct SpecificTexturesToNotAudit>
+    Type: TArray<Struct DirectoryPath>
   - Name: DefaultTextureProperties
     Offset: '0x58'
     Size: '0x20'
@@ -185,7 +185,7 @@ TextureAuditorSettings:
   - Name: PerTextureGroupPropertiesOverrides
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct DefaultTextureProperties>
+    Type: TArray<Struct TextureAuditorGroupProperties>
   ClassSize: '0x50'
   FullSize: '0x88'
   InheritedSize: '0x38'

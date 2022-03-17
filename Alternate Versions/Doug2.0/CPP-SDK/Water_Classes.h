@@ -38,7 +38,7 @@ public:
 class WaterProperties: public Object
 {
 public:
-	TArray<Struct GetActorWaterInformation>                      WaterInfo;                                         // 0x28(0x10)
+	TArray<Struct WaterInformation>                              WaterInfo;                                         // 0x28(0x10)
 };
 
 
@@ -104,7 +104,7 @@ public:
 class SplashProbeDataAsset: public DataAsset
 {
 public:
-	TArray<Struct AttachProbesToComponent>                       Probes;                                            // 0x28(0x10)
+	TArray<Struct SplashProbe>                                   Probes;                                            // 0x28(0x10)
 };
 
 
@@ -194,7 +194,7 @@ public:
 class WaterSpoutVFXComponent: public ActorComponent
 {
 public:
-	TArray<Struct IsEnabled>                                     WaterSpouts;                                       // 0xc8(0x10)
+	TArray<Struct WaterSpout>                                    WaterSpouts;                                       // 0xc8(0x10)
 	Struct Vector                                                SplashEffectPointBottomZ;                          // 0xd8(0xc)
 	Class Object*                                                SpoutParticleSystem;                               // 0xe8(0x8)
 	Class Object*                                                SplashParticleSystem;                              // 0xf0(0x8)
@@ -206,7 +206,7 @@ public:
 	Class StaticMesh*                                            SplashKillPlaneMesh;                               // 0x110(0x8)
 	Struct Vector                                                SplashKillPlaneScale;                              // 0x118(0xc)
 	Class StaticMeshComponent*                                   SplashKillPlane;                                   // 0x128(0x8)
-	TArray<Struct SplashKillPlane>                               ActiveWaterSpouts;                                 // 0x130(0x10)
+	TArray<Struct WaterSpout>                                    ActiveWaterSpouts;                                 // 0x130(0x10)
 };
 
 

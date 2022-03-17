@@ -299,11 +299,11 @@ ReviveSettings:
   - Name: UnsupportedPlayModes
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Byte MaxRevertEvaporateDuration>
+    Type: TArray<Byte UnsupportedPlayModes>
   - Name: ModeSpecificSettings
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct UnsupportedPlayModes>
+    Type: TArray<Struct ModeSpecificReviveSettings>
   - Name: GiveUpHoldTime
     Offset: '0x88'
     Size: '0x4'

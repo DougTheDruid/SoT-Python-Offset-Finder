@@ -39,13 +39,13 @@
     "Attributes": [
       {
         "Name": "Locations",
-        "Type": "TArray<Struct BP_GetTargetLocations>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x870"
       },
       {
         "Name": "LocationIds",
-        "Type": "TArray<Struct Locations>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x880"
       },

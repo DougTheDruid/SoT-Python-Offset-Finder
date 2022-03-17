@@ -21,8 +21,8 @@ public:
 class MultiTargetEnchantedCompass: public Compass
 {
 public:
-	TArray<Struct BP_GetTargetLocations>                         Locations;                                         // 0x870(0x10)
-	TArray<Struct Locations>                                     LocationIds;                                       // 0x880(0x10)
+	TArray<Struct Vector>                                        Locations;                                         // 0x870(0x10)
+	TArray<Struct Guid>                                          LocationIds;                                       // 0x880(0x10)
 	Class InventoryItemComponent*                                InventoryItem;                                     // 0x890(0x8)
 	Class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x898(0x8)
 };

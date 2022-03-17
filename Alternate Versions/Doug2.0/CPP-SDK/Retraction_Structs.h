@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x3
-class RetractorOrientationAdjustmentFlags: public None
+struct RetractorOrientationAdjustmentFlags
 {
 public:
 	bool                                                         AdjustPitch;                                       // 0x0(0x1)

@@ -94,7 +94,7 @@
       },
       {
         "Name": "ShipDamageLevels",
-        "Type": "TArray<Struct ApplyDamageToShips>",
+        "Type": "TArray<Struct ShockwaveDamagerShipDamage>",
         "Size": "0x10",
         "Offset": "0x118"
       },
@@ -136,13 +136,13 @@
       },
       {
         "Name": "ProcessedShips",
-        "Type": "TArray<Weakclass OnShockwaveEnded>",
+        "Type": "TArray<Weakclass ProcessedShips>",
         "Size": "0x10",
         "Offset": "0x168"
       },
       {
         "Name": "ProcessedGhostShips",
-        "Type": "TArray<Weakclass ProcessedShips>",
+        "Type": "TArray<Weakclass ProcessedGhostShips>",
         "Size": "0x10",
         "Offset": "0x178"
       }
@@ -162,13 +162,13 @@
       },
       {
         "Name": "ShipHulls",
-        "Type": "TArray<Interface Shape>",
+        "Type": "TArray<Interface ShipHulls>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
       {
         "Name": "WatercraftHealthInterfaces",
-        "Type": "TArray<Interface ShipHulls>",
+        "Type": "TArray<Interface WatercraftHealthInterfaces>",
         "Size": "0x10",
         "Offset": "0xe8"
       },

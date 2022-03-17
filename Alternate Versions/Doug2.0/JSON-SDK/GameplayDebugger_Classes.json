@@ -19,7 +19,7 @@
       },
       {
         "Name": "ReplicateViewDataCounters",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int ReplicateViewDataCounters>",
         "Size": "0x10",
         "Offset": "0x5c8"
       },
@@ -121,31 +121,31 @@
       },
       {
         "Name": "BlackboardRepData",
-        "Type": "TArray<Byte BrainComponentString>",
+        "Type": "TArray<Byte BlackboardRepData>",
         "Size": "0x10",
         "Offset": "0x6d8"
       },
       {
         "Name": "PathPoints",
-        "Type": "TArray<Struct BlackboardRepData>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x6f8"
       },
       {
         "Name": "PathCorridorData",
-        "Type": "TArray<Byte PathPoints>",
+        "Type": "TArray<Byte PathCorridorData>",
         "Size": "0x10",
         "Offset": "0x708"
       },
       {
         "Name": "NavmeshRepData",
-        "Type": "TArray<Byte PathCorridorData>",
+        "Type": "TArray<Byte NavmeshRepData>",
         "Size": "0x10",
         "Offset": "0x728"
       },
       {
         "Name": "EQSRepData",
-        "Type": "TArray<Byte NavmeshRepData>",
+        "Type": "TArray<Byte EQSRepData>",
         "Size": "0x10",
         "Offset": "0x738"
       },

@@ -247,7 +247,7 @@ MeleeAIAbilityParams:
   - Name: MeleeAttacks
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct AngleChecker>
+    Type: TArray<Struct MeleeAttackIdWeights>
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'

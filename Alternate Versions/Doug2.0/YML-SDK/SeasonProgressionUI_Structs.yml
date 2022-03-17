@@ -223,11 +223,11 @@ SeasonsPopupEvent:
   - Name: Text
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Text None>
+    Type: TArray<Struct FText>
   - Name: Images
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Images>
   - Name: Background
     Offset: '0x20'
     Size: '0x10'
@@ -239,7 +239,7 @@ SeasonsPopupEvent:
   - Name: StyleModifiers
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Byte Audio>
+    Type: TArray<Byte StyleModifiers>
   - Name: Rank
     Offset: '0x80'
     Size: '0x4'

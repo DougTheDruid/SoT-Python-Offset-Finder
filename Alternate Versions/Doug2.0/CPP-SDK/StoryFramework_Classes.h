@@ -18,7 +18,7 @@ public:
 class StoryNPCDialogConditionalContext: public NPCDialogConditionalContext
 {
 public:
-	TArray<Name None>                                            StoryNames;                                        // 0x28(0x10)
+	TArray<Struct FName>                                         StoryNames;                                        // 0x28(0x10)
 };
 
 
@@ -40,8 +40,8 @@ public:
 class StoryService: public Actor
 {
 public:
-	TArray<Struct StorySpawnedActorsAssetList>                   Stories;                                           // 0x3f8(0x10)
-	TArray<Struct Stories>                                       ActiveStories;                                     // 0x408(0x10)
+	TArray<Struct StoryInfo>                                     Stories;                                           // 0x3f8(0x10)
+	TArray<Struct StoryInfo>                                     ActiveStories;                                     // 0x408(0x10)
 };
 
 
@@ -57,7 +57,7 @@ public:
 class StorySpawnedActorsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct Asset>                                         StorySpawnedActorsList;                            // 0x28(0x10)
+	TArray<Struct StorySpawnedActorsList>                        StorySpawnedActorsList;                            // 0x28(0x10)
 };
 
 

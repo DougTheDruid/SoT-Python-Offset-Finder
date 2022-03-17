@@ -73,7 +73,7 @@
       },
       {
         "Name": "DifficultyWeightings",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float DifficultyWeightings>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -107,7 +107,7 @@
       },
       {
         "Name": "DifficultyWeightings",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float DifficultyWeightings>",
         "Size": "0x10",
         "Offset": "0x8"
       }

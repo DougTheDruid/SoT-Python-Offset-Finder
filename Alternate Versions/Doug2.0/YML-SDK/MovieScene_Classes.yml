@@ -5,15 +5,15 @@ MovieScene:
   - Name: Spawnables
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct BindingData>
+    Type: TArray<Struct MovieSceneSpawnable>
   - Name: Possessables
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct Spawnables>
+    Type: TArray<Struct MovieScenePossessable>
   - Name: ObjectBindings
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct Possessables>
+    Type: TArray<Struct MovieSceneBinding>
   - Name: MasterTracks
     Offset: '0xb0'
     Size: '0x10'
@@ -63,7 +63,7 @@ MovieSceneBindingOverrides:
   - Name: BindingData
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct ChildObjectBindingStrings>
+    Type: TArray<Struct MovieSceneBindingOverrideData>
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
@@ -97,7 +97,7 @@ MovieSceneFolder:
   - Name: ChildObjectBindingStrings
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str ChildObjectBindingStrings>
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'

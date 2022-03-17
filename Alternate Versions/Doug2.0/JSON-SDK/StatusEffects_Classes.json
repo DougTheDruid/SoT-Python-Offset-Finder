@@ -28,7 +28,7 @@
     "Attributes": [
       {
         "Name": "Status",
-        "Type": "TArray<Class CanReceiveBuff>",
+        "Type": "TArray<Class Status>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -69,13 +69,13 @@
     "Attributes": [
       {
         "Name": "StatusDefinitions",
-        "Type": "TArray<Struct OnStatusDelayEnd>",
+        "Type": "TArray<Struct DebugMenuStatusDefinition>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "Durations",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Durations>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -95,7 +95,7 @@
       },
       {
         "Name": "StatusesToApplyOnOverlap",
-        "Type": "TArray<Struct CollisionMesh>",
+        "Type": "TArray<Struct DelayedStatusEffect>",
         "Size": "0x10",
         "Offset": "0x480"
       },
@@ -189,7 +189,7 @@
       },
       {
         "Name": "TriggerStatus",
-        "Type": "TArray<Class HighFrequencyTriggerStatusHelper>",
+        "Type": "TArray<Class TriggerStatus>",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -215,7 +215,7 @@
       },
       {
         "Name": "FeatureToggledResponseLists",
-        "Type": "TArray<Struct ResponseAssets>",
+        "Type": "TArray<Struct FeatureToggledStatusResponseList>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -241,7 +241,7 @@
       },
       {
         "Name": "ActiveEffects",
-        "Type": "TArray<Struct RecipientResponseList>",
+        "Type": "TArray<Struct ActiveStatusEffect>",
         "Size": "0x10",
         "Offset": "0xf0"
       }
@@ -357,7 +357,7 @@
       },
       {
         "Name": "ActiveEffects",
-        "Type": "TArray<Struct RecipientResponseList>",
+        "Type": "TArray<Struct ActiveStatusEffect>",
         "Size": "0x10",
         "Offset": "0xf8"
       }
@@ -405,7 +405,7 @@
       },
       {
         "Name": "StatusEffectsToMaintain",
-        "Type": "TArray<Struct UseOverlapEventsFromParentComponent>",
+        "Type": "TArray<Struct Status>",
         "Size": "0x10",
         "Offset": "0x2d8"
       }

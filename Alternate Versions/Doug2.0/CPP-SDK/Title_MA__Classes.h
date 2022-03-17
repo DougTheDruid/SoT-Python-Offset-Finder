@@ -48,18 +48,4 @@ public:
 };
 
 
-// Size 0x0
-class Title_MA_MerchantAdventurer_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_MA_GildedMerchant_C: public TitleDesc
-{
-public:
-};
-
-
 }

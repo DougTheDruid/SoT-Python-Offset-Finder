@@ -23,7 +23,7 @@ BTDecorator_IsOccupyingHangoutSpotWithGivenId:
   - Name: SuccessIds
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct MatchingStates>
+    Type: TArray<Struct HangoutSpotId>
   ClassSize: '0x10'
   FullSize: '0x78'
   InheritedSize: '0x68'
@@ -45,7 +45,7 @@ BTDecorator_PetRoamingAnimationStateActive:
   - Name: MatchingStates
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Byte TaskDuration>
+    Type: TArray<Byte MatchingStates>
   ClassSize: '0x10'
   FullSize: '0x78'
   InheritedSize: '0x68'
@@ -103,11 +103,11 @@ BTTask_PetWaitForAnimationRoamingState:
   - Name: SuccessRoamingStates
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Byte AfterReactAnimState>
+    Type: TArray<Byte SuccessRoamingStates>
   - Name: FailRoamingStates
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Byte SuccessRoamingStates>
+    Type: TArray<Byte FailRoamingStates>
   ClassSize: '0x20'
   FullSize: '0x80'
   InheritedSize: '0x60'
@@ -263,7 +263,7 @@ PetAIController:
   - Name: StrategyControllerMovementMods
     Offset: '0x918'
     Size: '0x10'
-    Type: TArray<Struct DebugMenuName>
+    Type: TArray<Struct AIStategyControllerMovementMod>
   - Name: DefaultControlRotationInterpSpeed
     Offset: '0x928'
     Size: '0x4'
@@ -335,7 +335,7 @@ PetCustomisationOverrideMappingsDataAsset:
   - Name: MappingEntries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ResponsePriorities>
+    Type: TArray<Struct PetCustomiationOverrideMappingEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -355,7 +355,7 @@ PetDangerDataAsset:
   - Name: KnownHearingDangers
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct PetPreviewCamera>
+    Type: TArray<Struct PetDangerHearingThreat>
   - Name: MinChangeAverageThreatLocationToUpdate
     Offset: '0x38'
     Size: '0x4'
@@ -367,7 +367,7 @@ PetDangerDataAsset:
   - Name: ResponsePriorities
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Byte FleeDistance>
+    Type: TArray<Byte ResponsePriorities>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -407,7 +407,7 @@ PetHangoutSpotComponent:
   - Name: HangoutSpots
     Offset: '0x2d0'
     Size: '0x10'
-    Type: TArray<Struct DropChannel>
+    Type: TArray<Struct HangoutSpotPosition>
   - Name: HasLowerDeckFloodThreshold
     Offset: '0x2e0'
     Size: '0x1'
@@ -475,7 +475,7 @@ PetHangoutSpotsDataAsset:
   - Name: HangoutSpotParams
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct PetType_Cached>
+    Type: TArray<Struct HangoutSpotParams>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -527,7 +527,7 @@ PetListingDataAsset:
   - Name: Entries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct OnRep_DebugDisplayText>
+    Type: TArray<Struct PetListingTypeEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -571,7 +571,7 @@ PetPerchComponent:
   - Name: AllowedPetTypes
     Offset: '0x130'
     Size: '0x10'
-    Type: TArray<Class AIPartId>
+    Type: TArray<Class AllowedPetTypes>
   - Name: HangoutSpotIndex
     Offset: '0x140'
     Size: '0x4'
@@ -703,7 +703,7 @@ PetsSettings:
   - Name: ExcludedStatesForRoamingAssetGeneration
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Byte PetSpawnDefinitionsDataAsset>
+    Type: TArray<Byte ExcludedStatesForRoamingAssetGeneration>
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'
@@ -725,7 +725,7 @@ ReactStateMappingsDataAsset:
   - Name: ReactMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct OnRep_DropRequest>
+    Type: TArray<Struct ReactStateMapping>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -861,7 +861,7 @@ WieldablePetComponentDataAsset:
   - Name: DropTimeouts
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct DamageToOwnerDropThreshold>
+    Type: TArray<Struct WieldablePetDropTimeout>
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
@@ -875,15 +875,15 @@ WieldablePetHungerComponent:
   - Name: CachedOverlappingActors
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct HungerData>
+    Type: TArray<Struct OverlapResult>
   - Name: ActiveFoodSources
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<Struct CachedOverlappingActors>
+    Type: TArray<Struct WieldablePetFoodSourceEntry>
   - Name: FoodSourcesToRemove
     Offset: '0x118'
     Size: '0x10'
-    Type: TArray<Struct ActiveFoodSources>
+    Type: TArray<Struct WieldablePetFoodSourceEntry>
   ClassSize: '0xb0'
   FullSize: '0x178'
   InheritedSize: '0xc8'

@@ -39,7 +39,7 @@ class AnimNotify_WwiseSoundMeshSwitch: public AnimNotify_WwiseSound
 {
 public:
 	struct FName                                                 SkeletalMeshSwitchGroup;                           // 0x80(0x8)
-	TArray<Struct SkeletalMeshSwitchGroup>                       MeshOverrides;                                     // 0x88(0x10)
+	TArray<Struct AnimNotify_SoundSwitch>                        MeshOverrides;                                     // 0x88(0x10)
 };
 
 
@@ -64,7 +64,7 @@ public:
 class AudioEventToComponentMapComponent: public ActorComponent
 {
 public:
-	TArray<Struct GetDurationMax>                                LocalComponentMappings;                            // 0xc8(0x10)
+	TArray<Struct EventToComponentMapping>                       LocalComponentMappings;                            // 0xc8(0x10)
 };
 
 
@@ -165,7 +165,7 @@ public:
 class StaticMeshAudioDataAsset: public DataAsset
 {
 public:
-	TArray<Struct PopulateInstanceAssociations>                  MeshToAudioAssociations;                           // 0x28(0x10)
+	TArray<Struct StaticMeshAudioAssociation>                    MeshToAudioAssociations;                           // 0x28(0x10)
 };
 
 
@@ -173,7 +173,7 @@ public:
 class StaticMeshAudioEmittersComponent: public SceneComponent
 {
 public:
-	TArray<Struct TritonMapFilename>                             InstanceAssociations;                              // 0x2d0(0x10)
+	TArray<Struct StaticMeshComponentAudioAssociation>           InstanceAssociations;                              // 0x2d0(0x10)
 };
 
 

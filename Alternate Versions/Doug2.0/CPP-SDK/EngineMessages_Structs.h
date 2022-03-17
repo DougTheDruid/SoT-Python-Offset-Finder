@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class EngineServiceNotification: public None
+struct EngineServiceNotification
 {
 public:
 	Struct FString                                               Text;                                              // 0x0(0x10)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x10
-class EngineServiceTerminate: public None
+struct EngineServiceTerminate
 {
 public:
 	Struct FString                                               UserName;                                          // 0x0(0x10)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x20
-class EngineServiceExecuteCommand: public None
+struct EngineServiceExecuteCommand
 {
 public:
 	Struct FString                                               Command;                                           // 0x0(0x10)
@@ -33,7 +33,7 @@ public:
 
 
 // Size 0x20
-class EngineServiceAuthGrant: public None
+struct EngineServiceAuthGrant
 {
 public:
 	Struct FString                                               UserName;                                          // 0x0(0x10)
@@ -42,7 +42,7 @@ public:
 
 
 // Size 0x20
-class EngineServiceAuthDeny: public None
+struct EngineServiceAuthDeny
 {
 public:
 	Struct FString                                               UserName;                                          // 0x0(0x10)
@@ -51,7 +51,7 @@ public:
 
 
 // Size 0x50
-class EngineServicePong: public None
+struct EngineServicePong
 {
 public:
 	Struct FString                                               CurrentLevel;                                      // 0x0(0x10)
@@ -65,7 +65,7 @@ public:
 
 
 // Size 0x1
-class EngineServicePing: public None
+struct EngineServicePing
 {
 public:
 };

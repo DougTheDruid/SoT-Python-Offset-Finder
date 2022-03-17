@@ -181,7 +181,7 @@
       },
       {
         "Name": "ActorGuidStrings",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str ActorGuidStrings>",
         "Size": "0x10",
         "Offset": "0x120"
       }
@@ -677,19 +677,19 @@
     "Attributes": [
       {
         "Name": "ScalarParameterNamesAndCurves",
-        "Type": "TArray<Struct Sections>",
+        "Type": "TArray<Struct ScalarParameterNameAndCurve>",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "VectorParameterNamesAndCurves",
-        "Type": "TArray<Struct ScalarParameterNamesAndCurves>",
+        "Type": "TArray<Struct VectorParameterNameAndCurves>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
         "Name": "ColorParameterNamesAndCurves",
-        "Type": "TArray<Struct VectorParameterNamesAndCurves>",
+        "Type": "TArray<Struct ColorParameterNameAndCurves>",
         "Size": "0x10",
         "Offset": "0xb8"
       }

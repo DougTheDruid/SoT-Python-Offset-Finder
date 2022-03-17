@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class FoliageTypeObject: public None
+struct FoliageTypeObject
 {
 public:
 	Class Object*                                                FoliageTypeObject;                                 // 0x0(0x8)
@@ -18,7 +18,7 @@ public:
 
 
 // Size 0x60
-class ProceduralFoliageInstance: public None
+struct ProceduralFoliageInstance
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
@@ -31,7 +31,7 @@ public:
 
 
 // Size 0x1
-class ConsoleCommands: public None
+struct ConsoleCommands
 {
 public:
 };

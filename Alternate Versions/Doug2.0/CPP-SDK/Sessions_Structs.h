@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class SessionTemplate: public None
+struct SessionTemplate
 {
 public:
 	Struct FString                                               TemplateName;                                      // 0x0(0x10)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x38
-class CrewSessionTemplate: public None
+struct CrewSessionTemplate
 {
 public:
 	Struct FString                                               MatchmakingHopper;                                 // 0x18(0x10)
@@ -27,28 +27,28 @@ public:
 
 
 // Size 0x28
-class OnlineSessionMemberLostEvent: public None
+struct OnlineSessionMemberLostEvent
 {
 public:
 };
 
 
 // Size 0x1
-class SessionLostEvent: public None
+struct SessionLostEvent
 {
 public:
 };
 
 
 // Size 0x20
-class SessionDetailsChangedEvent: public None
+struct SessionDetailsChangedEvent
 {
 public:
 };
 
 
 // Size 0x10
-class SessionInfoUpdateAvailableEvent: public None
+struct SessionInfoUpdateAvailableEvent
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
@@ -56,7 +56,7 @@ public:
 
 
 // Size 0x18
-class CrewSessionOperationFailedTelemetryEvent: public None
+struct CrewSessionOperationFailedTelemetryEvent
 {
 public:
 	Struct FString                                               ErrorMessage;                                      // 0x0(0x10)
@@ -66,7 +66,7 @@ public:
 
 
 // Size 0x78
-class CrewSessionMatchmakingFollowedTelemetryEvent: public None
+struct CrewSessionMatchmakingFollowedTelemetryEvent
 {
 public:
 	Struct Guid                                                  NewCrewId;                                         // 0x50(0x10)
@@ -76,7 +76,7 @@ public:
 
 
 // Size 0x50
-class CrewSessionBaseSessionTelemetryEvent: public None
+struct CrewSessionBaseSessionTelemetryEvent
 {
 public:
 	Struct CrewSessionTelemetry                                  Session;                                           // 0x10(0x40)
@@ -84,7 +84,7 @@ public:
 
 
 // Size 0x10
-class CrewSessionBaseTelemetryEvent: public None
+struct CrewSessionBaseTelemetryEvent
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
@@ -92,7 +92,7 @@ public:
 
 
 // Size 0x40
-class CrewSessionTelemetry: public None
+struct CrewSessionTelemetry
 {
 public:
 	TArray<Struct CrewSessionMemberTelemetry>                    SessionMembers;                                    // 0x0(0x10)
@@ -103,7 +103,7 @@ public:
 
 
 // Size 0x28
-class CrewSessionMemberTelemetry: public None
+struct CrewSessionMemberTelemetry
 {
 public:
 	Struct FString                                               UserId;                                            // 0x0(0x10)
@@ -113,7 +113,7 @@ public:
 
 
 // Size 0x98
-class CrewSessionMatchmakingEndedTelemetryEvent: public None
+struct CrewSessionMatchmakingEndedTelemetryEvent
 {
 public:
 	Struct Guid                                                  NewCrewId;                                         // 0x10(0x10)
@@ -123,21 +123,21 @@ public:
 	Struct FString                                               MatchmakingType;                                   // 0x50(0x10)
 	Struct FString                                               MatchmakingResult;                                 // 0x60(0x10)
 	Struct FString                                               ErrorMessage;                                      // 0x70(0x10)
-	TArray<Int >                                                 CrewSegmentValues;                                 // 0x80(0x10)
+	TArray<Int CrewSegmentValues>                                CrewSegmentValues;                                 // 0x80(0x10)
 	int                                                          CurrentCrewCount;                                  // 0x90(0x4)
 	int                                                          TotalWaitTime;                                     // 0x94(0x4)
 };
 
 
 // Size 0x70
-class CrewSessionMatchmakingStartedTelemetryEvent: public None
+struct CrewSessionMatchmakingStartedTelemetryEvent
 {
 public:
 	Struct Guid                                                  CrewMatchmakingAttemptId;                          // 0x10(0x10)
 	Struct FString                                               SessionType;                                       // 0x20(0x10)
 	Struct FString                                               MatchmakingHopper;                                 // 0x30(0x10)
 	Struct FString                                               MatchmakingType;                                   // 0x40(0x10)
-	TArray<Int >                                                 CrewSegmentValues;                                 // 0x50(0x10)
+	TArray<Int CrewSegmentValues>                                CrewSegmentValues;                                 // 0x50(0x10)
 	int                                                          CurrentCrewCount;                                  // 0x60(0x4)
 	int                                                          EstimatedWaitTime;                                 // 0x64(0x4)
 	int                                                          MaxWaitTime;                                       // 0x68(0x4)
@@ -145,14 +145,14 @@ public:
 
 
 // Size 0x10
-class CrewSessionLeaveTelemetryEvent: public None
+struct CrewSessionLeaveTelemetryEvent
 {
 public:
 };
 
 
 // Size 0x70
-class CrewSessionJoinedTelemetryEvent: public None
+struct CrewSessionJoinedTelemetryEvent
 {
 public:
 	Struct FString                                               JoinMethod;                                        // 0x50(0x10)
@@ -161,7 +161,7 @@ public:
 
 
 // Size 0x20
-class CrewSessionQoSMeasurementTelemetry: public None
+struct CrewSessionQoSMeasurementTelemetry
 {
 public:
 	Struct FString                                               Location;                                          // 0x0(0x10)
@@ -173,10 +173,10 @@ public:
 
 
 // Size 0x60
-class CrewSessionCreatedTelemetryEvent: public None
+struct CrewSessionCreatedTelemetryEvent
 {
 public:
-	TArray<Struct CrewTrackedItemOwnershipSet>                   QoSTelemetry;                                      // 0x50(0x10)
+	TArray<Struct CrewSessionQoSMeasurementTelemetry>            QoSTelemetry;                                      // 0x50(0x10)
 };
 
 

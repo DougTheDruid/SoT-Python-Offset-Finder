@@ -14,7 +14,7 @@
     "Attributes": [
       {
         "Name": "AssetsToReference",
-        "Type": "TArray<Assetclass DidHitchOccurThisFrame>",
+        "Type": "TArray<Assetclass AssetsToReference>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -42,7 +42,7 @@
     "Attributes": [
       {
         "Name": "VisualiserCategories",
-        "Type": "TArray<Struct Activate>",
+        "Type": "TArray<Struct MemoryVisualiserCategory>",
         "Size": "0x10",
         "Offset": "0x28"
       }

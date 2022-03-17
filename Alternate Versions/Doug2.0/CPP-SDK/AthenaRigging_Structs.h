@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class RopeCatenaryShapeParams: public None
+struct RopeCatenaryShapeParams
 {
 public:
 	Struct RopeCatenaryLengthParams                              Length;                                            // 0x0(0x10)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x8
-class RopeCatenarySlopeBlendParams: public None
+struct RopeCatenarySlopeBlendParams
 {
 public:
 	float                                                        MinSlopeForTautBlend;                              // 0x0(0x4)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0x10
-class RopeCatenaryLengthParams: public None
+struct RopeCatenaryLengthParams
 {
 public:
 	float                                                        MinTautLength;                                     // 0x0(0x4)
@@ -36,7 +36,7 @@ public:
 
 
 // Size 0x8
-class RopeCatenarySwingParams: public None
+struct RopeCatenarySwingParams
 {
 public:
 	float                                                        LengthForNeutralSwing;                             // 0x0(0x4)
@@ -45,7 +45,7 @@ public:
 
 
 // Size 0x8
-class RopeCatenaryDynamicsParams: public None
+struct RopeCatenaryDynamicsParams
 {
 public:
 	float                                                        CatenaryToTautLengthRatioToConsiderCatenary;       // 0x0(0x4)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0x54
-class InstancedRopeParams: public None
+struct InstancedRopeParams
 {
 public:
 	Struct Vector                                                Start;                                             // 0x0(0xc)
@@ -71,27 +71,27 @@ public:
 
 
 // Size 0x10
-class RiggingSystemLine: public None
+struct RiggingSystemLine
 {
 public:
 };
 
 
 // Size 0x60
-class RiggingSystemPulleyData: public None
+struct RiggingSystemPulleyData
 {
 public:
-	TArray<Float None>                                           AttachmentSag;                                     // 0x0(0x10)
-	TArray<Float >                                               AttachmentLength;                                  // 0x10(0x10)
-	TArray<Float >                                               Scale;                                             // 0x20(0x10)
-	TArray<Float >                                               ScaledOffset;                                      // 0x30(0x10)
-	TArray<Float >                                               ScaledRadius;                                      // 0x40(0x10)
-	TArray<Int >                                                 MeshIDs;                                           // 0x50(0x10)
+	TArray<Float AttachmentSag>                                  AttachmentSag;                                     // 0x0(0x10)
+	TArray<Float AttachmentLength>                               AttachmentLength;                                  // 0x10(0x10)
+	TArray<Float Scale>                                          Scale;                                             // 0x20(0x10)
+	TArray<Float ScaledOffset>                                   ScaledOffset;                                      // 0x30(0x10)
+	TArray<Float ScaledRadius>                                   ScaledRadius;                                      // 0x40(0x10)
+	TArray<Int MeshIDs>                                          MeshIDs;                                           // 0x50(0x10)
 };
 
 
 // Size 0xc
-class RopeVisualParams: public None
+struct RopeVisualParams
 {
 public:
 	float                                                        Thickness;                                         // 0x0(0x4)
@@ -101,7 +101,7 @@ public:
 
 
 // Size 0x20
-class RopeStyleParams: public None
+struct RopeStyleParams
 {
 public:
 	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
@@ -112,7 +112,7 @@ public:
 
 
 // Size 0x10
-class PulleyVisualParams: public None
+struct PulleyVisualParams
 {
 public:
 	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
@@ -122,7 +122,7 @@ public:
 
 
 // Size 0x50
-class RiggingSystemPulleyParams: public None
+struct RiggingSystemPulleyParams
 {
 public:
 	Struct SocketId                                              Anchor;                                            // 0x0(0x20)
@@ -133,7 +133,7 @@ public:
 
 
 // Size 0x14
-class RiggingSystemPulleyAttachmentParams: public None
+struct RiggingSystemPulleyAttachmentParams
 {
 public:
 	Struct RopeVisualParams                                      Visuals;                                           // 0x0(0xc)
@@ -143,11 +143,11 @@ public:
 
 
 // Size 0x78
-class RiggingSystemLineParams: public None
+struct RiggingSystemLineParams
 {
 public:
 	Struct SocketId                                              Start;                                             // 0x0(0x20)
-	TArray<Struct Start>                                         Pulleys;                                           // 0x20(0x10)
+	TArray<Struct RiggingSystemPulleyParams>                     Pulleys;                                           // 0x20(0x10)
 	Struct SocketId                                              End;                                               // 0x30(0x20)
 	Struct RopeVisualParams                                      Visuals;                                           // 0x50(0xc)
 	Struct RopeCatenaryShapeParams                               Shape;                                             // 0x5c(0x18)
@@ -155,16 +155,16 @@ public:
 
 
 // Size 0x18
-class RiggingSystemLineGroup: public None
+struct RiggingSystemLineGroup
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<Struct Name>                                          Lines;                                             // 0x8(0x10)
+	TArray<Struct RiggingSystemLineParams>                       Lines;                                             // 0x8(0x10)
 };
 
 
 // Size 0x8
-class RopeCatenaryLengthPair: public None
+struct RopeCatenaryLengthPair
 {
 public:
 	float                                                        Taut;                                              // 0x0(0x4)

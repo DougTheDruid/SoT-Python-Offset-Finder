@@ -64,11 +64,11 @@ EmissaryActionRewardData:
   - Name: OwnershipChangedRewards
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct Company>
+    Type: TArray<Struct EmissaryEventAward>
   - Name: PlacedOnShipRewards
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct OwnershipChangedRewards>
+    Type: TArray<Struct EmissaryEventAward>
   - Name: KillPlayerReward
     Offset: '0x20'
     Size: '0x28'
@@ -124,7 +124,7 @@ EmissaryCompanyCampaignKillPlayer:
   - Name: Scales
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Company>
+    Type: TArray<Struct EmissaryCompanyCampaignScale>
   ClassSize: '0x18'
 EmissaryCompanyCampaignScale:
   Attributes:
@@ -157,11 +157,11 @@ EmissaryCompanyCosmetics:
   - Name: CompanyCostumeCosmetics
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class EmissarySunkPopUpToastData>
+    Type: TArray<Class CompanyCostumeCosmetics>
   - Name: CompanyShipCosmetics
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Class CompanyCostumeCosmetics>
+    Type: TArray<Class CompanyShipCosmetics>
   ClassSize: '0x20'
 EmissaryDeactivatedNetworkEvent:
   Attributes: []
@@ -269,7 +269,7 @@ EmissaryKillPlayerReward:
   - Name: ValidEmissariesToKill
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Class EmissaryLevelKillCountScaleFactors>
+    Type: TArray<Class ValidEmissariesToKill>
   ClassSize: '0x28'
 EmissaryKillScaleFactor:
   Attributes:
@@ -325,7 +325,7 @@ EmissaryLevelData:
   - Name: StatsToFireOnEmissaryLevelReached
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct EmissaryDeactivationReward>
+    Type: TArray<Struct PlayerStat>
   - Name: TreasureSoldNotificationFlag
     Offset: '0x60'
     Size: '0x10'
@@ -364,15 +364,15 @@ EmissaryLevelEntry:
   - Name: StatsToFireOnFullEmissaryClothing
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct TimeSpentAtMaxRankStat>
+    Type: TArray<Struct PlayerStat>
   - Name: StatsToFireOnFullEmissaryShipCustomizations
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct StatsToFireOnFullEmissaryClothing>
+    Type: TArray<Struct PlayerStat>
   - Name: StatsToFireOnFullShipCustomizationsAndClothing
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct StatsToFireOnFullEmissaryShipCustomizations>
+    Type: TArray<Struct PlayerStat>
   ClassSize: '0x80'
 EmissaryLevelProgressUpdatedEvent:
   Attributes:

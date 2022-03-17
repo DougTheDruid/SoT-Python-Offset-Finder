@@ -33,7 +33,7 @@ OceanCrawlerAudioParamsDataAsset:
   - Name: AudioKeyPairs
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct WwiseObjectPoolWrapper>
+    Type: TArray<Struct OceanCrawlerAudioKeyPair>
   - Name: BuffThankDelay
     Offset: '0x40'
     Size: '0x30'

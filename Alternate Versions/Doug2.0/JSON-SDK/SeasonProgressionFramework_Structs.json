@@ -42,7 +42,7 @@
       },
       {
         "Name": "Rewards",
-        "Type": "TArray<Struct MultipleRewards>",
+        "Type": "TArray<Struct SeasonReward>",
         "Size": "0x10",
         "Offset": "0x18"
       }

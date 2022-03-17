@@ -347,13 +347,13 @@
     "Attributes": [
       {
         "Name": "Text",
-        "Type": "TArray<Text None>",
+        "Type": "TArray<Struct FText>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Images",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Images>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -371,7 +371,7 @@
       },
       {
         "Name": "StyleModifiers",
-        "Type": "TArray<Byte Audio>",
+        "Type": "TArray<Byte StyleModifiers>",
         "Size": "0x10",
         "Offset": "0x70"
       },

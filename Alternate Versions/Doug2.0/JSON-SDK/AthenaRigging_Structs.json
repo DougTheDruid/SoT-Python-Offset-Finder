@@ -170,37 +170,37 @@
     "Attributes": [
       {
         "Name": "AttachmentSag",
-        "Type": "TArray<Float None>",
+        "Type": "TArray<Float AttachmentSag>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "AttachmentLength",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float AttachmentLength>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Scale",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Scale>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "ScaledOffset",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float ScaledOffset>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "ScaledRadius",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float ScaledRadius>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "MeshIDs",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int MeshIDs>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -344,7 +344,7 @@
       },
       {
         "Name": "Pulleys",
-        "Type": "TArray<Struct Start>",
+        "Type": "TArray<Struct RiggingSystemPulleyParams>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -379,7 +379,7 @@
       },
       {
         "Name": "Lines",
-        "Type": "TArray<Struct Name>",
+        "Type": "TArray<Struct RiggingSystemLineParams>",
         "Size": "0x10",
         "Offset": "0x8"
       }

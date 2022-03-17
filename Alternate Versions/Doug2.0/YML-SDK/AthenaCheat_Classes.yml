@@ -13,7 +13,7 @@ AthenaCheatManager:
   - Name: CreatedWorldMarkers
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Struct CinematicCameraControllerClass>
+    Type: TArray<Struct WorldMarkerDesc>
   - Name: DebugSchedulerSettings
     Offset: '0xc0'
     Size: '0x8'

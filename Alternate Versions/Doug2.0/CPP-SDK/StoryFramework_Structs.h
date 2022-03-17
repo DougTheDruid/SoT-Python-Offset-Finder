@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class StoryInfo: public None
+struct StoryInfo
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x28
-class StorySpawnedActorsList: public None
+struct StorySpawnedActorsList
 {
 public:
 	struct FName                                                 StoryName;                                         // 0x0(0x8)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0x38
-class NamedPointsActorLocation: public None
+struct NamedPointsActorLocation
 {
 public:
 	struct FName                                                 NamedPointsGroup;                                  // 0x0(0x8)
@@ -34,7 +34,7 @@ public:
 
 
 // Size 0x30
-class ActorLocationPair: public None
+struct ActorLocationPair
 {
 public:
 	Struct StringAssetReference                                  SpawnLocation;                                     // 0x0(0x10)
@@ -42,16 +42,16 @@ public:
 
 
 // Size 0x20
-class StorySpawnedActorsChangeTelemetryEvent: public None
+struct StorySpawnedActorsChangeTelemetryEvent
 {
 public:
-	TArray<Struct SpawnedActorsList>                             StorySpawnedActors;                                // 0x0(0x10)
+	TArray<Struct StorySpawnedActorsIndividualStoryInfo>         StorySpawnedActors;                                // 0x0(0x10)
 	TArray<Struct StorySpawnedActorsIndividualStoryInfo>         StoryDespawnedActors;                              // 0x10(0x10)
 };
 
 
 // Size 0x18
-class StorySpawnedActorsIndividualStoryInfo: public None
+struct StorySpawnedActorsIndividualStoryInfo
 {
 public:
 	Struct FString                                               StoryName;                                         // 0x0(0x10)
@@ -61,7 +61,7 @@ public:
 
 
 // Size 0x10
-class SpawnedActorsList: public None
+struct SpawnedActorsList
 {
 public:
 	TArray<Struct PhasedActorInfo>                               ActorsList;                                        // 0x0(0x10)
@@ -69,7 +69,7 @@ public:
 
 
 // Size 0x18
-class PhasedActorInfo: public None
+struct PhasedActorInfo
 {
 public:
 	Class Actor*                                                 MapActor;                                          // 0x0(0x8)
@@ -78,10 +78,10 @@ public:
 
 
 // Size 0x10
-class StoriesChangedTelemetryEvent: public None
+struct StoriesChangedTelemetryEvent
 {
 public:
-	TArray<Str None>                                             ActiveStories;                                     // 0x0(0x10)
+	TArray<Str ActiveStories>                                    ActiveStories;                                     // 0x0(0x10)
 };
 
 

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_tattoo_22_Desc_C: public ClothingDesc
+class BP_tattoo_20_Desc_C: public ClothingDesc
 {
 public:
 };
@@ -21,7 +21,7 @@ public:
 
 
 // Size 0x0
-class BP_tattoo_20_Desc_C: public ClothingDesc
+class BP_tattoo_22_Desc_C: public ClothingDesc
 {
 public:
 };

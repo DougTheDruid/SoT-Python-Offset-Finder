@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xc8
-class StructSerializerTestStruct: public None
+struct StructSerializerTestStruct
 {
 public:
 	Struct StructSerializerNumericTestStruct                     Numerics;                                          // 0x0(0x30)
@@ -19,19 +19,19 @@ public:
 
 
 // Size 0x40
-class StructSerializerArrayTestStruct: public None
+struct StructSerializerArrayTestStruct
 {
 public:
-	TArray<Int >                                                 Int32Array;                                        // 0x0(0x10)
+	TArray<Int Int32Array>                                       Int32Array;                                        // 0x0(0x10)
 	int                                                          StaticSingleElement;                               // 0x10(0x4)
 	int                                                          StaticInt32Array;                                  // 0x14(0x4)
 	float                                                        StaticFloatArray;                                  // 0x20(0x4)
-	TArray<Struct StaticFloatArray>                              VectorArray;                                       // 0x30(0x10)
+	TArray<Struct Vector>                                        VectorArray;                                       // 0x30(0x10)
 };
 
 
 // Size 0x40
-class StructSerializerBuiltinTestStruct: public None
+struct StructSerializerBuiltinTestStruct
 {
 public:
 	Struct Guid                                                  Guid;                                              // 0x0(0x10)
@@ -43,7 +43,7 @@ public:
 
 
 // Size 0x10
-class StructSerializerObjectTestStruct: public None
+struct StructSerializerObjectTestStruct
 {
 public:
 	class                                                        Class;                                             // 0x0(0x8)
@@ -52,7 +52,7 @@ public:
 
 
 // Size 0x8
-class StructSerializerBooleanTestStruct: public None
+struct StructSerializerBooleanTestStruct
 {
 public:
 	bool                                                         BoolFalse;                                         // 0x0(0x1)
@@ -61,7 +61,7 @@ public:
 
 
 // Size 0x30
-class StructSerializerNumericTestStruct: public None
+struct StructSerializerNumericTestStruct
 {
 public:
 	int                                                          Int32;                                             // 0x4(0x4)

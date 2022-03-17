@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x48
-class TreasuryWaveEncounter: public None
+struct TreasuryWaveEncounter
 {
 public:
 	byte                                                         EncounterType;                                     // 0x0(0x1)
@@ -23,21 +23,21 @@ public:
 
 
 // Size 0x18
-class TreasuryWaveTracker: public None
+struct TreasuryWaveTracker
 {
 public:
 };
 
 
 // Size 0x1
-class EventTreasuryRoomInactive: public None
+struct EventTreasuryRoomInactive
 {
 public:
 };
 
 
 // Size 0x1
-class EventTreasuryRoomActive: public None
+struct EventTreasuryRoomActive
 {
 public:
 };

@@ -31,7 +31,7 @@ ContextualTutorialComponent:
   - Name: ContextualTutorialClasses
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct TutorialStarterType>
+    Type: TArray<Struct ContextualTutorialPromptDesc>
   - Name: SpawnedPromptActors
     Offset: '0xd8'
     Size: '0x10'

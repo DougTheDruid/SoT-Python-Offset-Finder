@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x28
-class ReviveGhostAnimations: public None
+struct ReviveGhostAnimations
 {
 public:
 	Class AnimSequence*                                          ReviveInto;                                        // 0x0(0x8)

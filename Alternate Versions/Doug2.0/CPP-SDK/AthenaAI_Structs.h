@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xc
-class AIAbilityDebugReplicatedIntervals: public None
+struct AIAbilityDebugReplicatedIntervals
 {
 public:
 	float                                                        ActivationTimerCooldown;                           // 0x0(0x4)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x20
-class TargetSkillsetProgressionPair: public None
+struct TargetSkillsetProgressionPair
 {
 public:
 	Struct StringAssetReference                                  CrewSkillset;                                      // 0x0(0x10)
@@ -26,7 +26,7 @@ public:
 
 
 // Size 0x28
-class AttackableTypeToAnimMapping: public None
+struct AttackableTypeToAnimMapping
 {
 public:
 	byte                                                         AttackType;                                        // 0x0(0x1)
@@ -40,7 +40,7 @@ public:
 
 
 // Size 0x38
-class SwimAttackTargetShipImpulseData: public None
+struct SwimAttackTargetShipImpulseData
 {
 public:
 	class                                                        ShipSize;                                          // 0x0(0x8)
@@ -56,7 +56,7 @@ public:
 
 
 // Size 0xf0
-class WeightedAISpawnTypeParams: public None
+struct WeightedAISpawnTypeParams
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
@@ -66,7 +66,7 @@ public:
 
 
 // Size 0xe8
-class AISpawnTypeParams: public None
+struct AISpawnTypeParams
 {
 public:
 	Struct StringAssetReference                                  SkillsetOverride;                                  // 0x20(0x10)
@@ -82,7 +82,7 @@ public:
 
 
 // Size 0x8
-class AIPartId: public None
+struct AIPartId
 {
 public:
 	struct FName                                                 PartId;                                            // 0x0(0x8)
@@ -90,41 +90,41 @@ public:
 
 
 // Size 0xc8
-class AIBountySpawnerParams: public None
+struct AIBountySpawnerParams
 {
 public:
 	TArray<Struct AIEncounterWave>                               AISpawnerCreationDesc;                             // 0x0(0x10)
 	Struct StringAssetReference                                  TeamColor;                                         // 0x10(0x10)
-	TArray<Int >                                                 NumTargetsInWave;                                  // 0x20(0x10)
-	TArray<Int >                                                 NumCaptainsInWave;                                 // 0x30(0x10)
+	TArray<Int NumTargetsInWave>                                 NumTargetsInWave;                                  // 0x20(0x10)
+	TArray<Int NumCaptainsInWave>                                NumCaptainsInWave;                                 // 0x30(0x10)
 	float                                                        MinTimeBetweenSpawns;                              // 0x40(0x4)
 	float                                                        MaxTimeBetweenSpawns;                              // 0x44(0x4)
 	float                                                        MinTimeBetweenWaves;                               // 0x48(0x4)
 	float                                                        MaxTimeBetweenWaves;                               // 0x4c(0x4)
 	Struct WeightedProbabilityRange                              WavesPerRelocate;                                  // 0x50(0x20)
 	Struct WeightedProbabilityRange                              WaveSplitChance;                                   // 0x70(0x20)
-	TArray<Float >                                               WaveSuicideTime;                                   // 0x90(0x10)
+	TArray<Float WaveSuicideTime>                                WaveSuicideTime;                                   // 0x90(0x10)
 	float                                                        WaveSuicideMinDist;                                // 0xa0(0x4)
 	int                                                          NumWavesPerGroup;                                  // 0xa4(0x4)
 	int                                                          NumWaveGroups;                                     // 0xa8(0x4)
 	int                                                          NumTotalWaves;                                     // 0xac(0x4)
 	int                                                          NumTargetsPerWaveGroup;                            // 0xb0(0x4)
 	int                                                          NumCaptainsPerWaveGroup;                           // 0xb4(0x4)
-	TArray<Class NumCaptainsPerWaveGroup>                        AICombatDialogue;                                  // 0xb8(0x10)
+	TArray<Class AICombatDialogue>                               AICombatDialogue;                                  // 0xb8(0x10)
 };
 
 
 // Size 0x20
-class AIEncounterWave: public None
+struct AIEncounterWave
 {
 public:
 	TArray<Struct AIEncounterSpecification>                      Specifications;                                    // 0x0(0x10)
-	TArray<Int >                                                 SpecificationSpawnOrder;                           // 0x10(0x10)
+	TArray<Int SpecificationSpawnOrder>                          SpecificationSpawnOrder;                           // 0x10(0x10)
 };
 
 
 // Size 0xc8
-class AIEncounterSpecification: public None
+struct AIEncounterSpecification
 {
 public:
 	Class AthenaAIControllerParamsDataAsset*                     Skillset;                                          // 0x20(0x8)
@@ -143,7 +143,7 @@ public:
 
 
 // Size 0x10
-class EventAIStartedDeadActionState: public None
+struct EventAIStartedDeadActionState
 {
 public:
 	byte                                                         DeathReason;                                       // 0x0(0x1)
@@ -152,7 +152,7 @@ public:
 
 
 // Size 0x10
-class EventPawnFinishedDying: public None
+struct EventPawnFinishedDying
 {
 public:
 	Class Pawn*                                                  AIPawn;                                            // 0x0(0x8)
@@ -161,7 +161,7 @@ public:
 
 
 // Size 0x18
-class EventPawnStartedDying: public None
+struct EventPawnStartedDying
 {
 public:
 	Class Pawn*                                                  AIPawn;                                            // 0x0(0x8)
@@ -171,7 +171,7 @@ public:
 
 
 // Size 0x1
-class EventOwnedPawnFinishedDying: public None
+struct EventOwnedPawnFinishedDying
 {
 public:
 	byte                                                         DeathType;                                         // 0x0(0x1)
@@ -179,7 +179,7 @@ public:
 
 
 // Size 0x10
-class EventOwnedPawnStartedDying: public None
+struct EventOwnedPawnStartedDying
 {
 public:
 	byte                                                         DeathType;                                         // 0x0(0x1)
@@ -188,7 +188,7 @@ public:
 
 
 // Size 0x18
-class BountySpawnerTargetDesc: public None
+struct BountySpawnerTargetDesc
 {
 public:
 	byte                                                         Gender;                                            // 0x0(0x1)
@@ -197,7 +197,7 @@ public:
 
 
 // Size 0x30
-class AIBountySpawnerWaveGroup: public None
+struct AIBountySpawnerWaveGroup
 {
 public:
 	TArray<Struct AIBountySpawnerWave>                           Waves;                                             // 0x0(0x10)
@@ -207,7 +207,7 @@ public:
 
 
 // Size 0x180
-class AIBountySpawnerWave: public None
+struct AIBountySpawnerWave
 {
 public:
 	bool                                                         IsTarget;                                          // 0x128(0x1)
@@ -220,7 +220,7 @@ public:
 
 
 // Size 0x128
-class AIPersistentSpawnerWave: public None
+struct AIPersistentSpawnerWave
 {
 public:
 	bool                                                         CacheHealthOnDespawn;                              // 0x100(0x1)
@@ -229,7 +229,7 @@ public:
 
 
 // Size 0x100
-class AISpawnerWave: public None
+struct AISpawnerWave
 {
 public:
 	float                                                        SpawnChance;                                       // 0x0(0x4)
@@ -242,15 +242,15 @@ public:
 
 
 // Size 0x48
-class AISpawnTypeParamsCollection: public None
+struct AISpawnTypeParamsCollection
 {
 public:
-	TArray<Struct NumOfSpawnsInWave>                             SpawnParams;                                       // 0x8(0x10)
+	TArray<Struct WeightedAISpawnTypeParams>                     SpawnParams;                                       // 0x8(0x10)
 };
 
 
 // Size 0x14
-class AIBountySpawnerWaveLocation: public None
+struct AIBountySpawnerWaveLocation
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
@@ -260,7 +260,7 @@ public:
 
 
 // Size 0x28
-class AIBountySpawnerArchive: public None
+struct AIBountySpawnerArchive
 {
 public:
 	int                                                          CurrentWaveIndex;                                  // 0x8(0x4)
@@ -270,14 +270,14 @@ public:
 
 
 // Size 0x8
-class AISpawnerArchive: public None
+struct AISpawnerArchive
 {
 public:
 };
 
 
 // Size 0x18
-class AIBountySpawnerArchiveWaveGroupEntry: public None
+struct AIBountySpawnerArchiveWaveGroupEntry
 {
 public:
 	int                                                          NumNonTargetAIKills;                               // 0x0(0x4)
@@ -287,7 +287,7 @@ public:
 
 
 // Size 0x4
-class AIBountySpawnerArchiveWaveEntry: public None
+struct AIBountySpawnerArchiveWaveEntry
 {
 public:
 	int                                                          NumPawnsToSpawn;                                   // 0x0(0x4)
@@ -295,7 +295,7 @@ public:
 
 
 // Size 0x1
-class BountySpawnerNewWaveGroupSpawnedEvent: public None
+struct BountySpawnerNewWaveGroupSpawnedEvent
 {
 public:
 	bool                                                         IsFinalWave;                                       // 0x0(0x1)
@@ -303,7 +303,7 @@ public:
 
 
 // Size 0x28
-class BountySpawnerAudioChangedNetworkEvent: public None
+struct BountySpawnerAudioChangedNetworkEvent
 {
 public:
 	byte                                                         AudioState;                                        // 0x10(0x1)
@@ -314,7 +314,7 @@ public:
 
 
 // Size 0x68
-class EventAIBountySpawnerTargetKilled: public None
+struct EventAIBountySpawnerTargetKilled
 {
 public:
 	Struct FText                                                 TargetName;                                        // 0x0(0x38)
@@ -328,7 +328,7 @@ public:
 
 
 // Size 0x28
-class EventAIBountySpawnerWaveCompleted: public None
+struct EventAIBountySpawnerWaveCompleted
 {
 public:
 	struct FName                                                 IslandName;                                        // 0x0(0x8)
@@ -340,14 +340,14 @@ public:
 
 
 // Size 0x110
-class AIFaunaSpawnerWave: public None
+struct AIFaunaSpawnerWave
 {
 public:
 };
 
 
 // Size 0x48
-class MerchantCrateMetaWrapper: public None
+struct MerchantCrateMetaWrapper
 {
 public:
 	float                                                        Health;                                            // 0x18(0x4)
@@ -359,7 +359,7 @@ public:
 
 
 // Size 0x1
-class EventFaunaThreatLevelChanged: public None
+struct EventFaunaThreatLevelChanged
 {
 public:
 	byte                                                         ThreatLevel;                                       // 0x0(0x1)
@@ -367,14 +367,14 @@ public:
 
 
 // Size 0x1
-class EventFaunaAgitationEnded: public None
+struct EventFaunaAgitationEnded
 {
 public:
 };
 
 
 // Size 0x8
-class EventFaunaAgitationBegun: public None
+struct EventFaunaAgitationBegun
 {
 public:
 	Class Actor*                                                 SourceActor;                                       // 0x0(0x8)
@@ -382,21 +382,21 @@ public:
 
 
 // Size 0x1
-class AthenaAIDebugCostDisplay: public None
+struct AthenaAIDebugCostDisplay
 {
 public:
 };
 
 
 // Size 0x1
-class AthenaAIDebugCostData: public None
+struct AthenaAIDebugCostData
 {
 public:
 };
 
 
 // Size 0x28
-class AIDebugSpawnConfiguration: public None
+struct AIDebugSpawnConfiguration
 {
 public:
 	int                                                          NumIslandsToSpawnOn;                               // 0x0(0x4)
@@ -406,7 +406,7 @@ public:
 
 
 // Size 0x10
-class AIDebugSpawnAmount: public None
+struct AIDebugSpawnAmount
 {
 public:
 	Class AIEncounterSettings*                                   EncounterSettings;                                 // 0x0(0x8)
@@ -415,7 +415,7 @@ public:
 
 
 // Size 0x48
-class AIDioramaPawn: public None
+struct AIDioramaPawn
 {
 public:
 	Class Pawn*                                                  Pawn;                                              // 0x0(0x8)
@@ -423,7 +423,7 @@ public:
 
 
 // Size 0x28
-class AIDioramaRoleDesc: public None
+struct AIDioramaRoleDesc
 {
 public:
 	struct FName                                                 RoleName;                                          // 0x0(0x8)
@@ -434,7 +434,7 @@ public:
 
 
 // Size 0x40
-class AIDioramaLocationSourceComponentData: public None
+struct AIDioramaLocationSourceComponentData
 {
 public:
 	Struct Transform                                             RelativeTransform;                                 // 0x0(0x30)
@@ -443,22 +443,22 @@ public:
 
 
 // Size 0xa0
-class DioramaCategoryEntries: public None
+struct DioramaCategoryEntries
 {
 public:
 };
 
 
 // Size 0x10
-class IslandDioramas: public None
+struct IslandDioramas
 {
 public:
-	TArray<Interface CampaignInfo>                               Entries;                                           // 0x0(0x10)
+	TArray<Interface Entries>                                    Entries;                                           // 0x0(0x10)
 };
 
 
 // Size 0x10
-class PetTurnRateModifier: public None
+struct PetTurnRateModifier
 {
 public:
 	class                                                        Strategy;                                          // 0x0(0x8)
@@ -467,7 +467,7 @@ public:
 
 
 // Size 0x18
-class PetFlyingStrategyProperties: public None
+struct PetFlyingStrategyProperties
 {
 public:
 	class                                                        Strategy;                                          // 0x0(0x8)
@@ -478,7 +478,7 @@ public:
 
 
 // Size 0xc
-class PetMovementRequest: public None
+struct PetMovementRequest
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
@@ -488,7 +488,7 @@ public:
 
 
 // Size 0x10
-class PetLoadedMaterial: public None
+struct PetLoadedMaterial
 {
 public:
 	Class MaterialInstance*                                      MaterialInstance;                                  // 0x0(0x8)
@@ -497,7 +497,7 @@ public:
 
 
 // Size 0x8
-class PetPartSizeMapping: public None
+struct PetPartSizeMapping
 {
 public:
 	byte                                                         PetSize;                                           // 0x0(0x1)
@@ -506,7 +506,7 @@ public:
 
 
 // Size 0x18
-class PetMaterialEntry: public None
+struct PetMaterialEntry
 {
 public:
 	Struct StringAssetReference                                  MaterialReference;                                 // 0x0(0x10)
@@ -515,7 +515,7 @@ public:
 
 
 // Size 0x10
-class PetWieldableReactMapping: public None
+struct PetWieldableReactMapping
 {
 public:
 	class                                                        WieldableType;                                     // 0x0(0x8)
@@ -524,7 +524,7 @@ public:
 
 
 // Size 0x8
-class EventSwimRotationModeChanged: public None
+struct EventSwimRotationModeChanged
 {
 public:
 	byte                                                         NewSwimRotationMode;                               // 0x0(0x1)
@@ -533,21 +533,21 @@ public:
 
 
 // Size 0x20
-class QuestVariableGuidArray: public None
+struct QuestVariableGuidArray
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableSharkPawn: public None
+struct QuestVariableSharkPawn
 {
 public:
 };
 
 
 // Size 0xb8
-class TinySharkParams: public None
+struct TinySharkParams
 {
 public:
 	class                                                        TinySharkType;                                     // 0x0(0x8)
@@ -561,14 +561,14 @@ public:
 
 
 // Size 0x20
-class QuestVariableTinySharkExperience: public None
+struct QuestVariableTinySharkExperience
 {
 public:
 };
 
 
 // Size 0x1
-class TinySharkWorldSettingsParams: public None
+struct TinySharkWorldSettingsParams
 {
 public:
 	bool                                                         TinySharkEnabled;                                  // 0x0(0x1)
@@ -576,14 +576,14 @@ public:
 
 
 // Size 0x48
-class TinySharkEQSRequest: public None
+struct TinySharkEQSRequest
 {
 public:
 };
 
 
 // Size 0x28
-class TinySharkServiceParams: public None
+struct TinySharkServiceParams
 {
 public:
 	Class TinySharkParamsDataAsset*                              TinySharkParams;                                   // 0x0(0x8)
@@ -594,39 +594,39 @@ public:
 
 
 // Size 0x68
-class TinySharkShipSpawnData: public None
+struct TinySharkShipSpawnData
 {
 public:
 	class                                                        ShipSize;                                          // 0x0(0x8)
 	Struct WeightedProbabilityRangeOfRanges                      Timer;                                             // 0x8(0x30)
-	TArray<Assetclass Timer>                                     ControllerParams;                                  // 0x38(0x10)
+	TArray<Assetclass ControllerParams>                          ControllerParams;                                  // 0x38(0x10)
 	Struct WeightedProbabilityRange                              ControllerParamsToUse;                             // 0x48(0x20)
 };
 
 
 // Size 0x10
-class TinySharkSpawnedNetworkEvent: public None
+struct TinySharkSpawnedNetworkEvent
 {
 public:
 };
 
 
 // Size 0x10
-class TinySharkKilledNetworkEvent: public None
+struct TinySharkKilledNetworkEvent
 {
 public:
 };
 
 
 // Size 0x1
-class EventTinySharkKilled: public None
+struct EventTinySharkKilled
 {
 public:
 };
 
 
 // Size 0x58
-class EventTinySharkDamaged: public None
+struct EventTinySharkDamaged
 {
 public:
 	Struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x0(0x58)
@@ -634,7 +634,7 @@ public:
 
 
 // Size 0x1
-class EventTinySharkDespawned: public None
+struct EventTinySharkDespawned
 {
 public:
 	byte                                                         DespawnReason;                                     // 0x0(0x1)
@@ -642,7 +642,7 @@ public:
 
 
 // Size 0x20
-class EventTinySharkSpawned: public None
+struct EventTinySharkSpawned
 {
 public:
 	Struct FString                                               TinySharkPartTag;                                  // 0x0(0x10)
@@ -651,7 +651,7 @@ public:
 
 
 // Size 0x68
-class TinySharkCollidedTelemetryEvent: public None
+struct TinySharkCollidedTelemetryEvent
 {
 public:
 	Struct FString                                               TinySharkId;                                       // 0x0(0x10)
@@ -665,7 +665,7 @@ public:
 
 
 // Size 0x18
-class TinySharkDespawnTelemetryEvent: public None
+struct TinySharkDespawnTelemetryEvent
 {
 public:
 	Struct FString                                               TinySharkId;                                       // 0x0(0x10)
@@ -674,7 +674,7 @@ public:
 
 
 // Size 0x30
-class TinySharkSpawnTelemetryEvent: public None
+struct TinySharkSpawnTelemetryEvent
 {
 public:
 	Struct FString                                               TinySharkId;                                       // 0x0(0x10)
@@ -684,7 +684,7 @@ public:
 
 
 // Size 0x30
-class AthenaAIItemParamValue: public None
+struct AthenaAIItemParamValue
 {
 public:
 	struct FName                                                 ParamName;                                         // 0x20(0x8)
@@ -693,7 +693,7 @@ public:
 
 
 // Size 0x10
-class AthenaAIAbilityPlayerBasedRanges: public None
+struct AthenaAIAbilityPlayerBasedRanges
 {
 public:
 	TArray<Struct AthenaAIAbilityPlayerBasedRange>               AbilityRanges;                                     // 0x0(0x10)
@@ -701,7 +701,7 @@ public:
 
 
 // Size 0x38
-class AthenaAIAbilityPlayerBasedRange: public None
+struct AthenaAIAbilityPlayerBasedRange
 {
 public:
 	int                                                          MaxPlayers;                                        // 0x0(0x4)
@@ -710,7 +710,7 @@ public:
 
 
 // Size 0x20
-class AIAbilityContinuousCooldownParameterData: public None
+struct AIAbilityContinuousCooldownParameterData
 {
 public:
 	Struct AthenaAIAbilityPlayerBasedRanges                      InitialCooldown;                                   // 0x0(0x10)
@@ -719,7 +719,7 @@ public:
 
 
 // Size 0x14
-class AthenaAIControllerSenseSettings: public None
+struct AthenaAIControllerSenseSettings
 {
 public:
 	bool                                                         EnableSight;                                       // 0x0(0x1)
@@ -733,7 +733,7 @@ public:
 
 
 // Size 0x14
-class AthenaAIControllerDamageTargetScoreFromPerceivedTarget: public None
+struct AthenaAIControllerDamageTargetScoreFromPerceivedTarget
 {
 public:
 	float                                                        MinDamageTargetScore;                              // 0x0(0x4)
@@ -745,7 +745,7 @@ public:
 
 
 // Size 0xc
-class AthenaAIControllerHealthCustomisation: public None
+struct AthenaAIControllerHealthCustomisation
 {
 public:
 	bool                                                         OverrideMaxHealth;                                 // 0x0(0x1)
@@ -756,7 +756,7 @@ public:
 
 
 // Size 0x20
-class AthenaAIControllerSenseSettingOverride: public None
+struct AthenaAIControllerSenseSettingOverride
 {
 public:
 	class                                                        AIStrategy;                                        // 0x0(0x8)
@@ -766,7 +766,7 @@ public:
 
 
 // Size 0x38
-class AthenaAIControllerWeightedRangesParamValue: public None
+struct AthenaAIControllerWeightedRangesParamValue
 {
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
@@ -775,7 +775,7 @@ public:
 
 
 // Size 0xc
-class AthenaAIControllerParamValue: public None
+struct AthenaAIControllerParamValue
 {
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
@@ -784,7 +784,7 @@ public:
 
 
 // Size 0x10
-class AIAbilityFollowUp: public None
+struct AIAbilityFollowUp
 {
 public:
 	class                                                        AbilityType;                                       // 0x0(0x8)
@@ -793,7 +793,7 @@ public:
 
 
 // Size 0x8
-class MinMaxAbilityRange: public None
+struct MinMaxAbilityRange
 {
 public:
 	float                                                        MinDistanceToTarget;                               // 0x0(0x4)
@@ -802,7 +802,7 @@ public:
 
 
 // Size 0x18
-class AIStrategyMovementProperties: public None
+struct AIStrategyMovementProperties
 {
 public:
 	class                                                        AIStrategy;                                        // 0x0(0x8)
@@ -814,7 +814,7 @@ public:
 
 
 // Size 0x10
-class AthenaAIAbilityDamageStage: public None
+struct AthenaAIAbilityDamageStage
 {
 public:
 	TArray<class AbilitiesInStage*>                              AbilitiesInStage;                                  // 0x0(0x10)
@@ -822,7 +822,7 @@ public:
 
 
 // Size 0x10
-class AthenaAICharacterControllerSpawnItemDescForItemCategory: public None
+struct AthenaAICharacterControllerSpawnItemDescForItemCategory
 {
 public:
 	class                                                        ItemCategory;                                      // 0x0(0x8)
@@ -831,7 +831,7 @@ public:
 
 
 // Size 0x10
-class AthenaAICharacterControllerWeightedAmmoType: public None
+struct AthenaAICharacterControllerWeightedAmmoType
 {
 public:
 	class                                                        AmmoType;                                          // 0x0(0x8)
@@ -840,7 +840,7 @@ public:
 
 
 // Size 0x10
-class AthenaAICharacterCannonTargetingParams: public None
+struct AthenaAICharacterCannonTargetingParams
 {
 public:
 	TArray<Struct AthenaAICharacterCannonTarget>                 Params;                                            // 0x0(0x10)
@@ -848,7 +848,7 @@ public:
 
 
 // Size 0xc
-class AthenaAICharacterCannonTarget: public None
+struct AthenaAICharacterCannonTarget
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
@@ -857,7 +857,7 @@ public:
 
 
 // Size 0x10
-class AthenaAICharacterControllerItemCategoryProjectileEffectivenessP: public None
+struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP
 {
 public:
 	class                                                        ItemCategory;                                      // 0x0(0x8)
@@ -866,25 +866,25 @@ public:
 
 
 // Size 0x18
-class AthenaAICharacterControllerItemCategoryNamedParams: public None
+struct AthenaAICharacterControllerItemCategoryNamedParams
 {
 public:
 	class                                                        ItemCategory;                                      // 0x0(0x8)
-	TArray<Struct ItemCategory>                                  NamedControllerParams;                             // 0x8(0x10)
+	TArray<Struct AthenaAIControllerParamValue>                  NamedControllerParams;                             // 0x8(0x10)
 };
 
 
 // Size 0x18
-class AIAmmoRankMapping: public None
+struct AIAmmoRankMapping
 {
 public:
 	Class AthenaAIAmmoDataAsset*                                 Ammo;                                              // 0x0(0x8)
-	TArray<Float >                                               Weights;                                           // 0x8(0x10)
+	TArray<Float Weights>                                        Weights;                                           // 0x8(0x10)
 };
 
 
 // Size 0x2c
-class AIDebugVisualisationCone: public None
+struct AIDebugVisualisationCone
 {
 public:
 	Struct Vector                                                Origin;                                            // 0x0(0xc)
@@ -898,7 +898,7 @@ public:
 
 
 // Size 0x18
-class AIDebugVisualisationSphere: public None
+struct AIDebugVisualisationSphere
 {
 public:
 	Struct Vector                                                Centre;                                            // 0x0(0xc)
@@ -909,7 +909,7 @@ public:
 
 
 // Size 0x24
-class AIDebugVisualisationCylinder: public None
+struct AIDebugVisualisationCylinder
 {
 public:
 	Struct Vector                                                To;                                                // 0x0(0xc)
@@ -921,7 +921,7 @@ public:
 
 
 // Size 0x40
-class AIDebugVisualisationBox: public None
+struct AIDebugVisualisationBox
 {
 public:
 	Struct Vector                                                Centre;                                            // 0x0(0xc)
@@ -933,7 +933,7 @@ public:
 
 
 // Size 0x20
-class AIDebugVisualisationLine: public None
+struct AIDebugVisualisationLine
 {
 public:
 	Struct Vector                                                From;                                              // 0x0(0xc)
@@ -944,7 +944,7 @@ public:
 
 
 // Size 0x20
-class TargetItemDropProgressionPair: public None
+struct TargetItemDropProgressionPair
 {
 public:
 	Struct StringAssetReference                                  CrewItemSpawn;                                     // 0x0(0x10)
@@ -953,7 +953,7 @@ public:
 
 
 // Size 0x28
-class AIFormVarietyEntry: public None
+struct AIFormVarietyEntry
 {
 public:
 	Struct StringAssetReference                                  Form;                                              // 0x0(0x10)
@@ -964,10 +964,10 @@ public:
 
 
 // Size 0x20
-class AIIndividualVarietyEntry: public None
+struct AIIndividualVarietyEntry
 {
 public:
-	TArray<Struct MaxPerEncounter>                               Loadouts;                                          // 0x0(0x10)
+	TArray<Struct StringAssetReference>                          Loadouts;                                          // 0x0(0x10)
 	int                                                          RankOffset;                                        // 0x10(0x4)
 	float                                                        Weight;                                            // 0x14(0x4)
 	int                                                          MaxPerEncounter;                                   // 0x18(0x4)
@@ -975,7 +975,7 @@ public:
 
 
 // Size 0x18
-class AIEncounterGenerationRecipeFeatureBasedRankOrderList: public None
+struct AIEncounterGenerationRecipeFeatureBasedRankOrderList
 {
 public:
 	struct FName                                                 FeatureName;                                       // 0x0(0x8)
@@ -984,7 +984,7 @@ public:
 
 
 // Size 0x18
-class AthenaAIFormComponentVfxCustomisation: public None
+struct AthenaAIFormComponentVfxCustomisation
 {
 public:
 	class                                                        VfxCustomisationType;                              // 0x0(0x8)
@@ -994,7 +994,7 @@ public:
 
 
 // Size 0x10
-class AIFormDamageResponse: public None
+struct AIFormDamageResponse
 {
 public:
 	class                                                        DamagerType;                                       // 0x0(0x8)
@@ -1006,16 +1006,16 @@ public:
 
 
 // Size 0x18
-class AIFormRankMapping: public None
+struct AIFormRankMapping
 {
 public:
 	Class AthenaAIFormDataAsset*                                 Form;                                              // 0x0(0x8)
-	TArray<Float >                                               Weights;                                           // 0x8(0x10)
+	TArray<Float Weights>                                        Weights;                                           // 0x8(0x10)
 };
 
 
 // Size 0x18
-class AIPartsCategoryFormMapping: public None
+struct AIPartsCategoryFormMapping
 {
 public:
 	Class AthenaAIFormDataAsset*                                 Form;                                              // 0x0(0x8)
@@ -1024,7 +1024,7 @@ public:
 
 
 // Size 0x10
-class AIPartsCategoryMapping: public None
+struct AIPartsCategoryMapping
 {
 public:
 	class                                                        ClassId;                                           // 0x0(0x8)
@@ -1033,33 +1033,33 @@ public:
 
 
 // Size 0x18
-class AISkillsetRankMapping: public None
+struct AISkillsetRankMapping
 {
 public:
 	Class AthenaAIControllerParamsDataAsset*                     Skillset;                                          // 0x0(0x8)
-	TArray<Float >                                               Weights;                                           // 0x8(0x10)
+	TArray<Float Weights>                                        Weights;                                           // 0x8(0x10)
 };
 
 
 // Size 0x30
-class AIDropSpawnerRankMapping: public None
+struct AIDropSpawnerRankMapping
 {
 public:
-	TArray<Float >                                               Weights;                                           // 0x20(0x10)
+	TArray<Float Weights>                                        Weights;                                           // 0x20(0x10)
 };
 
 
 // Size 0x18
-class AILoadoutRankMapping: public None
+struct AILoadoutRankMapping
 {
 public:
 	Class LoadoutAsset*                                          Loadout;                                           // 0x0(0x8)
-	TArray<Float >                                               Weights;                                           // 0x8(0x10)
+	TArray<Float Weights>                                        Weights;                                           // 0x8(0x10)
 };
 
 
 // Size 0x20
-class CustomPlayersAITrackerData: public None
+struct CustomPlayersAITrackerData
 {
 public:
 	Class AIPlayerTracker*                                       Tracker;                                           // 0x0(0x8)
@@ -1067,7 +1067,7 @@ public:
 
 
 // Size 0x58
-class AITypeData: public None
+struct AITypeData
 {
 public:
 	struct FName                                                 AITypeName;                                        // 0x0(0x8)
@@ -1083,25 +1083,25 @@ public:
 
 
 // Size 0x18
-class AISpawnWaveSequenceRankMapping: public None
+struct AISpawnWaveSequenceRankMapping
 {
 public:
 	Class AISpawnWaveSequence*                                   SpawnWaveSequence;                                 // 0x0(0x8)
-	TArray<Float >                                               Weights;                                           // 0x8(0x10)
+	TArray<Float Weights>                                        Weights;                                           // 0x8(0x10)
 };
 
 
 // Size 0x18
-class AIWeightedProbabilityRangeOfRangesRankMapping: public None
+struct AIWeightedProbabilityRangeOfRangesRankMapping
 {
 public:
 	Class AIWeightedProbabilityRangeOfRangesAsset*               RangeOfRanges;                                     // 0x0(0x8)
-	TArray<Float >                                               Weights;                                           // 0x8(0x10)
+	TArray<Float Weights>                                        Weights;                                           // 0x8(0x10)
 };
 
 
 // Size 0x20
-class AIEncounterAndWaveSettingsOverride: public None
+struct AIEncounterAndWaveSettingsOverride
 {
 public:
 	Class AIEncounterSettings*                                   EncounterSettings;                                 // 0x0(0x8)
@@ -1112,7 +1112,7 @@ public:
 
 
 // Size 0x10
-class AdditionalSpawnerBehaviour: public None
+struct AdditionalSpawnerBehaviour
 {
 public:
 	Class SpawnerBehaviourStrategy*                              BehaviourStrategy;                                 // 0x0(0x8)
@@ -1120,7 +1120,7 @@ public:
 
 
 // Size 0x10
-class AISpawnOverride: public None
+struct AISpawnOverride
 {
 public:
 	Struct StringAssetReference                                  FormOverride;                                      // 0x0(0x10)
@@ -1128,7 +1128,7 @@ public:
 
 
 // Size 0x18
-class ConditionalAISpawnOverride: public None
+struct ConditionalAISpawnOverride
 {
 public:
 	Class AISpawnOverrideCondition*                              Condition;                                         // 0x0(0x8)
@@ -1137,19 +1137,19 @@ public:
 
 
 // Size 0x38
-class AISpawnContextIdEncounterSettingsPair: public None
+struct AISpawnContextIdEncounterSettingsPair
 {
 public:
-	TArray<Class AIExclusionZone>                                SpawnContexts;                                     // 0x0(0x10)
+	TArray<Class SpawnContexts>                                  SpawnContexts;                                     // 0x0(0x10)
 	bool                                                         DisableSpawning;                                   // 0x10(0x1)
 	Class AIEncounterSettings*                                   EncounterSettings;                                 // 0x18(0x8)
 	Class AISpawnWaveSequenceRankProgression*                    SpawnWaveProgression;                              // 0x20(0x8)
-	TArray<Struct SpawnWaveProgression>                          EncounterAndWaveSettingsOverride;                  // 0x28(0x10)
+	TArray<Struct AIEncounterAndWaveSettingsOverride>            EncounterAndWaveSettingsOverride;                  // 0x28(0x10)
 };
 
 
 // Size 0x18
-class AIExclusionZone: public None
+struct AIExclusionZone
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
@@ -1160,7 +1160,7 @@ public:
 
 
 // Size 0xc
-class AIPartIdNumVariantInfo: public None
+struct AIPartIdNumVariantInfo
 {
 public:
 	struct FName                                                 AIPartId;                                          // 0x0(0x8)
@@ -1169,14 +1169,14 @@ public:
 
 
 // Size 0x1
-class EventAIPartsRetrievalComponentBeforeBeginLoad: public None
+struct EventAIPartsRetrievalComponentBeforeBeginLoad
 {
 public:
 };
 
 
 // Size 0x18
-class ReplicatedAIPartsData: public None
+struct ReplicatedAIPartsData
 {
 public:
 	Class AIPartsCategory*                                       PartsCategory;                                     // 0x0(0x8)
@@ -1187,16 +1187,16 @@ public:
 
 
 // Size 0x20
-class SpawnLocationGroup: public None
+struct SpawnLocationGroup
 {
 public:
-	TArray<Name None>                                            AllowedSpawnTypes;                                 // 0x0(0x10)
-	TArray<Struct AllowedSpawnTypes>                             SpawnLocations;                                    // 0x10(0x10)
+	TArray<Struct FName>                                         AllowedSpawnTypes;                                 // 0x0(0x10)
+	TArray<Struct Vector>                                        SpawnLocations;                                    // 0x10(0x10)
 };
 
 
 // Size 0x10
-class AISpawnContextData: public None
+struct AISpawnContextData
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -1205,16 +1205,16 @@ public:
 
 
 // Size 0x20
-class AIFixedWavesSpawnerArchive: public None
+struct AIFixedWavesSpawnerArchive
 {
 public:
-	TArray<Int None>                                             NumSpawnedPawnsInWaves;                            // 0x8(0x10)
+	TArray<Int NumSpawnedPawnsInWaves>                           NumSpawnedPawnsInWaves;                            // 0x8(0x10)
 	bool                                                         WavesSpawnedOnSpottedNewTarget;                    // 0x18(0x1)
 };
 
 
 // Size 0x18
-class AIIncrementalWaveSpawnerArchive: public None
+struct AIIncrementalWaveSpawnerArchive
 {
 public:
 	Struct Vector                                                LastTargetPosition;                                // 0x8(0xc)
@@ -1223,45 +1223,45 @@ public:
 
 
 // Size 0x18
-class AIPerCrewSpawnerRespawnUnit: public None
+struct AIPerCrewSpawnerRespawnUnit
 {
 public:
 };
 
 
 // Size 0x30
-class AIPerCrewSpawnerCrewUnit: public None
+struct AIPerCrewSpawnerCrewUnit
 {
 public:
-	TArray<Struct TemporaryPlayerDetailsUnitEntry>               SelectedWaves;                                     // 0x20(0x10)
+	TArray<Struct AISpawnerWave>                                 SelectedWaves;                                     // 0x20(0x10)
 };
 
 
 // Size 0x38
-class TemporaryPlayerDetailsUnitEntry: public None
+struct TemporaryPlayerDetailsUnitEntry
 {
 public:
 };
 
 
 // Size 0x30
-class AIPerPlayerSpawnerPlayerDetailsUnit: public None
+struct AIPerPlayerSpawnerPlayerDetailsUnit
 {
 public:
 };
 
 
 // Size 0x20
-class AICustomClassIdNameOverrides: public None
+struct AICustomClassIdNameOverrides
 {
 public:
-	TArray<Class AICustomNameTitleMapping>                       ClassIds;                                          // 0x0(0x10)
+	TArray<Class ClassIds>                                       ClassIds;                                          // 0x0(0x10)
 	TArray<Struct FText>                                         Names;                                             // 0x10(0x10)
 };
 
 
 // Size 0x40
-class AICustomNameTitleMapping: public None
+struct AICustomNameTitleMapping
 {
 public:
 	class                                                        AIClassId;                                         // 0x0(0x8)
@@ -1270,7 +1270,7 @@ public:
 
 
 // Size 0x10
-class AIProgressiveWavesSpawnerArchive: public None
+struct AIProgressiveWavesSpawnerArchive
 {
 public:
 	int                                                          CurrentWaveIndex;                                  // 0x8(0x4)
@@ -1278,7 +1278,7 @@ public:
 
 
 // Size 0x34
-class AITargetInfo: public None
+struct AITargetInfo
 {
 public:
 	Struct AITargetBounds                                        Bounds;                                            // 0x0(0x18)
@@ -1289,7 +1289,7 @@ public:
 
 
 // Size 0x18
-class AITargetBounds: public None
+struct AITargetBounds
 {
 public:
 	Struct Vector                                                Offset;                                            // 0x0(0xc)
@@ -1298,7 +1298,7 @@ public:
 
 
 // Size 0xc
-class PerDepthSpawnChance: public None
+struct PerDepthSpawnChance
 {
 public:
 	float                                                        DepthUpperBound;                                   // 0x0(0x4)
@@ -1308,14 +1308,14 @@ public:
 
 
 // Size 0x20
-class PlayerInWaterData: public None
+struct PlayerInWaterData
 {
 public:
 };
 
 
 // Size 0x28
-class SirenEncounterData: public None
+struct SirenEncounterData
 {
 public:
 	Class World*                                                 GameWorld;                                         // 0x0(0x8)
@@ -1328,7 +1328,7 @@ public:
 
 
 // Size 0xc
-class ChanceForSharksToBlockSirenEncounterData: public None
+struct ChanceForSharksToBlockSirenEncounterData
 {
 public:
 	int                                                          NumberOfSharks;                                    // 0x0(0x4)
@@ -1338,7 +1338,7 @@ public:
 
 
 // Size 0x8
-class MinMaxBurrowAbility: public None
+struct MinMaxBurrowAbility
 {
 public:
 	float                                                        MinValue;                                          // 0x0(0x4)
@@ -1347,7 +1347,7 @@ public:
 
 
 // Size 0x18
-class WeightedAmmoTypeRange: public None
+struct WeightedAmmoTypeRange
 {
 public:
 	float                                                        MinRange;                                          // 0x0(0x4)
@@ -1356,7 +1356,7 @@ public:
 
 
 // Size 0x10
-class WeightedAmmoType: public None
+struct WeightedAmmoType
 {
 public:
 	float                                                        ProbabilityAtRange;                                // 0x0(0x4)
@@ -1365,7 +1365,7 @@ public:
 
 
 // Size 0x38
-class AthenaAIControllerTargetPickingData: public None
+struct AthenaAIControllerTargetPickingData
 {
 public:
 	Struct FString                                               TargetName;                                        // 0x0(0x10)
@@ -1384,7 +1384,7 @@ public:
 
 
 // Size 0x10
-class AIStategyControllerMovementMod: public None
+struct AIStategyControllerMovementMod
 {
 public:
 	class                                                        AIStrategy;                                        // 0x0(0x8)
@@ -1393,7 +1393,7 @@ public:
 
 
 // Size 0x10
-class CarriedItemThreatOverride: public None
+struct CarriedItemThreatOverride
 {
 public:
 	class                                                        ItemDesc;                                          // 0x0(0x8)
@@ -1402,7 +1402,7 @@ public:
 
 
 // Size 0x10
-class HearingThreat: public None
+struct HearingThreat
 {
 public:
 	struct FName                                                 SoundTag;                                          // 0x0(0x8)
@@ -1412,7 +1412,7 @@ public:
 
 
 // Size 0x38
-class BlackboardValueCondition: public None
+struct BlackboardValueCondition
 {
 public:
 	Struct BlackboardKeySelector                                 BlackboardKey;                                     // 0x0(0x28)
@@ -1424,7 +1424,7 @@ public:
 
 
 // Size 0x58
-class ChanceAndBlackboardKeyPair: public None
+struct ChanceAndBlackboardKeyPair
 {
 public:
 	Struct AIDataProviderFloatValue                              Chance;                                            // 0x0(0x30)
@@ -1433,7 +1433,7 @@ public:
 
 
 // Size 0x38
-class ConditionalBasedOnBlackboardKey: public None
+struct ConditionalBasedOnBlackboardKey
 {
 public:
 	bool                                                         UseCondition;                                      // 0x0(0x1)
@@ -1443,7 +1443,7 @@ public:
 
 
 // Size 0x38
-class WeightedAIStrategyChance: public None
+struct WeightedAIStrategyChance
 {
 public:
 	class                                                        Strategy;                                          // 0x0(0x8)
@@ -1452,44 +1452,44 @@ public:
 
 
 // Size 0x18
-class AIStrategyVulnerabilityData: public None
+struct AIStrategyVulnerabilityData
 {
 public:
 	class                                                        Strategy;                                          // 0x0(0x8)
-	TArray<Byte Strategy>                                        PreventedHealthChanges;                            // 0x8(0x10)
+	TArray<Byte PreventedHealthChanges>                          PreventedHealthChanges;                            // 0x8(0x10)
 };
 
 
 // Size 0x1
-class EventSporeBreathAIAbilityFinished: public None
+struct EventSporeBreathAIAbilityFinished
 {
 public:
 };
 
 
 // Size 0x1
-class EventSporeBreathAIAbilityStarted: public None
+struct EventSporeBreathAIAbilityStarted
 {
 public:
 };
 
 
 // Size 0x1
-class EventAIVulnerabilityAbilityEnded: public None
+struct EventAIVulnerabilityAbilityEnded
 {
 public:
 };
 
 
 // Size 0x1
-class EventAIVulnerabilityAbilityStarted: public None
+struct EventAIVulnerabilityAbilityStarted
 {
 public:
 };
 
 
 // Size 0x8
-class EventAIPawnCarrierChange: public None
+struct EventAIPawnCarrierChange
 {
 public:
 	Class Actor*                                                 Carrier;                                           // 0x0(0x8)
@@ -1497,35 +1497,35 @@ public:
 
 
 // Size 0x1
-class EventAIDebugTextUpdated: public None
+struct EventAIDebugTextUpdated
 {
 public:
 };
 
 
 // Size 0x1
-class EventAIControllerUnPossess: public None
+struct EventAIControllerUnPossess
 {
 public:
 };
 
 
 // Size 0x1
-class EventAIKnockbackEnded: public None
+struct EventAIKnockbackEnded
 {
 public:
 };
 
 
 // Size 0x18
-class EventAIKnockbackStarted: public None
+struct EventAIKnockbackStarted
 {
 public:
 };
 
 
 // Size 0x8
-class EventNewAIStrategyBPReadable: public None
+struct EventNewAIStrategyBPReadable
 {
 public:
 	class                                                        NewAIStrategy;                                     // 0x0(0x8)
@@ -1533,7 +1533,7 @@ public:
 
 
 // Size 0x8
-class EventNewAIStrategy: public None
+struct EventNewAIStrategy
 {
 public:
 	class                                                        NewAIStrategy;                                     // 0x0(0x8)
@@ -1541,14 +1541,14 @@ public:
 
 
 // Size 0x1
-class EventPawnRequestDespawn: public None
+struct EventPawnRequestDespawn
 {
 public:
 };
 
 
 // Size 0x8
-class EventPawnRemoveOwnership: public None
+struct EventPawnRemoveOwnership
 {
 public:
 	Class Pawn*                                                  AIPawn;                                            // 0x0(0x8)
@@ -1556,21 +1556,21 @@ public:
 
 
 // Size 0x1
-class EventOwnedPawnRemoveOwnership: public None
+struct EventOwnedPawnRemoveOwnership
 {
 public:
 };
 
 
 // Size 0x1
-class EventAIPartRetrievalRequestFailed: public None
+struct EventAIPartRetrievalRequestFailed
 {
 public:
 };
 
 
 // Size 0x18
-class EventVisualAppearanceSelected: public None
+struct EventVisualAppearanceSelected
 {
 public:
 	Class AIPartsCategory*                                       PartsCategory;                                     // 0x0(0x8)
@@ -1581,7 +1581,7 @@ public:
 
 
 // Size 0x30
-class EventAILoadoutSelected: public None
+struct EventAILoadoutSelected
 {
 public:
 	Struct ItemLoadout                                           Loadout;                                           // 0x0(0x20)
@@ -1590,7 +1590,7 @@ public:
 
 
 // Size 0x8
-class EventAIAmmoSelected: public None
+struct EventAIAmmoSelected
 {
 public:
 	Class AthenaAIAmmoDataAsset*                                 Ammo;                                              // 0x0(0x8)
@@ -1598,7 +1598,7 @@ public:
 
 
 // Size 0x8
-class EventAIFormSelected: public None
+struct EventAIFormSelected
 {
 public:
 	Class AthenaAIFormDataAsset*                                 Form;                                              // 0x0(0x8)
@@ -1606,14 +1606,14 @@ public:
 
 
 // Size 0x1
-class EventAIPawnReadyToConstructDebugText: public None
+struct EventAIPawnReadyToConstructDebugText
 {
 public:
 };
 
 
 // Size 0x50
-class EventOwnedPawnFinishedSpawning: public None
+struct EventOwnedPawnFinishedSpawning
 {
 public:
 	Class Object*                                                AICoordinator;                                     // 0x0(0x8)
@@ -1629,7 +1629,7 @@ public:
 
 
 // Size 0x8
-class EventPlayerLeftAISpawnableWater: public None
+struct EventPlayerLeftAISpawnableWater
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
@@ -1637,7 +1637,7 @@ public:
 
 
 // Size 0x18
-class EventPlayerEnterAISpawnableWater: public None
+struct EventPlayerEnterAISpawnableWater
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
@@ -1645,7 +1645,7 @@ public:
 
 
 // Size 0x20
-class EventPlayerSetFootUponAISpawnRegion: public None
+struct EventPlayerSetFootUponAISpawnRegion
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
@@ -1653,7 +1653,7 @@ public:
 
 
 // Size 0x18
-class EventPlayerLeftAISpawnRegion: public None
+struct EventPlayerLeftAISpawnRegion
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
@@ -1661,7 +1661,7 @@ public:
 
 
 // Size 0x20
-class EventPlayerEnteredAISpawnRegion: public None
+struct EventPlayerEnteredAISpawnRegion
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
@@ -1669,14 +1669,14 @@ public:
 
 
 // Size 0x1
-class EventAllAIProgressiveWavesCompleted: public None
+struct EventAllAIProgressiveWavesCompleted
 {
 public:
 };
 
 
 // Size 0x10
-class EventAIPawnRemovedFromAIRegion: public None
+struct EventAIPawnRemovedFromAIRegion
 {
 public:
 	Class Pawn*                                                  AIPawn;                                            // 0x0(0x8)
@@ -1684,7 +1684,7 @@ public:
 
 
 // Size 0x10
-class EventAIPawnAddedToAIRegion: public None
+struct EventAIPawnAddedToAIRegion
 {
 public:
 	Class Pawn*                                                  AIPawn;                                            // 0x0(0x8)
@@ -1692,7 +1692,7 @@ public:
 
 
 // Size 0x1
-class EventOceanCrawlerAIBuffAudioRequest: public None
+struct EventOceanCrawlerAIBuffAudioRequest
 {
 public:
 	bool                                                         IsBuffGiver;                                       // 0x0(0x1)
@@ -1700,7 +1700,7 @@ public:
 
 
 // Size 0x8
-class EventOceanCrawlerAIAbilityAudioRequest: public None
+struct EventOceanCrawlerAIAbilityAudioRequest
 {
 public:
 	byte                                                         RequestAudioKey;                                   // 0x0(0x1)
@@ -1709,7 +1709,7 @@ public:
 
 
 // Size 0x1
-class EventAthenaAISpawnBeginAnim: public None
+struct EventAthenaAISpawnBeginAnim
 {
 public:
 	byte                                                         SpawnType;                                         // 0x0(0x1)
@@ -1717,7 +1717,7 @@ public:
 
 
 // Size 0x2
-class EventAthenaAISpawnActive: public None
+struct EventAthenaAISpawnActive
 {
 public:
 	byte                                                         SpawnType;                                         // 0x0(0x1)
@@ -1726,12 +1726,12 @@ public:
 
 
 // Size 0x40
-class AISpawnerTelemetryEvent: public None
+struct AISpawnerTelemetryEvent
 {
 public:
 	Struct FString                                               AISpawnerType;                                     // 0x0(0x10)
 	Struct FString                                               AISpawnerRegion;                                   // 0x10(0x10)
-	TArray<Str >                                                 AISpawnerContexts;                                 // 0x20(0x10)
+	TArray<Str AISpawnerContexts>                                AISpawnerContexts;                                 // 0x20(0x10)
 	int                                                          AISpawnerWaveSpawnNumber;                          // 0x30(0x4)
 	float                                                        AISpawnerWaveDelayBefore;                          // 0x34(0x4)
 	float                                                        AISpawnerWaveDelayAfter;                           // 0x38(0x4)
@@ -1739,7 +1739,7 @@ public:
 
 
 // Size 0xd0
-class AITelemetryFragmentInput: public None
+struct AITelemetryFragmentInput
 {
 public:
 	Struct AIEncounterSpecification                              AIEncounterSpecification;                          // 0x8(0xc8)
@@ -1747,12 +1747,12 @@ public:
 
 
 // Size 0x70
-class AITelemetryFragment: public None
+struct AITelemetryFragment
 {
 public:
 	Struct FString                                               AIType;                                            // 0x0(0x10)
 	Struct FString                                               AIId;                                              // 0x10(0x10)
-	TArray<Str >                                                 AILoadOut;                                         // 0x20(0x10)
+	TArray<Str AILoadOut>                                        AILoadOut;                                         // 0x20(0x10)
 	Struct FString                                               AIPawnType;                                        // 0x30(0x10)
 	Struct FString                                               AISkillset;                                        // 0x40(0x10)
 	Struct FString                                               AIForm;                                            // 0x50(0x10)
@@ -1761,7 +1761,7 @@ public:
 
 
 // Size 0x10
-class PlayerKillAITelemetryEvent: public None
+struct PlayerKillAITelemetryEvent
 {
 public:
 	Struct Guid                                                  AttackId;                                          // 0x0(0x10)
@@ -1769,7 +1769,7 @@ public:
 
 
 // Size 0x10
-class AISpawnTelemetryEvent: public None
+struct AISpawnTelemetryEvent
 {
 public:
 	Struct FString                                               LocationName;                                      // 0x0(0x10)
@@ -1777,7 +1777,7 @@ public:
 
 
 // Size 0x10
-class AIActorTimeout: public None
+struct AIActorTimeout
 {
 public:
 	Class Actor*                                                 AIActor;                                           // 0x0(0x8)

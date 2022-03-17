@@ -16,15 +16,15 @@ public:
 	bool                                                         RunInEditor;                                       // 0x3e3(0x1)
 	bool                                                         RunOnServer;                                       // 0x3e4(0x1)
 	bool                                                         RequiresServices;                                  // 0x3e5(0x1)
-	TArray<Struct RequiresServices>                              AdditionalMetadata;                                // 0x3e8(0x10)
+	TArray<Struct TestLevelMetadataEntry>                        AdditionalMetadata;                                // 0x3e8(0x10)
 	byte                                                         CaptureType;                                       // 0x3f8(0x1)
 	byte                                                         PlayModeOverride;                                  // 0x3f9(0x1)
 	float                                                        TestTimeout;                                       // 0x3fc(0x4)
 	float                                                        TestPausedTimeout;                                 // 0x400(0x4)
-	TArray<Str >                                                 VerboseLogCategories;                              // 0x408(0x10)
-	TArray<Int >                                                 ClientsRunning;                                    // 0x418(0x10)
-	TArray<Int >                                                 ClientIds;                                         // 0x428(0x10)
-	TArray<Struct ClientIds>                                     ClientPawns;                                       // 0x438(0x10)
+	TArray<Str VerboseLogCategories>                             VerboseLogCategories;                              // 0x408(0x10)
+	TArray<Int ClientsRunning>                                   ClientsRunning;                                    // 0x418(0x10)
+	TArray<Int ClientIds>                                        ClientIds;                                         // 0x428(0x10)
+	TArray<Struct ClientPawnDetails>                             ClientPawns;                                       // 0x438(0x10)
 	TArray<class SpawnedActors*>                                 SpawnedActors;                                     // 0x448(0x10)
 	int                                                          NextSpawnedActorIndex;                             // 0x458(0x4)
 };
@@ -140,10 +140,10 @@ public:
 class TextureAuditorSettings: public TestSettings
 {
 public:
-	TArray<Struct ForwardSettingMap>                             SpecificTexturesToNotAudit;                        // 0x38(0x10)
-	TArray<Struct SpecificTexturesToNotAudit>                    TextureDirectoriesToNotAudit;                      // 0x48(0x10)
+	TArray<Struct StringAssetReference>                          SpecificTexturesToNotAudit;                        // 0x38(0x10)
+	TArray<Struct DirectoryPath>                                 TextureDirectoriesToNotAudit;                      // 0x48(0x10)
 	Struct TextureAuditorProperties                              DefaultTextureProperties;                          // 0x58(0x20)
-	TArray<Struct DefaultTextureProperties>                      PerTextureGroupPropertiesOverrides;                // 0x78(0x10)
+	TArray<Struct TextureAuditorGroupProperties>                 PerTextureGroupPropertiesOverrides;                // 0x78(0x10)
 };
 
 

@@ -16,7 +16,7 @@ CustomPlayerStartConfigData:
   - Name: Tags
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Tags>
   ClassSize: '0x30'
 CustomPlayerStartConfigResponseData:
   Attributes:

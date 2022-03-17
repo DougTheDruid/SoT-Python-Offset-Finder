@@ -87,8 +87,8 @@ public:
 class GlitterBeardTreeVisualFeedbackComponent: public ActorComponent
 {
 public:
-	TArray<Struct TreeBlendTime>                                 FeedbackActions;                                   // 0xc8(0x10)
-	TArray<Byte FeedbackActions>                                 CurrentStates;                                     // 0xe8(0x10)
+	TArray<Struct VisualFeedbackList>                            FeedbackActions;                                   // 0xc8(0x10)
+	TArray<Byte CurrentStates>                                   CurrentStates;                                     // 0xe8(0x10)
 };
 
 

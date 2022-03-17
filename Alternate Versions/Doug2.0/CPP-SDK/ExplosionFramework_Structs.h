@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class EventExplosionIgnitedActor: public None
+struct EventExplosionIgnitedActor
 {
 public:
 	Class Actor*                                                 IgnitedActor;                                      // 0x0(0x8)
@@ -15,14 +15,14 @@ public:
 
 
 // Size 0xc
-class EventOnExploded: public None
+struct EventOnExploded
 {
 public:
 };
 
 
 // Size 0x8
-class EventExplosionOverlap: public None
+struct EventExplosionOverlap
 {
 public:
 	class                                                        DamagerType;                                       // 0x0(0x8)

@@ -21,7 +21,7 @@ UdpMessagingSettings:
   - Name: StaticEndpoints
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str StaticEndpoints>
   - Name: EnableTunnel
     Offset: '0x68'
     Size: '0x1'
@@ -37,7 +37,7 @@ UdpMessagingSettings:
   - Name: RemoteTunnelEndpoints
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str RemoteTunnelEndpoints>
   ClassSize: '0x78'
   FullSize: '0xa0'
   InheritedSize: '0x28'

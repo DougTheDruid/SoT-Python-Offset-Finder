@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class MovieSceneBinding: public None
+struct MovieSceneBinding
 {
 public:
 	Struct Guid                                                  ObjectGuid;                                        // 0x0(0x10)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x38
-class MovieScenePossessable: public None
+struct MovieScenePossessable
 {
 public:
 	Struct Guid                                                  Guid;                                              // 0x0(0x10)
@@ -28,27 +28,27 @@ public:
 
 
 // Size 0x40
-class MovieSceneSpawnable: public None
+struct MovieSceneSpawnable
 {
 public:
 	Struct Guid                                                  Guid;                                              // 0x0(0x10)
 	Struct FString                                               Name;                                              // 0x10(0x10)
 	Class Object*                                                ObjectTemplate;                                    // 0x20(0x8)
-	TArray<Struct ObjectTemplate>                                ChildPossessables;                                 // 0x28(0x10)
+	TArray<Struct Guid>                                          ChildPossessables;                                 // 0x28(0x10)
 	byte                                                         Ownership;                                         // 0x38(0x1)
 };
 
 
 // Size 0x10
-class MovieSceneTrackLabels: public None
+struct MovieSceneTrackLabels
 {
 public:
-	TArray<Str None>                                             Strings;                                           // 0x0(0x10)
+	TArray<Str Strings>                                          Strings;                                           // 0x0(0x10)
 };
 
 
 // Size 0x70
-class MovieSceneEditorData: public None
+struct MovieSceneEditorData
 {
 public:
 	Struct FloatRange                                            WorkingRange;                                      // 0x50(0x10)
@@ -57,7 +57,7 @@ public:
 
 
 // Size 0x1
-class MovieSceneExpansionState: public None
+struct MovieSceneExpansionState
 {
 public:
 	bool                                                         bExpanded;                                         // 0x0(0x1)
@@ -65,7 +65,7 @@ public:
 
 
 // Size 0x10
-class MovieSceneObjectBindingPtr: public None
+struct MovieSceneObjectBindingPtr
 {
 public:
 	Struct Guid                                                  Guid;                                              // 0x0(0x10)
@@ -73,7 +73,7 @@ public:
 
 
 // Size 0x1c
-class MovieSceneBindingOverrideData: public None
+struct MovieSceneBindingOverrideData
 {
 public:
 	Struct MovieSceneObjectBindingPtr                            ObjectBindingId;                                   // 0x0(0x10)
@@ -82,7 +82,7 @@ public:
 
 
 // Size 0x28
-class MovieSceneSequencePlaybackSettings: public None
+struct MovieSceneSequencePlaybackSettings
 {
 public:
 	int                                                          LoopCount;                                         // 0x0(0x4)
@@ -94,7 +94,7 @@ public:
 
 
 // Size 0x2
-class MovieSceneSectionEvalOptions: public None
+struct MovieSceneSectionEvalOptions
 {
 public:
 	bool                                                         bCanEditCompletionMode;                            // 0x0(0x1)
@@ -103,39 +103,39 @@ public:
 
 
 // Size 0x4
-class MovieSceneTrackIdentifier: public None
+struct MovieSceneTrackIdentifier
 {
 public:
 };
 
 
 // Size 0x4
-class MovieSceneSequenceID: public None
+struct MovieSceneSequenceID
 {
 public:
 };
 
 
 // Size 0x30
-class MovieSceneEvaluationField: public None
+struct MovieSceneEvaluationField
 {
 public:
-	TArray<Struct MovieSceneEvalTemplateBase>                    Ranges;                                            // 0x0(0x10)
+	TArray<Struct FloatRange>                                    Ranges;                                            // 0x0(0x10)
 	TArray<Struct MovieSceneEvaluationGroup>                     Groups;                                            // 0x10(0x10)
 	TArray<Struct MovieSceneEvaluationMetaData>                  MetaData;                                          // 0x20(0x10)
 };
 
 
 // Size 0x10
-class MovieSceneEvaluationMetaData: public None
+struct MovieSceneEvaluationMetaData
 {
 public:
-	TArray<Struct Groups>                                        ActiveSequences;                                   // 0x0(0x10)
+	TArray<Struct MovieSceneSequenceID>                          ActiveSequences;                                   // 0x0(0x10)
 };
 
 
 // Size 0x20
-class MovieSceneEvaluationGroup: public None
+struct MovieSceneEvaluationGroup
 {
 public:
 	TArray<Struct MovieSceneEvaluationGroupLUTIndex>             LUTIndices;                                        // 0x0(0x10)
@@ -144,7 +144,7 @@ public:
 
 
 // Size 0xc
-class MovieSceneEvaluationFieldSegmentPtr: public None
+struct MovieSceneEvaluationFieldSegmentPtr
 {
 public:
 	int                                                          SegmentIndex;                                      // 0x8(0x4)
@@ -152,7 +152,7 @@ public:
 
 
 // Size 0x8
-class MovieSceneEvaluationFieldTrackPtr: public None
+struct MovieSceneEvaluationFieldTrackPtr
 {
 public:
 	Struct MovieSceneSequenceID                                  SequenceId;                                        // 0x0(0x4)
@@ -161,7 +161,7 @@ public:
 
 
 // Size 0x10
-class MovieSceneEvaluationGroupLUTIndex: public None
+struct MovieSceneEvaluationGroupLUTIndex
 {
 public:
 	bool                                                         bRequiresImmediateFlush;                           // 0x0(0x1)
@@ -172,28 +172,28 @@ public:
 
 
 // Size 0x10
-class MovieSceneEvalTemplateBase: public None
+struct MovieSceneEvalTemplateBase
 {
 public:
 };
 
 
 // Size 0x1
-class MovieSceneEmptyStruct: public None
+struct MovieSceneEmptyStruct
 {
 public:
 };
 
 
 // Size 0x38
-class MovieSceneEvalTemplatePtr: public None
+struct MovieSceneEvalTemplatePtr
 {
 public:
 };
 
 
 // Size 0x18
-class MovieSceneEvalTemplate: public None
+struct MovieSceneEvalTemplate
 {
 public:
 	byte                                                         CompletionMode;                                    // 0x10(0x1)
@@ -201,14 +201,14 @@ public:
 
 
 // Size 0x40
-class MovieSceneSegment: public None
+struct MovieSceneSegment
 {
 public:
 };
 
 
 // Size 0x8
-class SectionEvaluationData: public None
+struct SectionEvaluationData
 {
 public:
 	int                                                          ImplIndex;                                         // 0x0(0x4)
@@ -217,27 +217,27 @@ public:
 
 
 // Size 0x38
-class MovieSceneTrackImplementationPtr: public None
+struct MovieSceneTrackImplementationPtr
 {
 public:
 };
 
 
 // Size 0x10
-class MovieSceneTrackImplementation: public None
+struct MovieSceneTrackImplementation
 {
 public:
 };
 
 
 // Size 0x80
-class MovieSceneEvaluationTrack: public None
+struct MovieSceneEvaluationTrack
 {
 public:
 	Struct Guid                                                  ObjectBindingId;                                   // 0x0(0x10)
 	byte                                                         EvaluationMethod;                                  // 0x12(0x1)
-	TArray<Struct EvaluationMethod>                              Segments;                                          // 0x18(0x10)
-	TArray<Struct Segments>                                      ChildTemplates;                                    // 0x28(0x10)
+	TArray<Struct MovieSceneSegment>                             Segments;                                          // 0x18(0x10)
+	TArray<Struct MovieSceneEvalTemplatePtr>                     ChildTemplates;                                    // 0x28(0x10)
 	Struct MovieSceneTrackImplementationPtr                      TrackTemplate;                                     // 0x38(0x38)
 	struct FName                                                 EvaluationGroup;                                   // 0x70(0x8)
 	bool                                                         bEvaluateInPreroll;                                // 0x78(0x1)
@@ -246,7 +246,7 @@ public:
 
 
 // Size 0x8
-class MovieSceneSequenceTransform: public None
+struct MovieSceneSequenceTransform
 {
 public:
 	float                                                        TimeScale;                                         // 0x0(0x4)
@@ -255,7 +255,7 @@ public:
 
 
 // Size 0x10
-class MovieSceneSectionParameters: public None
+struct MovieSceneSectionParameters
 {
 public:
 	float                                                        StartOffset;                                       // 0x0(0x4)
@@ -266,23 +266,23 @@ public:
 
 
 // Size 0xa0
-class MovieSceneSequenceHierarchy: public None
+struct MovieSceneSequenceHierarchy
 {
 public:
 };
 
 
 // Size 0x18
-class MovieSceneSequenceHierarchyNode: public None
+struct MovieSceneSequenceHierarchyNode
 {
 public:
 	Struct MovieSceneSequenceID                                  ParentID;                                          // 0x0(0x4)
-	TArray<Struct ParentID>                                      Children;                                          // 0x8(0x10)
+	TArray<Struct MovieSceneSequenceID>                          Children;                                          // 0x8(0x10)
 };
 
 
 // Size 0x28
-class MovieSceneSubSequenceData: public None
+struct MovieSceneSubSequenceData
 {
 public:
 	Class MovieSceneSequence*                                    Sequence;                                          // 0x0(0x8)
@@ -293,7 +293,7 @@ public:
 
 
 // Size 0x4
-class MovieSceneTrackEvalOptions: public None
+struct MovieSceneTrackEvalOptions
 {
 public:
 	bool                                                         bCanEvaluateNearestSection;                        // 0x0(0x1)
@@ -304,7 +304,7 @@ public:
 
 
 // Size 0x1
-class MovieSceneTrackCompilationParams: public None
+struct MovieSceneTrackCompilationParams
 {
 public:
 	bool                                                         bForEditorPreview;                                 // 0x0(0x1)
@@ -312,14 +312,14 @@ public:
 
 
 // Size 0x220
-class CachedMovieSceneEvaluationTemplate: public None
+struct CachedMovieSceneEvaluationTemplate
 {
 public:
 };
 
 
 // Size 0x220
-class MovieSceneEvaluationTemplate: public None
+struct MovieSceneEvaluationTemplate
 {
 public:
 	Struct MovieSceneEvaluationField                             EvaluationField;                                   // 0xa0(0x30)
@@ -331,14 +331,14 @@ public:
 
 
 // Size 0xa8
-class MovieSceneGenerationLedger: public None
+struct MovieSceneGenerationLedger
 {
 public:
 };
 
 
 // Size 0x18
-class MovieSceneSequenceCachedSignature: public None
+struct MovieSceneSequenceCachedSignature
 {
 public:
 	Struct Guid                                                  CachedSignature;                                   // 0x8(0x10)
@@ -346,7 +346,7 @@ public:
 
 
 // Size 0x20
-class MovieSceneLegacyTrackInstanceTemplate: public None
+struct MovieSceneLegacyTrackInstanceTemplate
 {
 public:
 	Class MovieSceneTrack*                                       Track;                                             // 0x18(0x8)
@@ -354,7 +354,7 @@ public:
 
 
 // Size 0x20
-class MovieScenePropertySectionData: public None
+struct MovieScenePropertySectionData
 {
 public:
 	struct FName                                                 PropertyName;                                      // 0x0(0x8)
@@ -364,7 +364,7 @@ public:
 
 
 // Size 0x8
-class MovieSceneKeyStruct: public None
+struct MovieSceneKeyStruct
 {
 public:
 };

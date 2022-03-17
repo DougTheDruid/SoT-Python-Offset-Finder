@@ -147,5 +147,5 @@ OnlineStoreCatalogItem:
   - Name: MetaTags
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str MetaTags>
   ClassSize: '0x90'

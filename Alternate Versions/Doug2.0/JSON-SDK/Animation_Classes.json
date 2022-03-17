@@ -119,13 +119,13 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "TArray<Struct GetAnimationDataClass>",
+        "Type": "TArray<Struct AnimationDataStoreEntry>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "LoadingData",
-        "Type": "TArray<Struct Data>",
+        "Type": "TArray<Struct AnimationDataStoreLoadingEntry>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -139,7 +139,7 @@
     "Attributes": [
       {
         "Name": "AssetRefs",
-        "Type": "TArray<Struct AssetWeakRefs>",
+        "Type": "TArray<Struct AnimationDataStoreAssetEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -153,7 +153,7 @@
     "Attributes": [
       {
         "Name": "AssetWeakRefs",
-        "Type": "TArray<Struct AnimationDataStoreWeakReferences>",
+        "Type": "TArray<Struct AnimationDataStoreAssetWeakReferenceEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -434,7 +434,7 @@
     "Attributes": [
       {
         "Name": "IKLimbsToAdjust",
-        "Type": "TArray<Byte TriggerWhenDisabled>",
+        "Type": "TArray<Byte IKLimbsToAdjust>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -488,7 +488,7 @@
     "Attributes": [
       {
         "Name": "CurveValues",
-        "Type": "TArray<Struct DestroyLocation>",
+        "Type": "TArray<Struct CurveUpdateValues>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -790,7 +790,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<Struct MontageIds>",
+        "Type": "TArray<Struct CustomAnimationMontageDefinitionEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -804,7 +804,7 @@
     "Attributes": [
       {
         "Name": "MontageIds",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -980,7 +980,7 @@
     "Attributes": [
       {
         "Name": "WeightedAnimationList",
-        "Type": "TArray<Struct CreateNewWeightedAnimSequenceLoadOnDemand>",
+        "Type": "TArray<Struct WeightedAnimationData>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -1006,7 +1006,7 @@
       },
       {
         "Name": "WeightedAnimationList",
-        "Type": "TArray<Struct FallBackAnimation>",
+        "Type": "TArray<Struct WeightedAnimationData>",
         "Size": "0x10",
         "Offset": "0x30"
       }

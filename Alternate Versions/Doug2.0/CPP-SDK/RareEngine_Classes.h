@@ -17,7 +17,7 @@ public:
 class AssetReferencer: public DataAsset
 {
 public:
-	TArray<Assetclass DidHitchOccurThisFrame>                    AssetsToReference;                                 // 0x28(0x10)
+	TArray<Assetclass AssetsToReference>                         AssetsToReference;                                 // 0x28(0x10)
 };
 
 
@@ -39,7 +39,7 @@ public:
 class MemoryUsageVisualiserSettings: public Object
 {
 public:
-	TArray<Struct Activate>                                      VisualiserCategories;                              // 0x28(0x10)
+	TArray<Struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
 };
 
 

@@ -35,7 +35,7 @@ public:
 class PrioritisedPromptsManager: public Object
 {
 public:
-	TArray<Struct Key>                                           AllPrompts;                                        // 0x30(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
 	Class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
 };
 

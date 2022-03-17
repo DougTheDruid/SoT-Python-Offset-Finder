@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class WwiseAudioAcousticSurfaceParams: public None
+struct WwiseAudioAcousticSurfaceParams
 {
 public:
 	float                                                        Thickness;                                         // 0x0(0x4)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x18
-class AnimNotify_SoundSwitch: public None
+struct AnimNotify_SoundSwitch
 {
 public:
 	Struct StringAssetReference                                  SkeletalMeshReference;                             // 0x0(0x10)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0x18
-class WwiseEventParam: public None
+struct WwiseEventParam
 {
 public:
 	struct FName                                                 SourcePath;                                        // 0x8(0x8)
@@ -34,7 +34,7 @@ public:
 
 
 // Size 0x64
-class WwiseAudioReverbPresets: public None
+struct WwiseAudioReverbPresets
 {
 public:
 	struct FName                                                 ShortEarlyReflectionPresetName;                    // 0x0(0x8)
@@ -51,7 +51,7 @@ public:
 
 
 // Size 0x28
-class ReverbPresetControllerSettings: public None
+struct ReverbPresetControllerSettings
 {
 public:
 	float                                                        HorizontalConeSegmentElevationAngle;               // 0xc(0x4)
@@ -64,26 +64,26 @@ public:
 
 
 // Size 0xa0
-class WwiseAudioGameStateSettings: public None
+struct WwiseAudioGameStateSettings
 {
 public:
 	struct FName                                                 AudioGameStateGroupName;                           // 0x0(0x8)
 	struct FName                                                 AudioGameStateFrontend;                            // 0x8(0x8)
 	struct FName                                                 AudioGameStateLoading;                             // 0x10(0x8)
 	struct FName                                                 AudioGameStateIngame;                              // 0x18(0x8)
-	TArray<Struct AudioGameStateIngame>                          EventsToPlayOnLobbyStart;                          // 0x20(0x10)
-	TArray<Struct EventsToPlayOnLobbyStart>                      EventsToPlayOnLobbyEnd;                            // 0x30(0x10)
-	TArray<Struct EventsToPlayOnLobbyEnd>                        EventsToPlayOnEngageStart;                         // 0x40(0x10)
-	TArray<Struct EventsToPlayOnEngageStart>                     EventsToPlayOnEngageEnd;                           // 0x50(0x10)
-	TArray<Struct EventsToPlayOnEngageEnd>                       EventsToPlayOnLoadingStart;                        // 0x60(0x10)
-	TArray<Struct EventsToPlayOnLoadingStart>                    EventsToPlayOnLoadingEnd;                          // 0x70(0x10)
-	TArray<Struct EventsToPlayOnLoadingEnd>                      EventsToPlayOnFrontEndOrLoadingStart;              // 0x80(0x10)
-	TArray<Struct EventsToPlayOnFrontEndOrLoadingStart>          EventsToPlayOnFrontEndOrLoadingEnd;                // 0x90(0x10)
+	TArray<Struct StringAssetReference>                          EventsToPlayOnLobbyStart;                          // 0x20(0x10)
+	TArray<Struct StringAssetReference>                          EventsToPlayOnLobbyEnd;                            // 0x30(0x10)
+	TArray<Struct StringAssetReference>                          EventsToPlayOnEngageStart;                         // 0x40(0x10)
+	TArray<Struct StringAssetReference>                          EventsToPlayOnEngageEnd;                           // 0x50(0x10)
+	TArray<Struct StringAssetReference>                          EventsToPlayOnLoadingStart;                        // 0x60(0x10)
+	TArray<Struct StringAssetReference>                          EventsToPlayOnLoadingEnd;                          // 0x70(0x10)
+	TArray<Struct StringAssetReference>                          EventsToPlayOnFrontEndOrLoadingStart;              // 0x80(0x10)
+	TArray<Struct StringAssetReference>                          EventsToPlayOnFrontEndOrLoadingEnd;                // 0x90(0x10)
 };
 
 
 // Size 0x38
-class WwiseBinkSettings: public None
+struct WwiseBinkSettings
 {
 public:
 	Struct StringAssetReference                                  PlayEvent;                                         // 0x0(0x10)
@@ -94,7 +94,7 @@ public:
 
 
 // Size 0x18
-class WwiseBinkTrackMappings: public None
+struct WwiseBinkTrackMappings
 {
 public:
 	byte                                                         mLanguage;                                         // 0x0(0x1)
@@ -103,7 +103,7 @@ public:
 
 
 // Size 0x8
-class WwiseBinkTrackMapping: public None
+struct WwiseBinkTrackMapping
 {
 public:
 	byte                                                         mChannelMapping;                                   // 0x0(0x1)
@@ -113,7 +113,7 @@ public:
 
 
 // Size 0x8
-class WwiseIOPriorityMappingConfig: public None
+struct WwiseIOPriorityMappingConfig
 {
 public:
 	int                                                          WwisePriority;                                     // 0x0(0x4)
@@ -122,7 +122,7 @@ public:
 
 
 // Size 0x18
-class WwiseNetworkRelationship: public None
+struct WwiseNetworkRelationship
 {
 public:
 	struct FName                                                 SwitchGroupName;                                   // 0x0(0x8)
@@ -132,7 +132,7 @@ public:
 
 
 // Size 0x2
-class WwiseEmitterParams: public None
+struct WwiseEmitterParams
 {
 public:
 	bool                                                         bEnableObstructionAndOcclusion;                    // 0x0(0x1)
@@ -141,7 +141,7 @@ public:
 
 
 // Size 0x3c
-class WwiseListenerInfo: public None
+struct WwiseListenerInfo
 {
 public:
 	Struct Vector                                                Position;                                          // 0x0(0xc)
@@ -153,7 +153,7 @@ public:
 
 
 // Size 0x28
-class WwiseNativeEmitterPoolDensityParams: public None
+struct WwiseNativeEmitterPoolDensityParams
 {
 public:
 	bool                                                         PlayPoolDensityAudio;                              // 0x0(0x1)
@@ -166,7 +166,7 @@ public:
 
 
 // Size 0x10
-class WwiseExternalSource: public None
+struct WwiseExternalSource
 {
 public:
 	Struct FString                                               path;                                              // 0x0(0x10)
@@ -174,7 +174,7 @@ public:
 
 
 // Size 0x10
-class WwiseSubtitle: public None
+struct WwiseSubtitle
 {
 public:
 	Struct FString                                               Subtitle;                                          // 0x0(0x10)
@@ -182,7 +182,7 @@ public:
 
 
 // Size 0x20
-class MovieSceneAkAudioEventTemplate: public None
+struct MovieSceneAkAudioEventTemplate
 {
 public:
 	Class MovieSceneAkAudioEventSection*                         Section;                                           // 0x18(0x8)
@@ -190,7 +190,7 @@ public:
 
 
 // Size 0x20
-class MovieSceneAkAudioRTPCTemplate: public None
+struct MovieSceneAkAudioRTPCTemplate
 {
 public:
 	Class MovieSceneAkAudioRTPCSection*                          Section;                                           // 0x18(0x8)
@@ -198,7 +198,7 @@ public:
 
 
 // Size 0x88
-class MovieSceneAkAudioRTPCSectionData: public None
+struct MovieSceneAkAudioRTPCSectionData
 {
 public:
 	Struct FString                                               RTPCName;                                          // 0x0(0x10)

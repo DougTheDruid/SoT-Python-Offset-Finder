@@ -11,10 +11,10 @@ class SeasonPopupAsset: public DataAsset
 {
 public:
 	struct FName                                                 ThemeId;                                           // 0x28(0x8)
-	TArray<Struct ThemeId>                                       TierInfos;                                         // 0x30(0x10)
-	TArray<Struct TierInfos>                                     TrialInfos;                                        // 0x40(0x10)
-	TArray<Struct TrialInfos>                                    DeedInfos;                                         // 0x50(0x10)
-	TArray<Struct DeedInfos>                                     RenownActionInfos;                                 // 0x60(0x10)
+	TArray<Struct SeasonIconPopupAsset>                          TierInfos;                                         // 0x30(0x10)
+	TArray<Struct SeasonGoalPopupAsset>                          TrialInfos;                                        // 0x40(0x10)
+	TArray<Struct SeasonGoalPopupAsset>                          DeedInfos;                                         // 0x50(0x10)
+	TArray<Struct SeasonGoalPopupAsset>                          RenownActionInfos;                                 // 0x60(0x10)
 	Struct SeasonIconPopupAsset                                  SeasonInfo;                                        // 0x70(0x68)
 	Struct SeasonIconPopupAsset                                  LevelIncreaseInfo;                                 // 0xd8(0x68)
 	Struct SeasonIconPopupAsset                                  RewardInfo;                                        // 0x140(0x68)
@@ -57,7 +57,7 @@ public:
 class SeasonProgressionUIComponent: public ActorComponent
 {
 public:
-	TArray<Struct SeasonPopupListAsset>                          DetailsNavigationDesc;                             // 0xe8(0x10)
+	TArray<Struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xe8(0x10)
 	Struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xf8(0x18)
 };
 

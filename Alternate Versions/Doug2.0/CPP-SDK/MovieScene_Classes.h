@@ -18,9 +18,9 @@ public:
 class MovieScene: public MovieSceneSignedObject
 {
 public:
-	TArray<Struct BindingData>                                   Spawnables;                                        // 0x80(0x10)
-	TArray<Struct Spawnables>                                    Possessables;                                      // 0x90(0x10)
-	TArray<Struct Possessables>                                  ObjectBindings;                                    // 0xa0(0x10)
+	TArray<Struct MovieSceneSpawnable>                           Spawnables;                                        // 0x80(0x10)
+	TArray<Struct MovieScenePossessable>                         Possessables;                                      // 0x90(0x10)
+	TArray<Struct MovieSceneBinding>                             ObjectBindings;                                    // 0xa0(0x10)
 	TArray<class MasterTracks*>                                  MasterTracks;                                      // 0xb0(0x10)
 	Class MovieSceneTrack*                                       CameraCutTrack;                                    // 0xc0(0x8)
 	Struct FloatRange                                            SelectionRange;                                    // 0xc8(0x10)
@@ -45,7 +45,7 @@ public:
 class MovieSceneBindingOverrides: public Object
 {
 public:
-	TArray<Struct ChildObjectBindingStrings>                     BindingData;                                       // 0x30(0x10)
+	TArray<Struct MovieSceneBindingOverrideData>                 BindingData;                                       // 0x30(0x10)
 };
 
 
@@ -63,7 +63,7 @@ public:
 	struct FName                                                 FolderName;                                        // 0x28(0x8)
 	TArray<class ChildFolders*>                                  ChildFolders;                                      // 0x30(0x10)
 	TArray<class ChildMasterTracks*>                             ChildMasterTracks;                                 // 0x40(0x10)
-	TArray<Str >                                                 ChildObjectBindingStrings;                         // 0x50(0x10)
+	TArray<Str ChildObjectBindingStrings>                        ChildObjectBindingStrings;                         // 0x50(0x10)
 };
 
 

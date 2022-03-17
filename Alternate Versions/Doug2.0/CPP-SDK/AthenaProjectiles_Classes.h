@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AthenaProjectilesThrottledTickCollectionAsset: public DataAsset
 {
 public:
-	TArray<Struct GlobalSettings>                                ProjectileTickPools;                               // 0x28(0x10)
+	TArray<Struct ThrottledProjectileTickPool>                   ProjectileTickPools;                               // 0x28(0x10)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class ProjectileLauncherSpecificSettings: public DeveloperSettings
 {
 public:
-	TArray<Struct SetParamValues>                                GlobalSettings;                                    // 0x38(0x10)
+	TArray<Struct GlobalProjectileSettings>                      GlobalSettings;                                    // 0x38(0x10)
 };
 
 

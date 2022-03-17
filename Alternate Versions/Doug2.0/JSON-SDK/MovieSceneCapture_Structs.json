@@ -126,7 +126,7 @@
     "Attributes": [
       {
         "Name": "Value",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str Value>",
         "Size": "0x10",
         "Offset": "0x0"
       }

@@ -35,7 +35,7 @@
     "Attributes": [
       {
         "Name": "WaterInfo",
-        "Type": "TArray<Struct GetActorWaterInformation>",
+        "Type": "TArray<Struct WaterInformation>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -119,7 +119,7 @@
     "Attributes": [
       {
         "Name": "Probes",
-        "Type": "TArray<Struct AttachProbesToComponent>",
+        "Type": "TArray<Struct SplashProbe>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -242,7 +242,7 @@
     "Attributes": [
       {
         "Name": "WaterSpouts",
-        "Type": "TArray<Struct IsEnabled>",
+        "Type": "TArray<Struct WaterSpout>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -314,7 +314,7 @@
       },
       {
         "Name": "ActiveWaterSpouts",
-        "Type": "TArray<Struct SplashKillPlane>",
+        "Type": "TArray<Struct WaterSpout>",
         "Size": "0x10",
         "Offset": "0x130"
       }

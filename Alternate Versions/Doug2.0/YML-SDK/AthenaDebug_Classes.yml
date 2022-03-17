@@ -5,31 +5,31 @@ DrawDebugService:
   - Name: MessagesReplicated
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<Struct SphereList>
+    Type: TArray<Struct DrawDebugItemMessage>
   - Name: SpheresReplicated
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<Struct MessagesReplicated>
+    Type: TArray<Struct DrawDebugItemSphere>
   - Name: BoxesReplicated
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<Struct SpheresReplicated>
+    Type: TArray<Struct DrawDebugItemBox>
   - Name: CapsulesReplicated
     Offset: '0x408'
     Size: '0x10'
-    Type: TArray<Struct BoxesReplicated>
+    Type: TArray<Struct DrawDebugItemCapsule>
   - Name: LinesReplicated
     Offset: '0x418'
     Size: '0x10'
-    Type: TArray<Struct CapsulesReplicated>
+    Type: TArray<Struct DrawDebugItemLine>
   - Name: SectorsReplicated
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct LinesReplicated>
+    Type: TArray<Struct DrawDebugItemSector>
   - Name: StringsReplicated
     Offset: '0x438'
     Size: '0x10'
-    Type: TArray<Struct SectorsReplicated>
+    Type: TArray<Struct DrawDebugItemString>
   - Name: IsDrawDebugActive
     Offset: '0x448'
     Size: '0x1'
@@ -49,7 +49,7 @@ ShippingDebugActorSphereCollection:
   - Name: SphereList
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<Struct Id>
+    Type: TArray<Struct SphereData>
   ClassSize: '0x10'
   FullSize: '0x3e0'
   InheritedSize: '0x3d0'
@@ -65,7 +65,7 @@ Videprinter:
   - Name: OutputRingBuffer
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str OutputRingBuffer>
   - Name: AddAt
     Offset: '0x3e0'
     Size: '0x4'

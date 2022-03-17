@@ -14,7 +14,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	Struct Guid                                                  OfferId;                                           // 0x420(0x10)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x430(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
 };
 
 
@@ -26,7 +26,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	Struct Guid                                                  OfferId;                                           // 0x420(0x10)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x430(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
 };
 
 
@@ -38,7 +38,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	Struct Guid                                                  OfferId;                                           // 0x420(0x10)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x430(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
 };
 
 
@@ -50,7 +50,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	Struct Guid                                                  OfferId;                                           // 0x420(0x10)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x430(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
 };
 
 
@@ -62,7 +62,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	Struct Guid                                                  OfferId;                                           // 0x420(0x10)
-	TArray<Struct None>                                          Prompts;                                           // 0x430(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
 };
 
 

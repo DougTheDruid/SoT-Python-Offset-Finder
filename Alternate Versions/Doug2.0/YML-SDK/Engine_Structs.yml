@@ -5,14 +5,14 @@ A2CSPose:
   - Name: ComponentSpaceFlags
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Byte AnimMontageInstance>
+    Type: TArray<Byte ComponentSpaceFlags>
   ClassSize: '0x28'
 A2Pose:
   Attributes:
   - Name: Bones
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ComponentSpaceFlags>
+    Type: TArray<Struct Transform>
   ClassSize: '0x10'
 ActiveForceFeedbackEffect:
   Attributes:
@@ -248,11 +248,11 @@ AnimMontageInstance:
   - Name: NextSections
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int NextSections>
   - Name: PrevSections
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int PrevSections>
   - Name: bPlaying
     Offset: '0x38'
     Size: '0x1'
@@ -260,7 +260,7 @@ AnimMontageInstance:
   - Name: ActiveStateBranchingPoints
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct bPlaying>
+    Type: TArray<Struct AnimNotifyEvent>
   - Name: Position
     Offset: '0x78'
     Size: '0x4'
@@ -316,11 +316,11 @@ AnimNode_BlendListBase:
   - Name: BlendPose
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct AnimNode_BlendListByBool>
+    Type: TArray<Struct PoseLink>
   - Name: BlendTime
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float BlendTime>
   - Name: BlendType
     Offset: '0x50'
     Size: '0x1'
@@ -332,15 +332,15 @@ AnimNode_BlendListBase:
   - Name: Blends
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct CustomBlendCurve>
+    Type: TArray<Struct AlphaBlend>
   - Name: BlendWeights
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float BlendWeights>
   - Name: RemainingBlendTimes
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float RemainingBlendTimes>
   - Name: LastActiveChildIndex
     Offset: '0x90'
     Size: '0x4'
@@ -358,7 +358,7 @@ AnimNode_BlendListByEnum:
   - Name: EnumToPoseIndex
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int EnumToPoseIndex>
   - Name: ActiveEnumValue
     Offset: '0xb8'
     Size: '0x1'
@@ -380,7 +380,7 @@ AnimNode_BlendListByObject:
   - Name: ObjectToPoseIndex
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Class ActiveTypeValue>
+    Type: TArray<Class ObjectToPoseIndex>
   ClassSize: '0xc0'
 AnimNode_BlendSpaceEvaluator:
   Attributes:
@@ -430,7 +430,7 @@ AnimNode_BlendSpacePlayer:
   - Name: BlendSampleDataCache
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct BlendFilter>
+    Type: TArray<Struct BlendSampleData>
   ClassSize: '0x110'
 AnimNode_ConvertComponentToLocalSpace:
   Attributes:
@@ -929,15 +929,15 @@ AnimNode_LayeredBoneBlend:
   - Name: BlendPoses
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct BasePose>
+    Type: TArray<Struct PoseLink>
   - Name: LayerSetup
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct BlendPoses>
+    Type: TArray<Struct InputBlendPose>
   - Name: BlendWeights
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float BlendWeights>
   - Name: bMeshSpaceRotationBlend
     Offset: '0x78'
     Size: '0x1'
@@ -955,11 +955,11 @@ AnimNode_MultiWayBlend:
   - Name: Poses
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct AnimNode_MeshSpaceRefPose>
+    Type: TArray<Struct PoseLink>
   - Name: DesiredAlphas
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float DesiredAlphas>
   - Name: bAdditiveNode
     Offset: '0x50'
     Size: '0x1'
@@ -1249,7 +1249,7 @@ AnimSetMeshLinkup:
   - Name: BoneToTrackTable
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int BoneToTrackTable>
   ClassSize: '0x10'
 AnimSlotDesc:
   Attributes:
@@ -1282,7 +1282,7 @@ AnimSlotInfo:
   - Name: ChannelWeights
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float ChannelWeights>
   ClassSize: '0x18'
 AnimTickRecord:
   Attributes:
@@ -1335,7 +1335,7 @@ AnimUpdateRateParameters:
   - Name: BaseVisibleDistanceFactorThesholds
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float BaseVisibleDistanceFactorThesholds>
   ClassSize: '0x38'
 AnimationActiveTransitionEntry:
   Attributes: []
@@ -1697,7 +1697,7 @@ AutoCompleteNode:
   - Name: AutoCompleteListIndices
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int AutoCompleteListIndices>
   ClassSize: '0x28'
 AutomaticInstancingMeshComponentArray:
   Attributes:
@@ -1804,7 +1804,7 @@ BakedAnimationState:
   - Name: PlayerNodeIndices
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int PlayerNodeIndices>
   - Name: CanBeReEntered
     Offset: '0x48'
     Size: '0x1'
@@ -1854,7 +1854,7 @@ BakedStateExitTransition:
   - Name: PoseEvaluatorLinks
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int PoseEvaluatorLinks>
   ClassSize: '0x20'
 BasedMovementInfo:
   Attributes:
@@ -2358,7 +2358,7 @@ BoneReductionSetting:
   - Name: BonesToRemove
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   ClassSize: '0x10'
 BoneReference:
   Attributes:
@@ -2566,7 +2566,7 @@ BuilderPoly:
   - Name: VertexIndices
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int VertexIndices>
   - Name: Direction
     Offset: '0x10'
     Size: '0x4'
@@ -3053,7 +3053,7 @@ CollisionResponseTemplate:
   - Name: CustomResponses
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct ObjectTypeName>
+    Type: TArray<Struct ResponseChannel>
   - Name: HelpMessage
     Offset: '0x28'
     Size: '0x10'
@@ -3138,7 +3138,7 @@ CompressedOffsetData:
   - Name: OffsetData
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int OffsetData>
   - Name: StripSize
     Offset: '0x10'
     Size: '0x4'
@@ -3149,11 +3149,11 @@ CompressedTrack:
   - Name: ByteStream
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte CurveTrack>
+    Type: TArray<Byte ByteStream>
   - Name: Times
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Times>
   - Name: Mins
     Offset: '0x20'
     Size: '0x4'
@@ -3446,7 +3446,7 @@ ConvexElement2D:
   - Name: VertexData
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct BoxElements>
+    Type: TArray<Struct Vector2D>
   ClassSize: '0x10'
 CullDistanceSizePair:
   Attributes:
@@ -3545,7 +3545,7 @@ CurveTrack:
   - Name: CurveWeights
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float CurveWeights>
   ClassSize: '0x18'
 CustomChannelSetup:
   Attributes:
@@ -3586,7 +3586,7 @@ CustomPrimitiveData:
   - Name: Data
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Data>
   ClassSize: '0x10'
 CustomProfile:
   Attributes:
@@ -3597,7 +3597,7 @@ CustomProfile:
   - Name: CustomResponses
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Name>
+    Type: TArray<Struct ResponseChannel>
   ClassSize: '0x18'
 DamageEvent:
   Attributes:
@@ -3648,7 +3648,7 @@ DebugFloatHistory:
   - Name: Samples
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Samples>
   - Name: MaxSamples
     Offset: '0x10'
     Size: '0x4'
@@ -3748,7 +3748,7 @@ DelegateArray:
   - Name: Delegates
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Delegate PurchaseInfo>
+    Type: TArray<Delegate Delegates>
   ClassSize: '0x10'
 DepthFieldGlowInfo:
   Attributes:
@@ -4072,7 +4072,7 @@ DistributionLookupTable:
   - Name: Values
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Values>
   - Name: LockFlag
     Offset: '0x20'
     Size: '0x1'
@@ -4249,7 +4249,7 @@ EditorImportExportTestDefinition:
   - Name: FactorySettings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct bSkipExport>
+    Type: TArray<Struct ImportFactorySettingValues>
   ClassSize: '0x38'
 EditorImportWorkflowDefinition:
   Attributes:
@@ -5402,23 +5402,23 @@ GPUSpriteResourceData:
   - Name: QuantizedColorSamples
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct GPUSpriteEmitterInfo>
+    Type: TArray<Struct Color>
   - Name: QuantizedMiscSamples
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct QuantizedColorSamples>
+    Type: TArray<Struct Color>
   - Name: QuantizedDynamicParamSamples
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct QuantizedMiscSamples>
+    Type: TArray<Struct Color>
   - Name: QuantizedSimulationAttrSamples
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct QuantizedDynamicParamSamples>
+    Type: TArray<Struct Color>
   - Name: QuantizedSizeOverVelocitySamples
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct QuantizedSimulationAttrSamples>
+    Type: TArray<Struct Color>
   - Name: ColorScale
     Offset: '0x50'
     Size: '0x10'
@@ -6118,19 +6118,19 @@ KAggregateGeom:
   - Name: SphereElems
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct AggregateGeometry2D>
+    Type: TArray<Struct KSphereElem>
   - Name: BoxElems
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct SphereElems>
+    Type: TArray<Struct KBoxElem>
   - Name: SphylElems
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct BoxElems>
+    Type: TArray<Struct KSphylElem>
   - Name: ConvexElems
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct SphylElems>
+    Type: TArray<Struct KConvexElem>
   ClassSize: '0x48'
 KBoxElem:
   Attributes:
@@ -6160,7 +6160,7 @@ KConvexElem:
   - Name: VertexData
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct KSphereElem>
+    Type: TArray<Struct Vector>
   - Name: ElemBox
     Offset: '0x30'
     Size: '0x1c'
@@ -6254,7 +6254,7 @@ LODSoloTrack:
   - Name: SoloEnableSetting
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte ParticleSystemLOD>
+    Type: TArray<Byte SoloEnableSetting>
   ClassSize: '0x10'
 LPVCascadeSettings:
   Attributes:
@@ -6809,7 +6809,7 @@ LocalizedSubtitle:
   - Name: Subtitles
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct LanguageExt>
+    Type: TArray<Struct SubtitleCue>
   - Name: bMature
     Offset: '0x20'
     Size: '0x1'
@@ -7508,7 +7508,7 @@ MeshMergingSettings:
   - Name: LODScreenSizes
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float LODScreenSizes>
   - Name: LODForCollision
     Offset: '0x30'
     Size: '0x4'
@@ -8684,7 +8684,7 @@ ParticleRandomSeedInfo:
   - Name: RandomSeeds
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int RandomSeeds>
   ClassSize: '0x20'
 ParticleReplayTrackKey:
   Attributes:
@@ -10247,7 +10247,7 @@ RadialDamageEvent:
   - Name: ComponentHits
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct Origin>
+    Type: TArray<Struct HitResult>
   ClassSize: '0x40'
 RadialDamageParams:
   Attributes:
@@ -10528,15 +10528,15 @@ RawAnimSequenceTrack:
   - Name: PosKeys
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct PerBoneInterpolation>
+    Type: TArray<Struct Vector>
   - Name: RotKeys
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct PosKeys>
+    Type: TArray<Struct Quat>
   - Name: ScaleKeys
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct RotKeys>
+    Type: TArray<Struct Vector>
   ClassSize: '0x30'
 RawCurveTracks:
   Attributes:
@@ -10602,7 +10602,7 @@ ReferencePose:
   - Name: ReferencePose
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct PoseName>
+    Type: TArray<Struct Transform>
   ClassSize: '0x18'
 RepAttachment:
   Attributes:
@@ -10995,11 +10995,11 @@ RotationTrack:
   - Name: RotKeys
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct TranslationTrack>
+    Type: TArray<Struct Quat>
   - Name: Times
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Times>
   ClassSize: '0x20'
 RuntimeCurveLinearColor:
   Attributes:
@@ -11065,11 +11065,11 @@ ScaleTrack:
   - Name: ScaleKeys
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct RotationTrack>
+    Type: TArray<Struct Vector>
   - Name: Times
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Times>
   ClassSize: '0x20'
 ScreenMessageString:
   Attributes:
@@ -11338,7 +11338,7 @@ SkelMeshComponentLODInfo:
   - Name: HiddenMaterials
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Bool ActiveVertexAnim>
+    Type: TArray<Bool HiddenMaterials>
   ClassSize: '0x10'
 SkelMeshMergeMorphTarget:
   Attributes: []
@@ -11370,7 +11370,7 @@ SkeletalMeshLODInfo:
   - Name: LODMaterialMap
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int LODMaterialMap>
   - Name: TriangleSortSettings
     Offset: '0x18'
     Size: '0x10'
@@ -11441,7 +11441,7 @@ SkeletalMeshOptimizationSettings:
   - Name: BonesToRemove
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct MaxBonesPerVertex>
+    Type: TArray<Struct BoneReference>
   - Name: BaseLODModel
     Offset: '0x38'
     Size: '0x4'
@@ -11464,11 +11464,11 @@ SkeletonToMeshLinkup:
   - Name: SkeletonToMeshTable
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int SkeletonToMeshTable>
   - Name: MeshToSkeletonTable
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int MeshToSkeletonTable>
   ClassSize: '0x20'
 SlotAnimationTrack:
   Attributes:
@@ -11860,7 +11860,7 @@ SubTrackGroup:
   - Name: TrackIndices
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int TrackIndices>
   - Name: bIsCollapsed
     Offset: '0x20'
     Size: '0x1'
@@ -12367,11 +12367,11 @@ TranslationTrack:
   - Name: PosKeys
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct TrackToSkeletonMap>
+    Type: TArray<Struct Vector>
   - Name: Times
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float Times>
   ClassSize: '0x20'
 TriIndices:
   Attributes:
@@ -12393,7 +12393,7 @@ TriMeshCollisionData:
   - Name: Vertices
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct PreviewAssetAttachContainer>
+    Type: TArray<Struct Vector>
   - Name: Indices
     Offset: '0x10'
     Size: '0x10'
@@ -12443,7 +12443,7 @@ URL:
   - Name: Op
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Op>
   - Name: Portal
     Offset: '0x58'
     Size: '0x10'

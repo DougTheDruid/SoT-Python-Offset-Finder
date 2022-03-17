@@ -1,0 +1,878 @@
+{
+  "BP_tavern_frontend_01_a_C": {
+    "Super": "Actor",
+    "FullSize": "0x850",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x480",
+    "Attributes": [
+      {
+        "Name": "trs_chest_01_c_vc",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "trs_chest_01_b_vc",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "trs_chest_01_d_vc",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "trs_chest_01_a_vc",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "shp_rope_coil_03_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "bld_tvn_window_01_b1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "fod_rum_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "ParticleSystem24",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "ParticleSystem23",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "ParticleSystem22",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "cap_skull_candle_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "ParticleSystem21",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "ParticleSystem18",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "ParticleSystem17",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "ParticleSystem15",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "ParticleSystem14",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "ParticleSystem12",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "ParticleSystem11",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "ParticleSystem10",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "ParticleSystem9",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "ParticleSystem8",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "ParticleSystem",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "StaticMesh3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "StaticMesh2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "StaticMesh1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "StaticMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "shp_rope_coil_02_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "bld_enc_shop_pin_board_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4a8"
+      },
+      {
+        "Name": "ParticleSystem6",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      },
+      {
+        "Name": "bld_int_wall_coat_rack_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "gmp_crew_ledger_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "shp_rope_coil_03_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "tls_tankard_01_b4",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "tls_tankard_01_b3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4d8"
+      },
+      {
+        "Name": "cmn_wooden_crate_01_b4",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "gmp_parchment_scroll_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "gmp_parchment_scroll_01_c",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "bld_tvn_rug_01_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f8"
+      },
+      {
+        "Name": "bld_shop_rug_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Name": "bld_enc_shop_rug_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x508"
+      },
+      {
+        "Name": "ParticleSystem5",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x510"
+      },
+      {
+        "Name": "ParticleSystem4",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x518"
+      },
+      {
+        "Name": "ParticleSystem3",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "ParticleSystem2",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x528"
+      },
+      {
+        "Name": "ParticleSystem1",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "cmn_candle_01_c3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "cmn_candle_01_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "cmn_candle_01_e2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x548"
+      },
+      {
+        "Name": "bld_tvn_bar_arches_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x550"
+      },
+      {
+        "Name": "bld_tvn_drapes_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x558"
+      },
+      {
+        "Name": "wld_blackwyche_picture_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x560"
+      },
+      {
+        "Name": "cap_wooden_plaque_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x568"
+      },
+      {
+        "Name": "bld_tvn_bar_top_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x570"
+      },
+      {
+        "Name": "bld_tvn_animal_rug_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x578"
+      },
+      {
+        "Name": "cap_book_stand_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x580"
+      },
+      {
+        "Name": "bld_tvn_bench_01_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x588"
+      },
+      {
+        "Name": "cap_book_stand_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x590"
+      },
+      {
+        "Name": "cmn_wheel_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "tls_tankard_01_b2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5a0"
+      },
+      {
+        "Name": "tls_tankard_02_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "tls_tankard_01_b1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Name": "tls_tankard_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "tls_tankard_02_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "tls_tankard_02_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "shp_kitchen_table_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "gmp_bar_hide_01_a6",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "cmn_candle_01_e1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Name": "cmn_candle_01_c2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      },
+      {
+        "Name": "cmn_candle_01_e",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5f0"
+      },
+      {
+        "Name": "cmn_candle_01_d",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5f8"
+      },
+      {
+        "Name": "cmn_candle_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "cmn_candle_01_c1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "cmn_candle_01_c",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "cmn_candle_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x618"
+      },
+      {
+        "Name": "cmn_candle_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x620"
+      },
+      {
+        "Name": "cmn_stool_01_a4",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Name": "shp_cook_pot_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x630"
+      },
+      {
+        "Name": "shp_rope_coil_03_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x638"
+      },
+      {
+        "Name": "shp_rope_coil_03_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Name": "trs_plate_01_a8",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x648"
+      },
+      {
+        "Name": "trs_plate_01_a7",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x650"
+      },
+      {
+        "Name": "trs_plate_01_a6",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x658"
+      },
+      {
+        "Name": "trs_plate_01_a5",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x660"
+      },
+      {
+        "Name": "trs_plate_01_a4",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x668"
+      },
+      {
+        "Name": "trs_plate_01_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x670"
+      },
+      {
+        "Name": "trs_plate_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x678"
+      },
+      {
+        "Name": "trs_plate_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x680"
+      },
+      {
+        "Name": "trs_plate_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x688"
+      },
+      {
+        "Name": "bld_tvn_ceiling_rose_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x690"
+      },
+      {
+        "Name": "bld_tvn_ceiling_rose_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x698"
+      },
+      {
+        "Name": "bld_tvn_chandelier_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "bld_tvn_chandelier_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a8"
+      },
+      {
+        "Name": "bld_tvn_bar_barrels_01_b2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b0"
+      },
+      {
+        "Name": "bld_tvn_bar_barrels_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b8"
+      },
+      {
+        "Name": "bld_tvn_bar_barrels_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c0"
+      },
+      {
+        "Name": "bld_tvn_bar_barrels_01_b1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c8"
+      },
+      {
+        "Name": "bld_tvn_bar_barrels_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6d0"
+      },
+      {
+        "Name": "bld_tvn_bar_racks_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6d8"
+      },
+      {
+        "Name": "cmn_wooden_crate_01_b3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6e0"
+      },
+      {
+        "Name": "cmn_wooden_crate_01_b2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6e8"
+      },
+      {
+        "Name": "cmn_wooden_crate_01_b1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f0"
+      },
+      {
+        "Name": "cmn_wooden_crate_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f8"
+      },
+      {
+        "Name": "cmn_rowboat_oar_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x700"
+      },
+      {
+        "Name": "cmn_rowboat_oar_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x708"
+      },
+      {
+        "Name": "gmp_bar_hide_01_a4",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x710"
+      },
+      {
+        "Name": "gmp_bar_hide_01_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x718"
+      },
+      {
+        "Name": "gmp_bar_hide_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x720"
+      },
+      {
+        "Name": "gmp_bar_hide_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x728"
+      },
+      {
+        "Name": "gmp_bar_hide_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x730"
+      },
+      {
+        "Name": "cmn_stool_01_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x738"
+      },
+      {
+        "Name": "cmn_stool_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x740"
+      },
+      {
+        "Name": "cmn_stool_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x748"
+      },
+      {
+        "Name": "cmn_stool_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x750"
+      },
+      {
+        "Name": "bld_tvn_round_table_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x758"
+      },
+      {
+        "Name": "bld_tvn_round_table_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x760"
+      },
+      {
+        "Name": "bld_tvn_table_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "bld_tvn_bench_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "bld_tvn_bench_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "cmn_rug_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "cmn_rug_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "cmn_rug_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "bld_tvn_rug_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Name": "bld_tvn_rug_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Name": "bld_tvn_rug_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "bld_tvn_animal_rug_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      },
+      {
+        "Name": "bld_tvn_beam_sail_cloth_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b8"
+      },
+      {
+        "Name": "bld_tvn_beam_sail_cloth_01_c",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c0"
+      },
+      {
+        "Name": "bld_tvn_post_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Name": "bld_tvn_bar_base_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Name": "bld_tvn_post_01_c1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Name": "bld_tvn_bench_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      },
+      {
+        "Name": "shp_rifle_rack_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      },
+      {
+        "Name": "bld_tvn_post_01_c",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f0"
+      },
+      {
+        "Name": "bld_shop_door_02_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Name": "bld_shop_door_02_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x800"
+      },
+      {
+        "Name": "bld_tvn_exterior_door_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x808"
+      },
+      {
+        "Name": "bld_tvn_window_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x810"
+      },
+      {
+        "Name": "bld_tvn_interior_stairs_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x818"
+      },
+      {
+        "Name": "bld_tvn_fireplace_plinth_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x820"
+      },
+      {
+        "Name": "bld_tvn_fireplace_grate_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x828"
+      },
+      {
+        "Name": "bld_tvn_fireplace_rail_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x830"
+      },
+      {
+        "Name": "bld_tvn_fireplace_surround_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x838"
+      },
+      {
+        "Name": "bld_tavern_frontend_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x840"
+      },
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x848"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

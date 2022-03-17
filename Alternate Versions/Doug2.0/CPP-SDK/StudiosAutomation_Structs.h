@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class TestLevelMetadataEntry: public None
+struct TestLevelMetadataEntry
 {
 public:
 	Struct FString                                               Property;                                          // 0x0(0x10)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x10
-class ClientPawnDetails: public None
+struct ClientPawnDetails
 {
 public:
 	TArray<class Pawns*>                                         Pawns;                                             // 0x0(0x10)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x28
-class TextureAuditorGroupProperties: public None
+struct TextureAuditorGroupProperties
 {
 public:
 	byte                                                         TextureGroup;                                      // 0x0(0x1)
@@ -33,16 +33,16 @@ public:
 
 
 // Size 0x20
-class TextureAuditorProperties: public None
+struct TextureAuditorProperties
 {
 public:
 	byte                                                         RequiredMipsSetting;                               // 0x0(0x1)
-	TArray<Byte RequiredMipsSetting>                             AllowedTextureFormats;                             // 0x8(0x10)
+	TArray<Byte AllowedTextureFormats>                           AllowedTextureFormats;                             // 0x8(0x10)
 };
 
 
 // Size 0x38
-class MeshAuditLimits: public None
+struct MeshAuditLimits
 {
 public:
 	TArray<Struct SubstringAuditQueryData>                       SubstringQueries;                                  // 0x0(0x10)
@@ -51,7 +51,7 @@ public:
 
 
 // Size 0x28
-class FolderTotals: public None
+struct FolderTotals
 {
 public:
 	bool                                                         EnforceCollectionMembership;                       // 0x0(0x1)
@@ -61,17 +61,17 @@ public:
 
 
 // Size 0x18
-class SubstringAuditQueryData: public None
+struct SubstringAuditQueryData
 {
 public:
-	TArray<Str None>                                             QueryStringArray;                                  // 0x0(0x10)
+	TArray<Str QueryStringArray>                                 QueryStringArray;                                  // 0x0(0x10)
 	int                                                          SearchSetSize;                                     // 0x10(0x4)
 	int                                                          MemoryLimitForSet;                                 // 0x14(0x4)
 };
 
 
 // Size 0x10
-class AssetAuditConstants: public None
+struct AssetAuditConstants
 {
 public:
 	TArray<Struct AssetAuditConstantEntry>                       AssetAuditConstants;                               // 0x0(0x10)
@@ -79,7 +79,7 @@ public:
 
 
 // Size 0x18
-class AssetAuditConstantEntry: public None
+struct AssetAuditConstantEntry
 {
 public:
 	Struct FString                                               Name;                                              // 0x0(0x10)
@@ -88,7 +88,7 @@ public:
 
 
 // Size 0x34
-class CollectionLimits: public None
+struct CollectionLimits
 {
 public:
 	struct FName                                                 CollectionName;                                    // 0x0(0x8)
@@ -104,7 +104,7 @@ public:
 
 
 // Size 0x4
-class CollectionAnimSequenceLimits: public None
+struct CollectionAnimSequenceLimits
 {
 public:
 	int                                                          MaxMemory;                                         // 0x0(0x4)
@@ -112,14 +112,14 @@ public:
 
 
 // Size 0x8
-class CollectionSkeleMeshLimits: public None
+struct CollectionSkeleMeshLimits
 {
 public:
 };
 
 
 // Size 0x8
-class CollectionMeshLimitsBase: public None
+struct CollectionMeshLimitsBase
 {
 public:
 	int                                                          MaxVerts;                                          // 0x0(0x4)
@@ -128,14 +128,14 @@ public:
 
 
 // Size 0x8
-class CollectionStaticMeshLimits: public None
+struct CollectionStaticMeshLimits
 {
 public:
 };
 
 
 // Size 0x10
-class CollectionTotalsLimits: public None
+struct CollectionTotalsLimits
 {
 public:
 	int                                                          MaxTotalVerts;                                     // 0x0(0x4)
@@ -146,10 +146,10 @@ public:
 
 
 // Size 0x10
-class CollectionLimitsArray: public None
+struct CollectionLimitsArray
 {
 public:
-	TArray<Struct MaterialQualityOverrides>                      CollectionLimits;                                  // 0x0(0x10)
+	TArray<Struct CollectionLimits>                              CollectionLimits;                                  // 0x0(0x10)
 };
 
 

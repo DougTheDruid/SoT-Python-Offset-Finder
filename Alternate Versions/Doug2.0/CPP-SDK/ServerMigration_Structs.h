@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x2
-class ClientSettings: public None
+struct ClientSettings
 {
 public:
 	bool                                                         FailToConnectToServer;                             // 0x0(0x1)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x8
-class ServerSettings: public None
+struct ServerSettings
 {
 public:
 	bool                                                         FailToConnectToServer;                             // 0x0(0x1)
@@ -27,14 +27,14 @@ public:
 
 
 // Size 0x4
-class ServerMigrationCustomMigrationSerialisationStruct: public None
+struct ServerMigrationCustomMigrationSerialisationStruct
 {
 public:
 };
 
 
 // Size 0xc
-class ServerMigrationSerialisationDetailsTestsUStruct: public None
+struct ServerMigrationSerialisationDetailsTestsUStruct
 {
 public:
 	float                                                        FloatWithNoMarkup;                                 // 0x0(0x4)

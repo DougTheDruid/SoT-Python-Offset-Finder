@@ -42,7 +42,7 @@
     "Attributes": [
       {
         "Name": "Descriptions",
-        "Type": "TArray<Text None>",
+        "Type": "TArray<Struct FText>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -69,7 +69,7 @@
     "Attributes": [
       {
         "Name": "TextIndexMappings",
-        "Type": "TArray<Struct OnRep_CurrentClueDestination>",
+        "Type": "TArray<Struct ClueDestinationToTextIndex>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -156,7 +156,7 @@
     "Attributes": [
       {
         "Name": "Descriptions",
-        "Type": "TArray<Struct ClueDestinationDescriptions>",
+        "Type": "TArray<Struct GenderSpecificTextPairings>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -252,7 +252,7 @@
       },
       {
         "Name": "ExtraTextFields",
-        "Type": "TArray<Struct TitleTextLayout>",
+        "Type": "TArray<Struct TextEntryWithLayout>",
         "Size": "0x10",
         "Offset": "0x158"
       }
@@ -428,7 +428,7 @@
       },
       {
         "Name": "ClueRenderData",
-        "Type": "TArray<Struct ShowCluePositionOnMap>",
+        "Type": "TArray<Struct MapTextureRenderData>",
         "Size": "0x10",
         "Offset": "0x108"
       }
@@ -490,7 +490,7 @@
     "Attributes": [
       {
         "Name": "NPCIndexMappings",
-        "Type": "TArray<Struct SpawnLocation>",
+        "Type": "TArray<Struct ExistingNPCToPhasedNPC>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1070,7 +1070,7 @@
       },
       {
         "Name": "SinkIntoSandItems",
-        "Type": "TArray<AssetClass LootItemSinkIntoSandRotationMax>",
+        "Type": "TArray<AssetClass SinkIntoSandItems>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -1115,7 +1115,7 @@
       },
       {
         "Name": "SinkIntoSandItems",
-        "Type": "TArray<Class SpawnTransform>",
+        "Type": "TArray<Class SinkIntoSandItems>",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -1188,7 +1188,7 @@
     "Attributes": [
       {
         "Name": "SkeletonPoses",
-        "Type": "TArray<AssetClass SettingsInterface>",
+        "Type": "TArray<AssetClass SkeletonPoses>",
         "Size": "0x10",
         "Offset": "0x30"
       },

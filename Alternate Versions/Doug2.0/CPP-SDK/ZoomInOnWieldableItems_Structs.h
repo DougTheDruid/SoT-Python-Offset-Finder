@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x48
-class ZoomedInOnWieldableItemActionStateConstructionInfo: public None
+struct ZoomedInOnWieldableItemActionStateConstructionInfo
 {
 public:
 	float                                                        ZoomedInFov;                                       // 0x30(0x4)

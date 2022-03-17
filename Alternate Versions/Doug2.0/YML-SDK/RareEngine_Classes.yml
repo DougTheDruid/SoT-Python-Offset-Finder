@@ -5,7 +5,7 @@ AssetReferencer:
   - Name: AssetsToReference
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Assetclass DidHitchOccurThisFrame>
+    Type: TArray<Assetclass AssetsToReference>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -27,7 +27,7 @@ MemoryUsageVisualiserSettings:
   - Name: VisualiserCategories
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Activate>
+    Type: TArray<Struct MemoryVisualiserCategory>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

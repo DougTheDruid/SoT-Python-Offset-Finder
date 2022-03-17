@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class ClueSite: public None
+struct ClueSite
 {
 public:
 	class                                                        SiteType;                                          // 0x0(0x8)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x18
-class LandClueCreationChoice: public None
+struct LandClueCreationChoice
 {
 public:
 	class                                                        ClueSiteType;                                      // 0x0(0x8)
@@ -27,7 +27,7 @@ public:
 
 
 // Size 0x20
-class SeaClueCreationChoice: public None
+struct SeaClueCreationChoice
 {
 public:
 	class                                                        SiteType;                                          // 0x0(0x8)
@@ -36,16 +36,16 @@ public:
 
 
 // Size 0x18
-class WeightedClueDestinationDescriptor: public None
+struct WeightedClueDestinationDescriptor
 {
 public:
 	class                                                        DestinationType;                                   // 0x0(0x8)
-	TArray<Float >                                               DifficultyWeightings;                              // 0x8(0x10)
+	TArray<Float DifficultyWeightings>                           DifficultyWeightings;                              // 0x8(0x10)
 };
 
 
 // Size 0x18
-class ClueSiteTypeSupportedDescribedByEntry: public None
+struct ClueSiteTypeSupportedDescribedByEntry
 {
 public:
 	class                                                        SiteType;                                          // 0x0(0x8)
@@ -54,16 +54,16 @@ public:
 
 
 // Size 0x18
-class WeightedClueDescriptor: public None
+struct WeightedClueDescriptor
 {
 public:
 	class                                                        Descriptor;                                        // 0x0(0x8)
-	TArray<Float >                                               DifficultyWeightings;                              // 0x8(0x10)
+	TArray<Float DifficultyWeightings>                           DifficultyWeightings;                              // 0x8(0x10)
 };
 
 
 // Size 0x10
-class RestrictedClueType: public None
+struct RestrictedClueType
 {
 public:
 	class                                                        Type;                                              // 0x0(0x8)
@@ -72,7 +72,7 @@ public:
 
 
 // Size 0x10
-class ClueSiteLootRestriction: public None
+struct ClueSiteLootRestriction
 {
 public:
 	class                                                        SiteType;                                          // 0x0(0x8)
@@ -81,7 +81,7 @@ public:
 
 
 // Size 0x28
-class DebrisToRangeDist: public None
+struct DebrisToRangeDist
 {
 public:
 	Struct WeightedProbabilityRange                              NumberOfDebrisItemsToSpawn;                        // 0x0(0x20)
@@ -90,7 +90,7 @@ public:
 
 
 // Size 0x28
-class LootToRangeDist: public None
+struct LootToRangeDist
 {
 public:
 	Struct WeightedProbabilityRange                              NumberOfLootItemsToSpawn;                          // 0x0(0x20)
@@ -99,21 +99,21 @@ public:
 
 
 // Size 0x20
-class QuestVariableClueSiteArray: public None
+struct QuestVariableClueSiteArray
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableClueSite: public None
+struct QuestVariableClueSite
 {
 public:
 };
 
 
 // Size 0x10
-class ClueSiteLootHistory: public None
+struct ClueSiteLootHistory
 {
 public:
 	TArray<Struct LootSpawnedAtClueSite>                         History;                                           // 0x0(0x10)
@@ -121,7 +121,7 @@ public:
 
 
 // Size 0x18
-class LootSpawnedAtClueSite: public None
+struct LootSpawnedAtClueSite
 {
 public:
 	class                                                        SiteType;                                          // 0x0(0x8)
@@ -131,14 +131,14 @@ public:
 
 
 // Size 0x20
-class QuestVariableClueDescriptor: public None
+struct QuestVariableClueDescriptor
 {
 public:
 };
 
 
 // Size 0x28
-class WeightedDebris: public None
+struct WeightedDebris
 {
 public:
 	float                                                        Weight;                                            // 0x20(0x4)
@@ -146,7 +146,7 @@ public:
 
 
 // Size 0x20
-class EventClueObtained: public None
+struct EventClueObtained
 {
 public:
 	Class ClueDescriptor*                                        ObtainedClue;                                      // 0x0(0x8)

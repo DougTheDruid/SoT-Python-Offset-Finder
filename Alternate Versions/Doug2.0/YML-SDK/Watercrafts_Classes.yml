@@ -35,7 +35,7 @@ ItemProxyWatercraftTrackerComponentDataAsset:
   - Name: WatercraftTypes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class ParentRowboat>
+    Type: TArray<Class WatercraftTypes>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -173,7 +173,7 @@ Rowboat:
   - Name: RelativeUnderCoverProbeRoots
     Offset: '0x868'
     Size: '0x10'
-    Type: TArray<Struct UnderCoverHeight>
+    Type: TArray<Struct Vector>
   - Name: TrackedActorType
     Offset: '0x878'
     Size: '0x1'
@@ -367,7 +367,7 @@ RowboatSpawnParamsDataAsset:
   - Name: RowboatTypes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class TargetOars>
+    Type: TArray<Class RowboatTypes>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -419,7 +419,7 @@ ScrapeableDamageDataAsset:
   - Name: DamageSpeedParams
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ScrapeDamagerType>
+    Type: TArray<Struct ScrapeableDamageSpeedEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

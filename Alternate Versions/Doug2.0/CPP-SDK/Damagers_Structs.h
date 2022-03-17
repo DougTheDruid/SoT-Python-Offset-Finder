@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class ShockwaveDamagerShipDamage: public None
+struct ShockwaveDamagerShipDamage
 {
 public:
 	float                                                        MaxDistanceInMetres;                               // 0x0(0x4)

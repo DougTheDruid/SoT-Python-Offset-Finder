@@ -43,13 +43,13 @@
       },
       {
         "Name": "ExpectedVictimCompanyName",
-        "Type": "TArray<Name 2\u00c0\u00c3\u00ccH\u008b\u00c4AVH\u0081\u00ec\u0010\u0003>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x188"
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct Prompts>",
+        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
         "Offset": "0x198"
       },

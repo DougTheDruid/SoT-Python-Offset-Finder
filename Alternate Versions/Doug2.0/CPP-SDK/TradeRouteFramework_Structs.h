@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class QuestVariableTradeRouteData: public None
+struct QuestVariableTradeRouteData
 {
 public:
 };
 
 
 // Size 0x20
-class TradeRouteMapping: public None
+struct TradeRouteMapping
 {
 public:
 	Struct IslandSelectionType                                   StartIsland;                                       // 0x0(0x8)

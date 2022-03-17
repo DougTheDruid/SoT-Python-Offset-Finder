@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class WwiseEmitter: public None
+struct WwiseEmitter
 {
 public:
 };
 
 
 // Size 0x28
-class WwiseEmitterCreationParams: public None
+struct WwiseEmitterCreationParams
 {
 public:
 	Class WwiseEvent*                                            Event;                                             // 0x0(0x8)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x10
-class WWiseEmitterCreationSwitchSetting: public None
+struct WWiseEmitterCreationSwitchSetting
 {
 public:
 	struct FName                                                 SwitchGroup;                                       // 0x0(0x8)
@@ -33,7 +33,7 @@ public:
 
 
 // Size 0xc
-class WWiseEmitterCreationRTPCSetting: public None
+struct WWiseEmitterCreationRTPCSetting
 {
 public:
 	struct FName                                                 RTPCName;                                          // 0x0(0x8)
@@ -42,7 +42,7 @@ public:
 
 
 // Size 0x20
-class EventToComponentMapping: public None
+struct EventToComponentMapping
 {
 public:
 	Class WwiseEvent*                                            PlayEvent;                                         // 0x0(0x8)
@@ -52,7 +52,7 @@ public:
 
 
 // Size 0x20
-class StaticMeshAudioAssociation: public None
+struct StaticMeshAudioAssociation
 {
 public:
 	TArray<Struct StaticMeshWwiseEmitterData>                    PlaybackDataArray;                                 // 0x0(0x10)
@@ -61,7 +61,7 @@ public:
 
 
 // Size 0x38
-class StaticMeshWwiseEmitterData: public None
+struct StaticMeshWwiseEmitterData
 {
 public:
 	Class WwiseObjectPoolWrapper*                                Pool;                                              // 0x0(0x8)
@@ -72,7 +72,7 @@ public:
 
 
 // Size 0x68
-class StaticMeshComponentAudioAssociation: public None
+struct StaticMeshComponentAudioAssociation
 {
 public:
 	Struct StaticMeshWwiseEmitterData                            PlaybackData;                                      // 0x0(0x38)

@@ -302,7 +302,7 @@
     "Attributes": [
       {
         "Name": "StringAssetClassPairs",
-        "Type": "TArray<Struct ClosestActorToPoint>",
+        "Type": "TArray<Struct StringAssetClassPair>",
         "Size": "0x10",
         "Offset": "0x28"
       }

@@ -95,19 +95,19 @@ AIShipContextDescGenerationSharedParams:
   - Name: EncounterTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte SharedParams>
+    Type: TArray<Byte EncounterTypes>
   - Name: SkeletonForms
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct EncounterTypes>
+    Type: TArray<Struct WeightedAIShipCrewFormType>
   - Name: SkeletonAmmoTypes
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct SkeletonForms>
+    Type: TArray<Struct WeightedAIShipCrewAmmoType>
   - Name: SailColours
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct SkeletonAmmoTypes>
+    Type: TArray<Struct Color>
   - Name: Captains
     Offset: '0x40'
     Size: '0x10'
@@ -115,7 +115,7 @@ AIShipContextDescGenerationSharedParams:
   - Name: CaptainGenders
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Class Captains>
+    Type: TArray<Class CaptainGenders>
   ClassSize: '0x60'
 AIShipContextDescGenerationShipSpecificParams:
   Attributes:
@@ -134,7 +134,7 @@ AIShipContextDescGenerationShipSpecificParams:
   - Name: SpawnerTemplates
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct ShipGenerationParams>
+    Type: TArray<Struct AIShipEncounterParamsSpawnerData>
   ClassSize: '0x30'
 AIShipCrewAmmoType:
   Attributes:
@@ -239,7 +239,7 @@ AIShipEncounterBattleGenerationParams:
   - Name: WaveConfigurations
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct ShipSizeLimits>
+    Type: TArray<Struct AIShipEncounterWaveDesc>
   ClassSize: '0x60'
 AIShipEncounterCompleteNetEvent:
   Attributes:
@@ -356,7 +356,7 @@ AIShipEncounterWaveDesc:
   - Name: ShipSizes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class BattleGenerationParams>
+    Type: TArray<Class ShipSizes>
   ClassSize: '0x10'
 AIShipEncounterZoneEnteredNetworkEvent:
   Attributes:
@@ -397,7 +397,7 @@ AIShipGenerationParams:
   - Name: SkeletonAmmoTypeOverrides
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct SkillsetOverrides>
+    Type: TArray<Struct WeightedAIShipCrewAmmoType>
   - Name: DamageParams
     Offset: '0x30'
     Size: '0x14'

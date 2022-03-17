@@ -21,7 +21,7 @@ BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -47,7 +47,7 @@ BP_PromptActor_EmissaryDiscoveredCargoRunCrate_RB_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -73,7 +73,7 @@ BP_PromptActor_EmissaryDiscoveredLoot_AF_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -99,7 +99,7 @@ BP_PromptActor_EmissaryDiscoveredLoot_GH_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -125,7 +125,7 @@ BP_PromptActor_EmissaryDiscoveredLoot_MA_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -151,7 +151,7 @@ BP_PromptActor_EmissaryDiscoveredLoot_OOS_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'
@@ -177,7 +177,7 @@ BP_PromptActor_EmissaryDiscoveredLoot_RB_C:
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x30'
   FullSize: '0x438'
   InheritedSize: '0x408'

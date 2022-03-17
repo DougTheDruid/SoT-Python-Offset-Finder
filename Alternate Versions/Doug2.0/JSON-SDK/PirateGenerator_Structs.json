@@ -57,7 +57,7 @@
       },
       {
         "Name": "BlendShapes",
-        "Type": "TArray<Struct BodyShapeCoordinate>",
+        "Type": "TArray<Struct IPGBlendShape>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -178,7 +178,7 @@
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<Struct Meshes>",
+        "Type": "TArray<Struct IPGScalarParameter>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -230,7 +230,7 @@
       },
       {
         "Name": "Slots",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Slots>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -289,7 +289,7 @@
       },
       {
         "Name": "EnumVectorTest",
-        "Type": "TArray<Byte StrVectorTest>",
+        "Type": "TArray<Byte EnumVectorTest>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -346,7 +346,7 @@
     "Attributes": [
       {
         "Name": "Male",
-        "Type": "TArray<Struct FemaleBaseShape>",
+        "Type": "TArray<Struct IPGBodyShape>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -627,7 +627,7 @@
     "Attributes": [
       {
         "Name": "PartNames",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -639,7 +639,7 @@
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<Struct FreeSlots>",
+        "Type": "TArray<Struct IPGScalarParameter>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -668,7 +668,7 @@
       },
       {
         "Name": "CompatiblePirateTypes",
-        "Type": "TArray<Byte Name>",
+        "Type": "TArray<Byte CompatiblePirateTypes>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -698,7 +698,7 @@
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<Struct Parts>",
+        "Type": "TArray<Struct IPGScalarParameter>",
         "Size": "0x10",
         "Offset": "0x58"
       },
@@ -779,7 +779,7 @@
       },
       {
         "Name": "MeshPatchAssetWeights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float MeshPatchAssetWeights>",
         "Size": "0x10",
         "Offset": "0x20"
       }

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class EmissaryFlagMeshReferences: public None
+struct EmissaryFlagMeshReferences
 {
 public:
 	Struct StringAssetReference                                  BackOfShipEmissaryFlagMeshAssetReference;          // 0x0(0x10)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x28
-class ParticleVisualisation: public None
+struct ParticleVisualisation
 {
 public:
 	Struct ActorComponentSelector                                TargetParticles;                                   // 0x0(0x10)
@@ -28,7 +28,7 @@ public:
 
 
 // Size 0x28
-class LightVisualisation: public None
+struct LightVisualisation
 {
 public:
 	Struct ActorComponentSelector                                TargetLight;                                       // 0x0(0x10)
@@ -40,7 +40,7 @@ public:
 
 
 // Size 0x30
-class MaterialVisualisation: public None
+struct MaterialVisualisation
 {
 public:
 	Struct ActorComponentSelector                                TargetMesh;                                        // 0x0(0x10)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0x80
-class EmissaryLevelEntry: public None
+struct EmissaryLevelEntry
 {
 public:
 	class                                                        Company;                                           // 0x0(0x8)
@@ -63,36 +63,36 @@ public:
 	Class DataAsset*                                             EmissarySunkPopUpToastData;                        // 0x20(0x8)
 	Struct EmissaryCompanyCosmetics                              CompanyCosmetics;                                  // 0x28(0x20)
 	Struct PlayerStat                                            TimeSpentAtMaxRankStat;                            // 0x48(0x4)
-	TArray<Struct TimeSpentAtMaxRankStat>                        StatsToFireOnFullEmissaryClothing;                 // 0x50(0x10)
-	TArray<Struct StatsToFireOnFullEmissaryClothing>             StatsToFireOnFullEmissaryShipCustomizations;       // 0x60(0x10)
-	TArray<Struct StatsToFireOnFullEmissaryShipCustomizations>   StatsToFireOnFullShipCustomizationsAndClothing;    // 0x70(0x10)
+	TArray<Struct PlayerStat>                                    StatsToFireOnFullEmissaryClothing;                 // 0x50(0x10)
+	TArray<Struct PlayerStat>                                    StatsToFireOnFullEmissaryShipCustomizations;       // 0x60(0x10)
+	TArray<Struct PlayerStat>                                    StatsToFireOnFullShipCustomizationsAndClothing;    // 0x70(0x10)
 };
 
 
 // Size 0x20
-class EmissaryCompanyCosmetics: public None
+struct EmissaryCompanyCosmetics
 {
 public:
-	TArray<Class EmissarySunkPopUpToastData>                     CompanyCostumeCosmetics;                           // 0x0(0x10)
-	TArray<Class CompanyCostumeCosmetics>                        CompanyShipCosmetics;                              // 0x10(0x10)
+	TArray<Class CompanyCostumeCosmetics>                        CompanyCostumeCosmetics;                           // 0x0(0x10)
+	TArray<Class CompanyShipCosmetics>                           CompanyShipCosmetics;                              // 0x10(0x10)
 };
 
 
 // Size 0x80
-class EmissaryLevelData: public None
+struct EmissaryLevelData
 {
 public:
 	int                                                          LevelTarget;                                       // 0x0(0x4)
 	Struct EmissaryFlagMeshReferences                            EmissaryFlagMeshAssetReferences;                   // 0x8(0x20)
 	Struct RewardId                                              EmissaryDeactivationReward;                        // 0x48(0x8)
-	TArray<Struct EmissaryDeactivationReward>                    StatsToFireOnEmissaryLevelReached;                 // 0x50(0x10)
+	TArray<Struct PlayerStat>                                    StatsToFireOnEmissaryLevelReached;                 // 0x50(0x10)
 	Struct StringAssetReference                                  TreasureSoldNotificationFlag;                      // 0x60(0x10)
 	Struct StringAssetReference                                  EmissaryFlagTextureReference;                      // 0x70(0x10)
 };
 
 
 // Size 0x8
-class EmissaryPointBoostMultipliers: public None
+struct EmissaryPointBoostMultipliers
 {
 public:
 	float                                                        PlayerWearningCompanyCostume;                      // 0x0(0x4)
@@ -101,7 +101,7 @@ public:
 
 
 // Size 0x4
-class EmissaryLevelStatusStatInfo: public None
+struct EmissaryLevelStatusStatInfo
 {
 public:
 	Struct PlayerStat                                            StatToFire;                                        // 0x0(0x4)
@@ -109,14 +109,14 @@ public:
 
 
 // Size 0x8
-class EmissaryPointsBoostCriteria: public None
+struct EmissaryPointsBoostCriteria
 {
 public:
 };
 
 
 // Size 0x18
-class TrackedPlayerKillEntry: public None
+struct TrackedPlayerKillEntry
 {
 public:
 	Struct FString                                               KilledPlayer;                                      // 0x0(0x10)
@@ -126,7 +126,7 @@ public:
 
 
 // Size 0x28
-class EmissaryCompanyCampaignSettings: public None
+struct EmissaryCompanyCampaignSettings
 {
 public:
 	class                                                        Company;                                           // 0x0(0x8)
@@ -136,7 +136,7 @@ public:
 
 
 // Size 0x18
-class EmissaryCompanyCampaignGameEvent: public None
+struct EmissaryCompanyCampaignGameEvent
 {
 public:
 	class                                                        EventType;                                         // 0x0(0x8)
@@ -145,7 +145,7 @@ public:
 
 
 // Size 0xc
-class EmissaryCompanyCampaignScale: public None
+struct EmissaryCompanyCampaignScale
 {
 public:
 	struct FName                                                 Campaign;                                          // 0x0(0x8)
@@ -154,16 +154,16 @@ public:
 
 
 // Size 0x18
-class EmissaryCompanyCampaignKillPlayer: public None
+struct EmissaryCompanyCampaignKillPlayer
 {
 public:
 	class                                                        Company;                                           // 0x0(0x8)
-	TArray<Struct Company>                                       Scales;                                            // 0x8(0x10)
+	TArray<Struct EmissaryCompanyCampaignScale>                  Scales;                                            // 0x8(0x10)
 };
 
 
 // Size 0x80
-class EmissaryRewardEntry: public None
+struct EmissaryRewardEntry
 {
 public:
 	class                                                        Company;                                           // 0x0(0x8)
@@ -172,11 +172,11 @@ public:
 
 
 // Size 0x78
-class EmissaryActionRewardData: public None
+struct EmissaryActionRewardData
 {
 public:
-	TArray<Struct Company>                                       OwnershipChangedRewards;                           // 0x0(0x10)
-	TArray<Struct OwnershipChangedRewards>                       PlacedOnShipRewards;                               // 0x10(0x10)
+	TArray<Struct EmissaryEventAward>                            OwnershipChangedRewards;                           // 0x0(0x10)
+	TArray<Struct EmissaryEventAward>                            PlacedOnShipRewards;                               // 0x10(0x10)
 	Struct EmissaryKillPlayerReward                              KillPlayerReward;                                  // 0x20(0x28)
 	TArray<Struct EmissaryGameEventsReward>                      GameEventsRewards;                                 // 0x48(0x10)
 	TArray<Struct EmissaryEventAward>                            HandinRewards;                                     // 0x58(0x10)
@@ -185,7 +185,7 @@ public:
 
 
 // Size 0x8
-class EmissaryCompanyActionReward: public None
+struct EmissaryCompanyActionReward
 {
 public:
 	byte                                                         CompanyActionType;                                 // 0x0(0x1)
@@ -194,7 +194,7 @@ public:
 
 
 // Size 0x8
-class EmissaryEventAward: public None
+struct EmissaryEventAward
 {
 public:
 	bool                                                         FirstTimeOnly;                                     // 0x0(0x1)
@@ -205,7 +205,7 @@ public:
 
 
 // Size 0x10
-class EmissaryGameEventsReward: public None
+struct EmissaryGameEventsReward
 {
 public:
 	class                                                        FinishedEventType;                                 // 0x0(0x8)
@@ -214,17 +214,17 @@ public:
 
 
 // Size 0x28
-class EmissaryKillPlayerReward: public None
+struct EmissaryKillPlayerReward
 {
 public:
 	int                                                          EmissaryLevelIncrease;                             // 0x0(0x4)
 	TArray<Struct EmissaryKillScaleFactor>                       EmissaryLevelKillCountScaleFactors;                // 0x8(0x10)
-	TArray<Class EmissaryLevelKillCountScaleFactors>             ValidEmissariesToKill;                             // 0x18(0x10)
+	TArray<Class ValidEmissariesToKill>                          ValidEmissariesToKill;                             // 0x18(0x10)
 };
 
 
 // Size 0x8
-class EmissaryKillScaleFactor: public None
+struct EmissaryKillScaleFactor
 {
 public:
 	int                                                          KillCount;                                         // 0x0(0x4)
@@ -233,7 +233,7 @@ public:
 
 
 // Size 0x8
-class EmissaryVoteRemovedEvent: public None
+struct EmissaryVoteRemovedEvent
 {
 public:
 	struct FName                                                 Company;                                           // 0x0(0x8)
@@ -241,7 +241,7 @@ public:
 
 
 // Size 0x8
-class EmissaryVoteAddedEvent: public None
+struct EmissaryVoteAddedEvent
 {
 public:
 	struct FName                                                 Company;                                           // 0x0(0x8)
@@ -249,7 +249,7 @@ public:
 
 
 // Size 0x20
-class CrewMemberVotes: public None
+struct CrewMemberVotes
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
@@ -258,7 +258,7 @@ public:
 
 
 // Size 0x18
-class PerCompanyVotes: public None
+struct PerCompanyVotes
 {
 public:
 	TArray<class MemberVotes*>                                   MemberVotes;                                       // 0x0(0x10)
@@ -267,7 +267,7 @@ public:
 
 
 // Size 0x4
-class ChaliceStatuePhaseUpdate: public None
+struct ChaliceStatuePhaseUpdate
 {
 public:
 	int                                                          NewLevel;                                          // 0x0(0x4)
@@ -275,7 +275,7 @@ public:
 
 
 // Size 0x18
-class EmissaryEncounteredSkellyFortNetworkEvent: public None
+struct EmissaryEncounteredSkellyFortNetworkEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
@@ -283,7 +283,7 @@ public:
 
 
 // Size 0x8
-class EmissaryEncounteredAIShipEvent: public None
+struct EmissaryEncounteredAIShipEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x0(0x8)
@@ -291,7 +291,7 @@ public:
 
 
 // Size 0x8
-class EmissaryEncounteredTinySharkEvent: public None
+struct EmissaryEncounteredTinySharkEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x0(0x8)
@@ -299,7 +299,7 @@ public:
 
 
 // Size 0x8
-class EmissaryEncounteredKrakenEvent: public None
+struct EmissaryEncounteredKrakenEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x0(0x8)
@@ -307,7 +307,7 @@ public:
 
 
 // Size 0x10
-class EmissaryEntitlementPurchasedEvent: public None
+struct EmissaryEntitlementPurchasedEvent
 {
 public:
 	Struct Guid                                                  OfferId;                                           // 0x0(0x10)
@@ -315,7 +315,7 @@ public:
 
 
 // Size 0xc
-class EmissaryLevelRankChange: public None
+struct EmissaryLevelRankChange
 {
 public:
 	int                                                          NewLevel;                                          // 0x0(0x4)
@@ -324,7 +324,7 @@ public:
 
 
 // Size 0x8
-class EmissaryActivated: public None
+struct EmissaryActivated
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x0(0x8)
@@ -332,7 +332,7 @@ public:
 
 
 // Size 0x20
-class EmissaryKilledAnotherEmissaryNetworkEvent: public None
+struct EmissaryKilledAnotherEmissaryNetworkEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
@@ -341,7 +341,7 @@ public:
 
 
 // Size 0x18
-class EmissarySoldLootNetworkEvent: public None
+struct EmissarySoldLootNetworkEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
@@ -349,7 +349,7 @@ public:
 
 
 // Size 0x18
-class EmissaryStoleLootNetworkEvent: public None
+struct EmissaryStoleLootNetworkEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
@@ -357,7 +357,7 @@ public:
 
 
 // Size 0x18
-class EmissaryDiscoveredCargoRunCrateNetworkEvent: public None
+struct EmissaryDiscoveredCargoRunCrateNetworkEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
@@ -365,7 +365,7 @@ public:
 
 
 // Size 0x18
-class EmissaryDiscoveredLootNetworkEvent: public None
+struct EmissaryDiscoveredLootNetworkEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
@@ -373,7 +373,7 @@ public:
 
 
 // Size 0x18
-class EmissarySecuredLootOnShipNetworkEvent: public None
+struct EmissarySecuredLootOnShipNetworkEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
@@ -381,7 +381,7 @@ public:
 
 
 // Size 0x20
-class EmissarySunkNetworkEvent: public None
+struct EmissarySunkNetworkEvent
 {
 public:
 	Class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
@@ -390,7 +390,7 @@ public:
 
 
 // Size 0x18
-class EmissaryMaxLevelReachedNetworkEvent: public None
+struct EmissaryMaxLevelReachedNetworkEvent
 {
 public:
 	Class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
@@ -398,14 +398,14 @@ public:
 
 
 // Size 0x10
-class EmissaryDeactivatedNetworkEvent: public None
+struct EmissaryDeactivatedNetworkEvent
 {
 public:
 };
 
 
 // Size 0xc
-class EmissaryStateUpdateEvent: public None
+struct EmissaryStateUpdateEvent
 {
 public:
 	float                                                        CurrentRepTotal;                                   // 0x0(0x4)
@@ -414,7 +414,7 @@ public:
 
 
 // Size 0x20
-class EmissaryProgressUpdatedNetworkEvent: public None
+struct EmissaryProgressUpdatedNetworkEvent
 {
 public:
 	float                                                        OldRepTotal;                                       // 0x10(0x4)
@@ -424,7 +424,7 @@ public:
 
 
 // Size 0x14
-class EmissaryLevelProgressUpdatedEvent: public None
+struct EmissaryLevelProgressUpdatedEvent
 {
 public:
 	float                                                        LevelProgress;                                     // 0x0(0x4)
@@ -433,14 +433,14 @@ public:
 
 
 // Size 0x1
-class ActivateEmissaryMaxRankQuestForSession: public None
+struct ActivateEmissaryMaxRankQuestForSession
 {
 public:
 };
 
 
 // Size 0x30
-class UpdateEmissaryValueForCompany: public None
+struct UpdateEmissaryValueForCompany
 {
 public:
 	Struct Guid                                                  SessionId;                                         // 0x0(0x10)
@@ -452,7 +452,7 @@ public:
 
 
 // Size 0x28
-class ReactivateEmissaryForMigratedCrew: public None
+struct ReactivateEmissaryForMigratedCrew
 {
 public:
 	Struct Guid                                                  SessionId;                                         // 0x0(0x10)
@@ -462,7 +462,7 @@ public:
 
 
 // Size 0x30
-class DeactivateEmissaryForCrew: public None
+struct DeactivateEmissaryForCrew
 {
 public:
 	Struct Guid                                                  SessionId;                                         // 0x0(0x10)
@@ -474,7 +474,7 @@ public:
 
 
 // Size 0x28
-class ActivateEmissaryForCrew: public None
+struct ActivateEmissaryForCrew
 {
 public:
 	Struct Guid                                                  SessionId;                                         // 0x0(0x10)
@@ -484,7 +484,7 @@ public:
 
 
 // Size 0x1c
-class EmissaryLevelChanged: public None
+struct EmissaryLevelChanged
 {
 public:
 	int                                                          NewLevel;                                          // 0x0(0x4)
@@ -494,21 +494,21 @@ public:
 
 
 // Size 0x1
-class EmissaryLevelResetProgress: public None
+struct EmissaryLevelResetProgress
 {
 public:
 };
 
 
 // Size 0x1
-class PlayerRemovedFromEmissaryCrew: public None
+struct PlayerRemovedFromEmissaryCrew
 {
 public:
 };
 
 
 // Size 0x10
-class PlayerAddedToEmissaryCrew: public None
+struct PlayerAddedToEmissaryCrew
 {
 public:
 	int                                                          EmissaryLevel;                                     // 0x0(0x4)
@@ -518,7 +518,7 @@ public:
 
 
 // Size 0x2c
-class EmissaryRoleplayActionTelemetryEvent: public None
+struct EmissaryRoleplayActionTelemetryEvent
 {
 public:
 	Struct Guid                                                  EmissarySessionId;                                 // 0x0(0x10)
@@ -532,7 +532,7 @@ public:
 
 
 // Size 0x1c
-class EmissarySessionEndTelemetryEvent: public None
+struct EmissarySessionEndTelemetryEvent
 {
 public:
 	Struct Guid                                                  EmissarySessionId;                                 // 0x0(0x10)
@@ -542,7 +542,7 @@ public:
 
 
 // Size 0x1c
-class EmissarySessionStartTelemetryEvent: public None
+struct EmissarySessionStartTelemetryEvent
 {
 public:
 	Struct Guid                                                  EmissarySessionId;                                 // 0x0(0x10)
@@ -552,7 +552,7 @@ public:
 
 
 // Size 0x28
-class VoteAddedNetworkEvent: public None
+struct VoteAddedNetworkEvent
 {
 public:
 	struct FName                                                 CompanyId;                                         // 0x10(0x8)
@@ -561,7 +561,7 @@ public:
 
 
 // Size 0x28
-class VoteRemovedNetworkEvent: public None
+struct VoteRemovedNetworkEvent
 {
 public:
 	struct FName                                                 CompanyId;                                         // 0x10(0x8)

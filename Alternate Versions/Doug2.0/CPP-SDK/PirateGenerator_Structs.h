@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x14
-class IPGBlendShape: public None
+struct IPGBlendShape
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x80
-class PirateDescription: public None
+struct PirateDescription
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
@@ -25,7 +25,7 @@ public:
 	byte                                                         Gender;                                            // 0x8(0x1)
 	byte                                                         Ethnicity;                                         // 0x9(0x1)
 	Struct RadialCoordinate                                      BodyShapeCoordinate;                               // 0xc(0x8)
-	TArray<Struct BodyShapeCoordinate>                           BlendShapes;                                       // 0x18(0x10)
+	TArray<Struct IPGBlendShape>                                 BlendShapes;                                       // 0x18(0x10)
 	TArray<Struct IPGDynamicSlider>                              DynamicSliders;                                    // 0x28(0x10)
 	int                                                          Seed;                                              // 0x38(0x4)
 	TArray<Struct FName>                                         Items;                                             // 0x40(0x10)
@@ -36,7 +36,7 @@ public:
 
 
 // Size 0xc
-class IPGScalarParameter: public None
+struct IPGScalarParameter
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -45,7 +45,7 @@ public:
 
 
 // Size 0x8
-class IPGDynamicSlider: public None
+struct IPGDynamicSlider
 {
 public:
 	int                                                          AffectedPriority;                                  // 0x0(0x4)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0x8
-class RadialCoordinate: public None
+struct RadialCoordinate
 {
 public:
 	float                                                        NormalizedAngle;                                   // 0x0(0x4)
@@ -63,7 +63,7 @@ public:
 
 
 // Size 0xc
-class WardrobeOutfitCategoryBias: public None
+struct WardrobeOutfitCategoryBias
 {
 public:
 	struct FName                                                 CategoryName;                                      // 0x0(0x8)
@@ -72,17 +72,17 @@ public:
 
 
 // Size 0x30
-class WardrobeOutfitResult: public None
+struct WardrobeOutfitResult
 {
 public:
 	TArray<class Meshes*>                                        Meshes;                                            // 0x0(0x10)
-	TArray<Struct Meshes>                                        ScalarParameters;                                  // 0x10(0x10)
+	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x10(0x10)
 	TArray<Struct FName>                                         MaterialReferences;                                // 0x20(0x10)
 };
 
 
 // Size 0x10
-class ClothingCreatorSlotItemConfig: public None
+struct ClothingCreatorSlotItemConfig
 {
 public:
 	TArray<Struct ClothingCreatorSlotItem>                       Items;                                             // 0x0(0x10)
@@ -90,19 +90,19 @@ public:
 
 
 // Size 0x50
-class ClothingCreatorSlotItem: public None
+struct ClothingCreatorSlotItem
 {
 public:
 	Struct FString                                               Name;                                              // 0x0(0x10)
 	Struct FString                                               DisplayName;                                       // 0x10(0x10)
 	Struct FString                                               Description;                                       // 0x20(0x10)
 	Struct FString                                               Category;                                          // 0x30(0x10)
-	TArray<Str >                                                 Slots;                                             // 0x40(0x10)
+	TArray<Str Slots>                                            Slots;                                             // 0x40(0x10)
 };
 
 
 // Size 0x60
-class IPGTestClass: public None
+struct IPGTestClass
 {
 public:
 	struct FName                                                 StringTest;                                        // 0x0(0x8)
@@ -113,12 +113,12 @@ public:
 	Struct IPGTestSimpleType                                     ObjectNoneTest;                                    // 0x20(0xc)
 	TArray<Struct IPGTestSimpleType>                             VectorTest;                                        // 0x30(0x10)
 	TArray<Struct FName>                                         StrVectorTest;                                     // 0x40(0x10)
-	TArray<Byte StrVectorTest>                                   EnumVectorTest;                                    // 0x50(0x10)
+	TArray<Byte EnumVectorTest>                                  EnumVectorTest;                                    // 0x50(0x10)
 };
 
 
 // Size 0xc
-class IPGTestSimpleType: public None
+struct IPGTestSimpleType
 {
 public:
 	struct FName                                                 StringTest;                                        // 0x0(0x8)
@@ -127,7 +127,7 @@ public:
 
 
 // Size 0x78
-class Config: public None
+struct Config
 {
 public:
 	Struct IPGData                                               IPG;                                               // 0x0(0x48)
@@ -138,16 +138,16 @@ public:
 
 
 // Size 0x20
-class IPGBodyShapes: public None
+struct IPGBodyShapes
 {
 public:
-	TArray<Struct FemaleBaseShape>                               Male;                                              // 0x0(0x10)
+	TArray<Struct IPGBodyShape>                                  Male;                                              // 0x0(0x10)
 	TArray<Struct IPGBodyShape>                                  Female;                                            // 0x10(0x10)
 };
 
 
 // Size 0xc
-class IPGBodyShape: public None
+struct IPGBodyShape
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -156,7 +156,7 @@ public:
 
 
 // Size 0x48
-class IPGData: public None
+struct IPGData
 {
 public:
 	TArray<Struct IPGDynamicSliderName>                          DynamicSliderNames;                                // 0x0(0x10)
@@ -168,7 +168,7 @@ public:
 
 
 // Size 0x18
-class IPGSetsData: public None
+struct IPGSetsData
 {
 public:
 	int                                                          Version;                                           // 0x0(0x4)
@@ -177,7 +177,7 @@ public:
 
 
 // Size 0x20
-class IPGSetData: public None
+struct IPGSetData
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -189,7 +189,7 @@ public:
 
 
 // Size 0x18
-class IPGBlendNode: public None
+struct IPGBlendNode
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -198,7 +198,7 @@ public:
 
 
 // Size 0x28
-class IPGBlendRange: public None
+struct IPGBlendRange
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -210,7 +210,7 @@ public:
 
 
 // Size 0x8
-class IPGCompatibleSet: public None
+struct IPGCompatibleSet
 {
 public:
 	struct FName                                                 SetName;                                           // 0x0(0x8)
@@ -218,7 +218,7 @@ public:
 
 
 // Size 0x8
-class IPGSetGroup: public None
+struct IPGSetGroup
 {
 public:
 	int                                                          Priority;                                          // 0x0(0x4)
@@ -227,7 +227,7 @@ public:
 
 
 // Size 0x10
-class IPGBlendingMethod: public None
+struct IPGBlendingMethod
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -237,7 +237,7 @@ public:
 
 
 // Size 0xc
-class IPGDynamicSliderName: public None
+struct IPGDynamicSliderName
 {
 public:
 	int                                                          AffectedPriority;                                  // 0x0(0x4)
@@ -246,7 +246,7 @@ public:
 
 
 // Size 0x20
-class WardrobeConfig: public None
+struct WardrobeConfig
 {
 public:
 	TArray<Struct ClothingSlot>                                  Slots;                                             // 0x0(0x10)
@@ -255,7 +255,7 @@ public:
 
 
 // Size 0x20
-class ClothingSlot: public None
+struct ClothingSlot
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -265,34 +265,34 @@ public:
 
 
 // Size 0x40
-class Outfit: public None
+struct Outfit
 {
 public:
-	TArray<Name None>                                            PartNames;                                         // 0x0(0x10)
+	TArray<Struct FName>                                         PartNames;                                         // 0x0(0x10)
 	TArray<Struct FName>                                         FreeSlots;                                         // 0x10(0x10)
-	TArray<Struct FreeSlots>                                     ScalarParameters;                                  // 0x20(0x10)
+	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x20(0x10)
 	TArray<Struct FName>                                         MaterialReferences;                                // 0x30(0x10)
 };
 
 
 // Size 0x78
-class ClothingItem: public None
+struct ClothingItem
 {
 public:
 	struct FName                                                 Type;                                              // 0x0(0x8)
 	struct FName                                                 Name;                                              // 0x8(0x8)
-	TArray<Byte Name>                                            CompatiblePirateTypes;                             // 0x10(0x10)
+	TArray<Byte CompatiblePirateTypes>                           CompatiblePirateTypes;                             // 0x10(0x10)
 	TArray<Struct FName>                                         Variants;                                          // 0x20(0x10)
 	TArray<Struct FName>                                         NewSlots;                                          // 0x30(0x10)
 	struct FName                                                 Parent;                                            // 0x40(0x8)
 	TArray<Struct ClothingPart>                                  Parts;                                             // 0x48(0x10)
-	TArray<Struct Parts>                                         ScalarParameters;                                  // 0x58(0x10)
+	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x58(0x10)
 	TArray<Struct FName>                                         MaterialReferences;                                // 0x68(0x10)
 };
 
 
 // Size 0x20
-class ClothingPart: public None
+struct ClothingPart
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -303,7 +303,7 @@ public:
 
 
 // Size 0x10
-class AnimationSwitchEntry: public None
+struct AnimationSwitchEntry
 {
 public:
 	struct FName                                                 BodyShape;                                         // 0x0(0x8)
@@ -312,18 +312,18 @@ public:
 
 
 // Size 0x30
-class BlendedSubMeshSpecification: public None
+struct BlendedSubMeshSpecification
 {
 public:
 	Class SkeletalMesh*                                          Mesh;                                              // 0x0(0x8)
 	float                                                        BaseMeshWeight;                                    // 0x8(0x4)
 	TArray<class MeshPatchAssets*>                               MeshPatchAssets;                                   // 0x10(0x10)
-	TArray<Float >                                               MeshPatchAssetWeights;                             // 0x20(0x10)
+	TArray<Float MeshPatchAssetWeights>                          MeshPatchAssetWeights;                             // 0x20(0x10)
 };
 
 
 // Size 0x18
-class MaterialReferencesEntry: public None
+struct MaterialReferencesEntry
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -332,7 +332,7 @@ public:
 
 
 // Size 0x18
-class MaterialReferenceEntry: public None
+struct MaterialReferenceEntry
 {
 public:
 	bool                                                         bCopyParametersAcross;                             // 0x0(0x1)
@@ -343,7 +343,7 @@ public:
 
 
 // Size 0x18
-class PirateGeneratorTextureReference: public None
+struct PirateGeneratorTextureReference
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -352,7 +352,7 @@ public:
 
 
 // Size 0x18
-class ColorTextureSwitchSeedEntry: public None
+struct ColorTextureSwitchSeedEntry
 {
 public:
 	struct FName                                                 ReferenceName;                                     // 0x0(0x8)
@@ -361,7 +361,7 @@ public:
 
 
 // Size 0x18
-class TextureSwitchItemEntry: public None
+struct TextureSwitchItemEntry
 {
 public:
 	struct FName                                                 ItemName;                                          // 0x0(0x8)
@@ -370,7 +370,7 @@ public:
 
 
 // Size 0x18
-class TextureSwitchBodyShapeEntry: public None
+struct TextureSwitchBodyShapeEntry
 {
 public:
 	struct FName                                                 BodyShape;                                         // 0x0(0x8)
@@ -379,7 +379,7 @@ public:
 
 
 // Size 0x18
-class TextureSwitchEthnicityEntry: public None
+struct TextureSwitchEthnicityEntry
 {
 public:
 	byte                                                         Ethnicity;                                         // 0x0(0x1)
@@ -388,7 +388,7 @@ public:
 
 
 // Size 0x18
-class TextureSwitchGenderEntry: public None
+struct TextureSwitchGenderEntry
 {
 public:
 	byte                                                         Gender;                                            // 0x0(0x1)
@@ -397,7 +397,7 @@ public:
 
 
 // Size 0x18
-class TextureSwitchSeedEntry: public None
+struct TextureSwitchSeedEntry
 {
 public:
 	struct FName                                                 ReferenceName;                                     // 0x0(0x8)
@@ -406,7 +406,7 @@ public:
 
 
 // Size 0x58
-class TextureSwitchParameters: public None
+struct TextureSwitchParameters
 {
 public:
 	bool                                                         bAsync;                                            // 0x8(0x1)
@@ -421,7 +421,7 @@ public:
 
 
 // Size 0x18
-class MeshPatchEntry: public None
+struct MeshPatchEntry
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)

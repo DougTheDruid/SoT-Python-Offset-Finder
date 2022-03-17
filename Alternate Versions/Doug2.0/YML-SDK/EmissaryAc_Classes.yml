@@ -21,7 +21,7 @@ BP_Prompt_EmissaryActivated_C:
   - Name: Prompts
     Offset: '0x178'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: PromptSurfacedThisSession
     Offset: '0x188'
     Size: '0x1'

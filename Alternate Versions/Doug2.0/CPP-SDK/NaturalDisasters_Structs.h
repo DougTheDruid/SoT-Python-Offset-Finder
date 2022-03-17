@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xc0
-class WeightedVolcanoProjectile: public None
+struct WeightedVolcanoProjectile
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0x18
-class VolcanoTarget: public None
+struct VolcanoTarget
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
@@ -36,7 +36,7 @@ public:
 
 
 // Size 0x58
-class VolcanoTargetChances: public None
+struct VolcanoTargetChances
 {
 public:
 	float                                                        OnTarget;                                          // 0x0(0x4)
@@ -49,7 +49,7 @@ public:
 
 
 // Size 0x10
-class VolcanoSetupDataEmbersEntry: public None
+struct VolcanoSetupDataEmbersEntry
 {
 public:
 	float                                                        MaxDistanceInMetres;                               // 0x0(0x4)
@@ -58,7 +58,7 @@ public:
 
 
 // Size 0xd0
-class WeightedAshenLordVolcanoProjectile: public None
+struct WeightedAshenLordVolcanoProjectile
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
@@ -72,7 +72,7 @@ public:
 
 
 // Size 0x8
-class AshenLordWorldEndCloudAnimation: public None
+struct AshenLordWorldEndCloudAnimation
 {
 public:
 	float                                                        ServerStartTime;                                   // 0x0(0x4)
@@ -81,17 +81,17 @@ public:
 
 
 // Size 0x80
-class PlayerFeedback: public None
+struct PlayerFeedback
 {
 public:
 	Struct EarthquakeForceFeedback                               ForceFeedback;                                     // 0x0(0x40)
-	TArray<Class ForceFeedback>                                  CameraShakes;                                      // 0x40(0x10)
+	TArray<Class CameraShakes>                                   CameraShakes;                                      // 0x40(0x10)
 	Struct WeightedProbabilityRangeOfRanges                      StaggerStrength;                                   // 0x50(0x30)
 };
 
 
 // Size 0x40
-class EarthquakeForceFeedback: public None
+struct EarthquakeForceFeedback
 {
 public:
 	TArray<Struct EarthquakeForceFeedbackOption>                 ForceFeedbackOptions;                              // 0x0(0x10)
@@ -100,15 +100,15 @@ public:
 
 
 // Size 0x10
-class EarthquakeForceFeedbackOption: public None
+struct EarthquakeForceFeedbackOption
 {
 public:
-	TArray<Struct GeyserSpawnAngleOption>                        ForceFeedback;                                     // 0x0(0x10)
+	TArray<Struct LandmarkReactionEventPlayForceFeedbackEntry>   ForceFeedback;                                     // 0x0(0x10)
 };
 
 
 // Size 0xc
-class GeyserSpawnAngleOption: public None
+struct GeyserSpawnAngleOption
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
@@ -118,7 +118,7 @@ public:
 
 
 // Size 0x10
-class VolcanoTargetCoolDown: public None
+struct VolcanoTargetCoolDown
 {
 public:
 	Class Actor*                                                 Target;                                            // 0x0(0x8)
@@ -126,7 +126,7 @@ public:
 
 
 // Size 0x1c
-class VolcanoProjectileData: public None
+struct VolcanoProjectileData
 {
 public:
 	int                                                          WeightedVolcanoProjectileIndex;                    // 0x0(0x4)
@@ -136,7 +136,7 @@ public:
 
 
 // Size 0xc
-class VolcanoStateData: public None
+struct VolcanoStateData
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
@@ -146,7 +146,7 @@ public:
 
 
 // Size 0x1
-class EventVolcanoStateChanged: public None
+struct EventVolcanoStateChanged
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)

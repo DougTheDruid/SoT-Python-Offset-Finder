@@ -28,7 +28,7 @@
     "Attributes": [
       {
         "Name": "DebugTeleportationRegistry",
-        "Type": "TArray<Struct Radius>",
+        "Type": "TArray<Struct DebugTeleportDestinationEntry>",
         "Size": "0x10",
         "Offset": "0x3e8"
       }

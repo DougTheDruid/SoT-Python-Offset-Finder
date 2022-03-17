@@ -14,7 +14,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredAIShip_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct UberGraphFrame>                                Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -26,7 +26,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredAIShip_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct >                                              Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -38,7 +38,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredAIShip_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -50,7 +50,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredAIShip_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -62,7 +62,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredAIShip_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct >                                              Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -74,7 +74,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredKraken_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -86,7 +86,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredKraken_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -98,7 +98,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredKraken_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct >                                              Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -110,7 +110,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredKraken_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct >                                              Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -122,7 +122,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredKraken_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct >                                              Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -134,7 +134,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredSkellyFort_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct None>                                          Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -146,7 +146,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredSkellyFort_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct None>                                          Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -158,7 +158,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredSkellyFort_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct None>                                          Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -170,7 +170,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredSkellyFort_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct ByteProperty>                                  Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -182,7 +182,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissaryEncounteredSkellyFort_C* PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 

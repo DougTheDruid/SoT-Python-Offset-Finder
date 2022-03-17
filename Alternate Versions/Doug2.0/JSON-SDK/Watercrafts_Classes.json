@@ -55,7 +55,7 @@
     "Attributes": [
       {
         "Name": "WatercraftTypes",
-        "Type": "TArray<Class ParentRowboat>",
+        "Type": "TArray<Class WatercraftTypes>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -311,7 +311,7 @@
     "Attributes": [
       {
         "Name": "DamageSpeedParams",
-        "Type": "TArray<Struct ScrapeDamagerType>",
+        "Type": "TArray<Struct ScrapeableDamageSpeedEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -684,7 +684,7 @@
       },
       {
         "Name": "RelativeUnderCoverProbeRoots",
-        "Type": "TArray<Struct UnderCoverHeight>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x868"
       },
@@ -711,7 +711,7 @@
     "Attributes": [
       {
         "Name": "RowboatTypes",
-        "Type": "TArray<Class TargetOars>",
+        "Type": "TArray<Class RowboatTypes>",
         "Size": "0x10",
         "Offset": "0x28"
       }

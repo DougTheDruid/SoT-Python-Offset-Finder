@@ -28,7 +28,7 @@
     "Attributes": [
       {
         "Name": "MysteriousNoteCompletionEvents",
-        "Type": "TArray<Struct NotificationBackground>",
+        "Type": "TArray<Struct MysteriousNotesCompletionEventsModel>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -111,7 +111,7 @@
       },
       {
         "Name": "NoteLayoutItems",
-        "Type": "TArray<Struct DefaultNoteLayoutItem>",
+        "Type": "TArray<Struct WieldableMysteriousNoteLayoutItem>",
         "Size": "0x10",
         "Offset": "0x168"
       }

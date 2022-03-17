@@ -11,7 +11,7 @@ CoordinatedKrakenPhaseActionsDataAsset:
   - Name: TentaclesUsed
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int TentaclesUsed>
   - Name: KrakenHeadUsed
     Offset: '0x38'
     Size: '0x1'
@@ -19,7 +19,7 @@ CoordinatedKrakenPhaseActionsDataAsset:
   - Name: Actions
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct KrakenHeadUsed>
+    Type: TArray<Struct CoordinatedKrakenAction>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -149,7 +149,7 @@ KrakenAnimatedTentacleAnimationDataAsset:
   - Name: Bones
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct AnimationPlayRateScale>
+    Type: TArray<Struct KrakenAnimatedTentacleAnimationBoneTrack>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -159,7 +159,7 @@ KrakenAnimatedTentacleAnimationMappingDataAsset:
   - Name: Animations
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Bones>
+    Type: TArray<Struct KrakenAnimatedTentacleMappedAnimation>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -169,7 +169,7 @@ KrakenAnimatedTentacleAnimationSpecDataAsset:
   - Name: Bones
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct States>
+    Type: TArray<Struct KrakenAnimatedTentacleAnimationSpecBone>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -179,7 +179,7 @@ KrakenAnimatedTentacleStateAnimationsDataAsset:
   - Name: States
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct MappingAssetReference>
+    Type: TArray<Struct KrakenAnimatedTentacleStateAnimationMapping>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -217,7 +217,7 @@ KrakenHead:
   - Name: BreathingInContinuousStatusesToApply
     Offset: '0x418'
     Size: '0x10'
-    Type: TArray<Struct BiteAttackVFX>
+    Type: TArray<Struct Status>
   - Name: BreatheInStatusDuration
     Offset: '0x428'
     Size: '0x4'
@@ -225,7 +225,7 @@ KrakenHead:
   - Name: RoarContinuousStatusesToApply
     Offset: '0x430'
     Size: '0x10'
-    Type: TArray<Struct BreatheInStatusDuration>
+    Type: TArray<Struct Status>
   - Name: RoarStatusDuration
     Offset: '0x440'
     Size: '0x4'
@@ -323,7 +323,7 @@ KrakenHeadHealthParamsDataAsset:
   - Name: KrakenHeadHealthPairs
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct HitReactionAnimations>
+    Type: TArray<Struct KrakenHeadHealthPair>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -333,7 +333,7 @@ KrakenHeadHitReactAnimationsDataAsset:
   - Name: HitReactionAnimations
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Params>
+    Type: TArray<Struct KrakenHeadHitReactAnimations>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -349,7 +349,7 @@ KrakenHeadStateAnimationsDataAsset:
   - Name: States
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct OnCoordinatedKrakenSpecialEvent>
+    Type: TArray<Struct KrakenHeadStateAnimationMapping>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

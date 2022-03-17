@@ -83,11 +83,11 @@ SpireService:
   - Name: ServerOnlySpireInfo
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<Struct Params>
+    Type: TArray<Struct ServerSpireInfo>
   - Name: SpireLevels
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<Struct ServerOnlySpireInfo>
+    Type: TArray<Struct SpireInfo>
   ClassSize: '0x98'
   FullSize: '0x468'
   InheritedSize: '0x3d0'
@@ -119,7 +119,7 @@ SpireShippingDrawDebugActorSphereCollection:
   - Name: SpireList
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<Weakclass IsSpireVisible>
+    Type: TArray<Weakclass SpireList>
   ClassSize: '0x10'
   FullSize: '0x3f0'
   InheritedSize: '0x3e0'
@@ -133,7 +133,7 @@ SpireStreamedLevelDataAsset:
   - Name: Entries
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct StreamedLevel>
+    Type: TArray<Struct SpireEntry>
   - Name: FeatureToggle
     Offset: '0x40'
     Size: '0x8'

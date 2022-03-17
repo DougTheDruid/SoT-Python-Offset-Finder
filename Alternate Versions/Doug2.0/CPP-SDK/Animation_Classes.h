@@ -81,8 +81,8 @@ public:
 class AnimationDataStore: public Object
 {
 public:
-	TArray<Struct GetAnimationDataClass>                         Data;                                              // 0x40(0x10)
-	TArray<Struct Data>                                          LoadingData;                                       // 0x50(0x10)
+	TArray<Struct AnimationDataStoreEntry>                       Data;                                              // 0x40(0x10)
+	TArray<Struct AnimationDataStoreLoadingEntry>                LoadingData;                                       // 0x50(0x10)
 };
 
 
@@ -90,7 +90,7 @@ public:
 class AnimationDataStoreAsset: public DataAsset
 {
 public:
-	TArray<Struct AssetWeakRefs>                                 AssetRefs;                                         // 0x28(0x10)
+	TArray<Struct AnimationDataStoreAssetEntry>                  AssetRefs;                                         // 0x28(0x10)
 };
 
 
@@ -98,7 +98,7 @@ public:
 class AnimationDataStoreWeakReferenceAsset: public DataAsset
 {
 public:
-	TArray<Struct AnimationDataStoreWeakReferences>              AssetWeakRefs;                                     // 0x28(0x10)
+	TArray<Struct AnimationDataStoreAssetWeakReferenceEntry>     AssetWeakRefs;                                     // 0x28(0x10)
 };
 
 
@@ -242,7 +242,7 @@ public:
 class AnimNotify_ToggleIK: public AnimNotify
 {
 public:
-	TArray<Byte TriggerWhenDisabled>                             IKLimbsToAdjust;                                   // 0x38(0x10)
+	TArray<Byte IKLimbsToAdjust>                                 IKLimbsToAdjust;                                   // 0x38(0x10)
 	bool                                                         Enabled;                                           // 0x48(0x1)
 };
 
@@ -268,7 +268,7 @@ public:
 class AnimNotifyState_PropagateCurveValuesToMaterials: public AnimNotifyState
 {
 public:
-	TArray<Struct DestroyLocation>                               CurveValues;                                       // 0x28(0x10)
+	TArray<Struct CurveUpdateValues>                             CurveValues;                                       // 0x28(0x10)
 	bool                                                         DoNotPropagteCurveValues;                          // 0x38(0x1)
 };
 
@@ -445,7 +445,7 @@ public:
 class CustomAnimationMontageDefinitionListingDataAsset: public DataAsset
 {
 public:
-	TArray<Struct MontageIds>                                    Entries;                                           // 0x28(0x10)
+	TArray<Struct CustomAnimationMontageDefinitionEntry>         Entries;                                           // 0x28(0x10)
 };
 
 
@@ -453,7 +453,7 @@ public:
 class CustomAnimationMontageIdListingDataAsset: public DataAsset
 {
 public:
-	TArray<Name None>                                            MontageIds;                                        // 0x28(0x10)
+	TArray<Struct FName>                                         MontageIds;                                        // 0x28(0x10)
 };
 
 
@@ -575,7 +575,7 @@ public:
 class WeightedAnimationLoadOnDemandDataAsset: public DataAsset
 {
 public:
-	TArray<Struct CreateNewWeightedAnimSequenceLoadOnDemand>     WeightedAnimationList;                             // 0x28(0x10)
+	TArray<Struct WeightedAnimationData>                         WeightedAnimationList;                             // 0x28(0x10)
 	Class AnimSequence*                                          FallBackAnimation;                                 // 0x38(0x8)
 };
 
@@ -585,7 +585,7 @@ class WeightedAnimSequenceLoadOnDemand: public Object
 {
 public:
 	Class AnimSequence*                                          FallBackAnimation;                                 // 0x28(0x8)
-	TArray<Struct FallBackAnimation>                             WeightedAnimationList;                             // 0x30(0x10)
+	TArray<Struct WeightedAnimationData>                         WeightedAnimationList;                             // 0x30(0x10)
 };
 
 

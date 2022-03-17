@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x38
-class LevelSequenceObject: public None
+struct LevelSequenceObject
 {
 public:
 	Struct FString                                               ComponentName;                                     // 0x20(0x10)
@@ -15,21 +15,21 @@ public:
 
 
 // Size 0xa0
-class LevelSequenceObjectReferenceMap: public None
+struct LevelSequenceObjectReferenceMap
 {
 public:
 };
 
 
 // Size 0x20
-class LevelSequenceObjectReference: public None
+struct LevelSequenceObjectReference
 {
 public:
 };
 
 
 // Size 0x90
-class LevelSequencePlayerSnapshot: public None
+struct LevelSequencePlayerSnapshot
 {
 public:
 	Struct FText                                                 MasterName;                                        // 0x0(0x38)
@@ -42,7 +42,7 @@ public:
 
 
 // Size 0x8
-class LevelSequenceSnapshotSettings: public None
+struct LevelSequenceSnapshotSettings
 {
 public:
 	byte                                                         ZeroPadAmount;                                     // 0x0(0x1)
@@ -51,14 +51,14 @@ public:
 
 
 // Size 0x28
-class LevelSequencePlaybackSettings: public None
+struct LevelSequencePlaybackSettings
 {
 public:
 };
 
 
 // Size 0x1
-class BoundActorProxy: public None
+struct BoundActorProxy
 {
 public:
 };

@@ -73,12 +73,12 @@ class WwiseAudioSettings: public Object
 public:
 	Struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0xe8(0x64)
 	Struct WwiseBinkSettings                                     BinkSettings;                                      // 0x150(0x38)
-	TArray<Struct BinkSettings>                                  PersistentSoundBanks;                              // 0x188(0x10)
+	TArray<Struct StringAssetReference>                          PersistentSoundBanks;                              // 0x188(0x10)
 	Struct StringAssetReference                                  InitBank;                                          // 0x198(0x10)
 	Struct DirectoryPath                                         WwiseSoundbanksRoot;                               // 0x1a8(0x10)
 	Struct StringAssetReference                                  WwiseIDsDatabase;                                  // 0x1b8(0x10)
 	Struct DirectoryPath                                         WwiseStreamedFilesDirectory;                       // 0x1c8(0x10)
-	TArray<Struct WwiseStreamedFilesDirectory>                   AsyncIOPriorityMappings;                           // 0x1d8(0x10)
+	TArray<Struct WwiseIOPriorityMappingConfig>                  AsyncIOPriorityMappings;                           // 0x1d8(0x10)
 	Struct DirectoryPath                                         TritonAcousticMapsDirectory;                       // 0x1e8(0x10)
 	Struct FString                                               DefaultLanguage;                                   // 0x1f8(0x10)
 	Struct FString                                               SinkSharesetName;                                  // 0x208(0x10)
@@ -142,7 +142,7 @@ public:
 class WwiseDDSEvent: public WwiseEvent
 {
 public:
-	TArray<UInt32 None>                                          DDSArgumentsGroupsIDs;                             // 0x50(0x10)
+	TArray<UInt32 DDSArgumentsGroupsIDs>                         DDSArgumentsGroupsIDs;                             // 0x50(0x10)
 };
 
 
@@ -150,13 +150,13 @@ public:
 class WwiseIDsDatabase: public DataAsset
 {
 public:
-	TArray<UInt32 None>                                          StateGroupIDs;                                     // 0x28(0x10)
+	TArray<UInt32 StateGroupIDs>                                 StateGroupIDs;                                     // 0x28(0x10)
 	TArray<Struct FName>                                         StateGroupNames;                                   // 0x38(0x10)
-	TArray<UInt32 >                                              StateValueIDs;                                     // 0x48(0x10)
+	TArray<UInt32 StateValueIDs>                                 StateValueIDs;                                     // 0x48(0x10)
 	TArray<Struct FName>                                         StateValueNames;                                   // 0x58(0x10)
-	TArray<UInt32 >                                              SwitchGroupIDs;                                    // 0x68(0x10)
+	TArray<UInt32 SwitchGroupIDs>                                SwitchGroupIDs;                                    // 0x68(0x10)
 	TArray<Struct FName>                                         SwitchGroupNames;                                  // 0x78(0x10)
-	TArray<UInt32 >                                              SwitchStateIDs;                                    // 0x88(0x10)
+	TArray<UInt32 SwitchStateIDs>                                SwitchStateIDs;                                    // 0x88(0x10)
 	TArray<Struct FName>                                         SwitchStateNames;                                  // 0x98(0x10)
 };
 

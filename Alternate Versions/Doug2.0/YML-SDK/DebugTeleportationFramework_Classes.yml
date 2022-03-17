@@ -5,7 +5,7 @@ DebugTeleportationDestinationService:
   - Name: DebugTeleportationRegistry
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<Struct Radius>
+    Type: TArray<Struct DebugTeleportDestinationEntry>
   ClassSize: '0x28'
   FullSize: '0x3f8'
   InheritedSize: '0x3d0'

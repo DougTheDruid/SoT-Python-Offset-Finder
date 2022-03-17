@@ -211,7 +211,7 @@ ServerMigrationSerialisationDetailsTestsTArrayProperty:
   - Name: IntegerArrayWithMigrationMarkup
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Int None>
+    Type: TArray<Int IntegerArrayWithMigrationMarkup>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

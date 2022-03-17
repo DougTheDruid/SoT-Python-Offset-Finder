@@ -67,7 +67,7 @@ AbilitySystemComponent:
   - Name: BlockedAbilityBindings
     Offset: '0xb48'
     Size: '0x10'
-    Type: TArray<Byte ActiveGameplayCues>
+    Type: TArray<Byte BlockedAbilityBindings>
   ClassSize: '0xb70'
   FullSize: '0xc98'
   InheritedSize: '0x128'
@@ -143,7 +143,7 @@ AbilitySystemGlobals:
   - Name: GameplayCueNotifyPaths
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str GameplayCueNotifyPaths>
   - Name: GameplayTagResponseTableName
     Offset: '0xd8'
     Size: '0x10'
@@ -509,7 +509,7 @@ GameplayAbility:
   - Name: AbilityTriggers
     Offset: '0x1b0'
     Size: '0x10'
-    Type: TArray<Struct CostGameplayEffect>
+    Type: TArray<Struct AbilityTriggerData>
   - Name: CooldownGameplayEffectClass
     Offset: '0x1c0'
     Size: '0x8'
@@ -599,7 +599,7 @@ GameplayAbilitySet:
   - Name: Abilities
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Radius>
+    Type: TArray<Struct GameplayAbilityBindInfo>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -783,7 +783,7 @@ GameplayAbility_Montage:
   - Name: GameplayEffectClassesWhileAnimating
     Offset: '0x460'
     Size: '0x10'
-    Type: TArray<Class SectionName>
+    Type: TArray<Class GameplayEffectClassesWhileAnimating>
   - Name: GameplayEffectsWhileAnimating
     Offset: '0x470'
     Size: '0x10'
@@ -819,7 +819,7 @@ GameplayCueManager:
   - Name: PendingExecuteCues
     Offset: '0x160'
     Size: '0x10'
-    Type: TArray<Struct StreamableManager>
+    Type: TArray<Struct GameplayCuePendingExecute>
   - Name: GameplayCueSendContextCount
     Offset: '0x170'
     Size: '0x4'
@@ -899,7 +899,7 @@ GameplayCueSet:
   - Name: GameplayCueData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct RelevantAttributesToCapture>
+    Type: TArray<Struct GameplayCueNotifyData>
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -925,11 +925,11 @@ GameplayEffect:
   - Name: Modifiers
     Offset: '0x1d0'
     Size: '0x10'
-    Type: TArray<Struct bExecutePeriodicEffectOnApplication>
+    Type: TArray<Struct GameplayModifierInfo>
   - Name: Executions
     Offset: '0x1e0'
     Size: '0x10'
-    Type: TArray<Struct Modifiers>
+    Type: TArray<Struct GameplayEffectExecutionDefinition>
   - Name: ChanceToApplyToTarget
     Offset: '0x1f0'
     Size: '0x20'
@@ -937,7 +937,7 @@ GameplayEffect:
   - Name: TargetEffectClasses
     Offset: '0x210'
     Size: '0x10'
-    Type: TArray<Class ChanceToApplyToTarget>
+    Type: TArray<Class TargetEffectClasses>
   - Name: TargetEffects
     Offset: '0x220'
     Size: '0x10'
@@ -945,7 +945,7 @@ GameplayEffect:
   - Name: OverflowEffects
     Offset: '0x230'
     Size: '0x10'
-    Type: TArray<Class TargetEffects>
+    Type: TArray<Class OverflowEffects>
   - Name: bDenyOverflowApplication
     Offset: '0x240'
     Size: '0x1'
@@ -957,11 +957,11 @@ GameplayEffect:
   - Name: PrematureExpirationEffectClasses
     Offset: '0x248'
     Size: '0x10'
-    Type: TArray<Class bClearStackOnOverflow>
+    Type: TArray<Class PrematureExpirationEffectClasses>
   - Name: RoutineExpirationEffectClasses
     Offset: '0x258'
     Size: '0x10'
-    Type: TArray<Class PrematureExpirationEffectClasses>
+    Type: TArray<Class RoutineExpirationEffectClasses>
   - Name: bRequireModifierSuccessToTriggerCues
     Offset: '0x268'
     Size: '0x1'
@@ -969,7 +969,7 @@ GameplayEffect:
   - Name: GameplayCues
     Offset: '0x270'
     Size: '0x10'
-    Type: TArray<Struct bRequireModifierSuccessToTriggerCues>
+    Type: TArray<Struct GameplayEffectCue>
   - Name: UIData
     Offset: '0x280'
     Size: '0x8'
@@ -1029,7 +1029,7 @@ GameplayEffect:
   - Name: GrantedAbilities
     Offset: '0x568'
     Size: '0x10'
-    Type: TArray<Struct StackPeriodResetPolicy>
+    Type: TArray<Struct GameplayAbilitySpecDef>
   ClassSize: '0x550'
   FullSize: '0x578'
   InheritedSize: '0x28'
@@ -1039,7 +1039,7 @@ GameplayEffectCalculation:
   - Name: RelevantAttributesToCapture
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Execute>
+    Type: TArray<Struct GameplayEffectAttributeCaptureDefinition>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1059,11 +1059,11 @@ GameplayEffectExtension:
   - Name: RelevantSourceAttributes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct HealthRestoreGameplayEffect>
+    Type: TArray<Struct GameplayAttribute>
   - Name: RelevantTargetAttributes
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct RelevantSourceAttributes>
+    Type: TArray<Struct GameplayAttribute>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -1121,7 +1121,7 @@ GameplayTagReponseTable:
   - Name: Entries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct GameView5>
+    Type: TArray<Struct GameplayTagResponseTableEntry>
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'

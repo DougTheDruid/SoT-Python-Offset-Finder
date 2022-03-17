@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x28
-class WaterSlideParams: public None
+struct WaterSlideParams
 {
 public:
 	float                                                        ForwardSpeed;                                      // 0x0(0x4)
@@ -22,7 +22,7 @@ public:
 
 
 // Size 0x38
-class WaterSlideActionStateConstructionInfo: public None
+struct WaterSlideActionStateConstructionInfo
 {
 public:
 	Class SceneComponent*                                        SceneComponent;                                    // 0x30(0x8)
@@ -30,7 +30,7 @@ public:
 
 
 // Size 0x24
-class WaterSlideActionStateParams: public None
+struct WaterSlideActionStateParams
 {
 public:
 	float                                                        ForcedFieldOfView;                                 // 0x0(0x4)
@@ -40,14 +40,14 @@ public:
 
 
 // Size 0xc
-class OnPlayerSpeedOnWaterSlideChangedActionStateEvent: public None
+struct OnPlayerSpeedOnWaterSlideChangedActionStateEvent
 {
 public:
 };
 
 
 // Size 0x10
-class OnPlayerChangedWaterSlideRouteActionStateEvent: public None
+struct OnPlayerChangedWaterSlideRouteActionStateEvent
 {
 public:
 	Class WwiseEvent*                                            WaterSlideChangeForkOneShot;                       // 0x8(0x8)
@@ -55,7 +55,7 @@ public:
 
 
 // Size 0x18
-class OnEndWaterSlideActionStateEvent: public None
+struct OnEndWaterSlideActionStateEvent
 {
 public:
 	Class WwiseEvent*                                            WaterSlideEnd;                                     // 0x8(0x8)
@@ -64,7 +64,7 @@ public:
 
 
 // Size 0x10
-class OnStartWaterSlideActionStateEvent: public None
+struct OnStartWaterSlideActionStateEvent
 {
 public:
 	Class WwiseEvent*                                            WaterSlideStart;                                   // 0x0(0x8)
@@ -73,7 +73,7 @@ public:
 
 
 // Size 0x1
-class OnExitedWaterSlideEvent: public None
+struct OnExitedWaterSlideEvent
 {
 public:
 };

@@ -47,7 +47,7 @@ AbandonedNoteClueGenderSpecificTextAsset:
   - Name: Descriptions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ClueDestinationDescriptions>
+    Type: TArray<Struct GenderSpecificTextPairings>
   - Name: DestinationType
     Offset: '0x38'
     Size: '0x8'
@@ -71,7 +71,7 @@ AbandonedNoteClueTextAsset:
   - Name: Descriptions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Text None>
+    Type: TArray<Struct FText>
   - Name: DestinationType
     Offset: '0x38'
     Size: '0x8'
@@ -113,7 +113,7 @@ AbandonedNoteClueTextIndexAssetMap:
   - Name: TextIndexMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct OnRep_CurrentClueDestination>
+    Type: TArray<Struct ClueDestinationToTextIndex>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -187,7 +187,7 @@ AbandonedNoteWieldableRenderingComponent:
   - Name: ExtraTextFields
     Offset: '0x158'
     Size: '0x10'
-    Type: TArray<Struct TitleTextLayout>
+    Type: TArray<Struct TextEntryWithLayout>
   ClassSize: '0xf0'
   FullSize: '0x1b8'
   InheritedSize: '0xc8'
@@ -281,7 +281,7 @@ CircleMapClueDestinationContainerComponent:
   - Name: ClueRenderData
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<Struct ShowCluePositionOnMap>
+    Type: TArray<Struct MapTextureRenderData>
   ClassSize: '0x98'
   FullSize: '0x160'
   InheritedSize: '0xc8'
@@ -345,7 +345,7 @@ ExistingToPhasedNPCIndexAssetMap:
   - Name: NPCIndexMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct SpawnLocation>
+    Type: TArray<Struct ExistingNPCToPhasedNPC>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -789,7 +789,7 @@ WashedUpMessageInABottleClueCreator:
   - Name: SinkIntoSandItems
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<AssetClass LootItemSinkIntoSandRotationMax>
+    Type: TArray<AssetClass SinkIntoSandItems>
   ClassSize: '0x50'
   FullSize: '0x80'
   InheritedSize: '0x30'
@@ -821,7 +821,7 @@ WashedUpMessageInABottleClueSiteData:
   - Name: SinkIntoSandItems
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Class SpawnTransform>
+    Type: TArray<Class SinkIntoSandItems>
   ClassSize: '0xa8'
   FullSize: '0xe0'
   InheritedSize: '0x38'
@@ -875,7 +875,7 @@ WashedUpSkeletonLandClueCreator:
   - Name: SkeletonPoses
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<AssetClass SettingsInterface>
+    Type: TArray<AssetClass SkeletonPoses>
   - Name: LootItemSpawnXYDistanceFromClueIncrementMin
     Offset: '0x60'
     Size: '0x4'

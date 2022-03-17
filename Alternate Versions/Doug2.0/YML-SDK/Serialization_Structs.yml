@@ -5,7 +5,7 @@ StructSerializerArrayTestStruct:
   - Name: Int32Array
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int Int32Array>
   - Name: StaticSingleElement
     Offset: '0x10'
     Size: '0x4'
@@ -21,7 +21,7 @@ StructSerializerArrayTestStruct:
   - Name: VectorArray
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct StaticFloatArray>
+    Type: TArray<Struct Vector>
   ClassSize: '0x40'
 StructSerializerBooleanTestStruct:
   Attributes:

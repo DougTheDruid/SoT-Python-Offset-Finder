@@ -81,7 +81,7 @@
     "Attributes": [
       {
         "Name": "EmoteIds",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x28"
       }

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x58
-class MemoryVisualiserCategory: public None
+struct MemoryVisualiserCategory
 {
 public:
 	Struct FString                                               CategoryName;                                      // 0x0(0x10)
@@ -26,7 +26,7 @@ public:
 
 
 // Size 0x28
-class MemoryVisualiserClass: public None
+struct MemoryVisualiserClass
 {
 public:
 	class                                                        ClassType;                                         // 0x0(0x8)
@@ -37,7 +37,7 @@ public:
 
 
 // Size 0x20
-class MemoryVisualiserStat: public None
+struct MemoryVisualiserStat
 {
 public:
 	struct FName                                                 StatName;                                          // 0x0(0x8)
@@ -47,7 +47,7 @@ public:
 
 
 // Size 0x50
-class MemoryCommonData: public None
+struct MemoryCommonData
 {
 public:
 	float                                                        mUsedPhysicalMB;                                   // 0x0(0x4)
@@ -73,7 +73,7 @@ public:
 
 
 // Size 0x10
-class StaticMeshComponentList: public None
+struct StaticMeshComponentList
 {
 public:
 	TArray<class Components*>                                    Components;                                        // 0x0(0x10)
@@ -81,7 +81,7 @@ public:
 
 
 // Size 0x10
-class StaticMeshActorList: public None
+struct StaticMeshActorList
 {
 public:
 	TArray<class Actors*>                                        Actors;                                            // 0x0(0x10)

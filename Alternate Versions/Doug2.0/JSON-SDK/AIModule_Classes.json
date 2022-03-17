@@ -133,7 +133,7 @@
       },
       {
         "Name": "QueryParams",
-        "Type": "TArray<Struct QueryTemplate>",
+        "Type": "TArray<Struct EnvNamedValue>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -365,13 +365,13 @@
       },
       {
         "Name": "ActionStacks",
-        "Type": "TArray<Struct ControlledPawn>",
+        "Type": "TArray<Struct PawnActionStack>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
         "Name": "ActionEvents",
-        "Type": "TArray<Struct ActionStacks>",
+        "Type": "TArray<Struct PawnActionEvent>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -797,7 +797,7 @@
       },
       {
         "Name": "RegisterAsSourceForSenses",
-        "Type": "TArray<Class bAutoRegisterAsSource>",
+        "Type": "TArray<Class RegisterAsSourceForSenses>",
         "Size": "0x10",
         "Offset": "0xd0"
       }
@@ -851,7 +851,7 @@
     "Attributes": [
       {
         "Name": "RegisteredEvents",
-        "Type": "TArray<Struct ReportNoiseEvent>",
+        "Type": "TArray<Struct AIDamageEvent>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -877,13 +877,13 @@
       },
       {
         "Name": "NoiseEventsArrayA",
-        "Type": "TArray<Struct MaxNoisesStored>",
+        "Type": "TArray<Struct AINoiseEvent>",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "NoiseEventsArrayB",
-        "Type": "TArray<Struct NoiseEventsArrayA>",
+        "Type": "TArray<Struct AINoiseEvent>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -903,7 +903,7 @@
     "Attributes": [
       {
         "Name": "RegisteredEvents",
-        "Type": "TArray<Struct SightLimitQueryImportance>",
+        "Type": "TArray<Struct AIPredictionEvent>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -949,7 +949,7 @@
     "Attributes": [
       {
         "Name": "RegisteredEvents",
-        "Type": "TArray<Struct RegisteredEvents>",
+        "Type": "TArray<Struct AITeamStimulusEvent>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -963,7 +963,7 @@
     "Attributes": [
       {
         "Name": "RegisteredEvents",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<Struct AITouchEvent>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -1269,7 +1269,7 @@
     "Attributes": [
       {
         "Name": "Children",
-        "Type": "TArray<Struct RootDecoratorOps>",
+        "Type": "TArray<Struct BTCompositeChild>",
         "Size": "0x10",
         "Offset": "0x58"
       },
@@ -1307,7 +1307,7 @@
       },
       {
         "Name": "RootDecoratorOps",
-        "Type": "TArray<Struct RootDecorators>",
+        "Type": "TArray<Struct BTDecoratorLogic>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -1327,7 +1327,7 @@
       },
       {
         "Name": "LoadedTemplates",
-        "Type": "TArray<Struct MaxDebuggerSteps>",
+        "Type": "TArray<Struct BehaviorTreeTemplateInfo>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -1399,7 +1399,7 @@
       },
       {
         "Name": "Keys",
-        "Type": "TArray<Struct Parent>",
+        "Type": "TArray<Struct BlackboardEntry>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -2411,13 +2411,13 @@
       },
       {
         "Name": "AvoidanceConfig",
-        "Type": "TArray<Struct MyNavData>",
+        "Type": "TArray<Struct CrowdAvoidanceConfig>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "SamplingPatterns",
-        "Type": "TArray<Struct AvoidanceConfig>",
+        "Type": "TArray<Struct CrowdAvoidanceSamplingPattern>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -2590,7 +2590,7 @@
     "Attributes": [
       {
         "Name": "InstanceCache",
-        "Type": "TArray<Struct SearchCenter>",
+        "Type": "TArray<Struct EnvQueryInstanceCache>",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -3080,7 +3080,7 @@
       },
       {
         "Name": "QueryParams",
-        "Type": "TArray<Struct QueryTemplate>",
+        "Type": "TArray<Struct EnvNamedValue>",
         "Size": "0x10",
         "Offset": "0x5e8"
       },

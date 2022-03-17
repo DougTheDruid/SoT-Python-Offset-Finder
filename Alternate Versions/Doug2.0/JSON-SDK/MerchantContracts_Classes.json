@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "Contracts",
-        "Type": "TArray<Struct CollectCrate>",
+        "Type": "TArray<Struct MerchantContract>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -42,7 +42,7 @@
     "Attributes": [
       {
         "Name": "Contracts",
-        "Type": "TArray<Struct CommodityDataFileLocation>",
+        "Type": "TArray<Struct PlayerMerchantContract>",
         "Size": "0x10",
         "Offset": "0xd0"
       }

@@ -317,7 +317,7 @@ IslandTypeWeightsDataAsset:
   - Name: IslandTypeWeightsForDifficultyRanks
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct StructForCollector>
+    Type: TArray<Struct IslandTypeWeights>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -439,7 +439,7 @@ PlaySequencerAnimationOnCutsceneActorStep:
   - Name: PossessableSequences
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct SequencerCutSceneActor>
+    Type: TArray<Struct PossessableSequence>
   ClassSize: '0x30'
   FullSize: '0xc0'
   InheritedSize: '0x90'
@@ -655,7 +655,7 @@ RewardGenTaleQuestService:
   - Name: ValidSpawnData
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int ValidSpawnData>
   - Name: ItemsToSpawn
     Offset: '0x78'
     Size: '0x10'
@@ -845,15 +845,15 @@ TaleQuestActorService:
   - Name: TrackedActors
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct Desc>
+    Type: TArray<Struct TrackedActorData>
   - Name: CriticalActors
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct TrackedActors>
+    Type: TArray<Struct CriticalActorDelegateData>
   - Name: SnapshottedActors
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct CriticalActors>
+    Type: TArray<Struct SnapshottedActorData>
   - Name: Desc
     Offset: '0x90'
     Size: '0x8'
@@ -865,11 +865,11 @@ TaleQuestActorService:
   - Name: PhasedActors
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<Struct PhasedClusterRoot>
+    Type: TArray<Struct PhasedActor>
   - Name: PhasedItems
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Struct PhasedActors>
+    Type: TArray<Struct PhasedItem>
   - Name: CriticalActorHandedInByAnotherCrewFailureMessage
     Offset: '0xc0'
     Size: '0x38'
@@ -1097,7 +1097,7 @@ TaleQuestAddRiddleMapStepDesc:
   - Name: Text
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Text None>
+    Type: TArray<Struct FText>
   ClassSize: '0x10'
   FullSize: '0xb8'
   InheritedSize: '0xa8'
@@ -1187,7 +1187,7 @@ TaleQuestCargoRunContract:
   - Name: ItemsToCollect
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct OnCollected>
+    Type: TArray<Struct TaleQuestCargoRunContractItem>
   - Name: DeliverToNPC
     Offset: '0x88'
     Size: '0x8'
@@ -1871,7 +1871,7 @@ TaleResourceBrokerService:
   - Name: MigrationActions
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct ResourceRegistry>
+    Type: TArray<Struct MigrationActionPair>
   ClassSize: '0x48'
   FullSize: '0xa8'
   InheritedSize: '0x60'

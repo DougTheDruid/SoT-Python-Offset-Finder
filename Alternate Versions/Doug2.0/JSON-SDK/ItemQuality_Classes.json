@@ -20,19 +20,19 @@
       },
       {
         "Name": "CompanySpecificItemQualityLevels",
-        "Type": "TArray<Struct ItemQualityLevel>",
+        "Type": "TArray<Struct PerComanyItemQualityEntry>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
       {
         "Name": "CompanySpecificComplexItemQualityLevels",
-        "Type": "TArray<Struct CompanySpecificItemQualityLevels>",
+        "Type": "TArray<Struct PerComanyComplexItemQualityEntry>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
       {
         "Name": "CompanySpecificComplexItemQualityLevelsHandin",
-        "Type": "TArray<Struct CompanySpecificComplexItemQualityLevels>",
+        "Type": "TArray<Struct PerComanyComplexItemQualityEntry>",
         "Size": "0x10",
         "Offset": "0xf8"
       }

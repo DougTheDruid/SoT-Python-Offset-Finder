@@ -28,7 +28,7 @@
     "Attributes": [
       {
         "Name": "SuccessIds",
-        "Type": "TArray<Struct MatchingStates>",
+        "Type": "TArray<Struct HangoutSpotId>",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -56,7 +56,7 @@
     "Attributes": [
       {
         "Name": "MatchingStates",
-        "Type": "TArray<Byte TaskDuration>",
+        "Type": "TArray<Byte MatchingStates>",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -133,13 +133,13 @@
     "Attributes": [
       {
         "Name": "SuccessRoamingStates",
-        "Type": "TArray<Byte AfterReactAnimState>",
+        "Type": "TArray<Byte SuccessRoamingStates>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "FailRoamingStates",
-        "Type": "TArray<Byte SuccessRoamingStates>",
+        "Type": "TArray<Byte FailRoamingStates>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -409,7 +409,7 @@
     "Attributes": [
       {
         "Name": "HangoutSpotParams",
-        "Type": "TArray<Struct PetType_Cached>",
+        "Type": "TArray<Struct HangoutSpotParams>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -463,7 +463,7 @@
     "Attributes": [
       {
         "Name": "StrategyControllerMovementMods",
-        "Type": "TArray<Struct DebugMenuName>",
+        "Type": "TArray<Struct AIStategyControllerMovementMod>",
         "Size": "0x10",
         "Offset": "0x918"
       },
@@ -569,7 +569,7 @@
     "Attributes": [
       {
         "Name": "MappingEntries",
-        "Type": "TArray<Struct ResponsePriorities>",
+        "Type": "TArray<Struct PetCustomiationOverrideMappingEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -583,7 +583,7 @@
     "Attributes": [
       {
         "Name": "KnownHearingDangers",
-        "Type": "TArray<Struct PetPreviewCamera>",
+        "Type": "TArray<Struct PetDangerHearingThreat>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -601,7 +601,7 @@
       },
       {
         "Name": "ResponsePriorities",
-        "Type": "TArray<Byte FleeDistance>",
+        "Type": "TArray<Byte ResponsePriorities>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -629,7 +629,7 @@
     "Attributes": [
       {
         "Name": "HangoutSpots",
-        "Type": "TArray<Struct DropChannel>",
+        "Type": "TArray<Struct HangoutSpotPosition>",
         "Size": "0x10",
         "Offset": "0x2d0"
       },
@@ -747,7 +747,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<Struct OnRep_DebugDisplayText>",
+        "Type": "TArray<Struct PetListingTypeEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -796,7 +796,7 @@
     "Attributes": [
       {
         "Name": "AllowedPetTypes",
-        "Type": "TArray<Class AIPartId>",
+        "Type": "TArray<Class AllowedPetTypes>",
         "Size": "0x10",
         "Offset": "0x130"
       },
@@ -979,7 +979,7 @@
       },
       {
         "Name": "ExcludedStatesForRoamingAssetGeneration",
-        "Type": "TArray<Byte PetSpawnDefinitionsDataAsset>",
+        "Type": "TArray<Byte ExcludedStatesForRoamingAssetGeneration>",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -1000,7 +1000,7 @@
     "Attributes": [
       {
         "Name": "ReactMappings",
-        "Type": "TArray<Struct OnRep_DropRequest>",
+        "Type": "TArray<Struct ReactStateMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1199,7 +1199,7 @@
       },
       {
         "Name": "DropTimeouts",
-        "Type": "TArray<Struct DamageToOwnerDropThreshold>",
+        "Type": "TArray<Struct WieldablePetDropTimeout>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -1219,19 +1219,19 @@
       },
       {
         "Name": "CachedOverlappingActors",
-        "Type": "TArray<Struct HungerData>",
+        "Type": "TArray<Struct OverlapResult>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
       {
         "Name": "ActiveFoodSources",
-        "Type": "TArray<Struct CachedOverlappingActors>",
+        "Type": "TArray<Struct WieldablePetFoodSourceEntry>",
         "Size": "0x10",
         "Offset": "0x108"
       },
       {
         "Name": "FoodSourcesToRemove",
-        "Type": "TArray<Struct ActiveFoodSources>",
+        "Type": "TArray<Struct WieldablePetFoodSourceEntry>",
         "Size": "0x10",
         "Offset": "0x118"
       }

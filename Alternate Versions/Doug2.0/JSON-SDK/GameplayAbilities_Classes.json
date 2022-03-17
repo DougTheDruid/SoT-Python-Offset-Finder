@@ -52,13 +52,13 @@
       },
       {
         "Name": "Modifiers",
-        "Type": "TArray<Struct bExecutePeriodicEffectOnApplication>",
+        "Type": "TArray<Struct GameplayModifierInfo>",
         "Size": "0x10",
         "Offset": "0x1d0"
       },
       {
         "Name": "Executions",
-        "Type": "TArray<Struct Modifiers>",
+        "Type": "TArray<Struct GameplayEffectExecutionDefinition>",
         "Size": "0x10",
         "Offset": "0x1e0"
       },
@@ -70,7 +70,7 @@
       },
       {
         "Name": "TargetEffectClasses",
-        "Type": "TArray<Class ChanceToApplyToTarget>",
+        "Type": "TArray<Class TargetEffectClasses>",
         "Size": "0x10",
         "Offset": "0x210"
       },
@@ -82,7 +82,7 @@
       },
       {
         "Name": "OverflowEffects",
-        "Type": "TArray<Class TargetEffects>",
+        "Type": "TArray<Class OverflowEffects>",
         "Size": "0x10",
         "Offset": "0x230"
       },
@@ -100,13 +100,13 @@
       },
       {
         "Name": "PrematureExpirationEffectClasses",
-        "Type": "TArray<Class bClearStackOnOverflow>",
+        "Type": "TArray<Class PrematureExpirationEffectClasses>",
         "Size": "0x10",
         "Offset": "0x248"
       },
       {
         "Name": "RoutineExpirationEffectClasses",
-        "Type": "TArray<Class PrematureExpirationEffectClasses>",
+        "Type": "TArray<Class RoutineExpirationEffectClasses>",
         "Size": "0x10",
         "Offset": "0x258"
       },
@@ -118,7 +118,7 @@
       },
       {
         "Name": "GameplayCues",
-        "Type": "TArray<Struct bRequireModifierSuccessToTriggerCues>",
+        "Type": "TArray<Struct GameplayEffectCue>",
         "Size": "0x10",
         "Offset": "0x270"
       },
@@ -208,7 +208,7 @@
       },
       {
         "Name": "GrantedAbilities",
-        "Type": "TArray<Struct StackPeriodResetPolicy>",
+        "Type": "TArray<Struct GameplayAbilitySpecDef>",
         "Size": "0x10",
         "Offset": "0x568"
       }
@@ -288,7 +288,7 @@
       },
       {
         "Name": "AbilityTriggers",
-        "Type": "TArray<Struct CostGameplayEffect>",
+        "Type": "TArray<Struct AbilityTriggerData>",
         "Size": "0x10",
         "Offset": "0x1b0"
       },
@@ -488,7 +488,7 @@
       },
       {
         "Name": "BlockedAbilityBindings",
-        "Type": "TArray<Byte ActiveGameplayCues>",
+        "Type": "TArray<Byte BlockedAbilityBindings>",
         "Size": "0x10",
         "Offset": "0xb48"
       }
@@ -599,7 +599,7 @@
       },
       {
         "Name": "GameplayCueNotifyPaths",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str GameplayCueNotifyPaths>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -1157,7 +1157,7 @@
       },
       {
         "Name": "GameplayEffectClassesWhileAnimating",
-        "Type": "TArray<Class SectionName>",
+        "Type": "TArray<Class GameplayEffectClassesWhileAnimating>",
         "Size": "0x10",
         "Offset": "0x460"
       },
@@ -1191,7 +1191,7 @@
     "Attributes": [
       {
         "Name": "Abilities",
-        "Type": "TArray<Struct Radius>",
+        "Type": "TArray<Struct GameplayAbilityBindInfo>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1336,7 +1336,7 @@
       },
       {
         "Name": "PendingExecuteCues",
-        "Type": "TArray<Struct StreamableManager>",
+        "Type": "TArray<Struct GameplayCuePendingExecute>",
         "Size": "0x10",
         "Offset": "0x160"
       },
@@ -1452,7 +1452,7 @@
     "Attributes": [
       {
         "Name": "GameplayCueData",
-        "Type": "TArray<Struct RelevantAttributesToCapture>",
+        "Type": "TArray<Struct GameplayCueNotifyData>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1473,7 +1473,7 @@
     "Attributes": [
       {
         "Name": "RelevantAttributesToCapture",
-        "Type": "TArray<Struct Execute>",
+        "Type": "TArray<Struct GameplayEffectAttributeCaptureDefinition>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1508,13 +1508,13 @@
     "Attributes": [
       {
         "Name": "RelevantSourceAttributes",
-        "Type": "TArray<Struct HealthRestoreGameplayEffect>",
+        "Type": "TArray<Struct GameplayAttribute>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "RelevantTargetAttributes",
-        "Type": "TArray<Struct RelevantSourceAttributes>",
+        "Type": "TArray<Struct GameplayAttribute>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -1577,7 +1577,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<Struct GameView5>",
+        "Type": "TArray<Struct GameplayTagResponseTableEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }

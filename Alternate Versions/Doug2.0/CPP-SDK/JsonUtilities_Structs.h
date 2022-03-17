@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class JsonObjectWrapper: public None
+struct JsonObjectWrapper
 {
 public:
 };
 
 
 // Size 0x70
-class TestTextObject: public None
+struct TestTextObject
 {
 public:
 	Struct FText                                                 TestText;                                          // 0x0(0x38)
@@ -23,7 +23,7 @@ public:
 
 
 // Size 0x8
-class TestFloatObject: public None
+struct TestFloatObject
 {
 public:
 	float                                                        TestFloat1;                                        // 0x0(0x4)
@@ -32,7 +32,7 @@ public:
 
 
 // Size 0x1
-class TestEnumObject: public None
+struct TestEnumObject
 {
 public:
 	byte                                                         TestEnum;                                          // 0x0(0x1)
@@ -40,7 +40,7 @@ public:
 
 
 // Size 0x8
-class TestMessageTimespan: public None
+struct TestMessageTimespan
 {
 public:
 	Struct Timespan                                              Timespan;                                          // 0x0(0x8)
@@ -48,7 +48,7 @@ public:
 
 
 // Size 0x8
-class TestMessageDateTime: public None
+struct TestMessageDateTime
 {
 public:
 	Struct DateTime                                              DateTime;                                          // 0x0(0x8)
@@ -56,7 +56,7 @@ public:
 
 
 // Size 0x28
-class TestSerializationNestedObject: public None
+struct TestSerializationNestedObject
 {
 public:
 	Struct TestSerializationObject                               NestedObject;                                      // 0x0(0x28)
@@ -64,7 +64,7 @@ public:
 
 
 // Size 0x28
-class TestSerializationObject: public None
+struct TestSerializationObject
 {
 public:
 	bool                                                         TestBool;                                          // 0x0(0x1)
@@ -75,42 +75,42 @@ public:
 
 
 // Size 0x8
-class TestMessageUInt64: public None
+struct TestMessageUInt64
 {
 public:
 };
 
 
 // Size 0x8
-class TestMessageInt64: public None
+struct TestMessageInt64
 {
 public:
 };
 
 
 // Size 0x50
-class TestUStructMapSerializationObject: public None
+struct TestUStructMapSerializationObject
 {
 public:
 };
 
 
 // Size 0x50
-class TestInt32MapSerializationObject: public None
+struct TestInt32MapSerializationObject
 {
 public:
 };
 
 
 // Size 0x50
-class TestInvalidStringMapSerializationObject: public None
+struct TestInvalidStringMapSerializationObject
 {
 public:
 };
 
 
 // Size 0x50
-class TestStringMapSerializationObject: public None
+struct TestStringMapSerializationObject
 {
 public:
 };

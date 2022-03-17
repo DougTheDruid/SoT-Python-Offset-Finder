@@ -241,13 +241,13 @@
       },
       {
         "Name": "Projectiles",
-        "Type": "TArray<Struct OuterWatercraftNearMissRadiusInMetres>",
+        "Type": "TArray<Struct WeightedVolcanoProjectile>",
         "Size": "0x10",
         "Offset": "0x2a8"
       },
       {
         "Name": "ForceFeedbackIgnitionEffect",
-        "Type": "TArray<Struct Projectiles>",
+        "Type": "TArray<Struct LandmarkReactionEventPlayForceFeedbackEntry>",
         "Size": "0x10",
         "Offset": "0x2b8"
       },
@@ -325,7 +325,7 @@
       },
       {
         "Name": "LocalEmbers",
-        "Type": "TArray<Struct TimeBetweenLocalEmbers>",
+        "Type": "TArray<Struct VolcanoSetupDataEmbersEntry>",
         "Size": "0x10",
         "Offset": "0x428"
       },
@@ -387,7 +387,7 @@
       },
       {
         "Name": "Projectiles",
-        "Type": "TArray<Struct StartPositionOffsetInMetres>",
+        "Type": "TArray<Struct WeightedAshenLordVolcanoProjectile>",
         "Size": "0x10",
         "Offset": "0x138"
       },
@@ -911,7 +911,7 @@
       },
       {
         "Name": "SpawnAngleRelativeToPlayerDirection",
-        "Type": "TArray<Struct SpawnRadiusInMetres>",
+        "Type": "TArray<Struct GeyserSpawnAngleOption>",
         "Size": "0x10",
         "Offset": "0x170"
       },
@@ -1216,7 +1216,7 @@
       },
       {
         "Name": "PlayersInZone",
-        "Type": "TArray<Weakclass FakeUnderwaterLocationsDistanceBetweenPointsInMetres>",
+        "Type": "TArray<Weakclass PlayersInZone>",
         "Size": "0x10",
         "Offset": "0x498"
       }

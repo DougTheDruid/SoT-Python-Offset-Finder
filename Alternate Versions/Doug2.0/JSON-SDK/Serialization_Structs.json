@@ -39,7 +39,7 @@
     "Attributes": [
       {
         "Name": "Int32Array",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int Int32Array>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -63,7 +63,7 @@
       },
       {
         "Name": "VectorArray",
-        "Type": "TArray<Struct StaticFloatArray>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x30"
       }

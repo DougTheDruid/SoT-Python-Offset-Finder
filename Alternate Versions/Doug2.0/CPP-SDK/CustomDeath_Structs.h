@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class SetCustomPlayerStartData: public None
+struct SetCustomPlayerStartData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -16,14 +16,14 @@ public:
 
 
 // Size 0x18
-class CustomDeathConfiguration: public None
+struct CustomDeathConfiguration
 {
 public:
 };
 
 
 // Size 0x18
-class DestroyCustomPlayerStartData: public None
+struct DestroyCustomPlayerStartData
 {
 public:
 	int                                                          PlayerStartActorNetID;                             // 0x0(0x4)
@@ -32,7 +32,7 @@ public:
 
 
 // Size 0x8
-class CustomPlayerStartConfigResponseData: public None
+struct CustomPlayerStartConfigResponseData
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
@@ -41,17 +41,17 @@ public:
 
 
 // Size 0x30
-class CustomPlayerStartConfigData: public None
+struct CustomPlayerStartConfigData
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
 	Struct Quat                                                  Rotation;                                          // 0x10(0x10)
-	TArray<Str >                                                 Tags;                                              // 0x20(0x10)
+	TArray<Str Tags>                                             Tags;                                              // 0x20(0x10)
 };
 
 
 // Size 0x4
-class ResetCustomConfigForPlayerData: public None
+struct ResetCustomConfigForPlayerData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -59,7 +59,7 @@ public:
 
 
 // Size 0x8
-class SetShouldSkipFerryOfTheDamnedData: public None
+struct SetShouldSkipFerryOfTheDamnedData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -68,7 +68,7 @@ public:
 
 
 // Size 0x8
-class SetShouldUseRevivalFlowData: public None
+struct SetShouldUseRevivalFlowData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -77,7 +77,7 @@ public:
 
 
 // Size 0x4
-class GameModeDeathPenaltyRespawnTimerData: public None
+struct GameModeDeathPenaltyRespawnTimerData
 {
 public:
 	float                                                        SpawnTimer;                                        // 0x0(0x4)
@@ -85,7 +85,7 @@ public:
 
 
 // Size 0x8
-class ForcePlayerRespawnData: public None
+struct ForcePlayerRespawnData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -94,7 +94,7 @@ public:
 
 
 // Size 0x10
-class KillCrewData: public None
+struct KillCrewData
 {
 public:
 	Struct Guid                                                  CrewNetGUID;                                       // 0x0(0x10)
@@ -102,7 +102,7 @@ public:
 
 
 // Size 0x4
-class KillPlayerData: public None
+struct KillPlayerData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)

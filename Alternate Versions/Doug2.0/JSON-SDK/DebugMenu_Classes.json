@@ -34,13 +34,13 @@
       },
       {
         "Name": "MenuEntires",
-        "Type": "TArray<Struct DataAssets>",
+        "Type": "TArray<Struct DebugMenuDataAssetEntry>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "ButtonShortcuts",
-        "Type": "TArray<Struct MenuEntires>",
+        "Type": "TArray<Struct DebugMenuButtonShortcut>",
         "Size": "0x10",
         "Offset": "0x48"
       },

@@ -33,7 +33,7 @@ PrioritisedPromptsManager:
   - Name: AllPrompts
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct Key>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: PlayerController
     Offset: '0x40'
     Size: '0x8'

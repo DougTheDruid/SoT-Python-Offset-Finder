@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "VfxCustomisations",
-        "Type": "TArray<Struct ActivationTimerHandle>",
+        "Type": "TArray<Struct AthenaAIFormComponentVfxCustomisation>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
@@ -71,7 +71,7 @@
       },
       {
         "Name": "SpawnContextSpecificEncounterSettings",
-        "Type": "TArray<Struct DefaultSpawnWaveProgression>",
+        "Type": "TArray<Struct AISpawnContextIdEncounterSettingsPair>",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -119,13 +119,13 @@
       },
       {
         "Name": "SpawnOverrides",
-        "Type": "TArray<Struct PriorityForSpawnedPawns>",
+        "Type": "TArray<Struct ConditionalAISpawnOverride>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
         "Name": "AdditionalBehaviours",
-        "Type": "TArray<Struct SpawnOverrides>",
+        "Type": "TArray<Struct AdditionalSpawnerBehaviour>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -201,13 +201,13 @@
     "Attributes": [
       {
         "Name": "PreventHealthChangedReasons",
-        "Type": "TArray<Byte ParticleActivationDelay>",
+        "Type": "TArray<Byte PreventHealthChangedReasons>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "DamageResponses",
-        "Type": "TArray<Struct PreventHealthChangedReasons>",
+        "Type": "TArray<Struct AIFormDamageResponse>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -372,7 +372,7 @@
     "Attributes": [
       {
         "Name": "NamedControllerParams",
-        "Type": "TArray<Struct AshCloudClass>",
+        "Type": "TArray<Struct AthenaAIControllerParamValue>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -432,7 +432,7 @@
       },
       {
         "Name": "FollowUpAbilities",
-        "Type": "TArray<Struct MinMaxAttackRange>",
+        "Type": "TArray<Struct AIAbilityFollowUp>",
         "Size": "0x10",
         "Offset": "0x88"
       },
@@ -609,7 +609,7 @@
       },
       {
         "Name": "AttackAnimMapping",
-        "Type": "TArray<Struct MaxAngleToTargetToSuccessfullyAttack>",
+        "Type": "TArray<Struct AttackableTypeToAnimMapping>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -701,7 +701,7 @@
       },
       {
         "Name": "ImpulseData",
-        "Type": "TArray<Struct LosTraceRadius>",
+        "Type": "TArray<Struct SwimAttackTargetShipImpulseData>",
         "Size": "0x10",
         "Offset": "0xf0"
       },
@@ -784,7 +784,7 @@
     "Attributes": [
       {
         "Name": "AIStrategyMovementProperties",
-        "Type": "TArray<Struct GetAIStrategy>",
+        "Type": "TArray<Struct AIStrategyMovementProperties>",
         "Size": "0x10",
         "Offset": "0x558"
       },
@@ -844,7 +844,7 @@
       },
       {
         "Name": "SubscribedStairClimbStrategies",
-        "Type": "TArray<Class MinStairVelocityDampen>",
+        "Type": "TArray<Class SubscribedStairClimbStrategies>",
         "Size": "0x10",
         "Offset": "0x590"
       }
@@ -1024,7 +1024,7 @@
       },
       {
         "Name": "SubscribedStairClimbStrategies",
-        "Type": "TArray<Class MinStairVelocityDampen>",
+        "Type": "TArray<Class SubscribedStairClimbStrategies>",
         "Size": "0x10",
         "Offset": "0x308"
       }
@@ -1118,7 +1118,7 @@
       },
       {
         "Name": "WaveGroups",
-        "Type": "TArray<Struct MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup>",
+        "Type": "TArray<Struct AIBountySpawnerWaveGroup>",
         "Size": "0x10",
         "Offset": "0x430"
       },
@@ -1142,7 +1142,7 @@
       },
       {
         "Name": "WaveSuicideTime",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float WaveSuicideTime>",
         "Size": "0x10",
         "Offset": "0x490"
       },
@@ -1276,7 +1276,7 @@
       },
       {
         "Name": "AIStrategySenseSettingOverrides",
-        "Type": "TArray<Struct DamageSenseConfig>",
+        "Type": "TArray<Struct AthenaAIControllerSenseSettingOverride>",
         "Size": "0x10",
         "Offset": "0x6e0"
       },
@@ -1314,7 +1314,7 @@
       },
       {
         "Name": "StrategyControllerMovementMods",
-        "Type": "TArray<Struct DefaultControlRotationInterpSpeed>",
+        "Type": "TArray<Struct AIStategyControllerMovementMod>",
         "Size": "0x10",
         "Offset": "0x900"
       },
@@ -1817,7 +1817,7 @@
       },
       {
         "Name": "SpawnConfigList",
-        "Type": "TArray<Struct DebugCostDisplay>",
+        "Type": "TArray<Struct AIDebugSpawnConfiguration>",
         "Size": "0x10",
         "Offset": "0x3d8"
       },
@@ -1907,7 +1907,7 @@
       },
       {
         "Name": "LinkedActors",
-        "Type": "TArray<Struct DialogueData>",
+        "Type": "TArray<Struct AIDioramaPawn>",
         "Size": "0x10",
         "Offset": "0x3f0"
       }
@@ -1940,7 +1940,7 @@
       },
       {
         "Name": "SpawnedDioramaPawns",
-        "Type": "TArray<Struct DialogueData>",
+        "Type": "TArray<Struct AIDioramaPawn>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -1966,7 +1966,7 @@
     "Attributes": [
       {
         "Name": "RoleList",
-        "Type": "TArray<Struct AISenseRadiusSphere>",
+        "Type": "TArray<Struct AIDioramaRoleDesc>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -1986,7 +1986,7 @@
     "Attributes": [
       {
         "Name": "DioramaRelativeLocations",
-        "Type": "TArray<Struct AllDioramasLocationsByCategory>",
+        "Type": "TArray<Struct AIDioramaLocationSourceComponentData>",
         "Size": "0x10",
         "Offset": "0x2e0"
       },
@@ -2010,7 +2010,7 @@
       },
       {
         "Name": "Categories",
-        "Type": "TArray<Class AISenseRadiusForDebugDisplay>",
+        "Type": "TArray<Class Categories>",
         "Size": "0x10",
         "Offset": "0x300"
       },
@@ -2131,7 +2131,7 @@
       },
       {
         "Name": "FlyingStrategyProperties",
-        "Type": "TArray<Struct CanFly>",
+        "Type": "TArray<Struct PetFlyingStrategyProperties>",
         "Size": "0x10",
         "Offset": "0x8a8"
       },
@@ -2227,7 +2227,7 @@
       },
       {
         "Name": "StatesToUseAlternateNamePlatePos",
-        "Type": "TArray<Byte AlternateNamePlateHeight>",
+        "Type": "TArray<Byte StatesToUseAlternateNamePlatePos>",
         "Size": "0x10",
         "Offset": "0x928"
       },
@@ -2293,19 +2293,19 @@
       },
       {
         "Name": "TurnRateModifierList",
-        "Type": "TArray<Struct DefaultShipTurnRateModifier>",
+        "Type": "TArray<Struct PetTurnRateModifier>",
         "Size": "0x10",
         "Offset": "0x9a0"
       },
       {
         "Name": "LocomotingMovementStates",
-        "Type": "TArray<Byte TurnRateModifierList>",
+        "Type": "TArray<Byte LocomotingMovementStates>",
         "Size": "0x10",
         "Offset": "0x9b0"
       },
       {
         "Name": "RequestIdleOrMovementValidMovementStates",
-        "Type": "TArray<Byte LocomotingMovementStates>",
+        "Type": "TArray<Byte RequestIdleOrMovementValidMovementStates>",
         "Size": "0x10",
         "Offset": "0x9c0"
       },
@@ -2603,7 +2603,7 @@
       },
       {
         "Name": "CurrentlyLoadedMaterials",
-        "Type": "TArray<Struct SizeMappingsAsset>",
+        "Type": "TArray<Struct PetLoadedMaterial>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
@@ -2647,7 +2647,7 @@
     "Attributes": [
       {
         "Name": "Mappings",
-        "Type": "TArray<Struct IgnorePickupFromHangoutTooltipDisplayOffset>",
+        "Type": "TArray<Struct PetPartSizeMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -2700,7 +2700,7 @@
       },
       {
         "Name": "PetMaterials",
-        "Type": "TArray<Struct HighResMesh>",
+        "Type": "TArray<Struct PetMaterialEntry>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -2733,7 +2733,7 @@
     "Attributes": [
       {
         "Name": "WieldableReactMappings",
-        "Type": "TArray<Struct PetPartCustomisationComponent>",
+        "Type": "TArray<Struct PetWieldableReactMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -2986,7 +2986,7 @@
       },
       {
         "Name": "CollisionTypesToDoPathUpdate",
-        "Type": "TArray<Byte DrawDebugOnServer>",
+        "Type": "TArray<Byte CollisionTypesToDoPathUpdate>",
         "Size": "0x10",
         "Offset": "0x100"
       },
@@ -3184,7 +3184,7 @@
       },
       {
         "Name": "TargetLoadWeightingBias",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float TargetLoadWeightingBias>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -3250,25 +3250,25 @@
       },
       {
         "Name": "IndividualInitialBlackboardValues",
-        "Type": "TArray<Struct IndividualHealthCustomisationValues>",
+        "Type": "TArray<Struct AthenaAIControllerParamValue>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
       {
         "Name": "IndividualNamedControllerParams",
-        "Type": "TArray<Struct IndividualInitialBlackboardValues>",
+        "Type": "TArray<Struct AthenaAIControllerParamValue>",
         "Size": "0x10",
         "Offset": "0xc0"
       },
       {
         "Name": "IndividualNamedWeightedRangesControllerParams",
-        "Type": "TArray<Struct IndividualNamedControllerParams>",
+        "Type": "TArray<Struct AthenaAIControllerWeightedRangesParamValue>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
         "Name": "IndividualAIStrategySenseSettingOverrides",
-        "Type": "TArray<Struct IndividualNamedWeightedRangesControllerParams>",
+        "Type": "TArray<Struct AthenaAIControllerSenseSettingOverride>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -3586,7 +3586,7 @@
       },
       {
         "Name": "FallbackOverrideMaterials",
-        "Type": "TArray<Struct OverrideMaterials>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -3638,7 +3638,7 @@
       },
       {
         "Name": "AIStrategySenseSettingOverrides",
-        "Type": "TArray<Struct CurrentTargetPerceivedNotVisibleAge>",
+        "Type": "TArray<Struct AthenaAIControllerSenseSettingOverride>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -3650,19 +3650,19 @@
       },
       {
         "Name": "InitialBlackboardValues",
-        "Type": "TArray<Struct HealthCustomisationValues>",
+        "Type": "TArray<Struct AthenaAIControllerParamValue>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "NamedControllerParams",
-        "Type": "TArray<Struct InitialBlackboardValues>",
+        "Type": "TArray<Struct AthenaAIControllerParamValue>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "NamedWeightedRangesControllerParams",
-        "Type": "TArray<Struct NamedControllerParams>",
+        "Type": "TArray<Struct AthenaAIControllerWeightedRangesParamValue>",
         "Size": "0x10",
         "Offset": "0x78"
       }
@@ -3706,13 +3706,13 @@
       },
       {
         "Name": "AIStrategyMovementProperties",
-        "Type": "TArray<Struct DistanceInMToCannonShotHitChanceCurve>",
+        "Type": "TArray<Struct AIStrategyMovementProperties>",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "ItemCategoryAIStrategyMovementPropertiesOverrides",
-        "Type": "TArray<Struct AIStrategyMovementProperties>",
+        "Type": "TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -3724,25 +3724,25 @@
       },
       {
         "Name": "WieldedItemProjectileEffectivenessProperties",
-        "Type": "TArray<Struct CannonTargetingParams>",
+        "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "WieldedItemOverrideNamedControllerParams",
-        "Type": "TArray<Struct WieldedItemProjectileEffectivenessProperties>",
+        "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
       {
         "Name": "NamedItemParams",
-        "Type": "TArray<Struct WieldedItemOverrideNamedControllerParams>",
+        "Type": "TArray<Struct AthenaAIItemParamValue>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
       {
         "Name": "SpawnItemDescForItemCategories",
-        "Type": "TArray<Struct NamedItemParams>",
+        "Type": "TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
@@ -3754,7 +3754,7 @@
       },
       {
         "Name": "NonItemEngageOptions",
-        "Type": "TArray<Struct AIAbilityParams>",
+        "Type": "TArray<Struct AthenaAIEngageEnemyData>",
         "Size": "0x10",
         "Offset": "0x118"
       },
@@ -3840,13 +3840,13 @@
       },
       {
         "Name": "IndividualAIStrategyMovementProperties",
-        "Type": "TArray<Struct IndividualDistanceInMToCannonShotHitChanceCurve>",
+        "Type": "TArray<Struct AIStrategyMovementProperties>",
         "Size": "0x10",
         "Offset": "0x110"
       },
       {
         "Name": "IndividualItemCategoryAIStrategyMovementPropertiesOverrides",
-        "Type": "TArray<Struct IndividualAIStrategyMovementProperties>",
+        "Type": "TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride>",
         "Size": "0x10",
         "Offset": "0x120"
       },
@@ -3858,25 +3858,25 @@
       },
       {
         "Name": "IndividualWieldedItemProjectileEffectivenessProperties",
-        "Type": "TArray<Struct IndividualCannonTargetingParams>",
+        "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP>",
         "Size": "0x10",
         "Offset": "0x140"
       },
       {
         "Name": "IndividualWieldedItemOverrideNamedControllerParams",
-        "Type": "TArray<Struct IndividualWieldedItemProjectileEffectivenessProperties>",
+        "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams>",
         "Size": "0x10",
         "Offset": "0x150"
       },
       {
         "Name": "IndividualNamedItemParams",
-        "Type": "TArray<Struct IndividualWieldedItemOverrideNamedControllerParams>",
+        "Type": "TArray<Struct AthenaAIItemParamValue>",
         "Size": "0x10",
         "Offset": "0x160"
       },
       {
         "Name": "IndividualSpawnItemDescForItemCategories",
-        "Type": "TArray<Struct IndividualNamedItemParams>",
+        "Type": "TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>",
         "Size": "0x10",
         "Offset": "0x170"
       },
@@ -3888,13 +3888,13 @@
       },
       {
         "Name": "HealthStages",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float HealthStages>",
         "Size": "0x10",
         "Offset": "0x188"
       },
       {
         "Name": "IndividualDamageBasedAIAbilityStages",
-        "Type": "TArray<Struct HealthStages>",
+        "Type": "TArray<Struct AthenaAIAbilityDamageStage>",
         "Size": "0x10",
         "Offset": "0x198"
       },
@@ -3906,7 +3906,7 @@
       },
       {
         "Name": "IndividualNonItemEngageOptions",
-        "Type": "TArray<Struct IndividualAIAbilityParams>",
+        "Type": "TArray<Struct AthenaAIEngageEnemyData>",
         "Size": "0x10",
         "Offset": "0x1b8"
       },
@@ -3962,7 +3962,7 @@
     "Attributes": [
       {
         "Name": "AmmoWeights",
-        "Type": "TArray<Struct NumberOfRanks>",
+        "Type": "TArray<Struct AthenaAICharacterControllerWeightedAmmoType>",
         "Size": "0x10",
         "Offset": "0xb8"
       },
@@ -3982,7 +3982,7 @@
     "Attributes": [
       {
         "Name": "RankMappings",
-        "Type": "TArray<Struct AllProgressions>",
+        "Type": "TArray<Struct AIAmmoRankMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4109,7 +4109,7 @@
     "Attributes": [
       {
         "Name": "AllClassIds",
-        "Type": "TArray<Class AvailableColors>",
+        "Type": "TArray<Class AllClassIds>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4123,7 +4123,7 @@
     "Attributes": [
       {
         "Name": "AvailableColors",
-        "Type": "TArray<Struct OnVulnerabilityStateEntered>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4144,31 +4144,31 @@
     "Attributes": [
       {
         "Name": "Lines",
-        "Type": "TArray<Struct TargetItemDropOverrides>",
+        "Type": "TArray<Struct AIDebugVisualisationLine>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "Boxes",
-        "Type": "TArray<Struct Lines>",
+        "Type": "TArray<Struct AIDebugVisualisationBox>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
       {
         "Name": "Cylinders",
-        "Type": "TArray<Struct Boxes>",
+        "Type": "TArray<Struct AIDebugVisualisationCylinder>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
       {
         "Name": "Spheres",
-        "Type": "TArray<Struct Cylinders>",
+        "Type": "TArray<Struct AIDebugVisualisationSphere>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
       {
         "Name": "Cones",
-        "Type": "TArray<Struct Spheres>",
+        "Type": "TArray<Struct AIDebugVisualisationCone>",
         "Size": "0x10",
         "Offset": "0x108"
       }
@@ -4189,7 +4189,7 @@
     "Attributes": [
       {
         "Name": "Forms",
-        "Type": "TArray<Struct FeatureBasedRecipeLists>",
+        "Type": "TArray<Struct AIFormVarietyEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4233,7 +4233,7 @@
       },
       {
         "Name": "FeatureBasedRecipeLists",
-        "Type": "TArray<Struct Recipes>",
+        "Type": "TArray<Struct AIEncounterGenerationRecipeFeatureBasedRankOrderList>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -4282,7 +4282,7 @@
     "Attributes": [
       {
         "Name": "RankMappings",
-        "Type": "TArray<Struct AllProgressions>",
+        "Type": "TArray<Struct AIFormRankMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4406,13 +4406,13 @@
     "Attributes": [
       {
         "Name": "DefaultPartsCategories",
-        "Type": "TArray<Struct NumberOfRanks>",
+        "Type": "TArray<Struct AIPartsCategoryMapping>",
         "Size": "0x10",
         "Offset": "0x3d8"
       },
       {
         "Name": "FormPartsCategories",
-        "Type": "TArray<Struct DefaultPartsCategories>",
+        "Type": "TArray<Struct AIPartsCategoryFormMapping>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
@@ -4510,7 +4510,7 @@
     "Attributes": [
       {
         "Name": "RankMappings",
-        "Type": "TArray<Struct TeamColor>",
+        "Type": "TArray<Struct AISkillsetRankMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4679,7 +4679,7 @@
     "Attributes": [
       {
         "Name": "AllSpawners",
-        "Type": "TArray<AssetClass AllProgressions>",
+        "Type": "TArray<AssetClass AllSpawners>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4728,7 +4728,7 @@
     "Attributes": [
       {
         "Name": "RankMappings",
-        "Type": "TArray<Struct AllowedLoadouts>",
+        "Type": "TArray<Struct AIDropSpawnerRankMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4769,7 +4769,7 @@
     "Attributes": [
       {
         "Name": "RankMappings",
-        "Type": "TArray<Struct AddNameplateToAI>",
+        "Type": "TArray<Struct AILoadoutRankMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4810,13 +4810,13 @@
     "Attributes": [
       {
         "Name": "AITypes",
-        "Type": "TArray<Struct FeatureName>",
+        "Type": "TArray<Struct AITypeData>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "AdditionalAIActors",
-        "Type": "TArray<Struct AITypes>",
+        "Type": "TArray<Struct StringClassReference>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -4830,7 +4830,7 @@
     "Attributes": [
       {
         "Name": "Waves",
-        "Type": "TArray<Struct NumberOfRanks>",
+        "Type": "TArray<Struct AISpawnerWave>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4850,7 +4850,7 @@
     "Attributes": [
       {
         "Name": "RankMappings",
-        "Type": "TArray<Struct FeatureName>",
+        "Type": "TArray<Struct AISpawnWaveSequenceRankMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4896,7 +4896,7 @@
     "Attributes": [
       {
         "Name": "RankMappings",
-        "Type": "TArray<Struct AICharacterWaterInteractionCollisionProfileName>",
+        "Type": "TArray<Struct AIWeightedProbabilityRangeOfRangesRankMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -5128,13 +5128,13 @@
     "Attributes": [
       {
         "Name": "LoadedAIPawnClasses",
-        "Type": "TArray<Class BlockAIAbility>",
+        "Type": "TArray<Class LoadedAIPawnClasses>",
         "Size": "0x10",
         "Offset": "0x4d8"
       },
       {
         "Name": "LoadedAIItemDropComponentClasses",
-        "Type": "TArray<Class LoadedAIPawnClasses>",
+        "Type": "TArray<Class LoadedAIItemDropComponentClasses>",
         "Size": "0x10",
         "Offset": "0x4e8"
       },
@@ -5152,7 +5152,7 @@
       },
       {
         "Name": "CustomPlayersTrackerDatas",
-        "Type": "TArray<Struct PlayerTrackers>",
+        "Type": "TArray<Struct CustomPlayersAITrackerData>",
         "Size": "0x10",
         "Offset": "0x848"
       },
@@ -5191,7 +5191,7 @@
     "Attributes": [
       {
         "Name": "BlockedAIAbilities",
-        "Type": "TArray<Class TeamColors>",
+        "Type": "TArray<Class BlockedAIAbilities>",
         "Size": "0x10",
         "Offset": "0xb40"
       }
@@ -5239,7 +5239,7 @@
     "Attributes": [
       {
         "Name": "AIPartIdsVariantInfo",
-        "Type": "TArray<Struct KilledVfxTemplate>",
+        "Type": "TArray<Struct AIPartIdNumVariantInfo>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -5340,7 +5340,7 @@
       },
       {
         "Name": "SpawnLocationGroups",
-        "Type": "TArray<Struct RegionRadius>",
+        "Type": "TArray<Struct SpawnLocationGroup>",
         "Size": "0x10",
         "Offset": "0x2e8"
       }
@@ -5389,7 +5389,7 @@
     "Attributes": [
       {
         "Name": "SpawnContextList",
-        "Type": "TArray<Struct NumWavesToSpawnOnSpottedNewTarget>",
+        "Type": "TArray<Struct AISpawnContextData>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -5410,7 +5410,7 @@
     "Attributes": [
       {
         "Name": "SpawnedWaves",
-        "Type": "TArray<Struct SpawnedWave>",
+        "Type": "TArray<Struct AIPersistentSpawnerWave>",
         "Size": "0x10",
         "Offset": "0x428"
       },
@@ -5593,7 +5593,7 @@
     "Attributes": [
       {
         "Name": "MaleCaptainNames",
-        "Type": "TArray<Text None>",
+        "Type": "TArray<Struct FText>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -5617,13 +5617,13 @@
       },
       {
         "Name": "CustomNameTitles",
-        "Type": "TArray<Struct FemaleCrewNames>",
+        "Type": "TArray<Struct AICustomNameTitleMapping>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "CustomNameOverrides",
-        "Type": "TArray<Struct CustomNameTitles>",
+        "Type": "TArray<Struct AICustomClassIdNameOverrides>",
         "Size": "0x10",
         "Offset": "0x78"
       },
@@ -5685,7 +5685,7 @@
       },
       {
         "Name": "ShowNameplatesFor",
-        "Type": "TArray<Class NewWaveSpawnSfxTriggerRadius>",
+        "Type": "TArray<Class ShowNameplatesFor>",
         "Size": "0x10",
         "Offset": "0x628"
       },
@@ -5717,7 +5717,7 @@
       },
       {
         "Name": "Waves",
-        "Type": "TArray<Struct ApplyLocalisableNamesToNameplates>",
+        "Type": "TArray<Struct AIPersistentSpawnerWave>",
         "Size": "0x10",
         "Offset": "0x430"
       },
@@ -5854,7 +5854,7 @@
     "Attributes": [
       {
         "Name": "Contexts",
-        "Type": "TArray<Class ShouldApplyOverride>",
+        "Type": "TArray<Class Contexts>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -6017,7 +6017,7 @@
       },
       {
         "Name": "PerDepthSpawnChances",
-        "Type": "TArray<Struct SharkEncounterSpawnBlockingData>",
+        "Type": "TArray<Struct PerDepthSpawnChance>",
         "Size": "0x10",
         "Offset": "0x4b8"
       },
@@ -6029,13 +6029,13 @@
       },
       {
         "Name": "PlayersInWater",
-        "Type": "TArray<Struct SharkPerPlayerSpawner>",
+        "Type": "TArray<Struct PlayerInWaterData>",
         "Size": "0x10",
         "Offset": "0x600"
       },
       {
         "Name": "SirenEncounters",
-        "Type": "TArray<Struct PlayersInWater>",
+        "Type": "TArray<Struct SirenEncounterData>",
         "Size": "0x10",
         "Offset": "0x610"
       }
@@ -6056,7 +6056,7 @@
     "Attributes": [
       {
         "Name": "Status",
-        "Type": "TArray<Class bProcessingSpawnLocations>",
+        "Type": "TArray<Class Status>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -6074,19 +6074,19 @@
       },
       {
         "Name": "AllowedAIForms",
-        "Type": "TArray<AssetClass AllowAllForms>",
+        "Type": "TArray<AssetClass AllowedAIForms>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "AIClassesToIgnore",
-        "Type": "TArray<Class AllowedAIForms>",
+        "Type": "TArray<Class AIClassesToIgnore>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "AllowedSources",
-        "Type": "TArray<AssetClass AIClassesToIgnore>",
+        "Type": "TArray<AssetClass AllowedSources>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -6107,7 +6107,7 @@
     "Attributes": [
       {
         "Name": "LocationsToSpawnCrack",
-        "Type": "TArray<Struct OnLifeSpanPercentLeft>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x78"
       },
@@ -6177,7 +6177,7 @@
     "Attributes": [
       {
         "Name": "ValidBurrowSurfaceTypes",
-        "Type": "TArray<Byte StatusToApplyOnHeal>",
+        "Type": "TArray<Byte ValidBurrowSurfaceTypes>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -6327,13 +6327,13 @@
     "Attributes": [
       {
         "Name": "PotentialTargets",
-        "Type": "TArray<Weakclass OwnerChainLightningSourceInterface>",
+        "Type": "TArray<Weakclass PotentialTargets>",
         "Size": "0x10",
         "Offset": "0x78"
       },
       {
         "Name": "BuffedTargets",
-        "Type": "TArray<Struct CachedBuffReceiver>",
+        "Type": "TArray<Struct BuffedTargetData>",
         "Size": "0x10",
         "Offset": "0xa8"
       }
@@ -6347,7 +6347,7 @@
     "Attributes": [
       {
         "Name": "SelectedTargets",
-        "Type": "TArray<Interface BreathVFX>",
+        "Type": "TArray<Interface SelectedTargets>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -6418,7 +6418,7 @@
       },
       {
         "Name": "AbilityDamageStages",
-        "Type": "TArray<Struct DebugAlwaysOnAbility>",
+        "Type": "TArray<Struct AthenaAIAbilityDamageStage>",
         "Size": "0x10",
         "Offset": "0x108"
       }
@@ -6432,7 +6432,7 @@
     "Attributes": [
       {
         "Name": "AbilityStages",
-        "Type": "TArray<Struct DelayBeforeSFXPlays>",
+        "Type": "TArray<Struct AthenaAIAbilityDamageStage>",
         "Size": "0x10",
         "Offset": "0x178"
       },
@@ -6444,7 +6444,7 @@
       },
       {
         "Name": "ReadyAbilitiesPool",
-        "Type": "TArray<Class AIAbilities>",
+        "Type": "TArray<Class ReadyAbilitiesPool>",
         "Size": "0x10",
         "Offset": "0x198"
       },
@@ -6631,7 +6631,7 @@
     "Attributes": [
       {
         "Name": "AmmoTypeRanges",
-        "Type": "TArray<Struct ClearOverridePrioritiseInteractablesBeforeEnemies>",
+        "Type": "TArray<Struct WeightedAmmoTypeRange>",
         "Size": "0x10",
         "Offset": "0xd0"
       }
@@ -6701,7 +6701,7 @@
       },
       {
         "Name": "SpawnItemDescForItemCategories",
-        "Type": "TArray<Struct CharacterParamsDataAsset>",
+        "Type": "TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>",
         "Size": "0x10",
         "Offset": "0x9c8"
       },
@@ -6713,7 +6713,7 @@
       },
       {
         "Name": "NonItemEngageOptions",
-        "Type": "TArray<Struct AIAbilityParams>",
+        "Type": "TArray<Struct AthenaAIEngageEnemyData>",
         "Size": "0x10",
         "Offset": "0x9e8"
       },
@@ -6746,7 +6746,7 @@
       },
       {
         "Name": "CarriedItemThreatOverrides",
-        "Type": "TArray<Struct Courage>",
+        "Type": "TArray<Struct CarriedItemThreatOverride>",
         "Size": "0x10",
         "Offset": "0x120"
       },
@@ -6758,7 +6758,7 @@
       },
       {
         "Name": "KnownHearingDangers",
-        "Type": "TArray<Struct ThreatenedBySightOfCarrier>",
+        "Type": "TArray<Struct HearingThreat>",
         "Size": "0x10",
         "Offset": "0x138"
       },
@@ -7003,7 +7003,7 @@
     "Attributes": [
       {
         "Name": "Strategies",
-        "Type": "TArray<Class ExpectedTrackId>",
+        "Type": "TArray<Class Strategies>",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -7167,7 +7167,7 @@
     "Attributes": [
       {
         "Name": "FloatConditions",
-        "Type": "TArray<Struct Value>",
+        "Type": "TArray<Struct BlackboardValueCondition>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -7402,7 +7402,7 @@
     "Attributes": [
       {
         "Name": "ChanceKeyPairs",
-        "Type": "TArray<Struct Chance>",
+        "Type": "TArray<Struct ChanceAndBlackboardKeyPair>",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -7537,7 +7537,7 @@
     "Attributes": [
       {
         "Name": "ChannelsToLeaveUnaffected",
-        "Type": "TArray<Byte Conditional>",
+        "Type": "TArray<Byte ChannelsToLeaveUnaffected>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -7652,7 +7652,7 @@
       },
       {
         "Name": "QueryParams",
-        "Type": "TArray<Struct QueryTemplate>",
+        "Type": "TArray<Struct EnvNamedValue>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
@@ -8361,7 +8361,7 @@
     "Attributes": [
       {
         "Name": "WeightedStrategies",
-        "Type": "TArray<Struct Actor>",
+        "Type": "TArray<Struct WeightedAIStrategyChance>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -8832,7 +8832,7 @@
     "Attributes": [
       {
         "Name": "CustomAnimationAssets",
-        "Type": "TArray<Struct SeenActors>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -9027,7 +9027,7 @@
     "Attributes": [
       {
         "Name": "Radiuses",
-        "Type": "TArray<Struct DirectArcTarget>",
+        "Type": "TArray<Struct AIDataProviderFloatValue>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -9231,7 +9231,7 @@
       },
       {
         "Name": "ZOffsetOfRingsFromContext",
-        "Type": "TArray<Struct Radius>",
+        "Type": "TArray<Struct AIDataProviderFloatValue>",
         "Size": "0x10",
         "Offset": "0xc0"
       },
@@ -9369,7 +9369,7 @@
     "Attributes": [
       {
         "Name": "AIClasses",
-        "Type": "TArray<Class AllowedAIForms>",
+        "Type": "TArray<Class AIClasses>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -9383,7 +9383,7 @@
     "Attributes": [
       {
         "Name": "AllowedAIForms",
-        "Type": "TArray<AssetClass AISkillsets>",
+        "Type": "TArray<AssetClass AllowedAIForms>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -9463,7 +9463,7 @@
     "Attributes": [
       {
         "Name": "SpawnContextIDs",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },
@@ -9588,7 +9588,7 @@
     "Attributes": [
       {
         "Name": "StrategyVulnerabilities",
-        "Type": "TArray<Struct Spawners>",
+        "Type": "TArray<Struct AIStrategyVulnerabilityData>",
         "Size": "0x10",
         "Offset": "0xc8"
       },

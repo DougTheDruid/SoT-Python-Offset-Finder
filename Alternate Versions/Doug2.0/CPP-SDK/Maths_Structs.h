@@ -7,15 +7,15 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class WeightedProbabilityRange: public None
+struct WeightedProbabilityRange
 {
 public:
-	TArray<Float >                                               Weights;                                           // 0x10(0x10)
+	TArray<Float Weights>                                        Weights;                                           // 0x10(0x10)
 };
 
 
 // Size 0x30
-class WeightedProbabilityRangeOfRanges: public None
+struct WeightedProbabilityRangeOfRanges
 {
 public:
 	TArray<Struct WeightedProbabilityRangeOfRangesFloatPair>     SubRanges;                                         // 0x20(0x10)
@@ -23,7 +23,7 @@ public:
 
 
 // Size 0x8
-class WeightedProbabilityRangeOfRangesFloatPair: public None
+struct WeightedProbabilityRangeOfRangesFloatPair
 {
 public:
 	float                                                        Min;                                               // 0x0(0x4)
@@ -32,7 +32,7 @@ public:
 
 
 // Size 0x18
-class OrientedPoint: public None
+struct OrientedPoint
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
@@ -41,7 +41,7 @@ public:
 
 
 // Size 0x18
-class RotationUpdateResult: public None
+struct RotationUpdateResult
 {
 public:
 	Struct Rotator                                               UpdatedRotation;                                   // 0x0(0xc)
@@ -52,14 +52,14 @@ public:
 
 
 // Size 0x18
-class TimedBuffer: public None
+struct TimedBuffer
 {
 public:
 };
 
 
 // Size 0x18
-class FixedStepInterpCurveVector2D: public None
+struct FixedStepInterpCurveVector2D
 {
 public:
 	TArray<Struct FixedStepInterpCurvePointVector2D>             Points;                                            // 0x0(0x10)
@@ -69,7 +69,7 @@ public:
 
 
 // Size 0x10
-class FixedStepInterpCurvePointVector2D: public None
+struct FixedStepInterpCurvePointVector2D
 {
 public:
 	Struct Vector2D                                              OutVal;                                            // 0x0(0x8)
@@ -78,7 +78,7 @@ public:
 
 
 // Size 0x10
-class InertialSmoothedFloat: public None
+struct InertialSmoothedFloat
 {
 public:
 	float                                                        AccelerationMagnitude;                             // 0x0(0x4)
@@ -89,7 +89,7 @@ public:
 
 
 // Size 0x8
-class SpatialOffset: public None
+struct SpatialOffset
 {
 public:
 	float                                                        OffsetValue;                                       // 0x0(0x4)

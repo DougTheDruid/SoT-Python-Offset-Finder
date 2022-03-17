@@ -96,7 +96,7 @@ public:
 class IslandTypeWeightsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct StructForCollector>                            IslandTypeWeightsForDifficultyRanks;               // 0x28(0x10)
+	TArray<Struct IslandTypeWeights>                             IslandTypeWeightsForDifficultyRanks;               // 0x28(0x10)
 };
 
 
@@ -152,7 +152,7 @@ public:
 class TaleQuestCargoRunContract: public Object
 {
 public:
-	TArray<Struct OnCollected>                                   ItemsToCollect;                                    // 0x68(0x10)
+	TArray<Struct TaleQuestCargoRunContractItem>                 ItemsToCollect;                                    // 0x68(0x10)
 	Class Actor*                                                 DeliverToNPC;                                      // 0x88(0x8)
 	Class Actor*                                                 CollectFromNPC;                                    // 0x90(0x8)
 };
@@ -217,7 +217,7 @@ class RewardGenTaleQuestService: public TaleQuestService
 {
 public:
 	Class TaleQuestWeightedItemDescSpawnDataAsset*               GlobalSpawnData;                                   // 0x60(0x8)
-	TArray<Int >                                                 ValidSpawnData;                                    // 0x68(0x10)
+	TArray<Int ValidSpawnData>                                   ValidSpawnData;                                    // 0x68(0x10)
 	TArray<class ItemsToSpawn*>                                  ItemsToSpawn;                                      // 0x78(0x10)
 };
 
@@ -226,13 +226,13 @@ public:
 class TaleQuestActorService: public TaleQuestService
 {
 public:
-	TArray<Struct Desc>                                          TrackedActors;                                     // 0x60(0x10)
-	TArray<Struct TrackedActors>                                 CriticalActors;                                    // 0x70(0x10)
-	TArray<Struct CriticalActors>                                SnapshottedActors;                                 // 0x80(0x10)
+	TArray<Struct TrackedActorData>                              TrackedActors;                                     // 0x60(0x10)
+	TArray<Struct CriticalActorDelegateData>                     CriticalActors;                                    // 0x70(0x10)
+	TArray<Struct SnapshottedActorData>                          SnapshottedActors;                                 // 0x80(0x10)
 	Class TaleQuestActorServiceDesc*                             Desc;                                              // 0x90(0x8)
 	Class PhasedClusterRoot*                                     PhasedClusterRoot;                                 // 0x98(0x8)
-	TArray<Struct PhasedClusterRoot>                             PhasedActors;                                      // 0xa0(0x10)
-	TArray<Struct PhasedActors>                                  PhasedItems;                                       // 0xb0(0x10)
+	TArray<Struct PhasedActor>                                   PhasedActors;                                      // 0xa0(0x10)
+	TArray<Struct PhasedItem>                                    PhasedItems;                                       // 0xb0(0x10)
 	Struct FText                                                 CriticalActorHandedInByAnotherCrewFailureMessage;  // 0xc0(0x38)
 };
 
@@ -272,7 +272,7 @@ public:
 class TaleResourceBrokerService: public TaleQuestService
 {
 public:
-	TArray<Struct ResourceRegistry>                              MigrationActions;                                  // 0x80(0x10)
+	TArray<Struct MigrationActionPair>                           MigrationActions;                                  // 0x80(0x10)
 };
 
 
@@ -465,7 +465,7 @@ class PlaySequencerAnimationOnCutsceneActorStep: public TaleQuestStep
 public:
 	Class PlaySequencerAnimationOnCutsceneActorStepDesc*         StepDesc;                                          // 0x90(0x8)
 	Class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0x98(0x8)
-	TArray<Struct SequencerCutSceneActor>                        PossessableSequences;                              // 0xa0(0x10)
+	TArray<Struct PossessableSequence>                           PossessableSequences;                              // 0xa0(0x10)
 };
 
 
@@ -1309,7 +1309,7 @@ public:
 class TaleQuestAddRiddleMapStepDesc: public TaleQuestAddRiddleMapBaseStepDesc
 {
 public:
-	TArray<Text None>                                            Text;                                              // 0xa8(0x10)
+	TArray<Struct FText>                                         Text;                                              // 0xa8(0x10)
 };
 
 

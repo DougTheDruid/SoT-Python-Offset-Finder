@@ -95,35 +95,35 @@ WwiseAudioGameStateSettings:
   - Name: EventsToPlayOnLobbyStart
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct AudioGameStateIngame>
+    Type: TArray<Struct StringAssetReference>
   - Name: EventsToPlayOnLobbyEnd
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct EventsToPlayOnLobbyStart>
+    Type: TArray<Struct StringAssetReference>
   - Name: EventsToPlayOnEngageStart
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct EventsToPlayOnLobbyEnd>
+    Type: TArray<Struct StringAssetReference>
   - Name: EventsToPlayOnEngageEnd
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct EventsToPlayOnEngageStart>
+    Type: TArray<Struct StringAssetReference>
   - Name: EventsToPlayOnLoadingStart
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct EventsToPlayOnEngageEnd>
+    Type: TArray<Struct StringAssetReference>
   - Name: EventsToPlayOnLoadingEnd
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct EventsToPlayOnLoadingStart>
+    Type: TArray<Struct StringAssetReference>
   - Name: EventsToPlayOnFrontEndOrLoadingStart
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct EventsToPlayOnLoadingEnd>
+    Type: TArray<Struct StringAssetReference>
   - Name: EventsToPlayOnFrontEndOrLoadingEnd
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct EventsToPlayOnFrontEndOrLoadingStart>
+    Type: TArray<Struct StringAssetReference>
   ClassSize: '0xa0'
 WwiseAudioReverbPresets:
   Attributes:

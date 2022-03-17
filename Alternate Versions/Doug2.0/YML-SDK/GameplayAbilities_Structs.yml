@@ -79,7 +79,7 @@ ActiveGameplayEffectsContainer:
   - Name: GameplayEffects_Internal
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct AvatarActor>
+    Type: TArray<Struct ActiveGameplayEffect>
   ClassSize: '0x368'
 AttributeBasedFloat:
   Attributes:
@@ -374,7 +374,7 @@ GameplayAbilityTargetData_ActorArray:
   - Name: TargetActorArray
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Weakclass SourceLocation>
+    Type: TArray<Weakclass TargetActorArray>
   ClassSize: '0x90'
 GameplayAbilityTargetData_LocationInfo:
   Attributes:
@@ -528,7 +528,7 @@ GameplayEffectAttributeCaptureSpecContainer:
   - Name: SourceAttributes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ModifiedAttributes>
+    Type: TArray<Struct GameplayEffectAttributeCaptureSpec>
   - Name: TargetAttributes
     Offset: '0x10'
     Size: '0x10'
@@ -543,7 +543,7 @@ GameplayEffectContext:
   - Name: Actors
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Weakclass InstigatorAbilitySystemComponent>
+    Type: TArray<Weakclass Actors>
   - Name: WorldOrigin
     Offset: '0x50'
     Size: '0xc'
@@ -580,7 +580,7 @@ GameplayEffectCustomExecutionOutput:
   - Name: OutputModifiers
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct GameplayEffectCustomExecutionParameters>
+    Type: TArray<Struct GameplayModifierEvaluatedData>
   - Name: bTriggerConditionalGameplayEffects
     Offset: '0x10'
     Size: '0x1'
@@ -614,7 +614,7 @@ GameplayEffectExecutionDefinition:
   - Name: ConditionalGameplayEffectClasses
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Class CalculationModifiers>
+    Type: TArray<Class ConditionalGameplayEffectClasses>
   ClassSize: '0x50'
 GameplayEffectExecutionScopedModifierInfo:
   Attributes:
@@ -780,7 +780,7 @@ GameplayEffectSpecForRPC:
   - Name: ModifiedAttributes
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct Def>
+    Type: TArray<Struct GameplayEffectModifiedAttribute>
   - Name: EffectContext
     Offset: '0x18'
     Size: '0x20'

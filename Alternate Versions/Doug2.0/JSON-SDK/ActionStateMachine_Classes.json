@@ -98,13 +98,13 @@
     "Attributes": [
       {
         "Name": "StateDefaultValue",
-        "Type": "TArray<Struct CreatePriorityTable>",
+        "Type": "TArray<Struct ActionStatePriorityRelationship>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "PriorityTableEntry",
-        "Type": "TArray<Struct StateDefaultValue>",
+        "Type": "TArray<Struct ActionStatePriorityList>",
         "Size": "0x10",
         "Offset": "0x38"
       }

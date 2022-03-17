@@ -69,7 +69,7 @@ RegionIslandFilteredSelectionStrategy:
   - Name: IslandTypes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Byte SelectionStrategy>
+    Type: TArray<Byte IslandTypes>
   - Name: UseMaxDistance
     Offset: '0x38'
     Size: '0x1'

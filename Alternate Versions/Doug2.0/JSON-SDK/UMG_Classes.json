@@ -130,7 +130,7 @@
     "Attributes": [
       {
         "Name": "BrushPropertyNamePath",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -415,7 +415,7 @@
       },
       {
         "Name": "NamedSlotBindings",
-        "Type": "TArray<Struct StoppedSequencePlayers>",
+        "Type": "TArray<Struct NamedSlotBinding>",
         "Size": "0x10",
         "Offset": "0x1d0"
       }
@@ -939,7 +939,7 @@
     "Attributes": [
       {
         "Name": "DefaultOptions",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str DefaultOptions>",
         "Size": "0x10",
         "Offset": "0x138"
       },
@@ -1792,13 +1792,13 @@
     "Attributes": [
       {
         "Name": "ColumnFill",
-        "Type": "TArray<Float None>",
+        "Type": "TArray<Float ColumnFill>",
         "Size": "0x10",
         "Offset": "0x150"
       },
       {
         "Name": "RowFill",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float RowFill>",
         "Size": "0x10",
         "Offset": "0x160"
       }
@@ -2486,7 +2486,7 @@
       },
       {
         "Name": "AnimationBindings",
-        "Type": "TArray<Struct MovieScene>",
+        "Type": "TArray<Struct WidgetAnimationBinding>",
         "Size": "0x10",
         "Offset": "0x2d0"
       }
@@ -2506,7 +2506,7 @@
       },
       {
         "Name": "Bindings",
-        "Type": "TArray<Struct WidgetTree>",
+        "Type": "TArray<Struct DelegateRuntimeBinding>",
         "Size": "0x10",
         "Offset": "0x230"
       },

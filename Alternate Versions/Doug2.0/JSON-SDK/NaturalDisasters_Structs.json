@@ -232,7 +232,7 @@
       },
       {
         "Name": "CameraShakes",
-        "Type": "TArray<Class ForceFeedback>",
+        "Type": "TArray<Class CameraShakes>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -266,7 +266,7 @@
     "Attributes": [
       {
         "Name": "ForceFeedback",
-        "Type": "TArray<Struct GeyserSpawnAngleOption>",
+        "Type": "TArray<Struct LandmarkReactionEventPlayForceFeedbackEntry>",
         "Size": "0x10",
         "Offset": "0x0"
       }

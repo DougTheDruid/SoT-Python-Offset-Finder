@@ -31,11 +31,11 @@ DebugMenuDataAsset:
   - Name: MenuEntires
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct DataAssets>
+    Type: TArray<Struct DebugMenuDataAssetEntry>
   - Name: ButtonShortcuts
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct MenuEntires>
+    Type: TArray<Struct DebugMenuButtonShortcut>
   - Name: MenuEntryGenerators
     Offset: '0x58'
     Size: '0x10'

@@ -21,7 +21,7 @@ RegionAssetCacheActor:
   - Name: RegionData
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<Struct GetPressureZoneParameters>
+    Type: TArray<Struct RegionAssetsList>
   - Name: LoadedAssets
     Offset: '0x3e0'
     Size: '0x10'

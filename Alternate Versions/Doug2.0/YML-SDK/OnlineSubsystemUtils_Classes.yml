@@ -293,7 +293,7 @@ PartyBeaconState:
   - Name: Reservations
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct ForceTeamNum>
+    Type: TArray<Struct PartyReservation>
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'

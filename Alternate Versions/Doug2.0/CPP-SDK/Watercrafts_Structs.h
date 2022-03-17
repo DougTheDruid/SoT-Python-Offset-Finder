@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class RowboatDamageEffectData: public None
+struct RowboatDamageEffectData
 {
 public:
 	Class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x20
-class RowboatStrainDamageData: public None
+struct RowboatStrainDamageData
 {
 public:
 	float                                                        StormDamageScalar;                                 // 0x0(0x4)
@@ -31,7 +31,7 @@ public:
 
 
 // Size 0x18
-class ScrapeableDamageSpeedEntry: public None
+struct ScrapeableDamageSpeedEntry
 {
 public:
 	class                                                        SpeedBand;                                         // 0x0(0x8)
@@ -41,7 +41,7 @@ public:
 
 
 // Size 0xc
-class WatercraftRolloverCorrector: public None
+struct WatercraftRolloverCorrector
 {
 public:
 	float                                                        RollThresholdToConsiderRolledOver;                 // 0x0(0x4)
@@ -50,7 +50,7 @@ public:
 
 
 // Size 0x38
-class OarParams: public None
+struct OarParams
 {
 public:
 	float                                                        RowingPower;                                       // 0x0(0x4)
@@ -66,7 +66,7 @@ public:
 
 
 // Size 0x60
-class Oar: public None
+struct Oar
 {
 public:
 	Struct OarParams                                             OarParams;                                         // 0x0(0x38)
@@ -74,35 +74,35 @@ public:
 
 
 // Size 0x20
-class QuestVariableWatercraft: public None
+struct QuestVariableWatercraft
 {
 public:
 };
 
 
 // Size 0x1
-class EventOarStrokeEnded: public None
+struct EventOarStrokeEnded
 {
 public:
 };
 
 
 // Size 0x1
-class EventRowboatExitedWater: public None
+struct EventRowboatExitedWater
 {
 public:
 };
 
 
 // Size 0x1
-class EventRowboatEnteredWater: public None
+struct EventRowboatEnteredWater
 {
 public:
 };
 
 
 // Size 0x14
-class RowboatMountStateTelemetryEvent: public None
+struct RowboatMountStateTelemetryEvent
 {
 public:
 	Struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
@@ -111,7 +111,7 @@ public:
 
 
 // Size 0x20
-class WatercraftDespawnTelemetryEvent: public None
+struct WatercraftDespawnTelemetryEvent
 {
 public:
 	Struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
@@ -121,7 +121,7 @@ public:
 
 
 // Size 0x38
-class WatercraftSpawnTelemetryEvent: public None
+struct WatercraftSpawnTelemetryEvent
 {
 public:
 	Struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
@@ -132,7 +132,7 @@ public:
 
 
 // Size 0x10
-class EventExitedWatercraft: public None
+struct EventExitedWatercraft
 {
 public:
 	Class Actor*                                                 Watercraft;                                        // 0x0(0x8)
@@ -141,7 +141,7 @@ public:
 
 
 // Size 0x10
-class EventEnteredWatercraft: public None
+struct EventEnteredWatercraft
 {
 public:
 	Class Actor*                                                 Watercraft;                                        // 0x0(0x8)

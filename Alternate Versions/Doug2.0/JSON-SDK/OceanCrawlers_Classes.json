@@ -27,7 +27,7 @@
       },
       {
         "Name": "AudioKeyPairs",
-        "Type": "TArray<Struct WwiseObjectPoolWrapper>",
+        "Type": "TArray<Struct OceanCrawlerAudioKeyPair>",
         "Size": "0x10",
         "Offset": "0x30"
       },

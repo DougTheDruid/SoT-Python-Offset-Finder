@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x28
-class InputChord: public None
+struct InputChord
 {
 public:
 	Struct Key                                                   Key;                                               // 0x0(0x20)
@@ -19,7 +19,7 @@ public:
 
 
 // Size 0x10
-class Anchors: public None
+struct Anchors
 {
 public:
 	Struct Vector2D                                              Minimum;                                           // 0x0(0x8)

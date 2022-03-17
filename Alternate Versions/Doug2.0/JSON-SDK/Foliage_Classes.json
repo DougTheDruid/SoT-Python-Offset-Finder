@@ -663,7 +663,7 @@
       },
       {
         "Name": "FoliageTypes",
-        "Type": "TArray<Struct NumUniqueTiles>",
+        "Type": "TArray<Struct FoliageTypeObject>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -689,7 +689,7 @@
       },
       {
         "Name": "InstancesArray",
-        "Type": "TArray<Struct FoliageSpawner>",
+        "Type": "TArray<Struct ProceduralFoliageInstance>",
         "Size": "0x10",
         "Offset": "0xd0"
       }

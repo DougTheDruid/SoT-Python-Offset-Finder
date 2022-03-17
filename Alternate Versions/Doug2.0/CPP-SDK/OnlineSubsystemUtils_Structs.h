@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xe0
-class BlueprintSessionResult: public None
+struct BlueprintSessionResult
 {
 public:
 };
 
 
 // Size 0x30
-class PartyReservation: public None
+struct PartyReservation
 {
 public:
 	int                                                          TeamNum;                                           // 0x0(0x4)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x30
-class PlayerReservation: public None
+struct PlayerReservation
 {
 public:
 	Struct UniqueNetIdRepl                                       UniqueId;                                          // 0x0(0x18)

@@ -255,13 +255,13 @@
       },
       {
         "Name": "NumTargetsInWave",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int NumTargetsInWave>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "NumCaptainsInWave",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int NumCaptainsInWave>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -303,7 +303,7 @@
       },
       {
         "Name": "WaveSuicideTime",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float WaveSuicideTime>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -345,7 +345,7 @@
       },
       {
         "Name": "AICombatDialogue",
-        "Type": "TArray<Class NumCaptainsPerWaveGroup>",
+        "Type": "TArray<Class AICombatDialogue>",
         "Size": "0x10",
         "Offset": "0xb8"
       }
@@ -362,7 +362,7 @@
       },
       {
         "Name": "SpecificationSpawnOrder",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int SpecificationSpawnOrder>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -674,7 +674,7 @@
     "Attributes": [
       {
         "Name": "SpawnParams",
-        "Type": "TArray<Struct NumOfSpawnsInWave>",
+        "Type": "TArray<Struct WeightedAISpawnTypeParams>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1065,7 +1065,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<Interface CampaignInfo>",
+        "Type": "TArray<Interface Entries>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -1345,7 +1345,7 @@
       },
       {
         "Name": "ControllerParams",
-        "Type": "TArray<Assetclass Timer>",
+        "Type": "TArray<Assetclass ControllerParams>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -1895,7 +1895,7 @@
       },
       {
         "Name": "NamedControllerParams",
-        "Type": "TArray<Struct ItemCategory>",
+        "Type": "TArray<Struct AthenaAIControllerParamValue>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1912,7 +1912,7 @@
       },
       {
         "Name": "Weights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Weights>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -2144,7 +2144,7 @@
     "Attributes": [
       {
         "Name": "Loadouts",
-        "Type": "TArray<Struct MaxPerEncounter>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -2254,7 +2254,7 @@
       },
       {
         "Name": "Weights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Weights>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -2305,7 +2305,7 @@
       },
       {
         "Name": "Weights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Weights>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -2316,7 +2316,7 @@
     "Attributes": [
       {
         "Name": "Weights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Weights>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -2333,7 +2333,7 @@
       },
       {
         "Name": "Weights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Weights>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -2420,7 +2420,7 @@
       },
       {
         "Name": "Weights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Weights>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -2437,7 +2437,7 @@
       },
       {
         "Name": "Weights",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float Weights>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -2516,7 +2516,7 @@
     "Attributes": [
       {
         "Name": "SpawnContexts",
-        "Type": "TArray<Class AIExclusionZone>",
+        "Type": "TArray<Class SpawnContexts>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -2540,7 +2540,7 @@
       },
       {
         "Name": "EncounterAndWaveSettingsOverride",
-        "Type": "TArray<Struct SpawnWaveProgression>",
+        "Type": "TArray<Struct AIEncounterAndWaveSettingsOverride>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -2630,13 +2630,13 @@
     "Attributes": [
       {
         "Name": "AllowedSpawnTypes",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SpawnLocations",
-        "Type": "TArray<Struct AllowedSpawnTypes>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -2664,7 +2664,7 @@
     "Attributes": [
       {
         "Name": "NumSpawnedPawnsInWaves",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int NumSpawnedPawnsInWaves>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -2702,7 +2702,7 @@
     "Attributes": [
       {
         "Name": "SelectedWaves",
-        "Type": "TArray<Struct TemporaryPlayerDetailsUnitEntry>",
+        "Type": "TArray<Struct AISpawnerWave>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -2721,7 +2721,7 @@
     "Attributes": [
       {
         "Name": "ClassIds",
-        "Type": "TArray<Class AICustomNameTitleMapping>",
+        "Type": "TArray<Class ClassIds>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -3186,7 +3186,7 @@
       },
       {
         "Name": "PreventedHealthChanges",
-        "Type": "TArray<Byte Strategy>",
+        "Type": "TArray<Byte PreventedHealthChanges>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -3565,7 +3565,7 @@
       },
       {
         "Name": "AISpawnerContexts",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str AISpawnerContexts>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -3617,7 +3617,7 @@
       },
       {
         "Name": "AILoadOut",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str AILoadOut>",
         "Size": "0x10",
         "Offset": "0x20"
       },

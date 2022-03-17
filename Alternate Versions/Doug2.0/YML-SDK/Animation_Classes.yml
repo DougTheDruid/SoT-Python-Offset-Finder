@@ -35,7 +35,7 @@ AnimNotifyState_PropagateCurveValuesToMaterials:
   - Name: CurveValues
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct DestroyLocation>
+    Type: TArray<Struct CurveUpdateValues>
   - Name: DoNotPropagteCurveValues
     Offset: '0x38'
     Size: '0x1'
@@ -249,7 +249,7 @@ AnimNotify_ToggleIK:
   - Name: IKLimbsToAdjust
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Byte TriggerWhenDisabled>
+    Type: TArray<Byte IKLimbsToAdjust>
   - Name: Enabled
     Offset: '0x48'
     Size: '0x1'
@@ -287,11 +287,11 @@ AnimationDataStore:
   - Name: Data
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct GetAnimationDataClass>
+    Type: TArray<Struct AnimationDataStoreEntry>
   - Name: LoadingData
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct Data>
+    Type: TArray<Struct AnimationDataStoreLoadingEntry>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -301,7 +301,7 @@ AnimationDataStoreAsset:
   - Name: AssetRefs
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AssetWeakRefs>
+    Type: TArray<Struct AnimationDataStoreAssetEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -345,7 +345,7 @@ AnimationDataStoreWeakReferenceAsset:
   - Name: AssetWeakRefs
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AnimationDataStoreWeakReferences>
+    Type: TArray<Struct AnimationDataStoreAssetWeakReferenceEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -563,7 +563,7 @@ CustomAnimationMontageDefinitionListingDataAsset:
   - Name: Entries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct MontageIds>
+    Type: TArray<Struct CustomAnimationMontageDefinitionEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -573,7 +573,7 @@ CustomAnimationMontageIdListingDataAsset:
   - Name: MontageIds
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -735,7 +735,7 @@ WeightedAnimSequenceLoadOnDemand:
   - Name: WeightedAnimationList
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct FallBackAnimation>
+    Type: TArray<Struct WeightedAnimationData>
   ClassSize: '0xf8'
   FullSize: '0x120'
   InheritedSize: '0x28'
@@ -745,7 +745,7 @@ WeightedAnimationLoadOnDemandDataAsset:
   - Name: WeightedAnimationList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct CreateNewWeightedAnimSequenceLoadOnDemand>
+    Type: TArray<Struct WeightedAnimationData>
   - Name: FallBackAnimation
     Offset: '0x38'
     Size: '0x8'

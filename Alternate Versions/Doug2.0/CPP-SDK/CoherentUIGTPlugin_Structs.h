@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class CoherentUIGTLoadingScreenSettings: public None
+struct CoherentUIGTLoadingScreenSettings
 {
 public:
 	float                                                        MinimumLoadingScreenDisplayTime;                   // 0x0(0x4)
@@ -18,7 +18,7 @@ public:
 
 
 // Size 0x14
-class CoherentUIGTViewInfo: public None
+struct CoherentUIGTViewInfo
 {
 public:
 	int                                                          Width;                                             // 0x0(0x4)

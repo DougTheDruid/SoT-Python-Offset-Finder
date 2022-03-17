@@ -28,7 +28,7 @@ BlendedSubMeshSpecification:
   - Name: MeshPatchAssetWeights
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float MeshPatchAssetWeights>
   ClassSize: '0x30'
 ClothingCreatorSlotItem:
   Attributes:
@@ -51,7 +51,7 @@ ClothingCreatorSlotItem:
   - Name: Slots
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str Slots>
   ClassSize: '0x50'
 ClothingCreatorSlotItemConfig:
   Attributes:
@@ -73,7 +73,7 @@ ClothingItem:
   - Name: CompatiblePirateTypes
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Byte Name>
+    Type: TArray<Byte CompatiblePirateTypes>
   - Name: Variants
     Offset: '0x20'
     Size: '0x10'
@@ -93,7 +93,7 @@ ClothingItem:
   - Name: ScalarParameters
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct Parts>
+    Type: TArray<Struct IPGScalarParameter>
   - Name: MaterialReferences
     Offset: '0x68'
     Size: '0x10'
@@ -243,7 +243,7 @@ IPGBodyShapes:
   - Name: Male
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FemaleBaseShape>
+    Type: TArray<Struct IPGBodyShape>
   - Name: Female
     Offset: '0x10'
     Size: '0x10'
@@ -394,7 +394,7 @@ IPGTestClass:
   - Name: EnumVectorTest
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Byte StrVectorTest>
+    Type: TArray<Byte EnumVectorTest>
   ClassSize: '0x60'
 IPGTestSimpleType:
   Attributes:
@@ -453,7 +453,7 @@ Outfit:
   - Name: PartNames
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: FreeSlots
     Offset: '0x10'
     Size: '0x10'
@@ -461,7 +461,7 @@ Outfit:
   - Name: ScalarParameters
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct FreeSlots>
+    Type: TArray<Struct IPGScalarParameter>
   - Name: MaterialReferences
     Offset: '0x30'
     Size: '0x10'
@@ -492,7 +492,7 @@ PirateDescription:
   - Name: BlendShapes
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct BodyShapeCoordinate>
+    Type: TArray<Struct IPGBlendShape>
   - Name: DynamicSliders
     Offset: '0x28'
     Size: '0x10'
@@ -661,7 +661,7 @@ WardrobeOutfitResult:
   - Name: ScalarParameters
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct Meshes>
+    Type: TArray<Struct IPGScalarParameter>
   - Name: MaterialReferences
     Offset: '0x20'
     Size: '0x10'

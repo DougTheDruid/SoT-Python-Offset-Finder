@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "BindingIds",
-        "Type": "TArray<Struct TestTextObject>",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
       },

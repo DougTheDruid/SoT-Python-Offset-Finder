@@ -23,11 +23,11 @@ NamedInterfaces:
   - Name: NamedInterfaces
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct OnMatchEnded>
+    Type: TArray<Struct NamedInterface>
   - Name: NamedInterfaceDefs
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct NamedInterfaces>
+    Type: TArray<Struct NamedInterfaceDef>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'

@@ -177,7 +177,7 @@ MockInteractorActor:
   - Name: ValidInteractNotificationIds
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<Class InteractNotificationType>
+    Type: TArray<Class ValidInteractNotificationIds>
   ClassSize: '0x30'
   FullSize: '0x400'
   InheritedSize: '0x3d0'

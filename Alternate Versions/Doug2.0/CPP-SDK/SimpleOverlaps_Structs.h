@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class SimpleOverlapEnd: public None
+struct SimpleOverlapEnd
 {
 public:
 	Struct SimpleOverlapInfo                                     OverlapInfo;                                       // 0x0(0x10)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x10
-class SimpleOverlapInfo: public None
+struct SimpleOverlapInfo
 {
 public:
 	Class Actor*                                                 OtherActor;                                        // 0x0(0x8)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x10
-class SimpleOverlapBegin: public None
+struct SimpleOverlapBegin
 {
 public:
 	Struct SimpleOverlapInfo                                     OverlapInfo;                                       // 0x0(0x10)

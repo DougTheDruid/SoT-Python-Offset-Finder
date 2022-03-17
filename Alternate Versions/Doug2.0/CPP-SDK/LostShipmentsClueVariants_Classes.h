@@ -39,7 +39,7 @@ public:
 class AbandonedNoteClueTextAsset: public DataAsset
 {
 public:
-	TArray<Text None>                                            Descriptions;                                      // 0x28(0x10)
+	TArray<Struct FText>                                         Descriptions;                                      // 0x28(0x10)
 	class                                                        DestinationType;                                   // 0x38(0x8)
 };
 
@@ -55,7 +55,7 @@ public:
 class AbandonedNoteClueTextIndexAssetMap: public DataAsset
 {
 public:
-	TArray<Struct OnRep_CurrentClueDestination>                  TextIndexMappings;                                 // 0x28(0x10)
+	TArray<Struct ClueDestinationToTextIndex>                    TextIndexMappings;                                 // 0x28(0x10)
 };
 
 
@@ -104,7 +104,7 @@ public:
 class AbandonedNoteClueGenderSpecificTextAsset: public DataAsset
 {
 public:
-	TArray<Struct ClueDestinationDescriptions>                   Descriptions;                                      // 0x28(0x10)
+	TArray<Struct GenderSpecificTextPairings>                    Descriptions;                                      // 0x28(0x10)
 	class                                                        DestinationType;                                   // 0x38(0x8)
 };
 
@@ -137,7 +137,7 @@ public:
 	float                                                        FontScale;                                         // 0xe4(0x4)
 	Struct TreasureMapWidgetText                                 BodyTextLayout;                                    // 0xe8(0x38)
 	Struct TreasureMapWidgetText                                 TitleTextLayout;                                   // 0x120(0x38)
-	TArray<Struct TitleTextLayout>                               ExtraTextFields;                                   // 0x158(0x10)
+	TArray<Struct TextEntryWithLayout>                           ExtraTextFields;                                   // 0x158(0x10)
 };
 
 
@@ -218,7 +218,7 @@ public:
 	byte                                                         MapMarkBlendMode;                                  // 0xf0(0x1)
 	class                                                        DebugCrossId;                                      // 0xf8(0x8)
 	bool                                                         ShowCluePositionOnMap;                             // 0x100(0x1)
-	TArray<Struct ShowCluePositionOnMap>                         ClueRenderData;                                    // 0x108(0x10)
+	TArray<Struct MapTextureRenderData>                          ClueRenderData;                                    // 0x108(0x10)
 };
 
 
@@ -257,7 +257,7 @@ public:
 class ExistingToPhasedNPCIndexAssetMap: public DataAsset
 {
 public:
-	TArray<Struct SpawnLocation>                                 NPCIndexMappings;                                  // 0x28(0x10)
+	TArray<Struct ExistingNPCToPhasedNPC>                        NPCIndexMappings;                                  // 0x28(0x10)
 };
 
 
@@ -572,7 +572,7 @@ public:
 	float                                                        LootItemSinkIntoSandZDistanceMax;                  // 0x60(0x4)
 	float                                                        LootItemSinkIntoSandRotationMin;                   // 0x64(0x4)
 	float                                                        LootItemSinkIntoSandRotationMax;                   // 0x68(0x4)
-	TArray<AssetClass LootItemSinkIntoSandRotationMax>           SinkIntoSandItems;                                 // 0x70(0x10)
+	TArray<AssetClass SinkIntoSandItems>                         SinkIntoSandItems;                                 // 0x70(0x10)
 };
 
 
@@ -591,7 +591,7 @@ public:
 	struct FName                                                 IslandNameToSpawnOn;                               // 0x40(0x8)
 	Struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x48(0x10)
 	Struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
-	TArray<Class SpawnTransform>                                 SinkIntoSandItems;                                 // 0x90(0x10)
+	TArray<Class SinkIntoSandItems>                              SinkIntoSandItems;                                 // 0x90(0x10)
 };
 
 
@@ -632,7 +632,7 @@ public:
 class WashedUpSkeletonLandClueCreator: public LandClueCreator
 {
 public:
-	TArray<AssetClass SettingsInterface>                         SkeletonPoses;                                     // 0x30(0x10)
+	TArray<AssetClass SkeletonPoses>                             SkeletonPoses;                                     // 0x30(0x10)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x60(0x4)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x64(0x4)
 	int                                                          LootItemSpawnZOffset;                              // 0x68(0x4)

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class CaptureProtocolID: public None
+struct CaptureProtocolID
 {
 public:
 	struct FName                                                 Identifier;                                        // 0x0(0x8)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x50
-class MovieSceneCaptureSettings: public None
+struct MovieSceneCaptureSettings
 {
 public:
 	Struct DirectoryPath                                         OutputDirectory;                                   // 0x0(0x10)
@@ -39,17 +39,17 @@ public:
 
 
 // Size 0x8
-class CaptureResolution: public None
+struct CaptureResolution
 {
 public:
 };
 
 
 // Size 0x10
-class CompositionGraphCapturePasses: public None
+struct CompositionGraphCapturePasses
 {
 public:
-	TArray<Str None>                                             Value;                                             // 0x0(0x10)
+	TArray<Str Value>                                            Value;                                             // 0x0(0x10)
 };
 
 

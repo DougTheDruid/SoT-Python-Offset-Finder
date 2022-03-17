@@ -73,7 +73,7 @@ SplashProbeDataAsset:
   - Name: Probes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AttachProbesToComponent>
+    Type: TArray<Struct SplashProbe>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -175,7 +175,7 @@ WaterProperties:
   - Name: WaterInfo
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct GetActorWaterInformation>
+    Type: TArray<Struct WaterInformation>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -191,7 +191,7 @@ WaterSpoutVFXComponent:
   - Name: WaterSpouts
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct IsEnabled>
+    Type: TArray<Struct WaterSpout>
   - Name: SplashEffectPointBottomZ
     Offset: '0xd8'
     Size: '0xc'
@@ -239,7 +239,7 @@ WaterSpoutVFXComponent:
   - Name: ActiveWaterSpouts
     Offset: '0x130'
     Size: '0x10'
-    Type: TArray<Struct SplashKillPlane>
+    Type: TArray<Struct WaterSpout>
   ClassSize: '0x90'
   FullSize: '0x158'
   InheritedSize: '0xc8'

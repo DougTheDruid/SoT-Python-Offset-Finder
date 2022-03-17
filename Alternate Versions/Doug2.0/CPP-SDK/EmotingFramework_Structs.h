@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x98
-class EmoteData: public None
+struct EmoteData
 {
 public:
 	Struct EmoteId                                               EmoteId;                                           // 0x0(0x8)
@@ -23,7 +23,7 @@ public:
 
 
 // Size 0x8
-class EmoteId: public None
+struct EmoteId
 {
 public:
 	struct FName                                                 EmoteId;                                           // 0x0(0x8)
@@ -31,7 +31,7 @@ public:
 
 
 // Size 0xc
-class EventEmoteEndRequested: public None
+struct EventEmoteEndRequested
 {
 public:
 	struct FName                                                 EmoteIdentifier;                                   // 0x0(0x8)
@@ -40,14 +40,14 @@ public:
 
 
 // Size 0x1
-class EventEndEmoteAnimation: public None
+struct EventEndEmoteAnimation
 {
 public:
 };
 
 
 // Size 0x98
-class EventEmoteSwapped: public None
+struct EventEmoteSwapped
 {
 public:
 	Struct EmoteData                                             EmoteData;                                         // 0x0(0x98)
@@ -55,7 +55,7 @@ public:
 
 
 // Size 0xc
-class EventEmoteCompleted: public None
+struct EventEmoteCompleted
 {
 public:
 	struct FName                                                 EmoteName;                                         // 0x0(0x8)
@@ -63,7 +63,7 @@ public:
 
 
 // Size 0x98
-class EventEmoteStarted: public None
+struct EventEmoteStarted
 {
 public:
 	Struct EmoteData                                             EmoteData;                                         // 0x0(0x98)
@@ -71,7 +71,7 @@ public:
 
 
 // Size 0xa8
-class EventEmoteRequested: public None
+struct EventEmoteRequested
 {
 public:
 	Struct EmoteData                                             EmoteData;                                         // 0x0(0x98)
@@ -81,7 +81,7 @@ public:
 
 
 // Size 0x14
-class EmoteDiceOutcomeTelemetryEvent: public None
+struct EmoteDiceOutcomeTelemetryEvent
 {
 public:
 	int                                                          MaxLimit;                                          // 0x0(0x4)
@@ -91,14 +91,14 @@ public:
 
 
 // Size 0x1
-class EventDisableLookAtEmoteCamera: public None
+struct EventDisableLookAtEmoteCamera
 {
 public:
 };
 
 
 // Size 0x8
-class EventEnableLookAtEmoteCamera: public None
+struct EventEnableLookAtEmoteCamera
 {
 public:
 };

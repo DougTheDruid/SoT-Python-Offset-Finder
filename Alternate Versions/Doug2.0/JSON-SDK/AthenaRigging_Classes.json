@@ -13,7 +13,7 @@
       },
       {
         "Name": "Ropes",
-        "Type": "TArray<Struct StaticMesh>",
+        "Type": "TArray<Struct InstancedRopeParams>",
         "Size": "0x10",
         "Offset": "0x5b0"
       },
@@ -59,13 +59,13 @@
       },
       {
         "Name": "Lines",
-        "Type": "TArray<Struct InstancedRopes>",
+        "Type": "TArray<Struct RiggingSystemLine>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
       {
         "Name": "Ropes",
-        "Type": "TArray<Struct Lines>",
+        "Type": "TArray<Struct InstancedRopeParams>",
         "Size": "0x10",
         "Offset": "0x3f8"
       },
@@ -83,13 +83,13 @@
       },
       {
         "Name": "Sockets",
-        "Type": "TArray<Struct Pulleys>",
+        "Type": "TArray<Struct SocketId>",
         "Size": "0x10",
         "Offset": "0x478"
       },
       {
         "Name": "InitialMainRopeLengths",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float InitialMainRopeLengths>",
         "Size": "0x10",
         "Offset": "0x488"
       }
@@ -109,7 +109,7 @@
       },
       {
         "Name": "LineGroups",
-        "Type": "TArray<Struct RopeStyle>",
+        "Type": "TArray<Struct RiggingSystemLineGroup>",
         "Size": "0x10",
         "Offset": "0x2f0"
       },

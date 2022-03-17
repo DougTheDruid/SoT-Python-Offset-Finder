@@ -47,7 +47,7 @@ BP_PromptActor_CosmeticPurchased_Equipment_C:
   - Name: CategoryTypes
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Class None>
+    Type: TArray<Class CategoryTypes>
   - Name: Prompt_CosmeticPurchased
     Offset: '0x430'
     Size: '0x68'
@@ -77,7 +77,7 @@ BP_PromptActor_CosmeticPurchased_Ship_C:
   - Name: CategoryTypes
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Class PromptCoordinators>
+    Type: TArray<Class CategoryTypes>
   - Name: Prompt_CosmeticPurchased
     Offset: '0x430'
     Size: '0x68'
@@ -107,7 +107,7 @@ BP_PromptActor_CosmeticPurchased_Vanity_C:
   - Name: CategoryTypes
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Class Prompt>
+    Type: TArray<Class CategoryTypes>
   - Name: Prompt_CosmeticPurchased
     Offset: '0x430'
     Size: '0x68'

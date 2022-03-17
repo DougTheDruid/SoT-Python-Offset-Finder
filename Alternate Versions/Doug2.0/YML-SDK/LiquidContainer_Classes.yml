@@ -13,7 +13,7 @@ LiquidContainerComponent:
   - Name: LiquidTypeParams
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Struct LiquidMaterialParameterName>
+    Type: TArray<Struct LiquidTypeParams>
   - Name: StartingLiquidLevelNormalised
     Offset: '0xe8'
     Size: '0x4'

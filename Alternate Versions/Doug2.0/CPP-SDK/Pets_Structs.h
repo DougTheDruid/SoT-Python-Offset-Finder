@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class PetCustomisation: public None
+struct PetCustomisation
 {
 public:
 	Struct FString                                               PetName;                                           // 0x0(0x10)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x8
-class HangoutSpotId: public None
+struct HangoutSpotId
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x20
-class PetTurnToFaceData: public None
+struct PetTurnToFaceData
 {
 public:
 	Struct Quat                                                  EndRotation;                                       // 0x0(0x10)
@@ -33,7 +33,7 @@ public:
 
 
 // Size 0x3
-class PetDangerHearingThreatResponse: public None
+struct PetDangerHearingThreatResponse
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
@@ -43,7 +43,7 @@ public:
 
 
 // Size 0x28
-class HangoutSpotParams: public None
+struct HangoutSpotParams
 {
 public:
 	struct FName                                                 HangoutSpotName;                                   // 0x0(0x8)
@@ -54,7 +54,7 @@ public:
 
 
 // Size 0xb8
-class PetHangoutSpotParams: public None
+struct PetHangoutSpotParams
 {
 public:
 	class                                                        PetType;                                           // 0x0(0x8)
@@ -64,7 +64,7 @@ public:
 
 
 // Size 0x18
-class PetCustomiationOverrideMappingEntry: public None
+struct PetCustomiationOverrideMappingEntry
 {
 public:
 	Struct FString                                               Identifier;                                        // 0x0(0x10)
@@ -73,17 +73,17 @@ public:
 
 
 // Size 0x20
-class PetDangerHearingThreat: public None
+struct PetDangerHearingThreat
 {
 public:
 	struct FName                                                 SoundTag;                                          // 0x0(0x8)
 	float                                                        TimeBeforeForgotten;                               // 0x8(0x4)
-	TArray<Struct TimeBeforeForgotten>                           Responses;                                         // 0x10(0x10)
+	TArray<Struct PetDangerHearingThreatResponse>                Responses;                                         // 0x10(0x10)
 };
 
 
 // Size 0x38
-class PetFeedingParams: public None
+struct PetFeedingParams
 {
 public:
 	Struct PetFeedingAnimationData                               EatingAnimData;                                    // 0x0(0x8)
@@ -99,7 +99,7 @@ public:
 
 
 // Size 0x8
-class PetFeedingAnimationData: public None
+struct PetFeedingAnimationData
 {
 public:
 	byte                                                         AnimationState;                                    // 0x0(0x1)
@@ -108,7 +108,7 @@ public:
 
 
 // Size 0x80
-class HangoutSpotPosition: public None
+struct HangoutSpotPosition
 {
 public:
 	Struct HangoutSpotId                                         Id;                                                // 0x0(0x8)
@@ -125,7 +125,7 @@ public:
 
 
 // Size 0x38
-class PetListingTypeEntry: public None
+struct PetListingTypeEntry
 {
 public:
 	Struct StringAssetReference                                  PetPartsCategory;                                  // 0x0(0x10)
@@ -136,7 +136,7 @@ public:
 
 
 // Size 0x38
-class PetsServiceParams: public None
+struct PetsServiceParams
 {
 public:
 	int                                                          MaxPetsInProximity;                                // 0x8(0x4)
@@ -147,12 +147,12 @@ public:
 	float                                                        MinPetProximityRespawnDelay;                       // 0x1c(0x4)
 	float                                                        MaxPetProximityRespawnDelay;                       // 0x20(0x4)
 	float                                                        HeldPetDespawnDelay;                               // 0x24(0x4)
-	TArray<Class HeldPetDespawnDelay>                            IllegalShipsSizesForSpawn;                         // 0x28(0x10)
+	TArray<Class IllegalShipsSizesForSpawn>                      IllegalShipsSizesForSpawn;                         // 0x28(0x10)
 };
 
 
 // Size 0x20
-class PetRelationship: public None
+struct PetRelationship
 {
 public:
 	Class PetItemInfo*                                           PetInfo;                                           // 0x0(0x8)
@@ -160,7 +160,7 @@ public:
 
 
 // Size 0xd8
-class ReactStateMapping: public None
+struct ReactStateMapping
 {
 public:
 	struct FName                                                 AnimationID;                                       // 0x0(0x8)
@@ -169,12 +169,12 @@ public:
 	Struct WeightedPetAnimationSelector                          PetStateSelector;                                  // 0x10(0xa0)
 	float                                                        AnimationChance;                                   // 0xb0(0x4)
 	Struct FloatRange                                            AnimationDelay;                                    // 0xb4(0x10)
-	TArray<Class AnimationDelay>                                 IgnoringStrategies;                                // 0xc8(0x10)
+	TArray<Class IgnoringStrategies>                             IgnoringStrategies;                                // 0xc8(0x10)
 };
 
 
 // Size 0x1
-class EventWieldablePetPendingDrop: public None
+struct EventWieldablePetPendingDrop
 {
 public:
 	byte                                                         DropRequestReason;                                 // 0x0(0x1)
@@ -182,7 +182,7 @@ public:
 
 
 // Size 0x8
-class WieldablePetDropTimeout: public None
+struct WieldablePetDropTimeout
 {
 public:
 	byte                                                         RequestReason;                                     // 0x0(0x1)
@@ -191,7 +191,7 @@ public:
 
 
 // Size 0x10
-class WieldablePetFoodSourceEntry: public None
+struct WieldablePetFoodSourceEntry
 {
 public:
 	Class Actor*                                                 FoodSourceActor;                                   // 0x0(0x8)
@@ -200,7 +200,7 @@ public:
 
 
 // Size 0x8
-class WieldablePetHungerAnimationData: public None
+struct WieldablePetHungerAnimationData
 {
 public:
 	byte                                                         AnimState;                                         // 0x0(0x1)
@@ -209,14 +209,14 @@ public:
 
 
 // Size 0x1
-class EventNewPetThreatDetected: public None
+struct EventNewPetThreatDetected
 {
 public:
 };
 
 
 // Size 0x8
-class EventPetDismissed: public None
+struct EventPetDismissed
 {
 public:
 	Class Actor*                                                 DismissingActor;                                   // 0x0(0x8)
@@ -224,14 +224,14 @@ public:
 
 
 // Size 0x1
-class DismissPetNotificationEvent: public None
+struct DismissPetNotificationEvent
 {
 public:
 };
 
 
 // Size 0x18
-class EventPetRefusedFood: public None
+struct EventPetRefusedFood
 {
 public:
 	Class Actor*                                                 FeedingActor;                                      // 0x10(0x8)
@@ -239,7 +239,7 @@ public:
 
 
 // Size 0x10
-class EventPetFoodBase: public None
+struct EventPetFoodBase
 {
 public:
 	Struct Guid                                                  FeedingInteractionId;                              // 0x0(0x10)
@@ -247,7 +247,7 @@ public:
 
 
 // Size 0x14
-class EventPetReactedToFood: public None
+struct EventPetReactedToFood
 {
 public:
 	byte                                                         ReactionType;                                      // 0x10(0x1)
@@ -255,7 +255,7 @@ public:
 
 
 // Size 0x18
-class EventPetNotFed: public None
+struct EventPetNotFed
 {
 public:
 	Class Actor*                                                 FeedingActor;                                      // 0x10(0x8)
@@ -263,7 +263,7 @@ public:
 
 
 // Size 0x20
-class EventPetFed: public None
+struct EventPetFed
 {
 public:
 	Class Actor*                                                 FedWithActor;                                      // 0x10(0x8)
@@ -272,14 +272,14 @@ public:
 
 
 // Size 0x1
-class EventPetPerchSpotEnabledStateChanged: public None
+struct EventPetPerchSpotEnabledStateChanged
 {
 public:
 };
 
 
 // Size 0x8
-class EventPetLeftHangout: public None
+struct EventPetLeftHangout
 {
 public:
 	Class Actor*                                                 Pet;                                               // 0x0(0x8)
@@ -287,28 +287,28 @@ public:
 
 
 // Size 0x2
-class EventPetEnteredHangout: public None
+struct EventPetEnteredHangout
 {
 public:
 };
 
 
 // Size 0x1
-class EventPetSadnessEnd: public None
+struct EventPetSadnessEnd
 {
 public:
 };
 
 
 // Size 0x1
-class EventPetSadnessBegin: public None
+struct EventPetSadnessBegin
 {
 public:
 };
 
 
 // Size 0x8
-class EventPetOwnerAssigned: public None
+struct EventPetOwnerAssigned
 {
 public:
 	Class Actor*                                                 Owner;                                             // 0x0(0x8)
@@ -316,21 +316,21 @@ public:
 
 
 // Size 0x1
-class EventPetCustomisationComplete: public None
+struct EventPetCustomisationComplete
 {
 public:
 };
 
 
 // Size 0x10
-class EventPetCustomisationReady: public None
+struct EventPetCustomisationReady
 {
 public:
 };
 
 
 // Size 0x20
-class EventWieldablePetPutOnPerch: public None
+struct EventWieldablePetPutOnPerch
 {
 public:
 	Class Actor*                                                 Pet;                                               // 0x0(0x8)
@@ -339,14 +339,14 @@ public:
 
 
 // Size 0x1
-class EventPetDropped: public None
+struct EventPetDropped
 {
 public:
 };
 
 
 // Size 0x1
-class EventPetPickedUp: public None
+struct EventPetPickedUp
 {
 public:
 	bool                                                         IsOnPerch;                                         // 0x0(0x1)
@@ -354,7 +354,7 @@ public:
 
 
 // Size 0xc
-class EventPetReactBegun: public None
+struct EventPetReactBegun
 {
 public:
 	struct FName                                                 ReactId;                                           // 0x0(0x8)
@@ -363,7 +363,7 @@ public:
 
 
 // Size 0x10
-class EventPetReactCancellation: public None
+struct EventPetReactCancellation
 {
 public:
 	Class Actor*                                                 ReactSource;                                       // 0x0(0x8)
@@ -372,7 +372,7 @@ public:
 
 
 // Size 0x10
-class EventPetReactRequest: public None
+struct EventPetReactRequest
 {
 public:
 	Class Actor*                                                 ReactSource;                                       // 0x0(0x8)
@@ -381,7 +381,7 @@ public:
 
 
 // Size 0x8
-class RespawnPetEvent: public None
+struct RespawnPetEvent
 {
 public:
 	Class Actor*                                                 PetOwner;                                          // 0x0(0x8)
@@ -389,7 +389,7 @@ public:
 
 
 // Size 0x8
-class EventPetEndPlay: public None
+struct EventPetEndPlay
 {
 public:
 	Class Pawn*                                                  LinkedPet;                                         // 0x0(0x8)
@@ -397,7 +397,7 @@ public:
 
 
 // Size 0x10
-class EventPetSpawnedForShip: public None
+struct EventPetSpawnedForShip
 {
 public:
 	Class Pawn*                                                  LinkedPet;                                         // 0x0(0x8)
@@ -406,14 +406,14 @@ public:
 
 
 // Size 0x8
-class PetBaseTelemetryFragmentInput: public None
+struct PetBaseTelemetryFragmentInput
 {
 public:
 };
 
 
 // Size 0x30
-class PetBaseTelemetryFragment: public None
+struct PetBaseTelemetryFragment
 {
 public:
 	Struct FString                                               OwnerId;                                           // 0x0(0x10)
@@ -424,7 +424,7 @@ public:
 
 
 // Size 0x28
-class WieldablePetPutOnPerchTelemetryEvent: public None
+struct WieldablePetPutOnPerchTelemetryEvent
 {
 public:
 	Struct FString                                               HangoutSpotName;                                   // 0x0(0x10)
@@ -433,14 +433,14 @@ public:
 
 
 // Size 0x1
-class PetDismissedTelemetryEvent: public None
+struct PetDismissedTelemetryEvent
 {
 public:
 };
 
 
 // Size 0x20
-class PetRefusedFoodTelemetryEvent: public None
+struct PetRefusedFoodTelemetryEvent
 {
 public:
 	Struct FString                                               TryingToFeedPlayerId;                              // 0x0(0x10)
@@ -449,7 +449,7 @@ public:
 
 
 // Size 0x14
-class PetReactedToFoodTelemetryEvent: public None
+struct PetReactedToFoodTelemetryEvent
 {
 public:
 	Struct Guid                                                  FeedingInteractionId;                              // 0x0(0x10)
@@ -458,7 +458,7 @@ public:
 
 
 // Size 0x20
-class PetNotFedTelemetryEvent: public None
+struct PetNotFedTelemetryEvent
 {
 public:
 	Struct FString                                               IgnoringPlayerId;                                  // 0x0(0x10)
@@ -467,7 +467,7 @@ public:
 
 
 // Size 0x30
-class PetFedTelemetryEvent: public None
+struct PetFedTelemetryEvent
 {
 public:
 	Struct FString                                               FedWithItemId;                                     // 0x0(0x10)
@@ -477,7 +477,7 @@ public:
 
 
 // Size 0x18
-class PetReactedTelemetryEvent: public None
+struct PetReactedTelemetryEvent
 {
 public:
 	Struct FString                                               ReactId;                                           // 0x0(0x10)
@@ -486,14 +486,14 @@ public:
 
 
 // Size 0x1
-class PetDroppedTelemetryEvent: public None
+struct PetDroppedTelemetryEvent
 {
 public:
 };
 
 
 // Size 0x1
-class PetPickedUpTelemetryEvent: public None
+struct PetPickedUpTelemetryEvent
 {
 public:
 	bool                                                         IsOnPerch;                                         // 0x0(0x1)
@@ -501,7 +501,7 @@ public:
 
 
 // Size 0x8
-class PetControllerSetTickOrderEvent: public None
+struct PetControllerSetTickOrderEvent
 {
 public:
 	Class Actor*                                                 Actor;                                             // 0x0(0x8)
@@ -509,28 +509,28 @@ public:
 
 
 // Size 0xc
-class EventPerchHangoutSpotSetEnabledState: public None
+struct EventPerchHangoutSpotSetEnabledState
 {
 public:
 };
 
 
 // Size 0x50
-class EventHangoutSpotMadeAvailable: public None
+struct EventHangoutSpotMadeAvailable
 {
 public:
 };
 
 
 // Size 0x50
-class EventHangoutSpotMadeUnavailable: public None
+struct EventHangoutSpotMadeUnavailable
 {
 public:
 };
 
 
 // Size 0x40
-class PetDespawnActionStateParams: public None
+struct PetDespawnActionStateParams
 {
 public:
 	float                                                        TakeOffHeight;                                     // 0x0(0x4)
@@ -546,14 +546,14 @@ public:
 
 
 // Size 0x30
-class PetSpawnActionStateConstructionInfo: public None
+struct PetSpawnActionStateConstructionInfo
 {
 public:
 };
 
 
 // Size 0x40
-class PetSpawnActionStateParams: public None
+struct PetSpawnActionStateParams
 {
 public:
 	float                                                        LandingHeight;                                     // 0x0(0x4)
@@ -569,7 +569,7 @@ public:
 
 
 // Size 0x1
-class EventWieldablePetHungerStateUpdated: public None
+struct EventWieldablePetHungerStateUpdated
 {
 public:
 	byte                                                         NewState;                                          // 0x0(0x1)

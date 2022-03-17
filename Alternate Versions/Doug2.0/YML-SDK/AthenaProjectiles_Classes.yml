@@ -5,7 +5,7 @@ AthenaProjectilesThrottledTickCollectionAsset:
   - Name: ProjectileTickPools
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct GlobalSettings>
+    Type: TArray<Struct ThrottledProjectileTickPool>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -15,7 +15,7 @@ ProjectileLauncherSpecificSettings:
   - Name: GlobalSettings
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct SetParamValues>
+    Type: TArray<Struct GlobalProjectileSettings>
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'

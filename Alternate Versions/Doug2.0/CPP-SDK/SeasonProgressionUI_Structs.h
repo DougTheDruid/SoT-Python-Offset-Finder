@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x68
-class SeasonIconPopupAsset: public None
+struct SeasonIconPopupAsset
 {
 public:
 	Struct StringAssetReference                                  GlowIcon;                                          // 0x0(0x10)
@@ -21,7 +21,7 @@ public:
 
 
 // Size 0x80
-class SeasonGoalPopupAsset: public None
+struct SeasonGoalPopupAsset
 {
 public:
 	struct FName                                                 Category;                                          // 0x0(0x8)
@@ -37,7 +37,7 @@ public:
 
 
 // Size 0x68
-class SeasonNotificationContent: public None
+struct SeasonNotificationContent
 {
 public:
 	Struct StringAssetReference                                  GlowIcon;                                          // 0x0(0x10)
@@ -51,7 +51,7 @@ public:
 
 
 // Size 0x80
-class DeedProgressDesc: public None
+struct DeedProgressDesc
 {
 public:
 	Struct FString                                               Description;                                       // 0x0(0x10)
@@ -64,7 +64,7 @@ public:
 
 
 // Size 0x14
-class NavigationDesc: public None
+struct NavigationDesc
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
@@ -73,7 +73,7 @@ public:
 
 
 // Size 0x60
-class SeasonsChatNotification: public None
+struct SeasonsChatNotification
 {
 public:
 	Struct FString                                               IconUrl;                                           // 0x0(0x10)
@@ -83,14 +83,14 @@ public:
 
 
 // Size 0x1
-class SeasonsDataRefreshEvent: public None
+struct SeasonsDataRefreshEvent
 {
 public:
 };
 
 
 // Size 0x14
-class OpenSeasonsMenuEvent: public None
+struct OpenSeasonsMenuEvent
 {
 public:
 	byte                                                         NavigationAction;                                  // 0x0(0x1)
@@ -99,7 +99,7 @@ public:
 
 
 // Size 0x1
-class DisableMoreButtonEvent: public None
+struct DisableMoreButtonEvent
 {
 public:
 	byte                                                         MoreButtonSource;                                  // 0x0(0x1)
@@ -107,7 +107,7 @@ public:
 
 
 // Size 0x18
-class EnableMoreButtonEvent: public None
+struct EnableMoreButtonEvent
 {
 public:
 	byte                                                         MoreButtonSource;                                  // 0x0(0x1)
@@ -116,7 +116,7 @@ public:
 
 
 // Size 0x80
-class ShowDeedProgressEvent: public None
+struct ShowDeedProgressEvent
 {
 public:
 	Struct DeedProgressDesc                                      DeedProgressDesc;                                  // 0x0(0x80)
@@ -124,7 +124,7 @@ public:
 
 
 // Size 0x60
-class SeasonsChatNotificationEvent: public None
+struct SeasonsChatNotificationEvent
 {
 public:
 	Struct SeasonsChatNotification                               SeasonsChatNotification;                           // 0x0(0x60)
@@ -132,14 +132,14 @@ public:
 
 
 // Size 0x8
-class SeasonProgressionUITelemetryFragmentInput: public None
+struct SeasonProgressionUITelemetryFragmentInput
 {
 public:
 };
 
 
 // Size 0x18
-class SeasonProgressionUITelemetryFragment: public None
+struct SeasonProgressionUITelemetryFragment
 {
 public:
 	TArray<Struct SeasonProgressionUIEventTypeTelemetryFragment> ReceivedEventsData;                                // 0x0(0x10)
@@ -148,7 +148,7 @@ public:
 
 
 // Size 0x18
-class SeasonProgressionUIEventTypeTelemetryFragment: public None
+struct SeasonProgressionUIEventTypeTelemetryFragment
 {
 public:
 	Struct FString                                               EventName;                                         // 0x0(0x10)
@@ -157,14 +157,14 @@ public:
 
 
 // Size 0xa0
-class SeasonsPopupEvent: public None
+struct SeasonsPopupEvent
 {
 public:
-	TArray<Text None>                                            Text;                                              // 0x0(0x10)
-	TArray<Str >                                                 Images;                                            // 0x10(0x10)
+	TArray<Struct FText>                                         Text;                                              // 0x0(0x10)
+	TArray<Str Images>                                           Images;                                            // 0x10(0x10)
 	Struct FString                                               Background;                                        // 0x20(0x10)
 	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x30(0x40)
-	TArray<Byte Audio>                                           StyleModifiers;                                    // 0x70(0x10)
+	TArray<Byte StyleModifiers>                                  StyleModifiers;                                    // 0x70(0x10)
 	int                                                          Rank;                                              // 0x80(0x4)
 	Struct NavigationDesc                                        NavigationDesc;                                    // 0x84(0x14)
 	float                                                        HoldDuration;                                      // 0x98(0x4)

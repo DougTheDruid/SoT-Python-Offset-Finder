@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x1
-class InvasionEvent_AggressiveShipTeleporting: public None
+struct InvasionEvent_AggressiveShipTeleporting
 {
 public:
 };
 
 
 // Size 0x1
-class InvasionEvent_PassiveTaleStarted: public None
+struct InvasionEvent_PassiveTaleStarted
 {
 public:
 };

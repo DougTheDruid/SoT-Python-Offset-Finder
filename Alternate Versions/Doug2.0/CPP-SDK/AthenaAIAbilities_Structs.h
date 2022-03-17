@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class MeleeAttackIdWeights: public None
+struct MeleeAttackIdWeights
 {
 public:
 	class                                                        MeleeAttackType;                                   // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x18
-class AshenLordFireShroudParams: public None
+struct AshenLordFireShroudParams
 {
 public:
 	class                                                        FireShroudZoneClass;                               // 0x0(0x8)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0x20
-class AshenLordFireShroud: public None
+struct AshenLordFireShroud
 {
 public:
 	Class StatusEffectOverlapZone*                               FireShroudOverlapZone;                             // 0x0(0x8)

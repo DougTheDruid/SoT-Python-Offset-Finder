@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class FinaleReplicationState: public None
+struct FinaleReplicationState
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x4
-class UnlockEventData: public None
+struct UnlockEventData
 {
 public:
 	int                                                          Idx;                                               // 0x0(0x4)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x4
-class GlitterBeardVFXTransitionCompletedEvent: public None
+struct GlitterBeardVFXTransitionCompletedEvent
 {
 public:
 	int                                                          Index;                                             // 0x0(0x4)
@@ -32,7 +32,7 @@ public:
 
 
 // Size 0x8
-class ChangeGlitterBeardVFXStateEvent: public None
+struct ChangeGlitterBeardVFXStateEvent
 {
 public:
 	int                                                          Index;                                             // 0x0(0x4)
@@ -41,42 +41,42 @@ public:
 
 
 // Size 0x10
-class GlitterbeardPuzzleCancelTelemetryEvent: public None
+struct GlitterbeardPuzzleCancelTelemetryEvent
 {
 public:
 };
 
 
 // Size 0x10
-class GlitterbeardPuzzleUnlockTelemetryEvent: public None
+struct GlitterbeardPuzzleUnlockTelemetryEvent
 {
 public:
 };
 
 
 // Size 0x10
-class GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent: public None
+struct GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent
 {
 public:
 };
 
 
 // Size 0x20
-class GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent: public None
+struct GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent
 {
 public:
 };
 
 
 // Size 0x10
-class GlitterbeardSessionEndTelemetryEvent: public None
+struct GlitterbeardSessionEndTelemetryEvent
 {
 public:
 };
 
 
 // Size 0x10
-class GlitterbeardSessionBeginTelemetryEvent: public None
+struct GlitterbeardSessionBeginTelemetryEvent
 {
 public:
 };

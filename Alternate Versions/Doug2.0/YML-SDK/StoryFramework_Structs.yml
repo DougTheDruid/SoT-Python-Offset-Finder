@@ -41,7 +41,7 @@ StoriesChangedTelemetryEvent:
   - Name: ActiveStories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str None>
+    Type: TArray<Str ActiveStories>
   ClassSize: '0x10'
 StoryInfo:
   Attributes:
@@ -55,7 +55,7 @@ StorySpawnedActorsChangeTelemetryEvent:
   - Name: StorySpawnedActors
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct SpawnedActorsList>
+    Type: TArray<Struct StorySpawnedActorsIndividualStoryInfo>
   - Name: StoryDespawnedActors
     Offset: '0x10'
     Size: '0x10'

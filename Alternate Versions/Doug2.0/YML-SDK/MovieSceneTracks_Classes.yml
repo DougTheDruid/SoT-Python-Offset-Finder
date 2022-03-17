@@ -133,7 +133,7 @@ MovieSceneActorReferenceSection:
   - Name: ActorGuidStrings
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<Str >
+    Type: TArray<Str ActorGuidStrings>
   ClassSize: '0x98'
   FullSize: '0x130'
   InheritedSize: '0x98'
@@ -533,15 +533,15 @@ MovieSceneParameterSection:
   - Name: ScalarParameterNamesAndCurves
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct Sections>
+    Type: TArray<Struct ScalarParameterNameAndCurve>
   - Name: VectorParameterNamesAndCurves
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct ScalarParameterNamesAndCurves>
+    Type: TArray<Struct VectorParameterNameAndCurves>
   - Name: ColorParameterNamesAndCurves
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<Struct VectorParameterNamesAndCurves>
+    Type: TArray<Struct ColorParameterNameAndCurves>
   ClassSize: '0x30'
   FullSize: '0xc8'
   InheritedSize: '0x98'

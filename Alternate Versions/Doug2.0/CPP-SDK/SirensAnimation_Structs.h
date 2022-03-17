@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x60
-class SirenAnimationDataStructure: public None
+struct SirenAnimationDataStructure
 {
 public:
 	Struct SirenAnimationLocomotion                              LocomotionAnims;                                   // 0x0(0x48)
@@ -18,7 +18,7 @@ public:
 
 
 // Size 0x48
-class SirenAnimationLocomotion: public None
+struct SirenAnimationLocomotion
 {
 public:
 	Class AnimSequence*                                          TreadwaterSequence;                                // 0x0(0x8)

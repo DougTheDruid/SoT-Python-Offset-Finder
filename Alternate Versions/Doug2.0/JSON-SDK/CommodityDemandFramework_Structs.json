@@ -15,7 +15,7 @@
     "Attributes": [
       {
         "Name": "NPCIdHashes",
-        "Type": "TArray<UInt32 None>",
+        "Type": "TArray<UInt32 NPCIdHashes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -32,13 +32,13 @@
     "Attributes": [
       {
         "Name": "CommodityIdHashes",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 CommodityIdHashes>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "CommodityDemands",
-        "Type": "TArray<Byte CommodityIdHashes>",
+        "Type": "TArray<Byte CommodityDemands>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -72,7 +72,7 @@
       },
       {
         "Name": "RedeemItems",
-        "Type": "TArray<Struct RequiredEntitlement>",
+        "Type": "TArray<Struct CommodityDescWithRedeemId>",
         "Size": "0x10",
         "Offset": "0x8"
       }

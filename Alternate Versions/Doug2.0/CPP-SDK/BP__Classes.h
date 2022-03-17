@@ -503,7 +503,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -515,7 +515,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -527,7 +527,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -539,7 +539,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct None>                                          Prompts;                                           // 0x428(0x10)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -551,133 +551,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
 	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct Prompts>                                       Prompts;                                           // 0x428(0x10)
-};
-
-
-// Size 0x0
-class BP_Campaign005_CursedSails_ClothingCooper_PreCursedSails_C: public None
-{
-public:
-};
-
-
-// Size -0x7ccccccd
-class BP_Campaign005_CursedSails_ShopkeeperTrevor_PreCursedSails_C: public /Game/Starlight/Models/Environments/Sea_Of_Damned/Props/Common/
-{
-public:
-};
-
-
-// Size 0x0
-class BP_Campaign005_CursedSails_WeapondealerWillow_PreCursedSails_C: public None
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_white_01_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_red_05_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_red_04_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_red_01_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_brown_07_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_brown_05_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_brown_03_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_blond_05_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_blond_04_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_blond_01_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_black_03_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_black_02_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_hair_col_black_01_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_MerchantCrate_AnyItemCrate_ItemDesc_C: public ItemWithoutIconsDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C: public BootyItemDesc
-{
-public:
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 

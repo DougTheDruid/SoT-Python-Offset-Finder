@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class WeightedFireworkVFXData: public None
+struct WeightedFireworkVFXData
 {
 public:
 	Class Object*                                                VFX;                                               // 0x0(0x8)
@@ -19,7 +19,7 @@ public:
 
 
 // Size 0x58
-class GeneratedFireworkData: public None
+struct GeneratedFireworkData
 {
 public:
 	Struct FireworkAmbientLightData                              FireworkAmbientLightData;                          // 0xc(0x14)
@@ -31,7 +31,7 @@ public:
 
 
 // Size 0x40
-class FireworkExplosionData: public None
+struct FireworkExplosionData
 {
 public:
 	Class Object*                                                VFX;                                               // 0x8(0x8)
@@ -41,7 +41,7 @@ public:
 
 
 // Size 0x14
-class FireworkAmbientLightData: public None
+struct FireworkAmbientLightData
 {
 public:
 	float                                                        FadeInTimer;                                       // 0x0(0x4)
@@ -53,7 +53,7 @@ public:
 
 
 // Size 0x178
-class WeightedProjectileMeshAnimationData: public None
+struct WeightedProjectileMeshAnimationData
 {
 public:
 	Struct RuntimeVectorCurve                                    AnimationCurve;                                    // 0x0(0x170)

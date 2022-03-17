@@ -28,7 +28,7 @@ public:
 	Struct StringAssetReference                                  PlaceholderSpinnerTexture;                         // 0x40(0x10)
 	Struct LinearColor                                           BackgroundColour;                                  // 0x50(0x10)
 	Struct SlateLoadingScreenImageParams                         PrimaryImage;                                      // 0x60(0x20)
-	TArray<Struct PrimaryImage>                                  CyclingImages;                                     // 0x80(0x10)
+	TArray<Struct SlateLoadingScreenImageParams>                 CyclingImages;                                     // 0x80(0x10)
 	int                                                          MaxNumImagesPerLoad;                               // 0x90(0x4)
 	Struct FText                                                 SpinnerText;                                       // 0x98(0x38)
 	Struct SlateColor                                            SpinnerTextColour;                                 // 0xd0(0x30)

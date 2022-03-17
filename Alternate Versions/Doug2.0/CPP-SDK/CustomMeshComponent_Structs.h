@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x24
-class CustomMeshTriangle: public None
+struct CustomMeshTriangle
 {
 public:
 	Struct Vector                                                Vertex0;                                           // 0x0(0xc)

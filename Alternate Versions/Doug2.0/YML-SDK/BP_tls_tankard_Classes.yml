@@ -24,12 +24,6 @@ BP_tls_tankard_pio_01_a_ItemDesc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: ItemDesc
-BP_tls_tankard_s5_01_a_ItemDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
-  Super: ItemDesc
 BP_tls_tankard_smp_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -42,27 +36,3 @@ BP_tls_tankard_smp_01_a_v01_ItemDesc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: ItemDesc
-BP_tls_tankard_wth_01_a_v01_ItemDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
-  Super: ItemDesc
-BP_tls_tankard_yr1_leg_01_a_ItemDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
-  Super: ItemDesc
-BP_tls_tankard_yr1_leg_01_a_ItemInfo_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x0'
-  InheritedSize: '0x0'
-  Super: None
-BP_tls_tankard_yr1_leg_01_a_Wieldable_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x0'
-  InheritedSize: '0x0'
-  Super: None

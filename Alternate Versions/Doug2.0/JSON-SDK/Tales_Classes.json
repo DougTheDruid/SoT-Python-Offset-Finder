@@ -142,7 +142,7 @@
     "Attributes": [
       {
         "Name": "IslandTypeWeightsForDifficultyRanks",
-        "Type": "TArray<Struct StructForCollector>",
+        "Type": "TArray<Struct IslandTypeWeights>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -236,7 +236,7 @@
     "Attributes": [
       {
         "Name": "ItemsToCollect",
-        "Type": "TArray<Struct OnCollected>",
+        "Type": "TArray<Struct TaleQuestCargoRunContractItem>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -350,7 +350,7 @@
       },
       {
         "Name": "ValidSpawnData",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int ValidSpawnData>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -370,19 +370,19 @@
     "Attributes": [
       {
         "Name": "TrackedActors",
-        "Type": "TArray<Struct Desc>",
+        "Type": "TArray<Struct TrackedActorData>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "CriticalActors",
-        "Type": "TArray<Struct TrackedActors>",
+        "Type": "TArray<Struct CriticalActorDelegateData>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "SnapshottedActors",
-        "Type": "TArray<Struct CriticalActors>",
+        "Type": "TArray<Struct SnapshottedActorData>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -400,13 +400,13 @@
       },
       {
         "Name": "PhasedActors",
-        "Type": "TArray<Struct PhasedClusterRoot>",
+        "Type": "TArray<Struct PhasedActor>",
         "Size": "0x10",
         "Offset": "0xa0"
       },
       {
         "Name": "PhasedItems",
-        "Type": "TArray<Struct PhasedActors>",
+        "Type": "TArray<Struct PhasedItem>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
@@ -475,7 +475,7 @@
     "Attributes": [
       {
         "Name": "MigrationActions",
-        "Type": "TArray<Struct ResourceRegistry>",
+        "Type": "TArray<Struct MigrationActionPair>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -769,7 +769,7 @@
       },
       {
         "Name": "PossessableSequences",
-        "Type": "TArray<Struct SequencerCutSceneActor>",
+        "Type": "TArray<Struct PossessableSequence>",
         "Size": "0x10",
         "Offset": "0xa0"
       }
@@ -2530,7 +2530,7 @@
     "Attributes": [
       {
         "Name": "Text",
-        "Type": "TArray<Text None>",
+        "Type": "TArray<Struct FText>",
         "Size": "0x10",
         "Offset": "0xa8"
       }

@@ -160,7 +160,7 @@ MovieSceneActorReferenceSectionTemplate:
   - Name: ActorGuids
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct ActorGuidIndexCurve>
+    Type: TArray<Struct Guid>
   ClassSize: '0xb8'
 MovieSceneAdditiveCameraAnimationTemplate:
   Attributes: []
@@ -347,7 +347,7 @@ MovieSceneEventSectionData:
   - Name: KeyTimes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Float None>
+    Type: TArray<Float KeyTimes>
   - Name: KeyValues
     Offset: '0x10'
     Size: '0x10'
@@ -424,15 +424,15 @@ MovieSceneParameterSectionTemplate:
   - Name: Scalars
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct MaterialIndex>
+    Type: TArray<Struct ScalarParameterNameAndCurve>
   - Name: Vectors
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct Scalars>
+    Type: TArray<Struct VectorParameterNameAndCurves>
   - Name: Colors
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct Vectors>
+    Type: TArray<Struct ColorParameterNameAndCurves>
   ClassSize: '0x48'
 MovieSceneParticleParameterSectionTemplate:
   Attributes: []

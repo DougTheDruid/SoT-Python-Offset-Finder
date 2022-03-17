@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class TaleQuestVariableMapMarkType: public None
+struct TaleQuestVariableMapMarkType
 {
 public:
 };
 
 
 // Size 0x50
-class TaleQuestChecklistItem: public None
+struct TaleQuestChecklistItem
 {
 public:
 	TArray<Struct ChecklistActionProgressTracker>                ChecklistActions;                                  // 0x0(0x10)
@@ -22,7 +22,7 @@ public:
 
 
 // Size 0x10
-class ChecklistActionProgressTracker: public None
+struct ChecklistActionProgressTracker
 {
 public:
 	Class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)

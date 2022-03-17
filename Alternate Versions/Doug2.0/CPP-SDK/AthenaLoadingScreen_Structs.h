@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20
-class SlateLoadingScreenImageParams: public None
+struct SlateLoadingScreenImageParams
 {
 public:
 	Struct StringAssetReference                                  ImageAsset;                                        // 0x0(0x10)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x1
-class EventAthenaLoadingScreenStateResponse: public None
+struct EventAthenaLoadingScreenStateResponse
 {
 public:
 	bool                                                         IsVisible;                                         // 0x0(0x1)
@@ -24,14 +24,14 @@ public:
 
 
 // Size 0x1
-class EventAthenaLoadingScreenStateRequest: public None
+struct EventAthenaLoadingScreenStateRequest
 {
 public:
 };
 
 
 // Size 0x10
-class EventAthenaLoadingScreenBlockUntilUIIntialisedClear: public None
+struct EventAthenaLoadingScreenBlockUntilUIIntialisedClear
 {
 public:
 	Struct FString                                               Description;                                       // 0x0(0x10)
@@ -39,7 +39,7 @@ public:
 
 
 // Size 0x10
-class EventAthenaLoadingScreenBlockUntilUIIntialised: public None
+struct EventAthenaLoadingScreenBlockUntilUIIntialised
 {
 public:
 	Struct FString                                               Description;                                       // 0x0(0x10)
@@ -47,14 +47,14 @@ public:
 
 
 // Size 0x1
-class EventAthenaLoadingScreenClose: public None
+struct EventAthenaLoadingScreenClose
 {
 public:
 };
 
 
 // Size 0x1
-class EventAthenaLoadingScreenOpen: public None
+struct EventAthenaLoadingScreenOpen
 {
 public:
 };

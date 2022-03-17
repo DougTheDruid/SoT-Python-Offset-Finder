@@ -71,7 +71,7 @@ class BTTask_RunEQSQuery: public BTTask_BlackboardBase
 {
 public:
 	Class EnvQuery*                                              QueryTemplate;                                     // 0x88(0x8)
-	TArray<Struct QueryTemplate>                                 QueryParams;                                       // 0x90(0x10)
+	TArray<Struct EnvNamedValue>                                 QueryParams;                                       // 0x90(0x10)
 	byte                                                         RunMode;                                           // 0xa0(0x1)
 };
 
@@ -167,8 +167,8 @@ class PawnActionsComponent: public ActorComponent
 {
 public:
 	Class Pawn*                                                  ControlledPawn;                                    // 0xc8(0x8)
-	TArray<Struct ControlledPawn>                                ActionStacks;                                      // 0xd0(0x10)
-	TArray<Struct ActionStacks>                                  ActionEvents;                                      // 0xe0(0x10)
+	TArray<Struct PawnActionStack>                               ActionStacks;                                      // 0xd0(0x10)
+	TArray<Struct PawnActionEvent>                               ActionEvents;                                      // 0xe0(0x10)
 	Class PawnAction*                                            CurrentAction;                                     // 0xf0(0x8)
 };
 
@@ -331,7 +331,7 @@ class AIPerceptionStimuliSourceComponent: public ActorComponent
 {
 public:
 	bool                                                         bAutoRegisterAsSource;                             // 0xc8(0x1)
-	TArray<Class bAutoRegisterAsSource>                          RegisterAsSourceForSenses;                         // 0xd0(0x10)
+	TArray<Class RegisterAsSourceForSenses>                      RegisterAsSourceForSenses;                         // 0xd0(0x10)
 };
 
 
@@ -363,7 +363,7 @@ public:
 class AISense_Damage: public AISense
 {
 public:
-	TArray<Struct ReportNoiseEvent>                              RegisteredEvents;                                  // 0x88(0x10)
+	TArray<Struct AIDamageEvent>                                 RegisteredEvents;                                  // 0x88(0x10)
 };
 
 
@@ -373,8 +373,8 @@ class AISense_Hearing: public AISense
 public:
 	int                                                          MaxNoisesPerTick;                                  // 0x88(0x4)
 	int                                                          MaxNoisesStored;                                   // 0x8c(0x4)
-	TArray<Struct MaxNoisesStored>                               NoiseEventsArrayA;                                 // 0x98(0x10)
-	TArray<Struct NoiseEventsArrayA>                             NoiseEventsArrayB;                                 // 0xa8(0x10)
+	TArray<Struct AINoiseEvent>                                  NoiseEventsArrayA;                                 // 0x98(0x10)
+	TArray<Struct AINoiseEvent>                                  NoiseEventsArrayB;                                 // 0xa8(0x10)
 	float                                                        SpeedOfSoundSq;                                    // 0xc8(0x4)
 };
 
@@ -383,7 +383,7 @@ public:
 class AISense_Prediction: public AISense
 {
 public:
-	TArray<Struct SightLimitQueryImportance>                     RegisteredEvents;                                  // 0x88(0x10)
+	TArray<Struct AIPredictionEvent>                             RegisteredEvents;                                  // 0x88(0x10)
 };
 
 
@@ -402,7 +402,7 @@ public:
 class AISense_Team: public AISense
 {
 public:
-	TArray<Struct RegisteredEvents>                              RegisteredEvents;                                  // 0x88(0x10)
+	TArray<Struct AITeamStimulusEvent>                           RegisteredEvents;                                  // 0x88(0x10)
 };
 
 
@@ -410,7 +410,7 @@ public:
 class AISense_Touch: public AISense
 {
 public:
-	TArray<Struct Guid>                                          RegisteredEvents;                                  // 0x88(0x10)
+	TArray<Struct AITouchEvent>                                  RegisteredEvents;                                  // 0x88(0x10)
 };
 
 
@@ -564,7 +564,7 @@ public:
 class BTCompositeNode: public BTNode
 {
 public:
-	TArray<Struct RootDecoratorOps>                              Children;                                          // 0x58(0x10)
+	TArray<Struct BTCompositeChild>                              Children;                                          // 0x58(0x10)
 	TArray<class Services*>                                      Services;                                          // 0x68(0x10)
 };
 
@@ -576,7 +576,7 @@ public:
 	Class BTCompositeNode*                                       RootNode;                                          // 0x28(0x8)
 	Class BlackboardData*                                        BlackboardAsset;                                   // 0x30(0x8)
 	TArray<class RootDecorators*>                                RootDecorators;                                    // 0x38(0x10)
-	TArray<Struct RootDecorators>                                RootDecoratorOps;                                  // 0x48(0x10)
+	TArray<Struct BTDecoratorLogic>                              RootDecoratorOps;                                  // 0x48(0x10)
 };
 
 
@@ -585,7 +585,7 @@ class BehaviorTreeManager: public Object
 {
 public:
 	int                                                          MaxDebuggerSteps;                                  // 0x28(0x4)
-	TArray<Struct MaxDebuggerSteps>                              LoadedTemplates;                                   // 0x30(0x10)
+	TArray<Struct BehaviorTreeTemplateInfo>                      LoadedTemplates;                                   // 0x30(0x10)
 	TArray<class ActiveComponents*>                              ActiveComponents;                                  // 0x40(0x10)
 };
 
@@ -614,7 +614,7 @@ class BlackboardData: public DataAsset
 {
 public:
 	Class BlackboardData*                                        Parent;                                            // 0x28(0x8)
-	TArray<Struct Parent>                                        Keys;                                              // 0x30(0x10)
+	TArray<Struct BlackboardEntry>                               Keys;                                              // 0x30(0x10)
 	bool                                                         bHasSynchronizedKeys;                              // 0x40(0x1)
 };
 
@@ -1080,8 +1080,8 @@ class CrowdManager: public Object
 {
 public:
 	Class NavigationData*                                        MyNavData;                                         // 0x28(0x8)
-	TArray<Struct MyNavData>                                     AvoidanceConfig;                                   // 0x30(0x10)
-	TArray<Struct AvoidanceConfig>                               SamplingPatterns;                                  // 0x40(0x10)
+	TArray<Struct CrowdAvoidanceConfig>                          AvoidanceConfig;                                   // 0x30(0x10)
+	TArray<Struct CrowdAvoidanceSamplingPattern>                 SamplingPatterns;                                  // 0x40(0x10)
 	int                                                          MaxAgents;                                         // 0x50(0x4)
 	float                                                        MaxAgentRadius;                                    // 0x54(0x4)
 	int                                                          MaxAvoidedAgents;                                  // 0x58(0x4)
@@ -1191,7 +1191,7 @@ public:
 class EnvQueryManager: public Object
 {
 public:
-	TArray<Struct SearchCenter>                                  InstanceCache;                                     // 0x98(0x10)
+	TArray<Struct EnvQueryInstanceCache>                         InstanceCache;                                     // 0x98(0x10)
 	TArray<class LocalContexts*>                                 LocalContexts;                                     // 0xa8(0x10)
 };
 
@@ -1375,7 +1375,7 @@ class EQSTestingPawn: public Character
 {
 public:
 	Class EnvQuery*                                              QueryTemplate;                                     // 0x5e0(0x8)
-	TArray<Struct QueryTemplate>                                 QueryParams;                                       // 0x5e8(0x10)
+	TArray<Struct EnvNamedValue>                                 QueryParams;                                       // 0x5e8(0x10)
 	float                                                        TimeLimitPerStep;                                  // 0x5f8(0x4)
 	int                                                          StepToDebugDraw;                                   // 0x5fc(0x4)
 	byte                                                         HighlightMode;                                     // 0x600(0x1)

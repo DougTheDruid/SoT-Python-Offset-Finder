@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class OceanCrawlerBuffAudioSettings: public None
+struct OceanCrawlerBuffAudioSettings
 {
 public:
 	Class WwiseEvent*                                            GiveBuffAudioEvent;                                // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x10
-class OceanCrawlerAudioKeyPair: public None
+struct OceanCrawlerAudioKeyPair
 {
 public:
 	byte                                                         AudioKey;                                          // 0x0(0x1)

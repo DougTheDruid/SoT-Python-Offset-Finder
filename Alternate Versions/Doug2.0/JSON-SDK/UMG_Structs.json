@@ -289,7 +289,7 @@
     "Attributes": [
       {
         "Name": "BrushPropertyNamePath",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x48"
       }

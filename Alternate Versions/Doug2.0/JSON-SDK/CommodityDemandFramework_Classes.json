@@ -100,7 +100,7 @@
     "Attributes": [
       {
         "Name": "CommoditiesForRedemption",
-        "Type": "TArray<Struct CommodityDemand>",
+        "Type": "TArray<Struct EntitlementToRedeemItems>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -209,7 +209,7 @@
     "Attributes": [
       {
         "Name": "CommodityEntries",
-        "Type": "TArray<Struct CommodityDemand>",
+        "Type": "TArray<Struct CommodityTypeDataEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -258,7 +258,7 @@
     "Attributes": [
       {
         "Name": "ItemsToFillCrateWith",
-        "Type": "TArray<Struct CommodityDemand>",
+        "Type": "TArray<Struct StorageContainerNode>",
         "Size": "0x10",
         "Offset": "0xd0"
       }

@@ -493,7 +493,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointVector2D>",
+        "Type": "TArray<Struct None>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -551,7 +551,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointVector>",
+        "Type": "TArray<Struct InterpCurvePointVector2D>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -609,7 +609,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointQuat>",
+        "Type": "TArray<Struct InterpCurvePointVector>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -667,7 +667,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointTwoVectors>",
+        "Type": "TArray<Struct InterpCurvePointQuat>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -725,7 +725,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointLinearColor>",
+        "Type": "TArray<Struct InterpCurvePointTwoVectors>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -783,7 +783,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct Transform>",
+        "Type": "TArray<Struct InterpCurvePointLinearColor>",
         "Size": "0x10",
         "Offset": "0x0"
       },

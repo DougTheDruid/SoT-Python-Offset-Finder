@@ -96,7 +96,7 @@
     "Attributes": [
       {
         "Name": "TentaclesUsed",
-        "Type": "TArray<Int None>",
+        "Type": "TArray<Int TentaclesUsed>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -108,7 +108,7 @@
       },
       {
         "Name": "Actions",
-        "Type": "TArray<Struct KrakenHeadUsed>",
+        "Type": "TArray<Struct CoordinatedKrakenAction>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -398,7 +398,7 @@
       },
       {
         "Name": "Bones",
-        "Type": "TArray<Struct AnimationPlayRateScale>",
+        "Type": "TArray<Struct KrakenAnimatedTentacleAnimationBoneTrack>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -412,7 +412,7 @@
     "Attributes": [
       {
         "Name": "Animations",
-        "Type": "TArray<Struct Bones>",
+        "Type": "TArray<Struct KrakenAnimatedTentacleMappedAnimation>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -426,7 +426,7 @@
     "Attributes": [
       {
         "Name": "Bones",
-        "Type": "TArray<Struct States>",
+        "Type": "TArray<Struct KrakenAnimatedTentacleAnimationSpecBone>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -440,7 +440,7 @@
     "Attributes": [
       {
         "Name": "States",
-        "Type": "TArray<Struct MappingAssetReference>",
+        "Type": "TArray<Struct KrakenAnimatedTentacleStateAnimationMapping>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -454,7 +454,7 @@
     "Attributes": [
       {
         "Name": "States",
-        "Type": "TArray<Struct OnCoordinatedKrakenSpecialEvent>",
+        "Type": "TArray<Struct KrakenHeadStateAnimationMapping>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -510,7 +510,7 @@
       },
       {
         "Name": "BreathingInContinuousStatusesToApply",
-        "Type": "TArray<Struct BiteAttackVFX>",
+        "Type": "TArray<Struct Status>",
         "Size": "0x10",
         "Offset": "0x418"
       },
@@ -522,7 +522,7 @@
       },
       {
         "Name": "RoarContinuousStatusesToApply",
-        "Type": "TArray<Struct BreatheInStatusDuration>",
+        "Type": "TArray<Struct Status>",
         "Size": "0x10",
         "Offset": "0x430"
       },
@@ -665,7 +665,7 @@
     "Attributes": [
       {
         "Name": "KrakenHeadHealthPairs",
-        "Type": "TArray<Struct HitReactionAnimations>",
+        "Type": "TArray<Struct KrakenHeadHealthPair>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -679,7 +679,7 @@
     "Attributes": [
       {
         "Name": "HitReactionAnimations",
-        "Type": "TArray<Struct Params>",
+        "Type": "TArray<Struct KrakenHeadHitReactAnimations>",
         "Size": "0x10",
         "Offset": "0x28"
       }

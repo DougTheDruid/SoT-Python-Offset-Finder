@@ -50,7 +50,7 @@
     "Attributes": [
       {
         "Name": "Notes",
-        "Type": "TArray<Struct EnchantedCompassTarget>",
+        "Type": "TArray<Struct NotesRemoteServiceNoteDetailModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }

@@ -30,7 +30,7 @@ public:
 	bool                                                         SwimmingLongways;                                  // 0x599(0x1)
 	bool                                                         UseAggressiveAnimations;                           // 0x59a(0x1)
 	bool                                                         UseAlternativeAggressiveAnimation;                 // 0x59b(0x1)
-	TArray<Class UseAlternativeAggressiveAnimation>              StrategiesForAggressiveAnimations;                 // 0x5a0(0x10)
+	TArray<Class StrategiesForAggressiveAnimations>              StrategiesForAggressiveAnimations;                 // 0x5a0(0x10)
 	Struct FloatRange                                            TimeBeforeAlternativeAggressiveAnimationToggleFlips; // 0x5b0(0x10)
 	bool                                                         AnimationsLoaded;                                  // 0x5c8(0x1)
 	float                                                        AimUpAlpha;                                        // 0x5cc(0x4)

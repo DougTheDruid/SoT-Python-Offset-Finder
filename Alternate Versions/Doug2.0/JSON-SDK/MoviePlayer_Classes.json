@@ -19,7 +19,7 @@
       },
       {
         "Name": "StartupMovies",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str StartupMovies>",
         "Size": "0x10",
         "Offset": "0x30"
       }

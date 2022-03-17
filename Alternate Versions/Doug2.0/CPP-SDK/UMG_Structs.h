@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xe8
-class EventReply: public None
+struct EventReply
 {
 public:
 };
 
 
 // Size 0x1c
-class WidgetTransform: public None
+struct WidgetTransform
 {
 public:
 	Struct Vector2D                                              Translation;                                       // 0x0(0x8)
@@ -25,7 +25,7 @@ public:
 
 
 // Size 0x10
-class DynamicPropertyPath: public None
+struct DynamicPropertyPath
 {
 public:
 	TArray<Struct PropertyPathSegment>                           Segments;                                          // 0x0(0x10)
@@ -33,7 +33,7 @@ public:
 
 
 // Size 0x20
-class PropertyPathSegment: public None
+struct PropertyPathSegment
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -44,7 +44,7 @@ public:
 
 
 // Size 0x8
-class SlateChildSize: public None
+struct SlateChildSize
 {
 public:
 	float                                                        Value;                                             // 0x0(0x4)
@@ -53,7 +53,7 @@ public:
 
 
 // Size 0x10
-class NamedSlotBinding: public None
+struct NamedSlotBinding
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -62,14 +62,14 @@ public:
 
 
 // Size 0x30
-class PaintContext: public None
+struct PaintContext
 {
 public:
 };
 
 
 // Size 0x28
-class AnchorData: public None
+struct AnchorData
 {
 public:
 	Struct Margin                                                Offsets;                                           // 0x0(0x10)
@@ -79,7 +79,7 @@ public:
 
 
 // Size 0x24
-class WidgetAnimationBinding: public None
+struct WidgetAnimationBinding
 {
 public:
 	struct FName                                                 WidgetName;                                        // 0x0(0x8)
@@ -90,7 +90,7 @@ public:
 
 
 // Size 0x38
-class DelegateRuntimeBinding: public None
+struct DelegateRuntimeBinding
 {
 public:
 	Struct FString                                               ObjectName;                                        // 0x0(0x10)
@@ -102,7 +102,7 @@ public:
 
 
 // Size 0x14
-class WidgetNavigationData: public None
+struct WidgetNavigationData
 {
 public:
 	byte                                                         Rule;                                              // 0x0(0x1)
@@ -111,7 +111,7 @@ public:
 
 
 // Size 0x380
-class MovieScene2DTransformSectionTemplate: public None
+struct MovieScene2DTransformSectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
@@ -123,7 +123,7 @@ public:
 
 
 // Size 0x218
-class MovieSceneMarginSectionTemplate: public None
+struct MovieSceneMarginSectionTemplate
 {
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
@@ -135,10 +135,10 @@ public:
 
 
 // Size 0x58
-class MovieSceneWidgetMaterialSectionTemplate: public None
+struct MovieSceneWidgetMaterialSectionTemplate
 {
 public:
-	TArray<Name None>                                            BrushPropertyNamePath;                             // 0x48(0x10)
+	TArray<Struct FName>                                         BrushPropertyNamePath;                             // 0x48(0x10)
 };
 
 

@@ -28,13 +28,13 @@
       },
       {
         "Name": "PlayModeTags",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str PlayModeTags>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "PlayModeStates",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str PlayModeStates>",
         "Size": "0x10",
         "Offset": "0x58"
       },
@@ -81,13 +81,13 @@
       },
       {
         "Name": "Positions",
-        "Type": "TArray<Struct SessionType>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "Resources",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 Resources>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -98,7 +98,7 @@
     "Attributes": [
       {
         "Name": "Crews",
-        "Type": "TArray<Struct OptionalPlayModeModel>",
+        "Type": "TArray<Struct ServerCrewModel>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -155,7 +155,7 @@
       },
       {
         "Name": "PlayModeTags",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str PlayModeTags>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -191,7 +191,7 @@
       },
       {
         "Name": "CrewSessionTypes",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int CrewSessionTypes>",
         "Size": "0x10",
         "Offset": "0x78"
       },
@@ -214,7 +214,7 @@
     "Attributes": [
       {
         "Name": "Positions",
-        "Type": "TArray<Struct Uptime>",
+        "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -226,7 +226,7 @@
       },
       {
         "Name": "Resources",
-        "Type": "TArray<UInt32 >",
+        "Type": "TArray<UInt32 Resources>",
         "Size": "0x10",
         "Offset": "0x20"
       }

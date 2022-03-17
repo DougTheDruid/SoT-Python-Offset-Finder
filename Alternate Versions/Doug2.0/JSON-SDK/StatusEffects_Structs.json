@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Type",
-        "Type": "TArray<Class EventCurseWheelLockEnd>",
+        "Type": "TArray<Class Type>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -66,7 +66,7 @@
     "Attributes": [
       {
         "Name": "SourceStatus",
-        "Type": "TArray<Class FeatureToggledStatusResponseList>",
+        "Type": "TArray<Class SourceStatus>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -118,7 +118,7 @@
     "Attributes": [
       {
         "Name": "StatusApplied",
-        "Type": "TArray<Class StatusEffectPersistenceKey>",
+        "Type": "TArray<Class StatusApplied>",
         "Size": "0x10",
         "Offset": "0x0"
       },

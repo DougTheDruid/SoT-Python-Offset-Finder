@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x28
-class MerchantContractItemDesc: public None
+struct MerchantContractItemDesc
 {
 public:
 	class                                                        AllocatedCrate;                                    // 0x0(0x8)
@@ -18,7 +18,7 @@ public:
 
 
 // Size 0x10
-class ItemAndReward: public None
+struct ItemAndReward
 {
 public:
 	class                                                        ItemDesc;                                          // 0x0(0x8)
@@ -27,7 +27,7 @@ public:
 
 
 // Size 0x40
-class MerchantContractDeliveryRequest: public None
+struct MerchantContractDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
@@ -39,20 +39,20 @@ public:
 
 
 // Size 0xc0
-class MerchantContract: public None
+struct MerchantContract
 {
 public:
-	TArray<Struct MerchantMapLayoutItem>                         DeliveryRequests;                                  // 0x18(0x10)
+	TArray<Struct MerchantContractDeliveryRequest>               DeliveryRequests;                                  // 0x18(0x10)
 };
 
 
 // Size 0x28
-class PlayerMerchantContract: public None
+struct PlayerMerchantContract
 {
 public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
 	struct FName                                                 IslandName;                                        // 0x10(0x8)
-	TArray<Struct IslandName>                                    Requests;                                          // 0x18(0x10)
+	TArray<Struct MerchantContractDeliveryRequest>               Requests;                                          // 0x18(0x10)
 };
 
 

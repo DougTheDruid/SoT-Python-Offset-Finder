@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class BlueprintLiveStreamInfo: public None
+struct BlueprintLiveStreamInfo
 {
 public:
 	Struct FString                                               GameName;                                          // 0x0(0x10)

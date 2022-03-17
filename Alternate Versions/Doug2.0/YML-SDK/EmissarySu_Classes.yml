@@ -25,7 +25,7 @@ BP_Prompt_EmissarySunk_C:
   - Name: Prompts
     Offset: '0x180'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: PromptAccessKey
     Offset: '0x190'
     Size: '0x8'

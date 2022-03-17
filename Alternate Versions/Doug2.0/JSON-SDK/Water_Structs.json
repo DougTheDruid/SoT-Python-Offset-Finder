@@ -163,7 +163,7 @@
     "Attributes": [
       {
         "Name": "Probes",
-        "Type": "TArray<Struct WaterBuoyancy>",
+        "Type": "TArray<Struct WaterSplashProbe>",
         "Size": "0x10",
         "Offset": "0x0"
       },

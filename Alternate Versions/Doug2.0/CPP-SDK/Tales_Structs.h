@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x38
-class TaleQuestDeliveryRequest: public None
+struct TaleQuestDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
@@ -18,7 +18,7 @@ public:
 
 
 // Size 0x3
-class TaleActorSpawnParameters: public None
+struct TaleActorSpawnParameters
 {
 public:
 	bool                                                         Tracked;                                           // 0x0(0x1)
@@ -28,7 +28,7 @@ public:
 
 
 // Size 0x14
-class IslandTypeWeights: public None
+struct IslandTypeWeights
 {
 public:
 	float                                                        FeatureIslandWeight;                               // 0x0(0x4)
@@ -40,21 +40,21 @@ public:
 
 
 // Size 0x20
-class QuestVariableAny: public None
+struct QuestVariableAny
 {
 public:
 };
 
 
 // Size 0x1
-class SplineFootprintPathTool: public None
+struct SplineFootprintPathTool
 {
 public:
 };
 
 
 // Size 0x18
-class TaleQuestCargoRunContractItem: public None
+struct TaleQuestCargoRunContractItem
 {
 public:
 	class                                                        ItemToCollect;                                     // 0x0(0x8)
@@ -62,7 +62,7 @@ public:
 
 
 // Size 0x80
-class TaleQuestDesc: public None
+struct TaleQuestDesc
 {
 public:
 	Class TaleQuestStepDesc*                                     Root;                                              // 0x28(0x8)
@@ -75,7 +75,7 @@ public:
 
 
 // Size 0x10
-class TaleQuestToggledDefinition: public None
+struct TaleQuestToggledDefinition
 {
 public:
 	struct FName                                                 FeatureToggle;                                     // 0x0(0x8)
@@ -84,7 +84,7 @@ public:
 
 
 // Size 0x10
-class TrackedActorData: public None
+struct TrackedActorData
 {
 public:
 	Class Actor*                                                 Actor;                                             // 0x0(0x8)
@@ -92,7 +92,7 @@ public:
 
 
 // Size 0x60
-class SnapshottedActorData: public None
+struct SnapshottedActorData
 {
 public:
 	Struct Guid                                                  SnapshotID;                                        // 0x10(0x10)
@@ -103,7 +103,7 @@ public:
 
 
 // Size 0x48
-class CriticalActorDelegateData: public None
+struct CriticalActorDelegateData
 {
 public:
 	Class Actor*                                                 CriticalActor;                                     // 0x0(0x8)
@@ -112,7 +112,7 @@ public:
 
 
 // Size 0x40
-class CriticalActorWrapper: public None
+struct CriticalActorWrapper
 {
 public:
 	Class Actor*                                                 CriticalActor;                                     // 0x0(0x8)
@@ -120,7 +120,7 @@ public:
 
 
 // Size 0x28
-class PhasedItem: public None
+struct PhasedItem
 {
 public:
 	Class ItemProxy*                                             ItemProxy;                                         // 0x0(0x8)
@@ -130,7 +130,7 @@ public:
 
 
 // Size 0x20
-class PhasedActor: public None
+struct PhasedActor
 {
 public:
 	Class Actor*                                                 MapActor;                                          // 0x0(0x8)
@@ -139,63 +139,63 @@ public:
 
 
 // Size 0x20
-class QuestVariableCollection: public None
+struct QuestVariableCollection
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableArray: public None
+struct QuestVariableArray
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableActorArray: public None
+struct QuestVariableActorArray
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableObjectArray: public None
+struct QuestVariableObjectArray
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableClassArray: public None
+struct QuestVariableClassArray
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableSetEQSTaleContextValue: public None
+struct QuestVariableSetEQSTaleContextValue
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableLinkEQSContext: public None
+struct QuestVariableLinkEQSContext
 {
 public:
 };
 
 
 // Size 0x20
-class ParticpantToolGroup: public None
+struct ParticpantToolGroup
 {
 public:
 };
 
 
 // Size 0x10
-class MigrationActionPair: public None
+struct MigrationActionPair
 {
 public:
 	Struct TaleResourceHandle                                    AllocatedResourceHandle;                           // 0x0(0x8)
@@ -204,63 +204,63 @@ public:
 
 
 // Size 0x20
-class QuestVariableRotator: public None
+struct QuestVariableRotator
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableActorAssetType: public None
+struct QuestVariableActorAssetType
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableItemDescType: public None
+struct QuestVariableItemDescType
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableItemInfo: public None
+struct QuestVariableItemInfo
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariablePrioritisedPrompt: public None
+struct QuestVariablePrioritisedPrompt
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableTaleResourceHandle: public None
+struct QuestVariableTaleResourceHandle
 {
 public:
 };
 
 
 // Size 0x8
-class ActorSpawnedAutomationEvent: public None
+struct ActorSpawnedAutomationEvent
 {
 public:
 };
 
 
 // Size 0x1
-class EventSpawnedTallTaleQuestItem: public None
+struct EventSpawnedTallTaleQuestItem
 {
 public:
 };
 
 
 // Size 0x4
-class TaleQuestSelectorServiceSeedSetTelemetryEvent: public None
+struct TaleQuestSelectorServiceSeedSetTelemetryEvent
 {
 public:
 	int                                                          Seed;                                              // 0x0(0x4)
@@ -268,14 +268,14 @@ public:
 
 
 // Size 0x18
-class PlaySequencerAutomationEvent: public None
+struct PlaySequencerAutomationEvent
 {
 public:
 };
 
 
 // Size 0x1
-class EventModalInteractionStateChanged: public None
+struct EventModalInteractionStateChanged
 {
 public:
 	bool                                                         IsInteractionBlocked;                              // 0x0(0x1)
@@ -283,7 +283,7 @@ public:
 
 
 // Size 0x20
-class ToggleModalInteractionNetworkEvent: public None
+struct ToggleModalInteractionNetworkEvent
 {
 public:
 	Class Actor*                                                 TargetActor;                                       // 0x10(0x8)
@@ -292,21 +292,21 @@ public:
 
 
 // Size 0x20
-class QuestVariableMerchantItemArray: public None
+struct QuestVariableMerchantItemArray
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableMerchantItem: public None
+struct QuestVariableMerchantItem
 {
 public:
 };
 
 
 // Size 0x40
-class StepMerchantItemDesc: public None
+struct StepMerchantItemDesc
 {
 public:
 	Struct FText                                                 Name;                                              // 0x0(0x38)
@@ -315,35 +315,35 @@ public:
 
 
 // Size 0x20
-class QuestVariableActorAssetTypeArray: public None
+struct QuestVariableActorAssetTypeArray
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableItemDescTypeArray: public None
+struct QuestVariableItemDescTypeArray
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariablePageLayout: public None
+struct QuestVariablePageLayout
 {
 public:
 };
 
 
 // Size 0x20
-class QuestVariableTexture: public None
+struct QuestVariableTexture
 {
 public:
 };
 
 
 // Size 0x10
-class TaleQuestContextInvalidTelemetryEvent: public None
+struct TaleQuestContextInvalidTelemetryEvent
 {
 public:
 	struct FName                                                 StepType;                                          // 0x0(0x8)
@@ -352,7 +352,7 @@ public:
 
 
 // Size 0x40
-class TaleQuestDeliverableItem: public None
+struct TaleQuestDeliverableItem
 {
 public:
 	Struct FText                                                 Name;                                              // 0x0(0x38)
@@ -361,14 +361,14 @@ public:
 
 
 // Size 0x20
-class QuestVariableBountyTargetArray: public None
+struct QuestVariableBountyTargetArray
 {
 public:
 };
 
 
 // Size 0x40
-class StepBountyTargetDesc: public None
+struct StepBountyTargetDesc
 {
 public:
 	Struct FText                                                 Name;                                              // 0x0(0x38)

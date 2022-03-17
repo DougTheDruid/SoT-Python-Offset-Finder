@@ -24,7 +24,7 @@ public:
 class MerchantContractsService: public Object
 {
 public:
-	TArray<Struct CollectCrate>                                  Contracts;                                         // 0x30(0x10)
+	TArray<Struct MerchantContract>                              Contracts;                                         // 0x30(0x10)
 };
 
 
@@ -39,7 +39,7 @@ public:
 class PlayerMerchantContractsComponent: public ActorComponent
 {
 public:
-	TArray<Struct CommodityDataFileLocation>                     Contracts;                                         // 0xd0(0x10)
+	TArray<Struct PlayerMerchantContract>                        Contracts;                                         // 0xd0(0x10)
 };
 
 

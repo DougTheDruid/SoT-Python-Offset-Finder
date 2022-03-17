@@ -31,7 +31,7 @@ public:
 class BTDecorator_IsOccupyingHangoutSpotWithGivenId: public BTDecorator_BaseConditional
 {
 public:
-	TArray<Struct MatchingStates>                                SuccessIds;                                        // 0x68(0x10)
+	TArray<Struct HangoutSpotId>                                 SuccessIds;                                        // 0x68(0x10)
 };
 
 
@@ -53,7 +53,7 @@ public:
 class BTDecorator_PetRoamingAnimationStateActive: public BTDecorator_BaseConditional
 {
 public:
-	TArray<Byte TaskDuration>                                    MatchingStates;                                    // 0x68(0x10)
+	TArray<Byte MatchingStates>                                  MatchingStates;                                    // 0x68(0x10)
 };
 
 
@@ -106,8 +106,8 @@ public:
 class BTTask_PetWaitForAnimationRoamingState: public BTTaskNode
 {
 public:
-	TArray<Byte AfterReactAnimState>                             SuccessRoamingStates;                              // 0x60(0x10)
-	TArray<Byte SuccessRoamingStates>                            FailRoamingStates;                                 // 0x70(0x10)
+	TArray<Byte SuccessRoamingStates>                            SuccessRoamingStates;                              // 0x60(0x10)
+	TArray<Byte FailRoamingStates>                               FailRoamingStates;                                 // 0x70(0x10)
 };
 
 
@@ -279,7 +279,7 @@ public:
 class PetHangoutSpotsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct PetType_Cached>                                HangoutSpotParams;                                 // 0x28(0x10)
+	TArray<Struct HangoutSpotParams>                             HangoutSpotParams;                                 // 0x28(0x10)
 };
 
 
@@ -311,7 +311,7 @@ public:
 class PetAIController: public AthenaAIController
 {
 public:
-	TArray<Struct DebugMenuName>                                 StrategyControllerMovementMods;                    // 0x918(0x10)
+	TArray<Struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x918(0x10)
 	float                                                        DefaultControlRotationInterpSpeed;                 // 0x928(0x4)
 	class                                                        DefaultStrategy;                                   // 0x930(0x8)
 	Class ReactStateMappingsDataAsset*                           ReactMappings;                                     // 0x938(0x8)
@@ -340,7 +340,7 @@ public:
 class PetCustomisationOverrideMappingsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct ResponsePriorities>                            MappingEntries;                                    // 0x28(0x10)
+	TArray<Struct PetCustomiationOverrideMappingEntry>           MappingEntries;                                    // 0x28(0x10)
 };
 
 
@@ -348,10 +348,10 @@ public:
 class PetDangerDataAsset: public DataAsset
 {
 public:
-	TArray<Struct PetPreviewCamera>                              KnownHearingDangers;                               // 0x28(0x10)
+	TArray<Struct PetDangerHearingThreat>                        KnownHearingDangers;                               // 0x28(0x10)
 	float                                                        MinChangeAverageThreatLocationToUpdate;            // 0x38(0x4)
 	float                                                        FleeDistance;                                      // 0x3c(0x4)
-	TArray<Byte FleeDistance>                                    ResponsePriorities;                                // 0x40(0x10)
+	TArray<Byte ResponsePriorities>                              ResponsePriorities;                                // 0x40(0x10)
 };
 
 
@@ -367,7 +367,7 @@ public:
 class PetHangoutSpotComponent: public SceneComponent
 {
 public:
-	TArray<Struct DropChannel>                                   HangoutSpots;                                      // 0x2d0(0x10)
+	TArray<Struct HangoutSpotPosition>                           HangoutSpots;                                      // 0x2d0(0x10)
 	bool                                                         HasLowerDeckFloodThreshold;                        // 0x2e0(0x1)
 	float                                                        LowerDeckFloodThreshold;                           // 0x2e4(0x4)
 	bool                                                         HasMiddleDeckFloodThreshold;                       // 0x2e8(0x1)
@@ -398,7 +398,7 @@ public:
 class PetListingDataAsset: public DataAsset
 {
 public:
-	TArray<Struct OnRep_DebugDisplayText>                        Entries;                                           // 0x28(0x10)
+	TArray<Struct PetListingTypeEntry>                           Entries;                                           // 0x28(0x10)
 };
 
 
@@ -435,7 +435,7 @@ public:
 class PetPerchComponent: public InteractableComponent
 {
 public:
-	TArray<Class AIPartId>                                       AllowedPetTypes;                                   // 0x130(0x10)
+	TArray<Class AllowedPetTypes>                                AllowedPetTypes;                                   // 0x130(0x10)
 	int                                                          HangoutSpotIndex;                                  // 0x140(0x4)
 	struct FName                                                 HangoutSpotName;                                   // 0x144(0x8)
 	Struct Vector                                                InteractionPointLocation;                          // 0x14c(0xc)
@@ -494,7 +494,7 @@ public:
 	Struct StringAssetReference                                  PetListingDataAsset;                               // 0x38(0x10)
 	Struct StringAssetReference                                  PetsServiceParamsDataAsset;                        // 0x48(0x10)
 	Struct StringAssetReference                                  PetSpawnDefinitionsDataAsset;                      // 0x58(0x10)
-	TArray<Byte PetSpawnDefinitionsDataAsset>                    ExcludedStatesForRoamingAssetGeneration;           // 0x68(0x10)
+	TArray<Byte ExcludedStatesForRoamingAssetGeneration>         ExcludedStatesForRoamingAssetGeneration;           // 0x68(0x10)
 };
 
 
@@ -509,7 +509,7 @@ public:
 class ReactStateMappingsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct OnRep_DropRequest>                             ReactMappings;                                     // 0x28(0x10)
+	TArray<Struct ReactStateMapping>                             ReactMappings;                                     // 0x28(0x10)
 };
 
 
@@ -565,7 +565,7 @@ public:
 	Struct FloatRange                                            NormalTimeUntilEscape;                             // 0x38(0x10)
 	Struct FloatRange                                            SubmergedTimeUntilEscape;                          // 0x48(0x10)
 	float                                                        DamageToOwnerDropThreshold;                        // 0x58(0x4)
-	TArray<Struct DamageToOwnerDropThreshold>                    DropTimeouts;                                      // 0x60(0x10)
+	TArray<Struct WieldablePetDropTimeout>                       DropTimeouts;                                      // 0x60(0x10)
 };
 
 
@@ -574,9 +574,9 @@ class WieldablePetHungerComponent: public ActorComponent
 {
 public:
 	Class WieldablePetHungerDataAsset*                           HungerData;                                        // 0xc8(0x8)
-	TArray<Struct HungerData>                                    CachedOverlappingActors;                           // 0xf8(0x10)
-	TArray<Struct CachedOverlappingActors>                       ActiveFoodSources;                                 // 0x108(0x10)
-	TArray<Struct ActiveFoodSources>                             FoodSourcesToRemove;                               // 0x118(0x10)
+	TArray<Struct OverlapResult>                                 CachedOverlappingActors;                           // 0xf8(0x10)
+	TArray<Struct WieldablePetFoodSourceEntry>                   ActiveFoodSources;                                 // 0x108(0x10)
+	TArray<Struct WieldablePetFoodSourceEntry>                   FoodSourcesToRemove;                               // 0x118(0x10)
 };
 
 

@@ -19,7 +19,7 @@ public:
 class ContextualTutorialComponent: public ActorComponent
 {
 public:
-	TArray<Struct TutorialStarterType>                           ContextualTutorialClasses;                         // 0xc8(0x10)
+	TArray<Struct ContextualTutorialPromptDesc>                  ContextualTutorialClasses;                         // 0xc8(0x10)
 	TArray<class SpawnedPromptActors*>                           SpawnedPromptActors;                               // 0xd8(0x10)
 };
 

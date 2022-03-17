@@ -23,7 +23,7 @@ TestWindInterface:
   - Name: WindZones
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Interface GetWindAtLocation>
+    Type: TArray<Interface WindZones>
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -69,11 +69,11 @@ WindService:
   - Name: WindZones
     Offset: '0x4e8'
     Size: '0x10'
-    Type: TArray<Interface CurrentWindMagnitude>
+    Type: TArray<Interface WindZones>
   - Name: ExtraWind
     Offset: '0x4f8'
     Size: '0x10'
-    Type: TArray<Struct WindZones>
+    Type: TArray<Struct ExtraWind>
   ClassSize: '0x138'
   FullSize: '0x508'
   InheritedSize: '0x3d0'

@@ -11,7 +11,7 @@ class AnimationSwitchDataAsset: public DataAsset
 {
 public:
 	float                                                        Threshold;                                         // 0x28(0x4)
-	TArray<Struct Threshold>                                     Entries;                                           // 0x30(0x10)
+	TArray<Struct AnimationSwitchEntry>                          Entries;                                           // 0x30(0x10)
 };
 
 
@@ -38,10 +38,10 @@ public:
 	Class SkeletalMesh*                                          BaseMeshReferenceSkeleton;                         // 0x38(0x8)
 	Class SkeletonsDataAsset*                                    SourceSkeletons;                                   // 0x40(0x8)
 	TArray<Struct FName>                                         SourceSkeletonNames;                               // 0x48(0x10)
-	TArray<Float >                                               SourceSkeletonWeights;                             // 0x58(0x10)
-	TArray<Struct SourceSkeletonWeights>                         BlendedSubMeshes;                                  // 0x68(0x10)
+	TArray<Float SourceSkeletonWeights>                          SourceSkeletonWeights;                             // 0x58(0x10)
+	TArray<Struct BlendedSubMeshSpecification>                   BlendedSubMeshes;                                  // 0x68(0x10)
 	TArray<class UnblendedSubMeshes*>                            UnblendedSubMeshes;                                // 0x78(0x10)
-	TArray<Struct UnblendedSubMeshes>                            BlendShapes;                                       // 0x88(0x10)
+	TArray<Struct IPGBlendShape>                                 BlendShapes;                                       // 0x88(0x10)
 };
 
 
@@ -71,7 +71,7 @@ public:
 class MaterialReferencesDataAsset: public DataAsset
 {
 public:
-	TArray<Struct ConvertFromRadialCoordinate>                   MaterialReferences;                                // 0x28(0x10)
+	TArray<Struct MaterialReferencesEntry>                       MaterialReferences;                                // 0x28(0x10)
 };
 
 
@@ -108,13 +108,13 @@ public:
 	TArray<Struct FName>                                         DefaultWardrobeItems;                              // 0x68(0x10)
 	Struct StringAssetReference                                  MaterialReferencesDataAsset;                       // 0x78(0x10)
 	Struct StringAssetReference                                  SkeletonsDataAsset;                                // 0x88(0x10)
-	TArray<Struct SkeletonsDataAsset>                            BaseSkeletonMeshes;                                // 0x98(0x10)
-	TArray<Struct BaseSkeletonMeshes>                            Characterization;                                  // 0xa8(0x10)
-	TArray<Str >                                                 SkeletonMeshFormats;                               // 0xb8(0x10)
+	TArray<Struct StringAssetReference>                          BaseSkeletonMeshes;                                // 0x98(0x10)
+	TArray<Struct StringAssetReference>                          Characterization;                                  // 0xa8(0x10)
+	TArray<Str SkeletonMeshFormats>                              SkeletonMeshFormats;                               // 0xb8(0x10)
 	Struct StringAssetReference                                  FirstPersonAnimations;                             // 0xc8(0x10)
 	Struct StringAssetReference                                  ThirdPersonAnimations;                             // 0xd8(0x10)
-	TArray<Float >                                               LODScreenSizes;                                    // 0xe8(0x10)
-	TArray<Float >                                               LODHysteresis;                                     // 0xf8(0x10)
+	TArray<Float LODScreenSizes>                                 LODScreenSizes;                                    // 0xe8(0x10)
+	TArray<Float LODHysteresis>                                  LODHysteresis;                                     // 0xf8(0x10)
 	int                                                          DefaultPirateGenerationSeed;                       // 0x108(0x4)
 };
 
@@ -143,7 +143,7 @@ public:
 	float                                                        FallbackProbability;                               // 0x228(0x4)
 	struct FName                                                 FallbackReferenceName;                             // 0x22c(0x8)
 	Struct StringAssetReference                                  FallbackTexture;                                   // 0x238(0x10)
-	TArray<Struct FallbackTexture>                               Entries;                                           // 0x248(0x10)
+	TArray<Struct TextureSwitchSeedEntry>                        Entries;                                           // 0x248(0x10)
 };
 
 
@@ -151,7 +151,7 @@ public:
 class TextureSwitchByGender: public TextureSwitch
 {
 public:
-	TArray<Struct Entries>                                       Entries;                                           // 0x220(0x10)
+	TArray<Struct TextureSwitchGenderEntry>                      Entries;                                           // 0x220(0x10)
 };
 
 
@@ -159,7 +159,7 @@ public:
 class TextureSwitchByEthnicity: public TextureSwitch
 {
 public:
-	TArray<Struct Entries>                                       Entries;                                           // 0x220(0x10)
+	TArray<Struct TextureSwitchEthnicityEntry>                   Entries;                                           // 0x220(0x10)
 };
 
 
@@ -167,7 +167,7 @@ public:
 class TextureSwitchByBodyShape: public TextureSwitch
 {
 public:
-	TArray<Struct Entries>                                       Entries;                                           // 0x220(0x10)
+	TArray<Struct TextureSwitchBodyShapeEntry>                   Entries;                                           // 0x220(0x10)
 };
 
 
@@ -176,7 +176,7 @@ class TextureSwitchByItem: public TextureSwitch
 {
 public:
 	Struct StringAssetReference                                  FallbackTexture;                                   // 0x220(0x10)
-	TArray<Struct FallbackTexture>                               Entries;                                           // 0x230(0x10)
+	TArray<Struct TextureSwitchItemEntry>                        Entries;                                           // 0x230(0x10)
 };
 
 
@@ -185,7 +185,7 @@ class ColorTextureSwitchBySeed: public TextureSwitch
 {
 public:
 	struct FName                                                 HashSource;                                        // 0x220(0x8)
-	TArray<Struct HashSource>                                    Entries;                                           // 0x228(0x10)
+	TArray<Struct ColorTextureSwitchSeedEntry>                   Entries;                                           // 0x228(0x10)
 };
 
 
@@ -193,7 +193,7 @@ public:
 class WardrobeExcludeDataAsset: public DataAsset
 {
 public:
-	TArray<Name None>                                            ExcludeItems;                                      // 0x28(0x10)
+	TArray<Struct FName>                                         ExcludeItems;                                      // 0x28(0x10)
 };
 
 
@@ -202,7 +202,7 @@ class WardrobeDataAsset: public DataAsset
 {
 public:
 	TArray<class ExcludeDataAssets*>                             ExcludeDataAssets;                                 // 0xc8(0x10)
-	TArray<Struct ExcludeDataAssets>                             AssetMap;                                          // 0xd8(0x10)
+	TArray<Struct MeshPatchEntry>                                AssetMap;                                          // 0xd8(0x10)
 };
 
 
@@ -210,9 +210,9 @@ public:
 class WardrobeOutfitDataAsset: public DataAsset
 {
 public:
-	TArray<Name None>                                            FemaleWardrobeItems;                               // 0x28(0x10)
+	TArray<Struct FName>                                         FemaleWardrobeItems;                               // 0x28(0x10)
 	TArray<Struct FName>                                         MaleWardrobeItems;                                 // 0x38(0x10)
-	TArray<Struct MaleWardrobeItems>                             BiasPerCategory;                                   // 0x48(0x10)
+	TArray<Struct WardrobeOutfitCategoryBias>                    BiasPerCategory;                                   // 0x48(0x10)
 };
 
 

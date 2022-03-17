@@ -55,7 +55,7 @@ AnimNotify_WwiseSoundMeshSwitch:
   - Name: MeshOverrides
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct SkeletalMeshSwitchGroup>
+    Type: TArray<Struct AnimNotify_SoundSwitch>
   ClassSize: '0x18'
   FullSize: '0x98'
   InheritedSize: '0x80'
@@ -75,7 +75,7 @@ AudioEventToComponentMapComponent:
   - Name: LocalComponentMappings
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct GetDurationMax>
+    Type: TArray<Struct EventToComponentMapping>
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -177,7 +177,7 @@ StaticMeshAudioDataAsset:
   - Name: MeshToAudioAssociations
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct PopulateInstanceAssociations>
+    Type: TArray<Struct StaticMeshAudioAssociation>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -187,7 +187,7 @@ StaticMeshAudioEmittersComponent:
   - Name: InstanceAssociations
     Offset: '0x2d0'
     Size: '0x10'
-    Type: TArray<Struct TritonMapFilename>
+    Type: TArray<Struct StaticMeshComponentAudioAssociation>
   ClassSize: '0x10'
   FullSize: '0x2e0'
   InheritedSize: '0x2d0'

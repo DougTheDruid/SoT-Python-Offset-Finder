@@ -57,7 +57,7 @@ public:
 class EmoteIdListingAsset: public DataAsset
 {
 public:
-	TArray<Name None>                                            EmoteIds;                                          // 0x28(0x10)
+	TArray<Struct FName>                                         EmoteIds;                                          // 0x28(0x10)
 };
 
 

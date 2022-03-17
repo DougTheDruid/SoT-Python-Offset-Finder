@@ -189,7 +189,7 @@ InterpCurveFloat:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct InterpCurvePointVector2D>
+    Type: TArray<Struct None>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
@@ -204,7 +204,7 @@ InterpCurveLinearColor:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct Transform>
+    Type: TArray<Struct InterpCurvePointLinearColor>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
@@ -357,7 +357,7 @@ InterpCurveQuat:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct InterpCurvePointTwoVectors>
+    Type: TArray<Struct InterpCurvePointQuat>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
@@ -372,7 +372,7 @@ InterpCurveTwoVectors:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct InterpCurvePointLinearColor>
+    Type: TArray<Struct InterpCurvePointTwoVectors>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
@@ -387,7 +387,7 @@ InterpCurveVector:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct InterpCurvePointQuat>
+    Type: TArray<Struct InterpCurvePointVector>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
@@ -402,7 +402,7 @@ InterpCurveVector2D:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct InterpCurvePointVector>
+    Type: TArray<Struct InterpCurvePointVector2D>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'

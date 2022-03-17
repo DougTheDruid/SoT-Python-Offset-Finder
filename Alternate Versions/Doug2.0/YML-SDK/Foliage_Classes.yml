@@ -451,7 +451,7 @@ ProceduralFoliageSpawner:
   - Name: FoliageTypes
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct NumUniqueTiles>
+    Type: TArray<Struct FoliageTypeObject>
   - Name: bNeedsSimulation
     Offset: '0x48'
     Size: '0x1'
@@ -469,7 +469,7 @@ ProceduralFoliageTile:
   - Name: InstancesArray
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct FoliageSpawner>
+    Type: TArray<Struct ProceduralFoliageInstance>
   ClassSize: '0x128'
   FullSize: '0x150'
   InheritedSize: '0x28'

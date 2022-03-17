@@ -17,7 +17,7 @@ ClueConnectionConfig:
   - Name: CluesThatCanDescribeSites
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct HasClueBeenGiven>
+    Type: TArray<Struct ClueSiteTypeSupportedDescribedByEntry>
   - Name: ClueGenerators
     Offset: '0x38'
     Size: '0x10'
@@ -65,7 +65,7 @@ ClueDescriptorGenerator:
   - Name: SupportedDestinationTypes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Class DescriptorType>
+    Type: TArray<Class SupportedDestinationTypes>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -85,7 +85,7 @@ ClueDestinationGenerator:
   - Name: WeightedSupportedDescriptorTypes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct RequiredClueSiteDataType>
+    Type: TArray<Struct WeightedClueDestinationDescriptor>
   ClassSize: '0x68'
   FullSize: '0x90'
   InheritedSize: '0x28'
@@ -117,7 +117,7 @@ ClueFactoryConfig:
   - Name: RestrictedClueTypes
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct ChoiceStrategy>
+    Type: TArray<Struct RestrictedClueType>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -143,7 +143,7 @@ ClueSiteLootRestrictionsDataAsset:
   - Name: ClueSiteLootRestrictions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct RankBasedDebrisDistribution>
+    Type: TArray<Struct ClueSiteLootRestriction>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -159,7 +159,7 @@ DebrisForVoyageRankDescAsset:
   - Name: RankBasedDebrisDistribution
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ContextProjectionPoint>
+    Type: TArray<Struct DebrisToRangeDist>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -215,7 +215,7 @@ LootForVoyageRankDescAsset:
   - Name: RankBasedLootDistribution
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct LootItemSpawnRelativeLocations>
+    Type: TArray<Struct LootToRangeDist>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -225,7 +225,7 @@ NPCLootSpawnComponent:
   - Name: LootItemSpawnRelativeLocations
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct ClueSiteTypes>
+    Type: TArray<Struct Vector>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'
@@ -253,7 +253,7 @@ SeaClueSiteTypesDataAsset:
   - Name: ClueSiteTypes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class SeaClueSiteTypes>
+    Type: TArray<Class ClueSiteTypes>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -323,11 +323,11 @@ TaleQuestClueSiteService:
   - Name: ClueSites
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct Desc>
+    Type: TArray<Struct ClueSite>
   - Name: DebugClueSiteIds
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct SpawnedLoot>
+    Type: TArray<Struct Guid>
   ClassSize: '0x78'
   FullSize: '0xd8'
   InheritedSize: '0x60'
@@ -365,7 +365,7 @@ TaleQuestGenerateCluePointingToSiteStepDesc:
   - Name: AllowedClueTypes
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<Class GeneratedClue>
+    Type: TArray<Class AllowedClueTypes>
   - Name: ConnectionConfiguration
     Offset: '0x110'
     Size: '0x8'
@@ -631,7 +631,7 @@ WeightedDebrisDataAsset:
   - Name: Debris
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct DestinationDescriptor>
+    Type: TArray<Struct WeightedDebris>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

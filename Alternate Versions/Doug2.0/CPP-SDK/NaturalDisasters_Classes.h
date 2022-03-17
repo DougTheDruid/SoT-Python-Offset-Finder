@@ -66,8 +66,8 @@ public:
 	float                                                        OuterShipNearMissRadiusInMetres;                   // 0x29c(0x4)
 	float                                                        InnerWatercraftNearMissRadiusInMetres;             // 0x2a0(0x4)
 	float                                                        OuterWatercraftNearMissRadiusInMetres;             // 0x2a4(0x4)
-	TArray<Struct OuterWatercraftNearMissRadiusInMetres>         Projectiles;                                       // 0x2a8(0x10)
-	TArray<Struct Projectiles>                                   ForceFeedbackIgnitionEffect;                       // 0x2b8(0x10)
+	TArray<Struct WeightedVolcanoProjectile>                     Projectiles;                                       // 0x2a8(0x10)
+	TArray<Struct LandmarkReactionEventPlayForceFeedbackEntry>   ForceFeedbackIgnitionEffect;                       // 0x2b8(0x10)
 	class                                                        LocalMiniProjectilesClass;                         // 0x2c8(0x8)
 	Struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnHeightAbovePlayerInMetres; // 0x2d0(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnDistanceFromPlayerInMetres; // 0x300(0x30)
@@ -80,7 +80,7 @@ public:
 	float                                                        LocalMiniProjectilesSpawnDistanceSpeedScalar;      // 0x418(0x4)
 	float                                                        LocalMiniProjectilesSpawnDistanceMaxPlayerSpeed;   // 0x41c(0x4)
 	float                                                        TimeBetweenLocalEmbers;                            // 0x420(0x4)
-	TArray<Struct TimeBetweenLocalEmbers>                        LocalEmbers;                                       // 0x428(0x10)
+	TArray<Struct VolcanoSetupDataEmbersEntry>                   LocalEmbers;                                       // 0x428(0x10)
 	float                                                        EmbersSpawnOffsetInMetres;                         // 0x438(0x4)
 	float                                                        ServerMigrationDistanceAsMultipleOfOuterTargetRadius; // 0x43c(0x4)
 };
@@ -96,7 +96,7 @@ public:
 	Struct WeightedProbabilityRangeOfRanges                      TargetDistanceFromCenterInMetres;                  // 0xa8(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenSpawns;                                 // 0xd8(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      StartPositionOffsetInMetres;                       // 0x108(0x30)
-	TArray<Struct StartPositionOffsetInMetres>                   Projectiles;                                       // 0x138(0x10)
+	TArray<Struct WeightedAshenLordVolcanoProjectile>            Projectiles;                                       // 0x138(0x10)
 	Struct PoolableCollectionMapConfiguration                    PoolableProjectilesConfig;                         // 0x148(0x18)
 	Struct VolcanoSetupDataEmbersEntry                           Embers;                                            // 0x160(0x10)
 	float                                                        EmberSpawnHeightInMeters;                          // 0x170(0x4)
@@ -223,7 +223,7 @@ public:
 	Struct WeightedProbabilityRange                              NumGeysersToSpawnPerGroup;                         // 0xf0(0x20)
 	Struct WeightedProbabilityRangeOfRanges                      SpawnDistanceFromPlayerInMetres;                   // 0x110(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      SpawnRadiusInMetres;                               // 0x140(0x30)
-	TArray<Struct SpawnRadiusInMetres>                           SpawnAngleRelativeToPlayerDirection;               // 0x170(0x10)
+	TArray<Struct GeyserSpawnAngleOption>                        SpawnAngleRelativeToPlayerDirection;               // 0x170(0x10)
 	Struct WeightedProbabilityRangeOfRanges                      DelayBetweenEachGeyserSpawningInAGroup;            // 0x180(0x30)
 	float                                                        MaximumDensityRadiusInMetres;                      // 0x1b0(0x4)
 	int                                                          MaximumDensityMaxNumGeysersWithinRadius;           // 0x1b4(0x4)
@@ -337,7 +337,7 @@ public:
 	Class CapsuleComponent*                                      HitDetectionVolume;                                // 0x488(0x8)
 	float                                                        FakeUnderwaterLocationsMinDistanceInMetres;        // 0x490(0x4)
 	float                                                        FakeUnderwaterLocationsDistanceBetweenPointsInMetres; // 0x494(0x4)
-	TArray<Weakclass FakeUnderwaterLocationsDistanceBetweenPointsInMetres> PlayersInZone;                                     // 0x498(0x10)
+	TArray<Weakclass PlayersInZone>                              PlayersInZone;                                     // 0x498(0x10)
 };
 
 

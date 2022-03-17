@@ -15,7 +15,7 @@ AIAmmoRankProgression:
   - Name: RankMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AllProgressions>
+    Type: TArray<Struct AIAmmoRankMapping>
   - Name: NumberOfRanks
     Offset: '0x38'
     Size: '0x4'
@@ -67,7 +67,7 @@ AIBoobyTrapSpawner:
   - Name: ShowNameplatesFor
     Offset: '0x628'
     Size: '0x10'
-    Type: TArray<Class NewWaveSpawnSfxTriggerRadius>
+    Type: TArray<Class ShowNameplatesFor>
   - Name: NamedAIDataAsset
     Offset: '0x638'
     Size: '0x8'
@@ -89,7 +89,7 @@ AIBountySpawner:
   - Name: WaveGroups
     Offset: '0x430'
     Size: '0x10'
-    Type: TArray<Struct MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup>
+    Type: TArray<Struct AIBountySpawnerWaveGroup>
   - Name: TeamColor
     Offset: '0x440'
     Size: '0x10'
@@ -105,7 +105,7 @@ AIBountySpawner:
   - Name: WaveSuicideTime
     Offset: '0x490'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float WaveSuicideTime>
   - Name: WaveSuicideMinDist
     Offset: '0x4a0'
     Size: '0x4'
@@ -155,7 +155,7 @@ AIClassIdTypeList:
   - Name: AllClassIds
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class AvailableColors>
+    Type: TArray<Class AllClassIds>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -165,7 +165,7 @@ AIColorVariantPool:
   - Name: AvailableColors
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct OnVulnerabilityStateEntered>
+    Type: TArray<Struct StringAssetReference>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -247,7 +247,7 @@ AICreatureCharacterMovementComponent:
   - Name: AIStrategyMovementProperties
     Offset: '0x558'
     Size: '0x10'
-    Type: TArray<Struct GetAIStrategy>
+    Type: TArray<Struct AIStrategyMovementProperties>
   - Name: BlendSpeed
     Offset: '0x568'
     Size: '0x4'
@@ -287,7 +287,7 @@ AICreatureCharacterMovementComponent:
   - Name: SubscribedStairClimbStrategies
     Offset: '0x590'
     Size: '0x10'
-    Type: TArray<Class MinStairVelocityDampen>
+    Type: TArray<Class SubscribedStairClimbStrategies>
   ClassSize: '0xc0'
   FullSize: '0x620'
   InheritedSize: '0x560'
@@ -317,7 +317,7 @@ AICreatureCharacterPathFollowingComponent:
   - Name: SubscribedStairClimbStrategies
     Offset: '0x308'
     Size: '0x10'
-    Type: TArray<Class MinStairVelocityDampen>
+    Type: TArray<Class SubscribedStairClimbStrategies>
   ClassSize: '0x30'
   FullSize: '0x320'
   InheritedSize: '0x2f0'
@@ -359,7 +359,7 @@ AIDebugSpawnActor:
   - Name: SpawnConfigList
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<Struct DebugCostDisplay>
+    Type: TArray<Struct AIDebugSpawnConfiguration>
   - Name: SpawnedAIList
     Offset: '0x3e8'
     Size: '0x10'
@@ -373,23 +373,23 @@ AIDebugVisualisationComponent:
   - Name: Lines
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct TargetItemDropOverrides>
+    Type: TArray<Struct AIDebugVisualisationLine>
   - Name: Boxes
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Struct Lines>
+    Type: TArray<Struct AIDebugVisualisationBox>
   - Name: Cylinders
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Struct Boxes>
+    Type: TArray<Struct AIDebugVisualisationCylinder>
   - Name: Spheres
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct Cylinders>
+    Type: TArray<Struct AIDebugVisualisationSphere>
   - Name: Cones
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<Struct Spheres>
+    Type: TArray<Struct AIDebugVisualisationCone>
   ClassSize: '0x50'
   FullSize: '0x118'
   InheritedSize: '0xc8'
@@ -417,7 +417,7 @@ AIDiorama:
   - Name: LinkedActors
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<Struct DialogueData>
+    Type: TArray<Struct AIDioramaPawn>
   ClassSize: '0x228'
   FullSize: '0x5f8'
   InheritedSize: '0x3d0'
@@ -441,7 +441,7 @@ AIDioramaController:
   - Name: SpawnedDioramaPawns
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct DialogueData>
+    Type: TArray<Struct AIDioramaPawn>
   - Name: AIDiorama
     Offset: '0x50'
     Size: '0x8'
@@ -459,7 +459,7 @@ AIDioramaDesc:
   - Name: RoleList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AISenseRadiusSphere>
+    Type: TArray<Struct AIDioramaRoleDesc>
   - Name: DialogueData
     Offset: '0x38'
     Size: '0x8'
@@ -473,7 +473,7 @@ AIDioramaLocationSourceComponent:
   - Name: DioramaRelativeLocations
     Offset: '0x2e0'
     Size: '0x10'
-    Type: TArray<Struct AllDioramasLocationsByCategory>
+    Type: TArray<Struct AIDioramaLocationSourceComponentData>
   - Name: DialogueTriggerRadius
     Offset: '0x2f0'
     Size: '0x4'
@@ -489,7 +489,7 @@ AIDioramaLocationSourceComponent:
   - Name: Categories
     Offset: '0x300'
     Size: '0x10'
-    Type: TArray<Class AISenseRadiusForDebugDisplay>
+    Type: TArray<Class Categories>
   - Name: FeatureToggle
     Offset: '0x310'
     Size: '0x8'
@@ -551,7 +551,7 @@ AIEncounterGenerationRecipe:
   - Name: Forms
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct FeatureBasedRecipeLists>
+    Type: TArray<Struct AIFormVarietyEntry>
   - Name: SkillsetProgression
     Offset: '0x38'
     Size: '0x10'
@@ -581,7 +581,7 @@ AIEncounterGenerationRecipeRankOrderList:
   - Name: FeatureBasedRecipeLists
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct Recipes>
+    Type: TArray<Struct AIEncounterGenerationRecipeFeatureBasedRankOrderList>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -617,11 +617,11 @@ AIEncounterService:
   - Name: DefaultPartsCategories
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<Struct NumberOfRanks>
+    Type: TArray<Struct AIPartsCategoryMapping>
   - Name: FormPartsCategories
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<Struct DefaultPartsCategories>
+    Type: TArray<Struct AIPartsCategoryFormMapping>
   - Name: Ammo
     Offset: '0x3f8'
     Size: '0x8'
@@ -789,7 +789,7 @@ AIFixedWavesSpawner:
   - Name: SpawnedWaves
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct SpawnedWave>
+    Type: TArray<Struct AIPersistentSpawnerWave>
   - Name: NumWavesToSpawnOnSpottedNewTarget
     Offset: '0x438'
     Size: '0x4'
@@ -823,7 +823,7 @@ AIFormRankProgression:
   - Name: RankMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AllProgressions>
+    Type: TArray<Struct AIFormRankMapping>
   - Name: NumberOfRanks
     Offset: '0x38'
     Size: '0x4'
@@ -953,7 +953,7 @@ AIItemDropComponentList:
   - Name: AllSpawners
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<AssetClass AllProgressions>
+    Type: TArray<AssetClass AllSpawners>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -995,7 +995,7 @@ AIItemSpawnRankProgression:
   - Name: RankMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AllowedLoadouts>
+    Type: TArray<Struct AIDropSpawnerRankMapping>
   - Name: NumberOfRanks
     Offset: '0x38'
     Size: '0x4'
@@ -1035,7 +1035,7 @@ AILoadoutRankProgression:
   - Name: RankMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AddNameplateToAI>
+    Type: TArray<Struct AILoadoutRankMapping>
   - Name: NumberOfRanks
     Offset: '0x38'
     Size: '0x4'
@@ -1071,11 +1071,11 @@ AIManagerService:
   - Name: LoadedAIPawnClasses
     Offset: '0x4d8'
     Size: '0x10'
-    Type: TArray<Class BlockAIAbility>
+    Type: TArray<Class LoadedAIPawnClasses>
   - Name: LoadedAIItemDropComponentClasses
     Offset: '0x4e8'
     Size: '0x10'
-    Type: TArray<Class LoadedAIPawnClasses>
+    Type: TArray<Class LoadedAIItemDropComponentClasses>
   - Name: AmbientWaterSpawnerManager
     Offset: '0x500'
     Size: '0x8'
@@ -1087,7 +1087,7 @@ AIManagerService:
   - Name: CustomPlayersTrackerDatas
     Offset: '0x848'
     Size: '0x10'
-    Type: TArray<Struct PlayerTrackers>
+    Type: TArray<Struct CustomPlayersAITrackerData>
   - Name: SpawnersPendingShutdown
     Offset: '0x958'
     Size: '0x10'
@@ -1171,7 +1171,7 @@ AIPartIdListingAsset:
   - Name: AIPartIdsVariantInfo
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct KilledVfxTemplate>
+    Type: TArray<Struct AIPartIdNumVariantInfo>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1385,7 +1385,7 @@ AIProgressiveWavesSpawner:
   - Name: Waves
     Offset: '0x430'
     Size: '0x10'
-    Type: TArray<Struct ApplyLocalisableNamesToNameplates>
+    Type: TArray<Struct AIPersistentSpawnerWave>
   - Name: TriggerActor
     Offset: '0x458'
     Size: '0x8'
@@ -1423,7 +1423,7 @@ AIRegionComponent:
   - Name: SpawnLocationGroups
     Offset: '0x2e8'
     Size: '0x10'
-    Type: TArray<Struct RegionRadius>
+    Type: TArray<Struct SpawnLocationGroup>
   ClassSize: '0x70'
   FullSize: '0x340'
   InheritedSize: '0x2d0'
@@ -1465,7 +1465,7 @@ AISkillsetRankProgression:
   - Name: RankMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct TeamColor>
+    Type: TArray<Struct AISkillsetRankMapping>
   - Name: NumberOfRanks
     Offset: '0x38'
     Size: '0x4'
@@ -1537,7 +1537,7 @@ AISpawnContextList:
   - Name: SpawnContextList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct NumWavesToSpawnOnSpottedNewTarget>
+    Type: TArray<Struct AISpawnContextData>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1563,7 +1563,7 @@ AISpawnMatchesAnyContextCondition:
   - Name: Contexts
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Class ShouldApplyOverride>
+    Type: TArray<Class Contexts>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -1607,7 +1607,7 @@ AISpawnWaveSequence:
   - Name: Waves
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct NumberOfRanks>
+    Type: TArray<Struct AISpawnerWave>
   - Name: FeatureName
     Offset: '0x38'
     Size: '0x8'
@@ -1621,7 +1621,7 @@ AISpawnWaveSequenceRankProgression:
   - Name: RankMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct FeatureName>
+    Type: TArray<Struct AISpawnWaveSequenceRankMapping>
   - Name: NumberOfRanks
     Offset: '0x38'
     Size: '0x4'
@@ -1651,7 +1651,7 @@ AISpawner:
   - Name: SpawnContextSpecificEncounterSettings
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct DefaultSpawnWaveProgression>
+    Type: TArray<Struct AISpawnContextIdEncounterSettingsPair>
   - Name: ShouldSpawnFacingRegionCentre
     Offset: '0xa8'
     Size: '0x1'
@@ -1683,11 +1683,11 @@ AISpawner:
   - Name: SpawnOverrides
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct PriorityForSpawnedPawns>
+    Type: TArray<Struct ConditionalAISpawnOverride>
   - Name: AdditionalBehaviours
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct SpawnOverrides>
+    Type: TArray<Struct AdditionalSpawnerBehaviour>
   - Name: AthenaAISettings
     Offset: '0x360'
     Size: '0x8'
@@ -1803,7 +1803,7 @@ AIWeightedProbabilityRangeOfRangesRankProgression:
   - Name: RankMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AICharacterWaterInteractionCollisionProfileName>
+    Type: TArray<Struct AIWeightedProbabilityRangeOfRangesRankMapping>
   - Name: NumberOfRanks
     Offset: '0x38'
     Size: '0x4'
@@ -1867,7 +1867,7 @@ AmbientWaterSpawnerManager:
   - Name: PerDepthSpawnChances
     Offset: '0x4b8'
     Size: '0x10'
-    Type: TArray<Struct SharkEncounterSpawnBlockingData>
+    Type: TArray<Struct PerDepthSpawnChance>
   - Name: SharkPerPlayerSpawner
     Offset: '0x4c8'
     Size: '0x8'
@@ -1875,11 +1875,11 @@ AmbientWaterSpawnerManager:
   - Name: PlayersInWater
     Offset: '0x600'
     Size: '0x10'
-    Type: TArray<Struct SharkPerPlayerSpawner>
+    Type: TArray<Struct PlayerInWaterData>
   - Name: SirenEncounters
     Offset: '0x610'
     Size: '0x10'
-    Type: TArray<Struct PlayersInWater>
+    Type: TArray<Struct SirenEncounterData>
   ClassSize: '0x250'
   FullSize: '0x620'
   InheritedSize: '0x3d0'
@@ -1895,7 +1895,7 @@ AppliedStatusToMultipleAIWithFormsStatCondition:
   - Name: Status
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class bProcessingSpawnLocations>
+    Type: TArray<Class Status>
   - Name: AICountMinimum
     Offset: '0x38'
     Size: '0x4'
@@ -1907,15 +1907,15 @@ AppliedStatusToMultipleAIWithFormsStatCondition:
   - Name: AllowedAIForms
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<AssetClass AllowAllForms>
+    Type: TArray<AssetClass AllowedAIForms>
   - Name: AIClassesToIgnore
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Class AllowedAIForms>
+    Type: TArray<Class AIClassesToIgnore>
   - Name: AllowedSources
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<AssetClass AIClassesToIgnore>
+    Type: TArray<AssetClass AllowedSources>
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
@@ -1983,7 +1983,7 @@ AthenaAIAbilityComponent:
   - Name: AbilityDamageStages
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<Struct DebugAlwaysOnAbility>
+    Type: TArray<Struct AthenaAIAbilityDamageStage>
   ClassSize: '0x108'
   FullSize: '0x1d0'
   InheritedSize: '0xc8'
@@ -1993,7 +1993,7 @@ AthenaAIAbilityHandlerComponent:
   - Name: AbilityStages
     Offset: '0x178'
     Size: '0x10'
-    Type: TArray<Struct DelayBeforeSFXPlays>
+    Type: TArray<Struct AthenaAIAbilityDamageStage>
   - Name: AIAbilities
     Offset: '0x188'
     Size: '0x10'
@@ -2001,7 +2001,7 @@ AthenaAIAbilityHandlerComponent:
   - Name: ReadyAbilitiesPool
     Offset: '0x198'
     Size: '0x10'
-    Type: TArray<Class AIAbilities>
+    Type: TArray<Class ReadyAbilitiesPool>
   - Name: DebugAlwaysOnAbility
     Offset: '0x1c8'
     Size: '0x8'
@@ -2025,7 +2025,7 @@ AthenaAIAbilityParams:
   - Name: NamedControllerParams
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AshCloudClass>
+    Type: TArray<Struct AthenaAIControllerParamValue>
   - Name: DamageIntervalCountingMode
     Offset: '0x38'
     Size: '0x1'
@@ -2065,7 +2065,7 @@ AthenaAIAbilityParams:
   - Name: FollowUpAbilities
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct MinMaxAttackRange>
+    Type: TArray<Struct AIAbilityFollowUp>
   - Name: Weight
     Offset: '0x98'
     Size: '0x4'
@@ -2119,7 +2119,7 @@ AthenaAIAmmoDataAsset:
   - Name: AmmoWeights
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<Struct NumberOfRanks>
+    Type: TArray<Struct AthenaAICharacterControllerWeightedAmmoType>
   - Name: FeatureName
     Offset: '0xc8'
     Size: '0x8'
@@ -2167,7 +2167,7 @@ AthenaAICharacterController:
   - Name: SpawnItemDescForItemCategories
     Offset: '0x9c8'
     Size: '0x10'
-    Type: TArray<Struct CharacterParamsDataAsset>
+    Type: TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: AIAbilityParams
     Offset: '0x9d8'
     Size: '0x10'
@@ -2175,7 +2175,7 @@ AthenaAICharacterController:
   - Name: NonItemEngageOptions
     Offset: '0x9e8'
     Size: '0x10'
-    Type: TArray<Struct AIAbilityParams>
+    Type: TArray<Struct AthenaAIEngageEnemyData>
   - Name: DistanceInMToCannonShotHitChanceCurve
     Offset: '0x9f8'
     Size: '0x8'
@@ -2209,11 +2209,11 @@ AthenaAICharacterControllerParamsDataAsset:
   - Name: IndividualAIStrategyMovementProperties
     Offset: '0x110'
     Size: '0x10'
-    Type: TArray<Struct IndividualDistanceInMToCannonShotHitChanceCurve>
+    Type: TArray<Struct AIStrategyMovementProperties>
   - Name: IndividualItemCategoryAIStrategyMovementPropertiesOverrides
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<Struct IndividualAIStrategyMovementProperties>
+    Type: TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride>
   - Name: IndividualCannonTargetingParams
     Offset: '0x130'
     Size: '0x10'
@@ -2221,19 +2221,19 @@ AthenaAICharacterControllerParamsDataAsset:
   - Name: IndividualWieldedItemProjectileEffectivenessProperties
     Offset: '0x140'
     Size: '0x10'
-    Type: TArray<Struct IndividualCannonTargetingParams>
+    Type: TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP>
   - Name: IndividualWieldedItemOverrideNamedControllerParams
     Offset: '0x150'
     Size: '0x10'
-    Type: TArray<Struct IndividualWieldedItemProjectileEffectivenessProperties>
+    Type: TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams>
   - Name: IndividualNamedItemParams
     Offset: '0x160'
     Size: '0x10'
-    Type: TArray<Struct IndividualWieldedItemOverrideNamedControllerParams>
+    Type: TArray<Struct AthenaAIItemParamValue>
   - Name: IndividualSpawnItemDescForItemCategories
     Offset: '0x170'
     Size: '0x10'
-    Type: TArray<Struct IndividualNamedItemParams>
+    Type: TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: UseDamageBasedAbilityStages
     Offset: '0x180'
     Size: '0x1'
@@ -2241,11 +2241,11 @@ AthenaAICharacterControllerParamsDataAsset:
   - Name: HealthStages
     Offset: '0x188'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float HealthStages>
   - Name: IndividualDamageBasedAIAbilityStages
     Offset: '0x198'
     Size: '0x10'
-    Type: TArray<Struct HealthStages>
+    Type: TArray<Struct AthenaAIAbilityDamageStage>
   - Name: IndividualAIAbilityParams
     Offset: '0x1a8'
     Size: '0x10'
@@ -2253,7 +2253,7 @@ AthenaAICharacterControllerParamsDataAsset:
   - Name: IndividualNonItemEngageOptions
     Offset: '0x1b8'
     Size: '0x10'
-    Type: TArray<Struct IndividualAIAbilityParams>
+    Type: TArray<Struct AthenaAIEngageEnemyData>
   - Name: IndividualAnimationDataOverrideAsset
     Offset: '0x1c8'
     Size: '0x10'
@@ -2311,11 +2311,11 @@ AthenaAICharacterControllerSharedParamValuesDataAsset:
   - Name: AIStrategyMovementProperties
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct DistanceInMToCannonShotHitChanceCurve>
+    Type: TArray<Struct AIStrategyMovementProperties>
   - Name: ItemCategoryAIStrategyMovementPropertiesOverrides
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct AIStrategyMovementProperties>
+    Type: TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride>
   - Name: CannonTargetingParams
     Offset: '0xb8'
     Size: '0x10'
@@ -2323,19 +2323,19 @@ AthenaAICharacterControllerSharedParamValuesDataAsset:
   - Name: WieldedItemProjectileEffectivenessProperties
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct CannonTargetingParams>
+    Type: TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP>
   - Name: WieldedItemOverrideNamedControllerParams
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Struct WieldedItemProjectileEffectivenessProperties>
+    Type: TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams>
   - Name: NamedItemParams
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Struct WieldedItemOverrideNamedControllerParams>
+    Type: TArray<Struct AthenaAIItemParamValue>
   - Name: SpawnItemDescForItemCategories
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct NamedItemParams>
+    Type: TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: AIAbilityParams
     Offset: '0x108'
     Size: '0x10'
@@ -2343,7 +2343,7 @@ AthenaAICharacterControllerSharedParamValuesDataAsset:
   - Name: NonItemEngageOptions
     Offset: '0x118'
     Size: '0x10'
-    Type: TArray<Struct AIAbilityParams>
+    Type: TArray<Struct AthenaAIEngageEnemyData>
   - Name: AnimationDataOverrideAsset
     Offset: '0x128'
     Size: '0x10'
@@ -2429,7 +2429,7 @@ AthenaAIController:
   - Name: AIStrategySenseSettingOverrides
     Offset: '0x6e0'
     Size: '0x10'
-    Type: TArray<Struct DamageSenseConfig>
+    Type: TArray<Struct AthenaAIControllerSenseSettingOverride>
   - Name: CurrentNotSeenPerceivedActor
     Offset: '0x8c8'
     Size: '0x8'
@@ -2487,7 +2487,7 @@ AthenaAIControllerParamsDataAsset:
   - Name: TargetLoadWeightingBias
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Float >
+    Type: TArray<Float TargetLoadWeightingBias>
   - Name: DistanceToStartTargetPickingDecrease
     Offset: '0x60'
     Size: '0x4'
@@ -2531,19 +2531,19 @@ AthenaAIControllerParamsDataAsset:
   - Name: IndividualInitialBlackboardValues
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Struct IndividualHealthCustomisationValues>
+    Type: TArray<Struct AthenaAIControllerParamValue>
   - Name: IndividualNamedControllerParams
     Offset: '0xc0'
     Size: '0x10'
-    Type: TArray<Struct IndividualInitialBlackboardValues>
+    Type: TArray<Struct AthenaAIControllerParamValue>
   - Name: IndividualNamedWeightedRangesControllerParams
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct IndividualNamedControllerParams>
+    Type: TArray<Struct AthenaAIControllerWeightedRangesParamValue>
   - Name: IndividualAIStrategySenseSettingOverrides
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct IndividualNamedWeightedRangesControllerParams>
+    Type: TArray<Struct AthenaAIControllerSenseSettingOverride>
   - Name: IndividualOverrideCurrentTargetPerceivedNotVisibleAge
     Offset: '0xf0'
     Size: '0x1'
@@ -2609,7 +2609,7 @@ AthenaAIControllerSharedParamValuesDataAsset:
   - Name: AIStrategySenseSettingOverrides
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct CurrentTargetPerceivedNotVisibleAge>
+    Type: TArray<Struct AthenaAIControllerSenseSettingOverride>
   - Name: HealthCustomisationValues
     Offset: '0x48'
     Size: '0xc'
@@ -2617,15 +2617,15 @@ AthenaAIControllerSharedParamValuesDataAsset:
   - Name: InitialBlackboardValues
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct HealthCustomisationValues>
+    Type: TArray<Struct AthenaAIControllerParamValue>
   - Name: NamedControllerParams
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct InitialBlackboardValues>
+    Type: TArray<Struct AthenaAIControllerParamValue>
   - Name: NamedWeightedRangesControllerParams
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct NamedControllerParams>
+    Type: TArray<Struct AthenaAIControllerWeightedRangesParamValue>
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -2641,7 +2641,7 @@ AthenaAIFormComponent:
   - Name: VfxCustomisations
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct ActivationTimerHandle>
+    Type: TArray<Struct AthenaAIFormComponentVfxCustomisation>
   - Name: FormData
     Offset: '0xe0'
     Size: '0x8'
@@ -2665,11 +2665,11 @@ AthenaAIFormDataAsset:
   - Name: PreventHealthChangedReasons
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Byte ParticleActivationDelay>
+    Type: TArray<Byte PreventHealthChangedReasons>
   - Name: DamageResponses
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct PreventHealthChangedReasons>
+    Type: TArray<Struct AIFormDamageResponse>
   - Name: OverrideStatusRecipientResponseList
     Offset: '0x48'
     Size: '0x8'
@@ -2731,7 +2731,7 @@ AthenaAIRangeBasedAmmoDataAsset:
   - Name: AmmoTypeRanges
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct ClearOverridePrioritiseInteractablesBeforeEnemies>
+    Type: TArray<Struct WeightedAmmoTypeRange>
   ClassSize: '0x10'
   FullSize: '0xe0'
   InheritedSize: '0xd0'
@@ -2861,11 +2861,11 @@ AthenaAITypeListDataAsset:
   - Name: AITypes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct FeatureName>
+    Type: TArray<Struct AITypeData>
   - Name: AdditionalAIActors
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct AITypes>
+    Type: TArray<Struct StringClassReference>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -2897,7 +2897,7 @@ AthenaFaunaAIController:
   - Name: StrategyControllerMovementMods
     Offset: '0x900'
     Size: '0x10'
-    Type: TArray<Struct DefaultControlRotationInterpSpeed>
+    Type: TArray<Struct AIStategyControllerMovementMod>
   - Name: MinAgentHalfHeightPctOverride
     Offset: '0x910'
     Size: '0x4'
@@ -3055,7 +3055,7 @@ BTDecorator_CompareBlackboardValues:
   - Name: FloatConditions
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct Value>
+    Type: TArray<Struct BlackboardValueCondition>
   - Name: FloatConditionComposite
     Offset: '0x78'
     Size: '0x1'
@@ -3107,7 +3107,7 @@ BTDecorator_CurrentAIStrategy:
   - Name: Strategies
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Class ExpectedTrackId>
+    Type: TArray<Class Strategies>
   ClassSize: '0x10'
   FullSize: '0x78'
   InheritedSize: '0x68'
@@ -3225,7 +3225,7 @@ BTDecorator_MultipleRandomDiceRolls:
   - Name: ChanceKeyPairs
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct Chance>
+    Type: TArray<Struct ChanceAndBlackboardKeyPair>
   ClassSize: '0x10'
   FullSize: '0x78'
   InheritedSize: '0x68'
@@ -3401,7 +3401,7 @@ BTService_DisableCollisions:
   - Name: ChannelsToLeaveUnaffected
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Byte Conditional>
+    Type: TArray<Byte ChannelsToLeaveUnaffected>
   ClassSize: '0x10'
   FullSize: '0x80'
   InheritedSize: '0x70'
@@ -3545,7 +3545,7 @@ BTService_RunEQSQuery:
   - Name: QueryParams
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct QueryTemplate>
+    Type: TArray<Struct EnvNamedValue>
   - Name: RunMode
     Offset: '0xe0'
     Size: '0x1'
@@ -4057,7 +4057,7 @@ BTTask_SetAIStrategyFromWeightedArray:
   - Name: WeightedStrategies
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct Actor>
+    Type: TArray<Struct WeightedAIStrategyChance>
   ClassSize: '0x10'
   FullSize: '0x70'
   InheritedSize: '0x60'
@@ -4289,7 +4289,7 @@ BTTask_SwimAttackTargetActor:
   - Name: AttackAnimMapping
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct MaxAngleToTargetToSuccessfullyAttack>
+    Type: TArray<Struct AttackableTypeToAnimMapping>
   - Name: LoSTraceProfileName
     Offset: '0xa0'
     Size: '0x8'
@@ -4351,7 +4351,7 @@ BTTask_SwimAttackTargetShip:
   - Name: ImpulseData
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<Struct LosTraceRadius>
+    Type: TArray<Struct SwimAttackTargetShipImpulseData>
   - Name: MinDamageHolesToApply
     Offset: '0x100'
     Size: '0x30'
@@ -4547,7 +4547,7 @@ BurrowAIAbility:
   - Name: LocationsToSpawnCrack
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct OnLifeSpanPercentLeft>
+    Type: TArray<Struct Vector>
   - Name: TimerHandleStartNextSpawnWave
     Offset: '0x88'
     Size: '0x4'
@@ -4573,7 +4573,7 @@ BurrowAIAbilityParams:
   - Name: ValidBurrowSurfaceTypes
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Byte StatusToApplyOnHeal>
+    Type: TArray<Byte ValidBurrowSurfaceTypes>
   - Name: BurrowCrackToSpawn
     Offset: '0xd8'
     Size: '0x8'
@@ -4749,11 +4749,11 @@ CoralShieldAbility:
   - Name: PotentialTargets
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Weakclass OwnerChainLightningSourceInterface>
+    Type: TArray<Weakclass PotentialTargets>
   - Name: BuffedTargets
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<Struct CachedBuffReceiver>
+    Type: TArray<Struct BuffedTargetData>
   ClassSize: '0xb0'
   FullSize: '0x128'
   InheritedSize: '0x78'
@@ -4861,7 +4861,7 @@ CustomSkeletonAnimationDataList:
   - Name: CustomAnimationAssets
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct SeenActors>
+    Type: TArray<Struct StringAssetReference>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -4877,7 +4877,7 @@ DebugAIManagerService:
   - Name: BlockedAIAbilities
     Offset: '0xb40'
     Size: '0x10'
-    Type: TArray<Class TeamColors>
+    Type: TArray<Class BlockedAIAbilities>
   ClassSize: '0x100'
   FullSize: '0xb50'
   InheritedSize: '0xa50'
@@ -4937,7 +4937,7 @@ ElectricShieldAbility:
   - Name: SelectedTargets
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Interface BreathVFX>
+    Type: TArray<Interface SelectedTargets>
   ClassSize: '0x98'
   FullSize: '0x110'
   InheritedSize: '0x78'
@@ -5125,7 +5125,7 @@ EnvQueryGenerator_Sphere:
   - Name: Radiuses
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct DirectArcTarget>
+    Type: TArray<Struct AIDataProviderFloatValue>
   - Name: NumberOfVerticalCircles
     Offset: '0xa0'
     Size: '0x30'
@@ -5263,7 +5263,7 @@ EnvQueryGenerator_WaterMultiDeckerRing:
   - Name: ZOffsetOfRingsFromContext
     Offset: '0xc0'
     Size: '0x10'
-    Type: TArray<Struct Radius>
+    Type: TArray<Struct AIDataProviderFloatValue>
   - Name: PointsPerRing
     Offset: '0xd0'
     Size: '0x30'
@@ -5615,7 +5615,7 @@ FaunaAIContollerParamsDataAsset:
   - Name: CarriedItemThreatOverrides
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<Struct Courage>
+    Type: TArray<Struct CarriedItemThreatOverride>
   - Name: ThreatenedBySightOfCarrier
     Offset: '0x130'
     Size: '0x1'
@@ -5623,7 +5623,7 @@ FaunaAIContollerParamsDataAsset:
   - Name: KnownHearingDangers
     Offset: '0x138'
     Size: '0x10'
-    Type: TArray<Struct ThreatenedBySightOfCarrier>
+    Type: TArray<Struct HearingThreat>
   - Name: CarrierHearingThreatSpeedThreshold
     Offset: '0x148'
     Size: '0x4'
@@ -5739,7 +5739,7 @@ IsAIOfClassStatCondition:
   - Name: AIClasses
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Class AllowedAIForms>
+    Type: TArray<Class AIClasses>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -5749,7 +5749,7 @@ IsAIOfFormStatCondition:
   - Name: AllowedAIForms
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<AssetClass AISkillsets>
+    Type: TArray<AssetClass AllowedAIForms>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -5791,7 +5791,7 @@ MeshMemoryConstraintsAIPartsDesc:
   - Name: FallbackOverrideMaterials
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct OverrideMaterials>
+    Type: TArray<Struct StringAssetReference>
   ClassSize: '0x50'
   FullSize: '0x80'
   InheritedSize: '0x30'
@@ -5801,7 +5801,7 @@ NamedAIDataAsset:
   - Name: MaleCaptainNames
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Text None>
+    Type: TArray<Struct FText>
   - Name: FemaleCaptainNames
     Offset: '0x38'
     Size: '0x10'
@@ -5817,11 +5817,11 @@ NamedAIDataAsset:
   - Name: CustomNameTitles
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct FemaleCrewNames>
+    Type: TArray<Struct AICustomNameTitleMapping>
   - Name: CustomNameOverrides
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct CustomNameTitles>
+    Type: TArray<Struct AICustomClassIdNameOverrides>
   - Name: DefaultClassId
     Offset: '0x88'
     Size: '0x8'
@@ -5889,7 +5889,7 @@ Pet:
   - Name: FlyingStrategyProperties
     Offset: '0x8a8'
     Size: '0x10'
-    Type: TArray<Struct CanFly>
+    Type: TArray<Struct PetFlyingStrategyProperties>
   - Name: FlyingLandTime
     Offset: '0x8b8'
     Size: '0x4'
@@ -5953,7 +5953,7 @@ Pet:
   - Name: StatesToUseAlternateNamePlatePos
     Offset: '0x928'
     Size: '0x10'
-    Type: TArray<Byte AlternateNamePlateHeight>
+    Type: TArray<Byte StatesToUseAlternateNamePlatePos>
   - Name: PetTimeSpentSad
     Offset: '0x938'
     Size: '0x10'
@@ -5997,15 +5997,15 @@ Pet:
   - Name: TurnRateModifierList
     Offset: '0x9a0'
     Size: '0x10'
-    Type: TArray<Struct DefaultShipTurnRateModifier>
+    Type: TArray<Struct PetTurnRateModifier>
   - Name: LocomotingMovementStates
     Offset: '0x9b0'
     Size: '0x10'
-    Type: TArray<Byte TurnRateModifierList>
+    Type: TArray<Byte LocomotingMovementStates>
   - Name: RequestIdleOrMovementValidMovementStates
     Offset: '0x9c0'
     Size: '0x10'
-    Type: TArray<Byte LocomotingMovementStates>
+    Type: TArray<Byte RequestIdleOrMovementValidMovementStates>
   - Name: MaxRollAngle
     Offset: '0x9d0'
     Size: '0x4'
@@ -6155,7 +6155,7 @@ PetPartCustomisationComponent:
   - Name: CurrentlyLoadedMaterials
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Struct SizeMappingsAsset>
+    Type: TArray<Struct PetLoadedMaterial>
   - Name: DefaultMeshRef
     Offset: '0xf8'
     Size: '0x10'
@@ -6185,7 +6185,7 @@ PetPartSizeMappingsDataAsset:
   - Name: Mappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct IgnorePickupFromHangoutTooltipDisplayOffset>
+    Type: TArray<Struct PetPartSizeMapping>
   - Name: ConcealedScaleBounds
     Offset: '0x38'
     Size: '0x10'
@@ -6211,7 +6211,7 @@ PetWieldableReactMappingsDataAsset:
   - Name: WieldableReactMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct PetPartCustomisationComponent>
+    Type: TArray<Struct PetWieldableReactMapping>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -6229,7 +6229,7 @@ PetsPartsDesc:
   - Name: PetMaterials
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct HighResMesh>
+    Type: TArray<Struct PetMaterialEntry>
   - Name: PetSize
     Offset: '0x60'
     Size: '0x1'
@@ -6315,7 +6315,7 @@ SpawnContextProviderZone:
   - Name: SpawnContextIDs
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<Name None>
+    Type: TArray<Struct FName>
   - Name: BoundingBox
     Offset: '0x3e0'
     Size: '0x8'
@@ -6525,7 +6525,7 @@ SwimmingPathFollowingComponent:
   - Name: CollisionTypesToDoPathUpdate
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<Byte DrawDebugOnServer>
+    Type: TArray<Byte CollisionTypesToDoPathUpdate>
   - Name: MovementComponent
     Offset: '0x110'
     Size: '0x8'
@@ -6745,7 +6745,7 @@ VulnerabilityDuringAIStrategyComponent:
   - Name: StrategyVulnerabilities
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct Spawners>
+    Type: TArray<Struct AIStrategyVulnerabilityData>
   - Name: HealthComponent
     Offset: '0xd8'
     Size: '0x8'

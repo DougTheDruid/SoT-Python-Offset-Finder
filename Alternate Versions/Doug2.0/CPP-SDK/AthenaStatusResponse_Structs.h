@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class ScalarParamInfo: public None
+struct ScalarParamInfo
 {
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)

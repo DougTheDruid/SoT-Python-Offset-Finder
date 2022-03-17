@@ -41,7 +41,7 @@
     "Attributes": [
       {
         "Name": "Status",
-        "Type": "TArray<Class HealthPoolChangeIntensityMultiplier>",
+        "Type": "TArray<Class Status>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -120,7 +120,7 @@
     "Attributes": [
       {
         "Name": "ParamsToChange",
-        "Type": "TArray<Struct Status>",
+        "Type": "TArray<Struct ScalarParamInfo>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -134,7 +134,7 @@
     "Attributes": [
       {
         "Name": "Status",
-        "Type": "TArray<Class MaxWheelTurbulence>",
+        "Type": "TArray<Class Status>",
         "Size": "0x10",
         "Offset": "0x30"
       }

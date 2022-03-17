@@ -37,7 +37,7 @@ public:
 	Class MaterialInterface*                                     OverrideMaterial;                                  // 0x5c0(0x8)
 	Class MaterialInterface*                                     OverrideHoleMaterial;                              // 0x5c8(0x8)
 	Class MaterialInstanceConstant*                              MaterialInstance;                                  // 0x5d0(0x8)
-	TArray<Struct MaterialInstance>                              WeightmapLayerAllocations;                         // 0x5d8(0x10)
+	TArray<Struct WeightmapLayerAllocationInfo>                  WeightmapLayerAllocations;                         // 0x5d8(0x10)
 	TArray<class WeightmapTextures*>                             WeightmapTextures;                                 // 0x5e8(0x10)
 	Class Texture2D*                                             XYOffsetmapTexture;                                // 0x5f8(0x8)
 	Struct Vector4                                               WeightmapScaleBias;                                // 0x600(0x10)
@@ -45,7 +45,7 @@ public:
 	Struct Vector4                                               HeightmapScaleBias;                                // 0x620(0x10)
 	Class Texture2D*                                             HeightmapTexture;                                  // 0x630(0x8)
 	Struct Box                                                   CachedLocalBox;                                    // 0x638(0x1c)
-	TArray<Struct CollisionComponent>                            IrrelevantLights;                                  // 0x670(0x10)
+	TArray<Struct Guid>                                          IrrelevantLights;                                  // 0x670(0x10)
 	int                                                          CollisionMipLevel;                                 // 0x690(0x4)
 	float                                                        StaticLightingResolution;                          // 0x694(0x4)
 	int                                                          ForcedLOD;                                         // 0x698(0x4)
@@ -84,7 +84,7 @@ public:
 class LandscapeGrassType: public Object
 {
 public:
-	TArray<Struct CookedPhysicalMaterials>                       GrassVarieties;                                    // 0x28(0x10)
+	TArray<Struct GrassVariety>                                  GrassVarieties;                                    // 0x28(0x10)
 	Class StaticMesh*                                            GrassMesh;                                         // 0x38(0x8)
 	float                                                        GrassDensity;                                      // 0x40(0x4)
 	float                                                        PlacementJitter;                                   // 0x44(0x4)
@@ -104,7 +104,7 @@ public:
 	int                                                          SectionBaseY;                                      // 0x5bc(0x4)
 	int                                                          CollisionSizeQuads;                                // 0x5c0(0x4)
 	float                                                        CollisionScale;                                    // 0x5c4(0x4)
-	TArray<Byte CollisionScale>                                  CollisionQuadFlags;                                // 0x5c8(0x10)
+	TArray<Byte CollisionQuadFlags>                              CollisionQuadFlags;                                // 0x5c8(0x10)
 	Struct Guid                                                  HeightfieldGuid;                                   // 0x5d8(0x10)
 	Struct Box                                                   CachedLocalBox;                                    // 0x5e8(0x1c)
 	TArray<class CookedPhysicalMaterials*>                       CookedPhysicalMaterials;                           // 0x630(0x10)
@@ -200,7 +200,7 @@ class LandscapeMeshProxyComponent: public StaticMeshComponent
 {
 public:
 	Struct Guid                                                  LandscapeGuid;                                     // 0x610(0x10)
-	TArray<Struct LandscapeGuid>                                 ProxyComponentBases;                               // 0x620(0x10)
+	TArray<Struct IntPoint>                                      ProxyComponentBases;                               // 0x620(0x10)
 };
 
 
@@ -227,7 +227,7 @@ class LandscapeSplineSegment: public Object
 public:
 	Struct LandscapeSplineSegmentConnection                      Connections;                                       // 0x28(0x18)
 	Struct InterpCurveVector                                     SplineInfo;                                        // 0x58(0x18)
-	TArray<Struct SplineInfo>                                    Points;                                            // 0x70(0x10)
+	TArray<Struct LandscapeSplineInterpPoint>                    Points;                                            // 0x70(0x10)
 	Struct Box                                                   Bounds;                                            // 0x80(0x1c)
 	TArray<class LocalMeshComponents*>                           LocalMeshComponents;                               // 0xa0(0x10)
 };
@@ -242,8 +242,8 @@ public:
 	float                                                        Width;                                             // 0x40(0x4)
 	float                                                        SideFalloff;                                       // 0x44(0x4)
 	float                                                        EndFalloff;                                        // 0x48(0x4)
-	TArray<Struct EndFalloff>                                    ConnectedSegments;                                 // 0x50(0x10)
-	TArray<Struct ConnectedSegments>                             Points;                                            // 0x60(0x10)
+	TArray<Struct LandscapeSplineConnection>                     ConnectedSegments;                                 // 0x50(0x10)
+	TArray<Struct LandscapeSplineInterpPoint>                    Points;                                            // 0x60(0x10)
 	Struct Box                                                   Bounds;                                            // 0x70(0x1c)
 	Class ControlPointMeshComponent*                             LocalMeshComponent;                                // 0x90(0x8)
 };
@@ -253,7 +253,7 @@ public:
 class MaterialExpressionLandscapeGrassOutput: public MaterialExpressionCustomOutput
 {
 public:
-	TArray<Struct ExpressionGUID>                                GrassTypes;                                        // 0x70(0x10)
+	TArray<Struct GrassInput>                                    GrassTypes;                                        // 0x70(0x10)
 };
 
 
@@ -261,7 +261,7 @@ public:
 class MaterialExpressionLandscapeLayerBlend: public MaterialExpression
 {
 public:
-	TArray<Struct MappingPanV>                                   Layers;                                            // 0x70(0x10)
+	TArray<Struct LayerBlendInput>                               Layers;                                            // 0x70(0x10)
 	Struct Guid                                                  ExpressionGUID;                                    // 0x80(0x10)
 };
 

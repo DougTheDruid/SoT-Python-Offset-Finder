@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x4
-class AIRequestID: public None
+struct AIRequestID
 {
 public:
 };
 
 
 // Size 0x3c
-class AIStimulus: public None
+struct AIStimulus
 {
 public:
 	float                                                        Age;                                               // 0x0(0x4)
@@ -28,7 +28,7 @@ public:
 
 
 // Size 0x40
-class AIMoveRequest: public None
+struct AIMoveRequest
 {
 public:
 	Class Actor*                                                 GoalActor;                                         // 0x0(0x8)
@@ -36,7 +36,7 @@ public:
 
 
 // Size 0x8
-class PawnActionStack: public None
+struct PawnActionStack
 {
 public:
 	Class PawnAction*                                            TopAction;                                         // 0x0(0x8)
@@ -44,7 +44,7 @@ public:
 
 
 // Size 0x18
-class PawnActionEvent: public None
+struct PawnActionEvent
 {
 public:
 	Class PawnAction*                                            Action;                                            // 0x0(0x8)
@@ -52,7 +52,7 @@ public:
 
 
 // Size 0x28
-class BlackboardKeySelector: public None
+struct BlackboardKeySelector
 {
 public:
 	TArray<class AllowedTypes*>                                  AllowedTypes;                                      // 0x0(0x10)
@@ -64,7 +64,7 @@ public:
 
 
 // Size 0x1
-class GenericTeamId: public None
+struct GenericTeamId
 {
 public:
 	byte                                                         TeamID;                                            // 0x0(0x1)
@@ -72,7 +72,7 @@ public:
 
 
 // Size 0x30
-class AIDataProviderBoolValue: public None
+struct AIDataProviderBoolValue
 {
 public:
 	bool                                                         DefaultValue;                                      // 0x28(0x1)
@@ -80,7 +80,7 @@ public:
 
 
 // Size 0x28
-class AIDataProviderTypedValue: public None
+struct AIDataProviderTypedValue
 {
 public:
 	class                                                        PropertyType;                                      // 0x20(0x8)
@@ -88,7 +88,7 @@ public:
 
 
 // Size 0x20
-class AIDataProviderValue: public None
+struct AIDataProviderValue
 {
 public:
 	Class Property*                                              CachedProperty;                                    // 0x8(0x8)
@@ -98,7 +98,7 @@ public:
 
 
 // Size 0x30
-class AIDataProviderFloatValue: public None
+struct AIDataProviderFloatValue
 {
 public:
 	float                                                        DefaultValue;                                      // 0x28(0x4)
@@ -106,7 +106,7 @@ public:
 
 
 // Size 0x30
-class AIDataProviderIntValue: public None
+struct AIDataProviderIntValue
 {
 public:
 	int                                                          DefaultValue;                                      // 0x28(0x4)
@@ -114,14 +114,14 @@ public:
 
 
 // Size 0x30
-class AIDataProviderStructValue: public None
+struct AIDataProviderStructValue
 {
 public:
 };
 
 
 // Size 0x10
-class CustomDataProviderObjectPropertySelector: public None
+struct CustomDataProviderObjectPropertySelector
 {
 public:
 	class                                                        ObjectClass;                                       // 0x0(0x8)
@@ -130,7 +130,7 @@ public:
 
 
 // Size 0xc
-class IgnoreActorInfo: public None
+struct IgnoreActorInfo
 {
 public:
 	float                                                        TimeRemaining;                                     // 0x8(0x4)
@@ -138,7 +138,7 @@ public:
 
 
 // Size 0x4
-class AISenseAffiliationFilter: public None
+struct AISenseAffiliationFilter
 {
 public:
 	bool                                                         bDetectEnemies;                                    // 0x0(0x1)
@@ -148,17 +148,17 @@ public:
 
 
 // Size 0x20
-class ActorPerceptionBlueprintInfo: public None
+struct ActorPerceptionBlueprintInfo
 {
 public:
 	Class Actor*                                                 Target;                                            // 0x0(0x8)
-	TArray<Struct Target>                                        LastSensedStimuli;                                 // 0x8(0x10)
+	TArray<Struct AIStimulus>                                    LastSensedStimuli;                                 // 0x8(0x10)
 	bool                                                         bIsHostile;                                        // 0x18(0x1)
 };
 
 
 // Size 0x30
-class AIDamageEvent: public None
+struct AIDamageEvent
 {
 public:
 	float                                                        Amount;                                            // 0x0(0x4)
@@ -170,7 +170,7 @@ public:
 
 
 // Size 0x30
-class AINoiseEvent: public None
+struct AINoiseEvent
 {
 public:
 	Struct Vector                                                NoiseLocation;                                     // 0x4(0xc)
@@ -182,7 +182,7 @@ public:
 
 
 // Size 0x18
-class AIPredictionEvent: public None
+struct AIPredictionEvent
 {
 public:
 	Class Actor*                                                 Requestor;                                         // 0x0(0x8)
@@ -191,7 +191,7 @@ public:
 
 
 // Size 0x18
-class AISightEvent: public None
+struct AISightEvent
 {
 public:
 	Class Actor*                                                 SeenActor;                                         // 0x8(0x8)
@@ -200,7 +200,7 @@ public:
 
 
 // Size 0x38
-class AITeamStimulusEvent: public None
+struct AITeamStimulusEvent
 {
 public:
 	Class Actor*                                                 Broadcaster;                                       // 0x28(0x8)
@@ -209,7 +209,7 @@ public:
 
 
 // Size 0x20
-class AITouchEvent: public None
+struct AITouchEvent
 {
 public:
 	Class Actor*                                                 TouchReceiver;                                     // 0x10(0x8)
@@ -218,7 +218,7 @@ public:
 
 
 // Size 0x30
-class BTCompositeChild: public None
+struct BTCompositeChild
 {
 public:
 	Class BTCompositeNode*                                       ChildComposite;                                    // 0x0(0x8)
@@ -229,7 +229,7 @@ public:
 
 
 // Size 0x4
-class BTDecoratorLogic: public None
+struct BTDecoratorLogic
 {
 public:
 	byte                                                         Operation;                                         // 0x0(0x1)
@@ -237,7 +237,7 @@ public:
 
 
 // Size 0x18
-class BehaviorTreeTemplateInfo: public None
+struct BehaviorTreeTemplateInfo
 {
 public:
 	Class BehaviorTree*                                          Asset;                                             // 0x0(0x8)
@@ -246,7 +246,7 @@ public:
 
 
 // Size 0x18
-class BlackboardEntry: public None
+struct BlackboardEntry
 {
 public:
 	struct FName                                                 EntryName;                                         // 0x0(0x8)
@@ -256,14 +256,14 @@ public:
 
 
 // Size 0xc
-class EnvBoolParam: public None
+struct EnvBoolParam
 {
 public:
 };
 
 
 // Size 0xc
-class EnvBoolParam_DEPRECATED: public None
+struct EnvBoolParam_DEPRECATED
 {
 public:
 	bool                                                         Value;                                             // 0x0(0x1)
@@ -272,14 +272,14 @@ public:
 
 
 // Size 0xc
-class EnvIntParam: public None
+struct EnvIntParam
 {
 public:
 };
 
 
 // Size 0xc
-class EnvIntParam_DEPRECATED: public None
+struct EnvIntParam_DEPRECATED
 {
 public:
 	int                                                          Value;                                             // 0x0(0x4)
@@ -288,14 +288,14 @@ public:
 
 
 // Size 0xc
-class EnvFloatParam: public None
+struct EnvFloatParam
 {
 public:
 };
 
 
 // Size 0xc
-class EnvFloatParam_DEPRECATED: public None
+struct EnvFloatParam_DEPRECATED
 {
 public:
 	float                                                        Value;                                             // 0x0(0x4)
@@ -304,7 +304,7 @@ public:
 
 
 // Size 0x40
-class EnvQueryResult: public None
+struct EnvQueryResult
 {
 public:
 	class                                                        ItemType;                                          // 0x10(0x8)
@@ -314,7 +314,7 @@ public:
 
 
 // Size 0x40
-class EnvTraceData: public None
+struct EnvTraceData
 {
 public:
 	int                                                          VersionNum;                                        // 0x0(0x4)
@@ -342,7 +342,7 @@ public:
 
 
 // Size 0x20
-class EnvDirection: public None
+struct EnvDirection
 {
 public:
 	class                                                        LineFrom;                                          // 0x0(0x8)
@@ -353,7 +353,7 @@ public:
 
 
 // Size 0x10
-class EnvNamedValue: public None
+struct EnvNamedValue
 {
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
@@ -363,16 +363,16 @@ public:
 
 
 // Size 0x20
-class CrowdAvoidanceSamplingPattern: public None
+struct CrowdAvoidanceSamplingPattern
 {
 public:
-	TArray<Float None>                                           Angles;                                            // 0x0(0x10)
-	TArray<Float >                                               Radii;                                             // 0x10(0x10)
+	TArray<Float Angles>                                         Angles;                                            // 0x0(0x10)
+	TArray<Float Radii>                                          Radii;                                             // 0x10(0x10)
 };
 
 
 // Size 0x1c
-class CrowdAvoidanceConfig: public None
+struct CrowdAvoidanceConfig
 {
 public:
 	float                                                        VelocityBias;                                      // 0x0(0x4)
@@ -389,7 +389,7 @@ public:
 
 
 // Size 0x290
-class EnvQueryInstanceCache: public None
+struct EnvQueryInstanceCache
 {
 public:
 	Class EnvQuery*                                              Template;                                          // 0x0(0x8)
@@ -397,7 +397,7 @@ public:
 
 
 // Size 0x170
-class EnvQueryRequest: public None
+struct EnvQueryRequest
 {
 public:
 	Class EnvQuery*                                              QueryTemplate;                                     // 0x0(0x8)

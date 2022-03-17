@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x300
-class ActiveGameplayEffect: public None
+struct ActiveGameplayEffect
 {
 public:
 	Struct GameplayEffectSpec                                    Spec;                                              // 0x10(0x2a0)
@@ -20,7 +20,7 @@ public:
 
 
 // Size 0x18
-class PredictionKey: public None
+struct PredictionKey
 {
 public:
 	Class PackageMap*                                            PredictiveConnection;                              // 0x8(0x8)
@@ -30,7 +30,7 @@ public:
 
 
 // Size 0x2a0
-class GameplayEffectSpec: public None
+struct GameplayEffectSpec
 {
 public:
 	Class GameplayEffect*                                        Def;                                               // 0x0(0x8)
@@ -55,14 +55,14 @@ public:
 
 
 // Size 0x20
-class GameplayEffectContextHandle: public None
+struct GameplayEffectContextHandle
 {
 public:
 };
 
 
 // Size 0x28
-class GameplayAbilitySpecDef: public None
+struct GameplayAbilitySpecDef
 {
 public:
 	class                                                        Ability;                                           // 0x0(0x8)
@@ -75,7 +75,7 @@ public:
 
 
 // Size 0x4
-class GameplayAbilitySpecHandle: public None
+struct GameplayAbilitySpecHandle
 {
 public:
 	int                                                          Handle;                                            // 0x0(0x4)
@@ -83,7 +83,7 @@ public:
 
 
 // Size 0x4
-class ModifierSpec: public None
+struct ModifierSpec
 {
 public:
 	float                                                        EvaluatedMagnitude;                                // 0x0(0x4)
@@ -91,7 +91,7 @@ public:
 
 
 // Size 0xa8
-class TagContainerAggregator: public None
+struct TagContainerAggregator
 {
 public:
 	Struct GameplayTagContainer                                  CapturedActorTags;                                 // 0x0(0x28)
@@ -101,17 +101,17 @@ public:
 
 
 // Size 0x28
-class GameplayEffectAttributeCaptureSpecContainer: public None
+struct GameplayEffectAttributeCaptureSpecContainer
 {
 public:
-	TArray<Struct ModifiedAttributes>                            SourceAttributes;                                  // 0x0(0x10)
+	TArray<Struct GameplayEffectAttributeCaptureSpec>            SourceAttributes;                                  // 0x0(0x10)
 	TArray<Struct GameplayEffectAttributeCaptureSpec>            TargetAttributes;                                  // 0x10(0x10)
 	bool                                                         bHasNonSnapshottedAttributes;                      // 0x20(0x1)
 };
 
 
 // Size 0x28
-class GameplayEffectAttributeCaptureSpec: public None
+struct GameplayEffectAttributeCaptureSpec
 {
 public:
 	Struct GameplayEffectAttributeCaptureDefinition              BackingDefinition;                                 // 0x0(0x10)
@@ -119,7 +119,7 @@ public:
 
 
 // Size 0x10
-class GameplayEffectAttributeCaptureDefinition: public None
+struct GameplayEffectAttributeCaptureDefinition
 {
 public:
 	Struct GameplayAttribute                                     AttributeToCapture;                                // 0x0(0x8)
@@ -129,7 +129,7 @@ public:
 
 
 // Size 0x8
-class GameplayAttribute: public None
+struct GameplayAttribute
 {
 public:
 	Class Property*                                              Attribute;                                         // 0x0(0x8)
@@ -137,7 +137,7 @@ public:
 
 
 // Size 0x10
-class GameplayEffectModifiedAttribute: public None
+struct GameplayEffectModifiedAttribute
 {
 public:
 	Struct GameplayAttribute                                     Attribute;                                         // 0x0(0x8)
@@ -146,7 +146,7 @@ public:
 
 
 // Size 0x4
-class ActiveGameplayEffectHandle: public None
+struct ActiveGameplayEffectHandle
 {
 public:
 	int                                                          Handle;                                            // 0x0(0x4)
@@ -154,21 +154,21 @@ public:
 
 
 // Size 0x20
-class GameplayEffectSpecHandle: public None
+struct GameplayEffectSpecHandle
 {
 public:
 };
 
 
 // Size 0x10
-class GameplayAbilityTargetDataHandle: public None
+struct GameplayAbilityTargetDataHandle
 {
 public:
 };
 
 
 // Size 0xa0
-class GameplayEventData: public None
+struct GameplayEventData
 {
 public:
 	Struct GameplayTag                                           EventTag;                                          // 0x0(0x8)
@@ -184,7 +184,7 @@ public:
 
 
 // Size 0x20
-class GameplayAbilityActivationInfo: public None
+struct GameplayAbilityActivationInfo
 {
 public:
 	byte                                                         ActivationMode;                                    // 0x0(0x1)
@@ -194,11 +194,11 @@ public:
 
 
 // Size 0x90
-class GameplayEffectSpecForRPC: public None
+struct GameplayEffectSpecForRPC
 {
 public:
 	Class GameplayEffect*                                        Def;                                               // 0x0(0x8)
-	TArray<Struct Def>                                           ModifiedAttributes;                                // 0x8(0x10)
+	TArray<Struct GameplayEffectModifiedAttribute>               ModifiedAttributes;                                // 0x8(0x10)
 	Struct GameplayEffectContextHandle                           EffectContext;                                     // 0x18(0x20)
 	Struct GameplayTagContainer                                  AggregatedSourceTags;                              // 0x38(0x28)
 	Struct GameplayTagContainer                                  AggregatedTargetTags;                              // 0x60(0x28)
@@ -207,7 +207,7 @@ public:
 
 
 // Size 0x88
-class GameplayCueParameters: public None
+struct GameplayCueParameters
 {
 public:
 	float                                                        NormalizedMagnitude;                               // 0x0(0x4)
@@ -221,7 +221,7 @@ public:
 
 
 // Size 0xc0
-class ActiveGameplayCueContainer: public None
+struct ActiveGameplayCueContainer
 {
 public:
 	TArray<Struct ActiveGameplayCue>                             GameplayCues;                                      // 0xa8(0x10)
@@ -230,7 +230,7 @@ public:
 
 
 // Size 0x30
-class ActiveGameplayCue: public None
+struct ActiveGameplayCue
 {
 public:
 	Struct GameplayTag                                           GameplayCueTag;                                    // 0x8(0x8)
@@ -240,15 +240,15 @@ public:
 
 
 // Size 0x368
-class ActiveGameplayEffectsContainer: public None
+struct ActiveGameplayEffectsContainer
 {
 public:
-	TArray<Struct AvatarActor>                                   GameplayEffects_Internal;                          // 0xc8(0x10)
+	TArray<Struct ActiveGameplayEffect>                          GameplayEffects_Internal;                          // 0xc8(0x10)
 };
 
 
 // Size 0x30
-class GameplayAbilityLocalAnimMontage: public None
+struct GameplayAbilityLocalAnimMontage
 {
 public:
 	Class AnimMontage*                                           AnimMontage;                                       // 0x0(0x8)
@@ -259,7 +259,7 @@ public:
 
 
 // Size 0x30
-class GameplayAbilityRepAnimMontage: public None
+struct GameplayAbilityRepAnimMontage
 {
 public:
 	Class AnimMontage*                                           AnimMontage;                                       // 0x0(0x8)
@@ -274,7 +274,7 @@ public:
 
 
 // Size 0xc0
-class GameplayAbilitySpecContainer: public None
+struct GameplayAbilitySpecContainer
 {
 public:
 	TArray<Struct GameplayAbilitySpec>                           Items;                                             // 0xa8(0x10)
@@ -282,7 +282,7 @@ public:
 
 
 // Size 0x78
-class GameplayAbilitySpec: public None
+struct GameplayAbilitySpec
 {
 public:
 	Struct GameplayAbilitySpecHandle                             Handle;                                            // 0x8(0x4)
@@ -302,7 +302,7 @@ public:
 
 
 // Size 0x10
-class AttributeDefaults: public None
+struct AttributeDefaults
 {
 public:
 	class                                                        Attributes;                                        // 0x0(0x8)
@@ -311,14 +311,14 @@ public:
 
 
 // Size 0x18
-class GameplayTargetDataFilterHandle: public None
+struct GameplayTargetDataFilterHandle
 {
 public:
 };
 
 
 // Size 0x28
-class GameplayTargetDataFilter: public None
+struct GameplayTargetDataFilter
 {
 public:
 	Class Actor*                                                 SelfActor;                                         // 0x8(0x8)
@@ -329,7 +329,7 @@ public:
 
 
 // Size 0x28
-class AttributeMetaData: public None
+struct AttributeMetaData
 {
 public:
 	float                                                        BaseValue;                                         // 0x0(0x4)
@@ -341,7 +341,7 @@ public:
 
 
 // Size 0x20
-class ScalableFloat: public None
+struct ScalableFloat
 {
 public:
 	float                                                        Value;                                             // 0x0(0x4)
@@ -350,14 +350,14 @@ public:
 
 
 // Size 0x10
-class GlobalCurveDataOverride: public None
+struct GlobalCurveDataOverride
 {
 public:
 };
 
 
 // Size 0x50
-class GameplayTagRequirements: public None
+struct GameplayTagRequirements
 {
 public:
 	Struct GameplayTagContainer                                  RequireTags;                                       // 0x0(0x28)
@@ -366,17 +366,17 @@ public:
 
 
 // Size 0x60
-class GameplayEffectContext: public None
+struct GameplayEffectContext
 {
 public:
-	TArray<Weakclass InstigatorAbilitySystemComponent>           Actors;                                            // 0x28(0x10)
+	TArray<Weakclass Actors>                                     Actors;                                            // 0x28(0x10)
 	Struct Vector                                                WorldOrigin;                                       // 0x50(0xc)
 	bool                                                         bHasWorldOrigin;                                   // 0x5c(0x1)
 };
 
 
 // Size 0x18
-class GameplayModifierEvaluatedData: public None
+struct GameplayModifierEvaluatedData
 {
 public:
 	Struct GameplayAttribute                                     Attribute;                                         // 0x0(0x8)
@@ -388,7 +388,7 @@ public:
 
 
 // Size 0x88
-class GameplayAbilityTargetData_SingleTargetHit: public None
+struct GameplayAbilityTargetData_SingleTargetHit
 {
 public:
 	Struct HitResult                                             HitResult;                                         // 0x8(0x80)
@@ -396,23 +396,23 @@ public:
 
 
 // Size 0x8
-class GameplayAbilityTargetData: public None
+struct GameplayAbilityTargetData
 {
 public:
 };
 
 
 // Size 0x90
-class GameplayAbilityTargetData_ActorArray: public None
+struct GameplayAbilityTargetData_ActorArray
 {
 public:
 	Struct GameplayAbilityTargetingLocationInfo                  SourceLocation;                                    // 0x10(0x70)
-	TArray<Weakclass SourceLocation>                             TargetActorArray;                                  // 0x80(0x10)
+	TArray<Weakclass TargetActorArray>                           TargetActorArray;                                  // 0x80(0x10)
 };
 
 
 // Size 0x70
-class GameplayAbilityTargetingLocationInfo: public None
+struct GameplayAbilityTargetingLocationInfo
 {
 public:
 	byte                                                         LocationType;                                      // 0x10(0x1)
@@ -425,7 +425,7 @@ public:
 
 
 // Size 0xf0
-class GameplayAbilityTargetData_LocationInfo: public None
+struct GameplayAbilityTargetData_LocationInfo
 {
 public:
 	Struct GameplayAbilityTargetingLocationInfo                  SourceLocation;                                    // 0x10(0x70)
@@ -434,7 +434,7 @@ public:
 
 
 // Size 0x8
-class GameplayAbilitySpecHandleAndPredictionKey: public None
+struct GameplayAbilitySpecHandleAndPredictionKey
 {
 public:
 	Struct GameplayAbilitySpecHandle                             AbilityHandle;                                     // 0x0(0x4)
@@ -443,21 +443,21 @@ public:
 
 
 // Size 0x38
-class GameplayAbilityActorInfo: public None
+struct GameplayAbilityActorInfo
 {
 public:
 };
 
 
 // Size 0x50
-class ActiveGameplayEffectQuery: public None
+struct ActiveGameplayEffectQuery
 {
 public:
 };
 
 
 // Size 0xd0
-class GameplayEffectQuery: public None
+struct GameplayEffectQuery
 {
 public:
 	Struct GameplayTagQuery                                      OwningTagQuery;                                    // 0x18(0x48)
@@ -469,7 +469,7 @@ public:
 
 
 // Size 0x78
-class InheritedTagContainer: public None
+struct InheritedTagContainer
 {
 public:
 	Struct GameplayTagContainer                                  CombinedTags;                                      // 0x0(0x28)
@@ -479,7 +479,7 @@ public:
 
 
 // Size 0x38
-class GameplayEffectCue: public None
+struct GameplayEffectCue
 {
 public:
 	Struct GameplayAttribute                                     MagnitudeAttribute;                                // 0x0(0x8)
@@ -490,7 +490,7 @@ public:
 
 
 // Size 0x240
-class GameplayModifierInfo: public None
+struct GameplayModifierInfo
 {
 public:
 	Struct GameplayAttribute                                     Attribute;                                         // 0x0(0x8)
@@ -503,7 +503,7 @@ public:
 
 
 // Size 0x170
-class GameplayEffectModifierMagnitude: public None
+struct GameplayEffectModifierMagnitude
 {
 public:
 	byte                                                         MagnitudeCalculationType;                          // 0x0(0x1)
@@ -515,7 +515,7 @@ public:
 
 
 // Size 0x8
-class SetByCallerFloat: public None
+struct SetByCallerFloat
 {
 public:
 	struct FName                                                 DataName;                                          // 0x0(0x8)
@@ -523,7 +523,7 @@ public:
 
 
 // Size 0x68
-class CustomCalculationBasedFloat: public None
+struct CustomCalculationBasedFloat
 {
 public:
 	class                                                        CalculationClassMagnitude;                         // 0x0(0x8)
@@ -534,7 +534,7 @@ public:
 
 
 // Size 0xd8
-class AttributeBasedFloat: public None
+struct AttributeBasedFloat
 {
 public:
 	Struct ScalableFloat                                         Coefficient;                                       // 0x0(0x20)
@@ -549,18 +549,18 @@ public:
 
 
 // Size 0x50
-class GameplayEffectExecutionDefinition: public None
+struct GameplayEffectExecutionDefinition
 {
 public:
 	class                                                        CalculationClass;                                  // 0x0(0x8)
 	Struct GameplayTagContainer                                  PassedInTags;                                      // 0x8(0x28)
 	TArray<Struct GameplayEffectExecutionScopedModifierInfo>     CalculationModifiers;                              // 0x30(0x10)
-	TArray<Class CalculationModifiers>                           ConditionalGameplayEffectClasses;                  // 0x40(0x10)
+	TArray<Class ConditionalGameplayEffectClasses>               ConditionalGameplayEffectClasses;                  // 0x40(0x10)
 };
 
 
 // Size 0x228
-class GameplayEffectExecutionScopedModifierInfo: public None
+struct GameplayEffectExecutionScopedModifierInfo
 {
 public:
 	Struct GameplayEffectAttributeCaptureDefinition              CapturedAttribute;                                 // 0x0(0x10)
@@ -572,7 +572,7 @@ public:
 
 
 // Size 0xc
-class AbilityTriggerData: public None
+struct AbilityTriggerData
 {
 public:
 	Struct GameplayTag                                           TriggerTag;                                        // 0x0(0x8)
@@ -581,7 +581,7 @@ public:
 
 
 // Size 0xc
-class WorldReticleParameters: public None
+struct WorldReticleParameters
 {
 public:
 	Struct Vector                                                AOEScale;                                          // 0x0(0xc)
@@ -589,7 +589,7 @@ public:
 
 
 // Size 0x10
-class GameplayAbilityBindInfo: public None
+struct GameplayAbilityBindInfo
 {
 public:
 	byte                                                         Command;                                           // 0x0(0x1)
@@ -598,7 +598,7 @@ public:
 
 
 // Size 0x148
-class GameplayCuePendingExecute: public None
+struct GameplayCuePendingExecute
 {
 public:
 	Struct GameplayTag                                           GameplayCueTag;                                    // 0x0(0x8)
@@ -611,7 +611,7 @@ public:
 
 
 // Size 0x28
-class GameplayCueNotifyData: public None
+struct GameplayCueNotifyData
 {
 public:
 	Struct GameplayTag                                           GameplayCueTag;                                    // 0x0(0x8)
@@ -621,10 +621,10 @@ public:
 
 
 // Size 0x18
-class GameplayEffectCustomExecutionOutput: public None
+struct GameplayEffectCustomExecutionOutput
 {
 public:
-	TArray<Struct GameplayEffectCustomExecutionParameters>       OutputModifiers;                                   // 0x0(0x10)
+	TArray<Struct GameplayModifierEvaluatedData>                 OutputModifiers;                                   // 0x0(0x10)
 	bool                                                         bTriggerConditionalGameplayEffects;                // 0x10(0x1)
 	bool                                                         bHandledStackCountManually;                        // 0x10(0x1)
 	bool                                                         bHandledGameplayCuesManually;                      // 0x10(0x1)
@@ -632,14 +632,14 @@ public:
 
 
 // Size 0x88
-class GameplayEffectCustomExecutionParameters: public None
+struct GameplayEffectCustomExecutionParameters
 {
 public:
 };
 
 
 // Size 0x20
-class GameplayTagResponseTableEntry: public None
+struct GameplayTagResponseTableEntry
 {
 public:
 	Struct GameplayTagReponsePair                                Positive;                                          // 0x0(0x10)
@@ -648,7 +648,7 @@ public:
 
 
 // Size 0x10
-class GameplayTagReponsePair: public None
+struct GameplayTagReponsePair
 {
 public:
 	Struct GameplayTag                                           Tag;                                               // 0x0(0x8)

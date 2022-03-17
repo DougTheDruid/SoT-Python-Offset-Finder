@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x28
-class EventRepairableObjectRepairEndedEvent: public None
+struct EventRepairableObjectRepairEndedEvent
 {
 public:
 	Class Object*                                                Repairable;                                        // 0x0(0x8)
@@ -18,38 +18,38 @@ public:
 
 
 // Size 0x1
-class EventRepairableObjectDestroyed: public None
+struct EventRepairableObjectDestroyed
 {
 public:
 };
 
 
 // Size 0x8
-class EventPlayerUndoRepairEnd: public None
+struct EventPlayerUndoRepairEnd
 {
 public:
 };
 
 
 // Size 0x8
-class EventPlayerUndoRepairCompleted: public None
+struct EventPlayerUndoRepairCompleted
 {
 public:
 };
 
 
 // Size 0x8
-class EventPlayerUndoRepairStart: public None
+struct EventPlayerUndoRepairStart
 {
 public:
 };
 
 
 // Size 0x20
-class ShipPartDamagePersistenceModel: public None
+struct ShipPartDamagePersistenceModel
 {
 public:
-	TArray<Byte EventPlayerNameOverridesLoaded>                  ComponentRepairableStates;                         // 0x0(0x10)
+	TArray<Byte ComponentRepairableStates>                       ComponentRepairableStates;                         // 0x0(0x10)
 	Struct FString                                               Identifier;                                        // 0x10(0x10)
 };
 

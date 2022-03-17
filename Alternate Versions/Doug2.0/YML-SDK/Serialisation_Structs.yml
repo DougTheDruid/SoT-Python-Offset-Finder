@@ -9,7 +9,7 @@ SerialisedNestedStruct:
   - Name: IntArray
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int IntArray>
   - Name: Int
     Offset: '0x20'
     Size: '0x4'
@@ -36,11 +36,11 @@ SerialisedTestStruct:
   - Name: IntArray
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Int >
+    Type: TArray<Int IntArray>
   - Name: StructArray
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct IntArray>
+    Type: TArray<Struct SerialisedNestedStruct>
   - Name: NestedStruct
     Offset: '0x38'
     Size: '0x28'

@@ -95,8 +95,8 @@ public:
 class ActionStatePriorityTableData: public DataAsset
 {
 public:
-	TArray<Struct CreatePriorityTable>                           StateDefaultValue;                                 // 0x28(0x10)
-	TArray<Struct StateDefaultValue>                             PriorityTableEntry;                                // 0x38(0x10)
+	TArray<Struct ActionStatePriorityRelationship>               StateDefaultValue;                                 // 0x28(0x10)
+	TArray<Struct ActionStatePriorityList>                       PriorityTableEntry;                                // 0x38(0x10)
 };
 
 

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class CommoditySelectionType: public None
+struct CommoditySelectionType
 {
 public:
 	struct FName                                                 CommodityType;                                     // 0x0(0x8)
@@ -15,25 +15,25 @@ public:
 
 
 // Size 0x20
-class ActiveNPCDemands: public None
+struct ActiveNPCDemands
 {
 public:
-	TArray<UInt32 None>                                          NPCIdHashes;                                       // 0x0(0x10)
+	TArray<UInt32 NPCIdHashes>                                   NPCIdHashes;                                       // 0x0(0x10)
 	TArray<Struct ActiveCommodityDemands>                        NPCDemands;                                        // 0x10(0x10)
 };
 
 
 // Size 0x20
-class ActiveCommodityDemands: public None
+struct ActiveCommodityDemands
 {
 public:
-	TArray<UInt32 >                                              CommodityIdHashes;                                 // 0x0(0x10)
-	TArray<Byte CommodityIdHashes>                               CommodityDemands;                                  // 0x10(0x10)
+	TArray<UInt32 CommodityIdHashes>                             CommodityIdHashes;                                 // 0x0(0x10)
+	TArray<Byte CommodityDemands>                                CommodityDemands;                                  // 0x10(0x10)
 };
 
 
 // Size 0x10
-class CommodityDescWithRedeemId: public None
+struct CommodityDescWithRedeemId
 {
 public:
 	Struct CommoditySelectionType                                RedeemId;                                          // 0x0(0x8)
@@ -42,16 +42,16 @@ public:
 
 
 // Size 0x18
-class EntitlementToRedeemItems: public None
+struct EntitlementToRedeemItems
 {
 public:
 	class                                                        RequiredEntitlement;                               // 0x0(0x8)
-	TArray<Struct RequiredEntitlement>                           RedeemItems;                                       // 0x8(0x10)
+	TArray<Struct CommodityDescWithRedeemId>                     RedeemItems;                                       // 0x8(0x10)
 };
 
 
 // Size 0x10
-class CommodityTypeDataEntry: public None
+struct CommodityTypeDataEntry
 {
 public:
 	struct FName                                                 CommodityType;                                     // 0x0(0x8)
@@ -60,14 +60,14 @@ public:
 
 
 // Size 0x18
-class EventCommodityCrateRedeemed: public None
+struct EventCommodityCrateRedeemed
 {
 public:
 };
 
 
 // Size 0x10
-class CommodityRedemptionTrackingModel: public None
+struct CommodityRedemptionTrackingModel
 {
 public:
 	byte                                                         NPCName;                                           // 0x2(0x1)
@@ -75,7 +75,7 @@ public:
 
 
 // Size 0x20
-class CommodityTrackingModel: public None
+struct CommodityTrackingModel
 {
 public:
 	Struct Guid                                                  ItemOfferId;                                       // 0x0(0x10)
@@ -84,7 +84,7 @@ public:
 
 
 // Size 0x40
-class TrackCommodityPurchaseOnServerRpc: public None
+struct TrackCommodityPurchaseOnServerRpc
 {
 public:
 	Class Object*                                                CommodityDemandStorageObject;                      // 0x10(0x8)

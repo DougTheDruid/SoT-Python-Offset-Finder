@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Battles",
-        "Type": "TArray<Struct TrackingNoiseGenerator>",
+        "Type": "TArray<Struct AIShipBattleParams>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -288,7 +288,7 @@
       },
       {
         "Name": "AggressionOverrideImpactIDs",
-        "Type": "TArray<Class DistanceToTargetToDropAnchor>",
+        "Type": "TArray<Class AggressionOverrideImpactIDs>",
         "Size": "0x10",
         "Offset": "0x440"
       }
@@ -326,7 +326,7 @@
       },
       {
         "Name": "Spawners",
-        "Type": "TArray<Struct ControllerParams>",
+        "Type": "TArray<Struct AIShipEncounterParamsSpawnerData>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -867,7 +867,7 @@
       },
       {
         "Name": "Waves",
-        "Type": "TArray<Struct EncounterType>",
+        "Type": "TArray<Struct AIShipEncounterWave>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -1127,7 +1127,7 @@
     "Attributes": [
       {
         "Name": "Battles",
-        "Type": "TArray<Struct EncounterType>",
+        "Type": "TArray<Struct CursedSailsBattleParams>",
         "Size": "0x10",
         "Offset": "0x28"
       }

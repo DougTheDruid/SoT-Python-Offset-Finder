@@ -130,7 +130,7 @@ public:
 	Class Object*                                                FocusedInteractable;                               // 0x3d8(0x8)
 	Class Object*                                                InteractedObject;                                  // 0x3e0(0x8)
 	class                                                        InteractNotificationType;                          // 0x3e8(0x8)
-	TArray<Class InteractNotificationType>                       ValidInteractNotificationIds;                      // 0x3f0(0x10)
+	TArray<Class ValidInteractNotificationIds>                   ValidInteractNotificationIds;                      // 0x3f0(0x10)
 };
 
 

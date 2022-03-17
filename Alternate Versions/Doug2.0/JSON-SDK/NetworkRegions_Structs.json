@@ -10,7 +10,7 @@
       },
       {
         "Name": "CachedAssetsForRegion",
-        "Type": "TArray<Struct Region>",
+        "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x8"
       }

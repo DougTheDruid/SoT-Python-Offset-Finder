@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "StoryNames",
-        "Type": "TArray<Name None>",
+        "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -49,13 +49,13 @@
     "Attributes": [
       {
         "Name": "Stories",
-        "Type": "TArray<Struct StorySpawnedActorsAssetList>",
+        "Type": "TArray<Struct StoryInfo>",
         "Size": "0x10",
         "Offset": "0x3f8"
       },
       {
         "Name": "ActiveStories",
-        "Type": "TArray<Struct Stories>",
+        "Type": "TArray<Struct StoryInfo>",
         "Size": "0x10",
         "Offset": "0x408"
       }
@@ -83,7 +83,7 @@
     "Attributes": [
       {
         "Name": "StorySpawnedActorsList",
-        "Type": "TArray<Struct Asset>",
+        "Type": "TArray<Struct StorySpawnedActorsList>",
         "Size": "0x10",
         "Offset": "0x28"
       }

@@ -15,13 +15,13 @@
     "Attributes": [
       {
         "Name": "Tags",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str Tags>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "States",
-        "Type": "TArray<Str >",
+        "Type": "TArray<Str States>",
         "Size": "0x10",
         "Offset": "0x10"
       },

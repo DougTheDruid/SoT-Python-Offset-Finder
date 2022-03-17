@@ -105,7 +105,7 @@ TradeRoutesDataAsset:
   - Name: TradeRouteMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ClueSiteTypeToMarkIdMap>
+    Type: TArray<Struct TradeRouteMapping>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

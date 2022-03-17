@@ -38,7 +38,7 @@ public:
 class TestWindInterface: public Object
 {
 public:
-	TArray<Interface GetWindAtLocation>                          WindZones;                                         // 0x58(0x10)
+	TArray<Interface WindZones>                                  WindZones;                                         // 0x58(0x10)
 };
 
 
@@ -63,8 +63,8 @@ public:
 	Class WindDirectionalSource*                                 GlobalWindSource;                                  // 0x3e0(0x8)
 	float                                                        CurrentWindAngle;                                  // 0x3f8(0x4)
 	float                                                        CurrentWindMagnitude;                              // 0x3fc(0x4)
-	TArray<Interface CurrentWindMagnitude>                       WindZones;                                         // 0x4e8(0x10)
-	TArray<Struct WindZones>                                     ExtraWind;                                         // 0x4f8(0x10)
+	TArray<Interface WindZones>                                  WindZones;                                         // 0x4e8(0x10)
+	TArray<Struct ExtraWind>                                     ExtraWind;                                         // 0x4f8(0x10)
 };
 
 

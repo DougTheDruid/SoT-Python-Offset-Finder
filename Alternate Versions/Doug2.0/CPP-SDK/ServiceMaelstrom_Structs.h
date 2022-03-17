@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class MaelstromEventBaseFragment: public None
+struct MaelstromEventBaseFragment
 {
 public:
 	Struct FString                                               Name;                                              // 0x10(0x10)

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class EmissaryGlobalActionRewardBoostServiceEvent: public None
+struct EmissaryGlobalActionRewardBoostServiceEvent
 {
 public:
 	class                                                        FinishedEventType;                                 // 0x0(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x1c
-class EmissaryCompanyActionRewardBoostServiceEvent: public None
+struct EmissaryCompanyActionRewardBoostServiceEvent
 {
 public:
 	struct FName                                                 AssociatedCompany;                                 // 0x0(0x8)
@@ -26,7 +26,7 @@ public:
 
 
 // Size 0x8
-class EmissaryGlobalActionRewardBoostEvent: public None
+struct EmissaryGlobalActionRewardBoostEvent
 {
 public:
 	class                                                        GameEventType;                                     // 0x0(0x8)
@@ -34,7 +34,7 @@ public:
 
 
 // Size 0x1
-class EmissaryNonQuestCompanyActionRewardBoostEvent: public None
+struct EmissaryNonQuestCompanyActionRewardBoostEvent
 {
 public:
 	byte                                                         CompanyActionType;                                 // 0x0(0x1)
@@ -42,7 +42,7 @@ public:
 
 
 // Size 0x14
-class EmissaryQuestCompanyActionRewardBoostEvent: public None
+struct EmissaryQuestCompanyActionRewardBoostEvent
 {
 public:
 	byte                                                         CompanyActionType;                                 // 0x0(0x1)
@@ -51,14 +51,14 @@ public:
 
 
 // Size 0x10
-class EmissaryCompanyChangedEvent: public None
+struct EmissaryCompanyChangedEvent
 {
 public:
 };
 
 
 // Size 0x10
-class EmissaryLedgerVisited: public None
+struct EmissaryLedgerVisited
 {
 public:
 	Struct FString                                               CompanyId;                                         // 0x0(0x10)

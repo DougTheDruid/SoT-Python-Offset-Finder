@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class CustomServerEvent: public None
+struct CustomServerEvent
 {
 public:
 	struct FName                                                 EventID;                                           // 0x8(0x8)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x20
-class EntityCustomServerEvent: public None
+struct EntityCustomServerEvent
 {
 public:
 	int                                                          EntityNetId;                                       // 0x18(0x4)
@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x30
-class OnCannonBallHitShipCustomServerEvent: public None
+struct OnCannonBallHitShipCustomServerEvent
 {
 public:
 	Struct FString                                               CannonBallType;                                    // 0x18(0x10)
@@ -33,14 +33,14 @@ public:
 
 
 // Size 0x18
-class GlobalCustomServerEvent: public None
+struct GlobalCustomServerEvent
 {
 public:
 };
 
 
 // Size 0x20
-class PlayerCharacterEnteredShipCustomServerEvent: public None
+struct PlayerCharacterEnteredShipCustomServerEvent
 {
 public:
 	int                                                          UserId;                                            // 0x18(0x4)
@@ -49,7 +49,7 @@ public:
 
 
 // Size 0x28
-class WatercraftSpawnCustomServerEvent: public None
+struct WatercraftSpawnCustomServerEvent
 {
 public:
 	Struct FString                                               WatercraftId;                                      // 0x18(0x10)
@@ -57,7 +57,7 @@ public:
 
 
 // Size 0x28
-class WatercraftDespawnCustomServerEvent: public None
+struct WatercraftDespawnCustomServerEvent
 {
 public:
 	Struct FString                                               WatercraftId;                                      // 0x18(0x10)
@@ -65,14 +65,14 @@ public:
 
 
 // Size 0x18
-class TreasureSpawnedCustomServerEvent: public None
+struct TreasureSpawnedCustomServerEvent
 {
 public:
 };
 
 
 // Size 0x68
-class TreasureSoldCustomServerEvent: public None
+struct TreasureSoldCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -84,7 +84,7 @@ public:
 
 
 // Size 0x28
-class TreasurePickedUpCustomServerEvent: public None
+struct TreasurePickedUpCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -92,7 +92,7 @@ public:
 
 
 // Size 0x38
-class TreasureFoundCustomServerEvent: public None
+struct TreasureFoundCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -101,7 +101,7 @@ public:
 
 
 // Size 0x48
-class TreasureDroppedCustomServerEvent: public None
+struct TreasureDroppedCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -111,7 +111,7 @@ public:
 
 
 // Size 0x28
-class ShovelCustomServerEvent: public None
+struct ShovelCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -119,7 +119,7 @@ public:
 
 
 // Size 0x38
-class ShipSpawnedCustomServerEvent: public None
+struct ShipSpawnedCustomServerEvent
 {
 public:
 	Struct FString                                               ShipId;                                            // 0x18(0x10)
@@ -128,7 +128,7 @@ public:
 
 
 // Size 0x38
-class ShipRepairCustomServerEvent: public None
+struct ShipRepairCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -137,7 +137,7 @@ public:
 
 
 // Size 0x28
-class ShipOnFireEndCustomServerEvent: public None
+struct ShipOnFireEndCustomServerEvent
 {
 public:
 	Struct FString                                               ShipId;                                            // 0x18(0x10)
@@ -145,7 +145,7 @@ public:
 
 
 // Size 0x38
-class ShipMastCollapseStateCustomServerEvent: public None
+struct ShipMastCollapseStateCustomServerEvent
 {
 public:
 	Struct FString                                               ShipId;                                            // 0x18(0x10)
@@ -154,7 +154,7 @@ public:
 
 
 // Size 0x28
-class ShipDestroyedCustomServerEvent: public None
+struct ShipDestroyedCustomServerEvent
 {
 public:
 	Struct FString                                               ShipId;                                            // 0x18(0x10)
@@ -162,7 +162,7 @@ public:
 
 
 // Size 0x28
-class ShipDamagedCustomServerEvent: public None
+struct ShipDamagedCustomServerEvent
 {
 public:
 	Struct FString                                               ShipId;                                            // 0x18(0x10)
@@ -170,7 +170,7 @@ public:
 
 
 // Size 0x28
-class ProjectileWeaponFiredCustomServerEvent: public None
+struct ProjectileWeaponFiredCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -178,7 +178,7 @@ public:
 
 
 // Size 0x38
-class ProjectileHitCustomServerEvent: public None
+struct ProjectileHitCustomServerEvent
 {
 public:
 	Struct FString                                               ProjectileType;                                    // 0x18(0x10)
@@ -187,7 +187,7 @@ public:
 
 
 // Size 0x38
-class PlayerStatusEffectActivatedCustomServerEvent: public None
+struct PlayerStatusEffectActivatedCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -196,7 +196,7 @@ public:
 
 
 // Size 0x38
-class PlayerStatusEffectDeactivatedCustomServerEvent: public None
+struct PlayerStatusEffectDeactivatedCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -205,7 +205,7 @@ public:
 
 
 // Size 0x28
-class PlayerSpawnCustomServerEvent: public None
+struct PlayerSpawnCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -213,7 +213,7 @@ public:
 
 
 // Size 0x38
-class PlayerSetFootLocationCustomServerEvent: public None
+struct PlayerSetFootLocationCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -222,7 +222,7 @@ public:
 
 
 // Size 0x28
-class PlayerRevivalCustomServerEvent: public None
+struct PlayerRevivalCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -230,14 +230,14 @@ public:
 
 
 // Size 0x18
-class PlayerRequiresMermaidCustomServerEvent: public None
+struct PlayerRequiresMermaidCustomServerEvent
 {
 public:
 };
 
 
 // Size 0x28
-class PlayerRadialChatCustomServerEvent: public None
+struct PlayerRadialChatCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -245,86 +245,7 @@ public:
 
 
 // Size 0x28
-class PlayerObjectUsageStartCustomServerEvent: public None
-{
-public:
-	Struct FString                                               UserId;                                            // 0x18(0x10)
-};
-
-
-// Size 0x18
-class PlayerLeftGhostShipCustomServerEvent: public None
-{
-public:
-};
-
-
-// Size 0x28
-class PlayerKillAICustomServerEvent: public None
-{
-public:
-	Struct FString                                               UserId;                                            // 0x18(0x10)
-};
-
-
-// Size 0x28
-class PlayerItemUsageEndCustomServerEvent: public None
-{
-public:
-	Struct FString                                               UserId;                                            // 0x18(0x10)
-};
-
-
-// Size 0x28
-class PlayerItemRetrievalFromContainerCustomServerEvent: public None
-{
-public:
-	Struct FString                                               UserId;                                            // 0x18(0x10)
-};
-
-
-// Size 0x28
-class PlayerItemEquipCustomServerEvent: public None
-{
-public:
-	Struct FString                                               UserId;                                            // 0x18(0x10)
-};
-
-
-// Size 0x28
-class PlayerItemAddToContainerCustomServerEvent: public None
-{
-public:
-	Struct FString                                               UserId;                                            // 0x18(0x10)
-};
-
-
-// Size 0x28
-class PlayerInReviveableStateCustomServerEvent: public None
-{
-public:
-	Struct FString                                               UserId;                                            // 0x18(0x10)
-};
-
-
-// Size 0x28
-class PlayerHeartbeatCustomServerEvent: public None
-{
-public:
-	Struct FString                                               UserId;                                            // 0x18(0x10)
-};
-
-
-// Size 0x28
-class PlayerHealthChangeCustomServerEvent: public None
-{
-public:
-	Struct FString                                               UserId;                                            // 0x18(0x10)
-};
-
-
-// Size 0x28
-class PlayerGameFishingCustomServerEvent: public None
+struct PlayerObjectUsageStartCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -332,21 +253,100 @@ public:
 
 
 // Size 0x18
-class PlayerEncounterStartCustomServerEvent: public None
+struct PlayerLeftGhostShipCustomServerEvent
+{
+public:
+};
+
+
+// Size 0x28
+struct PlayerKillAICustomServerEvent
+{
+public:
+	Struct FString                                               UserId;                                            // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct PlayerItemUsageEndCustomServerEvent
+{
+public:
+	Struct FString                                               UserId;                                            // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct PlayerItemRetrievalFromContainerCustomServerEvent
+{
+public:
+	Struct FString                                               UserId;                                            // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct PlayerItemEquipCustomServerEvent
+{
+public:
+	Struct FString                                               UserId;                                            // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct PlayerItemAddToContainerCustomServerEvent
+{
+public:
+	Struct FString                                               UserId;                                            // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct PlayerInReviveableStateCustomServerEvent
+{
+public:
+	Struct FString                                               UserId;                                            // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct PlayerHeartbeatCustomServerEvent
+{
+public:
+	Struct FString                                               UserId;                                            // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct PlayerHealthChangeCustomServerEvent
+{
+public:
+	Struct FString                                               UserId;                                            // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct PlayerGameFishingCustomServerEvent
+{
+public:
+	Struct FString                                               UserId;                                            // 0x18(0x10)
+};
+
+
+// Size 0x18
+struct PlayerEncounterStartCustomServerEvent
 {
 public:
 };
 
 
 // Size 0x18
-class PlayerEncounterEndCustomServerEvent: public None
+struct PlayerEncounterEndCustomServerEvent
 {
 public:
 };
 
 
 // Size 0x38
-class PlayerEmoteCustomServerEvent: public None
+struct PlayerEmoteCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -355,7 +355,7 @@ public:
 
 
 // Size 0x28
-class PlayerDeathCustomServerEvent: public None
+struct PlayerDeathCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -363,7 +363,7 @@ public:
 
 
 // Size 0x38
-class PlayerChangedShipLoadoutCustomServerEvent: public None
+struct PlayerChangedShipLoadoutCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -372,7 +372,7 @@ public:
 
 
 // Size 0x28
-class PlayerChangedLoadoutCustomServerEvent: public None
+struct PlayerChangedLoadoutCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -380,7 +380,7 @@ public:
 
 
 // Size 0x38
-class PlayerCapstanUsageStartCustomServerEvent: public None
+struct PlayerCapstanUsageStartCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -389,7 +389,7 @@ public:
 
 
 // Size 0x38
-class PlayerCapstanUsageEndCustomServerEvent: public None
+struct PlayerCapstanUsageEndCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -398,7 +398,7 @@ public:
 
 
 // Size 0x28
-class PlayerBucketScoopCustomServerEvent: public None
+struct PlayerBucketScoopCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -406,7 +406,7 @@ public:
 
 
 // Size 0x28
-class PlayerBucketEmptyCustomServerEvent: public None
+struct PlayerBucketEmptyCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -414,7 +414,7 @@ public:
 
 
 // Size 0x38
-class PlayerActionCannonCustomServerEvent: public None
+struct PlayerActionCannonCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -423,7 +423,7 @@ public:
 
 
 // Size 0x38
-class PlayerActionCustomServerEvent: public None
+struct PlayerActionCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -432,7 +432,7 @@ public:
 
 
 // Size 0x28
-class MermaidUsedCustomServerEvent: public None
+struct MermaidUsedCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -440,7 +440,7 @@ public:
 
 
 // Size 0x28
-class MermaidSpawnedCustomServerEvent: public None
+struct MermaidSpawnedCustomServerEvent
 {
 public:
 	Struct Vector                                                Position;                                          // 0x18(0xc)
@@ -448,7 +448,7 @@ public:
 
 
 // Size 0x28
-class MeleeWeaponAttackCustomServerEvent: public None
+struct MeleeWeaponAttackCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -456,14 +456,14 @@ public:
 
 
 // Size 0x18
-class LevelLoadCompletedCustomServerEvent: public None
+struct LevelLoadCompletedCustomServerEvent
 {
 public:
 };
 
 
 // Size 0x20
-class KrakenTentacleDestroyedCustomServerEvent: public None
+struct KrakenTentacleDestroyedCustomServerEvent
 {
 public:
 	int                                                          TentacleRemaining;                                 // 0x18(0x4)
@@ -471,7 +471,7 @@ public:
 
 
 // Size 0x28
-class KrakenSpawnCustomServerEvent: public None
+struct KrakenSpawnCustomServerEvent
 {
 public:
 	Struct Vector                                                Position;                                          // 0x18(0xc)
@@ -479,7 +479,7 @@ public:
 
 
 // Size 0x38
-class ItemSpawnCustomServerEvent: public None
+struct ItemSpawnCustomServerEvent
 {
 public:
 	Struct FString                                               ItemId;                                            // 0x18(0x10)
@@ -488,14 +488,14 @@ public:
 
 
 // Size 0x18
-class FortWaveCompletedCustomServerEvent: public None
+struct FortWaveCompletedCustomServerEvent
 {
 public:
 };
 
 
 // Size 0x28
-class FortKeyUsedCustomServerEvent: public None
+struct FortKeyUsedCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -503,7 +503,7 @@ public:
 
 
 // Size 0x20
-class CustomTriggerOverlapCustomServerEvent: public None
+struct CustomTriggerOverlapCustomServerEvent
 {
 public:
 	int                                                          TriggerNetId;                                      // 0x18(0x4)
@@ -512,7 +512,7 @@ public:
 
 
 // Size 0x28
-class CrewSessionLeaveCustomServerEvent: public None
+struct CrewSessionLeaveCustomServerEvent
 {
 public:
 	Struct FString                                               CrewId;                                            // 0x18(0x10)
@@ -520,7 +520,7 @@ public:
 
 
 // Size 0x28
-class CrewPlayerLeftCustomServerEvent: public None
+struct CrewPlayerLeftCustomServerEvent
 {
 public:
 	Struct FString                                               CrewId;                                            // 0x18(0x10)
@@ -528,7 +528,7 @@ public:
 
 
 // Size 0x38
-class CookStartCustomServerEvent: public None
+struct CookStartCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -537,7 +537,7 @@ public:
 
 
 // Size 0x48
-class CookEndCustomServerEvent: public None
+struct CookEndCustomServerEvent
 {
 public:
 	Struct FString                                               UserId;                                            // 0x18(0x10)
@@ -547,7 +547,7 @@ public:
 
 
 // Size 0x38
-class AISpawnCustomServerEvent: public None
+struct AISpawnCustomServerEvent
 {
 public:
 	Struct FString                                               AIId;                                              // 0x18(0x10)
@@ -556,7 +556,7 @@ public:
 
 
 // Size 0x28
-class AIShipSpawnCustomServerEvent: public None
+struct AIShipSpawnCustomServerEvent
 {
 public:
 	Struct FString                                               AIShipId;                                          // 0x18(0x10)
@@ -564,7 +564,7 @@ public:
 
 
 // Size 0x28
-class AIShipDespawnCustomServerEvent: public None
+struct AIShipDespawnCustomServerEvent
 {
 public:
 	Struct FString                                               AIShipId;                                          // 0x18(0x10)
@@ -572,7 +572,7 @@ public:
 
 
 // Size 0x30
-class AIShipDamagedCustomServerEvent: public None
+struct AIShipDamagedCustomServerEvent
 {
 public:
 	Struct FString                                               AIShipId;                                          // 0x18(0x10)
@@ -581,7 +581,7 @@ public:
 
 
 // Size 0x18
-class TinySharkSpawnCustomServerEvent: public None
+struct TinySharkSpawnCustomServerEvent
 {
 public:
 };

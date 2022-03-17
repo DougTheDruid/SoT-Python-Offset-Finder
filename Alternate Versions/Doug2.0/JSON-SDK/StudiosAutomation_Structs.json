@@ -55,7 +55,7 @@
       },
       {
         "Name": "AllowedTextureFormats",
-        "Type": "TArray<Byte RequiredMipsSetting>",
+        "Type": "TArray<Byte AllowedTextureFormats>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -106,7 +106,7 @@
     "Attributes": [
       {
         "Name": "QueryStringArray",
-        "Type": "TArray<Str None>",
+        "Type": "TArray<Str QueryStringArray>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -281,7 +281,7 @@
     "Attributes": [
       {
         "Name": "CollectionLimits",
-        "Type": "TArray<Struct MaterialQualityOverrides>",
+        "Type": "TArray<Struct CollectionLimits>",
         "Size": "0x10",
         "Offset": "0x0"
       }

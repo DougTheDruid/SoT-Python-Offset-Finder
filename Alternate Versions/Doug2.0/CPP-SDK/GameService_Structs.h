@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x70
-class GameServiceMap: public None
+struct GameServiceMap
 {
 public:
 };
 
 
 // Size 0x20
-class GameServiceCoordinator: public None
+struct GameServiceCoordinator
 {
 public:
 	TArray<Struct GameServiceCoordinatorUnit>                    Services;                                          // 0x0(0x10)
@@ -22,7 +22,7 @@ public:
 
 
 // Size 0x18
-class GameServiceCoordinatorUnit: public None
+struct GameServiceCoordinatorUnit
 {
 public:
 	Class Object*                                                Service;                                           // 0x0(0x8)

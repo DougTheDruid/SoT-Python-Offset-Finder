@@ -267,7 +267,7 @@
     "Attributes": [
       {
         "Name": "MeleeAttacks",
-        "Type": "TArray<Struct AngleChecker>",
+        "Type": "TArray<Struct MeleeAttackIdWeights>",
         "Size": "0x10",
         "Offset": "0xc8"
       }

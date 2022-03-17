@@ -6,41 +6,7 @@ BP_tls_hand_lantern_cou_01_a_ItemDesc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: ItemDesc
-BP_tls_hand_lantern_fod_02_a_ItemDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
-  Super: ItemDesc
-BP_tls_hand_lantern_fod_02_a_ItemInfo_C:
-  Attributes:
-  - Name: None
-    Offset: '0x500'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x8'
-  FullSize: '0x508'
-  InheritedSize: '0x500'
-  Super: ItemInfo
-BP_tls_hand_lantern_fod_02_a_Wieldable_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x9d8'
-  InheritedSize: '0x9d8'
-  Super: None
 BP_tls_hand_lantern_gld_01_a_ItemDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
-  Super: ItemDesc
-BP_tls_hand_lantern_kra_01_a_v03_ItemDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
-  Super: ItemDesc
-BP_tls_hand_lantern_skl_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x130'

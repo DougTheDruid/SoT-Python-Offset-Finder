@@ -7,21 +7,21 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xa0
-class ObjectMessagingDispatcher: public None
+struct ObjectMessagingDispatcher
 {
 public:
 };
 
 
 // Size 0x8
-class ObjectMessagingDispatcherHandle: public None
+struct ObjectMessagingDispatcherHandle
 {
 public:
 };
 
 
 // Size 0x48
-class ObjectMessagingHandle: public None
+struct ObjectMessagingHandle
 {
 public:
 	Class Struct*                                                EventType;                                         // 0x8(0x8)
@@ -29,7 +29,7 @@ public:
 
 
 // Size 0x50
-class ObjectMessagingObjectScoper: public None
+struct ObjectMessagingObjectScoper
 {
 public:
 };

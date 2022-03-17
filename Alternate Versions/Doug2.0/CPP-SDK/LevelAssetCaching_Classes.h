@@ -39,7 +39,7 @@ public:
 class RegionalAssetListDataAsset: public DataAsset
 {
 public:
-	TArray<Struct ListMapping>                                   RegionAssets;                                      // 0x28(0x10)
+	TArray<Struct StringAssetReference>                          RegionAssets;                                      // 0x28(0x10)
 };
 
 

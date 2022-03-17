@@ -9,15 +9,15 @@ ItemQualityComponent:
   - Name: CompanySpecificItemQualityLevels
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Struct ItemQualityLevel>
+    Type: TArray<Struct PerComanyItemQualityEntry>
   - Name: CompanySpecificComplexItemQualityLevels
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Struct CompanySpecificItemQualityLevels>
+    Type: TArray<Struct PerComanyComplexItemQualityEntry>
   - Name: CompanySpecificComplexItemQualityLevelsHandin
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct CompanySpecificComplexItemQualityLevels>
+    Type: TArray<Struct PerComanyComplexItemQualityEntry>
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'

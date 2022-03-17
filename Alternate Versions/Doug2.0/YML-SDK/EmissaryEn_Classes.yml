@@ -25,7 +25,7 @@ BP_Prompt_EmissaryEncounteredAIShip_C:
   - Name: Prompts
     Offset: '0x180'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: PromptAccessKey
     Offset: '0x190'
     Size: '0x8'
@@ -75,7 +75,7 @@ BP_Prompt_EmissaryEncounteredKraken_C:
   - Name: Prompts
     Offset: '0x180'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: PromptAccessKey
     Offset: '0x190'
     Size: '0x8'
@@ -125,7 +125,7 @@ BP_Prompt_EmissaryEncounteredSkellyFort_C:
   - Name: Prompts
     Offset: '0x180'
     Size: '0x10'
-    Type: TArray<Struct /Game/Blueprints/GameObjects/Items/ItemDescs/TreasureChests/BP_>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: PromptAccessKey
     Offset: '0x190'
     Size: '0x8'
@@ -171,7 +171,7 @@ BP_Prompt_EmissaryEntitlementPurchased_C:
   - Name: Prompts
     Offset: '0x188'
     Size: '0x10'
-    Type: TArray<Struct Prompts>
+    Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: PromptSurfacedThisSession
     Offset: '0x198'
     Size: '0x1'

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x90
-class SlateBrush: public None
+struct SlateBrush
 {
 public:
 	Struct Vector2D                                              ImageSize;                                         // 0x0(0x8)
@@ -27,7 +27,7 @@ public:
 
 
 // Size 0x30
-class SlateColor: public None
+struct SlateColor
 {
 public:
 	Struct LinearColor                                           SpecifiedColor;                                    // 0x0(0x10)
@@ -36,7 +36,7 @@ public:
 
 
 // Size 0x10
-class Margin: public None
+struct Margin
 {
 public:
 	float                                                        Left;                                              // 0x0(0x4)
@@ -47,28 +47,28 @@ public:
 
 
 // Size 0x88
-class PointerEvent: public None
+struct PointerEvent
 {
 public:
 };
 
 
 // Size 0x28
-class InputEvent: public None
+struct InputEvent
 {
 public:
 };
 
 
 // Size 0x34
-class Geometry: public None
+struct Geometry
 {
 public:
 };
 
 
 // Size 0x428
-class ComboBoxStyle: public None
+struct ComboBoxStyle
 {
 public:
 	Struct ComboButtonStyle                                      ComboButtonStyle;                                  // 0x8(0x3e0)
@@ -80,14 +80,14 @@ public:
 
 
 // Size 0x8
-class SlateWidgetStyle: public None
+struct SlateWidgetStyle
 {
 public:
 };
 
 
 // Size 0x18
-class SlateSound: public None
+struct SlateSound
 {
 public:
 	Class Object*                                                ResourceObject;                                    // 0x0(0x8)
@@ -95,7 +95,7 @@ public:
 
 
 // Size 0x3e0
-class ComboButtonStyle: public None
+struct ComboButtonStyle
 {
 public:
 	Struct ButtonStyle                                           ButtonStyle;                                       // 0x8(0x2a8)
@@ -106,7 +106,7 @@ public:
 
 
 // Size 0x2a8
-class ButtonStyle: public None
+struct ButtonStyle
 {
 public:
 	Struct SlateBrush                                            Normal;                                            // 0x8(0x90)
@@ -123,7 +123,7 @@ public:
 
 
 // Size 0x40
-class SlateFontInfo: public None
+struct SlateFontInfo
 {
 public:
 	Class Object*                                                FontObject;                                        // 0x0(0x8)
@@ -136,7 +136,7 @@ public:
 
 
 // Size 0x228
-class EditableTextStyle: public None
+struct EditableTextStyle
 {
 public:
 	Struct SlateFontInfo                                         Font;                                              // 0x8(0x40)
@@ -148,7 +148,7 @@ public:
 
 
 // Size 0x860
-class EditableTextBoxStyle: public None
+struct EditableTextBoxStyle
 {
 public:
 	Struct SlateBrush                                            BackgroundImageNormal;                             // 0x8(0x90)
@@ -167,7 +167,7 @@ public:
 
 
 // Size 0x518
-class ScrollBarStyle: public None
+struct ScrollBarStyle
 {
 public:
 	Struct SlateBrush                                            HorizontalBackgroundImage;                         // 0x8(0x90)
@@ -183,7 +183,7 @@ public:
 
 
 // Size 0x160
-class TextBlockStyle: public None
+struct TextBlockStyle
 {
 public:
 	Struct SlateFontInfo                                         Font;                                              // 0x8(0x40)
@@ -197,7 +197,7 @@ public:
 
 
 // Size 0x318
-class SpinBoxStyle: public None
+struct SpinBoxStyle
 {
 public:
 	Struct SlateBrush                                            BackgroundBrush;                                   // 0x8(0x90)
@@ -211,7 +211,7 @@ public:
 
 
 // Size 0x28
-class CompositeFont: public None
+struct CompositeFont
 {
 public:
 	Struct Typeface                                              DefaultTypeface;                                   // 0x0(0x10)
@@ -220,18 +220,18 @@ public:
 
 
 // Size 0x38
-class CompositeSubFont: public None
+struct CompositeSubFont
 {
 public:
 	Struct Typeface                                              Typeface;                                          // 0x0(0x10)
-	TArray<Struct Typeface>                                      CharacterRanges;                                   // 0x10(0x10)
-	TArray<Byte CharacterRanges>                                 Languages;                                         // 0x20(0x10)
+	TArray<Struct Int32Range>                                    CharacterRanges;                                   // 0x10(0x10)
+	TArray<Byte Languages>                                       Languages;                                         // 0x20(0x10)
 	float                                                        ScalingFactor;                                     // 0x30(0x4)
 };
 
 
 // Size 0x10
-class Typeface: public None
+struct Typeface
 {
 public:
 	TArray<Struct TypefaceEntry>                                 Fonts;                                             // 0x0(0x10)
@@ -239,7 +239,7 @@ public:
 
 
 // Size 0x38
-class TypefaceEntry: public None
+struct TypefaceEntry
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
@@ -248,18 +248,18 @@ public:
 
 
 // Size 0x30
-class FontData: public None
+struct FontData
 {
 public:
 	Struct FString                                               FontFilename;                                      // 0x0(0x10)
 	Class FontBulkData*                                          BulkDataPtr;                                       // 0x10(0x8)
 	byte                                                         Hinting;                                           // 0x18(0x1)
-	TArray<Byte Hinting>                                         FontData;                                          // 0x20(0x10)
+	TArray<Byte FontData>                                        FontData;                                          // 0x20(0x10)
 };
 
 
 // Size 0x1028
-class WindowStyle: public None
+struct WindowStyle
 {
 public:
 	Struct ButtonStyle                                           MinimizeButtonStyle;                               // 0x8(0x2a8)
@@ -279,7 +279,7 @@ public:
 
 
 // Size 0x128
-class ScrollBorderStyle: public None
+struct ScrollBorderStyle
 {
 public:
 	Struct SlateBrush                                            TopShadowBrush;                                    // 0x8(0x90)
@@ -288,7 +288,7 @@ public:
 
 
 // Size 0x248
-class ScrollBoxStyle: public None
+struct ScrollBoxStyle
 {
 public:
 	Struct SlateBrush                                            TopShadowBrush;                                    // 0x8(0x90)
@@ -299,7 +299,7 @@ public:
 
 
 // Size 0x6e8
-class DockTabStyle: public None
+struct DockTabStyle
 {
 public:
 	Struct ButtonStyle                                           CloseButtonStyle;                                  // 0x8(0x2a8)
@@ -317,7 +317,7 @@ public:
 
 
 // Size 0xc20
-class HeaderRowStyle: public None
+struct HeaderRowStyle
 {
 public:
 	Struct TableColumnHeaderStyle                                ColumnStyle;                                       // 0x8(0x518)
@@ -329,7 +329,7 @@ public:
 
 
 // Size 0x128
-class SplitterStyle: public None
+struct SplitterStyle
 {
 public:
 	Struct SlateBrush                                            HandleNormalBrush;                                 // 0x8(0x90)
@@ -338,7 +338,7 @@ public:
 
 
 // Size 0x518
-class TableColumnHeaderStyle: public None
+struct TableColumnHeaderStyle
 {
 public:
 	Struct SlateBrush                                            SortPrimaryAscendingImage;                         // 0x8(0x90)
@@ -354,7 +354,7 @@ public:
 
 
 // Size 0x728
-class TableRowStyle: public None
+struct TableRowStyle
 {
 public:
 	Struct SlateBrush                                            SelectorFocusedBrush;                              // 0x8(0x90)
@@ -375,7 +375,7 @@ public:
 
 
 // Size 0xa0
-class InlineTextImageStyle: public None
+struct InlineTextImageStyle
 {
 public:
 	Struct SlateBrush                                            Image;                                             // 0x8(0x90)
@@ -383,7 +383,7 @@ public:
 
 
 // Size 0x520
-class VolumeControlStyle: public None
+struct VolumeControlStyle
 {
 public:
 	Struct SliderStyle                                           SliderStyle;                                       // 0x8(0x248)
@@ -396,7 +396,7 @@ public:
 
 
 // Size 0x248
-class SliderStyle: public None
+struct SliderStyle
 {
 public:
 	Struct SlateBrush                                            NormalBarImage;                                    // 0x8(0x90)
@@ -407,7 +407,7 @@ public:
 
 
 // Size 0xb00
-class SearchBoxStyle: public None
+struct SearchBoxStyle
 {
 public:
 	Struct EditableTextBoxStyle                                  TextBoxStyle;                                      // 0x8(0x860)
@@ -422,7 +422,7 @@ public:
 
 
 // Size 0x128
-class ExpandableAreaStyle: public None
+struct ExpandableAreaStyle
 {
 public:
 	Struct SlateBrush                                            CollapsedImage;                                    // 0x8(0x90)
@@ -431,7 +431,7 @@ public:
 
 
 // Size 0x1b8
-class ProgressBarStyle: public None
+struct ProgressBarStyle
 {
 public:
 	Struct SlateBrush                                            BackgroundImage;                                   // 0x8(0x90)
@@ -441,7 +441,7 @@ public:
 
 
 // Size 0x9c8
-class InlineEditableTextBlockStyle: public None
+struct InlineEditableTextBlockStyle
 {
 public:
 	Struct EditableTextBoxStyle                                  EditableTextBoxStyle;                              // 0x8(0x860)
@@ -450,7 +450,7 @@ public:
 
 
 // Size 0x420
-class HyperlinkStyle: public None
+struct HyperlinkStyle
 {
 public:
 	Struct ButtonStyle                                           UnderlineStyle;                                    // 0x8(0x2a8)
@@ -460,7 +460,7 @@ public:
 
 
 // Size 0x5f0
-class CheckBoxStyle: public None
+struct CheckBoxStyle
 {
 public:
 	byte                                                         CheckBoxType;                                      // 0x8(0x1)
@@ -486,49 +486,49 @@ public:
 
 
 // Size 0x30
-class NavigationEvent: public None
+struct NavigationEvent
 {
 public:
 };
 
 
 // Size 0x58
-class MotionEvent: public None
+struct MotionEvent
 {
 public:
 };
 
 
 // Size 0x50
-class ControllerEvent: public None
+struct ControllerEvent
 {
 public:
 };
 
 
 // Size 0x30
-class CharacterEvent: public None
+struct CharacterEvent
 {
 public:
 };
 
 
 // Size 0x58
-class AnalogInputEvent: public None
+struct AnalogInputEvent
 {
 public:
 };
 
 
 // Size 0x50
-class KeyEvent: public None
+struct KeyEvent
 {
 public:
 };
 
 
 // Size 0x8
-class FocusEvent: public None
+struct FocusEvent
 {
 public:
 };

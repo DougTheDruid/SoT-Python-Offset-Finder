@@ -63,7 +63,7 @@ SirenAnimationInstance:
   - Name: StrategiesForAggressiveAnimations
     Offset: '0x5a0'
     Size: '0x10'
-    Type: TArray<Class UseAlternativeAggressiveAnimation>
+    Type: TArray<Class StrategiesForAggressiveAnimations>
   - Name: TimeBeforeAlternativeAggressiveAnimationToggleFlips
     Offset: '0x5b0'
     Size: '0x10'

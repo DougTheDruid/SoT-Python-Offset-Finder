@@ -177,7 +177,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsTArrayProperty: public Object
 {
 public:
-	TArray<Int None>                                             IntegerArrayWithMigrationMarkup;                   // 0x28(0x10)
+	TArray<Int IntegerArrayWithMigrationMarkup>                  IntegerArrayWithMigrationMarkup;                   // 0x28(0x10)
 };
 
 

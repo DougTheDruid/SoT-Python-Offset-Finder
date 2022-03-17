@@ -19,7 +19,7 @@
       },
       {
         "Name": "TavernBoardLocations",
-        "Type": "TArray<Struct TavernBoardLocations>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x418"
       },

@@ -418,7 +418,7 @@
       },
       {
         "Name": "CustomParticleEffectTemplates",
-        "Type": "TArray<Struct DefaultParticleEffectPlane>",
+        "Type": "TArray<Struct FireCellStateParticleTemplate>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -430,19 +430,19 @@
       },
       {
         "Name": "NeighbourCellIndices",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int NeighbourCellIndices>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
         "Name": "CustomAddedDiagonalNeighbourOffsets",
-        "Type": "TArray<Struct NeighbourCellIndices>",
+        "Type": "TArray<Struct IntVector>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "CustomRemovedDefaultNeighbourOffsets",
-        "Type": "TArray<Struct CustomAddedDiagonalNeighbourOffsets>",
+        "Type": "TArray<Struct IntVector>",
         "Size": "0x10",
         "Offset": "0xf0"
       }
@@ -453,7 +453,7 @@
     "Attributes": [
       {
         "Name": "DefaultParticleTemplates",
-        "Type": "TArray<Struct FireGridRelativeSpawnDesc>",
+        "Type": "TArray<Struct FireCellStateParticleTemplate>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -542,7 +542,7 @@
       },
       {
         "Name": "CellIndicesToSpawnFor",
-        "Type": "TArray<Int >",
+        "Type": "TArray<Int CellIndicesToSpawnFor>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -581,7 +581,7 @@
     "Attributes": [
       {
         "Name": "ParticleSpawnLODs",
-        "Type": "TArray<Struct FireDefaultVFXSpawnData>",
+        "Type": "TArray<Struct FireParticleSpawnData>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -609,19 +609,19 @@
     "Attributes": [
       {
         "Name": "InteriorSmokeSpawnDescs",
-        "Type": "TArray<Struct FireParticleSystem>",
+        "Type": "TArray<Struct FireGridRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LowDetailVFXSpawnDescs",
-        "Type": "TArray<Struct InteriorSmokeSpawnDescs>",
+        "Type": "TArray<Struct FireGridLowDetailRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ParticleSpawnLODSettings",
-        "Type": "TArray<Struct LowDetailVFXSpawnDescs>",
+        "Type": "TArray<Struct FireParticleSpawnData>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -633,7 +633,7 @@
       },
       {
         "Name": "ExteriorSmokeVFXSpawnDescs",
-        "Type": "TArray<Struct LowFrequencyParticleSpawnSettings>",
+        "Type": "TArray<Struct FireGridLowDetailRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -747,7 +747,7 @@
       },
       {
         "Name": "TimeSpentCharring",
-        "Type": "TArray<Float >",
+        "Type": "TArray<Float TimeSpentCharring>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -798,7 +798,7 @@
       },
       {
         "Name": "DormantShipRegions",
-        "Type": "TArray<Byte LightPositionOffset>",
+        "Type": "TArray<Byte DormantShipRegions>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -850,7 +850,7 @@
     "Attributes": [
       {
         "Name": "LightSpawnDescs",
-        "Type": "TArray<Struct HullCharringPersistenceModel>",
+        "Type": "TArray<Struct ShipFireLightRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -862,7 +862,7 @@
       },
       {
         "Name": "Lights",
-        "Type": "TArray<Struct LightTemplate>",
+        "Type": "TArray<Struct ShipFireLight>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -927,7 +927,7 @@
     "Attributes": [
       {
         "Name": "TimeSpentCharring",
-        "Type": "TArray<Float None>",
+        "Type": "TArray<Float TimeSpentCharring>",
         "Size": "0x10",
         "Offset": "0x0"
       }

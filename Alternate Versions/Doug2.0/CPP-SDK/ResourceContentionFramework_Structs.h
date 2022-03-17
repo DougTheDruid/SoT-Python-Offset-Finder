@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class PoolableCollectionMapConfiguration: public None
+struct PoolableCollectionMapConfiguration
 {
 public:
 	TArray<Struct PoolableCollectionMapConfigurationEntry>       Pools;                                             // 0x0(0x10)
@@ -16,7 +16,7 @@ public:
 
 
 // Size 0x28
-class PoolableCollectionMapConfigurationEntry: public None
+struct PoolableCollectionMapConfigurationEntry
 {
 public:
 	int                                                          Size;                                              // 0x20(0x4)

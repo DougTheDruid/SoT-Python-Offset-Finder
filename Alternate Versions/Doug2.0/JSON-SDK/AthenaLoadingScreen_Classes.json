@@ -80,7 +80,7 @@
       },
       {
         "Name": "CyclingImages",
-        "Type": "TArray<Struct PrimaryImage>",
+        "Type": "TArray<Struct SlateLoadingScreenImageParams>",
         "Size": "0x10",
         "Offset": "0x80"
       },

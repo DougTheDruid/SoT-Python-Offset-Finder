@@ -41,7 +41,7 @@ public:
 class ItemProxyWatercraftTrackerComponentDataAsset: public DataAsset
 {
 public:
-	TArray<Class ParentRowboat>                                  WatercraftTypes;                                   // 0x28(0x10)
+	TArray<Class WatercraftTypes>                                WatercraftTypes;                                   // 0x28(0x10)
 };
 
 
@@ -153,7 +153,7 @@ public:
 class ScrapeableDamageDataAsset: public DataAsset
 {
 public:
-	TArray<Struct ScrapeDamagerType>                             DamageSpeedParams;                                 // 0x28(0x10)
+	TArray<Struct ScrapeableDamageSpeedEntry>                    DamageSpeedParams;                                 // 0x28(0x10)
 };
 
 
@@ -238,7 +238,7 @@ public:
 	byte                                                         CoverCollisionChannel;                             // 0x85e(0x1)
 	float                                                        UnderCoverCheckInterval;                           // 0x860(0x4)
 	float                                                        UnderCoverHeight;                                  // 0x864(0x4)
-	TArray<Struct UnderCoverHeight>                              RelativeUnderCoverProbeRoots;                      // 0x868(0x10)
+	TArray<Struct Vector>                                        RelativeUnderCoverProbeRoots;                      // 0x868(0x10)
 	byte                                                         TrackedActorType;                                  // 0x878(0x1)
 };
 
@@ -254,7 +254,7 @@ public:
 class RowboatSpawnParamsDataAsset: public DataAsset
 {
 public:
-	TArray<Class TargetOars>                                     RowboatTypes;                                      // 0x28(0x10)
+	TArray<Class RowboatTypes>                                   RowboatTypes;                                      // 0x28(0x10)
 };
 
 

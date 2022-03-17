@@ -30,11 +30,11 @@ GameplayTagQuery:
   - Name: TagDictionary
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct TokenStreamVersion>
+    Type: TArray<Struct GameplayTag>
   - Name: QueryTokenStream
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Byte TagDictionary>
+    Type: TArray<Byte QueryTokenStream>
   - Name: UserDescription
     Offset: '0x28'
     Size: '0x10'

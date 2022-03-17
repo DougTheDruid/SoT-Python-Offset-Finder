@@ -135,7 +135,7 @@ SeasonRewardEarnedEvent:
   - Name: Rewards
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct MultipleRewards>
+    Type: TArray<Struct SeasonReward>
   ClassSize: '0x28'
 SeasonServiceDataUpdatedEvent:
   Attributes: []
