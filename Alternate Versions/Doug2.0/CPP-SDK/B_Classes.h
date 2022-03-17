@@ -24,4 +24,60 @@ public:
 };
 
 
+// Size 0x30
+class BP_TaleBook_CursedRogue_AdditionalPuzzles_C: public VoyageProposalContainer
+{
+public:
+	Class ChildActorComponent*                                   None;                                              // 0x768(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
+};
+
+
+// Size 0x0
+class BP_BuoyantWoodBarrel_LockedToWater_C: public BP_BuoyantStorageBarrel_LockedToWater_C
+{
+public:
+};
+
+
+// Size 0x0
+class BP_BuoyantFoodBarrel_LockedToWater_C: public BP_BuoyantStorageBarrel_LockedToWater_C
+{
+public:
+};
+
+
+// Size 0x0
+class BP_BuoyantCannonballBarrel_LockedToWater_C: public BP_BuoyantStorageBarrel_LockedToWater_C
+{
+public:
+};
+
+
+// Size 0x20
+class BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C: public BuoyantStorageContainer
+{
+public:
+	Class SphereComponent*                                       Sphere;                                            // 0x6f0(0x8)
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x6f8(0x8)
+	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x700(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x708(0x8)
+};
+
+
+// Size 0x20
+class BP_BuoyantStorageBarrel_LockedToWater_C: public BuoyantStorageContainer
+{
+public:
+	Class SphereComponent*                                       Sphere;                                            // 0x6f0(0x8)
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x6f8(0x8)
+	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x700(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x708(0x8)
+};
+
+
 }

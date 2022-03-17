@@ -18,6 +18,12 @@ BP_TreasureMap_ItemDesc_Merchant_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: TreasureMapItemDesc
+BP_TreasureMap_ItemDesc_PlayerBuriedXMarksTheSpot_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: TreasureMapItemDesc
 BP_TreasureMap_ItemDesc_Riddle_C:
   Attributes: []
   ClassSize: '0x0'

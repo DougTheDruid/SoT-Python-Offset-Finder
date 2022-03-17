@@ -24,6 +24,30 @@ BP_BriggsyCollectorsChest_Desc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: BootyItemDesc
+BP_Campaign005_CursedSails_ClothingChris_PreCursedSails_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x688'
+  InheritedSize: '0x688'
+  Super: BP_Clothing_C
+BP_Campaign005_CursedSails_ShipwrightSue_PreCursedSails_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x6c0'
+  InheritedSize: '0x6c0'
+  Super: BP_Shipwright_C
+BP_Campaign005_CursedSails_ShopkeeperTravis_PreCursedSails_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x690'
+  InheritedSize: '0x690'
+  Super: BP_Shopkeeper_C
+BP_Campaign005_CursedSails_WeapondealerWhitney_PreCursedSails_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x688'
+  InheritedSize: '0x688'
+  Super: BP_Weapondealer_C
 BP_CollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -72,6 +96,12 @@ BP_LoversChest_Desc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: BootyItemDesc
+BP_MerchantCrate_AnyItemCrate_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemWithoutIconsDesc
 BP_MerchantCrate_BananaCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -85,6 +115,12 @@ BP_MerchantCrate_BigGunpowderBarrel_Desc_C:
   InheritedSize: '0x130'
   Super: BootyItemDesc
 BP_MerchantCrate_CannonballCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: BootyItemDesc
+BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x130'
@@ -562,6 +598,84 @@ BP_fod_KrakenMeatRaw_00_a_Wieldable_C:
   FullSize: '0x858'
   InheritedSize: '0x858'
   Super: BP_StaticWieldableIngestible_C
+BP_hair_col_black_01_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_black_02_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_black_03_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_blond_01_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_blond_04_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_blond_05_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_brown_03_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_brown_05_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_brown_07_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_red_01_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_red_04_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_red_05_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
+BP_hair_col_white_01_over_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
 BP_wpn_flintlock_pistol_skd_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

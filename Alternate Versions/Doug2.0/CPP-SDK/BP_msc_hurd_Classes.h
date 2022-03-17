@@ -27,4 +27,40 @@ public:
 };
 
 
+// Size 0x8
+class BP_msc_hurdygurdy_wth_01_a_v01_ItemInfo_C: public ItemInfo
+{
+public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
+};
+
+
+// Size 0x0
+class BP_msc_hurdygurdy_wth_01_a_v01_Wieldable_C: public BP_HurdyGurdy_C
+{
+public:
+};
+
+
+// Size 0x0
+class BP_msc_hurdygurdy_01_f_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_msc_hurdygurdy_yr1_leg_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_msc_hurdygurdy_wth_01_a_v01_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
 }

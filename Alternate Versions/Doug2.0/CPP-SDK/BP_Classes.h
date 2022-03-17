@@ -172,4 +172,222 @@ public:
 };
 
 
+// Size 0x18
+class BP_IslandStorageBarrel_C: public StorageContainer
+{
+public:
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
+	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
+};
+
+
+// Size 0x10
+class BP_CommodityManifestBook_MerchantAlliance_C: public ModalInteractionProxy
+{
+public:
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x4e8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f0(0x8)
+};
+
+
+// Size 0x18
+class BP_IslandStorageBarrel_Outpost_C: public StorageContainer
+{
+public:
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
+	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
+};
+
+
+// Size 0x0
+class BP_Emote_Dice_D20_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_Dice_D12_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_Dice_D10_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_Dice_D8_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_Dice_D4_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_Dice_D6_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_white_01_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_red_05_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_red_04_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_red_01_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_brown_07_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_brown_05_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_brown_03_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_blond_05_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_blond_04_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_blond_01_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_black_03_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_black_02_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_hair_col_black_01_under_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_yellow_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_red_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_purple_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_orange_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_grey_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_green_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_blue_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_black_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
 }

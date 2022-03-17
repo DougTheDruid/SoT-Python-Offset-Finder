@@ -66,3 +66,27 @@ MeshMemoryConstraintCategory_AI_Skeleton_Shadow_C:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_Bottle_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_Crate_GoodsOneHanded_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_Pouch_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_Scroll_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory

@@ -482,4 +482,32 @@ public:
 };
 
 
+// Size 0x0
+class RitualSkull_ExclusionEntitlement_Campaign033_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class RitualSkull_ExclusionEntitlement_Campaign032_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class RitualSkull_ExclusionEntitlement_Campaign031_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class SDLetter_ExclusionEntitlement_Campaign031_C: public EntitlementDesc
+{
+public:
+};
+
+
 }

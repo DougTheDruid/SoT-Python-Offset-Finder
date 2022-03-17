@@ -1,0 +1,236 @@
+{
+  "BP_FishCreature_C": {
+    "Super": "Actor",
+    "FullSize": "0x4f0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x120",
+    "Attributes": [
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "CreatureType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "NumOfCreatures",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3d9"
+      },
+      {
+        "Name": "BoundsBias",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3dc"
+      },
+      {
+        "Name": "StaticMeshComponent",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "currMaterial",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "MaterialInstance",
+        "Type": "TArray<class MaterialInstance*>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "Seed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "SwimSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x404"
+      },
+      {
+        "Name": "CirclingSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "CirclingDirection",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x40c"
+      },
+      {
+        "Name": "CirclingRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "SwimDeformation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x414"
+      },
+      {
+        "Name": "mud",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "shoalSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x41c"
+      },
+      {
+        "Name": "ShoalingSpread",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "ShoalingHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "fishSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x42c"
+      },
+      {
+        "Name": "FishSpread",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "FishHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "RandomSpread",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x43c"
+      },
+      {
+        "Name": "HueVariance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "Smoothness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x444"
+      },
+      {
+        "Name": "SelectedCreatureType",
+        "Type": "TArray<Assetclass SelectedCreatureType>",
+        "Size": "0x10",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "Fish_04",
+        "Type": "TArray<Assetclass Fish_04>",
+        "Size": "0x10",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "Fish_05",
+        "Type": "TArray<Assetclass Fish_05>",
+        "Size": "0x10",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "Size",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "SizeVariance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x47c"
+      },
+      {
+        "Name": "SimSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "BBox",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x484"
+      },
+      {
+        "Name": "Fish_07",
+        "Type": "TArray<Assetclass Fish_07>",
+        "Size": "0x10",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "DrawDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "Clown_01",
+        "Type": "TArray<Assetclass Clown_01>",
+        "Size": "0x10",
+        "Offset": "0x4a8"
+      },
+      {
+        "Name": "SizeCompensation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "Splashtail",
+        "Type": "TArray<Assetclass Splashtail>",
+        "Size": "0x10",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "Pondie",
+        "Type": "TArray<Assetclass Pondie>",
+        "Size": "0x10",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "FishDistribution",
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x4e0"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}
