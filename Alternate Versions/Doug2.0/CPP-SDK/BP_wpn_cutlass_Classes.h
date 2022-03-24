@@ -48,23 +48,22 @@ public:
 };
 
 
-// Size 0x8
-class BP_wpn_cutlass_par_01_a_v03_ItemInfo_C: public ItemInfo
-{
-public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
-};
-
-
-// Size 0x0
-class BP_wpn_cutlass_par_01_a_v03_Wieldable_C: public BP_Cutlass_Item_C
-{
-public:
-};
-
-
 // Size 0x0
 class BP_wpn_cutlass_smp_01_a_Wieldable_C: public BP_Cutlass_Item_C
+{
+public:
+};
+
+
+// Size 0x18
+class BP_wpn_cutlass_par_01_a_v03_ItemInfo_C: public Actor
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_par_01_a_v03_Wieldable_C: public None
 {
 public:
 };

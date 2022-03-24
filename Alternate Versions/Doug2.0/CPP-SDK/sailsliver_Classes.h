@@ -168,6 +168,13 @@ public:
 
 
 // Size 0x0
+class sailslivery_sakura_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
 class sailslivery_borealbundle_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:

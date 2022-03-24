@@ -6205,6 +6205,52 @@
       }
     ]
   },
+  "UIFrameDurationDataTelemetryFragment": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Min",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Max",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Average",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FrameDurationDataTelemetryFragment": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Min",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Max",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Average",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "GarbageCollectionFrametimeTelemetryFragment": {
     "ClassSize": "0x18",
     "Attributes": [

@@ -48,6 +48,12 @@ BP_makeup_s5_01_Desc_C:
   FullSize: '0xe0'
   InheritedSize: '0xe0'
   Super: ClothingDesc
+BP_makeup_s6_01_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe0'
+  InheritedSize: '0xe0'
+  Super: ClothingDesc
 BP_makeup_set_cold_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'

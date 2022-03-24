@@ -20268,6 +20268,21 @@ FragileComponentShipDamageTypeEntry:
     Size: '0x4'
     Type: float
   ClassSize: '0x10'
+FrameDurationDataTelemetryFragment:
+  Attributes:
+  - Name: Min
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Max
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Average
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
 FrameTypeTelemetryFragment:
   Attributes: []
   ClassSize: '0x18'
@@ -44113,6 +44128,21 @@ UIFloatOptionSelectedTelemetryEvent:
     Size: '0x4'
     Type: float
   ClassSize: '0x18'
+UIFrameDurationDataTelemetryFragment:
+  Attributes:
+  - Name: Min
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Max
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Average
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
 UIIntegerOptionSelectedTelemetryEvent:
   Attributes:
   - Name: Option

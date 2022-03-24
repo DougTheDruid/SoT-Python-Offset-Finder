@@ -55,4 +55,11 @@ public:
 };
 
 
+// Size 0x0
+class BP_TreasureMap_ItemDesc_GhostShipVoyage_Rank10_C: public TreasureMapItemDesc
+{
+public:
+};
+
+
 }

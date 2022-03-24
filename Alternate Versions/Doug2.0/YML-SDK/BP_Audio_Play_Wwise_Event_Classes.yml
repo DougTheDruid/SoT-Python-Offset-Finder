@@ -3,30 +3,22 @@
 BP_Audio_Play_Wwise_Event_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x3d0'
+    Offset: '0x8a8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: BPAudioEvent
-    Offset: '0x3d8'
+  - Name: PointLight
+    Offset: '0x8b0'
     Size: '0x8'
-    Type: Class WwiseEmitterComponent*
-  - Name: WwiseEvent
-    Offset: '0x3e0'
-    Size: '0x10'
-    Type: TArray<class WwiseEvent*>
-  - Name: Wwise Game Parameter
-    Offset: '0x3f0'
-    Size: '0x8'
-    Type: struct FName
-  - Name: Wwise Game Parameter Value
-    Offset: '0x3f8'
-    Size: '0x4'
-    Type: float
-  - Name: Wwise Object Pool Wrapper
-    Offset: '0x400'
-    Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
-  ClassSize: '0x38'
-  FullSize: '0x408'
-  InheritedSize: '0x3d0'
-  Super: Actor
+    Type: Class PointLightComponent*
+  - Name: OnWieldedHandle
+    Offset: '0x8b8'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: IsWielded
+    Offset: '0x900'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x59'
+  FullSize: '0x901'
+  InheritedSize: '0x8a8'
+  Super: BP_Grenade_Wieldable_C

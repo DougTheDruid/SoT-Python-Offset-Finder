@@ -6,13 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
-class BP_Shroudbreaker_OnShip_Small_C: public BP_Shroudbreaker_OnShip_C
-{
-public:
-};
-
-
 // Size 0x2c8
 class BP_Shroudbreaker_OnShip_C: public ShroudBreakerOnShip
 {

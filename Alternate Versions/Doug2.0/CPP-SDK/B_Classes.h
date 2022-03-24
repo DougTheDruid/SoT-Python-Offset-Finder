@@ -24,19 +24,6 @@ public:
 };
 
 
-// Size 0x30
-class BP_TaleBook_CursedRogue_AdditionalPuzzles_C: public VoyageProposalContainer
-{
-public:
-	Class ChildActorComponent*                                   None;                                              // 0x768(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
-};
-
-
 // Size 0x0
 class BP_BuoyantWoodBarrel_LockedToWater_C: public BP_BuoyantStorageBarrel_LockedToWater_C
 {
@@ -53,6 +40,13 @@ public:
 
 // Size 0x0
 class BP_BuoyantCannonballBarrel_LockedToWater_C: public BP_BuoyantStorageBarrel_LockedToWater_C
+{
+public:
+};
+
+
+// Size -0x11
+class BP_TaleBook_FateOfTheMorningstar_AdditionalPuzzles_C: public EventWieldableItemUseStoppedAndFullyHidden
 {
 public:
 };

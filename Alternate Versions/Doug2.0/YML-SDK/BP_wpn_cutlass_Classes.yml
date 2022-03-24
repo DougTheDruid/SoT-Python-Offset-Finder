@@ -85,21 +85,17 @@ BP_wpn_cutlass_par_01_a_v03_ItemDesc_C:
   InheritedSize: '0x130'
   Super: ItemDesc
 BP_wpn_cutlass_par_01_a_v03_ItemInfo_C:
-  Attributes:
-  - Name: DefaultSceneRoot
-    Offset: '0x500'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x8'
-  FullSize: '0x508'
-  InheritedSize: '0x500'
-  Super: ItemInfo
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3d0'
+  Super: Actor
 BP_wpn_cutlass_par_01_a_v03_Wieldable_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xa88'
-  InheritedSize: '0xa88'
-  Super: BP_Cutlass_Item_C
+  FullSize: '0x0'
+  InheritedSize: '0x0'
+  Super: None
 BP_wpn_cutlass_pum_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

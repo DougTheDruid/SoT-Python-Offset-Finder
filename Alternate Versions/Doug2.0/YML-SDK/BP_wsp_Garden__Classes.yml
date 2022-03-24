@@ -12,9 +12,3 @@ BP_wsp_Garden_shells_C:
   FullSize: '0x475'
   InheritedSize: '0x475'
   Super: BP_Placement_Garden_C
-BP_wsp_Garden_small_rocks_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x475'
-  InheritedSize: '0x475'
-  Super: BP_Placement_Garden_C

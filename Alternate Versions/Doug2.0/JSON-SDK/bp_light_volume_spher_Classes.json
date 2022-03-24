@@ -1,41 +1,22 @@
 {
-  "bp_light_volume_sphere_orange_a_C": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Billboard",
-        "Type": "Class BillboardComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      }
-    ]
+  "bp_light_volume_sphere_ghost_a_C": {
+    "Super": "None",
+    "FullSize": "-0x6cd4bcc0",
+    "InheritedSize": "0x737c0408",
+    "ClassSize": "-0xe050c0c8",
+    "Attributes": []
   },
   "bp_light_volume_sphere_large_a_C": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x10",
+    "Super": "BP_MerchantCrate_Commodity_Base_Proxy_C",
+    "FullSize": "0x7e8",
+    "InheritedSize": "0x7e0",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Billboard",
-        "Type": "Class BillboardComponent*",
+        "Name": "Interactable",
+        "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x7e0"
       }
     ]
   },

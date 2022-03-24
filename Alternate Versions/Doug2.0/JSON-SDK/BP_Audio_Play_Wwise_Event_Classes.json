@@ -1,45 +1,33 @@
 {
   "BP_Audio_Play_Wwise_Event_C": {
-    "Super": "Actor",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x38",
+    "Super": "BP_Grenade_Wieldable_C",
+    "FullSize": "0x901",
+    "InheritedSize": "0x8a8",
+    "ClassSize": "0x59",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x8a8"
       },
       {
-        "Name": "BPAudioEvent",
-        "Type": "Class WwiseEmitterComponent*",
+        "Name": "PointLight",
+        "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x8b0"
       },
       {
-        "Name": "WwiseEvent",
-        "Type": "TArray<class WwiseEvent*>",
-        "Size": "0x10",
-        "Offset": "0x3e0"
+        "Name": "OnWieldedHandle",
+        "Type": "Struct ObjectMessagingHandle",
+        "Size": "0x48",
+        "Offset": "0x8b8"
       },
       {
-        "Name": "Wwise Game Parameter",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "Wwise Game Parameter Value",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "Wwise Object Pool Wrapper",
-        "Type": "Class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x400"
+        "Name": "IsWielded",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x900"
       }
     ]
   },

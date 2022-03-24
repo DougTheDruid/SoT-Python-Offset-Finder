@@ -2266,6 +2266,26 @@ public:
 };
 
 
+// Size 0xc
+struct UIFrameDurationDataTelemetryFragment
+{
+public:
+	float                                                        Min;                                               // 0x0(0x4)
+	float                                                        Max;                                               // 0x4(0x4)
+	float                                                        Average;                                           // 0x8(0x4)
+};
+
+
+// Size 0xc
+struct FrameDurationDataTelemetryFragment
+{
+public:
+	float                                                        Min;                                               // 0x0(0x4)
+	float                                                        Max;                                               // 0x4(0x4)
+	float                                                        Average;                                           // 0x8(0x4)
+};
+
+
 // Size 0x18
 struct GarbageCollectionFrametimeTelemetryFragment
 {

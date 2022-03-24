@@ -24,30 +24,6 @@ BP_BriggsyCollectorsChest_Desc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: BootyItemDesc
-BP_Campaign005_CursedSails_ClothingChris_PreCursedSails_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x688'
-  InheritedSize: '0x688'
-  Super: BP_Clothing_C
-BP_Campaign005_CursedSails_ShipwrightSue_PreCursedSails_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x6c0'
-  InheritedSize: '0x6c0'
-  Super: BP_Shipwright_C
-BP_Campaign005_CursedSails_ShopkeeperTravis_PreCursedSails_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x690'
-  InheritedSize: '0x690'
-  Super: BP_Shopkeeper_C
-BP_Campaign005_CursedSails_WeapondealerWhitney_PreCursedSails_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x688'
-  InheritedSize: '0x688'
-  Super: BP_Weapondealer_C
 BP_CollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'

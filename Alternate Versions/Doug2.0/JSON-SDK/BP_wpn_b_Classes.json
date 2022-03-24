@@ -35,24 +35,17 @@
     "Attributes": []
   },
   "BP_wpn_blunderbuss_shr_01_a_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      }
-    ]
+    "Super": "",
+    "FullSize": "0x4a769f1",
+    "InheritedSize": "0x6ba034e0",
+    "ClassSize": "-0x66f8caef",
+    "Attributes": []
   },
   "BP_wpn_blunderbuss_shr_01_a_Wieldable_C": {
-    "Super": "BP_Blunderbuss_C",
-    "FullSize": "0xa90",
-    "InheritedSize": "0xa90",
-    "ClassSize": "0x0",
+    "Super": "EventLoadableItemUnloadingBegin",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x1",
+    "ClassSize": "-0x2",
     "Attributes": []
   },
   "BP_wpn_blunderbuss_pum_01_a_ItemDesc_C": {

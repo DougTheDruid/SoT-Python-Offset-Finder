@@ -6,6 +6,37 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x0
+class BP_TreasureChest_ItemInfo_Common_C: public BP_TreasureChest_GoldHoarderLockable_Base_ItemInfo_C
+{
+public:
+};
+
+
+// Size 0x8
+class BP_TreasureChest_GoldHoarderLockable_Base_ItemInfo_C: public LockedCollectorsChestItemInfo
+{
+public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x7b8(0x8)
+};
+
+
+// Size 0x0
+class BP_Treasure_Artifact_Proxy_impressive_01_a_C: public BP_TreasureArtifact_Proxy_Base_C
+{
+public:
+};
+
+
+// Size 0x10
+class BP_TreasureArtifact_Proxy_Base_C: public StaticSimpleBootyItemProxy
+{
+public:
+	Class GlintComponent*                                        GlintComponent;                                    // 0x7b8(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x7c0(0x8)
+};
+
+
 // Size 0x48
 class BP_TavernBoard_C: public TavernBoard
 {

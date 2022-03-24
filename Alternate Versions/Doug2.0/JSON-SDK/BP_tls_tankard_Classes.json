@@ -42,18 +42,11 @@
     "Attributes": []
   },
   "BP_tls_tankard_yr1_leg_01_a_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x1",
+    "Attributes": []
   },
   "BP_tls_tankard_yr1_leg_01_a_Wieldable_C": {
     "Super": "BP_Tankard_C",

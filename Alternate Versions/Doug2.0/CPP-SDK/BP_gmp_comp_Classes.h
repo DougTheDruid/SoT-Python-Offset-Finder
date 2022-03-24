@@ -34,11 +34,10 @@ public:
 };
 
 
-// Size 0x8
-class BP_gmp_compass_wth_01_a_ItemInfo_C: public ItemInfo
+// Size 0x0
+class BP_gmp_compass_wth_01_a_ItemInfo_C: public BP_Lantern_C
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 

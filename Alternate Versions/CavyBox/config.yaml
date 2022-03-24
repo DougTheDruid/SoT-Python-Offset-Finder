@@ -1,23 +1,23 @@
 Engine_Structs.h:
-  ScriptStruct Engine.CameraCacheEntry:
+  CameraCacheEntry: # class name
     FCameraCacheEntry.FMinimalViewInfo: POV  # Will create an offset with the key "FCameraCacheEntry.FMinimalViewInfo"
 
 Engine_Classes.h:
-  Class Engine.Actor:
+  Actor:
     AActor.rootComponent: RootComponent
-  Class Engine.PlayerState:
+  PlayerState:
     APlayerState.PlayerName: PlayerName
-  Class Engine.GameInstance:
+  GameInstance:
     _prefix: UGameInstance.  # _prefix allows you to shorten each entry inside this class
     1: LocalPlayers  # Will create an offset with the key "UGameInstance.LocalPlayers" (prefix + name of class field)
-  Class Engine.Player:
+  Player:
     _prefix: ULocalPlayer.
     1: PlayerController  # "ULocalPlayer.PlayerController"
-  Class Engine.World:
+  World:
     _prefix: UWorld.  # _prefix will allow less copy-paste
     1: OwningGameInstance  # "UWorld.OwningGameInstance"
     2: PersistentLevel  # "UWorld.PersistentLevel"
-  Class Engine.PlayerController:
+  PlayerController:
     APlayerController.CameraManager: PlayerCameraManager
-  Class Engine.PlayerCameraManager:
+  PlayerCameraManager:
     APlayerCameraManager.CameraCache: CameraCache  # using a _prefix is optional

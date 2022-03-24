@@ -6,21 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
-class bp_light_volume_sphere_orange_a_C: public Actor
+// Size -0xe050c0c8
+class bp_light_volume_sphere_ghost_a_C: public None
 {
 public:
-	Class BillboardComponent*                                    Billboard;                                         // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d8(0x8)
 };
 
 
-// Size 0x10
-class bp_light_volume_sphere_large_a_C: public Actor
+// Size 0x8
+class bp_light_volume_sphere_large_a_C: public BP_MerchantCrate_Commodity_Base_Proxy_C
 {
 public:
-	Class BillboardComponent*                                    Billboard;                                         // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d8(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x7e0(0x8)
 };
 
 

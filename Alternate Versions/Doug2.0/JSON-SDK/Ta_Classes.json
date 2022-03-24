@@ -40,13 +40,13 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "2\uaa14\u0115\u0000\ua580\b\u021c\u0000\ueab8\u89e5\u0115\u0000\u5f32\u4547\u5f4e\u4156\u4952\u4241\u454c\u0000\ua582\b\u0ede\u0000\ue8d8\u5500\u0115\u0000\u5042\u525f\u7469u",
+        "Name": "2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "1\uffff\u05a2\u0000\ua57c\b\u0115\u0000\u9f28\u5500\u0115\u0000\u5f31\u4547\u5f4e\u4156\u4952\u4241\u454c\u0000\ua57e\b\u0115\u0000\u76e0\u4b0f\u0116\u00002\uaa14\u0115",
+        "Name": "1\u6d89\u023b\u0000\ua13a\b\u034c\u0000\u2940\u1f6b\u023b\u0000\u5f31\u4547\u5f4e\u4156\u4952\u4241\u454c\u0000\ua13c\b\u0f72\u0000\ud5a8\u8cf3\u023b\u00002",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
@@ -72,13 +72,13 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "2\uaa14\u0115\u0000\ua580\b\u021c\u0000\ueab8\u89e5\u0115\u0000\u5f32\u4547\u5f4e\u4156\u4952\u4241\u454c\u0000\ua582\b\u0ede\u0000\ue8d8\u5500\u0115\u0000\u5042\u525f\u7469u",
+        "Name": "2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "1\uffff\u05a2\u0000\ua57c\b\u0115\u0000\u9f28\u5500\u0115\u0000\u5f31\u4547\u5f4e\u4156\u4952\u4241\u454c\u0000\ua57e\b\u0115\u0000\u76e0\u4b0f\u0116\u00002\uaa14\u0115",
+        "Name": "1\u6d89\u023b\u0000\ua13a\b\u034c\u0000\u2940\u1f6b\u023b\u0000\u5f31\u4547\u5f4e\u4156\u4952\u4241\u454c\u0000\ua13c\b\u0f72\u0000\ud5a8\u8cf3\u023b\u00002",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"

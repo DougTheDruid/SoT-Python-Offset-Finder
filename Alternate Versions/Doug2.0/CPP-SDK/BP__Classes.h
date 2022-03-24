@@ -556,34 +556,6 @@ public:
 
 
 // Size 0x0
-class BP_Campaign005_CursedSails_ShipwrightSue_PreCursedSails_C: public BP_Shipwright_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_Campaign005_CursedSails_ShopkeeperTravis_PreCursedSails_C: public BP_Shopkeeper_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_Campaign005_CursedSails_WeapondealerWhitney_PreCursedSails_C: public BP_Weapondealer_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_Campaign005_CursedSails_ClothingChris_PreCursedSails_C: public BP_Clothing_C
-{
-public:
-};
-
-
-// Size 0x0
 class BP_hair_col_white_01_over_Desc_C: public ClothingDesc
 {
 public:

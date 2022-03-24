@@ -42,6 +42,13 @@ public:
 
 
 // Size 0x0
+class BP_tattoo_set_sakura_01_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_tattoo_s5_01_Desc_C: public ClothingDesc
 {
 public:

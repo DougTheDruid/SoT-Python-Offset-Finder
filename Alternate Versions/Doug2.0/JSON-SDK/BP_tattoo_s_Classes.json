@@ -34,6 +34,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_tattoo_set_sakura_01_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_tattoo_s5_01_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xe0",

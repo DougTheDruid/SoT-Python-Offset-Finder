@@ -6,13 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x1
-class BP_VotableTaleProposal_Vertical_C: public None
-{
-public:
-};
-
-
 // Size 0x50
 class BP_VotableTaleProposal_C: public VotableObjectView
 {
