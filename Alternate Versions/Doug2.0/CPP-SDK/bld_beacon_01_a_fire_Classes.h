@@ -11,6 +11,8 @@ class bld_beacon_01_a_fire_C: public StaticMeshActor
 {
 public:
 	Struct PointerToUberGraphFrame                               None;                                              // 0x3e0(0x8)
+	Class PointLightComponent*                                   None;                                              // 0x3e8(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x3f0(0x8)
 };
 
 

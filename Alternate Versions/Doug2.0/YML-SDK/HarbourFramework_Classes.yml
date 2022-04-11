@@ -3,12 +3,12 @@
 HarbourComponent:
   Attributes:
   - Name: HarbourRadiusInCentimetres
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x4'
     Type: float
   ClassSize: '0x30'
-  FullSize: '0x300'
-  InheritedSize: '0x2d0'
+  FullSize: '0x310'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 HarbourInterface:
   Attributes: []

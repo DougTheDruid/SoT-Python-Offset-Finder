@@ -848,6 +848,13 @@ public:
 };
 
 
+// Size 0x4
+struct Float_NetQuantized
+{
+public:
+};
+
+
 // Size 0xc
 struct Vector_NetQuantize10
 {

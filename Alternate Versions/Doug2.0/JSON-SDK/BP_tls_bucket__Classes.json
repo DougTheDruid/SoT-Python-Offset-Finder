@@ -21,27 +21,34 @@
     "Attributes": []
   },
   "BP_tls_bucket_bdg_01_a_ItemInfo_C": {
-    "Super": "None",
-    "FullSize": "0x300",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x300",
+    "Super": "ItemInfo",
+    "FullSize": "0x508",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x8",
     "Attributes": []
   },
   "BP_tls_bucket_bdg_01_a_Wieldable_C": {
-    "Super": "None",
-    "FullSize": "0x300",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x300",
-    "Attributes": []
+    "Super": "EventWieldableItemUseStoppedAndFullyHidden",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x10",
+    "ClassSize": "-0x11",
+    "Attributes": [
+      {
+        "Name": "ByteProperty",
+        "Type": "byte",
+        "Size": "0x0",
+        "Offset": "0x1ac"
+      }
+    ]
   },
-  "BP_tls_bucket_s06_01_a_ItemDesc_C": {
+  "BP_tls_bucket_wth_01_a_v01_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_tls_bucket_wth_01_a_v01_ItemDesc_C": {
+  "BP_tls_bucket_s06_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",

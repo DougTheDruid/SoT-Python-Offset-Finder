@@ -105,8 +105,8 @@ BreakableActorDynamicMaterialComponent:
 BreakableActorItemSpawnComponent:
   Attributes: []
   ClassSize: '0x70'
-  FullSize: '0x4a0'
-  InheritedSize: '0x430'
+  FullSize: '0x4b0'
+  InheritedSize: '0x440'
   Super: ItemSpawnComponent
 BreakableActorVfxComponent:
   Attributes:

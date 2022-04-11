@@ -5,34 +5,34 @@ BP_TreasureChest_GoldHoarderLocked_Base_Proxy_C:
   ClassSize: '0x0'
   FullSize: '0x941'
   InheritedSize: '0x941'
-  Super: BP_CollectorsChest_OneLock_Proxy_C
+  Super: None
 BP_TreasureChest_GoldHoarderLocked_Base_Wieldable_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x850'
   InheritedSize: '0x850'
-  Super: BP_CollectorsChest_OneLock_Wieldable_C
+  Super: None
 BP_TreasureChest_Proxy_Common_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x941'
   InheritedSize: '0x941'
-  Super: BP_TreasureChest_GoldHoarderLocked_Base_Proxy_C
+  Super: None
 BP_TreasureChest_Proxy_Rare_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x941'
   InheritedSize: '0x941'
-  Super: BP_TreasureChest_GoldHoarderLocked_Base_Proxy_C
+  Super: None
 BP_TreasureChest_Wieldable_Common_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x850'
   InheritedSize: '0x850'
-  Super: BP_TreasureChest_GoldHoarderLocked_Base_Wieldable_C
+  Super: None
 BP_TreasureChest_Wieldable_Rare_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x850'
   InheritedSize: '0x850'
-  Super: BP_TreasureChest_GoldHoarderLocked_Base_Wieldable_C
+  Super: None

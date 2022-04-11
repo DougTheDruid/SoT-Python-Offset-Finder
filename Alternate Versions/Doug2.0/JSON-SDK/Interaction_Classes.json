@@ -88,15 +88,15 @@
   },
   "CharacterInteractionComponent": {
     "Super": "BoxComponent",
-    "FullSize": "0x6a0",
-    "InheritedSize": "0x5e0",
+    "FullSize": "0x6b0",
+    "InheritedSize": "0x5f0",
     "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "CurrentOptimalInteractable",
         "Type": "Class InteractableArea*",
         "Size": "0x8",
-        "Offset": "0x5e0"
+        "Offset": "0x5f0"
       }
     ]
   },

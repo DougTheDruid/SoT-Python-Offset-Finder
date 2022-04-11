@@ -2,23 +2,19 @@
 # https://github.com/DougTheDruid
 wld_bush_cluster_03_c_C:
   Attributes:
-  - Name: wsp_bush_08_c
-    Offset: '0x410'
+  - Name: Replenishable
+    Offset: '0x4c0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: wld_bush_03_a
-    Offset: '0x418'
+    Type: Class ReplenishableComponent*
+  - Name: IslandTelemetrySubject
+    Offset: '0x4c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: wsp_bush_07_a_01
-    Offset: '0x420'
+    Type: Class IslandTelemetrySubjectComponent*
+  - Name: StorageContainer
+    Offset: '0x4d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Scene
-    Offset: '0x428'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x20'
-  FullSize: '0x430'
-  InheritedSize: '0x410'
-  Super: BP_Placement_HeightDrop_C
+    Type: Class StorageContainerComponent*
+  ClassSize: '0x18'
+  FullSize: '0x4d8'
+  InheritedSize: '0x4c0'
+  Super: StorageContainer

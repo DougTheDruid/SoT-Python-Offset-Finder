@@ -307,6 +307,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "ALK_WieldableObject_Jar_C": {
+    "Super": "WieldableItemAnimationStoreId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ALK_WieldableObject_Key_C": {
     "Super": "WieldableItemAnimationStoreId",
     "FullSize": "0x28",

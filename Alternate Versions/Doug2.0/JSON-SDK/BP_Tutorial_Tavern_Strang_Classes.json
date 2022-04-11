@@ -6,46 +6,34 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x7c8"
       },
       {
-        "Name": "SolidHits",
+        "Name": "None",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x7d0"
       },
       {
-        "Name": "StaticMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7d8"
       },
       {
-        "Name": "NPCDialog",
+        "Name": "None",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x7e0"
       },
       {
-        "Name": "AnimNotifyWwiseEmitter",
+        "Name": "None",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x7e8"
-      },
-      {
-        "Name": "MysteriousStranger",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x7f0"
-      },
-      {
-        "Name": "CutSceneActor",
-        "Type": "Class CutSceneActor*",
-        "Size": "0x8",
-        "Offset": "0x828"
       }
     ]
   },

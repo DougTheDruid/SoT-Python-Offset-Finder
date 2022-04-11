@@ -6,14 +6,16 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x59
-class BP_Audio_Play_Wwise_Event_C: public BP_Grenade_Wieldable_C
+// Size 0x38
+class BP_Audio_Play_Wwise_Event_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x8a8(0x8)
-	Class PointLightComponent*                                   PointLight;                                        // 0x8b0(0x8)
-	Struct ObjectMessagingHandle                                 OnWieldedHandle;                                   // 0x8b8(0x48)
-	bool                                                         IsWielded;                                         // 0x900(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d0(0x8)
+	Class WwiseEmitterComponent*                                 BPAudioEvent;                                      // 0x3d8(0x8)
+	TArray<class WwiseEvent*>                                    WwiseEvent;                                        // 0x3e0(0x10)
+	struct FName                                                 Wwise Game Parameter;                              // 0x3f0(0x8)
+	float                                                        Wwise Game Parameter Value;                        // 0x3f8(0x4)
+	Class WwiseObjectPoolWrapper*                                Wwise Object Pool Wrapper;                         // 0x400(0x8)
 };
 
 

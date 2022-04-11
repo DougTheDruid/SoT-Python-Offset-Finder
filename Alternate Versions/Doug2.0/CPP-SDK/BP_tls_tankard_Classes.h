@@ -48,22 +48,15 @@ public:
 };
 
 
-// Size -0x1
-class BP_tls_tankard_yr1_leg_01_a_ItemInfo_C: public None
+// Size 0x0
+class BP_tls_tankard_yr1_leg_01_a_ItemInfo_C: public ShipInternalWater
 {
 public:
 };
 
 
-// Size 0x0
-class BP_tls_tankard_yr1_leg_01_a_Wieldable_C: public BP_Tankard_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_tls_tankard_s5_01_a_ItemDesc_C: public ItemDesc
+// Size 0x10
+class BP_tls_tankard_yr1_leg_01_a_Wieldable_C: public None
 {
 public:
 };
@@ -78,6 +71,13 @@ public:
 
 // Size 0x0
 class BP_tls_tankard_wth_01_a_v01_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_tls_tankard_s5_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

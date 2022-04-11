@@ -109,28 +109,28 @@
   },
   "WindZoneComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x360",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x370",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "TurbulenceParams",
         "Type": "Struct WindTurbulenceParameters",
         "Size": "0x70",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       },
       {
         "Name": "WindZoneParams",
         "Type": "Struct WindZoneParams",
         "Size": "0x10",
-        "Offset": "0x348"
+        "Offset": "0x358"
       }
     ]
   },
   "TestWindZoneComponent": {
     "Super": "WindZoneComponent",
-    "FullSize": "0x360",
-    "InheritedSize": "0x360",
+    "FullSize": "0x370",
+    "InheritedSize": "0x370",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -1701,104 +1701,104 @@ WidgetBlueprintLibrary:
 WidgetComponent:
   Attributes:
   - Name: Space
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x1'
     Type: byte
   - Name: WidgetClass
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x8'
     Type: class
   - Name: DrawSize
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x8'
     Type: Struct IntPoint
   - Name: Pivot
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x8'
     Type: Struct Vector2D
   - Name: MaxInteractionDistance
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0x4'
     Type: float
   - Name: OwnerPlayer
-    Offset: '0x5d0'
+    Offset: '0x5e0'
     Size: '0x8'
     Type: Class LocalPlayer*
   - Name: BackgroundColor
-    Offset: '0x5d8'
+    Offset: '0x5e8'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: BlendMode
-    Offset: '0x5e8'
+    Offset: '0x5f8'
     Size: '0x1'
     Type: byte
   - Name: bIsOpaque
-    Offset: '0x5e9'
+    Offset: '0x5f9'
     Size: '0x1'
     Type: bool
   - Name: bIsTwoSided
-    Offset: '0x5ea'
+    Offset: '0x5fa'
     Size: '0x1'
     Type: bool
   - Name: ParabolaDistortion
-    Offset: '0x5ec'
+    Offset: '0x5fc'
     Size: '0x4'
     Type: float
   - Name: TickWhenOffscreen
-    Offset: '0x5f0'
+    Offset: '0x600'
     Size: '0x1'
     Type: bool
   - Name: Widget
-    Offset: '0x5f8'
+    Offset: '0x608'
     Size: '0x8'
     Type: Class UserWidget*
   - Name: BodySetup
-    Offset: '0x600'
+    Offset: '0x610'
     Size: '0x8'
     Type: Class BodySetup*
   - Name: TranslucentMaterial
-    Offset: '0x608'
-    Size: '0x8'
-    Type: Class MaterialInterface*
-  - Name: TranslucentMaterial_OneSided
-    Offset: '0x610'
-    Size: '0x8'
-    Type: Class MaterialInterface*
-  - Name: OpaqueMaterial
     Offset: '0x618'
     Size: '0x8'
     Type: Class MaterialInterface*
-  - Name: OpaqueMaterial_OneSided
+  - Name: TranslucentMaterial_OneSided
     Offset: '0x620'
     Size: '0x8'
     Type: Class MaterialInterface*
-  - Name: MaskedMaterial
+  - Name: OpaqueMaterial
     Offset: '0x628'
     Size: '0x8'
     Type: Class MaterialInterface*
-  - Name: MaskedMaterial_OneSided
+  - Name: OpaqueMaterial_OneSided
     Offset: '0x630'
     Size: '0x8'
     Type: Class MaterialInterface*
-  - Name: RenderTarget
+  - Name: MaskedMaterial
     Offset: '0x638'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: MaskedMaterial_OneSided
+    Offset: '0x640'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: RenderTarget
+    Offset: '0x648'
     Size: '0x8'
     Type: Class TextureRenderTarget2D*
   - Name: MaterialInstance
-    Offset: '0x640'
+    Offset: '0x650'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: bUseLegacyRotation
-    Offset: '0x648'
+    Offset: '0x658'
     Size: '0x1'
     Type: bool
   - Name: bAddedToScreen
-    Offset: '0x649'
+    Offset: '0x659'
     Size: '0x1'
     Type: bool
   ClassSize: '0xf0'
-  FullSize: '0x6a0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x6b0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 WidgetLayoutLibrary:
   Attributes: []

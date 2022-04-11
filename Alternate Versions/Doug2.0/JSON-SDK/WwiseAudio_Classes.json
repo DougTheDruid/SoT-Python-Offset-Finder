@@ -126,9 +126,9 @@
   },
   "WwiseAudioSettings": {
     "Super": "Object",
-    "FullSize": "0x3e8",
+    "FullSize": "0x408",
     "InheritedSize": "0x28",
-    "ClassSize": "0x3c0",
+    "ClassSize": "0x3e0",
     "Attributes": [
       {
         "Name": "ReverbPresetSettings",
@@ -167,136 +167,142 @@
         "Offset": "0x1b8"
       },
       {
-        "Name": "WwiseStreamedFilesDirectory",
-        "Type": "Struct DirectoryPath",
+        "Name": "WwiseFileHashDatabase",
+        "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x1c8"
+      },
+      {
+        "Name": "WwiseStreamedFilesRoot",
+        "Type": "Struct DirectoryPath",
+        "Size": "0x10",
+        "Offset": "0x1d8"
       },
       {
         "Name": "AsyncIOPriorityMappings",
         "Type": "TArray<Struct WwiseIOPriorityMappingConfig>",
         "Size": "0x10",
-        "Offset": "0x1d8"
+        "Offset": "0x1e8"
       },
       {
         "Name": "TritonAcousticMapsDirectory",
         "Type": "Struct DirectoryPath",
         "Size": "0x10",
-        "Offset": "0x1e8"
+        "Offset": "0x1f8"
       },
       {
         "Name": "DefaultLanguage",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x1f8"
+        "Offset": "0x208"
       },
       {
         "Name": "SinkSharesetName",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x208"
+        "Offset": "0x218"
       },
       {
         "Name": "PauseEventStart",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x218"
+        "Offset": "0x228"
       },
       {
         "Name": "PauseEventRelease",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x228"
+        "Offset": "0x238"
       },
       {
         "Name": "StopAllEvent",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x238"
+        "Offset": "0x248"
       },
       {
         "Name": "NetworkRelationship",
         "Type": "Struct WwiseNetworkRelationship",
         "Size": "0x18",
-        "Offset": "0x248"
+        "Offset": "0x258"
       },
       {
         "Name": "AudioStateSettings",
         "Type": "Struct WwiseAudioGameStateSettings",
         "Size": "0xa0",
-        "Offset": "0x260"
+        "Offset": "0x270"
       },
       {
         "Name": "PauseEventStartInstance",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x308"
+        "Offset": "0x318"
       },
       {
         "Name": "PauseEventReleaseInstance",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x310"
+        "Offset": "0x320"
       },
       {
         "Name": "StopAllEventInstance",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x318"
+        "Offset": "0x328"
       },
       {
         "Name": "AnimNotifyPoolInstance",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x320"
+        "Offset": "0x330"
       },
       {
         "Name": "EventsToPlayOnFrontendStartInstance",
         "Type": "TArray<class EventsToPlayOnFrontendStartInstance*>",
         "Size": "0x10",
-        "Offset": "0x368"
+        "Offset": "0x388"
       },
       {
         "Name": "EventsToPlayOnFrontendEndInstance",
         "Type": "TArray<class EventsToPlayOnFrontendEndInstance*>",
         "Size": "0x10",
-        "Offset": "0x378"
+        "Offset": "0x398"
       },
       {
         "Name": "EventsToPlayOnStartEngagementInstance",
         "Type": "TArray<class EventsToPlayOnStartEngagementInstance*>",
         "Size": "0x10",
-        "Offset": "0x388"
+        "Offset": "0x3a8"
       },
       {
         "Name": "EventsToPlayOnEndEngagementInstance",
         "Type": "TArray<class EventsToPlayOnEndEngagementInstance*>",
         "Size": "0x10",
-        "Offset": "0x398"
+        "Offset": "0x3b8"
       },
       {
         "Name": "EventsToPlayOnLoadingStartInstance",
         "Type": "TArray<class EventsToPlayOnLoadingStartInstance*>",
         "Size": "0x10",
-        "Offset": "0x3a8"
+        "Offset": "0x3c8"
       },
       {
         "Name": "EventsToPlayOnLoadingEndInstance",
         "Type": "TArray<class EventsToPlayOnLoadingEndInstance*>",
         "Size": "0x10",
-        "Offset": "0x3b8"
+        "Offset": "0x3d8"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingStartInstance",
         "Type": "TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>",
         "Size": "0x10",
-        "Offset": "0x3c8"
+        "Offset": "0x3e8"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingEndInstance",
         "Type": "TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>",
         "Size": "0x10",
-        "Offset": "0x3d8"
+        "Offset": "0x3f8"
       }
     ]
   },

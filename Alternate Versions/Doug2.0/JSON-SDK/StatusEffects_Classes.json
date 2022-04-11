@@ -393,21 +393,21 @@
   },
   "StatusEffectVolumeComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x2f0",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x300",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "UseOverlapEventsFromParentComponent",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2d0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "StatusEffectsToMaintain",
         "Type": "TArray<Struct Status>",
         "Size": "0x10",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       }
     ]
   },

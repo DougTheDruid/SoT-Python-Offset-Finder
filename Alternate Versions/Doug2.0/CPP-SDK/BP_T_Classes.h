@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_TreasureChest_ItemInfo_Common_C: public BP_TreasureChest_GoldHoarderLockable_Base_ItemInfo_C
+class BP_TreasureChest_ItemInfo_Common_C: public None
 {
 public:
 };
@@ -17,39 +17,13 @@ public:
 class BP_TreasureChest_GoldHoarderLockable_Base_ItemInfo_C: public LockedCollectorsChestItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x7b8(0x8)
-};
-
-
-// Size 0x0
-class BP_Treasure_Artifact_Proxy_impressive_01_a_C: public BP_TreasureArtifact_Proxy_Base_C
-{
-public:
 };
 
 
 // Size 0x10
-class BP_TreasureArtifact_Proxy_Base_C: public StaticSimpleBootyItemProxy
+class BP_TreasureArtifact_Proxy_Base_C: public None
 {
 public:
-	Class GlintComponent*                                        GlintComponent;                                    // 0x7b8(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x7c0(0x8)
-};
-
-
-// Size 0x48
-class BP_TavernBoard_C: public TavernBoard
-{
-public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x550(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem2;                                   // 0x558(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem1;                                   // 0x560(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem;                                    // 0x568(0x8)
-	Class PointLightComponent*                                   PointLight1;                                       // 0x570(0x8)
-	Class PointLightComponent*                                   PointLight;                                        // 0x578(0x8)
-	Class StaticMeshComponent*                                   bld_jetty_support_b;                               // 0x580(0x8)
-	Class StaticMeshComponent*                                   gmp_messageboard_01_a;                             // 0x588(0x8)
-	Class PlayerGeneratedMapsContainerComponent*                 PlayerGeneratedMapsContainer;                      // 0x590(0x8)
 };
 
 

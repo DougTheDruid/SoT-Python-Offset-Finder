@@ -1,29 +1,28 @@
 {
   "IsStoryActiveNPCDialogConditional": {
     "Super": "NPCDialogConditional",
-    "FullSize": "0x48",
+    "FullSize": "0x40",
     "InheritedSize": "0x30",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "NeedsAllStories",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      }
-    ]
+    "ClassSize": "0x10",
+    "Attributes": []
   },
   "StoryNPCDialogConditionalContext": {
     "Super": "NPCDialogConditionalContext",
-    "FullSize": "0x38",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "StoryNames",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "NeedsAllStories",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
       }
     ]
   },
@@ -75,6 +74,48 @@
       }
     ]
   },
+  "StorySpawnedActorsComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "AssetsCollection",
+        "Type": "Class StorySpawnedActorsComponentCollectionDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "StorySpawnedActorsComponentCollectionDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StorySpawnedActorsAssetList",
+        "Type": "TArray<class StorySpawnedActorsAssetList*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "StorySpawnedActorsComponentDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StorySpawnedActorsList",
+        "Type": "TArray<Struct StorySpawnedNamedPointsList>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "StorySpawnedActorsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -98,15 +139,21 @@
   },
   "StorySpawnedActorsService": {
     "Super": "Actor",
-    "FullSize": "0x4b8",
+    "FullSize": "0x5d8",
     "InheritedSize": "0x3d0",
-    "ClassSize": "0xe8",
+    "ClassSize": "0x208",
     "Attributes": [
+      {
+        "Name": "GlobalSpawnedActors",
+        "Type": "Struct StoriesToSpawnedActorsListContainer",
+        "Size": "0x50",
+        "Offset": "0x3d8"
+      },
       {
         "Name": "Asset",
         "Type": "Class StorySpawnedActorsCollectionDataAsset*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x4c8"
       }
     ]
   },

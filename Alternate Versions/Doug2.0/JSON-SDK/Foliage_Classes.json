@@ -1,8 +1,8 @@
 {
   "FoliageInstancedStaticMeshComponent": {
     "Super": "HierarchicalInstancedStaticMeshComponent",
-    "FullSize": "0x7b0",
-    "InheritedSize": "0x790",
+    "FullSize": "0x7c0",
+    "InheritedSize": "0x7a0",
     "ClassSize": "0x20",
     "Attributes": []
   },
@@ -586,8 +586,8 @@
   },
   "InteractiveFoliageComponent": {
     "Super": "StaticMeshComponent",
-    "FullSize": "0x620",
-    "InheritedSize": "0x610",
+    "FullSize": "0x630",
+    "InheritedSize": "0x620",
     "ClassSize": "0x10",
     "Attributes": []
   },

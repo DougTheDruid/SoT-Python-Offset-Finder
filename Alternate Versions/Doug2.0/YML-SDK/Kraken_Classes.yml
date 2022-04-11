@@ -394,8 +394,8 @@ KrakenService:
     Offset: '0x518'
     Size: '0x8'
     Type: Class Kraken*
-  ClassSize: '0x220'
-  FullSize: '0x5f0'
+  ClassSize: '0x230'
+  FullSize: '0x600'
   InheritedSize: '0x3d0'
   Super: Actor
 KrakenServiceInterface:
@@ -437,24 +437,24 @@ KrakenShipWrappingBehaviourParamsDataAsset:
 KrakenShipWrappingKnockbackRegionComponent:
   Attributes:
   - Name: KnockbackRegion
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: KnockbackDirection
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0xc'
     Type: Struct Vector
   - Name: KnockbackTime
-    Offset: '0x2e4'
+    Offset: '0x2f4'
     Size: '0x4'
     Type: float
   - Name: KnockbackParams
-    Offset: '0x2e8'
+    Offset: '0x2f8'
     Size: '0x50'
     Type: Struct KnockBackInfo
   ClassSize: '0xa0'
-  FullSize: '0x370'
-  InheritedSize: '0x2d0'
+  FullSize: '0x380'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 KrakenShipWrappingTentacle:
   Attributes:

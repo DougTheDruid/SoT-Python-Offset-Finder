@@ -6,7 +6,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "BoneMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
@@ -20,7 +20,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "gmp_bounty_skull_01_b",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
@@ -34,25 +34,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ptn_pois_stop_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "2",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "1\u6d89\u023b\u0000\ua13a\b\u034c\u0000\u2940\u1f6b\u023b\u0000\u5f31\u4547\u5f4e\u4156\u4952\u4241\u454c\u0000\ua13c\b\u0f72\u0000\ud5a8\u8cf3\u023b\u00002",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
@@ -66,25 +66,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ptn_pois_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "2",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "1\u6d89\u023b\u0000\ua13a\b\u034c\u0000\u2940\u1f6b\u023b\u0000\u5f31\u4547\u5f4e\u4156\u4952\u4241\u454c\u0000\ua13c\b\u0f72\u0000\ud5a8\u8cf3\u023b\u00002",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
@@ -98,13 +98,13 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "StaticMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
@@ -118,13 +118,13 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Effigy_R",
+        "Name": "None",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
@@ -138,13 +138,13 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "StaticMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
@@ -158,13 +158,13 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Effigy_L",
+        "Name": "None",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"

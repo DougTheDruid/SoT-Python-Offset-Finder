@@ -3,6 +3,17 @@
 ActorSpawnedAutomationEvent:
   Attributes: []
   ClassSize: '0x8'
+BodyFramePair:
+  Attributes:
+  - Name: Frame
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class TaleQuestIndexedFrame*
+  - Name: Body
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class TaleQuestStep*
+  ClassSize: '0x20'
 CriticalActorDelegateData:
   Attributes:
   - Name: CriticalActor
@@ -119,6 +130,9 @@ QuestVariableClassArray:
   Attributes: []
   ClassSize: '0x20'
 QuestVariableCollection:
+  Attributes: []
+  ClassSize: '0x20'
+QuestVariableGuidArray:
   Attributes: []
   ClassSize: '0x20'
 QuestVariableItemDescType:

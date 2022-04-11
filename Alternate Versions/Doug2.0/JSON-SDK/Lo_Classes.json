@@ -1,17 +1,10 @@
 {
   "BP_SkullRitual_Skull_C": {
-    "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "trs_briggsys_skull_01_c",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "0x313504f2",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x313504f2",
+    "Attributes": []
   },
   "BP_SkullRitual_Pipe_C": {
     "Super": "Actor",
@@ -20,7 +13,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "gmp_sm_pipe_oos_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"

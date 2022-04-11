@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BarrelItemTypes_Cannonball_C: public CannonballItemCategory
+class BarrelItemTypes_Wood_C: public CannonballItemCategory
 {
 public:
 };
@@ -21,7 +21,7 @@ public:
 
 
 // Size 0x0
-class BarrelItemTypes_Wood_C: public CannonballItemCategory
+class BarrelItemTypes_Cannonball_C: public CannonballItemCategory
 {
 public:
 };

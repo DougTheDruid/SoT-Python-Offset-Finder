@@ -16,4 +16,12 @@ public:
 };
 
 
+// Size 0x8
+struct EventAttachedRetractableToItemProxy
+{
+public:
+	Class Actor*                                                 Item;                                              // 0x0(0x8)
+};
+
+
 }

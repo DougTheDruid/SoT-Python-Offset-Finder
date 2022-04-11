@@ -153,6 +153,13 @@ public:
 
 
 // Size 0x20
+struct QuestVariableGuidArray
+{
+public:
+};
+
+
+// Size 0x20
 struct QuestVariableActorArray
 {
 public:
@@ -214,6 +221,15 @@ public:
 struct QuestVariableActorAssetType
 {
 public:
+};
+
+
+// Size 0x20
+struct BodyFramePair
+{
+public:
+	Class TaleQuestIndexedFrame*                                 Frame;                                             // 0x10(0x8)
+	Class TaleQuestStep*                                         Body;                                              // 0x18(0x8)
 };
 
 

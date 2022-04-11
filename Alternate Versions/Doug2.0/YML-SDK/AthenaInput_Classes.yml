@@ -6,85 +6,15 @@ AnalogInputId:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
-CrewNameplatesToggleInputId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: NotificationInputId
-NamedNotificationInputComponent:
-  Attributes:
-  - Name: NotificationInputDisplayNames
-    Offset: '0xd0'
-    Size: '0x10'
-    Type: TArray<Struct NotificationInputDisplayName>
-  ClassSize: '0x18'
-  FullSize: '0xe0'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
-NamedNotificationInputInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 NotificationInputId:
   Attributes: []
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
-OpenQuickMenuNotificationInputId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: NotificationInputId
-PressedNotificationInputId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: NotificationInputId
 ReceivesInputInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
-ReleasedNotificationInputId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: NotificationInputId
-ScrambleGamertagsToggleInputId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: NotificationInputId
-TestAnalogInput2Id:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: AnalogInputId
-TestAnalogInputId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: AnalogInputId
-TestNotificationInput2Id:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: NotificationInputId
-TestNotificationInputId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: NotificationInputId

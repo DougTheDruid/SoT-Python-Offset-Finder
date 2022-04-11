@@ -6,18 +6,18 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_msc_banjo_smp_01_a_ItemInfo_C": {
-    "Super": "",
-    "FullSize": "-0x1",
-    "InheritedSize": "-0x67ac0000",
-    "ClassSize": "0x67abffff",
+  "BP_msc_banjo_smp_01_a_v01_ItemInfo_C": {
+    "Super": "ItemInfo",
+    "FullSize": "0x508",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x8",
     "Attributes": []
   },
-  "BP_msc_banjo_smp_01_a_Wieldable_C": {
-    "Super": "",
-    "FullSize": "-0x1",
-    "InheritedSize": "-0x67ac0000",
-    "ClassSize": "0x67abffff",
+  "BP_msc_banjo_smp_01_a_v01_Wieldable_C": {
+    "Super": "None",
+    "FullSize": "0x8d8",
+    "InheritedSize": "0x8c0",
+    "ClassSize": "0x18",
     "Attributes": []
   },
   "BP_msc_banjo_smp_01_a_ItemDesc_C": {

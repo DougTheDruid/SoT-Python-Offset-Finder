@@ -301,12 +301,12 @@ ClueDestinationContainerInterface:
 ClueSiteCircleMapWieldable:
   Attributes:
   - Name: MapRadialIconData
-    Offset: '0x868'
+    Offset: '0x860'
     Size: '0x18'
     Type: Struct MapRadialIconData
-  ClassSize: '0x30'
+  ClassSize: '0x40'
   FullSize: '0x880'
-  InheritedSize: '0x850'
+  InheritedSize: '0x840'
   Super: RenderToTextureMapBase
 ClueTitleInterface:
   Attributes: []
@@ -455,8 +455,8 @@ LostShipwreckClueDestinationDescriptor:
 MerchantCaptainSpawnComponent:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0x440'
-  InheritedSize: '0x430'
+  FullSize: '0x450'
+  InheritedSize: '0x440'
   Super: ItemSpawnComponent
 MerchantCaptainSpawnInterface:
   Attributes: []

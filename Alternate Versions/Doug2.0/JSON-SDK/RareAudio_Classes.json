@@ -1,28 +1,28 @@
 {
   "WwiseEmitterComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x310",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Emitter",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       },
       {
         "Name": "WwiseObjectPoolWrapper",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x2f8"
+        "Offset": "0x308"
       }
     ]
   },
   "AnimNotifyWwiseEmitterComponent": {
     "Super": "WwiseEmitterComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x300",
+    "FullSize": "0x310",
+    "InheritedSize": "0x310",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -193,45 +193,45 @@
   },
   "AudioPortalComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x310",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "AudioInsideSpace",
         "Type": "Class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x2d0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "AudioOutsideSpace",
         "Type": "Class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       },
       {
         "Name": "PortalTriggerDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2e0"
+        "Offset": "0x2f0"
       },
       {
         "Name": "InsideRtpcUpdateDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2e4"
+        "Offset": "0x2f4"
       },
       {
         "Name": "OutsideRtpcUpdateDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2e8"
+        "Offset": "0x2f8"
       },
       {
         "Name": "TrackAttachmentToActor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2ec"
+        "Offset": "0x2fc"
       }
     ]
   },
@@ -251,15 +251,15 @@
   },
   "AudioSpaceComponent": {
     "Super": "StaticMeshComponent",
-    "FullSize": "0x620",
-    "InheritedSize": "0x610",
+    "FullSize": "0x630",
+    "InheritedSize": "0x620",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "AudioSpace",
         "Type": "Class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x610"
+        "Offset": "0x620"
       }
     ]
   },
@@ -326,15 +326,15 @@
   },
   "StaticMeshAudioEmittersComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x2e0",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x2f0",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "InstanceAssociations",
         "Type": "TArray<Struct StaticMeshComponentAudioAssociation>",
         "Size": "0x10",
-        "Offset": "0x2d0"
+        "Offset": "0x2e0"
       }
     ]
   },
@@ -354,21 +354,21 @@
   },
   "TritonComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x2e0",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x2f0",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "TritonMapAsset",
         "Type": "Class TritonAcousticMap*",
         "Size": "0x8",
-        "Offset": "0x2d0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "TritonEffectRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       }
     ]
   },

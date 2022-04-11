@@ -1,8 +1,8 @@
 {
   "FireworkAmbientLightComponent": {
     "Super": "AmbientLightSourceComponent",
-    "FullSize": "0x4e0",
-    "InheritedSize": "0x490",
+    "FullSize": "0x4f0",
+    "InheritedSize": "0x4a0",
     "ClassSize": "0x50",
     "Attributes": []
   },

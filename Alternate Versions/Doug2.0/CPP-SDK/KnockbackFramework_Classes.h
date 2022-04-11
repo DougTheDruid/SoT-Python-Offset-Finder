@@ -17,13 +17,13 @@ public:
 class KnockbackColliderComponent: public BoxComponent
 {
 public:
-	Struct CollisionProfileName                                  SolidCollisionProfile;                             // 0x5d8(0x8)
-	Struct CollisionProfileName                                  KnockbackTraceProfile;                             // 0x5e0(0x8)
-	byte                                                         KnockbackType;                                     // 0x5e8(0x1)
-	Struct KnockBackInfo                                         KnockbackParams;                                   // 0x5ec(0x50)
-	class                                                        KnockbackDamageType;                               // 0x648(0x8)
-	float                                                        KnockbackInterval;                                 // 0x650(0x4)
-	byte                                                         SolidState;                                        // 0x658(0x1)
+	Struct CollisionProfileName                                  SolidCollisionProfile;                             // 0x5e8(0x8)
+	Struct CollisionProfileName                                  KnockbackTraceProfile;                             // 0x5f0(0x8)
+	byte                                                         KnockbackType;                                     // 0x5f8(0x1)
+	Struct KnockBackInfo                                         KnockbackParams;                                   // 0x5fc(0x50)
+	class                                                        KnockbackDamageType;                               // 0x658(0x8)
+	float                                                        KnockbackInterval;                                 // 0x660(0x4)
+	byte                                                         SolidState;                                        // 0x668(0x1)
 };
 
 

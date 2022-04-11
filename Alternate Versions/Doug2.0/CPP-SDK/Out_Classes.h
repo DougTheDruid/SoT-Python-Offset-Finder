@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_OutpostCrate_bld_shop_wood_box_03_a_C: public StorageContainer
 {
 public:
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
-	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
+	Class ReplenishableComponent*                                None;                                              // 0x4c0(0x8)
+	Class IslandTelemetrySubjectComponent*                       None;                                              // 0x4c8(0x8)
+	Class StorageContainerComponent*                             None;                                              // 0x4d0(0x8)
 };
 
 
@@ -20,9 +20,9 @@ public:
 class BP_OutpostCrate_bld_shop_wood_box_02_a_C: public StorageContainer
 {
 public:
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
-	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
+	Class ReplenishableComponent*                                None;                                              // 0x4c0(0x8)
+	Class IslandTelemetrySubjectComponent*                       None;                                              // 0x4c8(0x8)
+	Class StorageContainerComponent*                             None;                                              // 0x4d0(0x8)
 };
 
 
@@ -30,9 +30,6 @@ public:
 class BP_OutpostCrate_bld_shop_wood_box_01_a_C: public StorageContainer
 {
 public:
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
-	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
 };
 
 

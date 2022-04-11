@@ -242,8 +242,8 @@ public:
 class StatusEffectVolumeComponent: public SceneComponent
 {
 public:
-	bool                                                         UseOverlapEventsFromParentComponent;               // 0x2d0(0x1)
-	TArray<Struct Status>                                        StatusEffectsToMaintain;                           // 0x2d8(0x10)
+	bool                                                         UseOverlapEventsFromParentComponent;               // 0x2e0(0x1)
+	TArray<Struct Status>                                        StatusEffectsToMaintain;                           // 0x2e8(0x10)
 };
 
 

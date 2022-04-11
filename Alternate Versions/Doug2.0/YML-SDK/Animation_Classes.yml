@@ -431,8 +431,8 @@ CharacterIKInterface:
 ClientSkeletalMeshComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x9b0'
-  InheritedSize: '0x9b0'
+  FullSize: '0x9c0'
+  InheritedSize: '0x9c0'
   Super: SkeletalMeshComponent
 CosmeticItemActor:
   Attributes:

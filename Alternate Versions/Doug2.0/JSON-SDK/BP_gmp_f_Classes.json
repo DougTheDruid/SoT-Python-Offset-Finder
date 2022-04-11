@@ -7,34 +7,27 @@
     "Attributes": []
   },
   "BP_gmp_fishing_rod_bdg_01_a_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      }
-    ]
-  },
-  "BP_gmp_fishing_rod_bdg_01_a_Wieldable_C": {
-    "Super": "BP_FishingRod_C",
-    "FullSize": "0xba0",
-    "InheritedSize": "0xba0",
-    "ClassSize": "0x0",
+    "Super": "VectorProperty",
+    "FullSize": "-0x2031b860",
+    "InheritedSize": "0x1",
+    "ClassSize": "-0x2031b861",
     "Attributes": []
   },
-  "BP_gmp_fishing_rod_s5_01_a_ItemDesc_C": {
+  "BP_gmp_fishing_rod_bdg_01_a_Wieldable_C": {
+    "Super": "VectorProperty",
+    "FullSize": "-0x20310b80",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x20310b80",
+    "Attributes": []
+  },
+  "BP_gmp_fishing_rod_spl_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_gmp_fishing_rod_spl_01_a_ItemDesc_C": {
+  "BP_gmp_fishing_rod_s5_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",

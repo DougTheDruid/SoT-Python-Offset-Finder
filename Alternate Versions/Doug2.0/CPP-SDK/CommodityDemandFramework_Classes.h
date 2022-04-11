@@ -7,6 +7,15 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
+class CommodityTokenEntitlementDesc: public EntitlementDesc
+{
+public:
+	struct FName                                                 NPCToRedeemAt;                                     // 0xd8(0x8)
+	class                                                        ItemToRedeemFor;                                   // 0xe0(0x8)
+};
+
+
+// Size 0x10
 class CommodityDemandFrameworkEditorSettings: public DeveloperSettings
 {
 public:
@@ -108,15 +117,6 @@ class CommoditySourceComponent: public ActorComponent
 {
 public:
 	struct FName                                                 NPCIdentifier;                                     // 0xd0(0x8)
-};
-
-
-// Size 0x10
-class CommodityTokenEntitlementDesc: public EntitlementDesc
-{
-public:
-	struct FName                                                 NPCToRedeemAt;                                     // 0xd8(0x8)
-	class                                                        ItemToRedeemFor;                                   // 0xe0(0x8)
 };
 
 

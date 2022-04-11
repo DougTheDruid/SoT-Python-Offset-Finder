@@ -6,19 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x10
 class IsStoryActiveNPCDialogConditional: public NPCDialogConditional
 {
 public:
-	bool                                                         NeedsAllStories;                                   // 0x30(0x1)
 };
 
 
-// Size 0x10
+// Size 0x18
 class StoryNPCDialogConditionalContext: public NPCDialogConditionalContext
 {
 public:
 	TArray<Struct FName>                                         StoryNames;                                        // 0x28(0x10)
+	bool                                                         NeedsAllStories;                                   // 0x38(0x1)
 };
 
 
@@ -53,6 +53,30 @@ public:
 };
 
 
+// Size 0x30
+class StorySpawnedActorsComponent: public ActorComponent
+{
+public:
+	Class StorySpawnedActorsComponentCollectionDataAsset*        AssetsCollection;                                  // 0xc8(0x8)
+};
+
+
+// Size 0x10
+class StorySpawnedActorsComponentCollectionDataAsset: public DataAsset
+{
+public:
+	TArray<class StorySpawnedActorsAssetList*>                   StorySpawnedActorsAssetList;                       // 0x28(0x10)
+};
+
+
+// Size 0x10
+class StorySpawnedActorsComponentDataAsset: public DataAsset
+{
+public:
+	TArray<Struct StorySpawnedNamedPointsList>                   StorySpawnedActorsList;                            // 0x28(0x10)
+};
+
+
 // Size 0x10
 class StorySpawnedActorsDataAsset: public DataAsset
 {
@@ -68,11 +92,12 @@ public:
 };
 
 
-// Size 0xe8
+// Size 0x208
 class StorySpawnedActorsService: public Actor
 {
 public:
-	Class StorySpawnedActorsCollectionDataAsset*                 Asset;                                             // 0x428(0x8)
+	Struct StoriesToSpawnedActorsListContainer                   GlobalSpawnedActors;                               // 0x3d8(0x50)
+	Class StorySpawnedActorsCollectionDataAsset*                 Asset;                                             // 0x4c8(0x8)
 };
 
 

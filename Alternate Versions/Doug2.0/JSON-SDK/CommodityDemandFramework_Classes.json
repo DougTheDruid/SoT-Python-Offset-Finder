@@ -1,4 +1,24 @@
 {
+  "CommodityTokenEntitlementDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NPCToRedeemAt",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "ItemToRedeemFor",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      }
+    ]
+  },
   "CommodityDemandFrameworkEditorSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x48",
@@ -178,26 +198,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xd0"
-      }
-    ]
-  },
-  "CommodityTokenEntitlementDesc": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xd8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NPCToRedeemAt",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "ItemToRedeemFor",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0xe0"
       }
     ]
   },

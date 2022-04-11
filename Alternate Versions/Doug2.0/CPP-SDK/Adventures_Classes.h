@@ -76,4 +76,109 @@ public:
 };
 
 
+// Size 0x0
+class GHLetter_ExclusionEntitlement_Campaign041_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class HCLetter_ExclusionEntitlement_Campaign041_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class MALetter_ExclusionEntitlement_Campaign041_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class OOSLetter_ExclusionEntitlement_Campaign041_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class SDLetter_ExclusionEntitlement_Campaign041_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class GHLetter_ExclusionEntitlement_Campaign042_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class HCLetter_ExclusionEntitlement_Campaign042_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class MALetter_ExclusionEntitlement_Campaign042_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class OOSLetter_ExclusionEntitlement_Campaign042_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class SDLetter_ExclusionEntitlement_Campaign042_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class GHLetter_ExclusionEntitlement_Campaign043_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class HCLetter_ExclusionEntitlement_Campaign043_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class MALetter_ExclusionEntitlement_Campaign043_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class OOSLetter_ExclusionEntitlement_Campaign043_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class SDLetter_ExclusionEntitlement_Campaign043_C: public EntitlementDesc
+{
+public:
+};
+
+
 }

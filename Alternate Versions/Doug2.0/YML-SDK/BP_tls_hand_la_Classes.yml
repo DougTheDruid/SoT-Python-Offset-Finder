@@ -13,11 +13,7 @@ BP_tls_hand_lantern_fod_02_a_ItemDesc_C:
   InheritedSize: '0x130'
   Super: ItemDesc
 BP_tls_hand_lantern_fod_02_a_ItemInfo_C:
-  Attributes:
-  - Name: DefaultSceneRoot
-    Offset: '0x500'
-    Size: '0x8'
-    Type: Class SceneComponent*
+  Attributes: []
   ClassSize: '0x8'
   FullSize: '0x508'
   InheritedSize: '0x500'
@@ -25,9 +21,9 @@ BP_tls_hand_lantern_fod_02_a_ItemInfo_C:
 BP_tls_hand_lantern_fod_02_a_Wieldable_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x9d8'
-  InheritedSize: '0x9d8'
-  Super: BP_Lantern_C
+  FullSize: '0x9c8'
+  InheritedSize: '0x9c8'
+  Super: None
 BP_tls_hand_lantern_gld_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

@@ -1225,10 +1225,6 @@
       }
     ]
   },
-  "QuestVariableGuidArray": {
-    "ClassSize": "0x20",
-    "Attributes": []
-  },
   "QuestVariableSharkPawn": {
     "ClassSize": "0x20",
     "Attributes": []
@@ -1277,6 +1273,17 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xb4"
+      }
+    ]
+  },
+  "ExperienceTracker": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Tracker",
+        "Type": "Class TaleQuestTinySharkExperienceTracker*",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

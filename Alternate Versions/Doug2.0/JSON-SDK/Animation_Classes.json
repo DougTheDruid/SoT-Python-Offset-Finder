@@ -601,8 +601,8 @@
   },
   "ClientSkeletalMeshComponent": {
     "Super": "SkeletalMeshComponent",
-    "FullSize": "0x9b0",
-    "InheritedSize": "0x9b0",
+    "FullSize": "0x9c0",
+    "InheritedSize": "0x9c0",
     "ClassSize": "0x0",
     "Attributes": []
   },

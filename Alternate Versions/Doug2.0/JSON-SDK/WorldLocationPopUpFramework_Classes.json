@@ -1,33 +1,33 @@
 {
   "WorldLocationPopUpComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x350",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x360",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "PopUpData",
         "Type": "Class WorldLocationPopUpDataAsset*",
         "Size": "0x8",
-        "Offset": "0x2d0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "LocationOverlapVolume",
         "Type": "Class ShapeComponent*",
         "Size": "0x8",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       },
       {
         "Name": "LocationCooldown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2e0"
+        "Offset": "0x2f0"
       },
       {
         "Name": "AlwaysShowPopUp",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2e4"
+        "Offset": "0x2f4"
       }
     ]
   },

@@ -30,7 +30,7 @@ public:
 };
 
 
-// Size 0x400
+// Size 0x408
 class AISpawner: public DataAsset
 {
 public:
@@ -48,7 +48,8 @@ public:
 	int                                                          PriorityForSpawnedPawns;                           // 0xc8(0x4)
 	TArray<Struct ConditionalAISpawnOverride>                    SpawnOverrides;                                    // 0xd0(0x10)
 	TArray<Struct AdditionalSpawnerBehaviour>                    AdditionalBehaviours;                              // 0xe0(0x10)
-	Class AthenaAISettings*                                      AthenaAISettings;                                  // 0x360(0x8)
+	bool                                                         EnforceHomePosition;                               // 0xf0(0x1)
+	Class AthenaAISettings*                                      AthenaAISettings;                                  // 0x368(0x8)
 };
 
 
@@ -56,14 +57,14 @@ public:
 class AIPerCrewSpawner: public AISpawner
 {
 public:
-	Class AIWeightedProbabilityRangeOfRangesRankProgression*     DefaultRespawnTimerRanges;                         // 0x428(0x8)
-	int                                                          MaxNumOfCrewsToSpawnFor;                           // 0x430(0x4)
-	bool                                                         ActivateBySettingFootOnIsland;                     // 0x434(0x1)
-	bool                                                         UseRespawnTimerForFirstSpawn;                      // 0x435(0x1)
-	bool                                                         AssociateSpawnsWithSpecificCrews;                  // 0x436(0x1)
-	bool                                                         PerceiveTriggerActorOnSpawn;                       // 0x437(0x1)
-	bool                                                         EnforceRespawnTimeAfterCrewLeaves;                 // 0x438(0x1)
-	bool                                                         IgnoreSpawningGracePeriodForNewCrew;               // 0x439(0x1)
+	Class AIWeightedProbabilityRangeOfRangesRankProgression*     DefaultRespawnTimerRanges;                         // 0x430(0x8)
+	int                                                          MaxNumOfCrewsToSpawnFor;                           // 0x438(0x4)
+	bool                                                         ActivateBySettingFootOnIsland;                     // 0x43c(0x1)
+	bool                                                         UseRespawnTimerForFirstSpawn;                      // 0x43d(0x1)
+	bool                                                         AssociateSpawnsWithSpecificCrews;                  // 0x43e(0x1)
+	bool                                                         PerceiveTriggerActorOnSpawn;                       // 0x43f(0x1)
+	bool                                                         EnforceRespawnTimeAfterCrewLeaves;                 // 0x440(0x1)
+	bool                                                         IgnoreSpawningGracePeriodForNewCrew;               // 0x441(0x1)
 };
 
 
@@ -378,19 +379,19 @@ public:
 class AIBountySpawner: public AISpawner
 {
 public:
-	float                                                        MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup;  // 0x428(0x4)
-	TArray<Struct AIBountySpawnerWaveGroup>                      WaveGroups;                                        // 0x430(0x10)
-	Struct StringAssetReference                                  TeamColor;                                         // 0x440(0x10)
-	Struct WeightedProbabilityRange                              WavesPerRelocate;                                  // 0x450(0x20)
-	Struct WeightedProbabilityRange                              WaveSplitChance;                                   // 0x470(0x20)
-	TArray<Float WaveSuicideTime>                                WaveSuicideTime;                                   // 0x490(0x10)
-	float                                                        WaveSuicideMinDist;                                // 0x4a0(0x4)
-	bool                                                         ImmediatelyPerceiveTargets;                        // 0x4a4(0x1)
-	Class AICombatDialogue*                                      ActiveCombatDialogue;                              // 0x4a8(0x8)
-	TArray<class CrewMembers*>                                   CrewMembers;                                       // 0x4d8(0x10)
-	TArray<class NonCrewMembersInRegion*>                        NonCrewMembersInRegion;                            // 0x4e8(0x10)
-	TArray<class AllParticipatingPlayers*>                       AllParticipatingPlayers;                           // 0x4f8(0x10)
-	Class OverlapTriggerComponent*                               AudioZoneTriggerComponent;                         // 0x508(0x8)
+	float                                                        MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup;  // 0x430(0x4)
+	TArray<Struct AIBountySpawnerWaveGroup>                      WaveGroups;                                        // 0x438(0x10)
+	Struct StringAssetReference                                  TeamColor;                                         // 0x448(0x10)
+	Struct WeightedProbabilityRange                              WavesPerRelocate;                                  // 0x458(0x20)
+	Struct WeightedProbabilityRange                              WaveSplitChance;                                   // 0x478(0x20)
+	TArray<Float WaveSuicideTime>                                WaveSuicideTime;                                   // 0x498(0x10)
+	float                                                        WaveSuicideMinDist;                                // 0x4a8(0x4)
+	bool                                                         ImmediatelyPerceiveTargets;                        // 0x4ac(0x1)
+	Class AICombatDialogue*                                      ActiveCombatDialogue;                              // 0x4b0(0x8)
+	TArray<class CrewMembers*>                                   CrewMembers;                                       // 0x4e0(0x10)
+	TArray<class NonCrewMembersInRegion*>                        NonCrewMembersInRegion;                            // 0x4f0(0x10)
+	TArray<class AllParticipatingPlayers*>                       AllParticipatingPlayers;                           // 0x500(0x10)
+	Class OverlapTriggerComponent*                               AudioZoneTriggerComponent;                         // 0x510(0x8)
 };
 
 
@@ -413,9 +414,9 @@ public:
 class AIFaunaSpawner: public AISpawner
 {
 public:
-	Struct AIFaunaSpawnerWave                                    FaunaWave;                                         // 0x428(0x110)
-	Class Actor*                                                 FaunaLeader;                                       // 0x548(0x8)
-	TArray<class PlayersInSpawnArea*>                            PlayersInSpawnArea;                                // 0x560(0x10)
+	Struct AIFaunaSpawnerWave                                    FaunaWave;                                         // 0x430(0x110)
+	Class Actor*                                                 FaunaLeader;                                       // 0x550(0x8)
+	TArray<class PlayersInSpawnArea*>                            PlayersInSpawnArea;                                // 0x568(0x10)
 };
 
 
@@ -545,7 +546,8 @@ public:
 	bool                                                         IsCalm;                                            // 0x9e6(0x1)
 	float                                                        TargetTurnAngle;                                   // 0x9e8(0x4)
 	Class VenomComponent*                                        VenomComponent;                                    // 0xb18(0x8)
-	Class Actor*                                                 CurrentShip;                                       // 0xb20(0x8)
+	Class AthenaAICharacterPathFollowingComponent*               PathFollowingComponent;                            // 0xb20(0x8)
+	Class Actor*                                                 CurrentShip;                                       // 0xb28(0x8)
 };
 
 
@@ -656,18 +658,18 @@ public:
 class AIDioramaLocationSourceComponent: public SceneComponent
 {
 public:
-	TArray<Struct AIDioramaLocationSourceComponentData>          DioramaRelativeLocations;                          // 0x2e0(0x10)
-	float                                                        DialogueTriggerRadius;                             // 0x2f0(0x4)
-	float                                                        DialogueSubtitleBuffer;                            // 0x2f4(0x4)
-	float                                                        AISenseRadiusForDebugDisplay;                      // 0x2f8(0x4)
-	TArray<Class Categories>                                     Categories;                                        // 0x300(0x10)
-	struct FName                                                 FeatureToggle;                                     // 0x310(0x8)
-	Struct Color                                                 DebugTriggerRadiusColor;                           // 0x318(0x4)
-	Struct Color                                                 DebugSubtitleRadiusColor;                          // 0x31c(0x4)
-	Struct Color                                                 AISenseRadiusColor;                                // 0x320(0x4)
-	Class SphereComponent*                                       DialogueTriggerRadiusSphere;                       // 0x328(0x8)
-	Class SphereComponent*                                       DialogueSubtitleRadiusSphere;                      // 0x330(0x8)
-	Class SphereComponent*                                       AISenseRadiusSphere;                               // 0x338(0x8)
+	TArray<Struct AIDioramaLocationSourceComponentData>          DioramaRelativeLocations;                          // 0x2f0(0x10)
+	float                                                        DialogueTriggerRadius;                             // 0x300(0x4)
+	float                                                        DialogueSubtitleBuffer;                            // 0x304(0x4)
+	float                                                        AISenseRadiusForDebugDisplay;                      // 0x308(0x4)
+	TArray<Class Categories>                                     Categories;                                        // 0x310(0x10)
+	struct FName                                                 FeatureToggle;                                     // 0x320(0x8)
+	Struct Color                                                 DebugTriggerRadiusColor;                           // 0x328(0x4)
+	Struct Color                                                 DebugSubtitleRadiusColor;                          // 0x32c(0x4)
+	Struct Color                                                 AISenseRadiusColor;                                // 0x330(0x4)
+	Class SphereComponent*                                       DialogueTriggerRadiusSphere;                       // 0x338(0x8)
+	Class SphereComponent*                                       DialogueSubtitleRadiusSphere;                      // 0x340(0x8)
+	Class SphereComponent*                                       AISenseRadiusSphere;                               // 0x348(0x8)
 };
 
 
@@ -797,14 +799,14 @@ public:
 class AINameplateComponent: public NameplateComponent
 {
 public:
-	float                                                        VisibleFromWorldDistance;                          // 0x308(0x4)
-	float                                                        VisibleUntilWorldDistance;                         // 0x30c(0x4)
-	float                                                        VisibleAfterDeathDuration;                         // 0x310(0x4)
-	Struct FText                                                 Title;                                             // 0x318(0x38)
-	Struct FText                                                 DisplayName;                                       // 0x350(0x38)
-	Struct FString                                               DisplayNameAsString;                               // 0x388(0x10)
-	Struct FString                                               DebugDisplayText;                                  // 0x398(0x10)
-	bool                                                         VisibilityDisabled;                                // 0x3a8(0x1)
+	float                                                        VisibleFromWorldDistance;                          // 0x318(0x4)
+	float                                                        VisibleUntilWorldDistance;                         // 0x31c(0x4)
+	float                                                        VisibleAfterDeathDuration;                         // 0x320(0x4)
+	Struct FText                                                 Title;                                             // 0x328(0x38)
+	Struct FText                                                 DisplayName;                                       // 0x360(0x38)
+	Struct FString                                               DisplayNameAsString;                               // 0x398(0x10)
+	Struct FString                                               DebugDisplayText;                                  // 0x3a8(0x10)
+	bool                                                         VisibilityDisabled;                                // 0x3b8(0x1)
 };
 
 
@@ -812,7 +814,7 @@ public:
 class PetNameplateComponent: public AINameplateComponent
 {
 public:
-	Struct FString                                               DefaultPetName;                                    // 0x468(0x10)
+	Struct FString                                               DefaultPetName;                                    // 0x478(0x10)
 };
 
 
@@ -1070,7 +1072,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x78
 class TaleQuestTinySharkService: public TaleQuestService
 {
 public:
@@ -1085,7 +1087,7 @@ public:
 };
 
 
-// Size 0x110
+// Size 0x120
 class TaleQuestStartTinySharkExperienceStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -1093,7 +1095,34 @@ public:
 	int                                                          PartIndex;                                         // 0x8c(0x4)
 	Struct TinySharkParams                                       TinySharkParams;                                   // 0x90(0xb8)
 	Class Ship*                                                  TargetShip;                                        // 0x168(0x8)
-	Struct QuestVariableTinySharkExperience                      TinySharkExperience;                               // 0x170(0x20)
+	Class TaleQuestTinySharkExperienceTracker*                   ExperienceTracker;                                 // 0x170(0x8)
+	bool                                                         FireTinySharkVariantDefeatedStats;                 // 0x178(0x1)
+	Struct QuestVariableTinySharkExperience                      TinySharkExperience;                               // 0x180(0x20)
+};
+
+
+// Size 0x48
+class TaleQuestTinySharkExperienceTracker: public Object
+{
+public:
+	float                                                        UpdateFrequency;                                   // 0x60(0x4)
+};
+
+
+// Size 0xc0
+class TaleQuestShroudedDeepSGExperienceTracker: public TaleQuestTinySharkExperienceTracker
+{
+public:
+	Struct Vector2D                                              TrackingLocation;                                  // 0x70(0x8)
+	float                                                        InnerSafezoneRadius;                               // 0x78(0x4)
+	float                                                        TargetWeightSloop;                                 // 0x7c(0x4)
+	float                                                        TargetWeightBrig;                                  // 0x80(0x4)
+	float                                                        TargetWeightGaleon;                                // 0x84(0x4)
+	float                                                        ExperienceRadiusConsiderationRatio;                // 0x88(0x4)
+	float                                                        ShipInsideExperiencePreference;                    // 0x8c(0x4)
+	float                                                        ShipNearExperiencePreference;                      // 0x90(0x4)
+	float                                                        ShipNearKillerWhalePreference;                     // 0x94(0x4)
+	Struct WeightedProbabilityRangeOfRanges                      ForceRetargetFrequency;                            // 0x98(0x30)
 };
 
 
@@ -1104,21 +1133,22 @@ public:
 };
 
 
-// Size 0x3a0
+// Size 0x410
 class TinySharkExperience: public Actor
 {
 public:
 	float                                                        RelevancyDistance;                                 // 0x3d8(0x4)
 	float                                                        TrackingMovementCheckInterval;                     // 0x3dc(0x4)
 	Class EnvQuery*                                              TrackingMovementValidQuery;                        // 0x3e0(0x8)
-	Class AIOnDemandSpawner*                                     TinySharkSpawner;                                  // 0x488(0x8)
-	Class SharkPawn*                                             TinySharkPawn;                                     // 0x490(0x8)
-	struct FName                                                 HealthRTPC;                                        // 0x498(0x8)
-	Struct TinySharkParams                                       Params;                                            // 0x4a8(0xb8)
-	Class TinySharkTelemetryComponent*                           TinySharkTelemetryComponent;                       // 0x560(0x8)
-	Class Ship*                                                  TrackedShip;                                       // 0x568(0x8)
-	Struct EncounterParams                                       SightingEncounterParams;                           // 0x5f0(0xc)
-	Struct EncounterParams                                       CloseEncounterParams;                              // 0x5fc(0xc)
+	bool                                                         ShouldBlockMigrationForAllAttackingCrewsFromAnyDistance; // 0x3e8(0x1)
+	Class AIOnDemandSpawner*                                     TinySharkSpawner;                                  // 0x490(0x8)
+	Class SharkPawn*                                             TinySharkPawn;                                     // 0x498(0x8)
+	struct FName                                                 HealthRTPC;                                        // 0x4a0(0x8)
+	Struct TinySharkParams                                       Params;                                            // 0x4b0(0xb8)
+	Class TinySharkTelemetryComponent*                           TinySharkTelemetryComponent;                       // 0x568(0x8)
+	Class Ship*                                                  TrackedShip;                                       // 0x570(0x8)
+	Struct EncounterParams                                       SightingEncounterParams;                           // 0x5f8(0xc)
+	Struct EncounterParams                                       CloseEncounterParams;                              // 0x604(0xc)
 };
 
 
@@ -1137,12 +1167,13 @@ public:
 };
 
 
-// Size 0x1b8
+// Size 0x1c8
 class TinySharkService: public Actor
 {
 public:
 	Class TinySharkServiceParamsDataAsset*                       TinySharkServiceParams;                            // 0x3e0(0x8)
 	TArray<class TinySharkExperiences*>                          TinySharkExperiences;                              // 0x558(0x10)
+	TArray<class ExternallyManagedTinySharkExperiences*>         ExternallyManagedTinySharkExperiences;             // 0x568(0x10)
 };
 
 
@@ -1614,7 +1645,7 @@ public:
 class AIItemSpawnDataSourceComponent: public SceneComponent
 {
 public:
-	Class ItemSpawnTransformWithRandomQuantityDataAssset*        ItemSpawnDataAsset;                                // 0x2d8(0x8)
+	Class ItemSpawnTransformWithRandomQuantityDataAssset*        ItemSpawnDataAsset;                                // 0x2e8(0x8)
 };
 
 
@@ -1911,10 +1942,10 @@ public:
 class AIRegionComponent: public SceneComponent
 {
 public:
-	bool                                                         UpdateRegionPosition;                              // 0x2d8(0x1)
-	struct FName                                                 NavMeshAgentType;                                  // 0x2dc(0x8)
-	float                                                        RegionRadius;                                      // 0x2e4(0x4)
-	TArray<Struct SpawnLocationGroup>                            SpawnLocationGroups;                               // 0x2e8(0x10)
+	bool                                                         UpdateRegionPosition;                              // 0x2e8(0x1)
+	struct FName                                                 NavMeshAgentType;                                  // 0x2ec(0x8)
+	float                                                        RegionRadius;                                      // 0x2f4(0x4)
+	TArray<Struct SpawnLocationGroup>                            SpawnLocationGroups;                               // 0x2f8(0x10)
 };
 
 
@@ -1966,8 +1997,8 @@ public:
 class AIFixedWavesSpawner: public AISpawner
 {
 public:
-	TArray<Struct AIPersistentSpawnerWave>                       SpawnedWaves;                                      // 0x428(0x10)
-	int                                                          NumWavesToSpawnOnSpottedNewTarget;                 // 0x438(0x4)
+	TArray<Struct AIPersistentSpawnerWave>                       SpawnedWaves;                                      // 0x430(0x10)
+	int                                                          NumWavesToSpawnOnSpottedNewTarget;                 // 0x440(0x4)
 };
 
 
@@ -1975,7 +2006,7 @@ public:
 class AIIncrementalWaveSpawner: public AISpawner
 {
 public:
-	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x428(0x100)
+	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x430(0x100)
 };
 
 
@@ -1983,17 +2014,17 @@ public:
 class AIInteractableSpawner: public AISpawner
 {
 public:
-	class                                                        AIInteractableType;                                // 0x428(0x8)
-	float                                                        InhabitedChance;                                   // 0x430(0x4)
-	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulInhabitedCheck;                // 0x438(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedInhabitedCheck;                    // 0x468(0x30)
-	float                                                        SpawnForInteractableChance;                        // 0x498(0x4)
-	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulSpawnOnInteractableCheck;      // 0x4a0(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedSpawnOnInteractableCheck;          // 0x4d0(0x30)
-	bool                                                         RunInhabitedSimulation;                            // 0x500(0x1)
-	bool                                                         RunSpawnForInteractableSimulation;                 // 0x501(0x1)
-	int                                                          NumIterations;                                     // 0x504(0x4)
-	byte                                                         CachedPlaymode;                                    // 0x520(0x1)
+	class                                                        AIInteractableType;                                // 0x430(0x8)
+	float                                                        InhabitedChance;                                   // 0x438(0x4)
+	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulInhabitedCheck;                // 0x440(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedInhabitedCheck;                    // 0x470(0x30)
+	float                                                        SpawnForInteractableChance;                        // 0x4a0(0x4)
+	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulSpawnOnInteractableCheck;      // 0x4a8(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedSpawnOnInteractableCheck;          // 0x4d8(0x30)
+	bool                                                         RunInhabitedSimulation;                            // 0x508(0x1)
+	bool                                                         RunSpawnForInteractableSimulation;                 // 0x509(0x1)
+	int                                                          NumIterations;                                     // 0x50c(0x4)
+	byte                                                         CachedPlaymode;                                    // 0x528(0x1)
 };
 
 
@@ -2008,16 +2039,16 @@ public:
 class AIPerPlayerSpawner: public AISpawner
 {
 public:
-	bool                                                         CheckSpawnedActorsInRadiusBeforeSpawning;          // 0x428(0x1)
-	float                                                        RadiusToCheckForExistingPopulation;                // 0x42c(0x4)
-	int                                                          MaxExistingPopulationInRadius;                     // 0x430(0x4)
-	bool                                                         DespawnAllPawnsWhenAllPlayersLeave;                // 0x434(0x1)
-	int                                                          MaxActorsTotalPerPlayer;                           // 0x438(0x4)
-	bool                                                         RunSimulation;                                     // 0x43c(0x1)
-	int                                                          RankForSimulation;                                 // 0x440(0x4)
-	int                                                          NumIterations;                                     // 0x444(0x4)
-	bool                                                         WantsToTemporarilyRememberPlayers;                 // 0x448(0x1)
-	Struct WeightedProbabilityRangeOfRanges                      TemporaryPlayerMemoryTimeRange;                    // 0x450(0x30)
+	bool                                                         CheckSpawnedActorsInRadiusBeforeSpawning;          // 0x430(0x1)
+	float                                                        RadiusToCheckForExistingPopulation;                // 0x434(0x4)
+	int                                                          MaxExistingPopulationInRadius;                     // 0x438(0x4)
+	bool                                                         DespawnAllPawnsWhenAllPlayersLeave;                // 0x43c(0x1)
+	int                                                          MaxActorsTotalPerPlayer;                           // 0x440(0x4)
+	bool                                                         RunSimulation;                                     // 0x444(0x1)
+	int                                                          RankForSimulation;                                 // 0x448(0x4)
+	int                                                          NumIterations;                                     // 0x44c(0x4)
+	bool                                                         WantsToTemporarilyRememberPlayers;                 // 0x450(0x1)
+	Struct WeightedProbabilityRangeOfRanges                      TemporaryPlayerMemoryTimeRange;                    // 0x458(0x30)
 };
 
 
@@ -2043,12 +2074,12 @@ public:
 class AIBoobyTrapSpawner: public AIPerPlayerSpawner
 {
 public:
-	int                                                          NumberOfWavesToSpawn;                              // 0x610(0x4)
-	Class WwiseEvent*                                            NewWaveSpawnSfx;                                   // 0x618(0x8)
-	float                                                        NewWaveSpawnSfxTriggerRadius;                      // 0x620(0x4)
-	TArray<Class ShowNameplatesFor>                              ShowNameplatesFor;                                 // 0x628(0x10)
-	Class NamedAIDataAsset*                                      NamedAIDataAsset;                                  // 0x638(0x8)
-	Class Actor*                                                 ActorToTrack;                                      // 0x640(0x8)
+	int                                                          NumberOfWavesToSpawn;                              // 0x618(0x4)
+	Class WwiseEvent*                                            NewWaveSpawnSfx;                                   // 0x620(0x8)
+	float                                                        NewWaveSpawnSfxTriggerRadius;                      // 0x628(0x4)
+	TArray<Class ShowNameplatesFor>                              ShowNameplatesFor;                                 // 0x630(0x10)
+	Class NamedAIDataAsset*                                      NamedAIDataAsset;                                  // 0x640(0x8)
+	Class Actor*                                                 ActorToTrack;                                      // 0x648(0x8)
 };
 
 
@@ -2056,9 +2087,9 @@ public:
 class AIProgressiveWavesSpawner: public AISpawner
 {
 public:
-	bool                                                         ApplyLocalisableNamesToNameplates;                 // 0x428(0x1)
-	TArray<Struct AIPersistentSpawnerWave>                       Waves;                                             // 0x430(0x10)
-	Class Actor*                                                 TriggerActor;                                      // 0x458(0x8)
+	bool                                                         ApplyLocalisableNamesToNameplates;                 // 0x430(0x1)
+	TArray<Struct AIPersistentSpawnerWave>                       Waves;                                             // 0x438(0x10)
+	Class Actor*                                                 TriggerActor;                                      // 0x460(0x8)
 };
 
 
@@ -2073,9 +2104,9 @@ public:
 class AIWaveSpawner: public AISpawner
 {
 public:
-	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x430(0x100)
-	float                                                        MinRespawnTime;                                    // 0x530(0x4)
-	float                                                        MaxRespawnTime;                                    // 0x534(0x4)
+	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x438(0x100)
+	float                                                        MinRespawnTime;                                    // 0x538(0x4)
+	float                                                        MaxRespawnTime;                                    // 0x53c(0x4)
 };
 
 

@@ -41,25 +41,25 @@
         "Name": "Locations",
         "Type": "TArray<Struct Vector>",
         "Size": "0x10",
-        "Offset": "0x870"
+        "Offset": "0x868"
       },
       {
         "Name": "LocationIds",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x880"
+        "Offset": "0x878"
       },
       {
         "Name": "InventoryItem",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x890"
+        "Offset": "0x888"
       },
       {
         "Name": "ProximityAnnouncementComponent",
         "Type": "Class EnchantedCompassProximityAnnouncementComponent*",
         "Size": "0x8",
-        "Offset": "0x898"
+        "Offset": "0x890"
       }
     ]
   },

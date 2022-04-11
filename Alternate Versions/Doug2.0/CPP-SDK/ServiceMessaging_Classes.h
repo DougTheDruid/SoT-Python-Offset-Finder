@@ -14,13 +14,6 @@ public:
 
 
 // Size 0x0
-class ServiceMessagingInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0
 class ServiceMessagingFunctions: public BlueprintFunctionLibrary
 {
 public:

@@ -48,4 +48,11 @@ public:
 };
 
 
+// Size 0x0
+class BP_Shroudbreaker_OnShip_Small_C: public BP_Shroudbreaker_OnShip_C
+{
+public:
+};
+
+
 }

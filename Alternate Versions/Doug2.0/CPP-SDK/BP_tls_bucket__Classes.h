@@ -27,15 +27,23 @@ public:
 };
 
 
-// Size 0x300
-class BP_tls_bucket_bdg_01_a_ItemInfo_C: public None
+// Size 0x8
+class BP_tls_bucket_bdg_01_a_ItemInfo_C: public ItemInfo
 {
 public:
 };
 
 
-// Size 0x300
-class BP_tls_bucket_bdg_01_a_Wieldable_C: public None
+// Size -0x11
+class BP_tls_bucket_bdg_01_a_Wieldable_C: public EventWieldableItemUseStoppedAndFullyHidden
+{
+public:
+	byte                                                         ByteProperty;                                      // 0x1ac(0x0)
+};
+
+
+// Size 0x0
+class BP_tls_bucket_wth_01_a_v01_ItemDesc_C: public ItemDesc
 {
 public:
 };
@@ -43,13 +51,6 @@ public:
 
 // Size 0x0
 class BP_tls_bucket_s06_01_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_tls_bucket_wth_01_a_v01_ItemDesc_C: public ItemDesc
 {
 public:
 };

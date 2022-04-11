@@ -19,6 +19,17 @@ CreateMysteriousNoteData:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x38'
+CreateMysteriousNoteResponseData:
+  Attributes:
+  - Name: Success
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: NoteId
+    Offset: '0x4'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x14'
 CustomPlayerNoteList:
   Attributes:
   - Name: Notes

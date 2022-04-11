@@ -41,9 +41,9 @@
   },
   "AISpawner": {
     "Super": "DataAsset",
-    "FullSize": "0x428",
+    "FullSize": "0x430",
     "InheritedSize": "0x28",
-    "ClassSize": "0x400",
+    "ClassSize": "0x408",
     "Attributes": [
       {
         "Name": "HasSpawnerLevelEncounters",
@@ -130,66 +130,72 @@
         "Offset": "0xe0"
       },
       {
+        "Name": "EnforceHomePosition",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf0"
+      },
+      {
         "Name": "AthenaAISettings",
         "Type": "Class AthenaAISettings*",
         "Size": "0x8",
-        "Offset": "0x360"
+        "Offset": "0x368"
       }
     ]
   },
   "AIPerCrewSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x560",
-    "InheritedSize": "0x428",
+    "FullSize": "0x568",
+    "InheritedSize": "0x430",
     "ClassSize": "0x138",
     "Attributes": [
       {
         "Name": "DefaultRespawnTimerRanges",
         "Type": "Class AIWeightedProbabilityRangeOfRangesRankProgression*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x430"
       },
       {
         "Name": "MaxNumOfCrewsToSpawnFor",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x438"
       },
       {
         "Name": "ActivateBySettingFootOnIsland",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x434"
+        "Offset": "0x43c"
       },
       {
         "Name": "UseRespawnTimerForFirstSpawn",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x435"
+        "Offset": "0x43d"
       },
       {
         "Name": "AssociateSpawnsWithSpecificCrews",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x436"
+        "Offset": "0x43e"
       },
       {
         "Name": "PerceiveTriggerActorOnSpawn",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x437"
+        "Offset": "0x43f"
       },
       {
         "Name": "EnforceRespawnTimeAfterCrewLeaves",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x438"
+        "Offset": "0x440"
       },
       {
         "Name": "IgnoreSpawningGracePeriodForNewCrew",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x439"
+        "Offset": "0x441"
       }
     ]
   },
@@ -1106,87 +1112,87 @@
   },
   "AIBountySpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x5a8",
-    "InheritedSize": "0x428",
+    "FullSize": "0x5b0",
+    "InheritedSize": "0x430",
     "ClassSize": "0x180",
     "Attributes": [
       {
         "Name": "MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x430"
       },
       {
         "Name": "WaveGroups",
         "Type": "TArray<Struct AIBountySpawnerWaveGroup>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x438"
       },
       {
         "Name": "TeamColor",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x440"
+        "Offset": "0x448"
       },
       {
         "Name": "WavesPerRelocate",
         "Type": "Struct WeightedProbabilityRange",
         "Size": "0x20",
-        "Offset": "0x450"
+        "Offset": "0x458"
       },
       {
         "Name": "WaveSplitChance",
         "Type": "Struct WeightedProbabilityRange",
         "Size": "0x20",
-        "Offset": "0x470"
+        "Offset": "0x478"
       },
       {
         "Name": "WaveSuicideTime",
         "Type": "TArray<Float WaveSuicideTime>",
         "Size": "0x10",
-        "Offset": "0x490"
+        "Offset": "0x498"
       },
       {
         "Name": "WaveSuicideMinDist",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4a0"
+        "Offset": "0x4a8"
       },
       {
         "Name": "ImmediatelyPerceiveTargets",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4a4"
+        "Offset": "0x4ac"
       },
       {
         "Name": "ActiveCombatDialogue",
         "Type": "Class AICombatDialogue*",
         "Size": "0x8",
-        "Offset": "0x4a8"
+        "Offset": "0x4b0"
       },
       {
         "Name": "CrewMembers",
         "Type": "TArray<class CrewMembers*>",
         "Size": "0x10",
-        "Offset": "0x4d8"
+        "Offset": "0x4e0"
       },
       {
         "Name": "NonCrewMembersInRegion",
         "Type": "TArray<class NonCrewMembersInRegion*>",
         "Size": "0x10",
-        "Offset": "0x4e8"
+        "Offset": "0x4f0"
       },
       {
         "Name": "AllParticipatingPlayers",
         "Type": "TArray<class AllParticipatingPlayers*>",
         "Size": "0x10",
-        "Offset": "0x4f8"
+        "Offset": "0x500"
       },
       {
         "Name": "AudioZoneTriggerComponent",
         "Type": "Class OverlapTriggerComponent*",
         "Size": "0x8",
-        "Offset": "0x508"
+        "Offset": "0x510"
       }
     ]
   },
@@ -1213,27 +1219,27 @@
   },
   "AIFaunaSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x570",
-    "InheritedSize": "0x428",
+    "FullSize": "0x578",
+    "InheritedSize": "0x430",
     "ClassSize": "0x148",
     "Attributes": [
       {
         "Name": "FaunaWave",
         "Type": "Struct AIFaunaSpawnerWave",
         "Size": "0x110",
-        "Offset": "0x428"
+        "Offset": "0x430"
       },
       {
         "Name": "FaunaLeader",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x548"
+        "Offset": "0x550"
       },
       {
         "Name": "PlayersInSpawnArea",
         "Type": "TArray<class PlayersInSpawnArea*>",
         "Size": "0x10",
-        "Offset": "0x560"
+        "Offset": "0x568"
       }
     ]
   },
@@ -1768,10 +1774,16 @@
         "Offset": "0xb18"
       },
       {
+        "Name": "PathFollowingComponent",
+        "Type": "Class AthenaAICharacterPathFollowingComponent*",
+        "Size": "0x8",
+        "Offset": "0xb20"
+      },
+      {
         "Name": "CurrentShip",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0xb20"
+        "Offset": "0xb28"
       }
     ]
   },
@@ -1980,81 +1992,81 @@
   },
   "AIDioramaLocationSourceComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x360",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x370",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "DioramaRelativeLocations",
         "Type": "TArray<Struct AIDioramaLocationSourceComponentData>",
         "Size": "0x10",
-        "Offset": "0x2e0"
+        "Offset": "0x2f0"
       },
       {
         "Name": "DialogueTriggerRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2f0"
+        "Offset": "0x300"
       },
       {
         "Name": "DialogueSubtitleBuffer",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2f4"
+        "Offset": "0x304"
       },
       {
         "Name": "AISenseRadiusForDebugDisplay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2f8"
+        "Offset": "0x308"
       },
       {
         "Name": "Categories",
         "Type": "TArray<Class Categories>",
         "Size": "0x10",
-        "Offset": "0x300"
+        "Offset": "0x310"
       },
       {
         "Name": "FeatureToggle",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x310"
+        "Offset": "0x320"
       },
       {
         "Name": "DebugTriggerRadiusColor",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x318"
+        "Offset": "0x328"
       },
       {
         "Name": "DebugSubtitleRadiusColor",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x31c"
+        "Offset": "0x32c"
       },
       {
         "Name": "AISenseRadiusColor",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x320"
+        "Offset": "0x330"
       },
       {
         "Name": "DialogueTriggerRadiusSphere",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x328"
+        "Offset": "0x338"
       },
       {
         "Name": "DialogueSubtitleRadiusSphere",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x330"
+        "Offset": "0x340"
       },
       {
         "Name": "AISenseRadiusSphere",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x338"
+        "Offset": "0x348"
       }
     ]
   },
@@ -2515,71 +2527,71 @@
   },
   "AINameplateComponent": {
     "Super": "NameplateComponent",
-    "FullSize": "0x470",
-    "InheritedSize": "0x300",
+    "FullSize": "0x480",
+    "InheritedSize": "0x310",
     "ClassSize": "0x170",
     "Attributes": [
       {
         "Name": "VisibleFromWorldDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x308"
+        "Offset": "0x318"
       },
       {
         "Name": "VisibleUntilWorldDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x30c"
+        "Offset": "0x31c"
       },
       {
         "Name": "VisibleAfterDeathDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x310"
+        "Offset": "0x320"
       },
       {
         "Name": "Title",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x318"
+        "Offset": "0x328"
       },
       {
         "Name": "DisplayName",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x350"
+        "Offset": "0x360"
       },
       {
         "Name": "DisplayNameAsString",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x388"
+        "Offset": "0x398"
       },
       {
         "Name": "DebugDisplayText",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x398"
+        "Offset": "0x3a8"
       },
       {
         "Name": "VisibilityDisabled",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3a8"
+        "Offset": "0x3b8"
       }
     ]
   },
   "PetNameplateComponent": {
     "Super": "AINameplateComponent",
-    "FullSize": "0x490",
-    "InheritedSize": "0x470",
+    "FullSize": "0x4a0",
+    "InheritedSize": "0x480",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "DefaultPetName",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x468"
+        "Offset": "0x478"
       }
     ]
   },
@@ -3355,9 +3367,9 @@
   },
   "TaleQuestTinySharkService": {
     "Super": "TaleQuestService",
-    "FullSize": "0x70",
+    "FullSize": "0xd8",
     "InheritedSize": "0x60",
-    "ClassSize": "0x10",
+    "ClassSize": "0x78",
     "Attributes": [
       {
         "Name": "ActiveExperiences",
@@ -3376,9 +3388,9 @@
   },
   "TaleQuestStartTinySharkExperienceStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x190",
+    "FullSize": "0x1a0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x110",
+    "ClassSize": "0x120",
     "Attributes": [
       {
         "Name": "SpawnLocation",
@@ -3405,10 +3417,104 @@
         "Offset": "0x168"
       },
       {
+        "Name": "ExperienceTracker",
+        "Type": "Class TaleQuestTinySharkExperienceTracker*",
+        "Size": "0x8",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "FireTinySharkVariantDefeatedStats",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x178"
+      },
+      {
         "Name": "TinySharkExperience",
         "Type": "Struct QuestVariableTinySharkExperience",
         "Size": "0x20",
-        "Offset": "0x170"
+        "Offset": "0x180"
+      }
+    ]
+  },
+  "TaleQuestTinySharkExperienceTracker": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "UpdateFrequency",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "TaleQuestShroudedDeepSGExperienceTracker": {
+    "Super": "TaleQuestTinySharkExperienceTracker",
+    "FullSize": "0x130",
+    "InheritedSize": "0x70",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "TrackingLocation",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "InnerSafezoneRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "TargetWeightSloop",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "TargetWeightBrig",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "TargetWeightGaleon",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "ExperienceRadiusConsiderationRatio",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "ShipInsideExperiencePreference",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "ShipNearExperiencePreference",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "ShipNearKillerWhalePreference",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "ForceRetargetFrequency",
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x98"
       }
     ]
   },
@@ -3421,9 +3527,9 @@
   },
   "TinySharkExperience": {
     "Super": "Actor",
-    "FullSize": "0x770",
+    "FullSize": "0x7e0",
     "InheritedSize": "0x3d0",
-    "ClassSize": "0x3a0",
+    "ClassSize": "0x410",
     "Attributes": [
       {
         "Name": "RelevancyDistance",
@@ -3444,52 +3550,58 @@
         "Offset": "0x3e0"
       },
       {
+        "Name": "ShouldBlockMigrationForAllAttackingCrewsFromAnyDistance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3e8"
+      },
+      {
         "Name": "TinySharkSpawner",
         "Type": "Class AIOnDemandSpawner*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x490"
       },
       {
         "Name": "TinySharkPawn",
         "Type": "Class SharkPawn*",
         "Size": "0x8",
-        "Offset": "0x490"
+        "Offset": "0x498"
       },
       {
         "Name": "HealthRTPC",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x4a0"
       },
       {
         "Name": "Params",
         "Type": "Struct TinySharkParams",
         "Size": "0xb8",
-        "Offset": "0x4a8"
+        "Offset": "0x4b0"
       },
       {
         "Name": "TinySharkTelemetryComponent",
         "Type": "Class TinySharkTelemetryComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x568"
       },
       {
         "Name": "TrackedShip",
         "Type": "Class Ship*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x570"
       },
       {
         "Name": "SightingEncounterParams",
         "Type": "Struct EncounterParams",
         "Size": "0xc",
-        "Offset": "0x5f0"
+        "Offset": "0x5f8"
       },
       {
         "Name": "CloseEncounterParams",
         "Type": "Struct EncounterParams",
         "Size": "0xc",
-        "Offset": "0x5fc"
+        "Offset": "0x604"
       }
     ]
   },
@@ -3516,9 +3628,9 @@
   },
   "TinySharkService": {
     "Super": "Actor",
-    "FullSize": "0x588",
+    "FullSize": "0x598",
     "InheritedSize": "0x3d0",
-    "ClassSize": "0x1b8",
+    "ClassSize": "0x1c8",
     "Attributes": [
       {
         "Name": "TinySharkServiceParams",
@@ -3531,6 +3643,12 @@
         "Type": "TArray<class TinySharkExperiences*>",
         "Size": "0x10",
         "Offset": "0x558"
+      },
+      {
+        "Name": "ExternallyManagedTinySharkExperiences",
+        "Type": "TArray<class ExternallyManagedTinySharkExperiences*>",
+        "Size": "0x10",
+        "Offset": "0x568"
       }
     ]
   },
@@ -4708,15 +4826,15 @@
   },
   "AIItemSpawnDataSourceComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x2e0",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x2f0",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "ItemSpawnDataAsset",
         "Type": "Class ItemSpawnTransformWithRandomQuantityDataAssset*",
         "Size": "0x8",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       }
     ]
   },
@@ -5316,33 +5434,33 @@
   },
   "AIRegionComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x340",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x350",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "UpdateRegionPosition",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       },
       {
         "Name": "NavMeshAgentType",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x2dc"
+        "Offset": "0x2ec"
       },
       {
         "Name": "RegionRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2e4"
+        "Offset": "0x2f4"
       },
       {
         "Name": "SpawnLocationGroups",
         "Type": "TArray<Struct SpawnLocationGroup>",
         "Size": "0x10",
-        "Offset": "0x2e8"
+        "Offset": "0x2f8"
       }
     ]
   },
@@ -5404,184 +5522,184 @@
   },
   "AIFixedWavesSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x468",
-    "InheritedSize": "0x428",
+    "FullSize": "0x470",
+    "InheritedSize": "0x430",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "SpawnedWaves",
         "Type": "TArray<Struct AIPersistentSpawnerWave>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x430"
       },
       {
         "Name": "NumWavesToSpawnOnSpottedNewTarget",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x438"
+        "Offset": "0x440"
       }
     ]
   },
   "AIIncrementalWaveSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x540",
-    "InheritedSize": "0x428",
+    "FullSize": "0x548",
+    "InheritedSize": "0x430",
     "ClassSize": "0x118",
     "Attributes": [
       {
         "Name": "SpawnedWave",
         "Type": "Struct AISpawnerWave",
         "Size": "0x100",
-        "Offset": "0x428"
+        "Offset": "0x430"
       }
     ]
   },
   "AIInteractableSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x528",
-    "InheritedSize": "0x428",
+    "FullSize": "0x530",
+    "InheritedSize": "0x430",
     "ClassSize": "0x100",
     "Attributes": [
       {
         "Name": "AIInteractableType",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x430"
       },
       {
         "Name": "InhabitedChance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x438"
       },
       {
         "Name": "DelayAfterSuccessfulInhabitedCheck",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x438"
+        "Offset": "0x440"
       },
       {
         "Name": "DelayAfterFailedInhabitedCheck",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x468"
+        "Offset": "0x470"
       },
       {
         "Name": "SpawnForInteractableChance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x498"
+        "Offset": "0x4a0"
       },
       {
         "Name": "DelayAfterSuccessfulSpawnOnInteractableCheck",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x4a0"
+        "Offset": "0x4a8"
       },
       {
         "Name": "DelayAfterFailedSpawnOnInteractableCheck",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x4d0"
+        "Offset": "0x4d8"
       },
       {
         "Name": "RunInhabitedSimulation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x500"
+        "Offset": "0x508"
       },
       {
         "Name": "RunSpawnForInteractableSimulation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x501"
+        "Offset": "0x509"
       },
       {
         "Name": "NumIterations",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x504"
+        "Offset": "0x50c"
       },
       {
         "Name": "CachedPlaymode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x520"
+        "Offset": "0x528"
       }
     ]
   },
   "AIOnDemandSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x428",
-    "InheritedSize": "0x428",
+    "FullSize": "0x430",
+    "InheritedSize": "0x430",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "AIPerPlayerSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x610",
-    "InheritedSize": "0x428",
+    "FullSize": "0x618",
+    "InheritedSize": "0x430",
     "ClassSize": "0x1e8",
     "Attributes": [
       {
         "Name": "CheckSpawnedActorsInRadiusBeforeSpawning",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x428"
+        "Offset": "0x430"
       },
       {
         "Name": "RadiusToCheckForExistingPopulation",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x42c"
+        "Offset": "0x434"
       },
       {
         "Name": "MaxExistingPopulationInRadius",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x438"
       },
       {
         "Name": "DespawnAllPawnsWhenAllPlayersLeave",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x434"
+        "Offset": "0x43c"
       },
       {
         "Name": "MaxActorsTotalPerPlayer",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x438"
+        "Offset": "0x440"
       },
       {
         "Name": "RunSimulation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x43c"
+        "Offset": "0x444"
       },
       {
         "Name": "RankForSimulation",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x448"
       },
       {
         "Name": "NumIterations",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x444"
+        "Offset": "0x44c"
       },
       {
         "Name": "WantsToTemporarilyRememberPlayers",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x448"
+        "Offset": "0x450"
       },
       {
         "Name": "TemporaryPlayerMemoryTimeRange",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x450"
+        "Offset": "0x458"
       }
     ]
   },
@@ -5661,71 +5779,71 @@
   },
   "AIBoobyTrapSpawner": {
     "Super": "AIPerPlayerSpawner",
-    "FullSize": "0x6e0",
-    "InheritedSize": "0x610",
+    "FullSize": "0x6e8",
+    "InheritedSize": "0x618",
     "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "NumberOfWavesToSpawn",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x610"
+        "Offset": "0x618"
       },
       {
         "Name": "NewWaveSpawnSfx",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x618"
+        "Offset": "0x620"
       },
       {
         "Name": "NewWaveSpawnSfxTriggerRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x620"
+        "Offset": "0x628"
       },
       {
         "Name": "ShowNameplatesFor",
         "Type": "TArray<Class ShowNameplatesFor>",
         "Size": "0x10",
-        "Offset": "0x628"
+        "Offset": "0x630"
       },
       {
         "Name": "NamedAIDataAsset",
         "Type": "Class NamedAIDataAsset*",
         "Size": "0x8",
-        "Offset": "0x638"
+        "Offset": "0x640"
       },
       {
         "Name": "ActorToTrack",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x648"
       }
     ]
   },
   "AIProgressiveWavesSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x460",
-    "InheritedSize": "0x428",
+    "FullSize": "0x468",
+    "InheritedSize": "0x430",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "ApplyLocalisableNamesToNameplates",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x428"
+        "Offset": "0x430"
       },
       {
         "Name": "Waves",
         "Type": "TArray<Struct AIPersistentSpawnerWave>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x438"
       },
       {
         "Name": "TriggerActor",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x458"
+        "Offset": "0x460"
       }
     ]
   },
@@ -5738,27 +5856,27 @@
   },
   "AIWaveSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x560",
-    "InheritedSize": "0x428",
+    "FullSize": "0x568",
+    "InheritedSize": "0x430",
     "ClassSize": "0x138",
     "Attributes": [
       {
         "Name": "SpawnedWave",
         "Type": "Struct AISpawnerWave",
         "Size": "0x100",
-        "Offset": "0x430"
+        "Offset": "0x438"
       },
       {
         "Name": "MinRespawnTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x530"
+        "Offset": "0x538"
       },
       {
         "Name": "MaxRespawnTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x534"
+        "Offset": "0x53c"
       }
     ]
   },
@@ -5876,8 +5994,8 @@
   },
   "AISpawnPointSeedComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x2d0",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x2e0",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x0",
     "Attributes": []
   },

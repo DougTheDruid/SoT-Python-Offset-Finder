@@ -51,15 +51,13 @@ public:
 };
 
 
-// Size 0x24
+// Size 0x1c
 struct HullDamageHit
 {
 public:
 	Struct Vector                                                HitPosition;                                       // 0x0(0xc)
 	Struct Vector                                                HitNormal;                                         // 0xc(0xc)
-	float                                                        HitStrength;                                       // 0x18(0x4)
-	int                                                          HitLevel;                                          // 0x1c(0x4)
-	bool                                                         HasDecal;                                          // 0x20(0x1)
+	bool                                                         HasDecal;                                          // 0x18(0x1)
 };
 
 

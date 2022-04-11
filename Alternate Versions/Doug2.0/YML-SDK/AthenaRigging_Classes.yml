@@ -3,20 +3,20 @@
 InstancedRopeComponent:
   Attributes:
   - Name: StaticMesh
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: Ropes
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x10'
     Type: TArray<Struct InstancedRopeParams>
   - Name: ShadowLOD
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x4'
     Type: int
   ClassSize: '0xc0'
-  FullSize: '0x670'
-  InheritedSize: '0x5b0'
+  FullSize: '0x680'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 MaterialExpressionRopeParameter:
   Attributes:
@@ -69,26 +69,26 @@ RiggingSystem:
 RiggingSystemComponent:
   Attributes:
   - Name: RopeStyle
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x20'
     Type: Struct RopeStyleParams
   - Name: LineGroups
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x10'
     Type: TArray<Struct RiggingSystemLineGroup>
   - Name: Impl
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x8'
     Type: Class RiggingSystem*
   ClassSize: '0x40'
-  FullSize: '0x310'
-  InheritedSize: '0x2d0'
+  FullSize: '0x320'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 RopeCatenaryRenderComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x650'
-  InheritedSize: '0x650'
+  FullSize: '0x660'
+  InheritedSize: '0x660'
   Super: CordRenderComponent
 RopeInterface:
   Attributes: []

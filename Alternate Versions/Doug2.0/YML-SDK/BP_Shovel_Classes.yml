@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Shovel_C:
   Attributes:
-  - Name: UsableWieldable
-    Offset: '0x860'
+  - Name: None
+    Offset: '0x850'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   ClassSize: '0x8'
-  FullSize: '0x868'
-  InheritedSize: '0x860'
+  FullSize: '0x858'
+  InheritedSize: '0x850'
   Super: Shovel

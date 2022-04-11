@@ -85,7 +85,7 @@
       },
       {
         "Name": "DataArray",
-        "Type": "TArray<Struct Source Actors>",
+        "Type": "TArray<Struct BP_CliffGenerator_Struct>",
         "Size": "0x10",
         "Offset": "0x428"
       },
@@ -295,7 +295,7 @@
       },
       {
         "Name": "TopSplineIntersectionPoints",
-        "Type": "TArray<Struct ActorsToIgnore>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x568"
       },

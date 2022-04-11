@@ -104,11 +104,11 @@ public:
 class SplineFootprintPathComponent: public SplineComponent
 {
 public:
-	float                                                        DistanceBetweenDecals;                             // 0x628(0x4)
-	Class MaterialInterface*                                     DecalMaterial;                                     // 0x630(0x8)
-	Struct SplineFootprintPathTool                               PathTool;                                          // 0x638(0x1)
-	float                                                        DecalYaw;                                          // 0x63c(0x4)
-	Struct Vector                                                DecalUniformScale;                                 // 0x640(0xc)
+	float                                                        DistanceBetweenDecals;                             // 0x638(0x4)
+	Class MaterialInterface*                                     DecalMaterial;                                     // 0x640(0x8)
+	Struct SplineFootprintPathTool                               PathTool;                                          // 0x648(0x1)
+	float                                                        DecalYaw;                                          // 0x64c(0x4)
+	Struct Vector                                                DecalUniformScale;                                 // 0x650(0xc)
 };
 
 
@@ -163,6 +163,15 @@ class TaleQuestCargoRunContractsService: public TaleQuestService
 {
 public:
 	TArray<class Contracts*>                                     Contracts;                                         // 0x60(0x10)
+};
+
+
+// Size 0x60
+class TaleQuestIndexedFrame: public Object
+{
+public:
+	Class TaleQuestForEachStepDescBase*                          Desc;                                              // 0x30(0x8)
+	int                                                          Index;                                             // 0x38(0x4)
 };
 
 
@@ -392,6 +401,13 @@ public:
 
 
 // Size 0x0
+class FindItemInCollectorsChestStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
 class FindNamedPointStep: public TaleQuestStep
 {
 public:
@@ -407,6 +423,13 @@ public:
 
 // Size 0x0
 class FindNamedPointAsTransformStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x40
+class ForceCannonLoadStep: public TaleQuestStep
 {
 public:
 };
@@ -448,6 +471,13 @@ public:
 	Class LoadSequencerAnimationStepDesc*                        StepDesc;                                          // 0x90(0x8)
 	Class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0x98(0x8)
 	Class Actor*                                                 TargetToSpawnActor;                                // 0xa0(0x8)
+};
+
+
+// Size 0x0
+class OverrideManagedActorStateStep: public TaleQuestStep
+{
+public:
 };
 
 
@@ -529,6 +559,34 @@ public:
 };
 
 
+// Size 0x0
+class TaleQuestAddToArrayStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestArrayAppendStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestArrayContainsStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestArrayUnionStep: public TaleQuestStep
+{
+public:
+};
+
+
 // Size 0x48
 class TaleQuestAwaitEventStep: public TaleQuestStep
 {
@@ -548,6 +606,14 @@ public:
 class TaleQuestClearTaleProposalsStep: public TaleQuestStep
 {
 public:
+};
+
+
+// Size 0x30
+class TaleQuestCrewTaskStep: public TaleQuestStep
+{
+public:
+	Class TaleQuestStep*                                         Task;                                              // 0x90(0x8)
 };
 
 
@@ -580,18 +646,45 @@ public:
 };
 
 
-// Size 0x58
-class TaleQuestForEachSequential: public TaleQuestStep
+// Size 0x10
+class TaleQuestForEachStepBase: public TaleQuestStep
 {
 public:
-	Class TaleQuestForEachStepDescBase*                          StepDesc;                                          // 0x98(0x8)
-	Class TaleQuestStep*                                         Body;                                              // 0xa0(0x8)
-	int                                                          CurrentIndex;                                      // 0xa8(0x4)
+	TArray<Struct BodyFramePair>                                 Bodies;                                            // 0x90(0x10)
+};
+
+
+// Size 0x0
+class TaleQuestForEachAnyStep: public TaleQuestForEachStepBase
+{
+public:
+};
+
+
+// Size 0x40
+class TaleQuestForEachSequential: public TaleQuestForEachStepBase
+{
+public:
+	Class TaleQuestIndexedFrame*                                 Frame;                                             // 0xa0(0x8)
+};
+
+
+// Size 0x0
+class TaleQuestForEachUnionStep: public TaleQuestForEachStepBase
+{
+public:
 };
 
 
 // Size 0x0
 class TaleQuestGetCollectionItemCountStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestGetParticipatingCrewsStep: public TaleQuestStep
 {
 public:
 };
@@ -704,6 +797,16 @@ public:
 };
 
 
+// Size 0x48
+class FindItemInCollectorsChestStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    CollectorsChest;                                   // 0x80(0x20)
+	Struct QuestVariableActor                                    ItemInChest;                                       // 0xa0(0x20)
+	class                                                        ItemToFind;                                        // 0xc0(0x8)
+};
+
+
 // Size 0x70
 class FindNamedPointStepDescBase: public TaleQuestStepDesc
 {
@@ -737,6 +840,15 @@ class FindNamedPointAsTransformStepDesc: public FindNamedPointStepDescBase
 {
 public:
 	Struct QuestVariableTransform                                OutputTransform;                                   // 0xf0(0x28)
+};
+
+
+// Size 0x40
+class ForceCannonLoadStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    Cannon;                                            // 0x80(0x20)
+	Struct QuestVariableActor                                    Projectile;                                        // 0xa0(0x20)
 };
 
 
@@ -782,6 +894,17 @@ public:
 	bool                                                         AttachToTargetActor;                               // 0xf0(0x1)
 	struct FName                                                 AttachSocketName;                                  // 0xf4(0x8)
 	bool                                                         PlayGlobally;                                      // 0xfc(0x1)
+};
+
+
+// Size 0x60
+class OverrideManagedActorStateStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x20)
+	bool                                                         TrackActor;                                        // 0xa0(0x1)
+	bool                                                         MarkAsCritical;                                    // 0xa1(0x1)
+	Struct FText                                                 CriticalActorLostMessage;                          // 0xa8(0x38)
 };
 
 
@@ -931,6 +1054,54 @@ public:
 };
 
 
+// Size 0x10
+class TaleQuestArrayItemStepBaseDesc: public TaleQuestStepDesc
+{
+public:
+	struct FName                                                 ArrayVar;                                          // 0x80(0x8)
+	struct FName                                                 ItemVar;                                           // 0x88(0x8)
+};
+
+
+// Size 0x0
+class TaleQuestAddToArrayStepDesc: public TaleQuestArrayItemStepBaseDesc
+{
+public:
+};
+
+
+// Size 0x20
+class TaleQuestArrayContainsStepDesc: public TaleQuestArrayItemStepBaseDesc
+{
+public:
+	Struct QuestVariableBool                                     Result;                                            // 0x90(0x20)
+};
+
+
+// Size 0x18
+class TaleQuestArrayOperationStepBaseDesc: public TaleQuestStepDesc
+{
+public:
+	struct FName                                                 Array1;                                            // 0x80(0x8)
+	struct FName                                                 Array2;                                            // 0x88(0x8)
+	struct FName                                                 Result;                                            // 0x90(0x8)
+};
+
+
+// Size 0x0
+class TaleQuestArrayAppendStepDesc: public TaleQuestArrayOperationStepBaseDesc
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestArrayUnionStepDesc: public TaleQuestArrayOperationStepBaseDesc
+{
+public:
+};
+
+
 // Size 0x68
 class TaleQuestChooseIslandFromWeightsStepDesc: public TaleQuestStepDesc
 {
@@ -997,19 +1168,40 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x0
+class ValueProviderStepInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x28
 class TaleQuestForEachStepDescBase: public TaleQuestStepDesc
 {
 public:
-	struct FName                                                 Collection;                                        // 0x80(0x8)
-	Class TaleQuestStepDesc*                                     Body;                                              // 0x88(0x8)
-	struct FName                                                 KeyPinName;                                        // 0x90(0x8)
-	struct FName                                                 ItemPinName;                                       // 0x98(0x8)
+	struct FName                                                 Collection;                                        // 0x88(0x8)
+	Class TaleQuestStepDesc*                                     Body;                                              // 0x90(0x8)
+	struct FName                                                 KeyPinName;                                        // 0x98(0x8)
+	struct FName                                                 ItemPinName;                                       // 0xa0(0x8)
+};
+
+
+// Size 0x0
+class TaleQuestForEachAnyStepDesc: public TaleQuestForEachStepDescBase
+{
+public:
 };
 
 
 // Size 0x0
 class TaleQuestForEachSequentialDesc: public TaleQuestForEachStepDescBase
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestForEachUnionStepDesc: public TaleQuestForEachStepDescBase
 {
 public:
 };
@@ -1021,6 +1213,14 @@ class TaleQuestGetCollectionItemCountStepDesc: public TaleQuestStepDesc
 public:
 	Struct QuestVariableCollection                               Collection;                                        // 0x80(0x20)
 	Struct QuestVariableInt                                      Num;                                               // 0xa0(0x20)
+};
+
+
+// Size 0x20
+class TaleQuestGetParticipatingCrewsStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x20)
 };
 
 
@@ -1074,6 +1274,22 @@ public:
 class TaleQuestMakeStructStepDesc: public TaleQuestStructStepDescBase
 {
 public:
+};
+
+
+// Size 0x8
+class TaleQuestTaskStepDescBase: public TaleQuestStepDesc
+{
+public:
+	Class TaleQuestStepDesc*                                     Task;                                              // 0x80(0x8)
+};
+
+
+// Size 0x20
+class TaleQuestCrewTaskStepDesc: public TaleQuestTaskStepDescBase
+{
+public:
+	Struct QuestVariableGuid                                     CrewId;                                            // 0x88(0x20)
 };
 
 

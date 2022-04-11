@@ -84,12 +84,60 @@ BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C:
   FullSize: '0x710'
   InheritedSize: '0x6f0'
   Super: BuoyantStorageContainer
-BP_TaleBook_FateOfTheMorningstar_AdditionalPuzzles_C:
+BP_MermaidGem_ItemInfo_Emerald_C:
   Attributes: []
-  ClassSize: '-0x11'
-  FullSize: '-0x1'
-  InheritedSize: '0x10'
-  Super: EventWieldableItemUseStoppedAndFullyHidden
+  ClassSize: '-0x26bebb0d'
+  FullSize: '-0x264fbaa0'
+  InheritedSize: '0x6f006d'
+  Super: None
+BP_MermaidGem_ItemInfo_Ruby_C:
+  Attributes: []
+  ClassSize: '0x20003'
+  FullSize: '0x20003'
+  InheritedSize: '0x0'
+  Super: None
+BP_MermaidGem_ItemInfo_Sapphire_C:
+  Attributes:
+  - Name: StaticMeshComponent07
+    Offset: '0x410'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMeshComponent06
+    Offset: '0x418'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMeshComponent05
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMeshComponent04
+    Offset: '0x428'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMeshComponent03
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMeshComponent02
+    Offset: '0x438'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMeshComponent01
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMeshComponent0
+    Offset: '0x448'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: SharedRoot
+    Offset: '0x450'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x48'
+  FullSize: '0x458'
+  InheritedSize: '0x410'
+  Super: BP_Placement_HeightDrop_C
 BP_fod_EarthwormsFresh_00_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

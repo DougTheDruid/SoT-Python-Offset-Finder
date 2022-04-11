@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "NPCDialog",
+        "Name": "None",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x4e8"
       },
       {
-        "Name": "Books",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x4f8"

@@ -8,8 +8,8 @@
   },
   "LookingAtMysteriousNoteInputComponent": {
     "Super": "LookingAtWieldableInputComponent",
-    "FullSize": "0x2b0",
-    "InheritedSize": "0x280",
+    "FullSize": "0x2d0",
+    "InheritedSize": "0x2a0",
     "ClassSize": "0x30",
     "Attributes": []
   },
@@ -172,9 +172,9 @@
   },
   "PlayerMysteriousNoteComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x238",
+    "FullSize": "0x250",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x170",
+    "ClassSize": "0x188",
     "Attributes": [
       {
         "Name": "NoteData",
@@ -198,9 +198,9 @@
   },
   "WieldableMysteriousNote": {
     "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x940",
+    "FullSize": "0x930",
     "InheritedSize": "0x790",
-    "ClassSize": "0x1b0",
+    "ClassSize": "0x1a0",
     "Attributes": [
       {
         "Name": "RenderTarget",
@@ -233,22 +233,16 @@
         "Offset": "0x7b8"
       },
       {
-        "Name": "NamedNotificationInputComponent",
-        "Type": "Class NamedNotificationInputComponent*",
-        "Size": "0x8",
-        "Offset": "0x810"
-      },
-      {
         "Name": "UsableWieldableComponent",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x818"
+        "Offset": "0x810"
       },
       {
         "Name": "InventoryItemComponent",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x820"
+        "Offset": "0x818"
       }
     ]
   },

@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_TaleBook_SunkenCrystal_C: public VoyageProposalContainer
 {
 public:
-	Class ArrowComponent*                                        Arrow;                                             // 0x768(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x770(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x778(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x780(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x788(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x790(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x798(0x8)
+	Class ArrowComponent*                                        None;                                              // 0x768(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x798(0x8)
 };
 
 
@@ -24,13 +24,13 @@ public:
 class BP_TaleBook_LordsOfTheSea_C: public VoyageProposalContainer
 {
 public:
-	Class ArrowComponent*                                        Arrow;                                             // 0x768(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x770(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x778(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x780(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x788(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x790(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x798(0x8)
+	Class ArrowComponent*                                        None;                                              // 0x768(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x798(0x8)
 };
 
 
@@ -38,13 +38,13 @@ public:
 class BP_TaleBook_DarkBrethren_C: public VoyageProposalContainer
 {
 public:
-	Class ArrowComponent*                                        Arrow;                                             // 0x768(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x770(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x778(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x780(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x788(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x790(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x798(0x8)
+	Class ArrowComponent*                                        None;                                              // 0x768(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x798(0x8)
 };
 
 
@@ -52,13 +52,13 @@ public:
 class BP_TaleBook_CaptainsOfTheDamned_C: public VoyageProposalContainer
 {
 public:
-	Class ArrowComponent*                                        Arrow;                                             // 0x768(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x770(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x778(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x780(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x788(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x790(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x798(0x8)
+	Class ArrowComponent*                                        None;                                              // 0x768(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x798(0x8)
 };
 
 
@@ -66,13 +66,13 @@ public:
 class BP_TaleBook_APiratesLife_C: public VoyageProposalContainer
 {
 public:
-	Class ArrowComponent*                                        Arrow;                                             // 0x768(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x770(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x778(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x780(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x788(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x790(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x798(0x8)
+	Class ArrowComponent*                                        None;                                              // 0x768(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x798(0x8)
 };
 
 

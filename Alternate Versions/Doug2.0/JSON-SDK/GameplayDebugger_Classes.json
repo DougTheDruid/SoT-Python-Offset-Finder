@@ -1,195 +1,195 @@
 {
   "GameplayDebuggingComponent": {
     "Super": "PrimitiveComponent",
-    "FullSize": "0x7e0",
-    "InheritedSize": "0x5b0",
+    "FullSize": "0x7f0",
+    "InheritedSize": "0x5c0",
     "ClassSize": "0x230",
     "Attributes": [
       {
         "Name": "DebugComponentClassName",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x5b0"
+        "Offset": "0x5c0"
       },
       {
         "Name": "ShowExtendedInformatiomCounter",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x5c0"
+        "Offset": "0x5d0"
       },
       {
         "Name": "ReplicateViewDataCounters",
         "Type": "TArray<Int ReplicateViewDataCounters>",
         "Size": "0x10",
-        "Offset": "0x5c8"
+        "Offset": "0x5d8"
       },
       {
         "Name": "ControllerName",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x5d8"
+        "Offset": "0x5e8"
       },
       {
         "Name": "PawnName",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x5e8"
+        "Offset": "0x5f8"
       },
       {
         "Name": "PawnClass",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x5f8"
+        "Offset": "0x608"
       },
       {
         "Name": "DebugIcon",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x608"
+        "Offset": "0x618"
       },
       {
         "Name": "MovementBaseInfo",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x618"
+        "Offset": "0x628"
       },
       {
         "Name": "MovementModeInfo",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x628"
+        "Offset": "0x638"
       },
       {
         "Name": "PathFollowingInfo",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x638"
+        "Offset": "0x648"
       },
       {
         "Name": "CurrentAITask",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x648"
+        "Offset": "0x658"
       },
       {
         "Name": "CurrentAIState",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x658"
+        "Offset": "0x668"
       },
       {
         "Name": "CurrentAIAssets",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x668"
+        "Offset": "0x678"
       },
       {
         "Name": "GameplayTasksState",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x678"
+        "Offset": "0x688"
       },
       {
         "Name": "NavDataInfo",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x688"
+        "Offset": "0x698"
       },
       {
         "Name": "AbilityInfo",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x698"
+        "Offset": "0x6a8"
       },
       {
         "Name": "MontageInfo",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x6a8"
+        "Offset": "0x6b8"
       },
       {
         "Name": "BrainComponentName",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x6b8"
+        "Offset": "0x6c8"
       },
       {
         "Name": "BrainComponentString",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x6c8"
+        "Offset": "0x6d8"
       },
       {
         "Name": "BlackboardRepData",
         "Type": "TArray<Byte BlackboardRepData>",
         "Size": "0x10",
-        "Offset": "0x6d8"
+        "Offset": "0x6e8"
       },
       {
         "Name": "PathPoints",
         "Type": "TArray<Struct Vector>",
         "Size": "0x10",
-        "Offset": "0x6f8"
+        "Offset": "0x708"
       },
       {
         "Name": "PathCorridorData",
         "Type": "TArray<Byte PathCorridorData>",
         "Size": "0x10",
-        "Offset": "0x708"
+        "Offset": "0x718"
       },
       {
         "Name": "NavmeshRepData",
         "Type": "TArray<Byte NavmeshRepData>",
         "Size": "0x10",
-        "Offset": "0x728"
+        "Offset": "0x738"
       },
       {
         "Name": "EQSRepData",
         "Type": "TArray<Byte EQSRepData>",
         "Size": "0x10",
-        "Offset": "0x738"
+        "Offset": "0x748"
       },
       {
         "Name": "SensingComponentLocation",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x748"
+        "Offset": "0x758"
       },
       {
         "Name": "NextPathPointIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x754"
+        "Offset": "0x764"
       },
       {
         "Name": "bIsUsingPathFollowing",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x758"
+        "Offset": "0x768"
       },
       {
         "Name": "bIsUsingCharacter",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x758"
+        "Offset": "0x768"
       },
       {
         "Name": "bIsUsingBehaviorTree",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x758"
+        "Offset": "0x768"
       },
       {
         "Name": "bIsUsingAbilities",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x758"
+        "Offset": "0x768"
       },
       {
         "Name": "TargetActor",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x760"
+        "Offset": "0x770"
       }
     ]
   },

@@ -28,18 +28,19 @@ public:
 };
 
 
-// Size 0x98
-class RegionalAssetCache: public Object
-{
-public:
-};
-
-
 // Size 0x10
 class RegionalAssetListDataAsset: public DataAsset
 {
 public:
 	TArray<Struct StringAssetReference>                          RegionAssets;                                      // 0x28(0x10)
+};
+
+
+// Size 0xb0
+class RegionalAssetCache: public Object
+{
+public:
+	Class RegionalAssetListDataAsset*                            CurrentListAsset;                                  // 0x38(0x8)
 };
 
 

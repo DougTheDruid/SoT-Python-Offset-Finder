@@ -53,90 +53,90 @@ AIAnimationStateInterface:
 AIBoobyTrapSpawner:
   Attributes:
   - Name: NumberOfWavesToSpawn
-    Offset: '0x610'
+    Offset: '0x618'
     Size: '0x4'
     Type: int
   - Name: NewWaveSpawnSfx
-    Offset: '0x618'
+    Offset: '0x620'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: NewWaveSpawnSfxTriggerRadius
-    Offset: '0x620'
+    Offset: '0x628'
     Size: '0x4'
     Type: float
   - Name: ShowNameplatesFor
-    Offset: '0x628'
+    Offset: '0x630'
     Size: '0x10'
     Type: TArray<Class ShowNameplatesFor>
   - Name: NamedAIDataAsset
-    Offset: '0x638'
+    Offset: '0x640'
     Size: '0x8'
     Type: Class NamedAIDataAsset*
   - Name: ActorToTrack
-    Offset: '0x640'
+    Offset: '0x648'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0xd0'
-  FullSize: '0x6e0'
-  InheritedSize: '0x610'
+  FullSize: '0x6e8'
+  InheritedSize: '0x618'
   Super: AIPerPlayerSpawner
 AIBountySpawner:
   Attributes:
   - Name: MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x4'
     Type: float
   - Name: WaveGroups
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x10'
     Type: TArray<Struct AIBountySpawnerWaveGroup>
   - Name: TeamColor
-    Offset: '0x440'
+    Offset: '0x448'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: WavesPerRelocate
-    Offset: '0x450'
+    Offset: '0x458'
     Size: '0x20'
     Type: Struct WeightedProbabilityRange
   - Name: WaveSplitChance
-    Offset: '0x470'
+    Offset: '0x478'
     Size: '0x20'
     Type: Struct WeightedProbabilityRange
   - Name: WaveSuicideTime
-    Offset: '0x490'
+    Offset: '0x498'
     Size: '0x10'
     Type: TArray<Float WaveSuicideTime>
   - Name: WaveSuicideMinDist
-    Offset: '0x4a0'
+    Offset: '0x4a8'
     Size: '0x4'
     Type: float
   - Name: ImmediatelyPerceiveTargets
-    Offset: '0x4a4'
+    Offset: '0x4ac'
     Size: '0x1'
     Type: bool
   - Name: ActiveCombatDialogue
-    Offset: '0x4a8'
+    Offset: '0x4b0'
     Size: '0x8'
     Type: Class AICombatDialogue*
   - Name: CrewMembers
-    Offset: '0x4d8'
+    Offset: '0x4e0'
     Size: '0x10'
     Type: TArray<class CrewMembers*>
   - Name: NonCrewMembersInRegion
-    Offset: '0x4e8'
+    Offset: '0x4f0'
     Size: '0x10'
     Type: TArray<class NonCrewMembersInRegion*>
   - Name: AllParticipatingPlayers
-    Offset: '0x4f8'
+    Offset: '0x500'
     Size: '0x10'
     Type: TArray<class AllParticipatingPlayers*>
   - Name: AudioZoneTriggerComponent
-    Offset: '0x508'
+    Offset: '0x510'
     Size: '0x8'
     Type: Class OverlapTriggerComponent*
   ClassSize: '0x180'
-  FullSize: '0x5a8'
-  InheritedSize: '0x428'
+  FullSize: '0x5b0'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIChargeUpInterruptedStatus:
   Attributes: []
@@ -471,56 +471,56 @@ AIDioramaDesc:
 AIDioramaLocationSourceComponent:
   Attributes:
   - Name: DioramaRelativeLocations
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x10'
     Type: TArray<Struct AIDioramaLocationSourceComponentData>
   - Name: DialogueTriggerRadius
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x4'
     Type: float
   - Name: DialogueSubtitleBuffer
-    Offset: '0x2f4'
+    Offset: '0x304'
     Size: '0x4'
     Type: float
   - Name: AISenseRadiusForDebugDisplay
-    Offset: '0x2f8'
+    Offset: '0x308'
     Size: '0x4'
     Type: float
   - Name: Categories
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x10'
     Type: TArray<Class Categories>
   - Name: FeatureToggle
-    Offset: '0x310'
+    Offset: '0x320'
     Size: '0x8'
     Type: struct FName
   - Name: DebugTriggerRadiusColor
-    Offset: '0x318'
+    Offset: '0x328'
     Size: '0x4'
     Type: Struct Color
   - Name: DebugSubtitleRadiusColor
-    Offset: '0x31c'
+    Offset: '0x32c'
     Size: '0x4'
     Type: Struct Color
   - Name: AISenseRadiusColor
-    Offset: '0x320'
+    Offset: '0x330'
     Size: '0x4'
     Type: Struct Color
   - Name: DialogueTriggerRadiusSphere
-    Offset: '0x328'
-    Size: '0x8'
-    Type: Class SphereComponent*
-  - Name: DialogueSubtitleRadiusSphere
-    Offset: '0x330'
-    Size: '0x8'
-    Type: Class SphereComponent*
-  - Name: AISenseRadiusSphere
     Offset: '0x338'
     Size: '0x8'
     Type: Class SphereComponent*
+  - Name: DialogueSubtitleRadiusSphere
+    Offset: '0x340'
+    Size: '0x8'
+    Type: Class SphereComponent*
+  - Name: AISenseRadiusSphere
+    Offset: '0x348'
+    Size: '0x8'
+    Type: Class SphereComponent*
   ClassSize: '0x90'
-  FullSize: '0x360'
-  InheritedSize: '0x2d0'
+  FullSize: '0x370'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 AIDioramaLocationSourceInterface:
   Attributes: []
@@ -769,34 +769,34 @@ AIEncounterSettingsRankProgression:
 AIFaunaSpawner:
   Attributes:
   - Name: FaunaWave
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x110'
     Type: Struct AIFaunaSpawnerWave
   - Name: FaunaLeader
-    Offset: '0x548'
+    Offset: '0x550'
     Size: '0x8'
     Type: Class Actor*
   - Name: PlayersInSpawnArea
-    Offset: '0x560'
+    Offset: '0x568'
     Size: '0x10'
     Type: TArray<class PlayersInSpawnArea*>
   ClassSize: '0x148'
-  FullSize: '0x570'
-  InheritedSize: '0x428'
+  FullSize: '0x578'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIFixedWavesSpawner:
   Attributes:
   - Name: SpawnedWaves
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x10'
     Type: TArray<Struct AIPersistentSpawnerWave>
   - Name: NumWavesToSpawnOnSpottedNewTarget
-    Offset: '0x438'
+    Offset: '0x440'
     Size: '0x4'
     Type: int
   ClassSize: '0x40'
-  FullSize: '0x468'
-  InheritedSize: '0x428'
+  FullSize: '0x470'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIFormItemSpawnRequirement:
   Attributes:
@@ -855,12 +855,12 @@ AIIdentifierOwnerInterface:
 AIIncrementalWaveSpawner:
   Attributes:
   - Name: SpawnedWave
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x100'
     Type: Struct AISpawnerWave
   ClassSize: '0x118'
-  FullSize: '0x540'
-  InheritedSize: '0x428'
+  FullSize: '0x548'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIInteractableComponent:
   Attributes:
@@ -895,52 +895,52 @@ AIInteractableOperatorInterface:
 AIInteractableSpawner:
   Attributes:
   - Name: AIInteractableType
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x8'
     Type: class
   - Name: InhabitedChance
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x4'
     Type: float
   - Name: DelayAfterSuccessfulInhabitedCheck
-    Offset: '0x438'
+    Offset: '0x440'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: DelayAfterFailedInhabitedCheck
-    Offset: '0x468'
+    Offset: '0x470'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: SpawnForInteractableChance
-    Offset: '0x498'
+    Offset: '0x4a0'
     Size: '0x4'
     Type: float
   - Name: DelayAfterSuccessfulSpawnOnInteractableCheck
-    Offset: '0x4a0'
+    Offset: '0x4a8'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: DelayAfterFailedSpawnOnInteractableCheck
-    Offset: '0x4d0'
+    Offset: '0x4d8'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: RunInhabitedSimulation
-    Offset: '0x500'
+    Offset: '0x508'
     Size: '0x1'
     Type: bool
   - Name: RunSpawnForInteractableSimulation
-    Offset: '0x501'
+    Offset: '0x509'
     Size: '0x1'
     Type: bool
   - Name: NumIterations
-    Offset: '0x504'
+    Offset: '0x50c'
     Size: '0x4'
     Type: int
   - Name: CachedPlaymode
-    Offset: '0x520'
+    Offset: '0x528'
     Size: '0x1'
     Type: byte
   ClassSize: '0x100'
-  FullSize: '0x528'
-  InheritedSize: '0x428'
+  FullSize: '0x530'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIInteractableType:
   Attributes: []
@@ -977,12 +977,12 @@ AIItemParameterInterface:
 AIItemSpawnDataSourceComponent:
   Attributes:
   - Name: ItemSpawnDataAsset
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: Class ItemSpawnTransformWithRandomQuantityDataAssset*
   ClassSize: '0x10'
-  FullSize: '0x2e0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x2f0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 AIItemSpawnDataSourceInterface:
   Attributes: []
@@ -1113,40 +1113,40 @@ AIManagerServiceInterface:
 AINameplateComponent:
   Attributes:
   - Name: VisibleFromWorldDistance
-    Offset: '0x308'
+    Offset: '0x318'
     Size: '0x4'
     Type: float
   - Name: VisibleUntilWorldDistance
-    Offset: '0x30c'
+    Offset: '0x31c'
     Size: '0x4'
     Type: float
   - Name: VisibleAfterDeathDuration
-    Offset: '0x310'
+    Offset: '0x320'
     Size: '0x4'
     Type: float
   - Name: Title
-    Offset: '0x318'
+    Offset: '0x328'
     Size: '0x38'
     Type: Struct FText
   - Name: DisplayName
-    Offset: '0x350'
+    Offset: '0x360'
     Size: '0x38'
     Type: Struct FText
   - Name: DisplayNameAsString
-    Offset: '0x388'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: DebugDisplayText
     Offset: '0x398'
     Size: '0x10'
     Type: Struct FString
-  - Name: VisibilityDisabled
+  - Name: DebugDisplayText
     Offset: '0x3a8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: VisibilityDisabled
+    Offset: '0x3b8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x170'
-  FullSize: '0x470'
-  InheritedSize: '0x300'
+  FullSize: '0x480'
+  InheritedSize: '0x310'
   Super: NameplateComponent
 AINoiseFireInstigator:
   Attributes: []
@@ -1157,8 +1157,8 @@ AINoiseFireInstigator:
 AIOnDemandSpawner:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x428'
-  InheritedSize: '0x428'
+  FullSize: '0x430'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIPartCustomizationInterface:
   Attributes: []
@@ -1277,86 +1277,86 @@ AIPawnTurnActiveInterface:
 AIPerCrewSpawner:
   Attributes:
   - Name: DefaultRespawnTimerRanges
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class AIWeightedProbabilityRangeOfRangesRankProgression*
   - Name: MaxNumOfCrewsToSpawnFor
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x4'
     Type: int
   - Name: ActivateBySettingFootOnIsland
-    Offset: '0x434'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   - Name: UseRespawnTimerForFirstSpawn
-    Offset: '0x435'
+    Offset: '0x43d'
     Size: '0x1'
     Type: bool
   - Name: AssociateSpawnsWithSpecificCrews
-    Offset: '0x436'
+    Offset: '0x43e'
     Size: '0x1'
     Type: bool
   - Name: PerceiveTriggerActorOnSpawn
-    Offset: '0x437'
+    Offset: '0x43f'
     Size: '0x1'
     Type: bool
   - Name: EnforceRespawnTimeAfterCrewLeaves
-    Offset: '0x438'
+    Offset: '0x440'
     Size: '0x1'
     Type: bool
   - Name: IgnoreSpawningGracePeriodForNewCrew
-    Offset: '0x439'
+    Offset: '0x441'
     Size: '0x1'
     Type: bool
   ClassSize: '0x138'
-  FullSize: '0x560'
-  InheritedSize: '0x428'
+  FullSize: '0x568'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIPerPlayerSpawner:
   Attributes:
   - Name: CheckSpawnedActorsInRadiusBeforeSpawning
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x1'
     Type: bool
   - Name: RadiusToCheckForExistingPopulation
-    Offset: '0x42c'
+    Offset: '0x434'
     Size: '0x4'
     Type: float
   - Name: MaxExistingPopulationInRadius
-    Offset: '0x430'
-    Size: '0x4'
-    Type: int
-  - Name: DespawnAllPawnsWhenAllPlayersLeave
-    Offset: '0x434'
-    Size: '0x1'
-    Type: bool
-  - Name: MaxActorsTotalPerPlayer
     Offset: '0x438'
     Size: '0x4'
     Type: int
-  - Name: RunSimulation
+  - Name: DespawnAllPawnsWhenAllPlayersLeave
     Offset: '0x43c'
     Size: '0x1'
     Type: bool
-  - Name: RankForSimulation
+  - Name: MaxActorsTotalPerPlayer
     Offset: '0x440'
     Size: '0x4'
     Type: int
-  - Name: NumIterations
+  - Name: RunSimulation
     Offset: '0x444'
+    Size: '0x1'
+    Type: bool
+  - Name: RankForSimulation
+    Offset: '0x448'
+    Size: '0x4'
+    Type: int
+  - Name: NumIterations
+    Offset: '0x44c'
     Size: '0x4'
     Type: int
   - Name: WantsToTemporarilyRememberPlayers
-    Offset: '0x448'
+    Offset: '0x450'
     Size: '0x1'
     Type: bool
   - Name: TemporaryPlayerMemoryTimeRange
-    Offset: '0x450'
+    Offset: '0x458'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x1e8'
-  FullSize: '0x610'
-  InheritedSize: '0x428'
+  FullSize: '0x618'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIPlayerTracker:
   Attributes: []
@@ -1379,20 +1379,20 @@ AIPlayerTrackerObserverInterface:
 AIProgressiveWavesSpawner:
   Attributes:
   - Name: ApplyLocalisableNamesToNameplates
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x1'
     Type: bool
   - Name: Waves
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x10'
     Type: TArray<Struct AIPersistentSpawnerWave>
   - Name: TriggerActor
-    Offset: '0x458'
+    Offset: '0x460'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x38'
-  FullSize: '0x460'
-  InheritedSize: '0x428'
+  FullSize: '0x468'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIProjectileInterface:
   Attributes: []
@@ -1409,24 +1409,24 @@ AIProximityPlayerTracker:
 AIRegionComponent:
   Attributes:
   - Name: UpdateRegionPosition
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x1'
     Type: bool
   - Name: NavMeshAgentType
-    Offset: '0x2dc'
+    Offset: '0x2ec'
     Size: '0x8'
     Type: struct FName
   - Name: RegionRadius
-    Offset: '0x2e4'
+    Offset: '0x2f4'
     Size: '0x4'
     Type: float
   - Name: SpawnLocationGroups
-    Offset: '0x2e8'
+    Offset: '0x2f8'
     Size: '0x10'
     Type: TArray<Struct SpawnLocationGroup>
   ClassSize: '0x70'
-  FullSize: '0x340'
-  InheritedSize: '0x2d0'
+  FullSize: '0x350'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 AIRegionInterface:
   Attributes: []
@@ -1587,8 +1587,8 @@ AISpawnOverrideCondition:
 AISpawnPointSeedComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x2d0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x2e0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 AISpawnRegionInterface:
   Attributes: []
@@ -1688,12 +1688,16 @@ AISpawner:
     Offset: '0xe0'
     Size: '0x10'
     Type: TArray<Struct AdditionalSpawnerBehaviour>
+  - Name: EnforceHomePosition
+    Offset: '0xf0'
+    Size: '0x1'
+    Type: bool
   - Name: AthenaAISettings
-    Offset: '0x360'
+    Offset: '0x368'
     Size: '0x8'
     Type: Class AthenaAISettings*
-  ClassSize: '0x400'
-  FullSize: '0x428'
+  ClassSize: '0x408'
+  FullSize: '0x430'
   InheritedSize: '0x28'
   Super: DataAsset
 AISpawnerList:
@@ -1765,20 +1769,20 @@ AITargetWeaponInterface:
 AIWaveSpawner:
   Attributes:
   - Name: SpawnedWave
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x100'
     Type: Struct AISpawnerWave
   - Name: MinRespawnTime
-    Offset: '0x530'
+    Offset: '0x538'
     Size: '0x4'
     Type: float
   - Name: MaxRespawnTime
-    Offset: '0x534'
+    Offset: '0x53c'
     Size: '0x4'
     Type: float
   ClassSize: '0x138'
-  FullSize: '0x560'
-  InheritedSize: '0x428'
+  FullSize: '0x568'
+  InheritedSize: '0x430'
   Super: AISpawner
 AIWeightedProbabilityRangeOfRangesAsset:
   Attributes:
@@ -5598,8 +5602,12 @@ Fauna:
     Offset: '0xb18'
     Size: '0x8'
     Type: Class VenomComponent*
-  - Name: CurrentShip
+  - Name: PathFollowingComponent
     Offset: '0xb20'
+    Size: '0x8'
+    Type: Class AthenaAICharacterPathFollowingComponent*
+  - Name: CurrentShip
+    Offset: '0xb28'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x3b0'
@@ -6135,12 +6143,12 @@ PetDitherComponent:
 PetNameplateComponent:
   Attributes:
   - Name: DefaultPetName
-    Offset: '0x468'
+    Offset: '0x478'
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x20'
-  FullSize: '0x490'
-  InheritedSize: '0x470'
+  FullSize: '0x4a0'
+  InheritedSize: '0x480'
   Super: AINameplateComponent
 PetPartCustomisationComponent:
   Attributes:
@@ -6586,6 +6594,52 @@ TaleQuestGetTinySharkPawnDesc:
   FullSize: '0xa8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestShroudedDeepSGExperienceTracker:
+  Attributes:
+  - Name: TrackingLocation
+    Offset: '0x70'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: InnerSafezoneRadius
+    Offset: '0x78'
+    Size: '0x4'
+    Type: float
+  - Name: TargetWeightSloop
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: float
+  - Name: TargetWeightBrig
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  - Name: TargetWeightGaleon
+    Offset: '0x84'
+    Size: '0x4'
+    Type: float
+  - Name: ExperienceRadiusConsiderationRatio
+    Offset: '0x88'
+    Size: '0x4'
+    Type: float
+  - Name: ShipInsideExperiencePreference
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: float
+  - Name: ShipNearExperiencePreference
+    Offset: '0x90'
+    Size: '0x4'
+    Type: float
+  - Name: ShipNearKillerWhalePreference
+    Offset: '0x94'
+    Size: '0x4'
+    Type: float
+  - Name: ForceRetargetFrequency
+    Offset: '0x98'
+    Size: '0x30'
+    Type: Struct WeightedProbabilityRangeOfRanges
+  ClassSize: '0xc0'
+  FullSize: '0x130'
+  InheritedSize: '0x70'
+  Super: TaleQuestTinySharkExperienceTracker
 TaleQuestStartTinySharkExperienceStep:
   Attributes: []
   ClassSize: '0x0'
@@ -6610,22 +6664,40 @@ TaleQuestStartTinySharkExperienceStepDesc:
     Offset: '0x168'
     Size: '0x8'
     Type: Class Ship*
-  - Name: TinySharkExperience
+  - Name: ExperienceTracker
     Offset: '0x170'
+    Size: '0x8'
+    Type: Class TaleQuestTinySharkExperienceTracker*
+  - Name: FireTinySharkVariantDefeatedStats
+    Offset: '0x178'
+    Size: '0x1'
+    Type: bool
+  - Name: TinySharkExperience
+    Offset: '0x180'
     Size: '0x20'
     Type: Struct QuestVariableTinySharkExperience
-  ClassSize: '0x110'
-  FullSize: '0x190'
+  ClassSize: '0x120'
+  FullSize: '0x1a0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestTinySharkExperienceTracker:
+  Attributes:
+  - Name: UpdateFrequency
+    Offset: '0x60'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x48'
+  FullSize: '0x70'
+  InheritedSize: '0x28'
+  Super: Object
 TaleQuestTinySharkService:
   Attributes:
   - Name: ActiveExperiences
     Offset: '0x60'
     Size: '0x10'
     Type: TArray<class ActiveExperiences*>
-  ClassSize: '0x10'
-  FullSize: '0x70'
+  ClassSize: '0x78'
+  FullSize: '0xd8'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestTinySharkServiceDesc:
@@ -6654,40 +6726,44 @@ TinySharkExperience:
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class EnvQuery*
+  - Name: ShouldBlockMigrationForAllAttackingCrewsFromAnyDistance
+    Offset: '0x3e8'
+    Size: '0x1'
+    Type: bool
   - Name: TinySharkSpawner
-    Offset: '0x488'
+    Offset: '0x490'
     Size: '0x8'
     Type: Class AIOnDemandSpawner*
   - Name: TinySharkPawn
-    Offset: '0x490'
+    Offset: '0x498'
     Size: '0x8'
     Type: Class SharkPawn*
   - Name: HealthRTPC
-    Offset: '0x498'
+    Offset: '0x4a0'
     Size: '0x8'
     Type: struct FName
   - Name: Params
-    Offset: '0x4a8'
+    Offset: '0x4b0'
     Size: '0xb8'
     Type: Struct TinySharkParams
   - Name: TinySharkTelemetryComponent
-    Offset: '0x560'
+    Offset: '0x568'
     Size: '0x8'
     Type: Class TinySharkTelemetryComponent*
   - Name: TrackedShip
-    Offset: '0x568'
+    Offset: '0x570'
     Size: '0x8'
     Type: Class Ship*
   - Name: SightingEncounterParams
-    Offset: '0x5f0'
+    Offset: '0x5f8'
     Size: '0xc'
     Type: Struct EncounterParams
   - Name: CloseEncounterParams
-    Offset: '0x5fc'
+    Offset: '0x604'
     Size: '0xc'
     Type: Struct EncounterParams
-  ClassSize: '0x3a0'
-  FullSize: '0x770'
+  ClassSize: '0x410'
+  FullSize: '0x7e0'
   InheritedSize: '0x3d0'
   Super: Actor
 TinySharkParamsDataAsset:
@@ -6710,8 +6786,12 @@ TinySharkService:
     Offset: '0x558'
     Size: '0x10'
     Type: TArray<class TinySharkExperiences*>
-  ClassSize: '0x1b8'
-  FullSize: '0x588'
+  - Name: ExternallyManagedTinySharkExperiences
+    Offset: '0x568'
+    Size: '0x10'
+    Type: TArray<class ExternallyManagedTinySharkExperiences*>
+  ClassSize: '0x1c8'
+  FullSize: '0x598'
   InheritedSize: '0x3d0'
   Super: Actor
 TinySharkServiceInterface:

@@ -1,30 +1,30 @@
 {
   "BP_Innkeeper_Tracy_C": {
-    "Super": "BP_Innkeeper_C",
+    "Super": "None",
     "FullSize": "0x700",
     "InheritedSize": "0x6c8",
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x6c8"
       },
       {
-        "Name": "SFX_IdleLoopPlay",
+        "Name": "None",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x6d0"
       },
       {
-        "Name": "SFX_IdleLoopStop",
+        "Name": "None",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x6d8"
       },
       {
-        "Name": "InnkeeperEmitter",
+        "Name": "None",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x6e0"

@@ -7,14 +7,28 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_ShipwreckTreasureChest_Wieldable_Rare_C: public BP_TreasureChest_Wieldable_Rare_C
+class BP_ShipwreckTreasureChest_Wieldable_Rare_C: public None
 {
 public:
 };
 
 
 // Size 0x0
-class BP_ShipwreckTreasureChest_Proxy_Rare_C: public BP_TreasureChest_Proxy_Rare_C
+class BP_ShipwreckTreasureChest_Proxy_Rare_C: public None
+{
+public:
+};
+
+
+// Size 0x0
+class BP_ShipwreckTreasureChest_Wieldable_Common_C: public None
+{
+public:
+};
+
+
+// Size 0x0
+class BP_ShipwreckTreasureChest_Proxy_Common_C: public None
 {
 public:
 };

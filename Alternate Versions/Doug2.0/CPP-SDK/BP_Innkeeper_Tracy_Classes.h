@@ -7,13 +7,13 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x38
-class BP_Innkeeper_Tracy_C: public BP_Innkeeper_C
+class BP_Innkeeper_Tracy_C: public None
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x6c8(0x8)
-	Class WwiseEvent*                                            SFX_IdleLoopPlay;                                  // 0x6d0(0x8)
-	Class WwiseEvent*                                            SFX_IdleLoopStop;                                  // 0x6d8(0x8)
-	Struct WwiseEmitter                                          InnkeeperEmitter;                                  // 0x6e0(0x20)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x6c8(0x8)
+	Class WwiseEvent*                                            None;                                              // 0x6d0(0x8)
+	Class WwiseEvent*                                            None;                                              // 0x6d8(0x8)
+	Struct WwiseEmitter                                          None;                                              // 0x6e0(0x20)
 };
 
 

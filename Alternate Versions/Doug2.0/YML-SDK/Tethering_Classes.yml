@@ -3,16 +3,16 @@
 CordRenderComponent:
   Attributes:
   - Name: CordMaterials
-    Offset: '0x618'
+    Offset: '0x628'
     Size: '0x10'
     Type: TArray<class CordMaterials*>
   - Name: ThicknessCm
-    Offset: '0x628'
+    Offset: '0x638'
     Size: '0x4'
     Type: float
   ClassSize: '0x40'
-  FullSize: '0x650'
-  InheritedSize: '0x610'
+  FullSize: '0x660'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 CordRenderInterface:
   Attributes: []
@@ -57,42 +57,42 @@ DistanceJointComponent:
 DynamicCordRenderComponent:
   Attributes:
   - Name: BoundsPadding
-    Offset: '0x648'
+    Offset: '0x658'
     Size: '0x4'
     Type: float
   - Name: EndPointA
-    Offset: '0x650'
+    Offset: '0x660'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: EndPointB
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x60'
-  FullSize: '0x6b0'
-  InheritedSize: '0x650'
+  FullSize: '0x6c0'
+  InheritedSize: '0x660'
   Super: CordRenderComponent
 HarpoonRenderComponent:
   Attributes:
   - Name: HarpoonMaterials
-    Offset: '0x648'
+    Offset: '0x658'
     Size: '0x10'
     Type: TArray<class HarpoonMaterials*>
   - Name: LaunchAnimationDurationSecs
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x4'
     Type: float
   - Name: HitAnimationDurationSecs
-    Offset: '0x65c'
+    Offset: '0x66c'
     Size: '0x4'
     Type: float
   - Name: QuickRetractAnimationSpeed
-    Offset: '0x660'
+    Offset: '0x670'
     Size: '0x4'
     Type: float
   ClassSize: '0x20'
-  FullSize: '0x670'
-  InheritedSize: '0x650'
+  FullSize: '0x680'
+  InheritedSize: '0x660'
   Super: CordRenderComponent
 ShouldTetherInWorldSpaceInterface:
   Attributes: []

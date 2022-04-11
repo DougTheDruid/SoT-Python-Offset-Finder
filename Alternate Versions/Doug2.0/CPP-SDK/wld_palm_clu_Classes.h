@@ -6,33 +6,24 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
-class wld_palm_cluster_05_c_C: public BP_Placement_HeightDrop_C
+// Size 0x0
+class wld_palm_cluster_05_c_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh3;                                       // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x418(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x430(0x8)
 };
 
 
-// Size 0x10
-class wld_palm_cluster_05_b_C: public BP_Placement_HeightDrop_C
+// Size 0x80
+class wld_palm_cluster_05_b_C
 {
 public:
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x418(0x8)
 };
 
 
-// Size 0x10
-class wld_palm_cluster_05_a_C: public BP_Placement_HeightDrop_C
+// Size 0x420505f8
+class wld_palm_cluster_05_a_C: public None
 {
 public:
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x418(0x8)
 };
 
 

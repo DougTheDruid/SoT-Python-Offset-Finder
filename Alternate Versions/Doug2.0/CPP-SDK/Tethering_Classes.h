@@ -17,8 +17,8 @@ public:
 class CordRenderComponent: public StaticMeshComponent
 {
 public:
-	TArray<class CordMaterials*>                                 CordMaterials;                                     // 0x618(0x10)
-	float                                                        ThicknessCm;                                       // 0x628(0x4)
+	TArray<class CordMaterials*>                                 CordMaterials;                                     // 0x628(0x10)
+	float                                                        ThicknessCm;                                       // 0x638(0x4)
 };
 
 
@@ -26,9 +26,9 @@ public:
 class DynamicCordRenderComponent: public CordRenderComponent
 {
 public:
-	float                                                        BoundsPadding;                                     // 0x648(0x4)
-	Class SceneComponent*                                        EndPointA;                                         // 0x650(0x8)
-	Class SceneComponent*                                        EndPointB;                                         // 0x658(0x8)
+	float                                                        BoundsPadding;                                     // 0x658(0x4)
+	Class SceneComponent*                                        EndPointA;                                         // 0x660(0x8)
+	Class SceneComponent*                                        EndPointB;                                         // 0x668(0x8)
 };
 
 
@@ -36,10 +36,10 @@ public:
 class HarpoonRenderComponent: public CordRenderComponent
 {
 public:
-	TArray<class HarpoonMaterials*>                              HarpoonMaterials;                                  // 0x648(0x10)
-	float                                                        LaunchAnimationDurationSecs;                       // 0x658(0x4)
-	float                                                        HitAnimationDurationSecs;                          // 0x65c(0x4)
-	float                                                        QuickRetractAnimationSpeed;                        // 0x660(0x4)
+	TArray<class HarpoonMaterials*>                              HarpoonMaterials;                                  // 0x658(0x10)
+	float                                                        LaunchAnimationDurationSecs;                       // 0x668(0x4)
+	float                                                        HitAnimationDurationSecs;                          // 0x66c(0x4)
+	float                                                        QuickRetractAnimationSpeed;                        // 0x670(0x4)
 };
 
 

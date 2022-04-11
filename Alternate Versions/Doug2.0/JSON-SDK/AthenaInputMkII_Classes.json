@@ -1,37 +1,51 @@
 {
-  "AthenaCharacterBaseInputComponent": {
+  "AutoMoveInputComponent": {
     "Super": "InputComponent",
-    "FullSize": "0x278",
+    "FullSize": "0x170",
     "InheritedSize": "0x150",
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "AthenaCharacterBaseInputComponent": {
+    "Super": "AutoMoveInputComponent",
+    "FullSize": "0x298",
+    "InheritedSize": "0x170",
     "ClassSize": "0x128",
     "Attributes": []
   },
   "AthenaCharacterBaseInputComponentWithInterference": {
     "Super": "AthenaCharacterBaseInputComponent",
-    "FullSize": "0x280",
-    "InheritedSize": "0x278",
+    "FullSize": "0x2a0",
+    "InheritedSize": "0x298",
     "ClassSize": "0x8",
     "Attributes": []
   },
   "LookingAtWieldableInputComponent": {
     "Super": "AthenaCharacterBaseInputComponent",
-    "FullSize": "0x280",
-    "InheritedSize": "0x278",
+    "FullSize": "0x2a0",
+    "InheritedSize": "0x298",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "TargetWieldable",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x278"
+        "Offset": "0x298"
       }
     ]
   },
   "AthenaClampedFreelookInputComponent": {
     "Super": "AthenaCharacterBaseInputComponent",
-    "FullSize": "0x298",
-    "InheritedSize": "0x278",
+    "FullSize": "0x2b8",
+    "InheritedSize": "0x298",
     "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "MovementInterferenceComponent": {
+    "Super": "AutoMoveInputComponent",
+    "FullSize": "0x1e0",
+    "InheritedSize": "0x170",
+    "ClassSize": "0x70",
     "Attributes": []
   },
   "ClampedFreelookXAnalogInputId": {
@@ -60,13 +74,6 @@
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MovementInterferenceComponent": {
-    "Super": "InputComponent",
-    "FullSize": "0x1c0",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x70",
     "Attributes": []
   },
   "DougTheDruid": {

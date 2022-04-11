@@ -17,8 +17,8 @@ AnimNotifyState_WwiseSound:
 AnimNotifyWwiseEmitterComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x300'
-  InheritedSize: '0x300'
+  FullSize: '0x310'
+  InheritedSize: '0x310'
   Super: WwiseEmitterComponent
 AnimNotify_WwiseSound:
   Attributes:
@@ -89,32 +89,32 @@ AudioIslandStaticMeshAssociatorBase:
 AudioPortalComponent:
   Attributes:
   - Name: AudioInsideSpace
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: Class AudioSpaceDataAsset*
   - Name: AudioOutsideSpace
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: Class AudioSpaceDataAsset*
   - Name: PortalTriggerDistance
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x4'
     Type: float
   - Name: InsideRtpcUpdateDistance
-    Offset: '0x2e4'
+    Offset: '0x2f4'
     Size: '0x4'
     Type: float
   - Name: OutsideRtpcUpdateDistance
-    Offset: '0x2e8'
+    Offset: '0x2f8'
     Size: '0x4'
     Type: float
   - Name: TrackAttachmentToActor
-    Offset: '0x2ec'
+    Offset: '0x2fc'
     Size: '0x1'
     Type: bool
   ClassSize: '0x30'
-  FullSize: '0x300'
-  InheritedSize: '0x2d0'
+  FullSize: '0x310'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 AudioPortalInterface:
   Attributes: []
@@ -131,12 +131,12 @@ AudioPortalService:
 AudioSpaceComponent:
   Attributes:
   - Name: AudioSpace
-    Offset: '0x610'
+    Offset: '0x620'
     Size: '0x8'
     Type: Class AudioSpaceDataAsset*
   ClassSize: '0x10'
-  FullSize: '0x620'
-  InheritedSize: '0x610'
+  FullSize: '0x630'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 AudioSpaceDataAsset:
   Attributes:
@@ -185,12 +185,12 @@ StaticMeshAudioDataAsset:
 StaticMeshAudioEmittersComponent:
   Attributes:
   - Name: InstanceAssociations
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x10'
     Type: TArray<Struct StaticMeshComponentAudioAssociation>
   ClassSize: '0x10'
-  FullSize: '0x2e0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x2f0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 TritonAcousticMap:
   Attributes:
@@ -205,16 +205,16 @@ TritonAcousticMap:
 TritonComponent:
   Attributes:
   - Name: TritonMapAsset
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: Class TritonAcousticMap*
   - Name: TritonEffectRadius
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x4'
     Type: float
   ClassSize: '0x10'
-  FullSize: '0x2e0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x2f0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 TritonService:
   Attributes:
@@ -239,16 +239,16 @@ WwiseEmitterBlueprintLibrary:
 WwiseEmitterComponent:
   Attributes:
   - Name: Emitter
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x20'
     Type: Struct WwiseEmitter
   - Name: WwiseObjectPoolWrapper
-    Offset: '0x2f8'
+    Offset: '0x308'
     Size: '0x8'
     Type: Class WwiseObjectPoolWrapper*
   ClassSize: '0x30'
-  FullSize: '0x300'
-  InheritedSize: '0x2d0'
+  FullSize: '0x310'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 WwiseEmitterComponentBlueprintLibrary:
   Attributes: []

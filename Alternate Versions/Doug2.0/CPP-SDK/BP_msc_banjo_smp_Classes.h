@@ -13,15 +13,15 @@ public:
 };
 
 
-// Size 0x67abffff
-class BP_msc_banjo_smp_01_a_ItemInfo_C
+// Size 0x8
+class BP_msc_banjo_smp_01_a_v01_ItemInfo_C: public ItemInfo
 {
 public:
 };
 
 
-// Size 0x67abffff
-class BP_msc_banjo_smp_01_a_Wieldable_C
+// Size 0x18
+class BP_msc_banjo_smp_01_a_v01_Wieldable_C: public None
 {
 public:
 };

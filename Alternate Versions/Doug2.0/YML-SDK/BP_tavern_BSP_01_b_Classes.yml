@@ -582,11 +582,11 @@ BP_tavern_BSP_01_b_C:
     Offset: '0x850'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Light_ceiling
+  - Name: light_ceiling
     Offset: '0x858'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: Light_ceiling
+  - Name: light_ceiling
     Offset: '0x860'
     Size: '0x8'
     Type: Class SpotLightComponent*

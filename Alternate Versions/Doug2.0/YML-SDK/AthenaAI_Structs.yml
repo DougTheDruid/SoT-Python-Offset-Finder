@@ -1915,6 +1915,13 @@ EventVisualAppearanceSelected:
     Size: '0x4'
     Type: int
   ClassSize: '0x18'
+ExperienceTracker:
+  Attributes:
+  - Name: Tracker
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class TaleQuestTinySharkExperienceTracker*
+  ClassSize: '0x10'
 HearingThreat:
   Attributes:
   - Name: SoundTag
@@ -2096,9 +2103,6 @@ PlayerKillAITelemetryEvent:
     Size: '0x10'
     Type: Struct Guid
   ClassSize: '0x10'
-QuestVariableGuidArray:
-  Attributes: []
-  ClassSize: '0x20'
 QuestVariableSharkPawn:
   Attributes: []
   ClassSize: '0x20'

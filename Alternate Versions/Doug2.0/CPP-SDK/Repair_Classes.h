@@ -35,4 +35,11 @@ public:
 };
 
 
+// Size 0x0
+class ShipRepairInterface: public Interface
+{
+public:
+};
+
+
 }

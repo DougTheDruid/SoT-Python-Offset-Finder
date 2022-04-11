@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Figurehead_SmallShip_C:
   Attributes:
-  - Name: ParticleSystem
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: Figurehead
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*

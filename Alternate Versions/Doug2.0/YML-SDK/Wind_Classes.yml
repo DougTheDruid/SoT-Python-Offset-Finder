@@ -37,8 +37,8 @@ TestWindZone:
 TestWindZoneComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x360'
-  InheritedSize: '0x360'
+  FullSize: '0x370'
+  InheritedSize: '0x370'
   Super: WindZoneComponent
 WindFunctions:
   Attributes: []
@@ -87,16 +87,16 @@ WindServiceParamsFunctionLibrary:
 WindZoneComponent:
   Attributes:
   - Name: TurbulenceParams
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x70'
     Type: Struct WindTurbulenceParameters
   - Name: WindZoneParams
-    Offset: '0x348'
+    Offset: '0x358'
     Size: '0x10'
     Type: Struct WindZoneParams
   ClassSize: '0x90'
-  FullSize: '0x360'
-  InheritedSize: '0x2d0'
+  FullSize: '0x370'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 WindZoneInterface:
   Attributes: []

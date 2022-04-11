@@ -3,94 +3,94 @@
 SafeZoneComponent:
   Attributes:
   - Name: ExclusionRadius
-    Offset: '0x5e0'
+    Offset: '0x5f0'
     Size: '0x4'
     Type: float
   - Name: ExclusionHeight
-    Offset: '0x5e8'
-    Size: '0x4'
-    Type: float
-  - Name: SafeZoneEmptyCollisionProfile
-    Offset: '0x5ec'
-    Size: '0x8'
-    Type: struct FName
-  - Name: AutoActivateSafeZone
-    Offset: '0x5f4'
-    Size: '0x1'
-    Type: bool
-  - Name: DeactivateSafeZoneAfterExclusionRadiusIsEmpty
-    Offset: '0x5f5'
-    Size: '0x1'
-    Type: bool
-  - Name: UsePlayerTeleport
-    Offset: '0x5f6'
-    Size: '0x1'
-    Type: bool
-  - Name: PlayerTeleportRadius
     Offset: '0x5f8'
     Size: '0x4'
     Type: float
+  - Name: SafeZoneEmptyCollisionProfile
+    Offset: '0x5fc'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AutoActivateSafeZone
+    Offset: '0x604'
+    Size: '0x1'
+    Type: bool
+  - Name: DeactivateSafeZoneAfterExclusionRadiusIsEmpty
+    Offset: '0x605'
+    Size: '0x1'
+    Type: bool
+  - Name: UsePlayerTeleport
+    Offset: '0x606'
+    Size: '0x1'
+    Type: bool
+  - Name: PlayerTeleportRadius
+    Offset: '0x608'
+    Size: '0x4'
+    Type: float
   - Name: UseRepelForce
-    Offset: '0x600'
+    Offset: '0x610'
     Size: '0x1'
     Type: bool
   - Name: RepelForceRadius
-    Offset: '0x604'
-    Size: '0x4'
-    Type: float
-  - Name: RepelForceExtents
-    Offset: '0x60c'
-    Size: '0x4'
-    Type: float
-  - Name: RepelForceMin
-    Offset: '0x610'
-    Size: '0x4'
-    Type: float
-  - Name: RepelForceMax
     Offset: '0x614'
     Size: '0x4'
     Type: float
+  - Name: RepelForceExtents
+    Offset: '0x61c'
+    Size: '0x4'
+    Type: float
+  - Name: RepelForceMin
+    Offset: '0x620'
+    Size: '0x4'
+    Type: float
+  - Name: RepelForceMax
+    Offset: '0x624'
+    Size: '0x4'
+    Type: float
   - Name: ApplyRepelForceAtCentreOfMass
-    Offset: '0x618'
+    Offset: '0x628'
     Size: '0x1'
     Type: bool
   - Name: RepelForceGradientCurve
-    Offset: '0x620'
+    Offset: '0x630'
     Size: '0x80'
     Type: Struct RuntimeFloatCurve
   - Name: UseAngularImpulse
-    Offset: '0x6a0'
+    Offset: '0x6b0'
     Size: '0x1'
     Type: bool
   - Name: AngularImpulseRadius
-    Offset: '0x6a4'
+    Offset: '0x6b4'
     Size: '0x4'
     Type: float
   - Name: AngularImpulseForce
-    Offset: '0x6ac'
+    Offset: '0x6bc'
     Size: '0x4'
     Type: float
   - Name: TargetDeflectionAngle
-    Offset: '0x6b0'
+    Offset: '0x6c0'
     Size: '0x4'
     Type: float
   - Name: IsSafeZoneEmpty
-    Offset: '0x6b4'
+    Offset: '0x6c4'
     Size: '0x1'
     Type: bool
   - Name: StopAISpawning
-    Offset: '0x6b5'
+    Offset: '0x6c5'
     Size: '0x1'
     Type: bool
   - Name: CurrentCollisionProfile
-    Offset: '0x6b8'
+    Offset: '0x6c8'
     Size: '0x8'
     Type: struct FName
   - Name: SafeZoneState
-    Offset: '0x6c0'
+    Offset: '0x6d0'
     Size: '0x1'
     Type: byte
   ClassSize: '0x140'
-  FullSize: '0x710'
-  InheritedSize: '0x5d0'
+  FullSize: '0x720'
+  InheritedSize: '0x5e0'
   Super: CapsuleComponent

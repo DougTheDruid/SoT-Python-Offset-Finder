@@ -8,15 +8,15 @@
   },
   "HarbourComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x310",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "HarbourRadiusInCentimetres",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       }
     ]
   },

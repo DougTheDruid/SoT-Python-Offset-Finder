@@ -296,7 +296,7 @@ public:
 };
 
 
-// Size 0x220
+// Size 0x230
 class KrakenService: public Actor
 {
 public:
@@ -333,10 +333,10 @@ public:
 class KrakenShipWrappingKnockbackRegionComponent: public SceneComponent
 {
 public:
-	Class BoxComponent*                                          KnockbackRegion;                                   // 0x2d0(0x8)
-	Struct Vector                                                KnockbackDirection;                                // 0x2d8(0xc)
-	float                                                        KnockbackTime;                                     // 0x2e4(0x4)
-	Struct KnockBackInfo                                         KnockbackParams;                                   // 0x2e8(0x50)
+	Class BoxComponent*                                          KnockbackRegion;                                   // 0x2e0(0x8)
+	Struct Vector                                                KnockbackDirection;                                // 0x2e8(0xc)
+	float                                                        KnockbackTime;                                     // 0x2f4(0x4)
+	Struct KnockBackInfo                                         KnockbackParams;                                   // 0x2f8(0x50)
 };
 
 

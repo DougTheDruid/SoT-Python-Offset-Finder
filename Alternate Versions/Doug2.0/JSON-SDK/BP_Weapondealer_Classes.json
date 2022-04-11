@@ -6,28 +6,16 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "CargoRunParticipant",
+        "Name": "None",
         "Type": "Class CargoRunParticipantComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "SolidHits",
+        "Name": "None",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x670"
-      },
-      {
-        "Name": "NPCDialog",
-        "Type": "Class NPCDialogComponent*",
-        "Size": "0x8",
-        "Offset": "0x678"
-      },
-      {
-        "Name": "AnimNotifyWwiseEmitter",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
-        "Size": "0x8",
-        "Offset": "0x680"
       }
     ]
   },

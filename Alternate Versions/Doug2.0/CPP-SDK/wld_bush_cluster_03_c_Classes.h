@@ -6,14 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
-class wld_bush_cluster_03_c_C: public BP_Placement_HeightDrop_C
+// Size 0x18
+class wld_bush_cluster_03_c_C: public StorageContainer
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_08_c;                                     // 0x410(0x8)
-	Class StaticMeshComponent*                                   wld_bush_03_a;                                     // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_07_a_01;                                  // 0x420(0x8)
-	Class SceneComponent*                                        Scene;                                             // 0x428(0x8)
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
+	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
 };
 
 

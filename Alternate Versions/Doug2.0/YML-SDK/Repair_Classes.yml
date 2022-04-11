@@ -22,6 +22,12 @@ RepairingInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+ShipRepairInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 WoodRepairTypeId:
   Attributes: []
   ClassSize: '0x0'

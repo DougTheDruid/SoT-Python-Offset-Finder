@@ -6,13 +6,13 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ShipFirePropagation",
+        "Name": "None",
         "Type": "Class ShipFirePropagationComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"

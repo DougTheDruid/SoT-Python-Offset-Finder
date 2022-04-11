@@ -8,13 +8,13 @@ BP_tls_shovel_bdg_01_a_ItemDesc_C:
   Super: ItemDesc
 BP_tls_shovel_bdg_01_a_ItemInfo_C:
   Attributes: []
-  ClassSize: '-0x40800000'
-  FullSize: '-0x40800000'
+  ClassSize: '0x10'
+  FullSize: '0x10'
   InheritedSize: '0x0'
   Super: None
 BP_tls_shovel_bdg_01_a_Wieldable_C:
   Attributes: []
-  ClassSize: '0x4'
-  FullSize: '0x4'
+  ClassSize: '0x10'
+  FullSize: '0x10'
   InheritedSize: '0x0'
   Super: None

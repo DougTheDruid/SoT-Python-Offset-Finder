@@ -24,6 +24,29 @@ public:
 };
 
 
+// Size 0x48
+class BP_MermaidGem_ItemInfo_Sapphire_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x448(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x450(0x8)
+};
+
+
+// Size -0x26bebb0d
+class BP_MermaidGem_ItemInfo_Emerald_C: public None
+{
+public:
+};
+
+
 // Size 0x0
 class BP_BuoyantWoodBarrel_LockedToWater_C: public BP_BuoyantStorageBarrel_LockedToWater_C
 {
@@ -45,8 +68,8 @@ public:
 };
 
 
-// Size -0x11
-class BP_TaleBook_FateOfTheMorningstar_AdditionalPuzzles_C: public EventWieldableItemUseStoppedAndFullyHidden
+// Size 0x20003
+class BP_MermaidGem_ItemInfo_Ruby_C: public None
 {
 public:
 };

@@ -3,36 +3,36 @@
 KnockbackColliderComponent:
   Attributes:
   - Name: SolidCollisionProfile
-    Offset: '0x5d8'
+    Offset: '0x5e8'
     Size: '0x8'
     Type: Struct CollisionProfileName
   - Name: KnockbackTraceProfile
-    Offset: '0x5e0'
+    Offset: '0x5f0'
     Size: '0x8'
     Type: Struct CollisionProfileName
   - Name: KnockbackType
-    Offset: '0x5e8'
+    Offset: '0x5f8'
     Size: '0x1'
     Type: byte
   - Name: KnockbackParams
-    Offset: '0x5ec'
+    Offset: '0x5fc'
     Size: '0x50'
     Type: Struct KnockBackInfo
   - Name: KnockbackDamageType
-    Offset: '0x648'
+    Offset: '0x658'
     Size: '0x8'
     Type: class
   - Name: KnockbackInterval
-    Offset: '0x650'
+    Offset: '0x660'
     Size: '0x4'
     Type: float
   - Name: SolidState
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x1'
     Type: byte
   ClassSize: '0x80'
-  FullSize: '0x660'
-  InheritedSize: '0x5e0'
+  FullSize: '0x670'
+  InheritedSize: '0x5f0'
   Super: BoxComponent
 KnockbackInterface:
   Attributes: []

@@ -3,24 +3,24 @@
 WorldLocationPopUpComponent:
   Attributes:
   - Name: PopUpData
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: Class WorldLocationPopUpDataAsset*
   - Name: LocationOverlapVolume
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: Class ShapeComponent*
   - Name: LocationCooldown
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x4'
     Type: float
   - Name: AlwaysShowPopUp
-    Offset: '0x2e4'
+    Offset: '0x2f4'
     Size: '0x1'
     Type: bool
   ClassSize: '0x80'
-  FullSize: '0x350'
-  InheritedSize: '0x2d0'
+  FullSize: '0x360'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 WorldLocationPopUpDataAsset:
   Attributes:

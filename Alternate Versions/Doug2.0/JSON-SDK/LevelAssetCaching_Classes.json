@@ -27,13 +27,6 @@
       }
     ]
   },
-  "RegionalAssetCache": {
-    "Super": "Object",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x98",
-    "Attributes": []
-  },
   "RegionalAssetListDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -45,6 +38,20 @@
         "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "RegionalAssetCache": {
+    "Super": "Object",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "CurrentListAsset",
+        "Type": "Class RegionalAssetListDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
       }
     ]
   },

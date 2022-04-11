@@ -1,53 +1,53 @@
 {
   "BP_LargeShip_CageLatch_03_b_C": {
     "Super": "PetCageSwitchMechanismTrigger",
-    "FullSize": "0x588",
-    "InheritedSize": "0x570",
+    "FullSize": "0x598",
+    "InheritedSize": "0x580",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x580"
       },
       {
         "Name": "cap_cage_door_03_b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x588"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x580"
+        "Offset": "0x590"
       }
     ]
   },
   "BP_LargeShip_CageLatch_03_a_C": {
     "Super": "PetCageSwitchMechanismTrigger",
-    "FullSize": "0x588",
-    "InheritedSize": "0x570",
+    "FullSize": "0x598",
+    "InheritedSize": "0x580",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x580"
       },
       {
         "Name": "cap_cage_door_03_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x588"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x580"
+        "Offset": "0x590"
       }
     ]
   },

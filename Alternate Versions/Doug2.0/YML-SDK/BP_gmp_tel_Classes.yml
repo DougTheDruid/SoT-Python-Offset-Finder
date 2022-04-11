@@ -25,18 +25,14 @@ BP_gmp_telescope_wth_01_a_v01_ItemDesc_C:
   InheritedSize: '0x130'
   Super: ItemDesc
 BP_gmp_telescope_wth_01_a_v01_ItemInfo_C:
-  Attributes:
-  - Name: DefaultSceneRoot
-    Offset: '0x500'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x8'
-  FullSize: '0x508'
-  InheritedSize: '0x500'
-  Super: ItemInfo
+  Attributes: []
+  ClassSize: '-0xd3a0001'
+  FullSize: '-0x1'
+  InheritedSize: '0xd3a0000'
+  Super: "pX\e\xF3\xF6\x7F"
 BP_gmp_telescope_wth_01_a_v01_Wieldable_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x890'
-  InheritedSize: '0x890'
-  Super: BP_Spyglass_C
+  ClassSize: '-0xd3a0001'
+  FullSize: '-0x1'
+  InheritedSize: '0xd3a0000'
+  Super: "pX\e\xF3\xF6\x7F"

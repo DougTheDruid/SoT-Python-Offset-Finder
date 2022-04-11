@@ -137,11 +137,11 @@ public:
 class EmissaryShipAffiliationTrackerComponent: public SceneComponent
 {
 public:
-	int                                                          EmissaryCount;                                     // 0x2d0(0x4)
-	class                                                        TrackedCompany;                                    // 0x2d8(0x8)
-	TArray<Struct Transform>                                     EmissaryRepresentationTransforms;                  // 0x300(0x10)
-	TArray<class EmissaryRepresentationMeshes*>                  EmissaryRepresentationMeshes;                      // 0x310(0x10)
-	class                                                        LoadedEmissaryRepresentationMesh;                  // 0x320(0x8)
+	int                                                          EmissaryCount;                                     // 0x2e0(0x4)
+	class                                                        TrackedCompany;                                    // 0x2e8(0x8)
+	TArray<Struct Transform>                                     EmissaryRepresentationTransforms;                  // 0x310(0x10)
+	TArray<class EmissaryRepresentationMeshes*>                  EmissaryRepresentationMeshes;                      // 0x320(0x10)
+	class                                                        LoadedEmissaryRepresentationMesh;                  // 0x330(0x8)
 };
 
 

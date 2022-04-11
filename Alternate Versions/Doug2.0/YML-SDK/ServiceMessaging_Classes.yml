@@ -12,12 +12,6 @@ ServiceMessagingFunctions:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
-ServiceMessagingInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 ServiceMessagingListenerTestObject:
   Attributes: []
   ClassSize: '0x10'

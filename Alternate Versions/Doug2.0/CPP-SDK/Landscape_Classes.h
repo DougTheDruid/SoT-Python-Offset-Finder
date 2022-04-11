@@ -29,33 +29,33 @@ public:
 class LandscapeComponent: public PrimitiveComponent
 {
 public:
-	int                                                          SectionBaseX;                                      // 0x5a8(0x4)
-	int                                                          SectionBaseY;                                      // 0x5ac(0x4)
-	int                                                          ComponentSizeQuads;                                // 0x5b0(0x4)
-	int                                                          SubsectionSizeQuads;                               // 0x5b4(0x4)
-	int                                                          NumSubsections;                                    // 0x5b8(0x4)
-	Class MaterialInterface*                                     OverrideMaterial;                                  // 0x5c0(0x8)
-	Class MaterialInterface*                                     OverrideHoleMaterial;                              // 0x5c8(0x8)
-	Class MaterialInstanceConstant*                              MaterialInstance;                                  // 0x5d0(0x8)
-	TArray<Struct WeightmapLayerAllocationInfo>                  WeightmapLayerAllocations;                         // 0x5d8(0x10)
-	TArray<class WeightmapTextures*>                             WeightmapTextures;                                 // 0x5e8(0x10)
-	Class Texture2D*                                             XYOffsetmapTexture;                                // 0x5f8(0x8)
-	Struct Vector4                                               WeightmapScaleBias;                                // 0x600(0x10)
-	float                                                        WeightmapSubsectionOffset;                         // 0x610(0x4)
-	Struct Vector4                                               HeightmapScaleBias;                                // 0x620(0x10)
-	Class Texture2D*                                             HeightmapTexture;                                  // 0x630(0x8)
-	Struct Box                                                   CachedLocalBox;                                    // 0x638(0x1c)
-	TArray<Struct Guid>                                          IrrelevantLights;                                  // 0x670(0x10)
-	int                                                          CollisionMipLevel;                                 // 0x690(0x4)
-	float                                                        StaticLightingResolution;                          // 0x694(0x4)
-	int                                                          ForcedLOD;                                         // 0x698(0x4)
-	int                                                          LODBias;                                           // 0x69c(0x4)
-	Struct Guid                                                  StateId;                                           // 0x6a0(0x10)
-	Struct Guid                                                  BakedTextureMaterialGuid;                          // 0x6b0(0x10)
-	Class Texture2D*                                             GIBakedBaseColorTexture;                           // 0x6c0(0x8)
-	byte                                                         MobileBlendableLayerMask;                          // 0x6c8(0x1)
-	Class MaterialInterface*                                     MobileMaterialInterface;                           // 0x6d0(0x8)
-	Class Texture2D*                                             MobileWeightNormalmapTexture;                      // 0x6d8(0x8)
+	int                                                          SectionBaseX;                                      // 0x5b8(0x4)
+	int                                                          SectionBaseY;                                      // 0x5bc(0x4)
+	int                                                          ComponentSizeQuads;                                // 0x5c0(0x4)
+	int                                                          SubsectionSizeQuads;                               // 0x5c4(0x4)
+	int                                                          NumSubsections;                                    // 0x5c8(0x4)
+	Class MaterialInterface*                                     OverrideMaterial;                                  // 0x5d0(0x8)
+	Class MaterialInterface*                                     OverrideHoleMaterial;                              // 0x5d8(0x8)
+	Class MaterialInstanceConstant*                              MaterialInstance;                                  // 0x5e0(0x8)
+	TArray<Struct WeightmapLayerAllocationInfo>                  WeightmapLayerAllocations;                         // 0x5e8(0x10)
+	TArray<class WeightmapTextures*>                             WeightmapTextures;                                 // 0x5f8(0x10)
+	Class Texture2D*                                             XYOffsetmapTexture;                                // 0x608(0x8)
+	Struct Vector4                                               WeightmapScaleBias;                                // 0x610(0x10)
+	float                                                        WeightmapSubsectionOffset;                         // 0x620(0x4)
+	Struct Vector4                                               HeightmapScaleBias;                                // 0x630(0x10)
+	Class Texture2D*                                             HeightmapTexture;                                  // 0x640(0x8)
+	Struct Box                                                   CachedLocalBox;                                    // 0x648(0x1c)
+	TArray<Struct Guid>                                          IrrelevantLights;                                  // 0x680(0x10)
+	int                                                          CollisionMipLevel;                                 // 0x6a0(0x4)
+	float                                                        StaticLightingResolution;                          // 0x6a4(0x4)
+	int                                                          ForcedLOD;                                         // 0x6a8(0x4)
+	int                                                          LODBias;                                           // 0x6ac(0x4)
+	Struct Guid                                                  StateId;                                           // 0x6b0(0x10)
+	Struct Guid                                                  BakedTextureMaterialGuid;                          // 0x6c0(0x10)
+	Class Texture2D*                                             GIBakedBaseColorTexture;                           // 0x6d0(0x8)
+	byte                                                         MobileBlendableLayerMask;                          // 0x6d8(0x1)
+	Class MaterialInterface*                                     MobileMaterialInterface;                           // 0x6e0(0x8)
+	Class Texture2D*                                             MobileWeightNormalmapTexture;                      // 0x6e8(0x8)
 };
 
 
@@ -99,15 +99,15 @@ public:
 class LandscapeHeightfieldCollisionComponent: public PrimitiveComponent
 {
 public:
-	TArray<class ComponentLayerInfos*>                           ComponentLayerInfos;                               // 0x5a8(0x10)
-	int                                                          SectionBaseX;                                      // 0x5b8(0x4)
-	int                                                          SectionBaseY;                                      // 0x5bc(0x4)
-	int                                                          CollisionSizeQuads;                                // 0x5c0(0x4)
-	float                                                        CollisionScale;                                    // 0x5c4(0x4)
-	TArray<Byte CollisionQuadFlags>                              CollisionQuadFlags;                                // 0x5c8(0x10)
-	Struct Guid                                                  HeightfieldGuid;                                   // 0x5d8(0x10)
-	Struct Box                                                   CachedLocalBox;                                    // 0x5e8(0x1c)
-	TArray<class CookedPhysicalMaterials*>                       CookedPhysicalMaterials;                           // 0x630(0x10)
+	TArray<class ComponentLayerInfos*>                           ComponentLayerInfos;                               // 0x5b8(0x10)
+	int                                                          SectionBaseX;                                      // 0x5c8(0x4)
+	int                                                          SectionBaseY;                                      // 0x5cc(0x4)
+	int                                                          CollisionSizeQuads;                                // 0x5d0(0x4)
+	float                                                        CollisionScale;                                    // 0x5d4(0x4)
+	TArray<Byte CollisionQuadFlags>                              CollisionQuadFlags;                                // 0x5d8(0x10)
+	Struct Guid                                                  HeightfieldGuid;                                   // 0x5e8(0x10)
+	Struct Box                                                   CachedLocalBox;                                    // 0x5f8(0x1c)
+	TArray<class CookedPhysicalMaterials*>                       CookedPhysicalMaterials;                           // 0x640(0x10)
 };
 
 
@@ -115,7 +115,7 @@ public:
 class LandscapeMeshCollisionComponent: public LandscapeHeightfieldCollisionComponent
 {
 public:
-	Struct Guid                                                  MeshGuid;                                          // 0x680(0x10)
+	Struct Guid                                                  MeshGuid;                                          // 0x690(0x10)
 };
 
 
@@ -199,8 +199,8 @@ public:
 class LandscapeMeshProxyComponent: public StaticMeshComponent
 {
 public:
-	Struct Guid                                                  LandscapeGuid;                                     // 0x610(0x10)
-	TArray<Struct IntPoint>                                      ProxyComponentBases;                               // 0x620(0x10)
+	Struct Guid                                                  LandscapeGuid;                                     // 0x620(0x10)
+	TArray<Struct IntPoint>                                      ProxyComponentBases;                               // 0x630(0x10)
 };
 
 
@@ -215,9 +215,9 @@ public:
 class LandscapeSplinesComponent: public PrimitiveComponent
 {
 public:
-	TArray<class ControlPoints*>                                 ControlPoints;                                     // 0x5a8(0x10)
-	TArray<class Segments*>                                      Segments;                                          // 0x5b8(0x10)
-	TArray<class CookedForeignMeshComponents*>                   CookedForeignMeshComponents;                       // 0x5c8(0x10)
+	TArray<class ControlPoints*>                                 ControlPoints;                                     // 0x5b8(0x10)
+	TArray<class Segments*>                                      Segments;                                          // 0x5c8(0x10)
+	TArray<class CookedForeignMeshComponents*>                   CookedForeignMeshComponents;                       // 0x5d8(0x10)
 };
 
 

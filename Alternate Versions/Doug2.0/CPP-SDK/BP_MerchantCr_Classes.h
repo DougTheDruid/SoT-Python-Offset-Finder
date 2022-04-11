@@ -6,82 +6,67 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_MerchantCrate_CannonballCrateProxy_C: public StaticMerchantCrateItemProxy
+// Size 0x8
+class BP_MerchantCrate_Commodity_TeaCrate_Wieldable_C: public None
 {
 public:
-	Class AddOpenContainerActionRuleComponent*                   AddOpenContainerActionRule;                        // 0x7d8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x7e0(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x7e8(0x8)
 };
 
 
-// Size 0x38
-class BP_MerchantCrate_CannonballCrate_C: public StaticMerchantCrate
+// Size 0x8
+class BP_MerchantCrate_Commodity_TeaCrate_Proxy_C: public None
 {
 public:
-	Class MaterialManipulationComponent*                         MaterialManipulation;                              // 0x7e0(0x8)
-	Class BoxComponent*                                          HitVolume;                                         // 0x7e8(0x8)
-	Class AddOpenContainerActionRuleComponent*                   AddOpenContainerActionRule;                        // 0x7f0(0x8)
-	Class PickupableComponent*                                   Pickupable;                                        // 0x7f8(0x8)
-	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x800(0x8)
-	Class WieldableInteractableComponent*                        WieldableInteractable;                             // 0x808(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x810(0x8)
 };
 
 
-// Size 0x18
-class BP_MerchantCrate_BananaCrateProxy_C: public StaticMerchantCrateItemProxy
-{
-public:
-	BlueprintGeneratedClass BP_MerchantCrate_BananaCrate_StorageContainerComponent_C* BP_MerchantCrate_BananaCrate_StorageContainerComponent; // 0x7d8(0x8)
-	Class AddOpenContainerActionRuleComponent*                   AddOpenContainerActionRule;                        // 0x7e0(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x7e8(0x8)
-};
-
-
-// Size 0x38
-class BP_MerchantCrate_BananaCrate_C: public StaticMerchantCrate
-{
-public:
-	Class MaterialManipulationComponent*                         MaterialManipulation;                              // 0x7e0(0x8)
-	BlueprintGeneratedClass BP_MerchantCrate_BananaCrate_StorageContainerComponent_C* BP_MerchantCrate_BananaCrate_StorageContainerComponent; // 0x7e8(0x8)
-	Class BoxComponent*                                          HitVolume;                                         // 0x7f0(0x8)
-	Class AddOpenContainerActionRuleComponent*                   AddOpenContainerActionRule;                        // 0x7f8(0x8)
-	Class PickupableComponent*                                   Pickupable;                                        // 0x800(0x8)
-	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x808(0x8)
-	Class WieldableInteractableComponent*                        WieldableInteractable;                             // 0x810(0x8)
-};
-
-
-// Size 0x0
-class BP_MerchantCrate_BananaCrate_StorageContainerComponent_C: public StorageContainerComponent
+// Size 0x30
+class BP_MerchantCrate_AIShipAnyItemCrate_Wieldable_C: public StaticStorageCrateWieldable
 {
 public:
 };
 
 
 // Size 0x18
-class BP_MerchantCrate_WoodCrateProxy_C: public StaticMerchantCrateItemProxy
+class BP_MerchantCrate_AIShipAnyItemCrate_Proxy_C: public StorageCrateItemProxy
 {
 public:
-	Class AddOpenContainerActionRuleComponent*                   AddOpenContainerActionRule;                        // 0x7d8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x7e0(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x7e8(0x8)
+	Class AddOpenContainerActionRuleComponent*                   None;                                              // 0x798(0x8)
+	Class StorageContainerComponent*                             None;                                              // 0x7a0(0x8)
+	Class InteractableComponent*                                 None;                                              // 0x7a8(0x8)
 };
 
 
-// Size 0x38
-class BP_MerchantCrate_WoodCrate_C: public StaticMerchantCrate
+// Size 0x8
+class BP_MerchantCrate_Commodity_Ore_Wieldable_C: public None
 {
 public:
-	Class MaterialManipulationComponent*                         MaterialManipulation;                              // 0x7e0(0x8)
-	Class BoxComponent*                                          HitVolume;                                         // 0x7e8(0x8)
-	Class AddOpenContainerActionRuleComponent*                   AddOpenContainerActionRule;                        // 0x7f0(0x8)
-	Class PickupableComponent*                                   Pickupable;                                        // 0x7f8(0x8)
-	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x800(0x8)
-	Class WieldableInteractableComponent*                        WieldableInteractable;                             // 0x808(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x810(0x8)
+};
+
+
+// Size 0x20
+class BP_MerchantCrate_Commodity_Wieldable_Base_C: public StaticMerchantCrate
+{
+public:
+	Class MaterialManipulationComponent*                         None;                                              // 0x7e0(0x8)
+	Class WieldableInteractableComponent*                        None;                                              // 0x7e8(0x8)
+	Class PickupableComponent*                                   None;                                              // 0x7f0(0x8)
+	Class UsableWieldableComponent*                              None;                                              // 0x7f8(0x8)
+};
+
+
+// Size 0x8
+class BP_MerchantCrate_Commodity_Ore_Proxy_C: public None
+{
+public:
+	Class InteractableComponent*                                 None;                                              // 0x7e0(0x8)
+};
+
+
+// Size 0x8
+class BP_MerchantCrate_Commodity_Base_Proxy_C: public StaticMerchantCrateItemProxy
+{
+public:
 };
 
 

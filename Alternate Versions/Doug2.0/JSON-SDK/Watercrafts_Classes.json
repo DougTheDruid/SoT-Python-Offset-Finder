@@ -63,21 +63,21 @@
   },
   "RowboatAudioComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x480",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x490",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x1b0",
     "Attributes": [
       {
         "Name": "Params",
         "Type": "Class RowboatAudioComponentParams*",
         "Size": "0x8",
-        "Offset": "0x2d0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "ParentRowboat",
         "Type": "Class Rowboat*",
         "Size": "0x8",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       }
     ]
   },
@@ -726,15 +726,15 @@
   },
   "RowingInputComponent": {
     "Super": "LookAtOffsetInputComponent",
-    "FullSize": "0x288",
-    "InheritedSize": "0x280",
+    "FullSize": "0x2a8",
+    "InheritedSize": "0x2a0",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "TargetOars",
         "Type": "Class RowingSeat*",
         "Size": "0x8",
-        "Offset": "0x280"
+        "Offset": "0x2a0"
       }
     ]
   },

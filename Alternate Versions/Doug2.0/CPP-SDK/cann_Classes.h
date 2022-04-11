@@ -14,7 +14,7 @@ public:
 
 
 // Size 0x0
-class cannonenchantment_anniversary_01_CustomizationDesc_C: public ShipCustomizationDesc
+class cannonenchantment_sailor_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
@@ -28,7 +28,7 @@ public:
 
 
 // Size 0x0
-class cannonenchantment_sailor_01_CustomizationDesc_C: public ShipCustomizationDesc
+class cannonenchantment_anniversary_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };

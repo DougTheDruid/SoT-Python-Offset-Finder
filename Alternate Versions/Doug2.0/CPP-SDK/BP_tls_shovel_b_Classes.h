@@ -6,14 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x40800000
+// Size 0x10
 class BP_tls_shovel_bdg_01_a_ItemInfo_C: public None
 {
 public:
 };
 
 
-// Size 0x4
+// Size 0x10
 class BP_tls_shovel_bdg_01_a_Wieldable_C: public None
 {
 public:

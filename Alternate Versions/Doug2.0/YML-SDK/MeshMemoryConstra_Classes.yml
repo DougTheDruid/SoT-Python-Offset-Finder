@@ -6,6 +6,12 @@ MeshMemoryConstraintBudget_AI_C:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: MeshMemoryConstraintBudget
+MeshMemoryConstraintBudget_Trinkets_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintBudget
 MeshMemoryConstraintBudget_WieldableItems_C:
   Attributes: []
   ClassSize: '0x0'

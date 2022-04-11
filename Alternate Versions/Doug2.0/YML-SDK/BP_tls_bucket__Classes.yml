@@ -8,16 +8,20 @@ BP_tls_bucket_bdg_01_a_ItemDesc_C:
   Super: ItemDesc
 BP_tls_bucket_bdg_01_a_ItemInfo_C:
   Attributes: []
-  ClassSize: '0x300'
-  FullSize: '0x300'
-  InheritedSize: '0x0'
-  Super: None
+  ClassSize: '0x8'
+  FullSize: '0x508'
+  InheritedSize: '0x500'
+  Super: ItemInfo
 BP_tls_bucket_bdg_01_a_Wieldable_C:
-  Attributes: []
-  ClassSize: '0x300'
-  FullSize: '0x300'
-  InheritedSize: '0x0'
-  Super: None
+  Attributes:
+  - Name: ByteProperty
+    Offset: '0x1ac'
+    Size: '0x0'
+    Type: byte
+  ClassSize: '-0x11'
+  FullSize: '-0x1'
+  InheritedSize: '0x10'
+  Super: EventWieldableItemUseStoppedAndFullyHidden
 BP_tls_bucket_cou_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

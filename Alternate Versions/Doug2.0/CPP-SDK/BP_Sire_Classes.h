@@ -21,6 +21,20 @@ public:
 };
 
 
+// Size 0x3f53b29b
+class BP_SirenTrident_ItemInfo_C: public None
+{
+public:
+};
+
+
+// Size -0x43479468
+class BP_SirenTrident_Proxy_C: public None
+{
+public:
+};
+
+
 // Size 0x0
 class BP_SirenTrident_ItemDesc_C: public ItemWithoutIconsDesc
 {

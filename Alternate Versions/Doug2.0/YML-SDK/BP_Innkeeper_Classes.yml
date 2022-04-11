@@ -2,43 +2,27 @@
 # https://github.com/DougTheDruid
 BP_Innkeeper_C:
   Attributes:
-  - Name: UberGraphFrame
-    Offset: '0x668'
+  - Name: EmissaryMaxRankQuestProvider
+    Offset: '0x720'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: CargoRunParticipant
-    Offset: '0x670'
-    Size: '0x8'
-    Type: Class CargoRunParticipantComponent*
+    Type: Class EmissaryMaxRankQuestProvider*
   - Name: SolidHits
-    Offset: '0x678'
+    Offset: '0x728'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: NPCDialog
-    Offset: '0x680'
-    Size: '0x8'
-    Type: Class NPCDialogComponent*
   - Name: StaticMesh
-    Offset: '0x688'
+    Offset: '0x730'
     Size: '0x8'
     Type: Class StaticMeshComponent*
+  - Name: NPCDialog
+    Offset: '0x738'
+    Size: '0x8'
+    Type: Class NPCDialogComponent*
   - Name: AnimNotifyWwiseEmitter
-    Offset: '0x690'
+    Offset: '0x740'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: SFX_IdleLoopPlay
-    Offset: '0x698'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: SFX_IdleLoopStop
-    Offset: '0x6a0'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: InnkeeperEmitter
-    Offset: '0x6a8'
-    Size: '0x20'
-    Type: Struct WwiseEmitter
-  ClassSize: '0x60'
-  FullSize: '0x6c8'
-  InheritedSize: '0x668'
-  Super: NPC
+  ClassSize: '0x28'
+  FullSize: '0x748'
+  InheritedSize: '0x720'
+  Super: TavernStrangerNPC

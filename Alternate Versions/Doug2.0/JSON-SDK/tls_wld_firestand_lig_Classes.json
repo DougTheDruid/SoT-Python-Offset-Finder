@@ -6,13 +6,13 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "PointLight",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "vfx_fire_bin",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"

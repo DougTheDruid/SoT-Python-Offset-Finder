@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class bsp_torch_pole_a_C: public StaticMeshActor
 {
 public:
-	Class PointLightComponent*                                   PointLight;                                        // 0x3e0(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem;                                    // 0x3e8(0x8)
+	Class PointLightComponent*                                   None;                                              // 0x3e0(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x3e8(0x8)
 };
 
 

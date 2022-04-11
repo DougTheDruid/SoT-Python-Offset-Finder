@@ -33,9 +33,13 @@ RegionLookupSeaId:
   InheritedSize: '0x28'
   Super: Object
 RegionalAssetCache:
-  Attributes: []
-  ClassSize: '0x98'
-  FullSize: '0xc0'
+  Attributes:
+  - Name: CurrentListAsset
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class RegionalAssetListDataAsset*
+  ClassSize: '0xb0'
+  FullSize: '0xd8'
   InheritedSize: '0x28'
   Super: Object
 RegionalAssetCacheInterface:

@@ -1,9 +1,9 @@
 {
   "TaleNote": {
     "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x9c0",
+    "FullSize": "0x9b0",
     "InheritedSize": "0x790",
-    "ClassSize": "0x230",
+    "ClassSize": "0x220",
     "Attributes": [
       {
         "Name": "CanvasWidth",
@@ -72,22 +72,16 @@
         "Offset": "0x8d0"
       },
       {
-        "Name": "NamedNotificationInputComponent",
-        "Type": "Class NamedNotificationInputComponent*",
-        "Size": "0x8",
-        "Offset": "0x8d8"
-      },
-      {
         "Name": "UsableWieldableComponent",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x8e0"
+        "Offset": "0x8d8"
       },
       {
         "Name": "InventoryItemComponent",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x8e8"
+        "Offset": "0x8e0"
       }
     ]
   },

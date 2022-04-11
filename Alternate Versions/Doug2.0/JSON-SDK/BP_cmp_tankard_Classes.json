@@ -1,11 +1,4 @@
 {
-  "BP_cmp_tankard_klw_01_a_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BP_cmp_tankard_oos_05_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
@@ -35,6 +28,13 @@
     "Attributes": []
   },
   "BP_cmp_tankard_oos_01_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_cmp_tankard_klw_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",

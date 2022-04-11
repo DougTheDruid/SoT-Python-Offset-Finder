@@ -7,24 +7,17 @@
     "Attributes": []
   },
   "BP_tls_speaking_trumpet_wth_01_a_v02_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      }
-    ]
+    "Super": "MaterialExpressionSubtract",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x1",
+    "Attributes": []
   },
   "BP_tls_speaking_trumpet_wth_01_a_v02_Wieldable_C": {
-    "Super": "BP_Speaking_Trumpet_C",
-    "FullSize": "0x7d0",
-    "InheritedSize": "0x7d0",
-    "ClassSize": "0x0",
+    "Super": "NameProperty",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x10",
+    "ClassSize": "-0x11",
     "Attributes": []
   },
   "BP_tls_speaking_trumpet_wth_01_a_v02_ItemDesc_C": {

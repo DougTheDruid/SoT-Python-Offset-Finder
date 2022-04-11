@@ -2,13 +2,13 @@
 # https://github.com/DougTheDruid
 AD_FirstPerson_PlayerPirate_Male_Default_C:
   Attributes: []
-  ClassSize: '0x3f800000'
-  FullSize: '0x3f800000'
-  InheritedSize: '0x0'
-  Super: None
+  ClassSize: '0x420'
+  FullSize: '0x490'
+  InheritedSize: '0x70'
+  Super: FirstPersonAnimationData
 AD_FirstPerson_PlayerPirate_Male_Thin_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x0'
-  InheritedSize: '0x0'
+  FullSize: '0x490'
+  InheritedSize: '0x490'
   Super: None

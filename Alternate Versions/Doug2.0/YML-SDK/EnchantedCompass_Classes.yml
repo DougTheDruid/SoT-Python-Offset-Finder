@@ -25,19 +25,19 @@ EnchantedCompassProximityAnnouncementComponent:
 MultiTargetEnchantedCompass:
   Attributes:
   - Name: Locations
-    Offset: '0x870'
+    Offset: '0x868'
     Size: '0x10'
     Type: TArray<Struct Vector>
   - Name: LocationIds
-    Offset: '0x880'
+    Offset: '0x878'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: InventoryItem
-    Offset: '0x890'
+    Offset: '0x888'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   - Name: ProximityAnnouncementComponent
-    Offset: '0x898'
+    Offset: '0x890'
     Size: '0x8'
     Type: Class EnchantedCompassProximityAnnouncementComponent*
   ClassSize: '0x30'

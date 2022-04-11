@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_FotF_Larinna_NotActive_C:
   Attributes:
-  - Name: StaticMesh1
+  - Name: None
     Offset: '0x688'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x690'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x10'
   FullSize: '0x698'
   InheritedSize: '0x688'
-  Super: BP_SoleTrader_C
+  Super: None

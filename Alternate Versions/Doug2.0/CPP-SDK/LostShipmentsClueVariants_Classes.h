@@ -222,11 +222,11 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x40
 class ClueSiteCircleMapWieldable: public RenderToTextureMapBase
 {
 public:
-	Struct MapRadialIconData                                     MapRadialIconData;                                 // 0x868(0x18)
+	Struct MapRadialIconData                                     MapRadialIconData;                                 // 0x860(0x18)
 };
 
 

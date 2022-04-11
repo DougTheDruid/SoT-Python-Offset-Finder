@@ -1,238 +1,110 @@
 {
-  "BP_MerchantCrate_CannonballCrateProxy_C": {
-    "Super": "StaticMerchantCrateItemProxy",
-    "FullSize": "0x7f0",
-    "InheritedSize": "0x7d8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AddOpenContainerActionRule",
-        "Type": "Class AddOpenContainerActionRuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x7d8"
-      },
-      {
-        "Name": "StorageContainer",
-        "Type": "Class StorageContainerComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e0"
-      },
-      {
-        "Name": "Interactable",
-        "Type": "Class InteractableComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e8"
-      }
-    ]
-  },
-  "BP_MerchantCrate_CannonballCrate_C": {
-    "Super": "StaticMerchantCrate",
-    "FullSize": "0x818",
-    "InheritedSize": "0x7e0",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "MaterialManipulation",
-        "Type": "Class MaterialManipulationComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e0"
-      },
-      {
-        "Name": "HitVolume",
-        "Type": "Class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e8"
-      },
-      {
-        "Name": "AddOpenContainerActionRule",
-        "Type": "Class AddOpenContainerActionRuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f0"
-      },
-      {
-        "Name": "Pickupable",
-        "Type": "Class PickupableComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f8"
-      },
-      {
-        "Name": "UsableWieldable",
-        "Type": "Class UsableWieldableComponent*",
-        "Size": "0x8",
-        "Offset": "0x800"
-      },
-      {
-        "Name": "WieldableInteractable",
-        "Type": "Class WieldableInteractableComponent*",
-        "Size": "0x8",
-        "Offset": "0x808"
-      },
-      {
-        "Name": "StorageContainer",
-        "Type": "Class StorageContainerComponent*",
-        "Size": "0x8",
-        "Offset": "0x810"
-      }
-    ]
-  },
-  "BP_MerchantCrate_BananaCrateProxy_C": {
-    "Super": "StaticMerchantCrateItemProxy",
-    "FullSize": "0x7f0",
-    "InheritedSize": "0x7d8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "BP_MerchantCrate_BananaCrate_StorageContainerComponent",
-        "Type": "BlueprintGeneratedClass BP_MerchantCrate_BananaCrate_StorageContainerComponent_C*",
-        "Size": "0x8",
-        "Offset": "0x7d8"
-      },
-      {
-        "Name": "AddOpenContainerActionRule",
-        "Type": "Class AddOpenContainerActionRuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e0"
-      },
-      {
-        "Name": "Interactable",
-        "Type": "Class InteractableComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e8"
-      }
-    ]
-  },
-  "BP_MerchantCrate_BananaCrate_C": {
-    "Super": "StaticMerchantCrate",
-    "FullSize": "0x818",
-    "InheritedSize": "0x7e0",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "MaterialManipulation",
-        "Type": "Class MaterialManipulationComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e0"
-      },
-      {
-        "Name": "BP_MerchantCrate_BananaCrate_StorageContainerComponent",
-        "Type": "BlueprintGeneratedClass BP_MerchantCrate_BananaCrate_StorageContainerComponent_C*",
-        "Size": "0x8",
-        "Offset": "0x7e8"
-      },
-      {
-        "Name": "HitVolume",
-        "Type": "Class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f0"
-      },
-      {
-        "Name": "AddOpenContainerActionRule",
-        "Type": "Class AddOpenContainerActionRuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f8"
-      },
-      {
-        "Name": "Pickupable",
-        "Type": "Class PickupableComponent*",
-        "Size": "0x8",
-        "Offset": "0x800"
-      },
-      {
-        "Name": "UsableWieldable",
-        "Type": "Class UsableWieldableComponent*",
-        "Size": "0x8",
-        "Offset": "0x808"
-      },
-      {
-        "Name": "WieldableInteractable",
-        "Type": "Class WieldableInteractableComponent*",
-        "Size": "0x8",
-        "Offset": "0x810"
-      }
-    ]
-  },
-  "BP_MerchantCrate_BananaCrate_StorageContainerComponent_C": {
-    "Super": "StorageContainerComponent",
-    "FullSize": "0x310",
-    "InheritedSize": "0x310",
-    "ClassSize": "0x0",
+  "BP_MerchantCrate_Commodity_TeaCrate_Wieldable_C": {
+    "Super": "None",
+    "FullSize": "0x808",
+    "InheritedSize": "0x800",
+    "ClassSize": "0x8",
     "Attributes": []
   },
-  "BP_MerchantCrate_WoodCrateProxy_C": {
-    "Super": "StaticMerchantCrateItemProxy",
-    "FullSize": "0x7f0",
-    "InheritedSize": "0x7d8",
+  "BP_MerchantCrate_Commodity_TeaCrate_Proxy_C": {
+    "Super": "None",
+    "FullSize": "0x7e8",
+    "InheritedSize": "0x7e0",
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "BP_MerchantCrate_AIShipAnyItemCrate_Wieldable_C": {
+    "Super": "StaticStorageCrateWieldable",
+    "FullSize": "0x7c0",
+    "InheritedSize": "0x790",
+    "ClassSize": "0x30",
+    "Attributes": []
+  },
+  "BP_MerchantCrate_AIShipAnyItemCrate_Proxy_C": {
+    "Super": "StorageCrateItemProxy",
+    "FullSize": "0x7b0",
+    "InheritedSize": "0x798",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "AddOpenContainerActionRule",
+        "Name": "None",
         "Type": "Class AddOpenContainerActionRuleComponent*",
         "Size": "0x8",
-        "Offset": "0x7d8"
+        "Offset": "0x798"
       },
       {
-        "Name": "StorageContainer",
+        "Name": "None",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x7a0"
       },
       {
-        "Name": "Interactable",
+        "Name": "None",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x7a8"
       }
     ]
   },
-  "BP_MerchantCrate_WoodCrate_C": {
+  "BP_MerchantCrate_Commodity_Ore_Wieldable_C": {
+    "Super": "None",
+    "FullSize": "0x808",
+    "InheritedSize": "0x800",
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "BP_MerchantCrate_Commodity_Wieldable_Base_C": {
     "Super": "StaticMerchantCrate",
-    "FullSize": "0x818",
+    "FullSize": "0x800",
     "InheritedSize": "0x7e0",
-    "ClassSize": "0x38",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "MaterialManipulation",
+        "Name": "None",
         "Type": "Class MaterialManipulationComponent*",
         "Size": "0x8",
         "Offset": "0x7e0"
       },
       {
-        "Name": "HitVolume",
-        "Type": "Class BoxComponent*",
+        "Name": "None",
+        "Type": "Class WieldableInteractableComponent*",
         "Size": "0x8",
         "Offset": "0x7e8"
       },
       {
-        "Name": "AddOpenContainerActionRule",
-        "Type": "Class AddOpenContainerActionRuleComponent*",
+        "Name": "None",
+        "Type": "Class PickupableComponent*",
         "Size": "0x8",
         "Offset": "0x7f0"
       },
       {
-        "Name": "Pickupable",
-        "Type": "Class PickupableComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f8"
-      },
-      {
-        "Name": "UsableWieldable",
+        "Name": "None",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x800"
-      },
-      {
-        "Name": "WieldableInteractable",
-        "Type": "Class WieldableInteractableComponent*",
-        "Size": "0x8",
-        "Offset": "0x808"
-      },
-      {
-        "Name": "StorageContainer",
-        "Type": "Class StorageContainerComponent*",
-        "Size": "0x8",
-        "Offset": "0x810"
+        "Offset": "0x7f8"
       }
     ]
+  },
+  "BP_MerchantCrate_Commodity_Ore_Proxy_C": {
+    "Super": "None",
+    "FullSize": "0x7e8",
+    "InheritedSize": "0x7e0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "None",
+        "Type": "Class InteractableComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      }
+    ]
+  },
+  "BP_MerchantCrate_Commodity_Base_Proxy_C": {
+    "Super": "StaticMerchantCrateItemProxy",
+    "FullSize": "0x7e0",
+    "InheritedSize": "0x7d8",
+    "ClassSize": "0x8",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

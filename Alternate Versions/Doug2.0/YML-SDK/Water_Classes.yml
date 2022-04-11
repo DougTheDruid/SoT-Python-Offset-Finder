@@ -31,8 +31,8 @@ FFTWaterService:
 FlatWaterPlaneComponent:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5c0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5d0'
   Super: BaseWaterComponent
 MockWaterInterface:
   Attributes: []
@@ -139,8 +139,8 @@ WaterExclusionSurfaceInterface:
 WaterInteractionComponent:
   Attributes: []
   ClassSize: '0x20'
-  FullSize: '0x600'
-  InheritedSize: '0x5e0'
+  FullSize: '0x610'
+  InheritedSize: '0x5f0'
   Super: BoxComponent
 WaterInterface:
   Attributes: []

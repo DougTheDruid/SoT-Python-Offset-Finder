@@ -136,15 +136,15 @@
   },
   "ReviveAudioComponent": {
     "Super": "WwiseEmitterComponent",
-    "FullSize": "0x320",
-    "InheritedSize": "0x300",
+    "FullSize": "0x330",
+    "InheritedSize": "0x310",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "ReviveEffectsDataAsset",
         "Type": "Class ReviveEffectsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x300"
+        "Offset": "0x310"
       }
     ]
   },

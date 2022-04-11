@@ -2,108 +2,100 @@
 # https://github.com/DougTheDruid
 BP_SmallShip_StandardHull_Damage_C:
   Attributes:
-  - Name: projectile_collision
-    Offset: '0x608'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Damage_Zone_Lower_04
+  - Name: None
     Offset: '0x610'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Lower_06
+    Type: Class StaticMeshComponent*
+  - Name: None
     Offset: '0x618'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Lower_01
+  - Name: None
     Offset: '0x620'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Lower_08
+  - Name: None
     Offset: '0x628'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Lower_07
+  - Name: None
     Offset: '0x630'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Lower_09
+  - Name: None
     Offset: '0x638'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Lower_05
+  - Name: None
     Offset: '0x640'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Lower_03
+  - Name: None
     Offset: '0x648'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Lower
+  - Name: None
     Offset: '0x650'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle
+  - Name: None
     Offset: '0x658'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_09
+  - Name: None
     Offset: '0x660'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_08
+  - Name: None
     Offset: '0x668'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_07
+  - Name: None
     Offset: '0x670'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_06
+  - Name: None
     Offset: '0x678'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_05
+  - Name: None
     Offset: '0x680'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_04
+  - Name: None
     Offset: '0x688'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_03
+  - Name: None
     Offset: '0x690'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_02
+  - Name: None
     Offset: '0x698'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_01
+  - Name: None
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: shp_small_hull_damage_01_a
+  - Name: None
     Offset: '0x6a8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x6b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0xa8'
-  FullSize: '0x6b0'
-  InheritedSize: '0x608'
+  FullSize: '0x6b8'
+  InheritedSize: '0x610'
   Super: BP_HullDamage_C
 BP_SmallShip_StandardHull_InternalShipWater_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x620'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: DynamicFlow
-    Offset: '0x628'
-    Size: '0x8'
-    Type: Class DynamicFlowComponent*
-  - Name: Foaminess
-    Offset: '0x630'
-    Size: '0x8'
-    Type: Class CurveFloat*
   ClassSize: '0x18'
   FullSize: '0x638'
   InheritedSize: '0x620'

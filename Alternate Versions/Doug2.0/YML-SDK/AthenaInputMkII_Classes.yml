@@ -3,21 +3,27 @@
 AthenaCharacterBaseInputComponent:
   Attributes: []
   ClassSize: '0x128'
-  FullSize: '0x278'
-  InheritedSize: '0x150'
-  Super: InputComponent
+  FullSize: '0x298'
+  InheritedSize: '0x170'
+  Super: AutoMoveInputComponent
 AthenaCharacterBaseInputComponentWithInterference:
   Attributes: []
   ClassSize: '0x8'
-  FullSize: '0x280'
-  InheritedSize: '0x278'
+  FullSize: '0x2a0'
+  InheritedSize: '0x298'
   Super: AthenaCharacterBaseInputComponent
 AthenaClampedFreelookInputComponent:
   Attributes: []
   ClassSize: '0x20'
-  FullSize: '0x298'
-  InheritedSize: '0x278'
+  FullSize: '0x2b8'
+  InheritedSize: '0x298'
   Super: AthenaCharacterBaseInputComponent
+AutoMoveInputComponent:
+  Attributes: []
+  ClassSize: '0x20'
+  FullSize: '0x170'
+  InheritedSize: '0x150'
+  Super: InputComponent
 ClampedFreelookMouseXInputId:
   Attributes: []
   ClassSize: '0x0'
@@ -45,16 +51,16 @@ ClampedFreelookYAnalogInputId:
 LookingAtWieldableInputComponent:
   Attributes:
   - Name: TargetWieldable
-    Offset: '0x278'
+    Offset: '0x298'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x8'
-  FullSize: '0x280'
-  InheritedSize: '0x278'
+  FullSize: '0x2a0'
+  InheritedSize: '0x298'
   Super: AthenaCharacterBaseInputComponent
 MovementInterferenceComponent:
   Attributes: []
   ClassSize: '0x70'
-  FullSize: '0x1c0'
-  InheritedSize: '0x150'
-  Super: InputComponent
+  FullSize: '0x1e0'
+  InheritedSize: '0x170'
+  Super: AutoMoveInputComponent

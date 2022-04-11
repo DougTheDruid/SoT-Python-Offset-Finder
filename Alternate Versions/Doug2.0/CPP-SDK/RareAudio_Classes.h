@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class WwiseEmitterComponent: public SceneComponent
 {
 public:
-	Struct WwiseEmitter                                          Emitter;                                           // 0x2d8(0x20)
-	Class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x2f8(0x8)
+	Struct WwiseEmitter                                          Emitter;                                           // 0x2e8(0x20)
+	Class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x308(0x8)
 };
 
 
@@ -105,12 +105,12 @@ public:
 class AudioPortalComponent: public SceneComponent
 {
 public:
-	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2d0(0x8)
-	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2d8(0x8)
-	float                                                        PortalTriggerDistance;                             // 0x2e0(0x4)
-	float                                                        InsideRtpcUpdateDistance;                          // 0x2e4(0x4)
-	float                                                        OutsideRtpcUpdateDistance;                         // 0x2e8(0x4)
-	bool                                                         TrackAttachmentToActor;                            // 0x2ec(0x1)
+	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2e0(0x8)
+	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2e8(0x8)
+	float                                                        PortalTriggerDistance;                             // 0x2f0(0x4)
+	float                                                        InsideRtpcUpdateDistance;                          // 0x2f4(0x4)
+	float                                                        OutsideRtpcUpdateDistance;                         // 0x2f8(0x4)
+	bool                                                         TrackAttachmentToActor;                            // 0x2fc(0x1)
 };
 
 
@@ -132,7 +132,7 @@ public:
 class AudioSpaceComponent: public StaticMeshComponent
 {
 public:
-	Class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x610(0x8)
+	Class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
 };
 
 
@@ -173,7 +173,7 @@ public:
 class StaticMeshAudioEmittersComponent: public SceneComponent
 {
 public:
-	TArray<Struct StaticMeshComponentAudioAssociation>           InstanceAssociations;                              // 0x2d0(0x10)
+	TArray<Struct StaticMeshComponentAudioAssociation>           InstanceAssociations;                              // 0x2e0(0x10)
 };
 
 
@@ -189,8 +189,8 @@ public:
 class TritonComponent: public SceneComponent
 {
 public:
-	Class TritonAcousticMap*                                     TritonMapAsset;                                    // 0x2d0(0x8)
-	float                                                        TritonEffectRadius;                                // 0x2d8(0x4)
+	Class TritonAcousticMap*                                     TritonMapAsset;                                    // 0x2e0(0x8)
+	float                                                        TritonEffectRadius;                                // 0x2e8(0x4)
 };
 
 

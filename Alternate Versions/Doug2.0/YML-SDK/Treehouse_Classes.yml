@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_GlitterbeardLoreBook_MyMaidenVoyage_C:
   Attributes:
-  - Name: NPCDialog
+  - Name: None
     Offset: '0x4e8'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: Books
+  - Name: None
     Offset: '0x4f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x4f8'
     Size: '0x8'
     Type: Class SceneComponent*

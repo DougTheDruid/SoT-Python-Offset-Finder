@@ -158,8 +158,8 @@
   },
   "BreakableActorItemSpawnComponent": {
     "Super": "ItemSpawnComponent",
-    "FullSize": "0x4a0",
-    "InheritedSize": "0x430",
+    "FullSize": "0x4b0",
+    "InheritedSize": "0x440",
     "ClassSize": "0x70",
     "Attributes": []
   },

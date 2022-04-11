@@ -743,9 +743,9 @@
   },
   "KrakenService": {
     "Super": "Actor",
-    "FullSize": "0x5f0",
+    "FullSize": "0x600",
     "InheritedSize": "0x3d0",
-    "ClassSize": "0x220",
+    "ClassSize": "0x230",
     "Attributes": [
       {
         "Name": "KrakenServiceParams",
@@ -805,33 +805,33 @@
   },
   "KrakenShipWrappingKnockbackRegionComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x370",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x380",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "KnockbackRegion",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
-        "Offset": "0x2d0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "KnockbackDirection",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       },
       {
         "Name": "KnockbackTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2e4"
+        "Offset": "0x2f4"
       },
       {
         "Name": "KnockbackParams",
         "Type": "Struct KnockBackInfo",
         "Size": "0x50",
-        "Offset": "0x2e8"
+        "Offset": "0x2f8"
       }
     ]
   },

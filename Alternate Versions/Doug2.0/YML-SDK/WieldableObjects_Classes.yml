@@ -270,6 +270,12 @@ ALK_WieldableObject_HurdyGurdy_C:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: WieldableItemAnimationStoreId
+ALK_WieldableObject_Jar_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: WieldableItemAnimationStoreId
 ALK_WieldableObject_KeyJail_C:
   Attributes: []
   ClassSize: '0x0'

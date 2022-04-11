@@ -25,12 +25,12 @@ RevivableStatus:
 ReviveAudioComponent:
   Attributes:
   - Name: ReviveEffectsDataAsset
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x8'
     Type: Class ReviveEffectsDataAsset*
   ClassSize: '0x20'
-  FullSize: '0x320'
-  InheritedSize: '0x300'
+  FullSize: '0x330'
+  InheritedSize: '0x310'
   Super: WwiseEmitterComponent
 ReviveComponent:
   Attributes:

@@ -1,22 +1,22 @@
 {
   "BP_cmp_pocket_watch_mrh_01_e_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      }
-    ]
+    "Super": "1st_item_loco_telescope_runbackward_2h",
+    "FullSize": "0x0",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "BP_cmp_pocket_watch_mrh_01_e_Wieldable_C": {
-    "Super": "BP_PocketWatch_C",
+    "Super": "None",
     "FullSize": "0xa80",
     "InheritedSize": "0xa80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_cmp_pocketwatch_mrh_01_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -42,13 +42,6 @@
     "Attributes": []
   },
   "BP_cmp_pocket_watch_mrh_01_b_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_cmp_pocketwatch_mrh_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",

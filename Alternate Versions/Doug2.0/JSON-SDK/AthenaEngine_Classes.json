@@ -29,21 +29,21 @@
   },
   "DynamicColourPointLightComponent": {
     "Super": "PointLightComponent",
-    "FullSize": "0x5d0",
-    "InheritedSize": "0x4a0",
+    "FullSize": "0x5e0",
+    "InheritedSize": "0x4b0",
     "ClassSize": "0x130",
     "Attributes": [
       {
         "Name": "ActivationCurve",
         "Type": "Struct RuntimeFloatCurve",
         "Size": "0x80",
-        "Offset": "0x498"
+        "Offset": "0x4a8"
       },
       {
         "Name": "DeactivationCurve",
         "Type": "Struct RuntimeFloatCurve",
         "Size": "0x80",
-        "Offset": "0x518"
+        "Offset": "0x528"
       }
     ]
   },

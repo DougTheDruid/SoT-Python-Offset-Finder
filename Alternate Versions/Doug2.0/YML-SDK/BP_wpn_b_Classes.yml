@@ -66,18 +66,6 @@ BP_wpn_blunderbuss_shr_01_a_ItemDesc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: ItemDesc
-BP_wpn_blunderbuss_shr_01_a_ItemInfo_C:
-  Attributes: []
-  ClassSize: '-0x66f8caef'
-  FullSize: '0x4a769f1'
-  InheritedSize: '0x6ba034e0'
-  Super: ''
-BP_wpn_blunderbuss_shr_01_a_Wieldable_C:
-  Attributes: []
-  ClassSize: '-0x2'
-  FullSize: '-0x1'
-  InheritedSize: '0x1'
-  Super: EventLoadableItemUnloadingBegin
 BP_wpn_blunderbuss_smp_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -96,3 +84,19 @@ BP_wpn_blunderbuss_yr1_leg_01_a_ItemDesc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: ItemDesc
+BP_wpn_blunderbuss_yr1_leg_01_a_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x500'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x508'
+  InheritedSize: '0x500'
+  Super: ItemInfo
+BP_wpn_blunderbuss_yr1_leg_01_a_Wieldable_C:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0x10'
+  InheritedSize: '0x0'
+  Super: None

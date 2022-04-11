@@ -116,6 +116,20 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "AssetAuditSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PathsToAuditOnSave",
+        "Type": "TArray<Str PathsToAuditOnSave>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "AutomationBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",

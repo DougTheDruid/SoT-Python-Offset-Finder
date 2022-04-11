@@ -6,20 +6,20 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x4c0"
       },
       {
-        "Name": "EmissaryFlags",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
       {
-        "Name": "Dynamic Materials",
-        "Type": "TArray<class Dynamic Materials*>",
+        "Name": "None",
+        "Type": "TArray<class None*>",
         "Size": "0x10",
         "Offset": "0x4d0"
       }

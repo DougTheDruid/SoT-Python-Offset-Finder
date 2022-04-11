@@ -1,15 +1,15 @@
 {
   "BP_Cutlass_Item_C": {
     "Super": "PlayerMeleeWeapon",
-    "FullSize": "0xa88",
-    "InheritedSize": "0xa80",
+    "FullSize": "0xa78",
+    "InheritedSize": "0xa70",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0xa80"
+        "Offset": "0xa70"
       }
     ]
   },

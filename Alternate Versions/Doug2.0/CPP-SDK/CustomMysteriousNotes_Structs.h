@@ -15,6 +15,15 @@ public:
 };
 
 
+// Size 0x14
+struct CreateMysteriousNoteResponseData
+{
+public:
+	bool                                                         Success;                                           // 0x0(0x1)
+	Struct Guid                                                  NoteId;                                            // 0x4(0x10)
+};
+
+
 // Size 0x38
 struct CreateMysteriousNoteData
 {

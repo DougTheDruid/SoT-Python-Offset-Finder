@@ -3,42 +3,42 @@
 ShantyPuzzleComponent:
   Attributes:
   - Name: RequiredShantyItemDesc
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: class
   - Name: ShantyPuzzleInteractionZoneDefinitions
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x10'
     Type: TArray<Struct ShantyPuzzleInteractionZoneDefinition>
   - Name: TimeLimited
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x1'
     Type: bool
   - Name: ShouldMoveEnsembleToActorPosition
-    Offset: '0x2f1'
+    Offset: '0x301'
     Size: '0x1'
     Type: bool
   - Name: ActiveTimeRange
-    Offset: '0x2f8'
+    Offset: '0x308'
     Size: '0x10'
     Type: Struct GameTimeRange
   - Name: ShantyPuzzleInteractionZones
-    Offset: '0x308'
+    Offset: '0x318'
     Size: '0x10'
     Type: TArray<class ShantyPuzzleInteractionZones*>
   - Name: CurrentlyPlayingShantyPuzzleEnsemble
-    Offset: '0x318'
+    Offset: '0x328'
     Size: '0x8'
     Type: Class Ensemble*
   ClassSize: '0x110'
-  FullSize: '0x3e0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x3f0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 ShantyPuzzleInteractionZoneComponent:
   Attributes: []
   ClassSize: '0x20'
-  FullSize: '0x5f0'
-  InheritedSize: '0x5d0'
+  FullSize: '0x600'
+  InheritedSize: '0x5e0'
   Super: SphereComponent
 ShantyPuzzleInterface:
   Attributes: []

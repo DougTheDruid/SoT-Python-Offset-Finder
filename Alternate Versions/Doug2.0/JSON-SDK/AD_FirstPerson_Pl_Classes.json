@@ -1,16 +1,16 @@
 {
   "AD_FirstPerson_PlayerPirate_Male_Thin_C": {
     "Super": "None",
-    "FullSize": "0x0",
-    "InheritedSize": "0x0",
+    "FullSize": "0x490",
+    "InheritedSize": "0x490",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "AD_FirstPerson_PlayerPirate_Male_Default_C": {
-    "Super": "None",
-    "FullSize": "0x3f800000",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x3f800000",
+    "Super": "FirstPersonAnimationData",
+    "FullSize": "0x490",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x420",
     "Attributes": []
   },
   "DougTheDruid": {

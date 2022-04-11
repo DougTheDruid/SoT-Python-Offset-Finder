@@ -68,8 +68,8 @@
   },
   "EmissaryFlotsamItemSpawnComponent": {
     "Super": "ItemSpawnComponent",
-    "FullSize": "0x4c0",
-    "InheritedSize": "0x430",
+    "FullSize": "0x4d0",
+    "InheritedSize": "0x440",
     "ClassSize": "0x90",
     "Attributes": []
   },
@@ -235,8 +235,8 @@
   },
   "EmissaryRepresentationMeshComponent": {
     "Super": "StaticMeshComponent",
-    "FullSize": "0x610",
-    "InheritedSize": "0x610",
+    "FullSize": "0x620",
+    "InheritedSize": "0x620",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -282,39 +282,39 @@
   },
   "EmissaryShipAffiliationTrackerComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x340",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x350",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "EmissaryCount",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x2d0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "TrackedCompany",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x2d8"
+        "Offset": "0x2e8"
       },
       {
         "Name": "EmissaryRepresentationTransforms",
         "Type": "TArray<Struct Transform>",
         "Size": "0x10",
-        "Offset": "0x300"
+        "Offset": "0x310"
       },
       {
         "Name": "EmissaryRepresentationMeshes",
         "Type": "TArray<class EmissaryRepresentationMeshes*>",
         "Size": "0x10",
-        "Offset": "0x310"
+        "Offset": "0x320"
       },
       {
         "Name": "LoadedEmissaryRepresentationMesh",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x320"
+        "Offset": "0x330"
       }
     ]
   },

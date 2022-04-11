@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 BP_Innkeeper_Tracy_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x6c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: SFX_IdleLoopPlay
+  - Name: None
     Offset: '0x6d0'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: SFX_IdleLoopStop
+  - Name: None
     Offset: '0x6d8'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: InnkeeperEmitter
+  - Name: None
     Offset: '0x6e0'
     Size: '0x20'
     Type: Struct WwiseEmitter
   ClassSize: '0x38'
   FullSize: '0x700'
   InheritedSize: '0x6c8'
-  Super: BP_Innkeeper_C
+  Super: None

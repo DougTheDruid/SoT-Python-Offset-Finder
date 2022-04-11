@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Cutlass_Item_C: public PlayerMeleeWeapon
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa80(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa70(0x8)
 };
 
 

@@ -6,6 +6,16 @@ ActorThatLogsErrorWhenTicked:
   FullSize: '0x3d0'
   InheritedSize: '0x3d0'
   Super: Actor
+AssetAuditSettings:
+  Attributes:
+  - Name: PathsToAuditOnSave
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Str PathsToAuditOnSave>
+  ClassSize: '0x10'
+  FullSize: '0x48'
+  InheritedSize: '0x38'
+  Super: DeveloperSettings
 AutomationBlueprintFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'

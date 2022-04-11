@@ -61,132 +61,132 @@ GameplayDebuggerSettings:
 GameplayDebuggingComponent:
   Attributes:
   - Name: DebugComponentClassName
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x10'
     Type: Struct FString
   - Name: ShowExtendedInformatiomCounter
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x4'
     Type: int
   - Name: ReplicateViewDataCounters
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0x10'
     Type: TArray<Int ReplicateViewDataCounters>
   - Name: ControllerName
-    Offset: '0x5d8'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: PawnName
     Offset: '0x5e8'
     Size: '0x10'
     Type: Struct FString
-  - Name: PawnClass
+  - Name: PawnName
     Offset: '0x5f8'
     Size: '0x10'
     Type: Struct FString
-  - Name: DebugIcon
+  - Name: PawnClass
     Offset: '0x608'
     Size: '0x10'
     Type: Struct FString
-  - Name: MovementBaseInfo
+  - Name: DebugIcon
     Offset: '0x618'
     Size: '0x10'
     Type: Struct FString
-  - Name: MovementModeInfo
+  - Name: MovementBaseInfo
     Offset: '0x628'
     Size: '0x10'
     Type: Struct FString
-  - Name: PathFollowingInfo
+  - Name: MovementModeInfo
     Offset: '0x638'
     Size: '0x10'
     Type: Struct FString
-  - Name: CurrentAITask
+  - Name: PathFollowingInfo
     Offset: '0x648'
     Size: '0x10'
     Type: Struct FString
-  - Name: CurrentAIState
+  - Name: CurrentAITask
     Offset: '0x658'
     Size: '0x10'
     Type: Struct FString
-  - Name: CurrentAIAssets
+  - Name: CurrentAIState
     Offset: '0x668'
     Size: '0x10'
     Type: Struct FString
-  - Name: GameplayTasksState
+  - Name: CurrentAIAssets
     Offset: '0x678'
     Size: '0x10'
     Type: Struct FString
-  - Name: NavDataInfo
+  - Name: GameplayTasksState
     Offset: '0x688'
     Size: '0x10'
     Type: Struct FString
-  - Name: AbilityInfo
+  - Name: NavDataInfo
     Offset: '0x698'
     Size: '0x10'
     Type: Struct FString
-  - Name: MontageInfo
+  - Name: AbilityInfo
     Offset: '0x6a8'
     Size: '0x10'
     Type: Struct FString
-  - Name: BrainComponentName
+  - Name: MontageInfo
     Offset: '0x6b8'
     Size: '0x10'
     Type: Struct FString
-  - Name: BrainComponentString
+  - Name: BrainComponentName
     Offset: '0x6c8'
     Size: '0x10'
     Type: Struct FString
-  - Name: BlackboardRepData
+  - Name: BrainComponentString
     Offset: '0x6d8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: BlackboardRepData
+    Offset: '0x6e8'
     Size: '0x10'
     Type: TArray<Byte BlackboardRepData>
   - Name: PathPoints
-    Offset: '0x6f8'
+    Offset: '0x708'
     Size: '0x10'
     Type: TArray<Struct Vector>
   - Name: PathCorridorData
-    Offset: '0x708'
+    Offset: '0x718'
     Size: '0x10'
     Type: TArray<Byte PathCorridorData>
   - Name: NavmeshRepData
-    Offset: '0x728'
+    Offset: '0x738'
     Size: '0x10'
     Type: TArray<Byte NavmeshRepData>
   - Name: EQSRepData
-    Offset: '0x738'
+    Offset: '0x748'
     Size: '0x10'
     Type: TArray<Byte EQSRepData>
   - Name: SensingComponentLocation
-    Offset: '0x748'
+    Offset: '0x758'
     Size: '0xc'
     Type: Struct Vector
   - Name: NextPathPointIndex
-    Offset: '0x754'
+    Offset: '0x764'
     Size: '0x4'
     Type: int
   - Name: bIsUsingPathFollowing
-    Offset: '0x758'
+    Offset: '0x768'
     Size: '0x1'
     Type: bool
   - Name: bIsUsingCharacter
-    Offset: '0x758'
+    Offset: '0x768'
     Size: '0x1'
     Type: bool
   - Name: bIsUsingBehaviorTree
-    Offset: '0x758'
+    Offset: '0x768'
     Size: '0x1'
     Type: bool
   - Name: bIsUsingAbilities
-    Offset: '0x758'
+    Offset: '0x768'
     Size: '0x1'
     Type: bool
   - Name: TargetActor
-    Offset: '0x760'
+    Offset: '0x770'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x230'
-  FullSize: '0x7e0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x7f0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 GameplayDebuggingControllerComponent:
   Attributes:

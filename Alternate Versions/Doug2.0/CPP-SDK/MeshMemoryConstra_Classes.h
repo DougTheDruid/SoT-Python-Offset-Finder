@@ -20,4 +20,11 @@ public:
 };
 
 
+// Size 0x0
+class MeshMemoryConstraintBudget_Trinkets_C: public MeshMemoryConstraintBudget
+{
+public:
+};
+
+
 }

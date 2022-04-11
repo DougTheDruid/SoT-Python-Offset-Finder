@@ -411,56 +411,56 @@ AmbientLightSource:
 AmbientLightSourceComponent:
   Attributes:
   - Name: Radius
-    Offset: '0x458'
+    Offset: '0x468'
     Size: '0x4'
     Type: float
   - Name: AmbientIntensity
-    Offset: '0x45c'
+    Offset: '0x46c'
     Size: '0x4'
     Type: float
   - Name: Tint
-    Offset: '0x460'
+    Offset: '0x470'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: QuadraticFalloff
-    Offset: '0x470'
+    Offset: '0x480'
     Size: '0x1'
     Type: bool
   - Name: Shape
-    Offset: '0x474'
+    Offset: '0x484'
     Size: '0x1'
     Type: byte
   - Name: SimpleFunctionType
-    Offset: '0x475'
+    Offset: '0x485'
     Size: '0x1'
     Type: byte
   - Name: ScaleOffset
-    Offset: '0x478'
+    Offset: '0x488'
     Size: '0x4'
     Type: float
   - Name: PulsePhase
-    Offset: '0x47c'
+    Offset: '0x48c'
     Size: '0x4'
     Type: float
   - Name: FlickerFrequency
-    Offset: '0x480'
+    Offset: '0x490'
     Size: '0x4'
     Type: float
   - Name: FlickerPerlinRow
-    Offset: '0x484'
+    Offset: '0x494'
     Size: '0x4'
     Type: int
   - Name: bShadowed
-    Offset: '0x488'
+    Offset: '0x498'
     Size: '0x1'
     Type: bool
   - Name: GroupingPolicy
-    Offset: '0x489'
+    Offset: '0x499'
     Size: '0x1'
     Type: byte
   ClassSize: '0x30'
-  FullSize: '0x490'
-  InheritedSize: '0x460'
+  FullSize: '0x4a0'
+  InheritedSize: '0x470'
   Super: LightComponent
 AmbientSound:
   Attributes:
@@ -1285,28 +1285,28 @@ ApplicationLifecycleComponent:
 ArrowComponent:
   Attributes:
   - Name: ArrowColor
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x4'
     Type: Struct Color
   - Name: ArrowSize
-    Offset: '0x5ac'
+    Offset: '0x5bc'
     Size: '0x4'
     Type: float
   - Name: bIsScreenSizeScaled
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x1'
     Type: bool
   - Name: ScreenSize
-    Offset: '0x5b4'
+    Offset: '0x5c4'
     Size: '0x4'
     Type: float
   - Name: bTreatAsASprite
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x10'
-  FullSize: '0x5c0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5d0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 AssetImportData:
   Attributes: []
@@ -1333,154 +1333,154 @@ AtmosphericFog:
 AtmosphericFogComponent:
   Attributes:
   - Name: SunMultiplier
-    Offset: '0x2d0'
-    Size: '0x4'
-    Type: float
-  - Name: FogMultiplier
-    Offset: '0x2d4'
-    Size: '0x4'
-    Type: float
-  - Name: DensityMultiplier
-    Offset: '0x2d8'
-    Size: '0x4'
-    Type: float
-  - Name: DensityOffset
-    Offset: '0x2dc'
-    Size: '0x4'
-    Type: float
-  - Name: DistanceScale
     Offset: '0x2e0'
     Size: '0x4'
     Type: float
-  - Name: AltitudeScale
+  - Name: FogMultiplier
     Offset: '0x2e4'
     Size: '0x4'
     Type: float
-  - Name: DistanceOffset
+  - Name: DensityMultiplier
     Offset: '0x2e8'
     Size: '0x4'
     Type: float
-  - Name: GroundOffset
+  - Name: DensityOffset
     Offset: '0x2ec'
     Size: '0x4'
     Type: float
-  - Name: StartDistance
+  - Name: DistanceScale
     Offset: '0x2f0'
     Size: '0x4'
     Type: float
-  - Name: SunDiscScale
+  - Name: AltitudeScale
     Offset: '0x2f4'
     Size: '0x4'
     Type: float
-  - Name: DefaultBrightness
+  - Name: DistanceOffset
     Offset: '0x2f8'
     Size: '0x4'
     Type: float
-  - Name: DefaultLightColor
+  - Name: GroundOffset
     Offset: '0x2fc'
+    Size: '0x4'
+    Type: float
+  - Name: StartDistance
+    Offset: '0x300'
+    Size: '0x4'
+    Type: float
+  - Name: SunDiscScale
+    Offset: '0x304'
+    Size: '0x4'
+    Type: float
+  - Name: DefaultBrightness
+    Offset: '0x308'
+    Size: '0x4'
+    Type: float
+  - Name: DefaultLightColor
+    Offset: '0x30c'
     Size: '0x4'
     Type: Struct Color
   - Name: bDisableSunDisk
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x1'
     Type: bool
   - Name: bDisableGroundScattering
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x1'
     Type: bool
   - Name: PrecomputeParams
-    Offset: '0x304'
+    Offset: '0x314'
     Size: '0x2c'
     Type: Struct AtmospherePrecomputeParameters
   - Name: TransmittanceTexture
-    Offset: '0x330'
+    Offset: '0x340'
     Size: '0x8'
     Type: Class Texture2D*
   - Name: IrradianceTexture
-    Offset: '0x338'
+    Offset: '0x348'
     Size: '0x8'
     Type: Class Texture2D*
   ClassSize: '0x1e0'
-  FullSize: '0x4b0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x4c0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 AudioComponent:
   Attributes:
   - Name: Sound
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: Class SoundBase*
   - Name: InstanceParameters
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x10'
     Type: TArray<Struct AudioComponentParam>
   - Name: SoundClassOverride
-    Offset: '0x2e8'
+    Offset: '0x2f8'
     Size: '0x8'
     Type: Class SoundClass*
   - Name: bAutoDestroy
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x1'
     Type: bool
   - Name: bStopWhenOwnerDestroyed
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x1'
     Type: bool
   - Name: bShouldRemainActiveIfDropped
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x1'
     Type: bool
   - Name: bAllowSpatialization
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x1'
     Type: bool
   - Name: bOverrideAttenuation
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x1'
     Type: bool
   - Name: bIsUISound
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x1'
     Type: bool
   - Name: PitchModulationMin
-    Offset: '0x2f4'
-    Size: '0x4'
-    Type: float
-  - Name: PitchModulationMax
-    Offset: '0x2f8'
-    Size: '0x4'
-    Type: float
-  - Name: VolumeModulationMin
-    Offset: '0x2fc'
-    Size: '0x4'
-    Type: float
-  - Name: VolumeModulationMax
-    Offset: '0x300'
-    Size: '0x4'
-    Type: float
-  - Name: VolumeMultiplier
     Offset: '0x304'
     Size: '0x4'
     Type: float
-  - Name: PitchMultiplier
+  - Name: PitchModulationMax
     Offset: '0x308'
     Size: '0x4'
     Type: float
-  - Name: HighFrequencyGainMultiplier
+  - Name: VolumeModulationMin
     Offset: '0x30c'
     Size: '0x4'
     Type: float
-  - Name: AttenuationSettings
+  - Name: VolumeModulationMax
     Offset: '0x310'
+    Size: '0x4'
+    Type: float
+  - Name: VolumeMultiplier
+    Offset: '0x314'
+    Size: '0x4'
+    Type: float
+  - Name: PitchMultiplier
+    Offset: '0x318'
+    Size: '0x4'
+    Type: float
+  - Name: HighFrequencyGainMultiplier
+    Offset: '0x31c'
+    Size: '0x4'
+    Type: float
+  - Name: AttenuationSettings
+    Offset: '0x320'
     Size: '0x8'
     Type: Class SoundAttenuation*
   - Name: AttenuationOverrides
-    Offset: '0x318'
+    Offset: '0x328'
     Size: '0xc0'
     Type: Struct AttenuationSettings
   ClassSize: '0x150'
-  FullSize: '0x420'
-  InheritedSize: '0x2d0'
+  FullSize: '0x430'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 AudioSettings:
   Attributes:
@@ -1667,56 +1667,56 @@ AvoidanceManager:
 BaseWaterComponent:
   Attributes:
   - Name: WaterId
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x8'
     Type: class
   - Name: ActiveInExclusionZone
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x1'
     Type: bool
   ClassSize: '0x10'
-  FullSize: '0x5c0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5d0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 BasisComponent:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0x2e0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x2f0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 BillboardComponent:
   Attributes:
   - Name: Sprite
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x8'
     Type: Class Texture2D*
   - Name: bIsScreenSizeScaled
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x1'
     Type: bool
   - Name: ScreenSize
-    Offset: '0x5b4'
-    Size: '0x4'
-    Type: float
-  - Name: U
-    Offset: '0x5b8'
-    Size: '0x4'
-    Type: float
-  - Name: UL
-    Offset: '0x5bc'
-    Size: '0x4'
-    Type: float
-  - Name: V
-    Offset: '0x5c0'
-    Size: '0x4'
-    Type: float
-  - Name: VL
     Offset: '0x5c4'
     Size: '0x4'
     Type: float
+  - Name: U
+    Offset: '0x5c8'
+    Size: '0x4'
+    Type: float
+  - Name: UL
+    Offset: '0x5cc'
+    Size: '0x4'
+    Type: float
+  - Name: V
+    Offset: '0x5d0'
+    Size: '0x4'
+    Type: float
+  - Name: VL
+    Offset: '0x5d4'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x20'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 BlendSpace:
   Attributes:
@@ -2051,12 +2051,12 @@ BookMark2D:
 BoxComponent:
   Attributes:
   - Name: BoxExtent
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0xc'
     Type: Struct Vector
   ClassSize: '0x10'
-  FullSize: '0x5e0'
-  InheritedSize: '0x5d0'
+  FullSize: '0x5f0'
+  InheritedSize: '0x5e0'
   Super: ShapeComponent
 BoxReflectionCapture:
   Attributes: []
@@ -2067,20 +2067,20 @@ BoxReflectionCapture:
 BoxReflectionCaptureComponent:
   Attributes:
   - Name: BoxTransitionDistance
-    Offset: '0x360'
+    Offset: '0x370'
     Size: '0x4'
     Type: float
   - Name: PreviewInfluenceBox
-    Offset: '0x368'
+    Offset: '0x378'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: PreviewCaptureBox
-    Offset: '0x370'
+    Offset: '0x380'
     Size: '0x8'
     Type: Class BoxComponent*
   ClassSize: '0x20'
-  FullSize: '0x380'
-  InheritedSize: '0x360'
+  FullSize: '0x390'
+  InheritedSize: '0x370'
   Super: ReflectionCaptureComponent
 Breakpoint:
   Attributes:
@@ -2195,20 +2195,20 @@ BrushBuilder:
 BrushComponent:
   Attributes:
   - Name: Brush
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x8'
     Type: Class Model*
   - Name: BrushBodySetup
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x8'
     Type: Class BodySetup*
   - Name: PrePivot
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0xc'
     Type: Struct Vector
   ClassSize: '0x20'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 BrushShape:
   Attributes: []
@@ -2229,20 +2229,20 @@ ButtonStyleAsset:
 CalmWaterComponent:
   Attributes:
   - Name: Radius
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x4'
     Type: float
   - Name: RadiusPercentageToStartLerp
-    Offset: '0x2d4'
+    Offset: '0x2e4'
     Size: '0x4'
     Type: float
   - Name: DampeningFactor
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x4'
     Type: float
   ClassSize: '0x10'
-  FullSize: '0x2e0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x2f0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 CalmWaterZone:
   Attributes:
@@ -2365,56 +2365,56 @@ CameraBlockingVolume:
 CameraComponent:
   Attributes:
   - Name: FieldOfView
-    Offset: '0x2d0'
-    Size: '0x4'
-    Type: float
-  - Name: OrthoWidth
-    Offset: '0x2d4'
-    Size: '0x4'
-    Type: float
-  - Name: OrthoNearClipPlane
-    Offset: '0x2d8'
-    Size: '0x4'
-    Type: float
-  - Name: OrthoFarClipPlane
-    Offset: '0x2dc'
-    Size: '0x4'
-    Type: float
-  - Name: AspectRatio
     Offset: '0x2e0'
     Size: '0x4'
     Type: float
-  - Name: bConstrainAspectRatio
+  - Name: OrthoWidth
     Offset: '0x2e4'
-    Size: '0x1'
-    Type: bool
-  - Name: bUseFieldOfViewForLOD
-    Offset: '0x2e4'
-    Size: '0x1'
-    Type: bool
-  - Name: bUsePawnControlRotation
-    Offset: '0x2e4'
-    Size: '0x1'
-    Type: bool
-  - Name: ProjectionMode
+    Size: '0x4'
+    Type: float
+  - Name: OrthoNearClipPlane
     Offset: '0x2e8'
-    Size: '0x1'
-    Type: byte
-  - Name: PostProcessBlendWeight
+    Size: '0x4'
+    Type: float
+  - Name: OrthoFarClipPlane
     Offset: '0x2ec'
     Size: '0x4'
     Type: float
-  - Name: PostProcessSettings
+  - Name: AspectRatio
     Offset: '0x2f0'
+    Size: '0x4'
+    Type: float
+  - Name: bConstrainAspectRatio
+    Offset: '0x2f4'
+    Size: '0x1'
+    Type: bool
+  - Name: bUseFieldOfViewForLOD
+    Offset: '0x2f4'
+    Size: '0x1'
+    Type: bool
+  - Name: bUsePawnControlRotation
+    Offset: '0x2f4'
+    Size: '0x1'
+    Type: bool
+  - Name: ProjectionMode
+    Offset: '0x2f8'
+    Size: '0x1'
+    Type: byte
+  - Name: PostProcessBlendWeight
+    Offset: '0x2fc'
+    Size: '0x4'
+    Type: float
+  - Name: PostProcessSettings
+    Offset: '0x300'
     Size: '0x540'
     Type: Struct PostProcessSettings
   - Name: bUseControllerViewRotation
-    Offset: '0x830'
+    Offset: '0x840'
     Size: '0x1'
     Type: bool
   ClassSize: '0x570'
-  FullSize: '0x840'
-  InheritedSize: '0x2d0'
+  FullSize: '0x850'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 CameraModifier:
   Attributes:
@@ -2617,16 +2617,16 @@ CanvasRenderTarget2D:
 CapsuleComponent:
   Attributes:
   - Name: CapsuleHalfHeight
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0x4'
     Type: float
   - Name: CapsuleRadius
-    Offset: '0x5cc'
+    Offset: '0x5dc'
     Size: '0x4'
     Type: float
   ClassSize: '0x0'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5d0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5e0'
   Super: ShapeComponent
 Channel:
   Attributes:
@@ -3309,16 +3309,16 @@ CheckBoxStyleAsset:
 ChildActorComponent:
   Attributes:
   - Name: ChildActorClass
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: class
   - Name: ChildActor
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x20'
-  FullSize: '0x2f0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x300'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 ChildConnection:
   Attributes:
@@ -3749,24 +3749,24 @@ DecalActor:
 DecalComponent:
   Attributes:
   - Name: DecalMaterial
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: SortOrder
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x4'
     Type: int
   - Name: FadeScreenSize
-    Offset: '0x2dc'
+    Offset: '0x2ec'
     Size: '0x4'
     Type: float
   - Name: MaterialInstanceDynamic
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   ClassSize: '0x30'
-  FullSize: '0x300'
-  InheritedSize: '0x2d0'
+  FullSize: '0x310'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 DefaultPawn:
   Attributes:
@@ -3857,24 +3857,24 @@ DestructibleActor:
 DestructibleComponent:
   Attributes:
   - Name: bFractureEffectOverride
-    Offset: '0x6e0'
+    Offset: '0x6f0'
     Size: '0x1'
     Type: bool
   - Name: FractureEffects
-    Offset: '0x6e8'
+    Offset: '0x6f8'
     Size: '0x10'
     Type: TArray<Struct FractureEffect>
   - Name: bEnableHardSleeping
-    Offset: '0x6f8'
+    Offset: '0x708'
     Size: '0x1'
     Type: bool
   - Name: LargeChunkThreshold
-    Offset: '0x6fc'
+    Offset: '0x70c'
     Size: '0x4'
     Type: float
   ClassSize: '0xc0'
-  FullSize: '0x7a0'
-  InheritedSize: '0x6e0'
+  FullSize: '0x7b0'
+  InheritedSize: '0x6f0'
   Super: SkinnedMeshComponent
 DestructibleFractureSettings:
   Attributes:
@@ -4027,112 +4027,112 @@ DirectionalLight:
 DirectionalLightComponent:
   Attributes:
   - Name: bEnableLightShaftOcclusion
-    Offset: '0x458'
+    Offset: '0x468'
     Size: '0x1'
     Type: bool
   - Name: OcclusionMaskDarkness
-    Offset: '0x45c'
+    Offset: '0x46c'
     Size: '0x4'
     Type: float
   - Name: OcclusionDepthRange
-    Offset: '0x460'
-    Size: '0x4'
-    Type: float
-  - Name: LightShaftOverrideDirection
-    Offset: '0x464'
-    Size: '0xc'
-    Type: Struct Vector
-  - Name: WholeSceneDynamicShadowRadius
     Offset: '0x470'
     Size: '0x4'
     Type: float
-  - Name: DynamicShadowDistanceMovableLight
+  - Name: LightShaftOverrideDirection
     Offset: '0x474'
-    Size: '0x4'
-    Type: float
-  - Name: DynamicShadowDistanceStationaryLight
-    Offset: '0x478'
-    Size: '0x4'
-    Type: float
-  - Name: DynamicShadowCascades
-    Offset: '0x47c'
-    Size: '0x4'
-    Type: int
-  - Name: CascadeDistributionExponent
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: WholeSceneDynamicShadowRadius
     Offset: '0x480'
     Size: '0x4'
     Type: float
-  - Name: CascadeTransitionFraction
+  - Name: DynamicShadowDistanceMovableLight
     Offset: '0x484'
     Size: '0x4'
     Type: float
-  - Name: ShadowDistanceFadeoutFraction
+  - Name: DynamicShadowDistanceStationaryLight
     Offset: '0x488'
     Size: '0x4'
     Type: float
-  - Name: LastTransitionSizeOverride
+  - Name: DynamicShadowCascades
     Offset: '0x48c'
     Size: '0x4'
-    Type: float
-  - Name: CloseCascadeUpdateRateInMs
+    Type: int
+  - Name: CascadeDistributionExponent
     Offset: '0x490'
     Size: '0x4'
     Type: float
-  - Name: FarCascadesUpdateRateInMs
+  - Name: CascadeTransitionFraction
     Offset: '0x494'
     Size: '0x4'
     Type: float
-  - Name: bUseInsetShadowsForMovableObjects
+  - Name: ShadowDistanceFadeoutFraction
     Offset: '0x498'
-    Size: '0x1'
-    Type: bool
-  - Name: FarShadowCascadeCount
+    Size: '0x4'
+    Type: float
+  - Name: LastTransitionSizeOverride
     Offset: '0x49c'
     Size: '0x4'
-    Type: int
-  - Name: FarShadowDistance
+    Type: float
+  - Name: CloseCascadeUpdateRateInMs
     Offset: '0x4a0'
     Size: '0x4'
     Type: float
-  - Name: NormalOffsetScale
+  - Name: FarCascadesUpdateRateInMs
     Offset: '0x4a4'
     Size: '0x4'
     Type: float
-  - Name: CloudsShadowsIntensity
+  - Name: bUseInsetShadowsForMovableObjects
     Offset: '0x4a8'
-    Size: '0x4'
-    Type: float
-  - Name: DistanceFieldShadowDistance
+    Size: '0x1'
+    Type: bool
+  - Name: FarShadowCascadeCount
     Offset: '0x4ac'
     Size: '0x4'
-    Type: float
-  - Name: LightSourceAngle
+    Type: int
+  - Name: FarShadowDistance
     Offset: '0x4b0'
     Size: '0x4'
     Type: float
-  - Name: TraceDistance
+  - Name: NormalOffsetScale
     Offset: '0x4b4'
     Size: '0x4'
     Type: float
-  - Name: LightmassSettings
+  - Name: CloudsShadowsIntensity
     Offset: '0x4b8'
+    Size: '0x4'
+    Type: float
+  - Name: DistanceFieldShadowDistance
+    Offset: '0x4bc'
+    Size: '0x4'
+    Type: float
+  - Name: LightSourceAngle
+    Offset: '0x4c0'
+    Size: '0x4'
+    Type: float
+  - Name: TraceDistance
+    Offset: '0x4c4'
+    Size: '0x4'
+    Type: float
+  - Name: LightmassSettings
+    Offset: '0x4c8'
     Size: '0x10'
     Type: Struct LightmassDirectionalLightSettings
   - Name: bCastModulatedShadows
-    Offset: '0x4c8'
+    Offset: '0x4d8'
     Size: '0x1'
     Type: bool
   - Name: ModulatedShadowColor
-    Offset: '0x4cc'
+    Offset: '0x4dc'
     Size: '0x4'
     Type: Struct Color
   - Name: bUsedAsAtmosphereSunLight
-    Offset: '0x4d0'
+    Offset: '0x4e0'
     Size: '0x1'
     Type: bool
   ClassSize: '0x80'
-  FullSize: '0x4e0'
-  InheritedSize: '0x460'
+  FullSize: '0x4f0'
+  InheritedSize: '0x470'
   Super: LightComponent
 Distribution:
   Attributes: []
@@ -4385,38 +4385,38 @@ DocumentationActor:
 DrawFrustumComponent:
   Attributes:
   - Name: FrustumColor
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x4'
     Type: Struct Color
   - Name: FrustumAngle
-    Offset: '0x5ac'
+    Offset: '0x5bc'
     Size: '0x4'
     Type: float
   - Name: FrustumAspectRatio
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x4'
     Type: float
   - Name: FrustumStartDist
-    Offset: '0x5b4'
+    Offset: '0x5c4'
     Size: '0x4'
     Type: float
   - Name: FrustumEndDist
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x4'
     Type: float
   - Name: Texture
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x8'
     Type: Class Texture*
   ClassSize: '0x20'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 DrawSphereComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5d0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5e0'
   Super: SphereComponent
 DynamicBlueprintBinding:
   Attributes: []
@@ -4589,18 +4589,18 @@ EdGraphSchema:
 EditorOnlyChildActorComponent:
   Attributes:
   - Name: CachedChildActorClass
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x8'
     Type: class
   ClassSize: '0x10'
-  FullSize: '0x300'
-  InheritedSize: '0x2f0'
+  FullSize: '0x310'
+  InheritedSize: '0x300'
   Super: ChildActorComponent
 EllipsoidComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5d0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5e0'
   Super: SphereComponent
 Emitter:
   Attributes:
@@ -5555,68 +5555,68 @@ ExponentialHeightFog:
 ExponentialHeightFogComponent:
   Attributes:
   - Name: FogDensity
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x4'
     Type: float
   - Name: FogInscatteringColor
-    Offset: '0x2d4'
-    Size: '0x10'
-    Type: Struct LinearColor
-  - Name: FarFogInscatteringColor
     Offset: '0x2e4'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: DirectionalInscatteringExponent
+  - Name: FarFogInscatteringColor
     Offset: '0x2f4'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: DirectionalInscatteringExponent
+    Offset: '0x304'
     Size: '0x4'
     Type: float
   - Name: DirectionalInscatteringStartDistance
-    Offset: '0x2f8'
+    Offset: '0x308'
     Size: '0x4'
     Type: float
   - Name: StartScaleDirectionalInscattering
-    Offset: '0x2fc'
+    Offset: '0x30c'
     Size: '0x4'
     Type: float
   - Name: FarScaleDirectionalInscattering
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x4'
     Type: float
   - Name: DirectionalInscatteringColor
-    Offset: '0x304'
+    Offset: '0x314'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: FogHeightFalloff
-    Offset: '0x314'
-    Size: '0x4'
-    Type: float
-  - Name: FogMaxOpacity
-    Offset: '0x318'
-    Size: '0x4'
-    Type: float
-  - Name: StartDistance
-    Offset: '0x31c'
-    Size: '0x4'
-    Type: float
-  - Name: FarDistance
-    Offset: '0x320'
-    Size: '0x4'
-    Type: float
-  - Name: StartScale
     Offset: '0x324'
     Size: '0x4'
     Type: float
-  - Name: FarScale
+  - Name: FogMaxOpacity
     Offset: '0x328'
     Size: '0x4'
     Type: float
-  - Name: bIsUnderwater
+  - Name: StartDistance
     Offset: '0x32c'
+    Size: '0x4'
+    Type: float
+  - Name: FarDistance
+    Offset: '0x330'
+    Size: '0x4'
+    Type: float
+  - Name: StartScale
+    Offset: '0x334'
+    Size: '0x4'
+    Type: float
+  - Name: FarScale
+    Offset: '0x338'
+    Size: '0x4'
+    Type: float
+  - Name: bIsUnderwater
+    Offset: '0x33c'
     Size: '0x1'
     Type: bool
   ClassSize: '0x60'
-  FullSize: '0x330'
-  InheritedSize: '0x2d0'
+  FullSize: '0x340'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 Exporter:
   Attributes:
@@ -5677,46 +5677,46 @@ FFTWater:
 FFTWaterComponent:
   Attributes:
   - Name: WaterParams
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x310'
     Type: Struct FFTWaterComponentParams
   - Name: Brush
-    Offset: '0x8c8'
+    Offset: '0x8d8'
     Size: '0x8'
     Type: Class Model*
   - Name: BrushBodySetup
-    Offset: '0x8d0'
+    Offset: '0x8e0'
     Size: '0x8'
     Type: Class BodySetup*
   - Name: PrePivot
-    Offset: '0x8d8'
+    Offset: '0x8e8'
     Size: '0xc'
     Type: Struct Vector
   - Name: LightFunctionMaterial
-    Offset: '0x968'
+    Offset: '0x978'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: DefaultLightFunctionMaterial
-    Offset: '0x970'
+    Offset: '0x980'
     Size: '0x8'
     Type: Class Material*
   ClassSize: '0x3e0'
-  FullSize: '0x9a0'
-  InheritedSize: '0x5c0'
+  FullSize: '0x9b0'
+  InheritedSize: '0x5d0'
   Super: BaseWaterComponent
 FFTWaterExtendedPlaneComponent:
   Attributes:
   - Name: WaterParams
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x310'
     Type: Struct FFTWaterComponentParams
   - Name: Material
-    Offset: '0x8c8'
+    Offset: '0x8d8'
     Size: '0x8'
     Type: Class Material*
   ClassSize: '0x320'
-  FullSize: '0x8e0'
-  InheritedSize: '0x5c0'
+  FullSize: '0x8f0'
+  InheritedSize: '0x5d0'
   Super: BaseWaterComponent
 FFTWaterSettings:
   Attributes:
@@ -5759,80 +5759,80 @@ FeatureToggledStringAssetReference:
 FlatWaterMeshComponent:
   Attributes:
   - Name: RandomDropRate
-    Offset: '0x610'
+    Offset: '0x620'
     Size: '0x4'
     Type: int
   - Name: RandomDropSize
-    Offset: '0x614'
-    Size: '0x4'
-    Type: float
-  - Name: RandomDropHeight
-    Offset: '0x618'
-    Size: '0x4'
-    Type: float
-  - Name: RestorationScale
-    Offset: '0x61c'
-    Size: '0x4'
-    Type: float
-  - Name: ForceScale
-    Offset: '0x620'
-    Size: '0x4'
-    Type: float
-  - Name: DampHeight
     Offset: '0x624'
     Size: '0x4'
     Type: float
-  - Name: NormalMapScale
+  - Name: RandomDropHeight
     Offset: '0x628'
     Size: '0x4'
     Type: float
-  - Name: TextureWidth
+  - Name: RestorationScale
     Offset: '0x62c'
+    Size: '0x4'
+    Type: float
+  - Name: ForceScale
+    Offset: '0x630'
+    Size: '0x4'
+    Type: float
+  - Name: DampHeight
+    Offset: '0x634'
+    Size: '0x4'
+    Type: float
+  - Name: NormalMapScale
+    Offset: '0x638'
+    Size: '0x4'
+    Type: float
+  - Name: TextureWidth
+    Offset: '0x63c'
     Size: '0x4'
     Type: int
   - Name: TextureHeight
-    Offset: '0x630'
+    Offset: '0x640'
     Size: '0x4'
     Type: int
   - Name: ClippingHull
-    Offset: '0x638'
+    Offset: '0x648'
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: MaxSimulationDistance
-    Offset: '0x640'
+    Offset: '0x650'
     Size: '0x4'
     Type: float
   - Name: InitialRandomHeight
-    Offset: '0x644'
+    Offset: '0x654'
     Size: '0x4'
     Type: float
   - Name: InitialRandomVelocity
-    Offset: '0x648'
+    Offset: '0x658'
     Size: '0x4'
     Type: float
   - Name: Texture
-    Offset: '0x650'
+    Offset: '0x660'
     Size: '0x8'
     Type: Class Texture*
   - Name: NormalTexture
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x8'
     Type: Class Texture*
   - Name: WaterMaskTexture
-    Offset: '0x660'
+    Offset: '0x670'
     Size: '0x8'
     Type: Class TextureRenderTarget2D*
   - Name: OriginalMaterials
-    Offset: '0x680'
+    Offset: '0x690'
     Size: '0x10'
     Type: TArray<class OriginalMaterials*>
   - Name: TextureOverrides
-    Offset: '0x690'
+    Offset: '0x6a0'
     Size: '0x10'
     Type: TArray<Struct FlatWaterMeshTextureOverride>
   ClassSize: '0xa0'
-  FullSize: '0x6b0'
-  InheritedSize: '0x610'
+  FullSize: '0x6c0'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 FloatingPawnMovement:
   Attributes:
@@ -5877,164 +5877,164 @@ FogVolume:
 FogVolumeComponent:
   Attributes:
   - Name: Color
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: SceneFogSaturation
-    Offset: '0x2e0'
-    Size: '0x4'
-    Type: float
-  - Name: Density
-    Offset: '0x2e4'
-    Size: '0x4'
-    Type: float
-  - Name: HeightFogFalloff
-    Offset: '0x2e8'
-    Size: '0x4'
-    Type: float
-  - Name: DistanceFalloffPower
-    Offset: '0x2ec'
-    Size: '0x4'
-    Type: float
-  - Name: ShadowIntensity
     Offset: '0x2f0'
     Size: '0x4'
     Type: float
-  - Name: ScaleOnTranslucency
+  - Name: Density
     Offset: '0x2f4'
     Size: '0x4'
     Type: float
-  - Name: FogVelocity
+  - Name: HeightFogFalloff
     Offset: '0x2f8'
+    Size: '0x4'
+    Type: float
+  - Name: DistanceFalloffPower
+    Offset: '0x2fc'
+    Size: '0x4'
+    Type: float
+  - Name: ShadowIntensity
+    Offset: '0x300'
+    Size: '0x4'
+    Type: float
+  - Name: ScaleOnTranslucency
+    Offset: '0x304'
+    Size: '0x4'
+    Type: float
+  - Name: FogVelocity
+    Offset: '0x308'
     Size: '0xc'
     Type: Struct Vector
   - Name: NoisePrimaryScale
-    Offset: '0x304'
+    Offset: '0x314'
     Size: '0xc'
     Type: Struct Vector
   - Name: NoiseSecondaryScale
-    Offset: '0x310'
+    Offset: '0x320'
     Size: '0xc'
     Type: Struct Vector
   - Name: NoiseBlend
-    Offset: '0x31c'
-    Size: '0x4'
-    Type: float
-  - Name: VolumeTexture
-    Offset: '0x320'
-    Size: '0x8'
-    Type: Class Texture*
-  - Name: InscatteringIntensity
-    Offset: '0x328'
-    Size: '0x4'
-    Type: float
-  - Name: InscatteringPower
     Offset: '0x32c'
     Size: '0x4'
     Type: float
-  - Name: ShadowDistance
+  - Name: VolumeTexture
     Offset: '0x330'
+    Size: '0x8'
+    Type: Class Texture*
+  - Name: InscatteringIntensity
+    Offset: '0x338'
+    Size: '0x4'
+    Type: float
+  - Name: InscatteringPower
+    Offset: '0x33c'
+    Size: '0x4'
+    Type: float
+  - Name: ShadowDistance
+    Offset: '0x340'
     Size: '0x4'
     Type: float
   - Name: ActiveBelowDepth
-    Offset: '0x334'
+    Offset: '0x344'
     Size: '0x4'
     Type: float
   - Name: bUseSceneInscattering
-    Offset: '0x338'
+    Offset: '0x348'
     Size: '0x1'
     Type: bool
   - Name: bUnderwater
-    Offset: '0x33c'
+    Offset: '0x34c'
     Size: '0x1'
     Type: bool
   - Name: bScaleWithLighting
-    Offset: '0x33d'
+    Offset: '0x34d'
     Size: '0x1'
     Type: bool
   - Name: bAdvancedVolumeFog
-    Offset: '0x33e'
+    Offset: '0x34e'
     Size: '0x1'
     Type: bool
   - Name: UseDensityMapOnTranslucency
-    Offset: '0x33f'
+    Offset: '0x34f'
     Size: '0x1'
     Type: bool
   - Name: DensityMap
-    Offset: '0x340'
+    Offset: '0x350'
     Size: '0x8'
     Type: Class Texture*
   - Name: DensityMapScale
-    Offset: '0x348'
+    Offset: '0x358'
     Size: '0xc'
     Type: Struct Vector
   - Name: DensityMapOffset
-    Offset: '0x354'
+    Offset: '0x364'
     Size: '0xc'
     Type: Struct Vector
   - Name: DensityMapActiveHemisphereOrigin
-    Offset: '0x360'
+    Offset: '0x370'
     Size: '0xc'
     Type: Struct Vector
   - Name: DensityMapActiveHemisphereDirection
-    Offset: '0x36c'
+    Offset: '0x37c'
     Size: '0xc'
     Type: Struct Vector
   - Name: DensityMapActiveHemisphereInnerRadius
-    Offset: '0x378'
+    Offset: '0x388'
     Size: '0x4'
     Type: float
   - Name: DensityMapActiveHemisphereOuterRadius
-    Offset: '0x37c'
-    Size: '0x4'
-    Type: float
-  - Name: SelfShadowBrightness
-    Offset: '0x380'
-    Size: '0x4'
-    Type: float
-  - Name: SelfShadowFogScale
-    Offset: '0x384'
-    Size: '0x4'
-    Type: float
-  - Name: bMeshFog
-    Offset: '0x388'
-    Size: '0x1'
-    Type: bool
-  - Name: MeshFogDensity
     Offset: '0x38c'
     Size: '0x4'
     Type: float
-  - Name: MeshFogShadowDensity
+  - Name: SelfShadowBrightness
     Offset: '0x390'
     Size: '0x4'
     Type: float
-  - Name: MeshFogScatteringDensity
+  - Name: SelfShadowFogScale
     Offset: '0x394'
     Size: '0x4'
     Type: float
-  - Name: MeshFogNoisePrimaryScale
+  - Name: bMeshFog
     Offset: '0x398'
+    Size: '0x1'
+    Type: bool
+  - Name: MeshFogDensity
+    Offset: '0x39c'
+    Size: '0x4'
+    Type: float
+  - Name: MeshFogShadowDensity
+    Offset: '0x3a0'
+    Size: '0x4'
+    Type: float
+  - Name: MeshFogScatteringDensity
+    Offset: '0x3a4'
+    Size: '0x4'
+    Type: float
+  - Name: MeshFogNoisePrimaryScale
+    Offset: '0x3a8'
     Size: '0xc'
     Type: Struct Vector
   - Name: MeshFogNoiseSecondaryScale
-    Offset: '0x3a4'
-    Size: '0xc'
-    Type: Struct Vector
-  - Name: MeshFogNoiseBlend
-    Offset: '0x3b0'
-    Size: '0x4'
-    Type: float
-  - Name: MeshFogVelocity
     Offset: '0x3b4'
     Size: '0xc'
     Type: Struct Vector
-  - Name: MeshFogVolumeTexture
+  - Name: MeshFogNoiseBlend
     Offset: '0x3c0'
+    Size: '0x4'
+    Type: float
+  - Name: MeshFogVelocity
+    Offset: '0x3c4'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: MeshFogVolumeTexture
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class Texture*
   ClassSize: '0x100'
-  FullSize: '0x3d0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x3e0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 Font:
   Attributes:
@@ -6853,36 +6853,36 @@ HapticFeedbackEffect:
 HierarchicalInstancedStaticMeshComponent:
   Attributes:
   - Name: SortedInstances
-    Offset: '0x700'
+    Offset: '0x710'
     Size: '0x10'
     Type: TArray<Int SortedInstances>
   - Name: NumBuiltInstances
-    Offset: '0x710'
+    Offset: '0x720'
     Size: '0x4'
     Type: int
   - Name: BuiltInstanceBounds
-    Offset: '0x714'
+    Offset: '0x724'
     Size: '0x1c'
     Type: Struct Box
   - Name: UnbuiltInstanceBounds
-    Offset: '0x730'
+    Offset: '0x740'
     Size: '0x1c'
     Type: Struct Box
   - Name: UnbuiltInstanceBoundsList
-    Offset: '0x750'
+    Offset: '0x760'
     Size: '0x10'
     Type: TArray<Struct Box>
   - Name: OcclusionLayerNumNodes
-    Offset: '0x760'
+    Offset: '0x770'
     Size: '0x4'
     Type: int
   - Name: bDisableCollision
-    Offset: '0x766'
+    Offset: '0x776'
     Size: '0x1'
     Type: bool
   ClassSize: '0xd0'
-  FullSize: '0x790'
-  InheritedSize: '0x6c0'
+  FullSize: '0x7a0'
+  InheritedSize: '0x6d0'
   Super: InstancedStaticMeshComponent
 HighLatencySettings:
   Attributes:
@@ -7101,96 +7101,96 @@ InstancedActorDelegateBinding:
 InstancedCoverageMeshComponent:
   Attributes:
   - Name: InstanceCount
-    Offset: '0x618'
+    Offset: '0x628'
     Size: '0x4'
     Type: int
   - Name: InstancingRandomSeed
-    Offset: '0x61c'
+    Offset: '0x62c'
     Size: '0x4'
     Type: int
   - Name: InstancePositionExtrusion
-    Offset: '0x620'
+    Offset: '0x630'
     Size: '0x4'
     Type: float
   - Name: InstanceScale
-    Offset: '0x624'
+    Offset: '0x634'
     Size: '0x4'
     Type: float
   - Name: InstanceScaleVariance
-    Offset: '0x628'
+    Offset: '0x638'
     Size: '0x4'
     Type: float
   - Name: InstanceRotation
-    Offset: '0x62c'
+    Offset: '0x63c'
     Size: '0xc'
     Type: Struct Rotator
   - Name: InstanceRotationVariance
-    Offset: '0x638'
+    Offset: '0x648'
     Size: '0xc'
     Type: Struct Rotator
   - Name: InstanceAttractionDirection
-    Offset: '0x644'
+    Offset: '0x654'
     Size: '0xc'
     Type: Struct Vector
   - Name: InstanceAttractionIntensity
-    Offset: '0x650'
+    Offset: '0x660'
     Size: '0x4'
     Type: float
   - Name: InstanceBaseMeshPlacementLOD
-    Offset: '0x654'
+    Offset: '0x664'
     Size: '0x4'
     Type: int
   - Name: LODs
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x10'
     Type: TArray<Struct InstancedCoverageMeshLOD>
   - Name: CompleteCullingDistance
-    Offset: '0x668'
+    Offset: '0x678'
     Size: '0x4'
     Type: float
   - Name: InstanceLODPreserveSilhouette
-    Offset: '0x66c'
-    Size: '0x1'
-    Type: bool
-  - Name: BackFaceCullingAngle
-    Offset: '0x670'
-    Size: '0x4'
-    Type: float
-  - Name: ShadowBackFaceCullingAngle
-    Offset: '0x674'
-    Size: '0x4'
-    Type: float
-  - Name: MaxPlacementAttempts
-    Offset: '0x678'
-    Size: '0x4'
-    Type: int
-  - Name: bEvenlySpaced
     Offset: '0x67c'
     Size: '0x1'
     Type: bool
+  - Name: BackFaceCullingAngle
+    Offset: '0x680'
+    Size: '0x4'
+    Type: float
+  - Name: ShadowBackFaceCullingAngle
+    Offset: '0x684'
+    Size: '0x4'
+    Type: float
+  - Name: MaxPlacementAttempts
+    Offset: '0x688'
+    Size: '0x4'
+    Type: int
+  - Name: bEvenlySpaced
+    Offset: '0x68c'
+    Size: '0x1'
+    Type: bool
   - Name: bVertexColourDensity
-    Offset: '0x67d'
+    Offset: '0x68d'
     Size: '0x1'
     Type: bool
   - Name: bUpdatePlacement
-    Offset: '0x67e'
+    Offset: '0x68e'
     Size: '0x1'
     Type: bool
   - Name: RandomNumbers
-    Offset: '0x680'
+    Offset: '0x690'
     Size: '0x10'
     Type: TArray<Float RandomNumbers>
   - Name: BaseMeshSurfaceArea
-    Offset: '0x690'
+    Offset: '0x6a0'
     Size: '0x4'
     Type: float
   - Name: CoveredMesh
-    Offset: '0x698'
+    Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMesh*
   ClassSize: '0x90'
-  FullSize: '0x6a0'
-  InheritedSize: '0x610'
+  FullSize: '0x6b0'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 InstancedNavMeshBoundsVolume:
   Attributes: []
@@ -7201,16 +7201,16 @@ InstancedNavMeshBoundsVolume:
 InstancedNavMeshComponent:
   Attributes:
   - Name: NavMeshName
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: struct FName
   - Name: UseAttachedParentAsPrimitiveBase
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
-  FullSize: '0x2f0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x300'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 InstancedNavMeshInterface:
   Attributes: []
@@ -7231,44 +7231,44 @@ InstancedNavMeshesDataAsset:
 InstancedStaticMeshComponent:
   Attributes:
   - Name: PerInstanceSMData
-    Offset: '0x610'
+    Offset: '0x620'
     Size: '0x10'
     Type: TArray<Struct InstancedStaticMeshInstanceData>
   - Name: InstancingRandomSeed
-    Offset: '0x620'
+    Offset: '0x630'
     Size: '0x4'
     Type: int
   - Name: InstanceStartCullDistance
-    Offset: '0x624'
+    Offset: '0x634'
     Size: '0x4'
     Type: int
   - Name: InstanceEndCullDistance
-    Offset: '0x628'
+    Offset: '0x638'
     Size: '0x4'
     Type: int
   - Name: InstanceReorderTable
-    Offset: '0x630'
+    Offset: '0x640'
     Size: '0x10'
     Type: TArray<Int InstanceReorderTable>
   - Name: RemovedInstances
-    Offset: '0x640'
+    Offset: '0x650'
     Size: '0x10'
     Type: TArray<Int RemovedInstances>
   - Name: PhysicsSerializer
-    Offset: '0x698'
+    Offset: '0x6a8'
     Size: '0x8'
     Type: Class PhysicsSerializer*
   - Name: NumPendingLightmaps
-    Offset: '0x6a0'
+    Offset: '0x6b0'
     Size: '0x4'
     Type: int
   - Name: CachedMappings
-    Offset: '0x6a8'
+    Offset: '0x6b8'
     Size: '0x10'
     Type: TArray<Struct InstancedStaticMeshMappingInfo>
   ClassSize: '0xb0'
-  FullSize: '0x6c0'
-  InheritedSize: '0x610'
+  FullSize: '0x6d0'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 IntSerialization:
   Attributes:
@@ -8559,170 +8559,170 @@ Light:
 LightComponent:
   Attributes:
   - Name: Temperature
-    Offset: '0x300'
-    Size: '0x4'
-    Type: float
-  - Name: bUseTemperature
-    Offset: '0x304'
-    Size: '0x1'
-    Type: bool
-  - Name: ShadowMapChannel
-    Offset: '0x308'
-    Size: '0x4'
-    Type: int
-  - Name: SourceRadius
     Offset: '0x310'
     Size: '0x4'
     Type: float
-  - Name: MinRoughness
+  - Name: bUseTemperature
     Offset: '0x314'
-    Size: '0x4'
-    Type: float
-  - Name: ShadowBias
+    Size: '0x1'
+    Type: bool
+  - Name: ShadowMapChannel
     Offset: '0x318'
     Size: '0x4'
-    Type: float
-  - Name: ShadowSharpen
-    Offset: '0x31c'
-    Size: '0x4'
-    Type: float
-  - Name: ShadowResMaxDynamicDegradation
+    Type: int
+  - Name: SourceRadius
     Offset: '0x320'
     Size: '0x4'
     Type: float
-  - Name: InverseSquaredFalloff
+  - Name: MinRoughness
     Offset: '0x324'
+    Size: '0x4'
+    Type: float
+  - Name: ShadowBias
+    Offset: '0x328'
+    Size: '0x4'
+    Type: float
+  - Name: ShadowSharpen
+    Offset: '0x32c'
+    Size: '0x4'
+    Type: float
+  - Name: ShadowResMaxDynamicDegradation
+    Offset: '0x330'
+    Size: '0x4'
+    Type: float
+  - Name: InverseSquaredFalloff
+    Offset: '0x334'
     Size: '0x1'
     Type: bool
   - Name: CastTranslucentShadows
-    Offset: '0x324'
+    Offset: '0x334'
     Size: '0x1'
     Type: bool
   - Name: bCastShadowsFromCinematicObjectsOnly
-    Offset: '0x324'
+    Offset: '0x334'
     Size: '0x1'
     Type: bool
   - Name: bAffectDynamicIndirectLighting
-    Offset: '0x324'
+    Offset: '0x334'
     Size: '0x1'
     Type: bool
   - Name: LightFunctionMaterial
-    Offset: '0x328'
+    Offset: '0x338'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: LightFunctionScale
-    Offset: '0x330'
+    Offset: '0x340'
     Size: '0xc'
     Type: Struct Vector
   - Name: IESTexture
-    Offset: '0x340'
+    Offset: '0x350'
     Size: '0x8'
     Type: Class TextureLightProfile*
   - Name: bUseIESBrightness
-    Offset: '0x348'
-    Size: '0x1'
-    Type: bool
-  - Name: IESBrightnessScale
-    Offset: '0x34c'
-    Size: '0x4'
-    Type: float
-  - Name: LightFunctionFadeDistance
-    Offset: '0x350'
-    Size: '0x4'
-    Type: float
-  - Name: DisabledBrightness
-    Offset: '0x354'
-    Size: '0x4'
-    Type: float
-  - Name: bEnableLightShaftBloom
     Offset: '0x358'
     Size: '0x1'
     Type: bool
-  - Name: BloomScale
+  - Name: IESBrightnessScale
     Offset: '0x35c'
     Size: '0x4'
     Type: float
-  - Name: BloomThreshold
+  - Name: LightFunctionFadeDistance
     Offset: '0x360'
     Size: '0x4'
     Type: float
-  - Name: BloomTint
+  - Name: DisabledBrightness
     Offset: '0x364'
     Size: '0x4'
-    Type: Struct Color
-  - Name: bUseRayTracedDistanceFieldShadows
+    Type: float
+  - Name: bEnableLightShaftBloom
     Offset: '0x368'
     Size: '0x1'
     Type: bool
-  - Name: RayStartOffsetDepthScale
+  - Name: BloomScale
     Offset: '0x36c'
     Size: '0x4'
     Type: float
+  - Name: BloomThreshold
+    Offset: '0x370'
+    Size: '0x4'
+    Type: float
+  - Name: BloomTint
+    Offset: '0x374'
+    Size: '0x4'
+    Type: Struct Color
+  - Name: bUseRayTracedDistanceFieldShadows
+    Offset: '0x378'
+    Size: '0x1'
+    Type: bool
+  - Name: RayStartOffsetDepthScale
+    Offset: '0x37c'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x160'
-  FullSize: '0x460'
-  InheritedSize: '0x300'
+  FullSize: '0x470'
+  InheritedSize: '0x310'
   Super: LightComponentBase
 LightComponentBase:
   Attributes:
   - Name: LightGuid
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x10'
     Type: Struct Guid
   - Name: Brightness
-    Offset: '0x2e0'
-    Size: '0x4'
-    Type: float
-  - Name: Intensity
-    Offset: '0x2e4'
-    Size: '0x4'
-    Type: float
-  - Name: LightColor
-    Offset: '0x2e8'
-    Size: '0x4'
-    Type: Struct Color
-  - Name: bAffectsWorld
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: CastShadows
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: CastStaticShadows
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: CastDynamicShadows
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bAffectTranslucentLighting
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bPrecomputedLightingIsValid
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: RainOcclusion
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: IndirectLightingIntensity
     Offset: '0x2f0'
     Size: '0x4'
     Type: float
-  - Name: ScaleForTranslucency
+  - Name: Intensity
     Offset: '0x2f4'
     Size: '0x4'
     Type: float
-  - Name: CapForTranslucency
+  - Name: LightColor
     Offset: '0x2f8'
+    Size: '0x4'
+    Type: Struct Color
+  - Name: bAffectsWorld
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: CastShadows
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: CastStaticShadows
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: CastDynamicShadows
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectTranslucentLighting
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: bPrecomputedLightingIsValid
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: RainOcclusion
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: IndirectLightingIntensity
+    Offset: '0x300'
+    Size: '0x4'
+    Type: float
+  - Name: ScaleForTranslucency
+    Offset: '0x304'
+    Size: '0x4'
+    Type: float
+  - Name: CapForTranslucency
+    Offset: '0x308'
     Size: '0x4'
     Type: float
   ClassSize: '0x30'
-  FullSize: '0x300'
-  InheritedSize: '0x2d0'
+  FullSize: '0x310'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 LightMapTexture2D:
   Attributes: []
@@ -8769,8 +8769,8 @@ LightmassPrimitiveSettingsObject:
 LineBatchComponent:
   Attributes: []
   ClassSize: '0x30'
-  FullSize: '0x5e0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5f0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 LoadingPerfBPFuncLib:
   Attributes: []
@@ -9427,12 +9427,12 @@ Material:
 MaterialBillboardComponent:
   Attributes:
   - Name: Elements
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<Struct MaterialSpriteElement>
   ClassSize: '0x10'
-  FullSize: '0x5c0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5d0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 MaterialExpression:
   Attributes:
@@ -11915,44 +11915,44 @@ MergedCollisionActor:
 MergedCollisionComponent:
   Attributes:
   - Name: PerInstanceData
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<Struct MergedCollisionComponentStaticMeshInstanceData>
   ClassSize: '0x20'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 MergedStaticMeshComponent:
   Attributes:
   - Name: bDisplayMergedInEditor
-    Offset: '0x610'
+    Offset: '0x620'
     Size: '0x1'
     Type: bool
   - Name: LODScreenSizes
-    Offset: '0x618'
+    Offset: '0x628'
     Size: '0x10'
     Type: TArray<Float LODScreenSizes>
   - Name: LODForCollision
-    Offset: '0x628'
+    Offset: '0x638'
     Size: '0x4'
     Type: int
   - Name: bMergeVertexColours
-    Offset: '0x62c'
+    Offset: '0x63c'
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
-  FullSize: '0x630'
-  InheritedSize: '0x610'
+  FullSize: '0x640'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 MeshComponent:
   Attributes:
   - Name: OverrideMaterials
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<class OverrideMaterials*>
   ClassSize: '0x10'
-  FullSize: '0x5c0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5d0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 MeshPatchAsset:
   Attributes: []
@@ -11981,32 +11981,32 @@ MicroTransactionBase:
 MobileInstancedStaticMeshComponent:
   Attributes:
   - Name: MaxInstances
-    Offset: '0x610'
+    Offset: '0x620'
     Size: '0x4'
     Type: int
   - Name: InstanceTransforms
-    Offset: '0x620'
+    Offset: '0x630'
     Size: '0x10'
     Type: TArray<Struct Transform>
   - Name: InstanceMatrices
-    Offset: '0x630'
+    Offset: '0x640'
     Size: '0x10'
     Type: TArray<Struct Matrix>
   - Name: LocalBounds
-    Offset: '0x640'
+    Offset: '0x650'
     Size: '0x1c'
     Type: Struct BoxSphereBounds
   - Name: bBoundsBuilt
-    Offset: '0x65c'
+    Offset: '0x66c'
     Size: '0x1'
     Type: bool
   - Name: PhysicsSerializer
-    Offset: '0x660'
+    Offset: '0x670'
     Size: '0x8'
     Type: Class PhysicsSerializer*
   ClassSize: '0x80'
-  FullSize: '0x690'
-  InheritedSize: '0x610'
+  FullSize: '0x6a0'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 Model:
   Attributes: []
@@ -12017,12 +12017,12 @@ Model:
 ModelComponent:
   Attributes:
   - Name: ModelBodySetup
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x8'
     Type: Class BodySetup*
   ClassSize: '0x40'
-  FullSize: '0x5f0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x600'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 MorphTarget:
   Attributes: []
@@ -12415,8 +12415,8 @@ NavLinkProxy:
 NavLinkRenderingComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x5b0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5c0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 NavLinkTrivial:
   Attributes: []
@@ -12441,8 +12441,8 @@ NavMeshBoundsVolume:
 NavMeshRenderingComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x5b0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5c0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 NavModifierComponent:
   Attributes:
@@ -12533,8 +12533,8 @@ NavRelevantInterface:
 NavTestRenderingComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x5b0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5c0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 NavigationData:
   Attributes:
@@ -12599,20 +12599,20 @@ NavigationGraphNode:
 NavigationGraphNodeComponent:
   Attributes:
   - Name: Node
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x18'
     Type: Struct NavGraphNode
   - Name: NextNodeComponent
-    Offset: '0x2e8'
+    Offset: '0x2f8'
     Size: '0x8'
     Type: Class NavigationGraphNodeComponent*
   - Name: PrevNodeComponent
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x8'
     Type: Class NavigationGraphNodeComponent*
   ClassSize: '0x30'
-  FullSize: '0x300'
-  InheritedSize: '0x2d0'
+  FullSize: '0x310'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 NavigationInvokerComponent:
   Attributes:
@@ -16777,104 +16777,104 @@ ParticleSystemAggregateTickSettings:
 ParticleSystemComponent:
   Attributes:
   - Name: Template
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x8'
     Type: Class ParticleSystem*
   - Name: EmitterMaterials
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x10'
     Type: TArray<class EmitterMaterials*>
   - Name: SkelMeshComponents
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x10'
     Type: TArray<class SkelMeshComponents*>
   - Name: bResetOnDetach
-    Offset: '0x5d0'
+    Offset: '0x5e0'
     Size: '0x1'
     Type: bool
   - Name: bUpdateOnDedicatedServer
-    Offset: '0x5d0'
+    Offset: '0x5e0'
     Size: '0x1'
     Type: bool
   - Name: InstanceParameters
-    Offset: '0x5d8'
+    Offset: '0x5e8'
     Size: '0x10'
     Type: TArray<Struct ParticleSysParam>
   - Name: EmitterPointParameter
-    Offset: '0x5e8'
+    Offset: '0x5f8'
     Size: '0x50'
     Type: Struct ParticleSysParam
   - Name: OldPosition
-    Offset: '0x678'
+    Offset: '0x688'
     Size: '0xc'
     Type: Struct Vector
   - Name: PartSysVelocity
-    Offset: '0x684'
+    Offset: '0x694'
     Size: '0xc'
     Type: Struct Vector
   - Name: CustomInheritedVelocity
-    Offset: '0x6a8'
+    Offset: '0x6b8'
     Size: '0xc'
     Type: Struct Vector
   - Name: CustomParameterDrivingCurves
-    Offset: '0x6c0'
+    Offset: '0x6d0'
     Size: '0x4'
     Type: float
   - Name: ColourTint
-    Offset: '0x6c4'
+    Offset: '0x6d4'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: WarmUpTime
-    Offset: '0x6d4'
+    Offset: '0x6e4'
     Size: '0x4'
     Type: float
   - Name: WarmupTickRate
-    Offset: '0x6d8'
+    Offset: '0x6e8'
     Size: '0x4'
     Type: float
   - Name: bWarmingUp
-    Offset: '0x6dc'
+    Offset: '0x6ec'
     Size: '0x1'
     Type: bool
   - Name: SecondsBeforeInactive
-    Offset: '0x6f8'
+    Offset: '0x708'
     Size: '0x4'
     Type: float
   - Name: MaxTimeBeforeForceUpdateTransform
-    Offset: '0x704'
+    Offset: '0x714'
     Size: '0x4'
     Type: float
   - Name: bOverrideLODMethod
-    Offset: '0x70c'
+    Offset: '0x71c'
     Size: '0x1'
     Type: bool
   - Name: LODMethod
-    Offset: '0x710'
+    Offset: '0x720'
     Size: '0x1'
     Type: byte
   - Name: bSkipUpdateDynamicDataDuringTick
-    Offset: '0x714'
+    Offset: '0x724'
     Size: '0x1'
     Type: bool
   - Name: CachedViewRelevanceFlags
-    Offset: '0x718'
+    Offset: '0x728'
     Size: '0x10'
     Type: TArray<Struct MaterialRelevance>
   - Name: ReplayClips
-    Offset: '0x730'
+    Offset: '0x740'
     Size: '0x10'
     Type: TArray<class ReplayClips*>
   - Name: CustomTimeDilation
-    Offset: '0x7a0'
+    Offset: '0x7b0'
     Size: '0x4'
     Type: float
   - Name: bUnbound
-    Offset: '0x7b8'
+    Offset: '0x7c8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x2e0'
-  FullSize: '0x890'
-  InheritedSize: '0x5b0'
+  FullSize: '0x8a0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 ParticleSystemReplay:
   Attributes:
@@ -17137,32 +17137,32 @@ PhysicsConstraintActor:
 PhysicsConstraintComponent:
   Attributes:
   - Name: ConstraintActor1
-    Offset: '0x2d0'
-    Size: '0x8'
-    Type: Class Actor*
-  - Name: ComponentName1
-    Offset: '0x2d8'
-    Size: '0x8'
-    Type: Struct ConstrainComponentPropName
-  - Name: ConstraintActor2
     Offset: '0x2e0'
     Size: '0x8'
     Type: Class Actor*
-  - Name: ComponentName2
+  - Name: ComponentName1
     Offset: '0x2e8'
     Size: '0x8'
     Type: Struct ConstrainComponentPropName
+  - Name: ConstraintActor2
+    Offset: '0x2f0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ComponentName2
+    Offset: '0x2f8'
+    Size: '0x8'
+    Type: Struct ConstrainComponentPropName
   - Name: ConstraintSetup
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x8'
     Type: Class PhysicsConstraintTemplate*
   - Name: ConstraintInstance
-    Offset: '0x320'
+    Offset: '0x330'
     Size: '0x160'
     Type: Struct ConstraintInstance
   ClassSize: '0x1b0'
-  FullSize: '0x480'
-  InheritedSize: '0x2d0'
+  FullSize: '0x490'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 PhysicsConstraintTemplate:
   Attributes:
@@ -17503,36 +17503,36 @@ PhysicsSettings:
 PhysicsSpringComponent:
   Attributes:
   - Name: SpringStiffness
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x4'
     Type: float
   - Name: SpringDamping
-    Offset: '0x2d4'
-    Size: '0x4'
-    Type: float
-  - Name: SpringLengthAtRest
-    Offset: '0x2d8'
-    Size: '0x4'
-    Type: float
-  - Name: SpringRadius
-    Offset: '0x2dc'
-    Size: '0x4'
-    Type: float
-  - Name: SpringChannel
-    Offset: '0x2e0'
-    Size: '0x1'
-    Type: byte
-  - Name: bIgnoreSelf
-    Offset: '0x2e1'
-    Size: '0x1'
-    Type: bool
-  - Name: SpringCompression
     Offset: '0x2e4'
     Size: '0x4'
     Type: float
+  - Name: SpringLengthAtRest
+    Offset: '0x2e8'
+    Size: '0x4'
+    Type: float
+  - Name: SpringRadius
+    Offset: '0x2ec'
+    Size: '0x4'
+    Type: float
+  - Name: SpringChannel
+    Offset: '0x2f0'
+    Size: '0x1'
+    Type: byte
+  - Name: bIgnoreSelf
+    Offset: '0x2f1'
+    Size: '0x1'
+    Type: bool
+  - Name: SpringCompression
+    Offset: '0x2f4'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x30'
-  FullSize: '0x300'
-  InheritedSize: '0x2d0'
+  FullSize: '0x310'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 PhysicsThruster:
   Attributes:
@@ -17547,12 +17547,12 @@ PhysicsThruster:
 PhysicsThrusterComponent:
   Attributes:
   - Name: ThrustStrength
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x4'
     Type: float
   ClassSize: '0x10'
-  FullSize: '0x2e0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x2f0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 PhysicsVolume:
   Attributes:
@@ -17589,20 +17589,20 @@ PlaneReflectionCapture:
 PlaneReflectionCaptureComponent:
   Attributes:
   - Name: InfluenceRadiusScale
-    Offset: '0x360'
+    Offset: '0x370'
     Size: '0x4'
     Type: float
   - Name: PreviewInfluenceRadius
-    Offset: '0x368'
+    Offset: '0x378'
     Size: '0x8'
     Type: Class DrawSphereComponent*
   - Name: PreviewCaptureBox
-    Offset: '0x370'
+    Offset: '0x380'
     Size: '0x8'
     Type: Class BoxComponent*
   ClassSize: '0x20'
-  FullSize: '0x380'
-  InheritedSize: '0x360'
+  FullSize: '0x390'
+  InheritedSize: '0x370'
   Super: ReflectionCaptureComponent
 PlatformEventsComponent:
   Attributes: []
@@ -18087,64 +18087,64 @@ PointLight:
 PointLightComponent:
   Attributes:
   - Name: Radius
-    Offset: '0x458'
-    Size: '0x4'
-    Type: float
-  - Name: AttenuationRadius
-    Offset: '0x45c'
-    Size: '0x4'
-    Type: float
-  - Name: bUseInverseSquaredFalloff
-    Offset: '0x460'
-    Size: '0x1'
-    Type: bool
-  - Name: LightFalloffExponent
-    Offset: '0x464'
-    Size: '0x4'
-    Type: float
-  - Name: IntensityScaleForWater
     Offset: '0x468'
     Size: '0x4'
     Type: float
-  - Name: MinDistanceToLightAssumed
+  - Name: AttenuationRadius
     Offset: '0x46c'
     Size: '0x4'
     Type: float
-  - Name: SourceRadius
+  - Name: bUseInverseSquaredFalloff
     Offset: '0x470'
-    Size: '0x4'
-    Type: float
-  - Name: SourceLength
+    Size: '0x1'
+    Type: bool
+  - Name: LightFalloffExponent
     Offset: '0x474'
     Size: '0x4'
     Type: float
-  - Name: SimpleFunctionType
+  - Name: IntensityScaleForWater
     Offset: '0x478'
-    Size: '0x1'
-    Type: byte
-  - Name: ScaleOffset
+    Size: '0x4'
+    Type: float
+  - Name: MinDistanceToLightAssumed
     Offset: '0x47c'
     Size: '0x4'
     Type: float
-  - Name: PulsePhase
+  - Name: SourceRadius
     Offset: '0x480'
     Size: '0x4'
     Type: float
-  - Name: FlickerFrequency
+  - Name: SourceLength
     Offset: '0x484'
     Size: '0x4'
     Type: float
-  - Name: FlickerPerlinRow
+  - Name: SimpleFunctionType
     Offset: '0x488'
+    Size: '0x1'
+    Type: byte
+  - Name: ScaleOffset
+    Offset: '0x48c'
+    Size: '0x4'
+    Type: float
+  - Name: PulsePhase
+    Offset: '0x490'
+    Size: '0x4'
+    Type: float
+  - Name: FlickerFrequency
+    Offset: '0x494'
+    Size: '0x4'
+    Type: float
+  - Name: FlickerPerlinRow
+    Offset: '0x498'
     Size: '0x4'
     Type: int
   - Name: LightmassSettings
-    Offset: '0x48c'
+    Offset: '0x49c'
     Size: '0xc'
     Type: Struct LightmassPointLightSettings
   ClassSize: '0x40'
-  FullSize: '0x4a0'
-  InheritedSize: '0x460'
+  FullSize: '0x4b0'
+  InheritedSize: '0x470'
   Super: LightComponent
 Polys:
   Attributes: []
@@ -18155,44 +18155,44 @@ Polys:
 PoseableMeshComponent:
   Attributes: []
   ClassSize: '0xd0'
-  FullSize: '0x7b0'
-  InheritedSize: '0x6e0'
+  FullSize: '0x7c0'
+  InheritedSize: '0x6f0'
   Super: SkinnedMeshComponent
 PoseableSkeletalMeshComponent:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0x9c0'
-  InheritedSize: '0x9b0'
+  FullSize: '0x9d0'
+  InheritedSize: '0x9c0'
   Super: SkeletalMeshComponent
 PostProcessComponent:
   Attributes:
   - Name: Settings
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x540'
     Type: Struct PostProcessSettings
   - Name: Priority
-    Offset: '0x820'
+    Offset: '0x830'
     Size: '0x4'
     Type: float
   - Name: BlendRadius
-    Offset: '0x824'
+    Offset: '0x834'
     Size: '0x4'
     Type: float
   - Name: BlendWeight
-    Offset: '0x828'
+    Offset: '0x838'
     Size: '0x4'
     Type: float
   - Name: bEnabled
-    Offset: '0x82c'
+    Offset: '0x83c'
     Size: '0x1'
     Type: bool
   - Name: bUnbound
-    Offset: '0x82c'
+    Offset: '0x83c'
     Size: '0x1'
     Type: bool
   ClassSize: '0x560'
-  FullSize: '0x830'
-  InheritedSize: '0x2d0'
+  FullSize: '0x840'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 PostProcessVolume:
   Attributes:
@@ -18251,364 +18251,364 @@ PrecomputedVisibilityVolume:
 PrimitiveComponent:
   Attributes:
   - Name: MinDrawDistance
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x4'
     Type: float
   - Name: LDMaxDrawDistance
-    Offset: '0x2e0'
-    Size: '0x4'
-    Type: float
-  - Name: CachedMaxDrawDistance
-    Offset: '0x2e4'
-    Size: '0x4'
-    Type: float
-  - Name: DepthPriorityGroup
-    Offset: '0x2e8'
-    Size: '0x1'
-    Type: byte
-  - Name: ViewOwnerDepthPriorityGroup
-    Offset: '0x2e9'
-    Size: '0x1'
-    Type: byte
-  - Name: bAlwaysCreatePhysicsState
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bGenerateOverlapEvents
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bMultiBodyOverlap
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bCheckAsyncSceneOnMove
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bTraceComplexOnMove
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bReturnMaterialOnMove
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bUseViewOwnerDepthPriorityGroup
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bAllowCullDistanceVolume
-    Offset: '0x2ec'
-    Size: '0x1'
-    Type: bool
-  - Name: bHasMotionBlurVelocityMeshes
-    Offset: '0x2ed'
-    Size: '0x1'
-    Type: bool
-  - Name: bRenderInMainPass
-    Offset: '0x2ed'
-    Size: '0x1'
-    Type: bool
-  - Name: bRenderInCustomPrePass
-    Offset: '0x2ed'
-    Size: '0x1'
-    Type: bool
-  - Name: bReflected
-    Offset: '0x2ed'
-    Size: '0x1'
-    Type: bool
-  - Name: bReflectedOnLowQuality
-    Offset: '0x2ed'
-    Size: '0x1'
-    Type: bool
-  - Name: bFFTWaterMask
-    Offset: '0x2ed'
-    Size: '0x1'
-    Type: bool
-  - Name: bVolumeFogMask
-    Offset: '0x2ed'
-    Size: '0x1'
-    Type: bool
-  - Name: bAffectsFlatWater
-    Offset: '0x2ee'
-    Size: '0x1'
-    Type: bool
-  - Name: bGPUParticlesKillPlane
-    Offset: '0x2ee'
-    Size: '0x1'
-    Type: bool
-  - Name: bDontCull
-    Offset: '0x2ee'
-    Size: '0x1'
-    Type: bool
-  - Name: bDontSizeOnScreenCull
-    Offset: '0x2ee'
-    Size: '0x1'
-    Type: bool
-  - Name: OverriddenShadowMinTexelSize
     Offset: '0x2f0'
     Size: '0x4'
     Type: float
-  - Name: bOverrideShadowMinSizeCulling
+  - Name: CachedMaxDrawDistance
     Offset: '0x2f4'
-    Size: '0x1'
-    Type: bool
-  - Name: bOverrideShadowCascadesExclusion
-    Offset: '0x2f5'
-    Size: '0x1'
-    Type: bool
-  - Name: ExcludedShadowCascades
-    Offset: '0x2f6'
+    Size: '0x4'
+    Type: float
+  - Name: DepthPriorityGroup
+    Offset: '0x2f8'
     Size: '0x1'
     Type: byte
-  - Name: bReceivesDecals
-    Offset: '0x2f8'
-    Size: '0x1'
-    Type: bool
-  - Name: bOwnerNoSee
-    Offset: '0x2f8'
-    Size: '0x1'
-    Type: bool
-  - Name: bOnlyOwnerSee
-    Offset: '0x2f8'
-    Size: '0x1'
-    Type: bool
-  - Name: bTreatAsBackgroundForOcclusion
-    Offset: '0x2f8'
-    Size: '0x1'
-    Type: bool
-  - Name: bIsACloud
-    Offset: '0x2f8'
-    Size: '0x1'
-    Type: bool
-  - Name: bUseAsOccluder
-    Offset: '0x2f8'
-    Size: '0x1'
-    Type: bool
-  - Name: bSelectable
-    Offset: '0x2f8'
-    Size: '0x1'
-    Type: bool
-  - Name: bForceMipStreaming
-    Offset: '0x2f8'
-    Size: '0x1'
-    Type: bool
-  - Name: bHasPerInstanceHitProxies
+  - Name: ViewOwnerDepthPriorityGroup
     Offset: '0x2f9'
     Size: '0x1'
-    Type: bool
-  - Name: CastShadow
-    Offset: '0x2f9'
-    Size: '0x1'
-    Type: bool
-  - Name: bAffectDynamicIndirectLighting
-    Offset: '0x2f9'
-    Size: '0x1'
-    Type: bool
-  - Name: bUseFarCascadeLPVBiasMultiplier
-    Offset: '0x2f9'
-    Size: '0x1'
-    Type: bool
-  - Name: bAffectDistanceFieldLighting
-    Offset: '0x2f9'
-    Size: '0x1'
-    Type: bool
-  - Name: bCastDynamicShadow
-    Offset: '0x2f9'
-    Size: '0x1'
-    Type: bool
-  - Name: bCastStaticShadow
-    Offset: '0x2f9'
-    Size: '0x1'
-    Type: bool
-  - Name: bCastVolumetricTranslucentShadow
-    Offset: '0x2f9'
-    Size: '0x1'
-    Type: bool
-  - Name: bSelfShadowOnly
-    Offset: '0x2fa'
-    Size: '0x1'
-    Type: bool
-  - Name: bCastFarShadow
-    Offset: '0x2fa'
-    Size: '0x1'
-    Type: bool
-  - Name: bCastInsetShadow
-    Offset: '0x2fa'
-    Size: '0x1'
-    Type: bool
-  - Name: bCastCinematicShadow
-    Offset: '0x2fa'
-    Size: '0x1'
-    Type: bool
-  - Name: bCastHiddenShadow
-    Offset: '0x2fa'
-    Size: '0x1'
-    Type: bool
-  - Name: bCastShadowAsTwoSided
-    Offset: '0x2fa'
-    Size: '0x1'
-    Type: bool
-  - Name: bCastShadowOnLowQuality
-    Offset: '0x2fa'
-    Size: '0x1'
-    Type: bool
-  - Name: bLightAsIfStatic
-    Offset: '0x2fa'
-    Size: '0x1'
-    Type: bool
-  - Name: bLightAttachmentsAsGroup
-    Offset: '0x2fb'
-    Size: '0x1'
-    Type: bool
-  - Name: IndirectLightingCacheQuality
+    Type: byte
+  - Name: bAlwaysCreatePhysicsState
     Offset: '0x2fc'
     Size: '0x1'
-    Type: byte
-  - Name: bHasCachedStaticLighting
+    Type: bool
+  - Name: bGenerateOverlapEvents
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: bMultiBodyOverlap
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: bCheckAsyncSceneOnMove
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: bTraceComplexOnMove
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: bReturnMaterialOnMove
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: bUseViewOwnerDepthPriorityGroup
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: bAllowCullDistanceVolume
+    Offset: '0x2fc'
+    Size: '0x1'
+    Type: bool
+  - Name: bHasMotionBlurVelocityMeshes
     Offset: '0x2fd'
     Size: '0x1'
     Type: bool
-  - Name: bStaticLightingBuildEnqueued
+  - Name: bRenderInMainPass
+    Offset: '0x2fd'
+    Size: '0x1'
+    Type: bool
+  - Name: bRenderInCustomPrePass
+    Offset: '0x2fd'
+    Size: '0x1'
+    Type: bool
+  - Name: bReflected
+    Offset: '0x2fd'
+    Size: '0x1'
+    Type: bool
+  - Name: bReflectedOnLowQuality
+    Offset: '0x2fd'
+    Size: '0x1'
+    Type: bool
+  - Name: bFFTWaterMask
+    Offset: '0x2fd'
+    Size: '0x1'
+    Type: bool
+  - Name: bVolumeFogMask
+    Offset: '0x2fd'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectsFlatWater
     Offset: '0x2fe'
     Size: '0x1'
     Type: bool
-  - Name: bIgnoreRadialImpulse
+  - Name: bGPUParticlesKillPlane
+    Offset: '0x2fe'
+    Size: '0x1'
+    Type: bool
+  - Name: bDontCull
+    Offset: '0x2fe'
+    Size: '0x1'
+    Type: bool
+  - Name: bDontSizeOnScreenCull
+    Offset: '0x2fe'
+    Size: '0x1'
+    Type: bool
+  - Name: OverriddenShadowMinTexelSize
     Offset: '0x300'
+    Size: '0x4'
+    Type: float
+  - Name: bOverrideShadowMinSizeCulling
+    Offset: '0x304'
+    Size: '0x1'
+    Type: bool
+  - Name: bOverrideShadowCascadesExclusion
+    Offset: '0x305'
+    Size: '0x1'
+    Type: bool
+  - Name: ExcludedShadowCascades
+    Offset: '0x306'
+    Size: '0x1'
+    Type: byte
+  - Name: bReceivesDecals
+    Offset: '0x308'
+    Size: '0x1'
+    Type: bool
+  - Name: bOwnerNoSee
+    Offset: '0x308'
+    Size: '0x1'
+    Type: bool
+  - Name: bOnlyOwnerSee
+    Offset: '0x308'
+    Size: '0x1'
+    Type: bool
+  - Name: bTreatAsBackgroundForOcclusion
+    Offset: '0x308'
+    Size: '0x1'
+    Type: bool
+  - Name: bIsACloud
+    Offset: '0x308'
+    Size: '0x1'
+    Type: bool
+  - Name: bUseAsOccluder
+    Offset: '0x308'
+    Size: '0x1'
+    Type: bool
+  - Name: bSelectable
+    Offset: '0x308'
+    Size: '0x1'
+    Type: bool
+  - Name: bForceMipStreaming
+    Offset: '0x308'
+    Size: '0x1'
+    Type: bool
+  - Name: bHasPerInstanceHitProxies
+    Offset: '0x309'
+    Size: '0x1'
+    Type: bool
+  - Name: CastShadow
+    Offset: '0x309'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectDynamicIndirectLighting
+    Offset: '0x309'
+    Size: '0x1'
+    Type: bool
+  - Name: bUseFarCascadeLPVBiasMultiplier
+    Offset: '0x309'
+    Size: '0x1'
+    Type: bool
+  - Name: bAffectDistanceFieldLighting
+    Offset: '0x309'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastDynamicShadow
+    Offset: '0x309'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastStaticShadow
+    Offset: '0x309'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastVolumetricTranslucentShadow
+    Offset: '0x309'
+    Size: '0x1'
+    Type: bool
+  - Name: bSelfShadowOnly
+    Offset: '0x30a'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastFarShadow
+    Offset: '0x30a'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastInsetShadow
+    Offset: '0x30a'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastCinematicShadow
+    Offset: '0x30a'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastHiddenShadow
+    Offset: '0x30a'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastShadowAsTwoSided
+    Offset: '0x30a'
+    Size: '0x1'
+    Type: bool
+  - Name: bCastShadowOnLowQuality
+    Offset: '0x30a'
+    Size: '0x1'
+    Type: bool
+  - Name: bLightAsIfStatic
+    Offset: '0x30a'
+    Size: '0x1'
+    Type: bool
+  - Name: bLightAttachmentsAsGroup
+    Offset: '0x30b'
+    Size: '0x1'
+    Type: bool
+  - Name: IndirectLightingCacheQuality
+    Offset: '0x30c'
+    Size: '0x1'
+    Type: byte
+  - Name: bHasCachedStaticLighting
+    Offset: '0x30d'
+    Size: '0x1'
+    Type: bool
+  - Name: bStaticLightingBuildEnqueued
+    Offset: '0x30e'
+    Size: '0x1'
+    Type: bool
+  - Name: bIgnoreRadialImpulse
+    Offset: '0x310'
     Size: '0x1'
     Type: bool
   - Name: bIgnoreRadialForce
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x1'
     Type: bool
   - Name: AlwaysLoadOnClient
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x1'
     Type: bool
   - Name: AlwaysLoadOnServer
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x1'
     Type: bool
   - Name: bUseEditorCompositing
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x1'
     Type: bool
   - Name: bRenderCustomDepth
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x1'
     Type: bool
   - Name: bAllowVelocityInMaterial
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x1'
     Type: bool
   - Name: CustomDepthStencilValue
-    Offset: '0x304'
+    Offset: '0x314'
     Size: '0x4'
     Type: int
   - Name: TranslucencySortPriority
-    Offset: '0x308'
+    Offset: '0x318'
     Size: '0x4'
     Type: int
   - Name: VisibilityId
-    Offset: '0x30c'
+    Offset: '0x31c'
     Size: '0x4'
     Type: int
   - Name: LpvBiasMultiplier
-    Offset: '0x314'
+    Offset: '0x324'
     Size: '0x4'
     Type: float
   - Name: FarCascadeLPVBiasMultiplier
-    Offset: '0x318'
+    Offset: '0x328'
     Size: '0x4'
     Type: float
   - Name: LpvIntensityMultiplier
-    Offset: '0x31c'
+    Offset: '0x32c'
     Size: '0x4'
     Type: float
   - Name: CustomPrimitiveData
-    Offset: '0x320'
+    Offset: '0x330'
     Size: '0x10'
     Type: Struct CustomPrimitiveData
   - Name: BodyInstance
-    Offset: '0x330'
+    Offset: '0x340'
     Size: '0x180'
     Type: Struct BodyInstance
   - Name: bAffectRain
-    Offset: '0x4b0'
+    Offset: '0x4c0'
     Size: '0x1'
     Type: bool
   - Name: bCanEverAffectNavigation
-    Offset: '0x4b0'
+    Offset: '0x4c0'
     Size: '0x1'
     Type: bool
   - Name: bSkipRenderingInOuterLPVCascades
-    Offset: '0x4b0'
+    Offset: '0x4c0'
     Size: '0x1'
     Type: bool
   - Name: bEnableMergeCollisionComponents
-    Offset: '0x4b0'
+    Offset: '0x4c0'
     Size: '0x1'
     Type: bool
   - Name: bVisibleWhenAboveWaterAndPlayerUnderwater
-    Offset: '0x4b0'
+    Offset: '0x4c0'
     Size: '0x1'
     Type: bool
   - Name: bVisibleWhenAboveWaterAndPlayerAbove
-    Offset: '0x4b0'
+    Offset: '0x4c0'
     Size: '0x1'
     Type: bool
   - Name: bVisibleWhenUnderwaterAndPlayerAbove
-    Offset: '0x4b0'
+    Offset: '0x4c0'
     Size: '0x1'
     Type: bool
   - Name: bVisibleWhenUnderwaterAndPlayerUnderwater
-    Offset: '0x4b1'
+    Offset: '0x4c1'
     Size: '0x1'
     Type: bool
   - Name: bCanRenderAboveAndBelowWaterAtSameTime
-    Offset: '0x4b1'
+    Offset: '0x4c1'
     Size: '0x1'
     Type: bool
   - Name: BoundsScale
-    Offset: '0x4b8'
+    Offset: '0x4c8'
     Size: '0x4'
     Type: float
   - Name: OcclusionBoundsScale
-    Offset: '0x4bc'
+    Offset: '0x4cc'
     Size: '0x4'
     Type: float
   - Name: LastRenderTime
-    Offset: '0x4c0'
+    Offset: '0x4d0'
     Size: '0x4'
     Type: float
   - Name: bGPUVisibility
-    Offset: '0x4c4'
+    Offset: '0x4d4'
     Size: '0x1'
     Type: bool
   - Name: bHasCustomNavigableGeometry
-    Offset: '0x4c5'
+    Offset: '0x4d5'
     Size: '0x1'
     Type: byte
   - Name: CanCharacterStepUpOn
-    Offset: '0x4c6'
+    Offset: '0x4d6'
     Size: '0x1'
     Type: byte
   - Name: LODParentPrimitive
-    Offset: '0x548'
+    Offset: '0x558'
     Size: '0x8'
     Type: Class PrimitiveComponent*
   - Name: PostPhysicsComponentTick
-    Offset: '0x550'
+    Offset: '0x560'
     Size: '0x50'
     Type: Struct PrimitiveComponentPostPhysicsTickFunction
   - Name: MergedCollisionComponentParent
-    Offset: '0x5a0'
+    Offset: '0x5b0'
     Size: '0x8'
     Type: Class PrimitiveComponent*
   ClassSize: '0x2e0'
-  FullSize: '0x5b0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x5c0'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 ProjectileMovementComponent:
   Attributes:
@@ -18711,40 +18711,40 @@ RadialForceActor:
 RadialForceComponent:
   Attributes:
   - Name: Radius
-    Offset: '0x2d0'
-    Size: '0x4'
-    Type: float
-  - Name: Falloff
-    Offset: '0x2d4'
-    Size: '0x1'
-    Type: byte
-  - Name: ImpulseStrength
-    Offset: '0x2d8'
-    Size: '0x4'
-    Type: float
-  - Name: bImpulseVelChange
-    Offset: '0x2dc'
-    Size: '0x1'
-    Type: bool
-  - Name: bIgnoreOwningActor
-    Offset: '0x2dc'
-    Size: '0x1'
-    Type: bool
-  - Name: ForceStrength
     Offset: '0x2e0'
     Size: '0x4'
     Type: float
-  - Name: DestructibleDamage
+  - Name: Falloff
     Offset: '0x2e4'
+    Size: '0x1'
+    Type: byte
+  - Name: ImpulseStrength
+    Offset: '0x2e8'
+    Size: '0x4'
+    Type: float
+  - Name: bImpulseVelChange
+    Offset: '0x2ec'
+    Size: '0x1'
+    Type: bool
+  - Name: bIgnoreOwningActor
+    Offset: '0x2ec'
+    Size: '0x1'
+    Type: bool
+  - Name: ForceStrength
+    Offset: '0x2f0'
+    Size: '0x4'
+    Type: float
+  - Name: DestructibleDamage
+    Offset: '0x2f4'
     Size: '0x4'
     Type: float
   - Name: ObjectTypesToAffect
-    Offset: '0x2e8'
+    Offset: '0x2f8'
     Size: '0x10'
     Type: TArray<Byte ObjectTypesToAffect>
   ClassSize: '0x30'
-  FullSize: '0x300'
-  InheritedSize: '0x2d0'
+  FullSize: '0x310'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 RareNetworkProfilerExporter:
   Attributes: []
@@ -18999,32 +18999,32 @@ ReflectionCapture:
 ReflectionCaptureComponent:
   Attributes:
   - Name: bLockSettings
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x1'
     Type: bool
   - Name: Brightness
-    Offset: '0x2d4'
+    Offset: '0x2e4'
     Size: '0x4'
     Type: float
   - Name: ShadowBrightness
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x4'
     Type: float
   - Name: LPVOcclusionBrightness
-    Offset: '0x2dc'
+    Offset: '0x2ec'
     Size: '0x4'
     Type: float
   - Name: ReflectionTint
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: StateId
-    Offset: '0x2fc'
+    Offset: '0x30c'
     Size: '0x10'
     Type: Struct Guid
   ClassSize: '0x90'
-  FullSize: '0x360'
-  InheritedSize: '0x2d0'
+  FullSize: '0x370'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 RendererSettings:
   Attributes:
@@ -19357,88 +19357,88 @@ SceneCapture2D:
 SceneCaptureComponent:
   Attributes:
   - Name: HiddenComponents
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x10'
     Type: TArray<Weakclass HiddenComponents>
   - Name: bCaptureEveryFrame
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x1'
     Type: bool
   - Name: MaxViewDistanceOverride
-    Offset: '0x2e4'
+    Offset: '0x2f4'
     Size: '0x4'
     Type: float
   - Name: ShowFlagSettings
-    Offset: '0x2e8'
+    Offset: '0x2f8'
     Size: '0x10'
     Type: TArray<Struct EngineShowFlagsSetting>
   ClassSize: '0x70'
-  FullSize: '0x340'
-  InheritedSize: '0x2d0'
+  FullSize: '0x350'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 SceneCaptureComponent2D:
   Attributes:
   - Name: FOVAngle
-    Offset: '0x338'
+    Offset: '0x348'
     Size: '0x4'
     Type: float
   - Name: TextureTarget
-    Offset: '0x340'
+    Offset: '0x350'
     Size: '0x8'
     Type: Class TextureRenderTarget2D*
   - Name: CaptureSource
-    Offset: '0x348'
+    Offset: '0x358'
     Size: '0x1'
     Type: byte
   - Name: PostProcessSettings
-    Offset: '0x350'
+    Offset: '0x360'
     Size: '0x540'
     Type: Struct PostProcessSettings
   - Name: PostProcessBlendWeight
-    Offset: '0x890'
+    Offset: '0x8a0'
     Size: '0x4'
     Type: float
   - Name: OrthoWidth
-    Offset: '0x894'
-    Size: '0x4'
-    Type: float
-  - Name: OrthoNearClipPlane
-    Offset: '0x898'
-    Size: '0x4'
-    Type: float
-  - Name: OrthoFarClipPlane
-    Offset: '0x89c'
-    Size: '0x4'
-    Type: float
-  - Name: ProjectionMode
-    Offset: '0x8a0'
-    Size: '0x1'
-    Type: byte
-  - Name: AspectRatio
     Offset: '0x8a4'
     Size: '0x4'
     Type: float
-  - Name: bConstrainAspectRatio
+  - Name: OrthoNearClipPlane
     Offset: '0x8a8'
+    Size: '0x4'
+    Type: float
+  - Name: OrthoFarClipPlane
+    Offset: '0x8ac'
+    Size: '0x4'
+    Type: float
+  - Name: ProjectionMode
+    Offset: '0x8b0'
+    Size: '0x1'
+    Type: byte
+  - Name: AspectRatio
+    Offset: '0x8b4'
+    Size: '0x4'
+    Type: float
+  - Name: bConstrainAspectRatio
+    Offset: '0x8b8'
     Size: '0x1'
     Type: bool
   - Name: LandscapeLODOverride
-    Offset: '0x8ac'
+    Offset: '0x8bc'
     Size: '0x4'
     Type: int
   ClassSize: '0x570'
-  FullSize: '0x8b0'
-  InheritedSize: '0x340'
+  FullSize: '0x8c0'
+  InheritedSize: '0x350'
   Super: SceneCaptureComponent
 SceneCaptureComponentCube:
   Attributes:
   - Name: TextureTarget
-    Offset: '0x338'
+    Offset: '0x348'
     Size: '0x8'
     Type: Class TextureRenderTargetCube*
   ClassSize: '0x0'
-  FullSize: '0x340'
-  InheritedSize: '0x340'
+  FullSize: '0x350'
+  InheritedSize: '0x350'
   Super: SceneCaptureComponent
 SceneCaptureCube:
   Attributes:
@@ -19464,100 +19464,100 @@ SceneComponent:
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<class AttachChildren*>
-  - Name: AttachSocketName
+  - Name: bRequiresCustomLocation
     Offset: '0xe0'
+    Size: '0x1'
+    Type: bool
+  - Name: AttachSocketName
+    Offset: '0xe4'
     Size: '0x8'
     Type: struct FName
-  - Name: bRequiresCustomLocation
-    Offset: '0xe8'
-    Size: '0x1'
-    Type: bool
   - Name: bAbsoluteLocation
-    Offset: '0xe8'
-    Size: '0x1'
-    Type: bool
-  - Name: bAbsoluteTranslation
-    Offset: '0xe8'
+    Offset: '0xec'
     Size: '0x1'
     Type: bool
   - Name: bAbsoluteRotation
-    Offset: '0xe8'
+    Offset: '0xec'
     Size: '0x1'
     Type: bool
   - Name: bAbsoluteScale
-    Offset: '0xe8'
+    Offset: '0xec'
+    Size: '0x1'
+    Type: bool
+  - Name: bAbsoluteTranslation
+    Offset: '0xec'
     Size: '0x1'
     Type: bool
   - Name: bVisible
-    Offset: '0xe8'
+    Offset: '0xec'
     Size: '0x1'
     Type: bool
   - Name: bHiddenInGame
-    Offset: '0xe8'
+    Offset: '0xec'
     Size: '0x1'
     Type: bool
   - Name: bShouldUpdatePhysicsVolume
-    Offset: '0xe8'
+    Offset: '0xec'
     Size: '0x1'
     Type: bool
   - Name: bBoundsChangeTriggersStreamingDataRebuild
-    Offset: '0xe9'
+    Offset: '0xec'
     Size: '0x1'
     Type: bool
   - Name: bUseAttachParentBound
-    Offset: '0xe9'
+    Offset: '0xed'
     Size: '0x1'
     Type: bool
   - Name: bComponentIsUnionOfChildren
-    Offset: '0xe9'
+    Offset: '0xed'
     Size: '0x1'
     Type: bool
   - Name: bJitterReduction
-    Offset: '0xe9'
+    Offset: '0xed'
     Size: '0x1'
     Type: bool
   - Name: CacheRootVelocity
-    Offset: '0xe9'
+    Offset: '0xed'
     Size: '0x1'
     Type: bool
   - Name: bWorldToComponentUpdated
-    Offset: '0xe9'
+    Offset: '0xed'
     Size: '0x1'
     Type: bool
   - Name: RelativeScale3D
-    Offset: '0x11c'
+    Offset: '0x104'
     Size: '0xc'
     Type: Struct Vector
   - Name: RelativeLocation
-    Offset: '0x128'
+    Offset: '0x12c'
     Size: '0xc'
     Type: Struct Vector
   - Name: RelativeRotation
-    Offset: '0x134'
+    Offset: '0x138'
     Size: '0xc'
     Type: Struct Rotator
   - Name: Mobility
-    Offset: '0x220'
+    Offset: '0x230'
     Size: '0x1'
     Type: byte
   - Name: DetailMode
-    Offset: '0x221'
+    Offset: '0x231'
     Size: '0x1'
     Type: byte
   - Name: ComponentVelocity
-    Offset: '0x22c'
+    Offset: '0x23c'
     Size: '0xc'
     Type: Struct Vector
   - Name: SocketVelocitiesToCache
-    Offset: '0x258'
+    Offset: '0x268'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: MovedActors
-    Offset: '0x268'
+    Offset: '0x278'
     Size: '0x10'
     Type: TArray<class MovedActors*>
-  ClassSize: '0x208'
-  FullSize: '0x2d0'
+  ClassSize: '0x218'
+  FullSize: '0x2e0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ScriptViewportClient:
@@ -19591,32 +19591,32 @@ ShadowMapTexture2D:
 ShapeComponent:
   Attributes:
   - Name: ShapeColor
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x4'
     Type: Struct Color
   - Name: ShapeBodySetup
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x8'
     Type: Class BodySetup*
   - Name: bDrawOnlyIfSelected
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x1'
     Type: bool
   - Name: bShouldCollideWhenPlacing
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x1'
     Type: bool
   - Name: bDynamicObstacle
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x1'
     Type: bool
   - Name: AreaClass
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x8'
     Type: class
   ClassSize: '0x20'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 SimpleConstructionScript:
   Attributes:
@@ -19775,156 +19775,156 @@ SkeletalMeshActor:
 SkeletalMeshComponent:
   Attributes:
   - Name: AnimationMode
-    Offset: '0x6f0'
+    Offset: '0x700'
     Size: '0x1'
     Type: byte
   - Name: AnimBlueprintGeneratedClass
-    Offset: '0x6f8'
+    Offset: '0x708'
     Size: '0x8'
     Type: class
   - Name: AnimScriptInstance
-    Offset: '0x700'
+    Offset: '0x710'
     Size: '0x8'
     Type: Class AnimInstance*
   - Name: AnimationData
-    Offset: '0x708'
+    Offset: '0x718'
     Size: '0x20'
     Type: Struct SingleAnimationPlayData
   - Name: CachedLocalAtoms
-    Offset: '0x738'
-    Size: '0x10'
-    Type: TArray<Struct Transform>
-  - Name: CachedSpaceBases
     Offset: '0x748'
     Size: '0x10'
     Type: TArray<Struct Transform>
+  - Name: CachedSpaceBases
+    Offset: '0x758'
+    Size: '0x10'
+    Type: TArray<Struct Transform>
   - Name: GlobalAnimRateScale
-    Offset: '0x780'
-    Size: '0x4'
-    Type: float
-  - Name: bHasValidBodies
-    Offset: '0x784'
-    Size: '0x1'
-    Type: bool
-  - Name: KinematicBonesUpdateType
-    Offset: '0x788'
-    Size: '0x1'
-    Type: byte
-  - Name: bBlendPhysics
-    Offset: '0x78c'
-    Size: '0x1'
-    Type: bool
-  - Name: bEnablePhysicsOnDedicatedServer
-    Offset: '0x78c'
-    Size: '0x1'
-    Type: bool
-  - Name: bUpdateJointsFromAnimation
-    Offset: '0x78c'
-    Size: '0x1'
-    Type: bool
-  - Name: bDisableClothSimulation
-    Offset: '0x78c'
-    Size: '0x1'
-    Type: bool
-  - Name: bCollideWithEnvironment
-    Offset: '0x78c'
-    Size: '0x1'
-    Type: bool
-  - Name: bCollideWithAttachedChildren
-    Offset: '0x78c'
-    Size: '0x1'
-    Type: bool
-  - Name: bLocalSpaceSimulation
-    Offset: '0x78c'
-    Size: '0x1'
-    Type: bool
-  - Name: bClothMorphTarget
-    Offset: '0x78c'
-    Size: '0x1'
-    Type: bool
-  - Name: bResetAfterTeleport
-    Offset: '0x78d'
-    Size: '0x1'
-    Type: bool
-  - Name: TeleportDistanceThreshold
     Offset: '0x790'
     Size: '0x4'
     Type: float
-  - Name: TeleportRotationThreshold
+  - Name: bHasValidBodies
     Offset: '0x794'
+    Size: '0x1'
+    Type: bool
+  - Name: KinematicBonesUpdateType
+    Offset: '0x798'
+    Size: '0x1'
+    Type: byte
+  - Name: bBlendPhysics
+    Offset: '0x79c'
+    Size: '0x1'
+    Type: bool
+  - Name: bEnablePhysicsOnDedicatedServer
+    Offset: '0x79c'
+    Size: '0x1'
+    Type: bool
+  - Name: bUpdateJointsFromAnimation
+    Offset: '0x79c'
+    Size: '0x1'
+    Type: bool
+  - Name: bDisableClothSimulation
+    Offset: '0x79c'
+    Size: '0x1'
+    Type: bool
+  - Name: bCollideWithEnvironment
+    Offset: '0x79c'
+    Size: '0x1'
+    Type: bool
+  - Name: bCollideWithAttachedChildren
+    Offset: '0x79c'
+    Size: '0x1'
+    Type: bool
+  - Name: bLocalSpaceSimulation
+    Offset: '0x79c'
+    Size: '0x1'
+    Type: bool
+  - Name: bClothMorphTarget
+    Offset: '0x79c'
+    Size: '0x1'
+    Type: bool
+  - Name: bResetAfterTeleport
+    Offset: '0x79d'
+    Size: '0x1'
+    Type: bool
+  - Name: TeleportDistanceThreshold
+    Offset: '0x7a0'
+    Size: '0x4'
+    Type: float
+  - Name: TeleportRotationThreshold
+    Offset: '0x7a4'
     Size: '0x4'
     Type: float
   - Name: ClothBlendWeight
-    Offset: '0x798'
+    Offset: '0x7a8'
     Size: '0x4'
     Type: float
   - Name: RootBoneTranslation
-    Offset: '0x7a0'
+    Offset: '0x7b0'
     Size: '0xc'
     Type: Struct Vector
   - Name: bNoSkeletonUpdate
-    Offset: '0x7ac'
+    Offset: '0x7bc'
     Size: '0x1'
     Type: bool
   - Name: bPauseAnims
-    Offset: '0x7ac'
+    Offset: '0x7bc'
     Size: '0x1'
     Type: bool
   - Name: bEnablePerPolyCollision
-    Offset: '0x7ac'
+    Offset: '0x7bc'
     Size: '0x1'
     Type: bool
   - Name: BodySetup
-    Offset: '0x7b0'
+    Offset: '0x7c0'
     Size: '0x8'
     Type: Class BodySetup*
   - Name: bAutonomousTickPose
-    Offset: '0x7b8'
+    Offset: '0x7c8'
     Size: '0x1'
     Type: bool
   - Name: bForceRefpose
-    Offset: '0x7b8'
+    Offset: '0x7c8'
     Size: '0x1'
     Type: bool
   - Name: bOldForceRefPose
-    Offset: '0x7b8'
+    Offset: '0x7c8'
     Size: '0x1'
     Type: bool
   - Name: bShowPrePhysBones
-    Offset: '0x7b8'
+    Offset: '0x7c8'
     Size: '0x1'
     Type: bool
   - Name: bRequiredBonesUpToDate
-    Offset: '0x7b8'
+    Offset: '0x7c8'
     Size: '0x1'
     Type: bool
   - Name: bAnimTreeInitialised
-    Offset: '0x7b8'
+    Offset: '0x7c8'
     Size: '0x1'
     Type: bool
   - Name: bEnableLineCheckWithBounds
-    Offset: '0x7b8'
+    Offset: '0x7c8'
     Size: '0x1'
     Type: bool
   - Name: LineCheckBoundsScale
-    Offset: '0x7bc'
+    Offset: '0x7cc'
     Size: '0xc'
     Type: Struct Vector
   - Name: RagdollAggregateThreshold
-    Offset: '0x7c8'
+    Offset: '0x7d8'
     Size: '0x4'
     Type: int
   - Name: UseRefPoseToInitialise
-    Offset: '0x7e0'
+    Offset: '0x7f0'
     Size: '0x1'
     Type: bool
   - Name: LastPoseTickTime
-    Offset: '0x9a8'
+    Offset: '0x9b8'
     Size: '0x4'
     Type: float
   ClassSize: '0x2d0'
-  FullSize: '0x9b0'
-  InheritedSize: '0x6e0'
+  FullSize: '0x9c0'
+  InheritedSize: '0x6f0'
   Super: SkinnedMeshComponent
 SkeletalMeshMergeBlueprintFunctionLibrary:
   Attributes: []
@@ -19991,136 +19991,136 @@ Skeleton:
 SkinnedMeshComponent:
   Attributes:
   - Name: SkeletalMesh
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x8'
     Type: Class SkeletalMesh*
   - Name: CustomDepthMaterial
-    Offset: '0x608'
+    Offset: '0x618'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: bUseBoundsFromMasterPoseComponent
-    Offset: '0x620'
+    Offset: '0x630'
     Size: '0x1'
     Type: bool
   - Name: ActiveVertexAnims
-    Offset: '0x628'
+    Offset: '0x638'
     Size: '0x10'
     Type: TArray<Struct ActiveVertexAnim>
   - Name: PhysicsAssetOverride
-    Offset: '0x638'
+    Offset: '0x648'
     Size: '0x8'
     Type: Class PhysicsAsset*
   - Name: ForcedLodModel
-    Offset: '0x640'
+    Offset: '0x650'
     Size: '0x4'
     Type: int
   - Name: MinLodModel
-    Offset: '0x644'
+    Offset: '0x654'
     Size: '0x4'
     Type: int
   - Name: PredictedLODLevel
-    Offset: '0x648'
+    Offset: '0x658'
     Size: '0x4'
     Type: int
   - Name: OldPredictedLODLevel
-    Offset: '0x64c'
+    Offset: '0x65c'
     Size: '0x4'
     Type: int
   - Name: MaxDistanceFactor
-    Offset: '0x650'
+    Offset: '0x660'
     Size: '0x4'
     Type: float
   - Name: LODInfo
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x10'
     Type: TArray<Struct SkelMeshComponentLODInfo>
   - Name: StreamingDistanceMultiplier
-    Offset: '0x668'
+    Offset: '0x678'
     Size: '0x4'
     Type: float
   - Name: WireframeColor
-    Offset: '0x66c'
+    Offset: '0x67c'
     Size: '0x4'
     Type: Struct Color
   - Name: bForceWireframe
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0x1'
     Type: bool
   - Name: bDisplayBones
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0x1'
     Type: bool
   - Name: bDisplayBoneCollisions
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0x1'
     Type: bool
   - Name: bDisableMorphTarget
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0x1'
     Type: bool
   - Name: bHideSkin
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0x1'
     Type: bool
   - Name: bPerBoneMotionBlur
-    Offset: '0x688'
+    Offset: '0x698'
     Size: '0x1'
     Type: bool
   - Name: bComponentUseFixedSkelBounds
-    Offset: '0x688'
+    Offset: '0x698'
     Size: '0x1'
     Type: bool
   - Name: bConsiderAllBodiesForBounds
-    Offset: '0x688'
+    Offset: '0x698'
     Size: '0x1'
     Type: bool
   - Name: MeshComponentUpdateFlag
-    Offset: '0x68c'
+    Offset: '0x69c'
     Size: '0x1'
     Type: byte
   - Name: bForceMeshObjectUpdate
-    Offset: '0x690'
+    Offset: '0x6a0'
     Size: '0x1'
     Type: bool
   - Name: bChartDistanceFactor
-    Offset: '0x690'
+    Offset: '0x6a0'
     Size: '0x1'
     Type: bool
   - Name: bCanHighlightSelectedSections
-    Offset: '0x690'
+    Offset: '0x6a0'
     Size: '0x1'
     Type: bool
   - Name: bRecentlyRendered
-    Offset: '0x690'
+    Offset: '0x6a0'
     Size: '0x1'
     Type: bool
   - Name: ProgressiveDrawingFraction
-    Offset: '0x694'
+    Offset: '0x6a4'
     Size: '0x4'
     Type: float
   - Name: CustomSortAlternateIndexMode
-    Offset: '0x698'
+    Offset: '0x6a8'
     Size: '0x1'
     Type: byte
   - Name: CachedLocalBounds
-    Offset: '0x6ac'
+    Offset: '0x6bc'
     Size: '0x1c'
     Type: Struct BoxSphereBounds
   - Name: bCachedLocalBoundsUpToDate
-    Offset: '0x6c8'
+    Offset: '0x6d8'
     Size: '0x1'
     Type: bool
   - Name: bEnableUpdateRateOptimizations
-    Offset: '0x6c9'
+    Offset: '0x6d9'
     Size: '0x1'
     Type: bool
   - Name: bDisplayDebugUpdateRateOptimizations
-    Offset: '0x6ca'
+    Offset: '0x6da'
     Size: '0x1'
     Type: bool
   ClassSize: '0x120'
-  FullSize: '0x6e0'
-  InheritedSize: '0x5c0'
+  FullSize: '0x6f0'
+  InheritedSize: '0x5d0'
   Super: MeshComponent
 SkyLight:
   Attributes:
@@ -20139,48 +20139,48 @@ SkyLight:
 SkyLightComponent:
   Attributes:
   - Name: SourceType
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x1'
     Type: byte
   - Name: Cubemap
-    Offset: '0x308'
+    Offset: '0x318'
     Size: '0x8'
     Type: Class TextureCube*
   - Name: SkyDistanceThreshold
-    Offset: '0x310'
-    Size: '0x4'
-    Type: float
-  - Name: bLowerHemisphereIsBlack
-    Offset: '0x314'
-    Size: '0x1'
-    Type: bool
-  - Name: OcclusionMaxDistance
-    Offset: '0x318'
-    Size: '0x4'
-    Type: float
-  - Name: Contrast
-    Offset: '0x31c'
-    Size: '0x4'
-    Type: float
-  - Name: MinOcclusion
     Offset: '0x320'
     Size: '0x4'
     Type: float
-  - Name: OcclusionTint
+  - Name: bLowerHemisphereIsBlack
     Offset: '0x324'
-    Size: '0x4'
-    Type: Struct Color
-  - Name: ScaleForInteriors
+    Size: '0x1'
+    Type: bool
+  - Name: OcclusionMaxDistance
     Offset: '0x328'
     Size: '0x4'
     Type: float
+  - Name: Contrast
+    Offset: '0x32c'
+    Size: '0x4'
+    Type: float
+  - Name: MinOcclusion
+    Offset: '0x330'
+    Size: '0x4'
+    Type: float
+  - Name: OcclusionTint
+    Offset: '0x334'
+    Size: '0x4'
+    Type: Struct Color
+  - Name: ScaleForInteriors
+    Offset: '0x338'
+    Size: '0x4'
+    Type: float
   - Name: BlendDestinationCubemap
-    Offset: '0x3d8'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class TextureCube*
   ClassSize: '0x1a0'
-  FullSize: '0x4a0'
-  InheritedSize: '0x300'
+  FullSize: '0x4b0'
+  InheritedSize: '0x310'
   Super: LightComponentBase
 SlateBrushAsset:
   Attributes:
@@ -20801,12 +20801,12 @@ SpectatorPawnMovement:
 SphereComponent:
   Attributes:
   - Name: SphereRadius
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0x4'
     Type: float
   ClassSize: '0x0'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5d0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5e0'
   Super: ShapeComponent
 SphereReflectionCapture:
   Attributes:
@@ -20821,70 +20821,70 @@ SphereReflectionCapture:
 SphereReflectionCaptureComponent:
   Attributes:
   - Name: InfluenceRadius
-    Offset: '0x360'
+    Offset: '0x370'
     Size: '0x4'
     Type: float
   - Name: CaptureDistanceScale
-    Offset: '0x364'
+    Offset: '0x374'
     Size: '0x4'
     Type: float
   - Name: PreviewInfluenceRadius
-    Offset: '0x368'
+    Offset: '0x378'
     Size: '0x8'
     Type: Class DrawSphereComponent*
   ClassSize: '0x10'
-  FullSize: '0x370'
-  InheritedSize: '0x360'
+  FullSize: '0x380'
+  InheritedSize: '0x370'
   Super: ReflectionCaptureComponent
 SplineComponent:
   Attributes:
   - Name: SplineInfo
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x18'
     Type: Struct InterpCurveVector
   - Name: SplineRotInfo
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x18'
     Type: Struct InterpCurveQuat
   - Name: SplineScaleInfo
-    Offset: '0x5d8'
+    Offset: '0x5e8'
     Size: '0x18'
     Type: Struct InterpCurveVector
   - Name: SplineReparamTable
-    Offset: '0x5f0'
+    Offset: '0x600'
     Size: '0x18'
     Type: Struct InterpCurveFloat
   - Name: bAllowSplineEditingPerInstance
-    Offset: '0x608'
+    Offset: '0x618'
     Size: '0x1'
     Type: bool
   - Name: ReparamStepsPerSegment
-    Offset: '0x60c'
+    Offset: '0x61c'
     Size: '0x4'
     Type: int
   - Name: Duration
-    Offset: '0x610'
+    Offset: '0x620'
     Size: '0x4'
     Type: float
   - Name: bStationaryEndpoints
-    Offset: '0x614'
+    Offset: '0x624'
     Size: '0x1'
     Type: bool
   - Name: bSplineHasBeenEdited
-    Offset: '0x615'
+    Offset: '0x625'
     Size: '0x1'
     Type: bool
   - Name: bClosedLoop
-    Offset: '0x616'
+    Offset: '0x626'
     Size: '0x1'
     Type: bool
   - Name: DefaultUpVector
-    Offset: '0x618'
+    Offset: '0x628'
     Size: '0xc'
     Type: Struct Vector
   ClassSize: '0x80'
-  FullSize: '0x630'
-  InheritedSize: '0x5b0'
+  FullSize: '0x640'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 SplineMeshActor:
   Attributes:
@@ -20899,48 +20899,48 @@ SplineMeshActor:
 SplineMeshComponent:
   Attributes:
   - Name: SplineParams
-    Offset: '0x618'
+    Offset: '0x628'
     Size: '0x58'
     Type: Struct SplineMeshParams
   - Name: SplineUpDir
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0xc'
     Type: Struct Vector
   - Name: bAllowSplineEditingPerInstance
-    Offset: '0x67c'
+    Offset: '0x68c'
     Size: '0x1'
     Type: bool
   - Name: bSmoothInterpRollScale
-    Offset: '0x67c'
+    Offset: '0x68c'
     Size: '0x1'
     Type: bool
   - Name: ForwardAxis
-    Offset: '0x680'
+    Offset: '0x690'
     Size: '0x1'
     Type: byte
   - Name: SplineBoundaryMin
-    Offset: '0x684'
+    Offset: '0x694'
     Size: '0x4'
     Type: float
   - Name: SplineBoundaryMax
-    Offset: '0x688'
+    Offset: '0x698'
     Size: '0x4'
     Type: float
   - Name: BodySetup
-    Offset: '0x690'
+    Offset: '0x6a0'
     Size: '0x8'
     Type: Class BodySetup*
   - Name: CachedMeshBodySetupGuid
-    Offset: '0x698'
+    Offset: '0x6a8'
     Size: '0x10'
     Type: Struct Guid
   - Name: bMeshDirty
-    Offset: '0x6a8'
+    Offset: '0x6b8'
     Size: '0x1'
     Type: bool
   ClassSize: '0xa0'
-  FullSize: '0x6b0'
-  InheritedSize: '0x610'
+  FullSize: '0x6c0'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 SpotLight:
   Attributes:
@@ -20955,102 +20955,102 @@ SpotLight:
 SpotLightComponent:
   Attributes:
   - Name: InnerConeAngle
-    Offset: '0x498'
+    Offset: '0x4a8'
     Size: '0x4'
     Type: float
   - Name: OuterConeAngle
-    Offset: '0x49c'
+    Offset: '0x4ac'
     Size: '0x4'
     Type: float
   - Name: LightShaftConeAngle
-    Offset: '0x4a0'
+    Offset: '0x4b0'
     Size: '0x4'
     Type: float
   - Name: KickBackRatio
-    Offset: '0x4a4'
+    Offset: '0x4b4'
     Size: '0x4'
     Type: float
   ClassSize: '0x10'
-  FullSize: '0x4b0'
-  InheritedSize: '0x4a0'
+  FullSize: '0x4c0'
+  InheritedSize: '0x4b0'
   Super: PointLightComponent
 SpringArmComponent:
   Attributes:
   - Name: TargetArmLength
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x4'
     Type: float
   - Name: SocketOffset
-    Offset: '0x2d4'
+    Offset: '0x2e4'
     Size: '0xc'
     Type: Struct Vector
   - Name: TargetOffset
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0xc'
     Type: Struct Vector
   - Name: ProbeSize
-    Offset: '0x2ec'
-    Size: '0x4'
-    Type: float
-  - Name: ProbeChannel
-    Offset: '0x2f0'
-    Size: '0x1'
-    Type: byte
-  - Name: bDoCollisionTest
-    Offset: '0x2f4'
-    Size: '0x1'
-    Type: bool
-  - Name: bUsePawnControlRotation
-    Offset: '0x2f4'
-    Size: '0x1'
-    Type: bool
-  - Name: bInheritPitch
-    Offset: '0x2f4'
-    Size: '0x1'
-    Type: bool
-  - Name: bInheritYaw
-    Offset: '0x2f4'
-    Size: '0x1'
-    Type: bool
-  - Name: bInheritRoll
-    Offset: '0x2f4'
-    Size: '0x1'
-    Type: bool
-  - Name: bEnableCameraLag
-    Offset: '0x2f4'
-    Size: '0x1'
-    Type: bool
-  - Name: bEnableCameraRotationLag
-    Offset: '0x2f4'
-    Size: '0x1'
-    Type: bool
-  - Name: bUseCameraLagSubstepping
-    Offset: '0x2f4'
-    Size: '0x1'
-    Type: bool
-  - Name: bDrawDebugLagMarkers
-    Offset: '0x2f5'
-    Size: '0x1'
-    Type: bool
-  - Name: CameraLagSpeed
-    Offset: '0x2f8'
-    Size: '0x4'
-    Type: float
-  - Name: CameraRotationLagSpeed
     Offset: '0x2fc'
     Size: '0x4'
     Type: float
-  - Name: CameraLagMaxTimeStep
+  - Name: ProbeChannel
     Offset: '0x300'
+    Size: '0x1'
+    Type: byte
+  - Name: bDoCollisionTest
+    Offset: '0x304'
+    Size: '0x1'
+    Type: bool
+  - Name: bUsePawnControlRotation
+    Offset: '0x304'
+    Size: '0x1'
+    Type: bool
+  - Name: bInheritPitch
+    Offset: '0x304'
+    Size: '0x1'
+    Type: bool
+  - Name: bInheritYaw
+    Offset: '0x304'
+    Size: '0x1'
+    Type: bool
+  - Name: bInheritRoll
+    Offset: '0x304'
+    Size: '0x1'
+    Type: bool
+  - Name: bEnableCameraLag
+    Offset: '0x304'
+    Size: '0x1'
+    Type: bool
+  - Name: bEnableCameraRotationLag
+    Offset: '0x304'
+    Size: '0x1'
+    Type: bool
+  - Name: bUseCameraLagSubstepping
+    Offset: '0x304'
+    Size: '0x1'
+    Type: bool
+  - Name: bDrawDebugLagMarkers
+    Offset: '0x305'
+    Size: '0x1'
+    Type: bool
+  - Name: CameraLagSpeed
+    Offset: '0x308'
+    Size: '0x4'
+    Type: float
+  - Name: CameraRotationLagSpeed
+    Offset: '0x30c'
+    Size: '0x4'
+    Type: float
+  - Name: CameraLagMaxTimeStep
+    Offset: '0x310'
     Size: '0x4'
     Type: float
   - Name: CameraLagMaxDistance
-    Offset: '0x304'
+    Offset: '0x314'
     Size: '0x4'
     Type: float
   ClassSize: '0x90'
-  FullSize: '0x360'
-  InheritedSize: '0x2d0'
+  FullSize: '0x370'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 StaticMesh:
   Attributes:
@@ -21159,64 +21159,64 @@ StaticMeshActor:
 StaticMeshComponent:
   Attributes:
   - Name: ForcedLodModel
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x4'
     Type: int
   - Name: bOverrideMinLOD
-    Offset: '0x5bc'
+    Offset: '0x5cc'
     Size: '0x1'
     Type: bool
   - Name: bOverrideNavigationToDefaultObstacle
-    Offset: '0x5bd'
+    Offset: '0x5cd'
     Size: '0x1'
     Type: bool
   - Name: MinLOD
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x4'
     Type: int
   - Name: StaticMesh
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: bOverrideWireframeColor
-    Offset: '0x5d0'
+    Offset: '0x5e0'
     Size: '0x1'
     Type: bool
   - Name: WireframeColorOverride
-    Offset: '0x5d4'
+    Offset: '0x5e4'
     Size: '0x4'
     Type: Struct Color
   - Name: bIgnoreInstanceForTextureStreaming
-    Offset: '0x5d8'
+    Offset: '0x5e8'
     Size: '0x1'
     Type: bool
   - Name: bOverrideLightMapRes
-    Offset: '0x5d8'
+    Offset: '0x5e8'
     Size: '0x1'
     Type: bool
   - Name: OverriddenLightMapRes
-    Offset: '0x5dc'
+    Offset: '0x5ec'
     Size: '0x4'
     Type: int
   - Name: StreamingDistanceMultiplier
-    Offset: '0x5e0'
+    Offset: '0x5f0'
     Size: '0x4'
     Type: float
   - Name: IrrelevantLights
-    Offset: '0x5e8'
+    Offset: '0x5f8'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: LODData
-    Offset: '0x5f8'
+    Offset: '0x608'
     Size: '0x10'
     Type: TArray<Struct StaticMeshComponentLODInfo>
   - Name: CustomDepthMaterial
-    Offset: '0x608'
+    Offset: '0x618'
     Size: '0x8'
     Type: Class MaterialInterface*
   ClassSize: '0x50'
-  FullSize: '0x610'
-  InheritedSize: '0x5c0'
+  FullSize: '0x620'
+  InheritedSize: '0x5d0'
   Super: MeshComponent
 StaticMeshSocket:
   Attributes:
@@ -21407,56 +21407,56 @@ TextRenderActor:
 TextRenderComponent:
   Attributes:
   - Name: Text
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x38'
     Type: Struct FText
   - Name: TextMaterial
-    Offset: '0x5e0'
+    Offset: '0x5f0'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: Font
-    Offset: '0x5e8'
+    Offset: '0x5f8'
     Size: '0x8'
     Type: Class Font*
   - Name: HorizontalAlignment
-    Offset: '0x5f0'
+    Offset: '0x600'
     Size: '0x1'
     Type: byte
   - Name: VerticalAlignment
-    Offset: '0x5f1'
+    Offset: '0x601'
     Size: '0x1'
     Type: byte
   - Name: TextRenderColor
-    Offset: '0x5f4'
+    Offset: '0x604'
     Size: '0x4'
     Type: Struct Color
   - Name: XScale
-    Offset: '0x5f8'
-    Size: '0x4'
-    Type: float
-  - Name: YScale
-    Offset: '0x5fc'
-    Size: '0x4'
-    Type: float
-  - Name: WorldSize
-    Offset: '0x600'
-    Size: '0x4'
-    Type: float
-  - Name: InvDefaultSize
-    Offset: '0x604'
-    Size: '0x4'
-    Type: float
-  - Name: HorizSpacingAdjust
     Offset: '0x608'
     Size: '0x4'
     Type: float
-  - Name: bAlwaysRenderAsText
+  - Name: YScale
     Offset: '0x60c'
+    Size: '0x4'
+    Type: float
+  - Name: WorldSize
+    Offset: '0x610'
+    Size: '0x4'
+    Type: float
+  - Name: InvDefaultSize
+    Offset: '0x614'
+    Size: '0x4'
+    Type: float
+  - Name: HorizSpacingAdjust
+    Offset: '0x618'
+    Size: '0x4'
+    Type: float
+  - Name: bAlwaysRenderAsText
+    Offset: '0x61c'
     Size: '0x1'
     Type: bool
   ClassSize: '0x60'
-  FullSize: '0x610'
-  InheritedSize: '0x5b0'
+  FullSize: '0x620'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 Texture:
   Attributes:
@@ -22033,24 +22033,24 @@ VectorFieldAnimated:
 VectorFieldComponent:
   Attributes:
   - Name: VectorField
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x8'
     Type: Class VectorField*
   - Name: Intensity
-    Offset: '0x5b0'
+    Offset: '0x5c0'
     Size: '0x4'
     Type: float
   - Name: Tightness
-    Offset: '0x5b4'
+    Offset: '0x5c4'
     Size: '0x4'
     Type: float
   - Name: bPreviewVectorField
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
-  FullSize: '0x5d0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 VectorFieldStatic:
   Attributes:
@@ -22145,16 +22145,16 @@ WaterEmissionVolume:
 WaterEmissionVolumeComponent:
   Attributes:
   - Name: Radius
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x4'
     Type: float
   - Name: GenerationDensity
-    Offset: '0x2d4'
+    Offset: '0x2e4'
     Size: '0x4'
     Type: float
   ClassSize: '0x30'
-  FullSize: '0x300'
-  InheritedSize: '0x2d0'
+  FullSize: '0x310'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 WaterId:
   Attributes: []
@@ -22175,24 +22175,24 @@ WindDirectionalSource:
 WindDirectionalSourceComponent:
   Attributes:
   - Name: Strength
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x4'
     Type: float
   - Name: Speed
-    Offset: '0x2d4'
+    Offset: '0x2e4'
     Size: '0x4'
     Type: float
   - Name: MinGustAmount
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x4'
     Type: float
   - Name: MaxGustAmount
-    Offset: '0x2dc'
+    Offset: '0x2ec'
     Size: '0x4'
     Type: float
   ClassSize: '0x20'
-  FullSize: '0x2f0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x300'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 World:
   Attributes:
@@ -22317,15 +22317,15 @@ World:
     Size: '0x10'
     Type: TArray<class ParameterCollectionInstances*>
   - Name: WorldComposition
-    Offset: '0x798'
+    Offset: '0x6f8'
     Size: '0x8'
     Type: Class WorldComposition*
   - Name: bAreConstraintsDirty
-    Offset: '0x7dd'
+    Offset: '0x73d'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x840'
-  FullSize: '0x868'
+  ClassSize: '0x7a0'
+  FullSize: '0x7c8'
   InheritedSize: '0x28'
   Super: Object
 WorldComposition:

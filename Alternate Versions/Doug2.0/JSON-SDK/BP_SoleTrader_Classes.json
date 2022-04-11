@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "SolidHits",
+        "Name": "None",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
-        "Name": "NPCDialog",
+        "Name": "None",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x678"
       },
       {
-        "Name": "AnimNotifyWwiseEmitter",
+        "Name": "None",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x680"

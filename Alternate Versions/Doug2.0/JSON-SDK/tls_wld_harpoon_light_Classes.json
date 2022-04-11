@@ -1,18 +1,18 @@
 {
-  "tls_wld_harpoon_light_a_C": {
+  "tls_wld_harpoon_light_b_C": {
     "Super": "StaticMeshActor",
     "FullSize": "0x3f0",
     "InheritedSize": "0x3e0",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SpotLight",
+        "Name": "None",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "PointLight",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"

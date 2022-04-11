@@ -7,7 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_cmp_compass_gld_01_d_ItemDesc_C: public ItemDesc
+class BP_cmp_compass_gld_01_b_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_cmp_compass_gld_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };
@@ -21,21 +28,14 @@ public:
 
 
 // Size 0x0
+class BP_cmp_compass_gld_01_d_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_cmp_compass_gld_01_c_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_cmp_compass_gld_01_b_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_cmp_compass_gld_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

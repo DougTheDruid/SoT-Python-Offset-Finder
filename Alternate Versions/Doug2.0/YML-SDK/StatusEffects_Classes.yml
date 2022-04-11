@@ -249,16 +249,16 @@ StatusEffectTicketDispenserInterface:
 StatusEffectVolumeComponent:
   Attributes:
   - Name: UseOverlapEventsFromParentComponent
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x1'
     Type: bool
   - Name: StatusEffectsToMaintain
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x10'
     Type: TArray<Struct Status>
   ClassSize: '0x20'
-  FullSize: '0x2f0'
-  InheritedSize: '0x2d0'
+  FullSize: '0x300'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 StatusEffectsSettings:
   Attributes:

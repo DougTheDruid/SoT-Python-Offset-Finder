@@ -556,6 +556,49 @@ public:
 
 
 // Size 0x0
+class BP_MerchantCrate_AIShipAnyItemCrate_ItemDesc_C: public ItemWithoutIconsDesc
+{
+public:
+};
+
+
+// Size 0x8
+class BP_AI_wpn_unarmedCombat_ItemInfo_C: public ItemInfo
+{
+public:
+	Class SceneComponent*                                        None;                                              // 0x500(0x8)
+};
+
+
+// Size 0x0
+class BP_AI_wpn_PhantomUnarmedCombat_ItemDesc_C: public ItemWithoutIconsDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_AI_wpn_unarmedCombat_ItemDesc_C: public ItemWithoutIconsDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_MerchantCrate_AnyItemCrate_ItemDesc_C: public ItemWithoutIconsDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C: public BootyItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_hair_col_white_01_over_Desc_C: public ClothingDesc
 {
 public:
@@ -641,20 +684,6 @@ public:
 
 // Size 0x0
 class BP_hair_col_black_01_over_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_MerchantCrate_AnyItemCrate_ItemDesc_C: public ItemWithoutIconsDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C: public BootyItemDesc
 {
 public:
 };

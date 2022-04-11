@@ -10,17 +10,17 @@ namespace DougsSDKDumper
 class BP_Seagull01_8POI_C: public Seagulls
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x428(0x8)
-	Class WwiseEmitterComponent*                                 WwiseEmitter1;                                     // 0x430(0x8)
-	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x438(0x8)
-	Class StaticMeshComponent*                                   wil_seagull_01_ProcAnim8;                          // 0x440(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x448(0x8)
-	Class MaterialInterface*                                     seagulls_MI;                                       // 0x450(0x8)
-	Class MaterialInstanceDynamic*                               seagulls_MT;                                       // 0x458(0x8)
-	float                                                        FadeTime;                                          // 0x460(0x4)
-	Class MaterialInterface*                                     seagulls_MI_LOD;                                   // 0x468(0x8)
-	Class MaterialInstanceDynamic*                               seagulls_MT_LOD;                                   // 0x470(0x8)
-	Class WwiseEvent*                                            WwiseEvent;                                        // 0x478(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x438(0x8)
+	Class WwiseEmitterComponent*                                 WwiseEmitter1;                                     // 0x440(0x8)
+	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x448(0x8)
+	Class StaticMeshComponent*                                   wil_seagull_01_ProcAnim8;                          // 0x450(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x458(0x8)
+	Class MaterialInterface*                                     seagulls_MI;                                       // 0x460(0x8)
+	Class MaterialInstanceDynamic*                               seagulls_MT;                                       // 0x468(0x8)
+	float                                                        FadeTime;                                          // 0x470(0x4)
+	Class MaterialInterface*                                     seagulls_MI_LOD;                                   // 0x478(0x8)
+	Class MaterialInstanceDynamic*                               seagulls_MT_LOD;                                   // 0x480(0x8)
+	Class WwiseEvent*                                            WwiseEvent;                                        // 0x488(0x8)
 };
 
 
@@ -40,6 +40,13 @@ public:
 	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x3e0(0x8)
 	Class StaticMeshComponent*                                   wil_seagull_01_ProcAnim32;                         // 0x3e8(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3f0(0x8)
+};
+
+
+// Size 0x0
+class BP_Seagulls_Barrels_BarrelsOfPlenty_C: public BP_Seagull01_8POI_C
+{
+public:
 };
 
 

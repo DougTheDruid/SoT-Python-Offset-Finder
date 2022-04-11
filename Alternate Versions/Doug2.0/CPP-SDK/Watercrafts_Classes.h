@@ -49,8 +49,8 @@ public:
 class RowboatAudioComponent: public SceneComponent
 {
 public:
-	Class RowboatAudioComponentParams*                           Params;                                            // 0x2d0(0x8)
-	Class Rowboat*                                               ParentRowboat;                                     // 0x2d8(0x8)
+	Class RowboatAudioComponentParams*                           Params;                                            // 0x2e0(0x8)
+	Class Rowboat*                                               ParentRowboat;                                     // 0x2e8(0x8)
 };
 
 
@@ -269,7 +269,7 @@ public:
 class RowingInputComponent: public LookAtOffsetInputComponent
 {
 public:
-	Class RowingSeat*                                            TargetOars;                                        // 0x280(0x8)
+	Class RowingSeat*                                            TargetOars;                                        // 0x2a0(0x8)
 };
 
 

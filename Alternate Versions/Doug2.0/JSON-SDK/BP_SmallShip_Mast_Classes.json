@@ -1,87 +1,87 @@
 {
   "BP_SmallShip_Mast_C": {
     "Super": "BP_Mast_C",
-    "FullSize": "0xa88",
-    "InheritedSize": "0xa20",
+    "FullSize": "0xa98",
+    "InheritedSize": "0xa30",
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
-        "Size": "0x8",
-        "Offset": "0xa20"
-      },
-      {
-        "Name": "BP_MastEmissaryFlag",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0xa28"
-      },
-      {
-        "Name": "shp_flag_pennant_alliance_01_a",
-        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa30"
       },
       {
-        "Name": "shp_flag_jolly_roger_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa38"
       },
       {
-        "Name": "BP_Bell",
-        "Type": "Class ChildActorComponent*",
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa40"
       },
       {
-        "Name": "Ladder",
-        "Type": "Class ChildActorComponent*",
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa48"
       },
       {
-        "Name": "WeldedCrowsNestPhysics",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa50"
       },
       {
-        "Name": "WeldedMastPhysics",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa58"
       },
       {
-        "Name": "shp_mast_ladder_step_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa60"
       },
       {
-        "Name": "shp_small_mast_bell_support_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa68"
       },
       {
-        "Name": "BP_Bell1",
-        "Type": "Class ChildActorComponent*",
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa70"
       },
       {
-        "Name": "BP_ShipFlagCustomizationChest",
-        "Type": "Class ChildActorComponent*",
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa78"
       },
       {
-        "Name": "CrowsNest",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa80"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0xa88"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa90"
       }
     ]
   },

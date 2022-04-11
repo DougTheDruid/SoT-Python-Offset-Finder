@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class InstancedRopeComponent: public PrimitiveComponent
 {
 public:
-	Class StaticMesh*                                            StaticMesh;                                        // 0x5a8(0x8)
-	TArray<Struct InstancedRopeParams>                           Ropes;                                             // 0x5b0(0x10)
-	int                                                          ShadowLOD;                                         // 0x5c0(0x4)
+	Class StaticMesh*                                            StaticMesh;                                        // 0x5b8(0x8)
+	TArray<Struct InstancedRopeParams>                           Ropes;                                             // 0x5c0(0x10)
+	int                                                          ShadowLOD;                                         // 0x5d0(0x4)
 };
 
 
@@ -43,9 +43,9 @@ public:
 class RiggingSystemComponent: public SceneComponent
 {
 public:
-	Struct RopeStyleParams                                       RopeStyle;                                         // 0x2d0(0x20)
-	TArray<Struct RiggingSystemLineGroup>                        LineGroups;                                        // 0x2f0(0x10)
-	Class RiggingSystem*                                         Impl;                                              // 0x300(0x8)
+	Struct RopeStyleParams                                       RopeStyle;                                         // 0x2e0(0x20)
+	TArray<Struct RiggingSystemLineGroup>                        LineGroups;                                        // 0x300(0x10)
+	Class RiggingSystem*                                         Impl;                                              // 0x310(0x8)
 };
 
 

@@ -6,49 +6,69 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x48
-class wsp_mushroom_glow_01_c_C: public BP_Placement_HeightDrop_C
+// Size 0x11d
+class wsp_mushroom_glow_01_c_C: public FlyingCreature
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x448(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x450(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x428(0x8)
+	byte                                                         CreatureType;                                      // 0x430(0x1)
+	byte                                                         NumOfCreatures;                                    // 0x431(0x1)
+	float                                                        BoundsBias;                                        // 0x434(0x4)
+	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x438(0x8)
+	Class MaterialInstanceDynamic*                               currMaterial;                                      // 0x440(0x8)
+	TArray<class MaterialInstance*>                              MaterialInstance;                                  // 0x448(0x10)
+	float                                                        Seed;                                              // 0x458(0x4)
+	float                                                        FlapSpeed;                                         // 0x45c(0x4)
+	float                                                        CirclingSpeed;                                     // 0x460(0x4)
+	byte                                                         CirclingDirection;                                 // 0x464(0x1)
+	float                                                        CirclingRadius;                                    // 0x468(0x4)
+	float                                                        FlapDeformation;                                   // 0x46c(0x4)
+	float                                                        mud;                                               // 0x470(0x4)
+	float                                                        FlockSpeed;                                        // 0x474(0x4)
+	Struct Vector2D                                              FlockingSpread;                                    // 0x478(0x8)
+	float                                                        FlockingHeight;                                    // 0x480(0x4)
+	float                                                        BirdSpeed;                                         // 0x484(0x4)
+	Struct Vector2D                                              BirdSpread;                                        // 0x488(0x8)
+	float                                                        BirdHeight;                                        // 0x490(0x4)
+	float                                                        RandomHorizontalSpread;                            // 0x494(0x4)
+	float                                                        HueVariance;                                       // 0x498(0x4)
+	float                                                        RandomVerticalSpread;                              // 0x49c(0x4)
+	float                                                        Smoothness;                                        // 0x4a0(0x4)
+	TArray<Assetclass SelectedCreatureType>                      SelectedCreatureType;                              // 0x4a8(0x10)
+	TArray<Assetclass Seagull>                                   Seagull;                                           // 0x4b8(0x10)
+	float                                                        Size;                                              // 0x4c8(0x4)
+	float                                                        SizeVariance;                                      // 0x4cc(0x4)
+	float                                                        SimSpeed;                                          // 0x4d0(0x4)
+	Struct Vector                                                BBox;                                              // 0x4d4(0xc)
+	TArray<Assetclass Skellygull_01>                             Skellygull_01;                                     // 0x4e0(0x10)
+	TArray<Assetclass Bats_01>                                   Bats_01;                                           // 0x4f0(0x10)
+	TArray<Assetclass Parrot_01>                                 Parrot_01;                                         // 0x500(0x10)
+	bool                                                         ScaleInDistance;                                   // 0x510(0x1)
+	float                                                        DistanceScale;                                     // 0x514(0x4)
+	float                                                        DrawDistanceWithoutScale;                          // 0x518(0x4)
+	float                                                        DrawDistanceWithScale;                             // 0x51c(0x4)
+	float                                                        ForceHibernation;                                  // 0x520(0x4)
+	bool                                                         HibernateAtNight;                                  // 0x524(0x1)
+	Struct Vector                                                HibernateBoundsExtension;                          // 0x528(0xc)
+	float                                                        hibernationStartTime;                              // 0x534(0x4)
+	float                                                        hibernationEndTime;                                // 0x538(0x4)
+	float                                                        HibernationTransitionTime;                         // 0x53c(0x4)
+	float                                                        HibernationIndependance;                           // 0x540(0x4)
+	bool                                                         Glide;                                             // 0x544(0x1)
 };
 
 
-// Size 0x20
-class wsp_mushroom_glow_01_b_C: public BP_Placement_HeightDrop_C
+// Size 0x3f800000
+class wsp_mushroom_glow_01_b_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x420(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x428(0x8)
 };
 
 
-// Size 0x60
-class wsp_mushroom_glow_01_a_C: public BP_Placement_HeightDrop_C
+// Size 0x0
+class wsp_mushroom_glow_01_a_C: public LevelScriptActor
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent010;                            // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x450(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x458(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x460(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x468(0x8)
 };
 
 

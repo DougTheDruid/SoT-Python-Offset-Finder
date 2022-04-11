@@ -6,6 +6,14 @@ bld_beacon_01_a_fire_C:
     Offset: '0x3e0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: None
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class PointLightComponent*
+  - Name: None
+    Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
   ClassSize: '0x18'
   FullSize: '0x3f8'
   InheritedSize: '0x3e0'

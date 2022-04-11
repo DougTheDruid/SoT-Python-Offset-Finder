@@ -2,39 +2,39 @@
 # https://github.com/DougTheDruid
 BP_SmallShip_QuestTable_C:
   Attributes:
-  - Name: CancelAdventure
-    Offset: '0x768'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: PlayerBuiredItemsMapBundleInteractionPoint
+  - Name: None
     Offset: '0x770'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: CancelTale
+  - Name: None
     Offset: '0x778'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: CancelVoyage
+  - Name: None
     Offset: '0x780'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot4
+  - Name: None
     Offset: '0x788'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot3
+  - Name: None
     Offset: '0x790'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot2
+  - Name: None
     Offset: '0x798'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot1
+  - Name: None
     Offset: '0x7a0'
     Size: '0x8'
     Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x7a8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
   ClassSize: '0x40'
-  FullSize: '0x7a8'
-  InheritedSize: '0x768'
-  Super: VoyageProposalContainer
+  FullSize: '0x7b0'
+  InheritedSize: '0x770'
+  Super: VoyageTable

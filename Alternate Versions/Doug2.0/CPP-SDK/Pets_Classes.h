@@ -367,17 +367,17 @@ public:
 class PetHangoutSpotComponent: public SceneComponent
 {
 public:
-	TArray<Struct HangoutSpotPosition>                           HangoutSpots;                                      // 0x2d0(0x10)
-	bool                                                         HasLowerDeckFloodThreshold;                        // 0x2e0(0x1)
-	float                                                        LowerDeckFloodThreshold;                           // 0x2e4(0x4)
-	bool                                                         HasMiddleDeckFloodThreshold;                       // 0x2e8(0x1)
-	float                                                        MiddleDeckFloodThreshold;                          // 0x2ec(0x4)
-	float                                                        PerchInteractableHeightOffset;                     // 0x2f0(0x4)
-	bool                                                         IsWorldHangout;                                    // 0x2f4(0x1)
-	TArray<class PetPerchComponents*>                            PetPerchComponents;                                // 0x318(0x10)
-	bool                                                         IsTopDeckBlocked;                                  // 0x338(0x1)
-	bool                                                         IsOwnerSinking;                                    // 0x339(0x1)
-	Class PetHangoutSpotsDataAsset*                              PetHangoutSpotsDataAsset;                          // 0x358(0x8)
+	TArray<Struct HangoutSpotPosition>                           HangoutSpots;                                      // 0x2e0(0x10)
+	bool                                                         HasLowerDeckFloodThreshold;                        // 0x2f0(0x1)
+	float                                                        LowerDeckFloodThreshold;                           // 0x2f4(0x4)
+	bool                                                         HasMiddleDeckFloodThreshold;                       // 0x2f8(0x1)
+	float                                                        MiddleDeckFloodThreshold;                          // 0x2fc(0x4)
+	float                                                        PerchInteractableHeightOffset;                     // 0x300(0x4)
+	bool                                                         IsWorldHangout;                                    // 0x304(0x1)
+	TArray<class PetPerchComponents*>                            PetPerchComponents;                                // 0x328(0x10)
+	bool                                                         IsTopDeckBlocked;                                  // 0x348(0x1)
+	bool                                                         IsOwnerSinking;                                    // 0x349(0x1)
+	Class PetHangoutSpotsDataAsset*                              PetHangoutSpotsDataAsset;                          // 0x368(0x8)
 };
 
 

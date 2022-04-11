@@ -8,79 +8,79 @@
   },
   "CordRenderComponent": {
     "Super": "StaticMeshComponent",
-    "FullSize": "0x650",
-    "InheritedSize": "0x610",
+    "FullSize": "0x660",
+    "InheritedSize": "0x620",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "CordMaterials",
         "Type": "TArray<class CordMaterials*>",
         "Size": "0x10",
-        "Offset": "0x618"
+        "Offset": "0x628"
       },
       {
         "Name": "ThicknessCm",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x628"
+        "Offset": "0x638"
       }
     ]
   },
   "DynamicCordRenderComponent": {
     "Super": "CordRenderComponent",
-    "FullSize": "0x6b0",
-    "InheritedSize": "0x650",
+    "FullSize": "0x6c0",
+    "InheritedSize": "0x660",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "BoundsPadding",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x648"
+        "Offset": "0x658"
       },
       {
         "Name": "EndPointA",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x660"
       },
       {
         "Name": "EndPointB",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x668"
       }
     ]
   },
   "HarpoonRenderComponent": {
     "Super": "CordRenderComponent",
-    "FullSize": "0x670",
-    "InheritedSize": "0x650",
+    "FullSize": "0x680",
+    "InheritedSize": "0x660",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "HarpoonMaterials",
         "Type": "TArray<class HarpoonMaterials*>",
         "Size": "0x10",
-        "Offset": "0x648"
+        "Offset": "0x658"
       },
       {
         "Name": "LaunchAnimationDurationSecs",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x658"
+        "Offset": "0x668"
       },
       {
         "Name": "HitAnimationDurationSecs",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x65c"
+        "Offset": "0x66c"
       },
       {
         "Name": "QuickRetractAnimationSpeed",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x660"
+        "Offset": "0x670"
       }
     ]
   },

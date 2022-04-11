@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class BP_audio_prem_shop_wld_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d0(0x8)
-	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x3d8(0x8)
-	Class TritonComponent*                                       Triton;                                            // 0x3e0(0x8)
-	Class AudioPortalComponent*                                  AudioPortal;                                       // 0x3e8(0x8)
-	Class AudioSpaceComponent*                                   AudioSpace;                                        // 0x3f0(0x8)
-	Class SceneComponent*                                        Scene;                                             // 0x3f8(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x3d0(0x8)
+	Class WwiseEmitterComponent*                                 None;                                              // 0x3d8(0x8)
+	Class TritonComponent*                                       None;                                              // 0x3e0(0x8)
+	Class AudioPortalComponent*                                  None;                                              // 0x3e8(0x8)
+	Class AudioSpaceComponent*                                   None;                                              // 0x3f0(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3f8(0x8)
 };
 
 

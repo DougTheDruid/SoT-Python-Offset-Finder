@@ -2533,153 +2533,153 @@
   },
   "WidgetComponent": {
     "Super": "PrimitiveComponent",
-    "FullSize": "0x6a0",
-    "InheritedSize": "0x5b0",
+    "FullSize": "0x6b0",
+    "InheritedSize": "0x5c0",
     "ClassSize": "0xf0",
     "Attributes": [
       {
         "Name": "Space",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x5a8"
+        "Offset": "0x5b8"
       },
       {
         "Name": "WidgetClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x5b0"
+        "Offset": "0x5c0"
       },
       {
         "Name": "DrawSize",
         "Type": "Struct IntPoint",
         "Size": "0x8",
-        "Offset": "0x5b8"
+        "Offset": "0x5c8"
       },
       {
         "Name": "Pivot",
         "Type": "Struct Vector2D",
         "Size": "0x8",
-        "Offset": "0x5c0"
+        "Offset": "0x5d0"
       },
       {
         "Name": "MaxInteractionDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x5c8"
+        "Offset": "0x5d8"
       },
       {
         "Name": "OwnerPlayer",
         "Type": "Class LocalPlayer*",
         "Size": "0x8",
-        "Offset": "0x5d0"
+        "Offset": "0x5e0"
       },
       {
         "Name": "BackgroundColor",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x5d8"
+        "Offset": "0x5e8"
       },
       {
         "Name": "BlendMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x5e8"
+        "Offset": "0x5f8"
       },
       {
         "Name": "bIsOpaque",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x5e9"
+        "Offset": "0x5f9"
       },
       {
         "Name": "bIsTwoSided",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x5ea"
+        "Offset": "0x5fa"
       },
       {
         "Name": "ParabolaDistortion",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x5ec"
+        "Offset": "0x5fc"
       },
       {
         "Name": "TickWhenOffscreen",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x5f0"
+        "Offset": "0x600"
       },
       {
         "Name": "Widget",
         "Type": "Class UserWidget*",
         "Size": "0x8",
-        "Offset": "0x5f8"
+        "Offset": "0x608"
       },
       {
         "Name": "BodySetup",
         "Type": "Class BodySetup*",
         "Size": "0x8",
-        "Offset": "0x600"
+        "Offset": "0x610"
       },
       {
         "Name": "TranslucentMaterial",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x608"
+        "Offset": "0x618"
       },
       {
         "Name": "TranslucentMaterial_OneSided",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x610"
+        "Offset": "0x620"
       },
       {
         "Name": "OpaqueMaterial",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x618"
+        "Offset": "0x628"
       },
       {
         "Name": "OpaqueMaterial_OneSided",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x620"
+        "Offset": "0x630"
       },
       {
         "Name": "MaskedMaterial",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x628"
+        "Offset": "0x638"
       },
       {
         "Name": "MaskedMaterial_OneSided",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x630"
+        "Offset": "0x640"
       },
       {
         "Name": "RenderTarget",
         "Type": "Class TextureRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x638"
+        "Offset": "0x648"
       },
       {
         "Name": "MaterialInstance",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x650"
       },
       {
         "Name": "bUseLegacyRotation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x648"
+        "Offset": "0x658"
       },
       {
         "Name": "bAddedToScreen",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x649"
+        "Offset": "0x659"
       }
     ]
   },

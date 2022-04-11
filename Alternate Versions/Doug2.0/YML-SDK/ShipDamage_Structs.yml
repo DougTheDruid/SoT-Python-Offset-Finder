@@ -73,19 +73,11 @@ HullDamageHit:
     Offset: '0xc'
     Size: '0xc'
     Type: Struct Vector
-  - Name: HitStrength
-    Offset: '0x18'
-    Size: '0x4'
-    Type: float
-  - Name: HitLevel
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: int
   - Name: HasDecal
-    Offset: '0x20'
+    Offset: '0x18'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x24'
+  ClassSize: '0x1c'
 HullDamagePersistenceModel:
   Attributes:
   - Name: DamageZones

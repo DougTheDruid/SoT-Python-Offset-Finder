@@ -37,6 +37,14 @@ public:
 };
 
 
+// Size 0x10
+class AssetAuditSettings: public DeveloperSettings
+{
+public:
+	TArray<Str PathsToAuditOnSave>                               PathsToAuditOnSave;                                // 0x38(0x10)
+};
+
+
 // Size 0x0
 class AutomationBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {

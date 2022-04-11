@@ -13,14 +13,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MeshMemoryConstraintCategory_AI_Skeleton_GoldHoarderCrew_C": {
+  "MeshMemoryConstraintCategory_AI_Phantom_C": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MeshMemoryConstraintCategory_AI_Phantom_C": {
+  "MeshMemoryConstraintCategory_AI_Skeleton_GoldHoarderCrew_C": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -98,6 +98,20 @@
     "Attributes": []
   },
   "MeshMemoryConstraintCategory_Bottle_C": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMemoryConstraintCategory_StandingTrinket_C": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMemoryConstraintCategory_HangingTrinket_C": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

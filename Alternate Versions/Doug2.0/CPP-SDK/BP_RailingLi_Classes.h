@@ -27,4 +27,25 @@ public:
 };
 
 
+// Size 0x0
+class BP_RailingLight_SmallShip_Wheel_C: public BP_InteractableShipRailingLight_C
+{
+public:
+};
+
+
+// Size 0x0
+class BP_RailingLight_SmallShip_BowRightFront_C: public BP_InteractableShipRailingLight_C
+{
+public:
+};
+
+
+// Size 0x0
+class BP_RailingLight_SmallShip_BowLeftFront_C: public BP_InteractableShipRailingLight_C
+{
+public:
+};
+
+
 }

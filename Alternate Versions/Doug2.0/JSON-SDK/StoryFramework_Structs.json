@@ -10,6 +10,34 @@
       }
     ]
   },
+  "NamedPointsGroupActorLocation": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "NamedPointsGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StorySpawnedNamedPointsList": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StoryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GroupLocations",
+        "Type": "TArray<Struct NamedPointsGroupActorLocation>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "StorySpawnedActorsList": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -34,30 +62,42 @@
     ]
   },
   "NamedPointsActorLocation": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
-      {
-        "Name": "NamedPointsGroup",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
       {
         "Name": "ActorWithNamedPointsComponent",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x8"
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DevActorWithNamedPointsComponent",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "GroupLocations",
+        "Type": "TArray<Struct NamedPointsGroupActorLocation>",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },
   "ActorLocationPair": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "SpawnLocation",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "DevSpawnLocation",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -101,6 +141,21 @@
       }
     ]
   },
+  "SpawnedActorsComponentList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ComponentsList",
+        "Type": "TArray<class ComponentsList*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StoriesToSpawnedActorsListContainer": {
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
   "SpawnedActorsList": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -130,13 +185,19 @@
     ]
   },
   "StoriesChangedTelemetryEvent": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x20",
     "Attributes": [
+      {
+        "Name": "AllStories",
+        "Type": "TArray<Str AllStories>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "ActiveStories",
         "Type": "TArray<Str ActiveStories>",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x10"
       }
     ]
   },

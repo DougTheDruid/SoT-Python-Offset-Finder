@@ -21,14 +21,14 @@ public:
 
 
 // Size 0x0
-class MeshMemoryConstraintCategory_AI_Skeleton_GoldHoarderCrew_C: public MeshMemoryConstraintCategory
+class MeshMemoryConstraintCategory_AI_Phantom_C: public MeshMemoryConstraintCategory
 {
 public:
 };
 
 
 // Size 0x0
-class MeshMemoryConstraintCategory_AI_Phantom_C: public MeshMemoryConstraintCategory
+class MeshMemoryConstraintCategory_AI_Skeleton_GoldHoarderCrew_C: public MeshMemoryConstraintCategory
 {
 public:
 };
@@ -106,6 +106,20 @@ public:
 
 // Size 0x0
 class MeshMemoryConstraintCategory_Bottle_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_StandingTrinket_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_HangingTrinket_C: public MeshMemoryConstraintCategory
 {
 public:
 };

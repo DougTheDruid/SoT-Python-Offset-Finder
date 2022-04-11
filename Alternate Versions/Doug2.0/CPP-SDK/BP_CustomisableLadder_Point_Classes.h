@@ -7,13 +7,10 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x24
-class BP_CustomisableLadder_PointToPoint_C: public BP_CustomisableLadder_C
+class BP_CustomisableLadder_PointToPoint_C: public None
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x648(0x8)
-	float                                                        Ladder Roll;                                       // 0x650(0x4)
-	Struct Vector                                                Ladder Top Target;                                 // 0x654(0xc)
-	Struct Vector                                                Ladder Bottom Target;                              // 0x660(0xc)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x648(0x8)
 };
 
 

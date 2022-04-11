@@ -6,73 +6,73 @@
     "ClassSize": "0x55",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
-        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Name": "None",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
-        "Name": "NavBlocker",
+        "Name": "None",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x788"
       },
       {
-        "Name": "ControlPoint",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x790"
       },
       {
-        "Name": "ControlPoint",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x798"
       },
       {
-        "Name": "ControlPoint",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7a0"
       },
       {
-        "Name": "ControlPoint",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7a8"
       },
       {
-        "Name": "TextureFeedback",
+        "Name": "None",
         "Type": "Class TextureFeedbackComponent*",
         "Size": "0x8",
         "Offset": "0x7b0"
       },
       {
-        "Name": "Cube",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7b8"
       },
       {
-        "Name": "Map",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7c0"
       },
       {
-        "Name": "ActiveRange",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x7c8"
       },
       {
-        "Name": "IsActive",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x7cc"

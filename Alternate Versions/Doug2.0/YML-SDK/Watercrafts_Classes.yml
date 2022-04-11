@@ -185,16 +185,16 @@ Rowboat:
 RowboatAudioComponent:
   Attributes:
   - Name: Params
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: Class RowboatAudioComponentParams*
   - Name: ParentRowboat
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: Class Rowboat*
   ClassSize: '0x1b0'
-  FullSize: '0x480'
-  InheritedSize: '0x2d0'
+  FullSize: '0x490'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 RowboatAudioComponentParams:
   Attributes:
@@ -381,12 +381,12 @@ RowingActionStateId:
 RowingInputComponent:
   Attributes:
   - Name: TargetOars
-    Offset: '0x280'
+    Offset: '0x2a0'
     Size: '0x8'
     Type: Class RowingSeat*
   ClassSize: '0x8'
-  FullSize: '0x288'
-  InheritedSize: '0x280'
+  FullSize: '0x2a8'
+  InheritedSize: '0x2a0'
   Super: LookAtOffsetInputComponent
 ScrapeableComponent:
   Attributes:

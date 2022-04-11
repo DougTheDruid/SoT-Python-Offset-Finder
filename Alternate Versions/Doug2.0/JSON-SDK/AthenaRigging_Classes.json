@@ -1,27 +1,27 @@
 {
   "InstancedRopeComponent": {
     "Super": "PrimitiveComponent",
-    "FullSize": "0x670",
-    "InheritedSize": "0x5b0",
+    "FullSize": "0x680",
+    "InheritedSize": "0x5c0",
     "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
-        "Offset": "0x5a8"
+        "Offset": "0x5b8"
       },
       {
         "Name": "Ropes",
         "Type": "TArray<Struct InstancedRopeParams>",
         "Size": "0x10",
-        "Offset": "0x5b0"
+        "Offset": "0x5c0"
       },
       {
         "Name": "ShadowLOD",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x5c0"
+        "Offset": "0x5d0"
       }
     ]
   },
@@ -97,34 +97,34 @@
   },
   "RiggingSystemComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x310",
-    "InheritedSize": "0x2d0",
+    "FullSize": "0x320",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "RopeStyle",
         "Type": "Struct RopeStyleParams",
         "Size": "0x20",
-        "Offset": "0x2d0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "LineGroups",
         "Type": "TArray<Struct RiggingSystemLineGroup>",
         "Size": "0x10",
-        "Offset": "0x2f0"
+        "Offset": "0x300"
       },
       {
         "Name": "Impl",
         "Type": "Class RiggingSystem*",
         "Size": "0x8",
-        "Offset": "0x300"
+        "Offset": "0x310"
       }
     ]
   },
   "RopeCatenaryRenderComponent": {
     "Super": "CordRenderComponent",
-    "FullSize": "0x650",
-    "InheritedSize": "0x650",
+    "FullSize": "0x660",
+    "InheritedSize": "0x660",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -6,13 +6,45 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_MediumShipStorageBarrel_Grog_C: public InteractableBase
+// Size 0x7b8
+class BP_MermaidGem_Proxy_Sapphire_C: public NameProperty
 {
 public:
-	Class TankardRefillerComponent*                              TankardRefiller;                                   // 0x3f8(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x400(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x408(0x8)
+};
+
+
+// Size 0x7b8
+class BP_MermaidGem_Proxy_Emerald_C: public NameProperty
+{
+public:
+};
+
+
+// Size -0xaba57ba0
+class BP_MerchantCrate_Commodity_TeaCrate_ItemInfo_C: public None
+{
+public:
+};
+
+
+// Size 0x8
+class BP_MerchantCrate_AIShipAnyItemCrate_ItemInfo_C: public NonStorableItemInfo
+{
+public:
+};
+
+
+// Size 0x8
+class BP_MerchantCrate_Commodity_Ore_ItemInfo_C: public BootyItemInfo
+{
+public:
+};
+
+
+// Size 0x7b8
+class BP_MermaidGem_Proxy_Ruby_C: public NameProperty
+{
+public:
 };
 
 

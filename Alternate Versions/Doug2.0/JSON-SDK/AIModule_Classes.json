@@ -3061,8 +3061,8 @@
   },
   "EQSRenderingComponent": {
     "Super": "PrimitiveComponent",
-    "FullSize": "0x5c0",
-    "InheritedSize": "0x5b0",
+    "FullSize": "0x5d0",
+    "InheritedSize": "0x5c0",
     "ClassSize": "0x10",
     "Attributes": []
   },

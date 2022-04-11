@@ -3,8 +3,8 @@
 ControlPointMeshComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x610'
-  InheritedSize: '0x610'
+  FullSize: '0x620'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 Landscape:
   Attributes: []
@@ -15,116 +15,116 @@ Landscape:
 LandscapeComponent:
   Attributes:
   - Name: SectionBaseX
-    Offset: '0x5a8'
-    Size: '0x4'
-    Type: int
-  - Name: SectionBaseY
-    Offset: '0x5ac'
-    Size: '0x4'
-    Type: int
-  - Name: ComponentSizeQuads
-    Offset: '0x5b0'
-    Size: '0x4'
-    Type: int
-  - Name: SubsectionSizeQuads
-    Offset: '0x5b4'
-    Size: '0x4'
-    Type: int
-  - Name: NumSubsections
     Offset: '0x5b8'
     Size: '0x4'
     Type: int
-  - Name: OverrideMaterial
+  - Name: SectionBaseY
+    Offset: '0x5bc'
+    Size: '0x4'
+    Type: int
+  - Name: ComponentSizeQuads
     Offset: '0x5c0'
+    Size: '0x4'
+    Type: int
+  - Name: SubsectionSizeQuads
+    Offset: '0x5c4'
+    Size: '0x4'
+    Type: int
+  - Name: NumSubsections
+    Offset: '0x5c8'
+    Size: '0x4'
+    Type: int
+  - Name: OverrideMaterial
+    Offset: '0x5d0'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: OverrideHoleMaterial
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: MaterialInstance
-    Offset: '0x5d0'
+    Offset: '0x5e0'
     Size: '0x8'
     Type: Class MaterialInstanceConstant*
   - Name: WeightmapLayerAllocations
-    Offset: '0x5d8'
+    Offset: '0x5e8'
     Size: '0x10'
     Type: TArray<Struct WeightmapLayerAllocationInfo>
   - Name: WeightmapTextures
-    Offset: '0x5e8'
+    Offset: '0x5f8'
     Size: '0x10'
     Type: TArray<class WeightmapTextures*>
   - Name: XYOffsetmapTexture
-    Offset: '0x5f8'
+    Offset: '0x608'
     Size: '0x8'
     Type: Class Texture2D*
   - Name: WeightmapScaleBias
-    Offset: '0x600'
+    Offset: '0x610'
     Size: '0x10'
     Type: Struct Vector4
   - Name: WeightmapSubsectionOffset
-    Offset: '0x610'
+    Offset: '0x620'
     Size: '0x4'
     Type: float
   - Name: HeightmapScaleBias
-    Offset: '0x620'
+    Offset: '0x630'
     Size: '0x10'
     Type: Struct Vector4
   - Name: HeightmapTexture
-    Offset: '0x630'
+    Offset: '0x640'
     Size: '0x8'
     Type: Class Texture2D*
   - Name: CachedLocalBox
-    Offset: '0x638'
+    Offset: '0x648'
     Size: '0x1c'
     Type: Struct Box
   - Name: IrrelevantLights
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: CollisionMipLevel
-    Offset: '0x690'
+    Offset: '0x6a0'
     Size: '0x4'
     Type: int
   - Name: StaticLightingResolution
-    Offset: '0x694'
+    Offset: '0x6a4'
     Size: '0x4'
     Type: float
   - Name: ForcedLOD
-    Offset: '0x698'
+    Offset: '0x6a8'
     Size: '0x4'
     Type: int
   - Name: LODBias
-    Offset: '0x69c'
+    Offset: '0x6ac'
     Size: '0x4'
     Type: int
   - Name: StateId
-    Offset: '0x6a0'
-    Size: '0x10'
-    Type: Struct Guid
-  - Name: BakedTextureMaterialGuid
     Offset: '0x6b0'
     Size: '0x10'
     Type: Struct Guid
-  - Name: GIBakedBaseColorTexture
+  - Name: BakedTextureMaterialGuid
     Offset: '0x6c0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: GIBakedBaseColorTexture
+    Offset: '0x6d0'
     Size: '0x8'
     Type: Class Texture2D*
   - Name: MobileBlendableLayerMask
-    Offset: '0x6c8'
+    Offset: '0x6d8'
     Size: '0x1'
     Type: byte
   - Name: MobileMaterialInterface
-    Offset: '0x6d0'
+    Offset: '0x6e0'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: MobileWeightNormalmapTexture
-    Offset: '0x6d8'
+    Offset: '0x6e8'
     Size: '0x8'
     Type: Class Texture2D*
   ClassSize: '0x160'
-  FullSize: '0x710'
-  InheritedSize: '0x5b0'
+  FullSize: '0x720'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 LandscapeGizmoActiveActor:
   Attributes: []
@@ -141,8 +141,8 @@ LandscapeGizmoActor:
 LandscapeGizmoRenderComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x5b0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5c0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 LandscapeGrassType:
   Attributes:
@@ -185,44 +185,44 @@ LandscapeGrassType:
 LandscapeHeightfieldCollisionComponent:
   Attributes:
   - Name: ComponentLayerInfos
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<class ComponentLayerInfos*>
   - Name: SectionBaseX
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x4'
     Type: int
   - Name: SectionBaseY
-    Offset: '0x5bc'
+    Offset: '0x5cc'
     Size: '0x4'
     Type: int
   - Name: CollisionSizeQuads
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x4'
     Type: int
   - Name: CollisionScale
-    Offset: '0x5c4'
+    Offset: '0x5d4'
     Size: '0x4'
     Type: float
   - Name: CollisionQuadFlags
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0x10'
     Type: TArray<Byte CollisionQuadFlags>
   - Name: HeightfieldGuid
-    Offset: '0x5d8'
+    Offset: '0x5e8'
     Size: '0x10'
     Type: Struct Guid
   - Name: CachedLocalBox
-    Offset: '0x5e8'
+    Offset: '0x5f8'
     Size: '0x1c'
     Type: Struct Box
   - Name: CookedPhysicalMaterials
-    Offset: '0x630'
+    Offset: '0x640'
     Size: '0x10'
     Type: TArray<class CookedPhysicalMaterials*>
   ClassSize: '0xd0'
-  FullSize: '0x680'
-  InheritedSize: '0x5b0'
+  FullSize: '0x690'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 LandscapeInfo:
   Attributes:
@@ -295,12 +295,12 @@ LandscapeMaterialInstanceConstant:
 LandscapeMeshCollisionComponent:
   Attributes:
   - Name: MeshGuid
-    Offset: '0x680'
+    Offset: '0x690'
     Size: '0x10'
     Type: Struct Guid
   ClassSize: '0x20'
-  FullSize: '0x6a0'
-  InheritedSize: '0x680'
+  FullSize: '0x6b0'
+  InheritedSize: '0x690'
   Super: LandscapeHeightfieldCollisionComponent
 LandscapeMeshProxyActor:
   Attributes:
@@ -315,16 +315,16 @@ LandscapeMeshProxyActor:
 LandscapeMeshProxyComponent:
   Attributes:
   - Name: LandscapeGuid
-    Offset: '0x610'
+    Offset: '0x620'
     Size: '0x10'
     Type: Struct Guid
   - Name: ProxyComponentBases
-    Offset: '0x620'
+    Offset: '0x630'
     Size: '0x10'
     Type: TArray<Struct IntPoint>
   ClassSize: '0x30'
-  FullSize: '0x640'
-  InheritedSize: '0x610'
+  FullSize: '0x650'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 LandscapeProxy:
   Attributes:
@@ -539,20 +539,20 @@ LandscapeSplineSegment:
 LandscapeSplinesComponent:
   Attributes:
   - Name: ControlPoints
-    Offset: '0x5a8'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<class ControlPoints*>
   - Name: Segments
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x10'
     Type: TArray<class Segments*>
   - Name: CookedForeignMeshComponents
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0x10'
     Type: TArray<class CookedForeignMeshComponents*>
   ClassSize: '0x30'
-  FullSize: '0x5e0'
-  InheritedSize: '0x5b0'
+  FullSize: '0x5f0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 MaterialExpressionLandscapeGrassOutput:
   Attributes:

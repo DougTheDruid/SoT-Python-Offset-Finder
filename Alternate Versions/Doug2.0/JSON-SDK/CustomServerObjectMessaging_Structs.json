@@ -16,6 +16,23 @@
       }
     ]
   },
+  "OnItemPlacedInChestCustomServerEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ChestId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ItemId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
   "EntityCustomServerEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -28,260 +45,225 @@
     ]
   },
   "OnCannonBallHitShipCustomServerEvent": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "CannonBallType",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x18"
+        "Offset": "0x20"
       },
       {
         "Name": "ShipId",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x28"
+        "Offset": "0x30"
       }
     ]
   },
-  "GlobalCustomServerEvent": {
-    "ClassSize": "0x18",
-    "Attributes": []
-  },
   "PlayerCharacterEnteredShipCustomServerEvent": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "UserId",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x18"
+        "Offset": "0x20"
       },
       {
         "Name": "ShipId",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x1c"
+        "Offset": "0x24"
       }
     ]
   },
-  "WatercraftSpawnCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "WatercraftId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "WatercraftDespawnCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "WatercraftId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "TreasureSpawnedCustomServerEvent": {
-    "ClassSize": "0x18",
+  "FortKeyUsedCustomServerEvent": {
+    "ClassSize": "0x20",
     "Attributes": []
   },
   "TreasureSoldCustomServerEvent": {
-    "ClassSize": "0x68",
+    "ClassSize": "0x60",
     "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
       {
         "Name": "CrewId",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
       },
       {
         "Name": "TreasureType",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x30"
       },
       {
         "Name": "VendorId",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x48"
+        "Offset": "0x40"
       },
       {
         "Name": "CompanyId",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x58"
+        "Offset": "0x50"
       }
     ]
   },
   "TreasurePickedUpCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "TreasureFoundCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
       {
         "Name": "TreasureType",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
       }
     ]
   },
   "TreasureDroppedCustomServerEvent": {
-    "ClassSize": "0x48",
+    "ClassSize": "0x40",
     "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
       {
         "Name": "TreasureType",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
       },
       {
         "Name": "Position",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x38"
+        "Offset": "0x30"
       }
     ]
   },
-  "ShovelCustomServerEvent": {
+  "TinySharkDespawnCustomServerEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
+        "Name": "Reason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "KrakenDespawnCustomServerEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Reason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "KrakenTentacleDestroyedCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "CookStartCustomServerEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "FoodType",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x18"
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CookEndCustomServerEvent": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "FoodType",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "CookedState",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },
   "ShipSpawnedCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
-      {
-        "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
       {
         "Name": "ShipType",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
       }
     ]
   },
   "ShipRepairCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
       },
       {
         "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
   "ShipOnFireEndCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "ShipMastCollapseStateCustomServerEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "ShipMastCollapseStateCustomServerEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
       },
       {
         "Name": "MastId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
   "ShipDestroyedCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "ShipDamagedCustomServerEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "Damage",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },
   "ProjectileWeaponFiredCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "ProjectileHitCustomServerEvent": {
     "ClassSize": "0x38",
@@ -290,47 +272,35 @@
         "Name": "ProjectileType",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x18"
+        "Offset": "0x20"
       },
       {
         "Name": "RecipientId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
       }
     ]
   },
   "PlayerStatusEffectActivatedCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
       {
         "Name": "Effect",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
       }
     ]
   },
   "PlayerStatusEffectDeactivatedCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
       {
         "Name": "Effect",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
       }
     ]
   },
@@ -338,192 +308,123 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "PlayerStateId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "CharacterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x24"
       }
     ]
   },
   "PlayerSetFootLocationCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "UserId",
+        "Name": "IslandName",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Location",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
       }
     ]
   },
   "PlayerRevivalCustomServerEvent": {
     "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "PlayerRequiresMermaidCustomServerEvent": {
-    "ClassSize": "0x18",
     "Attributes": []
   },
   "PlayerRadialChatCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "PlayerObjectUsageStartCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerLeftGhostShipCustomServerEvent": {
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": []
   },
   "PlayerKillAICustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "PlayerItemUsageStartCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerItemUsageEndCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerItemRetrievalFromContainerCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerItemEquipCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerItemAddToContainerCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerInReviveableStateCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerHeartbeatCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerHealthChangeCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerGameFishingCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "PlayerEncounterStartCustomServerEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "EncounterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x20"
       }
     ]
   },
-  "PlayerEncounterStartCustomServerEvent": {
-    "ClassSize": "0x18",
-    "Attributes": []
-  },
   "PlayerEncounterEndCustomServerEvent": {
-    "ClassSize": "0x18",
-    "Attributes": []
-  },
-  "PlayerEmoteCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
+        "Name": "EncounterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "PlayerEmoteEndCustomServerEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
       {
         "Name": "Emote",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "PlayerEmoteStartCustomServerEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Emote",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },
@@ -531,139 +432,245 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "KillerID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },
   "PlayerChangedShipLoadoutCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
         "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },
   "PlayerChangedLoadoutCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "PlayerCapstanUsageStartCustomServerEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "PlayerCapstanUsageStartCustomServerEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
         "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },
   "PlayerCapstanUsageEndCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "ShipId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
       },
       {
-        "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Name": "CapstanState",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
   "PlayerBucketScoopCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "PlayerBucketEmptyCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "PlayerActionCannonCustomServerEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "PlayerActionCannonCustomServerEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
         "Name": "ShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },
   "PlayerActionCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
       {
         "Name": "Action",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
       }
     ]
   },
   "MermaidUsedCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "MeleeWeaponAttackCustomServerEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
+        "Name": "Type",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CustomTriggerOverlapEndCustomServerEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "OtherNetId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CustomTriggerOverlapBeginCustomServerEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "OtherNetId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "AISpawnCustomServerEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "AIType",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x18"
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "AIShipSpawnCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "AIShipDespawnCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "AIShipDamagedCustomServerEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "AIShipWaterLevel",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "OnCannonballLoadedOnCannonCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "OnPlayerFiredFromCannonCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "OnEnemyDeathCustomServerEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "KillerPlayerID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "OnPlayerDigCustomServerEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "OnPlayerStartsNPCInteractionCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "OnPlayerJoinsMapTableCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "OnHarpoonShotHitCustomServerEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ActorTetheredTo",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "OnHarpoonShotShotCustomServerEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "HarpoonId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "OnPlayerInsideCannonCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "OnPlayerAteCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "ShipSinkingCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "HoleFixedForShipCustomServerEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "RepairPercentage",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "RepairingActor",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "RepairCompleted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
       }
     ]
   },
@@ -675,92 +682,192 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "MeleeWeaponAttackCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
+      },
       {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "PlayerId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
-  "LevelLoadCompletedCustomServerEvent": {
+  "GlobalCustomServerEvent": {
     "ClassSize": "0x18",
     "Attributes": []
   },
-  "KrakenTentacleDestroyedCustomServerEvent": {
+  "PlayerLookingAtMapCustomServerEvent": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "OnQuestStartedCustomServerEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "TentacleRemaining",
+        "Name": "QuestType",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
       }
     ]
   },
-  "KrakenSpawnCustomServerEvent": {
+  "OnVoyageStartedCustomServerEvent": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "CompanyDisplayName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Rank",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Title",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "OnVoyageCancelledCustomServerEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Position",
+        "Name": "AssociatedCrew",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "OnVoyageAcceptedCustomServerEvent": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "CompanyDisplayName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Rank",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Title",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "OnQuestAcceptedCustomServerEvent": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "WatercraftDespawnCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "WatercraftId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "TreasureSpawnedCustomServerEvent": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "KrakenSpawnCustomServerEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "SpawnLocation",
         "Type": "Struct Vector",
         "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TrackedShipId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "KrakenId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NumberOfTentacles",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "NumberOfKilledTentaclesToDismissKraken",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "WatercraftSpawnCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EntityNetId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "ActorSpawnCustomServerEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EntityNetId",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x18"
       }
     ]
   },
   "ItemSpawnCustomServerEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "ItemId",
-        "Type": "Struct FString",
-        "Size": "0x10",
+        "Name": "EntityNetId",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x18"
       },
       {
         "Name": "ItemType",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x20"
       }
     ]
   },
   "FortWaveCompletedCustomServerEvent": {
-    "ClassSize": "0x18",
-    "Attributes": []
-  },
-  "FortKeyUsedCustomServerEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UserId",
+        "Name": "InCrewId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "CustomTriggerOverlapCustomServerEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "TriggerNetId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "OtherNetId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1c"
       }
     ]
   },
@@ -776,115 +883,44 @@
     ]
   },
   "CrewPlayerLeftCustomServerEvent": {
-    "ClassSize": "0x28",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "CrewId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "CookStartCustomServerEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
       },
       {
-        "Name": "FoodType",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "CookEndCustomServerEvent": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "FoodType",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CookedState",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "AISpawnCustomServerEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "AIId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "AIType",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AIShipSpawnCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "AIShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "AIShipDespawnCustomServerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "AIShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "AIShipDamagedCustomServerEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "AIShipId",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "AIShipWaterLevel",
-        "Type": "float",
+        "Name": "PlayerId",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
       }
     ]
   },
   "TinySharkSpawnCustomServerEvent": {
-    "ClassSize": "0x18",
-    "Attributes": []
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TinySharkId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SpawnLocation",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "TrackedShipId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

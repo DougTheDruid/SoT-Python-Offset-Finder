@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 BP_TaleBook_APiratesLife_C:
   Attributes:
-  - Name: Arrow
+  - Name: None
     Offset: '0x768'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x770'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x778'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x780'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x788'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x790'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x798'
     Size: '0x8'
     Type: Class ChildActorComponent*
@@ -36,31 +36,31 @@ BP_TaleBook_APiratesLife_C:
   Super: VoyageProposalContainer
 BP_TaleBook_CaptainsOfTheDamned_C:
   Attributes:
-  - Name: Arrow
+  - Name: None
     Offset: '0x768'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x770'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x778'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x780'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x788'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x790'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x798'
     Size: '0x8'
     Type: Class ChildActorComponent*
@@ -70,31 +70,31 @@ BP_TaleBook_CaptainsOfTheDamned_C:
   Super: VoyageProposalContainer
 BP_TaleBook_DarkBrethren_C:
   Attributes:
-  - Name: Arrow
+  - Name: None
     Offset: '0x768'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x770'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x778'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x780'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x788'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x790'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x798'
     Size: '0x8'
     Type: Class ChildActorComponent*
@@ -104,31 +104,31 @@ BP_TaleBook_DarkBrethren_C:
   Super: VoyageProposalContainer
 BP_TaleBook_LordsOfTheSea_C:
   Attributes:
-  - Name: Arrow
+  - Name: None
     Offset: '0x768'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x770'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x778'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x780'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x788'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x790'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x798'
     Size: '0x8'
     Type: Class ChildActorComponent*
@@ -138,31 +138,31 @@ BP_TaleBook_LordsOfTheSea_C:
   Super: VoyageProposalContainer
 BP_TaleBook_SunkenCrystal_C:
   Attributes:
-  - Name: Arrow
+  - Name: None
     Offset: '0x768'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x770'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x778'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x780'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x788'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x790'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x798'
     Size: '0x8'
     Type: Class ChildActorComponent*

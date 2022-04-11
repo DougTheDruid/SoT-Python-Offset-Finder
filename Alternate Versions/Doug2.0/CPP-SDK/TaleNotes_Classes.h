@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x230
+// Size 0x220
 class TaleNote: public SkeletalMeshWieldableItem
 {
 public:
@@ -21,9 +21,8 @@ public:
 	Struct FText                                                 Title;                                             // 0x860(0x38)
 	Struct FText                                                 Body;                                              // 0x898(0x38)
 	Class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x8d0(0x8)
-	Class NamedNotificationInputComponent*                       NamedNotificationInputComponent;                   // 0x8d8(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x8e0(0x8)
-	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x8e8(0x8)
+	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x8d8(0x8)
+	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x8e0(0x8)
 };
 
 

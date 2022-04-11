@@ -78,6 +78,12 @@ MeshMemoryConstraintCategory_Crate_GoodsOneHanded_C:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_HangingTrinket_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
 MeshMemoryConstraintCategory_Pouch_C:
   Attributes: []
   ClassSize: '0x0'
@@ -85,6 +91,12 @@ MeshMemoryConstraintCategory_Pouch_C:
   InheritedSize: '0x28'
   Super: MeshMemoryConstraintCategory
 MeshMemoryConstraintCategory_Scroll_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_StandingTrinket_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'

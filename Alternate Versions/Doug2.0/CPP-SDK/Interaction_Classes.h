@@ -36,7 +36,7 @@ public:
 class CharacterInteractionComponent: public BoxComponent
 {
 public:
-	Class InteractableArea*                                      CurrentOptimalInteractable;                        // 0x5e0(0x8)
+	Class InteractableArea*                                      CurrentOptimalInteractable;                        // 0x5f0(0x8)
 };
 
 

@@ -970,8 +970,8 @@
   },
   "GeyserItemSpawnComponent": {
     "Super": "ItemSpawnComponent",
-    "FullSize": "0x450",
-    "InheritedSize": "0x430",
+    "FullSize": "0x460",
+    "InheritedSize": "0x440",
     "ClassSize": "0x20",
     "Attributes": []
   },

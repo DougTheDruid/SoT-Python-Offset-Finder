@@ -28,6 +28,13 @@ public:
 };
 
 
+// Size 0x0
+class DataAsset: public Object
+{
+public:
+};
+
+
 // Size 0x3a8
 class Actor: public Object
 {
@@ -99,48 +106,41 @@ public:
 
 
 // Size 0x0
-class DataAsset: public Object
-{
-public:
-};
-
-
-// Size 0x0
 class BlueprintFunctionLibrary: public Object
 {
 public:
 };
 
 
-// Size 0x208
+// Size 0x218
 class SceneComponent: public ActorComponent
 {
 public:
 	Class SceneComponent*                                        AttachParent;                                      // 0xc8(0x8)
 	TArray<class AttachChildren*>                                AttachChildren;                                    // 0xd0(0x10)
-	struct FName                                                 AttachSocketName;                                  // 0xe0(0x8)
-	bool                                                         bRequiresCustomLocation;                           // 0xe8(0x1)
-	bool                                                         bAbsoluteLocation;                                 // 0xe8(0x1)
-	bool                                                         bAbsoluteTranslation;                              // 0xe8(0x1)
-	bool                                                         bAbsoluteRotation;                                 // 0xe8(0x1)
-	bool                                                         bAbsoluteScale;                                    // 0xe8(0x1)
-	bool                                                         bVisible;                                          // 0xe8(0x1)
-	bool                                                         bHiddenInGame;                                     // 0xe8(0x1)
-	bool                                                         bShouldUpdatePhysicsVolume;                        // 0xe8(0x1)
-	bool                                                         bBoundsChangeTriggersStreamingDataRebuild;         // 0xe9(0x1)
-	bool                                                         bUseAttachParentBound;                             // 0xe9(0x1)
-	bool                                                         bComponentIsUnionOfChildren;                       // 0xe9(0x1)
-	bool                                                         bJitterReduction;                                  // 0xe9(0x1)
-	bool                                                         CacheRootVelocity;                                 // 0xe9(0x1)
-	bool                                                         bWorldToComponentUpdated;                          // 0xe9(0x1)
-	Struct Vector                                                RelativeScale3D;                                   // 0x11c(0xc)
-	Struct Vector                                                RelativeLocation;                                  // 0x128(0xc)
-	Struct Rotator                                               RelativeRotation;                                  // 0x134(0xc)
-	byte                                                         Mobility;                                          // 0x220(0x1)
-	byte                                                         DetailMode;                                        // 0x221(0x1)
-	Struct Vector                                                ComponentVelocity;                                 // 0x22c(0xc)
-	TArray<Struct FName>                                         SocketVelocitiesToCache;                           // 0x258(0x10)
-	TArray<class MovedActors*>                                   MovedActors;                                       // 0x268(0x10)
+	bool                                                         bRequiresCustomLocation;                           // 0xe0(0x1)
+	struct FName                                                 AttachSocketName;                                  // 0xe4(0x8)
+	bool                                                         bAbsoluteLocation;                                 // 0xec(0x1)
+	bool                                                         bAbsoluteRotation;                                 // 0xec(0x1)
+	bool                                                         bAbsoluteScale;                                    // 0xec(0x1)
+	bool                                                         bAbsoluteTranslation;                              // 0xec(0x1)
+	bool                                                         bVisible;                                          // 0xec(0x1)
+	bool                                                         bHiddenInGame;                                     // 0xec(0x1)
+	bool                                                         bShouldUpdatePhysicsVolume;                        // 0xec(0x1)
+	bool                                                         bBoundsChangeTriggersStreamingDataRebuild;         // 0xec(0x1)
+	bool                                                         bUseAttachParentBound;                             // 0xed(0x1)
+	bool                                                         bComponentIsUnionOfChildren;                       // 0xed(0x1)
+	bool                                                         bJitterReduction;                                  // 0xed(0x1)
+	bool                                                         CacheRootVelocity;                                 // 0xed(0x1)
+	bool                                                         bWorldToComponentUpdated;                          // 0xed(0x1)
+	Struct Vector                                                RelativeScale3D;                                   // 0x104(0xc)
+	Struct Vector                                                RelativeLocation;                                  // 0x12c(0xc)
+	Struct Rotator                                               RelativeRotation;                                  // 0x138(0xc)
+	byte                                                         Mobility;                                          // 0x230(0x1)
+	byte                                                         DetailMode;                                        // 0x231(0x1)
+	Struct Vector                                                ComponentVelocity;                                 // 0x23c(0xc)
+	TArray<Struct FName>                                         SocketVelocitiesToCache;                           // 0x268(0x10)
+	TArray<class MovedActors*>                                   MovedActors;                                       // 0x278(0x10)
 };
 
 
@@ -252,18 +252,18 @@ public:
 class CameraComponent: public SceneComponent
 {
 public:
-	float                                                        FieldOfView;                                       // 0x2d0(0x4)
-	float                                                        OrthoWidth;                                        // 0x2d4(0x4)
-	float                                                        OrthoNearClipPlane;                                // 0x2d8(0x4)
-	float                                                        OrthoFarClipPlane;                                 // 0x2dc(0x4)
-	float                                                        AspectRatio;                                       // 0x2e0(0x4)
-	bool                                                         bConstrainAspectRatio;                             // 0x2e4(0x1)
-	bool                                                         bUseFieldOfViewForLOD;                             // 0x2e4(0x1)
-	bool                                                         bUsePawnControlRotation;                           // 0x2e4(0x1)
-	byte                                                         ProjectionMode;                                    // 0x2e8(0x1)
-	float                                                        PostProcessBlendWeight;                            // 0x2ec(0x4)
-	Struct PostProcessSettings                                   PostProcessSettings;                               // 0x2f0(0x540)
-	bool                                                         bUseControllerViewRotation;                        // 0x830(0x1)
+	float                                                        FieldOfView;                                       // 0x2e0(0x4)
+	float                                                        OrthoWidth;                                        // 0x2e4(0x4)
+	float                                                        OrthoNearClipPlane;                                // 0x2e8(0x4)
+	float                                                        OrthoFarClipPlane;                                 // 0x2ec(0x4)
+	float                                                        AspectRatio;                                       // 0x2f0(0x4)
+	bool                                                         bConstrainAspectRatio;                             // 0x2f4(0x1)
+	bool                                                         bUseFieldOfViewForLOD;                             // 0x2f4(0x1)
+	bool                                                         bUsePawnControlRotation;                           // 0x2f4(0x1)
+	byte                                                         ProjectionMode;                                    // 0x2f8(0x1)
+	float                                                        PostProcessBlendWeight;                            // 0x2fc(0x4)
+	Struct PostProcessSettings                                   PostProcessSettings;                               // 0x300(0x540)
+	bool                                                         bUseControllerViewRotation;                        // 0x840(0x1)
 };
 
 
@@ -726,95 +726,95 @@ public:
 class PrimitiveComponent: public SceneComponent
 {
 public:
-	float                                                        MinDrawDistance;                                   // 0x2d8(0x4)
-	float                                                        LDMaxDrawDistance;                                 // 0x2e0(0x4)
-	float                                                        CachedMaxDrawDistance;                             // 0x2e4(0x4)
-	byte                                                         DepthPriorityGroup;                                // 0x2e8(0x1)
-	byte                                                         ViewOwnerDepthPriorityGroup;                       // 0x2e9(0x1)
-	bool                                                         bAlwaysCreatePhysicsState;                         // 0x2ec(0x1)
-	bool                                                         bGenerateOverlapEvents;                            // 0x2ec(0x1)
-	bool                                                         bMultiBodyOverlap;                                 // 0x2ec(0x1)
-	bool                                                         bCheckAsyncSceneOnMove;                            // 0x2ec(0x1)
-	bool                                                         bTraceComplexOnMove;                               // 0x2ec(0x1)
-	bool                                                         bReturnMaterialOnMove;                             // 0x2ec(0x1)
-	bool                                                         bUseViewOwnerDepthPriorityGroup;                   // 0x2ec(0x1)
-	bool                                                         bAllowCullDistanceVolume;                          // 0x2ec(0x1)
-	bool                                                         bHasMotionBlurVelocityMeshes;                      // 0x2ed(0x1)
-	bool                                                         bRenderInMainPass;                                 // 0x2ed(0x1)
-	bool                                                         bRenderInCustomPrePass;                            // 0x2ed(0x1)
-	bool                                                         bReflected;                                        // 0x2ed(0x1)
-	bool                                                         bReflectedOnLowQuality;                            // 0x2ed(0x1)
-	bool                                                         bFFTWaterMask;                                     // 0x2ed(0x1)
-	bool                                                         bVolumeFogMask;                                    // 0x2ed(0x1)
-	bool                                                         bAffectsFlatWater;                                 // 0x2ee(0x1)
-	bool                                                         bGPUParticlesKillPlane;                            // 0x2ee(0x1)
-	bool                                                         bDontCull;                                         // 0x2ee(0x1)
-	bool                                                         bDontSizeOnScreenCull;                             // 0x2ee(0x1)
-	float                                                        OverriddenShadowMinTexelSize;                      // 0x2f0(0x4)
-	bool                                                         bOverrideShadowMinSizeCulling;                     // 0x2f4(0x1)
-	bool                                                         bOverrideShadowCascadesExclusion;                  // 0x2f5(0x1)
-	byte                                                         ExcludedShadowCascades;                            // 0x2f6(0x1)
-	bool                                                         bReceivesDecals;                                   // 0x2f8(0x1)
-	bool                                                         bOwnerNoSee;                                       // 0x2f8(0x1)
-	bool                                                         bOnlyOwnerSee;                                     // 0x2f8(0x1)
-	bool                                                         bTreatAsBackgroundForOcclusion;                    // 0x2f8(0x1)
-	bool                                                         bIsACloud;                                         // 0x2f8(0x1)
-	bool                                                         bUseAsOccluder;                                    // 0x2f8(0x1)
-	bool                                                         bSelectable;                                       // 0x2f8(0x1)
-	bool                                                         bForceMipStreaming;                                // 0x2f8(0x1)
-	bool                                                         bHasPerInstanceHitProxies;                         // 0x2f9(0x1)
-	bool                                                         CastShadow;                                        // 0x2f9(0x1)
-	bool                                                         bAffectDynamicIndirectLighting;                    // 0x2f9(0x1)
-	bool                                                         bUseFarCascadeLPVBiasMultiplier;                   // 0x2f9(0x1)
-	bool                                                         bAffectDistanceFieldLighting;                      // 0x2f9(0x1)
-	bool                                                         bCastDynamicShadow;                                // 0x2f9(0x1)
-	bool                                                         bCastStaticShadow;                                 // 0x2f9(0x1)
-	bool                                                         bCastVolumetricTranslucentShadow;                  // 0x2f9(0x1)
-	bool                                                         bSelfShadowOnly;                                   // 0x2fa(0x1)
-	bool                                                         bCastFarShadow;                                    // 0x2fa(0x1)
-	bool                                                         bCastInsetShadow;                                  // 0x2fa(0x1)
-	bool                                                         bCastCinematicShadow;                              // 0x2fa(0x1)
-	bool                                                         bCastHiddenShadow;                                 // 0x2fa(0x1)
-	bool                                                         bCastShadowAsTwoSided;                             // 0x2fa(0x1)
-	bool                                                         bCastShadowOnLowQuality;                           // 0x2fa(0x1)
-	bool                                                         bLightAsIfStatic;                                  // 0x2fa(0x1)
-	bool                                                         bLightAttachmentsAsGroup;                          // 0x2fb(0x1)
-	byte                                                         IndirectLightingCacheQuality;                      // 0x2fc(0x1)
-	bool                                                         bHasCachedStaticLighting;                          // 0x2fd(0x1)
-	bool                                                         bStaticLightingBuildEnqueued;                      // 0x2fe(0x1)
-	bool                                                         bIgnoreRadialImpulse;                              // 0x300(0x1)
-	bool                                                         bIgnoreRadialForce;                                // 0x300(0x1)
-	bool                                                         AlwaysLoadOnClient;                                // 0x300(0x1)
-	bool                                                         AlwaysLoadOnServer;                                // 0x300(0x1)
-	bool                                                         bUseEditorCompositing;                             // 0x300(0x1)
-	bool                                                         bRenderCustomDepth;                                // 0x300(0x1)
-	bool                                                         bAllowVelocityInMaterial;                          // 0x300(0x1)
-	int                                                          CustomDepthStencilValue;                           // 0x304(0x4)
-	int                                                          TranslucencySortPriority;                          // 0x308(0x4)
-	int                                                          VisibilityId;                                      // 0x30c(0x4)
-	float                                                        LpvBiasMultiplier;                                 // 0x314(0x4)
-	float                                                        FarCascadeLPVBiasMultiplier;                       // 0x318(0x4)
-	float                                                        LpvIntensityMultiplier;                            // 0x31c(0x4)
-	Struct CustomPrimitiveData                                   CustomPrimitiveData;                               // 0x320(0x10)
-	Struct BodyInstance                                          BodyInstance;                                      // 0x330(0x180)
-	bool                                                         bAffectRain;                                       // 0x4b0(0x1)
-	bool                                                         bCanEverAffectNavigation;                          // 0x4b0(0x1)
-	bool                                                         bSkipRenderingInOuterLPVCascades;                  // 0x4b0(0x1)
-	bool                                                         bEnableMergeCollisionComponents;                   // 0x4b0(0x1)
-	bool                                                         bVisibleWhenAboveWaterAndPlayerUnderwater;         // 0x4b0(0x1)
-	bool                                                         bVisibleWhenAboveWaterAndPlayerAbove;              // 0x4b0(0x1)
-	bool                                                         bVisibleWhenUnderwaterAndPlayerAbove;              // 0x4b0(0x1)
-	bool                                                         bVisibleWhenUnderwaterAndPlayerUnderwater;         // 0x4b1(0x1)
-	bool                                                         bCanRenderAboveAndBelowWaterAtSameTime;            // 0x4b1(0x1)
-	float                                                        BoundsScale;                                       // 0x4b8(0x4)
-	float                                                        OcclusionBoundsScale;                              // 0x4bc(0x4)
-	float                                                        LastRenderTime;                                    // 0x4c0(0x4)
-	bool                                                         bGPUVisibility;                                    // 0x4c4(0x1)
-	byte                                                         bHasCustomNavigableGeometry;                       // 0x4c5(0x1)
-	byte                                                         CanCharacterStepUpOn;                              // 0x4c6(0x1)
-	Class PrimitiveComponent*                                    LODParentPrimitive;                                // 0x548(0x8)
-	Struct PrimitiveComponentPostPhysicsTickFunction             PostPhysicsComponentTick;                          // 0x550(0x50)
-	Class PrimitiveComponent*                                    MergedCollisionComponentParent;                    // 0x5a0(0x8)
+	float                                                        MinDrawDistance;                                   // 0x2e8(0x4)
+	float                                                        LDMaxDrawDistance;                                 // 0x2f0(0x4)
+	float                                                        CachedMaxDrawDistance;                             // 0x2f4(0x4)
+	byte                                                         DepthPriorityGroup;                                // 0x2f8(0x1)
+	byte                                                         ViewOwnerDepthPriorityGroup;                       // 0x2f9(0x1)
+	bool                                                         bAlwaysCreatePhysicsState;                         // 0x2fc(0x1)
+	bool                                                         bGenerateOverlapEvents;                            // 0x2fc(0x1)
+	bool                                                         bMultiBodyOverlap;                                 // 0x2fc(0x1)
+	bool                                                         bCheckAsyncSceneOnMove;                            // 0x2fc(0x1)
+	bool                                                         bTraceComplexOnMove;                               // 0x2fc(0x1)
+	bool                                                         bReturnMaterialOnMove;                             // 0x2fc(0x1)
+	bool                                                         bUseViewOwnerDepthPriorityGroup;                   // 0x2fc(0x1)
+	bool                                                         bAllowCullDistanceVolume;                          // 0x2fc(0x1)
+	bool                                                         bHasMotionBlurVelocityMeshes;                      // 0x2fd(0x1)
+	bool                                                         bRenderInMainPass;                                 // 0x2fd(0x1)
+	bool                                                         bRenderInCustomPrePass;                            // 0x2fd(0x1)
+	bool                                                         bReflected;                                        // 0x2fd(0x1)
+	bool                                                         bReflectedOnLowQuality;                            // 0x2fd(0x1)
+	bool                                                         bFFTWaterMask;                                     // 0x2fd(0x1)
+	bool                                                         bVolumeFogMask;                                    // 0x2fd(0x1)
+	bool                                                         bAffectsFlatWater;                                 // 0x2fe(0x1)
+	bool                                                         bGPUParticlesKillPlane;                            // 0x2fe(0x1)
+	bool                                                         bDontCull;                                         // 0x2fe(0x1)
+	bool                                                         bDontSizeOnScreenCull;                             // 0x2fe(0x1)
+	float                                                        OverriddenShadowMinTexelSize;                      // 0x300(0x4)
+	bool                                                         bOverrideShadowMinSizeCulling;                     // 0x304(0x1)
+	bool                                                         bOverrideShadowCascadesExclusion;                  // 0x305(0x1)
+	byte                                                         ExcludedShadowCascades;                            // 0x306(0x1)
+	bool                                                         bReceivesDecals;                                   // 0x308(0x1)
+	bool                                                         bOwnerNoSee;                                       // 0x308(0x1)
+	bool                                                         bOnlyOwnerSee;                                     // 0x308(0x1)
+	bool                                                         bTreatAsBackgroundForOcclusion;                    // 0x308(0x1)
+	bool                                                         bIsACloud;                                         // 0x308(0x1)
+	bool                                                         bUseAsOccluder;                                    // 0x308(0x1)
+	bool                                                         bSelectable;                                       // 0x308(0x1)
+	bool                                                         bForceMipStreaming;                                // 0x308(0x1)
+	bool                                                         bHasPerInstanceHitProxies;                         // 0x309(0x1)
+	bool                                                         CastShadow;                                        // 0x309(0x1)
+	bool                                                         bAffectDynamicIndirectLighting;                    // 0x309(0x1)
+	bool                                                         bUseFarCascadeLPVBiasMultiplier;                   // 0x309(0x1)
+	bool                                                         bAffectDistanceFieldLighting;                      // 0x309(0x1)
+	bool                                                         bCastDynamicShadow;                                // 0x309(0x1)
+	bool                                                         bCastStaticShadow;                                 // 0x309(0x1)
+	bool                                                         bCastVolumetricTranslucentShadow;                  // 0x309(0x1)
+	bool                                                         bSelfShadowOnly;                                   // 0x30a(0x1)
+	bool                                                         bCastFarShadow;                                    // 0x30a(0x1)
+	bool                                                         bCastInsetShadow;                                  // 0x30a(0x1)
+	bool                                                         bCastCinematicShadow;                              // 0x30a(0x1)
+	bool                                                         bCastHiddenShadow;                                 // 0x30a(0x1)
+	bool                                                         bCastShadowAsTwoSided;                             // 0x30a(0x1)
+	bool                                                         bCastShadowOnLowQuality;                           // 0x30a(0x1)
+	bool                                                         bLightAsIfStatic;                                  // 0x30a(0x1)
+	bool                                                         bLightAttachmentsAsGroup;                          // 0x30b(0x1)
+	byte                                                         IndirectLightingCacheQuality;                      // 0x30c(0x1)
+	bool                                                         bHasCachedStaticLighting;                          // 0x30d(0x1)
+	bool                                                         bStaticLightingBuildEnqueued;                      // 0x30e(0x1)
+	bool                                                         bIgnoreRadialImpulse;                              // 0x310(0x1)
+	bool                                                         bIgnoreRadialForce;                                // 0x310(0x1)
+	bool                                                         AlwaysLoadOnClient;                                // 0x310(0x1)
+	bool                                                         AlwaysLoadOnServer;                                // 0x310(0x1)
+	bool                                                         bUseEditorCompositing;                             // 0x310(0x1)
+	bool                                                         bRenderCustomDepth;                                // 0x310(0x1)
+	bool                                                         bAllowVelocityInMaterial;                          // 0x310(0x1)
+	int                                                          CustomDepthStencilValue;                           // 0x314(0x4)
+	int                                                          TranslucencySortPriority;                          // 0x318(0x4)
+	int                                                          VisibilityId;                                      // 0x31c(0x4)
+	float                                                        LpvBiasMultiplier;                                 // 0x324(0x4)
+	float                                                        FarCascadeLPVBiasMultiplier;                       // 0x328(0x4)
+	float                                                        LpvIntensityMultiplier;                            // 0x32c(0x4)
+	Struct CustomPrimitiveData                                   CustomPrimitiveData;                               // 0x330(0x10)
+	Struct BodyInstance                                          BodyInstance;                                      // 0x340(0x180)
+	bool                                                         bAffectRain;                                       // 0x4c0(0x1)
+	bool                                                         bCanEverAffectNavigation;                          // 0x4c0(0x1)
+	bool                                                         bSkipRenderingInOuterLPVCascades;                  // 0x4c0(0x1)
+	bool                                                         bEnableMergeCollisionComponents;                   // 0x4c0(0x1)
+	bool                                                         bVisibleWhenAboveWaterAndPlayerUnderwater;         // 0x4c0(0x1)
+	bool                                                         bVisibleWhenAboveWaterAndPlayerAbove;              // 0x4c0(0x1)
+	bool                                                         bVisibleWhenUnderwaterAndPlayerAbove;              // 0x4c0(0x1)
+	bool                                                         bVisibleWhenUnderwaterAndPlayerUnderwater;         // 0x4c1(0x1)
+	bool                                                         bCanRenderAboveAndBelowWaterAtSameTime;            // 0x4c1(0x1)
+	float                                                        BoundsScale;                                       // 0x4c8(0x4)
+	float                                                        OcclusionBoundsScale;                              // 0x4cc(0x4)
+	float                                                        LastRenderTime;                                    // 0x4d0(0x4)
+	bool                                                         bGPUVisibility;                                    // 0x4d4(0x1)
+	byte                                                         bHasCustomNavigableGeometry;                       // 0x4d5(0x1)
+	byte                                                         CanCharacterStepUpOn;                              // 0x4d6(0x1)
+	Class PrimitiveComponent*                                    LODParentPrimitive;                                // 0x558(0x8)
+	Struct PrimitiveComponentPostPhysicsTickFunction             PostPhysicsComponentTick;                          // 0x560(0x50)
+	Class PrimitiveComponent*                                    MergedCollisionComponentParent;                    // 0x5b0(0x8)
 };
 
 
@@ -1042,12 +1042,12 @@ public:
 class PostProcessComponent: public SceneComponent
 {
 public:
-	Struct PostProcessSettings                                   Settings;                                          // 0x2e0(0x540)
-	float                                                        Priority;                                          // 0x820(0x4)
-	float                                                        BlendRadius;                                       // 0x824(0x4)
-	float                                                        BlendWeight;                                       // 0x828(0x4)
-	bool                                                         bEnabled;                                          // 0x82c(0x1)
-	bool                                                         bUnbound;                                          // 0x82c(0x1)
+	Struct PostProcessSettings                                   Settings;                                          // 0x2f0(0x540)
+	float                                                        Priority;                                          // 0x830(0x4)
+	float                                                        BlendRadius;                                       // 0x834(0x4)
+	float                                                        BlendWeight;                                       // 0x838(0x4)
+	bool                                                         bEnabled;                                          // 0x83c(0x1)
+	bool                                                         bUnbound;                                          // 0x83c(0x1)
 };
 
 
@@ -1165,11 +1165,11 @@ public:
 class ArrowComponent: public PrimitiveComponent
 {
 public:
-	Struct Color                                                 ArrowColor;                                        // 0x5a8(0x4)
-	float                                                        ArrowSize;                                         // 0x5ac(0x4)
-	bool                                                         bIsScreenSizeScaled;                               // 0x5b0(0x1)
-	float                                                        ScreenSize;                                        // 0x5b4(0x4)
-	bool                                                         bTreatAsASprite;                                   // 0x5b8(0x1)
+	Struct Color                                                 ArrowColor;                                        // 0x5b8(0x4)
+	float                                                        ArrowSize;                                         // 0x5bc(0x4)
+	bool                                                         bIsScreenSizeScaled;                               // 0x5c0(0x1)
+	float                                                        ScreenSize;                                        // 0x5c4(0x4)
+	bool                                                         bTreatAsASprite;                                   // 0x5c8(0x1)
 };
 
 
@@ -1177,7 +1177,7 @@ public:
 class MeshComponent: public PrimitiveComponent
 {
 public:
-	TArray<class OverrideMaterials*>                             OverrideMaterials;                                 // 0x5a8(0x10)
+	TArray<class OverrideMaterials*>                             OverrideMaterials;                                 // 0x5b8(0x10)
 };
 
 
@@ -1185,20 +1185,20 @@ public:
 class StaticMeshComponent: public MeshComponent
 {
 public:
-	int                                                          ForcedLodModel;                                    // 0x5b8(0x4)
-	bool                                                         bOverrideMinLOD;                                   // 0x5bc(0x1)
-	bool                                                         bOverrideNavigationToDefaultObstacle;              // 0x5bd(0x1)
-	int                                                          MinLOD;                                            // 0x5c0(0x4)
-	Class StaticMesh*                                            StaticMesh;                                        // 0x5c8(0x8)
-	bool                                                         bOverrideWireframeColor;                           // 0x5d0(0x1)
-	Struct Color                                                 WireframeColorOverride;                            // 0x5d4(0x4)
-	bool                                                         bIgnoreInstanceForTextureStreaming;                // 0x5d8(0x1)
-	bool                                                         bOverrideLightMapRes;                              // 0x5d8(0x1)
-	int                                                          OverriddenLightMapRes;                             // 0x5dc(0x4)
-	float                                                        StreamingDistanceMultiplier;                       // 0x5e0(0x4)
-	TArray<Struct Guid>                                          IrrelevantLights;                                  // 0x5e8(0x10)
-	TArray<Struct StaticMeshComponentLODInfo>                    LODData;                                           // 0x5f8(0x10)
-	Class MaterialInterface*                                     CustomDepthMaterial;                               // 0x608(0x8)
+	int                                                          ForcedLodModel;                                    // 0x5c8(0x4)
+	bool                                                         bOverrideMinLOD;                                   // 0x5cc(0x1)
+	bool                                                         bOverrideNavigationToDefaultObstacle;              // 0x5cd(0x1)
+	int                                                          MinLOD;                                            // 0x5d0(0x4)
+	Class StaticMesh*                                            StaticMesh;                                        // 0x5d8(0x8)
+	bool                                                         bOverrideWireframeColor;                           // 0x5e0(0x1)
+	Struct Color                                                 WireframeColorOverride;                            // 0x5e4(0x4)
+	bool                                                         bIgnoreInstanceForTextureStreaming;                // 0x5e8(0x1)
+	bool                                                         bOverrideLightMapRes;                              // 0x5e8(0x1)
+	int                                                          OverriddenLightMapRes;                             // 0x5ec(0x4)
+	float                                                        StreamingDistanceMultiplier;                       // 0x5f0(0x4)
+	TArray<Struct Guid>                                          IrrelevantLights;                                  // 0x5f8(0x10)
+	TArray<Struct StaticMeshComponentLODInfo>                    LODData;                                           // 0x608(0x10)
+	Class MaterialInterface*                                     CustomDepthMaterial;                               // 0x618(0x8)
 };
 
 
@@ -1413,30 +1413,30 @@ public:
 class ParticleSystemComponent: public PrimitiveComponent
 {
 public:
-	Class ParticleSystem*                                        Template;                                          // 0x5a8(0x8)
-	TArray<class EmitterMaterials*>                              EmitterMaterials;                                  // 0x5b0(0x10)
-	TArray<class SkelMeshComponents*>                            SkelMeshComponents;                                // 0x5c0(0x10)
-	bool                                                         bResetOnDetach;                                    // 0x5d0(0x1)
-	bool                                                         bUpdateOnDedicatedServer;                          // 0x5d0(0x1)
-	TArray<Struct ParticleSysParam>                              InstanceParameters;                                // 0x5d8(0x10)
-	Struct ParticleSysParam                                      EmitterPointParameter;                             // 0x5e8(0x50)
-	Struct Vector                                                OldPosition;                                       // 0x678(0xc)
-	Struct Vector                                                PartSysVelocity;                                   // 0x684(0xc)
-	Struct Vector                                                CustomInheritedVelocity;                           // 0x6a8(0xc)
-	float                                                        CustomParameterDrivingCurves;                      // 0x6c0(0x4)
-	Struct LinearColor                                           ColourTint;                                        // 0x6c4(0x10)
-	float                                                        WarmUpTime;                                        // 0x6d4(0x4)
-	float                                                        WarmupTickRate;                                    // 0x6d8(0x4)
-	bool                                                         bWarmingUp;                                        // 0x6dc(0x1)
-	float                                                        SecondsBeforeInactive;                             // 0x6f8(0x4)
-	float                                                        MaxTimeBeforeForceUpdateTransform;                 // 0x704(0x4)
-	bool                                                         bOverrideLODMethod;                                // 0x70c(0x1)
-	byte                                                         LODMethod;                                         // 0x710(0x1)
-	bool                                                         bSkipUpdateDynamicDataDuringTick;                  // 0x714(0x1)
-	TArray<Struct MaterialRelevance>                             CachedViewRelevanceFlags;                          // 0x718(0x10)
-	TArray<class ReplayClips*>                                   ReplayClips;                                       // 0x730(0x10)
-	float                                                        CustomTimeDilation;                                // 0x7a0(0x4)
-	bool                                                         bUnbound;                                          // 0x7b8(0x1)
+	Class ParticleSystem*                                        Template;                                          // 0x5b8(0x8)
+	TArray<class EmitterMaterials*>                              EmitterMaterials;                                  // 0x5c0(0x10)
+	TArray<class SkelMeshComponents*>                            SkelMeshComponents;                                // 0x5d0(0x10)
+	bool                                                         bResetOnDetach;                                    // 0x5e0(0x1)
+	bool                                                         bUpdateOnDedicatedServer;                          // 0x5e0(0x1)
+	TArray<Struct ParticleSysParam>                              InstanceParameters;                                // 0x5e8(0x10)
+	Struct ParticleSysParam                                      EmitterPointParameter;                             // 0x5f8(0x50)
+	Struct Vector                                                OldPosition;                                       // 0x688(0xc)
+	Struct Vector                                                PartSysVelocity;                                   // 0x694(0xc)
+	Struct Vector                                                CustomInheritedVelocity;                           // 0x6b8(0xc)
+	float                                                        CustomParameterDrivingCurves;                      // 0x6d0(0x4)
+	Struct LinearColor                                           ColourTint;                                        // 0x6d4(0x10)
+	float                                                        WarmUpTime;                                        // 0x6e4(0x4)
+	float                                                        WarmupTickRate;                                    // 0x6e8(0x4)
+	bool                                                         bWarmingUp;                                        // 0x6ec(0x1)
+	float                                                        SecondsBeforeInactive;                             // 0x708(0x4)
+	float                                                        MaxTimeBeforeForceUpdateTransform;                 // 0x714(0x4)
+	bool                                                         bOverrideLODMethod;                                // 0x71c(0x1)
+	byte                                                         LODMethod;                                         // 0x720(0x1)
+	bool                                                         bSkipUpdateDynamicDataDuringTick;                  // 0x724(0x1)
+	TArray<Struct MaterialRelevance>                             CachedViewRelevanceFlags;                          // 0x728(0x10)
+	TArray<class ReplayClips*>                                   ReplayClips;                                       // 0x740(0x10)
+	float                                                        CustomTimeDilation;                                // 0x7b0(0x4)
+	bool                                                         bUnbound;                                          // 0x7c8(0x1)
 };
 
 
@@ -1444,17 +1444,17 @@ public:
 class SplineComponent: public PrimitiveComponent
 {
 public:
-	Struct InterpCurveVector                                     SplineInfo;                                        // 0x5a8(0x18)
-	Struct InterpCurveQuat                                       SplineRotInfo;                                     // 0x5c0(0x18)
-	Struct InterpCurveVector                                     SplineScaleInfo;                                   // 0x5d8(0x18)
-	Struct InterpCurveFloat                                      SplineReparamTable;                                // 0x5f0(0x18)
-	bool                                                         bAllowSplineEditingPerInstance;                    // 0x608(0x1)
-	int                                                          ReparamStepsPerSegment;                            // 0x60c(0x4)
-	float                                                        Duration;                                          // 0x610(0x4)
-	bool                                                         bStationaryEndpoints;                              // 0x614(0x1)
-	bool                                                         bSplineHasBeenEdited;                              // 0x615(0x1)
-	bool                                                         bClosedLoop;                                       // 0x616(0x1)
-	Struct Vector                                                DefaultUpVector;                                   // 0x618(0xc)
+	Struct InterpCurveVector                                     SplineInfo;                                        // 0x5b8(0x18)
+	Struct InterpCurveQuat                                       SplineRotInfo;                                     // 0x5d0(0x18)
+	Struct InterpCurveVector                                     SplineScaleInfo;                                   // 0x5e8(0x18)
+	Struct InterpCurveFloat                                      SplineReparamTable;                                // 0x600(0x18)
+	bool                                                         bAllowSplineEditingPerInstance;                    // 0x618(0x1)
+	int                                                          ReparamStepsPerSegment;                            // 0x61c(0x4)
+	float                                                        Duration;                                          // 0x620(0x4)
+	bool                                                         bStationaryEndpoints;                              // 0x624(0x1)
+	bool                                                         bSplineHasBeenEdited;                              // 0x625(0x1)
+	bool                                                         bClosedLoop;                                       // 0x626(0x1)
+	Struct Vector                                                DefaultUpVector;                                   // 0x628(0xc)
 };
 
 
@@ -1462,12 +1462,12 @@ public:
 class ShapeComponent: public PrimitiveComponent
 {
 public:
-	Struct Color                                                 ShapeColor;                                        // 0x5a8(0x4)
-	Class BodySetup*                                             ShapeBodySetup;                                    // 0x5b0(0x8)
-	bool                                                         bDrawOnlyIfSelected;                               // 0x5b8(0x1)
-	bool                                                         bShouldCollideWhenPlacing;                         // 0x5b8(0x1)
-	bool                                                         bDynamicObstacle;                                  // 0x5b8(0x1)
-	class                                                        AreaClass;                                         // 0x5c0(0x8)
+	Struct Color                                                 ShapeColor;                                        // 0x5b8(0x4)
+	Class BodySetup*                                             ShapeBodySetup;                                    // 0x5c0(0x8)
+	bool                                                         bDrawOnlyIfSelected;                               // 0x5c8(0x1)
+	bool                                                         bShouldCollideWhenPlacing;                         // 0x5c8(0x1)
+	bool                                                         bDynamicObstacle;                                  // 0x5c8(0x1)
+	class                                                        AreaClass;                                         // 0x5d0(0x8)
 };
 
 
@@ -1475,8 +1475,8 @@ public:
 class CapsuleComponent: public ShapeComponent
 {
 public:
-	float                                                        CapsuleHalfHeight;                                 // 0x5c8(0x4)
-	float                                                        CapsuleRadius;                                     // 0x5cc(0x4)
+	float                                                        CapsuleHalfHeight;                                 // 0x5d8(0x4)
+	float                                                        CapsuleRadius;                                     // 0x5dc(0x4)
 };
 
 
@@ -1509,15 +1509,15 @@ public:
 class InstancedStaticMeshComponent: public StaticMeshComponent
 {
 public:
-	TArray<Struct InstancedStaticMeshInstanceData>               PerInstanceSMData;                                 // 0x610(0x10)
-	int                                                          InstancingRandomSeed;                              // 0x620(0x4)
-	int                                                          InstanceStartCullDistance;                         // 0x624(0x4)
-	int                                                          InstanceEndCullDistance;                           // 0x628(0x4)
-	TArray<Int InstanceReorderTable>                             InstanceReorderTable;                              // 0x630(0x10)
-	TArray<Int RemovedInstances>                                 RemovedInstances;                                  // 0x640(0x10)
-	Class PhysicsSerializer*                                     PhysicsSerializer;                                 // 0x698(0x8)
-	int                                                          NumPendingLightmaps;                               // 0x6a0(0x4)
-	TArray<Struct InstancedStaticMeshMappingInfo>                CachedMappings;                                    // 0x6a8(0x10)
+	TArray<Struct InstancedStaticMeshInstanceData>               PerInstanceSMData;                                 // 0x620(0x10)
+	int                                                          InstancingRandomSeed;                              // 0x630(0x4)
+	int                                                          InstanceStartCullDistance;                         // 0x634(0x4)
+	int                                                          InstanceEndCullDistance;                           // 0x638(0x4)
+	TArray<Int InstanceReorderTable>                             InstanceReorderTable;                              // 0x640(0x10)
+	TArray<Int RemovedInstances>                                 RemovedInstances;                                  // 0x650(0x10)
+	Class PhysicsSerializer*                                     PhysicsSerializer;                                 // 0x6a8(0x8)
+	int                                                          NumPendingLightmaps;                               // 0x6b0(0x4)
+	TArray<Struct InstancedStaticMeshMappingInfo>                CachedMappings;                                    // 0x6b8(0x10)
 };
 
 
@@ -1525,13 +1525,13 @@ public:
 class HierarchicalInstancedStaticMeshComponent: public InstancedStaticMeshComponent
 {
 public:
-	TArray<Int SortedInstances>                                  SortedInstances;                                   // 0x700(0x10)
-	int                                                          NumBuiltInstances;                                 // 0x710(0x4)
-	Struct Box                                                   BuiltInstanceBounds;                               // 0x714(0x1c)
-	Struct Box                                                   UnbuiltInstanceBounds;                             // 0x730(0x1c)
-	TArray<Struct Box>                                           UnbuiltInstanceBoundsList;                         // 0x750(0x10)
-	int                                                          OcclusionLayerNumNodes;                            // 0x760(0x4)
-	bool                                                         bDisableCollision;                                 // 0x766(0x1)
+	TArray<Int SortedInstances>                                  SortedInstances;                                   // 0x710(0x10)
+	int                                                          NumBuiltInstances;                                 // 0x720(0x4)
+	Struct Box                                                   BuiltInstanceBounds;                               // 0x724(0x1c)
+	Struct Box                                                   UnbuiltInstanceBounds;                             // 0x740(0x1c)
+	TArray<Struct Box>                                           UnbuiltInstanceBoundsList;                         // 0x760(0x10)
+	int                                                          OcclusionLayerNumNodes;                            // 0x770(0x4)
+	bool                                                         bDisableCollision;                                 // 0x776(0x1)
 };
 
 
@@ -1804,6 +1804,15 @@ public:
 };
 
 
+// Size 0x20
+class ChildActorComponent: public SceneComponent
+{
+public:
+	class                                                        ChildActorClass;                                   // 0x2e0(0x8)
+	Class Actor*                                                 ChildActor;                                        // 0x2e8(0x8)
+};
+
+
 // Size 0x0
 class TestInterface: public Interface
 {
@@ -1866,7 +1875,7 @@ public:
 };
 
 
-// Size 0x840
+// Size 0x7a0
 class World: public Object
 {
 public:
@@ -1900,8 +1909,8 @@ public:
 	Class Level*                                                 CurrentLevel;                                      // 0x1b0(0x8)
 	Class GameInstance*                                          OwningGameInstance;                                // 0x1c0(0x8)
 	TArray<class ParameterCollectionInstances*>                  ParameterCollectionInstances;                      // 0x1c8(0x10)
-	Class WorldComposition*                                      WorldComposition;                                  // 0x798(0x8)
-	bool                                                         bAreConstraintsDirty;                              // 0x7dd(0x1)
+	Class WorldComposition*                                      WorldComposition;                                  // 0x6f8(0x8)
+	bool                                                         bAreConstraintsDirty;                              // 0x73d(0x1)
 };
 
 
@@ -2454,20 +2463,20 @@ public:
 class LightComponentBase: public SceneComponent
 {
 public:
-	Struct Guid                                                  LightGuid;                                         // 0x2d0(0x10)
-	float                                                        Brightness;                                        // 0x2e0(0x4)
-	float                                                        Intensity;                                         // 0x2e4(0x4)
-	Struct Color                                                 LightColor;                                        // 0x2e8(0x4)
-	bool                                                         bAffectsWorld;                                     // 0x2ec(0x1)
-	bool                                                         CastShadows;                                       // 0x2ec(0x1)
-	bool                                                         CastStaticShadows;                                 // 0x2ec(0x1)
-	bool                                                         CastDynamicShadows;                                // 0x2ec(0x1)
-	bool                                                         bAffectTranslucentLighting;                        // 0x2ec(0x1)
-	bool                                                         bPrecomputedLightingIsValid;                       // 0x2ec(0x1)
-	bool                                                         RainOcclusion;                                     // 0x2ec(0x1)
-	float                                                        IndirectLightingIntensity;                         // 0x2f0(0x4)
-	float                                                        ScaleForTranslucency;                              // 0x2f4(0x4)
-	float                                                        CapForTranslucency;                                // 0x2f8(0x4)
+	Struct Guid                                                  LightGuid;                                         // 0x2e0(0x10)
+	float                                                        Brightness;                                        // 0x2f0(0x4)
+	float                                                        Intensity;                                         // 0x2f4(0x4)
+	Struct Color                                                 LightColor;                                        // 0x2f8(0x4)
+	bool                                                         bAffectsWorld;                                     // 0x2fc(0x1)
+	bool                                                         CastShadows;                                       // 0x2fc(0x1)
+	bool                                                         CastStaticShadows;                                 // 0x2fc(0x1)
+	bool                                                         CastDynamicShadows;                                // 0x2fc(0x1)
+	bool                                                         bAffectTranslucentLighting;                        // 0x2fc(0x1)
+	bool                                                         bPrecomputedLightingIsValid;                       // 0x2fc(0x1)
+	bool                                                         RainOcclusion;                                     // 0x2fc(0x1)
+	float                                                        IndirectLightingIntensity;                         // 0x300(0x4)
+	float                                                        ScaleForTranslucency;                              // 0x304(0x4)
+	float                                                        CapForTranslucency;                                // 0x308(0x4)
 };
 
 
@@ -2475,31 +2484,31 @@ public:
 class LightComponent: public LightComponentBase
 {
 public:
-	float                                                        Temperature;                                       // 0x300(0x4)
-	bool                                                         bUseTemperature;                                   // 0x304(0x1)
-	int                                                          ShadowMapChannel;                                  // 0x308(0x4)
-	float                                                        SourceRadius;                                      // 0x310(0x4)
-	float                                                        MinRoughness;                                      // 0x314(0x4)
-	float                                                        ShadowBias;                                        // 0x318(0x4)
-	float                                                        ShadowSharpen;                                     // 0x31c(0x4)
-	float                                                        ShadowResMaxDynamicDegradation;                    // 0x320(0x4)
-	bool                                                         InverseSquaredFalloff;                             // 0x324(0x1)
-	bool                                                         CastTranslucentShadows;                            // 0x324(0x1)
-	bool                                                         bCastShadowsFromCinematicObjectsOnly;              // 0x324(0x1)
-	bool                                                         bAffectDynamicIndirectLighting;                    // 0x324(0x1)
-	Class MaterialInterface*                                     LightFunctionMaterial;                             // 0x328(0x8)
-	Struct Vector                                                LightFunctionScale;                                // 0x330(0xc)
-	Class TextureLightProfile*                                   IESTexture;                                        // 0x340(0x8)
-	bool                                                         bUseIESBrightness;                                 // 0x348(0x1)
-	float                                                        IESBrightnessScale;                                // 0x34c(0x4)
-	float                                                        LightFunctionFadeDistance;                         // 0x350(0x4)
-	float                                                        DisabledBrightness;                                // 0x354(0x4)
-	bool                                                         bEnableLightShaftBloom;                            // 0x358(0x1)
-	float                                                        BloomScale;                                        // 0x35c(0x4)
-	float                                                        BloomThreshold;                                    // 0x360(0x4)
-	Struct Color                                                 BloomTint;                                         // 0x364(0x4)
-	bool                                                         bUseRayTracedDistanceFieldShadows;                 // 0x368(0x1)
-	float                                                        RayStartOffsetDepthScale;                          // 0x36c(0x4)
+	float                                                        Temperature;                                       // 0x310(0x4)
+	bool                                                         bUseTemperature;                                   // 0x314(0x1)
+	int                                                          ShadowMapChannel;                                  // 0x318(0x4)
+	float                                                        SourceRadius;                                      // 0x320(0x4)
+	float                                                        MinRoughness;                                      // 0x324(0x4)
+	float                                                        ShadowBias;                                        // 0x328(0x4)
+	float                                                        ShadowSharpen;                                     // 0x32c(0x4)
+	float                                                        ShadowResMaxDynamicDegradation;                    // 0x330(0x4)
+	bool                                                         InverseSquaredFalloff;                             // 0x334(0x1)
+	bool                                                         CastTranslucentShadows;                            // 0x334(0x1)
+	bool                                                         bCastShadowsFromCinematicObjectsOnly;              // 0x334(0x1)
+	bool                                                         bAffectDynamicIndirectLighting;                    // 0x334(0x1)
+	Class MaterialInterface*                                     LightFunctionMaterial;                             // 0x338(0x8)
+	Struct Vector                                                LightFunctionScale;                                // 0x340(0xc)
+	Class TextureLightProfile*                                   IESTexture;                                        // 0x350(0x8)
+	bool                                                         bUseIESBrightness;                                 // 0x358(0x1)
+	float                                                        IESBrightnessScale;                                // 0x35c(0x4)
+	float                                                        LightFunctionFadeDistance;                         // 0x360(0x4)
+	float                                                        DisabledBrightness;                                // 0x364(0x4)
+	bool                                                         bEnableLightShaftBloom;                            // 0x368(0x1)
+	float                                                        BloomScale;                                        // 0x36c(0x4)
+	float                                                        BloomThreshold;                                    // 0x370(0x4)
+	Struct Color                                                 BloomTint;                                         // 0x374(0x4)
+	bool                                                         bUseRayTracedDistanceFieldShadows;                 // 0x378(0x1)
+	float                                                        RayStartOffsetDepthScale;                          // 0x37c(0x4)
 };
 
 
@@ -3046,38 +3055,38 @@ public:
 class SkinnedMeshComponent: public MeshComponent
 {
 public:
-	Class SkeletalMesh*                                          SkeletalMesh;                                      // 0x5b8(0x8)
-	Class MaterialInterface*                                     CustomDepthMaterial;                               // 0x608(0x8)
-	bool                                                         bUseBoundsFromMasterPoseComponent;                 // 0x620(0x1)
-	TArray<Struct ActiveVertexAnim>                              ActiveVertexAnims;                                 // 0x628(0x10)
-	Class PhysicsAsset*                                          PhysicsAssetOverride;                              // 0x638(0x8)
-	int                                                          ForcedLodModel;                                    // 0x640(0x4)
-	int                                                          MinLodModel;                                       // 0x644(0x4)
-	int                                                          PredictedLODLevel;                                 // 0x648(0x4)
-	int                                                          OldPredictedLODLevel;                              // 0x64c(0x4)
-	float                                                        MaxDistanceFactor;                                 // 0x650(0x4)
-	TArray<Struct SkelMeshComponentLODInfo>                      LODInfo;                                           // 0x658(0x10)
-	float                                                        StreamingDistanceMultiplier;                       // 0x668(0x4)
-	Struct Color                                                 WireframeColor;                                    // 0x66c(0x4)
-	bool                                                         bForceWireframe;                                   // 0x670(0x1)
-	bool                                                         bDisplayBones;                                     // 0x670(0x1)
-	bool                                                         bDisplayBoneCollisions;                            // 0x670(0x1)
-	bool                                                         bDisableMorphTarget;                               // 0x670(0x1)
-	bool                                                         bHideSkin;                                         // 0x670(0x1)
-	bool                                                         bPerBoneMotionBlur;                                // 0x688(0x1)
-	bool                                                         bComponentUseFixedSkelBounds;                      // 0x688(0x1)
-	bool                                                         bConsiderAllBodiesForBounds;                       // 0x688(0x1)
-	byte                                                         MeshComponentUpdateFlag;                           // 0x68c(0x1)
-	bool                                                         bForceMeshObjectUpdate;                            // 0x690(0x1)
-	bool                                                         bChartDistanceFactor;                              // 0x690(0x1)
-	bool                                                         bCanHighlightSelectedSections;                     // 0x690(0x1)
-	bool                                                         bRecentlyRendered;                                 // 0x690(0x1)
-	float                                                        ProgressiveDrawingFraction;                        // 0x694(0x4)
-	byte                                                         CustomSortAlternateIndexMode;                      // 0x698(0x1)
-	Struct BoxSphereBounds                                       CachedLocalBounds;                                 // 0x6ac(0x1c)
-	bool                                                         bCachedLocalBoundsUpToDate;                        // 0x6c8(0x1)
-	bool                                                         bEnableUpdateRateOptimizations;                    // 0x6c9(0x1)
-	bool                                                         bDisplayDebugUpdateRateOptimizations;              // 0x6ca(0x1)
+	Class SkeletalMesh*                                          SkeletalMesh;                                      // 0x5c8(0x8)
+	Class MaterialInterface*                                     CustomDepthMaterial;                               // 0x618(0x8)
+	bool                                                         bUseBoundsFromMasterPoseComponent;                 // 0x630(0x1)
+	TArray<Struct ActiveVertexAnim>                              ActiveVertexAnims;                                 // 0x638(0x10)
+	Class PhysicsAsset*                                          PhysicsAssetOverride;                              // 0x648(0x8)
+	int                                                          ForcedLodModel;                                    // 0x650(0x4)
+	int                                                          MinLodModel;                                       // 0x654(0x4)
+	int                                                          PredictedLODLevel;                                 // 0x658(0x4)
+	int                                                          OldPredictedLODLevel;                              // 0x65c(0x4)
+	float                                                        MaxDistanceFactor;                                 // 0x660(0x4)
+	TArray<Struct SkelMeshComponentLODInfo>                      LODInfo;                                           // 0x668(0x10)
+	float                                                        StreamingDistanceMultiplier;                       // 0x678(0x4)
+	Struct Color                                                 WireframeColor;                                    // 0x67c(0x4)
+	bool                                                         bForceWireframe;                                   // 0x680(0x1)
+	bool                                                         bDisplayBones;                                     // 0x680(0x1)
+	bool                                                         bDisplayBoneCollisions;                            // 0x680(0x1)
+	bool                                                         bDisableMorphTarget;                               // 0x680(0x1)
+	bool                                                         bHideSkin;                                         // 0x680(0x1)
+	bool                                                         bPerBoneMotionBlur;                                // 0x698(0x1)
+	bool                                                         bComponentUseFixedSkelBounds;                      // 0x698(0x1)
+	bool                                                         bConsiderAllBodiesForBounds;                       // 0x698(0x1)
+	byte                                                         MeshComponentUpdateFlag;                           // 0x69c(0x1)
+	bool                                                         bForceMeshObjectUpdate;                            // 0x6a0(0x1)
+	bool                                                         bChartDistanceFactor;                              // 0x6a0(0x1)
+	bool                                                         bCanHighlightSelectedSections;                     // 0x6a0(0x1)
+	bool                                                         bRecentlyRendered;                                 // 0x6a0(0x1)
+	float                                                        ProgressiveDrawingFraction;                        // 0x6a4(0x4)
+	byte                                                         CustomSortAlternateIndexMode;                      // 0x6a8(0x1)
+	Struct BoxSphereBounds                                       CachedLocalBounds;                                 // 0x6bc(0x1c)
+	bool                                                         bCachedLocalBoundsUpToDate;                        // 0x6d8(0x1)
+	bool                                                         bEnableUpdateRateOptimizations;                    // 0x6d9(0x1)
+	bool                                                         bDisplayDebugUpdateRateOptimizations;              // 0x6da(0x1)
 };
 
 
@@ -3085,12 +3094,12 @@ public:
 class PhysicsConstraintComponent: public SceneComponent
 {
 public:
-	Class Actor*                                                 ConstraintActor1;                                  // 0x2d0(0x8)
-	Struct ConstrainComponentPropName                            ComponentName1;                                    // 0x2d8(0x8)
-	Class Actor*                                                 ConstraintActor2;                                  // 0x2e0(0x8)
-	Struct ConstrainComponentPropName                            ComponentName2;                                    // 0x2e8(0x8)
-	Class PhysicsConstraintTemplate*                             ConstraintSetup;                                   // 0x300(0x8)
-	Struct ConstraintInstance                                    ConstraintInstance;                                // 0x320(0x160)
+	Class Actor*                                                 ConstraintActor1;                                  // 0x2e0(0x8)
+	Struct ConstrainComponentPropName                            ComponentName1;                                    // 0x2e8(0x8)
+	Class Actor*                                                 ConstraintActor2;                                  // 0x2f0(0x8)
+	Struct ConstrainComponentPropName                            ComponentName2;                                    // 0x2f8(0x8)
+	Class PhysicsConstraintTemplate*                             ConstraintSetup;                                   // 0x310(0x8)
+	Struct ConstraintInstance                                    ConstraintInstance;                                // 0x330(0x160)
 };
 
 
@@ -3117,43 +3126,43 @@ public:
 class SkeletalMeshComponent: public SkinnedMeshComponent
 {
 public:
-	byte                                                         AnimationMode;                                     // 0x6f0(0x1)
-	class                                                        AnimBlueprintGeneratedClass;                       // 0x6f8(0x8)
-	Class AnimInstance*                                          AnimScriptInstance;                                // 0x700(0x8)
-	Struct SingleAnimationPlayData                               AnimationData;                                     // 0x708(0x20)
-	TArray<Struct Transform>                                     CachedLocalAtoms;                                  // 0x738(0x10)
-	TArray<Struct Transform>                                     CachedSpaceBases;                                  // 0x748(0x10)
-	float                                                        GlobalAnimRateScale;                               // 0x780(0x4)
-	bool                                                         bHasValidBodies;                                   // 0x784(0x1)
-	byte                                                         KinematicBonesUpdateType;                          // 0x788(0x1)
-	bool                                                         bBlendPhysics;                                     // 0x78c(0x1)
-	bool                                                         bEnablePhysicsOnDedicatedServer;                   // 0x78c(0x1)
-	bool                                                         bUpdateJointsFromAnimation;                        // 0x78c(0x1)
-	bool                                                         bDisableClothSimulation;                           // 0x78c(0x1)
-	bool                                                         bCollideWithEnvironment;                           // 0x78c(0x1)
-	bool                                                         bCollideWithAttachedChildren;                      // 0x78c(0x1)
-	bool                                                         bLocalSpaceSimulation;                             // 0x78c(0x1)
-	bool                                                         bClothMorphTarget;                                 // 0x78c(0x1)
-	bool                                                         bResetAfterTeleport;                               // 0x78d(0x1)
-	float                                                        TeleportDistanceThreshold;                         // 0x790(0x4)
-	float                                                        TeleportRotationThreshold;                         // 0x794(0x4)
-	float                                                        ClothBlendWeight;                                  // 0x798(0x4)
-	Struct Vector                                                RootBoneTranslation;                               // 0x7a0(0xc)
-	bool                                                         bNoSkeletonUpdate;                                 // 0x7ac(0x1)
-	bool                                                         bPauseAnims;                                       // 0x7ac(0x1)
-	bool                                                         bEnablePerPolyCollision;                           // 0x7ac(0x1)
-	Class BodySetup*                                             BodySetup;                                         // 0x7b0(0x8)
-	bool                                                         bAutonomousTickPose;                               // 0x7b8(0x1)
-	bool                                                         bForceRefpose;                                     // 0x7b8(0x1)
-	bool                                                         bOldForceRefPose;                                  // 0x7b8(0x1)
-	bool                                                         bShowPrePhysBones;                                 // 0x7b8(0x1)
-	bool                                                         bRequiredBonesUpToDate;                            // 0x7b8(0x1)
-	bool                                                         bAnimTreeInitialised;                              // 0x7b8(0x1)
-	bool                                                         bEnableLineCheckWithBounds;                        // 0x7b8(0x1)
-	Struct Vector                                                LineCheckBoundsScale;                              // 0x7bc(0xc)
-	int                                                          RagdollAggregateThreshold;                         // 0x7c8(0x4)
-	bool                                                         UseRefPoseToInitialise;                            // 0x7e0(0x1)
-	float                                                        LastPoseTickTime;                                  // 0x9a8(0x4)
+	byte                                                         AnimationMode;                                     // 0x700(0x1)
+	class                                                        AnimBlueprintGeneratedClass;                       // 0x708(0x8)
+	Class AnimInstance*                                          AnimScriptInstance;                                // 0x710(0x8)
+	Struct SingleAnimationPlayData                               AnimationData;                                     // 0x718(0x20)
+	TArray<Struct Transform>                                     CachedLocalAtoms;                                  // 0x748(0x10)
+	TArray<Struct Transform>                                     CachedSpaceBases;                                  // 0x758(0x10)
+	float                                                        GlobalAnimRateScale;                               // 0x790(0x4)
+	bool                                                         bHasValidBodies;                                   // 0x794(0x1)
+	byte                                                         KinematicBonesUpdateType;                          // 0x798(0x1)
+	bool                                                         bBlendPhysics;                                     // 0x79c(0x1)
+	bool                                                         bEnablePhysicsOnDedicatedServer;                   // 0x79c(0x1)
+	bool                                                         bUpdateJointsFromAnimation;                        // 0x79c(0x1)
+	bool                                                         bDisableClothSimulation;                           // 0x79c(0x1)
+	bool                                                         bCollideWithEnvironment;                           // 0x79c(0x1)
+	bool                                                         bCollideWithAttachedChildren;                      // 0x79c(0x1)
+	bool                                                         bLocalSpaceSimulation;                             // 0x79c(0x1)
+	bool                                                         bClothMorphTarget;                                 // 0x79c(0x1)
+	bool                                                         bResetAfterTeleport;                               // 0x79d(0x1)
+	float                                                        TeleportDistanceThreshold;                         // 0x7a0(0x4)
+	float                                                        TeleportRotationThreshold;                         // 0x7a4(0x4)
+	float                                                        ClothBlendWeight;                                  // 0x7a8(0x4)
+	Struct Vector                                                RootBoneTranslation;                               // 0x7b0(0xc)
+	bool                                                         bNoSkeletonUpdate;                                 // 0x7bc(0x1)
+	bool                                                         bPauseAnims;                                       // 0x7bc(0x1)
+	bool                                                         bEnablePerPolyCollision;                           // 0x7bc(0x1)
+	Class BodySetup*                                             BodySetup;                                         // 0x7c0(0x8)
+	bool                                                         bAutonomousTickPose;                               // 0x7c8(0x1)
+	bool                                                         bForceRefpose;                                     // 0x7c8(0x1)
+	bool                                                         bOldForceRefPose;                                  // 0x7c8(0x1)
+	bool                                                         bShowPrePhysBones;                                 // 0x7c8(0x1)
+	bool                                                         bRequiredBonesUpToDate;                            // 0x7c8(0x1)
+	bool                                                         bAnimTreeInitialised;                              // 0x7c8(0x1)
+	bool                                                         bEnableLineCheckWithBounds;                        // 0x7c8(0x1)
+	Struct Vector                                                LineCheckBoundsScale;                              // 0x7cc(0xc)
+	int                                                          RagdollAggregateThreshold;                         // 0x7d8(0x4)
+	bool                                                         UseRefPoseToInitialise;                            // 0x7f0(0x1)
+	float                                                        LastPoseTickTime;                                  // 0x9b8(0x4)
 };
 
 
@@ -3545,23 +3554,23 @@ public:
 class AtmosphericFogComponent: public SceneComponent
 {
 public:
-	float                                                        SunMultiplier;                                     // 0x2d0(0x4)
-	float                                                        FogMultiplier;                                     // 0x2d4(0x4)
-	float                                                        DensityMultiplier;                                 // 0x2d8(0x4)
-	float                                                        DensityOffset;                                     // 0x2dc(0x4)
-	float                                                        DistanceScale;                                     // 0x2e0(0x4)
-	float                                                        AltitudeScale;                                     // 0x2e4(0x4)
-	float                                                        DistanceOffset;                                    // 0x2e8(0x4)
-	float                                                        GroundOffset;                                      // 0x2ec(0x4)
-	float                                                        StartDistance;                                     // 0x2f0(0x4)
-	float                                                        SunDiscScale;                                      // 0x2f4(0x4)
-	float                                                        DefaultBrightness;                                 // 0x2f8(0x4)
-	Struct Color                                                 DefaultLightColor;                                 // 0x2fc(0x4)
-	bool                                                         bDisableSunDisk;                                   // 0x300(0x1)
-	bool                                                         bDisableGroundScattering;                          // 0x300(0x1)
-	Struct AtmospherePrecomputeParameters                        PrecomputeParams;                                  // 0x304(0x2c)
-	Class Texture2D*                                             TransmittanceTexture;                              // 0x330(0x8)
-	Class Texture2D*                                             IrradianceTexture;                                 // 0x338(0x8)
+	float                                                        SunMultiplier;                                     // 0x2e0(0x4)
+	float                                                        FogMultiplier;                                     // 0x2e4(0x4)
+	float                                                        DensityMultiplier;                                 // 0x2e8(0x4)
+	float                                                        DensityOffset;                                     // 0x2ec(0x4)
+	float                                                        DistanceScale;                                     // 0x2f0(0x4)
+	float                                                        AltitudeScale;                                     // 0x2f4(0x4)
+	float                                                        DistanceOffset;                                    // 0x2f8(0x4)
+	float                                                        GroundOffset;                                      // 0x2fc(0x4)
+	float                                                        StartDistance;                                     // 0x300(0x4)
+	float                                                        SunDiscScale;                                      // 0x304(0x4)
+	float                                                        DefaultBrightness;                                 // 0x308(0x4)
+	Struct Color                                                 DefaultLightColor;                                 // 0x30c(0x4)
+	bool                                                         bDisableSunDisk;                                   // 0x310(0x1)
+	bool                                                         bDisableGroundScattering;                          // 0x310(0x1)
+	Struct AtmospherePrecomputeParameters                        PrecomputeParams;                                  // 0x314(0x2c)
+	Class Texture2D*                                             TransmittanceTexture;                              // 0x340(0x8)
+	Class Texture2D*                                             IrradianceTexture;                                 // 0x348(0x8)
 };
 
 
@@ -3577,24 +3586,24 @@ public:
 class AudioComponent: public SceneComponent
 {
 public:
-	Class SoundBase*                                             Sound;                                             // 0x2d0(0x8)
-	TArray<Struct AudioComponentParam>                           InstanceParameters;                                // 0x2d8(0x10)
-	Class SoundClass*                                            SoundClassOverride;                                // 0x2e8(0x8)
-	bool                                                         bAutoDestroy;                                      // 0x2f0(0x1)
-	bool                                                         bStopWhenOwnerDestroyed;                           // 0x2f0(0x1)
-	bool                                                         bShouldRemainActiveIfDropped;                      // 0x2f0(0x1)
-	bool                                                         bAllowSpatialization;                              // 0x2f0(0x1)
-	bool                                                         bOverrideAttenuation;                              // 0x2f0(0x1)
-	bool                                                         bIsUISound;                                        // 0x2f0(0x1)
-	float                                                        PitchModulationMin;                                // 0x2f4(0x4)
-	float                                                        PitchModulationMax;                                // 0x2f8(0x4)
-	float                                                        VolumeModulationMin;                               // 0x2fc(0x4)
-	float                                                        VolumeModulationMax;                               // 0x300(0x4)
-	float                                                        VolumeMultiplier;                                  // 0x304(0x4)
-	float                                                        PitchMultiplier;                                   // 0x308(0x4)
-	float                                                        HighFrequencyGainMultiplier;                       // 0x30c(0x4)
-	Class SoundAttenuation*                                      AttenuationSettings;                               // 0x310(0x8)
-	Struct AttenuationSettings                                   AttenuationOverrides;                              // 0x318(0xc0)
+	Class SoundBase*                                             Sound;                                             // 0x2e0(0x8)
+	TArray<Struct AudioComponentParam>                           InstanceParameters;                                // 0x2e8(0x10)
+	Class SoundClass*                                            SoundClassOverride;                                // 0x2f8(0x8)
+	bool                                                         bAutoDestroy;                                      // 0x300(0x1)
+	bool                                                         bStopWhenOwnerDestroyed;                           // 0x300(0x1)
+	bool                                                         bShouldRemainActiveIfDropped;                      // 0x300(0x1)
+	bool                                                         bAllowSpatialization;                              // 0x300(0x1)
+	bool                                                         bOverrideAttenuation;                              // 0x300(0x1)
+	bool                                                         bIsUISound;                                        // 0x300(0x1)
+	float                                                        PitchModulationMin;                                // 0x304(0x4)
+	float                                                        PitchModulationMax;                                // 0x308(0x4)
+	float                                                        VolumeModulationMin;                               // 0x30c(0x4)
+	float                                                        VolumeModulationMax;                               // 0x310(0x4)
+	float                                                        VolumeMultiplier;                                  // 0x314(0x4)
+	float                                                        PitchMultiplier;                                   // 0x318(0x4)
+	float                                                        HighFrequencyGainMultiplier;                       // 0x31c(0x4)
+	Class SoundAttenuation*                                      AttenuationSettings;                               // 0x320(0x8)
+	Struct AttenuationSettings                                   AttenuationOverrides;                              // 0x328(0xc0)
 };
 
 
@@ -3609,18 +3618,9 @@ public:
 class CalmWaterComponent: public SceneComponent
 {
 public:
-	float                                                        Radius;                                            // 0x2d0(0x4)
-	float                                                        RadiusPercentageToStartLerp;                       // 0x2d4(0x4)
-	float                                                        DampeningFactor;                                   // 0x2d8(0x4)
-};
-
-
-// Size 0x20
-class ChildActorComponent: public SceneComponent
-{
-public:
-	class                                                        ChildActorClass;                                   // 0x2d0(0x8)
-	Class Actor*                                                 ChildActor;                                        // 0x2d8(0x8)
+	float                                                        Radius;                                            // 0x2e0(0x4)
+	float                                                        RadiusPercentageToStartLerp;                       // 0x2e4(0x4)
+	float                                                        DampeningFactor;                                   // 0x2e8(0x4)
 };
 
 
@@ -3628,7 +3628,7 @@ public:
 class EditorOnlyChildActorComponent: public ChildActorComponent
 {
 public:
-	class                                                        CachedChildActorClass;                             // 0x2f0(0x8)
+	class                                                        CachedChildActorClass;                             // 0x300(0x8)
 };
 
 
@@ -3636,10 +3636,10 @@ public:
 class DecalComponent: public SceneComponent
 {
 public:
-	Class MaterialInterface*                                     DecalMaterial;                                     // 0x2d0(0x8)
-	int                                                          SortOrder;                                         // 0x2d8(0x4)
-	float                                                        FadeScreenSize;                                    // 0x2dc(0x4)
-	Class MaterialInstanceDynamic*                               MaterialInstanceDynamic;                           // 0x2e0(0x8)
+	Class MaterialInterface*                                     DecalMaterial;                                     // 0x2e0(0x8)
+	int                                                          SortOrder;                                         // 0x2e8(0x4)
+	float                                                        FadeScreenSize;                                    // 0x2ec(0x4)
+	Class MaterialInstanceDynamic*                               MaterialInstanceDynamic;                           // 0x2f0(0x8)
 };
 
 
@@ -3647,21 +3647,21 @@ public:
 class ExponentialHeightFogComponent: public SceneComponent
 {
 public:
-	float                                                        FogDensity;                                        // 0x2d0(0x4)
-	Struct LinearColor                                           FogInscatteringColor;                              // 0x2d4(0x10)
-	Struct LinearColor                                           FarFogInscatteringColor;                           // 0x2e4(0x10)
-	float                                                        DirectionalInscatteringExponent;                   // 0x2f4(0x4)
-	float                                                        DirectionalInscatteringStartDistance;              // 0x2f8(0x4)
-	float                                                        StartScaleDirectionalInscattering;                 // 0x2fc(0x4)
-	float                                                        FarScaleDirectionalInscattering;                   // 0x300(0x4)
-	Struct LinearColor                                           DirectionalInscatteringColor;                      // 0x304(0x10)
-	float                                                        FogHeightFalloff;                                  // 0x314(0x4)
-	float                                                        FogMaxOpacity;                                     // 0x318(0x4)
-	float                                                        StartDistance;                                     // 0x31c(0x4)
-	float                                                        FarDistance;                                       // 0x320(0x4)
-	float                                                        StartScale;                                        // 0x324(0x4)
-	float                                                        FarScale;                                          // 0x328(0x4)
-	bool                                                         bIsUnderwater;                                     // 0x32c(0x1)
+	float                                                        FogDensity;                                        // 0x2e0(0x4)
+	Struct LinearColor                                           FogInscatteringColor;                              // 0x2e4(0x10)
+	Struct LinearColor                                           FarFogInscatteringColor;                           // 0x2f4(0x10)
+	float                                                        DirectionalInscatteringExponent;                   // 0x304(0x4)
+	float                                                        DirectionalInscatteringStartDistance;              // 0x308(0x4)
+	float                                                        StartScaleDirectionalInscattering;                 // 0x30c(0x4)
+	float                                                        FarScaleDirectionalInscattering;                   // 0x310(0x4)
+	Struct LinearColor                                           DirectionalInscatteringColor;                      // 0x314(0x10)
+	float                                                        FogHeightFalloff;                                  // 0x324(0x4)
+	float                                                        FogMaxOpacity;                                     // 0x328(0x4)
+	float                                                        StartDistance;                                     // 0x32c(0x4)
+	float                                                        FarDistance;                                       // 0x330(0x4)
+	float                                                        StartScale;                                        // 0x334(0x4)
+	float                                                        FarScale;                                          // 0x338(0x4)
+	bool                                                         bIsUnderwater;                                     // 0x33c(0x1)
 };
 
 
@@ -3669,45 +3669,45 @@ public:
 class FogVolumeComponent: public SceneComponent
 {
 public:
-	Struct LinearColor                                           Color;                                             // 0x2d0(0x10)
-	float                                                        SceneFogSaturation;                                // 0x2e0(0x4)
-	float                                                        Density;                                           // 0x2e4(0x4)
-	float                                                        HeightFogFalloff;                                  // 0x2e8(0x4)
-	float                                                        DistanceFalloffPower;                              // 0x2ec(0x4)
-	float                                                        ShadowIntensity;                                   // 0x2f0(0x4)
-	float                                                        ScaleOnTranslucency;                               // 0x2f4(0x4)
-	Struct Vector                                                FogVelocity;                                       // 0x2f8(0xc)
-	Struct Vector                                                NoisePrimaryScale;                                 // 0x304(0xc)
-	Struct Vector                                                NoiseSecondaryScale;                               // 0x310(0xc)
-	float                                                        NoiseBlend;                                        // 0x31c(0x4)
-	Class Texture*                                               VolumeTexture;                                     // 0x320(0x8)
-	float                                                        InscatteringIntensity;                             // 0x328(0x4)
-	float                                                        InscatteringPower;                                 // 0x32c(0x4)
-	float                                                        ShadowDistance;                                    // 0x330(0x4)
-	float                                                        ActiveBelowDepth;                                  // 0x334(0x4)
-	bool                                                         bUseSceneInscattering;                             // 0x338(0x1)
-	bool                                                         bUnderwater;                                       // 0x33c(0x1)
-	bool                                                         bScaleWithLighting;                                // 0x33d(0x1)
-	bool                                                         bAdvancedVolumeFog;                                // 0x33e(0x1)
-	bool                                                         UseDensityMapOnTranslucency;                       // 0x33f(0x1)
-	Class Texture*                                               DensityMap;                                        // 0x340(0x8)
-	Struct Vector                                                DensityMapScale;                                   // 0x348(0xc)
-	Struct Vector                                                DensityMapOffset;                                  // 0x354(0xc)
-	Struct Vector                                                DensityMapActiveHemisphereOrigin;                  // 0x360(0xc)
-	Struct Vector                                                DensityMapActiveHemisphereDirection;               // 0x36c(0xc)
-	float                                                        DensityMapActiveHemisphereInnerRadius;             // 0x378(0x4)
-	float                                                        DensityMapActiveHemisphereOuterRadius;             // 0x37c(0x4)
-	float                                                        SelfShadowBrightness;                              // 0x380(0x4)
-	float                                                        SelfShadowFogScale;                                // 0x384(0x4)
-	bool                                                         bMeshFog;                                          // 0x388(0x1)
-	float                                                        MeshFogDensity;                                    // 0x38c(0x4)
-	float                                                        MeshFogShadowDensity;                              // 0x390(0x4)
-	float                                                        MeshFogScatteringDensity;                          // 0x394(0x4)
-	Struct Vector                                                MeshFogNoisePrimaryScale;                          // 0x398(0xc)
-	Struct Vector                                                MeshFogNoiseSecondaryScale;                        // 0x3a4(0xc)
-	float                                                        MeshFogNoiseBlend;                                 // 0x3b0(0x4)
-	Struct Vector                                                MeshFogVelocity;                                   // 0x3b4(0xc)
-	Class Texture*                                               MeshFogVolumeTexture;                              // 0x3c0(0x8)
+	Struct LinearColor                                           Color;                                             // 0x2e0(0x10)
+	float                                                        SceneFogSaturation;                                // 0x2f0(0x4)
+	float                                                        Density;                                           // 0x2f4(0x4)
+	float                                                        HeightFogFalloff;                                  // 0x2f8(0x4)
+	float                                                        DistanceFalloffPower;                              // 0x2fc(0x4)
+	float                                                        ShadowIntensity;                                   // 0x300(0x4)
+	float                                                        ScaleOnTranslucency;                               // 0x304(0x4)
+	Struct Vector                                                FogVelocity;                                       // 0x308(0xc)
+	Struct Vector                                                NoisePrimaryScale;                                 // 0x314(0xc)
+	Struct Vector                                                NoiseSecondaryScale;                               // 0x320(0xc)
+	float                                                        NoiseBlend;                                        // 0x32c(0x4)
+	Class Texture*                                               VolumeTexture;                                     // 0x330(0x8)
+	float                                                        InscatteringIntensity;                             // 0x338(0x4)
+	float                                                        InscatteringPower;                                 // 0x33c(0x4)
+	float                                                        ShadowDistance;                                    // 0x340(0x4)
+	float                                                        ActiveBelowDepth;                                  // 0x344(0x4)
+	bool                                                         bUseSceneInscattering;                             // 0x348(0x1)
+	bool                                                         bUnderwater;                                       // 0x34c(0x1)
+	bool                                                         bScaleWithLighting;                                // 0x34d(0x1)
+	bool                                                         bAdvancedVolumeFog;                                // 0x34e(0x1)
+	bool                                                         UseDensityMapOnTranslucency;                       // 0x34f(0x1)
+	Class Texture*                                               DensityMap;                                        // 0x350(0x8)
+	Struct Vector                                                DensityMapScale;                                   // 0x358(0xc)
+	Struct Vector                                                DensityMapOffset;                                  // 0x364(0xc)
+	Struct Vector                                                DensityMapActiveHemisphereOrigin;                  // 0x370(0xc)
+	Struct Vector                                                DensityMapActiveHemisphereDirection;               // 0x37c(0xc)
+	float                                                        DensityMapActiveHemisphereInnerRadius;             // 0x388(0x4)
+	float                                                        DensityMapActiveHemisphereOuterRadius;             // 0x38c(0x4)
+	float                                                        SelfShadowBrightness;                              // 0x390(0x4)
+	float                                                        SelfShadowFogScale;                                // 0x394(0x4)
+	bool                                                         bMeshFog;                                          // 0x398(0x1)
+	float                                                        MeshFogDensity;                                    // 0x39c(0x4)
+	float                                                        MeshFogShadowDensity;                              // 0x3a0(0x4)
+	float                                                        MeshFogScatteringDensity;                          // 0x3a4(0x4)
+	Struct Vector                                                MeshFogNoisePrimaryScale;                          // 0x3a8(0xc)
+	Struct Vector                                                MeshFogNoiseSecondaryScale;                        // 0x3b4(0xc)
+	float                                                        MeshFogNoiseBlend;                                 // 0x3c0(0x4)
+	Struct Vector                                                MeshFogVelocity;                                   // 0x3c4(0xc)
+	Class Texture*                                               MeshFogVolumeTexture;                              // 0x3d0(0x8)
 };
 
 
@@ -3722,8 +3722,8 @@ public:
 class InstancedNavMeshComponent: public SceneComponent
 {
 public:
-	struct FName                                                 NavMeshName;                                       // 0x2d8(0x8)
-	bool                                                         UseAttachedParentAsPrimitiveBase;                  // 0x2e0(0x1)
+	struct FName                                                 NavMeshName;                                       // 0x2e8(0x8)
+	bool                                                         UseAttachedParentAsPrimitiveBase;                  // 0x2f0(0x1)
 };
 
 
@@ -3731,18 +3731,18 @@ public:
 class AmbientLightSourceComponent: public LightComponent
 {
 public:
-	float                                                        Radius;                                            // 0x458(0x4)
-	float                                                        AmbientIntensity;                                  // 0x45c(0x4)
-	Struct LinearColor                                           Tint;                                              // 0x460(0x10)
-	bool                                                         QuadraticFalloff;                                  // 0x470(0x1)
-	byte                                                         Shape;                                             // 0x474(0x1)
-	byte                                                         SimpleFunctionType;                                // 0x475(0x1)
-	float                                                        ScaleOffset;                                       // 0x478(0x4)
-	float                                                        PulsePhase;                                        // 0x47c(0x4)
-	float                                                        FlickerFrequency;                                  // 0x480(0x4)
-	int                                                          FlickerPerlinRow;                                  // 0x484(0x4)
-	bool                                                         bShadowed;                                         // 0x488(0x1)
-	byte                                                         GroupingPolicy;                                    // 0x489(0x1)
+	float                                                        Radius;                                            // 0x468(0x4)
+	float                                                        AmbientIntensity;                                  // 0x46c(0x4)
+	Struct LinearColor                                           Tint;                                              // 0x470(0x10)
+	bool                                                         QuadraticFalloff;                                  // 0x480(0x1)
+	byte                                                         Shape;                                             // 0x484(0x1)
+	byte                                                         SimpleFunctionType;                                // 0x485(0x1)
+	float                                                        ScaleOffset;                                       // 0x488(0x4)
+	float                                                        PulsePhase;                                        // 0x48c(0x4)
+	float                                                        FlickerFrequency;                                  // 0x490(0x4)
+	int                                                          FlickerPerlinRow;                                  // 0x494(0x4)
+	bool                                                         bShadowed;                                         // 0x498(0x1)
+	byte                                                         GroupingPolicy;                                    // 0x499(0x1)
 };
 
 
@@ -3750,32 +3750,32 @@ public:
 class DirectionalLightComponent: public LightComponent
 {
 public:
-	bool                                                         bEnableLightShaftOcclusion;                        // 0x458(0x1)
-	float                                                        OcclusionMaskDarkness;                             // 0x45c(0x4)
-	float                                                        OcclusionDepthRange;                               // 0x460(0x4)
-	Struct Vector                                                LightShaftOverrideDirection;                       // 0x464(0xc)
-	float                                                        WholeSceneDynamicShadowRadius;                     // 0x470(0x4)
-	float                                                        DynamicShadowDistanceMovableLight;                 // 0x474(0x4)
-	float                                                        DynamicShadowDistanceStationaryLight;              // 0x478(0x4)
-	int                                                          DynamicShadowCascades;                             // 0x47c(0x4)
-	float                                                        CascadeDistributionExponent;                       // 0x480(0x4)
-	float                                                        CascadeTransitionFraction;                         // 0x484(0x4)
-	float                                                        ShadowDistanceFadeoutFraction;                     // 0x488(0x4)
-	float                                                        LastTransitionSizeOverride;                        // 0x48c(0x4)
-	float                                                        CloseCascadeUpdateRateInMs;                        // 0x490(0x4)
-	float                                                        FarCascadesUpdateRateInMs;                         // 0x494(0x4)
-	bool                                                         bUseInsetShadowsForMovableObjects;                 // 0x498(0x1)
-	int                                                          FarShadowCascadeCount;                             // 0x49c(0x4)
-	float                                                        FarShadowDistance;                                 // 0x4a0(0x4)
-	float                                                        NormalOffsetScale;                                 // 0x4a4(0x4)
-	float                                                        CloudsShadowsIntensity;                            // 0x4a8(0x4)
-	float                                                        DistanceFieldShadowDistance;                       // 0x4ac(0x4)
-	float                                                        LightSourceAngle;                                  // 0x4b0(0x4)
-	float                                                        TraceDistance;                                     // 0x4b4(0x4)
-	Struct LightmassDirectionalLightSettings                     LightmassSettings;                                 // 0x4b8(0x10)
-	bool                                                         bCastModulatedShadows;                             // 0x4c8(0x1)
-	Struct Color                                                 ModulatedShadowColor;                              // 0x4cc(0x4)
-	bool                                                         bUsedAsAtmosphereSunLight;                         // 0x4d0(0x1)
+	bool                                                         bEnableLightShaftOcclusion;                        // 0x468(0x1)
+	float                                                        OcclusionMaskDarkness;                             // 0x46c(0x4)
+	float                                                        OcclusionDepthRange;                               // 0x470(0x4)
+	Struct Vector                                                LightShaftOverrideDirection;                       // 0x474(0xc)
+	float                                                        WholeSceneDynamicShadowRadius;                     // 0x480(0x4)
+	float                                                        DynamicShadowDistanceMovableLight;                 // 0x484(0x4)
+	float                                                        DynamicShadowDistanceStationaryLight;              // 0x488(0x4)
+	int                                                          DynamicShadowCascades;                             // 0x48c(0x4)
+	float                                                        CascadeDistributionExponent;                       // 0x490(0x4)
+	float                                                        CascadeTransitionFraction;                         // 0x494(0x4)
+	float                                                        ShadowDistanceFadeoutFraction;                     // 0x498(0x4)
+	float                                                        LastTransitionSizeOverride;                        // 0x49c(0x4)
+	float                                                        CloseCascadeUpdateRateInMs;                        // 0x4a0(0x4)
+	float                                                        FarCascadesUpdateRateInMs;                         // 0x4a4(0x4)
+	bool                                                         bUseInsetShadowsForMovableObjects;                 // 0x4a8(0x1)
+	int                                                          FarShadowCascadeCount;                             // 0x4ac(0x4)
+	float                                                        FarShadowDistance;                                 // 0x4b0(0x4)
+	float                                                        NormalOffsetScale;                                 // 0x4b4(0x4)
+	float                                                        CloudsShadowsIntensity;                            // 0x4b8(0x4)
+	float                                                        DistanceFieldShadowDistance;                       // 0x4bc(0x4)
+	float                                                        LightSourceAngle;                                  // 0x4c0(0x4)
+	float                                                        TraceDistance;                                     // 0x4c4(0x4)
+	Struct LightmassDirectionalLightSettings                     LightmassSettings;                                 // 0x4c8(0x10)
+	bool                                                         bCastModulatedShadows;                             // 0x4d8(0x1)
+	Struct Color                                                 ModulatedShadowColor;                              // 0x4dc(0x4)
+	bool                                                         bUsedAsAtmosphereSunLight;                         // 0x4e0(0x1)
 };
 
 
@@ -3783,20 +3783,20 @@ public:
 class PointLightComponent: public LightComponent
 {
 public:
-	float                                                        Radius;                                            // 0x458(0x4)
-	float                                                        AttenuationRadius;                                 // 0x45c(0x4)
-	bool                                                         bUseInverseSquaredFalloff;                         // 0x460(0x1)
-	float                                                        LightFalloffExponent;                              // 0x464(0x4)
-	float                                                        IntensityScaleForWater;                            // 0x468(0x4)
-	float                                                        MinDistanceToLightAssumed;                         // 0x46c(0x4)
-	float                                                        SourceRadius;                                      // 0x470(0x4)
-	float                                                        SourceLength;                                      // 0x474(0x4)
-	byte                                                         SimpleFunctionType;                                // 0x478(0x1)
-	float                                                        ScaleOffset;                                       // 0x47c(0x4)
-	float                                                        PulsePhase;                                        // 0x480(0x4)
-	float                                                        FlickerFrequency;                                  // 0x484(0x4)
-	int                                                          FlickerPerlinRow;                                  // 0x488(0x4)
-	Struct LightmassPointLightSettings                           LightmassSettings;                                 // 0x48c(0xc)
+	float                                                        Radius;                                            // 0x468(0x4)
+	float                                                        AttenuationRadius;                                 // 0x46c(0x4)
+	bool                                                         bUseInverseSquaredFalloff;                         // 0x470(0x1)
+	float                                                        LightFalloffExponent;                              // 0x474(0x4)
+	float                                                        IntensityScaleForWater;                            // 0x478(0x4)
+	float                                                        MinDistanceToLightAssumed;                         // 0x47c(0x4)
+	float                                                        SourceRadius;                                      // 0x480(0x4)
+	float                                                        SourceLength;                                      // 0x484(0x4)
+	byte                                                         SimpleFunctionType;                                // 0x488(0x1)
+	float                                                        ScaleOffset;                                       // 0x48c(0x4)
+	float                                                        PulsePhase;                                        // 0x490(0x4)
+	float                                                        FlickerFrequency;                                  // 0x494(0x4)
+	int                                                          FlickerPerlinRow;                                  // 0x498(0x4)
+	Struct LightmassPointLightSettings                           LightmassSettings;                                 // 0x49c(0xc)
 };
 
 
@@ -3804,10 +3804,10 @@ public:
 class SpotLightComponent: public PointLightComponent
 {
 public:
-	float                                                        InnerConeAngle;                                    // 0x498(0x4)
-	float                                                        OuterConeAngle;                                    // 0x49c(0x4)
-	float                                                        LightShaftConeAngle;                               // 0x4a0(0x4)
-	float                                                        KickBackRatio;                                     // 0x4a4(0x4)
+	float                                                        InnerConeAngle;                                    // 0x4a8(0x4)
+	float                                                        OuterConeAngle;                                    // 0x4ac(0x4)
+	float                                                        LightShaftConeAngle;                               // 0x4b0(0x4)
+	float                                                        KickBackRatio;                                     // 0x4b4(0x4)
 };
 
 
@@ -3815,16 +3815,16 @@ public:
 class SkyLightComponent: public LightComponentBase
 {
 public:
-	byte                                                         SourceType;                                        // 0x300(0x1)
-	Class TextureCube*                                           Cubemap;                                           // 0x308(0x8)
-	float                                                        SkyDistanceThreshold;                              // 0x310(0x4)
-	bool                                                         bLowerHemisphereIsBlack;                           // 0x314(0x1)
-	float                                                        OcclusionMaxDistance;                              // 0x318(0x4)
-	float                                                        Contrast;                                          // 0x31c(0x4)
-	float                                                        MinOcclusion;                                      // 0x320(0x4)
-	Struct Color                                                 OcclusionTint;                                     // 0x324(0x4)
-	float                                                        ScaleForInteriors;                                 // 0x328(0x4)
-	Class TextureCube*                                           BlendDestinationCubemap;                           // 0x3d8(0x8)
+	byte                                                         SourceType;                                        // 0x310(0x1)
+	Class TextureCube*                                           Cubemap;                                           // 0x318(0x8)
+	float                                                        SkyDistanceThreshold;                              // 0x320(0x4)
+	bool                                                         bLowerHemisphereIsBlack;                           // 0x324(0x1)
+	float                                                        OcclusionMaxDistance;                              // 0x328(0x4)
+	float                                                        Contrast;                                          // 0x32c(0x4)
+	float                                                        MinOcclusion;                                      // 0x330(0x4)
+	Struct Color                                                 OcclusionTint;                                     // 0x334(0x4)
+	float                                                        ScaleForInteriors;                                 // 0x338(0x4)
+	Class TextureCube*                                           BlendDestinationCubemap;                           // 0x3e8(0x8)
 };
 
 
@@ -3832,9 +3832,9 @@ public:
 class NavigationGraphNodeComponent: public SceneComponent
 {
 public:
-	Struct NavGraphNode                                          Node;                                              // 0x2d0(0x18)
-	Class NavigationGraphNodeComponent*                          NextNodeComponent;                                 // 0x2e8(0x8)
-	Class NavigationGraphNodeComponent*                          PrevNodeComponent;                                 // 0x2f0(0x8)
+	Struct NavGraphNode                                          Node;                                              // 0x2e0(0x18)
+	Class NavigationGraphNodeComponent*                          NextNodeComponent;                                 // 0x2f8(0x8)
+	Class NavigationGraphNodeComponent*                          PrevNodeComponent;                                 // 0x300(0x8)
 };
 
 
@@ -3842,13 +3842,13 @@ public:
 class PhysicsSpringComponent: public SceneComponent
 {
 public:
-	float                                                        SpringStiffness;                                   // 0x2d0(0x4)
-	float                                                        SpringDamping;                                     // 0x2d4(0x4)
-	float                                                        SpringLengthAtRest;                                // 0x2d8(0x4)
-	float                                                        SpringRadius;                                      // 0x2dc(0x4)
-	byte                                                         SpringChannel;                                     // 0x2e0(0x1)
-	bool                                                         bIgnoreSelf;                                       // 0x2e1(0x1)
-	float                                                        SpringCompression;                                 // 0x2e4(0x4)
+	float                                                        SpringStiffness;                                   // 0x2e0(0x4)
+	float                                                        SpringDamping;                                     // 0x2e4(0x4)
+	float                                                        SpringLengthAtRest;                                // 0x2e8(0x4)
+	float                                                        SpringRadius;                                      // 0x2ec(0x4)
+	byte                                                         SpringChannel;                                     // 0x2f0(0x1)
+	bool                                                         bIgnoreSelf;                                       // 0x2f1(0x1)
+	float                                                        SpringCompression;                                 // 0x2f4(0x4)
 };
 
 
@@ -3856,7 +3856,7 @@ public:
 class PhysicsThrusterComponent: public SceneComponent
 {
 public:
-	float                                                        ThrustStrength;                                    // 0x2d0(0x4)
+	float                                                        ThrustStrength;                                    // 0x2e0(0x4)
 };
 
 
@@ -3871,8 +3871,8 @@ public:
 class BaseWaterComponent: public PrimitiveComponent
 {
 public:
-	class                                                        WaterId;                                           // 0x5a8(0x8)
-	bool                                                         ActiveInExclusionZone;                             // 0x5b0(0x1)
+	class                                                        WaterId;                                           // 0x5b8(0x8)
+	bool                                                         ActiveInExclusionZone;                             // 0x5c0(0x1)
 };
 
 
@@ -3880,12 +3880,12 @@ public:
 class FFTWaterComponent: public BaseWaterComponent
 {
 public:
-	Struct FFTWaterComponentParams                               WaterParams;                                       // 0x5b8(0x310)
-	Class Model*                                                 Brush;                                             // 0x8c8(0x8)
-	Class BodySetup*                                             BrushBodySetup;                                    // 0x8d0(0x8)
-	Struct Vector                                                PrePivot;                                          // 0x8d8(0xc)
-	Class MaterialInterface*                                     LightFunctionMaterial;                             // 0x968(0x8)
-	Class Material*                                              DefaultLightFunctionMaterial;                      // 0x970(0x8)
+	Struct FFTWaterComponentParams                               WaterParams;                                       // 0x5c8(0x310)
+	Class Model*                                                 Brush;                                             // 0x8d8(0x8)
+	Class BodySetup*                                             BrushBodySetup;                                    // 0x8e0(0x8)
+	Struct Vector                                                PrePivot;                                          // 0x8e8(0xc)
+	Class MaterialInterface*                                     LightFunctionMaterial;                             // 0x978(0x8)
+	Class Material*                                              DefaultLightFunctionMaterial;                      // 0x980(0x8)
 };
 
 
@@ -3893,8 +3893,8 @@ public:
 class FFTWaterExtendedPlaneComponent: public BaseWaterComponent
 {
 public:
-	Struct FFTWaterComponentParams                               WaterParams;                                       // 0x5b8(0x310)
-	Class Material*                                              Material;                                          // 0x8c8(0x8)
+	Struct FFTWaterComponentParams                               WaterParams;                                       // 0x5c8(0x310)
+	Class Material*                                              Material;                                          // 0x8d8(0x8)
 };
 
 
@@ -3902,13 +3902,13 @@ public:
 class BillboardComponent: public PrimitiveComponent
 {
 public:
-	Class Texture2D*                                             Sprite;                                            // 0x5a8(0x8)
-	bool                                                         bIsScreenSizeScaled;                               // 0x5b0(0x1)
-	float                                                        ScreenSize;                                        // 0x5b4(0x4)
-	float                                                        U;                                                 // 0x5b8(0x4)
-	float                                                        UL;                                                // 0x5bc(0x4)
-	float                                                        V;                                                 // 0x5c0(0x4)
-	float                                                        VL;                                                // 0x5c4(0x4)
+	Class Texture2D*                                             Sprite;                                            // 0x5b8(0x8)
+	bool                                                         bIsScreenSizeScaled;                               // 0x5c0(0x1)
+	float                                                        ScreenSize;                                        // 0x5c4(0x4)
+	float                                                        U;                                                 // 0x5c8(0x4)
+	float                                                        UL;                                                // 0x5cc(0x4)
+	float                                                        V;                                                 // 0x5d0(0x4)
+	float                                                        VL;                                                // 0x5d4(0x4)
 };
 
 
@@ -3916,9 +3916,9 @@ public:
 class BrushComponent: public PrimitiveComponent
 {
 public:
-	Class Model*                                                 Brush;                                             // 0x5a8(0x8)
-	Class BodySetup*                                             BrushBodySetup;                                    // 0x5b0(0x8)
-	Struct Vector                                                PrePivot;                                          // 0x5b8(0xc)
+	Class Model*                                                 Brush;                                             // 0x5b8(0x8)
+	Class BodySetup*                                             BrushBodySetup;                                    // 0x5c0(0x8)
+	Struct Vector                                                PrePivot;                                          // 0x5c8(0xc)
 };
 
 
@@ -3926,12 +3926,12 @@ public:
 class DrawFrustumComponent: public PrimitiveComponent
 {
 public:
-	Struct Color                                                 FrustumColor;                                      // 0x5a8(0x4)
-	float                                                        FrustumAngle;                                      // 0x5ac(0x4)
-	float                                                        FrustumAspectRatio;                                // 0x5b0(0x4)
-	float                                                        FrustumStartDist;                                  // 0x5b4(0x4)
-	float                                                        FrustumEndDist;                                    // 0x5b8(0x4)
-	Class Texture*                                               Texture;                                           // 0x5c0(0x8)
+	Struct Color                                                 FrustumColor;                                      // 0x5b8(0x4)
+	float                                                        FrustumAngle;                                      // 0x5bc(0x4)
+	float                                                        FrustumAspectRatio;                                // 0x5c0(0x4)
+	float                                                        FrustumStartDist;                                  // 0x5c4(0x4)
+	float                                                        FrustumEndDist;                                    // 0x5c8(0x4)
+	Class Texture*                                               Texture;                                           // 0x5d0(0x8)
 };
 
 
@@ -3946,7 +3946,7 @@ public:
 class MaterialBillboardComponent: public PrimitiveComponent
 {
 public:
-	TArray<Struct MaterialSpriteElement>                         Elements;                                          // 0x5a8(0x10)
+	TArray<Struct MaterialSpriteElement>                         Elements;                                          // 0x5b8(0x10)
 };
 
 
@@ -3993,7 +3993,7 @@ public:
 class MergedCollisionComponent: public PrimitiveComponent
 {
 public:
-	TArray<Struct MergedCollisionComponentStaticMeshInstanceData> PerInstanceData;                                   // 0x5a8(0x10)
+	TArray<Struct MergedCollisionComponentStaticMeshInstanceData> PerInstanceData;                                   // 0x5b8(0x10)
 };
 
 
@@ -4001,10 +4001,10 @@ public:
 class DestructibleComponent: public SkinnedMeshComponent
 {
 public:
-	bool                                                         bFractureEffectOverride;                           // 0x6e0(0x1)
-	TArray<Struct FractureEffect>                                FractureEffects;                                   // 0x6e8(0x10)
-	bool                                                         bEnableHardSleeping;                               // 0x6f8(0x1)
-	float                                                        LargeChunkThreshold;                               // 0x6fc(0x4)
+	bool                                                         bFractureEffectOverride;                           // 0x6f0(0x1)
+	TArray<Struct FractureEffect>                                FractureEffects;                                   // 0x6f8(0x10)
+	bool                                                         bEnableHardSleeping;                               // 0x708(0x1)
+	float                                                        LargeChunkThreshold;                               // 0x70c(0x4)
 };
 
 
@@ -4026,24 +4026,24 @@ public:
 class FlatWaterMeshComponent: public StaticMeshComponent
 {
 public:
-	int                                                          RandomDropRate;                                    // 0x610(0x4)
-	float                                                        RandomDropSize;                                    // 0x614(0x4)
-	float                                                        RandomDropHeight;                                  // 0x618(0x4)
-	float                                                        RestorationScale;                                  // 0x61c(0x4)
-	float                                                        ForceScale;                                        // 0x620(0x4)
-	float                                                        DampHeight;                                        // 0x624(0x4)
-	float                                                        NormalMapScale;                                    // 0x628(0x4)
-	int                                                          TextureWidth;                                      // 0x62c(0x4)
-	int                                                          TextureHeight;                                     // 0x630(0x4)
-	Class StaticMesh*                                            ClippingHull;                                      // 0x638(0x8)
-	float                                                        MaxSimulationDistance;                             // 0x640(0x4)
-	float                                                        InitialRandomHeight;                               // 0x644(0x4)
-	float                                                        InitialRandomVelocity;                             // 0x648(0x4)
-	Class Texture*                                               Texture;                                           // 0x650(0x8)
-	Class Texture*                                               NormalTexture;                                     // 0x658(0x8)
-	Class TextureRenderTarget2D*                                 WaterMaskTexture;                                  // 0x660(0x8)
-	TArray<class OriginalMaterials*>                             OriginalMaterials;                                 // 0x680(0x10)
-	TArray<Struct FlatWaterMeshTextureOverride>                  TextureOverrides;                                  // 0x690(0x10)
+	int                                                          RandomDropRate;                                    // 0x620(0x4)
+	float                                                        RandomDropSize;                                    // 0x624(0x4)
+	float                                                        RandomDropHeight;                                  // 0x628(0x4)
+	float                                                        RestorationScale;                                  // 0x62c(0x4)
+	float                                                        ForceScale;                                        // 0x630(0x4)
+	float                                                        DampHeight;                                        // 0x634(0x4)
+	float                                                        NormalMapScale;                                    // 0x638(0x4)
+	int                                                          TextureWidth;                                      // 0x63c(0x4)
+	int                                                          TextureHeight;                                     // 0x640(0x4)
+	Class StaticMesh*                                            ClippingHull;                                      // 0x648(0x8)
+	float                                                        MaxSimulationDistance;                             // 0x650(0x4)
+	float                                                        InitialRandomHeight;                               // 0x654(0x4)
+	float                                                        InitialRandomVelocity;                             // 0x658(0x4)
+	Class Texture*                                               Texture;                                           // 0x660(0x8)
+	Class Texture*                                               NormalTexture;                                     // 0x668(0x8)
+	Class TextureRenderTarget2D*                                 WaterMaskTexture;                                  // 0x670(0x8)
+	TArray<class OriginalMaterials*>                             OriginalMaterials;                                 // 0x690(0x10)
+	TArray<Struct FlatWaterMeshTextureOverride>                  TextureOverrides;                                  // 0x6a0(0x10)
 };
 
 
@@ -4051,28 +4051,28 @@ public:
 class InstancedCoverageMeshComponent: public StaticMeshComponent
 {
 public:
-	int                                                          InstanceCount;                                     // 0x618(0x4)
-	int                                                          InstancingRandomSeed;                              // 0x61c(0x4)
-	float                                                        InstancePositionExtrusion;                         // 0x620(0x4)
-	float                                                        InstanceScale;                                     // 0x624(0x4)
-	float                                                        InstanceScaleVariance;                             // 0x628(0x4)
-	Struct Rotator                                               InstanceRotation;                                  // 0x62c(0xc)
-	Struct Rotator                                               InstanceRotationVariance;                          // 0x638(0xc)
-	Struct Vector                                                InstanceAttractionDirection;                       // 0x644(0xc)
-	float                                                        InstanceAttractionIntensity;                       // 0x650(0x4)
-	int                                                          InstanceBaseMeshPlacementLOD;                      // 0x654(0x4)
-	TArray<Struct InstancedCoverageMeshLOD>                      LODs;                                              // 0x658(0x10)
-	float                                                        CompleteCullingDistance;                           // 0x668(0x4)
-	bool                                                         InstanceLODPreserveSilhouette;                     // 0x66c(0x1)
-	float                                                        BackFaceCullingAngle;                              // 0x670(0x4)
-	float                                                        ShadowBackFaceCullingAngle;                        // 0x674(0x4)
-	int                                                          MaxPlacementAttempts;                              // 0x678(0x4)
-	bool                                                         bEvenlySpaced;                                     // 0x67c(0x1)
-	bool                                                         bVertexColourDensity;                              // 0x67d(0x1)
-	bool                                                         bUpdatePlacement;                                  // 0x67e(0x1)
-	TArray<Float RandomNumbers>                                  RandomNumbers;                                     // 0x680(0x10)
-	float                                                        BaseMeshSurfaceArea;                               // 0x690(0x4)
-	Class StaticMesh*                                            CoveredMesh;                                       // 0x698(0x8)
+	int                                                          InstanceCount;                                     // 0x628(0x4)
+	int                                                          InstancingRandomSeed;                              // 0x62c(0x4)
+	float                                                        InstancePositionExtrusion;                         // 0x630(0x4)
+	float                                                        InstanceScale;                                     // 0x634(0x4)
+	float                                                        InstanceScaleVariance;                             // 0x638(0x4)
+	Struct Rotator                                               InstanceRotation;                                  // 0x63c(0xc)
+	Struct Rotator                                               InstanceRotationVariance;                          // 0x648(0xc)
+	Struct Vector                                                InstanceAttractionDirection;                       // 0x654(0xc)
+	float                                                        InstanceAttractionIntensity;                       // 0x660(0x4)
+	int                                                          InstanceBaseMeshPlacementLOD;                      // 0x664(0x4)
+	TArray<Struct InstancedCoverageMeshLOD>                      LODs;                                              // 0x668(0x10)
+	float                                                        CompleteCullingDistance;                           // 0x678(0x4)
+	bool                                                         InstanceLODPreserveSilhouette;                     // 0x67c(0x1)
+	float                                                        BackFaceCullingAngle;                              // 0x680(0x4)
+	float                                                        ShadowBackFaceCullingAngle;                        // 0x684(0x4)
+	int                                                          MaxPlacementAttempts;                              // 0x688(0x4)
+	bool                                                         bEvenlySpaced;                                     // 0x68c(0x1)
+	bool                                                         bVertexColourDensity;                              // 0x68d(0x1)
+	bool                                                         bUpdatePlacement;                                  // 0x68e(0x1)
+	TArray<Float RandomNumbers>                                  RandomNumbers;                                     // 0x690(0x10)
+	float                                                        BaseMeshSurfaceArea;                               // 0x6a0(0x4)
+	Class StaticMesh*                                            CoveredMesh;                                       // 0x6a8(0x8)
 };
 
 
@@ -4080,10 +4080,10 @@ public:
 class MergedStaticMeshComponent: public StaticMeshComponent
 {
 public:
-	bool                                                         bDisplayMergedInEditor;                            // 0x610(0x1)
-	TArray<Float LODScreenSizes>                                 LODScreenSizes;                                    // 0x618(0x10)
-	int                                                          LODForCollision;                                   // 0x628(0x4)
-	bool                                                         bMergeVertexColours;                               // 0x62c(0x1)
+	bool                                                         bDisplayMergedInEditor;                            // 0x620(0x1)
+	TArray<Float LODScreenSizes>                                 LODScreenSizes;                                    // 0x628(0x10)
+	int                                                          LODForCollision;                                   // 0x638(0x4)
+	bool                                                         bMergeVertexColours;                               // 0x63c(0x1)
 };
 
 
@@ -4091,12 +4091,12 @@ public:
 class MobileInstancedStaticMeshComponent: public StaticMeshComponent
 {
 public:
-	int                                                          MaxInstances;                                      // 0x610(0x4)
-	TArray<Struct Transform>                                     InstanceTransforms;                                // 0x620(0x10)
-	TArray<Struct Matrix>                                        InstanceMatrices;                                  // 0x630(0x10)
-	Struct BoxSphereBounds                                       LocalBounds;                                       // 0x640(0x1c)
-	bool                                                         bBoundsBuilt;                                      // 0x65c(0x1)
-	Class PhysicsSerializer*                                     PhysicsSerializer;                                 // 0x660(0x8)
+	int                                                          MaxInstances;                                      // 0x620(0x4)
+	TArray<Struct Transform>                                     InstanceTransforms;                                // 0x630(0x10)
+	TArray<Struct Matrix>                                        InstanceMatrices;                                  // 0x640(0x10)
+	Struct BoxSphereBounds                                       LocalBounds;                                       // 0x650(0x1c)
+	bool                                                         bBoundsBuilt;                                      // 0x66c(0x1)
+	Class PhysicsSerializer*                                     PhysicsSerializer;                                 // 0x670(0x8)
 };
 
 
@@ -4104,16 +4104,16 @@ public:
 class SplineMeshComponent: public StaticMeshComponent
 {
 public:
-	Struct SplineMeshParams                                      SplineParams;                                      // 0x618(0x58)
-	Struct Vector                                                SplineUpDir;                                       // 0x670(0xc)
-	bool                                                         bAllowSplineEditingPerInstance;                    // 0x67c(0x1)
-	bool                                                         bSmoothInterpRollScale;                            // 0x67c(0x1)
-	byte                                                         ForwardAxis;                                       // 0x680(0x1)
-	float                                                        SplineBoundaryMin;                                 // 0x684(0x4)
-	float                                                        SplineBoundaryMax;                                 // 0x688(0x4)
-	Class BodySetup*                                             BodySetup;                                         // 0x690(0x8)
-	Struct Guid                                                  CachedMeshBodySetupGuid;                           // 0x698(0x10)
-	bool                                                         bMeshDirty;                                        // 0x6a8(0x1)
+	Struct SplineMeshParams                                      SplineParams;                                      // 0x628(0x58)
+	Struct Vector                                                SplineUpDir;                                       // 0x680(0xc)
+	bool                                                         bAllowSplineEditingPerInstance;                    // 0x68c(0x1)
+	bool                                                         bSmoothInterpRollScale;                            // 0x68c(0x1)
+	byte                                                         ForwardAxis;                                       // 0x690(0x1)
+	float                                                        SplineBoundaryMin;                                 // 0x694(0x4)
+	float                                                        SplineBoundaryMax;                                 // 0x698(0x4)
+	Class BodySetup*                                             BodySetup;                                         // 0x6a0(0x8)
+	Struct Guid                                                  CachedMeshBodySetupGuid;                           // 0x6a8(0x10)
+	bool                                                         bMeshDirty;                                        // 0x6b8(0x1)
 };
 
 
@@ -4121,7 +4121,7 @@ public:
 class ModelComponent: public PrimitiveComponent
 {
 public:
-	Class BodySetup*                                             ModelBodySetup;                                    // 0x5c0(0x8)
+	Class BodySetup*                                             ModelBodySetup;                                    // 0x5d0(0x8)
 };
 
 
@@ -4150,7 +4150,7 @@ public:
 class BoxComponent: public ShapeComponent
 {
 public:
-	Struct Vector                                                BoxExtent;                                         // 0x5c8(0xc)
+	Struct Vector                                                BoxExtent;                                         // 0x5d8(0xc)
 };
 
 
@@ -4158,7 +4158,7 @@ public:
 class SphereComponent: public ShapeComponent
 {
 public:
-	float                                                        SphereRadius;                                      // 0x5c8(0x4)
+	float                                                        SphereRadius;                                      // 0x5d8(0x4)
 };
 
 
@@ -4180,18 +4180,18 @@ public:
 class TextRenderComponent: public PrimitiveComponent
 {
 public:
-	Struct FText                                                 Text;                                              // 0x5a8(0x38)
-	Class MaterialInterface*                                     TextMaterial;                                      // 0x5e0(0x8)
-	Class Font*                                                  Font;                                              // 0x5e8(0x8)
-	byte                                                         HorizontalAlignment;                               // 0x5f0(0x1)
-	byte                                                         VerticalAlignment;                                 // 0x5f1(0x1)
-	Struct Color                                                 TextRenderColor;                                   // 0x5f4(0x4)
-	float                                                        XScale;                                            // 0x5f8(0x4)
-	float                                                        YScale;                                            // 0x5fc(0x4)
-	float                                                        WorldSize;                                         // 0x600(0x4)
-	float                                                        InvDefaultSize;                                    // 0x604(0x4)
-	float                                                        HorizSpacingAdjust;                                // 0x608(0x4)
-	bool                                                         bAlwaysRenderAsText;                               // 0x60c(0x1)
+	Struct FText                                                 Text;                                              // 0x5b8(0x38)
+	Class MaterialInterface*                                     TextMaterial;                                      // 0x5f0(0x8)
+	Class Font*                                                  Font;                                              // 0x5f8(0x8)
+	byte                                                         HorizontalAlignment;                               // 0x600(0x1)
+	byte                                                         VerticalAlignment;                                 // 0x601(0x1)
+	Struct Color                                                 TextRenderColor;                                   // 0x604(0x4)
+	float                                                        XScale;                                            // 0x608(0x4)
+	float                                                        YScale;                                            // 0x60c(0x4)
+	float                                                        WorldSize;                                         // 0x610(0x4)
+	float                                                        InvDefaultSize;                                    // 0x614(0x4)
+	float                                                        HorizSpacingAdjust;                                // 0x618(0x4)
+	bool                                                         bAlwaysRenderAsText;                               // 0x61c(0x1)
 };
 
 
@@ -4199,10 +4199,10 @@ public:
 class VectorFieldComponent: public PrimitiveComponent
 {
 public:
-	Class VectorField*                                           VectorField;                                       // 0x5a8(0x8)
-	float                                                        Intensity;                                         // 0x5b0(0x4)
-	float                                                        Tightness;                                         // 0x5b4(0x4)
-	bool                                                         bPreviewVectorField;                               // 0x5b8(0x1)
+	Class VectorField*                                           VectorField;                                       // 0x5b8(0x8)
+	float                                                        Intensity;                                         // 0x5c0(0x4)
+	float                                                        Tightness;                                         // 0x5c4(0x4)
+	bool                                                         bPreviewVectorField;                               // 0x5c8(0x1)
 };
 
 
@@ -4210,14 +4210,14 @@ public:
 class RadialForceComponent: public SceneComponent
 {
 public:
-	float                                                        Radius;                                            // 0x2d0(0x4)
-	byte                                                         Falloff;                                           // 0x2d4(0x1)
-	float                                                        ImpulseStrength;                                   // 0x2d8(0x4)
-	bool                                                         bImpulseVelChange;                                 // 0x2dc(0x1)
-	bool                                                         bIgnoreOwningActor;                                // 0x2dc(0x1)
-	float                                                        ForceStrength;                                     // 0x2e0(0x4)
-	float                                                        DestructibleDamage;                                // 0x2e4(0x4)
-	TArray<Byte ObjectTypesToAffect>                             ObjectTypesToAffect;                               // 0x2e8(0x10)
+	float                                                        Radius;                                            // 0x2e0(0x4)
+	byte                                                         Falloff;                                           // 0x2e4(0x1)
+	float                                                        ImpulseStrength;                                   // 0x2e8(0x4)
+	bool                                                         bImpulseVelChange;                                 // 0x2ec(0x1)
+	bool                                                         bIgnoreOwningActor;                                // 0x2ec(0x1)
+	float                                                        ForceStrength;                                     // 0x2f0(0x4)
+	float                                                        DestructibleDamage;                                // 0x2f4(0x4)
+	TArray<Byte ObjectTypesToAffect>                             ObjectTypesToAffect;                               // 0x2f8(0x10)
 };
 
 
@@ -4225,12 +4225,12 @@ public:
 class ReflectionCaptureComponent: public SceneComponent
 {
 public:
-	bool                                                         bLockSettings;                                     // 0x2d0(0x1)
-	float                                                        Brightness;                                        // 0x2d4(0x4)
-	float                                                        ShadowBrightness;                                  // 0x2d8(0x4)
-	float                                                        LPVOcclusionBrightness;                            // 0x2dc(0x4)
-	Struct LinearColor                                           ReflectionTint;                                    // 0x2e0(0x10)
-	Struct Guid                                                  StateId;                                           // 0x2fc(0x10)
+	bool                                                         bLockSettings;                                     // 0x2e0(0x1)
+	float                                                        Brightness;                                        // 0x2e4(0x4)
+	float                                                        ShadowBrightness;                                  // 0x2e8(0x4)
+	float                                                        LPVOcclusionBrightness;                            // 0x2ec(0x4)
+	Struct LinearColor                                           ReflectionTint;                                    // 0x2f0(0x10)
+	Struct Guid                                                  StateId;                                           // 0x30c(0x10)
 };
 
 
@@ -4238,9 +4238,9 @@ public:
 class BoxReflectionCaptureComponent: public ReflectionCaptureComponent
 {
 public:
-	float                                                        BoxTransitionDistance;                             // 0x360(0x4)
-	Class BoxComponent*                                          PreviewInfluenceBox;                               // 0x368(0x8)
-	Class BoxComponent*                                          PreviewCaptureBox;                                 // 0x370(0x8)
+	float                                                        BoxTransitionDistance;                             // 0x370(0x4)
+	Class BoxComponent*                                          PreviewInfluenceBox;                               // 0x378(0x8)
+	Class BoxComponent*                                          PreviewCaptureBox;                                 // 0x380(0x8)
 };
 
 
@@ -4248,9 +4248,9 @@ public:
 class PlaneReflectionCaptureComponent: public ReflectionCaptureComponent
 {
 public:
-	float                                                        InfluenceRadiusScale;                              // 0x360(0x4)
-	Class DrawSphereComponent*                                   PreviewInfluenceRadius;                            // 0x368(0x8)
-	Class BoxComponent*                                          PreviewCaptureBox;                                 // 0x370(0x8)
+	float                                                        InfluenceRadiusScale;                              // 0x370(0x4)
+	Class DrawSphereComponent*                                   PreviewInfluenceRadius;                            // 0x378(0x8)
+	Class BoxComponent*                                          PreviewCaptureBox;                                 // 0x380(0x8)
 };
 
 
@@ -4258,9 +4258,9 @@ public:
 class SphereReflectionCaptureComponent: public ReflectionCaptureComponent
 {
 public:
-	float                                                        InfluenceRadius;                                   // 0x360(0x4)
-	float                                                        CaptureDistanceScale;                              // 0x364(0x4)
-	Class DrawSphereComponent*                                   PreviewInfluenceRadius;                            // 0x368(0x8)
+	float                                                        InfluenceRadius;                                   // 0x370(0x4)
+	float                                                        CaptureDistanceScale;                              // 0x374(0x4)
+	Class DrawSphereComponent*                                   PreviewInfluenceRadius;                            // 0x378(0x8)
 };
 
 
@@ -4268,10 +4268,10 @@ public:
 class SceneCaptureComponent: public SceneComponent
 {
 public:
-	TArray<Weakclass HiddenComponents>                           HiddenComponents;                                  // 0x2d0(0x10)
-	bool                                                         bCaptureEveryFrame;                                // 0x2e0(0x1)
-	float                                                        MaxViewDistanceOverride;                           // 0x2e4(0x4)
-	TArray<Struct EngineShowFlagsSetting>                        ShowFlagSettings;                                  // 0x2e8(0x10)
+	TArray<Weakclass HiddenComponents>                           HiddenComponents;                                  // 0x2e0(0x10)
+	bool                                                         bCaptureEveryFrame;                                // 0x2f0(0x1)
+	float                                                        MaxViewDistanceOverride;                           // 0x2f4(0x4)
+	TArray<Struct EngineShowFlagsSetting>                        ShowFlagSettings;                                  // 0x2f8(0x10)
 };
 
 
@@ -4279,18 +4279,18 @@ public:
 class SceneCaptureComponent2D: public SceneCaptureComponent
 {
 public:
-	float                                                        FOVAngle;                                          // 0x338(0x4)
-	Class TextureRenderTarget2D*                                 TextureTarget;                                     // 0x340(0x8)
-	byte                                                         CaptureSource;                                     // 0x348(0x1)
-	Struct PostProcessSettings                                   PostProcessSettings;                               // 0x350(0x540)
-	float                                                        PostProcessBlendWeight;                            // 0x890(0x4)
-	float                                                        OrthoWidth;                                        // 0x894(0x4)
-	float                                                        OrthoNearClipPlane;                                // 0x898(0x4)
-	float                                                        OrthoFarClipPlane;                                 // 0x89c(0x4)
-	byte                                                         ProjectionMode;                                    // 0x8a0(0x1)
-	float                                                        AspectRatio;                                       // 0x8a4(0x4)
-	bool                                                         bConstrainAspectRatio;                             // 0x8a8(0x1)
-	int                                                          LandscapeLODOverride;                              // 0x8ac(0x4)
+	float                                                        FOVAngle;                                          // 0x348(0x4)
+	Class TextureRenderTarget2D*                                 TextureTarget;                                     // 0x350(0x8)
+	byte                                                         CaptureSource;                                     // 0x358(0x1)
+	Struct PostProcessSettings                                   PostProcessSettings;                               // 0x360(0x540)
+	float                                                        PostProcessBlendWeight;                            // 0x8a0(0x4)
+	float                                                        OrthoWidth;                                        // 0x8a4(0x4)
+	float                                                        OrthoNearClipPlane;                                // 0x8a8(0x4)
+	float                                                        OrthoFarClipPlane;                                 // 0x8ac(0x4)
+	byte                                                         ProjectionMode;                                    // 0x8b0(0x1)
+	float                                                        AspectRatio;                                       // 0x8b4(0x4)
+	bool                                                         bConstrainAspectRatio;                             // 0x8b8(0x1)
+	int                                                          LandscapeLODOverride;                              // 0x8bc(0x4)
 };
 
 
@@ -4298,7 +4298,7 @@ public:
 class SceneCaptureComponentCube: public SceneCaptureComponent
 {
 public:
-	Class TextureRenderTargetCube*                               TextureTarget;                                     // 0x338(0x8)
+	Class TextureRenderTargetCube*                               TextureTarget;                                     // 0x348(0x8)
 };
 
 
@@ -4306,24 +4306,24 @@ public:
 class SpringArmComponent: public SceneComponent
 {
 public:
-	float                                                        TargetArmLength;                                   // 0x2d0(0x4)
-	Struct Vector                                                SocketOffset;                                      // 0x2d4(0xc)
-	Struct Vector                                                TargetOffset;                                      // 0x2e0(0xc)
-	float                                                        ProbeSize;                                         // 0x2ec(0x4)
-	byte                                                         ProbeChannel;                                      // 0x2f0(0x1)
-	bool                                                         bDoCollisionTest;                                  // 0x2f4(0x1)
-	bool                                                         bUsePawnControlRotation;                           // 0x2f4(0x1)
-	bool                                                         bInheritPitch;                                     // 0x2f4(0x1)
-	bool                                                         bInheritYaw;                                       // 0x2f4(0x1)
-	bool                                                         bInheritRoll;                                      // 0x2f4(0x1)
-	bool                                                         bEnableCameraLag;                                  // 0x2f4(0x1)
-	bool                                                         bEnableCameraRotationLag;                          // 0x2f4(0x1)
-	bool                                                         bUseCameraLagSubstepping;                          // 0x2f4(0x1)
-	bool                                                         bDrawDebugLagMarkers;                              // 0x2f5(0x1)
-	float                                                        CameraLagSpeed;                                    // 0x2f8(0x4)
-	float                                                        CameraRotationLagSpeed;                            // 0x2fc(0x4)
-	float                                                        CameraLagMaxTimeStep;                              // 0x300(0x4)
-	float                                                        CameraLagMaxDistance;                              // 0x304(0x4)
+	float                                                        TargetArmLength;                                   // 0x2e0(0x4)
+	Struct Vector                                                SocketOffset;                                      // 0x2e4(0xc)
+	Struct Vector                                                TargetOffset;                                      // 0x2f0(0xc)
+	float                                                        ProbeSize;                                         // 0x2fc(0x4)
+	byte                                                         ProbeChannel;                                      // 0x300(0x1)
+	bool                                                         bDoCollisionTest;                                  // 0x304(0x1)
+	bool                                                         bUsePawnControlRotation;                           // 0x304(0x1)
+	bool                                                         bInheritPitch;                                     // 0x304(0x1)
+	bool                                                         bInheritYaw;                                       // 0x304(0x1)
+	bool                                                         bInheritRoll;                                      // 0x304(0x1)
+	bool                                                         bEnableCameraLag;                                  // 0x304(0x1)
+	bool                                                         bEnableCameraRotationLag;                          // 0x304(0x1)
+	bool                                                         bUseCameraLagSubstepping;                          // 0x304(0x1)
+	bool                                                         bDrawDebugLagMarkers;                              // 0x305(0x1)
+	float                                                        CameraLagSpeed;                                    // 0x308(0x4)
+	float                                                        CameraRotationLagSpeed;                            // 0x30c(0x4)
+	float                                                        CameraLagMaxTimeStep;                              // 0x310(0x4)
+	float                                                        CameraLagMaxDistance;                              // 0x314(0x4)
 };
 
 
@@ -4331,8 +4331,8 @@ public:
 class WaterEmissionVolumeComponent: public SceneComponent
 {
 public:
-	float                                                        Radius;                                            // 0x2d0(0x4)
-	float                                                        GenerationDensity;                                 // 0x2d4(0x4)
+	float                                                        Radius;                                            // 0x2e0(0x4)
+	float                                                        GenerationDensity;                                 // 0x2e4(0x4)
 };
 
 
@@ -4340,10 +4340,10 @@ public:
 class WindDirectionalSourceComponent: public SceneComponent
 {
 public:
-	float                                                        Strength;                                          // 0x2d0(0x4)
-	float                                                        Speed;                                             // 0x2d4(0x4)
-	float                                                        MinGustAmount;                                     // 0x2d8(0x4)
-	float                                                        MaxGustAmount;                                     // 0x2dc(0x4)
+	float                                                        Strength;                                          // 0x2e0(0x4)
+	float                                                        Speed;                                             // 0x2e4(0x4)
+	float                                                        MinGustAmount;                                     // 0x2e8(0x4)
+	float                                                        MaxGustAmount;                                     // 0x2ec(0x4)
 };
 
 

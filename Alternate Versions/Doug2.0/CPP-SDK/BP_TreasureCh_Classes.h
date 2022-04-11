@@ -7,42 +7,42 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_TreasureChest_Wieldable_Rare_C: public BP_TreasureChest_GoldHoarderLocked_Base_Wieldable_C
+class BP_TreasureChest_Wieldable_Rare_C: public None
 {
 public:
 };
 
 
 // Size 0x0
-class BP_TreasureChest_Proxy_Rare_C: public BP_TreasureChest_GoldHoarderLocked_Base_Proxy_C
+class BP_TreasureChest_Proxy_Rare_C: public None
 {
 public:
 };
 
 
 // Size 0x0
-class BP_TreasureChest_Wieldable_Common_C: public BP_TreasureChest_GoldHoarderLocked_Base_Wieldable_C
+class BP_TreasureChest_Wieldable_Common_C: public None
 {
 public:
 };
 
 
 // Size 0x0
-class BP_TreasureChest_GoldHoarderLocked_Base_Wieldable_C: public BP_CollectorsChest_OneLock_Wieldable_C
+class BP_TreasureChest_GoldHoarderLocked_Base_Wieldable_C: public None
 {
 public:
 };
 
 
 // Size 0x0
-class BP_TreasureChest_Proxy_Common_C: public BP_TreasureChest_GoldHoarderLocked_Base_Proxy_C
+class BP_TreasureChest_Proxy_Common_C: public None
 {
 public:
 };
 
 
 // Size 0x0
-class BP_TreasureChest_GoldHoarderLocked_Base_Proxy_C: public BP_CollectorsChest_OneLock_Proxy_C
+class BP_TreasureChest_GoldHoarderLocked_Base_Proxy_C: public None
 {
 public:
 };

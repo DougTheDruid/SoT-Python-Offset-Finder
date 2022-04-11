@@ -13,8 +13,8 @@ public:
 };
 
 
-// Size 0x3f800000
-class AD_FirstPerson_PlayerPirate_Male_Default_C: public None
+// Size 0x420
+class AD_FirstPerson_PlayerPirate_Male_Default_C: public FirstPersonAnimationData
 {
 public:
 };

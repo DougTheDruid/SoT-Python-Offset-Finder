@@ -59,16 +59,16 @@ BoxedRpcDispatcherInterface:
 DynamicColourPointLightComponent:
   Attributes:
   - Name: ActivationCurve
-    Offset: '0x498'
+    Offset: '0x4a8'
     Size: '0x80'
     Type: Struct RuntimeFloatCurve
   - Name: DeactivationCurve
-    Offset: '0x518'
+    Offset: '0x528'
     Size: '0x80'
     Type: Struct RuntimeFloatCurve
   ClassSize: '0x130'
-  FullSize: '0x5d0'
-  InheritedSize: '0x4a0'
+  FullSize: '0x5e0'
+  InheritedSize: '0x4b0'
   Super: PointLightComponent
 EmptyObject:
   Attributes: []

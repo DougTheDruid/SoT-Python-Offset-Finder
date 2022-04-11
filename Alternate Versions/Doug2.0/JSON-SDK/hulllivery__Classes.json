@@ -27,174 +27,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "hulllivery_goldenchaser_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_luckyrover_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_regalhound_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_flamingjackal_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_azurescout_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_sakura_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_boreal_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_autumn_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_ghostglow_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_reapermys_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_orderofsoulsdre_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_merchantgmu_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_goldhoardersghw_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_edgelord_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_mayhem_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_party_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_omen_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_kameo_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_sotthunderpack_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_oldbettsy_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_kraken_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_admiral_01_v01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_sailor_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "hulllivery_admiral_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "hulllivery_yr1_legendary_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
@@ -231,6 +63,174 @@
     "Attributes": []
   },
   "hulllivery_goldhoarders_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_sotthunderpack_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_sakura_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_sailor_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_regalhound_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_reapermys_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_party_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_orderofsoulsdre_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_omen_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_oldbettsy_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_merchantgmu_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_mayhem_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_luckyrover_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_kraken_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_kameo_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_goldhoardersghw_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_goldenchaser_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_ghostglow_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_flamingjackal_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_edgelord_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_boreal_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_azurescout_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_autumn_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_admiral_01_v01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "hulllivery_admiral_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",

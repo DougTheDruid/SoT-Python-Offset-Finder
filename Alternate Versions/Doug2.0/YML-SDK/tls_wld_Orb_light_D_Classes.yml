@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 tls_wld_Orb_light_D_C:
   Attributes:
-  - Name: PointLight
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class PointLightComponent*

@@ -53,8 +53,8 @@ EmissaryFlotsamItemInfo:
 EmissaryFlotsamItemSpawnComponent:
   Attributes: []
   ClassSize: '0x90'
-  FullSize: '0x4c0'
-  InheritedSize: '0x430'
+  FullSize: '0x4d0'
+  InheritedSize: '0x440'
   Super: ItemSpawnComponent
 EmissaryFlotsamTooltipCustomizerComponent:
   Attributes:
@@ -169,8 +169,8 @@ EmissaryParticipantComponent:
 EmissaryRepresentationMeshComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x610'
-  InheritedSize: '0x610'
+  FullSize: '0x620'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 EmissaryRewardCampaignSettingsAsset:
   Attributes:
@@ -203,28 +203,28 @@ EmissaryRewardSettingsAsset:
 EmissaryShipAffiliationTrackerComponent:
   Attributes:
   - Name: EmissaryCount
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x4'
     Type: int
   - Name: TrackedCompany
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: class
   - Name: EmissaryRepresentationTransforms
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x10'
     Type: TArray<Struct Transform>
   - Name: EmissaryRepresentationMeshes
-    Offset: '0x310'
+    Offset: '0x320'
     Size: '0x10'
     Type: TArray<class EmissaryRepresentationMeshes*>
   - Name: LoadedEmissaryRepresentationMesh
-    Offset: '0x320'
+    Offset: '0x330'
     Size: '0x8'
     Type: class
   ClassSize: '0x70'
-  FullSize: '0x340'
-  InheritedSize: '0x2d0'
+  FullSize: '0x350'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 EmissaryVoyageInlineVoteConsumerBase:
   Attributes:

@@ -38,8 +38,8 @@ public:
 class DynamicColourPointLightComponent: public PointLightComponent
 {
 public:
-	Struct RuntimeFloatCurve                                     ActivationCurve;                                   // 0x498(0x80)
-	Struct RuntimeFloatCurve                                     DeactivationCurve;                                 // 0x518(0x80)
+	Struct RuntimeFloatCurve                                     ActivationCurve;                                   // 0x4a8(0x80)
+	Struct RuntimeFloatCurve                                     DeactivationCurve;                                 // 0x528(0x80)
 };
 
 

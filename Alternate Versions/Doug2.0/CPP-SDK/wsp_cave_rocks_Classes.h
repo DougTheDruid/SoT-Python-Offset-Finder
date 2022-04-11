@@ -6,123 +6,45 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x50
-class wsp_cave_rocks_12_C: public BP_Placement_HeightDrop_C
+// Size 0x0
+class wsp_cave_rocks_12_C: public LevelScriptActor
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x450(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x458(0x8)
 };
 
 
-// Size 0x50
-class wsp_cave_rocks_11_C: public BP_Placement_HeightDrop_C
+// Size 0x1
+class wsp_cave_rocks_10_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh7;                                       // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh6;                                       // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMesh5;                                       // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMesh4;                                       // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMesh3;                                       // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x450(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x458(0x8)
 };
 
 
-// Size 0x28
-class wsp_cave_rocks_08_C: public BP_Placement_HeightDrop_C
+// Size 0x1
+class wsp_cave_rocks_09_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x428(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x430(0x8)
 };
 
 
-// Size 0x28
-class wsp_cave_rocks_07_C: public BP_Placement_HeightDrop_C
+// Size 0x1
+class wsp_cave_rocks_05_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x428(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x430(0x8)
 };
 
 
-// Size 0x40
-class wsp_cave_rocks_05_C: public BP_Placement_HeightDrop_C
+// Size 0x0
+class wsp_cave_rocks_02_C: public LevelScriptActor
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x440(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x448(0x8)
 };
 
 
-// Size 0x50
-class wsp_cave_rocks_03_C: public BP_Placement_HeightDrop_C
+// Size 0x1
+class wsp_cave_rocks_01_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x450(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x458(0x8)
-};
-
-
-// Size 0x40
-class wsp_cave_rocks_02_C: public BP_Placement_HeightDrop_C
-{
-public:
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x440(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x448(0x8)
-};
-
-
-// Size 0x40
-class wsp_cave_rocks_01_C: public BP_Placement_HeightDrop_C
-{
-public:
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x440(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x448(0x8)
 };
 
 

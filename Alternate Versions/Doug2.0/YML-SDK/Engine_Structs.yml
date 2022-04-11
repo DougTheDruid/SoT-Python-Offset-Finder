@@ -4853,6 +4853,9 @@ FloatDistribution:
     Size: '0x28'
     Type: Struct DistributionLookupTable
   ClassSize: '0x28'
+Float_NetQuantized:
+  Attributes: []
+  ClassSize: '0x4'
 FogVolumeInfo:
   Attributes:
   - Name: Component

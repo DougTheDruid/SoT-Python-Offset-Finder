@@ -533,13 +533,6 @@ public:
 
 
 // Size 0x20
-struct QuestVariableGuidArray
-{
-public:
-};
-
-
-// Size 0x20
 struct QuestVariableSharkPawn
 {
 public:
@@ -557,6 +550,14 @@ public:
 	Struct WeightedProbabilityRangeOfRanges                      LifetimeTimeout;                                   // 0x80(0x30)
 	float                                                        TrackedShipDistanceThreshold;                      // 0xb0(0x4)
 	float                                                        RepositionTime;                                    // 0xb4(0x4)
+};
+
+
+// Size 0x10
+struct ExperienceTracker
+{
+public:
+	Class TaleQuestTinySharkExperienceTracker*                   Tracker;                                           // 0x0(0x8)
 };
 
 

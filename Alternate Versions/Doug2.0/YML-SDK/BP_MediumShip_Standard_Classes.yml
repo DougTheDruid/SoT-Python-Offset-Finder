@@ -3,13 +3,9 @@
 BP_MediumShip_StandardHull_Damage_C:
   Attributes:
   - Name: projectile_collision
-    Offset: '0x608'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Damage_Zone_Middle
     Offset: '0x610'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: Class StaticMeshComponent*
   - Name: Damage_Zone_Middle
     Offset: '0x618'
     Size: '0x8'
@@ -42,49 +38,53 @@ BP_MediumShip_StandardHull_Damage_C:
     Offset: '0x650'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_09
+  - Name: Damage_Zone_Middle
     Offset: '0x658'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_08
+  - Name: Damage_Zone_Middle_09
     Offset: '0x660'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_07
+  - Name: Damage_Zone_Middle_08
     Offset: '0x668'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_06
+  - Name: Damage_Zone_Middle_07
     Offset: '0x670'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_05
+  - Name: Damage_Zone_Middle_06
     Offset: '0x678'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_04
+  - Name: Damage_Zone_Middle_05
     Offset: '0x680'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_03
+  - Name: Damage_Zone_Middle_04
     Offset: '0x688'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_02
+  - Name: Damage_Zone_Middle_03
     Offset: '0x690'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Damage_Zone_Middle_01
+  - Name: Damage_Zone_Middle_02
     Offset: '0x698'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: shp_mid_hull_damage_01_a
+  - Name: Damage_Zone_Middle_01
     Offset: '0x6a0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: shp_mid_hull_damage_01_a
+    Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0xa0'
-  FullSize: '0x6a8'
-  InheritedSize: '0x608'
+  FullSize: '0x6b0'
+  InheritedSize: '0x610'
   Super: BP_HullDamage_C
 BP_MediumShip_StandardHull_InternalShipWater_C:
   Attributes:

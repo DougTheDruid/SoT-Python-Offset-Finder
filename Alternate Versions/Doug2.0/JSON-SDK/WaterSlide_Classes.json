@@ -140,8 +140,8 @@
   },
   "WaterSlideInputComponent": {
     "Super": "LookAtOffsetInputComponent",
-    "FullSize": "0x290",
-    "InheritedSize": "0x280",
+    "FullSize": "0x2b0",
+    "InheritedSize": "0x2a0",
     "ClassSize": "0x10",
     "Attributes": []
   },

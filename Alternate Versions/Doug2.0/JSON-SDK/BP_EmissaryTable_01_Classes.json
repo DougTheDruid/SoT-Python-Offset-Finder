@@ -6,67 +6,67 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "EmissaryActiveTableVisualiser",
+        "Name": "None",
         "Type": "Class EmissaryActiveTableVisualiserComponent*",
         "Size": "0x8",
         "Offset": "0x5e8"
       },
       {
-        "Name": "VoteAudio",
+        "Name": "None",
         "Type": "Class VoteAudioComponent*",
         "Size": "0x8",
         "Offset": "0x5f0"
       },
       {
-        "Name": "StaticMeshVoteVisualiser",
+        "Name": "None",
         "Type": "Class StaticMeshVoteVisualiserComponent*",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
-        "Name": "InlineVotingInteraction",
+        "Name": "None",
         "Type": "Class InlineVotingInteractionComponent*",
         "Size": "0x8",
         "Offset": "0x600"
       },
       {
-        "Name": "ActionRules",
+        "Name": "None",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
         "Offset": "0x608"
       },
       {
-        "Name": "VoteIndicator4",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x610"
       },
       {
-        "Name": "VoteIndicator3",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x618"
       },
       {
-        "Name": "VoteIndicator2",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x620"
       },
       {
-        "Name": "VoteIndicator1",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x628"
       },
       {
-        "Name": "bld_emissary_table_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x638"

@@ -279,6 +279,10 @@
     "ClassSize": "0x20",
     "Attributes": []
   },
+  "QuestVariableGuidArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
   "QuestVariableActorArray": {
     "ClassSize": "0x20",
     "Attributes": []
@@ -327,6 +331,23 @@
   "QuestVariableActorAssetType": {
     "ClassSize": "0x20",
     "Attributes": []
+  },
+  "BodyFramePair": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Frame",
+        "Type": "Class TaleQuestIndexedFrame*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Body",
+        "Type": "Class TaleQuestStep*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
   },
   "QuestVariableItemDescType": {
     "ClassSize": "0x20",

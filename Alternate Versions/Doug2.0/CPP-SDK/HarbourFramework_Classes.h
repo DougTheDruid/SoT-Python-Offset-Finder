@@ -17,7 +17,7 @@ public:
 class HarbourComponent: public SceneComponent
 {
 public:
-	float                                                        HarbourRadiusInCentimetres;                        // 0x2d8(0x4)
+	float                                                        HarbourRadiusInCentimetres;                        // 0x2e8(0x4)
 };
 
 

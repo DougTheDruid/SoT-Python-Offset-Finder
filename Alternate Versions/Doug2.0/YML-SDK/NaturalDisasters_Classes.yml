@@ -401,8 +401,8 @@ Geyser:
 GeyserItemSpawnComponent:
   Attributes: []
   ClassSize: '0x20'
-  FullSize: '0x450'
-  InheritedSize: '0x430'
+  FullSize: '0x460'
+  InheritedSize: '0x440'
   Super: ItemSpawnComponent
 GeyserManager:
   Attributes:

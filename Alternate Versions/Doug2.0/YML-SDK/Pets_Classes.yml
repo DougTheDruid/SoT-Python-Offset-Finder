@@ -3,8 +3,8 @@
 AIPetsOnDemandSpawner:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x428'
-  InheritedSize: '0x428'
+  FullSize: '0x430'
+  InheritedSize: '0x430'
   Super: AISpawner
 BTDecorator_IsForcingHangout:
   Attributes: []
@@ -405,52 +405,52 @@ PetHangoutInterface:
 PetHangoutSpotComponent:
   Attributes:
   - Name: HangoutSpots
-    Offset: '0x2d0'
+    Offset: '0x2e0'
     Size: '0x10'
     Type: TArray<Struct HangoutSpotPosition>
   - Name: HasLowerDeckFloodThreshold
-    Offset: '0x2e0'
+    Offset: '0x2f0'
     Size: '0x1'
     Type: bool
   - Name: LowerDeckFloodThreshold
-    Offset: '0x2e4'
+    Offset: '0x2f4'
     Size: '0x4'
     Type: float
   - Name: HasMiddleDeckFloodThreshold
-    Offset: '0x2e8'
+    Offset: '0x2f8'
     Size: '0x1'
     Type: bool
   - Name: MiddleDeckFloodThreshold
-    Offset: '0x2ec'
+    Offset: '0x2fc'
     Size: '0x4'
     Type: float
   - Name: PerchInteractableHeightOffset
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0x4'
     Type: float
   - Name: IsWorldHangout
-    Offset: '0x2f4'
+    Offset: '0x304'
     Size: '0x1'
     Type: bool
   - Name: PetPerchComponents
-    Offset: '0x318'
+    Offset: '0x328'
     Size: '0x10'
     Type: TArray<class PetPerchComponents*>
   - Name: IsTopDeckBlocked
-    Offset: '0x338'
+    Offset: '0x348'
     Size: '0x1'
     Type: bool
   - Name: IsOwnerSinking
-    Offset: '0x339'
+    Offset: '0x349'
     Size: '0x1'
     Type: bool
   - Name: PetHangoutSpotsDataAsset
-    Offset: '0x358'
+    Offset: '0x368'
     Size: '0x8'
     Type: Class PetHangoutSpotsDataAsset*
   ClassSize: '0xa0'
-  FullSize: '0x370'
-  InheritedSize: '0x2d0'
+  FullSize: '0x380'
+  InheritedSize: '0x2e0'
   Super: SceneComponent
 PetHangoutSpotSelectorComponent:
   Attributes:
@@ -827,8 +827,8 @@ WieldablePet:
 WieldablePetAnimNotifyWwiseEmitterComponent:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0x310'
-  InheritedSize: '0x300'
+  FullSize: '0x320'
+  InheritedSize: '0x310'
   Super: AnimNotifyWwiseEmitterComponent
 WieldablePetComponent:
   Attributes:

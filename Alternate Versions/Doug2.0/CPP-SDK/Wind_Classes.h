@@ -86,8 +86,8 @@ public:
 class WindZoneComponent: public SceneComponent
 {
 public:
-	Struct WindTurbulenceParameters                              TurbulenceParams;                                  // 0x2d8(0x70)
-	Struct WindZoneParams                                        WindZoneParams;                                    // 0x348(0x10)
+	Struct WindTurbulenceParameters                              TurbulenceParams;                                  // 0x2e8(0x70)
+	Struct WindZoneParams                                        WindZoneParams;                                    // 0x358(0x10)
 };
 
 

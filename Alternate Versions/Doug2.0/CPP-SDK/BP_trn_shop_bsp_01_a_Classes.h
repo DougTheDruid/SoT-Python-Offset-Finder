@@ -63,7 +63,7 @@ public:
 	Class StaticMeshComponent*                                   bld_shop_wood_box_03_a1;                           // 0x560(0x8)
 	Class StaticMeshComponent*                                   bld_shop_wood_box_03_a;                            // 0x568(0x8)
 	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x570(0x8)
-	Class StaticMeshComponent*                                   rug;                                               // 0x578(0x8)
+	Class StaticMeshComponent*                                   Rug;                                               // 0x578(0x8)
 	Class StaticMeshComponent*                                   Barrel;                                            // 0x580(0x8)
 	Class StaticMeshComponent*                                   bld_shop_table_01_a;                               // 0x588(0x8)
 	Class ChildActorComponent*                                   AudioSpace;                                        // 0x590(0x8)

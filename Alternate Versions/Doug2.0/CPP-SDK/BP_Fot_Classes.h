@@ -7,11 +7,11 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class BP_FotF_Larinna_NotActive_C: public BP_SoleTrader_C
+class BP_FotF_Larinna_NotActive_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x688(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x690(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x688(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x690(0x8)
 };
 
 

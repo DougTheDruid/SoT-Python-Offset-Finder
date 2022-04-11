@@ -82,96 +82,100 @@ WwiseAudioSettings:
     Offset: '0x1b8'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: WwiseStreamedFilesDirectory
+  - Name: WwiseFileHashDatabase
     Offset: '0x1c8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: WwiseStreamedFilesRoot
+    Offset: '0x1d8'
     Size: '0x10'
     Type: Struct DirectoryPath
   - Name: AsyncIOPriorityMappings
-    Offset: '0x1d8'
+    Offset: '0x1e8'
     Size: '0x10'
     Type: TArray<Struct WwiseIOPriorityMappingConfig>
   - Name: TritonAcousticMapsDirectory
-    Offset: '0x1e8'
+    Offset: '0x1f8'
     Size: '0x10'
     Type: Struct DirectoryPath
   - Name: DefaultLanguage
-    Offset: '0x1f8'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: SinkSharesetName
     Offset: '0x208'
     Size: '0x10'
     Type: Struct FString
-  - Name: PauseEventStart
+  - Name: SinkSharesetName
     Offset: '0x218'
     Size: '0x10'
-    Type: Struct StringAssetReference
-  - Name: PauseEventRelease
+    Type: Struct FString
+  - Name: PauseEventStart
     Offset: '0x228'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: StopAllEvent
+  - Name: PauseEventRelease
     Offset: '0x238'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: NetworkRelationship
+  - Name: StopAllEvent
     Offset: '0x248'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: NetworkRelationship
+    Offset: '0x258'
     Size: '0x18'
     Type: Struct WwiseNetworkRelationship
   - Name: AudioStateSettings
-    Offset: '0x260'
+    Offset: '0x270'
     Size: '0xa0'
     Type: Struct WwiseAudioGameStateSettings
   - Name: PauseEventStartInstance
-    Offset: '0x308'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: PauseEventReleaseInstance
-    Offset: '0x310'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: StopAllEventInstance
     Offset: '0x318'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: AnimNotifyPoolInstance
+  - Name: PauseEventReleaseInstance
     Offset: '0x320'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopAllEventInstance
+    Offset: '0x328'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: AnimNotifyPoolInstance
+    Offset: '0x330'
     Size: '0x8'
     Type: Class WwiseObjectPoolWrapper*
   - Name: EventsToPlayOnFrontendStartInstance
-    Offset: '0x368'
+    Offset: '0x388'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnFrontendStartInstance*>
   - Name: EventsToPlayOnFrontendEndInstance
-    Offset: '0x378'
+    Offset: '0x398'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnFrontendEndInstance*>
   - Name: EventsToPlayOnStartEngagementInstance
-    Offset: '0x388'
+    Offset: '0x3a8'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnStartEngagementInstance*>
   - Name: EventsToPlayOnEndEngagementInstance
-    Offset: '0x398'
+    Offset: '0x3b8'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnEndEngagementInstance*>
   - Name: EventsToPlayOnLoadingStartInstance
-    Offset: '0x3a8'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnLoadingStartInstance*>
   - Name: EventsToPlayOnLoadingEndInstance
-    Offset: '0x3b8'
+    Offset: '0x3d8'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnLoadingEndInstance*>
   - Name: EventsToPlayOnFrontEndOrLoadingStartInstance
-    Offset: '0x3c8'
+    Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>
   - Name: EventsToPlayOnFrontEndOrLoadingEndInstance
-    Offset: '0x3d8'
+    Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>
-  ClassSize: '0x3c0'
-  FullSize: '0x3e8'
+  ClassSize: '0x3e0'
+  FullSize: '0x408'
   InheritedSize: '0x28'
   Super: Object
 WwiseBank:

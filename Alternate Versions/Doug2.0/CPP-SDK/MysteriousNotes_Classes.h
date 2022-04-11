@@ -92,7 +92,7 @@ public:
 };
 
 
-// Size 0x170
+// Size 0x188
 class PlayerMysteriousNoteComponent: public ActorComponent
 {
 public:
@@ -102,7 +102,7 @@ public:
 };
 
 
-// Size 0x1b0
+// Size 0x1a0
 class WieldableMysteriousNote: public SkeletalMeshWieldableItem
 {
 public:
@@ -111,9 +111,8 @@ public:
 	int                                                          CanvasWidth;                                       // 0x7b0(0x4)
 	int                                                          CanvasHeight;                                      // 0x7b4(0x4)
 	float                                                        FontScale;                                         // 0x7b8(0x4)
-	Class NamedNotificationInputComponent*                       NamedNotificationInputComponent;                   // 0x810(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x818(0x8)
-	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x820(0x8)
+	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x810(0x8)
+	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x818(0x8)
 };
 
 

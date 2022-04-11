@@ -298,88 +298,84 @@ BP_LargeShip_StandardHull_Art_C:
     Offset: '0x618'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_plaque_01_a
+  - Name: shp_rope_rigging_rear_01_a
     Offset: '0x620'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_rope_rigging_rear_01_a
+  - Name: shp_rope_coil_01_a
     Offset: '0x628'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_rope_coil_01_a
+  - Name: shp_rope_coil_02_a
     Offset: '0x630'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_rope_coil_02_a
+  - Name: shp_rope_coil_04_a_03
     Offset: '0x638'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_rope_coil_04_a_03
+  - Name: shp_rope_coil_04_a_04
     Offset: '0x640'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_rope_coil_04_a_04
+  - Name: shp_rope_coil_04_a_05
     Offset: '0x648'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_rope_coil_04_a_05
+  - Name: shp_mast_trim_01_a
     Offset: '0x650'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_mast_trim_01_a
+  - Name: shp_mast_trim_01_a1
     Offset: '0x658'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_mast_trim_01_a1
+  - Name: shp_mast_trim_01_a2
     Offset: '0x660'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_mast_trim_01_a2
+  - Name: shp_capstan_trim_01_a
     Offset: '0x668'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_capstan_trim_01_a
-    Offset: '0x670'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
   - Name: MergedStaticMesh
-    Offset: '0x678'
+    Offset: '0x670'
     Size: '0x8'
     Type: Class MergedStaticMeshComponent*
   - Name: cmn_walk_plank_01_a1
-    Offset: '0x680'
+    Offset: '0x678'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_walk_plank_01_a
-    Offset: '0x688'
+    Offset: '0x680'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Interior_Captains_Cabin
-    Offset: '0x690'
+    Offset: '0x688'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: Interior_Brig_Deck
-    Offset: '0x698'
+    Offset: '0x690'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: Interior_Map_Deck
-    Offset: '0x6a0'
+    Offset: '0x698'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: shp_stern_staircase_01_a_02
-    Offset: '0x6a8'
+    Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: shp_stern_staircase_01_a_01
-    Offset: '0x6b0'
+    Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: shp_galleon_main_deck_01_a
-    Offset: '0x6b8'
+    Offset: '0x6b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  ClassSize: '0x2f0'
-  FullSize: '0x6c0'
+  ClassSize: '0x2e8'
+  FullSize: '0x6b8'
   InheritedSize: '0x3d0'
   Super: Actor
 BP_LargeShip_StandardHull_Art_Doors_C:
@@ -528,164 +524,116 @@ BP_LargeShip_StandardHull_Art_Interior_Captains_Cabin_C:
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
-  - Name: cap_candle_chandelier_flame
+  - Name: cap_cabinet_02_a
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cap_cabin_rug_rnd_01_a
+  - Name: cap_cage_01_b
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cap_candle_chandelier_01_a
+  - Name: cap_cage_01_a
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cap_cabin_rug_02_a
-    Offset: '0x3f0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_rug_01_a1
-    Offset: '0x3f8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_curtain_03_a
-    Offset: '0x400'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_chair_01_a
-    Offset: '0x408'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_bunk_01_a
-    Offset: '0x410'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_drapes_01_a
-    Offset: '0x418'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_curtain_01_a
-    Offset: '0x420'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_curtain_02_a
-    Offset: '0x428'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabinet_02_a
-    Offset: '0x430'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cage_01_b
-    Offset: '0x438'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cage_01_a
-    Offset: '0x440'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: CaptainsTable
-    Offset: '0x448'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
   - Name: vfx_tavern_candle_looping_01_a8
-    Offset: '0x450'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_candle_looping_01_a1
-    Offset: '0x458'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_candle_looping_01_a
-    Offset: '0x460'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: shp_item_shelf_01_a
-    Offset: '0x468'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_book_stand_01_a
-    Offset: '0x470'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_cabinet_01_a
-    Offset: '0x478'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_cabin_drawer_01_a
-    Offset: '0x480'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_cabin_trunk_01_a
-    Offset: '0x488'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_cabin_trunk_01_a1
-    Offset: '0x490'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: MergedStaticMesh_col
-    Offset: '0x498'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class MergedStaticMeshComponent*
   - Name: trs_candlestick_01_a
-    Offset: '0x4a0'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_candle_01_a
-    Offset: '0x4a8'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_candle_01_e
-    Offset: '0x4b0'
+    Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_shark_jaws_01_a
-    Offset: '0x4b8'
+    Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_cabin_books_03_a
-    Offset: '0x4c0'
+    Offset: '0x460'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_cabin_books_02_a
-    Offset: '0x4c8'
+    Offset: '0x468'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_cabin_books_01_a
-    Offset: '0x4d0'
+    Offset: '0x470'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_wooden_plaque_01_a
-    Offset: '0x4d8'
+    Offset: '0x478'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_inkwell_01_a
-    Offset: '0x4e0'
+    Offset: '0x480'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_model_01_a
-    Offset: '0x4e8'
+    Offset: '0x488'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_skull_candle_01_a
-    Offset: '0x4f0'
+    Offset: '0x490'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_cabin_map_rolls_01_a
-    Offset: '0x4f8'
+    Offset: '0x498'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: MergedStaticMesh
-    Offset: '0x500'
+    Offset: '0x4a0'
     Size: '0x8'
     Type: Class MergedStaticMeshComponent*
   - Name: shp_interior_captains_cabin_01_a
-    Offset: '0x508'
+    Offset: '0x4a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  ClassSize: '0x140'
-  FullSize: '0x510'
+  ClassSize: '0xe0'
+  FullSize: '0x4b0'
   InheritedSize: '0x3d0'
   Super: Actor
 BP_LargeShip_StandardHull_Art_Interior_Map_Deck_C:

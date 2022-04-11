@@ -73,7 +73,7 @@ public:
 class ReviveAudioComponent: public WwiseEmitterComponent
 {
 public:
-	Class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x300(0x8)
+	Class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x310(0x8)
 };
 
 

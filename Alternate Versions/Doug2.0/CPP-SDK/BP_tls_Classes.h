@@ -13,16 +13,15 @@ public:
 };
 
 
-// Size 0x8
-class BP_tls_speaking_trumpet_wth_01_a_v02_ItemInfo_C: public ItemInfo
+// Size -0x1
+class BP_tls_speaking_trumpet_wth_01_a_v02_ItemInfo_C: public MaterialExpressionSubtract
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 
-// Size 0x0
-class BP_tls_speaking_trumpet_wth_01_a_v02_Wieldable_C: public BP_Speaking_Trumpet_C
+// Size -0x11
+class BP_tls_speaking_trumpet_wth_01_a_v02_Wieldable_C: public NameProperty
 {
 public:
 };

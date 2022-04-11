@@ -6,6 +6,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_RowboatMountpoint_SmallShip_C": {
+    "Super": "BP_RowboatMountpoint_Base_C",
+    "FullSize": "0x660",
+    "InheritedSize": "0x660",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_RowboatMountpoint_Base_C": {
     "Super": "MountpointActor",
     "FullSize": "0x660",

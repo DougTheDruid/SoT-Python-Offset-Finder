@@ -41,6 +41,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_makeup_set_cold_01_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_makeup_s6_01_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xe0",
@@ -62,13 +69,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_makeup_hzn_01_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BP_makeup_mer_01_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xe0",
@@ -76,7 +76,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_makeup_set_cold_01_Desc_C": {
+  "BP_makeup_hzn_01_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xe0",
     "InheritedSize": "0xe0",

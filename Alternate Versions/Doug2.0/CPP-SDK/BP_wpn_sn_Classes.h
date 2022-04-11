@@ -28,6 +28,20 @@ public:
 
 
 // Size 0x0
+class BP_wpn_sniper_rifle_win_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_sniper_rifle_smp_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_wpn_sniper_rifle_s4_01_a_ItemDesc_C: public ItemDesc
 {
 public:
@@ -42,35 +56,7 @@ public:
 
 
 // Size 0x0
-class BP_wpn_sniper_rifle_win_01_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
 class BP_wpn_sniper_rifle_oos_01_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_wpn_sniper_rifle_eas_01_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_wpn_sniper_rifle_blb_01_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_wpn_sniper_rifle_bot_01_a_v01_ItemDesc_C: public ItemDesc
 {
 public:
 };
@@ -84,7 +70,21 @@ public:
 
 
 // Size 0x0
-class BP_wpn_sniper_rifle_smp_01_a_ItemDesc_C: public ItemDesc
+class BP_wpn_sniper_rifle_eas_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_sniper_rifle_bot_01_a_v01_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_sniper_rifle_blb_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

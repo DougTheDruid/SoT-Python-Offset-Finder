@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class WorldLocationPopUpComponent: public SceneComponent
 {
 public:
-	Class WorldLocationPopUpDataAsset*                           PopUpData;                                         // 0x2d0(0x8)
-	Class ShapeComponent*                                        LocationOverlapVolume;                             // 0x2d8(0x8)
-	float                                                        LocationCooldown;                                  // 0x2e0(0x4)
-	bool                                                         AlwaysShowPopUp;                                   // 0x2e4(0x1)
+	Class WorldLocationPopUpDataAsset*                           PopUpData;                                         // 0x2e0(0x8)
+	Class ShapeComponent*                                        LocationOverlapVolume;                             // 0x2e8(0x8)
+	float                                                        LocationCooldown;                                  // 0x2f0(0x4)
+	bool                                                         AlwaysShowPopUp;                                   // 0x2f4(0x1)
 };
 
 

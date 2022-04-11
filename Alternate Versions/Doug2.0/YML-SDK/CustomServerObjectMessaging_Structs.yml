@@ -2,73 +2,60 @@
 # https://github.com/DougTheDruid
 AIShipDamagedCustomServerEvent:
   Attributes:
-  - Name: AIShipId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
   - Name: AIShipWaterLevel
-    Offset: '0x28'
+    Offset: '0x20'
     Size: '0x4'
     Type: float
-  ClassSize: '0x30'
+  ClassSize: '0x28'
 AIShipDespawnCustomServerEvent:
-  Attributes:
-  - Name: AIShipId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
+  Attributes: []
+  ClassSize: '0x20'
 AIShipSpawnCustomServerEvent:
-  Attributes:
-  - Name: AIShipId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
+  Attributes: []
+  ClassSize: '0x20'
 AISpawnCustomServerEvent:
   Attributes:
-  - Name: AIId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
   - Name: AIType
-    Offset: '0x28'
+    Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x38'
+  ClassSize: '0x30'
+ActorSpawnCustomServerEvent:
+  Attributes:
+  - Name: EntityNetId
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
 CookEndCustomServerEvent:
   Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
   - Name: FoodType
-    Offset: '0x28'
+    Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
   - Name: CookedState
-    Offset: '0x38'
+    Offset: '0x30'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x48'
+  ClassSize: '0x40'
 CookStartCustomServerEvent:
   Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
   - Name: FoodType
-    Offset: '0x28'
+    Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x38'
+  ClassSize: '0x30'
 CrewPlayerLeftCustomServerEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x18'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x28'
+  - Name: PlayerId
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x30'
 CrewSessionLeaveCustomServerEvent:
   Attributes:
   - Name: CrewId
@@ -87,17 +74,20 @@ CustomServerEvent:
     Size: '0x8'
     Type: Struct DateTime
   ClassSize: '0x18'
-CustomTriggerOverlapCustomServerEvent:
+CustomTriggerOverlapBeginCustomServerEvent:
   Attributes:
-  - Name: TriggerNetId
-    Offset: '0x18'
-    Size: '0x4'
-    Type: int
   - Name: OtherNetId
-    Offset: '0x1c'
+    Offset: '0x20'
     Size: '0x4'
     Type: int
-  ClassSize: '0x20'
+  ClassSize: '0x28'
+CustomTriggerOverlapEndCustomServerEvent:
+  Attributes:
+  - Name: OtherNetId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
 EntityCustomServerEvent:
   Attributes:
   - Name: EntityNetId
@@ -106,52 +96,83 @@ EntityCustomServerEvent:
     Type: int
   ClassSize: '0x20'
 FortKeyUsedCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+FortWaveCompletedCustomServerEvent:
   Attributes:
-  - Name: UserId
+  - Name: InCrewId
     Offset: '0x18'
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x28'
-FortWaveCompletedCustomServerEvent:
-  Attributes: []
-  ClassSize: '0x18'
 GlobalCustomServerEvent:
   Attributes: []
   ClassSize: '0x18'
+HoleFixedForShipCustomServerEvent:
+  Attributes:
+  - Name: RepairPercentage
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: RepairingActor
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  - Name: RepairCompleted
+    Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x30'
 ItemSpawnCustomServerEvent:
   Attributes:
-  - Name: ItemId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: ItemType
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-KrakenSpawnCustomServerEvent:
-  Attributes:
-  - Name: Position
-    Offset: '0x18'
-    Size: '0xc'
-    Type: Struct Vector
-  ClassSize: '0x28'
-KrakenTentacleDestroyedCustomServerEvent:
-  Attributes:
-  - Name: TentacleRemaining
+  - Name: EntityNetId
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  ClassSize: '0x20'
-LevelLoadCompletedCustomServerEvent:
-  Attributes: []
-  ClassSize: '0x18'
-MeleeWeaponAttackCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
+  - Name: ItemType
+    Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
+  ClassSize: '0x30'
+KrakenDespawnCustomServerEvent:
+  Attributes:
+  - Name: Reason
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+KrakenSpawnCustomServerEvent:
+  Attributes:
+  - Name: SpawnLocation
+    Offset: '0x18'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: TrackedShipId
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  - Name: KrakenId
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: NumberOfTentacles
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: int
+  - Name: NumberOfKilledTentaclesToDismissKraken
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x38'
+KrakenTentacleDestroyedCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+MeleeWeaponAttackCustomServerEvent:
+  Attributes:
+  - Name: Type
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x28'
 MermaidSpawnedCustomServerEvent:
   Attributes:
@@ -159,404 +180,418 @@ MermaidSpawnedCustomServerEvent:
     Offset: '0x18'
     Size: '0xc'
     Type: Struct Vector
+  - Name: PlayerId
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x28'
 MermaidUsedCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
+  Attributes: []
+  ClassSize: '0x20'
 OnCannonBallHitShipCustomServerEvent:
   Attributes:
   - Name: CannonBallType
-    Offset: '0x18'
+    Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
   - Name: ShipId
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x38'
+OnCannonballLoadedOnCannonCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+OnEnemyDeathCustomServerEvent:
+  Attributes:
+  - Name: KillerPlayerID
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+OnHarpoonShotHitCustomServerEvent:
+  Attributes:
+  - Name: ActorTetheredTo
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+OnHarpoonShotShotCustomServerEvent:
+  Attributes:
+  - Name: HarpoonId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+OnItemPlacedInChestCustomServerEvent:
+  Attributes:
+  - Name: ChestId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: ItemId
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+OnPlayerAteCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+OnPlayerDigCustomServerEvent:
+  Attributes:
+  - Name: Location
+    Offset: '0x20'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x30'
+OnPlayerFiredFromCannonCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+OnPlayerInsideCannonCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+OnPlayerJoinsMapTableCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+OnPlayerStartsNPCInteractionCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+OnQuestAcceptedCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x18'
+OnQuestStartedCustomServerEvent:
+  Attributes:
+  - Name: QuestType
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
+OnVoyageAcceptedCustomServerEvent:
+  Attributes:
+  - Name: CompanyDisplayName
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Rank
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: Title
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x40'
+OnVoyageCancelledCustomServerEvent:
+  Attributes:
+  - Name: AssociatedCrew
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x28'
+OnVoyageStartedCustomServerEvent:
+  Attributes:
+  - Name: CompanyDisplayName
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Rank
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: Title
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x40'
+PlayerActionCannonCustomServerEvent:
+  Attributes:
+  - Name: ShipId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+PlayerActionCustomServerEvent:
+  Attributes:
+  - Name: Action
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x30'
+PlayerBucketEmptyCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerBucketScoopCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerCapstanUsageEndCustomServerEvent:
+  Attributes:
+  - Name: ShipId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: CapstanState
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+PlayerCapstanUsageStartCustomServerEvent:
+  Attributes:
+  - Name: ShipId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+PlayerChangedLoadoutCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerChangedShipLoadoutCustomServerEvent:
+  Attributes:
+  - Name: ShipId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+PlayerCharacterEnteredShipCustomServerEvent:
+  Attributes:
+  - Name: UserId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: ShipId
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+PlayerDeathCustomServerEvent:
+  Attributes:
+  - Name: KillerID
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+PlayerEmoteEndCustomServerEvent:
+  Attributes:
+  - Name: Emote
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x30'
+PlayerEmoteStartCustomServerEvent:
+  Attributes:
+  - Name: Emote
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x30'
+PlayerEncounterEndCustomServerEvent:
+  Attributes:
+  - Name: EncounterType
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+PlayerEncounterStartCustomServerEvent:
+  Attributes:
+  - Name: EncounterType
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+PlayerGameFishingCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerHealthChangeCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerHeartbeatCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerInReviveableStateCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerItemAddToContainerCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerItemEquipCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerItemRetrievalFromContainerCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerItemUsageEndCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerItemUsageStartCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerKillAICustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerLeftGhostShipCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerLookingAtMapCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x18'
+PlayerRadialChatCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+PlayerRevivalCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x28'
+PlayerSetFootLocationCustomServerEvent:
+  Attributes:
+  - Name: IslandName
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x30'
+PlayerSpawnCustomServerEvent:
+  Attributes:
+  - Name: PlayerStateId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: CharacterType
+    Offset: '0x24'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+PlayerStatusEffectActivatedCustomServerEvent:
+  Attributes:
+  - Name: Effect
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x30'
+PlayerStatusEffectDeactivatedCustomServerEvent:
+  Attributes:
+  - Name: Effect
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x30'
+ProjectileHitCustomServerEvent:
+  Attributes:
+  - Name: ProjectileType
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: RecipientId
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x38'
+ProjectileWeaponFiredCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+ShipDamagedCustomServerEvent:
+  Attributes:
+  - Name: Damage
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+ShipDestroyedCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+ShipMastCollapseStateCustomServerEvent:
+  Attributes:
+  - Name: ShipId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: MastId
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+ShipOnFireEndCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+ShipRepairCustomServerEvent:
+  Attributes:
+  - Name: UserId
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: ShipId
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+ShipSinkingCustomServerEvent:
+  Attributes: []
+  ClassSize: '0x20'
+ShipSpawnedCustomServerEvent:
+  Attributes:
+  - Name: ShipType
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x30'
+TinySharkDespawnCustomServerEvent:
+  Attributes:
+  - Name: Reason
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+TinySharkSpawnCustomServerEvent:
+  Attributes:
+  - Name: TinySharkId
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  - Name: SpawnLocation
+    Offset: '0x1c'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: TrackedShipId
     Offset: '0x28'
     Size: '0x4'
     Type: int
   ClassSize: '0x30'
-PlayerActionCannonCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: ShipId
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-PlayerActionCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: Action
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-PlayerBucketEmptyCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerBucketScoopCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerCapstanUsageEndCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: ShipId
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-PlayerCapstanUsageStartCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: ShipId
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-PlayerChangedLoadoutCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerChangedShipLoadoutCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: ShipId
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-PlayerCharacterEnteredShipCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x4'
-    Type: int
-  - Name: ShipId
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: int
-  ClassSize: '0x20'
-PlayerDeathCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerEmoteCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: Emote
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-PlayerEncounterEndCustomServerEvent:
-  Attributes: []
-  ClassSize: '0x18'
-PlayerEncounterStartCustomServerEvent:
-  Attributes: []
-  ClassSize: '0x18'
-PlayerGameFishingCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerHealthChangeCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerHeartbeatCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerInReviveableStateCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerItemAddToContainerCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerItemEquipCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerItemRetrievalFromContainerCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerItemUsageEndCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerKillAICustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerLeftGhostShipCustomServerEvent:
-  Attributes: []
-  ClassSize: '0x18'
-PlayerObjectUsageStartCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerRadialChatCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerRequiresMermaidCustomServerEvent:
-  Attributes: []
-  ClassSize: '0x18'
-PlayerRevivalCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerSetFootLocationCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: Location
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-PlayerSpawnCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-PlayerStatusEffectActivatedCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: Effect
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-PlayerStatusEffectDeactivatedCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: Effect
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-ProjectileHitCustomServerEvent:
-  Attributes:
-  - Name: ProjectileType
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: RecipientId
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-ProjectileWeaponFiredCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-ShipDamagedCustomServerEvent:
-  Attributes:
-  - Name: ShipId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-ShipDestroyedCustomServerEvent:
-  Attributes:
-  - Name: ShipId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-ShipMastCollapseStateCustomServerEvent:
-  Attributes:
-  - Name: ShipId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: MastId
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-ShipOnFireEndCustomServerEvent:
-  Attributes:
-  - Name: ShipId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-ShipRepairCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: ShipId
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-ShipSpawnedCustomServerEvent:
-  Attributes:
-  - Name: ShipId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: ShipType
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
-ShovelCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
-TinySharkSpawnCustomServerEvent:
-  Attributes: []
-  ClassSize: '0x18'
 TreasureDroppedCustomServerEvent:
   Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
   - Name: TreasureType
-    Offset: '0x28'
+    Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
   - Name: Position
-    Offset: '0x38'
+    Offset: '0x30'
     Size: '0xc'
     Type: Struct Vector
-  ClassSize: '0x48'
+  ClassSize: '0x40'
 TreasureFoundCustomServerEvent:
   Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
   - Name: TreasureType
-    Offset: '0x28'
+    Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x38'
+  ClassSize: '0x30'
 TreasurePickedUpCustomServerEvent:
-  Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
+  Attributes: []
+  ClassSize: '0x20'
 TreasureSoldCustomServerEvent:
   Attributes:
-  - Name: UserId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
   - Name: CrewId
-    Offset: '0x28'
+    Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
   - Name: TreasureType
-    Offset: '0x38'
+    Offset: '0x30'
     Size: '0x10'
     Type: Struct FString
   - Name: VendorId
-    Offset: '0x48'
+    Offset: '0x40'
     Size: '0x10'
     Type: Struct FString
   - Name: CompanyId
-    Offset: '0x58'
+    Offset: '0x50'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x68'
+  ClassSize: '0x60'
 TreasureSpawnedCustomServerEvent:
   Attributes: []
   ClassSize: '0x18'
@@ -564,13 +599,13 @@ WatercraftDespawnCustomServerEvent:
   Attributes:
   - Name: WatercraftId
     Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
 WatercraftSpawnCustomServerEvent:
   Attributes:
-  - Name: WatercraftId
+  - Name: EntityNetId
     Offset: '0x18'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x28'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'

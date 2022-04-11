@@ -2,145 +2,133 @@
 # https://github.com/DougTheDruid
 BP_SmallShip_StandardHull_Art_C:
   Attributes:
-  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
-  - Name: cap_bunk_slo_01_a
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cap_cabin_curtain_small_slo_01_a
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_book_stand_01_b
+    Type: Class PostProcessComponent*
+  - Name: None
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: FirePostProcess
+    Type: Class BoxComponent*
+  - Name: None
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class PostProcessComponent*
-  - Name: Fire_PP_Volume
+    Type: Class StaticMeshComponent*
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: cap_cage_03_c
+    Type: Class StaticMeshComponent*
+  - Name: None
     Offset: '0x400'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: shp_item_shelf_01_a
+    Type: Class SurfaceWaterComponent*
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: SurfaceWater
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
-    Type: Class SurfaceWaterComponent*
-  - Name: shp_small_rain_occlusion
+    Type: Class StaticMeshComponent*
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_small_canopy_01_a1
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: shp_small_hatch_01_a
+    Type: Class PostProcessComponent*
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_rug_02_a1
+    Type: Class BoxComponent*
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: PostProcess2
+    Type: Class PostProcessComponent*
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
-    Type: Class PostProcessComponent*
-  - Name: Below_Deck
+    Type: Class BoxComponent*
+  - Name: None
     Offset: '0x440'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: PostProcess1
+    Type: Class PostProcessComponent*
+  - Name: None
     Offset: '0x448'
     Size: '0x8'
-    Type: Class PostProcessComponent*
-  - Name: Map_Deck_B
+    Type: Class BoxComponent*
+  - Name: None
     Offset: '0x450'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: PostProcess
+    Type: Class StaticMeshComponent*
+  - Name: None
     Offset: '0x458'
     Size: '0x8'
-    Type: Class PostProcessComponent*
-  - Name: Map_Deck
+    Type: Class StaticMeshComponent*
+  - Name: None
     Offset: '0x460'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: cap_cabin_books_02_a
+    Type: Class StaticMeshComponent*
+  - Name: None
     Offset: '0x468'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cap_cabin_books_03_a
+  - Name: None
     Offset: '0x470'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_books_01_a
+    Type: Class MergedStaticMeshComponent*
+  - Name: None
     Offset: '0x478'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: shp_small_hull_rope_01_a
+    Type: Class ChildActorComponent*
+  - Name: None
     Offset: '0x480'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: MergedStaticMesh
+  - Name: None
     Offset: '0x488'
     Size: '0x8'
-    Type: Class MergedStaticMeshComponent*
-  - Name: BP_SmallShip_StandardHull_Art_Interior_Lower_Deck
-    Offset: '0x490'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: shp_small_stairs_01_a
-    Offset: '0x498'
-    Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_small_main_deck_01_a
-    Offset: '0x4a0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  ClassSize: '0xd8'
-  FullSize: '0x4a8'
+  ClassSize: '0xc0'
+  FullSize: '0x490'
   InheritedSize: '0x3d0'
   Super: Actor
 BP_SmallShip_StandardHull_Art_Interior_Lower_Deck_C:
   Attributes:
-  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
-  - Name: BP_CookingPot
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: shp_kitchen_extractor_01_a
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_cooker_02_a
+  - Name: None
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_small_lower_deck_rope_01_a
+  - Name: None
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_small_lower_deck_01_a
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x400'
     Size: '0x8'
     Type: Class SceneComponent*

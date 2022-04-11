@@ -3,8 +3,8 @@
 FoliageInstancedStaticMeshComponent:
   Attributes: []
   ClassSize: '0x20'
-  FullSize: '0x7b0'
-  InheritedSize: '0x790'
+  FullSize: '0x7c0'
+  InheritedSize: '0x7a0'
   Super: HierarchicalInstancedStaticMeshComponent
 FoliageStatistics:
   Attributes: []
@@ -399,8 +399,8 @@ InteractiveFoliageActor:
 InteractiveFoliageComponent:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0x620'
-  InheritedSize: '0x610'
+  FullSize: '0x630'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 ProceduralFoliageBlockingVolume:
   Attributes:

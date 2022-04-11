@@ -173,42 +173,63 @@ public:
 
 
 // Size 0x0
-class BP_Emote_Dice_D20_Desc_C: public EmoteDesc
+class BP_fod_PineappleFresh_00_a_ItemDesc_C: public ItemDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_Emote_Dice_D12_Desc_C: public EmoteDesc
+class BP_underwear_yellow_Desc_C: public ClothingDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_Emote_Dice_D10_Desc_C: public EmoteDesc
+class BP_underwear_red_Desc_C: public ClothingDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_Emote_Dice_D8_Desc_C: public EmoteDesc
+class BP_underwear_purple_Desc_C: public ClothingDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_Emote_Dice_D4_Desc_C: public EmoteDesc
+class BP_underwear_orange_Desc_C: public ClothingDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_Emote_Dice_D6_Desc_C: public EmoteDesc
+class BP_underwear_grey_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_green_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_blue_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_underwear_black_Desc_C: public ClothingDesc
 {
 public:
 };
@@ -306,56 +327,42 @@ public:
 
 
 // Size 0x0
-class BP_underwear_yellow_Desc_C: public ClothingDesc
+class BP_Emote_Dice_D8_Desc_C: public EmoteDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_underwear_red_Desc_C: public ClothingDesc
+class BP_Emote_Dice_D6_Desc_C: public EmoteDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_underwear_purple_Desc_C: public ClothingDesc
+class BP_Emote_Dice_D4_Desc_C: public EmoteDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_underwear_orange_Desc_C: public ClothingDesc
+class BP_Emote_Dice_D20_Desc_C: public EmoteDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_underwear_grey_Desc_C: public ClothingDesc
+class BP_Emote_Dice_D12_Desc_C: public EmoteDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_underwear_green_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_underwear_blue_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_underwear_black_Desc_C: public ClothingDesc
+class BP_Emote_Dice_D10_Desc_C: public EmoteDesc
 {
 public:
 };

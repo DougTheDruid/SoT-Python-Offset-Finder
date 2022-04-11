@@ -214,7 +214,7 @@ BP_trn_shop_bsp_01_a_C:
     Offset: '0x570'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: rug
+  - Name: Rug
     Offset: '0x578'
     Size: '0x8'
     Type: Class StaticMeshComponent*

@@ -3,12 +3,12 @@
 CharacterInteractionComponent:
   Attributes:
   - Name: CurrentOptimalInteractable
-    Offset: '0x5e0'
+    Offset: '0x5f0'
     Size: '0x8'
     Type: Class InteractableArea*
   ClassSize: '0xc0'
-  FullSize: '0x6a0'
-  InheritedSize: '0x5e0'
+  FullSize: '0x6b0'
+  InheritedSize: '0x5f0'
   Super: BoxComponent
 GroupedInteractableAreaComponent:
   Attributes: []

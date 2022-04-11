@@ -6,16 +6,22 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
-class BP_cmp_pocket_watch_mrh_01_e_ItemInfo_C: public ItemInfo
+// Size 0x0
+class BP_cmp_pocket_watch_mrh_01_e_ItemInfo_C: public 1st_item_loco_telescope_runbackward_2h
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 
 // Size 0x0
-class BP_cmp_pocket_watch_mrh_01_e_Wieldable_C: public BP_PocketWatch_C
+class BP_cmp_pocket_watch_mrh_01_e_Wieldable_C: public None
+{
+public:
+};
+
+
+// Size 0x0
+class BP_cmp_pocketwatch_mrh_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };
@@ -44,13 +50,6 @@ public:
 
 // Size 0x0
 class BP_cmp_pocket_watch_mrh_01_b_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_cmp_pocketwatch_mrh_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

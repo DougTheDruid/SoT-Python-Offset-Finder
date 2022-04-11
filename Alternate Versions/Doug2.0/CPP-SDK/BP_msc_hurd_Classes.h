@@ -27,25 +27,22 @@ public:
 };
 
 
-// Size 0x8
-class BP_msc_hurdygurdy_wth_01_a_v01_ItemInfo_C: public ItemInfo
+// Size 0x10
+class BP_msc_hurdygurdy_smp_01_a_v01_ItemInfo_C: public Actor
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d0(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x3d8(0x8)
 };
 
 
-// Size 0x0
-class BP_msc_hurdygurdy_wth_01_a_v01_Wieldable_C: public BP_HurdyGurdy_C
+// Size 0x18
+class BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C: public Actor
 {
 public:
-};
-
-
-// Size 0x0
-class BP_msc_hurdygurdy_01_f_ItemDesc_C: public ItemDesc
-{
-public:
+	Class ParticleSystemComponent*                               ParticleSystemComponent0;                          // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d8(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x3e0(0x8)
 };
 
 
@@ -58,6 +55,13 @@ public:
 
 // Size 0x0
 class BP_msc_hurdygurdy_wth_01_a_v01_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_msc_hurdygurdy_01_f_ItemDesc_C: public ItemDesc
 {
 public:
 };

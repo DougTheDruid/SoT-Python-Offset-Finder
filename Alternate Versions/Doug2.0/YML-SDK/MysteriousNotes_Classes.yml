@@ -9,8 +9,8 @@ HasPlayerMysteriousNotesRadialContext:
 LookingAtMysteriousNoteInputComponent:
   Attributes: []
   ClassSize: '0x30'
-  FullSize: '0x2b0'
-  InheritedSize: '0x280'
+  FullSize: '0x2d0'
+  InheritedSize: '0x2a0'
   Super: LookingAtWieldableInputComponent
 MysteriousNoteDesc:
   Attributes: []
@@ -96,8 +96,8 @@ PlayerMysteriousNoteComponent:
     Offset: '0xe9'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x170'
-  FullSize: '0x238'
+  ClassSize: '0x188'
+  FullSize: '0x250'
   InheritedSize: '0xc8'
   Super: ActorComponent
 PlayerMysteriousNoteInterface:
@@ -128,20 +128,16 @@ WieldableMysteriousNote:
     Offset: '0x7b8'
     Size: '0x4'
     Type: float
-  - Name: NamedNotificationInputComponent
-    Offset: '0x810'
-    Size: '0x8'
-    Type: Class NamedNotificationInputComponent*
   - Name: UsableWieldableComponent
-    Offset: '0x818'
+    Offset: '0x810'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   - Name: InventoryItemComponent
-    Offset: '0x820'
+    Offset: '0x818'
     Size: '0x8'
     Type: Class InventoryItemComponent*
-  ClassSize: '0x1b0'
-  FullSize: '0x940'
+  ClassSize: '0x1a0'
+  FullSize: '0x930'
   InheritedSize: '0x790'
   Super: SkeletalMeshWieldableItem
 WieldableMysteriousNoteDataAsset:

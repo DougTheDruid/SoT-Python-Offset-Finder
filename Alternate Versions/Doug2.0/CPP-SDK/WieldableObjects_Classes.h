@@ -315,6 +315,13 @@ public:
 
 
 // Size 0x0
+class ALK_WieldableObject_Jar_C: public WieldableItemAnimationStoreId
+{
+public:
+};
+
+
+// Size 0x0
 class ALK_WieldableObject_Key_C: public WieldableItemAnimationStoreId
 {
 public:

@@ -6,13 +6,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ServiceMessagingInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ServiceMessagingFunctions": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",

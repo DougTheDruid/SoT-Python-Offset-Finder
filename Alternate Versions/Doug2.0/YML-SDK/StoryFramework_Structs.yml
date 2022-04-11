@@ -6,18 +6,33 @@ ActorLocationPair:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct StringAssetReference
-  ClassSize: '0x30'
+  - Name: DevSpawnLocation
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x40'
 NamedPointsActorLocation:
+  Attributes:
+  - Name: ActorWithNamedPointsComponent
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: DevActorWithNamedPointsComponent
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: GroupLocations
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct NamedPointsGroupActorLocation>
+  ClassSize: '0x30'
+NamedPointsGroupActorLocation:
   Attributes:
   - Name: NamedPointsGroup
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: ActorWithNamedPointsComponent
-    Offset: '0x8'
-    Size: '0x10'
-    Type: Struct StringAssetReference
-  ClassSize: '0x38'
+  ClassSize: '0x28'
 PhasedActorInfo:
   Attributes:
   - Name: MapActor
@@ -29,6 +44,13 @@ PhasedActorInfo:
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x18'
+SpawnedActorsComponentList:
+  Attributes:
+  - Name: ComponentsList
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class ComponentsList*>
+  ClassSize: '0x10'
 SpawnedActorsList:
   Attributes:
   - Name: ActorsList
@@ -38,11 +60,18 @@ SpawnedActorsList:
   ClassSize: '0x10'
 StoriesChangedTelemetryEvent:
   Attributes:
-  - Name: ActiveStories
+  - Name: AllStories
     Offset: '0x0'
     Size: '0x10'
+    Type: TArray<Str AllStories>
+  - Name: ActiveStories
+    Offset: '0x10'
+    Size: '0x10'
     Type: TArray<Str ActiveStories>
-  ClassSize: '0x10'
+  ClassSize: '0x20'
+StoriesToSpawnedActorsListContainer:
+  Attributes: []
+  ClassSize: '0x50'
 StoryInfo:
   Attributes:
   - Name: Name
@@ -91,3 +120,14 @@ StorySpawnedActorsList:
     Size: '0x10'
     Type: TArray<Struct NamedPointsActorLocation>
   ClassSize: '0x28'
+StorySpawnedNamedPointsList:
+  Attributes:
+  - Name: StoryName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: GroupLocations
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct NamedPointsGroupActorLocation>
+  ClassSize: '0x18'
