@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_Premium_SpawnProxy_C: public Actor
 {
 public:
-	Class PhasedActorComponent*                                  None;                                              // 0x3d0(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3d8(0x8)
+	Class PhasedActorComponent*                                  PhasedActor;                                       // 0x3d0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
 };
 
 

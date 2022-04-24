@@ -13,11 +13,10 @@ public:
 };
 
 
-// Size 0x8
-class BP_cmn_cannon_ball_01_a_ItemInfo_C: public ProjectileItemInfo
+// Size 0x0
+class BP_cmn_cannon_ball_01_a_Proxy_C: public BP_CannonBallProxy_C
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x508(0x8)
 };
 
 
@@ -28,10 +27,11 @@ public:
 };
 
 
-// Size 0x0
-class BP_cmn_cannon_ball_01_a_Proxy_C: public BP_CannonBallProxy_C
+// Size 0x8
+class BP_cmn_cannon_ball_01_a_ItemInfo_C: public ProjectileItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x508(0x8)
 };
 
 

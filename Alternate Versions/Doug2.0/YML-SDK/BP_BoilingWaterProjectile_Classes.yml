@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_BoilingWaterProjectile_C:
   Attributes:
-  - Name: None
+  - Name: Sphere
     Offset: '0x730'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Collision
     Offset: '0x738'
     Size: '0x8'
     Type: Class SphereComponent*

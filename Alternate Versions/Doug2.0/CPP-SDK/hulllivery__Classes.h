@@ -35,48 +35,6 @@ public:
 
 
 // Size 0x0
-class hulllivery_yr1_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class hulllivery_reaper_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class hulllivery_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class hulllivery_merchant_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class hulllivery_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class hulllivery_goldhoarders_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
 class hulllivery_sotthunderpack_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
@@ -239,6 +197,48 @@ public:
 
 // Size 0x0
 class hulllivery_admiral_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class hulllivery_yr1_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class hulllivery_reaper_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class hulllivery_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class hulllivery_merchant_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class hulllivery_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class hulllivery_goldhoarders_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };

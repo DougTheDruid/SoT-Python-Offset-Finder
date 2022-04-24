@@ -710,41 +710,6 @@
       }
     ]
   },
-  "BP_MerchantCrate_AIShipAnyItemCrate_ItemDesc_C": {
-    "Super": "ItemWithoutIconsDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_AI_wpn_unarmedCombat_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      }
-    ]
-  },
-  "BP_AI_wpn_PhantomUnarmedCombat_ItemDesc_C": {
-    "Super": "ItemWithoutIconsDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_AI_wpn_unarmedCombat_ItemDesc_C": {
-    "Super": "ItemWithoutIconsDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BP_MerchantCrate_AnyItemCrate_ItemDesc_C": {
     "Super": "ItemWithoutIconsDesc",
     "FullSize": "0x130",
@@ -756,6 +721,20 @@
     "Super": "BootyItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Campaign005_CursedSails_ShipwrightSue_PreCursedSails_C": {
+    "Super": "BP_Shipwright_C",
+    "FullSize": "0x6c0",
+    "InheritedSize": "0x6c0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Campaign005_CursedSails_ClothingChris_PreCursedSails_C": {
+    "Super": "BP_Clothing_C",
+    "FullSize": "0x688",
+    "InheritedSize": "0x688",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -847,6 +826,20 @@
     "Super": "ClothingDesc",
     "FullSize": "0xe0",
     "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Campaign005_CursedSails_ShopkeeperTravis_PreCursedSails_C": {
+    "Super": "BP_Shopkeeper_C",
+    "FullSize": "0x690",
+    "InheritedSize": "0x690",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Campaign005_CursedSails_WeapondealerWhitney_PreCursedSails_C": {
+    "Super": "BP_Weapondealer_C",
+    "FullSize": "0x688",
+    "InheritedSize": "0x688",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Shovel_C: public Shovel
 {
 public:
-	Class UsableWieldableComponent*                              None;                                              // 0x850(0x8)
+	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x850(0x8)
 };
 
 

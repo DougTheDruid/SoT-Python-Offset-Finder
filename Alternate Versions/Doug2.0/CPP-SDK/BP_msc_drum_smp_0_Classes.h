@@ -13,17 +13,21 @@ public:
 };
 
 
-// Size 0x11
-class BP_msc_drum_smp_01_a_v01_ItemInfo_C: public None
+// Size 0x8
+class BP_msc_drum_smp_01_a_v01_ItemInfo_C: public ItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 
-// Size 0x11
-class BP_msc_drum_smp_01_a_v01_Wieldable_C: public None
+// Size 0x18
+class BP_msc_drum_smp_01_a_v01_Wieldable_C: public BP_Drum_C
 {
 public:
+	Class StaticMeshComponent*                                   shroudmask_tp;                                     // 0x8c0(0x8)
+	Class StaticMeshComponent*                                   shroud_tp;                                         // 0x8c8(0x8)
+	Class StaticMeshComponent*                                   shroud_fp;                                         // 0x8d0(0x8)
 };
 
 

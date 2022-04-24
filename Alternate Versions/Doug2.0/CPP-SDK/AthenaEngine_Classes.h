@@ -71,6 +71,14 @@ public:
 };
 
 
+// Size 0x10
+class PersistentAssetCollectionDataAsset: public DataAsset
+{
+public:
+	TArray<class Assets*>                                        Assets;                                            // 0x28(0x10)
+};
+
+
 // Size 0x0
 class PlayModeHelpers: public BlueprintFunctionLibrary
 {

@@ -17,6 +17,7 @@ public:
 class BP_MysteriousNote_ItemInfo_C: public ItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 

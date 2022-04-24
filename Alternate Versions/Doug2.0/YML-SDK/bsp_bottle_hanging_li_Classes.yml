@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 bsp_bottle_hanging_light_a_C:
   Attributes:
-  - Name: StaticMesh2
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: PointLight1
+  - Name: None
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight
+  - Name: None
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
@@ -24,19 +24,19 @@ bsp_bottle_hanging_light_a_C:
   Super: StaticMeshActor
 bsp_bottle_hanging_light_b_C:
   Attributes:
-  - Name: PointLight1
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight
+  - Name: None
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: StaticMesh1
+  - Name: None
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

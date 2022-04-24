@@ -18,10 +18,17 @@
     "FullSize": "0x508",
     "InheritedSize": "0x500",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x500"
+      }
+    ]
   },
   "BP_tls_hand_lantern_fod_02_a_Wieldable_C": {
-    "Super": "None",
+    "Super": "BP_Lantern_C",
     "FullSize": "0x9c8",
     "InheritedSize": "0x9c8",
     "ClassSize": "0x0",

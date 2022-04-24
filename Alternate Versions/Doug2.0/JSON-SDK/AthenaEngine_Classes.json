@@ -75,6 +75,20 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "PersistentAssetCollectionDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Assets",
+        "Type": "TArray<class Assets*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "PlayModeHelpers": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",

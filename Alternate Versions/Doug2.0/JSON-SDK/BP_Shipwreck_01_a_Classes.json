@@ -1,0 +1,2672 @@
+{
+  "BP_Shipwreck_01_a_C": {
+    "Super": "Shipwreck",
+    "FullSize": "0x1288",
+    "InheritedSize": "0x4b0",
+    "ClassSize": "0xdd8",
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
+        "Type": "Struct PointerToUberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      },
+      {
+        "Name": "Audio",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "Spawner_FireworkCrates",
+        "Type": "Class ItemSpawnComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "BP_ShipwreckTridentSpawner",
+        "Type": "BlueprintGeneratedClass BP_ShipwreckChestSpawner_C*",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "BP_ShipwreckReapersChestsSpawner",
+        "Type": "BlueprintGeneratedClass BP_ShipwreckReapersChestsSpawner_C*",
+        "Size": "0x8",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "Spawner_GunpowderBarrels",
+        "Type": "Class ItemSpawnComponent*",
+        "Size": "0x8",
+        "Offset": "0x4d8"
+      },
+      {
+        "Name": "Spawner_Crates",
+        "Type": "Class ItemSpawnComponent*",
+        "Size": "0x8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "Spawner_MermaidGems",
+        "Type": "BlueprintGeneratedClass BP_ShipwreckChestSpawner_C*",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "Barnacles",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "Spawner_MerchantCommodities",
+        "Type": "Class ItemSpawnComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f8"
+      },
+      {
+        "Name": "Spawner_MessageInABottle",
+        "Type": "Class ItemSpawnComponent*",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Name": "BP_ShipwreckSkullSpawner",
+        "Type": "BlueprintGeneratedClass BP_ShipwreckChestSpawner_C*",
+        "Size": "0x8",
+        "Offset": "0x508"
+      },
+      {
+        "Name": "shp_wreck_simple_hits_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x510"
+      },
+      {
+        "Name": "shp_interior_map_deck_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x518"
+      },
+      {
+        "Name": "StaticMesh178",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "shp_interior_captains_cabin_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x528"
+      },
+      {
+        "Name": "shp_int_map_stairs_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "shp_deck_forecastle_steps_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "cmn_barrel_debris_04_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "shp_stern_staircase_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x548"
+      },
+      {
+        "Name": "shp_stern_staircase_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x550"
+      },
+      {
+        "Name": "shp_wheel_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x558"
+      },
+      {
+        "Name": "shp_interior_brig_deck_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x560"
+      },
+      {
+        "Name": "cap_book_stand_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x568"
+      },
+      {
+        "Name": "cap_bunk_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x570"
+      },
+      {
+        "Name": "cap_shark_jaws_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x578"
+      },
+      {
+        "Name": "cap_wooden_plaque_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x580"
+      },
+      {
+        "Name": "bld_tvn_table_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x588"
+      },
+      {
+        "Name": "bld_int_large_shelf_02_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x590"
+      },
+      {
+        "Name": "bld_tvn_rug_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "bld_int_small_shelves_03_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5a0"
+      },
+      {
+        "Name": "StaticMesh155",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "StaticMesh157",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Name": "StaticMesh158",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "StaticMesh159",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "cmn_walk_plank_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "StaticMesh160",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "StaticMesh161",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "StaticMesh162",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Name": "shp_shipwreck_sail_controls_block_fixed_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      },
+      {
+        "Name": "shp_shipwreck_sail_controls_cleat_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5f0"
+      },
+      {
+        "Name": "cmn_walk_plank_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5f8"
+      },
+      {
+        "Name": "StaticMesh168",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "StaticMesh167",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "StaticMesh166",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "StaticMesh165",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x618"
+      },
+      {
+        "Name": "StaticMesh164",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x620"
+      },
+      {
+        "Name": "StaticMesh163",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Name": "shp_shipwreck_sail_controls_cleat_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x630"
+      },
+      {
+        "Name": "cap_shipwreck_curtain_rail_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x638"
+      },
+      {
+        "Name": "StaticMesh17shp_shipwreck_hull_ladder_01_a15",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Name": "shp_shipwreck_hull_ladder_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x648"
+      },
+      {
+        "Name": "cap_cabinet_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x650"
+      },
+      {
+        "Name": "shp_wreck_captain_cabin_door_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x658"
+      },
+      {
+        "Name": "StaticMesh19",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x660"
+      },
+      {
+        "Name": "StaticMesh38",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x668"
+      },
+      {
+        "Name": "StaticMesh27",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x670"
+      },
+      {
+        "Name": "StaticMesh28",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x678"
+      },
+      {
+        "Name": "StaticMesh29",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x680"
+      },
+      {
+        "Name": "StaticMesh31",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x688"
+      },
+      {
+        "Name": "StaticMesh32",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x690"
+      },
+      {
+        "Name": "StaticMesh33",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x698"
+      },
+      {
+        "Name": "StaticMesh34",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "StaticMesh35",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a8"
+      },
+      {
+        "Name": "StaticMesh36",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b0"
+      },
+      {
+        "Name": "StaticMesh63",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b8"
+      },
+      {
+        "Name": "StaticMesh44",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c0"
+      },
+      {
+        "Name": "StaticMesh39",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c8"
+      },
+      {
+        "Name": "StaticMesh42",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6d0"
+      },
+      {
+        "Name": "StaticMesh43",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6d8"
+      },
+      {
+        "Name": "StaticMesh45",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6e0"
+      },
+      {
+        "Name": "StaticMesh23",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6e8"
+      },
+      {
+        "Name": "StaticMesh46",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f0"
+      },
+      {
+        "Name": "StaticMesh47",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f8"
+      },
+      {
+        "Name": "StaticMesh61",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x700"
+      },
+      {
+        "Name": "StaticMesh37",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x708"
+      },
+      {
+        "Name": "StaticMesh64",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x710"
+      },
+      {
+        "Name": "StaticMesh65",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x718"
+      },
+      {
+        "Name": "StaticMesh30",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x720"
+      },
+      {
+        "Name": "StaticMesh24",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x728"
+      },
+      {
+        "Name": "cabin_window_feature_glass_ext",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x730"
+      },
+      {
+        "Name": "StaticMesh41",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x738"
+      },
+      {
+        "Name": "StaticMesh59",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x740"
+      },
+      {
+        "Name": "StaticMesh58",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x748"
+      },
+      {
+        "Name": "StaticMesh57",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x750"
+      },
+      {
+        "Name": "StaticMesh56",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x758"
+      },
+      {
+        "Name": "StaticMesh55",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x760"
+      },
+      {
+        "Name": "StaticMesh60",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "StaticMesh22",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "StaticMesh21",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "StaticMesh20",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "StaticMesh11",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "StaticMesh18",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "StaticMesh17",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Name": "StaticMesh1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Name": "StaticMesh15",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "StaticMesh14",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      },
+      {
+        "Name": "StaticMesh13",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b8"
+      },
+      {
+        "Name": "StaticMesh12",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c0"
+      },
+      {
+        "Name": "StaticMesh9",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Name": "StaticMesh8",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Name": "StaticMesh7",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Name": "StaticMesh6",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      },
+      {
+        "Name": "StaticMesh5",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      },
+      {
+        "Name": "StaticMesh3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f0"
+      },
+      {
+        "Name": "StaticMesh2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Name": "StaticMesh16",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x800"
+      },
+      {
+        "Name": "StaticMesh51",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x808"
+      },
+      {
+        "Name": "StaticMesh49",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x810"
+      },
+      {
+        "Name": "StaticMesh52",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x818"
+      },
+      {
+        "Name": "StaticMesh50",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x820"
+      },
+      {
+        "Name": "StaticMesh53",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x828"
+      },
+      {
+        "Name": "StaticMesh54",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x830"
+      },
+      {
+        "Name": "cmn_capstan_01__rope_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x838"
+      },
+      {
+        "Name": "StaticMesh4",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x840"
+      },
+      {
+        "Name": "cmn_capstan_01__release_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x848"
+      },
+      {
+        "Name": "cmn_capstan_01__arm_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x850"
+      },
+      {
+        "Name": "cmn_capstan_01__arm_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x858"
+      },
+      {
+        "Name": "cmn_capstan_01__arm_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x860"
+      },
+      {
+        "Name": "cmn_capstan_01__body_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x868"
+      },
+      {
+        "Name": "StaticMesh25",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x870"
+      },
+      {
+        "Name": "StaticMesh180",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x878"
+      },
+      {
+        "Name": "StaticMesh179",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x880"
+      },
+      {
+        "Name": "StaticMesh182",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x888"
+      },
+      {
+        "Name": "StaticMesh181",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x890"
+      },
+      {
+        "Name": "shp_shipwreck_mast_ladder_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x898"
+      },
+      {
+        "Name": "shp_mast_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8a0"
+      },
+      {
+        "Name": "shp_mast_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8a8"
+      },
+      {
+        "Name": "shp_crows_nest_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8b0"
+      },
+      {
+        "Name": "shp_mast_crossbeam_top_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8b8"
+      },
+      {
+        "Name": "shp_mast_crossbeam_mid_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8c0"
+      },
+      {
+        "Name": "StaticMesh175",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8c8"
+      },
+      {
+        "Name": "StaticMesh176",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8d0"
+      },
+      {
+        "Name": "shp_hull_rudder_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8d8"
+      },
+      {
+        "Name": "shp_galleon_upper_hull_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8e0"
+      },
+      {
+        "Name": "shp_shipwreck_galleon_main_deck_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8e8"
+      },
+      {
+        "Name": "fig_blank_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8f0"
+      },
+      {
+        "Name": "shp_galleon_lower_hull_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8f8"
+      },
+      {
+        "Name": "exterior_ship",
+        "Type": "Class MergedStaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x900"
+      },
+      {
+        "Name": "shp_int_brig_stairs_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x908"
+      },
+      {
+        "Name": "StaticMesh81",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x910"
+      },
+      {
+        "Name": "vfx_debris_metal_03__nail",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x918"
+      },
+      {
+        "Name": "shp_map_tab_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x920"
+      },
+      {
+        "Name": "StaticMesh156",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x928"
+      },
+      {
+        "Name": "StaticMesh153",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x930"
+      },
+      {
+        "Name": "StaticMesh152",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x938"
+      },
+      {
+        "Name": "StaticMesh10",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x940"
+      },
+      {
+        "Name": "StaticMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x948"
+      },
+      {
+        "Name": "StaticMesh154",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x950"
+      },
+      {
+        "Name": "StaticMesh169",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x958"
+      },
+      {
+        "Name": "StaticMesh170",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x960"
+      },
+      {
+        "Name": "StaticMesh171",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x968"
+      },
+      {
+        "Name": "StaticMesh172",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x970"
+      },
+      {
+        "Name": "shp_cooker_01_a",
+        "Type": "Class SkeletalMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x978"
+      },
+      {
+        "Name": "shp_kitchen_shelf_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x980"
+      },
+      {
+        "Name": "shp_kitchen_shelf_02_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x988"
+      },
+      {
+        "Name": "shp_kitchen_worktop_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x990"
+      },
+      {
+        "Name": "StaticMesh174",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x998"
+      },
+      {
+        "Name": "StaticMesh173",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9a0"
+      },
+      {
+        "Name": "shp_shipwreck_barrel_ropes_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9a8"
+      },
+      {
+        "Name": "cmn_barrel_debris_03_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9b0"
+      },
+      {
+        "Name": "StaticMesh177",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9b8"
+      },
+      {
+        "Name": "cmn_barrel_debris_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9c0"
+      },
+      {
+        "Name": "cmn_barrel_debris_04_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9c8"
+      },
+      {
+        "Name": "cmn_barrel_debris_04_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9d0"
+      },
+      {
+        "Name": "cmn_barrel_debris_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9d8"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9e0"
+      },
+      {
+        "Name": "cmn_barrel_debris_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9e8"
+      },
+      {
+        "Name": "cmn_barrel_debris_03_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9f0"
+      },
+      {
+        "Name": "cmn_barrel_debris_04_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9f8"
+      },
+      {
+        "Name": "cmn_barrel_debris_01_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa00"
+      },
+      {
+        "Name": "cmn_barrel_debris_04_a4",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa08"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa10"
+      },
+      {
+        "Name": "StaticMesh128",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa18"
+      },
+      {
+        "Name": "StaticMesh127",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa20"
+      },
+      {
+        "Name": "StaticMesh126",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa28"
+      },
+      {
+        "Name": "StaticMesh125",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa30"
+      },
+      {
+        "Name": "StaticMesh129",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa38"
+      },
+      {
+        "Name": "StaticMesh123",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa40"
+      },
+      {
+        "Name": "StaticMesh122",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa48"
+      },
+      {
+        "Name": "StaticMesh121",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa50"
+      },
+      {
+        "Name": "StaticMesh124",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa58"
+      },
+      {
+        "Name": "StaticMesh67",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa60"
+      },
+      {
+        "Name": "StaticMesh69",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa68"
+      },
+      {
+        "Name": "StaticMesh68",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa70"
+      },
+      {
+        "Name": "StaticMesh97",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa78"
+      },
+      {
+        "Name": "StaticMesh96",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa80"
+      },
+      {
+        "Name": "StaticMesh95",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa88"
+      },
+      {
+        "Name": "StaticMesh94",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa90"
+      },
+      {
+        "Name": "StaticMesh93",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xa98"
+      },
+      {
+        "Name": "StaticMesh92",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xaa0"
+      },
+      {
+        "Name": "StaticMesh91",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xaa8"
+      },
+      {
+        "Name": "StaticMesh90",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xab0"
+      },
+      {
+        "Name": "StaticMesh89",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xab8"
+      },
+      {
+        "Name": "StaticMesh88",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xac0"
+      },
+      {
+        "Name": "StaticMesh87",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xac8"
+      },
+      {
+        "Name": "StaticMesh86",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xad0"
+      },
+      {
+        "Name": "StaticMesh85",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xad8"
+      },
+      {
+        "Name": "StaticMesh98",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xae0"
+      },
+      {
+        "Name": "StaticMesh83",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xae8"
+      },
+      {
+        "Name": "StaticMesh82",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xaf0"
+      },
+      {
+        "Name": "StaticMesh80",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xaf8"
+      },
+      {
+        "Name": "StaticMesh79",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb00"
+      },
+      {
+        "Name": "StaticMesh78",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb08"
+      },
+      {
+        "Name": "StaticMesh77",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb10"
+      },
+      {
+        "Name": "StaticMesh76",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb18"
+      },
+      {
+        "Name": "StaticMesh75",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb20"
+      },
+      {
+        "Name": "StaticMesh74",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb28"
+      },
+      {
+        "Name": "StaticMesh73",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb30"
+      },
+      {
+        "Name": "StaticMesh72",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb38"
+      },
+      {
+        "Name": "StaticMesh71",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb40"
+      },
+      {
+        "Name": "StaticMesh70",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb48"
+      },
+      {
+        "Name": "StaticMesh84",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb50"
+      },
+      {
+        "Name": "StaticMesh149",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb58"
+      },
+      {
+        "Name": "StaticMesh148",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb60"
+      },
+      {
+        "Name": "StaticMesh147",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb68"
+      },
+      {
+        "Name": "StaticMesh140",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb70"
+      },
+      {
+        "Name": "StaticMesh151",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb78"
+      },
+      {
+        "Name": "StaticMesh144",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb80"
+      },
+      {
+        "Name": "StaticMesh143",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb88"
+      },
+      {
+        "Name": "StaticMesh142",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb90"
+      },
+      {
+        "Name": "StaticMesh141",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb98"
+      },
+      {
+        "Name": "StaticMesh146",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xba0"
+      },
+      {
+        "Name": "StaticMesh145",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xba8"
+      },
+      {
+        "Name": "StaticMesh139",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbb0"
+      },
+      {
+        "Name": "StaticMesh138",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbb8"
+      },
+      {
+        "Name": "StaticMesh137",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbc0"
+      },
+      {
+        "Name": "StaticMesh136",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbc8"
+      },
+      {
+        "Name": "StaticMesh135",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbd0"
+      },
+      {
+        "Name": "StaticMesh134",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbd8"
+      },
+      {
+        "Name": "StaticMesh133",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbe0"
+      },
+      {
+        "Name": "StaticMesh132",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbe8"
+      },
+      {
+        "Name": "StaticMesh131",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbf0"
+      },
+      {
+        "Name": "StaticMesh130",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xbf8"
+      },
+      {
+        "Name": "StaticMesh150",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc00"
+      },
+      {
+        "Name": "StaticMesh119",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc08"
+      },
+      {
+        "Name": "StaticMesh118",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc10"
+      },
+      {
+        "Name": "StaticMesh117",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc18"
+      },
+      {
+        "Name": "StaticMesh116",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc20"
+      },
+      {
+        "Name": "StaticMesh115",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc28"
+      },
+      {
+        "Name": "StaticMesh114",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc30"
+      },
+      {
+        "Name": "StaticMesh113",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc38"
+      },
+      {
+        "Name": "StaticMesh112",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc40"
+      },
+      {
+        "Name": "StaticMesh111",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc48"
+      },
+      {
+        "Name": "StaticMesh110",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc50"
+      },
+      {
+        "Name": "StaticMesh109",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc58"
+      },
+      {
+        "Name": "StaticMesh108",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc60"
+      },
+      {
+        "Name": "StaticMesh107",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc68"
+      },
+      {
+        "Name": "StaticMesh106",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc70"
+      },
+      {
+        "Name": "StaticMesh105",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc78"
+      },
+      {
+        "Name": "StaticMesh104",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc80"
+      },
+      {
+        "Name": "StaticMesh103",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc88"
+      },
+      {
+        "Name": "StaticMesh102",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc90"
+      },
+      {
+        "Name": "StaticMesh101",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xc98"
+      },
+      {
+        "Name": "StaticMesh100",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xca0"
+      },
+      {
+        "Name": "StaticMesh99",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xca8"
+      },
+      {
+        "Name": "StaticMesh120",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xcb0"
+      },
+      {
+        "Name": "interior_pieces_ship",
+        "Type": "Class MergedStaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xcb8"
+      },
+      {
+        "Name": "shp_shark_hits_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xcc0"
+      },
+      {
+        "Name": "shp_wreck_rain_occlusion",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xcc8"
+      },
+      {
+        "Name": "Decal86",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xcd0"
+      },
+      {
+        "Name": "Decal85",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xcd8"
+      },
+      {
+        "Name": "Decal84",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xce0"
+      },
+      {
+        "Name": "Decal83",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xce8"
+      },
+      {
+        "Name": "Decal82",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xcf0"
+      },
+      {
+        "Name": "Decal81",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xcf8"
+      },
+      {
+        "Name": "Decal80",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd00"
+      },
+      {
+        "Name": "Decal79",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd08"
+      },
+      {
+        "Name": "Decal78",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd10"
+      },
+      {
+        "Name": "Decal77",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd18"
+      },
+      {
+        "Name": "Decal76",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd20"
+      },
+      {
+        "Name": "Decal75",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd28"
+      },
+      {
+        "Name": "Decal74",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd30"
+      },
+      {
+        "Name": "Decal73",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd38"
+      },
+      {
+        "Name": "Decal72",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd40"
+      },
+      {
+        "Name": "Decal71",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd48"
+      },
+      {
+        "Name": "Decal70",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd50"
+      },
+      {
+        "Name": "Decal69",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd58"
+      },
+      {
+        "Name": "Decal68",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd60"
+      },
+      {
+        "Name": "Decal67",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd68"
+      },
+      {
+        "Name": "Decal66",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd70"
+      },
+      {
+        "Name": "Decal65",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd78"
+      },
+      {
+        "Name": "Decal64",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd80"
+      },
+      {
+        "Name": "Decal63",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd88"
+      },
+      {
+        "Name": "Decal62",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd90"
+      },
+      {
+        "Name": "Decal61",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xd98"
+      },
+      {
+        "Name": "Decal60",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xda0"
+      },
+      {
+        "Name": "Decal59",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xda8"
+      },
+      {
+        "Name": "Decal58",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xdb0"
+      },
+      {
+        "Name": "Decal57",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xdb8"
+      },
+      {
+        "Name": "Decal56",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xdc0"
+      },
+      {
+        "Name": "Decal55",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xdc8"
+      },
+      {
+        "Name": "Decal54",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xdd0"
+      },
+      {
+        "Name": "Decal53",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xdd8"
+      },
+      {
+        "Name": "Decal52",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xde0"
+      },
+      {
+        "Name": "Decal51",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xde8"
+      },
+      {
+        "Name": "Decal50",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xdf0"
+      },
+      {
+        "Name": "Decal49",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xdf8"
+      },
+      {
+        "Name": "Decal48",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe00"
+      },
+      {
+        "Name": "Decal47",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe08"
+      },
+      {
+        "Name": "Decal46",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe10"
+      },
+      {
+        "Name": "Decal45",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe18"
+      },
+      {
+        "Name": "Decal44",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe20"
+      },
+      {
+        "Name": "Decal43",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe28"
+      },
+      {
+        "Name": "Decal42",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe30"
+      },
+      {
+        "Name": "Decal41",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe38"
+      },
+      {
+        "Name": "Decal40",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe40"
+      },
+      {
+        "Name": "Decal39",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe48"
+      },
+      {
+        "Name": "Decal38",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe50"
+      },
+      {
+        "Name": "Decal37",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe58"
+      },
+      {
+        "Name": "Decal36",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe60"
+      },
+      {
+        "Name": "Decal35",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe68"
+      },
+      {
+        "Name": "Decal34",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe70"
+      },
+      {
+        "Name": "Decal33",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe78"
+      },
+      {
+        "Name": "Decal32",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe80"
+      },
+      {
+        "Name": "Decal31",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe88"
+      },
+      {
+        "Name": "Decal30",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe90"
+      },
+      {
+        "Name": "Decal29",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xe98"
+      },
+      {
+        "Name": "Decal28",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xea0"
+      },
+      {
+        "Name": "Decal27",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xea8"
+      },
+      {
+        "Name": "Decal26",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xeb0"
+      },
+      {
+        "Name": "Decal25",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xeb8"
+      },
+      {
+        "Name": "Decal24",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xec0"
+      },
+      {
+        "Name": "Decal23",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xec8"
+      },
+      {
+        "Name": "Decal22",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xed0"
+      },
+      {
+        "Name": "Decal21",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xed8"
+      },
+      {
+        "Name": "Decal20",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xee0"
+      },
+      {
+        "Name": "Decal19",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xee8"
+      },
+      {
+        "Name": "Decal18",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xef0"
+      },
+      {
+        "Name": "Decal17",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xef8"
+      },
+      {
+        "Name": "Decal16",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf00"
+      },
+      {
+        "Name": "Decal15",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf08"
+      },
+      {
+        "Name": "Decal14",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf10"
+      },
+      {
+        "Name": "Decal13",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf18"
+      },
+      {
+        "Name": "Decal12",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf20"
+      },
+      {
+        "Name": "Decal11",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf28"
+      },
+      {
+        "Name": "Decal10",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf30"
+      },
+      {
+        "Name": "Decal9",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf38"
+      },
+      {
+        "Name": "Decal8",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf40"
+      },
+      {
+        "Name": "Decal7",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf48"
+      },
+      {
+        "Name": "Decal6",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf50"
+      },
+      {
+        "Name": "Decal5",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf58"
+      },
+      {
+        "Name": "Decal4",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf60"
+      },
+      {
+        "Name": "Decal3",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf68"
+      },
+      {
+        "Name": "Decal2",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf70"
+      },
+      {
+        "Name": "Decal1",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf78"
+      },
+      {
+        "Name": "Decal",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xf80"
+      },
+      {
+        "Name": "ParticleSystem30",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xf88"
+      },
+      {
+        "Name": "ParticleSystem28",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xf90"
+      },
+      {
+        "Name": "ParticleSystem27",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xf98"
+      },
+      {
+        "Name": "ParticleSystem26",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfa0"
+      },
+      {
+        "Name": "ParticleSystem25",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfa8"
+      },
+      {
+        "Name": "ParticleSystem24",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfb0"
+      },
+      {
+        "Name": "ParticleSystem23",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfb8"
+      },
+      {
+        "Name": "ParticleSystem21",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfc0"
+      },
+      {
+        "Name": "ParticleSystem20",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfc8"
+      },
+      {
+        "Name": "ParticleSystem18",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfd0"
+      },
+      {
+        "Name": "ParticleSystem17",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfd8"
+      },
+      {
+        "Name": "ParticleSystem16",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfe0"
+      },
+      {
+        "Name": "ParticleSystem15",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xfe8"
+      },
+      {
+        "Name": "ParticleSystem14",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xff0"
+      },
+      {
+        "Name": "ParticleSystem13",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xff8"
+      },
+      {
+        "Name": "ParticleSystem11",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1000"
+      },
+      {
+        "Name": "ParticleSystem10",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1008"
+      },
+      {
+        "Name": "ParticleSystem9",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1010"
+      },
+      {
+        "Name": "ParticleSystem7",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1018"
+      },
+      {
+        "Name": "ParticleSystem6",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1020"
+      },
+      {
+        "Name": "ParticleSystem5",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1028"
+      },
+      {
+        "Name": "ParticleSystem4",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1030"
+      },
+      {
+        "Name": "ParticleSystem3",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1038"
+      },
+      {
+        "Name": "ParticleSystem1",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1040"
+      },
+      {
+        "Name": "ParticleSystem",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1048"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1050"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1058"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1060"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1068"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1070"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1078"
+      },
+      {
+        "Name": "barrel_09",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1080"
+      },
+      {
+        "Name": "barrel_06",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1088"
+      },
+      {
+        "Name": "barrel_05",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1090"
+      },
+      {
+        "Name": "barrel_04",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1098"
+      },
+      {
+        "Name": "barrel_03",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10a0"
+      },
+      {
+        "Name": "barrel_02",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10a8"
+      },
+      {
+        "Name": "barrel_01",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10b0"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10b8"
+      },
+      {
+        "Name": "ChildActor15",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10c0"
+      },
+      {
+        "Name": "Decal87",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0x10c8"
+      },
+      {
+        "Name": "ChildActor40",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10d0"
+      },
+      {
+        "Name": "ChildActor27",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10d8"
+      },
+      {
+        "Name": "ChildActor26",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10e0"
+      },
+      {
+        "Name": "ChildActor25",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10e8"
+      },
+      {
+        "Name": "ChildActor20",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10f0"
+      },
+      {
+        "Name": "ChildActor56",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x10f8"
+      },
+      {
+        "Name": "ChildActor42",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1100"
+      },
+      {
+        "Name": "ChildActor55",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1108"
+      },
+      {
+        "Name": "ChildActor54",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1110"
+      },
+      {
+        "Name": "ChildActor39",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1118"
+      },
+      {
+        "Name": "ChildActor53",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1120"
+      },
+      {
+        "Name": "ChildActor52",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1128"
+      },
+      {
+        "Name": "ChildActor51",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1130"
+      },
+      {
+        "Name": "ChildActor50",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1138"
+      },
+      {
+        "Name": "ChildActor49",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1140"
+      },
+      {
+        "Name": "ChildActor45",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1148"
+      },
+      {
+        "Name": "ChildActor48",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1150"
+      },
+      {
+        "Name": "ChildActor47",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1158"
+      },
+      {
+        "Name": "ChildActor46",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1160"
+      },
+      {
+        "Name": "ChildActor44",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1168"
+      },
+      {
+        "Name": "ChildActor43",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1170"
+      },
+      {
+        "Name": "bp_light_volume_underwater_a1",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1178"
+      },
+      {
+        "Name": "ChildActor41",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1180"
+      },
+      {
+        "Name": "bp_light_volume_sphere_orange_a",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1188"
+      },
+      {
+        "Name": "ChildActor38",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1190"
+      },
+      {
+        "Name": "ChildActor37",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1198"
+      },
+      {
+        "Name": "ChildActor36",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11a0"
+      },
+      {
+        "Name": "ChildActor34",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11a8"
+      },
+      {
+        "Name": "ChildActor29",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11b0"
+      },
+      {
+        "Name": "ChildActor24",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11b8"
+      },
+      {
+        "Name": "ChildActor23",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11c0"
+      },
+      {
+        "Name": "ChildActor22",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11c8"
+      },
+      {
+        "Name": "ChildActor19",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11d0"
+      },
+      {
+        "Name": "ChildActor17",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11d8"
+      },
+      {
+        "Name": "ChildActor14",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11e0"
+      },
+      {
+        "Name": "ChildActor13",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11e8"
+      },
+      {
+        "Name": "bp_light_volume_underwater_a",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x11f0"
+      },
+      {
+        "Name": "BP_ShipwreckBananaSpawnerBottomDeck",
+        "Type": "BlueprintGeneratedClass BP_ShipwreckBananaSpawner_C*",
+        "Size": "0x8",
+        "Offset": "0x11f8"
+      },
+      {
+        "Name": "BP_ShipwreckBananaSpawnerTopDeck",
+        "Type": "BlueprintGeneratedClass BP_ShipwreckBananaSpawner_C*",
+        "Size": "0x8",
+        "Offset": "0x1200"
+      },
+      {
+        "Name": "BP_ShipwreckWoodSpawnerBottomDeck",
+        "Type": "BlueprintGeneratedClass BP_ShipwreckWoodSpawner_C*",
+        "Size": "0x8",
+        "Offset": "0x1208"
+      },
+      {
+        "Name": "BP_ShipwreckWoodSpawnerMiddleDeck",
+        "Type": "BlueprintGeneratedClass BP_ShipwreckWoodSpawner_C*",
+        "Size": "0x8",
+        "Offset": "0x1210"
+      },
+      {
+        "Name": "BP_ShipwreckChestSpawner",
+        "Type": "BlueprintGeneratedClass BP_ShipwreckChestSpawner_C*",
+        "Size": "0x8",
+        "Offset": "0x1218"
+      },
+      {
+        "Name": "BP_ShipwreckStorageBarrel_Grog",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1220"
+      },
+      {
+        "Name": "barrel_07",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1228"
+      },
+      {
+        "Name": "barrel_08",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1230"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1238"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1240"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1248"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1250"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1258"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1260"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1268"
+      },
+      {
+        "Name": "Barrel",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1270"
+      },
+      {
+        "Name": "SeagulHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1278"
+      },
+      {
+        "Name": "Seagulls",
+        "Type": "BlueprintGeneratedClass BP_Seagull01_32POI_Circling_Shipwreck_C*",
+        "Size": "0x8",
+        "Offset": "0x1280"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

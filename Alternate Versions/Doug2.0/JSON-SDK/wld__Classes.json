@@ -1,33 +1,19 @@
 {
-  "wld_resource_island_01_b_vfx_C": {
+  "wld_resource_island_01_calmwater_C": {
     "Super": "LevelScriptActor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d8",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "wld_resource_island_01_b_audio_C": {
+  "wld_resource_island_02_d_calmwater_C": {
     "Super": "LevelScriptActor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d8",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "wld_resource_island_01_b_design_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "wld_resource_island_01_b_terrain_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "wld_resource_island_01_b_calmwater_C": {
+  "wld_resource_island_02_e_calmwater_C": {
     "Super": "LevelScriptActor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d8",

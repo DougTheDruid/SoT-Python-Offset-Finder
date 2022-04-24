@@ -55,20 +55,6 @@
       }
     ]
   },
-  "BP_SirenTrident_ItemInfo_C": {
-    "Super": "None",
-    "FullSize": "0x3f53b29b",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x3f53b29b",
-    "Attributes": []
-  },
-  "BP_SirenTrident_Proxy_C": {
-    "Super": "None",
-    "FullSize": "-0x43479468",
-    "InheritedSize": "0x0",
-    "ClassSize": "-0x43479468",
-    "Attributes": []
-  },
   "BP_SirenTrident_ItemDesc_C": {
     "Super": "ItemWithoutIconsDesc",
     "FullSize": "0x130",

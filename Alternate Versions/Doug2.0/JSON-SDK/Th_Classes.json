@@ -6,7 +6,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "gmp_tal_shroudbreaker_statue_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"

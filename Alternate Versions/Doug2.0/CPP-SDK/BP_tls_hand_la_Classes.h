@@ -24,11 +24,12 @@ public:
 class BP_tls_hand_lantern_fod_02_a_ItemInfo_C: public ItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 
 // Size 0x0
-class BP_tls_hand_lantern_fod_02_a_Wieldable_C: public None
+class BP_tls_hand_lantern_fod_02_a_Wieldable_C: public BP_Lantern_C
 {
 public:
 };

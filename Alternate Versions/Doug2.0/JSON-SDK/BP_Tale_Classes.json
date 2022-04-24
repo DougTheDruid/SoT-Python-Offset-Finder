@@ -6,43 +6,43 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Arrow",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x768"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x770"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x788"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x790"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x798"
@@ -56,43 +56,43 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Arrow",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x768"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x770"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x788"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x790"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x798"
@@ -106,43 +106,43 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Arrow",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x768"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x770"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x788"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x790"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x798"
@@ -156,43 +156,43 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Arrow",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x768"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x770"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x788"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x790"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x798"
@@ -206,43 +206,43 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Arrow",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x768"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x770"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x788"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x790"
       },
       {
-        "Name": "None",
+        "Name": "TaleSelectionSlot",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x798"

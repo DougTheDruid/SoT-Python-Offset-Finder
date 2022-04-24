@@ -31,14 +31,14 @@ public:
 class BP_tls_bucket_bdg_01_a_ItemInfo_C: public ItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 
-// Size -0x11
-class BP_tls_bucket_bdg_01_a_Wieldable_C: public EventWieldableItemUseStoppedAndFullyHidden
+// Size 0x0
+class BP_tls_bucket_bdg_01_a_Wieldable_C: public BP_Bucket_C
 {
 public:
-	byte                                                         ByteProperty;                                      // 0x1ac(0x0)
 };
 
 

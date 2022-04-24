@@ -6,10 +6,100 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x930"
+      },
+      {
+        "Name": "LanternTriggerGlow",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x938"
+      },
+      {
+        "Name": "LanternGlow",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x940"
+      },
+      {
+        "Name": "AmbientLightSource",
+        "Type": "Class AmbientLightSourceComponent*",
+        "Size": "0x8",
+        "Offset": "0x948"
+      },
+      {
+        "Name": "SpotLight",
+        "Type": "Class SpotLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x950"
+      },
+      {
+        "Name": "UsableWieldable",
+        "Type": "Class UsableWieldableComponent*",
+        "Size": "0x8",
+        "Offset": "0x958"
+      },
+      {
+        "Name": "LanternGlowDynamicMaterial",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x960"
+      },
+      {
+        "Name": "EmissiveInt_threshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x968"
+      },
+      {
+        "Name": "LanternTriggerGlowDynamicMaterial",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x970"
+      },
+      {
+        "Name": "TriggerGlowDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x978"
+      },
+      {
+        "Name": "TriggerGlowRampInDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x97c"
+      },
+      {
+        "Name": "TriggerGlowRampOutDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x980"
+      },
+      {
+        "Name": "DefaultSpotlightColour",
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x984"
+      },
+      {
+        "Name": "DefaultAmbientLightColour",
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x994"
+      },
+      {
+        "Name": "DefaultGlowColour",
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x9a4"
+      },
+      {
+        "Name": "DynamicMaterials",
+        "Type": "TArray<class DynamicMaterials*>",
+        "Size": "0x10",
+        "Offset": "0x9b8"
       }
     ]
   },

@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Ritual2_L_Effigy_C:
   Attributes:
-  - Name: None
+  - Name: Effigy_L
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -16,11 +16,11 @@ BP_Ritual2_L_Effigy_C:
   Super: Actor
 BP_Ritual2_L_Pendant_C:
   Attributes:
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -30,11 +30,11 @@ BP_Ritual2_L_Pendant_C:
   Super: Actor
 BP_Ritual2_R_Effigy_C:
   Attributes:
-  - Name: None
+  - Name: Effigy_R
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -44,11 +44,11 @@ BP_Ritual2_R_Effigy_C:
   Super: Actor
 BP_Ritual2_R_Pendant_C:
   Attributes:
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -58,19 +58,23 @@ BP_Ritual2_R_Pendant_C:
   Super: Actor
 BP_RitualBottleTop_C:
   Attributes:
-  - Name: None
+  - Name: ptn_pois_stop_01_a
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: "2\u3633\u323A\u0A34\uABC6\b\u6E69\u7551\u4AC0\u20F7\u01E7\0\u5F32\u4547\
+      \u5F4E\u4156\u4952\u4241\u454C\u6500\uABC8\b\u622F\u756C\u7498\uCA46\u01E7\0\
+      \u5042\u525F\u7469u"
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: "1\u7250\u6D6F\u7369\uABC2\b\u6340\u756F\u2F68\u81A0\u01E7\0\u5F31\u4547\
+      \u5F4E\u4156\u4952\u4241\u454C\u6C00\uABC4\b\u6472\u332E\uBC88\u830F\u01E7\0\
+      2\u3633\u323A4"
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -80,19 +84,23 @@ BP_RitualBottleTop_C:
   Super: Actor
 BP_RitualBottle_C:
   Attributes:
-  - Name: None
+  - Name: ptn_pois_01_a
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: "2\u3633\u323A\u0A34\uABC6\b\u6E69\u7551\u4AC0\u20F7\u01E7\0\u5F32\u4547\
+      \u5F4E\u4156\u4952\u4241\u454C\u6500\uABC8\b\u622F\u756C\u7498\uCA46\u01E7\0\
+      \u5042\u525F\u7469u"
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: "1\u7250\u6D6F\u7369\uABC2\b\u6340\u756F\u2F68\u81A0\u01E7\0\u5F31\u4547\
+      \u5F4E\u4156\u4952\u4241\u454C\u6C00\uABC4\b\u6472\u332E\uBC88\u830F\u01E7\0\
+      2\u3633\u323A4"
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -102,7 +110,7 @@ BP_RitualBottle_C:
   Super: Actor
 BP_Skull_OoS_C:
   Attributes:
-  - Name: None
+  - Name: gmp_bounty_skull_01_b
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
@@ -112,7 +120,7 @@ BP_Skull_OoS_C:
   Super: Actor
 BP_TT_RitualBone_C:
   Attributes:
-  - Name: None
+  - Name: BoneMesh
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*

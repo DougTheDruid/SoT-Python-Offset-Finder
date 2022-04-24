@@ -24,26 +24,16 @@ public:
 };
 
 
-// Size 0x48
-class BP_MermaidGem_ItemInfo_Sapphire_C: public BP_Placement_HeightDrop_C
+// Size 0x30
+class BP_TaleBook_CursedRogue_AdditionalPuzzles_C: public VoyageProposalContainer
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x448(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x450(0x8)
-};
-
-
-// Size -0x26bebb0d
-class BP_MermaidGem_ItemInfo_Emerald_C: public None
-{
-public:
+	Class ChildActorComponent*                                   None;                                              // 0x768(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
 };
 
 
@@ -63,13 +53,6 @@ public:
 
 // Size 0x0
 class BP_BuoyantCannonballBarrel_LockedToWater_C: public BP_BuoyantStorageBarrel_LockedToWater_C
-{
-public:
-};
-
-
-// Size 0x20003
-class BP_MermaidGem_ItemInfo_Ruby_C: public None
 {
 public:
 };

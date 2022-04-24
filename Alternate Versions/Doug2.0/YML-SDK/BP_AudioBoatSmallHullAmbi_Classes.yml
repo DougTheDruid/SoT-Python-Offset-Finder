@@ -2,103 +2,103 @@
 # https://github.com/DougTheDruid
 BP_AudioBoatSmallHullAmbi_C:
   Attributes:
-  - Name: None
+  - Name: Triton
     Offset: '0x560'
     Size: '0x8'
     Type: Class TritonComponent*
-  - Name: None
+  - Name: audio_wake_stern
     Offset: '0x568'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_wake_bow
     Offset: '0x570'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_wake_side_L
     Offset: '0x578'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_wake_side_R
     Offset: '0x580'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_nest
     Offset: '0x588'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_mast
     Offset: '0x590'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_FL
     Offset: '0x598'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_FR
     Offset: '0x5a0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_rope_front
     Offset: '0x5a8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_brig_03
     Offset: '0x5b0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_brig_02
     Offset: '0x5b8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_rope_back
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_brig_01
     Offset: '0x5c8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_cabin_04
     Offset: '0x5d0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_cabin_03
     Offset: '0x5d8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_cabin_02
     Offset: '0x5e0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_cabin_01
     Offset: '0x5e8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: audio_creak_smallship_global
     Offset: '0x5f0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: None
+  - Name: DeckGrille
     Offset: '0x5f8'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: BrigDeck
     Offset: '0x600'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: CaptainsCabin_Left
     Offset: '0x608'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: CaptainsCabin_Right
     Offset: '0x610'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: CaptainsCabin_Back
     Offset: '0x618'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: TopToCaptainsCabin
     Offset: '0x620'
     Size: '0x8'
     Type: Class AudioPortalComponent*

@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_Projectile_Trail_C: public StaticMeshActor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x3e0(0x8)
-	Class MaterialInstanceDynamic*                               None;                                              // 0x3e8(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3e0(0x8)
+	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x3e8(0x8)
 };
 
 

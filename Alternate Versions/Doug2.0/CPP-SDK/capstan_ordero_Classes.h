@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class capstan_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
+class capstan_orderofsoulsdre_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class capstan_orderofsoulsdre_01_CustomizationDesc_C: public ShipCustomizationDesc
+class capstan_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };

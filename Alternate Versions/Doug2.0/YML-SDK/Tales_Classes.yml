@@ -2144,6 +2144,26 @@ ValueProviderStepInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+WaitForHealthToReachFractionStep:
+  Attributes: []
+  ClassSize: '0x70'
+  FullSize: '0x100'
+  InheritedSize: '0x90'
+  Super: TaleQuestStep
+WaitForHealthToReachFractionStepDesc:
+  Attributes:
+  - Name: HealthOwner
+    Offset: '0x80'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: HealthFraction
+    Offset: '0x88'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
+  FullSize: '0x90'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 WaitForItemPickupStep:
   Attributes: []
   ClassSize: '0xb0'

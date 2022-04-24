@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_GildedCrown_TallTales_C:
   Attributes:
-  - Name: gmp_tal_guilded_crown_01_a
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*

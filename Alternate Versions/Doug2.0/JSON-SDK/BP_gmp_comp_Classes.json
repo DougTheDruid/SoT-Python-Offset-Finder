@@ -32,10 +32,17 @@
     "FullSize": "0x508",
     "InheritedSize": "0x500",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x500"
+      }
+    ]
   },
   "BP_gmp_compass_bel_01_a_Wieldable_C": {
-    "Super": "None",
+    "Super": "BP_Compass_C",
     "FullSize": "0x878",
     "InheritedSize": "0x878",
     "ClassSize": "0x0",

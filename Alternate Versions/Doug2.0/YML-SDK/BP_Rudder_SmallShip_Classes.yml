@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Rudder_SmallShip_C:
   Attributes:
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Root
     Offset: '0x450'
     Size: '0x8'
     Type: Class SceneComponent*

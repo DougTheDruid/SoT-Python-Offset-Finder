@@ -6,49 +6,49 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "CancelAdventure",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x770"
       },
       {
-        "Name": "None",
+        "Name": "PlayerBuiredItemsMapBundleInteractionPoint",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
-        "Name": "None",
+        "Name": "CancelTale",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
-        "Name": "None",
+        "Name": "CancelVoyage",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x788"
       },
       {
-        "Name": "None",
+        "Name": "VoyageSelectionSlot4",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x790"
       },
       {
-        "Name": "None",
+        "Name": "VoyageSelectionSlot3",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x798"
       },
       {
-        "Name": "None",
+        "Name": "VoyageSelectionSlot2",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7a0"
       },
       {
-        "Name": "None",
+        "Name": "VoyageSelectionSlot1",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7a8"

@@ -20066,6 +20066,20 @@ EnvQueryTest_InShipwreckZone:
   FullSize: '0x178'
   InheritedSize: '0x170'
   Super: EnvQueryTest
+EnvQueryTest_InSpecificIslandZone:
+  Attributes:
+  - Name: Radius
+    Offset: '0x170'
+    Size: '0x4'
+    Type: float
+  - Name: IslandName
+    Offset: '0x174'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x10'
+  FullSize: '0x180'
+  InheritedSize: '0x170'
+  Super: EnvQueryTest
 EnvQueryTest_InSunkenIslandSurfaceZone:
   Attributes:
   - Name: ExclusionType
@@ -25115,77 +25129,77 @@ HauntedFort:
 HauntedFortEmplacement:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x500'
-  InheritedSize: '0x500'
+  FullSize: '0x508'
+  InheritedSize: '0x508'
   Super: HauntedFortTarget
 HauntedFortTarget:
   Attributes:
   - Name: RootSceneComponent
-    Offset: '0x3f8'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: MaterialManipulationComponent
-    Offset: '0x400'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class MaterialManipulationComponent*
   - Name: BaseMesh
-    Offset: '0x408'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: DamageableComp
-    Offset: '0x410'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class OptInDamageableComponent*
   - Name: Health
-    Offset: '0x418'
-    Size: '0x4'
-    Type: float
-  - Name: MaxHealth
-    Offset: '0x41c'
-    Size: '0x4'
-    Type: float
-  - Name: HealthEachShotRemoves
     Offset: '0x420'
     Size: '0x4'
     Type: float
-  - Name: Interactable
+  - Name: MaxHealth
     Offset: '0x424'
+    Size: '0x4'
+    Type: float
+  - Name: HealthEachShotRemoves
+    Offset: '0x428'
+    Size: '0x4'
+    Type: float
+  - Name: Interactable
+    Offset: '0x42c'
     Size: '0x1'
     Type: bool
   - Name: Destroyed
-    Offset: '0x425'
+    Offset: '0x42d'
     Size: '0x1'
     Type: bool
   - Name: DamagePositionParameterNames
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: MinHoleSize
-    Offset: '0x438'
-    Size: '0x4'
-    Type: float
-  - Name: MaxHoleSize
-    Offset: '0x43c'
-    Size: '0x4'
-    Type: float
-  - Name: MinMultiHoleSize
     Offset: '0x440'
     Size: '0x4'
     Type: float
-  - Name: MaxMultiHoleSize
+  - Name: MaxHoleSize
     Offset: '0x444'
     Size: '0x4'
     Type: float
-  - Name: NearEnoughToBeConsideredTheSameLocationDistance
+  - Name: MinMultiHoleSize
     Offset: '0x448'
     Size: '0x4'
     Type: float
-  - Name: ImpactLocations
+  - Name: MaxMultiHoleSize
+    Offset: '0x44c'
+    Size: '0x4'
+    Type: float
+  - Name: NearEnoughToBeConsideredTheSameLocationDistance
     Offset: '0x450'
+    Size: '0x4'
+    Type: float
+  - Name: ImpactLocations
+    Offset: '0x458'
     Size: '0x10'
     Type: TArray<Struct ImpactLocationData>
-  ClassSize: '0x130'
-  FullSize: '0x500'
+  ClassSize: '0x138'
+  FullSize: '0x508'
   InheritedSize: '0x3d0'
   Super: Actor
 HealAICharacterRecoverMethod:
@@ -34524,16 +34538,20 @@ MegalodonSoulInteractableComponent:
     Offset: '0x250'
     Size: '0x8'
     Type: class
-  - Name: HoldDuration
+  - Name: RequiresRaisedEffigy
     Offset: '0x258'
-    Size: '0x4'
-    Type: float
-  - Name: SoulVFXReturnModifier
+    Size: '0x1'
+    Type: bool
+  - Name: HoldDuration
     Offset: '0x25c'
     Size: '0x4'
     Type: float
-  - Name: SoulVFXClientPredictionModifier
+  - Name: SoulVFXReturnModifier
     Offset: '0x260'
+    Size: '0x4'
+    Type: float
+  - Name: SoulVFXClientPredictionModifier
+    Offset: '0x264'
     Size: '0x4'
     Type: float
   - Name: ParticleSystem

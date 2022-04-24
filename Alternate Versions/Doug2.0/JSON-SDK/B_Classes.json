@@ -38,74 +38,49 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_MermaidGem_ItemInfo_Sapphire_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x458",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x48",
+  "BP_TaleBook_CursedRogue_AdditionalPuzzles_C": {
+    "Super": "VoyageProposalContainer",
+    "FullSize": "0x798",
+    "InheritedSize": "0x768",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "StaticMeshComponent07",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x768"
       },
       {
-        "Name": "StaticMeshComponent06",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x770"
       },
       {
-        "Name": "StaticMeshComponent05",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x778"
       },
       {
-        "Name": "StaticMeshComponent04",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x780"
       },
       {
-        "Name": "StaticMeshComponent03",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x788"
       },
       {
-        "Name": "StaticMeshComponent02",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMeshComponent01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
+        "Offset": "0x790"
       }
     ]
-  },
-  "BP_MermaidGem_ItemInfo_Emerald_C": {
-    "Super": "None",
-    "FullSize": "-0x264fbaa0",
-    "InheritedSize": "0x6f006d",
-    "ClassSize": "-0x26bebb0d",
-    "Attributes": []
   },
   "BP_BuoyantWoodBarrel_LockedToWater_C": {
     "Super": "BP_BuoyantStorageBarrel_LockedToWater_C",
@@ -126,13 +101,6 @@
     "FullSize": "0x710",
     "InheritedSize": "0x710",
     "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_MermaidGem_ItemInfo_Ruby_C": {
-    "Super": "None",
-    "FullSize": "0x20003",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x20003",
     "Attributes": []
   },
   "BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C": {

@@ -172,10 +172,13 @@ public:
 };
 
 
-// Size 0x0
-class BP_fod_PineappleFresh_00_a_ItemDesc_C: public ItemDesc
+// Size 0x18
+class BP_IslandStorageBarrel_C: public StorageContainer
 {
 public:
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
+	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
 };
 
 
@@ -365,6 +368,32 @@ public:
 class BP_Emote_Dice_D10_Desc_C: public EmoteDesc
 {
 public:
+};
+
+
+// Size 0x0
+class BP_fod_PineappleFresh_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x10
+class BP_CommodityManifestBook_MerchantAlliance_C: public ModalInteractionProxy
+{
+public:
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x4e8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f0(0x8)
+};
+
+
+// Size 0x18
+class BP_IslandStorageBarrel_Outpost_C: public StorageContainer
+{
+public:
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
+	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
 };
 
 

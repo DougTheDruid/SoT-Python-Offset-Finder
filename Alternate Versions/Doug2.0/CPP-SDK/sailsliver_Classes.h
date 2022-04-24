@@ -126,55 +126,6 @@ public:
 
 
 // Size 0x0
-class sailslivery_yr1_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_reaper_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_merchant_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_legendary_01_v02_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_goldhoarders_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
 class sailslivery_zeus_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
@@ -442,6 +393,55 @@ public:
 
 // Size 0x0
 class sailslivery_admiral_01_CutomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_yr1_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_reaper_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_merchant_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_legendary_01_v02_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_goldhoarders_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };

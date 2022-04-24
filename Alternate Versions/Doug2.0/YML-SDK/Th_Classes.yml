@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_GiveShroudbreaker_Shroudbreaker_C:
   Attributes:
-  - Name: None
+  - Name: gmp_tal_shroudbreaker_statue_01_a
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*

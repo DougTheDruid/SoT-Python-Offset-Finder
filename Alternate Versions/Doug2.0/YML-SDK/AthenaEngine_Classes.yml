@@ -100,6 +100,16 @@ OnlinePlayerPermissionsRetrieverInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+PersistentAssetCollectionDataAsset:
+  Attributes:
+  - Name: Assets
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class Assets*>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
 PlayModeHelpers:
   Attributes: []
   ClassSize: '0x0'

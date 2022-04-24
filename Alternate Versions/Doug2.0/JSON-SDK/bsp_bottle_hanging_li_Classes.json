@@ -6,25 +6,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "PointLight1",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "PointLight",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
-        "Name": "StaticMesh1",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "StaticMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
@@ -38,25 +38,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "StaticMesh2",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "PointLight1",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
-        "Name": "PointLight",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "StaticMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"

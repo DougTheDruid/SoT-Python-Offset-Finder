@@ -13,15 +13,16 @@ public:
 };
 
 
-// Size -0x2031b861
-class BP_gmp_fishing_rod_bdg_01_a_ItemInfo_C: public VectorProperty
+// Size 0x8
+class BP_gmp_fishing_rod_bdg_01_a_ItemInfo_C: public ItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 
-// Size -0x20310b80
-class BP_gmp_fishing_rod_bdg_01_a_Wieldable_C: public VectorProperty
+// Size 0x0
+class BP_gmp_fishing_rod_bdg_01_a_Wieldable_C: public BP_FishingRod_C
 {
 public:
 };

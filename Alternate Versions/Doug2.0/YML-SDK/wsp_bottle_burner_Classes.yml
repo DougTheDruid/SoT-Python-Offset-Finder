@@ -2,75 +2,27 @@
 # https://github.com/DougTheDruid
 wsp_bottle_burner_C:
   Attributes:
-  - Name: UberGraphFrame
-    Offset: '0x5d0'
+  - Name: PointLight
+    Offset: '0x3d0'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: LanternGlow
-    Offset: '0x5d8'
+    Type: Class PointLightComponent*
+  - Name: ParticleSystem
+    Offset: '0x3d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Lantern
-    Offset: '0x5e0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Hook
-    Offset: '0x5e8'
+    Type: Class ParticleSystemComponent*
+  - Name: StaticMeshComponent01
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Interactable
-    Offset: '0x5f0'
+  - Name: StaticMeshComponent0
+    Offset: '0x3e8'
     Size: '0x8'
-    Type: Class InteractableComponent*
-  - Name: DynamicGlowMaterial
-    Offset: '0x5f8'
+    Type: Class StaticMeshComponent*
+  - Name: SharedRoot
+    Offset: '0x3f0'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
-  - Name: GlowBrightnessParameterName
-    Offset: '0x600'
-    Size: '0x8'
-    Type: struct FName
-  - Name: GlowRandomSeedParameterName
-    Offset: '0x608'
-    Size: '0x8'
-    Type: struct FName
-  - Name: GlowIntensityOn
-    Offset: '0x610'
-    Size: '0x4'
-    Type: float
-  - Name: GlowIntensityOff
-    Offset: '0x614'
-    Size: '0x4'
-    Type: float
-  - Name: UsesGlow
-    Offset: '0x618'
-    Size: '0x1'
-    Type: bool
-  - Name: DynamicMaterial
-    Offset: '0x620'
-    Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
-  - Name: FlameParameterName
-    Offset: '0x628'
-    Size: '0x8'
-    Type: struct FName
-  - Name: FlameIntensityOn
-    Offset: '0x630'
-    Size: '0x4'
-    Type: float
-  - Name: FlameIntensityOff
-    Offset: '0x634'
-    Size: '0x4'
-    Type: float
-  - Name: DefaultGlowColour
-    Offset: '0x638'
-    Size: '0x10'
-    Type: Struct LinearColor
-  - Name: CurrentFlameOfFateType
-    Offset: '0x648'
-    Size: '0x1'
-    Type: byte
-  ClassSize: '0x79'
-  FullSize: '0x649'
-  InheritedSize: '0x5d0'
-  Super: InteractableLight
+    Type: Class SceneComponent*
+  ClassSize: '0x28'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3d0'
+  Super: Actor

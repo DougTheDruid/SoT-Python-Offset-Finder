@@ -6715,55 +6715,55 @@ TeleportAIAbility:
 TinySharkExperience:
   Attributes:
   - Name: RelevancyDistance
-    Offset: '0x3d8'
+    Offset: '0x3e0'
     Size: '0x4'
     Type: float
   - Name: TrackingMovementCheckInterval
-    Offset: '0x3dc'
+    Offset: '0x3e4'
     Size: '0x4'
     Type: float
   - Name: TrackingMovementValidQuery
-    Offset: '0x3e0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class EnvQuery*
   - Name: ShouldBlockMigrationForAllAttackingCrewsFromAnyDistance
-    Offset: '0x3e8'
+    Offset: '0x3f0'
     Size: '0x1'
     Type: bool
   - Name: TinySharkSpawner
-    Offset: '0x490'
+    Offset: '0x498'
     Size: '0x8'
     Type: Class AIOnDemandSpawner*
   - Name: TinySharkPawn
-    Offset: '0x498'
+    Offset: '0x4a0'
     Size: '0x8'
     Type: Class SharkPawn*
   - Name: HealthRTPC
-    Offset: '0x4a0'
+    Offset: '0x4a8'
     Size: '0x8'
     Type: struct FName
   - Name: Params
-    Offset: '0x4b0'
+    Offset: '0x4b8'
     Size: '0xb8'
     Type: Struct TinySharkParams
   - Name: TinySharkTelemetryComponent
-    Offset: '0x568'
+    Offset: '0x570'
     Size: '0x8'
     Type: Class TinySharkTelemetryComponent*
   - Name: TrackedShip
-    Offset: '0x570'
+    Offset: '0x578'
     Size: '0x8'
     Type: Class Ship*
   - Name: SightingEncounterParams
-    Offset: '0x5f8'
+    Offset: '0x600'
     Size: '0xc'
     Type: Struct EncounterParams
   - Name: CloseEncounterParams
-    Offset: '0x604'
+    Offset: '0x60c'
     Size: '0xc'
     Type: Struct EncounterParams
-  ClassSize: '0x410'
-  FullSize: '0x7e0'
+  ClassSize: '0x418'
+  FullSize: '0x7e8'
   InheritedSize: '0x3d0'
   Super: Actor
 TinySharkParamsDataAsset:

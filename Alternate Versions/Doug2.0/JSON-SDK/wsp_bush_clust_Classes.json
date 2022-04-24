@@ -1,41 +1,103 @@
 {
-  "wsp_bush_cluster_01_e_C": {
+  "wsp_bush_cluster_01_j_C": {
     "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x420",
     "InheritedSize": "0x410",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "wsp_bush_03_a6",
+        "Name": "wsp_bush_01_a6",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "Scene1",
-        "Type": "Class SceneComponent*",
+        "Name": "wsp_bush_06_b_01",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       }
     ]
   },
-  "wsp_bush_cluster_01_f_C": {
+  "wsp_bush_cluster_01_i_C": {
     "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x420",
+    "FullSize": "0x448",
     "InheritedSize": "0x410",
-    "ClassSize": "0x10",
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "wsp_bush_cheese_01_a",
+        "Name": "StaticMeshComponent05",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "wsp_bush_06_a7",
+        "Name": "StaticMeshComponent04",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
+      },
+      {
+        "Name": "StaticMeshComponent03",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "StaticMeshComponent02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "StaticMeshComponent01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "StaticMeshComponent0",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "SharedRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      }
+    ]
+  },
+  "wsp_bush_cluster_01_h_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x430",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_cheese_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "wsp_bush_cheese_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "wsp_bush_01_a20",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "wsp_bush_03_a6",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
       }
     ]
   },
@@ -95,93 +157,89 @@
       }
     ]
   },
-  "wsp_bush_cluster_01_h_C": {
+  "wsp_bush_cluster_01_f_C": {
     "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x430",
+    "FullSize": "0x420",
     "InheritedSize": "0x410",
-    "ClassSize": "0x20",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "wsp_bush_cheese_01_a1",
+        "Name": "wsp_bush_cheese_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "wsp_bush_cheese_01_a",
+        "Name": "wsp_bush_06_a7",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
+      }
+    ]
+  },
+  "wsp_bush_cluster_01_e_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x420",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_03_a6",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "Scene1",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      }
+    ]
+  },
+  "wsp_bush_cluster_01_d_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x438",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_fern_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
       },
       {
         "Name": "wsp_bush_01_a20",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "wsp_bush_03_a6",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      }
-    ]
-  },
-  "wsp_bush_cluster_01_i_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x448",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "StaticMeshComponent05",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMeshComponent04",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "StaticMeshComponent03",
+        "Name": "wsp_bush_01_a26",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "StaticMeshComponent02",
+        "Name": "wsp_bush_01_a25",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "StaticMeshComponent01",
+        "Name": "wsp_bush_07_a_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
       }
     ]
   },
-  "wsp_bush_cluster_01_j_C": {
+  "wsp_bush_cluster_01_c_C": {
     "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x420",
+    "FullSize": "0x428",
     "InheritedSize": "0x410",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "wsp_bush_01_a6",
@@ -190,10 +248,98 @@
         "Offset": "0x410"
       },
       {
-        "Name": "wsp_bush_06_b_01",
+        "Name": "wsp_bush_07_a_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
+      },
+      {
+        "Name": "wsp_bush_06_b_01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      }
+    ]
+  },
+  "wsp_bush_cluster_01_b_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x430",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_06_b2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "wsp_rock_cliff_l_01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "wsp_bush_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "wsp_bush_03_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      }
+    ]
+  },
+  "wsp_bush_cluster_01_a_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x448",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_05_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "StaticMesh15",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "StaticMesh16",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "wsp_bush_03_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "wsp_bush_03_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "wsp_bush_07_a_01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "wsp_bush_07_a_02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x440"
       }
     ]
   },

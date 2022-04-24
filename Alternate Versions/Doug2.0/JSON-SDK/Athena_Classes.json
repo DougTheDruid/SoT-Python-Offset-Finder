@@ -24798,6 +24798,26 @@
       }
     ]
   },
+  "EnvQueryTest_InSpecificIslandZone": {
+    "Super": "EnvQueryTest",
+    "FullSize": "0x180",
+    "InheritedSize": "0x170",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x174"
+      }
+    ]
+  },
   "EnvQueryTest_InSunkenIslandSurfaceZone": {
     "Super": "EnvQueryTest",
     "FullSize": "0x178",
@@ -35286,22 +35306,28 @@
         "Offset": "0x250"
       },
       {
-        "Name": "HoldDuration",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "RequiresRaisedEffigy",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x258"
       },
       {
-        "Name": "SoulVFXReturnModifier",
+        "Name": "HoldDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x25c"
       },
       {
-        "Name": "SoulVFXClientPredictionModifier",
+        "Name": "SoulVFXReturnModifier",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x260"
+      },
+      {
+        "Name": "SoulVFXClientPredictionModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x264"
       },
       {
         "Name": "ParticleSystem",
@@ -88612,112 +88638,112 @@
   },
   "HauntedFortTarget": {
     "Super": "Actor",
-    "FullSize": "0x500",
+    "FullSize": "0x508",
     "InheritedSize": "0x3d0",
-    "ClassSize": "0x130",
+    "ClassSize": "0x138",
     "Attributes": [
       {
         "Name": "RootSceneComponent",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x400"
       },
       {
         "Name": "MaterialManipulationComponent",
         "Type": "Class MaterialManipulationComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x408"
       },
       {
         "Name": "BaseMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x410"
       },
       {
         "Name": "DamageableComp",
         "Type": "Class OptInDamageableComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x418"
       },
       {
         "Name": "Health",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x418"
+        "Offset": "0x420"
       },
       {
         "Name": "MaxHealth",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x41c"
+        "Offset": "0x424"
       },
       {
         "Name": "HealthEachShotRemoves",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x420"
+        "Offset": "0x428"
       },
       {
         "Name": "Interactable",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x424"
+        "Offset": "0x42c"
       },
       {
         "Name": "Destroyed",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x425"
+        "Offset": "0x42d"
       },
       {
         "Name": "DamagePositionParameterNames",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x430"
       },
       {
         "Name": "MinHoleSize",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x438"
+        "Offset": "0x440"
       },
       {
         "Name": "MaxHoleSize",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x43c"
+        "Offset": "0x444"
       },
       {
         "Name": "MinMultiHoleSize",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x448"
       },
       {
         "Name": "MaxMultiHoleSize",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x444"
+        "Offset": "0x44c"
       },
       {
         "Name": "NearEnoughToBeConsideredTheSameLocationDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x448"
+        "Offset": "0x450"
       },
       {
         "Name": "ImpactLocations",
         "Type": "TArray<Struct ImpactLocationData>",
         "Size": "0x10",
-        "Offset": "0x450"
+        "Offset": "0x458"
       }
     ]
   },
   "HauntedFortEmplacement": {
     "Super": "HauntedFortTarget",
-    "FullSize": "0x500",
-    "InheritedSize": "0x500",
+    "FullSize": "0x508",
+    "InheritedSize": "0x508",
     "ClassSize": "0x0",
     "Attributes": []
   },

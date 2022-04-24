@@ -6,17 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
-class bsp_bottle_light_stand_b_C: public StaticMeshActor
-{
-public:
-	Class PointLightComponent*                                   PointLight1;                                       // 0x3e0(0x8)
-	Class PointLightComponent*                                   PointLight;                                        // 0x3e8(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3f0(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3f8(0x8)
-};
-
-
 // Size 0x40
 class bsp_bottle_light_stand_a_C: public StaticMeshActor
 {
@@ -29,6 +18,17 @@ public:
 	Class StaticMeshComponent*                                   ptn_pois_01_b;                                     // 0x408(0x8)
 	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x410(0x8)
 	Class StaticMeshComponent*                                   cmn_bottle_01_a;                                   // 0x418(0x8)
+};
+
+
+// Size 0x20
+class bsp_bottle_light_stand_b_C: public StaticMeshActor
+{
+public:
+	Class PointLightComponent*                                   PointLight1;                                       // 0x3e0(0x8)
+	Class PointLightComponent*                                   PointLight;                                        // 0x3e8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3f0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3f8(0x8)
 };
 
 

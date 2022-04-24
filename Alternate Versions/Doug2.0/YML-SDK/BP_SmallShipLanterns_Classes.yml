@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_SmallShipLanterns_C:
   Attributes:
-  - Name: None
+  - Name: Railing_Wheel
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BottomDeckFront
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BottomDeckBrig
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CabinMapTable
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Railing_BowRightFront
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Railing_BowLeftFront
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CabinQuestTable
     Offset: '0x400'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x408'
     Size: '0x8'
     Type: Class SceneComponent*

@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 BP_SmallShipLadder_C:
   Attributes:
-  - Name: None
+  - Name: Interactable
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class InteractableComponent*
+  - Name: OffTopSplineComponentPositions
+    Offset: '0x5c8'
+    Size: '0x10'
+    Type: TArray<Struct InteractOffset>
+  - Name: OnTopSplineComponentPositions
+    Offset: '0x5d8'
+    Size: '0x10'
+    Type: TArray<Struct Vector>
   ClassSize: '0x28'
   FullSize: '0x5e8'
   InheritedSize: '0x5c0'

@@ -755,6 +755,13 @@ public:
 };
 
 
+// Size 0x70
+class WaitForHealthToReachFractionStep: public TaleQuestStep
+{
+public:
+};
+
+
 // Size 0xb0
 class WaitForItemPickupStep: public TaleQuestStep
 {
@@ -1318,6 +1325,15 @@ class TrackResponseCoordinatorStepDesc: public TaleQuestStepDesc
 {
 public:
 	Struct QuestVariableUObject                                  CutsceneResponseCoordinator;                       // 0x80(0x20)
+};
+
+
+// Size 0x10
+class WaitForHealthToReachFractionStepDesc: public TaleQuestStepDesc
+{
+public:
+	Class Actor*                                                 HealthOwner;                                       // 0x80(0x8)
+	float                                                        HealthFraction;                                    // 0x88(0x4)
 };
 
 

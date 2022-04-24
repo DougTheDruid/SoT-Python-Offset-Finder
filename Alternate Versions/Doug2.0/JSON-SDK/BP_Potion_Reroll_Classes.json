@@ -6,31 +6,31 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "InspectDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x4e8"
       },
       {
-        "Name": "None",
+        "Name": "vfx_Tendrils",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
-        "Name": "None",
+        "Name": "vfx_rerollBottle",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4f8"
       },
       {
-        "Name": "None",
+        "Name": "Potion_Reroll",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x500"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x508"

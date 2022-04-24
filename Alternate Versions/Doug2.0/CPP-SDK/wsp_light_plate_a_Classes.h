@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class wsp_light_plate_a_C: public StaticMeshActor
 {
 public:
-	Class ParticleSystemComponent*                               None;                                              // 0x3e0(0x8)
+	Class ParticleSystemComponent*                               ParticleSystem;                                    // 0x3e0(0x8)
 };
 
 

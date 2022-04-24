@@ -1,66 +1,23 @@
 {
-  "BP_WaterVolume_Large_C": {
-    "Super": "BP_WaterVolume_C",
-    "FullSize": "0x48c",
-    "InheritedSize": "0x48c",
-    "ClassSize": "0x0",
+  "BP_WaterVolume_WSP_Ext1_C": {
+    "Super": "/Game/Textures/Characters/IPG/Wardrobe/Costumes/ipg_costume_npc",
+    "FullSize": "-0x7ccccccd",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x7ccccccd",
     "Attributes": []
   },
   "BP_WaterVolume_Optimized_C": {
-    "Super": "WaterVolume",
-    "FullSize": "0x484",
-    "InheritedSize": "0x450",
-    "ClassSize": "0x34",
-    "Attributes": [
-      {
-        "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "WaterPlaneActivatationVolume",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "FlatWaterPlane",
-        "Type": "Class FlatWaterPlaneComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "FlatWaterMesh",
-        "Type": "Class FlatWaterMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "Root",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "SunLit",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "RippleGeneratorTag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x47c"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "0x3cde1483",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x3cde1483",
+    "Attributes": []
   },
-  "BP_WaterVolume_WSP_Ext1_C": {
-    "Super": "BP_WaterVolume_Optimized_C",
-    "FullSize": "0x484",
-    "InheritedSize": "0x484",
-    "ClassSize": "0x0",
+  "BP_WaterVolume_Large_C": {
+    "Super": "None",
+    "FullSize": "0xf",
+    "InheritedSize": "0x0",
+    "ClassSize": "0xf",
     "Attributes": []
   },
   "DougTheDruid": {

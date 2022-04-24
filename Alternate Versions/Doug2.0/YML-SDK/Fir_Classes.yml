@@ -5,7 +5,7 @@ BP_Projectile_CannonBall_FirePhantom_C:
   ClassSize: '0x0'
   FullSize: '0x680'
   InheritedSize: '0x680'
-  Super: None
+  Super: BP_Projectile_GhostBall_C
 BP_cmn_cannonball_cur_fire_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

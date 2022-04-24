@@ -6,19 +6,23 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x3
-class BP_LotS_reward003_C: public None
+// Size 0x18
+class BP_LotS_reward007_C: public ModalInteractionProxy
 {
 public:
+	Class NPCDialogComponent*                                    InspectDialog;                                     // 0x4e8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x4f0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
 };
 
 
-// Size -0x1
-class BP_LotS_reward001_C: public InteractableRoot
+// Size 0x18
+class BP_LotS_reward015_C: public ModalInteractionProxy
 {
 public:
-	Class SceneComponent*                                        SceneComponent;                                    // 0x5b8(0x8)
-	Class PlayerNameplateLocationOverrideComponent*              PlayerNameplateLocationOverrideComponent;          // 0x5c0(0x8)
+	Class NPCDialogComponent*                                    InspectDialog;                                     // 0x4e8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x4f0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
 };
 
 

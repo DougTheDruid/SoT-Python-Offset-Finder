@@ -8620,6 +8620,15 @@ public:
 };
 
 
+// Size 0x10
+class EnvQueryTest_InSpecificIslandZone: public EnvQueryTest
+{
+public:
+	float                                                        Radius;                                            // 0x170(0x4)
+	struct FName                                                 IslandName;                                        // 0x174(0x8)
+};
+
+
 // Size 0x8
 class EnvQueryTest_InSunkenIslandSurfaceZone: public EnvQueryTest
 {
@@ -12704,9 +12713,10 @@ public:
 	byte                                                         MegalodonSoulType;                                 // 0x240(0x1)
 	class                                                        ActivationInput;                                   // 0x248(0x8)
 	class                                                        ReleaseInput;                                      // 0x250(0x8)
-	float                                                        HoldDuration;                                      // 0x258(0x4)
-	float                                                        SoulVFXReturnModifier;                             // 0x25c(0x4)
-	float                                                        SoulVFXClientPredictionModifier;                   // 0x260(0x4)
+	bool                                                         RequiresRaisedEffigy;                              // 0x258(0x1)
+	float                                                        HoldDuration;                                      // 0x25c(0x4)
+	float                                                        SoulVFXReturnModifier;                             // 0x260(0x4)
+	float                                                        SoulVFXClientPredictionModifier;                   // 0x264(0x4)
 	Class ParticleSystemComponent*                               ParticleSystem;                                    // 0x280(0x8)
 };
 
@@ -35588,26 +35598,26 @@ public:
 };
 
 
-// Size 0x130
+// Size 0x138
 class HauntedFortTarget: public Actor
 {
 public:
-	Class SceneComponent*                                        RootSceneComponent;                                // 0x3f8(0x8)
-	Class MaterialManipulationComponent*                         MaterialManipulationComponent;                     // 0x400(0x8)
-	Class StaticMeshComponent*                                   BaseMesh;                                          // 0x408(0x8)
-	Class OptInDamageableComponent*                              DamageableComp;                                    // 0x410(0x8)
-	float                                                        Health;                                            // 0x418(0x4)
-	float                                                        MaxHealth;                                         // 0x41c(0x4)
-	float                                                        HealthEachShotRemoves;                             // 0x420(0x4)
-	bool                                                         Interactable;                                      // 0x424(0x1)
-	bool                                                         Destroyed;                                         // 0x425(0x1)
-	TArray<Struct FName>                                         DamagePositionParameterNames;                      // 0x428(0x10)
-	float                                                        MinHoleSize;                                       // 0x438(0x4)
-	float                                                        MaxHoleSize;                                       // 0x43c(0x4)
-	float                                                        MinMultiHoleSize;                                  // 0x440(0x4)
-	float                                                        MaxMultiHoleSize;                                  // 0x444(0x4)
-	float                                                        NearEnoughToBeConsideredTheSameLocationDistance;   // 0x448(0x4)
-	TArray<Struct ImpactLocationData>                            ImpactLocations;                                   // 0x450(0x10)
+	Class SceneComponent*                                        RootSceneComponent;                                // 0x400(0x8)
+	Class MaterialManipulationComponent*                         MaterialManipulationComponent;                     // 0x408(0x8)
+	Class StaticMeshComponent*                                   BaseMesh;                                          // 0x410(0x8)
+	Class OptInDamageableComponent*                              DamageableComp;                                    // 0x418(0x8)
+	float                                                        Health;                                            // 0x420(0x4)
+	float                                                        MaxHealth;                                         // 0x424(0x4)
+	float                                                        HealthEachShotRemoves;                             // 0x428(0x4)
+	bool                                                         Interactable;                                      // 0x42c(0x1)
+	bool                                                         Destroyed;                                         // 0x42d(0x1)
+	TArray<Struct FName>                                         DamagePositionParameterNames;                      // 0x430(0x10)
+	float                                                        MinHoleSize;                                       // 0x440(0x4)
+	float                                                        MaxHoleSize;                                       // 0x444(0x4)
+	float                                                        MinMultiHoleSize;                                  // 0x448(0x4)
+	float                                                        MaxMultiHoleSize;                                  // 0x44c(0x4)
+	float                                                        NearEnoughToBeConsideredTheSameLocationDistance;   // 0x450(0x4)
+	TArray<Struct ImpactLocationData>                            ImpactLocations;                                   // 0x458(0x10)
 };
 
 

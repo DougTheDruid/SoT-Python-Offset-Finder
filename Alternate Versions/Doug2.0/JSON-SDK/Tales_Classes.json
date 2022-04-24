@@ -1137,6 +1137,13 @@
       }
     ]
   },
+  "WaitForHealthToReachFractionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x100",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x70",
+    "Attributes": []
+  },
   "WaitForItemPickupStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x140",
@@ -2405,6 +2412,26 @@
         "Type": "Struct QuestVariableUObject",
         "Size": "0x20",
         "Offset": "0x80"
+      }
+    ]
+  },
+  "WaitForHealthToReachFractionStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x90",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "HealthOwner",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "HealthFraction",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
       }
     ]
   },

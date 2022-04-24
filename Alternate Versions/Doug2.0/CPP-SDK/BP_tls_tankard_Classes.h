@@ -48,15 +48,16 @@ public:
 };
 
 
-// Size 0x0
-class BP_tls_tankard_yr1_leg_01_a_ItemInfo_C: public ShipInternalWater
+// Size 0x8
+class BP_tls_tankard_yr1_leg_01_a_ItemInfo_C: public ItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 
-// Size 0x10
-class BP_tls_tankard_yr1_leg_01_a_Wieldable_C: public None
+// Size 0x0
+class BP_tls_tankard_yr1_leg_01_a_Wieldable_C: public BP_Tankard_C
 {
 public:
 };

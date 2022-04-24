@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_GildedCrown_TallTales_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   gmp_tal_guilded_crown_01_a;                        // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
 };
 
 

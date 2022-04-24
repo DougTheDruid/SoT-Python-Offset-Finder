@@ -49,8 +49,8 @@ public:
 };
 
 
-// Size 0x10
-class BP_wpn_blunderbuss_yr1_leg_01_a_Wieldable_C: public None
+// Size 0x0
+class BP_wpn_blunderbuss_yr1_leg_01_a_Wieldable_C: public BP_Blunderbuss_C
 {
 public:
 };

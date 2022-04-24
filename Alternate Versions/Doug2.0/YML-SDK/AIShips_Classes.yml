@@ -428,8 +428,16 @@ AIShipServiceDataAsset:
     Offset: '0x1d8'
     Size: '0x8'
     Type: Class ShortRangeMarkerDataAsset*
-  ClassSize: '0x1b8'
-  FullSize: '0x1e0'
+  - Name: IslandsToAvoid
+    Offset: '0x1e0'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: AvoidanceRange
+    Offset: '0x1f0'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x1d0'
+  FullSize: '0x1f8'
   InheritedSize: '0x28'
   Super: DataAsset
 AIShipServiceInterface:

@@ -1,36 +1,4 @@
 {
-  "bsp_bottle_light_stand_b_C": {
-    "Super": "StaticMeshActor",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3e0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "PointLight1",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "PointLight",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      }
-    ]
-  },
   "bsp_bottle_light_stand_a_C": {
     "Super": "StaticMeshActor",
     "FullSize": "0x420",
@@ -84,6 +52,38 @@
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
+      }
+    ]
+  },
+  "bsp_bottle_light_stand_b_C": {
+    "Super": "StaticMeshActor",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3e0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PointLight1",
+        "Type": "Class PointLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "PointLight",
+        "Type": "Class PointLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "StaticMesh1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "StaticMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
       }
     ]
   },

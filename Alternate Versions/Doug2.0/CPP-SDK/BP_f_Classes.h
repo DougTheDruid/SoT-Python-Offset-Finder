@@ -7,13 +7,6 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_fod_CoconutFresh_00_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
 class BP_fod_LeechesFresh_00_a_ItemDesc_C: public ItemDesc
 {
 public:
@@ -103,6 +96,13 @@ public:
 	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x568(0x8)
 	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x570(0x8)
 	Class CookableComponent*                                     Cookable;                                          // 0x578(0x8)
+};
+
+
+// Size 0x0
+class BP_fod_CoconutFresh_00_a_ItemDesc_C: public ItemDesc
+{
+public:
 };
 
 

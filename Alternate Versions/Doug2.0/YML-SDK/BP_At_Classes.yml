@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_AthenasFortuneShopkeeper_C:
   Attributes:
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x480'
     Size: '0x8'
     Type: Class SceneComponent*

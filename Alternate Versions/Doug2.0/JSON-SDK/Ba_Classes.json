@@ -1,31 +1,31 @@
 {
-  "BP_ResourceIslandStorageBarrel_Triple_03_a_C": {
+  "BP_IslandStorageBarrel_Double_02_a_C": {
     "Super": "Actor",
     "FullSize": "0x408",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "cmn_looted__box_01_b",
+        "Name": "cmn_broken_shovel_01_b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "cmn_looted__box_02_lid",
+        "Name": "cmn_broken_shovel_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "cmn_looted__box_02_a",
+        "Name": "shp_rope_coil_03_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "BP_IslandStorageBarrel_03",
-        "Type": "Class ChildActorComponent*",
+        "Name": "cmn_looted_box_01_a",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },

@@ -1,40 +1,5 @@
 {
-  "bsp_outpost_1_lighting_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "bsp_outpost_1_vfx_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "bsp_outpost_1_design_talltales_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "bsp_outpost_1_design_adventure_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "bsp_outpost_1_design_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "bsp_outpost_1_audio_C": {
+  "bsp_outpost_1_calmwater_C": {
     "Super": "LevelScriptActor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d8",
@@ -48,7 +13,42 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "bsp_outpost_1_calmwater_C": {
+  "bsp_outpost_1_audio_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "bsp_outpost_1_design_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "bsp_outpost_1_design_adventure_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "bsp_outpost_1_design_talltales_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "bsp_outpost_1_vfx_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "bsp_outpost_1_lighting_C": {
     "Super": "LevelScriptActor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d8",

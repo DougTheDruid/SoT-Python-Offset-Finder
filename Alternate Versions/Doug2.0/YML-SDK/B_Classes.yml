@@ -84,60 +84,36 @@ BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C:
   FullSize: '0x710'
   InheritedSize: '0x6f0'
   Super: BuoyantStorageContainer
-BP_MermaidGem_ItemInfo_Emerald_C:
-  Attributes: []
-  ClassSize: '-0x26bebb0d'
-  FullSize: '-0x264fbaa0'
-  InheritedSize: '0x6f006d'
-  Super: None
-BP_MermaidGem_ItemInfo_Ruby_C:
-  Attributes: []
-  ClassSize: '0x20003'
-  FullSize: '0x20003'
-  InheritedSize: '0x0'
-  Super: None
-BP_MermaidGem_ItemInfo_Sapphire_C:
+BP_TaleBook_CursedRogue_AdditionalPuzzles_C:
   Attributes:
-  - Name: StaticMeshComponent07
-    Offset: '0x410'
+  - Name: None
+    Offset: '0x768'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent06
-    Offset: '0x418'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x770'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent05
-    Offset: '0x420'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x778'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent04
-    Offset: '0x428'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x780'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent03
-    Offset: '0x430'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x788'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent02
-    Offset: '0x438'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x790'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent01
-    Offset: '0x440'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent0
-    Offset: '0x448'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: SharedRoot
-    Offset: '0x450'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x48'
-  FullSize: '0x458'
-  InheritedSize: '0x410'
-  Super: BP_Placement_HeightDrop_C
+    Type: Class ChildActorComponent*
+  ClassSize: '0x30'
+  FullSize: '0x798'
+  InheritedSize: '0x768'
+  Super: VoyageProposalContainer
 BP_fod_EarthwormsFresh_00_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

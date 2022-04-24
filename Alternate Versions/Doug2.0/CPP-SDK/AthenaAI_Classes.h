@@ -1133,22 +1133,22 @@ public:
 };
 
 
-// Size 0x410
+// Size 0x418
 class TinySharkExperience: public Actor
 {
 public:
-	float                                                        RelevancyDistance;                                 // 0x3d8(0x4)
-	float                                                        TrackingMovementCheckInterval;                     // 0x3dc(0x4)
-	Class EnvQuery*                                              TrackingMovementValidQuery;                        // 0x3e0(0x8)
-	bool                                                         ShouldBlockMigrationForAllAttackingCrewsFromAnyDistance; // 0x3e8(0x1)
-	Class AIOnDemandSpawner*                                     TinySharkSpawner;                                  // 0x490(0x8)
-	Class SharkPawn*                                             TinySharkPawn;                                     // 0x498(0x8)
-	struct FName                                                 HealthRTPC;                                        // 0x4a0(0x8)
-	Struct TinySharkParams                                       Params;                                            // 0x4b0(0xb8)
-	Class TinySharkTelemetryComponent*                           TinySharkTelemetryComponent;                       // 0x568(0x8)
-	Class Ship*                                                  TrackedShip;                                       // 0x570(0x8)
-	Struct EncounterParams                                       SightingEncounterParams;                           // 0x5f8(0xc)
-	Struct EncounterParams                                       CloseEncounterParams;                              // 0x604(0xc)
+	float                                                        RelevancyDistance;                                 // 0x3e0(0x4)
+	float                                                        TrackingMovementCheckInterval;                     // 0x3e4(0x4)
+	Class EnvQuery*                                              TrackingMovementValidQuery;                        // 0x3e8(0x8)
+	bool                                                         ShouldBlockMigrationForAllAttackingCrewsFromAnyDistance; // 0x3f0(0x1)
+	Class AIOnDemandSpawner*                                     TinySharkSpawner;                                  // 0x498(0x8)
+	Class SharkPawn*                                             TinySharkPawn;                                     // 0x4a0(0x8)
+	struct FName                                                 HealthRTPC;                                        // 0x4a8(0x8)
+	Struct TinySharkParams                                       Params;                                            // 0x4b8(0xb8)
+	Class TinySharkTelemetryComponent*                           TinySharkTelemetryComponent;                       // 0x570(0x8)
+	Class Ship*                                                  TrackedShip;                                       // 0x578(0x8)
+	Struct EncounterParams                                       SightingEncounterParams;                           // 0x600(0xc)
+	Struct EncounterParams                                       CloseEncounterParams;                              // 0x60c(0xc)
 };
 
 

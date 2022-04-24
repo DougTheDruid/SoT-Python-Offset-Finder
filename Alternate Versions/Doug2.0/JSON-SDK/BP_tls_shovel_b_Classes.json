@@ -1,16 +1,23 @@
 {
   "BP_tls_shovel_bdg_01_a_ItemInfo_C": {
-    "Super": "None",
-    "FullSize": "0x10",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x10",
-    "Attributes": []
+    "Super": "ItemInfo",
+    "FullSize": "0x508",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x500"
+      }
+    ]
   },
   "BP_tls_shovel_bdg_01_a_Wieldable_C": {
-    "Super": "None",
-    "FullSize": "0x10",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x10",
+    "Super": "BP_Shovel_C",
+    "FullSize": "0x858",
+    "InheritedSize": "0x858",
+    "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_tls_shovel_bdg_01_a_ItemDesc_C": {

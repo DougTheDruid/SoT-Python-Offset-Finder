@@ -118,55 +118,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "sailslivery_yr1_legendary_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_reaper_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_orderofsouls_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_merchant_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_legendary_01_v02_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_legendary_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_goldhoarders_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "sailslivery_zeus_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
@@ -434,6 +385,55 @@
     "Attributes": []
   },
   "sailslivery_admiral_01_CutomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_yr1_legendary_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_reaper_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_orderofsouls_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_merchant_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_legendary_01_v02_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_legendary_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_goldhoarders_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",

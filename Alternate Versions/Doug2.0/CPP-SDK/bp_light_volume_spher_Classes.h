@@ -6,22 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
-class bp_light_volume_sphere_orange_a_C: public Rowboat
-{
-public:
-	Class PetHangoutSpotComponent*                               PetHangoutSpot;                                    // 0xa08(0x8)
-	Class WaterInteractionComponent*                             WaterInteraction;                                  // 0xa10(0x8)
-	Class ImpulseThrottlerComponent*                             ImpulseThrottler;                                  // 0xa18(0x8)
-	Class ChildActorComponent*                                   MiddleRightSeat;                                   // 0xa20(0x8)
-	Class ChildActorComponent*                                   MiddleLeftSeat;                                    // 0xa28(0x8)
-};
-
-
 // Size 0x10
-class bp_light_volume_sphere_orb_blue_C: public ClamberSpot
+class bp_light_volume_sphere_orange_a_C: public Actor
 {
 public:
+	Class BillboardComponent*                                    Billboard;                                         // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d8(0x8)
 };
 
 
@@ -29,8 +19,8 @@ public:
 class bp_light_volume_sphere_large_a_C: public Actor
 {
 public:
-	Class BillboardComponent*                                    None;                                              // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
+	Class BillboardComponent*                                    Billboard;                                         // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d8(0x8)
 };
 
 

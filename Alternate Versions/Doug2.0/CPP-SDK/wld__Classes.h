@@ -7,35 +7,21 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class wld_resource_island_01_b_vfx_C: public LevelScriptActor
+class wld_resource_island_01_calmwater_C: public LevelScriptActor
 {
 public:
 };
 
 
 // Size 0x0
-class wld_resource_island_01_b_audio_C: public LevelScriptActor
+class wld_resource_island_02_d_calmwater_C: public LevelScriptActor
 {
 public:
 };
 
 
 // Size 0x0
-class wld_resource_island_01_b_design_C: public LevelScriptActor
-{
-public:
-};
-
-
-// Size 0x0
-class wld_resource_island_01_b_terrain_C: public LevelScriptActor
-{
-public:
-};
-
-
-// Size 0x0
-class wld_resource_island_01_b_calmwater_C: public LevelScriptActor
+class wld_resource_island_02_e_calmwater_C: public LevelScriptActor
 {
 public:
 };

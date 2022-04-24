@@ -19,31 +19,23 @@ public:
 };
 
 
-// Size 0x38
-class wsp_tree_cluster_01_h_C: public BP_Placement_HeightDrop_C
+// Size 0x68
+class wsp_tree_cluster_01_a_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_01_a25;                                   // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_01_b10;                              // 0x418(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_01_a;                                // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_01_a20;                                   // 0x430(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_06_b11;                                   // 0x438(0x8)
-	Class SceneComponent*                                        Scene;                                             // 0x440(0x8)
-};
-
-
-// Size 0x38
-class wsp_tree_cluster_03_c_C: public BP_Placement_HeightDrop_C
-{
-public:
-	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a1;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a;                              // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_01_a2;                               // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_06_b;                                     // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_02_b2;                               // 0x430(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x438(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_02_a2;                               // 0x440(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a2;                             // 0x410(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a1;                             // 0x418(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_fern_01_a;                                // 0x420(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a;                              // 0x428(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_07_a_02;                                  // 0x430(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_07_a_01;                                  // 0x438(0x8)
+	Class StaticMeshComponent*                                   wsp_tree_palm_02_c2;                               // 0x440(0x8)
+	Class StaticMeshComponent*                                   wsp_tree_palm_02_b2;                               // 0x448(0x8)
+	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x450(0x8)
+	Class StaticMeshComponent*                                   wsp_tree_palm_01_b3;                               // 0x458(0x8)
+	Class StaticMeshComponent*                                   wsp_tree_palm_01_a3;                               // 0x460(0x8)
+	Class StaticMeshComponent*                                   wsp_tree_palm_01_a2;                               // 0x468(0x8)
+	Class StaticMeshComponent*                                   wsp_tree_palm_02_a2;                               // 0x470(0x8)
 };
 
 

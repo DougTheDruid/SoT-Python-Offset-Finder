@@ -13,23 +13,22 @@ public:
 };
 
 
-// Size 0x8
-class BP_gmp_repair_wood_02_a_ItemInfo_C: public ItemInfo
-{
-public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
-};
-
-
 // Size 0x0
-class BP_gmp_repair_wood_02_a_Wieldable_C: public BP_WoodPlank_C
+class BP_gmp_repair_wood_02_a_ItemInfo_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class BP_gmp_repair_wood_02_a_Proxy_C: public BP_WoodPlankProxy_C
+// Size 0x1
+class BP_gmp_repair_wood_02_a_Wieldable_C: public None
+{
+public:
+};
+
+
+// Size -0x64cfbf20
+class BP_gmp_repair_wood_02_a_Proxy_C: public None
 {
 public:
 };

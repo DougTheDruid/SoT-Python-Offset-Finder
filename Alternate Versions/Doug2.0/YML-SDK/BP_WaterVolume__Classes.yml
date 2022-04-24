@@ -2,47 +2,19 @@
 # https://github.com/DougTheDruid
 BP_WaterVolume_Large_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x48c'
-  InheritedSize: '0x48c'
-  Super: BP_WaterVolume_C
+  ClassSize: '0xf'
+  FullSize: '0xf'
+  InheritedSize: '0x0'
+  Super: None
 BP_WaterVolume_Optimized_C:
-  Attributes:
-  - Name: UberGraphFrame
-    Offset: '0x450'
-    Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: WaterPlaneActivatationVolume
-    Offset: '0x458'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: FlatWaterPlane
-    Offset: '0x460'
-    Size: '0x8'
-    Type: Class FlatWaterPlaneComponent*
-  - Name: FlatWaterMesh
-    Offset: '0x468'
-    Size: '0x8'
-    Type: Class FlatWaterMeshComponent*
-  - Name: Root
-    Offset: '0x470'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: SunLit
-    Offset: '0x478'
-    Size: '0x1'
-    Type: bool
-  - Name: RippleGeneratorTag
-    Offset: '0x47c'
-    Size: '0x8'
-    Type: struct FName
-  ClassSize: '0x34'
-  FullSize: '0x484'
-  InheritedSize: '0x450'
-  Super: WaterVolume
+  Attributes: []
+  ClassSize: '0x3cde1483'
+  FullSize: '0x3cde1483'
+  InheritedSize: '0x0'
+  Super: None
 BP_WaterVolume_WSP_Ext1_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x484'
-  InheritedSize: '0x484'
-  Super: BP_WaterVolume_Optimized_C
+  ClassSize: '-0x7ccccccd'
+  FullSize: '-0x7ccccccd'
+  InheritedSize: '0x0'
+  Super: /Game/Textures/Characters/IPG/Wardrobe/Costumes/ipg_costume_npc

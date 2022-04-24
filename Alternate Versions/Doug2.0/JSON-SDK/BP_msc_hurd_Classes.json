@@ -21,48 +21,42 @@
     "Attributes": []
   },
   "BP_msc_hurdygurdy_smp_01_a_v01_ItemInfo_C": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x10",
+    "Super": "ItemInfo",
+    "FullSize": "0x508",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "SharedRoot",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x500"
       }
     ]
   },
   "BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C": {
-    "Super": "Actor",
-    "FullSize": "0x3e8",
-    "InheritedSize": "0x3d0",
+    "Super": "BP_HurdyGurdy_C",
+    "FullSize": "0x8d8",
+    "InheritedSize": "0x8c0",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "ParticleSystemComponent0",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "StaticMeshComponent0",
+        "Name": "shroudmask_tp",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x8c0"
       },
       {
-        "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
+        "Name": "shroud_tp",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x8c8"
+      },
+      {
+        "Name": "shroud_fp",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8d0"
       }
     ]
   },

@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_Orderofsouls_TallTales_C:
   Attributes:
-  - Name: None
+  - Name: SolidHits
     Offset: '0x670'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: None
+  - Name: NPCDialog
     Offset: '0x678'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: None
+  - Name: AnimNotifyWwiseEmitter
     Offset: '0x680'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*

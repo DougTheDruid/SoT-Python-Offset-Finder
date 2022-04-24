@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_SkullRitual_Pipe_C:
   Attributes:
-  - Name: None
+  - Name: gmp_sm_pipe_oos_01_a
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
@@ -11,8 +11,12 @@ BP_SkullRitual_Pipe_C:
   InheritedSize: '0x3d0'
   Super: Actor
 BP_SkullRitual_Skull_C:
-  Attributes: []
-  ClassSize: '0x313504f2'
-  FullSize: '0x313504f2'
-  InheritedSize: '0x0'
-  Super: None
+  Attributes:
+  - Name: trs_briggsys_skull_01_c
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
+  Super: Actor

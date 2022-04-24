@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_OutpostDirectionSign_C:
   Attributes:
-  - Name: None
+  - Name: InspectDialog
     Offset: '0x4e8'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x4f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x4f8'
     Size: '0x8'
     Type: Class SceneComponent*

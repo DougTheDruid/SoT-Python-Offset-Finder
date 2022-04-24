@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 BP_Potion_Reroll_ShopDisplay_C:
   Attributes:
-  - Name: None
+  - Name: InspectDialog
     Offset: '0x4e8'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: None
+  - Name: vfx_Tendrils
     Offset: '0x4f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: vfx_rerollBottle
     Offset: '0x4f8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: Potion_Reroll
     Offset: '0x500'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x508'
     Size: '0x8'
     Type: Class SceneComponent*

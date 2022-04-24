@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_Projectile_GhostBall_C: public CannonProjectile
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x658(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x660(0x8)
-	Class SphereComponent*                                       None;                                              // 0x668(0x8)
-	BlueprintGeneratedClass None*                                None;                                              // 0x670(0x8)
-	class                                                        None;                                              // 0x678(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x658(0x8)
+	Class StaticMeshComponent*                                   CannonBall;                                        // 0x660(0x8)
+	Class SphereComponent*                                       Collision;                                         // 0x668(0x8)
+	BlueprintGeneratedClass BP_Projectile_Trail_C*               TrailActor;                                        // 0x670(0x8)
+	class                                                        MeshTrailClass;                                    // 0x678(0x8)
 };
 
 

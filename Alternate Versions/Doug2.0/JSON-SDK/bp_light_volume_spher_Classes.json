@@ -1,48 +1,23 @@
 {
   "bp_light_volume_sphere_orange_a_C": {
-    "Super": "Rowboat",
-    "FullSize": "0xa30",
-    "InheritedSize": "0xa08",
-    "ClassSize": "0x28",
+    "Super": "Actor",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "PetHangoutSpot",
-        "Type": "Class PetHangoutSpotComponent*",
+        "Name": "Billboard",
+        "Type": "Class BillboardComponent*",
         "Size": "0x8",
-        "Offset": "0xa08"
+        "Offset": "0x3d0"
       },
       {
-        "Name": "WaterInteraction",
-        "Type": "Class WaterInteractionComponent*",
+        "Name": "StaticMeshComponent0",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xa10"
-      },
-      {
-        "Name": "ImpulseThrottler",
-        "Type": "Class ImpulseThrottlerComponent*",
-        "Size": "0x8",
-        "Offset": "0xa18"
-      },
-      {
-        "Name": "MiddleRightSeat",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0xa20"
-      },
-      {
-        "Name": "MiddleLeftSeat",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0xa28"
+        "Offset": "0x3d8"
       }
     ]
-  },
-  "bp_light_volume_sphere_orb_blue_C": {
-    "Super": "ClamberSpot",
-    "FullSize": "0x600",
-    "InheritedSize": "0x5f0",
-    "ClassSize": "0x10",
-    "Attributes": []
   },
   "bp_light_volume_sphere_large_a_C": {
     "Super": "Actor",
@@ -51,13 +26,13 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Billboard",
         "Type": "Class BillboardComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "StaticMeshComponent0",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"

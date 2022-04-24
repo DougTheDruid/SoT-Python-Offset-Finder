@@ -27,22 +27,21 @@ public:
 };
 
 
-// Size 0x10
-class BP_msc_hurdygurdy_smp_01_a_v01_ItemInfo_C: public Actor
+// Size 0x8
+class BP_msc_hurdygurdy_smp_01_a_v01_ItemInfo_C: public ItemInfo
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d0(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x3d8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 
 // Size 0x18
-class BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C: public Actor
+class BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C: public BP_HurdyGurdy_C
 {
 public:
-	Class ParticleSystemComponent*                               ParticleSystemComponent0;                          // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d8(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x3e0(0x8)
+	Class StaticMeshComponent*                                   shroudmask_tp;                                     // 0x8c0(0x8)
+	Class StaticMeshComponent*                                   shroud_tp;                                         // 0x8c8(0x8)
+	Class StaticMeshComponent*                                   shroud_fp;                                         // 0x8d0(0x8)
 };
 
 

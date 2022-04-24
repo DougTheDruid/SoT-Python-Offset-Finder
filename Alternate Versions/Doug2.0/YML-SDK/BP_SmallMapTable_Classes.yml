@@ -2,51 +2,51 @@
 # https://github.com/DougTheDruid
 BP_SmallMapTable_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x778'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x780'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
-  - Name: None
+  - Name: NavBlocker
     Offset: '0x788'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: None
+  - Name: ControlPoint
     Offset: '0x790'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ControlPoint
     Offset: '0x798'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ControlPoint
     Offset: '0x7a0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ControlPoint
     Offset: '0x7a8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: TextureFeedback
     Offset: '0x7b0'
     Size: '0x8'
     Type: Class TextureFeedbackComponent*
-  - Name: None
+  - Name: Cube
     Offset: '0x7b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Map
     Offset: '0x7c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: ActiveRange
     Offset: '0x7c8'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: IsActive
     Offset: '0x7cc'
     Size: '0x1'
     Type: bool

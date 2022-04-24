@@ -2,39 +2,39 @@
 # https://github.com/DougTheDruid
 BP_Tavern_B_AudioLayer_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3d0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: Triton
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class TritonComponent*
-  - Name: None
+  - Name: Fire
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class WwiseEmitterComponent*
-  - Name: None
+  - Name: Tavern_AudioSpace_EdgeSection
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class AudioSpaceComponent*
-  - Name: None
+  - Name: Tavern_AudioSpace_LargeSection
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class AudioSpaceComponent*
-  - Name: None
+  - Name: Tavern_AudioPortal
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: Scene
     Offset: '0x400'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: TavernFire_Play
     Offset: '0x408'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: None
+  - Name: TavernFire_Stop
     Offset: '0x410'
     Size: '0x8'
     Type: Class WwiseEvent*

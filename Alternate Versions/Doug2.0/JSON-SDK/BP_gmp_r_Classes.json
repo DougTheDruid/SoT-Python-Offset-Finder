@@ -7,31 +7,24 @@
     "Attributes": []
   },
   "BP_gmp_repair_wood_02_a_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      }
-    ]
-  },
-  "BP_gmp_repair_wood_02_a_Wieldable_C": {
-    "Super": "BP_WoodPlank_C",
-    "FullSize": "0x7d8",
-    "InheritedSize": "0x7d8",
+    "Super": "None",
+    "FullSize": "0x0",
+    "InheritedSize": "0x0",
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_gmp_repair_wood_02_a_Wieldable_C": {
+    "Super": "None",
+    "FullSize": "0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
   "BP_gmp_repair_wood_02_a_Proxy_C": {
-    "Super": "BP_WoodPlankProxy_C",
-    "FullSize": "0x638",
-    "InheritedSize": "0x638",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "-0x64cfbf20",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x64cfbf20",
     "Attributes": []
   },
   "DougTheDruid": {

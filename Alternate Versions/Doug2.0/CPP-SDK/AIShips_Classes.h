@@ -171,7 +171,7 @@ public:
 };
 
 
-// Size 0x1b8
+// Size 0x1d0
 class AIShipServiceDataAsset: public DataAsset
 {
 public:
@@ -190,6 +190,8 @@ public:
 	Struct WeightedProbabilityRangeOfRanges                      TimerBattleRetryRegenInterval;                     // 0x1a0(0x30)
 	float                                                        TimerBattleMinActivationDistanceFromPlayers;       // 0x1d0(0x4)
 	Class ShortRangeMarkerDataAsset*                             RewardMarkerParams;                                // 0x1d8(0x8)
+	TArray<Struct FName>                                         IslandsToAvoid;                                    // 0x1e0(0x10)
+	float                                                        AvoidanceRange;                                    // 0x1f0(0x4)
 };
 
 

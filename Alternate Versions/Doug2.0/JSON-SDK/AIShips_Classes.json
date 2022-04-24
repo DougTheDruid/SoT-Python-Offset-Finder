@@ -684,9 +684,9 @@
   },
   "AIShipServiceDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x1e0",
+    "FullSize": "0x1f8",
     "InheritedSize": "0x28",
-    "ClassSize": "0x1b8",
+    "ClassSize": "0x1d0",
     "Attributes": [
       {
         "Name": "BattleEncounterParams",
@@ -777,6 +777,18 @@
         "Type": "Class ShortRangeMarkerDataAsset*",
         "Size": "0x8",
         "Offset": "0x1d8"
+      },
+      {
+        "Name": "IslandsToAvoid",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x1e0"
+      },
+      {
+        "Name": "AvoidanceRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1f0"
       }
     ]
   },
