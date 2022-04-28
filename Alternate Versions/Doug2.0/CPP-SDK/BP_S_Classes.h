@@ -6,16 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_ShipwreckStorageBarrel_Grog_C: public InteractableBase
-{
-public:
-	Class TankardRefillerComponent*                              TankardRefiller;                                   // 0x3f8(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x400(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x408(0x8)
-};
-
-
 // Size 0x10
 class BP_ShipStorageBarrelTwo_C: public Actor
 {
@@ -46,17 +36,6 @@ public:
 
 
 // Size 0x20
-class BP_ShipStorageBarrel_Grog_C: public InteractableBase
-{
-public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x3f8(0x8)
-	Class TankardRefillerComponent*                              TankardRefiller;                                   // 0x400(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x408(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x410(0x8)
-};
-
-
-// Size 0x20
 class BP_ShipStorageBarrel_Food_C: public StorageContainer
 {
 public:
@@ -74,6 +53,17 @@ public:
 	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
 	Class ShipTelemetrySubjectComponent*                         ShipTelemetrySubject;                              // 0x4c8(0x8)
 	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
+};
+
+
+// Size 0x20
+class BP_ShipStorageBarrel_Grog_C: public InteractableBase
+{
+public:
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x3f8(0x8)
+	Class TankardRefillerComponent*                              TankardRefiller;                                   // 0x400(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x410(0x8)
 };
 
 

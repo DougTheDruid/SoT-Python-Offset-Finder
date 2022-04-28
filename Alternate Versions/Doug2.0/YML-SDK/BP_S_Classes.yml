@@ -126,21 +126,3 @@ BP_ShipStorageBarrel_Wood_C:
   FullSize: '0x4e0'
   InheritedSize: '0x4c0'
   Super: StorageContainer
-BP_ShipwreckStorageBarrel_Grog_C:
-  Attributes:
-  - Name: TankardRefiller
-    Offset: '0x3f8'
-    Size: '0x8'
-    Type: Class TankardRefillerComponent*
-  - Name: Interactable
-    Offset: '0x400'
-    Size: '0x8'
-    Type: Class InteractableComponent*
-  - Name: StaticMesh
-    Offset: '0x408'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  ClassSize: '0x18'
-  FullSize: '0x410'
-  InheritedSize: '0x3f8'
-  Super: InteractableBase

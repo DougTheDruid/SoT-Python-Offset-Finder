@@ -6,244 +6,100 @@
     "ClassSize": "0x140",
     "Attributes": [
       {
-        "Name": "WorldLocationPopUp",
-        "Type": "Class WorldLocationPopUpComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe9"
       },
       {
-        "Name": "CommodityManifestBook",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
+        "Name": "None",
+        "Type": "TArray<class None*>",
+        "Size": "0x10",
+        "Offset": "0xf0"
       },
       {
-        "Name": "bld_prem_shop_plinth_01_b",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x100"
       },
       {
-        "Name": "vfx_candle_01_tavern_02",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x101"
       },
       {
-        "Name": "vfx_candle_01_flickering_tavern_small_02",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
+        "Name": "None",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x104"
       },
       {
-        "Name": "cmn_candle_01_b",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x108"
       },
       {
-        "Name": "cmn_candle_01_d_02",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x110"
       },
       {
-        "Name": "PointLight3",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x408"
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x118"
       },
       {
-        "Name": "vfx_candle_01_tavern1",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
+        "Name": "None",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x11c"
       },
       {
-        "Name": "vfx_candle_01_flickering_tavern_small",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x120"
       },
       {
-        "Name": "cmn_candle_01_c",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
+        "Name": "None",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x128"
       },
       {
-        "Name": "cmn_candle_01_d",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
+        "Name": "None",
+        "Type": "TArray<class None*>",
+        "Size": "0x10",
+        "Offset": "0x138"
       },
       {
-        "Name": "cmp_ships_manifest_mrh_01_e",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
+        "Name": "None",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x148"
       },
       {
-        "Name": "PetHangoutSpot",
-        "Type": "Class PetHangoutSpotComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
+        "Name": "None",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x158"
       },
       {
-        "Name": "bld_shop_mrh_01_b",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x168"
       },
       {
-        "Name": "bld_shop_mrh_01_f",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "bld_shop_mrh_01_e",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "bld_shop_mrh_01_d",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "bld_shop_mrh_01_c",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "SpotLight4",
-        "Type": "Class SpotLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "SpotLight3",
-        "Type": "Class SpotLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "CompanyRegion",
-        "Type": "Class CompanyRegionComponent*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "SpotLight2",
-        "Type": "Class SpotLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "SpotLight1",
-        "Type": "Class SpotLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "PointLight2",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x490"
-      },
-      {
-        "Name": "ChildActor",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x498"
-      },
-      {
-        "Name": "PointLight1",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "bp_light_volume_sphere_orange_a",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x4a8"
-      },
-      {
-        "Name": "PointLight",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x4b0"
-      },
-      {
-        "Name": "tls_wld_Orb_light_a",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x4b8"
-      },
-      {
-        "Name": "SpotLight",
-        "Type": "Class SpotLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x4c0"
-      },
-      {
-        "Name": "vfx_candle_01_tavern",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x4c8"
-      },
-      {
-        "Name": "bld_shop_globe_mrh_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4d0"
-      },
-      {
-        "Name": "bld_par_lantern_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4d8"
-      },
-      {
-        "Name": "bld_shop_blackboard_mch_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4e0"
-      },
-      {
-        "Name": "bld_shop_map_board_mch_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4e8"
-      },
-      {
-        "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4f0"
-      },
-      {
-        "Name": "bld_shop_wood_box_03_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4f8"
-      },
-      {
-        "Name": "bld_shop_wood_box_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      },
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x508"
+        "Offset": "0x170"
       }
     ]
   },

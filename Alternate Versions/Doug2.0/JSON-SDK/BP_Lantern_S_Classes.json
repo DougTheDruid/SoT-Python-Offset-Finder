@@ -1,30 +1,30 @@
 {
   "BP_Lantern_SmallShip_DeckFront_C": {
-    "Super": "BP_InteractableShipLantern_C",
-    "FullSize": "0x755",
-    "InheritedSize": "0x755",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "0x20d945d0",
+    "InheritedSize": "0x41a00000",
+    "ClassSize": "-0x20c6ba30",
     "Attributes": []
   },
   "BP_Lantern_SmallShip_DeckBrig_Back_C": {
-    "Super": "BP_InteractableShipLantern_C",
-    "FullSize": "0x755",
-    "InheritedSize": "0x755",
-    "ClassSize": "0x0",
+    "Super": "RemoteRole",
+    "FullSize": "0x20003",
+    "InheritedSize": "0x2",
+    "ClassSize": "0x20001",
     "Attributes": []
   },
   "BP_Lantern_SmallShip_Cabin_Table_C": {
-    "Super": "BP_InteractableShipLantern_C",
-    "FullSize": "0x755",
-    "InheritedSize": "0x755",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "-0x408063f4",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x408063f4",
     "Attributes": []
   },
   "BP_Lantern_SmallShip_Cabin_Quest_C": {
-    "Super": "BP_InteractableShipLantern_C",
-    "FullSize": "0x755",
-    "InheritedSize": "0x755",
-    "ClassSize": "0x0",
+    "Super": "EventCapstanStoppedMoving",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x1",
+    "ClassSize": "-0x2",
     "Attributes": []
   },
   "DougTheDruid": {

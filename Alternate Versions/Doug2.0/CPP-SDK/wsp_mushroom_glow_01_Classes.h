@@ -6,49 +6,55 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x48
-class wsp_mushroom_glow_01_c_C: public BP_Placement_HeightDrop_C
+// Size -0x1
+class wsp_mushroom_glow_01_c_C: public ThirdPersonMesh
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x448(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x450(0x8)
+	Class PrimitiveComponent*                                    ThirdPersonMesh;                                   // 0x430(0x8)
+	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x438(0x8)
+	class                                                        AnimationKey;                                      // 0x440(0x8)
+	Struct ObjectMessagingDispatcher                             MessagingDispatcher;                               // 0x448(0xa0)
+	Struct Transform                                             AnimationOffset;                                   // 0x4f0(0x30)
+	Class WwiseEvent*                                            EquipSfx;                                          // 0x520(0x8)
+	Class WwiseEvent*                                            UnequipSfx;                                        // 0x528(0x8)
+	Class WwiseEvent*                                            WielderLandedJumpSfx;                              // 0x530(0x8)
+	Class WwiseEvent*                                            WielderFootstepLayerOneshot;                       // 0x538(0x8)
+	struct FName                                                 PlayerWalkSpeedRtpc;                               // 0x540(0x8)
+	Class WwiseEvent*                                            FirstTimeEquipSfx;                                 // 0x548(0x8)
+	bool                                                         ForceUnequipSfx;                                   // 0x550(0x1)
+	byte                                                         ItemSize;                                          // 0x551(0x1)
+	Struct DetailAppearenceDesc                                  DetailAppearence;                                  // 0x558(0x30)
+	bool                                                         PropagateVisibilityToChildren;                     // 0x588(0x1)
+	struct FName                                                 AINoiseTag;                                        // 0x58c(0x8)
+	TArray<Struct FName>                                         ThirdPersonExtraMeshNames;                         // 0x598(0x10)
+	TArray<Struct FName>                                         StashedExtraMeshNames;                             // 0x5a8(0x10)
+	Class MeshComponent*                                         StashedMeshComponent;                              // 0x5b8(0x8)
+	struct FName                                                 StashedMeshAttachSocket;                           // 0x5c0(0x8)
+	struct FName                                                 ServerWieldAttachSocket;                           // 0x5c8(0x8)
+	Class PhrasesRadialDataAsset*                                Phrases;                                           // 0x5d0(0x8)
+	Class Object*                                                CachedFirstPersonProxyMesh;                        // 0x5d8(0x8)
+	Class Object*                                                CachedThirdPersonProxyMesh;                        // 0x5e0(0x8)
+	class                                                        ItemCategory;                                      // 0x710(0x8)
+	Class ItemInfo*                                              ItemInfo;                                          // 0x718(0x8)
+	Class InterpolatingItem*                                     InterpolatingItem;                                 // 0x720(0x8)
+	Class WieldableItemVfxComponent*                             WieldableItemVfxComponent;                         // 0x748(0x8)
+	TArray<class ThirdPersonExtraMeshes*>                        ThirdPersonExtraMeshes;                            // 0x750(0x10)
+	TArray<class StashedExtraMeshes*>                            StashedExtraMeshes;                                // 0x760(0x10)
+	bool                                                         OfferingEnabled;                                   // 0x789(0x1)
 };
 
 
-// Size 0x20
-class wsp_mushroom_glow_01_b_C: public BP_Placement_HeightDrop_C
+// Size 0x1d
+class wsp_mushroom_glow_01_b_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x420(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x428(0x8)
 };
 
 
-// Size 0x60
-class wsp_mushroom_glow_01_a_C: public BP_Placement_HeightDrop_C
+// Size 0x30308
+class wsp_mushroom_glow_01_a_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent010;                            // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x450(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x458(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x460(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x468(0x8)
 };
 
 

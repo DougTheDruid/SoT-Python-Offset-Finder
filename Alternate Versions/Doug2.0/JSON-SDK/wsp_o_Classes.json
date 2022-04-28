@@ -7,24 +7,24 @@
     "Attributes": []
   },
   "wsp_outpost_1_vfx_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x1",
     "Attributes": []
   },
   "wsp_outpost_1_lighting_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "-0xfffd",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0xfffd",
     "Attributes": []
   },
   "wsp_outpost_1_design_talltales_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
+    "Super": "",
+    "FullSize": "0x0",
+    "InheritedSize": "-0x22784d80",
+    "ClassSize": "0x22784d80",
     "Attributes": []
   },
   "wsp_outpost_1_design_adventure_C": {
@@ -35,24 +35,24 @@
     "Attributes": []
   },
   "wsp_outpost_1_design_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "0x300",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x300",
     "Attributes": []
   },
   "wsp_outpost_1_audio_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
+    "Super": "",
+    "FullSize": "-0x1",
+    "InheritedSize": "-0x4d130000",
+    "ClassSize": "0x4d12ffff",
     "Attributes": []
   },
   "wsp_outpost_1_terrain_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "0x30001",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x30001",
     "Attributes": []
   },
   "DougTheDruid": {

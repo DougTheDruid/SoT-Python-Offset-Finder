@@ -1,30 +1,30 @@
 {
   "BP_SmallShip_DamageZone_MezzanineDeck_01_C": {
-    "Super": "BP_BaseInternalDamageZone_C",
-    "FullSize": "0x868",
-    "InheritedSize": "0x868",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "0x3",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x3",
     "Attributes": []
   },
   "BP_SmallShip_DamageZone_MezzanineDeck_00_C": {
-    "Super": "BP_BaseInternalDamageZone_C",
-    "FullSize": "0x868",
-    "InheritedSize": "0x868",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "-0x411ad2e5",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x411ad2e5",
     "Attributes": []
   },
   "BP_SmallShip_DamageZone_LowerDeck_01_C": {
-    "Super": "BP_BaseInternalDamageZone_C",
-    "FullSize": "0x868",
-    "InheritedSize": "0x868",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "0x101",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x101",
     "Attributes": []
   },
   "BP_SmallShip_DamageZone_LowerDeck_00_C": {
-    "Super": "BP_BaseInternalDamageZone_C",
-    "FullSize": "0x868",
-    "InheritedSize": "0x868",
-    "ClassSize": "0x0",
+    "Super": "/Game/Textures/Characters/IPG/Wardrobe/Costumes/ipg_costume_npc",
+    "FullSize": "-0x7ccccccd",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x7ccccccd",
     "Attributes": []
   },
   "DougTheDruid": {

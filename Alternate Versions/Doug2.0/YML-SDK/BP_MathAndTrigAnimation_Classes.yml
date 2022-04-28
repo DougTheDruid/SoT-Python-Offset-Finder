@@ -17,16 +17,8 @@ BP_MathAndTrigAnimation_C:
   - Name: None
     Offset: '0x428'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x430'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x438'
-    Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x30'
-  FullSize: '0x440'
+  ClassSize: '0x20'
+  FullSize: '0x430'
   InheritedSize: '0x410'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

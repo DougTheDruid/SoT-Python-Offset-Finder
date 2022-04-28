@@ -6,19 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
-class BP_SkullRitual_Skull_C: public Actor
+// Size -0x40c3661c
+class BP_SkullRitual_Skull_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   trs_briggsys_skull_01_c;                           // 0x3d0(0x8)
 };
 
 
-// Size 0x8
-class BP_SkullRitual_Pipe_C: public Actor
+// Size 0x8080808
+class BP_SkullRitual_Pipe_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   gmp_sm_pipe_oos_01_a;                              // 0x3d0(0x8)
 };
 
 

@@ -1,4 +1,25 @@
 {
+  "BP_tls_tankard_yr1_leg_01_a_ItemInfo_C": {
+    "Super": "ItemInfo",
+    "FullSize": "0x508",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x500"
+      }
+    ]
+  },
+  "BP_tls_tankard_yr1_leg_01_a_Wieldable_C": {
+    "Super": "None",
+    "FullSize": "0x840",
+    "InheritedSize": "0x840",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_tls_tankard_smp_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
@@ -38,27 +59,6 @@
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_tls_tankard_yr1_leg_01_a_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      }
-    ]
-  },
-  "BP_tls_tankard_yr1_leg_01_a_Wieldable_C": {
-    "Super": "BP_Tankard_C",
-    "FullSize": "0x840",
-    "InheritedSize": "0x840",
     "ClassSize": "0x0",
     "Attributes": []
   },

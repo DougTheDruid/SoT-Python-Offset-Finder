@@ -6,22 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x88
-class BP_CustomisableLadder_C: public Ladder
+// Size 0x48
+class BP_CustomisableLadder_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x5c0(0x8)
-	Class InteractableComponent*                                 InteractableComponent;                             // 0x5c8(0x8)
-	Class StaticMeshComponent*                                   Ladder Cap;                                        // 0x5d0(0x8)
-	Struct CustomisableLadderDefinitionStruct                    LadderCustomisationDefinition;                     // 0x5d8(0x20)
-	TArray<Struct InteractOffset>                                OffTopSplineComponentPositions;                    // 0x5f8(0x10)
-	TArray<Struct Vector>                                        OnTopSplineComponentPositions;                     // 0x608(0x10)
-	int                                                          Steps;                                             // 0x618(0x4)
-	Class MaterialInterface*                                     Material Override;                                 // 0x620(0x8)
-	float                                                        StepHeight;                                        // 0x628(0x4)
-	Struct Vector                                                Interactable Position;                             // 0x62c(0xc)
-	Struct Vector                                                Interactable Scale;                                // 0x638(0xc)
-	int                                                          Minimum Steps;                                     // 0x644(0x4)
+	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x438(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x440(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x448(0x8)
+	Class SceneComponent*                                        None;                                              // 0x450(0x8)
 };
 
 

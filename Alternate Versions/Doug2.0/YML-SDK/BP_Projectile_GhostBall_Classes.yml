@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 BP_Projectile_GhostBall_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x658'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: CannonBall
+  - Name: None
     Offset: '0x660'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Collision
+  - Name: None
     Offset: '0x668'
     Size: '0x8'
     Type: Class SphereComponent*
-  - Name: TrailActor
+  - Name: None
     Offset: '0x670'
     Size: '0x8'
-    Type: BlueprintGeneratedClass BP_Projectile_Trail_C*
-  - Name: MeshTrailClass
+    Type: SkeletalMesh shp_gho_captain_door_broken_01_a*
+  - Name: None
     Offset: '0x678'
     Size: '0x8'
     Type: class

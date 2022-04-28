@@ -26,7 +26,7 @@ BP_cmp_pocket_watch_mrh_01_e_ItemDesc_C:
   Super: ItemDesc
 BP_cmp_pocket_watch_mrh_01_e_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x500'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -39,7 +39,7 @@ BP_cmp_pocket_watch_mrh_01_e_Wieldable_C:
   ClassSize: '0x0'
   FullSize: '0xa80'
   InheritedSize: '0xa80'
-  Super: BP_PocketWatch_C
+  Super: None
 BP_cmp_pocketwatch_mrh_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

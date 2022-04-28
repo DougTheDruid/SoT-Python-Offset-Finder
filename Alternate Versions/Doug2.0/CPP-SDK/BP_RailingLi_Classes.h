@@ -27,4 +27,25 @@ public:
 };
 
 
+// Size 0x20003
+class BP_RailingLight_SmallShip_Wheel_C: public None
+{
+public:
+};
+
+
+// Size -0x7ccccccd
+class BP_RailingLight_SmallShip_BowRightFront_C: public /Game/Textures/Characters/IPG/Wardrobe/Costumes/ipg_costume_npc
+{
+public:
+};
+
+
+// Size -0x411ad2e2
+class BP_RailingLight_SmallShip_BowLeftFront_C: public None
+{
+public:
+};
+
+
 }

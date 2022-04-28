@@ -14,7 +14,7 @@ BP_msc_drum_smp_01_a_v01_ItemDesc_C:
   Super: ItemDesc
 BP_msc_drum_smp_01_a_v01_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x500'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -24,19 +24,19 @@ BP_msc_drum_smp_01_a_v01_ItemInfo_C:
   Super: ItemInfo
 BP_msc_drum_smp_01_a_v01_Wieldable_C:
   Attributes:
-  - Name: shroudmask_tp
+  - Name: None
     Offset: '0x8c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shroud_tp
+  - Name: None
     Offset: '0x8c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shroud_fp
+  - Name: None
     Offset: '0x8d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x18'
   FullSize: '0x8d8'
   InheritedSize: '0x8c0'
-  Super: BP_Drum_C
+  Super: None

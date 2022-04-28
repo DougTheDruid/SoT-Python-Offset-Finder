@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_GhostShipsMusicZoneActor_Voyage_Stage1_C:
   Attributes:
-  - Name: PreEngageMusicZone
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class MusicZoneComponent*
-  - Name: EngagedMusicZone
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class MusicZoneComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneComponent*

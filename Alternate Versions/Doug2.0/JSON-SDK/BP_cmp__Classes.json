@@ -6,7 +6,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x500"
@@ -14,7 +14,7 @@
     ]
   },
   "BP_cmp_pocket_watch_mrh_01_e_Wieldable_C": {
-    "Super": "BP_PocketWatch_C",
+    "Super": "None",
     "FullSize": "0xa80",
     "InheritedSize": "0xa80",
     "ClassSize": "0x0",

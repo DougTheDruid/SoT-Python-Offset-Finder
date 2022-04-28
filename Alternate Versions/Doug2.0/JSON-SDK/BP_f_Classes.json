@@ -141,10 +141,10 @@
     ]
   },
   "BP_fod_CoconutFresh_00_a_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "-0x40802412",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x40802412",
     "Attributes": []
   },
   "DougTheDruid": {

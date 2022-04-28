@@ -6,23 +6,24 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_SmallShipStorageBarrel_Wood_C: public StorageContainer
+// Size -0x7ccccccd
+class BP_SmallShipStorageBarrel_Wood_C: public /Game/Textures/Characters/IPG/Wardrobe/Costumes/ipg_costume_npc
 {
 public:
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
-	Class ShipTelemetrySubjectComponent*                         ShipTelemetrySubject;                              // 0x4c8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
 };
 
 
-// Size 0x18
-class BP_SmallShipStorageBarrel_Food_C: public StorageContainer
+// Size -0x411ad2e2
+class BP_SmallShipStorageBarrel_Food_C: public None
 {
 public:
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
-	Class ShipTelemetrySubjectComponent*                         ShipTelemetrySubject;                              // 0x4c8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
+};
+
+
+// Size -0x411ad2e5
+class BP_SmallShipStorageBarrel_Cannonball_C: public None
+{
+public:
 };
 
 

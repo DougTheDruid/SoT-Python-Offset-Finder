@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_riddle_trigger_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   Shockwave;                                         // 0x3d0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
-	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x3e0(0x8)
-	float                                                        Duration;                                          // 0x3e8(0x4)
+	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3d8(0x8)
+	Class MaterialInstanceDynamic*                               None;                                              // 0x3e0(0x8)
+	float                                                        ;                                                  // 0x0(0x64e5b600)
 };
 
 

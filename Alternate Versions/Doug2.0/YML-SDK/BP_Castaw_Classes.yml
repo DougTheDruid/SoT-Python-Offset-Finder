@@ -2,11 +2,35 @@
 # https://github.com/DougTheDruid
 BP_Castaway_Staff_C:
   Attributes:
-  - Name: StaticMesh
-    Offset: '0x3d0'
+  - Name: None
+    Offset: '0xf0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
-  Super: Actor
+    Type: Struct PointerToUberGraphFrame
+  - Name: None
+    Offset: '0xf8'
+    Size: '0x10'
+    Type: TArray<Float None>
+  - Name: None
+    Offset: '0x108'
+    Size: '0x10'
+    Type: TArray<Float None>
+  - Name: None
+    Offset: '0x118'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: None
+    Offset: '0x120'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x124'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x128'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x3c'
+  FullSize: '0x12c'
+  InheritedSize: '0xf0'
+  Super: AnimatedStepsComponent

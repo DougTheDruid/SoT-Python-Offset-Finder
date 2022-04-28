@@ -2,10 +2,10 @@
 # https://github.com/DougTheDruid
 BP_fod_CoconutFresh_00_a_ItemDesc_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
-  Super: ItemDesc
+  ClassSize: '-0x40802412'
+  FullSize: '-0x40802412'
+  InheritedSize: '0x0'
+  Super: None
 BP_fod_LeechesFresh_00_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

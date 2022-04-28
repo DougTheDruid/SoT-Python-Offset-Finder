@@ -7,68 +7,46 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x88
-class wsp_palm_cluster_03_d_C: public BP_Placement_HeightDrop_C
+class wsp_palm_cluster_03_d_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_flower_01_a;                                   // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__e;                               // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__f;                               // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__h;                               // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__g;                               // 0x430(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__b;                               // 0x438(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__a;                               // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent011;                            // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x450(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x458(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x460(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x468(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x470(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x478(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x480(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x488(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x490(0x8)
+	bool                                                         None;                                              // 0x0(0x1)
 };
 
 
 // Size 0x38
-class wsp_palm_cluster_03_c_C: public BP_Placement_HeightDrop_C
+class wsp_palm_cluster_03_c_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_tree_palm_02_a;                                // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent015;                            // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent012;                            // 0x420(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent011;                            // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x440(0x8)
+	None FloatProperty*                                          None;                                              // 0x400(0x8)
 };
 
 
 // Size 0x10
-class wsp_palm_cluster_02_b_C: public BP_Placement_HeightDrop_C
+class wsp_palm_cluster_02_b_C: public None
 {
 public:
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x418(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x560(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x568(0x8)
+	Class PointLightComponent*                                   None;                                              // 0x570(0x8)
+	Class PointLightComponent*                                   None;                                              // 0x578(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x580(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x588(0x8)
+	Class PlayerGeneratedMapsContainerComponent*                 None;                                              // 0x590(0x8)
 };
 
 
 // Size 0x18
-class wsp_palm_cluster_02_a_C: public BP_Placement_HeightDrop_C
+class wsp_palm_cluster_02_a_C: public None
 {
 public:
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x420(0x8)
 };
 
 
 // Size 0x10
-class wsp_palm_cluster_01_b_C: public BP_Placement_HeightDrop_C
+class wsp_palm_cluster_01_b_C: public None
 {
 public:
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x418(0x8)
 };
 
 

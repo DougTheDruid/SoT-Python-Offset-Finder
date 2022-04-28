@@ -27,7 +27,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x500"
@@ -35,25 +35,25 @@
     ]
   },
   "BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C": {
-    "Super": "BP_HurdyGurdy_C",
+    "Super": "None",
     "FullSize": "0x8d8",
     "InheritedSize": "0x8c0",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "shroudmask_tp",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x8c0"
       },
       {
-        "Name": "shroud_tp",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x8c8"
       },
       {
-        "Name": "shroud_fp",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x8d0"

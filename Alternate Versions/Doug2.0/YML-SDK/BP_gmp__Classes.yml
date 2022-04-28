@@ -6,6 +6,12 @@ BP_gmp_pocket_watch_pio_01_a_ItemDesc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: ItemDesc
+BP_gmp_pocket_watch_s06_01_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
 BP_gmp_pocketwatch_smp_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

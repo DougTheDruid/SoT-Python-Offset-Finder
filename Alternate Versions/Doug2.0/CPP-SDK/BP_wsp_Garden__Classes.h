@@ -6,24 +6,25 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
-class BP_wsp_Garden_small_rocks_C: public BP_Placement_Garden_C
+// Size 0x1d
+class BP_wsp_Garden_small_rocks_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class BP_wsp_Garden_shells_C: public BP_Placement_Garden_C
+// Size 0x3f4302ab
+class BP_wsp_Garden_shells_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class BP_wsp_Garden_pebbles_C: public BP_Placement_Garden_C
+// Size 0x8
+class BP_wsp_Garden_pebbles_C: public ItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 

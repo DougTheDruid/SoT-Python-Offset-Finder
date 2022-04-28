@@ -7,6 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x50
+class BP_VotableTaleProposal_Vertical_C: public VotableObjectView
+{
+public:
+	Struct PointerToUberGraphFrame                               None;                                              // 0x4e8(0x8)
+};
+
+
+// Size 0x50
 class BP_VotableTaleProposal_C: public VotableObjectView
 {
 public:
@@ -20,23 +28,6 @@ public:
 	int                                                          VoteCount;                                         // 0x528(0x4)
 	float                                                        Show Token Animation Time;                         // 0x52c(0x4)
 	Class MaterialInterface*                                     Token Material;                                    // 0x530(0x8)
-};
-
-
-// Size 0x50
-class BP_VotableTaleProposal_Vertical_C: public VotableObjectView
-{
-public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x4e8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4f0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4f8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x500(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x508(0x8)
-	TArray<class None*>                                          None;                                              // 0x510(0x10)
-	Class StaticMesh*                                            None;                                              // 0x520(0x8)
-	int                                                          None;                                              // 0x528(0x4)
-	float                                                        None;                                              // 0x52c(0x4)
-	Class MaterialInterface*                                     None;                                              // 0x530(0x8)
 };
 
 

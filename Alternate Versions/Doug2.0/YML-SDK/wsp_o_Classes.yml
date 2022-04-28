@@ -2,10 +2,10 @@
 # https://github.com/DougTheDruid
 wsp_outpost_1_audio_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
-  Super: LevelScriptActor
+  ClassSize: '0x4d12ffff'
+  FullSize: '-0x1'
+  InheritedSize: '-0x4d130000'
+  Super: ''
 wsp_outpost_1_calmwater_C:
   Attributes: []
   ClassSize: '0x0'
@@ -14,10 +14,10 @@ wsp_outpost_1_calmwater_C:
   Super: LevelScriptActor
 wsp_outpost_1_design_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
-  Super: LevelScriptActor
+  ClassSize: '0x300'
+  FullSize: '0x300'
+  InheritedSize: '0x0'
+  Super: None
 wsp_outpost_1_design_adventure_C:
   Attributes: []
   ClassSize: '0x0'
@@ -26,25 +26,25 @@ wsp_outpost_1_design_adventure_C:
   Super: LevelScriptActor
 wsp_outpost_1_design_talltales_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
-  Super: LevelScriptActor
+  ClassSize: '0x22784d80'
+  FullSize: '0x0'
+  InheritedSize: '-0x22784d80'
+  Super: ''
 wsp_outpost_1_lighting_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
-  Super: LevelScriptActor
+  ClassSize: '-0xfffd'
+  FullSize: '-0xfffd'
+  InheritedSize: '0x0'
+  Super: None
 wsp_outpost_1_terrain_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
-  Super: LevelScriptActor
+  ClassSize: '0x30001'
+  FullSize: '0x30001'
+  InheritedSize: '0x0'
+  Super: None
 wsp_outpost_1_vfx_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
-  Super: LevelScriptActor
+  ClassSize: '-0x1'
+  FullSize: '-0x1'
+  InheritedSize: '0x0'
+  Super: None

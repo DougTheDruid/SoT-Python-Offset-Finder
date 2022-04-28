@@ -38,50 +38,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_TaleBook_CursedRogue_AdditionalPuzzles_C": {
-    "Super": "VoyageProposalContainer",
-    "FullSize": "0x798",
-    "InheritedSize": "0x768",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x768"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x770"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x778"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x780"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x788"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x790"
-      }
-    ]
-  },
   "BP_BuoyantWoodBarrel_LockedToWater_C": {
     "Super": "BP_BuoyantStorageBarrel_LockedToWater_C",
     "FullSize": "0x710",

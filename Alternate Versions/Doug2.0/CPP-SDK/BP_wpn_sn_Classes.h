@@ -6,6 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x8
+class BP_wpn_sniper_rifle_oos_01_a_ItemInfo_C: public ItemInfo
+{
+public:
+	Class SceneComponent*                                        None;                                              // 0x500(0x8)
+};
+
+
+// Size 0x0
+class BP_wpn_sniper_rifle_oos_01_a_Wieldable_C: public BP_EyeOfReach_C
+{
+public:
+};
+
+
 // Size 0x0
 class BP_wpn_sniper_rifle_hal_01_a_ItemDesc_C: public ItemDesc
 {

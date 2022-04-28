@@ -8,7 +8,7 @@ BP_tls_bucket_bdg_01_a_ItemDesc_C:
   Super: ItemDesc
 BP_tls_bucket_bdg_01_a_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x500'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -21,7 +21,7 @@ BP_tls_bucket_bdg_01_a_Wieldable_C:
   ClassSize: '0x0'
   FullSize: '0x8f0'
   InheritedSize: '0x8f0'
-  Super: BP_Bucket_C
+  Super: None
 BP_tls_bucket_cou_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

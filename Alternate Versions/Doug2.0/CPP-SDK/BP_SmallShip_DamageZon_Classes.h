@@ -6,29 +6,29 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
-class BP_SmallShip_DamageZone_MezzanineDeck_01_C: public BP_BaseInternalDamageZone_C
+// Size 0x3
+class BP_SmallShip_DamageZone_MezzanineDeck_01_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class BP_SmallShip_DamageZone_MezzanineDeck_00_C: public BP_BaseInternalDamageZone_C
+// Size -0x411ad2e5
+class BP_SmallShip_DamageZone_MezzanineDeck_00_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class BP_SmallShip_DamageZone_LowerDeck_01_C: public BP_BaseInternalDamageZone_C
+// Size 0x101
+class BP_SmallShip_DamageZone_LowerDeck_01_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class BP_SmallShip_DamageZone_LowerDeck_00_C: public BP_BaseInternalDamageZone_C
+// Size -0x7ccccccd
+class BP_SmallShip_DamageZone_LowerDeck_00_C: public /Game/Textures/Characters/IPG/Wardrobe/Costumes/ipg_costume_npc
 {
 public:
 };

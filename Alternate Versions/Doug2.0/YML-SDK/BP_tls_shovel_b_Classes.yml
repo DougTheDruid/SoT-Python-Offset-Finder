@@ -8,7 +8,7 @@ BP_tls_shovel_bdg_01_a_ItemDesc_C:
   Super: ItemDesc
 BP_tls_shovel_bdg_01_a_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x500'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -21,4 +21,4 @@ BP_tls_shovel_bdg_01_a_Wieldable_C:
   ClassSize: '0x0'
   FullSize: '0x858'
   InheritedSize: '0x858'
-  Super: BP_Shovel_C
+  Super: None

@@ -6,16 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30
-class BP_MathAndTrigAnimation_C: public None
+// Size 0x20
+class BP_MathAndTrigAnimation_C: public BP_Placement_HeightDrop_C
 {
 public:
 	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
-	Class SceneComponent*                                        None;                                              // 0x438(0x8)
+	Class SceneComponent*                                        None;                                              // 0x428(0x8)
 };
 
 

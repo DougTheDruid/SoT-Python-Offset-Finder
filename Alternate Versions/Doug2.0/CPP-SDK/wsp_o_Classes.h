@@ -13,22 +13,22 @@ public:
 };
 
 
-// Size 0x0
-class wsp_outpost_1_vfx_C: public LevelScriptActor
+// Size -0x1
+class wsp_outpost_1_vfx_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class wsp_outpost_1_lighting_C: public LevelScriptActor
+// Size -0xfffd
+class wsp_outpost_1_lighting_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class wsp_outpost_1_design_talltales_C: public LevelScriptActor
+// Size 0x22784d80
+class wsp_outpost_1_design_talltales_C
 {
 public:
 };
@@ -41,22 +41,22 @@ public:
 };
 
 
-// Size 0x0
-class wsp_outpost_1_design_C: public LevelScriptActor
+// Size 0x300
+class wsp_outpost_1_design_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class wsp_outpost_1_audio_C: public LevelScriptActor
+// Size 0x4d12ffff
+class wsp_outpost_1_audio_C
 {
 public:
 };
 
 
-// Size 0x0
-class wsp_outpost_1_terrain_C: public LevelScriptActor
+// Size 0x30001
+class wsp_outpost_1_terrain_C: public None
 {
 public:
 };

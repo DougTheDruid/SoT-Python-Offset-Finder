@@ -6,28 +6,28 @@
     "ClassSize": "0x1c",
     "Attributes": [
       {
-        "Name": "Shockwave",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "DynamicMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "Duration",
+        "Name": "",
         "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3e8"
+        "Size": "0x64e5b600",
+        "Offset": "0x0"
       }
     ]
   },

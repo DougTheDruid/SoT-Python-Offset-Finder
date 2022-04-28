@@ -7,10 +7,10 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class BP_WaterExclusionVolume_C: public StaticMeshActor
+class BP_WaterExclusionVolume_C: public ItemInfo
 {
 public:
-	Class WaterPlaneExclusionComponent*                          WaterPlaneExclusion;                               // 0x3e0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
 };
 
 

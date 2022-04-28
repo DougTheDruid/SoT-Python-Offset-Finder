@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_AudioIslandStaticMeshAssociator_C:
   Attributes:
-  - Name: StaticMeshAudioEmitters
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshAudioEmittersComponent*

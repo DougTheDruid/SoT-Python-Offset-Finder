@@ -1,15 +1,195 @@
 {
   "wsp_bp_tall_bush_01_a_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x418",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x8",
+    "Super": "ThirdPersonMesh",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x1",
     "Attributes": [
       {
-        "Name": "wsp_bush_palm_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "ThirdPersonMesh",
+        "Type": "Class PrimitiveComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x430"
+      },
+      {
+        "Name": "ActionRulesComponent",
+        "Type": "Class ActionRulesComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "AnimationKey",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "MessagingDispatcher",
+        "Type": "Struct ObjectMessagingDispatcher",
+        "Size": "0xa0",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "AnimationOffset",
+        "Type": "Struct Transform",
+        "Size": "0x30",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "EquipSfx",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "UnequipSfx",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x528"
+      },
+      {
+        "Name": "WielderLandedJumpSfx",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "WielderFootstepLayerOneshot",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "PlayerWalkSpeedRtpc",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "FirstTimeEquipSfx",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x548"
+      },
+      {
+        "Name": "ForceUnequipSfx",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x550"
+      },
+      {
+        "Name": "ItemSize",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x551"
+      },
+      {
+        "Name": "DetailAppearence",
+        "Type": "Struct DetailAppearenceDesc",
+        "Size": "0x30",
+        "Offset": "0x558"
+      },
+      {
+        "Name": "PropagateVisibilityToChildren",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x588"
+      },
+      {
+        "Name": "AINoiseTag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x58c"
+      },
+      {
+        "Name": "ThirdPersonExtraMeshNames",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "StashedExtraMeshNames",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "StashedMeshComponent",
+        "Type": "Class MeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "StashedMeshAttachSocket",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "ServerWieldAttachSocket",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "Phrases",
+        "Type": "Class PhrasesRadialDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "CachedFirstPersonProxyMesh",
+        "Type": "Class Object*",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "CachedThirdPersonProxyMesh",
+        "Type": "Class Object*",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Name": "ItemCategory",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x710"
+      },
+      {
+        "Name": "ItemInfo",
+        "Type": "Class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x718"
+      },
+      {
+        "Name": "InterpolatingItem",
+        "Type": "Class InterpolatingItem*",
+        "Size": "0x8",
+        "Offset": "0x720"
+      },
+      {
+        "Name": "WieldableItemVfxComponent",
+        "Type": "Class WieldableItemVfxComponent*",
+        "Size": "0x8",
+        "Offset": "0x748"
+      },
+      {
+        "Name": "ThirdPersonExtraMeshes",
+        "Type": "TArray<class ThirdPersonExtraMeshes*>",
+        "Size": "0x10",
+        "Offset": "0x750"
+      },
+      {
+        "Name": "StashedExtraMeshes",
+        "Type": "TArray<class StashedExtraMeshes*>",
+        "Size": "0x10",
+        "Offset": "0x760"
+      },
+      {
+        "Name": "OfferingEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x789"
       }
     ]
   },

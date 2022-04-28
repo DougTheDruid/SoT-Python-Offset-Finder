@@ -8,7 +8,7 @@ BP_MysteriousNote_ItemDesc_C:
   Super: MysteriousNoteDesc
 BP_MysteriousNote_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x500'
     Size: '0x8'
     Type: Class SceneComponent*

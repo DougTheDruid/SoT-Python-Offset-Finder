@@ -6,6 +6,87 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0xe0
+class BP_LargeShip_StandardHull_Art_Interior_Captains_Cabin_C: public Actor
+{
+public:
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   cap_cabinet_02_a;                                  // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   cap_cage_01_b;                                     // 0x3e0(0x8)
+	Class StaticMeshComponent*                                   cap_cage_01_a;                                     // 0x3e8(0x8)
+	Class ParticleSystemComponent*                               vfx_tavern_candle_looping_01_a8;                   // 0x3f0(0x8)
+	Class ParticleSystemComponent*                               vfx_tavern_candle_looping_01_a1;                   // 0x3f8(0x8)
+	Class ParticleSystemComponent*                               vfx_tavern_candle_looping_01_a;                    // 0x400(0x8)
+	Class StaticMeshComponent*                                   shp_item_shelf_01_a;                               // 0x408(0x8)
+	Class StaticMeshComponent*                                   cap_book_stand_01_a;                               // 0x410(0x8)
+	Class StaticMeshComponent*                                   cap_cabinet_01_a;                                  // 0x418(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_drawer_01_a;                             // 0x420(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_trunk_01_a;                              // 0x428(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_trunk_01_a1;                             // 0x430(0x8)
+	Class MergedStaticMeshComponent*                             MergedStaticMesh_col;                              // 0x438(0x8)
+	Class StaticMeshComponent*                                   trs_candlestick_01_a;                              // 0x440(0x8)
+	Class StaticMeshComponent*                                   cmn_candle_01_a;                                   // 0x448(0x8)
+	Class StaticMeshComponent*                                   cmn_candle_01_e;                                   // 0x450(0x8)
+	Class StaticMeshComponent*                                   cap_shark_jaws_01_a;                               // 0x458(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_03_a;                              // 0x460(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_02_a;                              // 0x468(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_01_a;                              // 0x470(0x8)
+	Class StaticMeshComponent*                                   cap_wooden_plaque_01_a;                            // 0x478(0x8)
+	Class StaticMeshComponent*                                   cap_inkwell_01_a;                                  // 0x480(0x8)
+	Class StaticMeshComponent*                                   cap_model_01_a;                                    // 0x488(0x8)
+	Class StaticMeshComponent*                                   cap_skull_candle_01_a;                             // 0x490(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_map_rolls_01_a;                          // 0x498(0x8)
+	Class MergedStaticMeshComponent*                             MergedStaticMesh;                                  // 0x4a0(0x8)
+	Class StaticMeshComponent*                                   shp_interior_captains_cabin_01_a;                  // 0x4a8(0x8)
+};
+
+
+// Size 0xe0
+class BP_LargeShip_StandardHull_Art_Interior_Brig_Deck_C: public Actor
+{
+public:
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_cell_02_a;                            // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a6;                           // 0x3e0(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b6;                           // 0x3e8(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a8;                           // 0x3f0(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b5;                           // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a3;                           // 0x400(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b1;                           // 0x408(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a1;                           // 0x410(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b;                            // 0x418(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b2;                           // 0x420(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b4;                           // 0x428(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b3;                           // 0x430(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b7;                           // 0x438(0x8)
+	Class MergedStaticMeshComponent*                             MergedStaticMesh;                                  // 0x440(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_stairs_01_a;                          // 0x448(0x8)
+	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a7;                          // 0x450(0x8)
+	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a6;                          // 0x458(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a5;                           // 0x460(0x8)
+	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a4;                           // 0x468(0x8)
+	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a5;                          // 0x470(0x8)
+	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a4;                          // 0x478(0x8)
+	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a3;                          // 0x480(0x8)
+	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a2;                          // 0x488(0x8)
+	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a1;                          // 0x490(0x8)
+	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a;                           // 0x498(0x8)
+	Class MergedStaticMeshComponent*                             MergedStaticMesh_col;                              // 0x4a0(0x8)
+	Class StaticMeshComponent*                                   shp_interior_brig_deck_01_a;                       // 0x4a8(0x8)
+};
+
+
+// Size 0x20
+class BP_LargeShip_StandardHull_Art_Doors_C: public Actor
+{
+public:
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3e0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
+};
+
+
 // Size 0x18
 class BP_LargeShip_StandardHull_C: public Hull
 {
@@ -228,87 +309,6 @@ public:
 	Class MergedStaticMeshComponent*                             MergedStaticMesh;                                  // 0x718(0x8)
 	Class StaticMeshComponent*                                   shp_int_map_stairs_01_a;                           // 0x720(0x8)
 	Class StaticMeshComponent*                                   shp_interior_map_deck_01_a;                        // 0x728(0x8)
-};
-
-
-// Size 0xe0
-class BP_LargeShip_StandardHull_Art_Interior_Captains_Cabin_C: public Actor
-{
-public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   cap_cabinet_02_a;                                  // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   cap_cage_01_b;                                     // 0x3e0(0x8)
-	Class StaticMeshComponent*                                   cap_cage_01_a;                                     // 0x3e8(0x8)
-	Class ParticleSystemComponent*                               vfx_tavern_candle_looping_01_a8;                   // 0x3f0(0x8)
-	Class ParticleSystemComponent*                               vfx_tavern_candle_looping_01_a1;                   // 0x3f8(0x8)
-	Class ParticleSystemComponent*                               vfx_tavern_candle_looping_01_a;                    // 0x400(0x8)
-	Class StaticMeshComponent*                                   shp_item_shelf_01_a;                               // 0x408(0x8)
-	Class StaticMeshComponent*                                   cap_book_stand_01_a;                               // 0x410(0x8)
-	Class StaticMeshComponent*                                   cap_cabinet_01_a;                                  // 0x418(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_drawer_01_a;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_trunk_01_a;                              // 0x428(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_trunk_01_a1;                             // 0x430(0x8)
-	Class MergedStaticMeshComponent*                             MergedStaticMesh_col;                              // 0x438(0x8)
-	Class StaticMeshComponent*                                   trs_candlestick_01_a;                              // 0x440(0x8)
-	Class StaticMeshComponent*                                   cmn_candle_01_a;                                   // 0x448(0x8)
-	Class StaticMeshComponent*                                   cmn_candle_01_e;                                   // 0x450(0x8)
-	Class StaticMeshComponent*                                   cap_shark_jaws_01_a;                               // 0x458(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_books_03_a;                              // 0x460(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_books_02_a;                              // 0x468(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_books_01_a;                              // 0x470(0x8)
-	Class StaticMeshComponent*                                   cap_wooden_plaque_01_a;                            // 0x478(0x8)
-	Class StaticMeshComponent*                                   cap_inkwell_01_a;                                  // 0x480(0x8)
-	Class StaticMeshComponent*                                   cap_model_01_a;                                    // 0x488(0x8)
-	Class StaticMeshComponent*                                   cap_skull_candle_01_a;                             // 0x490(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_map_rolls_01_a;                          // 0x498(0x8)
-	Class MergedStaticMeshComponent*                             MergedStaticMesh;                                  // 0x4a0(0x8)
-	Class StaticMeshComponent*                                   shp_interior_captains_cabin_01_a;                  // 0x4a8(0x8)
-};
-
-
-// Size 0xe0
-class BP_LargeShip_StandardHull_Art_Interior_Brig_Deck_C: public Actor
-{
-public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_cell_02_a;                            // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a6;                           // 0x3e0(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b6;                           // 0x3e8(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a8;                           // 0x3f0(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b5;                           // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a3;                           // 0x400(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b1;                           // 0x408(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a1;                           // 0x410(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b;                            // 0x418(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b2;                           // 0x420(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b4;                           // 0x428(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b3;                           // 0x430(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_b7;                           // 0x438(0x8)
-	Class MergedStaticMeshComponent*                             MergedStaticMesh;                                  // 0x440(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_stairs_01_a;                          // 0x448(0x8)
-	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a7;                          // 0x450(0x8)
-	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a6;                          // 0x458(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a5;                           // 0x460(0x8)
-	Class StaticMeshComponent*                                   shp_int_brig_beam_01_a4;                           // 0x468(0x8)
-	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a5;                          // 0x470(0x8)
-	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a4;                          // 0x478(0x8)
-	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a3;                          // 0x480(0x8)
-	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a2;                          // 0x488(0x8)
-	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a1;                          // 0x490(0x8)
-	Class StaticMeshComponent*                                   shp_int_map_pillar_01_a;                           // 0x498(0x8)
-	Class MergedStaticMeshComponent*                             MergedStaticMesh_col;                              // 0x4a0(0x8)
-	Class StaticMeshComponent*                                   shp_interior_brig_deck_01_a;                       // 0x4a8(0x8)
-};
-
-
-// Size 0x20
-class BP_LargeShip_StandardHull_Art_Doors_C: public Actor
-{
-public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3e0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
 };
 
 

@@ -6,7 +6,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "StaticMeshAudioEmitters",
+        "Name": "None",
         "Type": "Class StaticMeshAudioEmittersComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"

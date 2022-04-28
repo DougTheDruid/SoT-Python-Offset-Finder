@@ -28,10 +28,10 @@ BP_MultiCrewSkeletonThrone_C:
   Super: MultiCrewSkeletonThrone
 BP_MultiCrewSkeletonThrone_Plunder_Outpost_C:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x448'
-  InheritedSize: '0x448'
-  Super: BP_MultiCrewSkeletonThrone_C
+  ClassSize: '0x3a20ffff'
+  FullSize: '-0x1'
+  InheritedSize: '-0x3a210000'
+  Super: ''
 BP_MultiCrewSkeletonThrone_Sea_rock_C:
   Attributes: []
   ClassSize: '0x0'

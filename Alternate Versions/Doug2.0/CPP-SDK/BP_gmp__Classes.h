@@ -20,4 +20,11 @@ public:
 };
 
 
+// Size 0x0
+class BP_gmp_pocket_watch_s06_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
 }

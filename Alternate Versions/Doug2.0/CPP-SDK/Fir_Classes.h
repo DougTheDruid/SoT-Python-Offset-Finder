@@ -14,7 +14,7 @@ public:
 
 
 // Size 0x0
-class BP_Projectile_CannonBall_FirePhantom_C: public BP_Projectile_GhostBall_C
+class BP_Projectile_CannonBall_FirePhantom_C: public None
 {
 public:
 };

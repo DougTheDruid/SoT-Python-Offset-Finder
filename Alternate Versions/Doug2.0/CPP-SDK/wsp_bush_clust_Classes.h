@@ -6,117 +6,80 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
-class wsp_bush_cluster_01_j_C: public BP_Placement_HeightDrop_C
+// Size 0x2
+class wsp_bush_cluster_01_j_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_01_a6;                                    // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_06_b_01;                                  // 0x418(0x8)
 };
 
 
-// Size 0x38
-class wsp_bush_cluster_01_i_C: public BP_Placement_HeightDrop_C
+// Size 0x2
+class wsp_bush_cluster_01_i_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x438(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x440(0x8)
+};
+
+
+// Size 0x0
+class wsp_bush_cluster_01_h_C: public None
+{
+public:
 };
 
 
 // Size 0x20
-class wsp_bush_cluster_01_h_C: public BP_Placement_HeightDrop_C
+class wsp_bush_cluster_01_g_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a1;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a;                              // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_01_a20;                                   // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_03_a6;                                    // 0x428(0x8)
+	Class TritonComponent*                                       None;                                              // 0x3d0(0x8)
+	Class AudioPortalComponent*                                  None;                                              // 0x3d8(0x8)
+	Class AudioSpaceComponent*                                   None;                                              // 0x3e0(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3e8(0x8)
 };
 
 
-// Size 0x40
-class wsp_bush_cluster_01_g_C: public BP_Placement_HeightDrop_C
+// Size 0x4
+class wsp_bush_cluster_01_f_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_fern_01_a;                                // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_01_a25;                                   // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMesh5;                                       // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMesh4;                                       // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMesh3;                                       // 0x440(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_01_a20;                                   // 0x448(0x8)
 };
 
 
-// Size 0x10
-class wsp_bush_cluster_01_f_C: public BP_Placement_HeightDrop_C
+// Size -0x1
+class wsp_bush_cluster_01_e_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a;                              // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_06_a7;                                    // 0x418(0x8)
 };
 
 
-// Size 0x10
-class wsp_bush_cluster_01_e_C: public BP_Placement_HeightDrop_C
+// Size 0x7d827740
+class wsp_bush_cluster_01_d_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_03_a6;                                    // 0x410(0x8)
-	Class SceneComponent*                                        Scene1;                                            // 0x418(0x8)
 };
 
 
-// Size 0x28
-class wsp_bush_cluster_01_d_C: public BP_Placement_HeightDrop_C
+// Size 0x0
+class wsp_bush_cluster_01_c_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_fern_01_a1;                               // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_01_a20;                                   // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_01_a26;                                   // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_01_a25;                                   // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_07_a_01;                                  // 0x430(0x8)
 };
 
 
 // Size 0x18
-class wsp_bush_cluster_01_c_C: public BP_Placement_HeightDrop_C
+class wsp_bush_cluster_01_b_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_01_a6;                                    // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_07_a_01;                                  // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_06_b_01;                                  // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d0(0x8)
+	Class ParticleSystemComponent*                               ParticleSystemComponent0;                          // 0x3d8(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x3e0(0x8)
 };
 
 
-// Size 0x20
-class wsp_bush_cluster_01_b_C: public BP_Placement_HeightDrop_C
+// Size 0x38181828
+class wsp_bush_cluster_01_a_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_06_b2;                                    // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_cliff_l_01;                               // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_01_a2;                                    // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_03_a2;                                    // 0x428(0x8)
-};
-
-
-// Size 0x38
-class wsp_bush_cluster_01_a_C: public BP_Placement_HeightDrop_C
-{
-public:
-	Class StaticMeshComponent*                                   wsp_bush_05_a;                                     // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh15;                                      // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMesh16;                                      // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_03_a2;                                    // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_03_a;                                     // 0x430(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_07_a_01;                                  // 0x438(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_07_a_02;                                  // 0x440(0x8)
 };
 
 

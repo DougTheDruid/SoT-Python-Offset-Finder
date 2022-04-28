@@ -84,36 +84,6 @@ BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C:
   FullSize: '0x710'
   InheritedSize: '0x6f0'
   Super: BuoyantStorageContainer
-BP_TaleBook_CursedRogue_AdditionalPuzzles_C:
-  Attributes:
-  - Name: None
-    Offset: '0x768'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x770'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x778'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x780'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x788'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x790'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  ClassSize: '0x30'
-  FullSize: '0x798'
-  InheritedSize: '0x768'
-  Super: VoyageProposalContainer
 BP_fod_EarthwormsFresh_00_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

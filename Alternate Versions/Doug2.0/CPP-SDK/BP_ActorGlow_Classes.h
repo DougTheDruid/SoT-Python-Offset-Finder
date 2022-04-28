@@ -6,15 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30
-class BP_ActorGlow_C: public LandmarkReactionActor
+// Size 0x28
+class BP_ActorGlow_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d8(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
-	TArray<class DecalMaterials*>                                DecalMaterials;                                    // 0x3e8(0x10)
-	float                                                        Reveal Duration;                                   // 0x3f8(0x4)
-	BlueprintGeneratedClass BP_StepsTrigger_C*                   StepsTriggerActor;                                 // 0x400(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
+	Class SceneComponent*                                        None;                                              // 0x430(0x8)
 };
 
 

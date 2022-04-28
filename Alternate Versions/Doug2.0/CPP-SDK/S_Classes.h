@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class BP_TaleBook_Shroudbreaker_PlunderOutpost_AdditionalPuzzles_C: public VoyageProposalContainer
 {
 public:
-	Class ChildActorComponent*                                   None;                                              // 0x768(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x768(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x770(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x778(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x780(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x788(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x790(0x8)
 };
 
 

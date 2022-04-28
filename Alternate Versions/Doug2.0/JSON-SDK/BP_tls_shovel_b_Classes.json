@@ -6,7 +6,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x500"
@@ -14,7 +14,7 @@
     ]
   },
   "BP_tls_shovel_bdg_01_a_Wieldable_C": {
-    "Super": "BP_Shovel_C",
+    "Super": "None",
     "FullSize": "0x858",
     "InheritedSize": "0x858",
     "ClassSize": "0x0",

@@ -1,1387 +1,596 @@
 {
   "wsp_beach_rocks_12_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x30",
+    "Super": "FlyingCreature",
+    "FullSize": "0x545",
+    "InheritedSize": "0x428",
+    "ClassSize": "0x11d",
     "Attributes": [
       {
-        "Name": "StaticMeshComponent04",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMeshComponent03",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMeshComponent02",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMeshComponent01",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
+        "Name": "None",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x430"
       },
       {
-        "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
+        "Name": "None",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x431"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x434"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
+      },
+      {
+        "Name": "None",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<class None*>",
+        "Size": "0x10",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x45c"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "None",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x464"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x46c"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x474"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x484"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x494"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x49c"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
+        "Size": "0x10",
+        "Offset": "0x4a8"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
+        "Size": "0x10",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4cc"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x4d4"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
+        "Size": "0x10",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
+        "Size": "0x10",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
+        "Size": "0x10",
+        "Offset": "0x500"
+      },
+      {
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x510"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x514"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x518"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x51c"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x524"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x528"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x534"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x53c"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x544"
       }
     ]
   },
   "wsp_beach_rocks_11_b_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x4a0",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x90",
+    "Super": "Actor",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "StaticMeshComponent017",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x3d0"
       },
       {
-        "Name": "StaticMeshComponent016",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class TritonComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x3d8"
       },
       {
-        "Name": "StaticMeshComponent015",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class AudioPortalComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x3e0"
       },
       {
-        "Name": "StaticMeshComponent014",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class WwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x3e8"
       },
       {
-        "Name": "StaticMeshComponent013",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "None",
+        "Type": "Class AudioSpaceComponent*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x3f0"
       },
       {
-        "Name": "StaticMeshComponent012",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMeshComponent010",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMeshComponent09",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMeshComponent08",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "StaticMeshComponent07",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "StaticMeshComponent06",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "StaticMeshComponent05",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "StaticMeshComponent04",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "StaticMeshComponent03",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "StaticMeshComponent02",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "StaticMeshComponent01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x490"
-      },
-      {
-        "Name": "SharedRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x3f8"
       }
     ]
   },
   "wsp_beach_rocks_09_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x480",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "StaticMeshComponent012",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMeshComponent011",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMeshComponent010",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMeshComponent09",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMeshComponent08",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMeshComponent07",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMeshComponent06",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMeshComponent05",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMeshComponent04",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "StaticMeshComponent03",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "StaticMeshComponent02",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "StaticMeshComponent01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      }
-    ]
+    "Super": "RemoteRole",
+    "FullSize": "0x20003",
+    "InheritedSize": "0x2",
+    "ClassSize": "0x20001",
+    "Attributes": []
   },
   "wsp_beach_rocks_08_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x470",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "StaticMeshComponent010",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMeshComponent09",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMeshComponent08",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMeshComponent07",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMeshComponent06",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMeshComponent05",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMeshComponent04",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMeshComponent03",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMeshComponent02",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "StaticMeshComponent01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "0x3f4302ab",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x3f4302ab",
+    "Attributes": []
   },
   "wsp_beach_rocks_07_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x468",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "StaticMeshComponent09",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMeshComponent08",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMeshComponent07",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMeshComponent06",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMeshComponent05",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMeshComponent04",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMeshComponent03",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMeshComponent02",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMeshComponent01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      }
-    ]
+    "Super": "RemoteRole",
+    "FullSize": "0x20003",
+    "InheritedSize": "0x2",
+    "ClassSize": "0x20001",
+    "Attributes": []
   },
   "wsp_beach_rocks_06_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x490",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "wsp_rock_pebbles__b4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "wsp_rock_pebbles__c13",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__a14",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "wsp_rock_pebbles__g",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__b17",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__b14",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "wsp_rock_pebbles__h",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMesh2",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__e12",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__a17",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__e11",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__d23",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "wsp_rock_pebbles__d10",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "wsp_rock_pebbles__e12",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "wsp_rock_pebbles__d13",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x488"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "0x3f4302ab",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x3f4302ab",
+    "Attributes": []
   },
   "wsp_beach_rocks_05_b_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x460",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMesh16",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMesh13",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMesh11",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMesh10",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMesh9",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMesh8",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMesh7",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMesh6",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "0x0",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "wsp_beach_rocks_05_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x470",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMesh16",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMesh14",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMesh13",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMesh12",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMesh11",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMesh10",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMesh9",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMesh8",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "StaticMesh7",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "StaticMesh6",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      }
-    ]
+    "Super": "SourceStatus",
+    "FullSize": "0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x1",
+    "Attributes": []
   },
   "wsp_beach_rocks_04_c_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x4b8",
-    "InheritedSize": "0x410",
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "StaticMesh22",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMesh20",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMesh19",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMesh18",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMesh17",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMesh16",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMesh15",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMesh14",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMesh13",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "StaticMesh12",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "StaticMesh11",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "StaticMesh10",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "StaticMesh9",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "StaticMesh8",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "StaticMesh6",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "StaticMesh5",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "StaticMesh4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x490"
-      },
-      {
-        "Name": "StaticMesh3",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x498"
-      },
-      {
-        "Name": "StaticMesh2",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4a8"
-      },
-      {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x4b0"
-      }
-    ]
+    "Super": "BP_FishingRod_C",
+    "FullSize": "0xba0",
+    "InheritedSize": "0xba0",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "wsp_beach_rocks_04_b_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x4c0",
-    "InheritedSize": "0x410",
-    "ClassSize": "0xb0",
+    "Super": "ThirdPersonMesh",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x1",
     "Attributes": [
       {
-        "Name": "StaticMesh22",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMesh20",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMesh19",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMesh18",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMesh17",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "ThirdPersonMesh",
+        "Type": "Class PrimitiveComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "StaticMesh16",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "ActionRulesComponent",
+        "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "StaticMesh15",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "AnimationKey",
+        "Type": "class",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
-        "Name": "StaticMesh14",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
+        "Name": "MessagingDispatcher",
+        "Type": "Struct ObjectMessagingDispatcher",
+        "Size": "0xa0",
         "Offset": "0x448"
       },
       {
-        "Name": "StaticMesh13",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
+        "Name": "AnimationOffset",
+        "Type": "Struct Transform",
+        "Size": "0x30",
+        "Offset": "0x4f0"
       },
       {
-        "Name": "StaticMesh12",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "EquipSfx",
+        "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x458"
+        "Offset": "0x520"
       },
       {
-        "Name": "StaticMesh11",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "UnequipSfx",
+        "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x528"
       },
       {
-        "Name": "StaticMesh10",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "WielderLandedJumpSfx",
+        "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x530"
       },
       {
-        "Name": "StaticMesh9",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "WielderFootstepLayerOneshot",
+        "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x538"
       },
       {
-        "Name": "StaticMesh8",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "PlayerWalkSpeedRtpc",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x540"
       },
       {
-        "Name": "StaticMesh7",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "FirstTimeEquipSfx",
+        "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x548"
       },
       {
-        "Name": "StaticMesh6",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x488"
+        "Name": "ForceUnequipSfx",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x550"
       },
       {
-        "Name": "StaticMesh5",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x490"
+        "Name": "ItemSize",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x551"
       },
       {
-        "Name": "StaticMesh4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x498"
+        "Name": "DetailAppearence",
+        "Type": "Struct DetailAppearenceDesc",
+        "Size": "0x30",
+        "Offset": "0x558"
       },
       {
-        "Name": "StaticMesh3",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4a0"
+        "Name": "PropagateVisibilityToChildren",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x588"
       },
       {
-        "Name": "StaticMesh2",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "AINoiseTag",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x4a8"
+        "Offset": "0x58c"
       },
       {
-        "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4b0"
+        "Name": "ThirdPersonExtraMeshNames",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x598"
       },
       {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
+        "Name": "StashedExtraMeshNames",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "StashedMeshComponent",
+        "Type": "Class MeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4b8"
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "StashedMeshAttachSocket",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "ServerWieldAttachSocket",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "Phrases",
+        "Type": "Class PhrasesRadialDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "CachedFirstPersonProxyMesh",
+        "Type": "Class Object*",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "CachedThirdPersonProxyMesh",
+        "Type": "Class Object*",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Name": "ItemCategory",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x710"
+      },
+      {
+        "Name": "ItemInfo",
+        "Type": "Class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x718"
+      },
+      {
+        "Name": "InterpolatingItem",
+        "Type": "Class InterpolatingItem*",
+        "Size": "0x8",
+        "Offset": "0x720"
+      },
+      {
+        "Name": "WieldableItemVfxComponent",
+        "Type": "Class WieldableItemVfxComponent*",
+        "Size": "0x8",
+        "Offset": "0x748"
+      },
+      {
+        "Name": "ThirdPersonExtraMeshes",
+        "Type": "TArray<class ThirdPersonExtraMeshes*>",
+        "Size": "0x10",
+        "Offset": "0x750"
+      },
+      {
+        "Name": "StashedExtraMeshes",
+        "Type": "TArray<class StashedExtraMeshes*>",
+        "Size": "0x10",
+        "Offset": "0x760"
+      },
+      {
+        "Name": "OfferingEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x789"
       }
     ]
   },
   "wsp_beach_rocks_04_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x4c8",
-    "InheritedSize": "0x410",
-    "ClassSize": "0xb8",
-    "Attributes": [
-      {
-        "Name": "StaticMesh22",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMesh21",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMesh20",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMesh19",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMesh18",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMesh17",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMesh16",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMesh15",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMesh14",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "StaticMesh13",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "StaticMesh12",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "StaticMesh11",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "StaticMesh10",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "StaticMesh9",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "StaticMesh8",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "StaticMesh7",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "StaticMesh6",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x490"
-      },
-      {
-        "Name": "StaticMesh5",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x498"
-      },
-      {
-        "Name": "StaticMesh4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "StaticMesh3",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4a8"
-      },
-      {
-        "Name": "StaticMesh2",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4b0"
-      },
-      {
-        "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4b8"
-      },
-      {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x4c0"
-      }
-    ]
+    "Super": "RemoteRole",
+    "FullSize": "0x20003",
+    "InheritedSize": "0x2",
+    "ClassSize": "0x20001",
+    "Attributes": []
   },
   "wsp_beach_rocks_03_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x498",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "StaticMesh16",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMesh15",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMesh14",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMesh13",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMesh12",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMesh11",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMesh10",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMesh9",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMesh8",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "StaticMesh7",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "StaticMesh6",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "StaticMesh5",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "StaticMesh4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "StaticMesh3",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "StaticMesh2",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x490"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "0x6f0072",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x6f0072",
+    "Attributes": []
   },
   "wsp_beach_rocks_02_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x478",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "wsp_rock_xtra_small__c10",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__e4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__e3",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__c6",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__c5",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__c9",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__c8",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__c7",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__c4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "wsp_rock_xtra_small__e2",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "wsp_rock_cliff_o8",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "wsp_rock_cliff_o9",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "-0x4f0b51a0",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x4f0b51a0",
+    "Attributes": []
   },
   "wsp_beach_rocks_01_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x498",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "StaticMesh16",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMesh15",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMesh14",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMesh13",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMesh12",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMesh11",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMesh10",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMesh9",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMesh8",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "StaticMesh7",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "StaticMesh6",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "StaticMesh5",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "StaticMesh4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "StaticMesh3",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "StaticMesh2",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x490"
-      }
-    ]
+    "Super": "EventWieldableItemUseStoppedAndFullyHidden",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x10",
+    "ClassSize": "-0x11",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

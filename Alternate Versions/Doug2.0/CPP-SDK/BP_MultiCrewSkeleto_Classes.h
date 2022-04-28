@@ -13,8 +13,8 @@ public:
 };
 
 
-// Size 0x0
-class BP_MultiCrewSkeletonThrone_Plunder_Outpost_C: public BP_MultiCrewSkeletonThrone_C
+// Size 0x3a20ffff
+class BP_MultiCrewSkeletonThrone_Plunder_Outpost_C
 {
 public:
 };

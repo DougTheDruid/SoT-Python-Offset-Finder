@@ -4,50 +4,7 @@
     "FullSize": "0x7a0",
     "InheritedSize": "0x768",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Arrow",
-        "Type": "Class ArrowComponent*",
-        "Size": "0x8",
-        "Offset": "0x768"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x770"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x778"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x780"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x788"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x790"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x798"
-      }
-    ]
+    "Attributes": []
   },
   "BP_TaleBook_LordsOfTheSea_C": {
     "Super": "VoyageProposalContainer",
@@ -56,46 +13,370 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "Arrow",
-        "Type": "Class ArrowComponent*",
-        "Size": "0x8",
-        "Offset": "0x768"
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0x628"
       },
       {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x770"
+        "Name": "None",
+        "Type": "Struct AnimNode_HIKSolve",
+        "Size": "0x80",
+        "Offset": "0x670"
       },
       {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x778"
+        "Name": "None",
+        "Type": "Struct AnimNode_ConvertComponentToLocalSpace",
+        "Size": "0x48",
+        "Offset": "0x6f0"
       },
       {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
+        "Name": "None",
+        "Type": "Struct AnimNode_ConvertLocalToComponentSpace",
+        "Size": "0x48",
+        "Offset": "0x738"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_HIKLookAt",
+        "Size": "0x88",
         "Offset": "0x780"
       },
       {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x788"
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x808"
       },
       {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x790"
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x848"
       },
       {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x888"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x8c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x908"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x948"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x988"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x9c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0xa08"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0xa48"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0xa88"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0xae8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0xb30"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0xb90"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_StateMachine",
+        "Size": "0xa8",
+        "Offset": "0xbd8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0xc80"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0xcc8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0xd28"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0xd70"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0xdb0"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0xdf0"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0xe50"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0xe98"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0xef8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_StateMachine",
+        "Size": "0xa8",
+        "Offset": "0xf40"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0xfe8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0x1030"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0x1090"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x10d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_TransitionResult",
+        "Size": "0x40",
+        "Offset": "0x1118"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0x1158"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0x11b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0x1200"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0x1260"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_StateMachine",
+        "Size": "0xa8",
+        "Offset": "0x12a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Root",
+        "Size": "0x48",
+        "Offset": "0x1350"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_StateMachine",
+        "Size": "0xa8",
+        "Offset": "0x1398"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_BlendListByBool",
+        "Size": "0xb0",
+        "Offset": "0x1440"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Slot",
+        "Size": "0x60",
+        "Offset": "0x14f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_BlendListByBool",
+        "Size": "0xb0",
+        "Offset": "0x1550"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_ApplyAdditive",
+        "Size": "0x70",
+        "Offset": "0x1600"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_Slot",
+        "Size": "0x60",
+        "Offset": "0x1670"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_RefPose",
+        "Size": "0x38",
+        "Offset": "0x16d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SaveCachedPose",
+        "Size": "0x90",
+        "Offset": "0x1708"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_UseCachedPose",
+        "Size": "0x48",
+        "Offset": "0x1798"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_BlendListByBool",
+        "Size": "0xb0",
+        "Offset": "0x17e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_UseCachedPose",
+        "Size": "0x48",
+        "Offset": "0x1890"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0x18d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct AnimNode_SequencePlayer",
+        "Size": "0x60",
+        "Offset": "0x1938"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct Vector2D",
         "Size": "0x8",
-        "Offset": "0x798"
+        "Offset": "0x1998"
+      },
+      {
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x19a0"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x19a4"
+      },
+      {
+        "Name": "None",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x19a8"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x19ac"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x19b0"
+      },
+      {
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x19b4"
       }
     ]
   },
@@ -104,150 +385,21 @@
     "FullSize": "0x7a0",
     "InheritedSize": "0x768",
     "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Arrow",
-        "Type": "Class ArrowComponent*",
-        "Size": "0x8",
-        "Offset": "0x768"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x770"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x778"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x780"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x788"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x790"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x798"
-      }
-    ]
+    "Attributes": []
   },
   "BP_TaleBook_CaptainsOfTheDamned_C": {
-    "Super": "VoyageProposalContainer",
-    "FullSize": "0x7a0",
-    "InheritedSize": "0x768",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Arrow",
-        "Type": "Class ArrowComponent*",
-        "Size": "0x8",
-        "Offset": "0x768"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x770"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x778"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x780"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x788"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x790"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x798"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "-0x4115e0ac",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x4115e0ac",
+    "Attributes": []
   },
   "BP_TaleBook_APiratesLife_C": {
-    "Super": "VoyageProposalContainer",
-    "FullSize": "0x7a0",
-    "InheritedSize": "0x768",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Arrow",
-        "Type": "Class ArrowComponent*",
-        "Size": "0x8",
-        "Offset": "0x768"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x770"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x778"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x780"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x788"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x790"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x798"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "0x5d0006",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x5d0006",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

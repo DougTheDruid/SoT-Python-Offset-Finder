@@ -2,34 +2,10 @@
 # https://github.com/DougTheDruid
 BP_Tutorial_Tavern_Stranger_NPC_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x7c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: SolidHits
-    Offset: '0x7d0'
-    Size: '0x8'
-    Type: Class CapsuleComponent*
-  - Name: StaticMesh
-    Offset: '0x7d8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: NPCDialog
-    Offset: '0x7e0'
-    Size: '0x8'
-    Type: Class NPCDialogComponent*
-  - Name: AnimNotifyWwiseEmitter
-    Offset: '0x7e8'
-    Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: MysteriousStranger
-    Offset: '0x7f0'
-    Size: '0x38'
-    Type: Struct FText
-  - Name: CutSceneActor
-    Offset: '0x828'
-    Size: '0x8'
-    Type: Class CutSceneActor*
   ClassSize: '0x68'
   FullSize: '0x830'
   InheritedSize: '0x7c8'

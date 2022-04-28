@@ -7,10 +7,10 @@
     "Attributes": []
   },
   "BP_MultiCrewSkeletonThrone_Plunder_Outpost_C": {
-    "Super": "BP_MultiCrewSkeletonThrone_C",
-    "FullSize": "0x448",
-    "InheritedSize": "0x448",
-    "ClassSize": "0x0",
+    "Super": "",
+    "FullSize": "-0x1",
+    "InheritedSize": "-0x3a210000",
+    "ClassSize": "0x3a20ffff",
     "Attributes": []
   },
   "BP_MultiCrewSkeletonThrone_C": {

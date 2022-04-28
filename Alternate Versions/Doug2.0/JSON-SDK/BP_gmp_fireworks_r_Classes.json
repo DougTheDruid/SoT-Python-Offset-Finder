@@ -1,5 +1,12 @@
 {
-  "BP_gmp_fireworks_rocket_01_a_ThunderStrike_ItemDesc_C": {
+  "BP_gmp_fireworks_rocket_01_a_BurningHearts_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_gmp_fireworks_rocket_01_a_GemsOfTheDeep_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",

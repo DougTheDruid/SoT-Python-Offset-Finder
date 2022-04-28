@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_GhostShipsMusicZoneActor_Voyage_Stage1_C: public Actor
 {
 public:
-	Class MusicZoneComponent*                                    PreEngageMusicZone;                                // 0x3d0(0x8)
-	Class MusicZoneComponent*                                    EngagedMusicZone;                                  // 0x3d8(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
+	Class MusicZoneComponent*                                    None;                                              // 0x3d0(0x8)
+	Class MusicZoneComponent*                                    None;                                              // 0x3d8(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
 };
 
 

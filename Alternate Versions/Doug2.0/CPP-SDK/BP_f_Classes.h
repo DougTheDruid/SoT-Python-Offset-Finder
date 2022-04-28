@@ -99,8 +99,8 @@ public:
 };
 
 
-// Size 0x0
-class BP_fod_CoconutFresh_00_a_ItemDesc_C: public ItemDesc
+// Size -0x40802412
+class BP_fod_CoconutFresh_00_a_ItemDesc_C: public None
 {
 public:
 };

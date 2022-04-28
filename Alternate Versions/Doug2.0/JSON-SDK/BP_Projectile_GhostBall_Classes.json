@@ -6,31 +6,31 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "CannonBall",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "Collision",
+        "Name": "None",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "TrailActor",
-        "Type": "BlueprintGeneratedClass BP_Projectile_Trail_C*",
+        "Name": "None",
+        "Type": "SkeletalMesh shp_gho_captain_door_broken_01_a*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
-        "Name": "MeshTrailClass",
+        "Name": "None",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x678"

@@ -7,35 +7,16 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class wsp_tree_cluster_01_b_C: public BP_Placement_HeightDrop_C
+class wsp_tree_cluster_01_b_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_06_b;                                     // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_02_b2;                               // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_02_a2;                               // 0x420(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_01_a2;                               // 0x430(0x8)
-	Class SceneComponent*                                        Scene;                                             // 0x438(0x8)
 };
 
 
 // Size 0x68
-class wsp_tree_cluster_01_a_C: public BP_Placement_HeightDrop_C
+class wsp_tree_cluster_01_a_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a2;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a1;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_fern_01_a;                                // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_cheese_01_a;                              // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_07_a_02;                                  // 0x430(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_07_a_01;                                  // 0x438(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_02_c2;                               // 0x440(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_02_b2;                               // 0x448(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x450(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_01_b3;                               // 0x458(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_01_a3;                               // 0x460(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_01_a2;                               // 0x468(0x8)
-	Class StaticMeshComponent*                                   wsp_tree_palm_02_a2;                               // 0x470(0x8)
 };
 
 

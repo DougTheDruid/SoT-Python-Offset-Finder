@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "PreEngageMusicZone",
+        "Name": "None",
         "Type": "Class MusicZoneComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "EngagedMusicZone",
+        "Name": "None",
         "Type": "Class MusicZoneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"

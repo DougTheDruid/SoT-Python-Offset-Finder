@@ -86,7 +86,7 @@ BP_wpn_cutlass_par_01_a_v03_ItemDesc_C:
   Super: ItemDesc
 BP_wpn_cutlass_par_01_a_v03_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x500'
     Size: '0x8'
     Type: Class SceneComponent*

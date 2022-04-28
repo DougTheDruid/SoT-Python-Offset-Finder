@@ -13,6 +13,13 @@ public:
 };
 
 
+// Size 0x20d97cc0
+class BP_RowboatMountpoint_SmallShip_C: public None
+{
+public:
+};
+
+
 // Size 0x0
 class BP_RowboatMountpoint_Base_C: public MountpointActor
 {

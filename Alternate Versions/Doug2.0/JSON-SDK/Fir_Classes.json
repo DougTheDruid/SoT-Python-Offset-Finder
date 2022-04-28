@@ -7,7 +7,7 @@
     "Attributes": []
   },
   "BP_Projectile_CannonBall_FirePhantom_C": {
-    "Super": "BP_Projectile_GhostBall_C",
+    "Super": "None",
     "FullSize": "0x680",
     "InheritedSize": "0x680",
     "ClassSize": "0x0",

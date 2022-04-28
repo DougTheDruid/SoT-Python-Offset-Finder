@@ -14,7 +14,7 @@ public:
 
 
 // Size 0x0
-class BP_gmp_fireworks_cake_01_a_DragonsBreath_ItemDesc_C: public ItemDesc
+class BP_gmp_fireworks_cake_01_a_ShimmeringWaves_ItemDesc_C: public ItemDesc
 {
 public:
 };

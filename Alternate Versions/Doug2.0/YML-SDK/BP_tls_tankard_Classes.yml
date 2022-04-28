@@ -56,7 +56,7 @@ BP_tls_tankard_yr1_leg_01_a_ItemDesc_C:
   Super: ItemDesc
 BP_tls_tankard_yr1_leg_01_a_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x500'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -69,4 +69,4 @@ BP_tls_tankard_yr1_leg_01_a_Wieldable_C:
   ClassSize: '0x0'
   FullSize: '0x840'
   InheritedSize: '0x840'
-  Super: BP_Tankard_C
+  Super: None

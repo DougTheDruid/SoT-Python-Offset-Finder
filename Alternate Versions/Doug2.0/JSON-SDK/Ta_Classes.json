@@ -1,175 +1,59 @@
 {
   "BP_TT_RitualBone_C": {
-    "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BoneMesh",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "-0x4089d063",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x4089d063",
+    "Attributes": []
   },
   "BP_Skull_OoS_C": {
-    "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "gmp_bounty_skull_01_b",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "-0x4085f97a",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x4085f97a",
+    "Attributes": []
   },
   "BP_RitualBottleTop_C": {
-    "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ptn_pois_stop_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "2\u3633\u323a\u0a34\uabc6\b\u6e69\u7551\u4ac0\u20f7\u01e7\u0000\u5f32\u4547\u5f4e\u4156\u4952\u4241\u454c\u6500\uabc8\b\u622f\u756c\u7498\uca46\u01e7\u0000\u5042\u525f\u7469u",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "1\u7250\u6d6f\u7369\uabc2\b\u6340\u756f\u2f68\u81a0\u01e7\u0000\u5f31\u4547\u5f4e\u4156\u4952\u4241\u454c\u6c00\uabc4\b\u6472\u332e\ubc88\u830f\u01e7\u00002\u3633\u323a4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "-0xad78580",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0xad78580",
+    "Attributes": []
   },
   "BP_RitualBottle_C": {
-    "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ptn_pois_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "2\u3633\u323a\u0a34\uabc6\b\u6e69\u7551\u4ac0\u20f7\u01e7\u0000\u5f32\u4547\u5f4e\u4156\u4952\u4241\u454c\u6500\uabc8\b\u622f\u756c\u7498\uca46\u01e7\u0000\u5042\u525f\u7469u",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "1\u7250\u6d6f\u7369\uabc2\b\u6340\u756f\u2f68\u81a0\u01e7\u0000\u5f31\u4547\u5f4e\u4156\u4952\u4241\u454c\u6c00\uabc4\b\u6472\u332e\ubc88\u830f\u01e7\u00002\u3633\u323a4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "0x10",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x10",
+    "Attributes": []
   },
   "BP_Ritual2_R_Pendant_C": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "-0x40defe47",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x40defe47",
+    "Attributes": []
   },
   "BP_Ritual2_R_Effigy_C": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Effigy_R",
-        "Type": "Class SkeletalMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "-0x3b20c0bc",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x3b20c0bc",
+    "Attributes": []
   },
   "BP_Ritual2_L_Pendant_C": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
+    "Super": "None",
+    "FullSize": "0x10",
+    "InheritedSize": "0x0",
     "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      }
-    ]
+    "Attributes": []
   },
   "BP_Ritual2_L_Effigy_C": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Effigy_L",
-        "Type": "Class SkeletalMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      }
-    ]
+    "Super": "None",
+    "FullSize": "-0x3b1433e3",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x3b1433e3",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

@@ -14,7 +14,7 @@ BP_gmp_compass_bel_01_a_ItemDesc_C:
   Super: ItemDesc
 BP_gmp_compass_bel_01_a_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x500'
     Size: '0x8'
     Type: Class SceneComponent*
@@ -27,7 +27,7 @@ BP_gmp_compass_bel_01_a_Wieldable_C:
   ClassSize: '0x0'
   FullSize: '0x878'
   InheritedSize: '0x878'
-  Super: BP_Compass_C
+  Super: None
 BP_gmp_compass_mrh_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

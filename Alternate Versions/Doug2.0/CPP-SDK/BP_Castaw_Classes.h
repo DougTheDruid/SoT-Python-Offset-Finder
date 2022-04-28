@@ -6,11 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
-class BP_Castaway_Staff_C: public Actor
+// Size 0x3c
+class BP_Castaway_Staff_C: public AnimatedStepsComponent
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d0(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0xf0(0x8)
+	TArray<Float None>                                           None;                                              // 0xf8(0x10)
+	TArray<Float None>                                           None;                                              // 0x108(0x10)
+	Class CurveFloat*                                            None;                                              // 0x118(0x8)
+	float                                                        None;                                              // 0x120(0x4)
+	float                                                        None;                                              // 0x124(0x4)
+	float                                                        None;                                              // 0x128(0x4)
 };
 
 
