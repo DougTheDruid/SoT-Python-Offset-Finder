@@ -1,0 +1,513 @@
+{
+  "TaleQuestDeliveryRequest": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Item",
+        "Type": "Struct MerchantContractItemDesc",
+        "Size": "0x28",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NumToDeliver",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "NumToAllocate",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "TaleActorSpawnParameters": {
+    "ClassSize": "0x3",
+    "Attributes": [
+      {
+        "Name": "Tracked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GatherForMigration",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "DeferredSpawning",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2"
+      }
+    ]
+  },
+  "IslandTypeWeights": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "FeatureIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ResourceIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "OutpostIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SeapostIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "FortIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "QuestVariableAny": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "SplineFootprintPathTool": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "TaleQuestCargoRunContractItem": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ItemToCollect",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TaleQuestDesc": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "Root",
+        "Type": "Class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Definition",
+        "Type": "Class Object*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "TaleFailMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TaleFailBannerTag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "ShouldFireStartTallTaleTrackedObjective",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "Development",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x79"
+      }
+    ]
+  },
+  "TaleQuestToggledDefinition": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FeatureToggle",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Definition",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TrackedActorData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Actor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SnapshottedActorData": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "SnapshotID",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ActorWasCritical",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ActorWasTracked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x21"
+      },
+      {
+        "Name": "FailureMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "CriticalActorDelegateData": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "CriticalActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FailureMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CriticalActorWrapper": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "CriticalActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PhasedItem": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ItemProxy",
+        "Type": "Class ItemProxy*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ItemInfo",
+        "Type": "Class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Tracked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "PhasedActor": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MapActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Actor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "QuestVariableCollection": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableGuidArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableActorArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableObjectArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableClassArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableSetEQSTaleContextValue": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableLinkEQSContext": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "ParticpantToolGroup": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "MigrationActionPair": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AllocatedResourceHandle",
+        "Type": "Struct TaleResourceHandle",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MigrationAction",
+        "Type": "Class TaleMigrationAction*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "QuestVariableRotator": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableActorAssetType": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "BodyFramePair": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Frame",
+        "Type": "Class TaleQuestIndexedFrame*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "QuestVariableItemDescType": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableItemInfo": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariablePrioritisedPrompt": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableTaleResourceHandle": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "ActorSpawnedAutomationEvent": {
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "EventSpawnedTallTaleQuestItem": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "TaleQuestSelectorServiceSeedSetTelemetryEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Seed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PlaySequencerAutomationEvent": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
+  "EventModalInteractionStateChanged": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "IsInteractionBlocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ToggleModalInteractionNetworkEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "TargetActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "InteractionBlocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "QuestVariableMerchantItemArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableMerchantItem": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "StepMerchantItemDesc": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Icon",
+        "Type": "Class Texture*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "QuestVariableActorAssetTypeArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableItemDescTypeArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariablePageLayout": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "QuestVariableTexture": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "TaleQuestContextInvalidTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StepType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Tale",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TaleQuestDeliverableItem": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Icon",
+        "Type": "Class Texture*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "QuestVariableBountyTargetArray": {
+    "ClassSize": "0x20",
+    "Attributes": []
+  },
+  "StepBountyTargetDesc": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Portrait",
+        "Type": "Class Texture*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

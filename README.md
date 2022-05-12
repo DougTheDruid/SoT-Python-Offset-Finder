@@ -1,3 +1,6 @@
+# CURRENT VERSION
+The SDK's provided are currently built for the following version of the game: 2.5.2
+
 # SoT-Python-Offset-Finder
 https://github.com/DougTheDruid/SoT-ESP-Framework relies on an "offset.json" file to determine the 
 memory offsets to pull data from memory. The memory offsets are stored within the SoT SDK files under
@@ -16,6 +19,11 @@ to the filenames are correct.
 Clone this repo, then within the folder created, load in the current SoT SDK into an "SDK" folder if it is not
 up-to-date,  ensure the `offset_finder.py` global variables are pointing to the correct paths (at the top 
 of the file), and simply "run" the offset finder script.
+
+There are currently 3 version of the SDK I generate using my own methods:
+1) C++ - This is a roughly C++ equivalent SDK, it can be a bit easier to find new objects in this kind of structure
+2) JSON - The same data, stored in JSON format. My preferred method to programmatically pull data
+3) YAML - The same data, stored in YAML format. Others may prefer to use this for programmatic access to the data
 
 As you develop your version of the framework further, you can update the dictionary being built in this
 file to automatically pull the offsets you are utilizing. You will primarily utilize the three SDK files 

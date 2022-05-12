@@ -1,0 +1,231 @@
+{
+  "LightingZoneStoryRelatedSettings": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Story",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetPointOnCurve",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FadeDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "StoryInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NamedPointsGroupActorLocation": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "NamedPointsGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StorySpawnedNamedPointsList": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StoryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GroupLocations",
+        "Type": "TArray<Struct NamedPointsGroupActorLocation>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StorySpawnedActorsList": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "StoryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActorLocations",
+        "Type": "TArray<Struct ActorLocationPair>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NamedPointsActorLocations",
+        "Type": "TArray<Struct NamedPointsActorLocation>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "NamedPointsActorLocation": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ActorWithNamedPointsComponent",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DevActorWithNamedPointsComponent",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "GroupLocations",
+        "Type": "TArray<Struct NamedPointsGroupActorLocation>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "ActorLocationPair": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "SpawnLocation",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DevSpawnLocation",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "StorySpawnedActorsChangeTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StorySpawnedActors",
+        "Type": "TArray<Struct StorySpawnedActorsIndividualStoryInfo>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StoryDespawnedActors",
+        "Type": "TArray<Struct StorySpawnedActorsIndividualStoryInfo>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "StorySpawnedActorsIndividualStoryInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StoryName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumActorsSpawned",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "NumActorsDespawned",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "SpawnedActorsComponentList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ComponentsList",
+        "Type": "TArray<class ComponentsList*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StoriesToSpawnedActorsListContainer": {
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "SpawnedActorsList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ActorsList",
+        "Type": "TArray<Struct PhasedActorInfo>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PhasedActorInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MapActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PhasedActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StoriesChangedTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "AllStories",
+        "Type": "TArray<Str AllStories>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActiveStories",
+        "Type": "TArray<Str ActiveStories>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

@@ -16,7 +16,7 @@ from typing import Dict
 
 import yaml  # pip install pyyaml
 
-search_dir = Path(r'../Doug2.0/CPP-SDK')  # You can redefine SDK path.
+search_dir = Path(r'../../CPP-SDK')  # You can redefine SDK path.
 config_file = Path(r'config.yaml')
 # The default save syntax is yaml, but if you specify '.json' postfix, the serialization will automatically be json
 output_file = Path('output', 'offsets.json')  # ./output/offsets.json (you can set own)

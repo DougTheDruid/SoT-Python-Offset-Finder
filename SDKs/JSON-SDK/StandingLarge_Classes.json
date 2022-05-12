@@ -1,0 +1,304 @@
+{
+  "BP_Trinket_WoodStack_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "bld_tvn_wood_holder_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_Target_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "wpn_boarding_axe_smp_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "bld_wpn_shop_sign_standing_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "BP_Trinket_SwordBucket_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "gmp_wood_sword_emote_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "cmn_bucket_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "gmp_wood_sword_emote_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "BP_Trinket_SkullStand_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "bld_skull_stand_oos_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_ScrollBucket_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "gmp_map_bundle_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "cmn_bucket_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "BP_Trinket_Sack_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "sod_cmn_sack_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_RopeSpool_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "bld_out_shop_bobbin_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_Rope_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "shp_rope_coil_03_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_Plant_06_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "bsp_bush_disc_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "cmn_bottle_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "BP_Trinket_Plant_05_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_05_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "cmn_bottle_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "BP_Trinket_Plant_04_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_06_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "cmn_clay_vase_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "BP_Trinket_Plant_02_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_fern_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "cmn_clay_pot_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "BP_Trinket_Plant_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_03_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "cmn_clay_pot_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "BP_Trinket_DVRRock_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "dvr_lv_projectile_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_DVRCrystal_02_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "dvr_lv_rock_large_01_c",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_BrokenPot_02_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "cmn_clay_pot_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_Boots_01_a_C": {
+    "Super": "BP_Trinket_StandingLarge_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "cmn_boots_02_a_L",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "cmn_boots_02_a_R",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

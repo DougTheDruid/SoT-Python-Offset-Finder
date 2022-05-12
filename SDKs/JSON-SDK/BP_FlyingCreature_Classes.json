@@ -1,0 +1,284 @@
+{
+  "BP_FlyingCreature_C": {
+    "Super": "FlyingCreature",
+    "FullSize": "0x545",
+    "InheritedSize": "0x428",
+    "ClassSize": "0x11d",
+    "Attributes": [
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "CreatureType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "NumOfCreatures",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x431"
+      },
+      {
+        "Name": "BoundsBias",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x434"
+      },
+      {
+        "Name": "StaticMeshComponent",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "currMaterial",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "MaterialInstance",
+        "Type": "TArray<class MaterialInstance*>",
+        "Size": "0x10",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "Seed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "FlapSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x45c"
+      },
+      {
+        "Name": "CirclingSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "CirclingDirection",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x464"
+      },
+      {
+        "Name": "CirclingRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "FlapDeformation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x46c"
+      },
+      {
+        "Name": "mud",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "FlockSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x474"
+      },
+      {
+        "Name": "FlockingSpread",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "FlockingHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "BirdSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x484"
+      },
+      {
+        "Name": "BirdSpread",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "BirdHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "RandomHorizontalSpread",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x494"
+      },
+      {
+        "Name": "HueVariance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "RandomVerticalSpread",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x49c"
+      },
+      {
+        "Name": "Smoothness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "SelectedCreatureType",
+        "Type": "TArray<Assetclass SelectedCreatureType>",
+        "Size": "0x10",
+        "Offset": "0x4a8"
+      },
+      {
+        "Name": "Seagull",
+        "Type": "TArray<Assetclass Seagull>",
+        "Size": "0x10",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "Size",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "SizeVariance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4cc"
+      },
+      {
+        "Name": "SimSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "BBox",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x4d4"
+      },
+      {
+        "Name": "Skellygull_01",
+        "Type": "TArray<Assetclass Skellygull_01>",
+        "Size": "0x10",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "Bats_01",
+        "Type": "TArray<Assetclass Bats_01>",
+        "Size": "0x10",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "Parrot_01",
+        "Type": "TArray<Assetclass Parrot_01>",
+        "Size": "0x10",
+        "Offset": "0x500"
+      },
+      {
+        "Name": "ScaleInDistance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x510"
+      },
+      {
+        "Name": "DistanceScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x514"
+      },
+      {
+        "Name": "DrawDistanceWithoutScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x518"
+      },
+      {
+        "Name": "DrawDistanceWithScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x51c"
+      },
+      {
+        "Name": "ForceHibernation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "HibernateAtNight",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x524"
+      },
+      {
+        "Name": "HibernateBoundsExtension",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x528"
+      },
+      {
+        "Name": "hibernationStartTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x534"
+      },
+      {
+        "Name": "hibernationEndTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "HibernationTransitionTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x53c"
+      },
+      {
+        "Name": "HibernationIndependance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "Glide",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x544"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

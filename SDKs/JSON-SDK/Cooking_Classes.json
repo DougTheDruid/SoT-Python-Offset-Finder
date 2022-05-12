@@ -1,0 +1,436 @@
+{
+  "BurntItemConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BurntItemOnShipConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookingDefaultsInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookingStatusPublisherInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookingStateInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookableComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "NextCookState",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "TimeToNextCookState",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "SmokeFeedbackLevels",
+        "Type": "TArray<Struct CookableComponentSmokeFeedbackTimingEntry>",
+        "Size": "0x10",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "VisibleCookedExtentOverTime",
+        "Type": "Class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "DefaultVisibleCookedExtent",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "CookableTypeName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x114"
+      },
+      {
+        "Name": "CookedStat",
+        "Type": "Struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x11c"
+      },
+      {
+        "Name": "ShipCookedStat",
+        "Type": "Struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "CookingState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x124"
+      },
+      {
+        "Name": "InitialCookingState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x125"
+      },
+      {
+        "Name": "RemovedCookingState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x126"
+      }
+    ]
+  },
+  "CookerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x248",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x180",
+    "Attributes": [
+      {
+        "Name": "StatusToApplyToContents",
+        "Type": "TArray<Struct Status>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "VFXFeedback",
+        "Type": "TArray<Struct CookerSmokeFeedbackEntry>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "CookableStaticMeshComponent",
+        "Type": "Class StaticMeshMemoryConstraintComponent*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "CookableSkeletalMeshComponent",
+        "Type": "Class SkeletalMeshMemoryConstraintComponent*",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "CookedMaterialParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "BurnDownDirectionParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "PlacementVarianceAngleBound",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "OnByDefault",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x114"
+      },
+      {
+        "Name": "AudioParams",
+        "Type": "Class CookingComponentAudioParams*",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "VfxLocation",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "CurrentlyCookingItem",
+        "Type": "Class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "CookingState",
+        "Type": "Struct CookingClientRepresentation",
+        "Size": "0x68",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "SmokeParticleComponent",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x198"
+      },
+      {
+        "Name": "VisibleCookableMaterial",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "TurnedOn",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1a8"
+      },
+      {
+        "Name": "OnIsland",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1a9"
+      }
+    ]
+  },
+  "CookingComponentAudioParams": {
+    "Super": "DataAsset",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "CookingPool",
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "EmitterOffsetVector",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "FoodPlaceInPot",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CookingStart",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "CookingStop",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "CookingTypeSwitchGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "CookingTypeSizzle",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "CookingTypeSimmer",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "FoodTypeSwitchGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "FoodTypeFruit",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "FoodTypeMeat",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "FoodTypeRareMeat",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "FoodCookedAmount",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "MaxCookingRtpcAmount",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "CookingPot": {
+    "Super": "InteractableBase",
+    "FullSize": "0x5d8",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x1e0",
+    "Attributes": [
+      {
+        "Name": "MeshComponent",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "InteractableComponent",
+        "Type": "Class ActionRulesInteractableComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "CookerComponent",
+        "Type": "Class CookerComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "HoldToInteractTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "NotWieldingCookableItemTooltip",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "WieldingCookableItemTooltip",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "TakeItemTooltip",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "CannotTakeItemTooltip",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "MixInItemTooltip",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x500"
+      }
+    ]
+  },
+  "CookItemConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "HasRequiredCookingStateStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "RequiredState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "MixableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PottableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PottableComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CanBePutInPot",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

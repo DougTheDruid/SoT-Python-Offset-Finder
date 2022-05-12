@@ -1,0 +1,256 @@
+{
+  "BP_TaleBook_SunkenCrystal_C": {
+    "Super": "VoyageProposalContainer",
+    "FullSize": "0x7a0",
+    "InheritedSize": "0x768",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Arrow",
+        "Type": "Class ArrowComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      }
+    ]
+  },
+  "BP_TaleBook_LordsOfTheSea_C": {
+    "Super": "VoyageProposalContainer",
+    "FullSize": "0x7a0",
+    "InheritedSize": "0x768",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Arrow",
+        "Type": "Class ArrowComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      }
+    ]
+  },
+  "BP_TaleBook_DarkBrethren_C": {
+    "Super": "VoyageProposalContainer",
+    "FullSize": "0x7a0",
+    "InheritedSize": "0x768",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Arrow",
+        "Type": "Class ArrowComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      }
+    ]
+  },
+  "BP_TaleBook_CaptainsOfTheDamned_C": {
+    "Super": "VoyageProposalContainer",
+    "FullSize": "0x7a0",
+    "InheritedSize": "0x768",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Arrow",
+        "Type": "Class ArrowComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      }
+    ]
+  },
+  "BP_TaleBook_APiratesLife_C": {
+    "Super": "VoyageProposalContainer",
+    "FullSize": "0x7a0",
+    "InheritedSize": "0x768",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Arrow",
+        "Type": "Class ArrowComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}
