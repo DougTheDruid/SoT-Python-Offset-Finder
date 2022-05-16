@@ -48,16 +48,19 @@ if __name__ == '__main__':
     """
 
     output = {
-        "AActor.actorId": 24,
-        "AActor.rootComponent": get_offset(ENGINE, "Actor", "RootComponent"),
-        "APlayerState.PlayerName": get_offset(ENGINE, "PlayerState", "PlayerName"),
-        "UGameInstance.LocalPlayers": get_offset(ENGINE, "GameInstance", "LocalPlayers"),
-        "ULocalPlayer.PlayerController": get_offset(ENGINE, "Player", "PlayerController"),
-        "UWorld.OwningGameInstance": get_offset(ENGINE, "World", "OwningGameInstance"),
-        "UWorld.PersistentLevel": get_offset(ENGINE, "World", "PersistentLevel"),
-        "APlayerController.CameraManager": get_offset(ENGINE, "PlayerController", "PlayerCameraManager"),
-        "APlayerCameraManager.CameraCache": get_offset(ENGINE, "PlayerCameraManager", "CameraCache"),
-        "FCameraCacheEntry.FMinimalViewInfo": get_offset(ENGINE_STRUCT, "CameraCacheEntry", "POV"),
+        "Actor.actorId": 24,  # The ID number associated with an actor type
+        "SceneComponent.ActorCoordinates": 0x12c,  # Currently located at SceneComponent.RelativeScale3D+0xC
+        # SDK Generator is incapable of pulling this automatically, may need to fix if you have issues
+        "Actor.rootComponent": get_offset(ENGINE, "Actor", "RootComponent"),
+        "PlayerState.PlayerName": get_offset(ENGINE, "PlayerState", "PlayerName"),
+        "GameInstance.LocalPlayers": get_offset(ENGINE, "GameInstance", "LocalPlayers"),
+        "LocalPlayer.PlayerController": get_offset(ENGINE, "Player", "PlayerController"),
+        "World.OwningGameInstance": get_offset(ENGINE, "World", "OwningGameInstance"),
+        "World.PersistentLevel": get_offset(ENGINE, "World", "PersistentLevel"),
+        "PlayerController.CameraManager": get_offset(ENGINE, "PlayerController", "PlayerCameraManager"),
+        "PlayerCameraManager.CameraCache": get_offset(ENGINE, "PlayerCameraManager", "CameraCache"),
+        "CameraCacheEntry.MinimalViewInfo": get_offset(ENGINE_STRUCT, "CameraCacheEntry", "POV"),
+
     }
     with open("offsets.json", "w+") as outfile:
         outfile.write(json.dumps(output, indent=2, sort_keys=True))
