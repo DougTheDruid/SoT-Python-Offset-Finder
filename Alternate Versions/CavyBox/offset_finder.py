@@ -7,19 +7,26 @@ Requirements:
 - pyyaml (tested on 6.0)
 """
 __author__ = 'Cavybox'
-__version__ = 'v1.1.0'
+__version__ = 'v1.1.1'
+
 import json
 import logging
 import re
+import sys
+from collections import Counter
 from pathlib import Path  # excellent replacement of os.path
 from typing import Dict
 
 import yaml  # pip install pyyaml
 
-search_dir = Path(r'../../CPP-SDK')  # You can redefine SDK path.
+search_dir = Path(r'../../SDKs/CPP-SDK')  # You can redefine SDK path.
 config_file = Path(r'config.yaml')
 # The default save syntax is yaml, but if you specify '.json' postfix, the serialization will automatically be json
 output_file = Path('output', 'offsets.json')  # ./output/offsets.json (you can set own)
+
+# If fields with the repeated names are found in the class dump, you will see a message about this,
+# and the class will not be processed. You can set False, but be careful: the finder may get the wrong values.
+enable_unique_class_field_names_check = True
 
 log = logging.getLogger(__name__)
 # It is assumed that the text of the class fields will be located before the first occurrence of "\n\n".
@@ -36,11 +43,22 @@ find_this_offsets: Dict[str, Dict[str, Dict[str, str]]] = yaml.load(
 )
 
 
+def get_repeated_fields_error(raw_fields, class_text: str):
+    """Gives information about which fields of which class have been repeated."""
+    count_repeated_names = Counter(i[0] for i in raw_fields)
+    repeated = '\n'.join(
+        f"{count} times: {name}" for name, count in count_repeated_names.most_common() if count > 1)
+    return (f"The SDK dump class contains fields with the same names.\n"
+            f"{class_text.splitlines(keepends=False)[0]}\n"
+            f"Repeated fields:\n{repeated}\n")
+
+
 def get_class_offsets(class_text: str) -> Dict[str, int]:
     """Extracts class field offsets from the SDK dump of this class."""
     raw_fields = class_field_regex.findall(class_text)
     class_fields = {field_name: int(hex_offset, 0) for field_name, hex_offset in raw_fields}
-    assert len(raw_fields) == len(class_fields), 'All class fields must be unique.'
+    if enable_unique_class_field_names_check:
+        assert len(raw_fields) == len(class_fields), get_repeated_fields_error(raw_fields, class_text)
     return class_fields
 
 
@@ -81,7 +99,12 @@ def get_sdk_file_offsets(filename):
             continue
         assert len(class_text) == 1, 'Only one class is expected to be found.'
 
-        class_offsets = get_class_offsets(class_text[0])
+        try:
+            class_offsets = get_class_offsets(class_text[0])
+        except AssertionError as err:
+            print(err, file=sys.stderr)
+            # If enable_unique_class_field_names_check set to true, skip class processing with non-unique field names.
+            continue
         prefix = fields_config.get('_prefix')
         for offset_key, field_name in fields_config.items():
             if isinstance(offset_key, str) and offset_key.startswith('_'):
@@ -100,8 +123,10 @@ def get_sdk_file_offsets(filename):
 
 if __name__ == '__main__':
     print(f'Finder version: {__version__}')
+    # SDK Generator is incapable of pulling this automatically, may need to fix if you have issues
     global_offsets = {
-        "AActor.actorId": 24,
+        "Actor.actorId": 24,  # The ID number associated with an actor type
+        "SceneComponent.ActorCoordinates": 0x12c,  # Currently located at SceneComponent.RelativeScale3D+0xC
     }
 
     for f_name in find_this_offsets.keys():
