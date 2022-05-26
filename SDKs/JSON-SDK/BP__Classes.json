@@ -710,24 +710,31 @@
       }
     ]
   },
-  "BP_Campaign005_CursedSails_ClothingCooper_PreCursedSails_C": {
+  "BP_Campaign005_CursedSails_ShopkeeperTony_PreCursedSails_C": {
+    "Super": "BP_Shopkeeper_C",
+    "FullSize": "0x690",
+    "InheritedSize": "0x690",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Campaign005_CursedSails_ShipwrightSandra_PreCursedSails_C": {
+    "Super": "BP_Shipwright_C",
+    "FullSize": "0x6c0",
+    "InheritedSize": "0x6c0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C": {
     "Super": "BP_Clothing_C",
     "FullSize": "0x688",
     "InheritedSize": "0x688",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_Campaign005_CursedSails_WeapondealerWillow_PreCursedSails_C": {
+  "BP_Campaign005_CursedSails_WeapondealerWinnie_PreCursedSails_C": {
     "Super": "BP_Weapondealer_C",
     "FullSize": "0x688",
     "InheritedSize": "0x688",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_Campaign005_CursedSails_ShopkeeperTrevor_PreCursedSails_C": {
-    "Super": "BP_Shopkeeper_C",
-    "FullSize": "0x690",
-    "InheritedSize": "0x690",
     "ClassSize": "0x0",
     "Attributes": []
   },

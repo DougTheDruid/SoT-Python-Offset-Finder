@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_FogOfTheDamned_C: public FogBank
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x570(0x8)
-	Class StaticMeshComponent*                                   storm_rain_sheet__outer;                           // 0x578(0x8)
-	Class AthenaPlayerZonePenetrationTrackerComponent*           AthenaPlayerZonePenetrationTracker;                // 0x580(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x580(0x8)
+	Class StaticMeshComponent*                                   storm_rain_sheet__outer;                           // 0x588(0x8)
+	Class AthenaPlayerZonePenetrationTrackerComponent*           AthenaPlayerZonePenetrationTracker;                // 0x590(0x8)
 };
 
 

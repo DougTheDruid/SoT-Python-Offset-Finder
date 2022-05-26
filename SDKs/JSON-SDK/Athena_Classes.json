@@ -19757,6 +19757,54 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "ContestAddItemToHandInListStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ContestTaleQuestService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x70",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NPCPurchaseLists",
+        "Type": "TArray<Struct NPCPurchaseList>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "ContestTaleQuestServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ContestAddItemToHandInListStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Item",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NPC",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x20",
+        "Offset": "0x88"
+      }
+    ]
+  },
   "ContestAwardScoreForItemDugUpStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
@@ -20950,20 +20998,6 @@
       }
     ]
   },
-  "ContestTaleQuestService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x60",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ContestTaleQuestServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ContestTavernBanners": {
     "Super": "Actor",
     "FullSize": "0x470",
@@ -21150,22 +21184,34 @@
   },
   "ContestWaitForItemHandInStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xa8",
+    "FullSize": "0xb0",
     "InheritedSize": "0x98",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": []
   },
   "ContestWaitForItemHandInStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xa0",
+    "FullSize": "0xe0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x20",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "Item",
         "Type": "Struct QuestVariableActor",
         "Size": "0x20",
         "Offset": "0x80"
+      },
+      {
+        "Name": "ItemDesc",
+        "Type": "Struct QuestVariableItemDescType",
+        "Size": "0x20",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "NPC",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x20",
+        "Offset": "0xc0"
       }
     ]
   },
@@ -25916,9 +25962,9 @@
   },
   "FogBank": {
     "Super": "FogVolume",
-    "FullSize": "0x570",
+    "FullSize": "0x580",
     "InheritedSize": "0x3e0",
-    "ClassSize": "0x190",
+    "ClassSize": "0x1a0",
     "Attributes": [
       {
         "Name": "FogBankDataAsset",
@@ -25935,7 +25981,7 @@
       {
         "Name": "Settings",
         "Type": "Struct FogBankSettings",
-        "Size": "0x38",
+        "Size": "0x4c",
         "Offset": "0x410"
       }
     ]
@@ -26776,35 +26822,40 @@
   },
   "GenerateDigLocationStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
+    "FullSize": "0x98",
     "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "StepDesc",
-        "Type": "Class GenerateDigLocationStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "GenerateDigLocationStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xc0",
+    "FullSize": "0xd0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x40",
+    "ClassSize": "0x50",
     "Attributes": [
+      {
+        "Name": "IgnoredBuryLocation",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "IgnoredBuryRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
       {
         "Name": "IslandName",
         "Type": "Struct QuestVariableName",
         "Size": "0x20",
-        "Offset": "0x80"
+        "Offset": "0x90"
       },
       {
         "Name": "DigLocation",
         "Type": "Struct QuestVariableVector",
         "Size": "0x20",
-        "Offset": "0xa0"
+        "Offset": "0xb0"
       }
     ]
   },
@@ -72175,6 +72226,27 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "NPCHideInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NPCHideComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "bHideActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      }
+    ]
   },
   "NPCIdAsset": {
     "Super": "DataAsset",

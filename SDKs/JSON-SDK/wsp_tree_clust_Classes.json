@@ -1,104 +1,4 @@
 {
-  "wsp_tree_cluster_03_c_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x448",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "wsp_bush_cheese_01_a1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "wsp_bush_cheese_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "wsp_tree_palm_01_a2",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "wsp_bush_06_b",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "wsp_tree_palm_02_b2",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "NonVagueNonUniqueLandmark",
-        "Type": "Class NonVagueNonUniqueLandmarkComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "wsp_tree_palm_02_a2",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      }
-    ]
-  },
-  "wsp_tree_cluster_01_h_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x448",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "wsp_bush_01_a25",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "wsp_tree_palm_01_b10",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "NonVagueNonUniqueLandmark",
-        "Type": "Class NonVagueNonUniqueLandmarkComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "wsp_tree_palm_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "wsp_bush_01_a20",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "wsp_bush_06_b11",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "Scene",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      }
-    ]
-  },
   "wsp_tree_cluster_01_b_C": {
     "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x440",
@@ -140,6 +40,92 @@
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x438"
+      }
+    ]
+  },
+  "wsp_tree_cluster_01_a_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x478",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_cheese_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "wsp_bush_cheese_01_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "wsp_bush_fern_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "wsp_bush_cheese_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "wsp_bush_07_a_02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "wsp_bush_07_a_01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "wsp_tree_palm_02_c2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "wsp_tree_palm_02_b2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "NonVagueNonUniqueLandmark",
+        "Type": "Class NonVagueNonUniqueLandmarkComponent*",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "wsp_tree_palm_01_b3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "wsp_tree_palm_01_a3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "wsp_tree_palm_01_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "wsp_tree_palm_02_a2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x470"
       }
     ]
   },

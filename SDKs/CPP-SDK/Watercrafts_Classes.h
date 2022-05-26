@@ -196,9 +196,10 @@ public:
 	Class CurveFloat*                                            SpeedToChoppinessScalarCurve;                      // 0x578(0x8)
 	float                                                        DeepWaterSubmersionThreshold;                      // 0x580(0x4)
 	float                                                        BuoyancyChoppinessWhileSinking;                    // 0x584(0x4)
-	bool                                                         RigidBodyAwake;                                    // 0x588(0x1)
-	bool                                                         InContactWithLand;                                 // 0x589(0x1)
-	bool                                                         InDeepWater;                                       // 0x58a(0x1)
+	bool                                                         IsCritical;                                        // 0x588(0x1)
+	bool                                                         RigidBodyAwake;                                    // 0x589(0x1)
+	bool                                                         InContactWithLand;                                 // 0x58a(0x1)
+	bool                                                         InDeepWater;                                       // 0x58b(0x1)
 };
 
 
@@ -324,6 +325,13 @@ class TaleQuestSpawnWatercraftStepDesc: public TaleQuestStepDesc
 public:
 	Struct QuestVariableTransform                                SpawnLocation;                                     // 0x80(0x28)
 	Struct QuestVariableWatercraft                               Watercraft;                                        // 0xc8(0x20)
+};
+
+
+// Size 0x0
+class TaleQuestWatercraftFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
 };
 
 

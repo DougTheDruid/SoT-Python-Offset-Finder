@@ -10,9 +10,6 @@ namespace DougsSDKDumper
 class BP_ShroudedDeep_Larinna_Active_C: public BP_SoleTrader_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x688(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x690(0x8)
-	Class ActorPhasingComponent*                                 None;                                              // 0x698(0x8)
 };
 
 

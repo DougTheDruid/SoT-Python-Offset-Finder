@@ -14,6 +14,13 @@ public:
 
 
 // Size 0x0
+class cannonenchantment_sakura_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
 class cannonenchantment_sailor_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:

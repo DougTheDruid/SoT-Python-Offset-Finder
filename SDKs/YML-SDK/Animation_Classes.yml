@@ -450,8 +450,8 @@ CosmeticItemAnimationComponent:
     Offset: '0x120'
     Size: '0x8'
     Type: Class CosmeticItemAnimationDataAsset*
-  ClassSize: '0x60'
-  FullSize: '0x128'
+  ClassSize: '0x68'
+  FullSize: '0x130'
   InheritedSize: '0xc8'
   Super: ActorComponent
 CosmeticItemAnimationDataAsset:

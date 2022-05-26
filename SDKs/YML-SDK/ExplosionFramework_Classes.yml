@@ -52,3 +52,9 @@ StatusResponseExplodeAfterTime:
   FullSize: '0x48'
   InheritedSize: '0x30'
   Super: StatusResponse
+TaleQuestFuseFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x158'
+  InheritedSize: '0x158'
+  Super: TaleQuestFunctionStepLibrary

@@ -6616,6 +6616,37 @@ public:
 
 
 // Size 0x0
+class ContestAddItemToHandInListStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x10
+class ContestTaleQuestService: public TaleQuestService
+{
+public:
+	TArray<Struct NPCPurchaseList>                               NPCPurchaseLists;                                  // 0x60(0x10)
+};
+
+
+// Size 0x0
+class ContestTaleQuestServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x28
+class ContestAddItemToHandInListStepDesc: public TaleQuestStepDesc
+{
+public:
+	class                                                        Item;                                              // 0x80(0x8)
+	Struct QuestVariableActor                                    NPC;                                               // 0x88(0x20)
+};
+
+
+// Size 0x0
 class ContestAwardScoreForItemDugUpStep: public TaleQuestStep
 {
 public:
@@ -7020,20 +7051,6 @@ public:
 };
 
 
-// Size 0x0
-class ContestTaleQuestService: public TaleQuestService
-{
-public:
-};
-
-
-// Size 0x0
-class ContestTaleQuestServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
 // Size 0xa0
 class ContestTavernBanners: public Actor
 {
@@ -7093,18 +7110,20 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x18
 class ContestWaitForItemHandInStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x60
 class ContestWaitForItemHandInStepDesc: public TaleQuestStepDesc
 {
 public:
 	Struct QuestVariableActor                                    Item;                                              // 0x80(0x20)
+	Struct QuestVariableItemDescType                             ItemDesc;                                          // 0xa0(0x20)
+	Struct QuestVariableActor                                    NPC;                                               // 0xc0(0x20)
 };
 
 
@@ -9069,13 +9088,13 @@ public:
 };
 
 
-// Size 0x190
+// Size 0x1a0
 class FogBank: public FogVolume
 {
 public:
 	Class FogBankDataAsset*                                      FogBankDataAsset;                                  // 0x3f8(0x8)
 	TArray<Struct FogBankStoryRelatedSettings>                   StoryResponses;                                    // 0x400(0x10)
-	Struct FogBankSettings                                       Settings;                                          // 0x410(0x38)
+	Struct FogBankSettings                                       Settings;                                          // 0x410(0x4c)
 };
 
 
@@ -9402,20 +9421,21 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x0
 class GenerateDigLocationStep: public TaleQuestStep
 {
 public:
-	Class GenerateDigLocationStepDesc*                           StepDesc;                                          // 0x98(0x8)
 };
 
 
-// Size 0x40
+// Size 0x50
 class GenerateDigLocationStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableName                                     IslandName;                                        // 0x80(0x20)
-	Struct QuestVariableVector                                   DigLocation;                                       // 0xa0(0x20)
+	Class Actor*                                                 IgnoredBuryLocation;                               // 0x80(0x8)
+	float                                                        IgnoredBuryRadius;                                 // 0x88(0x4)
+	Struct QuestVariableName                                     IslandName;                                        // 0x90(0x20)
+	Struct QuestVariableVector                                   DigLocation;                                       // 0xb0(0x20)
 };
 
 
@@ -29140,6 +29160,21 @@ public:
 class InteractableGrammaticalGenderInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x0
+class NPCHideInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10
+class NPCHideComponent: public ActorComponent
+{
+public:
+	bool                                                         bHideActive;                                       // 0xd0(0x1)
 };
 
 

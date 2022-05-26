@@ -2,8 +2,8 @@
 # https://github.com/DougTheDruid
 AsyncLoadingMonitoringService:
   Attributes: []
-  ClassSize: '0x98'
-  FullSize: '0xc0'
+  ClassSize: '0x88'
+  FullSize: '0xb0'
   InheritedSize: '0x28'
   Super: Object
 AsyncLoadingMonitoringServiceInterface:

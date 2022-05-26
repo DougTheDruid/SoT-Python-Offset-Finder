@@ -6,37 +6,37 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "StaticMeshComponent02",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "StaticMeshComponent01",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "StaticMeshComponent0",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "ParticleSystemComponent01",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "ParticleSystemComponent0",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "SharedRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x438"

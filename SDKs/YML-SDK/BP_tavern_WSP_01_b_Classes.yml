@@ -598,11 +598,11 @@ BP_tavern_WSP_01_b_C:
     Offset: '0x870'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: light_ceiling
+  - Name: Light_ceiling
     Offset: '0x878'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: light_ceiling
+  - Name: Light_ceiling
     Offset: '0x880'
     Size: '0x8'
     Type: Class SpotLightComponent*

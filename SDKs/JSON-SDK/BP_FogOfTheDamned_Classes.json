@@ -1,27 +1,27 @@
 {
   "BP_FogOfTheDamned_C": {
     "Super": "FogBank",
-    "FullSize": "0x588",
-    "InheritedSize": "0x570",
+    "FullSize": "0x598",
+    "InheritedSize": "0x580",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x580"
       },
       {
         "Name": "storm_rain_sheet__outer",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x588"
       },
       {
         "Name": "AthenaPlayerZonePenetrationTracker",
         "Type": "Class AthenaPlayerZonePenetrationTrackerComponent*",
         "Size": "0x8",
-        "Offset": "0x580"
+        "Offset": "0x590"
       }
     ]
   },

@@ -1345,6 +1345,27 @@ public:
 
 
 // Size 0x0
+class TaleQuestNamedPointsFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestNPCHideFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestTransfromConversionFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
 class TaleQuestUObjectFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
@@ -1588,17 +1609,18 @@ public:
 };
 
 
-// Size 0xb0
+// Size 0xc0
 class TaleQuestAddChecklistMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
 	struct FName                                                 MapId;                                             // 0x80(0x8)
-	Struct QuestVariableText                                     Title;                                             // 0x88(0x20)
-	Struct QuestVariableText                                     Description;                                       // 0xa8(0x20)
-	Struct QuestVariableDataAsset                                ChecklistItemsData;                                // 0xc8(0x20)
-	Struct QuestVariableText                                     Afternote;                                         // 0xe8(0x20)
-	Struct QuestVariableDataAsset                                Layout;                                            // 0x108(0x20)
-	byte                                                         RadialMiniIcon;                                    // 0x128(0x1)
+	Struct StringAssetReference                                  OverrideTreasureMapItemDesc;                       // 0x88(0x10)
+	Struct QuestVariableText                                     Title;                                             // 0x98(0x20)
+	Struct QuestVariableText                                     Description;                                       // 0xb8(0x20)
+	Struct QuestVariableDataAsset                                ChecklistItemsData;                                // 0xd8(0x20)
+	Struct QuestVariableText                                     Afternote;                                         // 0xf8(0x20)
+	Struct QuestVariableDataAsset                                Layout;                                            // 0x118(0x20)
+	byte                                                         RadialMiniIcon;                                    // 0x138(0x1)
 };
 
 

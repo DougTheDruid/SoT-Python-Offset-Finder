@@ -73,4 +73,51 @@ public:
 };
 
 
+// Size 0x28
+class wsp_bush_cluster_01_d_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   wsp_bush_fern_01_a1;                               // 0x410(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_01_a20;                                   // 0x418(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_01_a26;                                   // 0x420(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_01_a25;                                   // 0x428(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_07_a_01;                                  // 0x430(0x8)
+};
+
+
+// Size 0x18
+class wsp_bush_cluster_01_c_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   wsp_bush_01_a6;                                    // 0x410(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_07_a_01;                                  // 0x418(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_06_b_01;                                  // 0x420(0x8)
+};
+
+
+// Size 0x20
+class wsp_bush_cluster_01_b_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   wsp_bush_06_b2;                                    // 0x410(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_cliff_l_01;                               // 0x418(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_01_a2;                                    // 0x420(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_03_a2;                                    // 0x428(0x8)
+};
+
+
+// Size 0x38
+class wsp_bush_cluster_01_a_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   wsp_bush_05_a;                                     // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMesh15;                                      // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMesh16;                                      // 0x420(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_03_a2;                                    // 0x428(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_03_a;                                     // 0x430(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_07_a_01;                                  // 0x438(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_07_a_02;                                  // 0x440(0x8)
+};
+
+
 }

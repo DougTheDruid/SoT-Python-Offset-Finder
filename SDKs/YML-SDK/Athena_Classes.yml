@@ -15096,6 +15096,26 @@ ContentTypeSelectionConditional:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
+ContestAddItemToHandInListStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+ContestAddItemToHandInListStepDesc:
+  Attributes:
+  - Name: Item
+    Offset: '0x80'
+    Size: '0x8'
+    Type: class
+  - Name: NPC
+    Offset: '0x88'
+    Size: '0x20'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x28'
+  FullSize: '0xa8'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 ContestAwardScoreForItemDugUpStep:
   Attributes: []
   ClassSize: '0x0'
@@ -15781,9 +15801,13 @@ ContestSpawnLocationsComponent:
   InheritedSize: '0xc8'
   Super: ActorComponent
 ContestTaleQuestService:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x60'
+  Attributes:
+  - Name: NPCPurchaseLists
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<Struct NPCPurchaseList>
+  ClassSize: '0x10'
+  FullSize: '0x70'
   InheritedSize: '0x60'
   Super: TaleQuestService
 ContestTaleQuestServiceDesc:
@@ -15920,8 +15944,8 @@ ContestVoyagesSelectorDataAsset:
   Super: DataAsset
 ContestWaitForItemHandInStep:
   Attributes: []
-  ClassSize: '0x10'
-  FullSize: '0xa8'
+  ClassSize: '0x18'
+  FullSize: '0xb0'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 ContestWaitForItemHandInStepDesc:
@@ -15930,8 +15954,16 @@ ContestWaitForItemHandInStepDesc:
     Offset: '0x80'
     Size: '0x20'
     Type: Struct QuestVariableActor
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  - Name: ItemDesc
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableItemDescType
+  - Name: NPC
+    Offset: '0xc0'
+    Size: '0x20'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x60'
+  FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 ContestZone:
@@ -22930,10 +22962,10 @@ FogBank:
     Type: TArray<Struct FogBankStoryRelatedSettings>
   - Name: Settings
     Offset: '0x410'
-    Size: '0x38'
+    Size: '0x4c'
     Type: Struct FogBankSettings
-  ClassSize: '0x190'
-  FullSize: '0x570'
+  ClassSize: '0x1a0'
+  FullSize: '0x580'
   InheritedSize: '0x3e0'
   Super: FogVolume
 FogBankDataAsset:
@@ -23821,27 +23853,31 @@ GatedHealthInterface:
   InheritedSize: '0x28'
   Super: Interface
 GenerateDigLocationStep:
-  Attributes:
-  - Name: StepDesc
-    Offset: '0x98'
-    Size: '0x8'
-    Type: Class GenerateDigLocationStepDesc*
-  ClassSize: '0x8'
-  FullSize: '0xa0'
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 GenerateDigLocationStepDesc:
   Attributes:
-  - Name: IslandName
+  - Name: IgnoredBuryLocation
     Offset: '0x80'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: IgnoredBuryRadius
+    Offset: '0x88'
+    Size: '0x4'
+    Type: float
+  - Name: IslandName
+    Offset: '0x90'
     Size: '0x20'
     Type: Struct QuestVariableName
   - Name: DigLocation
-    Offset: '0xa0'
+    Offset: '0xb0'
     Size: '0x20'
     Type: Struct QuestVariableVector
-  ClassSize: '0x40'
-  FullSize: '0xc0'
+  ClassSize: '0x50'
+  FullSize: '0xd0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 GeneratedLocationsDataAsset:
@@ -38356,6 +38392,22 @@ NPCHeldObjectData:
   FullSize: '0x98'
   InheritedSize: '0x28'
   Super: DataAsset
+NPCHideComponent:
+  Attributes:
+  - Name: bHideActive
+    Offset: '0xd0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x10'
+  FullSize: '0xd8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+NPCHideInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 NPCIdAsset:
   Attributes:
   - Name: NPCIds

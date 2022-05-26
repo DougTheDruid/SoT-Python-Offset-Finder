@@ -480,6 +480,12 @@ TaleQuestSpawnWatercraftStepDesc:
   FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestWatercraftFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x158'
+  InheritedSize: '0x158'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestWatercraftService:
   Attributes: []
   ClassSize: '0x28'
@@ -558,16 +564,20 @@ Watercraft:
     Offset: '0x584'
     Size: '0x4'
     Type: float
-  - Name: RigidBodyAwake
+  - Name: IsCritical
     Offset: '0x588'
     Size: '0x1'
     Type: bool
-  - Name: InContactWithLand
+  - Name: RigidBodyAwake
     Offset: '0x589'
     Size: '0x1'
     Type: bool
-  - Name: InDeepWater
+  - Name: InContactWithLand
     Offset: '0x58a'
+    Size: '0x1'
+    Type: bool
+  - Name: InDeepWater
+    Offset: '0x58b'
     Size: '0x1'
     Type: bool
   ClassSize: '0x348'

@@ -10672,7 +10672,11 @@ CompanyCargoRunHandInStats:
     Offset: '0x18'
     Size: '0x10'
     Type: TArray<Struct PlayerStat>
-  ClassSize: '0x28'
+  - Name: StatsToFirePerHealthTierOnHandIn
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct PlayerStat>
+  ClassSize: '0x38'
 CompanyLevelClaim:
   Attributes:
   - Name: Sig
@@ -20380,7 +20384,11 @@ FogBankLocalPlayerPenetrationEvent:
     Offset: '0xc'
     Size: '0x4'
     Type: float
-  ClassSize: '0x10'
+  - Name: MaximumAudioFogIntensityRTPC
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
 FogBankManagerFogAvoidanceArea:
   Attributes:
   - Name: Location
@@ -20467,7 +20475,15 @@ FogBankSettings:
     Offset: '0x34'
     Size: '0x4'
     Type: float
-  ClassSize: '0x38'
+  - Name: PreviousFogColour
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: MaximumAudioFogIntensityRTPC
+    Offset: '0x48'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x4c'
 FogBankStoryRelatedSettings:
   Attributes:
   - Name: Story
@@ -20478,11 +20494,19 @@ FogBankStoryRelatedSettings:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: FadeInDuration
+  - Name: FogColour
     Offset: '0xc'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: FadeInDuration
+    Offset: '0x1c'
     Size: '0x4'
     Type: float
-  ClassSize: '0x10'
+  - Name: MaximumAudioFogIntensityRTPC
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x24'
 FogColourForSea:
   Attributes:
   - Name: Sea
@@ -28220,6 +28244,17 @@ NPCOneShotAnimationElement:
     Offset: '0x8'
     Size: '0x10'
     Type: TArray<Struct NPCAnimationSequence>
+  ClassSize: '0x18'
+NPCPurchaseList:
+  Attributes:
+  - Name: NPC
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Items
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Class Items>
   ClassSize: '0x18'
 NPCReactionDualActorVOEntry:
   Attributes:

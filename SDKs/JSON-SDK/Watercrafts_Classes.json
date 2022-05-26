@@ -465,22 +465,28 @@
         "Offset": "0x584"
       },
       {
-        "Name": "RigidBodyAwake",
+        "Name": "IsCritical",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x588"
       },
       {
-        "Name": "InContactWithLand",
+        "Name": "RigidBodyAwake",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x589"
       },
       {
-        "Name": "InDeepWater",
+        "Name": "InContactWithLand",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x58a"
+      },
+      {
+        "Name": "InDeepWater",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x58b"
       }
     ]
   },
@@ -819,6 +825,13 @@
         "Offset": "0xc8"
       }
     ]
+  },
+  "TaleQuestWatercraftFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x158",
+    "InheritedSize": "0x158",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "WatercraftBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",

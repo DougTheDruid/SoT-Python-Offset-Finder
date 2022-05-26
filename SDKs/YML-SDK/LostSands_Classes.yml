@@ -3,50 +3,66 @@
 LostSandsRowboatGunpowderBarrel:
   Attributes:
   - Name: ActionRulesComponent
-    Offset: '0x480'
+    Offset: '0x488'
     Size: '0x8'
     Type: Class ActionRulesComponent*
   - Name: InteractableComponent
-    Offset: '0x488'
+    Offset: '0x490'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: StaticMeshComponent
-    Offset: '0x490'
+    Offset: '0x498'
     Size: '0x8'
     Type: Class StaticMeshMemoryConstraintComponent*
   - Name: FlammableComponent
-    Offset: '0x498'
+    Offset: '0x4a0'
     Size: '0x8'
     Type: Class FlammableWieldableComponent*
   - Name: StatusEffectComponent
-    Offset: '0x4a0'
+    Offset: '0x4a8'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: ItemHealthComponent
-    Offset: '0x4a8'
+    Offset: '0x4b0'
     Size: '0x8'
     Type: Class ItemHealthComponent*
   - Name: ExplosionComponent
-    Offset: '0x4b0'
+    Offset: '0x4b8'
     Size: '0x8'
     Type: Class ExplosionComponent*
   - Name: RewindComponent
-    Offset: '0x4b8'
+    Offset: '0x4c0'
     Size: '0x8'
     Type: Class RewindComponent*
   - Name: ToggleFuseInputId
-    Offset: '0x4c0'
+    Offset: '0x4c8'
     Size: '0x8'
     Type: class
   - Name: LightFuseDescription
-    Offset: '0x4c8'
+    Offset: '0x4d0'
     Size: '0x38'
     Type: Struct FText
   - Name: ExtinguishFuseDescription
-    Offset: '0x500'
+    Offset: '0x508'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x180'
-  FullSize: '0x550'
+  - Name: NamedPointsGroupName
+    Offset: '0x540'
+    Size: '0x8'
+    Type: struct FName
+  - Name: DistanceFromNamedPoints
+    Offset: '0x568'
+    Size: '0x10'
+    Type: TArray<Float DistanceFromNamedPoints>
+  - Name: RowboatDestroyedAtGoldenSandsStat
+    Offset: '0x578'
+    Size: '0x4'
+    Type: Struct PlayerStat
+  - Name: RowboatDestroyedAwayFromGoldenSandsStat
+    Offset: '0x57c'
+    Size: '0x4'
+    Type: Struct PlayerStat
+  ClassSize: '0x1e8'
+  FullSize: '0x5b8'
   InheritedSize: '0x3d0'
   Super: Actor

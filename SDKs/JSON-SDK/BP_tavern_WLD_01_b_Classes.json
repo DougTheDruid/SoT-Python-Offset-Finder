@@ -894,13 +894,13 @@
         "Offset": "0x868"
       },
       {
-        "Name": "light_ceiling",
+        "Name": "Light_ceiling",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x870"
       },
       {
-        "Name": "light_ceiling",
+        "Name": "Light_ceiling",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x878"
@@ -960,7 +960,7 @@
         "Offset": "0x8c0"
       },
       {
-        "Name": "light_ceiling",
+        "Name": "Light_ceiling",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x8c8"
@@ -996,7 +996,7 @@
         "Offset": "0x8f0"
       },
       {
-        "Name": "light_ceiling",
+        "Name": "Light_ceiling",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x8f8"

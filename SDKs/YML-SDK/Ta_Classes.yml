@@ -66,7 +66,7 @@ BP_RitualBottleTop_C:
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: "1\u51F8\u0216\0\uC152\b\xEB"
+  - Name: '1'
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
@@ -88,7 +88,7 @@ BP_RitualBottle_C:
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: "1\u51F8\u0216\0\uC152\b\xEB"
+  - Name: '1'
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*

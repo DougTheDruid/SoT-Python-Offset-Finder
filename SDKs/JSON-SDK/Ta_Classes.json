@@ -46,7 +46,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "1\u51f8\u0216\u0000\uc152\b\u00eb",
+        "Name": "1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
@@ -78,7 +78,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "1\u51f8\u0216\u0000\uc152\b\u00eb",
+        "Name": "1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"

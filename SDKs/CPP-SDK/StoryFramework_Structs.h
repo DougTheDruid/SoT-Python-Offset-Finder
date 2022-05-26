@@ -121,12 +121,13 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x28
 struct StoriesChangedTelemetryEvent
 {
 public:
 	TArray<Str AllStories>                                       AllStories;                                        // 0x0(0x10)
 	TArray<Str ActiveStories>                                    ActiveStories;                                     // 0x10(0x10)
+	bool                                                         DidStoriesChange;                                  // 0x20(0x1)
 };
 
 

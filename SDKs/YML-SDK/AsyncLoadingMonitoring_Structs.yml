@@ -14,12 +14,8 @@ AsyncExcessiveLoadTelemetryEvent:
     Offset: '0x10'
     Size: '0x8'
     Type: double
-  - Name: CompletedAssetRequestList
+  - Name: AssetRequestList
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Str CompletedAssetRequestList>
-  - Name: InProgressAssetRequestList
-    Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<Str InProgressAssetRequestList>
-  ClassSize: '0x38'
+    Type: TArray<Str AssetRequestList>
+  ClassSize: '0x28'

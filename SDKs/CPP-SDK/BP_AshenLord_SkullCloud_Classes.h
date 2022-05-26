@@ -7,15 +7,15 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x38
-class BP_AshenLord_SkullCloud_C: public None
+class BP_AshenLord_SkullCloud_C: public BP_NonRotatableSignalCloud_C
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x4b8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4c0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4c8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4d0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4d8(0x8)
-	TArray<class None*>                                          None;                                              // 0x4e0(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4b8(0x8)
+	Class StaticMeshComponent*                                   lightning_bolt_03_a;                               // 0x4c0(0x8)
+	Class StaticMeshComponent*                                   lightning_bolt_02_a;                               // 0x4c8(0x8)
+	Class StaticMeshComponent*                                   lightning_bolt_01_a;                               // 0x4d0(0x8)
+	Class StaticMeshComponent*                                   vfx_tornado_ribbons;                               // 0x4d8(0x8)
+	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x4e0(0x10)
 };
 
 

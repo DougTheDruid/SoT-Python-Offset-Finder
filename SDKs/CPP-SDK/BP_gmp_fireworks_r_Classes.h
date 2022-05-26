@@ -7,28 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_gmp_fireworks_rocket_01_a_Landlubber_ItemDesc_C: public ItemDesc
+class BP_gmp_fireworks_rocket_01_a_WondersOfTheSea_ItemDesc_C: public ItemDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_gmp_fireworks_rocket_01_a_ScarletMacaw_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_gmp_fireworks_rocket_01_a_ThunderStrike_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_gmp_fireworks_rocket_01_a_CoralReef_ItemDesc_C: public ItemDesc
+class BP_gmp_fireworks_rocket_01_a_ShootingStar_ItemDesc_C: public ItemDesc
 {
 public:
 };

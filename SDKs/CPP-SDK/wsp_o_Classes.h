@@ -7,56 +7,56 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class wsp_outpost_2_vfx_C: public LevelScriptActor
+class wsp_outpost_1_calmwater_C: public LevelScriptActor
 {
 public:
 };
 
 
 // Size 0x0
-class wsp_outpost_2_lighting_C: public LevelScriptActor
+class wsp_outpost_1_vfx_C: public LevelScriptActor
 {
 public:
 };
 
 
 // Size 0x0
-class wsp_outpost_2_audio_C: public LevelScriptActor
+class wsp_outpost_1_lighting_C: public LevelScriptActor
 {
 public:
 };
 
 
 // Size 0x0
-class wsp_outpost_2_design_talltales_C: public LevelScriptActor
+class wsp_outpost_1_design_talltales_C: public LevelScriptActor
 {
 public:
 };
 
 
 // Size 0x0
-class wsp_outpost_2_design_adventure_C: public LevelScriptActor
+class wsp_outpost_1_design_adventure_C: public LevelScriptActor
 {
 public:
 };
 
 
 // Size 0x0
-class wsp_outpost_2_design_C: public LevelScriptActor
+class wsp_outpost_1_design_C: public LevelScriptActor
 {
 public:
 };
 
 
 // Size 0x0
-class wsp_outpost_2_calmwater_C: public LevelScriptActor
+class wsp_outpost_1_audio_C: public LevelScriptActor
 {
 public:
 };
 
 
 // Size 0x0
-class wsp_outpost_2_terrain_C: public LevelScriptActor
+class wsp_outpost_1_terrain_C: public LevelScriptActor
 {
 public:
 };

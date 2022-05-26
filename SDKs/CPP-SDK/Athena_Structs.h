@@ -3536,13 +3536,14 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x38
 struct CompanyCargoRunHandInStats
 {
 public:
 	class                                                        CompanyId;                                         // 0x0(0x8)
 	TArray<Struct PlayerStat>                                    StatsToFireOnHandIn;                               // 0x8(0x10)
 	TArray<Struct PlayerStat>                                    StatsToFireOnDamagedHandIn;                        // 0x18(0x10)
+	TArray<Struct PlayerStat>                                    StatsToFirePerHealthTierOnHandIn;                  // 0x28(0x10)
 };
 
 
@@ -4257,6 +4258,15 @@ public:
 	class                                                        ConstellationClass;                                // 0x0(0x8)
 	Class WwiseEvent*                                            AudioStartEvent;                                   // 0x8(0x8)
 	Class WwiseEvent*                                            AudioStopEvent;                                    // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct NPCPurchaseList
+{
+public:
+	Class Actor*                                                 NPC;                                               // 0x0(0x8)
+	TArray<Class Items>                                          Items;                                             // 0x8(0x10)
 };
 
 
@@ -5518,17 +5528,19 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x24
 struct FogBankStoryRelatedSettings
 {
 public:
 	struct FName                                                 Story;                                             // 0x0(0x8)
 	float                                                        Density;                                           // 0x8(0x4)
-	float                                                        FadeInDuration;                                    // 0xc(0x4)
+	Struct LinearColor                                           FogColour;                                         // 0xc(0x10)
+	float                                                        FadeInDuration;                                    // 0x1c(0x4)
+	float                                                        MaximumAudioFogIntensityRTPC;                      // 0x20(0x4)
 };
 
 
-// Size 0x38
+// Size 0x4c
 struct FogBankSettings
 {
 public:
@@ -5541,6 +5553,8 @@ public:
 	float                                                        FadeOutDuration;                                   // 0x2c(0x4)
 	bool                                                         Persistent;                                        // 0x30(0x1)
 	float                                                        PreviousDensity;                                   // 0x34(0x4)
+	Struct LinearColor                                           PreviousFogColour;                                 // 0x38(0x10)
+	float                                                        MaximumAudioFogIntensityRTPC;                      // 0x48(0x4)
 };
 
 
@@ -10829,7 +10843,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x14
 struct FogBankLocalPlayerPenetrationEvent
 {
 public:
@@ -10837,6 +10851,7 @@ public:
 	float                                                        PenetrationT3D;                                    // 0x4(0x4)
 	float                                                        PenetrationTHorizontal;                            // 0x8(0x4)
 	float                                                        PenetrationTVertical;                              // 0xc(0x4)
+	float                                                        MaximumAudioFogIntensityRTPC;                      // 0x10(0x4)
 };
 
 

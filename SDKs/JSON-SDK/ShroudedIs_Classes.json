@@ -1,10 +1,41 @@
 {
   "ShroudedIslands_BellesBuoy_C": {
-    "Super": "/Game/PirateLegends/Blueprints/TallTales/Structs/DS_PL_ItemSpaw",
-    "FullSize": "-0x7ccccccd",
-    "InheritedSize": "0x0",
-    "ClassSize": "-0x7ccccccd",
-    "Attributes": []
+    "Super": "Actor",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "None",
+        "Type": "Class PointLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      }
+    ]
   },
   "ShroudedIslands_AnchoredGhostShip_C": {
     "Super": "None",
@@ -63,10 +94,10 @@
     ]
   },
   "ShroudedIslands_LarinnaDialogTempEntitlement_C": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "0x3da8d02d",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x3da8d02d",
     "Attributes": []
   },
   "DougTheDruid": {

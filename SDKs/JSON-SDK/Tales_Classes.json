@@ -2438,6 +2438,27 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestNamedPointsFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x158",
+    "InheritedSize": "0x158",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestNPCHideFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x158",
+    "InheritedSize": "0x158",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestTransfromConversionFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x158",
+    "InheritedSize": "0x158",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestUObjectFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x158",
@@ -2905,9 +2926,9 @@
   },
   "TaleQuestAddChecklistMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x130",
+    "FullSize": "0x140",
     "InheritedSize": "0x80",
-    "ClassSize": "0xb0",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "MapId",
@@ -2916,40 +2937,46 @@
         "Offset": "0x80"
       },
       {
+        "Name": "OverrideTreasureMapItemDesc",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
         "Name": "Title",
         "Type": "Struct QuestVariableText",
         "Size": "0x20",
-        "Offset": "0x88"
+        "Offset": "0x98"
       },
       {
         "Name": "Description",
         "Type": "Struct QuestVariableText",
         "Size": "0x20",
-        "Offset": "0xa8"
+        "Offset": "0xb8"
       },
       {
         "Name": "ChecklistItemsData",
         "Type": "Struct QuestVariableDataAsset",
         "Size": "0x20",
-        "Offset": "0xc8"
+        "Offset": "0xd8"
       },
       {
         "Name": "Afternote",
         "Type": "Struct QuestVariableText",
         "Size": "0x20",
-        "Offset": "0xe8"
+        "Offset": "0xf8"
       },
       {
         "Name": "Layout",
         "Type": "Struct QuestVariableDataAsset",
         "Size": "0x20",
-        "Offset": "0x108"
+        "Offset": "0x118"
       },
       {
         "Name": "RadialMiniIcon",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x128"
+        "Offset": "0x138"
       }
     ]
   },

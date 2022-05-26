@@ -10,6 +10,24 @@
         "Type": "Class CompanyRegionComponent*",
         "Size": "0x8",
         "Offset": "0x688"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SphereComponent*",
+        "Size": "0x8",
+        "Offset": "0x690"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ObjectMessagingDispatcherComponent*",
+        "Size": "0x8",
+        "Offset": "0x698"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ActorPhasingComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a0"
       }
     ]
   },

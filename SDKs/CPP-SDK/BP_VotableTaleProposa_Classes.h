@@ -6,10 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x300
-class BP_VotableTaleProposal_Vertical_C: public None
+// Size 0x50
+class BP_VotableTaleProposal_Vertical_C: public VotableObjectView
 {
 public:
+	Struct PointerToUberGraphFrame                               None;                                              // 0x4e8(0x8)
 };
 
 

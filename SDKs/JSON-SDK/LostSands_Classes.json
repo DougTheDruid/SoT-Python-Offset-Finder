@@ -1,75 +1,99 @@
 {
   "LostSandsRowboatGunpowderBarrel": {
     "Super": "Actor",
-    "FullSize": "0x550",
+    "FullSize": "0x5b8",
     "InheritedSize": "0x3d0",
-    "ClassSize": "0x180",
+    "ClassSize": "0x1e8",
     "Attributes": [
       {
         "Name": "ActionRulesComponent",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x488"
       },
       {
         "Name": "InteractableComponent",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x490"
       },
       {
         "Name": "StaticMeshComponent",
         "Type": "Class StaticMeshMemoryConstraintComponent*",
         "Size": "0x8",
-        "Offset": "0x490"
+        "Offset": "0x498"
       },
       {
         "Name": "FlammableComponent",
         "Type": "Class FlammableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x4a0"
       },
       {
         "Name": "StatusEffectComponent",
         "Type": "Class LightWeightStatusEffectManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x4a0"
+        "Offset": "0x4a8"
       },
       {
         "Name": "ItemHealthComponent",
         "Type": "Class ItemHealthComponent*",
         "Size": "0x8",
-        "Offset": "0x4a8"
+        "Offset": "0x4b0"
       },
       {
         "Name": "ExplosionComponent",
         "Type": "Class ExplosionComponent*",
         "Size": "0x8",
-        "Offset": "0x4b0"
+        "Offset": "0x4b8"
       },
       {
         "Name": "RewindComponent",
         "Type": "Class RewindComponent*",
         "Size": "0x8",
-        "Offset": "0x4b8"
+        "Offset": "0x4c0"
       },
       {
         "Name": "ToggleFuseInputId",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x4c0"
+        "Offset": "0x4c8"
       },
       {
         "Name": "LightFuseDescription",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x4c8"
+        "Offset": "0x4d0"
       },
       {
         "Name": "ExtinguishFuseDescription",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x500"
+        "Offset": "0x508"
+      },
+      {
+        "Name": "NamedPointsGroupName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "DistanceFromNamedPoints",
+        "Type": "TArray<Float DistanceFromNamedPoints>",
+        "Size": "0x10",
+        "Offset": "0x568"
+      },
+      {
+        "Name": "RowboatDestroyedAtGoldenSandsStat",
+        "Type": "Struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x578"
+      },
+      {
+        "Name": "RowboatDestroyedAwayFromGoldenSandsStat",
+        "Type": "Struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x57c"
       }
     ]
   },

@@ -208,7 +208,7 @@
     ]
   },
   "StoriesChangedTelemetryEvent": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "AllStories",
@@ -221,6 +221,12 @@
         "Type": "TArray<Str ActiveStories>",
         "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "DidStoriesChange",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
       }
     ]
   },

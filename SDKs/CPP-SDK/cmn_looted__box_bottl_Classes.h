@@ -6,6 +6,23 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x50
+class cmn_looted__box_bottles_02_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x450(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x458(0x8)
+};
+
+
 // Size 0x90
 class cmn_looted__box_bottles_01_C: public BP_Placement_HeightDrop_C
 {
@@ -28,23 +45,6 @@ public:
 	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x488(0x8)
 	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x490(0x8)
 	Class SceneComponent*                                        SharedRoot;                                        // 0x498(0x8)
-};
-
-
-// Size 0x50
-class cmn_looted__box_bottles_02_C: public BP_Placement_HeightDrop_C
-{
-public:
-	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x450(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x458(0x8)
 };
 
 

@@ -352,7 +352,7 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x68
 class CosmeticItemAnimationComponent: public ActorComponent
 {
 public:

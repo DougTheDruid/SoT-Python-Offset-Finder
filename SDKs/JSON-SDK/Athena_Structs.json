@@ -8993,7 +8993,7 @@
     ]
   },
   "CompanyCargoRunHandInStats": {
-    "ClassSize": "0x28",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "CompanyId",
@@ -9012,6 +9012,12 @@
         "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x18"
+      },
+      {
+        "Name": "StatsToFirePerHealthTierOnHandIn",
+        "Type": "TArray<Struct PlayerStat>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -10627,6 +10633,23 @@
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "NPCPurchaseList": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NPC",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Items",
+        "Type": "TArray<Class Items>",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -13319,7 +13342,7 @@
     ]
   },
   "FogBankStoryRelatedSettings": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x24",
     "Attributes": [
       {
         "Name": "Story",
@@ -13334,15 +13357,27 @@
         "Offset": "0x8"
       },
       {
+        "Name": "FogColour",
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0xc"
+      },
+      {
         "Name": "FadeInDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc"
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "MaximumAudioFogIntensityRTPC",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },
   "FogBankSettings": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x4c",
     "Attributes": [
       {
         "Name": "FogState",
@@ -13397,6 +13432,18 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x34"
+      },
+      {
+        "Name": "PreviousFogColour",
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaximumAudioFogIntensityRTPC",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
       }
     ]
   },
@@ -25372,7 +25419,7 @@
     ]
   },
   "FogBankLocalPlayerPenetrationEvent": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x14",
     "Attributes": [
       {
         "Name": "FogBankType",
@@ -25397,6 +25444,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
+      },
+      {
+        "Name": "MaximumAudioFogIntensityRTPC",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
       }
     ]
   },

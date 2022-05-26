@@ -6,15 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
-class BP_CommodityManifestBook_MerchantAlliance_C: public ModalInteractionProxy
-{
-public:
-	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x4e8(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f0(0x8)
-};
-
-
 // Size 0x0
 class BP_fod_ChickenMeatRaw_00_a_ItemProxy_C: public BP_ProxyIngestible_Retractable_C
 {
@@ -188,6 +179,25 @@ public:
 };
 
 
+// Size 0x10
+class BP_CommodityManifestBook_MerchantAlliance_C: public ModalInteractionProxy
+{
+public:
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x4e8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f0(0x8)
+};
+
+
+// Size 0x18
+class BP_IslandStorageBarrel_Outpost_C: public StorageContainer
+{
+public:
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
+	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
+};
+
+
 // Size 0x0
 class BP_underwear_yellow_Desc_C: public ClothingDesc
 {
@@ -262,16 +272,6 @@ public:
 class BP_hair_col_red_04_under_Desc_C: public ClothingDesc
 {
 public:
-};
-
-
-// Size 0x18
-class BP_IslandStorageBarrel_Outpost_C: public StorageContainer
-{
-public:
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
-	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
 };
 
 

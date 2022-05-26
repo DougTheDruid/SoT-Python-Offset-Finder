@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 BP_AshenLord_SkullCloud_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x4b8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: lightning_bolt_03_a
     Offset: '0x4c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: lightning_bolt_02_a
     Offset: '0x4c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: lightning_bolt_01_a
     Offset: '0x4d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: vfx_tornado_ribbons
     Offset: '0x4d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DynamicMaterials
     Offset: '0x4e0'
     Size: '0x10'
-    Type: TArray<class None*>
+    Type: TArray<class DynamicMaterials*>
   ClassSize: '0x38'
   FullSize: '0x4f0'
   InheritedSize: '0x4b8'
-  Super: None
+  Super: BP_NonRotatableSignalCloud_C

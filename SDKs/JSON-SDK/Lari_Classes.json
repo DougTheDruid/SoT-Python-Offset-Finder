@@ -4,26 +4,7 @@
     "FullSize": "0x6a0",
     "InheritedSize": "0x688",
     "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x688"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x690"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ActorPhasingComponent*",
-        "Size": "0x8",
-        "Offset": "0x698"
-      }
-    ]
+    "Attributes": []
   },
   "ShroudedDeep_LarinnaDialogTempEntitlement_C": {
     "Super": "EntitlementDesc",

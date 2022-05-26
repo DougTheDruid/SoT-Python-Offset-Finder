@@ -1,24 +1,4 @@
 {
-  "BP_CommodityManifestBook_MerchantAlliance_C": {
-    "Super": "ModalInteractionProxy",
-    "FullSize": "0x4f8",
-    "InheritedSize": "0x4e8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NPCDialog",
-        "Type": "Class NPCDialogComponent*",
-        "Size": "0x8",
-        "Offset": "0x4e8"
-      },
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x4f0"
-      }
-    ]
-  },
   "BP_fod_ChickenMeatRaw_00_a_ItemProxy_C": {
     "Super": "BP_ProxyIngestible_Retractable_C",
     "FullSize": "0x7b8",
@@ -543,6 +523,52 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_CommodityManifestBook_MerchantAlliance_C": {
+    "Super": "ModalInteractionProxy",
+    "FullSize": "0x4f8",
+    "InheritedSize": "0x4e8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NPCDialog",
+        "Type": "Class NPCDialogComponent*",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      }
+    ]
+  },
+  "BP_IslandStorageBarrel_Outpost_C": {
+    "Super": "StorageContainer",
+    "FullSize": "0x4d8",
+    "InheritedSize": "0x4c0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Replenishable",
+        "Type": "Class ReplenishableComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "IslandTelemetrySubject",
+        "Type": "Class IslandTelemetrySubjectComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "StorageContainer",
+        "Type": "Class StorageContainerComponent*",
+        "Size": "0x8",
+        "Offset": "0x4d0"
+      }
+    ]
+  },
   "BP_underwear_yellow_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xe0",
@@ -619,32 +645,6 @@
     "InheritedSize": "0xe0",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "BP_IslandStorageBarrel_Outpost_C": {
-    "Super": "StorageContainer",
-    "FullSize": "0x4d8",
-    "InheritedSize": "0x4c0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Replenishable",
-        "Type": "Class ReplenishableComponent*",
-        "Size": "0x8",
-        "Offset": "0x4c0"
-      },
-      {
-        "Name": "IslandTelemetrySubject",
-        "Type": "Class IslandTelemetrySubjectComponent*",
-        "Size": "0x8",
-        "Offset": "0x4c8"
-      },
-      {
-        "Name": "StorageContainer",
-        "Type": "Class StorageContainerComponent*",
-        "Size": "0x8",
-        "Offset": "0x4d0"
-      }
-    ]
   },
   "BP_hair_col_red_01_under_Desc_C": {
     "Super": "ClothingDesc",

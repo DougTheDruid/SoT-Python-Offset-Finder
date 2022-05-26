@@ -594,11 +594,11 @@ BP_tavern_WLD_01_b_C:
     Offset: '0x868'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: light_ceiling
+  - Name: Light_ceiling
     Offset: '0x870'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: light_ceiling
+  - Name: Light_ceiling
     Offset: '0x878'
     Size: '0x8'
     Type: Class SpotLightComponent*
@@ -638,7 +638,7 @@ BP_tavern_WLD_01_b_C:
     Offset: '0x8c0'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: light_ceiling
+  - Name: Light_ceiling
     Offset: '0x8c8'
     Size: '0x8'
     Type: Class SpotLightComponent*
@@ -662,7 +662,7 @@ BP_tavern_WLD_01_b_C:
     Offset: '0x8f0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: light_ceiling
+  - Name: Light_ceiling
     Offset: '0x8f8'
     Size: '0x8'
     Type: Class SpotLightComponent*

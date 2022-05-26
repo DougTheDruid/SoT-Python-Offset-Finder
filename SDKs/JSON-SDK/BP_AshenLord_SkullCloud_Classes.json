@@ -1,43 +1,43 @@
 {
   "BP_AshenLord_SkullCloud_C": {
-    "Super": "None",
+    "Super": "BP_NonRotatableSignalCloud_C",
     "FullSize": "0x4f0",
     "InheritedSize": "0x4b8",
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x4b8"
       },
       {
-        "Name": "None",
+        "Name": "lightning_bolt_03_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4c0"
       },
       {
-        "Name": "None",
+        "Name": "lightning_bolt_02_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
       {
-        "Name": "None",
+        "Name": "lightning_bolt_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
       {
-        "Name": "None",
+        "Name": "vfx_tornado_ribbons",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4d8"
       },
       {
-        "Name": "None",
-        "Type": "TArray<class None*>",
+        "Name": "DynamicMaterials",
+        "Type": "TArray<class DynamicMaterials*>",
         "Size": "0x10",
         "Offset": "0x4e0"
       }

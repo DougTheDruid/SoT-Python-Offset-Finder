@@ -1144,32 +1144,36 @@ TaleQuestAddChecklistMapStepDesc:
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
-  - Name: Title
+  - Name: OverrideTreasureMapItemDesc
     Offset: '0x88'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Title
+    Offset: '0x98'
     Size: '0x20'
     Type: Struct QuestVariableText
   - Name: Description
-    Offset: '0xa8'
+    Offset: '0xb8'
     Size: '0x20'
     Type: Struct QuestVariableText
   - Name: ChecklistItemsData
-    Offset: '0xc8'
+    Offset: '0xd8'
     Size: '0x20'
     Type: Struct QuestVariableDataAsset
   - Name: Afternote
-    Offset: '0xe8'
+    Offset: '0xf8'
     Size: '0x20'
     Type: Struct QuestVariableText
   - Name: Layout
-    Offset: '0x108'
+    Offset: '0x118'
     Size: '0x20'
     Type: Struct QuestVariableDataAsset
   - Name: RadialMiniIcon
-    Offset: '0x128'
+    Offset: '0x138'
     Size: '0x1'
     Type: byte
-  ClassSize: '0xb0'
-  FullSize: '0x130'
+  ClassSize: '0xc0'
+  FullSize: '0x140'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAddCircleMapStep:
@@ -1928,6 +1932,18 @@ TaleQuestMerchantContractsServiceDesc:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: TaleQuestServiceDesc
+TaleQuestNPCHideFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x158'
+  InheritedSize: '0x158'
+  Super: TaleQuestFunctionStepLibrary
+TaleQuestNamedPointsFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x158'
+  InheritedSize: '0x158'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestPermanentPromptStep:
   Attributes: []
   ClassSize: '0x0'
@@ -2144,6 +2160,12 @@ TaleQuestToggleInteractionDescriptionServiceDesc:
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: TaleQuestServiceDesc
+TaleQuestTransfromConversionFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x158'
+  InheritedSize: '0x158'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestUObjectFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'

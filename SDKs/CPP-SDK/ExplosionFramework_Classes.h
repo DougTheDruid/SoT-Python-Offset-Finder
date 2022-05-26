@@ -52,4 +52,11 @@ public:
 };
 
 
+// Size 0x0
+class TaleQuestFuseFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
 }

@@ -56,7 +56,7 @@ public:
 
 
 // Size 0x8
-class BP_wpn_cutlass_par_01_a_v03_ItemInfo_C: public ItemInfo
+class BP_wpn_cutlass_par_01_a_ItemInfo_C: public ItemInfo
 {
 public:
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
@@ -64,7 +64,7 @@ public:
 
 
 // Size 0x0
-class BP_wpn_cutlass_par_01_a_v03_Wieldable_C: public BP_Cutlass_Item_C
+class BP_wpn_cutlass_par_01_a_Wieldable_C: public BP_Cutlass_Item_C
 {
 public:
 };

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class tls_wld_harpoon_light_a_C: public StaticMeshActor
+class tls_wld_harpoon_light_b_C: public StaticMeshActor
 {
 public:
 	Class SpotLightComponent*                                    SpotLight;                                         // 0x3e0(0x8)

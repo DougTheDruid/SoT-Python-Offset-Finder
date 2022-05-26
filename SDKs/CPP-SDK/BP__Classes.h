@@ -556,21 +556,28 @@ public:
 
 
 // Size 0x0
-class BP_Campaign005_CursedSails_ClothingCooper_PreCursedSails_C: public BP_Clothing_C
+class BP_Campaign005_CursedSails_ShopkeeperTony_PreCursedSails_C: public BP_Shopkeeper_C
 {
 public:
 };
 
 
 // Size 0x0
-class BP_Campaign005_CursedSails_WeapondealerWillow_PreCursedSails_C: public BP_Weapondealer_C
+class BP_Campaign005_CursedSails_ShipwrightSandra_PreCursedSails_C: public BP_Shipwright_C
 {
 public:
 };
 
 
 // Size 0x0
-class BP_Campaign005_CursedSails_ShopkeeperTrevor_PreCursedSails_C: public BP_Shopkeeper_C
+class BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C: public BP_Clothing_C
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Campaign005_CursedSails_WeapondealerWinnie_PreCursedSails_C: public BP_Weapondealer_C
 {
 public:
 };

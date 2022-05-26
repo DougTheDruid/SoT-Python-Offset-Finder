@@ -1,4 +1,72 @@
 {
+  "cmn_looted__box_bottles_02_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x460",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "StaticMeshComponent08",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "StaticMeshComponent07",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "StaticMeshComponent06",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "StaticMeshComponent05",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "StaticMeshComponent04",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "StaticMeshComponent03",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "StaticMeshComponent02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "StaticMeshComponent01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "StaticMeshComponent0",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "SharedRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x458"
+      }
+    ]
+  },
   "cmn_looted__box_bottles_01_C": {
     "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x4a0",
@@ -112,74 +180,6 @@
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x498"
-      }
-    ]
-  },
-  "cmn_looted__box_bottles_02_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x460",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "StaticMeshComponent08",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "StaticMeshComponent07",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StaticMeshComponent06",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StaticMeshComponent05",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "StaticMeshComponent04",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StaticMeshComponent03",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "StaticMeshComponent02",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "StaticMeshComponent01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
       }
     ]
   },

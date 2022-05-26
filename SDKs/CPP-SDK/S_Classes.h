@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30
-class BP_TaleBook_Shroudbreaker_GalleonsGraveOutpost_AdditionalPuzzle: public VoyageProposalContainer
+class BP_TaleBook_Shroudbreaker_DaggerToothOutpost_AdditionalPuzzles_: public VoyageProposalContainer
 {
 public:
 	Class ChildActorComponent*                                   None;                                              // 0x768(0x8)

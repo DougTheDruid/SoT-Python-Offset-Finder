@@ -42,7 +42,7 @@ public:
 
 
 // Size 0x8
-class BP_wpn_blunderbuss_smp_01_a_ItemInfo_C: public ItemInfo
+class BP_wpn_blunderbuss_yr1_leg_01_a_ItemInfo_C: public ItemInfo
 {
 public:
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
@@ -50,7 +50,7 @@ public:
 
 
 // Size 0x0
-class BP_wpn_blunderbuss_smp_01_a_Wieldable_C: public BP_Blunderbuss_C
+class BP_wpn_blunderbuss_yr1_leg_01_a_Wieldable_C: public BP_Blunderbuss_C
 {
 public:
 };
@@ -79,6 +79,13 @@ public:
 
 // Size 0x0
 class BP_wpn_blunderbuss_shr_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_s06_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

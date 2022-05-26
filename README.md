@@ -1,5 +1,5 @@
 # CURRENT VERSION
-The SDK's provided are currently built for the following version of the game: 2.5.2
+The SDK's provided are currently built for the following version of the game: 2.5.2.1
 
 # SoT-Python-Offset-Finder
 https://github.com/DougTheDruid/SoT-ESP-Framework relies on an "offset.json" file to determine the 
@@ -156,7 +156,7 @@ it as if it was a pointer, similar to that section?
 This is often the first thought when working with structs, but is incorrect. Struct's are a way for us to create custom data-types
 as opposed to relying on floats, ints, pointers, etc. There is no extra layer to a struct, it's simply the way the data is structured
 at that location (`0xE10` in our example). In order to read `MinVelocityForwardDot`, we simply read the float at `actor_address+0xE10+0x4`.
-The first offset brings us to the start of our struct and the addition of the second offset allows us to pull that
+The first offset brings us to the start of our struct and the addition of the second offset allows us to pull thatgit
 value directly.
 
 ### Your Own Offset-Finder

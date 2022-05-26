@@ -6,10 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x7ccccccd
-class ShroudedIslands_BellesBuoy_C: public /Game/PirateLegends/Blueprints/TallTales/Structs/DS_PL_ItemSpaw
+// Size 0x28
+class ShroudedIslands_BellesBuoy_C: public Actor
 {
 public:
+	Class PointLightComponent*                                   None;                                              // 0x3d0(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3e0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3e8(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3f0(0x8)
 };
 
 
@@ -28,8 +33,8 @@ public:
 };
 
 
-// Size 0x0
-class ShroudedIslands_LarinnaDialogTempEntitlement_C: public EntitlementDesc
+// Size 0x3da8d02d
+class ShroudedIslands_LarinnaDialogTempEntitlement_C: public None
 {
 public:
 };
