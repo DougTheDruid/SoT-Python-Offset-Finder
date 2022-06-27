@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class BP_DecalGlow_Longer_C: public LandmarkReactionActor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d8(0x8)
-	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x3e0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
-	TArray<class DecalMaterials*>                                DecalMaterials;                                    // 0x3f0(0x10)
-	float                                                        Reveal Duration;                                   // 0x400(0x4)
-	BlueprintGeneratedClass BP_StepsTrigger_C*                   StepsTriggerActor;                                 // 0x408(0x8)
-	float                                                        StartTime;                                         // 0x410(0x4)
-	bool                                                         CollectedDecals;                                   // 0x414(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d0(0x8)
+	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x3d8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
+	TArray<class DecalMaterials*>                                DecalMaterials;                                    // 0x3e8(0x10)
+	float                                                        Reveal Duration;                                   // 0x3f8(0x4)
+	BlueprintGeneratedClass BP_StepsTrigger_C*                   StepsTriggerActor;                                 // 0x400(0x8)
+	float                                                        StartTime;                                         // 0x408(0x4)
+	bool                                                         CollectedDecals;                                   // 0x40c(0x1)
 };
 
 

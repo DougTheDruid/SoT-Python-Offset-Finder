@@ -9,8 +9,8 @@ CustomizableTimeInterface:
 CustomizableTimeService:
   Attributes: []
   ClassSize: '0x8'
-  FullSize: '0x4f0'
-  InheritedSize: '0x4e8'
+  FullSize: '0x500'
+  InheritedSize: '0x4f8'
   Super: DebugTimeService
 DebugTimeInterface:
   Attributes: []
@@ -21,8 +21,8 @@ DebugTimeInterface:
 DebugTimeService:
   Attributes: []
   ClassSize: '0x8'
-  FullSize: '0x4e8'
-  InheritedSize: '0x4e0'
+  FullSize: '0x4f8'
+  InheritedSize: '0x4f0'
   Super: TimeService
 LocationProviderInterface:
   Attributes: []
@@ -51,58 +51,58 @@ TimeInterface:
 TimeService:
   Attributes:
   - Name: GameWorldTimeOffset
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct Timespan
   - Name: ServiceTimeQueryRapidFrequencyOffsetMax
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: double
   - Name: ServiceTimeQueryRapidFrequencyInSeconds
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: float
   - Name: ServiceTimeQueryFrequencyInSeconds
-    Offset: '0x42c'
+    Offset: '0x424'
     Size: '0x4'
     Type: float
   - Name: ClientTimeUpdateFrequencyInSeconds
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x4'
     Type: float
   - Name: SunriseTimeHours
-    Offset: '0x434'
+    Offset: '0x42c'
     Size: '0x4'
     Type: float
   - Name: SunsetTimeHours
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x4'
     Type: float
   - Name: LocalTimeUpdateAdjustMaxTimeDelta
-    Offset: '0x43c'
+    Offset: '0x434'
     Size: '0x4'
     Type: float
   - Name: MinLocalTimeUpdateAdjustPercentageToSlowDown
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x4'
     Type: float
   - Name: MaxLocalTimeUpdateAdjustPercentageToSlowDown
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x4'
     Type: float
   - Name: MinLocalTimeUpdateAdjustPercentageToSpeedUp
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x4'
     Type: float
   - Name: MaxLocalTimeUpdateAdjustPercentageToSpeedUp
-    Offset: '0x44c'
+    Offset: '0x444'
     Size: '0x4'
     Type: float
   - Name: ReplicatedServerTime
-    Offset: '0x4a0'
+    Offset: '0x498'
     Size: '0x10'
     Type: Struct ReplicatedAuthoritativeTime
-  ClassSize: '0x110'
-  FullSize: '0x4e0'
-  InheritedSize: '0x3d0'
+  ClassSize: '0x128'
+  FullSize: '0x4f0'
+  InheritedSize: '0x3c8'
   Super: Actor

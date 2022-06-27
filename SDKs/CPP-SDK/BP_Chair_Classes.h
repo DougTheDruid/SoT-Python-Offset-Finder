@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Chair_C: public GenericPart
 {
 public:
-	Class StaticMeshComponent*                                   Chair;                                             // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   Chair;                                             // 0x3e8(0x8)
 };
 
 

@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class tls_wld_firestand_light_a_C: public StaticMeshActor
 {
 public:
-	Class PointLightComponent*                                   PointLight;                                        // 0x3e0(0x8)
-	Class ParticleSystemComponent*                               vfx_fire_bin;                                      // 0x3e8(0x8)
+	Class PointLightComponent*                                   PointLight;                                        // 0x3d8(0x8)
+	Class ParticleSystemComponent*                               vfx_fire_bin;                                      // 0x3e0(0x8)
 };
 
 

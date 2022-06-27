@@ -1,10 +1,16 @@
 {
   "BP_ShroudedDeep_MerrickShip_Rocks_C": {
-    "Super": "None",
-    "FullSize": "0x3da8d02d",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x3da8d02d",
+    "Super": "Actor",
+    "FullSize": "0x5a0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x1d8",
     "Attributes": [
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "None",
         "Type": "Class StaticMeshComponent*",
@@ -349,15 +355,9 @@
       },
       {
         "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x598"
-      },
-      {
-        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x5a0"
+        "Offset": "0x598"
       }
     ]
   },

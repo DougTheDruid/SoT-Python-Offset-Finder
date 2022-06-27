@@ -7,6 +7,13 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
+class TrinketLoadoutFinderPolicyBase: public Object
+{
+public:
+};
+
+
+// Size 0x0
 class TrinketCategory: public CategoryBase
 {
 public:
@@ -37,8 +44,22 @@ public:
 };
 
 
+// Size 0x10
+class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
+{
+public:
+};
+
+
 // Size 0x0
 class TrinketLoadoutViewInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10
+class TrinketReplacementActor: public Actor
 {
 public:
 };

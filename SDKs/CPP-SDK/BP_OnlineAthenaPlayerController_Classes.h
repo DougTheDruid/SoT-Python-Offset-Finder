@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_OnlineAthenaPlayerController_C: public OnlineAthenaPlayerController
 {
 public:
-	BlueprintGeneratedClass BP_Component_Tutorial2019_C*         VisitShopkeepersTutorialComponent;                 // 0x1540(0x8)
+	BlueprintGeneratedClass BP_Component_Tutorial2019_C*         VisitShopkeepersTutorialComponent;                 // 0x1588(0x8)
 };
 
 

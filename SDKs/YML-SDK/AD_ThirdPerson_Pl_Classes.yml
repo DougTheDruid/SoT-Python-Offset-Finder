@@ -3,8 +3,8 @@
 AD_ThirdPerson_PlayerPirate_Male_Athletic_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x788'
-  InheritedSize: '0x788'
+  FullSize: '0x780'
+  InheritedSize: '0x780'
   Super: AD_ThirdPerson_PlayerPirate_Male_Default_C
 AD_ThirdPerson_PlayerPirate_Male_Default_C:
   Attributes:
@@ -62,75 +62,75 @@ AD_ThirdPerson_PlayerPirate_Male_Default_C:
     Type: Struct ADS_FacialNative
   - Name: IkFootPlanting
     Offset: '0x560'
-    Size: '0x28'
+    Size: '0x1c'
     Type: Struct ADS_IKFootPlantingNative
   - Name: HitReacts
-    Offset: '0x588'
+    Offset: '0x580'
     Size: '0x40'
     Type: Struct ADS_HitReactsNative
   - Name: MapTable
-    Offset: '0x5c8'
+    Offset: '0x5c0'
     Size: '0x30'
     Type: Struct ADS_MapTableNative
   - Name: Spawning
-    Offset: '0x5f8'
+    Offset: '0x5f0'
     Size: '0x10'
     Type: Struct ADS_SpawnNative2
   - Name: CharacterSelect
-    Offset: '0x608'
+    Offset: '0x600'
     Size: '0x10'
     Type: Struct ADS_CharacterSelectNative
   - Name: SkeletonFlee
-    Offset: '0x618'
+    Offset: '0x610'
     Size: '0x10'
     Type: Struct ADS_SkeletonFleeNative
   - Name: ShopInteraction
-    Offset: '0x628'
+    Offset: '0x620'
     Size: '0x10'
     Type: Struct ADS_InteractionNative
   - Name: SkeletonSensing
-    Offset: '0x638'
+    Offset: '0x630'
     Size: '0x10'
     Type: Struct ADS_SkeletonSensing
   - Name: SkeletonActionEmotes
-    Offset: '0x648'
+    Offset: '0x640'
     Size: '0x10'
     Type: Struct ADS_SkeletonEmoteActions
   - Name: Rowboat
-    Offset: '0x658'
+    Offset: '0x650'
     Size: '0x98'
     Type: Struct ADS_RowingBoatNative
   - Name: SkeletonShipCaptain
-    Offset: '0x6f0'
+    Offset: '0x6e8'
     Size: '0x48'
     Type: Struct ADS_SkeletonCaptainNative
   - Name: SkeletonCurse
-    Offset: '0x738'
+    Offset: '0x730'
     Size: '0x28'
     Type: Struct ADS_SkeletonCurseNative
   - Name: WaterPump
-    Offset: '0x760'
+    Offset: '0x758'
     Size: '0x28'
     Type: Struct ADS_WaterPumpNative
-  ClassSize: '0x708'
-  FullSize: '0x788'
+  ClassSize: '0x700'
+  FullSize: '0x780'
   InheritedSize: '0x80'
   Super: AthenaAnimationThirdPersonAnimationData
 AD_ThirdPerson_PlayerPirate_Male_Large_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x788'
-  InheritedSize: '0x788'
+  FullSize: '0x780'
+  InheritedSize: '0x780'
   Super: AD_ThirdPerson_PlayerPirate_Male_Default_C
 AD_ThirdPerson_PlayerPirate_Male_Thin_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x788'
-  InheritedSize: '0x788'
+  FullSize: '0x780'
+  InheritedSize: '0x780'
   Super: AD_ThirdPerson_PlayerPirate_Male_Default_C
 AD_ThirdPerson_PlayerPirate_Male_Unfit_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x788'
-  InheritedSize: '0x788'
+  FullSize: '0x780'
+  InheritedSize: '0x780'
   Super: AD_ThirdPerson_PlayerPirate_Male_Default_C

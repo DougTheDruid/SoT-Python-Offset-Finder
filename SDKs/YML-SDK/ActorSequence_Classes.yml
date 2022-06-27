@@ -39,6 +39,6 @@ ActorSequenceComponent:
 ActorSequencePlayer:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x600'
-  InheritedSize: '0x600'
+  FullSize: '0x608'
+  InheritedSize: '0x608'
   Super: MovieSceneSequencePlayer

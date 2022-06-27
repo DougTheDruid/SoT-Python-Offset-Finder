@@ -48,12 +48,12 @@ public:
 class GameplayDebuggingHUDComponent: public Actor
 {
 public:
-	float                                                        MenuStartX;                                        // 0x3d0(0x4)
-	float                                                        MenuStartY;                                        // 0x3d4(0x4)
-	float                                                        DebugInfoStartX;                                   // 0x3d8(0x4)
-	float                                                        DebugInfoStartY;                                   // 0x3dc(0x4)
-	Class Canvas*                                                Canvas;                                            // 0x3e0(0x8)
-	Class PlayerController*                                      PlayerOwner;                                       // 0x3e8(0x8)
+	float                                                        MenuStartX;                                        // 0x3c8(0x4)
+	float                                                        MenuStartY;                                        // 0x3cc(0x4)
+	float                                                        DebugInfoStartX;                                   // 0x3d0(0x4)
+	float                                                        DebugInfoStartY;                                   // 0x3d4(0x4)
+	Class Canvas*                                                Canvas;                                            // 0x3d8(0x8)
+	Class PlayerController*                                      PlayerOwner;                                       // 0x3e0(0x8)
 };
 
 
@@ -114,27 +114,27 @@ public:
 class GameplayDebuggingReplicator: public Actor
 {
 public:
-	Struct FString                                               DebugComponentClassName;                           // 0x3d0(0x10)
-	Struct FString                                               DebugComponentHUDClassName;                        // 0x3e0(0x10)
-	Struct FString                                               DebugComponentControllerClassName;                 // 0x3f0(0x10)
-	int                                                          MaxEQSQueries;                                     // 0x400(0x4)
-	Class GameplayDebuggingComponent*                            DebugComponent;                                    // 0x408(0x8)
-	Class PlayerController*                                      LocalPlayerOwner;                                  // 0x410(0x8)
-	Class Actor*                                                 LastSelectedActorToDebug;                          // 0x418(0x8)
-	bool                                                         bIsGlobalInWorld;                                  // 0x420(0x1)
-	bool                                                         bAutoActivate;                                     // 0x421(0x1)
-	bool                                                         OverHead;                                          // 0x422(0x1)
-	bool                                                         Basic;                                             // 0x423(0x1)
-	bool                                                         BehaviorTree;                                      // 0x424(0x1)
-	bool                                                         EQS;                                               // 0x425(0x1)
-	bool                                                         EnableEQSOnHUD;                                    // 0x426(0x1)
-	int                                                          ActiveEQSIndex;                                    // 0x428(0x4)
-	bool                                                         Perception;                                        // 0x42c(0x1)
-	bool                                                         GameView1;                                         // 0x42d(0x1)
-	bool                                                         GameView2;                                         // 0x42e(0x1)
-	bool                                                         GameView3;                                         // 0x42f(0x1)
-	bool                                                         GameView4;                                         // 0x430(0x1)
-	bool                                                         GameView5;                                         // 0x431(0x1)
+	Struct FString                                               DebugComponentClassName;                           // 0x3c8(0x10)
+	Struct FString                                               DebugComponentHUDClassName;                        // 0x3d8(0x10)
+	Struct FString                                               DebugComponentControllerClassName;                 // 0x3e8(0x10)
+	int                                                          MaxEQSQueries;                                     // 0x3f8(0x4)
+	Class GameplayDebuggingComponent*                            DebugComponent;                                    // 0x400(0x8)
+	Class PlayerController*                                      LocalPlayerOwner;                                  // 0x408(0x8)
+	Class Actor*                                                 LastSelectedActorToDebug;                          // 0x410(0x8)
+	bool                                                         bIsGlobalInWorld;                                  // 0x418(0x1)
+	bool                                                         bAutoActivate;                                     // 0x419(0x1)
+	bool                                                         OverHead;                                          // 0x41a(0x1)
+	bool                                                         Basic;                                             // 0x41b(0x1)
+	bool                                                         BehaviorTree;                                      // 0x41c(0x1)
+	bool                                                         EQS;                                               // 0x41d(0x1)
+	bool                                                         EnableEQSOnHUD;                                    // 0x41e(0x1)
+	int                                                          ActiveEQSIndex;                                    // 0x420(0x4)
+	bool                                                         Perception;                                        // 0x424(0x1)
+	bool                                                         GameView1;                                         // 0x425(0x1)
+	bool                                                         GameView2;                                         // 0x426(0x1)
+	bool                                                         GameView3;                                         // 0x427(0x1)
+	bool                                                         GameView4;                                         // 0x428(0x1)
+	bool                                                         GameView5;                                         // 0x429(0x1)
 };
 
 

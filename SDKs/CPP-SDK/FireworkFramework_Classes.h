@@ -55,11 +55,11 @@ public:
 class FireworkExplosion: public Actor
 {
 public:
-	Struct GeneratedFireworkData                                 GeneratedFireworkData;                             // 0x3d8(0x58)
-	Class SceneComponent*                                        RootSceneComponent;                                // 0x430(0x8)
-	Class FireworkAmbientLightComponent*                         FireworkAmbientLightComponent;                     // 0x438(0x8)
-	Class ParticleSystemComponent*                               SpawnedExplosionParticles;                         // 0x440(0x8)
-	Struct WwiseEmitter                                          AudioEmitter;                                      // 0x448(0x20)
+	Struct GeneratedFireworkData                                 GeneratedFireworkData;                             // 0x3d0(0x58)
+	Class SceneComponent*                                        RootSceneComponent;                                // 0x428(0x8)
+	Class FireworkAmbientLightComponent*                         FireworkAmbientLightComponent;                     // 0x430(0x8)
+	Class ParticleSystemComponent*                               SpawnedExplosionParticles;                         // 0x438(0x8)
+	Struct WwiseEmitter                                          AudioEmitter;                                      // 0x440(0x20)
 };
 
 
@@ -67,9 +67,9 @@ public:
 class FireworkItemInfo: public ItemInfo
 {
 public:
-	Class LoadableFireworkComponent*                             LoadableProjectileComponent;                       // 0x500(0x8)
-	Struct StringAssetReference                                  FireworkDataAsset;                                 // 0x508(0x10)
-	int                                                          GeneratedDataRNGSeed;                              // 0x518(0x4)
+	Class LoadableFireworkComponent*                             LoadableProjectileComponent;                       // 0x4f8(0x8)
+	Struct StringAssetReference                                  FireworkDataAsset;                                 // 0x500(0x10)
+	int                                                          GeneratedDataRNGSeed;                              // 0x510(0x4)
 };
 
 
@@ -84,13 +84,13 @@ public:
 class FireworkProjectile: public LaunchableProjectile
 {
 public:
-	Class SphereComponent*                                       CollisionComponent;                                // 0x618(0x8)
-	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x620(0x8)
-	Class ExplosionComponent*                                    ExplosionComponent;                                // 0x628(0x8)
-	Class FireworkStatsComponent*                                FireworkStatsComponent;                            // 0x630(0x8)
-	Class SceneComponent*                                        MeshDirectionComponent;                            // 0x638(0x8)
-	Class ProjectileAnimationComponent*                          AnimationComponent;                                // 0x640(0x8)
-	Struct GeneratedFireworkData                                 GeneratedFireworkData;                             // 0x648(0x58)
+	Class SphereComponent*                                       CollisionComponent;                                // 0x610(0x8)
+	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x618(0x8)
+	Class ExplosionComponent*                                    ExplosionComponent;                                // 0x620(0x8)
+	Class FireworkStatsComponent*                                FireworkStatsComponent;                            // 0x628(0x8)
+	Class SceneComponent*                                        MeshDirectionComponent;                            // 0x630(0x8)
+	Class ProjectileAnimationComponent*                          AnimationComponent;                                // 0x638(0x8)
+	Struct GeneratedFireworkData                                 GeneratedFireworkData;                             // 0x640(0x58)
 };
 
 
@@ -98,7 +98,7 @@ public:
 class FireworkService: public Actor
 {
 public:
-	int                                                          NumberOfCachedFlares;                              // 0x448(0x4)
+	int                                                          NumberOfCachedFlares;                              // 0x440(0x4)
 };
 
 

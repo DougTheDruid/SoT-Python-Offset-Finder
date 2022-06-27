@@ -465,9 +465,9 @@ public:
 class BP_fod_KrakenMeatRaw_00_a_ItemInfo_C: public BP_MeatItemInfo_C
 {
 public:
-	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x568(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x570(0x8)
-	Class CookableComponent*                                     Cookable;                                          // 0x578(0x8)
+	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x560(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x568(0x8)
+	Class CookableComponent*                                     Cookable;                                          // 0x570(0x8)
 };
 
 
@@ -489,9 +489,9 @@ public:
 class BP_fod_KrakenMeatRawBite1_00_a_ItemInfo_C: public BP_MeatItemInfo_C
 {
 public:
-	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x568(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x570(0x8)
-	Class CookableComponent*                                     Cookable;                                          // 0x578(0x8)
+	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x560(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x568(0x8)
+	Class CookableComponent*                                     Cookable;                                          // 0x570(0x8)
 };
 
 
@@ -499,11 +499,11 @@ public:
 class BP_PromptActor_EmissarySunk_AF_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 };
 
 
@@ -511,11 +511,11 @@ public:
 class BP_PromptActor_EmissarySunk_GH_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 };
 
 
@@ -523,11 +523,11 @@ public:
 class BP_PromptActor_EmissarySunk_MA_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 };
 
 
@@ -535,11 +535,11 @@ public:
 class BP_PromptActor_EmissarySunk_OOS_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 };
 
 
@@ -547,44 +547,16 @@ public:
 class BP_PromptActor_EmissarySunk_RB_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
-};
-
-
-// Size 0x0
-class BP_Campaign005_CursedSails_ShopkeeperTony_PreCursedSails_C: public BP_Shopkeeper_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_Campaign005_CursedSails_ShipwrightSandra_PreCursedSails_C: public BP_Shipwright_C
-{
-public:
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissarySunk_C*            PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
 };
 
 
 // Size 0x0
 class BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C: public BP_Clothing_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_Campaign005_CursedSails_WeapondealerWinnie_PreCursedSails_C: public BP_Weapondealer_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_MerchantCrate_AnyItemCrate_ItemDesc_C: public ItemWithoutIconsDesc
 {
 public:
 };

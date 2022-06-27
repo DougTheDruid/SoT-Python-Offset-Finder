@@ -35,7 +35,7 @@ public:
 };
 
 
-// Size 0x3a8
+// Size 0x3a0
 class Actor: public Object
 {
 public:
@@ -61,47 +61,47 @@ public:
 	bool                                                         bReplicates;                                       // 0x7e(0x1)
 	byte                                                         RemoteRole;                                        // 0x82(0x1)
 	Class Actor*                                                 Owner;                                             // 0x88(0x8)
-	byte                                                         SpawnRestrictions;                                 // 0x90(0x1)
-	Struct RepMovement                                           ReplicatedMovement;                                // 0x94(0x38)
-	Struct RepAttachment                                         AttachmentReplication;                             // 0xd0(0x48)
-	byte                                                         Role;                                              // 0x118(0x1)
-	byte                                                         AutoReceiveInput;                                  // 0x11a(0x1)
-	int                                                          InputPriority;                                     // 0x11c(0x4)
-	Class InputComponent*                                        InputComponent;                                    // 0x120(0x8)
-	float                                                        NetCullDistanceSquared;                            // 0x128(0x4)
-	int                                                          NetTag;                                            // 0x130(0x4)
-	float                                                        NetUpdateTime;                                     // 0x134(0x4)
-	float                                                        NetUpdateFrequency;                                // 0x138(0x4)
-	float                                                        NetPriority;                                       // 0x13c(0x4)
-	float                                                        LastNetUpdateTime;                                 // 0x140(0x4)
-	struct FName                                                 NetDriverName;                                     // 0x144(0x8)
-	bool                                                         bAutoDestroyWhenFinished;                          // 0x14c(0x1)
-	bool                                                         bCanBeDamaged;                                     // 0x14c(0x1)
-	bool                                                         bActorIsBeingDestroyed;                            // 0x14c(0x1)
-	bool                                                         bCollideWhenPlacing;                               // 0x14c(0x1)
-	bool                                                         bFindCameraComponentWhenViewTarget;                // 0x14c(0x1)
-	bool                                                         bRelevantForNetworkReplays;                        // 0x14c(0x1)
-	byte                                                         SpawnCollisionHandlingMethod;                      // 0x150(0x1)
-	Class Pawn*                                                  Instigator;                                        // 0x158(0x8)
-	TArray<class Actor*>                                         Children;                                          // 0x160(0x10)
-	Class SceneComponent*                                        RootComponent;                                     // 0x170(0x8)
-	TArray<class ControllingMatineeActors*>                      ControllingMatineeActors;                          // 0x178(0x10)
-	float                                                        InitialLifeSpan;                                   // 0x188(0x4)
-	bool                                                         bAllowReceiveTickEventOnDedicatedServer;           // 0x190(0x1)
-	TArray<Struct FName>                                         Layers;                                            // 0x198(0x10)
-	Struct ActorPtr                                              ParentComponentActor;                              // 0x1a8(0x8)
-	TArray<Weakclass ChildComponentActors>                       ChildComponentActors;                              // 0x1b0(0x10)
-	bool                                                         bActorSeamlessTraveled;                            // 0x1c8(0x1)
-	bool                                                         bIgnoresOriginShifting;                            // 0x1c8(0x1)
-	bool                                                         bEnableAutoLODGeneration;                          // 0x1c8(0x1)
-	bool                                                         InvertFeatureCheck;                                // 0x1c8(0x1)
-	struct FName                                                 Feature;                                           // 0x1cc(0x8)
-	TArray<Struct FName>                                         Tags;                                              // 0x1d8(0x10)
-	bool                                                         bDoOverlapNotifiesOnLoad;                          // 0x231(0x1)
-	TArray<class BlueprintCreatedComponents*>                    BlueprintCreatedComponents;                        // 0x328(0x10)
-	TArray<class InstanceComponents*>                            InstanceComponents;                                // 0x338(0x10)
-	TArray<class ChildActorInterfaceProviders*>                  ChildActorInterfaceProviders;                      // 0x350(0x10)
-	double                                                       DormancyLingeringInSeconds;                        // 0x3c8(0x8)
+	Struct RepMovement                                           ReplicatedMovement;                                // 0x90(0x38)
+	Struct RepAttachment                                         AttachmentReplication;                             // 0xc8(0x48)
+	byte                                                         Role;                                              // 0x110(0x1)
+	byte                                                         SpawnRestrictions;                                 // 0x112(0x1)
+	byte                                                         AutoReceiveInput;                                  // 0x113(0x1)
+	int                                                          InputPriority;                                     // 0x114(0x4)
+	Class InputComponent*                                        InputComponent;                                    // 0x118(0x8)
+	float                                                        NetCullDistanceSquared;                            // 0x120(0x4)
+	int                                                          NetTag;                                            // 0x128(0x4)
+	float                                                        NetUpdateTime;                                     // 0x12c(0x4)
+	float                                                        NetUpdateFrequency;                                // 0x130(0x4)
+	float                                                        NetPriority;                                       // 0x134(0x4)
+	float                                                        LastNetUpdateTime;                                 // 0x138(0x4)
+	struct FName                                                 NetDriverName;                                     // 0x13c(0x8)
+	bool                                                         bAutoDestroyWhenFinished;                          // 0x144(0x1)
+	bool                                                         bCanBeDamaged;                                     // 0x144(0x1)
+	bool                                                         bActorIsBeingDestroyed;                            // 0x144(0x1)
+	bool                                                         bCollideWhenPlacing;                               // 0x144(0x1)
+	bool                                                         bFindCameraComponentWhenViewTarget;                // 0x144(0x1)
+	bool                                                         bRelevantForNetworkReplays;                        // 0x144(0x1)
+	byte                                                         SpawnCollisionHandlingMethod;                      // 0x148(0x1)
+	Class Pawn*                                                  Instigator;                                        // 0x150(0x8)
+	TArray<class Actor*>                                         Children;                                          // 0x158(0x10)
+	Class SceneComponent*                                        RootComponent;                                     // 0x168(0x8)
+	TArray<class ControllingMatineeActors*>                      ControllingMatineeActors;                          // 0x170(0x10)
+	float                                                        InitialLifeSpan;                                   // 0x180(0x4)
+	bool                                                         bAllowReceiveTickEventOnDedicatedServer;           // 0x188(0x1)
+	TArray<Struct FName>                                         Layers;                                            // 0x190(0x10)
+	Struct ActorPtr                                              ParentComponentActor;                              // 0x1a0(0x8)
+	TArray<Weakclass ChildComponentActors>                       ChildComponentActors;                              // 0x1a8(0x10)
+	bool                                                         bActorSeamlessTraveled;                            // 0x1c0(0x1)
+	bool                                                         bIgnoresOriginShifting;                            // 0x1c0(0x1)
+	bool                                                         bEnableAutoLODGeneration;                          // 0x1c0(0x1)
+	bool                                                         InvertFeatureCheck;                                // 0x1c0(0x1)
+	struct FName                                                 Feature;                                           // 0x1c4(0x8)
+	TArray<Struct FName>                                         Tags;                                              // 0x1d0(0x10)
+	bool                                                         bDoOverlapNotifiesOnLoad;                          // 0x229(0x1)
+	TArray<class BlueprintCreatedComponents*>                    BlueprintCreatedComponents;                        // 0x320(0x10)
+	TArray<class InstanceComponents*>                            InstanceComponents;                                // 0x330(0x10)
+	TArray<class ChildActorInterfaceProviders*>                  ChildActorInterfaceProviders;                      // 0x348(0x10)
+	double                                                       DormancyLingeringInSeconds;                        // 0x3c0(0x8)
 };
 
 
@@ -109,6 +109,21 @@ public:
 class BlueprintFunctionLibrary: public Object
 {
 public:
+};
+
+
+// Size 0x20
+class CameraModifier: public Object
+{
+public:
+	bool                                                         bDebug;                                            // 0x28(0x1)
+	bool                                                         bExclusive;                                        // 0x28(0x1)
+	byte                                                         Priority;                                          // 0x2c(0x1)
+	Class PlayerCameraManager*                                   CameraOwner;                                       // 0x30(0x8)
+	float                                                        AlphaInTime;                                       // 0x38(0x4)
+	float                                                        AlphaOutTime;                                      // 0x3c(0x4)
+	float                                                        Alpha;                                             // 0x40(0x4)
+	bool                                                         bAutoDestroyOnCompletion;                          // 0x44(0x1)
 };
 
 
@@ -148,33 +163,33 @@ public:
 class Pawn: public Actor
 {
 public:
-	bool                                                         bUseControllerRotationPitch;                       // 0x3d8(0x1)
-	bool                                                         bUseControllerRotationYaw;                         // 0x3d8(0x1)
-	bool                                                         bUseControllerRotationRoll;                        // 0x3d8(0x1)
-	bool                                                         bCanAffectNavigationGeneration;                    // 0x3d8(0x1)
-	float                                                        BaseEyeHeight;                                     // 0x3dc(0x4)
-	byte                                                         AutoPossessPlayer;                                 // 0x3e0(0x1)
-	byte                                                         AutoPossessAI;                                     // 0x3e1(0x1)
-	class                                                        AIControllerClass;                                 // 0x3e8(0x8)
-	Class PlayerState*                                           PlayerState;                                       // 0x3f0(0x8)
-	byte                                                         RemoteViewPitch;                                   // 0x3f8(0x1)
-	Class Controller*                                            LastHitBy;                                         // 0x400(0x8)
-	Class Controller*                                            Controller;                                        // 0x408(0x8)
-	Struct Vector                                                ControlInputVector;                                // 0x428(0xc)
-	Struct Vector                                                LastControlInputVector;                            // 0x434(0xc)
+	bool                                                         bUseControllerRotationPitch;                       // 0x3d0(0x1)
+	bool                                                         bUseControllerRotationYaw;                         // 0x3d0(0x1)
+	bool                                                         bUseControllerRotationRoll;                        // 0x3d0(0x1)
+	bool                                                         bCanAffectNavigationGeneration;                    // 0x3d0(0x1)
+	float                                                        BaseEyeHeight;                                     // 0x3d4(0x4)
+	byte                                                         AutoPossessPlayer;                                 // 0x3d8(0x1)
+	byte                                                         AutoPossessAI;                                     // 0x3d9(0x1)
+	class                                                        AIControllerClass;                                 // 0x3e0(0x8)
+	Class PlayerState*                                           PlayerState;                                       // 0x3e8(0x8)
+	byte                                                         RemoteViewPitch;                                   // 0x3f0(0x1)
+	Class Controller*                                            LastHitBy;                                         // 0x3f8(0x8)
+	Class Controller*                                            Controller;                                        // 0x400(0x8)
+	Struct Vector                                                ControlInputVector;                                // 0x420(0xc)
+	Struct Vector                                                LastControlInputVector;                            // 0x42c(0xc)
 };
 
 
-// Size 0x198
+// Size 0x1a0
 class Character: public Pawn
 {
 public:
-	Class SkeletalMeshComponent*                                 Mesh;                                              // 0x448(0x8)
-	Class CharacterMovementComponent*                            CharacterMovement;                                 // 0x450(0x8)
-	Class CapsuleComponent*                                      CapsuleComponent;                                  // 0x458(0x8)
-	Struct BasedMovementInfo                                     BasedMovement;                                     // 0x460(0x38)
-	Struct BasedMovementInfo                                     ReplicatedBasedMovement;                           // 0x498(0x38)
-	Struct Vector                                                BaseTranslationOffset;                             // 0x4d0(0xc)
+	Class SkeletalMeshComponent*                                 Mesh;                                              // 0x440(0x8)
+	Class CharacterMovementComponent*                            CharacterMovement;                                 // 0x448(0x8)
+	Class CapsuleComponent*                                      CapsuleComponent;                                  // 0x450(0x8)
+	Struct BasedMovementInfo                                     BasedMovement;                                     // 0x458(0x38)
+	Struct BasedMovementInfo                                     ReplicatedBasedMovement;                           // 0x490(0x38)
+	Struct Vector                                                BaseTranslationOffset;                             // 0x4c8(0xc)
 	Struct Quat                                                  BaseRotationOffset;                                // 0x4e0(0x10)
 	byte                                                         ReplicatedMovementMode;                            // 0x4f0(0x1)
 	bool                                                         bInBaseReplication;                                // 0x4f1(0x1)
@@ -693,32 +708,32 @@ public:
 class GameMode: public Info
 {
 public:
-	bool                                                         bDisableAsyncOcclusionChecking;                    // 0x3d8(0x1)
-	bool                                                         bUseSeamlessTravel;                                // 0x3d8(0x1)
-	bool                                                         bPauseable;                                        // 0x3d8(0x1)
-	bool                                                         bStartPlayersAsSpectators;                         // 0x3d8(0x1)
-	bool                                                         bDelayedStart;                                     // 0x3d8(0x1)
-	Struct FString                                               OptionsString;                                     // 0x3e0(0x10)
-	class                                                        DefaultPawnClass;                                  // 0x3f0(0x8)
-	class                                                        HUDClass;                                          // 0x3f8(0x8)
-	int                                                          NumSpectators;                                     // 0x400(0x4)
-	int                                                          NumPlayers;                                        // 0x404(0x4)
-	int                                                          NumBots;                                           // 0x408(0x4)
-	float                                                        MinRespawnDelay;                                   // 0x40c(0x4)
-	Class GameSession*                                           GameSession;                                       // 0x410(0x8)
-	int                                                          NumTravellingPlayers;                              // 0x418(0x4)
-	Struct FText                                                 DefaultPlayerName;                                 // 0x420(0x38)
-	class                                                        EngineMessageClass;                                // 0x458(0x8)
-	class                                                        PlayerControllerClass;                             // 0x460(0x8)
-	class                                                        SpectatorClass;                                    // 0x468(0x8)
-	class                                                        ReplaySpectatorPlayerControllerClass;              // 0x470(0x8)
-	class                                                        PlayerStateClass;                                  // 0x478(0x8)
-	class                                                        GameStateClass;                                    // 0x480(0x8)
-	Class GameState*                                             GameState;                                         // 0x488(0x8)
-	TArray<class InactivePlayerArray*>                           InactivePlayerArray;                               // 0x490(0x10)
-	TArray<Struct GameClassShortName>                            GameModeClassAliases;                              // 0x4b0(0x10)
-	float                                                        InactivePlayerStateLifeSpan;                       // 0x4c0(0x4)
-	bool                                                         bHandleDedicatedServerReplays;                     // 0x4c4(0x1)
+	bool                                                         bDisableAsyncOcclusionChecking;                    // 0x3d0(0x1)
+	bool                                                         bUseSeamlessTravel;                                // 0x3d0(0x1)
+	bool                                                         bPauseable;                                        // 0x3d0(0x1)
+	bool                                                         bStartPlayersAsSpectators;                         // 0x3d0(0x1)
+	bool                                                         bDelayedStart;                                     // 0x3d0(0x1)
+	Struct FString                                               OptionsString;                                     // 0x3d8(0x10)
+	class                                                        DefaultPawnClass;                                  // 0x3e8(0x8)
+	class                                                        HUDClass;                                          // 0x3f0(0x8)
+	int                                                          NumSpectators;                                     // 0x3f8(0x4)
+	int                                                          NumPlayers;                                        // 0x3fc(0x4)
+	int                                                          NumBots;                                           // 0x400(0x4)
+	float                                                        MinRespawnDelay;                                   // 0x404(0x4)
+	Class GameSession*                                           GameSession;                                       // 0x408(0x8)
+	int                                                          NumTravellingPlayers;                              // 0x410(0x4)
+	Struct FText                                                 DefaultPlayerName;                                 // 0x418(0x38)
+	class                                                        EngineMessageClass;                                // 0x450(0x8)
+	class                                                        PlayerControllerClass;                             // 0x458(0x8)
+	class                                                        SpectatorClass;                                    // 0x460(0x8)
+	class                                                        ReplaySpectatorPlayerControllerClass;              // 0x468(0x8)
+	class                                                        PlayerStateClass;                                  // 0x470(0x8)
+	class                                                        GameStateClass;                                    // 0x478(0x8)
+	Class GameState*                                             GameState;                                         // 0x480(0x8)
+	TArray<class InactivePlayerArray*>                           InactivePlayerArray;                               // 0x488(0x10)
+	TArray<Struct GameClassShortName>                            GameModeClassAliases;                              // 0x4a8(0x10)
+	float                                                        InactivePlayerStateLifeSpan;                       // 0x4b8(0x4)
+	bool                                                         bHandleDedicatedServerReplays;                     // 0x4bc(0x1)
 };
 
 
@@ -822,16 +837,16 @@ public:
 class GameState: public Info
 {
 public:
-	class                                                        GameModeClass;                                     // 0x3d0(0x8)
-	Class GameMode*                                              AuthorityGameMode;                                 // 0x3d8(0x8)
-	class                                                        SpectatorClass;                                    // 0x3e0(0x8)
-	struct FName                                                 MatchState;                                        // 0x3e8(0x8)
-	struct FName                                                 PreviousMatchState;                                // 0x3f0(0x8)
-	int                                                          ElapsedTime;                                       // 0x3f8(0x4)
-	TArray<class PlayerArray*>                                   PlayerArray;                                       // 0x400(0x10)
-	float                                                        ReplicatedWorldTimeSeconds;                        // 0x410(0x4)
-	float                                                        ServerWorldTimeSecondsDelta;                       // 0x414(0x4)
-	float                                                        ServerWorldTimeSecondsUpdateFrequency;             // 0x418(0x4)
+	class                                                        GameModeClass;                                     // 0x3c8(0x8)
+	Class GameMode*                                              AuthorityGameMode;                                 // 0x3d0(0x8)
+	class                                                        SpectatorClass;                                    // 0x3d8(0x8)
+	struct FName                                                 MatchState;                                        // 0x3e0(0x8)
+	struct FName                                                 PreviousMatchState;                                // 0x3e8(0x8)
+	int                                                          ElapsedTime;                                       // 0x3f0(0x4)
+	TArray<class PlayerArray*>                                   PlayerArray;                                       // 0x3f8(0x10)
+	float                                                        ReplicatedWorldTimeSeconds;                        // 0x408(0x4)
+	float                                                        ServerWorldTimeSecondsDelta;                       // 0x40c(0x4)
+	float                                                        ServerWorldTimeSecondsUpdateFrequency;             // 0x410(0x4)
 };
 
 
@@ -871,18 +886,18 @@ public:
 class PlayerState: public Info
 {
 public:
-	float                                                        Score;                                             // 0x3d0(0x4)
-	byte                                                         Ping;                                              // 0x3d4(0x1)
-	Struct FString                                               PlayerName;                                        // 0x3d8(0x10)
-	int                                                          PlayerId;                                          // 0x3f8(0x4)
-	bool                                                         bIsSpectator;                                      // 0x3fc(0x1)
-	bool                                                         bOnlySpectator;                                    // 0x3fc(0x1)
-	bool                                                         bIsABot;                                           // 0x3fc(0x1)
-	bool                                                         bIsInactive;                                       // 0x3fc(0x1)
-	bool                                                         bFromPreviousLevel;                                // 0x3fc(0x1)
-	int                                                          StartTime;                                         // 0x400(0x4)
-	class                                                        EngineMessageClass;                                // 0x408(0x8)
-	Struct UniqueNetIdRepl                                       UniqueId;                                          // 0x428(0x18)
+	float                                                        Score;                                             // 0x3c8(0x4)
+	byte                                                         Ping;                                              // 0x3cc(0x1)
+	Struct FString                                               PlayerName;                                        // 0x3d0(0x10)
+	int                                                          PlayerId;                                          // 0x3f0(0x4)
+	bool                                                         bIsSpectator;                                      // 0x3f4(0x1)
+	bool                                                         bOnlySpectator;                                    // 0x3f4(0x1)
+	bool                                                         bIsABot;                                           // 0x3f4(0x1)
+	bool                                                         bIsInactive;                                       // 0x3f4(0x1)
+	bool                                                         bFromPreviousLevel;                                // 0x3f4(0x1)
+	int                                                          StartTime;                                         // 0x3f8(0x4)
+	class                                                        EngineMessageClass;                                // 0x400(0x8)
+	Struct UniqueNetIdRepl                                       UniqueId;                                          // 0x420(0x18)
 };
 
 
@@ -890,63 +905,63 @@ public:
 class Controller: public Actor
 {
 public:
-	Class Pawn*                                                  Pawn;                                              // 0x3d8(0x8)
-	Class Character*                                             Character;                                         // 0x3e8(0x8)
-	Class PlayerState*                                           PlayerState;                                       // 0x3f0(0x8)
-	Class SceneComponent*                                        TransformComponent;                                // 0x3f8(0x8)
-	Struct Rotator                                               ControlRotation;                                   // 0x400(0xc)
-	bool                                                         bAttachToPawn;                                     // 0x40c(0x1)
-	struct FName                                                 StateName;                                         // 0x418(0x8)
+	Class Pawn*                                                  Pawn;                                              // 0x3d0(0x8)
+	Class Character*                                             Character;                                         // 0x3e0(0x8)
+	Class PlayerState*                                           PlayerState;                                       // 0x3e8(0x8)
+	Class SceneComponent*                                        TransformComponent;                                // 0x3f0(0x8)
+	Struct Rotator                                               ControlRotation;                                   // 0x3f8(0xc)
+	bool                                                         bAttachToPawn;                                     // 0x404(0x1)
+	struct FName                                                 StateName;                                         // 0x410(0x8)
 };
 
 
-// Size 0x2f8
+// Size 0x348
 class PlayerController: public Controller
 {
 public:
-	Class Player*                                                Player;                                            // 0x430(0x8)
-	Class Pawn*                                                  AcknowledgedPawn;                                  // 0x440(0x8)
-	Class InterpTrackInstDirector*                               ControllingDirTrackInst;                           // 0x448(0x8)
-	Class HUD*                                                   MyHUD;                                             // 0x458(0x8)
-	Class PlayerCameraManager*                                   PlayerCameraManager;                               // 0x460(0x8)
-	class                                                        PlayerCameraManagerClass;                          // 0x468(0x8)
-	bool                                                         bAutoManageActiveCameraTarget;                     // 0x470(0x1)
-	Struct Rotator                                               TargetViewRotation;                                // 0x474(0xc)
-	TArray<class HiddenActors*>                                  HiddenActors;                                      // 0x490(0x10)
-	float                                                        LastSpectatorStateSynchTime;                       // 0x4a0(0x4)
-	Struct Vector                                                LastSpectatorSyncLocation;                         // 0x4a4(0xc)
-	Struct Rotator                                               LastSpectatorSyncRotation;                         // 0x4b0(0xc)
-	int                                                          ClientCap;                                         // 0x4bc(0x4)
-	Class CheatManager*                                          CheatManager;                                      // 0x4c0(0x8)
-	class                                                        CheatClass;                                        // 0x4c8(0x8)
-	Class PlayerInput*                                           PlayerInput;                                       // 0x4d0(0x8)
-	TArray<Struct ActiveForceFeedbackEffect>                     ActiveForceFeedbackEffects;                        // 0x4d8(0x10)
-	bool                                                         bPlayerIsWaiting;                                  // 0x578(0x1)
-	byte                                                         NetPlayerIndex;                                    // 0x57c(0x1)
-	bool                                                         bHasVoiceHandshakeCompleted;                       // 0x57d(0x1)
-	Class NetConnection*                                         PendingSwapConnection;                             // 0x580(0x8)
-	Class NetConnection*                                         NetConnection;                                     // 0x588(0x8)
-	float                                                        InputYawScale;                                     // 0x59c(0x4)
-	float                                                        InputPitchScale;                                   // 0x5a0(0x4)
-	float                                                        InputRollScale;                                    // 0x5a4(0x4)
-	bool                                                         bShowMouseCursor;                                  // 0x5a8(0x1)
-	bool                                                         bEnableClickEvents;                                // 0x5a8(0x1)
-	bool                                                         bEnableTouchEvents;                                // 0x5a8(0x1)
-	bool                                                         bEnableMouseOverEvents;                            // 0x5a8(0x1)
-	bool                                                         bEnableTouchOverEvents;                            // 0x5a8(0x1)
-	bool                                                         bForceFeedbackEnabled;                             // 0x5a8(0x1)
-	byte                                                         DefaultMouseCursor;                                // 0x5ac(0x1)
-	byte                                                         CurrentMouseCursor;                                // 0x5ad(0x1)
-	byte                                                         DefaultClickTraceChannel;                          // 0x5ae(0x1)
-	byte                                                         CurrentClickTraceChannel;                          // 0x5af(0x1)
-	float                                                        HitResultTraceDistance;                            // 0x5b0(0x4)
-	float                                                        ForceFeedbackIntensity;                            // 0x5b4(0x4)
-	Class InputComponent*                                        InactiveStateInputComponent;                       // 0x640(0x8)
-	Class TouchInterface*                                        CurrentTouchInterface;                             // 0x668(0x8)
-	Class SpectatorPawn*                                         SpectatorPawn;                                     // 0x6a0(0x8)
-	Struct Vector                                                SpawnLocation;                                     // 0x6a8(0xc)
-	bool                                                         bIsLocalPlayerController;                          // 0x71c(0x1)
-	bool                                                         bInCinematicMode;                                  // 0x722(0x1)
+	Class Player*                                                Player;                                            // 0x428(0x8)
+	Class Pawn*                                                  AcknowledgedPawn;                                  // 0x438(0x8)
+	Class InterpTrackInstDirector*                               ControllingDirTrackInst;                           // 0x440(0x8)
+	Class HUD*                                                   MyHUD;                                             // 0x450(0x8)
+	Class PlayerCameraManager*                                   PlayerCameraManager;                               // 0x458(0x8)
+	class                                                        PlayerCameraManagerClass;                          // 0x460(0x8)
+	bool                                                         bAutoManageActiveCameraTarget;                     // 0x468(0x1)
+	Struct Rotator                                               TargetViewRotation;                                // 0x46c(0xc)
+	TArray<class HiddenActors*>                                  HiddenActors;                                      // 0x488(0x10)
+	float                                                        LastSpectatorStateSynchTime;                       // 0x498(0x4)
+	Struct Vector                                                LastSpectatorSyncLocation;                         // 0x49c(0xc)
+	Struct Rotator                                               LastSpectatorSyncRotation;                         // 0x4a8(0xc)
+	int                                                          ClientCap;                                         // 0x4b4(0x4)
+	Class CheatManager*                                          CheatManager;                                      // 0x4b8(0x8)
+	class                                                        CheatClass;                                        // 0x4c0(0x8)
+	Class PlayerInput*                                           PlayerInput;                                       // 0x4c8(0x8)
+	TArray<Struct ActiveForceFeedbackEffect>                     ActiveForceFeedbackEffects;                        // 0x4d0(0x10)
+	bool                                                         bPlayerIsWaiting;                                  // 0x570(0x1)
+	byte                                                         NetPlayerIndex;                                    // 0x574(0x1)
+	bool                                                         bHasVoiceHandshakeCompleted;                       // 0x575(0x1)
+	Class NetConnection*                                         PendingSwapConnection;                             // 0x578(0x8)
+	Class NetConnection*                                         NetConnection;                                     // 0x580(0x8)
+	float                                                        InputYawScale;                                     // 0x594(0x4)
+	float                                                        InputPitchScale;                                   // 0x598(0x4)
+	float                                                        InputRollScale;                                    // 0x59c(0x4)
+	bool                                                         bShowMouseCursor;                                  // 0x5a0(0x1)
+	bool                                                         bEnableClickEvents;                                // 0x5a0(0x1)
+	bool                                                         bEnableTouchEvents;                                // 0x5a0(0x1)
+	bool                                                         bEnableMouseOverEvents;                            // 0x5a0(0x1)
+	bool                                                         bEnableTouchOverEvents;                            // 0x5a0(0x1)
+	bool                                                         bForceFeedbackEnabled;                             // 0x5a0(0x1)
+	byte                                                         DefaultMouseCursor;                                // 0x5a4(0x1)
+	byte                                                         CurrentMouseCursor;                                // 0x5a5(0x1)
+	byte                                                         DefaultClickTraceChannel;                          // 0x5a6(0x1)
+	byte                                                         CurrentClickTraceChannel;                          // 0x5a7(0x1)
+	float                                                        HitResultTraceDistance;                            // 0x5a8(0x4)
+	float                                                        ForceFeedbackIntensity;                            // 0x5ac(0x4)
+	Class InputComponent*                                        InactiveStateInputComponent;                       // 0x638(0x8)
+	Class TouchInterface*                                        CurrentTouchInterface;                             // 0x660(0x8)
+	Class SpectatorPawn*                                         SpectatorPawn;                                     // 0x698(0x8)
+	Struct Vector                                                SpawnLocation;                                     // 0x6a0(0xc)
+	bool                                                         bIsLocalPlayerController;                          // 0x714(0x1)
+	bool                                                         bInCinematicMode;                                  // 0x71a(0x1)
 };
 
 
@@ -954,9 +969,9 @@ public:
 class StaticMeshActor: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3d0(0x8)
-	bool                                                         bStaticMeshReplicateMovement;                      // 0x3d8(0x1)
-	byte                                                         NavigationGeometryGatheringMode;                   // 0x3d9(0x1)
+	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3c8(0x8)
+	bool                                                         bStaticMeshReplicateMovement;                      // 0x3d0(0x1)
+	byte                                                         NavigationGeometryGatheringMode;                   // 0x3d1(0x1)
 };
 
 
@@ -964,17 +979,17 @@ public:
 class Brush: public Actor
 {
 public:
-	byte                                                         BrushType;                                         // 0x3d0(0x1)
-	Struct Color                                                 BrushColor;                                        // 0x3d4(0x4)
-	int                                                          PolyFlags;                                         // 0x3d8(0x4)
-	bool                                                         bColored;                                          // 0x3dc(0x1)
-	bool                                                         bSolidWhenSelected;                                // 0x3dc(0x1)
-	bool                                                         bPlaceableFromClassBrowser;                        // 0x3dc(0x1)
-	bool                                                         bNotForClientOrServer;                             // 0x3dc(0x1)
-	Class Model*                                                 Brush;                                             // 0x3e0(0x8)
-	Class BrushComponent*                                        BrushComponent;                                    // 0x3e8(0x8)
-	bool                                                         bInManipulation;                                   // 0x3f0(0x1)
-	TArray<Struct GeomSelection>                                 SavedSelections;                                   // 0x3f8(0x10)
+	byte                                                         BrushType;                                         // 0x3c8(0x1)
+	Struct Color                                                 BrushColor;                                        // 0x3cc(0x4)
+	int                                                          PolyFlags;                                         // 0x3d0(0x4)
+	bool                                                         bColored;                                          // 0x3d4(0x1)
+	bool                                                         bSolidWhenSelected;                                // 0x3d4(0x1)
+	bool                                                         bPlaceableFromClassBrowser;                        // 0x3d4(0x1)
+	bool                                                         bNotForClientOrServer;                             // 0x3d4(0x1)
+	Class Model*                                                 Brush;                                             // 0x3d8(0x8)
+	Class BrushComponent*                                        BrushComponent;                                    // 0x3e0(0x8)
+	bool                                                         bInManipulation;                                   // 0x3e8(0x1)
+	TArray<Struct GeomSelection>                                 SavedSelections;                                   // 0x3f0(0x10)
 };
 
 
@@ -996,45 +1011,45 @@ public:
 class WorldSettings: public Info
 {
 public:
-	bool                                                         bEnableWorldBoundsChecks;                          // 0x3d8(0x1)
-	bool                                                         bEnableNavigationSystem;                           // 0x3d8(0x1)
-	byte                                                         WorldCompositionSetting;                           // 0x3dc(0x1)
-	Struct StringAssetReference                                  InstancedNavMeshesDataAssetOveride;                // 0x3e0(0x10)
-	bool                                                         bEnableWorldOriginRebasing;                        // 0x3f0(0x1)
-	bool                                                         bWorldGravitySet;                                  // 0x3f0(0x1)
-	bool                                                         bGlobalGravitySet;                                 // 0x3f0(0x1)
-	float                                                        KillZ;                                             // 0x3f4(0x4)
-	class                                                        KillZDamageType;                                   // 0x3f8(0x8)
-	float                                                        GlobalGravityZ;                                    // 0x400(0x4)
-	class                                                        DefaultPhysicsVolumeClass;                         // 0x408(0x8)
-	class                                                        PhysicsCollisionHandlerClass;                      // 0x410(0x8)
-	class                                                        DefaultGameMode;                                   // 0x418(0x8)
-	TArray<Struct GameModePrefix>                                DefaultMapPrefixes;                                // 0x420(0x10)
-	class                                                        GameNetworkManagerClass;                           // 0x430(0x8)
-	int                                                          PackedLightAndShadowMapTextureSize;                // 0x438(0x4)
-	bool                                                         bMinimizeBSPSections;                              // 0x43c(0x1)
-	Struct Vector                                                DefaultColorScale;                                 // 0x440(0xc)
-	bool                                                         bPrecomputeVisibility;                             // 0x44c(0x1)
-	bool                                                         bPlaceCellsOnlyAlongCameraTracks;                  // 0x44c(0x1)
-	int                                                          VisibilityCellSize;                                // 0x450(0x4)
-	byte                                                         VisibilityAggressiveness;                          // 0x454(0x1)
-	bool                                                         bForceNoPrecomputedLighting;                       // 0x458(0x1)
-	Struct LightmassWorldInfoSettings                            LightmassSettings;                                 // 0x45c(0x44)
-	byte                                                         LevelLightingQuality;                              // 0x4a0(0x1)
-	Struct ReverbSettings                                        DefaultReverbSettings;                             // 0x4a8(0x18)
-	Struct InteriorSettings                                      DefaultAmbientZoneSettings;                        // 0x4c0(0x24)
-	Class SoundMix*                                              DefaultBaseSoundMix;                               // 0x4e8(0x8)
-	float                                                        WorldToMeters;                                     // 0x4f0(0x4)
-	Class BookMark*                                              BookMarks;                                         // 0x4f8(0x8)
-	float                                                        TimeDilation;                                      // 0x548(0x4)
-	float                                                        MatineeTimeDilation;                               // 0x54c(0x4)
-	float                                                        DemoPlayTimeDilation;                              // 0x550(0x4)
-	bool                                                         bHighPriorityLoading;                              // 0x554(0x1)
-	bool                                                         bHighPriorityLoadingLocal;                         // 0x554(0x1)
-	TArray<Struct NetViewer>                                     ReplicationViewers;                                // 0x558(0x10)
-	TArray<class AssetUserData*>                                 AssetUserData;                                     // 0x568(0x10)
-	float                                                        WorldGravityZ;                                     // 0x578(0x4)
-	Class PlayerState*                                           Pauser;                                            // 0x580(0x8)
+	bool                                                         bEnableWorldBoundsChecks;                          // 0x3d0(0x1)
+	bool                                                         bEnableNavigationSystem;                           // 0x3d0(0x1)
+	byte                                                         WorldCompositionSetting;                           // 0x3d4(0x1)
+	Struct StringAssetReference                                  InstancedNavMeshesDataAssetOveride;                // 0x3d8(0x10)
+	bool                                                         bEnableWorldOriginRebasing;                        // 0x3e8(0x1)
+	bool                                                         bWorldGravitySet;                                  // 0x3e8(0x1)
+	bool                                                         bGlobalGravitySet;                                 // 0x3e8(0x1)
+	float                                                        KillZ;                                             // 0x3ec(0x4)
+	class                                                        KillZDamageType;                                   // 0x3f0(0x8)
+	float                                                        GlobalGravityZ;                                    // 0x3f8(0x4)
+	class                                                        DefaultPhysicsVolumeClass;                         // 0x400(0x8)
+	class                                                        PhysicsCollisionHandlerClass;                      // 0x408(0x8)
+	class                                                        DefaultGameMode;                                   // 0x410(0x8)
+	TArray<Struct GameModePrefix>                                DefaultMapPrefixes;                                // 0x418(0x10)
+	class                                                        GameNetworkManagerClass;                           // 0x428(0x8)
+	int                                                          PackedLightAndShadowMapTextureSize;                // 0x430(0x4)
+	bool                                                         bMinimizeBSPSections;                              // 0x434(0x1)
+	Struct Vector                                                DefaultColorScale;                                 // 0x438(0xc)
+	bool                                                         bPrecomputeVisibility;                             // 0x444(0x1)
+	bool                                                         bPlaceCellsOnlyAlongCameraTracks;                  // 0x444(0x1)
+	int                                                          VisibilityCellSize;                                // 0x448(0x4)
+	byte                                                         VisibilityAggressiveness;                          // 0x44c(0x1)
+	bool                                                         bForceNoPrecomputedLighting;                       // 0x450(0x1)
+	Struct LightmassWorldInfoSettings                            LightmassSettings;                                 // 0x454(0x44)
+	byte                                                         LevelLightingQuality;                              // 0x498(0x1)
+	Struct ReverbSettings                                        DefaultReverbSettings;                             // 0x4a0(0x18)
+	Struct InteriorSettings                                      DefaultAmbientZoneSettings;                        // 0x4b8(0x24)
+	Class SoundMix*                                              DefaultBaseSoundMix;                               // 0x4e0(0x8)
+	float                                                        WorldToMeters;                                     // 0x4e8(0x4)
+	Class BookMark*                                              BookMarks;                                         // 0x4f0(0x8)
+	float                                                        TimeDilation;                                      // 0x540(0x4)
+	float                                                        MatineeTimeDilation;                               // 0x544(0x4)
+	float                                                        DemoPlayTimeDilation;                              // 0x548(0x4)
+	bool                                                         bHighPriorityLoading;                              // 0x54c(0x1)
+	bool                                                         bHighPriorityLoadingLocal;                         // 0x54c(0x1)
+	TArray<Struct NetViewer>                                     ReplicationViewers;                                // 0x550(0x10)
+	TArray<class AssetUserData*>                                 AssetUserData;                                     // 0x560(0x10)
+	float                                                        WorldGravityZ;                                     // 0x570(0x4)
+	Class PlayerState*                                           Pauser;                                            // 0x578(0x8)
 };
 
 
@@ -1102,18 +1117,18 @@ public:
 class DebugCameraController: public PlayerController
 {
 public:
-	bool                                                         bUseOriginalPlayerHUD;                             // 0x728(0x1)
-	bool                                                         bShowSelectedInfo;                                 // 0x728(0x1)
-	bool                                                         bIsFrozenRendering;                                // 0x728(0x1)
-	Class DrawFrustumComponent*                                  DrawFrustum;                                       // 0x730(0x8)
-	Class PlayerController*                                      OriginalControllerRef;                             // 0x748(0x8)
-	Class Player*                                                OriginalPlayer;                                    // 0x750(0x8)
-	float                                                        SpeedScale;                                        // 0x758(0x4)
-	float                                                        InitialMaxSpeed;                                   // 0x75c(0x4)
-	float                                                        InitialAccel;                                      // 0x760(0x4)
-	float                                                        InitialDecel;                                      // 0x764(0x4)
-	float                                                        SpeedScaleAdjustment;                              // 0x768(0x4)
-	float                                                        FovScaleAdjustment;                                // 0x76c(0x4)
+	bool                                                         bUseOriginalPlayerHUD;                             // 0x770(0x1)
+	bool                                                         bShowSelectedInfo;                                 // 0x770(0x1)
+	bool                                                         bIsFrozenRendering;                                // 0x770(0x1)
+	Class DrawFrustumComponent*                                  DrawFrustum;                                       // 0x778(0x8)
+	Class PlayerController*                                      OriginalControllerRef;                             // 0x790(0x8)
+	Class Player*                                                OriginalPlayer;                                    // 0x798(0x8)
+	float                                                        SpeedScale;                                        // 0x7a0(0x4)
+	float                                                        InitialMaxSpeed;                                   // 0x7a4(0x4)
+	float                                                        InitialAccel;                                      // 0x7a8(0x4)
+	float                                                        InitialDecel;                                      // 0x7ac(0x4)
+	float                                                        SpeedScaleAdjustment;                              // 0x7b0(0x4)
+	float                                                        FovScaleAdjustment;                                // 0x7b4(0x4)
 };
 
 
@@ -1121,26 +1136,26 @@ public:
 class HUD: public Actor
 {
 public:
-	Struct Color                                                 WhiteColor;                                        // 0x3d0(0x4)
-	Struct Color                                                 GreenColor;                                        // 0x3d4(0x4)
-	Struct Color                                                 RedColor;                                          // 0x3d8(0x4)
-	Class PlayerController*                                      PlayerOwner;                                       // 0x3e0(0x8)
-	bool                                                         bLostFocusPaused;                                  // 0x3e8(0x1)
-	bool                                                         bShowHUD;                                          // 0x3e8(0x1)
-	bool                                                         bShowDebugInfo;                                    // 0x3e8(0x1)
-	bool                                                         bShowHitBoxDebugInfo;                              // 0x3e8(0x1)
-	bool                                                         bShowOverlays;                                     // 0x3e8(0x1)
-	bool                                                         bEnableDebugTextShadow;                            // 0x3e8(0x1)
-	TArray<class PostRenderedActors*>                            PostRenderedActors;                                // 0x3f0(0x10)
-	float                                                        LastHUDRenderTime;                                 // 0x400(0x4)
-	float                                                        RenderDelta;                                       // 0x404(0x4)
-	TArray<Struct FName>                                         DebugDisplay;                                      // 0x408(0x10)
-	TArray<Struct FName>                                         ToggledDebugCategories;                            // 0x418(0x10)
-	Class Canvas*                                                Canvas;                                            // 0x428(0x8)
-	Class Canvas*                                                DebugCanvas;                                       // 0x430(0x8)
-	TArray<Struct DebugTextInfo>                                 DebugTextList;                                     // 0x438(0x10)
-	class                                                        ShowDebugTargetDesiredClass;                       // 0x448(0x8)
-	Class Actor*                                                 ShowDebugTargetActor;                              // 0x450(0x8)
+	Struct Color                                                 WhiteColor;                                        // 0x3c8(0x4)
+	Struct Color                                                 GreenColor;                                        // 0x3cc(0x4)
+	Struct Color                                                 RedColor;                                          // 0x3d0(0x4)
+	Class PlayerController*                                      PlayerOwner;                                       // 0x3d8(0x8)
+	bool                                                         bLostFocusPaused;                                  // 0x3e0(0x1)
+	bool                                                         bShowHUD;                                          // 0x3e0(0x1)
+	bool                                                         bShowDebugInfo;                                    // 0x3e0(0x1)
+	bool                                                         bShowHitBoxDebugInfo;                              // 0x3e0(0x1)
+	bool                                                         bShowOverlays;                                     // 0x3e0(0x1)
+	bool                                                         bEnableDebugTextShadow;                            // 0x3e0(0x1)
+	TArray<class PostRenderedActors*>                            PostRenderedActors;                                // 0x3e8(0x10)
+	float                                                        LastHUDRenderTime;                                 // 0x3f8(0x4)
+	float                                                        RenderDelta;                                       // 0x3fc(0x4)
+	TArray<Struct FName>                                         DebugDisplay;                                      // 0x400(0x10)
+	TArray<Struct FName>                                         ToggledDebugCategories;                            // 0x410(0x10)
+	Class Canvas*                                                Canvas;                                            // 0x420(0x8)
+	Class Canvas*                                                DebugCanvas;                                       // 0x428(0x8)
+	TArray<Struct DebugTextInfo>                                 DebugTextList;                                     // 0x430(0x10)
+	class                                                        ShowDebugTargetDesiredClass;                       // 0x440(0x8)
+	Class Actor*                                                 ShowDebugTargetActor;                              // 0x448(0x8)
 };
 
 
@@ -1157,7 +1172,7 @@ public:
 class LevelScriptActor: public Actor
 {
 public:
-	bool                                                         bInputEnabled;                                     // 0x3d0(0x1)
+	bool                                                         bInputEnabled;                                     // 0x3c8(0x1)
 };
 
 
@@ -1206,8 +1221,8 @@ public:
 class FogVolume: public Actor
 {
 public:
-	Class SphereComponent*                                       SphereComponent;                                   // 0x3d0(0x8)
-	Class FogVolumeComponent*                                    FogVolumeComponent;                                // 0x3d8(0x8)
+	Class SphereComponent*                                       SphereComponent;                                   // 0x3c8(0x8)
+	Class FogVolumeComponent*                                    FogVolumeComponent;                                // 0x3d0(0x8)
 };
 
 
@@ -1382,30 +1397,15 @@ public:
 };
 
 
-// Size 0x20
-class CameraModifier: public Object
-{
-public:
-	bool                                                         bDebug;                                            // 0x28(0x1)
-	bool                                                         bExclusive;                                        // 0x28(0x1)
-	byte                                                         Priority;                                          // 0x2c(0x1)
-	Class PlayerCameraManager*                                   CameraOwner;                                       // 0x30(0x8)
-	float                                                        AlphaInTime;                                       // 0x38(0x4)
-	float                                                        AlphaOutTime;                                      // 0x3c(0x4)
-	float                                                        Alpha;                                             // 0x40(0x4)
-	bool                                                         bAutoDestroyOnCompletion;                          // 0x44(0x1)
-};
-
-
 // Size 0x10
 class PhysicsVolume: public Volume
 {
 public:
-	float                                                        TerminalVelocity;                                  // 0x408(0x4)
-	int                                                          Priority;                                          // 0x40c(0x4)
-	float                                                        FluidFriction;                                     // 0x410(0x4)
-	bool                                                         bWaterVolume;                                      // 0x414(0x1)
-	bool                                                         bPhysicsOnContact;                                 // 0x414(0x1)
+	float                                                        TerminalVelocity;                                  // 0x400(0x4)
+	int                                                          Priority;                                          // 0x404(0x4)
+	float                                                        FluidFriction;                                     // 0x408(0x4)
+	bool                                                         bWaterVolume;                                      // 0x40c(0x1)
+	bool                                                         bPhysicsOnContact;                                 // 0x40c(0x1)
 };
 
 
@@ -1838,7 +1838,7 @@ public:
 class ActorWithComponentWithDerivedTestInterface: public Actor
 {
 public:
-	Class ComponentWithDerivedTestInterface*                     ComponentWithDerivedTestInterface;                 // 0x3d0(0x8)
+	Class ComponentWithDerivedTestInterface*                     ComponentWithDerivedTestInterface;                 // 0x3c8(0x8)
 };
 
 
@@ -1853,7 +1853,7 @@ public:
 class AmbientSound: public Actor
 {
 public:
-	Class AudioComponent*                                        AudioComponent;                                    // 0x3d0(0x8)
+	Class AudioComponent*                                        AudioComponent;                                    // 0x3c8(0x8)
 };
 
 
@@ -1861,7 +1861,7 @@ public:
 class AutomaticInstancingActor: public Actor
 {
 public:
-	Class SceneComponent*                                        DummyRoot;                                         // 0x3d0(0x8)
+	Class SceneComponent*                                        DummyRoot;                                         // 0x3c8(0x8)
 };
 
 
@@ -1946,11 +1946,11 @@ public:
 class AudioVolume: public Volume
 {
 public:
-	float                                                        Priority;                                          // 0x408(0x4)
-	bool                                                         bEnabled;                                          // 0x40c(0x1)
-	Struct ReverbSettings                                        Settings;                                          // 0x410(0x18)
-	Struct InteriorSettings                                      AmbientZoneSettings;                               // 0x428(0x24)
-	Class AudioVolume*                                           NextLowerPriorityVolume;                           // 0x450(0x8)
+	float                                                        Priority;                                          // 0x400(0x4)
+	bool                                                         bEnabled;                                          // 0x404(0x1)
+	Struct ReverbSettings                                        Settings;                                          // 0x408(0x18)
+	Struct InteriorSettings                                      AmbientZoneSettings;                               // 0x420(0x24)
+	Class AudioVolume*                                           NextLowerPriorityVolume;                           // 0x448(0x8)
 };
 
 
@@ -1965,8 +1965,8 @@ public:
 class CullDistanceVolume: public Volume
 {
 public:
-	TArray<Struct CullDistanceSizePair>                          CullDistances;                                     // 0x408(0x10)
-	bool                                                         bEnabled;                                          // 0x418(0x1)
+	TArray<Struct CullDistanceSizePair>                          CullDistances;                                     // 0x400(0x10)
+	bool                                                         bEnabled;                                          // 0x410(0x1)
 };
 
 
@@ -1974,8 +1974,8 @@ public:
 class FFTWater: public Volume
 {
 public:
-	Class FFTWaterComponent*                                     FFTWaterComponent;                                 // 0x408(0x8)
-	Class FFTWaterExtendedPlaneComponent*                        ExtendedPlaneComponent;                            // 0x410(0x8)
+	Class FFTWaterComponent*                                     FFTWaterComponent;                                 // 0x400(0x8)
+	Class FFTWaterExtendedPlaneComponent*                        ExtendedPlaneComponent;                            // 0x408(0x8)
 };
 
 
@@ -1983,10 +1983,10 @@ public:
 class LevelStreamingVolume: public Volume
 {
 public:
-	TArray<Struct FName>                                         StreamingLevelNames;                               // 0x408(0x10)
-	bool                                                         bEditorPreVisOnly;                                 // 0x418(0x1)
-	bool                                                         bDisabled;                                         // 0x418(0x1)
-	byte                                                         StreamingUsage;                                    // 0x41c(0x1)
+	TArray<Struct FName>                                         StreamingLevelNames;                               // 0x400(0x10)
+	bool                                                         bEditorPreVisOnly;                                 // 0x410(0x1)
+	bool                                                         bDisabled;                                         // 0x410(0x1)
+	byte                                                         StreamingUsage;                                    // 0x414(0x1)
 };
 
 
@@ -2015,8 +2015,8 @@ public:
 class NavMeshBoundsVolume: public Volume
 {
 public:
-	Struct NavAgentSelector                                      SupportedAgents;                                   // 0x408(0x4)
-	struct FName                                                 OriginatingLevelName;                              // 0x40c(0x8)
+	Struct NavAgentSelector                                      SupportedAgents;                                   // 0x400(0x4)
+	struct FName                                                 OriginatingLevelName;                              // 0x404(0x8)
 };
 
 
@@ -2065,7 +2065,7 @@ public:
 class NavModifierVolume: public Volume
 {
 public:
-	class                                                        AreaClass;                                         // 0x410(0x8)
+	class                                                        AreaClass;                                         // 0x408(0x8)
 };
 
 
@@ -2087,13 +2087,13 @@ public:
 class PainCausingVolume: public PhysicsVolume
 {
 public:
-	bool                                                         bPainCausing;                                      // 0x418(0x1)
-	float                                                        DamagePerSec;                                      // 0x41c(0x4)
-	class                                                        DamageType;                                        // 0x420(0x8)
-	float                                                        PainInterval;                                      // 0x428(0x4)
-	bool                                                         bEntryPain;                                        // 0x42c(0x1)
-	bool                                                         BACKUP_bPainCausing;                               // 0x42c(0x1)
-	Class Controller*                                            DamageInstigator;                                  // 0x430(0x8)
+	bool                                                         bPainCausing;                                      // 0x410(0x1)
+	float                                                        DamagePerSec;                                      // 0x414(0x4)
+	class                                                        DamageType;                                        // 0x418(0x8)
+	float                                                        PainInterval;                                      // 0x420(0x4)
+	bool                                                         bEntryPain;                                        // 0x424(0x1)
+	bool                                                         BACKUP_bPainCausing;                               // 0x424(0x1)
+	Class Controller*                                            DamageInstigator;                                  // 0x428(0x8)
 };
 
 
@@ -2118,7 +2118,7 @@ public:
 };
 
 
-// Size 0x558
+// Size 0x560
 class PostProcessVolume: public Volume
 {
 public:
@@ -2135,9 +2135,9 @@ public:
 class PrecomputedVisibilityOverrideVolume: public Volume
 {
 public:
-	TArray<class OverrideVisibleActors*>                         OverrideVisibleActors;                             // 0x408(0x10)
-	TArray<class OverrideInvisibleActors*>                       OverrideInvisibleActors;                           // 0x418(0x10)
-	TArray<Struct FName>                                         OverrideInvisibleLevels;                           // 0x428(0x10)
+	TArray<class OverrideVisibleActors*>                         OverrideVisibleActors;                             // 0x400(0x10)
+	TArray<class OverrideInvisibleActors*>                       OverrideInvisibleActors;                           // 0x410(0x10)
+	TArray<Struct FName>                                         OverrideInvisibleLevels;                           // 0x420(0x10)
 };
 
 
@@ -2159,21 +2159,21 @@ public:
 class CalmWaterZone: public Actor
 {
 public:
-	Class CalmWaterComponent*                                    CalmWaterComponent;                                // 0x3d0(0x8)
+	Class CalmWaterComponent*                                    CalmWaterComponent;                                // 0x3c8(0x8)
 };
 
 
-// Size 0x570
+// Size 0x568
 class CameraActor: public Actor
 {
 public:
-	byte                                                         AutoActivateForPlayer;                             // 0x3d0(0x1)
-	Class CameraComponent*                                       CameraComponent;                                   // 0x3d8(0x8)
-	bool                                                         bConstrainAspectRatio;                             // 0x3e8(0x1)
-	float                                                        AspectRatio;                                       // 0x3ec(0x4)
-	float                                                        FOVAngle;                                          // 0x3f0(0x4)
-	float                                                        PostProcessBlendWeight;                            // 0x3f4(0x4)
-	Struct PostProcessSettings                                   PostProcessSettings;                               // 0x400(0x540)
+	byte                                                         AutoActivateForPlayer;                             // 0x3c8(0x1)
+	Class CameraComponent*                                       CameraComponent;                                   // 0x3d0(0x8)
+	bool                                                         bConstrainAspectRatio;                             // 0x3e0(0x1)
+	float                                                        AspectRatio;                                       // 0x3e4(0x4)
+	float                                                        FOVAngle;                                          // 0x3e8(0x4)
+	float                                                        PostProcessBlendWeight;                            // 0x3ec(0x4)
+	Struct PostProcessSettings                                   PostProcessSettings;                               // 0x3f0(0x540)
 };
 
 
@@ -2216,15 +2216,15 @@ public:
 };
 
 
-// Size 0x1880
+// Size 0x1888
 class PlayerCameraManager: public Actor
 {
 public:
-	Class PlayerController*                                      PCOwner;                                           // 0x3d0(0x8)
-	Class SceneComponent*                                        TransformComponent;                                // 0x3d8(0x8)
-	float                                                        DefaultFOV;                                        // 0x3e8(0x4)
-	float                                                        DefaultOrthoWidth;                                 // 0x3f0(0x4)
-	float                                                        DefaultAspectRatio;                                // 0x3f8(0x4)
+	Class PlayerController*                                      PCOwner;                                           // 0x3c8(0x8)
+	Class SceneComponent*                                        TransformComponent;                                // 0x3d0(0x8)
+	float                                                        DefaultFOV;                                        // 0x3e0(0x4)
+	float                                                        DefaultOrthoWidth;                                 // 0x3e8(0x4)
+	float                                                        DefaultAspectRatio;                                // 0x3f0(0x4)
 	Struct CameraCacheEntry                                      CameraCache;                                       // 0x440(0x5b0)
 	Struct CameraCacheEntry                                      LastFrameCameraCache;                              // 0x9f0(0x5b0)
 	Struct TViewTarget                                           ViewTarget;                                        // 0xfa0(0x5c0)
@@ -2282,7 +2282,7 @@ public:
 class LogVisualizerCameraController: public DebugCameraController
 {
 public:
-	Class Actor*                                                 PickedActor;                                       // 0x778(0x8)
+	Class Actor*                                                 PickedActor;                                       // 0x7c0(0x8)
 };
 
 
@@ -2290,7 +2290,7 @@ public:
 class DecalActor: public Actor
 {
 public:
-	Class DecalComponent*                                        Decal;                                             // 0x3d0(0x8)
+	Class DecalComponent*                                        Decal;                                             // 0x3c8(0x8)
 };
 
 
@@ -2298,8 +2298,8 @@ public:
 class DestructibleActor: public Actor
 {
 public:
-	Class DestructibleComponent*                                 DestructibleComponent;                             // 0x3d0(0x8)
-	bool                                                         bAffectNavigation;                                 // 0x3d8(0x1)
+	Class DestructibleComponent*                                 DestructibleComponent;                             // 0x3c8(0x8)
+	bool                                                         bAffectNavigation;                                 // 0x3d0(0x1)
 };
 
 
@@ -2314,10 +2314,10 @@ public:
 class Emitter: public Actor
 {
 public:
-	Class ParticleSystemComponent*                               ParticleSystemComponent;                           // 0x3d0(0x8)
-	bool                                                         bDestroyOnSystemFinish;                            // 0x3d8(0x1)
-	bool                                                         bPostUpdateTickGroup;                              // 0x3d8(0x1)
-	bool                                                         bCurrentlyActive;                                  // 0x3d8(0x1)
+	Class ParticleSystemComponent*                               ParticleSystemComponent;                           // 0x3c8(0x8)
+	bool                                                         bDestroyOnSystemFinish;                            // 0x3d0(0x1)
+	bool                                                         bPostUpdateTickGroup;                              // 0x3d0(0x1)
+	bool                                                         bCurrentlyActive;                                  // 0x3d0(0x1)
 };
 
 
@@ -2325,13 +2325,13 @@ public:
 class EmitterCameraLensEffectBase: public Emitter
 {
 public:
-	Class ParticleSystem*                                        PS_CameraEffect;                                   // 0x420(0x8)
-	Class ParticleSystem*                                        PS_CameraEffectNonExtremeContent;                  // 0x428(0x8)
-	float                                                        BaseFOV;                                           // 0x430(0x4)
-	float                                                        DistFromCamera;                                    // 0x434(0x4)
-	bool                                                         bAllowMultipleInstances;                           // 0x438(0x1)
-	TArray<Class EmittersToTreatAsSame>                          EmittersToTreatAsSame;                             // 0x440(0x10)
-	Class PlayerCameraManager*                                   BaseCamera;                                        // 0x450(0x8)
+	Class ParticleSystem*                                        PS_CameraEffect;                                   // 0x418(0x8)
+	Class ParticleSystem*                                        PS_CameraEffectNonExtremeContent;                  // 0x420(0x8)
+	float                                                        BaseFOV;                                           // 0x428(0x4)
+	float                                                        DistFromCamera;                                    // 0x42c(0x4)
+	bool                                                         bAllowMultipleInstances;                           // 0x430(0x1)
+	TArray<Class EmittersToTreatAsSame>                          EmittersToTreatAsSame;                             // 0x438(0x10)
+	Class PlayerCameraManager*                                   BaseCamera;                                        // 0x448(0x8)
 };
 
 
@@ -2353,7 +2353,7 @@ public:
 class AtmosphericFog: public Info
 {
 public:
-	Class AtmosphericFogComponent*                               AtmosphericFogComponent;                           // 0x3d0(0x8)
+	Class AtmosphericFogComponent*                               AtmosphericFogComponent;                           // 0x3c8(0x8)
 };
 
 
@@ -2361,8 +2361,8 @@ public:
 class ExponentialHeightFog: public Info
 {
 public:
-	Class ExponentialHeightFogComponent*                         Component;                                         // 0x3d0(0x8)
-	bool                                                         bEnabled;                                          // 0x3d8(0x1)
+	Class ExponentialHeightFogComponent*                         Component;                                         // 0x3c8(0x8)
+	bool                                                         bEnabled;                                          // 0x3d0(0x1)
 };
 
 
@@ -2370,10 +2370,10 @@ public:
 class NavigationObjectBase: public Actor
 {
 public:
-	Class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d8(0x8)
-	Class BillboardComponent*                                    GoodSprite;                                        // 0x3e0(0x8)
-	Class BillboardComponent*                                    BadSprite;                                         // 0x3e8(0x8)
-	bool                                                         bIsPIEPlayerStart;                                 // 0x3f0(0x1)
+	Class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d0(0x8)
+	Class BillboardComponent*                                    GoodSprite;                                        // 0x3d8(0x8)
+	Class BillboardComponent*                                    BadSprite;                                         // 0x3e0(0x8)
+	bool                                                         bIsPIEPlayerStart;                                 // 0x3e8(0x1)
 };
 
 
@@ -2381,7 +2381,7 @@ public:
 class PlayerStart: public NavigationObjectBase
 {
 public:
-	struct FName                                                 PlayerStartTag;                                    // 0x3f8(0x8)
+	struct FName                                                 PlayerStartTag;                                    // 0x3f0(0x8)
 };
 
 
@@ -2389,36 +2389,36 @@ public:
 class GameNetworkManager: public Info
 {
 public:
-	int                                                          AdjustedNetSpeed;                                  // 0x3d0(0x4)
-	float                                                        LastNetSpeedUpdateTime;                            // 0x3d4(0x4)
-	int                                                          TotalNetBandwidth;                                 // 0x3d8(0x4)
-	int                                                          MinDynamicBandwidth;                               // 0x3dc(0x4)
-	int                                                          MaxDynamicBandwidth;                               // 0x3e0(0x4)
-	bool                                                         bIsStandbyCheckingEnabled;                         // 0x3e4(0x1)
-	bool                                                         bHasStandbyCheatTriggered;                         // 0x3e4(0x1)
-	float                                                        StandbyRxCheatTime;                                // 0x3e8(0x4)
-	float                                                        StandbyTxCheatTime;                                // 0x3ec(0x4)
-	int                                                          BadPingThreshold;                                  // 0x3f0(0x4)
-	float                                                        PercentMissingForRxStandby;                        // 0x3f4(0x4)
-	float                                                        PercentMissingForTxStandby;                        // 0x3f8(0x4)
-	float                                                        PercentForBadPing;                                 // 0x3fc(0x4)
-	float                                                        JoinInProgressStandbyWaitTime;                     // 0x400(0x4)
-	float                                                        MoveRepSize;                                       // 0x404(0x4)
-	float                                                        MAXPOSITIONERRORSQUARED;                           // 0x408(0x4)
-	float                                                        MAXNEARZEROVELOCITYSQUARED;                        // 0x40c(0x4)
-	float                                                        CLIENTADJUSTUPDATECOST;                            // 0x410(0x4)
-	float                                                        MAXCLIENTUPDATEINTERVAL;                           // 0x414(0x4)
-	float                                                        MaxMoveDeltaTime;                                  // 0x418(0x4)
-	bool                                                         ClientAuthorativePosition;                         // 0x41c(0x1)
-	float                                                        ClientErrorUpdateRateLimit;                        // 0x420(0x4)
-	bool                                                         bMovementTimeDiscrepancyDetection;                 // 0x424(0x1)
-	bool                                                         bMovementTimeDiscrepancyResolution;                // 0x425(0x1)
-	float                                                        MovementTimeDiscrepancyMaxTimeMargin;              // 0x428(0x4)
-	float                                                        MovementTimeDiscrepancyMinTimeMargin;              // 0x42c(0x4)
-	float                                                        MovementTimeDiscrepancyResolutionRate;             // 0x430(0x4)
-	float                                                        MovementTimeDiscrepancyDriftAllowance;             // 0x434(0x4)
-	bool                                                         bMovementTimeDiscrepancyForceCorrectionsDuringResolution; // 0x438(0x1)
-	bool                                                         bUseDistanceBasedRelevancy;                        // 0x439(0x1)
+	int                                                          AdjustedNetSpeed;                                  // 0x3c8(0x4)
+	float                                                        LastNetSpeedUpdateTime;                            // 0x3cc(0x4)
+	int                                                          TotalNetBandwidth;                                 // 0x3d0(0x4)
+	int                                                          MinDynamicBandwidth;                               // 0x3d4(0x4)
+	int                                                          MaxDynamicBandwidth;                               // 0x3d8(0x4)
+	bool                                                         bIsStandbyCheckingEnabled;                         // 0x3dc(0x1)
+	bool                                                         bHasStandbyCheatTriggered;                         // 0x3dc(0x1)
+	float                                                        StandbyRxCheatTime;                                // 0x3e0(0x4)
+	float                                                        StandbyTxCheatTime;                                // 0x3e4(0x4)
+	int                                                          BadPingThreshold;                                  // 0x3e8(0x4)
+	float                                                        PercentMissingForRxStandby;                        // 0x3ec(0x4)
+	float                                                        PercentMissingForTxStandby;                        // 0x3f0(0x4)
+	float                                                        PercentForBadPing;                                 // 0x3f4(0x4)
+	float                                                        JoinInProgressStandbyWaitTime;                     // 0x3f8(0x4)
+	float                                                        MoveRepSize;                                       // 0x3fc(0x4)
+	float                                                        MAXPOSITIONERRORSQUARED;                           // 0x400(0x4)
+	float                                                        MAXNEARZEROVELOCITYSQUARED;                        // 0x404(0x4)
+	float                                                        CLIENTADJUSTUPDATECOST;                            // 0x408(0x4)
+	float                                                        MAXCLIENTUPDATEINTERVAL;                           // 0x40c(0x4)
+	float                                                        MaxMoveDeltaTime;                                  // 0x410(0x4)
+	bool                                                         ClientAuthorativePosition;                         // 0x414(0x1)
+	float                                                        ClientErrorUpdateRateLimit;                        // 0x418(0x4)
+	bool                                                         bMovementTimeDiscrepancyDetection;                 // 0x41c(0x1)
+	bool                                                         bMovementTimeDiscrepancyResolution;                // 0x41d(0x1)
+	float                                                        MovementTimeDiscrepancyMaxTimeMargin;              // 0x420(0x4)
+	float                                                        MovementTimeDiscrepancyMinTimeMargin;              // 0x424(0x4)
+	float                                                        MovementTimeDiscrepancyResolutionRate;             // 0x428(0x4)
+	float                                                        MovementTimeDiscrepancyDriftAllowance;             // 0x42c(0x4)
+	bool                                                         bMovementTimeDiscrepancyForceCorrectionsDuringResolution; // 0x430(0x1)
+	bool                                                         bUseDistanceBasedRelevancy;                        // 0x431(0x1)
 };
 
 
@@ -2426,11 +2426,11 @@ public:
 class GameSession: public Info
 {
 public:
-	int                                                          MaxSpectators;                                     // 0x3d0(0x4)
-	int                                                          MaxPlayers;                                        // 0x3d4(0x4)
-	byte                                                         MaxSplitscreensPerConnection;                      // 0x3d8(0x1)
-	bool                                                         bRequiresPushToTalk;                               // 0x3d9(0x1)
-	struct FName                                                 SessionName;                                       // 0x3dc(0x8)
+	int                                                          MaxSpectators;                                     // 0x3c8(0x4)
+	int                                                          MaxPlayers;                                        // 0x3cc(0x4)
+	byte                                                         MaxSplitscreensPerConnection;                      // 0x3d0(0x1)
+	bool                                                         bRequiresPushToTalk;                               // 0x3d1(0x1)
+	struct FName                                                 SessionName;                                       // 0x3d4(0x8)
 };
 
 
@@ -2438,8 +2438,8 @@ public:
 class SkyLight: public Info
 {
 public:
-	Class SkyLightComponent*                                     LightComponent;                                    // 0x3d0(0x8)
-	bool                                                         bEnabled;                                          // 0x3d8(0x1)
+	Class SkyLightComponent*                                     LightComponent;                                    // 0x3c8(0x8)
+	bool                                                         bEnabled;                                          // 0x3d0(0x1)
 };
 
 
@@ -2447,7 +2447,7 @@ public:
 class WindDirectionalSource: public Info
 {
 public:
-	Class WindDirectionalSourceComponent*                        Component;                                         // 0x3d0(0x8)
+	Class WindDirectionalSourceComponent*                        Component;                                         // 0x3c8(0x8)
 };
 
 
@@ -2455,7 +2455,7 @@ public:
 class LevelBounds: public Actor
 {
 public:
-	bool                                                         bAutoUpdateBounds;                                 // 0x3d0(0x1)
+	bool                                                         bAutoUpdateBounds;                                 // 0x3c8(0x1)
 };
 
 
@@ -2516,7 +2516,7 @@ public:
 class Light: public Actor
 {
 public:
-	Class LightComponent*                                        LightComponent;                                    // 0x3d0(0x8)
+	Class LightComponent*                                        LightComponent;                                    // 0x3c8(0x8)
 };
 
 
@@ -2524,7 +2524,7 @@ public:
 class AmbientLightSource: public Light
 {
 public:
-	Class AmbientLightSourceComponent*                           AmbientLightSourceComponent;                       // 0x3d8(0x8)
+	Class AmbientLightSourceComponent*                           AmbientLightSourceComponent;                       // 0x3d0(0x8)
 };
 
 
@@ -2539,7 +2539,7 @@ public:
 class PointLight: public Light
 {
 public:
-	Class PointLightComponent*                                   PointLightComponent;                               // 0x3d8(0x8)
+	Class PointLightComponent*                                   PointLightComponent;                               // 0x3d0(0x8)
 };
 
 
@@ -2547,7 +2547,7 @@ public:
 class SpotLight: public Light
 {
 public:
-	Class SpotLightComponent*                                    SpotLightComponent;                                // 0x3d8(0x8)
+	Class SpotLightComponent*                                    SpotLightComponent;                                // 0x3d0(0x8)
 };
 
 
@@ -2562,11 +2562,11 @@ public:
 class LODActor: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3d0(0x8)
-	TArray<class SubActors*>                                     SubActors;                                         // 0x3d8(0x10)
-	float                                                        LODDrawDistance;                                   // 0x3e8(0x4)
-	int                                                          LodLevel;                                          // 0x3ec(0x4)
-	TArray<class SubObjects*>                                    SubObjects;                                        // 0x3f0(0x10)
+	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3c8(0x8)
+	TArray<class SubActors*>                                     SubActors;                                         // 0x3d0(0x10)
+	float                                                        LODDrawDistance;                                   // 0x3e0(0x4)
+	int                                                          LodLevel;                                          // 0x3e4(0x4)
+	TArray<class SubObjects*>                                    SubObjects;                                        // 0x3e8(0x10)
 };
 
 
@@ -2574,7 +2574,7 @@ public:
 class MaterialInstanceActor: public Actor
 {
 public:
-	TArray<class TargetActors*>                                  TargetActors;                                      // 0x3d0(0x10)
+	TArray<class TargetActors*>                                  TargetActors;                                      // 0x3c8(0x10)
 };
 
 
@@ -2582,36 +2582,36 @@ public:
 class MatineeActor: public Actor
 {
 public:
-	Class InterpData*                                            MatineeData;                                       // 0x3d0(0x8)
-	struct FName                                                 MatineeControllerName;                             // 0x3d8(0x8)
-	float                                                        PlayRate;                                          // 0x3e0(0x4)
-	bool                                                         bPlayOnLevelLoad;                                  // 0x3e4(0x1)
-	bool                                                         bForceStartPos;                                    // 0x3e4(0x1)
-	float                                                        ForceStartPosition;                                // 0x3e8(0x4)
-	bool                                                         bLooping;                                          // 0x3ec(0x1)
-	bool                                                         bRewindOnPlay;                                     // 0x3ec(0x1)
-	bool                                                         bNoResetOnRewind;                                  // 0x3ec(0x1)
-	bool                                                         bRewindIfAlreadyPlaying;                           // 0x3ec(0x1)
-	bool                                                         bDisableRadioFilter;                               // 0x3ec(0x1)
-	bool                                                         bClientSideOnly;                                   // 0x3ec(0x1)
-	bool                                                         bSkipUpdateIfNotVisible;                           // 0x3ec(0x1)
-	bool                                                         bIsSkippable;                                      // 0x3ec(0x1)
-	int                                                          PreferredSplitScreenNum;                           // 0x3f0(0x4)
-	bool                                                         bDisableMovementInput;                             // 0x3f4(0x1)
-	bool                                                         bDisableLookAtInput;                               // 0x3f4(0x1)
-	bool                                                         bHidePlayer;                                       // 0x3f4(0x1)
-	bool                                                         bHideHud;                                          // 0x3f4(0x1)
-	TArray<Struct InterpGroupActorInfo>                          GroupActorInfos;                                   // 0x3f8(0x10)
-	bool                                                         bShouldShowGore;                                   // 0x408(0x1)
-	TArray<class GroupInst*>                                     GroupInst;                                         // 0x410(0x10)
-	TArray<Struct CameraCutInfo>                                 CameraCuts;                                        // 0x420(0x10)
-	bool                                                         bIsPlaying;                                        // 0x430(0x1)
-	bool                                                         bReversePlayback;                                  // 0x430(0x1)
-	bool                                                         bPaused;                                           // 0x430(0x1)
-	bool                                                         bPendingStop;                                      // 0x430(0x1)
-	float                                                        InterpPosition;                                    // 0x434(0x4)
-	byte                                                         ReplicationForceIsPlaying;                         // 0x43c(0x1)
-	bool                                                         bServerInitialLevelStreamingComplete;              // 0x444(0x1)
+	Class InterpData*                                            MatineeData;                                       // 0x3c8(0x8)
+	struct FName                                                 MatineeControllerName;                             // 0x3d0(0x8)
+	float                                                        PlayRate;                                          // 0x3d8(0x4)
+	bool                                                         bPlayOnLevelLoad;                                  // 0x3dc(0x1)
+	bool                                                         bForceStartPos;                                    // 0x3dc(0x1)
+	float                                                        ForceStartPosition;                                // 0x3e0(0x4)
+	bool                                                         bLooping;                                          // 0x3e4(0x1)
+	bool                                                         bRewindOnPlay;                                     // 0x3e4(0x1)
+	bool                                                         bNoResetOnRewind;                                  // 0x3e4(0x1)
+	bool                                                         bRewindIfAlreadyPlaying;                           // 0x3e4(0x1)
+	bool                                                         bDisableRadioFilter;                               // 0x3e4(0x1)
+	bool                                                         bClientSideOnly;                                   // 0x3e4(0x1)
+	bool                                                         bSkipUpdateIfNotVisible;                           // 0x3e4(0x1)
+	bool                                                         bIsSkippable;                                      // 0x3e4(0x1)
+	int                                                          PreferredSplitScreenNum;                           // 0x3e8(0x4)
+	bool                                                         bDisableMovementInput;                             // 0x3ec(0x1)
+	bool                                                         bDisableLookAtInput;                               // 0x3ec(0x1)
+	bool                                                         bHidePlayer;                                       // 0x3ec(0x1)
+	bool                                                         bHideHud;                                          // 0x3ec(0x1)
+	TArray<Struct InterpGroupActorInfo>                          GroupActorInfos;                                   // 0x3f0(0x10)
+	bool                                                         bShouldShowGore;                                   // 0x400(0x1)
+	TArray<class GroupInst*>                                     GroupInst;                                         // 0x408(0x10)
+	TArray<Struct CameraCutInfo>                                 CameraCuts;                                        // 0x418(0x10)
+	bool                                                         bIsPlaying;                                        // 0x428(0x1)
+	bool                                                         bReversePlayback;                                  // 0x428(0x1)
+	bool                                                         bPaused;                                           // 0x428(0x1)
+	bool                                                         bPendingStop;                                      // 0x428(0x1)
+	float                                                        InterpPosition;                                    // 0x42c(0x4)
+	byte                                                         ReplicationForceIsPlaying;                         // 0x434(0x1)
+	bool                                                         bServerInitialLevelStreamingComplete;              // 0x43c(0x1)
 };
 
 
@@ -2619,7 +2619,7 @@ public:
 class MatineeActorCameraAnim: public MatineeActor
 {
 public:
-	Class CameraAnim*                                            CameraAnim;                                        // 0x448(0x8)
+	Class CameraAnim*                                            CameraAnim;                                        // 0x440(0x8)
 };
 
 
@@ -2627,7 +2627,7 @@ public:
 class MergedCollisionActor: public Actor
 {
 public:
-	Class MergedCollisionComponent*                              MergedCollisionComponent;                          // 0x3d0(0x8)
+	Class MergedCollisionComponent*                              MergedCollisionComponent;                          // 0x3c8(0x8)
 };
 
 
@@ -2645,14 +2645,14 @@ public:
 class NavigationData: public Actor
 {
 public:
-	Class PrimitiveComponent*                                    RenderingComp;                                     // 0x3d0(0x8)
-	Struct NavDataConfig                                         NavDataConfig;                                     // 0x3d8(0x58)
-	bool                                                         bEnableDrawing;                                    // 0x430(0x1)
-	bool                                                         bRebuildAtRuntime;                                 // 0x430(0x1)
-	byte                                                         RuntimeGeneration;                                 // 0x434(0x1)
-	bool                                                         bForceRebuildOnLoad;                               // 0x438(0x1)
-	float                                                        ObservedPathsTickInterval;                         // 0x43c(0x4)
-	TArray<Struct SupportedAreaData>                             SupportedAreas;                                    // 0x528(0x10)
+	Class PrimitiveComponent*                                    RenderingComp;                                     // 0x3c8(0x8)
+	Struct NavDataConfig                                         NavDataConfig;                                     // 0x3d0(0x58)
+	bool                                                         bEnableDrawing;                                    // 0x428(0x1)
+	bool                                                         bRebuildAtRuntime;                                 // 0x428(0x1)
+	byte                                                         RuntimeGeneration;                                 // 0x42c(0x1)
+	bool                                                         bForceRebuildOnLoad;                               // 0x430(0x1)
+	float                                                        ObservedPathsTickInterval;                         // 0x434(0x4)
+	TArray<Struct SupportedAreaData>                             SupportedAreas;                                    // 0x520(0x10)
 };
 
 
@@ -2674,60 +2674,60 @@ public:
 class RecastNavMesh: public NavigationData
 {
 public:
-	bool                                                         bDrawTriangleEdges;                                // 0x590(0x1)
-	bool                                                         bDrawPolyEdges;                                    // 0x590(0x1)
-	bool                                                         bDrawFilledPolys;                                  // 0x590(0x1)
-	bool                                                         bDrawNavMeshEdges;                                 // 0x590(0x1)
-	bool                                                         bDrawTileBounds;                                   // 0x590(0x1)
-	bool                                                         bDrawPathCollidingGeometry;                        // 0x590(0x1)
-	bool                                                         bDrawTileLabels;                                   // 0x590(0x1)
-	bool                                                         bDrawPolygonLabels;                                // 0x590(0x1)
-	bool                                                         bDrawDefaultPolygonCost;                           // 0x591(0x1)
-	bool                                                         bDrawLabelsOnPathNodes;                            // 0x591(0x1)
-	bool                                                         bDrawNavLinks;                                     // 0x591(0x1)
-	bool                                                         bDrawFailedNavLinks;                               // 0x591(0x1)
-	bool                                                         bDrawClusters;                                     // 0x591(0x1)
-	bool                                                         bDrawOctree;                                       // 0x591(0x1)
-	bool                                                         bDistinctlyDrawTilesBeingBuilt;                    // 0x591(0x1)
-	bool                                                         bDrawNavMesh;                                      // 0x591(0x1)
-	float                                                        DrawOffset;                                        // 0x594(0x4)
-	float                                                        BuiltTileSizeUU;                                   // 0x598(0x4)
-	float                                                        BuiltCellSize;                                     // 0x59c(0x4)
-	bool                                                         bFixedTilePoolSize;                                // 0x5a0(0x1)
-	int                                                          TilePoolSize;                                      // 0x5a4(0x4)
-	float                                                        TileSizeUU;                                        // 0x5a8(0x4)
-	float                                                        CellSize;                                          // 0x5ac(0x4)
-	float                                                        CellHeight;                                        // 0x5b0(0x4)
-	float                                                        AgentRadius;                                       // 0x5b4(0x4)
-	float                                                        AgentHeight;                                       // 0x5b8(0x4)
-	float                                                        AgentMaxHeight;                                    // 0x5bc(0x4)
-	float                                                        AgentMaxSlope;                                     // 0x5c0(0x4)
-	float                                                        AgentMaxStepHeight;                                // 0x5c4(0x4)
-	float                                                        MinRegionArea;                                     // 0x5c8(0x4)
-	float                                                        MergeRegionSize;                                   // 0x5cc(0x4)
-	float                                                        MaxSimplificationError;                            // 0x5d0(0x4)
-	int                                                          MaxSimultaneousTileGenerationJobsCount;            // 0x5d4(0x4)
-	int                                                          TileNumberHardLimit;                               // 0x5d8(0x4)
-	int                                                          PolyRefTileBits;                                   // 0x5dc(0x4)
-	int                                                          PolyRefNavPolyBits;                                // 0x5e0(0x4)
-	int                                                          PolyRefSaltBits;                                   // 0x5e4(0x4)
-	float                                                        DefaultDrawDistance;                               // 0x5e8(0x4)
-	float                                                        DefaultMaxSearchNodes;                             // 0x5ec(0x4)
-	float                                                        DefaultMaxHierarchicalSearchNodes;                 // 0x5f0(0x4)
-	byte                                                         RegionPartitioning;                                // 0x5f4(0x1)
-	byte                                                         LayerPartitioning;                                 // 0x5f5(0x1)
-	int                                                          RegionChunkSplits;                                 // 0x5f8(0x4)
-	int                                                          LayerChunkSplits;                                  // 0x5fc(0x4)
-	bool                                                         bSortNavigationAreasByCost;                        // 0x600(0x1)
-	bool                                                         bPerformVoxelFiltering;                            // 0x600(0x1)
-	bool                                                         bMarkLowHeightAreas;                               // 0x600(0x1)
-	bool                                                         bDoFullyAsyncNavDataGathering;                     // 0x600(0x1)
-	bool                                                         bUseBetterOffsetsFromCorners;                      // 0x600(0x1)
-	bool                                                         bUseVirtualFilters;                                // 0x600(0x1)
-	bool                                                         bUseVoxelCache;                                    // 0x600(0x1)
-	float                                                        TileSetUpdateInterval;                             // 0x604(0x4)
-	float                                                        HeuristicScale;                                    // 0x608(0x4)
-	float                                                        VerticalDeviationFromGroundCompensation;           // 0x60c(0x4)
+	bool                                                         bDrawTriangleEdges;                                // 0x588(0x1)
+	bool                                                         bDrawPolyEdges;                                    // 0x588(0x1)
+	bool                                                         bDrawFilledPolys;                                  // 0x588(0x1)
+	bool                                                         bDrawNavMeshEdges;                                 // 0x588(0x1)
+	bool                                                         bDrawTileBounds;                                   // 0x588(0x1)
+	bool                                                         bDrawPathCollidingGeometry;                        // 0x588(0x1)
+	bool                                                         bDrawTileLabels;                                   // 0x588(0x1)
+	bool                                                         bDrawPolygonLabels;                                // 0x588(0x1)
+	bool                                                         bDrawDefaultPolygonCost;                           // 0x589(0x1)
+	bool                                                         bDrawLabelsOnPathNodes;                            // 0x589(0x1)
+	bool                                                         bDrawNavLinks;                                     // 0x589(0x1)
+	bool                                                         bDrawFailedNavLinks;                               // 0x589(0x1)
+	bool                                                         bDrawClusters;                                     // 0x589(0x1)
+	bool                                                         bDrawOctree;                                       // 0x589(0x1)
+	bool                                                         bDistinctlyDrawTilesBeingBuilt;                    // 0x589(0x1)
+	bool                                                         bDrawNavMesh;                                      // 0x589(0x1)
+	float                                                        DrawOffset;                                        // 0x58c(0x4)
+	float                                                        BuiltTileSizeUU;                                   // 0x590(0x4)
+	float                                                        BuiltCellSize;                                     // 0x594(0x4)
+	bool                                                         bFixedTilePoolSize;                                // 0x598(0x1)
+	int                                                          TilePoolSize;                                      // 0x59c(0x4)
+	float                                                        TileSizeUU;                                        // 0x5a0(0x4)
+	float                                                        CellSize;                                          // 0x5a4(0x4)
+	float                                                        CellHeight;                                        // 0x5a8(0x4)
+	float                                                        AgentRadius;                                       // 0x5ac(0x4)
+	float                                                        AgentHeight;                                       // 0x5b0(0x4)
+	float                                                        AgentMaxHeight;                                    // 0x5b4(0x4)
+	float                                                        AgentMaxSlope;                                     // 0x5b8(0x4)
+	float                                                        AgentMaxStepHeight;                                // 0x5bc(0x4)
+	float                                                        MinRegionArea;                                     // 0x5c0(0x4)
+	float                                                        MergeRegionSize;                                   // 0x5c4(0x4)
+	float                                                        MaxSimplificationError;                            // 0x5c8(0x4)
+	int                                                          MaxSimultaneousTileGenerationJobsCount;            // 0x5cc(0x4)
+	int                                                          TileNumberHardLimit;                               // 0x5d0(0x4)
+	int                                                          PolyRefTileBits;                                   // 0x5d4(0x4)
+	int                                                          PolyRefNavPolyBits;                                // 0x5d8(0x4)
+	int                                                          PolyRefSaltBits;                                   // 0x5dc(0x4)
+	float                                                        DefaultDrawDistance;                               // 0x5e0(0x4)
+	float                                                        DefaultMaxSearchNodes;                             // 0x5e4(0x4)
+	float                                                        DefaultMaxHierarchicalSearchNodes;                 // 0x5e8(0x4)
+	byte                                                         RegionPartitioning;                                // 0x5ec(0x1)
+	byte                                                         LayerPartitioning;                                 // 0x5ed(0x1)
+	int                                                          RegionChunkSplits;                                 // 0x5f0(0x4)
+	int                                                          LayerChunkSplits;                                  // 0x5f4(0x4)
+	bool                                                         bSortNavigationAreasByCost;                        // 0x5f8(0x1)
+	bool                                                         bPerformVoxelFiltering;                            // 0x5f8(0x1)
+	bool                                                         bMarkLowHeightAreas;                               // 0x5f8(0x1)
+	bool                                                         bDoFullyAsyncNavDataGathering;                     // 0x5f8(0x1)
+	bool                                                         bUseBetterOffsetsFromCorners;                      // 0x5f8(0x1)
+	bool                                                         bUseVirtualFilters;                                // 0x5f8(0x1)
+	bool                                                         bUseVoxelCache;                                    // 0x5f8(0x1)
+	float                                                        TileSetUpdateInterval;                             // 0x5fc(0x4)
+	float                                                        HeuristicScale;                                    // 0x600(0x4)
+	float                                                        VerticalDeviationFromGroundCompensation;           // 0x604(0x4)
 };
 
 
@@ -2756,33 +2756,33 @@ public:
 class NavigationTestingActor: public Actor
 {
 public:
-	Class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3e0(0x8)
-	Class NavigationInvokerComponent*                            InvokerComponent;                                  // 0x3e8(0x8)
-	bool                                                         bActAsNavigationInvoker;                           // 0x3f0(0x1)
-	Struct NavAgentProperties                                    NavAgentProps;                                     // 0x3f4(0x30)
-	Struct Vector                                                QueryingExtent;                                    // 0x424(0xc)
-	Class NavigationData*                                        MyNavData;                                         // 0x430(0x8)
-	Struct Vector                                                ProjectedLocation;                                 // 0x438(0xc)
-	bool                                                         bProjectedLocationValid;                           // 0x444(0x1)
-	bool                                                         bSearchStart;                                      // 0x444(0x1)
-	bool                                                         bUseHierarchicalPathfinding;                       // 0x444(0x1)
-	bool                                                         bGatherDetailedInfo;                               // 0x444(0x1)
-	bool                                                         bShowNodePool;                                     // 0x444(0x1)
-	bool                                                         bShowBestPath;                                     // 0x444(0x1)
-	bool                                                         bShowDiffWithPreviousStep;                         // 0x444(0x1)
-	bool                                                         bShouldBeVisibleInGame;                            // 0x444(0x1)
-	byte                                                         CostDisplayMode;                                   // 0x448(0x1)
-	Struct Vector2D                                              TextCanvasOffset;                                  // 0x44c(0x8)
-	bool                                                         bPathExist;                                        // 0x454(0x1)
-	bool                                                         bPathIsPartial;                                    // 0x454(0x1)
-	bool                                                         bPathSearchOutOfNodes;                             // 0x454(0x1)
-	float                                                        PathfindingTime;                                   // 0x458(0x4)
-	float                                                        PathCost;                                          // 0x45c(0x4)
-	int                                                          PathfindingSteps;                                  // 0x460(0x4)
-	Class NavigationTestingActor*                                OtherActor;                                        // 0x468(0x8)
-	class                                                        FilterClass;                                       // 0x470(0x8)
-	int                                                          ShowStepIndex;                                     // 0x478(0x4)
-	float                                                        OffsetFromCornersDistance;                         // 0x47c(0x4)
+	Class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d8(0x8)
+	Class NavigationInvokerComponent*                            InvokerComponent;                                  // 0x3e0(0x8)
+	bool                                                         bActAsNavigationInvoker;                           // 0x3e8(0x1)
+	Struct NavAgentProperties                                    NavAgentProps;                                     // 0x3ec(0x30)
+	Struct Vector                                                QueryingExtent;                                    // 0x41c(0xc)
+	Class NavigationData*                                        MyNavData;                                         // 0x428(0x8)
+	Struct Vector                                                ProjectedLocation;                                 // 0x430(0xc)
+	bool                                                         bProjectedLocationValid;                           // 0x43c(0x1)
+	bool                                                         bSearchStart;                                      // 0x43c(0x1)
+	bool                                                         bUseHierarchicalPathfinding;                       // 0x43c(0x1)
+	bool                                                         bGatherDetailedInfo;                               // 0x43c(0x1)
+	bool                                                         bShowNodePool;                                     // 0x43c(0x1)
+	bool                                                         bShowBestPath;                                     // 0x43c(0x1)
+	bool                                                         bShowDiffWithPreviousStep;                         // 0x43c(0x1)
+	bool                                                         bShouldBeVisibleInGame;                            // 0x43c(0x1)
+	byte                                                         CostDisplayMode;                                   // 0x440(0x1)
+	Struct Vector2D                                              TextCanvasOffset;                                  // 0x444(0x8)
+	bool                                                         bPathExist;                                        // 0x44c(0x1)
+	bool                                                         bPathIsPartial;                                    // 0x44c(0x1)
+	bool                                                         bPathSearchOutOfNodes;                             // 0x44c(0x1)
+	float                                                        PathfindingTime;                                   // 0x450(0x4)
+	float                                                        PathCost;                                          // 0x454(0x4)
+	int                                                          PathfindingSteps;                                  // 0x458(0x4)
+	Class NavigationTestingActor*                                OtherActor;                                        // 0x460(0x8)
+	class                                                        FilterClass;                                       // 0x468(0x8)
+	int                                                          ShowStepIndex;                                     // 0x470(0x4)
+	float                                                        OffsetFromCornersDistance;                         // 0x474(0x4)
 };
 
 
@@ -2806,10 +2806,10 @@ public:
 class NavLinkProxy: public Actor
 {
 public:
-	TArray<Struct NavigationLink>                                PointLinks;                                        // 0x3e0(0x10)
-	TArray<Struct NavigationSegmentLink>                         SegmentLinks;                                      // 0x3f0(0x10)
-	Class NavLinkCustomComponent*                                SmartLinkComp;                                     // 0x400(0x8)
-	bool                                                         bSmartLinkIsRelevant;                              // 0x408(0x1)
+	TArray<Struct NavigationLink>                                PointLinks;                                        // 0x3d8(0x10)
+	TArray<Struct NavigationSegmentLink>                         SegmentLinks;                                      // 0x3e8(0x10)
+	Class NavLinkCustomComponent*                                SmartLinkComp;                                     // 0x3f8(0x8)
+	bool                                                         bSmartLinkIsRelevant;                              // 0x400(0x1)
 };
 
 
@@ -2938,12 +2938,12 @@ public:
 class DefaultPawn: public Pawn
 {
 public:
-	float                                                        BaseTurnRate;                                      // 0x448(0x4)
-	float                                                        BaseLookUpRate;                                    // 0x44c(0x4)
-	Class PawnMovementComponent*                                 MovementComponent;                                 // 0x450(0x8)
-	Class SphereComponent*                                       CollisionComponent;                                // 0x458(0x8)
-	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x460(0x8)
-	bool                                                         bAddDefaultMovementBindings;                       // 0x468(0x1)
+	float                                                        BaseTurnRate;                                      // 0x440(0x4)
+	float                                                        BaseLookUpRate;                                    // 0x444(0x4)
+	Class PawnMovementComponent*                                 MovementComponent;                                 // 0x448(0x8)
+	Class SphereComponent*                                       CollisionComponent;                                // 0x450(0x8)
+	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x458(0x8)
+	bool                                                         bAddDefaultMovementBindings;                       // 0x460(0x1)
 };
 
 
@@ -2958,7 +2958,7 @@ public:
 class ReflectionCapture: public Actor
 {
 public:
-	Class ReflectionCaptureComponent*                            CaptureComponent;                                  // 0x3d0(0x8)
+	Class ReflectionCaptureComponent*                            CaptureComponent;                                  // 0x3c8(0x8)
 };
 
 
@@ -2980,7 +2980,7 @@ public:
 class SphereReflectionCapture: public ReflectionCapture
 {
 public:
-	Class DrawSphereComponent*                                   DrawCaptureRadius;                                 // 0x3d8(0x8)
+	Class DrawSphereComponent*                                   DrawCaptureRadius;                                 // 0x3d0(0x8)
 };
 
 
@@ -2995,10 +2995,10 @@ public:
 class PhysicsConstraintActor: public RigidBodyBase
 {
 public:
-	Class PhysicsConstraintComponent*                            ConstraintComp;                                    // 0x3d0(0x8)
-	Class Actor*                                                 ConstraintActor1;                                  // 0x3d8(0x8)
-	Class Actor*                                                 ConstraintActor2;                                  // 0x3e0(0x8)
-	bool                                                         bDisableCollision;                                 // 0x3e8(0x1)
+	Class PhysicsConstraintComponent*                            ConstraintComp;                                    // 0x3c8(0x8)
+	Class Actor*                                                 ConstraintActor1;                                  // 0x3d0(0x8)
+	Class Actor*                                                 ConstraintActor2;                                  // 0x3d8(0x8)
+	bool                                                         bDisableCollision;                                 // 0x3e0(0x1)
 };
 
 
@@ -3006,7 +3006,7 @@ public:
 class PhysicsThruster: public RigidBodyBase
 {
 public:
-	Class PhysicsThrusterComponent*                              ThrusterComponent;                                 // 0x3d0(0x8)
+	Class PhysicsThrusterComponent*                              ThrusterComponent;                                 // 0x3c8(0x8)
 };
 
 
@@ -3014,7 +3014,7 @@ public:
 class RadialForceActor: public RigidBodyBase
 {
 public:
-	Class RadialForceComponent*                                  ForceComponent;                                    // 0x3d0(0x8)
+	Class RadialForceComponent*                                  ForceComponent;                                    // 0x3c8(0x8)
 };
 
 
@@ -3022,7 +3022,7 @@ public:
 class SceneCapture: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   MeshComp;                                          // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   MeshComp;                                          // 0x3c8(0x8)
 };
 
 
@@ -3030,8 +3030,8 @@ public:
 class SceneCapture2D: public SceneCapture
 {
 public:
-	Class SceneCaptureComponent2D*                               CaptureComponent2D;                                // 0x3d8(0x8)
-	Class DrawFrustumComponent*                                  DrawFrustum;                                       // 0x3e0(0x8)
+	Class SceneCaptureComponent2D*                               CaptureComponent2D;                                // 0x3d0(0x8)
+	Class DrawFrustumComponent*                                  DrawFrustum;                                       // 0x3d8(0x8)
 };
 
 
@@ -3039,8 +3039,8 @@ public:
 class SceneCaptureCube: public SceneCapture
 {
 public:
-	Class SceneCaptureComponentCube*                             CaptureComponentCube;                              // 0x3d8(0x8)
-	Class DrawFrustumComponent*                                  DrawFrustum;                                       // 0x3e0(0x8)
+	Class SceneCaptureComponentCube*                             CaptureComponentCube;                              // 0x3d0(0x8)
+	Class DrawFrustumComponent*                                  DrawFrustum;                                       // 0x3d8(0x8)
 };
 
 
@@ -3177,13 +3177,13 @@ public:
 class SkeletalMeshActor: public Actor
 {
 public:
-	bool                                                         bShouldDoAnimNotifies;                             // 0x3d8(0x1)
-	bool                                                         bWakeOnLevelStart;                                 // 0x3d8(0x1)
-	Class SkeletalMeshComponent*                                 SkeletalMeshComponent;                             // 0x3e0(0x8)
-	Class SkeletalMesh*                                          ReplicatedMesh;                                    // 0x3e8(0x8)
-	Class PhysicsAsset*                                          ReplicatedPhysAsset;                               // 0x3f0(0x8)
-	Class MaterialInterface*                                     ReplicatedMaterial0;                               // 0x3f8(0x8)
-	Class MaterialInterface*                                     ReplicatedMaterial1;                               // 0x400(0x8)
+	bool                                                         bShouldDoAnimNotifies;                             // 0x3d0(0x1)
+	bool                                                         bWakeOnLevelStart;                                 // 0x3d0(0x1)
+	Class SkeletalMeshComponent*                                 SkeletalMeshComponent;                             // 0x3d8(0x8)
+	Class SkeletalMesh*                                          ReplicatedMesh;                                    // 0x3e0(0x8)
+	Class PhysicsAsset*                                          ReplicatedPhysAsset;                               // 0x3e8(0x8)
+	Class MaterialInterface*                                     ReplicatedMaterial0;                               // 0x3f0(0x8)
+	Class MaterialInterface*                                     ReplicatedMaterial1;                               // 0x3f8(0x8)
 };
 
 
@@ -3191,7 +3191,7 @@ public:
 class SplineMeshActor: public Actor
 {
 public:
-	Class SplineMeshComponent*                                   SplineMeshComponent;                               // 0x3d0(0x8)
+	Class SplineMeshComponent*                                   SplineMeshComponent;                               // 0x3c8(0x8)
 };
 
 
@@ -3199,7 +3199,7 @@ public:
 class CoveredMeshActor: public StaticMeshActor
 {
 public:
-	Class InstancedCoverageMeshComponent*                        InstancedCoverageMeshComponent;                    // 0x3e0(0x8)
+	Class InstancedCoverageMeshComponent*                        InstancedCoverageMeshComponent;                    // 0x3d8(0x8)
 };
 
 
@@ -3221,7 +3221,7 @@ public:
 class TextRenderActor: public Actor
 {
 public:
-	Class TextRenderComponent*                                   TextRender;                                        // 0x3d0(0x8)
+	Class TextRenderComponent*                                   TextRender;                                        // 0x3c8(0x8)
 };
 
 
@@ -3229,8 +3229,8 @@ public:
 class TriggerBase: public Actor
 {
 public:
-	Class ShapeComponent*                                        CollisionComponent;                                // 0x3d0(0x8)
-	Class BillboardComponent*                                    SpriteComponent;                                   // 0x3d8(0x8)
+	Class ShapeComponent*                                        CollisionComponent;                                // 0x3c8(0x8)
+	Class BillboardComponent*                                    SpriteComponent;                                   // 0x3d0(0x8)
 };
 
 
@@ -3259,7 +3259,7 @@ public:
 class VectorFieldVolume: public Actor
 {
 public:
-	Class VectorFieldComponent*                                  VectorFieldComponent;                              // 0x3d0(0x8)
+	Class VectorFieldComponent*                                  VectorFieldComponent;                              // 0x3c8(0x8)
 };
 
 
@@ -3267,7 +3267,7 @@ public:
 class WaterEmissionVolume: public Actor
 {
 public:
-	Class WaterEmissionVolumeComponent*                          WaterEmissionVolumeComponent;                      // 0x3d0(0x8)
+	Class WaterEmissionVolumeComponent*                          WaterEmissionVolumeComponent;                      // 0x3c8(0x8)
 };
 
 
@@ -4076,14 +4076,17 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x40
 class MergedStaticMeshComponent: public StaticMeshComponent
 {
 public:
 	bool                                                         bDisplayMergedInEditor;                            // 0x620(0x1)
 	TArray<Float LODScreenSizes>                                 LODScreenSizes;                                    // 0x628(0x10)
-	int                                                          LODForCollision;                                   // 0x638(0x4)
-	bool                                                         bMergeVertexColours;                               // 0x63c(0x1)
+	TArray<Float LODReductionPercentTriangles>                   LODReductionPercentTriangles;                      // 0x638(0x10)
+	int                                                          LODForCollision;                                   // 0x648(0x4)
+	bool                                                         ClampNumberOfLODs;                                 // 0x64c(0x1)
+	int                                                          MaxNumberOfLODs;                                   // 0x650(0x4)
+	bool                                                         bMergeVertexColours;                               // 0x654(0x1)
 };
 
 

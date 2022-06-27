@@ -2,31 +2,19 @@
 # https://github.com/DougTheDruid
 BP_TaleBook_Shroudbreaker_DaggerToothOutpost_AdditionalPuzzles_:
   Attributes:
-  - Name: None
-    Offset: '0x768'
+  - Name: UberGraphFrame
+    Offset: '0x4b0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x770'
+    Type: Struct PointerToUberGraphFrame
+  - Name: EmissaryFlags
+    Offset: '0x4b8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x778'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x780'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x788'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x790'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  ClassSize: '0x30'
-  FullSize: '0x798'
-  InheritedSize: '0x768'
-  Super: VoyageProposalContainer
+    Type: Class StaticMeshComponent*
+  - Name: Dynamic Materials
+    Offset: '0x4c0'
+    Size: '0x10'
+    Type: TArray<class Dynamic Materials*>
+  ClassSize: '0x20'
+  FullSize: '0x4d0'
+  InheritedSize: '0x4b0'
+  Super: ShipNetProxy

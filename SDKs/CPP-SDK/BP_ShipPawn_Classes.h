@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_ShipPawn_C: public ShipProxyPawn
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x480(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x478(0x8)
 };
 
 

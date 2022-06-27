@@ -30,12 +30,6 @@ ZoomInOnWieldableItemComponent:
   FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ZoomInOnWieldableItemInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 ZoomedInOnWieldableItemActionStateId:
   Attributes: []
   ClassSize: '0x0'

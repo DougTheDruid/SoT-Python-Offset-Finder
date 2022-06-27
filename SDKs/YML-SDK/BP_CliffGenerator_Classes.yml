@@ -3,226 +3,226 @@
 BP_CliffGenerator_C:
   Attributes:
   - Name: Base_Spline
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class SplineComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: Use Specific Start Actor
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x1'
     Type: bool
   - Name: Source Start Actor
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: Use Specific End Actor
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x1'
     Type: bool
   - Name: Source End Actor
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: Source Actors
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class Source Actors*>
   - Name: MaxTopSplineHeight
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x4'
     Type: float
   - Name: SpecifyNumberOfElements
-    Offset: '0x414'
+    Offset: '0x40c'
     Size: '0x1'
     Type: bool
   - Name: NumberOfElements
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x4'
     Type: int
   - Name: ObjectSpacer
-    Offset: '0x41c'
+    Offset: '0x414'
     Size: '0x4'
     Type: float
   - Name: TangetWeights
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x4'
     Type: float
   - Name: Random_Seed
-    Offset: '0x424'
+    Offset: '0x41c'
     Size: '0x4'
     Type: int
   - Name: DataArray
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x10'
     Type: TArray<Struct Source Actors>
   - Name: Use_Deformable(SplineMesh)
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x1'
     Type: bool
   - Name: Instance_Meshes
-    Offset: '0x439'
+    Offset: '0x431'
     Size: '0x1'
     Type: bool
   - Name: Flip_Meshes
-    Offset: '0x43a'
+    Offset: '0x432'
     Size: '0x1'
     Type: bool
   - Name: ArrayStore
-    Offset: '0x43c'
+    Offset: '0x434'
     Size: '0x8'
     Type: Struct RandomStream
   - Name: SplineRemaninderScale
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x4'
     Type: float
   - Name: NumElementsNeeded
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x4'
     Type: int
   - Name: Default_Mesh
-    Offset: '0x44c'
+    Offset: '0x444'
     Size: '0x10'
     Type: Struct BP_CliffGenerator_Struct
   - Name: BlueprintPosition
-    Offset: '0x45c'
+    Offset: '0x454'
     Size: '0xc'
     Type: Struct Vector
   - Name: InverseBlueprintRotation
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0xc'
     Type: Struct Rotator
   - Name: UseSpecifiedMeshAtIndex
-    Offset: '0x474'
+    Offset: '0x46c'
     Size: '0x1'
     Type: bool
   - Name: LoopDataArraySize
-    Offset: '0x475'
+    Offset: '0x46d'
     Size: '0x1'
     Type: bool
   - Name: Collisions
-    Offset: '0x476'
+    Offset: '0x46e'
     Size: '0x1'
     Type: bool
   - Name: '[DEBUG ] SplineNumbers'
-    Offset: '0x477'
+    Offset: '0x46f'
     Size: '0x1'
     Type: bool
   - Name: '[DEBUG ] Flip Text'
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x1'
     Type: bool
   - Name: IsStartIndex
-    Offset: '0x479'
+    Offset: '0x471'
     Size: '0x1'
     Type: bool
   - Name: IsEndIndex
-    Offset: '0x47a'
+    Offset: '0x472'
     Size: '0x1'
     Type: bool
   - Name: GeneratedTopSpline
-    Offset: '0x480'
+    Offset: '0x478'
     Size: '0x8'
     Type: Class SplineComponent*
   - Name: MinTopSplineHeight
-    Offset: '0x488'
+    Offset: '0x480'
     Size: '0x4'
     Type: float
   - Name: AllowTerrainToDrop
-    Offset: '0x48c'
+    Offset: '0x484'
     Size: '0x1'
     Type: bool
   - Name: AllowTerrainToRaise
-    Offset: '0x48d'
+    Offset: '0x485'
     Size: '0x1'
     Type: bool
   - Name: IgnoreTerrainForTopSpline
-    Offset: '0x48e'
+    Offset: '0x486'
     Size: '0x1'
     Type: bool
   - Name: TerrainBlendWidth
-    Offset: '0x490'
+    Offset: '0x488'
     Size: '0x4'
     Type: float
   - Name: TerrainBlendFallOff
-    Offset: '0x494'
+    Offset: '0x48c'
     Size: '0x4'
     Type: float
   - Name: TopSplineRollAmount
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x4'
     Type: float
   - Name: IntersectionAmount
-    Offset: '0x49c'
+    Offset: '0x494'
     Size: '0x4'
     Type: float
   - Name: '[[-----REBUILD SPLINE ----]]'
-    Offset: '0x4a0'
+    Offset: '0x498'
     Size: '0x1'
     Type: bool
   - Name: terrain_component
-    Offset: '0x4a8'
+    Offset: '0x4a0'
     Size: '0x8'
     Type: Class Landscape*
   - Name: UseDetailedTopSpline
-    Offset: '0x4b0'
+    Offset: '0x4a8'
     Size: '0x1'
     Type: bool
   - Name: NumberOfDetailedSplinePoints
-    Offset: '0x4b4'
+    Offset: '0x4ac'
     Size: '0x4'
     Type: int
   - Name: '[DEBUG ] Display Intersection Names'
-    Offset: '0x4b8'
+    Offset: '0x4b0'
     Size: '0x1'
     Type: bool
   - Name: TagToIgnore
-    Offset: '0x4c0'
+    Offset: '0x4b8'
     Size: '0x10'
     Type: Struct FString
   - Name: ActorsToIgnore
-    Offset: '0x4d0'
+    Offset: '0x4c8'
     Size: '0x10'
     Type: TArray<class ActorsToIgnore*>
   - Name: '[[------DEFORM TERRAIN ------]]'
-    Offset: '0x4e0'
+    Offset: '0x4d8'
     Size: '0x1'
     Type: bool
   - Name: HirResult
-    Offset: '0x4e4'
+    Offset: '0x4dc'
     Size: '0x80'
     Type: Struct HitResult
   - Name: TopSplineIntersectionPoints
-    Offset: '0x568'
+    Offset: '0x560'
     Size: '0x10'
     Type: TArray<Struct ActorsToIgnore>
   - Name: Local_InternalActorsToIgnore
-    Offset: '0x578'
+    Offset: '0x570'
     Size: '0x10'
     Type: TArray<class Local_InternalActorsToIgnore*>
   - Name: TopSplineColour
-    Offset: '0x588'
+    Offset: '0x580'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: BottomSplineColour
-    Offset: '0x598'
+    Offset: '0x590'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: Is Reflected
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x1'
     Type: bool
   - Name: DrawDebugLines
-    Offset: '0x5a9'
+    Offset: '0x5a1'
     Size: '0x1'
     Type: byte
   - Name: Affect Rain
-    Offset: '0x5aa'
+    Offset: '0x5a2'
     Size: '0x1'
     Type: bool
   ClassSize: '0x1db'
-  FullSize: '0x5ab'
-  InheritedSize: '0x3d0'
+  FullSize: '0x5a3'
+  InheritedSize: '0x3c8'
   Super: Actor

@@ -1,63 +1,57 @@
 {
   "BP_Wheel_C": {
     "Super": "Wheel",
-    "FullSize": "0xac9",
-    "InheritedSize": "0x9b0",
-    "ClassSize": "0x119",
+    "FullSize": "0xb09",
+    "InheritedSize": "0x9f8",
+    "ClassSize": "0x111",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x9b0"
-      },
-      {
-        "Name": "Wheel",
-        "Type": "Class SkeletalMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x9b8"
+        "Offset": "0x9f8"
       },
       {
         "Name": "ProjectileCollision",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x9c0"
+        "Offset": "0xa00"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x9c8"
+        "Offset": "0xa08"
       },
       {
         "Name": "Wheel Centered",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
-        "Offset": "0x9d0"
+        "Offset": "0xa10"
       },
       {
         "Name": "Wheel Movement Started",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
-        "Offset": "0xa18"
+        "Offset": "0xa58"
       },
       {
         "Name": "Wheel Movement Stopped",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
-        "Offset": "0xa60"
+        "Offset": "0xaa0"
       },
       {
         "Name": "AudioEmitter",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
-        "Offset": "0xaa8"
+        "Offset": "0xae8"
       },
       {
         "Name": "ShipWheelTurning",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xac8"
+        "Offset": "0xb08"
       }
     ]
   },

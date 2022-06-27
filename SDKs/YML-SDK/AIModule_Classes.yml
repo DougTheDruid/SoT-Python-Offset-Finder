@@ -15,52 +15,52 @@ AIBlueprintHelperLibrary:
 AIController:
   Attributes:
   - Name: bLOSflag
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x1'
     Type: bool
   - Name: bSkipExtraLOSChecks
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x1'
     Type: bool
   - Name: bAllowStrafe
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x1'
     Type: bool
   - Name: bWantsPlayerState
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x1'
     Type: bool
   - Name: bDisableControlRotation
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x1'
     Type: bool
   - Name: PathFollowingComponent
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x8'
     Type: Class PathFollowingComponent*
   - Name: BrainComponent
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x8'
     Type: Class BrainComponent*
   - Name: PerceptionComponent
-    Offset: '0x470'
+    Offset: '0x468'
     Size: '0x8'
     Type: Class AIPerceptionComponent*
   - Name: ActionsComp
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x8'
     Type: Class PawnActionsComponent*
   - Name: Blackboard
-    Offset: '0x480'
+    Offset: '0x478'
     Size: '0x8'
     Type: Class BlackboardComponent*
   - Name: CachedGameplayTasksComponent
-    Offset: '0x488'
+    Offset: '0x480'
     Size: '0x8'
     Type: Class GameplayTasksComponent*
   ClassSize: '0x90'
-  FullSize: '0x4c0'
-  InheritedSize: '0x430'
+  FullSize: '0x4b8'
+  InheritedSize: '0x428'
   Super: Controller
 AIDataProvider:
   Attributes: []
@@ -1575,8 +1575,8 @@ CustomDataProviderObject:
 DetourCrowdAIController:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x4c0'
-  InheritedSize: '0x4c0'
+  FullSize: '0x4b8'
+  InheritedSize: '0x4b8'
   Super: AIController
 EQSQueryResultSourceInterface:
   Attributes: []

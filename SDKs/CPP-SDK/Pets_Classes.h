@@ -311,19 +311,19 @@ public:
 class PetAIController: public AthenaAIController
 {
 public:
-	TArray<Struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x918(0x10)
-	float                                                        DefaultControlRotationInterpSpeed;                 // 0x928(0x4)
-	class                                                        DefaultStrategy;                                   // 0x930(0x8)
-	Class ReactStateMappingsDataAsset*                           ReactMappings;                                     // 0x938(0x8)
-	Class PetHangoutSpotSelectorComponent*                       HangoutSpotSelectorComponent;                      // 0x948(0x8)
-	Class PetHangoutSpotComponent*                               ForcedHangoutSpotComponent;                        // 0x950(0x8)
-	Class BlackboardData*                                        DefaultBlackboardAsset;                            // 0x958(0x8)
-	Class BehaviorTree*                                          DefaultTree;                                       // 0x960(0x8)
-	Class BehaviorTree*                                          HangoutTree;                                       // 0x968(0x8)
-	Class BehaviorTree*                                          IdleTree;                                          // 0x970(0x8)
-	float                                                        MaximumReactRange;                                 // 0x978(0x4)
-	Class PetDangerComponent*                                    DangerComponent;                                   // 0x980(0x8)
-	float                                                        MinAgentHalfHeightPctOverride;                     // 0x988(0x4)
+	TArray<Struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x910(0x10)
+	float                                                        DefaultControlRotationInterpSpeed;                 // 0x920(0x4)
+	class                                                        DefaultStrategy;                                   // 0x928(0x8)
+	Class ReactStateMappingsDataAsset*                           ReactMappings;                                     // 0x930(0x8)
+	Class PetHangoutSpotSelectorComponent*                       HangoutSpotSelectorComponent;                      // 0x940(0x8)
+	Class PetHangoutSpotComponent*                               ForcedHangoutSpotComponent;                        // 0x948(0x8)
+	Class BlackboardData*                                        DefaultBlackboardAsset;                            // 0x950(0x8)
+	Class BehaviorTree*                                          DefaultTree;                                       // 0x958(0x8)
+	Class BehaviorTree*                                          HangoutTree;                                       // 0x960(0x8)
+	Class BehaviorTree*                                          IdleTree;                                          // 0x968(0x8)
+	float                                                        MaximumReactRange;                                 // 0x970(0x4)
+	Class PetDangerComponent*                                    DangerComponent;                                   // 0x978(0x8)
+	float                                                        MinAgentHalfHeightPctOverride;                     // 0x980(0x4)
 };
 
 
@@ -385,12 +385,12 @@ public:
 class PetItemInfo: public NonStorableItemInfo
 {
 public:
-	Struct PetCustomisation                                      PetCustomisation;                                  // 0x518(0x18)
-	Class Actor*                                                 PetOwner;                                          // 0x530(0x8)
-	Class Actor*                                                 SpawnedForShip;                                    // 0x538(0x8)
-	float                                                        DropTraceDistance;                                 // 0x540(0x4)
-	float                                                        PointSearchRadius;                                 // 0x544(0x4)
-	byte                                                         DropChannel;                                       // 0x548(0x1)
+	Struct PetCustomisation                                      PetCustomisation;                                  // 0x510(0x18)
+	Class Actor*                                                 PetOwner;                                          // 0x528(0x8)
+	Class Actor*                                                 SpawnedForShip;                                    // 0x530(0x8)
+	float                                                        DropTraceDistance;                                 // 0x538(0x4)
+	float                                                        PointSearchRadius;                                 // 0x53c(0x4)
+	byte                                                         DropChannel;                                       // 0x540(0x1)
 };
 
 
@@ -517,28 +517,28 @@ public:
 class WieldablePet: public SkeletalMeshWieldableItem
 {
 public:
-	float                                                        ThirdPersonScalingModifier;                        // 0x7c0(0x4)
-	Class WieldablePetComponent*                                 WieldablePetComponent;                             // 0x7c8(0x8)
-	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0x7d0(0x8)
-	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0x7d8(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitterComponent;                   // 0x7e0(0x8)
-	Class WaterExposureComponent*                                WaterExposureComponent;                            // 0x7e8(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x7f0(0x8)
-	Class PickupableComponent*                                   PickupableComponent;                               // 0x7f8(0x8)
-	Class WieldableInteractableComponent*                        WieldableInteractableComponent;                    // 0x800(0x8)
-	Class CleanlinessComponent*                                  CleanlinessComponent;                              // 0x808(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightWeightStatusEffectManagerComponent;           // 0x810(0x8)
-	Class PetDitherComponent*                                    PetDitherComponent;                                // 0x818(0x8)
-	Class Actor*                                                 PetOwner;                                          // 0x820(0x8)
-	Class FeedingComponent*                                      FeedingComponent;                                  // 0x828(0x8)
-	Class PetSicknessComponent*                                  SicknessComponent;                                 // 0x830(0x8)
-	Class WieldablePetHungerComponent*                           HungerComponent;                                   // 0x838(0x8)
-	Class StarvingComponent*                                     StarvingComponent;                                 // 0x840(0x8)
-	Class PetTelemetryComponent*                                 TelemetryComponent;                                // 0x848(0x8)
-	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0x850(0x8)
-	bool                                                         SubmergedStrokingEnabled;                          // 0x858(0x1)
-	byte                                                         HungerReactAnimationState;                         // 0x8c8(0x1)
-	byte                                                         DropRequest;                                       // 0x8c9(0x1)
+	float                                                        ThirdPersonScalingModifier;                        // 0x7b0(0x4)
+	Class WieldablePetComponent*                                 WieldablePetComponent;                             // 0x7b8(0x8)
+	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0x7c0(0x8)
+	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0x7c8(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitterComponent;                   // 0x7d0(0x8)
+	Class WaterExposureComponent*                                WaterExposureComponent;                            // 0x7d8(0x8)
+	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x7e0(0x8)
+	Class PickupableComponent*                                   PickupableComponent;                               // 0x7e8(0x8)
+	Class WieldableInteractableComponent*                        WieldableInteractableComponent;                    // 0x7f0(0x8)
+	Class CleanlinessComponent*                                  CleanlinessComponent;                              // 0x7f8(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightWeightStatusEffectManagerComponent;           // 0x800(0x8)
+	Class PetDitherComponent*                                    PetDitherComponent;                                // 0x808(0x8)
+	Class Actor*                                                 PetOwner;                                          // 0x810(0x8)
+	Class FeedingComponent*                                      FeedingComponent;                                  // 0x818(0x8)
+	Class PetSicknessComponent*                                  SicknessComponent;                                 // 0x820(0x8)
+	Class WieldablePetHungerComponent*                           HungerComponent;                                   // 0x828(0x8)
+	Class StarvingComponent*                                     StarvingComponent;                                 // 0x830(0x8)
+	Class PetTelemetryComponent*                                 TelemetryComponent;                                // 0x838(0x8)
+	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0x840(0x8)
+	bool                                                         SubmergedStrokingEnabled;                          // 0x848(0x1)
+	byte                                                         HungerReactAnimationState;                         // 0x8b8(0x1)
+	byte                                                         DropRequest;                                       // 0x8b9(0x1)
 };
 
 

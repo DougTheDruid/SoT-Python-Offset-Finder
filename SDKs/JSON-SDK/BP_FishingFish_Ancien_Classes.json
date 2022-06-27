@@ -1,6 +1,6 @@
 {
   "BP_FishingFish_AncientScale_Base_C": {
-    "Super": "BP_FishingFish_SplashTail_Base_C",
+    "Super": "BP_FishingFish_Base_C",
     "FullSize": "0x920",
     "InheritedSize": "0x920",
     "ClassSize": "0x0",

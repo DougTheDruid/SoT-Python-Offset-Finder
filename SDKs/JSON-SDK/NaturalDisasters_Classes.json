@@ -39,89 +39,89 @@
   },
   "AshenLordAshCloud": {
     "Super": "Actor",
-    "FullSize": "0x458",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x450",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "CloudMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "SetupData",
         "Type": "Class AshenLordAshCloudSetupDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "InnerRangeStartOffset",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "OuterRangeStart",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3e4"
+        "Offset": "0x3dc"
       },
       {
         "Name": "NormalisedEngulfedRTPC",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "RTPCSecondsBetweenUpdates",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "LifeTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "StartTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3fc"
+        "Offset": "0x3f4"
       },
       {
         "Name": "TimeOffset",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "CloudState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x404"
+        "Offset": "0x3fc"
       },
       {
         "Name": "MaxRadiusMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x43c"
+        "Offset": "0x434"
       }
     ]
   },
   "AshenLordVolcano": {
     "Super": "Actor",
-    "FullSize": "0x440",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x438",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "VolcanoSetupData",
         "Type": "Class AshenLordVolcanoSetupDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       }
     ]
   },
@@ -419,133 +419,133 @@
   },
   "AshenLordWorldEndCloud": {
     "Super": "Actor",
-    "FullSize": "0x3e8",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "SelfDestructDelayOnComplete",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "CloudState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3d4"
+        "Offset": "0x3cc"
       },
       {
         "Name": "CurrentCloudAnimation",
         "Type": "Struct AshenLordWorldEndCloudAnimation",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       }
     ]
   },
   "Geyser": {
     "Super": "Actor",
-    "FullSize": "0x480",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x478",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0xb0",
     "Attributes": [
       {
         "Name": "SetupData",
         "Type": "Class GeyserSetupDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "GeyserState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "GeyserBuildUpPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "GeyserBlowPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "StartActiveAudioLoopEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "StopActiveAudioLoopEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "PlayEruptingAudioEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "ExplosionComponent",
         "Type": "Class ExplosionComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "ActiveParticlesComponent",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "EruptingParticlesComponent",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "HitTestTraceChannel",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "GeyserHoleClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "GeyserHole",
         "Type": "Class Hole*",
         "Size": "0x8",
-        "Offset": "0x438"
+        "Offset": "0x430"
       }
     ]
   },
   "DisableGeyserMechanismAction": {
     "Super": "Actor",
-    "FullSize": "0x3e8",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "MechanismActionComponent",
         "Type": "Class MechanismActionComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "GeysersToDisable",
         "Type": "TArray<class GeysersToDisable*>",
         "Size": "0x10",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       }
     ]
   },
@@ -703,125 +703,125 @@
   },
   "Earthquake": {
     "Super": "Actor",
-    "FullSize": "0x5a0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x598",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x1d0",
     "Attributes": [
       {
         "Name": "EarthquakeSetupData",
         "Type": "Class EarthquakeSetupDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "AssociatedVolcano",
         "Type": "Class Volcano*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "AssociatedGeyserManager",
         "Type": "Class GeyserManager*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "EarthquakeEffectInnerRadiusOffsetInMetres",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "AudioPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "PlayEarthquakeLarge",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "StopEarthquakeLarge",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PlayEarthquakeSmall",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "StopEarthquakeSmall",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "EarthquakeRtpcName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "EarthquakeRtpcMin",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "EarthquakeRtpcMax",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x434"
+        "Offset": "0x42c"
       },
       {
         "Name": "EarthquakeSizeToUseLargeAttenuation",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "HitDetectionVolume",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x440"
+        "Offset": "0x438"
       },
       {
         "Name": "WindZone",
         "Type": "Class WindZoneComponent*",
         "Size": "0x8",
-        "Offset": "0x448"
+        "Offset": "0x440"
       },
       {
         "Name": "EarthquakeState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x450"
+        "Offset": "0x448"
       }
     ]
   },
   "MechanismGeyser": {
     "Super": "Geyser",
-    "FullSize": "0x490",
-    "InheritedSize": "0x480",
+    "FullSize": "0x488",
+    "InheritedSize": "0x478",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "GeyserStateWhenMechanismIsInactive",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x480"
+        "Offset": "0x478"
       },
       {
         "Name": "MechanismActionComponent",
         "Type": "Class MechanismActionComponent*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x480"
       }
     ]
   },
@@ -944,27 +944,27 @@
   },
   "GeyserManager": {
     "Super": "Actor",
-    "FullSize": "0x430",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "GeyserManagerSetupData",
         "Type": "Class GeyserManagerSetupDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "Root",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "State",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       }
     ]
   },
@@ -1028,51 +1028,51 @@
   },
   "LavaZone": {
     "Super": "Actor",
-    "FullSize": "0x470",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x468",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "TimeBetweenActivations",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "ActiveDuration",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "LavaMaterial",
         "Type": "Class PhysicalMaterial*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "ActorsInZone",
         "Type": "TArray<class ActorsInZone*>",
         "Size": "0x10",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "Active",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x448"
+        "Offset": "0x440"
       },
       {
         "Name": "InitializeFromGlobalState",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x449"
+        "Offset": "0x441"
       },
       {
         "Name": "SelfActivating",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x44a"
+        "Offset": "0x442"
       }
     ]
   },
@@ -1186,191 +1186,191 @@
   },
   "SuperheatedWater": {
     "Super": "Murk",
-    "FullSize": "0x578",
-    "InheritedSize": "0x470",
+    "FullSize": "0x570",
+    "InheritedSize": "0x468",
     "ClassSize": "0x108",
     "Attributes": [
       {
         "Name": "SetupData",
         "Type": "Class SuperheatedWaterSetupDataAsset*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x478"
       },
       {
         "Name": "HitDetectionVolume",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x480"
       },
       {
         "Name": "FakeUnderwaterLocationsMinDistanceInMetres",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x490"
+        "Offset": "0x488"
       },
       {
         "Name": "FakeUnderwaterLocationsDistanceBetweenPointsInMetres",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x494"
+        "Offset": "0x48c"
       },
       {
         "Name": "PlayersInZone",
         "Type": "TArray<Weakclass PlayersInZone>",
         "Size": "0x10",
-        "Offset": "0x498"
+        "Offset": "0x490"
       }
     ]
   },
   "Volcano": {
     "Super": "Actor",
-    "FullSize": "0x5c0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x5b8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x1f0",
     "Attributes": [
       {
         "Name": "HitDetectionVolume",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "UseDormantDuration",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "VolcanoSetupData",
         "Type": "Class VolcanoSetupDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "AssociatedSuperheatedWater",
         "Type": "Class Murk*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "AssociatedLavaZone",
         "Type": "Class LavaZone*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "InnerTargetRadiusInMetres",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "OuterTargetRadiusInMetres",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x414"
+        "Offset": "0x40c"
       },
       {
         "Name": "NearbyPlayerRangeToFireProjectilesInMetres",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "RandomShipPositionScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x41c"
+        "Offset": "0x414"
       },
       {
         "Name": "WarmingUpEmitter",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "EruptingEmitter",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "BlendedLightingZoneComponent",
         "Type": "Class BlendedLightingZoneComponent*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "BlendedAtmosphericPressureZoneComponent",
         "Type": "Class BlendedAtmosphericPressureZoneComponent*",
         "Size": "0x8",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "BlendedPostProcessingRainZoneComponent",
         "Type": "Class BlendedPostProcessingRainZoneComponent*",
         "Size": "0x8",
-        "Offset": "0x440"
+        "Offset": "0x438"
       },
       {
         "Name": "ProjectileLaunchOffset",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x448"
+        "Offset": "0x440"
       },
       {
         "Name": "AudioPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x458"
+        "Offset": "0x450"
       },
       {
         "Name": "WarmupAudioPlayEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x458"
       },
       {
         "Name": "WarmupAudioStopEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x460"
       },
       {
         "Name": "EruptingAudioPlayEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x468"
       },
       {
         "Name": "EruptingAudioStopEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x470"
       },
       {
         "Name": "InstantKillZone",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x478"
       },
       {
         "Name": "InstantKillZoneTestInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x488"
+        "Offset": "0x480"
       },
       {
         "Name": "StateData",
         "Type": "Struct VolcanoStateData",
         "Size": "0xc",
-        "Offset": "0x48c"
+        "Offset": "0x484"
       },
       {
         "Name": "AssociatedIslandName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x490"
       }
     ]
   },

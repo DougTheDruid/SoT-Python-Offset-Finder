@@ -45,58 +45,58 @@
   },
   "BreakableActorBase": {
     "Super": "Actor",
-    "FullSize": "0x550",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x548",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x180",
     "Attributes": [
       {
         "Name": "DespawnDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "ThirdPersonMesh",
         "Type": "Class PrimitiveComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "HealthComponent",
         "Type": "Class HealthComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "AudioComponent",
         "Type": "Class BreakableActorAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "VFXComponent",
         "Type": "Class BreakableActorVfxComponent*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "DamageMaterialComponent",
         "Type": "Class BreakableActorDynamicMaterialComponent*",
         "Size": "0x8",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "DamageableComponent",
         "Type": "Class ActorDamageableComponent*",
         "Size": "0x8",
-        "Offset": "0x440"
+        "Offset": "0x438"
       }
     ]
   },
   "BreakableSarcophagus": {
     "Super": "BreakableActorBase",
-    "FullSize": "0x550",
-    "InheritedSize": "0x550",
+    "FullSize": "0x548",
+    "InheritedSize": "0x548",
     "ClassSize": "0x0",
     "Attributes": []
   },

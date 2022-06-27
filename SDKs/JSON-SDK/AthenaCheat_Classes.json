@@ -1,9 +1,9 @@
 {
   "AthenaCheatManager": {
     "Super": "CheatManager",
-    "FullSize": "0x130",
+    "FullSize": "0x138",
     "InheritedSize": "0x78",
-    "ClassSize": "0xb8",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "CinematicCameraController",

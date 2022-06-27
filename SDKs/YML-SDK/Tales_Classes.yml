@@ -362,6 +362,26 @@ GenerateDigLocationInRadiusStepDesc:
   FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+GetActorOfInterestStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+GetActorOfInterestStepDesc:
+  Attributes:
+  - Name: ActorOfInterestId
+    Offset: '0x80'
+    Size: '0x8'
+    Type: class
+  - Name: ActorOfInterest
+    Offset: '0x88'
+    Size: '0x20'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x28'
+  FullSize: '0xa8'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 GetVoyageDifficultyFromRankStep:
   Attributes: []
   ClassSize: '0x28'
@@ -1008,6 +1028,12 @@ TaleMigrationAction:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
+TaleQuestActorFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestActorService:
   Attributes:
   - Name: TrackedActors
@@ -1339,8 +1365,8 @@ TaleQuestAdvanceRiddleMapStepDesc:
 TaleQuestAnimationStepFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x158'
-  InheritedSize: '0x158'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestArrayAppendStep:
   Attributes: []
@@ -1788,8 +1814,12 @@ TaleQuestFunctionStepLibrary:
     Offset: '0xe8'
     Size: '0x8'
     Type: Class Function*
-  ClassSize: '0x70'
-  FullSize: '0x158'
+  - Name: FunctionStepFlags
+    Offset: '0x168'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x88'
+  FullSize: '0x170'
   InheritedSize: '0xe8'
   Super: TaleQuestRunnableStepDesc
 TaleQuestGetCollectionItemCountStep:
@@ -1883,8 +1913,8 @@ TaleQuestIndexedFrame:
 TaleQuestIntMathsFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x158'
-  InheritedSize: '0x158'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestMakeStructStep:
   Attributes: []
@@ -1935,14 +1965,14 @@ TaleQuestMerchantContractsServiceDesc:
 TaleQuestNPCHideFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x158'
-  InheritedSize: '0x158'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestNamedPointsFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x158'
-  InheritedSize: '0x158'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestPermanentPromptStep:
   Attributes: []
@@ -1964,6 +1994,22 @@ TaleQuestPermanentPromptStepDesc:
   FullSize: '0xa8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestPersistentForEachCrewTaskStep:
+  Attributes:
+  - Name: StepDesc
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class TaleQuestPersistentForEachCrewTaskStepDesc*
+  ClassSize: '0x58'
+  FullSize: '0xf0'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestPersistentForEachCrewTaskStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x88'
+  InheritedSize: '0x88'
+  Super: TaleQuestTaskStepDescBase
 TaleQuestRemoveMapStep:
   Attributes:
   - Name: StepDesc
@@ -2084,6 +2130,66 @@ TaleQuestServiceDesc:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
+TaleQuestShipDiveStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestShipDiveStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestShipSurfaceStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestShipSurfaceStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestStartCameraFadeStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestStartCameraFadeStepDesc:
+  Attributes:
+  - Name: FromAlpha
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  - Name: ToAlpha
+    Offset: '0x84'
+    Size: '0x4'
+    Type: float
+  - Name: FadeTimeInSeconds
+    Offset: '0x88'
+    Size: '0x4'
+    Type: float
+  - Name: FadeColour
+    Offset: '0x8c'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ShouldFadeAudio
+    Offset: '0x9c'
+    Size: '0x1'
+    Type: bool
+  - Name: HoldFadeWhenFinished
+    Offset: '0x9d'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x20'
+  FullSize: '0xa0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 TaleQuestStep:
   Attributes:
   - Name: TaleStepDesc
@@ -2136,6 +2242,22 @@ TaleQuestTaskStepDescBase:
   FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestToggleAmbientMigrationForServerStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestToggleAmbientMigrationForServerStepDesc:
+  Attributes:
+  - Name: AmbientMigrationAvailable
+    Offset: '0x80'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'
+  FullSize: '0x88'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 TaleQuestToggleInteractionDescriptionService:
   Attributes:
   - Name: Desc
@@ -2160,17 +2282,23 @@ TaleQuestToggleInteractionDescriptionServiceDesc:
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: TaleQuestServiceDesc
+TaleQuestTransformMathsFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestTransfromConversionFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x158'
-  InheritedSize: '0x158'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestUObjectFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x158'
-  InheritedSize: '0x158'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestUpdateCheckpointStep:
   Attributes: []
@@ -2224,6 +2352,12 @@ TaleQuestUpdateMerchantMapStepDesc:
   FullSize: '0xc8'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
+TaleQuestUtilityFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestWaitForChecklistMapCompletionStepDesc:
   Attributes:
   - Name: MapId
@@ -2262,6 +2396,12 @@ TaleQuestWaitForHandInStepDesc:
   FullSize: '0xc8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestWaterVolumeFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x170'
+  InheritedSize: '0x170'
+  Super: TaleQuestFunctionStepLibrary
 TaleResourceBrokerService:
   Attributes:
   - Name: MigrationActions
@@ -2298,6 +2438,30 @@ ValueProviderStepInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+WaitForActorOfInterestToUnregisterStep:
+  Attributes:
+  - Name: Desc
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class WaitForActorOfInterestToUnregisterStepDesc*
+  ClassSize: '0x78'
+  FullSize: '0x110'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+WaitForActorOfInterestToUnregisterStepDesc:
+  Attributes:
+  - Name: ActorOfInterestId
+    Offset: '0x80'
+    Size: '0x8'
+    Type: class
+  - Name: ActorOfInterestUnregisteredFailureMessage
+    Offset: '0x88'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x40'
+  FullSize: '0xc0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 WaitForHealthToReachFractionStep:
   Attributes: []
   ClassSize: '0x70'

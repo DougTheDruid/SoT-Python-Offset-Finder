@@ -11,13 +11,19 @@
     ]
   },
   "ShipPartLevelsOfDamage": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "DamagePerDistance",
         "Type": "TArray<Struct DistanceAndLevelOfDamage>",
         "Size": "0x10",
         "Offset": "0x20"
+      },
+      {
+        "Name": "FeatureName",
+        "Type": "Struct FeatureFlag",
+        "Size": "0x8",
+        "Offset": "0x30"
       }
     ]
   },
@@ -184,6 +190,28 @@
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "SendShipRestoredRpc": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventRestoreShip": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "OnlyRepaired",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

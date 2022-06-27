@@ -3,14 +3,14 @@
 BP_wil_parrot_big_04_C:
   Attributes:
   - Name: AnimNotifyWwiseEmitter
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   - Name: SkeletalMesh
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
   ClassSize: '0x10'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3c8'
   Super: Actor

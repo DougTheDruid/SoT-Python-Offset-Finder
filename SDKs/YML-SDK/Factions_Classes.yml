@@ -19,16 +19,38 @@ FactionInterationInterface:
 FactionService:
   Attributes:
   - Name: Settings
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class FactionSettingsAsset*
   - Name: FactionAlignedCrews
-    Offset: '0x408'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Struct CrewFactionEntry>
-  ClassSize: '0x48'
-  FullSize: '0x418'
-  InheritedSize: '0x3d0'
+  - Name: DebugRepActor
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Class FactionServiceDebugRepActor*
+  ClassSize: '0x78'
+  FullSize: '0x440'
+  InheritedSize: '0x3c8'
+  Super: Actor
+FactionServiceDebugRepActor:
+  Attributes:
+  - Name: bDebugEnabled
+    Offset: '0x3c8'
+    Size: '0x1'
+    Type: bool
+  - Name: FactionAlignedCrews
+    Offset: '0x3d0'
+    Size: '0x10'
+    Type: TArray<Struct CrewFactionEntry>
+  - Name: FactionService
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class FactionService*
+  ClassSize: '0x20'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3c8'
   Super: Actor
 FactionSettingsAsset:
   Attributes:
@@ -40,22 +62,30 @@ FactionSettingsAsset:
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<Class FactionsRewardingFriendlyFire>
-  ClassSize: '0x20'
-  FullSize: '0x48'
+  - Name: SandsOfFateRewards
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Struct SandsOfFateData>
+  ClassSize: '0x30'
+  FullSize: '0x58'
   InheritedSize: '0x28'
   Super: DataAsset
 FactionVoteConsumerBase:
   Attributes:
   - Name: Validator
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: Class FactionVoteValidatorBase*
   - Name: OwningActor
-    Offset: '0x38'
+    Offset: '0x90'
     Size: '0x8'
     Type: Class Actor*
-  ClassSize: '0x10'
-  FullSize: '0x40'
+  - Name: Votes
+    Offset: '0x98'
+    Size: '0x10'
+    Type: TArray<Struct CrewMemberVotes>
+  ClassSize: '0x80'
+  FullSize: '0xb0'
   InheritedSize: '0x30'
   Super: VoteConsumerInlineBase
 FactionVoteValidatorBase:
@@ -100,6 +130,32 @@ ShipSunkTrackingComponent:
   FullSize: '0xe0'
   InheritedSize: '0xc8'
   Super: ActorComponent
+StartFactionVoyageVoteConsumer:
+  Attributes:
+  - Name: FactionVotingCastVote
+    Offset: '0xb0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingCantVote
+    Offset: '0xe8'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingRemoveVote
+    Offset: '0x120'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingCantRemoveVote
+    Offset: '0x158'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingCantVoteReasonVoterNotOnOwnShip
+    Offset: '0x190'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x118'
+  FullSize: '0x1c8'
+  InheritedSize: '0xb0'
+  Super: FactionVoteConsumerBase
 StartFactionVoyageVoteValidator:
   Attributes: []
   ClassSize: '0x0'
@@ -112,3 +168,33 @@ StopFactionVoyageInlineVoteValidator:
   FullSize: '0x60'
   InheritedSize: '0x60'
   Super: FactionVoteValidatorBase
+StopFactionVoyageVoteConsumer:
+  Attributes:
+  - Name: FactionVotingCastVote
+    Offset: '0xb0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingCantVote
+    Offset: '0xe8'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingRemoveVote
+    Offset: '0x120'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingCantRemoveVote
+    Offset: '0x158'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingCantVoteReasonGoToOutpost
+    Offset: '0x190'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingCantVoteReasonActiveForDifferentCompany
+    Offset: '0x1c8'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x150'
+  FullSize: '0x200'
+  InheritedSize: '0xb0'
+  Super: FactionVoteConsumerBase

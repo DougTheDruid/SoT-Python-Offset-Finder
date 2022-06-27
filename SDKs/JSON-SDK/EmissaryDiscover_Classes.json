@@ -1,267 +1,267 @@
 {
   "BP_PromptActor_EmissaryDiscoveredCargoRunCrate_MA_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x438",
-    "InheritedSize": "0x408",
+    "FullSize": "0x430",
+    "InheritedSize": "0x400",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredCargoRunCrate_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x420"
       }
     ]
   },
   "BP_PromptActor_EmissaryDiscoveredCargoRunCrate_RB_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x438",
-    "InheritedSize": "0x408",
+    "FullSize": "0x430",
+    "InheritedSize": "0x400",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredCargoRunCrate_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x420"
       }
     ]
   },
   "BP_PromptActor_EmissaryDiscoveredLoot_AF_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x438",
-    "InheritedSize": "0x408",
+    "FullSize": "0x430",
+    "InheritedSize": "0x400",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x420"
       }
     ]
   },
   "BP_PromptActor_EmissaryDiscoveredLoot_GH_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x438",
-    "InheritedSize": "0x408",
+    "FullSize": "0x430",
+    "InheritedSize": "0x400",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x420"
       }
     ]
   },
   "BP_PromptActor_EmissaryDiscoveredLoot_MA_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x438",
-    "InheritedSize": "0x408",
+    "FullSize": "0x430",
+    "InheritedSize": "0x400",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x420"
       }
     ]
   },
   "BP_PromptActor_EmissaryDiscoveredLoot_OOS_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x438",
-    "InheritedSize": "0x408",
+    "FullSize": "0x430",
+    "InheritedSize": "0x400",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x420"
       }
     ]
   },
   "BP_PromptActor_EmissaryDiscoveredLoot_RB_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x438",
-    "InheritedSize": "0x408",
+    "FullSize": "0x430",
+    "InheritedSize": "0x400",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryDiscoveredLoot_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x420"
       }
     ]
   },

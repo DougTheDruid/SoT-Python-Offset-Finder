@@ -3,14 +3,14 @@
 BP_MeatItemInfo_C:
   Attributes:
   - Name: DeliverableRedirection
-    Offset: '0x558'
+    Offset: '0x550'
     Size: '0x8'
     Type: Class DeliverableRedirectionComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x560'
+    Offset: '0x558'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x10'
-  FullSize: '0x568'
-  InheritedSize: '0x558'
+  FullSize: '0x560'
+  InheritedSize: '0x550'
   Super: RewardableItemInfo

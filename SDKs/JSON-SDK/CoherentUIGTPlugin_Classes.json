@@ -171,8 +171,8 @@
   },
   "CoherentUIGTSystem": {
     "Super": "Actor",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x418",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x50",
     "Attributes": []
   },
@@ -246,22 +246,22 @@
   },
   "CoherentUIGTGameHUD": {
     "Super": "HUD",
-    "FullSize": "0x560",
-    "InheritedSize": "0x4c8",
+    "FullSize": "0x558",
+    "InheritedSize": "0x4c0",
     "ClassSize": "0x98",
     "Attributes": [
       {
         "Name": "CoherentUIGTHUD",
         "Type": "Class CoherentUIGTHUD*",
         "Size": "0x8",
-        "Offset": "0x4c8"
+        "Offset": "0x4c0"
       }
     ]
   },
   "CoherentUIGTInputActor": {
     "Super": "Actor",
-    "FullSize": "0x430",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x60",
     "Attributes": []
   },

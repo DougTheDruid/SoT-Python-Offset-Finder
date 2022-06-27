@@ -90,4 +90,11 @@ public:
 };
 
 
+// Size 0x0
+class BP_tattoo_set_umb_02_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
 }

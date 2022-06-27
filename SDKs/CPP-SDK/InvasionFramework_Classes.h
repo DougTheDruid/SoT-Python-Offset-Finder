@@ -6,13 +6,23 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x0
+class InvasionBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x30
 class InvasionServiceDataAsset: public DataAsset
 {
 public:
 	Class VoyageDescDataAsset*                                   Matchmaking_VoyageDescDataAsset;                   // 0x28(0x8)
 	Class VoyageDescDataAsset*                                   Invasion_AggressivePassive_VoyageDescDataAsset;    // 0x30(0x8)
 	Class VoyageDescDataAsset*                                   Invasion_AggressiveAggressive_VoyageDescDataAsset; // 0x38(0x8)
+	Class EnvQuery*                                              AggressivePassive_EnvQueryTemplate;                // 0x40(0x8)
+	Class EnvQuery*                                              AggressiveAggressive_EnvQueryTemplate;             // 0x48(0x8)
+	Class VoyageDescDataAsset*                                   Invasion_Debug_VoyageDescDataAsset;                // 0x50(0x8)
 };
 
 
@@ -23,13 +33,49 @@ public:
 };
 
 
-// Size 0xc0
+// Size 0xd8
 class InvasionService: public Actor
 {
 public:
 	Class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x408(0x8)
-	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x470(0x10)
-	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x480(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x480(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x490(0x10)
+};
+
+
+// Size 0x38
+class TaleQuestInvasionService: public TaleQuestService
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestInvasionServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x30
+class WaitForShipToBeDefeatedStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0xc8
+class WaitForShipToBeDefeatedStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    WinningShip;                                       // 0x80(0x20)
+	Struct QuestVariableActor                                    DefeatedShip;                                      // 0xa0(0x20)
+	Struct QuestVariableGuid                                     WinningCrewId;                                     // 0xc0(0x20)
+	Struct QuestVariableGuid                                     DefeatedCrewId;                                    // 0xe0(0x20)
+	float                                                        CheckProximityTimerInterval;                       // 0x100(0x4)
+	float                                                        CheckProximityDistanceInMetres;                    // 0x104(0x4)
+	float                                                        TimeoutTimerIntervalInMinutes;                     // 0x108(0x4)
+	Struct FText                                                 FailMessage;                                       // 0x110(0x38)
 };
 
 

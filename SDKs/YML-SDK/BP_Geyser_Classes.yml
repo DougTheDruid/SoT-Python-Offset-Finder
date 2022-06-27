@@ -3,18 +3,18 @@
 BP_GeyserDynamic_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x480'
-  InheritedSize: '0x480'
+  FullSize: '0x478'
+  InheritedSize: '0x478'
   Super: BP_Geyser_C
 BP_GeyserManager_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x430'
-  InheritedSize: '0x430'
+  FullSize: '0x428'
+  InheritedSize: '0x428'
   Super: GeyserManager
 BP_Geyser_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x480'
-  InheritedSize: '0x480'
+  FullSize: '0x478'
+  InheritedSize: '0x478'
   Super: Geyser

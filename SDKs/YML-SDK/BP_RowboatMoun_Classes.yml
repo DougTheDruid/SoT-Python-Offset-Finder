@@ -3,12 +3,12 @@
 BP_RowboatMountpoint_Base_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x660'
-  InheritedSize: '0x660'
+  FullSize: '0x658'
+  InheritedSize: '0x658'
   Super: MountpointActor
 BP_RowboatMountpoint_LargeShip_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x660'
-  InheritedSize: '0x660'
+  FullSize: '0x658'
+  InheritedSize: '0x658'
   Super: BP_RowboatMountpoint_Base_C

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_IslandCosmeticChest_C: public ShipCustomizationChest
 {
 public:
-	Class HarbourComponent*                                      Harbour;                                           // 0x5d0(0x8)
+	Class HarbourComponent*                                      Harbour;                                           // 0x5e8(0x8)
 };
 
 

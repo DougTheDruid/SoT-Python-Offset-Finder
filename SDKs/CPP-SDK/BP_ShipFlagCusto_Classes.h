@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_ShipFlagCustomizationChest_C: public ShipFlagCustomizationChest
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5e8(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x600(0x8)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class BP_ShipFlagCustomizationChestInteraction_C: public ShipFlagCustomizationChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x518(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
 };
 
 

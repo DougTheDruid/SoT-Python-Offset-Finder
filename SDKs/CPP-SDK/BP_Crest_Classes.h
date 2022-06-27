@@ -6,22 +6,30 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x58
+// Size 0xf4
 class BP_Crest_C: public Crest
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
-	Class CanvasRenderTarget2D*                                  TextCanvasRenderTarget;                            // 0x408(0x8)
-	Class CanvasRenderTarget2D*                                  BlurCanvasRenderTarget;                            // 0x410(0x8)
-	Class CanvasRenderTarget2D*                                  BevelCanvasRenderTarget;                           // 0x418(0x8)
-	Class Material*                                              BlurCanvasMaterial;                                // 0x420(0x8)
-	Class Material*                                              BevelCanvasMaterial;                               // 0x428(0x8)
-	Class MaterialInstanceDynamic*                               DynamicBlurCanvasMaterial;                         // 0x430(0x8)
-	Class MaterialInstanceDynamic*                               DynamicBevelCanvasMaterial;                        // 0x438(0x8)
-	Class MaterialInstanceDynamic*                               CrestDynamicMaterial;                              // 0x440(0x8)
-	int                                                          CanvasWidth;                                       // 0x448(0x4)
-	int                                                          CanvasHeight;                                      // 0x44c(0x4)
-	Class Font*                                                  Font;                                              // 0x450(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3f8(0x8)
+	Class ParticleSystemComponent*                               VFX_Back;                                          // 0x400(0x8)
+	Class ParticleSystemComponent*                               VFX_Front;                                         // 0x408(0x8)
+	Class MaybeCompressedCanvasRenderTarget2D*                   TextCanvasRenderTarget;                            // 0x410(0x8)
+	Class MaybeCompressedCanvasRenderTarget2D*                   BlurCanvasRenderTarget;                            // 0x418(0x8)
+	Class MaybeCompressedCanvasRenderTarget2D*                   BevelCanvasRenderTarget;                           // 0x420(0x8)
+	Class Material*                                              BlurCanvasMaterial;                                // 0x428(0x8)
+	Class Material*                                              BevelCanvasMaterial;                               // 0x430(0x8)
+	Class MaterialInstanceDynamic*                               DynamicBlurCanvasMaterial;                         // 0x438(0x8)
+	Class MaterialInstanceDynamic*                               DynamicBevelCanvasMaterial;                        // 0x440(0x8)
+	Class MaterialInstanceDynamic*                               CrestDynamicMaterial;                              // 0x448(0x8)
+	int                                                          CanvasWidth;                                       // 0x450(0x4)
+	int                                                          CanvasHeight;                                      // 0x454(0x4)
+	Class Font*                                                  Font;                                              // 0x458(0x8)
+	Class WwiseObjectPoolWrapper*                                NameplatePool;                                     // 0x460(0x8)
+	Struct WwiseEmitterCreationParams                            EmitterCreationParams;                             // 0x468(0x28)
+	float                                                        Cooldown;                                          // 0x490(0x4)
+	Struct SlateFontInfo                                         FontInfo;                                          // 0x498(0x40)
+	TArray<class VFXSizeVariants*>                               VFXSizeVariants;                                   // 0x4d8(0x10)
+	int                                                          NameSizeIndex;                                     // 0x4e8(0x4)
 };
 
 

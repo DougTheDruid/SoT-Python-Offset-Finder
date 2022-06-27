@@ -123,7 +123,7 @@ public:
 };
 
 
-// Size 0xc8
+// Size 0xd0
 struct AIEncounterSpecification
 {
 public:
@@ -137,8 +137,9 @@ public:
 	struct FName                                                 DioramaRole;                                       // 0x74(0x8)
 	Struct FText                                                 LocalisableName;                                   // 0x80(0x38)
 	Struct EncounterParams                                       EncounterTrackingParams;                           // 0xb8(0xc)
-	bool                                                         ShowNameplate;                                     // 0xc4(0x1)
-	bool                                                         IsUsingDialogue;                                   // 0xc5(0x1)
+	int                                                          MinPlayersToEnable;                                // 0xc4(0x4)
+	bool                                                         ShowNameplate;                                     // 0xc8(0x1)
+	bool                                                         IsUsingDialogue;                                   // 0xc9(0x1)
 };
 
 
@@ -206,16 +207,17 @@ public:
 };
 
 
-// Size 0x180
+// Size 0x188
 struct AIBountySpawnerWave
 {
 public:
 	bool                                                         IsTarget;                                          // 0x128(0x1)
 	bool                                                         IsUsingDialogue;                                   // 0x129(0x1)
-	byte                                                         Gender;                                            // 0x12a(0x1)
-	byte                                                         Rank;                                              // 0x12b(0x1)
-	Class PostBountyAIPawnSpawnedAction*                         PostSpawnAction;                                   // 0x130(0x8)
-	class                                                        BountyReward;                                      // 0x170(0x8)
+	int                                                          MinPlayersToEnable;                                // 0x12c(0x4)
+	byte                                                         Gender;                                            // 0x130(0x1)
+	byte                                                         Rank;                                              // 0x131(0x1)
+	Class PostBountyAIPawnSpawnedAction*                         PostSpawnAction;                                   // 0x138(0x8)
+	class                                                        BountyReward;                                      // 0x178(0x8)
 };
 
 
@@ -1748,11 +1750,11 @@ public:
 };
 
 
-// Size 0xd0
+// Size 0xd8
 struct AITelemetryFragmentInput
 {
 public:
-	Struct AIEncounterSpecification                              AIEncounterSpecification;                          // 0x8(0xc8)
+	Struct AIEncounterSpecification                              AIEncounterSpecification;                          // 0x8(0xd0)
 };
 
 

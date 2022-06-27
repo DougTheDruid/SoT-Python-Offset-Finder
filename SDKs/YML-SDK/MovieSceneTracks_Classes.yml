@@ -634,12 +634,16 @@ MovieSceneSkeletalAnimationSection:
   Super: MovieSceneSection
 MovieSceneSkeletalAnimationTrack:
   Attributes:
-  - Name: AnimationSections
+  - Name: TrackSubtype
     Offset: '0x88'
+    Size: '0x1'
+    Type: byte
+  - Name: AnimationSections
+    Offset: '0x90'
     Size: '0x10'
     Type: TArray<class AnimationSections*>
-  ClassSize: '0x10'
-  FullSize: '0x98'
+  ClassSize: '0x18'
+  FullSize: '0xa0'
   InheritedSize: '0x88'
   Super: MovieSceneNameableTrack
 MovieSceneSlomoSection:

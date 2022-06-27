@@ -3,18 +3,18 @@
 wsp_audio_C:
   Attributes:
   - Name: PreviousFrameTime
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x4'
     Type: float
   - Name: WSP_Audio_2D_Emitter
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x20'
     Type: Struct WwiseEmitter
   - Name: TimeInterface
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class Object*
   ClassSize: '0x30'
-  FullSize: '0x408'
-  InheritedSize: '0x3d8'
+  FullSize: '0x400'
+  InheritedSize: '0x3d0'
   Super: LevelScriptActor

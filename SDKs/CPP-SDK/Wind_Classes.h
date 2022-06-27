@@ -60,11 +60,11 @@ public:
 class WindService: public Actor
 {
 public:
-	Class WindDirectionalSource*                                 GlobalWindSource;                                  // 0x3e0(0x8)
-	float                                                        CurrentWindAngle;                                  // 0x3f8(0x4)
-	float                                                        CurrentWindMagnitude;                              // 0x3fc(0x4)
-	TArray<Interface WindZones>                                  WindZones;                                         // 0x4e8(0x10)
-	TArray<Struct ExtraWind>                                     ExtraWind;                                         // 0x4f8(0x10)
+	Class WindDirectionalSource*                                 GlobalWindSource;                                  // 0x3d8(0x8)
+	float                                                        CurrentWindAngle;                                  // 0x3f0(0x4)
+	float                                                        CurrentWindMagnitude;                              // 0x3f4(0x4)
+	TArray<Interface WindZones>                                  WindZones;                                         // 0x4e0(0x10)
+	TArray<Struct ExtraWind>                                     ExtraWind;                                         // 0x4f0(0x10)
 };
 
 

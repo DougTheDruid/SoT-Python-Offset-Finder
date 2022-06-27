@@ -1,63 +1,63 @@
 {
   "BP_DamageZone_C": {
     "Super": "DamageZone",
-    "FullSize": "0x829",
-    "InheritedSize": "0x7e8",
+    "FullSize": "0x821",
+    "InheritedSize": "0x7e0",
     "ClassSize": "0x41",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x7e0"
       },
       {
         "Name": "Repair Tag",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x7f0"
+        "Offset": "0x7e8"
       },
       {
         "Name": "RepairGroup",
         "Type": "Struct BP_InternalDamageGroup",
         "Size": "0x10",
-        "Offset": "0x7f8"
+        "Offset": "0x7f0"
       },
       {
         "Name": "ExternalHitBufferIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x808"
+        "Offset": "0x800"
       },
       {
         "Name": "MaxStoredHits",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x80c"
+        "Offset": "0x804"
       },
       {
         "Name": "Deferred Decals",
         "Type": "TArray<class Deferred Decals*>",
         "Size": "0x10",
-        "Offset": "0x810"
+        "Offset": "0x808"
       },
       {
         "Name": "ClientUpdateEventCount",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x820"
+        "Offset": "0x818"
       },
       {
         "Name": "ExternalDecalBufferIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x824"
+        "Offset": "0x81c"
       },
       {
         "Name": "HasBeenInitialized",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x828"
+        "Offset": "0x820"
       }
     ]
   },

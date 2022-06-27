@@ -1,105 +1,105 @@
 {
   "BP_Mast_C": {
     "Super": "Mast",
-    "FullSize": "0xa30",
-    "InheritedSize": "0x990",
+    "FullSize": "0xa28",
+    "InheritedSize": "0x988",
     "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x990"
+        "Offset": "0x988"
       },
       {
         "Name": "MastTopComponent",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x998"
+        "Offset": "0x990"
       },
       {
         "Name": "TopgallantActor",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x9a0"
+        "Offset": "0x998"
       },
       {
         "Name": "MainsailActor",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x9a8"
+        "Offset": "0x9a0"
       },
       {
         "Name": "TopsailActor",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x9b0"
+        "Offset": "0x9a8"
       },
       {
         "Name": "Main Yard",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x9b8"
+        "Offset": "0x9b0"
       },
       {
         "Name": "Topgallant Yard",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x9c0"
+        "Offset": "0x9b8"
       },
       {
         "Name": "Top Yard",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x9c8"
+        "Offset": "0x9c0"
       },
       {
         "Name": "MastBaseComponent",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x9d0"
+        "Offset": "0x9c8"
       },
       {
         "Name": "Sail Parameters",
         "Type": "TArray<Struct None>",
         "Size": "0x10",
-        "Offset": "0x9d8"
+        "Offset": "0x9d0"
       },
       {
         "Name": "Yards",
         "Type": "TArray<class Yards*>",
         "Size": "0x10",
-        "Offset": "0x9e8"
+        "Offset": "0x9e0"
       },
       {
         "Name": "Sails",
         "Type": "TArray<class Sails*>",
         "Size": "0x10",
-        "Offset": "0x9f8"
+        "Offset": "0x9f0"
       },
       {
         "Name": "Sail Material",
         "Type": "Class MaterialInstance*",
         "Size": "0x8",
-        "Offset": "0xa08"
+        "Offset": "0xa00"
       },
       {
         "Name": "SailActors",
         "Type": "TArray<class SailActors*>",
         "Size": "0x10",
-        "Offset": "0xa10"
+        "Offset": "0xa08"
       },
       {
         "Name": "DamageDecalRight",
         "Type": "Class DecalComponent*",
         "Size": "0x8",
-        "Offset": "0xa20"
+        "Offset": "0xa18"
       },
       {
         "Name": "DamageDecalLeft",
         "Type": "Class DecalComponent*",
         "Size": "0x8",
-        "Offset": "0xa28"
+        "Offset": "0xa20"
       }
     ]
   },

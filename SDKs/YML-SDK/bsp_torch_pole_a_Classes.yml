@@ -3,14 +3,14 @@
 bsp_torch_pole_a_C:
   Attributes:
   - Name: PointLight
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class PointLightComponent*
   - Name: ParticleSystem
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   ClassSize: '0x10'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3e0'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3d8'
   Super: StaticMeshActor

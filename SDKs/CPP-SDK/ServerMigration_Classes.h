@@ -46,7 +46,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPl: public Actor
 {
 public:
-	Class PrimitiveComponent*                                    PrimitiveComponent;                                // 0x3d0(0x8)
+	Class PrimitiveComponent*                                    PrimitiveComponent;                                // 0x3c8(0x8)
 };
 
 
@@ -54,7 +54,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsActorWithChild: public Actor
 {
 public:
-	Class ChildActorComponent*                                   ChildActorComponent;                               // 0x3d0(0x8)
+	Class ChildActorComponent*                                   ChildActorComponent;                               // 0x3c8(0x8)
 };
 
 
@@ -62,7 +62,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsActorWithReplicatedChil: public Actor
 {
 public:
-	Class ChildActorComponent*                                   ChildActorComponent;                               // 0x3d0(0x8)
+	Class ChildActorComponent*                                   ChildActorComponent;                               // 0x3c8(0x8)
 };
 
 
@@ -70,9 +70,9 @@ public:
 class ServerMigrationSerialisationDetailsTestsActorWithDynamicCompone: public Actor
 {
 public:
-	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* SubObject;                                         // 0x3d0(0x8)
-	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* ActorComponent;                                    // 0x3d8(0x8)
-	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* Subobject2;                                        // 0x3e0(0x8)
+	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* SubObject;                                         // 0x3c8(0x8)
+	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* ActorComponent;                                    // 0x3d0(0x8)
+	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* Subobject2;                                        // 0x3d8(0x8)
 };
 
 
@@ -80,7 +80,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr: public Actor
 {
 public:
-	Struct NetActorPtr                                           ActorPtr;                                          // 0x3d0(0x14)
+	Struct NetActorPtr                                           ActorPtr;                                          // 0x3c8(0x14)
 };
 
 
@@ -88,7 +88,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsActorWithUniqueNetId: public Actor
 {
 public:
-	Struct UniqueNetIdRepl                                       UniqueId;                                          // 0x3d0(0x18)
+	Struct UniqueNetIdRepl                                       UniqueId;                                          // 0x3c8(0x18)
 };
 
 
@@ -105,7 +105,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsMigratableComponentActo: public Actor
 {
 public:
-	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* ComponentWithMigrationMarkup;                      // 0x3d0(0x8)
+	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* ComponentWithMigrationMarkup;                      // 0x3c8(0x8)
 };
 
 
@@ -113,7 +113,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsMigratableDefaultCompon: public Actor
 {
 public:
-	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* ComponentWithMigrationMarkup;                      // 0x3d0(0x8)
+	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* ComponentWithMigrationMarkup;                      // 0x3c8(0x8)
 };
 
 
@@ -135,7 +135,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsMigrationChildActorLink: public Actor
 {
 public:
-	Class ChildActorComponent*                                   Component;                                         // 0x3d0(0x8)
+	Class ChildActorComponent*                                   Component;                                         // 0x3c8(0x8)
 };
 
 
@@ -150,7 +150,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsMigrationGetLinkedActor: public Actor
 {
 public:
-	Class Actor*                                                 DependentActor;                                    // 0x3d0(0x8)
+	Class Actor*                                                 DependentActor;                                    // 0x3c8(0x8)
 };
 
 
@@ -158,7 +158,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsMigrationReferenceActor: public Actor
 {
 public:
-	Class Actor*                                                 ActorReferenceWithMigrationMarkup;                 // 0x3d0(0x8)
+	Class Actor*                                                 ActorReferenceWithMigrationMarkup;                 // 0x3c8(0x8)
 };
 
 
@@ -210,7 +210,7 @@ public:
 class TestActorWithUObjectProperty: public Actor
 {
 public:
-	Class Object*                                                ObjectProperty;                                    // 0x3d0(0x8)
+	Class Object*                                                ObjectProperty;                                    // 0x3c8(0x8)
 };
 
 

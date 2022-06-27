@@ -1,35 +1,16 @@
 {
-  "BP_LostSands_Larinna_C": {
-    "Super": "BP_SoleTrader_C",
-    "FullSize": "0x6a0",
-    "InheritedSize": "0x688",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x688"
-      },
-      {
-        "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x690"
-      },
-      {
-        "Name": "ActorPhasing",
-        "Type": "Class ActorPhasingComponent*",
-        "Size": "0x8",
-        "Offset": "0x698"
-      }
-    ]
-  },
   "LostSands_LarinnaDialogTempEntitlement_C": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "0x4653f441",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x4653f441",
+    "Attributes": []
+  },
+  "BP_LostSands_Larinna_C": {
+    "Super": "None",
+    "FullSize": "-0x65ceef80",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x65ceef80",
     "Attributes": []
   },
   "DougTheDruid": {

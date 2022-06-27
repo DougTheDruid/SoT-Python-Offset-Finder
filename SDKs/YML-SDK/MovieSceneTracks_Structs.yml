@@ -481,7 +481,11 @@ MovieSceneSkeletalAnimationSectionTemplate:
     Offset: '0x18'
     Size: '0xa0'
     Type: Struct MovieSceneSkeletalAnimationSectionTemplateParameters
-  ClassSize: '0xb8'
+  - Name: AnimationSubtype
+    Offset: '0xb8'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0xc0'
 MovieSceneSkeletalAnimationSectionTemplateParameters:
   Attributes:
   - Name: SectionStartTime

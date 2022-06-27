@@ -1,27 +1,27 @@
 {
   "BP_AISmallShipNetProxy_C": {
     "Super": "ShipNetProxy",
-    "FullSize": "0x4e0",
-    "InheritedSize": "0x4c0",
+    "FullSize": "0x4d0",
+    "InheritedSize": "0x4b0",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x4c0"
+        "Offset": "0x4b0"
       },
       {
         "Name": "LightProxy",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4c8"
+        "Offset": "0x4b8"
       },
       {
         "Name": "Dynamic Materials",
         "Type": "TArray<class Dynamic Materials*>",
         "Size": "0x10",
-        "Offset": "0x4d0"
+        "Offset": "0x4c0"
       }
     ]
   },

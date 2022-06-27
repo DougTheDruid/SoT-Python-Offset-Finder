@@ -34,6 +34,56 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "ShipRestorationSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x198",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "MaxDistanceSquared",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "RestorationAllowedText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "ShipTooFarAwayText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ShipRestoredTooRecentlyText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ShipHasSunkText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "CannotRestoreShipText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "ShipInPristineConditionText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x160"
+      }
+    ]
+  },
   "StrainDamagerType": {
     "Super": "DamagerType",
     "FullSize": "0x28",

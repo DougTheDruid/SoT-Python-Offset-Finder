@@ -1,77 +1,77 @@
 {
   "AsymmetricClientObject": {
     "Super": "Actor",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x418",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "BaseComponent",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "ThirdPersonMesh",
         "Type": "Class StaticMeshMemoryConstraintComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "WaterInteractionComponent",
         "Type": "Class WaterInteractionComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "BuoyancyComponent",
         "Type": "Class BuoyancyComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "SpawnDependentTrackedOwnerComponent",
         "Type": "Class SpawnDependentTrackedOwnerComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "RotationWhenPlacingWorldProxy",
         "Type": "Struct Rotator",
         "Size": "0xc",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "ZOffsetWhenPlacingWorldProxy",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x41c"
+        "Offset": "0x414"
       }
     ]
   },
   "AsymmetricObjectServerManager": {
     "Super": "Actor",
-    "FullSize": "0x428",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x420",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "SpawnedObject",
         "Type": "Class AsymmetricClientObject*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "SceneComponent",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "AsymmetricObjectAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       }
     ]
   },

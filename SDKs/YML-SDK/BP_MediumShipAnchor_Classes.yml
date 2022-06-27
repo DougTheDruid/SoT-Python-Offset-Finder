@@ -3,10 +3,10 @@
 BP_MediumShipAnchor_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x410'
-  InheritedSize: '0x408'
+  FullSize: '0x408'
+  InheritedSize: '0x400'
   Super: Anchor

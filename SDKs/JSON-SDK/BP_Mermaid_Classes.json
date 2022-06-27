@@ -1,39 +1,39 @@
 {
   "BP_Mermaid_C": {
     "Super": "Mermaid",
-    "FullSize": "0x9c8",
-    "InheritedSize": "0x9a0",
+    "FullSize": "0x9b8",
+    "InheritedSize": "0x990",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x9a0"
+        "Offset": "0x990"
       },
       {
         "Name": "PlayerHits",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x9a8"
+        "Offset": "0x998"
       },
       {
         "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x9b0"
+        "Offset": "0x9a0"
       },
       {
         "Name": "SkeletalMeshMemoryConstraint",
         "Type": "Class SkeletalMeshMemoryConstraintComponent*",
         "Size": "0x8",
-        "Offset": "0x9b8"
+        "Offset": "0x9a8"
       },
       {
         "Name": "WorldHits",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x9c0"
+        "Offset": "0x9b0"
       }
     ]
   },

@@ -17,7 +17,7 @@ public:
 class CustomDeathService: public Actor
 {
 public:
-	TArray<class CustomPlayerStarts*>                            CustomPlayerStarts;                                // 0x408(0x10)
+	TArray<class CustomPlayerStarts*>                            CustomPlayerStarts;                                // 0x400(0x10)
 };
 
 

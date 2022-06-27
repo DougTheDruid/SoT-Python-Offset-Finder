@@ -1,21 +1,21 @@
 {
   "BP_PromptActor_MapBundle_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x418",
-    "InheritedSize": "0x408",
+    "FullSize": "0x410",
+    "InheritedSize": "0x400",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_MapBundle_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       }
     ]
   },

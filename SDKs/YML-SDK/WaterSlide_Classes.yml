@@ -3,48 +3,48 @@
 WaterSlide:
   Attributes:
   - Name: SlideSpline
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class SplineComponent*
   - Name: Root
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: WaterSlideParamsDataAsset
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class WaterSlideParamsDataAsset*
   - Name: EntranceCollisionComponent
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class PrimitiveComponent*
   - Name: ContinuedWaterSlideRoute
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class WaterSlide*
   - Name: LeftWaterSlideRoute
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class WaterSlide*
   - Name: RightWaterSlideRoute
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class WaterSlide*
   - Name: IsEndOfSlide
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x1'
     Type: bool
   - Name: EndOfSlideLaunchForce
-    Offset: '0x414'
+    Offset: '0x40c'
     Size: '0xc'
     Type: Struct Vector
   - Name: WaterSlideAudioParams
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class WaterSlideAudioParams*
-  ClassSize: '0x80'
-  FullSize: '0x450'
-  InheritedSize: '0x3d0'
+  ClassSize: '0x78'
+  FullSize: '0x440'
+  InheritedSize: '0x3c8'
   Super: Actor
 WaterSlideActionStateId:
   Attributes: []

@@ -216,15 +216,15 @@
   },
   "LandscapeGizmoActor": {
     "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "LandscapeGizmoActiveActor": {
     "Super": "LandscapeGizmoActor",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x418",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x50",
     "Attributes": []
   },
@@ -428,227 +428,227 @@
   },
   "LandscapeMeshProxyActor": {
     "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "LandscapeMeshProxyComponent",
         "Type": "Class LandscapeMeshProxyComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       }
     ]
   },
   "LandscapeProxy": {
     "Super": "Actor",
-    "FullSize": "0x760",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x390",
+    "FullSize": "0x750",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x388",
     "Attributes": [
       {
         "Name": "SplineComponent",
         "Type": "Class LandscapeSplinesComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "LandscapeGuid",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "LandscapeSectionOffset",
         "Type": "Struct IntPoint",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "MaxLODLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "StaticLightingLOD",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x3fc"
+        "Offset": "0x3f4"
       },
       {
         "Name": "DefaultPhysMaterial",
         "Type": "Class PhysicalMaterial*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "StreamingDistanceMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "LandscapeMaterial",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "LandscapeHoleMaterial",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "LODDistanceFactor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "LandscapeComponents",
         "Type": "TArray<class LandscapeComponents*>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "CollisionComponents",
         "Type": "TArray<class CollisionComponents*>",
         "Size": "0x10",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "FoliageComponents",
         "Type": "TArray<class FoliageComponents*>",
         "Size": "0x10",
-        "Offset": "0x448"
+        "Offset": "0x440"
       },
       {
         "Name": "StaticLightingResolution",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4d0"
+        "Offset": "0x4c0"
       },
       {
         "Name": "bCastStaticShadow",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4f0"
+        "Offset": "0x4e0"
       },
       {
         "Name": "bCastShadowAsTwoSided",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4f0"
+        "Offset": "0x4e0"
       },
       {
         "Name": "bAffectDynamicIndirectLighting",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4f0"
+        "Offset": "0x4e0"
       },
       {
         "Name": "bCastFarShadow",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4f0"
+        "Offset": "0x4e0"
       },
       {
         "Name": "bIsProxy",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4f0"
+        "Offset": "0x4e0"
       },
       {
         "Name": "bUseFarCascadeLPVBiasMultiplier",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4f0"
+        "Offset": "0x4e0"
       },
       {
         "Name": "LpvIntensityMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4f4"
+        "Offset": "0x4e4"
       },
       {
         "Name": "LpvBiasMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4f8"
+        "Offset": "0x4e8"
       },
       {
         "Name": "FarCascadeLPVBiasMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4fc"
+        "Offset": "0x4ec"
       },
       {
         "Name": "LightmassSettings",
         "Type": "Struct LightmassPrimitiveSettings",
         "Size": "0x18",
-        "Offset": "0x500"
+        "Offset": "0x4f0"
       },
       {
         "Name": "CollisionMipLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x518"
+        "Offset": "0x508"
       },
       {
         "Name": "CollisionThickness",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x51c"
+        "Offset": "0x50c"
       },
       {
         "Name": "BodyInstance",
         "Type": "Struct BodyInstance",
         "Size": "0x180",
-        "Offset": "0x520"
+        "Offset": "0x510"
       },
       {
         "Name": "ComponentSizeQuads",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x6a0"
+        "Offset": "0x690"
       },
       {
         "Name": "SubsectionSizeQuads",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x6a4"
+        "Offset": "0x694"
       },
       {
         "Name": "NumSubsections",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x6a8"
+        "Offset": "0x698"
       },
       {
         "Name": "bUsedForNavigation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x6ac"
+        "Offset": "0x69c"
       },
       {
         "Name": "bReflected",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x6ac"
+        "Offset": "0x69c"
       },
       {
         "Name": "NavigationGeometryGatheringMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x6b0"
+        "Offset": "0x6a0"
       },
       {
         "Name": "LODFalloff",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x6b1"
+        "Offset": "0x6a1"
       }
     ]
   },
@@ -674,8 +674,8 @@
   },
   "Landscape": {
     "Super": "LandscapeProxy",
-    "FullSize": "0x760",
-    "InheritedSize": "0x760",
+    "FullSize": "0x750",
+    "InheritedSize": "0x750",
     "ClassSize": "0x0",
     "Attributes": []
   },

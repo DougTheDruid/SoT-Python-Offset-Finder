@@ -240,6 +240,12 @@ figurehead_sakura_01_CustomizationDesc_C:
   FullSize: '0x108'
   InheritedSize: '0x108'
   Super: ShipCustomizationDesc
+figurehead_sakurasolo_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x108'
+  InheritedSize: '0x108'
+  Super: ShipCustomizationDesc
 figurehead_serrick_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'

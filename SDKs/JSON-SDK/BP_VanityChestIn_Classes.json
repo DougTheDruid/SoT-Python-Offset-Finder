@@ -1,15 +1,15 @@
 {
   "BP_VanityChestInteraction_C": {
     "Super": "ClothingChestInteraction",
-    "FullSize": "0x6a8",
-    "InheritedSize": "0x6a0",
+    "FullSize": "0x6a0",
+    "InheritedSize": "0x698",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x6a0"
+        "Offset": "0x698"
       }
     ]
   },

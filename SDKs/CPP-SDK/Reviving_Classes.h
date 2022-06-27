@@ -151,23 +151,23 @@ public:
 };
 
 
-// Size 0x258
+// Size 0x260
 class ReviveGhost: public Actor
 {
 public:
-	TArray<class CorpseMaterials*>                               CorpseMaterials;                                   // 0x3e0(0x10)
-	Class SceneComponent*                                        Root;                                              // 0x3f0(0x8)
-	Class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3f8(0x8)
-	Class SceneComponent*                                        AstralCordContainer;                               // 0x400(0x8)
-	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0x408(0x8)
-	Class PostProcessComponent*                                  PostProcessComponent;                              // 0x410(0x8)
-	Class DitherComponent*                                       DitherComponent;                                   // 0x418(0x8)
-	Class ReviveAudioComponent*                                  AudioComponent;                                    // 0x420(0x8)
-	byte                                                         RevivableOwnerNetRole;                             // 0x438(0x1)
-	Class GhostDataAsset*                                        ReviveGhostDataAsset;                              // 0x440(0x8)
-	Class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x448(0x8)
-	Struct ReviveEffectsValues                                   ReviveEffectsValues;                               // 0x450(0x20)
-	Struct ModeSpecificReviveSettings                            ReviveSettings;                                    // 0x470(0x30)
+	TArray<class CorpseMaterials*>                               CorpseMaterials;                                   // 0x3d8(0x10)
+	Class SceneComponent*                                        Root;                                              // 0x3e8(0x8)
+	Class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3f0(0x8)
+	Class SceneComponent*                                        AstralCordContainer;                               // 0x3f8(0x8)
+	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0x400(0x8)
+	Class PostProcessComponent*                                  PostProcessComponent;                              // 0x408(0x8)
+	Class DitherComponent*                                       DitherComponent;                                   // 0x410(0x8)
+	Class ReviveAudioComponent*                                  AudioComponent;                                    // 0x418(0x8)
+	byte                                                         RevivableOwnerNetRole;                             // 0x430(0x1)
+	Class GhostDataAsset*                                        ReviveGhostDataAsset;                              // 0x438(0x8)
+	Class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x440(0x8)
+	Struct ReviveEffectsValues                                   ReviveEffectsValues;                               // 0x448(0x20)
+	Struct ModeSpecificReviveSettings                            ReviveSettings;                                    // 0x468(0x38)
 	TArray<class AstralCordDynamicMaterials*>                    AstralCordDynamicMaterials;                        // 0x608(0x10)
 	Struct GhostPlayModeParameters                               GhostPlayModeSpecificParameters;                   // 0x618(0xc)
 };

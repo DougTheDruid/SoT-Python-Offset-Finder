@@ -6,13 +6,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ZoomInOnWieldableItemInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ZoomInOnWieldableItemComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x128",

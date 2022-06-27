@@ -1,15 +1,15 @@
 {
   "BP_Earthquake_Feature_C": {
     "Super": "BP_Earthquake_C",
-    "FullSize": "0x5a0",
-    "InheritedSize": "0x5a0",
+    "FullSize": "0x598",
+    "InheritedSize": "0x598",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Earthquake_C": {
     "Super": "Earthquake",
-    "FullSize": "0x5a0",
-    "InheritedSize": "0x5a0",
+    "FullSize": "0x598",
+    "InheritedSize": "0x598",
     "ClassSize": "0x0",
     "Attributes": []
   },

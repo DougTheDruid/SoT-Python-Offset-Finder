@@ -12,12 +12,6 @@ AthenaCharacterBaseInputComponentWithInterference:
   FullSize: '0x2a0'
   InheritedSize: '0x298'
   Super: AthenaCharacterBaseInputComponent
-AthenaClampedFreelookInputComponent:
-  Attributes: []
-  ClassSize: '0x20'
-  FullSize: '0x2b8'
-  InheritedSize: '0x298'
-  Super: AthenaCharacterBaseInputComponent
 AutoMoveInputComponent:
   Attributes: []
   ClassSize: '0x20'

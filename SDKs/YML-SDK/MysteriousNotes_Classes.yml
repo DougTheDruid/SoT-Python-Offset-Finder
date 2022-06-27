@@ -61,20 +61,20 @@ MysteriousNotesCompletionEventsModelDataAsset:
 MysteriousNotesService:
   Attributes:
   - Name: CachedNoteSettings
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class MysteriousNoteSettings*
   - Name: WieldableNoteDataAsset
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class WieldableMysteriousNoteDataAsset*
   - Name: CompletionEventsModelData
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class MysteriousNotesCompletionEventsModelDataAsset*
   ClassSize: '0xc8'
-  FullSize: '0x498'
-  InheritedSize: '0x3d0'
+  FullSize: '0x490'
+  InheritedSize: '0x3c8'
   Super: Actor
 MysteriousNotesServiceInterface:
   Attributes: []
@@ -109,36 +109,36 @@ PlayerMysteriousNoteInterface:
 WieldableMysteriousNote:
   Attributes:
   - Name: RenderTarget
-    Offset: '0x7a0'
+    Offset: '0x790'
     Size: '0x8'
     Type: Class MaybeCompressedCanvasRenderTarget2D*
   - Name: CanvasWidth
-    Offset: '0x7a8'
+    Offset: '0x798'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x7ac'
+    Offset: '0x79c'
     Size: '0x4'
     Type: int
   - Name: FontScale
-    Offset: '0x7b0'
+    Offset: '0x7a0'
     Size: '0x4'
     Type: float
   - Name: NoteLayout
-    Offset: '0x808'
+    Offset: '0x800'
     Size: '0x8'
     Type: Class WieldableMysteriousNoteLayout*
   - Name: UsableWieldableComponent
-    Offset: '0x810'
+    Offset: '0x808'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   - Name: InventoryItemComponent
-    Offset: '0x818'
+    Offset: '0x810'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   ClassSize: '0x1a0'
-  FullSize: '0x930'
-  InheritedSize: '0x790'
+  FullSize: '0x920'
+  InheritedSize: '0x780'
   Super: SkeletalMeshWieldableItem
 WieldableMysteriousNoteDataAsset:
   Attributes:

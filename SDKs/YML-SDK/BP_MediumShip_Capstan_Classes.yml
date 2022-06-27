@@ -3,18 +3,18 @@
 BP_MediumShip_Capstan_C:
   Attributes:
   - Name: Arm3
-    Offset: '0x840'
+    Offset: '0x838'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: Arm1
-    Offset: '0x848'
+    Offset: '0x840'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: Arm2
-    Offset: '0x850'
+    Offset: '0x848'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x18'
-  FullSize: '0x858'
-  InheritedSize: '0x840'
+  FullSize: '0x850'
+  InheritedSize: '0x838'
   Super: BP_Base_Capstan_C

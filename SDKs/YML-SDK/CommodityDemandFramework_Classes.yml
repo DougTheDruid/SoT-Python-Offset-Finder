@@ -43,12 +43,12 @@ CommodityDemandFrameworkSettings:
 CommodityDemandService:
   Attributes:
   - Name: ActiveCommodityDemands
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x20'
     Type: Struct ActiveNPCDemands
   ClassSize: '0x40'
-  FullSize: '0x410'
-  InheritedSize: '0x3d0'
+  FullSize: '0x408'
+  InheritedSize: '0x3c8'
   Super: Actor
 CommodityDemandServiceInterface:
   Attributes: []

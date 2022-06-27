@@ -1,21 +1,21 @@
 {
   "BP_DeepSeaRegion_C": {
     "Super": "DeepSeaRegion",
-    "FullSize": "0x450",
-    "InheritedSize": "0x440",
+    "FullSize": "0x448",
+    "InheritedSize": "0x438",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "PreviewCapsuleTwo",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x440"
+        "Offset": "0x438"
       },
       {
         "Name": "PreviewCapsuleOne",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x448"
+        "Offset": "0x440"
       }
     ]
   },

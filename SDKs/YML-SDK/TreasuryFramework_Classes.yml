@@ -3,122 +3,122 @@
 ShimmerActor:
   Attributes: []
   ClassSize: '0xa8'
-  FullSize: '0x478'
-  InheritedSize: '0x3d0'
+  FullSize: '0x470'
+  InheritedSize: '0x3c8'
   Super: Actor
 TreasuryRoom:
   Attributes:
   - Name: RoomAreaComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: TreasuryInactiveDurationMinSeconds
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x4'
     Type: float
   - Name: TreasuryInactiveDurationMaxSeconds
-    Offset: '0x3e4'
+    Offset: '0x3dc'
     Size: '0x4'
     Type: float
   - Name: RoomFailureDurationSeconds
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x4'
     Type: float
   - Name: WaveDelaySeconds
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x4'
     Type: float
   - Name: EncounterDelaySeconds
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x4'
     Type: float
   - Name: VaultDoorAnimDurationSeconds
-    Offset: '0x3f4'
+    Offset: '0x3ec'
     Size: '0x4'
     Type: float
   - Name: VaultDoorOpenDurationSeconds
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x4'
     Type: float
   - Name: MinWavesInEncounter
-    Offset: '0x3fc'
+    Offset: '0x3f4'
     Size: '0x4'
     Type: int
   - Name: MaxWavesInEncounter
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x4'
     Type: int
   - Name: MaxEncounters
-    Offset: '0x404'
+    Offset: '0x3fc'
     Size: '0x4'
     Type: int
   - Name: WaveEncounters
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<Struct TreasuryWaveEncounter>
   - Name: FloodMechanismActor
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class Actor*
   - Name: FloodTriggerActor
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class Actor*
   - Name: DrainMechanismActor
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class Actor*
   - Name: DrainTriggerActor
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class Actor*
   - Name: VaultMechanismActor
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class Actor*
   - Name: VaultTriggerActor
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class Actor*
   - Name: VaultLootSpawner
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: class
   - Name: VaultLootSpawnLocationActor
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class Actor*
   - Name: OverlappingActors
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x10'
     Type: TArray<class OverlappingActors*>
   - Name: CachedParticipantControllers
-    Offset: '0x488'
+    Offset: '0x480'
     Size: '0x10'
     Type: TArray<Weakclass CachedParticipantControllers>
   - Name: VaultLootSpawnerActor
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x8'
     Type: Class Actor*
   - Name: VaultOpenStat
-    Offset: '0x4a0'
+    Offset: '0x498'
     Size: '0x4'
     Type: Struct PlayerStat
   - Name: FloodMechanismComponent
-    Offset: '0x4a8'
+    Offset: '0x4a0'
     Size: '0x8'
     Type: Class MechanismActionComponent*
   - Name: DrainMechanismComponent
-    Offset: '0x4b0'
+    Offset: '0x4a8'
     Size: '0x8'
     Type: Class MechanismActionComponent*
   - Name: VaultMechanismComponent
-    Offset: '0x4b8'
+    Offset: '0x4b0'
     Size: '0x8'
     Type: Class MechanismActionComponent*
   ClassSize: '0x130'
-  FullSize: '0x500'
-  InheritedSize: '0x3d0'
+  FullSize: '0x4f8'
+  InheritedSize: '0x3c8'
   Super: Actor
 TreasuryWaveDataAsset:
   Attributes:

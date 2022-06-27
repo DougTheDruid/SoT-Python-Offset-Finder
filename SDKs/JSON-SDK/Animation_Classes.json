@@ -238,15 +238,27 @@
   },
   "AnimNotify_DetachAndMaintainWorldPosition": {
     "Super": "AnimNotify",
-    "FullSize": "0x40",
+    "FullSize": "0x50",
     "InheritedSize": "0x38",
-    "ClassSize": "0x8",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "CurrentLocation",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x38"
+      },
+      {
+        "Name": "PreviewLocationOffset",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "PreviewScaleMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
       }
     ]
   },
@@ -608,15 +620,15 @@
   },
   "CosmeticItemActor": {
     "Super": "Actor",
-    "FullSize": "0x480",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x478",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0xb0",
     "Attributes": [
       {
         "Name": "MeshComponent",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       }
     ]
   },

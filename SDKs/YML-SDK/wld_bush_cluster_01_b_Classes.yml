@@ -3,30 +3,30 @@
 wld_bush_cluster_01_b_C:
   Attributes:
   - Name: NonVagueNonUniqueLandmark
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class NonVagueNonUniqueLandmarkComponent*
   - Name: wld_trunk_01_a
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wld_bush_banana_01_a
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wld_bush_01_a_02
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wld_bush_01_a_01
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: SharedRoot
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x30'
-  FullSize: '0x440'
-  InheritedSize: '0x410'
+  FullSize: '0x438'
+  InheritedSize: '0x408'
   Super: BP_Placement_HeightDrop_C

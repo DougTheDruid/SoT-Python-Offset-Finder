@@ -458,6 +458,13 @@ public:
 };
 
 
+// Size 0x0
+class GetActorOfInterestStep: public TaleQuestStep
+{
+public:
+};
+
+
 // Size 0x28
 class GetVoyageDifficultyFromRankStep: public TaleQuestStep
 {
@@ -733,8 +740,37 @@ public:
 };
 
 
+// Size 0x58
+class TaleQuestPersistentForEachCrewTaskStep: public TaleQuestStep
+{
+public:
+	Class TaleQuestPersistentForEachCrewTaskStepDesc*            StepDesc;                                          // 0x98(0x8)
+};
+
+
 // Size 0x40
 class TaleQuestSelectEntryFromArrayStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestShipDiveStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestShipSurfaceStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestStartCameraFadeStep: public TaleQuestStep
 {
 public:
 };
@@ -762,6 +798,13 @@ public:
 
 
 // Size 0x0
+class TaleQuestToggleAmbientMigrationForServerStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
 class TaleQuestUpdateCheckpointStep: public TaleQuestStep
 {
 public:
@@ -781,6 +824,14 @@ class TrackResponseCoordinatorStep: public TaleQuestStep
 {
 public:
 	Class TrackResponseCoordinatorStepDesc*                      StepDesc;                                          // 0x98(0x8)
+};
+
+
+// Size 0x78
+class WaitForActorOfInterestToUnregisterStep: public TaleQuestStep
+{
+public:
+	Class WaitForActorOfInterestToUnregisterStepDesc*            Desc;                                              // 0x98(0x8)
 };
 
 
@@ -908,6 +959,15 @@ public:
 	Struct QuestVariableVector                                   Center;                                            // 0xa0(0x20)
 	float                                                        RadiusInCm;                                        // 0xc0(0x4)
 	Struct QuestVariableVector                                   DigLocation;                                       // 0xc8(0x20)
+};
+
+
+// Size 0x28
+class GetActorOfInterestStepDesc: public TaleQuestStepDesc
+{
+public:
+	class                                                        ActorOfInterestId;                                 // 0x80(0x8)
+	Struct QuestVariableActor                                    ActorOfInterest;                                   // 0x88(0x20)
 };
 
 
@@ -1322,11 +1382,19 @@ public:
 };
 
 
-// Size 0x70
+// Size 0x88
 class TaleQuestFunctionStepLibrary: public TaleQuestRunnableStepDesc
 {
 public:
 	Class Function*                                              Function;                                          // 0xe8(0x8)
+	byte                                                         FunctionStepFlags;                                 // 0x168(0x1)
+};
+
+
+// Size 0x0
+class TaleQuestActorFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
 };
 
 
@@ -1359,6 +1427,13 @@ public:
 
 
 // Size 0x0
+class TaleQuestTransformMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
 class TaleQuestTransfromConversionFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
@@ -1372,6 +1447,20 @@ public:
 };
 
 
+// Size 0x0
+class TaleQuestUtilityFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestWaterVolumeFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
 // Size 0x48
 class TaleQuestSelectEntryFromArrayStepDesc: public TaleQuestStepDesc
 {
@@ -1379,6 +1468,33 @@ public:
 	Class TaleQuestArrayEntrySelectionStrategy*                  SelectionStrategy;                                 // 0x80(0x8)
 	Struct QuestVariableArray                                    InputArray;                                        // 0x88(0x20)
 	Struct QuestVariableAny                                      OutputEntry;                                       // 0xa8(0x20)
+};
+
+
+// Size 0x0
+class TaleQuestShipDiveStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestShipSurfaceStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x20
+class TaleQuestStartCameraFadeStepDesc: public TaleQuestStepDesc
+{
+public:
+	float                                                        FromAlpha;                                         // 0x80(0x4)
+	float                                                        ToAlpha;                                           // 0x84(0x4)
+	float                                                        FadeTimeInSeconds;                                 // 0x88(0x4)
+	Struct LinearColor                                           FadeColour;                                        // 0x8c(0x10)
+	bool                                                         ShouldFadeAudio;                                   // 0x9c(0x1)
+	bool                                                         HoldFadeWhenFinished;                              // 0x9d(0x1)
 };
 
 
@@ -1420,6 +1536,21 @@ public:
 };
 
 
+// Size 0x0
+class TaleQuestPersistentForEachCrewTaskStepDesc: public TaleQuestTaskStepDescBase
+{
+public:
+};
+
+
+// Size 0x8
+class TaleQuestToggleAmbientMigrationForServerStepDesc: public TaleQuestStepDesc
+{
+public:
+	bool                                                         AmbientMigrationAvailable;                         // 0x80(0x1)
+};
+
+
 // Size 0x18
 class TaleQuestUpdateCheckpointStepDesc: public TaleQuestStepDesc
 {
@@ -1445,6 +1576,15 @@ class TrackResponseCoordinatorStepDesc: public TaleQuestStepDesc
 {
 public:
 	Struct QuestVariableUObject                                  CutsceneResponseCoordinator;                       // 0x80(0x20)
+};
+
+
+// Size 0x40
+class WaitForActorOfInterestToUnregisterStepDesc: public TaleQuestStepDesc
+{
+public:
+	class                                                        ActorOfInterestId;                                 // 0x80(0x8)
+	Struct FText                                                 ActorOfInterestUnregisteredFailureMessage;         // 0x88(0x38)
 };
 
 

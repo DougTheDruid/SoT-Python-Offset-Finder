@@ -1,153 +1,153 @@
 {
   "BP_EmissaryTable_Reapers_01_C": {
     "Super": "BP_EmissaryTable_01_C",
-    "FullSize": "0x700",
-    "InheritedSize": "0x640",
+    "FullSize": "0x6f8",
+    "InheritedSize": "0x638",
     "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "ParticleSystem4",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x638"
       },
       {
         "Name": "shp_gho_candle_01_c1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x648"
+        "Offset": "0x640"
       },
       {
         "Name": "shp_gho_candle_01_e",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x648"
       },
       {
         "Name": "shp_gho_candle_01_b1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x650"
       },
       {
         "Name": "shp_gho_candle_01_c",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x660"
+        "Offset": "0x658"
       },
       {
         "Name": "shp_gho_candle_01_b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x668"
+        "Offset": "0x660"
       },
       {
         "Name": "StaticMesh4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x670"
+        "Offset": "0x668"
       },
       {
         "Name": "bld_reapers_mask_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x678"
+        "Offset": "0x670"
       },
       {
         "Name": "cmp_papers_reaper_02_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x680"
+        "Offset": "0x678"
       },
       {
         "Name": "cmp_tools_reaper_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x688"
+        "Offset": "0x680"
       },
       {
         "Name": "cmp_goblet_reaper_02_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x690"
+        "Offset": "0x688"
       },
       {
         "Name": "cmp_papers_reaper_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x698"
+        "Offset": "0x690"
       },
       {
         "Name": "EmissaryShipAffiliationTracker",
         "Type": "Class EmissaryShipAffiliationTrackerComponent*",
         "Size": "0x8",
-        "Offset": "0x6a0"
+        "Offset": "0x698"
       },
       {
         "Name": "PointLight1",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x6a8"
+        "Offset": "0x6a0"
       },
       {
         "Name": "PointLight",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x6b0"
+        "Offset": "0x6a8"
       },
       {
         "Name": "ParticleSystem3",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x6b8"
+        "Offset": "0x6b0"
       },
       {
         "Name": "ParticleSystem2",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x6c0"
+        "Offset": "0x6b8"
       },
       {
         "Name": "ParticleSystem1",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x6c8"
+        "Offset": "0x6c0"
       },
       {
         "Name": "ParticleSystem",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x6d0"
+        "Offset": "0x6c8"
       },
       {
         "Name": "vfx_candle_01_tavern",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x6d8"
+        "Offset": "0x6d0"
       },
       {
         "Name": "StaticMesh3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6e0"
+        "Offset": "0x6d8"
       },
       {
         "Name": "StaticMesh2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6e8"
+        "Offset": "0x6e0"
       },
       {
         "Name": "StaticMesh1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6f0"
+        "Offset": "0x6e8"
       },
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x6f0"
       }
     ]
   },

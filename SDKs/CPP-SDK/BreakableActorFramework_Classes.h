@@ -23,13 +23,13 @@ public:
 class BreakableActorBase: public Actor
 {
 public:
-	float                                                        DespawnDelay;                                      // 0x3f0(0x4)
-	Class PrimitiveComponent*                                    ThirdPersonMesh;                                   // 0x418(0x8)
-	Class HealthComponent*                                       HealthComponent;                                   // 0x420(0x8)
-	Class BreakableActorAudioComponent*                          AudioComponent;                                    // 0x428(0x8)
-	Class BreakableActorVfxComponent*                            VFXComponent;                                      // 0x430(0x8)
-	Class BreakableActorDynamicMaterialComponent*                DamageMaterialComponent;                           // 0x438(0x8)
-	Class ActorDamageableComponent*                              DamageableComponent;                               // 0x440(0x8)
+	float                                                        DespawnDelay;                                      // 0x3e8(0x4)
+	Class PrimitiveComponent*                                    ThirdPersonMesh;                                   // 0x410(0x8)
+	Class HealthComponent*                                       HealthComponent;                                   // 0x418(0x8)
+	Class BreakableActorAudioComponent*                          AudioComponent;                                    // 0x420(0x8)
+	Class BreakableActorVfxComponent*                            VFXComponent;                                      // 0x428(0x8)
+	Class BreakableActorDynamicMaterialComponent*                DamageMaterialComponent;                           // 0x430(0x8)
+	Class ActorDamageableComponent*                              DamageableComponent;                               // 0x438(0x8)
 };
 
 

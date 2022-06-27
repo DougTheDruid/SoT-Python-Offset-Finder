@@ -1,54 +1,60 @@
 {
   "BP_out_shop_wld_01_a_C": {
     "Super": "Actor",
-    "FullSize": "0x5f8",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x5f0",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x228",
     "Attributes": [
       {
         "Name": "WorldLocationPopUp",
         "Type": "Class WorldLocationPopUpComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "PetHangoutSpot",
         "Type": "Class PetHangoutSpotComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "bld_out_shop_rail_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "bld_out_shop_steps_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "bld_shop_wood_box_03_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "bld_out_shop_front_sign_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "shp_anchor_02_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "BP_OutpostCrate_bld_shop_wood_box_03_a",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "BP_IslandStorage_Barrel_Outpost",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x408"
@@ -60,110 +66,110 @@
         "Offset": "0x410"
       },
       {
-        "Name": "BP_IslandStorage_Barrel_Outpost",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
         "Name": "PointLight7",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "PointLight6",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "StaticMesh17",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "StaticMesh16",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "PointLight5",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x440"
+        "Offset": "0x438"
       },
       {
         "Name": "SpotLight3",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
-        "Offset": "0x448"
+        "Offset": "0x440"
       },
       {
         "Name": "StaticMesh15",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x450"
+        "Offset": "0x448"
       },
       {
         "Name": "ChildActor",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x458"
+        "Offset": "0x450"
       },
       {
         "Name": "StaticMesh14",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x458"
       },
       {
         "Name": "SpotLight2",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x460"
       },
       {
         "Name": "StaticMesh13",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x468"
       },
       {
         "Name": "PointLight4",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x470"
       },
       {
         "Name": "PointLight3",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x478"
       },
       {
         "Name": "StaticMesh12",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x480"
       },
       {
         "Name": "StaticMesh11",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x490"
+        "Offset": "0x488"
       },
       {
         "Name": "ParticleSystem",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x490"
       },
       {
         "Name": "PointLight1",
         "Type": "Class PointLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "gmp_bar_hide_01_a",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4a0"
       },
@@ -210,214 +216,208 @@
         "Offset": "0x4d8"
       },
       {
-        "Name": "gmp_bar_hide_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4e0"
-      },
-      {
         "Name": "BP_OutpostCrate_bld_shop_wood_box_01_a",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x4e8"
+        "Offset": "0x4e0"
       },
       {
         "Name": "BP_OutpostCrate_bld_shop_wood_box_02_a",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x4f0"
+        "Offset": "0x4e8"
       },
       {
         "Name": "StaticMesh3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4f8"
+        "Offset": "0x4f0"
       },
       {
         "Name": "StaticMesh2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x500"
+        "Offset": "0x4f8"
       },
       {
         "Name": "vfx_tavern_candle_looping_01",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x508"
+        "Offset": "0x500"
       },
       {
         "Name": "SpotLight1",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
-        "Offset": "0x510"
+        "Offset": "0x508"
       },
       {
         "Name": "PointLight",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x518"
+        "Offset": "0x510"
       },
       {
         "Name": "SpotLight",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
-        "Offset": "0x520"
+        "Offset": "0x518"
       },
       {
         "Name": "shp_rope_coil_03_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x528"
+        "Offset": "0x520"
       },
       {
         "Name": "bld_out_shop_workbench_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x530"
+        "Offset": "0x528"
       },
       {
         "Name": "bld_out_shop_roof_ship_wheel_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x538"
+        "Offset": "0x530"
       },
       {
         "Name": "cmn_lantern_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x540"
+        "Offset": "0x538"
       },
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x548"
+        "Offset": "0x540"
       },
       {
         "Name": "cmn_skeleton_head_boar_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x550"
+        "Offset": "0x548"
       },
       {
         "Name": "cmn_skeleton_head_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x558"
+        "Offset": "0x550"
       },
       {
         "Name": "bld_out_shop_wilds_details_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x558"
       },
       {
         "Name": "cmn_bucket_01_a1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x560"
       },
       {
         "Name": "shp_rope_coil_02_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x568"
       },
       {
         "Name": "shp_int_hook_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x570"
       },
       {
         "Name": "shp_kitchen_shelf_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x580"
+        "Offset": "0x578"
       },
       {
         "Name": "cmn_bucket_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x588"
+        "Offset": "0x580"
       },
       {
         "Name": "bld_shop_wood_box_03_a1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x590"
+        "Offset": "0x588"
       },
       {
         "Name": "shp_rope_coil_05_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x598"
+        "Offset": "0x590"
       },
       {
         "Name": "bld_out_shop_hatch_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5a0"
+        "Offset": "0x598"
       },
       {
         "Name": "bld_out_shop_drapes_rear_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5a8"
+        "Offset": "0x5a0"
       },
       {
         "Name": "bld_out_shop_hanging_wood_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5b0"
+        "Offset": "0x5a8"
       },
       {
         "Name": "bld_out_shop_hook_bands_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5b8"
+        "Offset": "0x5b0"
       },
       {
         "Name": "bld_out_shop_plank_netting_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5c0"
+        "Offset": "0x5b8"
       },
       {
         "Name": "bld_out_shop_barrel_netting_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5c8"
+        "Offset": "0x5c0"
       },
       {
         "Name": "bld_out_shop_drapes_front_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5d0"
+        "Offset": "0x5c8"
       },
       {
         "Name": "bld_out_shop_winch_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5d8"
+        "Offset": "0x5d0"
       },
       {
         "Name": "bld_out_shop_roof_beam_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5e0"
+        "Offset": "0x5d8"
       },
       {
         "Name": "bld_out_shop_roof_barrels_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5e8"
+        "Offset": "0x5e0"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x5f0"
+        "Offset": "0x5e8"
       }
     ]
   },

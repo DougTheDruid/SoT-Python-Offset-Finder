@@ -1,15 +1,15 @@
 {
   "BP_PetChestInteraction_C": {
     "Super": "PetChestInteraction",
-    "FullSize": "0x670",
-    "InheritedSize": "0x668",
+    "FullSize": "0x668",
+    "InheritedSize": "0x660",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x668"
+        "Offset": "0x660"
       }
     ]
   },

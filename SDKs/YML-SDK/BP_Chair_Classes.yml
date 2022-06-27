@@ -3,10 +3,10 @@
 BP_Chair_C:
   Attributes:
   - Name: Chair
-    Offset: '0x3d8'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x8'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3e8'
   Super: GenericPart

@@ -79,9 +79,9 @@ public:
 class MysteriousNotesService: public Actor
 {
 public:
-	Class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f8(0x8)
-	Class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x400(0x8)
-	Class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x408(0x8)
+	Class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f0(0x8)
+	Class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3f8(0x8)
+	Class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x400(0x8)
 };
 
 
@@ -106,13 +106,13 @@ public:
 class WieldableMysteriousNote: public SkeletalMeshWieldableItem
 {
 public:
-	Class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x7a0(0x8)
-	int                                                          CanvasWidth;                                       // 0x7a8(0x4)
-	int                                                          CanvasHeight;                                      // 0x7ac(0x4)
-	float                                                        FontScale;                                         // 0x7b0(0x4)
-	Class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x808(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x810(0x8)
-	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x818(0x8)
+	Class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x790(0x8)
+	int                                                          CanvasWidth;                                       // 0x798(0x4)
+	int                                                          CanvasHeight;                                      // 0x79c(0x4)
+	float                                                        FontScale;                                         // 0x7a0(0x4)
+	Class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x800(0x8)
+	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x808(0x8)
+	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x810(0x8)
 };
 
 

@@ -25,30 +25,30 @@ EnchantedCompassProximityAnnouncementComponent:
 MultiTargetEnchantedCompass:
   Attributes:
   - Name: Locations
-    Offset: '0x868'
+    Offset: '0x858'
     Size: '0x10'
     Type: TArray<Struct Vector>
   - Name: LocationIds
-    Offset: '0x878'
+    Offset: '0x868'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: InventoryItem
-    Offset: '0x888'
+    Offset: '0x878'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   - Name: ProximityAnnouncementComponent
-    Offset: '0x890'
+    Offset: '0x880'
     Size: '0x8'
     Type: Class EnchantedCompassProximityAnnouncementComponent*
   ClassSize: '0x30'
-  FullSize: '0x8a0'
-  InheritedSize: '0x870'
+  FullSize: '0x890'
+  InheritedSize: '0x860'
   Super: Compass
 PrototypeMultiTargetEnchantedCompass:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x8a0'
-  InheritedSize: '0x8a0'
+  FullSize: '0x890'
+  InheritedSize: '0x890'
   Super: MultiTargetEnchantedCompass
 TaleQuestMultiTargetCompassAddTrackedLocationStep:
   Attributes:

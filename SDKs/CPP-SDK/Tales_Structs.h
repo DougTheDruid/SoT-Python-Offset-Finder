@@ -232,6 +232,13 @@ public:
 };
 
 
+// Size 0x28
+struct TaleQuestForEachCrewTask
+{
+public:
+};
+
+
 // Size 0x20
 struct QuestVariableItemDescType
 {
@@ -354,6 +361,15 @@ public:
 struct QuestVariableTexture
 {
 public:
+};
+
+
+// Size 0x20
+struct TaleQuestFailedEvent
+{
+public:
+	TArray<Struct Guid>                                          CrewIds;                                           // 0x0(0x10)
+	Struct Guid                                                  QuestId;                                           // 0x10(0x10)
 };
 
 

@@ -103,60 +103,60 @@ ShouldTetherInWorldSpaceInterface:
 Tether:
   Attributes:
   - Name: TetherPositionAnchorComponent
-    Offset: '0x4c8'
+    Offset: '0x4c0'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: SourcePhysicsHandle
-    Offset: '0x4d0'
+    Offset: '0x4c8'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: TargetPhysicsHandle
-    Offset: '0x4d8'
+    Offset: '0x4d0'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: JointComponent
-    Offset: '0x4e0'
+    Offset: '0x4d8'
     Size: '0x8'
     Type: Class DistanceJointComponent*
   - Name: SourceActor
-    Offset: '0x4e8'
+    Offset: '0x4e0'
     Size: '0x8'
     Type: Class Actor*
   - Name: TargetActor
-    Offset: '0x4f0'
+    Offset: '0x4e8'
     Size: '0x8'
     Type: Class Actor*
   - Name: SlackCm
-    Offset: '0x4f8'
+    Offset: '0x4f0'
     Size: '0x4'
     Type: float
   - Name: MaxLengthWhenGrowing
-    Offset: '0x4fc'
+    Offset: '0x4f4'
     Size: '0x4'
     Type: float
   - Name: HasAttached
-    Offset: '0x508'
+    Offset: '0x500'
     Size: '0x1'
     Type: bool
   - Name: HasSourceActor
-    Offset: '0x509'
+    Offset: '0x501'
     Size: '0x1'
     Type: bool
   - Name: HasTargetActor
-    Offset: '0x50a'
+    Offset: '0x502'
     Size: '0x1'
     Type: bool
   - Name: IsSlackEnabled
-    Offset: '0x50b'
+    Offset: '0x503'
     Size: '0x1'
     Type: bool
   - Name: CurrentTetherMode
-    Offset: '0x50c'
+    Offset: '0x504'
     Size: '0x1'
     Type: byte
   ClassSize: '0x140'
-  FullSize: '0x510'
-  InheritedSize: '0x3d0'
+  FullSize: '0x508'
+  InheritedSize: '0x3c8'
   Super: Actor
 TetherConstraintInterface:
   Attributes: []

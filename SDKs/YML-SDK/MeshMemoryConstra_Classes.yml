@@ -6,6 +6,12 @@ MeshMemoryConstraintBudget_AI_C:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: MeshMemoryConstraintBudget
+MeshMemoryConstraintBudget_ShipCabinCustomization_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintBudget
 MeshMemoryConstraintBudget_ShipParts_C:
   Attributes: []
   ClassSize: '0x0'

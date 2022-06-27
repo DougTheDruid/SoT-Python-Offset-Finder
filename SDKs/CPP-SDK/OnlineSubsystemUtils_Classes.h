@@ -82,9 +82,9 @@ public:
 class OnlineBeacon: public Actor
 {
 public:
-	float                                                        BeaconConnectionInitialTimeout;                    // 0x3d8(0x4)
-	float                                                        BeaconConnectionTimeout;                           // 0x3dc(0x4)
-	Class NetDriver*                                             NetDriver;                                         // 0x3e0(0x8)
+	float                                                        BeaconConnectionInitialTimeout;                    // 0x3d0(0x4)
+	float                                                        BeaconConnectionTimeout;                           // 0x3d4(0x4)
+	Class NetDriver*                                             NetDriver;                                         // 0x3d8(0x8)
 };
 
 
@@ -92,9 +92,9 @@ public:
 class OnlineBeaconClient: public OnlineBeacon
 {
 public:
-	Class OnlineBeaconHostObject*                                BeaconOwner;                                       // 0x3f8(0x8)
-	Class NetConnection*                                         BeaconConnection;                                  // 0x400(0x8)
-	byte                                                         ConnectionState;                                   // 0x408(0x1)
+	Class OnlineBeaconHostObject*                                BeaconOwner;                                       // 0x3f0(0x8)
+	Class NetConnection*                                         BeaconConnection;                                  // 0x3f8(0x8)
+	byte                                                         ConnectionState;                                   // 0x400(0x1)
 };
 
 
@@ -117,11 +117,11 @@ public:
 class PartyBeaconClient: public OnlineBeaconClient
 {
 public:
-	Struct FString                                               DestSessionId;                                     // 0x430(0x10)
-	Struct PartyReservation                                      PendingReservation;                                // 0x440(0x30)
-	byte                                                         RequestType;                                       // 0x470(0x1)
-	bool                                                         bPendingReservationSent;                           // 0x471(0x1)
-	bool                                                         bCancelReservation;                                // 0x472(0x1)
+	Struct FString                                               DestSessionId;                                     // 0x428(0x10)
+	Struct PartyReservation                                      PendingReservation;                                // 0x438(0x30)
+	byte                                                         RequestType;                                       // 0x468(0x1)
+	bool                                                         bPendingReservationSent;                           // 0x469(0x1)
+	bool                                                         bCancelReservation;                                // 0x46a(0x1)
 };
 
 
@@ -136,8 +136,8 @@ public:
 class OnlineBeaconHost: public OnlineBeacon
 {
 public:
-	int                                                          ListenPort;                                        // 0x3f8(0x4)
-	TArray<class ClientActors*>                                  ClientActors;                                      // 0x400(0x10)
+	int                                                          ListenPort;                                        // 0x3f0(0x4)
+	TArray<class ClientActors*>                                  ClientActors;                                      // 0x3f8(0x10)
 };
 
 
@@ -145,9 +145,9 @@ public:
 class OnlineBeaconHostObject: public Actor
 {
 public:
-	Struct FString                                               BeaconTypeName;                                    // 0x3d0(0x10)
-	class                                                        ClientBeaconActorClass;                            // 0x3e0(0x8)
-	TArray<class ClientActors*>                                  ClientActors;                                      // 0x3e8(0x10)
+	Struct FString                                               BeaconTypeName;                                    // 0x3c8(0x10)
+	class                                                        ClientBeaconActorClass;                            // 0x3d8(0x8)
+	TArray<class ClientActors*>                                  ClientActors;                                      // 0x3e0(0x10)
 };
 
 
@@ -155,9 +155,9 @@ public:
 class PartyBeaconHost: public OnlineBeaconHostObject
 {
 public:
-	Class PartyBeaconState*                                      State;                                             // 0x3f8(0x8)
-	float                                                        SessionTimeoutSecs;                                // 0x428(0x4)
-	float                                                        TravelSessionTimeoutSecs;                          // 0x42c(0x4)
+	Class PartyBeaconState*                                      State;                                             // 0x3f0(0x8)
+	float                                                        SessionTimeoutSecs;                                // 0x420(0x4)
+	float                                                        TravelSessionTimeoutSecs;                          // 0x424(0x4)
 };
 
 

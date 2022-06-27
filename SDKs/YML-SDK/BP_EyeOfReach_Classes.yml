@@ -3,58 +3,58 @@
 BP_EyeOfReach_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0xa70'
+    Offset: '0xa50'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: Glint
-    Offset: '0xa78'
+    Offset: '0xa58'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: PostProcess
-    Offset: '0xa80'
+    Offset: '0xa60'
     Size: '0x8'
     Type: Class PostProcessComponent*
   - Name: sfx relationship
-    Offset: '0xa88'
+    Offset: '0xa68'
     Size: '0x1'
     Type: byte
   - Name: DynamicMaterial
-    Offset: '0xa90'
+    Offset: '0xa70'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: TurningOn
-    Offset: '0xa98'
+    Offset: '0xa78'
     Size: '0x1'
     Type: bool
   - Name: BlurTime
-    Offset: '0xa9c'
+    Offset: '0xa7c'
     Size: '0x4'
     Type: float
   - Name: BlurInDuration
-    Offset: '0xaa0'
+    Offset: '0xa80'
     Size: '0x4'
     Type: float
   - Name: BlurOutDuration
-    Offset: '0xaa4'
+    Offset: '0xa84'
     Size: '0x4'
     Type: float
   - Name: BlurCurve
-    Offset: '0xaa8'
+    Offset: '0xa88'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: LensNormal
-    Offset: '0xab0'
+    Offset: '0xa90'
     Size: '0x8'
     Type: Class Texture2D*
   - Name: LensMask
-    Offset: '0xab8'
+    Offset: '0xa98'
     Size: '0x8'
     Type: Class Texture2D*
   - Name: LensTint
-    Offset: '0xac0'
+    Offset: '0xaa0'
     Size: '0x10'
     Type: Struct LinearColor
   ClassSize: '0x60'
-  FullSize: '0xad0'
-  InheritedSize: '0xa70'
+  FullSize: '0xab0'
+  InheritedSize: '0xa50'
   Super: ProjectileWeapon

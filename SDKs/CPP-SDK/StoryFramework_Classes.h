@@ -6,6 +6,30 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x30
+class ActiveStorySpawnRequirement: public SpawnRequirement
+{
+public:
+	TArray<Struct FName>                                         StoryNames;                                        // 0x50(0x10)
+	bool                                                         AllStoriesRequired;                                // 0x60(0x1)
+};
+
+
+// Size 0x0
+class DebugStoryServiceCheatInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x38
+class DebugStoryServiceCheat: public Actor
+{
+public:
+	TArray<Struct StoryInfo>                                     AllStories;                                        // 0x3d0(0x10)
+};
+
+
 // Size 0x10
 class IsStoryActiveNPCDialogConditional: public NPCDialogConditional
 {
@@ -17,8 +41,42 @@ public:
 class StoryDrivenBlendedLightingZoneComponent: public BlendedLightingZoneComponent
 {
 public:
-	TArray<Struct LightingZoneStoryRelatedSettings>              StoryResponses;                                    // 0x328(0x10)
-	int                                                          CurrentStoryResponseIndex;                         // 0x338(0x4)
+	Class StoryDrivenBlendedLightingZoneComponentCollectionDataAsset* StoryDrivenLightingAssetsCollection;               // 0x328(0x8)
+	Struct LightingZoneStoryRelatedSettings                      CurrentStoryResponse;                              // 0x330(0x10)
+};
+
+
+// Size 0x18
+class StoryDrivenBlendedLightingZoneComponentDataAsset: public DataAsset
+{
+public:
+	Struct FeatureFlag                                           Feature;                                           // 0x28(0x8)
+	TArray<Struct LightingZoneStoryRelatedSettings>              StoryResponses;                                    // 0x30(0x10)
+};
+
+
+// Size 0x10
+class StoryDrivenBlendedLightingZoneComponentCollectionDataAsset: public DataAsset
+{
+public:
+	TArray<class StoryDrivenLightingAssetList*>                  StoryDrivenLightingAssetList;                      // 0x28(0x10)
+};
+
+
+// Size 0x10
+class StorySettings: public DeveloperSettings
+{
+public:
+	Struct StringAssetReference                                  StoryNamesCollectionDataAssetLocation;             // 0x38(0x10)
+};
+
+
+// Size 0x20
+class StoryNamesCollectionDataAsset: public DataAsset
+{
+public:
+	TArray<Struct StoryNameInfo>                                 Stories;                                           // 0x28(0x10)
+	TArray<class StoriesAssets*>                                 StoriesAssets;                                     // 0x38(0x10)
 };
 
 
@@ -49,8 +107,8 @@ public:
 class StoryService: public Actor
 {
 public:
-	TArray<Struct StoryInfo>                                     Stories;                                           // 0x3f8(0x10)
-	TArray<Struct StoryInfo>                                     ActiveStories;                                     // 0x408(0x10)
+	TArray<Struct StoryInfo>                                     Stories;                                           // 0x3f0(0x10)
+	TArray<Struct StoryInfo>                                     ActiveStories;                                     // 0x400(0x10)
 };
 
 
@@ -107,8 +165,8 @@ public:
 class StorySpawnedActorsService: public Actor
 {
 public:
-	Struct StoriesToSpawnedActorsListContainer                   GlobalSpawnedActors;                               // 0x3d8(0x50)
-	Class StorySpawnedActorsCollectionDataAsset*                 Asset;                                             // 0x4c8(0x8)
+	Struct StoriesToSpawnedActorsListContainer                   GlobalSpawnedActors;                               // 0x3d0(0x50)
+	Class StorySpawnedActorsCollectionDataAsset*                 Asset;                                             // 0x4c0(0x8)
 };
 
 

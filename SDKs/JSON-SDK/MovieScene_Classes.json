@@ -127,6 +127,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "MovieSceneCameraDockingInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MovieSceneFolder": {
     "Super": "Object",
     "FullSize": "0x70",
@@ -161,9 +168,9 @@
   },
   "MovieSceneSequencePlayer": {
     "Super": "Object",
-    "FullSize": "0x600",
+    "FullSize": "0x608",
     "InheritedSize": "0x28",
-    "ClassSize": "0x5d8",
+    "ClassSize": "0x5e0",
     "Attributes": [
       {
         "Name": "bIsPlaying",
@@ -218,6 +225,12 @@
         "Type": "Struct MovieSceneSequencePlaybackSettings",
         "Size": "0x28",
         "Offset": "0x3f0"
+      },
+      {
+        "Name": "InteractingCharacter",
+        "Type": "Class Character*",
+        "Size": "0x8",
+        "Offset": "0x5e8"
       }
     ]
   },

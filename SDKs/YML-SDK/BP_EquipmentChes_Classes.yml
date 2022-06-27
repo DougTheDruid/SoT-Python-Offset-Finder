@@ -3,20 +3,20 @@
 BP_EquipmentChestInteraction_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x4a0'
-  InheritedSize: '0x498'
+  FullSize: '0x498'
+  InheritedSize: '0x490'
   Super: EquipmentChestInteraction
 BP_EquipmentChest_C:
   Attributes:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
-    Offset: '0x568'
+    Offset: '0x580'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
   ClassSize: '0x8'
-  FullSize: '0x570'
-  InheritedSize: '0x568'
+  FullSize: '0x588'
+  InheritedSize: '0x580'
   Super: PossessionsChest

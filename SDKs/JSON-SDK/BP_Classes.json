@@ -1,8 +1,8 @@
 {
   "BP_fod_ChickenMeatRaw_00_a_ItemProxy_C": {
     "Super": "BP_ProxyIngestible_Retractable_C",
-    "FullSize": "0x7b8",
-    "InheritedSize": "0x7b8",
+    "FullSize": "0x7b0",
+    "InheritedSize": "0x7b0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -15,504 +15,504 @@
   },
   "BP_fod_ChickenMeatRaw_00_a_Wieldable_C": {
     "Super": "BP_StaticWieldableIngestible_C",
-    "FullSize": "0x858",
-    "InheritedSize": "0x858",
+    "FullSize": "0x848",
+    "InheritedSize": "0x848",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_fod_ChickenMeatRaw_00_a_ItemInfo_C": {
     "Super": "BP_MeatItemInfo_C",
-    "FullSize": "0x580",
-    "InheritedSize": "0x568",
+    "FullSize": "0x578",
+    "InheritedSize": "0x560",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "MaterialManipulationSettings",
         "Type": "Class MaterialManipulationSettingsComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x560"
       },
       {
         "Name": "LightweightStatusEffectManager",
         "Type": "Class LightWeightStatusEffectManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x568"
       },
       {
         "Name": "Cookable",
         "Type": "Class CookableComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x570"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank2_AF_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank2_GH_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank2_MA_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank2_OOS_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank2_RB_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank5_AF_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x444",
-    "InheritedSize": "0x408",
+    "FullSize": "0x43c",
+    "InheritedSize": "0x400",
     "ClassSize": "0x3c",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "InitialDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x438"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank5_GH_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x444",
-    "InheritedSize": "0x408",
+    "FullSize": "0x43c",
+    "InheritedSize": "0x400",
     "ClassSize": "0x3c",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "InitialDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x438"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank5_MA_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x444",
-    "InheritedSize": "0x408",
+    "FullSize": "0x43c",
+    "InheritedSize": "0x400",
     "ClassSize": "0x3c",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "InitialDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x438"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank5_OOS_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x444",
-    "InheritedSize": "0x408",
+    "FullSize": "0x43c",
+    "InheritedSize": "0x400",
     "ClassSize": "0x3c",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "InitialDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x438"
       }
     ]
   },
   "BP_PromptActor_EmissaryRank5_RB_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x444",
-    "InheritedSize": "0x408",
+    "FullSize": "0x43c",
+    "InheritedSize": "0x400",
     "ClassSize": "0x3c",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ExpectedLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "InitialDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x438"
       }
     ]
   },
@@ -525,47 +525,21 @@
   },
   "BP_CommodityManifestBook_MerchantAlliance_C": {
     "Super": "ModalInteractionProxy",
-    "FullSize": "0x4f8",
-    "InheritedSize": "0x4e8",
+    "FullSize": "0x510",
+    "InheritedSize": "0x500",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "NPCDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x4e8"
+        "Offset": "0x500"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x4f0"
-      }
-    ]
-  },
-  "BP_IslandStorageBarrel_Outpost_C": {
-    "Super": "StorageContainer",
-    "FullSize": "0x4d8",
-    "InheritedSize": "0x4c0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Replenishable",
-        "Type": "Class ReplenishableComponent*",
-        "Size": "0x8",
-        "Offset": "0x4c0"
-      },
-      {
-        "Name": "IslandTelemetrySubject",
-        "Type": "Class IslandTelemetrySubjectComponent*",
-        "Size": "0x8",
-        "Offset": "0x4c8"
-      },
-      {
-        "Name": "StorageContainer",
-        "Type": "Class StorageContainerComponent*",
-        "Size": "0x8",
-        "Offset": "0x4d0"
+        "Offset": "0x508"
       }
     ]
   },
@@ -624,6 +598,32 @@
     "InheritedSize": "0xe0",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "BP_IslandStorageBarrel_Outpost_C": {
+    "Super": "StorageContainer",
+    "FullSize": "0x4d0",
+    "InheritedSize": "0x4b8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Replenishable",
+        "Type": "Class ReplenishableComponent*",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "IslandTelemetrySubject",
+        "Type": "Class IslandTelemetrySubjectComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "StorageContainer",
+        "Type": "Class StorageContainerComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      }
+    ]
   },
   "BP_hair_col_white_01_under_Desc_C": {
     "Super": "ClothingDesc",

@@ -1,22 +1,22 @@
 {
   "wld_outpost_1_design_talltales_C": {
     "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "wld_outpost_1_design_adventure_C": {
     "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "wld_outpost_1_design_C": {
     "Super": "LevelScriptActor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d8",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
     "ClassSize": "0x0",
     "Attributes": []
   },

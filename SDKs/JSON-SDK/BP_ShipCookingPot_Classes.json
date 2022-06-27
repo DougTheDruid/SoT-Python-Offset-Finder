@@ -1,21 +1,21 @@
 {
   "BP_ShipCookingPot_C": {
     "Super": "BP_CookingPotBase_C",
-    "FullSize": "0x5e8",
-    "InheritedSize": "0x5d8",
+    "FullSize": "0x5e0",
+    "InheritedSize": "0x5d0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
         "Size": "0x8",
-        "Offset": "0x5d8"
+        "Offset": "0x5d0"
       },
       {
         "Name": "CookerIgnition",
         "Type": "Class CookerIgnitionComponent*",
         "Size": "0x8",
-        "Offset": "0x5e0"
+        "Offset": "0x5d8"
       }
     ]
   },

@@ -14,20 +14,20 @@ public:
 };
 
 
-// Size 0x80
+// Size 0x78
 class WaterSlide: public Actor
 {
 public:
-	Class SplineComponent*                                       SlideSpline;                                       // 0x3d8(0x8)
-	Class SceneComponent*                                        Root;                                              // 0x3e0(0x8)
-	Class WaterSlideParamsDataAsset*                             WaterSlideParamsDataAsset;                         // 0x3e8(0x8)
-	Class PrimitiveComponent*                                    EntranceCollisionComponent;                        // 0x3f0(0x8)
-	Class WaterSlide*                                            ContinuedWaterSlideRoute;                          // 0x3f8(0x8)
-	Class WaterSlide*                                            LeftWaterSlideRoute;                               // 0x400(0x8)
-	Class WaterSlide*                                            RightWaterSlideRoute;                              // 0x408(0x8)
-	bool                                                         IsEndOfSlide;                                      // 0x410(0x1)
-	Struct Vector                                                EndOfSlideLaunchForce;                             // 0x414(0xc)
-	Class WaterSlideAudioParams*                                 WaterSlideAudioParams;                             // 0x420(0x8)
+	Class SplineComponent*                                       SlideSpline;                                       // 0x3d0(0x8)
+	Class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
+	Class WaterSlideParamsDataAsset*                             WaterSlideParamsDataAsset;                         // 0x3e0(0x8)
+	Class PrimitiveComponent*                                    EntranceCollisionComponent;                        // 0x3e8(0x8)
+	Class WaterSlide*                                            ContinuedWaterSlideRoute;                          // 0x3f0(0x8)
+	Class WaterSlide*                                            LeftWaterSlideRoute;                               // 0x3f8(0x8)
+	Class WaterSlide*                                            RightWaterSlideRoute;                              // 0x400(0x8)
+	bool                                                         IsEndOfSlide;                                      // 0x408(0x1)
+	Struct Vector                                                EndOfSlideLaunchForce;                             // 0x40c(0xc)
+	Class WaterSlideAudioParams*                                 WaterSlideAudioParams;                             // 0x418(0x8)
 };
 
 

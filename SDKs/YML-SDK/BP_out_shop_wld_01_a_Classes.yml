@@ -3,34 +3,38 @@
 BP_out_shop_wld_01_a_C:
   Attributes:
   - Name: WorldLocationPopUp
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class WorldLocationPopUpComponent*
   - Name: PetHangoutSpot
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class PetHangoutSpotComponent*
   - Name: bld_out_shop_rail_01
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_steps_01
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_shop_wood_box_03_a
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_front_sign_01_a
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: shp_anchor_02_a
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: BP_OutpostCrate_bld_shop_wood_box_03_a
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: BP_IslandStorage_Barrel_Outpost
     Offset: '0x408'
     Size: '0x8'
     Type: Class ChildActorComponent*
@@ -38,78 +42,78 @@ BP_out_shop_wld_01_a_C:
     Offset: '0x410'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: BP_IslandStorage_Barrel_Outpost
-    Offset: '0x418'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
   - Name: PointLight7
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class PointLightComponent*
   - Name: PointLight6
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class PointLightComponent*
   - Name: StaticMesh17
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: StaticMesh16
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: PointLight5
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class PointLightComponent*
   - Name: SpotLight3
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class SpotLightComponent*
   - Name: StaticMesh15
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: ChildActor
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: StaticMesh14
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: SpotLight2
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x8'
     Type: Class SpotLightComponent*
   - Name: StaticMesh13
-    Offset: '0x470'
+    Offset: '0x468'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: PointLight4
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x8'
     Type: Class PointLightComponent*
   - Name: PointLight3
-    Offset: '0x480'
+    Offset: '0x478'
     Size: '0x8'
     Type: Class PointLightComponent*
   - Name: StaticMesh12
-    Offset: '0x488'
+    Offset: '0x480'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: StaticMesh11
-    Offset: '0x490'
+    Offset: '0x488'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: ParticleSystem
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: PointLight1
-    Offset: '0x4a0'
+    Offset: '0x498'
     Size: '0x8'
     Type: Class PointLightComponent*
+  - Name: gmp_bar_hide_01_a
+    Offset: '0x4a0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
   - Name: gmp_bar_hide_01_a
     Offset: '0x4a8'
     Size: '0x8'
@@ -138,147 +142,143 @@ BP_out_shop_wld_01_a_C:
     Offset: '0x4d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: gmp_bar_hide_01_a
-    Offset: '0x4e0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
   - Name: BP_OutpostCrate_bld_shop_wood_box_01_a
-    Offset: '0x4e8'
+    Offset: '0x4e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: BP_OutpostCrate_bld_shop_wood_box_02_a
-    Offset: '0x4f0'
+    Offset: '0x4e8'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: StaticMesh3
-    Offset: '0x4f8'
+    Offset: '0x4f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: StaticMesh2
-    Offset: '0x500'
+    Offset: '0x4f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: vfx_tavern_candle_looping_01
-    Offset: '0x508'
+    Offset: '0x500'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: SpotLight1
-    Offset: '0x510'
+    Offset: '0x508'
     Size: '0x8'
     Type: Class SpotLightComponent*
   - Name: PointLight
-    Offset: '0x518'
+    Offset: '0x510'
     Size: '0x8'
     Type: Class PointLightComponent*
   - Name: SpotLight
-    Offset: '0x520'
+    Offset: '0x518'
     Size: '0x8'
     Type: Class SpotLightComponent*
   - Name: shp_rope_coil_03_a
-    Offset: '0x528'
+    Offset: '0x520'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_workbench_01_a
-    Offset: '0x530'
+    Offset: '0x528'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_roof_ship_wheel_01_a
-    Offset: '0x538'
+    Offset: '0x530'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_lantern_01_a
-    Offset: '0x540'
+    Offset: '0x538'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: StaticMesh
-    Offset: '0x548'
+    Offset: '0x540'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_skeleton_head_boar_01_a
-    Offset: '0x550'
+    Offset: '0x548'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_skeleton_head_01_a
-    Offset: '0x558'
+    Offset: '0x550'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_wilds_details_01_a
-    Offset: '0x560'
+    Offset: '0x558'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_bucket_01_a1
-    Offset: '0x568'
+    Offset: '0x560'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: shp_rope_coil_02_a
-    Offset: '0x570'
+    Offset: '0x568'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: shp_int_hook_01_a
-    Offset: '0x578'
+    Offset: '0x570'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: shp_kitchen_shelf_01_a
-    Offset: '0x580'
+    Offset: '0x578'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_bucket_01_a
-    Offset: '0x588'
+    Offset: '0x580'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_shop_wood_box_03_a1
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: shp_rope_coil_05_a
-    Offset: '0x598'
+    Offset: '0x590'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_hatch_01_a
-    Offset: '0x5a0'
+    Offset: '0x598'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_drapes_rear_01_a
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_hanging_wood_01_a
-    Offset: '0x5b0'
+    Offset: '0x5a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_hook_bands_01_a
-    Offset: '0x5b8'
+    Offset: '0x5b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_plank_netting_01_a
-    Offset: '0x5c0'
+    Offset: '0x5b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_barrel_netting_01_a
-    Offset: '0x5c8'
+    Offset: '0x5c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_drapes_front_01_a
-    Offset: '0x5d0'
+    Offset: '0x5c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_winch_01_a
-    Offset: '0x5d8'
+    Offset: '0x5d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_roof_beam_01_a
-    Offset: '0x5e0'
+    Offset: '0x5d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bld_out_shop_roof_barrels_01_a
-    Offset: '0x5e8'
+    Offset: '0x5e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x5f0'
+    Offset: '0x5e8'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x228'
-  FullSize: '0x5f8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x5f0'
+  InheritedSize: '0x3c8'
   Super: Actor

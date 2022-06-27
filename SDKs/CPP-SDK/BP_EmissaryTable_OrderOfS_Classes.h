@@ -10,20 +10,20 @@ namespace DougsSDKDumper
 class BP_EmissaryTable_OrderOfSouls_01_C: public BP_EmissaryTable_01_C
 {
 public:
-	Class PointLightComponent*                                   PointLight;                                        // 0x640(0x8)
-	Class EmissaryShipAffiliationTrackerComponent*               EmissaryShipAffiliationTracker;                    // 0x648(0x8)
-	Class ParticleSystemComponent*                               vfx_enchanting_open_chest_ambient;                 // 0x650(0x8)
-	Class StaticMeshComponent*                                   con_cover_page_oos_01_a;                           // 0x658(0x8)
-	Class StaticMeshComponent*                                   bld_shop_bone_oos_07_a;                            // 0x660(0x8)
-	Class StaticMeshComponent*                                   bld_shop_bone_oos_08_a;                            // 0x668(0x8)
-	Class StaticMeshComponent*                                   bld_shop_bone_oos_05_a;                            // 0x670(0x8)
-	Class StaticMeshComponent*                                   bld_shop_bone_oos_03_a;                            // 0x678(0x8)
-	Class StaticMeshComponent*                                   bld_shop_bone_oos_02_a;                            // 0x680(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_books_03_a1;                             // 0x688(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_books_02_a;                              // 0x690(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_books_03_a;                              // 0x698(0x8)
-	Class StaticMeshComponent*                                   cap_cabin_books_aged_02_a;                         // 0x6a0(0x8)
-	Class StaticMeshComponent*                                   cap_desk_model_oos_01_a;                           // 0x6a8(0x8)
+	Class PointLightComponent*                                   PointLight;                                        // 0x638(0x8)
+	Class EmissaryShipAffiliationTrackerComponent*               EmissaryShipAffiliationTracker;                    // 0x640(0x8)
+	Class ParticleSystemComponent*                               vfx_enchanting_open_chest_ambient;                 // 0x648(0x8)
+	Class StaticMeshComponent*                                   con_cover_page_oos_01_a;                           // 0x650(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_07_a;                            // 0x658(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_08_a;                            // 0x660(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_05_a;                            // 0x668(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_03_a;                            // 0x670(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_02_a;                            // 0x678(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_03_a1;                             // 0x680(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_02_a;                              // 0x688(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_03_a;                              // 0x690(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_aged_02_a;                         // 0x698(0x8)
+	Class StaticMeshComponent*                                   cap_desk_model_oos_01_a;                           // 0x6a0(0x8)
 };
 
 

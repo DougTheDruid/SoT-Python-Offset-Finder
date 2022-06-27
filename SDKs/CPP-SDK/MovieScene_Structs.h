@@ -27,15 +27,16 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x48
 struct MovieSceneSpawnable
 {
 public:
-	Struct Guid                                                  Guid;                                              // 0x0(0x10)
-	Struct FString                                               Name;                                              // 0x10(0x10)
-	Class Object*                                                ObjectTemplate;                                    // 0x20(0x8)
-	TArray<Struct Guid>                                          ChildPossessables;                                 // 0x28(0x10)
-	byte                                                         Ownership;                                         // 0x38(0x1)
+	bool                                                         IsCameraDockable;                                  // 0x0(0x1)
+	Struct Guid                                                  Guid;                                              // 0x4(0x10)
+	Struct FString                                               Name;                                              // 0x18(0x10)
+	Class Object*                                                ObjectTemplate;                                    // 0x28(0x8)
+	TArray<Struct Guid>                                          ChildPossessables;                                 // 0x30(0x10)
+	byte                                                         Ownership;                                         // 0x40(0x1)
 };
 
 

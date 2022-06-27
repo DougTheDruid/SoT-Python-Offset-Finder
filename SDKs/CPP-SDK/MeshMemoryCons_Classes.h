@@ -126,6 +126,13 @@ public:
 
 
 // Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_Wheel_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
 class MeshMemoryConstraintCategory_ShipPartCustomization_CapstanRelea: public MeshMemoryConstraintCategory
 {
 public:
@@ -141,6 +148,48 @@ public:
 
 // Size 0x0
 class MeshMemoryConstraintCategory_ShipPartCustomization_CapstanArm_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_CannonBox_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_CannonBarrel: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_VoyageTable_: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_ChandelierFl: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_Chandelier_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_CaptainsCurt: public MeshMemoryConstraintCategory
 {
 public:
 };

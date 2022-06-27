@@ -9,10 +9,10 @@ CustomDeathInterface:
 CustomDeathService:
   Attributes:
   - Name: CustomPlayerStarts
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<class CustomPlayerStarts*>
   ClassSize: '0x98'
-  FullSize: '0x468'
-  InheritedSize: '0x3d0'
+  FullSize: '0x460'
+  InheritedSize: '0x3c8'
   Super: Actor

@@ -52,37 +52,43 @@
     ]
   },
   "MovieSceneSpawnable": {
-    "ClassSize": "0x40",
+    "ClassSize": "0x48",
     "Attributes": [
+      {
+        "Name": "IsCameraDockable",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
       {
         "Name": "Guid",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x4"
       },
       {
         "Name": "Name",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x18"
       },
       {
         "Name": "ObjectTemplate",
         "Type": "Class Object*",
         "Size": "0x8",
-        "Offset": "0x20"
+        "Offset": "0x28"
       },
       {
         "Name": "ChildPossessables",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x30"
       },
       {
         "Name": "Ownership",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x38"
+        "Offset": "0x40"
       }
     ]
   },

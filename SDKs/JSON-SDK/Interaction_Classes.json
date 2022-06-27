@@ -218,33 +218,33 @@
   },
   "MockInteractorActor": {
     "Super": "Actor",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "FocusedInteractable",
         "Type": "Class Object*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "InteractedObject",
         "Type": "Class Object*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "InteractNotificationType",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "ValidInteractNotificationIds",
         "Type": "TArray<Class ValidInteractNotificationIds>",
         "Size": "0x10",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       }
     ]
   },

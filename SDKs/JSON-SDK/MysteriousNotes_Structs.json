@@ -230,6 +230,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "NoteLineSpacingMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xcc"
       }
     ]
   },

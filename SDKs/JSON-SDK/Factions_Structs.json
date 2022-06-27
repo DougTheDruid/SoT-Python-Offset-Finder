@@ -1,4 +1,33 @@
 {
+  "CrewFactionEntry": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Faction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Streak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SandsOfFate",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
   "CrewsSunkShipEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -50,26 +79,48 @@
       }
     ]
   },
-  "CrewFactionEntry": {
-    "ClassSize": "0x30",
+  "SandsOfFateData": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "CrewId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
+        "Name": "SinkingCrewStreak",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "Faction",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Streak",
+        "Name": "SunkCrewStreak",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x18"
+        "Offset": "0x4"
+      },
+      {
+        "Name": "SandsOfFateReward",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FactionVoteRemovedEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FactionVoteAddedEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },
@@ -117,28 +168,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2a"
-      }
-    ]
-  },
-  "FactionVoteRemovedEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Company",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FactionVoteAddedEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Company",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },

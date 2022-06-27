@@ -10,16 +10,16 @@ namespace DougsSDKDumper
 class BP_Placement_HeightDrop_C: public Actor
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
-	bool                                                         Drop Components to Floor;                          // 0x3d8(0x1)
-	float                                                        Vertical Displacement;                             // 0x3dc(0x4)
-	bool                                                         Match Surface Orientation;                         // 0x3e0(0x1)
-	float                                                        Maximum Deviation Angle;                           // 0x3e4(0x4)
-	TArray<class ComponentsToDrop*>                              ComponentsToDrop;                                  // 0x3e8(0x10)
-	bool                                                         Check For Movable Components;                      // 0x3f8(0x1)
-	bool                                                         CreateParentBoundsVolume;                          // 0x3f9(0x1)
-	float                                                        ParentBoundsPadding;                               // 0x3fc(0x4)
-	TArray<class Physical Materials To Ignore*>                  Physical Materials To Ignore;                      // 0x400(0x10)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3c8(0x8)
+	bool                                                         Drop Components to Floor;                          // 0x3d0(0x1)
+	float                                                        Vertical Displacement;                             // 0x3d4(0x4)
+	bool                                                         Match Surface Orientation;                         // 0x3d8(0x1)
+	float                                                        Maximum Deviation Angle;                           // 0x3dc(0x4)
+	TArray<class ComponentsToDrop*>                              ComponentsToDrop;                                  // 0x3e0(0x10)
+	bool                                                         Check For Movable Components;                      // 0x3f0(0x1)
+	bool                                                         CreateParentBoundsVolume;                          // 0x3f1(0x1)
+	float                                                        ParentBoundsPadding;                               // 0x3f4(0x4)
+	TArray<class Physical Materials To Ignore*>                  Physical Materials To Ignore;                      // 0x3f8(0x10)
 };
 
 

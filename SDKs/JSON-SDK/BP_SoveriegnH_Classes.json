@@ -1,27 +1,15 @@
 {
   "BP_SoveriegnHarpoonLauncher_C": {
     "Super": "HarpoonLauncher",
-    "FullSize": "0xb78",
-    "InheritedSize": "0xb60",
+    "FullSize": "0xb68",
+    "InheritedSize": "0xb50",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xb60"
-      },
-      {
-        "Name": "None",
-        "Type": "Class CapsuleComponent*",
-        "Size": "0x8",
-        "Offset": "0xb68"
-      },
-      {
-        "Name": "None",
-        "Type": "Class CapsuleComponent*",
-        "Size": "0x8",
-        "Offset": "0xb70"
+        "Offset": "0xb50"
       }
     ]
   },

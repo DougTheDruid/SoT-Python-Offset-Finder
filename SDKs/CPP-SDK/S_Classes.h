@@ -6,16 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30
-class BP_TaleBook_Shroudbreaker_DaggerToothOutpost_AdditionalPuzzles_: public VoyageProposalContainer
+// Size 0x20
+class BP_TaleBook_Shroudbreaker_DaggerToothOutpost_AdditionalPuzzles_: public ShipNetProxy
 {
 public:
-	Class ChildActorComponent*                                   None;                                              // 0x768(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x770(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x778(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x780(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x788(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x790(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4b0(0x8)
+	Class StaticMeshComponent*                                   EmissaryFlags;                                     // 0x4b8(0x8)
+	TArray<class Dynamic Materials*>                             Dynamic Materials;                                 // 0x4c0(0x10)
 };
 
 

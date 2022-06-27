@@ -3,104 +3,104 @@
 BP_PromptActor_VisitCompanyShop_GH_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_VisitCompanyShop_C*
   - Name: Company
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: AccessKey
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: Prompt
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: CompanyRankDesc
-    Offset: '0x490'
+    Offset: '0x488'
     Size: '0x8'
     Type: class
   ClassSize: '0x90'
-  FullSize: '0x498'
-  InheritedSize: '0x408'
+  FullSize: '0x490'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_VisitCompanyShop_MA_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_VisitCompanyShop_C*
   - Name: Company
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: AccessKey
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: Prompt
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: CompanyRankDesc
-    Offset: '0x490'
+    Offset: '0x488'
     Size: '0x8'
     Type: class
   ClassSize: '0x90'
-  FullSize: '0x498'
-  InheritedSize: '0x408'
+  FullSize: '0x490'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_VisitCompanyShop_OOS_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_VisitCompanyShop_C*
   - Name: Company
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: AccessKey
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: Prompt
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: CompanyRankDesc
-    Offset: '0x490'
+    Offset: '0x488'
     Size: '0x8'
     Type: class
   ClassSize: '0x90'
-  FullSize: '0x498'
-  InheritedSize: '0x408'
+  FullSize: '0x490'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_VisitSeapost_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: Coordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_VisitSeapost_C*
   ClassSize: '0x10'
-  FullSize: '0x418'
-  InheritedSize: '0x408'
+  FullSize: '0x410'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C

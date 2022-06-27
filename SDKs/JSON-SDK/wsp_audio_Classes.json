@@ -1,27 +1,27 @@
 {
   "wsp_audio_C": {
     "Super": "LevelScriptActor",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3d8",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3d0",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "PreviousFrameTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "WSP_Audio_2D_Emitter",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "TimeInterface",
         "Type": "Class Object*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       }
     ]
   },

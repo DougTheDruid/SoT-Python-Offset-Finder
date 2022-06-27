@@ -1,29 +1,29 @@
 {
   "BP_ShipFlagCustomizationChest_C": {
     "Super": "ShipFlagCustomizationChest",
-    "FullSize": "0x5f0",
-    "InheritedSize": "0x5e8",
+    "FullSize": "0x608",
+    "InheritedSize": "0x600",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
         "Size": "0x8",
-        "Offset": "0x5e8"
+        "Offset": "0x600"
       }
     ]
   },
   "BP_ShipFlagCustomizationChestInteraction_C": {
     "Super": "ShipFlagCustomizationChestInteraction",
-    "FullSize": "0x520",
-    "InheritedSize": "0x518",
+    "FullSize": "0x518",
+    "InheritedSize": "0x510",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x518"
+        "Offset": "0x510"
       }
     ]
   },

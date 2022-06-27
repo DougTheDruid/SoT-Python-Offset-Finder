@@ -281,6 +281,9 @@ EventAnimationHappyReact:
 EventAnimationLookAtUpdated:
   Attributes: []
   ClassSize: '0x1'
+EventAnimationResetHappyReact:
+  Attributes: []
+  ClassSize: '0x1'
 EventCosmeticItemAttachmentSwitched:
   Attributes:
   - Name: Owner

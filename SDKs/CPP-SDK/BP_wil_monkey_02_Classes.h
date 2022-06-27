@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_wil_monkey_02_C: public Actor
 {
 public:
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x3d0(0x8)
-	Class SkeletalMeshComponent*                                 SkeletalMesh;                                      // 0x3d8(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x3c8(0x8)
+	Class SkeletalMeshComponent*                                 SkeletalMesh;                                      // 0x3d0(0x8)
 };
 
 

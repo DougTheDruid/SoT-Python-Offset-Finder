@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class ShortRangeMarker: public Actor
 {
 public:
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x3e0(0x10)
-	float                                                        LifetimerTimer;                                    // 0x3f0(0x4)
-	float                                                        FadeTimer;                                         // 0x3f4(0x4)
-	TArray<Weakclass CachedActors>                               CachedActors;                                      // 0x418(0x10)
+	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x3d8(0x10)
+	float                                                        LifetimerTimer;                                    // 0x3e8(0x4)
+	float                                                        FadeTimer;                                         // 0x3ec(0x4)
+	TArray<Weakclass CachedActors>                               CachedActors;                                      // 0x410(0x10)
 };
 
 

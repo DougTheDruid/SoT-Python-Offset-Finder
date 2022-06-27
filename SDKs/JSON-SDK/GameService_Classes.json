@@ -1,8 +1,8 @@
 {
   "ServiceProviderGameState": {
     "Super": "GameState",
-    "FullSize": "0x548",
-    "InheritedSize": "0x428",
+    "FullSize": "0x540",
+    "InheritedSize": "0x420",
     "ClassSize": "0x120",
     "Attributes": []
   },

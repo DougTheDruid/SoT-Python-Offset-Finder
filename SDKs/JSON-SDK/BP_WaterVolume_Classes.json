@@ -1,57 +1,57 @@
 {
   "BP_WaterVolume_C": {
     "Super": "WaterVolume",
-    "FullSize": "0x48c",
-    "InheritedSize": "0x450",
+    "FullSize": "0x484",
+    "InheritedSize": "0x448",
     "ClassSize": "0x3c",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x450"
+        "Offset": "0x448"
       },
       {
         "Name": "WaterPlaneActivatationVolume",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x458"
+        "Offset": "0x450"
       },
       {
         "Name": "DynamicFlow",
         "Type": "Class DynamicFlowComponent*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x458"
       },
       {
         "Name": "FlatWaterPlane",
         "Type": "Class FlatWaterPlaneComponent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x460"
       },
       {
         "Name": "FlatWaterMesh",
         "Type": "Class FlatWaterMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x468"
       },
       {
         "Name": "Root",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x470"
       },
       {
         "Name": "SunLit",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x480"
+        "Offset": "0x478"
       },
       {
         "Name": "RippleGeneratorTag",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x484"
+        "Offset": "0x47c"
       }
     ]
   },

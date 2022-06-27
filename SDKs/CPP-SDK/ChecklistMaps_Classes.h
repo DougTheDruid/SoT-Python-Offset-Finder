@@ -60,13 +60,13 @@ public:
 class ChecklistMap: public TreasureMap
 {
 public:
-	int                                                          CanvasWidth;                                       // 0x7d8(0x4)
-	int                                                          CanvasHeight;                                      // 0x7dc(0x4)
-	Class Font*                                                  Font;                                              // 0x7e0(0x8)
-	float                                                        FontScale;                                         // 0x7e8(0x4)
-	float                                                        FontLineSpacingScale;                              // 0x7ec(0x4)
-	Class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x7f8(0x8)
-	Struct ChecklistMapContents                                  Contents;                                          // 0x800(0xe8)
+	int                                                          CanvasWidth;                                       // 0x7c8(0x4)
+	int                                                          CanvasHeight;                                      // 0x7cc(0x4)
+	Class Font*                                                  Font;                                              // 0x7d0(0x8)
+	float                                                        FontScale;                                         // 0x7d8(0x4)
+	float                                                        FontLineSpacingScale;                              // 0x7dc(0x4)
+	Class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x7e8(0x8)
+	Struct ChecklistMapContents                                  Contents;                                          // 0x7f0(0xe8)
 };
 
 

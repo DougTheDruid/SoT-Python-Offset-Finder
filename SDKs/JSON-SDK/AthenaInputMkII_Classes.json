@@ -34,13 +34,6 @@
       }
     ]
   },
-  "AthenaClampedFreelookInputComponent": {
-    "Super": "AthenaCharacterBaseInputComponent",
-    "FullSize": "0x2b8",
-    "InheritedSize": "0x298",
-    "ClassSize": "0x20",
-    "Attributes": []
-  },
   "MovementInterferenceComponent": {
     "Super": "AutoMoveInputComponent",
     "FullSize": "0x1e0",

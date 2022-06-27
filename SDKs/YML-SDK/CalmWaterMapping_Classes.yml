@@ -3,8 +3,8 @@
 AthenaCalmWaterZone:
   Attributes: []
   ClassSize: '0x20'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3d0'
   Super: CalmWaterZone
 CalmWaterMappingInterface:
   Attributes: []

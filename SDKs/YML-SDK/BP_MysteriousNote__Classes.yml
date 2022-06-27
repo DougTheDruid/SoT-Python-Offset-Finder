@@ -9,10 +9,10 @@ BP_MysteriousNote_ItemDesc_C:
 BP_MysteriousNote_ItemInfo_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x500'
+    Offset: '0x4f8'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x508'
-  InheritedSize: '0x500'
+  FullSize: '0x500'
+  InheritedSize: '0x4f8'
   Super: ItemInfo

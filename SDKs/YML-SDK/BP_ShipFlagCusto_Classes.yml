@@ -3,20 +3,20 @@
 BP_ShipFlagCustomizationChestInteraction_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x518'
+    Offset: '0x510'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x520'
-  InheritedSize: '0x518'
+  FullSize: '0x518'
+  InheritedSize: '0x510'
   Super: ShipFlagCustomizationChestInteraction
 BP_ShipFlagCustomizationChest_C:
   Attributes:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
-    Offset: '0x5e8'
+    Offset: '0x600'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
   ClassSize: '0x8'
-  FullSize: '0x5f0'
-  InheritedSize: '0x5e8'
+  FullSize: '0x608'
+  InheritedSize: '0x600'
   Super: ShipFlagCustomizationChest

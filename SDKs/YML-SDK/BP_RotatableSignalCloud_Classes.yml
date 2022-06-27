@@ -3,14 +3,14 @@
 BP_RotatableSignalCloud_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x4b0'
+    Offset: '0x4a8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: RotateMeshToLocalPlayer
-    Offset: '0x4b8'
+    Offset: '0x4b0'
     Size: '0x8'
     Type: Class RotateMeshToLocalPlayerComponent*
   ClassSize: '0x10'
-  FullSize: '0x4c0'
-  InheritedSize: '0x4b0'
+  FullSize: '0x4b8'
+  InheritedSize: '0x4a8'
   Super: GameplayEventSignal_StaticMesh

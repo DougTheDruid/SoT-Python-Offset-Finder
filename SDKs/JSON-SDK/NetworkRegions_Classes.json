@@ -22,21 +22,21 @@
   },
   "RegionAssetCacheActor": {
     "Super": "Actor",
-    "FullSize": "0x410",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "RegionData",
         "Type": "TArray<Struct RegionAssetsList>",
         "Size": "0x10",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "LoadedAssets",
         "Type": "TArray<class LoadedAssets*>",
         "Size": "0x10",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       }
     ]
   },

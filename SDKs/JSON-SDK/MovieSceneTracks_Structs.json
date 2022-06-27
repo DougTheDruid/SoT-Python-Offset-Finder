@@ -876,13 +876,19 @@
     "Attributes": []
   },
   "MovieSceneSkeletalAnimationSectionTemplate": {
-    "ClassSize": "0xb8",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "Params",
         "Type": "Struct MovieSceneSkeletalAnimationSectionTemplateParameters",
         "Size": "0xa0",
         "Offset": "0x18"
+      },
+      {
+        "Name": "AnimationSubtype",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xb8"
       }
     ]
   },

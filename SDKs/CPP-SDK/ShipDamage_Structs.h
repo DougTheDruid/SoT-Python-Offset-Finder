@@ -14,11 +14,12 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x38
 struct ShipPartLevelsOfDamage
 {
 public:
 	TArray<Struct DistanceAndLevelOfDamage>                      DamagePerDistance;                                 // 0x20(0x10)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x30(0x8)
 };
 
 
@@ -96,6 +97,22 @@ struct AppliedDamageToShipEvent
 public:
 	class                                                        ShipType;                                          // 0x0(0x8)
 	Class Actor*                                                 Ship;                                              // 0x8(0x8)
+};
+
+
+// Size 0x20
+struct SendShipRestoredRpc
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x10(0x10)
+};
+
+
+// Size 0x1
+struct EventRestoreShip
+{
+public:
+	bool                                                         OnlyRepaired;                                      // 0x0(0x1)
 };
 
 

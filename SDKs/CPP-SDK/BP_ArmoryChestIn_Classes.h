@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_ArmoryChestInteraction_C: public ArmoryChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x498(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x490(0x8)
 };
 
 

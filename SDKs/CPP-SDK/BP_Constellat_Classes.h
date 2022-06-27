@@ -17,7 +17,7 @@ public:
 class BP_Constellation_C: public Constellation
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x468(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x460(0x8)
 };
 
 

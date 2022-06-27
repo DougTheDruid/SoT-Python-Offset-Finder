@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class wld_flower_cluster_01_b_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_03_a_02;                                  // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles_a_01;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles_b_01;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles_c_01;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small_b_01;                          // 0x430(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x438(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_03_a_02;                                  // 0x408(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles_a_01;                             // 0x410(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles_b_01;                             // 0x418(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles_c_01;                             // 0x420(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small_b_01;                          // 0x428(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x430(0x8)
 };
 
 

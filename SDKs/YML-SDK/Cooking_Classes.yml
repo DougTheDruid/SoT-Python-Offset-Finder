@@ -221,44 +221,44 @@ CookingDefaultsInterface:
 CookingPot:
   Attributes:
   - Name: MeshComponent
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: InteractableComponent
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class ActionRulesInteractableComponent*
   - Name: CookerComponent
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class CookerComponent*
   - Name: HoldToInteractTime
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x4'
     Type: float
   - Name: NotWieldingCookableItemTooltip
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x38'
     Type: Struct FText
   - Name: WieldingCookableItemTooltip
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x38'
     Type: Struct FText
   - Name: TakeItemTooltip
-    Offset: '0x490'
+    Offset: '0x488'
     Size: '0x38'
     Type: Struct FText
   - Name: CannotTakeItemTooltip
-    Offset: '0x4c8'
+    Offset: '0x4c0'
     Size: '0x38'
     Type: Struct FText
   - Name: MixInItemTooltip
-    Offset: '0x500'
+    Offset: '0x4f8'
     Size: '0x38'
     Type: Struct FText
   ClassSize: '0x1e0'
-  FullSize: '0x5d8'
-  InheritedSize: '0x3f8'
+  FullSize: '0x5d0'
+  InheritedSize: '0x3f0'
   Super: InteractableBase
 CookingStateInterface:
   Attributes: []

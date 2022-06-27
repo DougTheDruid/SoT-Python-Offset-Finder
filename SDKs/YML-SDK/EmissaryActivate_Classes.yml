@@ -3,130 +3,130 @@
 BP_PromptActor_EmissaryActivated_AF_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinatorEmissaryActivated
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryActivated_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Prompts
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: class
   ClassSize: '0x30'
-  FullSize: '0x438'
-  InheritedSize: '0x408'
+  FullSize: '0x430'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryActivated_GH_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinatorEmissaryActivated
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryActivated_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Prompts
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: class
   ClassSize: '0x30'
-  FullSize: '0x438'
-  InheritedSize: '0x408'
+  FullSize: '0x430'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryActivated_MA_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinatorEmissaryActivated
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryActivated_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Prompts
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: class
   ClassSize: '0x30'
-  FullSize: '0x438'
-  InheritedSize: '0x408'
+  FullSize: '0x430'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryActivated_OOS_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinatorEmissaryActivated
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryActivated_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Prompts
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: class
   ClassSize: '0x30'
-  FullSize: '0x438'
-  InheritedSize: '0x408'
+  FullSize: '0x430'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryActivated_RB_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinatorEmissaryActivated
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryActivated_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Prompts
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: Company
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: class
   ClassSize: '0x30'
-  FullSize: '0x438'
-  InheritedSize: '0x408'
+  FullSize: '0x430'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C

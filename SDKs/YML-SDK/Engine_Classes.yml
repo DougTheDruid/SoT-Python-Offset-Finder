@@ -17,8 +17,8 @@ AISystemBase:
 AbstractNavData:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x590'
-  InheritedSize: '0x590'
+  FullSize: '0x588'
+  InheritedSize: '0x588'
   Super: NavigationData
 Actor:
   Attributes:
@@ -110,172 +110,172 @@ Actor:
     Offset: '0x88'
     Size: '0x8'
     Type: Class Actor*
-  - Name: SpawnRestrictions
-    Offset: '0x90'
-    Size: '0x1'
-    Type: byte
   - Name: ReplicatedMovement
-    Offset: '0x94'
+    Offset: '0x90'
     Size: '0x38'
     Type: Struct RepMovement
   - Name: AttachmentReplication
-    Offset: '0xd0'
+    Offset: '0xc8'
     Size: '0x48'
     Type: Struct RepAttachment
   - Name: Role
-    Offset: '0x118'
+    Offset: '0x110'
+    Size: '0x1'
+    Type: byte
+  - Name: SpawnRestrictions
+    Offset: '0x112'
     Size: '0x1'
     Type: byte
   - Name: AutoReceiveInput
-    Offset: '0x11a'
+    Offset: '0x113'
     Size: '0x1'
     Type: byte
   - Name: InputPriority
-    Offset: '0x11c'
+    Offset: '0x114'
     Size: '0x4'
     Type: int
   - Name: InputComponent
-    Offset: '0x120'
+    Offset: '0x118'
     Size: '0x8'
     Type: Class InputComponent*
   - Name: NetCullDistanceSquared
-    Offset: '0x128'
+    Offset: '0x120'
     Size: '0x4'
     Type: float
   - Name: NetTag
-    Offset: '0x130'
+    Offset: '0x128'
     Size: '0x4'
     Type: int
   - Name: NetUpdateTime
-    Offset: '0x134'
+    Offset: '0x12c'
     Size: '0x4'
     Type: float
   - Name: NetUpdateFrequency
-    Offset: '0x138'
+    Offset: '0x130'
     Size: '0x4'
     Type: float
   - Name: NetPriority
-    Offset: '0x13c'
+    Offset: '0x134'
     Size: '0x4'
     Type: float
   - Name: LastNetUpdateTime
-    Offset: '0x140'
+    Offset: '0x138'
     Size: '0x4'
     Type: float
   - Name: NetDriverName
-    Offset: '0x144'
+    Offset: '0x13c'
     Size: '0x8'
     Type: struct FName
   - Name: bAutoDestroyWhenFinished
-    Offset: '0x14c'
+    Offset: '0x144'
     Size: '0x1'
     Type: bool
   - Name: bCanBeDamaged
-    Offset: '0x14c'
+    Offset: '0x144'
     Size: '0x1'
     Type: bool
   - Name: bActorIsBeingDestroyed
-    Offset: '0x14c'
+    Offset: '0x144'
     Size: '0x1'
     Type: bool
   - Name: bCollideWhenPlacing
-    Offset: '0x14c'
+    Offset: '0x144'
     Size: '0x1'
     Type: bool
   - Name: bFindCameraComponentWhenViewTarget
-    Offset: '0x14c'
+    Offset: '0x144'
     Size: '0x1'
     Type: bool
   - Name: bRelevantForNetworkReplays
-    Offset: '0x14c'
+    Offset: '0x144'
     Size: '0x1'
     Type: bool
   - Name: SpawnCollisionHandlingMethod
-    Offset: '0x150'
+    Offset: '0x148'
     Size: '0x1'
     Type: byte
   - Name: Instigator
-    Offset: '0x158'
+    Offset: '0x150'
     Size: '0x8'
     Type: Class Pawn*
   - Name: Children
-    Offset: '0x160'
+    Offset: '0x158'
     Size: '0x10'
     Type: TArray<class Actor*>
   - Name: RootComponent
-    Offset: '0x170'
+    Offset: '0x168'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: ControllingMatineeActors
-    Offset: '0x178'
+    Offset: '0x170'
     Size: '0x10'
     Type: TArray<class ControllingMatineeActors*>
   - Name: InitialLifeSpan
-    Offset: '0x188'
+    Offset: '0x180'
     Size: '0x4'
     Type: float
   - Name: bAllowReceiveTickEventOnDedicatedServer
-    Offset: '0x190'
+    Offset: '0x188'
     Size: '0x1'
     Type: bool
   - Name: Layers
-    Offset: '0x198'
+    Offset: '0x190'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: ParentComponentActor
-    Offset: '0x1a8'
+    Offset: '0x1a0'
     Size: '0x8'
     Type: Struct ActorPtr
   - Name: ChildComponentActors
-    Offset: '0x1b0'
+    Offset: '0x1a8'
     Size: '0x10'
     Type: TArray<Weakclass ChildComponentActors>
   - Name: bActorSeamlessTraveled
-    Offset: '0x1c8'
+    Offset: '0x1c0'
     Size: '0x1'
     Type: bool
   - Name: bIgnoresOriginShifting
-    Offset: '0x1c8'
+    Offset: '0x1c0'
     Size: '0x1'
     Type: bool
   - Name: bEnableAutoLODGeneration
-    Offset: '0x1c8'
+    Offset: '0x1c0'
     Size: '0x1'
     Type: bool
   - Name: InvertFeatureCheck
-    Offset: '0x1c8'
+    Offset: '0x1c0'
     Size: '0x1'
     Type: bool
   - Name: Feature
-    Offset: '0x1cc'
+    Offset: '0x1c4'
     Size: '0x8'
     Type: struct FName
   - Name: Tags
-    Offset: '0x1d8'
+    Offset: '0x1d0'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: bDoOverlapNotifiesOnLoad
-    Offset: '0x231'
+    Offset: '0x229'
     Size: '0x1'
     Type: bool
   - Name: BlueprintCreatedComponents
-    Offset: '0x328'
+    Offset: '0x320'
     Size: '0x10'
     Type: TArray<class BlueprintCreatedComponents*>
   - Name: InstanceComponents
-    Offset: '0x338'
+    Offset: '0x330'
     Size: '0x10'
     Type: TArray<class InstanceComponents*>
   - Name: ChildActorInterfaceProviders
-    Offset: '0x350'
+    Offset: '0x348'
     Size: '0x10'
     Type: TArray<class ChildActorInterfaceProviders*>
   - Name: DormancyLingeringInSeconds
-    Offset: '0x3c8'
+    Offset: '0x3c0'
     Size: '0x8'
     Type: double
-  ClassSize: '0x3a8'
-  FullSize: '0x3d0'
+  ClassSize: '0x3a0'
+  FullSize: '0x3c8'
   InheritedSize: '0x28'
   Super: Object
 ActorChannel:
@@ -361,18 +361,18 @@ ActorComponent:
 ActorWithComponentWithDerivedTestInterface:
   Attributes:
   - Name: ComponentWithDerivedTestInterface
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class ComponentWithDerivedTestInterface*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 ActorWithTestInterface:
   Attributes: []
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 AggregatableInterface:
   Attributes: []
@@ -401,12 +401,12 @@ AimOffsetBlendSpace1D:
 AmbientLightSource:
   Attributes:
   - Name: AmbientLightSourceComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class AmbientLightSourceComponent*
   ClassSize: '0x8'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
   Super: Light
 AmbientLightSourceComponent:
   Attributes:
@@ -465,12 +465,12 @@ AmbientLightSourceComponent:
 AmbientSound:
   Attributes:
   - Name: AudioComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class AudioComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 AnimBlueprint:
   Attributes:
@@ -1323,12 +1323,12 @@ AssetUserData:
 AtmosphericFog:
   Attributes:
   - Name: AtmosphericFogComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class AtmosphericFogComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Info
 AtmosphericFogComponent:
   Attributes:
@@ -1515,38 +1515,38 @@ AudioSettings:
 AudioVolume:
   Attributes:
   - Name: Priority
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x4'
     Type: float
   - Name: bEnabled
-    Offset: '0x40c'
+    Offset: '0x404'
     Size: '0x1'
     Type: bool
   - Name: Settings
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x18'
     Type: Struct ReverbSettings
   - Name: AmbientZoneSettings
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x24'
     Type: Struct InteriorSettings
   - Name: NextLowerPriorityVolume
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class AudioVolume*
   ClassSize: '0x50'
-  FullSize: '0x458'
-  InheritedSize: '0x408'
+  FullSize: '0x450'
+  InheritedSize: '0x400'
   Super: Volume
 AutomaticInstancingActor:
   Attributes:
   - Name: DummyRoot
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x58'
-  FullSize: '0x428'
-  InheritedSize: '0x3d0'
+  FullSize: '0x420'
+  InheritedSize: '0x3c8'
   Super: Actor
 AutomaticInstancingSettings:
   Attributes:
@@ -1793,8 +1793,8 @@ BlendableInterface:
 BlockingVolume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x408'
-  InheritedSize: '0x408'
+  FullSize: '0x400'
+  InheritedSize: '0x400'
   Super: Volume
 Blueprint:
   Attributes:
@@ -2061,8 +2061,8 @@ BoxComponent:
 BoxReflectionCapture:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
   Super: ReflectionCapture
 BoxReflectionCaptureComponent:
   Attributes:
@@ -2111,52 +2111,52 @@ Breakpoint:
 Brush:
   Attributes:
   - Name: BrushType
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x1'
     Type: byte
   - Name: BrushColor
-    Offset: '0x3d4'
+    Offset: '0x3cc'
     Size: '0x4'
     Type: Struct Color
   - Name: PolyFlags
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x4'
     Type: int
   - Name: bColored
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x1'
     Type: bool
   - Name: bSolidWhenSelected
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x1'
     Type: bool
   - Name: bPlaceableFromClassBrowser
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x1'
     Type: bool
   - Name: bNotForClientOrServer
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x1'
     Type: bool
   - Name: Brush
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class Model*
   - Name: BrushComponent
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class BrushComponent*
   - Name: bInManipulation
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x1'
     Type: bool
   - Name: SavedSelections
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<Struct GeomSelection>
   ClassSize: '0x38'
-  FullSize: '0x408'
-  InheritedSize: '0x3d0'
+  FullSize: '0x400'
+  InheritedSize: '0x3c8'
   Super: Actor
 BrushBuilder:
   Attributes:
@@ -2213,8 +2213,8 @@ BrushComponent:
 BrushShape:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x408'
-  InheritedSize: '0x408'
+  FullSize: '0x400'
+  InheritedSize: '0x400'
   Super: Brush
 ButtonStyleAsset:
   Attributes:
@@ -2247,46 +2247,46 @@ CalmWaterComponent:
 CalmWaterZone:
   Attributes:
   - Name: CalmWaterComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class CalmWaterComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 CameraActor:
   Attributes:
   - Name: AutoActivateForPlayer
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x1'
     Type: byte
   - Name: CameraComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class CameraComponent*
   - Name: bConstrainAspectRatio
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
   - Name: AspectRatio
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x4'
     Type: float
   - Name: FOVAngle
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x4'
     Type: float
   - Name: PostProcessBlendWeight
-    Offset: '0x3f4'
+    Offset: '0x3ec'
     Size: '0x4'
     Type: float
   - Name: PostProcessSettings
-    Offset: '0x400'
+    Offset: '0x3f0'
     Size: '0x540'
     Type: Struct PostProcessSettings
-  ClassSize: '0x570'
-  FullSize: '0x940'
-  InheritedSize: '0x3d0'
+  ClassSize: '0x568'
+  FullSize: '0x930'
+  InheritedSize: '0x3c8'
   Super: Actor
 CameraAnim:
   Attributes:
@@ -2359,8 +2359,8 @@ CameraAnimInst:
 CameraBlockingVolume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x408'
-  InheritedSize: '0x408'
+  FullSize: '0x400'
+  InheritedSize: '0x400'
   Super: Volume
 CameraComponent:
   Attributes:
@@ -2641,27 +2641,27 @@ Channel:
 Character:
   Attributes:
   - Name: Mesh
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
   - Name: CharacterMovement
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class CharacterMovementComponent*
   - Name: CapsuleComponent
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x8'
     Type: Class CapsuleComponent*
   - Name: BasedMovement
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x38'
     Type: Struct BasedMovementInfo
   - Name: ReplicatedBasedMovement
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x38'
     Type: Struct BasedMovementInfo
   - Name: BaseTranslationOffset
-    Offset: '0x4d0'
+    Offset: '0x4c8'
     Size: '0xc'
     Type: Struct Vector
   - Name: BaseRotationOffset
@@ -2728,9 +2728,9 @@ Character:
     Offset: '0x590'
     Size: '0x40'
     Type: Struct RepRootMotionMontage
-  ClassSize: '0x198'
+  ClassSize: '0x1a0'
   FullSize: '0x5e0'
-  InheritedSize: '0x448'
+  InheritedSize: '0x440'
   Super: Pawn
 CharacterMovementComponent:
   Attributes:
@@ -3333,8 +3333,8 @@ ChildConnection:
 ClientOnlyTestActor:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 CloudStorageBase:
   Attributes:
@@ -3495,60 +3495,60 @@ ControlChannel:
 Controller:
   Attributes:
   - Name: Pawn
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class Pawn*
   - Name: Character
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class Character*
   - Name: PlayerState
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class PlayerState*
   - Name: TransformComponent
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: ControlRotation
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0xc'
     Type: Struct Rotator
   - Name: bAttachToPawn
-    Offset: '0x40c'
+    Offset: '0x404'
     Size: '0x1'
     Type: bool
   - Name: StateName
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x60'
-  FullSize: '0x430'
-  InheritedSize: '0x3d0'
+  FullSize: '0x428'
+  InheritedSize: '0x3c8'
   Super: Actor
 CoveredMeshActor:
   Attributes:
   - Name: InstancedCoverageMeshComponent
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class InstancedCoverageMeshComponent*
   ClassSize: '0x8'
-  FullSize: '0x3e8'
-  InheritedSize: '0x3e0'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3d8'
   Super: StaticMeshActor
 CullDistanceVolume:
   Attributes:
   - Name: CullDistances
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<Struct CullDistanceSizePair>
   - Name: bEnabled
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x1'
     Type: bool
   ClassSize: '0x18'
-  FullSize: '0x420'
-  InheritedSize: '0x408'
+  FullSize: '0x418'
+  InheritedSize: '0x400'
   Super: Volume
 CurveBase:
   Attributes: []
@@ -3673,62 +3673,62 @@ DataTableFunctionLibrary:
 DebugCameraController:
   Attributes:
   - Name: bUseOriginalPlayerHUD
-    Offset: '0x728'
+    Offset: '0x770'
     Size: '0x1'
     Type: bool
   - Name: bShowSelectedInfo
-    Offset: '0x728'
+    Offset: '0x770'
     Size: '0x1'
     Type: bool
   - Name: bIsFrozenRendering
-    Offset: '0x728'
+    Offset: '0x770'
     Size: '0x1'
     Type: bool
   - Name: DrawFrustum
-    Offset: '0x730'
+    Offset: '0x778'
     Size: '0x8'
     Type: Class DrawFrustumComponent*
   - Name: OriginalControllerRef
-    Offset: '0x748'
+    Offset: '0x790'
     Size: '0x8'
     Type: Class PlayerController*
   - Name: OriginalPlayer
-    Offset: '0x750'
+    Offset: '0x798'
     Size: '0x8'
     Type: Class Player*
   - Name: SpeedScale
-    Offset: '0x758'
+    Offset: '0x7a0'
     Size: '0x4'
     Type: float
   - Name: InitialMaxSpeed
-    Offset: '0x75c'
+    Offset: '0x7a4'
     Size: '0x4'
     Type: float
   - Name: InitialAccel
-    Offset: '0x760'
+    Offset: '0x7a8'
     Size: '0x4'
     Type: float
   - Name: InitialDecel
-    Offset: '0x764'
+    Offset: '0x7ac'
     Size: '0x4'
     Type: float
   - Name: SpeedScaleAdjustment
-    Offset: '0x768'
+    Offset: '0x7b0'
     Size: '0x4'
     Type: float
   - Name: FovScaleAdjustment
-    Offset: '0x76c'
+    Offset: '0x7b4'
     Size: '0x4'
     Type: float
   ClassSize: '0x50'
-  FullSize: '0x778'
-  InheritedSize: '0x728'
+  FullSize: '0x7c0'
+  InheritedSize: '0x770'
   Super: PlayerController
 DebugCameraHUD:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x4c8'
-  InheritedSize: '0x4c8'
+  FullSize: '0x4c0'
+  InheritedSize: '0x4c0'
   Super: HUD
 DebugDrawService:
   Attributes: []
@@ -3739,12 +3739,12 @@ DebugDrawService:
 DecalActor:
   Attributes:
   - Name: Decal
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class DecalComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 DecalComponent:
   Attributes:
@@ -3771,38 +3771,38 @@ DecalComponent:
 DefaultPawn:
   Attributes:
   - Name: BaseTurnRate
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x4'
     Type: float
   - Name: BaseLookUpRate
-    Offset: '0x44c'
+    Offset: '0x444'
     Size: '0x4'
     Type: float
   - Name: MovementComponent
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class PawnMovementComponent*
   - Name: CollisionComponent
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: MeshComponent
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bAddDefaultMovementBindings
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x1'
     Type: bool
   ClassSize: '0x28'
-  FullSize: '0x470'
-  InheritedSize: '0x448'
+  FullSize: '0x468'
+  InheritedSize: '0x440'
   Super: Pawn
 DefaultPhysicsVolume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x418'
-  InheritedSize: '0x418'
+  FullSize: '0x410'
+  InheritedSize: '0x410'
   Super: PhysicsVolume
 Default__BlueprintGeneratedClass:
   Attributes: []
@@ -3843,16 +3843,16 @@ DerivedTestInterface:
 DestructibleActor:
   Attributes:
   - Name: DestructibleComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class DestructibleComponent*
   - Name: bAffectNavigation
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3c8'
   Super: Actor
 DestructibleComponent:
   Attributes:
@@ -4021,8 +4021,8 @@ DialogueWave:
 DirectionalLight:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
   Super: Light
 DirectionalLightComponent:
   Attributes:
@@ -4379,8 +4379,8 @@ DistributionVectorUniformCurve:
 DocumentationActor:
   Attributes: []
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 DrawFrustumComponent:
   Attributes:
@@ -4605,58 +4605,58 @@ EllipsoidComponent:
 Emitter:
   Attributes:
   - Name: ParticleSystemComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: bDestroyOnSystemFinish
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bPostUpdateTickGroup
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bCurrentlyActive
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   ClassSize: '0x50'
-  FullSize: '0x420'
-  InheritedSize: '0x3d0'
+  FullSize: '0x418'
+  InheritedSize: '0x3c8'
   Super: Actor
 EmitterCameraLensEffectBase:
   Attributes:
   - Name: PS_CameraEffect
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class ParticleSystem*
   - Name: PS_CameraEffectNonExtremeContent
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class ParticleSystem*
   - Name: BaseFOV
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x4'
     Type: float
   - Name: DistFromCamera
-    Offset: '0x434'
+    Offset: '0x42c'
     Size: '0x4'
     Type: float
   - Name: bAllowMultipleInstances
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x1'
     Type: bool
   - Name: EmittersToTreatAsSame
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x10'
     Type: TArray<Class EmittersToTreatAsSame>
   - Name: BaseCamera
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class PlayerCameraManager*
   ClassSize: '0x38'
-  FullSize: '0x458'
-  InheritedSize: '0x420'
+  FullSize: '0x450'
+  InheritedSize: '0x418'
   Super: Emitter
 EndUserSettings:
   Attributes:
@@ -5541,16 +5541,16 @@ ExecutableAnimMetaDataInterface:
 ExponentialHeightFog:
   Attributes:
   - Name: Component
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class ExponentialHeightFogComponent*
   - Name: bEnabled
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   ClassSize: '0x10'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3c8'
   Super: Info
 ExponentialHeightFogComponent:
   Attributes:
@@ -5663,16 +5663,16 @@ Exporter:
 FFTWater:
   Attributes:
   - Name: FFTWaterComponent
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class FFTWaterComponent*
   - Name: ExtendedPlaneComponent
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class FFTWaterExtendedPlaneComponent*
   ClassSize: '0x10'
-  FullSize: '0x418'
-  InheritedSize: '0x408'
+  FullSize: '0x410'
+  InheritedSize: '0x400'
   Super: Volume
 FFTWaterComponent:
   Attributes:
@@ -5863,16 +5863,16 @@ FloatingPawnMovement:
 FogVolume:
   Attributes:
   - Name: SphereComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: FogVolumeComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class FogVolumeComponent*
   ClassSize: '0x10'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3c8'
   Super: Actor
 FogVolumeComponent:
   Attributes:
@@ -6173,310 +6173,310 @@ GameInstance:
 GameMode:
   Attributes:
   - Name: bDisableAsyncOcclusionChecking
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bUseSeamlessTravel
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bPauseable
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bStartPlayersAsSpectators
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bDelayedStart
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: OptionsString
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x10'
     Type: Struct FString
   - Name: DefaultPawnClass
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: class
   - Name: HUDClass
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: class
   - Name: NumSpectators
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x4'
     Type: int
   - Name: NumPlayers
-    Offset: '0x404'
+    Offset: '0x3fc'
     Size: '0x4'
     Type: int
   - Name: NumBots
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x4'
     Type: int
   - Name: MinRespawnDelay
-    Offset: '0x40c'
+    Offset: '0x404'
     Size: '0x4'
     Type: float
   - Name: GameSession
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class GameSession*
   - Name: NumTravellingPlayers
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x4'
     Type: int
   - Name: DefaultPlayerName
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x38'
     Type: Struct FText
   - Name: EngineMessageClass
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x8'
     Type: class
   - Name: PlayerControllerClass
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x8'
     Type: class
   - Name: SpectatorClass
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x8'
     Type: class
   - Name: ReplaySpectatorPlayerControllerClass
-    Offset: '0x470'
+    Offset: '0x468'
     Size: '0x8'
     Type: class
   - Name: PlayerStateClass
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x8'
     Type: class
   - Name: GameStateClass
-    Offset: '0x480'
+    Offset: '0x478'
     Size: '0x8'
     Type: class
   - Name: GameState
-    Offset: '0x488'
+    Offset: '0x480'
     Size: '0x8'
     Type: Class GameState*
   - Name: InactivePlayerArray
-    Offset: '0x490'
+    Offset: '0x488'
     Size: '0x10'
     Type: TArray<class InactivePlayerArray*>
   - Name: GameModeClassAliases
-    Offset: '0x4b0'
+    Offset: '0x4a8'
     Size: '0x10'
     Type: TArray<Struct GameClassShortName>
   - Name: InactivePlayerStateLifeSpan
-    Offset: '0x4c0'
+    Offset: '0x4b8'
     Size: '0x4'
     Type: float
   - Name: bHandleDedicatedServerReplays
-    Offset: '0x4c4'
+    Offset: '0x4bc'
     Size: '0x1'
     Type: bool
   ClassSize: '0xf8'
-  FullSize: '0x4c8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x4c0'
+  InheritedSize: '0x3c8'
   Super: Info
 GameNetworkManager:
   Attributes:
   - Name: AdjustedNetSpeed
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x4'
     Type: int
   - Name: LastNetSpeedUpdateTime
-    Offset: '0x3d4'
+    Offset: '0x3cc'
     Size: '0x4'
     Type: float
   - Name: TotalNetBandwidth
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x4'
     Type: int
   - Name: MinDynamicBandwidth
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x4'
     Type: int
   - Name: MaxDynamicBandwidth
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x4'
     Type: int
   - Name: bIsStandbyCheckingEnabled
-    Offset: '0x3e4'
+    Offset: '0x3dc'
     Size: '0x1'
     Type: bool
   - Name: bHasStandbyCheatTriggered
-    Offset: '0x3e4'
+    Offset: '0x3dc'
     Size: '0x1'
     Type: bool
   - Name: StandbyRxCheatTime
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x4'
     Type: float
   - Name: StandbyTxCheatTime
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x4'
     Type: float
   - Name: BadPingThreshold
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x4'
     Type: int
   - Name: PercentMissingForRxStandby
-    Offset: '0x3f4'
+    Offset: '0x3ec'
     Size: '0x4'
     Type: float
   - Name: PercentMissingForTxStandby
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x4'
     Type: float
   - Name: PercentForBadPing
-    Offset: '0x3fc'
+    Offset: '0x3f4'
     Size: '0x4'
     Type: float
   - Name: JoinInProgressStandbyWaitTime
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x4'
     Type: float
   - Name: MoveRepSize
-    Offset: '0x404'
+    Offset: '0x3fc'
     Size: '0x4'
     Type: float
   - Name: MAXPOSITIONERRORSQUARED
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x4'
     Type: float
   - Name: MAXNEARZEROVELOCITYSQUARED
-    Offset: '0x40c'
+    Offset: '0x404'
     Size: '0x4'
     Type: float
   - Name: CLIENTADJUSTUPDATECOST
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x4'
     Type: float
   - Name: MAXCLIENTUPDATEINTERVAL
-    Offset: '0x414'
+    Offset: '0x40c'
     Size: '0x4'
     Type: float
   - Name: MaxMoveDeltaTime
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x4'
     Type: float
   - Name: ClientAuthorativePosition
-    Offset: '0x41c'
+    Offset: '0x414'
     Size: '0x1'
     Type: bool
   - Name: ClientErrorUpdateRateLimit
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x4'
     Type: float
   - Name: bMovementTimeDiscrepancyDetection
-    Offset: '0x424'
+    Offset: '0x41c'
     Size: '0x1'
     Type: bool
   - Name: bMovementTimeDiscrepancyResolution
-    Offset: '0x425'
+    Offset: '0x41d'
     Size: '0x1'
     Type: bool
   - Name: MovementTimeDiscrepancyMaxTimeMargin
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: float
   - Name: MovementTimeDiscrepancyMinTimeMargin
-    Offset: '0x42c'
+    Offset: '0x424'
     Size: '0x4'
     Type: float
   - Name: MovementTimeDiscrepancyResolutionRate
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x4'
     Type: float
   - Name: MovementTimeDiscrepancyDriftAllowance
-    Offset: '0x434'
+    Offset: '0x42c'
     Size: '0x4'
     Type: float
   - Name: bMovementTimeDiscrepancyForceCorrectionsDuringResolution
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x1'
     Type: bool
   - Name: bUseDistanceBasedRelevancy
-    Offset: '0x439'
+    Offset: '0x431'
     Size: '0x1'
     Type: bool
   ClassSize: '0x70'
-  FullSize: '0x440'
-  InheritedSize: '0x3d0'
+  FullSize: '0x438'
+  InheritedSize: '0x3c8'
   Super: Info
 GameSession:
   Attributes:
   - Name: MaxSpectators
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x4'
     Type: int
   - Name: MaxPlayers
-    Offset: '0x3d4'
+    Offset: '0x3cc'
     Size: '0x4'
     Type: int
   - Name: MaxSplitscreensPerConnection
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: byte
   - Name: bRequiresPushToTalk
-    Offset: '0x3d9'
+    Offset: '0x3d1'
     Size: '0x1'
     Type: bool
   - Name: SessionName
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x30'
-  FullSize: '0x400'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3c8'
   Super: Info
 GameState:
   Attributes:
   - Name: GameModeClass
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: class
   - Name: AuthorityGameMode
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class GameMode*
   - Name: SpectatorClass
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class
   - Name: MatchState
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: struct FName
   - Name: PreviousMatchState
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: struct FName
   - Name: ElapsedTime
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x4'
     Type: int
   - Name: PlayerArray
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class PlayerArray*>
   - Name: ReplicatedWorldTimeSeconds
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x4'
     Type: float
   - Name: ServerWorldTimeSecondsDelta
-    Offset: '0x414'
+    Offset: '0x40c'
     Size: '0x4'
     Type: float
   - Name: ServerWorldTimeSecondsUpdateFrequency
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x4'
     Type: float
   ClassSize: '0x58'
-  FullSize: '0x428'
-  InheritedSize: '0x3d0'
+  FullSize: '0x420'
+  InheritedSize: '0x3c8'
   Super: Info
 GameUserSettings:
   Attributes:
@@ -6589,8 +6589,8 @@ GarbageCollectionSettings:
 GeneratedMeshAreaLight:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3e0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d8'
   Super: SpotLight
 HIKCharacterization:
   Attributes:
@@ -6757,88 +6757,88 @@ HIKCharacterization:
 HUD:
   Attributes:
   - Name: WhiteColor
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x4'
     Type: Struct Color
   - Name: GreenColor
-    Offset: '0x3d4'
+    Offset: '0x3cc'
     Size: '0x4'
     Type: Struct Color
   - Name: RedColor
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x4'
     Type: Struct Color
   - Name: PlayerOwner
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class PlayerController*
   - Name: bLostFocusPaused
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
   - Name: bShowHUD
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
   - Name: bShowDebugInfo
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
   - Name: bShowHitBoxDebugInfo
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
   - Name: bShowOverlays
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
   - Name: bEnableDebugTextShadow
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
   - Name: PostRenderedActors
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<class PostRenderedActors*>
   - Name: LastHUDRenderTime
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x4'
     Type: float
   - Name: RenderDelta
-    Offset: '0x404'
+    Offset: '0x3fc'
     Size: '0x4'
     Type: float
   - Name: DebugDisplay
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: ToggledDebugCategories
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: Canvas
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class Canvas*
   - Name: DebugCanvas
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class Canvas*
   - Name: DebugTextList
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x10'
     Type: TArray<Struct DebugTextInfo>
   - Name: ShowDebugTargetDesiredClass
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: class
   - Name: ShowDebugTargetActor
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0xf8'
-  FullSize: '0x4c8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x4c0'
+  InheritedSize: '0x3c8'
   Super: Actor
 HapticFeedbackEffect:
   Attributes:
@@ -6941,8 +6941,8 @@ InGameAdManager:
 Info:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 InheritableComponentHandler:
   Attributes:
@@ -7195,8 +7195,8 @@ InstancedCoverageMeshComponent:
 InstancedNavMeshBoundsVolume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x418'
-  InheritedSize: '0x418'
+  FullSize: '0x410'
+  InheritedSize: '0x410'
   Super: NavMeshBoundsVolume
 InstancedNavMeshComponent:
   Attributes:
@@ -8225,8 +8225,8 @@ InterpTrackVisibility:
 KillZVolume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x418'
-  InheritedSize: '0x418'
+  FullSize: '0x410'
+  InheritedSize: '0x410'
   Super: PhysicsVolume
 KismetArrayLibrary:
   Attributes: []
@@ -8285,28 +8285,28 @@ KismetTextLibrary:
 LODActor:
   Attributes:
   - Name: StaticMeshComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: SubActors
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<class SubActors*>
   - Name: LODDrawDistance
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x4'
     Type: float
   - Name: LodLevel
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x4'
     Type: int
   - Name: SubObjects
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<class SubObjects*>
   ClassSize: '0x38'
-  FullSize: '0x408'
-  InheritedSize: '0x3d0'
+  FullSize: '0x400'
+  InheritedSize: '0x3c8'
   Super: Actor
 Layer:
   Attributes:
@@ -8401,22 +8401,22 @@ LevelActorContainer:
 LevelBounds:
   Attributes:
   - Name: bAutoUpdateBounds
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 LevelScriptActor:
   Attributes:
   - Name: bInputEnabled
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 LevelScriptBlueprint:
   Attributes: []
@@ -8527,34 +8527,34 @@ LevelStreamingPersistent:
 LevelStreamingVolume:
   Attributes:
   - Name: StreamingLevelNames
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: bEditorPreVisOnly
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x1'
     Type: bool
   - Name: bDisabled
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x1'
     Type: bool
   - Name: StreamingUsage
-    Offset: '0x41c'
+    Offset: '0x414'
     Size: '0x1'
     Type: byte
   ClassSize: '0x18'
-  FullSize: '0x420'
-  InheritedSize: '0x408'
+  FullSize: '0x418'
+  InheritedSize: '0x400'
   Super: Volume
 Light:
   Attributes:
   - Name: LightComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class LightComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 LightComponent:
   Attributes:
@@ -8747,14 +8747,14 @@ LightmappedSurfaceCollection:
 LightmassCharacterIndirectDetailVolume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x408'
-  InheritedSize: '0x408'
+  FullSize: '0x400'
+  InheritedSize: '0x400'
   Super: Volume
 LightmassImportanceVolume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x408'
-  InheritedSize: '0x408'
+  FullSize: '0x400'
+  InheritedSize: '0x400'
   Super: Volume
 LightmassPrimitiveSettingsObject:
   Attributes:
@@ -8813,18 +8813,18 @@ LocalPlayer:
 LogVisualizerCameraController:
   Attributes:
   - Name: PickedActor
-    Offset: '0x778'
+    Offset: '0x7c0'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x18'
-  FullSize: '0x790'
-  InheritedSize: '0x778'
+  FullSize: '0x7d8'
+  InheritedSize: '0x7c0'
   Super: DebugCameraController
 LogVisualizerHUD:
   Attributes: []
   ClassSize: '0x28'
-  FullSize: '0x4f0'
-  InheritedSize: '0x4c8'
+  FullSize: '0x4e8'
+  InheritedSize: '0x4c0'
   Super: DebugCameraHUD
 Material:
   Attributes:
@@ -11685,12 +11685,12 @@ MaterialInstance:
 MaterialInstanceActor:
   Attributes:
   - Name: TargetActors
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<class TargetActors*>
   ClassSize: '0x10'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3c8'
   Super: Actor
 MaterialInstanceConstant:
   Attributes: []
@@ -11753,138 +11753,138 @@ MaterialParameterCollectionInstance:
 MatineeActor:
   Attributes:
   - Name: MatineeData
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class InterpData*
   - Name: MatineeControllerName
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: struct FName
   - Name: PlayRate
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x4'
     Type: float
   - Name: bPlayOnLevelLoad
-    Offset: '0x3e4'
+    Offset: '0x3dc'
     Size: '0x1'
     Type: bool
   - Name: bForceStartPos
-    Offset: '0x3e4'
+    Offset: '0x3dc'
     Size: '0x1'
     Type: bool
   - Name: ForceStartPosition
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x4'
     Type: float
   - Name: bLooping
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x1'
     Type: bool
   - Name: bRewindOnPlay
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x1'
     Type: bool
   - Name: bNoResetOnRewind
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x1'
     Type: bool
   - Name: bRewindIfAlreadyPlaying
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x1'
     Type: bool
   - Name: bDisableRadioFilter
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x1'
     Type: bool
   - Name: bClientSideOnly
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x1'
     Type: bool
   - Name: bSkipUpdateIfNotVisible
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x1'
     Type: bool
   - Name: bIsSkippable
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x1'
     Type: bool
   - Name: PreferredSplitScreenNum
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x4'
     Type: int
   - Name: bDisableMovementInput
-    Offset: '0x3f4'
+    Offset: '0x3ec'
     Size: '0x1'
     Type: bool
   - Name: bDisableLookAtInput
-    Offset: '0x3f4'
+    Offset: '0x3ec'
     Size: '0x1'
     Type: bool
   - Name: bHidePlayer
-    Offset: '0x3f4'
+    Offset: '0x3ec'
     Size: '0x1'
     Type: bool
   - Name: bHideHud
-    Offset: '0x3f4'
+    Offset: '0x3ec'
     Size: '0x1'
     Type: bool
   - Name: GroupActorInfos
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<Struct InterpGroupActorInfo>
   - Name: bShouldShowGore
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x1'
     Type: bool
   - Name: GroupInst
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x10'
     Type: TArray<class GroupInst*>
   - Name: CameraCuts
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Struct CameraCutInfo>
   - Name: bIsPlaying
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x1'
     Type: bool
   - Name: bReversePlayback
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x1'
     Type: bool
   - Name: bPaused
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x1'
     Type: bool
   - Name: bPendingStop
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x1'
     Type: bool
   - Name: InterpPosition
-    Offset: '0x434'
+    Offset: '0x42c'
     Size: '0x4'
     Type: float
   - Name: ReplicationForceIsPlaying
-    Offset: '0x43c'
+    Offset: '0x434'
     Size: '0x1'
     Type: byte
   - Name: bServerInitialLevelStreamingComplete
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   ClassSize: '0x78'
-  FullSize: '0x448'
-  InheritedSize: '0x3d0'
+  FullSize: '0x440'
+  InheritedSize: '0x3c8'
   Super: Actor
 MatineeActorCameraAnim:
   Attributes:
   - Name: CameraAnim
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class CameraAnim*
   ClassSize: '0x8'
-  FullSize: '0x450'
-  InheritedSize: '0x448'
+  FullSize: '0x448'
+  InheritedSize: '0x440'
   Super: MatineeActor
 MatineeAnimInterface:
   Attributes: []
@@ -11919,12 +11919,12 @@ MaybeCompressedCanvasRenderTarget2D:
 MergedCollisionActor:
   Attributes:
   - Name: MergedCollisionComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class MergedCollisionComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 MergedCollisionComponent:
   Attributes:
@@ -11946,16 +11946,28 @@ MergedStaticMeshComponent:
     Offset: '0x628'
     Size: '0x10'
     Type: TArray<Float LODScreenSizes>
-  - Name: LODForCollision
+  - Name: LODReductionPercentTriangles
     Offset: '0x638'
+    Size: '0x10'
+    Type: TArray<Float LODReductionPercentTriangles>
+  - Name: LODForCollision
+    Offset: '0x648'
+    Size: '0x4'
+    Type: int
+  - Name: ClampNumberOfLODs
+    Offset: '0x64c'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxNumberOfLODs
+    Offset: '0x650'
     Size: '0x4'
     Type: int
   - Name: bMergeVertexColours
-    Offset: '0x63c'
+    Offset: '0x654'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x20'
-  FullSize: '0x640'
+  ClassSize: '0x40'
+  FullSize: '0x660'
   InheritedSize: '0x620'
   Super: StaticMeshComponent
 MeshComponent:
@@ -12407,24 +12419,24 @@ NavLinkHostInterface:
 NavLinkProxy:
   Attributes:
   - Name: PointLinks
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x10'
     Type: TArray<Struct NavigationLink>
   - Name: SegmentLinks
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<Struct NavigationSegmentLink>
   - Name: SmartLinkComp
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class NavLinkCustomComponent*
   - Name: bSmartLinkIsRelevant
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x1'
     Type: bool
   ClassSize: '0x50'
-  FullSize: '0x420'
-  InheritedSize: '0x3d0'
+  FullSize: '0x418'
+  InheritedSize: '0x3c8'
   Super: Actor
 NavLinkRenderingComponent:
   Attributes: []
@@ -12441,16 +12453,16 @@ NavLinkTrivial:
 NavMeshBoundsVolume:
   Attributes:
   - Name: SupportedAgents
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x4'
     Type: Struct NavAgentSelector
   - Name: OriginatingLevelName
-    Offset: '0x40c'
+    Offset: '0x404'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x10'
-  FullSize: '0x418'
-  InheritedSize: '0x408'
+  FullSize: '0x410'
+  InheritedSize: '0x400'
   Super: Volume
 NavMeshRenderingComponent:
   Attributes: []
@@ -12475,12 +12487,12 @@ NavModifierComponent:
 NavModifierVolume:
   Attributes:
   - Name: AreaClass
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: class
   ClassSize: '0x10'
-  FullSize: '0x418'
-  InheritedSize: '0x408'
+  FullSize: '0x410'
+  InheritedSize: '0x400'
   Super: Volume
 NavMovementComponent:
   Attributes:
@@ -12553,40 +12565,40 @@ NavTestRenderingComponent:
 NavigationData:
   Attributes:
   - Name: RenderingComp
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class PrimitiveComponent*
   - Name: NavDataConfig
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x58'
     Type: Struct NavDataConfig
   - Name: bEnableDrawing
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x1'
     Type: bool
   - Name: bRebuildAtRuntime
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x1'
     Type: bool
   - Name: RuntimeGeneration
-    Offset: '0x434'
+    Offset: '0x42c'
     Size: '0x1'
     Type: byte
   - Name: bForceRebuildOnLoad
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x1'
     Type: bool
   - Name: ObservedPathsTickInterval
-    Offset: '0x43c'
+    Offset: '0x434'
     Size: '0x4'
     Type: float
   - Name: SupportedAreas
-    Offset: '0x528'
+    Offset: '0x520'
     Size: '0x10'
     Type: TArray<Struct SupportedAreaData>
   ClassSize: '0x1c0'
-  FullSize: '0x590'
-  InheritedSize: '0x3d0'
+  FullSize: '0x588'
+  InheritedSize: '0x3c8'
   Super: Actor
 NavigationDataChunk:
   Attributes:
@@ -12601,14 +12613,14 @@ NavigationDataChunk:
 NavigationGraph:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x590'
-  InheritedSize: '0x590'
+  FullSize: '0x588'
+  InheritedSize: '0x588'
   Super: NavigationData
 NavigationGraphNode:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 NavigationGraphNodeComponent:
   Attributes:
@@ -12645,24 +12657,24 @@ NavigationInvokerComponent:
 NavigationObjectBase:
   Attributes:
   - Name: CapsuleComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class CapsuleComponent*
   - Name: GoodSprite
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class BillboardComponent*
   - Name: BadSprite
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class BillboardComponent*
   - Name: bIsPIEPlayerStart
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x28'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3c8'
   Super: Actor
 NavigationPath:
   Attributes:
@@ -12779,116 +12791,116 @@ NavigationSystem:
 NavigationTestingActor:
   Attributes:
   - Name: CapsuleComponent
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class CapsuleComponent*
   - Name: InvokerComponent
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class NavigationInvokerComponent*
   - Name: bActAsNavigationInvoker
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x1'
     Type: bool
   - Name: NavAgentProps
-    Offset: '0x3f4'
+    Offset: '0x3ec'
     Size: '0x30'
     Type: Struct NavAgentProperties
   - Name: QueryingExtent
-    Offset: '0x424'
+    Offset: '0x41c'
     Size: '0xc'
     Type: Struct Vector
   - Name: MyNavData
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class NavigationData*
   - Name: ProjectedLocation
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0xc'
     Type: Struct Vector
   - Name: bProjectedLocationValid
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   - Name: bSearchStart
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   - Name: bUseHierarchicalPathfinding
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   - Name: bGatherDetailedInfo
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   - Name: bShowNodePool
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   - Name: bShowBestPath
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   - Name: bShowDiffWithPreviousStep
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   - Name: bShouldBeVisibleInGame
-    Offset: '0x444'
+    Offset: '0x43c'
     Size: '0x1'
     Type: bool
   - Name: CostDisplayMode
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x1'
     Type: byte
   - Name: TextCanvasOffset
-    Offset: '0x44c'
+    Offset: '0x444'
     Size: '0x8'
     Type: Struct Vector2D
   - Name: bPathExist
-    Offset: '0x454'
+    Offset: '0x44c'
     Size: '0x1'
     Type: bool
   - Name: bPathIsPartial
-    Offset: '0x454'
+    Offset: '0x44c'
     Size: '0x1'
     Type: bool
   - Name: bPathSearchOutOfNodes
-    Offset: '0x454'
+    Offset: '0x44c'
     Size: '0x1'
     Type: bool
   - Name: PathfindingTime
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x4'
     Type: float
   - Name: PathCost
-    Offset: '0x45c'
+    Offset: '0x454'
     Size: '0x4'
     Type: float
   - Name: PathfindingSteps
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x4'
     Type: int
   - Name: OtherActor
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x8'
     Type: Class NavigationTestingActor*
   - Name: FilterClass
-    Offset: '0x470'
+    Offset: '0x468'
     Size: '0x8'
     Type: class
   - Name: ShowStepIndex
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x4'
     Type: int
   - Name: OffsetFromCornersDistance
-    Offset: '0x47c'
+    Offset: '0x474'
     Size: '0x4'
     Type: float
   ClassSize: '0xd0'
-  FullSize: '0x4a0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x498'
+  InheritedSize: '0x3c8'
   Super: Actor
 NavigationTypes:
   Attributes: []
@@ -13089,8 +13101,8 @@ NetworkSettings:
 Note:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 ObjectLibrary:
   Attributes:
@@ -13147,36 +13159,36 @@ PackageMapClient:
 PainCausingVolume:
   Attributes:
   - Name: bPainCausing
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x1'
     Type: bool
   - Name: DamagePerSec
-    Offset: '0x41c'
+    Offset: '0x414'
     Size: '0x4'
     Type: float
   - Name: DamageType
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: PainInterval
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: float
   - Name: bEntryPain
-    Offset: '0x42c'
+    Offset: '0x424'
     Size: '0x1'
     Type: bool
   - Name: BACKUP_bPainCausing
-    Offset: '0x42c'
+    Offset: '0x424'
     Size: '0x1'
     Type: bool
   - Name: DamageInstigator
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class Controller*
   ClassSize: '0x28'
-  FullSize: '0x440'
-  InheritedSize: '0x418'
+  FullSize: '0x438'
+  InheritedSize: '0x410'
   Super: PhysicsVolume
 ParticleComputeShaderData:
   Attributes: []
@@ -13265,8 +13277,8 @@ ParticleEmitter:
 ParticleEventManager:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 ParticleLODLevel:
   Attributes:
@@ -16909,64 +16921,64 @@ ParticleWarningFunctions:
 Pawn:
   Attributes:
   - Name: bUseControllerRotationPitch
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bUseControllerRotationYaw
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bUseControllerRotationRoll
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bCanAffectNavigationGeneration
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: BaseEyeHeight
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x4'
     Type: float
   - Name: AutoPossessPlayer
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x1'
     Type: byte
   - Name: AutoPossessAI
-    Offset: '0x3e1'
+    Offset: '0x3d9'
     Size: '0x1'
     Type: byte
   - Name: AIControllerClass
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: class
   - Name: PlayerState
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class PlayerState*
   - Name: RemoteViewPitch
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x1'
     Type: byte
   - Name: LastHitBy
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class Controller*
   - Name: Controller
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class Controller*
   - Name: ControlInputVector
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0xc'
     Type: Struct Vector
   - Name: LastControlInputVector
-    Offset: '0x434'
+    Offset: '0x42c'
     Size: '0xc'
     Type: Struct Vector
   ClassSize: '0x78'
-  FullSize: '0x448'
-  InheritedSize: '0x3d0'
+  FullSize: '0x440'
+  InheritedSize: '0x3c8'
   Super: Actor
 PawnMovementComponent:
   Attributes:
@@ -17129,24 +17141,24 @@ PhysicsCollisionHandler:
 PhysicsConstraintActor:
   Attributes:
   - Name: ConstraintComp
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class PhysicsConstraintComponent*
   - Name: ConstraintActor1
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class Actor*
   - Name: ConstraintActor2
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class Actor*
   - Name: bDisableCollision
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3c8'
   Super: RigidBodyBase
 PhysicsConstraintComponent:
   Attributes:
@@ -17551,12 +17563,12 @@ PhysicsSpringComponent:
 PhysicsThruster:
   Attributes:
   - Name: ThrusterComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class PhysicsThrusterComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: RigidBodyBase
 PhysicsThrusterComponent:
   Attributes:
@@ -17571,34 +17583,34 @@ PhysicsThrusterComponent:
 PhysicsVolume:
   Attributes:
   - Name: TerminalVelocity
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x4'
     Type: float
   - Name: Priority
-    Offset: '0x40c'
+    Offset: '0x404'
     Size: '0x4'
     Type: int
   - Name: FluidFriction
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x4'
     Type: float
   - Name: bWaterVolume
-    Offset: '0x414'
+    Offset: '0x40c'
     Size: '0x1'
     Type: bool
   - Name: bPhysicsOnContact
-    Offset: '0x414'
+    Offset: '0x40c'
     Size: '0x1'
     Type: bool
   ClassSize: '0x10'
-  FullSize: '0x418'
-  InheritedSize: '0x408'
+  FullSize: '0x410'
+  InheritedSize: '0x400'
   Super: Volume
 PlaneReflectionCapture:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
   Super: ReflectionCapture
 PlaneReflectionCaptureComponent:
   Attributes:
@@ -17685,23 +17697,23 @@ Player:
 PlayerCameraManager:
   Attributes:
   - Name: PCOwner
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class PlayerController*
   - Name: TransformComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: DefaultFOV
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x4'
     Type: float
   - Name: DefaultOrthoWidth
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x4'
     Type: float
   - Name: DefaultAspectRatio
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x4'
     Type: float
   - Name: CameraCache
@@ -17804,187 +17816,187 @@ PlayerCameraManager:
     Offset: '0x1c40'
     Size: '0x4'
     Type: float
-  ClassSize: '0x1880'
+  ClassSize: '0x1888'
   FullSize: '0x1c50'
-  InheritedSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 PlayerController:
   Attributes:
   - Name: Player
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class Player*
   - Name: AcknowledgedPawn
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class Pawn*
   - Name: ControllingDirTrackInst
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class InterpTrackInstDirector*
   - Name: MyHUD
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x8'
     Type: Class HUD*
   - Name: PlayerCameraManager
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x8'
     Type: Class PlayerCameraManager*
   - Name: PlayerCameraManagerClass
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x8'
     Type: class
   - Name: bAutoManageActiveCameraTarget
-    Offset: '0x470'
+    Offset: '0x468'
     Size: '0x1'
     Type: bool
   - Name: TargetViewRotation
-    Offset: '0x474'
+    Offset: '0x46c'
     Size: '0xc'
     Type: Struct Rotator
   - Name: HiddenActors
-    Offset: '0x490'
+    Offset: '0x488'
     Size: '0x10'
     Type: TArray<class HiddenActors*>
   - Name: LastSpectatorStateSynchTime
-    Offset: '0x4a0'
+    Offset: '0x498'
     Size: '0x4'
     Type: float
   - Name: LastSpectatorSyncLocation
-    Offset: '0x4a4'
+    Offset: '0x49c'
     Size: '0xc'
     Type: Struct Vector
   - Name: LastSpectatorSyncRotation
-    Offset: '0x4b0'
+    Offset: '0x4a8'
     Size: '0xc'
     Type: Struct Rotator
   - Name: ClientCap
-    Offset: '0x4bc'
+    Offset: '0x4b4'
     Size: '0x4'
     Type: int
   - Name: CheatManager
-    Offset: '0x4c0'
+    Offset: '0x4b8'
     Size: '0x8'
     Type: Class CheatManager*
   - Name: CheatClass
-    Offset: '0x4c8'
+    Offset: '0x4c0'
     Size: '0x8'
     Type: class
   - Name: PlayerInput
-    Offset: '0x4d0'
+    Offset: '0x4c8'
     Size: '0x8'
     Type: Class PlayerInput*
   - Name: ActiveForceFeedbackEffects
-    Offset: '0x4d8'
+    Offset: '0x4d0'
     Size: '0x10'
     Type: TArray<Struct ActiveForceFeedbackEffect>
   - Name: bPlayerIsWaiting
-    Offset: '0x578'
+    Offset: '0x570'
     Size: '0x1'
     Type: bool
   - Name: NetPlayerIndex
-    Offset: '0x57c'
+    Offset: '0x574'
     Size: '0x1'
     Type: byte
   - Name: bHasVoiceHandshakeCompleted
-    Offset: '0x57d'
+    Offset: '0x575'
     Size: '0x1'
     Type: bool
   - Name: PendingSwapConnection
-    Offset: '0x580'
+    Offset: '0x578'
     Size: '0x8'
     Type: Class NetConnection*
   - Name: NetConnection
-    Offset: '0x588'
+    Offset: '0x580'
     Size: '0x8'
     Type: Class NetConnection*
   - Name: InputYawScale
-    Offset: '0x59c'
+    Offset: '0x594'
     Size: '0x4'
     Type: float
   - Name: InputPitchScale
-    Offset: '0x5a0'
+    Offset: '0x598'
     Size: '0x4'
     Type: float
   - Name: InputRollScale
-    Offset: '0x5a4'
+    Offset: '0x59c'
     Size: '0x4'
     Type: float
   - Name: bShowMouseCursor
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x1'
     Type: bool
   - Name: bEnableClickEvents
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x1'
     Type: bool
   - Name: bEnableTouchEvents
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x1'
     Type: bool
   - Name: bEnableMouseOverEvents
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x1'
     Type: bool
   - Name: bEnableTouchOverEvents
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x1'
     Type: bool
   - Name: bForceFeedbackEnabled
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x1'
     Type: bool
   - Name: DefaultMouseCursor
-    Offset: '0x5ac'
+    Offset: '0x5a4'
     Size: '0x1'
     Type: byte
   - Name: CurrentMouseCursor
-    Offset: '0x5ad'
+    Offset: '0x5a5'
     Size: '0x1'
     Type: byte
   - Name: DefaultClickTraceChannel
-    Offset: '0x5ae'
+    Offset: '0x5a6'
     Size: '0x1'
     Type: byte
   - Name: CurrentClickTraceChannel
-    Offset: '0x5af'
+    Offset: '0x5a7'
     Size: '0x1'
     Type: byte
   - Name: HitResultTraceDistance
-    Offset: '0x5b0'
+    Offset: '0x5a8'
     Size: '0x4'
     Type: float
   - Name: ForceFeedbackIntensity
-    Offset: '0x5b4'
+    Offset: '0x5ac'
     Size: '0x4'
     Type: float
   - Name: InactiveStateInputComponent
-    Offset: '0x640'
+    Offset: '0x638'
     Size: '0x8'
     Type: Class InputComponent*
   - Name: CurrentTouchInterface
-    Offset: '0x668'
+    Offset: '0x660'
     Size: '0x8'
     Type: Class TouchInterface*
   - Name: SpectatorPawn
-    Offset: '0x6a0'
+    Offset: '0x698'
     Size: '0x8'
     Type: Class SpectatorPawn*
   - Name: SpawnLocation
-    Offset: '0x6a8'
+    Offset: '0x6a0'
     Size: '0xc'
     Type: Struct Vector
   - Name: bIsLocalPlayerController
-    Offset: '0x71c'
+    Offset: '0x714'
     Size: '0x1'
     Type: bool
   - Name: bInCinematicMode
-    Offset: '0x722'
+    Offset: '0x71a'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x2f8'
-  FullSize: '0x728'
-  InheritedSize: '0x430'
+  ClassSize: '0x348'
+  FullSize: '0x770'
+  InheritedSize: '0x428'
   Super: Controller
 PlayerInput:
   Attributes:
@@ -18015,72 +18027,72 @@ PlayerInput:
 PlayerStart:
   Attributes:
   - Name: PlayerStartTag
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x8'
-  FullSize: '0x400'
-  InheritedSize: '0x3f8'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3f0'
   Super: NavigationObjectBase
 PlayerStartPIE:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x400'
-  InheritedSize: '0x400'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3f8'
   Super: PlayerStart
 PlayerState:
   Attributes:
   - Name: Score
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x4'
     Type: float
   - Name: Ping
-    Offset: '0x3d4'
+    Offset: '0x3cc'
     Size: '0x1'
     Type: byte
   - Name: PlayerName
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x10'
     Type: Struct FString
   - Name: PlayerId
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x4'
     Type: int
   - Name: bIsSpectator
-    Offset: '0x3fc'
+    Offset: '0x3f4'
     Size: '0x1'
     Type: bool
   - Name: bOnlySpectator
-    Offset: '0x3fc'
+    Offset: '0x3f4'
     Size: '0x1'
     Type: bool
   - Name: bIsABot
-    Offset: '0x3fc'
+    Offset: '0x3f4'
     Size: '0x1'
     Type: bool
   - Name: bIsInactive
-    Offset: '0x3fc'
+    Offset: '0x3f4'
     Size: '0x1'
     Type: bool
   - Name: bFromPreviousLevel
-    Offset: '0x3fc'
+    Offset: '0x3f4'
     Size: '0x1'
     Type: bool
   - Name: StartTime
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x4'
     Type: int
   - Name: EngineMessageClass
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: class
   - Name: UniqueId
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x18'
     Type: Struct UniqueNetIdRepl
   ClassSize: '0x88'
-  FullSize: '0x458'
-  InheritedSize: '0x3d0'
+  FullSize: '0x450'
+  InheritedSize: '0x3c8'
   Super: Info
 PluginCommandlet:
   Attributes: []
@@ -18091,12 +18103,12 @@ PluginCommandlet:
 PointLight:
   Attributes:
   - Name: PointLightComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class PointLightComponent*
   ClassSize: '0x8'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
   Super: Light
 PointLightComponent:
   Attributes:
@@ -18234,33 +18246,33 @@ PostProcessVolume:
     Offset: '0x95c'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x558'
+  ClassSize: '0x560'
   FullSize: '0x960'
-  InheritedSize: '0x408'
+  InheritedSize: '0x400'
   Super: Volume
 PrecomputedVisibilityOverrideVolume:
   Attributes:
   - Name: OverrideVisibleActors
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<class OverrideVisibleActors*>
   - Name: OverrideInvisibleActors
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x10'
     Type: TArray<class OverrideInvisibleActors*>
   - Name: OverrideInvisibleLevels
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x10'
     Type: TArray<Struct FName>
   ClassSize: '0x30'
-  FullSize: '0x438'
-  InheritedSize: '0x408'
+  FullSize: '0x430'
+  InheritedSize: '0x400'
   Super: Volume
 PrecomputedVisibilityVolume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x408'
-  InheritedSize: '0x408'
+  FullSize: '0x400'
+  InheritedSize: '0x400'
   Super: Volume
 PrimitiveComponent:
   Attributes:
@@ -18715,12 +18727,12 @@ RVOAvoidanceInterface:
 RadialForceActor:
   Attributes:
   - Name: ForceComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class RadialForceComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: RigidBodyBase
 RadialForceComponent:
   Attributes:
@@ -18775,224 +18787,224 @@ RecastFilter_UseDefaultArea:
 RecastNavMesh:
   Attributes:
   - Name: bDrawTriangleEdges
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x1'
     Type: bool
   - Name: bDrawPolyEdges
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x1'
     Type: bool
   - Name: bDrawFilledPolys
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x1'
     Type: bool
   - Name: bDrawNavMeshEdges
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x1'
     Type: bool
   - Name: bDrawTileBounds
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x1'
     Type: bool
   - Name: bDrawPathCollidingGeometry
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x1'
     Type: bool
   - Name: bDrawTileLabels
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x1'
     Type: bool
   - Name: bDrawPolygonLabels
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x1'
     Type: bool
   - Name: bDrawDefaultPolygonCost
-    Offset: '0x591'
+    Offset: '0x589'
     Size: '0x1'
     Type: bool
   - Name: bDrawLabelsOnPathNodes
-    Offset: '0x591'
+    Offset: '0x589'
     Size: '0x1'
     Type: bool
   - Name: bDrawNavLinks
-    Offset: '0x591'
+    Offset: '0x589'
     Size: '0x1'
     Type: bool
   - Name: bDrawFailedNavLinks
-    Offset: '0x591'
+    Offset: '0x589'
     Size: '0x1'
     Type: bool
   - Name: bDrawClusters
-    Offset: '0x591'
+    Offset: '0x589'
     Size: '0x1'
     Type: bool
   - Name: bDrawOctree
-    Offset: '0x591'
+    Offset: '0x589'
     Size: '0x1'
     Type: bool
   - Name: bDistinctlyDrawTilesBeingBuilt
-    Offset: '0x591'
+    Offset: '0x589'
     Size: '0x1'
     Type: bool
   - Name: bDrawNavMesh
-    Offset: '0x591'
+    Offset: '0x589'
     Size: '0x1'
     Type: bool
   - Name: DrawOffset
-    Offset: '0x594'
+    Offset: '0x58c'
     Size: '0x4'
     Type: float
   - Name: BuiltTileSizeUU
-    Offset: '0x598'
+    Offset: '0x590'
     Size: '0x4'
     Type: float
   - Name: BuiltCellSize
-    Offset: '0x59c'
+    Offset: '0x594'
     Size: '0x4'
     Type: float
   - Name: bFixedTilePoolSize
-    Offset: '0x5a0'
+    Offset: '0x598'
     Size: '0x1'
     Type: bool
   - Name: TilePoolSize
-    Offset: '0x5a4'
+    Offset: '0x59c'
     Size: '0x4'
     Type: int
   - Name: TileSizeUU
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x4'
     Type: float
   - Name: CellSize
-    Offset: '0x5ac'
+    Offset: '0x5a4'
     Size: '0x4'
     Type: float
   - Name: CellHeight
-    Offset: '0x5b0'
+    Offset: '0x5a8'
     Size: '0x4'
     Type: float
   - Name: AgentRadius
-    Offset: '0x5b4'
+    Offset: '0x5ac'
     Size: '0x4'
     Type: float
   - Name: AgentHeight
-    Offset: '0x5b8'
+    Offset: '0x5b0'
     Size: '0x4'
     Type: float
   - Name: AgentMaxHeight
-    Offset: '0x5bc'
+    Offset: '0x5b4'
     Size: '0x4'
     Type: float
   - Name: AgentMaxSlope
-    Offset: '0x5c0'
+    Offset: '0x5b8'
     Size: '0x4'
     Type: float
   - Name: AgentMaxStepHeight
-    Offset: '0x5c4'
+    Offset: '0x5bc'
     Size: '0x4'
     Type: float
   - Name: MinRegionArea
-    Offset: '0x5c8'
+    Offset: '0x5c0'
     Size: '0x4'
     Type: float
   - Name: MergeRegionSize
-    Offset: '0x5cc'
+    Offset: '0x5c4'
     Size: '0x4'
     Type: float
   - Name: MaxSimplificationError
-    Offset: '0x5d0'
+    Offset: '0x5c8'
     Size: '0x4'
     Type: float
   - Name: MaxSimultaneousTileGenerationJobsCount
-    Offset: '0x5d4'
+    Offset: '0x5cc'
     Size: '0x4'
     Type: int
   - Name: TileNumberHardLimit
-    Offset: '0x5d8'
+    Offset: '0x5d0'
     Size: '0x4'
     Type: int
   - Name: PolyRefTileBits
-    Offset: '0x5dc'
+    Offset: '0x5d4'
     Size: '0x4'
     Type: int
   - Name: PolyRefNavPolyBits
-    Offset: '0x5e0'
+    Offset: '0x5d8'
     Size: '0x4'
     Type: int
   - Name: PolyRefSaltBits
-    Offset: '0x5e4'
+    Offset: '0x5dc'
     Size: '0x4'
     Type: int
   - Name: DefaultDrawDistance
-    Offset: '0x5e8'
+    Offset: '0x5e0'
     Size: '0x4'
     Type: float
   - Name: DefaultMaxSearchNodes
-    Offset: '0x5ec'
+    Offset: '0x5e4'
     Size: '0x4'
     Type: float
   - Name: DefaultMaxHierarchicalSearchNodes
-    Offset: '0x5f0'
+    Offset: '0x5e8'
     Size: '0x4'
     Type: float
   - Name: RegionPartitioning
-    Offset: '0x5f4'
+    Offset: '0x5ec'
     Size: '0x1'
     Type: byte
   - Name: LayerPartitioning
-    Offset: '0x5f5'
+    Offset: '0x5ed'
     Size: '0x1'
     Type: byte
   - Name: RegionChunkSplits
-    Offset: '0x5f8'
+    Offset: '0x5f0'
     Size: '0x4'
     Type: int
   - Name: LayerChunkSplits
-    Offset: '0x5fc'
+    Offset: '0x5f4'
     Size: '0x4'
     Type: int
   - Name: bSortNavigationAreasByCost
-    Offset: '0x600'
+    Offset: '0x5f8'
     Size: '0x1'
     Type: bool
   - Name: bPerformVoxelFiltering
-    Offset: '0x600'
+    Offset: '0x5f8'
     Size: '0x1'
     Type: bool
   - Name: bMarkLowHeightAreas
-    Offset: '0x600'
+    Offset: '0x5f8'
     Size: '0x1'
     Type: bool
   - Name: bDoFullyAsyncNavDataGathering
-    Offset: '0x600'
+    Offset: '0x5f8'
     Size: '0x1'
     Type: bool
   - Name: bUseBetterOffsetsFromCorners
-    Offset: '0x600'
+    Offset: '0x5f8'
     Size: '0x1'
     Type: bool
   - Name: bUseVirtualFilters
-    Offset: '0x600'
+    Offset: '0x5f8'
     Size: '0x1'
     Type: bool
   - Name: bUseVoxelCache
-    Offset: '0x600'
+    Offset: '0x5f8'
     Size: '0x1'
     Type: bool
   - Name: TileSetUpdateInterval
-    Offset: '0x604'
+    Offset: '0x5fc'
     Size: '0x4'
     Type: float
   - Name: HeuristicScale
-    Offset: '0x608'
+    Offset: '0x600'
     Size: '0x4'
     Type: float
   - Name: VerticalDeviationFromGroundCompensation
-    Offset: '0x60c'
+    Offset: '0x604'
     Size: '0x4'
     Type: float
   ClassSize: '0xb0'
-  FullSize: '0x640'
-  InheritedSize: '0x590'
+  FullSize: '0x638'
+  InheritedSize: '0x588'
   Super: NavigationData
 RecastNavMeshDataChunk:
   Attributes: []
@@ -19003,12 +19015,12 @@ RecastNavMeshDataChunk:
 ReflectionCapture:
   Attributes:
   - Name: CaptureComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class ReflectionCaptureComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 ReflectionCaptureComponent:
   Attributes:
@@ -19265,8 +19277,8 @@ Rig:
 RigidBodyBase:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 RotatingMovementComponent:
   Attributes:
@@ -19347,26 +19359,26 @@ Scene:
 SceneCapture:
   Attributes:
   - Name: MeshComp
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 SceneCapture2D:
   Attributes:
   - Name: CaptureComponent2D
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneCaptureComponent2D*
   - Name: DrawFrustum
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class DrawFrustumComponent*
   ClassSize: '0x10'
-  FullSize: '0x3e8'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3d0'
   Super: SceneCapture
 SceneCaptureComponent:
   Attributes:
@@ -19457,16 +19469,16 @@ SceneCaptureComponentCube:
 SceneCaptureCube:
   Attributes:
   - Name: CaptureComponentCube
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneCaptureComponentCube*
   - Name: DrawFrustum
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class DrawFrustumComponent*
   ClassSize: '0x10'
-  FullSize: '0x3e8'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3d0'
   Super: SceneCapture
 SceneComponent:
   Attributes:
@@ -19589,8 +19601,8 @@ Selection:
 ServerOnlyTestActor:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 ShadowMapTexture2D:
   Attributes:
@@ -19755,36 +19767,36 @@ SkeletalMesh:
 SkeletalMeshActor:
   Attributes:
   - Name: bShouldDoAnimNotifies
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bWakeOnLevelStart
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: SkeletalMeshComponent
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
   - Name: ReplicatedMesh
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class SkeletalMesh*
   - Name: ReplicatedPhysAsset
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class PhysicsAsset*
   - Name: ReplicatedMaterial0
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: ReplicatedMaterial1
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class MaterialInterface*
   ClassSize: '0x40'
-  FullSize: '0x410'
-  InheritedSize: '0x3d0'
+  FullSize: '0x408'
+  InheritedSize: '0x3c8'
   Super: Actor
 SkeletalMeshComponent:
   Attributes:
@@ -20139,16 +20151,16 @@ SkinnedMeshComponent:
 SkyLight:
   Attributes:
   - Name: LightComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class SkyLightComponent*
   - Name: bEnabled
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   ClassSize: '0x10'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3c8'
   Super: Info
 SkyLightComponent:
   Attributes:
@@ -20799,8 +20811,8 @@ SoundWaveProcedural:
 SpectatorPawn:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x470'
-  InheritedSize: '0x470'
+  FullSize: '0x468'
+  InheritedSize: '0x468'
   Super: DefaultPawn
 SpectatorPawnMovement:
   Attributes:
@@ -20825,12 +20837,12 @@ SphereComponent:
 SphereReflectionCapture:
   Attributes:
   - Name: DrawCaptureRadius
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class DrawSphereComponent*
   ClassSize: '0x8'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
   Super: ReflectionCapture
 SphereReflectionCaptureComponent:
   Attributes:
@@ -20903,12 +20915,12 @@ SplineComponent:
 SplineMeshActor:
   Attributes:
   - Name: SplineMeshComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class SplineMeshComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 SplineMeshComponent:
   Attributes:
@@ -20959,12 +20971,12 @@ SplineMeshComponent:
 SpotLight:
   Attributes:
   - Name: SpotLightComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class SpotLightComponent*
   ClassSize: '0x8'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d0'
   Super: Light
 SpotLightComponent:
   Attributes:
@@ -21155,20 +21167,20 @@ StaticMesh:
 StaticMeshActor:
   Attributes:
   - Name: StaticMeshComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: bStaticMeshReplicateMovement
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: NavigationGeometryGatheringMode
-    Offset: '0x3d9'
+    Offset: '0x3d1'
     Size: '0x1'
     Type: byte
   ClassSize: '0x10'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3c8'
   Super: Actor
 StaticMeshComponent:
   Attributes:
@@ -21261,8 +21273,8 @@ StaticMeshSocket:
 StreamingProbe:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 StreamingSettings:
   Attributes:
@@ -21375,8 +21387,8 @@ SubsurfaceProfile:
 TargetPoint:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 TestInterface:
   Attributes: []
@@ -21411,12 +21423,12 @@ TextPropertyTestObject:
 TextRenderActor:
   Attributes:
   - Name: TextRender
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class TextRenderComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 TextRenderComponent:
   Attributes:
@@ -21735,8 +21747,8 @@ TextureRenderTargetCube:
 ThreadedActor:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 ThumbnailInfo:
   Attributes: []
@@ -21849,40 +21861,40 @@ TouchInterface:
 TriggerBase:
   Attributes:
   - Name: CollisionComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class ShapeComponent*
   - Name: SpriteComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class BillboardComponent*
   ClassSize: '0x10'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3c8'
   Super: Actor
 TriggerBox:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3e0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d8'
   Super: TriggerBase
 TriggerCapsule:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3e0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d8'
   Super: TriggerBase
 TriggerSphere:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3e0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3d8'
   Super: TriggerBase
 TriggerVolume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x408'
-  InheritedSize: '0x408'
+  FullSize: '0x400'
+  InheritedSize: '0x400'
   Super: Volume
 TwitterIntegrationBase:
   Attributes: []
@@ -22087,12 +22099,12 @@ VectorFieldStatic:
 VectorFieldVolume:
   Attributes:
   - Name: VectorFieldComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class VectorFieldComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 VertexAnimBase:
   Attributes:
@@ -22143,18 +22155,18 @@ VoiceChannel:
 Volume:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x408'
-  InheritedSize: '0x408'
+  FullSize: '0x400'
+  InheritedSize: '0x400'
   Super: Brush
 WaterEmissionVolume:
   Attributes:
   - Name: WaterEmissionVolumeComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class WaterEmissionVolumeComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 WaterEmissionVolumeComponent:
   Attributes:
@@ -22179,12 +22191,12 @@ WaterId:
 WindDirectionalSource:
   Attributes:
   - Name: Component
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class WindDirectionalSourceComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Info
 WindDirectionalSourceComponent:
   Attributes:
@@ -22371,162 +22383,162 @@ WorldComposition:
 WorldSettings:
   Attributes:
   - Name: bEnableWorldBoundsChecks
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: bEnableNavigationSystem
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: WorldCompositionSetting
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x1'
     Type: byte
   - Name: InstancedNavMeshesDataAssetOveride
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: bEnableWorldOriginRebasing
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x1'
     Type: bool
   - Name: bWorldGravitySet
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x1'
     Type: bool
   - Name: bGlobalGravitySet
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x1'
     Type: bool
   - Name: KillZ
-    Offset: '0x3f4'
+    Offset: '0x3ec'
     Size: '0x4'
     Type: float
   - Name: KillZDamageType
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: class
   - Name: GlobalGravityZ
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x4'
     Type: float
   - Name: DefaultPhysicsVolumeClass
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: class
   - Name: PhysicsCollisionHandlerClass
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: class
   - Name: DefaultGameMode
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: DefaultMapPrefixes
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Struct GameModePrefix>
   - Name: GameNetworkManagerClass
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: class
   - Name: PackedLightAndShadowMapTextureSize
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x4'
     Type: int
   - Name: bMinimizeBSPSections
-    Offset: '0x43c'
+    Offset: '0x434'
     Size: '0x1'
     Type: bool
   - Name: DefaultColorScale
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0xc'
     Type: Struct Vector
   - Name: bPrecomputeVisibility
-    Offset: '0x44c'
+    Offset: '0x444'
     Size: '0x1'
     Type: bool
   - Name: bPlaceCellsOnlyAlongCameraTracks
-    Offset: '0x44c'
+    Offset: '0x444'
     Size: '0x1'
     Type: bool
   - Name: VisibilityCellSize
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x4'
     Type: int
   - Name: VisibilityAggressiveness
-    Offset: '0x454'
+    Offset: '0x44c'
     Size: '0x1'
     Type: byte
   - Name: bForceNoPrecomputedLighting
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x1'
     Type: bool
   - Name: LightmassSettings
-    Offset: '0x45c'
+    Offset: '0x454'
     Size: '0x44'
     Type: Struct LightmassWorldInfoSettings
   - Name: LevelLightingQuality
-    Offset: '0x4a0'
+    Offset: '0x498'
     Size: '0x1'
     Type: byte
   - Name: DefaultReverbSettings
-    Offset: '0x4a8'
+    Offset: '0x4a0'
     Size: '0x18'
     Type: Struct ReverbSettings
   - Name: DefaultAmbientZoneSettings
-    Offset: '0x4c0'
+    Offset: '0x4b8'
     Size: '0x24'
     Type: Struct InteriorSettings
   - Name: DefaultBaseSoundMix
-    Offset: '0x4e8'
+    Offset: '0x4e0'
     Size: '0x8'
     Type: Class SoundMix*
   - Name: WorldToMeters
-    Offset: '0x4f0'
+    Offset: '0x4e8'
     Size: '0x4'
     Type: float
   - Name: BookMarks
-    Offset: '0x4f8'
+    Offset: '0x4f0'
     Size: '0x8'
     Type: Class BookMark*
   - Name: TimeDilation
-    Offset: '0x548'
+    Offset: '0x540'
     Size: '0x4'
     Type: float
   - Name: MatineeTimeDilation
-    Offset: '0x54c'
+    Offset: '0x544'
     Size: '0x4'
     Type: float
   - Name: DemoPlayTimeDilation
-    Offset: '0x550'
+    Offset: '0x548'
     Size: '0x4'
     Type: float
   - Name: bHighPriorityLoading
-    Offset: '0x554'
+    Offset: '0x54c'
     Size: '0x1'
     Type: bool
   - Name: bHighPriorityLoadingLocal
-    Offset: '0x554'
+    Offset: '0x54c'
     Size: '0x1'
     Type: bool
   - Name: ReplicationViewers
-    Offset: '0x558'
+    Offset: '0x550'
     Size: '0x10'
     Type: TArray<Struct NetViewer>
   - Name: AssetUserData
-    Offset: '0x568'
+    Offset: '0x560'
     Size: '0x10'
     Type: TArray<class AssetUserData*>
   - Name: WorldGravityZ
-    Offset: '0x578'
+    Offset: '0x570'
     Size: '0x4'
     Type: float
   - Name: Pauser
-    Offset: '0x580'
+    Offset: '0x578'
     Size: '0x8'
     Type: Class PlayerState*
   ClassSize: '0x1b8'
-  FullSize: '0x588'
-  InheritedSize: '0x3d0'
+  FullSize: '0x580'
+  InheritedSize: '0x3c8'
   Super: Info

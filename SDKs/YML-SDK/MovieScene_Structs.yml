@@ -338,27 +338,31 @@ MovieSceneSequenceTransform:
   ClassSize: '0x8'
 MovieSceneSpawnable:
   Attributes:
-  - Name: Guid
+  - Name: IsCameraDockable
     Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: Guid
+    Offset: '0x4'
     Size: '0x10'
     Type: Struct Guid
   - Name: Name
-    Offset: '0x10'
+    Offset: '0x18'
     Size: '0x10'
     Type: Struct FString
   - Name: ObjectTemplate
-    Offset: '0x20'
+    Offset: '0x28'
     Size: '0x8'
     Type: Class Object*
   - Name: ChildPossessables
-    Offset: '0x28'
+    Offset: '0x30'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: Ownership
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x40'
+  ClassSize: '0x48'
 MovieSceneSubSequenceData:
   Attributes:
   - Name: Sequence

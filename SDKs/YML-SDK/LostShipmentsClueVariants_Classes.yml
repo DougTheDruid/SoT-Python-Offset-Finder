@@ -127,28 +127,28 @@ AbandonedNoteClueTextSourceInterface:
 AbandonedNoteWieldable:
   Attributes:
   - Name: WieldableItemCanvasRenderingComponent
-    Offset: '0x7a0'
+    Offset: '0x790'
     Size: '0x8'
     Type: Class WieldableItemCanvasRenderingComponent*
   - Name: AbandonedNoteRenderingComponent
-    Offset: '0x7a8'
+    Offset: '0x798'
     Size: '0x8'
     Type: Class AbandonedNoteWieldableRenderingComponent*
   - Name: InventoryItemComponent
-    Offset: '0x7b0'
+    Offset: '0x7a0'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   - Name: UsableWieldableComponent
-    Offset: '0x7b8'
+    Offset: '0x7a8'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   - Name: QuestMapIcon
-    Offset: '0x7c0'
+    Offset: '0x7b0'
     Size: '0x1'
     Type: byte
   ClassSize: '0x40'
-  FullSize: '0x7d0'
-  InheritedSize: '0x790'
+  FullSize: '0x7c0'
+  InheritedSize: '0x780'
   Super: SkeletalMeshWieldableItem
 AbandonedNoteWieldableRenderingComponent:
   Attributes:
@@ -301,12 +301,12 @@ ClueDestinationContainerInterface:
 ClueSiteCircleMapWieldable:
   Attributes:
   - Name: MapRadialIconData
-    Offset: '0x860'
+    Offset: '0x850'
     Size: '0x18'
     Type: Struct MapRadialIconData
   ClassSize: '0x40'
-  FullSize: '0x880'
-  InheritedSize: '0x840'
+  FullSize: '0x870'
+  InheritedSize: '0x830'
   Super: RenderToTextureMapBase
 ClueTitleInterface:
   Attributes: []

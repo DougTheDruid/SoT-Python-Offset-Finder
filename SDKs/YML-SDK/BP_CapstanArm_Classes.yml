@@ -3,14 +3,14 @@
 BP_CapstanArm_C:
   Attributes:
   - Name: Interactable
-    Offset: '0x558'
+    Offset: '0x550'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: LookAtPos
-    Offset: '0x560'
+    Offset: '0x558'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x10'
-  FullSize: '0x568'
-  InheritedSize: '0x558'
+  FullSize: '0x560'
+  InheritedSize: '0x550'
   Super: CapstanArm

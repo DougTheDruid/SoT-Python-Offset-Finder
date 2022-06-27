@@ -3,26 +3,26 @@
 BP_LegendaryTavern_C:
   Attributes:
   - Name: EmissaryMaxRankQuestProvider
-    Offset: '0x720'
+    Offset: '0x738'
     Size: '0x8'
     Type: Class EmissaryMaxRankQuestProvider*
   - Name: SolidHits
-    Offset: '0x728'
+    Offset: '0x740'
     Size: '0x8'
     Type: Class CapsuleComponent*
   - Name: StaticMesh
-    Offset: '0x730'
+    Offset: '0x748'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: NPCDialog
-    Offset: '0x738'
+    Offset: '0x750'
     Size: '0x8'
     Type: Class NPCDialogComponent*
   - Name: AnimNotifyWwiseEmitter
-    Offset: '0x740'
+    Offset: '0x758'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   ClassSize: '0x28'
-  FullSize: '0x748'
-  InheritedSize: '0x720'
+  FullSize: '0x760'
+  InheritedSize: '0x738'
   Super: TavernStrangerNPC

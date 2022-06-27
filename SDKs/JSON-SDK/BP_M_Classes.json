@@ -1,27 +1,27 @@
 {
   "BP_MediumShipStorageBarrel_Grog_C": {
     "Super": "InteractableBase",
-    "FullSize": "0x410",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f0",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "TankardRefiller",
         "Type": "Class TankardRefillerComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       }
     ]
   },

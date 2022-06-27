@@ -10,9 +10,13 @@ namespace DougsSDKDumper
 class BP_PulleyMechanism_C: public PulleyMechanism
 {
 public:
-	Struct Vector                                                None;                                              // 0x660(0xc)
-	byte                                                         None;                                              // 0x66c(0x1)
-	struct FName                                                 None;                                              // 0x670(0x8)
+	Struct Vector                                                None;                                              // 0x658(0xc)
+	byte                                                         None;                                              // 0x664(0x1)
+	int                                                          CallFunc_WwiseEmitterComponentPostEvent_ReturnValue2; // 0x58(0x4)
+	int                                                          CallFunc_WwiseEmitterComponentPostEvent_ReturnValue3; // 0x5c(0x4)
+	int                                                          CallFunc_WwiseEmitterComponentPostEvent_ReturnValue4; // 0x60(0x4)
+	float                                                        CallFunc_Add_FloatFloat_ReturnValue;               // 0x64(0x4)
+	Struct LinearColor                                           K2Node_MakeStruct_LinearColor;                     // 0x68(0x10)
 };
 
 

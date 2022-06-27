@@ -3,70 +3,70 @@
 BP_Mast_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x990'
+    Offset: '0x988'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: MastTopComponent
-    Offset: '0x998'
+    Offset: '0x990'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: TopgallantActor
-    Offset: '0x9a0'
+    Offset: '0x998'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: MainsailActor
-    Offset: '0x9a8'
+    Offset: '0x9a0'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: TopsailActor
-    Offset: '0x9b0'
+    Offset: '0x9a8'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: Main Yard
-    Offset: '0x9b8'
+    Offset: '0x9b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Topgallant Yard
-    Offset: '0x9c0'
+    Offset: '0x9b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Top Yard
-    Offset: '0x9c8'
+    Offset: '0x9c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: MastBaseComponent
-    Offset: '0x9d0'
+    Offset: '0x9c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Sail Parameters
-    Offset: '0x9d8'
+    Offset: '0x9d0'
     Size: '0x10'
     Type: TArray<Struct None>
   - Name: Yards
-    Offset: '0x9e8'
+    Offset: '0x9e0'
     Size: '0x10'
     Type: TArray<class Yards*>
   - Name: Sails
-    Offset: '0x9f8'
+    Offset: '0x9f0'
     Size: '0x10'
     Type: TArray<class Sails*>
   - Name: Sail Material
-    Offset: '0xa08'
+    Offset: '0xa00'
     Size: '0x8'
     Type: Class MaterialInstance*
   - Name: SailActors
-    Offset: '0xa10'
+    Offset: '0xa08'
     Size: '0x10'
     Type: TArray<class SailActors*>
   - Name: DamageDecalRight
-    Offset: '0xa20'
+    Offset: '0xa18'
     Size: '0x8'
     Type: Class DecalComponent*
   - Name: DamageDecalLeft
-    Offset: '0xa28'
+    Offset: '0xa20'
     Size: '0x8'
     Type: Class DecalComponent*
   ClassSize: '0xa0'
-  FullSize: '0xa30'
-  InheritedSize: '0x990'
+  FullSize: '0xa28'
+  InheritedSize: '0x988'
   Super: Mast

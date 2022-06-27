@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class BP_SirenTrident_Wieldable_C: public DoubleActionItemWithAmmo
 {
 public:
-	Class AimSensitivityComponent*                               AimSensitivity;                                    // 0x970(0x8)
-	Class AmmoEffectsComponent*                                  AmmoEffects;                                       // 0x978(0x8)
-	Class StaticStashedMeshMemoryConstraintComponent*            StaticStashedMeshMemoryConstraint;                 // 0x980(0x8)
-	Class AmmoTransferComponent*                                 AmmoTransfer;                                      // 0x988(0x8)
-	Class ItemActionComponent*                                   AimDownSightAction;                                // 0x990(0x8)
-	Class SirenTridentShotActionComponent*                       SirenTridentShotAction;                            // 0x998(0x8)
-	Class LaunchableAttachPointComponent*                        LaunchableAttachPoint;                             // 0x9a0(0x8)
-	Class PostProcessComponent*                                  PostProcess;                                       // 0x9a8(0x8)
+	Class AimSensitivityComponent*                               AimSensitivity;                                    // 0x960(0x8)
+	Class AmmoEffectsComponent*                                  AmmoEffects;                                       // 0x968(0x8)
+	Class StaticStashedMeshMemoryConstraintComponent*            StaticStashedMeshMemoryConstraint;                 // 0x970(0x8)
+	Class AmmoTransferComponent*                                 AmmoTransfer;                                      // 0x978(0x8)
+	Class ItemActionComponent*                                   AimDownSightAction;                                // 0x980(0x8)
+	Class SirenTridentShotActionComponent*                       SirenTridentShotAction;                            // 0x988(0x8)
+	Class LaunchableAttachPointComponent*                        LaunchableAttachPoint;                             // 0x990(0x8)
+	Class PostProcessComponent*                                  PostProcess;                                       // 0x998(0x8)
 };
 
 

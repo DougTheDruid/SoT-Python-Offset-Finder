@@ -75,8 +75,8 @@ AbilitySystemComponent:
 AbilitySystemDebugHUD:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x4c8'
-  InheritedSize: '0x4c8'
+  FullSize: '0x4c0'
+  InheritedSize: '0x4c0'
   Super: HUD
 AbilitySystemGlobals:
   Attributes:
@@ -255,12 +255,12 @@ AbilitySystemTestAttributeSet:
 AbilitySystemTestPawn:
   Attributes:
   - Name: AbilitySystemComponent
-    Offset: '0x488'
+    Offset: '0x480'
     Size: '0x8'
     Type: Class AbilitySystemComponent*
   ClassSize: '0x20'
-  FullSize: '0x490'
-  InheritedSize: '0x470'
+  FullSize: '0x488'
+  InheritedSize: '0x468'
   Super: DefaultPawn
 AbilityTask:
   Attributes: []
@@ -607,158 +607,158 @@ GameplayAbilitySet:
 GameplayAbilityTargetActor:
   Attributes:
   - Name: ShouldProduceTargetDataOnServer
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x1'
     Type: bool
   - Name: StartLocation
-    Offset: '0x3e0'
+    Offset: '0x3d0'
     Size: '0x70'
     Type: Struct GameplayAbilityTargetingLocationInfo
   - Name: MasterPC
-    Offset: '0x480'
+    Offset: '0x470'
     Size: '0x8'
     Type: Class PlayerController*
   - Name: OwningAbility
-    Offset: '0x488'
+    Offset: '0x478'
     Size: '0x8'
     Type: Class GameplayAbility*
   - Name: bDestroyOnConfirmation
-    Offset: '0x490'
+    Offset: '0x480'
     Size: '0x1'
     Type: bool
   - Name: SourceActor
-    Offset: '0x498'
+    Offset: '0x488'
     Size: '0x8'
     Type: Class Actor*
   - Name: ReticleParams
-    Offset: '0x4a0'
+    Offset: '0x490'
     Size: '0xc'
     Type: Struct WorldReticleParameters
   - Name: ReticleClass
-    Offset: '0x4b0'
+    Offset: '0x4a0'
     Size: '0x8'
     Type: class
   - Name: Filter
-    Offset: '0x4b8'
+    Offset: '0x4a8'
     Size: '0x18'
     Type: Struct GameplayTargetDataFilterHandle
   - Name: bDebug
-    Offset: '0x4d0'
+    Offset: '0x4c0'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x120'
-  FullSize: '0x4f0'
-  InheritedSize: '0x3d0'
+  ClassSize: '0x118'
+  FullSize: '0x4e0'
+  InheritedSize: '0x3c8'
   Super: Actor
 GameplayAbilityTargetActor_ActorPlacement:
   Attributes:
   - Name: PlacedActorClass
-    Offset: '0x520'
+    Offset: '0x510'
     Size: '0x8'
     Type: class
   - Name: PlacedActorMaterial
-    Offset: '0x528'
+    Offset: '0x518'
     Size: '0x8'
     Type: Class MaterialInterface*
   ClassSize: '0x20'
-  FullSize: '0x540'
-  InheritedSize: '0x520'
+  FullSize: '0x530'
+  InheritedSize: '0x510'
   Super: GameplayAbilityTargetActor_GroundTrace
 GameplayAbilityTargetActor_GroundTrace:
   Attributes:
   - Name: CollisionRadius
-    Offset: '0x500'
+    Offset: '0x4f0'
     Size: '0x4'
     Type: float
   - Name: CollisionHeight
-    Offset: '0x504'
+    Offset: '0x4f4'
     Size: '0x4'
     Type: float
   ClassSize: '0x20'
-  FullSize: '0x520'
-  InheritedSize: '0x500'
+  FullSize: '0x510'
+  InheritedSize: '0x4f0'
   Super: GameplayAbilityTargetActor_Trace
 GameplayAbilityTargetActor_Radius:
   Attributes:
   - Name: Radius
-    Offset: '0x4e8'
+    Offset: '0x4d8'
     Size: '0x4'
     Type: float
   ClassSize: '0x0'
-  FullSize: '0x4f0'
-  InheritedSize: '0x4f0'
+  FullSize: '0x4e0'
+  InheritedSize: '0x4e0'
   Super: GameplayAbilityTargetActor
 GameplayAbilityTargetActor_SingleLineTrace:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x500'
-  InheritedSize: '0x500'
+  FullSize: '0x4f0'
+  InheritedSize: '0x4f0'
   Super: GameplayAbilityTargetActor_Trace
 GameplayAbilityTargetActor_Trace:
   Attributes:
   - Name: MaxRange
-    Offset: '0x4e8'
+    Offset: '0x4d8'
     Size: '0x4'
     Type: float
   - Name: TraceProfile
-    Offset: '0x4ec'
+    Offset: '0x4dc'
     Size: '0x8'
     Type: Struct CollisionProfileName
   - Name: bTraceAffectsAimPitch
-    Offset: '0x4f4'
+    Offset: '0x4e4'
     Size: '0x1'
     Type: bool
   ClassSize: '0x10'
-  FullSize: '0x500'
-  InheritedSize: '0x4f0'
+  FullSize: '0x4f0'
+  InheritedSize: '0x4e0'
   Super: GameplayAbilityTargetActor
 GameplayAbilityWorldReticle:
   Attributes:
   - Name: Parameters
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0xc'
     Type: Struct WorldReticleParameters
   - Name: bFaceOwnerFlat
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x1'
     Type: bool
   - Name: bSnapToTargetedActor
-    Offset: '0x3dd'
+    Offset: '0x3d5'
     Size: '0x1'
     Type: bool
   - Name: bIsTargetValid
-    Offset: '0x3de'
+    Offset: '0x3d6'
     Size: '0x1'
     Type: bool
   - Name: bIsTargetAnActor
-    Offset: '0x3df'
+    Offset: '0x3d7'
     Size: '0x1'
     Type: bool
   - Name: MasterPC
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class PlayerController*
   - Name: TargetingActor
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x20'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3c8'
   Super: Actor
 GameplayAbilityWorldReticle_ActorVisualization:
   Attributes:
   - Name: CollisionComponent
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class CapsuleComponent*
   - Name: VisualizationComponents
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<class VisualizationComponents*>
   ClassSize: '0x18'
-  FullSize: '0x408'
-  InheritedSize: '0x3f0'
+  FullSize: '0x400'
+  InheritedSize: '0x3e8'
   Super: GameplayAbilityWorldReticle
 GameplayAbility_CharacterJump:
   Attributes: []
@@ -831,36 +831,36 @@ GameplayCueManager:
 GameplayCueNotify_Actor:
   Attributes:
   - Name: GameplayCueTag
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Struct GameplayTag
   - Name: GameplayCueName
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: struct FName
   - Name: bAutoDestroyOnRemove
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x1'
     Type: bool
   - Name: AutoDestroyDelay
-    Offset: '0x3e4'
+    Offset: '0x3dc'
     Size: '0x4'
     Type: float
   - Name: IsOverride
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
   - Name: bUniqueInstancePerInstigator
-    Offset: '0x3e9'
+    Offset: '0x3e1'
     Size: '0x1'
     Type: bool
   - Name: bUniqueInstancePerSourceObject
-    Offset: '0x3ea'
+    Offset: '0x3e2'
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3c8'
   Super: Actor
 GameplayCueNotify_HitImpact:
   Attributes:

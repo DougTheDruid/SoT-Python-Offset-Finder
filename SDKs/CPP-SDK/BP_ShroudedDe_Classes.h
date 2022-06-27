@@ -6,10 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x3da8d02d
-class BP_ShroudedDeep_MerrickShip_Rocks_C: public None
+// Size 0x1d8
+class BP_ShroudedDeep_MerrickShip_Rocks_C: public Actor
 {
 public:
+	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x3e0(0x8)
@@ -67,8 +68,7 @@ public:
 	Class StaticMeshComponent*                                   None;                                              // 0x580(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x588(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x590(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x598(0x8)
-	Class SceneComponent*                                        None;                                              // 0x5a0(0x8)
+	Class SceneComponent*                                        None;                                              // 0x598(0x8)
 };
 
 

@@ -17,7 +17,7 @@ public:
 class ContestRowboatsService: public Actor
 {
 public:
-	class                                                        RowboatClass;                                      // 0x3d8(0x8)
+	class                                                        RowboatClass;                                      // 0x3d0(0x8)
 };
 
 

@@ -3,16 +3,16 @@
 BP_CommodityManifestBook_MerchantAlliance_C:
   Attributes:
   - Name: NPCDialog
-    Offset: '0x4e8'
+    Offset: '0x500'
     Size: '0x8'
     Type: Class NPCDialogComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x4f0'
+    Offset: '0x508'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x10'
-  FullSize: '0x4f8'
-  InheritedSize: '0x4e8'
+  FullSize: '0x510'
+  InheritedSize: '0x500'
   Super: ModalInteractionProxy
 BP_Emote_Dice_D10_Desc_C:
   Attributes: []
@@ -53,340 +53,340 @@ BP_Emote_Dice_D8_Desc_C:
 BP_IslandStorageBarrel_Outpost_C:
   Attributes:
   - Name: Replenishable
-    Offset: '0x4c0'
+    Offset: '0x4b8'
     Size: '0x8'
     Type: Class ReplenishableComponent*
   - Name: IslandTelemetrySubject
-    Offset: '0x4c8'
+    Offset: '0x4c0'
     Size: '0x8'
     Type: Class IslandTelemetrySubjectComponent*
   - Name: StorageContainer
-    Offset: '0x4d0'
+    Offset: '0x4c8'
     Size: '0x8'
     Type: Class StorageContainerComponent*
   ClassSize: '0x18'
-  FullSize: '0x4d8'
-  InheritedSize: '0x4c0'
+  FullSize: '0x4d0'
+  InheritedSize: '0x4b8'
   Super: StorageContainer
 BP_PromptActor_EmissaryRank2_AF_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x38'
-  FullSize: '0x440'
-  InheritedSize: '0x408'
+  FullSize: '0x438'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryRank2_GH_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x38'
-  FullSize: '0x440'
-  InheritedSize: '0x408'
+  FullSize: '0x438'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryRank2_MA_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x38'
-  FullSize: '0x440'
-  InheritedSize: '0x408'
+  FullSize: '0x438'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryRank2_OOS_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x38'
-  FullSize: '0x440'
-  InheritedSize: '0x408'
+  FullSize: '0x438'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryRank2_RB_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   ClassSize: '0x38'
-  FullSize: '0x440'
-  InheritedSize: '0x408'
+  FullSize: '0x438'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryRank5_AF_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: InitialDelay
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x4'
     Type: float
   ClassSize: '0x3c'
-  FullSize: '0x444'
-  InheritedSize: '0x408'
+  FullSize: '0x43c'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryRank5_GH_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: InitialDelay
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x4'
     Type: float
   ClassSize: '0x3c'
-  FullSize: '0x444'
-  InheritedSize: '0x408'
+  FullSize: '0x43c'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryRank5_MA_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: InitialDelay
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x4'
     Type: float
   ClassSize: '0x3c'
-  FullSize: '0x444'
-  InheritedSize: '0x408'
+  FullSize: '0x43c'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryRank5_OOS_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: InitialDelay
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x4'
     Type: float
   ClassSize: '0x3c'
-  FullSize: '0x444'
-  InheritedSize: '0x408'
+  FullSize: '0x43c'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_EmissaryRank5_RB_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C*
   - Name: PromptCounterAccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: Company
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: ExpectedLevel
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: int
   - Name: Prompts
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: TArray<Struct PrioritisedPromptWithHandle>
   - Name: InitialDelay
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x4'
     Type: float
   ClassSize: '0x3c'
-  FullSize: '0x444'
-  InheritedSize: '0x408'
+  FullSize: '0x43c'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_fod_ChickenMeatRawBite1_00_a_ItemDesc_C:
   Attributes: []
@@ -397,32 +397,32 @@ BP_fod_ChickenMeatRawBite1_00_a_ItemDesc_C:
 BP_fod_ChickenMeatRaw_00_a_ItemInfo_C:
   Attributes:
   - Name: MaterialManipulationSettings
-    Offset: '0x568'
+    Offset: '0x560'
     Size: '0x8'
     Type: Class MaterialManipulationSettingsComponent*
   - Name: LightweightStatusEffectManager
-    Offset: '0x570'
+    Offset: '0x568'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: Cookable
-    Offset: '0x578'
+    Offset: '0x570'
     Size: '0x8'
     Type: Class CookableComponent*
   ClassSize: '0x18'
-  FullSize: '0x580'
-  InheritedSize: '0x568'
+  FullSize: '0x578'
+  InheritedSize: '0x560'
   Super: BP_MeatItemInfo_C
 BP_fod_ChickenMeatRaw_00_a_ItemProxy_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x7b8'
-  InheritedSize: '0x7b8'
+  FullSize: '0x7b0'
+  InheritedSize: '0x7b0'
   Super: BP_ProxyIngestible_Retractable_C
 BP_fod_ChickenMeatRaw_00_a_Wieldable_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x858'
-  InheritedSize: '0x858'
+  FullSize: '0x848'
+  InheritedSize: '0x848'
   Super: BP_StaticWieldableIngestible_C
 BP_fod_PineappleFresh_00_a_ItemDesc_C:
   Attributes: []

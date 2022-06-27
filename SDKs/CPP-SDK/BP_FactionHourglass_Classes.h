@@ -6,22 +6,26 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60
+// Size 0x80
 class BP_FactionHourglass_C: public EmissaryVoteInteractionActor
 {
 public:
-	Class EmissaryActiveTableVisualiserComponent*                EmissaryActiveTableVisualiser;                     // 0x5e8(0x8)
-	Class VoteAudioComponent*                                    VoteAudio;                                         // 0x5f0(0x8)
-	Class StaticMeshVoteVisualiserComponent*                     StaticMeshVoteVisualiser;                          // 0x5f8(0x8)
-	Class InlineVotingInteractionComponent*                      InlineVotingInteraction;                           // 0x600(0x8)
-	Class ActionRulesComponent*                                  ActionRules;                                       // 0x608(0x8)
-	Class FactionInteractionVoteComponent*                       FactionInteractionVote;                            // 0x610(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator4;                                    // 0x618(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator3;                                    // 0x620(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator2;                                    // 0x628(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator1;                                    // 0x630(0x8)
-	Class StaticMeshComponent*                                   hourglass;                                         // 0x638(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x640(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator8;                                    // 0x5e0(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator7;                                    // 0x5e8(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator6;                                    // 0x5f0(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator5;                                    // 0x5f8(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator4;                                    // 0x600(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator3;                                    // 0x608(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator2;                                    // 0x610(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator1;                                    // 0x618(0x8)
+	Class StaticMeshComponent*                                   hourglass;                                         // 0x620(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x628(0x8)
+	Class FactionInteractionVoteComponent*                       FactionInteractionVote;                            // 0x630(0x8)
+	Class EmissaryActiveTableVisualiserComponent*                EmissaryActiveTableVisualiser;                     // 0x638(0x8)
+	Class VoteAudioComponent*                                    VoteAudio;                                         // 0x640(0x8)
+	Class StaticMeshVoteVisualiserComponent*                     StaticMeshVoteVisualiser;                          // 0x648(0x8)
+	Class InlineVotingInteractionComponent*                      InlineVotingInteraction;                           // 0x650(0x8)
+	Class ActionRulesComponent*                                  ActionRules;                                       // 0x658(0x8)
 };
 
 

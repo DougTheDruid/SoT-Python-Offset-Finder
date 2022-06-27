@@ -1,9 +1,9 @@
 {
   "BP_Soveriegn_LiftMechanism_C": {
     "Super": "IntentBasedContinuousAnimatedMechanismAction",
-    "FullSize": "0xa58",
+    "FullSize": "0xa70",
     "InheritedSize": "0xa30",
-    "ClassSize": "0x28",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "None",
@@ -13,27 +13,45 @@
       },
       {
         "Name": "None",
-        "Type": "Class BoxComponent*",
+        "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0xa38"
       },
       {
         "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0xa40"
       },
       {
         "Name": "None",
-        "Type": "Class ChildActorComponent*",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa48"
       },
       {
         "Name": "None",
-        "Type": "Class IntentCombinerComponent*",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa50"
+      },
+      {
+        "Name": "None",
+        "Type": "None ClassProperty*",
+        "Size": "0x8",
+        "Offset": "0xa58"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0xa60"
+      },
+      {
+        "Name": "None",
+        "Type": "Class IntentCombinerComponent*",
+        "Size": "0x8",
+        "Offset": "0xa68"
       }
     ]
   },

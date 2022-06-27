@@ -487,100 +487,100 @@
   },
   "InstancedFoliageActor": {
     "Super": "Actor",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x418",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x50",
     "Attributes": []
   },
   "InteractiveFoliageActor": {
     "Super": "StaticMeshActor",
-    "FullSize": "0x440",
-    "InheritedSize": "0x3e0",
+    "FullSize": "0x438",
+    "InheritedSize": "0x3d8",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "CapsuleComponent",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "TouchingActorEntryPosition",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "FoliageVelocity",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x3f4"
+        "Offset": "0x3ec"
       },
       {
         "Name": "FoliageForce",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "FoliagePosition",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x40c"
+        "Offset": "0x404"
       },
       {
         "Name": "FoliageDamageImpulseScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "FoliageTouchImpulseScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x41c"
+        "Offset": "0x414"
       },
       {
         "Name": "FoliageStiffness",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "FoliageStiffnessQuadratic",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x424"
+        "Offset": "0x41c"
       },
       {
         "Name": "FoliageDamping",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "MaxDamageImpulse",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x42c"
+        "Offset": "0x424"
       },
       {
         "Name": "MaxTouchImpulse",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "MaxForce",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x434"
+        "Offset": "0x42c"
       },
       {
         "Name": "Mass",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x438"
+        "Offset": "0x430"
       }
     ]
   },
@@ -593,15 +593,15 @@
   },
   "ProceduralFoliageBlockingVolume": {
     "Super": "Volume",
-    "FullSize": "0x410",
-    "InheritedSize": "0x408",
+    "FullSize": "0x408",
+    "InheritedSize": "0x400",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "ProceduralFoliageVolume",
         "Type": "Class ProceduralFoliageVolume*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       }
     ]
   },
@@ -697,15 +697,15 @@
   },
   "ProceduralFoliageVolume": {
     "Super": "Volume",
-    "FullSize": "0x410",
-    "InheritedSize": "0x408",
+    "FullSize": "0x408",
+    "InheritedSize": "0x400",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "ProceduralComponent",
         "Type": "Class ProceduralFoliageComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       }
     ]
   },

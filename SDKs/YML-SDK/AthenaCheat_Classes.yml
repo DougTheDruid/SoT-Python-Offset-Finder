@@ -26,7 +26,7 @@ AthenaCheatManager:
     Offset: '0xd0'
     Size: '0x4'
     Type: float
-  ClassSize: '0xb8'
-  FullSize: '0x130'
+  ClassSize: '0xc0'
+  FullSize: '0x138'
   InheritedSize: '0x78'
   Super: CheatManager

@@ -6,18 +6,25 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x0
+class BP_LargeShip_QuestTable_ShipPartMMC_C: public BP_LargeShip_QuestTable_C
+{
+public:
+};
+
+
 // Size 0x40
 class BP_LargeShip_QuestTable_C: public VoyageTable
 {
 public:
-	Class ChildActorComponent*                                   CancelAdventure;                                   // 0x770(0x8)
-	Class ChildActorComponent*                                   PlayerBuiredItemsMapBundleInteractionPoint;        // 0x778(0x8)
-	Class ChildActorComponent*                                   CancelTale;                                        // 0x780(0x8)
-	Class ChildActorComponent*                                   CancelVoyage;                                      // 0x788(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot4;                              // 0x790(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot3;                              // 0x798(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot2;                              // 0x7a0(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot1;                              // 0x7a8(0x8)
+	Class ChildActorComponent*                                   CancelAdventure;                                   // 0x7f8(0x8)
+	Class ChildActorComponent*                                   PlayerBuiredItemsMapBundleInteractionPoint;        // 0x800(0x8)
+	Class ChildActorComponent*                                   CancelTale;                                        // 0x808(0x8)
+	Class ChildActorComponent*                                   CancelVoyage;                                      // 0x810(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot4;                              // 0x818(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot3;                              // 0x820(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot2;                              // 0x828(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot1;                              // 0x830(0x8)
 };
 
 

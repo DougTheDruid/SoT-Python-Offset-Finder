@@ -134,8 +134,8 @@ AIBountySpawner:
     Offset: '0x510'
     Size: '0x8'
     Type: Class OverlapTriggerComponent*
-  ClassSize: '0x180'
-  FullSize: '0x5b0'
+  ClassSize: '0x198'
+  FullSize: '0x5c8'
   InheritedSize: '0x430'
   Super: AISpawner
 AIChargeUpInterruptedStatus:
@@ -179,67 +179,67 @@ AICombatEncounterInterface:
 AICreatureCharacter:
   Attributes:
   - Name: DelayBeforeDestroying
-    Offset: '0x628'
+    Offset: '0x638'
     Size: '0x4'
     Type: float
   - Name: TimeBeforeFadingOut
-    Offset: '0x62c'
+    Offset: '0x63c'
     Size: '0x4'
     Type: float
   - Name: PickupTime
-    Offset: '0x630'
+    Offset: '0x640'
     Size: '0x4'
     Type: float
   - Name: TooltipDisplayOffset
-    Offset: '0x634'
+    Offset: '0x644'
     Size: '0xc'
     Type: Struct Vector
   - Name: ActionStateMachineComponent
-    Offset: '0x640'
+    Offset: '0x650'
     Size: '0x8'
     Type: Class ActionStateMachineComponent*
   - Name: ActionStatePriorityTableData
-    Offset: '0x648'
+    Offset: '0x658'
     Size: '0x8'
     Type: Class ActionStatePriorityTableData*
   - Name: ActionStateCreatorDefinition
-    Offset: '0x650'
+    Offset: '0x660'
     Size: '0x8'
     Type: class
   - Name: AIControllerParams
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x8'
     Type: Class AthenaAIControllerParamsDataAsset*
   - Name: InteractableComponent
-    Offset: '0x660'
+    Offset: '0x670'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: WaterHeightProviderComponent
-    Offset: '0x668'
+    Offset: '0x678'
     Size: '0x8'
     Type: Class WaterHeightProviderComponent*
   - Name: AnimNotifyWwiseEmitterComponent
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   - Name: RewindComponent
-    Offset: '0x678'
+    Offset: '0x688'
     Size: '0x8'
     Type: Class RewindComponent*
   - Name: ActionRulesComponent
-    Offset: '0x680'
+    Offset: '0x690'
     Size: '0x8'
     Type: Class ActionRulesComponent*
   - Name: AICreatureCharacterMovementComponent
-    Offset: '0x788'
+    Offset: '0x798'
     Size: '0x8'
     Type: Class AICreatureCharacterMovementComponent*
   - Name: CurrentAIStrategy
-    Offset: '0x790'
+    Offset: '0x7a0'
     Size: '0x8'
     Type: class
-  ClassSize: '0x220'
-  FullSize: '0x800'
+  ClassSize: '0x230'
+  FullSize: '0x810'
   InheritedSize: '0x5e0'
   Super: Character
 AICreatureCharacterMovementComponent:
@@ -350,23 +350,29 @@ AICreatureMovementModifierParamsDataAsset:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
+AIDeathInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 AIDebugSpawnActor:
   Attributes:
   - Name: DebugCostDisplay
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x1'
     Type: Struct AthenaAIDebugCostDisplay
   - Name: SpawnConfigList
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<Struct AIDebugSpawnConfiguration>
   - Name: SpawnedAIList
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class SpawnedAIList*>
   ClassSize: '0x28'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3c8'
   Super: Actor
 AIDebugVisualisationComponent:
   Attributes:
@@ -403,24 +409,24 @@ AIDialogueStateProviderInterface:
 AIDiorama:
   Attributes:
   - Name: SceneComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: SpawnedDialogueCoordinator
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneDialogueCoordinator*
   - Name: DialogueData
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneDialogueData*
   - Name: LinkedActors
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<Struct AIDioramaPawn>
   ClassSize: '0x228'
-  FullSize: '0x5f8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x5f0'
+  InheritedSize: '0x3c8'
   Super: Actor
 AIDioramaCategory:
   Attributes: []
@@ -531,8 +537,8 @@ AIDioramaLocationSourceInterface:
 AIDioramaService:
   Attributes: []
   ClassSize: '0x68'
-  FullSize: '0x438'
-  InheritedSize: '0x3d0'
+  FullSize: '0x430'
+  InheritedSize: '0x3c8'
   Super: Actor
 AIDioramaServiceInterface:
   Attributes: []
@@ -599,12 +605,12 @@ AIEncounterGenerationRecipeTypeList:
 AIEncounterGenerationService:
   Attributes:
   - Name: GenerationRecipes
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class AIEncounterGenerationRecipeTypeList*
   ClassSize: '0x88'
-  FullSize: '0x458'
-  InheritedSize: '0x3d0'
+  FullSize: '0x450'
+  InheritedSize: '0x3c8'
   Super: Actor
 AIEncounterGenerationServiceInterface:
   Attributes: []
@@ -615,72 +621,72 @@ AIEncounterGenerationServiceInterface:
 AIEncounterService:
   Attributes:
   - Name: DefaultPartsCategories
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<Struct AIPartsCategoryMapping>
   - Name: FormPartsCategories
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<Struct AIPartsCategoryFormMapping>
   - Name: Ammo
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class AIAmmoTypeList*
   - Name: AmmoProgressions
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class AIAmmoProgressionTypeList*
   - Name: Forms
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class AIFormTypeList*
   - Name: FormProgressions
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class AIFormProgressionTypeList*
   - Name: Loadouts
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class AILoadoutTypeList*
   - Name: LoadoutProgressions
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class AILoadoutProgressionTypeList*
   - Name: Skillsets
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class AISkillsetTypeList*
   - Name: SkillsetProgressions
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class AISkillsetProgressionTypeList*
   - Name: ClassIds
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class AIClassIdTypeList*
   - Name: PartsCategories
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class AIPartsCategoryTypeList*
   - Name: TeamColors
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class AIColorVariantPool*
   - Name: AIItemDropSpawners
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class AIItemDropComponentList*
   - Name: AIItemDropSpawnerProgressions
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x8'
     Type: Class AIItemDropComponentRankProgressionList*
   - Name: DebugSpawnableEncounterSettings
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x10'
     Type: TArray<class DebugSpawnableEncounterSettings*>
   ClassSize: '0x3d0'
-  FullSize: '0x7a0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x798'
+  InheritedSize: '0x3c8'
   Super: Actor
 AIEncounterServiceInterface:
   Attributes: []
@@ -1079,40 +1085,40 @@ AIManagerBlueprintFunctionLibrary:
 AIManagerService:
   Attributes:
   - Name: LoadedAIPawnClasses
-    Offset: '0x4d8'
+    Offset: '0x4d0'
     Size: '0x10'
     Type: TArray<Class LoadedAIPawnClasses>
   - Name: LoadedAIItemDropComponentClasses
-    Offset: '0x4e8'
+    Offset: '0x4e0'
     Size: '0x10'
     Type: TArray<Class LoadedAIItemDropComponentClasses>
   - Name: AmbientWaterSpawnerManager
-    Offset: '0x500'
+    Offset: '0x4f8'
     Size: '0x8'
     Type: Class AmbientWaterSpawnerManager*
   - Name: PlayerTrackers
-    Offset: '0x838'
+    Offset: '0x800'
     Size: '0x10'
     Type: TArray<class PlayerTrackers*>
   - Name: CustomPlayersTrackerDatas
-    Offset: '0x848'
+    Offset: '0x810'
     Size: '0x10'
     Type: TArray<Struct CustomPlayersAITrackerData>
   - Name: SpawnersPendingShutdown
-    Offset: '0x958'
+    Offset: '0x920'
     Size: '0x10'
     Type: TArray<class SpawnersPendingShutdown*>
   - Name: AITypeList
-    Offset: '0xa10'
+    Offset: '0x9d8'
     Size: '0x8'
     Type: Class AthenaAITypeListDataAsset*
   - Name: AISpawnContextList
-    Offset: '0xa18'
+    Offset: '0x9e0'
     Size: '0x8'
     Type: Class AISpawnContextList*
-  ClassSize: '0x680'
-  FullSize: '0xa50'
-  InheritedSize: '0x3d0'
+  ClassSize: '0x650'
+  FullSize: '0xa18'
+  InheritedSize: '0x3c8'
   Super: Actor
 AIManagerServiceInterface:
   Attributes: []
@@ -1161,8 +1167,8 @@ AINameplateComponent:
 AINoiseFireInstigator:
   Attributes: []
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 AIOnDemandSpawner:
   Attributes: []
@@ -1612,6 +1618,20 @@ AISpawnRequestResultLoggerInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+AISpawnStoryCondition:
+  Attributes:
+  - Name: StoryNames
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: RequiresAllStories
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x30'
+  FullSize: '0x60'
+  InheritedSize: '0x30'
+  Super: AISpawnOverrideCondition
 AISpawnWaveSequence:
   Attributes:
   - Name: Waves
@@ -1741,16 +1761,16 @@ AIStrategyId:
 AITargetActor:
   Attributes:
   - Name: Root
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: Team
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x1'
     Type: byte
   ClassSize: '0x18'
-  FullSize: '0x3e8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3c8'
   Super: Actor
 AITargetInterface:
   Attributes: []
@@ -1761,8 +1781,8 @@ AITargetInterface:
 AITargetService:
   Attributes: []
   ClassSize: '0x18'
-  FullSize: '0x3e8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3c8'
   Super: Actor
 AITargetServiceInterface:
   Attributes: []
@@ -1835,68 +1855,68 @@ AIWithFormInterface:
 AmbientWaterSpawnerManager:
   Attributes:
   - Name: Root
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: AthenaAISettings
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class AthenaAISettings*
   - Name: AISpawnBlockingContextNames
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: SharkPerPlayerSpawnerTemplate
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class AIPerPlayerSpawner*
   - Name: SirenPerPlayerSpawnerTemplate
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class AIPerPlayerSpawner*
   - Name: SirenEncounterRegionRadius
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x4'
     Type: float
   - Name: SirenEncounterShutdownTime
-    Offset: '0x414'
+    Offset: '0x40c'
     Size: '0x4'
     Type: float
   - Name: InitialSirenSpawningWeightedTimeRange
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: UnsuccessfulSirenSpawningWeightedTimeRange
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: SuccessfulSirenSpawningWeightedTimeRange
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: SharkEncounterSpawnBlockingData
-    Offset: '0x4a8'
+    Offset: '0x4a0'
     Size: '0xc'
     Type: Struct ChanceForSharksToBlockSirenEncounterData
   - Name: PerDepthSpawnChances
-    Offset: '0x4b8'
+    Offset: '0x4b0'
     Size: '0x10'
     Type: TArray<Struct PerDepthSpawnChance>
   - Name: SharkPerPlayerSpawner
-    Offset: '0x4c8'
+    Offset: '0x4c0'
     Size: '0x8'
     Type: Class AIPerPlayerSpawner*
   - Name: PlayersInWater
-    Offset: '0x600'
+    Offset: '0x5f8'
     Size: '0x10'
     Type: TArray<Struct PlayerInWaterData>
   - Name: SirenEncounters
-    Offset: '0x610'
+    Offset: '0x608'
     Size: '0x10'
     Type: TArray<Struct SirenEncounterData>
   ClassSize: '0x250'
-  FullSize: '0x620'
-  InheritedSize: '0x3d0'
+  FullSize: '0x618'
+  InheritedSize: '0x3c8'
   Super: Actor
 AmmunitionItemClassProviderInterface:
   Attributes: []
@@ -2151,52 +2171,52 @@ AthenaAIBuffAbilityInterface:
 AthenaAICharacterController:
   Attributes:
   - Name: ItemParamsDataAsset
-    Offset: '0x900'
+    Offset: '0x8f8'
     Size: '0x8'
     Type: Class AthenaAIItemParamsDataAsset*
   - Name: FallbackLoadoutIfAllEngageItemsDropped
-    Offset: '0x908'
+    Offset: '0x900'
     Size: '0x8'
     Type: Class LoadoutAsset*
   - Name: ControlRotationInterpSpeed
-    Offset: '0x910'
+    Offset: '0x908'
     Size: '0x4'
     Type: float
   - Name: ControlRotationUseConstantInterp
-    Offset: '0x914'
+    Offset: '0x90c'
     Size: '0x1'
     Type: bool
   - Name: FaceTargetDisabled
-    Offset: '0x915'
+    Offset: '0x90d'
     Size: '0x1'
     Type: bool
   - Name: MinTurnAngleToPlayTurnAnim
-    Offset: '0x918'
+    Offset: '0x910'
     Size: '0x4'
     Type: float
   - Name: CharacterParamsDataAsset
-    Offset: '0x930'
+    Offset: '0x928'
     Size: '0x8'
     Type: Class AthenaAICharacterControllerParamsDataAsset*
   - Name: SpawnItemDescForItemCategories
-    Offset: '0x9c8'
+    Offset: '0x9c0'
     Size: '0x10'
     Type: TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: AIAbilityParams
-    Offset: '0x9d8'
+    Offset: '0x9d0'
     Size: '0x10'
     Type: TArray<class AIAbilityParams*>
   - Name: NonItemEngageOptions
-    Offset: '0x9e8'
+    Offset: '0x9e0'
     Size: '0x10'
     Type: TArray<Struct AthenaAIEngageEnemyData>
   - Name: DistanceInMToCannonShotHitChanceCurve
-    Offset: '0x9f8'
+    Offset: '0x9f0'
     Size: '0x8'
     Type: Class CurveFloat*
   ClassSize: '0x220'
-  FullSize: '0xb18'
-  InheritedSize: '0x8f8'
+  FullSize: '0xb10'
+  InheritedSize: '0x8f0'
   Super: AthenaAIController
 AthenaAICharacterControllerParamsDataAsset:
   Attributes:
@@ -2425,42 +2445,42 @@ AthenaAICharacterStatsInterface:
 AthenaAIController:
   Attributes:
   - Name: CurrentTargetPerceivedNotVisibleAge
-    Offset: '0x63c'
+    Offset: '0x634'
     Size: '0x4'
     Type: float
   - Name: SightConfig
-    Offset: '0x680'
+    Offset: '0x678'
     Size: '0x8'
     Type: Class AISenseConfig_Sight*
   - Name: HearingConfig
-    Offset: '0x688'
+    Offset: '0x680'
     Size: '0x8'
     Type: Class AISenseConfig_Hearing*
   - Name: DamageSenseConfig
-    Offset: '0x690'
+    Offset: '0x688'
     Size: '0x8'
     Type: Class AISenseConfig_Damage*
   - Name: AIStrategySenseSettingOverrides
-    Offset: '0x6e0'
+    Offset: '0x6d8'
     Size: '0x10'
     Type: TArray<Struct AthenaAIControllerSenseSettingOverride>
   - Name: CurrentNotSeenPerceivedActor
-    Offset: '0x8c8'
+    Offset: '0x8c0'
     Size: '0x8'
     Type: Class Actor*
   - Name: PendingSpawnTriggerActor
-    Offset: '0x8d0'
+    Offset: '0x8c8'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x2e0'
-  FullSize: '0x8f8'
-  InheritedSize: '0x618'
+  FullSize: '0x8f0'
+  InheritedSize: '0x610'
   Super: AthenaAIControllerBase
 AthenaAIControllerBase:
   Attributes: []
   ClassSize: '0x158'
-  FullSize: '0x618'
-  InheritedSize: '0x4c0'
+  FullSize: '0x610'
+  InheritedSize: '0x4b8'
   Super: AIController
 AthenaAIControllerNavMeshTogglesInterface:
   Attributes: []
@@ -2901,78 +2921,78 @@ AthenaAIWeightedRangesDataProvider:
 AthenaFaunaAIController:
   Attributes:
   - Name: MaxTimeBetweenThreatDetermination
-    Offset: '0x8f8'
+    Offset: '0x8f0'
     Size: '0x4'
     Type: float
   - Name: DefaultControlRotationInterpSpeed
-    Offset: '0x8fc'
+    Offset: '0x8f4'
     Size: '0x4'
     Type: float
   - Name: StrategyControllerMovementMods
-    Offset: '0x900'
+    Offset: '0x8f8'
     Size: '0x10'
     Type: TArray<Struct AIStategyControllerMovementMod>
   - Name: MinAgentHalfHeightPctOverride
-    Offset: '0x910'
+    Offset: '0x908'
     Size: '0x4'
     Type: float
   - Name: FaunaDataAsset
-    Offset: '0x918'
+    Offset: '0x910'
     Size: '0x8'
     Type: Class FaunaAIContollerParamsDataAsset*
   - Name: CarrierActor
-    Offset: '0x920'
+    Offset: '0x918'
     Size: '0x8'
     Type: Class Actor*
   - Name: HighestDangerActor
-    Offset: '0x9d0'
+    Offset: '0x9c8'
     Size: '0x8'
     Type: Class Actor*
   - Name: PlayerTracker
-    Offset: '0xa60'
+    Offset: '0xa58'
     Size: '0x8'
     Type: Class FaunaAIPlayerTracker*
   ClassSize: '0x198'
-  FullSize: '0xa90'
-  InheritedSize: '0x8f8'
+  FullSize: '0xa88'
+  InheritedSize: '0x8f0'
   Super: AthenaAIController
 AthenaSwimmingAIController:
   Attributes:
   - Name: SwimmingPathFollowingComponent
-    Offset: '0x8f8'
+    Offset: '0x8f0'
     Size: '0x8'
     Type: Class SwimmingPathFollowingComponent*
   - Name: IgnoreTargetsOutOfWater
-    Offset: '0x900'
+    Offset: '0x8f8'
     Size: '0x1'
     Type: bool
   - Name: DistOfAttackerVsChanceToPursue
-    Offset: '0x908'
+    Offset: '0x900'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: TimersToZeroIfStartingRevengeAttack
-    Offset: '0x910'
+    Offset: '0x908'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: DespawnRequiredBlackboardKey
-    Offset: '0x920'
+    Offset: '0x918'
     Size: '0x8'
     Type: struct FName
   - Name: DespawnRequiredReasonBlackboardKey
-    Offset: '0x928'
+    Offset: '0x920'
     Size: '0x8'
     Type: struct FName
   - Name: PathingFailedWeight
-    Offset: '0x930'
+    Offset: '0x928'
     Size: '0x4'
     Type: float
   - Name: PathingFailedThresholdToDespawn
-    Offset: '0x934'
+    Offset: '0x92c'
     Size: '0x4'
     Type: float
   ClassSize: '0xe0'
-  FullSize: '0x9d8'
-  InheritedSize: '0x8f8'
+  FullSize: '0x9d0'
+  InheritedSize: '0x8f0'
   Super: AthenaAIController
 BTDecorator_ActionState:
   Attributes:
@@ -4683,30 +4703,30 @@ BurrowComponent:
 BurrowCrack:
   Attributes:
   - Name: DefaultSceneComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: DecalComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class DecalComponent*
   - Name: FadeOutTimeSeconds
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x4'
     Type: float
   - Name: HasFadeStarted
-    Offset: '0x3e4'
+    Offset: '0x3dc'
     Size: '0x1'
     Type: bool
   ClassSize: '0x40'
-  FullSize: '0x410'
-  InheritedSize: '0x3d0'
+  FullSize: '0x408'
+  InheritedSize: '0x3c8'
   Super: Actor
 BurrowEruptBase:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 BurrowHealAIAbility:
   Attributes: []
@@ -4889,12 +4909,12 @@ CustomizableAIManagerInterface:
 DebugAIManagerService:
   Attributes:
   - Name: BlockedAIAbilities
-    Offset: '0xb40'
+    Offset: '0xb08'
     Size: '0x10'
     Type: TArray<Class BlockedAIAbilities>
   ClassSize: '0x100'
-  FullSize: '0xb50'
-  InheritedSize: '0xa50'
+  FullSize: '0xb18'
+  InheritedSize: '0xa18'
   Super: AIManagerService
 DebugAIManagerServiceInterface:
   Attributes: []
@@ -4905,46 +4925,46 @@ DebugAIManagerServiceInterface:
 DebugAISpawnerCreator:
   Attributes:
   - Name: SpawnerTemplate
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class AISpawner*
   - Name: TriggerRadius
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x4'
     Type: float
   - Name: Spawner
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class AISpawner*
   - Name: ProximityPlayerTracker
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class AIProximityPlayerTracker*
   - Name: Region
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class SimpleAIRegion*
   ClassSize: '0x58'
-  FullSize: '0x428'
-  InheritedSize: '0x3d0'
+  FullSize: '0x420'
+  InheritedSize: '0x3c8'
   Super: Actor
 DebugDioramaCreator:
   Attributes:
   - Name: AIDioramaDesc
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class AIDioramaDesc*
   - Name: Location
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class AIDioramaLocationSourceComponent*
   - Name: AIDioramaController
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class AIDioramaController*
   ClassSize: '0x18'
-  FullSize: '0x440'
-  InheritedSize: '0x428'
+  FullSize: '0x438'
+  InheritedSize: '0x420'
   Super: DebugAISpawnerCreator
 ElectricShieldAbility:
   Attributes:
@@ -5290,6 +5310,12 @@ EnvQueryGenerator_WaterMultiDeckerRing:
   FullSize: '0x108'
   InheritedSize: '0x90'
   Super: EnvQueryGenerator_ProjectedPoints
+EnvQueryProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 EnvQueryTest_HasLineOfSight:
   Attributes:
   - Name: TraceDirection
@@ -5353,276 +5379,276 @@ EnvQueryTest_WaterHeight:
 Fauna:
   Attributes:
   - Name: DisplayName
-    Offset: '0x808'
+    Offset: '0x818'
     Size: '0x38'
     Type: Struct FText
   - Name: FaunaSpecies
-    Offset: '0x840'
+    Offset: '0x850'
     Size: '0x8'
     Type: class
   - Name: FaunaBreed
-    Offset: '0x848'
+    Offset: '0x858'
     Size: '0x8'
     Type: class
   - Name: HeadOffset
-    Offset: '0x850'
+    Offset: '0x860'
     Size: '0xc'
     Type: Struct Vector
   - Name: MountedScale
-    Offset: '0x85c'
+    Offset: '0x86c'
     Size: '0xc'
     Type: Struct Vector
   - Name: NearToSurfaceDistance
-    Offset: '0x868'
-    Size: '0x4'
-    Type: float
-  - Name: StartDrowningTimePercentage
-    Offset: '0x86c'
-    Size: '0x4'
-    Type: float
-  - Name: DrowningDeathTimeMin
-    Offset: '0x870'
-    Size: '0x4'
-    Type: float
-  - Name: DrowningDeathTimeMax
-    Offset: '0x874'
-    Size: '0x4'
-    Type: float
-  - Name: PercentageStarvedToChangeAnimation
     Offset: '0x878'
     Size: '0x4'
     Type: float
-  - Name: FadeOutTime
+  - Name: StartDrowningTimePercentage
     Offset: '0x87c'
     Size: '0x4'
     Type: float
-  - Name: HitImpactParticleSystem
+  - Name: DrowningDeathTimeMin
     Offset: '0x880'
-    Size: '0x8'
-    Type: Class Object*
-  - Name: DeathParticleSystem
+    Size: '0x4'
+    Type: float
+  - Name: DrowningDeathTimeMax
+    Offset: '0x884'
+    Size: '0x4'
+    Type: float
+  - Name: PercentageStarvedToChangeAnimation
     Offset: '0x888'
-    Size: '0x8'
-    Type: Class Object*
-  - Name: PutInCrateParticleSystem
+    Size: '0x4'
+    Type: float
+  - Name: FadeOutTime
+    Offset: '0x88c'
+    Size: '0x4'
+    Type: float
+  - Name: HitImpactParticleSystem
     Offset: '0x890'
     Size: '0x8'
     Type: Class Object*
-  - Name: PutInCrateSoundCue
+  - Name: DeathParticleSystem
     Offset: '0x898'
     Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: TookDamageSoundCue
+    Type: Class Object*
+  - Name: PutInCrateParticleSystem
     Offset: '0x8a0'
     Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: AgitationStartedSoundCue
+    Type: Class Object*
+  - Name: PutInCrateSoundCue
     Offset: '0x8a8'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: AgitationStoppedSoundCue
+  - Name: TookDamageSoundCue
     Offset: '0x8b0'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: CalmStartedSoundCue
+  - Name: AgitationStartedSoundCue
     Offset: '0x8b8'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: CalmStoppedSoundCue
+  - Name: AgitationStoppedSoundCue
     Offset: '0x8c0'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: BreathBubblesParticleSystem
+  - Name: CalmStartedSoundCue
     Offset: '0x8c8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: CalmStoppedSoundCue
+    Offset: '0x8d0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: BreathBubblesParticleSystem
+    Offset: '0x8d8'
     Size: '0x8'
     Type: Class Object*
   - Name: BreathBubblesSocketName
-    Offset: '0x8d0'
+    Offset: '0x8e0'
     Size: '0x8'
     Type: struct FName
   - Name: UnderwaterRTPCName
-    Offset: '0x8d8'
+    Offset: '0x8e8'
     Size: '0x8'
     Type: struct FName
   - Name: OnFeedingForceFeedbackEffect
-    Offset: '0x8e0'
+    Offset: '0x8f0'
     Size: '0x8'
     Type: Class ForceFeedbackEffect*
   - Name: MountableComponent
-    Offset: '0x8e8'
+    Offset: '0x8f8'
     Size: '0x8'
     Type: Class MountableComponent*
   - Name: HealthComponent
-    Offset: '0x8f0'
+    Offset: '0x900'
     Size: '0x8'
     Type: Class HealthComponent*
   - Name: DamageableComponent
-    Offset: '0x8f8'
+    Offset: '0x908'
     Size: '0x8'
     Type: Class DamageableComponent*
   - Name: AttackHitVolume
-    Offset: '0x900'
+    Offset: '0x910'
     Size: '0x8'
     Type: Class PrimitiveComponent*
   - Name: Animations
-    Offset: '0x908'
+    Offset: '0x918'
     Size: '0x8'
     Type: Class FaunaAnimationData*
   - Name: DitherComponent
-    Offset: '0x910'
+    Offset: '0x920'
     Size: '0x8'
     Type: Class DitherComponent*
   - Name: StatusEffectManagerComponent
-    Offset: '0x918'
+    Offset: '0x928'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: AIControllerParamsWhenInCrate
-    Offset: '0x920'
+    Offset: '0x930'
     Size: '0x8'
     Type: Class AthenaAIControllerParamsDataAsset*
   - Name: PeriodicAINoiseEventComponent
-    Offset: '0x928'
+    Offset: '0x938'
     Size: '0x8'
     Type: Class PeriodicAINoiseEventComponent*
   - Name: AgitationResponseChance
-    Offset: '0x950'
+    Offset: '0x960'
     Size: '0x4'
     Type: int
   - Name: AgitationResponseTestFrequencyMin
-    Offset: '0x954'
+    Offset: '0x964'
     Size: '0x4'
     Type: int
   - Name: AgitationResponseTestFrequencyMax
-    Offset: '0x958'
+    Offset: '0x968'
     Size: '0x4'
     Type: int
   - Name: MaxNumFailedAgitationResponseTests
-    Offset: '0x95c'
+    Offset: '0x96c'
     Size: '0x4'
     Type: int
   - Name: AgitationResponseVFXDelay
-    Offset: '0x960'
-    Size: '0x4'
-    Type: float
-  - Name: AgitationResponseRange
-    Offset: '0x964'
-    Size: '0x4'
-    Type: float
-  - Name: AgitationResponseParticleSystem
-    Offset: '0x968'
-    Size: '0x8'
-    Type: Class Object*
-  - Name: AgitationResponseRangeParticleSystemAngle
     Offset: '0x970'
     Size: '0x4'
     Type: float
-  - Name: AgitationCollisionChannel
+  - Name: AgitationResponseRange
     Offset: '0x974'
-    Size: '0x1'
-    Type: byte
-  - Name: StopMovementWhenAgitated
-    Offset: '0x975'
-    Size: '0x1'
-    Type: bool
-  - Name: ApproximateSpitTravelTime
-    Offset: '0x978'
     Size: '0x4'
     Type: float
-  - Name: StopMovementWhenCalm
-    Offset: '0x97c'
-    Size: '0x1'
-    Type: bool
-  - Name: TurningSpringAcceleration
+  - Name: AgitationResponseParticleSystem
+    Offset: '0x978'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: AgitationResponseRangeParticleSystemAngle
     Offset: '0x980'
     Size: '0x4'
     Type: float
-  - Name: TurningSpringMaxVelocity
+  - Name: AgitationCollisionChannel
     Offset: '0x984'
-    Size: '0x4'
-    Type: float
-  - Name: TurnResetDelay
+    Size: '0x1'
+    Type: byte
+  - Name: StopMovementWhenAgitated
+    Offset: '0x985'
+    Size: '0x1'
+    Type: bool
+  - Name: ApproximateSpitTravelTime
     Offset: '0x988'
     Size: '0x4'
     Type: float
-  - Name: PivotPointOffset
+  - Name: StopMovementWhenCalm
     Offset: '0x98c'
+    Size: '0x1'
+    Type: bool
+  - Name: TurningSpringAcceleration
+    Offset: '0x990'
+    Size: '0x4'
+    Type: float
+  - Name: TurningSpringMaxVelocity
+    Offset: '0x994'
+    Size: '0x4'
+    Type: float
+  - Name: TurnResetDelay
+    Offset: '0x998'
+    Size: '0x4'
+    Type: float
+  - Name: PivotPointOffset
+    Offset: '0x99c'
     Size: '0xc'
     Type: Struct Vector
   - Name: ShouldTurn
-    Offset: '0x998'
+    Offset: '0x9a8'
     Size: '0x1'
     Type: bool
   - Name: FeedingComponent
-    Offset: '0x9a0'
+    Offset: '0x9b0'
     Size: '0x8'
     Type: Class FeedingComponent*
   - Name: FaunaMovementComponent
-    Offset: '0x9a8'
+    Offset: '0x9b8'
     Size: '0x8'
     Type: Class FaunaMovementComponent*
   - Name: TimeUntilDrowned
-    Offset: '0x9b0'
+    Offset: '0x9c0'
     Size: '0x4'
     Type: float
   - Name: RandomAnimationSeed
-    Offset: '0x9b4'
+    Offset: '0x9c4'
     Size: '0x4'
     Type: int
   - Name: Drowned
-    Offset: '0x9c4'
+    Offset: '0x9d4'
     Size: '0x1'
     Type: bool
   - Name: CratedState
-    Offset: '0x9c7'
+    Offset: '0x9d7'
     Size: '0x1'
     Type: byte
   - Name: InWaterState
-    Offset: '0x9c8'
+    Offset: '0x9d8'
     Size: '0x1'
     Type: byte
   - Name: Crate
-    Offset: '0x9d0'
+    Offset: '0x9e0'
     Size: '0x8'
     Type: Class Actor*
   - Name: BreathBubblesParticleSystemComponent
-    Offset: '0x9d8'
+    Offset: '0x9e8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: DrowningDeathTime
-    Offset: '0x9e0'
+    Offset: '0x9f0'
     Size: '0x4'
     Type: float
   - Name: IsPlayingStarvingAnim
-    Offset: '0x9e4'
+    Offset: '0x9f4'
     Size: '0x1'
     Type: bool
   - Name: IsAgitated
-    Offset: '0x9e5'
+    Offset: '0x9f5'
     Size: '0x1'
     Type: bool
   - Name: IsCalm
-    Offset: '0x9e6'
+    Offset: '0x9f6'
     Size: '0x1'
     Type: bool
   - Name: TargetTurnAngle
-    Offset: '0x9e8'
+    Offset: '0x9f8'
     Size: '0x4'
     Type: float
   - Name: VenomComponent
-    Offset: '0xb18'
+    Offset: '0xb28'
     Size: '0x8'
     Type: Class VenomComponent*
   - Name: PathFollowingComponent
-    Offset: '0xb20'
+    Offset: '0xb30'
     Size: '0x8'
     Type: Class AthenaAICharacterPathFollowingComponent*
   - Name: CurrentShip
-    Offset: '0xb28'
+    Offset: '0xb38'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x3b0'
-  FullSize: '0xbb0'
-  InheritedSize: '0x800'
+  FullSize: '0xbc0'
+  InheritedSize: '0x810'
   Super: AICreatureCharacter
 FaunaAIContollerParamsDataAsset:
   Attributes:
@@ -5893,256 +5919,260 @@ PeriodicAINoiseEventComponent:
 Pet:
   Attributes:
   - Name: WieldableReactMappingsAsset
-    Offset: '0x898'
+    Offset: '0x8a8'
     Size: '0x8'
     Type: Class PetWieldableReactMappingsDataAsset*
   - Name: MaxVelocityForLocomotionAnimation
-    Offset: '0x8a0'
+    Offset: '0x8b0'
     Size: '0x4'
     Type: float
   - Name: CanFly
-    Offset: '0x8a4'
+    Offset: '0x8b4'
     Size: '0x1'
     Type: bool
   - Name: FlyingStrategyProperties
-    Offset: '0x8a8'
+    Offset: '0x8b8'
     Size: '0x10'
     Type: TArray<Struct PetFlyingStrategyProperties>
   - Name: FlyingLandTime
-    Offset: '0x8b8'
-    Size: '0x4'
-    Type: float
-  - Name: FlyingLandCurve
-    Offset: '0x8c0'
-    Size: '0x8'
-    Type: Class CurveFloat*
-  - Name: FlyingTakeOffTime
     Offset: '0x8c8'
     Size: '0x4'
     Type: float
-  - Name: FlyingTakeOffCurve
+  - Name: FlyingLandCurve
     Offset: '0x8d0'
     Size: '0x8'
     Type: Class CurveFloat*
-  - Name: MidFlightAdjustmentTimerRange
+  - Name: FlyingTakeOffTime
     Offset: '0x8d8'
+    Size: '0x4'
+    Type: float
+  - Name: FlyingTakeOffCurve
+    Offset: '0x8e0'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: MidFlightAdjustmentTimerRange
+    Offset: '0x8e8'
     Size: '0x10'
     Type: Struct FloatRange
   - Name: MidFlightAdjustmentCurve
-    Offset: '0x8e8'
+    Offset: '0x8f8'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: MidFlightTimeToDistanceAdjustmentCurve
-    Offset: '0x8f0'
+    Offset: '0x900'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: FiredFromActorCollision
-    Offset: '0x8f8'
+    Offset: '0x908'
     Size: '0x8'
     Type: struct FName
   - Name: FiredFromActorSFX
-    Offset: '0x900'
+    Offset: '0x910'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: DitherComponent
-    Offset: '0x908'
+    Offset: '0x918'
     Size: '0x8'
     Type: Class PetDitherComponent*
   - Name: MinimumDamageForHealthReact
-    Offset: '0x910'
-    Size: '0x4'
-    Type: float
-  - Name: MaxDistForWaterBucketToClean
-    Offset: '0x914'
-    Size: '0x4'
-    Type: float
-  - Name: MinimumDurationUntilPetCanDespawnConcealed
-    Offset: '0x918'
-    Size: '0x4'
-    Type: float
-  - Name: DefaultNamePlateHeight
-    Offset: '0x91c'
-    Size: '0x4'
-    Type: float
-  - Name: AlternateNamePlateHeight
     Offset: '0x920'
     Size: '0x4'
     Type: float
-  - Name: StatesToUseAlternateNamePlatePos
+  - Name: MaxDistForWaterBucketToClean
+    Offset: '0x924'
+    Size: '0x4'
+    Type: float
+  - Name: MinimumDurationUntilPetCanDespawnConcealed
     Offset: '0x928'
+    Size: '0x4'
+    Type: float
+  - Name: DefaultNamePlateHeight
+    Offset: '0x92c'
+    Size: '0x4'
+    Type: float
+  - Name: AlternateNamePlateHeight
+    Offset: '0x930'
+    Size: '0x4'
+    Type: float
+  - Name: StatesToUseAlternateNamePlatePos
+    Offset: '0x938'
     Size: '0x10'
     Type: TArray<Byte StatesToUseAlternateNamePlatePos>
   - Name: PetTimeSpentSad
-    Offset: '0x938'
+    Offset: '0x948'
     Size: '0x10'
     Type: Struct FloatRange
   - Name: DebugStateDescriptor
-    Offset: '0x948'
+    Offset: '0x958'
     Size: '0x1'
     Type: byte
   - Name: AINameplateComponent
-    Offset: '0x950'
+    Offset: '0x960'
     Size: '0x8'
     Type: Class AINameplateComponent*
   - Name: FeedingComponent
-    Offset: '0x958'
+    Offset: '0x968'
     Size: '0x8'
     Type: Class FeedingComponent*
   - Name: StarvingComponent
-    Offset: '0x960'
+    Offset: '0x970'
     Size: '0x8'
     Type: Class StarvingComponent*
   - Name: CleanlinessComponent
-    Offset: '0x968'
+    Offset: '0x978'
     Size: '0x8'
     Type: Class CleanlinessComponent*
   - Name: CannonSquashComponent
-    Offset: '0x970'
+    Offset: '0x980'
     Size: '0x8'
     Type: Class CannonSquashComponent*
   - Name: ReplicatedMovementRequest
-    Offset: '0x978'
+    Offset: '0x988'
     Size: '0xc'
     Type: Struct PetMovementRequest
   - Name: TargetMeshRoll
-    Offset: '0x984'
+    Offset: '0x994'
     Size: '0x4'
     Type: float
   - Name: DefaultShipTurnRateModifier
-    Offset: '0x998'
+    Offset: '0x9a8'
     Size: '0x4'
     Type: float
   - Name: TurnRateModifierList
-    Offset: '0x9a0'
+    Offset: '0x9b0'
     Size: '0x10'
     Type: TArray<Struct PetTurnRateModifier>
   - Name: LocomotingMovementStates
-    Offset: '0x9b0'
+    Offset: '0x9c0'
     Size: '0x10'
     Type: TArray<Byte LocomotingMovementStates>
   - Name: RequestIdleOrMovementValidMovementStates
-    Offset: '0x9c0'
+    Offset: '0x9d0'
     Size: '0x10'
     Type: TArray<Byte RequestIdleOrMovementValidMovementStates>
   - Name: MaxRollAngle
-    Offset: '0x9d0'
+    Offset: '0x9e0'
     Size: '0x4'
     Type: float
   - Name: DelayForDisablingMovementOnIdle
-    Offset: '0x9d4'
+    Offset: '0x9e4'
     Size: '0x4'
     Type: float
   - Name: IslandDustRatePerSecond
-    Offset: '0x9d8'
+    Offset: '0x9e8'
     Size: '0x4'
     Type: float
   - Name: CrewId
-    Offset: '0x9dc'
+    Offset: '0x9ec'
     Size: '0x10'
     Type: Struct Guid
   - Name: InHangout
-    Offset: '0x9ec'
+    Offset: '0x9fc'
     Size: '0x1'
     Type: bool
   - Name: PerchedInHangout
-    Offset: '0x9ed'
+    Offset: '0x9fd'
     Size: '0x1'
     Type: bool
   - Name: ResetRollAndZOffset
-    Offset: '0x9ee'
+    Offset: '0x9fe'
     Size: '0x1'
     Type: bool
   - Name: ShouldIgnoreTooltipDisplayOffset
-    Offset: '0x9ef'
+    Offset: '0x9ff'
     Size: '0x1'
     Type: bool
   - Name: PetTurnToFaceData
-    Offset: '0x9f0'
+    Offset: '0xa00'
     Size: '0x20'
     Type: Struct PetTurnToFaceData
+  - Name: MaximumSubmergedWaterDepthBeforeDespawn
+    Offset: '0xa20'
+    Size: '0x4'
+    Type: float
   - Name: AIPartsRetrievalComponent
-    Offset: '0xa28'
+    Offset: '0xa48'
     Size: '0x8'
     Type: Class AIPartsRetrievalComponent*
   - Name: PetPartCustomisationComponent
-    Offset: '0xa30'
+    Offset: '0xa50'
     Size: '0x8'
     Type: Class PetPartCustomisationComponent*
   - Name: LightWeightStatusEffectManagerComponent
-    Offset: '0xa38'
+    Offset: '0xa58'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: TelemetryComponent
-    Offset: '0xa40'
+    Offset: '0xa60'
     Size: '0x8'
     Type: Class PetTelemetryComponent*
   - Name: SicknessComponent
-    Offset: '0xa48'
+    Offset: '0xa68'
     Size: '0x8'
     Type: Class PetSicknessComponent*
   - Name: WaterExposureComponent
-    Offset: '0xa50'
+    Offset: '0xa70'
     Size: '0x8'
     Type: Class WaterExposureComponent*
   - Name: AnimationDataStoreComponent
-    Offset: '0xa58'
+    Offset: '0xa78'
     Size: '0x8'
     Type: Class AnimationDataStoreComponent*
   - Name: SpawnedForShip
-    Offset: '0xa60'
+    Offset: '0xa80'
     Size: '0x8'
     Type: Class Actor*
   - Name: PetOwner
-    Offset: '0xa68'
+    Offset: '0xa88'
     Size: '0x8'
     Type: Class Actor*
   - Name: PetInfo
-    Offset: '0xa70'
+    Offset: '0xa90'
     Size: '0x8'
     Type: Class ItemInfo*
   - Name: Docker
-    Offset: '0xa80'
+    Offset: '0xaa0'
     Size: '0x50'
     Type: Struct Docker
   - Name: StartPickupObjectActionRuleParams
-    Offset: '0xad0'
+    Offset: '0xaf0'
     Size: '0x10'
     Type: Struct StartPickupObjectActionRuleParams
   - Name: CurrentlyPlayingParticleSystem
-    Offset: '0xaf0'
+    Offset: '0xb10'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: LandingStrategy
-    Offset: '0xaf8'
+    Offset: '0xb18'
     Size: '0x8'
     Type: class
   - Name: PursuitStrategy
-    Offset: '0xb00'
+    Offset: '0xb20'
     Size: '0x8'
     Type: class
   - Name: DefaultRollLerpTime
-    Offset: '0xb08'
+    Offset: '0xb28'
     Size: '0x4'
     Type: float
   - Name: LandingRollLerpTime
-    Offset: '0xb0c'
+    Offset: '0xb2c'
     Size: '0x4'
     Type: float
   - Name: IsBeingDismissed
-    Offset: '0xb10'
+    Offset: '0xb30'
     Size: '0x1'
     Type: bool
   - Name: IsInDisabledPetPerchHangout
-    Offset: '0xbfc'
+    Offset: '0xc1c'
     Size: '0x1'
     Type: bool
   - Name: PetIsSad
-    Offset: '0xbfd'
+    Offset: '0xc1d'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x440'
-  FullSize: '0xc40'
-  InheritedSize: '0x800'
+  ClassSize: '0x450'
+  FullSize: '0xc60'
+  InheritedSize: '0x810'
   Super: AICreatureCharacter
 PetDitherComponent:
   Attributes: []
@@ -6275,36 +6305,36 @@ PostBountyAIPawnSpawnedAction:
 PreviewPet:
   Attributes:
   - Name: InitialAnimState
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: byte
   - Name: InitialPartIdToLoad
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x8'
     Type: Struct AIPartId
   - Name: PreviewPetPartsCategory
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class AIPartsCategory*
   - Name: PreviewPetMesh
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
   - Name: PreviewPetAnimationData
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x10'
     Type: Struct PetAnimationDataPreview
   - Name: AIPartsRetrievalComponent
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class AIPartsRetrievalComponent*
   - Name: PetPartCustomisationComponent
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class PetPartCustomisationComponent*
   ClassSize: '0xe8'
-  FullSize: '0x4b8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x4b0'
+  InheritedSize: '0x3c8'
   Super: Actor
 SimpleAIRegion:
   Attributes: []
@@ -6331,16 +6361,16 @@ SirenEncounterSpawnBlockingBehaviourStrategy:
 SpawnContextProviderZone:
   Attributes:
   - Name: SpawnContextIDs
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: BoundingBox
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class BoxComponent*
   ClassSize: '0x18'
-  FullSize: '0x3e8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3c8'
   Super: Actor
 SpawnItemDescProviderInterface:
   Attributes: []
@@ -6725,56 +6755,56 @@ TeleportAIAbility:
 TinySharkExperience:
   Attributes:
   - Name: RelevancyDistance
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x4'
     Type: float
   - Name: TrackingMovementCheckInterval
-    Offset: '0x3e4'
+    Offset: '0x3dc'
     Size: '0x4'
     Type: float
   - Name: TrackingMovementValidQuery
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class EnvQuery*
   - Name: ShouldBlockMigrationForAllAttackingCrewsFromAnyDistance
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x1'
     Type: bool
   - Name: TinySharkSpawner
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x8'
     Type: Class AIOnDemandSpawner*
   - Name: TinySharkPawn
-    Offset: '0x4a0'
+    Offset: '0x498'
     Size: '0x8'
     Type: Class SharkPawn*
   - Name: HealthRTPC
-    Offset: '0x4a8'
+    Offset: '0x4a0'
     Size: '0x8'
     Type: struct FName
   - Name: Params
-    Offset: '0x4b8'
+    Offset: '0x4b0'
     Size: '0xb8'
     Type: Struct TinySharkParams
   - Name: TinySharkTelemetryComponent
-    Offset: '0x570'
+    Offset: '0x568'
     Size: '0x8'
     Type: Class TinySharkTelemetryComponent*
   - Name: TrackedShip
-    Offset: '0x578'
+    Offset: '0x570'
     Size: '0x8'
     Type: Class Ship*
   - Name: SightingEncounterParams
-    Offset: '0x600'
+    Offset: '0x5f8'
     Size: '0xc'
     Type: Struct EncounterParams
   - Name: CloseEncounterParams
-    Offset: '0x60c'
+    Offset: '0x604'
     Size: '0xc'
     Type: Struct EncounterParams
   ClassSize: '0x418'
-  FullSize: '0x7e8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x7e0'
+  InheritedSize: '0x3c8'
   Super: Actor
 TinySharkParamsDataAsset:
   Attributes:
@@ -6789,20 +6819,20 @@ TinySharkParamsDataAsset:
 TinySharkService:
   Attributes:
   - Name: TinySharkServiceParams
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class TinySharkServiceParamsDataAsset*
   - Name: TinySharkExperiences
-    Offset: '0x558'
+    Offset: '0x550'
     Size: '0x10'
     Type: TArray<class TinySharkExperiences*>
   - Name: ExternallyManagedTinySharkExperiences
-    Offset: '0x568'
+    Offset: '0x560'
     Size: '0x10'
     Type: TArray<class ExternallyManagedTinySharkExperiences*>
   ClassSize: '0x1c8'
-  FullSize: '0x598'
-  InheritedSize: '0x3d0'
+  FullSize: '0x590'
+  InheritedSize: '0x3c8'
   Super: Actor
 TinySharkServiceInterface:
   Attributes: []
@@ -6847,10 +6877,10 @@ VulnerabilityDuringAIStrategyComponent:
 WaterbasedAISupplier:
   Attributes:
   - Name: Spawners
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class AISpawnerList*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor

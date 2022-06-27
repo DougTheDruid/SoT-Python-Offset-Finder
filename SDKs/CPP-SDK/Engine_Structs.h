@@ -584,18 +584,18 @@ public:
 };
 
 
+// Size 0x18
+struct UniqueNetIdRepl
+{
+public:
+};
+
+
 // Size 0x8
 struct FeatureFlag
 {
 public:
 	struct FName                                                 FeatureName;                                       // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct UniqueNetIdRepl
-{
-public:
 };
 
 
@@ -1037,7 +1037,7 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x50
 struct MeshMergingSettings
 {
 public:
@@ -1059,6 +1059,8 @@ public:
 	bool                                                         bDuplicateLODs;                                    // 0x1b(0x1)
 	TArray<Float LODScreenSizes>                                 LODScreenSizes;                                    // 0x20(0x10)
 	int                                                          LODForCollision;                                   // 0x30(0x4)
+	TArray<Float LODReductionPercentTriangles>                   LODReductionPercentTriangles;                      // 0x38(0x10)
+	int                                                          MaxNumberOfLODs;                                   // 0x48(0x4)
 };
 
 
@@ -2191,7 +2193,7 @@ public:
 };
 
 
-// Size 0xc0
+// Size 0xd8
 struct HierarchicalSimplification
 {
 public:
@@ -2201,7 +2203,7 @@ public:
 	float                                                        DesiredFillingPercentage;                          // 0xc(0x4)
 	int                                                          MinNumberOfActorsToBuild;                          // 0x10(0x4)
 	Struct MeshProxySettings                                     ProxySetting;                                      // 0x14(0x70)
-	Struct MeshMergingSettings                                   MergeSetting;                                      // 0x88(0x38)
+	Struct MeshMergingSettings                                   MergeSetting;                                      // 0x88(0x50)
 };
 
 
@@ -6309,6 +6311,42 @@ public:
 	Struct CollisionResponseContainer                            OverrideRaycastCollisionResponse;                  // 0x68(0x20)
 	float                                                        DeltaTime;                                         // 0x88(0x4)
 	float                                                        Smoothing;                                         // 0x8c(0x4)
+};
+
+
+// Size 0xd0
+struct AnimNode_HIKRelativePlantAndFloorContact
+{
+public:
+	bool                                                         FeetContact;                                       // 0x48(0x1)
+	bool                                                         HandsContact;                                      // 0x49(0x1)
+	bool                                                         FingersContact;                                    // 0x4a(0x1)
+	bool                                                         ToesContact;                                       // 0x4b(0x1)
+	byte                                                         FeetContactType;                                   // 0x4c(0x1)
+	byte                                                         HandsContactType;                                  // 0x4d(0x1)
+	float                                                        Alpha;                                             // 0x50(0x4)
+	float                                                        Depth;                                             // 0x54(0x4)
+	float                                                        HipsRotationFactor;                                // 0x58(0x4)
+	float                                                        ChestRotationFactor;                               // 0x5c(0x4)
+	float                                                        DistanceUp;                                        // 0x60(0x4)
+	float                                                        DistanceDown;                                      // 0x64(0x4)
+	int                                                          NbRays;                                            // 0x68(0x4)
+	float                                                        FootRadius;                                        // 0x6c(0x4)
+	float                                                        DeltaTime;                                         // 0x70(0x4)
+	float                                                        Smoothing;                                         // 0x74(0x4)
+	Struct CollisionResponseContainer                            OverrideRaycastCollisionResponse;                  // 0x78(0x20)
+	float                                                        FeetHeight;                                        // 0x98(0x4)
+	float                                                        FeetBack;                                          // 0x9c(0x4)
+	float                                                        FeetMiddle;                                        // 0xa0(0x4)
+	float                                                        FeetFront;                                         // 0xa4(0x4)
+	float                                                        FeetInSide;                                        // 0xa8(0x4)
+	float                                                        FeetOutSide;                                       // 0xac(0x4)
+	float                                                        HandsHeight;                                       // 0xb0(0x4)
+	float                                                        HandsBack;                                         // 0xb4(0x4)
+	float                                                        HandsMiddle;                                       // 0xb8(0x4)
+	float                                                        HandsFront;                                        // 0xbc(0x4)
+	float                                                        HandsInSide;                                       // 0xc0(0x4)
+	float                                                        HandsOutSide;                                      // 0xc4(0x4)
 };
 
 

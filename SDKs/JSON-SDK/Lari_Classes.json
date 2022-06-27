@@ -1,16 +1,16 @@
 {
-  "BP_ShroudedDeep_Larinna_Active_C": {
-    "Super": "BP_SoleTrader_C",
-    "FullSize": "0x6a0",
-    "InheritedSize": "0x688",
-    "ClassSize": "0x18",
+  "ShroudedDeep_LarinnaDialogTempEntitlement_C": {
+    "Super": "None",
+    "FullSize": "0x4681400f",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x4681400f",
     "Attributes": []
   },
-  "ShroudedDeep_LarinnaDialogTempEntitlement_C": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
-    "ClassSize": "0x0",
+  "BP_ShroudedDeep_Larinna_Active_C": {
+    "Super": "None",
+    "FullSize": "-0x49800000",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x49800000",
     "Attributes": []
   },
   "DougTheDruid": {

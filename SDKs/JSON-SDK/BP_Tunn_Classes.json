@@ -1,159 +1,159 @@
 {
   "BP_TunnelOfTheDamnedPortalLocator_WSP_C": {
     "Super": "PortalLocatorActor",
-    "FullSize": "0x428",
-    "InheritedSize": "0x408",
+    "FullSize": "0x420",
+    "InheritedSize": "0x400",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "SeaRockBounds",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "SignalAnchor",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "CalmWater",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Visuals",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       }
     ]
   },
   "BP_TunnelOfTheDamnedPortal_WSP_C": {
     "Super": "BP_TunnelOfTheDamnedPortal_Ship_C",
-    "FullSize": "0x658",
-    "InheritedSize": "0x650",
+    "FullSize": "0x650",
+    "InheritedSize": "0x648",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "PortalEffects",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x648"
       }
     ]
   },
   "BP_TunnelOfTheDamnedPortalLocator_WLD_C": {
     "Super": "PortalLocatorActor",
-    "FullSize": "0x428",
-    "InheritedSize": "0x408",
+    "FullSize": "0x420",
+    "InheritedSize": "0x400",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "SeaRockBounds",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "SignalAnchor",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "CalmWater",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Visuals",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       }
     ]
   },
   "BP_TunnelOfTheDamnedPortal_WLD_C": {
     "Super": "BP_TunnelOfTheDamnedPortal_Ship_C",
-    "FullSize": "0x658",
-    "InheritedSize": "0x650",
+    "FullSize": "0x650",
+    "InheritedSize": "0x648",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "PortalEffects",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x648"
       }
     ]
   },
   "BP_TunnelOfTheDamnedPortalLocator_BSP_C": {
     "Super": "PortalLocatorActor",
-    "FullSize": "0x428",
-    "InheritedSize": "0x408",
+    "FullSize": "0x420",
+    "InheritedSize": "0x400",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "SeaRockBounds",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "SignalAnchor",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "CalmWater",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "Visuals",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       }
     ]
   },
   "BP_TunnelOfTheDamnedPortal_BSP_C": {
     "Super": "BP_TunnelOfTheDamnedPortal_Ship_C",
-    "FullSize": "0x658",
-    "InheritedSize": "0x650",
+    "FullSize": "0x650",
+    "InheritedSize": "0x648",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "PortalEffects",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x648"
       }
     ]
   },
   "BP_TunnelOfTheDamnedPortal_Ship_C": {
     "Super": "TunnelOfTheDamnedPortal",
-    "FullSize": "0x650",
-    "InheritedSize": "0x640",
+    "FullSize": "0x648",
+    "InheritedSize": "0x638",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x638"
       },
       {
         "Name": "SynchedMusicZone",
         "Type": "Class SynchedMusicZoneComponent*",
         "Size": "0x8",
-        "Offset": "0x648"
+        "Offset": "0x640"
       }
     ]
   },

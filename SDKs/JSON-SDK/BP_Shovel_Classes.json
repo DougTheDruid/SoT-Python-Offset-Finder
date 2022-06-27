@@ -1,15 +1,15 @@
 {
   "BP_Shovel_C": {
     "Super": "Shovel",
-    "FullSize": "0x858",
-    "InheritedSize": "0x850",
+    "FullSize": "0x848",
+    "InheritedSize": "0x840",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "UsableWieldable",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x850"
+        "Offset": "0x840"
       }
     ]
   },

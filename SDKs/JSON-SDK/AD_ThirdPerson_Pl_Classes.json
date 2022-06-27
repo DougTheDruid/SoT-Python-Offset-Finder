@@ -1,9 +1,9 @@
 {
   "AD_ThirdPerson_PlayerPirate_Male_Default_C": {
     "Super": "AthenaAnimationThirdPersonAnimationData",
-    "FullSize": "0x788",
+    "FullSize": "0x780",
     "InheritedSize": "0x80",
-    "ClassSize": "0x708",
+    "ClassSize": "0x700",
     "Attributes": [
       {
         "Name": "Idles",
@@ -86,108 +86,108 @@
       {
         "Name": "IkFootPlanting",
         "Type": "Struct ADS_IKFootPlantingNative",
-        "Size": "0x28",
+        "Size": "0x1c",
         "Offset": "0x560"
       },
       {
         "Name": "HitReacts",
         "Type": "Struct ADS_HitReactsNative",
         "Size": "0x40",
-        "Offset": "0x588"
+        "Offset": "0x580"
       },
       {
         "Name": "MapTable",
         "Type": "Struct ADS_MapTableNative",
         "Size": "0x30",
-        "Offset": "0x5c8"
+        "Offset": "0x5c0"
       },
       {
         "Name": "Spawning",
         "Type": "Struct ADS_SpawnNative2",
         "Size": "0x10",
-        "Offset": "0x5f8"
+        "Offset": "0x5f0"
       },
       {
         "Name": "CharacterSelect",
         "Type": "Struct ADS_CharacterSelectNative",
         "Size": "0x10",
-        "Offset": "0x608"
+        "Offset": "0x600"
       },
       {
         "Name": "SkeletonFlee",
         "Type": "Struct ADS_SkeletonFleeNative",
         "Size": "0x10",
-        "Offset": "0x618"
+        "Offset": "0x610"
       },
       {
         "Name": "ShopInteraction",
         "Type": "Struct ADS_InteractionNative",
         "Size": "0x10",
-        "Offset": "0x628"
+        "Offset": "0x620"
       },
       {
         "Name": "SkeletonSensing",
         "Type": "Struct ADS_SkeletonSensing",
         "Size": "0x10",
-        "Offset": "0x638"
+        "Offset": "0x630"
       },
       {
         "Name": "SkeletonActionEmotes",
         "Type": "Struct ADS_SkeletonEmoteActions",
         "Size": "0x10",
-        "Offset": "0x648"
+        "Offset": "0x640"
       },
       {
         "Name": "Rowboat",
         "Type": "Struct ADS_RowingBoatNative",
         "Size": "0x98",
-        "Offset": "0x658"
+        "Offset": "0x650"
       },
       {
         "Name": "SkeletonShipCaptain",
         "Type": "Struct ADS_SkeletonCaptainNative",
         "Size": "0x48",
-        "Offset": "0x6f0"
+        "Offset": "0x6e8"
       },
       {
         "Name": "SkeletonCurse",
         "Type": "Struct ADS_SkeletonCurseNative",
         "Size": "0x28",
-        "Offset": "0x738"
+        "Offset": "0x730"
       },
       {
         "Name": "WaterPump",
         "Type": "Struct ADS_WaterPumpNative",
         "Size": "0x28",
-        "Offset": "0x760"
+        "Offset": "0x758"
       }
     ]
   },
   "AD_ThirdPerson_PlayerPirate_Male_Athletic_C": {
     "Super": "AD_ThirdPerson_PlayerPirate_Male_Default_C",
-    "FullSize": "0x788",
-    "InheritedSize": "0x788",
+    "FullSize": "0x780",
+    "InheritedSize": "0x780",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "AD_ThirdPerson_PlayerPirate_Male_Large_C": {
     "Super": "AD_ThirdPerson_PlayerPirate_Male_Default_C",
-    "FullSize": "0x788",
-    "InheritedSize": "0x788",
+    "FullSize": "0x780",
+    "InheritedSize": "0x780",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "AD_ThirdPerson_PlayerPirate_Male_Thin_C": {
     "Super": "AD_ThirdPerson_PlayerPirate_Male_Default_C",
-    "FullSize": "0x788",
-    "InheritedSize": "0x788",
+    "FullSize": "0x780",
+    "InheritedSize": "0x780",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "AD_ThirdPerson_PlayerPirate_Male_Unfit_C": {
     "Super": "AD_ThirdPerson_PlayerPirate_Male_Default_C",
-    "FullSize": "0x788",
-    "InheritedSize": "0x788",
+    "FullSize": "0x780",
+    "InheritedSize": "0x780",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -1,118 +1,118 @@
 {
   "TestLevelScriptActor": {
     "Super": "LevelScriptActor",
-    "FullSize": "0x498",
-    "InheritedSize": "0x3d8",
+    "FullSize": "0x490",
+    "InheritedSize": "0x3d0",
     "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "Category",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "Area",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3e1"
+        "Offset": "0x3d9"
       },
       {
         "Name": "VisualTest",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3e2"
+        "Offset": "0x3da"
       },
       {
         "Name": "RunInEditor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3e3"
+        "Offset": "0x3db"
       },
       {
         "Name": "RunOnServer",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3e4"
+        "Offset": "0x3dc"
       },
       {
         "Name": "RequiresServices",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3e5"
+        "Offset": "0x3dd"
       },
       {
         "Name": "AdditionalMetadata",
         "Type": "TArray<Struct TestLevelMetadataEntry>",
         "Size": "0x10",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "CaptureType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "PlayModeOverride",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3f9"
+        "Offset": "0x3f1"
       },
       {
         "Name": "TestTimeout",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3fc"
+        "Offset": "0x3f4"
       },
       {
         "Name": "TestPausedTimeout",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "VerboseLogCategories",
         "Type": "TArray<Str VerboseLogCategories>",
         "Size": "0x10",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "ClientsRunning",
         "Type": "TArray<Int ClientsRunning>",
         "Size": "0x10",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "ClientIds",
         "Type": "TArray<Int ClientIds>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "ClientPawns",
         "Type": "TArray<Struct ClientPawnDetails>",
         "Size": "0x10",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "SpawnedActors",
         "Type": "TArray<class SpawnedActors*>",
         "Size": "0x10",
-        "Offset": "0x448"
+        "Offset": "0x440"
       },
       {
         "Name": "NextSpawnedActorIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x458"
+        "Offset": "0x450"
       }
     ]
   },
   "ActorThatLogsErrorWhenTicked": {
     "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -153,15 +153,15 @@
   },
   "DummyReplicatedActor": {
     "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "MapFixtureTestGameMode": {
     "Super": "GameMode",
-    "FullSize": "0x4c8",
-    "InheritedSize": "0x4c8",
+    "FullSize": "0x4c0",
+    "InheritedSize": "0x4c0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -202,8 +202,8 @@
   },
   "TestablePlayerController": {
     "Super": "PlayerController",
-    "FullSize": "0x728",
-    "InheritedSize": "0x728",
+    "FullSize": "0x770",
+    "InheritedSize": "0x770",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -223,8 +223,8 @@
   },
   "TestAbstractActor": {
     "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x0",
     "Attributes": []
   },

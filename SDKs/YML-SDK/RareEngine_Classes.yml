@@ -41,8 +41,8 @@ RareGameEngine:
 RareHUD:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x4c8'
-  InheritedSize: '0x4c8'
+  FullSize: '0x4c0'
+  InheritedSize: '0x4c0'
   Super: HUD
 StallDetector:
   Attributes: []

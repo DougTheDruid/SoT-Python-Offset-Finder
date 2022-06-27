@@ -6,15 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_ShroudedDeep_Larinna_Active_C: public BP_SoleTrader_C
+// Size 0x4681400f
+class ShroudedDeep_LarinnaDialogTempEntitlement_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class ShroudedDeep_LarinnaDialogTempEntitlement_C: public EntitlementDesc
+// Size -0x49800000
+class BP_ShroudedDeep_Larinna_Active_C: public None
 {
 public:
 };

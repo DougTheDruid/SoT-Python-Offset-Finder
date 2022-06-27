@@ -9,36 +9,36 @@ EmoteCameraInterface:
 EmoteCard:
   Attributes:
   - Name: DynamicCardSelectionMaterialInstance
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: MeshComponent
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: RandomCardParameterName
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: struct FName
   - Name: RandomCardParameterRange
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x10'
     Type: Struct Int32Range
   ClassSize: '0x140'
-  FullSize: '0x510'
-  InheritedSize: '0x3d0'
+  FullSize: '0x508'
+  InheritedSize: '0x3c8'
   Super: Actor
 EmoteCoin:
   Attributes: []
   ClassSize: '0x118'
-  FullSize: '0x4e8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x4e0'
+  InheritedSize: '0x3c8'
   Super: Actor
 EmoteDice:
   Attributes: []
   ClassSize: '0x120'
-  FullSize: '0x4f0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x4e8'
+  InheritedSize: '0x3c8'
   Super: Actor
 EmoteIdListingAsset:
   Attributes:
@@ -66,6 +66,16 @@ EmotePropDiceData:
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: EmotePropData
+EmoteRandomFromListAsset:
+  Attributes:
+  - Name: EmoteDataList
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct EmoteData>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
 EmoteSettings:
   Attributes:
   - Name: NumPages

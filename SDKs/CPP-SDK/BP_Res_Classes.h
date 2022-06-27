@@ -6,8 +6,8 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
-class BP_ResourceRowboatSpawner_CannonRowboatMegaSpawner_C: public IslandWatercraftSpawnComponent
+// Size 0x9
+class BP_ResourceRowboatSpawner_CannonRowboatMegaSpawner_C: public None
 {
 public:
 };

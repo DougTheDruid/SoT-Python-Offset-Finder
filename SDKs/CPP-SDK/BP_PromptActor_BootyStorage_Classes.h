@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_PromptActor_BootyStorage_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_PromptCoordinator_BootyStorage_C* PromptCoordinator;                                 // 0x410(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_PromptCoordinator_BootyStorage_C* PromptCoordinator;                                 // 0x408(0x8)
 };
 
 

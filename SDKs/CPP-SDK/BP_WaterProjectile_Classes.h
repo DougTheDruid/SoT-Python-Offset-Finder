@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_WaterProjectile_C: public LiquidProjectile
 {
 public:
-	Class StaticMeshComponent*                                   Sphere;                                            // 0x730(0x8)
-	Class SphereComponent*                                       Collision;                                         // 0x738(0x8)
+	Class StaticMeshComponent*                                   Sphere;                                            // 0x728(0x8)
+	Class SphereComponent*                                       Collision;                                         // 0x730(0x8)
 };
 
 

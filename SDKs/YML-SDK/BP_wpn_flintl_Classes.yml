@@ -18,6 +18,12 @@ BP_wpn_flintlock_pistol_gld_01_a_ItemDesc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: ItemDesc
+BP_wpn_flintlock_pistol_gld_ghw_01_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: ItemDesc
 BP_wpn_flintlock_pistol_hal_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

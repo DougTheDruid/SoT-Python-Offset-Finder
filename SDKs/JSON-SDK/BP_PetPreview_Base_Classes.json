@@ -1,15 +1,15 @@
 {
   "BP_PetPreview_Base_C": {
     "Super": "PreviewPet",
-    "FullSize": "0x4c0",
-    "InheritedSize": "0x4b8",
+    "FullSize": "0x4b8",
+    "InheritedSize": "0x4b0",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "CosmeticItemAnimation",
         "Type": "Class CosmeticItemAnimationComponent*",
         "Size": "0x8",
-        "Offset": "0x4b8"
+        "Offset": "0x4b0"
       }
     ]
   },

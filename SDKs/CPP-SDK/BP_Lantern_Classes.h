@@ -10,22 +10,22 @@ namespace DougsSDKDumper
 class BP_Lantern_C: public Lantern
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x930(0x8)
-	Class StaticMeshComponent*                                   LanternTriggerGlow;                                // 0x938(0x8)
-	Class StaticMeshComponent*                                   LanternGlow;                                       // 0x940(0x8)
-	Class AmbientLightSourceComponent*                           AmbientLightSource;                                // 0x948(0x8)
-	Class SpotLightComponent*                                    SpotLight;                                         // 0x950(0x8)
-	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x958(0x8)
-	Class MaterialInstanceDynamic*                               LanternGlowDynamicMaterial;                        // 0x960(0x8)
-	float                                                        EmissiveInt_threshold;                             // 0x968(0x4)
-	Class MaterialInstanceDynamic*                               LanternTriggerGlowDynamicMaterial;                 // 0x970(0x8)
-	float                                                        TriggerGlowDuration;                               // 0x978(0x4)
-	float                                                        TriggerGlowRampInDuration;                         // 0x97c(0x4)
-	float                                                        TriggerGlowRampOutDuration;                        // 0x980(0x4)
-	Struct LinearColor                                           DefaultSpotlightColour;                            // 0x984(0x10)
-	Struct LinearColor                                           DefaultAmbientLightColour;                         // 0x994(0x10)
-	Struct LinearColor                                           DefaultGlowColour;                                 // 0x9a4(0x10)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x9b8(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x920(0x8)
+	Class StaticMeshComponent*                                   LanternTriggerGlow;                                // 0x928(0x8)
+	Class StaticMeshComponent*                                   LanternGlow;                                       // 0x930(0x8)
+	Class AmbientLightSourceComponent*                           AmbientLightSource;                                // 0x938(0x8)
+	Class SpotLightComponent*                                    SpotLight;                                         // 0x940(0x8)
+	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x948(0x8)
+	Class MaterialInstanceDynamic*                               LanternGlowDynamicMaterial;                        // 0x950(0x8)
+	float                                                        EmissiveInt_threshold;                             // 0x958(0x4)
+	Class MaterialInstanceDynamic*                               LanternTriggerGlowDynamicMaterial;                 // 0x960(0x8)
+	float                                                        TriggerGlowDuration;                               // 0x968(0x4)
+	float                                                        TriggerGlowRampInDuration;                         // 0x96c(0x4)
+	float                                                        TriggerGlowRampOutDuration;                        // 0x970(0x4)
+	Struct LinearColor                                           DefaultSpotlightColour;                            // 0x974(0x10)
+	Struct LinearColor                                           DefaultAmbientLightColour;                         // 0x984(0x10)
+	Struct LinearColor                                           DefaultGlowColour;                                 // 0x994(0x10)
+	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x9a8(0x10)
 };
 
 

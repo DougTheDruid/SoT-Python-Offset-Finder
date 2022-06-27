@@ -185,16 +185,20 @@ SplashProbe:
     Offset: '0xe8'
     Size: '0x8'
     Type: Class Object*
-  - Name: SpawnAttached
+  - Name: UnderwaterUsage
     Offset: '0xf0'
     Size: '0x1'
-    Type: bool
-  - Name: AttachToWaterSurface
+    Type: byte
+  - Name: SpawnAttached
     Offset: '0xf1'
     Size: '0x1'
     Type: bool
-  - Name: SplashAttachType
+  - Name: AttachToWaterSurface
     Offset: '0xf2'
+    Size: '0x1'
+    Type: bool
+  - Name: SplashAttachType
+    Offset: '0xf3'
     Size: '0x1'
     Type: byte
   - Name: VfxSpawnOffset

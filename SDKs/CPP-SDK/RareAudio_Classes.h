@@ -56,7 +56,7 @@ public:
 class AudioEventToComponentMap: public Actor
 {
 public:
-	Class AudioEventToComponentMapComponent*                     AudioEventToComponentMapComponent;                 // 0x3d0(0x8)
+	Class AudioEventToComponentMapComponent*                     AudioEventToComponentMapComponent;                 // 0x3c8(0x8)
 };
 
 

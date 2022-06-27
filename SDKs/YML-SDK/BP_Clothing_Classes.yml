@@ -3,22 +3,22 @@
 BP_Clothing_C:
   Attributes:
   - Name: CargoRunParticipant
-    Offset: '0x668'
+    Offset: '0x680'
     Size: '0x8'
     Type: Class CargoRunParticipantComponent*
   - Name: Capsule
-    Offset: '0x670'
+    Offset: '0x688'
     Size: '0x8'
     Type: Class CapsuleComponent*
   - Name: NPCDialog
-    Offset: '0x678'
+    Offset: '0x690'
     Size: '0x8'
     Type: Class NPCDialogComponent*
   - Name: AnimNotifyWwiseEmitter
-    Offset: '0x680'
+    Offset: '0x698'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   ClassSize: '0x20'
-  FullSize: '0x688'
-  InheritedSize: '0x668'
+  FullSize: '0x6a0'
+  InheritedSize: '0x680'
   Super: Shopkeeper

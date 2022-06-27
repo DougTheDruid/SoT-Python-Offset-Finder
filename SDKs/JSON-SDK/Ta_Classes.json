@@ -1,173 +1,173 @@
 {
   "BP_TT_RitualBone_C": {
     "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "BoneMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       }
     ]
   },
   "BP_Skull_OoS_C": {
     "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "gmp_bounty_skull_01_b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       }
     ]
   },
   "BP_RitualBottleTop_C": {
     "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "ptn_pois_stop_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       }
     ]
   },
   "BP_RitualBottle_C": {
     "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "ptn_pois_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       }
     ]
   },
   "BP_Ritual2_R_Pendant_C": {
     "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       }
     ]
   },
   "BP_Ritual2_R_Effigy_C": {
     "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Effigy_R",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       }
     ]
   },
   "BP_Ritual2_L_Pendant_C": {
     "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       }
     ]
   },
   "BP_Ritual2_L_Effigy_C": {
     "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Effigy_L",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       }
     ]
   },

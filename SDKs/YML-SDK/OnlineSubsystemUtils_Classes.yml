@@ -131,70 +131,70 @@ LogoutCallbackProxy:
 OnlineBeacon:
   Attributes:
   - Name: BeaconConnectionInitialTimeout
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x4'
     Type: float
   - Name: BeaconConnectionTimeout
-    Offset: '0x3dc'
+    Offset: '0x3d4'
     Size: '0x4'
     Type: float
   - Name: NetDriver
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class NetDriver*
   ClassSize: '0x28'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3c8'
   Super: Actor
 OnlineBeaconClient:
   Attributes:
   - Name: BeaconOwner
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class OnlineBeaconHostObject*
   - Name: BeaconConnection
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class NetConnection*
   - Name: ConnectionState
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x1'
     Type: byte
   ClassSize: '0x28'
-  FullSize: '0x420'
-  InheritedSize: '0x3f8'
+  FullSize: '0x418'
+  InheritedSize: '0x3f0'
   Super: OnlineBeacon
 OnlineBeaconHost:
   Attributes:
   - Name: ListenPort
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x4'
     Type: int
   - Name: ClientActors
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class ClientActors*>
   ClassSize: '0xb8'
-  FullSize: '0x4b0'
-  InheritedSize: '0x3f8'
+  FullSize: '0x4a8'
+  InheritedSize: '0x3f0'
   Super: OnlineBeacon
 OnlineBeaconHostObject:
   Attributes:
   - Name: BeaconTypeName
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: Struct FString
   - Name: ClientBeaconActorClass
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class
   - Name: ClientActors
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class ClientActors*>
   ClassSize: '0x28'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3c8'
   Super: Actor
 OnlineBlueprintCallProxyBase:
   Attributes: []
@@ -219,46 +219,46 @@ OnlineSessionClient:
 PartyBeaconClient:
   Attributes:
   - Name: DestSessionId
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x10'
     Type: Struct FString
   - Name: PendingReservation
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x30'
     Type: Struct PartyReservation
   - Name: RequestType
-    Offset: '0x470'
+    Offset: '0x468'
     Size: '0x1'
     Type: byte
   - Name: bPendingReservationSent
-    Offset: '0x471'
+    Offset: '0x469'
     Size: '0x1'
     Type: bool
   - Name: bCancelReservation
-    Offset: '0x472'
+    Offset: '0x46a'
     Size: '0x1'
     Type: bool
   ClassSize: '0x58'
-  FullSize: '0x478'
-  InheritedSize: '0x420'
+  FullSize: '0x470'
+  InheritedSize: '0x418'
   Super: OnlineBeaconClient
 PartyBeaconHost:
   Attributes:
   - Name: State
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class PartyBeaconState*
   - Name: SessionTimeoutSecs
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x4'
     Type: float
   - Name: TravelSessionTimeoutSecs
-    Offset: '0x42c'
+    Offset: '0x424'
     Size: '0x4'
     Type: float
   ClassSize: '0x38'
-  FullSize: '0x430'
-  InheritedSize: '0x3f8'
+  FullSize: '0x428'
+  InheritedSize: '0x3f0'
   Super: OnlineBeaconHostObject
 PartyBeaconState:
   Attributes:
@@ -313,14 +313,14 @@ ShowLoginUICallbackProxy:
 TestBeaconClient:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x420'
-  InheritedSize: '0x420'
+  FullSize: '0x418'
+  InheritedSize: '0x418'
   Super: OnlineBeaconClient
 TestBeaconHost:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3f8'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3f0'
   Super: OnlineBeaconHostObject
 TurnBasedBlueprintLibrary:
   Attributes: []

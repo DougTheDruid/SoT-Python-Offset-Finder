@@ -3,34 +3,34 @@
 BarrelsOfPlentyDebugSpawnLocation:
   Attributes:
   - Name: Objects
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<Struct BarrelsOfPlentyDebugLocationEntry>
   - Name: SpawnCentre
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0xc'
     Type: Struct Vector
   - Name: Radius
-    Offset: '0x3ec'
+    Offset: '0x3e4'
     Size: '0x4'
     Type: float
   ClassSize: '0x20'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3c8'
   Super: Actor
 BarrelsOfPlentySpawnProxy:
   Attributes:
   - Name: Ship
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class Ship*
   - Name: SceneComponent
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x28'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3c8'
   Super: Actor
 SpawnBarrelsOfPlentyStep:
   Attributes: []

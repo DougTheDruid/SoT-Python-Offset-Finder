@@ -1,6 +1,6 @@
 {
   "ContestMatchmakingServerRequestModel": {
-    "ClassSize": "0x88",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "ServerId",
@@ -45,15 +45,21 @@
         "Offset": "0x68"
       },
       {
+        "Name": "MatchmakingRequestReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
         "Name": "RequestCorrelationId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x78"
+        "Offset": "0x7c"
       }
     ]
   },
   "ServerCrewModel": {
-    "ClassSize": "0x60",
+    "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -90,6 +96,30 @@
         "Type": "TArray<UInt32 Resources>",
         "Size": "0x10",
         "Offset": "0x50"
+      },
+      {
+        "Name": "PvPFaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "PvPSkillLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "RivalCrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "MatchmakingRequestReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x78"
       }
     ]
   },
@@ -127,7 +157,7 @@
     "Attributes": []
   },
   "ServerCrewRequestModel": {
-    "ClassSize": "0xc0",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "ServerId",
@@ -196,16 +226,22 @@
         "Offset": "0x78"
       },
       {
+        "Name": "Crews",
+        "Type": "TArray<Struct ExistingServerCrewModel>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
         "Name": "Uptime",
         "Type": "Struct Timespan",
         "Size": "0x8",
-        "Offset": "0x88"
+        "Offset": "0x98"
       },
       {
         "Name": "Contended",
         "Type": "Struct ServerContendedModel",
         "Size": "0x30",
-        "Offset": "0x90"
+        "Offset": "0xa0"
       }
     ]
   },
@@ -245,6 +281,58 @@
         "Name": "Radius",
         "Type": "float",
         "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ExistingServerCrewModel": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionType",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AlignedFaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "PvPSkillLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TimeInMatchmaking",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "ContestMatchmakingFactionMapEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "GameFaction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MatchmakingFaction",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x8"
       }
     ]

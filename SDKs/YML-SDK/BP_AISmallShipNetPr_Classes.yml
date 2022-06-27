@@ -3,18 +3,18 @@
 BP_AISmallShipNetProxy_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x4c0'
+    Offset: '0x4b0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: LightProxy
-    Offset: '0x4c8'
+    Offset: '0x4b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Dynamic Materials
-    Offset: '0x4d0'
+    Offset: '0x4c0'
     Size: '0x10'
     Type: TArray<class Dynamic Materials*>
   ClassSize: '0x20'
-  FullSize: '0x4e0'
-  InheritedSize: '0x4c0'
+  FullSize: '0x4d0'
+  InheritedSize: '0x4b0'
   Super: ShipNetProxy

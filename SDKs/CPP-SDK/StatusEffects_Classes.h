@@ -64,9 +64,9 @@ public:
 class StatusEffectOverlapZone: public Actor
 {
 public:
-	Class BoxComponent*                                          CollisionMesh;                                     // 0x478(0x8)
-	TArray<Struct DelayedStatusEffect>                           StatusesToApplyOnOverlap;                          // 0x480(0x10)
-	bool                                                         StartActive;                                       // 0x490(0x1)
+	Class BoxComponent*                                          CollisionMesh;                                     // 0x470(0x8)
+	TArray<Struct DelayedStatusEffect>                           StatusesToApplyOnOverlap;                          // 0x478(0x10)
+	bool                                                         StartActive;                                       // 0x488(0x1)
 };
 
 
@@ -84,7 +84,7 @@ public:
 class DebugStatusTicketHolder: public Actor
 {
 public:
-	Class Actor*                                                 StatusRecipient;                                   // 0x3d0(0x8)
+	Class Actor*                                                 StatusRecipient;                                   // 0x3c8(0x8)
 };
 
 
@@ -171,9 +171,9 @@ public:
 class SphericalStatusEffectZone: public Actor
 {
 public:
-	Class ActorActivationComponent*                              ActorActivationComponent;                          // 0x3d8(0x8)
-	Class SphereComponent*                                       SphereComponent;                                   // 0x3e0(0x8)
-	Class StatusEffectVolumeComponent*                           StatusEffectVolumeComponent;                       // 0x3e8(0x8)
+	Class ActorActivationComponent*                              ActorActivationComponent;                          // 0x3d0(0x8)
+	Class SphereComponent*                                       SphereComponent;                                   // 0x3d8(0x8)
+	Class StatusEffectVolumeComponent*                           StatusEffectVolumeComponent;                       // 0x3e0(0x8)
 };
 
 

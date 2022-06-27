@@ -1,51 +1,51 @@
 {
   "wld_bush_cluster_02_b_C": {
     "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x448",
-    "InheritedSize": "0x410",
+    "FullSize": "0x440",
+    "InheritedSize": "0x408",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "wsp_rock_pebbles_c_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "wsp_rock_xtra_small_a_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "wsp_rock_pebbles_a_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "wsp_rock_xtra_small_e_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "wsp_bush_03_a_02",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "wsp_rock_pebbles_b_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "SharedRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x440"
+        "Offset": "0x438"
       }
     ]
   },

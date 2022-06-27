@@ -3,42 +3,42 @@
 ShipBumperZone:
   Attributes:
   - Name: UseInverseRightVector
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x1'
     Type: bool
   - Name: BumperZoneComponent
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: DistanceRadiusComponent
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: ApplyAngularImpulse
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x1'
     Type: bool
   - Name: AngularImpulse
-    Offset: '0x414'
+    Offset: '0x40c'
     Size: '0x4'
     Type: float
   - Name: OverrideWheelControl
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x1'
     Type: bool
   - Name: ApplyWheelTurbulence
-    Offset: '0x419'
+    Offset: '0x411'
     Size: '0x1'
     Type: bool
   - Name: MinWheelTurbulence
-    Offset: '0x41c'
+    Offset: '0x414'
     Size: '0x4'
     Type: float
   - Name: MaxWheelTurbulence
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x4'
     Type: float
   ClassSize: '0x58'
-  FullSize: '0x428'
-  InheritedSize: '0x3d0'
+  FullSize: '0x420'
+  InheritedSize: '0x3c8'
   Super: Actor

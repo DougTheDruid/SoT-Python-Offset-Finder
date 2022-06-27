@@ -73,16 +73,16 @@ EmissaryFlotsamTooltipCustomizerComponent:
 EmissaryLevelService:
   Attributes:
   - Name: Settings
-    Offset: '0x470'
+    Offset: '0x468'
     Size: '0x8'
     Type: Class EmissaryLevelSettingsAsset*
   - Name: RewardSettings
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x8'
     Type: Class EmissaryRewardSettingsAsset*
   ClassSize: '0x338'
-  FullSize: '0x708'
-  InheritedSize: '0x3d0'
+  FullSize: '0x700'
+  InheritedSize: '0x3c8'
   Super: Actor
 EmissaryLevelSettingsAsset:
   Attributes:
@@ -258,24 +258,20 @@ EmissaryVoyageInlineVoteConsumerBase:
   Super: VoteConsumerInlineBase
 EmissaryVoyageVoteValidatorBase:
   Attributes:
-  - Name: TargetCompany
+  - Name: RequiredEntitlement
     Offset: '0x30'
     Size: '0x8'
     Type: class
-  - Name: RequiredEntitlement
-    Offset: '0x38'
+  - Name: TargetCompany
+    Offset: '0x98'
     Size: '0x8'
     Type: class
-  - Name: IsFaction
-    Offset: '0x40'
-    Size: '0x1'
-    Type: bool
   - Name: Consumer
-    Offset: '0xa8'
+    Offset: '0xa0'
     Size: '0x8'
     Type: Class EmissaryVoyageInlineVoteConsumerBase*
-  ClassSize: '0x80'
-  FullSize: '0xb0'
+  ClassSize: '0x78'
+  FullSize: '0xa8'
   InheritedSize: '0x30'
   Super: VoteValidatorInlineBase
 IsAnEmissaryStatCondition:
@@ -335,8 +331,8 @@ StartEmissaryVoyageInlineVoteConsumer:
 StartEmissaryVoyageInlineVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xb0'
-  InheritedSize: '0xb0'
+  FullSize: '0xa8'
+  InheritedSize: '0xa8'
   Super: EmissaryVoyageVoteValidatorBase
 StopEmissaryVoyageInlineVoteConsumer:
   Attributes:
@@ -371,6 +367,6 @@ StopEmissaryVoyageInlineVoteConsumer:
 StopEmissaryVoyageInlineVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xb0'
-  InheritedSize: '0xb0'
+  FullSize: '0xa8'
+  InheritedSize: '0xa8'
   Super: EmissaryVoyageVoteValidatorBase

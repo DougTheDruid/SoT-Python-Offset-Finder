@@ -3,40 +3,40 @@
 DrawDebugService:
   Attributes:
   - Name: MessagesReplicated
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<Struct DrawDebugItemMessage>
   - Name: SpheresReplicated
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<Struct DrawDebugItemSphere>
   - Name: BoxesReplicated
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<Struct DrawDebugItemBox>
   - Name: CapsulesReplicated
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<Struct DrawDebugItemCapsule>
   - Name: LinesReplicated
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x10'
     Type: TArray<Struct DrawDebugItemLine>
   - Name: SectorsReplicated
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x10'
     Type: TArray<Struct DrawDebugItemSector>
   - Name: StringsReplicated
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x10'
     Type: TArray<Struct DrawDebugItemString>
   - Name: IsDrawDebugActive
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x1'
     Type: bool
   ClassSize: '0xf8'
-  FullSize: '0x4c8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x4c0'
+  InheritedSize: '0x3c8'
   Super: Actor
 DrawDebugServiceInterface:
   Attributes: []
@@ -47,12 +47,12 @@ DrawDebugServiceInterface:
 ShippingDebugActorSphereCollection:
   Attributes:
   - Name: SphereList
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<Struct SphereData>
   ClassSize: '0x10'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3c8'
   Super: Actor
 TickableDebugDrawingServiceInterface:
   Attributes: []
@@ -63,20 +63,20 @@ TickableDebugDrawingServiceInterface:
 Videprinter:
   Attributes:
   - Name: OutputRingBuffer
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<Str OutputRingBuffer>
   - Name: AddAt
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x4'
     Type: int
   - Name: Id
-    Offset: '0x3e4'
+    Offset: '0x3dc'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x28'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3c8'
   Super: Actor
 VideprinterService:
   Attributes:

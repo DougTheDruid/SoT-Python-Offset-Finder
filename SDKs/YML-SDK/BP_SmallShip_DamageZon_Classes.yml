@@ -3,24 +3,24 @@
 BP_SmallShip_DamageZone_LowerDeck_00_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x868'
-  InheritedSize: '0x868'
+  FullSize: '0x860'
+  InheritedSize: '0x860'
   Super: BP_BaseInternalDamageZone_C
 BP_SmallShip_DamageZone_LowerDeck_01_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x868'
-  InheritedSize: '0x868'
+  FullSize: '0x860'
+  InheritedSize: '0x860'
   Super: BP_BaseInternalDamageZone_C
 BP_SmallShip_DamageZone_MezzanineDeck_00_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x868'
-  InheritedSize: '0x868'
+  FullSize: '0x860'
+  InheritedSize: '0x860'
   Super: BP_BaseInternalDamageZone_C
 BP_SmallShip_DamageZone_MezzanineDeck_01_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x868'
-  InheritedSize: '0x868'
+  FullSize: '0x860'
+  InheritedSize: '0x860'
   Super: BP_BaseInternalDamageZone_C

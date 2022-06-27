@@ -26,7 +26,7 @@ public:
 class LevelSequencePlayer: public MovieSceneSequencePlayer
 {
 public:
-	Class Actor*                                                 SpawnablesParent;                                  // 0x600(0x8)
+	Class Actor*                                                 SpawnablesParent;                                  // 0x608(0x8)
 };
 
 
@@ -51,14 +51,14 @@ public:
 class LevelSequenceActor: public Actor
 {
 public:
-	bool                                                         bAutoPlay;                                         // 0x3d8(0x1)
-	Struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0x3e0(0x28)
-	Class LevelSequencePlayer*                                   SequencePlayer;                                    // 0x408(0x8)
-	Struct StringAssetReference                                  LevelSequence;                                     // 0x410(0x10)
-	Class LevelSequenceBurnInOptions*                            BurnInOptions;                                     // 0x420(0x8)
-	Class MovieSceneBindingOverrides*                            BindingOverrides;                                  // 0x428(0x8)
-	Class Actor*                                                 SpawnablesParent;                                  // 0x430(0x8)
-	Class LevelSequenceBurnIn*                                   BurnInInstance;                                    // 0x438(0x8)
+	bool                                                         bAutoPlay;                                         // 0x3d0(0x1)
+	Struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0x3d8(0x28)
+	Class LevelSequencePlayer*                                   SequencePlayer;                                    // 0x400(0x8)
+	Struct StringAssetReference                                  LevelSequence;                                     // 0x408(0x10)
+	Class LevelSequenceBurnInOptions*                            BurnInOptions;                                     // 0x418(0x8)
+	Class MovieSceneBindingOverrides*                            BindingOverrides;                                  // 0x420(0x8)
+	Class Actor*                                                 SpawnablesParent;                                  // 0x428(0x8)
+	Class LevelSequenceBurnIn*                                   BurnInInstance;                                    // 0x430(0x8)
 };
 
 

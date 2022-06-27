@@ -1,27 +1,27 @@
 {
   "BP_Projectile_CannonBall_C": {
     "Super": "CannonProjectile",
-    "FullSize": "0x670",
-    "InheritedSize": "0x658",
+    "FullSize": "0x668",
+    "InheritedSize": "0x650",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "SphereCollisionExtentAdjustOverTime",
         "Type": "Class SphereCollisionExtentAdjustOverTimeComponent*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x650"
       },
       {
         "Name": "CannonBall",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x660"
+        "Offset": "0x658"
       },
       {
         "Name": "Collision",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x668"
+        "Offset": "0x660"
       }
     ]
   },

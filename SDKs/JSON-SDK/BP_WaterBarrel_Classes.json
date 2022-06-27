@@ -1,15 +1,15 @@
 {
   "BP_WaterBarrel_C": {
     "Super": "WaterBarrel",
-    "FullSize": "0x688",
-    "InheritedSize": "0x680",
+    "FullSize": "0x680",
+    "InheritedSize": "0x678",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
         "Size": "0x8",
-        "Offset": "0x680"
+        "Offset": "0x678"
       }
     ]
   },

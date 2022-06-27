@@ -1,6 +1,6 @@
 {
   "BP_Trinket_Wheel_01_a_C": {
-    "Super": "BP_Trinket_Hanging_C",
+    "Super": "BP_Trinket_HangingSinglePoint_C",
     "FullSize": "0x400",
     "InheritedSize": "0x3f8",
     "ClassSize": "0x8",
@@ -13,8 +13,28 @@
       }
     ]
   },
+  "BP_Trinket_Target_02_a_C": {
+    "Super": "BP_Trinket_HangingSinglePoint_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "wpn_boarding_axe_smp_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "bld_wpn_shop_hanging_target_broken_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
   "BP_Trinket_PinBoard_01_a_C": {
-    "Super": "BP_Trinket_Hanging_C",
+    "Super": "BP_Trinket_HangingSinglePoint_C",
     "FullSize": "0x400",
     "InheritedSize": "0x3f8",
     "ClassSize": "0x8",
@@ -28,7 +48,7 @@
     ]
   },
   "BP_Trinket_MapPainting_01_a_C": {
-    "Super": "BP_Trinket_Hanging_C",
+    "Super": "BP_Trinket_HangingSinglePoint_C",
     "FullSize": "0x408",
     "InheritedSize": "0x3f8",
     "ClassSize": "0x10",
@@ -48,7 +68,7 @@
     ]
   },
   "BP_Trinket_HatRack_02_a_C": {
-    "Super": "BP_Trinket_Hanging_C",
+    "Super": "BP_Trinket_HangingSinglePoint_C",
     "FullSize": "0x410",
     "InheritedSize": "0x3f8",
     "ClassSize": "0x18",
@@ -74,7 +94,7 @@
     ]
   },
   "BP_Trinket_HangingBottles_01_a_C": {
-    "Super": "BP_Trinket_Hanging_C",
+    "Super": "BP_Trinket_HangingSinglePoint_C",
     "FullSize": "0x410",
     "InheritedSize": "0x3f8",
     "ClassSize": "0x18",
@@ -100,7 +120,7 @@
     ]
   },
   "BP_Trinket_GlowBalls_01_a_C": {
-    "Super": "BP_Trinket_Hanging_C",
+    "Super": "BP_Trinket_HangingSinglePoint_C",
     "FullSize": "0x400",
     "InheritedSize": "0x3f8",
     "ClassSize": "0x8",
@@ -114,7 +134,7 @@
     ]
   },
   "BP_Trinket_Barnacles_01_a_C": {
-    "Super": "BP_Trinket_Hanging_C",
+    "Super": "BP_Trinket_HangingMultiplePoint_C",
     "FullSize": "0x428",
     "InheritedSize": "0x3f8",
     "ClassSize": "0x30",
@@ -158,7 +178,7 @@
     ]
   },
   "BP_Trinket_Anchor_01_a_C": {
-    "Super": "BP_Trinket_Hanging_C",
+    "Super": "BP_Trinket_HangingSinglePoint_C",
     "FullSize": "0x410",
     "InheritedSize": "0x3f8",
     "ClassSize": "0x18",

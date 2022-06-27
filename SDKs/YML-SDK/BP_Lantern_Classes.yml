@@ -3,70 +3,70 @@
 BP_Lantern_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x930'
+    Offset: '0x920'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: LanternTriggerGlow
-    Offset: '0x938'
+    Offset: '0x928'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: LanternGlow
-    Offset: '0x940'
+    Offset: '0x930'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: AmbientLightSource
-    Offset: '0x948'
+    Offset: '0x938'
     Size: '0x8'
     Type: Class AmbientLightSourceComponent*
   - Name: SpotLight
-    Offset: '0x950'
+    Offset: '0x940'
     Size: '0x8'
     Type: Class SpotLightComponent*
   - Name: UsableWieldable
-    Offset: '0x958'
+    Offset: '0x948'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   - Name: LanternGlowDynamicMaterial
-    Offset: '0x960'
+    Offset: '0x950'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: EmissiveInt_threshold
-    Offset: '0x968'
+    Offset: '0x958'
     Size: '0x4'
     Type: float
   - Name: LanternTriggerGlowDynamicMaterial
-    Offset: '0x970'
+    Offset: '0x960'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: TriggerGlowDuration
-    Offset: '0x978'
+    Offset: '0x968'
     Size: '0x4'
     Type: float
   - Name: TriggerGlowRampInDuration
-    Offset: '0x97c'
+    Offset: '0x96c'
     Size: '0x4'
     Type: float
   - Name: TriggerGlowRampOutDuration
-    Offset: '0x980'
+    Offset: '0x970'
     Size: '0x4'
     Type: float
   - Name: DefaultSpotlightColour
-    Offset: '0x984'
+    Offset: '0x974'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: DefaultAmbientLightColour
-    Offset: '0x994'
+    Offset: '0x984'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: DefaultGlowColour
-    Offset: '0x9a4'
+    Offset: '0x994'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: DynamicMaterials
-    Offset: '0x9b8'
+    Offset: '0x9a8'
     Size: '0x10'
     Type: TArray<class DynamicMaterials*>
   ClassSize: '0x98'
-  FullSize: '0x9c8'
-  InheritedSize: '0x930'
+  FullSize: '0x9b8'
+  InheritedSize: '0x920'
   Super: Lantern

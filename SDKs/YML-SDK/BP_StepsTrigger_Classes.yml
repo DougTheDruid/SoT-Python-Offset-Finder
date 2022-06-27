@@ -3,82 +3,82 @@
 BP_StepsTrigger_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x4b8'
+    Offset: '0x4b0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: bld_tavern_entrance_steps_lightshafts_01_a
-    Offset: '0x4c0'
+    Offset: '0x4b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: vfx_tavern_stairs_symbol_glow
-    Offset: '0x4c8'
+    Offset: '0x4c0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: Decal
-    Offset: '0x4d0'
+    Offset: '0x4c8'
     Size: '0x8'
     Type: Class DecalComponent*
   - Name: vfx_tavern_stairs_glow
-    Offset: '0x4d8'
+    Offset: '0x4d0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_stairs_falling_dust_under_ground
-    Offset: '0x4e0'
+    Offset: '0x4d8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_stairs_falling_dust2
-    Offset: '0x4e8'
+    Offset: '0x4e0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_stairs_falling_dust1
-    Offset: '0x4f0'
+    Offset: '0x4e8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_stairs_impact3
-    Offset: '0x4f8'
+    Offset: '0x4f0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_stairs_impact2
-    Offset: '0x500'
+    Offset: '0x4f8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_stairs_impact1
-    Offset: '0x508'
+    Offset: '0x500'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_stairs_impact
-    Offset: '0x510'
+    Offset: '0x508'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_tavern_stairs_falling_dust
-    Offset: '0x518'
+    Offset: '0x510'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: AnimatedStepsComponent
-    Offset: '0x520'
+    Offset: '0x518'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_AnimatedStepsComponent_C*
   - Name: Box1
-    Offset: '0x528'
+    Offset: '0x520'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: Box3
-    Offset: '0x530'
+    Offset: '0x528'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: Box2
-    Offset: '0x538'
+    Offset: '0x530'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: Box0
-    Offset: '0x540'
+    Offset: '0x538'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: StepsMesh
-    Offset: '0x548'
+    Offset: '0x540'
     Size: '0x8'
     Type: Class PoseableSkeletalMeshComponent*
   ClassSize: '0x98'
-  FullSize: '0x550'
-  InheritedSize: '0x4b8'
+  FullSize: '0x548'
+  InheritedSize: '0x4b0'
   Super: TavernStepsTrigger

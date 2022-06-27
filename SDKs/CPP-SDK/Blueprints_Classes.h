@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_ShroudedDeep_Belle_C: public BP_SoleTrader_C
 {
 public:
-	Class CompanyRegionComponent*                                None;                                              // 0x688(0x8)
-	Class SphereComponent*                                       None;                                              // 0x690(0x8)
-	Class ObjectMessagingDispatcherComponent*                    None;                                              // 0x698(0x8)
-	Class ActorPhasingComponent*                                 None;                                              // 0x6a0(0x8)
+	Class CompanyRegionComponent*                                None;                                              // 0x6a0(0x8)
+	Class SphereComponent*                                       None;                                              // 0x6a8(0x8)
+	Class ObjectMessagingDispatcherComponent*                    None;                                              // 0x6b0(0x8)
+	Class ActorPhasingComponent*                                 None;                                              // 0x6b8(0x8)
 };
 
 

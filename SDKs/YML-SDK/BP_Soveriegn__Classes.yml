@@ -9,20 +9,32 @@ BP_Soveriegn_LiftMechanism_C:
   - Name: None
     Offset: '0xa38'
     Size: '0x8'
-    Type: Class BoxComponent*
+    Type: Class SceneComponent*
   - Name: None
     Offset: '0xa40'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: Class BoxComponent*
   - Name: None
     Offset: '0xa48'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: Class StaticMeshComponent*
   - Name: None
     Offset: '0xa50'
     Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0xa58'
+    Size: '0x8'
+    Type: None ClassProperty*
+  - Name: None
+    Offset: '0xa60'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: None
+    Offset: '0xa68'
+    Size: '0x8'
     Type: Class IntentCombinerComponent*
-  ClassSize: '0x28'
-  FullSize: '0xa58'
+  ClassSize: '0x40'
+  FullSize: '0xa70'
   InheritedSize: '0xa30'
   Super: IntentBasedContinuousAnimatedMechanismAction

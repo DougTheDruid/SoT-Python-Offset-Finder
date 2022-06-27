@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_PetChestInteraction_C: public PetChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x668(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x660(0x8)
 };
 
 

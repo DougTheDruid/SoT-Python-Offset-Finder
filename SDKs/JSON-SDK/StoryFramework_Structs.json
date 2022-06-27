@@ -1,4 +1,15 @@
 {
+  "StoryInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "LightingZoneStoryRelatedSettings": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -22,14 +33,20 @@
       }
     ]
   },
-  "StoryInfo": {
+  "StoryNameInfo": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Name",
+        "Name": "StoryName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "StoryDesc",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -44,12 +61,23 @@
       }
     ]
   },
-  "StorySpawnedNamedPointsList": {
-    "ClassSize": "0x18",
+  "StoryFlag": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "StoryName",
         "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StorySpawnedNamedPointsList": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Story",
+        "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -227,6 +255,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x20"
+      },
+      {
+        "Name": "WereStoriesRefreshed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x21"
       }
     ]
   },

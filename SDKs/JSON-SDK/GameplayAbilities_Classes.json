@@ -496,8 +496,8 @@
   },
   "AbilitySystemDebugHUD": {
     "Super": "HUD",
-    "FullSize": "0x4c8",
-    "InheritedSize": "0x4c8",
+    "FullSize": "0x4c0",
+    "InheritedSize": "0x4c0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -656,15 +656,15 @@
   },
   "AbilitySystemTestPawn": {
     "Super": "DefaultPawn",
-    "FullSize": "0x490",
-    "InheritedSize": "0x470",
+    "FullSize": "0x488",
+    "InheritedSize": "0x468",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "AbilitySystemComponent",
         "Type": "Class AbilitySystemComponent*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x480"
       }
     ]
   },
@@ -750,119 +750,119 @@
   },
   "GameplayAbilityWorldReticle": {
     "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Parameters",
         "Type": "Struct WorldReticleParameters",
         "Size": "0xc",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "bFaceOwnerFlat",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3dc"
+        "Offset": "0x3d4"
       },
       {
         "Name": "bSnapToTargetedActor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3dd"
+        "Offset": "0x3d5"
       },
       {
         "Name": "bIsTargetValid",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3de"
+        "Offset": "0x3d6"
       },
       {
         "Name": "bIsTargetAnActor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3df"
+        "Offset": "0x3d7"
       },
       {
         "Name": "MasterPC",
         "Type": "Class PlayerController*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "TargetingActor",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       }
     ]
   },
   "GameplayAbilityTargetActor": {
     "Super": "Actor",
-    "FullSize": "0x4f0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x120",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x118",
     "Attributes": [
       {
         "Name": "ShouldProduceTargetDataOnServer",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "StartLocation",
         "Type": "Struct GameplayAbilityTargetingLocationInfo",
         "Size": "0x70",
-        "Offset": "0x3e0"
+        "Offset": "0x3d0"
       },
       {
         "Name": "MasterPC",
         "Type": "Class PlayerController*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x470"
       },
       {
         "Name": "OwningAbility",
         "Type": "Class GameplayAbility*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x478"
       },
       {
         "Name": "bDestroyOnConfirmation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x490"
+        "Offset": "0x480"
       },
       {
         "Name": "SourceActor",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x488"
       },
       {
         "Name": "ReticleParams",
         "Type": "Struct WorldReticleParameters",
         "Size": "0xc",
-        "Offset": "0x4a0"
+        "Offset": "0x490"
       },
       {
         "Name": "ReticleClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x4b0"
+        "Offset": "0x4a0"
       },
       {
         "Name": "Filter",
         "Type": "Struct GameplayTargetDataFilterHandle",
         "Size": "0x18",
-        "Offset": "0x4b8"
+        "Offset": "0x4a8"
       },
       {
         "Name": "bDebug",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4d0"
+        "Offset": "0x4c0"
       }
     ]
   },
@@ -1199,108 +1199,108 @@
   },
   "GameplayAbilityTargetActor_Radius": {
     "Super": "GameplayAbilityTargetActor",
-    "FullSize": "0x4f0",
-    "InheritedSize": "0x4f0",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0x4e0",
     "ClassSize": "0x0",
     "Attributes": [
       {
         "Name": "Radius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4e8"
+        "Offset": "0x4d8"
       }
     ]
   },
   "GameplayAbilityTargetActor_Trace": {
     "Super": "GameplayAbilityTargetActor",
-    "FullSize": "0x500",
-    "InheritedSize": "0x4f0",
+    "FullSize": "0x4f0",
+    "InheritedSize": "0x4e0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "MaxRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4e8"
+        "Offset": "0x4d8"
       },
       {
         "Name": "TraceProfile",
         "Type": "Struct CollisionProfileName",
         "Size": "0x8",
-        "Offset": "0x4ec"
+        "Offset": "0x4dc"
       },
       {
         "Name": "bTraceAffectsAimPitch",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4f4"
+        "Offset": "0x4e4"
       }
     ]
   },
   "GameplayAbilityTargetActor_GroundTrace": {
     "Super": "GameplayAbilityTargetActor_Trace",
-    "FullSize": "0x520",
-    "InheritedSize": "0x500",
+    "FullSize": "0x510",
+    "InheritedSize": "0x4f0",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "CollisionRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x500"
+        "Offset": "0x4f0"
       },
       {
         "Name": "CollisionHeight",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x504"
+        "Offset": "0x4f4"
       }
     ]
   },
   "GameplayAbilityTargetActor_ActorPlacement": {
     "Super": "GameplayAbilityTargetActor_GroundTrace",
-    "FullSize": "0x540",
-    "InheritedSize": "0x520",
+    "FullSize": "0x530",
+    "InheritedSize": "0x510",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "PlacedActorClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x520"
+        "Offset": "0x510"
       },
       {
         "Name": "PlacedActorMaterial",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x528"
+        "Offset": "0x518"
       }
     ]
   },
   "GameplayAbilityTargetActor_SingleLineTrace": {
     "Super": "GameplayAbilityTargetActor_Trace",
-    "FullSize": "0x500",
-    "InheritedSize": "0x500",
+    "FullSize": "0x4f0",
+    "InheritedSize": "0x4f0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "GameplayAbilityWorldReticle_ActorVisualization": {
     "Super": "GameplayAbilityWorldReticle",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f0",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3e8",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "CollisionComponent",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "VisualizationComponents",
         "Type": "TArray<class VisualizationComponents*>",
         "Size": "0x10",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       }
     ]
   },
@@ -1350,51 +1350,51 @@
   },
   "GameplayCueNotify_Actor": {
     "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "GameplayCueTag",
         "Type": "Struct GameplayTag",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "GameplayCueName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "bAutoDestroyOnRemove",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "AutoDestroyDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3e4"
+        "Offset": "0x3dc"
       },
       {
         "Name": "IsOverride",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "bUniqueInstancePerInstigator",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3e9"
+        "Offset": "0x3e1"
       },
       {
         "Name": "bUniqueInstancePerSourceObject",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3ea"
+        "Offset": "0x3e2"
       }
     ]
   },

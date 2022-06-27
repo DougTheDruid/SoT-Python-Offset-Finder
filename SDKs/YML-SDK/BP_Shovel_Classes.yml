@@ -3,10 +3,10 @@
 BP_Shovel_C:
   Attributes:
   - Name: UsableWieldable
-    Offset: '0x850'
+    Offset: '0x840'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   ClassSize: '0x8'
-  FullSize: '0x858'
-  InheritedSize: '0x850'
+  FullSize: '0x848'
+  InheritedSize: '0x840'
   Super: Shovel

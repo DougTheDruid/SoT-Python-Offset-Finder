@@ -3,54 +3,54 @@
 BP_DynamicFogVolume_Undersea_Shrine_1A_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f4'
-  InheritedSize: '0x3f4'
+  FullSize: '0x3ec'
+  InheritedSize: '0x3ec'
   Super: BP_FogVolume_Undersea_C
 BP_DynamicFogVolume_Undersea_Shrine_1B_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f4'
-  InheritedSize: '0x3f4'
+  FullSize: '0x3ec'
+  InheritedSize: '0x3ec'
   Super: BP_FogVolume_Undersea_C
 BP_DynamicFogVolume_Undersea_Shrine_1C_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f4'
-  InheritedSize: '0x3f4'
+  FullSize: '0x3ec'
+  InheritedSize: '0x3ec'
   Super: BP_FogVolume_Undersea_C
 BP_DynamicFogVolume_Undersea_Shrine_2A_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f4'
-  InheritedSize: '0x3f4'
+  FullSize: '0x3ec'
+  InheritedSize: '0x3ec'
   Super: BP_FogVolume_Undersea_C
 BP_DynamicFogVolume_Undersea_Shrine_2B_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f4'
-  InheritedSize: '0x3f4'
+  FullSize: '0x3ec'
+  InheritedSize: '0x3ec'
   Super: BP_FogVolume_Undersea_C
 BP_DynamicFogVolume_Undersea_Shrine_2C_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f4'
-  InheritedSize: '0x3f4'
+  FullSize: '0x3ec'
+  InheritedSize: '0x3ec'
   Super: BP_FogVolume_Undersea_C
 BP_DynamicFogVolume_Undersea_Treasury_1A_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f4'
-  InheritedSize: '0x3f4'
+  FullSize: '0x3ec'
+  InheritedSize: '0x3ec'
   Super: BP_FogVolume_Undersea_C
 BP_DynamicFogVolume_Undersea_Treasury_1B_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f4'
-  InheritedSize: '0x3f4'
+  FullSize: '0x3ec'
+  InheritedSize: '0x3ec'
   Super: BP_FogVolume_Undersea_C
 BP_DynamicFogVolume_Undersea_Treasury_1C_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3f4'
-  InheritedSize: '0x3f4'
+  FullSize: '0x3ec'
+  InheritedSize: '0x3ec'
   Super: BP_FogVolume_Undersea_C

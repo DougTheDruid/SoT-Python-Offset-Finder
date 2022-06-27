@@ -172,15 +172,15 @@
   },
   "SeasonProgressionUIService": {
     "Super": "Actor",
-    "FullSize": "0x590",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x588",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x1c0",
     "Attributes": [
       {
         "Name": "SeasonPopupListAsset",
         "Type": "Class SeasonPopupListAsset*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       }
     ]
   },

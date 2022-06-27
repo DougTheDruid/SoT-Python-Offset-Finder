@@ -181,23 +181,27 @@ AIBountySpawnerWave:
     Offset: '0x129'
     Size: '0x1'
     Type: bool
+  - Name: MinPlayersToEnable
+    Offset: '0x12c'
+    Size: '0x4'
+    Type: int
   - Name: Gender
-    Offset: '0x12a'
+    Offset: '0x130'
     Size: '0x1'
     Type: byte
   - Name: Rank
-    Offset: '0x12b'
+    Offset: '0x131'
     Size: '0x1'
     Type: byte
   - Name: PostSpawnAction
-    Offset: '0x130'
+    Offset: '0x138'
     Size: '0x8'
     Type: Class PostBountyAIPawnSpawnedAction*
   - Name: BountyReward
-    Offset: '0x170'
+    Offset: '0x178'
     Size: '0x8'
     Type: class
-  ClassSize: '0x180'
+  ClassSize: '0x188'
 AIBountySpawnerWaveGroup:
   Attributes:
   - Name: Waves
@@ -507,15 +511,19 @@ AIEncounterSpecification:
     Offset: '0xb8'
     Size: '0xc'
     Type: Struct EncounterParams
-  - Name: ShowNameplate
+  - Name: MinPlayersToEnable
     Offset: '0xc4'
+    Size: '0x4'
+    Type: int
+  - Name: ShowNameplate
+    Offset: '0xc8'
     Size: '0x1'
     Type: bool
   - Name: IsUsingDialogue
-    Offset: '0xc5'
+    Offset: '0xc9'
     Size: '0x1'
     Type: bool
-  ClassSize: '0xc8'
+  ClassSize: '0xd0'
 AIEncounterWave:
   Attributes:
   - Name: Specifications
@@ -1008,9 +1016,9 @@ AITelemetryFragmentInput:
   Attributes:
   - Name: AIEncounterSpecification
     Offset: '0x8'
-    Size: '0xc8'
+    Size: '0xd0'
     Type: Struct AIEncounterSpecification
-  ClassSize: '0xd0'
+  ClassSize: '0xd8'
 AITypeData:
   Attributes:
   - Name: AITypeName

@@ -16,23 +16,6 @@
       }
     ]
   },
-  "AnimNotify_SoundSwitch": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SkeletalMeshReference",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SkeletalMeshCategoryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "WwiseEventParam": {
     "ClassSize": "0x18",
     "Attributes": [

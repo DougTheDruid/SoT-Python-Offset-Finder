@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class tls_wld_harpoon_light_b_C: public StaticMeshActor
 {
 public:
-	Class SpotLightComponent*                                    SpotLight;                                         // 0x3e0(0x8)
-	Class PointLightComponent*                                   PointLight;                                        // 0x3e8(0x8)
+	Class SpotLightComponent*                                    SpotLight;                                         // 0x3d8(0x8)
+	Class PointLightComponent*                                   PointLight;                                        // 0x3e0(0x8)
 };
 
 

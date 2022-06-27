@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class wsp_Pole_Orb_Light_d_C: public Actor
 {
 public:
-	Class PointLightComponent*                                   PointLight3;                                       // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   tls_linstock_01_a;                                 // 0x3e0(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x3e8(0x8)
+	Class PointLightComponent*                                   PointLight3;                                       // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   tls_linstock_01_a;                                 // 0x3d8(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x3e0(0x8)
 };
 
 

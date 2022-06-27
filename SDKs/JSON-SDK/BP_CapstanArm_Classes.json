@@ -1,21 +1,21 @@
 {
   "BP_CapstanArm_C": {
     "Super": "CapstanArm",
-    "FullSize": "0x568",
-    "InheritedSize": "0x558",
+    "FullSize": "0x560",
+    "InheritedSize": "0x550",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x558"
+        "Offset": "0x550"
       },
       {
         "Name": "LookAtPos",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x558"
       }
     ]
   },

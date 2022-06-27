@@ -53,7 +53,7 @@ public:
 class FFTWaterService: public Actor
 {
 public:
-	double                                                       ReplicatedServerCreationTime;                      // 0x448(0x8)
+	double                                                       ReplicatedServerCreationTime;                      // 0x440(0x8)
 };
 
 

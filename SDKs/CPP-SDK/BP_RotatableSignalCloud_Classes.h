@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_RotatableSignalCloud_C: public GameplayEventSignal_StaticMesh
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4b0(0x8)
-	Class RotateMeshToLocalPlayerComponent*                      RotateMeshToLocalPlayer;                           // 0x4b8(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4a8(0x8)
+	Class RotateMeshToLocalPlayerComponent*                      RotateMeshToLocalPlayer;                           // 0x4b0(0x8)
 };
 
 

@@ -1,33 +1,33 @@
 {
   "wld_bush_cluster_03_b_C": {
     "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x430",
-    "InheritedSize": "0x410",
+    "FullSize": "0x428",
+    "InheritedSize": "0x408",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "wsp_bush_06_b2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "wsp_rock_cliff_l_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "wsp_bush_01_a2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Scene",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x420"
       }
     ]
   },

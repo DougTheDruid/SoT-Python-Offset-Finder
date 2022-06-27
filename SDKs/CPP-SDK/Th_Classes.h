@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_GiveShroudbreaker_Shroudbreaker_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   gmp_tal_shroudbreaker_statue_01_a;                 // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   gmp_tal_shroudbreaker_statue_01_a;                 // 0x3c8(0x8)
 };
 
 

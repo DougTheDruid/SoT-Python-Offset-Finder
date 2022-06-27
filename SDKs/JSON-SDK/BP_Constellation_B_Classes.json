@@ -1,22 +1,22 @@
 {
   "BP_Constellation_Boat_W_C": {
     "Super": "BP_Constellation_C",
-    "FullSize": "0x470",
-    "InheritedSize": "0x470",
+    "FullSize": "0x468",
+    "InheritedSize": "0x468",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Constellation_Boar_NE_C": {
     "Super": "BP_Constellation_C",
-    "FullSize": "0x470",
-    "InheritedSize": "0x470",
+    "FullSize": "0x468",
+    "InheritedSize": "0x468",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Constellation_Bear_SSW_C": {
     "Super": "BP_Constellation_C",
-    "FullSize": "0x470",
-    "InheritedSize": "0x470",
+    "FullSize": "0x468",
+    "InheritedSize": "0x468",
     "ClassSize": "0x0",
     "Attributes": []
   },

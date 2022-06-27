@@ -171,7 +171,7 @@ public:
 class AbilitySystemTestPawn: public DefaultPawn
 {
 public:
-	Class AbilitySystemComponent*                                AbilitySystemComponent;                            // 0x488(0x8)
+	Class AbilitySystemComponent*                                AbilitySystemComponent;                            // 0x480(0x8)
 };
 
 
@@ -233,30 +233,30 @@ public:
 class GameplayAbilityWorldReticle: public Actor
 {
 public:
-	Struct WorldReticleParameters                                Parameters;                                        // 0x3d0(0xc)
-	bool                                                         bFaceOwnerFlat;                                    // 0x3dc(0x1)
-	bool                                                         bSnapToTargetedActor;                              // 0x3dd(0x1)
-	bool                                                         bIsTargetValid;                                    // 0x3de(0x1)
-	bool                                                         bIsTargetAnActor;                                  // 0x3df(0x1)
-	Class PlayerController*                                      MasterPC;                                          // 0x3e0(0x8)
-	Class Actor*                                                 TargetingActor;                                    // 0x3e8(0x8)
+	Struct WorldReticleParameters                                Parameters;                                        // 0x3c8(0xc)
+	bool                                                         bFaceOwnerFlat;                                    // 0x3d4(0x1)
+	bool                                                         bSnapToTargetedActor;                              // 0x3d5(0x1)
+	bool                                                         bIsTargetValid;                                    // 0x3d6(0x1)
+	bool                                                         bIsTargetAnActor;                                  // 0x3d7(0x1)
+	Class PlayerController*                                      MasterPC;                                          // 0x3d8(0x8)
+	Class Actor*                                                 TargetingActor;                                    // 0x3e0(0x8)
 };
 
 
-// Size 0x120
+// Size 0x118
 class GameplayAbilityTargetActor: public Actor
 {
 public:
-	bool                                                         ShouldProduceTargetDataOnServer;                   // 0x3d0(0x1)
-	Struct GameplayAbilityTargetingLocationInfo                  StartLocation;                                     // 0x3e0(0x70)
-	Class PlayerController*                                      MasterPC;                                          // 0x480(0x8)
-	Class GameplayAbility*                                       OwningAbility;                                     // 0x488(0x8)
-	bool                                                         bDestroyOnConfirmation;                            // 0x490(0x1)
-	Class Actor*                                                 SourceActor;                                       // 0x498(0x8)
-	Struct WorldReticleParameters                                ReticleParams;                                     // 0x4a0(0xc)
-	class                                                        ReticleClass;                                      // 0x4b0(0x8)
-	Struct GameplayTargetDataFilterHandle                        Filter;                                            // 0x4b8(0x18)
-	bool                                                         bDebug;                                            // 0x4d0(0x1)
+	bool                                                         ShouldProduceTargetDataOnServer;                   // 0x3c8(0x1)
+	Struct GameplayAbilityTargetingLocationInfo                  StartLocation;                                     // 0x3d0(0x70)
+	Class PlayerController*                                      MasterPC;                                          // 0x470(0x8)
+	Class GameplayAbility*                                       OwningAbility;                                     // 0x478(0x8)
+	bool                                                         bDestroyOnConfirmation;                            // 0x480(0x1)
+	Class Actor*                                                 SourceActor;                                       // 0x488(0x8)
+	Struct WorldReticleParameters                                ReticleParams;                                     // 0x490(0xc)
+	class                                                        ReticleClass;                                      // 0x4a0(0x8)
+	Struct GameplayTargetDataFilterHandle                        Filter;                                            // 0x4a8(0x18)
+	bool                                                         bDebug;                                            // 0x4c0(0x1)
 };
 
 
@@ -476,7 +476,7 @@ public:
 class GameplayAbilityTargetActor_Radius: public GameplayAbilityTargetActor
 {
 public:
-	float                                                        Radius;                                            // 0x4e8(0x4)
+	float                                                        Radius;                                            // 0x4d8(0x4)
 };
 
 
@@ -484,9 +484,9 @@ public:
 class GameplayAbilityTargetActor_Trace: public GameplayAbilityTargetActor
 {
 public:
-	float                                                        MaxRange;                                          // 0x4e8(0x4)
-	Struct CollisionProfileName                                  TraceProfile;                                      // 0x4ec(0x8)
-	bool                                                         bTraceAffectsAimPitch;                             // 0x4f4(0x1)
+	float                                                        MaxRange;                                          // 0x4d8(0x4)
+	Struct CollisionProfileName                                  TraceProfile;                                      // 0x4dc(0x8)
+	bool                                                         bTraceAffectsAimPitch;                             // 0x4e4(0x1)
 };
 
 
@@ -494,8 +494,8 @@ public:
 class GameplayAbilityTargetActor_GroundTrace: public GameplayAbilityTargetActor_Trace
 {
 public:
-	float                                                        CollisionRadius;                                   // 0x500(0x4)
-	float                                                        CollisionHeight;                                   // 0x504(0x4)
+	float                                                        CollisionRadius;                                   // 0x4f0(0x4)
+	float                                                        CollisionHeight;                                   // 0x4f4(0x4)
 };
 
 
@@ -503,8 +503,8 @@ public:
 class GameplayAbilityTargetActor_ActorPlacement: public GameplayAbilityTargetActor_GroundTrace
 {
 public:
-	class                                                        PlacedActorClass;                                  // 0x520(0x8)
-	Class MaterialInterface*                                     PlacedActorMaterial;                               // 0x528(0x8)
+	class                                                        PlacedActorClass;                                  // 0x510(0x8)
+	Class MaterialInterface*                                     PlacedActorMaterial;                               // 0x518(0x8)
 };
 
 
@@ -519,8 +519,8 @@ public:
 class GameplayAbilityWorldReticle_ActorVisualization: public GameplayAbilityWorldReticle
 {
 public:
-	Class CapsuleComponent*                                      CollisionComponent;                                // 0x3f0(0x8)
-	TArray<class VisualizationComponents*>                       VisualizationComponents;                           // 0x3f8(0x10)
+	Class CapsuleComponent*                                      CollisionComponent;                                // 0x3e8(0x8)
+	TArray<class VisualizationComponents*>                       VisualizationComponents;                           // 0x3f0(0x10)
 };
 
 
@@ -541,13 +541,13 @@ public:
 class GameplayCueNotify_Actor: public Actor
 {
 public:
-	Struct GameplayTag                                           GameplayCueTag;                                    // 0x3d0(0x8)
-	struct FName                                                 GameplayCueName;                                   // 0x3d8(0x8)
-	bool                                                         bAutoDestroyOnRemove;                              // 0x3e0(0x1)
-	float                                                        AutoDestroyDelay;                                  // 0x3e4(0x4)
-	bool                                                         IsOverride;                                        // 0x3e8(0x1)
-	bool                                                         bUniqueInstancePerInstigator;                      // 0x3e9(0x1)
-	bool                                                         bUniqueInstancePerSourceObject;                    // 0x3ea(0x1)
+	Struct GameplayTag                                           GameplayCueTag;                                    // 0x3c8(0x8)
+	struct FName                                                 GameplayCueName;                                   // 0x3d0(0x8)
+	bool                                                         bAutoDestroyOnRemove;                              // 0x3d8(0x1)
+	float                                                        AutoDestroyDelay;                                  // 0x3dc(0x4)
+	bool                                                         IsOverride;                                        // 0x3e0(0x1)
+	bool                                                         bUniqueInstancePerInstigator;                      // 0x3e1(0x1)
+	bool                                                         bUniqueInstancePerSourceObject;                    // 0x3e2(0x1)
 };
 
 

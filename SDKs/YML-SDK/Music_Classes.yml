@@ -77,8 +77,8 @@ MusicZoneInterface:
 MusicZoneService:
   Attributes: []
   ClassSize: '0xa8'
-  FullSize: '0x478'
-  InheritedSize: '0x3d0'
+  FullSize: '0x470'
+  InheritedSize: '0x3c8'
   Super: Actor
 MusicZoneServiceInterface:
   Attributes: []

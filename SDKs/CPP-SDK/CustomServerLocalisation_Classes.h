@@ -17,7 +17,7 @@ public:
 class CustomServerLocalisationService: public Actor
 {
 public:
-	TArray<Struct CustomServerLocalisationData>                  LocalisationData;                                  // 0x3d8(0x10)
+	TArray<Struct CustomServerLocalisationData>                  LocalisationData;                                  // 0x3d0(0x10)
 };
 
 

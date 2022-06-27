@@ -17,40 +17,40 @@ LevelSequence:
 LevelSequenceActor:
   Attributes:
   - Name: bAutoPlay
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: bool
   - Name: PlaybackSettings
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x28'
     Type: Struct MovieSceneSequencePlaybackSettings
   - Name: SequencePlayer
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class LevelSequencePlayer*
   - Name: LevelSequence
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: BurnInOptions
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class LevelSequenceBurnInOptions*
   - Name: BindingOverrides
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class MovieSceneBindingOverrides*
   - Name: SpawnablesParent
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class Actor*
   - Name: BurnInInstance
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class LevelSequenceBurnIn*
   ClassSize: '0x70'
-  FullSize: '0x440'
-  InheritedSize: '0x3d0'
+  FullSize: '0x438'
+  InheritedSize: '0x3c8'
   Super: Actor
 LevelSequenceBurnIn:
   Attributes:
@@ -93,12 +93,12 @@ LevelSequenceBurnInOptions:
 LevelSequencePlayer:
   Attributes:
   - Name: SpawnablesParent
-    Offset: '0x600'
+    Offset: '0x608'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x40'
-  FullSize: '0x640'
-  InheritedSize: '0x600'
+  FullSize: '0x648'
+  InheritedSize: '0x608'
   Super: MovieSceneSequencePlayer
 LevelSequenceSubtitlesInterface:
   Attributes: []

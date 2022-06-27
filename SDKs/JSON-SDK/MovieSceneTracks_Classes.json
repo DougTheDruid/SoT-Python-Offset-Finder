@@ -942,15 +942,21 @@
   },
   "MovieSceneSkeletalAnimationTrack": {
     "Super": "MovieSceneNameableTrack",
-    "FullSize": "0x98",
+    "FullSize": "0xa0",
     "InheritedSize": "0x88",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "TrackSubtype",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
       {
         "Name": "AnimationSections",
         "Type": "TArray<class AnimationSections*>",
         "Size": "0x10",
-        "Offset": "0x88"
+        "Offset": "0x90"
       }
     ]
   },

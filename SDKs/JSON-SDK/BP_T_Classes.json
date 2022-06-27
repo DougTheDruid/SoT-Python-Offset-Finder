@@ -1,63 +1,63 @@
 {
   "BP_TavernBoard_C": {
     "Super": "TavernBoard",
-    "FullSize": "0x598",
-    "InheritedSize": "0x550",
+    "FullSize": "0x590",
+    "InheritedSize": "0x548",
     "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x550"
+        "Offset": "0x548"
       },
       {
         "Name": "ParticleSystem2",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x558"
+        "Offset": "0x550"
       },
       {
         "Name": "ParticleSystem1",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x558"
       },
       {
         "Name": "ParticleSystem",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x560"
       },
       {
         "Name": "PointLight1",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x568"
       },
       {
         "Name": "PointLight",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x570"
       },
       {
         "Name": "bld_jetty_support_b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x580"
+        "Offset": "0x578"
       },
       {
         "Name": "gmp_messageboard_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x588"
+        "Offset": "0x580"
       },
       {
         "Name": "PlayerGeneratedMapsContainer",
         "Type": "Class PlayerGeneratedMapsContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x590"
+        "Offset": "0x588"
       }
     ]
   },

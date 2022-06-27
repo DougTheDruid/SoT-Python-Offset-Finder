@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_NPC_ReapersBones_Skeleton_InCage_C: public NPC
 {
 public:
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x668(0x8)
-	Class CapsuleComponent*                                      SolidHits;                                         // 0x670(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x680(0x8)
+	Class CapsuleComponent*                                      SolidHits;                                         // 0x688(0x8)
 };
 
 

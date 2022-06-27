@@ -29,22 +29,22 @@
   },
   "BP_gmp_compass_bel_01_a_ItemInfo_C": {
     "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
+    "FullSize": "0x500",
+    "InheritedSize": "0x4f8",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x500"
+        "Offset": "0x4f8"
       }
     ]
   },
   "BP_gmp_compass_bel_01_a_Wieldable_C": {
     "Super": "BP_Compass_C",
-    "FullSize": "0x878",
-    "InheritedSize": "0x878",
+    "FullSize": "0x868",
+    "InheritedSize": "0x868",
     "ClassSize": "0x0",
     "Attributes": []
   },

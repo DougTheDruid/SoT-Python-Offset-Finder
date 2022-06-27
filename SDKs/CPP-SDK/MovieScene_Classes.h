@@ -56,6 +56,13 @@ public:
 };
 
 
+// Size 0x0
+class MovieSceneCameraDockingInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x48
 class MovieSceneFolder: public Object
 {
@@ -67,7 +74,7 @@ public:
 };
 
 
-// Size 0x5d8
+// Size 0x5e0
 class MovieSceneSequencePlayer: public Object
 {
 public:
@@ -80,6 +87,7 @@ public:
 	float                                                        EndTime;                                           // 0x3d8(0x4)
 	int                                                          CurrentNumLoops;                                   // 0x3dc(0x4)
 	Struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0x3f0(0x28)
+	Class Character*                                             InteractingCharacter;                              // 0x5e8(0x8)
 };
 
 

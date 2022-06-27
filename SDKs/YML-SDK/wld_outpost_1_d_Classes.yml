@@ -3,18 +3,18 @@
 wld_outpost_1_design_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
   Super: LevelScriptActor
 wld_outpost_1_design_adventure_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
   Super: LevelScriptActor
 wld_outpost_1_design_talltales_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d8'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3d0'
   Super: LevelScriptActor

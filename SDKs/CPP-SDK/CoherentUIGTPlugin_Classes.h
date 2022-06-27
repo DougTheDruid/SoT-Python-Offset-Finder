@@ -114,7 +114,7 @@ public:
 class CoherentUIGTGameHUD: public HUD
 {
 public:
-	Class CoherentUIGTHUD*                                       CoherentUIGTHUD;                                   // 0x4c8(0x8)
+	Class CoherentUIGTHUD*                                       CoherentUIGTHUD;                                   // 0x4c0(0x8)
 };
 
 

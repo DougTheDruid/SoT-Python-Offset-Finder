@@ -369,7 +369,7 @@
     ]
   },
   "AIEncounterSpecification": {
-    "ClassSize": "0xc8",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "Skillset",
@@ -432,16 +432,22 @@
         "Offset": "0xb8"
       },
       {
+        "Name": "MinPlayersToEnable",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
         "Name": "ShowNameplate",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xc4"
+        "Offset": "0xc8"
       },
       {
         "Name": "IsUsingDialogue",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xc5"
+        "Offset": "0xc9"
       }
     ]
   },
@@ -571,7 +577,7 @@
     ]
   },
   "AIBountySpawnerWave": {
-    "ClassSize": "0x180",
+    "ClassSize": "0x188",
     "Attributes": [
       {
         "Name": "IsTarget",
@@ -586,28 +592,34 @@
         "Offset": "0x129"
       },
       {
+        "Name": "MinPlayersToEnable",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x12c"
+      },
+      {
         "Name": "Gender",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x12a"
+        "Offset": "0x130"
       },
       {
         "Name": "Rank",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x12b"
+        "Offset": "0x131"
       },
       {
         "Name": "PostSpawnAction",
         "Type": "Class PostBountyAIPawnSpawnedAction*",
         "Size": "0x8",
-        "Offset": "0x130"
+        "Offset": "0x138"
       },
       {
         "Name": "BountyReward",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x170"
+        "Offset": "0x178"
       }
     ]
   },
@@ -3614,12 +3626,12 @@
     ]
   },
   "AITelemetryFragmentInput": {
-    "ClassSize": "0xd0",
+    "ClassSize": "0xd8",
     "Attributes": [
       {
         "Name": "AIEncounterSpecification",
         "Type": "Struct AIEncounterSpecification",
-        "Size": "0xc8",
+        "Size": "0xd0",
         "Offset": "0x8"
       }
     ]

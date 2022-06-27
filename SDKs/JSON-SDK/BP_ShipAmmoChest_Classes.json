@@ -1,21 +1,21 @@
 {
   "BP_ShipAmmoChest_C": {
     "Super": "BP_AmmoChest_C",
-    "FullSize": "0x4b8",
-    "InheritedSize": "0x4a8",
+    "FullSize": "0x4b0",
+    "InheritedSize": "0x4a0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "AddCrewLockableActionRule",
         "Type": "Class AddCrewLockableActionRuleComponent*",
         "Size": "0x8",
-        "Offset": "0x4a8"
+        "Offset": "0x4a0"
       },
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
         "Size": "0x8",
-        "Offset": "0x4b0"
+        "Offset": "0x4a8"
       }
     ]
   },

@@ -3,10 +3,10 @@
 BP_WaterBarrel_C:
   Attributes:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
-    Offset: '0x680'
+    Offset: '0x678'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
   ClassSize: '0x8'
-  FullSize: '0x688'
-  InheritedSize: '0x680'
+  FullSize: '0x680'
+  InheritedSize: '0x678'
   Super: WaterBarrel

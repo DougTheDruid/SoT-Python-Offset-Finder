@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class KrakenTentacle: public Actor
 {
 public:
-	Class HealthComponent*                                       HealthComponent;                                   // 0x3f0(0x8)
-	Class ActorDamageableComponent*                              DamageableComponent;                               // 0x3f8(0x8)
-	Class VenomComponent*                                        VenomComponent;                                    // 0x400(0x8)
-	float                                                        VenomChance;                                       // 0x408(0x4)
+	Class HealthComponent*                                       HealthComponent;                                   // 0x3e8(0x8)
+	Class ActorDamageableComponent*                              DamageableComponent;                               // 0x3f0(0x8)
+	Class VenomComponent*                                        VenomComponent;                                    // 0x3f8(0x8)
+	float                                                        VenomChance;                                       // 0x400(0x4)
 };
 
 
@@ -21,13 +21,13 @@ public:
 class Murk: public Actor
 {
 public:
-	Class MurkWaterModifierZoneComponent*                        WaterModifierZone;                                 // 0x3d0(0x8)
-	Class SceneComponent*                                        SceneRootComponent;                                // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   InnerSheet;                                        // 0x3e0(0x8)
-	Class StaticMeshComponent*                                   OuterSheet;                                        // 0x3e8(0x8)
-	float                                                        UnderwaterSheetHeightScale;                        // 0x3f0(0x4)
-	Class MaterialInstanceDynamic*                               InnerSheetMaterialInstance;                        // 0x3f8(0x8)
-	Class MaterialInstanceDynamic*                               OuterSheetMaterialInstance;                        // 0x400(0x8)
+	Class MurkWaterModifierZoneComponent*                        WaterModifierZone;                                 // 0x3c8(0x8)
+	Class SceneComponent*                                        SceneRootComponent;                                // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   InnerSheet;                                        // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   OuterSheet;                                        // 0x3e0(0x8)
+	float                                                        UnderwaterSheetHeightScale;                        // 0x3e8(0x4)
+	Class MaterialInstanceDynamic*                               InnerSheetMaterialInstance;                        // 0x3f0(0x8)
+	Class MaterialInstanceDynamic*                               OuterSheetMaterialInstance;                        // 0x3f8(0x8)
 };
 
 
@@ -101,22 +101,22 @@ public:
 class KrakenShipWrappingTentacle: public KrakenTentacle
 {
 public:
-	Class SceneComponent*                                        SceneRoot;                                         // 0x508(0x8)
-	Class StaticMeshComponent*                                   TentacleCollisions;                                // 0x510(0x8)
-	Class StaticMeshComponent*                                   TentacleMesh;                                      // 0x518(0x8)
-	Class BoxComponent*                                          DamageZone;                                        // 0x520(0x8)
-	Class SceneComponent*                                        InteractableBlockingRegions;                       // 0x528(0x8)
-	Class SceneComponent*                                        KnockbackRegions;                                  // 0x530(0x8)
-	Class BoxComponent*                                          TentacleHeadCollisions;                            // 0x538(0x8)
-	Class SceneComponent*                                        TentacleHeadKnockbackRegions;                      // 0x540(0x8)
-	Class KrakenShipWrappingTentacleAIAudioComponent*            AudioComponent;                                    // 0x548(0x8)
-	Class StaticMesh*                                            LowDetailTentacleMesh;                             // 0x550(0x8)
-	Struct StringAssetReference                                  HighDetailTentacleMeshAsset;                       // 0x558(0x10)
-	Struct KrakenShipWrappingTentacleParams                      Params;                                            // 0x568(0xf0)
-	Class MaterialInstanceDynamic*                               TentacleDynamicMaterialInstance;                   // 0x658(0x8)
-	Class StaticMesh*                                            HighDetailTentacleMesh;                            // 0x660(0x8)
-	Struct KrakenShipWrappingTentacleAnimationState              CurrentServerAnimationState;                       // 0x668(0x10)
-	Struct KrakenShipWrappingTentacleAnimationState              PendingServerAnimationState;                       // 0x678(0x10)
+	Class SceneComponent*                                        SceneRoot;                                         // 0x500(0x8)
+	Class StaticMeshComponent*                                   TentacleCollisions;                                // 0x508(0x8)
+	Class StaticMeshComponent*                                   TentacleMesh;                                      // 0x510(0x8)
+	Class BoxComponent*                                          DamageZone;                                        // 0x518(0x8)
+	Class SceneComponent*                                        InteractableBlockingRegions;                       // 0x520(0x8)
+	Class SceneComponent*                                        KnockbackRegions;                                  // 0x528(0x8)
+	Class BoxComponent*                                          TentacleHeadCollisions;                            // 0x530(0x8)
+	Class SceneComponent*                                        TentacleHeadKnockbackRegions;                      // 0x538(0x8)
+	Class KrakenShipWrappingTentacleAIAudioComponent*            AudioComponent;                                    // 0x540(0x8)
+	Class StaticMesh*                                            LowDetailTentacleMesh;                             // 0x548(0x8)
+	Struct StringAssetReference                                  HighDetailTentacleMeshAsset;                       // 0x550(0x10)
+	Struct KrakenShipWrappingTentacleParams                      Params;                                            // 0x560(0xf0)
+	Class MaterialInstanceDynamic*                               TentacleDynamicMaterialInstance;                   // 0x650(0x8)
+	Class StaticMesh*                                            HighDetailTentacleMesh;                            // 0x658(0x8)
+	Struct KrakenShipWrappingTentacleAnimationState              CurrentServerAnimationState;                       // 0x660(0x10)
+	Struct KrakenShipWrappingTentacleAnimationState              PendingServerAnimationState;                       // 0x670(0x10)
 };
 
 
@@ -127,15 +127,15 @@ public:
 };
 
 
-// Size 0x560
+// Size 0x568
 class Kraken: public Actor
 {
 public:
-	float                                                        RelevancyDistance;                                 // 0x3e8(0x4)
-	float                                                        InnerRadius;                                       // 0x400(0x4)
-	float                                                        OuterRadius;                                       // 0x404(0x4)
-	byte                                                         CurrentState;                                      // 0x408(0x1)
-	Class Murk*                                                  MurkActor;                                         // 0x5c0(0x8)
+	float                                                        RelevancyDistance;                                 // 0x3e0(0x4)
+	float                                                        InnerRadius;                                       // 0x3f8(0x4)
+	float                                                        OuterRadius;                                       // 0x3fc(0x4)
+	byte                                                         CurrentState;                                      // 0x400(0x1)
+	Class Murk*                                                  MurkActor;                                         // 0x5b8(0x8)
 	Class KrakenAICharacterAudioComponent*                       KrakenAudioComponent;                              // 0x668(0x8)
 	Class KrakenTelemetryComponent*                              KrakenTelemetryComponent;                          // 0x670(0x8)
 	Struct EncounterParams                                       SightingEncounterParams;                           // 0x678(0xc)
@@ -196,27 +196,27 @@ public:
 class KrakenHead: public Actor
 {
 public:
-	Class SkeletalMeshComponent*                                 SkeletalMesh;                                      // 0x3e0(0x8)
-	Class HealthComponent*                                       HealthComponent;                                   // 0x3e8(0x8)
-	Class ActorDamageableComponent*                              ActorDamageableComponent;                          // 0x3f0(0x8)
-	Class SphereComponent*                                       SphereComponent;                                   // 0x3f8(0x8)
-	Class VenomComponent*                                        VenomComponent;                                    // 0x400(0x8)
-	Class ExplosionComponent*                                    ExplosionComponent;                                // 0x408(0x8)
-	Class ParticleSystem*                                        BiteAttackVFX;                                     // 0x410(0x8)
-	TArray<Struct Status>                                        BreathingInContinuousStatusesToApply;              // 0x418(0x10)
-	float                                                        BreatheInStatusDuration;                           // 0x428(0x4)
-	TArray<Struct Status>                                        RoarContinuousStatusesToApply;                     // 0x430(0x10)
-	float                                                        RoarStatusDuration;                                // 0x440(0x4)
-	Class EnvQuery*                                              RoarEQSQuery;                                      // 0x448(0x8)
-	class                                                        KnockbackDamagerType;                              // 0x450(0x8)
-	Struct KnockBackInfo                                         RoarKnockbackInfo;                                 // 0x458(0x50)
-	Class KrakenHeadAnimationInstance*                           HeadAnimInstance;                                  // 0x4a8(0x8)
-	Struct Vector                                                EQSQuerierLocation;                                // 0x4b0(0xc)
-	Class KrakenHeadHealthParamsDataAsset*                       KrakenHeadHealthParams;                            // 0x4c0(0x8)
-	Struct HeadStateChangeRequest                                HeadStateRequest;                                  // 0x4c8(0x18)
-	bool                                                         IsDamageEnabled;                                   // 0x4e0(0x1)
-	Class SceneComponent*                                        Root;                                              // 0x4e8(0x8)
-	struct FName                                                 BiteAttackImpactNamedPointsGroupName;              // 0x5b0(0x8)
+	Class SkeletalMeshComponent*                                 SkeletalMesh;                                      // 0x3d8(0x8)
+	Class HealthComponent*                                       HealthComponent;                                   // 0x3e0(0x8)
+	Class ActorDamageableComponent*                              ActorDamageableComponent;                          // 0x3e8(0x8)
+	Class SphereComponent*                                       SphereComponent;                                   // 0x3f0(0x8)
+	Class VenomComponent*                                        VenomComponent;                                    // 0x3f8(0x8)
+	Class ExplosionComponent*                                    ExplosionComponent;                                // 0x400(0x8)
+	Class ParticleSystem*                                        BiteAttackVFX;                                     // 0x408(0x8)
+	TArray<Struct Status>                                        BreathingInContinuousStatusesToApply;              // 0x410(0x10)
+	float                                                        BreatheInStatusDuration;                           // 0x420(0x4)
+	TArray<Struct Status>                                        RoarContinuousStatusesToApply;                     // 0x428(0x10)
+	float                                                        RoarStatusDuration;                                // 0x438(0x4)
+	Class EnvQuery*                                              RoarEQSQuery;                                      // 0x440(0x8)
+	class                                                        KnockbackDamagerType;                              // 0x448(0x8)
+	Struct KnockBackInfo                                         RoarKnockbackInfo;                                 // 0x450(0x50)
+	Class KrakenHeadAnimationInstance*                           HeadAnimInstance;                                  // 0x4a0(0x8)
+	Struct Vector                                                EQSQuerierLocation;                                // 0x4a8(0xc)
+	Class KrakenHeadHealthParamsDataAsset*                       KrakenHeadHealthParams;                            // 0x4b8(0x8)
+	Struct HeadStateChangeRequest                                HeadStateRequest;                                  // 0x4c0(0x18)
+	bool                                                         IsDamageEnabled;                                   // 0x4d8(0x1)
+	Class SceneComponent*                                        Root;                                              // 0x4e0(0x8)
+	struct FName                                                 BiteAttackImpactNamedPointsGroupName;              // 0x5a8(0x8)
 };
 
 
@@ -296,12 +296,12 @@ public:
 };
 
 
-// Size 0x230
+// Size 0x238
 class KrakenService: public Actor
 {
 public:
-	Struct KrakenServiceParams                                   KrakenServiceParams;                               // 0x3d8(0xa0)
-	Class Kraken*                                                Kraken;                                            // 0x518(0x8)
+	Struct KrakenServiceParams                                   KrakenServiceParams;                               // 0x3d0(0xa0)
+	Class Kraken*                                                Kraken;                                            // 0x510(0x8)
 };
 
 

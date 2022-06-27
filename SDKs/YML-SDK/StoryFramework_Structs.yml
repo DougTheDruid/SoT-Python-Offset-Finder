@@ -87,16 +87,38 @@ StoriesChangedTelemetryEvent:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
+  - Name: WereStoriesRefreshed
+    Offset: '0x21'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x28'
 StoriesToSpawnedActorsListContainer:
   Attributes: []
   ClassSize: '0x50'
+StoryFlag:
+  Attributes:
+  - Name: StoryName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x8'
 StoryInfo:
   Attributes:
   - Name: Name
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
+  ClassSize: '0x18'
+StoryNameInfo:
+  Attributes:
+  - Name: StoryName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: StoryDesc
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x18'
 StorySpawnedActorsChangeTelemetryEvent:
   Attributes:
@@ -141,10 +163,10 @@ StorySpawnedActorsList:
   ClassSize: '0x28'
 StorySpawnedNamedPointsList:
   Attributes:
-  - Name: StoryName
+  - Name: Story
     Offset: '0x0'
     Size: '0x8'
-    Type: struct FName
+    Type: Struct StoryFlag
   - Name: GroupLocations
     Offset: '0x8'
     Size: '0x10'

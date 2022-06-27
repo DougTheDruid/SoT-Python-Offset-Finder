@@ -43,101 +43,101 @@
   },
   "TimeService": {
     "Super": "Actor",
-    "FullSize": "0x4e0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x110",
+    "FullSize": "0x4f0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x128",
     "Attributes": [
       {
         "Name": "GameWorldTimeOffset",
         "Type": "Struct Timespan",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "ServiceTimeQueryRapidFrequencyOffsetMax",
         "Type": "double",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "ServiceTimeQueryRapidFrequencyInSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "ServiceTimeQueryFrequencyInSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x42c"
+        "Offset": "0x424"
       },
       {
         "Name": "ClientTimeUpdateFrequencyInSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "SunriseTimeHours",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x434"
+        "Offset": "0x42c"
       },
       {
         "Name": "SunsetTimeHours",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "LocalTimeUpdateAdjustMaxTimeDelta",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x43c"
+        "Offset": "0x434"
       },
       {
         "Name": "MinLocalTimeUpdateAdjustPercentageToSlowDown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x438"
       },
       {
         "Name": "MaxLocalTimeUpdateAdjustPercentageToSlowDown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x444"
+        "Offset": "0x43c"
       },
       {
         "Name": "MinLocalTimeUpdateAdjustPercentageToSpeedUp",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x448"
+        "Offset": "0x440"
       },
       {
         "Name": "MaxLocalTimeUpdateAdjustPercentageToSpeedUp",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x44c"
+        "Offset": "0x444"
       },
       {
         "Name": "ReplicatedServerTime",
         "Type": "Struct ReplicatedAuthoritativeTime",
         "Size": "0x10",
-        "Offset": "0x4a0"
+        "Offset": "0x498"
       }
     ]
   },
   "DebugTimeService": {
     "Super": "TimeService",
-    "FullSize": "0x4e8",
-    "InheritedSize": "0x4e0",
+    "FullSize": "0x4f8",
+    "InheritedSize": "0x4f0",
     "ClassSize": "0x8",
     "Attributes": []
   },
   "CustomizableTimeService": {
     "Super": "DebugTimeService",
-    "FullSize": "0x4f0",
-    "InheritedSize": "0x4e8",
+    "FullSize": "0x500",
+    "InheritedSize": "0x4f8",
     "ClassSize": "0x8",
     "Attributes": []
   },

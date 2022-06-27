@@ -1,21 +1,27 @@
 {
-  "BP_FotF_Larinna_NotActive_C": {
+  "BP_FotF_Belle_Active_C": {
     "Super": "BP_SoleTrader_C",
-    "FullSize": "0x698",
-    "InheritedSize": "0x688",
-    "ClassSize": "0x10",
+    "FullSize": "0x6b8",
+    "InheritedSize": "0x6a0",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "Class CompanyRegionComponent*",
         "Size": "0x8",
-        "Offset": "0x688"
+        "Offset": "0x6a0"
       },
       {
         "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "Class ObjectMessagingDispatcherComponent*",
         "Size": "0x8",
-        "Offset": "0x690"
+        "Offset": "0x6a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ActorPhasingComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b0"
       }
     ]
   },

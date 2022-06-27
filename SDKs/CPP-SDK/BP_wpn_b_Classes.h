@@ -45,7 +45,7 @@ public:
 class BP_wpn_blunderbuss_yr1_leg_01_a_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
 };
 
 

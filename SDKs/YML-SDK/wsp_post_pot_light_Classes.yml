@@ -3,26 +3,26 @@
 wsp_post_pot_light_C:
   Attributes:
   - Name: SpotLight1
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class SpotLightComponent*
   - Name: SpotLight
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class SpotLightComponent*
   - Name: ParticleSystem2
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: ParticleSystem1
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: ParticleSystem
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   ClassSize: '0x28'
-  FullSize: '0x408'
-  InheritedSize: '0x3e0'
+  FullSize: '0x400'
+  InheritedSize: '0x3d8'
   Super: StaticMeshActor

@@ -15,30 +15,30 @@ BP_fod_PorkMeatRawBite1_00_a_ItemDesc_C:
 BP_fod_PorkMeatRaw_00_a_ItemInfo_C:
   Attributes:
   - Name: MaterialManipulationSettings
-    Offset: '0x568'
+    Offset: '0x560'
     Size: '0x8'
     Type: Class MaterialManipulationSettingsComponent*
   - Name: LightweightStatusEffectManager
-    Offset: '0x570'
+    Offset: '0x568'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: Cookable
-    Offset: '0x578'
+    Offset: '0x570'
     Size: '0x8'
     Type: Class CookableComponent*
   ClassSize: '0x18'
-  FullSize: '0x580'
-  InheritedSize: '0x568'
+  FullSize: '0x578'
+  InheritedSize: '0x560'
   Super: BP_MeatItemInfo_C
 BP_fod_PorkMeatRaw_00_a_ItemProxy_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x7b8'
-  InheritedSize: '0x7b8'
+  FullSize: '0x7b0'
+  InheritedSize: '0x7b0'
   Super: BP_ProxyIngestible_Retractable_C
 BP_fod_PorkMeatRaw_00_a_Wieldable_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x858'
-  InheritedSize: '0x858'
+  FullSize: '0x848'
+  InheritedSize: '0x848'
   Super: BP_StaticWieldableIngestible_C

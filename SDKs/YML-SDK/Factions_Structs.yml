@@ -14,6 +14,10 @@ CrewFactionEntry:
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: SandsOfFate
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x30'
 CrewJoinedFaction:
   Attributes:
@@ -93,3 +97,18 @@ FigureheadFactionVFXParams:
     Size: '0x1'
     Type: bool
   ClassSize: '0x30'
+SandsOfFateData:
+  Attributes:
+  - Name: SinkingCrewStreak
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: SunkCrewStreak
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: SandsOfFateReward
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0xc'

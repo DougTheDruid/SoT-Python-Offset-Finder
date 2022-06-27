@@ -17,10 +17,10 @@ public:
 class EmoteCard: public Actor
 {
 public:
-	Class MaterialInstanceDynamic*                               DynamicCardSelectionMaterialInstance;              // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x3e0(0x8)
-	struct FName                                                 RandomCardParameterName;                           // 0x3e8(0x8)
-	Struct Int32Range                                            RandomCardParameterRange;                          // 0x3f0(0x10)
+	Class MaterialInstanceDynamic*                               DynamicCardSelectionMaterialInstance;              // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d8(0x8)
+	struct FName                                                 RandomCardParameterName;                           // 0x3e0(0x8)
+	Struct Int32Range                                            RandomCardParameterRange;                          // 0x3e8(0x10)
 };
 
 
@@ -35,6 +35,14 @@ public:
 class EmotePropData: public DataAsset
 {
 public:
+};
+
+
+// Size 0x10
+class EmoteRandomFromListAsset: public DataAsset
+{
+public:
+	TArray<Struct EmoteData>                                     EmoteDataList;                                     // 0x28(0x10)
 };
 
 

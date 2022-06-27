@@ -1531,6 +1531,10 @@
       }
     ]
   },
+  "UniqueNetIdRepl": {
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
   "FeatureFlag": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -1541,10 +1545,6 @@
         "Offset": "0x0"
       }
     ]
-  },
-  "UniqueNetIdRepl": {
-    "ClassSize": "0x18",
-    "Attributes": []
   },
   "RainPostProcessSettings": {
     "ClassSize": "0xc0",
@@ -2800,7 +2800,7 @@
     "Attributes": []
   },
   "MeshMergingSettings": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "bGenerateLightMapUV",
@@ -2909,6 +2909,18 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "LODReductionPercentTriangles",
+        "Type": "TArray<Float LODReductionPercentTriangles>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaxNumberOfLODs",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x48"
       }
     ]
   },
@@ -7164,7 +7176,7 @@
     ]
   },
   "HierarchicalSimplification": {
-    "ClassSize": "0xc0",
+    "ClassSize": "0xd8",
     "Attributes": [
       {
         "Name": "bSimplifyMesh",
@@ -7205,7 +7217,7 @@
       {
         "Name": "MergeSetting",
         "Type": "Struct MeshMergingSettings",
-        "Size": "0x38",
+        "Size": "0x50",
         "Offset": "0x88"
       }
     ]
@@ -18571,6 +18583,185 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8c"
+      }
+    ]
+  },
+  "AnimNode_HIKRelativePlantAndFloorContact": {
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "FeetContact",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "HandsContact",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "FingersContact",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4a"
+      },
+      {
+        "Name": "ToesContact",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4b"
+      },
+      {
+        "Name": "FeetContactType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "HandsContactType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4d"
+      },
+      {
+        "Name": "Alpha",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "Depth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "HipsRotationFactor",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "ChestRotationFactor",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "DistanceUp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "DistanceDown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "NbRays",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "FootRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "DeltaTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "Smoothing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "OverrideRaycastCollisionResponse",
+        "Type": "Struct CollisionResponseContainer",
+        "Size": "0x20",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "FeetHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "FeetBack",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x9c"
+      },
+      {
+        "Name": "FeetMiddle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "FeetFront",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xa4"
+      },
+      {
+        "Name": "FeetInSide",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "FeetOutSide",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xac"
+      },
+      {
+        "Name": "HandsHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "HandsBack",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb4"
+      },
+      {
+        "Name": "HandsMiddle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "HandsFront",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xbc"
+      },
+      {
+        "Name": "HandsInSide",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "HandsOutSide",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
       }
     ]
   },

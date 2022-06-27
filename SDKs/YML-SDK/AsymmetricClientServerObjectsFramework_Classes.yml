@@ -3,52 +3,52 @@
 AsymmetricClientObject:
   Attributes:
   - Name: BaseComponent
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: ThirdPersonMesh
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshMemoryConstraintComponent*
   - Name: WaterInteractionComponent
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class WaterInteractionComponent*
   - Name: BuoyancyComponent
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class BuoyancyComponent*
   - Name: SpawnDependentTrackedOwnerComponent
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class SpawnDependentTrackedOwnerComponent*
   - Name: RotationWhenPlacingWorldProxy
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0xc'
     Type: Struct Rotator
   - Name: ZOffsetWhenPlacingWorldProxy
-    Offset: '0x41c'
+    Offset: '0x414'
     Size: '0x4'
     Type: float
   ClassSize: '0x50'
-  FullSize: '0x420'
-  InheritedSize: '0x3d0'
+  FullSize: '0x418'
+  InheritedSize: '0x3c8'
   Super: Actor
 AsymmetricObjectServerManager:
   Attributes:
   - Name: SpawnedObject
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class AsymmetricClientObject*
   - Name: SceneComponent
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: AsymmetricObjectAsset
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x10'
     Type: Struct StringAssetReference
   ClassSize: '0x58'
-  FullSize: '0x428'
-  InheritedSize: '0x3d0'
+  FullSize: '0x420'
+  InheritedSize: '0x3c8'
   Super: Actor

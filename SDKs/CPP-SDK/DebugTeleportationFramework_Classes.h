@@ -31,7 +31,7 @@ public:
 class DebugTeleportationDestinationService: public Actor
 {
 public:
-	TArray<Struct DebugTeleportDestinationEntry>                 DebugTeleportationRegistry;                        // 0x3e8(0x10)
+	TArray<Struct DebugTeleportDestinationEntry>                 DebugTeleportationRegistry;                        // 0x3e0(0x10)
 };
 
 

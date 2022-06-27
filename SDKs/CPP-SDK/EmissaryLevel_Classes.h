@@ -76,8 +76,8 @@ public:
 class EmissaryLevelService: public Actor
 {
 public:
-	Class EmissaryLevelSettingsAsset*                            Settings;                                          // 0x470(0x8)
-	Class EmissaryRewardSettingsAsset*                           RewardSettings;                                    // 0x478(0x8)
+	Class EmissaryLevelSettingsAsset*                            Settings;                                          // 0x468(0x8)
+	Class EmissaryRewardSettingsAsset*                           RewardSettings;                                    // 0x470(0x8)
 };
 
 
@@ -185,14 +185,13 @@ public:
 };
 
 
-// Size 0x80
+// Size 0x78
 class EmissaryVoyageVoteValidatorBase: public VoteValidatorInlineBase
 {
 public:
-	class                                                        TargetCompany;                                     // 0x30(0x8)
-	class                                                        RequiredEntitlement;                               // 0x38(0x8)
-	bool                                                         IsFaction;                                         // 0x40(0x1)
-	Class EmissaryVoyageInlineVoteConsumerBase*                  Consumer;                                          // 0xa8(0x8)
+	class                                                        RequiredEntitlement;                               // 0x30(0x8)
+	class                                                        TargetCompany;                                     // 0x98(0x8)
+	Class EmissaryVoyageInlineVoteConsumerBase*                  Consumer;                                          // 0xa0(0x8)
 };
 
 

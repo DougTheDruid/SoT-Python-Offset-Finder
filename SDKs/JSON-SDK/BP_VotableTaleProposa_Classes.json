@@ -1,83 +1,107 @@
 {
   "BP_VotableTaleProposal_Vertical_C": {
-    "Super": "VotableObjectView",
-    "FullSize": "0x538",
-    "InheritedSize": "0x4e8",
-    "ClassSize": "0x50",
+    "Super": "SignalMesh",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x1",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "SignalMesh",
+        "Type": "Class MeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4e8"
+        "Offset": "0x408"
+      },
+      {
+        "Name": "Root",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "SignalMaterial",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "EventType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "OwningNetworkRegion",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x488"
       }
     ]
   },
   "BP_VotableTaleProposal_C": {
     "Super": "VotableObjectView",
-    "FullSize": "0x538",
-    "InheritedSize": "0x4e8",
+    "FullSize": "0x530",
+    "InheritedSize": "0x4e0",
     "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x4e8"
+        "Offset": "0x4e0"
       },
       {
         "Name": "Token 1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4f0"
+        "Offset": "0x4e8"
       },
       {
         "Name": "Token 4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4f8"
+        "Offset": "0x4f0"
       },
       {
         "Name": "Token 3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x500"
+        "Offset": "0x4f8"
       },
       {
         "Name": "Token 2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x508"
+        "Offset": "0x500"
       },
       {
         "Name": "Tokens",
         "Type": "TArray<class Tokens*>",
         "Size": "0x10",
-        "Offset": "0x510"
+        "Offset": "0x508"
       },
       {
         "Name": "Token Asset",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
-        "Offset": "0x520"
+        "Offset": "0x518"
       },
       {
         "Name": "VoteCount",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x528"
+        "Offset": "0x520"
       },
       {
         "Name": "Show Token Animation Time",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x52c"
+        "Offset": "0x524"
       },
       {
         "Name": "Token Material",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x530"
+        "Offset": "0x528"
       }
     ]
   },

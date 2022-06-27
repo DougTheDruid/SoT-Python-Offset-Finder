@@ -1,57 +1,57 @@
 {
   "BP_SirenTrident_Wieldable_C": {
     "Super": "DoubleActionItemWithAmmo",
-    "FullSize": "0x9b0",
-    "InheritedSize": "0x970",
+    "FullSize": "0x9a0",
+    "InheritedSize": "0x960",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "AimSensitivity",
         "Type": "Class AimSensitivityComponent*",
         "Size": "0x8",
-        "Offset": "0x970"
+        "Offset": "0x960"
       },
       {
         "Name": "AmmoEffects",
         "Type": "Class AmmoEffectsComponent*",
         "Size": "0x8",
-        "Offset": "0x978"
+        "Offset": "0x968"
       },
       {
         "Name": "StaticStashedMeshMemoryConstraint",
         "Type": "Class StaticStashedMeshMemoryConstraintComponent*",
         "Size": "0x8",
-        "Offset": "0x980"
+        "Offset": "0x970"
       },
       {
         "Name": "AmmoTransfer",
         "Type": "Class AmmoTransferComponent*",
         "Size": "0x8",
-        "Offset": "0x988"
+        "Offset": "0x978"
       },
       {
         "Name": "AimDownSightAction",
         "Type": "Class ItemActionComponent*",
         "Size": "0x8",
-        "Offset": "0x990"
+        "Offset": "0x980"
       },
       {
         "Name": "SirenTridentShotAction",
         "Type": "Class SirenTridentShotActionComponent*",
         "Size": "0x8",
-        "Offset": "0x998"
+        "Offset": "0x988"
       },
       {
         "Name": "LaunchableAttachPoint",
         "Type": "Class LaunchableAttachPointComponent*",
         "Size": "0x8",
-        "Offset": "0x9a0"
+        "Offset": "0x990"
       },
       {
         "Name": "PostProcess",
         "Type": "Class PostProcessComponent*",
         "Size": "0x8",
-        "Offset": "0x9a8"
+        "Offset": "0x998"
       }
     ]
   },

@@ -73,7 +73,7 @@ public:
 class SeasonProgressionUIService: public Actor
 {
 public:
-	Class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x400(0x8)
+	Class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3f8(0x8)
 };
 
 

@@ -3,46 +3,46 @@
 BP_VotableCancelAdventure_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x4e8'
+    Offset: '0x4e0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: Token 2
-    Offset: '0x4f0'
+    Offset: '0x4e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Token 4
-    Offset: '0x4f8'
+    Offset: '0x4f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Token 3
-    Offset: '0x500'
+    Offset: '0x4f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Token 1
-    Offset: '0x508'
+    Offset: '0x500'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Tokens
-    Offset: '0x510'
+    Offset: '0x508'
     Size: '0x10'
     Type: TArray<class Tokens*>
   - Name: Token Asset
-    Offset: '0x520'
+    Offset: '0x518'
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: VoteCount
-    Offset: '0x528'
+    Offset: '0x520'
     Size: '0x4'
     Type: int
   - Name: Show Token Animation Time
-    Offset: '0x52c'
+    Offset: '0x524'
     Size: '0x4'
     Type: float
   - Name: Token Material
-    Offset: '0x530'
+    Offset: '0x528'
     Size: '0x8'
     Type: Class MaterialInterface*
   ClassSize: '0x50'
-  FullSize: '0x538'
-  InheritedSize: '0x4e8'
+  FullSize: '0x530'
+  InheritedSize: '0x4e0'
   Super: VotableObjectView

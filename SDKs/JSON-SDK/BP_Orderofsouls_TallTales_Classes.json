@@ -1,27 +1,27 @@
 {
   "BP_Orderofsouls_TallTales_C": {
     "Super": "CompanyShopkeeper",
-    "FullSize": "0x688",
-    "InheritedSize": "0x670",
+    "FullSize": "0x6a0",
+    "InheritedSize": "0x688",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "SolidHits",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x670"
+        "Offset": "0x688"
       },
       {
         "Name": "NPCDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x678"
+        "Offset": "0x690"
       },
       {
         "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x680"
+        "Offset": "0x698"
       }
     ]
   },

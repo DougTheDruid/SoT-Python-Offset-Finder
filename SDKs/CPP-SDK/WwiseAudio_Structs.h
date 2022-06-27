@@ -16,15 +16,6 @@ public:
 
 
 // Size 0x18
-struct AnimNotify_SoundSwitch
-{
-public:
-	Struct StringAssetReference                                  SkeletalMeshReference;                             // 0x0(0x10)
-	struct FName                                                 SkeletalMeshCategoryName;                          // 0x10(0x8)
-};
-
-
-// Size 0x18
 struct WwiseEventParam
 {
 public:

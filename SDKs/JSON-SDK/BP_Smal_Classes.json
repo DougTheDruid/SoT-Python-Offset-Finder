@@ -2,12 +2,18 @@
   "BP_SmallShip_WindowHatch_C": {
     "Super": "SwitchMechanismTrigger",
     "FullSize": "0x578",
-    "InheritedSize": "0x560",
-    "ClassSize": "0x18",
+    "InheritedSize": "0x558",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x558"
+      },
+      {
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
         "Size": "0x8",
         "Offset": "0x560"
       },

@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_PirateCode_C: public ModalInteractionProxy
 {
 public:
-	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x4e8(0x8)
-	Class StaticMeshComponent*                                   PirateCode;                                        // 0x4f0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x500(0x8)
+	Class StaticMeshComponent*                                   PirateCode;                                        // 0x508(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
 };
 
 

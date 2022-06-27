@@ -28,15 +28,15 @@
   },
   "LevelSequencePlayer": {
     "Super": "MovieSceneSequencePlayer",
-    "FullSize": "0x640",
-    "InheritedSize": "0x600",
+    "FullSize": "0x648",
+    "InheritedSize": "0x608",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "SpawnablesParent",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x600"
+        "Offset": "0x608"
       }
     ]
   },
@@ -75,57 +75,57 @@
   },
   "LevelSequenceActor": {
     "Super": "Actor",
-    "FullSize": "0x440",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x438",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "bAutoPlay",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "PlaybackSettings",
         "Type": "Struct MovieSceneSequencePlaybackSettings",
         "Size": "0x28",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "SequencePlayer",
         "Type": "Class LevelSequencePlayer*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "LevelSequence",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "BurnInOptions",
         "Type": "Class LevelSequenceBurnInOptions*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "BindingOverrides",
         "Type": "Class MovieSceneBindingOverrides*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "SpawnablesParent",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "BurnInInstance",
         "Type": "Class LevelSequenceBurnIn*",
         "Size": "0x8",
-        "Offset": "0x438"
+        "Offset": "0x430"
       }
     ]
   },

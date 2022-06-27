@@ -1,33 +1,33 @@
 {
   "BP_Castaway_C": {
     "Super": "BP_Orderofsouls_TallTales_C",
-    "FullSize": "0x6b0",
-    "InheritedSize": "0x688",
+    "FullSize": "0x6c8",
+    "InheritedSize": "0x6a0",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x688"
+        "Offset": "0x6a0"
       },
       {
         "Name": "ActorPhasing",
         "Type": "Class ActorPhasingComponent*",
         "Size": "0x8",
-        "Offset": "0x690"
+        "Offset": "0x6a8"
       },
       {
         "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x698"
+        "Offset": "0x6b0"
       },
       {
         "Name": "AudioEvents",
         "Type": "TArray<class AudioEvents*>",
         "Size": "0x10",
-        "Offset": "0x6a0"
+        "Offset": "0x6b8"
       }
     ]
   },

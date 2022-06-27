@@ -27,36 +27,36 @@ ChecklistItemsDataAsset:
 ChecklistMap:
   Attributes:
   - Name: CanvasWidth
-    Offset: '0x7d8'
+    Offset: '0x7c8'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x7dc'
+    Offset: '0x7cc'
     Size: '0x4'
     Type: int
   - Name: Font
-    Offset: '0x7e0'
+    Offset: '0x7d0'
     Size: '0x8'
     Type: Class Font*
   - Name: FontScale
-    Offset: '0x7e8'
+    Offset: '0x7d8'
     Size: '0x4'
     Type: float
   - Name: FontLineSpacingScale
-    Offset: '0x7ec'
+    Offset: '0x7dc'
     Size: '0x4'
     Type: float
   - Name: ChecklistMapLayout
-    Offset: '0x7f8'
+    Offset: '0x7e8'
     Size: '0x8'
     Type: Class ChecklistMapLayout*
   - Name: Contents
-    Offset: '0x800'
+    Offset: '0x7f0'
     Size: '0xe8'
     Type: Struct ChecklistMapContents
   ClassSize: '0x150'
-  FullSize: '0x930'
-  InheritedSize: '0x7e0'
+  FullSize: '0x920'
+  InheritedSize: '0x7d0'
   Super: TreasureMap
 ChecklistMapCollectionInterface:
   Attributes: []

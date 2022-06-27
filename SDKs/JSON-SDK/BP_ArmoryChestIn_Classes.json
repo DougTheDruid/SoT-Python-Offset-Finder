@@ -1,15 +1,15 @@
 {
   "BP_ArmoryChestInteraction_C": {
     "Super": "ArmoryChestInteraction",
-    "FullSize": "0x4a0",
-    "InheritedSize": "0x498",
+    "FullSize": "0x498",
+    "InheritedSize": "0x490",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x490"
       }
     ]
   },

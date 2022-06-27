@@ -1,51 +1,119 @@
 {
+  "AbandonedNoteWeightedTextDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Entries",
+        "Type": "TArray<Struct AbandonedNoteWeightedTextEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AbandonedNoteWeightedTextSourceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x178",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "WeightedText",
+        "Type": "Class AbandonedNoteWeightedTextDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "ClueText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "TitleText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x128"
+      }
+    ]
+  },
   "OneShotRewardableObjectBase": {
     "Super": "InteractableObject",
-    "FullSize": "0x4e0",
-    "InheritedSize": "0x460",
+    "FullSize": "0x4d8",
+    "InheritedSize": "0x458",
     "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "InteractableComponent",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x458"
       },
       {
         "Name": "StaticMeshComponent",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x460"
       },
       {
         "Name": "Reward",
         "Type": "Struct RewardId",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x468"
       },
       {
         "Name": "RewardEntitlement",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x470"
       },
       {
         "Name": "InteractionHoldTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x480"
+        "Offset": "0x478"
       },
       {
         "Name": "InteractionRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x484"
+        "Offset": "0x47c"
       },
       {
         "Name": "DisplayName",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x488"
+        "Offset": "0x480"
+      }
+    ]
+  },
+  "PopUpNotificationOnItemWieldedComponent": {
+    "Super": "OnItemWieldedComponent",
+    "FullSize": "0x158",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "Class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x138"
+      }
+    ]
+  },
+  "SirenPuzzleContext": {
+    "Super": "Actor",
+    "FullSize": "0x538",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x170",
+    "Attributes": [
+      {
+        "Name": "PuzzleLocks",
+        "Type": "TArray<Struct SirenPuzzleLockState>",
+        "Size": "0x10",
+        "Offset": "0x3d0"
       }
     ]
   },

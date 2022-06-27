@@ -17,7 +17,7 @@ public:
 class FakeShip: public Actor
 {
 public:
-	TArray<class AttachedItems*>                                 AttachedItems;                                     // 0x3d8(0x10)
+	TArray<class AttachedItems*>                                 AttachedItems;                                     // 0x3d0(0x10)
 };
 
 
@@ -180,26 +180,26 @@ public:
 class Watercraft: public Actor
 {
 public:
-	Class BuoyancyComponent*                                     BuoyancyComponent;                                 // 0x3f8(0x8)
-	Struct WatercraftRolloverCorrector                           RolloverCorrector;                                 // 0x400(0xc)
-	Class ShipNosediveBrake*                                     NosediveBrake;                                     // 0x410(0x8)
-	Class BowSplashContainer*                                    BowSplashContainer;                                // 0x418(0x8)
-	Class StaticMeshComponent*                                   CollisionMesh;                                     // 0x420(0x8)
-	Class StaticMeshComponent*                                   CraftMesh;                                         // 0x428(0x8)
-	Class BoxComponent*                                          OverlapHits;                                       // 0x430(0x8)
-	Class StaticMeshComponent*                                   WaterOcclusionVolume;                              // 0x438(0x8)
-	Class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x440(0x8)
-	struct FName                                                 ClientConvexHullCollisionProfile;                  // 0x448(0x8)
-	Struct NetTimeStampCalculator                                MovementTimeStamp;                                 // 0x450(0x70)
-	Struct RigidBodyErrorCorrection                              PhysicsErrorCorrection;                            // 0x4c0(0x1c)
-	Struct BuoyancySampleMovement                                BuoyancySampleMovement;                            // 0x510(0x68)
-	Class CurveFloat*                                            SpeedToChoppinessScalarCurve;                      // 0x578(0x8)
-	float                                                        DeepWaterSubmersionThreshold;                      // 0x580(0x4)
-	float                                                        BuoyancyChoppinessWhileSinking;                    // 0x584(0x4)
-	bool                                                         IsCritical;                                        // 0x588(0x1)
-	bool                                                         RigidBodyAwake;                                    // 0x589(0x1)
-	bool                                                         InContactWithLand;                                 // 0x58a(0x1)
-	bool                                                         InDeepWater;                                       // 0x58b(0x1)
+	Class BuoyancyComponent*                                     BuoyancyComponent;                                 // 0x3f0(0x8)
+	Struct WatercraftRolloverCorrector                           RolloverCorrector;                                 // 0x3f8(0xc)
+	Class ShipNosediveBrake*                                     NosediveBrake;                                     // 0x408(0x8)
+	Class BowSplashContainer*                                    BowSplashContainer;                                // 0x410(0x8)
+	Class StaticMeshComponent*                                   CollisionMesh;                                     // 0x418(0x8)
+	Class StaticMeshComponent*                                   CraftMesh;                                         // 0x420(0x8)
+	Class BoxComponent*                                          OverlapHits;                                       // 0x428(0x8)
+	Class StaticMeshComponent*                                   WaterOcclusionVolume;                              // 0x430(0x8)
+	Class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x438(0x8)
+	struct FName                                                 ClientConvexHullCollisionProfile;                  // 0x440(0x8)
+	Struct NetTimeStampCalculator                                MovementTimeStamp;                                 // 0x448(0x70)
+	Struct RigidBodyErrorCorrection                              PhysicsErrorCorrection;                            // 0x4b8(0x1c)
+	Struct BuoyancySampleMovement                                BuoyancySampleMovement;                            // 0x508(0x68)
+	Class CurveFloat*                                            SpeedToChoppinessScalarCurve;                      // 0x570(0x8)
+	float                                                        DeepWaterSubmersionThreshold;                      // 0x578(0x4)
+	float                                                        BuoyancyChoppinessWhileSinking;                    // 0x57c(0x4)
+	bool                                                         IsCritical;                                        // 0x580(0x1)
+	bool                                                         RigidBodyAwake;                                    // 0x581(0x1)
+	bool                                                         InContactWithLand;                                 // 0x582(0x1)
+	bool                                                         InDeepWater;                                       // 0x583(0x1)
 };
 
 
@@ -207,40 +207,40 @@ public:
 class Rowboat: public Watercraft
 {
 public:
-	Class ChildActorComponent*                                   LeftSideClamberSpot;                               // 0x758(0x8)
-	Class ChildActorComponent*                                   RightSideClamberSpot;                              // 0x760(0x8)
-	Class ChildActorComponent*                                   ForceSpot;                                         // 0x768(0x8)
-	Class ChildActorComponent*                                   Lantern;                                           // 0x770(0x8)
-	Class ChildActorComponent*                                   RowingSeat;                                        // 0x778(0x8)
-	Class ChildActorComponent*                                   StorageSeat;                                       // 0x780(0x8)
-	Class ShipLiveryComponent*                                   LiveryComponent;                                   // 0x788(0x8)
-	Class ReplicatedShipPartCustomizationComponent*              CustomizationComponent;                            // 0x790(0x8)
-	Struct Vector                                                WaterExclusionOffset;                              // 0x798(0xc)
-	Class TetherCustomisationComponent*                          TetherCustomisationComponent;                      // 0x7a8(0x8)
-	Class HealthComponent*                                       HealthComponent;                                   // 0x7b0(0x8)
-	Class ActorDamageableComponent*                              ActorDamageableComponent;                          // 0x7b8(0x8)
-	Class RammableComponent*                                     RammableComponent;                                 // 0x7c0(0x8)
-	Class ScrapeableComponent*                                   ScrapeableComponent;                               // 0x7c8(0x8)
-	Class RowboatAudioComponent*                                 RowboatAudio;                                      // 0x7d0(0x8)
-	Class BaseHullDragDynamicsDesc*                              HullDragDynamicsDesc;                              // 0x7d8(0x8)
-	Class BowSplashContainer*                                    OarSplashContainer;                                // 0x7e0(0x8)
-	Class MountableComponent*                                    MountableComponent;                                // 0x7e8(0x8)
-	Class CurveFloat*                                            LinearDampingOverTimeWhileBeachedScalarCurve;      // 0x7f0(0x8)
-	Class CurveFloat*                                            AngularDampingOverTimeWhileBeachedScalarCurve;     // 0x7f8(0x8)
-	Struct RowboatDamageEffectData                               DamageEffectData;                                  // 0x800(0x18)
-	Struct RowboatStrainDamageData                               StrainDamageData;                                  // 0x818(0x20)
-	TArray<class AlwaysEnabledInteractables*>                    AlwaysEnabledInteractables;                        // 0x838(0x10)
-	Class ShroudBreakerTrackerComponent*                         ShroudBreakerTrackerComponent;                     // 0x848(0x8)
-	bool                                                         IsBeingLaunched;                                   // 0x850(0x1)
-	bool                                                         IsSinking;                                         // 0x851(0x1)
-	float                                                        MaxPushingAngle;                                   // 0x854(0x4)
-	float                                                        CurrentStrainAmount;                               // 0x858(0x4)
-	bool                                                         IsDocked;                                          // 0x85c(0x1)
-	byte                                                         CoverCollisionChannel;                             // 0x85e(0x1)
-	float                                                        UnderCoverCheckInterval;                           // 0x860(0x4)
-	float                                                        UnderCoverHeight;                                  // 0x864(0x4)
-	TArray<Struct Vector>                                        RelativeUnderCoverProbeRoots;                      // 0x868(0x10)
-	byte                                                         TrackedActorType;                                  // 0x878(0x1)
+	Class ChildActorComponent*                                   LeftSideClamberSpot;                               // 0x750(0x8)
+	Class ChildActorComponent*                                   RightSideClamberSpot;                              // 0x758(0x8)
+	Class ChildActorComponent*                                   ForceSpot;                                         // 0x760(0x8)
+	Class ChildActorComponent*                                   Lantern;                                           // 0x768(0x8)
+	Class ChildActorComponent*                                   RowingSeat;                                        // 0x770(0x8)
+	Class ChildActorComponent*                                   StorageSeat;                                       // 0x778(0x8)
+	Class ShipLiveryComponent*                                   LiveryComponent;                                   // 0x780(0x8)
+	Class ReplicatedShipPartCustomizationComponent*              CustomizationComponent;                            // 0x788(0x8)
+	Struct Vector                                                WaterExclusionOffset;                              // 0x790(0xc)
+	Class TetherCustomisationComponent*                          TetherCustomisationComponent;                      // 0x7a0(0x8)
+	Class HealthComponent*                                       HealthComponent;                                   // 0x7a8(0x8)
+	Class ActorDamageableComponent*                              ActorDamageableComponent;                          // 0x7b0(0x8)
+	Class RammableComponent*                                     RammableComponent;                                 // 0x7b8(0x8)
+	Class ScrapeableComponent*                                   ScrapeableComponent;                               // 0x7c0(0x8)
+	Class RowboatAudioComponent*                                 RowboatAudio;                                      // 0x7c8(0x8)
+	Class BaseHullDragDynamicsDesc*                              HullDragDynamicsDesc;                              // 0x7d0(0x8)
+	Class BowSplashContainer*                                    OarSplashContainer;                                // 0x7d8(0x8)
+	Class MountableComponent*                                    MountableComponent;                                // 0x7e0(0x8)
+	Class CurveFloat*                                            LinearDampingOverTimeWhileBeachedScalarCurve;      // 0x7e8(0x8)
+	Class CurveFloat*                                            AngularDampingOverTimeWhileBeachedScalarCurve;     // 0x7f0(0x8)
+	Struct RowboatDamageEffectData                               DamageEffectData;                                  // 0x7f8(0x18)
+	Struct RowboatStrainDamageData                               StrainDamageData;                                  // 0x810(0x20)
+	TArray<class AlwaysEnabledInteractables*>                    AlwaysEnabledInteractables;                        // 0x830(0x10)
+	Class ShroudBreakerTrackerComponent*                         ShroudBreakerTrackerComponent;                     // 0x840(0x8)
+	bool                                                         IsBeingLaunched;                                   // 0x848(0x1)
+	bool                                                         IsSinking;                                         // 0x849(0x1)
+	float                                                        MaxPushingAngle;                                   // 0x84c(0x4)
+	float                                                        CurrentStrainAmount;                               // 0x850(0x4)
+	bool                                                         IsDocked;                                          // 0x854(0x1)
+	byte                                                         CoverCollisionChannel;                             // 0x856(0x1)
+	float                                                        UnderCoverCheckInterval;                           // 0x858(0x4)
+	float                                                        UnderCoverHeight;                                  // 0x85c(0x4)
+	TArray<Struct Vector>                                        RelativeUnderCoverProbeRoots;                      // 0x860(0x10)
+	byte                                                         TrackedActorType;                                  // 0x870(0x1)
 };
 
 
@@ -278,8 +278,8 @@ public:
 class StorageSeat: public Seat
 {
 public:
-	class                                                        StorageInteractionInput;                           // 0x678(0x8)
-	Class StorageContainerComponent*                             StorageContainerComponent;                         // 0x680(0x8)
+	class                                                        StorageInteractionInput;                           // 0x670(0x8)
+	Class StorageContainerComponent*                             StorageContainerComponent;                         // 0x678(0x8)
 };
 
 

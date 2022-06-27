@@ -1,8 +1,8 @@
 {
   "AthenaFFTWater": {
     "Super": "FFTWater",
-    "FullSize": "0x440",
-    "InheritedSize": "0x418",
+    "FullSize": "0x438",
+    "InheritedSize": "0x410",
     "ClassSize": "0x28",
     "Attributes": []
   },
@@ -15,8 +15,8 @@
   },
   "AthenaWaterEmissionVolume": {
     "Super": "WaterEmissionVolume",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d8",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
     "Attributes": []
   },
@@ -50,15 +50,15 @@
   },
   "FFTWaterService": {
     "Super": "Actor",
-    "FullSize": "0x450",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x448",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "ReplicatedServerCreationTime",
         "Type": "double",
         "Size": "0x8",
-        "Offset": "0x448"
+        "Offset": "0x440"
       }
     ]
   },

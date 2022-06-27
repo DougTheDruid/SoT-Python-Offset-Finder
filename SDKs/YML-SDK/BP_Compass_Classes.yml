@@ -3,10 +3,10 @@
 BP_Compass_C:
   Attributes:
   - Name: InventoryItem
-    Offset: '0x870'
+    Offset: '0x860'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   ClassSize: '0x8'
-  FullSize: '0x878'
-  InheritedSize: '0x870'
+  FullSize: '0x868'
+  InheritedSize: '0x860'
   Super: Compass

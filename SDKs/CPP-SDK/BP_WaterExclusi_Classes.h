@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_WaterExclusionVolume_C: public StaticMeshActor
 {
 public:
-	Class WaterPlaneExclusionComponent*                          WaterPlaneExclusion;                               // 0x3e0(0x8)
+	Class WaterPlaneExclusionComponent*                          WaterPlaneExclusion;                               // 0x3d8(0x8)
 };
 
 

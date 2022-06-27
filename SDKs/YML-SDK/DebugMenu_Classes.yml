@@ -3,8 +3,8 @@
 DebugMenu:
   Attributes: []
   ClassSize: '0xb0'
-  FullSize: '0x480'
-  InheritedSize: '0x3d0'
+  FullSize: '0x478'
+  InheritedSize: '0x3c8'
   Super: Actor
 DebugMenuComponent:
   Attributes:

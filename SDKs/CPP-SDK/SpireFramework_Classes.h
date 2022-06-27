@@ -34,7 +34,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x10
 class SpireResource: public Actor
 {
 public:
@@ -60,9 +60,9 @@ public:
 class SpireService: public Actor
 {
 public:
-	Class SpireServiceParams*                                    Params;                                            // 0x3d8(0x8)
-	TArray<Struct ServerSpireInfo>                               ServerOnlySpireInfo;                               // 0x3e0(0x10)
-	TArray<Struct SpireInfo>                                     SpireLevels;                                       // 0x3f0(0x10)
+	Class SpireServiceParams*                                    Params;                                            // 0x3d0(0x8)
+	TArray<Struct ServerSpireInfo>                               ServerOnlySpireInfo;                               // 0x3d8(0x10)
+	TArray<Struct SpireInfo>                                     SpireLevels;                                       // 0x3e8(0x10)
 };
 
 
@@ -87,7 +87,7 @@ public:
 class SpireShippingDrawDebugActorSphereCollection: public ShippingDebugActorSphereCollection
 {
 public:
-	TArray<Weakclass SpireList>                                  SpireList;                                         // 0x3e0(0x10)
+	TArray<Weakclass SpireList>                                  SpireList;                                         // 0x3d8(0x10)
 };
 
 

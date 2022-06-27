@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xb8
+// Size 0xc0
 class AthenaCheatManager: public CheatManager
 {
 public:

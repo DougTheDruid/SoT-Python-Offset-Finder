@@ -3,18 +3,18 @@
 BP_PirateCode_C:
   Attributes:
   - Name: NPCDialog
-    Offset: '0x4e8'
+    Offset: '0x500'
     Size: '0x8'
     Type: Class NPCDialogComponent*
   - Name: PirateCode
-    Offset: '0x4f0'
+    Offset: '0x508'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x4f8'
+    Offset: '0x510'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x18'
-  FullSize: '0x500'
-  InheritedSize: '0x4e8'
+  FullSize: '0x518'
+  InheritedSize: '0x500'
   Super: ModalInteractionProxy

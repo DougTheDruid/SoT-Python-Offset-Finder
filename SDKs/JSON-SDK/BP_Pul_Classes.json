@@ -1,27 +1,51 @@
 {
   "BP_PulleyMechanism_C": {
     "Super": "PulleyMechanism",
-    "FullSize": "0x678",
-    "InheritedSize": "0x660",
+    "FullSize": "0x670",
+    "InheritedSize": "0x658",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "None",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x660"
+        "Offset": "0x658"
       },
       {
         "Name": "None",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x66c"
+        "Offset": "0x664"
       },
       {
-        "Name": "None",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x670"
+        "Name": "CallFunc_WwiseEmitterComponentPostEvent_ReturnValue2",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "CallFunc_WwiseEmitterComponentPostEvent_ReturnValue3",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "CallFunc_WwiseEmitterComponentPostEvent_ReturnValue4",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "CallFunc_Add_FloatFloat_ReturnValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "K2Node_MakeStruct_LinearColor",
+        "Type": "Struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x68"
       }
     ]
   },

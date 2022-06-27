@@ -13,6 +13,52 @@
       }
     ]
   },
+  "BP_Trinket_TeaSet_01_a_C": {
+    "Super": "BP_Trinket_StandingSmall_C",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "cmn_wpnsmith_item_05_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "bld_enc_shop_kettle_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "cmn_wpnsmith_item_05_a1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "BP_Trinket_Tankards_01_a_C": {
+    "Super": "BP_Trinket_StandingSmall_C",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "tls_tankard_01_b",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "tls_tankard_01_b1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
   "BP_Trinket_PotionBottles_01_a_C": {
     "Super": "BP_Trinket_StandingSmall_C",
     "FullSize": "0x410",
@@ -88,80 +134,6 @@
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
-      }
-    ]
-  },
-  "BP_Trinket_DishStack_01_a_C": {
-    "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "cmn_clay_dish_stack_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      }
-    ]
-  },
-  "BP_Trinket_Dish_01_a_C": {
-    "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "cmn_clay_dish_01_b",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      }
-    ]
-  },
-  "BP_Trinket_TeaSet_01_a_C": {
-    "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x410",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "cmn_wpnsmith_item_05_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "bld_enc_shop_kettle_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "cmn_wpnsmith_item_05_a1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      }
-    ]
-  },
-  "BP_Trinket_Tankards_01_a_C": {
-    "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "tls_tankard_01_b",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "tls_tankard_01_b1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
       }
     ]
   },
@@ -259,6 +231,34 @@
     "Attributes": [
       {
         "Name": "gmp_fishing_bones_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_DishStack_01_a_C": {
+    "Super": "BP_Trinket_StandingSmall_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "cmn_clay_dish_stack_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "BP_Trinket_Dish_01_a_C": {
+    "Super": "BP_Trinket_StandingSmall_C",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "cmn_clay_dish_01_b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"

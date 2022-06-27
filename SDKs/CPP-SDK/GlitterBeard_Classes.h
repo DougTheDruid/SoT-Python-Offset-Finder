@@ -44,7 +44,7 @@ public:
 class GlitterbeardSlidingDoor: public SlidingDoor
 {
 public:
-	Class EffectBlendControllerComponent*                        DecalBlendComponent;                               // 0x538(0x8)
+	Class EffectBlendControllerComponent*                        DecalBlendComponent;                               // 0x530(0x8)
 };
 
 
@@ -62,22 +62,22 @@ public:
 };
 
 
-// Size 0x300
+// Size 0x308
 class GlitterBeardTree: public Actor
 {
 public:
-	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x3f8(0x8)
-	Class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x400(0x8)
-	float                                                        LanternLightDelay;                                 // 0x408(0x4)
-	Class GlitterBeardUnlockVFXCoordinatorComponent*             UnlockVFXCoordinatorComponent;                     // 0x410(0x8)
-	Class GlitterBeardTelemetryComponent*                        TelemetryComponent;                                // 0x418(0x8)
-	class                                                        VocalShanty;                                       // 0x420(0x8)
-	Class WwiseEvent*                                            VocalsFadeEvent;                                   // 0x428(0x8)
-	float                                                        VocalsFadeDelay;                                   // 0x430(0x4)
-	float                                                        UnlockDelay;                                       // 0x434(0x4)
-	Class GlitterBeardFinaleCoordinatorComponent*                FinaleCoordinator;                                 // 0x438(0x8)
-	Class LandmarkReactionTriggerComponent*                      LandmarkReactionTrigger;                           // 0x440(0x8)
-	float                                                        DistanceFromTreeToPauseAISpawn;                    // 0x448(0x4)
+	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x3f0(0x8)
+	Class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x3f8(0x8)
+	float                                                        LanternLightDelay;                                 // 0x400(0x4)
+	Class GlitterBeardUnlockVFXCoordinatorComponent*             UnlockVFXCoordinatorComponent;                     // 0x408(0x8)
+	Class GlitterBeardTelemetryComponent*                        TelemetryComponent;                                // 0x410(0x8)
+	class                                                        VocalShanty;                                       // 0x418(0x8)
+	Class WwiseEvent*                                            VocalsFadeEvent;                                   // 0x420(0x8)
+	float                                                        VocalsFadeDelay;                                   // 0x428(0x4)
+	float                                                        UnlockDelay;                                       // 0x42c(0x4)
+	Class GlitterBeardFinaleCoordinatorComponent*                FinaleCoordinator;                                 // 0x430(0x8)
+	Class LandmarkReactionTriggerComponent*                      LandmarkReactionTrigger;                           // 0x438(0x8)
+	float                                                        DistanceFromTreeToPauseAISpawn;                    // 0x440(0x4)
 	Class SlidingDoor*                                           HideoutDoor;                                       // 0x678(0x8)
 	Struct WwiseEmitter                                          SoundEmitter;                                      // 0x680(0x20)
 };

@@ -96,19 +96,19 @@ public:
 class Tether: public Actor
 {
 public:
-	Class SceneComponent*                                        TetherPositionAnchorComponent;                     // 0x4c8(0x8)
-	Class SphereComponent*                                       SourcePhysicsHandle;                               // 0x4d0(0x8)
-	Class SphereComponent*                                       TargetPhysicsHandle;                               // 0x4d8(0x8)
-	Class DistanceJointComponent*                                JointComponent;                                    // 0x4e0(0x8)
-	Class Actor*                                                 SourceActor;                                       // 0x4e8(0x8)
-	Class Actor*                                                 TargetActor;                                       // 0x4f0(0x8)
-	float                                                        SlackCm;                                           // 0x4f8(0x4)
-	float                                                        MaxLengthWhenGrowing;                              // 0x4fc(0x4)
-	bool                                                         HasAttached;                                       // 0x508(0x1)
-	bool                                                         HasSourceActor;                                    // 0x509(0x1)
-	bool                                                         HasTargetActor;                                    // 0x50a(0x1)
-	bool                                                         IsSlackEnabled;                                    // 0x50b(0x1)
-	byte                                                         CurrentTetherMode;                                 // 0x50c(0x1)
+	Class SceneComponent*                                        TetherPositionAnchorComponent;                     // 0x4c0(0x8)
+	Class SphereComponent*                                       SourcePhysicsHandle;                               // 0x4c8(0x8)
+	Class SphereComponent*                                       TargetPhysicsHandle;                               // 0x4d0(0x8)
+	Class DistanceJointComponent*                                JointComponent;                                    // 0x4d8(0x8)
+	Class Actor*                                                 SourceActor;                                       // 0x4e0(0x8)
+	Class Actor*                                                 TargetActor;                                       // 0x4e8(0x8)
+	float                                                        SlackCm;                                           // 0x4f0(0x4)
+	float                                                        MaxLengthWhenGrowing;                              // 0x4f4(0x4)
+	bool                                                         HasAttached;                                       // 0x500(0x1)
+	bool                                                         HasSourceActor;                                    // 0x501(0x1)
+	bool                                                         HasTargetActor;                                    // 0x502(0x1)
+	bool                                                         IsSlackEnabled;                                    // 0x503(0x1)
+	byte                                                         CurrentTetherMode;                                 // 0x504(0x1)
 };
 
 

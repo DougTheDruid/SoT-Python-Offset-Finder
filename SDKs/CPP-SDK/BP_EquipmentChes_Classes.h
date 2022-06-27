@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_EquipmentChest_C: public PossessionsChest
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x568(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x580(0x8)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class BP_EquipmentChestInteraction_C: public EquipmentChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x498(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x490(0x8)
 };
 
 

@@ -3,14 +3,14 @@
 BP_DeepSeaRegion_C:
   Attributes:
   - Name: PreviewCapsuleTwo
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class CapsuleComponent*
   - Name: PreviewCapsuleOne
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class CapsuleComponent*
   ClassSize: '0x10'
-  FullSize: '0x450'
-  InheritedSize: '0x440'
+  FullSize: '0x448'
+  InheritedSize: '0x438'
   Super: DeepSeaRegion

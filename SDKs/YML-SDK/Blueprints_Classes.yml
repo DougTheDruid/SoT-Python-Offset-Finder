@@ -3,22 +3,22 @@
 BP_ShroudedDeep_Belle_C:
   Attributes:
   - Name: None
-    Offset: '0x688'
+    Offset: '0x6a0'
     Size: '0x8'
     Type: Class CompanyRegionComponent*
   - Name: None
-    Offset: '0x690'
+    Offset: '0x6a8'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: None
-    Offset: '0x698'
+    Offset: '0x6b0'
     Size: '0x8'
     Type: Class ObjectMessagingDispatcherComponent*
   - Name: None
-    Offset: '0x6a0'
+    Offset: '0x6b8'
     Size: '0x8'
     Type: Class ActorPhasingComponent*
   ClassSize: '0x20'
-  FullSize: '0x6a8'
-  InheritedSize: '0x688'
+  FullSize: '0x6c0'
+  InheritedSize: '0x6a0'
   Super: BP_SoleTrader_C

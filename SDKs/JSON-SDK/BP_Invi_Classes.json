@@ -1,33 +1,33 @@
 {
   "BP_Invisible_OpenDoor_MechanismTrigger_C": {
     "Super": "SwitchMechanismTrigger",
-    "FullSize": "0x580",
-    "InheritedSize": "0x560",
+    "FullSize": "0x578",
+    "InheritedSize": "0x558",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Arrow",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x558"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x560"
       },
       {
         "Name": "LeverMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x568"
       },
       {
         "Name": "BaseMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x570"
       }
     ]
   },

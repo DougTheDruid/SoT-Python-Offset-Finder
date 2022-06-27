@@ -88,11 +88,12 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x28
 class DeliverableRequirementsDataAsset: public DataAsset
 {
 public:
 	TArray<class Requirements*>                                  Requirements;                                      // 0x28(0x10)
+	Struct DeliverableRequirementFeatureOverride                 FeatureOverrideRequirements;                       // 0x38(0x18)
 };
 
 

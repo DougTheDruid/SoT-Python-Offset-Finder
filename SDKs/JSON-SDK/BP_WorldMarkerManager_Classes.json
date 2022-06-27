@@ -1,21 +1,21 @@
 {
   "BP_WorldMarkerManager_C": {
     "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "WorldMarkerManager",
         "Type": "Class WorldMarkerManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       }
     ]
   },

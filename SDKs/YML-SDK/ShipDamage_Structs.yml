@@ -33,6 +33,13 @@ DistanceAndLevelOfDamage:
     Size: '0x4'
     Type: int
   ClassSize: '0x8'
+EventRestoreShip:
+  Attributes:
+  - Name: OnlyRepaired
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
 EventShipDamageApplied:
   Attributes:
   - Name: Ship
@@ -108,6 +115,13 @@ HullDamageZoneInfo:
     Size: '0x10'
     Type: TArray<Struct HullDamageHit>
   ClassSize: '0x30'
+SendShipRestoredRpc:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x20'
 ShipDamageParams:
   Attributes:
   - Name: DamageParams
@@ -121,4 +135,8 @@ ShipPartLevelsOfDamage:
     Offset: '0x20'
     Size: '0x10'
     Type: TArray<Struct DistanceAndLevelOfDamage>
-  ClassSize: '0x30'
+  - Name: FeatureName
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Struct FeatureFlag
+  ClassSize: '0x38'

@@ -6,17 +6,51 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x10
+class AbandonedNoteWeightedTextDataAsset: public DataAsset
+{
+public:
+	TArray<Struct AbandonedNoteWeightedTextEntry>                Entries;                                           // 0x28(0x10)
+};
+
+
+// Size 0xb0
+class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
+{
+public:
+	Class AbandonedNoteWeightedTextDataAsset*                    WeightedText;                                      // 0xe8(0x8)
+	Struct FText                                                 ClueText;                                          // 0xf0(0x38)
+	Struct FText                                                 TitleText;                                         // 0x128(0x38)
+};
+
+
 // Size 0x80
 class OneShotRewardableObjectBase: public InteractableObject
 {
 public:
-	Class InteractableComponent*                                 InteractableComponent;                             // 0x460(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x468(0x8)
-	Struct RewardId                                              Reward;                                            // 0x470(0x8)
-	class                                                        RewardEntitlement;                                 // 0x478(0x8)
-	float                                                        InteractionHoldTime;                               // 0x480(0x4)
-	float                                                        InteractionRadius;                                 // 0x484(0x4)
-	Struct FText                                                 DisplayName;                                       // 0x488(0x38)
+	Class InteractableComponent*                                 InteractableComponent;                             // 0x458(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x460(0x8)
+	Struct RewardId                                              Reward;                                            // 0x468(0x8)
+	class                                                        RewardEntitlement;                                 // 0x470(0x8)
+	float                                                        InteractionHoldTime;                               // 0x478(0x4)
+	float                                                        InteractionRadius;                                 // 0x47c(0x4)
+	Struct FText                                                 DisplayName;                                       // 0x480(0x38)
+};
+
+
+// Size 0x20
+class PopUpNotificationOnItemWieldedComponent: public OnItemWieldedComponent
+{
+public:
+	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x138(0x8)
+};
+
+
+// Size 0x170
+class SirenPuzzleContext: public Actor
+{
+public:
+	TArray<Struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d0(0x10)
 };
 
 

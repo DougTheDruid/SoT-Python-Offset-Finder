@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_HumanoidActionStateCreatorDefinition_C: public HumanoidActionStateCreatorDefinition
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x970(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x990(0x8)
 };
 
 

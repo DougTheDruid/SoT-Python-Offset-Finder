@@ -9,8 +9,8 @@ DebugWindInterface:
 DebugWindService:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0x518'
-  InheritedSize: '0x508'
+  FullSize: '0x510'
+  InheritedSize: '0x500'
   Super: WindService
 MockWindService:
   Attributes: []
@@ -55,28 +55,28 @@ WindInterface:
 WindService:
   Attributes:
   - Name: GlobalWindSource
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class WindDirectionalSource*
   - Name: CurrentWindAngle
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x4'
     Type: float
   - Name: CurrentWindMagnitude
-    Offset: '0x3fc'
+    Offset: '0x3f4'
     Size: '0x4'
     Type: float
   - Name: WindZones
-    Offset: '0x4e8'
+    Offset: '0x4e0'
     Size: '0x10'
     Type: TArray<Interface WindZones>
   - Name: ExtraWind
-    Offset: '0x4f8'
+    Offset: '0x4f0'
     Size: '0x10'
     Type: TArray<Struct ExtraWind>
   ClassSize: '0x138'
-  FullSize: '0x508'
-  InheritedSize: '0x3d0'
+  FullSize: '0x500'
+  InheritedSize: '0x3c8'
   Super: Actor
 WindServiceParamsFunctionLibrary:
   Attributes: []

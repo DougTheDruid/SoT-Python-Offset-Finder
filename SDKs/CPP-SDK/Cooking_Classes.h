@@ -121,15 +121,15 @@ public:
 class CookingPot: public InteractableBase
 {
 public:
-	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x400(0x8)
-	Class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x408(0x8)
-	Class CookerComponent*                                       CookerComponent;                                   // 0x410(0x8)
-	float                                                        HoldToInteractTime;                                // 0x418(0x4)
-	Struct FText                                                 NotWieldingCookableItemTooltip;                    // 0x420(0x38)
-	Struct FText                                                 WieldingCookableItemTooltip;                       // 0x458(0x38)
-	Struct FText                                                 TakeItemTooltip;                                   // 0x490(0x38)
-	Struct FText                                                 CannotTakeItemTooltip;                             // 0x4c8(0x38)
-	Struct FText                                                 MixInItemTooltip;                                  // 0x500(0x38)
+	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x3f8(0x8)
+	Class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x400(0x8)
+	Class CookerComponent*                                       CookerComponent;                                   // 0x408(0x8)
+	float                                                        HoldToInteractTime;                                // 0x410(0x4)
+	Struct FText                                                 NotWieldingCookableItemTooltip;                    // 0x418(0x38)
+	Struct FText                                                 WieldingCookableItemTooltip;                       // 0x450(0x38)
+	Struct FText                                                 TakeItemTooltip;                                   // 0x488(0x38)
+	Struct FText                                                 CannotTakeItemTooltip;                             // 0x4c0(0x38)
+	Struct FText                                                 MixInItemTooltip;                                  // 0x4f8(0x38)
 };
 
 

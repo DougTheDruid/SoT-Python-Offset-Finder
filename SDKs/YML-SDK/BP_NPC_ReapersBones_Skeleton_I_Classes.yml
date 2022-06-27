@@ -3,14 +3,14 @@
 BP_NPC_ReapersBones_Skeleton_InCage_C:
   Attributes:
   - Name: AnimNotifyWwiseEmitter
-    Offset: '0x668'
+    Offset: '0x680'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   - Name: SolidHits
-    Offset: '0x670'
+    Offset: '0x688'
     Size: '0x8'
     Type: Class CapsuleComponent*
   ClassSize: '0x10'
-  FullSize: '0x678'
-  InheritedSize: '0x668'
+  FullSize: '0x690'
+  InheritedSize: '0x680'
   Super: NPC

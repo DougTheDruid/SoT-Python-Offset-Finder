@@ -97,51 +97,51 @@
   },
   "ChecklistMap": {
     "Super": "TreasureMap",
-    "FullSize": "0x930",
-    "InheritedSize": "0x7e0",
+    "FullSize": "0x920",
+    "InheritedSize": "0x7d0",
     "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x7d8"
+        "Offset": "0x7c8"
       },
       {
         "Name": "CanvasHeight",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x7dc"
+        "Offset": "0x7cc"
       },
       {
         "Name": "Font",
         "Type": "Class Font*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x7d0"
       },
       {
         "Name": "FontScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7e8"
+        "Offset": "0x7d8"
       },
       {
         "Name": "FontLineSpacingScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7ec"
+        "Offset": "0x7dc"
       },
       {
         "Name": "ChecklistMapLayout",
         "Type": "Class ChecklistMapLayout*",
         "Size": "0x8",
-        "Offset": "0x7f8"
+        "Offset": "0x7e8"
       },
       {
         "Name": "Contents",
         "Type": "Struct ChecklistMapContents",
         "Size": "0xe8",
-        "Offset": "0x800"
+        "Offset": "0x7f0"
       }
     ]
   },

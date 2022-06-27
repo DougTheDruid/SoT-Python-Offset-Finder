@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Castaway_Staff_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3c8(0x8)
 };
 
 

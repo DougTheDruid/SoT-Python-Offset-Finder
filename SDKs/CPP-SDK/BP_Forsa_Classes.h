@@ -6,24 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
-class BP_ForsakenHunter_BellesBuoy_C: public Actor
-{
-public:
-	Class PointLightComponent*                                   None;                                              // 0x3d0(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3e0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3e8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3f0(0x8)
-};
-
-
 // Size 0x10
 class BP_ForsakenHunter_Larinna_C: public BP_SoleTrader_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x688(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x690(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x6a0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x6a8(0x8)
 };
 
 

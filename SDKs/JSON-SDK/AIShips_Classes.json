@@ -566,21 +566,21 @@
   },
   "ShipProxyPawn": {
     "Super": "Pawn",
-    "FullSize": "0x480",
-    "InheritedSize": "0x448",
+    "FullSize": "0x478",
+    "InheritedSize": "0x440",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "Ship",
         "Type": "Class Ship*",
         "Size": "0x8",
-        "Offset": "0x448"
+        "Offset": "0x440"
       },
       {
         "Name": "SpawnTargetShip",
         "Type": "Class Ship*",
         "Size": "0x8",
-        "Offset": "0x450"
+        "Offset": "0x448"
       }
     ]
   },
@@ -908,8 +908,8 @@
   "AIShipObstacleService": {
     "Super": "Actor",
     "FullSize": "0x450",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x80",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x88",
     "Attributes": []
   },
   "AIShipServiceInterface": {
@@ -921,15 +921,15 @@
   },
   "AIShipService": {
     "Super": "Actor",
-    "FullSize": "0x700",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x6f8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x330",
     "Attributes": [
       {
         "Name": "Params",
         "Type": "Class AIShipServiceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       }
     ]
   },
@@ -942,33 +942,33 @@
   },
   "AthenaAIShipController": {
     "Super": "AthenaAIControllerBase",
-    "FullSize": "0x768",
-    "InheritedSize": "0x618",
+    "FullSize": "0x760",
+    "InheritedSize": "0x610",
     "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "BTAsset",
         "Type": "Class BehaviorTree*",
         "Size": "0x8",
-        "Offset": "0x618"
+        "Offset": "0x610"
       },
       {
         "Name": "ShipParamsDataAsset",
         "Type": "Class AthenaAIShipControllerParamsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x638"
+        "Offset": "0x630"
       },
       {
         "Name": "StatusEffectManagerComponent",
         "Type": "Class StatusEffectManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x638"
       },
       {
         "Name": "AnchorDynamicsParams",
         "Type": "Struct StandardAnchorDynamicsParameters",
         "Size": "0x28",
-        "Offset": "0x648"
+        "Offset": "0x640"
       }
     ]
   },

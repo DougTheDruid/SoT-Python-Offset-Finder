@@ -8,8 +8,8 @@
   },
   "BP_fod_PorkMeatRaw_00_a_ItemProxy_C": {
     "Super": "BP_ProxyIngestible_Retractable_C",
-    "FullSize": "0x7b8",
-    "InheritedSize": "0x7b8",
+    "FullSize": "0x7b0",
+    "InheritedSize": "0x7b0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -22,34 +22,34 @@
   },
   "BP_fod_PorkMeatRaw_00_a_Wieldable_C": {
     "Super": "BP_StaticWieldableIngestible_C",
-    "FullSize": "0x858",
-    "InheritedSize": "0x858",
+    "FullSize": "0x848",
+    "InheritedSize": "0x848",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_fod_PorkMeatRaw_00_a_ItemInfo_C": {
     "Super": "BP_MeatItemInfo_C",
-    "FullSize": "0x580",
-    "InheritedSize": "0x568",
+    "FullSize": "0x578",
+    "InheritedSize": "0x560",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "MaterialManipulationSettings",
         "Type": "Class MaterialManipulationSettingsComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x560"
       },
       {
         "Name": "LightweightStatusEffectManager",
         "Type": "Class LightWeightStatusEffectManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x568"
       },
       {
         "Name": "Cookable",
         "Type": "Class CookableComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x570"
       }
     ]
   },

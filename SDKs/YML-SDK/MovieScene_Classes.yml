@@ -80,6 +80,12 @@ MovieSceneBindingOwnerInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+MovieSceneCameraDockingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 MovieSceneFolder:
   Attributes:
   - Name: FolderName
@@ -202,8 +208,12 @@ MovieSceneSequencePlayer:
     Offset: '0x3f0'
     Size: '0x28'
     Type: Struct MovieSceneSequencePlaybackSettings
-  ClassSize: '0x5d8'
-  FullSize: '0x600'
+  - Name: InteractingCharacter
+    Offset: '0x5e8'
+    Size: '0x8'
+    Type: Class Character*
+  ClassSize: '0x5e0'
+  FullSize: '0x608'
   InheritedSize: '0x28'
   Super: Object
 MovieSceneSignedObject:

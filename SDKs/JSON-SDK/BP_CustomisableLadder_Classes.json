@@ -1,81 +1,81 @@
 {
   "BP_CustomisableLadder_C": {
     "Super": "Ladder",
-    "FullSize": "0x648",
-    "InheritedSize": "0x5c0",
+    "FullSize": "0x638",
+    "InheritedSize": "0x5b0",
     "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x5c0"
+        "Offset": "0x5b0"
       },
       {
         "Name": "InteractableComponent",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x5c8"
+        "Offset": "0x5b8"
       },
       {
         "Name": "Ladder Cap",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5d0"
+        "Offset": "0x5c0"
       },
       {
         "Name": "LadderCustomisationDefinition",
         "Type": "Struct CustomisableLadderDefinitionStruct",
         "Size": "0x20",
-        "Offset": "0x5d8"
+        "Offset": "0x5c8"
       },
       {
         "Name": "OffTopSplineComponentPositions",
         "Type": "TArray<Struct InteractOffset>",
         "Size": "0x10",
-        "Offset": "0x5f8"
+        "Offset": "0x5e8"
       },
       {
         "Name": "OnTopSplineComponentPositions",
         "Type": "TArray<Struct Vector>",
         "Size": "0x10",
-        "Offset": "0x608"
+        "Offset": "0x5f8"
       },
       {
         "Name": "Steps",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x618"
+        "Offset": "0x608"
       },
       {
         "Name": "Material Override",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x620"
+        "Offset": "0x610"
       },
       {
         "Name": "StepHeight",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x628"
+        "Offset": "0x618"
       },
       {
         "Name": "Interactable Position",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x62c"
+        "Offset": "0x61c"
       },
       {
         "Name": "Interactable Scale",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x638"
+        "Offset": "0x628"
       },
       {
         "Name": "Minimum Steps",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x644"
+        "Offset": "0x634"
       }
     ]
   },

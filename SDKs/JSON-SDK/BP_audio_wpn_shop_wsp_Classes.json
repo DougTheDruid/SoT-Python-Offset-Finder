@@ -1,45 +1,45 @@
 {
   "BP_audio_wpn_shop_wsp_C": {
     "Super": "Actor",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "Triton",
         "Type": "Class TritonComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "AudioPortal",
         "Type": "Class AudioPortalComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "WwiseEmitter",
         "Type": "Class WwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "AudioSpace",
         "Type": "Class AudioSpaceComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "Scene",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       }
     ]
   },

@@ -3,54 +3,86 @@
 BP_Crest_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: TextCanvasRenderTarget
+  - Name: VFX_Back
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: VFX_Front
     Offset: '0x408'
     Size: '0x8'
-    Type: Class CanvasRenderTarget2D*
-  - Name: BlurCanvasRenderTarget
+    Type: Class ParticleSystemComponent*
+  - Name: TextCanvasRenderTarget
     Offset: '0x410'
     Size: '0x8'
-    Type: Class CanvasRenderTarget2D*
-  - Name: BevelCanvasRenderTarget
+    Type: Class MaybeCompressedCanvasRenderTarget2D*
+  - Name: BlurCanvasRenderTarget
     Offset: '0x418'
     Size: '0x8'
-    Type: Class CanvasRenderTarget2D*
-  - Name: BlurCanvasMaterial
+    Type: Class MaybeCompressedCanvasRenderTarget2D*
+  - Name: BevelCanvasRenderTarget
     Offset: '0x420'
     Size: '0x8'
-    Type: Class Material*
-  - Name: BevelCanvasMaterial
+    Type: Class MaybeCompressedCanvasRenderTarget2D*
+  - Name: BlurCanvasMaterial
     Offset: '0x428'
     Size: '0x8'
     Type: Class Material*
-  - Name: DynamicBlurCanvasMaterial
+  - Name: BevelCanvasMaterial
     Offset: '0x430'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
-  - Name: DynamicBevelCanvasMaterial
+    Type: Class Material*
+  - Name: DynamicBlurCanvasMaterial
     Offset: '0x438'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: CrestDynamicMaterial
+  - Name: DynamicBevelCanvasMaterial
     Offset: '0x440'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: CanvasWidth
+  - Name: CrestDynamicMaterial
     Offset: '0x448'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: CanvasWidth
+    Offset: '0x450'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x44c'
+    Offset: '0x454'
     Size: '0x4'
     Type: int
   - Name: Font
-    Offset: '0x450'
+    Offset: '0x458'
     Size: '0x8'
     Type: Class Font*
-  ClassSize: '0x58'
-  FullSize: '0x458'
-  InheritedSize: '0x400'
+  - Name: NameplatePool
+    Offset: '0x460'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: EmitterCreationParams
+    Offset: '0x468'
+    Size: '0x28'
+    Type: Struct WwiseEmitterCreationParams
+  - Name: Cooldown
+    Offset: '0x490'
+    Size: '0x4'
+    Type: float
+  - Name: FontInfo
+    Offset: '0x498'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: VFXSizeVariants
+    Offset: '0x4d8'
+    Size: '0x10'
+    Type: TArray<class VFXSizeVariants*>
+  - Name: NameSizeIndex
+    Offset: '0x4e8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0xf4'
+  FullSize: '0x4ec'
+  InheritedSize: '0x3f8'
   Super: Crest

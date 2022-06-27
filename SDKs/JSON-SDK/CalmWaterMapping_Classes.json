@@ -8,8 +8,8 @@
   },
   "AthenaCalmWaterZone": {
     "Super": "CalmWaterZone",
-    "FullSize": "0x3f8",
-    "InheritedSize": "0x3d8",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3d0",
     "ClassSize": "0x20",
     "Attributes": []
   },

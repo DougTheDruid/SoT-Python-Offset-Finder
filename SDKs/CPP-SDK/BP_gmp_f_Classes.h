@@ -17,7 +17,7 @@ public:
 class BP_gmp_fishing_rod_bdg_01_a_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
 };
 
 

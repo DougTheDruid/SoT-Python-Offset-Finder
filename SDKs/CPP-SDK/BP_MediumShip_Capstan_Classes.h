@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_MediumShip_Capstan_C: public BP_Base_Capstan_C
 {
 public:
-	Class ChildActorComponent*                                   Arm3;                                              // 0x840(0x8)
-	Class ChildActorComponent*                                   Arm1;                                              // 0x848(0x8)
-	Class ChildActorComponent*                                   Arm2;                                              // 0x850(0x8)
+	Class ChildActorComponent*                                   Arm3;                                              // 0x838(0x8)
+	Class ChildActorComponent*                                   Arm1;                                              // 0x840(0x8)
+	Class ChildActorComponent*                                   Arm2;                                              // 0x848(0x8)
 };
 
 

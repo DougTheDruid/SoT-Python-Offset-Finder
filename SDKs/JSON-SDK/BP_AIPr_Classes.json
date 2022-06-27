@@ -1,27 +1,27 @@
 {
   "BP_AIProjectile_SirenTrident_C": {
     "Super": "SirenTridentProjectile",
-    "FullSize": "0x838",
-    "InheritedSize": "0x820",
+    "FullSize": "0x830",
+    "InheritedSize": "0x818",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "SphereCollisionExtentAdjustOverTime",
         "Type": "Class SphereCollisionExtentAdjustOverTimeComponent*",
         "Size": "0x8",
-        "Offset": "0x820"
+        "Offset": "0x818"
       },
       {
         "Name": "Sphere",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x828"
+        "Offset": "0x820"
       },
       {
         "Name": "Collision",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x830"
+        "Offset": "0x828"
       }
     ]
   },

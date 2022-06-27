@@ -343,6 +343,10 @@
       }
     ]
   },
+  "TaleQuestForEachCrewTask": {
+    "ClassSize": "0x28",
+    "Attributes": []
+  },
   "QuestVariableItemDescType": {
     "ClassSize": "0x20",
     "Attributes": []
@@ -450,6 +454,23 @@
   "QuestVariableTexture": {
     "ClassSize": "0x20",
     "Attributes": []
+  },
+  "TaleQuestFailedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CrewIds",
+        "Type": "TArray<Struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "QuestId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
   },
   "TaleQuestContextInvalidTelemetryEvent": {
     "ClassSize": "0x10",

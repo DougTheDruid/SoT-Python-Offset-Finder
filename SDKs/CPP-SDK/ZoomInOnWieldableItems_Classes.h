@@ -13,13 +13,6 @@ public:
 };
 
 
-// Size 0x0
-class ZoomInOnWieldableItemInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x60
 class ZoomInOnWieldableItemComponent: public ActorComponent
 {

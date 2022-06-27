@@ -3,18 +3,18 @@
 BP_Projectile_CannonBall_C:
   Attributes:
   - Name: SphereCollisionExtentAdjustOverTime
-    Offset: '0x658'
+    Offset: '0x650'
     Size: '0x8'
     Type: Class SphereCollisionExtentAdjustOverTimeComponent*
   - Name: CannonBall
-    Offset: '0x660'
+    Offset: '0x658'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Collision
-    Offset: '0x668'
+    Offset: '0x660'
     Size: '0x8'
     Type: Class SphereComponent*
   ClassSize: '0x18'
-  FullSize: '0x670'
-  InheritedSize: '0x658'
+  FullSize: '0x668'
+  InheritedSize: '0x650'
   Super: CannonProjectile

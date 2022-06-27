@@ -6,19 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x119
+// Size 0x111
 class BP_Wheel_C: public Wheel
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x9b0(0x8)
-	Class SkeletalMeshComponent*                                 Wheel;                                             // 0x9b8(0x8)
-	Class SphereComponent*                                       ProjectileCollision;                               // 0x9c0(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x9c8(0x8)
-	Struct ObjectMessagingHandle                                 Wheel Centered;                                    // 0x9d0(0x48)
-	Struct ObjectMessagingHandle                                 Wheel Movement Started;                            // 0xa18(0x48)
-	Struct ObjectMessagingHandle                                 Wheel Movement Stopped;                            // 0xa60(0x48)
-	Struct WwiseEmitter                                          AudioEmitter;                                      // 0xaa8(0x20)
-	bool                                                         ShipWheelTurning;                                  // 0xac8(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x9f8(0x8)
+	Class SphereComponent*                                       ProjectileCollision;                               // 0xa00(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0xa08(0x8)
+	Struct ObjectMessagingHandle                                 Wheel Centered;                                    // 0xa10(0x48)
+	Struct ObjectMessagingHandle                                 Wheel Movement Started;                            // 0xa58(0x48)
+	Struct ObjectMessagingHandle                                 Wheel Movement Stopped;                            // 0xaa0(0x48)
+	Struct WwiseEmitter                                          AudioEmitter;                                      // 0xae8(0x20)
+	bool                                                         ShipWheelTurning;                                  // 0xb08(0x1)
 };
 
 

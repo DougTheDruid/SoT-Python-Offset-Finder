@@ -3,18 +3,18 @@
 BP_MediumShipStorageBarrel_Grog_C:
   Attributes:
   - Name: TankardRefiller
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class TankardRefillerComponent*
   - Name: Interactable
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: StaticMesh
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x18'
-  FullSize: '0x410'
-  InheritedSize: '0x3f8'
+  FullSize: '0x408'
+  InheritedSize: '0x3f0'
   Super: InteractableBase

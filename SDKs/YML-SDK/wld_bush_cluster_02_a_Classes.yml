@@ -3,42 +3,42 @@
 wld_bush_cluster_02_a_C:
   Attributes:
   - Name: wsp_rock_pebbles_d_01
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wsp_rock_pebbles_f_01
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wld_bush_01_a_01
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wsp_cave_tunnel_wall_rock_01_a
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wsp_rock_xtra_small_b_01
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wsp_rock_xtra_small_d_01
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wsp_rock_pebbles_c_01
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: wsp_rock_xtra_small_a_01
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: SharedRoot
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x48'
-  FullSize: '0x458'
-  InheritedSize: '0x410'
+  FullSize: '0x450'
+  InheritedSize: '0x408'
   Super: BP_Placement_HeightDrop_C

@@ -9,6 +9,6 @@ RemoteActorDestructionInterface:
 RemoteActorDestructionService:
   Attributes: []
   ClassSize: '0x18'
-  FullSize: '0x3e8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3c8'
   Super: Actor

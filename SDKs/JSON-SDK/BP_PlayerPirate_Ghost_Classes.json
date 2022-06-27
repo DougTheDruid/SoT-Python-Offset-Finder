@@ -1,63 +1,63 @@
 {
   "BP_PlayerPirate_Ghost_C": {
     "Super": "AthenaGhostPlayerCharacter",
-    "FullSize": "0x1ba4",
-    "InheritedSize": "0x1b60",
+    "FullSize": "0x1c14",
+    "InheritedSize": "0x1bd0",
     "ClassSize": "0x44",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x1b60"
+        "Offset": "0x1bd0"
       },
       {
         "Name": "BP_GhostCharacterAudioComponent",
         "Type": "BlueprintGeneratedClass BP_GhostCharacterAudioComponent_C*",
         "Size": "0x8",
-        "Offset": "0x1b68"
+        "Offset": "0x1bd8"
       },
       {
         "Name": "WaterInteraction",
         "Type": "Class WaterInteractionComponent*",
         "Size": "0x8",
-        "Offset": "0x1b70"
+        "Offset": "0x1be0"
       },
       {
         "Name": "PlayerNameplate",
         "Type": "Class PlayerNameplateComponent*",
         "Size": "0x8",
-        "Offset": "0x1b78"
+        "Offset": "0x1be8"
       },
       {
         "Name": "BodyLightController",
         "Type": "Class BodyLightControllerComponent*",
         "Size": "0x8",
-        "Offset": "0x1b80"
+        "Offset": "0x1bf0"
       },
       {
         "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x1b88"
+        "Offset": "0x1bf8"
       },
       {
         "Name": "BodyLight",
         "Type": "Class AmbientLightSourceComponent*",
         "Size": "0x8",
-        "Offset": "0x1b90"
+        "Offset": "0x1c00"
       },
       {
         "Name": "CharacterFootImpact",
         "Type": "Class CharacterFootImpactComponent*",
         "Size": "0x8",
-        "Offset": "0x1b98"
+        "Offset": "0x1c08"
       },
       {
         "Name": "Default Ghost Parameter",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1ba0"
+        "Offset": "0x1c10"
       }
     ]
   },

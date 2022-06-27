@@ -154,6 +154,7 @@ public:
 	Struct TreasureMapWidgetText                                 NoteTitleWidgetText;                               // 0x58(0x38)
 	Struct TreasureMapWidgetText                                 NoteBodyWidgetText;                                // 0x90(0x38)
 	float                                                        NoteWidth;                                         // 0xc8(0x4)
+	float                                                        NoteLineSpacingMultiplier;                         // 0xcc(0x4)
 };
 
 

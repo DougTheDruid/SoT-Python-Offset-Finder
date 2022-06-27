@@ -1,45 +1,27 @@
 {
   "BP_TaleBook_Shroudbreaker_DaggerToothOutpost_AdditionalPuzzles_": {
-    "Super": "VoyageProposalContainer",
-    "FullSize": "0x798",
-    "InheritedSize": "0x768",
-    "ClassSize": "0x30",
+    "Super": "ShipNetProxy",
+    "FullSize": "0x4d0",
+    "InheritedSize": "0x4b0",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
+        "Name": "UberGraphFrame",
+        "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x768"
+        "Offset": "0x4b0"
       },
       {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
+        "Name": "EmissaryFlags",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x770"
+        "Offset": "0x4b8"
       },
       {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x778"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x780"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x788"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x790"
+        "Name": "Dynamic Materials",
+        "Type": "TArray<class Dynamic Materials*>",
+        "Size": "0x10",
+        "Offset": "0x4c0"
       }
     ]
   },

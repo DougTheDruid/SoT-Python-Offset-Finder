@@ -1,4 +1,11 @@
 {
+  "MountableType_Trinket_Standing_Small_C": {
+    "Super": "MountableType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MountableType_Trinket_Standing_Large_C": {
     "Super": "MountableType",
     "FullSize": "0x28",
@@ -6,14 +13,21 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MountableType_Trinket_Hanging_C": {
+  "MountableType_Trinket_Hanging_SinglePoints_C": {
     "Super": "MountableType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MountableType_Trinket_Standing_Small_C": {
+  "MountableType_Trinket_Hanging_SinglePoint_Tall_C": {
+    "Super": "MountableType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MountableType_Trinket_Hanging_MultiplePoint_C": {
     "Super": "MountableType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

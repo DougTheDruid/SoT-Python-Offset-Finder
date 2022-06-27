@@ -17,7 +17,7 @@ BP_Trinket_Anchor_01_a_C:
   ClassSize: '0x18'
   FullSize: '0x410'
   InheritedSize: '0x3f8'
-  Super: BP_Trinket_Hanging_C
+  Super: BP_Trinket_HangingSinglePoint_C
 BP_Trinket_Barnacles_01_a_C:
   Attributes:
   - Name: shp_barnacles_01_a__brn_j
@@ -47,7 +47,7 @@ BP_Trinket_Barnacles_01_a_C:
   ClassSize: '0x30'
   FullSize: '0x428'
   InheritedSize: '0x3f8'
-  Super: BP_Trinket_Hanging_C
+  Super: BP_Trinket_HangingMultiplePoint_C
 BP_Trinket_GlowBalls_01_a_C:
   Attributes:
   - Name: tls_wld_Orb_light_a
@@ -57,7 +57,7 @@ BP_Trinket_GlowBalls_01_a_C:
   ClassSize: '0x8'
   FullSize: '0x400'
   InheritedSize: '0x3f8'
-  Super: BP_Trinket_Hanging_C
+  Super: BP_Trinket_HangingSinglePoint_C
 BP_Trinket_HangingBottles_01_a_C:
   Attributes:
   - Name: cmn_bottle_01_a
@@ -75,7 +75,7 @@ BP_Trinket_HangingBottles_01_a_C:
   ClassSize: '0x18'
   FullSize: '0x410'
   InheritedSize: '0x3f8'
-  Super: BP_Trinket_Hanging_C
+  Super: BP_Trinket_HangingSinglePoint_C
 BP_Trinket_HatRack_02_a_C:
   Attributes:
   - Name: cmn_shovel_02_a
@@ -93,7 +93,7 @@ BP_Trinket_HatRack_02_a_C:
   ClassSize: '0x18'
   FullSize: '0x410'
   InheritedSize: '0x3f8'
-  Super: BP_Trinket_Hanging_C
+  Super: BP_Trinket_HangingSinglePoint_C
 BP_Trinket_MapPainting_01_a_C:
   Attributes:
   - Name: tri_com_gmp_onboarding_map_static_01_a
@@ -107,7 +107,7 @@ BP_Trinket_MapPainting_01_a_C:
   ClassSize: '0x10'
   FullSize: '0x408'
   InheritedSize: '0x3f8'
-  Super: BP_Trinket_Hanging_C
+  Super: BP_Trinket_HangingSinglePoint_C
 BP_Trinket_PinBoard_01_a_C:
   Attributes:
   - Name: bld_enc_shop_pin_board_01_a
@@ -117,7 +117,21 @@ BP_Trinket_PinBoard_01_a_C:
   ClassSize: '0x8'
   FullSize: '0x400'
   InheritedSize: '0x3f8'
-  Super: BP_Trinket_Hanging_C
+  Super: BP_Trinket_HangingSinglePoint_C
+BP_Trinket_Target_02_a_C:
+  Attributes:
+  - Name: wpn_boarding_axe_smp_01_a
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: bld_wpn_shop_hanging_target_broken_01_a
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x10'
+  FullSize: '0x408'
+  InheritedSize: '0x3f8'
+  Super: BP_Trinket_HangingSinglePoint_C
 BP_Trinket_Wheel_01_a_C:
   Attributes:
   - Name: cmn_wheel_01_a__cmn_wheel_01_a
@@ -127,4 +141,4 @@ BP_Trinket_Wheel_01_a_C:
   ClassSize: '0x8'
   FullSize: '0x400'
   InheritedSize: '0x3f8'
-  Super: BP_Trinket_Hanging_C
+  Super: BP_Trinket_HangingSinglePoint_C

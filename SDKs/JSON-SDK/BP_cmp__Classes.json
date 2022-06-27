@@ -1,22 +1,22 @@
 {
   "BP_cmp_pocket_watch_mrh_01_e_ItemInfo_C": {
     "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
+    "FullSize": "0x500",
+    "InheritedSize": "0x4f8",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x500"
+        "Offset": "0x4f8"
       }
     ]
   },
   "BP_cmp_pocket_watch_mrh_01_e_Wieldable_C": {
     "Super": "BP_PocketWatch_C",
-    "FullSize": "0xa80",
-    "InheritedSize": "0xa80",
+    "FullSize": "0xa70",
+    "InheritedSize": "0xa70",
     "ClassSize": "0x0",
     "Attributes": []
   },

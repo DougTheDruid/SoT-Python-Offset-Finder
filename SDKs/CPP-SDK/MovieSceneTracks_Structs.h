@@ -443,11 +443,12 @@ public:
 };
 
 
-// Size 0xb8
+// Size 0xc0
 struct MovieSceneSkeletalAnimationSectionTemplate
 {
 public:
 	Struct MovieSceneSkeletalAnimationSectionTemplateParameters  Params;                                            // 0x18(0xa0)
+	byte                                                         AnimationSubtype;                                  // 0xb8(0x1)
 };
 
 

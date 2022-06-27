@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class wld_palm_cluster_02_b_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x418(0x8)
+	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x410(0x8)
 };
 
 

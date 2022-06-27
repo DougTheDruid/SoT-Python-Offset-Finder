@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30
+// Size 0x38
 struct ModeSpecificReviveSettings
 {
 public:
@@ -20,7 +20,8 @@ public:
 	float                                                        DeathCameraStartDelay;                             // 0x1c(0x4)
 	float                                                        ReviveWindowDuration;                              // 0x20(0x4)
 	float                                                        GhostFadeDuration;                                 // 0x24(0x4)
-	Class ReviveSettings*                                        CachedReviveSettings;                              // 0x28(0x8)
+	float                                                        AutoGiveUpDuration;                                // 0x28(0x4)
+	Class ReviveSettings*                                        CachedReviveSettings;                              // 0x30(0x8)
 };
 
 

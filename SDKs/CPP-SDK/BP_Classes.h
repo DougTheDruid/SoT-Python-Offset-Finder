@@ -31,9 +31,9 @@ public:
 class BP_fod_ChickenMeatRaw_00_a_ItemInfo_C: public BP_MeatItemInfo_C
 {
 public:
-	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x568(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x570(0x8)
-	Class CookableComponent*                                     Cookable;                                          // 0x578(0x8)
+	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x560(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x568(0x8)
+	Class CookableComponent*                                     Cookable;                                          // 0x570(0x8)
 };
 
 
@@ -41,12 +41,12 @@ public:
 class BP_PromptActor_EmissaryRank2_AF_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -54,12 +54,12 @@ public:
 class BP_PromptActor_EmissaryRank2_GH_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -67,12 +67,12 @@ public:
 class BP_PromptActor_EmissaryRank2_MA_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -80,12 +80,12 @@ public:
 class BP_PromptActor_EmissaryRank2_OOS_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -93,12 +93,12 @@ public:
 class BP_PromptActor_EmissaryRank2_RB_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 
 
@@ -106,13 +106,13 @@ public:
 class BP_PromptActor_EmissaryRank5_AF_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
-	float                                                        InitialDelay;                                      // 0x440(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	float                                                        InitialDelay;                                      // 0x438(0x4)
 };
 
 
@@ -120,13 +120,13 @@ public:
 class BP_PromptActor_EmissaryRank5_GH_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
-	float                                                        InitialDelay;                                      // 0x440(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	float                                                        InitialDelay;                                      // 0x438(0x4)
 };
 
 
@@ -134,13 +134,13 @@ public:
 class BP_PromptActor_EmissaryRank5_MA_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
-	float                                                        InitialDelay;                                      // 0x440(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	float                                                        InitialDelay;                                      // 0x438(0x4)
 };
 
 
@@ -148,13 +148,13 @@ public:
 class BP_PromptActor_EmissaryRank5_OOS_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
-	float                                                        InitialDelay;                                      // 0x440(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	float                                                        InitialDelay;                                      // 0x438(0x4)
 };
 
 
@@ -162,13 +162,13 @@ public:
 class BP_PromptActor_EmissaryRank5_RB_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x408(0x8)
-	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x410(0x8)
-	class                                                        PromptCounterAccessKey;                            // 0x418(0x8)
-	class                                                        Company;                                           // 0x420(0x8)
-	int                                                          ExpectedLevel;                                     // 0x428(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x430(0x10)
-	float                                                        InitialDelay;                                      // 0x440(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_EmissaryLevelRankChange_C* PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
+	class                                                        Company;                                           // 0x418(0x8)
+	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	float                                                        InitialDelay;                                      // 0x438(0x4)
 };
 
 
@@ -183,18 +183,8 @@ public:
 class BP_CommodityManifestBook_MerchantAlliance_C: public ModalInteractionProxy
 {
 public:
-	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x4e8(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f0(0x8)
-};
-
-
-// Size 0x18
-class BP_IslandStorageBarrel_Outpost_C: public StorageContainer
-{
-public:
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c0(0x8)
-	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d0(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x500(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x508(0x8)
 };
 
 
@@ -251,6 +241,16 @@ public:
 class BP_underwear_black_Desc_C: public ClothingDesc
 {
 public:
+};
+
+
+// Size 0x18
+class BP_IslandStorageBarrel_Outpost_C: public StorageContainer
+{
+public:
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x4b8(0x8)
+	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c0(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4c8(0x8)
 };
 
 

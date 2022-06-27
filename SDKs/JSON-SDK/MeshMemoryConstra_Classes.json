@@ -1,4 +1,11 @@
 {
+  "MeshMemoryConstraintBudget_Trinkets_C": {
+    "Super": "MeshMemoryConstraintBudget",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MeshMemoryConstraintBudget_AI_C": {
     "Super": "MeshMemoryConstraintBudget",
     "FullSize": "0x28",
@@ -13,14 +20,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MeshMemoryConstraintBudget_Trinkets_C": {
+  "MeshMemoryConstraintBudget_ShipParts_C": {
     "Super": "MeshMemoryConstraintBudget",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MeshMemoryConstraintBudget_ShipParts_C": {
+  "MeshMemoryConstraintBudget_ShipCabinCustomization_C": {
     "Super": "MeshMemoryConstraintBudget",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

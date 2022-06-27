@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_Castaway_C: public BP_Orderofsouls_TallTales_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x688(0x8)
-	Class ActorPhasingComponent*                                 ActorPhasing;                                      // 0x690(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x698(0x8)
-	TArray<class AudioEvents*>                                   AudioEvents;                                       // 0x6a0(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x6a0(0x8)
+	Class ActorPhasingComponent*                                 ActorPhasing;                                      // 0x6a8(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6b0(0x8)
+	TArray<class AudioEvents*>                                   AudioEvents;                                       // 0x6b8(0x10)
 };
 
 

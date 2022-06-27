@@ -1,33 +1,33 @@
 {
   "BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C": {
     "Super": "BuoyantStorageContainer",
-    "FullSize": "0x710",
-    "InheritedSize": "0x6f0",
+    "FullSize": "0x708",
+    "InheritedSize": "0x6e8",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Sphere",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x6f0"
+        "Offset": "0x6e8"
       },
       {
         "Name": "Replenishable",
         "Type": "Class ReplenishableComponent*",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x6f0"
       },
       {
         "Name": "TelemetrySubject",
         "Type": "Class TelemetrySubjectComponent*",
         "Size": "0x8",
-        "Offset": "0x700"
+        "Offset": "0x6f8"
       },
       {
         "Name": "StorageContainer",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x708"
+        "Offset": "0x700"
       }
     ]
   },
@@ -38,88 +38,67 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_BuoyantWoodBarrel_LockedToWater_C": {
-    "Super": "BP_BuoyantStorageBarrel_LockedToWater_C",
-    "FullSize": "0x710",
-    "InheritedSize": "0x710",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_BuoyantFoodBarrel_LockedToWater_C": {
-    "Super": "BP_BuoyantStorageBarrel_LockedToWater_C",
-    "FullSize": "0x710",
-    "InheritedSize": "0x710",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_BuoyantCannonballBarrel_LockedToWater_C": {
-    "Super": "BP_BuoyantStorageBarrel_LockedToWater_C",
-    "FullSize": "0x710",
-    "InheritedSize": "0x710",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C": {
     "Super": "BuoyantStorageContainer",
-    "FullSize": "0x710",
-    "InheritedSize": "0x6f0",
+    "FullSize": "0x708",
+    "InheritedSize": "0x6e8",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Sphere",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x6f0"
+        "Offset": "0x6e8"
       },
       {
         "Name": "Replenishable",
         "Type": "Class ReplenishableComponent*",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x6f0"
       },
       {
         "Name": "TelemetrySubject",
         "Type": "Class TelemetrySubjectComponent*",
         "Size": "0x8",
-        "Offset": "0x700"
+        "Offset": "0x6f8"
       },
       {
         "Name": "StorageContainer",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x708"
+        "Offset": "0x700"
       }
     ]
   },
   "BP_BuoyantStorageBarrel_LockedToWater_C": {
     "Super": "BuoyantStorageContainer",
-    "FullSize": "0x710",
-    "InheritedSize": "0x6f0",
+    "FullSize": "0x708",
+    "InheritedSize": "0x6e8",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Sphere",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x6f0"
+        "Offset": "0x6e8"
       },
       {
         "Name": "Replenishable",
         "Type": "Class ReplenishableComponent*",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x6f0"
       },
       {
         "Name": "TelemetrySubject",
         "Type": "Class TelemetrySubjectComponent*",
         "Size": "0x8",
-        "Offset": "0x700"
+        "Offset": "0x6f8"
       },
       {
         "Name": "StorageContainer",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x708"
+        "Offset": "0x700"
       }
     ]
   },

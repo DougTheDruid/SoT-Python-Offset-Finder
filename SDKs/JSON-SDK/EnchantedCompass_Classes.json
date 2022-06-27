@@ -33,40 +33,40 @@
   },
   "MultiTargetEnchantedCompass": {
     "Super": "Compass",
-    "FullSize": "0x8a0",
-    "InheritedSize": "0x870",
+    "FullSize": "0x890",
+    "InheritedSize": "0x860",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Locations",
         "Type": "TArray<Struct Vector>",
         "Size": "0x10",
-        "Offset": "0x868"
+        "Offset": "0x858"
       },
       {
         "Name": "LocationIds",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x878"
+        "Offset": "0x868"
       },
       {
         "Name": "InventoryItem",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x888"
+        "Offset": "0x878"
       },
       {
         "Name": "ProximityAnnouncementComponent",
         "Type": "Class EnchantedCompassProximityAnnouncementComponent*",
         "Size": "0x8",
-        "Offset": "0x890"
+        "Offset": "0x880"
       }
     ]
   },
   "PrototypeMultiTargetEnchantedCompass": {
     "Super": "MultiTargetEnchantedCompass",
-    "FullSize": "0x8a0",
-    "InheritedSize": "0x8a0",
+    "FullSize": "0x890",
+    "InheritedSize": "0x890",
     "ClassSize": "0x0",
     "Attributes": []
   },

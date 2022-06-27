@@ -15,22 +15,22 @@
   },
   "BP_gmp_telescope_wth_01_a_v01_ItemInfo_C": {
     "Super": "ItemInfo",
-    "FullSize": "0x508",
-    "InheritedSize": "0x500",
+    "FullSize": "0x500",
+    "InheritedSize": "0x4f8",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x500"
+        "Offset": "0x4f8"
       }
     ]
   },
   "BP_gmp_telescope_wth_01_a_v01_Wieldable_C": {
     "Super": "BP_Spyglass_C",
-    "FullSize": "0x880",
-    "InheritedSize": "0x880",
+    "FullSize": "0x870",
+    "InheritedSize": "0x870",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -139,27 +139,27 @@
   },
   "MysteriousNotesService": {
     "Super": "Actor",
-    "FullSize": "0x498",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x490",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0xc8",
     "Attributes": [
       {
         "Name": "CachedNoteSettings",
         "Type": "Class MysteriousNoteSettings*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "WieldableNoteDataAsset",
         "Type": "Class WieldableMysteriousNoteDataAsset*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "CompletionEventsModelData",
         "Type": "Class MysteriousNotesCompletionEventsModelDataAsset*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       }
     ]
   },
@@ -198,51 +198,51 @@
   },
   "WieldableMysteriousNote": {
     "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x930",
-    "InheritedSize": "0x790",
+    "FullSize": "0x920",
+    "InheritedSize": "0x780",
     "ClassSize": "0x1a0",
     "Attributes": [
       {
         "Name": "RenderTarget",
         "Type": "Class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x7a0"
+        "Offset": "0x790"
       },
       {
         "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x7a8"
+        "Offset": "0x798"
       },
       {
         "Name": "CanvasHeight",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x7ac"
+        "Offset": "0x79c"
       },
       {
         "Name": "FontScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7b0"
+        "Offset": "0x7a0"
       },
       {
         "Name": "NoteLayout",
         "Type": "Class WieldableMysteriousNoteLayout*",
         "Size": "0x8",
-        "Offset": "0x808"
+        "Offset": "0x800"
       },
       {
         "Name": "UsableWieldableComponent",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x810"
+        "Offset": "0x808"
       },
       {
         "Name": "InventoryItemComponent",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x818"
+        "Offset": "0x810"
       }
     ]
   },

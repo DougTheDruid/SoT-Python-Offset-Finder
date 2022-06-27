@@ -3,26 +3,26 @@
 BP_Goldhoarder_C:
   Attributes:
   - Name: EmissaryMaxRankQuestProvider
-    Offset: '0x670'
+    Offset: '0x688'
     Size: '0x8'
     Type: Class EmissaryMaxRankQuestProvider*
   - Name: SolidHits
-    Offset: '0x678'
+    Offset: '0x690'
     Size: '0x8'
     Type: Class CapsuleComponent*
   - Name: NPCDialog
-    Offset: '0x680'
+    Offset: '0x698'
     Size: '0x8'
     Type: Class NPCDialogComponent*
   - Name: StaticMesh
-    Offset: '0x688'
+    Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: AnimNotifyWwiseEmitter
-    Offset: '0x690'
+    Offset: '0x6a8'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   ClassSize: '0x28'
-  FullSize: '0x698'
-  InheritedSize: '0x670'
+  FullSize: '0x6b0'
+  InheritedSize: '0x688'
   Super: CompanyShopkeeper

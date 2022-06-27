@@ -1,191 +1,191 @@
 {
   "BP_PromptActor_EmissaryEntitlementPurchased_AF_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "OfferId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "BP_PromptActor_EmissaryEntitlementPurchased_GH_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "OfferId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "BP_PromptActor_EmissaryEntitlementPurchased_MA_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "OfferId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "BP_PromptActor_EmissaryEntitlementPurchased_OOS_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "OfferId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "BP_PromptActor_EmissaryEntitlementPurchased_RB_C": {
     "Super": "BP_PromptActorBase_C",
-    "FullSize": "0x440",
-    "InheritedSize": "0x408",
+    "FullSize": "0x438",
+    "InheritedSize": "0x400",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "PromptCoordinator",
         "Type": "BlueprintGeneratedClass BP_Prompt_EmissaryEntitlementPurchased_C*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "PromptCounterAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "OfferId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },

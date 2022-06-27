@@ -3,18 +3,34 @@
 BP_PulleyMechanism_C:
   Attributes:
   - Name: None
-    Offset: '0x660'
+    Offset: '0x658'
     Size: '0xc'
     Type: Struct Vector
   - Name: None
-    Offset: '0x66c'
+    Offset: '0x664'
     Size: '0x1'
     Type: byte
-  - Name: None
-    Offset: '0x670'
-    Size: '0x8'
-    Type: struct FName
+  - Name: CallFunc_WwiseEmitterComponentPostEvent_ReturnValue2
+    Offset: '0x58'
+    Size: '0x4'
+    Type: int
+  - Name: CallFunc_WwiseEmitterComponentPostEvent_ReturnValue3
+    Offset: '0x5c'
+    Size: '0x4'
+    Type: int
+  - Name: CallFunc_WwiseEmitterComponentPostEvent_ReturnValue4
+    Offset: '0x60'
+    Size: '0x4'
+    Type: int
+  - Name: CallFunc_Add_FloatFloat_ReturnValue
+    Offset: '0x64'
+    Size: '0x4'
+    Type: float
+  - Name: K2Node_MakeStruct_LinearColor
+    Offset: '0x68'
+    Size: '0x10'
+    Type: Struct LinearColor
   ClassSize: '0x18'
-  FullSize: '0x678'
-  InheritedSize: '0x660'
+  FullSize: '0x670'
+  InheritedSize: '0x658'
   Super: PulleyMechanism

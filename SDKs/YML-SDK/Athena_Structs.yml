@@ -107,6 +107,75 @@ AISwimmingCreatureDeadActionStateParams:
 AccessibiltySettingsModalEvent:
   Attributes: []
   ClassSize: '0x1'
+AccoladeBreakDownTotalModel:
+  Attributes:
+  - Name: ProgressId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x18'
+AccoladeModel:
+  Attributes:
+  - Name: ProgressId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x28'
+AccoladePirateBreakDownModel:
+  Attributes:
+  - Name: PirateId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: ProgressId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x28'
+AccoladeProgressBreakdownPirateModel:
+  Attributes:
+  - Name: Totals
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct AccoladeBreakDownTotalModel>
+  - Name: Ships
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct AccoladeShipBreakDownModel>
+  ClassSize: '0x20'
+AccoladeProgressBreakdownShipModel:
+  Attributes:
+  - Name: Totals
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct AccoladeBreakDownTotalModel>
+  - Name: Pirates
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct AccoladePirateBreakDownModel>
+  ClassSize: '0x20'
+AccoladeProgressModel:
+  Attributes:
+  - Name: Alignments
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct AlignmentModel>
+  - Name: Accolades
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct AccoladeModel>
+  ClassSize: '0x20'
+AccoladeShipBreakDownModel:
+  Attributes:
+  - Name: ShipId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: ProgressId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x28'
 AchievementBlockThenHitAndGetBlockedThenTakeHit:
   Attributes:
   - Name: Character
@@ -1123,6 +1192,17 @@ AggressiveGhostShipsEncounterHeightPerIslandOffsets:
 AggressiveGhostShipsEncounterServiceDesc:
   Attributes: []
   ClassSize: '0x10'
+AimAssistStyleData:
+  Attributes:
+  - Name: TargetMaxDistance
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: TargetDistanceFromPlayerToInfluenceRadius
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  ClassSize: '0x10'
 AimSensitivityRuntimeData:
   Attributes: []
   ClassSize: '0xa0'
@@ -1189,6 +1269,13 @@ AirGivingVolumeData:
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
+AlignmentModel:
+  Attributes:
+  - Name: Id
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x18'
 Alliance:
   Attributes:
   - Name: AllianceId
@@ -1275,45 +1362,49 @@ AllianceRewardRequestEvent:
     Type: Struct Guid
   - Name: PrimaryRecipient
     Offset: '0x20'
-    Size: '0x40'
+    Size: '0xc0'
     Type: Struct RewardRequestCrewGame
   - Name: SecondaryRecipients
-    Offset: '0x60'
+    Offset: '0xe0'
     Size: '0x10'
     Type: TArray<Struct RewardRequestCrewGame>
   - Name: RewardId
-    Offset: '0x70'
+    Offset: '0xf0'
     Size: '0x8'
     Type: struct FName
   - Name: CompanyAffiliation
-    Offset: '0x78'
+    Offset: '0xf8'
     Size: '0x8'
     Type: struct FName
   - Name: BootyId
-    Offset: '0x80'
+    Offset: '0x100'
     Size: '0x10'
     Type: Struct Guid
   - Name: NPCName
-    Offset: '0x90'
+    Offset: '0x110'
     Size: '0x8'
     Type: struct FName
   - Name: NotifyPlayer
-    Offset: '0x98'
+    Offset: '0x118'
     Size: '0x1'
     Type: bool
   - Name: DontRewardCurrency
-    Offset: '0x99'
+    Offset: '0x119'
     Size: '0x1'
     Type: bool
   - Name: DontRewardXp
-    Offset: '0x9a'
+    Offset: '0x11a'
     Size: '0x1'
     Type: bool
   - Name: DontRewardSeasonXp
-    Offset: '0x9b'
+    Offset: '0x11b'
     Size: '0x1'
     Type: bool
-  ClassSize: '0xa0'
+  - Name: DontRewardAllegiance
+    Offset: '0x11c'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x120'
 AllianceRewardRequestMessage:
   Attributes:
   - Name: RequestID
@@ -1326,53 +1417,57 @@ AllianceRewardRequestMessage:
     Type: Struct Guid
   - Name: PrimaryRecipient
     Offset: '0x20'
-    Size: '0x40'
+    Size: '0xc0'
     Type: Struct RewardRequestCrew
   - Name: SecondaryRecipients
-    Offset: '0x60'
+    Offset: '0xe0'
     Size: '0x10'
     Type: TArray<Struct RewardRequestCrew>
   - Name: RewardId
-    Offset: '0x70'
+    Offset: '0xf0'
     Size: '0x8'
     Type: struct FName
   - Name: CompanyAffiliation
-    Offset: '0x78'
+    Offset: '0xf8'
     Size: '0x8'
     Type: struct FName
   - Name: BootyId
-    Offset: '0x80'
+    Offset: '0x100'
     Size: '0x10'
     Type: Struct Guid
   - Name: NPCName
-    Offset: '0x90'
+    Offset: '0x110'
     Size: '0x8'
     Type: struct FName
   - Name: NotifyPlayer
-    Offset: '0x98'
+    Offset: '0x118'
     Size: '0x1'
     Type: bool
   - Name: PlayMode
-    Offset: '0x99'
+    Offset: '0x119'
     Size: '0x1'
     Type: byte
   - Name: PlayModeVariant
-    Offset: '0x9a'
+    Offset: '0x11a'
     Size: '0x1'
     Type: byte
   - Name: DontRewardCurrency
-    Offset: '0x9b'
+    Offset: '0x11b'
     Size: '0x1'
     Type: bool
   - Name: DontRewardXp
-    Offset: '0x9c'
+    Offset: '0x11c'
     Size: '0x1'
     Type: bool
   - Name: DontRewardSeasonXp
-    Offset: '0x9d'
+    Offset: '0x11d'
     Size: '0x1'
     Type: bool
-  ClassSize: '0xa0'
+  - Name: DontRewardAllegiance
+    Offset: '0x11e'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x120'
 AllianceStatEvent:
   Attributes: []
   ClassSize: '0x18'
@@ -1407,11 +1502,7 @@ AllowedItemsToDetermineJettisonedContainerTypePair:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: ContainerTypeToSpawn
-    Offset: '0x10'
-    Size: '0x8'
-    Type: class
-  ClassSize: '0x18'
+  ClassSize: '0x30'
 AlternateHeldPose:
   Attributes:
   - Name: AlternateHeldPose
@@ -1779,15 +1870,30 @@ AssetDelayLoadEntry:
     Offset: '0x13'
     Size: '0x1'
     Type: bool
+  - Name: Feature
+    Offset: '0x14'
+    Size: '0x8'
+    Type: struct FName
   - Name: AssetsToLoad
-    Offset: '0x18'
+    Offset: '0x20'
     Size: '0x10'
     Type: TArray<Struct StringAssetReference>
   - Name: BlueprintsToLoad
-    Offset: '0x28'
+    Offset: '0x30'
     Size: '0x10'
     Type: TArray<AssetClass BlueprintsToLoad>
-  ClassSize: '0x38'
+  ClassSize: '0x40'
+AssetLoadSkipInfo:
+  Attributes:
+  - Name: AnimationsStructName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SkipCount
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x18'
 AthenaAICharacterNewWaveGroupSpawned:
   Attributes: []
   ClassSize: '0x1'
@@ -2860,47 +2966,35 @@ AthenaAnimationFootPlanting:
     Offset: '0x2c'
     Size: '0x4'
     Type: float
-  - Name: FloorContactDownDistance
+  - Name: DownDistance
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: RelativePlantDownDistance
+  - Name: DownDistanceRangeStart
     Offset: '0x34'
     Size: '0x4'
     Type: float
-  - Name: FloorContactToRangeStart
+  - Name: DownDistanceRangeEnd
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: FloorContactToRangeEnd
+  - Name: IKLegStretch
     Offset: '0x3c'
     Size: '0x4'
     Type: float
-  - Name: RelativePlantToRangeStart
+  - Name: SlopeAngle
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: RelativePlantToRangeEnd
-    Offset: '0x44'
-    Size: '0x4'
-    Type: float
-  - Name: IKLegStretch
-    Offset: '0x48'
-    Size: '0x4'
-    Type: float
-  - Name: SlopeAngle
-    Offset: '0x4c'
-    Size: '0x4'
-    Type: float
   - Name: Active
-    Offset: '0x50'
+    Offset: '0x44'
     Size: '0x1'
     Type: bool
   - Name: FeetContact
-    Offset: '0x51'
+    Offset: '0x45'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x58'
+  ClassSize: '0x48'
 AthenaAnimationHandHeldItemParams:
   Attributes:
   - Name: LeftArmOverlayActive
@@ -3094,35 +3188,23 @@ AthenaAnimationIKFootplantingAnimData:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: FloorContactDownDistance
+  - Name: DownDistance
     Offset: '0xc'
     Size: '0x4'
     Type: float
-  - Name: RelativePlantDownDistance
+  - Name: DownDistanceRangeStart
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: FloorContactToRangeStart
+  - Name: DownDistanceRangeEnd
     Offset: '0x14'
     Size: '0x4'
     Type: float
-  - Name: FloorContactToRangeEnd
+  - Name: IKLegStretch
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: RelativePlantToRangeStart
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: float
-  - Name: RelativePlantToRangeEnd
-    Offset: '0x20'
-    Size: '0x4'
-    Type: float
-  - Name: IKLegStretch
-    Offset: '0x24'
-    Size: '0x4'
-    Type: float
-  ClassSize: '0x28'
+  ClassSize: '0x1c'
 AthenaAnimationIKLimbStretch:
   Attributes:
   - Name: IKStretchArms
@@ -3164,6 +3246,29 @@ AthenaAnimationIdlesAnimData:
     Size: '0x10'
     Type: TArray<class IdleAnimations*>
   ClassSize: '0x10'
+AthenaAnimationItemAnimationCache:
+  Attributes:
+  - Name: EquipAnimations
+    Offset: '0x0'
+    Size: '0x40'
+    Type: Struct AthenaAnimationObjectEquipAnimations
+  - Name: LocomotionAnimations
+    Offset: '0x40'
+    Size: '0x40'
+    Type: Struct AthenaAnimationObjectLocomotionAnimations
+  - Name: JumpingAnimations
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct AthenaAnimationObjectJumpingAnimations
+  - Name: IdleAnimations
+    Offset: '0xa0'
+    Size: '0x18'
+    Type: Struct AthenaAnimationObjectIdleAnimations
+  - Name: HandAdditive
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: Class AnimSequence*
+  ClassSize: '0xc0'
 AthenaAnimationItemListingMappingType:
   Attributes:
   - Name: FirstPersonListing
@@ -3471,29 +3576,6 @@ AthenaAnimationLoadObjectsWrapper:
     Size: '0x8'
     Type: class
   ClassSize: '0xaa0'
-AthenaAnimationLoadOnDemandItemAnimationCache:
-  Attributes:
-  - Name: EquipAnimations
-    Offset: '0x0'
-    Size: '0x40'
-    Type: Struct AthenaAnimationObjectEquipAnimations
-  - Name: LocomotionAnimations
-    Offset: '0x40'
-    Size: '0x40'
-    Type: Struct AthenaAnimationObjectLocomotionAnimations
-  - Name: JumpingAnimations
-    Offset: '0x80'
-    Size: '0x20'
-    Type: Struct AthenaAnimationObjectJumpingAnimations
-  - Name: IdleAnimations
-    Offset: '0xa0'
-    Size: '0x18'
-    Type: Struct AthenaAnimationObjectIdleAnimations
-  - Name: HandAdditive
-    Offset: '0xb8'
-    Size: '0x8'
-    Type: Class AnimSequence*
-  ClassSize: '0xc0'
 AthenaAnimationLoadOnDemandItemsAnimgraphStructure:
   Attributes:
   - Name: FishingAnimationsToUse
@@ -3520,35 +3602,43 @@ AthenaAnimationLoadOnDemandItemsAnimgraphStructure:
     Offset: '0x148'
     Size: '0x8'
     Type: Class AnimSequence*
-  - Name: FishingAnimationsToLoad
+  - Name: CurrentWieldedItemID
     Offset: '0x150'
+    Size: '0x8'
+    Type: class
+  - Name: FishingAnimationsToLoad
+    Offset: '0x158'
     Size: '0x1e0'
     Type: Struct AthenaAnimationAsyncLoadedFishingAnimations
   - Name: LocomotionAnimationsToLoad
-    Offset: '0x330'
+    Offset: '0x338'
     Size: '0x100'
     Type: Struct AthenaAnimationAsyncLoadedLocomotionAnimations
   - Name: JumpingAnimationsToLoad
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x80'
     Type: Struct AthenaAnimationAsyncLoadedObjectJumpingAnimations
   - Name: IdleAnimationsToLoad
-    Offset: '0x4b0'
+    Offset: '0x4b8'
     Size: '0x60'
     Type: Struct AthenaAnimationAsyncLoadedObjectIdleAnimations
   - Name: CachedItemAnimations
-    Offset: '0x530'
+    Offset: '0x538'
     Size: '0xc0'
-    Type: Struct AthenaAnimationLoadOnDemandItemAnimationCache
+    Type: Struct AthenaAnimationItemAnimationCache
+  - Name: ItemFallbackAnimations
+    Offset: '0x5f8'
+    Size: '0xc0'
+    Type: Struct AthenaAnimationItemAnimationCache
   - Name: PlayerCharacterType
-    Offset: '0x5f0'
+    Offset: '0x6b8'
     Size: '0x8'
     Type: class
   - Name: ItemId
-    Offset: '0x5f8'
+    Offset: '0x6c0'
     Size: '0x8'
     Type: class
-  ClassSize: '0x680'
+  ClassSize: '0x758'
 AthenaAnimationLocomotion:
   Attributes:
   - Name: CharacterVelocity
@@ -6097,6 +6187,14 @@ AudioStingRelevantShips:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: IsEmissary
+    Offset: '0x9'
+    Size: '0x1'
+    Type: bool
+  - Name: IsCaptainedShip
+    Offset: '0xa'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x10'
 AudioStingShipsSpotted:
   Attributes:
@@ -6543,7 +6641,7 @@ BookcaseIndicatorSetting:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<class OverriddenMaterials*>
-  ClassSize: '0x20'
+  ClassSize: '0x28'
 BootFlowAdvanceLegalSplashStateEvent:
   Attributes: []
   ClassSize: '0x1'
@@ -7115,9 +7213,9 @@ BountyQuestParams:
     Type: Class AIBountySpawner*
   - Name: BountyQuestRandomSpawnGeneratorParams
     Offset: '0x38'
-    Size: '0x110'
+    Size: '0x120'
     Type: Struct BountyQuestRandomSpawnGeneratorParams
-  ClassSize: '0x148'
+  ClassSize: '0x158'
 BountyQuestRandomSpawnGeneratorParams:
   Attributes:
   - Name: NumberOfWaves
@@ -7136,75 +7234,79 @@ BountyQuestRandomSpawnGeneratorParams:
     Offset: '0x44'
     Size: '0x4'
     Type: int
-  - Name: MinFormsPerEncounter
+  - Name: AdditionalAIPerPlayer
     Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Int AdditionalAIPerPlayer>
+  - Name: MinFormsPerEncounter
+    Offset: '0x58'
     Size: '0x4'
     Type: int
   - Name: MaxFormsPerEncounter
-    Offset: '0x4c'
+    Offset: '0x5c'
     Size: '0x4'
     Type: int
   - Name: MinVarietiesPerEncounter
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x4'
     Type: int
   - Name: MaxVarietiesPerEncounter
-    Offset: '0x54'
+    Offset: '0x64'
     Size: '0x4'
     Type: int
   - Name: MinTimeBetweenSpawns
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x4'
     Type: float
   - Name: MaxTimeBetweenSpawns
-    Offset: '0x5c'
+    Offset: '0x6c'
     Size: '0x4'
     Type: float
   - Name: MinTimeBetweenWaves
-    Offset: '0x60'
+    Offset: '0x70'
     Size: '0x4'
     Type: float
   - Name: MaxTimeBetweenWaves
-    Offset: '0x64'
+    Offset: '0x74'
     Size: '0x4'
     Type: float
   - Name: WavesPerRelocate
-    Offset: '0x68'
+    Offset: '0x78'
     Size: '0x20'
     Type: Struct WeightedProbabilityRange
   - Name: WaveSplitChance
-    Offset: '0x88'
+    Offset: '0x98'
     Size: '0x20'
     Type: Struct WeightedProbabilityRange
   - Name: WaveSuicideTime
-    Offset: '0xa8'
+    Offset: '0xb8'
     Size: '0x10'
     Type: TArray<Float WaveSuicideTime>
   - Name: WaveSuicideMinDist
-    Offset: '0xb8'
+    Offset: '0xc8'
     Size: '0x4'
     Type: float
   - Name: Recipes
-    Offset: '0xc0'
+    Offset: '0xd0'
     Size: '0x8'
     Type: Class AIEncounterGenerationRecipeRankOrderList*
   - Name: NumberOfTargetsTotal
-    Offset: '0xc8'
+    Offset: '0xd8'
     Size: '0x20'
     Type: Struct WeightedProbabilityRange
   - Name: NumberOfTargetsWhichAreCaptains
-    Offset: '0xe8'
+    Offset: '0xf8'
     Size: '0x20'
     Type: Struct WeightedProbabilityRange
   - Name: ChanceOfAllTargetsBeingOnTheLastWave
-    Offset: '0x108'
+    Offset: '0x118'
     Size: '0x4'
     Type: float
   - Name: ChanceOfFemale
-    Offset: '0x10c'
+    Offset: '0x11c'
     Size: '0x4'
     Type: float
-  ClassSize: '0x110'
+  ClassSize: '0x120'
 BountyQuestTargetDefeatedNetworkEvent:
   Attributes:
   - Name: TargetName
@@ -7818,13 +7920,13 @@ CannonDesc:
   Attributes:
   - Name: CannonBarrelMesh
     Offset: '0x0'
-    Size: '0x8'
-    Type: Class StaticMesh*
+    Size: '0x10'
+    Type: Struct StringAssetReference
   - Name: CannonBoxMesh
-    Offset: '0x8'
-    Size: '0x8'
-    Type: Class SkeletalMesh*
-  ClassSize: '0x10'
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x30'
 CannonEnchantmentDesc:
   Attributes:
   - Name: MuzzleFlashVfxFirstPerson
@@ -8031,31 +8133,39 @@ CanvasWorldMapShipLocation:
     Offset: '0x35'
     Size: '0x1'
     Type: bool
-  - Name: ReapersMarkLevel
+  - Name: IsFactionMaxRank
     Offset: '0x36'
+    Size: '0x1'
+    Type: bool
+  - Name: CrewFactionName
+    Offset: '0x38'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReapersMarkLevel
+    Offset: '0x40'
     Size: '0x1'
     Type: byte
   - Name: EmissaryLevel
-    Offset: '0x37'
+    Offset: '0x41'
     Size: '0x1'
     Type: byte
   - Name: IsContestShip
-    Offset: '0x38'
+    Offset: '0x42'
     Size: '0x1'
     Type: bool
   - Name: CrewLiveryOverlayIcon
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x8'
     Type: Class Texture*
   - Name: IsReapersTrackedShip
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x1'
     Type: bool
   - Name: IsInTunnel
-    Offset: '0x49'
+    Offset: '0x51'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x50'
+  ClassSize: '0x58'
 CanvasWorldMapWorldData:
   Attributes:
   - Name: Min
@@ -8204,13 +8314,13 @@ CaptainCurtainsPartDesc:
   Attributes:
   - Name: PrimaryCurtainMesh
     Offset: '0x0'
-    Size: '0x8'
-    Type: Class StaticMesh*
+    Size: '0x10'
+    Type: Struct StringAssetReference
   - Name: SecondaryCurtainMaterial
-    Offset: '0x8'
+    Offset: '0x10'
     Size: '0x8'
     Type: Class MaterialInterface*
-  ClassSize: '0x10'
+  ClassSize: '0x20'
 CaptaincyReponseStartedSessionModel:
   Attributes:
   - Name: SessionToken
@@ -8227,6 +8337,10 @@ CaptaincyReponseStartedSessionModel:
     Type: int
   - Name: ContinuousSaving
     Offset: '0x18'
+    Size: '0x1'
+    Type: bool
+  - Name: IsFirstTimeSailingShip
+    Offset: '0x19'
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
@@ -8274,7 +8388,7 @@ CaptainedCrew:
   ClassSize: '0x50'
 CaptainedCrewLog:
   Attributes: []
-  ClassSize: '0xd8'
+  ClassSize: '0xd0'
 CaptainedSessionChangedEvent:
   Attributes:
   - Name: IsCaptainedSession
@@ -8303,26 +8417,30 @@ CaptainsLogCrewAccolades:
     Offset: '0x0'
     Size: '0x38'
     Type: Struct FText
-  - Name: AccoladeOne
+  - Name: PirateTitleIndex
     Offset: '0x38'
+    Size: '0x4'
+    Type: int
+  - Name: AccoladeOne
+    Offset: '0x40'
     Size: '0x38'
     Type: Struct FText
   - Name: AccoladeTwo
-    Offset: '0x70'
+    Offset: '0x78'
     Size: '0x38'
     Type: Struct FText
   - Name: AccoladeThree
-    Offset: '0xa8'
+    Offset: '0xb0'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0xe0'
+  ClassSize: '0xe8'
 CaptainsLogCrewSessionStatsEntry:
   Attributes:
-  - Name: MilesSailed
+  - Name: DaysAtSea
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: DaysAtSea
+  - Name: MilesSailed
     Offset: '0x4'
     Size: '0x4'
     Type: int
@@ -8330,31 +8448,82 @@ CaptainsLogCrewSessionStatsEntry:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: TreasureDelivered
+  - Name: QuestsCompleted
     Offset: '0xc'
     Size: '0x4'
     Type: int
-  - Name: VoyagesCompleted
+  - Name: DaysSinceLastSunk
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: TimesSunk
+  - Name: FishCaught
     Offset: '0x14'
     Size: '0x4'
     Type: int
-  - Name: DaysSinceLastSunk
+  - Name: MetresSailed
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: CrewDeaths
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: int
-  - Name: AIEnemiesKilled
+  ClassSize: '0x1c'
+CaptainsLogInteractableActionStateConstructionInfo:
+  Attributes: []
+  ClassSize: '0x50'
+CaptainsLogInteractableActionStateParams:
+  Attributes:
+  - Name: ItemToSpawn
+    Offset: '0x18'
+    Size: '0x8'
+    Type: class
+  - Name: TimeBeforeUndock
     Offset: '0x20'
     Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+CaptainsLogItemInfoRarityEntry:
+  Attributes:
+  - Name: DaysAtSea
+    Offset: '0x0'
+    Size: '0x4'
     Type: int
-  ClassSize: '0x24'
+  - Name: Rarity
+    Offset: '0x4'
+    Size: '0x8'
+    Type: struct FName
+  - Name: HandInStats
+    Offset: '0x10'
+    Size: '0x90'
+    Type: Struct BootyItemStats
+  - Name: CompanySpecificStats
+    Offset: '0xa0'
+    Size: '0x10'
+    Type: Struct CompanyBootyStatList
+  - Name: CompanySpecificHandInRewardIds
+    Offset: '0xb0'
+    Size: '0x10'
+    Type: TArray<Struct CompanySpecificBootyReward>
+  ClassSize: '0xc0'
+CaptainsLogPlayerStatEvent:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: PlayerStat
+    Offset: '0x10'
+    Size: '0x4'
+    Type: Struct PlayerStat
+  ClassSize: '0x20'
+CaptainsLogServiceEntry:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Cache
+    Offset: '0x10'
+    Size: '0x80'
+    Type: Struct CaptainsLogbookServiceCache
+  ClassSize: '0x90'
 CaptainsLogSetupContext:
   Attributes: []
   ClassSize: '0xc'
@@ -8387,23 +8556,27 @@ CaptainsLogbookCrewMember:
     Offset: '0x18'
     Size: '0x10'
     Type: Struct FString
-  - Name: PirateNickname
+  - Name: PirateTitleIndex
     Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: PirateNickname
+    Offset: '0x30'
     Size: '0x10'
     Type: Struct FString
   - Name: PetName
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x10'
     Type: Struct FString
   - Name: IsCaptain
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x1'
     Type: bool
   - Name: CrewAccolades
-    Offset: '0x50'
-    Size: '0xe0'
-    Type: Struct CaptainsLogCrewAccolades
-  ClassSize: '0x130'
+    Offset: '0x58'
+    Size: '0x10'
+    Type: TArray<Struct CaptainsLogbookAccolade>
+  ClassSize: '0x68'
 CaptainsLogbookIconKeyValue:
   Attributes:
   - Name: ImageKey
@@ -8428,23 +8601,35 @@ CaptainsLogbookServiceCache:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct FString
-  - Name: StatsEntry
+  - Name: ShipTitle
     Offset: '0x10'
-    Size: '0x24'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: StatsEntry
+    Offset: '0x20'
+    Size: '0x1c'
     Type: Struct CaptainsLogCrewSessionStatsEntry
   - Name: CrewMembers
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x10'
     Type: TArray<Struct CaptainsLogbookCrewMember>
   - Name: ShipSizeObject
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x8'
     Type: class
   - Name: ShipAccolades
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x10'
     Type: TArray<Struct CaptainsLogbookAccolade>
-  ClassSize: '0x60'
+  - Name: CrewEventLog
+    Offset: '0x68'
+    Size: '0x10'
+    Type: TArray<Struct CrewEventLogEntry>
+  - Name: IsValid
+    Offset: '0x78'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x80'
 CaptureChatMessage:
   Attributes:
   - Name: SessionId
@@ -8479,6 +8664,9 @@ CaptureChatMessagesRequestModel:
     Size: '0x10'
     Type: TArray<Struct CaptureChatMessage>
   ClassSize: '0x10'
+CaptureChatPerformanceTelemetryFragment:
+  Attributes: []
+  ClassSize: '0x8'
 CapturedByKrakenActionStateConstructionInfo:
   Attributes:
   - Name: Tentacle
@@ -8850,6 +9038,23 @@ CarouselPirateGroup:
     Size: '0x18'
     Type: Struct CarouselPirateBodyshape
   ClassSize: '0x6c'
+CatagoriesDataFailureResponseUIEvent:
+  Attributes: []
+  ClassSize: '0x1'
+CatagoriesDataRequestUIEvent:
+  Attributes:
+  - Name: CatalogName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'
+CatagoriesDataResponseUIEvent:
+  Attributes:
+  - Name: Offers
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct ShopOffer>
+  ClassSize: '0x10'
 Catalog:
   Attributes:
   - Name: DisplayName
@@ -9171,13 +9376,13 @@ ChandelierPartDesc:
   Attributes:
   - Name: ChandelierMesh
     Offset: '0x0'
-    Size: '0x8'
-    Type: Class StaticMesh*
+    Size: '0x10'
+    Type: Struct StringAssetReference
   - Name: FlamesMesh
-    Offset: '0x8'
-    Size: '0x8'
-    Type: Class StaticMesh*
-  ClassSize: '0x10'
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x30'
 ChapterDataEntry:
   Attributes:
   - Name: NumQuests
@@ -9398,7 +9603,11 @@ ChestEntitlementViewModel:
     Offset: '0x90'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x98'
+  - Name: Cost
+    Offset: '0x98'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0xa8'
 ChestOfRageDamageTableEntry:
   Attributes:
   - Name: Reason
@@ -9917,6 +10126,10 @@ ClientProjectileHitRegInfoTelemetryEvent:
     Offset: '0x50'
     Size: '0xc'
     Type: Struct Vector
+  - Name: IsHitScanShot
+    Offset: '0x5c'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x60'
 ClientProjectileImpactHitRegInfoTelemetryEvent:
   Attributes:
@@ -10134,6 +10347,9 @@ ClientTelemetryFragment:
     Type: Struct FString
   ClassSize: '0x78'
 CloseInventoryInteractionEvent:
+  Attributes: []
+  ClassSize: '0x1'
+CloseRestoreShopEvent:
   Attributes: []
   ClassSize: '0x1'
 ClothingChestChangeClothingEvent:
@@ -10613,6 +10829,9 @@ CommerceRemoteServicePurchaseRequest:
     Type: byte
   ClassSize: '0x90'
 CommerceRemoteServiceWalletBalanceResponse:
+  Attributes: []
+  ClassSize: '0x50'
+CommerceRemoteServiceWalletTransactionResponse:
   Attributes: []
   ClassSize: '0x50'
 CommodityDemandModel:
@@ -11494,23 +11713,31 @@ ContestMatchmakingClientRequestModel:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<Str PlayModeStates>
-  - Name: Crews
+  - Name: HostID
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct ContestMatchmakingCrewModel>
-  - Name: ServerLocation
+    Type: Struct FString
+  - Name: HostSessionSignature
     Offset: '0x80'
     Size: '0x10'
     Type: Struct FString
+  - Name: Crews
+    Offset: '0x90'
+    Size: '0x10'
+    Type: TArray<Struct ContestMatchmakingCrewModel>
+  - Name: ServerLocation
+    Offset: '0xa0'
+    Size: '0x10'
+    Type: Struct FString
   - Name: PrivateServerId
-    Offset: '0x98'
+    Offset: '0xb8'
     Size: '0x10'
     Type: Struct FString
   - Name: RequestCorrelationId
-    Offset: '0xa8'
+    Offset: '0xc8'
     Size: '0x10'
     Type: Struct Guid
-  ClassSize: '0xb8'
+  ClassSize: '0xd8'
 ContestMatchmakingClientResponseModel:
   Attributes:
   - Name: EstimatedWaitTime
@@ -12210,7 +12437,11 @@ Crew:
     Offset: '0x80'
     Size: '0x10'
     Type: TArray<class AssociatedActors*>
-  ClassSize: '0x90'
+  - Name: HasEverSetSail
+    Offset: '0x90'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x98'
 CrewAbandonedCaptainedSessionEvent:
   Attributes: []
   ClassSize: '0x10'
@@ -12407,7 +12638,19 @@ CrewEnteredTunnelOfTheDamnedPortalProximityEvent:
     Type: Class Actor*
   ClassSize: '0x8'
 CrewEventLogEntry:
-  Attributes: []
+  Attributes:
+  - Name: EntryType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: EntryTime
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct GameTime
+  - Name: Params
+    Offset: '0x10'
+    Size: '0x40'
+    Type: Struct EventLogParams
   ClassSize: '0x50'
 CrewJoinedAllianceTelemetryEvent:
   Attributes:
@@ -13534,25 +13777,6 @@ DebugReplicatedAbilityData:
     Size: '0x1'
     Type: byte
   ClassSize: '0x20'
-DebugStoryInfoModelSchedule:
-  Attributes:
-  - Name: DebugStoriesGroupName
-    Offset: '0x0'
-    Size: '0x8'
-    Type: struct FName
-  - Name: Stories
-    Offset: '0x8'
-    Size: '0x10'
-    Type: TArray<Struct StoryInfoModel>
-  - Name: RepeatDuration
-    Offset: '0x18'
-    Size: '0x8'
-    Type: Struct Timespan
-  - Name: RepeatDelay
-    Offset: '0x20'
-    Size: '0x8'
-    Type: Struct Timespan
-  ClassSize: '0x28'
 DebugSuperSailorActionStateConstructionInfo:
   Attributes: []
   ClassSize: '0x30'
@@ -14189,6 +14413,25 @@ DrunkennessSetupData:
     Size: '0x1'
     Type: bool
   ClassSize: '0x14'
+DynamicAnimationAllocationFragment:
+  Attributes:
+  - Name: LoadAssetFailedInfo
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct LoadRequestAssetInfo>
+  - Name: LoadAssetSuccessInfo
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct LoadRequestAssetInfo>
+  - Name: FallbackAnimUsageInfo
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<Struct FallbackAnimUsageInfo>
+  - Name: AssetLoadSkipInfo
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct AssetLoadSkipInfo>
+  ClassSize: '0x40'
 DynamicMaterialListContainer:
   Attributes:
   - Name: MaterialsList
@@ -15044,6 +15287,24 @@ EnterTunnelOfTheDamnedActionStateParams:
 EnterTunnelOfTheDamnedFadeComplete:
   Attributes: []
   ClassSize: '0x1'
+EntitlementAllowance:
+  Attributes:
+  - Name: AllowedNumber
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+EntitlementBundle:
+  Attributes:
+  - Name: BundleKey
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: BundleContents
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Class BundleContents>
+  ClassSize: '0x18'
 EntitlementIdInfo:
   Attributes:
   - Name: EntitlementId
@@ -15066,6 +15327,23 @@ EntitlementInfo:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x30'
+EntitlementInfosFailedEvent:
+  Attributes: []
+  ClassSize: '0x1'
+EntitlementInfosRequestUIEvent:
+  Attributes:
+  - Name: EntitlementIds
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Str EntitlementIds>
+  ClassSize: '0x10'
+EntitlementInfosResponseUIEvent:
+  Attributes:
+  - Name: EntitlementInfos
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct EntitlementInfo>
+  ClassSize: '0x10'
 EntitlementItem:
   Attributes:
   - Name: Description
@@ -15093,6 +15371,13 @@ EntitlementItem:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0xa8'
+EntitlementLoadoutViewUpdatedEvent:
+  Attributes:
+  - Name: HasEntitlementLoadoutView
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
 EntitlementMapEntry:
   Attributes:
   - Name: Identifier
@@ -15648,6 +15933,9 @@ EventCapstanStartedMoving:
   Attributes: []
   ClassSize: '0x1'
 EventCapstanStoppedMoving:
+  Attributes: []
+  ClassSize: '0x1'
+EventCaptainsLogbookRequestUndock:
   Attributes: []
   ClassSize: '0x1'
 EventCargoRunCrateDelivered:
@@ -16222,6 +16510,9 @@ EventCustomizableActorChanged:
     Size: '0x1'
     Type: bool
   ClassSize: '0x10'
+EventDASFishingAnimationsLoaded:
+  Attributes: []
+  ClassSize: '0x1'
 EventDeathBlackFadeStopped:
   Attributes: []
   ClassSize: '0x1'
@@ -17012,7 +17303,15 @@ EventLogDefinition:
     Type: byte
   ClassSize: '0x40'
 EventLogParams:
-  Attributes: []
+  Attributes:
+  - Name: NameParam
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: NumberParam
+    Offset: '0x38'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x40'
 EventMapPiecedObtained:
   Attributes: []
@@ -17375,6 +17674,20 @@ EventPlayerControllerDestroyedCalled:
     Type: Class AthenaPlayerController*
   ClassSize: '0x8'
 EventPlayerControllerHitNotification:
+  Attributes:
+  - Name: PlaySfx
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+EventPlayerControllerHitNotificationOld:
+  Attributes:
+  - Name: PlaySfx
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+EventPlayerControllerKillNotification:
   Attributes:
   - Name: PlaySfx
     Offset: '0x0'
@@ -17971,13 +18284,6 @@ EventResetSettingsGroup:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x8'
-EventRestoreShip:
-  Attributes:
-  - Name: OnlyRepaired
-    Offset: '0x0'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x1'
 EventRevealableCloseReveal:
   Attributes: []
   ClassSize: '0x1'
@@ -18163,6 +18469,9 @@ EventSetJIPFishingAnimationState:
     Size: '0x1'
     Type: byte
   ClassSize: '0x1'
+EventSetMountpointLocationInUseForUI:
+  Attributes: []
+  ClassSize: '0x38'
 EventSetRemappedPlayerDirection:
   Attributes:
   - Name: PlayerDirection
@@ -18225,7 +18534,7 @@ EventShipDestroyed:
   ClassSize: '0x8'
 EventShipEnteredIslandVicinity:
   Attributes: []
-  ClassSize: '0x4'
+  ClassSize: '0x8'
 EventShipEnteredSafeZone:
   Attributes:
   - Name: Ship
@@ -18259,6 +18568,20 @@ EventShipLightStateChange:
     Offset: '0x8'
     Size: '0x8'
     Type: Class Actor*
+  ClassSize: '0x10'
+EventShipNameTextboxFocusRequest:
+  Attributes:
+  - Name: ShouldFocusShipNameTextbox
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+EventShipNameTextboxTextFromVirtualKeyboard:
+  Attributes:
+  - Name: Text
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
 EventShipRegionChanged:
   Attributes:
@@ -19358,6 +19681,17 @@ FailedToFindPlayerSpawnLocationTelemetryEvent:
     Size: '0x10'
     Type: TArray<Struct FailedToFindPlayerSpawnLocationPotentialLocation>
   ClassSize: '0x18'
+FallbackAnimUsageInfo:
+  Attributes:
+  - Name: AnimationsStructName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: DurationOfUsage
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x18'
 FallbackSittingDataAsset:
   Attributes:
   - Name: SittingAnimCorrectionDataAsset
@@ -19834,7 +20168,7 @@ FireBroadcast:
     Offset: '0x30'
     Size: '0x50'
     Type: Struct ProjectileAim
-  - Name: ProjectileSeed
+  - Name: InaccuracySeed
     Offset: '0x80'
     Size: '0x4'
     Type: int
@@ -19843,17 +20177,17 @@ FireLaunchableShotRpc:
   Attributes:
   - Name: Request
     Offset: '0x20'
-    Size: '0x90'
+    Size: '0xa0'
     Type: Struct FireRequest
   - Name: Action
-    Offset: '0xb0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: Class LaunchableShotActionComponent*
   - Name: LocalWielderVelocity
-    Offset: '0xb8'
+    Offset: '0xc8'
     Size: '0xc'
     Type: Struct Vector
-  ClassSize: '0xe0'
+  ClassSize: '0xf0'
 FireRequest:
   Attributes:
   - Name: Instigator
@@ -19872,7 +20206,11 @@ FireRequest:
     Offset: '0x80'
     Size: '0x10'
     Type: Struct Guid
-  ClassSize: '0x90'
+  - Name: InaccuracySeed
+    Offset: '0x90'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0xa0'
 FireTelemetryFragment:
   Attributes:
   - Name: NumOfShipWithActiveCells
@@ -19891,9 +20229,9 @@ FireWeaponOnServerRpc:
   Attributes:
   - Name: FireRequest
     Offset: '0x20'
-    Size: '0x90'
+    Size: '0xa0'
     Type: Struct FireRequest
-  ClassSize: '0xb0'
+  ClassSize: '0xc0'
 FiredFromActorActionStateConstructionInfo:
   Attributes:
   - Name: FiringActor
@@ -20726,6 +21064,13 @@ FragileComponentShipDamageTypeEntry:
     Size: '0x4'
     Type: float
   ClassSize: '0x10'
+FragmentMarker:
+  Attributes:
+  - Name: Marker
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'
 FrameDurationDataTelemetryFragment:
   Attributes:
   - Name: Min
@@ -21138,9 +21483,9 @@ GenericPartDesc:
   Attributes:
   - Name: Mesh
     Offset: '0x0'
-    Size: '0x8'
-    Type: Class StaticMesh*
-  ClassSize: '0x8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x18'
 GenericPopupAudioDescriptor:
   Attributes:
   - Name: SfxEventName
@@ -21675,44 +22020,83 @@ HideoutRevealedEvent:
     Size: '0x38'
     Type: Struct FText
   ClassSize: '0x38'
+HitRegCapsuleTargetData:
+  Attributes:
+  - Name: CapsuleOwner
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: Center
+    Offset: '0x8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: HalfHeight
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: Radius
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: Rotation
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct Quat
+  ClassSize: '0x30'
 HitRegProjectileAttackData:
   Attributes:
   - Name: HasValidData
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: AttackingCharacterActor
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ShotType
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
   - Name: AimDirection
-    Offset: '0x4'
+    Offset: '0x14'
     Size: '0xc'
     Type: Struct Vector
   - Name: AimPosition
-    Offset: '0x10'
+    Offset: '0x20'
     Size: '0xc'
     Type: Struct Vector
   - Name: WeaponMeshTransform
-    Offset: '0x20'
+    Offset: '0x30'
     Size: '0x30'
     Type: Struct Transform
   - Name: WeaponMesh
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x8'
     Type: Class Object*
   - Name: ProjectileTrails
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x10'
     Type: TArray<Struct HitRegTrailData>
-  ClassSize: '0x70'
+  - Name: PossibleCapsuleTargets
+    Offset: '0x78'
+    Size: '0x10'
+    Type: TArray<Struct HitRegCapsuleTargetData>
+  - Name: RewoundPossibleCapsuleTargets
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<Struct HitRegCapsuleTargetData>
+  ClassSize: '0xa0'
 HitRegProjectileSnapshotData:
   Attributes:
   - Name: AttackerClientData
     Offset: '0x0'
-    Size: '0x70'
+    Size: '0xa0'
     Type: Struct HitRegProjectileAttackData
   - Name: ServerData
-    Offset: '0x70'
-    Size: '0x70'
+    Offset: '0xa0'
+    Size: '0xa0'
     Type: Struct HitRegProjectileAttackData
-  ClassSize: '0xe0'
+  ClassSize: '0x140'
 HitRegRecordProjectileShotRpc:
   Attributes:
   - Name: AttackId
@@ -21721,9 +22105,9 @@ HitRegRecordProjectileShotRpc:
     Type: Struct Guid
   - Name: AttackRecord
     Offset: '0x20'
-    Size: '0xa0'
+    Size: '0xd0'
     Type: Struct HitRegSnapshotProjectileRecord
-  ClassSize: '0xc0'
+  ClassSize: '0xf0'
 HitRegSnapshotDisplaySettings:
   Attributes:
   - Name: DisplaySnapshot
@@ -21745,39 +22129,58 @@ HitRegSnapshotDisplaySettings:
   ClassSize: '0x4'
 HitRegSnapshotProjectileRecord:
   Attributes:
-  - Name: AimDirection
+  - Name: AttackingActor
     Offset: '0x0'
-    Size: '0xc'
-    Type: Struct Vector
-  - Name: AimPosition
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ShotType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: AimDirection
     Offset: '0xc'
     Size: '0xc'
     Type: Struct Vector
-  - Name: BulletLifetime
+  - Name: AimPosition
     Offset: '0x18'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: BulletLifetime
+    Offset: '0x24'
     Size: '0x4'
     Type: float
   - Name: WeaponMeshTransform
-    Offset: '0x20'
+    Offset: '0x30'
     Size: '0x30'
     Type: Struct Transform
   - Name: WeaponMesh
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x8'
     Type: Class Object*
   - Name: AttackGroupSize
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x4'
     Type: int
   - Name: SubAttackGroupId
-    Offset: '0x5c'
+    Offset: '0x6c'
     Size: '0x4'
     Type: int
   - Name: ProjectileTrail
-    Offset: '0x60'
+    Offset: '0x70'
     Size: '0x40'
     Type: Struct HitRegTrailData
-  ClassSize: '0xa0'
+  - Name: PossibleTargetCapsules
+    Offset: '0xb0'
+    Size: '0x10'
+    Type: TArray<Struct HitRegCapsuleTargetData>
+  - Name: RewoundPossibleCapsuleTargets
+    Offset: '0xc0'
+    Size: '0x10'
+    Type: TArray<Struct HitRegCapsuleTargetData>
+  ClassSize: '0xd0'
+HitRegToggleHitScanEvent:
+  Attributes: []
+  ClassSize: '0x1'
 HitRegTrailData:
   Attributes:
   - Name: Trail
@@ -25189,6 +25592,21 @@ LiquidProjectileImpactEvent:
     Size: '0x8'
     Type: class
   ClassSize: '0x8'
+LoadRequestAssetInfo:
+  Attributes:
+  - Name: LoadDuration
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: AnimationsStructName
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: LoadingForItemName
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x28'
 LoadShipCannonData:
   Attributes:
   - Name: ItemName
@@ -25301,6 +25719,9 @@ LoadoutCategory:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x20'
+LoadoutCostResponseModel:
+  Attributes: []
+  ClassSize: '0xa0'
 LoadoutEntry:
   Attributes:
   - Name: PirateIdentity
@@ -25316,6 +25737,17 @@ LoadoutEntry:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0xd8'
+LoadoutItemCostResponseModel:
+  Attributes:
+  - Name: Currency
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Amount
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
 LoadoutPetCategory:
   Attributes:
   - Name: PetEntitlementId
@@ -25425,15 +25857,19 @@ LobbyServiceModel:
     Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
-  - Name: LobbyCreationRequest
+  - Name: HostToken
     Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: LobbyCreationRequest
+    Offset: '0x40'
     Size: '0x10'
     Type: Struct LobbyCreationRequestModel
   - Name: CreationTimeUtc
-    Offset: '0x40'
+    Offset: '0x50'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x50'
+  ClassSize: '0x60'
 LobbySetup:
   Attributes:
   - Name: Crews
@@ -26158,19 +26594,23 @@ MastSailLoweredProportionChangedEvent:
   ClassSize: '0xc'
 MastSnapshot:
   Attributes:
-  - Name: Length
+  - Name: Sails
     Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct SailSnapshot>
+  - Name: LengthProportionRatio
+    Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: Angle
-    Offset: '0x4'
+  - Name: AngleRatio
+    Offset: '0x14'
     Size: '0x4'
     Type: float
-  - Name: Damage
-    Offset: '0x8'
+  - Name: DamageLevel
+    Offset: '0x18'
     Size: '0x4'
-    Type: float
-  ClassSize: '0xc'
+    Type: int
+  ClassSize: '0x20'
 MatchmakeQuestDesc:
   Attributes: []
   ClassSize: '0x28'
@@ -26310,6 +26750,17 @@ MatineeActorStopNetworkEvent:
     Size: '0x8'
     Type: Class MatineeActor*
   ClassSize: '0x18'
+MaxFactionStreakIcon:
+  Attributes:
+  - Name: FactionMaxStreakIcon
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Texture*
+  - Name: Faction
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x10'
 MaxHolePerIslandDataAsset:
   Attributes:
   - Name: IslandName
@@ -27366,6 +27817,13 @@ MeshMemoryConstraintRegistrationDelayedTelemetryEvent:
 MeshMemoryConstraintRegistrationFailedTelemetryEvent:
   Attributes: []
   ClassSize: '0x38'
+MeshMemoryConstraintServiceRequestScoringEvent:
+  Attributes:
+  - Name: ConstraintBudget
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x8'
 MeshMemoryConstraintTelemetryBudgetFragment:
   Attributes:
   - Name: Budget
@@ -27594,11 +28052,15 @@ MountpointClientState:
     Offset: '0x0'
     Size: '0x8'
     Type: Class MountpointComponent*
-  - Name: NudgeInterpolationParamsDataAsset
+  - Name: CurrentTrinketTitle
     Offset: '0x8'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: NudgeInterpolationParamsDataAsset
+    Offset: '0x40'
     Size: '0x8'
     Type: Class NudgeInterpolationParamsDataAsset*
-  ClassSize: '0x10'
+  ClassSize: '0x48'
 MountpointParams:
   Attributes:
   - Name: PreviewTrinket
@@ -27637,6 +28099,17 @@ MountpointParamsDataAssetByFeature:
     Size: '0x8'
     Type: Class MountpointParamsDataAsset*
   ClassSize: '0x10'
+MountpointWaterLevelParams:
+  Attributes:
+  - Name: WaterLevelDifferenceBetweenUpdates
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: ZOffsetFromWaterToDisableMountpoint
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
 MoveSpeedValidationFailedTelemetryEvent:
   Attributes:
   - Name: Item
@@ -27968,15 +28441,19 @@ NPCDialogExecuteOptionOnServerRpc:
     Offset: '0x10'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: CurrentDialog
+  - Name: OverrideType
     Offset: '0x18'
+    Size: '0x8'
+    Type: class
+  - Name: CurrentDialog
+    Offset: '0x20'
     Size: '0x4'
     Type: int
   - Name: CurrentOption
-    Offset: '0x1c'
+    Offset: '0x24'
     Size: '0x4'
     Type: int
-  ClassSize: '0x20'
+  ClassSize: '0x28'
 NPCDialogFormattedHeaderByConditionText:
   Attributes:
   - Name: Text
@@ -28342,6 +28819,21 @@ NamedStateSelector:
 NameplateVisibilityFactors:
   Attributes: []
   ClassSize: '0x14'
+NarrateInteractablesSettingsEvent:
+  Attributes:
+  - Name: NarrateInteractableText
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: NarrateInteractableButtons
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: IgnoreDisabledInteractables
+    Offset: '0x2'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x3'
 NarrationRequestEvent:
   Attributes:
   - Name: Text
@@ -28714,6 +29206,16 @@ OnLiquidProjectileImpactEvent:
 OnRepIsXboxGamePadOnlyServerEvent:
   Attributes:
   - Name: IsXboxGamePadOnlyServer
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
+OnRestorePurchaseSuccess:
+  Attributes: []
+  ClassSize: '0x1'
+OnRestoreShopStateChangedEvent:
+  Attributes:
+  - Name: CanRestore
     Offset: '0x0'
     Size: '0x1'
     Type: bool
@@ -29728,8 +30230,20 @@ PersistentUserGameSettings:
     Offset: '0x164'
     Size: '0x4'
     Type: int
-  - Name: FishNameplateNarrationEnabled
+  - Name: NarrateInteractableText
     Offset: '0x168'
+    Size: '0x1'
+    Type: bool
+  - Name: NarrateInteractableButtons
+    Offset: '0x169'
+    Size: '0x1'
+    Type: bool
+  - Name: IgnoreDisabledInteractables
+    Offset: '0x16a'
+    Size: '0x1'
+    Type: bool
+  - Name: FishNameplateNarrationEnabled
+    Offset: '0x16b'
     Size: '0x1'
     Type: bool
   - Name: ContinuousNarrationDelay
@@ -30952,6 +31466,13 @@ PlayNpcAnimationNetworkEvent:
     Size: '0x8'
     Type: Class PlaceableReaction*
   ClassSize: '0x30'
+PlayerAccoladeProgressModel:
+  Attributes:
+  - Name: Pirate
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct AccoladeProgressModel
+  ClassSize: '0x20'
 PlayerActionBaseTelemetryFragment:
   Attributes:
   - Name: ObjectId
@@ -31039,6 +31560,17 @@ PlayerAggregatePositionTelemetryFragmentInput:
     Size: '0x10'
     Type: TArray<Struct Vector>
   ClassSize: '0x10'
+PlayerAndShipAccoladeProgressModel:
+  Attributes:
+  - Name: Pirate
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct AccoladeProgressModel
+  - Name: Ship
+    Offset: '0x20'
+    Size: '0x20'
+    Type: Struct AccoladeProgressModel
+  ClassSize: '0x40'
 PlayerArriveLocationTelemetryEvent:
   Attributes:
   - Name: LocationName
@@ -33508,6 +34040,12 @@ PressurePlateAnimationComponent:
     Size: '0x8'
     Type: Class TransformBlendCurveComponent*
   ClassSize: '0x10'
+PrimaryInteractableAvailableEvent:
+  Attributes: []
+  ClassSize: '0x1'
+PrimaryInteractableNoLongerAvailableEvent:
+  Attributes: []
+  ClassSize: '0x1'
 PrisonerToPositionMapping:
   Attributes:
   - Name: SpawnablePrisoners
@@ -33664,6 +34202,25 @@ ProjectileHitEvent:
     Size: '0x10'
     Type: TArray<Struct Vector>
   ClassSize: '0x178'
+ProjectileHitScanPerWeaponMeshPairings:
+  Attributes:
+  - Name: DamagerType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: TrailsMeshHitScan
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class StaticMesh*
+  - Name: MaterialHitScan
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: MaxTrails
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x48'
 ProjectileHitScanVFX:
   Attributes:
   - Name: Projectile
@@ -33672,9 +34229,13 @@ ProjectileHitScanVFX:
     Type: Struct Projectile
   - Name: AmmoParams
     Offset: '0x20'
-    Size: '0xc0'
+    Size: '0xb0'
     Type: Struct WeaponProjectileParams
-  ClassSize: '0x100'
+  - Name: DamagerType
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0xf0'
 ProjectileHitTelemetryEvent:
   Attributes:
   - Name: AttackId
@@ -33791,7 +34352,7 @@ ProjectileServiceUpdateRewindFailedEvent:
   ClassSize: '0x30'
 ProjectileShotParams:
   Attributes:
-  - Name: Seed
+  - Name: InaccuracySeed
     Offset: '0x0'
     Size: '0x4'
     Type: int
@@ -33841,7 +34402,26 @@ ProjectileWeaponFireAimClampTelemetryEvent:
     Offset: '0x24'
     Size: '0xc'
     Type: Struct Vector
-  ClassSize: '0x30'
+  - Name: WantedDistance
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x38'
+ProjectileWeaponFireInaccuracySeedMismatchTelemetryEvent:
+  Attributes:
+  - Name: TelemetryAttackId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: ClientSeed
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: ServerSeed
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
 ProjectileWeaponFireStatsTelemetryEvent:
   Attributes:
   - Name: AimPositionDifference
@@ -33934,7 +34514,7 @@ ProjectileWeaponParameters:
     Offset: '0x34'
     Size: '0x1c'
     Type: Struct ProjectileShotParams
-  - Name: Seed
+  - Name: InaccuracySeed
     Offset: '0x50'
     Size: '0x4'
     Type: int
@@ -33972,89 +34552,89 @@ ProjectileWeaponParameters:
     Type: class
   - Name: AmmoParams
     Offset: '0x80'
-    Size: '0xc0'
+    Size: '0xb0'
     Type: Struct WeaponProjectileParams
   - Name: UsesScope
-    Offset: '0x140'
+    Offset: '0x130'
     Size: '0x1'
     Type: bool
   - Name: ZoomedRecoilDurationIncrease
-    Offset: '0x144'
+    Offset: '0x134'
     Size: '0x4'
     Type: float
   - Name: SecondsUntilZoomStarts
-    Offset: '0x148'
+    Offset: '0x138'
     Size: '0x4'
     Type: float
   - Name: SecondsUntilPostStarts
-    Offset: '0x14c'
+    Offset: '0x13c'
     Size: '0x4'
     Type: float
   - Name: WeaponFiredAINoiseRange
-    Offset: '0x150'
+    Offset: '0x140'
     Size: '0x4'
     Type: float
   - Name: MaximumRequestPositionDelta
-    Offset: '0x154'
+    Offset: '0x144'
     Size: '0x4'
     Type: float
   - Name: MaximumRequestAngleDelta
-    Offset: '0x158'
+    Offset: '0x148'
     Size: '0x4'
     Type: float
   - Name: TimeoutTolerance
-    Offset: '0x15c'
+    Offset: '0x14c'
     Size: '0x4'
     Type: float
   - Name: AimingMoveSpeedScalar
-    Offset: '0x160'
+    Offset: '0x150'
     Size: '0x4'
     Type: float
   - Name: AimSensitivitySettingCategory
-    Offset: '0x164'
+    Offset: '0x154'
     Size: '0x1'
     Type: byte
   - Name: InAimFOV
-    Offset: '0x168'
+    Offset: '0x158'
     Size: '0x4'
     Type: float
   - Name: BlendSpeed
-    Offset: '0x16c'
+    Offset: '0x15c'
     Size: '0x4'
     Type: float
   - Name: DryFireSfx
-    Offset: '0x170'
+    Offset: '0x160'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: AudioEmitterParameters
-    Offset: '0x178'
+    Offset: '0x168'
     Size: '0x10'
     Type: Struct AudioEmitterParameters
   - Name: RumbleTag
-    Offset: '0x188'
+    Offset: '0x178'
     Size: '0x8'
     Type: struct FName
   - Name: KnockbackEnabled
-    Offset: '0x190'
+    Offset: '0x180'
     Size: '0x1'
     Type: bool
   - Name: KnockbackParams
-    Offset: '0x194'
+    Offset: '0x184'
     Size: '0x50'
     Type: Struct KnockBackInfo
   - Name: StunEnabled
-    Offset: '0x1e4'
+    Offset: '0x1d4'
     Size: '0x1'
     Type: bool
   - Name: StunDuration
-    Offset: '0x1e8'
+    Offset: '0x1d8'
     Size: '0x4'
     Type: float
   - Name: TargetingOffset
-    Offset: '0x1ec'
+    Offset: '0x1dc'
     Size: '0xc'
     Type: Struct Vector
-  ClassSize: '0x1f8'
+  ClassSize: '0x1e8'
 PromptCountersModel:
   Attributes: []
   ClassSize: '0x50'
@@ -34091,6 +34671,23 @@ ProposedVoyageEntry:
     Size: '0x8'
     Type: Class AthenaPlayerState*
   ClassSize: '0x10'
+PurchaseCatalogOfferFailureResponseUIEvent:
+  Attributes: []
+  ClassSize: '0x1'
+PurchaseCatalogOfferRequestUIEvent:
+  Attributes:
+  - Name: CatalogName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CatalogOffer
+    Offset: '0x10'
+    Size: '0x348'
+    Type: Struct CatalogOffer
+  ClassSize: '0x358'
+PurchaseCatalogOfferResponseUIEvent:
+  Attributes: []
+  ClassSize: '0x1'
 PurchaseConfigurationSettings:
   Attributes:
   - Name: BackOffTimeInSeconds
@@ -34543,37 +35140,37 @@ QuestParams:
     Type: Struct RiddleQuestParams
   - Name: Bounty
     Offset: '0xd0'
-    Size: '0x148'
+    Size: '0x158'
     Type: Struct BountyQuestParams
   - Name: Merchant
-    Offset: '0x218'
+    Offset: '0x228'
     Size: '0xc0'
     Type: Struct MerchantQuestParams
   - Name: CargoRun
-    Offset: '0x2d8'
+    Offset: '0x2e8'
     Size: '0x88'
     Type: Struct CargoRunQuestParams
   - Name: Tale
-    Offset: '0x360'
+    Offset: '0x370'
     Size: '0x38'
     Type: Struct TaleQuestParams
   - Name: Matchmake
-    Offset: '0x398'
+    Offset: '0x3a8'
     Size: '0x1'
     Type: Struct MatchmakingQuestParams
   - Name: Staging
-    Offset: '0x399'
+    Offset: '0x3a9'
     Size: '0x1'
     Type: Struct StagingQuestParams
   - Name: EmergantVoyage
-    Offset: '0x39a'
+    Offset: '0x3aa'
     Size: '0x1'
     Type: Struct EmergantVoyageQuestParams
   - Name: Reward
-    Offset: '0x39b'
+    Offset: '0x3ab'
     Size: '0x1'
     Type: Struct RewardQuestParams
-  ClassSize: '0x3a0'
+  ClassSize: '0x3b0'
 QuestPoolParams:
   Attributes:
   - Name: Weight
@@ -35845,52 +36442,64 @@ RemotePreferences:
     Offset: '0x120'
     Size: '0x4'
     Type: int
-  - Name: FishNameplateNarrationEnabled
+  - Name: NarrateInteractableText
     Offset: '0x124'
     Size: '0x1'
     Type: bool
-  - Name: UseContinuousNarration
+  - Name: NarrateInteractableButtons
     Offset: '0x125'
     Size: '0x1'
     Type: bool
-  - Name: ContinuousNarrationDelay
+  - Name: IgnoreDisabledInteractables
+    Offset: '0x126'
+    Size: '0x1'
+    Type: bool
+  - Name: FishNameplateNarrationEnabled
+    Offset: '0x127'
+    Size: '0x1'
+    Type: bool
+  - Name: UseContinuousNarration
     Offset: '0x128'
+    Size: '0x1'
+    Type: bool
+  - Name: ContinuousNarrationDelay
+    Offset: '0x12c'
     Size: '0x4'
     Type: float
   - Name: DisableFlashes
-    Offset: '0x12c'
-    Size: '0x1'
-    Type: bool
-  - Name: DisableBlur
-    Offset: '0x12d'
-    Size: '0x1'
-    Type: bool
-  - Name: DisableScreenShake
-    Offset: '0x12e'
-    Size: '0x1'
-    Type: bool
-  - Name: DisableOnScreenEffects
-    Offset: '0x12f'
-    Size: '0x1'
-    Type: bool
-  - Name: EnchantedCompassProximityAnnouncerEnabled
     Offset: '0x130'
     Size: '0x1'
     Type: bool
-  - Name: DisableRats
+  - Name: DisableBlur
     Offset: '0x131'
     Size: '0x1'
     Type: bool
-  - Name: EnableSqueakyWheel
+  - Name: DisableScreenShake
     Offset: '0x132'
     Size: '0x1'
     Type: bool
-  - Name: SqueakyWheelVolume
+  - Name: DisableOnScreenEffects
+    Offset: '0x133'
+    Size: '0x1'
+    Type: bool
+  - Name: EnchantedCompassProximityAnnouncerEnabled
     Offset: '0x134'
+    Size: '0x1'
+    Type: bool
+  - Name: DisableRats
+    Offset: '0x135'
+    Size: '0x1'
+    Type: bool
+  - Name: EnableSqueakyWheel
+    Offset: '0x136'
+    Size: '0x1'
+    Type: bool
+  - Name: SqueakyWheelVolume
+    Offset: '0x138'
     Size: '0x4'
     Type: float
   - Name: RemoteGameLanguage
-    Offset: '0x138'
+    Offset: '0x13c'
     Size: '0x4'
     Type: int
   ClassSize: '0x140'
@@ -36673,6 +37282,9 @@ RequestRealMoneyPurchaseSeasonPassOfferEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x28'
+RequestRestoreShopEvent:
+  Attributes: []
+  ClassSize: '0x1'
 RequestSeasonPassRealMoneyPriceEvent:
   Attributes:
   - Name: Price
@@ -36686,6 +37298,13 @@ RequestSessionEvent:
 RequestSessionTypeSelectionEvent:
   Attributes: []
   ClassSize: '0x1'
+RequestShipCustomizationChestClearShipCustomizationEvent:
+  Attributes:
+  - Name: ItemCategory
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'
 RequestShipCustomizationChestEquipShipCustomizationEvent:
   Attributes:
   - Name: ItemDesc
@@ -36762,6 +37381,17 @@ RequestSilverEvent:
 RequestSwitchAccountEvent:
   Attributes: []
   ClassSize: '0x1'
+RequestTrinketBoxActionEvent:
+  Attributes:
+  - Name: Action
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: TrinketDesc
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x18'
 RequestVoyageProposalsEvent:
   Attributes: []
   ClassSize: '0x1'
@@ -36929,6 +37559,21 @@ RetrieveBootyActorDespawnedEvent:
 RetrieveBootyActorSpawnedEvent:
   Attributes: []
   ClassSize: '0x1'
+RevealRequirementContext:
+  Attributes:
+  - Name: Revealable
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: Revealer
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: WorldContextObject
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class Object*
+  ClassSize: '0x18'
 RevealableComponentDespawnedEvent:
   Attributes: []
   ClassSize: '0x10'
@@ -37199,7 +37844,15 @@ RewardRequestCrew:
     Offset: '0x30'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x40'
+  - Name: FactionAffiliation
+    Offset: '0x3c'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Captain
+    Offset: '0x48'
+    Size: '0x78'
+    Type: Struct PirateIdentity
+  ClassSize: '0xc0'
 RewardRequestCrewGame:
   Attributes:
   - Name: CrewId
@@ -37218,7 +37871,15 @@ RewardRequestCrewGame:
     Offset: '0x30'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x40'
+  - Name: FactionAffiliation
+    Offset: '0x3c'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Captain
+    Offset: '0x48'
+    Size: '0x78'
+    Type: Struct PirateIdentity
+  ClassSize: '0xc0'
 RewardRequestEvent:
   Attributes:
   - Name: RequestID
@@ -37781,6 +38442,21 @@ RumbleParameters:
 RuntimeFeatureConfigurationAvailableEvent:
   Attributes: []
   ClassSize: '0x4'
+SailSnapshot:
+  Attributes:
+  - Name: LengthProportion
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: Angle
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: Damage
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
 SailWithFlameOfFateColoursAboardStatData:
   Attributes:
   - Name: DefaultStatToFire
@@ -37806,6 +38482,32 @@ SalvageSpawnCompRequest:
     Size: '0x8'
     Type: Class SalvageItemSpawnComponent*
   ClassSize: '0x10'
+SaveToLoadoutCosts:
+  Attributes:
+  - Name: CategoryCosts
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct SaveToLoadoutItemCost>
+  - Name: EntitlementCosts
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct SaveToLoadoutItemCost>
+  ClassSize: '0x20'
+SaveToLoadoutItemCost:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Currency
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Amount
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
 SceneDialogueBaseNetworkEvent:
   Attributes: []
   ClassSize: '0x10'
@@ -38342,6 +39044,12 @@ SeatAnimationDefinition:
     Size: '0x10'
     Type: Struct StringAssetReference
   ClassSize: '0x28'
+SecondaryInteractableAvailableEvent:
+  Attributes: []
+  ClassSize: '0x1'
+SecondaryInteractableNoLongerAvailableEvent:
+  Attributes: []
+  ClassSize: '0x1'
 SendMarketingOptInResponse:
   Attributes:
   - Name: OptedIn
@@ -38404,7 +39112,11 @@ ServerAllocationSessionCookie:
     Offset: '0x78'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x80'
+  - Name: HostID
+    Offset: '0x80'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x90'
 ServerAsyncLoadingCompleteAckNetworkEvent:
   Attributes:
   - Name: Reason
@@ -38781,6 +39493,10 @@ ServerProjectileHitRegInfoTelemetryEvent:
     Offset: '0x60'
     Size: '0xc'
     Type: Struct Vector
+  - Name: IsHitScanShot
+    Offset: '0x6c'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x70'
 ServerProjectileImpactHitRegInfoTelemetryEvent:
   Attributes:
@@ -39149,11 +39865,15 @@ SessionCreationRequestModel:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct FString
-  - Name: Crews
+  - Name: HostID
     Offset: '0x10'
     Size: '0x10'
+    Type: Struct FString
+  - Name: Crews
+    Offset: '0x20'
+    Size: '0x10'
     Type: TArray<Struct SessionCreationCrewModel>
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 SessionCreationResponseModel:
   Attributes:
   - Name: Crews
@@ -39407,6 +40127,20 @@ SetNotificationScale:
     Size: '0x4'
     Type: float
   ClassSize: '0x4'
+SetPresenceConnectionStringRequestModel:
+  Attributes:
+  - Name: ConnectionString
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'
+SetPresenceConnectionStringResponseModel:
+  Attributes:
+  - Name: ResetAfter
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct Timespan
+  ClassSize: '0x8'
 SetRadialItemsAggregate:
   Attributes:
   - Name: Items
@@ -39597,16 +40331,20 @@ ShantyData:
     Offset: '0x20'
     Size: '0x8'
     Type: class
-  - Name: CanRandomPlay
+  - Name: OnShantyPlayedStat
     Offset: '0x28'
+    Size: '0x4'
+    Type: Struct PlayerStat
+  - Name: CanRandomPlay
+    Offset: '0x2c'
     Size: '0x1'
     Type: bool
   - Name: CanBeSelected
-    Offset: '0x29'
+    Offset: '0x2d'
     Size: '0x1'
     Type: bool
   - Name: DisableMigrationWhilePlaying
-    Offset: '0x2a'
+    Offset: '0x2e'
     Size: '0x1'
     Type: bool
   ClassSize: '0x30'
@@ -39738,6 +40476,13 @@ SharkPlayerStats:
     Size: '0x4'
     Type: Struct PlayerStat
   ClassSize: '0x8'
+ShipAccoladeProgressModel:
+  Attributes:
+  - Name: Ship
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct AccoladeProgressModel
+  ClassSize: '0x20'
 ShipActiveCurseFXData:
   Attributes:
   - Name: CurseFXData
@@ -39762,6 +40507,21 @@ ShipAnnouncementCinematicEvent:
     Size: '0x38'
     Type: Struct FText
   ClassSize: '0x70'
+ShipAnnouncementPartDesc:
+  Attributes:
+  - Name: Icon
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Alignment
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: AudioCue
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x30'
 ShipAnnouncementShipDescription:
   Attributes:
   - Name: ShipName
@@ -39773,6 +40533,13 @@ ShipAnnouncementShipDescription:
     Size: '0x38'
     Type: Struct FText
   ClassSize: '0x70'
+ShipAnnouncementShipSpottedEvent:
+  Attributes:
+  - Name: ShipSpotted
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
 ShipBaseTelemetryFragment:
   Attributes:
   - Name: ShipObjectId
@@ -39965,7 +40732,7 @@ ShipCustomizationCategorySettings:
     Offset: '0x8'
     Size: '0x10'
     Type: TArray<Class EligibleShipSizes>
-  - Name: IsCaptaincyOnly
+  - Name: IsTinSessionOnly
     Offset: '0x18'
     Size: '0x1'
     Type: bool
@@ -40308,6 +41075,13 @@ ShipHullRammingSpurDamageEntry:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<Struct ShipDamageEntry>
+  ClassSize: '0x10'
+ShipIdChangedEvent:
+  Attributes:
+  - Name: ShipId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
   ClassSize: '0x10'
 ShipIdentityOwnership:
   Attributes:
@@ -40864,6 +41638,20 @@ ShipSpecificData:
     Size: '0x8'
     Type: Class LevelSequence*
   ClassSize: '0x10'
+ShipStorageJettisonRequest:
+  Attributes:
+  - Name: LoadedAsset
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: CachedContainerNodes
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct StorageContainerNode>
+  ClassSize: '0x70'
+ShipStorageJettisonServiceAssetLoader:
+  Attributes: []
+  ClassSize: '0x20'
 ShipTemplate:
   Attributes:
   - Name: ShipSizeObject
@@ -41631,6 +42419,17 @@ SkeletonThroneStateData:
 SkellyFortFinder:
   Attributes: []
   ClassSize: '0x80'
+SkellyFortPlayerStat:
+  Attributes:
+  - Name: GameEventType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: StatToFire
+    Offset: '0x8'
+    Size: '0x4'
+    Type: Struct PlayerStat
+  ClassSize: '0x10'
 SleepingActionStateConstructionInfo:
   Attributes:
   - Name: SleepingActionStateParams
@@ -41857,6 +42656,13 @@ SpecialisedClothingCategories:
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
+SpecificEntitlementsRequestModel:
+  Attributes:
+  - Name: EntitlementIds
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Str EntitlementIds>
+  ClassSize: '0x10'
 SpeechAccessibilityModel:
   Attributes:
   - Name: ProfileUsers
@@ -42123,6 +42929,33 @@ StandardSailDynamicsParameters:
     Size: '0x4'
     Type: float
   ClassSize: '0xc'
+StartCameraFadeRpc:
+  Attributes:
+  - Name: FromAlpha
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: ToAlpha
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: FadeTimeInSeconds
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: FadeColour
+    Offset: '0x1c'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: ShouldFadeAudio
+    Offset: '0x2c'
+    Size: '0x1'
+    Type: bool
+  - Name: HoldFadeWhenFinished
+    Offset: '0x2d'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x30'
 StartEmoteData:
   Attributes:
   - Name: ActorId
@@ -42208,15 +43041,19 @@ StatBatchMessage:
     Offset: '0x0'
     Size: '0x78'
     Type: Struct PirateIdentity
-  - Name: PlayMode
+  - Name: Captain
     Offset: '0x78'
+    Size: '0x78'
+    Type: Struct PirateIdentity
+  - Name: PlayMode
+    Offset: '0xf0'
     Size: '0x1'
     Type: byte
   - Name: PlayModeVariant
-    Offset: '0x79'
+    Offset: '0xf1'
     Size: '0x1'
     Type: byte
-  ClassSize: '0xd0'
+  ClassSize: '0x148'
 StatBatchMessageValues:
   Attributes:
   - Name: Values
@@ -42700,6 +43537,17 @@ StowItemToContainerRPC:
     Size: '0x8'
     Type: class
   ClassSize: '0x30'
+StraightenNudgedTrinketActionRuleParams:
+  Attributes:
+  - Name: StraightenNudgedTrinketNotificationInputId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: StraightenNudgedTrinketText
+    Offset: '0x8'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x40'
 StrainDamage:
   Attributes:
   - Name: DamageParams
@@ -42771,6 +43619,10 @@ StreamingTelemetryBaseEvent:
     Type: bool
   - Name: PlayerIsTeleporting
     Offset: '0x29'
+    Size: '0x1'
+    Type: bool
+  - Name: IsLevelAssetCachingEnabled
+    Offset: '0x2a'
     Size: '0x1'
     Type: bool
   ClassSize: '0x30'
@@ -43536,13 +44388,6 @@ TeardownAndReloadUICompleted:
 TelemetryFragmentInput:
   Attributes: []
   ClassSize: '0x1'
-TelemetryFragmentListenerHandle:
-  Attributes:
-  - Name: FragmentType
-    Offset: '0x8'
-    Size: '0x8'
-    Type: Class ScriptStruct*
-  ClassSize: '0x30'
 TelemetryStepContext:
   Attributes:
   - Name: Name
@@ -43968,6 +44813,13 @@ ToggledSpawnerOverride:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x10'
+ToogleAFKKickFunctionalityRequest:
+  Attributes:
+  - Name: Enabled
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
 TornMapTearingParams:
   Attributes:
   - Name: NumPieces
@@ -44412,6 +45264,10 @@ TreasureMapWidgetText:
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
+  - Name: ShouldStrikethroughOnStart
+    Offset: '0x1d'
+    Size: '0x1'
+    Type: bool
   - Name: StrikethroughThickness
     Offset: '0x20'
     Size: '0x4'
@@ -44584,6 +45440,13 @@ TriggerStopUseEvent:
     Size: '0x1'
     Type: byte
   ClassSize: '0x20'
+TrinketChestItemInfoUpdatedEvent:
+  Attributes:
+  - Name: Items
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct ChestEntitlementTrinketItem>
+  ClassSize: '0x10'
 TrinketEntitlementsUpdatedUIEvent:
   Attributes:
   - Name: Entitlements
@@ -44603,7 +45466,7 @@ TrinketMetadata:
   ClassSize: '0x40'
 TunnelDestinationInfo:
   Attributes: []
-  ClassSize: '0x28'
+  ClassSize: '0x30'
 TunnelOfTheDamnedBaseTelemetryFragment:
   Attributes:
   - Name: TunnelInstanceId
@@ -44664,6 +45527,49 @@ TunnelOfTheDamnedMigrationSucceededEvent:
 TunnelOfTheDamnedMigrationSucceededTelemetryEvent:
   Attributes: []
   ClassSize: '0x1'
+TunnelOfTheDamnedShipPartParams:
+  Attributes:
+  - Name: VoyageVotingTableType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: CapstanType
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class
+  - Name: WheelType
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class
+  - Name: CannonPlayerLoadingInteractionPointType
+    Offset: '0x18'
+    Size: '0x8'
+    Type: class
+  - Name: CannonType
+    Offset: '0x20'
+    Size: '0x8'
+    Type: class
+  - Name: HarpoonType
+    Offset: '0x28'
+    Size: '0x8'
+    Type: class
+  - Name: RowboatAttachPointType
+    Offset: '0x30'
+    Size: '0x8'
+    Type: class
+  - Name: MapTableType
+    Offset: '0x38'
+    Size: '0x8'
+    Type: class
+  - Name: RowboatType
+    Offset: '0x40'
+    Size: '0x8'
+    Type: class
+  - Name: LadderTypes
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Class LadderTypes>
+  ClassSize: '0x58'
 TunnelOfTheDamnedTransitionDynamicFogEvent:
   Attributes: []
   ClassSize: '0x1'
@@ -45266,6 +46172,9 @@ UISetAudioSwitchEvent:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x20'
+UISlatePerformanceTelemetryFragment:
+  Attributes: []
+  ClassSize: '0x4'
 UIWhatsNewAvailableArticlesEvent:
   Attributes:
   - Name: Articles
@@ -45316,6 +46225,9 @@ UnlockableEntitlementCategory:
     Size: '0x10'
     Type: TArray<Class Entitlements>
   ClassSize: '0x18'
+UnlockedShopOffersThroughAccoladesAndMilestonesModel:
+  Attributes: []
+  ClassSize: '0x40'
 UnmountedFromMountpointEvent:
   Attributes: []
   ClassSize: '0x20'
@@ -47052,6 +47964,31 @@ WalletLastKnownBalanceUpdatedEvent:
     Size: '0x10'
     Type: Struct WalletBalance
   ClassSize: '0x10'
+WalletTransactionFinishedEvent:
+  Attributes:
+  - Name: WasSuccessful
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: PirateIdentity
+    Offset: '0x8'
+    Size: '0x78'
+    Type: Struct PirateIdentity
+  ClassSize: '0x80'
+WalletTransactionRequest:
+  Attributes:
+  - Name: Currency
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: TransactionId
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x18'
+WalletTransactionRequestRemoteServiceResult:
+  Attributes: []
+  ClassSize: '0x30'
 WalletUpdatedMessage:
   Attributes:
   - Name: PirateIdentity
@@ -47237,33 +48174,33 @@ WeaponProjectileCreator:
     Type: TArray<class IgnoredActors*>
   - Name: Params
     Offset: '0xa0'
-    Size: '0xc0'
+    Size: '0xb0'
     Type: Struct WeaponProjectileParams
   - Name: DamagerType
-    Offset: '0x160'
+    Offset: '0x150'
     Size: '0x8'
     Type: class
   - Name: TelemetryAttackId
-    Offset: '0x168'
+    Offset: '0x158'
     Size: '0x10'
     Type: Struct Guid
   - Name: SubAttackGroupId
-    Offset: '0x178'
+    Offset: '0x168'
     Size: '0x4'
     Type: int
   - Name: WeaponMeshTransform
-    Offset: '0x180'
+    Offset: '0x170'
     Size: '0x30'
     Type: Struct Transform
   - Name: WeaponMesh
-    Offset: '0x1b0'
+    Offset: '0x1a0'
     Size: '0x8'
     Type: Class Object*
   - Name: DistanceBeforeGravity
-    Offset: '0x1b8'
+    Offset: '0x1a8'
     Size: '0x4'
     Type: float
-  ClassSize: '0x1c0'
+  ClassSize: '0x1b0'
 WeaponProjectileEffectParams:
   Attributes:
   - Name: ApplyStun
@@ -47376,19 +48313,7 @@ WeaponProjectileParams:
     Offset: '0xac'
     Size: '0x4'
     Type: float
-  - Name: HitScanTrailUpdateModifier
-    Offset: '0xb0'
-    Size: '0x4'
-    Type: float
-  - Name: HitScanTrailFadeOutTime
-    Offset: '0xb4'
-    Size: '0x4'
-    Type: float
-  - Name: HitScanTrailGrowthSpeed
-    Offset: '0xb8'
-    Size: '0x4'
-    Type: float
-  ClassSize: '0xc0'
+  ClassSize: '0xb0'
 WeightedAIBoobyTrapSpawner:
   Attributes:
   - Name: Spawner
@@ -47574,9 +48499,9 @@ WeightedQuestParams:
     Type: float
   - Name: Params
     Offset: '0x8'
-    Size: '0x3a0'
+    Size: '0x3b0'
     Type: Struct QuestParams
-  ClassSize: '0x3a8'
+  ClassSize: '0x3b8'
 WeightedRewardDistribution:
   Attributes:
   - Name: RewardWeightings
@@ -47939,9 +48864,13 @@ WheelDesc:
   Attributes:
   - Name: WheelMesh
     Offset: '0x0'
-    Size: '0x8'
-    Type: Class SkeletalMesh*
-  ClassSize: '0x8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: WheelMeshOverrideMaterials
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<class WheelMeshOverrideMaterials*>
+  ClassSize: '0x28'
 WheelEventProperties:
   Attributes:
   - Name: VelocityThresholdForStopped
@@ -48104,6 +49033,10 @@ WieldableBookPageLayoutRepInfo:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<Struct WieldableBookNamedWidgetText>
+  - Name: Type
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x28'
 WieldableBookPageReference:
   Attributes:
@@ -48412,7 +49345,15 @@ WorldMapShipLocation:
     Offset: '0x31'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x38'
+  - Name: OwnerIsMaxFaction
+    Offset: '0x32'
+    Size: '0x1'
+    Type: bool
+  - Name: OwnerFactionName
+    Offset: '0x34'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x40'
 WorldMapWorldData:
   Attributes:
   - Name: MinX

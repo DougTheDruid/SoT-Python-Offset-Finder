@@ -413,82 +413,82 @@
   },
   "AIController": {
     "Super": "Controller",
-    "FullSize": "0x4c0",
-    "InheritedSize": "0x430",
+    "FullSize": "0x4b8",
+    "InheritedSize": "0x428",
     "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "bLOSflag",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x458"
+        "Offset": "0x450"
       },
       {
         "Name": "bSkipExtraLOSChecks",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x458"
+        "Offset": "0x450"
       },
       {
         "Name": "bAllowStrafe",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x458"
+        "Offset": "0x450"
       },
       {
         "Name": "bWantsPlayerState",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x458"
+        "Offset": "0x450"
       },
       {
         "Name": "bDisableControlRotation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x458"
+        "Offset": "0x450"
       },
       {
         "Name": "PathFollowingComponent",
         "Type": "Class PathFollowingComponent*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x458"
       },
       {
         "Name": "BrainComponent",
         "Type": "Class BrainComponent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x460"
       },
       {
         "Name": "PerceptionComponent",
         "Type": "Class AIPerceptionComponent*",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x468"
       },
       {
         "Name": "ActionsComp",
         "Type": "Class PawnActionsComponent*",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x470"
       },
       {
         "Name": "Blackboard",
         "Type": "Class BlackboardComponent*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x478"
       },
       {
         "Name": "CachedGameplayTasksComponent",
         "Type": "Class GameplayTasksComponent*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x480"
       }
     ]
   },
   "DetourCrowdAIController": {
     "Super": "AIController",
-    "FullSize": "0x4c0",
-    "InheritedSize": "0x4c0",
+    "FullSize": "0x4b8",
+    "InheritedSize": "0x4b8",
     "ClassSize": "0x0",
     "Attributes": []
   },

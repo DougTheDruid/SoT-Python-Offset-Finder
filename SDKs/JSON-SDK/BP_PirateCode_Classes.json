@@ -1,27 +1,27 @@
 {
   "BP_PirateCode_C": {
     "Super": "ModalInteractionProxy",
-    "FullSize": "0x500",
-    "InheritedSize": "0x4e8",
+    "FullSize": "0x518",
+    "InheritedSize": "0x500",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "NPCDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x4e8"
+        "Offset": "0x500"
       },
       {
         "Name": "PirateCode",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4f0"
+        "Offset": "0x508"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x4f8"
+        "Offset": "0x510"
       }
     ]
   },

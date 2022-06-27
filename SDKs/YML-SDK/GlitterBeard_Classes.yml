@@ -57,51 +57,51 @@ GlitterBeardTelemetryComponent:
 GlitterBeardTree:
   Attributes:
   - Name: ActionRulesComponent
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class ActionRulesComponent*
   - Name: InteractableComponent
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class ActionRulesInteractableComponent*
   - Name: LanternLightDelay
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x4'
     Type: float
   - Name: UnlockVFXCoordinatorComponent
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class GlitterBeardUnlockVFXCoordinatorComponent*
   - Name: TelemetryComponent
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class GlitterBeardTelemetryComponent*
   - Name: VocalShanty
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: class
   - Name: VocalsFadeEvent
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: VocalsFadeDelay
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x4'
     Type: float
   - Name: UnlockDelay
-    Offset: '0x434'
+    Offset: '0x42c'
     Size: '0x4'
     Type: float
   - Name: FinaleCoordinator
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class GlitterBeardFinaleCoordinatorComponent*
   - Name: LandmarkReactionTrigger
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class LandmarkReactionTriggerComponent*
   - Name: DistanceFromTreeToPauseAISpawn
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x4'
     Type: float
   - Name: HideoutDoor
@@ -112,9 +112,9 @@ GlitterBeardTree:
     Offset: '0x680'
     Size: '0x20'
     Type: Struct WwiseEmitter
-  ClassSize: '0x300'
+  ClassSize: '0x308'
   FullSize: '0x6d0'
-  InheritedSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 GlitterBeardTreeVisualFeedbackComponent:
   Attributes:
@@ -157,10 +157,10 @@ GlitterBeardUnlockVFXCoordinatorComponent:
 GlitterbeardSlidingDoor:
   Attributes:
   - Name: DecalBlendComponent
-    Offset: '0x538'
+    Offset: '0x530'
     Size: '0x8'
     Type: Class EffectBlendControllerComponent*
   ClassSize: '0x8'
-  FullSize: '0x540'
-  InheritedSize: '0x538'
+  FullSize: '0x538'
+  InheritedSize: '0x530'
   Super: SlidingDoor

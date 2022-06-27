@@ -205,17 +205,17 @@ public:
 class AIController: public Controller
 {
 public:
-	bool                                                         bLOSflag;                                          // 0x458(0x1)
-	bool                                                         bSkipExtraLOSChecks;                               // 0x458(0x1)
-	bool                                                         bAllowStrafe;                                      // 0x458(0x1)
-	bool                                                         bWantsPlayerState;                                 // 0x458(0x1)
-	bool                                                         bDisableControlRotation;                           // 0x458(0x1)
-	Class PathFollowingComponent*                                PathFollowingComponent;                            // 0x460(0x8)
-	Class BrainComponent*                                        BrainComponent;                                    // 0x468(0x8)
-	Class AIPerceptionComponent*                                 PerceptionComponent;                               // 0x470(0x8)
-	Class PawnActionsComponent*                                  ActionsComp;                                       // 0x478(0x8)
-	Class BlackboardComponent*                                   Blackboard;                                        // 0x480(0x8)
-	Class GameplayTasksComponent*                                CachedGameplayTasksComponent;                      // 0x488(0x8)
+	bool                                                         bLOSflag;                                          // 0x450(0x1)
+	bool                                                         bSkipExtraLOSChecks;                               // 0x450(0x1)
+	bool                                                         bAllowStrafe;                                      // 0x450(0x1)
+	bool                                                         bWantsPlayerState;                                 // 0x450(0x1)
+	bool                                                         bDisableControlRotation;                           // 0x450(0x1)
+	Class PathFollowingComponent*                                PathFollowingComponent;                            // 0x458(0x8)
+	Class BrainComponent*                                        BrainComponent;                                    // 0x460(0x8)
+	Class AIPerceptionComponent*                                 PerceptionComponent;                               // 0x468(0x8)
+	Class PawnActionsComponent*                                  ActionsComp;                                       // 0x470(0x8)
+	Class BlackboardComponent*                                   Blackboard;                                        // 0x478(0x8)
+	Class GameplayTasksComponent*                                CachedGameplayTasksComponent;                      // 0x480(0x8)
 };
 
 

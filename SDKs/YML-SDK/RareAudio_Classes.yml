@@ -63,12 +63,12 @@ AnimNotify_WwiseSoundMeshSwitch:
 AudioEventToComponentMap:
   Attributes:
   - Name: AudioEventToComponentMapComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class AudioEventToComponentMapComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 AudioEventToComponentMapComponent:
   Attributes:
@@ -83,8 +83,8 @@ AudioEventToComponentMapComponent:
 AudioIslandStaticMeshAssociatorBase:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 AudioPortalComponent:
   Attributes:

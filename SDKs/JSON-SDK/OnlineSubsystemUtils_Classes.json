@@ -84,53 +84,53 @@
   },
   "OnlineBeacon": {
     "Super": "Actor",
-    "FullSize": "0x3f8",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "BeaconConnectionInitialTimeout",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "BeaconConnectionTimeout",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3dc"
+        "Offset": "0x3d4"
       },
       {
         "Name": "NetDriver",
         "Type": "Class NetDriver*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       }
     ]
   },
   "OnlineBeaconClient": {
     "Super": "OnlineBeacon",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x418",
+    "InheritedSize": "0x3f0",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "BeaconOwner",
         "Type": "Class OnlineBeaconHostObject*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "BeaconConnection",
         "Type": "Class NetConnection*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "ConnectionState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x408"
+        "Offset": "0x400"
       }
     ]
   },
@@ -192,125 +192,125 @@
   },
   "PartyBeaconClient": {
     "Super": "OnlineBeaconClient",
-    "FullSize": "0x478",
-    "InheritedSize": "0x420",
+    "FullSize": "0x470",
+    "InheritedSize": "0x418",
     "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "DestSessionId",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "PendingReservation",
         "Type": "Struct PartyReservation",
         "Size": "0x30",
-        "Offset": "0x440"
+        "Offset": "0x438"
       },
       {
         "Name": "RequestType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x470"
+        "Offset": "0x468"
       },
       {
         "Name": "bPendingReservationSent",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x471"
+        "Offset": "0x469"
       },
       {
         "Name": "bCancelReservation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x472"
+        "Offset": "0x46a"
       }
     ]
   },
   "TestBeaconClient": {
     "Super": "OnlineBeaconClient",
-    "FullSize": "0x420",
-    "InheritedSize": "0x420",
+    "FullSize": "0x418",
+    "InheritedSize": "0x418",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "OnlineBeaconHost": {
     "Super": "OnlineBeacon",
-    "FullSize": "0x4b0",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x4a8",
+    "InheritedSize": "0x3f0",
     "ClassSize": "0xb8",
     "Attributes": [
       {
         "Name": "ListenPort",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "ClientActors",
         "Type": "TArray<class ClientActors*>",
         "Size": "0x10",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       }
     ]
   },
   "OnlineBeaconHostObject": {
     "Super": "Actor",
-    "FullSize": "0x3f8",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "BeaconTypeName",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "ClientBeaconActorClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "ClientActors",
         "Type": "TArray<class ClientActors*>",
         "Size": "0x10",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       }
     ]
   },
   "PartyBeaconHost": {
     "Super": "OnlineBeaconHostObject",
-    "FullSize": "0x430",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3f0",
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "State",
         "Type": "Class PartyBeaconState*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "SessionTimeoutSecs",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "TravelSessionTimeoutSecs",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x42c"
+        "Offset": "0x424"
       }
     ]
   },
   "TestBeaconHost": {
     "Super": "OnlineBeaconHostObject",
-    "FullSize": "0x3f8",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3f0",
     "ClassSize": "0x0",
     "Attributes": []
   },

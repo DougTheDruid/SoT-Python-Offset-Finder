@@ -33,36 +33,36 @@ BreakableActorAudioComponent:
 BreakableActorBase:
   Attributes:
   - Name: DespawnDelay
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x4'
     Type: float
   - Name: ThirdPersonMesh
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class PrimitiveComponent*
   - Name: HealthComponent
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class HealthComponent*
   - Name: AudioComponent
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class BreakableActorAudioComponent*
   - Name: VFXComponent
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class BreakableActorVfxComponent*
   - Name: DamageMaterialComponent
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class BreakableActorDynamicMaterialComponent*
   - Name: DamageableComponent
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class ActorDamageableComponent*
   ClassSize: '0x180'
-  FullSize: '0x550'
-  InheritedSize: '0x3d0'
+  FullSize: '0x548'
+  InheritedSize: '0x3c8'
   Super: Actor
 BreakableActorDynamicMaterialComponent:
   Attributes:
@@ -157,6 +157,6 @@ BreakableActorVfxComponent:
 BreakableSarcophagus:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x550'
-  InheritedSize: '0x550'
+  FullSize: '0x548'
+  InheritedSize: '0x548'
   Super: BreakableActorBase

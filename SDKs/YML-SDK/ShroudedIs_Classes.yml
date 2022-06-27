@@ -3,13 +3,17 @@
 ShroudedIslands_AnchoredGhostShip_C:
   Attributes:
   - Name: None
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: None
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class SphereComponent*
+  - Name: None
+    Offset: '0x438'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
   - Name: None
     Offset: '0x440'
     Size: '0x8'
@@ -25,21 +29,21 @@ ShroudedIslands_AnchoredGhostShip_C:
   - Name: None
     Offset: '0x458'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x460'
-    Size: '0x8'
     Type: Class SkeletalMeshComponent*
   - Name: None
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x1'
     Type: bool
   ClassSize: '0x39'
-  FullSize: '0x469'
-  InheritedSize: '0x430'
+  FullSize: '0x461'
+  InheritedSize: '0x428'
   Super: None
 ShroudedIslands_BellesBuoy_C:
   Attributes:
+  - Name: None
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
   - Name: None
     Offset: '0x3d0'
     Size: '0x8'
@@ -60,13 +64,51 @@ ShroudedIslands_BellesBuoy_C:
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x28'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3d0'
+  - Name: None
+    Offset: '0x3f8'
+    Size: '0x20'
+    Type: Struct WwiseEmitter
+  - Name: None
+    Offset: '0x418'
+    Size: '0x28'
+    Type: Struct WwiseEmitterCreationParams
+  - Name: None
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: None
+    Offset: '0x448'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  ClassSize: '0x88'
+  FullSize: '0x450'
+  InheritedSize: '0x3c8'
   Super: Actor
 ShroudedIslands_LarinnaDialogTempEntitlement_C:
   Attributes: []
-  ClassSize: '0x3da8d02d'
-  FullSize: '0x3da8d02d'
-  InheritedSize: '0x0'
-  Super: None
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc
+ShroudedIslands_ReaperScout_C:
+  Attributes:
+  - Name: None
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class SkeletalMeshComponent*
+  - Name: None
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x20'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3c8'
+  Super: Actor

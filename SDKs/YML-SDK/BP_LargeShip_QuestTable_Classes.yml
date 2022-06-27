@@ -3,38 +3,44 @@
 BP_LargeShip_QuestTable_C:
   Attributes:
   - Name: CancelAdventure
-    Offset: '0x770'
+    Offset: '0x7f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: PlayerBuiredItemsMapBundleInteractionPoint
-    Offset: '0x778'
+    Offset: '0x800'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: CancelTale
-    Offset: '0x780'
+    Offset: '0x808'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: CancelVoyage
-    Offset: '0x788'
+    Offset: '0x810'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoyageSelectionSlot4
-    Offset: '0x790'
+    Offset: '0x818'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoyageSelectionSlot3
-    Offset: '0x798'
+    Offset: '0x820'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoyageSelectionSlot2
-    Offset: '0x7a0'
+    Offset: '0x828'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoyageSelectionSlot1
-    Offset: '0x7a8'
+    Offset: '0x830'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x40'
-  FullSize: '0x7b0'
-  InheritedSize: '0x770'
+  FullSize: '0x838'
+  InheritedSize: '0x7f8'
   Super: VoyageTable
+BP_LargeShip_QuestTable_ShipPartMMC_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x838'
+  InheritedSize: '0x838'
+  Super: BP_LargeShip_QuestTable_C

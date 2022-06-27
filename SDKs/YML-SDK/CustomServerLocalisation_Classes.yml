@@ -9,10 +9,10 @@ CustomServerLocalisationInterface:
 CustomServerLocalisationService:
   Attributes:
   - Name: LocalisationData
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<Struct CustomServerLocalisationData>
   ClassSize: '0x98'
-  FullSize: '0x468'
-  InheritedSize: '0x3d0'
+  FullSize: '0x460'
+  InheritedSize: '0x3c8'
   Super: Actor

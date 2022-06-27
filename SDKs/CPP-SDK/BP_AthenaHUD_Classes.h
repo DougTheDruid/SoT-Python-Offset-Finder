@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_AthenaHUD_C: public AthenaHUD
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x7d0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x7d8(0x8)
 };
 
 

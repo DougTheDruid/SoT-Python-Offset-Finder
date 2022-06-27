@@ -1,79 +1,79 @@
 {
   "wld_palm_cluster_05_c_C": {
     "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x438",
-    "InheritedSize": "0x410",
+    "FullSize": "0x430",
+    "InheritedSize": "0x408",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "StaticMesh3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "StaticMesh1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "NonVagueNonUniqueLandmark",
         "Type": "Class NonVagueNonUniqueLandmarkComponent*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "StaticMesh2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x428"
       }
     ]
   },
   "wld_palm_cluster_05_b_C": {
     "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x420",
-    "InheritedSize": "0x410",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "NonVagueNonUniqueLandmark",
         "Type": "Class NonVagueNonUniqueLandmarkComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "StaticMesh2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       }
     ]
   },
   "wld_palm_cluster_05_a_C": {
     "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x420",
-    "InheritedSize": "0x410",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "NonVagueNonUniqueLandmark",
         "Type": "Class NonVagueNonUniqueLandmarkComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "StaticMesh2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       }
     ]
   },

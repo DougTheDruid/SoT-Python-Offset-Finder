@@ -9,38 +9,38 @@ BP_SirenTrident_ItemDesc_C:
 BP_SirenTrident_Wieldable_C:
   Attributes:
   - Name: AimSensitivity
-    Offset: '0x970'
+    Offset: '0x960'
     Size: '0x8'
     Type: Class AimSensitivityComponent*
   - Name: AmmoEffects
-    Offset: '0x978'
+    Offset: '0x968'
     Size: '0x8'
     Type: Class AmmoEffectsComponent*
   - Name: StaticStashedMeshMemoryConstraint
-    Offset: '0x980'
+    Offset: '0x970'
     Size: '0x8'
     Type: Class StaticStashedMeshMemoryConstraintComponent*
   - Name: AmmoTransfer
-    Offset: '0x988'
+    Offset: '0x978'
     Size: '0x8'
     Type: Class AmmoTransferComponent*
   - Name: AimDownSightAction
-    Offset: '0x990'
+    Offset: '0x980'
     Size: '0x8'
     Type: Class ItemActionComponent*
   - Name: SirenTridentShotAction
-    Offset: '0x998'
+    Offset: '0x988'
     Size: '0x8'
     Type: Class SirenTridentShotActionComponent*
   - Name: LaunchableAttachPoint
-    Offset: '0x9a0'
+    Offset: '0x990'
     Size: '0x8'
     Type: Class LaunchableAttachPointComponent*
   - Name: PostProcess
-    Offset: '0x9a8'
+    Offset: '0x998'
     Size: '0x8'
     Type: Class PostProcessComponent*
   ClassSize: '0x40'
-  FullSize: '0x9b0'
-  InheritedSize: '0x970'
+  FullSize: '0x9a0'
+  InheritedSize: '0x960'
   Super: DoubleActionItemWithAmmo

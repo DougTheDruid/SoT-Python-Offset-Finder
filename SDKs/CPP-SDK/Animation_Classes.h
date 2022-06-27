@@ -161,11 +161,13 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x18
 class AnimNotify_DetachAndMaintainWorldPosition: public AnimNotify
 {
 public:
 	byte                                                         CurrentLocation;                                   // 0x38(0x1)
+	Struct Vector                                                PreviewLocationOffset;                             // 0x3c(0xc)
+	float                                                        PreviewScaleMultiplier;                            // 0x48(0x4)
 };
 
 
@@ -341,7 +343,7 @@ public:
 class CosmeticItemActor: public Actor
 {
 public:
-	Class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3d8(0x8)
+	Class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3d0(0x8)
 };
 
 

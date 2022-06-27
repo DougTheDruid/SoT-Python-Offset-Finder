@@ -454,11 +454,12 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x18
 class MovieSceneSkeletalAnimationTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class AnimationSections*>                             AnimationSections;                                 // 0x88(0x10)
+	byte                                                         TrackSubtype;                                      // 0x88(0x1)
+	TArray<class AnimationSections*>                             AnimationSections;                                 // 0x90(0x10)
 };
 
 

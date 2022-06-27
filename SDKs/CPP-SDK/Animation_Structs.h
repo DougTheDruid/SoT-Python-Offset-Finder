@@ -203,6 +203,13 @@ public:
 
 
 // Size 0x1
+struct EventAnimationResetHappyReact
+{
+public:
+};
+
+
+// Size 0x1
 struct EventAnimationHappyReact
 {
 public:

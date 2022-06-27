@@ -96,6 +96,18 @@ MeshMemoryConstraintCategory_Scroll_C:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_ShipPartCustomization_CannonBarrel:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_ShipPartCustomization_CannonBox_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
 MeshMemoryConstraintCategory_ShipPartCustomization_CapstanArm_C:
   Attributes: []
   ClassSize: '0x0'
@@ -109,6 +121,36 @@ MeshMemoryConstraintCategory_ShipPartCustomization_CapstanBody_:
   InheritedSize: '0x28'
   Super: MeshMemoryConstraintCategory
 MeshMemoryConstraintCategory_ShipPartCustomization_CapstanRelea:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_ShipPartCustomization_CaptainsCurt:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_ShipPartCustomization_ChandelierFl:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_ShipPartCustomization_Chandelier_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_ShipPartCustomization_VoyageTable_:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_ShipPartCustomization_Wheel_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'

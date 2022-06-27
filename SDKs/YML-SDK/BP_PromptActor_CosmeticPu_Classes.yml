@@ -3,150 +3,150 @@
 BP_PromptActor_CosmeticPurchased_Clothing_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*
   - Name: AccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: CategoryTypes
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Class CategoryTypes>
   - Name: Prompt_CosmeticPurchased
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VisitCustomizationChest
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   ClassSize: '0xf8'
-  FullSize: '0x500'
-  InheritedSize: '0x408'
+  FullSize: '0x4f8'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_CosmeticPurchased_Equipment_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*
   - Name: AccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: CategoryTypes
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Class CategoryTypes>
   - Name: Prompt_CosmeticPurchased
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VisitCustomizationChest
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   ClassSize: '0xf8'
-  FullSize: '0x500'
-  InheritedSize: '0x408'
+  FullSize: '0x4f8'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_CosmeticPurchased_Ship_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*
   - Name: AccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: CategoryTypes
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Class CategoryTypes>
   - Name: Prompt_CosmeticPurchased
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VisitCustomizationChest
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   ClassSize: '0xf8'
-  FullSize: '0x500'
-  InheritedSize: '0x408'
+  FullSize: '0x4f8'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_CosmeticPurchased_Vanity_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*
   - Name: AccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: CategoryTypes
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Class CategoryTypes>
   - Name: Prompt_CosmeticPurchased
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VisitCustomizationChest
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   ClassSize: '0xf8'
-  FullSize: '0x500'
-  InheritedSize: '0x408'
+  FullSize: '0x4f8'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C
 BP_PromptActor_CosmeticPurchased_Weapon_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PromptCoordinator
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*
   - Name: AccessKey
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class
   - Name: CategoryTypes
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x10'
     Type: TArray<Class CategoryTypes>
   - Name: Prompt_CosmeticPurchased
-    Offset: '0x430'
+    Offset: '0x428'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VisitCustomizationChest
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   ClassSize: '0xf8'
-  FullSize: '0x500'
-  InheritedSize: '0x408'
+  FullSize: '0x4f8'
+  InheritedSize: '0x400'
   Super: BP_PromptActorBase_C

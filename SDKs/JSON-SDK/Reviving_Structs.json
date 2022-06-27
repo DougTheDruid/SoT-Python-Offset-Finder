@@ -1,6 +1,6 @@
 {
   "ModeSpecificReviveSettings": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "AssociatedPlaymode",
@@ -63,10 +63,16 @@
         "Offset": "0x24"
       },
       {
+        "Name": "AutoGiveUpDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
         "Name": "CachedReviveSettings",
         "Type": "Class ReviveSettings*",
         "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0x30"
       }
     ]
   },

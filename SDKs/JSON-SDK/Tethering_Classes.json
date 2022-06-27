@@ -171,87 +171,87 @@
   },
   "Tether": {
     "Super": "Actor",
-    "FullSize": "0x510",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x508",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x140",
     "Attributes": [
       {
         "Name": "TetherPositionAnchorComponent",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x4c8"
+        "Offset": "0x4c0"
       },
       {
         "Name": "SourcePhysicsHandle",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x4d0"
+        "Offset": "0x4c8"
       },
       {
         "Name": "TargetPhysicsHandle",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x4d8"
+        "Offset": "0x4d0"
       },
       {
         "Name": "JointComponent",
         "Type": "Class DistanceJointComponent*",
         "Size": "0x8",
-        "Offset": "0x4e0"
+        "Offset": "0x4d8"
       },
       {
         "Name": "SourceActor",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x4e8"
+        "Offset": "0x4e0"
       },
       {
         "Name": "TargetActor",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x4f0"
+        "Offset": "0x4e8"
       },
       {
         "Name": "SlackCm",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4f8"
+        "Offset": "0x4f0"
       },
       {
         "Name": "MaxLengthWhenGrowing",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4fc"
+        "Offset": "0x4f4"
       },
       {
         "Name": "HasAttached",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x508"
+        "Offset": "0x500"
       },
       {
         "Name": "HasSourceActor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x509"
+        "Offset": "0x501"
       },
       {
         "Name": "HasTargetActor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x50a"
+        "Offset": "0x502"
       },
       {
         "Name": "IsSlackEnabled",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x50b"
+        "Offset": "0x503"
       },
       {
         "Name": "CurrentTetherMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x50c"
+        "Offset": "0x504"
       }
     ]
   },

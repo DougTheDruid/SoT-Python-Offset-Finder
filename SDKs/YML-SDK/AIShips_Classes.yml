@@ -346,9 +346,9 @@ AIShipObstacleComponent:
   Super: ActorComponent
 AIShipObstacleService:
   Attributes: []
-  ClassSize: '0x80'
+  ClassSize: '0x88'
   FullSize: '0x450'
-  InheritedSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 AIShipObstacleServiceInterface:
   Attributes: []
@@ -359,12 +359,12 @@ AIShipObstacleServiceInterface:
 AIShipService:
   Attributes:
   - Name: Params
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class AIShipServiceDataAsset*
   ClassSize: '0x330'
-  FullSize: '0x700'
-  InheritedSize: '0x3d0'
+  FullSize: '0x6f8'
+  InheritedSize: '0x3c8'
   Super: Actor
 AIShipServiceDataAsset:
   Attributes:
@@ -455,24 +455,24 @@ AIShipTelemetryComponent:
 AthenaAIShipController:
   Attributes:
   - Name: BTAsset
-    Offset: '0x618'
+    Offset: '0x610'
     Size: '0x8'
     Type: Class BehaviorTree*
   - Name: ShipParamsDataAsset
-    Offset: '0x638'
+    Offset: '0x630'
     Size: '0x8'
     Type: Class AthenaAIShipControllerParamsDataAsset*
   - Name: StatusEffectManagerComponent
-    Offset: '0x640'
+    Offset: '0x638'
     Size: '0x8'
     Type: Class StatusEffectManagerComponent*
   - Name: AnchorDynamicsParams
-    Offset: '0x648'
+    Offset: '0x640'
     Size: '0x28'
     Type: Struct StandardAnchorDynamicsParameters
   ClassSize: '0x150'
-  FullSize: '0x768'
-  InheritedSize: '0x618'
+  FullSize: '0x760'
+  InheritedSize: '0x610'
   Super: AthenaAIControllerBase
 AthenaAIShipControllerParamsDataAsset:
   Attributes:
@@ -793,14 +793,14 @@ IsAIShipEncounterTypeStatCondition:
 ShipProxyPawn:
   Attributes:
   - Name: Ship
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class Ship*
   - Name: SpawnTargetShip
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class Ship*
   ClassSize: '0x38'
-  FullSize: '0x480'
-  InheritedSize: '0x448'
+  FullSize: '0x478'
+  InheritedSize: '0x440'
   Super: Pawn

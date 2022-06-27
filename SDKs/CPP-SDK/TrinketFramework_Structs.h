@@ -6,6 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x28
+struct ChestEntitlementTrinketItem
+{
+public:
+	Struct FString                                               ItemDesc;                                          // 0x0(0x10)
+	int                                                          PlacedValue;                                       // 0x10(0x4)
+	int                                                          PlacedThreshold;                                   // 0x14(0x4)
+	Struct FString                                               OwnerXUID;                                         // 0x18(0x10)
+};
+
+
 // Size 0x10
 struct TrinketLoadout
 {
@@ -19,6 +30,17 @@ struct TrinketLoadoutEntry
 {
 public:
 	class                                                        Trinket;                                           // 0x0(0x8)
+	Struct FString                                               TrinketOwnerPlayerXuid;                            // 0x8(0x10)
+};
+
+
+// Size 0x38
+struct EquipTrinketOnServerLoadoutRpc
+{
+public:
+	Struct NetSubObjectPtr                                       TrinketLoadoutComponent;                           // 0x10(0x14)
+	class                                                        TrinketToEquip;                                    // 0x28(0x8)
+	int                                                          LocationIndex;                                     // 0x30(0x4)
 };
 
 
@@ -28,6 +50,15 @@ struct RemoveInteractingPlayerFromTrinketMountpointRpc
 public:
 	Struct NetSubObjectPtr                                       TrinketMountpointManager;                          // 0x10(0x14)
 	int                                                          MountpointIndex;                                   // 0x24(0x4)
+};
+
+
+// Size 0x30
+struct UnequipAllTrinketsOfClassOnServerLoadoutRpc
+{
+public:
+	Struct NetSubObjectPtr                                       TrinketLoadoutComponent;                           // 0x10(0x14)
+	class                                                        TrinketToUnequip;                                  // 0x28(0x8)
 };
 
 
@@ -57,6 +88,20 @@ public:
 
 
 // Size 0x10
+struct EventTrinketSetReady
+{
+public:
+};
+
+
+// Size 0x1
+struct RequestTrinketChestItemInfoEvent
+{
+public:
+};
+
+
+// Size 0x10
 struct RequestTrinketLoadoutUIEvent
 {
 public:
@@ -72,32 +117,8 @@ public:
 };
 
 
-// Size 0x8
-struct RequestUnequipTrinketsOfClass
-{
-public:
-	class                                                        TrinketDesc;                                       // 0x0(0x8)
-};
-
-
 // Size 0x10
 struct RequestUnequipTrinketsOfClassUIEvent
-{
-public:
-	Struct FString                                               TrinketDesc;                                       // 0x0(0x10)
-};
-
-
-// Size 0x8
-struct RequestEquipTrinket
-{
-public:
-	class                                                        TrinketDesc;                                       // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct RequestEquipTrinketUIEvent
 {
 public:
 	Struct FString                                               TrinketDesc;                                       // 0x0(0x10)

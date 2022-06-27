@@ -9,8 +9,8 @@ ControlPointMeshComponent:
 Landscape:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x760'
-  InheritedSize: '0x760'
+  FullSize: '0x750'
+  InheritedSize: '0x750'
   Super: LandscapeProxy
 LandscapeComponent:
   Attributes:
@@ -129,14 +129,14 @@ LandscapeComponent:
 LandscapeGizmoActiveActor:
   Attributes: []
   ClassSize: '0x50'
-  FullSize: '0x420'
-  InheritedSize: '0x3d0'
+  FullSize: '0x418'
+  InheritedSize: '0x3c8'
   Super: LandscapeGizmoActor
 LandscapeGizmoActor:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3c8'
   Super: Actor
 LandscapeGizmoRenderComponent:
   Attributes: []
@@ -305,12 +305,12 @@ LandscapeMeshCollisionComponent:
 LandscapeMeshProxyActor:
   Attributes:
   - Name: LandscapeMeshProxyComponent
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class LandscapeMeshProxyComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
   Super: Actor
 LandscapeMeshProxyComponent:
   Attributes:
@@ -329,144 +329,144 @@ LandscapeMeshProxyComponent:
 LandscapeProxy:
   Attributes:
   - Name: SplineComponent
-    Offset: '0x3d8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: Class LandscapeSplinesComponent*
   - Name: LandscapeGuid
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x10'
     Type: Struct Guid
   - Name: LandscapeSectionOffset
-    Offset: '0x3f0'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Struct IntPoint
   - Name: MaxLODLevel
-    Offset: '0x3f8'
+    Offset: '0x3f0'
     Size: '0x4'
     Type: int
   - Name: StaticLightingLOD
-    Offset: '0x3fc'
+    Offset: '0x3f4'
     Size: '0x4'
     Type: int
   - Name: DefaultPhysMaterial
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class PhysicalMaterial*
   - Name: StreamingDistanceMultiplier
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x4'
     Type: float
   - Name: LandscapeMaterial
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: LandscapeHoleMaterial
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: LODDistanceFactor
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x4'
     Type: float
   - Name: LandscapeComponents
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x10'
     Type: TArray<class LandscapeComponents*>
   - Name: CollisionComponents
-    Offset: '0x438'
+    Offset: '0x430'
     Size: '0x10'
     Type: TArray<class CollisionComponents*>
   - Name: FoliageComponents
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x10'
     Type: TArray<class FoliageComponents*>
   - Name: StaticLightingResolution
-    Offset: '0x4d0'
+    Offset: '0x4c0'
     Size: '0x4'
     Type: float
   - Name: bCastStaticShadow
-    Offset: '0x4f0'
+    Offset: '0x4e0'
     Size: '0x1'
     Type: bool
   - Name: bCastShadowAsTwoSided
-    Offset: '0x4f0'
+    Offset: '0x4e0'
     Size: '0x1'
     Type: bool
   - Name: bAffectDynamicIndirectLighting
-    Offset: '0x4f0'
+    Offset: '0x4e0'
     Size: '0x1'
     Type: bool
   - Name: bCastFarShadow
-    Offset: '0x4f0'
+    Offset: '0x4e0'
     Size: '0x1'
     Type: bool
   - Name: bIsProxy
-    Offset: '0x4f0'
+    Offset: '0x4e0'
     Size: '0x1'
     Type: bool
   - Name: bUseFarCascadeLPVBiasMultiplier
-    Offset: '0x4f0'
+    Offset: '0x4e0'
     Size: '0x1'
     Type: bool
   - Name: LpvIntensityMultiplier
-    Offset: '0x4f4'
+    Offset: '0x4e4'
     Size: '0x4'
     Type: float
   - Name: LpvBiasMultiplier
-    Offset: '0x4f8'
+    Offset: '0x4e8'
     Size: '0x4'
     Type: float
   - Name: FarCascadeLPVBiasMultiplier
-    Offset: '0x4fc'
+    Offset: '0x4ec'
     Size: '0x4'
     Type: float
   - Name: LightmassSettings
-    Offset: '0x500'
+    Offset: '0x4f0'
     Size: '0x18'
     Type: Struct LightmassPrimitiveSettings
   - Name: CollisionMipLevel
-    Offset: '0x518'
+    Offset: '0x508'
     Size: '0x4'
     Type: int
   - Name: CollisionThickness
-    Offset: '0x51c'
+    Offset: '0x50c'
     Size: '0x4'
     Type: float
   - Name: BodyInstance
-    Offset: '0x520'
+    Offset: '0x510'
     Size: '0x180'
     Type: Struct BodyInstance
   - Name: ComponentSizeQuads
-    Offset: '0x6a0'
+    Offset: '0x690'
     Size: '0x4'
     Type: int
   - Name: SubsectionSizeQuads
-    Offset: '0x6a4'
+    Offset: '0x694'
     Size: '0x4'
     Type: int
   - Name: NumSubsections
-    Offset: '0x6a8'
+    Offset: '0x698'
     Size: '0x4'
     Type: int
   - Name: bUsedForNavigation
-    Offset: '0x6ac'
+    Offset: '0x69c'
     Size: '0x1'
     Type: bool
   - Name: bReflected
-    Offset: '0x6ac'
+    Offset: '0x69c'
     Size: '0x1'
     Type: bool
   - Name: NavigationGeometryGatheringMode
-    Offset: '0x6b0'
+    Offset: '0x6a0'
     Size: '0x1'
     Type: byte
   - Name: LODFalloff
-    Offset: '0x6b1'
+    Offset: '0x6a1'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x390'
-  FullSize: '0x760'
-  InheritedSize: '0x3d0'
+  ClassSize: '0x388'
+  FullSize: '0x750'
+  InheritedSize: '0x3c8'
   Super: Actor
 LandscapeSplineControlPoint:
   Attributes:

@@ -1,21 +1,21 @@
 {
   "BP_RotatableSignalCloud_C": {
     "Super": "GameplayEventSignal_StaticMesh",
-    "FullSize": "0x4c0",
-    "InheritedSize": "0x4b0",
+    "FullSize": "0x4b8",
+    "InheritedSize": "0x4a8",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x4b0"
+        "Offset": "0x4a8"
       },
       {
         "Name": "RotateMeshToLocalPlayer",
         "Type": "Class RotateMeshToLocalPlayerComponent*",
         "Size": "0x8",
-        "Offset": "0x4b8"
+        "Offset": "0x4b0"
       }
     ]
   },

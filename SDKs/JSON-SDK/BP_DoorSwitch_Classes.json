@@ -1,21 +1,21 @@
 {
   "BP_DoorSwitchMechanismTrigger_C": {
     "Super": "SwitchMechanismTrigger",
-    "FullSize": "0x570",
-    "InheritedSize": "0x560",
+    "FullSize": "0x568",
+    "InheritedSize": "0x558",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Arrow",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x558"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x560"
       }
     ]
   },

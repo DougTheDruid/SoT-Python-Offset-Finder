@@ -7,6 +7,13 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
+class MountableType_Trinket_Standing_Small_C: public MountableType
+{
+public:
+};
+
+
+// Size 0x0
 class MountableType_Trinket_Standing_Large_C: public MountableType
 {
 public:
@@ -14,14 +21,21 @@ public:
 
 
 // Size 0x0
-class MountableType_Trinket_Hanging_C: public MountableType
+class MountableType_Trinket_Hanging_SinglePoints_C: public MountableType
 {
 public:
 };
 
 
 // Size 0x0
-class MountableType_Trinket_Standing_Small_C: public MountableType
+class MountableType_Trinket_Hanging_SinglePoint_Tall_C: public MountableType
+{
+public:
+};
+
+
+// Size 0x0
+class MountableType_Trinket_Hanging_MultiplePoint_C: public MountableType
 {
 public:
 };

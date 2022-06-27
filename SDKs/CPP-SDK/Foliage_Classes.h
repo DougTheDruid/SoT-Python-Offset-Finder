@@ -121,20 +121,20 @@ public:
 class InteractiveFoliageActor: public StaticMeshActor
 {
 public:
-	Class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3e0(0x8)
-	Struct Vector                                                TouchingActorEntryPosition;                        // 0x3e8(0xc)
-	Struct Vector                                                FoliageVelocity;                                   // 0x3f4(0xc)
-	Struct Vector                                                FoliageForce;                                      // 0x400(0xc)
-	Struct Vector                                                FoliagePosition;                                   // 0x40c(0xc)
-	float                                                        FoliageDamageImpulseScale;                         // 0x418(0x4)
-	float                                                        FoliageTouchImpulseScale;                          // 0x41c(0x4)
-	float                                                        FoliageStiffness;                                  // 0x420(0x4)
-	float                                                        FoliageStiffnessQuadratic;                         // 0x424(0x4)
-	float                                                        FoliageDamping;                                    // 0x428(0x4)
-	float                                                        MaxDamageImpulse;                                  // 0x42c(0x4)
-	float                                                        MaxTouchImpulse;                                   // 0x430(0x4)
-	float                                                        MaxForce;                                          // 0x434(0x4)
-	float                                                        Mass;                                              // 0x438(0x4)
+	Class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d8(0x8)
+	Struct Vector                                                TouchingActorEntryPosition;                        // 0x3e0(0xc)
+	Struct Vector                                                FoliageVelocity;                                   // 0x3ec(0xc)
+	Struct Vector                                                FoliageForce;                                      // 0x3f8(0xc)
+	Struct Vector                                                FoliagePosition;                                   // 0x404(0xc)
+	float                                                        FoliageDamageImpulseScale;                         // 0x410(0x4)
+	float                                                        FoliageTouchImpulseScale;                          // 0x414(0x4)
+	float                                                        FoliageStiffness;                                  // 0x418(0x4)
+	float                                                        FoliageStiffnessQuadratic;                         // 0x41c(0x4)
+	float                                                        FoliageDamping;                                    // 0x420(0x4)
+	float                                                        MaxDamageImpulse;                                  // 0x424(0x4)
+	float                                                        MaxTouchImpulse;                                   // 0x428(0x4)
+	float                                                        MaxForce;                                          // 0x42c(0x4)
+	float                                                        Mass;                                              // 0x430(0x4)
 };
 
 
@@ -149,7 +149,7 @@ public:
 class ProceduralFoliageBlockingVolume: public Volume
 {
 public:
-	Class ProceduralFoliageVolume*                               ProceduralFoliageVolume;                           // 0x408(0x8)
+	Class ProceduralFoliageVolume*                               ProceduralFoliageVolume;                           // 0x400(0x8)
 };
 
 
@@ -189,7 +189,7 @@ public:
 class ProceduralFoliageVolume: public Volume
 {
 public:
-	Class ProceduralFoliageComponent*                            ProceduralComponent;                               // 0x408(0x8)
+	Class ProceduralFoliageComponent*                            ProceduralComponent;                               // 0x400(0x8)
 };
 
 

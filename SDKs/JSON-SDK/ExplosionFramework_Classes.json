@@ -69,8 +69,8 @@
   },
   "TaleQuestFuseFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x158",
-    "InheritedSize": "0x158",
+    "FullSize": "0x170",
+    "InheritedSize": "0x170",
     "ClassSize": "0x0",
     "Attributes": []
   },

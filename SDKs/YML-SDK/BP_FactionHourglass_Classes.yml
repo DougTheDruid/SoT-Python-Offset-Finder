@@ -2,55 +2,71 @@
 # https://github.com/DougTheDruid
 BP_FactionHourglass_C:
   Attributes:
-  - Name: EmissaryActiveTableVisualiser
+  - Name: VoteIndicator8
+    Offset: '0x5e0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: VoteIndicator7
     Offset: '0x5e8'
     Size: '0x8'
-    Type: Class EmissaryActiveTableVisualiserComponent*
-  - Name: VoteAudio
+    Type: Class StaticMeshComponent*
+  - Name: VoteIndicator6
     Offset: '0x5f0'
     Size: '0x8'
-    Type: Class VoteAudioComponent*
-  - Name: StaticMeshVoteVisualiser
+    Type: Class StaticMeshComponent*
+  - Name: VoteIndicator5
     Offset: '0x5f8'
     Size: '0x8'
-    Type: Class StaticMeshVoteVisualiserComponent*
-  - Name: InlineVotingInteraction
-    Offset: '0x600'
-    Size: '0x8'
-    Type: Class InlineVotingInteractionComponent*
-  - Name: ActionRules
-    Offset: '0x608'
-    Size: '0x8'
-    Type: Class ActionRulesComponent*
-  - Name: FactionInteractionVote
-    Offset: '0x610'
-    Size: '0x8'
-    Type: Class FactionInteractionVoteComponent*
+    Type: Class StaticMeshComponent*
   - Name: VoteIndicator4
-    Offset: '0x618'
+    Offset: '0x600'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: VoteIndicator3
-    Offset: '0x620'
+    Offset: '0x608'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: VoteIndicator2
-    Offset: '0x628'
+    Offset: '0x610'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: VoteIndicator1
-    Offset: '0x630'
+    Offset: '0x618'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: hourglass
-    Offset: '0x638'
+    Offset: '0x620'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x640'
+    Offset: '0x628'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x60'
-  FullSize: '0x648'
-  InheritedSize: '0x5e8'
+  - Name: FactionInteractionVote
+    Offset: '0x630'
+    Size: '0x8'
+    Type: Class FactionInteractionVoteComponent*
+  - Name: EmissaryActiveTableVisualiser
+    Offset: '0x638'
+    Size: '0x8'
+    Type: Class EmissaryActiveTableVisualiserComponent*
+  - Name: VoteAudio
+    Offset: '0x640'
+    Size: '0x8'
+    Type: Class VoteAudioComponent*
+  - Name: StaticMeshVoteVisualiser
+    Offset: '0x648'
+    Size: '0x8'
+    Type: Class StaticMeshVoteVisualiserComponent*
+  - Name: InlineVotingInteraction
+    Offset: '0x650'
+    Size: '0x8'
+    Type: Class InlineVotingInteractionComponent*
+  - Name: ActionRules
+    Offset: '0x658'
+    Size: '0x8'
+    Type: Class ActionRulesComponent*
+  ClassSize: '0x80'
+  FullSize: '0x660'
+  InheritedSize: '0x5e0'
   Super: EmissaryVoteInteractionActor

@@ -6,6 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x30
+struct CrewFactionEntry
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	class                                                        Faction;                                           // 0x10(0x8)
+	int                                                          Streak;                                            // 0x18(0x4)
+	int                                                          SandsOfFate;                                       // 0x1c(0x4)
+};
+
+
 // Size 0x20
 struct CrewsSunkShipEvent
 {
@@ -33,27 +44,13 @@ public:
 };
 
 
-// Size 0x30
-struct CrewFactionEntry
+// Size 0xc
+struct SandsOfFateData
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	class                                                        Faction;                                           // 0x10(0x8)
-	int                                                          Streak;                                            // 0x18(0x4)
-};
-
-
-// Size 0x30
-struct FigureheadFactionVFXParams
-{
-public:
-	Class ParticleSystem*                                        FBParticleSystem;                                  // 0x0(0x8)
-	Class ParticleSystem*                                        FGParticleSystem;                                  // 0x8(0x8)
-	Struct Vector                                                Location;                                          // 0x10(0xc)
-	Struct Rotator                                               Rotation;                                          // 0x1c(0xc)
-	bool                                                         AutoDestroy;                                       // 0x28(0x1)
-	bool                                                         OwnerOnlySee;                                      // 0x29(0x1)
-	bool                                                         OwnerNoSee;                                        // 0x2a(0x1)
+	int                                                          SinkingCrewStreak;                                 // 0x0(0x4)
+	int                                                          SunkCrewStreak;                                    // 0x4(0x4)
+	int                                                          SandsOfFateReward;                                 // 0x8(0x4)
 };
 
 
@@ -70,6 +67,20 @@ struct FactionVoteAddedEvent
 {
 public:
 	struct FName                                                 Company;                                           // 0x0(0x8)
+};
+
+
+// Size 0x30
+struct FigureheadFactionVFXParams
+{
+public:
+	Class ParticleSystem*                                        FBParticleSystem;                                  // 0x0(0x8)
+	Class ParticleSystem*                                        FGParticleSystem;                                  // 0x8(0x8)
+	Struct Vector                                                Location;                                          // 0x10(0xc)
+	Struct Rotator                                               Rotation;                                          // 0x1c(0xc)
+	bool                                                         AutoDestroy;                                       // 0x28(0x1)
+	bool                                                         OwnerOnlySee;                                      // 0x29(0x1)
+	bool                                                         OwnerNoSee;                                        // 0x2a(0x1)
 };
 
 

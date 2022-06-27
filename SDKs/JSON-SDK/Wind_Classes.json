@@ -57,46 +57,46 @@
   },
   "WindService": {
     "Super": "Actor",
-    "FullSize": "0x508",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x500",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x138",
     "Attributes": [
       {
         "Name": "GlobalWindSource",
         "Type": "Class WindDirectionalSource*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "CurrentWindAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "CurrentWindMagnitude",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3fc"
+        "Offset": "0x3f4"
       },
       {
         "Name": "WindZones",
         "Type": "TArray<Interface WindZones>",
         "Size": "0x10",
-        "Offset": "0x4e8"
+        "Offset": "0x4e0"
       },
       {
         "Name": "ExtraWind",
         "Type": "TArray<Struct ExtraWind>",
         "Size": "0x10",
-        "Offset": "0x4f8"
+        "Offset": "0x4f0"
       }
     ]
   },
   "DebugWindService": {
     "Super": "WindService",
-    "FullSize": "0x518",
-    "InheritedSize": "0x508",
+    "FullSize": "0x510",
+    "InheritedSize": "0x500",
     "ClassSize": "0x10",
     "Attributes": []
   },

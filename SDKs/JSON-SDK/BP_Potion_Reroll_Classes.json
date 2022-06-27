@@ -1,39 +1,39 @@
 {
   "BP_Potion_Reroll_ShopDisplay_C": {
     "Super": "ModalInteractionProxy",
-    "FullSize": "0x510",
-    "InheritedSize": "0x4e8",
+    "FullSize": "0x528",
+    "InheritedSize": "0x500",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "InspectDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x4e8"
+        "Offset": "0x500"
       },
       {
         "Name": "vfx_Tendrils",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4f0"
+        "Offset": "0x508"
       },
       {
         "Name": "vfx_rerollBottle",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x4f8"
+        "Offset": "0x510"
       },
       {
         "Name": "Potion_Reroll",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x500"
+        "Offset": "0x518"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x508"
+        "Offset": "0x520"
       }
     ]
   },

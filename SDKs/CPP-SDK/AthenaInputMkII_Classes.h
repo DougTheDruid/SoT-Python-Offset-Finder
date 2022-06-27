@@ -35,13 +35,6 @@ public:
 };
 
 
-// Size 0x20
-class AthenaClampedFreelookInputComponent: public AthenaCharacterBaseInputComponent
-{
-public:
-};
-
-
 // Size 0x70
 class MovementInterferenceComponent: public AutoMoveInputComponent
 {

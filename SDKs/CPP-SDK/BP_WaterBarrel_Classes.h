@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_WaterBarrel_C: public WaterBarrel
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x680(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x678(0x8)
 };
 
 

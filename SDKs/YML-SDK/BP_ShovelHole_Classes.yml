@@ -3,30 +3,30 @@
 BP_ShovelHole_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x440'
+    Offset: '0x438'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: DirtDecal
-    Offset: '0x448'
+    Offset: '0x440'
     Size: '0x8'
     Type: Class DecalComponent*
   - Name: DirtPile
-    Offset: '0x450'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x458'
+    Offset: '0x450'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: MeshDynamicMaterial
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: DecalDynamicMaterial
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   ClassSize: '0x30'
-  FullSize: '0x470'
-  InheritedSize: '0x440'
+  FullSize: '0x468'
+  InheritedSize: '0x438'
   Super: ShovelHole

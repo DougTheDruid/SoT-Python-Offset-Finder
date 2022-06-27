@@ -2,73 +2,89 @@
 # https://github.com/DougTheDruid
 BP_LargeShip_CapCabin_Dressing_01_a_C:
   Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: cap_wooden_plaque_01_a
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
   - Name: cap_model_01_a
-    Offset: '0x3f8'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cap_shark_jaws_01_a
-    Offset: '0x400'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cap_wooden_plaque_01_a
-    Offset: '0x408'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  ClassSize: '0x18'
-  FullSize: '0x410'
-  InheritedSize: '0x3f8'
-  Super: BP_Trinket_StandingSmall_C
-BP_LargeShip_MapDeck_Dressing_01_a_C:
-  Attributes:
-  - Name: fod_rum_01_a1
+  - Name: MergedStaticMesh
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: Class MergedStaticMeshComponent*
+  ClassSize: '0x28'
+  FullSize: '0x400'
+  InheritedSize: '0x3d8'
+  Super: TrinketReplacementActor
+BP_LargeShip_MapDeck_Dressing_01_a_C:
+  Attributes:
+  - Name: UberGraphFrame
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
   - Name: fod_rum_01_a
-    Offset: '0x400'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_bottle_01_a2
-    Offset: '0x408'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_bottle_01_a1
-    Offset: '0x410'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: cmn_bottle_01_a
-    Offset: '0x418'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: shp_fry_pan_01_a
-    Offset: '0x420'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: tls_tankard_01_b1
-    Offset: '0x428'
+  - Name: fod_rum_01_a1
+    Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: tls_tankard_01_b2
-    Offset: '0x430'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: tls_tankard_01_b
-    Offset: '0x438'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: ptn_pois_01_a
-    Offset: '0x440'
+    Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: ptn_cure_01_a2
-    Offset: '0x448'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: ptn_cure_01_a
-    Offset: '0x450'
+    Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  ClassSize: '0x60'
-  FullSize: '0x458'
-  InheritedSize: '0x3f8'
-  Super: BP_Trinket_StandingSmall_C
+  - Name: tls_tankard_01_b1
+    Offset: '0x438'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: MergedStaticMesh
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Class MergedStaticMeshComponent*
+  ClassSize: '0x70'
+  FullSize: '0x448'
+  InheritedSize: '0x3d8'
+  Super: TrinketReplacementActor

@@ -1,36 +1,36 @@
 {
   "BP_Lantern_MediumShip_Quest_Table_C": {
     "Super": "BP_InteractableShipLantern_C",
-    "FullSize": "0x755",
-    "InheritedSize": "0x755",
+    "FullSize": "0x74d",
+    "InheritedSize": "0x74d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Lantern_MediumShip_Cabin_Quest_C": {
     "Super": "BP_InteractableShipLantern_C",
-    "FullSize": "0x755",
-    "InheritedSize": "0x755",
+    "FullSize": "0x74d",
+    "InheritedSize": "0x74d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Lantern_MediumShip_brig_new_3_C": {
     "Super": "BP_InteractableShipLantern_C",
-    "FullSize": "0x755",
-    "InheritedSize": "0x755",
+    "FullSize": "0x74d",
+    "InheritedSize": "0x74d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Lantern_MediumShip_brig_new_2_C": {
     "Super": "BP_InteractableShipLantern_C",
-    "FullSize": "0x755",
-    "InheritedSize": "0x755",
+    "FullSize": "0x74d",
+    "InheritedSize": "0x74d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Lantern_MediumShip_brig_new_C": {
     "Super": "BP_InteractableShipLantern_C",
-    "FullSize": "0x755",
-    "InheritedSize": "0x755",
+    "FullSize": "0x74d",
+    "InheritedSize": "0x74d",
     "ClassSize": "0x0",
     "Attributes": []
   },

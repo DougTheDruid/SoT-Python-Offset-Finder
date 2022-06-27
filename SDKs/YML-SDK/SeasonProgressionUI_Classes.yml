@@ -111,12 +111,12 @@ SeasonProgressionUIInterface:
 SeasonProgressionUIService:
   Attributes:
   - Name: SeasonPopupListAsset
-    Offset: '0x400'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class SeasonPopupListAsset*
   ClassSize: '0x1c0'
-  FullSize: '0x590'
-  InheritedSize: '0x3d0'
+  FullSize: '0x588'
+  InheritedSize: '0x3c8'
   Super: Actor
 SeasonProgressionUIServiceInterface:
   Attributes: []

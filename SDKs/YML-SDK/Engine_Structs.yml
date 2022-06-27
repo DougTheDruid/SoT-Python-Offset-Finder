@@ -796,6 +796,125 @@ AnimNode_HIKRelativePlant:
     Size: '0x4'
     Type: float
   ClassSize: '0x98'
+AnimNode_HIKRelativePlantAndFloorContact:
+  Attributes:
+  - Name: FeetContact
+    Offset: '0x48'
+    Size: '0x1'
+    Type: bool
+  - Name: HandsContact
+    Offset: '0x49'
+    Size: '0x1'
+    Type: bool
+  - Name: FingersContact
+    Offset: '0x4a'
+    Size: '0x1'
+    Type: bool
+  - Name: ToesContact
+    Offset: '0x4b'
+    Size: '0x1'
+    Type: bool
+  - Name: FeetContactType
+    Offset: '0x4c'
+    Size: '0x1'
+    Type: byte
+  - Name: HandsContactType
+    Offset: '0x4d'
+    Size: '0x1'
+    Type: byte
+  - Name: Alpha
+    Offset: '0x50'
+    Size: '0x4'
+    Type: float
+  - Name: Depth
+    Offset: '0x54'
+    Size: '0x4'
+    Type: float
+  - Name: HipsRotationFactor
+    Offset: '0x58'
+    Size: '0x4'
+    Type: float
+  - Name: ChestRotationFactor
+    Offset: '0x5c'
+    Size: '0x4'
+    Type: float
+  - Name: DistanceUp
+    Offset: '0x60'
+    Size: '0x4'
+    Type: float
+  - Name: DistanceDown
+    Offset: '0x64'
+    Size: '0x4'
+    Type: float
+  - Name: NbRays
+    Offset: '0x68'
+    Size: '0x4'
+    Type: int
+  - Name: FootRadius
+    Offset: '0x6c'
+    Size: '0x4'
+    Type: float
+  - Name: DeltaTime
+    Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: Smoothing
+    Offset: '0x74'
+    Size: '0x4'
+    Type: float
+  - Name: OverrideRaycastCollisionResponse
+    Offset: '0x78'
+    Size: '0x20'
+    Type: Struct CollisionResponseContainer
+  - Name: FeetHeight
+    Offset: '0x98'
+    Size: '0x4'
+    Type: float
+  - Name: FeetBack
+    Offset: '0x9c'
+    Size: '0x4'
+    Type: float
+  - Name: FeetMiddle
+    Offset: '0xa0'
+    Size: '0x4'
+    Type: float
+  - Name: FeetFront
+    Offset: '0xa4'
+    Size: '0x4'
+    Type: float
+  - Name: FeetInSide
+    Offset: '0xa8'
+    Size: '0x4'
+    Type: float
+  - Name: FeetOutSide
+    Offset: '0xac'
+    Size: '0x4'
+    Type: float
+  - Name: HandsHeight
+    Offset: '0xb0'
+    Size: '0x4'
+    Type: float
+  - Name: HandsBack
+    Offset: '0xb4'
+    Size: '0x4'
+    Type: float
+  - Name: HandsMiddle
+    Offset: '0xb8'
+    Size: '0x4'
+    Type: float
+  - Name: HandsFront
+    Offset: '0xbc'
+    Size: '0x4'
+    Type: float
+  - Name: HandsInSide
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: float
+  - Name: HandsOutSide
+    Offset: '0xc4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xd0'
 AnimNode_HIKResist:
   Attributes:
   - Name: Alpha
@@ -5736,9 +5855,9 @@ HierarchicalSimplification:
     Type: Struct MeshProxySettings
   - Name: MergeSetting
     Offset: '0x88'
-    Size: '0x38'
+    Size: '0x50'
     Type: Struct MeshMergingSettings
-  ClassSize: '0xc0'
+  ClassSize: '0xd8'
 HitResult:
   Attributes:
   - Name: bBlockingHit
@@ -7516,7 +7635,15 @@ MeshMergingSettings:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  ClassSize: '0x38'
+  - Name: LODReductionPercentTriangles
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Float LODReductionPercentTriangles>
+  - Name: MaxNumberOfLODs
+    Offset: '0x48'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x50'
 MeshProxySettings:
   Attributes:
   - Name: ScreenSize

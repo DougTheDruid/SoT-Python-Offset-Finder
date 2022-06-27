@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_MerchantAllianceShopkeeper_C:
   Attributes:
-  - Name: DefaultSceneRoot
-    Offset: '0x480'
+  - Name: None
+    Offset: '0x478'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x488'
-  InheritedSize: '0x480'
+  FullSize: '0x480'
+  InheritedSize: '0x478'
   Super: ShopkeeperInteractionProxy

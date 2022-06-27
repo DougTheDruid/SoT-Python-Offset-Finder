@@ -25,8 +25,8 @@ public:
 class RegionAssetCacheActor: public Actor
 {
 public:
-	TArray<Struct RegionAssetsList>                              RegionData;                                        // 0x3d0(0x10)
-	TArray<class LoadedAssets*>                                  LoadedAssets;                                      // 0x3e0(0x10)
+	TArray<Struct RegionAssetsList>                              RegionData;                                        // 0x3c8(0x10)
+	TArray<class LoadedAssets*>                                  LoadedAssets;                                      // 0x3d8(0x10)
 };
 
 

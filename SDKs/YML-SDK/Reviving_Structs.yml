@@ -77,11 +77,15 @@ ModeSpecificReviveSettings:
     Offset: '0x24'
     Size: '0x4'
     Type: float
-  - Name: CachedReviveSettings
+  - Name: AutoGiveUpDuration
     Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: CachedReviveSettings
+    Offset: '0x30'
     Size: '0x8'
     Type: Class ReviveSettings*
-  ClassSize: '0x30'
+  ClassSize: '0x38'
 PlayerInReviveableStateTelemetryEvent:
   Attributes: []
   ClassSize: '0x1'

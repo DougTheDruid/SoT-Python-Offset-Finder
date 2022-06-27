@@ -1,150 +1,150 @@
 {
   "BP_CylinderLightingZone_Treasury_1C_C": {
     "Super": "BP_CylinderLightingZone_C",
-    "FullSize": "0x415",
-    "InheritedSize": "0x415",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x40d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CylinderLightingZone_Treasury_1B_C": {
     "Super": "BP_CylinderLightingZone_C",
-    "FullSize": "0x415",
-    "InheritedSize": "0x415",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x40d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CylinderLightingZone_Treasury_1A_C": {
     "Super": "BP_CylinderLightingZone_C",
-    "FullSize": "0x415",
-    "InheritedSize": "0x415",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x40d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CylinderLightingZone_Shrine_2C_C": {
     "Super": "BP_CylinderLightingZone_C",
-    "FullSize": "0x415",
-    "InheritedSize": "0x415",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x40d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CylinderLightingZone_Shrine_2B_C": {
     "Super": "BP_CylinderLightingZone_C",
-    "FullSize": "0x415",
-    "InheritedSize": "0x415",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x40d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CylinderLightingZone_Shrine_2A_C": {
     "Super": "BP_CylinderLightingZone_C",
-    "FullSize": "0x415",
-    "InheritedSize": "0x415",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x40d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CylinderLightingZone_Shrine_1C_C": {
     "Super": "BP_CylinderLightingZone_C",
-    "FullSize": "0x415",
-    "InheritedSize": "0x415",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x40d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CylinderLightingZone_Shrine_1B_C": {
     "Super": "BP_CylinderLightingZone_C",
-    "FullSize": "0x415",
-    "InheritedSize": "0x415",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x40d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CylinderLightingZone_Shrine_1A_C": {
     "Super": "BP_CylinderLightingZone_C",
-    "FullSize": "0x415",
-    "InheritedSize": "0x415",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x40d",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CylinderLightingZone_C": {
     "Super": "Actor",
-    "FullSize": "0x415",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x40d",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x45",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "InnerCapsule",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "OuterCapsule",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "LightingZone",
         "Type": "Class LightingZoneComponent*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "Outer Radius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "Outer Half Height",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3fc"
+        "Offset": "0x3f4"
       },
       {
         "Name": "Inner Radius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "Inner Half Height",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x404"
+        "Offset": "0x3fc"
       },
       {
         "Name": "Weight",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "Priority Layer",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x40c"
+        "Offset": "0x404"
       },
       {
         "Name": "Lighting Set",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "IsUnderwaterZone",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x414"
+        "Offset": "0x40c"
       }
     ]
   },

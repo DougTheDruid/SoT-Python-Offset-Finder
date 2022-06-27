@@ -1,9 +1,9 @@
 {
   "BP_ResourceRowboatSpawner_CannonRowboatMegaSpawner_C": {
-    "Super": "IslandWatercraftSpawnComponent",
-    "FullSize": "0x5a0",
-    "InheritedSize": "0x5a0",
-    "ClassSize": "0x0",
+    "Super": "None",
+    "FullSize": "0x9",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x9",
     "Attributes": []
   },
   "BP_ResourceRowboatSpawner_C": {

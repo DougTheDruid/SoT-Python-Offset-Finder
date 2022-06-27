@@ -1,159 +1,165 @@
 {
   "BP_PlayerPirate_C": {
     "Super": "AthenaPlayerCharacter",
-    "FullSize": "0x1b34",
-    "InheritedSize": "0x1a60",
-    "ClassSize": "0xd4",
+    "FullSize": "0x1bac",
+    "InheritedSize": "0x1ad0",
+    "ClassSize": "0xdc",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x1a60"
+        "Offset": "0x1ad0"
+      },
+      {
+        "Name": "WorldVelocityTracker",
+        "Type": "Class WorldVelocityTrackerComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ad8"
       },
       {
         "Name": "ChainLightningReceiver",
         "Type": "Class ChainLightningReceiverComponent*",
         "Size": "0x8",
-        "Offset": "0x1a68"
+        "Offset": "0x1ae0"
       },
       {
         "Name": "StatusApplicationMonitor",
         "Type": "Class StatusApplicationMonitorComponent*",
         "Size": "0x8",
-        "Offset": "0x1a70"
+        "Offset": "0x1ae8"
       },
       {
         "Name": "ReviveComponent",
         "Type": "Class ReviveComponent*",
         "Size": "0x8",
-        "Offset": "0x1a78"
+        "Offset": "0x1af0"
       },
       {
         "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x1a80"
+        "Offset": "0x1af8"
       },
       {
         "Name": "Vomit",
         "Type": "Class VomitComponent*",
         "Size": "0x8",
-        "Offset": "0x1a88"
+        "Offset": "0x1b00"
       },
       {
         "Name": "NoiseMaker",
         "Type": "Class NoiseMakerComponent*",
         "Size": "0x8",
-        "Offset": "0x1a90"
+        "Offset": "0x1b08"
       },
       {
         "Name": "PlayerNameplate",
         "Type": "Class PlayerNameplateComponent*",
         "Size": "0x8",
-        "Offset": "0x1a98"
+        "Offset": "0x1b10"
       },
       {
         "Name": "BodyLightController",
         "Type": "Class BodyLightControllerComponent*",
         "Size": "0x8",
-        "Offset": "0x1aa0"
+        "Offset": "0x1b18"
       },
       {
         "Name": "BodyLight",
         "Type": "Class AmbientLightSourceComponent*",
         "Size": "0x8",
-        "Offset": "0x1aa8"
+        "Offset": "0x1b20"
       },
       {
         "Name": "AudioSpaceTracker",
         "Type": "Class AudioSpaceTrackerComponent*",
         "Size": "0x8",
-        "Offset": "0x1ab0"
+        "Offset": "0x1b28"
       },
       {
         "Name": "PlayerAtmosphericsAudio",
         "Type": "Class PlayerAtmosphericsAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x1ab8"
+        "Offset": "0x1b30"
       },
       {
         "Name": "BP_CharacterVFXComponent",
         "Type": "BlueprintGeneratedClass BP_CharacterVFXComponent_C*",
         "Size": "0x8",
-        "Offset": "0x1ac0"
+        "Offset": "0x1b38"
       },
       {
         "Name": "WaterInteraction",
         "Type": "Class WaterInteractionComponent*",
         "Size": "0x8",
-        "Offset": "0x1ac8"
+        "Offset": "0x1b40"
       },
       {
         "Name": "BP_PlayerAudioComponent",
         "Type": "BlueprintGeneratedClass BP_CharacterAudioComponent_C*",
         "Size": "0x8",
-        "Offset": "0x1ad0"
+        "Offset": "0x1b48"
       },
       {
         "Name": "CharacterFootImpact",
         "Type": "Class CharacterFootImpactComponent*",
         "Size": "0x8",
-        "Offset": "0x1ad8"
+        "Offset": "0x1b50"
       },
       {
         "Name": "PlayerOceanAudio",
         "Type": "Class PlayerOceanAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x1ae0"
+        "Offset": "0x1b58"
       },
       {
         "Name": "TattooGlowDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1ae8"
+        "Offset": "0x1b60"
       },
       {
         "Name": "CurrentStaticMesh",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
-        "Offset": "0x1af0"
+        "Offset": "0x1b68"
       },
       {
         "Name": "CurrentSkeletalMesh",
         "Type": "Class SkeletalMesh*",
         "Size": "0x8",
-        "Offset": "0x1af8"
+        "Offset": "0x1b70"
       },
       {
         "Name": "SkeletalMeshArray",
         "Type": "TArray<class SkeletalMeshArray*>",
         "Size": "0x10",
-        "Offset": "0x1b00"
+        "Offset": "0x1b78"
       },
       {
         "Name": "StaticMeshArray",
         "Type": "TArray<class StaticMeshArray*>",
         "Size": "0x10",
-        "Offset": "0x1b10"
+        "Offset": "0x1b88"
       },
       {
         "Name": "IsSkeletalMesh",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1b20"
+        "Offset": "0x1b98"
       },
       {
         "Name": "ItemSelectArray",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x1b24"
+        "Offset": "0x1b9c"
       },
       {
         "Name": "ItemScale",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x1b28"
+        "Offset": "0x1ba0"
       }
     ]
   },

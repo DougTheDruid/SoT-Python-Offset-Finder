@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_TT_RitualBone_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   BoneMesh;                                          // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   BoneMesh;                                          // 0x3c8(0x8)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class BP_Skull_OoS_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   gmp_bounty_skull_01_b;                             // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   gmp_bounty_skull_01_b;                             // 0x3c8(0x8)
 };
 
 
@@ -26,10 +26,10 @@ public:
 class BP_RitualBottleTop_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   ptn_pois_stop_01_a;                                // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   2;                                                 // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   1;                                                 // 0x3e0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
+	Class StaticMeshComponent*                                   ptn_pois_stop_01_a;                                // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   2;                                                 // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   1;                                                 // 0x3d8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
 };
 
 
@@ -37,10 +37,10 @@ public:
 class BP_RitualBottle_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   ptn_pois_01_a;                                     // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   2;                                                 // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   1;                                                 // 0x3e0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
+	Class StaticMeshComponent*                                   ptn_pois_01_a;                                     // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   2;                                                 // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   1;                                                 // 0x3d8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
 };
 
 
@@ -48,8 +48,8 @@ public:
 class BP_Ritual2_R_Pendant_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3c8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
 };
 
 
@@ -57,8 +57,8 @@ public:
 class BP_Ritual2_R_Effigy_C: public Actor
 {
 public:
-	Class SkeletalMeshComponent*                                 Effigy_R;                                          // 0x3d0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
+	Class SkeletalMeshComponent*                                 Effigy_R;                                          // 0x3c8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
 };
 
 
@@ -66,8 +66,8 @@ public:
 class BP_Ritual2_L_Pendant_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3c8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
 };
 
 
@@ -75,8 +75,8 @@ public:
 class BP_Ritual2_L_Effigy_C: public Actor
 {
 public:
-	Class SkeletalMeshComponent*                                 Effigy_L;                                          // 0x3d0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
+	Class SkeletalMeshComponent*                                 Effigy_L;                                          // 0x3c8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
 };
 
 

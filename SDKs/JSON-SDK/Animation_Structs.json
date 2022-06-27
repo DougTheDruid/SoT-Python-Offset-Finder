@@ -396,6 +396,10 @@
       }
     ]
   },
+  "EventAnimationResetHappyReact": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
   "EventAnimationHappyReact": {
     "ClassSize": "0x1",
     "Attributes": []

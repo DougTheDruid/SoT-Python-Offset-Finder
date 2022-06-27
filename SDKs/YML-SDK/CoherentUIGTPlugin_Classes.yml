@@ -113,12 +113,12 @@ CoherentUIGTEventHelpers:
 CoherentUIGTGameHUD:
   Attributes:
   - Name: CoherentUIGTHUD
-    Offset: '0x4c8'
+    Offset: '0x4c0'
     Size: '0x8'
     Type: Class CoherentUIGTHUD*
   ClassSize: '0x98'
-  FullSize: '0x560'
-  InheritedSize: '0x4c8'
+  FullSize: '0x558'
+  InheritedSize: '0x4c0'
   Super: HUD
 CoherentUIGTHUD:
   Attributes:
@@ -141,8 +141,8 @@ CoherentUIGTHUD:
 CoherentUIGTInputActor:
   Attributes: []
   ClassSize: '0x60'
-  FullSize: '0x430'
-  InheritedSize: '0x3d0'
+  FullSize: '0x428'
+  InheritedSize: '0x3c8'
   Super: Actor
 CoherentUIGTJSEvent:
   Attributes:
@@ -265,8 +265,8 @@ CoherentUIGTSettings:
 CoherentUIGTSystem:
   Attributes: []
   ClassSize: '0x50'
-  FullSize: '0x420'
-  InheritedSize: '0x3d0'
+  FullSize: '0x418'
+  InheritedSize: '0x3c8'
   Super: Actor
 CoherentUIGTWidget:
   Attributes:

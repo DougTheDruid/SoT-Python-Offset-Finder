@@ -19,14 +19,14 @@ NetworkRegionServiceInterface:
 RegionAssetCacheActor:
   Attributes:
   - Name: RegionData
-    Offset: '0x3d0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<Struct RegionAssetsList>
   - Name: LoadedAssets
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x10'
     Type: TArray<class LoadedAssets*>
   ClassSize: '0x40'
-  FullSize: '0x410'
-  InheritedSize: '0x3d0'
+  FullSize: '0x408'
+  InheritedSize: '0x3c8'
   Super: Actor

@@ -15,69 +15,69 @@
   },
   "WaterSlide": {
     "Super": "Actor",
-    "FullSize": "0x450",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x80",
+    "FullSize": "0x440",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x78",
     "Attributes": [
       {
         "Name": "SlideSpline",
         "Type": "Class SplineComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "Root",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "WaterSlideParamsDataAsset",
         "Type": "Class WaterSlideParamsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "EntranceCollisionComponent",
         "Type": "Class PrimitiveComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3e8"
       },
       {
         "Name": "ContinuedWaterSlideRoute",
         "Type": "Class WaterSlide*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "LeftWaterSlideRoute",
         "Type": "Class WaterSlide*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "RightWaterSlideRoute",
         "Type": "Class WaterSlide*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "IsEndOfSlide",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "EndOfSlideLaunchForce",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x414"
+        "Offset": "0x40c"
       },
       {
         "Name": "WaterSlideAudioParams",
         "Type": "Class WaterSlideAudioParams*",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       }
     ]
   },

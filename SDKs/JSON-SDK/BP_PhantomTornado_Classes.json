@@ -1,0 +1,320 @@
+{
+  "BP_PhantomTornado_C": {
+    "Super": "Actor",
+    "FullSize": "0x630",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x268",
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
+        "Type": "Struct PointerToUberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "P_BigRocks",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "Vfx_TornadoTopSwirl",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "P_EmplacementIntro3",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "P_EmplacementIntro2",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "P_EmplacementIntro1",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "VFX_TornadoSmokeDish",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "P_DebrisField",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "VFX_TornadoSwirl",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "Cloud",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "LiveWire03",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "LiveWire02",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "LiveWire01",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "VFX_TornadoTube",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "FadeCloudTimeline_FadeOutAlpha_310A9781422F48C589351884CF741612",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "FadeCloudTimeline_FadeINAlpha_310A9781422F48C589351884CF741612",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x444"
+      },
+      {
+        "Name": "FadeCloudTimeline__Direction_310A9781422F48C589351884CF741612",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "FadeCloudTimeline",
+        "Type": "Class TimelineComponent*",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "BlowUpTimeline_ErodeAlpha_1DAB983A4D9906A6C459858A888145C3",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "BlowUpTimeline_BlowUpAlpha_1DAB983A4D9906A6C459858A888145C3",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x45c"
+      },
+      {
+        "Name": "BlowUpTimeline__Direction_1DAB983A4D9906A6C459858A888145C3",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "BlowUpTimeline",
+        "Type": "Class TimelineComponent*",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "TornadoAlpha_BottomAlpha_436128F646820FE474AED5BAE1BCF5C4",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "TornadoAlpha_TopSwirlAlpha_436128F646820FE474AED5BAE1BCF5C4",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x474"
+      },
+      {
+        "Name": "TornadoAlpha_MainAlpha_436128F646820FE474AED5BAE1BCF5C4",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "TornadoAlpha__Direction_436128F646820FE474AED5BAE1BCF5C4",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x47c"
+      },
+      {
+        "Name": "TornadoAlpha",
+        "Type": "Class TimelineComponent*",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "EmplacementLocations",
+        "Type": "TArray<Struct None>",
+        "Size": "0x10",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "TornadoMat",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "LiveWireArray",
+        "Type": "TArray<class LiveWireArray*>",
+        "Size": "0x10",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "Emplacements",
+        "Type": "TArray<class Emplacements*>",
+        "Size": "0x10",
+        "Offset": "0x4b0"
+      },
+      {
+        "Name": "TornadoEnergyPointsNames",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "ShowInEditor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "TopSwirlMat",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x4d8"
+      },
+      {
+        "Name": "DebrisMat",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "BottomMat",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "ForceShowLightning",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "OuterSwirlMat",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x4f8"
+      },
+      {
+        "Name": "DebugLineDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x500"
+      },
+      {
+        "Name": "EmplacementSpawnVFX",
+        "Type": "Struct VfxSpawner",
+        "Size": "0x90",
+        "Offset": "0x528"
+      },
+      {
+        "Name": "TornadoEmitter",
+        "Type": "Struct WwiseEmitter",
+        "Size": "0x20",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "EmitterCreationParams",
+        "Type": "Struct WwiseEmitterCreationParams",
+        "Size": "0x28",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "PlayTornadoSFX",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "StopTornadoSFX",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "WWisePool",
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "TornadoPhase",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x618"
+      },
+      {
+        "Name": "Emplacement1Index",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x61c"
+      },
+      {
+        "Name": "Emplacement2Index",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x620"
+      },
+      {
+        "Name": "Emplacement3Index",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x624"
+      },
+      {
+        "Name": "CloudMat",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x628"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

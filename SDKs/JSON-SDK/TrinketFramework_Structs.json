@@ -1,4 +1,33 @@
 {
+  "ChestEntitlementTrinketItem": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ItemDesc",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlacedValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PlacedThreshold",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "OwnerXUID",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "TrinketLoadout": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -18,6 +47,35 @@
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "TrinketOwnerPlayerXuid",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EquipTrinketOnServerLoadoutRpc": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "TrinketLoadoutComponent",
+        "Type": "Struct NetSubObjectPtr",
+        "Size": "0x14",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TrinketToEquip",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "LocationIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
       }
     ]
   },
@@ -35,6 +93,23 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x24"
+      }
+    ]
+  },
+  "UnequipAllTrinketsOfClassOnServerLoadoutRpc": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TrinketLoadoutComponent",
+        "Type": "Struct NetSubObjectPtr",
+        "Size": "0x14",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TrinketToUnequip",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },
@@ -76,6 +151,14 @@
       }
     ]
   },
+  "EventTrinketSetReady": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "RequestTrinketChestItemInfoEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
   "RequestTrinketLoadoutUIEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -98,40 +181,7 @@
       }
     ]
   },
-  "RequestUnequipTrinketsOfClass": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TrinketDesc",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "RequestUnequipTrinketsOfClassUIEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TrinketDesc",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "RequestEquipTrinket": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TrinketDesc",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "RequestEquipTrinketUIEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {

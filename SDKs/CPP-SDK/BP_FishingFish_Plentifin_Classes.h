@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_FishingFish_Plentifin_Base_C: public BP_FishingFish_SplashTail_Base_C
+class BP_FishingFish_Plentifin_Base_C: public BP_FishingFish_Base_C
 {
 public:
 };

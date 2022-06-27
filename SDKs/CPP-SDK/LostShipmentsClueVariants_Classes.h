@@ -145,11 +145,11 @@ public:
 class AbandonedNoteWieldable: public SkeletalMeshWieldableItem
 {
 public:
-	Class WieldableItemCanvasRenderingComponent*                 WieldableItemCanvasRenderingComponent;             // 0x7a0(0x8)
-	Class AbandonedNoteWieldableRenderingComponent*              AbandonedNoteRenderingComponent;                   // 0x7a8(0x8)
-	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x7b0(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x7b8(0x8)
-	byte                                                         QuestMapIcon;                                      // 0x7c0(0x1)
+	Class WieldableItemCanvasRenderingComponent*                 WieldableItemCanvasRenderingComponent;             // 0x790(0x8)
+	Class AbandonedNoteWieldableRenderingComponent*              AbandonedNoteRenderingComponent;                   // 0x798(0x8)
+	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x7a0(0x8)
+	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x7a8(0x8)
+	byte                                                         QuestMapIcon;                                      // 0x7b0(0x1)
 };
 
 
@@ -226,7 +226,7 @@ public:
 class ClueSiteCircleMapWieldable: public RenderToTextureMapBase
 {
 public:
-	Struct MapRadialIconData                                     MapRadialIconData;                                 // 0x860(0x18)
+	Struct MapRadialIconData                                     MapRadialIconData;                                 // 0x850(0x18)
 };
 
 

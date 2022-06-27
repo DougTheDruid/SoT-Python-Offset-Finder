@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_TradeRoute_C: public TradeRoute
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
 };
 
 

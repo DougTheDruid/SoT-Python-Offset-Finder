@@ -144,8 +144,8 @@ public:
 class ShipProxyPawn: public Pawn
 {
 public:
-	Class Ship*                                                  Ship;                                              // 0x448(0x8)
-	Class Ship*                                                  SpawnTargetShip;                                   // 0x450(0x8)
+	Class Ship*                                                  Ship;                                              // 0x440(0x8)
+	Class Ship*                                                  SpawnTargetShip;                                   // 0x448(0x8)
 };
 
 
@@ -231,7 +231,7 @@ public:
 };
 
 
-// Size 0x80
+// Size 0x88
 class AIShipObstacleService: public Actor
 {
 public:
@@ -249,7 +249,7 @@ public:
 class AIShipService: public Actor
 {
 public:
-	Class AIShipServiceDataAsset*                                Params;                                            // 0x3f0(0x8)
+	Class AIShipServiceDataAsset*                                Params;                                            // 0x3e8(0x8)
 };
 
 
@@ -264,10 +264,10 @@ public:
 class AthenaAIShipController: public AthenaAIControllerBase
 {
 public:
-	Class BehaviorTree*                                          BTAsset;                                           // 0x618(0x8)
-	Class AthenaAIShipControllerParamsDataAsset*                 ShipParamsDataAsset;                               // 0x638(0x8)
-	Class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x640(0x8)
-	Struct StandardAnchorDynamicsParameters                      AnchorDynamicsParams;                              // 0x648(0x28)
+	Class BehaviorTree*                                          BTAsset;                                           // 0x610(0x8)
+	Class AthenaAIShipControllerParamsDataAsset*                 ShipParamsDataAsset;                               // 0x630(0x8)
+	Class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x638(0x8)
+	Struct StandardAnchorDynamicsParameters                      AnchorDynamicsParams;                              // 0x640(0x28)
 };
 
 

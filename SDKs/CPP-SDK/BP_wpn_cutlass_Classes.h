@@ -59,7 +59,7 @@ public:
 class BP_wpn_cutlass_par_01_a_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x500(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
 };
 
 

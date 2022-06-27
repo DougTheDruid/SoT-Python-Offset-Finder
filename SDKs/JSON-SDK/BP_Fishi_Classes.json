@@ -8,28 +8,28 @@
   },
   "BP_FishingFloat_C": {
     "Super": "FishingFloat",
-    "FullSize": "0x800",
-    "InheritedSize": "0x7f0",
+    "FullSize": "0x7f0",
+    "InheritedSize": "0x7e0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "FishingFloatNameplate",
         "Type": "Class FishingFloatNameplateComponent*",
         "Size": "0x8",
-        "Offset": "0x7f0"
+        "Offset": "0x7e0"
       },
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x7f8"
+        "Offset": "0x7e8"
       }
     ]
   },
   "BP_FishingRod_C": {
     "Super": "FishingRod",
-    "FullSize": "0xba0",
-    "InheritedSize": "0xba0",
+    "FullSize": "0xb90",
+    "InheritedSize": "0xb90",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -67,15 +67,15 @@
   },
   "GlitterbeardSlidingDoor": {
     "Super": "SlidingDoor",
-    "FullSize": "0x540",
-    "InheritedSize": "0x538",
+    "FullSize": "0x538",
+    "InheritedSize": "0x530",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DecalBlendComponent",
         "Type": "Class EffectBlendControllerComponent*",
         "Size": "0x8",
-        "Offset": "0x538"
+        "Offset": "0x530"
       }
     ]
   },
@@ -96,80 +96,80 @@
   "GlitterBeardTree": {
     "Super": "Actor",
     "FullSize": "0x6d0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x300",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x308",
     "Attributes": [
       {
         "Name": "ActionRulesComponent",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "InteractableComponent",
         "Type": "Class ActionRulesInteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
         "Name": "LanternLightDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x408"
+        "Offset": "0x400"
       },
       {
         "Name": "UnlockVFXCoordinatorComponent",
         "Type": "Class GlitterBeardUnlockVFXCoordinatorComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x408"
       },
       {
         "Name": "TelemetryComponent",
         "Type": "Class GlitterBeardTelemetryComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x410"
       },
       {
         "Name": "VocalShanty",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x420"
+        "Offset": "0x418"
       },
       {
         "Name": "VocalsFadeEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x420"
       },
       {
         "Name": "VocalsFadeDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x428"
       },
       {
         "Name": "UnlockDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x434"
+        "Offset": "0x42c"
       },
       {
         "Name": "FinaleCoordinator",
         "Type": "Class GlitterBeardFinaleCoordinatorComponent*",
         "Size": "0x8",
-        "Offset": "0x438"
+        "Offset": "0x430"
       },
       {
         "Name": "LandmarkReactionTrigger",
         "Type": "Class LandmarkReactionTriggerComponent*",
         "Size": "0x8",
-        "Offset": "0x440"
+        "Offset": "0x438"
       },
       {
         "Name": "DistanceFromTreeToPauseAISpawn",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x448"
+        "Offset": "0x440"
       },
       {
         "Name": "HideoutDoor",

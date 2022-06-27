@@ -47,7 +47,7 @@ public:
 class CommodityDemandService: public Actor
 {
 public:
-	Struct ActiveNPCDemands                                      ActiveCommodityDemands;                            // 0x3f0(0x20)
+	Struct ActiveNPCDemands                                      ActiveCommodityDemands;                            // 0x3e8(0x20)
 };
 
 

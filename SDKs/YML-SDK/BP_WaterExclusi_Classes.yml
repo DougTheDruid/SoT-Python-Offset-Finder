@@ -3,10 +3,10 @@
 BP_WaterExclusionVolume_C:
   Attributes:
   - Name: WaterPlaneExclusion
-    Offset: '0x3e0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class WaterPlaneExclusionComponent*
   ClassSize: '0x8'
-  FullSize: '0x3e8'
-  InheritedSize: '0x3e0'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3d8'
   Super: StaticMeshActor

@@ -3,18 +3,10 @@
 BP_SoveriegnHarpoonLauncher_C:
   Attributes:
   - Name: None
-    Offset: '0xb60'
+    Offset: '0xb50'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xb68'
-    Size: '0x8'
-    Type: Class CapsuleComponent*
-  - Name: None
-    Offset: '0xb70'
-    Size: '0x8'
-    Type: Class CapsuleComponent*
   ClassSize: '0x18'
-  FullSize: '0xb78'
-  InheritedSize: '0xb60'
+  FullSize: '0xb68'
+  InheritedSize: '0xb50'
   Super: HarpoonLauncher

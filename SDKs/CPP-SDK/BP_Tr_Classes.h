@@ -7,15 +7,24 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class BP_Trinket_Wheel_01_a_C: public BP_Trinket_Hanging_C
+class BP_Trinket_Wheel_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
 	Class StaticMeshComponent*                                   cmn_wheel_01_a__cmn_wheel_01_a;                    // 0x3f8(0x8)
 };
 
 
+// Size 0x10
+class BP_Trinket_Target_02_a_C: public BP_Trinket_HangingSinglePoint_C
+{
+public:
+	Class StaticMeshComponent*                                   wpn_boarding_axe_smp_01_a;                         // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   bld_wpn_shop_hanging_target_broken_01_a;           // 0x400(0x8)
+};
+
+
 // Size 0x8
-class BP_Trinket_PinBoard_01_a_C: public BP_Trinket_Hanging_C
+class BP_Trinket_PinBoard_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
 	Class StaticMeshComponent*                                   bld_enc_shop_pin_board_01_a;                       // 0x3f8(0x8)
@@ -23,7 +32,7 @@ public:
 
 
 // Size 0x10
-class BP_Trinket_MapPainting_01_a_C: public BP_Trinket_Hanging_C
+class BP_Trinket_MapPainting_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
 	Class StaticMeshComponent*                                   tri_com_gmp_onboarding_map_static_01_a;            // 0x3f8(0x8)
@@ -32,7 +41,7 @@ public:
 
 
 // Size 0x18
-class BP_Trinket_HatRack_02_a_C: public BP_Trinket_Hanging_C
+class BP_Trinket_HatRack_02_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
 	Class StaticMeshComponent*                                   cmn_shovel_02_a;                                   // 0x3f8(0x8)
@@ -42,7 +51,7 @@ public:
 
 
 // Size 0x18
-class BP_Trinket_HangingBottles_01_a_C: public BP_Trinket_Hanging_C
+class BP_Trinket_HangingBottles_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
 	Class StaticMeshComponent*                                   cmn_bottle_01_a;                                   // 0x3f8(0x8)
@@ -52,7 +61,7 @@ public:
 
 
 // Size 0x8
-class BP_Trinket_GlowBalls_01_a_C: public BP_Trinket_Hanging_C
+class BP_Trinket_GlowBalls_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
 	Class StaticMeshComponent*                                   tls_wld_Orb_light_a;                               // 0x3f8(0x8)
@@ -60,7 +69,7 @@ public:
 
 
 // Size 0x30
-class BP_Trinket_Barnacles_01_a_C: public BP_Trinket_Hanging_C
+class BP_Trinket_Barnacles_01_a_C: public BP_Trinket_HangingMultiplePoint_C
 {
 public:
 	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_j;                         // 0x3f8(0x8)
@@ -73,7 +82,7 @@ public:
 
 
 // Size 0x18
-class BP_Trinket_Anchor_01_a_C: public BP_Trinket_Hanging_C
+class BP_Trinket_Anchor_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
 	Class StaticMeshComponent*                                   shp_int_hook_01_a;                                 // 0x3f8(0x8)

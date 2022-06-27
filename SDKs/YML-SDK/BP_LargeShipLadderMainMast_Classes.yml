@@ -3,18 +3,18 @@
 BP_LargeShipLadderMainMast_C:
   Attributes:
   - Name: Interactable
-    Offset: '0x5c0'
+    Offset: '0x5b0'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: OnTopSplinePositions
-    Offset: '0x5c8'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<Struct InteractOffset>
   - Name: OffTopSplinePositions
-    Offset: '0x5d8'
+    Offset: '0x5c8'
     Size: '0x10'
     Type: TArray<Struct Vector>
   ClassSize: '0x28'
-  FullSize: '0x5e8'
-  InheritedSize: '0x5c0'
+  FullSize: '0x5d8'
+  InheritedSize: '0x5b0'
   Super: Ladder

@@ -3,110 +3,110 @@
 BP_TunnelOfTheDamnedPortalLocator_BSP_C:
   Attributes:
   - Name: SeaRockBounds
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: SignalAnchor
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: CalmWater
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: Visuals
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x20'
-  FullSize: '0x428'
-  InheritedSize: '0x408'
+  FullSize: '0x420'
+  InheritedSize: '0x400'
   Super: PortalLocatorActor
 BP_TunnelOfTheDamnedPortalLocator_WLD_C:
   Attributes:
   - Name: SeaRockBounds
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: SignalAnchor
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: CalmWater
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: Visuals
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x20'
-  FullSize: '0x428'
-  InheritedSize: '0x408'
+  FullSize: '0x420'
+  InheritedSize: '0x400'
   Super: PortalLocatorActor
 BP_TunnelOfTheDamnedPortalLocator_WSP_C:
   Attributes:
   - Name: SeaRockBounds
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: SignalAnchor
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: CalmWater
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: Visuals
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x20'
-  FullSize: '0x428'
-  InheritedSize: '0x408'
+  FullSize: '0x420'
+  InheritedSize: '0x400'
   Super: PortalLocatorActor
 BP_TunnelOfTheDamnedPortal_BSP_C:
   Attributes:
   - Name: PortalEffects
-    Offset: '0x650'
+    Offset: '0x648'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x8'
-  FullSize: '0x658'
-  InheritedSize: '0x650'
+  FullSize: '0x650'
+  InheritedSize: '0x648'
   Super: BP_TunnelOfTheDamnedPortal_Ship_C
 BP_TunnelOfTheDamnedPortal_Ship_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x640'
+    Offset: '0x638'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: SynchedMusicZone
-    Offset: '0x648'
+    Offset: '0x640'
     Size: '0x8'
     Type: Class SynchedMusicZoneComponent*
   ClassSize: '0x10'
-  FullSize: '0x650'
-  InheritedSize: '0x640'
+  FullSize: '0x648'
+  InheritedSize: '0x638'
   Super: TunnelOfTheDamnedPortal
 BP_TunnelOfTheDamnedPortal_WLD_C:
   Attributes:
   - Name: PortalEffects
-    Offset: '0x650'
+    Offset: '0x648'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x8'
-  FullSize: '0x658'
-  InheritedSize: '0x650'
+  FullSize: '0x650'
+  InheritedSize: '0x648'
   Super: BP_TunnelOfTheDamnedPortal_Ship_C
 BP_TunnelOfTheDamnedPortal_WSP_C:
   Attributes:
   - Name: PortalEffects
-    Offset: '0x650'
+    Offset: '0x648'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x8'
-  FullSize: '0x658'
-  InheritedSize: '0x650'
+  FullSize: '0x650'
+  InheritedSize: '0x648'
   Super: BP_TunnelOfTheDamnedPortal_Ship_C

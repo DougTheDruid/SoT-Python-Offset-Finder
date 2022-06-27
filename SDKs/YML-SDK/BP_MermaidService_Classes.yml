@@ -3,10 +3,10 @@
 BP_MermaidService_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x560'
+    Offset: '0x558'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x568'
-  InheritedSize: '0x560'
+  FullSize: '0x560'
+  InheritedSize: '0x558'
   Super: MermaidService

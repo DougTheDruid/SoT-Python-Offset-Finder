@@ -6,6 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x18
+struct StoryInfo
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+};
+
+
 // Size 0x10
 struct LightingZoneStoryRelatedSettings
 {
@@ -17,10 +25,11 @@ public:
 
 
 // Size 0x18
-struct StoryInfo
+struct StoryNameInfo
 {
 public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
+	struct FName                                                 StoryName;                                         // 0x0(0x8)
+	Struct FString                                               StoryDesc;                                         // 0x8(0x10)
 };
 
 
@@ -32,11 +41,19 @@ public:
 };
 
 
+// Size 0x8
+struct StoryFlag
+{
+public:
+	struct FName                                                 StoryName;                                         // 0x0(0x8)
+};
+
+
 // Size 0x18
 struct StorySpawnedNamedPointsList
 {
 public:
-	struct FName                                                 StoryName;                                         // 0x0(0x8)
+	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
 	TArray<Struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x8(0x10)
 };
 
@@ -128,6 +145,7 @@ public:
 	TArray<Str AllStories>                                       AllStories;                                        // 0x0(0x10)
 	TArray<Str ActiveStories>                                    ActiveStories;                                     // 0x10(0x10)
 	bool                                                         DidStoriesChange;                                  // 0x20(0x1)
+	bool                                                         WereStoriesRefreshed;                              // 0x21(0x1)
 };
 
 

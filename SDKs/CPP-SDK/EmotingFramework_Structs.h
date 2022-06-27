@@ -80,16 +80,6 @@ public:
 };
 
 
-// Size 0x14
-struct EmoteDiceOutcomeTelemetryEvent
-{
-public:
-	int                                                          MaxLimit;                                          // 0x0(0x4)
-	int                                                          RollNumber;                                        // 0x4(0x4)
-	Struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
-};
-
-
 // Size 0x1
 struct EventDisableLookAtEmoteCamera
 {
@@ -101,6 +91,16 @@ public:
 struct EventEnableLookAtEmoteCamera
 {
 public:
+};
+
+
+// Size 0x14
+struct EmoteDiceOutcomeTelemetryEvent
+{
+public:
+	int                                                          MaxLimit;                                          // 0x0(0x4)
+	int                                                          RollNumber;                                        // 0x4(0x4)
+	Struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
 };
 
 
