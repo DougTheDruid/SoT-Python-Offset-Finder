@@ -41,6 +41,22 @@ def get_offset(file_name, title, memory_object):
     return offset
 
 
+def get_size(file_name, title):
+    """
+    Determines the size of a struct or class given a specific file to look in
+    :param file_name: The file name where the class or struct lives
+    :param title: The class or struct name we want the size of
+    :return: The int-converted version of the size for a class or struct
+    """
+    offset = "Not Found"
+    with open(file_name) as file_to_check:
+        json_sdk_file = json.load(file_to_check)
+        components = json_sdk_file.get(title, None)
+        if components:
+            return int(components.get('ClassSize'), 16)
+    return offset
+
+
 if __name__ == '__main__':
     """
     We build a dictionary which contains all offset data, then save the 
@@ -51,15 +67,18 @@ if __name__ == '__main__':
         "Actor.actorId": 24,  # The ID number associated with an actor type
         "SceneComponent.ActorCoordinates": 0x12c,  # Currently located at SceneComponent.RelativeScale3D+0xC
         # SDK Generator is incapable of pulling this automatically, may need to fix if you have issues
+
         "Actor.rootComponent": get_offset(ENGINE, "Actor", "RootComponent"),
-        "PlayerState.PlayerName": get_offset(ENGINE, "PlayerState", "PlayerName"),
+        "CameraCacheEntry.MinimalViewInfo": get_offset(ENGINE_STRUCT, "CameraCacheEntry", "POV"),
+        "Crew.Size": get_size(ATHENA_STRUCT, "Crew"),
+        "Crew.Players": get_offset(ATHENA_STRUCT, "Crew", "Players"),
         "GameInstance.LocalPlayers": get_offset(ENGINE, "GameInstance", "LocalPlayers"),
         "LocalPlayer.PlayerController": get_offset(ENGINE, "Player", "PlayerController"),
+        "PlayerCameraManager.CameraCache": get_offset(ENGINE, "PlayerCameraManager", "CameraCache"),
+        "PlayerController.CameraManager": get_offset(ENGINE, "PlayerController", "PlayerCameraManager"),
+        "PlayerState.PlayerName": get_offset(ENGINE, "PlayerState", "PlayerName"),
         "World.OwningGameInstance": get_offset(ENGINE, "World", "OwningGameInstance"),
         "World.PersistentLevel": get_offset(ENGINE, "World", "PersistentLevel"),
-        "PlayerController.CameraManager": get_offset(ENGINE, "PlayerController", "PlayerCameraManager"),
-        "PlayerCameraManager.CameraCache": get_offset(ENGINE, "PlayerCameraManager", "CameraCache"),
-        "CameraCacheEntry.MinimalViewInfo": get_offset(ENGINE_STRUCT, "CameraCacheEntry", "POV"),
 
     }
     with open("offsets.json", "w+") as outfile:
